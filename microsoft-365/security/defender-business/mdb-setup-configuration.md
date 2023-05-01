@@ -50,7 +50,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 2. **Add users and assign Defender for Business licenses**. You'll want to do this task before you run the setup wizard. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
 
-3. **Create a list of your security team's email addresses**. Set up a list of your security team's names and email addresses. This list will come in handy while you are using the setup wizard. To view a list of users, in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), go to **Users** > **Active users**.
+   While you're adding users, make sure to create a list of your security team's names and email addresses. This list will come in handy while you are using the setup wizard. To view a list of users, in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), go to **Users** > **Active users**.
 
 4. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Assets** > **Devices**. 
 
