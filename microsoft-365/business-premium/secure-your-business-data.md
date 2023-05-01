@@ -84,7 +84,7 @@ Every device is a possible attack avenue into your network and must be configure
 
 Microsoft 365 Business Standard and Premium include Microsoft 365 Apps (such as Word, PowerPoint, and Excel) that can be installed on computers, tablets, and phones. Installing the Microsoft 365 Apps helps ensure users get the latest features, new tools, security updates, and bug fixes. (PC users also get Access and Publisher.)
 
-In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with Microsoft Defender for Business and Microsoft Intune. 
+In addition to the Microsoft 365 Apps, Microsoft 365 Business Premium includes advanced protection for devices with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
 
 See the following articles:
 
