@@ -66,7 +66,7 @@ See [Preset security policies](../security/office-365-security/preset-security-p
 | Subscription | Recommendation |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use preset security policies for anti-spam, anti-malware, and anti-phishing in [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP).<br/>Use preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments in [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [preset security policies in EOP](../security/office-365-security/preset-security-policies.md).  |  
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [preset security policies in EOP](../security/office-365-security/preset-security-policies.md).<br/>(*Defender for Office 365 can be added on*.)  |  
 
 ## 4. Protect all devices
 
