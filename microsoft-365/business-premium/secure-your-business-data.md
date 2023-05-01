@@ -56,7 +56,7 @@ Administrator accounts (also called admins) have elevated privileges, making the
 
 We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
 
-You can use either the Microsoft 365 admin center or the Azure AD portal to set up and manage your admin accounts.
+Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts.
 
 See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
@@ -68,9 +68,9 @@ See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 Preset security policies save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
 
-[Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP) includes preset security policies for anti-spam, anti-malware, and anti-phishing. Microsoft 365 Business Basic, Standard, and Premium include EOP. 
+Microsoft 365 Business Basic, Standard, and Premium include [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP). It includes preset security policies for anti-spam, anti-malware, and anti-phishing. 
 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. Microsoft 365 Business Premium includes Defender for Office 365 Plan 1.
+Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). It includes preset security policies for advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments. 
 
 See the following articles:
 
@@ -88,7 +88,9 @@ Every device is a possible attack avenue into your network and must be configure
 
 Microsoft 365 Business Basic, Standard, and Premium enable users to use MFA on their devices.
 
-Microsoft 365 Business Premium also includes advanced device protection with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Defender for Business includes threat and vulnerability management, attack surface reduction, next-generation protection, endpoint detection and response, and automated investigation capabilities. Microsoft 365 Business Premium also includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for managing devices. 
+Microsoft 365 Business Premium also includes advanced device protection with [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Defender for Business includes threat and vulnerability management, attack surface reduction, next-generation protection, endpoint detection and response, and automated investigation capabilities. 
+
+Microsoft 365 Business Premium also includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for managing devices. 
 
 See the following articles:
 
@@ -130,7 +132,10 @@ The best way to collaborate and share securely is to use Microsoft Teams. With M
 
 Microsoft 365 Business Basic, Standard, and Premium include Microsoft Teams.
 
-Microsoft 365 Business Premium also includes Defender for Office 365 Plan 1 (with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about)) and [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection) (with capabilities to discover, classify, protect, and govern sensitive information).
+Microsoft 365 Business Premium also includes:
+
+- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet). It includes [Safe Links](/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about).
+- [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection). It includes [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) and [DLP](/microsoft-365/compliance/dlp-teams-default-policy) to discover, classify, protect, and govern sensitive information.
 
 See the following articles: 
 
@@ -143,9 +148,8 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams with [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about), [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings), and [DLP](/microsoft-365/compliance/dlp-teams-default-policy). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) |
+| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams for meetings and information sharing. <br/>Use [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about) with Microsoft Teams. <br/>Use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Teams meetings, and chat. <br/>Use the default [DLP policy](/microsoft-365/compliance/dlp-teams-default-policy) in Teams. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
 
@@ -155,7 +159,7 @@ Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePo
 
 Microsoft 365 Business Premium also includes:
 
-- Defender for Office 365 Plan 1, with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive
+- [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Teams, SharePoint, and OneDrive.
 - [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
 
 See the following articles: 
