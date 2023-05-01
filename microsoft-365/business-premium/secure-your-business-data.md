@@ -227,8 +227,8 @@ See the following articles:
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use the [Azure AD portal](https://entra.microsoft.com) and the [Microsoft 365 admin center](https://admin.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>You can also use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
+| [Microsoft 365 Business Premium](index.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>If preferred, you can use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
 
 ## See also
 
