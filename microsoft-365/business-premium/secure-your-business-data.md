@@ -187,13 +187,17 @@ See the following articles:
 
 ## 9. Manage calendar sharing for your business
 
-You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.See: <br/>- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) <br/>- [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) | *Use Outlook, Exchange Online, and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy).* | *Use Outlook and Exchange Online.* | *Use Outlook and Exchange Online.* |
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
+
+See the following articles:
+
+- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) 
+- [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) |  |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) |  | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) |  |
+| [Microsoft 365 Business Premium](index.md) | Use Outlook, Exchange Online, and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online. | 
 
 ## 10. Maintain your environment
 
