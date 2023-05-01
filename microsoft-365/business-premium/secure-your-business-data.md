@@ -40,8 +40,8 @@ This article lists the top 10 ways to secure your data with Microsoft 365 for bu
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use security defaults or Conditional Access in [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use [security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). | 
+| [Microsoft 365 Business Premium](index.md) | Use security defaults or Conditional Access.  |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use security defaults. | 
 
 See [Learn about security defaults and Conditional Access](m365bp-conditional-access.md).
 
