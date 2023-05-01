@@ -48,6 +48,8 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 1. **Get Defender for Business**. Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md). And, if you're planning to onboard servers, see [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
+   In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Assets** > **Devices**. If Defender for Business isn't provisioned yet, that process begins now. 
+
 2. **Add users and assign Defender for Business licenses**. You'll want to do this task before you run the setup wizard. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
 
    While you're adding users, make sure to create a list of your security team's names and email addresses. This list will come in handy while you are using the setup wizard. To view a list of users, in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), go to **Users** > **Active users**.
