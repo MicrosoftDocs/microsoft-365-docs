@@ -38,13 +38,17 @@ description: Learn how to use Microsoft Syntex to manage a variety of incoming b
 
 A healthcare provider fills in a paper-based enrollment application form and submits it to insurance company for processing. Currently, the enrollment forms are processed manually, and the data is fed into a system for review. Manual data entry leads to loss in productivity along with increased risk due to human error.
 
-Syntex uses advanced AI to extract information including checkboxes and handwritten content. The information is stored as metadata in SharePoint along with the document. Power Automate is then used to drive review and integrate the data with downstream applications.
+1. Use Syntex models to extract information including checkboxes and handwritten content. The information is stored as metadata in SharePoint along with the document.
 
-AI-based automation significantly reduce the time needed to process these forms and increase the response rate to providers The AI model takes 10 minutes to train, and it saves hours of manual data entry every week for the staff. SharePoint also allows analysis of this data using Power BI dashboards. Content query can be used by users to locate specific patient information.
+2. Use Power Automate to drive review and integrate the data with downstream applications.
+
+AI-based automation significantly reduces the time needed to process these forms and increase the response rate to providers The Syntex model takes 10 minutes to train, and it saves hours of manual data entry every week for the staff.
+
+SharePoint also allows analysis of this data using Power BI dashboards. Content query can be used by users to locate specific patient information.
 
 ## Rental contract management
 
-Most landlords use a standard rental agreement with their tenants. Once a new tenant completes the agreement and mails it to the landlord, it is then placed in a SharePoint library where Syntex will extract the key information.
+Most landlords use a standard rental agreement with their tenants. Once a new tenant completes the agreement and sends it to the landlord, it is then placed in a SharePoint library where Syntex will extract the key information.
 
 During the life of the contract, certain events can occur that require correspondence to be sent to the tenant such as late rental notices, grievances, and eviction notices.  These will also use standard templates that can use the information originally captured from the agreement.
 
@@ -52,9 +56,13 @@ Taking this a little further, PowerApps can begin to list all the active tenants
 
 ## Construction documentation verification
 
-As part of annual verification of partners and vendors, W-9 forms and Certificates of Liability (CLIs) are sent in. These documents are reviewed and updates are made accordingly. Thousands of CLIs and W-9 forms are reviewed manually for changes and updates into the appropriate systems used for bids. 
+As part of annual verification of partners and vendors, W-9 forms and Certificates of Liability (CLIs) are sent in. These documents are reviewed and updates are made accordingly. Thousands of CLIs and W-9 forms are reviewed manually for changes and updates into the appropriate systems used for bids. An improved process is required to do more with less.
 
-An improved process is required to do more with less. A Power Automate solution is created to extract attachments from incoming emails to save to SharePoint. Syntex models are then created to identify and extract information from CLIs and W9s, such as name, type of coverage, amount of coverage, and date. The extracted information can be used to populate other applications used during construction proposals.
+1. Use a Power Platform solution to extract attachments from incoming emails to save them to SharePoint.
+
+2. Use Syntex models to identify and extract information, such as name, type of coverage, amount of coverage, and date, from CLIs and W-9 forms.
+
+3. Use the extracted information to populate other applications used during construction proposals.
 <br>
 <br>
 
