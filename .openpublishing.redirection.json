@@ -2197,6 +2197,11 @@
     },
     {
       "source_path": "microsoft-365/commerce/subscriptions/why-cant-i-change-plans.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/change-plans-manually.md",
       "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
       "redirect_document_id": false
     },
@@ -5768,6 +5773,11 @@
 	{
       "source_path": "microsoft-365/security/defender-endpoint/contact-support-usgov.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/contact-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/supported-response-apis.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/management-apis",
       "redirect_document_id": false
     },
     {
@@ -10868,6 +10878,41 @@
   {
     "source_path": "microsoft-365/security/defender-business/mdb-simplified-configuration.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-create.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-modify.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-extend.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-format-excel.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/enterprise/move-sharepoint-between-geo-locations.md",
+    "redirect_url": "/microsoft-365/enterprise/m365-dr-workload-spo",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
     "redirect_document_id": false
   }
  ]
