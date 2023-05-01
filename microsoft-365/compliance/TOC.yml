@@ -242,6 +242,8 @@
           href: communication-compliance-configure.md
         - name: Detect channel signals with communication compliance
           href: communication-compliance-channels.md
+        - name: Microsoft Teams and communication compliance
+          href: teams-communication-compliance.md
         - name: Create and manage communication compliance policies
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
