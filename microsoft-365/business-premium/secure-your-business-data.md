@@ -34,7 +34,7 @@ description: "Learn best practices to protect your business from ransomware, phi
 
 This article lists the top 10 ways to secure your data with Microsoft 365 for business, with links for more information. 
 
-Microsoft 365 for business plans include antiphishing, antispam, and antimalware protection. 
+Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antispam, and antimalware protection. 
 
 Microsoft 365 Business Premium includes even more security capabilities, such as advanced threat protection for devices (also referred to as endpoints), email, and collaboration, and information protection. 
 
