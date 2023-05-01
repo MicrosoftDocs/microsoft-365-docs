@@ -24,7 +24,7 @@ description: Learn how to use Microsoft Syntex for generating documents in bulk.
       You can use content assembly to automatically generate documents in bulk. These documents are based on a modern template that is populated with values from a data source such as a SharePoint list or database.
 
       Features used:
-      - Syntex content assembly 
+      - Content assembly 
       - Power Automate  
    :::column-end:::
    :::column span="":::
