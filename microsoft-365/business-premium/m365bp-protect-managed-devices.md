@@ -38,7 +38,7 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 Your objectives are to:
 
-- [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).
+- [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
 - [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
 - [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
 - [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365)
