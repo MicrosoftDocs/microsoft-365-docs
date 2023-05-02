@@ -282,7 +282,7 @@ Impersonation safety tips appear to users when messages are identified as impers
 - **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
 
 > [!NOTE]
-> Safety tips are not stamped in S/MIME signed messages.
+> Safety tips are not stamped in S/MIME signed messages. They are also not stamped on messages that are allowed by tenant's organization settings.
 
 #### Trusted senders and domains
 
