@@ -54,9 +54,9 @@ We’ll soon roll out a selection of data connectors built specifically for Comp
 
 ## Service subscriptions
 
-For any of your organization's services that have more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department). When you create an assessment, you'll be asked to select which subscriptions within a service you want to assess. Your choice of subscription will affect the evaluation of improvement actions for that service.
+You can create assessments for any of your organization's services that have more than one subscription covered by Defender for Cloud (for example, an Azure account for development and testing purposes, and an Azure account for production). When you create an assessment, you'll be asked to select which subscriptions within a service you want to assess. Your choice of subscription will affect the evaluation of improvement actions for that service.
 
-If you choose subscriptions that are in scope within MDC for a matching standard, your assessment results will be pulled from MDC and shown in the assessment.
+If you choose subscriptions that are in scope within Defender for Cloud for a matching regulation, your assessment results will be pulled from Defender for Cloud and shown in the assessment.
 
 ## Supported regulations
 
