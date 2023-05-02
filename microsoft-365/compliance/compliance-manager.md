@@ -20,7 +20,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview Compliance Manager helps organizations manage their regulatory requirements with greater ease. Multicloud assessments, control mapping, and continuous control assessment help you stay on track and address risks."
+description: "Microsoft Purview Compliance Manager helps organizations automatically assess and manage compliance across their multicloud environment."
 ---
 
 # Microsoft Purview Compliance Manager
@@ -129,8 +129,8 @@ Compliance Manager is available in the following languages:
 
 ## Next steps: set up and customize
 
-Learn how to sign in, assign permissions and roles, configure settings, and personalize your dashboard view at [Get started with Compliance Manager](compliance-manager-setup.md).
+- [Sign in, assign permissions and roles, configure settings, and personalize your dashboard view](compliance-manager-setup.md).
+- [Learn about and get set up for multicloud support](compliance-manager-multicloud.md)
+- [Start building assessments to help you comply with industry standards that matter most to your organization](compliance-manager-assessments.md).
 
-Then start customizing Compliance Manager to help you comply with industry standards that matter most to your organization by [setting up assessments](compliance-manager-assessments.md).
-
-To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).
