@@ -95,7 +95,7 @@ All our updates contain
 - Fixed memory leak in behavior monitoring
 - Improved resiliency of signature loading and platform updates
 - Quarantine and restore support for WMI
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference?view=windowsserver2022-ps)
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
 - Fixed MSERT to only use release engine version
 - Improved the enforcement of exclusions
 - Added support for enabling real-time protection and signature updates during OOBE
