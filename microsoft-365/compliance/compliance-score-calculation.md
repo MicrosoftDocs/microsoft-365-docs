@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -43,7 +43,7 @@ The overall compliance score is calculated using action scores, where each Micro
   
 Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-Your initial score is calculated according to the default Data Protection Baseline assessment provided to all organizations. Upon your first visit, Compliance Manager is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
+Your initial score is calculated according to the default Data Protection Baseline assessment provided to all organizations. Upon your first visit, Compliance Manager is already collecting signals from your Microsoft 365 solutions. You see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Because every organization has specific needs, Compliance Manager relies on you to set up and manage assessments to help minimize and mitigate risk as comprehensively as possible.
 
@@ -58,7 +58,7 @@ Both types of actions have points that count toward your overall score when comp
 
 ### Scoring for actions related and unrelated to Microsoft Defender for Cloud
 
-Improvement actions that aren't implemented in or monitored by Defender for Cloud are scored as a signle unit. For example, if the action is worth 30 points, your achieve 30 points if the action passes or 0 points if it fails.
+Improvement actions that aren't implemented in or monitored by Microsoft Defender for Cloud are scored as a single unit. For example, if the action is worth 30 points, you earn 30 points if the action passes or 0 points if it fails.
 
 If the improvement action is implemented in or monitored by Defender for Cloud, its score is multiplied by the number of assessments in which they appear. Within a single assessment, an action's score represents the total of each subscription within the service. For example, if an action's total score within an assessment is 30 points, and the assessment has three subscriptions within that service, then the points allowed for the action within each service is 10. When the action passes in each of the three subscriptions, the total number of 30 points is awarded for that action in that assessment.
 
@@ -68,7 +68,7 @@ Actions are grouped by whether they are technical or non-technical in nature. Th
 
 - **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
 
-- **Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you will receive the action's point value each time you implement it within a group.
+- **Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you receive the action's point value each time you implement it within a group.
 
 **Example of how technical and non-technical actions are scored:**
 
