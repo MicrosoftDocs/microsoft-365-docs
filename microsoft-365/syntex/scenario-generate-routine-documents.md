@@ -38,11 +38,13 @@ You can use content assembly to automate the generation of daily inspection or m
 
 Today, users physically inspect parts and then fill in a list or a form or physical paper reports. This leads to additional work in transforming this data into actual digital reports that can be used further. 
 
+To implement a Syntex solution:
+
 1. Set up a document library where you want to store the reports.  
 
 2. Set up a SharePoint list with the required columns that you need to be filled in by the frontline workers.  
 
-3. Go to the document library and create a modern template using an existing report. Create fields for the values that are entered by the frontline workers and then associate the fields with the columns of the list you set up in step 2.  
+3. Go to the document library and create a modern template using an existing report. Create fields for the values that are entered by the frontline workers and then associate the fields with the columns of the SharePoint you previously set up.  
 
 4. Now create a Power Automate flow using the action “Generate document using Syntex” and use the trigger “When a list item is created.” This ensures that whenever a new entry is added by a frontline worker to the list, a new report is generated.  
 
