@@ -32,7 +32,7 @@ description: Learn how to use Microsoft Syntex to implement document compliance 
    :::column-end:::
 :::row-end:::
 
-## Files for an event or conference
+## Event or conference files
 
 You need to set compliance on documents uploaded into a document library storing files for a marketing event and a conference. You want to ensure that:
 
