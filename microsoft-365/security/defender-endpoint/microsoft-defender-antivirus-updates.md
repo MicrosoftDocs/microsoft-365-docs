@@ -94,7 +94,7 @@ All our updates contain
    - Engine: `1.1.23050.63000` 
 - Fixed memory leak in behavior monitoring
 - Improved resiliency of signature loading and platform updates
-- Quarantine and restore support for WMI
+- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
 - Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
 - Fixed MSERT to only use release engine version
 - Improved the enforcement of exclusions
