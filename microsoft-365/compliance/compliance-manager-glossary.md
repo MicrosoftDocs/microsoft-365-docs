@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Get definitiions of key terms used in Microsoft Purview Compliance Manager."
+description: "Get definitions of key terms used in Microsoft Purview Compliance Manager."
 ---
 
 # Compliance Manager glossary
@@ -27,12 +27,12 @@ This glossary provides a brief description of important terms and concepts for M
 
 | Term | Description | 
 | :------------- | :------------- | 
-| **Assessment**| A grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment help you meet the requirements of a standard, regulation, or law. |
-| **Control**| A requirement of a regulation, standard, or policy. It defines how you assessm and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.  |
+| **Assessment**| A grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps you meet the requirements of a standard, regulation, or law. |
+| **Control**| A specific measure or action that an organization implements to mitigate or manage risks associated with a particular requirement or objective of a regulation, standard, or policy. Examples: policies, procedures, processes, technical or physical safeguards, training programs, or other forms of risk management measures.  |
 | **Improvement action**| A compliance activity with recommended implementation instructions, intended to help towards completion of a control.  |
-| **License** | In the context of Compliance Manager regulations, one license allows you to build an unlimited number of assessments for that regulation. Multiple versions or levels of a regulation are covered by the single license for that overarching regulation.  |
-| **Regulation**| In Compliance Manager, the list of industry regulations that are the framework for bulding assessments. Compliance Manager provides over 360 regulatory templates for assessments.  |
+| **License** | In the context of Compliance Manager regulations: A single Compliance Manager license allows you to create an unlimited number of assessments for multiple versions of a regulation.  |
+| **Regulation**| A rule or requirement imposed by a governing authority, such as a government agency, to achieve a specific purpose. Compliance Manager supports several industry regulations, providing over   360 regulatory templates for building assessments.  |
 | **Service**| A data source; examples: Microsoft Azure, Amazon Web Services, Google Cloud Platform.  |
 | **Solution**| A Microsoft product or offering, such as Microsoft Purview Data Loss Prevention, eDiscovery, and Insider Risk Management.  |
-| **Subscription**| A sub-group within a service that your organization has set up; examples: Azure for your legal department, Azure for your marketing department, AWS for your legal department, AWS for your marketing department.  | 
-| **Virtual resources**| A virtual machine or other scannable entity.  |
+| **Subscription**| A type of account to create, assess, and manage a service such as Azure, Google Cloud Platform, or Amazon Web Services. Examples: an Azure account for development and testing purposes, an Azure account for production, etc.  | 
+| **Virtual resources**| A cloud computing-based resource that is managed virtually, such as VMs and virtual storage disks.  |

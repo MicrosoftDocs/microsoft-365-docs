@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 5/01/2023
+ms.date: 5/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ description: "Microsoft Purview Compliance Manager helps organizations manage th
 
 ## What is Compliance Manager?
 
-[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a solution in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you manage your organization’s multicloud compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a solution in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you automatically assess and manage compliance across your multicloud environment. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
@@ -66,9 +66,11 @@ Compliance Manager awards you points for completing improvement actions taken to
 
 Compliance Manager uses several data elements to help you manage your compliance activities. As you use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, regulations, and improvement actions.
 
+Be sure to check out the [Compliance Manager glossary of terms](compliance-manager-glossary.md).
+
 ##### Controls
 
-A control is a requirement of a regulation, standard, or policy. It defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy. Compliance Manager tracks the following types of controls:
+A control is a specific measure or action that an organization implements to mitigate or manage risks associated with a particular requirement or objective of a regulation, standard, or policy. Compliance Manager tracks the following types of controls:
 
 1. **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
