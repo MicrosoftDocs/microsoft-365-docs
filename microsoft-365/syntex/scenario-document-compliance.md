@@ -19,15 +19,24 @@ description: Learn how to use Microsoft Syntex to implement document compliance 
 
 # Scenario: Document compliance with Microsoft Syntex
 
-Intro
+:::row:::
+   :::column span="":::      
+      Use Syntex to help comply with retention and sensitivity requirements for your business documents.
 
-## Example1
+      Features used:
+      - Document processing models 
+      - Sensitivity labels 
+   :::column-end:::
+   :::column span="":::
+      ![Image of a generic business people at a desk in an office setting.](../media/content-understanding/uc-document-compliance.png)
+   :::column-end:::
+:::row-end:::
+
+## Files for an event or conference
 
 TBD
 
-## Example2
 
-TBD
 
 
 > [!div class="nextstepaction"]
