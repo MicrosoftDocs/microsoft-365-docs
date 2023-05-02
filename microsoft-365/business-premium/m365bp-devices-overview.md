@@ -38,7 +38,7 @@ Every device, whether [managed or unmanaged](m365bp-managed-unmanaged-devices.md
 Your objectives are to:
 
 - [Get everyone to set up MFA](m365bp-multifactor-authentication.md).
-- [Get Microsoft 365 apps installed on devices](m365bp-install-office-apps.md).
+- [Get Microsoft 365 Apps installed on devices](m365bp-install-office-apps.md).
 - [Protected unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md).
 
 Once you've achieved these objectives, proceed to [Use email securely](m365bp-protect-email-overview.md).

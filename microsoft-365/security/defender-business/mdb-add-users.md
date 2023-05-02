@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/15/2023
+ms.date: 05/01/2023
 ms.collection: 
 - m365-security
 - tier1
@@ -21,6 +21,8 @@ f1.keywords: NOCSH
 # Add users and assign licenses in Microsoft Defender for Business
 
 As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and assign licenses, and how to make sure multifactor authentication (MFA) is enabled. 
+
+:::image type="content" source="media/mdb-setup-step2.png" alt-text="Visual depicting step 2 - add users and assign licenses in Defender for Business.":::
 
 ## Add users and assign licenses
 

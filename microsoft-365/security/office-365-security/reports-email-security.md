@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 04/27/2023
+ms.date: 5/1/2023
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -477,7 +477,7 @@ On the **Submissions** page, the **[Export](#export-report)** button is availabl
 
 :::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal." lightbox="../../media/submissions-report-page.png":::
 
-## What is the The Threat protection status report in Microsoft Defender for Office 365?
+## Threat protection status report
 
 The **Threat protection status** report is available in both EOP and Defender for Office 365. However, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
