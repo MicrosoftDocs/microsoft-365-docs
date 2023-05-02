@@ -10944,6 +10944,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-install-office-apps.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-users-install-m365-apps",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-protect-pcs-macs.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-users-protect-unmanaged-devices",
+    "redirect_document_id": true
   }
  ]
 }
