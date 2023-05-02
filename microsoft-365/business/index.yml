@@ -18,7 +18,7 @@ metadata:
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/16/2022
+  ms.date: 05/02/2023
 
 # productDirectory section (optional)
 productDirectory:
@@ -56,7 +56,7 @@ conceptualContent:
         - url: ../business-premium/index.md
           itemType: overview
           text: Microsoft 365 Business Premium overview
-        - url: ../business-premium/why-choose-microsoft-365-business-premiumt-365-business-premium.md
+        - url: ../business-premium/why-choose-microsoft-365-business-premium.md
           itemType: overview
           text: How Microsoft 365 Business Premium helps your business with productivity and security
         - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
