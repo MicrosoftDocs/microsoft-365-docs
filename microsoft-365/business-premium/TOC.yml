@@ -55,7 +55,7 @@
       - name: Protect against phishing and other attacks
         href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
-        href: send-encrypted-email.md
+        href: m365bp-use-labels-encryption.md
   - name: Collaborate and share securely
     items: 
       - name: Overview

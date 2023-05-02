@@ -33,6 +33,6 @@ As you probably already know, email can contain malicious attacks cloaked as har
 Your objectives are to:
 
 - [Protect against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md).
-- [Set up encrypted email](send-encrypted-email.md).
+- [Set up encrypted email](m365bp-use-labels-encryption.md).
 
 Once you've achieved these objectives, proceed to [Collaborate and share securely](m365bp-collaborate-share-securely.md).

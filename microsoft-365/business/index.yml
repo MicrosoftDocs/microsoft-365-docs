@@ -163,7 +163,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
           itemType: how-to-guide
           text: Know what to watch for in email content
-        - url: ../business-premium/send-encrypted-email.md
+        - url: ../business-premium/m365bp-use-labels-encryption.md
           itemType: how-to-guide
           text: Encrypt or label sensitive email
         - url: ../business-premium/create-teams-for-collaboration.md

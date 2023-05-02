@@ -10954,6 +10954,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-protect-email-overview.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-use-email-securely",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/send-encrypted-email.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-use-labels-encryption",
+    "redirect_document_id": true
   }
  ]
 }
