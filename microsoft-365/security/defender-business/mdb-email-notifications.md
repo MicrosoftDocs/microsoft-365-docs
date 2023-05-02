@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: jomaun
-ms.date: 04/19/2023
+ms.date: 05/01/2023
 f1.keywords: NOCSH 
 ms.collection: 
  - m365-security
@@ -22,7 +22,11 @@ ms.collection:
 
 # Set up email notifications
 
-You can set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
+This article describes how to set up email notifications for your security team.
+
+:::image type="content" source="media/mdb-setup-step4.png" alt-text="Visual depicting step 4 - set up email notifications for your security team.":::
+
+When you can set up email notifications for your security team, they can be notified via email whenever any alerts are generated, or new vulnerabilities are discovered. 
 
 ## What to do
 

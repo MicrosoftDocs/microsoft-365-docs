@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,10 @@ ms.collection:
 ---
 
 # Onboard devices to Microsoft Defender for Business
+
+This article describes how to onboard devices to Defender for Business.
+
+:::image type="content" source="media/mdb-setup-step5.png" alt-text="Visual depicting step 5 - onboarding devices to Defender for Business.":::
 
 Onboard your business devices to protect them right away. You can choose from several options to onboard your company's devices. This article walks you through your options and describes how onboarding works.
 
