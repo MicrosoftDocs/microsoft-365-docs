@@ -93,7 +93,7 @@ Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 
 See the following articles:
 
 - [Policies in preset security policies](../security/office-365-security/preset-security-policies.md#policies-in-preset-security-policies)
-- [Protect against malware and other cyberthreats](m365bp-increase-protection.md)
+- [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
 
 | Subscription | Recommendation |
 |---|---|
@@ -181,12 +181,12 @@ Microsoft 365 Business Premium also includes:
 
 See the following articles: 
 
-- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- [Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
@@ -223,7 +223,7 @@ Microsoft 365 Business Premium also includes [Azure Information Protection Plan 
 
 See the following articles:
 
-- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) 
+- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#manage-calendar-sharing) 
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 | Subscription | Recommendations |
