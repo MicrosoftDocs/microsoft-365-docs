@@ -48,9 +48,8 @@ To implement a Syntex solution:
 
 > [!Note]
 > Although this example uses a SharePoint list as a data source, you can use any data source as a trigger for generating documents if you have access to the required Power Automate connector.  
-<br>
-<br>
 
+<br>
 
 > [!div class="nextstepaction"]
 > [See more scenarios and use cases for Syntex](adoption-scenarios.md)

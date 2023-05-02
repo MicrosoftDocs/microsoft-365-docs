@@ -172,7 +172,7 @@
               href: scenario-generate-documents-bulk.md 
             - name: Handle incoming documents
               href: scenario-handle-incoming-documents.md
-            - name: Organize unstructured repositories
+            - name: Make information easier to find
               href: scenario-organize-repositories.md
             - name: Find content details
               href: scenario-find-content-details.md

@@ -1,5 +1,5 @@
 ---
-title: Make content sets easier to find with Microsoft Syntex
+title: Make information easier to find with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to manage and organize document libraries.
 ---
 
-# Scenario: Make content sets easier to find with Microsoft Syntex
+# Scenario: Make information easier to find with Microsoft Syntex
 
 :::row:::
    :::column span="":::      
