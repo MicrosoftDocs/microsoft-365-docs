@@ -210,7 +210,7 @@ See the following articles:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 apps on all devices](m365bp-install-office-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
+| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business
