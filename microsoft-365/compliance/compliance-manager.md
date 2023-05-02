@@ -130,7 +130,7 @@ Compliance Manager is available in the following languages:
 ## Next steps: set up and customize
 
 - [Sign in, assign permissions and roles, configure settings, and personalize your dashboard view](compliance-manager-setup.md).
-- [Learn about and get set up for multicloud support](compliance-manager-multicloud.md)
-- [Start building assessments to help you comply with industry standards that matter most to your organization](compliance-manager-assessments.md).
+- [Learn about and set up for multicloud support](compliance-manager-multicloud.md).
+- [Create assessments to help you comply with industry standards that matter most to your organization](compliance-manager-assessments.md).
 
 To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).
