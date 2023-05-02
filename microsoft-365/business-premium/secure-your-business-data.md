@@ -113,12 +113,12 @@ See the following articles:
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
-- [Set up and secure managed devices](m365bp-protect-devices.md) 
+- [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
 
 ## 5. Train everyone on email best practices
@@ -203,14 +203,14 @@ Microsoft 365 Business Premium also includes:
 
 See the following articles: 
 
-- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).
+- [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md).
 - [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
 - [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
+| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business

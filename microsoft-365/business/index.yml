@@ -83,13 +83,13 @@ conceptualContent:
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: 3. Protect unmanaged (BYOD) devices
-        - url: ../business-premium/m365bp-protect-email-overview.md
+        - url: ../business-premium/m365bp-use-email-securely.md
           itemType: overview
           text: 4. Use email more securely
         - url: ../business-premium/m365bp-collaborate-share-securely.md
           itemType: overview
           text: 5. Collaborate and share more securely
-        - url: ../business-premium/m365bp-protect-devices.md
+        - url: ../business-premium/m365bp-protect-managed-devices.md
           itemType: how-to-guide
           text: 6. Set up and secure managed devices
         - url: ../business-premium/m365bp-maintain-environment.md
@@ -138,16 +138,16 @@ conceptualContent:
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: Set up unmanaged (BYOD) devices
-        - url: ../business-premium/m365bp-multifactor-authentication.md
+        - url: ../business-premium/m365bp-mfa-for-users.md
           itemType: how-to-guide
           text: Set up multi-factor authentication on devices
-        - url: ../business-premium/m365bp-install-office-apps.md
+        - url: ../business-premium/m365bp-users-install-m365-apps.md
           itemType: how-to-guide
           text: Install Microsoft 365 apps on all devices
         - url: ../business-premium/m365bp-protect-pcs-macs.md
           itemType: how-to-guide
           text: Protect unmanaged Windows PCs and Macs
-        - url: ../business-premium/m365bp-protect-devices.md
+        - url: ../business-premium/m365bp-protect-managed-devices.md
           itemType: overview
           text: Set up and secure managed devices
 
@@ -163,7 +163,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
           itemType: how-to-guide
           text: Know what to watch for in email content
-        - url: ../business-premium/send-encrypted-email.md
+        - url: ../business-premium/m365bp-use-labels-encryption.md
           itemType: how-to-guide
           text: Encrypt or label sensitive email
         - url: ../business-premium/create-teams-for-collaboration.md

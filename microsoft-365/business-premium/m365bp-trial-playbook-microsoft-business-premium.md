@@ -78,7 +78,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 ## Use Microsoft 365 Apps on devices
 
-1. First, you'll need to [install Microsoft 365 Apps](m365bp-install-office-apps.md).
+1. First, you'll need to [install Microsoft 365 Apps](m365bp-users-install-m365-apps.md).
 
 2. Go to [https://office.com](https://office.com) and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
