@@ -38,7 +38,7 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 > - The presence of filtered messages in quarantine.
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 >
-> ASF adds `X-CustomSpam:` X-header fields to messages _after_ the messages have been processed by Exchange mail flow rules (also known as transport rules), so you can't use mail flow rules to act on messages that were filtered by ASF.
+> ASF adds `X-CustomSpam:` X-header fields to messages _after_ the messages have been processed by Exchange mail flow rules (also known as transport rules), so you can't use mail flow rules to identify and act on messages that were filtered by ASF.
 
 The following sections describe the ASF settings and options that are available in anti-spam policies in the Microsoft 365 Defender portal, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
