@@ -151,6 +151,8 @@ Make sure that all tenants you want assigned to a GDAP template are selected bef
 
 2. Select **Finish**.
 
+It may take a minute or two for the settings you've configured to apply. If you need to refresh the data, follow the prompts. Setup will be incomplete if you exit GDAP Setup without selecting **Finish**. 
+
 > [!NOTE]
 > For customers with an existing DAP relationship, these settings are automatically applied. Customers with an Active status on the last page of GDAP Setup are assigned to roles and security groups as defined in the GDAP template.  
 
