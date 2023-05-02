@@ -127,7 +127,7 @@ You need at least one security group per support role for each template. For the
 7. Select **Next**.
 8. Select **Save and close** to save your settings and exit GDAP Setup.
 
-JIT agent security group users can request access to highly privileged GDAP roles. As part of GDAP Setup, select a JIT approver security group from your tenant to approve access requests from JIT agents. The JIT approver security group must be role assignable. After completing GDAP setup, a JIT access policy is created for JIT agents to request access.  You can review the policy created in the [Azure AD Identity Governance portal](https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmEntitlement), and JIT agents can request access to their roles from the [My Access portal](https://myaccess.microsoft.com/#/access-packages). For more information on how JIT agents can request access, see [Manage access to resources](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse) article. For more information on how approvers can approve requests, see [Approve or deny request](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse) article.
+JIT agent security group users are eligible to request access to highly privileged GDAP roles; they are not given access to them automatically. As part of GDAP Setup, select a JIT approver security group from your tenant to approve access requests from JIT agents. The JIT approver security group must be role assignable. After completing GDAP setup, a JIT access policy is created for JIT agents to request access.  You can review the policy created in the [Azure AD Identity Governance portal](https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmEntitlement), and JIT agents can request access to their roles from the [My Access portal](https://myaccess.microsoft.com/#/access-packages). For more information on how JIT agents can request access, see [Manage access to resources](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse) article. For more information on how approvers can approve requests, see [Approve or deny request](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse) article.
 
 ### Step 4: Tenant assignments
 
@@ -150,12 +150,12 @@ Make sure that all tenants you want assigned to a GDAP template are selected bef
 2. Select **Finish**.
 
 > [!NOTE]
-> For customers with an existing DAP relationship, these settings will be automatically applied. Customers with an Active status on the last page of GDAP Setup will have security groups and roles assigned as defined in the GDAP template.  
+> For customers with an existing DAP relationship, these settings are automatically applied. Customers with an Active status on the last page of GDAP Setup are assigned to roles and security groups as defined in the GDAP template.  
 
 > [!NOTE]
 > For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Admin so they can approve the GDAP relationship. Once the relationship is approved, rerun GDAP Setup to assign the security groups to the GDAP relationship created for that customer.
 
-Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. The GDAP relationships will also be visible in Partner Center, and the security groups will be visible in Azure AD as well.
+Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are visible in Partner Center, and the security groups are visible in Azure AD as well.
 
 ## Related content
 
