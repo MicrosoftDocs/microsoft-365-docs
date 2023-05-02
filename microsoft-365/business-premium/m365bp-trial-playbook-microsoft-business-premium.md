@@ -36,7 +36,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
    After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
-2. [Turn on Multi-Factor Authentication](m365bp-conditional-access.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
+2. [Turn on Multi-Factor Authentication](m365bp-turn-on-mfa.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
 
 3. Use your [preset security policies](../security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
