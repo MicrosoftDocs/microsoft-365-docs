@@ -259,7 +259,7 @@
 | 4/14/2023 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide) | modified |
 | 4/14/2023 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
 | 4/14/2023 | [Secure managed and unmanaged devices](/microsoft-365/business-premium/m365bp-managed-unmanaged-devices?view=o365-worldwide) | added |
-| 4/14/2023 | [Set up unmanaged devices overview](/microsoft-365/business-premium/m365bp-devices-overview?view=o365-worldwide) | modified |
+| 4/14/2023 | [Set up unmanaged devices overview](/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices?view=o365-worldwide) | modified |
 | 4/14/2023 | [Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-protect-pcs-macs?view=o365-worldwide) | modified |
 
 

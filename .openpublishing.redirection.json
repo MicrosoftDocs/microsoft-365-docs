@@ -10929,6 +10929,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-increase-protection.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-devices-overview.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices",
+    "redirect_document_id": true
   }
  ]
 }

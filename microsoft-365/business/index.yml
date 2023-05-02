@@ -80,7 +80,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
           text: 2. Set up security capabilities
-        - url: ../business-premium/m365bp-devices-overview.md
+        - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: 3. Protect unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-protect-email-overview.md
@@ -135,7 +135,7 @@ conceptualContent:
         - url: ../security/defender-business/index.yml
           itemType: overview
           text: Get started with Microsoft Defender for Business
-        - url: ../business-premium/m365bp-devices-overview.md
+        - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: Set up unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-multifactor-authentication.md
