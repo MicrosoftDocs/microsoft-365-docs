@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,15 +18,15 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview Compliance Manager provides regulattory templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
+description: "Find the list of regulatory templates provided in Microsoft Purview Compliance Manager for creating assessments."
 ---
 
 # Compliance Manager regulations list
 
-**In this article:** View the comprehensive list of **regulations** available for creating assessments in Compliance Manager.
+**In this article:** View the comprehensive list of **regulations** available to build assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
