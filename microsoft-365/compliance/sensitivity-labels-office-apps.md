@@ -382,9 +382,9 @@ Before you can scope a label to just files or emails, you must first remove it i
 
 **Limitations:**
 
-- If you use this option and [mandatory labeling](#require-users-to-apply-a-label-to-their-email-and-documents):
+- Currently, if you use this option and [mandatory labeling](#require-users-to-apply-a-label-to-their-email-and-documents):
     -  It's not supported to use mandatory labeling for users who are assigned a label policy for just the **Emails** scope.
-    -  To use mandatory labeling and just the **Files** scope option, the assigned users must have another label policy published that includes both scope options for **Files** and **Emails**.
+    -  To use mandatory labeling and just the **Files** scope option, the policy must also contain at least one label with both scope options for **Files** and **Emails**.
 
 - If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, first remove this label as the default label. You'll then be able to remove the email scope. Finally, reselect the now modified label as the default label for documents.
 
