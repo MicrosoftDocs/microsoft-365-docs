@@ -182,7 +182,7 @@
 | 4/20/2023 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-policies-configure?view=o365-worldwide) | modified |
 | 4/20/2023 | [Manage clients for Microsoft Whiteboard in GCC High environments](/microsoft-365/whiteboard/manage-clients-gcc-high?view=o365-worldwide) | modified |
 | 4/20/2023 | [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) | modified |
-| 4/20/2023 | [Upgrade Windows devices to Windows 10 or 11 Pro](/microsoft-365/business-premium/m365bp-upgrade-windows-10-pro?view=o365-worldwide) | modified |
+| 4/20/2023 | [Upgrade Windows devices to Windows 10 or 11 Pro](/microsoft-365/business-premium/m365bp-upgrade-windows-pro?view=o365-worldwide) | modified |
 | 4/21/2023 | [Get scan agent by ID](/microsoft-365/security/defender-endpoint/get-agent-details?view=o365-worldwide) | added |
 | 4/21/2023 | [Add, update or delete a scan definition](/microsoft-365/security/defender-endpoint/add-a-new-scan-definition?view=o365-worldwide) | modified |
 | 4/21/2023 | [Authenticated scan methods and properties](/microsoft-365/security/defender-endpoint/get-authenticated-scan-properties?view=o365-worldwide) | modified |

@@ -74,4 +74,4 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md), [Use email securely](m365bp-use-email-securely.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
 
-5. [Set up and secure managed devices](m365bp-protect-devices.md)
+5. [Set up and secure managed devices](m365bp-protect-managed-devices.md)

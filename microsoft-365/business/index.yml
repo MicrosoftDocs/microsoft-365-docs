@@ -89,7 +89,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-collaborate-share-securely.md
           itemType: overview
           text: 5. Collaborate and share more securely
-        - url: ../business-premium/m365bp-protect-devices.md
+        - url: ../business-premium/m365bp-protect-managed-devices.md
           itemType: how-to-guide
           text: 6. Set up and secure managed devices
         - url: ../business-premium/m365bp-maintain-environment.md
@@ -147,7 +147,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-protect-pcs-macs.md
           itemType: how-to-guide
           text: Protect unmanaged Windows PCs and Macs
-        - url: ../business-premium/m365bp-protect-devices.md
+        - url: ../business-premium/m365bp-protect-managed-devices.md
           itemType: overview
           text: Set up and secure managed devices
 
