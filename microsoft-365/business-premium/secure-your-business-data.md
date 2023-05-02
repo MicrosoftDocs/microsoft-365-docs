@@ -112,7 +112,7 @@ Microsoft 365 Business Premium also includes [Microsoft Intune](/mem/intune/fund
 See the following articles:
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
-- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
+- [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
 - [Set up and secure managed devices](m365bp-protect-devices.md) 
 
 | Subscription | Recommendations |

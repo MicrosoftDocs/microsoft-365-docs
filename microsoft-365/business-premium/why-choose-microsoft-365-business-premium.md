@@ -50,7 +50,7 @@ The security recommendations provided in [this guidance](index.md) make it much 
 
 Resources are available to help everyone in your organization to:
 
-- [Protect devices](m365bp-devices-overview.md)
+- [Protect devices](m365bp-set-up-unmanaged-devices.md)
 - [Use email more securely](m365bp-protect-email-overview.md)
 - [Collaborate and share information more securely](m365bp-collaborate-share-securely.md)
 
@@ -72,6 +72,6 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 3. [Set up your security capabilities](m365bp-security-overview.md).
 
-4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md), [Use email securely](m365bp-protect-email-overview.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
+4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md), [Use email securely](m365bp-protect-email-overview.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
 
 5. [Set up and secure managed devices](m365bp-protect-devices.md)

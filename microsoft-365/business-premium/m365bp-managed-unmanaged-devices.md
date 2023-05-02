@@ -59,12 +59,12 @@ For their part in protecting unmanaged devices, users can:
 - **Make sure antivirus/antimalware software is installed and up to date on all devices**. To learn more, see  [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
 - **Keep their devices up to date with operating system and application updates**. To learn more, see [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde).
 
-To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md).
+To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
 
 ---
 
 ## Next steps
 
-- [Set up BYOD devices](m365bp-devices-overview.md) or [Set up and secure managed devices](m365bp-protect-devices.md)
+- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-devices.md)
 - [Use email securely](m365bp-protect-email-overview.md)
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)
