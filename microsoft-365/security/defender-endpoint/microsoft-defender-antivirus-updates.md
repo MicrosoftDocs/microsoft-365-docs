@@ -101,9 +101,9 @@ All our updates contain
 - Added support for enabling real-time protection and signature updates during OOBE
 - Fixed localization for Defender events
 - Deprecated real-time signature delivery setting
-- Updated missing setting (ValidateMapsConnection) in MpCmdRun.exe
+- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
 - Fixed abandoned threats in the Windows Security app
-- Fixed a service-hang issue that caused invalid outputs to display in Get-MpComputerStatus
+- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
 
 
 #### Known issues
