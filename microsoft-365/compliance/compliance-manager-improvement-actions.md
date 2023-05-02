@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -45,9 +45,11 @@ Compliance Manager detects signals from complementary improvement actions that a
 
 #### Microsoft Defender for Cloud automation
 
-Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services, and Google Cloud Platform. The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multicloud support](compliance-manager-multicloud.md) and [scoring](compliance-score-calculation.md).
+Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multicloud support](compliance-manager-multicloud.md) and [scoring](compliance-score-calculation.md).
 
-**Connectors coming soon**: A selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services such as Salesforce and Zoom are rolling out in the near future.
+#### Data connectors (coming soon)
+
+A selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services such as Salesforce and Zoom are rolling out in the near future. Check back with this page for updates.
 
 ## Improvement actions details page
 
@@ -65,7 +67,7 @@ Select an improvement action from the list to view its details page. You can als
 
 - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
 
-## Implementation and testing work
+## Implementation and testing
 
 ### Assign improvement actions
 
