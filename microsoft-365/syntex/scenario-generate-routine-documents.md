@@ -50,12 +50,13 @@ To implement a Syntex solution:
 
 5. Using Microsoft Forms, you can create a form for frontline workers to enter values in the list or expose the list itself for them to add values.  
 
-You can now review all daily reports as they get created based on values that frontline workers fill in the form.  
+You can now review all daily reports as they get created based on values that frontline workers enter in the form.  
 
 > [!Note]
 > Although this example uses a SharePoint list as a data source, you can use any data source as a trigger for generating documents if you have access to the required Power Automate connector.  
 <br>
 <br>
+
 
 > [!div class="nextstepaction"]
 > [See more scenarios and use cases for Syntex](adoption-scenarios.md)
