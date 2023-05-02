@@ -17,7 +17,7 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/29/2023
+ms.date: 4/21/2023
 ---
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
