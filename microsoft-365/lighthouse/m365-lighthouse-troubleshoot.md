@@ -91,7 +91,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
 
-**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Azure AD) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have Multi-Factor Authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Azure AD) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
 
 You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
 
@@ -99,7 +99,7 @@ You should also make sure Conditional Access policies configured in the customer
 
 **Cause:** You didn't complete all steps of GDAP Setup, or the GDAP relationship created by GDAP Setup still requires customer approval.
 
-**Resolution:** You must complete each step of GDAP Setup in order for all settings to apply, and make sure you select Finish when done. On the last page of GDAP Setup, customers with an *Active* status will have security groups assigned. If you don't have consent to administer services for any of your customers, you'll need to send them an admin relationship request. Once they approve the request, re-run GDAP Setup to assign the security groups to the GDAP relationship created for those customers.
+**Resolution:** You must complete each step of GDAP Setup in order for all settings to apply, and make sure you select **Finish** when done. On the last page of GDAP Setup, customers with an *Active* status will have security groups assigned. If you don't have consent to administer services for any of your customers, you'll need to send them an admin relationship request. Once they approve the request, re-run GDAP Setup to assign the security groups to the GDAP relationship created for those customers.
 
 ## Customer tenant management  
 
