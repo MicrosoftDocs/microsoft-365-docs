@@ -98,3 +98,8 @@ Use the following articles to get started with DLP:
 
 2. [Get started with the default DLP policy](../compliance/get-started-with-the-default-dlp-policy.md).
 
+## Next steps
+
+- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-managed-devices.md)
+- [Use email securely](m365bp-use-email-securely.md)
+- [Collaborate and share securely](m365bp-collaborate-share-securely.md)
