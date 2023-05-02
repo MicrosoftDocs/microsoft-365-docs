@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,10 @@ ms.collection:
 ---
 
 # Onboard devices to Microsoft Defender for Business
+
+This article describes how to onboard devices to Defender for Business.
+
+:::image type="content" source="media/mdb-setup-step5.png" alt-text="Visual depicting step 5 - onboarding devices to Defender for Business.":::
 
 Onboard your business devices to protect them right away. You can choose from several options to onboard your company's devices. This article walks you through your options and describes how onboarding works.
 
@@ -370,5 +374,4 @@ After you've onboarded a device, you can run a quick phishing test to make sure 
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
-- Also consider [Setting up email notifications](mdb-email-notifications.md) for your security team.
+- If you're done onboarding devices, proceed to [Step 6: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).

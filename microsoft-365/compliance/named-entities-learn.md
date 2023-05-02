@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 04/25/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: conceptual
@@ -32,7 +32,7 @@ description: "Learn how named entities help you detect sensitive items containin
 - [Data Lifecycle Management](information-governance.md)
 - [Records management](records-management.md)
 - [Microsoft Purview eDiscovery](ediscovery.md)
-- [Microsoft Priva](/privacy/priva/priva-overview.md)
+- [Microsoft Priva](/privacy/priva/priva-overview)
 - [Exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](dlp-create-deploy-policy.md) from a blank template and use a named entity SIT as a condition.
@@ -67,7 +67,7 @@ Here are some examples of named entity SITs. You can find all of them in [Sensit
 
 ## Examples of enhanced DLP policies
 
-Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview compliance portal > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
+Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview compliance portal** Navigate to **Data loss prevention** > **Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 |Policy category  |Template  |Description  |
 |---------|---------|---------|
