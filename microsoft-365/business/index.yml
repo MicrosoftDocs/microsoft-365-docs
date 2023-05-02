@@ -157,7 +157,7 @@ conceptualContent:
         - url: ..//security/office-365-security/index.yml
           itemType: overview
           text: Get started with Microsoft Defender for Office 365
-        - url: ../business-premium/m365bp-increase-protection.md
+        - url: ../business-premium/m365bp-protect-against-malware-cyberthreats.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
         - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
