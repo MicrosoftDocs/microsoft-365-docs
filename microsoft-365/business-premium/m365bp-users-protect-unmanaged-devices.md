@@ -60,7 +60,7 @@ You should always run Windows Defender Firewall even if you have another firewal
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
 
@@ -82,4 +82,4 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing email usage](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.

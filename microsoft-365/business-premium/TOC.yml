@@ -51,7 +51,7 @@
   - name: Use email securely
     items: 
       - name: Overview
-        href: m365bp-protect-email-overview.md
+        href: m365bp-use-email-securely.md
       - name: Protect against phishing and other attacks
         href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
