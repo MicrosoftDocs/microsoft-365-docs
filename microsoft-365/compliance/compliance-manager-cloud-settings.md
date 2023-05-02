@@ -108,6 +108,8 @@ Follow these instructions if you have an Amazon Web Services (AWS) account or Go
 
 ## Add standards to your subscriptions
 
+Check the [list of standards supported by Defender for Cloud and Compliance Manager](#standards-supported-by-compliance-manager-and-defender-for-cloud) to ensure your desired standard is supported. Then follow the steps below.
+
 1. In Defender for Cloud, select **Environment settings** on the left navigation.
 
 1. Your available environments and subscriptions will be listed on the page. You may need to expand your management groups to view subscriptions, which you can do by selecting **Expand all** below the search bar. Find the subscription to which you want to add a standard.
