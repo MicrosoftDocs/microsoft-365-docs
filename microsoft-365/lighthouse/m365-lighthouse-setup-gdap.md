@@ -50,7 +50,7 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 
 When you set up GDAP for the first time, you must complete the following sections in order. Once completed, you can come back and edit any section as needed.
 
-If you encounter any problems during GDAP setup, see GDAP section in troubleshooting for guidance.
+If you encounter any problems during GDAP setup, see [Troubleshoot GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management) for guidance.
 
 To get started:
 
@@ -80,7 +80,7 @@ Choose the Azure AD roles needed based on your employees' job functions.
 
     - Edit Azure AD role selections
 
-    By default, Lighthouse includes five support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and JIT agent. You can rename support roles to match your organization’s preferences by selecting **Edit support roles**. Certain Azure AD roles can’t be added to different support roles – for example, the Azure AD roles in the JIT agent support role can’t be added to any other support role.
+    By default, Lighthouse includes five support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and JIT agent. You can rename support roles to match your organization's preferences by selecting **Edit support roles**. Certain Azure AD roles can't be added to different support roles – for example, the Azure AD roles in the JIT agent support role can't be added to any other support role.
 
     If not all support roles are needed for your GDAP setup, you can exclude one or more from your GDAP templates in the next step.  
 
