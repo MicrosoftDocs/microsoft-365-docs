@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 03/27/2023
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -36,6 +36,7 @@ Your objectives are to:
 
 - [Turn on MFA](m365bp-turn-on-mfa.md).
 - [Protect your admin accounts](m365bp-protect-admin-accounts.md).
-- [Protect against malware and other threats](m365bp-protect-against-malware-cyberthreats.md).
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+- [Protect against malware and other threats](m365bp-protect-against-malware-cyberthreats.md).
+- [Set up information protection capabilities](m365bp-set-up-compliance.md).
 

@@ -51,8 +51,8 @@ Users are given [permissions](/microsoft-365/compliance/communication-compliance
 
 Communication compliance empowers organizations to detect, triage, and remediate communications with potential business conduct and/or regulatory compliance violations. Communication compliance provides the following policy templates that use machine learning classifiers for users:  
 
-- **Business conduct**: Corporate sabotage (preview), Discrimination, Profanity, Threat, and Targeted harassment classifiers
-- **Regulatory compliance**: Customer complaints, gifts & entertainment (preview), money laundering (preview), regulatory collusion (preview), stock manipulation (preview), unauthorized disclosure (preview) classifiers
+- **Business conduct**: Corporate sabotage, Discrimination, Profanity, Threat, and Targeted harassment classifiers
+- **Regulatory compliance**: Customer complaints, gifts & entertainment, money laundering, regulatory collusion, stock manipulation, unauthorized disclosure classifiers
 
 ## Metrics used to evaluate and measure performance
 

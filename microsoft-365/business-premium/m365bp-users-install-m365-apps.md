@@ -1,5 +1,5 @@
 ---
-title: "Install Microsoft 365 Apps on all devices in Microsoft 365 Business Premium"
+title: "Install Microsoft 365 Apps on your devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -21,12 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "How to install Office on all devices in Microsoft 365 Business Premium."
+description: "How to install Microsoft 365 Apps also called Office apps on your devices in Microsoft 365 Business Premium."
 ---
 
-# Install Microsoft 365 Apps on all devices
+# Install Microsoft 365 Apps on your devices
 
-Okay, you've set up Microsoft 365 Business Premium, and now you can require users to install individual Microsoft 365 Apps on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
+It's a good idea to install the Microsoft 365 Apps on your computers, tablets, and phones. You'll get the latest updates, including security updates, for your apps and you'll have the most current features. 
+
+If you're part of your organization's security team, you can ask users to install the Microsoft 365 Apps on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Microsoft 365 admins can manage Microsoft 365 installation options instead. To learn more, see the following articles:
