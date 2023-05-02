@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 04/11/2023
+ms.date: 05/02/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -126,24 +126,6 @@ All our updates contain
 - Improved serviceability for internal database files
 - Enhanced certificate indicators determination logic
 - Enhanced memory usage
-
-#### Known Issues
-
-- None  
-
-### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
-
-- Security intelligence update version: **1.383.26.0**
-- Release date: **February 14, 2023**
-- Platform: **4.18.2301.6**
-- Engine: **1.1.20000.2**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
-- Updated Sense token hardening
-- Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
 
 #### Known Issues
 
