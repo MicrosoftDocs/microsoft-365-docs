@@ -39,6 +39,7 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 - You need to have specific permissions in the partner tenant:
 
   - To establish GDAP security groups, add users, and create GDAP templates, you must be a Global Administrator in the partner tenant. This role can be assigned in Azure Active Directory (Azure AD).
+
   - To create and complete GDAP relationships, you must be a member of the Admin Agents group in Partner Center.
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing delegated relationship (DAP or GDAP).
