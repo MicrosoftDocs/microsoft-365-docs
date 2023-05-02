@@ -13,7 +13,7 @@ ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
