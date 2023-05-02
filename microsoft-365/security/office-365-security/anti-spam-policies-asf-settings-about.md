@@ -37,6 +37,8 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 > - Periodic quarantine notifications from spam and high confidence spam filter verdicts.
 > - The presence of filtered messages in quarantine.
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
+>
+> ASF adds `X-CustomSpam:` X-header fields to messages _after_ the messages have been processed by Exchange mail flow rules (also known as transport rules), so you can't use mail flow rules to act on messages that were filtered by ASF.
 
 The following sections describe the ASF settings and options that are available in anti-spam policies in the Microsoft 365 Defender portal, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
@@ -48,7 +50,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 - **Off**: The ASF setting is disabled. This is the default value, and we recommend that you don't change it.
 - **Test**: ASF adds the corresponding X-header field to the message. What happens to the message is determined by the **Test mode** (*TestModeAction*) value:
   - **None**: Message delivery is unaffected by the ASF detection. The message is still subject to other types of filtering and rules in EOP.
-  - **Add default X-header text (*AddXHeader*)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules to affect the delivery of the message.
+  - **Add default X-header text (*AddXHeader*)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules (not mail flow rules) to affect the delivery of the message.
   - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the additional Bcc recipients. In the Microsoft 365 Defender portal, you separate multiple email addresses by semicolons (;). In PowerShell, you separate multiple email addresses by commas.
 
   **Notes**:

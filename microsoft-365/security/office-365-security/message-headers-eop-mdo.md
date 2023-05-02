@@ -81,7 +81,7 @@ The individual fields and values are described in the following table.
 |`SFV:SKS`|The message was marked as spam prior to being processed by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
 |`SFV:SPM`|The message was marked as spam by spam filtering.|
 |`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as spam (SCL 6). For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
-|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](anti-spam-policies-asf-settings-about.md).|
+|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](anti-spam-policies-asf-settings-about.md). <br><br> **Note**: ASF adds `X-CustomSpam:` X-header fields to messages _after_ the messages have been processed by Exchange mail flow rules (also known as transport rules), so you can't use mail flow rules to act on messages that were filtered by ASF.|
 
 ## X-Microsoft-Antispam message header fields
 
