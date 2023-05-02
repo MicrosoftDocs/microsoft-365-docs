@@ -79,6 +79,37 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
+
+- Security intelligence update version: **1.381.xx.x**
+- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
+- Platform: **4.18.2304.8** 
+- Engine: **1.1.20300.3**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here are some examples of what the new version format will look like: 
+   - Platform: `4.18.23050.1` 
+   - Engine: `1.1.23050.63000` 
+- Fixed memory leak in behavior monitoring
+- Improved resiliency of signature loading and platform updates
+- Quarantine and restore support for WMI
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference?view=windowsserver2022-ps)
+- Fixed MSERT to only use release engine version
+- Improved the enforcement of exclusions
+- Added support for enabling real-time protection and signature updates during OOBE
+- Fixed localization for Defender events
+- Deprecated real-time signature delivery setting
+- Updated missing setting (ValidateMapsConnection) in MpCmdRun.exe
+- Fixed abandoned threats in the Windows Security app
+- Fixed a service-hang issue that caused invalid outputs to display in Get-MpComputerStatus
+
+
+#### Known issues
+
+- None
+
 ### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
 
 - Security intelligence update version: **1.387.695.0**
