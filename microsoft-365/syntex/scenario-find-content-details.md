@@ -49,10 +49,6 @@ The team decides to use Microsoft Syntex as the solution.
 
 The legal team is now able to easily manage and search the patent filings and intellectual property documents.
 
-
-A legal team in a retail manufacturer was looking for a solution to centralize, organize, and streamline searching of legal content specifically patent filings and intellectual property documents. At the time, the legal team was using Outlook to manage the content, but had manychallenges with team visibility, search, and content decentralized through mailboxes.
-
-The content was copied to SharePoint libraries and Syntex is used to extract information and metadata from emails as well as attachments to help organize content.  
 <br>
 <br>
 
