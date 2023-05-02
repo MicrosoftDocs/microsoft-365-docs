@@ -39,6 +39,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+
+## May 2023
+
+### Data lifecycle management and records management
+
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are are shared via Exchange, Teams, or Yammer.
+
 ## April 2023
 
 ### Communication compliance
