@@ -10939,6 +10939,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-multifactor-authentication.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-mfa-for-users",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-install-office-apps.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-users-install-m365-apps",
+    "redirect_document_id": true
   }
  ]
 }
