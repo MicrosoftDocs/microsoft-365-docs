@@ -77,10 +77,9 @@ Choose the Azure AD roles needed based on your employees' job functions.
 1. From the **Roles and permissions** page, select the Azure AD roles needed based on your employees' job functions. Do one of the following:
 
     - Adopt recommended roles
-
     - Edit Azure AD role selections
 
-    By default, Lighthouse includes five support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and JIT agent. You can rename support roles to match your organization's preferences by selecting **Edit support roles**. Certain Azure AD roles can't be added to different support roles – for example, the Azure AD roles in the JIT agent support role can't be added to any other support role.
+    By default, Lighthouse includes five support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and JIT agent. You can rename support roles to match your organization's preferences by selecting **Edit support roles**. Certain Azure AD roles can't be added to different support roles&mdash;for example, the Azure AD roles in the JIT agent support role can't be added to any other support role.
 
     If not all support roles are needed for your GDAP setup, you can exclude one or more from your GDAP templates in the next step.  
 
@@ -159,7 +158,7 @@ It may take a minute or two for the settings you've configured to apply. If you 
 > [!NOTE]
 > For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the GDAP relationship. Once the relationship is approved, rerun GDAP Setup to assign the security groups to the GDAP relationship created for that customer.
 
-Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are visible in Partner Center, and the security groups are visible in Azure AD, as well.
+Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are now visible in Partner Center and the security groups are now visible in Azure AD.
 
 ## Related content
 
