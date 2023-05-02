@@ -138,7 +138,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: Set up unmanaged (BYOD) devices
-        - url: ../business-premium/m365bp-multifactor-authentication.md
+        - url: ../business-premium/m365bp-mfa-for-users.md
           itemType: how-to-guide
           text: Set up multi-factor authentication on devices
         - url: ../business-premium/m365bp-install-office-apps.md
