@@ -60,7 +60,7 @@ If you choose subscriptions that are in scope within Defender for Cloud for a ma
 
 ## Supported regulations
 
-View the [list of regulations supported by both Compliance Manager and Defencer for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
+View the [list of regulations supported by both Compliance Manager and Defender for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
 
 ## Support levels
 
