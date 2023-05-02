@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 03/27/2023
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -28,7 +28,7 @@ description: "Know what to watch for in email. Train your team to guard against 
 
 :::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted.":::
 
-As you probably already know, email can contain malicious attacks cloaked as harmless communications. Additionally, email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. In this mission, learn how members of the organizations can all help to keep the system safe from attackers.
+As you probably already know, email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications. In this mission, learn how everyone in your organization can help to keep your information safe from attackers.
 
 Your objectives are to:
 
