@@ -61,11 +61,11 @@ To help simplify the process of enabling MFA, [security defaults in Azure Active
 
 Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements.
 
-See [Turn on multi-factor authentication](m365bp-conditional-access.md).
+See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-conditional-access.md).  |
+| [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
 ## 2. Protect your administrator accounts
@@ -117,9 +117,9 @@ See the following articles:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>(*Defender for Business can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>(*Defender for Business can be added on*) |
+| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
 
 ## 5. Train everyone on email best practices
 
