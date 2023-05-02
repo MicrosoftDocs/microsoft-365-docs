@@ -89,7 +89,7 @@ All our updates contain
 
 #### What's new
 
-- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here are some examples of what the new version format will look like: 
+- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format will look like: 
    - Platform: `4.18.23050.1` 
    - Engine: `1.1.23050.63000` 
 - Fixed memory leak in behavior monitoring
