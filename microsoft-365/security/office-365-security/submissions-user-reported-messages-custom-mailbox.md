@@ -118,7 +118,7 @@ When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on
 
 - **Send the reported messages to** in the **Reported message destinations** section: Select one of the following options:
 
-  - **Microsoft only**: User reported messages go directly to Microsoft for analysis. Only metadata from the user reported messages (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
+  - **Microsoft only**: User reported messages go directly to Microsoft for analysis. These reports are available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
 
   - **My reporting mailbox only**: User reported messages go only to the specified reporting mailbox for an admin or the security operations team to analyze.
 

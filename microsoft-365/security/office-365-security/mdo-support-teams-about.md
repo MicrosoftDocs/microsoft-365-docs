@@ -30,7 +30,7 @@ ms.date: 3/29/2023
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 > [!NOTE]
-> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview.
+> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview. Once you run the cmdlet, please be aware that it will take a few days for the features to to be available. 
 
 With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain.
 
@@ -46,7 +46,7 @@ The **Teams Message Entity Panel** is one single place to store all of Teams mes
 
 ## Enable Microsoft Defender for Teams
 
-If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them.
+If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them. Make sure you have the latest version of the PowerShell module.
 
 After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), run the following command to join the Teams preview:
 

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/31/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,6 +39,44 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## April 2023
+
+### Communication compliance
+
+- New content on the [Filter email blasts feature](communication-compliance-policies.md#filter-email-blasts) and the [Email blasts senders report](communication-compliance-reports-audits.md#detailed-reports).
+- Updates to [User-reported messages policy](communication-compliance-policies.md#user-reported-messages-policy).
+- New fields for [Message Details reports](communication-compliance-reports-audits.md#message-details-report). 
+- New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
+- **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
+
+
+### Data lifecycle management and records management
+
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
+
+### Data loss prevention
+
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+- **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
+
+### Insider risk management
+
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
+- **General availability (GA)**: Outlook for Mac [displays label colors](sensitivity-labels-office-apps.md#label-colors)
+- **General availability (GA)**: Rolling out to Current Channel as a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
+- **General availability (GA)**: [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) using Outlook on the web.
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-labeling policies for Exchange.
+- **Change of version for AIP add-in disabled by default**: For the Monthly Enterprise Channel only, the AIP add-in for Office apps is disabled by default in version 2303. For the Current Channel and Semi-Annual Enterprise Channel, the AIP add-in is still disabled by default in version 2302.
+- **Retirement notification for the AIP add-in for Office apps**: The AIP add-in will [retire April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). Although the add-in remains in maintenance mode until then, if you haven't already done so, we encourage you to [migrate to the labels built into Office](sensitivity-labels-aip.md).
+
 ## March 2023
 
 ### Audit
@@ -64,21 +102,21 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
     - New compliance action to [improve the resilience of your flow](retention-label-flow.md#add-resilience-to-your-flow).
     - The trigger action **When the retention period expires** is renamed **When an item reaches the end of its retention period**.
-    - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately.
+    - New compliance action of **Apply a retention label on the item** to apply a retention label independently from this scenario, as if manually applying a label. The label doesn't need to be published and the retention label is applied immediately. Just like manually applying a retention label, an existing retention label will be overwritten.
 
 ### Data loss prevention
 
 - **General availability (GA)**: [Learn about the Microsoft Purview Firefox extension](dlp-firefox-extension-learn.md) and [Get started with the Microsoft Purview Firefox extension](dlp-firefox-extension-get-started.md)
 - **In preview**:
-    - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints-preview)
+    - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints)
     - [Just in time protection for endpoints and network shares](endpoint-dlp-learn-about.md#just-in-time-protection-preview)
-    - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions-preview)
+    - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions)
     - [Endpoint DLP policies can be applied to network shares](dlp-configure-endpoint-settings.md#network-share-coverage-and-exclusions-preview)
     - Support for [endpoint DLP policies in Azure virtual desktop, Citrix Virtual Apps and Desktops 7, Amazon virtual workspaces and Hyper-v environments](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 
 ### Device onboarding
-- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [Onboarding devices into device management](device-onboarding-macos-overview.md#onboarding-devices-into-device-management) devices
 
 ### eDiscovery
 
