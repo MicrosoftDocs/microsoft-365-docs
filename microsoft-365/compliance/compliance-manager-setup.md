@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -385,7 +385,7 @@ Learn [how to assign and perform work on improvement actions](compliance-manager
 
 ### Solutions page
 
-The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
+The **Solutions** page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
 
 Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard. To filter your view of solutions:
 
@@ -397,7 +397,7 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 #### Taking action from the solution page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
+The **Solutions** page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
 There are two ways you can take action from this screen:
 
@@ -407,7 +407,7 @@ There are two ways you can take action from this screen:
 
 ### Assessments page
 
-The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
+The **Assessments** page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
 The **Activated/Regulation** counter near the top of the page shows the number of regulations currently in use out of the total number available for your organization to use. Learn more about [active regulations](compliance-manager-templates.md#regulation-availability-and-licensing).
 
@@ -436,7 +436,7 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Regulations page
 
-A regulatory template is a framework for creating an assessment in Compliance Manager. The Regulations page displays a list of regulatory templates and key details. The **Activated/Regulation** counter near the top of the page shows the number of active regulatins currently in use out of the total number available for your organization to use. See [Regulation availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) for more information.
+A regulatory template is a framework for creating an assessment in Compliance Manager. The **Regulations** page displays a list of regulatory templates and key details. The **Activated/Regulation** counter near the top of the page shows the number of active regulations currently in use out of the total number available for your organization to use. See [Regulation availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) for more information.
 
 ## Next step
 
