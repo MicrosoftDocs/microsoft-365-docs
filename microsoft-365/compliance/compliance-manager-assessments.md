@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ description: "Build assessments in Microsoft Purview Compliance Manager that hel
 
 Compliance Manager assessments help your organization evaluate  its compliance with industry and regional regulations. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. Ready-to-use regulatory templates for over 360 regulations  contain the necessary controls and improvement actions for completing the assessment.
 
-All of your assessments are listed on the **Assessments** tab of Compliance Manager. You can create one assessment that covers multiple services. For example, you can create a single EU GDPR assessment that covers Microsoft 365, Microsoft Azure, Google Cloud Platform, and Amazon Web Services. Your assessment details page shows a breakdown of control progress by service to help you evaluate how you're doing across all your services. Learn more about [monitoring assessment progress from the assessment details page](#monitor-assessment-progress-and-controls).
+All of your assessments are listed on the **Assessments** tab of Compliance Manager. You can create one assessment that covers multiple services. For example, you can create a single EU GDPR assessment that covers Microsoft 365, Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). Your assessment details page shows a breakdown of control progress by service to help you evaluate how you're doing across all your services. Learn more about [monitoring assessment progress from the assessment details page](#monitor-assessment-progress-and-controls).
 
 > [!IMPORTANT]
 > The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
