@@ -220,8 +220,7 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 ## DMARC Reject
 
-**IN PREVIEW** The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
-
+**IN PREVIEW** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
 DMARC p = reject is a DMARC policy set by domain owners in their DNS to notify service providers to *reject* emails.
 
 It came about because, with OReject set as the default for reject, any rejected emails were sent to quarantine in Enterprise, and Junk folder in Consumer (due to lack of quarantine there). However, with DMARC Reject the mails will simply be rejected.

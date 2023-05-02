@@ -143,7 +143,7 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 
 ## DMARC Reject (OReject) for phishing emails
 
-**IN PREVIEW.** The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
+**IN PREVIEW.** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
 
 DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
 
