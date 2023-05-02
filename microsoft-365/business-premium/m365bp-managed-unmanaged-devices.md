@@ -43,7 +43,7 @@ For their part in protecting managed devices, users can:
 - **Join their devices to your organization's network**. Users can follow a process to register their device, set up MFA, and complete the sign-in process using their account. To learn more, see [Join your work device to your work or school network](https://support.microsoft.com/en-us/account-billing/join-your-work-device-to-your-work-or-school-network-ef4d6adb-5095-4e51-829e-5457430f3973).
 - **Make sure antivirus/antimalware software is installed and up to date on all devices**. Once devices are onboarded, antivirus, antimalware, and other threat protection capabilities are configured for those devices. Users are prompted to install updates as they come in. To learn more, see See [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde).
 
-To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-devices.md).
+To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-managed-devices.md).
 
 ##  [**BYOD**](#tab/BYOD)
 
@@ -65,6 +65,6 @@ To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) d
 
 ## Next steps
 
-- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-devices.md)
+- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-managed-devices.md)
 - [Use email securely](m365bp-use-email-securely.md)
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)

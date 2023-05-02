@@ -73,7 +73,7 @@
   - name: Set up and secure managed devices
     items:
       - name: Overview
-        href: m365bp-protect-devices.md
+        href: m365bp-protect-managed-devices.md
       - name: Upgrade to Windows 10 or 11 Pro (if needed)
         href: m365bp-upgrade-windows-10-pro.md    
       - name: Onboard enrolled devices and apply policies
