@@ -83,7 +83,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: 3. Protect unmanaged (BYOD) devices
-        - url: ../business-premium/m365bp-protect-email-overview.md
+        - url: ../business-premium/m365bp-use-email-securely.md
           itemType: overview
           text: 4. Use email more securely
         - url: ../business-premium/m365bp-collaborate-share-securely.md
@@ -163,7 +163,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md
           itemType: how-to-guide
           text: Know what to watch for in email content
-        - url: ../business-premium/send-encrypted-email.md
+        - url: ../business-premium/m365bp-use-labels-encryption.md
           itemType: how-to-guide
           text: Encrypt or label sensitive email
         - url: ../business-premium/create-teams-for-collaboration.md
