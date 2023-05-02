@@ -10934,6 +10934,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-devices-overview.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-multifactor-authentication.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mfa-for-users",
+    "redirect_document_id": true
   }
  ]
 }
