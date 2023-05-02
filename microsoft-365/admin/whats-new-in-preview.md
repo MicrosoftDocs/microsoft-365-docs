@@ -3,7 +3,7 @@ title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 05/03/2023
 audience: Admin
