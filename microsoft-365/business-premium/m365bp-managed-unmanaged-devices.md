@@ -65,6 +65,7 @@ To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) d
 
 ## Next steps
 
+- [Set up information protection capabilities](m365bp-set-up-compliance.md)
 - [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-managed-devices.md)
 - [Use email securely](m365bp-use-email-securely.md)
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)
