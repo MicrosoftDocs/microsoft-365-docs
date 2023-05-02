@@ -74,7 +74,7 @@ To get started:
 
 Choose the Azure AD roles needed based on your employees' job functions.
 
-1. From the **Roles and permissions** page, select the Azure AD roles needed based on your employees' job functions. Do one of the following:
+1. On the **Roles and permissions** page, select the Azure AD roles needed based on your employees' job functions. Do one of the following:
 
     - Adopt recommended roles
     - Edit Azure AD role selections
@@ -96,7 +96,7 @@ A GDAP template is a collection of:
 
 To create a GDAP template:
 
-1. From the **GDAP templates** page, select **Create template**.
+1. On the **GDAP templates** page, select **Create template**.
 
 2. In the template pane, enter the template name and description into the appropriate fields.
 
@@ -106,13 +106,13 @@ To create a GDAP template:
 
 5. Select **Next**.
 
-1. Select **Save and close** to save your settings and exit GDAP Setup.
+6. Select **Save and close** to save your settings and exit GDAP Setup.
 
 ### Step 3: Security groups
 
 You need at least one security group per support role for each template. For the first template, you'll create a new security group, but for subsequent templates, you may reuse groups if desired.
 
-1. From the **Security groups** page, select **Create security group**.
+1. On the **Security groups** page, select **Create security group**.
 
 2. In the security group pane, enter a name and description.
 
@@ -140,13 +140,13 @@ Assign groups of customers to each template. Each customer can only be assigned 
 
 Make sure that all tenants you want assigned to a GDAP template are selected before selecting Next. You can filter the list of tenants using the search box in the upper right corner.
 
-1. From the **Tenant assignments** page, select the tenants you want to assign to GDAP templated you created.
+1. On the **Tenant assignments** page, select the tenants you want to assign to GDAP templated you created.
 
 2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit GDAP Setup.
 
 ### Step 5: Review and finish
 
-1. From the **Review settings** page, review the settings you created to confirm they're correct.
+1. On the **Review settings** page, review the settings you created to confirm they're correct.
 
 2. Select **Finish**.
 
