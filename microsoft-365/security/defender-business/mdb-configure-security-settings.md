@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/07/2023
+ms.date: 05/01/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,10 @@ ms.collection:
 ---
 
 # View and edit security policies and settings in Microsoft Defender for Business
+
+This article describes how to review, create, or edit your security policies.
+
+:::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
 After you've onboarded your company's devices to Defender for Business, the next step is to review your security policies. 
 
