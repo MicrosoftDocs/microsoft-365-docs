@@ -10924,6 +10924,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-conditional-access.md",
     "redirect_url": "microsoft-365/business-premium/m365bp-turn-on-mfa",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-increase-protection.md",
+    "redirect_url": "m365bp-protect-against-malware-cyberthreats",
+    "redirect_document_id": false
   }
  ]
 }
