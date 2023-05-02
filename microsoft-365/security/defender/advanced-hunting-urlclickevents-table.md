@@ -35,7 +35,7 @@ ms.date: 04/27/2022
 The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links-about.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps.
 
 > [!IMPORTANT]
-> This table is currently in public preview .Some information relates to a prereleased feature which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> This table is currently in public preview. Some information relates to a prereleased feature which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
