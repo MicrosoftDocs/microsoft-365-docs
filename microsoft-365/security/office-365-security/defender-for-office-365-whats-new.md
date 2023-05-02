@@ -67,6 +67,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2022
 
+- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again. 
+
 - [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):
   - With **allow expiry management** (currently in private preview), if Microsoft hasn't learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience won't leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
@@ -78,18 +80,20 @@ For more information on what's new with other Microsoft Defender security produc
 - **Anti-spoofing enhancement for internal domains and senders:**
   - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they are today.
 
-**Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
+- **Automatic redirection from Office action center to unified action center:** The action center in the Email & Collaboration section **Email & Collaboration** > **Review** > **Action center**(https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
-- Redirection URLs:
-  - GCC Environment:
-    - From Office 365 Security & Compliance Center URL: protection.office.com
-    - To Microsoft 365 Defender URL: security.microsoft.com
-  - GCC-High Environment:
-    - From Office 365 Security & Compliance Center URL: scc.office365.us
-    - To Microsoft 365 Defender URL: security.microsoft.us
-  - DoD Environment:
-    - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
-    - To Microsoft 365 Defender URL: security.apps.mil
+- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
+
+  - Redirection URLs:
+    - GCC Environment:
+      - From Office 365 Security & Compliance Center URL: protection.office.com
+      - To Microsoft 365 Defender URL: security.microsoft.com
+    - GCC-High Environment:
+      - From Office 365 Security & Compliance Center URL: scc.office365.us
+      - To Microsoft 365 Defender URL: security.microsoft.us
+    - DoD Environment:
+      - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
+      - To Microsoft 365 Defender URL: security.apps.mil
 - Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
 - This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
 - This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
