@@ -18,7 +18,7 @@ metadata:
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/16/2022
+  ms.date: 05/02/2023
 
 # productDirectory section (optional)
 productDirectory:
@@ -56,9 +56,9 @@ conceptualContent:
         - url: ../business-premium/index.md
           itemType: overview
           text: Microsoft 365 Business Premium overview
-        - url: ../business-premium/m365bp-secure-users.md
+        - url: ../business-premium/why-choose-microsoft-365-business-premium.md
           itemType: overview
-          text: How Microsoft 365 Business Premium helps your business with productivity and security
+          text: Why you should consider Microsoft 365 Business Premium
         - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
           text: Microsoft 365 service descriptions
           itemType: reference
@@ -157,7 +157,7 @@ conceptualContent:
         - url: ..//security/office-365-security/index.yml
           itemType: overview
           text: Get started with Microsoft Defender for Office 365
-        - url: ../business-premium/m365bp-increase-protection.md
+        - url: ../business-premium/m365bp-protect-against-malware-cyberthreats.md
           itemType: how-to-guide
           text: Protect against phishing, malware, and other threats
         - url: ../business-premium/m365bp-avoid-phishing-and-attacks.md

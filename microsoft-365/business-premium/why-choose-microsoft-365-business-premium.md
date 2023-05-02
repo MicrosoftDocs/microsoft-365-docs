@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium - Productivity and security"
+title: "Why choose Microsoft 365 Business Premium? Productivity and security"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 Business Premium helps you run your business more securely with productivity and security."
+description: "Discover why Microosft 365 Business Premium is a wise choice for small and medium sized businesses. Learn how it helps you run your business more securely with productivity and security."
 ---
 
-# Productivity and security for small and medium-sized businesses 
+# Why should I consider Microsoft 365 Business Premium?
 
-Microsoft 365 Business Premium is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
+Microsoft 365 Business Premium is a complete productivity and security solution for small and medium-sized businesses. It provides comprehensive cloud productivity and security and is designed especially for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 
 - **Enable your employees to be connected and productive**, whether they're working on site or remotely, with best-in-class collaboration tools like [Microsoft Teams](create-teams-for-collaboration.md).
 - **Provide your employees with secure access to their business data and apps**, and help ensure that only authorized personnel can access confidential work data.
