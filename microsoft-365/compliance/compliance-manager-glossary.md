@@ -23,12 +23,12 @@ description: "Get definitions of key terms used in Microsoft Purview Compliance 
 
 # Compliance Manager glossary
 
-This glossary provides a brief description of important terms and concepts for Microsoft Purview Compliance Manager. This glossary can help you learn and use the solution tools and features quickly and effectively.
+This glossary provides a brief description of important terms and concepts in the context of Microsoft Purview Compliance Manager. This glossary can help you learn and use the solution tools and features quickly and effectively.
 
 | Term | Description | 
 | :------------- | :------------- | 
 | **Assessment**| A grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps you meet the requirements of a standard, regulation, or law. |
-| **Control**| A specific measure or action that an organization implements to mitigate or manage risks associated with a particular requirement or objective of a regulation, standard, or policy. Examples: policies, procedures, processes, technical or physical safeguards, training programs, or other forms of risk management measures.  |
+| **Control**| Generally, a specific measure or action that an organization implements to mitigate or manage risks associated with a particular requirement or objective of a regulation, standard, or policy. As used in Compliance Manager: A control is a requirement of a regulation that defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.  |
 | **Improvement action**| A compliance activity with recommended implementation instructions, intended to help towards completion of a control.  |
 | **License** | In the context of Compliance Manager regulations: A single Compliance Manager license allows you to create an unlimited number of assessments for multiple versions of a regulation.  |
 | **Regulation**| A rule or requirement imposed by a governing authority, such as a government agency, to achieve a specific purpose. Compliance Manager supports several industry regulations, providing over 360 regulatory templates for building assessments.  |

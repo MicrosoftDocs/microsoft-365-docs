@@ -70,7 +70,7 @@ Be sure to check out the [Compliance Manager glossary of terms](compliance-manag
 
 ##### Controls
 
-A control is a specific measure or action that an organization implements to mitigate or manage risks associated with a particular requirement or objective of a regulation, standard, or policy. Compliance Manager tracks the following types of controls:
+A control is a requirement of a regulation, standard, or policy. It defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy. Compliance Manager tracks the following types of controls:
 
 1. **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
