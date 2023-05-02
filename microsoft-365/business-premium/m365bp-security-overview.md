@@ -34,7 +34,7 @@ Stay vigilant - the safety and reliability of your system relies upon you.
 
 Your objectives are to:
 
-- [Turn on MFA](m365bp-conditional-access.md).
+- [Turn on MFA](m365bp-turn-on-mfa.md).
 - [Protect your admin accounts](m365bp-protect-admin-accounts.md).
 - [Protect against malware and other threats](m365bp-increase-protection.md).
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).

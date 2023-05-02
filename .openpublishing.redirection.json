@@ -10914,6 +10914,16 @@
     "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
     "redirect_url": "/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
+    "redirect_url": "microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-conditional-access.md",
+    "redirect_url": "microsoft-365/business-premium/m365bp-turn-on-mfa",
+    "redirect_document_id": false
   }
  ]
 }

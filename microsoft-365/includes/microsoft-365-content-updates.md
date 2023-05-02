@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of April 24, 2023
@@ -215,8 +216,8 @@
 | 4/10/2023 | [Deploy a connector to archive Facebook Business pages data](/microsoft-365/compliance/archive-facebook-data?view=o365-worldwide) | renamed |
 | 4/10/2023 | [Use data connectors to import and archive third-party data in Microsoft 365](/microsoft-365/compliance/archive-third-party-data?view=o365-worldwide) | renamed |
 | 4/10/2023 | [Deploy a connector to archive Twitter data](/microsoft-365/compliance/archive-twitter-data?view=o365-worldwide) | renamed |
-| 4/10/2023 | Prepare for Office client deployment with Microsoft 365 Business Premium | removed |
-| 4/10/2023 | [Microsoft 365 Business Premium - Productivity and security](/microsoft-365/business-premium/m365bp-secure-users?view=o365-worldwide) | modified |
+| 4/10/2023 | Prepare for Office client deployment with Microsoft 365 Business Premium | removed |why-choose-microsoft-365-business-premium
+| 4/10/2023 | [Microsoft 365 Business Premium - Productivity and security](/microsoft-365/business-premium/why-choose-microsoft-365-business-premium?view=o365-worldwide) | modified |
 | 4/10/2023 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-setup?view=o365-worldwide) | modified |
 | 4/10/2023 | [Set up a connector to archive Twitter data](/microsoft-365/compliance/archive-twitter-data-with-sample-connector?view=o365-worldwide) | modified |
 | 4/10/2023 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
