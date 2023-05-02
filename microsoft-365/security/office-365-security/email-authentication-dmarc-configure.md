@@ -220,6 +220,7 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 ## DMARC Reject
 
+**IN PREVIEW** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
 DMARC p = reject is a DMARC policy set by domain owners in their DNS to notify service providers to *reject* emails.
 
 It came about because, with OReject set as the default for reject, any rejected emails were sent to quarantine in Enterprise, and Junk folder in Consumer (due to lack of quarantine there). However, with DMARC Reject the mails will simply be rejected.
@@ -227,7 +228,7 @@ It came about because, with OReject set as the default for reject, any rejected 
 Configuration can be done in the User Interface, or by PowerShell commandlet.
 
 > [!IMPORTANT]
-> For *details* on three new properties in the *AntiPhishPolicy* that impact DMARC policy, as well as a sample PowerShell command to set up the DMARC Reject policy see [**Configure >anti-phishing policies in Microsoft Defender for Office 365**](anti-phishing-policies-mdo-configure.md).
+> For *details* on three new properties in the *AntiPhishPolicy* that impact DMARC policy, as well as a sample PowerShell command to set up the DMARC Reject policy see [**Configure >anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md).
 >
 >**This feature can also be set in the UX on the https://security.microsoft.com/antiphishing page**. Navigate to *Policies & Rules* > *Threat Policies* > *Create a new anti phishing policy*, where you will see "Honour DMARC record policy when >the message is detected as spoof" listed as an *Action*.
 

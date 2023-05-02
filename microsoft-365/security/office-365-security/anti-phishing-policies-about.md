@@ -141,6 +141,53 @@ To prevent the question mark or via tag from being added to messages from specif
 
 For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
+## DMARC Reject (OReject) for phishing emails
+
+**IN PREVIEW.** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
+
+DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
+
+To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
+
+### DMARC policies
+
+**HonorDmarcPolicy**:  
+**Type**: Boolean
+**Values**: False (default), true
+
+When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
+
+**DmarcRejectAction**
+**Type**: Enum
+**Values**: Quarantine (default), Reject
+
+When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
+
+**DmarcQuarantineAction**
+**Type**: Enum
+**Values**: Quarantine (default), MoveToJmf
+
+When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
+
+In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicrosoft.com* we use this Powershell syntax:
+
+```PowerShell
+Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
+```
+
+| Honour DMARC | Spoof Intelligence |
+| ------------- | ------------------ |
+| ON            | ON                |
+| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
+| OFF           | ON                |
+| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
+| ON            | OFF               |
+| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
+| OFF           | OFF               |
+| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
+
+:::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
+
 ## First contact safety tip
 
 The **Show first contact safety tip** settings is available in EOP and Defender for Office 365 organizations and has no dependency on spoof intelligence or impersonation protection settings. The safety tip is shown to recipients in the following scenarios:
