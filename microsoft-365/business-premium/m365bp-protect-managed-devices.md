@@ -1,5 +1,5 @@
 ---
-title: "Set up and secure managed devices"
+title: "Secure managed devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 04/14/2023
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview for how to set up and secure managed devices from security threats and cyberattacks. Implement cybersecurity defenses and endpoint protection through enrolling and onboarding all devices. Find out how to set up device policies and manage device groups."
+description: "Learn how to secure managed devices from security threats and cyberattacks. Implement cybersecurity defenses and endpoint protection through enrolling and onboarding all devices. Find out how to set up device policies and manage device groups."
 ---
 
-# Set up and secure managed devices
+# Secure managed devices with Microsoft 365 Business Premium
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
-**Welcome to your final critical mission**! Here, you'll onboard and implement protection for all the managed devices in your organization. Microsoft Defender for Business capabilities now included in Microsoft 365 Business Premium can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
+**Welcome to this critical mission**! Here, you'll onboard devices to Microsoft Defender for Business and implement protection for all the managed devices in your organization. Defender for Business capabilities, now included in Microsoft 365 Business Premium, can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. When you're done completing your objectives, you can rest assured, knowing you've done your part to protect your organization!
 
 > [!NOTE]
 > This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
