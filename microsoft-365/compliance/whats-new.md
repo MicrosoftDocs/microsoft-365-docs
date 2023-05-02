@@ -41,6 +41,15 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## April 2023
 
+### Communication compliance
+
+- New content on the [Filter email blasts feature](communication-compliance-policies.md#filter-email-blasts) and the [Email blasts senders report](communication-compliance-reports-audits.md#detailed-reports).
+- Updates to [User-reported messages policy](communication-compliance-policies.md#user-reported-messages-policy).
+- New fields for [Message Details reports](communication-compliance-reports-audits.md#message-details-report). 
+- New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
+- **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
+
+
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
@@ -107,7 +116,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 
 ### Device onboarding
-- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [Onboarding devices into device management](device-onboarding-macos-overview.md#onboarding-devices-into-device-management) devices
 
 ### eDiscovery
 
