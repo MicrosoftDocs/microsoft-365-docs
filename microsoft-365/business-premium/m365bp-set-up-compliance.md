@@ -87,3 +87,14 @@ Use the following articles to get started with sensitivity labels:
 3. [Create and configure sensitivity labels and their policies](../compliance/create-sensitivity-labels.md).
 
 4. [Show people in your company how to use sensitivity labels](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+## Set up your DLP policies
+
+Data loss prevention (DLP) policies are designed to help protect sensitive information by preventing people from inappropriately sharing it with others who shouldn't have it. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across Microsoft 365 Apps (such as Word, Excel, and PowerPoint), and in email.
+
+Use the following articles to get started with DLP:
+
+1. [Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md).
+
+2. [Get started with the default DLP policy](../compliance/get-started-with-the-default-dlp-policy.md).
+
