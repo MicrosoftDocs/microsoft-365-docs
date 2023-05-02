@@ -34,18 +34,18 @@ description: Learn how to use Microsoft Syntex to implement document compliance 
 
 ## Files for an event or conference
 
-You need to set compliance on documents uploaded into a document library storing files for a marketing event and a conference. You want to ensure that: 
+You need to set compliance on documents uploaded into a document library storing files for a marketing event and a conference. You want to ensure that:
 
-- Compliance is upheld and risk is reduced. 
-- Taxonomy and records management is consistently and accurately applied. 
-- Content volumes are controlled. 
-- Employees can easily discover the right information in the right context. 
+- Compliance is upheld and risk is reduced.
+- Taxonomy and records management is consistently and accurately applied.
+- Content volumes are controlled.
+- Employees can easily discover the right information in the right context.
 
-Set up some processes for compliance with Syntex to capture and appropriately classify, audit, and flag documents and forms that need better governance. You can rely on Syntex to automatically classify content rather than relying on users to manually tag, or the compliance team to manually apply governance rules and archiving. And you can enable a simplified search experience, manage data volumes, apply records management and retention policies, ensure compliance, and best practice archiving and purging practices. 
- 
+Set up some processes for compliance with Syntex to capture and appropriately classify, audit, and flag documents and forms that need better governance. You can rely on Syntex to automatically classify content rather than relying on users to manually tag, or the compliance team to manually apply governance rules and archiving. And you can enable a simplified search experience, manage data volumes, apply records management and retention policies, ensure compliance, and best practice archiving and purging practices.
+
 The policies can be set to be added on document upload when the sensitivity and retention labels are set as a part of document processing model. Each time content is then uploaded to the library, these labels are applied directly.  
+
 <br>
-<BR>
 
 > [!div class="nextstepaction"]
 > [See more scenarios and use cases for Syntex](adoption-scenarios.md)

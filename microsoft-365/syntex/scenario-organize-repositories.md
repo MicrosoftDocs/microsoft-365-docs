@@ -1,5 +1,5 @@
 ---
-title: Organize unstructured repositories with Microsoft Syntex
+title: Make content sets easier to find with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,18 +17,32 @@ ms.localizationpriority:  medium
 description: Learn how to use Microsoft Syntex to manage and organize document libraries.
 ---
 
-# Scenario: Organize unstructured repositories with Microsoft Syntex
+# Scenario: Make content sets easier to find with Microsoft Syntex
 
-Intro
+:::row:::
+   :::column span="":::      
+      Use Syntex to make business documents and employee information in stored in document libraries easier for users to find and use.
+
+      Features used:
+      - Document processing models 
+      - Term store
+      - Viva Topics
+      - Search
+   :::column-end:::
+   :::column span="":::
+      ![Image of a generic business person in an office setting.](../media/content-understanding/uc-unstructured-repos.png)
+   :::column-end:::
+:::row-end:::
 
 ## Policies and procedures
 
-TBD
+Your organization drafts and stores policies and procedures in a few large documents in SharePoint or several smaller documents, all in a document library that typically has a well-defined folder structure. Experienced users might know where the policy or procedure is they need to reference to do their job effectively. However, new users or users who don’t regularly focus on a specific policy might not know where to look.
 
-## Example2
+By using Syntex and the SharePoint term store, as policies are added to the library and processed, Syntex can assign the correct term that has Viva Topics enabled. The Viva Topics curation AI engine will then build the relevant topic cards.
 
-TBD
+Instead of navigating a folder structure, users can search for synonyms or alternate names as defined in the topic card and see the appropriate policy or procedure.
 
+<br>
 
 > [!div class="nextstepaction"]
 > [See more scenarios and use cases for Syntex](adoption-scenarios.md)
