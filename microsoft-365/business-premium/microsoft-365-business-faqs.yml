@@ -6,7 +6,8 @@ metadata:
   f1.keywords:
   - NOCSH
   ms.author: deniseb
-  ms.topic: reference
+  manager: deniseb
+  ms.topic: how-to
   ms.service: microsoft-365-security
   ms.collection:
   - tier1

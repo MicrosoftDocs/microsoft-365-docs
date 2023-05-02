@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/19/2022
+ms.date: 04/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -102,17 +102,6 @@ The new Automated investigation & response card is available in the Microsoft 36
 
 Using the Automated investigation & response card, your security operations team can quickly navigate to the Action center by selecting the **Approve in Action Center** link, and then taking appropriate actions. The card enables your security operations team to more effectively manage actions that are pending approval. 
 
-
-## Training for security analysts
-
-Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.
-
-|Training:|Automate self-healing with Microsoft 365 Defender|
-|---|---|
-|![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/defender-self-healing/)
 
 ## Next steps
 

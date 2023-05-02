@@ -102,7 +102,7 @@ The report is sent to the smtp address you passed the Test-DlpPolicies PowerShel
 |Field name  |Means  |
 |---------|---------|
 |Classification ID     |The sensitive information type (SIT) the item is categorized as         |
-|Confidence     |The [confidence level](/sensitive-information-type-learn-about.md#more-on-confidence-levels) of the SIT         |
+|Confidence     |The [confidence level](./sensitive-information-type-learn-about.md#more-on-confidence-levels) of the SIT         |
 |Count     |The total number of times the SIT value was found in the item, this includes duplicates          |
 |Unique Count     |The number SIT values found in the item with duplicates eliminated         |
 |Policy Details     |The name and GUID of the policy that was evaluated         |

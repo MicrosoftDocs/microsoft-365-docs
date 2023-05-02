@@ -66,13 +66,14 @@ You build custom models to understand the layout of your files from example docu
 
 If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md). This type of model is pretrained to extract predefined entities from common business files. Prebuilt models include:
 
+- [Contract processing](prebuilt-model-contract.md)
 - [Invoice processing](prebuilt-model-invoice.md)
 - [Receipt processing](prebuilt-model-receipt.md)
 
-| Invoice processing | Receipt processing | 
-| ------------- | ------------- |
-| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
-| Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
+| Contract processing | Invoice processing | Receipt processing | 
+| ------------- | ------------- | ------------- |
+| ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
+| Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
 
 [Learn more about custom and prebuilt models in Microsoft Syntex.](model-types-overview.md)
 
