@@ -113,7 +113,7 @@ See the following articles:
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
-- [Set up and secure managed devices](m365bp-protect-devices.md) 
+- [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
 
 | Subscription | Recommendations |
 |---|---|

@@ -1,5 +1,5 @@
 ---
-title: "Set up compliance features in Microsoft 365 Business Premium"
+title: "Set up information protection capabilities in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -19,14 +19,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Set up compliance features to prevent data loss and help keep your and your customers' sensitive information secure."
+description: "Set up your information protection capabilities for compliance and privacy. Use these features to prevent data loss and help keep your and your customers' sensitive information secure."
 ---
-# Set up compliance features in Microsoft 365 Business Premium
+# Set up information protection capabilities in Microsoft 365 Business Premium
 
+Your Microsoft 365 Business Premium subscription includes information protection capabilities for compliance and privacy. These capabilities include sensitivity labels, data loss prevention (DLP), and encryption. You can use your information protection capabilities to help protect your company's data, and keep your and your customers' sensitive information more secure. 
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
-
-Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
+Use this article to get started with your information protection capabilities.
 
 
 ## Before you begin

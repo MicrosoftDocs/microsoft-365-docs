@@ -33,7 +33,7 @@ An important part of your security strategy is protecting the devices your emplo
 To protect managed devices, your organization's IT or security team can: 
 
 - **Use Windows Autopilot to get a user's Windows device ready for first use**. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker before the device is given to a user. You can also use Autopilot to reset reset, repurpose, and recover Windows devices. To learn more, see [Windows Autopilot](/mem/autopilot/windows-autopilot).
-- **Upgrade Windows devices from previous versions of Windows to Windows 10 Pro or Windows 11 Pro**. Before onboarding, Windows client devices should be running Windows 10 Pro or Enterprise, or Windows 11 Pro or Enterprise. If your organization has Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices at no additional cost. To learn more, see [Upgrade Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-10-pro.md).  
+- **Upgrade Windows devices from previous versions of Windows to Windows 10 Pro or Windows 11 Pro**. Before onboarding, Windows client devices should be running Windows 10 Pro or Enterprise, or Windows 11 Pro or Enterprise. If your organization has Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices at no additional cost. To learn more, see [Upgrade Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).  
 - **Onboard devices and protect them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Microsoft Defender for Business is included with Microsoft 365 Business Premium. It includes advanced protection from ransomware, malware, phishing, and other threats. If you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) instead, you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
 - **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). You can view details, such as health state and exposure level for all onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
 
@@ -43,7 +43,7 @@ For their part in protecting managed devices, users can:
 - **Join their devices to your organization's network**. Users can follow a process to register their device, set up MFA, and complete the sign-in process using their account. To learn more, see [Join your work device to your work or school network](https://support.microsoft.com/en-us/account-billing/join-your-work-device-to-your-work-or-school-network-ef4d6adb-5095-4e51-829e-5457430f3973).
 - **Make sure antivirus/antimalware software is installed and up to date on all devices**. Once devices are onboarded, antivirus, antimalware, and other threat protection capabilities are configured for those devices. Users are prompted to install updates as they come in. To learn more, see See [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde).
 
-To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-devices.md).
+To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-managed-devices.md).
 
 ##  [**BYOD**](#tab/BYOD)
 
@@ -65,6 +65,6 @@ To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) d
 
 ## Next steps
 
-- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-devices.md)
+- [Set up BYOD devices](m365bp-set-up-unmanaged-devices.md) or [Set up and secure managed devices](m365bp-protect-managed-devices.md)
 - [Use email securely](m365bp-use-email-securely.md)
 - [Collaborate and share securely](m365bp-collaborate-share-securely.md)
