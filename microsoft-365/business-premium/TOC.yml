@@ -43,9 +43,9 @@
       - name: Overview
         href: m365bp-set-up-unmanaged-devices.md
       - name: Set up multifactor authentication
-        href: m365bp-multifactor-authentication.md
+        href: m365bp-mfa-for-users.md
       - name: Install Microsoft 365 Apps on devices
-        href: m365bp-install-office-apps.md
+        href: m365bp-users-install-m365-apps.md
       - name: Protect unmanaged devices
         href: m365bp-protect-pcs-macs.md
   - name: Use email securely
