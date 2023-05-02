@@ -39,4 +39,4 @@ When MFA is enforced, the authenticator app serves as a second form of authentic
 
 ## Next objective
 
-Proceed to [install Microsoft 365 Apps](m365bp-install-office-apps.md).
+Proceed to [install Microsoft 365 Apps](m365bp-users-install-m365-apps.md).
