@@ -9622,7 +9622,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-global-settings-for-safe-links.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
       "redirect_document_id": true
     },
     {
@@ -9688,7 +9688,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/allow-block-urls.md",
       "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
@@ -10916,6 +10916,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
     "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
     "redirect_document_id": true
@@ -10964,6 +10969,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-protect-devices.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/frontline/flw-onboarding-wizard.md",
+    "redirect_url": "/microsoft-365/frontline/flw-setup-microsoft-365",
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-upgrade-windows-10-pro.md",
