@@ -3,7 +3,7 @@ title: "Service advisories for messages pending delivery to external recipients"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 12/20/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

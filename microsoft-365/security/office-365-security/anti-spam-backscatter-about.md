@@ -5,21 +5,21 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection: 
   - m365-security
+  - tier2
 ms.custom: 
   - seo-marvel-apr2020
 description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Backscatter in EOP

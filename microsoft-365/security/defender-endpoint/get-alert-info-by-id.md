@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get alert information by ID API
@@ -58,8 +59,8 @@ Delegated (work or school account)|Alert.ReadWrite|'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - The user needs to have access to the device associated with the alert, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -81,4 +82,4 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified ID was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If an alert with the specified ID wasn't found - 404 Not Found.

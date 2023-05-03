@@ -55,7 +55,7 @@ In Intune, there are a few ways to enroll your iOS/iPadOS and Android devices. Y
 If you're ready to use Intune for device management, and want some guidance, then the following information may help:
 
 - [Device management overview](/mem/intune/fundamentals/what-is-device-management)
-- [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Tutorial: Walkthrough the Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [Deployment guide: Setup or move to Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## Phase 3: Manage your iOS and Android devices remotely

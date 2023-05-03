@@ -11,7 +11,6 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.collection: 
   - m365-security
@@ -19,7 +18,9 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
+
 # Investigate users in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -58,6 +59,7 @@ When you investigate a specific identity, you'll see the:
 > The user page shows the Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
 
 ## Overview
+
 ### Entity details
 
 The **Entity details** on the left of the page provide information about the user, such as the Azure Active Directory (Azure AD) Identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
@@ -94,7 +96,7 @@ Defender for Identity pulls tags out of Active Directory to give you a single in
 
 For more information, see [Defender for Identity entity tags in Microsoft 365 Defender](/defender-for-identity/entity-tags).
 
->[!NOTE]
+> [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
 ## Alerts
@@ -110,7 +112,7 @@ You can see all active alerts involving the user from the last 180 days in this 
 - Groups - this section includes all observed on-premises groups for the identity, as reported by Defender for Identity.
 - Lateral movement paths - this section includes all profiled lateral movement paths from the on-premises environment detected by Defender for Identity.
 
->[!NOTE]
+> [!NOTE]
 > Groups and lateral movement paths are available when a Microsoft Defender for Identity license is available.
 
 Selecting the **Lateral movements** tab lets you view a fully dynamic and clickable map where you can see the lateral movement paths to and from a user. An attacker can use the path information to infiltrate your network.
@@ -124,6 +126,17 @@ The lateral movement path report, which can be viewed by date, is always availab
 ## Timeline
 
 The timeline represents activities and alerts observed from a user's identity in the last 30 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
+- **Custom time range picker:** 
+You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**.
+![Choose time frame.](media/investigate-users/image.png)
+
+- **Timeline filters:**
+In order to improve your investigation experience, you can you the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
+- **Export button:**
+You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
+- **Customized columns:**
+You can choose which columns to expose in the timeline by selecting the **Customize columns** button.
+![User's image](image2.png)
 
 ### What data types are available?
 
@@ -141,14 +154,20 @@ The following information is displayed in the timeline:
 - Date and time of the activity
 - Application that performed the activity
 - Source device/IP address
+- [MITRE ATT&CK](https://attack.mitre.org/) techniques 
 - Alert status and severity
 - Country where the client IP address is geolocated
 - Protocol used during the communication
-- Number of times the activity happened
+- Target device (customized column)
+- Number of times the activity happened (customized column)
 
 :::image type="content" source="../../media/investigate-users/Fig5-user-incident-timeline.png" alt-text="The timeline view that shows activities on a user account for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig5-user-incident-timeline.png":::
+> [!NOTE]
+> Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
+> To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
 
 ## Remediation actions
+
 From the Overview page, you can do these additional actions:
 
 - Enable, disable, or suspend the user in Azure AD
@@ -169,3 +188,5 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+
+

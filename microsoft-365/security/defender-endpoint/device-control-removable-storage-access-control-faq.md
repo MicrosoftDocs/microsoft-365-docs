@@ -100,15 +100,26 @@ DeviceFileEvents
  
 Another way is to deploy an Audit policy to the organization, and see the events in advanced hunting or the device control report.
  
-## How do I find Sid or ComputerSid for Azure AD group?
+## How do I find Sid for Azure AD group?
 
-Different from AD group, the Sid or ComputerSid is using Object Id for Azure AD group. You can find the Object Id from Azure portal.
+Different from AD group, the Sid is using Object Id for Azure AD group. You can find the Object Id from Azure portal.
 
 ![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
 
 ## Why is my printer blocked in my organization?
 
-The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explictly allow printers or you can replace the Default Enforcement policy with a custom policy.
+The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explicitly allow printers or you can replace the Default Enforcement policy with a custom policy.
+
+
+## Why creating a folder is not blocked by File system level access
+Creating an empty folder will not be blocked even if **File system level access** Write access Deny is configured. Any non-empty file will be blocked.
+
+## Why my USB is still blocked with allow-ready policy?
+Some specific USB devices require more than Read access, the following list shows some examples:
+1. To Read access some Kingston encrypted USBs requires Execute access for its CDROM.
+2. To Read access some WD My Passport USBs requires Disk level Write access. For this case, if you want to deny Write access, you should use the **File system level access**
+
+The best way to understand this is to check the event on the Advanced hunting which will clearly show what accessMask is required.
 
 ## Can I use both Group Policy and Intune deploy policies?
 

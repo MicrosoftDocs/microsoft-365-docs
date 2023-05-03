@@ -17,10 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - tier1
+  - tier3
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
+ms.date: 02/17/2021
 ---
 
 # Remediation actions in Microsoft 365 Defender

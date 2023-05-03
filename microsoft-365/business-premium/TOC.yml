@@ -5,13 +5,9 @@
     - name: What's new
       href: m365bp-mdb-whats-new.md
     - name: Productivity and security 
-      href: m365bp-secure-users.md
+      href: why-choose-microsoft-365-business-premium.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
-    - name: Get Microsoft 365 Business Premium
-      href: get-microsoft-365-business-premium.md
-    - name: Get Microsoft 365 for Campaigns
-      href: get-microsoft-365-campaigns.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortify your environment
@@ -20,8 +16,12 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
+      - name: Get Microsoft 365 Business Premium
+        href: get-microsoft-365-business-premium.md
       - name: Set up Microsoft 365 Business Premium
         href: m365bp-setup.md
+      - name: Get Microsoft 365 for Campaigns
+        href: get-microsoft-365-campaigns.md
       - name: Set up Microsoft 365 Business for Campaigns
         href: m365-campaigns-setup.md
   - name: Boost your security protection
@@ -29,31 +29,36 @@
       - name: Overview
         href: m365bp-security-overview.md
       - name: Turn on MFA
-        href: m365bp-conditional-access.md
+        href: m365bp-turn-on-mfa.md
       - name: Protect your admin accounts
         href: m365bp-protect-admin-accounts.md
       - name: Protect against malware and other threats
-        href: m365bp-increase-protection.md
+        href: m365bp-protect-against-malware-cyberthreats.md
+      - name: Secure managed and unmanaged devices
+        href: m365bp-managed-unmanaged-devices.md
+      - name: Set up information protection capabilities
+        href: m365bp-set-up-compliance.md
+
 - name: Train your team
   items:
   - name: Set up unmanaged (BYOD) devices
     items: 
       - name: Overview
-        href: m365bp-devices-overview.md
+        href: m365bp-set-up-unmanaged-devices.md
       - name: Set up multifactor authentication
-        href: m365bp-multifactor-authentication.md
-      - name: Install Microsoft 365 apps on devices
-        href: m365bp-install-office-apps.md
+        href: m365bp-mfa-for-users.md
+      - name: Install Microsoft 365 Apps on devices
+        href: m365bp-users-install-m365-apps.md
       - name: Protect unmanaged devices
         href: m365bp-protect-pcs-macs.md
   - name: Use email securely
     items: 
       - name: Overview
-        href: m365bp-protect-email-overview.md
+        href: m365bp-use-email-securely.md
       - name: Protect against phishing and other attacks
         href: m365bp-avoid-phishing-and-attacks.md
       - name: Send encrypted email
-        href: send-encrypted-email.md
+        href: m365bp-use-labels-encryption.md
   - name: Collaborate and share securely
     items: 
       - name: Overview
@@ -71,15 +76,15 @@
   - name: Set up and secure managed devices
     items:
       - name: Overview
-        href: m365bp-protect-devices.md
+        href: m365bp-protect-managed-devices.md
       - name: Upgrade to Windows 10 or 11 Pro (if needed)
-        href: m365bp-upgrade-windows-10-pro.md    
+        href: m365bp-upgrade-windows-pro.md    
       - name: Onboard enrolled devices and apply policies
         href: m365bp-onboard-devices-mdb.md
       - name: Use Windows Autopilot to set up or reset devices
         href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-      - name: Install Microsoft 365 Apps on devices
-        href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      - name: Manage Microsoft 365 installation options for devices
+        href: /DeployOffice/manage-software-download-settings-office-365?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
   - name: Monitor onboarded devices
     items: 
       - name: View device status
@@ -119,9 +124,7 @@
 - name: Reference
   items:
     - name: Top 10 ways to secure your business data
-      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Glossary of security terms
-      href: m365bp-glossary.yml
+      href: secure-your-business-data.md
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
@@ -138,8 +141,6 @@
       href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Map protection features to Intune settings
       href: m365bp-map-protection-features-to-intune-settings.md
-    - name: Compliance Manager
-      href: m365bp-set-up-compliance.md
     - name: Windows Autopilot scenarios and capabilities
       href: /mem/autopilot/windows-autopilot-scenarios
 

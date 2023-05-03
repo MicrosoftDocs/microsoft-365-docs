@@ -14,11 +14,13 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection: 
   - m365-security
+  - tier3
 ms.custom: 
   - seo-marvel-apr2020
 description: Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # Add support for anonymous inbound email over IPv6 in Microsoft 365

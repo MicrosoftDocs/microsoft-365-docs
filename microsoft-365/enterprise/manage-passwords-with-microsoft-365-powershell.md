@@ -3,6 +3,7 @@ title: "Manage passwords with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 11/12/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -97,4 +98,3 @@ Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
