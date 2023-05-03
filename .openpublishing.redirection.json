@@ -9688,7 +9688,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/allow-block-urls.md",
       "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
