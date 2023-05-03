@@ -119,18 +119,6 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 |---------------|------------------|
 |:::image type="content" source="media/firstline-worker-chat-with-shifts.png" alt-text="Screenshot of phone screen with Shifts added":::    |:::image type="content" source="media/firstline-worker-chat-without-shifts.png" alt-text="Screenshot of phone screen without Shifts added":::|
 
-#### Use the Frontline Worker onboarding wizard to kick off your pilot
-
-The Frontline Worker onboarding wizard in the Microsoft 365 admin center simplifies onboarding frontline workers to your organization. Use the wizard to kick off your pilot and quickly deploy an experience in Teams that's tailored to your frontline workforce.
-
-Check out this short video for an overview of how to run the wizard to get your frontline workforce up and running.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
-
-The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](/microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to each team member. You can create your team from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console), and then you add users and assign roles. The role determines whether the wizard assigns the Frontline Manager or Frontline Worker policy package to the user.
-
-The wizard is available to all organizations that have at least one [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline). You can run the wizard as many times as you need to roll out Teams to your frontline workforce in different locations or sites across your organization.
-
 #### Decision points
 
 - How many channels/conversation topics do you want for your pilot?
@@ -168,7 +156,7 @@ Empowering your frontline workers is more about people than technology. To under
 
 Now that you’ve successfully completed your first pilot with an initial group of frontline workers, it’s time to expand! It’s time to go back to Step 1 with one of the several expansion options below. We recommend working through this process as many times as needed to arrive at a solution, set of best practices, and training documentation for all of your frontline workers.
 
-- Expand the number of teams. Use the Frontline Worker onboarding wizard to set up your next location or region.
+- Expand the number of teams.
     - Instead of one location, can you do one region? 
     - Would you want one team for the whole region or individual teams for each location?
 - Expand the features provided.
