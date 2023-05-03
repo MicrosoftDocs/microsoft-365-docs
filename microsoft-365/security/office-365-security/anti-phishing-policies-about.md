@@ -139,40 +139,14 @@ In ant-phishing policies, you can control whether `p=quarantine` or `p=reject` v
     - **Quarantine the message**
     - **Reject the message**
 
+:::image type="content" source="../../media/anti-phishing-policies-honor-dmarc-settings.png" alt-text="DMARC settings in an anti-phishing policy." lightbox="../../media/anti-phishing-policies-honor-dmarc-settings.png":::
+
 The relationship between spoof intelligence and whether sender DMARC policies are honored are described in the following table:
 
 |&nbsp;|Honor DMARC policy On|Honor DMARC policy Off|
 |---|---|---|
 |**Spoof intelligence On**|Separate actions for implicit and explicit email authentication failures: <ul><li>Implicit failures use the **If the message is detected as spoof by spoof intelligence** action the anti-phishing policy.</li><li>Explicit failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in the anti-phishing policy.</li></ul>|The **If the message is detected as spoof by spoof intelligence** action in the anti-phishing policy is used for both implicit and explicit email authentication failures. In other words, explicit email authentication failures ignore `p=quarantine` and `p=reject` in the DMARC policy.|
 |**Spoof intelligence Off**|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in anti-phishing policies.|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies are quarantined with `p=oreject` and `p=oquarantine`.|
-
-### DMARC policies
-
-**HonorDmarcPolicy**:
-**Type**: Boolean
-**Values**: False (default), true
-
-When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
-
-**DmarcRejectAction**
-**Type**: Enum
-**Values**: Quarantine (default), Reject
-
-When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
-
-**DmarcQuarantineAction**
-**Type**: Enum
-**Values**: Quarantine (default), MoveToJmf
-
-When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
-
-In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicrosoft.com* we use this Powershell syntax:
-
-```PowerShell
-Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
-```
-
-:::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
 
 ### Unauthenticated sender indicators
 
