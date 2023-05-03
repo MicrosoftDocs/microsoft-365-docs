@@ -1,5 +1,5 @@
 ---
-title: View and edit your security settings in Microsoft Defender for Business
+title: Set up, review, and edit your security policies and settings in Microsoft Defender for Business
 description: View and edit security policies and settings in Defender for Business
 search.appverid: MET150
 author: denisebmsft
@@ -21,7 +21,7 @@ ms.collection:
  - tier1
 ---
 
-# View and edit security policies and settings in Microsoft Defender for Business
+# Set up, review, and edit your security policies and settings in Microsoft Defender for Business
 
 This article describes how to review, create, or edit your security policies.
 
