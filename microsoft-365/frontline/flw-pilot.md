@@ -97,7 +97,6 @@ For a successful pilot for frontline workers, simplicity is key! For most organi
 
 #### Not sure what consumer tools these users are currently using?
 
-<!--Included in the frontline worker “Pilot in a Box” are sample user surveys. Utilize the pre-pilot survey to inventory the tools, capabilities, and scenarios.-->
 Use a pre-pilot survey to inventory the tools, capabilities and scenarios your users rely on today.
 
 ### Set up Microsoft 365 and Teams
@@ -106,7 +105,7 @@ Determine what devices you'll support. For example, you can use the Teams mobile
 
 See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) for guidance on how to set up Microsoft 365, Microsoft Teams, and the other services you'll need for your pilot.
 
-When you have set up and configured all of the other services you need, you can set up Microsoft Teams. We recommend you use the [Frontline Worker onboarding wizard](flw-onboarding-wizard.md) to set up your pilot for Teams.
+When you have set up and configured all of the other services you need, you can set up Microsoft Teams.
 
 #### Chat configuration options
 
@@ -131,8 +130,6 @@ Check out this short video for an overview of how to run the wizard to get your 
 The wizard sets up a team for your frontline workers and assigns licenses and [policy packages](/microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to each team member. You can create your team from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console), and then you add users and assign roles. The role determines whether the wizard assigns the Frontline Manager or Frontline Worker policy package to the user.
 
 The wizard is available to all organizations that have at least one [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline). You can run the wizard as many times as you need to roll out Teams to your frontline workforce in different locations or sites across your organization.
-
-For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
 
 #### Decision points
 
