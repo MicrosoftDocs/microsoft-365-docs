@@ -3,6 +3,7 @@ title: OneDrive Cross-tenant OneDrive migration FAQs
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 11/14/2022
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -49,7 +50,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 
 **Question:** What is the current size limit for each OneDrive migration?</br>
 **Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items.
-We hope to increase those limits in the future to ensure larger OneDrive accounts can be migrated via the process.
+We hope to increase those limits in the future to ensure larger OneDrive accounts can be migrated via the process. **IMPORTANT** If you attempt to migrate any OneDrive site that exceeds the 2GB quota, the transfer will fail.
 
 **Question:** How long does the migration take?</br>
 Like most migrations it's difficult to assign an exact length of time for how long a migration might take. So many factors play into this, such as number of users/sites, number of files/folders, when you're running your migrations, etc. However, you will find our process is substantially faster than existing third party migration tools. Bulk migrations will complete much faster than using standard migration tools.
@@ -89,4 +90,3 @@ OneDrive accounts currently under a Hold policy will be blocked from migration. 
 
 **Question:** If a file is shared in a Teams chat, will those files still be accessible after migration?</br>
 **Answer:**  See the question above. The identity map will inform how files are shared. If a user clicks on the link, it will attempt to redirect to the new location. The file will be accessible as long as the user has permissions to access the file on the destination. 
-

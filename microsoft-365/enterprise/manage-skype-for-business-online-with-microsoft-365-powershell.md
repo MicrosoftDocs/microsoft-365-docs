@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - scotvorg 
 - Ent_O365

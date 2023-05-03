@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 05/01/2023
 ms.collection: 
 - m365-security
 - tier1
@@ -20,7 +20,9 @@ f1.keywords: NOCSH
 
 # Add users and assign licenses in Microsoft Defender for Business
 
-As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and includes next steps.
+As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and assign licenses, and how to make sure multifactor authentication (MFA) is enabled. 
+
+:::image type="content" source="media/mdb-setup-step2.png" alt-text="Visual depicting step 2 - add users and assign licenses in Defender for Business.":::
 
 ## Add users and assign licenses
 
@@ -44,6 +46,32 @@ As soon as you have signed up for Defender for Business, your first step is to a
 5. On the **Optional settings** page, you can expand **Profile info** and fill in details, such as the user's job title, department, location, and so forth. Then choose **Next**.
 
 6. On the **Review and finish** page, review the details, and then select **Finish adding** to add the user. If you need to make any changes, choose **Back** to go back to a previous page.
+
+## Make sure MFA is enabled
+
+One good way to make sure MFA is enabled for all users is by using [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). If your tenant was created on or after October 22, 2019, security defaults might be enabled automatically in your tenant. Use the following procedure to confirm or enable security defaults.
+
+> [!IMPORTANT]
+> You must be a security administrator, Conditional Access administrator, or Global Administrator to perform this task.
+
+1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
+
+2. Under **Manage Azure Active Directory**, select **View**.
+
+   :::image type="content" source="media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under the heading Manage Azure Active Directory." lightbox="media/mdb-manage-azuread.png":::
+
+3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
+
+   :::image type="content" source="media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Azure Active Directory." lightbox="media/mdb-azuread-properties.png":::
+
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
+
+   > [!CAUTION]
+   > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead. To learn more, see the following articles:
+   > - [Multi-factor authentication](../../business-premium/m365bp-turn-on-mfa.md) (in the Microsoft 365 Business Premium documentation)
+   > - [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+
+5. Save your changes.
 
 ## Next steps
 

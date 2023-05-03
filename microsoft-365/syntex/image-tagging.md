@@ -3,8 +3,9 @@ title: Image tagging in Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/24/2020
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: 

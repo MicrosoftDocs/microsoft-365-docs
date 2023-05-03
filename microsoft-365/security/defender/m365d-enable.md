@@ -19,11 +19,12 @@ ms.collection:
     - m365-security
     - m365solution-getstarted
     - highpri
-    - tier1
+    - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/17/2021
 ---
 
 # Turn on Microsoft 365 Defender
@@ -107,6 +108,7 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Frequently asked questions](m365d-enable-faq.md)
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
+- [Setup guides for Microsoft 365 Defender](deploy-configure-m365-defender.md)
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)

@@ -9,40 +9,40 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Learn the advanced hunting query language
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - Microsoft 365 Defender
 
-Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). 
+Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md).
 
 Watch this short video to learn some handy Kusto query language basics.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
- 
+
 To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example: 
+In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -59,7 +59,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 "Shellcode",
 "http",
 "https")
-| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine,
 FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
@@ -68,7 +68,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ### Describe the query and specify the tables to search
 
-A short comment has been added to the beginning of the query to describe what it is for. This comment helps if you later decide to save the query and share it with others in your organization. 
+A short comment has been added to the beginning of the query to describe what it is for. This comment helps if you later decide to save the query and share it with others in your organization.
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -113,22 +113,20 @@ Afterwards, the query looks for strings in command lines that are typically used
     "https")
 ```
 
-### Customize result columns and length 
+### Customize result columns and length
 
 Now that your query clearly identifies the data you want to locate, you can define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine,
 FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 Select **Run query** to see the results.
 
->[!TIP]
->You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
-
-
+> [!TIP]
+> You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
 ## Learn common query operators
 
@@ -166,7 +164,8 @@ To learn more about these data types, [read about Kusto scalar data types](/azur
 ## Get help as you write queries
 
 Take advantage of the following functionality to write queries faster:
-- **Autosuggest**—as you write queries, advanced hunting provides suggestions from IntelliSense. 
+
+- **Autosuggest**—as you write queries, advanced hunting provides suggestions from IntelliSense.
 - **Schema tree**—a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 - **[Schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
 
@@ -183,11 +182,11 @@ For a more efficient workspace, you can also use multiple tabs in the same hunti
 
 :::image type="content" source="../../media/multitab.png" alt-text="Opening a new tab by selecting Create new in advanced hunting in the Microsoft 365 Defender portal" lightbox="../../media/multitab.png":::
 
-You can then run different queries without ever opening a new browser tab. 
+You can then run different queries without ever opening a new browser tab.
 
 :::image type="content" source="../../media/multitab-examples.png" alt-text="Run different queries without ever leaving the advanced hunting page in the Microsoft 365 Defender portal" lightbox="../../media/multitab-examples.png":::
 
->[!NOTE] 
+> [!NOTE]
 > Using multiple browser tabs with advanced hunting might cause you to lose your unsaved queries. To prevent this from happening, use the tab feature within advanced hunting instead of separate browser tabs.
 
 ## Use sample queries
@@ -196,15 +195,15 @@ The **Get started** section provides a few simple queries using commonly used op
 
 :::image type="content" source="../../media/get-started-section.png" alt-text="The **Getting started** section in the **Advanced hunting** page in the Microsoft 365 Defender portal" lightbox="../../media/get-started-section.png":::
 
->[!NOTE]
->Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).
+> [!NOTE]
+> Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).
 
 ## Access query language documentation
 
 For more information on Kusto query language and supported operators, see [Kusto query language documentation](/azure/kusto/query/).
 
->[!NOTE]
->Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> [!NOTE]
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 

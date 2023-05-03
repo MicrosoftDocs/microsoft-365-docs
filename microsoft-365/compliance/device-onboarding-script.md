@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/06/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,7 +17,6 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-
 ---
 
 # Onboard Windows 10 and Windows 11 devices using a local script
@@ -56,7 +55,7 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 
     ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
-9. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\DeviceOnboardingScript.cmd*
 
 10. Press the **Enter** key or click **OK**.
 
@@ -64,7 +63,7 @@ For information on how you can manually validate that the device is compliant an
 
 ## Offboard devices using a local script
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
