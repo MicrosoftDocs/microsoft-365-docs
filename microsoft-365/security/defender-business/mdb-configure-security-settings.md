@@ -23,28 +23,11 @@ ms.collection:
 
 # Set up, review, and edit your security policies and settings in Microsoft Defender for Business
 
-This article describes how to review, create, or edit your security policies.
+This article walks you through how to review, create, or edit your security policies, and how to navigate advanced settings in Defender for Business.
 
 :::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
-After you've onboarded your company's devices to Defender for Business, the next step is to review your security policies. 
-
-> [!TIP]
-> Defender for Business includes preconfigured security policies with recommended settings. You can edit these settings to suit your business needs.
-
-Security policies to review and configure include:
-
-- **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
-- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
-- **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
-- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)** (rolling out now), which help protect your network and devices from cyberthreats and attacks
-- **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
-
-In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
-
-In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and whether to receive preview features as they become available.
-
-Use this article as a guide to managing your security policies and settings.
+When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as next-generation protection and firewall policies, as well as creating or editing additional policies, such as for web content filtering and attack surface reduction capabilities. In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and whether to receive preview features as they become available.
 
 ## What to do
 
