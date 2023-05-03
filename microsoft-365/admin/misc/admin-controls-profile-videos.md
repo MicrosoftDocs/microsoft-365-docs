@@ -1,7 +1,7 @@
 ---
 title: "Turn the profile video feature on or off for all users in your Microsoft 365 organization"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/13/2023
 audience: Admin

@@ -8,7 +8,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 04/18/2023
+  ms.date: 04/26/2023
   ms.collection: 
   - SMB
   - m365-security
@@ -32,18 +32,12 @@ landingContent:
             url: mdb-overview.md
           - text: What's new in Defender for Business?
             url: /microsoft-365/business-premium/m365bp-mdb-whats-new
-          - text: The simplified configuration process
-            url: mdb-simplified-configuration.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
           - text: Resources for Microsoft partners
             url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
-      - linkListType: how-to-guide
-        links:
-          - text: Get the most from your Defender for Business trial
-            url: trial-playbook-defender-business.md
 
   # Card
   - title: Get started
@@ -58,10 +52,18 @@ landingContent:
             url: get-defender-business-servers.md
           - text: See the trial user guide
             url: trial-playbook-defender-business.md
-          - text: Use the setup wizard
-            url: mdb-use-wizard.md
           - text: Turn on preview features
             url: mdb-preview.md
+
+  # Card
+  - title: Setup
+    linkLists:
+      - links:
+          - text: Setup and configuration
+            url: mdb-setup-configuration.md
+          - text: Create, view, or edit security policies
+            url: mdb-view-edit-create-policies.md
+        linkListType: how-to-guide
 
   # Card
   - title: Help and more resources

@@ -85,5 +85,5 @@ To delete a custom tile, from the **Custom tiles** window, select the tile, sele
 ## Related content
 
 [Pin apps to your users' app launcher](pin-apps-to-app-launcher.md) (article)\
-[Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)\
+[Upgrade your Microsoft 365 for business users to the latest version](../setup/upgrade-users-to-latest-office-client.md) (article)\
 [Manage add-ins in the admin center](../manage/manage-addins-in-the-admin-center.md) (article)

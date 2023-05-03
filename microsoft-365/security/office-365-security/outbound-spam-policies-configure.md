@@ -226,15 +226,13 @@ On the **Anti-spam policies** page, the **Status** value of the policy is now **
 
 Outbound spam policies are processed in the order that they're displayed on the **Anti-spam policies** page:
 
-- The outbound spam policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
-- The outbound spam policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
-- Custom outbound spam policies are applied next in priority order (if they're enabled):
+- Custom outbound spam policies are applied in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
   - By default, a new outbound spam policy is created with a priority that's lower than the lowest existing custom outbound spam policy (the first is 0, the next is 1, etc.).
   - No two outbound spam policies can have the same priority value.
 - The default outbound spam policy always has the priority value **Lowest**, and you can't change it.
 
-Outbound spam protection stops for a sender after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Outbound spam protection stops for a sender after the first policy is applied (the highest priority policy for that sender). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom outbound spam policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 

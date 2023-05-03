@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection:
   - zerotrust-solution
   - msftsolution-secops
+  - tier2
 ms.topic: conceptual
 search.appverid:
   - MOE150

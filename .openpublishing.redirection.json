@@ -2197,6 +2197,11 @@
     },
     {
       "source_path": "microsoft-365/commerce/subscriptions/why-cant-i-change-plans.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/change-plans-manually.md",
       "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
       "redirect_document_id": false
     },
@@ -5768,6 +5773,11 @@
 	{
       "source_path": "microsoft-365/security/defender-endpoint/contact-support-usgov.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/contact-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/supported-response-apis.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/management-apis",
       "redirect_document_id": false
     },
     {
@@ -10859,6 +10869,106 @@
     "source_path": "microsoft-365/business-premium/m365bp-glossary.yml",
     "redirect_url": "https://www.microsoft.com/wdsi/threats",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-use-wizard.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-simplified-configuration.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-create.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-modify.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-extend.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-templates-format-excel.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/enterprise/move-sharepoint-between-geo-locations.md",
+    "redirect_url": "/microsoft-365/enterprise/m365-dr-workload-spo",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
+    "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-conditional-access.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-turn-on-mfa",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-increase-protection.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-devices-overview.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-multifactor-authentication.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mfa-for-users",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-install-office-apps.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-users-install-m365-apps",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-protect-pcs-macs.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-users-protect-unmanaged-devices",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-protect-email-overview.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-use-email-securely",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/send-encrypted-email.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-use-labels-encryption",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-protect-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-upgrade-windows-10-pro.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-upgrade-windows-pro",
+    "redirect_document_id": true
   }
  ]
 }

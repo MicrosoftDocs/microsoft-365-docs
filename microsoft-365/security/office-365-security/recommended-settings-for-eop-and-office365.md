@@ -20,7 +20,7 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 4/20/2023
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
@@ -47,7 +47,7 @@ This article describes the default settings, and also the recommended Standard a
 >
 > - [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md)
 > - [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
-> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Change the level of protection in the Junk Email Filter](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 > - [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
 > - [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)
 
@@ -120,6 +120,9 @@ For more information about Advanced Spam Filter (ASF) settings in anti-spam poli
 |**Sender ID filtering hard fail** <br><br> _MarkAsSpamFromAddressAuthFail_|Off|Off|Off||
 |**Backscatter** <br><br> _MarkAsSpamNdrBackscatter_|Off|Off|Off||
 |**Test mode** <br><br> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](anti-spam-policies-asf-settings-about.md#enable-disable-or-test-asf-settings).|
+
+> [!NOTE]
+> ASF adds `X-CustomSpam:` X-header fields to messages _after_ the messages have been processed by Exchange mail flow rules (also known as transport rules), so you can't use mail flow rules to identify and act on messages that were filtered by ASF.
 
 #### EOP outbound spam policy settings
 
@@ -320,17 +323,9 @@ Although there's no default Safe Links policy, the **Built-in protection** prese
 #### Global settings for Safe Links
 
 > [!NOTE]
-> The global settings for Safe Links are set by the **Built-in protection** preset security policy, but not by the **Standard** or **Strict** preset security policies. Either way, admins can modify these global Safe Links settings at any time.
+> The only available global setting for Safe Links is the "Block the following URLs" list. As of April 1 2023, the "Block the following URLs" list for Safe Links no longer works. For more information, see [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880). Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
 >
-> The **Default** column shows the values before the existence of the **Built-in protection** preset security policy. The **Built-in protection** column shows the values that are set by the **Built-in protection** preset security policy, which are also our recommended values.
-
-To configure these settings, see [Configure global settings for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
-
-In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
-
-|Security feature name|Default|Built-in protection|Comment|
-|---|:---:|:---:|---|
-|**Block the following URLs** <br><br> _ExcludedUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> For more information, see ["Block the following URLs" list for Safe Links](safe-links-about.md#block-the-following-urls-list-for-safe-links). <br><br> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
+> To see and remove any leftover URL entries in the "Block the following URLs list, see [Configure the "Block the following URLs" list for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
 
 #### Safe Links policy settings
 
