@@ -30,7 +30,7 @@ description: "Protect unmanaged computers from cyberattacks with Microsoft 365 B
 This objective is focused on protecting unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
 
 > [!NOTE]
-> This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-devices.md).
+> This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
 > 
 > [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
@@ -60,7 +60,7 @@ You should always run Windows Defender Firewall even if you have another firewal
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
 
@@ -82,4 +82,4 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing email usage](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.
