@@ -316,7 +316,7 @@ The following table lists the activities in information barriers that are logged
 
 ## Microsoft Defender Experts activities
 
-The following table lists the activities in Microsoft Defender Experts that are logged in the Microsoft 365 audit log.
+The following table lists the activities in Microsoft Defender Experts that are signed into the Microsoft 365 audit log.
 |Friendly name|Operation|Description|
 |:----------------|:------------|:--------------|
 | Defender Experts analyst permission created | DefenderExpertsAnalystPermissionCreated | An administrator granted one or more role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
