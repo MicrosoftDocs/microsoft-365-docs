@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 02/28/2023
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-lighthouse
@@ -42,9 +42,9 @@ This article describes error messages and problems that you might encounter whil
 
 ### Message when signing in to Lighthouse: "Accept the Partner Amendment"
 
-**Cause:** You attempted to access Lighthouse before a Global admin in the partner tenant has signed the partner amendment.
+**Cause:** You attempted to access Lighthouse before a Global Administrator in the partner tenant has signed the partner amendment.
 
-**Resolution:** A Global admin must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global admin has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolution:** A Global Administrator must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global Administrator has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## Customer tenant onboarding  
 
@@ -75,7 +75,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Azure AD, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
 
@@ -84,6 +84,22 @@ For customers with DAP relationships, the partner admin will need to assign you 
 **Cause:** You have limited GDAP access based on the roles assigned to the Azure AD security group that you're in.
 
 **Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+## GDAP setup and management
+
+### Message when running GDAP Setup: "Failed to Create Relationship"
+
+**Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
+
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Azure AD) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+
+You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
+
+### Security groups aren't assigned to GDAP relationships after running GDAP Setup
+
+**Cause:** You didn't complete all steps of GDAP Setup, or the GDAP relationship created by GDAP Setup still requires customer approval.
+
+**Resolution:** You must complete each step of GDAP Setup in order for all settings to apply, and make sure you select **Finish** when done. On the last page of GDAP Setup, customers with an *Active* status will have security groups assigned. If you don't have consent to administer services for any of your customers, you'll need to send them an admin relationship request. Once they approve the request, re-run GDAP Setup to assign the security groups to the GDAP relationship created for those customers.
 
 ## Customer tenant management  
 
