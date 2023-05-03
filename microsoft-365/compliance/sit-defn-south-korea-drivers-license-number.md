@@ -2,7 +2,7 @@
 title: "South Korea driver's license number entity definition"
 f1.keywords:
 - CSH
-ms.author: a-katykoenen
+ms.author: v-katykoenen
 author: kmkoenen
 manager: laurawi
 ms.date: 05/04/2023
