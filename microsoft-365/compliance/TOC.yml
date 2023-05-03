@@ -969,9 +969,9 @@
               - name: South Africa identification number
                 href: sit-defn-south-africa-identification-number.md
               - name: South Korea driver's license number
-              - href: sit-defn-south-korea-drivers-license-number
+                href: sit-defn-south-korea-drivers-license-number
               - name: South Korea passport number
-              - href: sit-defn-south-korea-passport-number
+                href: sit-defn-south-korea-passport-number
               - name: South Korea resident registration number
                 href: sit-defn-south-korea-resident-registration-number.md
               - name: Spain DNI
@@ -1021,9 +1021,9 @@
               - name: Types of medication
                 href: sit-defn-types-of-medication.md
               - name: UAE identity card number
-              - href: sit-defn-uae-identity-card-number.md
+                href: sit-defn-uae-identity-card-number.md
               - name: UAE passport number
-              - href: sit-defn-uae-passport-number.md
+                href: sit-defn-uae-passport-number.md
               - name: U.K. driver's license number
                 href: sit-defn-uk-drivers-license-number.md
               - name: U.K. electoral roll number
