@@ -48,7 +48,6 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
 
-
 The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in either of the following places:
 
 - The Microsoft Purview compliance portal ([instructions](#setting-permissions-in-the-microsoft-purview-compliance-portal))
@@ -110,22 +109,6 @@ To grant users access to an assessment, open the assessment's details page and s
 
 The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 360 regulatory templates correspond to governmental regulations and industry standards around the world.
 Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
-
-You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
-
-1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
-
-2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial and continue with creating assessments.
-
-3. Select one or more industries that identify your organization, then select **Next**.
-
-4. Select one or more regions for your organization's location, then select **Next**.
-
-5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
-
-6. Review your final selections and select **Add Recommended Assessments** to create your new assessments.
-
-Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
 ## Compliance Manager settings
 

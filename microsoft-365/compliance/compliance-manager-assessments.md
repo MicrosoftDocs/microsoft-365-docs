@@ -31,7 +31,7 @@ description: "Build assessments in Microsoft Purview Compliance Manager that hel
 
 Compliance Manager assessments help your organization evaluate  its compliance with industry and regional regulations. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk. Ready-to-use regulatory templates for over 360 regulations  contain the necessary controls and improvement actions for completing the assessment.
 
-All of your assessments are listed on the **Assessments** tab of Compliance Manager. You can create one assessment that covers multiple services. For example, you can create a single EU GDPR assessment that covers Microsoft 365, Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). Your assessment details page shows a breakdown of control progress by service to help you evaluate how you're doing across all your services. Learn more about [monitoring assessment progress from the assessment details page](#monitor-assessment-progress-and-controls).
+All of your assessments are listed on the Assessments tab of Compliance Manager. You can create one assessment that covers multiple services. For example, you can create a single EU GDPR assessment that covers Microsoft 365, Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) and. Your assessment details page shows a breakdown of control progress by service to help you evaluate how you’re doing across all your services. Learn more about [monitoring assessment progress from the assessment details page](#monitor-assessment-progress-and-controls).
 
 > [!IMPORTANT]
 > The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
@@ -72,20 +72,7 @@ Different assessments within a group or groups may share improvement actions. Im
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments).
-
-To create an assessment, you'll use a guided process to select a template and designate the associated product. On your **Assessments** page, we suggest starting with **Add Recommended Assessments**, which helps you identify and quickly set up the most relevant assessments for your organization all at once. You can also set up assessments one at a time by selecting **Add assessment**. Follow the steps below to begin building assessments.
-
-#### Create assessments based on recommendations for your org type
-
-Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which regulations to use for quick setup of multiple assessments all at once.
-
-To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
-
-- Select one or more industries that identify your organization, then select **Next**
-- Select one or more regions for your organization's location, then select **Next**
-- On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
-- Review your final selections and select **Add Recommended Assessments** to create your new assessments.
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments). To create an assessment, you'll use a guided process to select a regulation and designate services.
 
 #### Create an assessment using a guided process
 
@@ -104,9 +91,9 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
     When finished, select **Next**.
 
-1. On the **Select services** page, designate which services this assessment applies to (learn more about [multicloud support](compliance-manager-multicloud.md)). Select the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to the services you want covered by the assessment, then select **Add**.
+1. On the **Select services** page, designate which services this assessment applies to (learn more about [multicloud support](compliance-manager-multicloud.md)) using the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to your desired services, then select **Add**. Then select **Next**.
 
-1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud (for example, an Azure subscription for your legal department, and an Azure subscription for your marketing department), you arrive at a sub-step for **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. Remove any subscription you don't want the assessment to cover by selecting the **X** next to its name. Or select **Edit subscriptions** command to add or remove subscriptions. 
+1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud, you arrive at a sub-step for  **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. All subscriptions are selected by default, but you can remove any by selecting the **X** next to the name. 
 
    On the **Select services** page, select **Next**.
 
@@ -116,29 +103,39 @@ The next screen confirms the assessment was created. When you select **Done**, y
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
-You can change the name of your assessment after you create it by selecting the **Edit name** button in the upper-right corner of the assessment's details page.
+#### Edit an assessment
+
+After creating an assessment, you can edit it to update its name and add or remove services and subscriptions. To update an assessment:
+
+1. From the assessment details page, select the ellipses in the upper right corner and select **Edit assessment**. The assessment update wizard will open.
+
+1. You can update the assessment name on the **Update assessment name** page, or leave it as-is, then select **Next**.
+
+1. On the **Select services** page, add or remove services, then select **Next**.
+
+1. On the **Select service subscriptions** page, select **Manage subscriptions** to make any changes to your subscriptions. Then select **Next**.
+
+1. Review your updates, then select **Modify assessment** to save your changes.
 
 ## Monitor assessment progress and controls
 
-Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows how your services are performing, and the status of controls and improvement actions.
-
-Expand the **Overview** section at the left side of the page to see basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
+Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows how your services are performing, and the status of controls and improvement actions. Expand the **Overview** section at the left side of the page to see basic details about the assessment, including its group, regulation, associated services, completion status, and a description.
 
 The **Progress** tab shows the percentage of progress toward assessment completion. The progress bar displays a breakdown showing the number of points achieved within each service covered by the assessment. Get details on each service by [viewing service details](#assessment-progress-by-service). See all controls within the assessment and their current status on the [Controls tab](#controls-tab). Quickly access the status of all your improvement actions for the assessment the [Your improvement actions tab](#your-improvement-actions-tab). The actions handled by Microsoft for the assessment are listed on the [Microsoft actions tab](#microsoft-actions-tab).
 
 #### Assessment progress by service
 
-The services view at the top of the assessment's **Progress** tab helps you understand how you're doing with respect to a regulation with each of your services individually, even at the subscription level, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any errors associated with subscription accessibility should be addressed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
+The **Service** section on the assessment’s **Progress** tab helps you understand how you’re doing with respect to a regulation with each of your services individually, even at the subscription level, and collectively across your organization. The assessment gets its data on available subscriptions and improvement action status from Microsoft Defender for Cloud. Any errors associated with subscription accessibility should be addressed in your Defender for Cloud. See [Configure cloud settings](compliance-manager-cloud-settings.md) for more information.
 
-Select the **View service details** command, located next to or under the **Assessment progress** bar graph or in the upper-right command bar, to view a flyout pane with more details. The **View service details** flyout pane lists each service and its progress toward completing the assessment. Selecting **View** next to a service name displays another panel that lists each subscription within the service and its status.
+Select the **View service details** command, located next to or under the **Assessment progress** bar graph or in the upper-right command bar, to view a flyout pane with more details. The **View service details** flyout pane lists each service and its progress toward completing the assessment. Selecting **View** next to a service name displays another pane that lists each subscription within the service and its status.
 
 On a service's details panel, you see the list of subscriptions within the service that are covered by the assessment. The **Service progress** counter indicates the number of points achieved so far by improvement actions pertaining to the service for the assessment out of the total number of achievable points.
 
-You can add more subscriptions to the service that you want the assessment to cover by selecting **Add subscription**.
+You can add more subscriptions to the service that you want the assessment to cover by [editing the assessment](#edit-an-assessment).
 
 #### Controls tab
 
-The **Controls** tab displays detailed information for each control in the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Configuration Management and Incident Response) so you can see at a glance which groupings of controls need attention. The table underneath the breakdown chart lists all controls. You can filter the list by service, status, and control family. The table shows the following details about each control:
+The **Controls** tab displays detailed information for each control in the assessment. The **Control status breakdown** chart shows the status of controls by family (for example, Configuration Management and Incident Response) so you can see at a glance which groupings of controls need attention. The table underneath the breakdown chart lists all controls. You can filter the list by control family, status, and service. The table shows the following details about each control:
 
 - **Control title**
 - **Status**: The test status of the improvement actions within the control:
