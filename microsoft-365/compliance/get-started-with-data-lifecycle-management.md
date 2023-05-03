@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/07/2023
+ms.date: 04/26/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -72,6 +72,32 @@ Alternatively to using this default role, you can create a new role group and ad
 For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these policies and labels doesn't require access to the content.
+
+## Support for administrative units
+
+Now rolling out in preview, data lifecycle management supports [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+
+- You can assign administrative units to members of custom role groups and any others that support administrative units. For example, role groups used with Microsoft Purview Records Management. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+
+- You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
+
+> [!IMPORTANT]
+> Don't select administrative units for a policy that you want to apply to SharePoint sites or to Exchange public folders. Because administrative units support only users and groups, if you configure policy for retention to use administrative units, you won't be able to select the locations for SharePoint sites or Exchange public folders.
+
+- Both adaptive scopes and static scopes support administrative units.
+
+- Additional impact for restricted administrators
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Import PST files](importing-pst-files-to-office-365.md): Restricted administrators won't be able to use the network upload feature to bulk-import PST files to Microsoft 365 mailboxes
+    - [Exchange legacy features](data-lifecycle-management.md#exchange-legacy-features): Restricted administrators won't be able to configure the Exchange legacy features of retention policies and retention tags from messaging records management (MRM), and journaling rules
+
+- Currently, retention labels don't support administrative units.
+
+- Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
+
+- Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
+
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
 
 ## Common scenarios
 

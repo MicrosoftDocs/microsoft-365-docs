@@ -7,7 +7,7 @@
     - name: Set up Microsoft 365 for Google migration
       href: set-up-microsoft-365-forgoogle.md
     - name: Set up security policies for Windows devices
-      href: /microsoft-365/business-premium/m365bp-protect-devices?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
+      href: /microsoft-365/business-premium/m365bp-protect-managed-devices?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Add Google Workspace Domain 
       href: add-google-domain.md
     - name: Install Microsoft 365 apps and Microsoft Teams

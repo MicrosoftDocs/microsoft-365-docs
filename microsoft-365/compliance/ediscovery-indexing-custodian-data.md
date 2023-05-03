@@ -1,12 +1,12 @@
 ---
-title: "Advanced indexing of custodian data"
-description: "When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
+title: "Advanced indexing of custodian and non-custodial data sources"
+description: "When a custodian or non-custodial data source is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed is reprocessed to make it fully searchable."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/22/2023
+ms.date: 04/07/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,9 +20,11 @@ search.appverid:
 - MET150
 ---
 
-# Advanced indexing of custodian data
+# Advanced indexing of custodian and non-custodial data sources
 
-When a custodian is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed or had indexing errors is reindexed. This reindexing process is called *Advanced indexing*. There are many reasons that content is partially indexed or has indexing errors. This includes image files or the presence of images in a file, unsupported file types, or file sized indexing limits. For SharePoint files, Advanced indexing only runs on items marked as partially indexed or items with indexing errors. In Exchange, email messages with image attachments aren't marked as partially indexed or with indexing errors. This means that those files won't be reindexed by the Advanced indexing process.
+When a custodian or non-custodial data source is added to an eDiscovery (Premium) case, any content that was deemed as partially indexed or had indexing errors is reindexed. The reindexing process is called *Advanced indexing*. There are many reasons that content is partially indexed or has indexing errors. This includes image files or the presence of images in a file, unsupported file types, or file sized indexing limits.
+
+For SharePoint files, Advanced indexing only runs on items marked as partially indexed or items with indexing errors. In Exchange, email messages with image attachments aren't marked as partially indexed or with indexing errors. This means that those files won't be reindexed by the Advanced indexing process.
 
 To learn more about processing support and partially indexed items, see:
 
@@ -42,9 +44,9 @@ This view  also includes the number of items that require remediation and anothe
 - [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)
 - [Single item error remediation](ediscovery-single-item-error-remediation.md)
 
-## Updating the Advanced index for custodians
+## Updating the Advanced index
 
-When a custodian is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians in a case by selecting the **Update index** on the **Processing** tab.
+When a custodian or non-custodial data source is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian or non-custodial data source. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians and non-custodial data sources in a case by selecting the **Update index** on the **Processing** tab.
 
 > [!NOTE]
-> Updating custodian indexes is a long running process. It's recommended that you don't update indexes more than once a day in a case.
+> Updating custodian and non-custodial indexes is a long running process. It's recommended that you don't update indexes more than once a day in a case.

@@ -142,7 +142,7 @@ By creating production policies, even if they aren't applied to all users, you c
 - Extremely low chance of false positives.
 - Similar behavior to anti-malware protection, which is always on and not affected by the SCL=-1 mail flow rule.
 
-For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). The Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
 > [!NOTE]
 > The **Built-in protection** preset security policy gives Safe Attachments protection to all recipients that aren't defined in any Safe Attachments policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
@@ -154,7 +154,7 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 
 Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts the user experience, you should consider a plan to educate users.
 
-For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](safe-links-policies-configure.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings). The Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](safe-links-policies-configure.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
 
 > [!NOTE]
 > The **Built-in protection** preset security policy gives Safe Links protection to all recipients that aren't defined in any Safe Links policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
@@ -175,19 +175,19 @@ Create two anti-phishing policies for pilot users:
 - A policy that uses the Standard settings, except for impersonation detection actions as described below. Use the group **MDOPilot\_SpamPhish\_Standard** as the condition of the policy (who the policy applies to).
 - A policy that uses the Strict settings, except for impersonation detection actions as described below. Use the group **MDOPilot\_SpamPhish\_Strict** as the condition of the policy (who the policy applies to). This policy should have a higher priority (lower number) than the policy with the Standard settings.
 
-For spoof detections, the recommended Standard action is **Move message to the recipients' Junk Email folders**, and the recommended Strict action is **Quarantine the message**. Use the spoof intelligence insight to observe the results. Overrides are explained in the next section. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
+For spoof detections, the recommended Standard action is **Move the message to the recipients' Junk Email folders**, and the recommended Strict action is **Quarantine the message**. Use the spoof intelligence insight to observe the results. Overrides are explained in the next section. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
 For impersonation detections, ignore the recommended Standard and Strict actions for the pilot policies. Instead, use the value **Don't apply any action** for the following settings:
 
-- **If message is detected as an impersonated user**
+- **If a message is detected as user impersonation**
 - **If message is detected as impersonated domain**
 - **If mailbox intelligence detects an impersonated user**
 
 Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](anti-phishing-mdo-impersonation-insight.md).
 
-You'll tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). You can observe the results and adjust their settings as necessary.
+You tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). You can observe the results and adjust their settings as necessary.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Anti-spoofing protection](anti-phishing-protection-spoofing-about.md)
 - [Impersonation settings in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
