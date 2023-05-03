@@ -33,6 +33,8 @@ description: "Learn how to buy a domain name in Microsoft 365."
 
 # Buy a domain name
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 > [!NOTE]
 > If your organization uses Office 365 operated by 21Vianet in China, see [How to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 

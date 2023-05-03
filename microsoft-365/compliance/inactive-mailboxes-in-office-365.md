@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 09/12/2019
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -97,12 +97,12 @@ With [adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-ada
 
 If you don't use [adaptive policy scopes and instead use a static scope](retention.md#adaptive-or-static-policy-scopes-for-retention) with Microsoft 365 retention,  consider the following:
 
-- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
+- Static policy scopes include inactive mailboxes when you use the default **All mailboxes** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
     
     > [!NOTE]
-    > This also means that any new Microsoft 365 retention settings using a static scope that is applied to the default selection of **All recipients** will automatically include all existing inactive mailboxes.
+    > This also means that any new Microsoft 365 retention settings using a static scope that is applied to the default selection of **All mailboxes** will automatically include all existing inactive mailboxes.
 
-- If you change the default selection of **All recipients** to include specific recipients, retention settings for the policy will no longer apply to any inactive mailboxes, which now become eligible for automatic deletion.
+- If you change the default selection of **All mailboxes** to include specific recipients, retention settings for the policy will no longer apply to any inactive mailboxes, which now become eligible for automatic deletion.
 
 - If you want to release a retention policy that's applied to an inactive mailbox, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 

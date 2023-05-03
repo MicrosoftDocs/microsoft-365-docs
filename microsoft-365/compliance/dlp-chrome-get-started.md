@@ -132,9 +132,7 @@ Use this setup method for organization-wide deployments.
 
 #### Microsoft Intune Force Install Steps
 
-Before adding the extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Intune are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
-
- After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
+Using the settings catalog, follow these steps to manage Chrome extensions:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -144,7 +142,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 4. Select **Windows 10 and later** as the platform.
 
-5. Select **Templates** as the profile type.
+5. Select **Settings catalog** as the profile type.
 
 6. Select **Custom** as the template name.
 
@@ -152,15 +150,15 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 8. Enter a name and optional description on the **Basics** tab and select **Next**.
 
-9. Select **Add** on the **Configuration settings** tab.
+9. Select **Add settings** on the **Configuration settings** tab.
+10. Select **Administrative Templates** > **Google** > **Google Chrome** > **Extensions**.
+11. Select **Configure the list of force-installed apps and extensions**.
+12. Change the toggle to **Enabled**.
+13. Enter the following value for the extensions and app IDs and update URL:
+     `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`.
 
-10. Enter the following policy information.
-
-    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
-    Data type: `String`<br/>
-    Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
     
-11. Select **Save** and then select **Next**.
+11. Select **Next**.
 
 12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
 

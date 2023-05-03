@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -251,3 +251,7 @@ Keep the following things in mind when using search permissions filters to searc
 - The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters are searched when you search mailboxes.
 
 For more information about using search permissions filters in a multi-geo environment, see the "Searching and exporting content in Multi-Geo environments" section in [Set up compliance boundaries for eDiscovery investigations](ediscovery-set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
+
+## Need help with eDiscovery issues?
+
+Check out the [Resolve common eDiscovery issues](/microsoft-365/troubleshoot/ediscovery/resolve-ediscovery-issues) article for basic troubleshooting steps that you can take to identify and resolve issues that you might encounter during an eDiscovery search or elsewhere in the eDiscovery process.

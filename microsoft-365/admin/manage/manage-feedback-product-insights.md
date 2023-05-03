@@ -2,8 +2,8 @@
 title: "Microsoft product NPS feedback and insights for your organization"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/26/2021
 audience: Admin
@@ -156,7 +156,7 @@ You can export raw data for further analysis using the Export to CSV functionali
 
 You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types**.
 
-**Channels** are a way for organizations to select how often they get feature updates for Office. Learn more at [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
+**Channels** are a way for organizations to select how often they get feature updates for Microsoft 365. Learn more at [Overview of update channels for Microsoft 365 apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
 
 Feedback can be submitted on various **Platforms** like Android, iOS, Mac, and Windows. This filter allows you to filter feedback based on the platform it was submitted on.
 

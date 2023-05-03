@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/21/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -61,7 +61,7 @@ To learn more about roles and permissions, see [Roles and role groups in the Mic
 When you configure IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. You'll assign users or groups to segments with these attributes.
-- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. 
+- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that uses selected group or user account attributes.
 
     Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
@@ -80,7 +80,7 @@ When you configure IB, you'll work with several objects and concepts.
     - **For organizations in *Legacy* mode**: For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
     - **For organizations in *SingleSegment* or *MultiSegment* mode**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
-- **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts.
+- **Hidden/disabled user and guest accounts**. For hidden/disabled user and guest accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when user accounts are hidden or disabled, or when a guest is created. When the organization mode is *Legacy* for IB-enabled organizations, these accounts are prevented from communicating with all other user accounts. Administrators can disable this default behavior by manually setting the *HiddenFromAddressListEnabled* parameter to *False*.
 
 ## Configuration overview
 
@@ -111,7 +111,7 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Remove existing Exchange Online address book policies (optional)**:
     - **For organizations in *Legacy* mode**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
-    - **For organizations in *SingleSegment* or *MultiSegment* mode**: Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers.
+    - **For organizations in *SingleSegment* or *MultiSegment* mode**: Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs won't have any impact to the existing ABPs when enabling information barriers.
 
 - **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, but you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)

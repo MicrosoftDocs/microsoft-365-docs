@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 02/14/2023
+ms.date: 04/27/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -25,11 +25,12 @@ Organizations have sensitive information under their control such as financial d
 
 In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
-- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
 - Office applications such as Word, Excel, and PowerPoint
 - Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
-- on-premises file shares and on-premises SharePoint.
+- on-premises file shares and on-premises SharePoint
+- Power BI
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
@@ -110,7 +111,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - On-premises repositories
 - Power BI sites
 
-Each one has different pre-requisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
+Each one has different prerequisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
 
 ### Deploy your policies in production
 
@@ -167,7 +168,7 @@ location | include/exclude by|
 |On-premises repositories| repository file path|
 |Power BI (preview)| workspaces|
 
-4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
+4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept preconfigured conditions or define custom conditions. Some examples are:
 
 - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
 - item has a specified sensitivity label
@@ -175,7 +176,7 @@ location | include/exclude by|
 
 5. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
 
-- SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
+- SharePoint/Exchange/OneDrive: Block people who are outside your organization from accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
 - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
@@ -184,9 +185,9 @@ location | include/exclude by|
 > [!NOTE]
 > The conditions and the actions to take are defined in an object called a Rule.
 
-<!--## Create a DLP policy
+## Create and deploy a DLP policy
 
-All DLP policies are created and maintained in the Microsoft Purview center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
+All DLP policies are created and maintained in the Microsoft Purview center. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for more information.
 
 After you create a DLP policy in the compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 
@@ -234,7 +235,7 @@ You can see the text that surrounds the matched content, like a credit card numb
 
 **DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
 
-This is in preview for endpoint DLP. For endpoints, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+For endpoint, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices or above
 
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)

@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 ms.collection: 
 - highpri
+- Tier1
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection

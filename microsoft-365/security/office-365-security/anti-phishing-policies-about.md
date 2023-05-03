@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 3/2/2023
+ms.date: 3/13/2023
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -122,7 +122,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
     - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
-    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 ### Unauthenticated sender indicators
 
@@ -140,6 +140,53 @@ To prevent the question mark or via tag from being added to messages from specif
   - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
 For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+
+## DMARC Reject (OReject) for phishing emails
+
+**IN PREVIEW.** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
+
+DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
+
+To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
+
+### DMARC policies
+
+**HonorDmarcPolicy**:  
+**Type**: Boolean
+**Values**: False (default), true
+
+When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
+
+**DmarcRejectAction**
+**Type**: Enum
+**Values**: Quarantine (default), Reject
+
+When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
+
+**DmarcQuarantineAction**
+**Type**: Enum
+**Values**: Quarantine (default), MoveToJmf
+
+When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
+
+In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicrosoft.com* we use this Powershell syntax:
+
+```PowerShell
+Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
+```
+
+| Honour DMARC | Spoof Intelligence |
+| ------------- | ------------------ |
+| ON            | ON                |
+| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
+| OFF           | ON                |
+| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
+| ON            | OFF               |
+| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
+| OFF           | OFF               |
+| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
+
+:::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
 
 ## First contact safety tip
 
@@ -198,9 +245,11 @@ User impersonation protection prevents specific internal or external email addre
 You can use protected users to add internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from user impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
 > [!NOTE]
+> You can specify a maximum of 350 users for user impersonation protection in each anti-phishing policy.
 >
-> - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
-> - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
+> User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message can be identified as an impersonation attempt.
+>
+> You might get the error "The email address already exists" if you try to add a user to user impersonation protection when that email address is already specified for user impersonation protection in another anti-phishing policy. This error occurs only in the Defender portal. You won't get the error if you use the corresponding _TargetedUsersToProtect_ parameter in the **New-AntiPhishPolicy** or **Set-AntiPhishPolicy** cmdlets in Exchange Online PowerShell.
 
 By default, no sender email addresses are configured for impersonation protection, either in the default policy or in custom policies.
 
@@ -209,14 +258,14 @@ When you add internal or external email addresses to the **Users to protect** li
 For detected user impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default action.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
   - [Quarantine in Microsoft 365](quarantine-email-messages.md)
   - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
   - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
 - **Delete the message before it's delivered**: Silently delete the entire message, including all attachments.
@@ -226,7 +275,7 @@ For detected user impersonation attempts, the following actions are available:
 Domain impersonation protection prevents specific domains **in the sender's email address** from being impersonated. For example, all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific custom domains (domains you own or partner domains). **Sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
 > [!NOTE]
-> You can specify a maximum of 50 custom domains in each anti-phishing policy.
+> You can specify a maximum of 50 custom domains for domain impersonation protection in each anti-phishing policy.
 
 Messages from **senders** in the specified domains are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Users, groups, and domains** recipients in custom policies). If impersonation is detected in the domain of the sender's email address, the action for domain impersonation is applied to the message.
 
@@ -235,15 +284,15 @@ By default, no sender domains are configured for impersonation protection, eithe
 For detected domain impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default value.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  
+
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
   - [Quarantine in Microsoft 365](quarantine-email-messages.md)
   - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
   - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
 - **Delete the message before it's delivered**: Silently deletes the entire message, including all attachments.
@@ -265,12 +314,12 @@ Mailbox intelligence has two specific settings:
 For impersonation attempts detected by mailbox intelligence, the following actions are available:
 
 - **Don't apply any action**: This is the default value. This action has the same result as when **Enable mailbox intelligence** is turned on but **Enable intelligence impersonation protection** is turned off.
-- **Redirect message to other email addresses**
-- **Move message to the recipients' Junk Email folders**
-- **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+- **Redirect the message to other email addresses**
+- **Move the message to the recipients' Junk Email folders**
+- **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 - **Deliver the message and add other addresses to the Bcc line**
 - **Delete the message before it's delivered**
-  
+
 #### Impersonation safety tips
 
 Impersonation safety tips appear to users when messages are identified as impersonation attempts. The following safety tips are available:
@@ -287,13 +336,13 @@ Impersonation safety tips appear to users when messages are identified as impers
 Trusted senders and domain are exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is 1024 entries.
 
 > [!NOTE]
+> Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
 >
-> - Trusted domain entries don't include subdomains of the specified domain. You need to add an entry for each subdomain.
+> If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
 >
-> - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
->   - `noreply@email.teams.microsoft.com`
->   - `noreply@emeaemail.teams.microsoft.com`
->   - `no-reply@sharepointonline.com`
+> - `noreply@email.teams.microsoft.com`
+> - `noreply@emeaemail.teams.microsoft.com`
+> - `no-reply@sharepointonline.com`
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 
