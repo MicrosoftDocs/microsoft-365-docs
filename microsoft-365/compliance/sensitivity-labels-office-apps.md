@@ -456,11 +456,19 @@ However, take into consideration the outcome when an email client doesn't suppor
 
 For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md). The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
-Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
+Office for Windows: Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 
 - File > Save As > PDF 
 - File > Export > PDF
 - Share > Send a Copy > PDF
+
+Office for the web: You must download the file from the browser. The following methods are supported to convert an Office online document into a PDF document:
+
+- Word and PowerPoint on the web:
+    - Save as > Download as PDF > Download
+- Excel on the web:
+    - Export > Download as PDF > Download
+    - Print > Print > Download as PDF > Download
 
 This action is logged with the **Renamed file** audit event from the [File and page activities](audit-log-activities.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
 

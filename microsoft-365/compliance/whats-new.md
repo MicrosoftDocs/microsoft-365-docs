@@ -45,6 +45,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
 
+### Sensitivity labels
+
+- **General availability (GA)**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) for Word, Excel, and PowerPoint.
+
 ## April 2023
 
 ### Communication compliance
