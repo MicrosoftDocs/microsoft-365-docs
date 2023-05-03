@@ -46,6 +46,8 @@ To implement a Syntex solution:
 
 4. Now create a Power Automate flow using the action “Generate document using Syntex” and with a manual trigger to get items in the list. This ensures that you can generate documents when you want for all values in the list.  
 
+   ![Diagram showing the steps to generate documents in bulk using Syntex.](../media/content-understanding/scenario-generate-documents-bulk.png)
+
 > [!Note]
 > Although this example uses a SharePoint list as a data source, you can use any data source as a trigger for generating documents if you have access to the required Power Automate connector.  
 

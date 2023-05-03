@@ -50,6 +50,8 @@ To implement a Syntex solution:
 
 5. Using Microsoft Forms, you can create a form for frontline workers to enter values in the list or expose the list itself for them to add values.  
 
+   ![Diagram showing the steps to generate routine documents using Syntex.](../media/content-understanding/scenario-automatically-generate-documents.png)
+
 You can now review all daily reports as they get created based on values that frontline workers enter in the form.  
 
 > [!Note]
