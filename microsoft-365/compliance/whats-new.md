@@ -47,7 +47,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **General availability (GA)**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) for Word, Excel, and PowerPoint.
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) for Word, Excel, and PowerPoint.
 
 ## April 2023
 
