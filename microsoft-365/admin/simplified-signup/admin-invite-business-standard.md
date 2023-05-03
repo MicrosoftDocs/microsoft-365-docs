@@ -3,7 +3,7 @@ title: "Invite users to a Microsoft 365 business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 04/22/2021
 audience: Admin
