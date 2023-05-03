@@ -17,7 +17,7 @@ description: Admins can learn how to create, modify, and delete the advanced ant
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 4/21/2023
+ms.date: 5/3/2023
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -285,6 +285,17 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
+
+     - **Honor DMARC record policy when the message when the message is detected as spoof** (currently in Preview): When this setting is turned on, you control what happens to messages where the sender fails explicit [DMARC](email-authentication-dmarc-configure.md) checks and the DMARC policy is set to `p=quarantine` or `p=reject`:
+       - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: Select one of the following actions:
+         - **Quarantine the message**: This is the default value.
+         - **Move message to the recipients' Junk Email folders**
+
+       - **If the message is detected as spoof and DMARC Policy is set as p=reject**: Select one of the following actions:
+         - **Quarantine the message**: This is the default value.
+         - **Reject the message**
+
+       For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
      - **If the message is detected as spoof by spoof intelligence**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
        - **Move the message to the recipients' Junk Email folders** (default)

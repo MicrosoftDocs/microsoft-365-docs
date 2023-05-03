@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 3/13/2023
+ms.date: 5/3/2023
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -112,7 +112,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
   >
   > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
   > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
-  > - Disabling anti-spoofing protection only disables _implicit_ spoofing protection from [composite authentication](email-authentication-about.md#composite-authentication) checks. If the sender fails _explicit_ [DMARC](email-authentication-dmarc-configure.md) checks where the policy is set to quarantine or reject, the message is still quarantined or rejected.
+  > - Disabling anti-spoofing protection only disables _implicit_ spoofing protection from [composite authentication](email-authentication-about.md#composite-authentication) checks. For information about how _explicit_ [DMARC](email-authentication-dmarc-configure.md) checks are affected by anti-spoofing protection and the configuration of the DMARC policy (`p=quarantine` or `p=reject` in the DMARC record), see the [Spoof protection and sender DMARC policies](#spoof-protection-and-sender-dmarc-policies) section.
 
 - **Unauthenticated sender indicators**: Available in the **Safety tips & indicators** section only when spoof intelligence is turned on. See the details in the next section.
 - **Actions**: For messages from blocked spoofed senders (automatically blocked by spoof intelligence or manually blocked in the Tenant Allow/Block list), you can also specify the action to take on the messages:
@@ -124,34 +124,31 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
     If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-### Unauthenticated sender indicators
+### Spoof protection and sender DMARC policies
 
-Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settings) that are available in the **Safety tips & indicators** section in anti-phishing policies in both EOP and Defender for Office 365. The following settings are available only when spoof intelligence is turned on:
+> [!NOTE]
+> The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
 
-- **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+In ant-phishing policies, you can control whether `p=quarantine` or `p=reject` values in sender DMARC policies are honored. If a messages fails DMARC checks, you can specify separate actions for `p=quarantine` or `p=reject` in the sender's DMARC policy. The following settings are involved:
 
-- **Show "via" tag**: Adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](anti-phishing-from-email-address-validation.md#an-overview-of-email-message-standards).
+- **Honor DMARC record policy when the message is detected as spoof**: This setting turns on honoring the sender's DMARC policy for explicit email authentication failures. When you select this setting, the following settings are available:
+  - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: The available actions are:
+    - **Quarantine the message**
+    - **Move the message to the recipients' Junk Email folders**
+  - **If the message is detected as spoof and DMARC Policy is set as p=reject**: The available actions are:
+    - **Quarantine the message**
+    - **Reject the message**
 
-To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
+The relationship between spoof intelligence and whether sender DMARC policies are honored are described in the following table:
 
-- Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
-- [Configure email authentication](email-authentication-about.md#configure-email-authentication-for-domains-you-own) for the sender domain.
-  - For the question mark in the sender's photo, SPF or DKIM are the most important.
-  - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
-
-For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
-
-## DMARC Reject (OReject) for phishing emails
-
-**IN PREVIEW.** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
-
-DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
-
-To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
+|&nbsp;|Honor DMARC policy On|Honor DMARC policy Off|
+|---|---|---|
+|**Spoof intelligence On**|Separate actions for implicit and explicit email authentication failures: <ul><li>Implicit failures use the **If the message is detected as spoof by spoof intelligence** action the anti-phishing policy.</li><li>Explicit failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in the anti-phishing policy.</li></ul>|The **If the message is detected as spoof by spoof intelligence** action in the anti-phishing policy is used for both implicit and explicit email authentication failures. In other words, explicit email authentication failures ignore `p=quarantine` and `p=reject` in the DMARC policy.|
+|**Spoof intelligence Off**|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in anti-phishing policies.|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies are quarantined with `p=oreject` and `p=oquarantine`.|
 
 ### DMARC policies
 
-**HonorDmarcPolicy**:  
+**HonorDmarcPolicy**:
 **Type**: Boolean
 **Values**: False (default), true
 
@@ -175,18 +172,25 @@ In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicro
 Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
 ```
 
-| Honour DMARC | Spoof Intelligence |
-| ------------- | ------------------ |
-| ON            | ON                |
-| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
-| OFF           | ON                |
-| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
-| ON            | OFF               |
-| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
-| OFF           | OFF               |
-| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
-
 :::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
+
+### Unauthenticated sender indicators
+
+Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settings) that are available in the **Safety tips & indicators** section in anti-phishing policies in both EOP and Defender for Office 365. The following settings are available only when spoof intelligence is turned on:
+
+- **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+
+- **Show "via" tag**: Adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](anti-phishing-from-email-address-validation.md#an-overview-of-email-message-standards).
+
+To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
+
+- Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
+- [Configure email authentication](email-authentication-about.md#configure-email-authentication-for-domains-you-own) for the sender domain.
+  - For the question mark in the sender's photo, SPF or DKIM are the most important.
+  - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
+
+For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+
 
 ## First contact safety tip
 
