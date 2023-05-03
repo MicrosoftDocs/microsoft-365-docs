@@ -38,6 +38,8 @@ You can use content assembly to generate documents in bulk using a template. You
 
 To implement a Syntex solution:
 
+   ![Diagram showing the steps to generate documents in bulk using Syntex.](../media/content-understanding/scenario-generate-documents-bulk.png)
+
 1. Set up a SharePoint document library where you want to store the reminder letters.  
 
 2. Set up a SharePoint list with the required vendor details.  
@@ -45,8 +47,6 @@ To implement a Syntex solution:
 3. Go to the document library and create a modern template using a reminder letter. Create fields for the values that represent vendor details and associate them with the columns of the SharePoint list you previously set up.  
 
 4. Now create a Power Automate flow using the action “Generate document using Syntex” and with a manual trigger to get items in the list. This ensures that you can generate documents when you want for all values in the list.  
-
-   ![Diagram showing the steps to generate documents in bulk using Syntex.](../media/content-understanding/scenario-generate-documents-bulk.png)
 
 > [!Note]
 > Although this example uses a SharePoint list as a data source, you can use any data source as a trigger for generating documents if you have access to the required Power Automate connector.  

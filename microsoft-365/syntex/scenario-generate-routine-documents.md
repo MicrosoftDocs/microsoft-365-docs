@@ -40,6 +40,8 @@ Today, users physically inspect parts and then fill in a list or a form or physi
 
 To implement a Syntex solution:
 
+   ![Diagram showing the steps to generate routine documents using Syntex.](../media/content-understanding/scenario-automatically-generate-documents.png)
+
 1. Set up a document library where you want to store the reports.  
 
 2. Set up a SharePoint list with the required columns that you need to be filled in by the frontline workers.  
@@ -49,8 +51,6 @@ To implement a Syntex solution:
 4. Now create a Power Automate flow using the action “Generate document using Syntex” and use the trigger “When a list item is created.” This ensures that whenever a new entry is added by a frontline worker to the list, a new report is generated.  
 
 5. Using Microsoft Forms, you can create a form for frontline workers to enter values in the list or expose the list itself for them to add values.  
-
-   ![Diagram showing the steps to generate routine documents using Syntex.](../media/content-understanding/scenario-automatically-generate-documents.png)
 
 You can now review all daily reports as they get created based on values that frontline workers enter in the form.  
 
