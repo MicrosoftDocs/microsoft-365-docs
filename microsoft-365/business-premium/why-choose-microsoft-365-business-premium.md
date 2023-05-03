@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business Premium - Productivity and security"
+title: "Why choose Microsoft 365 Business Premium? Productivity and security"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how Microsoft 365 Business Premium helps you run your business more securely with productivity and security."
+description: "Discover why Microosft 365 Business Premium is a wise choice for small and medium sized businesses. Learn how it helps you run your business more securely with productivity and security."
 ---
 
-# Productivity and security for small and medium-sized businesses 
+# Why should I consider Microsoft 365 Business Premium?
 
-Microsoft 365 Business Premium is a comprehensive cloud productivity and security solution that was designed and built for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
+Microsoft 365 Business Premium is a complete productivity and security solution for small and medium-sized businesses. It provides comprehensive cloud productivity and security and is designed especially for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 
 - **Enable your employees to be connected and productive**, whether they're working on site or remotely, with best-in-class collaboration tools like [Microsoft Teams](create-teams-for-collaboration.md).
 - **Provide your employees with secure access to their business data and apps**, and help ensure that only authorized personnel can access confidential work data.
@@ -50,8 +50,8 @@ The security recommendations provided in [this guidance](index.md) make it much 
 
 Resources are available to help everyone in your organization to:
 
-- [Protect devices](m365bp-devices-overview.md)
-- [Use email more securely](m365bp-protect-email-overview.md)
+- [Protect devices](m365bp-set-up-unmanaged-devices.md)
+- [Use email more securely](m365bp-use-email-securely.md)
 - [Collaborate and share information more securely](m365bp-collaborate-share-securely.md)
 
 Use the recommendations in this library to help your users be productive and more secure in their work.
@@ -72,6 +72,6 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 3. [Set up your security capabilities](m365bp-security-overview.md).
 
-4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md), [Use email securely](m365bp-protect-email-overview.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
+4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md), [Use email securely](m365bp-use-email-securely.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
 
-5. [Set up and secure managed devices](m365bp-protect-devices.md)
+5. [Set up and secure managed devices](m365bp-protect-managed-devices.md)
