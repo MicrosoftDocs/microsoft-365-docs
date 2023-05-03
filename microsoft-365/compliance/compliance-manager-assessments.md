@@ -93,9 +93,7 @@ Before you begin, be sure you know which group you'll assign it to, or be prepar
 
 1. On the **Select services** page, designate which services this assessment applies to (learn more about [multicloud support](compliance-manager-multicloud.md)) using the **Select services** command. The flyout pane shows which services are available for your chosen regulation. Place a check next to your desired services, then select **Add**. Then select **Next**.
 
-1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud, you arrive at a sub-step for  **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. All subscriptions are selected by default, but you can remove any by selecting the **X** next to the name. 
-
-   On the **Select services** page, select **Next**.
+1. If you selected a service that has more than one subscription covered by Microsoft Defender for Cloud, you arrive at a sub-step for  **Select service subscriptions**. Select **Manage subscriptions**. On the flyout pane, a tab for each service displays a list of all subscriptions within that service. All subscriptions are selected by default, but you can remove any by selecting the **X** next to the name. On the **Select services** page, select **Next**.
 
 1. **Review and finish:** Review all your selections and make any necessary edits. When you're satisfied with the settings, select **Create assessment**.
 
