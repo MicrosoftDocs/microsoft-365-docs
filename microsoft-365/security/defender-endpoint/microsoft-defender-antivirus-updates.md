@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 04/11/2023
+ms.date: 05/02/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -79,6 +79,37 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
+
+- Security intelligence update version: **1.387.2997.0**
+- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
+- Platform: **4.18.2304.8** 
+- Engine: **1.1.20300.3**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format will look like: 
+   - Platform: `4.18.23050.1` 
+   - Engine: `1.1.23050.63000` 
+- Fixed memory leak in behavior monitoring
+- Improved resiliency of signature loading and platform updates
+- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed MSERT to only use release engine version
+- Improved the enforcement of exclusions
+- Added support for enabling real-time protection and signature updates during OOBE
+- Fixed localization for Defender events
+- Deprecated real-time signature delivery setting
+- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
+- Fixed abandoned threats in the Windows Security app
+- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
+
+
+#### Known issues
+
+- None
+
 ### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
 
 - Security intelligence update version: **1.387.695.0**
@@ -126,24 +157,6 @@ All our updates contain
 - Improved serviceability for internal database files
 - Enhanced certificate indicators determination logic
 - Enhanced memory usage
-
-#### Known Issues
-
-- None  
-
-### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
-
-- Security intelligence update version: **1.383.26.0**
-- Release date: **February 14, 2023**
-- Platform: **4.18.2301.6**
-- Engine: **1.1.20000.2**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
-- Updated Sense token hardening
-- Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
 
 #### Known Issues
 

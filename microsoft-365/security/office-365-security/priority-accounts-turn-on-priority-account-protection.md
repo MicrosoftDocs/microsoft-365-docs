@@ -82,7 +82,7 @@ For more information, see [User tags in Microsoft Defender for Office 365](user-
 
 ## Review differentiated protection from priority account protection
 
-The affects of priority account protection are visible in the following features:
+The effects of priority account protection are visible in the following features:
 
 - [Alerts](alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
