@@ -61,11 +61,11 @@ To help simplify the process of enabling MFA, [security defaults in Azure Active
 
 Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements.
 
-See [Turn on multi-factor authentication](m365bp-conditional-access.md).
+See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
 
 | Subscription | Recommendation |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-conditional-access.md).  |
+| [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
 ## 2. Protect your administrator accounts
@@ -93,7 +93,7 @@ Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 
 See the following articles:
 
 - [Policies in preset security policies](../security/office-365-security/preset-security-policies.md#policies-in-preset-security-policies)
-- [Protect against malware and other cyberthreats](m365bp-increase-protection.md)
+- [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
 
 | Subscription | Recommendation |
 |---|---|
@@ -112,14 +112,14 @@ Microsoft 365 Business Premium also includes [Microsoft Intune](/mem/intune/fund
 See the following articles:
 
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
-- [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md)
-- [Set up and secure managed devices](m365bp-protect-devices.md) 
+- [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
+- [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-install-office-apps.md).<br/>(*Defender for Business can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-conditional-access.md).<br/>(*Defender for Business can be added on*) |
+| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
 
 ## 5. Train everyone on email best practices
 
@@ -181,12 +181,12 @@ Microsoft 365 Business Premium also includes:
 
 See the following articles: 
 
-- [Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- [Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
@@ -203,14 +203,14 @@ Microsoft 365 Business Premium also includes:
 
 See the following articles: 
 
-- [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md).
+- [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md).
 - [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
 - [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-install-office-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
+| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business
@@ -223,7 +223,7 @@ Microsoft 365 Business Premium also includes [Azure Information Protection Plan 
 
 See the following articles:
 
-- [Manage calendar sharing](m365bp-increase-protection.md#manage-calendar-sharing) 
+- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#manage-calendar-sharing) 
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 | Subscription | Recommendations |
