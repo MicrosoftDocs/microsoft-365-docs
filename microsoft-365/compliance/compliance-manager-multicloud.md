@@ -61,6 +61,10 @@ If you choose subscriptions that are in scope within Defender for Cloud for a ma
 
 View the [list of regulations supported by both Compliance Manager and Defender for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
 
+## Known issues
+
+TBD....
+
 ## Get started
 
 There are setup steps required before you can start building assessments for your cloud services. Visit [Configure cloud settings](compliance-manager-cloud-settings.md) to get started.
