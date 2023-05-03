@@ -65,7 +65,7 @@ Capability summary: Microsoft Viva Goals is a goal-alignment solution that conne
 
 #### Data Residency Available
 
-Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
+Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) and in the United Kingdom will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
 
 To be considered a tenant in the EUDB:
  
@@ -74,7 +74,7 @@ To be considered a tenant in the EUDB:
 
 #### Migration
 
-Customers who signed up for Viva Goals prior to December 5, 2022, currently have their data stored in the US data centers. We'll migrate the data for these customers to data centers located in the EU over the coming months. Customers won't have to do anything to facilitate this move.
+Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2022, have now been migrated to EU data centers.  
 
 ### Viva Insights – Advanced, Mgr, Leader
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
