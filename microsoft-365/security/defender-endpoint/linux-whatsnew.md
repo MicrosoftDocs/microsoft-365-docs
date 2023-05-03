@@ -37,8 +37,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## May-2023 Build: 101.98.64 | Release version: 30.123032.19864.0
 
-&ensp;Released: **May 4,2023**<br/>
-&ensp;Published: **May 4, 2023**<br/>
+&ensp;Released: **May 3,2023**<br/>
+&ensp;Published: **May 3, 2023**<br/>
 &ensp;Build: **101.98.64**<br/>
 &ensp;Release version: **30.123032.19864.0**<br/>
 &ensp;Engine version: **1.1.20100.6**<br/>
