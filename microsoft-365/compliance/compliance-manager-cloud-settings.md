@@ -27,11 +27,11 @@ description: "Set up your Azure and other non-Microsoft services for using Micro
 
 ## Setting up for multicloud support
 
-Compliance Manager integrates with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to provide multicloud support. Organizations must have a subscription to Microsoft Azure and then enable Defender for Cloud so that Compliance Manager can receive the necessary signals to monitor your cloud services. Once you have Defender for Cloud, you need to assign the relevant industry and regulatory standards to your subscription.
+Compliance Manager integrates with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to provide multicloud support. Organizations must have at least one subscription within Microsoft Azure and then enable Defender for Cloud so that Compliance Manager can receive the necessary signals to monitor your cloud services. Once you have Defender for Cloud, you need to assign the relevant industry and regulatory standards to your subscriptions.
 
 Depending on what your organization has already set up, jump to the section below that aligns to your situation in order to get started:
 
-- **You don't have Azure**: [Get an Azure subscription](#get-an-azure-subscription)
+- **You don't have Azure**: [Activate Azure and create a subscription](#activate-azure-and-create-a-subscription)
 - **You have Azure but don't have Defender for Cloud**: [Enable Defender for Cloud on your Azure subscription](#enable-defender-for-cloud)
 - **You have Defender for Cloud but haven't assigned standards**: [Assign standards to your cloud service subscriptions](#add-standards-to-your-subscriptions)
 
@@ -59,17 +59,15 @@ The standards or regulations listed below are supported across Defender for Clou
 - SOC 2 Type 2 (Azure)
 - SWIFT CSP-CDCF v2022 (Azure)
 
-## Get an Azure subscription
+## Activate Azure and create a subscription
 
-A subscription to Microsoft Azure is a prerequisite for getting started with Defender for Cloud. If you don't already have a subscription, you can sign up for a free account. Visit the [Azure free account site](https://azure.microsoft.com/pricing/free-trial/) to learn more about starting a free account and other Azure pricing offerings.
+Setting up a subscription within Microsoft Azure is a prerequisite for getting started with Defender for Cloud. If you don’t have a subscription, you can [sign up for a free account](https://azure.microsoft.com/pricing/free-trial/).
 
 ## Enable Defender for Cloud
 
-Visit [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started). Follow the steps to enable Defender for Cloud on your Azure subscription and become familiar with the Defender for Cloud Overview page.
+Visit [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started). Follow the steps to enable Defender for Cloud on your Azure subscription and become familiar with the Defender for Cloud Overview page. Once you've enabled Defender for Cloud, follow the additional steps below to make sure you're set up for Compliance Manager integration.
 
 Most setup functions require the user to hold the [Owner role in Azure](/azure/role-based-access-control/built-in-roles#owner). Get more details about [User roles and permissions for Defender for Cloud](/azure/defender-for-cloud/permissions).
-
-Once you've enabled Defender for Cloud, follow the additional steps below to make sure you're set up for Compliance Manager integration.
 
 #### Confirm access to Defender for Cloud Regulatory compliance
 
@@ -78,7 +76,8 @@ Once you've enabled Defender for Cloud, follow the additional steps below to mak
 1. Validate that you see a dashboard like this:
   ![Compliance Manager MDC dashboard.](../media/compliance-manager-mdc-dashboard.png "Defender for Cloud dashboard")
 
-1. If you don't see the dashboard above and instead see a notice about insufficient licensing, follow the prompts to activate an applicable Defender for Cloud plan. The plans **Foundational CSPM** and **Defender CSPM** are free to use and provide sufficient functionality. Or follow the steps below to manually select the plans:
+1. If you don’t see the dashboard above and instead see a notice about insufficient licensing, follow the prompts to activate an applicable Defender for Cloud plan. We recommend enabling one of these two plans: **Foundational CSPM** or **Defender CSPM**, which are currently free to use and provide sufficient functionality ([learn more about these plans](/azure/defender-for-cloud/concept-cloud-security-posture-management)). You can manually select the plans by following the steps below:
+
 
     1. In Defender for Cloud, select **Environment settings** on the left navigation.
     1. Select **Azure** from your list of environments. Expand the item underneath **Azure** to view the subscription, then select the subscription. You'll arrive at the **Defender plans** page.
