@@ -694,4 +694,4 @@ If there's only one Wednesday between the start date and end date, the automatio
 
 ### How does randomize send times currently work?
 
-Randomize send time works in batches of 1000 users and is meant to be used with a large number of targeted users. If less than 1000 users are involved in simulations created by automations, a randomize send time will not trigger.
+Randomize send time works in batches of 1000 users and is meant to be used with a large number of targeted users. If less than 1000 users are involved in simulations created by automations, batches of 100 users are created for randomized send times.
