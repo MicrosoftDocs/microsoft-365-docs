@@ -98,7 +98,7 @@
         {
             "source_path": "frontline/flw-onboarding-wizard.md",
             "redirect_url": "/microsoft-365/frontline/flw-setup-microsoft-365",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
