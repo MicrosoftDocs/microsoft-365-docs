@@ -462,6 +462,8 @@ Office for Windows: Word, Excel, and PowerPoint support the following methods to
 - File > Export > PDF
 - Share > Send a Copy > PDF
 
+This action is logged with the **Renamed file** audit event from the [File and page activities](audit-log-activities.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
+
 Office for the web: You must download the file from the browser. The following methods are supported to convert an Office online document into a PDF document:
 
 - Word and PowerPoint on the web:
@@ -469,8 +471,6 @@ Office for the web: You must download the file from the browser. The following m
 - Excel on the web:
     - Export > Download as PDF > Download
     - Print > Print > Download as PDF > Download
-
-This action is logged with the **Renamed file** audit event from the [File and page activities](audit-log-activities.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
 
 When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
