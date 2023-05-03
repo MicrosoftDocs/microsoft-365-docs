@@ -45,6 +45,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
 
+### Insider risk management
+
+- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
+
 ## April 2023
 
 ### Communication compliance
