@@ -1,3 +1,4 @@
+Deprecate This Page
 ---
 title: Configure global settings for Safe Links settings in Defender for Office 365
 f1.keywords:
