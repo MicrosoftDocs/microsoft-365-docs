@@ -1,5 +1,5 @@
 ---
-title: "Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium"
+title: "Protect unmanaged computers with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 04/14/2023
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -22,19 +22,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Protect unmanaged or bring-your-own devices (BYOD) from cyberattacks with Microsoft 365 Business Premium. How to set up cybersecurity for Windows PCs and Macs."
+description: "Protect unmanaged computers from cyberattacks with Microsoft 365 Business Premium. How to set up cybersecurity for Windows PCs and Macs."
 ---
 
-# Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium
+# Protect unmanaged computers with Microsoft 365 Business Premium
 
-This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs that are not enrolled in Microsoft Intune or onboarded to Microsoft Defender for Business. It is very likely your small business or campaign may have staff who bring their own devices (BYOD), such as personally owned phones, tablets, and PCs.
+This objective is focused on protecting unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
 
 > [!NOTE]
-> This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-devices.md).
+> This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
 > 
 > [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
-It's critical that you ensure users follow these guidelines so that minimum security capabilities are configured on all the BYOD devices.
+It's critical that you ensure users follow these guidelines so that minimum security capabilities are configured on all the bring-your-own devices (also referred to as BYOD devices).
 
 ## [Windows 10 or 11](#tab/Windows10-11)
 
@@ -60,7 +60,7 @@ You should always run Windows Defender Firewall even if you have another firewal
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
 
@@ -82,4 +82,4 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 
 ## Next mission
 
-Okay, mission complete! Now, let's work on [securing email usage](m365bp-protect-email-overview.md) against phishing and other attacks.
+Okay, mission complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.
