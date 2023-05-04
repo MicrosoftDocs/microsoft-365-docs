@@ -20,7 +20,7 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/20/2023
+ms.date: 5/3/2023
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
@@ -191,6 +191,10 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
+|**Honor DMARC record policy when the message when the message is detected as spoof** <br><br> _HonorDmarcPolicy_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|**This setting is currently in Preview.** <br><br> When this setting is turned on, you control what happens to messages where the sender fails explicit [DMARC](email-authentication-dmarc-configure.md) checks when the policy action in the DMARC TXT record is set to `p=quarantine` or `p=reject`. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).|
+|**If the message is detected as spoof and DMARC Policy is set as p=quarantine** <br><br> _DmarcQuarantineAction_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**This setting is currently in Preview.** <br><br> This action is meaningful only when **Honor DMARC record policy when the message when the message is detected as spoof** is turned on.|
+|**If the message is detected as spoof and DMARC Policy is set as p=reject** <br><br> _DmarcRejectAction_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**This setting is currently in Preview.** <br><br> This action is meaningful only when **Honor DMARC record policy when the message when the message is detected as spoof** is turned on.|
+|**If the message is detected as spoof and DMARC Policy is set as p=reject** <br><br> _DmarcRejectAction_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**Quarantine the message** <br><br> _Quarantine_|**This setting is currently in Preview.** <br><br> This action is meaningful only when **Honor DMARC record policy when the message when the message is detected as spoof** is turned on.|
 |**If the message is detected as spoof by spoof intelligence** <br><br> _AuthenticationFailAction_|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move the message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message** as the action for the spoof verdict, an **Apply quarantine policy** box is available.|
 |**Quarantine policy** for **Spoof** <br><br> _SpoofQuarantineTag_|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if spoof detections are quarantined.|
 |**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).|
@@ -314,28 +318,17 @@ Users can't release their own messages that were quarantined as malware by Safe 
 |**Redirect attachment with detected attachments** : **Enable redirect** <br><br> _Redirect_ <br><br> _RedirectAddress_|Not selected and no email address specified. <br><br> `-Redirect $false` <br><br> _RedirectAddress_ is blank (`$null`)|Not selected and no email address specified. <br><br> `-Redirect $false` <br><br> _RedirectAddress_ is blank (`$null`)|Selected and specify an email address. <br><br> `$true` <br><br> an email address|Selected and specify an email address. <br><br> `$true` <br><br> an email address|Redirect messages to a security admin for review. <br><br> **Note**: This setting is not configured in the **Standard**, **Strict**, or **Built-in protection** preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in new Safe Attachments policies that you create.|
 |**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** <br><br> _ActionOnError_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 
-### Safe Links settings
+### Safe Links policy settings
 
-Safe Links in Defender for Office 365 includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Defender for Office 365](safe-links-about.md).
+For more information about Safe Links protection, see [Safe Links in Defender for Office 365](safe-links-about.md).
 
 Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-#### Global settings for Safe Links
+To configure Sae Links policy settings, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
+
+In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlets for Safe Links policy settings.
 
 > [!NOTE]
-> The only available global setting for Safe Links is the "Block the following URLs" list. As of April 1 2023, the "Block the following URLs" list for Safe Links no longer works. For more information, see [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880). Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
->
-> To see and remove any leftover URL entries in the "Block the following URLs list, see [Configure the "Block the following URLs" list for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
-
-#### Safe Links policy settings
-
-To configure these settings, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
-
-In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
-
-> [!NOTE]
-> As described earlier, there's no default Safe Links policy, but Safe Links protection is assigned to all recipients by the [**Built-in protection** preset security policy](preset-security-policies.md) (users who otherwise aren't included in any Safe Links policies).
->
 > The **Default in custom** column refers to the default values in new Safe Links policies that you create. The remaining columns indicate (unless otherwise noted) the values that are configured in the corresponding preset security policies.
 
 |Security feature name|Default in custom|Built-in protection|Standard|Strict|Comment|
