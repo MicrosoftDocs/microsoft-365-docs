@@ -158,7 +158,7 @@ Download the following files.
 
 8. For the **Action** choose **Install**.
  
-9. Choose the **Scope** tab and then target computers before choosing choose **Save**.
+9. Choose the **Scope** tab and then target computers before choosing **Save**.
  
 10. On the **General** page, enter a name for the new policy.
 
