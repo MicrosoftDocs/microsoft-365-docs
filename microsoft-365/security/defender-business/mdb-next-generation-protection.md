@@ -59,20 +59,9 @@ You can choose from several options for managing your next-generation protection
 
 ---
 
-## Understand next-generation protection settings in Microsoft Defender for Business
-
-Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. The default policies are designed to protect your devices and users without hindering productivity. You can also customize the policies to suit your business needs. And, if you're using Microsoft Intune, you can use it to manage your security policies.
-
-**This article describes**:
-
-- [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
-- [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-- [How default settings in Defender for Business correspond to settings in Microsoft Intune](#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)
-- [Microsoft Defender Antivirus states (active, passive, and disabled)](#microsoft-defender-antivirus-states)
-
 ## Next-generation protection settings and options
 
-The following table lists settings and options.
+The following table lists settings and options for next-generation protection in Defender for Business.
 
 | Setting | Description |
 |:---|:---|
