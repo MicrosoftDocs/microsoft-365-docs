@@ -65,10 +65,11 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 #### Permissions ####
 
-To configure OCR settings, the user should have one of the following roles assigned.
+The account you use to create and deploy policies must be a member of one of these role groups
 
-- Compliance Administrator
-- Compliance Data Administrator
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
 - Information Protection Admin
 
 1. In the Microsoft Purview compliance portal, go to **Settings**.
