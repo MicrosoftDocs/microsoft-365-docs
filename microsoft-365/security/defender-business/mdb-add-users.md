@@ -68,7 +68,7 @@ One good way to make sure MFA is enabled for all users is by using [security def
 
    > [!CAUTION]
    > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead. To learn more, see the following articles:
-   > - [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md) (in the Microsoft 365 Business Premium documentation)
+   > - [Multi-factor authentication](../../business-premium/m365bp-turn-on-mfa.md) (in the Microsoft 365 Business Premium documentation)
    > - [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 5. Save your changes.
