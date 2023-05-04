@@ -3,7 +3,7 @@ title: "Set up Microsoft 365 Business Standard with a new or existing domain"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 05/27/2020
 audience: Admin

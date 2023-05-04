@@ -97,7 +97,7 @@ Depending on the server that you're onboarding, the unified solution installs Mi
 
 |Server version|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
 |Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
 |Windows Server 2019 or later|Built-in|Built-in|
 
@@ -303,7 +303,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 ### Download package
 
-1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Endpoints > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 
