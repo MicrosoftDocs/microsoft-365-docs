@@ -46,7 +46,7 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 
 | Option | Description |
 |:---|:---|
-| **Microsoft 365 Defender portal** | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings in Defender for Business. With a simplified configuration process, you can use the Microsoft 365 Defender portal to onboard devices, access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) in one place. <br/><br/>Note that currently, attack surface reduction rules must be configured in the Microsoft Intune admin center. |
+| **Microsoft 365 Defender portal** | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings in Defender for Business. With a simplified configuration process, you can use the Microsoft 365 Defender portal to onboard devices, access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) in one place. <br/><br/>Note that currently, controlled folder access and attack surface reduction rules are set up and configured in the Microsoft Intune admin center. |
 | **Microsoft Intune admin center** | The Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)) lets you manage your workforce's devices and apps, including how they access your company data. You can onboard devices and access your security policies and settings in Intune. You can also use Intune to set up and configure attack surface reduction rules in Defender for Business. Intune is not included in the standalone version of Defender for Business, but it can be added on. <br/><br/>If your company has been using Intune, you can choose to continue using it to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy)  |
 
 > [!IMPORTANT]
@@ -78,11 +78,11 @@ Web content filtering enables your security team to track and regulate access to
 
 | Category | Description |
 |:---|:---|
-| Adult content | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
-| High bandwidth | Download sites, image sharing sites, or peer-to-peer hosts |
-| Legal liability | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
-| Leisure | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
-| Uncategorized | Sites that have no content or that are newly registered |
+| **Adult content** | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
+| **High bandwidth** | Download sites, image sharing sites, or peer-to-peer hosts |
+| **Legal liability** | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
+| **Leisure** | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
+| **Uncategorized** | Sites that have no content or that are newly registered |
 
 Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
@@ -107,20 +107,15 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 ## Enable standard attack surface reduction capabilities
 
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Defender for Business includes several [capabilities](mdb-asr.md) to help reduce your attack surfaces:
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Defender for Business includes several attack surface reduction (ASR) capabilities to help protect your organization:
 
 - **Network protection**, which is turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md).
 - **Firewall protection**, which is turned on by default with [firewall policies](mdb-firewall.md).
 - **Web protection**, which is turned on by default when [web content filtering](#set-up-web-content-filtering) is set up.
-- **Controlled folder access**, which serves as part of your ransomware protection when you [set it up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
-- Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
+- **Controlled folder access**, which serves as part of your ransomware protection when you [set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
+- **Attack surface reduction rules**, which help protect against certain software-based behaviors when you [enable your ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules). 
 
-
-
-There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
-
-
-
+For more information, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md).
 
 ## Review settings for advanced features
 
