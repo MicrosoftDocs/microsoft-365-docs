@@ -113,7 +113,7 @@ Attack surfaces are all the places where your organization is vulnerable to cybe
 - **Firewall protection**, which is turned on by default with [firewall policies](mdb-firewall.md).
 - **Web protection**, which is turned on by default when [web content filtering](#set-up-web-content-filtering) is set up.
 - **Controlled folder access**, which serves as part of your ransomware protection when you [set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
-- **Attack surface reduction rules**, which help protect against certain software-based behaviors when you [enable ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules). 
+- **ASR rules**, which help protect against certain software-based behaviors when you [enable your ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules). 
 
 For more information, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md).
 
