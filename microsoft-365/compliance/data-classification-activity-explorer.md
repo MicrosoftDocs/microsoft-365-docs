@@ -40,7 +40,6 @@ There are over 30 different filters available for use, some are:
 - DLP policy
 
 
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
