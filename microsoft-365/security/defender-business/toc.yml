@@ -51,7 +51,7 @@
         href: mdb-firewall.md
       - name: Web content filtering
         href: mdb-web-content-filtering.md
-      - name: Attach surface reduction
+      - name: Attack surface reduction
         href: mdb-asr.md
       - name: Portal and feature settings
         href: mdb-portal-advanced-feature-settings.md
