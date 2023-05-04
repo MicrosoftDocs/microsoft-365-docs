@@ -42,7 +42,19 @@
     - name: Step 5 - Onboard devices
       href: mdb-onboard-devices.md
     - name: Step 6 - Set up and review your security policies
-      href: mdb-configure-security-settings.md
+      items: 
+      - name: Step 6 - Set up and review your security policies
+        href: mdb-configure-security-settings.md
+      - name: Next-generation protection
+        href: mdb-next-generation-protection.md
+      - name: Firewall
+        href: mdb-firewall.md
+      - name: Web content filtering
+        href: mdb-web-content-filtering.md
+      - name: Attach surface reduction
+        href: mdb-asr.md
+      - name: Portal and feature settings
+        href: mdb-portal-advanced-feature-settings.md
   - name: Monitor or manage devices
     items: 
     - name: Get an overview of mobile threat defense
