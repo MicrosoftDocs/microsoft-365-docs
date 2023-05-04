@@ -71,7 +71,7 @@ There are roles and role groups that you can use to fine-tune your access contro
 
 ## Activity types
 
-Activity explorer gathers information from the audit logs of multiple sources of activities. 
+Activity explorer gathers information from the audit logs of multiple sources of activities.
 
 Some examples of the **Sensitivity label activities** and **Retention labeling activities** from applications native to Microsoft Office, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive include:
 
@@ -79,7 +79,6 @@ Some examples of the **Sensitivity label activities** and **Retention labeling a
 - Label changed (upgraded, downgraded, or removed)
 - Autolabeling simulation
 - File read
-
 
 Labeling activity particular to **Azure Information Protection (AIP) scanner and AIP clients** that comes into Activity explorer includes:
 
