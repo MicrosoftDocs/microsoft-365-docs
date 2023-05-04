@@ -59,7 +59,7 @@ Before you begin setting up your security policies, you'll need to choose which 
 
 1. [Review or edit your next-generation protection policies](mdb-next-generation-protection.md) to apply antivirus/antimalware protection, and enable network protection.
 2. [Review or edit your firewall policies](mdb-firewall.md).
-3. [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable enable web protection automatically.
+3. [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable web protection automatically.
 4. [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
 5. [Enable your attack surface reduction rules](mdb-asr.md).
 6. [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
