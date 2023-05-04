@@ -39,12 +39,6 @@ This article helps clarify what's included in the following plans:
 
 The following table summarizes at a high level what's included in Microsoft endpoint security plans.  
 
-> [!NOTE]
-> For more detailed information, see the following resources:
-> 
-> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-> - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
-
 | Plan | What's included |
 |:---|:---|
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)  | - [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) (includes antimalware and antivirus)<br/>- [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction)<br/>- [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions)<br/>- [Centralized management](defender-endpoint-plan-1.md#centralized-management)<br/>- [Security reports](defender-endpoint-plan-1.md#reporting)<br/>- [APIs](defender-endpoint-plan-1.md#apis)<br/>- [Support for Windows 10, Windows 11, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support)|
