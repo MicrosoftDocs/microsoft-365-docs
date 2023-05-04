@@ -10971,6 +10971,11 @@
     "redirect_document_id": true
   },
   {
+    "source_path": "microsoft-365/frontline/flw-onboarding-wizard.md",
+    "redirect_url": "/microsoft-365/frontline/flw-setup-microsoft-365",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-upgrade-windows-10-pro.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-upgrade-windows-pro",
     "redirect_document_id": true
