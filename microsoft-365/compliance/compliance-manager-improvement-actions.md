@@ -29,7 +29,7 @@ description: "Learn how to implement and test controls by working with improveme
 
 ## Overview
 
-Improvement actions help centralize your compliance activities. Each improvement action recommends an action to take, with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store notes, documentation, notes, and record status updates within the action. Many improvement actions can be set up for automatic testing and monitoring.
+Improvement actions help centralize your compliance activities. Each improvement action recommends an action to take, with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store notes, documentation, notes, and record status updates within the action. Many improvement actions come with automatic testing and monitoring.
 
 ## Automated testing and monitoring
 
@@ -87,23 +87,47 @@ To begin implementation work on an improvement action, you can do the work yours
 You can assign multiple improvement actions to one user by following these steps:
 
 1. Go to your Improvement actions page.
-2. Select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
+2. Select the area to the left of the improvement action's name. A round check icon appears, indicating you've selected that action. Check all the actions you want to assign.
 3. Select the **Assign to user** link at the top of the improvement actions table.
 4. A pop-up window appears. In the **Assign to** field, start typing the name of the person you want to assign the actions to. You can also select from the list of suggested people.
 5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
-6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
+6. You'll then see your **Improvement actions** page with the new assignee listed for the actions you assigned.
 
 ### Implementation work
 
-Implementation guidance will depend on whether the action is implemented and monitored through Microsoft Defender for Cloud, or whether the action is implemented in Microsoft 365 environment or in non-cloud environments. Learn more about [multicloud support](compliance-manager-multicloud.md).
+Implementation guidance will vary depending on whether you go to Microsoft Defender for Cloud to perform the work to complete the action. Learn more about [multicloud support](compliance-manager-multicloud.md).
 
-##### Defender for Cloud actions
+##### Actions for services supported by Defender for Cloud
 
-Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud. The action description on the **Implementation** tab will indicate that implementation occurs in Defender for Cloud, with a deep link to take you there to perform the work.
+Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud. The action description on the **Implementation** tab will indicate that implementation occurs through Defender for Cloud, with a link taking you there to perform the work.
 
-Below the implementation guidance is a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane. If the action has a manual testing source ([learn more](#testing-source)), you can input implementation status and dates and enter notes.
+These infrastructure cloud actions can be of two types:
 
-##### Non-Defender for Cloud actions
+- Technical actions, which are monitored and tested by Defender for Cloud automatically; and
+- Non-technical actions, which pertain to Defender for Cloud, but which require manual testing.
+
+The **Implementation** tab shows a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane.
+
+To begin implementation, first locate the action’s **Testing source** to determine if the action is automatic or manual. Then review the subscriptions listed for the action. Each subscription will have its own test status.
+
+**For manual actions**:
+
+- Review the **How to implement** guidance and perform the necessary steps. This may involve non-technical work that takes place offline.
+- Then attest to the completion of this work in Compliance Manager and/or Defender for Cloud by completing the implementation and testing status fields.
+    > [!NOTE]
+> Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, but it won’t synch.
+-  Each subscription will need to have its status updated. Each subscription will contain a single virtual resource, which represents the subscription itself.
+
+**For automatic actions**:
+
+- For each subscription listed on the **Implementation** tab, view the **Virtual resources completed** column.
+- If a subscription shows that there are virtual resources that are not complete, select the subscription and on the flyout pane, select the **Virtual resources** tab.
+- Inspect the status of each resource to determine which require ones require remediation.
+- For the resources needing remediation, review the **How to implement guidance** on the action’s **Implementation** tab. Then select the Defender for Cloud link to make the necessary changes in Defender for Cloud.
+
+Updates to the improvement action’s status will show within 24 hours.
+
+##### Actions not implemented through Defender for Cloud
 
 The implementation guidance on the **Implementation** tab provides instructions and a link into the related solution. You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
 
@@ -124,7 +148,9 @@ Common actions synchronize across groups. When two different assessments in the 
 
 From the **Testing** tab, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
-**Defender for Cloud actions**: The **Testing** tab on these actions displays a list of each subscription and its testing details. Select a subscription to view its testing details flyout pane, where you can view and edit test status, test date, and notes.
+##### Actions for Defender for Cloud-supported services
+
+The **Testing** tab on these actions displays a list of each subscription and its testing details. Select a subscription to view its testing details flyout pane. If the action is manually tested, you can edit test status, test date, and notes. You can’t edit test status and notes for automatically tested actions.
 
 #### Testing status fields
 
@@ -155,6 +181,9 @@ On an improvement action's details page, select the **Testing** tab. Under **Tes
 ## Testing source
 
 Compliance Manager provides options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**.
+
+> [!NOTE]
+> Testing source can’t be changed on actions for services supported by Defender for Cloud. If you don’t agree with an automated testing result, you can go to the related assessment in Defender for Cloud to alter the testing logic and scope.
 
 #### Manual
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
