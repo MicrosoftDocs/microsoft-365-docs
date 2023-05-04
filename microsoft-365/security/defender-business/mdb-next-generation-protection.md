@@ -111,7 +111,7 @@ The following table describes settings that are preconfigured for Defender for B
 
 ## Next steps
 
-- [Set up your firewall policies](mdb-firewall.md) and [custom rules for firewall policies](mdb-custom-rules-firewall.md).
+- [Set up your firewall policies](mdb-firewall.md) and [custom rules for firewall policies](mdb-firewall.md).
 - [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable enable web protection automatically.
 - [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
 - [Enable your attack surface reduction rules](mdb-asr.md).
