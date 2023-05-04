@@ -58,5 +58,6 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 ## Next steps
 
+- [Set up controlled folder access](mdb-controlled-folder-access.md)
 - [Enable your attack surface reduction rules](mdb-asr.md).
 - [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
