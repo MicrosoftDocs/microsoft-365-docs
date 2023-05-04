@@ -64,7 +64,6 @@ The Command Prompt window closes automatically. If successful, a new alert appea
 
 > [!NOTE]
 > You can also use the EICAR test string to perform this test. Create a text file, paste the EICAR line, and save the file as an executable file to your endpoint's local drive. You will receive a test endpoint notification and an alert in the Microsoft 365 Defender portal.
->
 
 ## Related topics
 
