@@ -67,7 +67,7 @@ Mobile threat defense capabilities are currently in preview for [Defender for Bu
 
 4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-firewall.md).
 
-5. Review, and if necessary, edit your [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) policy.
+5. Review, and if necessary, edit your [web content filtering](mdb-web-content-filtering.md) policy.
 
 6. To onboard mobile devices, see the "Use the Microsoft Defender app" procedures in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
