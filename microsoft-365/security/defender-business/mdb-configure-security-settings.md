@@ -50,9 +50,9 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 | **Microsoft Intune admin center** | The Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)) lets you manage your workforce's devices and apps, including how they access your company data. You can onboard devices and access your security policies and settings in Intune. You can also use Intune to set up and configure attack surface reduction rules in Defender for Business. Intune is not included in the standalone version of Defender for Business, but it can be added on. <br/><br/>If your company has been using Intune, you can choose to continue using it to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy)  |
 
 > [!IMPORTANT]
-> If you're managing your security policies in the Microsoft 365 Defender portal, you can *view* (but not edit) those policies in the Intune admin center, where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Intune admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
+> If you're managing your security policies in the Microsoft 365 Defender portal, you can view those policies in the Intune admin center, where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Intune admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
 > 
-> If you were using Intune and decide to switch to using the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict) later.
+> If you were using Intune and decide you want to switch to using the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict) later.
 
 ## View or edit your next-generation protection policies
 
