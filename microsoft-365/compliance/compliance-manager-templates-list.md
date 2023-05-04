@@ -32,7 +32,7 @@ description: "Find the list of regulatory templates provided in Microsoft Purvie
 
 ## Overview
 
-[Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of regulatory templates for creating assessments. These **regulations**, as they're referred to in Compliance Manager, can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. Regulations are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its regulations when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
+Compliance Manager provides a comprehensive set of regulatory templates for creating assessments. These **regulations**, as they're referred to in Compliance Manager, can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. Regulations are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its regulations when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 ## List of regulations and where to find them
 

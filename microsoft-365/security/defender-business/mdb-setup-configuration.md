@@ -111,6 +111,13 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 ## Next steps
 
+After reading this article, proceed to:
+
+1. [Get Microsoft Defender for Business](get-defender-business.md) and [Microsoft Defender for Business servers](get-defender-business-servers.md).
+2. [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
+
+After you have set up and configured Defender for Business, your next steps are to:
+
 - [Onboard more devices](mdb-onboard-devices.md)
 - [View and edit your security policies and settings](mdb-configure-security-settings.md)
 - [View your reports](mdb-reports.md)

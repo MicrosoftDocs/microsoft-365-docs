@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/3/2023
+ms.date: 5/4/2023
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -146,7 +146,7 @@ The relationship between spoof intelligence and whether sender DMARC policies ar
 |&nbsp;|Honor DMARC policy On|Honor DMARC policy Off|
 |---|---|---|
 |**Spoof intelligence On**|Separate actions for implicit and explicit email authentication failures: <ul><li>Implicit failures use the **If the message is detected as spoof by spoof intelligence** action the anti-phishing policy.</li><li>Explicit failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in the anti-phishing policy.</li></ul>|The **If the message is detected as spoof by spoof intelligence** action in the anti-phishing policy is used for both implicit and explicit email authentication failures. In other words, explicit email authentication failures ignore `p=quarantine` and `p=reject` in the DMARC policy.|
-|**Spoof intelligence Off**|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in anti-phishing policies.|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies are quarantined with `p=oreject` and `p=oquarantine`.|
+|**Spoof intelligence Off**|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in anti-phishing policies.|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` DMARC policies are quarantined, and failures for `p=reject` DMARC policies are rejected.|
 
 ### Unauthenticated sender indicators
 

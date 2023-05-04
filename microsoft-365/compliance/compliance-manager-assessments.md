@@ -218,7 +218,7 @@ Learn how to get a broad [view of all users with access to assessments](complian
 
 ## Accept updates to assessments
 
-When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time. Updates are available for assessments based on Microsoft templates, such as those designed for use with Microsoft 365. If your organization is using universal templates for assessing other products, inheritance may not be supported. For more information, see [Extend assessment templates](compliance-manager-templates-extend.md).
+When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time. Updates are available for assessments based on the regulatory templates provided in Compliance Manager. If your organization is using universal templates for assessing other products, inheritance may not be supported.
 
 ### What causes an update
 
