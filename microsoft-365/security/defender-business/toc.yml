@@ -51,6 +51,8 @@
         href: mdb-firewall.md
       - name: Web content filtering
         href: mdb-web-content-filtering.md
+      - name: Controlled folder access
+        href: mdb-controlled-folder-access.md
       - name: Attack surface reduction
         href: mdb-asr.md
       - name: Portal and feature settings
