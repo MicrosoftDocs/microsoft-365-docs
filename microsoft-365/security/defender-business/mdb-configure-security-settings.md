@@ -49,18 +49,6 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 
 
 
-## Enable standard attack surface reduction capabilities
-
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Defender for Business includes several attack surface reduction (ASR) capabilities to help protect your organization:
-
-- **Network protection**, which is turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md).
-- **Firewall protection**, which is turned on by default with [firewall policies](mdb-firewall.md).
-- **Web protection**, which is turned on by default when [web content filtering](#set-up-web-content-filtering) is set up.
-- **Controlled folder access**, which serves as part of your ransomware protection when you [set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
-- **ASR rules**, which help protect against certain software-based behaviors when you [enable your ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules). 
-
-For more information, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md).
-
 ## Review settings for advanced features
 
 In addition to next-generation protection, firewall, and web content-filtering policies, Defender for Business includes advanced security features. These features are preconfigured to recommended settings. You can review and edit the settings to suit your business needs.
