@@ -126,17 +126,18 @@ The lateral movement path report, which can be viewed by date, is always availab
 ## Timeline
 
 The timeline represents activities and alerts observed from a user's identity in the last 30 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
-- **Custom time range picker:** 
-You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**.
-![Choose time frame.](media/investigate-users/image.png)
 
-- **Timeline filters:**
-In order to improve your investigation experience, you can you the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
-- **Export button:**
-You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
-- **Customized columns:**
-You can choose which columns to expose in the timeline by selecting the **Customize columns** button.
-![User's image](image2.png)
+- **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. For example:
+
+  ![Choose time frame.](media/investigate-users/image.png)
+  
+- **Timeline filters:** In order to improve your investigation experience, you can you the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
+
+- **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
+
+- **Customized columns:** You can choose which columns to expose in the timeline by selecting the **Customize columns** button. For example:
+
+  ![User's image](image2.png)
 
 ### What data types are available?
 
@@ -161,7 +162,10 @@ The following information is displayed in the timeline:
 - Target device (customized column)
 - Number of times the activity happened (customized column)
 
+For example:
+
 :::image type="content" source="../../media/investigate-users/Fig5-user-incident-timeline.png" alt-text="The timeline view that shows activities on a user account for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig5-user-incident-timeline.png":::
+
 > [!NOTE]
 > Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
 > To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
