@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 05/04/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -27,9 +27,19 @@ You can use firewall protection to specify whether to allow or to block connecti
 
 **This article describes**:
 
+- [How to view or edit your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules)
 - [Default firewall settings in Defender for Business](#default-firewall-settings-in-defender-for-business)
 - [Firewall settings you can configure in Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
 
+
+## View or edit your firewall policies and custom rules
+
+Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your firewall protection, use one of the following procedures.
+
+| Portal | Procedure |
+|:---|:---|
+| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Firewall** to view your list of policies.<br/>5. Select a policy to view the details. <br/><br/>To make changes or to learn more about policy settings, see the following articles:<br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)  |
+| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<br/>2. Select **Endpoint security**.<br/>3. Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies. <br/><br/>For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).|
 
 ## Default firewall settings in Defender for Business
 
