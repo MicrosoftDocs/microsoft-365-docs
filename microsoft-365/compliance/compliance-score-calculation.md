@@ -62,7 +62,7 @@ Points are awarded per action per assessment. For example, if an action is worth
 
 An improvement action’s overall score is based on the average of scores received by its subscriptions. Each subscription is scored based on the status of the relevant virtual resources.
 
-For example, consider an action with two subscriptions, A and B. Subscription A has 0 out of 1 resources completed, and subscription B has 1 out of 2 resources completed. The subscription scores are: A is 0%, B is 50%. Those two scores are averaged to get the overall action score of 25%.
+For example, consider an action with two subscriptions, A and B. Subscription A has 0 out of 1 resources completed, and subscription B has 1 out of 2 resources completed. The subscription scores are: A is 0%, B is 50%. The two subscription scores are averaged to get the overall action score of 25%.
 
 ### Technical and non-technical actions
 
