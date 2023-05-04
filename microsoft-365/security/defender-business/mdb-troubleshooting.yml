@@ -75,7 +75,7 @@ sections:
 
           See the following articles to learn more about your security policies in Defender for Business:
 
-          - [Understand next-generation configuration settings in Defender for Business](mdb-next-gen-configuration-settings.md)
+          - [Understand next-generation configuration settings in Defender for Business](mdb-next-generation-protection.md)
           - [Firewall settings in Defender for Business](mdb-firewall.md)
 
       - question: There's an integration issue between Defender for Business and Microsoft Intune

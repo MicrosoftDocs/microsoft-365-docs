@@ -96,7 +96,6 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Frontline worker onboarding wizard](flw-onboarding-wizard.md) |Enterprise, F1, F3 |
 |[Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
 |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
 
