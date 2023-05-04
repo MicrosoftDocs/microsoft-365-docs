@@ -1,5 +1,5 @@
 ---
-title: View and edit your security settings in Microsoft Defender for Business
+title: Set up, review, and edit your security policies and settings in Microsoft Defender for Business
 description: View and edit security policies and settings in Defender for Business
 search.appverid: MET150
 author: denisebmsft
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/01/2023
+ms.date: 05/03/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -21,55 +21,38 @@ ms.collection:
  - tier1
 ---
 
-# View and edit security policies and settings in Microsoft Defender for Business
+# Set up, review, and edit your security policies and settings in Microsoft Defender for Business
 
-This article describes how to review, create, or edit your security policies.
+This article walks you through how to review, create, or edit your security policies, and how to navigate advanced settings in Defender for Business.
 
 :::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
-After you've onboarded your company's devices to Defender for Business, the next step is to review your security policies. 
-
-> [!TIP]
-> Defender for Business includes preconfigured security policies with recommended settings. You can edit these settings to suit your business needs.
-
-Security policies to review and configure include:
-
-- **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
-- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
-- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)** (rolling out now), which help protect your network and devices from cyberthreats and attacks
-- **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
-- **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
-
-In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
-
-In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and whether to receive preview features as they become available.
-
-Use this article as a guide to managing your security policies and settings.
+When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as next-generation protection and firewall policies, as well as creating or editing additional policies, such as for web content filtering and attack surface reduction capabilities. In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and whether to receive preview features as they become available.
 
 ## What to do
 
 1. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
 2. [Review your next-generation protection policies](#view-or-edit-your-next-generation-protection-policies).
 3. [Review your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
-4. [Enable standard attack surface reduction rules](#enable-standard-attack-surface-reduction-rules).
-5. [Set up web content filtering](#set-up-web-content-filtering).
+4. [Set up web content filtering](#set-up-web-content-filtering).
+5. [Enable standard attack surface reduction capabilities](#enable-standard-attack-surface-reduction-capabilities).
 6. [Review settings for advanced features](#review-settings-for-advanced-features).
 7. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 8. [Proceed to your next steps](#next-steps).
 
 ## Choose where to manage security policies and devices
 
-Defender for Business features a simplified configuration process) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using Intune.
-
-The following table can help you choose where to manage your security policies and devices.
+You can choose to use either the Microsoft 365 Defender portal or the Microsoft Intune admin center to onboard devices and create or edit security policies. The following table explains both options.
 
 | Option | Description |
 |:---|:---|
-| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <br/><br/>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Intune admin center. To learn more, see the following articles:<br/>- [How default settings in Defender for Business correspond to settings in Microsoft Intune](mdb-next-gen-configuration-settings.md#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)<br/>- [Firewall in Defender for Business](mdb-firewall.md)   |
-| **Use Intune** | If your company is already using Intune to manage security policies, you can continue using it to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-setup-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
+| **Microsoft 365 Defender portal** | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings in Defender for Business. With a simplified configuration process, you can use the Microsoft 365 Defender portal to onboard devices, access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) in one place. <br/><br/>Note that currently, controlled folder access and attack surface reduction rules are set up and configured in the Microsoft Intune admin center. |
+| **Microsoft Intune admin center** | The Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)) lets you manage your workforce's devices and apps, including how they access your company data. You can onboard devices and access your security policies and settings in Intune. You can also use Intune to set up and configure attack surface reduction rules in Defender for Business. Intune is not included in the standalone version of Defender for Business, but it can be added on. <br/><br/>If your company has been using Intune, you can choose to continue using it to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy)  |
 
-> [!IMPORTANT]
-> If you're managing security policies in the Microsoft 365 Defender portal, you can *view* those policies in the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
+> [!NOTE]
+> If you're managing your security policies in the Microsoft 365 Defender portal, you can view those policies in the Intune admin center, where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Intune admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
+> 
+> If you were using Intune and decide you want to switch to using the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict) later.
 
 ## View or edit your next-generation protection policies
 
@@ -89,29 +72,17 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Firewall** to view your list of policies.<br/>5. Select a policy to view the details. <br/><br/>To make changes or to learn more about policy settings, see the following articles:<br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)  |
 | Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<br/>2. Select **Endpoint security**.<br/>3. Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies. <br/><br/>For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).|
 
-## Enable standard attack surface reduction rules
-
-[Attack surface reduction capabilities](mdb-asr.md) in Defender for Business include:
-
-- Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
-- Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
-- Network protection (turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
-- Web protection (turned on by default with [web content filtering](#set-up-web-content-filtering)).
-- Firewall protection (turned on by default with [firewall policies](mdb-firewall.md)).
-
-There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
-
 ## Set up web content filtering
 
 Web content filtering enables your security team to track and regulate access to websites based on content categories, as described in the following table:
 
 | Category | Description |
 |:---|:---|
-| Adult content | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
-| High bandwidth | Download sites, image sharing sites, or peer-to-peer hosts |
-| Legal liability | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
-| Leisure | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
-| Uncategorized | Sites that have no content or that are newly registered |
+| **Adult content** | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
+| **High bandwidth** | Download sites, image sharing sites, or peer-to-peer hosts |
+| **Legal liability** | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
+| **Leisure** | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
+| **Uncategorized** | Sites that have no content or that are newly registered |
 
 Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
@@ -133,6 +104,18 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 > [!TIP]
 > To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md).
+
+## Enable standard attack surface reduction capabilities
+
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Defender for Business includes several attack surface reduction (ASR) capabilities to help protect your organization:
+
+- **Network protection**, which is turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md).
+- **Firewall protection**, which is turned on by default with [firewall policies](mdb-firewall.md).
+- **Web protection**, which is turned on by default when [web content filtering](#set-up-web-content-filtering) is set up.
+- **Controlled folder access**, which serves as part of your ransomware protection when you [set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
+- **ASR rules**, which help protect against certain software-based behaviors when you [enable your ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules). 
+
+For more information, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md).
 
 ## Review settings for advanced features
 
