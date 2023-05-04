@@ -142,8 +142,7 @@ For general configuration and setup, see the following articles:
 
 - **Review threat analytics**  
 
-Review threat analytics to identify any campaigns that are impacting your environment. See 
-[Track and respond to emerging threats through threat analytics.](threat-analytics.md)
+    Review threat analytics to identify any campaigns that are impacting your environment. See [Track and respond to emerging threats through threat analytics.](threat-analytics.md)
 
 ### Security administration team 
 
