@@ -252,7 +252,7 @@ The 100 GB is calculated based on the volume of forensic evidence ingested from 
 
 There are two payment plans available when purchasing the add-on through the Microsoft 365 admin center:
 
-- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. The license is still valid for one month from the date of purchase, and the unused capacity will be forfeited when the license expires. Customers can choose to be billed one time or split the bill into 12 monthly payments.
+- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. The license is still valid for one month from the date of purchase, and the unused capacity will be forfeited when the license expires. Customers can choose to be billed one time or split the bill into 12 monthly payments. 
 - **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. The license is valid for one month from the date of purchase and the unused capacity will be forfeited when the license expires.
 
 ### Can I try the forensic capability before purchasing it?

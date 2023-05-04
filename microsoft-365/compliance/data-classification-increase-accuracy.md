@@ -18,7 +18,7 @@ search.appverid:
 description: "Learn how to increase the accuracy of your classifiers"
 ---
 
-# Increase classifier accuracy (preview)
+# Increase classifier accuracy
 
 Classifiers, like [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md) are used in various kinds of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
 
@@ -56,7 +56,7 @@ The **Match**, **Not a match** experience is available in:
 
 For information on the relevant licensing and subscriptions see the [licensing requirements for Data classification analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-## Known limitations for this preview
+## Known limitations
 
 - The contextual summary only shows a limited number of matches in any given item, not all matches.
 - The contextual summary and feedback experience is only available for items created or updated after the feedback experience was enabled for the tenant. The contextual summary and feedback experience may not be available for items that were classified before the feature was enabled.
