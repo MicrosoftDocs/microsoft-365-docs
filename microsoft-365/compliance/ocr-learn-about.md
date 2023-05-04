@@ -63,9 +63,21 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 ### Phase 3: Configure your OCR settings
 
+#### Permissions ####
+
+The account you use to create and deploy policies must be a member of one of these role groups
+
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
+- Information Protection Admin
+
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
+
+> [!NOTE]
+> In general, OCR settings take effect about an hour after being turned on.
 
 > [!NOTE]
 > For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
