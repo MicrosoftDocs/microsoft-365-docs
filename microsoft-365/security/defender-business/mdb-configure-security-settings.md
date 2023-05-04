@@ -29,17 +29,6 @@ This article walks you through how to review, create, or edit your security poli
 
 When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as next-generation protection and firewall policies, as well as creating or editing additional policies, such as for web content filtering and attack surface reduction capabilities. In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and whether to receive preview features as they become available.
 
-## What to do
-
-1. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
-2. [Review your next-generation protection policies](#view-or-edit-your-next-generation-protection-policies).
-3. [Review your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
-4. [Set up web content filtering](#set-up-web-content-filtering).
-5. [Enable standard attack surface reduction capabilities](#enable-standard-attack-surface-reduction-capabilities).
-6. [Review settings for advanced features](#review-settings-for-advanced-features).
-7. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
-8. [Proceed to your next steps](#next-steps).
-
 ## Choose where to manage security policies and devices
 
 You can choose to use either the Microsoft 365 Defender portal or the Microsoft Intune admin center to onboard devices and create or edit security policies. The following table explains both options.
@@ -54,51 +43,11 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 > 
 > If you were using Intune and decide you want to switch to using the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict) later.
 
-## View or edit your next-generation protection policies
+## Next steps
+
+1. [Review or edit your next-generation protection policies in Microsoft Defender for Business](mdb-next-generation-protection.md).
 
 
-
-## View or edit your firewall policies and custom rules
-
-Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your firewall protection, use one of the following procedures.
-
-| Portal | Procedure |
-|:---|:---|
-| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Firewall** to view your list of policies.<br/>5. Select a policy to view the details. <br/><br/>To make changes or to learn more about policy settings, see the following articles:<br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)  |
-| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<br/>2. Select **Endpoint security**.<br/>3. Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies. <br/><br/>For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).|
-
-## Set up web content filtering
-
-Web content filtering enables your security team to track and regulate access to websites based on content categories, as described in the following table:
-
-| Category | Description |
-|:---|:---|
-| **Adult content** | Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence |
-| **High bandwidth** | Download sites, image sharing sites, or peer-to-peer hosts |
-| **Legal liability** | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
-| **Leisure** | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
-| **Uncategorized** | Sites that have no content or that are newly registered |
-
-Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
-
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information, see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
-
-### To set up web content filtering
-
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
-
-2. Specify a name and description for your policy.
-
-3. Select the categories to block. Use the expand icon to fully expand each parent category, and then select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
-
-   Don't select **Uncategorized**.
-
-4. Specify the policy scope by selecting device groups to apply the policy to. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
-
-5. Review the summary and save the policy. The policy refresh might take up to two hours to apply to your selected devices.
-
-> [!TIP]
-> To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md).
 
 ## Enable standard attack surface reduction capabilities
 

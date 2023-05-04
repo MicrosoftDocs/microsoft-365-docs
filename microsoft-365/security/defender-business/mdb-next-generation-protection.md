@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 05/04/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -56,3 +56,8 @@ You can choose from several options for managing your next-generation protection
 4. Select an individual policy to edit it. 
 
    For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+
+---
+
+## Next steps
+
