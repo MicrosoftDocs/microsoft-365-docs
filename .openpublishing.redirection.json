@@ -10984,6 +10984,11 @@
     "source_path": "microsoft-365/security/defender-business/mdb-next-gen-configuration-settings.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-next-generation-protection",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-custom-rules-firewall.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-firewall",
+    "redirect_document_id": true
   }
  ]
 }
