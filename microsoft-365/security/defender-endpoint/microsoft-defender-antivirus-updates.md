@@ -221,6 +221,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
+### 20230503.1
+
+- Defender package version: **20230503.1**
+- Security intelligence version: **1.389.44.0**
+- Engine version: **1.1.20300.3**
+- Platform version: **4.18.2304.8**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
+
 ### 20230330.2
 
 - Defender package version: **20230330.2**
