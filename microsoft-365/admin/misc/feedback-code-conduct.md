@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Feedback Code of Conduct"
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 09/16/2021
 audience: Admin
