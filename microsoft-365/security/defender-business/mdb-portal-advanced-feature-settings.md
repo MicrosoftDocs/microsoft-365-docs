@@ -21,9 +21,9 @@ ms.collection:
  - tier2
 ---
 
-## Review settings for advanced features
+# Review and edit settings in Microsoft Defender for Business
 
-You can view and edit settings, such as portal settings and advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Use this article to get an overview of the various settings that are available and how to edit your settings.
+You can view and edit settings, such as portal settings and advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Use this article to get an overview of the various settings that are available and how to edit your Defender for Business settings.
 
 ## View settings for advanced features
 
