@@ -27,11 +27,19 @@ This article walks you through how to review, create, or edit your security poli
 
 :::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
-When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as next-generation protection and firewall policies, as well as creating or editing additional policies, such as for web content filtering and attack surface reduction capabilities. In addition to your security policies, you can [view and edit settings for advanced features](mdb-portal-advanced-feature-settings.md), such as:
+When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as:
 
-- Turning on (or off) advanced features;
-- Specifying which time zone to use in the Microsoft 365 Defender portal; and 
-- Whether to receive preview features as they become available.
+- [Next-generation protection](mdb-next-generation-protection.md)
+- [Firewall protection](mdb-firewall.md)
+- [Web content filtering](mdb-web-content-filtering.md)
+- [Controlled folder access](mdb-controlled-folder-access.md)
+- [Attack surface reduction rules](mdb-asr.md)
+
+In addition to your security policies, you can view and edit settings for advanced features, such as:
+
+- [Turning on (or off) advanced features](mdb-portal-advanced-feature-settings.md#review-settings-for-advanced-features);
+- [Specifying which time zone to use in the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md#view-and-edit-other-settings-in-the-microsoft-365-defender-portal); and 
+- [Whether to receive preview features as they become available](mdb-preview.md#turn-on-preview-features).
 
 ## Choose where to manage security policies and devices
 
