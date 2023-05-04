@@ -83,8 +83,8 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, [run this script](#set-up-a-connection-and-create-new-teams-to-map).
-- To set up a connection and map to an existing team within Microsoft Teams, [run this script](#set-up-a-connection-and-map-to-existing-teams).
+- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, run the [new teams script](#set-up-a-connection-and-create-new-teams-to-map).
+- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-to-existing-teams).
 
 Follow the on-screen instructions when you run the script. The script will complete these actions:
 
