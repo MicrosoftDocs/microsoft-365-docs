@@ -129,7 +129,7 @@ The timeline represents activities and alerts observed from a user's identity in
 
 - **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. For example:
 
-  ![Choose time frame.](media/investigate-users/image.png)
+  ![Screenshot that shows hwo to choose time frame.](media/investigate-users/image.png)
   
 - **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
 
@@ -137,7 +137,7 @@ The timeline represents activities and alerts observed from a user's identity in
 
 - **Customized columns:** You can choose which columns to expose in the timeline by selecting the **Customize columns** button. For example:
 
-  ![User's image](image2.png)
+  ![Screenshot that shows the user's image.](image2.png)
 
 ### What data types are available?
 
