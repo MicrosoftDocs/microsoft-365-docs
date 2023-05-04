@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/03/2023
+ms.date: 05/04/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -56,12 +56,7 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 
 ## View or edit your next-generation protection policies
 
-Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your next-generation protection policies, use one of the following procedures:
 
-| Portal | Procedure |
-|:---|:---|
-| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Next-generation protection** to view your list of policies.<br/>5. Select a policy to view more details about the policy.<br/><br/> To make changes or to learn more about policy settings, see the following articles: <br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)  |
-| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<br/>2. Select **Endpoint security**.<br/>3. Select **Antivirus** to view your policies in that category. <br/><br/>For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
 ## View or edit your firewall policies and custom rules
 
