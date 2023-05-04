@@ -38,7 +38,7 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
 
-## Working with device polices in the Microsoft 365 Defender portal
+## Working with device policies in the Microsoft 365 Defender portal
 
 The following details apply to working with your policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
