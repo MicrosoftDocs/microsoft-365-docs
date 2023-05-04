@@ -11,7 +11,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.date: 10/07/2022
+ms.date: 05/04/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid: 
