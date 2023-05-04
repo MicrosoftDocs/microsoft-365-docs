@@ -38,7 +38,7 @@ The team will respond to you within a couple business days with some additional 
 
 ## Prerequisites and settings
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588)
+- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588)
 
 - **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on Source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
 
