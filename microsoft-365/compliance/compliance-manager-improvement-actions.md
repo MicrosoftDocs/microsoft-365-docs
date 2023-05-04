@@ -29,7 +29,7 @@ description: "Learn how to implement and test controls by working with improveme
 
 ## Overview
 
-Improvement actions help centralize your compliance activities. Each improvement action recommends an action to take, with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store notes, documentation, notes, and record status updates within the action. Many improvement actions come with automatic testing and monitoring.
+Improvement actions help centralize your compliance activities. Each improvement action recommends an action to take, with detailed guidance intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, add notes, and record status updates within the action. Many improvement actions come with automatic testing and monitoring.
 
 ## Automated testing and monitoring
 
@@ -104,7 +104,7 @@ Improvement actions that pertain to cloud services such as Microsoft Azure, Amaz
 These infrastructure cloud actions can be of two types:
 
 - Technical actions, which are monitored and tested by Defender for Cloud automatically; and
-- Non-technical actions, which pertain to Defender for Cloud, but which require manual testing.
+- Non-technical actions, which pertain to Defender for Cloud but require manual testing.
 
 The **Implementation** tab shows a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane.
 
@@ -115,7 +115,7 @@ To begin implementation, first locate the action’s **Testing source** to deter
 - Review the **How to implement** guidance and perform the necessary steps. This may involve non-technical work that takes place offline.
 - Then attest to the completion of this work in Compliance Manager and/or Defender for Cloud by completing the implementation and testing status fields.
     > [!NOTE]
-> Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, but it won’t synch.
+    > Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, but it won’t synch.
 -  Each subscription will need to have its status updated. Each subscription will contain a single virtual resource, which represents the subscription itself.
 
 **For automatic actions**:
