@@ -65,7 +65,7 @@ Mobile threat defense capabilities are currently in preview for [Defender for Bu
 
 3. Review, and if necessary, edit your [next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies).
 
-4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules).
+4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-firewall.md).
 
 5. Review, and if necessary, edit your [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) policy.
 
