@@ -155,7 +155,6 @@ For general configuration and setup, see the following articles:
     Review ASR reporting to identify any files that are impacting your environment. See [Attack surface reduction (ASR) rules report.](attack-surface-reduction-rules-report.md)
     
 - **Review web protection events** 
-- 
     Review web defense reporting to identify any IP / URLs that are being blocked. See [Web protection.](web-protection-overview.md)
 
 
