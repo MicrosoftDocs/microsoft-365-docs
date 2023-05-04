@@ -56,11 +56,13 @@ Compliance Manager tracks two types of actions:
 
 Both types of actions have points that count toward your overall score when completed. Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 
-### Scoring for actions related and unrelated to Microsoft Defender for Cloud
+Points are awarded per action per assessment. For example, if an action is worth 10 points but it appears in two assessments, the action is worth 20 points overall for your tenant.
 
-Improvement actions that aren't implemented in or monitored by Microsoft Defender for Cloud are scored as a single unit. For example, if the action is worth 30 points, you earn 30 points if the action passes or 0 points if it fails.
+### Scoring in actions for services supported by Microsoft Defender for Cloud
 
-If the improvement action is implemented in or monitored by Defender for Cloud, its score is multiplied by the number of assessments in which they appear. Within a single assessment, an action's score represents the total of each subscription within the service. For example, if an action's total score within an assessment is 30 points, and the assessment has three subscriptions within that service, then the points allowed for the action within each service is 10. When the action passes in each of the three subscriptions, the total number of 30 points is awarded for that action in that assessment.
+An improvement action’s overall score is based on the average of scores received by its subscriptions. Each subscription is scored based on the status of the relevant virtual resources. 
+
+For example, consider an action with two subscriptions, A and B. Subscription A has 0 out of 1 resources completed, and subscription B has 1 out of 2 resources completed. The subscription scores are: A is 0%, B is 50%. Those two scores are averaged to get the overall action score of 25%.
 
 ### Technical and non-technical actions
 
