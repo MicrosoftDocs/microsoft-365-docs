@@ -111,7 +111,7 @@ Defender for Business includes pre-configured security policies that use recomme
 
 Security policies to review and configure include:
 
-- [Next-generation protection policies](mdb-next-generation.md) which determine antivirus and antimalware protection for your company's devices
+- [Next-generation protection policies](mdb-next-generation-protection.md) which determine antivirus and antimalware protection for your company's devices
 - [Firewall protection and rules](mdb-firewall.md) which determine what network traffic is allowed to flow to and from your company's devices
 - [Web content filtering](mdb-web-content-filtering.md) which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
 - [Advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
