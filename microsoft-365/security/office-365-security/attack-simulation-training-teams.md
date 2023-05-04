@@ -43,11 +43,11 @@ To configure the accounts, do the following steps:
 
 1. Identify or create a user who's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator), or [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator) roles in Azure Active Directory. You need to know the password.
 2. Using the account from Step 1, open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
-3. On the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section.
-4. In the **Teams simulation configuration** flyout that opens, click **Generate token**. Read the information in the confirmation dialog, and then click **I agree**.
-5. Back on the **Settings** tab, click **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
+3. On the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section.
+4. In the **Teams simulation configuration** flyout that opens, select **Generate token**. Read the information in the confirmation dialog, and then select **I agree**.
+5. Back on the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
 
-To remove a user from the list, click the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** icon that appears, and then click **Delete** in the confirmation dialog.
+To remove a user from the list, select the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Delete** in the confirmation dialog.
 
 Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here](/microsoft-365/admin/add-users/remove-former-employee-step-1).
 
@@ -57,11 +57,11 @@ Teams introduces the following changes to viewing and creating simulations as de
 
 - On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, the **Platform** column shows the value **Teams** for simulations that use Teams messages.
 
-- If you select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation** on the **Simulations** tab to create a simulation, the first page of the new simulation wizard is **Select delivery platform** where you can select **Microsoft Teams**. Selecting **Microsoft Teams** introduces the following changes to the rest of the new simulation wizard:
+- If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Launch a simulation** on the **Simulations** tab to create a simulation, the first page of the new simulation wizard is **Select delivery platform** where you can select **Microsoft Teams**. Selecting **Microsoft Teams** introduces the following changes to the rest of the new simulation wizard:
 
   - On the **[Select technique](attack-simulation-training-simulations.md#select-a-social-engineering-technique)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available.
 
-  - On the **[Name simulation](attack-simulation-training-simulations.md#name-and-describe-the-simulation)** page, a **Select sender's Microsoft Teams account** section and **Select user account** link are present. Click **Select user account** to find and select the account to use as the source for the Teams message.
+  - On the **[Name simulation](attack-simulation-training-simulations.md#name-and-describe-the-simulation)** page, a **Select sender's Microsoft Teams account** section and **Select user account** link are present. Select **Select user account** to find and select the account to use as the source for the Teams message.
 
   - On the **[Select payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page)**, no payloads are listed by default because there are no built-in payloads for Teams. You need to create a payload for the combination of Teams and the social engineering technique that you selected.
 
@@ -79,11 +79,11 @@ Whether you create a payload on the **Payloads** page of the **Content library**
 
 - On the **Global payloads** and **Tenant payloads** tabs on **Payloads** page of the **Content library** tab at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>, the **Platform** column shows the value **Teams** for payloads that use Teams messages.
 
-  If you click ![Filter payload icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the list of existing payloads, a **Platform** section is available where you can select **Email** and **Teams**.
+  If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the list of existing payloads, a **Platform** section is available where you can select **Email** and **Teams**.
 
   As previously described, there are no built-in payloads for Teams, so if you filter by **Status** \> **Teams** on the **Global payloads** tab, the list will be empty.
 
-- If you click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** on the **Tenant payload** tab to create a payload, the first page of the new payload wizard is **Select type** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new payload wizard:
+- If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create a payload** on the **Tenant payload** tab to create a payload, the first page of the new payload wizard is **Select type** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new payload wizard:
 
   - On the **[Select technique](attack-simulation-training-payloads.md#create-payloads)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available for Teams.
   
@@ -103,10 +103,10 @@ Teams introduces the following changes to viewing and creating simulation automa
   - **Type**: Currently, this value is always **Social engineering**.
   - **Platform**: Shows the value **Teams** for payload automations that use Teams messages or **Email** for payload automations that use email messages.
 
-- If you click ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation** on the **Simulation automations** page to create a simulation automation, the first page of the new simulation automation wizard is **Select delivery platform** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new simulation automation wizard:
+- If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create automation** on the **Simulation automations** page to create a simulation automation, the first page of the new simulation automation wizard is **Select delivery platform** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new simulation automation wizard:
 
   - On the [Automation name](attack-simulation-training-simulation-automations.md#name-and-describe-the-simulation-automation) page, the following settings are available for Teams in the **Select method for choosing sender accounts** section:
-    - **Manually select**: This value is selected by default. In the **Select sender's Microsoft Teams account** section, click the **Select user account** to find and select the account to use as the source for the Teams message.
+    - **Manually select**: This value is selected by default. In the **Select sender's Microsoft Teams account** section, select the **Select user account** to find and select the account to use as the source for the Teams message.
     - **Randomize**: Randomly select from the available accounts to use as the source for the Teams message.
 
   - On the **[Select social engineering techniques](attack-simulation-training-simulation-automations.md#select-one-or-more-social-engineering-techniques)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available for Teams.

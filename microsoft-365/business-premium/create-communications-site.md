@@ -73,4 +73,4 @@ If you don't see the **+ Create** site link, self-service site creation might no
 
 ## Next mission
 
-Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!
+Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-managed-devices.md) for the entire org!

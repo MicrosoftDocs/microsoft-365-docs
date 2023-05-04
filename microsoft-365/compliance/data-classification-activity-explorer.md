@@ -70,9 +70,6 @@ There are roles and role groups that you can use to fine-tune your access contro
 | Information Protection Reader | Information Protection Analysts | Compliance Data Admins |  |
 |                   | Information Protection Readers   |   |            |
 
-> [!NOTE]
-> Roles other than the Global Admin and Compliance Admin roles can view activities only, not the sensitive content itself.
-
 ## Activity types
 
 Activity explorer gathers information from the audit logs of multiple sources of activities. 
