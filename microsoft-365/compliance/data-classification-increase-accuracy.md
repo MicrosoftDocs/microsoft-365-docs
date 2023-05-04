@@ -26,11 +26,11 @@ This article shows you how to confirm whether items matched by a classifier are 
 
 The **Match**, **Not a match** experience is available in:
 
-- Content Explorer - for SharePoint Online sites, OneDrive for Business sites
-- Sensitive Information Type Matched Items page - for SharePoint Online sites, OneDrive for Business sites
-- Trainable Classifier Matched Items page - for SharePoint Online sites, OneDrive for Business sites
-- Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
-- Microsoft Threat Protection (MTP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
+- Content Explorer - for SharePoint sites, OneDrive sites
+- Sensitive Information Type Matched Items page - for SharePoint sites, OneDrive sites
+- Trainable Classifier Matched Items page - for SharePoint sites, OneDrive sites
+- Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint sites, OneDrive, and emails in Exchange
+- Microsoft Threat Protection (MTP) Alerts page - for SharePoint sites, OneDrive sites, and emails in Exchange
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

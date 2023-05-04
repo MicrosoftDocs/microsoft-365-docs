@@ -73,7 +73,7 @@ There are roles and role groups that you can use to fine-tune your access contro
 
 Activity explorer gathers information from the audit logs of multiple sources of activities.
 
-Some examples of the **Sensitivity label activities** and **Retention labeling activities** from applications native to Microsoft Office, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive include:
+Some examples of the **Sensitivity label activities** and **Retention labeling activities** from applications native to Microsoft Office, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint, Exchange  (sensitivity labels only), and OneDrive include:
 
 - Label applied
 - Label changed (upgraded, downgraded, or removed)
@@ -89,7 +89,7 @@ Labeling activity particular to **Azure Information Protection (AIP) scanner and
 
 For more detailed information on what labeling activity makes it into Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel, on-premises SharePoint folders and libraries, on-premises file shares, and Windows 10 devices. Some example events gathered from Windows 10 devices include the following actions taken on files:
+In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer gathers **DLP policy matches** events from Exchange, SharePoint, OneDrive, Teams Chat and Channel, on-premises SharePoint folders and libraries, on-premises file shares, and Windows 10 devices. Some example events gathered from Windows 10 devices include the following actions taken on files:
 
 - Deletion
 - Creation
@@ -104,7 +104,7 @@ In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer ga
 Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected—such as a large number of items that are labeled `highly confidential` and are downgraded to `general`—you can manage your policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
-> Activity explorer doesn't currently monitor retention activities for Exchange Online.
+> Activity explorer doesn't currently monitor retention activities for Exchange.
 
 ## See also
 
