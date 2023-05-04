@@ -27,7 +27,7 @@ To help protect your network and devices, Microsoft Defender for Business includ
 > [!NOTE]
 > Intune is not included in the standalone version of Defender for Business, but it can be added on.
 
-## Enable your standard protection ASR rules
+## Standard protection ASR rules
 
 There are lots of ASR rules available. You don't have to set them all up at once. And, you can set some rules up in audit mode just to see how they'll work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
 
