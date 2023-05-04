@@ -340,7 +340,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left wildcard (subdomain)
 
 > [!TIP]
-> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `*.contoso.com`
 
@@ -372,7 +372,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left tilde
 
 > [!TIP]
-> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `~contoso.com`
 
@@ -404,7 +404,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
 > [!TIP]
-> Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `*.contoso.com/*`
 
@@ -420,7 +420,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left and right tilde
 
 > [!TIP]
->  Allow entries of this pattern will be supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+>  Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
 
 **Entry**: `~contoso.com~`
 

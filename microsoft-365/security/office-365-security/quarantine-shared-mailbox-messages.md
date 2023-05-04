@@ -16,7 +16,7 @@ ms.collection:
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/3/2023
+ms.date: 4/25/2023
 ---
 
 # View and release quarantined messages from shared mailboxes
@@ -52,6 +52,8 @@ Now, automapping is no longer required for users to manage quarantined messages 
 - Currently, the **Block sender** button is not available in the **Details** flyout for quarantined messages that were sent to the shared mailbox.
 
 - Regarding quarantine operations for shared mailboxes, if you use nested security groups to grant access to a shared mailbox, we recommend no more than two levels of nested groups. For example, Group A is a member of Group B, which is a member of Group C. To assign permissions to a shared mailbox, don't add the user to Group A and then assign Group C to the shared mailbox.
+
+- Access to quarantined items for shared mailboxes in on-premises environments is currently not supported (directly or by using security groups).
 
 - As of July 2022, users with primary SMTP addresses that are different from their user principal names (UPNs) should be able to access quarantined messages for the shared mailbox.
 

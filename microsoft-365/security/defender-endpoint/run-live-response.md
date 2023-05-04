@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/18/2023
 ---
 
 # Run live response commands on a device
@@ -67,9 +67,9 @@ Runs a sequence of live response commands on a device
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows**.
+- **Verify that you're running a supported Windows, macOS, or Linux version**.
 
-  Devices must be running one of the following versions of Windows
+  Devices must be running one of the following:
 
   - **Windows 11**
   
@@ -85,6 +85,12 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
+  - **macOS** [(requires additional configuration profiles)](microsoft-defender-endpoint-mac.md)
+      - 13 (Ventura)
+      - 12 (Monterey)
+      - 11 (Big Sur)
+  - **Linux**
+      - [Supported Linux server distributions and kernel versions](microsoft-defender-endpoint-linux.md)
 
 ## Permissions
 

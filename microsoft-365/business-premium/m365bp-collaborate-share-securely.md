@@ -38,4 +38,4 @@ Your objectives are to:
 - [Share files and videos](share-files-and-videos.md).
 - [Create a communication site](create-communications-site.md).
 
-Once you've achieved these objectives, proceed to [Set up and secure managed devices](m365bp-protect-devices.md).
+Once you've achieved these objectives, proceed to [Set up and secure managed devices](m365bp-protect-managed-devices.md).

@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.date: 04/18/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -34,9 +34,6 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 - **Phishing**. A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
 - **Spoofing**. Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 - **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
-
-> [!TIP]
-> To learn more security concepts, see our [Glossary of terms](m365bp-glossary.yml).
 
 ## Best practices
 
@@ -82,4 +79,4 @@ Learn more about how to:
   
 ## Next objective
 
-Once you've completed this mission objective, learn about how to [send encrypted email](send-encrypted-email.md). 
+Once you've completed this mission objective, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 

@@ -141,6 +141,53 @@ To prevent the question mark or via tag from being added to messages from specif
 
 For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
+## DMARC Reject (OReject) for phishing emails
+
+**IN PREVIEW.** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
+
+DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
+
+To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
+
+### DMARC policies
+
+**HonorDmarcPolicy**:  
+**Type**: Boolean
+**Values**: False (default), true
+
+When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
+
+**DmarcRejectAction**
+**Type**: Enum
+**Values**: Quarantine (default), Reject
+
+When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
+
+**DmarcQuarantineAction**
+**Type**: Enum
+**Values**: Quarantine (default), MoveToJmf
+
+When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
+
+In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicrosoft.com* we use this Powershell syntax:
+
+```PowerShell
+Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
+```
+
+| Honour DMARC | Spoof Intelligence |
+| ------------- | ------------------ |
+| ON            | ON                |
+| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
+| OFF           | ON                |
+| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
+| ON            | OFF               |
+| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
+| OFF           | OFF               |
+| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
+
+:::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
+
 ## First contact safety tip
 
 The **Show first contact safety tip** settings is available in EOP and Defender for Office 365 organizations and has no dependency on spoof intelligence or impersonation protection settings. The safety tip is shown to recipients in the following scenarios:
@@ -211,7 +258,7 @@ When you add internal or external email addresses to the **Users to protect** li
 For detected user impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default action.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
   - [Quarantine in Microsoft 365](quarantine-email-messages.md)
@@ -237,7 +284,7 @@ By default, no sender domains are configured for impersonation protection, eithe
 For detected domain impersonation attempts, the following actions are available:
 
 - **Don't apply any action**: This is the default value.
-- **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
+- **Redirect the message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
@@ -267,8 +314,8 @@ Mailbox intelligence has two specific settings:
 For impersonation attempts detected by mailbox intelligence, the following actions are available:
 
 - **Don't apply any action**: This is the default value. This action has the same result as when **Enable mailbox intelligence** is turned on but **Enable intelligence impersonation protection** is turned off.
-- **Redirect message to other email addresses**
-- **Move message to the recipients' Junk Email folders**
+- **Redirect the message to other email addresses**
+- **Move the message to the recipients' Junk Email folders**
 - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 - **Deliver the message and add other addresses to the Bcc line**
 - **Delete the message before it's delivered**
@@ -282,7 +329,10 @@ Impersonation safety tips appear to users when messages are identified as impers
 - **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
 
 > [!NOTE]
-> Safety tips are not stamped in S/MIME signed messages.
+> Safety tips are not stamped in the following messages:
+>
+> - S/MIME signed messages.
+> - Messages that are allowed by your organizational settings.
 
 #### Trusted senders and domains
 
