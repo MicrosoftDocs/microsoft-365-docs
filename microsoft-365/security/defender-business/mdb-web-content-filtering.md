@@ -21,9 +21,9 @@ audience: Admin
 
 # Web content filtering in Microsoft Defender for Business
 
-## Set up web content filtering
-
 Web content filtering enables your security team to track and regulate access to websites based on content categories. When you set up your web content filtering policy, you enable web protection for your organization. 
+
+## Set up web content filtering
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
 
