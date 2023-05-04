@@ -58,5 +58,5 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 ## Next steps
 
-- [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md)
-
+- [Enable your attack surface reduction rules](mdb-asr.md).
+- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).

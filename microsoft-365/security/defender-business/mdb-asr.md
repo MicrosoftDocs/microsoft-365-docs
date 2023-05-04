@@ -88,7 +88,7 @@ To learn more about ASR rules, see the following articles:
 
 ## Attack surface reduction capabilities in Defender for Business
 
-ASR rules are part of your attack surface reduction capabilities that are available in Defender for Business. Notice how other capabilities, such as next-generation protection and web content filtering, work together with attack surface reduction capabilities.
+ASR rules are part of your attack surface reduction capabilities that are available in Defender for Business. The following table summarizes attack surface reduction capabilities in Defender for Business. Notice how other capabilities, such as next-generation protection and web content filtering, work together with your attack surface reduction capabilities.
 
 | Capability | How to set it up |
 |:---|:---|
@@ -98,9 +98,10 @@ ASR rules are part of your attack surface reduction capabilities that are availa
 | **Web protection** <br/>Web protection integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports. | [Set up Web content filtering in Microsoft Defender for Business](mdb-web-content-filtering.md).  |
 | **Firewall protection** <br/>Firewall protection determines what network traffic is permitted to flow to or from your organization's devices. | Firewall protection is already enabled by default when devices are onboarded to Defender for Business and [firewall policies in Defender for Business](mdb-firewall.md) are applied. |
 
-
 ## Next steps
 
+- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 - [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
+

@@ -85,12 +85,6 @@
       href: mdb-view-edit-create-policies.md
     - name: Understand policy order
       href: mdb-policy-order.md
-    - name: Set up your attack surface reduction capabilities
-      href: mdb-asr.md
-    - name: Firewall settings
-      href: mdb-firewall.md
-    - name: Manage rules for firewall policies
-      href: mdb-custom-rules-firewall.md
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data
