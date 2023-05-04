@@ -45,13 +45,10 @@ You can choose to use either the Microsoft 365 Defender portal or the Microsoft 
 
 ## Next steps
 
-1. [Review or edit your next-generation protection policies in Microsoft Defender for Business](mdb-next-generation-protection.md).
+1. [Review or edit your next-generation protection policies](mdb-next-generation-protection.md) to apply antivirus/antimalware protection, and enable network protection.
+2. [Review or edit your firewall policies](mdb-firewall.md).
+3. [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable enable web protection automatically.
+4. [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
+5. [Enable your attack surface reduction rules](mdb-asr.md).
+6. [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
 
-
-
-## Next steps
-
-- [Get started using Defender for Business](mdb-get-started.md)
-- [Manage devices in Defender for Business](mdb-manage-devices.md)
-- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
-- [View or edit policies in Defender for Business](mdb-view-edit-policies.md)
