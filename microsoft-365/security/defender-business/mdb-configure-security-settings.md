@@ -35,7 +35,7 @@ When you're setting up (or maintaining) Defender for Business, an important part
 
 ## Choose where to manage security policies and devices
 
-You can choose to use either the Microsoft 365 Defender portal or the Microsoft Intune admin center to onboard devices and create or edit security policies. The following table explains both options.
+Before you begin setting up your security policies, you'll need to choose which portal you want to use. You can choose to use either the Microsoft 365 Defender portal or the Microsoft Intune admin center to onboard devices and create or edit security policies. The following table explains both options.
 
 | Option | Description |
 |:---|:---|
