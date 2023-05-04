@@ -68,6 +68,6 @@ The following table describes the three roles that can be assigned in Defender f
    - To add a role, choose **+ Add assignments**.
    - To remove a role, choose **X Remove assignments**. 
 
-## Next steps
+## Next step
 
-- [Step 4: Set up email notifications](mdb-email-notifications.md) for your security team.
+- Proceed to [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).
