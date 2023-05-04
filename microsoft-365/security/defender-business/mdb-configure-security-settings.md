@@ -107,15 +107,19 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 ## Enable standard attack surface reduction capabilities
 
-[Attack surface reduction capabilities](mdb-asr.md) in Defender for Business include:
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Defender for Business includes several [capabilities](mdb-asr.md) to help reduce your attack surfaces:
 
+- **Network protection**, which is turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md).
+- **Firewall protection**, which is turned on by default with [firewall policies](mdb-firewall.md).
+- **Web protection**, which is turned on by default when [web content filtering](#set-up-web-content-filtering) is set up.
+- **Controlled folder access**, which serves as part of your ransomware protection when you [set it up controlled folder access](mdb-asr.md#set-up-controlled-folder-access).
 - Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
-- Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
-- Network protection (turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
-- Web protection (turned on by default with [web content filtering](#set-up-web-content-filtering)).
-- Firewall protection (turned on by default with [firewall policies](mdb-firewall.md)).
+
+
 
 There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
+
+
 
 
 ## Review settings for advanced features
