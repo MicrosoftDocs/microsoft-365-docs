@@ -101,7 +101,7 @@ To grant accessibility access to DLP, upload the `accessibility.mobileconfig` fi
 
 1. Open **System Preferences** > **Profiles**.
 
-1. The following profiles are now listed::
+1. The following profiles are now listed:
     - Accessibility
     - Full Disk Access
     - Kernel Extension Profile
