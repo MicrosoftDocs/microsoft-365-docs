@@ -68,6 +68,7 @@ The following table describes the three roles that can be assigned in Defender f
    - To add a role, choose **+ Add assignments**.
    - To remove a role, choose **X Remove assignments**. 
 
-## Next step
+## Next steps
 
 - Proceed to [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).
+- [Step 5: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
