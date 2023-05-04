@@ -115,7 +115,7 @@ To begin implementation, first locate the action’s **Testing source** to deter
 - Review the **How to implement** guidance and perform the necessary steps. This may involve non-technical work that takes place offline.
 - Then attest to the completion of this work in Compliance Manager and/or Defender for Cloud by completing the implementation and testing status fields.
     > [!NOTE]
-    > Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, but it won’t synch.
+    > Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, however the statuses won't synch.
 -  Each subscription will need to have its status updated. Each subscription will contain a single virtual resource, which represents the subscription itself.
 
 **For automatic actions**:
