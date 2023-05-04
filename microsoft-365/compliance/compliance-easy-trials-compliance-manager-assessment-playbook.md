@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 12/06/2021
+ms.date: 5/01/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -36,7 +36,7 @@ Using Microsoft recommendations, you'll quickly see how the premium assessment t
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:
 
 1. [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
-1. [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+1. [Overview of key elements: controls, assessments, regulation, and improvement actions](compliance-manager.md#key-elements-controls-assessments-regulations-improvement-actions)
 1. [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 1. [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
@@ -56,7 +56,7 @@ Start working with assessments and taking improvement actions to implement contr
 
 Compliance Manager provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. See a list of templates included with your subscription [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-assessments-are-included-by-default-free-of-cost).
 
-Compliance Manager also offers 300+ regulatory or premium templates that can be purchased as an add-on. See the list [here](compliance-manager-templates-list.md#premium-templates). With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service. You can try out these premium assessment templates during the premium assessment trial.
+Compliance Manager also offers 300+ regulatory or premium templates that can be purchased as an add-on. See the list [here](compliance-manager-templates-list.md#premium-regulations). With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service. You can try out these premium assessment templates during the premium assessment trial.
 
 ## Step 4: Enable the premium assessment trial
 
