@@ -112,4 +112,7 @@ The following table describes settings that are preconfigured for Defender for B
 ## Next steps
 
 1. [Set up your firewall policies](mdb-firewall.md) and [custom rules for firewall policies](mdb-custom-rules-firewall.md).
-2. 
+2. [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable enable web protection automatically.
+3. [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
+4. [Enable your attack surface reduction rules](mdb-asr.md).
+5. [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
