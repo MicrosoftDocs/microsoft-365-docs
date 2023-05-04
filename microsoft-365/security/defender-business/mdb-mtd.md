@@ -63,7 +63,7 @@ Mobile threat defense capabilities are currently in preview for [Defender for Bu
    - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. 
    - If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
 
-3. Review, and if necessary, edit your [next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies).
+3. Review, and if necessary, edit your [next-generation protection policies](mdb-next-generation-protection.md).
 
 4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-firewall.md).
 
