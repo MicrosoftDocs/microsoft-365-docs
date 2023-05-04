@@ -43,7 +43,7 @@
       href: mdb-onboard-devices.md
     - name: Step 6 - Set up and review your security policies
       items: 
-      - name: Step 6 - Set up and review your security policies
+      - name: Security policies and settings
         href: mdb-configure-security-settings.md
       - name: Next-generation protection
         href: mdb-next-generation-protection.md
