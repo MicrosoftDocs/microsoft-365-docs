@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 11/16/2021
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 You may also want to jump right to key sections of our documentation using the links below:
 
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
-- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions): controls, assessments, templates, and improvement actions
+- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-regulations-improvement-actions): controls, assessments, regulations, and improvement actions
 - [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
