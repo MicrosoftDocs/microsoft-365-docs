@@ -67,20 +67,25 @@ In addition to next-generation protection and firewall policies, there are three
 
 ## View your existing policies
 
-You can view your existing policies in either the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if Intune is included in your subscription).
+You can view your existing policies in either Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
 
 ## [**Microsoft 365 Defender portal**](#tab/M365D)
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
-2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
+2. In the navigation pane, choose **Configuration management** > **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
-3. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories. 
+3. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under each category (such as **Next-generation protection** and **Firewall**). 
 
 4. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
 
 ## [**Intune admin center**](#tab/intune)
 
+1. Go to the Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com)) and sign in.
+
+2. In the navigation pane, select **Endpoint security**, and then choose a category, such as **Antivirus**, **Firewall**. or **Attack surface reduction**. 
+
+3. Any existing policies are listed for the category you selected. To view more details about a policy, select its name.
 
 ---
 
