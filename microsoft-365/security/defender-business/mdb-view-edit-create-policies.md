@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 05/05/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,7 +22,10 @@ ms.collection:
 
 # View or edit policies in Microsoft Defender for Business
 
-In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes several preconfigured policies to help protect your company's devices as soon as they are onboarded. There are other types of policies you can create as well.
+
+This article describes how to view, edit, and create security policies in Defender for Business.
+
 
 **This article describes how to**:
 
@@ -36,10 +39,14 @@ In Defender for Business, security settings are configured through policies that
 
 ## Default policies in Defender for Business
 
-In Defender for Business, there are two main types of policies to protect your company's devices:
+In Defender for Business, there are two main types of default policies that are designed to protect your company's devices as soon as they're onboarded:
 
-- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
-- **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
+- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured; and 
+- **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices.
+
+[Next-generation protection](mdb-next-generation-protection.md) includes robust antivirus and antimalware protection for computers and mobile devices. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. To learn more about next-generation protection policies, including your settings and options, see [Review or edit your next-generation protection policies in Microsoft Defender for Business](mdb-next-generation-protection.md).
+
+[Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
 
 ## View your existing policies
 
