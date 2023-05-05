@@ -88,8 +88,10 @@ Now you're ready to build an assessment with a connector so that it tracks progr
 1. From the **Assessments** page in Compliance Manager, select **Add assessment**.
 
 1. From here, begin following the general [assessment creations instructions](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process).
+    > [!TIP]
+    > When selecting a regulation for the assessment, the **Supported services** column shows which services are supported by the regulation template. If the service related to your connector isn't listed, the connector won't show up as an option in step 3, below.
 
-1. When you arrive at the **Select servcies** page and choose **Select services**, you should see the name of the product related to your activated connector; for example, Salesforce. <MAKE SURE THE REGULATION SUPPORTS THE SERVICE  Select the checkbox next to the service name, then select **Add**. Then select **Next**.
+1. When you arrive at the **Select servcies** page and choose **Select services**, you should see the name of the product related to your activated connector; for example, Salesforce. 
 
 1. At the **Service instances** page, you'll choose one or more connectors you've activated for the service. On the row listing your service, select **Manage service instances**.
 
