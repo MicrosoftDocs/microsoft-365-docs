@@ -176,21 +176,21 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 2. Select **Download template** to get the CSV mapping file. The template will include a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
 
-|UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
-|------|------|------|------|------|
-|Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
 
 And the bottom rows of your template will look like this:
 
-|UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
-|------|------|------|------|------|
-|Blank |Blank |Automatically pre-filled |Automatically pre-filled |Default*|
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Blank |Blank |Automatically pre-filled |Automatically pre-filled |Default*|
 
 3. Choose a team that you want to map to a UKG Dimensions instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the desired UKG Dimensions instance. A completed row of your template should look like this:
 
-|UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
-|------|------|------|------|------|
-|Automatically pre-filled |Automatically pre-filled |Team ID that you moved |Team Name that you moved |Default*|
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Automatically pre-filled |Automatically pre-filled |Team ID that you moved |Team Name that you moved |Default*|
 
 Repeat this for all your desired mappings.
 
