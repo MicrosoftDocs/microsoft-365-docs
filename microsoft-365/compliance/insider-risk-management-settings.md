@@ -50,7 +50,7 @@ Before you get started and create insider risk management policies, it's importa
 
 Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with an insider risk policy match, you can choose one of the following settings:
 
-- **Show anonymized versions of usernames**: Names of users are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details won't be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, usernames will be displayed for all users that have current or past policy matches.
+- **Show anonymized versions of usernames**: Names of users are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details won't be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, usernames are displayed for all users that have current or past policy matches.
 
     > [!IMPORTANT]
     > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts when using the exporting API or when exporting to [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery). Exported alerts will display usernames for each alert in this case. If you're exporting to .csv files from alerts or cases, anonymization *is* preserved. 
@@ -66,7 +66,7 @@ Insider risk policy templates define the type of risk activities that you want t
 Signals are collected and alerts are triggered by policies when users perform activities related to indicators. Insider risk management uses different types of events and indicators to collect signals and create alerts:
 
 - **Triggering events**: Events that determine if a user is active in an insider risk management policy. If a user is added to an insider risk management policy doesn't have a triggering event, the user isn't evaluated by the policy as a potential risk. For example, User A is added to a policy created from the *Data theft by departing users* policy template and the policy and Microsoft 365 HR connector are properly configured. Until User A has a termination date reported by the HR connector, User A isn't evaluated by this insider risk management policy for potential risk. Another example of a triggering event is if a user has a *High* severity DLP policy alert when using *Data leaks* policies.
-- **Global settings indicators**: Indicators enabled in global settings for insider risk management define both the indicators available for configuration in policies and the types of events signals collected by insider risk management. For example, if a user copies data to personal cloud storage services or portable storage devices and these indicators are selected only in global settings, the user's potentially risky activity will be available for review in the Activity explorer. However, if this user wasn't defined in an insider risk management policy, the user isn't evaluated by the policy as a potential risk and therefore won't be assigned a risk score or generate an alert.
+- **Global settings indicators**: Indicators enabled in global settings for insider risk management define both the indicators available for configuration in policies and the types of events signals collected by insider risk management. For example, if a user copies data to personal cloud storage services or portable storage devices and these indicators are selected only in global settings, the user's potentially risky activity is available for review in the Activity explorer. However, if this user wasn't defined in an insider risk management policy, the user isn't evaluated by the policy as a potential risk and therefore won't be assigned a risk score or generate an alert.
 - **Policy indicators**: Indicators included in insider risk management policies are used to determine a risk score for an in-scope user. Policy indicators are enabled from indicators defined in global settings and are only activated after a triggering event occurs for a user.  Some examples of policy indicators are when a user copies data to personal cloud storage services or portable storage devices, if a user account is removed from Azure Active Directory, or if a user shares internal files and folders with unauthorized external parties.
 
 Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow you more flexibility and customization for your policies and when users are in-scope for a policy. Also, you can define risk management activity thresholds for these triggering indicators for more fine-grained control in a policy.
@@ -80,7 +80,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Physical access indicators**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
 - **Microsoft Defender for Cloud Apps indicators**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risky browsing indicators (preview)**: These include policy indicators for user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident. Risky browsing activity refers to users who visit potentially risky websites, such as those associated with malware, pornography, violence, and other unallowed activities. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn about configuring browser exfiltration signals, see [Insider risk management browser signal detection](insider-risk-management-browser-support.md).
-- **Cumulative exfiltration detection (preview)**: Detects when a user's exfiltration activities across all exfiltration channels over the last 30 days exceeds organization or peer group norms. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their external email activity will likely be much higher than the organization's average. However, the user's activity may not be unusual compared to the user's teammates, or others with similar job titles. A risk score is assigned if the user's cumulative exfiltration activity is unusual and exceeds organization or peer group norms.  
+- **Cumulative exfiltration detection (preview)**: Detects when a user's exfiltration activities across all exfiltration channels over the last 30 days exceeds organization or peer group norms. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their external email activity will likely be higher than the organization's average. However, the user's activity may not be unusual compared to the user's teammates, or others with similar job titles. A risk score is assigned if the user's cumulative exfiltration activity is unusual and exceeds organization or peer group norms.  
    > [!NOTE]
    > Peer groups are defined based on organization hierarchy, access to shared SharePoint resources, and job titles in Azure AD. If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data with the compliance portal, including organization hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection may be less accurate. 
 - **Risk score boosters**: These include raising the risk score for activity for the following reasons:
@@ -132,7 +132,7 @@ In this deployment scenario, you'll enable devices that haven't been onboarded y
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+3. Choose **Device management** to open the **Devices** list. The list is empty until you onboard devices.
 4. Choose **Onboarding** to begin the onboarding process.
 5. Choose the way you want to deploy to these more devices from the **Deployment method** list and then **download package**.
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
@@ -150,7 +150,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 #### Step 3: If you have devices onboarded into Microsoft Defender for Endpoint
 <a name="OnboardStep3"> </a>
 
-If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
+If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Open the compliance portal settings page and choose **Enable device monitoring**.
@@ -198,7 +198,7 @@ Policy timeframes allow you to define past and future review periods that are tr
 - **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. For activities in the audit log, the window activates for 0 to 90 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event. 
 
    > [!NOTE]
-   > For email activities, the past activity detection period is 10 days. 
+   > For email activities, the past activity detection period is 10 days.
 
 ![Insider risk management timeframe settings.](../media/insider-risk-settings-timeframes.png)
 
@@ -208,12 +208,12 @@ Intelligent detection settings help refine how the detections of risky activitie
 
 ### Ignore email signature attachments (preview)
 
-One of the main sources of "noise" in insider risk management policies is images in email signatures, which are often detected as attachments in emails. This can lead to false positives of users sending potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude email signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting. 
+One of the main sources of 'noise' in insider risk management policies is images in email signatures, which are often detected as attachments in emails. This can lead to false positives of users sending potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude email signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting.
 
-Turning this setting on will significantly eliminate noise from email signature attachments, but it won't completely eliminate noise. This is because only the email signature attachment of *the email sender* (the person who initiates the email or replies to the email) is excluded from scoring. A signature attachment for anyone on the To, CC, or BCC line will still be scored. Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time. 
+Turning on this setting significantly eliminates noise from email signature attachments, but won't completely eliminate all noise. This is because only the email signature attachment of *the email sender* (the person who initiates the email or replies to the email) is excluded from scoring. A signature attachment for anyone on the To, CC, or BCC line will still be scored. Also, if someone changes their email signature, the new signature has to be profiled, which can cause alert noise for a short period of time.
 
 > [!NOTE]
-> The **Ignore email signature attachments** setting is off by default. 
+> The **Ignore email signature attachments** setting is off by default.
 
 ### File activity detection
 
@@ -253,7 +253,7 @@ Use Add domain to define a domain for each of the domain settings. Additionally,
 
 For each of the following domain settings, you can enter up to 500 domains:
 
-- **Unallowed domains:** By specifying unallowed domains, risk management activity that takes place with these domains will have *higher* risk scores. Some examples are activities involving sharing content with someone (such as sending email to someone with a gmail.com address) and when users download content to a device from one of these unallowed domains.
+- **Unallowed domains:** By specifying unallowed domains, risk management activity that takes place with these domains have *higher* risk scores. Some examples are activities involving sharing content with someone (such as sending email to someone with a gmail.com address) and when users download content to a device from one of these unallowed domains.
 - **Allowed domains:** Certain risk management activity related to allowed domains will be ignored by your policies and won't generate alerts. These activities include:
 
     - Email sent to external domains
@@ -297,7 +297,7 @@ The wildcards in these paths denote that all folder levels between the \Users an
 
 ### Sensitive info type exclusions (preview)
 
-[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they'll be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types are treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they'll be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
 
@@ -409,7 +409,7 @@ The following fields and values are exported for insider risk management alerts 
 The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
 - UserId
-- Id
+- ID
 - RecordType
 - CreationTime
 - Operation
@@ -425,7 +425,7 @@ Users in your organization may have different levels of risk depending on their 
 
 Instead of being open to review by all analysts and investigators, priority users groups may also need to restrict review activities to specific users or insider risk role groups. You can choose to assign individual users and role groups to review users, alerts, cases, and reports for each priority user group. Priority user groups can have review permissions assigned to the built-in *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups, one or more of these role groups, or to a custom selection of users.
 
-For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Also, this priority user group shouldn't have users, alerts, cases, and reports associated with group visible to all the default insider risk management admins, analysts, and investigators. In **Settings**, you create the *Confidential Project Users* priority users group and assign two users as reviewer that can view data related to the groups. Use the policy wizard and the *Data leaks by priority users* policy template to create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
+For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Also, this priority user group shouldn't have users, alerts, cases, and reports associated with group visible to all the default insider risk management admins, analysts, and investigators. In **Settings**, you create the *Confidential Project Users* priority users group and assign two users as reviewer that can view data related to the groups. Use the policy wizard and the *Data leaks by priority users* policy template to create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users are more likely to generate an alert and have alerts with higher severity levels.
 
 ### Create a priority user group
 
@@ -553,7 +553,7 @@ Complete the following steps to create a Power Automate flow from a recommended 
 4. By default, the recommended flows are pre-configured with the recommended insider risk management and Microsoft 365 service data fields required to complete the assigned task for the flow. If needed, customize the flow components by using the **Show advanced options** control and configuring the available properties for the flow component.
 5. If needed, add any other steps to the flow by selecting the **New step** button. In most cases, this shouldn't be needed for the recommended default templates.
 6. Select **Save draft** to save the flow for further configuration or select **Save** to complete the configuration for the flow.
-7. Select **Close** to return to the **Power Automate flow** page. The new template will be listed as a flow on the **My flows** tabs and is automatically available from the **Automate** dropdown control when working with insider risk management cases for the user creating the flow.
+7. Select **Close** to return to the **Power Automate flow** page. The new template is listed as a flow on the **My flows** tabs and is automatically available from the **Automate** dropdown control when working with insider risk management cases for the user creating the flow.
 
 > [!IMPORTANT]
 > If other users in your organization need access to the flow, the flow must be shared.
