@@ -34,6 +34,8 @@
       href: m365-lighthouse-review-deployment-plan.md
     - name: Understand deployment statuses
       href: m365-lighthouse-understand-deployment-statuses.md
+    - name: Understanding deployment insights
+      href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
     - name: Deploy a task manually
@@ -44,6 +46,8 @@
       href: m365-lighthouse-dismiss-task.md
     - name: Reinstate a task
       href: m365-lighthouse-reinstate-task.md
+    - name: Manage tenants using deployment insights
+      href: m365-lighthouse-manage-tenants-using-deployment-insights.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
