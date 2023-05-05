@@ -25,7 +25,7 @@ ms.collection:
 
 Defender for Business includes [predefined policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business) to help ensure the devices your employees use are protected. Your security team can add new policies as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as next-generation protection policies or firewall policies.
 
-As more policies are added, you'll notice that an order of priority is assigned, as shown in the following screenshot. 
+As more policies are added, notice that an order of priority is assigned, as shown in the following screenshot: 
 
 :::image type="content" source="media/mdb-deviceconfig-multpolicies.png" alt-text="Screenshot showing multiple policies and policy order column.":::
 
@@ -33,7 +33,7 @@ Predefined policies move down in the order of priority when new policies are add
 
 For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
-**The important thing to remember about multiple policies is that devices will receive the first applied policy only.** Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but won't receive policies numbered 2 and 3. 
+**The important thing to remember about multiple policies is that devices will receive the first applied policy only.** Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices receive policy number 1, but won't receive policies numbered 2 and 3. 
 
 ## Key points to remember about policy order
 
