@@ -80,8 +80,8 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection while creating a new team within Microsoft Teams and mapping a Blue Yonder team to the new team, run the [new teams script](#set-up-a-connection-and-create-new-teams-to-map).
-- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-to-existing-teams).
+- To set up a connection while creating a new team within Microsoft Teams and mapping a Blue Yonder team to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
+- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
 
 Follow the on-screen instructions when you run the script. The script will complete these actions:
 
@@ -115,7 +115,7 @@ You can use PowerShell to view an error report, change connection settings, disa
 
 ## Scripts
 
-### To set up a connection, create a new team within Microsoft Teams, and map a Blue Yonder team to the new team
+### Set up a connection and create a new team
 
 ```powershell
 #Map WFM instances to teams script
@@ -355,7 +355,7 @@ Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
 
-### To set up a connection and map an existing team within Microsoft Teams
+### Set up a connection and map an existing team
 
 ```powershell
 #Map WFM sites to existing teams script

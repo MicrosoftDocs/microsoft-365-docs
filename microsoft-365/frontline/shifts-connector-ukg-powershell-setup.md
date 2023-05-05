@@ -83,12 +83,11 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, run the [new teams script](#set-up-a-connection-and-create-new-teams-to-map).
-- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-to-existing-teams).
+- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
+- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
 
 Follow the on-screen instructions when you run the script. The script will complete these actions:
 
-<<<<<<< HEAD
 1. Test and verify the connection to UKG Dimensions using the UKG Dimensions service account credentials and service URLs that you enter.
 1. Apply sync settings. These settings include the sync frequency (in minutes) and the schedule data synced between UKG Dimensions and Shifts. You can enable schedule data defined by these scenarios:  `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
 
@@ -119,7 +118,7 @@ You can use PowerShell to view an error report, change connection settings, disa
 
 ## Scripts
 
-### To set up a connection, create a new team within Microsoft Teams, and map a UKG team to the new team
+### Set up a connection and create a new team
 
 ```powershell
 #Map WFM instances to teams script
@@ -362,7 +361,7 @@ Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
 
-### To set up a connection and map an existing team within Microsoft Teams
+### Set up a connection and map an existing team
 
 ```powershell
 #Map WFM instances to existing teams script
