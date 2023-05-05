@@ -43,7 +43,7 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 ## Connector setup steps
 
 1. [Configure settings in your service so that it can integrate with the connector.](#step-1-configure-service-settings-to-enable-the-connector)
-1. [Activate the connector in Compliance Manager](#step-2-activate-the-connector-in-compliance-manager)
+1. [Activate the connector in Compliance Manager.](#step-2-activate-the-connector-in-compliance-manager)
 1. [Select the connector when building an assessment.](#step-3-add-a-connector-to-assessments)
 
 ## Step 1. Configure service settings to enable the connector
@@ -95,11 +95,11 @@ Now you're ready to build an assessment with a connector so that it tracks progr
 
 1. At the **Service instances** page, you'll choose one or more connectors you've activated for the service. On the row listing your service, select **Manage service instances**.
 
-1. A flyout pane opens which lists all the service instances for your connector. Each instance represents an individual connector activated for a service by your organization. All service instances are checked by default. If you want the assesment to cover all instances, meaninging the assessment will use all the conectors you've activated for that service, leave them all checked and select **Cancel**. Or, uncheck any instances that you don't want to cover in the assessment and select **Update**.
+1. A flyout pane lists all the service instances for your connector. Each instance represents a connector for a service activated by your organization. All service instances are checked by default. If you want the assesment to cover all instances, meaninging the assessment will use all the conectors you've activated for that service, leave them all checked and select **Cancel**. Or, uncheck any instances that you don't want to cover in the assessment and select **Update**.
 
 1. Back at the **Service instances** page, select **Next**.
 
-1. On the **Review and finish** page, confirm all your selections are correct, then select **Create assessment**. 
+1. On the **Review and finish** page, confirm all your selections are correct, then select **Create assessment**.
 
 The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page.
 
