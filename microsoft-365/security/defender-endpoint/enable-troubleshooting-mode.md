@@ -39,8 +39,6 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
   - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).
   - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
-- If a tampering event occurs (for example, the `MpPreference` snapshot is altered or deleted), troubleshooting mode will end and tamper protection will be enabled on the device.
-
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
   - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
