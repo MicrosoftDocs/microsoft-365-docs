@@ -171,28 +171,38 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 
 1. On the **Mapping** page, choose **CSV upload tool**.
 
-2. Select **Download template** to get the CSV mapping file. The template will include a list of all your Blue Yonder WFM Dimensions instances and their IDs. The template contains these columns, in the following order:
+2. Select **Download template** to get the CSV mapping file. The template will include a list of all your Blue Yonder WFM instances and their IDs. The top rows of your template will look like this:
 
-  |Column name |Description |
-  |------------|------------|
-  |Blue Yonder WFM Dimensions Instance ID* |The Blue Yonder WFM Dimensions WFM instance ID |
-  |Blue Yonder WFM Dimensions Instance Name* |The Blue Yonder WFM Dimensions WFM instance name |
-  |Team ID* |The team ID |
-  |Team Name |The team name |
-  |Time zone* |The time zone in tz database format. For example: Europe/London |
+|Blue Yonder WFM Instance ID |Blue Yonder WFM Instance Name |Team ID |Team Name |Time Zone |
+|------|------|------|------|------|
+|Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
 
-  *Required
+And the bottom rows of your template will look like this:
+
+|Blue Yonder WFM Instance ID |Blue Yonder WFM Instance Name |Team ID |Team Name |Time Zone |
+|------|------|------|------|------|
+|Blank |Blank |Automatically pre-filled |Automatically pre-filled |Default*|
+
+3. Choose a team that you want to map to a Blue Yonder WFM instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the desired Blue Yonder WFM instance. A completed row of your template should look like this:
+
+|Blue Yonder WFM Instance ID |Blue Yonder WFM Instance Name |Team ID |Team Name |Time Zone |
+|------|------|------|------|------|
+|Automatically pre-filled |Automatically pre-filled |Team ID that you moved |Team Name that you moved |Default*|
+
+Repeat this for all your desired mappings.
+
+4. Enter the correct location in the Time Zone column if needed.
 
 >[!NOTE]
 >The wizard supports approximately 460 locations. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
 
-3. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+5. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
 
-4. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
+6. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
 
-5. Your new mappings will appear on the **Mappings** page.
+7. Your new mappings will appear on the **Mappings** page.
 
-6. Choose **Next**.
+8. Choose **Next**.
 
 ### Review and finish
 
