@@ -21,15 +21,17 @@ ms.collection:
 
 # Understand policy order in Microsoft Defender for Business
 
-Defender for Business includes [predefined policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business) to help ensure the devices your employees use are protected. Your security team can [add new policies](mdb-view-edit-create-policies.md#create-a-new-policy) as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as next-generation protection policies or firewall policies. As policies are added, policy order comes into play.
+Defender for Business includes [predefined policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business) to help ensure the devices your employees use are protected. Your security team can [add new policies](mdb-view-edit-create-policies.md#create-a-new-policy) as well. 
+
+For example, suppose that your security team wants to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as additional next-generation protection policies or firewall policies. As policies are added, policy order comes into play.
 
 ## Policy order in Defender for Business
 
-As more policies are added, an order of priority is assigned. The following screenshot shows an **Order** column, which shows the order of priority for policies.  
+When policies are added, an order of priority is assigned to all of the policies in the group, as shown in the following screenshot:  
 
 :::image type="content" source="media/mdb-deviceconfig-multpolicies.png" alt-text="Screenshot showing multiple policies and policy order column." lightbox="media/mdb-deviceconfig-multpolicies.png":::
 
-Predefined policies move down in the order of priority when new policies are added. You can edit the order of priority for the policies that you define (select a policy, and then choose **Change order**). You can't change the order of priority for default policies. 
+The **Order** column lists the priority for each policy. Predefined policies move down in the order of priority when new policies are added. You can edit the order of priority for the policies that you define (select a policy, and then choose **Change order**). You can't change the order of priority for default policies. 
 
 For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
