@@ -22,7 +22,7 @@ ms.collection:
 
 # View or edit policies in Microsoft Defender for Business
 
-In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes several preconfigured policies to help protect your company's devices as soon as they are onboarded. There are other types of policies you can create as well.
+In Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes several preconfigured policies to help protect your company's devices as soon as they are onboarded. There are other types of policies you can create as well (see [Set up, review, and edit your security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)).
 
 This article describes how to view, edit, and create security policies in Defender for Business.
 
