@@ -86,7 +86,7 @@ Whether you create a payload on the **Payloads** page of the **Content library**
 - If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create a payload** on the **Tenant payload** tab to create a payload, the first page of the new payload wizard is **Select type** where you can select **Teams**. Selecting **Teams** introduces the following changes to the rest of the new payload wizard:
 
   - On the **[Select technique](attack-simulation-training-payloads.md#create-payloads)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available for Teams.
-  
+
   - The **Configure payload** page has the following changes for Teams:
     - **Sender details** section: The only available setting for Teams is **Chat topic** where you enter a tile for the Teams message.
     - The last section isn't named **Email message**, but it functions the same way for Teams messages as it does for email messages:
