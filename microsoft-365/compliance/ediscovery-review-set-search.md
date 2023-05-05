@@ -27,6 +27,9 @@ In most cases, it will be useful to dig deeper into the content in a review set 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+MENTION UNDO FUNCTIONALITY
+
+
 ## Default filters
 
 In a review set, there are five default filters that are pre-loaded in the review set:
@@ -91,26 +94,18 @@ To delete a filter query, open the filter panel and select the trashcan icon nex
 
 ## Query language
 
+ONLY FOR KQL AND KEYWORDS FILTERS
+
 In addition to using filters, you can also use a KQL-like query language in the Keywords filter to build your review set search query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
 
 > [!NOTE]
 > Review filters only support wildcards (? or *) on a single term. Using wildcards in searches on phrases that consist of multiple terms aren't supported.
 
-## Advanced query builder
+SCENARIO - TAGGING (IS EMPTY)
 
-You can also build more advanced queries to search for documents in a review set.
+SCENARIO - NATIVE FILE TYPES
 
-1. Open the filter panel, select **Filters**, and expand the **Search** section.
-
-  ![Add a KQL filter.](../media/AddKQLFilter.png)
-
-2. Select the **KQL** filter and select **Open query builder**.
-
-   In this panel, you can create complex KQL queries by using the query builder. You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.
-
-   ![Use query builder to configure complex filter queries.](../media/ediscovery-open-query-builder.png)
-
-## Filter partially indexed items
+## SCENARIO  Filter partially indexed items
 
 If you selected the option to add partially indexed items from additional data sources when you committed the collection estimate to a review set. You'll probably want to identify and view those items to determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed.
 
