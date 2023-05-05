@@ -23,8 +23,6 @@ description: "Set up data connectors to build assessments for non-Microsoft serv
 
 # Working with data connectors in Compliance Manager
 
-**In this article:** Learn how to...
-
 Compliance Manager has an integrated set of data connectors for build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. After setting up the connector, you can select the connector when you create your assessment.
 
 Value prop....You can understand your compliance obligations across all the products that you use in your organization. Compliance Manager data connectos allw you to get signals from SaaS products you might typically use, and integrate them into your assessments for automatic monitoring and testing of controls.
@@ -52,10 +50,10 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 
 Before activating a connector in Compliance Manager, you'll need to prepare by getting the Oath token.....  Make sure you have the account email and password for the account you want the connector to receive signals from. If you have multiple accounts with the same product, you will need to set up individal connectors for each account. Connector setup is tied to a specific email address and password.
 
-Follow the specific instructions for each connector's product below:
+Follow the specific instructions for each connector below:
 
-- Salesforce setup
-- Zoom setup
+- [Salesforce setup](compliance-manager-connectors-salesforce.md)
+- [Zoom setup](compliance-manager-connectors-zoom.md)
 
 ## Step 2. Activate the connector in Compliance Manager
 
