@@ -176,6 +176,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 2. Select **Download template** to get the CSV mapping file. The template will include a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
 
+
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
    |Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
