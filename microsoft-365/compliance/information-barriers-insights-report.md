@@ -79,9 +79,9 @@ To create the insights report, complete the following steps:
     - *In Progress*: State when the insights report build is in progress.
     - *Error*: State when the insights report build has failed.
 
-## View the results of the insights report
+View the results of the insights report
 
-### View a summary of modes with results for SharePoint sites
+## View a summary of modes with results for SharePoint sites
 
 To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax:
 
@@ -93,13 +93,13 @@ To view a summary of the modes with results for SharePoint sites, use the follow
 
 In this example, the insights report results are displayed for SharePoint sites included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any SharePoint sites in the organization with that mode.
 
-### View a summary of modes with results for OneDrive accounts
+## View a summary of modes with results for OneDrive accounts
 
 
-### View the details for a specific mode for SharePoint sites
+## View the details for a specific mode for SharePoint sites
 
 
-### View the details for a specific mode for OneDrive accounts
+## View the details for a specific mode for OneDrive accounts
 
 
 ## Download the results of the insights report
