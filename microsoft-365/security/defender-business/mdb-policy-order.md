@@ -44,10 +44,8 @@ For example, suppose that for your Windows client devices, you have three next-g
 - Default policies are given the lowest order of priority as new policies are added.
 - Devices receive the first applied policy only, even if those devices are included in multiple policies.
 
-## Next steps
+## See also
 
-- [Get started using Defender for Business](mdb-get-started.md)
-- [Manage devices](mdb-manage-devices.md)
-- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
-- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+- [Set up, review, and edit your security policies and settings](mdb-configure-security-settings.md)
+- [View or edit policies](mdb-view-edit-create-policies.md)
+- [Onboard devices](mdb-onboard-devices.md)
