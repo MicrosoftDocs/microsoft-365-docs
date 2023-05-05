@@ -28,9 +28,9 @@ This article describes how to view, edit, and create security policies in Defend
 
 **This article includes**:
 
-- [Default policies in Defender for Business](#default-policies-in-defender-for-business) (Next-generation protection and firewall)
-- [Policies to set up in Defender for Business](#policies-to-set-up-in-defender-for-business) (Web content filtering, controlled folder access, and attack surface reduction rules)
-- [How to view your existing policies](#view-your-existing-policies)
+- [A list of default policies that are included in Defender for Business](#default-policies-in-defender-for-business) (Next-generation protection and firewall)
+- [Additional policies that can be set up in Defender for Business](#policies-to-set-up-in-defender-for-business) (Web content filtering, controlled folder access, and attack surface reduction rules)
+- [How to view existing policies](#view-your-existing-policies)
 - [How to edit an existing policy](#edit-an-existing-policy)
 - [How to create a new policy](#create-a-new-policy)
 
