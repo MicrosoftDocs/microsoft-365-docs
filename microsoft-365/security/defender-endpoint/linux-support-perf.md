@@ -191,6 +191,14 @@ In certain server workloads, two issues might be observed:
 
 These issues may occur on servers with many events flooding AuditD.
 
+> [!NOTE]
+> As a best practice, we recommend to configure AuditD logs to rotate when the maximum file size limit is reached.
+>
+> This will prevent AuditD logs accumulating in a single file and the rotated log files can be moved out to save disk space.
+>
+> To achieve this, you can set the value for **max_log_file_action** to **rotate** in the [auditd.conf](https://linux.die.net/man/8/auditd.conf) file.
+
+ 
 This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events.
 
 To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server.

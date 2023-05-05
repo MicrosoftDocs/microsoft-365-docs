@@ -33,6 +33,63 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+
+## May-2023 Build: 101.98.64 | Release version: 30.123032.19864.0
+
+&ensp;Released: **May 3,2023**<br/>
+&ensp;Published: **May 3, 2023**<br/>
+&ensp;Build: **101.98.64**<br/>
+&ensp;Release version: **30.123032.19864.0**<br/>
+&ensp;Engine version: **1.1.20100.6**<br/>
+&ensp;Signature version: **1.385.68.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Health message improvements to capture details about auditd failures.
+	- Improvements to handle augenrules which was causing installation failure.
+	- Periodic memory cleanup in engine process.
+	- Fix for memory issue in mdatp audisp plugin.
+	- Handled missing plugin directory path during installation.
+	- When conflicting application is using blocking fanotify, with default configuration mdatp health will show unhealthy. This is now fixed.
+	- Support for ICMP traffic inspection in BM.
+	- Engine Update to 1.1.20100.6 and Signatures Ver: 1.385.68.0.
+	- Bug fixes.
+
+**Known issues**
+
+- While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
+Caution: Some customers (<1%) experience issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+<details>
 	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
