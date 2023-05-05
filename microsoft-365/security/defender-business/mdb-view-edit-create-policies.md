@@ -56,7 +56,7 @@ In addition to next-generation protection and firewall policies, there are three
 - **Controlled folder access**, which is an important part of ransomware protection (Intune is required to set up and manage)
 - **Attack surface reduction rules**, which help reduce device vulnerability (Intune is required to set up and manage)
 
-Web content filtering, which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. To learn more about web content filtering, see [Web content filtering](mdb-web-content-filtering.md).
+[Web content filtering](mdb-web-content-filtering.md), which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. To learn more about web content filtering, see [Web content filtering](mdb-web-content-filtering.md).
 
 
 
