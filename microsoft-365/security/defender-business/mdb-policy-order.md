@@ -21,9 +21,9 @@ ms.collection:
 
 # Understand policy order in Microsoft Defender for Business
 
-## Policy order in Defender for Business
+Defender for Business includes [predefined policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business) to help ensure the devices your employees use are protected. Your security team can [add new policies](mdb-view-edit-create-policies.md#create-a-new-policy) as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as next-generation protection policies or firewall policies. As policies are added, policy order comes into play.
 
-Defender for Business includes [predefined policies](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business) to help ensure the devices your employees use are protected. Your security team can [add new policies](mdb-view-edit-create-policies.md#create-a-new-policy) as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies, such as next-generation protection policies or firewall policies.
+## Policy order in Defender for Business
 
 As more policies are added, notice that an order of priority is assigned, as shown in the following screenshot: 
 
