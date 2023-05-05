@@ -200,12 +200,7 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 ---
 
-## Next steps
+## See also
 
-Choose one or more of the following tasks:
-
-- [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
-- [Manage devices](mdb-manage-devices.md)
-- [View and manage incidents](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats](mdb-respond-mitigate-threats.md)
-- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+- [Understand policy order](mdb-policy-order.md)
+- [Set up your security policies and settings](mdb-configure-security-settings.md)
