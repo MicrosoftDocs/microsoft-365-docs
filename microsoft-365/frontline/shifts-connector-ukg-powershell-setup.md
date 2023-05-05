@@ -97,8 +97,8 @@ Follow the on-screen instructions when you run the script. The script will compl
 > The script you select will enable sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
 1. Map UKG Dimensions instances to your teams within Microsoft Teams.
-    - If you select the first script above to create new teams, mappings are based on the new teams you create.
-    - If you select the second script above to map existing teams, mappings are based on UKG Dimensions instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
+    - If you select the new teams script to create new teams, mappings are based on the new teams you create.
+    - If you select the existing teams script above to map existing teams, mappings are based on UKG Dimensions instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
 
 After you run the script, a **Success** message confirms if your connection is successfully set up.
 
