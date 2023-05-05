@@ -56,10 +56,10 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
 ## Assign eDiscovery permissions
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using an account that can assign permissions.
-2. In the left pane, select **Permissions**.
-3. On the **Permissions & Roles** page, under **Microsoft Purview solutions**, select **Roles**.
+2. In the left pane, select **Roles & Scopes**.
+3. On the **Permissions** page, under **Microsoft Purview solutions**, select **Roles**.
 
-   To go directly to this page, use <https://compliance.microsoft.com/compliancecenterpermissions>.
+   To go directly to this page, use <https://compliance.microsoft.com/permissions>.
 
 4. On the **Role groups for Microsoft Purview solutions** page, select **eDiscovery Manager**.
 5. On the **eDiscovery Manager** flyout pane, do one of the following based on the eDiscovery permissions that you want to assign.
