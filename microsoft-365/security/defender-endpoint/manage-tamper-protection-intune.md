@@ -58,7 +58,7 @@ Using Intune, you can:
 
 - Devices must be using anti-malware platform version `4.18.1906.3` (or above) and anti-malware engine version `1.1.15500.X` (or above). (See [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).)
 
-- Your Intune and Defender for Endpoint tenants must share the same Microsoft Entra (Azure Active Directory) infrastructure.
+- Your Intune and Defender for Endpoint tenants must share the same Azure Active Directory infrastructure.
 
 - Your devices must be onboarded to Defender for Endpoint.
 
