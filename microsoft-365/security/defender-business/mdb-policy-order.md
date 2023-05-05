@@ -27,7 +27,7 @@ Defender for Business includes [predefined policies](mdb-view-edit-create-polici
 
 As more policies are added, notice that an order of priority is assigned, as shown in the following screenshot: 
 
-:::image type="content" source="media/mdb-deviceconfig-multpolicies.png" alt-text="Screenshot showing multiple policies and policy order column.":::
+:::image type="content" source="media/mdb-deviceconfig-multpolicies.png" alt-text="Screenshot showing multiple policies and policy order column." lightbox="media/mdb-deviceconfig-multpolicies.png":::
 
 Predefined policies move down in the order of priority when new policies are added. You can edit the order of priority for the policies that you define (select a policy, and then choose **Change order**). You can't change the order of priority for default policies. 
 
