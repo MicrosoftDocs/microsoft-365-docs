@@ -85,6 +85,12 @@ To create the insights report, complete the following steps:
 
 To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax:
 
+`Get-SPOInformationBarriersInsightsReport -reportId <ID>`
+
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId <ID>` |`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`|  Content: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> State: Completed <br> Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> StartTimeInUtc: 4/25/2023 4:10:16 PM <br>CompleteTimeInUtc: 4/25/2023 4:10:25 PM <br> QueuedTimeInUtc: 4/25/2023 4:06:47 PM |
+
 |**Syntax**|**Example**|**Example results**|
 |:---------|:----------|:------------------|
 | `Get-SPOInformationBarriersInsightsReport -reportId <ID>` |`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`|  Content: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> State: Completed <br> Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> StartTimeInUtc: 4/25/2023 4:10:16 PM <br>CompleteTimeInUtc: 4/25/2023 4:10:25 PM <br> QueuedTimeInUtc: 4/25/2023 4:06:47 PM |
