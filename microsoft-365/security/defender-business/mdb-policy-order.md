@@ -29,17 +29,18 @@ As more policies are added, you'll notice that an order of priority is assigned,
 
 :::image type="content" source="media/mdb-deviceconfig-multpolicies.png" alt-text="Screenshot showing multiple policies and policy order column.":::
 
+Predefined policies move down in the order of priority when new policies are added. You can edit the order of priority for the policies that you define (select a policy, and then choose **Change order**). You can't change the order of priority for default policies. 
 
-You can edit the order of priority for the policies that you define, but you can't change the order of priority for default policies. For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
+For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
 **The important thing to remember about multiple policies is that devices will receive the first applied policy only.** Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but won't receive policies numbered 2 and 3. 
 
 ## Key points to remember about policy order
 
-- Policies are assigned an order of priority.
-- Devices receive the first applied policy only.
-- You can change the order of priority for policies.
-- Default policies are given the lowest order of priority.
+- Policies are assigned an order of priority automatically.
+- You can change the order of priority for policies that are added, but not for default policies.
+- Default policies are given the lowest order of priority as new policies are added.
+- Devices receive the first applied policy only, even if those devices are included in multiple policies.
 
 ## Next steps
 
