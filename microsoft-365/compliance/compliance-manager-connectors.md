@@ -44,11 +44,11 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 
 ## Connector setup steps
 
-1. Activate connector to a non-Microsoft product account.
-1. [Activate the connector in Compliance Manager for use in assessments.](#step-2-activate-connector-in-compliance-manager)
-1. [Select the connector when building an assessment.](#step-3-add-connectors-to-assessments)
+1. [Configure settings in your service so that it can integrate with the connector.](#step-1-configure-service-settings-to-enable-the-connector)
+1. [Activate the connector in Compliance Manager](#step-2-activate-the-connector-in-compliance-manager)
+1. [Select the connector when building an assessment.](#step-3-add-a-connector-to-assessments)
 
-## Step 1. Get the OAuth access token for your product's account
+## Step 1. Configure service settings to enable the connector
 
 Before activating a connector in Compliance Manager, you'll need to prepare by getting the Oath token.....  Make sure you have the account email and password for the account you want the connector to receive signals from. If you have multiple accounts with the same product, you will need to set up individal connectors for each account. Connector setup is tied to a specific email address and password.
 
@@ -57,7 +57,7 @@ Follow the specific instructions for each connector's product below:
 - Salesforce setup
 - Zoom setup
 
-## Step 2. Activate connector in Compliance Manager
+## Step 2. Activate the connector in Compliance Manager
 
 The next step is to activate a connector in Compliance Manager by connecting it with the credentials for your account with the product. ... ensuring that you've ...set up a connector to your Salseforce account so that it knows how to connect to the API and get information about the settings in Salesforce. When you go through these steps to activate your connector, you'll then be able to use it in your assessments. In this process you "activate a connector," meaning you enable the connection between the connector and your account for the product, such as from Salesforce or Zoom. Once you activate a connector, you allow Compliance Manager to receive signals from your designated non-Microsoft sevice and evaluate configurations in order to determine whether controls are passing or failing.
 
@@ -83,7 +83,7 @@ You'll arrive back at the Compliance Manager data connectors page. Go to **My ac
 
 You will also see the connectors you create for Compliance Manager when you go to **Data connectors** in the left nav of the Microosft Purview compliance portal, and go to your **My Connectors** tab.
 
-## Step 3. Add connectors to assessments
+## Step 3. Add a connector to assessments
 
 Now you're ready to build an assessment with a connector so that it tracks progress related to the desired service.
 
