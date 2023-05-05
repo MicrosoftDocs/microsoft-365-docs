@@ -85,7 +85,7 @@ Using Intune, you can:
 
 ## Tamper protection for antivirus exclusions
 
-If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
+If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection protects those exclusions, provided all of the following conditions are met:
 
 - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).)
 
@@ -102,9 +102,9 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 ## How to determine whether antivirus exclusions are tamper protected on a Windows device
 
-You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled. Note that the following procedure describes how to view, but not change, tamper protection status.
+You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled. The following procedure describes how to view, but not change, tamper protection status.
 
-1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
+1. On a Windows device open Registry Editor. (Read-only mode is fine; you're not editing the registry key.)
 
 2. To confirm that the device is managed by Intune only, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
 
