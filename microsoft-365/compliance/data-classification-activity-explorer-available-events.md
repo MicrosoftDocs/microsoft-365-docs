@@ -219,12 +219,12 @@ This event is generated each time a DLP policy is matched on a document or an em
 |SharePoint Online|Yes          |
 |OneDrive |Yes|
 |Teams |Yes   |
-|Windows 10 devices         |Yes |
+|Windows 10, Windows 11, and macOS devices         |Yes |
 |MAC         |No     |
 |On-premises         |No|
 |Microsoft Defender for Cloud Apps     |No        |
 
-The events for Windows 10 Devices (Endpoint DLP) are:
+The Endpoint DLP events for devices running Windows 10, Windows 11, and any of the three most recently release major versions of mac OS are:
 
 - File deleted
 - File created
