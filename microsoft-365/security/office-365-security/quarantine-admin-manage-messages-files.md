@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/11/2023
+ms.date: 5/5/2023
 ---
 
 # Manage quarantined messages and files as an admin
@@ -279,8 +279,8 @@ If you don't release or remove a message, it's automatically deleted from quaran
 
 After you select the message, use either of the following methods to approve or deny the release request:
 
-- **On the Email tab**: Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Approve release** or :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Deny**.
-- **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More** and then select **Approve release** or :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Deny release**.
+- **On the Email tab**: Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Approve release** or :::image type="icon" source="../../media/m365-cc-sc-deny-icon.png" border="false"::: **Deny**.
+- **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More** and then select **Approve release** or :::image type="icon" source="../../media/m365-cc-sc-deny-icon.png" border="false"::: **Deny release**.
 
 If you select **Approve release**, an **Approve release** flyout opens where you can review information about the message. To approve the request, select **Approve release**. A **Release approved** flyout opens where you can select the link to learn more about releasing messages. Select **Done** when you're finished on the **Release approved** flyout. Back on the **Email** tab, the **Release status** value of the message changes to **Approved**.
 
@@ -407,6 +407,14 @@ When the download is ready, a **Save As** dialog opens for you to view or change
 Accept or change the downloaded file details, and then select **Save**.
 
 Back on the **Download file** flyout, select **Done**.
+
+#### Actions for quarantined email messages in Defender for Office 365 Plan 2
+
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are also available in the details flyout of a selected message:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
 
 #### Take action on multiple quarantined email messages
 

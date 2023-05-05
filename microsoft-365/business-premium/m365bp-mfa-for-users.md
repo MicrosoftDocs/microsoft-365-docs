@@ -1,5 +1,5 @@
 ---
-title: "Set up multi-factor authentication for Microsoft 365 Business Premium"
+title: "Multi-factor authentication for users"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -22,10 +22,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up multi-factor authentication for phones in Microsoft Business Premium. Increase your security by using Microsoft Business Premium's MFA features for your phone."
+description: "Learn how to set up multi-factor authentication (MFA) on your phone."
 ---
 
-# Set up MFA
+# MFA for users
 
 Multi-factor authentication (MFA) provides increased security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. This makes it difficult to hack. When MFA is required, members of the organization can use the Microsoft Authenticator app to securely sign in on their devices. <br/><br/>
 
@@ -39,4 +39,4 @@ When MFA is enforced, the authenticator app serves as a second form of authentic
 
 ## Next objective
 
-Proceed to [install Microsoft 365 apps](m365bp-install-office-apps.md).
+Proceed to [install Microsoft 365 Apps](m365bp-users-install-m365-apps.md).

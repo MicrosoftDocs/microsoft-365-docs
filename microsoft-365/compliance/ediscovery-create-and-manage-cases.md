@@ -78,8 +78,8 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
    Here are some things that happen (or that you can do) when you add custodians to a case:
 
    - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
-   - Custodian data is reindexed (by a process called *Advanced indexing*). This helps optimize searching for it in the next step.
-   - You can place a hold on custodian data. A hold preserves data that may be relevant to the case during the investigation.
+   - Custodian (and non-custodial) data is reindexed (by a process called *Advanced indexing*). This helps optimize searching for it in the next step.
+   - You can place a hold on custodian (and non-custodial) data. This preserves data that may be relevant to the case during the investigation.
    - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be reindexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
    - You can use the [communications workflow](managing-custodian-communications.md) in eDiscovery (Premium) to send a legal hold notification to custodians.
 

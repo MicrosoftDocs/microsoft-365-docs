@@ -79,4 +79,4 @@ Learn more about how to:
   
 ## Next objective
 
-Once you've completed this mission objective, learn about how to [send encrypted email](send-encrypted-email.md). 
+Once you've completed this mission objective, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 
