@@ -89,7 +89,7 @@ Labeling activity particular to **Azure Information Protection (AIP) scanner and
 
 For more detailed information on what labeling activity makes it into Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer gathers **DLP policy matches** events from Exchange, SharePoint, OneDrive, Teams Chat and Channel, on-premises SharePoint folders and libraries, on-premises file shares, and Windows 10 devices. Some example events gathered from Windows 10 devices include the following actions taken on files:
+In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer gathers **DLP policy matches** events from Exchange, SharePoint, OneDrive, Teams Chat and Channel, on-premises SharePoint folders and libraries, on-premises file shares, and devices running Windows 10, Windows 11, and any of the three most recent major macOS versions. Some example events gathered from Windows 10 devices include the following actions taken on files:
 
 - Deletion
 - Creation
