@@ -26,16 +26,13 @@ In Defender for Business, security settings are configured through policies that
 
 This article describes how to view, edit, and create security policies in Defender for Business.
 
+**This article includes**:
 
-**This article describes how to**:
-
-- [Get an overview of your default policies](#default-policies-in-defender-for-business)
-- [View your existing policies](#view-your-existing-policies)
-- [Edit an existing policy](#edit-an-existing-policy)
-- [Create a new policy](#create-a-new-policy)
-
-> [!NOTE]
-> The procedures in this article describe how to view, edit, and create security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). If you're using Microsoft Intune, see [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+- [Default policies in Defender for Business](#default-policies-in-defender-for-business) (Next-generation protection and firewall)
+- [Policies to set up in Defender for Business](#policies-to-set-up-in-defender-for-business) (Web content filtering, controlled folder access, and attack surface reduction rules)
+- [How to view your existing policies](#view-your-existing-policies)
+- [How to edit an existing policy](#edit-an-existing-policy)
+- [How to create a new policy](#create-a-new-policy)
 
 ## Default policies in Defender for Business
 
@@ -132,26 +129,11 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 2. In the navigation pane, select **Endpoint security**, and then choose a category, such as **Antivirus**, **Firewall**. or **Attack surface reduction**. 
 
-3. Select **+ Create Policy**. 
+3. Existing policies are listed. Select a policy to view more details about it.
 
-   - If your policy is for Windows devices, in the **Platform** list, choose **Windows 10, Windows 11, and Windows Server**.
-   - If your policy is for Mac, in the **Platform** list, choose **macOS**.
+4. Next to **Configuration settings**, choose **Edit**. 
 
-4. In the **Profile** list, select a profile, and then choose **Create**.
-
-   The **Profile** list varies depending on what you selected for **Platform**, as summarized in the following table:
-
-   | Platform | Profile | Description |
-   |---|---|---|
-   | Windows 10, Windows 11, and Windows Server | Microsoft Defender Antivirus exclusions | Select this template to define [exclusions for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/defender-endpoint-antivirus-exclusions#microsoft-defender-antivirus-exclusions).  |
-   | Windows 10, Windows 11, and Windows Server | Microsoft Defender Antivirus | Select this template to set up your [next-generation protection policy](mdb-next-generation-protection.md). |
-   | Windows 10, Windows 11, and Windows Server | Windows Security Experience | Select this template to turn on [tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) and to configure what users can see or do with the Windows Security app on their computer. | 
-   | macOS | Antivirus | Select this template to set up your [next-generation protection policy](mdb-next-generation-protection.md) for devices running macOS. |
-   | Windows 10, Windows 11, and Windows Server | Microsoft Defender Firewall | Select this template to set up your [firewall protection policy](mdb-firewall.md). | 
-   | Windows 10, Windows 11, and Windows Server | Microsoft Defender Firewall Rules | Select this template to set up exceptions to your firewall policy. These exceptions are defined through [custom rules](mdb-firewall.md#manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business). |
-   | Windows 10, Windows 11, and Windows Server | Attack Surface Reduction Rules | Select this template to set up [attack surface reduction rules](mdb-asr.md) or [controlled folder access](mdb-controlled-folder-access.md). |
-
-5. Use the wizard to set up your policy. To get help, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy).
+   To get help with this task, see [Edit a policy in Intune](/mem/intune/protect/endpoint-security-policy#to-edit-a-policy).
 
 ---
 
