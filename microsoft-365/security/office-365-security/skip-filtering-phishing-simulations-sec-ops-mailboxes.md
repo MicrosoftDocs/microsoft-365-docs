@@ -126,7 +126,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 >
 > - At least one **Domain**.
 > - At least one **Sending IP**.
-> - You should also add all possible URLs that are used in phishing simulation messages in **Simulation URLs to allow**. These URL entries prevent the URLS from being treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated.
+> - For **non-email** phishing simulations (for example, Microsoft Teams messages or Office apps like Word or Excel), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
 >
 > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
 >
@@ -152,9 +152,11 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: Expand this setting and enter specific URLs that are part of your phishing simulation campaign that shouldn't be blocked or detonated by clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped at the time of click, but they aren't blocked.
+   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
 
-   To remove an existing value, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+     Add URL entries by expanding this setting, clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list).
+
+   To remove an existing domain, IP, or URL value, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
 4. When you're finished in the **Add third party phishing simulations** flyout, select **Add**.
 
@@ -332,6 +334,9 @@ In PowerShell, the basic elements of third-party phishing simulations in the adv
 - **The phishing simulation override rule**: Controlled by the **\*-PhishSimOverrideRule** cmdlets.
 - **The allowed (unblocked) phishing simulation URLs**: Controlled by the **\*-TenantAllowBlockListItems** cmdlets.
 
+> [!NOTE]
+> As previously described, identifying phishing simulation URLs isn't required for links email-based phishing simulations. You can optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
+
 This behavior has the following results:
 
 - You create the policy first, then you create the rule that identifies the policy that the rule applies to.
@@ -347,7 +352,7 @@ Configuring a third-party phishing simulation in PowerShell is a multi-step proc
 2. Create the phishing simulation override rule that specifies:
    - The policy that the rule applies to.
    - The source IP address of the phishing simulation messages.
-3. Optionally, identity the phishing simulation URLs that should be allowed (that is, not blocked or scanned).
+3. Optionally, identity the phishing simulation URLs in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
