@@ -77,7 +77,7 @@ Different assessments within a group or groups may share improvement actions. Im
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
 
-## Set up data connectors (preview)
+## Set up data connectors
 
 Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft, such as SalesForce and Dropbox. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
 
@@ -90,7 +90,7 @@ Compliance Manager has an integrated set of third-party data connectors so that 
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments). To create an assessment, you'll use a guided process to select a regulation and designate services.
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#groups-for-assessments). To create an assessment, you'll use a guided process to select a regulation and designate services.
 
 #### Create an assessment using a guided process
 
