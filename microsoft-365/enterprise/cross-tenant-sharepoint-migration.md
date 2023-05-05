@@ -36,12 +36,13 @@ If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant 
 
 - [**CTMSPreview@microsoft.com**](mailto:ctmspreview@microsoft.com) 
 
-Make sure to include some basic information about the migration you are performing.
+Make sure to include some basic information about the migration you are performing.  The team will respond to you within a couple business days with additional questions. 
 
-The team will respond to you within a couple business days with additional questions. For more information on licensing:
+For more information on licensing:
 
-- Learn more at: [**Cross-Tenant User Content Migration Licensing**](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
 - Contact your Microsoft account team
+- [**Learn more at Cross-Tenant User Content Migration Licensing**](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
+
 
 ## Prerequisites and settings
 
