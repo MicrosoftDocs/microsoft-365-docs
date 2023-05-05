@@ -43,7 +43,7 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
 
 ## What happens when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed from their default values:
+When tamper protection is turned on, tamper-protected settings can't be changed from their configured values:
 
 - Virus and threat protection is enabled.
 - Real-time protection is turned on.
