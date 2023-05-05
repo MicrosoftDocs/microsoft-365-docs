@@ -44,9 +44,9 @@ In Defender for Business, there are two main types of default policies that are 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured; and 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices.
 
-[Next-generation protection](mdb-next-generation-protection.md) includes robust antivirus and antimalware protection for computers and mobile devices. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. To learn more about next-generation protection policies, including your settings and options, see [Review or edit your next-generation protection policies](mdb-next-generation-protection.md).
+[Next-generation protection](mdb-next-generation-protection.md) includes robust antivirus and antimalware protection for computers and mobile devices. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. For more details, see [Review or edit your next-generation protection policies](mdb-next-generation-protection.md).
 
-[Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. To learn more about firewall policies and settings, see [Firewall](mdb-firewall.md).
+[Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. For more details, see [Firewall](mdb-firewall.md).
 
 ## Policies to configure in Defender for Business
 
@@ -56,9 +56,11 @@ In addition to next-generation protection and firewall policies, there are three
 - **Controlled folder access**, which is an important part of ransomware protection (Intune is required to set up and manage)
 - **Attack surface reduction rules**, which help reduce device vulnerability (Intune is required to set up and manage)
 
-[Web content filtering](mdb-web-content-filtering.md), which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. To learn more about web content filtering, see [Web content filtering](mdb-web-content-filtering.md).
+[Web content filtering](mdb-web-content-filtering.md), which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. For more information, see [Web content filtering](mdb-web-content-filtering.md).
 
+[Controlled folder access](mdb-controlled-folder-access.md) allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Intune. For more information, see [Set up or edit your controlled folder access policy](mdb-controlled-folder-access.md).
 
+[Attack surface reduction rules](mdb-asr.md) target certain software behaviors that are often considered risky because they're commonly abused by attackers through malware. Examples of such behaviors include launching executable files and scripts that attempt to download or run files. Attack surface reduction rules can constrain software-based risky behaviors, and help keep your organization safe. At a minimum, we recommend configuring standard protection rules to help protect your network without causing disruption for users. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](mdb-asr.md).
 
 ## View your existing policies
 
