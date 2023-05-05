@@ -36,7 +36,7 @@ The connectors available for Compliance Manager are listed below. Additinoal con
 - Zoom
 
 > [!IMPORTANT]
-> CM is a differnt type of connector. The data connectors at platform level are a combination of data connectors and ocnfiguration connectors. Dta connectors are  getting data thru the pipeline. Config connectors are jsut tetting the config settings and getting info around that. CM does not work across all the 100+ data connectors seen on the Data connectors area. That's why we recommend interacting with connectors from teh Compliance Manager page. You will be able to see any connectors you activate for Comppliance Manager on the data connectors page. You can only delete a connector you create through Compliance Manager by doing it from teh data connector page. But none of the other connectrs found ther are ones that can be used with Compliance Manager. 
+> Compliance Manager connectors are unique to the Compliance Manager solution and are set up within Compliance Manager. The Data connectors that are accessed from the left navigation of the Microsoft Purview compliance portal not compatible with Compliance Manager. We recommend interacting with connectors by always selecting **Data connectors** in the upper right corner of Compliance Manager to ensure that any connectors you activate are the ones built specifically for use with Compliance Manager.
 
 ## Required roles for setting up connectors
 
@@ -48,14 +48,7 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 1. Create(Activate) a(the) connector in Compliance Manager for use in assessments.
 1. Select the connector when building an assessment.
 
-## Set up data connectors
-
-Before creating an assessment, you'll need to set up a connector for the service you're assessing.
-
-> [!IMPORTANT]
-> Compliance Manager connectors are unique to the Compliance Manager solution and are set up directly within Compliance Manager. The data connectors accessed from the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
-
-#### Step 1: Get the OAuth access token for your product's account
+## Step 1. Get the OAuth access token for your product's account
 
 Before activating a connector in Compliance Manager, you'll need to prepare by getting the Oath token.....  Make sure you have the account email and password for the account you want the connector to receive signals from. If you have multiple accounts with the same product, you will need to set up individal connectors for each account. Connector setup is tied to a specific email address and password.
 
@@ -64,7 +57,7 @@ Follow the specific instructions for each connector's product below:
 - Salesforce setup
 - Zoom setup
 
-#### Step 2: Activate connector in Compliance Manager
+## Step 2. Activate connector in Compliance Manager
 
 The next step is to activate a connector in Compliance Manager by connecting it with the credentials for your account with the product. ... ensuring that you've ...set up a connector to your Salseforce account so that it knows how to connect to the API and get information about the settings in Salesforce. When you go through these steps to activate your connector, you'll then be able to use it in your assessments. In this process you "activate a connector," meaning you enable the connection between the connector and your account for the product, such as from Salesforce or Zoom. Once you activate a connector, you allow Compliance Manager to receive signals from your designated non-Microsoft sevice and evaluate configurations in order to determine whether controls are passing or failing.
 
@@ -90,7 +83,7 @@ You'll arrive back at the Compliance Manager data connectors page. Go to **My ac
 
 You will also see the connectors you create for Compliance Manager when you go to **Data connectors** in the left nav of the Microosft Purview compliance portal, and go to your **My Connectors** tab.
 
-## Add connectors to assessments
+## Step 3. Add connectors to assessments
 
 ...Get into elliot's service instance doc - define service instance....
 
