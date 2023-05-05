@@ -48,7 +48,7 @@ In Defender for Business, there are two main types of default policies that are 
 
 [Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. For more details, see [Firewall](mdb-firewall.md).
 
-## Policies to configure in Defender for Business
+## Policies to set up in Defender for Business
 
 In addition to next-generation protection and firewall policies, there are three other types of policies to configure for the best protection with Defender for Business:
 
@@ -62,7 +62,12 @@ In addition to next-generation protection and firewall policies, there are three
 
 [Attack surface reduction rules](mdb-asr.md) target certain software behaviors that are often considered risky because they're commonly abused by attackers through malware. Examples of such behaviors include launching executable files and scripts that attempt to download or run files. Attack surface reduction rules can constrain software-based risky behaviors, and help keep your organization safe. At a minimum, we recommend configuring standard protection rules to help protect your network without causing disruption for users. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](mdb-asr.md).
 
+> [!NOTE]
+> Intune is required to configure [controlled folder access](mdb-controlled-folder-access.md) and [attack surface reduction rules](mdb-asr.md). Intune is not included in the standalone version of Defender for Business, but can be added on to your subscription.
+
 ## View your existing policies
+
+You can view your existing policies in either the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com))
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
