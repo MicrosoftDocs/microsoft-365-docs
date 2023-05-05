@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 11/10/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.date: 04/10/2023
+ms.localizationpriority: medium
+ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
 - m365-security
@@ -23,34 +23,17 @@ ms.custom: intro-get-started
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or
-- [Work with a Microsoft partner](m365bp-setup.md#work-with-a-microsoft-partner) who can help you get everything set up and configured.
+- Start with the guided setup experience for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or 
+- Work with a Microsoft partner who can help you get everything set up and configured.
 
-## Before you begin
 
-Make sure that you meet the following requirements before you begin your setup process:
+##  [**Guided setup process**](#tab/Guided)
 
-| Requirement | Description |
-|:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
-| Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
-| Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
-| Operating systems (servers) | Windows Server or Linux Server <br/>(Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).)  |
-
-> [!NOTE]
-> For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
-
-## Guided setup process
-
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. (Microsoft 365 Business Premium includes [advanced security settings that you'll configure](m365bp-security-overview.md) after your basic setup process is complete.)<br/><br/>
+Microsoft 365 Business Premium includes a guided process, as shown in the following video, and described step by step in this article: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 **As soon as you've completed the guided setup process, proceed to [boost your security protection](m365bp-security-overview.md)**.
-
-> [!TIP]
-> After you have added users, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
 ### The guided setup process, step by step
 
@@ -62,7 +45,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
    :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center."lightbox="media/m365bp-dashboardview.png":::
 
-3. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Then select **Continue**.
+3. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Then select **Continue**.
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button."lightbox="media/m365bp-installoffice.png":::
 
@@ -82,11 +65,14 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 6. If you added your domain in step 4, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
+When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. 
 
 :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
 
-## Work with a Microsoft partner
+> [!IMPORTANT]
+> At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
+
+## [**Work with a Microsoft partner**](#tab/Partner)
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
@@ -103,12 +89,21 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
+---
+
+## Employee quick setup guide
+
+[:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/en-us/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
+
+After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
+
+## Next objective
+
+Proceed to [Boost your security protection](m365bp-security-overview.md).
+
 ## See also
 
 - [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)
 - [Business subscriptions and billing documentation](../commerce/index.yml)
 - [Find a Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
 
-## Next objective
-
-Proceed to [Boost your security protection](m365bp-security-overview.md).

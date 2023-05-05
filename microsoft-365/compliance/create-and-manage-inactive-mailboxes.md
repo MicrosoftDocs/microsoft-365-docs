@@ -59,7 +59,10 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 ## View a list of inactive mailboxes
 
-To view a list of the inactive mailboxes in your organization:
+You can use the Microsoft Purview compliance portal to view a list of the inactive mailboxes in your organization.
+
+> [!NOTE]
+> The Microsoft Purview compliance portal is limited to displaying up to 5,000 inactive mailboxes. To view more than 5,000 inactive mailboxes, you must use Exchange Online PowerShell as described after the step instructions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
@@ -78,13 +81,13 @@ If you have many inactive mailboxes, you might find it easier to search and sort
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
 ```powershell
- Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
+ Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
 You can also run the following command to export the list of inactive mailboxes and other information to a CSV file. In this example, the CSV file is created in the current directory.
 
 ```powershell
-Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
+Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoTypeInformation
 ```
 
 > [!NOTE]
@@ -102,7 +105,7 @@ For step-by-step procedures, see [Change the hold duration for an inactive mailb
   
 ## Recover an inactive mailbox
 
-If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the departed employee, you can recover the contents of the inactive mailbox. 
+If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the former employee, you can recover the contents of the inactive mailbox. 
 
 When you recover an inactive mailbox, the mailbox is converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists. 
 

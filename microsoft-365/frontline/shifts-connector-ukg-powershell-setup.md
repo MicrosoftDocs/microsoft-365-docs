@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 03/21/2023
 ---
 
 # Use PowerShell to connect Shifts to UKG Dimensions
@@ -88,6 +88,7 @@ Run one of these two scripts, depending on whether you're creating a new team or
 
 Follow the on-screen instructions when you run the script. The script will complete these actions:
 
+<<<<<<< HEAD
 1. Test and verify the connection to UKG Dimensions using the UKG Dimensions service account credentials and service URLs that you enter.
 1. Apply sync settings. These settings include the sync frequency (in minutes) and the schedule data synced between UKG Dimensions and Shifts. You can enable schedule data defined by these scenarios:  `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
 

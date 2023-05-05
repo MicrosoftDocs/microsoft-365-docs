@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/15/2023
+ms.date: 05/01/2023
 ms.collection: 
 - m365-security
 - tier1
@@ -21,6 +21,8 @@ f1.keywords: NOCSH
 # Add users and assign licenses in Microsoft Defender for Business
 
 As soon as you have signed up for Defender for Business, your first step is to add users and assign licenses. This article describes how to add users and assign licenses, and how to make sure multifactor authentication (MFA) is enabled. 
+
+:::image type="content" source="media/mdb-setup-step2.png" alt-text="Visual depicting step 2 - add users and assign licenses in Defender for Business.":::
 
 ## Add users and assign licenses
 
@@ -66,11 +68,12 @@ One good way to make sure MFA is enabled for all users is by using [security def
 
    > [!CAUTION]
    > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead. To learn more, see the following articles:
-   > - [Multi-factor authentication](../../business-premium/m365bp-conditional-access.md) (in the Microsoft 365 Business Premium documentation)
+   > - [Multi-factor authentication](../../business-premium/m365bp-turn-on-mfa.md) (in the Microsoft 365 Business Premium documentation)
    > - [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 5. Save your changes.
 
 ## Next steps
 
-- Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+- [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+- [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).

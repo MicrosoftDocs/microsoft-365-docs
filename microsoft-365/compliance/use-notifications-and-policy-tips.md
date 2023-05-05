@@ -151,15 +151,15 @@ For example, you may have a DLP policy applied to OneDrive for Business sites th
 
 ### User Override support
 
-Here are some fine points to understand about using a policy tip to override a rule:
+The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
 
-- The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
+It's possible for content to match several rules in a DLP policy or several different DLP policies, but only the policy tip from the most restrictive, highest-priority rule will be shown (including policies in Test mode). For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
-- It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
 
-- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
-- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+To see overrides in policy tips in Outlook on the web, the policy must be set to the *Turn it on* state. The policy action must also be configured to block with override.
 
 #### Availability of Override
 

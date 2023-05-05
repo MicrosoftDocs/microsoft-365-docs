@@ -2,8 +2,8 @@
 title: "Learn about Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin

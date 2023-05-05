@@ -45,7 +45,7 @@ You can use Configuration Manager to onboard endpoints to the Microsoft Defender
 
 There are several options you can use to onboard devices using Configuration Manager:
 - [Onboard devices using System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
-- [Tenant attach](/mem/configmgr/tenant-attach/)
+- [Tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started)
 
 
 

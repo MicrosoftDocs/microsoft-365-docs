@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: vivkuma
+ms.reviewer: crimora
 ms.date: 07/09/2021
 audience: Admin
 ms.topic: article

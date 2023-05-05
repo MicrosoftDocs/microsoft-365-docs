@@ -114,7 +114,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
-- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-setup-page) as priority accounts.
+- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
 - Track threats to priority account throughout the portal.
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).

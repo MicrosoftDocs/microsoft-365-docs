@@ -3,7 +3,7 @@ title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -36,6 +36,8 @@ description: "Learn how you can set a policy in the Microsoft 365 admin center t
 ---
 
 # Let users reset their own passwords
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
