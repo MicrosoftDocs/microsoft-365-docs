@@ -66,7 +66,7 @@ The following table summarizes what's included in each plan:
 | [Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office apps and services, and Microsoft Teams) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (for device onboarding and management) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Shared computer activation](/deployoffice/overview-shared-computer-activation) (for deploying Microsoft 365 Apps) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
-| [Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (upgrade from previous versions of Windows Pro) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
+| [Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-pro.md) (upgrade from previous versions of Windows Pro) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Windows Autopilot](/mem/autopilot/windows-autopilot) (for setting up and configuring Windows devices for first use) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Exchange Online Protection](../office-365-security/eop-about.md) (antiphishing, antispam, antimalware, and spoof intelligence for email) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/defender-for-office-365) (advanced antiphishing, real-time detections, Safe Attachments, and Safe Links) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
@@ -107,7 +107,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > 
 > 3. Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following manual response actions: Run antivirus scan; Isolate device; and Add an indicator to block or allow a file.
 > 
-> 4. In Defender for Business, automated investigation and response is turned on by default, tenant wide. Turning off automated investigation and response affects real-time protection. See [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
+> 4. In Defender for Business, automated investigation and response is turned on by default, tenant wide. Turning off automated investigation and response affects real-time protection. See [View settings for advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features).  
 > 
 > 5. In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 > 
