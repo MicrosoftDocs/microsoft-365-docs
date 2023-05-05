@@ -115,9 +115,7 @@ Before you begin, be sure you know which group you'll assign it to, or be prepar
 
 1. **Review and finish:** Review all your selections and make any necessary edits. When you're satisfied with the settings, select **Create assessment**.
 
-The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page.
-
-If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
+The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page. If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
 #### Edit an assessment
 

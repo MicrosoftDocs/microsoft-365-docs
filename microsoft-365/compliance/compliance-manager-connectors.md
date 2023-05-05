@@ -45,8 +45,8 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 ## Connector setup steps
 
 1. Activate connector to a non-Microsoft product account.
-1. Create(Activate) a(the) connector in Compliance Manager for use in assessments.
-1. Select the connector when building an assessment.
+1. [Activate the connector in Compliance Manager for use in assessments.](#step-2-activate-connector-in-compliance-manager)
+1. [Select the connector when building an assessment.](#step-3-add-connectors-to-assessments)
 
 ## Step 1. Get the OAuth access token for your product's account
 
@@ -85,13 +85,27 @@ You will also see the connectors you create for Compliance Manager when you go t
 
 ## Step 3. Add connectors to assessments
 
-...Get into elliot's service instance doc - define service instance....
+Now you're ready to build an assessment with a connector so that it tracks progress related to the desired service.
 
-To build an assessment for a non-Microsoft service, you'll choose the applicable connector during the assessment creation process.
+1. From the **Assessments** page in Compliance Manager, select **Add assessment**.
 
-When you get to the "Select servies" page in the assessment creation wizard, choose **Select services**....
+1. From here, begin following the general [assessment creations instructions](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process).
 
-? for Nisha - When you select **Add new service**, what happens? Is this something you can add directly here, or does it take you into "data connectors" in CM?
+1. When you arrive at the **Select servcies** page and choose **Select services**, you should see the name of the product related to your activated connector; for example, Salesforce. <MAKE SURE THE REGULATION SUPPORTS THE SERVICE  Select the checkbox next to the service name, then select **Add**. Then select **Next**.
+
+1. At the **Service instances** page, you'll choose one or more connectors you've activated for the service. On the row listing your service, select **Manage service instances**.
+
+1. A flyout pane opens which lists all the service instances for your connector. Each instance represents an individual connector activated for a service by your organization. All service instances are checked by default. If you want the assesment to cover all instances, meaninging the assessment will use all the conectors you've activated for that service, leave them all checked and select **Cancel**. Or, uncheck any instances that you don't want to cover in the assessment and select **Update**.
+
+1. Back at the **Service instances** page, select **Next**.
+
+1. On the **Review and finish** page, confirm all your selections are correct, then select **Create assessment**. 
+
+The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page.
+
+## How to view connector data in an assessment
+
+The assessment details page will show a detailed view of the assessment's rate of progress. When you add a connector as a service for the assessment, you'll see the connector name as one of the services listed on the assessment's **Progress** tab. You can view more details about service progerss by selecting **View service details**.
 
 ## Automated monitoring for connectors
 
