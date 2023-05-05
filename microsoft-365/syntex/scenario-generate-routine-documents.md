@@ -21,7 +21,7 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
 
 :::row:::
    :::column span="":::      
-      Use the content assembly feature in Microsoft Syntex to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automated trigger.
+      Use the content assembly feature in Microsoft Syntex to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automation.
 
       Features used:
       - Content assembly 
@@ -34,9 +34,9 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
 
 ## Routine maintenance reports
 
-You can use content assembly to automate the generation of daily inspection or maintenance reports. These reports generally have a lot of boiler plate text with certain fields or values that are entered by the user after inspection.
+You can use content assembly to automate the generation of daily inspection or maintenance reports. These reports generally have a lot of standardized text with certain fields or values that are entered by the user after inspection.
 
-Today, users physically inspect parts and then fill in a list or a form or physical paper reports. This leads to additional work in transforming this data into actual digital reports that can be used further. 
+Today, users physically inspect parts and then fill in a list or a form or physical paper reports. This leads to additional work in transforming this data into digital content that can be used further. 
 
 To implement a Syntex solution:
 
