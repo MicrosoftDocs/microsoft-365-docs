@@ -257,7 +257,7 @@ Allow an incompatible segment user access to a OneDrive. For example, you want t
 To update a OneDrive site IB mode to *Owner Moderated*, run the following PowerShell command:
 
 ```powershell
-Set-SPOSite -Identity <siteurl> InformationBarriersMode OwnerModerated
+Set-SPOSite -Identity <siteurl> -InformationBarriersMode OwnerModerated
 ```
 
 Owner Moderated IB mode can’t be set on a site with segments. Remove the segments before setting the IB mode as Owner Moderated. Access to an Owner Moderated site is allowed for users who have site access permissions. Sharing of an Owner Moderated OneDrive and its contents is only allowed by the site owner per their IB policy.
@@ -269,7 +269,7 @@ Allow unsegmented users to access OneDrive associated with segments. For example
 To update a OneDrive site IB Mode to Mixed, run the following PowerShell command:
 
 ```powershell
-Set-SPOSite -Identity <siteurl> InformationBarriersMode Mixed
+Set-SPOSite -Identity <siteurl> -InformationBarriersMode Mixed
 ```
 
 Mixed IB mode can't be set on a site without segments. Add segments before setting the IB mode as Mixed.
