@@ -74,7 +74,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
 7. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
 
-   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)   
+   - [Understand next-generation configuration settings](mdb-next-generation-protection.md)   
    - [Firewall settings](mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
@@ -109,7 +109,7 @@ In Defender for Business, there are two main types of policies to protect your c
 
    To learn more about device groups, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Defender for Business](mdb-next-gen-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Defender for Business](mdb-next-generation-protection.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
