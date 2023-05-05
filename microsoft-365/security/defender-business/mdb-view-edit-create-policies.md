@@ -48,6 +48,16 @@ In Defender for Business, there are two main types of default policies that are 
 
 [Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
 
+## Policies to configure in Defender for Business
+
+In addition to next-generation protection and firewall policies, there are three other types of policies to configure for the best protection with Defender for Business:
+
+- **Web content filtering**, which turns on web protection for your organization.
+- **Controlled folder access**, which is an important part of ransomware protection (requires Intune to set up and manage)
+- **Attack surface reduction rules**, which help reduce vulnerability to cyberthreats and attacks on devices (requires Intune requires Intune to set up and manage)
+
+Web content filtering, which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization.
+
 ## View your existing policies
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
