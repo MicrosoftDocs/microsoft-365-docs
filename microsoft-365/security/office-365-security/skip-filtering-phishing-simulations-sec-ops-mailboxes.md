@@ -77,7 +77,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
-   On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected. 
+   On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected.
 
 2. On the **SecOps mailbox** tab, select the **Add** button in the **No SecOps mailboxes configured** area of the page.
 
@@ -105,7 +105,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
-   On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected. 
+   On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected.
 
 2. On the **SecOps mailbox** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
@@ -134,7 +134,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
-   On the **Advanced delivery** page, select the **Phishing simulation** tab. 
+   On the **Advanced delivery** page, select the **Phishing simulation** tab.
 
 2. On the **Phishing simulation** tab, select the **Add** button in the **No third party phishing simulations configured** area of the page.
 
@@ -171,7 +171,7 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
-   On the **Advanced delivery** page, select the **Phishing simulation** tab. 
+   On the **Advanced delivery** page, select the **Phishing simulation** tab.
 
 2. On the **Phishing simulation** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
