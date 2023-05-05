@@ -25,19 +25,28 @@ description: "Set up data connectors to build assessments for non-Microsoft serv
 
 **In this article:** Learn how to...
 
-Compliance Manager has an integrated set of third-party data connectors so that you can build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. Then when you build your assessment, you'll select from among the connectors you've already set up.
+Compliance Manager has an integrated set of data connectors for build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. After setting up the connector, you can select the connector when you create your assessment.
+
+Value prop....You can understand your compliance obligations across all the products that you use in your organization. Compliance Manager data connectos allw you to get signals from SaaS products you might typically use, and integrate them into your assessments for automatic monitoring and testing of controls.
 
 ## Available connectors
-The connectors available for Compliance Manager are:
+The connectors available for Compliance Manager are listed below. Additinoal connectors will be availalbe in coming months.
 
 - Salesforce
 - Zoom
 
-Additional connectors will be available in coming months.
+> [!IMPORTANT]
+> CM is a differnt type of connector. The data connectors at platform level are a combination of data connectors and ocnfiguration connectors. Dta connectors are  getting data thru the pipeline. Config connectors are jsut tetting the config settings and getting info around that. CM does not work across all the 100+ data connectors seen on the Data connectors area. That's why we recommend interacting with connectors from teh Compliance Manager page. You will be able to see any connectors you activate for Comppliance Manager on the data connectors page. You can only delete a connector you create through Compliance Manager by doing it from teh data connector page. But none of the other connectrs found ther are ones that can be used with Compliance Manager. 
 
-## How connectors work
+## Required roles for setting up connectors
 
-Get into elliot's service instance and programmatic mapping docs - define service instance. Actually, not sure that we need to go into depth here based on his .....
+Users must have a Data Connector Admin role or Global Admin role in order to set up Compliance Manager data connectors.
+
+## Connector setup steps
+
+1. Activate connector to a non-Microsoft product account.
+1. Create(Activate) a(the) connector in Compliance Manager for use in assessments.
+1. Select the connector when building an assessment.
 
 ## Set up data connectors
 
@@ -46,33 +55,40 @@ Before creating an assessment, you'll need to set up a connector for the service
 > [!IMPORTANT]
 > Compliance Manager connectors are unique to the Compliance Manager solution and are set up directly within Compliance Manager. The data connectors accessed from the left nav of the Microsoft Purview compliance portal are not the connnectors to use for Compliance Manager assessments.
 
-#### Required roles
+#### Step 1: Get the OAuth access token for your product's account
 
-Users must have a XYZ role in order to set up Compliance Manager data connectors.
+Before activating a connector in Compliance Manager, you'll need to prepare by getting the Oath token.....  Make sure you have the account email and password for the account you want the connector to receive signals from. If you have multiple accounts with the same product, you will need to set up individal connectors for each account. Connector setup is tied to a specific email address and password.
 
-#### Setup steps
+Follow the specific instructions for each connector's product below:
 
-Follow the steps below to set up Compliance Manager connectors.
+- Salesforce setup
+- Zoom setup
 
-1. In Compliance Manager, select **Data connectors** in the upper right of your screen. The **Data connectors** page in Compliance Manager opens, displaying a list of available connectors.
+#### Step 2: Activate connector in Compliance Manager
 
-1. Select the checkbox next to the name of the connector you want to add. Only one connector can be added at a time. After making your selection, select **Activate connector**.
+The next step is to activate a connector in Compliance Manager by connecting it with the credentials for your account with the product. ... ensuring that you've ...set up a connector to your Salseforce account so that it knows how to connect to the API and get information about the settings in Salesforce. When you go through these steps to activate your connector, you'll then be able to use it in your assessments. In this process you "activate a connector," meaning you enable the connection between the connector and your account for the product, such as from Salesforce or Zoom. Once you activate a connector, you allow Compliance Manager to receive signals from your designated non-Microsoft sevice and evaluate configurations in order to determine whether controls are passing or failing.
 
-1. On the connector's details page, you can review details and requirements. Select **Add connector**, which takes you to the connector setup wizard.
+If you have more than one account for your product, such as accounts for production, for development and testing, for backup disaster recovery, etc., you'll need to activate a connector for each separate account. Connectors are activated using the email and password for the account. SERVICE INSTANCE????
+
+1. In Compliance Manager, select **Data connectors** in the upper right corner of your screen. You are taken to the Compliance Manager page within the **Data connectors** area of the Microsoft Purview compliance portal.
+
+1. The page will display a list of available connectors to choose from. Select the checkbox next to name for the product whose connector you want to activate, then select **Activate connector**.
+
+1. You'll see an information page with details abou the connector. Select XYZ, which takes you into the connector setup wizard.
 
 1. Review the Microsoft Terms of Service, then select **Accept**.
 
-1. On the **Connector name** page, enter a unique name for the connector, then select **Next**.
+1. On the **Connector name** page, enter a unique name. You might want a name that helps identify which account the connector is for; for example, "Salesforce Prod" for your Salseforce production account. Remember that a connector is tied to a specific account, using one email and password. Then select **Next**.
 
-1. On the **Connection to source** page, From accenture: add details for validation. To connect to the source, click on “Validate connection”. Once Validation succeeded, click on the “Next” button.
+1. On the **Authentication** page, enter the credentails for the account that you want to link to the connector. In the **Username** field, enter the email address for the account. In the **Password** field, enter the account's password. In the **Token** field, enter the OAuth access token for the account which you obtained in Step 1 above. Select **Validate connection**. It'll take a few seconds to validate the connection.
 
-1. On the **User mapping** page -- ? is there such a page?
+1. If the connection to your account is validated, you'll see a **Validation succeeded** message. If validation fails, enter your credential again until the connection is validated Select **Next**.
 
-1. On the **Review and finish** page, review connector details, then select **Finish** to complete the process. You'll arrive back at the .......page
+1. On the **Review and finish** page, review the connector details for accuracy. Select **Back** if you need to make changes. Select **Finish** to complete the process.
 
-? - I"m seeing the phrase "activate connector" and also seeing a command (button with a plus sign) to do this. What does it mean to "activate" a connector? Does this mean just adding the connector to your CM so that you see it in your list when yo ugo to choose from them in 
+You'll arrive back at the Compliance Manager data connectors page. Go to **My activated connectors** tab to view your connector, along with any other connectors created by your organization. You may need to refresh your browser to see the newly created connector.
 
-? - each connector will have its own separate setup page, like current connectors do?
+You will also see the connectors you create for Compliance Manager when you go to **Data connectors** in the left nav of the Microosft Purview compliance portal, and go to your **My Connectors** tab.
 
 ## Add connectors to assessments
 
@@ -83,6 +99,27 @@ To build an assessment for a non-Microsoft service, you'll choose the applicable
 When you get to the "Select servies" page in the assessment creation wizard, choose **Select services**....
 
 ? for Nisha - When you select **Add new service**, what happens? Is this something you can add directly here, or does it take you into "data connectors" in CM?
+
+## Automated monitoring for connectors
+
+Each 24 hours, connector signals are refreshed and any updated status is reflected in your assessment. This means that Compliance Manager provides daily automated refreshed status of configurations in the products for which you've activated connectors.
+
+All improvement acitons that are monitored through connectors are automatically monitored and tested so that Compliance Manager can determine whether controls are passing or failing. That test status is reflected in your assessments, so that you can take the necessary actions in your non-Microosft products to satisfy a control requirement.
+
+## Editing a connector
+
+If you need to edit a connector's name or account credentials, select the connector from your **My activated connectors** page and select the **Edit** command at the top of your connectors list.
+
+## Deleting a connector
+
+To delete a connector, you need to first locate your connector in the Purview **Data connectors** area. Connectors can't be deleted when you access them through the **Data connectors** link in the upper right corner of Compliance Manager. Follow the instructions below to delte a connector:
+
+1. In the Microsoft Purview compliance portal, selet **Data connectors** in the left nav.
+1. Select the **My Connectors** tab.
+1. Locate the connector you want to delete from the list and select the checkbox next to its name. Select the **Delete** command at the top of the list.
+1. On the confirmation box, select **Delete**.
+
+Your connector is deleted and removed from the list of your connectors.
 
 ## Scoring
 
