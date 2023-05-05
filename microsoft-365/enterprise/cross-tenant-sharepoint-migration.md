@@ -32,7 +32,7 @@ Up to 4,000 SharePoint accounts can be scheduled for migration in advance at a g
 
 The **Cross-Tenant User Content Migration** feature and licenses are currently only available to Enterprise Agreement customers. 
 
-If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant SharePoint migration to improve your migration experience, please sign-up at:
+If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant SharePoint migration to improve your migration experience, sign-up at:
 
 - **https://aka.ms/ODSPSecurityPreviews**
  
