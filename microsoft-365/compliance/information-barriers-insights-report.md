@@ -79,13 +79,15 @@ To create the insights report, complete the following steps:
     - *In Progress*: State when the insights report build is in progress.
     - *Error*: State when the insights report build has failed.
 
-View the results of the insights report
+## Insights reports for SharePoint sites
 
-## View a summary of modes with results for SharePoint sites
+### View a summary of modes with results for SharePoint sites
 
 To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax:
 
-`Get-SPOInformationBarriersInsightsReport -reportId <ID>`
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID>`
+```
 
 |**Example**|**Example results**|
 |:----------|:------------------|
@@ -93,16 +95,46 @@ To view a summary of the modes with results for SharePoint sites, use the follow
 
 In this example, the insights report results are displayed for SharePoint sites included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any SharePoint sites in the organization with that mode.
 
-## View a summary of modes with results for OneDrive accounts
+### View the details for a specific mode for SharePoint sites
 
+To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax:
 
-## View the details for a specific mode for SharePoint sites
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
+```
 
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
 
-## View the details for a specific mode for OneDrive accounts
+## Insights reports for OneDrive accounts
 
+### View a summary of modes with results for OneDrive accounts
+
+To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>`
+```
+
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive`|  **Content**: Explicit, Mixed, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
+
+In this example, the insights report results are displayed for OneDrive accounts included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any OneDrive accounts in the organization with that mode.
+
+### View the details for a specific mode for OneDrive accounts
+
+To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>`
+```
+
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
 
 ## Download the results of the insights report
-
 
 ## Audit activities for the insights report
