@@ -53,7 +53,7 @@ In addition to next-generation protection and firewall policies, there are three
 - **Controlled folder access**, which is an important part of ransomware protection (Intune is required to set up and manage)
 - **Attack surface reduction rules**, which help reduce device vulnerability (Intune is required to set up and manage)
 
-[Web content filtering](mdb-web-content-filtering.md), which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. For more information, see [Web content filtering](mdb-web-content-filtering.md).
+[Web content filtering](mdb-web-content-filtering.md), which enables your security team to track and regulate access to websites based on content categories. Examples of categories include adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. For more information, see [Web content filtering](mdb-web-content-filtering.md).
 
 [Controlled folder access](mdb-controlled-folder-access.md) allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Intune. For more information, see [Set up or edit your controlled folder access policy](mdb-controlled-folder-access.md).
 
