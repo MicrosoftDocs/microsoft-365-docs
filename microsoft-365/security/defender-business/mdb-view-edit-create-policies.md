@@ -53,10 +53,12 @@ In Defender for Business, there are two main types of default policies that are 
 In addition to next-generation protection and firewall policies, there are three other types of policies to configure for the best protection with Defender for Business:
 
 - **Web content filtering**, which turns on web protection for your organization.
-- **Controlled folder access**, which is an important part of ransomware protection (requires Intune to set up and manage)
-- **Attack surface reduction rules**, which help reduce vulnerability to cyberthreats and attacks on devices (requires Intune requires Intune to set up and manage)
+- **Controlled folder access**, which is an important part of ransomware protection (Intune is required to set up and manage)
+- **Attack surface reduction rules**, which help reduce device vulnerability (Intune is required to set up and manage)
 
 Web content filtering, which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization.
+
+
 
 ## View your existing policies
 
