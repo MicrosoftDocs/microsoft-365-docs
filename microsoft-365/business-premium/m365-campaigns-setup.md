@@ -6,11 +6,11 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: overview
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/23/2023
-ms.localizationpriority: high
+ms.date: 03/27/2023
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -24,7 +24,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business for campaigns or other businesses"
 ---
 
-# Setup for Microsoft 365 Business for Campaigns
+# Set up Microsoft 365 Business for Campaigns
 
 After you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
@@ -37,7 +37,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
+| Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
 | Operating systems (servers) | Windows Server or Linux Server <br/>(Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).)  |
 
 > [!TIP]
@@ -51,7 +51,7 @@ Here's how to sign in:
 
 1. Find the username and password we sent to the email address you used when you [signed up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
-2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank"><https://admin.microsoft.com></a>.
+2. In the browser, go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890).
 
 3. Type your username and password. Select **Sign in**.
 
@@ -61,12 +61,12 @@ Here's how to sign in:
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to <a href="https://office.com" target="_blank"><https://Office.com></a>.
+1. Go to [https://office.com](https://office.com).
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Provide your staff a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) for help signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
+> Provide your staff a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) for help signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
 
 ## Customize your sign-in page with a privacy and consent notice
 

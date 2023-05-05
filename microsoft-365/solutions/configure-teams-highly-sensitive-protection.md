@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 03/09/2023
+ms.date: 03/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -31,7 +31,7 @@ description: "Learn how to deploy teams with protection for highly sensitive dat
 
 In this article, we look at setting up a team for a highly sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article.
 
-For this tier of protection, we create a sensitivity label that can be used across your organization for highly sensitive teams and files. Only members of your organization and guests that you have specified will be able to decrypt files that use this label. If you need to further isolate permissions so that only members of a specific team can decrypt files, see  [Deploy a team with security isolation](secure-teams-security-isolation.md).
+For this tier of protection, we create a sensitivity label that can be used across your organization for highly sensitive teams and files. Only members of your organization and guests that you have specified will be able to decrypt files that use this label.
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
@@ -75,7 +75,7 @@ To add an authentication context
 
 4. Click **Save**.
 
-Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to a terms of use as a condition of access.
+Next, create a conditional access policy that applies to that authentication context and that requires guests to use multifactor authentication when accessing SharePoint.
 
 To create a conditional access policy
 1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
@@ -137,39 +137,41 @@ Once you've created the label, you need to publish it to the users who will use 
 
 ## Create a team
 
-Further configuration of the highly sensitive scenario is done in the SharePoint site associated with the team, so the next step is to create a team.
+Further configuration of the highly sensitive scenario is done in the team itself and in the SharePoint site associated with the team, so the next step is to create a team.
+
+We'll create the team in the Teams admin center.
 
 To create a team for highly sensitive information
-1. In Teams, click **Teams** on the left side of the app, then click **Join or create a team** at the bottom of the teams list.
-2. Click **Create team** (first card, top left corner).
-3. Choose **Build a team from scratch**.
-4. In the **Sensitivity** list, choose the **Highly sensitive** label that you just created.
-5. Under **Privacy**, click **Private**.
-6. Type a name for the team, and then click **Create**.
-7. Add users to the team, and then click **Close**.
+1. In the Teams admin center, expand **Teams** and select **Manage teams**.
+1. Select **Add**.
+1. Type a name and description for the team.
+1. Add one or more owners for the team. (Keep yourself as an owner so you can [choose a default sensitivity label for files](#choose-a-default-sensitivity-label-for-files) below.)
+1. Choose the sensitivity label that you created for highly sensitive information from the **Sensitivity** dropdown list.
+1. Select **Apply**.
 
 ## Private channel settings
 
 In this tier, we restrict creating private channels to team owners.
 
 To restrict private channel creation
-1. In the team, click **More options**, and then click **Manage team**.
-2. On the **Settings** tab, expand **Member permissions**.
-3. Clear the **Allow members to create private channels** check box.
+1. In the Teams admin center, select the team that you created, and then select **Edit**.
+1. Expand **Member permissions**.
+1. Set **Add and edit private channels** to **Off**.
+1. Select **Apply**.
 
-You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
-
-## Shared channel settings
+### Shared channel settings
 
 [Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
 
-## SharePoint settings
+### SharePoint settings
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
 - Restrict access to the site to members of the team only
 - Choose a default sensitivity label for the document library connected to the team.
 
-### Restrict site access to team members
+The default sensitivity label must be configured in the site itself and can't be set up from the SharePoint admin center or via PowerShell.
+
+#### Restrict site access to team members
 
 Each time you create a new team with the highly sensitive label, you need to turn on restricted site access on the associated SharePoint site. This prevents people from outside the team from accessing the site or its content. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
 
@@ -192,9 +194,11 @@ To restrict site access for the site connected to your team, run the following c
 Set-SPOSite -Identity <siteurl> -RestrictedAccessControl $true
 ```
 
-### Choose a default sensitivity label for files
+#### Choose a default sensitivity label for files
 
 We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them. (This requires a Microsoft Syntex - SharePoint Advanced Management license.)
+
+You need to be a team owner to do this task.
 
 To set a default sensitivity label for a document library
 
@@ -208,7 +212,7 @@ To set a default sensitivity label for a document library
 
 1. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select the highly sensitive label from the drop-down box.
 
-For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label).
+For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label) and [Add a sensitivity label to SharePoint document library](https://support.microsoft.com/office/54b1602b-db0a-4bcb-b9ac-5e20cbc28089).
 
 ## See Also
 

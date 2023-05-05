@@ -6,10 +6,10 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/06/2023
+ms.date: 03/16/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -68,7 +68,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -84,7 +84,7 @@ You can start a new general purpose automated investigation on the device if nee
 
 For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-## Initiate live response Session
+## Initiate live response session
 
 Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
@@ -99,15 +99,15 @@ As part of the investigation or response process, you can collect an investigati
 > [!IMPORTANT]
 > These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
-To download the package (Zip file) and investigate the events that occurred on a device
+To download the package (Zip file) and investigate the events that occurred on a device:
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
 
 2. Specify in the text box why you want to perform this action. Select **Confirm**.
 
-3. The zip file will download
+3. The zip file downloads.
 
-Alternate way:
+Alternate steps:
 
 1. Select **Action center** from the response actions section of the device page.
 
@@ -117,7 +117,7 @@ Alternate way:
 
    :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
 
-The package contains the following folders:
+For Windows devices, the package contains the following folders:
 
 |Folder|Description|
 |---|---|
@@ -135,6 +135,21 @@ The package contains the following folders:
 |Users and Groups|Provides a list of files that each represent a group and its members.|
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
+
+The collection packages for macOS and Linux devices contain the following:
+
+|Object|macOS|Linux|
+|---|---|---|
+|Applications|A list of all installed applications|Not applicable|
+|Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
+|File|A list of all open files with the corresponding processes using these files|A list of all open files with the corresponding processes using these files|
+|History|Shell history|Not applicable|
+|Kernel modules|All loaded modules|Not applicable|
+|Network connections|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Interface configuration</li><li>Proxy settings</li><li>VPN settings</li></ul>|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>IP list</li><li>Proxy settings</li></ul>|
+|Processes|A list of all running processes|A list of all running processes|
+|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information</li><li>Operating system information</li>|
+|System security information|<ul><li>Extensible Firmware Interface (EFI) integrity information</li><li>Firewall status</li><li>Malware Removal Tool (MRT) information</li><li>System Integrity Protection (SIP) status</li>|Not applicable|
+|Users and groups|<ul><li>Login history</li><li>Sudoers</li></ul>|<ul><li>Login history</li><li>Sudoers</li></ul>|
 
 ## Run Microsoft Defender Antivirus scan on devices
 
@@ -191,14 +206,14 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > [!IMPORTANT]
 >
 > - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
-> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 > - You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 > - The feature supports VPN connection.
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
-> - Exclusion for Linux isolation is not supported.
+> - Exclusion for both macOS and Linux isolation is not supported.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 

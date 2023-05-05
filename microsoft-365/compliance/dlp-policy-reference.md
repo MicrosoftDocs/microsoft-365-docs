@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 04/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -128,7 +128,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
-DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
+DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
 - users
 - groups
@@ -215,31 +215,18 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
-
-<!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
-<!--
-- What is a rule in the context of a Policy?
-- when and why should I have more than one rule?
-- The purpose of rule groups
-- How do I tune the behavior of a Policy through the tuning of rules
-- what's in a rule-->
-
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
-- [**Incident Reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
-- [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
+- [**Incident reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
+- [**Additional options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
 
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
-
-### The priority by which rules are processed
+### The priority by which rules are evaluated and applied
 
 #### Hosted service workloads
 
@@ -264,22 +251,86 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 #### For endpoints
 
-Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
+When an item matches multiple DLP rules, DLP goes uses through a complex algorithm to decide which actions to apply. Endpoint DLP will apply the aggregate or sum of most restrictive actions. DLP uses these factors when making the calculation.
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with most restrictive enforcement on the [endpoint activities](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) is the one that gets enforced on the content. For example, if content matches all of the following rules, then rule 2 takes precedence over the other rules since it's the most restrictive.
+**Policy priority order** 
+When an item matches multiple policies and those policies have identical actions, the actions from the highest priority policy is applied.
 
-- Rule 1: only audits all activity
-- *Rule 2: blocks all activity*
-- Rule 3: blocks all activity with option for end user to override
+**Rule priority order**
+When an item matches multiple rules in a policy and those rules have identical actions, the actions from the highest priority rule is applied.
 
-In the below example, Rule 1 takes precedence over the other matching rules since it's the most restrictive.
+[**Mode of the policy**](/microsoft-365/compliance/dlp-create-deploy-policy#state) 
+When an item matches multiple policies and those policies have identical actions, the actions from all policies that are in *Turn it on* state (enforce mode) are applied preferentially over the policies in *Test with policy tips* and *Test* state.
 
-- *Rule 1: blocks activity and doesn't allow user override*
-- Rule 2: blocks activity and allows user overrides
-- Rule 3: only audits all activity
-- Rule 4: no enforcement
+**The type of [action](#actions)** assigned to a [user activity](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on)
+When an item matches multiple policies and those policies differ in actions, the aggregate or sum of the most restrictive actions are applied.
 
-All the other rules are evaluated but their actions aren't enforced. Audit logs will show the most restrictive rule applied on the file. If there's more than one rule that matches and they're equally restrictive, then policy and rule priority governs which rule would be applied on the file.
+**[Authorization groups](/microsoft-365/compliance/endpoint-dlp-using#scenario-7-authorization-groups-preview)** configuration
+When an item matches multiple policies and those policies differ in action, the aggregate or sum of the most restrictive actions are applied.
+
+**[override options](#user-overrides)**
+When an item matches multiple policies and those policies differ in the override option, actions are applied in this order:
+
+*No override* > *Allow override*
+
+Here are scenarios that illustrate the runtime behavior. For the first three scenarios, you have three DLP policies configured like this:
+
+|Policy name|Condition to match|Action|Policy priority|
+|---------|---------|---------|---------|
+|ABC|Content contains credit card number|Block print, audit all other user egress activities| 0| 
+|MNO|Content contains credit card number|Block copy to USB, audit all other user egress activities|1|
+|XYZ|Content contains U.S. social security number|Block copy to clipboard, audit all other user egress activities|2|
+
+##### Item contains credit card numbers
+
+An item on a monitored device contains credit card numbers, so it matches policy ABC and policy MNO. Both ABC and MNO are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers and U.S. social security numbers
+
+An item on a monitored device contains credit card numbers and U.S. social security numbers, so this item matches policy ABC, policy MNO, and policy XYZ. All three policies are in *Turn it on* mode.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|XYZ|Audit|**Block**|Audit|Audit|Audit|**Block**|Audit|Audit|
+|Actions applied at runtime|Audit|**Block**|**Block**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different policy state
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* mode and policy *MNO* is in *Test* state.
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|Audit|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different override configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *Override* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Block with override**|Audit|Audit|**Block**|Audit|Audit|
+|MNO|Audit|Audit|**Block without override**|Audit|Audit|Audit|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Block without override**|Audit|Audit|**Block**|Audit|Audit|
+
+##### Item contains credit card numbers, different authorization groups configuration
+
+An item on a monitored device contains credit card number, so it matches policy ABC and policy MNO. Policy ABC is in *Turn it on* state and policy *MNO* is in *Turn it on* state. They have different *authorization group* actions configured
+
+|Policy|Cloud egress action|Copy to clipboard action|Copy to USB action|Copy to network share action|Unallowed apps action|Print action|Copy via Bluetooth action|Copy to remote desktop action|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
+|MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
@@ -371,10 +422,10 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - Content is shared from Microsoft 365
 - Document created by
-- Document created by member of
+- Document created by member of (currently deprecated for customers not already using this condition) 
 - Document name contains words or phrases
-- Document name matches patterns
-- Document size over
+- Document size equals or is greater than
+- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
 
@@ -383,12 +434,13 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - Content is shared from Microsoft 365
 - Document created by
-- Document created by member of
+- Document created by member of (currently deprecated for customers not already using this condition) 
 - Document name contains words or phrases
-- Document name matches patterns
-- Document size over
+- Document size equals or is greater than
+- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
+- Document is shared
 
 ##### Conditions Teams chat and channel messages supports
 
@@ -558,8 +610,9 @@ The actions that are available in a rule are dependent on the locations that hav
 #### Devices actions
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- Restrict access or encrypt the content in Microsoft 365 locations.
 - Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-- Audit or restrict activities on Windows devices
+- Audit or restrict activities on devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
@@ -609,7 +662,12 @@ See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restric
 
 #### On-premises repositories actions
 
-- Restrict access or remove on-premises files
+- Restrict access or remove on-premises files.
+    - Block people from accessing files stored in on-premises repositories
+    - Set permissions on the file (permissions inherited from the parent folder)
+    - Move file from where it's stored to a quarantine folder
+
+ See, [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions) for full details.
 
 #### Power BI actions
 
@@ -809,7 +867,7 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |- **Content is shared from Microsoft 365** </br>- **only with people inside my organization**        | No actions are configured         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Notifications are sent when a file is uploaded |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it's uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
+|- **Content is shared from Microsoft 365**    |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
 
 ### User overrides
 
@@ -839,17 +897,19 @@ To learn more about user overrides, see:
 /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
 /microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
-When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
+When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes the original message as an attachment that matches a DLP policy.
 
 DLP feeds incident information to other Microsoft Purview Information Protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
-
-<!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
 Alerts can be sent every time an activity matches a rule, which can be noisy or they can be aggregated into fewer alerts based on number of matches or volume of items over a set period of time.
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
 DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+
+#### Evidence collection for file activities on devices (preview)
+
+If you've enabled **Setup evidence collection for file activities on devices (preview)** and added Azure storage accounts, you can select **Collect original file as evidence for all selected file activities on Endpoint** and the Azure storage account you want to copy the items to. You must also choose the activities you want to copy items for. For example, if you select **Print** but not **Copy to a network share**, then only items that are printed from monitored devices will be copied to the Azure storage account.
 
 ### Additional options
 
