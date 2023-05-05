@@ -44,9 +44,9 @@ In Defender for Business, there are two main types of default policies that are 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured; and 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices.
 
-[Next-generation protection](mdb-next-generation-protection.md) includes robust antivirus and antimalware protection for computers and mobile devices. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. To learn more about next-generation protection policies, including your settings and options, see [Review or edit your next-generation protection policies in Microsoft Defender for Business](mdb-next-generation-protection.md).
+[Next-generation protection](mdb-next-generation-protection.md) includes robust antivirus and antimalware protection for computers and mobile devices. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. To learn more about next-generation protection policies, including your settings and options, see [Review or edit your next-generation protection policies](mdb-next-generation-protection.md).
 
-[Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
+[Firewall policies](mdb-firewall.md) help secure devices by establishing rules that determine what network traffic is permitted to flow to and from devices. You can use firewall protection to specify whether to allow or to block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent connections when the device is on a network with untrusted devices. To learn more about firewall policies and settings, see [Firewall](mdb-firewall.md).
 
 ## Policies to configure in Defender for Business
 
@@ -56,7 +56,7 @@ In addition to next-generation protection and firewall policies, there are three
 - **Controlled folder access**, which is an important part of ransomware protection (Intune is required to set up and manage)
 - **Attack surface reduction rules**, which help reduce device vulnerability (Intune is required to set up and manage)
 
-Web content filtering, which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization.
+Web content filtering, which enables your security team to track and regulate access to websites based on content categories. Examples of categories inculde adult content, high bandwidth content, and legal liability content. When you set up your web content filtering policy, you enable web protection for your organization. To learn more about web content filtering, see [Web content filtering](mdb-web-content-filtering.md).
 
 
 
@@ -86,7 +86,7 @@ Web content filtering, which enables your security team to track and regulate ac
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups](mdb-create-edit-device-groups.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
@@ -126,7 +126,7 @@ Web content filtering, which enables your security team to track and regulate ac
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
 
-   To learn more about device groups, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).
+   To learn more about device groups, see [Device groups](mdb-create-edit-device-groups.md).
 
 8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Defender for Business](mdb-next-generation-protection.md).
 
@@ -141,7 +141,7 @@ Web content filtering, which enables your security team to track and regulate ac
 Choose one or more of the following tasks:
 
 - [Manage devices](mdb-manage-devices.md)
-- [Create a new policy in Defender for Business](mdb-create-new-policy.md)
-- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
+- [Create a new policy](mdb-create-new-policy.md)
+- [View and manage incidents](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
