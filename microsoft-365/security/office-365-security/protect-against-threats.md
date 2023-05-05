@@ -232,7 +232,7 @@ For detailed instructions for configuring Safe Attachments policies and global s
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
-For more information about the recommended settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+For more information about the recommended settings for Safe Links, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 
