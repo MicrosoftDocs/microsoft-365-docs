@@ -67,7 +67,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     - **Tier 2 Analysts**
 
-      Tier 1 capabilities with the addition to [live response](live-response.md) and Manage Security Settings in Security Center.
+      Tier 1 capabilities with the addition of [live response](live-response.md) and managing security settings in Microsoft Defender Security Center.
 
     For more information, see [Use role-based access control](rbac.md).
 
