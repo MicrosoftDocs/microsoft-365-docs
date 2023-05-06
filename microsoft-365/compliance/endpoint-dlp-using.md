@@ -360,7 +360,27 @@ The user must be accessing the website through Microsoft Edge.
 4. To protect sensitive data from being pasted into Chrome, install the [Microsoft Defender Browser Protection](https://chrome.google.com/webstore/detail/microsoft-defender-browse/bkbeeeffjjeopflfhgeknacdieedcoml) extension, available from the Chrome Web Store.
  
 ### Create your DLP policy
-You can set up different levels of enforcement when it comes to blocking data from being pasted into a browser, depending on your needs.
+You can set up different levels of enforcement when it comes to blocking data from being pasted into a browser. To do this, create different URL groups. For instance, you can create a policy that warns users against posting U.S. Social Security Numbers (SSN) to any website, and that triggers an audit action for websites in Group A. You can create another policy that completely blocks the paste action--without giving a warning--for all of the websites in Group B.
+
+**To create a URL group**
+
+1. In Microsoft Purview, open the [compliance portal](https://sip.compliance.microsoft.com/homepage) and navigate to **Data loss prevention** > **Endpoint DLP settings**, and scroll down to **Browser and domain restrictions to sensitive data**. Expand the section.
+2. Scroll down to **Sensitive service domain groups**.
+3. Choose **Create sensitive service domain group**.
+    - Enter a **Group name**.
+    - In the **Sensitive service domain** field, enter the URL for the first website you want to monitor and then choose **Add site**.
+    - Continue adding URLs for the rest of the websites you want to monitor in this group.
+    - When you are finished adding all URLs to your group, choose **Save**.
+4. Create as many separate groups of URLs as you need.
+5. Next, create a DLP policy as described in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
+6. On the [Define policy settings page](https://sip.compliance.microsoft.com/datalossprevention/policies) in the DLP policy creation flow, select **Create or customize advanced DLP rules** and then choose **Next**.
+7. On the **Customize advanced DLP rules** page, choose **Create rule**.
+8. Enter a name and description for the rule, and then add your conditions.
+9. Scroll down to the **Actions** section, and choose **Add an action**.
+10. Choose **Audit or restrict activities when users access sensitive sites**
+11. Choose **Add or remove Sensitive site groups**.
+12. Select the group you created in Step 3 that you want this policy to apply to, and then choose **Add**.
+13. 
 
 ## Scenario 8: Authorization groups
 
