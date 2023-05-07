@@ -130,32 +130,39 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
-## Reset business passwords in bulk
+## Password reset at scale
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
-  
+For complete information on how to change passwords at scale or enforce password change at next login via Microsoft Graph Powershell check out this blog post by Padure Sergio: [Force password change for all users in Microsoft 365 - Microsoft Graph Powershell Edition](https://blog.raindrops.dev/blog/force-password-change-for-all-users-in-office-365/)
+
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
 For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
-  
-## Force a password change for all users in your business
-
-Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
 
 ## Set strong passwords
 
-1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Connect to [Microsoft Graph Powershell](/powershell/microsoftgraph/installation):
+
+    ```powershell
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
+    ```
 
 2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+    Get-MgUser -All | ForEach-Object -Process { Update-MgUser -UserId $_.Id -PasswordPolicies DisableStrongPassword }
 
 3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Get-MgUser -UserId user@contoso.com | ForEach-Object -Process { Update-MgUser -UserId $_.Id -PasswordPolicies DisableStrongPassword }
     ```
+4. You can turn strong password requirements back on by using this command:
+
+    ```powershell
+    Get-MgUser -UserId user@contoso.com | ForEach-Object -Process { Update-MgUser -UserId $_.Id -PasswordPolicies None }
+    ```
+
+Additional information concerning this command can be found here: [https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguser](/powershell/module/microsoft.graph.users/update-mguser)
 
 > [!NOTE]
 > The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
