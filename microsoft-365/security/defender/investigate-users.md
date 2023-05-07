@@ -82,17 +82,20 @@ This section shows the hierarchy for the identity as reported by Microsoft Defen
 
 ### Account tags
 
-Defender for Identity pulls tags out of Active Directory to give you a single interface for monitoring your Active Directory users and entities. These tags provide you with information about the entity from Active Directory, including:
+Defender for Identity pulls tags out of Active Directory to give you a single interface for monitoring your Active Directory users and entities. Tags provide you with details from Active Directory about the entity, and include:
 
-- Partial: The user, device, or group is not synced from the domain, and is partially resolved via a global catalog. Some attributes aren't available.
-- Unresolved: The device doesn't resolve to a valid identity in the Active Directory forest. No directory information is available.
-- Deleted: The entity is deleted from Active Directory.
-- Disabled: The entity is disabled in Active Directory.
-- Locked: The entity supplied the wrong password too many times and is locked.
-- Expired: The entity is expired in Active Directory.
-- New: The entity was created less than 30 days ago.
-- Sensitive: The entity is considered as sensitive.
-- Honeytoken: The entity is tagged manually as a honeytoken.
+|Name | Description |
+|-----|-------------|
+| **New** | Indicates that the entity was created less than 30 days ago. |
+| **Deleted** | Indicates that the entity was permanently deleted from Active Directory. |
+| **Disabled** |  Indicates that the entity is currently disabled in Active Directory. The *disabled* attribute is an Active Directory flag that's available for user accounts, computer accounts, and other objects to indicate that the object is not currently in use. When an object is disabled, it can't be used to sign in or perform actions in the domain.|
+| **Enabled** | Indicates that the entity is currently enabled in Active Directory, indicating that the entity is currently in use, and can be used to sign in or perform actions in the domain.  |
+| **Expired** |  Indicates that the entity is expired in Active Directory. When a user account is expired, the user is no longer able to log in to the domain or access any network resources. The expired account is essentially treated as if it were disabled, but with an explicit expiration date set. <br><br>**Note**: Any services or applications that the user was authorized to access may also be affected, depending on how they are configured. |
+| **Honeytoken** |   Indicates that the entity is manually tagged as a honeytoken. |
+| **Locked** |  Indicates that the entity supplied the wrong password too many times, and is now locked. |
+| **Partial** | Indicates that the user, device, or group is not in synch with the domain, and is partially resolved via a global catalog. In this case, some attributes aren't available. |
+| **Unresolved** |  Indicates that the device doesn't resolve to a valid identity in the Active Directory forest. No directory information is available. |
+| **Sensitive** |  Indicates that the entity is considered as sensitive. |
 
 For more information, see [Defender for Identity entity tags in Microsoft 365 Defender](/defender-for-identity/entity-tags).
 
