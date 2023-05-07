@@ -60,7 +60,7 @@ Defender for Business provides advanced security protection for your company's d
 
 # [Get Microsoft 365 Business Premium](#tab/getpremium)
 
-Microsoft 365 Business Premium includes Defender for Business, Microsoft Defender for Office 365 Plan 1, and Microsoft 365 Apps (formerly referred to as Office apps). For more information, see [Productivity and security for small and medium-sized businesses](../../business-premium/m365bp-secure-users.md).
+Microsoft 365 Business Premium includes Defender for Business, Microsoft Defender for Office 365 Plan 1, and Microsoft 365 Apps (formerly referred to as Office apps). For more information, see [Productivity and security for small and medium-sized businesses](../../business-premium/why-choose-microsoft-365-business-premium.md).
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -106,4 +106,5 @@ When you use Defender for Business, you'll work with two main portals: the Micro
 
 ## Next steps
 
+- [Get Microsoft Defender for Business servers](get-defender-business-servers.md) for your Windows and Linux servers.
 - Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).

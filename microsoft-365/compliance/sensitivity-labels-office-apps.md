@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/22/2023
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -380,7 +380,9 @@ Because of the impact of scoping labels to just files or emails, some existing l
 
 Before you can scope a label to just files or emails, you must first remove it if it's configured as one of these default labels, and remove it from any auto-labeling policies.
 
-**Limitation for this preview:**
+**Limitations:**
+
+- Currently, if you use any label policy settings with a sensitivity label that's scoped to just **Files** or scoped to just **Emails**, the same policy must also include at least one label with both scope options.
 
 - If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, first remove this label as the default label. You'll then be able to remove the email scope. Finally, reselect the now modified label as the default label for documents.
 

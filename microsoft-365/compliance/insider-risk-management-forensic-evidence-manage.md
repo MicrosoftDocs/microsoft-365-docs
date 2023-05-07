@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/02/2023
+ms.date: 03/01/2023
 audience: itpro
 ms.collection: m365-security-compliance
 ---
@@ -250,8 +250,8 @@ Once the forensic evidence is ingested, it will be retained for 120 days. You ca
 
 There are two payment plans available when purchasing the add-on through the Microsoft 365 admin center:
 
-- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. Customers can choose to be billed one time or split the bill into 12 monthly payments.
-- **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. 
+- **Pay yearly (available in all channels).** The annual commitment option allows you to buy the number of licenses you specify each month for 12 months. It’s suitable for customers who want to ensure they have capacity available each month to ingest forensic evidence without interruption. This payment plan will automatically replenish the number of licenses purchased each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over. Customers can choose to be billed one time or split the bill into 12 monthly payments. 
+- **Pay monthly (only available in web direct).** If you don't want to make an annual commitment, you can buy the number of licenses needed each month. Purchased capacity applies to the ingestion of forensic evidence beginning on the date of purchase and resets on the first of the month. Unused capacity does not carry over.
 
 ### Can I try the forensic capability before purchasing it?
 
@@ -284,3 +284,6 @@ If you use up the 20 GB of trial capacity and don't subsequently purchase the fo
 After purchasing capacity (or signing up for the 20-GB trial license), you can use the **Capacity** page to analyze how much capacity that you have used and the amount of capacity remaining. You can also analyze the amount of capacity you're using each month by selecting from the **Capacity usage in GB** list or by selecting **View all capacity usage**.
 
 ![Insider risk management forensic evidence Capacity page.](../media/insider-risk-management-capacity-billing.png)
+
+> [!NOTE]
+> The commerce platform has [a legacy billing platform and a modern billing platform](https://partner.microsoft.com/partnership/new-commerce). Insider risk management billing is designed to work with the modern billing platform. Purchased capacity is enforced on the ingestion of forensic evidence on a monthly basis, starting on the date of purchase and resetting the first of every month. Any purchased capacity can be fully used in that month and will be reset on the first of the next month. You can continue to [use the capacity until the date the license expires](https://partner.microsoft.com/partnership/new-commerce).
