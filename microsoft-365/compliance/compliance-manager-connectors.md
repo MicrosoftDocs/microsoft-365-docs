@@ -23,9 +23,9 @@ description: "Set up data connectors to build assessments for non-Microsoft serv
 
 # Working with data connectors in Compliance Manager
 
-Compliance Manager has an integrated set of data connectors for build assessments that cover services other than Microsoft. You can select the connectors you need within Compliance Manager. After setting up the connector, you can select the connector when you create your assessment.
+Compliance Manager has an integrated set of data connectors that can help you understand your compliance obligations across the many services that you use in your organization. These connectors retrieve signals from non-Microsoft products you might typically use, and integrate them into your assessments for automatic monitoring and testing of controls.
 
-Value prop....You can understand your compliance obligations across all the products that you use in your organization. Compliance Manager data connectors allow you to get signals from SaaS products you might typically use, and integrate them into your assessments for automatic monitoring and testing of controls.
+Each connector requires some setup steps within a service. Once you set some basic configurations, you'll follow a simple connector activation wizard in Compliance Manager to link your service's account information with the connector. You can then select the connector as an in-scope service when you create an assessment in Compliance Manager.
 
 ## Available connectors
 The connectors available for Compliance Manager are listed below. Additional connectors will be available in coming months.
@@ -48,18 +48,18 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 
 ## Step 1. Configure service settings to enable the connector
 
-Before activating a connector in Compliance Manager, you'll need to prepare by getting the Oath token.....  Make sure you have the account email and password for the account you want the connector to receive signals from. If you have multiple accounts with the same product, you will need to set up individual connectors for each account. Connector setup is tied to a specific email address and password.
-
-Follow the specific instructions for each connector below:
+Each service requires that you do some configurations and get some basic information about your account. This information is used to create the connection between the service and the Compliance Manager connector so that the conector can retrieve the necessary signals. Visit the pages below and follow the setup instructions before you activate its connector in Compliance Manager:
 
 - [Salesforce setup](compliance-manager-connectors-salesforce.md)
 - [Zoom setup](compliance-manager-connectors-zoom.md)
 
 ## Step 2. Activate the connector in Compliance Manager
 
-The next step is to activate a connector in Compliance Manager by connecting it with the credentials for your account with the product. ... ensuring that you've ...set up a connector to your Salseforce account so that it knows how to connect to the API and get information about the settings in Salesforce. When you go through these steps to activate your connector, you'll then be able to use it in your assessments. In this process you "activate a connector," meaning you enable the connection between the connector and your account for the product, such as from Salesforce or Zoom. Once you activate a connector, you allow Compliance Manager to receive signals from your designated non-Microsoft service and evaluate configurations in order to determine whether controls are passing or failing.
+The next step is to "activate a connector" in Compliance Manager by connecting to your desired service instance. After you activate a connector, you can select it as a service to be monitored when creating an assesssment. The connector allows Compliance Manager to receive signals from your designated non-Microsoft service and evaluate configurations in order to determine whether controls are passing or failing.
 
-If you have more than one account for your product, such as accounts for production, for development and testing, for backup disaster recovery, etc., you'll need to activate a connector for each separate account. Connectors are activated using the email and password for the account. We refer to each account within a service as a **service instance**.
+If you have more than one account for your product, such as accounts for production, for development and testing, for backup disaster recovery, etc., you'll need to activate a connector for each separate account. We refer to each account within a service as a **service instance**.
+
+Follow the steps below to activte a connector:
 
 1. In Compliance Manager, select **Data connectors** in the upper right corner of your screen. You are taken to the Compliance Manager page within the **Data connectors** area of the Microsoft Purview compliance portal.
 
