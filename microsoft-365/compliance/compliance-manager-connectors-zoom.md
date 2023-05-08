@@ -97,4 +97,4 @@ Example:
 
 GET https://api.zoom.us/v2/accounts/me/settings?option=security  
 
-Authorization: Bearer <Your Token here> 
+Authorization: Bearer {Your Token here}
