@@ -33,7 +33,7 @@ The [missions](index.md) that were completed during the setup and configuration 
 
 Security operations (also referred to as *SecOps*) includes tasks that your security team performs in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-As you know, security management is important. As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks (and more!) are listed in the [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md).
+As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks (and more!) are listed in the [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md).
 
 ## Administration
 
