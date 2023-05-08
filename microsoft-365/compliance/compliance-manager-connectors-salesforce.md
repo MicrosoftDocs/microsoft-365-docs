@@ -21,6 +21,6 @@ search.appverid:
 description: "Configure settings in your Salesforce accounts in order to activate data connectors for Microsoft Purview Compliance Manager."
 ---
 
-# Salesforce data connector setup for Compliance Manager
+# Salesforce setup for Compliance Manager data connector
 
 Compliance Manager has
