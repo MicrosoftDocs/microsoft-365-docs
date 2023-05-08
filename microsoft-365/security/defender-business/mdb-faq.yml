@@ -85,7 +85,7 @@ sections:
         answer: |
           Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
           
-          See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
+          See [Set up web content filtering](mdb-web-content-filtering.md).
 
       - question: Can I use non-Microsoft antivirus/antimalware software with Defender for Business? 
         answer: |
