@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 03/14/2023
+  ms.date: 05/05/2023
   ms.reviewer: efratka
   f1.keywords: NOCSH 
   ms.collection: 
@@ -75,8 +75,8 @@ sections:
 
           See the following articles to learn more about your security policies in Defender for Business:
 
-          - [Understand next-generation configuration settings in Defender for Business](mdb-next-gen-configuration-settings.md)
-          - [Firewall settings in Defender for Business](mdb-firewall.md)
+          - [Set up your security policies and settings](mdb-configure-security-settings.md)
+          - [View or edit policies](mdb-view-edit-create-policies.md)
 
       - question: There's an integration issue between Defender for Business and Microsoft Intune
         answer: |

@@ -310,7 +310,7 @@
           href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
-        - name: Information barriers & Microsoft 365 services
+        - name: Information barriers & Microsoft Teams
           items:
             - name: Microsoft Teams and information barriers
               href: information-barriers-teams.md
@@ -318,8 +318,12 @@
               href: information-barriers-teams-shared-channels.md
             - name: Microsoft Teams PowerShell script and information barriers
               href: information-barriers-teams-powershell-script.md
+        - name: Information barriers & OneDrive
+          items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+        - name: Information barriers & SharePoint
+          items:
             - name: SharePoint and information barriers
               href: information-barriers-sharepoint.md
             - name: SharePoint information barriers compliance assistant (preview)
