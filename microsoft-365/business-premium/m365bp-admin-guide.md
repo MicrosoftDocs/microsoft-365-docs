@@ -1,5 +1,5 @@
 ---
-title: "Administrator guide for Microsoft 365 Business Premium"
+title: "Administration guide for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform."
 ---
 
-# Microsoft 365 Business Premium administrator guide
+# Microsoft 365 Business Premium administration guide
 
 Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
 
