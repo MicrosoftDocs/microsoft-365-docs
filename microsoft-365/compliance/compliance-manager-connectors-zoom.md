@@ -23,11 +23,11 @@ description: "Configure settings in your Zoom accounts in order to activate data
 
 # Zoom data connector setup for Compliance Manager
 
-Follow the instructions on this page to enble the connection between your Zoom account and the Compliance Manager data connector for Zoom.
+Follow the instructions on this page to enable the connection between your Zoom account and the Compliance Manager data connector for Zoom.
 
-Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account-by-account admins. This app type also enables you to utilize event subscriptions using Webhooks.
+Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across account-by-account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
-## About Zoom accout credentials
+## About Zoom account credentials
 
 **Zoom Account client credentials grant type**
 
@@ -46,7 +46,7 @@ Account administrators must grant developers role-based access permissions to cr
 
 **Difference from app credentials**
 
-- **Zoom account client credentials** is a new grant type developers can use with the Zoom OAuth Service to facilitate OAuth-authenticated requests without end user involvement. This document describes this grant type and how to use it.
+- **Zoom account client credentials** is a new grant type that developers can use with the Zoom OAuth Service to facilitate OAuth-authenticated requests without end user involvement. This document describes this grant type and how to use it.
 
 - **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
 
