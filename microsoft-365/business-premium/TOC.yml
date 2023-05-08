@@ -112,7 +112,7 @@
     - name: Administration guide
       href: m365bp-admin-guide.md
     - name: Security operations guide
-      href: m365bp-security-incident-quick-start.md
+      href: m365bp-security-operations-guide.md
 - name: Reference
   items:
     - name: Top 10 ways to secure your business data
