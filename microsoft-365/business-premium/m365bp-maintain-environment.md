@@ -27,7 +27,7 @@ description: "Maintain your systems, user accounts, and policies to help protect
 
 # Maintain your environment
 
-The missions you completed during the previous six missions focus on setting up your systems, user accounts, and securing your users, devices, and data. Now, you can put together plans for security operations and administration. 
+The [missions](index.md) that were completed during the setup and configuration process focused on setting up your subscription, user accounts, and devices, as well as securing users, devices, and data. Now, you can put together plans for security operations and administration. 
 
 ## Security operations 
 
@@ -39,7 +39,7 @@ As you know, security management is important. As threats are detected, those th
 
 Administration includes tasks that your administrators (also referred to as *admins*) perform in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
-As new employees come in and other employees leave, it's important to manage user accounts and devices. Your admins can add or remove users, reset passwords, reset devices to factory settings, and more. These kinds of tasks (and more!) are listed in the 
+As new employees come in and other employees leave, it's important to manage user accounts and devices. Your admins can add or remove users, reset passwords, reset devices to factory settings, and more. These kinds of tasks (and more!) are listed in the [Microsoft 365 Business Premium administrator guide](m365bp-admin-ops-guide.md).
 
 ## See also
 
