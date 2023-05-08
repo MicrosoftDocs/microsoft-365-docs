@@ -382,8 +382,6 @@
 
   - name: Detect threats and protect endpoints
     items:
-    - name: Defender for Endpoint Security Operations Guide 
-      href: mde-sec-ops-guide.md
     - name: Microsoft Defender Vulnerability Management
       href: ../defender-vulnerability-management/index.yml
     - name: Device discovery
