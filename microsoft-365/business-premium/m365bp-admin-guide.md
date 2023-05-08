@@ -65,7 +65,18 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 
 | Task | Resources to learn more |
 |:---|:---|
+| Add a domain (like contoso.com) to your Microsoft 365 subscription | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
+| Buy a domain | [Buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md) |
+| Remove a domain | [Remove a domain](../admin/get-help-with-domains/remove-a-domain.md) |
 
+## Subscriptions and billing
+
+| Task | Resources to learn more |
+|:---|:---|
+| View your bill or invoice | [View your Microsoft 365 for business subscription bill or invoice](../commerce/billing-and-payments/view-your-bill-or-invoice.md) |
+| Manage your payment methods | [Manage payment methods](../commerce/billing-and-payments/manage-payment-methods.md) |
+| Change the frequency of your payments | [Change your Microsoft 365 subscription billing frequency](../commerce/billing-and-payments/change-payment-frequency.md) |
+| Change your billing address | [Change your Microsoft 365 for business billing addresses](../commerce/billing-and-payments/change-your-billing-addresses.md) |
 
 
 > [!TIP]
