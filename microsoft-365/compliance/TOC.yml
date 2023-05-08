@@ -310,7 +310,7 @@
           href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
-        - name: Information barriers & Microsoft 365 services
+        - name: Information barriers & Microsoft Teams
           items:
             - name: Microsoft Teams and information barriers
               href: information-barriers-teams.md
@@ -318,8 +318,12 @@
               href: information-barriers-teams-shared-channels.md
             - name: Microsoft Teams PowerShell script and information barriers
               href: information-barriers-teams-powershell-script.md
+        - name: Information barriers & OneDrive
+          items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+        - name: Information barriers & SharePoint
+          items:
             - name: SharePoint and information barriers
               href: information-barriers-sharepoint.md
             - name: SharePoint information barriers compliance assistant (preview)
@@ -1774,29 +1778,45 @@
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
-          href: compliance-manager.md
-        - name: What's new in Compliance Manager
-          href: compliance-manager-whats-new.md
+          items:
+            - name: Overview
+              href: compliance-manager.md
+            - name: What's new
+              href: compliance-manager-whats-new.md
+            - name: Compliance Manager glossary of terms
+              href: compliance-manager-glossary.md
+            - name: Frequently asked questions (FAQ)
+              href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
-          href: compliance-manager-setup.md
-        - name: Build and manage assessments
-          href: compliance-manager-assessments.md
-        - name: Learn about assessment templates
-          href: compliance-manager-templates.md
-        - name: Compliance Manager templates list
-          href: compliance-manager-templates-list.md
-        - name: Working with improvement actions
-          href: compliance-manager-improvement-actions.md
-        - name: Updating improvement actions
-          href: compliance-manager-update-actions.md
+          items:
+            - name: Permissions and settings
+              href: compliance-manager-setup.md
+            - name: Configuration Analyzer for Microsoft Purview
+              href: compliance-manager-mcca.md
+        - name: Multicloud support in Compliance Manager
+          items:
+            - name: Learn about multicloud support
+              href: compliance-manager-multicloud.md
+            - name: Configure cloud settings
+              href: compliance-manager-cloud-settings.md  
+        - name: Create assessments
+          items:
+            - name: Build and manage assessments
+              href: compliance-manager-assessments.md
+            - name: Learn about Compliance Manager regulations
+              href: compliance-manager-templates.md
+            - name: Regulations list
+              href: compliance-manager-templates-list.md
+        - name: Improvement actions
+          items:
+            - name: Working with improvement actions
+              href: compliance-manager-improvement-actions.md
+            - name: Updating improvement actions
+              href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
-        - name: How your compliance score is calculated
+        - name: Scoring
           href: compliance-score-calculation.md
-        - name: Configuration Analyzer for Microsoft Purview
-          href: compliance-manager-mcca.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.yml
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance
