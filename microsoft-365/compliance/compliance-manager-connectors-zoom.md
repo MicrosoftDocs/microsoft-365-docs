@@ -64,7 +64,7 @@ The Zoom administrator must enable the integration account role with view and ed
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
-1. Navigate to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
+1. Log into your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
 1. Choose the **Server-to-Server OAuth** app type.
 1. Add a name for your app.
 1. App credentials: View your Account ID, Client ID and Client secret.
