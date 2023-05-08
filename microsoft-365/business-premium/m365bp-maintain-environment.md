@@ -31,18 +31,15 @@ The missions you completed during the previous six missions focus on setting up 
 
 ## Security operations 
 
+Security operations (also referred to as *SecOps*) includes tasks that your security team performs in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
+As you know, security management is important. As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks (and more!) are listed in the [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md).
 
-As you know, security management is important. As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks are listed in the [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md).
+## Administration
 
-Your business also needs a maintenance and operations plan. As new employees come in and other employees leave, it's important to manage user accounts and devices. 
+Administration includes tasks that your administrators (also referred to as *admins*) perform in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
-The missions you completed during the setup and configuration process were all about getting your systems, users, and data secured. Now, you'll need to perform certain tasks, such as adding or removing users, resetting passwords, and resetting devices to factory settings as needed. These kinds of tasks are what maintaining your environment is all about.
-
-For more information, see the following articles: 
-
-- [Security operations guide](m365bp-security-operations-guide.md).
-- [Administrator guide](m365bp-admin-ops-guide.md)
+As new employees come in and other employees leave, it's important to manage user accounts and devices. Your admins can add or remove users, reset passwords, reset devices to factory settings, and more. These kinds of tasks (and more!) are listed in the 
 
 ## See also
 
