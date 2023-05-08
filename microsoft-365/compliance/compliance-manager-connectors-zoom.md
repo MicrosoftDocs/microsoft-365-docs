@@ -23,13 +23,7 @@ description: "Configure settings in your Zoom accounts in order to activate data
 
 # Zoom data connector setup for Compliance Manager
 
-Compliance Manager has
-
-Client secret requires a new one every hour. You can copy and pset it in. if yo
-
-tokens refresh. Once you've set up the connector, it takes care of the token refresh automatically (we set it up on our part as part of the connector iteself). But if you create a new connector, you'll need to come back into Zoom to get a new token.
-
-
+Follow the instructions on this page to enble the connection between your Zoom account and the Compliance Manager data connector for Zoom.
 
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account-by-account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
@@ -44,6 +38,9 @@ The Zoom account **client credentials** grant type facilitates OAuth-authenticat
 - Tokens stop working when the app is deactivated.
 - Server-to-Server OAuth apps can be deleted.
 - Account administrators authorize the scopes available to Developers building these app types.
+
+> [!TIP]
+> Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up another connector for another account with the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
 
 Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) below for details.
 
