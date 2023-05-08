@@ -52,7 +52,7 @@ Account administrators must grant developers role-based access permissions to cr
 
 - **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
 
-## Configure Zoom for Compliance Manager connector setup
+## Setup steps
 
 #### Enable permissions
 
