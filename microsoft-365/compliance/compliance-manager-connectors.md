@@ -127,10 +127,3 @@ To delete a connector, you need to first locate your connector in the Purview **
 1. On the confirmation box, select **Delete**.
 
 Your connector is deleted and removed from the list of your connectors.
-
-## Scoring
-
-How to interpret assessment and improvement action scores with connectors.
-
-## Resources
-KEEP/DELETE? Get general information about [third-party data connectors](archiving-third-party-data.md) (remember that Compliance Manager connectors are unique to Compliance Manager).
