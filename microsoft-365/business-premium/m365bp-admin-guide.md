@@ -38,7 +38,7 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 | Learn about new features in the Microsoft 365 admin center | [What's new in the Microsoft 365 admin center](../admin/whats-new-in-preview.md) |
 | Find out about new product updates and features so you can help prepare users | [Stay on top of Microsoft 365 product and feature changes](../admin/manage/stay-on-top-of-updates.md) |
 | View usage reports to see how people are using Microsoft 365 | [Microsoft 365 Reports in the admin center](../admin/activity-reports/activity-reports.md) |
-| Contact technical support | [Get support for Microsoft 365 for business](../admin/get-help-support.md) |
+| Open a technical support ticket | [Get support for Microsoft 365 for business](../admin/get-help-support.md) |
 
 ## Users, groups, and passwords
 
