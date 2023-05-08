@@ -74,7 +74,7 @@ There are some markers we show where data cannot be reported.
 
 * **Statistical significance** – As described above we do not show data where the standard error of sampling is greater than 20%.
 * **No data** – This is displayed if for some reason this data element had no samples.
-* **Privacy requirement** – This is displayed for the network provider view if there were fewer than five customers in any aggregation result or if there were fewer than 24 samples in the aggregation. We do not provide performance customer data directly to network providers for customer privacy reasons.
+* **Privacy requirement** – This is displayed for the network provider view if there were fewer than five customers in any aggregation result or if there were fewer than 24 samples in the aggregation. We do not provide customer performance data directly to network providers for customer privacy reasons.
 * **Dominating customer** – Even where there are five or more customers, there may be cases where a customer can be guessed due to the specific network provider having a very large customer in a geographic area. To avoid this, we compare the population including the largest customer with the same population excluding the largest customer. Using a Cohen’s D calculation, we discard results where the population difference is greater than 0.5. This means that where the largest customer has a medium to large Cohen’s D effect on the aggregation result the result is blocked. A network provider simply needs to expand their geographic area where they have more customers to see results.
 
 The markers **Privacy requirement** and **Dominating customer** are not shown in customer reports.
@@ -85,7 +85,7 @@ In addition, we remove outliers from the sample source where outliers are define
 
 ## Network Provider Index Chart
 
-The Network Provider Index Chart (NPI CHart) shows aggregated performance and availability for network providers for a given State (or Province) and Country. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
+The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
 
 ## Related topics
 
