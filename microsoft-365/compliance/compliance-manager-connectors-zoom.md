@@ -35,7 +35,7 @@ Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports dif
 
 The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
 - The token is the owner’s access token.
-- The token’s time to live is 1 hour.
+- The token’s time to live is one hour.
 - There is no refresh token.
 - Tokens stop working when the app is deactivated.
 - Server-to-Server OAuth apps can be deleted.
@@ -97,4 +97,4 @@ Example:
 
 GET https://api.zoom.us/v2/accounts/me/settings?option=security  
 
-Authorization: Bearer {Your Token here}
+Authorization: Bearer {Your token here}
