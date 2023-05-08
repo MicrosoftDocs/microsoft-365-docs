@@ -346,6 +346,7 @@ The user must be accessing the website through Microsoft Edge.
 1. Finish configuring the rule and policy and apply it.
 
 ## Scenario 7: Restrict pasting sensitive content into a browser (preview)
+This scenario is for restricting users from pasting sensitive content into a browser web form or field.
 
 ### Prerequisites
 
@@ -362,7 +363,7 @@ The user must be accessing the website through Microsoft Edge.
 ### Create your DLP policy
 You can set up different levels of enforcement when it comes to blocking data from being pasted into a browser. To do this, create different URL groups. For instance, you can create a policy that warns users against posting U.S. Social Security Numbers (SSN) to any website, and that triggers an audit action for websites in Group A. You can create another policy that completely blocks the paste action--without giving a warning--for all of the websites in Group B.
 
-**To create a URL group**
+**Create a URL group**
 
 1. In Microsoft Purview, open the [compliance portal](https://sip.compliance.microsoft.com/homepage) and navigate to **Data loss prevention** > **Endpoint DLP settings**, and scroll down to **Browser and domain restrictions to sensitive data**. Expand the section.
 2. Scroll down to **Sensitive service domain groups**.
@@ -372,15 +373,23 @@ You can set up different levels of enforcement when it comes to blocking data fr
     - Continue adding URLs for the rest of the websites you want to monitor in this group.
     - When you are finished adding all URLs to your group, choose **Save**.
 4. Create as many separate groups of URLs as you need.
-5. Next, create a DLP policy as described in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
-6. On the [Define policy settings page](https://sip.compliance.microsoft.com/datalossprevention/policies) in the DLP policy creation flow, select **Create or customize advanced DLP rules** and then choose **Next**.
-7. On the **Customize advanced DLP rules** page, choose **Create rule**.
-8. Enter a name and description for the rule, and then add your conditions.
-9. Scroll down to the **Actions** section, and choose **Add an action**.
-10. Choose **Audit or restrict activities when users access sensitive sites**
-11. Choose **Add or remove Sensitive site groups**.
-12. Select the group you created in Step 3 that you want this policy to apply to, and then choose **Add**.
-13. 
+
+**Restrict pasting content into a browser**
+1. Create a DLP policy as described in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
+2. On the [Define policy settings page](https://sip.compliance.microsoft.com/datalossprevention/policies) in the DLP policy creation flow, select **Create or customize advanced DLP rules** and then choose **Next**.
+3. On the **Customize advanced DLP rules** page, choose **Create rule**.
+4. Enter a name and description for the rule, and then add your conditions.
+5. Scroll down to the **Actions** section, and choose **Add an action**.
+6. Choose **Audit or restrict activities when users access sensitive sites**
+7. Choose **Add or remove Sensitive site groups**.
+8. Select the group you created in Step 3 that you want this policy to apply to, and then choose **Add**.
+9. Expand **Conditions**, choose **Add condition**, and then select the **Sensitive info types**.
+10. Under **Content Contains**, scroll down and select the new sensitive information type that you previously chose or created.
+11. Under **Actions**, choose **Add or remove Sensitive site groups**, and select the group of sensitive sites you created that you want to monitor with this policy.
+12. Choose **Save**.
+13. Choose **Next**
+14. Choose whether you want to test your policy, turn it on right away, or keep it off, and then choose **Next**.
+15. Choose **Submit**.
 
 ## Scenario 8: Authorization groups
 
