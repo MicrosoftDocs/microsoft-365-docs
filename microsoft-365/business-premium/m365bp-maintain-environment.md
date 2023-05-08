@@ -39,7 +39,7 @@ As threats are detected, those threats must be reviewed and addressed. Regular a
 
 Administration includes tasks that your administrators (also referred to as *admins*) perform in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
-As new employees come in and other employees leave, it's important to manage user accounts and devices. Your admins can add or remove users, reset passwords, reset devices to factory settings, and more. These kinds of tasks (and more!) are listed in the [Microsoft 365 Business Premium administrator guide](m365bp-admin-ops-guide.md).
+As new employees come in and other employees leave, it's important to manage user accounts and devices. Your admins can add or remove users, reset passwords, reset devices to factory settings, and more. These kinds of tasks (and more!) are listed in the [Microsoft 365 Business Premium administration guide](m365bp-admin-guide.md).
 
 ## See also
 
