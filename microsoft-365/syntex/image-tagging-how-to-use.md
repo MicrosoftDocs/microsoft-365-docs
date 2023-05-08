@@ -40,7 +40,7 @@ If you already have an [Image Tags column in your library](https://support.micro
 
 2. On the **Column settings** panel, in the **Automatically tag images with detected objects** section, toggle the switch to **Yes**.
 
-![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-edit-column-toggle-highlighted.png)  
+   ![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-edit-column-toggle-highlighted.png)  
  
 Once enabled, any new images uploaded to the library will be tagged with the descriptive keywords.
 
@@ -52,11 +52,11 @@ If you don't have an Image Tags column in your library, do these steps to enable
 
 2. Enhanced image tagging is then activated. Images uploaded will be tagged with a set of descriptive keywords. The keywords will be available in the Image Tags column that will get added to the library view.
 
-![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-automate-menu.png)  
+   ![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-automate-menu.png)  
 
 Once the Image Tags column is configured, you can upload images and the relevant tags will displayed in the library for each image.
 
-![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
+   ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
 
 > [!NOTE]
 >    **Release notes**
