@@ -62,7 +62,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Task | Description  |
 |---------|---------|
 | Use the Threat analytics dashboard | Use the threat analytics dashboard to get an overview of the current threat landscape by highlighting reports that are most relevant to your organization. <br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Threat analytics** to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:<br/>- **Latest threats** lists the most recently published or updated threat reports, along with the number of active and resolved alerts.<br/>- **High-impact threats** lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.<br/>- **Highest exposure** lists threats with the highest exposure levels first. The exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.<br/><br/>3. Select the title of the one you want to investigate, and read the associated report.<br/><br/>4. You can also review the full Analyst report for more details, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.|
-| Remediate an item | Microsoft 365 Business Premium includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.</li><li>Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.</li><li>On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.</li><li>Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.</li></ol> |
+| Remediate an item | Microsoft 365 Business Premium includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
 
 
 ## Remediation actions in Microsoft 365 Business Premium
@@ -71,11 +71,12 @@ The following table summarizes remediation actions that are available in Microso
 
 | Source  | Actions  |
 |---------|---------|
-| Automated investigations      | <ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task </li></ul>       |
-| Manual response actions   | <ul><li>Run antivirus scan</li><li>Isolate device</li><li>Add an indicator to block or allow a file </li></ul>      |
-| Live response  | <ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file</li><li>Proactively hunt for threats</li></ul>  |
+| Automated investigations      | Quarantine a file<br/>Remove a registry key<br/>Kill a process<br/>Stop a service<br/>Disable a driver<br/>Remove a scheduled task |
+| Manual response actions   | Run antivirus scan<br/>Isolate device<br/>Add an indicator to block or allow a file |
+| Live response  | <br/>Collect forensic data<br/>Analyze a file<br/>Run a script<br/>Send a suspicious entity to Microsoft for analysis<br/>Remediate a file<br/>Proactively hunt for threats |
 
 
 ## See also
 
-[Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
+- [Microsoft 365 Business Premium administrator guide](m365bp-admin-guide.md)
+- [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
