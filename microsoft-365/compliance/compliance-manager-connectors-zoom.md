@@ -25,6 +25,8 @@ description: "Configure settings in your Zoom accounts in order to activate data
 
 Follow the instructions on this page to enable the connection between your Zoom account and the Compliance Manager data connector for Zoom.
 
+## Overview
+
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account by account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
 ## About Zoom account credentials
@@ -79,9 +81,9 @@ If your app is deactivated, existing tokens will no longer work. You can also ch
 
 **Use account credentials to get an access token**
 
-To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id: 
+To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id:.
 
-The successful response will be the access token, which is a Bearer token type that expires in an hour, with the scopes that you chose in your app settings screen.
+The successful response will be the access token, which is a Bearer token type that **expires in an hour**, with the scopes that you chose in your app settings screen.
 
 **Get a new access token**
 
