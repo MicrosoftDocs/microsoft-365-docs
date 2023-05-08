@@ -55,7 +55,7 @@ Each service requires that you do some configurations and get some basic informa
 
 ## Step 2. Activate the connector in Compliance Manager
 
-The next step is to "activate a connector" in Compliance Manager by connecting to your desired service instance. After you activate a connector, you can select it as a service to be monitored when creating an assesssment. The connector allows Compliance Manager to receive signals from your designated non-Microsoft service and evaluate configurations in order to determine whether controls are passing or failing.
+The next step is to "activate a connector" in Compliance Manager by connecting to your desired service. After you activate a connector, you can select it as a service to be monitored when creating an assesssment. The connector allows Compliance Manager to receive signals from your designated non-Microsoft service and evaluate configurations in order to determine whether controls are passing or failing.
 
 If you have more than one account for your product, such as accounts for production, for development and testing, for backup disaster recovery, etc., you'll need to activate a connector for each separate account. We refer to each account within a service as a **service instance**.
 
