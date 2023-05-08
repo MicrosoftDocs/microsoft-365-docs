@@ -30,22 +30,34 @@ Maintaining your Microsoft 365 Business Premium environment includes managing us
 
 Admin tasks are typically performed in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
-## Manage your subscription, user accounts, and more
-
-The following table lists tasks your admins perform, with links to how-to information (including videos).
+## General tasks
 
 | Task | Resources to learn more |
 |:---|:---|
-| *General tasks* |
 | Get started using the Microsoft 365 admin center | [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md) |
 | Learn about new features in the Microsoft 365 admin center | [What's new in the Microsoft 365 admin center](../admin/whats-new-in-preview.md) |
 | Find out about new product updates and features so you can help prepare users | [Stay on top of Microsoft 365 product and feature changes](../admin/manage/stay-on-top-of-updates.md) |
-| *Users and groups* |
+
+## Users, groups, and passwords
+
+| Task | Resources to learn more |
+|:---|:---|
 | Add a new user | [Add a new employee to Microsoft 365](../admin/add-users/add-new-employee.md) |
 | Assign licenses to users | [Assign Microsoft 365 licenses to users in the Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md) <br/><br/>[Assign Microsoft 365 licenses to user accounts by using PowerShell](../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) |
 | Assign admin roles to people who need admin permissions | [Assign admin roles in the Microsoft 365 admin center](../admin/add-users/assign-admin-roles.md) <br/><br/>[Assign admin roles to Microsoft 365 user accounts with PowerShell](../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)|
 | Remove licenses from users | [Unassign Microsoft 365 licenses from users in the Microsoft 365 admin center](../admin/manage/remove-licenses-from-users.md)<br/><br/>[Remove Microsoft 365 licenses from user accounts with PowerShell](../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md) |
 | Turn pronouns on or off | [Turn pronouns on or off for your organization in the Microsoft 365 admin center](../admin/add-users/turn-pronouns-on-or-off.md) |
-| Determine whether to allow guest access to groups for their whole organization or for individual groups.
+| Determine whether to allow guest access to groups for their whole organization or for individual groups | [Guest users in Microsoft 365 admin center](../admin/add-users/about-guest-users.md) |
+| Remove a user account when someone leaves your organization | [Overview: Remove a former employee and secure data](../admin/add-users/remove-former-employee.md) |
+| Reset passwords for user accounts | [Reset passwords in Microsoft 365 for business](../admin/add-users/reset-passwords.md) |
+
+## Email and calendars
+
+| Task | Resources to learn more |
+|:---|:---|
+| Migrate email and contacts from Gmail or another email provider to Microsoft 365 | [Migrate email and contacts to Microsoft 365](../admin/setup/migrate-email-and-contacts-admin.md) |
 
 
+
+> [!TIP]
+> Visit the [Microsoft 365 admin center help](../admin/index.yml) hub page to see more resources!
