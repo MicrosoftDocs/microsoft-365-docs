@@ -68,10 +68,12 @@ Follow the steps below to create a Server-to-Server OAuth app to use with accoun
 1. App credentials: View your Account ID, Client ID and Client secret.
 1. Information: Add information about your app, such as a short description and developer contact information (name and email address is required for activation).
 1. Toggle whether you’d like to enable event subscriptions. If enabled, choose the event subscriptions you'd like to use.
-1. If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes given below which are required for Microsoft's APIs:
+1. If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes listed below, which are required for Microsoft APIs:
     - user:read:admin
     - account:read:admin
-1. Your app should be activated. If you see errors that prevent activation, please address them. You will not be able to generate an access token to make API calls unless your app is activated. If your app is deactivated, existing tokens will no longer work. You can also choose to Deactivate your app in this section.
+1. Your app should be activated. If you see errors that prevent activation, please address them. You won't be able to generate an access token to make API calls unless your app is activated.
+
+If your app is deactivated, existing tokens will no longer work. You can also choose to deactivate your app in this section.
 
 #### Get access tokens for development environments
 
