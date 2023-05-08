@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform."
+description: "Get an overview of tasks your administrators perform to maintain your Microsoft 365 Business Premium subscription."
 ---
 
 # Microsoft 365 Business Premium administration guide
