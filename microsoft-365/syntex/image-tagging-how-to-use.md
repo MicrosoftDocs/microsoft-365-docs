@@ -58,9 +58,22 @@ Once the **Image Tags** column is configured, you can upload images and the rele
 
    ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
 
+### Release notes
+
+- Supported image file types: .bmp, .png, .gif, .jpeg, .jpg, .tif, .tiff, .ari, .arw, .bay, .cap, .crw, .cr2, .cr3, .dcr, .dcs, .dng, .drf, .eip, .erf, .fff, .heic, .heif, .iiq, .kdc, k25, .mef, .mos, .mrw, .nef, .nrw, .orf, .pef, .ptx, .pxn, .raf, .raw, .rwl, .rw2, .sr2, .srf, .srw, .x3f, and .3fr.
+
+- Time taken to reflect tags getting in the **Image Tags** column: Minimum: 5 minutes, maximum: 24 hours. 
+
+- Existing image processing: Currently, existing images are not processed when image tagger is enabled. Any newly uploaded images will be processed for automatic image tagging.
+
+- Responsible AI guidelines: Send us feedback on the image tagging quality. We will monitor it closely and take appropriate action based on the feedback.
+
+
+<!---
 > [!NOTE]
 >  **Release notes**
 > - Supported image file types: .bmp, .png, .gif, .jpeg, .jpg, .tif, .tiff, .ari, .arw, .bay, .cap, .crw, .cr2, .cr3, .dcr, .dcs, .dng, .drf, .eip, .erf, .fff, .heic, .heif, .iiq, .kdc, k25, .mef, .mos, .mrw, .nef, .nrw, .orf, .pef, .ptx, .pxn, .raf, .raw, .rwl, .rw2, .sr2, .srf, .srw, .x3f, and .3fr.
 > - Time taken to reflect tags getting in the **Image Tags** column: Minimum: 5 minutes, maximum: 24 hours. 
 > - Existing image processing: Currently, existing images are not processed when image tagger is enabled. Any newly uploaded images will be processed for automatic image tagging.
 > - Responsible AI guidelines: You can send feedback to us on the image tagging quality. We will monitor it closely and take appropriate action based on the feedback.
+--->
