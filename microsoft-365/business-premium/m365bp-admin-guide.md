@@ -80,7 +80,6 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 | Change the frequency of your payments | [Change your Microsoft 365 subscription billing frequency](../commerce/billing-and-payments/change-payment-frequency.md) |
 | Change your billing address | [Change your Microsoft 365 for business billing addresses](../commerce/billing-and-payments/change-your-billing-addresses.md) |
 
-
 ## See also
 
 - [Microsoft 365 admin center help](../admin/index.yml)
