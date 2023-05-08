@@ -29,29 +29,6 @@ Follow the instructions on this page to enable the connection between your Zoom 
 
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account by account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
-## About Zoom account credentials
-
-**Zoom Account client credentials grant type**
-
-The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
-- The token is the owner’s access token.
-- The token’s time to live is one hour.
-- There is no refresh token.
-- Tokens stop working when the app is deactivated.
-- Server-to-Server OAuth apps can be deleted.
-- Account administrators authorize the scopes available to Developers building these app types.
-
-> [!TIP]
-> Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
-
-Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) below for details.
-
-**Difference from app credentials**
-
-- **Zoom account client credentials** is a new grant type that developers can use with the Zoom OAuth Service to facilitate OAuth-authenticated requests without end user involvement. This document describes this grant type and how to use it.
-
-- **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
-
 ## Setup steps
 
 #### Enable permissions
@@ -99,3 +76,26 @@ Example:
 GET https://api.zoom.us/v2/accounts/me/settings?option=security  
 
 Authorization: Bearer {Your token here}
+
+## About Zoom account credentials
+
+**Zoom Account client credentials grant type**
+
+The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
+- The token is the owner’s access token.
+- The token’s time to live is one hour.
+- There is no refresh token.
+- Tokens stop working when the app is deactivated.
+- Server-to-Server OAuth apps can be deleted.
+- Account administrators authorize the scopes available to Developers building these app types.
+
+> [!TIP]
+> Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
+
+Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) below for details.
+
+**Difference from app credentials**
+
+- **Zoom account client credentials** is a new grant type that developers can use with the Zoom OAuth Service to facilitate OAuth-authenticated requests without end user involvement. This document describes this grant type and how to use it.
+
+- **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
