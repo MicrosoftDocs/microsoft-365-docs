@@ -39,7 +39,9 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 
 > [!NOTE]
-> The following parameters also collect screenshots during the log capture:  -l, -h, -c, -i, -a, -v and -t
+> The following parameters also collect screenshots during the log capture:
+>
+> -l, -h, -c, -i, -a, -v and -t
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 
