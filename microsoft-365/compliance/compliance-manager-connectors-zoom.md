@@ -58,13 +58,13 @@ Account administrators must grant developers role-based access permissions to cr
 
 These instructions are to enable Server-to-server OAuth permissions for the role being used to connect with Compliance Manager. The Zoom administrator must enable the integration account role with view and edit permissions for Server-to-Server OAuth apps.
 
-To do this, the administrator must enable the Server-to-Server OAuth app role. Go to User Management > Roles > Role Settings > Advanced features and select the View and Edit check boxes for Server-to-Server OAuth app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
+To do this, the administrator must enable the Server-to-Server OAuth app role. Go to **User Management** > **Roles** > **Role Settings** > **Advanced features** and select the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
 
-**Create a Server-to-Server OAuth app**
+#### Create a Server-to-Server OAuth app
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
-1. Navigate to the App Marketplace https://marketplace.zoom.com/develop/create.
+1. Navigate to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
 1. Choose the **Server-to-Server OAuth** app type.
 1. Add a name for your app.
 1. App credentials: View your Account ID, Client ID and Client secret. This is information you'll need when you set up the connector in Compliance Manager.
@@ -74,3 +74,6 @@ Follow the steps below to create a Server-to-Server OAuth app to use with accoun
     - user:read:admin
     - account:read:admin
 1. Your app should be activated. If you see errors that prevent activation, please address them. You will not be able to generate an access token to make API calls unless your app is activated. If your app is deactivated, existing tokens will no longer work. You can also choose to Deactivate your app in this section.
+
+#### Get access tokens for development environments
+

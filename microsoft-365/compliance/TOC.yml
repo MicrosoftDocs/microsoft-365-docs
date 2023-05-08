@@ -1800,12 +1800,12 @@
             - name: Configure cloud settings
               href: compliance-manager-cloud-settings.md
             - name: Data connectors
-              href: compliance-manager-connectors.md
-            - name: Connectors by service
               items:
-                - name: Salesforce
+                - name: Set up connectors to use in assessments
+                  href: compliance-manager-connectors.md
+                - name: Salesforce setup
                   href: compliance-manager-connectors-salesforce.md
-                - name: Zoom
+                - name: Zoom setup
                   href: compliance-manager-connectors-zoom.md
         - name: Create assessments
           items:
