@@ -10999,6 +10999,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-add-users.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-reset-passwords.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
+    "redirect_document_id": false
   }
  ]
 }
