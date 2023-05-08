@@ -56,7 +56,7 @@ If you don't have an Image Tags column in your library, do these steps to enable
 
 Once the Image Tags column is configured, you can upload images and the relevant tags will displayed in the library for each image.
 
-![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-edit-column-toggle-highlighted.png)  
+![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
 
 > [!NOTE]
 >    **Release notes**
