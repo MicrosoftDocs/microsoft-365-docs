@@ -29,16 +29,15 @@ Client secret requires a new one every hour. You can copy and pset it in. if yo
 
 tokens refresh. Once you've set up the connector, it takes care of the token refresh automatically (we set it up on our part as part of the connector iteself). But if you create a new connector, you'll need to come back into Zoom to get a new token.
 
-Go to marketplace.zoom.com/develop/create 
 
 
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account-by-account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
-## Understanding Zoom accout credentials
+## About Zoom accout credentials
 
 **Zoom Account client credentials grant type**
 
-The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end-user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
+The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
 - The token is the owner’s access token.
 - The token’s time to live is 1 hour.
 - There is no refresh token.
@@ -46,7 +45,7 @@ The Zoom account **client credentials** grant type facilitates OAuth-authenticat
 - Server-to-Server OAuth apps can be deleted.
 - Account administrators authorize the scopes available to Developers building these app types.
 
-Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See Enable permissions below for details.
+Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) below for details.
 
 **Difference from app credentials**
 
@@ -56,9 +55,11 @@ Account administrators must grant developers role-based access permissions to cr
 
 ## Configure Zoom for Compliance Manager connector setup
 
-These instructions are to enable Server-to-server OAuth permissions for the role being used to connect with Compliance Manager. The Zoom administrator must enable the integration account role with view and edit permissions for Server-to-Server OAuth apps.
+#### Enable permissions
 
-To do this, the administrator must enable the Server-to-Server OAuth app role. Go to **User Management** > **Roles** > **Role Settings** > **Advanced features** and select the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
+You'll need to enable server-to-Server OAuth permissions for the role being used to connect with Compliance Manager.
+
+The Zoom administrator must enable the integration account role with view and edit permissions for Server-to-Server OAuth apps. To do this, the administrator must enable the Server-to-Server OAuth app role. Go to **User Management** > **Roles** > **Role Settings** > **Advanced features** and select the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
 
 #### Create a Server-to-Server OAuth app
 
@@ -77,3 +78,22 @@ Follow the steps below to create a Server-to-Server OAuth app to use with accoun
 
 #### Get access tokens for development environments
 
+**Use account credentials to get an access token**
+
+To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id: 
+
+The successful response will be the access token, which is a Bearer token type that expires in an hour, with the scopes that you chose in your app settings screen.
+
+**Get a new access token**
+
+There are no refresh tokens for this grant type. To get a new access token, your app should call the /oauth/token endpoint again with the account_credentials grant.
+
+**Make API calls to Zoom endpoints**
+
+Use OAuth 2.0 to make API calls to Zoom endpoints. Send the access token in the Authorization header as a Bearer token.
+
+Example:
+
+GET https://api.zoom.us/v2/accounts/me/settings?option=security  
+
+Authorization: Bearer <Your Token here> 
