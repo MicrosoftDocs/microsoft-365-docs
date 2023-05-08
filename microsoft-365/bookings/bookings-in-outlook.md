@@ -60,24 +60,6 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 
    To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
-2. For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
-
-   ```Powershell:
-      get-mailbox adam@contoso.com | Format-List SharingPolicy
-   ```
-
-   If the command returns:
-
-   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
-
-   You must update the policy with one of the required domains:
-
-   ```Powershell
-   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
-   ```
-
-For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
-
 ## Turn Bookings with me on or off
 
 Bookings with me can be turned on or off for your entire organization or specific users. When Bookings with me is turned on, users can create a Bookings with me page and share links with others inside or outside your organization.
