@@ -67,6 +67,7 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 
 | Task | Resources to learn more |
 |:---|:---|
+| Use Windows Autopilot to set up and pre-configure new devices or to to reset, repurpose, and recover devices | [Overview of Windows Autopilot](/mem/autopilot/windows-autopilot) |
 | View current status of and manage devices | [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md) |
 | Onboard devices to Defender for Business | [Onboard devices to Defender for Business](../security/defender-business/mdb-onboard-devices.md) |
 | Offboard devices from Defender for Business | [Offboard a device from Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
