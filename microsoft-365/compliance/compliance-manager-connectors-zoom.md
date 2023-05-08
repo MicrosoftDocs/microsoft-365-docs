@@ -21,6 +21,6 @@ search.appverid:
 description: "Configure settings in your Zoom accounts in order to activate data connectors for Microsoft Purview Compliance Manager."
 ---
 
-# Zoom data connector setup for use with Compliance Manager
+# Zoom data connector setup for Compliance Manager
 
 Compliance Manager has
