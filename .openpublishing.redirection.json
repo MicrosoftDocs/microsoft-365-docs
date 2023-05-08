@@ -11009,6 +11009,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings.md",
     "redirect_url": "/mem/autopilot/windows-autopilot",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-remove-company-data.md",
+    "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+    "redirect_document_id": false
   }
  ]
 }
