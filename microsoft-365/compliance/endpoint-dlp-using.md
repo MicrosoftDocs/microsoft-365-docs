@@ -452,7 +452,7 @@ In this scenario, we'll define a group of printers that the legal department use
 
 1. The new DLP policy will appear in the policy list.
 
-## Scenario 9:  Network exceptions
+## Scenario 9: Network exceptions
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
