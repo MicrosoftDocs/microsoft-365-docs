@@ -33,7 +33,7 @@ The missions you completed during the setup and configuration process were all a
 
 For more information, see the following articles: 
 
-- [Review the Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md).
+- [Review the Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md).
 - [Add new users](m365bp-add-users.md).
 - [Reset passwords (as needed)](m365bp-reset-passwords.md).
 - [Remove user accounts](m365bp-review-remediation-actions-devices.md).
