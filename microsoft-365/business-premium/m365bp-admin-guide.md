@@ -63,6 +63,16 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 | Add users to a distribution group | [Add a user or contact to a Microsoft 365 distribution group](../admin/email/add-user-or-contact-to-distribution-list.md) |
 | Set up a shared mailbox so people can monitor and send email from a common email addresses, like `info@contoso.com` | [Create a shared mailbox](../admin/email/create-a-shared-mailbox.md) |
 
+## Devices
+
+| Task | Resources to learn more |
+|:---|:---|
+| View current status of and manage devices | [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md) |
+| Onboard devices to Defender for Business | [Onboard devices to Defender for Business](../security/defender-business/mdb-onboard-devices.md) |
+| Offboard devices from Defender for Business | [Offboard a device from Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
+| Manage devices with Intune | [What does device management with Intune mean?](/mem/intune/fundamentals/what-is-device-management)<br/><br/>[Manage your devices and control device features in Microsoft Intune](/mem/intune/fundamentals/manage-devices) |
+
+
 ## Domains
 
 | Task | Resources to learn more |
