@@ -1,9 +1,9 @@
 ---
-title: Image tagging in Microsoft Syntex
+title: Set up image tagging in Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 09/24/2020
+ms.date: 09/24/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,10 +14,10 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about image tagging in Microsoft Syntex.
+description: Learn how to set up image tagging in Microsoft Syntex.
 ---
 
-# Image tagging in Microsoft Syntex
+# Set up image tagging in Microsoft Syntex
 
 (Coming soon)
 
@@ -51,3 +51,7 @@ To turn image tagging on or off
 6. Click **Save**.
 
     ![Screenshot of image tagging control.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+
+## See also
+
+[Tag images in Microsoft Syntex](image-tagging-how-to-use.md)
