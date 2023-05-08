@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 5/8/2023
 ---
 
 # Get started using Attack simulation training
@@ -31,7 +31,7 @@ ms.date: 1/31/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 Watch this short video to learn more about Attack simulation training.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMhvB]
@@ -58,12 +58,12 @@ Watch this short video to learn more about Attack simulation training.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, LAM, CHE, NOR, ZAF, ARE and DEU.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation training is available in the following regions: APC, EUR, and NAM, and also in the following countries: ARE, AUS, BRA, CAN, CHE, DEU, FRA, GBR, IND, JPN, KOR, LAM, NOR, QAT, SGP, SWE, and ZAF.
 
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
 
-- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization as described in this article. Attack simulation training is not yet available in GCC High or DoD environments.
+- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in GCC High or DoD environments.
 
 > [!NOTE]
 > Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
@@ -78,7 +78,7 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Malware Attachment**: An attacker sends the recipient a message that contains an attachment. When the recipient opens the attachment, arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Link in Attachment**: This is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
+- **Link in Attachment**: This technique is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
 
 - **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
