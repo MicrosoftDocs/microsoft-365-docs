@@ -47,7 +47,7 @@ A clickable identity link is available in these views that will take you to the 
 
 When you investigate a specific identity, you'll see the:
 
-- [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timelines timeline
+- [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timeline
 - [Active Alerts](#alerts) tab
 - [Observed in organization](#observed-in-organization) tab
 - [Identity timeline](#timeline) tab
