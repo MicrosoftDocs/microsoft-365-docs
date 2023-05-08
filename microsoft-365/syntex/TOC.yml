@@ -139,6 +139,13 @@
         - name: Move or copy a file 
           href: content-processing-create-rules.md
 
+    - name: Image tagging
+      items: 
+        - name: Set up image tagging 
+          href: image-tagging.md
+        - name: Use image tagging 
+          href: image-tagging-how-to-use.md
+
     - name: Content query
       href: metadata-search.md
      
