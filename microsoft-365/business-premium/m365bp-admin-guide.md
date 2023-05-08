@@ -59,7 +59,12 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 | Add an email signature, legal disclaimer, or disclosure statement to email messages that come in or go out | [Create organization-wide signatures and disclaimers](../admin/setup/create-signatures-and-disclaimers.md) |
 | Set up, edit, or delete a security group | [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md) |
 | Add users to a distribution group | [Add a user or contact to a Microsoft 365 distribution group](../admin/email/add-user-or-contact-to-distribution-list.md) |
+| Set up a shared mailbox so people can monitor and send email from a common email addresses, like `info@contoso.com` | [Create a shared mailbox](../admin/email/create-a-shared-mailbox.md) |
 
+## Domains
+
+| Task | Resources to learn more |
+|:---|:---|
 
 
 
