@@ -34,6 +34,8 @@ Go to marketplace.zoom.com/develop/create
 
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account-by-account admins. This app type also enables you to utilize event subscriptions using Webhooks.
 
+## Understanding Zoom accout credentials
+
 **Zoom Account client credentials grant type**
 
 The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end-user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
@@ -52,3 +54,6 @@ Account administrators must grant developers role-based access permissions to cr
 
 - **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
 
+## Configure Zoom for Compliance Manager connector setup
+
+These instructions are to enable Server-to-server OAuth permissions for the role being used to connect with Compliance Manager. The Zoom administrator must enable the integration account role with view and edit permissions for Server-to-Server OAuth apps.
