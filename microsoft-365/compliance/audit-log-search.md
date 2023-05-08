@@ -31,10 +31,10 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 ## Microsoft 365 services that support auditing
 
-Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features that are supported by the unified audit log.
+Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services, apps, and features that are supported by the unified audit log.
 
 |Microsoft 365 service or feature|Record types|
-|---|---|
+|:-------------------------------|:-----------|
 |Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
 |Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
 |Communication compliance|ComplianceSupervisionExchange|
@@ -43,31 +43,32 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 |Dynamics 365|CRM|
 |eDiscovery (Standard + Premium)|Discovery, AeD|
+|Encrypted message portal|OMEPortal|
 |Exact Data Match|MipExactDataMatch|
 |Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated|
 |Forms|MicrosoftForms|
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 |Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
-|Microsoft Teams|MicrosoftTeams|
 |Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
+|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+|Microsoft Teams|MicrosoftTeams|
+|Microsoft To Do|MicrosoftToDo, MicrosoftToDoAudit|
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
 |Power Apps|PowerAppsApp, PowerAppsPlan|
 |Power Automate|MicrosoftFlow|
 |Power BI|PowerBIAudit|
 |Quarantine|Quarantine|
-|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 |Sensitive information types|DlpSensitiveInformationType|
 |Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
-|Encrypted message portal|OMEPortal|
 |SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation|
 |Stream|MicrosoftStream|
+|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
 |Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 |Viva Goals|Viva Goals|
 |Workplace Analytics|WorkplaceAnalytics|
 |Yammer|Yammer|
-|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
 
