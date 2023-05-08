@@ -24,3 +24,9 @@ description: "Configure settings in your Salesforce accounts in order to activat
 # Salesforce setup for Compliance Manager data connector
 
 Compliance Manager has
+
+this is what we need for setting up salesforce.
+Username
+password
+token
+

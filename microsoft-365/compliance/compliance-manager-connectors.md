@@ -71,7 +71,7 @@ If you have more than one account for your product, such as accounts for product
 
 1. On the **Connector name** page, enter a unique name. You might want a name that helps identify which account the connector is for; for example, "Salesforce Prod" for your Salseforce production account. Remember that a connector is tied to a specific account, using one email and password. Then select **Next**.
 
-1. On the **Authentication** page, enter the credentials for the account that you want to link to the connector. In the **Username** field, enter the email address for the account. In the **Password** field, enter the account's password. In the **Token** field, enter the OAuth access token for the account which you obtained in Step 1 above. Select **Validate connection**. It'll take a few seconds to validate the connection.
+1. On the **Authentication** page, enter the credentials for the account that you want to link to the connector. The specific fields depend on the service you're connecting to, but are usually a variation of email or account ID, password, and token. See the sepcific setup instructions for each service to lean how to get this information. When done entering authentication information, select **Validate connection**. It'll take a few seconds to validate the connection.
 
 1. If the connection to your account is validated, you'll see a **Validation succeeded** message. If validation fails, enter your credential again until the connection is validated Select **Next**.
 

@@ -67,7 +67,7 @@ Follow the steps below to create a Server-to-Server OAuth app to use with accoun
 1. Log into your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
 1. Choose the **Server-to-Server OAuth** app type.
 1. Add a name for your app.
-1. App credentials: View your Account ID, Client ID and Client secret.
+1. App credentials: View your Account ID, Client ID and Client secret. You may want to copy these, as you'll need them when when you [activate a connector](compliance-manager-connectors.md#step-2-activate-the-connector-in-compliance-manager) in Compliance Manager for Zoom.
 1. Information: Add information about your app, such as a short description and developer contact information (name and email address is required for activation).
 1. Toggle whether you’d like to enable event subscriptions. If enabled, choose the event subscriptions you'd like to use.
 1. If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes listed below, which are required for Microsoft APIs:
