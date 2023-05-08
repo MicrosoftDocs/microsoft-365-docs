@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 05/08/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -96,7 +96,14 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, select **Roles and Scopes**.
 3. Select **Adaptive scopes**, and then **+ Create scope**.
-4. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
+4. Follow the prompts in the configuration where you'll first be asked to assign administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units that will restrict the scope membership.
+    
+    > [!NOTE]
+    > Because administrative units don't yet support SharePoint sites, you won't be able to create an adaptive scope for SharePoint sites if you select administrative units.
+    
+    If you don't want to restrict the adaptive scope by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
+
+5. Then select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
 
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
 
