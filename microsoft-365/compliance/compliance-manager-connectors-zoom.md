@@ -56,24 +56,25 @@ Account administrators must grant developers role-based access permissions to cr
 
 #### Enable permissions
 
-You'll need to enable server-to-Server OAuth permissions for the role being used to connect with Compliance Manager.
-
-The Zoom administrator must enable the integration account role with view and edit permissions for Server-to-Server OAuth apps. To do this, the administrator must enable the Server-to-Server OAuth app role. Go to **User Management** > **Roles** > **Role Settings** > **Advanced features** and select the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
+The user who will handle the connector activation process for Zoom will need view and edit permissions so that they can set up a Server-to-Server OAuth app in Zoom. The administrator must enable the Server-to-Server OAuth app role by going to **User Management** > **Roles** > **Role Settings** > **Advanced features** and selecting the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
 
 #### Create a Server-to-Server OAuth app
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
 1. Log into your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
-1. Choose the **Server-to-Server OAuth** app type.
-1. Add a name for your app.
-1. App credentials: View your Account ID, Client ID and Client secret. You may want to copy these, as you'll need them when when you [activate a connector](compliance-manager-connectors.md#step-2-activate-the-connector-in-compliance-manager) in Compliance Manager for Zoom.
-1. Information: Add information about your app, such as a short description and developer contact information (name and email address is required for activation).
-1. Toggle whether you’d like to enable event subscriptions. If enabled, choose the event subscriptions you'd like to use.
-1. If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes listed below, which are required for Microsoft APIs:
+1. From the **Develop** drop-down menu, select **Build application**.
+1. Find the **Server-to-Server OAuth** app type card, then select **Create**.
+1. Enter a name for your app, then select **Create**.
+1. On the **App credentials** page: View and copy your Account ID, Client ID and Client secret.
+    > [!TIP]
+    > These are the three items you'll enter when activating the Zoom connector in Compliance Manager. The client secret expires after one hour, so you may want to activate the connector in Compliance Manager at the same time as, or right after, you generte the client secret.
+1. On the **Information** page: Add information about your app, such as a short description and developer contact information (name and email address is required for activation).
+1. On the **Feature** page: Set the toggle to your preferred setting for event subscriptions. If enabled, choose the event subscriptions you'd like to use.
+1. On the **Scopes** page: If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes listed below, which are required for Microsoft APIs:
     - user:read:admin
     - account:read:admin
-1. Your app should be activated. If you see errors that prevent activation, please address them. You won't be able to generate an access token to make API calls unless your app is activated.
+1. On the **Activation** page: Select **Activate your app**. Your app should be activated. If you see errors that prevent activation, address them and try to activaet again. You won't be able to generate an access token to make API calls unless your app is activated.
 
 If your app is deactivated, existing tokens will no longer work. You can also choose to deactivate your app in this section.
 
