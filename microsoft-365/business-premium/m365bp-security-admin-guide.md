@@ -31,7 +31,6 @@ Security administrators (also referred to as *security admins*) perform various 
 - Defining or editing security policies
 - Onboarding or offboarding devices
 - Taking steps to protect high-risk user accounts or devices
-- ... and more.
 
 The following table lists tasks security admins typically perform along with links to additional information.
 
