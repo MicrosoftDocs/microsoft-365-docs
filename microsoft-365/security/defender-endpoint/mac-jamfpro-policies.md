@@ -913,7 +913,7 @@ JAMF requires you to define a set of machines for a configuration profile.
 You need to make sure that all machines receiving Defender's package, also receive *all* configuration profiles listed above.
 
 > [!WARNING]
-> JAMF supports Smart Computer Groups, that allow deploying e.g. configuration profiles or policies to all machines matching certain criteria evaluated dynamically.
+> JAMF supports Smart Computer Groups that allow deploying, such as configuration profiles or policies to all machines matching certain criteria evaluated dynamically.
 > It is a powerful concept that is widely used for configuration profiles distribution.
 >
 > However, keep in mind that these criteria should not include presence of Defender on a machine.
