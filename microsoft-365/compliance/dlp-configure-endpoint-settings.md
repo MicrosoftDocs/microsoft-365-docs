@@ -350,13 +350,13 @@ Up to 50 domains can be configured under Service domains.
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 	
-When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to:
+When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to take any of the following actions:
 
 - print from a website
 - copy data from a website
 - save a website as local files
-- upload or drag/drop a sensitive file to an excluded website (this is configured in the policy)
-- paste sensitive data to an excluded website (this is configured in the policy)
+- upload or drag/drop a sensitive file to an excluded website
+- paste sensitive data to an excluded website
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
