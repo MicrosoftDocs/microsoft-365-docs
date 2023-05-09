@@ -36,6 +36,7 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 > Make sure you have the right [permissions](/microsoft-365/compliance/audit-log-search) to search for audit logs.
 
 ## Search the audit logs for actions performed by Defender Experts
+
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) to use [Audit New Search](/microsoft-365/compliance/audit-new-search).
 2. Provide a **Date and time range (UTC)**.
 3. Select the Workload and Record Type from the list shown in the table below to further narrow your search
