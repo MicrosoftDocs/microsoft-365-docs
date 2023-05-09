@@ -77,7 +77,7 @@ The attribute names for users and groups are based on [filterable recipient prop
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
-To configure an adaptive scope:
+### How to configure an adaptive scope
 
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
@@ -103,7 +103,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     
     If you don't want to restrict the adaptive scope by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-5. Then select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
+5. Select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
 
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
 
