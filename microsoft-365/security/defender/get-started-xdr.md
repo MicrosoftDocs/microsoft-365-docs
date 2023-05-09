@@ -24,44 +24,39 @@ ms.date: 11/17/2022
 
 # Get started with Microsoft Defender Experts for XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+Once the Defender Experts for XDR team is ready to onboard your organization, you’ll receive a welcome email to continue the setup and get you started.
 
-Once the Defender Experts for XDR team is ready to onboard you, we'll reach out to get you started.
-
-## Activate your trial license
-
-1. Select the link in the welcome email to go directly to the Defender Experts settings page in the Microsoft 365 Defender portal. You can also open this page by going to **Settings** > **Defender Experts**.
-2. Read the Defender Experts for XDR preview terms and conditions then select **Accept** to accept them.
-3. Get your free license in Microsoft 365 admin center. In the checkout page, select **Place order**.
+Select the link in the welcome email to directly launch the Defender Experts settings wizard in the Microsoft 365 Defender portal. You can also open this wizard by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR requires the following permissions to investigate incidents and notify you when you need to take action:
+By default, Defender Experts for XDR requires Service provider access that lets our experts sign into your tenant and deliver services based on assigned security roles. [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
-- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details, [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
-- **Security reader** - This built-in Azure Active Directory (Azure AD) role lets our experts investigate incidents and provide guidance on necessary response actions.
+You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you’d like them to handle on your behalf:
 
-You can also provide our experts the following permissions to investigate incidents on your behalf:
+- **Investigate incidents and guide my responses** (default) – This option lets our experts proactively monitor and investigate incidents and guide you through any necessary response actions. (Access level: Security Reader)
+- **Respond directly to active threats** (recommended) – This option lets our experts contain and remediate active threats immediately while investigating, thus reducing the threat’s impact, and improving your overall response efficiency. (Access level: Security Operator)
 
-- **Security operator** (recommended) - In addition to the permissions provided to a security reader, this built-in Azure AD role lets our experts take necessary actions to remediate active threats.
-- **Security administrator** (optimal) - In addition to the permissions provided to a security operator, this built-in Azure AD role lets our experts configure security settings and deploy preventive measures.
+[Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
-[Learn more about Azure AD roles and permissions](/azure/active-directory/roles/permissions-reference)
+**SCREENSHOT**
 
-Follow these steps to grant our experts additional permissions:
+Follow these steps to grant our experts permissions:
 
-1. In the same Defender Experts settings page mentioned earlier, select **Manage permissions**.
-2. Under **Additional permissions**, select the other role(s) you want to grant.
-3. Select **Give access**.
+1. In the same Defender Experts settings page mentioned earlier, under **Permissions**, choose the access level(s) you want to grant our experts.
+2. Select **Next**, to add contact persons or teams.[**link to current document-tell us who to contact for imp matters**]
 
 > [!IMPORTANT]
-> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your network.
+> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization.
+
+To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**. In this page, you also have the option to turn **Access security data from all devices** on or off under the access levels.
+
+> [!IMPORTANT]
+> If you turn off Access security data from all devices, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. Learn more about device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md)
 
 ## Go to the next step
 
