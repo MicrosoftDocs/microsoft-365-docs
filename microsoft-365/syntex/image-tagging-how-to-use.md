@@ -54,9 +54,9 @@ If you don't have an **Image Tags** column in your library, use these steps to e
 
 2. Enhanced image tagging is then activated. Images uploaded are tagged with a set of descriptive keywords. The keywords are available in the **Image Tags** column that is added to the library view.
 
-3. Once the **Image Tags** column is configured, you can upload images. The relevant tags are displayed in the library for each image.
-
    ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
+
+3. Once the **Image Tags** column is configured, you can upload images. The relevant tags are displayed in the library for each image.
 
 ### Release notes
 
