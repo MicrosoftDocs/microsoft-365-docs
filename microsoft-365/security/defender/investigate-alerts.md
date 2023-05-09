@@ -251,7 +251,7 @@ There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert 
    > [!NOTE]
    > The **alert title (Name)** is based on the **alert type (IoaDefinitionId)**, which decides the alert title. Two alerts that have the same alert type can change to a different alert title.
 
-     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
 
 To tune an alert from the **Alerts** page:
 
