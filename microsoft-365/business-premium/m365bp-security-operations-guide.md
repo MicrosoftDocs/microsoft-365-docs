@@ -78,5 +78,6 @@ The following table summarizes remediation actions that are available in Microso
 
 ## See also
 
+- [Microsoft 365 Business Premium security administration guide](m365bp-security-admin-guide.md)
 - [Microsoft 365 Business Premium administrator guide](m365bp-admin-guide.md)
 - [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
