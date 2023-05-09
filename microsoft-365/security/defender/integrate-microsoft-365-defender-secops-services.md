@@ -52,8 +52,6 @@ An established Security Operations Center (SOC) should have a catalog of service
 - Data loss prevention
 - Brand monitoring
 
-Because Microsoft 365 Defender technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
-
 The components of Microsoft 365 Defender are:
 
 - **Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that uses Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at organizations.
