@@ -158,7 +158,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
     > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
 
-3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy.
+6. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy.
 
 > [!NOTE]
 > It can take up to five days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy.
