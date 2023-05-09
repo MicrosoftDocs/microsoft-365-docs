@@ -171,9 +171,9 @@ DLP can copy items that match policies on devices to an [Azure storage account](
 
 #### Restricted apps
 
-**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP takes when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
 
-When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
+When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity is `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
@@ -264,7 +264,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-For Windows devices, you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users see a toast notification asking them to open the file through Microsoft Edge.
 
 For macOS devices, you must add the full file path. To find the full path of Mac apps:
 
@@ -365,7 +365,7 @@ You can add maximum 50 websites into one group and can create maximum 20 groups.
 
 ##### Supported syntax for designating websites in a website group
 
-Do not add protocol, for example, https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+Don't add protocol, for example, https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.
@@ -412,7 +412,7 @@ You can create up to five customized options that appear when users interact wit
 
 ### Always audit file activity for devices
 
-By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
+By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn off this feature if you want this activity to be audited only when onboarded devices are included in an active policy.
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
