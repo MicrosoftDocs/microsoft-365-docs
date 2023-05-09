@@ -111,6 +111,8 @@
       href: m365bp-maintain-environment.md
     - name: Administration guide
       href: m365bp-admin-guide.md
+    - name: Security administration guide
+      href: m365bp-security-admin-guide.md
     - name: Security operations guide
       href: m365bp-security-operations-guide.md
 - name: Reference
