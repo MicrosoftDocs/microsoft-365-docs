@@ -40,6 +40,8 @@ For more information about what each plan includes, see [Microsoft 365 User Subs
 
 ## Top 10 ways to secure your business data
 
+:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" lightbox="media/top-10-ways-to-secure-data.png":::
+
 1. [Use multi-factor authentication](#1-use-multi-factor-authentication).
 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts).
 3. [Use preset security policies](#3-use-preset-security-policies).
