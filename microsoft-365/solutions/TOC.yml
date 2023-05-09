@@ -382,7 +382,7 @@
     - name: Configure apps using Microsoft Intune
       items: 
       - name: Overview
-        href: apps-configure-overview.md
+        href: apps-config-overview.md
       - name: Step 1. Configure the Company Portal
         href: apps-config-step-1.md
       - name: Step 2. Configure Microsoft Outlook
