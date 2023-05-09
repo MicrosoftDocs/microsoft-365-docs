@@ -1,6 +1,6 @@
 ---
-title: Understand next-generation protection configuration settings in Microsoft Defender for Business
-description: Understand antivirus and next-generation protection settings in Defender for Business, endpoint security for small and medium sized businesses.
+title: Review or edit your next-generation protection policies Microsoft Defender for Business
+description: Learn how to view and edit your next-generation protection policies in Defender for Business. These policies pertain to antivirus and anti-malware protection.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 05/04/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,20 +19,49 @@ ms.collection:
 - tier1
 ---
 
-# Understand next-generation protection settings in Microsoft Defender for Business
+# Review or edit your next-generation protection policies in Microsoft Defender for Business
 
-Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. The default policies are designed to protect your devices and users without hindering productivity. You can also customize the policies to suit your business needs. And, if you're using Microsoft Intune, you can use it to manage your security policies.
+In Defender for Business, next-generation protection includes robust antivirus and antimalware protection for computers and mobile devices. Default policies with recommended settings are included in Defender for Business. The default policies are designed to protect your devices and users without hindering productivity. However, you can customize your policies to suit your business needs. 
 
-**This article describes**:
+You can choose from several options for managing your next-generation protection policies:
 
-- [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
-- [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-- [How default settings in Defender for Business correspond to settings in Microsoft Intune](#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)
-- [Microsoft Defender Antivirus states (active, passive, and disabled)](#microsoft-defender-antivirus-states)
+- Use the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com) (recommended if you're using the standalone version of Defender for Business without Intune); or 
+- Use the Microsoft Intune admin center at [https://intune.microsoft.com](https://intune.microsoft.com) (available if your subscription includes Intune)
+
+## [**Microsoft 365 Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.
+
+3. Select an operating system tab (such as **Windows clients**).
+
+4. Expand **Next-generation protection** to view your list of policies.
+
+5. Select a policy to view more details about the policy, and make any needed changes.
+
+   To make changes or to learn more about policy settings, see the following articles: 
+   
+   - [View or edit device policies](mdb-view-edit-policies.md)
+   - [Understand next-generation configuration settings](mdb-next-generation-protection.md) 
+
+## [**Intune admin center**](#tab/Intune)
+
+1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<
+
+2. Select **Endpoint security**.
+
+3. Select **Antivirus** to view your policies in that category.
+
+4. Select an individual policy to edit it. 
+
+   For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+
+---
 
 ## Next-generation protection settings and options
 
-The following table lists settings and options.
+The following table lists settings and options for next-generation protection in Defender for Business.
 
 | Setting | Description |
 |:---|:---|
@@ -80,32 +109,11 @@ The following table describes settings that are preconfigured for Defender for B
 | [Check for signature updates before running scan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | By default, [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) is configured to check for security intelligence updates prior to running antivirus/antimalware scans. [Learn more about scan settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) and [Security intelligence updates](../defender-endpoint/microsoft-defender-antivirus-updates.md#security-intelligence-updates).   |
 | [How often (0-24 hours) to check for security intelligence updates](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | By default, [SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) is configured to check for security intelligence updates every four hours. [Learn more about scan settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) and [Security intelligence updates](../defender-endpoint/microsoft-defender-antivirus-updates.md#security-intelligence-updates). |
 
-## Microsoft Defender Antivirus states
-
-Microsoft Defender Antivirus is a key component of next-generation protection in Defender for Business. Depending on whether devices are onboarded to Defender for Business and whether those devices are running a non-Microsoft antivirus/antimwalware solution, Microsoft Defender Antivirus can have one of the following states: 
-
-- Active mode
-- Passive mode
-- Disabled (or uninstalled) mode
-
-The following table describes each state and what it means.
-
-| Microsoft Defender Antivirus state | What it means |
-|:---|:---|
-| **Active mode** <br/>(*recommended*) | Microsoft Defender Antivirus is used as the antivirus app on the machine. Files are scanned, threats are remediated, and detection information is reported in the Microsoft 365 Defender portal and in the Windows Security app on a device running Windows.<br/><br/>We recommend running Microsoft Defender Antivirus in active mode so that devices onboarded to Defender for Business will get all of the following types of protection:  <br/>- **Real-time protection**, which locates and stops malware from running on devices. <br/> - **Cloud protection**, which works with Microsoft Defender Antivirus and the Microsoft cloud to identify new threats, sometimes even before a single device is affected.<br/> - **Network protection**, which helps protect against phishing scams, exploit-hosting sites, and malicious content on the internet.<br/> - **Web content filtering**, which regulates access to websites based on content categories (such as adult content, high bandwidth, and legal liability) across all browsers.<br/> - **Protection from potentially unwanted applications**, such as advertising software, bundling software that offers to install other, unsigned software, and evasion software that attempts to evade security features.  |
-| **Passive mode** | A non-Microsoft antivirus/antimalware product is installed on the device, and even though the device has been onboarded to Defender for Business, Microsoft Defender Antivirus can detect threats but doesn't remediate them. Devices with Microsoft Defender Antivirus can still receive security intelligence and platform updates. <br/><br/>You can switch Microsoft Defender Antivirus to active mode automatically by uninstalling the non-Microsoft antivirus/antimalware product. |
-| **Disabled mode** | A non-Microsoft antivirus/antimwalware product is installed on the device, and the device hasn't been onboarded to Defender for Business. Whether Microsoft Defender Antivirus went into disabled mode automatically or was set manually, it's not currently running on the device. In this case, Microsoft Defender Antivirus neither detects nor remediates threats on the device.<br/><br/>You can switch Microsoft Defender Antivirus to active mode by uninstalling the non-Microsoft antivirus/antimalware solution and onboarding the device to Defender for Business. |
-
 ## Next steps
 
-- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
-- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
-
-
-## See also
-
-- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-- [Manage firewall settings in Defender for Business](mdb-custom-rules-firewall.md)
-- [View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
-- [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)
+- [Set up your firewall policies](mdb-firewall.md) and [custom rules for firewall policies](mdb-firewall.md).
+- [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable web protection automatically.
+- [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
+- [Enable your attack surface reduction rules](mdb-asr.md).
+- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)

@@ -106,4 +106,5 @@ When you use Defender for Business, you'll work with two main portals: the Micro
 
 ## Next steps
 
+- [Get Microsoft Defender for Business servers](get-defender-business-servers.md) for your Windows and Linux servers.
 - Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
