@@ -33,7 +33,7 @@ ms.reviewer: yaelbenari
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-The monthly security report provides information about an organization's protection state and the work that was done to prevent and respond to cyberthreats. This report helps organizations get a visual summary of key findings and overall preventative actions taken to enhance the organization's overall security posture completed in the last month. 
+The report helps organizations get a visual summary of key findings and overall preventative actions taken to enhance the organization's overall security posture completed in the last month. It helps you identify areas of strength and improvement, track your progress over time, and prioritize your actions based on risk and impact.  
 
 To access this report, in the navigation pane, choose **Reports > Endpoints > Monthly Security Summary**. The monthly security summary report contains the following sections:
 
@@ -48,23 +48,23 @@ To access this report, in the navigation pane, choose **Reports > Endpoints > Mo
 You can generate a PDF report of the summary, by selecting **Generate PDF report**. The generated report is a summary of the last 30 days.
 
 ## Microsoft Secure score
-Microsoft Secure Score is a measurement of an organization's security posture. A higher number indicates more recommended actions taken and a better posture and overall ability to predict, prevent, and respond to threats. The secure score card shows how the overall cybersecurity strength of an organization has improved in the past month and how it compares to other companies with similar number of managed devices.
+Microsoft Secure Score is a measurement of an organization's security posture and how well you have implemented security best practices and recommendations across the devices in your organization. The secure score card shows how the overall cybersecurity strength of an organization has improved in the past month and how it compares to other companies with similar number of managed devices.
 
 ## Secure score compared to other organizations 
-This score is an evaluation of an organization's security score in relation to organizations of a similar size. It's a way to benchmark an organization's performance in implementing security measures compared to other organizations. 
+This score is an evaluation of an organization's security score in relation to organizations of a similar size. It's a way to benchmark an organization's performance in implementing security measures compared to other organizations of an equivalent size. 
 
 
 ## Devices onboarded
-Devices must be onboarded to the service so that they can be protected. The devices card provides information on the number of devices that were onboarded in the last month as well as devices not yet onboarded. 
+The devices card provides information on the number of devices that were onboarded in the last month as well as devices still not onboarded. Onboarding devices are essential for enabling protection and detection capabilities. 
 
 ## Protection against threats
-This card shows how resilient your organization is to specific attacks. A higher number indicates better defense in place against phishing and ransomware. You'll also see how the protection increased in the last month. 
+This card shows how effective your defenses are against common attack vectors such as phishing and ransomware. A higher number indicates better defense in place against phishing and ransomware. The report shows how many threats were blocked or mitigated in the last month and how your protection level has increased.
 
 ## Web content monitoring and filtering 
-Shows the number of malicious URLs that were blocked in the last month. You'll also see the categories of URLs that were blocked and the number of clicks for each category. 
+Shows the number of malicious URLs that were blocked by Microsoft Defender for Endpoint in the last month. The report also shows the categories of URLs that were blocked and the number of clicks for each category.
 
 ## Suspicious or malicious activities
-Track how many incidents and alerts were resolved in the past month using the incidents card. The card also shows all active incidents and alerts. You'll also be able to see a list of the top 10 severe incidents, their status, number of alerts, and the impacted devices and users. 
+Track how many incidents and alerts were resolved in the past month using the incidents card. The card also shows all active incidents and alerts that require attention. You'll also be able to see a list of the top 10 severe incidents, their status, number of alerts, and the impacted devices and users. 
 
 
  
