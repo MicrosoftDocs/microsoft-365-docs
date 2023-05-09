@@ -97,7 +97,13 @@ A user can only hold one role at a time. Any change in a user's role will overri
 
 You can assign roles to users in order to grant access to specific assessments, or all assessments based on the regulation. Granting user access in these ways is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data.
 
-The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment or regulation remains restricted based on which activities the role allows.
+These four roles provide access to assessments:
+- Compliance Manager Reader
+- Compliance Manager Contribution
+- Compliance Manager Assessor
+- Compliance Manager Administration
+
+What you can do with each assessment remains restricted based on which activities the role allows.
 
 To grant users access to an assessment or all assessments for a regulation, open the its details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
 
@@ -256,10 +262,10 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments or regulations. From this page, you can make changes to role assignments.
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to role assignments.
 
  - When you grant a user access to an **assessment**: The user will have access to just that one assessment.
- - When you grant a user access to a **regulation**: The user will have access to any assessments created with that regulation.
+ - When you grant a user access to a **regulation**: The user will have access to any assessment created with that regulation, including existing assessements and any assessments created in the future.
 
 To add or remove user access roles for assessments and regulations, follow the steps below:
 

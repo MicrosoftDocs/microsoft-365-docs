@@ -81,7 +81,7 @@ For further details, see [Compliance Manager licensing guidance](/office365/serv
 
 ## Grant user access to regulations
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can access all regulations by default according to their role (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). This level of access means that a user can access assessments that curently exist or will be created in the future based on that regulation. You can restrict user access to only certain regulations by managing user roles from a regulation's details page. (You can also restrict access to individual assessments following [these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, their role extends by default to all regulations (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). This access means that, depending on their role type, they can view or interact with any existing or future assessments created with that regulation. You can restrict user access to only certain regulations by managing user roles from a regulation's details page. (You can also restrict access to individual assessments following [these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
 
 External users who need access for auditing or other purposes can also be assigned an access role for regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
