@@ -19,7 +19,7 @@ keywords:
 
 
 ## Next step
-
+<!--
 [![Step 5 to manage apps and licenses](../media/configure-managed-apps/configure-managed-apps-07.png)](apps-config-step-5.md)
-
+-->
 Continue with [Step 5](apps-config-step-5.md) to manage apps and licenses in Microsoft Intune.

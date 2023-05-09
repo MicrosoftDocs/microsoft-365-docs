@@ -49,8 +49,6 @@ This solution steps you through the process of creating app configuration polici
 
 :::image type="content" source="../media/configure-managed-apps/configure-managed-apps-01.png" alt-text="Steps used to configure managed apps with Microsoft Intune." border="false" :::
 
-[![Steps to configure apps to Microsoft Intune](../media/configure-managed-apps/configure-managed-apps-19.png)](apps-config-step-1.md)
-
 ## Configure the Company Portal
 
 The Company Portal apps, Company Portal website, and Intune app on Android are where users access company data and can do common tasks. Common task may include enrolling devices, installing apps, and locating information (such as for assistance from your IT department). Additionally, they allow users to securely access company resources. The end-user experience provides several different pages, such as Home, Apps, App details, Devices, and Device details. End-users can quickly find apps within the Company Portal.
@@ -79,7 +77,7 @@ The richest and broadest protection capabilities for Microsoft 365 data are avai
 
 For more information about configuring Microsoft Outlook, go to the following topic:
 
-- [Manage messaging collaboration access by using Outlook for iOS and Android with Microsoft Intune](../apps/app-configuration-policies-outlook.md)
+- [Manage messaging collaboration access by using Outlook for iOS and Android with Microsoft Intune](/mem/intune/apps/app-configuration-policies-outlook)
 
 ## Configure Microsoft Office
 
@@ -97,7 +95,7 @@ Edge for iOS and Android is designed to enable users to browse the web and suppo
 
 For more information about configuring Microsoft Edge, go to the following topic:
 
-- [Manage Microsoft Edge on iOS and Android with Intune](../apps/manage-microsoft-edge.md)
+- [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge)
 
 ## Configure Microsoft Teams
 

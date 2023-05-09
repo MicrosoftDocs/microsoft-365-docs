@@ -18,7 +18,7 @@ keywords:
 
 
 ## Next step
-
+<!--
 [![Step 7 - Verify app configuration](../media/configure-managed-apps/configure-managed-apps-07.png)](apps-config-step-5.md)
-
+-->
 Continue with [Step 7](apps-config-step-5.md) to verify app configuration in Microsoft Intune.

@@ -19,7 +19,7 @@ keywords:
 
 
 ## Next step
-
+<!--
 [![Step 3 - Configure Microsoft Office](../media/configure-managed-apps/configure-managed-apps-05.png)](apps-config-step-3.md)
-
+-->
 Continue with [Step 3](apps-config-step-3.md) to configure Microsoft Office in Microsoft Intune.

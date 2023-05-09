@@ -19,7 +19,7 @@ keywords:
 
 
 ## Next step
-
+<!--
 [![Step 4 Configure Microsoft Edge](../media/configure-managed-apps/configure-managed-apps-06.png)](apps-config-step-4.md)
-
+-->
 Continue with [Step 4](apps-config-step-4.md) to configure Microsoft Edge in Intune.
