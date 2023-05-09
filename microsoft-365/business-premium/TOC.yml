@@ -129,10 +129,10 @@
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus
       href: m365bp-threats-detected-defender-av.md
+    - name: Endpoint security in Microsoft Intune
+      href: /mem/intune/protect/endpoint-security-policy
     - name: Intune admin roles
       href: m365bp-intune-admin-roles-in-the-mac.md
-    - name: Map protection features to Intune settings
-      href: m365bp-map-protection-features-to-intune-settings.md
     - name: Windows Autopilot scenarios and capabilities
       href: /mem/autopilot/windows-autopilot-scenarios
 
