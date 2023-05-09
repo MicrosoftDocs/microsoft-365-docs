@@ -227,7 +227,7 @@ Microsoft 365 Business Premium also includes [Azure Information Protection Plan 
 
 See the following articles:
 
-- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#manage-calendar-sharing) 
+- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#5-manage-calendar-sharing)
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 | Subscription | Recommendations |
