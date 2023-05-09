@@ -243,7 +243,7 @@ After you complete the work, conduct testing, and upload evidence, the next step
 
 - **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
 
-Users will need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
+Users will need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations).
 
 ## Accepting updates to improvement actions
 
