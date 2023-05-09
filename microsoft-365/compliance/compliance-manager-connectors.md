@@ -1,5 +1,5 @@
 ---
-title: "Data connectors for Microsoft Purview Compliance Manager"
+title: "Connectors for Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,10 +18,10 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Set up data connectors to build assessments for non-Microsoft services in Microsoft Purview Compliance Manager."
+description: "Set up connectors to build assessments for non-Microsoft services in Microsoft Purview Compliance Manager."
 ---
 
-# Working with data connectors in Compliance Manager
+# Working with connectors in Compliance Manager
 
 Compliance Manager has an integrated set of data connectors that can help you understand your compliance obligations across the many services that you use in your organization. These connectors retrieve signals from non-Microsoft products you might typically use, and integrate them into your assessments for automatic monitoring and testing of controls.
 

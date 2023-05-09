@@ -1799,13 +1799,13 @@
               href: compliance-manager-multicloud.md
             - name: Configure cloud settings
               href: compliance-manager-cloud-settings.md
-            - name: Data connectors
+            - name: Connectors
               items:
                 - name: Set up connectors to use in assessments
                   href: compliance-manager-connectors.md
-                - name: Salesforce setup
+                - name: Salesforce
                   href: compliance-manager-connectors-salesforce.md
-                - name: Zoom setup
+                - name: Zoom
                   href: compliance-manager-connectors-zoom.md
         - name: Create assessments
           items:
