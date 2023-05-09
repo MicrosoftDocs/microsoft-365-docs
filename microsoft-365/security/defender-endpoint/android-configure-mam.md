@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: shthota
-author: shthota
+author: shthota77
 manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
@@ -246,3 +246,5 @@ Users can install and open the app to start the onboarding process.
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
+
+

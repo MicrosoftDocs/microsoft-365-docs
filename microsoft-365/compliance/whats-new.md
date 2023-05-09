@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/20/2023
+ms.date: 05/03/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,19 +39,43 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## May 2023
+
+### Data lifecycle management and records management
+
+- **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
+
+### Insider risk management
+
+- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
+
 ## April 2023
+
+### Communication compliance
+
+- New content on the [Filter email blasts feature](communication-compliance-policies.md#filter-email-blasts) and the [Email blasts senders report](communication-compliance-reports-audits.md#detailed-reports).
+- Updates to [User-reported messages policy](communication-compliance-policies.md#user-reported-messages-policy).
+- New fields for [Message Details reports](communication-compliance-reports-audits.md#message-details-report). 
+- New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
+- **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
+
 
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
 
-- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md)
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+- **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
 
 ### Insider risk management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+
 
 ### Sensitivity labels
 
@@ -102,7 +126,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 
 ### Device onboarding
-- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [Onboarding devices into device management](device-onboarding-macos-overview.md#onboarding-devices-into-device-management) devices
 
 ### eDiscovery
 
@@ -294,8 +318,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-templates) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
-- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
+- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-regulations) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#improvement-actions-details-page), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
 
 ### Data lifecycle management and records management
 

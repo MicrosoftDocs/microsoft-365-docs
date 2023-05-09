@@ -190,7 +190,7 @@ To take action on the message, see the next section.
 
 2. On the **Email** tab, select the quarantined email message by using either of the following methods:
 
-   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out. 
+   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out.
 
      :::image type="content" source="../../media/quarantine-user-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-user-message-selected-message-actions.png":::
 
