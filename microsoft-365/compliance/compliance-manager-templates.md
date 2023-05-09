@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/17/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -79,11 +79,11 @@ Similarly, templates that belong to the same regulation family are also counted 
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## Grant user access to individual regulations
+## Grant user access to regulations
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can access all regulations by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain regulations by managing user roles from a regulation's details page. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can access all regulations by default according to their role (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). This level of access means that a user can access assessments that curently exist or will be created in the future based on that regulation. You can restrict user access to only certain regulations by managing user roles from a regulation's details page. (You can also restrict access to individual assessments following [these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
 
-External users who need access for auditing or other purposes can also be assigned a role for viewing regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+External users who need access for auditing or other purposes can also be assigned an access role for regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
 #### Steps for granting access
 

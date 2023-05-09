@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/17/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -256,7 +256,12 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments or regulations. From this page, you can make changes to assessment-based role assignments. To add or remove such roles for users, follow the steps below:
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments or regulations. From this page, you can make changes to role assignments.
+
+ - When you grant a user access to an **assessment**: The user will have access to just that one assessment.
+ - When you grant a user access to a **regulation**: The user will have access to any assessments created with that regulation.
+
+To add or remove user access roles for assessments and regulations, follow the steps below:
 
 1. In **Compliance Manager settings,** select **User access**.
 
