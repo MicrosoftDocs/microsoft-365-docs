@@ -427,9 +427,9 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-## Microsoft Project activities
+## Microsoft Project for the web activities
 
-You can search the audit log for activities in Microsoft Project. For information about Microsoft Project, see [Microsoft Project](https://www.microsoft.com/microsoft-365/project/project-management-software).
+You can search the audit log for activities in Microsoft Project for the web. For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
 
 |Friendly name|Operation|Description|
 |:------------|:--------|:----------|
