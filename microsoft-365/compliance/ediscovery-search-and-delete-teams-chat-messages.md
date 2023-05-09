@@ -48,7 +48,7 @@ The first step is to create a case in eDiscovery (Premium) to manage the search 
 
 ## Step 2: Create a collection estimate
 
-After you create a case, the next step is to create a collection estimate to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 purges all items that are found in the collection estimate.
+After you create a case, the next step is to create a collection estimate to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 purges all items that are found in the collection estimate (within the 10 item per location limit).
 
 In eDiscovery (Premium), a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the collection estimate in the case that you created in the previous step. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
