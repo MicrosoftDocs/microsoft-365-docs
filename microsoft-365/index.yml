@@ -218,10 +218,10 @@ tools:
       imageSrc: /office/media/icons/deploy-blue.svg
       url: /microsoft-365/fasttrack/
     # Card
-    - title: Tech community
-      imageSrc: /office/media/icons/users-group.svg
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-    # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg
       url: /microsoft-365/community/
+    # Card
+    - title: Tech community
+      imageSrc: /office/media/icons/users-group.svg
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
