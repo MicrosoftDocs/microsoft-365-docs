@@ -223,6 +223,10 @@ PowerShell reporting cmdlets:
 
 ## What if the reports aren't showing data?
 
-If you aren't seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. [Safe Links policies](safe-links-policies-configure.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages.
+If you aren't seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Safe Links policies and Safe Attachments policies from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages. For more information, see:
 
-Also, double-check your filters. Remove all filters and then add them back one at a time.
+- [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
+- [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md)
+- [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
+
+Also, double-check your report filters. Remove all filters and then add them back one at a time.
