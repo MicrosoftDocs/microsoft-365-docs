@@ -30,4 +30,31 @@ ms.date: 11/17/2022
 
 As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they performed there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
 
-Note that [Audit (Standard)](../defender/compliance/audit-solutions-overview) is turned on by default for all Microsoft Defender Experts for XDR customers when paid licenses are assigned to the tenant. If you have a trial license, your service delivery manager will work with you to turn on Audit if it isn’t yet.
+Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview) is turned on by default for all Microsoft Defender Experts for XDR customers when paid licenses are assigned to the tenant. If you have a trial license, your service delivery manager will work with you to turn on Audit if it isn’t yet.
+
+> [!NOTE]
+> Make sure you have the right [permissions](/microsoft-365/compliance/audit-log-search) to search for audit logs.
+
+## Search the audit logs for actions performed by Defender Experts
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) to use [Audit New Search](/microsoft-365/compliance/audit-new-search).
+2. Provide a **Date and time range (UTC)**.
+3. Select the Workload and Record Type from the list shown in the table below to further narrow your search
+4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
+
+
+<div align="center">
+
+| Action performed by Defender Experts         | Workload | Record type |
+|--------------|:-----:|-----------:|
+| Sign into customer tenant |  AzureActiveDirectory |        AzureActiveDirectoryStsLogon |
+| Make changes to incidents in Microsoft 365 Defender portal      |  Microsoft365Defender |  MS365Dincident |
+|Make changes to alert suppression rules in Microsoft 365 Defender portal|Microsoft365Defender|MS365DSuppressionRule|
+|Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
+|Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
+
+</div>
+
+
+
+
+
