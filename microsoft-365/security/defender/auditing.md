@@ -57,10 +57,10 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 
-1.	Sign into the Microsoft Purview compliance portal to use Audit New Search.
-2.	Provide a Date and time range (UTC). 
-3.	Under Workload, choose MicrosoftDefenderExperts.
-4.	Select Search to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
+1. Sign into the Microsoft Purview compliance portal to use Audit New Search.
+2. Provide a Date and time range (UTC). 
+3. Under Workload, choose MicrosoftDefenderExperts.
+4. Select Search to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
 ## Search the audit logs using a PowerShell script
 
