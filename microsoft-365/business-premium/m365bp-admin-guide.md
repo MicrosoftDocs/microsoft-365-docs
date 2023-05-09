@@ -96,3 +96,4 @@ Admin tasks are typically performed in the Microsoft 365 admin center ([https://
 - [Microsoft 365 admin center help](../admin/index.yml)
 - [Secure your data with Microsoft 365 for business](secure-your-business-data.md)
 - [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md)
+- [Microsoft 365 Business Premium security administration guide](m365bp-security-admin-guide.md)
