@@ -348,18 +348,6 @@ The user must be accessing the website through Microsoft Edge.
 ## Scenario 7: Restrict pasting sensitive content into a browser (preview)
 This scenario is for restricting users from pasting sensitive content into a browser web form or field.
 
-### Prerequisites
-
-1. Onboard your machine, following the instructions in [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention).
-2. Install the latest version of [Microsoft Defender Antivirus](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business-b). 
-3. If you are running Windows 10, either upgrade to Windows 11 (build 25287) or above, or install the following updates:
-
-    - [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview - Microsoft Support](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23)
-    - [March 28, 2023—KB5023774 (OS Build 22000.1761) Preview - Microsoft Support](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839)
-    - [March 28, 2023—KB5023778 (OS Build 22621.1485) Preview - Microsoft Support](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
-
-4. To protect sensitive data from being pasted into Chrome, install the [Microsoft Defender Browser Protection](https://chrome.google.com/webstore/detail/microsoft-defender-browse/bkbeeeffjjeopflfhgeknacdieedcoml) extension, available from the Chrome Web Store.
- 
 ### Create your DLP policy
 You can set up different levels of enforcement when it comes to blocking data from being pasted into a browser. To do this, create different URL groups. For instance, you can create a policy that warns users against posting U.S. Social Security Numbers (SSN) to any website, and that triggers an audit action for websites in Group A. You can create another policy that completely blocks the paste action--without giving a warning--for all of the websites in Group B.
 
