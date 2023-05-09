@@ -37,6 +37,12 @@ landingContent:
             url: /training/modules/syntex-intro
           - text: Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
+      - linkListType: whats-new
+        links:
+          - text: Prebuilt model for contracts
+            url: prebuilt-model-contract.md
+          - text: Scenarios and use cases
+            url: adoption-scenarios.md
 
 # Card 2
   - title: Get started

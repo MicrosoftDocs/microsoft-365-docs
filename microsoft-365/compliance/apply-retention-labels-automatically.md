@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -59,10 +59,7 @@ Use the following instructions for the two admin steps.
 
 ## Learn about simulation mode
 
-> [!NOTE]
-> This option is in preview and subject to change.
-
-Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+You can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
@@ -145,9 +142,13 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
-4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the policy configuration with this option.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
-5. Depending on your selected scope:
+5. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the policy configuration with this option.
+
+6. Depending on your selected scope:
 
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
@@ -155,7 +156,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
+7. Follow the prompts to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
@@ -362,7 +363,7 @@ You might need to use this option if you're required to capture and retain all c
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and Yammer.
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Yammer](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-yammer).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 

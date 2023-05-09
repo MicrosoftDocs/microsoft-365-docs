@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
   - tier2
-description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
+description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal. This article helps answer the question What is the The Threat protection status report in Microsoft Defender for Office 365?
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
+ms.date: 5/1/2023
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -479,7 +479,7 @@ On the **Submissions** page, the **[Export](#export-report)** button is availabl
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+The **Threat protection status** report is available in both EOP and Defender for Office 365. However, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
 The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links-about.md), [Safe Attachments](safe-attachments-about.md), and [impersonation protection features in anti-phishing policies](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). You can use this information to identify trends or determine whether organization policies need adjustment.
 

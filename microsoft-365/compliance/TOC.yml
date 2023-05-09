@@ -242,6 +242,8 @@
           href: communication-compliance-configure.md
         - name: Detect channel signals with communication compliance
           href: communication-compliance-channels.md
+        - name: Microsoft Teams and communication compliance
+          href: communication-compliance-teams.md
         - name: Create and manage communication compliance policies
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
@@ -308,7 +310,7 @@
           href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
-        - name: Information barriers & Microsoft 365 services
+        - name: Information barriers & Microsoft Teams
           items:
             - name: Microsoft Teams and information barriers
               href: information-barriers-teams.md
@@ -316,8 +318,12 @@
               href: information-barriers-teams-shared-channels.md
             - name: Microsoft Teams PowerShell script and information barriers
               href: information-barriers-teams-powershell-script.md
+        - name: Information barriers & OneDrive
+          items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+        - name: Information barriers & SharePoint
+          items:
             - name: SharePoint and information barriers
               href: information-barriers-sharepoint.md
             - name: SharePoint information barriers compliance assistant (preview)
@@ -856,7 +862,7 @@
                 href: sit-defn-malta-physical-addresses.md
               - name: Malta tax identification number
                 href: sit-defn-malta-tax-identification-number.md
-              - name: Medical specialities
+              - name: Medical specialties
                 href: sit-defn-medical-specialities.md
               - name: Medicare Beneficiary Identifier (MBI) card
                 href: sit-defn-medicare-beneficiary-Identifier-card.md
@@ -1211,6 +1217,8 @@
             href: dlp-migration-assistant-for-symantec-learn.md
           - name: Learn about adaptive protection in data loss prevention (preview)
             href: dlp-adaptive-protection-learn.md
+          - name: Learn about evidence collection for file activities on devices (preview)
+            href: dlp-copy-matched-items-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1242,7 +1250,9 @@
           - name: Get started with Data loss prevention policies for Power BI
             href: dlp-powerbi-get-started.md
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
-            href: dlp-migration-assistant-for-symantec-get-started.md  
+            href: dlp-migration-assistant-for-symantec-get-started.md
+          - name: Get started with collecting files that match data loss prevention policies from devices (preview)
+            href: dlp-copy-matched-items-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1607,13 +1617,15 @@
               href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: ediscovery-add-data-to-review-set-from-another-review-set.md
+            - name: Configure review set grouping settings
+              href: ediscovery-configure-review-set-settings.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
               href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
               href: ediscovery-tagging-documents.md
-            - name: View documents in a review set
+            - name: Group and view documents in a review set
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
@@ -1766,29 +1778,45 @@
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
-          href: compliance-manager.md
-        - name: What's new in Compliance Manager
-          href: compliance-manager-whats-new.md
+          items:
+            - name: Overview
+              href: compliance-manager.md
+            - name: What's new
+              href: compliance-manager-whats-new.md
+            - name: Compliance Manager glossary of terms
+              href: compliance-manager-glossary.md
+            - name: Frequently asked questions (FAQ)
+              href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
-          href: compliance-manager-setup.md
-        - name: Build and manage assessments
-          href: compliance-manager-assessments.md
-        - name: Learn about assessment templates
-          href: compliance-manager-templates.md
-        - name: Compliance Manager templates list
-          href: compliance-manager-templates-list.md
-        - name: Working with improvement actions
-          href: compliance-manager-improvement-actions.md
-        - name: Updating improvement actions
-          href: compliance-manager-update-actions.md
+          items:
+            - name: Permissions and settings
+              href: compliance-manager-setup.md
+            - name: Configuration Analyzer for Microsoft Purview
+              href: compliance-manager-mcca.md
+        - name: Multicloud support in Compliance Manager
+          items:
+            - name: Learn about multicloud support
+              href: compliance-manager-multicloud.md
+            - name: Configure cloud settings
+              href: compliance-manager-cloud-settings.md  
+        - name: Create assessments
+          items:
+            - name: Build and manage assessments
+              href: compliance-manager-assessments.md
+            - name: Learn about Compliance Manager regulations
+              href: compliance-manager-templates.md
+            - name: Regulations list
+              href: compliance-manager-templates-list.md
+        - name: Improvement actions
+          items:
+            - name: Working with improvement actions
+              href: compliance-manager-improvement-actions.md
+            - name: Updating improvement actions
+              href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
-        - name: How your compliance score is calculated
+        - name: Scoring
           href: compliance-score-calculation.md
-        - name: Configuration Analyzer for Microsoft Purview
-          href: compliance-manager-mcca.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.yml
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance
