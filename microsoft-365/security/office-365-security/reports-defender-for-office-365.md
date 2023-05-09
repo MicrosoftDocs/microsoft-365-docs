@@ -118,7 +118,7 @@ On the **Email & collaboration reports** page at <https://security.microsoft.com
 
 :::image type="content" source="../../media/url-protection-report-widget.png" alt-text="The URL protection report widget on the Email & collaboration reports page" lightbox="../../media/url-protection-report-widget.png":::
 
-The available views on the **URL threat protection** report page are described in the following sections.
+The available views on the **URL threat protection** report page are described in the following subsections.
 
 ### View data by URL click protection action
 
