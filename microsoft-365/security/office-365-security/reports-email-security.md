@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/1/2023
+ms.date: 5/10/2023
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -49,21 +49,18 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
-|**URL trace** <br/><br/> Get-URLTrace|[URL protection report](reports-defender-for-office-365.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
-|**Sent and received email report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
-|**Forwarding report** <br/><br/> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> no cmdlets|MC250533|June 2021|
-|**Safe Attachments file types report** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
-|**Safe Attachments message disposition report** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
-|**Malware detected in email report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
-|**Spam detection report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
-|Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|May 2022|
-|**Exchange transport rule report** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
-|Get-MailTrafficTopReport|[Top senders and recipient report](reports-email-security.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
+|**URL trace** <br><br> Get-URLTrace|[URL protection report](reports-defender-for-office-365.md#url-protection-report) <br><br> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
+|**Sent and received email report** <br><br> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <br><br> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
+|**Forwarding report** <br><br> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br><br> no cmdlets|MC250533|June 2021|
+|**Safe Attachments file types report** <br><br> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br><br> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
+|**Safe Attachments message disposition report** <br><br> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br><br> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
+|**Malware detected in email report** <br><br> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br><br> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
+|**Spam detection report** <br><br> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br><br> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
+|Get-AdvancedThreatProtectionDocumentReport <br><br> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br><br> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|May 2022|
+|**Exchange transport rule report** <br><br> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br><br> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
+|Get-MailTrafficTopReport|[Top senders and recipient report](reports-email-security.md#top-senders-and-recipients-report) <br><br> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br><br> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
 
 ## Compromised users report
-
-> [!NOTE]
-> This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations.
 
 The **Compromised users** report shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
@@ -71,7 +68,7 @@ The **Compromised users** report shows the number of user accounts that were mar
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
-To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Compromised users** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Compromised users** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
 
 On the **Compromised users** page, the chart shows the following information for the specified date range:
 
@@ -85,15 +82,15 @@ The details table below the graph shows the following information:
 - **Action**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
 - **Tag**: **All** or the specified user tag (including priority accounts).
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Compromised users** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Compromised users** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 :::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="The Report view in the Compromised users report." lightbox="../../media/compromised-users-report-activity-view.png":::
 
@@ -101,7 +98,7 @@ On the **Compromised users** page, the ![Create schedule icon.](../../media/m365
 
 The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
 
 :::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="The Exchange transport rule widget on the Email & collaboration reports page." lightbox="../../media/transport-rule-report-widget.png":::
 
@@ -129,15 +126,15 @@ The following information is shown in the details table below the graph:
 - **Severity**
 - **Direction**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)** **Start date** and **End date**.
 - **Direction**: **Outbound** and **Inbound**.
 - **Severity**: **High severity**, **Medium severity**, and **Low severity**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Exchange transport rule report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Exchange transport rule report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### Chart breakdown by Severity
 
@@ -160,15 +157,15 @@ The following information is shown in the details table below the graph:
 - **Severity**
 - **Direction**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Direction**: **Outbound** and **Inbound**
 - **Severity**: **High severity**, **Medium severity**, and **Low severity**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Exchange transport rule report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Exchange transport rule report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ## Forwarding report
 
@@ -179,7 +176,7 @@ On the **Exchange transport rule report** page, the ![Create schedule icon.](../
 
 The **Mailflow status report** is a smart report that shows information about incoming and outgoing email, spam detections, malware, email identified as "good", and information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
-To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
 :::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="The Mailflow status summary widget on the Email & collaboration reports page." lightbox="../../media/mail-flow-status-report-widget.png":::
 
@@ -207,7 +204,7 @@ The details table below the graph shows the following information:
 - **15 days**
 - **30 days**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Mail direction**: **Inbound** and **Outbound**.
@@ -219,27 +216,27 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Rule messages**
   - **Phishing email**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
+Back on the **Mailflow status report** page, if you select **Choose a category for more details**, you can select from the following values:
 
 - **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - **Spam detections**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 - **Edge blocked spam**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 
-On the **Mailflow status report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Mailflow status report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### Direction view for the Mailflow status report
 
 :::image type="content" source="../../media/mail-flow-status-report-direction-view.png" alt-text="The Direction view in the Mailflow status report." lightbox="../../media/mail-flow-status-report-direction-view.png":::
 
-If you click the **Direction** tab, the chart shows the following information for the specified date range:
+If you select the **Direction** tab, the chart shows the following information for the specified date range:
 
 - **Inbound**
 - **Outbound**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Mail direction**: **Inbound** and **Outbound**.
@@ -251,16 +248,16 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Rule messages**
   - **Phishing email**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
+Back on the **Mailflow status report** page, if you select **Choose a category for more details**, you can select from the following values:
 
 - **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - **Spam detections**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 - **Edge blocked spam**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 
-On the **Mailflow status report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** buttons are available.
+On the **Mailflow status report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create schedule** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** actions are available.
 
 ### Mailflow view for the Mailflow status report
 
@@ -309,18 +306,18 @@ The details table below the diagram shows the following information:
 
 If you select a row in the details table, a further breakdown of the email counts is shown in the details flyout that appears.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)** **Start date** and **End date**.
 - **Direction**: **Outbound** and **Inbound**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Back on the **Mailflow status report** page, you can click **Show trends** to see trend graphs in the **Mailflow trends** flyout that appears.
+Back on the **Mailflow status report** page, you can select **Show trends** to see trend graphs in the **Mailflow trends** flyout that appears.
 
 :::image type="content" source="../../media/mail-flow-status-report-mailflow-view-show-trends.png" alt-text="The Mailflow trends flyout in Mailflow view in the Mailflow status report." lightbox="../../media/mail-flow-status-report-mailflow-view-show-trends.png":::
 
-On the **Mailflow status report** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
+On the **Mailflow status report** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** action is available.
 
 ## Malware detections report
 
@@ -340,7 +337,7 @@ The **Post-delivery activities** report shows information about email messages t
 
 The report shows real-time information, with updated threat information.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **ZAP report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ZapReport>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **ZAP report** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ZapReport>.
 
 :::image type="content" source="../../media/post-delivery-activities-widget.png" alt-text="The Post-delivery activities widget on the Email & collaboration reports page." lightbox="../../media/post-delivery-activities-widget.png":::
 
@@ -364,7 +361,7 @@ The details table below the graph shows the following information:
 - **Updated delivery location**
 - **Detection technology**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Verdict**:
@@ -373,9 +370,9 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Phishing**
   - **Malware**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon.](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Post delivery activities** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Post delivery activities** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 :::image type="content" source="../../media/post-delivery-activities-report.png" alt-text="The Post-delivery activities report." lightbox="../../media/post-delivery-activities-report.png":::
 
@@ -393,7 +390,7 @@ The aggregate and detail views of the report allows for 90 days of filtering.
 > [!NOTE]
 > The latest available data in the report is 3 to 4 days old.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
 :::image type="content" source="../../media/spoof-detections-widget.png" alt-text="The Spoof detections widget on the Email & collaboration reports page." lightbox="../../media/spoof-detections-widget.png":::
 
@@ -407,7 +404,7 @@ The chart shows the following information:
 
 When you hover over a day (data point) in the chart, you can see how many spoofed messages were detected and why.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Result**:
@@ -435,13 +432,13 @@ The details table below the graph shows the following information:
 
 For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md).
 
-On the **Spoof detections** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Spoof detections** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ## Submissions report
 
 The **Submissions** report shows information about items that admins have reported to Microsoft for analysis. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
 
-To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](submissions-admin.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](submissions-admin.md), select **Go to Submissions**. Admins will be able to view the report for last 30 days.
 
 :::image type="content" source="../../media/submissions-report-widget.png" alt-text="The Submissions widget on the Email & collaboration reports page." lightbox="../../media/submissions-report-widget.png":::
 
@@ -450,7 +447,7 @@ The chart shows the following information:
 - **Pending**
 - **Completed**
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date reported**: **Start time** and **End time**
 - **Submission type**:
@@ -473,7 +470,7 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View email admin submissions to Microsoft](submissions-admin.md#view-email-admin-submissions-to-microsoft).
 
-On the **Submissions** page, the **[Export](#export-report)** button is available.
+On the **Submissions** page, the **[Export](#export-report)** action is available.
 
 :::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal." lightbox="../../media/submissions-report-page.png":::
 
@@ -485,14 +482,14 @@ The report provides the count of email messages with malicious content, such as 
 
 **Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Threat protection status** and then click **View details**. To go directly to the report, open one of the following URLs:
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Threat protection status** and then select **View details**. To go directly to the report, open one of the following URLs:
 
 - Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
 :::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="The Threat protection status widget on the Email & collaboration reports page." lightbox="../../media/threat-protection-status-report-widget.png":::
 
-By default, the chart shows data for the past 7 days. If you click **Filter** on the **Threat protection status report** page, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table allows filtering for 30 days.
+By default, the chart shows data for the past 7 days. If you select **Filter** on the **Threat protection status report** page, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table allows filtering for 30 days.
 
 The available views are described in the following sections.
 
@@ -509,7 +506,7 @@ In the **View data by Overview** view, the following detection information is sh
 
 No details table is available below the chart.
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**.
 - **Detection**: The same values as in the chart.
@@ -529,7 +526,7 @@ If you click **Filter**, the following filters are available:
   - **Mail flow rule** (transport rule)
   - **Others**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 ### View data by Email \> Phish and Chart breakdown by Detection Technology
 
@@ -572,7 +569,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
@@ -594,9 +591,9 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### View data by Email \> Spam and Chart breakdown by Detection Technology
 
@@ -623,7 +620,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
@@ -645,9 +642,9 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
@@ -680,7 +677,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
@@ -702,9 +699,9 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All** or the specified policy.
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the**Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the**Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### Chart breakdown by Policy type
 
@@ -730,7 +727,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: Detection technology values as previously described in this article and at [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
@@ -754,9 +751,9 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### Chart breakdown by Delivery status
 
@@ -785,7 +782,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: Detection technology values as previously described in this article and at [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
@@ -809,9 +806,9 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### View data by Content \> Malware
 
@@ -832,15 +829,15 @@ In the details table below the chart, the following information is available:
 - **File size**
 - **Last modifying user**
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**.
 - **Detection**: The same values as in the chart.
 - **Workload**: **Teams**, **SharePoint**, and **OneDrive**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 ### View data by System override and Chart breakdown by Reason
 
@@ -869,7 +866,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Reason**: The same values as the chart.
@@ -884,9 +881,9 @@ If you click **Filter**, the following filters are available:
 - **Policy name (details table view only)**: **All**
 - **Recipients**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
 
 ### View data by System override and Chart breakdown by Delivery location
 
@@ -907,7 +904,7 @@ In the details table below the chart, the following information is available:
 - **Sender IP**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-If you click **Filter**, the following filters are available:
+If you select **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
 - **Reason**
@@ -941,15 +938,15 @@ If you click **Filter**, the following filters are available:
 
 <sup>\*</sup> Defender for Office 365 only
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
 
 ## Top malware report
 
 The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection-about.md).
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top malware** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top malware** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
 :::image type="content" source="../../media/top-malware-report-widget.png" alt-text="The Top malware widget on the Email & collaboration reports page." lightbox="../../media/top-malware-report-widget.png":::
 
@@ -960,9 +957,9 @@ On the **Top malware report** page, a larger version of the pie chart is display
 - **Top malware**
 - **Count**
 
-If you click **Filter**, you can specify a date range with **Start date** and **End date**.
+If you select **Filter**, you can specify a date range with **Start date** and **End date**.
 
-On the **Top malware** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+On the **Top malware** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
 
 :::image type="content" source="../../media/top-malware-report-view.png" alt-text="The Top malware report view." lightbox="../../media/top-malware-report-view.png":::
 
@@ -972,7 +969,7 @@ The **Top senders and recipients** report is available in both EOP and Defender 
 
 The **Top senders and recipients** report shows the top 20 message senders in your organization, as well as the top 20 recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
 
-To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then click **View details**. To go directly to the report, open one of the following URLs:
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then select **View details**. To go directly to the report, open one of the following URLs:
 
 - Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
@@ -997,11 +994,11 @@ When you hover over a wedge in the pie chart, you can see the message count for 
 
 The details table below the graph shows the senders or recipients and message counts based on the view you selected.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags.
+You can filter both the chart and the details table by selecting **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Top senders and recipients** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
+On the **Top senders and recipients** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** action is available.
 
 :::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="The Show data for Top mail senders view in the Top senders and recipients report." lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
@@ -1016,11 +1013,11 @@ The **URL protection report** is available only in Microsoft Defender for Office
 
 The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook).
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](submissions-admin.md), click **Go to Submissions**.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then select **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](submissions-admin.md), select **Go to Submissions**.
 
 :::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="The user-reported messages widget on the Email & collaboration reports page." lightbox="../../media/user-reported-messages-widget.png":::
 
-You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
+You can filter both the chart and the details table by selecting **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date reported**: **Start time** and **End time**
 - **Reported by**
@@ -1034,9 +1031,9 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Spam**
 - **Phish simulation**: **Yes** or **No**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-To group the entries, click **Group** and select one of the following values from the drop-down list:
+To group the entries, select **Group** and select one of the following values from the drop-down list:
 
 - **None**
 - **Reason**
@@ -1057,7 +1054,7 @@ The details table below the graph shows the following information:
 - **Rescan result**
 - **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
-To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
+To submit a message to Microsoft for analysis, select the message entry from the table, select **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 
 - **Report clean**
 - **Report phishing**
@@ -1065,7 +1062,7 @@ To submit a message to Microsoft for analysis, select the message entry from the
 - **Report spam**'
 - **Trigger investigation** (Defender for Office 365)
 
-On the **User reported messages** page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
+On the **User reported messages** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
 
 ## What permissions are needed to view these reports?
 
@@ -1088,7 +1085,7 @@ If you are not seeing data in your reports, check the filters that you're using 
 > To create or manage report schedules, you need to be a member of the **Organization management** role.
 
 1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule**.
-2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
+2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then select **Next**.
 3. On the **Set preferences** page, configure the following settings:
    - **Frequency**: Select one of the following values:
      - **Weekly** (default)
@@ -1096,15 +1093,15 @@ If you are not seeing data in your reports, check the filters that you're using 
    - **Start date**: When generation of the report begins. The default value is today.
    - **Expiry date**: When generation of the report ends. The default value is one year from today.
 
-   When you're finished, click **Next**.
+   When you're finished, select **Next**.
 
 4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
 
-   When you're finished, click **Next**.
+   When you're finished, select **Next**.
 
-5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
+5. On the **Review** page, review your selections. You can select the **Back** button or the **Edit** link in the respective sections to make changes.
 
-   When you're finished, click **Submit**.
+   When you're finished, select **Submit**.
 
 ### Managed existing scheduled reports
 
@@ -1124,66 +1121,68 @@ To manage scheduled reports that you've already created, do the following steps:
    Find the existing scheduled report that you want to modify.
 
 3. After you select the scheduled report do any of the following actions in the details flyout that opens:
-   - **Edit name**: Click this button, change the name of the report in the flyout that appears, and then click **Save**.
-   - **Delete schedule**: Click this button, read the warning that appears (previous reports will no longer be available for download), and then click **Save**.
-   - **Schedule details** section: Click **Edit preferences** to change the following settings:
+   - **Edit name**: Click this button, change the name of the report in the flyout that appears, and then select **Save**.
+   - **Delete schedule**: Click this button, read the warning that appears (previous reports will no longer be available for download), and then select **Save**.
+   - **Schedule details** section: Select **Edit preferences** to change the following settings:
      - **Frequency**: **Weekly** or **Monthly**
      - **Start date**
      - **Expiry date**
 
-     When you're finished, click **Save**.
+     When you're finished, select **Save**.
 
-   - **Recipients** section: Click **Edit recipients** to add or remove recipients for the scheduled report. When you're finished, click **Save**
+   - **Recipients** section: Select **Edit recipients** to add or remove recipients for the scheduled report. When you're finished, select **Save**
 
-   When you're finished, click **Close**.
+   When you're finished, select **Close**.
 
 ## Request report
 
-1. On the main page for the specific report, click ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **Request report**.
-2. The **Create on-demand report** wizard opens. On the **Name on-demand report** page, review or customize the **Name** value, and then click **Next**.
+1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Request report**.
+2. The **Create on-demand report** wizard opens. On the **Name on-demand report** page, review or customize the **Name** value, and then select **Next**.
 3. On the **Set preferences** page, review or configure the following settings:
    - **Start date**: When generation of the report begins. The default value is one month ago.
    - **Expiry date**: When generation of the report ends. The default value is today.
 
-   When you're finished, click **Next**.
+   When you're finished, select **Next**.
 
 4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
 
-   When you're finished, click **Next**.
+   When you're finished, select **Next**.
 
-5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
+5. On the **Review** page, review your selections. You can select the **Back** button or the **Edit** link in the respective sections to make changes.
 
-   When you're finished, click **Submit**.
+   When you're finished, select **Submit**.
 
-6. After the report has been successfully created, you're taken to the **New on-demand report created** page, where you can click **Create another report** or **Done**.
+6. After the report has been successfully created, you're taken to the **New on-demand report created** page, where you can select **Create another report** or **Done**.
 
    The report is also available on the **Reports for download** page as described in the next section.
 
 ### Download reports
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
+After you request a report as described in the previous section, you check the status of and download the report on the **Reports for download** page.
 
-   To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
 
-2. On the **Reports for download** page, the following information is shown for each available report:
+Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
+
+On the **Reports for download** page, the following information is shown for each available report:
    - **Start date**
    - **Name**
    - **Report type**
    - **Last sent**
    - **Direction**
 
-   Find and select the report you want to download.
+Find and select the report you want to download.
 
 ## Export report
 
-On the main page for the specific report, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** (if that link is available). An **Export conditions** flyout appears where you can configure the following settings:
+On the main page for the report, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** (if that link is available). An **Export conditions** flyout appears where you can configure the following settings:
 
 - **Select a view to export**: Select one of the following values:
   - **Summary**: Data is available for the last 90 days.
   - **Details**: Data is available for the last 30 days.
 - **Date (UTC)**: **Start date** and **End date**.
 
-When you're finished configuring the filters, click **Export**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection.
+When you're finished configuring the filters, select **Export**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection.
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
 
