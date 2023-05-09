@@ -347,17 +347,25 @@ Up to 50 domains can be configured under Service domains.
 	
 #### Sensitive service domains
 
+> [!NOTE]
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
+	
 When you list a website in Sensitive services domains you can audit, block with override, or block users when they attempt to:
 
 - print from a website
 - copy data from a website
 - save a website as local files
 - upload or drag/drop a sensitive file to an excluded website (this is configured in the policy)
+- paste sensitive data to an excluded website (this is configured in the policy)
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 
+For the paste sensitive data to an excluded website, please make sure you have following installed. See, [Scenario 7: Restrict pasting sensitive content into a browser](endpoint-dlp-using.md#scenario-7-restrict-pasting-sensitive-content-into-a-browser-preview) for more information.
+- Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5023773](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23)
+- Win 11 21H2 - [KB5023774](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839)
+- Win 11 22H2 - [KB5023778](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
+	
 You can add maximum 50 websites into one group and can create maximum 20 groups.
-
 
 ##### Supported syntax for designating websites in a website group
 
