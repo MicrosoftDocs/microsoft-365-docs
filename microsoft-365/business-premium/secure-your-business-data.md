@@ -243,7 +243,7 @@ See the following articles:
 
 - [Maintain your environment](m365bp-maintain-environment.md) 
 - [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
-- [Microsoft 365 Business Premium security operations guide](m365bp-security-incident-quick-start.md) 
+- [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md) 
 
 | Subscription | Recommendations |
 |---|---|

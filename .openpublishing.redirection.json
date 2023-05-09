@@ -9622,7 +9622,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-global-settings-for-safe-links.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
       "redirect_document_id": true
     },
     {
@@ -9688,7 +9688,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/allow-block-urls.md",
       "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
@@ -10916,6 +10916,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure.md",
+    "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
     "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
     "redirect_document_id": true
@@ -10966,9 +10971,54 @@
     "redirect_document_id": true
   },
   {
+    "source_path": "microsoft-365/frontline/flw-onboarding-wizard.md",
+    "redirect_url": "/microsoft-365/frontline/flw-setup-microsoft-365",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-upgrade-windows-10-pro.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-upgrade-windows-pro",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-next-gen-configuration-settings.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-next-generation-protection",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-custom-rules-firewall.md",
+    "redirect_url": "/microsoft-365/security/defender-business/mdb-firewall",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-security-incident-quick-start.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-security-operations-guide",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-add-users.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-reset-passwords.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings.md",
+    "redirect_url": "/mem/autopilot/windows-autopilot",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/mde-sec-ops-guide.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-remove-company-data.md",
+    "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+    "redirect_document_id": false
   }
  ]
 }

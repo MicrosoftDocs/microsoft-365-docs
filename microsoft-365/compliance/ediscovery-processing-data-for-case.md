@@ -28,7 +28,7 @@ ms.collection:
 
 When you add custodians and non-custodian data sources to a case on the **Sources** tab, all partially indexed items from Microsoft 365 are processed to make them fully searchable. Likewise, when content is added to a review set from both Microsoft 365 and non-Microsoft 365 data sources, this content is also processed.
 
-The **Processing** tab in eDiscovery (Premium) provides insight into the status of advanced indexing for different processing scenarios.
+The **Processing** tab in eDiscovery (Premium) provides insight into the status of Advanced indexing for different processing scenarios.
 
 For more information, see the following articles:
 
