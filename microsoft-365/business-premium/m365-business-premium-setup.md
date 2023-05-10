@@ -110,7 +110,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 > [!IMPORTANT]
 > At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
-## [**Work with a Microsoft partner**](#tab/Partner)
+## [**Work with a Microsoft partner**](#tab/UsePartner)
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
