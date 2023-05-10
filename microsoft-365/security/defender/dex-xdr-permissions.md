@@ -37,7 +37,7 @@ For Microsoft Defender Experts for XDR incident investigations, when our experts
 
 ## Configuring permissions in customer tenants
 
-Once you select the permissions you’d like to grant to our experts, we create the following policies in your tenant using the Security Administrator or Global Administrator context: 
+Once you select the permissions you’d like to grant to our experts, we create the following policies in your tenant using the Security Administrator or Global Administrator context:
 
 - Configure Microsoft Experts as a service provider – This setting lets our experts access the tenant environment as external collaborators without requiring you to create accounts for them.
 - Configure role assignments for our experts – This setting controls the roles our experts are allowed in the tenant. You select the appropriate roles during the onboarding process
