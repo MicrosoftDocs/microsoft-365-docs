@@ -119,7 +119,7 @@ You can also define user tags as a condition of an alert policy. This results in
 
 ## Default alert policies
 
-Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. On the **Alert policies** page, the names of these built-in policies are in bold and the policy type is defined as **System**. These policies are turned on by default and sent to Tenant admins. You can turn off these policies (or back on again), set up a list of recipients to send email notifications to, and set a daily notification limit. The other settings for these policies can't be edited.
+Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. On the **Alert policies** page, the names of these built-in policies are in bold and the policy type is defined as **System**. These policies are turned on by default and sent to the organization's admins. You can turn off these policies (or back on again), set up a list of recipients to send email notifications to, and set a daily notification limit. The other settings for these policies can't be edited.
 
 The following tables list and describe the available default alert policies and the category each policy is assigned to. The category is used to determine which alerts a user can view on the Alerts page. For more information, see [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts).
 
