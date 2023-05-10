@@ -55,7 +55,7 @@ In Defender for Business, you can manage devices as follows:
 
 4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**. 
 
-## Microsoft Defender Antivirus states
+## View the state of Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus is a key component of next-generation protection in Defender for Business. When devices are onboarded to Defender for Business, Microsoft Defender Antivirus can have one of the following states: 
 
