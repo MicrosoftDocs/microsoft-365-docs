@@ -66,7 +66,7 @@ Microsoft 365 Business Premium includes Defender for Business, Microsoft Defende
 
 2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
-3. After you've signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
+3. After you've signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](../../business-premium/m365-business-premium-setup.md).
 
 4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
 
