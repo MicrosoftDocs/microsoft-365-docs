@@ -42,6 +42,8 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 3. Select the Workload and Record Type from the list shown in the table below to further narrow your search
 4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
 
+![Screenshot of audit log search in Defender experts for XDR](../../media/xdr/audit.png)
+
 
 <div align="center">
 
@@ -54,6 +56,8 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 
 </div>
+
+![Screenshot of sample audit log in Defender experts for XDR](../../media/xdr/audit-2.png)
 
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 

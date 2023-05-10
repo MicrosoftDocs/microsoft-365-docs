@@ -32,6 +32,8 @@ Once the Defender Experts for XDR team is ready to onboard your organization, yo
 
 Select the link in the welcome email to directly launch the Defender Experts settings wizard in the Microsoft 365 Defender portal. You can also open this wizard by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
+![Screenshot of Set up Defender Experts for XDR page](../../media/XDR/security-team-boost.png)
+
 ## Grant permissions to our experts
 
 By default, Defender Experts for XDR requires Service provider access that lets our experts sign into your tenant and deliver services based on assigned security roles. [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
@@ -43,7 +45,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 
 [Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
-**SCREENSHOT**
+![Screenshot of grant permissions to our experts](../../media/xdr/grant-permissions-to-experts.png)
 
 Follow these steps to grant our experts permissions:
 
@@ -62,18 +64,18 @@ To edit or update permissions after the initial setup, go to **Settings** > **De
 
 Defender Experts for XDR lets you identify who in your organization we’ll have to notify for critical incidents, service updates, occasional questions, and other recommendations. These persons or groups will then receive an email informing them that they’ve been selected as an incident response or a service review contact.
 
-**Screenshot**[who-to-contact-for-important-matters]
+![Screenshot of who to contact for important matters in XDR](../../media/XDR/who-to-contact-for-important-matters.png)
 
 1. In the same Defender Experts settings wizard mentioned earlier, under **Incident contact**, search for, and add your contact persons or teams. These are the contacts we’ll use for guided response notifications or any communication that requires a prompt response.
 
 > [!NOTE]
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
-2. Select **Next**. Under Service review contact, search for and add your contact persons or teams. These are the contacts we’ll use for ongoing security briefings done by our service delivery team.
+1. Select **Next**. Under Service review contact, search for and add your contact persons or teams. These are the contacts we’ll use for ongoing security briefings done by our service delivery team.
 
-3. Select Next. The settings wizard will then provide you information about the **Next steps**, including working with our experts to [optimize your security posture](**to be linked to run initial defender experts readiness checks**).
+1. Select Next. The settings wizard will then provide you information about the **Next steps**, including working with our experts to [optimize your security posture](**to be linked to run initial defender experts readiness checks**).
 
-4. Select **Close** to exit the settings wizard.
+1. Select **Close** to exit the settings wizard.
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**:
 
@@ -81,7 +83,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 2. Select the **Notification type** from the dropdown box.
 3. Select **Add**.
 
-**Screenshot** [who-to-contact-for-imp-matters-2]
+![Screenshot of notification contacts](../../media/xdr/who-to-contact-for-imp-matters-2.png)
 
 ## Run initial Defender Experts readiness checks
 

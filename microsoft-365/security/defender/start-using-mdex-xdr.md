@@ -60,11 +60,11 @@ Otherwise, if an incident is classified as _True Positive_, our experts will the
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
 
-**Screenshot** [view-incidents]
+![Screenshots of incidents in XDR](../../media/xdr/incidents-xdr.png)
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft 365 Defender portal using the _Defender Experts_ **tag**.
 
-**Screenshot** [incidents-filter]
+![Screenshots of incidents filter](../../media/xdr/incidents-filter.png)
 
 ### How to use guided response in Microsoft 365 Defender
 
@@ -72,13 +72,13 @@ In the Microsoft 365 Defender portal, an incident that requires your attention u
 
 Select **View guided response** on the task card or on the top of the portal page (**Guided response** tab) to open a flyout panel where you can read our experts’ investigation summary, complete pending actions identified by our experts, or engage with them through chat.
 
-**Screenshot**[view-guided-response-button]
+![Screenshot of the view guided response button](../../media/xdr/view-guided-response-button.png)
 
 ### Investigation summary
 
 The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
 
-**Screenshot**[investigation-summary]
+![Screenshot of guided response investigation summary](../../media/xdr/investigation-summary.png)
 
 ### Actions
 
@@ -114,9 +114,10 @@ To view and perform the guided response actions:
 - Mark as new
 
 ### Chat
+
 The Chat tab provides you a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about threat actors, advanced hunting queries, or any other information that would assist you with the incident resolution.
 
-**Screenshot**[chat]
+![Screenshot of chat option in XDR](../../media/xdr/chat.png)
 
 > [!NOTE]
 > The chat option is only available for incidents where we issued guided response.
@@ -140,9 +141,10 @@ The following describes how an incident handled by our experts is updated in Sen
 1. An incident that our experts have confirmed as a _True Positive_ will have a guided response posted in Microsoft 365 Defender, and the **Owner** will be listed as _Customer_. You will need to act on the incident based on using the provided guided response.
 1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident’s **Status** will be updated to _Resolved_ and a **Reason for closing** will be provided.
 
-**Screenshot**[Microsoft-sentinel-incidents]
+![Screenshot of Microsoft sentinel incidents](../../media/xdr/microsoft-sentinel-incidents.png)
 
 ### Other applications
+
 You have the option to obtain visibility into incidents in your SIEM or ITSM application by using the [Microsoft 365 Defender API](../defender/api-overview.md) or [connectors in Sentinel](**link to azure/sentinel/data-connectors-reference**).
 
 After configuring a connector, the updates by Defender Experts to an incident’s **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender can be synchronized with the third-party SIEM or ITSM applications, depending on how the field mapping has been implemented. To illustrate, you can take a look at the [connector available from Sentinel to ServiceNow](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Servicenow/StoreApp).
@@ -153,7 +155,7 @@ Defender Experts for XDR includes an interactive, on-demand report that provides
 
 Below is a screenshot of the Defender Experts for XDR report:
 
-**Screenshot**[defender-xdr-report]
+![Screenshot of Defender Experts for XDR report](../../media/xdr/Defender-xdr-report.png)
 
 Each section of the report is designed to provide more insights about the incidents our experts investigated and resolved in your environment in real time. You can also select the Date range to get detailed information about incidents based on severity, category, and understand the time taken to investigate and resolve an incident during a specific period.
 
@@ -214,4 +216,4 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 ## See also
 
-[Read through frequently asked questions and answers](frequently-asked-questions.md)
+[Search audit logs for actions performed by Defender Experts](auditing.md)
