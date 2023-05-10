@@ -32,7 +32,7 @@ Optical character recognition (OCR) scanning enables Microsoft Purview to scan c
 | Phase | What's needed|
 |-------|--------------|
 |**Phase 1:** Create Azure subscription if needed | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
-|**Phase 2:** Set up pay-as-you-go billing to enable OCR. | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR. |
+|**Phase 2:** Set up pay-as-you-go billing to enable OCR. | Your Global or SharePoint admin must follow the instructions in [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) to add a subscription for OCR. |
 |**Phase 3:** Configure OCR scanning settings | The Compliance admin for your organization configures the OCR settings for your tenant.|
 
 
@@ -44,14 +44,14 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 When you enable OCR, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) to add a subscription for OCR.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) to add a subscription for OCR.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
 >
-> You can find OCR pay-as-you-go pricing information on the [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) page.
+> You can find OCR pay-as-you-go pricing information on the [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) page.
 
-#### Charges ####
+#### Charges 
 
 The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
 
