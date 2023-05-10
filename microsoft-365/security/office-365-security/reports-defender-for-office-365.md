@@ -35,7 +35,7 @@ In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 (for ex
 
 The reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
-Summary information for each report is available in the widgets on the page. Identify the report you want to view, and then select **View details** for that report.
+Summary information for each report is available on the page. Identify the report you want to view, and then select **View details** for that report.
 
 The rest of this article describes the reports that are exclusive to Defender for Office 365.
 
@@ -43,7 +43,13 @@ The rest of this article describes the reports that are exclusive to Defender fo
 >
 > Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](reports-email-security.md).
 >
+> For reports that have been deprecated or replaced, see the table in [Email security report changes in the Microsoft 365 Defender portal](reports-email-security.md#email-security-report-changes-in-the-microsoft-365-defender-portal).
+>
 > Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWBkxB]
 
 ## Safe Attachments file types report
 
@@ -76,7 +82,7 @@ Regardless of the tab you select, the chart shows messages organized into the fo
 - **Overall**
 - **Detonation** (these values are explained in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** values)
 
-When you hover over a category in the chart, you can see a breakdown of the latency in each category.
+Hover over a category in the chart to see a breakdown of the latency in each category.
 
 :::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="The 50th percentiles view of the Mail latency report" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
@@ -89,7 +95,7 @@ In the details table below the chart, the following information is available:
 - **90th percentile**
 - **99th percentile**
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, you can filter both the chart and the details table by the following values:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**
 - **Message view**: One of the following values:
@@ -118,9 +124,9 @@ On the **Email & collaboration reports** page at <https://security.microsoft.com
 
 :::image type="content" source="../../media/url-protection-report-widget.png" alt-text="The URL protection report widget on the Email & collaboration reports page" lightbox="../../media/url-protection-report-widget.png":::
 
-The available views on the **URL threat protection** report page are described in the following subsections.
+The available views in the **URL threat protection** report are described in the following subsections.
 
-### View data by URL click protection action
+### View data by URL click protection action in the URL protection report
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
@@ -145,7 +151,7 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, you can modify the report and the details table by selecting one or more of the following values in the flyout that opens:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Action**: The same URL click protection actions as previously described.
@@ -157,7 +163,7 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report)** buttons are available.
 
-### View data by URL click by application
+### View data by URL click by application in the URL protection report
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="The URL click protection action view in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
@@ -172,10 +178,10 @@ The details table below the chart provides the following near-real-time view of 
 - **Click time**
 - **User**
 - **URL**
-- **Action**: The same URL click protection actions as previously described for the [View data by URL click protection action](#view-data-by-url-click-protection-action) view.
+- **Action**: The same URL click protection actions as previously described for the [View data by URL click protection action](#view-data-by-url-click-protection-action-in-the-url-protection-report) view.
 - **App**
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, you can modify the report and the details table by selecting one or more of the following values in the flyout that opens:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Application**: The same click by application values as previously described.
@@ -212,21 +218,12 @@ PowerShell reporting cmdlets:
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-- You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
-    - **Organization Management**
-    - **Security Administrator**
-    - **Security Reader**
-    - **Global Reader**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
+See [What permissions are needed to view these reports?](reports-email-security.md#what-permissions-are-needed-to-view-these-reports)
 
 ## What if the reports aren't showing data?
 
-If you aren't seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Safe Links policies and Safe Attachments policies from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages. For more information, see:
+If you don't see data in the reports, check the report filters and double-check that your policies are set up correctly. Safe Links policies and Safe Attachments policies from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages. For more information, see:
 
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
 - [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 - [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
-
-Also, double-check your report filters. Remove all filters and then add them back one at a time.
