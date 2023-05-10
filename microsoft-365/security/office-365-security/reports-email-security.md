@@ -15,7 +15,7 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
   - tier2
-description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal. This article helps answer the question What is the The Threat protection status report in Microsoft Defender for Office 365? 
+description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal. This article helps answer the question What is the The Threat protection status report in Microsoft Defender for Office 365?
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo

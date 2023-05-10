@@ -67,7 +67,7 @@ The actions that are available for messages in the quarantine notification depen
 
   Selecting the action takes you to the details flyout of the message in quarantine. It's the same result as going to the **Email** tab on the **Quarantine** page at <https://security.microsoft.com/quarantine?viewid=Email>, and selecting the message by clicking anywhere in the row other than the check box next to the first column. For more information, see [View quarantined message details](quarantine-end-user.md#view-quarantined-message-details).
 
-- **Release**: Available for messages that were quarantined by features using a quarantine policy with the **Full access** permission group or the individual **Allow recipients to release a message from quarantine** (_PermissionToRelease_) permission. For example, DefaultFullAccessWithNotificationPolicy, NotificationEnabledPolicy, or custom quarantine policies. 
+- **Release**: Available for messages that were quarantined by features using a quarantine policy with the **Full access** permission group or the individual **Allow recipients to release a message from quarantine** (_PermissionToRelease_) permission. For example, DefaultFullAccessWithNotificationPolicy, NotificationEnabledPolicy, or custom quarantine policies.
 
   Selecting the action opens an informational web page that acknowledges the message was released from quarantine (for example, **Spam message was released from quarantine**). The **Release status** value of the message on the **Email** tab of the **Quarantine** page is **Released**. The message is delivered to the user's Inbox (or some other folder, depending on any [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in the mailbox).
 
