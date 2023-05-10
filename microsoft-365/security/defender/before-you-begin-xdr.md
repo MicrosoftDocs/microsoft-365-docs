@@ -50,7 +50,7 @@ Defender Experts for XDR customers will also be assigned two Ask Defender Expert
 ## Access requirements
 
 Anyone from your organization can complete the [customer interest form](https://aka.ms/IWantDefenderExperts) for the Defender Experts for XDR service, however, you need to work with your Commercial Executive to transact the Defender Experts for XDR SKU.
-Defender Experts for XDR will request for certain roles and permissions for you to fully access the service capabilities. [Learn more](how-defender-experts-for-xdr-works.md)
+Defender Experts for XDR will request for certain roles and permissions for you to fully access the service capabilities. [Learn more](dex-xdr-permissions.md)
 
 ## Service availability and data protection
 
@@ -58,7 +58,7 @@ For more information about Microsoft's commitment in valuing and protecting your
 
 ### Data collection, usage, and retention
 
-All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](o365-data-locations.md)
+All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](/microsoft-365/enterprise/o365-data-locations)
 
 Defender Experts for XDR operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.
 
