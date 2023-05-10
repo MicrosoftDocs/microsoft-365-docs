@@ -26,10 +26,7 @@ description: "Setup overview for Microsoft 365 for Campaigns or other businesses
 
 # Set up Microsoft 365 for Campaigns
 
-This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), complete the basic setup process, and proceed to next steps.
-
-> [!TIP]
-> If you're looking for Microsoft 365 Business Premium, see [Set up Microsoft 365 Business Premium](m365-business-premium-setup.md).
+This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), and how to complete the basic setup process and proceed to next steps.
 
 ## Get Microsoft 365 for Campaigns
 
