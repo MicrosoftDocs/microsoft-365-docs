@@ -31,7 +31,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 - Work with a Microsoft partner.
 
 > [!TIP]
-> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](365-campaigns-setup.md).
+> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](m365-campaigns-setup.md).
 
 # [Sign up on your own](#tab/getown)
 
