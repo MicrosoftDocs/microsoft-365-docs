@@ -11024,6 +11024,11 @@
     "source_path": "microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md",
     "redirect_url": "/mem/intune/protect/endpoint-security-policy",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-setup.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+    "redirect_document_id": true
   }
  ]
 }
