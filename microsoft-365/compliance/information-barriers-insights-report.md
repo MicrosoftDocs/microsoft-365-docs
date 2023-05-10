@@ -107,6 +107,18 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
 |:----------|:------------------|
 | `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
 
+### View the details for the mode distribution for SharePoint sites
+
+To view details about the mode distribution with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistribution>`
+```
+
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section ModeDistribution`|  **Total site count**: 10000 <br> **Owner Moderated** SiteCount: 500 SitePercentage: 5 <br> **Explicit** SiteCount: 3628 SitePercentage: 36.82  <br> **Implicit** SiteCount: 4190 SitePercentage: 41.9  <br> **Open** SiteCount: 1682 SitePercentage: 16.82 |
+
 ## Insights reports for OneDrive accounts
 
 ### View a summary of modes with results for OneDrive accounts
@@ -135,6 +147,31 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 |:----------|:------------------|
 | `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
 
+### View the details for the mode distribution for OneDrive accounts
+
+To view details about the mode distribution with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <ModeDistribution>`
+```
+
+|**Example**|**Example results**|
+|:----------|:------------------|
+| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section ModeDistribution`|  **Total site count**: 10000 <br> **Owner Moderated** SiteCount: 500 SitePercentage: 5 <br> **Explicit** SiteCount: 3628 SitePercentage: 36.82  <br> **Mixed** SiteCount: 4190 SitePercentage: 41.9  <br> **Open** SiteCount: 1682 SitePercentage: 16.82 |
+
 ## Download the results of the insights report
+
+To download the results of a specific insights report for SharePoint sites, use the following cmdlet syntax to download the report:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <report you want to download> -action Download`
+```
+
+To download the results of a specific insights report for OneDrive accounts, use the following cmdlet syntax to download the report:
+
+```powershell
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <report you want to download> -action Download`
+```
+
 
 ## Audit activities for the insights report
