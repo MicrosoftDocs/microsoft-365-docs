@@ -92,7 +92,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ## Sign in to Microsoft 365 for Campaigns
 
-If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
+If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
 
 Here's how to sign in:
 
