@@ -53,6 +53,6 @@ The guidance in these missions is based upon the [Zero Trust security model](/se
 
 ## Next steps
 
-Proceed to [Fortify your environment](m365-business-premium-setup.md).
+Proceed to [Fortify your environment](m365bp-setup-overview.md).
 
 
