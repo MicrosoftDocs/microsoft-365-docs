@@ -29,6 +29,7 @@ ms.date: 05/29/2023
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Important considerations for you
+
 To realize the benefits of Microsoft Defender Experts for XDR, you and your security operations center (SOC) team must take note of the following considerations to ensure timely incident remediation, improve your organization’s security posture, and protect your organization from threats.
 
 - **Engage actively through the readiness assessment process** – The [readiness assessment](get-started-xdr.md#run-initial-defender-experts-readiness-checks) when onboarding for Defender Experts for XDR is an integral part of the offering. Completing it successfully will ensure prompt service coverage and protect your organization against known threats.
@@ -36,6 +37,7 @@ To realize the benefits of Microsoft Defender Experts for XDR, you and your secu
 - **Configure recommended settings and follow best practices to improve security posture** – As part of our service, your service delivery manager and security analyst team will share ongoing recommendations to strengthen your security posture. These recommendations will be based on incidents investigated in your organization. Your SOC team should review these recommendations and implement them as soon as possible to protect your organization against future threats.
 
 ## Note about incident response
+
 Defender Experts for XDR is not an incident response service. While it augments your SOC team to triage, investigate, and remediate threats, Defender Experts for XDR will not be able to provide recovery and crisis management services **if a major security incident has already occurred** in your organization. You should engage instead with your own security incident response team to address urgent incident response issues. As part of our operations, we will assist organizations actively under attack to assess the compromise and share necessary details with their incident response provider.
 
 If you don't have your own security incident response team, [Microsoft Incident Response](https://www.microsoft.com/security/business/microsoft-incident-response) can help mitigate a breach and recover your operations. If you are an existing unified or premier support customer, you can create a support request in the [Microsoft Services Hub](https://serviceshub.microsoft.com/home) to engage with them. Otherwise, fill out the [Experiencing a Cybersecurity Incident?](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRypQlJUvhTFIvfpiAfrpFQdUOTdRRFpDUFQ1TzNLVFZXV0VUOVlVN0szUiQlQCN0PWcu) form. We will review the details and quickly call you with instructions to get started.
