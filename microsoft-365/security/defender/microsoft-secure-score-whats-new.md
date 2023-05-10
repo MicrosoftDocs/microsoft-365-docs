@@ -71,7 +71,7 @@ New recommendations are now available in Microsoft Secure Score for customers wi
 - Ensure mobile devices require the use of a password
 
 > [!NOTE]
-> To view the new Defender for Cloud Apps recommendations, the O365 connector in Microsoft Defender for cloud apps must be toggled on via the App connectors settings page. For more information see, [How to connect office 365 to Defender for Cloud Apps](/defender-cloud-apps/connect-office-365#how-to-connect-office-365-to-defender-for-cloud-apps).
+> To view the new Defender for Cloud Apps recommendations, the Office 365 connector in Microsoft Defender for Cloud Apps must be toggled on via the App connectors settings page. For more information see, [How to connect Office 365 to Defender for Cloud Apps](/defender-cloud-apps/connect-office-365#how-to-connect-office-365-to-defender-for-cloud-apps).
 
 ## September 2022
 
