@@ -11044,6 +11044,11 @@
     "source_path": "microsoft-365/business-premium/get-microsoft-365-campaigns.md",
     "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
+    "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
+    "redirect_document_id": true
   }
  ]
 }
