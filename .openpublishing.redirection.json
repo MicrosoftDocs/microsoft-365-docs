@@ -10921,6 +10921,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/security/office-365-security/recover-from-ransomware.md",
+    "redirect_url": "/security/ransomware/",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
     "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
     "redirect_document_id": true
@@ -11023,6 +11028,21 @@
   {
     "source_path": "microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md",
     "redirect_url": "/mem/intune/protect/endpoint-security-policy",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-setup.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/get-microsoft-365-business-premium.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/get-microsoft-365-campaigns.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
     "redirect_document_id": false
   }
  ]

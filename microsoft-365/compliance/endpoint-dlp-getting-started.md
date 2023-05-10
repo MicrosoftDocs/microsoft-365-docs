@@ -74,26 +74,12 @@ You can onboard virtual machines as monitored devices in Microsoft Purview compl
 
 Here are the virtual operating systems that are supported by virtualization environments.
 
-|Virtualization </br> platform|Windows 10|Windows 11|
-|:---|:---|:---|
-|Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>|
-|Citrix Virtual Apps and Desktops 7 (2209)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2|<ul><li>Single session supported for 21H2 (Gen2)</li><li>Multi session supported for 21H2 (Gen 2)</li></ul>|
-|Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|
-
-<!--
-### Endpoint DLP support for virtualized environments (preview)
-
-You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There's no change to the onboarding procedures listed above.
-
-Here are the virtual operating systems that are supported by virtualization environments.
-
 |Virtualization </br> platform|Windows 10|Windows 11|Windows Server 2019| Windows Server 2022</br>21H2 Data Center |
 |:---|:---|:---|:---|:---|
 |Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>| Supported|Supported|
 |Citrix Virtual Apps and Desktops 7 (2209)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2|<ul><li>Single session supported for 21H2 (Gen2)</li><li>Multi session supported for 21H2 (Gen 2)</li></ul>|Supported|Supported|
 |Amazon workspaces|<ul><li>Single session supported for 20H2, 21H1, 21H2|N/A|N/A|N/A|
 |Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|Supported with Hybrid AD join|Supported with Hybrid AD join|
--->
 
 #### Known issues
 

@@ -360,8 +360,6 @@
              href: air-custom-reporting.md
            - name: Email analysis in investigations
              href: email-analysis-investigations.md
-         - name: Recover from a ransomware attack
-           href: recover-from-ransomware.md
          - name: Detect and Remediate Illicit Consent Grants in Office 365
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
