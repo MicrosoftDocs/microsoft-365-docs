@@ -95,7 +95,7 @@ Now in preview, there's now limited support for labels configured for user-defin
 
 - Labels with this configuration are now displayed in Office for the web. However, currently, users can't apply these labels in Office for the web and if they are selected, users see a message instructing them to apply the label using a desktop app.
 
-- The contents can be inspected for search, data loss prevention, and eDiscovery.
+- The contents currently can't be inspected for search, data loss prevention, or eDiscovery.
 
 To support AutoSave and co-authoring for these encrypted files using a desktop or mobile app, you must have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and for your Microsoft 365 Apps for enterprise:
 - **Windows**: Minimum version xxx from the Beta Channel
