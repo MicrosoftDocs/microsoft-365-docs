@@ -23,15 +23,15 @@ ms.custom: intro-get-started
 
 This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
 
+> [!TIP]
+> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](m365-campaigns-setup.md).
+
 ## Sign up for Microsoft 365 Business Premium
 
 When you're ready to sign up for Microsoft 365 Business Premium, you have several options. You can:
 
 - Try or buy Microsoft 365 Business Premium on your own; or
 - Work with a Microsoft partner.
-
-> [!TIP]
-> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](m365-campaigns-setup.md).
 
 # [Sign up on your own](#tab/getown)
 
