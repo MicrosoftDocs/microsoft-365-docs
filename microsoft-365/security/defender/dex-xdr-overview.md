@@ -24,15 +24,12 @@ ms.date: 11/17/2022
 
 # Microsoft Defender Experts for XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
-
-Important: Microsoft Defender Experts for XDR is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for XDR, complete a [customer interest form](https://aka.ms/IWantDefenderExperts).
+> [!IMPORTANT]
+> Microsoft Defender Experts for XDR is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for XDR, complete a [customer interest form](https://aka.ms/IWantDefenderExperts).
 
 Microsoft Defender Experts for XDR is a managed detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Microsoft 365 Defender services: Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD).
 
@@ -43,7 +40,7 @@ Defender Experts for XDR augments your SOC by combining automation and Microsoft
 - **Access expertise when you need it** - Extend your team's capacity with access to Defender Experts for assistance on an investigation
 - **Stay ahead of emerging threats** - Our experts proactively hunt for emerging threats in your environment, informed by unparalleled threat intelligence and visibility
 
-In addition to the constantly updated research and intelligence tailored for the threats currently seen across the various Microsoft 365 Defender signals, you'll receive guided response from our security analysts and support from Microsoft's security-focused service delivery managers (SDMs). In this preview, you can try the service for free and enjoy the following capabilities:
+In addition to the constantly updated research and intelligence tailored for the threats currently seen across the various Microsoft 365 Defender signals, you'll receive guided response from our security analysts and support from Microsoft's security-focused service delivery managers (SDMs). This service lets you enjoy the following capabilities:
 
 - **Managed detection and response** - Expert analysts manage your Microsoft 365 Defender incident queue and handle triage and investigation on your behalf; they partner with you and your team to take action or guide you to respond to incidents
 - **Proactive threat hunting** - [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md) is built in to extend your team's threat hunting capabilities and prioritize significant threats
