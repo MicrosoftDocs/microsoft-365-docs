@@ -50,7 +50,7 @@
       - name: Install Microsoft 365 Apps on devices
         href: m365bp-users-install-m365-apps.md
       - name: Protect unmanaged devices
-        href: m365bp-protect-pcs-macs.md
+        href: m365bp-users-protect-unmanaged-devices.md
   - name: Use email securely
     items: 
       - name: Overview
