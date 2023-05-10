@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 04/10/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
@@ -21,9 +21,7 @@ ms.custom: intro-get-started
 
 # Set up Microsoft 365 Business Premium
 
-This article describes how to get Microsoft 365 Business Premium and complete the basic setup process. 
-
-
+This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
 
 ## Sign up for Microsoft 365 Business Premium
 
