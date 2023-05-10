@@ -28,7 +28,7 @@ ms.date: 05/29/2023
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-After you completed the [onboarding steps and readiness checks](**LINK TO GET STARTED WITH DEFENDER EXPERTS FOR XDR TOPIC**) for Microsoft Defender Experts for XDR, our experts will start monitoring your environment to streamline the service so we can perform comprehensive service on your behalf. During this stage, our experts will identify latent threats, sources of risk, and normal activity.
+After you completed the [onboarding steps and readiness checks](get-started-xdr.md) for Microsoft Defender Experts for XDR, our experts will start monitoring your environment to streamline the service so we can perform comprehensive service on your behalf. During this stage, our experts will identify latent threats, sources of risk, and normal activity.
 
 Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving notifications about incidents that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your service delivery managers (SDMs) regarding important queries and regular business and security posture reviews and view real-time reports on the number of incidents we’ve investigated and resolved on your behalf.
 
