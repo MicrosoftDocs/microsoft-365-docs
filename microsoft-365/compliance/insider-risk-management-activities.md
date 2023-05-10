@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/28/2023
+ms.date: 05/09/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -277,8 +277,9 @@ Reviewing, investigating, and acting on potentially risky insider alerts are imp
 
 ### Too many alerts to review
 
-Becoming overwhelmed with the number of alerts produced by your insider risk management policies could be frustrating. The number of alerts can be quickly addressed with simple steps, depending on the types of alert volume you're receiving. You may be receiving too many valid alerts or have too many stale low-risk alerts. Consider taking the following actions:
+If you're receiving too many valid alerts or have too many stale low-risk alerts, consider taking the following actions:
 
+- **Enable analytics**: Enabling analytics can help you quickly identify potential risk areas for your users and help determine the type and scope of insider risk management policies that you might want to configure. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics). You can also get real-time insights from analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. For more information on real-time analytics for threshold settings, see [Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
 - **Adjust your insider risk policies**: Selecting and configuring the correct insider risk policy is the most basic method to address the type and volume of alerts. Starting with the appropriate [policy template](insider-risk-management-policy-templates.md#policy-templates) helps focus the types of risk activities and alerts you'll see. Other factors that may impact alert volume are the size of the in-scope user and groups and the content and [channels that are prioritized](insider-risk-management-policies.md#prioritize-content-in-policies). Consider adjusting policies to refine these areas to what is most important for your organization.
 - **Modify your insider risk settings**: Insider risk settings include a wide variety of configuration options that can impact the volume and types of alerts you'll receive. These include settings for [policy indicators](insider-risk-management-settings.md#policy-indicators), [indicator thresholds](insider-risk-management-settings.md#indicator-level-settings), and [policy timeframes](insider-risk-management-settings.md#policy-timeframes). Consider configuring [intelligent detections](insider-risk-management-settings.md#intelligent-detections) options to exclude specific file types and sensitive info types, trainable classifiers, define minimum thresholds before activity alerts are reported by your policies, and change the alert volume configuration to a lower setting. 
 - **Enable inline alert customization (preview)**: Enabling [inline alert customization](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) allows analysts and investigators to quickly edit policies when reviewing alerts. They can update thresholds for activity detection with Microsoft recommendations, configure custom thresholds, or choose to ignore the type of activity that created the alert. If this is not enabled, then only users assigned to the *Insider Risk Management* role group can use inline alert customization.
