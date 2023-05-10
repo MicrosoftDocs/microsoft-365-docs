@@ -24,7 +24,7 @@ ms.date: 05/31/2023
 
 # Get information barriers insights
 
-The insights report in [information barriers](information-barriers.md) (IB) allow you to identify and discover usage patterns across SharePoint sites and OneDrive accounts in your organization. Administrators can use PowerShell to create and view reports to identify top sites and their modes to help apply suitable controls for the sites as applicable.
+The insights report in [information barriers](information-barriers.md) (IB) can help you identify and discover usage patterns across SharePoint sites and OneDrive accounts in your organization. Administrators can use PowerShell to create and view reports to identify top sites and their modes to help apply suitable controls for the sites as applicable.
 
 The insights report provides the following information for the top 100 most actively used sites and accounts in your organization:
 
@@ -40,11 +40,11 @@ The insights report provides the following information for the top 100 most acti
 ## Prerequisites
 
 - Your organization must have information barriers enabled for SharePoint and OneDrive to be able to create the insights report. To enable IB in SharePoint and OneDrive for you organization, see [Use information barriers with SharePoint](/microsoft-365/compliance/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization).
-- You must use the latest version of the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588). If you've installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall *SharePoint Online Management Shell* and then install the latest version.
+- You must use the latest version of the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588). If you've installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall *SharePoint Online Management Shell* and then install the latest version. To learn more about SharePoint Online Management Shell, see [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## Create the insights report
 
-To create the insights report, complete the following steps:
+Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports. To create the insights report, complete the following steps:
 
 1. [Connect to SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) as a global administrator or SharePoint administrator in Microsoft 365.
 2. Run the following PowerShell cmdlet  and accept the confirmation prompt to build the insights report:
@@ -83,7 +83,7 @@ To create the insights report, complete the following steps:
 
 ### View a summary of modes with results for SharePoint sites
 
-To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax:
+To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID>`
@@ -97,7 +97,7 @@ In this example, the insights report results are displayed for SharePoint sites 
 
 ### View the details for a specific mode for SharePoint sites
 
-To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax:
+To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
@@ -111,7 +111,7 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
 
 ### View a summary of modes with results for OneDrive accounts
 
-To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax:
+To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>`
@@ -125,7 +125,7 @@ In this example, the insights report results are displayed for OneDrive accounts
 
 ### View the details for a specific mode for OneDrive accounts
 
-To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax:
+To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>`
