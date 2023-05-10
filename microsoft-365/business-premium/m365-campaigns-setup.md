@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for Microsoft 365 Business for campaigns or other businesses"
+description: "Setup overview for Microsoft 365 for Campaigns or other businesses"
 ---
 
 # Set up Microsoft 365 for Campaigns
 
-This article describes how to get Microsoft 365 Business for Campaigns (a special offering for campaigns and political parties in the USA), complete the basic setup process, and proceed to next steps.
+This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), complete the basic setup process, and proceed to next steps.
 
 > [!TIP]
 > If you're looking for Microsoft 365 Business Premium, see [Set up Microsoft 365 Business Premium](m365-business-premium-setup.md).
@@ -84,7 +84,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- Get Microsoft 365 Business for Campaigns](get-microsoft-365-for-campaigns.md) |
+| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- Get [Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
