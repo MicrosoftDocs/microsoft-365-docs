@@ -90,8 +90,8 @@ Defender Experts for XDR currently supports the following one-click guided respo
 
 |**Action**|**Description**|
 |------------|-----------------|
-|[Isolate device](../defender-endpoint/respond-machine-alerts.md##isolate-devices-from-the-network)|Isolates a device, which helps prevent an attacker from controlling it and performing further activities such as data exfiltration and lateral movement. Note that the isolated device will still be connected to Microsoft Defender for Endpoint.|
-|[Quarantine file](../defender-endpoint/respond-file-alerts.md##stop-and-quarantine-files-in-your-network)|Stops running processes, quarantines the files, and deletes persistent data such as registry keys.|
+|[Isolate device](/microsoft-365/security/defender-endpoint/respond-machine-alerts##isolate-devices-from-the-network)|Isolates a device, which helps prevent an attacker from controlling it and performing further activities such as data exfiltration and lateral movement. Note that the isolated device will still be connected to Microsoft Defender for Endpoint.|
+|[Quarantine file](/microsoft-365/security/defender-endpoint/respond-file-alerts##stop-and-quarantine-files)|Stops running processes, quarantines the files, and deletes persistent data such as registry keys.|
 
 Apart from these one-click actions, you can also receive guided responses from our experts that you need to perform manually.
 
