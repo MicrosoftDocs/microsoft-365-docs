@@ -81,7 +81,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- Get [Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns) |
+| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- [Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
@@ -92,7 +92,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ## Sign in to Microsoft 365 for Campaigns
 
-If you signed up for Microsoft 365 for Campaigns (or Microsoft 365 Business Premium), you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
+If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
 
 Here's how to sign in:
 
