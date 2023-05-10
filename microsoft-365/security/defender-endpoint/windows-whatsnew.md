@@ -38,6 +38,15 @@ All updates contain:
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
+## May-2023 (Release version: 10.8295.22621.1023)
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1023|
+  
+**What's new**
+
+- Support new security settings management capabilities
 
 ## Jan/Feb-2023 (Release version: 10.8295.22621.1019)
 
