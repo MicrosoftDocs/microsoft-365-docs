@@ -23,6 +23,9 @@ audience: Admin
 
 Web content filtering enables your security team to track and regulate access to websites based on content categories. When you set up your web content filtering policy, you enable web protection for your organization. 
 
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information, see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
+
+
 ## Set up web content filtering
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
@@ -42,6 +45,8 @@ Web content filtering enables your security team to track and regulate access to
 
 ## Categories for web content filtering
 
+Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
+
 The following table describes web content categories you can choose for your web content filtering policy:
 
 | Category | Description |
@@ -52,9 +57,6 @@ The following table describes web content categories you can choose for your web
 | **Leisure** | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
 | **Uncategorized** | Sites that have no content or that are newly registered |
 
-Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
-
-Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information, see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
 
 ## Next steps
 
