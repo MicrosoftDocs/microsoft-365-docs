@@ -75,7 +75,7 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 After you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
 
-## Before you begin
+## Before you begin your setup process
 
 Make sure that you meet the following requirements before you begin your setup process:
 
@@ -144,4 +144,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Proceed to [boost your security protection](m365bp-security-overview.md).
+Proceed to [set up your security protection](m365bp-security-overview.md).
