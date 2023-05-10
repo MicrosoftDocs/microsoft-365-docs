@@ -28,7 +28,7 @@ ms.date: 05/29/2023
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they performed there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
+As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they did there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
 
 Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview) is turned on by default for all Microsoft Defender Experts for XDR customers when paid licenses are assigned to the tenant. If you have a trial license, your service delivery manager will work with you to turn on Audit if it isn’t yet.
 
@@ -62,13 +62,13 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 
 1. Sign into the Microsoft Purview compliance portal to use Audit New Search.
-2. Provide a Date and time range (UTC). 
+2. Provide a Date and time range (UTC).
 3. Under Workload, choose MicrosoftDefenderExperts.
 4. Select Search to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
 ## Search the audit logs using a PowerShell script
 
-In addition to using Audit New Search in the Purview portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
+In addition to using Audit New Search in the Microsoft Purview compliance portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
 
 ## Go to the next step
 

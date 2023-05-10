@@ -38,7 +38,7 @@ Through a combination of automation and human expertise, Defender Experts for XD
 
 ### Incident notifications
 
-Once our experts start investigating an incident, its **Assigned to** field is updated to _Defender Experts_ and its **Status** field is updated to _In progress_.
+Once our experts start investigating an incident, its **Assigned to** field is updated to _Defender Experts_, and its **Status** field is updated to _In progress_.
 When our experts conclude their investigation on an incident, the incident’s **Classification** field is updated to one of the following, depending on the experts’ findings:
 
 - True Positive
@@ -76,7 +76,7 @@ Select **View guided response** on the task card or on the top of the portal pag
 
 ### Investigation summary
 
-The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
+The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
 
 ![Screenshot of guided response investigation summary](../../media/xdr/investigation-summary.png)
 
@@ -161,7 +161,7 @@ Each section of the report is designed to provide more insights about the incide
 
 ### Understand the Defender Experts for XDR report
 
-The topmost section of the Defender Experts for XDR report provides the percentage of incidents we resolved in your environment, providing you transparency in our operations. This percentage is derived from the following figures, which are also presented in the report:
+The topmost section of the Defender Experts for XDR report provides the percentage of incidents we resolved in your environment, providing you with transparency in our operations. This percentage is derived from the following figures, which are also presented in the report:
 
 - **Investigated** – The number of active threats and other incidents from your incident queue that we triaged, investigated, or currently investigating within our scope.
 - **Resolved** – The total number of investigated incidents that were closed.
