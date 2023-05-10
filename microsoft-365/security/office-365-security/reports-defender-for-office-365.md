@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom:
 - seo-marvel-apr2020
@@ -130,9 +130,6 @@ To view the report, open the [Microsoft 365 Defender portal](https://security.mi
 
 The available views on the **URL protection** report page are described in the following sections.
 
-> [!NOTE]
-> This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the charts is not available in real time here, but the data in the details table is, so you may see a slight discrepancy between the two. The charts are refreshed once every four hours and contain data for the last 90 days.
-
 ### View data by URL click protection action
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
@@ -166,7 +163,7 @@ If you click **Filters**, you can modify the report and the details table by sel
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
-The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 7 days:
+The details table below the chart provides the following near-real-time view of all clicks that happened within the organization for the last 30 days:
 
 - **Click time**
 - **User**
@@ -229,18 +226,15 @@ PowerShell reporting cmdlets:
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:
-
-- **Organization Management**
-- **Security Administrator**
-- **Security Reader**
-- **Global Reader**
-
-For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+    - **Organization Management**
+    - **Security Administrator**
+    - **Security Reader**
+    - **Global Reader**
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](safe-links-policies-configure.md) and [Safe Attachments policies](safe-attachments-policies-configure.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection-about.md) and [anti-malware protection](anti-malware-protection-about.md).
-
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](safe-links-policies-configure.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection-about.md) and [anti-malware protection](anti-malware-protection-about.md).

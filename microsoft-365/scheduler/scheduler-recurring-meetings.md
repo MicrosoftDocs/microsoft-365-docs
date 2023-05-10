@@ -7,6 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.reviewer: strettin
+ms.date: 11/02/2021
 ms.localizationpriority: medium
 description: "Users can learn more about scheduling dynamic recurring meetings."
 ---

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/11/2019
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp

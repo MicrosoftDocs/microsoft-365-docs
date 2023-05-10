@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -22,7 +22,7 @@ search.appverid:
 description: "The Microsoft Purview Firefox Extension extends monitoring and control of file activities and protective actions to the Firefox browser"
 ---
 
-# Learn about the Microsoft Purview Firefox Extension (preview)
+# Learn about the Microsoft Purview Firefox Extension
 
 [Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-learn-about-dlp.md).
 

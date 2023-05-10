@@ -3,6 +3,7 @@ title: SKOS format reference for SharePoint taxonomy
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 09/14/2020
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

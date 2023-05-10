@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 10/05/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -26,8 +26,7 @@ description: "All credentials sensitive information type entity definition."
 
 "All credentials" is a bundled-entity sensitive information type (SIT). It detects credentials from all supported services and environments, which include Amazon, Azure, GitHub, Google, Microsoft general, Slack and more.
 
-For information about implementing bundled SITs, see [Learn about named entities](https://learn.microsoft.com/microsoft-365/compliance/named-entities-learn). For information about configuring endpoints and the supported file types, see [Configure endpoint data loss prevention settings](https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-endpoint-settings#advanced-classification-scanning-and-protection).
-
+For information about implementing bundled SITs, see [Learn about named entities](named-entities-learn.md). For information about configuring endpoints and the supported file types, see [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

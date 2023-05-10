@@ -97,7 +97,7 @@ Depending on the server that you're onboarding, the unified solution installs Mi
 
 |Server version|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
 |Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
 |Windows Server 2019 or later|Built-in|Built-in|
 
@@ -171,7 +171,7 @@ The **onboarding package** contains the following files:
 
 Follow these steps to download the packages:
 
-1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Endpoint > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
@@ -303,7 +303,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 ### Download package
 
-1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Endpoints > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 
@@ -378,3 +378,5 @@ For other Windows server versions, you have two options to offboard Windows serv
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+- [Azure Active Directory Seamless single sign-on](/azure/active-directory/hybrid/how-to-connect-sso-quick-start)
+- [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect)

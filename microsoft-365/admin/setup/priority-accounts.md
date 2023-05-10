@@ -3,8 +3,9 @@ title: "Manage and monitor priority accounts"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 06/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,7 +27,7 @@ In every Microsoft 365 organization, there are people that are essential, like e
 
 To help your organization protect these accounts, you can now designate specific users as priority accounts and leverage app-specific features that provide them with extra protection. In the future, more apps and features will support priority accounts, and to start with, we've announced two capabilities: **priority account protection** and **premium mail flow monitoring**.
 
-- **Priority account protection** - Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection) supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags-about.md).
+- **Priority account protection** - Microsoft Defender for Office 365 supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags-about.md).
 
   A natural question is, "Aren't all users a priority? Why not designate all users as priority accounts?" Yes, all users are a priority, but priority account protection offers the following additional benefits:
 
@@ -46,26 +47,24 @@ The **Priority account protection** feature that's described in this topic is av
 The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet the following requirements:
 
 - Your organization needs to have a license count of at least 5,000, from either one of, or a combination of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
-- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Office apps.
+- Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Microsoft 365 apps.
 
 > [!NOTE]
 > You can monitor up to 250 priority accounts.
 
 When you apply priority account protection to a mailbox, you should also apply priority account protection to users who have access to the mailbox (for example, the CEO and the CEO's executive assistant who manages the CEO's calendar).
 
-### Add priority accounts from the Setup page
+### Add priority accounts from the Microsoft 365 Defender page
 
-Add priority accounts from the **Setup page**.
+Add priority accounts from the **Microsoft 365 Defender page**.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to  Microsoft 365 Defender at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
 
-2. Go to **Setup** > **Organizational knowledge**, and choose **View** under **Monitor your most important accounts**.
+2. Go to **Settings** > **Email and Collaboration** > **User Tags** > **Create**.
 
-3. Select **Get Started** or **Manage**.
+3. The priority account tag is already created for you by default. By selecting **Edit** you can add users to the priority tag. Then, **Add members** > **Add** to add members to the priority account.
 
-4. On the **Add Priority accounts** page, in the search field, type the name or email address of the person you want to add to the priority accounts list. You can also set your email threshold for failed or delayed emails and get a weekly report of issues for priority accounts.
-
-5. Select the user and choose **Save**.
+5. Select **Next** and  **Submit**.
 
 You can also add priority accounts from the Active users page.
 

@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -60,7 +61,7 @@ The following table lists the indexing limits in eDiscovery (Premium).
 |Maximum size of a single file.|150 MB<sup>3</sup>|
 |Maximum depth of embedded items in a document.|25<sup>3</sup>|
 |Maximum size of files processed by Optical Character Recognition (OCR).|24 MB<sup>3</sup> |
-|Maximum advanced indexing throughput | 2 GB per hour |
+|Maximum Advanced indexing throughput | 2 GB per hour |
 
 ## Jobs limits
 
@@ -130,10 +131,14 @@ The limits described in this section are related to exporting documents out of a
 
 |Description of limit|Limit|
 |:---|:---|
-|Maximum number of items displayed per page in a review set.|10,000|
+|Maximum number of items displayed per page in a review set.|1,000|
 
 > [!NOTE]
 > Use default or custom filters to [adjust the displayed items](/microsoft-365/compliance/review-set-search) in a review set as needed.
+
+## Need help with eDiscovery issues?
+
+Check out the [Resolve common eDiscovery issues](/microsoft-365/troubleshoot/ediscovery/resolve-ediscovery-issues) article for basic troubleshooting steps that you can take to identify and resolve issues that you might encounter during an eDiscovery search or elsewhere in the eDiscovery process.
 
 ## Reference notes
 
@@ -149,6 +154,6 @@ The limits described in this section are related to exporting documents out of a
   - All search permissions filters that apply to the user.
   - The characters from any location properties in the search, including ExchangeLocation, PublicFolderLocation, SharPointLocation, ExchangeLocationExclusion, PublicFolderLocationExclusion, SharePointLocationExclusion, and OneDriveLocationExclusion. For example, including all SharePoint sites and OneDrive accounts in the search will count as six characters, as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation field.
 
-<sup>5</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There's no upper limit for non-phrase terms.
+<sup>5</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR time boxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There's no upper limit for non-phrase terms.
 
 <sup>6</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in eDiscovery (Premium)](ediscovery-exporting-data.md).

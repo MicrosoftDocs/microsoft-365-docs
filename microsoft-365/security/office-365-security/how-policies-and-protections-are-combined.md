@@ -11,13 +11,14 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
+  - tier3
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the application order of protections in Exchange Online Protection (EOP), and how the priority value in protection policies determines which policy is applied.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 09/17/2019
+ms.date: 1/31/2023
 ---
 
 # Order and precedence of email protection

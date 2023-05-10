@@ -143,10 +143,10 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected.
 
-      :::image type="content" source="media/audit-write.png" alt-text="This is the deafult audit write access screenshot." lightbox="media/audit-write.png":::
+      :::image type="content" source="media/audit-write.png" alt-text="This is the default audit write access screenshot." lightbox="media/audit-write.png":::
 
    3. Create Default Deny custom policy for any other printers.
 
-      :::image type="content" source="images/create-default.png" alt-text="This is create default." lightbox="images/create-default.png":::
+      :::image type="content" source="images/create-default.png" alt-text="This is create default screenshot." lightbox="images/create-default.png":::
 
    Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Group%20Policy/Printer_Policies.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
