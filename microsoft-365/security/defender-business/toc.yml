@@ -42,7 +42,21 @@
     - name: Step 5 - Onboard devices
       href: mdb-onboard-devices.md
     - name: Step 6 - Set up and review your security policies
-      href: mdb-configure-security-settings.md
+      items: 
+      - name: Security policies and settings
+        href: mdb-configure-security-settings.md
+      - name: Next-generation protection
+        href: mdb-next-generation-protection.md
+      - name: Firewall
+        href: mdb-firewall.md
+      - name: Web content filtering
+        href: mdb-web-content-filtering.md
+      - name: Controlled folder access
+        href: mdb-controlled-folder-access.md
+      - name: Attack surface reduction
+        href: mdb-asr.md
+      - name: Portal and feature settings
+        href: mdb-portal-advanced-feature-settings.md
   - name: Monitor or manage devices
     items: 
     - name: Get an overview of mobile threat defense
@@ -53,8 +67,6 @@
       href: mdb-create-edit-device-groups.md
     - name: Offboard devices
       href: mdb-offboard-devices.md
-    - name: How to get Microsoft Defender for Business servers
-      href: get-defender-business-servers.md
   - name: View and respond to detected threats
     items: 
     - name: View and use reports
@@ -73,14 +85,6 @@
       href: mdb-view-edit-create-policies.md
     - name: Understand policy order
       href: mdb-policy-order.md
-    - name: Set up your attack surface reduction capabilities
-      href: mdb-asr.md
-    - name: Next-generation protection settings
-      href: mdb-next-gen-configuration-settings.md
-    - name: Firewall settings
-      href: mdb-firewall.md
-    - name: Manage rules for firewall policies
-      href: mdb-custom-rules-firewall.md
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data
