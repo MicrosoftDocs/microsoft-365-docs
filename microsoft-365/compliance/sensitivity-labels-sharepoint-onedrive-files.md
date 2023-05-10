@@ -87,29 +87,36 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 - **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
 - **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
-## Limitations
+## Support for labels configured for user-defined permissions
 
-- Limited support for labels configured for user-defined permissions, now in preview. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
-    - When a document is labeled with user-defined permissions and uploaded to SharePoint or OneDrive, these services can now process the document so that it can be opened and edited in Office for the web, the label name is displayed in the **Sensitivity** column, and the encrypted file will be returned in search results for the label ID.
-    - Labels with this configuration are now displayed in Office for the web. However, currently, users can't apply these labels in Office for the web and if they are selected, users see a message instructing them to apply the label using a desktop app.
-    - The contents can be inspected for search, data loss prevention, and eDiscovery.
+Now in preview, there's now limited support for labels configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
+
+- When a document is labeled with user-defined permissions and uploaded to SharePoint or OneDrive, these services can now process the document so that it can be opened and edited in Office for the web, the label name is displayed in the **Sensitivity** column, and the encrypted file will be returned in search results for the label ID.
+
+- Labels with this configuration are now displayed in Office for the web. However, currently, users can't apply these labels in Office for the web and if they are selected, users see a message instructing them to apply the label using a desktop app.
+
+- The contents can be inspected for search, data loss prevention, and eDiscovery.
+
+To support AutoSave and co-authoring for these encrypted files using a desktop or mobile app, you must have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and for your Microsoft 365 Apps for enterprise:
+- **Windows**: Minimum version xxx from the Beta Channel
+- **macOS**: Minimum version 16.51
+- **iOS**: Minimum version 2.58
+- **Android**: Minimum version 16.0.14931
+
+> [!NOTE]
+> If you use earlier versions, AutoSave and co-authoring will be temporarily disabled for documents that are labeled with user-defined permissions. After you close the document and wait 10 minutes, these features are available again.
     
-    To support AutoSave and co-authoring for these encrypted files using a desktop or mobile app, you must have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and for your Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version xxx from the Beta Channel
-    - **macOS**: Minimum version 16.51
-    - **iOS**: Minimum version 2.58
-    - **Android**: Minimum version 16.0.14931
-    
-    > [!NOTE]
-    > If you use earlier versions, AutoSave and co-authoring will be temporarily disabled for documents that are labeled with user-defined permissions. After you close the document and wait 10 minutes, these features are available again.
-    
-    This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt-out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
+This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt-out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
+
+## Limitations
 
 - SharePoint and OneDrive can't process some files that are labeled and encrypted from Office desktop apps when these files contain PowerQuery data, data stored by custom add-ins, or custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. This limitation also applies to files that include a [bibliography](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5), and to files that have a [Document ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) added when they are uploaded.
 
     For these files, either apply a label without encryption so that they can later be opened in Office on the web, or instruct users to open the files in their desktop apps. Files that are labeled and encrypted only in Office on the web aren't affected.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that have been encrypted using the older-style Azure Information Protection labels that used to be published from the Azure portal. For the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, download these files and then upload them to their original location in SharePoint or OneDrive.
+
+- Users can't apply [sensitivity labels configured for user-defined permissions](#support-for-labels-configured-for-user-defined-permissions) while using Office for the web.
 
 - SharePoint and OneDrive can't process encrypted files when the label that applied the encryption has either of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
   - **User access to content expires** is set to a value other than **Never**.

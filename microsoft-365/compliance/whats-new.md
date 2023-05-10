@@ -49,6 +49,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
 
+### Sensitivity labels
+
+- **Preview**: Now rolling out in preview, [limited support for labels configured for user-defined permissions](sensitivity-labels-sharepoint-onedrive-files.md#support-for-labels-configured-for-user-defined-permissions)
+
 ## April 2023
 
 ### Communication compliance
