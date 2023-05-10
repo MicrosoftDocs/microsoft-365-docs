@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/17/2022
+ms.date: 05/29/2023
 ---
 
 # Additional information
@@ -39,3 +39,7 @@ To realize the benefits of Microsoft Defender Experts for XDR, you and your secu
 Defender Experts for XDR is not an incident response service. While it augments your SOC team to triage, investigate, and remediate threats, Defender Experts for XDR will not be able to provide recovery and crisis management services **if a major security incident has already occurred** in your organization. You should engage instead with your own security incident response team to address urgent incident response issues. As part of our operations, we will assist organizations actively under attack to assess the compromise and share necessary details with their incident response provider.
 
 If you don't have your own security incident response team, [Microsoft Incident Response](https://www.microsoft.com/security/business/microsoft-incident-response) can help mitigate a breach and recover your operations. If you are an existing unified or premier support customer, you can create a support request in the [Microsoft Services Hub](https://serviceshub.microsoft.com/home) to engage with them. Otherwise, fill out the [Experiencing a Cybersecurity Incident?](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRypQlJUvhTFIvfpiAfrpFQdUOTdRRFpDUFQ1TzNLVFZXV0VUOVlVN0szUiQlQCN0PWcu) form. We will review the details and quickly call you with instructions to get started.
+
+## Go to the next step
+
+[Frequently asked questions](feqently-asked-questions.md)
