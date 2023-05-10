@@ -118,12 +118,14 @@ Microsoft Defender for Business servers is an add-on to Defender for Business th
 
 4. Review the information, and complete the purchase process. 
 
-   You'll need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux. Note that you won't assign the Microsoft Defender for Business servers license to users or devices. 
+   You'll need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux. 
+   
+   Note that you won't assign the Microsoft Defender for Business servers license to users or devices. 
    
 
 ## Portals you'll use for setup and management
 
-When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you will use the Intune admin center as well. The following table summarizes these portals and how you'll use them.
+When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you'll use the Intune admin center as well. The following table summarizes these portals and how you'll use them.
 
 |Portal  |Description  |
 |---------|---------|
