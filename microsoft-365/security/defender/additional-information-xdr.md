@@ -42,4 +42,4 @@ If you don't have your own security incident response team, [Microsoft Incident 
 
 ## Go to the next step
 
-[Frequently asked questions](feqently-asked-questions.md)
+[Frequently asked questions](frequently-asked-questions.md)

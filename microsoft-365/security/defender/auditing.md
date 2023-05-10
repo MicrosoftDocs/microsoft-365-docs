@@ -66,9 +66,6 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 
 In addition to using Audit New Search in the Purview portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
 
+## Go to the next step
 
-
-
-
-
-
+[Additional information](additional-information-xdr.md)

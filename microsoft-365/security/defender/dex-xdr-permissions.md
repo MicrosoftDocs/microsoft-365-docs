@@ -1,7 +1,7 @@
 ---
 title: How Microsoft Defender Experts for XDR permissions work
 ms.reviewer:
-description: Configuring permissions in customer tenants
+description: Configuring permissions in customer's XDR tenants
 keywords: XDR, Xtended detection and response, defender experts for xdr, configuring permissions in xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/17/2022
+ms.date: 05/29/2023
 ---
 
 # How Microsoft Defender Experts for XDR permissions work
@@ -45,4 +45,3 @@ Once you select the permissions you’d like to grant to our experts, we create 
 - Configure conditional access policies – These policies restrict our experts to only access your tenant from the Microsoft Experts secure workstations with MFA verification. Two policies are configured with the naming convention _Microsoft Security Experts-<policy name>-DO NOT DELETE_.
 
 These policies are configured during the onboarding process and require the relevant administrator to stay signed in to complete the steps. Once the above policies are created and the permissions setup is considered complete, you will see a notification that the setup is complete.
-
