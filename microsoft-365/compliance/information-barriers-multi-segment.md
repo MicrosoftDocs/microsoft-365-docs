@@ -89,7 +89,9 @@ With segments and policies defined, the North School District applies the polici
 If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet to verify your IB mode:
 
 ```powershell
-Get-PolicyConfig
+Connect-IPPSSession
+connect-exchangeonline
+Get-OrganizationConfig | FL InformationBarrierMode
 ```
 
 If the value of the `InformationBarrierMode` property is *SingleSegment*, you can enable multi-segment support by following the guidance in the [Enable multiple segment support for users](#enable-multiple-segment-support-for-users) section in this article. If the value of the `InformationBarrierMode` property is *MultiSegment*, you can skip enabling support for multi-segment, it's already enabled for your organization.
