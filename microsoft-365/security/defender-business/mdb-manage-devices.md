@@ -26,7 +26,7 @@ In Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
-- [View the state of Microsoft Defender Antivirus](#microsoft-defender-antivirus-states)
+- [View the state of Microsoft Defender Antivirus](#view-the-state-of-microsoft-defender-antivirus)
 - [Onboard a device to Defender for Business](#onboard-a-device)  
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
