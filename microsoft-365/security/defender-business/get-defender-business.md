@@ -32,7 +32,6 @@ This article includes:
 - **[Portals that you'll use](#portals-youll-use-for-setup-and-management)** to set up, configure, and manage Defender for Business
 - **[Next steps](#next-step)**, such as adding users and assigning licenses.
 
-
 > [!IMPORTANT]
 > You should be a global administrator to complete the tasks described in this article. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
