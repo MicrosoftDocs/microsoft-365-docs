@@ -25,7 +25,7 @@ ms.collection:
 
 :::image type="content" source="media/mdb-setup-step1.png" alt-text="Visual aid depicting step 1 - Get Defender for Business.":::
 
-This article includes:
+Sections include:
 
 - **[How to get Defender for Business](#how-to-get-microsoft-defender-for-business)** to protect client devices, such as computers, tablets, and phones
 - **[How get Microsoft Defender for Business servers](#how-to-get-microsoft-defender-for-business-servers)**, an add-on that enables you to onboard and protect Windows and Linux servers
