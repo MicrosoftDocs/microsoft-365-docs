@@ -85,6 +85,7 @@ Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/micr
   
 ## Related content
 
+[Restore deleted items from Microsoft 365 Group](/Exchange/recipients-in-exchange-online/restore-deleted-items-group)
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [Delete groups using the Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)\
 [Manage your group-connected team site settings](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (article)\
