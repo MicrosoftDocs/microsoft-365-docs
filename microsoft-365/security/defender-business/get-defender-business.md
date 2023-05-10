@@ -23,10 +23,10 @@ ms.collection:
 
 [Defender for Business](mdb-overview.md) is an endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes:
 
-- How to get Defender for Business to protect client devices, such as computers, tablets, and phones
-- How get Microsoft Defender for Business servers, an add-on that enables you to onboard and protect Windows and Linux servers
-- Portals that you'll use to set up, configure, and manage Defender for Business
-- Next steps
+- **[How to get Defender for Business](#how-to-get-microsoft-defender-for-business)** to protect client devices, such as computers, tablets, and phones
+- **[How get Microsoft Defender for Business servers](#how-to-get-microsoft-defender-for-business-servers)**, an add-on that enables you to onboard and protect Windows and Linux servers
+- **[Portals that you'll use](#portals-youll-use-for-setup-and-management)** to set up, configure, and manage Defender for Business
+- **[Next steps](#next-step)**, such as adding users and assigning licenses.
 
 :::image type="content" source="media/mdb-setup-step1.png" alt-text="Visual aid depicting step 1 - Get Defender for Business.":::
 
