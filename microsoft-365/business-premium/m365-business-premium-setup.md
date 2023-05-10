@@ -33,7 +33,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 - Try or buy Microsoft 365 Business Premium on your own; or
 - Work with a Microsoft partner.
 
-# [Sign up on your own](#tab/getown)
+## [Sign up on your own](#tab/getown)
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -41,7 +41,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
 
-# [Work with a partner](#tab/partner)
+## [Work with a partner](#tab/partner)
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. If you're not already working with a solution provider, you can find one by following these steps: 
 
