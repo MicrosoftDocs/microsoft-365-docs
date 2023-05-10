@@ -24,7 +24,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 Business for Campaigns
+# Set up Microsoft 365 for Campaigns
 
 This article describes how to get Microsoft 365 Business for Campaigns (a special offering for campaigns and political parties in the USA), complete the basic setup process, and proceed to next steps.
 
@@ -73,7 +73,7 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 3. After we've verified that you represent a national-level political campaign or party, you'll receive an email invitation from Microsoft. Your invite includes a sign-up link specific to your organization.
 
 
-After you have [subscribed to Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md), your next step is to get everything set up.
+After you have subscribed to Microsoft 365 for Campaigns, your next step is to get everything set up.
 
 ## Before you begin your setup process
 
@@ -81,7 +81,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
+| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following articles: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- Get Microsoft 365 Business for Campaigns](get-microsoft-365-for-campaigns.md) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
