@@ -1,7 +1,7 @@
 ---
 title: Getting started with Microsoft Defender Experts for XDR
 ms.reviewer:
-description: Once the Defender Experts for XDR team are ready to onboard you, we'll reach out to get you started.
+description: Defender Experts for XDR enables you to determine the individuals or groups within your organization that need to be notified if there's a critical incident
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -62,7 +62,7 @@ To edit or update permissions after the initial setup, go to **Settings** > **De
 
 ## Tell us who to contact for important matters
 
-Defender Experts for XDR lets you identify who in your organization we’ll have to notify for critical incidents, service updates, occasional questions, and other recommendations. These persons or groups will then receive an email informing them that they’ve been selected as an incident response or a service review contact.
+Defender Experts for XDR enables you to determine the individuals or groups within your organization that need to be notified in the event of critical incidents, service updates, occasional queries, and other recommendations. Once identified, the individuals will receive an email notifying them that they have been chosen as a contact for incident response or service review purposes.
 
 ![Screenshot of who to contact for important matters in XDR](../../media/XDR/who-to-contact-for-important-matters.png)
 
