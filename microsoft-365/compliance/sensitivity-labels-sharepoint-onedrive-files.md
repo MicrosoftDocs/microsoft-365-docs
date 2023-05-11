@@ -97,15 +97,13 @@ Now in preview, there's now limited support for labels configured for user-defin
 
 - The contents currently can't be inspected for search, data loss prevention, or eDiscovery.
 
-To support AutoSave and co-authoring for these encrypted files using a desktop or mobile app, you must have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and for your Microsoft 365 Apps for enterprise:
+To support AutoSave and co-authoring for these encrypted files using a desktop app, you must have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and for your Microsoft 365 Apps for enterprise:
 - **Windows**: Minimum version xxx from the Beta Channel
 - **macOS**: Minimum version 16.51
-- **iOS**: Minimum version 2.58
-- **Android**: Minimum version 16.0.14931
 
 > [!NOTE]
-> If you use earlier versions, AutoSave and co-authoring will be temporarily disabled for documents that are labeled with user-defined permissions. After you close the document and wait 10 minutes, these features are available again.
-    
+> If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply a sensitivity label that's configured with user-defined permissions. After they close the document and wait 10 minutes, these features are available again.
+
 This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt-out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
 
 ## Limitations
