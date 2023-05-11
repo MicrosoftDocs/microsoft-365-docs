@@ -95,6 +95,7 @@ To add file paths to exclude:
 1. In the compliance portal, go to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **File path exclusion** section, select **Add file paths to exclude**.
 3. In the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and subfolders to be excluded. For more information, see the following examples.
+
    |Example|Description|
    |-----------------------------------------------|-------------------------------------------------|
    |**\\\\ms.temp\LocalFolder\ or C:\temp**|Excludes files directly under the folder and all subfolders for every file path starting with the entered prefix.|
