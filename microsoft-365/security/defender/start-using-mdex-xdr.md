@@ -60,7 +60,7 @@ Otherwise, if an incident is classified as _True Positive_, our experts then ide
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
 
-**[SCREENSHOT OF CARD]**
+![Screenshot of incidents card in Defender experts for XDR](../../media/xdr/view-incidents.png)
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft 365 Defender portal using the _Defender Experts_ tag.
 
