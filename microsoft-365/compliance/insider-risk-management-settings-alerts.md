@@ -1,5 +1,5 @@
 ---
-title: Export Microsoft Purview Insider Risk Management alert information
+title: Export insider risk management alert information
 description: Learn how to export Microsoft Purview Insider Risk Management information to (SIEM) and security orchestration automated response (SOAR) solutions by using the Office 365 Management Activity API schema.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Export Microsoft Purview Insider Risk Management alert information 
+# Export insider risk management alert information 
 
 Microsoft Purview Insider Risk Management alert information is exportable to security information and event management (SIEM) and security orchestration automated response (SOAR) solutions by using the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
 

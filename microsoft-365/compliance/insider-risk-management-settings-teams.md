@@ -1,5 +1,5 @@
 ---
-title: Enable Microsoft Teams for collaborating on Microsoft Purview Insider Risk Management cases
+title: Enable Microsoft Teams for collaborating on insider risk management cases
 description: Learn about enabling Microsoft Teams for collaborating on Microsoft Purview Insider Risk Management cases
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Enable Microsoft Teams for collaborating on Microsoft Purview Insider Risk Management cases
+# Enable Microsoft Teams for collaborating on insider risk management cases
 
 Compliance analysts and investigators can use Microsoft Teams to collaborate on Microsoft Purview Insider Risk Management cases. They can communicate with other stakeholders on Teams to:
 

@@ -1,5 +1,5 @@
 ---
-title: Prioritize user groups for your Microsoft Purview Insider Risk Management policies
+title: Prioritize user groups for your insider risk management policies
 description: Learn about the Priority user groups settings for Microsoft Purview Insider Risk Management 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Prioritize user groups for your Microsoft Purview Insider Risk Management policies
+# Prioritize user groups for your insider risk management policies
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in Microsoft Purview Insider Risk Management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 

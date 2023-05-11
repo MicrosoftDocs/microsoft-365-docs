@@ -1,5 +1,5 @@
 ---
-title: Enable admin notifications for Microsoft Purview Insider Risk Management
+title: Enable admin notifications for insider risk management
 description: Learn about enabling admin notifications setting for Microsoft Purview Insider Risk Management 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Enable admin notifications for Microsoft Purview Insider Risk Management
+# Enable admin notifications for insider risk management
 
 When you turn on the **Admin notifications** setting in Microsoft Purview Insider Risk Management, email notifications are automatically sent to selected role groups. You can send email notifications for the following scenarios:
 

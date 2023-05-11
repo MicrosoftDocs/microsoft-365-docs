@@ -1,5 +1,5 @@
 ---
-title: Set policy timeframes in Microsoft Purview Insider Risk Management
+title: Set policy timeframes in insider risk management
 description: Learn about the Policy timeframes settings in Microsoft Purview Insider Risk Management 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Set policy timeframes in Microsoft Purview Insider Risk Management
+# Set policy timeframes in insider risk management
 
 Policy timeframes in Microsoft Purview Insider Risk Management allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
 

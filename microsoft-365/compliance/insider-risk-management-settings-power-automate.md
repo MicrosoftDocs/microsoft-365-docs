@@ -1,5 +1,5 @@
 ---
-title: Automate Microsoft Purview Insider Risk Management actions with Microsoft Power Automate flows (preview)
+title: Automate insider risk management actions with Microsoft Power Automate flows (preview)
 description: Learn how to automate Microsoft Purview Insider Risk Management actions with Microsoft Power Automate flows (preview)
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Automate Microsoft Purview Insider Risk Management actions with Microsoft Power Automate flows (preview)
+# Automate insider risk management actions with Microsoft Power Automate flows (preview)
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for Microsoft Purview Insider Risk Management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.
 

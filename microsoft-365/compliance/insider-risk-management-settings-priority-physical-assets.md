@@ -1,5 +1,5 @@
 ---
-title: Identify priority physical assets for Microsoft Purview Insider Risk Management policies
+title: Identify priority physical assets for insider risk management policies
 description: Learn about the Priority physical assets (preview) settings for Microsoft Purview Insider Risk Management 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Identify priority physical assets for Microsoft Purview Insider Risk Management policies
+# Identify priority physical assets for insider risk management policies
 
 Identifying access to priority physical assets and correlating access activity to user events is an important component of your Microsoft Purview Insider Risk Management compliance infrastructure. These physical assets represent priority locations in your organization, such as company buildings, data centers, or server rooms. Insider risk activities may be associated with users working unusual hours, attempting to access these unauthorized sensitive or secure areas, and requests for access to high-level areas without legitimate needs.
 

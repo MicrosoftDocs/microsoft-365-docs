@@ -1,5 +1,5 @@
 ---
-title: Set up inline alert customization for Microsoft Purview Insider Risk Management
+title: Set up inline alert customization in insider risk management
 description: Learn about the inline alert customization setting for Microsoft Purview Insider Risk Management 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Set up inline alert customization in Microsoft Purview Insider Risk Management
+# Set up inline alert customization in insider risk management
 
 Inline alert customization in Microsoft Purview Insider Risk Management allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 

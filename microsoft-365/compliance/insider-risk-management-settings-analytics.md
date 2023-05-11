@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Turn the Analytics setting on in Microsoft Purview Insider Risk Management
+# Turn the Analytics setting on in insider risk management
 
 Enabling Microsoft Purview Insider Risk Management analytics offers two important benefits. When analytics is enabled, you can:
 

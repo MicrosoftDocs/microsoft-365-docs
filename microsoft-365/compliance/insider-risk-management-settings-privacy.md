@@ -1,5 +1,5 @@
 ---
-title: Show anonymized usernames in Microsoft Purview Insider Risk Management
+title: Show anonymized usernames in insider risk management
 description: Learn about using the Privacy setting in Microsoft Purview Insider Risk Management to show anonymized usernames.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Show anonymized usernames in Microsoft Purview Insider Risk Management
+# Show anonymized usernames in insider risk management
 
 Protecting the privacy of users that have policy matches in Microsoft Purview Insider Risk Management is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with an insider risk policy match, you can choose one of the following settings:
 
