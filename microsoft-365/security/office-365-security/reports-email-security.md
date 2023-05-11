@@ -42,13 +42,11 @@ The rest of this article describes the reports that are exclusive to Defender fo
 
 > [!NOTE]
 >
-> Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md).
+> - Some of the reports on the **Email & collaboration reports** page are exclusive to Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md).
 >
-> Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
-
-Watch this short video to learn how you can use reports to understand the effectiveness of Defender for Office 365 in your organization.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWBkxB]
+> - Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+>
+>   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
 
 ## Email security report changes in the Microsoft 365 Defender portal
 
@@ -99,13 +97,12 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Compromised users** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Compromised users** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ## Exchange transport rule report
 
 > [!NOTE]
 > The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
-
 
 ## Forwarding report
 
@@ -169,7 +166,7 @@ On the **Type** tab, select **Choose a category for more details** to see more i
 - **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - **Spam detections**: This selection takes you to the [Spam detections report](reports-email-security.md#spam-detections-report).
 
-On the ***Type** tab, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the ***Type** tab, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### Direction view for the Mailflow status report
 
@@ -321,7 +318,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Post delivery activities** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Post delivery activities** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 :::image type="content" source="../../media/post-delivery-activities-report.png" alt-text="The Post-delivery activities report." lightbox="../../media/post-delivery-activities-report.png":::
 
@@ -387,7 +384,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Spoof mail report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Spoof mail report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 :::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft 365 Defender portal." lightbox="../../media/spoof-detections-report-page.png":::
 
@@ -429,7 +426,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Submissions** report page, the **[Export](#export-report)** action is available.
+On the **Submissions** report page, the **[Export](#export-report-data)** action is available.
 
 :::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal." lightbox="../../media/submissions-report-page.png":::
 
@@ -567,7 +564,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### View data by Email \> Spam and Chart breakdown by Detection Technology
 
@@ -625,7 +622,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
@@ -690,7 +687,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### Chart breakdown by Policy type
 
@@ -750,7 +747,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### Chart breakdown by Delivery status
 
@@ -811,7 +808,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### View data by Content \> Malware
 
@@ -840,7 +837,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
 
 ### View data by System override and Chart breakdown by Reason
 
@@ -893,7 +890,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
 
 ### View data by System override and Chart breakdown by Delivery location
 
@@ -938,7 +935,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
+On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
 
 ## Top malware report
 
@@ -959,7 +956,7 @@ On the **Top malware report** page, a larger version of the pie chart is display
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting the **Start date** and **End date** values in the flyout that opens.
 
-On the **Top malware** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** actions are available.
+On the **Top malware** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 :::image type="content" source="../../media/top-malware-report-view.png" alt-text="The Top malware report view." lightbox="../../media/top-malware-report-view.png":::
 
@@ -1067,7 +1064,7 @@ To group the entries, select **Group** and select one of the following values fr
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
-On the **User reported messages** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)** action is available.
+On the **User reported messages** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
@@ -1083,26 +1080,56 @@ You need to be assigned permissions before you can view and use the reports that
   - **Global Reader**
 - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Azure Active Directory gives users the required permissions _and_ permissions for other features in Microsoft 365.
 the 
-<sup>\*</sup> Membership in the **Organization Management** role group or **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)** actions in reports (where available).
+<sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
 ## What if the reports aren't showing data?
 
-If you don't see data in the reports, check the report filters and double-check that your protection policies are configured to detect and take action on messages.
+If you don't see data in the reports, check the report filters and double-check that your protection policies are configured to detect and take action on messages. For more information, see the following articles:
+
+- [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
+- [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
+- [How do I turn off spam filtering?](/microsoft-365/security/office-365-security/anti-spam-protection-faq#how-do-i-turn-off-spam-filtering-)
 
 ## Download and export report information
 
-Depending on the report and the specific view in the report, one or more of the following actions might be available on the main report page as previously described:
+Depending on the report and possibly the specific view in the report, one or more of the following actions might be available on the main report page as previously described:
 
-- :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report)**
-- :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-report)**
-- :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-report)**
+- :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)**
+- :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**
+- :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**
 
-## Schedule report
+### Export report data
+
+> [!TIP]
+>
+> - The exported data is affected by any filters that are configured in the report at the time of export.
+> - If the exported data exceeds 150000 entries, the data is split into multiple files.
+
+1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**.
+
+2. In the **Export conditions** flyout that opens, review and configure the following settings:
+
+   - **Select a view to export**: Select one of the following values:
+     - **Summary**: Data from the last 90 days is available. This is the default value.
+     - **Details**: Data from the last 30 days is available. A date range of one day is supported.
+   - **Date (UTC)**:
+     - **Start date**: The default value is three months ago.
+     - **End date**: The default value is today.
+
+   When you're finished in the **Export conditions** flyout, select **Export**.
+
+   The **Export** button changes to **Exporting...** and a progress bar is shown.
+
+3. In the **Save as** dialog that opens, you see the default name of the .csv file and the download location (the local Downloads folder by default), but you can change those values and then select **Save** to download the exported data.
+
+   If you see a dialog that security.microsoft.com wants to download multiple files, select **Allow**.
+
+### Schedule recurring reports
 
 > [!NOTE]
-> To create or manage scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To create scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
 
-1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule** to start the create scheduled report wizard.
+1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule** to start the new scheduled report wizard.
 
 2. On the **Name scheduled report** page, review or customize the **Name** value, and then select **Next**.
 
@@ -1146,7 +1173,7 @@ The reports are emailed to the specified recipients based on the schedule you co
 
 The scheduled report entry is available on the **Managed schedules** page as described in the next subsection. 
 
-### Manage existing scheduled reports
+#### Manage existing scheduled reports
 
 After you create a scheduled report as described in the previous section, the scheduled report entry is available on the **Manage schedules** page in the Defender portal.
 
@@ -1162,7 +1189,7 @@ On the **Manage schedules** page, the following information is shown for each sc
 
 To change the list from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find existing scheduled report.
+Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find an existing scheduled report entry.
 
 To modify the scheduled report settings, do the following steps:
 
@@ -1172,7 +1199,7 @@ To modify the scheduled report settings, do the following steps:
    - Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit name** to change the name of the scheduled report.
    - Select the **Edit** link in the section to modify the corresponding settings.
 
-   The settings and configuration steps are the same as described in [Schedule report](#schedule-report).
+   The settings and configuration steps are the same as described in [Schedule report](#schedule-recurring-reports).
 
 To delete a scheduled report entry, use either of the following methods:
 
@@ -1183,12 +1210,14 @@ Read the warning dialog that opens, and then select **OK**.
 
 Back on the **Manage schedules** page, the deleted scheduled report entry is no longer listed, and previous reports for the scheduled report are deleted and are no longer available for download.
 
-## Request report
+### Request on-demand reports for download
+
+[Request on-demand reports](#request-on-demand-reports-for-download)
 
 > [!NOTE]
 > To create on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
 
-1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Request report** to start the create on-demand report wizard.
+1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Request report** to start the new on-demand report wizard.
 
 2. On the **Name on-demand report** page, review or customize the **Name** value, and then select **Next**.
 
@@ -1216,7 +1245,10 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
 
 The report creation task (and eventually the finished report) is available on the **Reports for download** page as described in the next subsection. 
 
-### Download reports
+#### Download reports
+
+> [!NOTE]
+> To download on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
 
 After you request an on-demand report as described in the previous section, you check the status of the report and eventually download the report on the **Reports for download** page in the Defender portal.
 
@@ -1227,22 +1259,16 @@ On the **Reports for download** page, the following information is shown for eac
    - **Name**
    - **Report type**
    - **Last sent**
-   - **Status**
+   - **Status**:
+     - **Pending**: The report is still being created, and it isn't available to download yet.
+     - **Complete - Ready for download**: Report generation is complete, and the report is available to download.
+     - **Complete - No results found**: Report generation is complete, but the report contains no data, so you can't download it.
 
-Find and select the report you want to download.
+To download the report, select the check box next in the start date of the report, and then select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download report** action that appears.
 
-## Export report
+Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find an existing report.
 
-On the main page for the report, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**. An **Export conditions** flyout appears where you can configure the following settings:
-
-- **Select a view to export**: Select one of the following values:
-  - **Summary**: Data is available for the last 90 days.
-  - **Details**: Data is available for the last 30 days.
-- **Date (UTC)**: **Start date** and **End date**.
-
-When you're finished configuring the filters, select **Export**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection.
-
-Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
+In the **Save as** dialog that opens, you see the default name of the .csv file and the download location (the local Downloads folder by default), but you can change those values and then select **Save** to download the report.
 
 ## Related articles
 

@@ -106,7 +106,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Mail latency report** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report)** action is available.
+On the **Mail latency report** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** action is available.
 
 ## Threat protection status report
 
@@ -161,7 +161,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report)** buttons are available.
+On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** buttons are available.
 
 ### View data by URL click by application in the URL protection report
 
@@ -192,7 +192,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-report)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-report)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report)** buttons are available.
+On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** buttons are available.
 
 ## Additional reports to view
 
@@ -222,8 +222,9 @@ See [What permissions are needed to view these reports?](reports-email-security.
 
 ## What if the reports aren't showing data?
 
-If you don't see data in the reports, check the report filters and double-check that your policies are set up correctly. Safe Links policies and Safe Attachments policies from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages. For more information, see:
+If you don't see data in the reports, check the report filters and double-check that your policies are set up correctly. Safe Links policies and Safe Attachments policies from Built-in protection, preset security policies, or custom policies need to be in effect and acting on messages. For more information, see the following articles:
 
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
+- [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
 - [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 - [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
