@@ -28,31 +28,28 @@ description: "U.A.E passport number sensitive information type entity definition
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-
 ## Format
 
-nine alphanumeric characters, with only specific values allowed for letters. All nine characters should also not be digits 
+nine alphanumeric characters, with only specific values allowed for letters. All nine characters should also not be digits.
 
 ## Pattern
 
-nine alphanumeric characters, chosen from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z 
+nine alphanumeric characters, chosen from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z.
 
 ## Checksum
 
-All nine characters should not be digits 
+All nine characters should not be digits.
 
 ## Definition
 
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_uae_passport_number finds content that matches the pattern. 
-- A keyword from Keyword_uae_passport_number is found. 
+- The regular expression Regex_uae_passport_number finds content that matches the pattern.
+- A keyword from Keyword_uae_passport_number is found.
 
- 
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
-
-The regular expression Regex_uae_passport_number finds content that matches the pattern. 
+The regular expression Regex_uae_passport_number finds content that matches the pattern.
 
 ```xml
   <!-- UAE Passport Number -->
@@ -70,8 +67,9 @@ The regular expression Regex_uae_passport_number finds content that matches the 
 ## Keywords
 
 **Keyword_uae_passport_number**
-جواز سفر                          -
-جواز سفر# - 
+
+- جواز سفر 
+- جواز سفر#
 - passport#
 - passport #
 - passportno
