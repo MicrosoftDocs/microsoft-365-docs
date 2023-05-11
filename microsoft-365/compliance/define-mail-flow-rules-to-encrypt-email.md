@@ -54,7 +54,7 @@ You can define mail flow rules for triggering message encryption with by using t
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
-6. In **Apply this rule if**, select the conditions where the mail originates from inside the Exchange Online organization. Add **The sender is located** \> **Inside the organization** for sending mail.
+6. In **Apply this rule if**, select where the mail originates from inside the Exchange Online organization. Add **The sender is located** \> **Inside the organization** for sending mail.
 
 7. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
 
