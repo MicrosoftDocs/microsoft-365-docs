@@ -90,7 +90,7 @@ If you want to support assigning users to multiple segments, you'll need to veri
 
 ```powershell
 Connect-IPPSSession
-connect-exchangeonline
+Connect-ExchangeOnline
 Get-OrganizationConfig | FL InformationBarrierMode
 ```
 
