@@ -159,7 +159,7 @@ The items that contain your organization's sensitive information are used every 
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Windows 10, Windows 11, and macOS Devices
+- Windows 10/11 and macOS Devices
 - Microsoft Defender for Cloud Apps
 - On-premises repositories
 
