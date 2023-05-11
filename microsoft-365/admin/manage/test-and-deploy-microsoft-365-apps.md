@@ -95,7 +95,7 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 - Exchange admin center for Outlook Add-ins
 - Teams admin center for Teams Apps
 
-You can continue to deploy [Office Add-ins via Integrated Apps](https://learn.microsoft.com/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams admin center](https://learn.microsoft.com/en-us/microsoftteams/manage-apps).
+You can continue to deploy [Office Add-ins via Integrated Apps](https://learn.microsoft.com/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams admin center](https://learn.microsoft.com/microsoftteams/manage-apps).
 
 ## Frequently asked questions
 
