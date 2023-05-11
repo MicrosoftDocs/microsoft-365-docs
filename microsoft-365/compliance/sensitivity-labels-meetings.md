@@ -64,7 +64,7 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
-- **Outlook for Windows**: Rolling out to Current Channel, version 2302+
+- **Outlook for Windows**: Current Channel, version 2302+
 - **Outlook for Mac**: Version 16.70+
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
