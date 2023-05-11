@@ -167,7 +167,7 @@ The following information is displayed in the timeline:
 
 For example:
 
-:::image type="content" source="../../media/investigate-users/Fig5-user-incident-timeline.png" alt-text="The timeline view that shows activities on a user account for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig5-user-incident-timeline.png":::
+![time](media/investigate-users/time.png)
 
 > [!NOTE]
 > Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
@@ -195,5 +195,6 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+
 
 
