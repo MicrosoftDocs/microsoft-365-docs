@@ -47,7 +47,7 @@ When our experts conclude their investigation on an incident, the incident’s *
 
 The **Determination** field corresponding to each classification is also updated to provide more insights on the findings that led our experts to determine the said classification.
 
-**SCREENSHOT**[incidents-xdr]
+![Screenshot of incidents panel in Defender experts for XDR](../../media/xdr/incidents-xdr-1.png)
 
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then its **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and its **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These will be posted in the incident’s **Comments and history** flyout panel.
 
