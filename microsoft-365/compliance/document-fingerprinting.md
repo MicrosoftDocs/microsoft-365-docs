@@ -71,7 +71,7 @@ Document fingerprinting doesn't detect sensitive information in the following ca
 - Files larger than 4 MB
  
 > [!NOTE]
-> To use document fingerprinting with devices, **Advanced fingerprinting** must be turned on.
+> To use document fingerprinting with devices, [**Advanced classification scanning and protection**](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) must be turned on.
 
 Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create approximately 50 fingerprints per tenant.
 
@@ -149,11 +149,6 @@ If you have an E5 license and want to use the latest fingerprint features, you c
 Currently, you can create a document fingerprint only in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 DLP uses Sensitive information types(SIT) to detect sensitive content. To create a custom SIT based on a document fingerprint, use the **New-DlpSensitiveInformationType** cmdlet. The following example creates a new document fingerprint named “Contoso Customer Confidential” based on the file C:\My Documents\Contoso Customer Form.docx.
-
-```powershell
-$Employee_Template = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Employee Template.docx'))
-$Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
-```
 
 ```powershell
 $Employee_Form = ([System.IO.File]::ReadAllBytes('C:\My Documents\Contoso Customer Form.docx'))

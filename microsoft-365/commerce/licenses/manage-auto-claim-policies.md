@@ -20,15 +20,15 @@ ms.custom:
 - AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 03/24/2023
+ms.date: 04/06/2021
 ---
 
-# Manage auto-claim policies
+# Manage Microsoft Teams auto-claim policies
 
 An auto-claim policy lets users automatically claim a license for a product the first time that they sign into an app. As an admin, you typically assign licenses to users either manually, or by using group-based licensing. By using auto-claim policies, you manage the products for which users can automatically claim licenses. You can also control which products those licenses come from.
 
 > [!IMPORTANT]
-> Auto-claim policies are currently only available for Microsoft Teams and Power Apps. More products will be available to use in the future.
+> Auto-claim policies are currently only available for Microsoft Teams. More products will be available to use in the future.
 
 ## Before you begin
 
@@ -58,6 +58,9 @@ If you already have an active policy, but you don't want any more users to claim
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On this tab, you can see: the name of the policy, the app that is associated with the policy, the product that's assigned to the policy, the number of available licenses, and the status of the policy.
 
 When you create an auto-claim policy, you can add a backup product to it. If the primary product is out of licenses, the backup product is used to assign licenses to users. You can add up to four backup products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more, see [Add or remove backup products](#add-or-remove-backup-products).
+
+> [!NOTE]
+> Currently, you can only create one auto-claim policy. The number of policies you can create will increase as more products are able to use this feature.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select **Add a policy**.
@@ -150,4 +153,3 @@ You can periodically return to the **Auto-claim policy** tab to see a list of us
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
 [Understand subscriptions and licenses](subscriptions-and-licenses.md) (article)
-
