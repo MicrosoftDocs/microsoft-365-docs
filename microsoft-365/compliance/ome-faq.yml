@@ -183,7 +183,7 @@ sections:
       - question: |
           What email clients support preview of encrypted attachments in protected emails?
         answer: |
-          When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+          When attachments are protected with a protected mail, Outlook clients provide the ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
 
       - question: |
           What email clients support revocation of protected emails?
