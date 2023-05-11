@@ -50,7 +50,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 Follow these steps to grant our experts permissions:
 
 1. In the same Defender Experts settings wizard, under **Permissions**, choose the access level(s) you want to grant our experts.
-2. Select **Next**, to add contact persons or teams.[**link to current document-tell us who to contact for imp matters**]
+2. Select **Next**, to [add contact persons or teams](#tell-us-who-to-contact-for-important-matters).
 
 > [!IMPORTANT]
 > If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization.
@@ -73,7 +73,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 
 2. Select **Next**. Under Service review contact, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
 
-3. Select **Next**. The settings wizard will then provide you with information about the **Next steps**, including working with our experts to [optimize your security posture](**to be linked to run initial defender experts readiness checks**).
+3. Select **Next**. The settings wizard will then provide you with information about the **Next steps**, including working with our experts to [optimize your security posture](#run-initial-defender-experts-readiness-checks).
 
 4. Select **Close** to exit the settings wizard.
 
@@ -89,7 +89,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness assessment to help you get the most out of your Microsoft security products.
 
-The initial readiness engagement will be based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts will help prioritize and customize our recommendations to fit your environment. They'll request your engagement to get those configurations implemented.
+The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts help prioritize and customize our recommendations to fit your environment. They'll request your engagement to get those configurations implemented.
 
 Once you’ve completed the readiness checks, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we’ll be able to streamline the service and fine-tune our responses.
 
