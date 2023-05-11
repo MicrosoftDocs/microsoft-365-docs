@@ -102,7 +102,7 @@ To support AutoSave and co-authoring for these encrypted files using a desktop a
 - **macOS**: Minimum version 16.51
 
 > [!NOTE]
-> If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply or reapply a sensitivity label that's configured with user-defined permissions. After they close the document and wait 10 minutes, these features are available again.
+> If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply a sensitivity label that's configured with user-defined permissions, or users change the permissions. After they close the document and wait 10 minutes, these features are available again.
 
 This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt-out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
 
