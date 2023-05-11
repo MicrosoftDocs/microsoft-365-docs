@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/01/2023
+ms.date: 05/11/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -52,7 +52,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 > [!IMPORTANT]
 > You must be a global administrator to complete setup tasks, including running the setup wizard. See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
 
-1. **Get Defender for Business**. Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business, or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md). And, if you're planning to onboard servers, see [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).
+1. **Get Defender for Business**. Start a trial or paid subscription today. You can choose from the standalone version of Defender for Business or get it as part of Microsoft 365 Business Premium. See [Get Microsoft Defender for Business](get-defender-business.md). And, if you're planning to onboard servers, see [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).
 
    In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Assets** > **Devices**. If Defender for Business isn't provisioned yet, that process begins now. 
 
