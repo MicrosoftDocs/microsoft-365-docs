@@ -223,15 +223,15 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 #### Unmonitor Filesystems
 
-Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Post successful validation only the filesystem will be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full and custom scans.
+Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
 
-NFS and Fuse by default are unmonitored from RTP, Quick and Full scans. However, they can still be  scanned by custom scan.
+NFS and Fuse by default are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
 
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
-|**Comments**|Configured filesystem will be unmonitored only if it is present in the Microsoft's list of permitted unmonitored filesystems.|
+|**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
 
 #### Configure file hash computation feature
 
