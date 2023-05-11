@@ -46,7 +46,7 @@ All updates contain:
   
 **What's new**
 
-- Support new security settings management capabilities
+- Supports new security settings management capabilities
 
 ## Jan/Feb-2023 (Release version: 10.8295.22621.1019)
 
