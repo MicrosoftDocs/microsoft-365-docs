@@ -24,6 +24,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Set policy timeframes in insider risk management
 
+> [!IMPORTANT]
+> Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Policy timeframes in Microsoft Purview Insider Risk Management allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
 
 - **Activation window**: Available for all policy templates, *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set *Activation window* to 30 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.

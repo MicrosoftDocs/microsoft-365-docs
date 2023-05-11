@@ -24,6 +24,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Enable admin notifications for insider risk management
 
+> [!IMPORTANT]
+> Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 When you turn on the **Admin notifications** setting in Microsoft Purview Insider Risk Management, email notifications are automatically sent to selected role groups. You can send email notifications for the following scenarios:
 
 - Send a notification email when the first alert is generated for a new policy. Policies are checked every 24 hours for first-time alerts and notifications aren't sent on subsequent alerts for the policy.

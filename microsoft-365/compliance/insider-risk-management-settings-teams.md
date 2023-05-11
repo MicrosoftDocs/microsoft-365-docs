@@ -24,6 +24,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Enable Microsoft Teams for collaborating on insider risk management cases
 
+> [!IMPORTANT]
+> Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 Compliance analysts and investigators can use Microsoft Teams to collaborate on Microsoft Purview Insider Risk Management cases. They can communicate with other stakeholders on Teams to:
 
 - Coordinate and review response activities for cases in private Teams channels

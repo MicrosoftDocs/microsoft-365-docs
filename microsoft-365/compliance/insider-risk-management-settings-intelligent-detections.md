@@ -24,6 +24,9 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Set up global exclusions in Microsoft Purview Insider Risk Management, adjust alert volume, and import Microsoft Defender alerts
 
+> [!IMPORTANT]
+> Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 You can use the **Intelligent detections** setting in Microsoft Purview Insider Risk Management to set up global exclusions. For example, you might want to exclude certain file types or domains from being scored for risk. Use can also use the **Intelligent detections** setting to adjust alert volume or import Microsoft Defender for Endpoint alerts. 
 
 ## Ignore email signature attachments (preview)
