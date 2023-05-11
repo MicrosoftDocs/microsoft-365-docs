@@ -42,7 +42,7 @@ Once you select the permissions you’d like to grant to our experts, we create 
 - **Configure Microsoft Experts as a service provider** – This setting lets our experts access the tenant environment as external collaborators without requiring you to create accounts for them.
 - **Configure role assignments for our experts** – This setting controls the roles our experts are allowed in the tenant. You select the appropriate roles during the onboarding process
 - **Configure cross-tenant access settings with MFA and compliant device as the trust settings** – This setting configures a trust relationship between customer and Microsoft Experts tenants based on MFA and device compliance in the Microsoft Experts tenant. This policy can be found under **Azure Active Directory** > **External Identities** > **Cross-tenant access Settings** with the name _Microsoft Experts_.
-- **Configure conditional access policies** – These policies restrict our experts to only access your tenant from the Microsoft Experts secure workstations with MFA verification. Two policies are configured with the naming convention _Microsoft Security Experts-\<policy name>-DO NOT DELETE_.
+- **Configure conditional access policies** – These policies restrict our experts to only access your tenant from the Microsoft Experts secure workstations with MFA verification. Two policies are configured with the naming convention _Microsoft Security Experts-\<policy name\>-DO NOT DELETE_.
 
 These policies are configured during the onboarding process and require the relevant administrator to stay signed in to complete the steps. Once the above policies are created and the permissions setup is considered complete, you'll see a notification that the setup is complete.
 

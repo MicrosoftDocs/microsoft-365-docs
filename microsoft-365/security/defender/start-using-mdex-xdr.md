@@ -28,7 +28,7 @@ ms.date: 05/29/2023
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-After you completed the [onboarding steps and readiness checks](get-started-xdr.md) for Microsoft Defender Experts for XDR, our experts will start monitoring your environment to streamline the service so we can perform comprehensive service on your behalf. During this stage, our experts will identify latent threats, sources of risk, and normal activity.
+After you completed the [onboarding steps and readiness checks](get-started-xdr.md) for Microsoft Defender Experts for XDR, our experts will start monitoring your environment to streamline the service so we can perform comprehensive service on your behalf. During this stage, our experts identify latent threats, sources of risk, and normal activity.
 
 Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving notifications about incidents that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your service delivery managers (SDMs) regarding important queries and regular business and security posture reviews and view real-time reports on the number of incidents we’ve investigated and resolved on your behalf.
 
@@ -114,7 +114,7 @@ To view and perform the guided response actions:
 
 #### Chat
 
-The **Chat** tab provides you with a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about threat actors, advanced hunting queries, or any other information that would assist you with the incident resolution.
+The **Chat** tab provides you with a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
 
 ![Screenshot of chat option in XDR](../../media/xdr/chat.png)
 
@@ -137,7 +137,7 @@ Once you have turned on the connector, updates by Defender Experts to the **Stat
 The following section describes how an incident handled by our experts is updated in Sentinel as it progresses through the investigation journey:
 
 1. An incident being investigated by our experts has the **Owner** listed as _Defender Experts_.
-1. An incident that our experts have confirmed as a _True Positive_ has a guided response posted in Microsoft 365 Defender, and the **Owner** is listed as _Customer_. You'll need to act on the incident based on using the provided guided response.
+1. An incident that our experts have confirmed as a _True Positive_ has a guided response posted in Microsoft 365 Defender, and the **Owner** is listed as _Customer_. You need to act on the incident based on using the provided guided response.
 1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident’s **Status** is updated to _Resolved_ and a **Reason for closing** is provided.
 
 ![Screenshot of Microsoft sentinel incidents](../../media/xdr/microsoft-sentinel-incidents.png)
@@ -196,7 +196,7 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 
 - Gather additional information on alerts and incidents, including root causes and scope
 - Gain clarity into suspicious devices, alerts, or incidents and get the next steps if faced with an advanced attacker
-- Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
+- Determine risks and available protections related to activity groups, campaigns, or emerging attacker techniques
 
 > [!NOTE]
 > Ask Defender Experts is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).

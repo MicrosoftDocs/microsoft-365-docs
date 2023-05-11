@@ -51,7 +51,7 @@ You'll also be assigned two **Ask Defender Experts** credits on the first of eac
 
 Anyone from your organization can complete the [customer interest form](https://aka.ms/IWantDefenderExperts) for the Defender Experts for XDR service, however, you need to work with your Commercial Executive to transact the Defender Experts for XDR SKU.
 
-Defender Experts for XDR will request for certain roles and permissions for you to fully access the service capabilities. [Learn more](dex-xdr-permissions.md)
+Defender Experts for XDR requests for certain roles and permissions for you to fully access the service capabilities. [Learn more](dex-xdr-permissions.md)
 
 ## Service availability and data protection
 
