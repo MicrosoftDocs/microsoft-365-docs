@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 05/05/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -70,7 +70,7 @@ Microsoft Purview Advanced Message Encryption offers more capabilities on top of
 
 - Multiple branding templates
 
-Advanced Message Encryption isn't supported in GCC High.
+- Encrypted message portal activity logs
 
 For information on using Advanced Message Encryption, see [Microsoft Purview Advanced Message Encryption](ome-advanced-message-encryption.md).
 

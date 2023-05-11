@@ -59,8 +59,8 @@ Delegated (work or school account)|Alert.ReadWrite|'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - Response will include only alerts, associated with devices, that the user have access to, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -82,13 +82,13 @@ Empty
 
 ## Response
 
-If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file does not exist - 200 OK with an empty set.
+If successful and file exists - 200 OK with list of [alert](alerts.md) entities in the body. If file doesn't exist - 200 OK with an empty set.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/files/6532ec91d513acc05f43ee0aa3002599729fd3e1/alerts

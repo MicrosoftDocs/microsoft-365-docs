@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/28/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -64,6 +64,9 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 
 ## Administrative units (preview)
 
+> [!IMPORTANT]
+> Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
+
 Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units. They also allow you to assign administrative units to members of role groups in Microsoft Purview solutions, so that these administrators can manage only the members (and associated features) of those assigned administrative units.
 
 For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization. You can create region or department-specific policies or view user activity as a result of those policies and administrative unit assignment. You can also use administrative units as an initial scope for a policy, where the selection of users eligible for the policy depends on membership in administrative units.
@@ -72,19 +75,44 @@ For example, you could use administrative units to delegate permissions to admin
 
 The following Microsoft Purview compliance solutions support administrative units:
 
-|**Solution**|**Description of support**|
+|**Solution**|**Configuration support**|
 |:-----------|:-------------------------|
+| [Data lifecycle management](data-lifecycle-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-data-lifecycle-management.md#support-for-administrative-units) |
 | [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
+| [Records management](records-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-records-management.md#support-for-administrative-units)|
+| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | [Role groups, sensitivity label policies, and auto-labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
-For these solutions, the following features also support administrative units:
+When you configure these solutions to use administrative units, the configuration automatically flows down to the following features:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
+- [Adaptive scopes](purview-adaptive-scopes.md): When adaptive scopes are supported by a solution, restricted administrators can select, create, edit, and view adaptive scopes only from users in assigned administrative units
+- Data lifecycle management and records management:
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
+
+You can add users and groups to administrative units by using the following built-in role groups:
+
+- Compliance Administrator
+- Compliance Data Administrators
+- Global Reader
+- Information Protection
+- Information Protection Admins
+- Information Protection Analyst
+- Information Protection Investigators
+- Information Protection Readers
+- Organization Management
+- Records Management
+- Security Administrator
+- Security Operator
+- Security Reader
 
 When you assign role groups, you can select individual members or groups, and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
+
+> [!IMPORTANT]
+> **Assign admin units** is always available when you've created custom role groups. You can assign administrative units for any custom role group.
 
 These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
 
@@ -110,6 +138,10 @@ Complete the following steps to configure and use administrative units with Micr
 
 1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
+
+    >[!IMPORTANT]
+    >Members of [Dynamic Distribution Groups](/azure/active-directory/roles/administrative-units#groups) don't automatically become members of an administrative unit.
+
 3. If creating a geographic region or department-based administrative units, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic).
 
     >[!NOTE]
@@ -126,7 +158,9 @@ Further into the policy configuration, administrators who selected administrativ
 
 For information about administrative units that is specific to each supported solution, see the following sections:
 
+- For data lifecycle management: [Support for administrative units](get-started-with-data-lifecycle-management.md#support-for-administrative-units)
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
+- For records management:[Support for administrative units](get-started-with-records-management.md#support-for-administrative-units)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
 ## Add users or groups to a Microsoft Purview built-in role group
@@ -137,10 +171,18 @@ Complete the following steps to add users or groups to a Microsoft Purview role 
 2. Expand the **Microsoft Purview solutions** section and select **Roles**.
 3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to add users to, then select **Edit** on the control bar.
 4. On the **Edit members of the role group** page, select **Choose users** or **Choose groups**.
+
+    > [!IMPORTANT]
+    > Security groups are supported only in Microsoft 365 commercial cloud organizations.
+
 5. Select the checkbox for all users or groups you want to add to the role group.
 6. Select **Select**.
 7. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 10.
 8. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+
+    > [!IMPORTANT]
+    > Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
+
 9. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 10. Select **Next** and **Save** to add the users or groups to the role group. Select **Done** to complete the steps.
 
@@ -167,10 +209,18 @@ Complete the following steps to create a custom Microsoft Purview role group:
 6. Select the checkboxes for the roles to add to the custom role group. Select **Select**.
 7. Select **Next** to continue.
 8. On the **Add members to the role group** page, select **Choose users** (or **Choose groups** if applicable).
+
+    > [!IMPORTANT]
+    > Security groups are supported only in Microsoft 365 commercial cloud organizations.
+
 9. Select the checkboxes for the users (or groups) to add to the custom role group. Select **Select**.
 10. Select **Next** to continue.
 11. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 14.
 12. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+
+    > [!IMPORTANT]
+    > Administrative units are supported only in Microsoft 365 commercial cloud organizations for public preview.
+
 13. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 14. Select **Next**.
 15. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.

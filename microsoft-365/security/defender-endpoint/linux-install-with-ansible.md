@@ -27,6 +27,8 @@ ms.date: 12/18/2020
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,6 +40,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 - [Create Ansible YAML files](#create-ansible-yaml-files)
 - [Deployment](#deployment)
 - [References](#references)
+
+
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
 ## Prerequisites and system requirements
 

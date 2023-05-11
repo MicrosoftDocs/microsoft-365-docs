@@ -1,12 +1,12 @@
 ---
-title: "Set up eDiscovery (Premium) in Microsoft Purview"
-description: "This article describes how to set up eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
+title: "Get started with eDiscovery (Premium)"
+description: "This article describes how to get started eDiscovery (Premium) so you can start creating and managing cases. It also describes the required Microsoft subscriptions and licensing. After you complete a few quick steps, the eDiscovery (Premium) tool is ready to use."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 ---
 
-# Set up Microsoft Purview eDiscovery (Premium)
+# Get started with eDiscovery (Premium)
 
 Microsoft Purview eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy eDiscovery (Premium), but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use eDiscovery (Premium) cases to manage your investigations.
 
@@ -48,17 +48,11 @@ To access eDiscovery (Premium) or added as a member of an eDiscovery (Premium) c
 Complete the following steps to add users to the eDiscovery Manager role group:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">compliance portal</a>and sign in using the credentials for an admin account in your Microsoft 365 organization.
-
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
-
 3. On the eDiscovery Manager flyout page, select **Edit** next to the **eDiscovery Manager** section.
-
 4. On the **Choose eDiscovery Manager** page in the edit role group wizard, select **Choose eDiscovery Manager**.
-
 5. Select **Add** then select the checkbox for all users you want to add to the role group.
-
 6. Select **Add** to add the selected users, and then select **Done**.
-
 7. Select **Save** to add the users to the role group, and then select **Close** to complete the step.
 
 ### More information about the eDiscovery Manager role group
@@ -85,6 +79,22 @@ For more information about setting up and using the attorney-client privilege de
 
 > [!NOTE]
 > This is an optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using eDiscovery (Premium) cases.
+
+## Step 4: Verify that required eDiscovery apps are enabled
+
+eDiscovery (Premium) requires the following Enterprise apps to be enabled in your Microsoft 365 or Office 365 organization. If these apps are not enabled, you won't be able to access eDiscovery (Premium) view, filter, and search features.
+
+|**App**|**App ID**|
+|:------|:---------|
+| ComplianceWorkbenchApp | 92876b03-76a3-4da8-ad6a-0511ffdf8647 |
+| MicrosoftPurviewEDiscovery | b26e684c-5068-4120-a679-64a5d2c909d9 |
+| Microsoft Exchange Online Protection | 00000007-0000-0ff1-ce00-000000000000 |
+| Office365Zoom | 0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7 |
+
+For more information about how to view and enable apps, see:
+
+- [Quickstart: View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal)
+- [Quickstart: Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal)
 
 ## Next steps
 
