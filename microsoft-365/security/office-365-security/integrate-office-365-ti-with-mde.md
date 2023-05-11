@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/02/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier3
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom:
 - seo-marvel-apr2020
@@ -43,9 +44,9 @@ In this example, you can see that the recipients of the detected email message h
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
 
-- You must have either the global administrator or security administrator role assigned in Microsoft 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- You must have either the global administrator or security administrator role assigned in Microsoft 365. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
-- You must have access to [Explorer (or real-time detections)](threat-explorer.md).
+- You must have access to [Explorer (or real-time detections)](threat-explorer-about.md).
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 

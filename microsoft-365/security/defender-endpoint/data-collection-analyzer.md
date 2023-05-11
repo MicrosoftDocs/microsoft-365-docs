@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/23/2021
 ---
 
 # Data collection for advanced troubleshooting on Windows
@@ -35,6 +36,12 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
+
+
+> [!NOTE]
+> The following parameters also collect screenshots during the log capture:
+>
+> -l, -h, -c, -i, -a, -v, and -t
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 

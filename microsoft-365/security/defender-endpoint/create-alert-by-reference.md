@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create alert API
@@ -62,7 +63,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts investigation' (For more information see [Create and manage roles](user-roles.md) )
+> - The user needs to have at least the following role permission: 'Alerts investigation' (For more information see [Create and manage roles](user-roles.md))
 > - The user needs to have access to the device associated with the alert, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md)
 >
 > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2

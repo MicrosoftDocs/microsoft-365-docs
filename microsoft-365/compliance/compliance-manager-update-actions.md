@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,11 +33,11 @@ Compliance Manager enables organizations to bring their existing compliance acti
 
 This upload process also gives new and existing Compliance Manager users greater flexibility and ability to update improvement actions on a larger scale. For example, you can:
 
-- [Add test results and evidence](compliance-manager-improvement-actions.md#perform-work-and-store-documentation) to multiple improvement actions that were tested in a system other than Compliance Manager.
+- [Add test results and evidence](compliance-manager-improvement-actions.md#storing-evidence) to multiple improvement actions that were tested in a system other than Compliance Manager.
 - [Assign improvement actions](compliance-manager-improvement-actions.md#assign-improvement-actions) to various users based on the actions' score potential.
-- Update the [implementation status](compliance-manager-improvement-actions.md#change-implementation-details) or [testing status](compliance-manager-improvement-actions.md#change-test-status) of multiple improvement actions all at one time.
-- Change improvement actions' [testing source](compliance-manager-improvement-actions.md#update-testing-source) from automatic to manual implementation and testing.
-- [Parent the testing source](compliance-manager-improvement-actions.md#parent-testing-source) of multiple actions at one time, so that those actions inherit the implementation and testing status of another action.
+- Update the implementation status or testing status of multiple improvement actions all at one time.
+- Change improvement actions' [testing source](compliance-manager-improvement-actions.md#testing-source) from automatic to manual implementation and testing.
+- [Parent the testing source](compliance-manager-improvement-actions.md#parent) of multiple actions at one time, so that those actions inherit the implementation and testing status of another action.
 
 ## Getting started
 
@@ -48,7 +49,7 @@ To migrate existing data into Compliance Manager or to perform a bulk update of 
 To begin the process of migrating data or updating actions, [follow the steps outlined below](#steps-for-updating-actions).
 
 > [!IMPORTANT]
-> - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-points).)
+> - Only the improvement actions managed by your organization, not Microsoft managed actions, can be updated by this process. (Learn more about [types of improvement actions](compliance-score-calculation.md#action-types-and-scoring).)
 > - Improvement actions must already be associated to an  assessment before you can update them through this process. (Learn more about [building and managing assessments](compliance-manager-assessments.md).)
 
 ## Migrating your existing work into Compliance Manager

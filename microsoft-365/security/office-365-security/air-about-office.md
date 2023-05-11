@@ -13,9 +13,9 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 keywords: automated incident response, investigation, remediation, threat protection
-ms.date: 01/29/2021
+ms.date: 01/17/2023
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom:
 - air
@@ -36,7 +36,7 @@ As security alerts are triggered, it's up to your security operations team to lo
 
 AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats.
 
-This article describes how AIR works through several examples. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](office-365-air.md).
+This article describes how AIR works through several examples. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](air-about.md).
 
 - [Example 1: A user-reported phish message launches an investigation playbook](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Example 2: A security administrator triggers an investigation from Threat Explorer](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
@@ -56,14 +56,14 @@ During the root investigation phase, various aspects of the email are assessed. 
 - Whether the email is associated with any known campaigns;
 - and more.
 
-After the root investigation is complete, the playbook provides a list of recommended actions to take on the original email and entities associated with it.
+After the root investigation is complete, the playbook provides a list of recommended actions to take on the original email and the _entities_ associated with it (for example, files, URLs, and recipients).
 
 Next, several threat investigation and hunting steps are executed:
 
 - Similar email messages are identified via email cluster searches.
 - The signal is shared with other platforms, such as [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - A determination is made on whether any users have clicked through any malicious links in suspicious email messages.
-- A check is done across Exchange Online Protection ([EOP](exchange-online-protection-overview.md) and ([Microsoft Defender for Office 365](defender-for-office-365.md) to see if there are any other similar messages reported by users.
+- A check is done across [Exchange Online Protection](eop-about.md) (EOP) and [Microsoft Defender for Office 365](defender-for-office-365.md) to see if there are any other similar messages reported by users.
 - A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security), and [Azure Active Directory](/azure/active-directory), correlating any related user activity anomalies.
 
 During the hunting phase, risks and threats are assigned to various hunting steps.
@@ -72,7 +72,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 
@@ -92,5 +92,5 @@ For example, recently, an organization set up a way for their security operation
 
 ## Next steps
 
-- [Get started using AIR](office-365-air.md)
+- [Get started using AIR](air-about.md)
 - [View pending or completed remediation actions](air-review-approve-pending-completed-actions.md)

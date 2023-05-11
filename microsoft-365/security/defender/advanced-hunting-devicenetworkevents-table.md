@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # DeviceNetworkEvents
@@ -35,8 +36,8 @@ ms.topic: conceptual
 
 The `DeviceNetworkEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
+> [!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -49,7 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteIP` | `string` | IP address that was being connected to |
 | `RemotePort` | `int` | TCP port on the remote device that was being connected to |
 | `RemoteUrl` | `string` | URL or fully qualified domain name (FQDN) that was being connected to |
-| `LocalIP` | `string` | IP address assigned to the local machine used during communication |
+| `LocalIP` | `string` | Source IP, or the IP address where the communication came from |
 | `LocalPort` | `int` | TCP port on the local machine used during communication |
 | `Protocol` | `string` | Protocol used during the communication |
 | `LocalIPType` | `string` | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |

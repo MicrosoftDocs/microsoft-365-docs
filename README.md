@@ -1,22 +1,25 @@
+---
+ms.date: 01/04/2018
+---
 # Overview
 
 ## Learn how to contribute
 
-Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then show up on Microsoft Learn and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
+Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then be published to [Microsoft Learn](https://learn.microsoft.com/) and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
 
 ### Quickly update an article using GitHub.com
 
 Contributors who only make infrequent or small updates can edit the file directly on GitHub.com without having to install any additional software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
 
 1. Make sure you're signed in to GitHub.com with your GitHub account.
-2. Go to the page you want to edit on Microsoft Learn.
+2. Browse to the page you want to edit on Microsoft Learn.
 3. On the right-hand side of the page, click **Edit** (pencil icon).
 
-   ![Edit button on Microsoft Learn.](microsoft-365/media/quick-update-edit.png)
+   ![Edit button on Microsoft Learn.](https://learn.microsoft.com/compliance/media/quick-update-edit.png)
 
 4. The corresponding topic file on GitHub opens, where you need to click the **Edit this file** pencil icon.
 
-   ![Edit button on github.com.](microsoft-365/media/quick-update-github.png)
+   ![Edit button on github.com.](https://learn.microsoft.com/compliance/media/quick-update-github.png)
 
 5. The topic opens in a line-numbered editing page where you can make changes to the file. Files in GitHub are written and edited using Markdown language. For help on using Markdown, see [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Select the **Preview changes** tab to view your changes as you go.
 
@@ -27,15 +30,15 @@ Contributors who only make infrequent or small updates can edit the file directl
 
    When you're ready, click the green **Propose file change** button.
 
-   ![Propose file change section.](microsoft-365/media/propose-file-change.png)
+   ![Propose file change section.](https://learn.microsoft.com/compliance/media/propose-file-change.png)
 
 7. On the **Comparing changes** page that appears, click the green **Create pull request** button.
 
-   ![Comparing changes page.](microsoft-365/media/comparing-changes-page.png)
+   ![Comparing changes page.](https://learn.microsoft.com/compliance/media/comparing-changes-page.png)
 
 8. On the **Open a pull request** page that appears, click the green **Create pull request** button.
 
-   ![Open a pull request page.](microsoft-365/media/open-a-pull-request-page.png)
+   ![Open a pull request page.](https://learn.microsoft.com/compliance/media/open-a-pull-request-page.png)
 
 > [!NOTE]
 > Your permissions in the repo determine what you see in the last several steps. People with no special privileges will see the **Propose file change** section and subsequent confirmation pages as described. People with permissions to create and approve their own pull requests will see a similar **Commit changes** section with extra options for creating a new branch and fewer confirmation pages.<br/><br/>The point is: click any green buttons that are presented to you until there are no more.

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date:
+ms.date: 03/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -25,10 +25,9 @@ Use the following sections to identify the main PowerShell cmdlets that are avai
 
 Before you use these cmdlets, you must first [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. The policy then requires one rule to complete the configuration.
+In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. 
 
-For example:
-- A retention policy needs a rule that defines the retention settings, such as retain for five years and then delete.
+When you use retention policies, the policy requires one rule to complete the configuration, for example, a rule that defines the retention settings, such as retain for five years and then delete.
 
 When you use retention labels, these contain the retention settings and their policies need different rules:
 - A retention label policy that you publish needs a rule that defines which labels should be displayed in apps.
@@ -38,28 +37,28 @@ When you use retention labels, these contain the retention settings and their po
 
 ## Retention cmdlets for most locations
 
-Use the cmdlets in the following table when the locations are **Exchange email**, **SharePoint sites**, **OneDrive accounts**, **Microsoft 365 Groups**, **Skype for Business**, **Exchange public folders**, **Teams chat messages**, or **Teams channel messages**.
+Use the cmdlets in the following table when the locations are **Exchange mailboxes**, **SharePoint sites** or **SharePoint classic and communication sites**, **OneDrive accounts**, **Microsoft 365 Group mailboxes & sites**, **Skype for Business**, **Exchange public folders**, **Teams chat messages**, or **Teams channel messages**.
 
 Don't use these cmdlets when the locations are for Teams private channel messages, Yammer user messages, or Yammer community messages. These locations have alternative cmdlets that are identified in the [next section](#retention-cmdlets-specific-to-teams-private-channels-and-yammer).
 
 |Cmdlet|Description|Applicable locations|
 |:-----|:-----|:-----|:-----|
-|[Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) <br /><br /> [Get-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) |A one-time operation to create storage, or view that storage for retention labels |Exchange email <br /><br />SharePoint sites <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Groups|
-|[Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)<br /><br> [New-ComplianceTag](/powershell/module/exchange/new-compliancetag) <br /><br> [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag) <br /><br> [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag) |View, create, delete, configure retention labels |Exchange email <br /><br /> SharePoint sites <br /><br /> OneDrive accounts<br /><br /> Microsoft 365 Groups|
-|[Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig) <br /><br /> [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/remove-retentioncompliancepolicy)  |View or configure the configuration for disposition review notification and reminder settings |Exchange email <br /><br /> SharePoint sites <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Groups|
-|[Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) <br /><br /> [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) <br /><br /> [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy) <br /><br /> [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) |View, create, delete, configure policies for retention |Exchange email <br /><br /> SharePoint sites <br /><br /> OneDrive accounts<br /><br /> Microsoft 365 Groups <br /><br /> Skype for Business <br /><br /> Exchange public folders <br /><br /> Teams chat messages <br /><br /> Teams channel messages |
-|[Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancepolicy) <br /><br /> [New-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancepolicy) <br /><br /> [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) <br /><br /> [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)  | View, create, configure, delete settings for polices for retention or retention labels |Exchange email <br /><br /> SharePoint sites <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Groups <br /><br /> Skype for Business <br /><br /> Exchange public folders <br /><br /> Teams chat messages <br /><br /> Teams channel messages |
+|[Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) <br /><br /> [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage) |A one-time operation to create storage, or view that storage for retention labels |Exchange mailboxes <br /><br />SharePoint sites (or SharePoint classic and communication sites) <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Group mailboxes & sites|
+|[Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)<br /><br> [New-ComplianceTag](/powershell/module/exchange/new-compliancetag) <br /><br> [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag) <br /><br> [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag) |View, create, delete, configure retention labels |Exchange mailboxes <br /><br /> SharePoint sites (or SharePoint classic and communication sites) <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Group mailboxes & sites|
+|[Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig) <br /><br /> [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)  |View or configure the disposition review notification and reminder settings |Exchange mailboxes <br /><br /> SharePoint sites (or SharePoint classic and communication sites) <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Group mailboxes & sites|
+|[Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) <br /><br /> [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) <br /><br /> [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy) <br /><br /> [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) |View, create, delete, configure retention policies and retention label policies |Exchange email <br /><br /> SharePoint sites (or SharePoint classic and communication sites) <br /><br /> OneDrive accounts<br /><br /> Microsoft 365 Group mailboxes & sites <br /><br /> Skype for Business <br /><br /> Exchange public folders <br /><br /> Teams chat messages <br /><br /> Teams channel messages |
+|[Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) <br /><br /> [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) <br /><br /> [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) <br /><br /> [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)  | View, create, configure, delete settings (rules) for retention policies and retention labels |Exchange email <br /><br /> SharePoint sites (or SharePoint classic and communication sites) <br /><br /> OneDrive accounts <br /><br /> Microsoft 365 Group mailboxes & sites <br /><br /> Skype for Business <br /><br /> Exchange public folders <br /><br /> Teams chat messages <br /><br /> Teams channel messages |
 
 ## Retention cmdlets specific to Teams private channels and Yammer
 
 Use the following cmdlets when the locations are for **Teams private channel messages**, **Yammer user messages**, or **Yammer community messages**.
 
-When the locations are for Teams chat messages, Teams channel messages, Exchange email, SharePoint sites, OneDrive accounts, Microsoft 365 Groups, Skype for Business, or Exchange public folders, use the cmdlets listed in the [previous section](#retention-cmdlets-for-most-locations).
+When the locations are for Teams chat messages, Teams channel messages, Exchange email, SharePoint sites (or SharePoint classic and communication sites), OneDrive accounts, Microsoft 365 Group mailboxes & sites, Skype for Business, or Exchange public folders, use the cmdlets listed in the [previous section](#retention-cmdlets-for-most-locations).
 
 |Cmdlet|Description|Applicable locations|
 |:-----|:-----|:-----|:-----|
-|[Get-AppRetentionCompliancePolicy](/powershell/module/exchange/get-appretentioncompliancepolicy) <br /><br> [New-AppRetentionCompliancePolicy](/powershell/module/exchange/new-appretentioncompliancepolicy) <br /><br> [Remove-AppRetentionCompliancePolicy](/powershell/module/exchange/remove-appretentioncompliancepolicy) <br /><br> [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/remove-appretentioncompliancepolicy) | View, create, delete, configure retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
-|[Get-AppRetentionComplianceRule](/powershell/module/exchange/get-appretentioncompliancerule) <br /><br /> [New-AppRetentionComplianceRule](/powershell/module/exchange/new-appretentioncompliancerule) <br /><br /> [Remove-AppRetentionComplianceRule](/powershell/module/exchange/remove-appretentioncompliancerule) <br /><br /> [Set-AppRetentionComplianceRule](/powershell/module/exchange/remove-appretentioncompliancerule) | View, create, delete, configure retention settings for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[Get-AppRetentionCompliancePolicy](/powershell/module/exchange/get-appretentioncompliancepolicy) <br /><br> [New-AppRetentionCompliancePolicy](/powershell/module/exchange/new-appretentioncompliancepolicy) <br /><br> [Remove-AppRetentionCompliancePolicy](/powershell/module/exchange/remove-appretentioncompliancepolicy) <br /><br> [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) | View, create, delete, configure retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
+|[Get-AppRetentionComplianceRule](/powershell/module/exchange/get-appretentioncompliancerule) <br /><br /> [New-AppRetentionComplianceRule](/powershell/module/exchange/new-appretentioncompliancerule) <br /><br /> [Remove-AppRetentionComplianceRule](/powershell/module/exchange/remove-appretentioncompliancerule) <br /><br /> [Set-AppRetentionComplianceRule](/powershell/module/exchange/set-appretentioncompliancerule) | View, create, configure, delete settings (rules) for retention policies |Teams private channel messages <br /><br /> Yammer user messages <br /><br /> Yammer community messages|
 
 ## Configuration guidance
 

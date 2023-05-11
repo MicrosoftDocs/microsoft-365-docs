@@ -23,6 +23,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 05/27/2021
 ---
 
 # Step 3. Enable and pilot Microsoft Defender for Office 365

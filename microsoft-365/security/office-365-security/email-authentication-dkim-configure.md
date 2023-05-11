@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/05/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -56,7 +56,7 @@ DKIM lets you add a digital signature to outbound email messages in the message 
 In basic, a private key encrypts the header in a domain's outgoing email. The public key is published in the domain's DNS records, and receiving servers can use that key to decode the signature. DKIM verification helps the receiving servers confirm the mail is really coming from your domain and not someone *spoofing* your domain.
 
 > [!TIP]
->You can choose to do nothing about DKIM for your custom domain too. If you don't set up DKIM for your custom domain, Microsoft 365 creates a private and public key pair, enables DKIM signing, and then configures the Microsoft 365 default policy for your custom domain.
+> You can choose to do nothing about DKIM for your custom domain too. If you don't set up DKIM for your custom domain, Microsoft 365 creates a private and public key pair, enables DKIM signing, and then configures the Microsoft 365 default policy for your custom domain.
 
  Microsoft-365's built-in DKIM configuration is sufficient coverage for most customers. However, you should manually configure DKIM for your custom domain in the following circumstances:
 
@@ -83,7 +83,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
-Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
+Step 1: On the [DKIM page](https://security.microsoft.com/dkimv2), select the domain you wish to configure.
 
 :::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft 365 Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
@@ -419,6 +419,6 @@ Next, see [**Use DMARC to validate email**](email-authentication-dmarc-configure
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Use DMARC to validate email](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
 
 [Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)

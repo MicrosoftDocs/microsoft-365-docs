@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -53,7 +54,7 @@ For the following table identifies the default alert policies whose severity cla
 |**Unusual increase in email reported as phish**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|High|Medium|
 |**Admin Submission result completed**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Low|Informational|
 |**Creation of forwarding/redirect rule**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Low|Informational|
-|**eDiscovery search started or exported**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Meduim|Informational|
+|**eDiscovery search started or exported**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Medium|Informational|
 
 ## When will these changes happen
 
@@ -72,9 +73,9 @@ The alert severity changes will be rolled out to all organizations by May 14, 20
 
 ## How this will affect your organization
 
-The new alerts will begin firing, and triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you will see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and May 28, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation and correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
+The new alerts will begin firing, and triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you'll see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and May 28, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation and correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
 
-- **Alerts**: By design, you will see the following alert pairs across the existing and new alerts:
+- **Alerts**: By design, you'll see the following alert pairs across the existing and new alerts:
 
   - **Email messages containing phish URLs removed after delivery** AND **Email messages containing malicious URL removed after delivery**
 
@@ -94,7 +95,7 @@ The new alerts will begin firing, and triggering the AIR investigations in your 
 
 ## What you need to do to prepare for these changes
 
-How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you'll need to modify your workflows.
+How your organization utilizes these alerts will determine what you need to do to prepare. If you've operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you'll need to modify your workflows.
 
 **If you haven't operationalized these alerts, you can do one of the following:**
 
@@ -108,7 +109,7 @@ How your organization utilizes these alerts will determine what you need to do t
 
 **If you have operationalized these alerts:**
 
-- Start consuming the new alerts as a part of your workflows, in anticipation of the existing alert policy removal on May 28, 2021. If you have custom logic in your ticketing system, a security mailbox where you receive alert email notifications, or a SIEM solution that depends on the alert name or alert policy Id (CorrelationId), you will need to modify the logic to accommodate the change.
+- Start consuming the new alerts as a part of your workflows, in anticipation of the existing alert policy removal on May 28, 2021. If you have custom logic in your ticketing system, a security mailbox where you receive alert email notifications, or a SIEM solution that depends on the alert name or alert policy ID (CorrelationId), you'll need to modify the logic to accommodate the change.
 
   > [!NOTE]
   > The information in the alerts, investigations, and incidents has not changed. In fact, this information has been enhanced with additional detail about the threats associated with them.

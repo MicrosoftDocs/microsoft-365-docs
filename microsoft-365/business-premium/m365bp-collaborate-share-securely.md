@@ -8,13 +8,12 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.subservice: m365bp
+ms.date: 04/14/2023
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - m365-security
 - tier1
 ms.custom:
@@ -28,9 +27,9 @@ description: "An overview on how to collaborate and share files and communicate 
 
 # Collaborate and share securely
 
-:::image type="content" source="media/mission5.png" alt-text="Collaborate and share securely using Microsoft Teams SharePoint and OneDrive.":::
+:::image type="content" source="media/mission5.png" alt-text="Diagram with Collaborate And Share Securely highlighted.":::
 
-Now that you're protected by the Microsoft 365 Business Premium Microsoft 365 apps, your next mission is to set up secure file sharing and communication. The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible.
+The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, which means that you want to protect your files by all means possible. Your next mission is to set up secure file sharing and communication. 
 
 Your objectives are to:
 
@@ -39,4 +38,4 @@ Your objectives are to:
 - [Share files and videos](share-files-and-videos.md).
 - [Create a communication site](create-communications-site.md).
 
-Once you've achieved these objectives, proceed to [Set up and secure managed devices](m365bp-protect-devices.md).
+Once you've achieved these objectives, proceed to [Set up and secure managed devices](m365bp-protect-managed-devices.md).

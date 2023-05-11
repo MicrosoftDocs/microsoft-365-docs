@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 ms.date: 07/27/2022
 manager: dansimp
@@ -118,7 +118,7 @@ In addition to remediation actions that are taken automatically as a result of [
 | **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. (See [Remediation actions in Microsoft Defender for Endpoint](../defender-endpoint/manage-auto-investigation.md#remediation-actions).) |
 | **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. (See [Remediation actions in Microsoft Defender for Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](./advanced-hunting-overview.md). |
-| **Explorer action** | Actions taken on email content with [Explorer](../office-365-security/threat-explorer.md). |
+| **Explorer action** | Actions taken on email content with [Explorer](../office-365-security/threat-explorer-about.md). |
 | **Manual live response action** | Actions taken on a device with [live response](../defender-endpoint/live-response.md). Examples include deleting a file, stopping a process, and removing a scheduled task. |
 | **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
 
@@ -129,7 +129,7 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 |Remediation action |Required roles and permissions |
 |--|----|
 |Microsoft Defender for Endpoint remediation (devices) |**Security Administrator** role assigned in either Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Azure AD ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the Security Administrator role assigned in Azure AD or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Azure AD ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the Security Administrator role assigned in Azure AD or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/scc-permissions) |
 
 > [!TIP]
 > Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.

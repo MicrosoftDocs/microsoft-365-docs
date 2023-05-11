@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150
@@ -16,11 +14,13 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
   - m365-security
+  - tier2
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Spoof intelligence insight in EOP
@@ -28,11 +28,11 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing. EOP uses **spoof intelligence** as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing. EOP uses **spoof intelligence** as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-phishing-protection-spoofing-about.md).
 
 When a sender spoofs an email address, they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. Attackers who spoof senders to send spam or phishing email need to be blocked. But there are scenarios where legitimate senders are spoofing. For example:
 
@@ -56,13 +56,11 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 > [!NOTE]
 >
-> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md).
+> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
 >
 > - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
 > - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
->
-> - The latest available data is 3 to 4 days old.
 
 ## What do you need to know before you begin?
 
@@ -70,22 +68,20 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the spoof intelligence policy or enable or disable spoof intelligence, you need to be a member of one of the following role groups:
-    - **Organization Management**
-    - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
-  - For read-only access to the spoof intelligence policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Allow or block spoofed senders or turn on or turn off spoof intelligence_: Membership in one of the following role groups:
+      - **Organization Management**
+      - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
+    - _Read-only access to the spoof intelligence insight_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- For our recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 - You enable and disable spoof intelligence in anti-phishing policies in EOP and Microsoft Defender for Office 365. Spoof intelligence is enabled by default. For more information, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
-- For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
+- For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 ## Open the spoof intelligence insight in the Microsoft 365 Defender portal
 
@@ -141,7 +137,7 @@ When you select an entry from the list, a details flyout appears that contains t
 - What you need to do.
 - A domain summary that includes most of the same information from the main spoof intelligence page.
 - WhoIs data about the sender.
-- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
+- A link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
 - Similar messages we have seen in your tenant from the same sender.
 
 ### About allowed spoofed senders
@@ -157,7 +153,7 @@ Only email from that domain/sending infrastructure pair will be allowed to spoof
 
 ## Use the spoof intelligence insight in Exchange Online PowerShell or standalone EOP PowerShell
 
-In PowerShell, you use the **Get-SpoofIntelligenceInsight** cmdlet to **view** allowed and blocked spoofed senders that were detected by spoof intelligence. To manually allow or block the spoofed senders, you need to use the **New-TenantAllowBlockListSpoofItems** cmdlet. For more information, see [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+In PowerShell, you use the **Get-SpoofIntelligenceInsight** cmdlet to **view** allowed and blocked spoofed senders that were detected by spoof intelligence. To manually allow or block the spoofed senders, you need to use the **New-TenantAllowBlockListSpoofItems** cmdlet. For more information, see [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 To view the information in the spoof intelligence insight, run the following command:
 
@@ -171,7 +167,7 @@ For detailed syntax and parameter information, see [Get-SpoofIntelligenceInsight
 
 Be diligent about spoofing and phishing protection. Here are related ways to check on senders who are spoofing your domain and help prevent them from damaging your organization:
 
-- Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+- Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](reports-email-security.md#spoof-detections-report).
 
 - Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 

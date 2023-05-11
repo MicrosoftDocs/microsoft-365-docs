@@ -3,8 +3,9 @@ title: "Add a user or contact to a distribution group"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,6 +30,8 @@ description: "Learn how to add a Microsoft 365 user or contact such as an employ
 ---
 
 # Add a user or contact to a Microsoft 365 distribution group
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md). For example, you can add employees or external partners or vendors to an email distribution group.
   
@@ -58,4 +61,3 @@ Learn to [send email as a distribution group in Microsoft 365](../manage/send-em
 
 [Manage clutter for your organization](configure-clutter.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)
-

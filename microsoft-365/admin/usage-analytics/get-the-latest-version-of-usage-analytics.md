@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,4 +29,3 @@ description: "Get the latest version of Microsoft 365 usage analytics."
 
 The template app may be refreshed with new data or new visualizations several times per year. Your existing instance will continue to work, but if you would like to get the latest version, a new instance must be created and any customizations must be applied to the new instance. See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md). 
   
-

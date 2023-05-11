@@ -14,9 +14,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 02/16/2021
 ---
 
 # Microsoft security portals and admin centers
@@ -37,7 +38,7 @@ Security operators and admins can go to the following portals to manage security
 |---|---|---|
 | Microsoft 365 Defender portal | Monitor and respond to threat activity and strengthen security posture across your identities, email, data, endpoints, and apps with [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender Security Center | Monitor and respond to threat activity on your endpoints using capabilities provided with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).  **NOTE:** Most tenants should now be redirected to the Microsoft 365 Defender portal at [security.microsoft.com](https://security.microsoft.com/).  | [securitycenter.windows.com](https://securitycenter.windows.com) |
-| Office 365 Security & Compliance Center | Manage [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) to protect your email and collaboration services, and ensure compliance to various data-handling regulations.  **NOTE:** Most tenants using the security sections of the Office 365 Security & Compliance Center should now be redirected to the Microsoft 365 Defender portal at [security.microsoft.com](https://security.microsoft.com/). | [protection.office.com](https://protection.office.com) |
+| Office 365 Security & Compliance Center | Manage [Exchange Online Protection](../office-365-security/eop-about.md) and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) to protect your email and collaboration services, and ensure compliance to various data-handling regulations.  **NOTE:** Most tenants using the security sections of the Office 365 Security & Compliance Center should now be redirected to the Microsoft 365 Defender portal at [security.microsoft.com](https://security.microsoft.com/). | [protection.office.com](https://protection.office.com) |
 | Defender for Cloud portal | Use [Microsoft Defender for Cloud](/azure/security-center/security-center-intro) to strengthen the security posture of your data centers and your hybrid workloads in the cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity portal | Identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions using Active Directory signals with [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Defender for Cloud Apps portal | Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to get rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats on cloud services | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
@@ -54,5 +55,5 @@ While these portals are not specifically for managing security, they support var
 | Azure Active Directory portal | View and manage [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
 | Microsoft Purview compliance portal | Manage data handling policies and ensure [compliance with regulations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
-| Microsoft Endpoint Manager admin center | Use [Microsoft Endpoint Manager](/mem/configmgr/) to manage and secure devices using combined Intune and Configuration Manager capabilities | [endpoint.microsoft.com](https://endpoint.microsoft.com/) |
+| Microsoft Intune admin center | Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage and secure devices. Can also combine Intune and Configuration Manager capabilities. | [endpoint.microsoft.com](https://endpoint.microsoft.com/) |
 | Microsoft Intune portal | Use [Microsoft Intune](/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

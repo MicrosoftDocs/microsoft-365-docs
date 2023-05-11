@@ -15,12 +15,13 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 5/2/2023
 ---
 
 # Threat Explorer and Real-time detections
@@ -31,11 +32,7 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). Go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
-
-|With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
-|---|---|
-|![Threat explorer.](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
+If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!).
 
 Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. With this report, you can:
 
@@ -501,7 +498,7 @@ The report refreshes to show data about email messages that people in your organ
 > [!NOTE]
 > Automated investigation and response capabilities are available in *Microsoft Defender for Office 365 Plan 2* and *Office 365 E5*.
 
-[Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response](air-about-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## More ways to use Explorer and Real-time detections
 
@@ -510,7 +507,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
@@ -538,7 +535,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

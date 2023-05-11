@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 11/11/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - Tier2
@@ -67,9 +68,9 @@ Currently, we provide capabilities for five attributes in Azure AD:
 
 - Country
 
-- State and Country
+- State
 
-- City, State, and Country
+- City
 
 :::image type="content" source="../../media/group-level-aggregates-data-evaluation.png" alt-text="Screenshot: Group-level data evaluation report.":::
 
