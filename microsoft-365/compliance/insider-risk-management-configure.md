@@ -146,8 +146,8 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 If you enable insider risk management analytics, you can:
 
 - **Scan for potential insider risks before creating policies.** You can conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you might want to configure. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available 
-as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
-- **Receive real-time guidance for indicator threshold settings.** Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policies. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings-analytics.md) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
+- **Receive real-time guidance for indicator threshold settings.** Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policies. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of audit data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings-policy-indicators.md#indicator-level-settings).
 
 > [!NOTE]
 > To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group.
@@ -218,7 +218,7 @@ A priority user group is required when using the following policy templates:
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
+See the [Getting started with insider risk management settings](insider-risk-management-settings-priority-user-groups.md) article for step-by-step configuration guidance. 
 
 ### Configure Physical badging connector (optional)
 
@@ -265,11 +265,11 @@ Before configuring a policy, define the following insider risk settings:
     > [!IMPORTANT]
     > In order to receive alerts for potentially risky activities as defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
 
-4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
+4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings-policy-timeframes.md) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
-    - [File activity detection](insider-risk-management-settings.md#file-activity-detection)
-    - [Alert volume](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
+    - [File activity detection](insider-risk-management-settings-intelligent-detections.md#file-activity-detection)
+    - [Alert volume](insider-risk-management-settings-intelligent-detections.md#alert-volume)
+    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings-intellilgent-detections.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Domains](insider-risk-management-settings.md#domains)
     - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-type-exclusions-preview)
     - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable-classifier-exclusion-preview)
