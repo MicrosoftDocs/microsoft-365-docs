@@ -27,7 +27,7 @@ description: "Admins can learn to create mail flow rules (transport rules) to en
 
 As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
 
-You can't encrypt inbound mail from senders outside of your organization.
+You can't encrypt inbound mail from senders outside of your Exchange Online organization. If a mail flow rule is set up to encrypt mail from outside the organization, the mail will be rejected and returned to the sender.
 
 If you recently migrated from Active Directory RMS to Azure Information Protection, you'll need to review your existing mail flow rules to ensure that they continue to work in your new environment. Also, to use Microsoft Purview Message Encryption with Azure Information Protection, you need to update your existing mail flow rules. Otherwise, your users will continue to receive encrypted mail that uses the previous HTML attachment format instead of the new, seamless experience. If you haven't set up message encryption yet, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md) for information.
 
@@ -116,7 +116,7 @@ You can remove encryption from messages that was applied by your organization. Y
 
 5. In **Name**, type a name for the rule, such as `Remove encryption from outgoing mail`.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail out to any recipients _or_ add **The recipient is located** \> **Inside the organization** for receiving mail replies from outside the organization.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection applied by the organization**.
 
