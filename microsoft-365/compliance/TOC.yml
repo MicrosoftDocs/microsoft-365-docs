@@ -973,9 +973,9 @@
               - name: South Africa identification number
                 href: sit-defn-south-africa-identification-number.md
               - name: South Korea driver's license number
-                href: sit-defn-south-korea-drivers-license-number
+                href: sit-defn-south-korea-drivers-license-number.md
               - name: South Korea passport number
-                href: sit-defn-south-korea-passport-number
+                href: sit-defn-south-korea-passport-number.md
               - name: South Korea resident registration number
                 href: sit-defn-south-korea-resident-registration-number.md
               - name: Spain DNI
@@ -1287,7 +1287,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
-            - name: Configure and view alerts for DLP policies (preview)
+            - name: Configure and view alerts for DLP policies
               href: dlp-configure-view-alerts-policies.md
             - name: Use sensitivity labels as a condition in DLP policies
               href: dlp-sensitivity-label-as-condition.md
