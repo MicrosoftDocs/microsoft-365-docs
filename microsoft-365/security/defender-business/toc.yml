@@ -67,8 +67,6 @@
       href: mdb-create-edit-device-groups.md
     - name: Offboard devices
       href: mdb-offboard-devices.md
-    - name: How to get Microsoft Defender for Business servers
-      href: get-defender-business-servers.md
   - name: View and respond to detected threats
     items: 
     - name: View and use reports
