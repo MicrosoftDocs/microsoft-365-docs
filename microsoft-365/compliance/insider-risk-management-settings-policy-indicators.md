@@ -100,7 +100,7 @@ You must enable device checking and onboard your endpoints before you can detect
 
 When you want to enable devices that haven't been onboarded yet, you need to download the appropriate script and deploy it as outlined below.
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they'll already appear in the managed devices list. [Follow Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](#if-devices-area-already-onboarded-to-microsoft-defender-for-endpoint).
+If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they'll already appear in the managed devices list. [Follow Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](#if-devices-are-already-onboarded-to-microsoft-defender-for-endpoint).
 
 In this deployment scenario, you'll enable devices that haven't been onboarded yet, and you just want to detect insider risk activities on Windows devices.
 
@@ -183,7 +183,7 @@ You can use real-time analytics if you want to take advantage of a guided (data-
 
    ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
 
-Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and [global exclusions (intelligent detections) are taken into account](#intelligent-detections). 
+Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and [global exclusions (intelligent detections) are taken into account](insider-risk-management-settings-intelligent-detections.md). 
 
 #### Prerequisites for using real-time analytics
 
