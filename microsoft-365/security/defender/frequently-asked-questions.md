@@ -28,7 +28,6 @@ ms.date: 05/29/2023
 
 - Microsoft 365 Defender
 
-
 | Questions | Answers |
 |---------|---------|
 | **How is Microsoft Defender Experts for XDR different from Microsoft Defender Experts for Hunting?** | [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md) provides threat hunting service to proactively find threats. This service is meant for customers that have a robust security operations center and want that deep expertise in hunting to expose advanced threats. Microsoft Defender Experts for XDR provides end-to-end security operations capabilities to monitor, investigate, and respond to security alerts. This service is meant for customers with constrained security operations centers (SOCs) that are overburdened with alert volume, in need of skilled experts, or both. Defender Experts for XDR also includes the proactive threat hunting offered by Defender Experts for Hunting|
