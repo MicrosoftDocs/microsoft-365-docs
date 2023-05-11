@@ -54,7 +54,9 @@ You can define mail flow rules for triggering message encryption with by using t
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
-6. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
+6. In **Apply this rule if**, select where the mail originates from inside the Exchange Online organization. Add **The sender is located** \> **Inside the organization** for sending mail.
+
+7. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
 
    1. In **Apply this rule if**, select **the recipient is**.
 
@@ -64,11 +66,11 @@ You can define mail flow rules for triggering message encryption with by using t
 
       - To enter a new name, type an email address in the **check names** box and then select **check names** \> **OK**.
 
-7. To add more conditions, choose **More options** and then choose **add condition** and select from the list.
+8. To add more conditions, choose **More options** and then choose **add condition** and select from the list.
 
    For example, to apply the rule only if the recipient is outside your organization, select **add condition** and then select **The recipient is external/internal** \> **Outside the organization** \> **OK**.
 
-8. To enable message encryption, from **Do the following**, select **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
+9. To enable message encryption, from **Do the following**, select **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
   
   The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption as described in [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt-only** option, see [Encrypt-only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
