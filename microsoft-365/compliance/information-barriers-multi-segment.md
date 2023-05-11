@@ -86,7 +86,7 @@ With segments and policies defined, the North School District applies the polici
 
 ## Check the IB mode for your organization
 
-If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlet to verify your IB mode:
+If you want to support assigning users to multiple segments, you'll need to verify that your IB organization supports multiple segments. Run the following cmdlets to verify your IB mode:
 
 ```powershell
 Connect-IPPSSession
