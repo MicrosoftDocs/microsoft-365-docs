@@ -87,8 +87,7 @@ Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
 1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
-1. If a _Tenant_ has sign up country as a _Local Region Geography_ or _Expanded Local Region Geography_ and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
-1. At times Microsoft reopens Migration opt in from _Regional Geography_ to the relevant _Local Geographies_ or _Expanded Local Geographies_.
+1. If a _Tenant_ has sign up country as a _Local Region Geography_  and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
 
 ### Durable commitments on data location
 
