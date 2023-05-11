@@ -75,12 +75,11 @@ The three most recent major releases of macOS are supported.
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md). 
 
+- x64, and ARM64 (M1 and M2)
 - 13 (Ventura), 12 (Monterey), 11 (Big Sur)
 - Disk space: 1GB
 
 Beta versions of macOS aren't supported.
-
-Support for macOS devices with M1 chip-based processors has been officially supported since version 101.40.84 of the agent.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
