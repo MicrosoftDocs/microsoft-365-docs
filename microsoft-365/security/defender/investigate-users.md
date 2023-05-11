@@ -167,7 +167,7 @@ The following information is displayed in the timeline:
 
 For example:
 
-![Screenshot of the Timeline tab](media/investigate-users/time.png)
+![Screenshot of the Timeline tab.](media/investigate-users/time.png)
 
 > [!NOTE]
 > Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
