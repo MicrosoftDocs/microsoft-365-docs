@@ -48,11 +48,11 @@ When our experts conclude their investigation on an incident, the incident’s *
 
 The **Determination** field corresponding to each classification is also updated to provide more insights on the findings that led our experts to determine the said classification.
 
-**SCREENSHOT**[incidents-xdr]
+![Screenshot of the Incidents queue showing Status, Assigned to, Classification, and Determination fields](../../media/xdr/incidents-xdr.png)
 
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then the incident's **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and the **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These updates are posted in the incident’s **Comments and history** flyout panel.
 
-Otherwise, if an incident is classified as _True Positive_, our experts then identifies recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
+Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
 
 - If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident’s [Guided response](#how-to-use-guided-response-in-microsoft-365-defender) flyout panel in your Microsoft 365 Defender portal for your or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
@@ -60,11 +60,11 @@ Otherwise, if an incident is classified as _True Positive_, our experts then ide
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
 
-![Screenshots of incidents in XDR](../../media/xdr/incidents-xdr.png)
+**[SCREENSHOT OF CARD]**
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft 365 Defender portal using the _Defender Experts_ tag.
 
-![Screenshots of incidents filter](../../media/xdr/incidents-filter.png)
+![Screenshots of incidents queue with Defender Experts tag filter](../../media/xdr/incidents-filter.png)
 
 ### How to use guided response in Microsoft 365 Defender
 
@@ -98,7 +98,7 @@ Apart from these one-click actions, you can also receive guided responses from o
 > [!NOTE]
 > Before performing any of the recommended guided response actions, make sure that they are not already being addressed by your automated investigation and response configurations. [Learn more about automated investigation and response capabilities in Microsoft 365 Defender](m365d-autoir.md)
 
-To view and perform the guided response actions:
+**To view and perform the guided response actions:**
 
 1. Select the arrow buttons in a task card to expand it and read more information about the recommendation or collapse it.
 1. For cards with one-click response actions, select the recommended action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action’s outcome.

@@ -28,7 +28,6 @@ ms.date: 05/29/2023
 
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 | Questions | Answers |
 |---------|---------|

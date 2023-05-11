@@ -47,7 +47,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 
 ![Screenshot of grant permissions to our experts](../../media/xdr/grant-permissions-to-experts.png)
 
-Follow these steps to grant our experts permissions:
+**To grant our experts permissions:**
 
 1. In the same Defender Experts settings step-by-step guide, under **Permissions**, choose the access level(s) you want to grant our experts.
 2. Select **Next**, to [add contact persons or teams](#tell-us-who-to-contact-for-important-matters).
@@ -66,12 +66,14 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 
 ![Screenshot of who to contact for important matters in XDR](../../media/XDR/who-to-contact-for-important-matters.png)
 
+**To add notification contacts:**
+
 1. In the same Defender Experts settings step-by-step guide, under **Incident contact**, search for and add your contact persons or teams that we can notify for guided response actions or any communication that requires a prompt response.
 
 > [!NOTE]
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
-2. Select **Next**. Under Service review contact, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
+2. Select **Next**. Under **Service review contact**, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
 
 3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#run-initial-defender-experts-readiness-checks).
 
@@ -95,4 +97,4 @@ Once you’ve completed the readiness checks, our experts will start monitoring 
 
 ## Go to the next step
 
-[Start using Microsoft Defender Experts for XDR preview service](start-using-mdex-xdr.md)
+[Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)
