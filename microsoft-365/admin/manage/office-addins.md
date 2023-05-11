@@ -195,9 +195,9 @@ Managing how users can install and use Office add-ins means that you decide who 
 8. Deactivating the checkboxes turns off access to Outlook add-ins for users assigned to the policy.
 
 > [!NOTE]
-> This setting does not impact any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the above setting is turned off. 
+> This setting does not impact any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the above setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. <insert link to MOS app management>
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. Note to reviews: Add link to MOS app management
 
 ## Upload Custom Office Add-ins in your organization  
 
@@ -221,9 +221,9 @@ Office Add-ins combine an XML manifest file that contains some metadata about th
 - Read a user's document to provide contextual services.
 - Read and write data to and from a user's document to provide value to that user.
 
-For more information about the types and capabilities of Office Add-ins, see [Office Add-ins platform overview](https://learn.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins), especially the section *Anatomy of an Office Add-in*.
+For more information about the types and capabilities of Office Add-ins, see [Office Add-ins platform overview](https://learn.microsoft.com/office/dev/add-ins/overview/office-add-ins), especially the section *Anatomy of an Office Add-in*.
 
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
 
 When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
 
@@ -233,6 +233,6 @@ Updates for add-ins happen as follows:
 - **Office Store add-in**: When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
 
 > [!NOTE]
-> For Word, Excel, and PowerPoint use a [SharePoint App Catalog](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+> For Word, Excel, and PowerPoint use a [SharePoint App Catalog](https://learn.microsoft.com/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
 
 ## Teams apps that work on Outlook and the Microsoft 365 App

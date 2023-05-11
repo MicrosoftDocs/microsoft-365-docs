@@ -54,7 +54,7 @@ To learn more about these roles, visit Azure AD built-in roles - Microsoft Entra
 
 ## User and group assignments
 
-We currently support most groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups. We support users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. To know more, read the documentation on [Assign users and groups to application](https://learn.microsoft.com/EN-US/azure/active-directory/manage-apps/assign-user-or-group-access-portal?pivots=portal).
+We currently support most groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups. We support users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. To know more, read the documentation on [Assign users and groups to application](https://learn.microsoft.com/azure/active-directory/manage-apps/assign-user-or-group-access-portal?pivots=portal).
 
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported.
@@ -95,7 +95,7 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 - Exchange admin center for Outlook Add-ins
 - Teams admin center for Teams Apps
 
-You can continue to deploy [Office Add-ins via Integrated Apps](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams admin center](https://learn.microsoft.com/en-us/microsoftteams/manage-apps).
+You can continue to deploy [Office Add-ins via Integrated Apps](https://learn.microsoft.com/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams admin center](https://learn.microsoft.com/en-us/microsoftteams/manage-apps).
 
 ## Frequently asked questions
 

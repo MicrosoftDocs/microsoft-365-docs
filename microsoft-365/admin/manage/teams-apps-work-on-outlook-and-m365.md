@@ -161,9 +161,9 @@ The default tenant state will apply to the following apps:
 The default tenant state will not apply to the following apps:
 
 - Custom/LOB apps uploaded by the admin.
-    - When a custom/LOB app is uploaded by the admin via the Microsoft 365 admin center, all users in the organization will have access to install the app by default. Read more about how to upload a custom/LOB app here. <insert link to custom apps section below>
+    - When a custom/LOB app is uploaded by the admin via the Microsoft 365 admin center, all users in the organization will have access to install the app by default. Read more about how to upload a custom/LOB app here. Note to reviewer: Add link to custom apps section below.
         - Admins can continue to deploy the custom/LOB app to a selected set of users.
-        - Admins can also edit which users have access to install and use the custom/LOB app. Read more about how to do this here <insert link to user assignment change above>
+        - Admins can also edit which users have access to install and use the custom/LOB app. Read more about how to do this here. Note to reviewer: Add link to custom apps section below.
 - Apps that have any user selections made by the admin.
     - The changes made by the admin as part of **How to manage the availability of an app in your organization** will be honored over the default state in the tenant. Once an admin specifies users for an app, this setting supersedes the tenant-wide default setting for that app.
 
@@ -196,7 +196,7 @@ You can also upload custom line of business apps and deploy/pre-install them for
 5. Select **Next** to view the **Accept permission request** page. The app capabilities and permissions of the apps are listed. If the app needs consent, select **Accept permissions**. Only a global administrator can give consent.
 6. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the **Overview** tab by choosing **View this deployment**.
 
-Note that whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. Read more about how to do it here. <insert link to how to manage availability section above>  
+Note that whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. Read more about how to do it here. Note to reviewer: Add link to how to manage availability section above.  
 
 > [!NOTE]
 > When uploading and deploying a custom app, it will only be pre-installed for selected users/groups on Outlook and the Microsoft 365 App. To manage how it is accessed by users on Teams, please visit Teams admin center.
