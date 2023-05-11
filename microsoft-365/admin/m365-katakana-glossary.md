@@ -6,9 +6,9 @@ author: cmcatee-MSFT
 manager: scotv
 ms.reviewer: tadaom
 audience: Admin
-ms.topic: reference
+ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Tier3
 - Adm_O365

@@ -25,6 +25,7 @@ ms.date: 04/08/2021
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 - Microsoft Defender Antivirus
@@ -177,7 +178,7 @@ PSComputerName   :
 
 You can turn on email notifications to receive mail about PUA detections.
 
-See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
+See [Troubleshoot event IDs](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 ## View PUA events using advanced hunting
 

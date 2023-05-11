@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -63,11 +63,9 @@ Now you're ready to search the audit log in the Microsoft Purview compliance por
 
 2. In the left navigation pane of the compliance portal, select **Show all** and then select **Audit**.
 
-3. On the **Audit** page, configure the search using the following conditions on the **Search** tab. 
+3. On the **Audit** page, configure the search using the following conditions on the **Search** tab.
 
-   ![Configuration settings for audit log search.](../media/AuditLogSearchToolMCCCallouts.png)
-
-   1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The last seven days are selected by default.
+   1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC). The last seven days are selected by default.
   
    2. **Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](audit-log-activities.md). Leave this box blank to return entries for all audited activities.
   

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -30,14 +30,14 @@ description: Instructions how to configure a retention label with custom actions
 
 When you configure a [retention label](retention.md) to retain items for a specific period, you specify what action to take at the end of that retention period. You can choose from the built-in actions of permanently deleting the item, relabeling the item, deactivating the label, and starting a disposition review.
 
-However, if you choose the option to run a Power Automate flow, currently rolling out in preview, this label configuration supports custom actions such as:
+However, if you choose the option to run a Power Automate flow, currently in preview, this label configuration supports custom actions such as:
 
 - Send an email notification to a records manager, or to the person who created or last modified a document
 - Move a document item to a SharePoint location where you centrally store records
 
 You can also select the Microsoft 365 compliance label-specific actions of relabel the item or permanently delete it:
 
-![Configuring a Power Automate flow for when the retention period expires.](../media/retention-label-power-automate.png)
+![Configuring a Power Automate flow for when an item reaches the end of its retention period.](../media/retention-label-power-automate.png)
 
 For example, a flow can move the item, relabel it, and then send an email notification.
 
@@ -60,7 +60,7 @@ The following processes show the high-level overview of how retention labels wor
 
 ![Process overview of how retention labels work with a Power Automate flow.](../media/retention-label-flow-overview.png)
 
-In Power Automate, you create an automated cloud flow from blank that uses the trigger **When the retention period expires**. Then, add one or more steps and specify the operations that run your choice of actions.
+In Power Automate, you create an automated cloud flow from blank that uses the trigger **When an item reaches the end of its retention period**. Then, add one or more steps and specify the operations that run your choice of actions.
 
 Next, in the Microsoft Purview compliance portal, create a new retention label with the following configuration:
 - Retain the item for a specified period of time
@@ -72,9 +72,18 @@ Apply the label using either of the following methods:
 
 When the retention period expires, your configured flow runs.
 
-## Limitations for this scenario
+> [!NOTE]
+> In a Power Automate flow, you can also select the action **Apply a retention label on the item**. This action is independent from this scenario that applies actions at the end of the retention period. Instead, it's the equivalent to manually applying a retention label. The label is applied immediately.
 
-- Not currently supported for [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo).
+## Add resilience to your flow
+
+Although optional, we recommend you always add the **Trigger a new instance of the flow if an item can't be located** action before **Relabel an item at the end of retention** and **Deletes an item at the end of retention**.
+
+This additional action is required for files that have been moved or renamed after an instance of the flow has been triggered but your specified compliance actions haven't completed. Without it, a renamed or moved file would result in the flow failing because it can't find the file.
+
+Although renaming and moving files after an instance of the flow is triggered are an unusual occurrence, adding this recommended action improves the reliability of the compliance actions succeeding because the current path and name of the file is retrieved automatically just before the selected actions run.
+
+## Limitations for this scenario
 
 - You must create a new retention label to run a flow at the end of the retention period. You can't edit an existing retention label for this configuration.
 
@@ -87,7 +96,7 @@ When the retention period expires, your configured flow runs.
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
 
 - You must have a [Power Automate plan](/power-platform/admin/power-automate-licensing/types) that includes premium connectors, separate from your Microsoft 365 compliance plan. 
-- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When the retention period expires**.
+- The Power Automate flow must be an automated cloud flow that is created from blank, and configured to use the trigger **When an item reaches the end of its retention period**. 
 
 For more information about how to use and configure the dependent automated cloud flows, see the [Microsoft Power Automate Documentation](/power-automate).
 
@@ -104,7 +113,7 @@ For more information about how to use and configure the dependent automated clou
         ![Configuring a retention label to run a Power Automate flow after the retention period expires.](../media/retention-label-flow-configuration.png)
         
     
-    3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created (or somebody has shared with you) and that have the **When the retention period expires** trigger.
+    3. From the **Select a Power Automate flow** flyout pane, you'll see any automated cloud flows that you created (or somebody has shared with you) and that have the **When an item reaches the end of its retention period** trigger.
         
         Select the flow you want, and complete the configuration to create the retention label.
 

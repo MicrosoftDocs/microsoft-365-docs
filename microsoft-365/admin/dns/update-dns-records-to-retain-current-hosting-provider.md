@@ -31,6 +31,8 @@ description: "Learn how to route traffic to an existing public website hosted ou
 
 # Update DNS records to keep your website with your current hosting provider
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
  **If you manage your domain's Microsoft records at your DNS hosting provider**, you don't have to worry about the steps in this topic. Your website stays where it is and people can still get to it. 
   
  **If Microsoft manages your DNS records**, to route traffic to an existing public website hosted outside of Microsoft, after you add your domain to Microsoft, do the following: 

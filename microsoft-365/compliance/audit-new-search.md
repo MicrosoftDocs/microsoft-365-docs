@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -72,12 +72,10 @@ Some examples of different searches include the following criteria. Explore thes
     - Scoping the search using the activities field
     - Adding a specific file, folder, or site
 
-  ![Create a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-create.png)
-
 5. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
 6. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
 
-  ![Results of a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-columns.png)
+      ![Results of a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-columns.png)
 
 7. Select a search job to see the results of the job displayed in a line-item format. Explore the various functionalities in the UI, including:
 
@@ -87,7 +85,7 @@ Some examples of different searches include the following criteria. Explore thes
     - Exporting both unfiltered and filtered searches
     - Sorting the results by clicking the corresponding buttons on the top of the table including Date, IP Address (when applicable), User, Activity, Item, and Detail (when applicable).
 
-  ![Sorting results of a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-result-details.png)
+      ![Sorting results of a Audit New Search overview in Microsoft Purview.](../media/audit-search/audit-new-search-result-details.png)
 
 ## Audit search job overview
 

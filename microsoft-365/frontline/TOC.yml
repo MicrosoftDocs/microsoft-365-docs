@@ -9,8 +9,6 @@
     href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
-  - name: Frontline deployment white paper
-    href: flw-technical-planning-guide-deployment.md
   - name: Set up and configure
     items:
     - name: Overview
@@ -27,8 +25,6 @@
         href: flw-setup-microsoft-365.md
       - name: Deploy Teams at scale
         href: deploy-teams-at-scale.md
-      - name: Onboard your users with the onboarding wizard
-        href: flw-onboarding-wizard.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -131,6 +127,8 @@
         href: virtual-appointments-usage-report.md
       - name: Advanced Virtual Appointments activity report
         href: advanced-virtual-appointments-activity-report.md
+      - name: SMS notifications usage report
+        href: sms-notifications-usage-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
       - name: Virtual appointments Call Quality Dashboard

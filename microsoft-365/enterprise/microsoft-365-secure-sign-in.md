@@ -9,7 +9,7 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-security-compliance
@@ -24,6 +24,8 @@ description: Require that your users sign in securely with multi-factor authenti
 ---
 
 # Step 3: Protect your Microsoft 365 user accounts
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 To increase the security of user sign-ins:
 
