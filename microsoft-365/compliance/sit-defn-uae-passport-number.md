@@ -71,7 +71,7 @@ The regular expression Regex_uae_passport_number finds content that matches the 
 
 **Keyword_uae_passport_number**
 جواز سفر                          -
-جواز سفر#
+جواز سفر# - 
 - passport#
 - passport #
 - passportno
