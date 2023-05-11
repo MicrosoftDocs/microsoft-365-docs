@@ -233,4 +233,4 @@ To rename the report or export to custom locations, you can use standard PowerSh
 
 ## Audit activities for the insights report
 
-Audit events for the insights report are available in the Microsoft Purview compliance portal. For more information about the activities logged, see Information barriers activities
+Audit events for the insights report are available in the Microsoft Purview compliance portal. For more information about the activities logged, see [Information barriers activities](/microsoft-365/compliance/audit-log-activities#information-barriers-activities).
