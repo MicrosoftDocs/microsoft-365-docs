@@ -269,19 +269,19 @@ Before configuring a policy, define the following insider risk settings:
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [File activity detection](insider-risk-management-settings-intelligent-detections.md#file-activity-detection)
     - [Alert volume](insider-risk-management-settings-intelligent-detections.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings-intellilgent-detections.md#microsoft-defender-for-endpoint-alert-statuses)
-    - [Domains](insider-risk-management-settings.md#domains)
-    - [Sensitive info type exclusion](insider-risk-management-settings.md#sensitive-info-type-exclusions-preview)
-    - [Trainable classifiers exclusion](insider-risk-management-settings.md#trainable-classifier-exclusion-preview)
-    - [File path exclusions](insider-risk-management-settings.md#file-path-exclusions)
-    - [Site exclusions](insider-risk-management-settings.md#site-exclusions)
-    - [Keyword exclusion](insider-risk-management-settings.md#keyword-exclusion)
+    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings-intelligent-detections.md#microsoft-defender-for-endpoint-alert-statuses)
+    - [Domains](insider-risk-management-settings-intelligent-detections.md#domains)
+    - [Sensitive info type exclusion](insider-risk-management-settings-intelligent-detections.md#sensitive-info-type-exclusions-preview)
+    - [Trainable classifiers exclusion](insider-risk-management-settings-intelligent-detections.md#trainable-classifier-exclusion-preview)
+    - [File path exclusions](insider-risk-management-settings-intelligent-detections.md#file-path-exclusions)
+    - [Site exclusions](insider-risk-management-settings-intelligent-detections.md#site-exclusions)
+    - [Keyword exclusion](insider-risk-management-settings-intelligent-detections.md#keyword-exclusion)
     
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
-8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
-9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-physical-assets-preview) article for step-by-step guidance.
-10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview) article for step-by-step guidance.
+8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md) article for step-by-step guidance.
+9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings-priority-physical-assets-preview.md) article for step-by-step guidance.
+10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings-teams.md) article for step-by-step guidance.
 11. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 6 (required): Create an insider risk management policy
@@ -304,7 +304,7 @@ Insider risk management policies include assigned users and define which types o
 7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
 
     > [!NOTE]
-    > To take advantage of real-time analytics (preview) for indicator threshold settings, you must scope your policy to **Include all users and groups**. Real-time analytics enables you to see estimates of the number of users that could potentially match a given set of policy conditions in real time. This helps you efficiently adjust the selection of indicators and thresholds of activity occurrence so you don’t have too few or too many policy alerts. Scoping your policy to **Include all users and groups** also provides better overall protection across your tenant. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+    > To take advantage of real-time analytics (preview) for indicator threshold settings, you must scope your policy to **Include all users and groups**. Real-time analytics enables you to see estimates of the number of users that could potentially match a given set of policy conditions in real time. This helps you efficiently adjust the selection of indicators and thresholds of activity occurrence so you don’t have too few or too many policy alerts. Scoping your policy to **Include all users and groups** also provides better overall protection across your tenant. For more information on real-time analytics for indicator threshold settings, [see Indicator level settings](insider-risk-management-settings-policy-indicators.md#indicator-level-settings).
 
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
@@ -341,7 +341,7 @@ Insider risk management policies include assigned users and define which types o
 17. Select **Next** to continue.
 18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts. You can use the recommended thresholds, custom thresholds, or thresholds based on anomalous activities (for certain indicators) above the daily norm for users.
 19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#policy-indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
+20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings-policy-indicators.md) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
     > [!IMPORTANT]
     > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
@@ -354,7 +354,7 @@ Insider risk management policies include assigned users and define which types o
 22. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected **Specify custom thresholds**, choose the appropriate level to generate the desired level of activity alerts for each policy indicator. 
 
     > [!NOTE]
-    > If analytics is turned on, and if you've scoped the policy to include all users, you can take advantage of real-time analytics to tune your threshold settings. [Learn more about real-time analytics for indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings)
+    > If analytics is turned on, and if you've scoped the policy to include all users, you can take advantage of real-time analytics to tune your threshold settings. [Learn more about real-time analytics for indicator threshold settings](insider-risk-management-settings-policy-indicators.md#indicator-level-settings)
 
 23. Select **Next** to continue.
 24. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
