@@ -24,11 +24,11 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
+Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
 Now rolling out in preview: For SharePoint, users can also see and apply sensitivity labels from the details pane. This method is also available from the **Files** tab in Teams.
 
-Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features won't work for these files.
+Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features don't work for these files.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md):
 
@@ -91,7 +91,7 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 
 Now in preview, there's now limited support for labels configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
 
-- When a document is labeled with user-defined permissions and uploaded to SharePoint or OneDrive, these services can now process the document so that it can be opened and edited in Office for the web, the label name is displayed in the **Sensitivity** column, and the encrypted file will be returned in search results for the label ID.
+- When a document is labeled with user-defined permissions and uploaded to SharePoint or OneDrive, these services can now process the document so that it can be opened and edited in Office for the web, the label name is displayed in the **Sensitivity** column, and the encrypted file is returned in search results for the label ID.
 
 - Labels with this configuration are now displayed in Office for the web. However, currently, users can't apply these labels in Office for the web and if they are selected, users see a message instructing them to apply the label using a desktop app.
 
@@ -102,7 +102,7 @@ To support AutoSave and co-authoring for these encrypted files using a desktop a
 - **macOS**: Minimum version 16.51
 
 > [!NOTE]
-> If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply a sensitivity label that's configured with user-defined permissions. After they close the document and wait 10 minutes, these features are available again.
+> If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply or reapply a sensitivity label that's configured with user-defined permissions. After they close the document and wait 10 minutes, these features are available again.
 
 This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt-out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
 
