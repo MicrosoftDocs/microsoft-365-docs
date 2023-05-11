@@ -42,6 +42,14 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## May 2023
+
+- Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+  - Shared mailboxes require Send As or Send On Behalf permission for the user.
+  - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
+
+  For more information, see [MC553274](https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC553274) and [Roadmap ID 115507](https://www.microsoft.com/microsoft-365/roadmap?filters=Launched%2CRolling%20out%2CIn%20development&searchterms=115507).
+
 ## April 2023
 
 - [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation.
