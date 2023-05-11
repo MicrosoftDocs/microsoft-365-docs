@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 05/09/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -71,8 +72,8 @@ When you create an insider risk management policy in the policy wizard, you can 
 - **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. Users configuring the policy and selecting priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later, or the current user should be given access to the required sites.
 - **Sensitive information types**: Any activity associated with content that contains [sensitive information types](sensitive-information-type-entity-definitions.md) are assigned a higher risk score.
 - **Sensitivity labels**: Any activity associated with content that has specific [sensitivity labels](sensitivity-labels.md) applied are assigned a higher risk score.
-- **File extensions**: Any activity associated with content that has specific file extensions. Users configuring a data theft/leak policy that select **File extensions to prioritize** in the policy wizard can define up to 50 file extensions to prioritize in the policy. Entered extensions can include or omit a '.' as the first character of the prioritized extension.
-- **Trainable classifiers**: Any activity associated with content that is included in a [trainable classifier](/microsoft-365/compliance/classifier-learn-about). Users configuring a policy that select Trainable classifiers in the policy wizard can select up to 5 trainable classifiers to apply to the policy. These classifiers can be existing classifiers that identify patterns of sensitive information like social security, credit card, or bank account numbers or custom classifiers created in your organization.
+- **File extensions**: Any activity associated with content that has specific file extensions. Users configuring a data theft/leak policy that selects **File extensions to prioritize** in the policy wizard can define up to 50 file extensions to prioritize in the policy. Entered extensions can include or omit a '.' as the first character of the prioritized extension.
+- **Trainable classifiers**: Any activity associated with content that is included in a [trainable classifier](/microsoft-365/compliance/classifier-learn-about). Users configuring a policy that selects Trainable classifiers in the policy wizard can select up to 5 trainable classifiers to apply to the policy. These classifiers can be existing classifiers that identify patterns of sensitive information like social security, credit card, or bank account numbers or custom classifiers created in your organization.
 
 ## Sequence detection (preview)
 
@@ -85,7 +86,7 @@ Risk management activities may not occur as isolated events. These risks are fre
 
 These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. For policies created from the *Data leaks* and *Data leaks by priority user* templates, you can also select which sequences trigger the policy. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
 
-- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites or moving files into a compressed folder.
+- **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites, third-party cloud services, unallowed domains, or moving files into a compressed folder.
 - **Exfiltration**: Detects sharing or extraction activities to internal and external sources by in-scope policy users. An example risk management activity includes sending emails with attachments from your organization to external recipients.
 - **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. An example risk management activity includes renaming files on a device.
 - **Clean-up**: Detects deletion activities by in-scope policy users. An example risk management activity includes deleting files from a device.
@@ -195,10 +196,15 @@ Complete the following steps to manage an existing policy:
 5. On the **Name and description** page, update the description for the policy in the **Description** field.
 6. Select **Next** to continue.
 7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering security and compliance related events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
+
+    > [!NOTE]
+    > To take advantage of real-time analytics (preview) for indicator threshold settings, you must scope your policy to **Include all users and groups**. Real-time analytics enables you to see the number of users that could potentially match a given set of policy conditions in real time. This helps you efficiently adjust the selection of indicators and thresholds of activity occurrence so you don’t have too few or too many policy alerts. Scoping your policy to **Include all users and groups** also provides better overall protection across your tenant. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
     - **I want to prioritize content**. Selecting this option will enable you to prioritize *SharePoint sites*, *Sensitivity labels*, *Sensitive info types*, and *File extensions* content types. If you choose this option, you must select at least one priority content type.
+
     - **I don't want to specify priority content right now**. Selecting this option will skip the priority content detail pages in the wizard.
 
 10. Select **Next** to continue.
@@ -219,13 +225,13 @@ Complete the following steps to manage an existing policy:
     > [!IMPORTANT]
     > If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
     > If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
-14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for [integration with communication compliance](/microsoft-365/compliance/communication-compliance-policies#policy-for-insider-risk-management-integration-preview) and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure a HR data connector for your organization.
+14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for [integration with communication compliance](/microsoft-365/compliance/communication-compliance-policies#policy-for-insider-risk-management-integration-preview) and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure an HR data connector for your organization.
 15. Select **Next** to continue.
 16. If you've selected the *Data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
 17. Select **Next** to continue.
 18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
 19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
+20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#policy-indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
 
     > [!IMPORTANT]
     > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
@@ -235,6 +241,10 @@ Complete the following steps to manage an existing policy:
 
 21. Select **Next** to continue.
 22. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
+
+    > [!NOTE]
+    > If analytics is turned on, and if you've scoped the policy to include all users, you can take advantage of real-time analytics to tune your threshold settings. [Learn more about real-time analytics for indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings)
+
 23. Select **Next** to continue.
 24. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -249,9 +259,9 @@ Complete the following steps to copy an existing policy:
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
 
-## Immediately start scoring security-related user activity
+## Immediately start scoring user activity
 
-There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds. You can add up to 4,000 users per policy when adding users for immediate scoring.
+There may be scenarios where you need to start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to  start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match or an Employment End Date from the HR Connector). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if the activity meets the policy alert thresholds. At any given time, you can have up to 4,000 users in scope that have been manually added using the **Start scoring activity for users** feature.
 
 Some scenarios where you may want to immediately start scoring user activities:
 

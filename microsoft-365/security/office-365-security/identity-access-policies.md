@@ -20,10 +20,12 @@ ms.collection:
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-  - highpri
+  - tier2
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
+
 # Common security policies for Microsoft 365 organizations
 
 Organizations have lots to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](/security/zero-trust/zero-trust-overview):
@@ -40,9 +42,11 @@ We group these policies into three protection levels based on where you are on y
 - **Enterprise** - Enhanced controls that introduce device compliance.
 - **Specialized security** - Policies that require multifactor authentication every time for specific data sets or users.
 
-The following diagram shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
+The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+
+You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 <!--
 
@@ -79,11 +83,11 @@ Conditional Access policies may be assigned to users, groups, and administrator 
 
 Here's an example of group assignment and exclusions for requiring MFA after your users have completed [user registration](#user-registration).
 
-|| Azure AD Conditional Access policy | Include | Exclude |
-| --- | --- | --- | --- |
-| **Starting point**| Require multifactor authentication for medium or high sign-in risk | *All users* | - Emergency access accounts <br> - Conditional Access exclusion group |
-| **Enterprise**| Require multifactor authentication for low, medium, or high sign-in risk | *Executive staff group* | - Emergency access accounts <br> - Conditional Access exclusion group |
-| **Specialized security**| Require multifactor authentication always | *Top Secret Project Buckeye group* | - Emergency access accounts <br> - Conditional Access exclusion group |
+|&nbsp;|Azure AD Conditional Access policy|Include|Exclude|
+|---|---|---|---|
+|**Starting point**|Require multifactor authentication for medium or high sign-in risk|*All users*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Enterprise**|Require multifactor authentication for low, medium, or high sign-in risk|*Executive staff group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
+|**Specialized security**|Require multifactor authentication always|*Top Secret Project Buckeye group*|<ul><li>Emergency access accounts</li><li>Conditional Access exclusion group</li></ul>|
 
 Be careful when applying higher levels of protection to groups and users. **The goal of security isn't to add unnecessary friction** to the user experience. For example, members of the *Top Secret Project Buckeye group* will be required to use MFA every time they sign in, even if they aren't working on the specialized security content for their project. Excessive security friction can lead to fatigue.
 
@@ -114,27 +118,27 @@ We recommend implementing the [starting point policies](#starting-point) in the 
 
 ### Starting point
 
-| Policy | More information | Licensing |
+|Policy|More information|Licensing|
 |---|---|---|
-| [Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk) | Use risk data from Azure AD Identity Protection to require MFA only when risk is detected | Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on |
-| [Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication) | Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them. | Microsoft 365 E3 or E5 |
-| [High risk users must change password](#high-risk-users-must-change-password) | Forces users to change their password when signing in if high-risk activity is detected for their account. | Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on |
-| [Apply application protection policies for data protection](#app-protection-policies) | One Intune app protection policy per platform (Windows, iOS/iPadOS, Android). | Microsoft 365 E3 or E5 |
-| [Require approved apps and app protection policies](#require-approved-apps-and-app-protection-policies) | Enforces mobile app protection policies for phones and tablets using iOS, iPadOS, or Android. | Microsoft 365 E3 or E5 |
+|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|Use risk data from Azure AD Identity Protection to require MFA only when risk is detected|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication)|Clients that don't use modern authentication can bypass Conditional Access policies, so it's important to block them.|Microsoft 365 E3 or E5|
+|[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Apply application protection policies for data protection](#app-protection-policies)|One Intune app protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
+|[Require approved apps and app protection policies](#require-approved-apps-and-app-protection-policies)|Enforces mobile app protection policies for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 
 ### Enterprise
 
-| Policy | More information | Licensing |
+|Policy|More information|Licensing|
 |---|---|---|
-| [Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk) | Use risk data from Azure AD Identity Protection to require MFA only when risk is detected | Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on |
-| [Define device compliance policies](#device-compliance-policies) | Set minimum configuration requirements. One policy for each platform. | Microsoft 365 E3 or E5 |
-| [Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices) | Enforces the configuration requirements for devices accessing your organization | Microsoft 365 E3 or E5 |
+|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)|Use risk data from Azure AD Identity Protection to require MFA only when risk is detected|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|[Define device compliance policies](#device-compliance-policies)|Set minimum configuration requirements. One policy for each platform.|Microsoft 365 E3 or E5|
+|[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces the configuration requirements for devices accessing your organization|Microsoft 365 E3 or E5|
 
 ### Specialized security
 
-| Policy | More information | Licensing |
+|Policy|More information|Licensing|
 |---|---|---|
-| [*Always* require MFA](#always-require-mfa) | Users must perform MFA anytime they sign in to your organizations services | Microsoft 365 E3 or E5 |
+|[*Always* require MFA](#always-require-mfa)|Users must perform MFA anytime they sign in to your organizations services|Microsoft 365 E3 or E5|
 
 ## App protection policies
 
@@ -167,7 +171,7 @@ You must create a policy for each PC, phone, or tablet platform. This article wi
 
 ### Create device compliance policies
 
-To create device compliance policies, sign in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), and navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
@@ -180,8 +184,8 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered as pa
 
 Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
 
-- The [starting point](#starting-point) and [enterprise](#enterprise) protection tiers map closely with the level 2 enhanced security settings.
-- The [specialized](#specialized-security) security protection tier maps closely to the level 3 high security settings.
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
 
 ##### Compliance settings for personally enrolled devices
 
@@ -206,8 +210,8 @@ The Android Enterprise security configuration framework is organized into severa
 
 Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
 
-- The [starting point](#starting-point) and [enterprise](#enterprise) protection tiers map closely with the level 2 enhanced security settings.
-- The [specialized](#specialized-security) security protection tier maps closely to the level 3 high security settings.
+- The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
+- The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
 
 ##### Compliance settings for Android Enterprise work profile devices
 
@@ -227,11 +231,11 @@ The following settings are configured in **Step 2: Compliance settings**, of the
 
 For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
 
-| Property | Value |
+|Property|Value|
 |---|---|
-| Require BitLocker | Require |
-| Require Secure Boot to be enabled on the device | Require |
-| Require code integrity | Require |
+|Require BitLocker|Require|
+|Require Secure Boot to be enabled on the device|Require|
+|Require code integrity|Require|
 
 For **Device properties**, specify appropriate values for operating system versions based on your IT and security policies.
 
@@ -239,30 +243,30 @@ For **Configuration Manager Compliance**, if you are in a co-managed environment
 
 For **System security**, see this table.
 
-| Property | Value |
+|Property|Value|
 |---|---|
-| Require a password to unlock mobile devices | Require |
-| Simple passwords | Block |
-| Password type | Device default |
-| Minimum password length | 6 |
-| Maximum minutes of inactivity before password is required | 15 minutes |
-| Password expiration (days) | 41 |
-| Number of previous passwords to prevent reuse | 5 |
-| Require password when device returns from idle state (Mobile and Holographic) | Require |
-| Require encryption of data storage on device | Require |
-| Firewall | Require |
-| Antivirus | Require |
-| Antispyware | Require |
-| Microsoft Defender Antimalware | Require |
-| Microsoft Defender Antimalware minimum version | Microsoft recommends versions no more than five behind from the most recent version. |
-| Microsoft Defender Antimalware signature up to date | Require |
-| Real-time protection | Require |
+|Require a password to unlock mobile devices|Require|
+|Simple passwords|Block|
+|Password type|Device default|
+|Minimum password length|6|
+|Maximum minutes of inactivity before a password is required|15 minutes|
+|Password expiration (days)|41|
+|Number of previous passwords to prevent reuse|5|
+|Require password when device returns from idle state (Mobile and Holographic)|Require|
+|Require encryption of data storage on device|Require|
+|Firewall|Require|
+|Antivirus|Require|
+|Antispyware|Require|
+|Microsoft Defender Antimalware|Require|
+|Microsoft Defender Antimalware minimum version|Microsoft recommends versions no more than five behind from the most recent version.|
+|Microsoft Defender Antimalware signature up to date|Require|
+|Real-time protection|Require|
 
 For **Microsoft Defender for Endpoint**
 
-| Property | Value |
+|Property|Value|
 |---|---|
-| [Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level) | Medium |
+|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|
 
 ## Conditional Access policies
 
@@ -274,20 +278,18 @@ Follow the guidance in the article [Common Conditional Access policy: Sign-in ri
 
 When configuring your policy, use the following risk levels.
 
-| Level of protection | Risk level values needed | Action |
+|Level of protection|Risk level values needed|Action|
 |---|---|---|
-| Starting point | High, medium | Check both. |
-| Enterprise | High, medium, low | Check all three. |
+|Starting point|High, medium|Check both.|
+|Enterprise|High, medium, low|Check all three.|
 
 ### Block clients that don't support multifactor authentication
 
 Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
 
-For Exchange Online, you can use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
 ### High risk users must change password
 
-Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to require users with compromised credentials to change their password.
+Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user) to require users with compromised credentials to change their password.
 
 Use this policy along with [Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants in addition to terms specific to your organization. Using Azure AD password protection ensures that changed passwords are stronger.
 
@@ -312,7 +314,7 @@ The following steps will help create a Conditional Access policy to require devi
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 1. Under **Assignments**, select **Users or workload identities**.
    1. Under **Include**, select **All users**.
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts. 
+   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 1. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
    1. If you must exclude specific applications from your policy, you can choose them from the **Exclude** tab under **Select excluded cloud apps** and choose **Select**.
 1. Under **Access controls** > **Grant**.
@@ -326,7 +328,7 @@ The following steps will help create a Conditional Access policy to require devi
 
 #### Subscription activation
 
-Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to “step-up” from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
+Organizations using the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to "step-up" from one version of Windows to another, may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their device compliance policy.
 
 ### Always require MFA
 

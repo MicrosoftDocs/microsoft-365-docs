@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -25,7 +25,7 @@ description: "The Microsoft Purview Extension extends monitoring and control of 
 
 # Learn about the Microsoft Purview Chrome Extension
 
-[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10/11 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10/11 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [data loss prevention policies](dlp-learn-about-dlp.md).
 
 Once the Microsoft Purview Chrome Extension is installed on a Windows 10/11 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
 
@@ -47,7 +47,7 @@ activity |description  | supported policy actions|
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
 2. [Onboarding tools and methods for Windows 10/11 devices](device-onboarding-overview.md)
 3. [Install the extension for Chrome on your Windows 10/11 devices](dlp-chrome-get-started.md)
-4. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10/11 devices
+4. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10/11 devices
 
 ## Next steps
 
@@ -60,7 +60,7 @@ See [Get started with the Microsoft Purview Chrome Extension](dlp-chrome-get-sta
 - [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Insider risk management](insider-risk-management.md)

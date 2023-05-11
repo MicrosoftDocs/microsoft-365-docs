@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris; jaeccles
-ms.date:
+ms.date: 08/26/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
@@ -95,7 +95,7 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 To ensure continuity of service, you need to purchase the required number of [licenses](syntex-licensing.md) and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to fully use Syntex.
 
-You might have to estimate your projected use of Sstructured document processing or freeform document processing models, and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
+You might have to estimate your projected use of structured document processing or freeform document processing models, and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### Don't proceed to production use
 

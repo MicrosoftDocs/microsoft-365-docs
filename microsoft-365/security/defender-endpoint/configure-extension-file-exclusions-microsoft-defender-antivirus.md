@@ -95,7 +95,7 @@ See the following articles:
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
-See [How to create and deploy antimalware policies: Exclusion settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Configuration Manager (current branch).
 
 ### Use Group Policy to configure folder or file extension exclusions
 
@@ -286,7 +286,7 @@ The following table lists and describes the system account environment variables
 You can retrieve the items in the exclusion list by using one of the following methods:
 
 - [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
-- [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
+- [Microsoft Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
 - [Windows Security app](microsoft-defender-security-center-antivirus.md)

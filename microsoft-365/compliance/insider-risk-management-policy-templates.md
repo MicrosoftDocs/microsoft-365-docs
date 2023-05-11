@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -59,7 +60,7 @@ When creating or modifying data loss prevention policies for use with insider ri
 
 Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned when using this triggering event option. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering events for  insider risk policies that use the **Data leaks** template.
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
+See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
 
 ### Data leaks by priority users (preview)
 
