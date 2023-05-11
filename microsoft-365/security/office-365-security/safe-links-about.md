@@ -48,7 +48,7 @@ Watch this short video on how to protect against malicious links with Safe Links
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients who are licensed for Defender for Office (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
+> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients for customers that have at least one Defender for Office 365 license (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 Safe Links protection by Safe Links policies is available in the following locations:
 
