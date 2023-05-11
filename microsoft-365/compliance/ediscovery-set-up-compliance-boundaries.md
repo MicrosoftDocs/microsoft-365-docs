@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ We use the example in the following illustration to explain how compliance bound
   
 ![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery managers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Additionally in this scenario, investigators cannot place content locations on hold or export content from a case. Here's how compliance boundaries meet these requirements.
+In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery managers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Additionally in this scenario, investigators can't place content locations on hold or export content from a case. Here's how compliance boundaries meet these requirements.
   
 - The search permissions filtering functionality for eDiscovery controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
 
@@ -63,7 +63,7 @@ Here's the process for setting up compliance boundaries:
 
 ## Step 1: Identify a user attribute to define your agencies
 
-The first step is to choose an attribute to use that will define your agencies. This attribute is used to create the search permissions filter that limits an eDiscovery manager to search only the content locations of users who are assigned a specific value for this attribute. For example, let's say Contoso decides to use the **Department** attribute. The value for this attribute for users in the Fourth Coffee subsidiary would be  `FourthCoffee`  and the value for users in Coho Winery subsidiary would be `CohoWinery`. In Step 3, you use this  `attribute:value`  pair (for example, *Department:FourthCoffee*) to limit the user content locations that eDiscovery managers can search. 
+The first step is to choose an attribute to use that will define your agencies. This attribute is used to create the search permissions filter that limits an eDiscovery manager to search only the content locations of users who are assigned a specific value for this attribute. For example, let's say Contoso decides to use the **Department** attribute. The value for this attribute for users in the Fourth Coffee subsidiary would be `FourthCoffee` and the value for users in Coho Winery subsidiary would be `CohoWinery`. In Step 3, you use this `attribute:value` pair (for example, *Department:FourthCoffee*) to limit the user content locations that eDiscovery managers can search.
   
 Here are some examples of user attributes that you can use for compliance boundaries:
   
@@ -77,9 +77,11 @@ For a complete list, see the full list of supported [mailbox filters](/powershel
 
 ## Step 2: Create a role group for each agency
 
-The next step is to create the role groups in the compliance portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
+The next step is to create the role groups in the compliance portal that will align with your agencies.
   
 To create the role groups, go to the **Permissions** page in the compliance portal and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
+
+We recommend that the role groups created for the compliance boundary don't have any roles attached to it. This role group should only be used to assign users to the role group. Separate built-in (eDiscovery Manager) or custom role groups should be used to assign roles to members. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
   
 Using the Contoso compliance boundaries scenario, four role groups need to be created and the appropriate members added to each one.
   
@@ -87,11 +89,9 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
 - Fourth Coffee Investigators
 - Coho Winery eDiscovery Managers
 - Coho Winery Investigators
-  
-To meet the requirements of the Contoso compliance boundaries scenario, you would also remove the **Hold** and **Export** roles from the investigators role groups to prevent investigators from placing holds on content locations and exporting content from a case.
 
 > [!IMPORTANT]
-> If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+> If a role is added or removed from a role group that you've added as a member of a case, then the role group is automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. If a role group is deleted, it is removed from all cases it was a member of. We recommend that the role groups created for compliance boundaries don't have any roles assigned to them. Use separate built-in/custom role groups to assign roles to members.
 
 ## Step 3: Create a search permissions filter to enforce the compliance boundary
 
@@ -106,13 +106,10 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 Here's a description of each parameter in the command:
   
 - `FilterName`: Specifies the name of the filter. Use a name that describes or identifies the agency that the filter is used in.
-
 - `Users`: Specifies the users or groups who get this filter applied to the search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 2) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas.
-
 - `Filters`: Specifies the search criteria for the filter. For compliance boundaries, you define the following filters. Each one applies to different content locations.
 
   - `Mailbox`: Specifies the mailboxes or OneDrive accounts that the role groups defined in the `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrive accounts in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`.
-
   - `SiteContent`: This filter includes two separate filters. The first `SiteContent_Path` specifies the SharePoint sites in the agency that the role groups defined in the `Users` parameter can search. For example, `SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee'`. The second `SiteContent_Path` filter (connected to the first `SiteContent_Path` filter by the `or` operator) specifies the agency's OneDrive domain (also called the *MySite* domain). For example, `SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'`. You can also use the `Site_Path` filter in place of the `SiteContent` filter. The `Site` and `SiteContent` filters are interchangeable, and don't affect search permissions filters described in this article.
 
     > [!IMPORTANT]
@@ -154,18 +151,15 @@ The final step is to create a eDiscovery (Standard) case or eDiscovery (Premium)
   
 - Only members of the role group added to the case will be able to see and access the case in the compliance portal. For example, if the Fourth Coffee Investigators role group is the only member of a case, then members of the Fourth Coffee eDiscovery Managers role group (or members of any other role group) won't be able to see or access the case.
 
-- When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 3.)
+- When a member of the role group assigned to a case runs a search associated with the case, they'll only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 3.)
 
 To create a case and assign members:
 
 1. Go to the **eDiscovery (Standard)** or **eDiscovery (Premium)** page in the compliance portal and create a case.
-
 2. In the list of cases, select the name of the case you created.
-
 3. Add role groups as members to the case. For instructions, see the one of the following articles:
 
-   - [Add members to a eDiscovery (Standard) case](ediscovery-standard-get-started.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
-
+   - [Add members to a eDiscovery (Standard) case](ediscovery-standard-get-started.md#step-5-optional-add-members-to-a-ediscovery-standard-case)
    - [Add members to an eDiscovery (Premium) case](ediscovery-add-or-remove-members-from-a-case.md)
 
 > [!NOTE]
@@ -299,7 +293,7 @@ If the region specified in the search permissions filter doesn't exist in your o
   
 **What is the maximum number of search permissions filters that can be created in an organization?**
   
-There is no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit of the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search.
+There's no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit of the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search.
 
 To understand how this limit works, you need to understand that a search permissions filter is appended to the search query when a search is run. A search permissions filter is joined to the search query by the **AND** Boolean operator. The query logic for the search query and a single search permissions filter would look like this:
 
