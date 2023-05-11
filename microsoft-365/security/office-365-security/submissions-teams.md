@@ -90,7 +90,7 @@ For more information about user reported message settings in the Defender portal
    :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
-   > If you've [turned off reporting for Microsoft Purview Communication Compliance](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), you might not see any dropdown for selection at all. The end user will just be shown a confirmation popup. 
+   > If [reporting for Microsoft Purview Communication Compliance is turned off](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), users might not have the dropdown list to select **Security risk - Spam, phishing, malicious content**. Instead, they're shown a confirmation pop-up.
 
 3. In the confirmation dialog that opens, click **Close**.
 
