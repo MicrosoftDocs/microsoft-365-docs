@@ -127,7 +127,7 @@ As Defender Experts for XDR investigate incidents and come up with remediation a
 
 ### Microsoft Sentinel
 
-You can get incident visibility in Microsoft Sentinel by turning on its out-of-the-box Microsoft 365 Defender data connector. [Learn more](**link to md file outside of repo at azure/sentinel/connect-microsoft-365-defender**).
+You can get incident visibility in Microsoft Sentinel by turning on its out-of-the-box Microsoft 365 Defender data connector. [Learn more](/azure/sentinel/connect-microsoft-365-defender).
 
 Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
 
@@ -144,7 +144,7 @@ The following section describes how an incident handled by our experts is update
 
 ### Other applications
 
-You could obtain visibility into incidents in your SIEM or ITSM application by using the [Microsoft 365 Defender API](../defender/api-overview.md) or [connectors in Sentinel](**link to azure/sentinel/data-connectors-reference**).
+You could obtain visibility into incidents in your SIEM or ITSM application by using the [Microsoft 365 Defender API](../defender/api-overview.md) or [connectors in Sentinel](/azure/sentinel/data-connectors-reference).
 
 After configuring a connector, the updates by Defender Experts to an incident’s **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender can be synchronized with the third-party SIEM or ITSM applications, depending on how the field mapping has been implemented. To illustrate, you can take a look at the [connector available from Sentinel to ServiceNow](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Servicenow/StoreApp).
 
