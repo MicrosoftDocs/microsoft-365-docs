@@ -46,5 +46,5 @@ Once you select the permissions you’d like to grant to our experts, we create 
 
 These policies are configured during the onboarding process and require the relevant administrator to stay signed in to complete the steps. Once the above policies are created and the permissions setup is considered complete, you'll see a notification that the setup is complete.
 
-## See also
+### See also
 [Additional information](additional-information-xdr.md)

@@ -42,6 +42,6 @@ Defender Experts for XDR isn't an incident response service. While it augments y
 
 If you don't have your own security incident response team, [Microsoft Incident Response](https://www.microsoft.com/security/business/microsoft-incident-response) can help mitigate a breach and recover your operations. If you're an existing unified or premier support customer, you can create a support request in the [Microsoft Services Hub](https://serviceshub.microsoft.com/home) to engage with them. Otherwise, fill out the [Experiencing a Cybersecurity Incident?](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRypQlJUvhTFIvfpiAfrpFQdUOTdRRFpDUFQ1TzNLVFZXV0VUOVlVN0szUiQlQCN0PWcu) form. We'll review the details and quickly call you with instructions to get started.
 
-## See also
+### See also
 
 [Frequently asked questions](frequently-asked-questions.md)

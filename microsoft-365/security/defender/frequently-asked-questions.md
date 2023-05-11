@@ -41,6 +41,6 @@ ms.date: 05/29/2023
 | **Can Defender Experts for XDR help with an active compromise or vulnerability?** | No, Defender Experts currently don't provide incident response services. Contact your Microsoft representative or fill out the [Experiencing a Cybersecurity Incident?](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRypQlJUvhTFIvfpiAfrpFQdUOTdRRFpDUFQ1TzNLVFZXV0VUOVlVN0szUiQlQCN0PWcu) form to engage Microsoft Incident Response for incident response assistance. |
 | **How can my organization participate in the Defender Experts for XDR service?** | Contact your Microsoft representative to express interest in Defender Experts for XDR.|
 
-## See also
+### See also
 
 [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)

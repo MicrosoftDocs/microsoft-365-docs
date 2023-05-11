@@ -95,6 +95,6 @@ The initial readiness engagement is based on your [Microsoft Secure Score](../de
 
 Once you’ve completed the readiness checks, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
-## Go to the next step
+### Next step
 
 [Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)

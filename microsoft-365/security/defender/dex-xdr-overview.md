@@ -47,6 +47,6 @@ In addition to the constantly updated research and intelligence tailored for the
 - **Live dashboards and reports** - Transparent view of our operations on your behalf and noise free, actionable view into what matters for you coupled with detailed analytics
 - **Proactive check-ins for continuous security improvements** - Periodic check-ins with your named service delivery team to guide your Defender Experts for XDR experience and improve your security posture
 
-## Go to the next step
+### Next step
 
 [Before you begin](before-you-begin-xdr.md)

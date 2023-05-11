@@ -211,6 +211,6 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
   ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
-## See also
+### See also
 
 [Search audit logs for actions performed by Defender Experts](auditing.md)

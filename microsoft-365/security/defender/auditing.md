@@ -72,6 +72,6 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 
 In addition to using Audit New Search in the Microsoft Purview compliance portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
 
-## See also
+### See also
 
 [Additional information](additional-information-xdr.md)

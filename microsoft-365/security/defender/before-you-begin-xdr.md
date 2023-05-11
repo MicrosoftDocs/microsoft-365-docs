@@ -77,6 +77,6 @@ This service is available worldwide for our customers in our commercial public c
 ### Language
 This service is currently delivered in English language only.
 
-## Go to the next step
+### Next step
 
 [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
