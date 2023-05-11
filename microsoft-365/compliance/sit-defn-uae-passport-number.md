@@ -22,7 +22,7 @@ recommendations: false
 description: "U.A.E passport number sensitive information type entity definition."
 ---
 
-# UAE passport number
+# U.A.E. passport number
 
  Tip
 

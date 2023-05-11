@@ -22,7 +22,7 @@ recommendations: false
 description: "U.A.E identity card number sensitive information type entity definition."
 ---
 
-# UAE identity card number
+# U.A.E. identity card number
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
