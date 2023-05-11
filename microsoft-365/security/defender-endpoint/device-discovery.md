@@ -22,7 +22,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 05/11/2023
 ---
 
 # Device discovery overview
@@ -31,7 +31,6 @@ ms.date: 03/23/2021
 
 **Applies to:**
 
-- [Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

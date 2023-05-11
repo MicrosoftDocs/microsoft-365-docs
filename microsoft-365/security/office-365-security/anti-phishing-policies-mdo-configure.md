@@ -206,6 +206,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
          > - `noreply@email.teams.microsoft.com`
          > - `noreply@emeaemail.teams.microsoft.com`
          > - `no-reply@sharepointonline.com`
+         > - `noreply@planner.office365.com`
 
        - **Domain** tab: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add domains**. In the **Add trusted domains** flyout that opens, enter domain in the **Domain** box, and then select the domain in drop down list that appears. Repeat this step as many times as necessary. To remove an existing entry, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: for the entry.
 
