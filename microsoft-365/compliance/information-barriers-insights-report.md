@@ -44,7 +44,9 @@ The insights report provides the following information for the top 100 most acti
 
 ## Create the insights report
 
-Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports. To create the insights report, complete the following steps:
+Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports. One insight report build is supported for every 24 hour period and the previous report build is automatically overwritten. For example, if you create an insights report build on 4/25/2023 at 4:10 PM, the new insights report build won't have updated information available until 4/26/2023 at 4:10 PM.
+
+To create the insights report, complete the following steps:
 
 1. [Connect to SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) as a global administrator or SharePoint administrator in Microsoft 365.
 2. Run the following PowerShell cmdlet  and accept the confirmation prompt to build the insights report:
@@ -54,7 +56,7 @@ Before you can run specific queries for information barriers details, you must f
     ```
 
     > [!NOTE]
-    > Depending on the number of SharePoint sites and OneDrives accounts in your organization, it may take up to 24 hours for this report to build.
+    > Depending on the number of SharePoint sites and OneDrives accounts in your organization, it may take up to one hour for this report to build.
 
     You can automate acceptance of the confirmation prompt when creating the insights report by appending the *-Yes* as an parameter to the cmdlet. For example, `Start-SPOInformationBarriersInsightsReport -Yes`.
 3. Run the following PowerShell cmdlet to view the build status of the insights report:
@@ -65,13 +67,11 @@ Before you can run specific queries for information barriers details, you must f
 
    The following example shows the information returned for the insights report build:
 
-    ```powershell
-    State: Completed
-    Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776
-    StartTimeInUtc: 4/25/2023 4:10:16 PM
-    CompleteTimeInUtc: 4/25/2023 4:10:25 PM
-    QueuedTimeInUtc: 4/25/2023 4:06:47 PM
-    ```
+    `State: Completed` <br>
+    `Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776` <br>
+    `StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
+    `CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
+    `QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
     The report is ready to view or download when the *State* value is *Completed*. Other *State* values include:
 
@@ -89,9 +89,18 @@ To view a summary of the modes with results for SharePoint sites, use the follow
 Get-SPOInformationBarriersInsightsReport -reportId <ID>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`
+
+**Example results**:
+
+`Content: Explicit, Implicit, Open, OwnerModerated, ModeDistribution` <br>
+`State: Completed`<br>
+`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
+`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
+`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
+`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
 In this example, the insights report results are displayed for SharePoint sites included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any SharePoint sites in the organization with that mode.
 
@@ -103,9 +112,18 @@ To view details about a specific mode with results for SharePoint sites, use the
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section Explicit`
+
+**Example results**:
+
+`Content: Explicit` <br>
+`State: Completed`<br>
+`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
+`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
+`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
+`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
 ### View the details for the mode distribution for SharePoint sites
 
@@ -115,9 +133,17 @@ To view details about the mode distribution with results for SharePoint sites, u
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistribution>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section ModeDistribution`|  **Total site count**: 10000 <br> **Owner Moderated** SiteCount: 500 SitePercentage: 5 <br> **Explicit** SiteCount: 3628 SitePercentage: 36.82  <br> **Implicit** SiteCount: 4190 SitePercentage: 41.9  <br> **Open** SiteCount: 1682 SitePercentage: 16.82 |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -section ModeDistribution`
+
+**Example results**:
+
+`Total site count: 10000` <br>
+`Owner Moderated SiteCount: 500 SitePercentage: 5` <br>
+`Explicit SiteCount: 3628 SitePercentage: 36.82` <br>
+`Implicit SiteCount: 4190 SitePercentage: 41.9` <br>
+`Open SiteCount: 1682 SitePercentage: 16.82`
 
 ## Insights reports for OneDrive accounts
 
@@ -129,9 +155,18 @@ To view a summary of the modes with results for OneDrive accounts, use the follo
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive`|  **Content**: Explicit, Mixed, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive`
+
+**Example results**:
+
+`Content: Explicit, Mixed, Open, OwnerModerated, ModeDistribution` <br>
+`State: Completed`<br>
+`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
+`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
+`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
+`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
 In this example, the insights report results are displayed for OneDrive accounts included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any OneDrive accounts in the organization with that mode.
 
@@ -143,9 +178,18 @@ To view details about a specific mode with results for OneDrive accounts, use th
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Explicit`|  **Content**: Explicit, Implicit, Open, OwnerModerated, ModeDistribution <br> **State**: Completed <br> **Id**: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 <br> **StartTimeInUtc**: 4/25/2023 4:10:16 PM <br> **CompleteTimeInUtc**: 4/25/2023 4:10:25 PM <br> **QueuedTimeInUtc**: 4/25/2023 4:06:47 PM |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Explicit`
+
+**Example results**:
+
+`Content: Explicit` <br>
+`State: Completed`<br>
+`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
+`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
+`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
+`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
 ### View the details for the mode distribution for OneDrive accounts
 
@@ -155,9 +199,17 @@ To view details about the mode distribution with results for OneDrive accounts, 
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <ModeDistribution>`
 ```
 
-|**Example**|**Example results**|
-|:----------|:------------------|
-| `Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section ModeDistribution`|  **Total site count**: 10000 <br> **Owner Moderated** SiteCount: 500 SitePercentage: 5 <br> **Explicit** SiteCount: 3628 SitePercentage: 36.82  <br> **Mixed** SiteCount: 4190 SitePercentage: 41.9  <br> **Open** SiteCount: 1682 SitePercentage: 16.82 |
+**Example**:
+
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section ModeDistribution`
+
+**Example results**:
+
+`Total site count: 10000` <br>
+`Owner Moderated SiteCount: 500 SitePercentage: 5` <br>
+`Explicit SiteCount: 3628 SitePercentage: 36.82` <br>
+`Mixed SiteCount: 4190 SitePercentage: 41.9` <br>
+`Open SiteCount: 1682 SitePercentage: 16.82`
 
 ## Download the results of the insights report
 
@@ -167,11 +219,18 @@ To download the results of a specific insights report for SharePoint sites, use 
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <report you want to download> -action Download`
 ```
 
+The report is automatically exported as a .csv file with a file name of *SharePoint_<the name of the report type>*. For example, if you download the *Explicit* report, the file name is *SharePoint_Explicit.csv*.
+
 To download the results of a specific insights report for OneDrive accounts, use the following cmdlet syntax to download the report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <report you want to download> -action Download`
 ```
 
+The report is automatically exported as a .csv file with a file name of *OneDrive_<the name of the report type>*. For example, if you download the *Explicit* report, the file name is *OneDrive_Explicit.csv*.
+
+To rename the report or export to custom locations, you can use standard PowerShell parameters. For more information, see the [PowerShell documentation](/powershell/).
 
 ## Audit activities for the insights report
+
+Audit events for the insights report are available in the Microsoft Purview compliance portal. For more information about the activities logged, see Information barriers activities
