@@ -65,12 +65,12 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
           <IdMatch idRef="Regex_uae_passport_number" />
         </Pattern>
       </Entity>
- ```
+```
 
 ## Keywords
 
 **Keyword_uae_passport_number**
-جواز سفر
+جواز سفر                          
 جواز سفر#
 - passport#
 - passport #
