@@ -22,7 +22,7 @@ search.appverid: met150
 ms.date: 05/29/2023
 ---
 
-# Start using Defender Experts for XDR preview service
+# Start using Defender Experts for XDR service
 
 **Applies to:**
 
