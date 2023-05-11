@@ -23,7 +23,7 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 
 # Adaptive scopes
 
-When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
+When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a [policy for retention](retention.md#retention-policies-and-retention-labels), you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
 - An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
 - For example, you can assign different policy settings to users according to their department by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
@@ -36,10 +36,17 @@ The advantages of using adaptive scopes include:
 - Powerful targeting for your policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific policy. 
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 - A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
+- Support for [Azure AD administrative units](/azure/active-directory/roles/administrative-units). For more information, see the next section.
 
 For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
+
+### How adaptive scopes work with Azure AD administrative units
+
+Administrative units are created and configured in Azure AD and enforce the initial layer of filtering for a compliance administrator. Adaptive scopes and the policies that use them, are created and configured in Microsoft Purview. A compliance administrator can assign administrative units to an adaptive scope as initial filtering of users, and then further refine the filtering with the adaptive scope query.
+
+As an example, a compliance administrator is assigned administrative units for just Europe and North America. When they create an adaptive scope they can only select and assign these administrative units. As a result, they can't create an adaptive scope to contain users from other administrative units. They select the administrative unit for Europe and because they want the scope to include only users from France, they configure the adaptive scope query to select users from France.
 
 ### Maximums for adaptive policy scopes
 
