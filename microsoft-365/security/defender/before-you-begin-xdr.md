@@ -28,7 +28,7 @@ ms.date: 11/17/2022
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- This document outlines the key prerequisites you must meet and essential information you must know before purchasing the Microsoft Defender Experts for XDR service.
+This document outlines the key prerequisites you must meet and essential information you must know before purchasing the Microsoft Defender Experts for XDR service.
 
 ## Eligibility and licensing
 
@@ -37,12 +37,12 @@ Defender Experts for XDR is a separate service from your existing Defender produ
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
 - Azure Active Directory (Azure AD) Premium P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
-Aside from the requirements stated above, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
+Aside from the requirements stated previously, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
 - Microsoft Defender for Office 365 P2
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
-Defender Experts for XDR customers will also be assigned two Ask Defender Experts credits on the first of each month as part of the built-in Microsoft Defender Experts for Hunting service. They may use these credits to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+You'll also be assigned two **Ask Defender Experts** credits on the first of each month as part of the built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) service. You may use these credits to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
 
 [Learn more about Microsoft's commercial licensing terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA)
 
@@ -50,6 +50,7 @@ Defender Experts for XDR customers will also be assigned two Ask Defender Expert
 ## Access requirements
 
 Anyone from your organization can complete the [customer interest form](https://aka.ms/IWantDefenderExperts) for the Defender Experts for XDR service, however, you need to work with your Commercial Executive to transact the Defender Experts for XDR SKU.
+
 Defender Experts for XDR will request for certain roles and permissions for you to fully access the service capabilities. [Learn more](dex-xdr-permissions.md)
 
 ## Service availability and data protection
@@ -75,3 +76,7 @@ This service is available worldwide for our customers in our commercial public c
 
 ### Language
 This service is currently delivered in English language only.
+
+## Go to the next step
+
+[Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)

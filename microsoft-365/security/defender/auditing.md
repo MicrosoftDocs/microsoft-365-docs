@@ -1,7 +1,7 @@
 ---
-title: How to check audit logs for the times Microsoft Defender Experts signed into your tenant
+title: How to search the audit logs to check Microsoft Defender Experts investigations
 ms.reviewer:
-description: As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant
+description: As a tenant administrator, you can use Microsoft Purview to search the audit logs for the actions Microsoft Defender Experts did in your tenant to perform their investigations
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -30,16 +30,16 @@ ms.date: 05/29/2023
 
 As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they did there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
 
-Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview) is turned on by default for all Microsoft Defender Experts for XDR customers when paid licenses are assigned to the tenant. If you have a trial license, your service delivery manager will work with you to turn on Audit if it isn’t yet.
+[Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview) is turned on by default for all Microsoft Defender Experts for XDR customers when paid licenses are assigned to the tenant. If you have a trial license, work with your service delivery manager to turn on Audit if it isn’t yet.
 
 > [!NOTE]
-> Make sure you have the right [permissions](/microsoft-365/compliance/audit-log-search) to search for audit logs.
+> Make sure you have the right [permissions](/microsoft-365/compliance/audit-log-search#before-you-search-the-audit-log) to search for audit logs.
 
 ## Search the audit logs for actions performed by Defender Experts
 
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) to use [Audit New Search](/microsoft-365/compliance/audit-new-search).
 2. Provide a **Date and time range (UTC)**.
-3. Select the Workload and Record Type from the list shown in the table below to further narrow your search
+3. Select the **Workload** and **Record type** from the list shown in the following table to further narrow your search
 4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
 
 ![Screenshot of audit log search in Defender experts for XDR](../../media/xdr/audit.png)
@@ -61,15 +61,15 @@ Note that [Audit (Standard)](/microsoft-365/compliance/audit-solutions-overview)
 
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 
-1. Sign into the Microsoft Purview compliance portal to use Audit New Search.
-2. Provide a Date and time range (UTC).
-3. Under Workload, choose MicrosoftDefenderExperts.
-4. Select Search to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) to use [Audit New Search](/microsoft-365/compliance/audit-new-search).
+2. Provide a **Date and time range (UTC)**.
+3. Under **Workload**, choose _MicrosoftDefenderExperts_.
+4. Select **Search** to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
 ## Search the audit logs using a PowerShell script
 
 In addition to using Audit New Search in the Microsoft Purview compliance portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
 
-## Go to the next step
+## See also
 
 [Additional information](additional-information-xdr.md)
