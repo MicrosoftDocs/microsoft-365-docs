@@ -33,7 +33,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 - Try or buy Microsoft 365 Business Premium on your own; or
 - Work with a Microsoft partner.
 
-## [Sign up on your own](#tab/getown)
+## [Sign up on your own](#tab/GetOwn)
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -41,7 +41,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
 
-## [Work with a partner](#tab/partner)
+## [Work with a Microsoft partner](#tab/Partner)
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. If you're not already working with a solution provider, you can find one by following these steps: 
 
@@ -68,8 +68,6 @@ To complete the basic setup process, you can choose from several options availab
 - Work with a Microsoft partner who can help you get everything set up and configured.
 
 ##  [**Guided setup process**](#tab/Guided)
-
-## Guided setup
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video: 
 
@@ -112,9 +110,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 > [!IMPORTANT]
 > At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
-## [**Work with a Microsoft partner**](#tab/Partner)
-
-## Work with a Microsoft partner
+## [**Work with a Microsoft partner**](#tab/UsePartner)
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
