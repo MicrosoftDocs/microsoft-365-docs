@@ -54,7 +54,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 The regular expression Regex_uae_passport_number finds content that matches the pattern. 
 
-  ```xml
+```xml
   <!-- UAE Passport Number -->
       <Entity id="111b5e63-6f4e-47c6-99bc-dd95625a5acf" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
