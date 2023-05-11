@@ -1,6 +1,6 @@
 ---
 title: Learn about insider risk management settings
-description: Learn about insider risk management settings in Microsoft Purview
+description: Learn about insider risk management settings in Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -44,27 +44,13 @@ The following table describes each insider risk management setting and provides 
 |[Priority user groups](insider-risk-management-settings-priority-user-groups.md)|Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Use the **Priority user groups** setting to define the users in your organization that need closer inspection and more sensitive risk scoring. |
 |[Priority physical assets (preview)](insider-risk-management-settings-priority-physical-assets.md)|Identifying access to priority physical assets and correlating access activity to user events is an important component of your compliance infrastructure. These physical assets represent priority locations in your organization, such as company buildings, data centers, or server rooms. Insider risk activities may be associated with users working unusual hours, attempting to access these unauthorized sensitive or secure areas, and requests for access to high-level areas without legitimate needs.|
 |[Power Automate flows (preview)](insider-risk-management-settings-power-automate.md)|Microsoft Power Automate is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for insider risk management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.|
-|[Microsoft Teams (preview)](insider-risk-management-settings-teams.md)|You can enable Microsoft Teams support so that compliance analysts and investigators can use Teams to collaborate on insider risk management cases. Use Teams to:<p> - Coordinate and review response activities for cases in private Teams channels<p>- Securely share and store files and evidence related to individual cases<p>- Track and review response activities by analysts and investigators|
+|[Microsoft Teams (preview)](insider-risk-management-settings-teams.md)|You can enable Microsoft Teams support so that compliance analysts and investigators can use Teams to collaborate on insider risk management cases. Use Teams to:<br> - Coordinate and review response activities for cases in private Teams channels<br>- Securely share and store files and evidence related to individual cases<br>- Track and review response activities by analysts and investigators|
 |[Analytics](insider-risk-management-settings-analytics.md)|Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. |
-|[Admin notifications](insider-risk-management-settings-admin-notifications.md)|Use the **Admin notifications** setting to automatically send an email notification to selectable insider risk management role groups. You can:<p>- Send a notification email when the first alert is generated for a new policy<p>- Send a daily email when new high-severity alerts are generated<p>- Send a weekly email summarizing policies that have unresolved warnings|
+|[Admin notifications](insider-risk-management-settings-admin-notifications.md)|Use the **Admin notifications** setting to automatically send an email notification to selectable insider risk management role groups. You can:<br>- Send a notification email when the first alert is generated for a new policy<br>- Send a daily email when new high-severity alerts are generated<br>- Send a weekly email summarizing policies that have unresolved warnings|
 |[Inline alert customization](insider-risk-management-settings-inline-alert-customization.md)|Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alerts dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.|
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Next steps
-
-- [Learn more about the Privacy setting](insider-risk-management-settings-privacy.md)
-- [Learn more about the Policy indicators setting](insider-risk-management-settings-policy-indicators.md)
-- [Learn more about the Policy timeframes setting](insider-risk-management-settings-policy-timeframes.md)
-- [Learn more about the Intelligent detections setting](insider-risk-management-settings-intelligent-detections.md)
-- [Learn more about the Export alerts setting](insider-risk-management-settings-alerts.md)
-- [Learn more about the Priority user groups setting](insider-risk-management-settings-priority-user-groups.md)
-- [Learn more about the Priority physical assets (preview) setting](insider-risk-management-settings-priority-physical-assets.md)
-- [Learn more about the Power Automate flows (preview) setting](insider-risk-management-settings-power-automate.md)
-- [Learn more about the Microsoft Teams (preview) setting](insider-risk-management-settings-teams.md)
-- [Learn more about the Analytics setting](insider-risk-management-settings-analytics.md)
-- [Learn more about the Admin notifications setting](insider-risk-management-settings-admin-notifications.md)
-- [Learn more about the Inline alert customization setting](insider-risk-management-settings-inline-alert-customization.md)
 
 
 

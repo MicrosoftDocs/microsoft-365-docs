@@ -1,6 +1,6 @@
 ---
 title: Automate insider risk management actions with Microsoft Power Automate flows (preview)
-description: Learn how to automate Microsoft Purview Insider Risk Management actions with Microsoft Power Automate flows (preview)
+description: Learn how to automate Microsoft Purview Insider Risk Management actions with Microsoft Power Automate flows (preview).
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp

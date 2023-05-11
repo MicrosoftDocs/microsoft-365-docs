@@ -1,6 +1,6 @@
 ---
-title: Prioritize user groups for your insider risk management policies
-description: Learn about the Priority user groups settings for Microsoft Purview Insider Risk Management 
+title: Prioritize user groups for insider risk management policies
+description: Learn about the Priority user groups settings for Microsoft Purview Insider Risk Management. 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Prioritize user groups for your insider risk management policies
+# Prioritize user groups for insider risk management policies
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.

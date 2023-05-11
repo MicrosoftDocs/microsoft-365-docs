@@ -280,11 +280,11 @@
             href: insider-risk-management-settings-alerts.md
           - name: Priority user groups setting
             href: insider-risk-management-settings-priority-user-groups.md
-          - name: Priority physical assets (preview) setting
+          - name: Priority physical assets setting (preview)
             href: insider-risk-management-settings-priority-physical-assets.md
-          - name: Power Automate flows (preview) setting
+          - name: Power Automate flows setting (preview)
             href: insider-risk-management-settings-power-automate.md
-          - name: Microsoft Teams (preview) setting
+          - name: Microsoft Teams setting (preview)
             href: insider-risk-management-settings-teams.md
           - name: Analytics setting
             href: insider-risk-management-settings-analytics.md

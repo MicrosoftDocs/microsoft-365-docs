@@ -1,6 +1,6 @@
 ---
 title: Set policy timeframes in insider risk management
-description: Learn about the Policy timeframes settings in Microsoft Purview Insider Risk Management 
+description: Learn about the Policy timeframes settings in Microsoft Purview Insider Risk Management. 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp

@@ -1,6 +1,6 @@
 ---
 title: Identify priority physical assets for insider risk management policies
-description: Learn about the Priority physical assets (preview) settings for Microsoft Purview Insider Risk Management 
+description: Learn about the Priority physical assets (preview) settings for Microsoft Purview Insider Risk Management. 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp

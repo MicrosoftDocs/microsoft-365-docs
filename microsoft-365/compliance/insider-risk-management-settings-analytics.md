@@ -1,6 +1,6 @@
 ---
-title: Turn the Analytics setting on in insider risk management
-description: Learn about turning on the Analytics setting for Microsoft Purview Insider Risk Management to conduct an evaluation of potential insider risks and to get real-time analytics for indicator thresholds
+title: Enable analytics in insider risk management
+description: Learn about turning on the Analytics setting for Microsoft Purview Insider Risk Management to conduct an evaluation of potential insider risks and to get real-time analytics for indicator thresholds.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Turn the Analytics setting on in insider risk management
+# Enable analytics in insider risk management
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.

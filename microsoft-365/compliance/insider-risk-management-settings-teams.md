@@ -1,6 +1,6 @@
 ---
 title: Enable Microsoft Teams for collaborating on insider risk management cases
-description: Learn about enabling Microsoft Teams for collaborating on Microsoft Purview Insider Risk Management cases
+description: Learn about enabling Microsoft Teams for collaborating on Microsoft Purview Insider Risk Management cases.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp

@@ -1,6 +1,6 @@
 ---
 title: Set up global exclusions in insider risk management, adjust alert volume, and import Microsoft Defender alerts
-description: Learn about the Intelligent detections setting in Microsoft Purview Insider Risk Management 
+description: Learn about the Intelligent detections setting in Microsoft Purview Insider Risk Management. 
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
