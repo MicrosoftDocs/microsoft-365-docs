@@ -76,7 +76,7 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
 |source|Array [String]| Array of the registry paths or other locations used to determine the current device setting.
-|recommendedValue|Array [String]|Array of the recommended value per source in the ‘source’ property array (returned in the same order)
+|recommendedValue|Array [String]|Array of the recommended value for each source returned in the ‘source’ property array (value order corresponds with the source property array)
 |remediation|String| The recommended steps to remediate.
 |isCustom|Boolean| True if the configuration is customized, false if not.
 
