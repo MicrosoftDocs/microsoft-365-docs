@@ -43,7 +43,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you must have it turned on in the Defender portal for submissions to show up correctly.
+- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you must have it turned on in the Defender portal for user reports to show up correctly.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -90,7 +90,7 @@ For more information about user reported message settings in the Defender portal
    :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
-   > If you've [turned on reporting for Microsoft Purview Communication Compliance](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), you might also see **Inappropriate - Harassment, violence, nudity, and disturbing content** as an available selection in the **Select a problem** dropdown list.
+   > If you've [turned off reporting for Microsoft Purview Communication Compliance](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), you might not see any dropdown for selection at all. The end user will just be shown a confirmation popup. 
 
 3. In the confirmation dialog that opens, click **Close**.
 
