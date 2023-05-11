@@ -52,7 +52,7 @@ Analytics insights from scans are based on the same risk management activity sig
 
 ## Receive real-time guidance on configuring indicator threshold settings
 
-Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policies. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights from analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policies. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights from analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings-policy-indicators.md#indicator-level-settings).
 
 ## Enable analytics and start a scan of potential insider risks in your organization
 
@@ -99,7 +99,7 @@ To turn off insider risk analytics, you must be a member of the *Insider Risk Ma
 After you disable analytics:
 
 - Analytics insight reports will remain static and will not be updated for new risks. 
-- You won't be able to [see real-time analytics when you customize indicator threshold settings for your policies](#indicator-level-settings).
+- You won't be able to [see real-time analytics when you customize indicator threshold settings for your policies](insider-risk-management-settings-policy-indicators.md#indicator-level-settings).
 
 To turn off analytics:
 
