@@ -280,7 +280,7 @@ Before configuring a policy, define the following insider risk settings:
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md) article for step-by-step guidance.
-9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings-priority-physical-assets-preview.md) article for step-by-step guidance.
+9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings-priority-physical-assets.md) article for step-by-step guidance.
 10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings-teams.md) article for step-by-step guidance.
 11. Select **Save** to enable these settings for your insider risk policies.
 
