@@ -75,8 +75,8 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |complianceLevels|String|The compliance level of the benchmark where this configuration appears.
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
-|source|String| The registry path or other location used to determine the current device setting.
-|recommendedValue|String| The recommended value for each of the source inputs in ‘source’ property (by the same order)
+|source|Array [String]| Array of the registry paths or other locations used to determine the current device setting.
+|recommendedValue|Array [String]|Array of the recommended value per source in the ‘source’ property array (returned in the same order)
 |remediation|String| The recommended steps to remediate.
 |isCustom|Boolean| True if the configuration is customized, false if not.
 
