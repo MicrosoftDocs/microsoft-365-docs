@@ -28,35 +28,34 @@ description: "U.A.E identity card number sensitive information type entity defin
 
 ## Format
 
-Fifteen digits with optional hyphens and that must pass the Luhn check 
+Fifteen digits with optional hyphens and that must pass the Luhn check
 
 ## Pattern
 
-Fifteen digits pattern 
+Fifteen digits pattern
 
 - three digits  
-- optional hyphen 
-- four digits 
-- optional hyphen 
-- seven digits 
-- optional hyphen 
-- one digit 
+- optional hyphen
+- four digits
+- optional hyphen
+- seven digits
+- optional hyphen
+- one digit
 
 ## Checksum
 
-Luhn check 
+Luhn check
 
 ## Definition
 
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_uae_id_card_number finds content that matches the pattern. 
-- A keyword from Keyword_uae_id_card_number is found. 
+- The regular expression Regex_uae_id_card_number finds content that matches the pattern.
+- A keyword from Keyword_uae_id_card_number is found.
 
- 
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
-- The regular expression Regex_uae_id_card_number  finds content that matches the pattern. 
+- The regular expression Regex_uae_id_card_number  finds content that matches the pattern.
 
 ```xml
      <!-- UAE Identity Card Number -->
@@ -89,7 +88,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - insurance no
 - insurance#
 - insurance #
- التأمين رقم
- التأمينرقم#
-رقم الهوية
-رقم الهوية#
+- التأمين رقم
+- التأمينرقم#
+- رقم الهوية
+- رقم الهوية#
