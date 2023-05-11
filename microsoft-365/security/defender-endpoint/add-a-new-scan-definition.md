@@ -85,11 +85,18 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter|Type|Description
 :---|:---|:---
-ScanDefinitionIds|String|The scan Id. **Required**.
+scanType|Enum|The type of scan. Possible values are: "Windows", "Network".  **Required**.
+scanName|String|Name of the scan.  **Required**.
+isActive|Boolean|Status of whether the scan actively running.  **Required**.
+target|String| A comma separated list of targets to scan, either IP addresses or hostnames. **Required**.
+intervalInHours|Int|The interval at which the scan runs.  **Required**.
+targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address. **Required**.
+scannerAgent|Object|machine Id. **Required**.
+scanAuthenticationParams|Object|An object representing the authentication parameters, see [Authentication parameters object properties](./get-authenticated-scan-properties.md#authentication-parameters-object-properties) for expected fields. This property is mandatory when creating a new scan and is optional when updating a scan.
 
 ## Response
 
-If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
+If successful, this method returns 200 - Ok response code and the new or updated scan definition in the response body.
 
 ## Example request to add a new scan
 
@@ -109,38 +116,113 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 "targetType": "Ip",
 "scannerAgent": {
     "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
-    "machineName": "DESKTOP-TEST",
+},
 "scanAuthenticationParams": { 
     "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
     "type": "Kerberos", 
     "username": "username", 
     "domain": "password",
     "isGmsaUser": true
-        },
-    },
- },
+    }
+}
+```
+
+## Example response
+
+Here's an example of the response.
+
+```json
  {
-"scanType": "Network", 
-"scanName": "Test Network scan", 
-"isActive": true, 
-"target": "127.0.0.1", 
+"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
+    "id": "289224fb-1686-472c-9751-5555960854ca",
+    "scanType": "Windows",
+    "scanName": "Test Windows scan",
+    "isActive": true,
+    "target": "127.0.0.1",
+    "orgId": "0335a792-18d2-424b-aeed-559567054570",
+    "intervalInHours": 1,
+    "createdBy": "username@test.com",
+    "targetType": "Ip",
+    "scanAuthenticationParams": null,
+    "scannerAgent": {
+        "id": "0335a792-18d2-424b-aeed-559567054570_ eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineName": "DESKTOP-TEST",
+        "lastSeen": "2023-01-04T09:40:03.2787058Z",
+        "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
+        "scannerSoftwareVersion": "7.6.0.0",
+        "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
+        "mdeClientVersion": "10.8295.22621.1010"
+    },
+    "latestScan": {
+        "status": null,
+        "failureReason": null,
+        "executionDateTime": null
+    }
+
+}
+```
+
+## Example request to update a scan
+
+Here's an example of a request that updates a scan.
+
+```http
+PATCH  https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/289224fb-1686-472c-9751-5555960854ca 
+```
+
+```json
+{
+"scanName": "Test Update Windows scan", 
+"isActive": false, 
+"target": "127.0.0.2,127.0.0.3", 
 "intervalInHours": 1, 
 "targetType": "Ip",
-"scannerAgent": {
-    "machineId": "eb663a27678ik2f61bc268a79eeasdf450f77",
-    "machineName": "DESKTOP-TEST",
-"scanAuthenticationParams": {
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-        "type": "AuthPriv", 
-        "username": "username", 
-        "authProtocol": "authProtocol", 
-        "authPassword": "authPassword", 
-        "privProtocol": "privProtocol", 
-        "privPassword": "privPassword", 
-        "communityString": "community-string" 
-        },
-    },
+"scanAuthenticationParams": { 
+    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "domain": "password",
+    "isGmsaUser": true
+    }
  }
+
+```
+
+## Response example
+
+Here's an example of the response.
+
+```json
+{
+    "@odata.context": "https://localhost:1059/api/$metadata#DeviceAuthenticatedScanDefinitions/$entity",
+    "id": "289224fb-1686-472c-9751-5555960854ca",
+    "scanType": "Windows",
+    "scanName": "Test Update Windows scan",
+    "isActive": false,
+    "target": "127.0.0.2,127.0.0.3",
+    "orgId": "0335a792-18d2-424b-aeed-559567054570",
+    "intervalInHours": 1,
+    "createdBy": "userName@microsoft.com",
+    "targetType": "Ip",
+    "scanAuthenticationParams": null,
+    "scannerAgent": {
+        "id": "0335a792-18d2-424b-aeed-559567054570_eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+        "machineName": "DESKTOP-TEST",
+        "lastSeen": "2023-01-04T09:40:03.2787058Z",
+        "assignedApplicationId": "ae4a5cde-b4a1-4b76-8635-458b2cf15752",
+        "scannerSoftwareVersion": "7.6.0.0",
+        "lastCommandExecutionTimestamp": "2023-01-04T09:33:16Z",
+        "mdeClientVersion": "10.8295.22621.1010"
+    },
+    "latestScan": {
+        "status": null,
+        "failureReason": null,
+        "executionDateTime": null
+    }
+}
+
 ```
 
 ## Example request to delete scans
@@ -154,31 +236,5 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 ```json
 {
   "ScanDefinitionIds": ["td32f17af-5cc2-4e4e-964a-4c4ef7d216e2", "ab32g20af-5dd2-4a5e-954a-4c4ef7d216e2"],
-}
-```
-
-## Example request to update a scan
-
-Here's an example of a request that updates a scan.
-
-```http
-PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/a07c400a-f8e1-4329-ae66-7d3be65df0ec
-
-```
-
-```json
-{
-"scanName": "Test Network scan", 
-"intervalInHours": 8,
-"isActive": "True",
-"targetType": "Ip",
-"target": "10.5.0.8",
-"scanAuthenticationParams": { 
- "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-    "type": "Kerberos", 
-    "username": "username", 
-    "domain": "password",
-    "isGmsaUser": true
-    }
 }
 ```

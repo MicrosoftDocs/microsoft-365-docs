@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 5/8/2023
 ---
 
 # Get started using Attack simulation training
@@ -31,7 +31,7 @@ ms.date: 1/31/2023
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 Watch this short video to learn more about Attack simulation training.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMhvB]
@@ -58,12 +58,12 @@ Watch this short video to learn more about Attack simulation training.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, LAM, CHE, NOR, ZAF, ARE and DEU.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation training is available in the following regions: APC, EUR, and NAM, and also in the following countries: ARE, AUS, BRA, CAN, CHE, DEU, FRA, GBR, IND, JPN, KOR, LAM, NOR, QAT, SGP, SWE, and ZAF.
 
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
 
-- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization as described in this article. Attack simulation training is not yet available in GCC High or DoD environments.
+- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in GCC High or DoD environments.
 
 > [!NOTE]
 > Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
@@ -78,19 +78,111 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 - **Malware Attachment**: An attacker sends the recipient a message that contains an attachment. When the recipient opens the attachment, arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Link in Attachment**: This is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
+- **Link in Attachment**: This technique is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
 
-- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
-- **Drive-by-url**: An attacker sends the recipient a messages that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
+- **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
 - **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
 
 The URLs that are used by Attack simulation training are described in the following list:
 
+- <https://www.bankmenia.com>
+- <https://www.bankmenia.de>
+- <https://www.bankmenia.fr>
+- <https://www.bankmenia.it>
+- <https://www.bankmenia.org>
+- <https://www.banknown.de>
+- <https://www.banknown.fr>
+- <https://www.banknown.it>
+- <https://www.banknown.org>
+- <https://www.browsersch.com>
+- <https://www.browsersch.de>
+- <https://www.browsersch.fr>
+- <https://www.browsersch.it>
+- <https://www.browsersch.org>
+- <https://www.doctorican.de>
+- <https://www.doctorican.fr>
+- <https://www.doctorican.it>
+- <https://www.doctorican.org>
+- <https://www.doctrical.com>
+- <https://www.doctrical.de>
+- <https://www.doctrical.fr>
+- <https://www.doctrical.it>
+- <https://www.doctrical.org>
+- <https://www.doctrings.com>
+- <https://www.doctrings.de>
+- <https://www.doctrings.fr>
+- <https://www.doctrings.it>
+- <https://www.doctrings.org>
+- <https://www.exportants.com>
+- <https://www.exportants.de>
+- <https://www.exportants.fr>
+- <https://www.exportants.it>
+- <https://www.exportants.org>
+- <https://www.financerta.com>
+- <https://www.financerta.de>
+- <https://www.financerta.fr>
+- <https://www.financerta.it>
+- <https://www.financerta.org>
+- <https://www.financerts.com>
+- <https://www.financerts.de>
+- <https://www.financerts.fr>
+- <https://www.financerts.it>
+- <https://www.financerts.org>
+- <https://www.passwordle.de>
+- <https://www.passwordle.fr>
+- <https://www.passwordle.it>
+- <https://www.passwordle.org>
+- <https://www.prizeably.com>
+- <https://www.prizeably.de>
+- <https://www.prizeably.fr>
+- <https://www.prizeably.it>
+- <https://www.prizeably.org>
+- <https://www.resetts.de>
+- <https://www.resetts.fr>
+- <https://www.resetts.it>
+- <https://www.resetts.org>
+- <https://www.securembly.com>
+- <https://www.securembly.de>
+- <https://www.securembly.fr>
+- <https://www.securembly.it>
+- <https://www.securembly.org>
+- <https://www.securetta.de>
+- <https://www.securetta.fr>
+- <https://www.securetta.it>
+- <https://www.supportin.de>
+- <https://www.supportin.fr>
+- <https://www.supportin.it>
+- <https://www.supportres.de>
+- <https://www.supportres.fr>
+- <https://www.supportres.it>
+- <https://www.supportres.org>
+- <https://www.techidal.com>
+- <https://www.techidal.de>
+- <https://www.techidal.fr>
+- <https://www.techidal.it>
+- <https://www.techniel.de>
+- <https://www.techniel.fr>
+- <https://www.techniel.it>
+- <https://www.bankmenia.es>
+- <https://www.banknown.es>
+- <https://www.browsersch.es>
+- <https://www.doctorican.es>
+- <https://www.doctrical.es>
+- <https://www.doctrings.es>
+- <https://www.exportants.es>
+- <https://www.financerta.es>
+- <https://www.financerts.es>
+- <https://www.prizeably.es>
+- <https://www.resetts.es>
+- <https://www.securembly.es>
+- <https://www.securetta.es>
+- <https://www.supportin.es>
+- <https://www.supportres.es>
+- <https://www.techniel.es>
 - <https://www.mcsharepoint.com>
-- <https://www.attemplate.com>
-- <https://www.doctricant.com>
 - <https://www.mesharepoint.com>
 - <https://www.officence.com>
 - <https://www.officenced.com>
@@ -112,6 +204,21 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.templatent.com>
 - <https://www.templatern.com>
 - <https://www.windocyte.com>
+- <https://www.attemplate.com>
+- <https://www.doctricant.com>
+- <https://www.salarytoolint.com>
+- <https://www.prizesforall.com>
+- <https://www.payrolltooling.com>
+- <https://www.hrsupportint.com>
+- <https://www.docstoreinternal.com>
+- <https://www.docdeliveryapp.com>
+- <https://www.docstoreinternal.net>
+- <https://www.hardwarecheck.net>
+- <https://www.payrolltooling.net>
+- <https://www.prizegiveaway.net>
+- <https://www.salarytoolint.net>
+- <https://www.docdeliveryapp.net>
+
 
 > [!NOTE]
 > Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. While we work with many URL reputation vendors to always allow these simulation URLs, we don't always have full coverage (for example, Google Safe Browsing). Most vendors provide guidance that allows you to always allow specific URLs (for example, <https://support.google.com/chrome/a/answer/7532419>).
@@ -130,11 +237,11 @@ For step by step instructions on how to gain insights with reporting, see [Gain 
 
 ### Predicted compromise rate
 
-One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing messages comes along.
+One of the most crucial elements in a phishing simulation is the payload selection. If you're tracking only click-through as a quality metric, there's an incentive to decrease the click rate by selecting easier-to-spot phishing payloads. Eventually, it's less likely that the user will change their behavior when a real phishing message comes along.
 
 To combat the tendency to use low click rate payloads and to maximize educational returns, we've created a new piece of metadata for every global payload called the predicted compromise rate (PCR).
 
-PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. The formula is: users compromised / total number of users who receive the simulation. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
+PCR uses historical data across Microsoft 365 that predicts the percentage of people who will be compromised by the payload. PCR is an intelligent mechanism that's built on information like payload content, compromise rates (aggregated and anonymized), and payload metadata. PCR predicts a more accurate potential compromise rate when the payload is used within a simulation. The benefit of PCR comes from predicting actual vs. predicted click through for a given simulation and payload.
 
 You can also review the overall performance of your organization by measuring the difference between the predicted compromise rate and the actual compromise rate across simulations using the Training efficacy report.
 

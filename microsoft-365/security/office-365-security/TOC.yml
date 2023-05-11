@@ -152,7 +152,7 @@
          items:
          - name: Outbound spam protection
            href: outbound-spam-protection-about.md
-         - name: Configure outbound spam filtering
+         - name: Configure outbound spam policies
            href: outbound-spam-policies-configure.md
          - name: Control automatic external email forwarding
            href: outbound-spam-policies-external-email-forwarding.md
@@ -194,8 +194,6 @@
            href: safe-links-about.md
          - name: Set up Safe Links policies in Defender for Office 365
            href: safe-links-policies-configure.md
-         - name: Configure global settings for Safe Links in Defender for Office 365
-           href: safe-links-policies-global-settings-configure.md
        - name: Zero-hour Auto Purge (ZAP)
          items:
          - name: Zero-hour auto purge - protection against spam and malware
@@ -362,8 +360,6 @@
              href: air-custom-reporting.md
            - name: Email analysis in investigations
              href: email-analysis-investigations.md
-         - name: Recover from a ransomware attack
-           href: recover-from-ransomware.md
          - name: Detect and Remediate Illicit Consent Grants in Office 365
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365

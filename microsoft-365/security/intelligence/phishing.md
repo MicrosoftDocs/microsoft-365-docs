@@ -64,7 +64,7 @@ If in doubt, contact the business by known channels to verify if any suspicious 
 
 ## Software solutions for organizations
 
-- [Microsoft Edge](/microsoft-edge/deploy/index) and [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
+- [Microsoft Edge](/microsoft-edge/deploy/index) and [Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
 
 - [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
 

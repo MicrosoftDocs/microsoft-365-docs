@@ -68,7 +68,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -206,7 +206,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > [!IMPORTANT]
 >
 > - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
-> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 > - You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.

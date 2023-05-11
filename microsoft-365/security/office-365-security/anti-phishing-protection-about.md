@@ -39,7 +39,7 @@ ms.date: 11/30/2022
 
 - **Business email compromise (BEC)** uses forged trusted senders (financial officers, customers, trusted partners, etc.) to trick recipients into approving payments, transferring funds, or revealing customer data. Learn more by watching [this video](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
-- **Ransomware** that encrypts your data and demands payment to decrypt it almost always starts out in phishing messages. Anti-phishing protection can't help you decrypt encrypted files, but it can help detect the initial phishing messages that are associated with the ransomware campaign. For more information about recovering from a ransomware attack, see [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
+- **Ransomware** that encrypts your data and demands payment to decrypt it almost always starts out in phishing messages. Anti-phishing protection can't help you decrypt encrypted files, but it can help detect the initial phishing messages that are associated with the ransomware campaign. For more information about recovering from a ransomware attack, see [Ransomware incident response playbooks](/security/ransomware/).
 
 With the growing complexity of attacks, it's even difficult for trained users to identify sophisticated phishing messages. Fortunately, Exchange Online Protection (EOP) and the additional features in Microsoft Defender for Office 365 can help.
 
@@ -50,6 +50,8 @@ EOP (that is, Microsoft 365 organizations without Microsoft Defender for Office 
 - **Spoof intelligence**: Use the spoof intelligence insight to review detected spoofed senders in messages from external and internal domains, and manually allow or block those detected senders. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
 - **Anti-phishing policies in EOP**: Turn spoof intelligence on or off, turn unauthenticated sender indicators in Outlook on or off, and specify the action for blocked spoofed senders. For more information, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
+
+  **Honor the sender's DMARC policy when the message is detected as spoof** (currently in Preview): Control what happens to messages where the sender fails explicit [DMARC](email-authentication-dmarc-configure.md) checks and the DMARC policy is set to `p=quarantine` or `p=reject`. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
 - **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
 
