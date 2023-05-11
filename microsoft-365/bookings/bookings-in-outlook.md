@@ -207,10 +207,6 @@ Bookings with me integrates with your Outlook calendar and can only be used for 
 
 Also, Bookings with me won't create a new mailbox for each Bookings with me page.
 
-### Why is Bookings with me in preview?
-
-Bookings with me is in preview for all enterprise users worldwide. We're collecting feedback and making improvement while it is being integrated into scheduling experiences in Bookings and Outlook.  
-
 ### Who can access my public Bookings page?
 
 Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
