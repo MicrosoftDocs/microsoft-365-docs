@@ -150,6 +150,7 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**
 - **App**
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
@@ -158,6 +159,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -180,6 +182,7 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**: The same URL click protection actions as previously described for the [View data by URL click protection action](#view-data-by-url-click-protection-action-in-the-url-protection-report) view.
 - **App**
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
@@ -189,6 +192,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
