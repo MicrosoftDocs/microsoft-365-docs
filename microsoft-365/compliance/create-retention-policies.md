@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 05/09/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -251,6 +251,8 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+If you no longer need the retention settings that you've configured, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
 ## Troubleshooting retention policies
 
