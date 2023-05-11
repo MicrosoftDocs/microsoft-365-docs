@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## May 2023
+
+- (GA) Microsoft Defender Experts for XDR release is now generally available. Defender Experts for XDR augments your security operations center (SOC) by combining automation and Microsoft's security analyst expertise, helping you detect and respond to threats with confidence and improve your security posture. Microsoft Defender Experts for XDR is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for XDR, see [Overview of Microsoft Defender Experts for XDR](dex-xdr-overview.md) section.
+
 ## April 2023
 
 - (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
