@@ -52,7 +52,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
 
-- The regular expression Regex_uae_passport_number finds content that matches the pattern. 
+The regular expression Regex_uae_passport_number finds content that matches the pattern. 
 
   ```xml
   <!-- UAE Passport Number -->
