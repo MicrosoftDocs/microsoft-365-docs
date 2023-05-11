@@ -21,7 +21,7 @@ ms.collection:
 
 ## Definitions
 
-To provide clarity to the descriptions below on data residency functionality and behavior, it's necessary to have clear terms and definitions in order to better understand the capabilities that Microsoft provides in this area.
+In order to promote clarity in the capability descriptions on data residency functionality in this document, please refer to these terms.
 
 **Table 1: Definitions and Terms**
 
