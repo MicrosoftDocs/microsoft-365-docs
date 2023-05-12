@@ -31,6 +31,8 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 Compliance Manager now integrates with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance. This new integration provides customers with a single interface in Compliance Manager to help make it easier to manage compliance across the organization’s digital estate. Learn more about [multicloud support in Compliance Manager](compliance-manager-multicloud.md).
 
+Compliance Manager also features an integrated set of data connectors that can help you understand your compliance obligations across the many services you use in your organization. Connectors for Salesforce and Zoom are now available, with more coming soon. Learn more about [working with connectors in Compliance Manager](compliance-manager-connectors.md). 
+
 ## January 2023
 
 In preview: Compliance Manager has new improvement actions that correspond to actions taken in Microsoft Priva to bolster your organization's compliance with data privacy regulations. Learn more about [Priva](/privacy/priva/priva-overview) and get details about [automatic testing and monitoring of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing) in Compliance Manager.

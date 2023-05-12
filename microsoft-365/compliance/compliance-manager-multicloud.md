@@ -49,7 +49,8 @@ The services listed below can be assessed by Compliance Manager:
 
 In addition, Compliance Manager provides a [universal version of regulatory templates](compliance-manager-templates.md#regulations-overview) that allows you to track compliance with any unsupported service through manual implementation and testing.
 
-We’ll soon roll out a selection of data connectors built specifically for Compliance Manager that can support other non-Microsoft services such as Salesforce and Zoom.
+> [!TIP]
+> Compliance Manager has a selection of data connectors built specifically for Compliance Manager that can support other non-Microsoft services such as Salesforce and Zoom. Visit [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## Service subscriptions
 
