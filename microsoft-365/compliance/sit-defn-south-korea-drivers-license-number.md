@@ -58,13 +58,13 @@ NA
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
 
-- The regular expression Regex_south_korea_driver's_license_10digits or  Regex_south_korea_driver's_license_12digits finds content that matches the pattern. 
-- A keyword from Keyword_south_korea_driver's_license or Keywords_eu_driver's_license_number_common  is found. 
+- The regular expression `Regex_south_korea_driver's_license_10digits` or `Regex_south_korea_driver's_license_12digits` finds content that matches the pattern. 
+- A keyword from `Keyword_south_korea_driver's_license` or `Keywords_eu_driver's_license_number_common` is found. 
 
  
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters: 
 
-- The regular expression Regex_south_korea_driver's_license_12digits finds content that matches the pattern. 
+- The regular expression `Regex_south_korea_driver's_license_12digits` finds content that matches the pattern. 
 
 ```xml
       <!-- South Korea Driver's License Number -->
