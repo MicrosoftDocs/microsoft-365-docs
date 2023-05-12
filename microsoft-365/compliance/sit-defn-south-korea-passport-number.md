@@ -28,7 +28,7 @@ description: "South Korea passport number sensitive information type entity defi
 
 ## Format
 
-nine alphanumeric characters with only specific values allowed  
+nine alphanumeric characters; only specific values are allowed
 
 ## Pattern
 
