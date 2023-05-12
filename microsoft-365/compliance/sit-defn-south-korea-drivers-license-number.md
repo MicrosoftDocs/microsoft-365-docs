@@ -28,7 +28,7 @@ description: "South Korea driver's license number sensitive information type ent
 
 ## Format
 
-Ten or twelve digits with optional hyphens 
+10 or 12 digits with optional hyphens 
 
 ## Pattern
 
