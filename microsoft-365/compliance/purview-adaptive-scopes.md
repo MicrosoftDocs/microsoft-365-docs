@@ -44,9 +44,9 @@ For configuration information, see [Configuring adaptive scopes](#configure-adap
 
 ### How adaptive scopes work with Azure AD administrative units
 
-Administrative units are created and configured in Azure AD and enforce the initial layer of filtering for a compliance administrator. Adaptive scopes and the policies that use them, are created and configured in Microsoft Purview. A compliance administrator can assign administrative units to an adaptive scope as initial filtering of users, and then further refine the filtering with the adaptive scope query.
+Administrative units are created and configured in Azure AD and enforce the initial layer of filtering for a compliance administrator. Adaptive scopes and the policies that use them are created and configured in Microsoft Purview. A compliance administrator can assign administrative units to an adaptive scope as an initial filtering of users, and they can select only from the administrative units that they are assigned to manage. Then, the compliance administrator can further refine the filtering with the adaptive scope query.
 
-As an example, a compliance administrator is assigned administrative units for just Europe and North America. When they create an adaptive scope they can only select and assign these administrative units. As a result, they can't create an adaptive scope to contain users from other administrative units. They select the administrative unit for Europe and because they want the scope to include only users from France, they configure the adaptive scope query to select users from France.
+As an example, a compliance administrator is assigned two administrative units that contain users from Europe and North America, respectively. When they create an adaptive scope they can only select and assign these administrative units. As a result, they can't create an adaptive scope to contain users from other administrative units. They select the administrative unit for Europe and because they want the scope to include only users from France, they configure the adaptive scope query to select users from France. When just this adaptive scope is selected for a policy, the policy is applied just to users in France.
 
 ### Maximums for adaptive policy scopes
 
