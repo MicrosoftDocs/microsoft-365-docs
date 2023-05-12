@@ -374,6 +374,8 @@
               href: manage/teams-apps-work-on-outlook-and-m365.md  
             - name: Teams apps that only work on Teams
               href: manage/teams-apps-work-only-on-teams.md  
+            - name: SaaS Linked Apps
+              href: manage/saas-linked-apps.md  
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins

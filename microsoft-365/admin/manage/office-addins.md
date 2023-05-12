@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
+description: ""
 ---
 
 # Office Add-ins
@@ -234,5 +234,3 @@ Updates for add-ins happen as follows:
 
 > [!NOTE]
 > For Word, Excel, and PowerPoint use a [SharePoint App Catalog](https://learn.microsoft.com/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
-
-## Teams apps that work on Outlook and the Microsoft 365 App

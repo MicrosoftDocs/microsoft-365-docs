@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
+description: ""
 ---
 
 # Teams apps that work on Outlook and Microsoft 365
@@ -102,7 +102,7 @@ You can block an app for all users in your organization to restrict them from do
 When you choose to block an app, it will be blocked for all users in your organization. Blocking an app overrides any previous admin deployment or user installation in Microsoft 365 and Outlook so that the app can no longer be used by anyone in your organization.
 
 > [!NOTE]
-> Currently, the app will only be blocked in the Microsoft 365 app and Outlook. Teams will continue to honor the current setting for Teams Apps made in the Teams admin center and for Outlook add-ins made in the Exchange admin center. For more details, read [What happens to your existing settings for Teams and Outlook](). Need link. 
+> Currently, the app will only be blocked in the Microsoft 365 app and Outlook. Teams will continue to honor the current setting for Teams Apps made in the Teams admin center and for Outlook add-ins made in the Exchange admin center. For more details, read [What happens to your existing settings for Teams and Outlook](#what-happens-to-your-settings-on-teams-and-outlook).  
 
 ### How to unblock an app
 
@@ -161,9 +161,9 @@ The default tenant state will apply to the following apps:
 The default tenant state will not apply to the following apps:
 
 - Custom/LOB apps uploaded by the admin.
-    - When a custom/LOB app is uploaded by the admin via the Microsoft 365 admin center, all users in the organization will have access to install the app by default. Read more about how to upload a custom/LOB app here. Note to reviewer: Add link to custom apps section below.
+    - When a custom/LOB app is uploaded by the admin via the Microsoft 365 admin center, all users in the organization will have access to install the app by default. For more information, see the section about [how to upload a custom/LOB app](#upload-custom-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
         - Admins can continue to deploy the custom/LOB app to a selected set of users.
-        - Admins can also edit which users have access to install and use the custom/LOB app. Read more about how to do this here. Note to reviewer: Add link to custom apps section below.
+        - Admins can also edit which users have access to install and use the custom/LOB app. For more information, see the section about [how to upload a custom/LOB app](#upload-custom-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
 - Apps that have any user selections made by the admin.
     - The changes made by the admin as part of **How to manage the availability of an app in your organization** will be honored over the default state in the tenant. Once an admin specifies users for an app, this setting supersedes the tenant-wide default setting for that app.
 
@@ -175,15 +175,15 @@ As an example, the Foo Teams app recently upgraded to a Teams app that also work
 
 |&nbsp;|Impact on Teams client|Impact on Microsoft 365|Impact on Outlook client|
 |---|---|---|---|
-|**If you had previously blocked the Foo Teams App on Teams admin center**|Users in your organization cannot download and use Foo on Teams.|Users in your organization can download and use Foo Enhanced Teams App in Microsoft 365. This can be controlled by admins on the Microsoft 365 admin center.|Users in your organization can download and use Foo Enhanced Teams App on Outlook. This can be controlled by admins on the Microsoft 365 admin center.|
-|**If you had previously allowed the Foo Teams App on Teams admin center**|Users in your organization can download and use the Foo Enhanced Teams App on Teams.|Users in your organization can download and use Foo Enhanced Teams App in Microsoft 365. This can be controlled by admins on the Microsoft 365 admin center.|Users in your organization can download and use Foo Enhanced Teams App on Outlook. This can be controlled by admins on the Microsoft 365 admin center.|
+|**If you had previously blocked the Foo Teams App on the Teams admin center**|Users in your organization cannot download and use Foo on Teams.|Users in your organization can download and use Foo in the Microsoft 365 app. This can be controlled by admins on the Microsoft 365 admin center.|Users in your organization can download and use Foo in Outlook. This can be controlled by admins on the Microsoft 365 admin center.|
+|**If you had previously allowed the Foo Teams App on the Teams admin center**|Users in your organization can download and use the Foo in Teams.|Users in your organization can download and use Foo in the Microsoft 365 app. This can be controlled by admins on the Microsoft 365 admin center.|Users in your organization can download and use Foo in Outlook. This can be controlled by admins on the Microsoft 365 admin center.|
 
-Now that _Foo_ is an Enhanced Teams App, you can make changes to its availability from the Microsoft 365 admin center.
+Now that _Foo_ is a Teams App that also works on Outlook and the Microsoft 365 app, you can make changes to its availability from the Microsoft 365 admin center.
 
 |&nbsp;|Impact on Teams client|Impact on Microsoft 365|Impact on Outlook client|
 |---|---|---|---|
-|**If you block Foo Enhanced Teams App on Microsoft 365 admin center**|No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams admin center.|Users in your organization cannot download the Foo Enhanced Teams App in Microsoft 365, and cannot use any previously installed (by user/admin) Foo enhanced teams app.|Users in your organization cannot download the Foo Enhanced Teams App on Outlook, and cannot use any previously installed (by user/admin) Foo enhanced teams app.|
-|**If you unblock Foo Enhanced Teams App on Microsoft 365 admin center.**|No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams admin center.|Users in your organization can download and use Foo Enhanced Teams App on Microsoft 365. Users can use any previously installed (by user/admin) Foo Enhanced Teams App.|Users in your organization can download and use Foo Enhanced Teams App on Outlook. Users can use any previously installed (by user/admin) Foo Enhanced Teams App.|
+|**If you block Foo App in the Microsoft 365 admin center**|No impact. Users in your organization will continue to experience Teams behavior for Foo based on the admin settings in Teams admin center.|Users in your organization cannot download the Foo on the Microsoft 365 app, and cannot use any previously installed (by user/admin) Foo app.|Users in your organization cannot download the Foo App on Outlook, and cannot use any previously installed (by user/admin) Foo enhanced teams app.|
+|**If you unblock Foo in the Microsoft 365 admin center.**|No impact. Users in your organization will continue to experience Teams behavior for Foo based on the admin settings in Teams admin center.|Users in your organization can download and use Foo on the Microsoft 365 app. Users can use any previously installed (by user/admin) Foo app.|Users in your organization can download and use Foo in Outlook. Users can use any previously installed (by user/admin) Foo app.|
 
 ## Upload custom Teams apps that work on Outlook and the Microsoft 365 App
 
@@ -196,7 +196,7 @@ You can also upload custom line of business apps and deploy/pre-install them for
 5. Select **Next** to view the **Accept permission request** page. The app capabilities and permissions of the apps are listed. If the app needs consent, select **Accept permissions**. Only a global administrator can give consent.
 6. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the **Overview** tab by choosing **View this deployment**.
 
-Note that whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. Read more about how to do it here. Note to reviewer: Add link to how to manage availability section above.  
+Note that whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. For more details, see the section about [how to manage availability of an app in your organization](#how-to-manage-the-availability-of-an-app-in-your-organization).  
 
 > [!NOTE]
 > When uploading and deploying a custom app, it will only be pre-installed for selected users/groups on Outlook and the Microsoft 365 App. To manage how it is accessed by users on Teams, please visit Teams admin center.
