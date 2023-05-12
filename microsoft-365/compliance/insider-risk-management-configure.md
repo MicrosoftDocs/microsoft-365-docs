@@ -255,34 +255,7 @@ OCR settings do not apply to forensic evidence clips in insider risk management.
 
 ## Step 5 (required): Configure insider risk settings
 
-[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, intelligent detections, and more.
-
-Before configuring a policy, define the following insider risk settings:
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
-2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
-3. On the **Policy indicators** page, select the alert indicators you want to apply to all insider risk policies.
-
-    > [!IMPORTANT]
-    > In order to receive alerts for potentially risky activities as defined in your policies, you must select one or more indicators. If indicators aren't configured in Settings, the indicators won't be selectable in insider risk policies.
-
-4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings-policy-timeframes.md) to go into effect for a user when they trigger a match for an insider risk policy.
-5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
-    - [File activity detection](insider-risk-management-settings-intelligent-detections.md#file-activity-detection)
-    - [Alert volume](insider-risk-management-settings-intelligent-detections.md#alert-volume)
-    - [Microsoft Defender for Endpoint alert statuses](insider-risk-management-settings-intelligent-detections.md#microsoft-defender-for-endpoint-alert-statuses)
-    - [Domains](insider-risk-management-settings-intelligent-detections.md#domains)
-    - [Sensitive info type exclusion](insider-risk-management-settings-intelligent-detections.md#sensitive-info-type-exclusions-preview)
-    - [Trainable classifiers exclusion](insider-risk-management-settings-intelligent-detections.md#trainable-classifier-exclusion-preview)
-    - [File path exclusions](insider-risk-management-settings-intelligent-detections.md#file-path-exclusions)
-    - [Site exclusions](insider-risk-management-settings-intelligent-detections.md#site-exclusions)
-    - [Keyword exclusion](insider-risk-management-settings-intelligent-detections.md#keyword-exclusion)
-    
-6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
-7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
-8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md) article for step-by-step guidance.
-9. On the **Priority assets page**, configure priority assets to use data from your physical control and access platform imported by the Physical badging connector. See the [Getting started with insider risk management settings](insider-risk-management-settings-priority-physical-assets.md) article for step-by-step guidance.
-10. On the **Microsoft Teams** page, enable Microsoft Teams integration with insider risk management to automatically create a team for case or user collaboration. See the [Getting started with insider risk management settings](insider-risk-management-settings-teams.md) article for step-by-step guidance.
-11. Select **Save** to enable these settings for your insider risk policies.
+[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Settings** button located at the top of insider risk management pages. These settings control privacy, indicators, intelligent detections, and more. [Learn more about settings to consider before you creating a policy](insider-risk-management-settings.md). 
 
 ## Step 6 (required): Create an insider risk management policy
 
