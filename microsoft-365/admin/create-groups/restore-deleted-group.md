@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: "A deleted group is retained for 30 days and you can still restore the group. After 30 days, the group and its content is permanently deleted."
+description: "A deleted group is retained for 30 days and you can still restore the group. After 30 days, the group and its content are permanently deleted."
 ---
 
 # Restore a deleted Microsoft 365 group
