@@ -6,10 +6,10 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 05/01/2023
+ms.date: 05/09/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -39,6 +39,10 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## Top 10 ways to secure your business data
+
+
+:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" lightbox="media/top-10-ways-to-secure-data.png":::
+
 
 1. [Use multi-factor authentication](#1-use-multi-factor-authentication).
 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts).
@@ -179,14 +183,14 @@ Microsoft 365 Business Premium also includes:
 - [Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), with [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) for Microsoft Teams, SharePoint, and OneDrive.
 - [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection), with capabilities to discover, classify, protect, and govern sensitive information.
 
-See the following articles: 
+See the following resources: 
 
-- [Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
+- [Adjust sharing settings for SharePoint and OneDrive files and folders](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
@@ -223,7 +227,7 @@ Microsoft 365 Business Premium also includes [Azure Information Protection Plan 
 
 See the following articles:
 
-- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#manage-calendar-sharing) 
+- [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#5-manage-calendar-sharing)
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 | Subscription | Recommendations |

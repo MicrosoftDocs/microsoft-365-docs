@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 04/03/2023
+ms.date: 05/11/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -64,7 +64,7 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
-- **Outlook for Windows**: Rolling out to Current Channel, version 2302+
+- **Outlook for Windows**: Current Channel, version 2302+
 - **Outlook for Mac**: Version 16.70+
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
@@ -76,6 +76,8 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 > [!IMPORTANT]
 > If meeting participants or organizers don't use a Teams client that meets these requirements, the configured label meeting options can't be enforced for these users.
+
+Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) can't be used to protect calendar items, Teams meetings, and chat.
 
 ## Limitations
 

@@ -4,7 +4,7 @@
       href: index.md
     - name: What's new
       href: m365bp-mdb-whats-new.md
-    - name: Productivity and security 
+    - name: Why choose Microsoft 365 Business Premium? 
       href: why-choose-microsoft-365-business-premium.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -16,13 +16,9 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
-      - name: Get Microsoft 365 Business Premium
-        href: get-microsoft-365-business-premium.md
-      - name: Set up Microsoft 365 Business Premium
-        href: m365bp-setup.md
-      - name: Get Microsoft 365 for Campaigns
-        href: get-microsoft-365-campaigns.md
-      - name: Set up Microsoft 365 Business for Campaigns
+      - name: Microsoft 365 Business Premium
+        href: m365-business-premium-setup.md
+      - name: Microsoft 365 for Campaigns
         href: m365-campaigns-setup.md
   - name: Boost your security protection
     items: 
@@ -50,7 +46,7 @@
       - name: Install Microsoft 365 Apps on devices
         href: m365bp-users-install-m365-apps.md
       - name: Protect unmanaged devices
-        href: m365bp-protect-pcs-macs.md
+        href: m365bp-users-protect-unmanaged-devices.md
   - name: Use email securely
     items: 
       - name: Overview
@@ -111,6 +107,8 @@
       href: m365bp-maintain-environment.md
     - name: Administration guide
       href: m365bp-admin-guide.md
+    - name: Security administration guide
+      href: m365bp-security-admin-guide.md
     - name: Security operations guide
       href: m365bp-security-operations-guide.md
 - name: Reference
@@ -129,10 +127,10 @@
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus
       href: m365bp-threats-detected-defender-av.md
+    - name: Endpoint security in Microsoft Intune
+      href: /mem/intune/protect/endpoint-security-policy
     - name: Intune admin roles
       href: m365bp-intune-admin-roles-in-the-mac.md
-    - name: Map protection features to Intune settings
-      href: m365bp-map-protection-features-to-intune-settings.md
     - name: Windows Autopilot scenarios and capabilities
       href: /mem/autopilot/windows-autopilot-scenarios
 
