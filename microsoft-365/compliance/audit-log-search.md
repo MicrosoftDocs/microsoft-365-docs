@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -43,31 +43,33 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 |Dynamics 365|CRM|
 |eDiscovery (Standard + Premium)|Discovery, AeD|
+|Encrypted message portal|OMEPortal|
 |Exact Data Match|MipExactDataMatch|
 |Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated|
 |Forms|MicrosoftForms|
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
+|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
 |Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
-|Microsoft Teams|MicrosoftTeams|
 |Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
+|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+|Microsoft Teams|MicrosoftTeams|
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
 |Power Apps|PowerAppsApp, PowerAppsPlan|
 |Power Automate|MicrosoftFlow|
 |Power BI|PowerBIAudit|
 |Quarantine|Quarantine|
-|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 |Sensitive information types|DlpSensitiveInformationType|
 |Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
-|Encrypted message portal|OMEPortal|
 |SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation|
 |Stream|MicrosoftStream|
+|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
 |Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 |Viva Goals|Viva Goals|
 |Workplace Analytics|WorkplaceAnalytics|
 |Yammer|Yammer|
-|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
+
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
 
