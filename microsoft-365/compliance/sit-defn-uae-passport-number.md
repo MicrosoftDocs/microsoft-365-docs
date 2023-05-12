@@ -28,7 +28,7 @@ description: "U.A.E passport number sensitive information type entity definition
 
 ## Format
 
-Nine alphanumeric characters, with only specific values allowed for letters. All nine characters should not be digits; include letters.
+nine alphanumeric characters that must include letters of specific values
 
 ## Pattern
 
