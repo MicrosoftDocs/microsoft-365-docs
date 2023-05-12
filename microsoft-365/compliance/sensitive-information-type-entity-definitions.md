@@ -24,7 +24,7 @@ description: "There are many sensitive information types that are ready for you 
 
 # Sensitive information type entity definitions
 
-This article is a list of all sensitive information type (SIT) entity definitions. Each link takes you to the definition of that specific SIT  and shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
+This article is a list of all sensitive information type (SIT) entity definitions. Each link takes you to the definition of that specific SIT  and shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md).
 
 > [!NOTE]
 > Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
@@ -241,6 +241,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Luxemburg passport number](sit-defn-luxemburg-passport-number.md)
 - [Luxemburg physical addresses](sit-defn-luxemburg-physical-addresses.md)
 - [Malaysia identification card number](sit-defn-malaysia-identification-card-number.md)
+- [Malaysia passport number](sit-defn-malaysia-passport-number.md)
 - [Malta driver's license number](sit-defn-malta-drivers-license-number.md)
 - [Malta identity card number](sit-defn-malta-identity-card-number.md)
 - [Malta passport number](sit-defn-malta-passport-number.md)
@@ -286,6 +287,7 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Russia passport number domestic](sit-defn-russia-passport-number-domestic.md)
 - [Russia passport number international](sit-defn-russia-passport-number-international.md)
 - [Saudi Arabia National ID](sit-defn-saudi-arabia-national-id.md)
+- [Singapore passport number](sit-defn-singapore-passport-number.md#singapore-passport-number)
 - [Singapore national registration identity card (NRIC) number](sit-defn-singapore-national-registration-identity-card-number.md)
 - [Slack access token](sit-defn-slack-access-token.md)
 - [Slovakia driver's license number](sit-defn-slovakia-drivers-license-number.md)
@@ -298,6 +300,8 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Slovenia tax identification number](sit-defn-slovenia-tax-identification-number.md)
 - [Slovenia Unique Master Citizen Number](sit-defn-slovenia-unique-master-citizen-number.md)
 - [South Africa identification number](sit-defn-south-africa-identification-number.md)
+- [South Korea driver's license number](sit-defn-south-korea-drivers-license-number.md)
+- [South Korea passport number](sit-defn-south-korea-passport-number.md)
 - [South Korea resident registration number](sit-defn-south-korea-resident-registration-number.md)
 - [Spain DNI](sit-defn-spain-dni.md)
 - [Spain driver's license number](sit-defn-spain-drivers-license-number.md)
@@ -322,6 +326,8 @@ This article is a list of all sensitive information type (SIT) entity definition
 - [Turkey national identification number](sit-defn-turkey-national-identification-number.md)
 - [Turkey physical addresses](sit-defn-turkey-physical-addresses.md)
 - [Types of medication](sit-defn-types-of-medication.md)
+- [U.A.E. identity card number](sit-defn-uae-identity-card-number.md)
+- [U.A.E. passport number](sit-defn-uae-passport-number.md)
 - [U.K. driver's license number](sit-defn-uk-drivers-license-number.md)
 - [U.K. electoral roll number](sit-defn-uk-electoral-roll-number.md)
 - [U.K. national health service number](sit-defn-uk-national-health-service-number.md)
