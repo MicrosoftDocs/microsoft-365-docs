@@ -20,7 +20,7 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Learn how to use data loss prevention on premises repositories location to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
+description: "Learn how to use data loss prevention on premises location repositories to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
 # Use the data loss prevention on-premises repositories location
@@ -40,15 +40,15 @@ Data from DLP surfaces in several areas
 
 #### Activity explorer
 
- DLP reports rule matches in [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
+ DLP reports rule matches are available in [Activity Explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
 
 #### Microsoft 365 Audit log
 
-The DLP rule matches are also available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+The DLP rule matches are also available in the Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### AIP
 
-Discovery data is available in a local report in csv format which is stored under:
+Discovery data is available in a local report in csv format, which is stored under:
 
 **%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report**.
 
@@ -66,7 +66,7 @@ Discovery data is available in a local report in csv format which is stored unde
 
 ### Scenario: Enforce DLP rule
 
-If you want to enforce DLP rules on scanned files, enforcement must be enabled on both the content scan job and at the policy level in DLP.
+If you want to enforce DLP rules on scanned files, enforcement must be enabled both on the content scan job and at the policy level in DLP.
 
 #### Configure DLP to enforce policy actions
 
