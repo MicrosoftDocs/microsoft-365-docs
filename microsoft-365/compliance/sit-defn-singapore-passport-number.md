@@ -33,7 +33,7 @@ nine alphanumeric characters with only specific values for letters
 ## Pattern
 
 - a letter e/E followed by  
-- 7 digits followed by  
+- seven digits followed by  
 - a letter 
 
 ## Checksum
