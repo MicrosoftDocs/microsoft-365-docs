@@ -33,6 +33,8 @@ Compliance analysts and investigators can use Microsoft Teams to collaborate on 
 - Securely share and store files and evidence related to individual cases
 - Track and review response activities by analysts and investigators
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 After Teams is enabled for insider risk management, a dedicated team is created every time an alert is confirmed and a case is created. By default, the team automatically includes all members of the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups (up to 100 initial users). Additional organization contributors can be added to the team after it's created and as appropriate. 
 
 For existing cases created before enabling Teams, analysts and investigators can choose to create a new team when working on a case, if needed. Once you resolve the associated case in insider risk management, the team is automatically archived (moved to hidden and read-only).

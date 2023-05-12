@@ -33,6 +33,8 @@ When you turn on the **Admin notifications** setting in Microsoft Purview Inside
 - Send a daily email when new high-severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
 - Send a weekly email summarizing policies that have unresolved warnings.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admins* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
 
 To disable admin and analytics notifications:

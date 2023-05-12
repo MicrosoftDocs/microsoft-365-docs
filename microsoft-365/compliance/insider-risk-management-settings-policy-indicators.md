@@ -31,6 +31,8 @@ Insider risk policy templates in Microsoft Purview Insider Risk Management defin
 
 Signals are collected and alerts are triggered by policies when users perform activities related to indicators. 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Types of events and indicators
 
 Insider risk management uses different types of events and indicators to collect signals and create alerts:

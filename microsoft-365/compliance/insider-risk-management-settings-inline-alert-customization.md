@@ -29,6 +29,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 Inline alert customization in Microsoft Purview Insider Risk Management allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admins* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
 
 When enabled, analysts and investigators can select **Reduce alerts for this activity** for an alert on the **Alert dashboard** and can view details about the risk management activity and indicators associated with the alert. Additionally, the current policy thresholds are displayed for the number of events used to create low, medium, and high severity alerts. If **Reduce alerts for this activity** is selected and a previous policy edit has been made that changes the threshold or has removed the associated indicator, you'll see a notification message detailing previous changes to the policy.

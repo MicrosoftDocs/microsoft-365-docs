@@ -32,6 +32,8 @@ Enabling Microsoft Purview Insider Risk Management analytics offers two importan
 - Conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies.
 - Receive real-time guidance on configuring indicator threshold settings.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Conduct an evaluation of insider risks in your organization
 
 Microsoft Purview Insider Risk Management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you might want to configure. Analytics scans offer the following advantages for your organization:

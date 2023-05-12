@@ -29,6 +29,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 You can use the **Intelligent detections** setting in Microsoft Purview Insider Risk Management to set up global exclusions. For example, you might want to exclude certain file types or domains from being scored for risk. Use can also use the **Intelligent detections** setting to adjust alert volume or import Microsoft Defender for Endpoint alerts. 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Ignore email signature attachments (preview)
 
 One of the main sources of 'noise' in insider risk management policies is images in email signatures, which are often detected as attachments in emails. This can lead to false positives of users sending potentially confidential files via email. If the *Sending email with attachments to recipients outside the organization* indicator is selected, the attachment is scored like any other email attachment sent outside the organization, even if the only thing in the attachment is the email signature. You can exclude email signature attachments from being scored in this situation by turning on the **Ignore email signature attachments** setting.

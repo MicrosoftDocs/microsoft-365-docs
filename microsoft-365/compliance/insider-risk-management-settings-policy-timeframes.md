@@ -35,6 +35,8 @@ Policy timeframes in Microsoft Purview Insider Risk Management allow you to defi
    > [!NOTE]
    > For email activities, the past activity detection period is 10 days. 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Set policy timeframes
 
 1. Select the **Settings** button, and then select **Policy timeframes**.

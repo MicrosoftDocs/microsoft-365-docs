@@ -36,6 +36,8 @@ Protecting the privacy of users that have policy matches in Microsoft Purview In
 
 - **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Change the Privacy setting
 
 1. In insider risk management, select the **Settings** button.

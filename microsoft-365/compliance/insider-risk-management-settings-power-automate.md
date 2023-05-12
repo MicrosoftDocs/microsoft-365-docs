@@ -29,6 +29,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for Microsoft Purview Insider Risk Management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 Customers with Microsoft 365 subscriptions that include insider risk management don't need additional Power Automate licenses to use the recommended insider risk management Power Automate templates. These templates can be customized to support your organization and cover core insider risk management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft Purview connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need more Power Automate licenses.
 
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
