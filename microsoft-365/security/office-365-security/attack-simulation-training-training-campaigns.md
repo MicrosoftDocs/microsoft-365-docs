@@ -421,7 +421,7 @@ If you select a user from the list by clicking anywhere in the row other than th
   - **Training completed date**
 
 > [!TIP]
-> To see details about other users in the Training campaign without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other users in the Training campaign without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 #### Details tab
 

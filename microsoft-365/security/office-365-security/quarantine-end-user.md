@@ -182,7 +182,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Take action on quarantined email
 
