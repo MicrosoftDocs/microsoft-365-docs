@@ -339,9 +339,9 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
 - **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-phishing-policies) section.
 To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
 
-Select ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the policies by **Time range** (creation date) or **Status**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the policies by **Time range** (creation date) or **Status**.
 
-Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific anti-phishing policies.
+Use the :::image type="icon" source="../../media/search-icon.png" border="false"::: **Search** box and a corresponding value to find specific anti-phishing policies.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
