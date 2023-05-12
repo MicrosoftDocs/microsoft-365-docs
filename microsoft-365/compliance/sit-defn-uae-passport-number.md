@@ -32,7 +32,7 @@ nine alphanumeric characters that must include letters of specific values
 
 ## Pattern
 
-Nine alphanumeric characters, chosen from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z.
+nine alphanumeric characters from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z
 
 ## Checksum
 
