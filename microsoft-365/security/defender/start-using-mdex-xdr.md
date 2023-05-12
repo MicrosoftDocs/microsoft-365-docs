@@ -52,6 +52,9 @@ The **Determination** field corresponding to each classification is also updated
 
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then the incident's **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and the **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These updates are posted in the incident’s **Comments and history** flyout panel.
 
+> [!NOTE]
+> Incident notes or comments are one-way posts. Defender Experts can’t respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
+
 Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
 
 - If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident’s [Guided response](#how-to-use-guided-response-in-microsoft-365-defender) flyout panel in your Microsoft 365 Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
@@ -169,7 +172,7 @@ The **Incidents by severity** and **Incidents by category** sections break down 
 
 The **Average incident resolution time** section displays a bar chart of the average time, in minutes, our experts spent investigating and closing incidents in your environment and the average time you spent performing the recommended guided response actions.
 
-If you’ve set Defender Experts for XDR to have **Security Reader** access, the **Average incident resolution time** section also displays the estimated **Potential time savings** you could realize if you let our experts  take managed remediation actions on your behalf by providing them the [additional permissions](get-started-xdr.md#grant-permissions-to-our-experts) to do so. The potential time savings are derived by calculating the total time it took you to complete recommended guided response actions after our experts issued them to you during your selected date range. Otherwise, if the service has **Security Operator** access, this report section displays the estimated time you already saved by granting us permission to take managed remediation actions on your behalf. To change access levels, select **Edit permissions**.
+If you’ve set Defender Experts for XDR to have **Security Reader** access, the **Average incident resolution time** section also displays the estimated **Potential time savings** you could realize if you let our experts take managed remediation actions on your behalf by [providing them the permissions](get-started-xdr.md#grant-permissions-to-our-experts) to do so. The potential time savings are derived by calculating the total time it took you to complete recommended guided response actions after our experts issued them to you during your selected date range. Otherwise, if the service has **Security Operator** access, this report section displays the estimated time you already saved by granting us permission to take managed remediation actions on your behalf. To change access levels, select **Edit permissions**.
 
 ## Collaborate with a trusted advisor
 
@@ -178,10 +181,8 @@ The service delivery manager (SDM) is responsible for managing the overall relat
 The SDM provides the following services:
 
 - Service readiness support
-
   - Educate customers about the end-to-end service experience, from signup to regular operations and escalation process.
   - Help establish a service-ready security posture, including guidance on required controls and policy updates.
-
 - Service operations support
   - Provide tailored service delivery content and reporting, including periodic business reviews.
   - Serve as a single point of contact for feedback and escalations related to Defender Experts Service.
