@@ -24,17 +24,15 @@ description: "U.A.E passport number sensitive information type entity definition
 
 # U.A.E. passport number
 
- Tip
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
-nine alphanumeric characters, with only specific values allowed for letters. All nine characters should also not be digits.
+Nine alphanumeric characters, with only specific values allowed for letters. All nine characters should also not be digits.
 
 ## Pattern
 
-nine alphanumeric characters, chosen from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z.
+Nine alphanumeric characters, chosen from numerals 0–9 and letters C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y, Z.
 
 ## Checksum
 
