@@ -53,7 +53,7 @@ The **Determination** field corresponding to each classification is also updated
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then the incident's **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and the **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These updates are posted in the incident’s **Comments and history** flyout panel.
 
 > [!NOTE]
-> Incident notes or comments are one-way posts. Defender Experts can’t respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
+> Incident comments are one-way posts. Defender Experts can’t respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
 
 Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
 
