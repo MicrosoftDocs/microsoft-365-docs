@@ -111,7 +111,6 @@ To filter the results, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
-  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -130,7 +129,6 @@ To filter the results, select :::image type="icon" source="../../media/m365-cc-s
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
-  - **Data loss prevention rule**
 
 When you're finished on the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -202,7 +200,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ### Take action on quarantined email
 
@@ -513,7 +511,7 @@ In the details flyout that opens, the following information is available:
 To take action on the file, see the next section.
 
 > [!TIP]
-> To see details about other quarantined files without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other quarantined files without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ### Take action on quarantined files
 
@@ -656,7 +654,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ### Take action on quarantined messages in Microsoft Teams
 
