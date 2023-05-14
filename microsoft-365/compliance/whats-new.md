@@ -75,6 +75,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
 - **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
+- **General availability (GA)**: Data Loss Prevention policies in Power BI to automatically detect sensitive infromation as it is being uploaded into Power BI and take immediate remediation actions. [Learn about Data Loss Prevention policies in Power BI)](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-powerbi-get-started?view=o365-worldwide)
 
 ### Insider risk management
 
