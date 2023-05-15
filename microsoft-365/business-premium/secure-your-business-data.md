@@ -231,7 +231,7 @@ See the following articles:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Premium](index.md) | 1. Use Outlook and Exchange Online for email and calendars.<br/>2. [Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online for email and calendars. | 
 
 ### How to prevent calendar oversharing
