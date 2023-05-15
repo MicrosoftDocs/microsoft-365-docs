@@ -39,9 +39,9 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 
 > [!NOTE]
-> The following parameters also collect screenshots during the log capture:
->
-> -l, -h, -c, -i, -a, -v, and -t
+> You can use '-g' flag specific datacenter region to validate URLs for even without being onboarded to that region<br>
+> For example:<br>
+> 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 
