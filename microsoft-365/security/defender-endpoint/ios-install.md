@@ -231,7 +231,8 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
-[!NOTE] Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
+> [!NOTE] 
+> Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
 
 3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
