@@ -34,11 +34,14 @@ description: "Learn best practices to protect your business from ransomware, phi
 
 ## Top 10 ways to secure your business data
 
+:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" :::
+
 Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more security capabilities, such as advanced threat protection for devices (also referred to as endpoints), email, and collaboration, and information protection. For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
-:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" lightbox="media/top-10-ways-to-secure-data.png":::
 
-| Step | Recommendations by subscription |
+The following table summarizes recommendations by subscription for securing your business data:
+
+| Step | Recommendations |
 |---|---|
 | [1. Use multi-factor authentication](#1-use-multi-factor-authentication). <br/><br/>*See [What MFA is and why it matters](#what-mfa-is-and-why-it-matters).* | Microsoft 365 Business Basic or Standard: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).<br/><br/>Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | [2. Protect your administrator accounts](#2-protect-your-administrator-accounts).<br/><br/>*See [Why you should protect admin accounts](#why-you-should-protect-admin-accounts).* | Microsoft 365 Business Basic, Standard, or Premium: [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
