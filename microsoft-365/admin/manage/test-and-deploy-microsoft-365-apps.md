@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
+description: "An overview of the Integrated apps portal in the Microsoft 365 admin center."
 ---
 
 # Get started with Integrated apps
