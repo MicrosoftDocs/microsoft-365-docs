@@ -132,7 +132,6 @@ See the following articles:
 - [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
 - [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
 
-
 ## 5. Train everyone on email best practices
 
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
@@ -141,7 +140,7 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
 
-### How 
+### Why and how to protect email content
 
 Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. 
 
@@ -168,6 +167,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>[Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>[Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>[Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use Microsoft Teams](create-teams-for-collaboration.md).<br/>(*Defender for Office 365 can be added on*) | 
+
+### How to collaborate and share more securely
 
 The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it.
 
@@ -197,6 +198,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 | [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
+### Why and how to adjust sharing settings for SharePoint and OneDrive
+
 Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. 
 
 Microsoft 365 Business Basic, Standard, and Premium include OneDrive and SharePoint.
@@ -219,6 +222,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
+
+### Why users should use Microsoft 365 Apps
 
 Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.
 
