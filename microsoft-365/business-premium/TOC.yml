@@ -2,6 +2,8 @@
   items: 
     - name: Overview
       href: index.md
+    - name: Top 10 ways to secure your business data
+      href: secure-your-business-data.md
     - name: What's new
       href: m365bp-mdb-whats-new.md
     - name: Why choose Microsoft 365 Business Premium? 
@@ -113,8 +115,6 @@
       href: m365bp-security-operations-guide.md
 - name: Reference
   items:
-    - name: Top 10 ways to secure your business data
-      href: secure-your-business-data.md
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
