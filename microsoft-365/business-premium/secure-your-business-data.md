@@ -251,7 +251,9 @@ The following table summarizes recommendations for your particular Microsoft 365
 | [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online for email and calendars. | 
 
-You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
+### How to prevent calendar oversharing
+
+You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only, so that users don't accidentally overshare important information.
 
 Microsoft 365 Business Basic, Standard, and Premium include Outlook and Exchange Online.
 
