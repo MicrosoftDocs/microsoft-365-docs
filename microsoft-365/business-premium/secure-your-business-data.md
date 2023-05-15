@@ -41,7 +41,7 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 | Step | Recommendations by subscription |
 |---|---|
 | 1. [Use multi-factor authentication](#1-use-multi-factor-authentication). | Microsoft 365 Business Basic or Standard: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).<br/><br/>Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
-| 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts). | Microsoft 365 Business Premium, Standard, or Basic: [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
+| 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts). | Microsoft 365 Business Basic, Standard, or Premium: [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
 | 3. [Use preset security policies](#3-use-preset-security-policies). | Microsoft 365 Business Basic, Standard, or Premium: [Assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users). |
 | 4. [Protect all devices](#4-protect-all-devices). |  |
 | 5. [Train everyone on email best practices](#5-train-everyone-on-email-best-practices). |  |
