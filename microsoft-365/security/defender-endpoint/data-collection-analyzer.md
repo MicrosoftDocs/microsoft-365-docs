@@ -39,7 +39,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 
 > [!NOTE]
-> You can use '-g' flag specific datacenter region to validate URLs for even without being onboarded to that region<br>
+> You can use '-g' flag with a specific datacenter region to validate URLs for even without being onboarded to that region<br>
 > For example:<br>
 > 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
 
