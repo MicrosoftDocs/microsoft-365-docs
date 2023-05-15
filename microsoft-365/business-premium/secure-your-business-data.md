@@ -154,7 +154,7 @@ See the following articles:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>[Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>[Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>[Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
+| [Microsoft 365 Business Premium](index.md) | 1. [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>2. [Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>3. [Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>4. [Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use Microsoft Teams](create-teams-for-collaboration.md). | 
 
 ### How to collaborate and share more securely
