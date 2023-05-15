@@ -58,9 +58,9 @@ The following sections describe these methods in more detail and include links t
 
 To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
 
-Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements.
+Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
 
-See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendation |
 |---|---|
@@ -69,13 +69,11 @@ See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
 
 ## 2. Protect your administrator accounts
 
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. 
+Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
 
-We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
+Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts. See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
-Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts.
-
-See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendation |
 |---|---|
@@ -93,6 +91,8 @@ See the following articles:
 
 - [Policies in preset security policies](../security/office-365-security/preset-security-policies.md#policies-in-preset-security-policies)
 - [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendation |
 |---|---|
@@ -113,6 +113,8 @@ See the following articles:
 - [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) 
 - [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
 - [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
@@ -138,6 +140,8 @@ See the following articles:
 - [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) 
 - [Protect against threats](../security/office-365-security/protect-against-threats.md)
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
@@ -162,10 +166,12 @@ See the following articles:
 - [Data Loss Prevention (DLP) in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)
 - [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings)
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Microsoft Teams for meetings and information sharing. <br/>Use [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about) with Microsoft Teams. <br/>Use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>Use the default [DLP policy](/microsoft-365/compliance/dlp-teams-default-policy) in Microsoft Teams. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Microsoft Teams.<br/>(*Defender for Office 365 can be added on*) | 
+| [Microsoft 365 Business Premium](index.md) | [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>[Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>[Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>[Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use Microsoft Teams](create-teams-for-collaboration.md).<br/>(*Defender for Office 365 can be added on*) | 
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
 
