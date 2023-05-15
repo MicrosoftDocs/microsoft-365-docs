@@ -54,12 +54,6 @@ The following sections describe these methods in more detail and include links t
 
 ## 1. Use multi-factor authentication
 
-[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. 
-
-To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
-
-Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
-
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendation |
@@ -67,11 +61,13 @@ The following table summarizes recommendations for your particular Microsoft 365
 | [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
+[Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. 
+
+To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
+
+Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) for advanced administration. It enables you to set up and configure [Conditional Access](/azure/active-directory/conditional-access/overview) policies instead of security defaults, for more stringent requirements. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md).
+
 ## 2. Protect your administrator accounts
-
-Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
-
-Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts. See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
@@ -79,7 +75,17 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
 
+Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
+
+Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts. See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
+
 ## 3. Use preset security policies
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
+| Subscription | Recommendation |
+|---|---|
+| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users). |
 
 [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies) save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
 
@@ -92,13 +98,16 @@ See the following articles:
 - [Policies in preset security policies](../security/office-365-security/preset-security-policies.md#policies-in-preset-security-policies)
 - [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
-| Subscription | Recommendation |
-|---|---|
-| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users). |
 
 ## 4. Protect all devices
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
+| Subscription | Recommendations |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
 
 Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
@@ -114,15 +123,14 @@ See the following articles:
 - [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
 - [Set up and secure managed devices](m365bp-protect-managed-devices.md) 
 
+
+## 5. Train everyone on email best practices
+
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
-
-## 5. Train everyone on email best practices
+| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
 
 Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. 
 
@@ -140,13 +148,15 @@ See the following articles:
 - [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) 
 - [Protect against threats](../security/office-365-security/protect-against-threats.md)
 
+
+## 6. Use Microsoft Teams for collaboration and sharing
+
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
-
-## 6. Use Microsoft Teams for collaboration and sharing
+| [Microsoft 365 Business Premium](index.md) | [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>[Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>[Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>[Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use Microsoft Teams](create-teams-for-collaboration.md).<br/>(*Defender for Office 365 can be added on*) | 
 
 The best way to collaborate and share securely is to use Microsoft Teams. With Microsoft Teams, all your files and communications are in a protected environment and aren't being stored in unsafe ways outside of it.
 
@@ -166,14 +176,15 @@ See the following articles:
 - [Data Loss Prevention (DLP) in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)
 - [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings)
 
+
+## 7. Set sharing settings for SharePoint and OneDrive files and folders
+
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Use Microsoft Teams for meetings and information sharing](create-teams-for-collaboration.md). <br/>[Use Safe Links & Safe Attachments with Microsoft Teams](/microsoft-365/security/office-365-security/mdo-support-teams-about). <br/>[Use sensitivity labels with meetings](/microsoft-365/compliance/sensitivity-labels-meetings) to protect calendar items, Microsoft Teams meetings, and chat. <br/>[Use the default DLP policy in Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use Microsoft Teams](create-teams-for-collaboration.md).<br/>(*Defender for Office 365 can be added on*) | 
-
-## 7. Set sharing settings for SharePoint and OneDrive files and folders
+| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 Your default sharing levels for SharePoint and OneDrive might be set to a more permissive level than you should use. We recommend reviewing and if necessary, changing the default settings to better protect your business. Grant people only the access they need to do their jobs. 
 
@@ -188,13 +199,6 @@ See the following resources:
 
 - [Adjust sharing settings for SharePoint and OneDrive files and folders](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
-| Subscription | Recommendations |
-|---|---|
-| [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use SharePoint and OneDrive.<br/>(*Defender for Office 365 can be added on*) |
 
 ## 8. Use Microsoft 365 Apps on devices
 
