@@ -228,6 +228,13 @@ See the following articles:
 
 ## 9. Manage calendar sharing for your business
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
+| Subscription | Recommendations |
+|---|---|
+| [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online for email and calendars. | 
+
 You can help people in your organization share their calendars appropriately for better collaboration. You can manage what level of detail they can share, such as by limiting the details that are shared to free/busy times only.
 
 Microsoft 365 Business Basic, Standard, and Premium include Outlook and Exchange Online.
@@ -239,14 +246,14 @@ See the following articles:
 - [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#5-manage-calendar-sharing)
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
+## 10. Maintain your environment
+
 The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Exchange Online for email and calendars. | 
-
-## 10. Maintain your environment
+| [Microsoft 365 Business Premium](index.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>If preferred, you can use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
 
 After your initial setup and configuration of Microsoft 365 for business is complete, your organization needs a maintenance and operations plan. As employees come and go, you'll need to add or remove users, reset passwords, and maybe even reset devices to factory settings. You'll also want to make sure people have only the access they need to do their jobs.
 
@@ -259,13 +266,6 @@ See the following articles:
 - [Maintain your environment](m365bp-maintain-environment.md) 
 - [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
 - [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md) 
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
-| Subscription | Recommendations |
-|---|---|
-| [Microsoft 365 Business Premium](index.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) for managing user accounts.<br/>Use the [Microsoft 365 Defender portal](https://security.microsoft.com) and the [Microsoft 365 Purview compliance portal](https://compliance.microsoft.com/) for viewing and managing security & compliance capabilities. <br/>If preferred, you can use the [Intune admin center](https://intune.microsoft.com) to view or manage devices. |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/> [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use the [Microsoft 365 admin center](https://admin.microsoft.com) or the [Azure AD portal](https://entra.microsoft.com) to view or manage user accounts. |
 
 ## See also
 
