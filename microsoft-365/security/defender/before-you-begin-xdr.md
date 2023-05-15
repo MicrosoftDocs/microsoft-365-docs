@@ -42,7 +42,9 @@ Aside from the requirements stated previously, to get Defender Experts for XDR c
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
-You'll also be assigned two **Ask Defender Experts** credits on the first of each month as part of the built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) service. You may use these credits to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
+
+As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned two **Ask Defender Experts** credits on the first of each month, which you may use to submit questions. You can still submit inquiries beyond the initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
 
 [Learn more about Microsoft's commercial licensing terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA)
 
