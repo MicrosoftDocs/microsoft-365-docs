@@ -202,6 +202,13 @@ See the following resources:
 
 ## 8. Use Microsoft 365 Apps on devices
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
+| Subscription | Recommendations |
+|---|---|
+| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
+
 Outlook and Microsoft 365 Apps (also referred to as Office apps) enable people to work productively and more securely across devices. Start a document on one device, and pick it up later on another device. Instead of sending files as email attachments, you can share links to documents that are stored in SharePoint or OneDrive.
 
 Microsoft 365 Business Basic, Standard, and Premium include Outlook and Web/mobile versions of [Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) (such as Word, PowerPoint, and Excel). 
@@ -218,13 +225,6 @@ See the following articles:
 - [Train your users on Microsoft 365](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
 - [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
-| Subscription | Recommendations |
-|---|---|
-| [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | Use Outlook and Web/mobile versions of Microsoft 365 Apps. |
 
 ## 9. Manage calendar sharing for your business
 
