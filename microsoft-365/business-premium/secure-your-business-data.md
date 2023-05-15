@@ -58,8 +58,6 @@ The following sections describe each method in more detail, including why and ho
 
 ## 1. Use multi-factor authentication
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
 | Subscription | Recommendation |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
@@ -75,8 +73,6 @@ Microsoft 365 Business Premium also includes [Azure AD Premium P1](/azure/active
 
 ## 2. Protect your administrator accounts
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
 | Subscription | Recommendation |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
@@ -88,8 +84,6 @@ Administrator accounts (also called admins) have elevated privileges, making the
 Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Microsoft Entra](https://entra.microsoft.com) to set up and manage your admin accounts. See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
 
 ## 3. Use preset security policies
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendation |
 |---|---|
@@ -109,8 +103,6 @@ See the following articles:
 - [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
 
 ## 4. Protect all devices
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
@@ -136,8 +128,6 @@ See the following articles:
 
 ## 5. Train everyone on email best practices
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
@@ -161,8 +151,6 @@ See the following articles:
 - [Protect against threats](../security/office-365-security/protect-against-threats.md)
 
 ## 6. Use Microsoft Teams for collaboration and sharing
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
@@ -192,8 +180,6 @@ See the following articles:
 
 ## 7. Set sharing settings for SharePoint and OneDrive files and folders
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
@@ -216,8 +202,6 @@ See the following resources:
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 ## 8. Use Microsoft 365 Apps on devices
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
@@ -245,8 +229,6 @@ See the following articles:
 
 ## 9. Manage calendar sharing for your business
 
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
-
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use Outlook and Exchange Online for email and calendars.<br/>[Get started using your default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
@@ -266,8 +248,6 @@ See the following articles:
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
 
 ## 10. Maintain your environment
-
-The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
