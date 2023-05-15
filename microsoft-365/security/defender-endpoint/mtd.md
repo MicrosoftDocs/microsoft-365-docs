@@ -112,6 +112,8 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - Alerts appear in dashboard: Verify that alerts for above detection tests appear on the [security console](https://security.microsoft.com).
 
+Need help in deploying or configuring Defender for Endpoint on Android & ioS ? If you have at least 150 licenses for  the product, use your [FastTrack benefits](https://learn.microsoft.co/microsoft-365/fasttrack/introduction). Refer [here] (https://fasttrack.microsoft.com/)for more details about FastTrack.
+
 ## Configure
 
 - [Configure Android features](android-configure.md)
