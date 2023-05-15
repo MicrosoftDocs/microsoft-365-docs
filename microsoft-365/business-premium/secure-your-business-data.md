@@ -106,9 +106,9 @@ See the following articles:
 
 | Subscription | Recommendations |
 |---|---|
-| [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
-| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
-| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
+| [Microsoft 365 Business Premium](index.md) | 1. [Turn on MFA](m365bp-turn-on-mfa.md).<br/>2. [Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>3. [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
+| [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | 1. [Turn on MFA](m365bp-turn-on-mfa.md).<br/>2. [Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md). | 
+| [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md). |
 
 ### Why and how to protect devices
 
