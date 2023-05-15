@@ -41,8 +41,8 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 | Step | Recommendations by subscription |
 |---|---|
 | 1. [Use multi-factor authentication](#1-use-multi-factor-authentication). | Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md). <br/>Microsoft 365 Business Standard or Basic: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). |
-2. [Protect your administrator accounts](#2-protect-your-administrator-accounts).
-3. [Use preset security policies](#3-use-preset-security-policies).
+| 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts). | Microsoft 365 Business Premium, Standard, or Basic: [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
+| 3. [Use preset security policies](#3-use-preset-security-policies). | 
 4. [Protect all devices](#4-protect-all-devices).
 5. [Train everyone on email best practices](#5-train-everyone-on-email-best-practices).
 6. [Use Microsoft Teams for collaboration and sharing](#6-use-microsoft-teams-for-collaboration-and-sharing).
@@ -62,6 +62,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 | [Microsoft 365 Business Premium](index.md) | [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). | 
 
+### What MFA is and why it matters
+
 [Multi-factor authentication](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent bad actors from taking over your account if they know your password. 
 
 To help simplify the process of enabling MFA, [security defaults in Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) are available in Microsoft 365 Business Basic, Standard, and Premium. 
@@ -76,6 +78,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md) <br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
 
+### Why you should protect admin accounts
+
 Administrator accounts (also called admins) have elevated privileges, making these accounts more susceptible to cyberattacks. Make sure to set up and manage the right number of admin and user accounts for your business. We also recommend adhering to the information security principle of least privilege, which means that users and applications should be granted access only to the data and operations they require to perform their jobs. 
 
 Microsoft 365 Business Basic, Standard, and Premium include the [Microsoft 365 admin center](https://admin.microsoft.com) and the [Azure AD portal](https://entra.microsoft.com) to set up and manage your admin accounts. See [Protect your administrator accounts](m365bp-protect-admin-accounts.md).
@@ -88,7 +92,9 @@ The following table summarizes recommendations for your particular Microsoft 365
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)<br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users). |
 
-[Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies) save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. 
+### How preset security policies help
+
+[Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies) save time by applying recommended spam, anti-malware, and anti-phishing policies to users all at once. Preset security policies take the guesswork out of implementing protection for email and collaboration content.
 
 Microsoft 365 Business Basic, Standard, and Premium include [Exchange Online Protection](../security/office-365-security/eop-about.md) (EOP). It includes preset security policies for anti-spam, anti-malware, and anti-phishing. 
 
@@ -109,6 +115,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 | [Microsoft 365 Business Premium](index.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). |
 | [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>[Install Microsoft 365 Apps on devices](m365bp-users-install-m365-apps.md).<br/>(*Defender for Business can be added on*) | 
 | [Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md) | [Turn on MFA](m365bp-turn-on-mfa.md).<br/>(*Defender for Business can be added on*) |
+
+### Why and how to protect devices
 
 Every device is a possible attack avenue into your network and must be configured properly, even devices that are personally owned but used for work. Your security team and all employees can all take steps to protect devices. For example, all users can use MFA on their devices.
 
@@ -132,6 +140,8 @@ The following table summarizes recommendations for your particular Microsoft 365
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/>[Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) <br/>[Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)  | Follow the guidance in [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).<br/>Share [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md) with everyone. |
+
+### How 
 
 Email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on humans making consistently good decisions with those communications. 
 
