@@ -49,7 +49,7 @@ This assessment is used to calculate your initial compliance score the first tim
 Listed below are details about steps and information that will help you prepare for creating an assessment:
 
 - Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
-- Learn how [assessment templates](compliance-manager-templates.md) work. Templates contain the controls and action recommendations for assessments.
+- Understand [regulatory templates](compliance-manager-templates.md), which contain the controls and action recommendations for assessments.
 - Set up [connectors](#set-up-connectors) if you're assessing services from other companies.
 
 ## Groups for assessments
