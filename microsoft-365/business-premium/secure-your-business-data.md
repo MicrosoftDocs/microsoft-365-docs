@@ -189,6 +189,8 @@ See the following resources:
 - [Adjust sharing settings for SharePoint and OneDrive files and folders](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
 - [Sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md) | Use SharePoint and OneDrive for storing and sharing files. <br/>[Set sharing settings for SharePoint and OneDrive](m365bp-protect-against-malware-cyberthreats.md#3-adjust-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). <br/>Use [Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about) with SharePoint and OneDrive. <br/>Use [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) and [DLP](/microsoft-365/compliance/get-started-with-the-default-dlp-policy). |
@@ -213,6 +215,8 @@ See the following articles:
 - [How Safe Links works in Microsoft 365 Apps](/microsoft-365/security/office-365-security/safe-links-about#how-safe-links-works-in-office-apps)
 - [Sensitivity bar in Microsoft 365 Apps](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-bar) 
 
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
+
 | Subscription | Recommendations |
 |---|---|
 | [Microsoft 365 Business Premium](index.md)<br/> [Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md) | [Install Microsoft 365 Apps on all devices](m365bp-users-install-m365-apps.md). <br/>Share the [Employee quick setup guide with users](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). | 
@@ -230,6 +234,8 @@ See the following articles:
 
 - [Manage calendar sharing](m365bp-protect-against-malware-cyberthreats.md#5-manage-calendar-sharing)
 - [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) 
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
@@ -249,6 +255,8 @@ See the following articles:
 - [Maintain your environment](m365bp-maintain-environment.md) 
 - [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
 - [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md) 
+
+The following table summarizes recommendations for your particular Microsoft 365 for business subscription:
 
 | Subscription | Recommendations |
 |---|---|
