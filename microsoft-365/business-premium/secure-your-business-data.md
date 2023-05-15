@@ -40,18 +40,18 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 
 | Step | Recommendations by subscription |
 |---|---|
-| 1. [Use multi-factor authentication](#1-use-multi-factor-authentication). | Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md). <br/>Microsoft 365 Business Standard or Basic: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). |
+| 1. [Use multi-factor authentication](#1-use-multi-factor-authentication). | Microsoft 365 Business Basic or Standard: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).<br/><br/>Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md).  |
 | 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts). | Microsoft 365 Business Premium, Standard, or Basic: [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles). |
-| 3. [Use preset security policies](#3-use-preset-security-policies). | 
-4. [Protect all devices](#4-protect-all-devices).
-5. [Train everyone on email best practices](#5-train-everyone-on-email-best-practices).
-6. [Use Microsoft Teams for collaboration and sharing](#6-use-microsoft-teams-for-collaboration-and-sharing).
-7. [Set sharing settings for SharePoint and OneDrive files and folders](#7-set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
-8. [Use Microsoft 365 Apps on devices](#8-use-microsoft-365-apps-on-devices).
-9. [Manage calendar sharing for your business](#9-manage-calendar-sharing-for-your-business).
-10. [Maintain your environment](#10-maintain-your-environment).   
+| 3. [Use preset security policies](#3-use-preset-security-policies). | Microsoft 365 Business Basic, Standard, or Premium: [Assign Standard or Strict preset security policies to users](/microsoft-365/security/office-365-security/preset-security-policies#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users). |
+| 4. [Protect all devices](#4-protect-all-devices). |  |
+| 5. [Train everyone on email best practices](#5-train-everyone-on-email-best-practices). |  |
+| 6. [Use Microsoft Teams for collaboration and sharing](#6-use-microsoft-teams-for-collaboration-and-sharing). |  |
+| 7. [Set sharing settings for SharePoint and OneDrive files and folders](#7-set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). |  |
+| 8. [Use Microsoft 365 Apps on devices](#8-use-microsoft-365-apps-on-devices). |  |
+| 9. [Manage calendar sharing for your business](#9-manage-calendar-sharing-for-your-business). |  |
+| 10. [Maintain your environment](#10-maintain-your-environment). |  |
 
-The following sections describe these methods in more detail and include links to additional information.
+The following sections describe these methods in more detail, including why and how to implement our recommendations in your environment. 
 
 ## 1. Use multi-factor authentication
 
@@ -104,7 +104,6 @@ See the following articles:
 
 - [Policies in preset security policies](../security/office-365-security/preset-security-policies.md#policies-in-preset-security-policies)
 - [Protect against malware and other cyberthreats](m365bp-protect-against-malware-cyberthreats.md)
-
 
 ## 4. Protect all devices
 
