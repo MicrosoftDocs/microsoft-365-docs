@@ -50,7 +50,7 @@ A compliance administrator can assign administrative units to an adaptive scope 
 
 1. A compliance administrator is assigned two administrative units that contain users from Europe and North America, respectively. When they create an adaptive scope, they can select and assign only these administrative units. They can't create an adaptive scope to contain users from other administrative units.
 2. They select the administrative unit for Europe, and because they want the scope to include only users from France, they configure the adaptive scope query to select users from France. If they misconfigure the query scope to select users from Asia, no users from Asia would be included in the scope.
-3. When just this adaptive scope is selected for a policy, the policy is applied just to users in France.
+3. When just this adaptive scope is selected for a policy that's targeted to all users, the policy is applied just to users in France.
 
 ### Maximums for adaptive policy scopes
 
