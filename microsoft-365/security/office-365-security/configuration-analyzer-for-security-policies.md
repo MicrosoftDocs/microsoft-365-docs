@@ -62,7 +62,7 @@ The Standard and Strict policy setting values that are used as baselines are des
     - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
   - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gies users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
