@@ -38,8 +38,9 @@ Microsoft 365 Business Basic, Standard, and Premium include antiphishing, antisp
 
 :::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" lightbox="media/top-10-ways-to-secure-data.png":::
 
-
-1. [Use multi-factor authentication](#1-use-multi-factor-authentication).
+| Step | Recommendations by subscription |
+|---|---|
+| 1. [Use multi-factor authentication](#1-use-multi-factor-authentication). | Microsoft 365 Business Premium: [Use either security defaults or Conditional Access](m365bp-turn-on-mfa.md). <br/>Microsoft 365 Business Standard or Basic: [Use security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults). |
 2. [Protect your administrator accounts](#2-protect-your-administrator-accounts).
 3. [Use preset security policies](#3-use-preset-security-policies).
 4. [Protect all devices](#4-protect-all-devices).
