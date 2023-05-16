@@ -35,11 +35,10 @@ This new invoice format is a phased implementation and will roll out to VL custo
 
 ## Before you begin
 
-To access VL invoices in the Microsoft 365 admin center, you must satisfy all three of the following conditions:
+To access VL invoices in the Microsoft 365 admin center, you must satisfy the following conditions:
 
 1. You must be the **Bill To contact** for the corresponding contracts.
 2. You must be a Volume Licensing Service Center (VLSC) user.
-3. You must be a Global or Billing admin or have a non-admin Microsoft Azure Active Directory (Azure AD) role.
 
 ## View or download your bill
 

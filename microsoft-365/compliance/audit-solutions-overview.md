@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Purview auditing solutions"
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
+title: "Auditing solutions in Microsoft Purview"
+description: "Learn how to audit the activities of users and administrators in Microsoft Purview." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
