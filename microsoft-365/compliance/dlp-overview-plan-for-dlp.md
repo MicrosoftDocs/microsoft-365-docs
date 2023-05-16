@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 04/20/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -29,6 +29,7 @@ Every organization will plan for and implement data loss prevention (DLP) differ
 
 If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article that you're reading now, you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -147,6 +148,10 @@ Because many organizations come to DLP with the goal of regulatory compliance, a
 Once your organization knows where it stands in terms of regulatory compliance needs, you'll have some idea of what sensitive items need to be protected from leakage and how you want to prioritize policy implementation to protect them. This will help you choose the most appropriate DLP policy templates. Microsoft Purview comes with pre-configured DLP templates for Financial, Medical and health, Privacy, and you can build your own using the Custom template. As you design and create your actual DLP policies, knowing the answer to this question will also help you choose the right [sensitive information type](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
 **Example** To get started quickly, you pick the `U.K. Financial Data` policy template, which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
+
+##### How you want your policies scoped
+
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.
 
 ##### Where are the sensitive items and what business processes are they involved in?
 

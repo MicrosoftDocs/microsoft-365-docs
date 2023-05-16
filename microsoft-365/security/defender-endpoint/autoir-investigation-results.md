@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 03/15/2021
 ---
 
 # View the details and results of an automated investigation

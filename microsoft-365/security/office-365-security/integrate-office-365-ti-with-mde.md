@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/02/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier3
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom:
 - seo-marvel-apr2020

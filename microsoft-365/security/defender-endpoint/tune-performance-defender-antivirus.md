@@ -1,16 +1,12 @@
 ---
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
-keywords: Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows, ms defender, microsoft scan, windows performance
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/11/2023
+ms.date: 04/18/2023
 manager: dansimp
 ms.collection: 
 - m365-security
@@ -31,6 +27,14 @@ search.appverid: met150
 **Platforms**
 
 - Windows
+
+## Requirements
+
+Microsoft Defender Antivirus performance analyzer has the following prerequisites:
+
+- Supported Windows versions: Windows 10, Windows 11, Windows 2012 R2 with the Modern Unified Solution and Windows Server 2016 and above
+- Platform Version: 4.18.2108.7+
+- PowerShell Version: PowerShell Version 5.1, PowerShell ISE, remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## What is Microsoft Defender Antivirus performance analyzer?
 
@@ -127,13 +131,6 @@ Starting with Defender version 4.18.2206.X, users will be able to view scan skip
 
 To ensure machine-readable output for exporting with other data processing systems, it is recommended to use `-Raw` parameter for `Get-MpPerformanceReport`. See below for details.
 
-## Requirements
-
-Microsoft Defender Antivirus performance analyzer has the following prerequisites:
-
-- Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
-- Platform Version: 4.18.2108.7+
-- PowerShell Version: PowerShell Version 5.1, PowerShell ISE, remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## PowerShell reference
 
@@ -163,12 +160,6 @@ For more information on the performance analyzer, see [Performance Analyzer](/wi
 > [!IMPORTANT]
 > This cmdlet requires elevated administrator privileges.
 
-**Supported OS versions**:
-
-Windows Version 10 and later.
-
-> [!NOTE]
-> This feature is available starting with platform version 4.18.2108.X and later.
 
 #### Examples: New-MpPerformanceRecording
 
@@ -189,13 +180,6 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 The above command collects a performance recording on Server02 (as specified by argument $s of parameter Session) and saves it to the specified path: **C:\LocalPathOnServer02\trace.etl** on Server02.
 
-##### Example 3: Collect a performance recording in non-interactive mode
-
-```powershell
-New-MpPerformanceRecording -RecordTo .\Defender-scans.etl -Seconds 60
-```
-
-The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
 
 #### Parameters: New-MpPerformanceRecording
 
@@ -223,18 +207,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### -Seconds
-
-Specifies the duration of the performance recording in seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
-
-```yaml
-Type: Int32
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### Get-MpPerformanceReport
 
 The following section describes the Get-MpPerformanceReport PowerShell cmdlet. Analyzes and reports on Microsoft Defender Antivirus performance recording.
@@ -243,51 +215,51 @@ The following section describes the Get-MpPerformanceReport PowerShell cmdlet. A
 
 ```output
 Get-MpPerformanceReport [-Path] <String>
-	[-TopScans [<Int32>]]
-	[-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
-			[-TopScansPerPath [<Int32>]]
-			[-TopFilesPerPath [<Int32>]
-					[-TopScansPerFilePerPath [<Int32>]]
-					]
-			[-TopExtensionsPerPath [<Int32>]
-					[-TopScansPerExtensionPerPath [<Int32>]]
-					]
-			[-TopProcessesPerPath [<Int32>]
-					[-TopScansPerProcessPerPath [<Int32>]]
-					]
-			]
-	[-TopFiles [<Int32>]
-			[-TopScansPerFile [<Int32>]]
-			[-TopProcessesPerFile [<Int32>]
-					[-TopScansPerProcessPerFile [<Int32>]]
-					]
-			]
-	[-TopExtensions [<Int32>]
-			[-TopScansPerExtension [<Int32>]
-			[-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerExtension [<Int32>]]
-					]
-			[-TopProcessesPerExtension [<Int32>]
-					[-TopScansPerProcessPerExtension [<Int32>]]
-					]
-			[-TopFilesPerExtension [<Int32>]
-					[-TopScansPerFilePerExtension [<Int32>]]
-					]
-			]
-	[-TopProcesses [<Int32>]
-			[-TopScansPerProcess [<Int32>]]
-			[-TopExtensionsPerProcess [<Int32>]
-					[-TopScansPerExtensionPerProcess [<Int32>]]
-					]
-			[-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
-					[-TopScansPerPathPerProcess [<Int32>]]
-					]
-			[-TopFilesPerProcess [<Int32>]
-					[-TopScansPerFilePerProcess [<Int32>]]
-					]
-			]
-	[-MinDuration <String>]
-	[-Raw]
+    [-TopScans [<Int32>]]
+    [-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
+            [-TopScansPerPath [<Int32>]]
+            [-TopFilesPerPath [<Int32>]
+                    [-TopScansPerFilePerPath [<Int32>]]
+                    ]
+            [-TopExtensionsPerPath [<Int32>]
+                    [-TopScansPerExtensionPerPath [<Int32>]]
+                    ]
+            [-TopProcessesPerPath [<Int32>]
+                    [-TopScansPerProcessPerPath [<Int32>]]
+                    ]
+            ]
+    [-TopFiles [<Int32>]
+            [-TopScansPerFile [<Int32>]]
+            [-TopProcessesPerFile [<Int32>]
+                    [-TopScansPerProcessPerFile [<Int32>]]
+                    ]
+            ]
+    [-TopExtensions [<Int32>]
+            [-TopScansPerExtension [<Int32>]
+            [-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerExtension [<Int32>]]
+                    ]
+            [-TopProcessesPerExtension [<Int32>]
+                    [-TopScansPerProcessPerExtension [<Int32>]]
+                    ]
+            [-TopFilesPerExtension [<Int32>]
+                    [-TopScansPerFilePerExtension [<Int32>]]
+                    ]
+            ]
+    [-TopProcesses [<Int32>]
+            [-TopScansPerProcess [<Int32>]]
+            [-TopExtensionsPerProcess [<Int32>]
+                    [-TopScansPerExtensionPerProcess [<Int32>]]
+                    ]
+            [-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerProcess [<Int32>]]
+                    ]
+            [-TopFilesPerProcess [<Int32>]
+                    [-TopScansPerFilePerProcess [<Int32>]]
+                    ]
+            ]
+    [-MinDuration <String>]
+    [-Raw]
 ```
 
 #### Description: Get-MpPerformanceReport
