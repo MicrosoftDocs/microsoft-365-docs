@@ -52,15 +52,15 @@ You manage allow and block entries for URLs in the Microsoft 365 Defender Portal
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
-    - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
+    - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
       - **Security Operator** (Tenant AllowBlockList Manager).
-    - _Read-only access to the Tenant Allow/Block List_: Membership in one of the following role groups:
+    - *Read-only access to the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Global Reader**
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Create block entries for URLs
 
@@ -127,9 +127,11 @@ For instructions, see [Submit good URLs to Microsoft](submissions-admin.md#repor
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow creation process from Submission by creating allows for those entities (domains or email addresses, spoofed senders, URLs, or files) which were determined to be malicious by filters during mail flow or time of click. For example, if a URL being submitted was determined to be bad by our filtering, an allow entry is created for that URL.
+> Microsoft manages the allow entry creation process for URLs from the Submissions page. We'll create allow entries for URLs that were determined to be malicious by our filters during mail flow or at time of click.
 >
-> When that entity is encountered again, all filters associated with that entity are overridden.
+> We allow subsequent messages that contain variations of the original URL. For example, you use the Submissions page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+>
+> When the URL is encountered again, all filters associated with the URL are overridden.
 >
 > By default, allow entries for URLs exist for 30 days. During those 30 days, Microsoft will learn from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those URLs will be delivered, unless something else in the message is detected as malicious.
 >
@@ -337,16 +339,16 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard (subdomain)
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `*.contoso.com`
 
-- **Block match**:
+- **Allow match** and **Block match**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Block not matched**:
+- **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -368,6 +370,9 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com/q=a@contoso.com
 
 #### Scenario: Left tilde
+
+> [!TIP]
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `~contoso.com`
 
@@ -398,21 +403,24 @@ Valid URL entries and their results are described in the following sections.
 
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
-> [!NOTE]
-> This scenario applies only to blocks.
+> [!TIP]
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `*.contoso.com/*`
 
-- **Block match**:
+- **Allow match** and **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Block not matched**: contoso.com/b
+- **Allow not matched** and **Block not matched**: contoso.com/b
 
 #### Scenario: Left and right tilde
+
+> [!TIP]
+>  Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `~contoso.com~`
 
@@ -427,7 +435,7 @@ Valid URL entries and their results are described in the following sections.
   - contoso.com/b/a/c
   - test.com/contoso.com
 
-- **Allow not matched** and **Block not matched**:
+-  **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.org

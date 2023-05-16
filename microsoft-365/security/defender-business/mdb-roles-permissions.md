@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 02/14/2023
+ms.date: 05/01/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -22,6 +22,10 @@ ms.collection:
 ---
 
 # Assign security roles and permissions in Microsoft Defender for Business
+
+This article describes how to assign security roles and permissions in Defender for Business.
+
+:::image type="content" source="media/mdb-setup-step3.png" alt-text="Visual depicting step 3 - assign security roles and permissions in Defender for Business.":::
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
@@ -66,5 +70,5 @@ The following table describes the three roles that can be assigned in Defender f
 
 ## Next steps
 
-- [Set up email notifications](mdb-email-notifications.md) for your security team.
-- Proceed to [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
+- Proceed to [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).
+- [Step 5: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)

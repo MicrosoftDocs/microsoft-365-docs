@@ -43,7 +43,7 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
 
 ## What happens when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed from their default values:
+When tamper protection is turned on, tamper-protected settings can't be changed.
 
 - Virus and threat protection is enabled.
 - Real-time protection is turned on.
@@ -59,7 +59,7 @@ When tamper protection is turned on, tamper-protected settings can't be changed 
 > As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is enabled.
 
 > [!IMPORTANT]
-> When tamper protection is turned on, the tamper-protected settings listed above cannot be changed from their default values. To avoid breaking management experiences, including [Intune](manage-tamper-protection-intune.md) and [Configuration Manager](manage-tamper-protection-configuration-manager.md), keep in mind that changes made to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. You can use Intune and Configuration Manager to exclude devices from tamper protection. And, if you're managing tamper protection through Intune, you can [change tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
+> When tamper protection is turned on, the tamper-protected settings listed above cannot be changed. To avoid breaking management experiences, including [Intune](manage-tamper-protection-intune.md) and [Configuration Manager](manage-tamper-protection-configuration-manager.md), keep in mind that changes made to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. You can use Intune and Configuration Manager to exclude devices from tamper protection. And, if you're managing tamper protection through Intune, you can [change tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team. For more information, see [How do I configure or manage tamper protection](#how-do-i-configure-or-manage-tamper-protection)?
 
@@ -130,5 +130,6 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 - [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
 - [Built-in protection helps guard against ransomware](built-in-protection.md)
-- [Frequently asked questions on tamper protection](faqs-tamper-protection.md)
+- [Frequently asked questions on tamper protection](faqs-on-tamper-protection.yml)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)

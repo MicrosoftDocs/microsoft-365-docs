@@ -2,7 +2,7 @@
 title: "Microsoft Azure Architectures for SharePoint 2013"
 ms.author: bcarter
 author: brendacarter
-manager: scotv
+manager: serdars
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual

@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/18/2023
 ---
 
 # Run live response commands on a device
@@ -61,13 +61,15 @@ Runs a sequence of live response commands on a device
 
 7. Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions won't be executed.
 
+8. Multiple live response sessions can't be executed on the same machine (if live response action is already running, subsequent requests are responded to with HTTP 400 - ActiveRequestAlreadyExists).
+
 ## Minimum Requirements
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-- **Verify that you're running a supported version of Windows**.
+- **Verify that you're running a supported Windows, macOS, or Linux version**.
 
-  Devices must be running one of the following versions of Windows
+  Devices must be running one of the following:
 
   - **Windows 11**
   
@@ -83,6 +85,12 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
+  - **macOS** [(requires additional configuration profiles)](microsoft-defender-endpoint-mac.md)
+      - 13 (Ventura)
+      - 12 (Monterey)
+      - 11 (Big Sur)
+  - **Linux**
+      - [Supported Linux server distributions and kernel versions](microsoft-defender-endpoint-linux.md)
 
 ## Permissions
 
@@ -111,13 +119,13 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |Parameter|Type|Description|
 |---|---|---|
 |Comment|String|Comment to associate with the action.|
-|Commands|Array|Commands to run. Allowed values are PutFile, RunScript, GetFile.|
+|Commands|Array|Commands to run. Allowed values are PutFile, RunScript, GetFile (must be in this order with no limit on repetitions). |
 
 ## Commands
 
 |Command Type|Parameters|Description|
 |---|---|---|
-|PutFile|Key: FileName <p> Value: \<file name\>|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.
+|PutFile|Key: FileName <p> Value: \<file name\>|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. NOTE: Doesn't have a response result. |
 |RunScript|Key: ScriptName <br> Value: \<Script from library\> <p> Key: Args <br> Value: \<Script arguments\>|Runs a script from the library on a device. <p>  The Args parameter is passed to your script. <p> Timeouts after 10 minutes.|
 |GetFile|Key: Path <br> Value: \<File path\>|Collect file from a device. NOTE: Backslashes in path must be escaped.|
 
@@ -170,6 +178,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 ### Response example
 
 Here's an example of the response.
+
+Possible values for each command status are "Created", "Completed", and "Failed".
 
 ```HTTP
 HTTP/1.1 200 Ok

@@ -96,7 +96,7 @@ The following example assumes you need email from contoso.com to skip spam filte
    1. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
    2. **Modify the message properties** \> **set a message header**:
       - **Header name**: For example, `X-ETR`.
-      - **Heaver value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
+      - **Header value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
 
       If you've more than one domain in the rule, you can customize the header text as appropriate.
 

@@ -17,7 +17,7 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/29/2023
+ms.date: 4/21/2023
 ---
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
@@ -30,7 +30,7 @@ ms.date: 3/29/2023
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 > [!NOTE]
-> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview.
+> This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview. Once you run the cmdlet, please be aware that it will take a few days for the features to to be available. 
 
 With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 already provides protection against malicious URLs in Teams through [Safe Links](safe-links-about.md), and now Microsoft is extending this protection with a new set of capabilities designed to disrupt the attack chain.
 
@@ -42,13 +42,13 @@ With the increased use of collaboration tools like Microsoft Teams, the possibil
 
 The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that will allow for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it is assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
-- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
+- **Attack Simulation and Training**: In order to ensure your users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations in Teams similar to how they do so in email. For more information, see [Microsoft Teams in Attack simulation training](attack-simulation-training-teams.md).
 
 ## Enable Microsoft Defender for Teams
 
-If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them.
+If you're interested in previewing the previously described features for ALL users in your tenant, you can use an Exchange Online PowerShell cmdlet to enable them. Make sure you have the latest version of the PowerShell module.
 
-After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md), run the following command to join the Teams preview:
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), run the following command to join the Teams preview:
 
 ```powershell
 Set-TeamsSecurityPreview -Enable $true

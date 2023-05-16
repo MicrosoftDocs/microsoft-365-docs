@@ -108,6 +108,8 @@
           href: m365d-enable.md
         - name: 2. Deploy supported services
           href: deploy-supported-services.md
+        - name: Setup guides for Microsoft 365 Defender
+          href: deploy-configure-m365-defender.md  
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
         - name: Train your security staff
@@ -186,7 +188,7 @@
                    href: investigate-dlp.md
                  - name: Alerts
                    href: investigate-alerts.md    
-                 - name: Alert grading playbooks
+                 - name: Alert classification playbooks
                    items: 
                     - name: Overview
                       href: alert-grading-playbooks.md
@@ -200,6 +202,8 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
+                    - name: Password spray attacks
+                      href: alert-grading-password-spray-attack.md                    
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -542,6 +546,8 @@
         items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
+          - name: Threat actor naming
+            href: ../intelligence/microsoft-threat-actor-naming.md
           - name: Understand malware & other threats
             href: ../intelligence/understanding-malware.md
             items: 

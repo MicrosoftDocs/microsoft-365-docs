@@ -34,8 +34,6 @@
       href: preview.md
     - name: Data storage and privacy
       href: data-storage-privacy.md
-    - name: Overview of Microsoft Defender Security Center
-      href: use.md
     - name: Defender for Endpoint Plan 1
       items:
       - name: Overview
@@ -44,8 +42,6 @@
         href: mde-p1-setup-configuration.md
       - name: Get started
         href: mde-plan1-getting-started.md
-      - name: Maintenance and operations
-        href: mde-p1-maintenance-operations.md
     - name: Microsoft Defender for Endpoint for US Government customers
       href: gov.md
     - name: Overview of Microsoft Defender for Endpoint on other platforms
@@ -129,7 +125,7 @@
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
 
-    - name: Manage Defender for Endpoint after migration
+    - name: Manage Defender for Endpoint after migration or setup
       items:
       - name: Overview
         href: manage-mde-post-migration.md
@@ -141,8 +137,6 @@
         href: manage-mde-post-migration-group-policy-objects.md
       - name: Use PowerShell, WMI, or MPCmdRun.exe
         href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Updating MMA on Windows devices
         href: update-agent-mma-windows.md
       - name: Server migration scenarios
@@ -281,6 +275,8 @@
           href: mac-device-control-jamf.md
         - name: Intune examples
           href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
 
       - name: Schedule scans
         href: mac-schedule-scan.md
@@ -337,7 +333,7 @@
         items:
         - name: Use basic permissions to access the portal
           href: basic-permissions.md
-        - name: Assign user access to Microsoft Defender Security Center
+        - name: Assign user access to the portal
           href: assign-portal-access.md
         - name: Manage portal access using RBAC
           href: rbac.md
@@ -381,7 +377,7 @@
           href: configure-machines-onboarding.md
 
 
-      - name: Configure Microsoft Defender Security Center time zone settings
+      - name: Configure time zone settings
         href: time-settings.md
 
   - name: Detect threats and protect endpoints
@@ -422,6 +418,8 @@
         href: machines-view-overview.md
       - name: Exclude devices
         href: exclude-devices.md
+      - name: Internet facing devices
+        href: internet-facing-devices.md
       - name: Device timeline
         href: device-timeline-event-flag.md
       - name: Manage device group and tags
@@ -569,8 +567,6 @@
       - name: Cloud protection and Microsoft Defender Antivirus
         href: cloud-protection-microsoft-defender-antivirus.md
         items:
-        - name: Why cloud protection should be on
-          href: why-cloud-protection-should-be-on-mdav.md
         - name: Turn on cloud protection
           href: enable-cloud-protection-microsoft-defender-antivirus.md
         - name: Specify the cloud protection level
@@ -594,7 +590,7 @@
         - name: Manage tamper protection on an individual device
           href: manage-tamper-protection-individual-device.md
         - name: FAQs on tamper protection
-          href: faqs-tamper-protection.md
+          href: faqs-on-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Configure the cloud block timeout period
@@ -727,7 +723,7 @@
       - name: Troubleshooting Microsoft Defender Antivirus
         items:
         - name: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
-          href: troubleshoot-microsoft-defender-antivirus.md
+          href: troubleshoot-microsoft-defender-antivirus.yml
         - name: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
           href: troubleshoot-microsoft-defender-antivirus-when-migrating.yml
 
@@ -872,6 +868,8 @@
 
     - name: EDR in block mode
       href: edr-in-block-mode.md
+    - name: EDR in block mode FAQ
+      href: edr-block-mode-faqs.yml
 
     - name: Automated investigation and response (AIR)
       items:
@@ -987,6 +985,8 @@
               href: add-a-new-scan-definition.md
             - name: Get all scan agents
               href: get-all-scan-agents.md
+            - name: Get scan agent by Id
+              href: get-agent-details.md
             - name: Get scan history by definition
               href: get-scan-history-by-definition.md
             - name: Get scan history by session
@@ -1347,10 +1347,10 @@
         href: troubleshoot-onboarding-error-messages.md
       - name: Troubleshoot security configuration management onboarding issues
         href: troubleshoot-security-config-mgt.md
-
+    - name: Troubleshoot problems with tamper protection
+      href: troubleshoot-problems-with-tamper-protection.yml
     - name: Troubleshooting migration issues
       href: switch-to-mde-troubleshooting.md
-
     - name: Troubleshoot sensor state
       items:
       - name: Check sensor state

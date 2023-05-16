@@ -18,7 +18,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security
-  - tier2
+  - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 04/28/2022
@@ -78,6 +78,9 @@ To revert to the former Microsoft Defender for Identity portal:
 This setting can be enabled again at any time.
 
 Once disabled, accounts will no longer be routed to security.microsoft.com.
+
+> [!NOTE]
+> For tenants created after March 15, 2023, the option to disable the setting toggle is not available.
 
 ## Related information
 

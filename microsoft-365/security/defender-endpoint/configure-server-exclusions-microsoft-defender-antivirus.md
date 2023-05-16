@@ -26,6 +26,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
@@ -42,7 +43,7 @@ In addition to server role-defined automatic exclusions, you can add or remove c
 
 - Custom exclusions take precedence over automatic exclusions.
 - Automatic exclusions only apply to [real-time protection (RTP)](configure-protection-features-microsoft-defender-antivirus.md) scanning. 
-- Automatic exclusions aren't honored during a [full, quick, or on-demand scan](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
+- Automatic exclusions aren't honored during a [quick scan, full scan, and custom scan](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan).
 - Custom and duplicate exclusions don't conflict with automatic exclusions.
 - Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.
 - Appropriate exclusions must be set for software that isn't included with the operating system.
