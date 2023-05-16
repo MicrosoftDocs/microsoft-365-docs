@@ -46,7 +46,7 @@ Users must have a Data Connector Admin role or Global Admin role in order to set
 
 ## Step 1. Configure service settings to enable the connector
 
-Each service requires that you do some configurations and get some basic information about your account. This information is used to create the connection between the service and the Compliance Manager connector so that the connector can retrieve the necessary signals. Visit the pages below and follow the setup instructions before you activate its connector in Compliance Manager:
+For each service, you'll need to do some configurations and get basic information about your accounts. This information is used to create the connection between the service and the Compliance Manager connector so that the connector can retrieve the necessary signals. Visit the pages below and follow the setup instructions before you activate its connector in Compliance Manager:
 
 - [Salesforce setup](compliance-manager-connectors-salesforce.md)
 - [Zoom setup](compliance-manager-connectors-zoom.md)
@@ -85,13 +85,13 @@ Now you're ready to build an assessment with a connector so that it tracks progr
 
 1. From here, begin following the general [assessment creations instructions](compliance-manager-assessments.md#create-an-assessment-using-a-guided-process).
     > [!TIP]
-    > When selecting a regulation for the assessment, the **Supported services** column shows which services are supported by the regulation template. If the service related to your connector isn't listed, the connector won't show up as an option in step 3, below.
+    > When selecting a regulation for the assessment, the **Supported services** column on the **Select regulation** flyout pane shows which services are supported by the regulation template. If the service related to your connector isn't listed, the connector won't show up as an option in step 3, below.
 
-1. When you arrive at the **Select services** page and choose **Select services**, you should see the name of the product related to your activated connector; for example, Salesforce.
+1. When you arrive at the **Select services** page and choose **Select services**, you should see the name of the product related to your activated connector; for example, Salesforce. Check the box next to the service name, select **Add**, then select **Next**.
 
 1. At the **Service instances** page, you choose one or more connectors you've activated for the service. On the row listing your service, select **Manage service instances**.
 
-1. A flyout pane lists all the service instances for your connector. Each instance represents a connector for a service activated by your organization. All service instances are checked by default. If you want the assessment to cover all instances, which means the assessment uses all connectors you activated for that service, leave them all checked and select **Cancel**. Or, uncheck any instances that you don't want to cover in the assessment and select **Update**.
+1. A flyout pane lists all the service instances for your connector. Each instance represents a connector activated by your organization. All service instances are checked by default. If you want the assessment to cover all instances, which means the assessment uses all connectors you activated for that service, leave them all checked and select **Cancel**. Or, uncheck any instances that you don't want to cover in the assessment and select **Update**.
 
 1. Back at the **Service instances** page, select **Next**.
 
@@ -119,7 +119,7 @@ To delete a connector, you need to first locate your connector in the Purview **
 
 1. In the Microsoft Purview compliance portal, select **Data connectors** in the left nav.
 1. Select the **My Connectors** tab.
-1. Locate the connector you want to delete from the list and select the checkbox next to its name. Select the **Delete** command at the top of the list.
-1. On the confirmation box, select **Delete**.
+1. Locate the connector that you want to delete on the list and select the checkbox next to its name. Select the **Delete** command at the top of the list.
+1. In the delete confirmation dialog box, select **Delete**.
 
 Your connector is deleted and removed from the list of your connectors.
