@@ -31,11 +31,11 @@ Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports dif
 
 ## Setup steps
 
-#### Enable permissions
+#### 1. Enable permissions
 
 The user who handles the connector activation process for Zoom needs view and edit permissions so that they can set up a Server-to-Server OAuth app in Zoom. The administrator must enable the Server-to-Server OAuth app role by going to **User Management** > **Roles** > **Role Settings** > **Advanced features** and selecting the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
 
-#### Create a Server-to-Server OAuth app
+#### 2. Create a Server-to-Server OAuth app
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
@@ -54,6 +54,12 @@ Follow the steps below to create a Server-to-Server OAuth app to use with accoun
 1. On the **Activation** page: Select **Activate your app**. Your app should be activated. If you see errors preventing activation, address them and retry the activation. You won't be able to generate an access token to make API calls unless your app is activated.
 
 If your app is deactivated, existing tokens will no longer work. You can also choose to deactivate your app in this section.
+
+#### 3. Activate connector in Compliance Manager
+
+When you activate a Zoom connector in Compliance Manager, you'll provide your Account ID, Client ID, and Client secret. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](ompliance-manager-connectors.md).
+
+## More resources
 
 #### Get access tokens for development environments
 
@@ -75,7 +81,7 @@ GET https://api.zoom.us/v2/accounts/me/settings?option=security
 
 Authorization: Bearer {Your token here}
 
-## About Zoom account credentials
+### About Zoom account credentials
 
 **Zoom Account client credentials grant type**
 

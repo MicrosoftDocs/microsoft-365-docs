@@ -32,13 +32,15 @@ The Salesforce connector for Compliance Manager uses the SOAP API and UsernameTo
 Login requests are handled through the standard frontdoor.jsp page in Salesforce Sales Cloud. Following a successful login, a sessionId is returned. The returned sessionId functions as proof of authentication and must be provided as a header for all authenticated requests. Unsecure connections are blocked, so requests must be made through HTTPS or TLS 1.2+.
 
 ## Setup steps 
-Follow the steps below to get the information needed to [activate a connector](compliance-manager-connectors.md#step-2-activate-the-connector-in-compliance-manager) for Salesforce in Compliance Manager. 
+Follow the steps below to get the information needed to [activate a connector](compliance-manager-connectors.md#step-2-activate-the-connector-in-compliance-manager) for Salesforce in Compliance Manager.
 
 > [!TIP]
 > This process involves obtaining a token for a given Salesforce account. Therefore, if you activate multiple connectors for multiple Salesforce accounts, you'll need to repeat this process for each account in order to get the token.
 
 1. Log in to your Salesforce account with your credentials.
+
 1. Go to your account **Settings** and select **Reset My Security Token**. This can be done by any user.
+
 1. Select **Reset Security** to get a new security token sent to your email.
 
-When you activate a Salesforce connector in Compliance Manager, you'll provide your **Username**, **Password**, and **Security token**. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector.
+1. Activate connector in Compliance Manager. When you activate a Salesforce connector in Compliance Manager, you'll provide your **Username**, **Password**, and **Security token**. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](ompliance-manager-connectors.md).
