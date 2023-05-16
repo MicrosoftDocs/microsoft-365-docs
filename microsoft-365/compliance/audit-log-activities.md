@@ -462,6 +462,9 @@ For a description of Shifts app activities, see [Search the audit log for events
 
 The following table lists the activities in Microsoft To Do that are logged in the Microsoft 365 audit log. For more information about Microsoft To Do, see [Support for Microsoft To Do](https://support.microsoft.com/todo).
 
+> [!NOTE]
+> Auditing events for Microsoft To Do activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
 |Friendly name|Operation|Description|
 |:------------|:--------|:----------|
 |Accepted sharing link on folder|AcceptedSharingLinkOnFolder|Accepted sharing link for a folder.|
