@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 05/02/2023
+ms.date: 05/04/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -217,9 +217,24 @@ For Windows 10 release information, see the [Windows lifecycle fact sheet](https
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, Windows Server 2016, and Windows Server 2012 R2 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+
+### 20230503.1
+
+- Defender package version: **20230503.1**
+- Security intelligence version: **1.389.44.0**
+- Engine version: **1.1.20300.3**
+- Platform version: **4.18.2304.8**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
 
 ### 20230330.2
 

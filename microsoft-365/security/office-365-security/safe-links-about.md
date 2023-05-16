@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
   - '197503'
-ms.date: 4/20/2023
+ms.date: 5/3/2023
 ms.localizationpriority: medium
 ms.collection:
   - Strat_O365_IP
@@ -48,11 +48,11 @@ Watch this short video on how to protect against malicious links with Safe Links
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients who are licensed for Defender for Office (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
+> Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection in e-mail messages, Microsoft Teams, and files in supported Office apps to all recipients for customers that have at least one Defender for Office 365 license (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
-Safe Links protection is available in the following locations:
+Safe Links protection by Safe Links policies is available in the following locations:
 
-- **Email messages**: Safe Links protection for links in email messages is controlled by Safe Links policies.
+- **Email messages**: Safe Links protection for links in email messages.
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
@@ -63,34 +63,21 @@ Safe Links protection is available in the following locations:
   >
   > Using another service to wrap links before Defender for Office 365 might prevent Safe Links from process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
-- **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
+- **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels.
 
   For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this article.
 
-- **Office apps**: Safe Links protection for supported Office desktop, mobile, and web apps is controlled by Safe Links policies.
+- **Office apps**: Safe Links protection for supported Office desktop, mobile, and web apps.
 
   For more information about Safe Links protection in Office apps, see the [Safe Links settings for Office apps](#safe-links-settings-for-office-apps) section later in this article.
-
-This article includes detailed descriptions of the following types of Safe Links settings:
-
-- **Settings in Safe Links policies**: These settings apply only to the users who are included in the specific policies, and the settings might be different between policies. These settings include:
-
-  - [Safe Links settings for email messages](#safe-links-settings-for-email-messages)
-  - [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams)
-  - [Safe Links settings for Office apps](#safe-links-settings-for-office-apps)
-  - ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
-
-- **Global Safe Links settings**: The only available global setting for Safe Links is the "Block the following URLs" list. As of April 1 2023, the "Block the following URLs" list for Safe Links no longer works. For more information, see [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880). Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
-
-  To see and remove any leftover URL entries in the "Block the following URLs list, see [Configure the "Block the following URLs" list for Safe Links in Defender for Office 365](safe-links-policies-global-settings-configure.md).
 
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
 |Scenario|Result|
 |---|---|
-|Jean is a member of the marketing department. Safe Links protection for Office apps is turned on in a Safe Links policy that applies to members of the marketing department. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <p> Jean is included in a Safe Links policy where Safe Links protection for Office apps is turned on. <p> For more information about the requirements for Safe Links protection in Office apps, see the [Safe Links settings for Office apps](#safe-links-settings-for-office-apps) section later in this article.|
-|Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email from an external sender that contains a URL to a malicious website that he ultimately clicks.|Chris is protected by Safe Links. <p> The **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).|
-|In Pat's organization, admins have created a Safe Links policy that applies Pat, but Safe Links protection for Office apps is turned off. Pat opens a Word document and clicks a URL in the file.|Pat isn't protected by Safe Links. <p> Although Pat is included in an active Safe Links policy, Safe Links protection for Office apps is turned off in that policy, so the protection can't be applied.|
+|Jean is a member of the marketing department. Safe Links protection for Office apps is turned on in a Safe Links policy that applies to members of the marketing department. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <br><br> Jean is included in a Safe Links policy where Safe Links protection for Office apps is turned on. <br><br> For more information about the requirements for Safe Links protection in Office apps, see the [Safe Links settings for Office apps](#safe-links-settings-for-office-apps) section later in this article.|
+|Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email from an external sender that contains a URL to a malicious website that he ultimately clicks.|Chris is protected by Safe Links. <br><br> The **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).|
+|In Pat's organization, admins have created a Safe Links policy that applies Pat, but Safe Links protection for Office apps is turned off. Pat opens a Word document and clicks a URL in the file.|Pat isn't protected by Safe Links. <br><br> Although Pat is included in an active Safe Links policy, Safe Links protection for Office apps is turned off in that policy, so the protection can't be applied.|
 |Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.|
 
 ## Recipient filters in Safe Links policies
@@ -212,7 +199,7 @@ Safe Links protection for Office apps has the following client requirements:
 
 - Users are signed in using their work or school accounts. For more information, see [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
-For more information about the recommended values for Standard and Strict policy settings, see [Global settings for Safe Links](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
+For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 ### How Safe Links works in Office apps
 
@@ -290,7 +277,7 @@ Examples of the values that you can enter and their results are described in the
 |Value|Result|
 |---|---|
 |`contoso.com`|Allows access to `https://contoso.com` but not subdomains or paths.|
-|`*.contoso.com/*`|Allows access to a domain, subdomains, and paths (for example, `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`). <p> This entry is inherently better than `*contoso.com*`, because it doesn't allow potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
+|`*.contoso.com/*`|Allows access to a domain, subdomains, and paths (for example, `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`). <br><br> This entry is inherently better than `*contoso.com*`, because it doesn't allow potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Allows access to `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Allows access to `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`|
 
@@ -318,56 +305,8 @@ The clicked URL points to a site that has been identified as malicious. We recom
 
 :::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="The warning that states that the website is classified as malicious" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
-### Blocked URL warning
-
-> [!IMPORTANT]
-> As described in [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880), the "Block the following URLs" list for Safe Links no longer works as of April 1 2023.
-
-The clicked URL has been manually blocked by an admin in your organization (the **Block the following URLs** list in the global settings for Safe Links). The link wasn't scanned by Safe Links because it was manually blocked.
-
-There are several reasons why an admin would manually block specific URLs. If you think the site shouldn't be blocked, contact your admin.
-
-:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="The warning that states that website was blocked by your admin" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
-
 ### Error warning
 
 Some kind of error has occurred, and the URL can't be opened.
 
 :::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="The warning that states the page that you are trying to access cannot be loaded" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
-
-## "Block the following URLs" list for Safe Links
-
-> [!IMPORTANT]
-> As described in [MC373880](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC373880), the ability to add entries to the "Block the following URLs" list for Safe Links was deprecated in June 2022, and the list no longer works as of April 1 2023. Instead, use [block entries for URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). Messages that are blocked by URL entries in the Tenant Allow/Block List are quarantined as high confidence phishing.
-
-The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
-
-- Email messages.
-- Documents in Office apps in Windows and Mac.
-- Documents in Office for iOS and Android.
-
-When a user in an active Safe Links policy clicks a blocked link in a supported app, they're taken to the [Blocked URL warning](#blocked-url-warning) page.
-
-You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](safe-links-policies-global-settings-configure.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
-
-**Notes**:
-
-- Limits for the **Block the following URLs** list:
-  - The maximum number of entries is 500.
-  - The maximum length of an entry is 128 characters.
-  - All of the entries can't exceed 10,000 characters.
-- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) blocks any URL that contains the domain.
-- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
-- You can include up to three wildcards (`*`) per URL entry.
-
-### Entry syntax for the "Block the following URLs" list
-
-Examples of the values that you can enter and their results are described in the following table:
-
-|Value|Result|
-|---|---|
-|`contoso.com` <p> or <p> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
-|`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
-|`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
-|`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|

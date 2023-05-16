@@ -162,7 +162,7 @@ sections:
         answer: |
           The short answer is yes! If enabled in Exchange Online, PDF encryption allows you to protect sensitive PDF documents attached to emails. When you send an email, the Office 365 service encrypts PDF file attachments for Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android. You can encrypt PDFs you send without any more steps.
           
-          Outlook Win32 does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP policies to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the Microsoft Purview Message Encryption protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
+          Outlook Win32 does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP policies to apply encryption to PDF attachments first. When you send an *unencrypted* mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the unencrypted mail, the service applies the Microsoft Purview Message Encryption protection through the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online encrypts the message and the PDF file attachment.
           
           To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
           
@@ -183,7 +183,7 @@ sections:
       - question: |
           What email clients support preview of encrypted attachments in protected emails?
         answer: |
-          When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+          When attachments are protected with a protected mail, Outlook clients provide the ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
 
       - question: |
           What email clients support revocation of protected emails?
@@ -209,7 +209,7 @@ sections:
 
           Can I automatically remove encryption on journal mail?
         answer: |
-          For an Exchange Online mailbox, admins must enable journal decryption and set up an Exchange Online journaling rule to generate a decrypted copy of the mail into the journaling mailbox. The journaling rule will take any mail or attachment that have encryption and send the original plus a decrypted copy into the journaling mailbox. You can only set up a journaling rule that can decrypt mail or attachments when the encrypted item originates from your organization.  
+          For an Exchange Online mailbox, admins must enable journal decryption and set up an Exchange Online journaling rule to generate a decrypted copy of the mail into the journaling mailbox. The journaling rule will take any mail or attachment that has encryption and send the original plus a decrypted copy into the journaling mailbox. You can only set up a journaling rule that can decrypt mail or attachments when the encrypted item originates from your organization.  
           To enable Exchange Online journaling:
           
           ```powershell
