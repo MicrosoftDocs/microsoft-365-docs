@@ -1,5 +1,5 @@
 ---
-title: Create conditional fields for content assembly in Microsoft Syntex
+title: Create conditional sections for templates in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create conditional fields for content assembly in Microsoft Syntex.
+description: Learn how to create conditional sections for templates in Microsoft Syntex.
 ---
 
-# Create conditional fields for content assembly in Microsoft Syntex
+# Create conditional sections for templates in Microsoft Syntex
