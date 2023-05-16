@@ -30,7 +30,7 @@ An Office add-in can be used on Word, Excel, PowerPoint, and Outlook. These add-
 
 ## Before you begin
 
-Management and deployment via Integrated Apps requires that the users are using Microsoft 365 Business licenses     (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
 
 ### Office Requirements
 
@@ -54,7 +54,7 @@ For Outlook, your users must be using one of the following:
 
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying  /pre-installing add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
-Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the Test-OAuthConnectivity PowerShell cmdlet.
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the *Test-OAuthConnectivity* PowerShell cmdlet.
 
 Deployment doesn't support the following:
 - Add-ins that target Word, Excel, or PowerPoint in Office 2013
@@ -81,7 +81,7 @@ Add-ins are supported in three desktop platforms Windows, Mac, and Online Office
 
 It can take up to 24 hours for an add-in to show up for client for all users.
 
-Today both Exchange Admins and Global  Admins can deploy add-ins from Integrated apps. This feature is coming for Azure Application Admins in May 2023.
+Today, Exchange admins, Global admins, and Azure Application admins can deploy add-ins from Integrated apps. 
 
 ## Deploy your Office add-ins
 
@@ -99,7 +99,7 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 
 ### Considerations when deploying an add-in to users and groups
 
-Global admins and Exchange admins can deploy an add-in to everyone or to specific users and groups. Each option has implications:
+Admins can deploy an add-in to everyone or to specific users and groups. Each option has implications:
 
 - **Everyone**: This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization.
 - **Users**: If you assign an add-in to an individual user, and then deploy the add-in to a new user, you must first add the new user.
@@ -197,7 +197,8 @@ Managing how users can install and use Office add-ins means that you decide who 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the above setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. Note to reviews: Add link to MOS app management
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
+
 
 ## Upload Custom Office Add-ins in your organization  
 

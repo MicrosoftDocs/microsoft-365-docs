@@ -48,7 +48,7 @@ Integrated Apps can be accessed via the Microsoft 365 Admin Center. Select **Set
 
 ## Who can access Integrated Apps
 
-The Integrated apps portal is available to world-wide customers only and can be accessed by Global Admins, Global Readers, Exchange admins and Azure Application Admins (made available in May 2023). This feature is not available in sovereign and government clouds.
+The Integrated apps portal is available to world-wide customers only and can be accessed by Global Admins, Global Readers, Exchange admins, and Azure Application Admins (made available in May 2023). This feature is not available in sovereign and government clouds.
 
 To learn more about these roles, see [Azure AD built-in roles - Microsoft Entra|Microsoft Learn](/azure/active-directory/roles/permissions-reference#all-roles).
 
@@ -81,11 +81,11 @@ As an admin, the following app/add-in types can be managed from the Integrated a
 
 |Type|Supported Host Products (any or all)|What can admins control on Integrated Apps portal?|Which admins can access the controls on Integrated Apps portal?|Other admin centers & related actions|
 |---|---|---|---|---|
-|Add-in|Outlook, Word, Excel, PowerPoint|[Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)|Exchange Admin, Global Admin, Azure Application Admin| Exchange Admin Center for default role assignment policy.<br/>  Microsoft 365 Admin Center > Org Settings for Office Store setting|
+|Add-in|Outlook<br/><br/><br/> Word, Excel, PowerPoint|[Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)|Exchange Admin<br/><br/> Global Admin<br/><br/> Azure Application Admin| Exchange Admin Center for default role assignment policy.<br/><br/>  Microsoft 365 Admin Center > Org Settings for Office Store setting|
 |SPFx App|SharePoint|[Deploy/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)|Global Admin|SharePoint Admin Center|
-|Web App|N/A|[Deploy/Edit deployed users](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins) |Global Admin, Azure Application Admin|Azure Active Directory portal|
+|Web App|N/A|[Deploy/Edit deployed users](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins) |Global Admin<br/><br/>Azure Application Admin|Azure Active Directory portal|
 |Teams app (manifest version less than 1.13)|Teams|[Block & Unblock](/microsoft-365/admin/manage/teams-apps-work-only-on-teams)|Global Admin|Go to Teams admin center for default tenant setting, deployment and managing availability|
-|Teams app (manifest version equal to or greater than 1.13)|Outlook, Microsoft 365 App, Teams|- [Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins).<br/>- [Block & Unblock](/microsoft-365/admin/manage/teams-apps-work-only-on-teams) <br/>- [Manage availability>Edit users](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#manage-how-users-can-install-teams-apps-on-outlook-and-the-microsoft-365-app)<br/>- [Default setting for tenant](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#customize-default-settings-for-teams-apps-that-work-on-outlook-and-the-microsoft-365-app)|Global Admin, Azure Application Admin|Go to Teams admin center to manage how this app shows up in Teams for users in your organization.|
+|Teams app (manifest version equal to or greater than 1.13)|Outlook<br/><br/> Microsoft 365 App<br/><br/> Teams| [Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)<br/><br/> [Block & Unblock](/microsoft-365/admin/manage/teams-apps-work-only-on-teams) <br/><br/> [Manage availability>Edit users](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#manage-how-users-can-install-teams-apps-on-outlook-and-the-microsoft-365-app)<br/><br/> [Default setting for tenant](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#customize-default-settings-for-teams-apps-that-work-on-outlook-and-the-microsoft-365-app)|Global Admin<br/><br/>Azure Application Admin|Go to Teams admin center to manage how this app shows up in Teams for users in your organization.|
 
 ## Other admin centers
 
