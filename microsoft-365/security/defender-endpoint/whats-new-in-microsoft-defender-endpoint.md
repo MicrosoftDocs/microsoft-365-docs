@@ -61,6 +61,10 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## May 2023
+
+- Performance mode capability in Microsoft Defender Antivirus is now available for public preview. For more information, see  [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
+
 ## March 2023
 
 - Support for [Mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is now in preview! With these capabilities, you can [Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)](defender-endpoint-subscription-settings.md).
