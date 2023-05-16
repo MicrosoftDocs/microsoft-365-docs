@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/15/2021
+ms.date: 05/16/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -311,10 +311,11 @@ Custom sensitive information types will also be detected in addition to the abov
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
+
 |**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Exact Data match SITs|subset||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all SITS are supported for E5 users; pre-configured SITs and customer SITs are supported for E3 users|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
+|UPDATE THIS ROW **Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all SITS are supported for E5 users; pre-configured SITs and customer SITs are supported for E3 users|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported on Outlook mobile|
 |**Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook for Mac|
 |**SharePoint Online/OneDrive for Business Web client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all SPO/ODB predicates and actions in DLP||
