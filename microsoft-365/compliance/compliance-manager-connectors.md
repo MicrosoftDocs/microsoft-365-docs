@@ -23,9 +23,7 @@ description: "Set up connectors to build assessments for non-Microsoft services 
 
 # Working with connectors in Compliance Manager
 
-Compliance Manager offers a comprehensive set of connectors designed to help you gain a clear  understanding of your compliance obligations across the services used in your organization. These connectors seamlessly connect to your non-Microsoft services you might typically use and integrate them into your assessments for automatic monitoring and testing of controls.
-
-Connecting your services to Compliance Manager requires a few simple setup steps. Once your connector is activated, you can select it as an in-scope service when creating an assessment.
+Compliance Manager offers a comprehensive set of connectors designed to help you gain a clear understanding of your compliance obligations across the services used in your organization. The connectors provide a seamless link to  non-Microsoft services so that you can include them in your assessments and take advantage of automatic monitoring and testing of controls. Connecting your services to Compliance Manager requires a few simple setup steps. Once your connector is activated, you can select it as an in-scope service when creating an assessment.
 
 ## Available connectors
 The connectors available for Compliance Manager are listed below. More connectors will be available in the coming months.
