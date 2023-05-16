@@ -28,9 +28,9 @@ The insights report in [information barriers](information-barriers.md) (IB) can 
 
 The insights report provides the following information for the top 100 most actively used sites and accounts in your organization:
 
-|**Mode**|**Description**|**Applies to**|
+|**Section**|**Description**|**Applies to**|
 |:-------|:--------------|:-------------|
-|Explicit|Top restrictive sites with highest collaboration between IB users|SharePoint sites and OneDrive accounts|
+|Explicit mode section|Top restrictive sites with highest collaboration between IB users|SharePoint sites and OneDrive accounts|
 |Implicit|Top sites with highest collaboration between compatible users|SharePoint sites only|
 |Mixed|Top accounts with collaboration between segmented and unsegmented users|OneDrive accounts only|
 |Mode Distribution|The number and percentage of modes across all sites and accounts|SharePoint sites and OneDrive accounts|
@@ -152,7 +152,7 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistributi
 To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>
 ```
 
 **Example**:
@@ -168,7 +168,7 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>`
 `CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
 `QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
 
-In this example, the insights report results are displayed for OneDrive accounts included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to SharePoint) isn't listed, there aren't any OneDrive accounts in the organization with that mode.
+In this example, the insights report results are displayed for OneDrive accounts included in the organization with an ID of *ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776*. The values in the *Content* line represent the modes that have results in the report. If a mode (applicable to OneDrive) isn't listed, there aren't any OneDrive accounts in the organization with that mode.
 
 ### View the details for a specific mode for OneDrive accounts
 
