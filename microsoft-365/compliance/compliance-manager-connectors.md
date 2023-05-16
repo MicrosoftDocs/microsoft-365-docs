@@ -26,7 +26,7 @@ description: "Set up connectors to build assessments for non-Microsoft services 
 Compliance Manager offers a comprehensive set of connectors designed to help you gain a clear understanding of your compliance obligations across the services used in your organization. The connectors provide a seamless link to  non-Microsoft services so that you can include them in your assessments and take advantage of automatic monitoring and testing of controls. Connecting your services to Compliance Manager requires a few simple setup steps. Once your connector is activated, you can select it as an in-scope service when creating an assessment.
 
 ## Available connectors
-The connectors available for Compliance Manager are listed below. More connectors will be available in the coming months.
+The connectors available for Compliance Manager are listed below, with more available in the coming months.
 
 - Salesforce
 - Zoom
@@ -107,7 +107,7 @@ The assessment details page shows a detailed view of the assessment's rate of pr
 
 Every 24 hours, connector signals are refreshed and any updated status is reflected in your assessment. This means that Compliance Manager provides daily automated refreshed status of configurations in the products for which you've activated connectors.
 
-All improvement actions that are monitored through connectors are automatically monitored and tested so that Compliance Manager can determine whether controls are passing or failing. Improvement action test status is reflected in your assessments, so that you can take the necessary actions in your non-Microsoft products to satisfy a control requirement.
+All improvement actions that are monitored through connectors are automatically monitored and tested so that Compliance Manager can determine whether controls are passing or failing. Improvement action test status is reflected in your assessments so that you can take the necessary actions in your non-Microsoft products to satisfy a control requirement.
 
 ## Editing a connector
 
