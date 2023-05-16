@@ -227,7 +227,7 @@ There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert 
 
    IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
 
-     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-ioc.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-ioc.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
 
    To set multiple rule conditions, use **AND**, **OR**, and grouping options to build relationship between these multiple 'evidence types' that cause the alert.
 
@@ -251,7 +251,7 @@ There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert 
    > [!NOTE]
    > The **alert title (Name)** is based on the **alert type (IoaDefinitionId)**, which decides the alert title. Two alerts that have the same alert type can change to a different alert title.
 
-     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action2.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
 
 To tune an alert from the **Alerts** page:
 
@@ -259,7 +259,7 @@ To tune an alert from the **Alerts** page:
 
     You can tune an alert through the **Tune alert** pane that automatically opens on the right side of the alert details page.
 
-   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane.png" lightbox="../../media/investigate-alerts/alert-tuning-tune-pane.png" alt-text="Screenshot of Tune an alert pane within an Alert page.":::
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane2.png" lightbox="../../media/investigate-alerts/alert-tuning-tune-pane2.png" alt-text="Screenshot of Tune an alert pane within an Alert page.":::
 
 2. Select the conditions where the alert applies in the **Alert types** section. Select **Only this alert type** to apply the rule on the selected alert.
 
