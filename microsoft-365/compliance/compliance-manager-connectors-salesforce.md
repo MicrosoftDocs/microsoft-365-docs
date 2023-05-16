@@ -43,4 +43,4 @@ Follow the steps below to get the information needed to [activate a connector](c
 
 1. Select **Reset Security** to get a new security token sent to your email.
 
-1. Activate connector in Compliance Manager. When you activate a Salesforce connector in Compliance Manager, you'll provide your **Username**, **Password**, and **Security token**. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](ompliance-manager-connectors.md).
+1. Activate connector in Compliance Manager. When you activate a Salesforce connector in Compliance Manager, you'll provide your **Username**, **Password**, and **Security token**. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).

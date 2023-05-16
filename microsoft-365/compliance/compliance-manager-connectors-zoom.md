@@ -57,7 +57,7 @@ If your app is deactivated, existing tokens will no longer work. You can also ch
 
 #### 3. Activate connector in Compliance Manager
 
-When you activate a Zoom connector in Compliance Manager, you'll provide your Account ID, Client ID, and Client secret. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](ompliance-manager-connectors.md).
+When you activate a Zoom connector in Compliance Manager, you'll provide your Account ID, Client ID, and Client secret. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## More resources
 
