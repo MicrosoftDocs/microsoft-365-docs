@@ -23,26 +23,21 @@ description: "Learn how to configure endpoint data loss prevention (DLP) central
 
 # Configure endpoint data loss prevention settings
 
-Many aspects of Endpoint data loss prevention (DLP) behavior are controlled by centrally configured settings. Settings are applied to all DLP policies for devices.
-
-![Endpoint DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
-
-You must configure these settings if you intend to control:
+Many aspects of Endpoint data loss prevention (DLP) behavior are controlled by centrally configured settings that are applied to all DLP policies for devices. Use these settings to control the following:
 
 - Cloud egress restrictions
 - Various types of restrictive actions on user activities per application.
 - File path exclusions for Windows and macOS devices.
 - Browser and domain restrictions.
 - How business justifications for overriding policies appear in policy tips.
-- If activities on Office, PDF, and CSV files are automatically audited.
+- Whether actions performed on Office, PDF, and CSV files are automatically audited.
+
+To access these settings, from the Microsoft Purview compliance center, navigate to **Data loss prevention** > **Endpoint DLP settings**.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## DLP settings
-
-Before you get started, you should set up your DLP settings. 
-
-### Endpoint DLP Windows 10/11 and macOS settings
+## Endpoint DLP Windows 10/11 and macOS settings
+The following table describes the supported endpoint settings for Windows 10/11 and macOS.
 
 |Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
@@ -64,15 +59,15 @@ Before you get started, you should set up your DLP settings.
 |Notification customization|Supported | Supported (preview)|
 |Archive file| Supported | Not supported| |
 |File type and File extension |Supported | Not supported| |
+| | | | |
 
+## Advanced classification scanning and protection
 
-### Advanced classification scanning and protection
+Advanced classification scanning and protection allows the Microsoft Purview cloud-based data classification service to scan items, classify them, and return the results to the local machine. This means that you can take advantage of classification techniques such as [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
 
-Advanced classification scanning and protection allows the more advanced Microsoft Purview cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
+When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth usage is a concern, you can set a limit on how much bandwidth can be used in a rolling 24-hour period. The limit is configured in **Endpoint DLP settings** and is applied per device. If you set a bandwidth usage limit and it's exceeded, DLP stops sending the user content to the cloud. At that point, data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When the cumulative bandwidth usage drops below the rolling 24-hour limit, communication with the cloud services resumes.
 
-When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services resumes.
-
-If bandwidth utilization isn't a concern, you select **No limit** to allow unlimited bandwidth utilization.
+If bandwidth usage isn't a concern, select **No limit** to allow unlimited bandwidth use.
 
 These Windows versions support advanced classification scanning and protection:
 
@@ -82,49 +77,46 @@ These Windows versions support advanced classification scanning and protection:
 - Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
-> Support for advanced classification is available for Office (Word, Excel, PowerPoint) and PDF file types.
-
-> [!NOTE]
-> DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
+>  - Support for advanced classification is available for Office (Word, Excel, PowerPoint) and PDF file types.
+> 
+> - DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 > [!TIP]
-> Advanced classification must be enabled to see contextual text  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+> To use advanced classification for Windows 10 devices, you must install KB5016688. To use advanced classification for Windows 11 devices, you must install KB5016691 be installed for Windows 11 devices. Additionally, you must enable advanced classification before **Activity explorer** will display contextual text for DLP rule-matched events. To learn more about contextual text, see [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  
 
-### File path exclusions
+## File path exclusions
 
-Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
+If you want to exclude certain paths from DLP monitoring, DLP alerts, and DLP policy enforcement on your devices, you can turn those off by setting up file path exclusions. Files in excluded locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. To configure path exclusions in DLP settings, navigate to [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
 
-You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they're too noisy or don’t contain files you're interested in. Files in those locations won't be audited and any files that are created or modified in those locations won't be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
+### Windows 10/11 devices
 
-#### Windows 10/11 devices
+You can use the following logic to construct your exclusion paths for Windows 10/11 devices:
 
-You can use this logic to construct your exclusion paths for Windows 10/11 devices:
+- Valid file path that ends with `\`, means only files directly under the specified folder will be excluded. <br/> Example: `C:\Temp\`
 
-- Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
+- Valid file path that ends with `\*`, means only files within subfolders of the specified folder will be excluded. Files directly under the specified folder itself aren't excluded. <br/> Example: `C:\Temp\*`
 
-- Valid file path that ends with `\*`, which means only files under subfolders. Files directly under the folder aren't excluded. <br/>For example: `C:\Temp\*`
+- Valid file path that ends without `\` or `\*`, means all files directly under the specified folder and all of its subfolders will be excluded. <br/> Example: `C:\Temp`
 
-- Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
+- A path with wildcard between `\` from each side. <br/> Example: `C:\Users\*\Desktop\`
 
-- A path with wildcard between `\` from each side. <br/>For example: `C:\Users\*\Desktop\`
+- A path with wildcard between `\` from each side and with `(number)` to specify the exact number of subfolders to be excluded. <br/> Example: `C:\Users\*(1)\Downloads\`
 
-- A path with wildcard between `\` from each side and with `(number)` to give exact number of subfolders. <br/>For example: `C:\Users\*(1)\Downloads\`
+- A path with SYSTEM environment variables. <br/> Example: `%SystemDrive%\Test\*`
 
-- A path with SYSTEM environment variables. <br/>For example: `%SystemDrive%\Test\*`
+- A mix of all the above. <br/> Example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-- A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
+### macOS devices
 
-#### macOS devices
-
-Similar to Windows 10/11 devices you can add your own exclusions for macOS devices.
+You can also add your own exclusions for macOS devices.
 
 - File path definitions are case insensitive, so `User` is the same as `user`.
 
-- Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+- Wildcard values are supported. So a path definition can contain an asterisk (`*`) in the middle of the path or at the end of the path. <br/> Example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
-##### Recommended file path exclusions (preview)
+#### Recommended file path exclusions (preview)
 
-For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
+For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them by toggling the **Include recommended file path exclusions for Mac** option. The list includes:
 
 - /Applications/*
 - /System/*
@@ -134,30 +126,34 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 - /opt/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
-### Set up evidence collection for file activities on devices (preview)
+## Set up evidence collection for file activities on devices (preview)
 
-DLP can copy items that match policies on devices to an [Azure storage account](/azure/storage/common/storage-account-overview.md). This is useful for auditing policy activity and troubleshooting why a specific item matched a policy. Use this section to add name and url of storage account. Before you enable this feature, you must create an Azure storage account and a container in the storage account and configuring permissions. As you configure this, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider configuring [Azure storage account access tiers](/azure/storage/blobs/storage-blob-storage-tiers.md) and [Azure storage account pricing](/azure/storage/common/storage-account-overview#pricing.md).
+When it identifies items that match policies on devices, DLP can copy them to an [Azure storage account](/azure/storage/common/storage-account-overview.md). This is useful for auditing policy activity and troubleshooting specific matches. Use this section to add the name and URL of the storage account. 
 
-- For more information on this feature, see [Learn about collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-learn.md)  
-- For more information on how to configure this feature, see [Get started with collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-get-started.md)
+> [!NOTE]
+> Before you enable this feature, you must create an Azure storage account and a container in that storage account. You must also configure permissions for the account. As you set up your Azure storage account, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider configuring [Azure storage account access tiers](/azure/storage/blobs/storage-blob-storage-tiers.md) and [Azure storage account pricing](/azure/storage/common/storage-account-overview#pricing.md).
 
-### Network share coverage and exclusions
+- For more information on this feature, see [Learn about collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-learn.md).  
+- For more information on how to configure this feature, see [Get started with collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-get-started.md).
+
+## Network share coverage and exclusions
+
+**Network share coverage and exclusions** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, coverage and exclusions will also be extended to network shares and mapped drives. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
 
 > [!IMPORTANT]
-> To use **Network share coverage and exclusions** devices must have these updates applied:
+> To use **Network share coverage and exclusions**, devices must have the following updates applied:
 > - Windows 10 - [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23), [March 28, 2023—KB5023774 (OS Build 22000.1761) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839) 
 >- Windows 11 - [March 28, 2023—KB5023778 (OS Build 22621.1485) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
 >
 > - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates.md#april-2023-platform-41823048--engine-11203003)
 
-**Network share coverage and exclusions** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
+The following table shows the default settings for network share coverage and exclusions.
 
 |Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
 |---------|---------|---------|
 |Enabled     |Disabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
-|Disabled    |Enabled         |- Just in time protection is applied only to the files that are on storage devices that are local to the endpoint. |
-|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all the network shares and mapped drives that the device is connected to.         |
-
+|Disabled    |Enabled         |- Just in time protection is applied only to the files on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all network shares and mapped drives that the device is connected to.         |
 
 **Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions).
 
@@ -167,9 +163,9 @@ DLP can copy items that match policies on devices to an [Azure storage account](
 |Disabled|Enabled|- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders.  [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)|
 |Enabled | Enabled|- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)</br>- Policies that are scoped to On-premises repositories can enforce protective actions on on-premises data-at-rest in file shares and SharePoint document libraries and folders. [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions)  
 
-### Restricted apps and app groups
+## Restricted apps and app groups
 
-#### Restricted apps
+### Restricted apps
 
 **Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP takes when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10/11 and macOS devices.
 
@@ -181,7 +177,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > [!IMPORTANT]
 > The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
-#### File activities for apps in restricted app groups (preview)
+### File activities for apps in restricted app groups (preview)
 
 Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy, you can take the actions defined in this table.
 
@@ -194,15 +190,15 @@ Restricted app groups are collections of apps that you create in DLP settings an
 > [!IMPORTANT]
 > Settings in a restricted app group override any restrictions set in the restricted apps list when they are in the same rule. So, if an app is on the restricted apps list and is a member of a restricted apps group, the settings of the restricted apps group is applied.
 
-#### How DLP applies restrictions to activities
+### How DLP applies restrictions to activities
 
 Interactions between **File activities for apps in restricted app groups**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
 
-##### Restricted app groups overrides
+#### Restricted app groups overrides
 
 Configurations defined in **File activities for apps in restricted app groups** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
 
-##### Restricted app activities and File activities for all apps
+#### Restricted app activities and File activities for all apps
 
 The configurations of **Restricted app activities** and **File activities for all apps** work in concert if the action defined for **Restricted app activities** is either `Audit only`, or `Block with override` in the same rule. This is because actions defined for **Restricted app activities** only apply when a user accesses a file using an app that's on the list. Once the user has access, the actions defined for activities in **File activities for all apps** apply. 
 
@@ -225,11 +221,11 @@ User A opens a DLP protected file using Notepad. DLP allows the access and audit
 > [!NOTE]
 > When the DLP action to take in **Restricted app activities** is set to `block`, all access is blocked and the user cannot perform any activities on the file.
    
-##### File activities for all apps only
+#### File activities for all apps only
 
 If an app isn't in **File activities for apps in restricted app groups** or isn't in the **Restricted app activities** list or is in the **Restricted app activities** list with an action of `Audit only`, or 'Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
-#### macOS devices
+### macOS devices
 
 Just like on Windows devices, you'll now be able to prevent macOS apps from accessing sensitive data by defining them in the **Restricted app activities** list. 
 
@@ -244,17 +240,17 @@ To find the full path of Mac apps:
   
 3. For macOS apps, you need the full path name, including the name of the app.
 
-#### Protect sensitive data from cloud synchronization apps
+### Protect sensitive data from cloud synchronization apps
 
 To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
 
-##### Autoquarantine 
+#### Autoquarantine 
 
 When enabled, Autoquarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Autoquarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
 You can use autoquarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with autoquarantine](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine).
 
-### Unallowed Bluetooth apps
+## Unallowed Bluetooth apps
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
@@ -262,7 +258,7 @@ Prevent people from transferring files protected by your policies via specific B
 
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
 
-#### Unallowed browsers
+### Unallowed browsers
 
 For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users see a toast notification asking them to open the file through Microsoft Edge.
 
@@ -349,7 +345,7 @@ For example:
 
 Up to 50 domains can be configured under Service domains.	
 	
-#### Sensitive service domains
+### Sensitive service domains
 
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
@@ -362,18 +358,29 @@ When you list a website in Sensitive services domains you can audit, block with 
 - upload or drag/drop a sensitive file to an excluded website
 - paste sensitive data to an excluded website
 
-For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains are used with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+For the print, copy data, and save actions, each website must be listed in a website group.
 
-For the paste sensitive data to an excluded website, please make sure you have following installed. See, [Scenario 7: Restrict pasting sensitive content into a browser](endpoint-dlp-using.md#scenario-7-restrict-pasting-sensitive-content-into-a-browser-preview) for more information.
+The following table shows which browsers support these features:
+
+| Browser | Supported Feature|
+|---|---|
+| Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste|
+| Microsoft Edge <br> Google Chrome (with the Microsoft Purview extension)| Upload |
+| |
+
+Additionally, for Devices, you use Sensitive service domains with a DLP policy. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. You can add a maximum of 50 websites into one group and you can can create a maximum of 20 groups. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
+When it comes to pasting sensitive data to an excluded website, please make sure you have following software installed.
+
 - Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5023773](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23)
 - Win 11 21H2 - [KB5023774](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839)
 - Win 11 22H2 - [KB5023778](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
-	
-You can add maximum 50 websites into one group and can create maximum 20 groups.
 
-##### Supported syntax for designating websites in a website group
+See, [Scenario 7: Restrict pasting sensitive content into a browser](endpoint-dlp-using.md#scenario-7-restrict-pasting-sensitive-content-into-a-browser-preview) for more information.
 
-Don't add protocol, for example, https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+#### Supported syntax for designating websites in a website group
+
+Don't include the networking protocol as part of the URL (for instance, *https://* or *file://*). Instead, use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.
@@ -385,7 +392,7 @@ This syntax applies to all http/https websites.
 Here are some examples:
 
 
-|URL that you add to the website group  |URL will match  | URL won't match|
+| URL added to the website group  | URL will match  | URL won't match |
 |---------|---------|---------|
 |contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
 |contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
@@ -393,11 +400,11 @@ Here are some examples:
 |*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
 |*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
 
-Up to 20 groups and 50 domains per group can be configured under Sensitive Service domains.
+You can configure Up to 20 groups and 50 domains per group under the **Sensitive Service domains**.
 
-### Additional settings for endpoint DLP
+## Additional settings for endpoint DLP
 
-#### Business justification in policy tips
+### Business justification in policy tips
 
 You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
@@ -405,7 +412,7 @@ You can control how users interact with the business justification option in DLP
 - **Only show default options**: Users can only select a built-in justification.
 - **Only show custom text box**: Users can only enter their own justification. Only the text box appears in the end-user policy tip notification. 
 
-##### Customizing the options in the drop-down menu
+#### Customizing the options in the drop-down menu
 
 You can create up to five customized options that appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
 
@@ -418,13 +425,13 @@ You can create up to five customized options that appear when users interact wit
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
-### Always audit file activity for devices
+## Always audit file activity for devices
 
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn off this feature if you want this activity to be audited only when onboarded devices are included in an active policy.
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
-### Printer groups
+## Printer groups
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
@@ -459,7 +466,7 @@ You can assign these policy actions to the group in a DLP policy:
 - Block with override (blocks the action, but the user can override)
 - Block (blocks no matter what)
 
-#### Create a Printer group
+### Create a Printer group
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
 1. Select **Create printer group**.
@@ -473,7 +480,7 @@ You can assign these policy actions to the group in a DLP policy:
 
  The most common use case is to use printers groups as an allowlist as in the above example for allowing the printing of contracts only to printers that are in the legal department. After you define a printer group here, it's available to be used in your policies that are scoped to **Devices**. See, [[Scenario 8 Authorization groups](endpoint-dlp-using.md#scenario-8-authorization-groups)] for more information on configuring policy actions to use authorization groups.
 
-### Removable storage device groups
+## Removable storage device groups
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
 
@@ -506,7 +513,7 @@ You can assign these policy actions to the group in a DLP policy:
 - Block with override (blocks the action, but the user can override)
 - Block (blocks no matter what)
 
-#### Create a Removable storage device group
+### Create a Removable storage device group
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Removable storage device groups**.
 1. Select **Create removable storage device group**.
@@ -520,7 +527,7 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use removable storage devices groups as an allowlist as in the above example for allowing the copying of files only to devices that are in the **Backup** group. After you define a removable storage device group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 8 Authorization groups](endpoint-dlp-using.md#scenario-8-authorization-groups) for more information on configuring policy actions to use authorization groups. While scenario 7 uses printer authorization groups as an example, the principles are identical. The only thing that changes are the names of the groups and the actions you select.
 
-### Network share groups
+## Network share groups
 
 Use this setting to define groups of network share paths that you want to assign policy actions to that are different from the global network share path actions. For example, say you want your DLP policy to block when users attempt to save or copy protected files to network shares except the network shares in this group.
 
@@ -552,7 +559,7 @@ You can assign these policy actions to the group in a DLP policy:
 - Block with override (blocks the action, but the user can override)
 - Block (blocks no matter what)
 
-#### Create a Network Share group
+### Create a Network Share group
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Network share groups**.
 1.Select **Create network share group**.
@@ -565,7 +572,7 @@ You can assign these policy actions to the group in a DLP policy:
 
 The most common use case is to use network share group as an allowlist as in the above example for allowing users to save or copy protected files only to the network shares that are defined in the group. After you define a networks share group here, it's available to be used in your policies that are scoped to **Devices**. See, [Scenario 8 Authorization groups](endpoint-dlp-using.md#scenario-8-authorization-groups) for more information on configuring policy actions to use authorization groups.
 
-### VPN settings
+## VPN settings
 
 Use the VPN list to control only those actions that are being carried out over that VPN.
 
@@ -595,7 +602,7 @@ When configuring a DLP policy to restrict activity on devices, you can control w
 
 You define VPN by these parameters **Server address** or **Network address**. 
 
-#### Get the Server address or Network address
+### Get the Server address or Network address
 
 1. On a DLP monitored Windows device, open a **Windows PowerShell** window as an administrator.
 1. Run this cmdlet
@@ -607,7 +614,7 @@ Get-VpnConnection
 1. Find the **ServerAddress** field and record that value. You'll use this when you create a VPN entry in the VPN list.
 1. Find the **Name** field and record that value. The **Name** field maps to the **Network address** field when you create a VPN entry in the VPN list.
 
-#### Add a VPN
+### Add a VPN
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **VPN settings**.
 1. Select **Add or edit VPN addresses**.
