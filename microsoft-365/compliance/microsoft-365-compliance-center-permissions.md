@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 05/16/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -88,7 +88,7 @@ The configuration for administrative units automatically flows down to the follo
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 - [Adaptive scopes](purview-adaptive-scopes.md): 
     - Restricted administrators can select, create, edit, and view adaptive scopes only for users in those administrators' assigned administrative units
-    - When a restricted administrator configures a policy that's using adaptive scopes, that administrator can only select adaptive scopes that are assigned to them
+    - When a restricted administrator configures a policy that's using adaptive scopes, that administrator can only select adaptive scopes that are assigned to their administrative units
 - Data lifecycle management and records management:
     - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
     - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
