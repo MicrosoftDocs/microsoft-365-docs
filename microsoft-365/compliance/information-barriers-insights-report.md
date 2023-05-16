@@ -44,7 +44,9 @@ The insights report provides the following information for the top 100 most acti
 
 ## Create the insights report
 
-Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports. One insight report build is supported for every 24 hour period and the previous report build is automatically overwritten. For example, if you create an insights report build on 4/25/2023 at 4:10 PM, the new insights report build won't have updated information available until 4/26/2023 at 4:10 PM.
+Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports.
+
+One insight report build is supported for every 24 hour period and the previous report build is overwritten when the next report build is created. For example, if you create an insights report build on 4/25/2023 at 4:10 PM, you can't create another insight report build until after 4:10 PM on 4/26/2023.
 
 To create the insights report, complete the following steps:
 
@@ -118,12 +120,23 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>
 
 **Example results**:
 
-`Content: Explicit` <br>
-`State: Completed`<br>
-`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
-`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
-`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
-`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
+`SiteName: Contoso Budget Planning` <br>
+`SiteURL: https://contoso.sharepoint.com/sites/ContosoBudgetPlanning`<br>
+`Site Owner:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
+`IBMode: Explicit`
+
+`SiteName: Contoso Training Budgets` <br>
+`SiteURL: https://contoso.sharepoint.com/sites/ContosoTrainingBudgets`<br>
+`Site Owner:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
+`IBMode: Explicit`
+
+`SiteName: Contoso Viewpoint Project` <br>
+`SiteURL: https://contoso.sharepoint.com/sites/ContosoViewpointProject`<br>
+`Site Owner:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
+`IBMode: Explicit`
 
 ### View the details for the mode distribution for SharePoint sites
 
