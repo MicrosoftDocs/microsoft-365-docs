@@ -31,11 +31,11 @@ The insights report provides the following information for the top 100 most acti
 |**Section**|**Description**|**Applies to**|
 |:-------|:--------------|:-------------|
 |Explicit mode section|Top restrictive sites with highest collaboration between IB users|SharePoint sites and OneDrive accounts|
-|Implicit|Top sites with highest collaboration between compatible users|SharePoint sites only|
-|Mixed|Top accounts with collaboration between segmented and unsegmented users|OneDrive accounts only|
+|Implicit mode section|Top sites with highest collaboration between compatible users|SharePoint sites only|
+|Mixed mode section|Top accounts with collaboration between segmented and unsegmented users|OneDrive accounts only|
 |Mode Distribution|The number and percentage of modes across all sites and accounts|SharePoint sites and OneDrive accounts|
-|Open|Top least restrictive sites|SharePoint sites and OneDrive accounts|
-|Owner Moderated|Top sites with highest collaboration between IB users and non-IB users|SharePoint sites and OneDrive accounts|
+|Open mode section|Top least restrictive sites|SharePoint sites and OneDrive accounts|
+|Owner Moderated mode section|Top sites with highest collaboration between IB users and non-IB users|SharePoint sites and OneDrive accounts|
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ To create the insights report, complete the following steps:
 To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID>
 ```
 
 **Example**:
@@ -109,7 +109,7 @@ In this example, the insights report results are displayed for SharePoint sites 
 To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>
 ```
 
 **Example**:
@@ -130,7 +130,7 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>`
 To view details about the mode distribution with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistribution>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistribution>
 ```
 
 **Example**:
@@ -175,7 +175,7 @@ In this example, the insights report results are displayed for OneDrive accounts
 To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>
 ```
 
 **Example**:
@@ -196,7 +196,7 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 To view details about the mode distribution with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
 
 ```powershell
-Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <ModeDistribution>`
+Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <ModeDistribution>
 ```
 
 **Example**:
