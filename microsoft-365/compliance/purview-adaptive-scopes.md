@@ -42,16 +42,6 @@ For specific advantages of using adaptive scopes specific to policies for retent
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
-### How adaptive scopes work with Azure AD administrative units
-
-Administrative units are created and configured in Azure AD and enforce the initial layer of filtering for a compliance administrator. Adaptive scopes and the policies that use them are created and configured in Microsoft Purview. 
-
-A compliance administrator can assign administrative units to an adaptive scope as an initial filtering of users, and they can select only from the administrative units that they are assigned to manage. Then, the compliance administrator can further refine the filtering with the adaptive scope query. As an example:
-
-1. A compliance administrator is assigned two administrative units that contain users from Europe and North America, respectively. When they create an adaptive scope, they can select and assign only these administrative units. They can't create an adaptive scope to contain users from other administrative units.
-2. They select the administrative unit for Europe, and because they want the scope to include only users from France, they configure the adaptive scope query to select users from France. If they misconfigure the query scope to select users from Asia, no users from Asia would be included in the scope.
-3. When just this adaptive scope is selected for a policy that's targeted to all users, the policy is applied just to users in France.
-
 ### Maximums for adaptive policy scopes
 
 There's no limit to the number of adaptive policy scopes that you can add to a policy, but there are some maximum limits for the query that defines each adaptive scope:
