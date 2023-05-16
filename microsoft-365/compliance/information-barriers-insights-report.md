@@ -232,7 +232,7 @@ To download the results of a specific insights report for SharePoint sites, use 
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <report you want to download> -action Download
 ```
 
-The report is automatically exported as a .csv file with a file name of *SharePoint_<the name of the report type>*. For example, if you download the *Explicit* report, the file name is *SharePoint_Explicit.csv*.
+The report is automatically exported as a .csv file with a file name of *SharePoint_the name of the report type*. For example, if you download the *Explicit* report, the file name is *SharePoint_Explicit.csv*.
 
 To download the results of a specific insights report for OneDrive accounts, use the following cmdlet syntax to download the report:
 
@@ -240,7 +240,7 @@ To download the results of a specific insights report for OneDrive accounts, use
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <report you want to download> -action Download
 ```
 
-The report is automatically exported as a .csv file with a file name of *OneDrive_<the name of the report type>*. For example, if you download the *Explicit* report, the file name is *OneDrive_Explicit.csv*.
+The report is automatically exported as a .csv file with a file name of *OneDrive_the name of the report type*. For example, if you download the *Explicit* report, the file name is *OneDrive_Explicit.csv*.
 
 To rename the report or export to custom locations, you can use standard PowerShell parameters. For more information, see the [PowerShell documentation](/powershell/).
 
