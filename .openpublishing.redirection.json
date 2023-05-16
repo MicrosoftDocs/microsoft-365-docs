@@ -10921,6 +10921,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/security/office-365-security/recover-from-ransomware.md",
+    "redirect_url": "/security/ransomware/",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
     "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
     "redirect_document_id": true
@@ -10988,6 +10993,61 @@
   {
     "source_path": "microsoft-365/security/defender-business/mdb-custom-rules-firewall.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-firewall",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-security-incident-quick-start.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-security-operations-guide",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-add-users.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-reset-passwords.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-admin-guide",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings.md",
+    "redirect_url": "/mem/autopilot/windows-autopilot",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/mde-sec-ops-guide.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-remove-company-data.md",
+    "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md",
+    "redirect_url": "/mem/intune/protect/endpoint-security-policy",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-setup.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/get-microsoft-365-business-premium.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/get-microsoft-365-campaigns.md",
+    "redirect_url": "/microsoft-365/business-premium/m365-campaigns-setup",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
+    "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
     "redirect_document_id": true
   }
  ]

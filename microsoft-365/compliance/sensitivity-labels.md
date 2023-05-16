@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -96,7 +96,7 @@ Each item that supports sensitivity labels can have a single sensitivity label a
 
 ## What sensitivity labels can do
 
-After a sensitivity label is applied to an email, meeting invite (in preview), or document, any configured protection settings for that label are enforced on the content. You can configure a sensitivity label to:
+After a sensitivity label is applied to an email, meeting invite, or document, any configured protection settings for that label are enforced on the content. You can configure a sensitivity label to:
 
 - **Encrypt** emails, meeting invites, and documents to prevent unauthorized people from accessing this data. You can additionally choose which users or group have permissions to perform which actions and for how long. For example, you can choose to allow all users in your organization to modify a document while a specific group in another organization can only view it. Alternatively, instead of administrator-defined permissions, you can allow your users to assign permissions to the content when they apply the label. 
     
@@ -195,7 +195,7 @@ When you configure a label policy, you can:
 - **Specify a default label** for unlabeled documents, emails and meeting invites, new containers (when you've [enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)), and also a default label for [Power BI content](/power-bi/admin/service-security-sensitivity-label-default-label-policy). You can specify the same label for all five types of items, or different labels. Users can change the applied default sensitivity label to better match the sensitivity of their content or container.
     
     > [!NOTE]
-    > Although applying a default label to new documents has been supported for built-in labeling for a while, support for existing documents is still rolling out across the Office deployment channels. To identify the supported versions, use the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
+    > Although applying a default label to new documents has been supported for built-in labeling for a while, support for existing documents is more recently supported. To identify the supported versions, use the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
     
     Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. It's usually not a good idea to select a label that applies encryption as a default label to documents. For example, many organizations need to send and share documents with external users who might not have apps that support the encryption or they might not use an account that can be authorized. For more information about this scenario, see [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
     
