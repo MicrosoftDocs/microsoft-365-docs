@@ -161,13 +161,13 @@ The rest of this article how to configure preset security policies.
 
 10. On the **Standard protection updated** or **Strict protection updated** page, select **Done**.
 
-### Use the Microsoft 365 Defender portal to modify the assignments of Standard and Strict preset security policies
+## Use the Microsoft 365 Defender portal to modify the assignments of Standard and Strict preset security policies
 
 The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::. To enable the policies, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
-### Use the Microsoft 365 Defender portal to add exclusions to the Built-in protection preset security policy
+## Use the Microsoft 365 Defender portal to add exclusions to the Built-in protection preset security policy
 
 > [!TIP]
 > The **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
@@ -197,7 +197,7 @@ To disable the **Standard protection** or **Strict protection** preset security 
 
 4. When you're finished in the **Exclude from Built-in protection** flyout, select **Save**.
 
-### How do you know these procedures worked?
+## How do you know these procedures worked?
 
 To verify that you've successfully assigned the **Standard protection** or **Strict protection** security policy to a user, use a protection setting where the default value is different than the **Standard protection** setting, which is different that the **Strict protection** setting.
 
