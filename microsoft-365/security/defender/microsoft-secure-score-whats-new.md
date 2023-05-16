@@ -37,7 +37,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## May 2023
 
-New Microsoft Exchange Online recommendations are now available as Secure Score improvement actions:
+A new Microsoft Exchange Online recommendation is now available as Secure Score improvement action:
 
 - Ensure mail transport rules do not whitelist specific domains
 
@@ -45,6 +45,8 @@ New Microsoft SharePoint recommendations are now available as Secure Score impro
 
 - Ensure modern authentication for SharePoint applications is required
 - Ensure that external users cannot share files, folders, and sites they do not own
+
+## April 2023
 
 New recommendations are now available in Microsoft Secure Score for customers with an active Microsoft Defender for Cloud Apps license:
 
