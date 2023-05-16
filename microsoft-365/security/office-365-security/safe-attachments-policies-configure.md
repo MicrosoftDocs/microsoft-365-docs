@@ -63,6 +63,8 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
+- For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
+
 ## Use the Microsoft 365 Defender portal to create Safe Attachments policies
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
