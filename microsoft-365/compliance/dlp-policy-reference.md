@@ -185,7 +185,42 @@ A DLP policy can find and protect items that contain sensitive information acros
 |On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
 |Power BI |No| workspaces | data-in-use | No|
 
-If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+#### Exchange location scoping 
+
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. 
+
+
+|Sender is  |Recipient is  |Resultant behavior  |
+|---------|---------|---------|
+|In scope     |N/A     |Policy is applied         |
+|Out of scope     |In scope         |Policy is not applied         |
+
+##### Exchange location scope calculation
+
+Here's an example of how Exchange location scope is calculated
+
+Say you have four users in your org, *U1*, *U2*, *U3*, *U4* and, two distribution groups *DG1*, and *DG2* that you'll use for defining Exchange location inclusion and exclusion scopes. Group membership is set up like this:
+
+
+|Distribution Group  |Membership  |
+|---------|---------|
+|DG1     |U1, U2 |
+|DG2     |U2, U3 |
+
+U4 is not a member of any group.
+
+
+|Include setting |Exclude setting  |Policy applies to  |Policy doesn't apply to   |Explanation of behavior|
+|---------|---------|---------|---------|---------|
+|All  |None         |All senders in the Exchange org (U1, U2, U3, U4)         |N/A         |When neither are defined, all senders are included|
+|DG1     |None         |Member senders of DG1 (U1, U2)         |All senders who are not members of DG1 (U3, U4)         |When one setting is defined and the other isn't the defined setting is used|
+|All  |DG2         |All senders in the Exchange org who are not members of DG2  (U1, U4)      |All senders who are members of DG2 (U2, U3)  |When one setting is defined and the other isn't the defined setting is used         |
+|DG1  |DG2         |U1         |U2, U3, U4         |Exclude overrides include|
+  
+
+You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+
+#### SharePoint and OneDrive location scoping
 
 If you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
