@@ -96,7 +96,7 @@ The Zoom account **client credentials** grant type facilitates OAuth-authenticat
 > [!TIP]
 > Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
 
-Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) for details.
+Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#1-enable-permissions) for details.
 
 **Difference from app credentials**
 
