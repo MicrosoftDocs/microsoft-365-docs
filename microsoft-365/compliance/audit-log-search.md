@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -48,6 +48,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Forms|MicrosoftForms|
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
+|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
 |Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
 |Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
 |Microsoft Project for the web|ProjectAccessed, ProjectCreated, ProjectDeleted, ProjectTenantSettingsUpdated, ProjectUpdated, RoadmapAccessed,RoadmapCreated, RoadmapDeleted, RoadmapItemAccessed,RoadmapItemCreated,RoadmapItemDeleted, RoadmapItemUpdated, RoadmapTenantSettingsUpdated, RoadmapUpdated, TaskAccessed, TaskCreated,TaskDeleted, TaskUpdated|
