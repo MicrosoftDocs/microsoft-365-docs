@@ -29,9 +29,9 @@ ms.date: 5/15/2023
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-_Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The configuration of settings in preset security policies provide a balance between keeping harmful content away from users and avoiding unnecessary disruptions.
+_Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on the nature of your organization, preset security policies provide the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and[Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
+Depending on your organization, preset security policies provide the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and[Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
 
 For details about the elements of preset security policies, see the [Appendix](#appendix) section at the end of this article.
 
@@ -183,12 +183,12 @@ To disable the **Standard protection** or **Strict protection** preset security 
        - The specified Microsoft 365 Groups.
    - **Domains**
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select ![Remove exclusions from Built-in protection icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and then select the value that's displayed below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    > [!IMPORTANT]
-   > Multiple different types of conditions aren't additive; they're inclusive. The policy isn't applied _only_ if those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter exception with the following values:
+   > Multiple different types of exceptions aren't additive; they're inclusive. The policy isn't applied _only_ if those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter exception with the following values:
    >
    > - Users: romain@contoso.com
    > - Groups: Executives
@@ -212,7 +212,7 @@ In PowerShell, preset security policies consist of the following elements:
 - **Individual security policies**: For example, anti-malware policies, anti-spam policies, anti-phishing policies, Safe Links policies, and Safe Attachments policies. These policies are visible using the standard policy management cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
   - <u>EOP policies</u>:
      - **[Get-AntiPhishPolicy](/powershell/module/exchange/get-antiphishpolicy)**
-     - **[Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)**
+     - **[Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)** (anti-spam policies)
      - **[Get-MalwareFilterPolicy](/powershell/module/exchange/get-malwarefilterpolicy)**
   - <u>Defender for Office 365 policies</u>:
      - **[Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy)**
@@ -221,7 +221,7 @@ In PowerShell, preset security policies consist of the following elements:
   > [!WARNING]
   > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft 365 Defender portal for the first time.
 
-- **Rules**: Separate rules for the Standard preset security policy, the Strict preset security policy, and the Built-in protection preset security policy define the recipient conditions and exceptions for the policies (who the policies apply to). You manage these rules using the following cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+- **Rules**: Separate rules are used for the Standard preset security policy, the Strict preset security policy, and the Built-in protection preset security policy. The rules define the recipient conditions and exceptions for the policies (who the policies apply to). You manage these rules using the following cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
   - <u>Rules for Exchange Online Protection (EOP) protections</u>:
     - **[Disable-EOPProtectionPolicyRule](/powershell/module/exchange/disable-eopprotectionpolicyrule)**
     - **[Enable-EOPProtectionPolicyRule](/powershell/module/exchange/enable-eopprotectionpolicyrule)**
@@ -257,7 +257,7 @@ Remember, if you never turned on the Standard preset security policy or the Stri
   Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy -Identity "Built-In Protection Policy" | Format-List; Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Links policy",("-"*79);Get-SafeLinksPolicy -Identity "Built-In Protection Policy" | Format-List
   ```
 
-- **Standard preset security policy**: The associated policies are named `Standard Preset Security Policy<13-digit number>`. For example, `Standard Preset Security Policy1622650008019`. The RecommendPolicyType property value is Standard.
+- **Standard preset security policy**: The associated policies are named `Standard Preset Security Policy<13-digit number>`. For example, `Standard Preset Security Policy1622650008019`. The RecommendPolicyType property value for the policies is Standard.
 
   - To view the individual security policies for the Standard preset security policy in organizations with **EOP only**, run the following command:
 
@@ -265,19 +265,13 @@ Remember, if you never turned on the Standard preset security policy or the Stri
     Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
     ```
 
-  - To view the individual security policies for the Standard preset security policy that are **exclusive to Defender for Microsoft 365**, run the following command:
-
-    ```powershell
-    Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
-    ```
-
-  - To view **all policies** in the Standard preset security policy, run the following command:
+  - To view the individual security policies for the Standard preset security policy in organizations with **Defender for Office 365**, run the following command:
 
     ```powershell
     Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
     ```
 
-- **Strict preset security policy**: The associated policies are named `Strict Preset Security Policy<13-digit number>`. For example, `Strict Preset Security Policy1642034872546`. The RecommendPolicyType property value is Strict.
+- **Strict preset security policy**: The associated policies are named `Strict Preset Security Policy<13-digit number>`. For example, `Strict Preset Security Policy1642034872546`. The RecommendPolicyType property value for the policies is Strict.
 
   - To view the individual security policies for the Strict preset security policy in organizations with **EOP only**, run the following command:
 
@@ -285,13 +279,7 @@ Remember, if you never turned on the Standard preset security policy or the Stri
     Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
     ```
 
-  - To view the individual security policies for the Strict preset security policy that are **exclusive to Defender for Microsoft 365**, run the following command:
-
-    ```powershell
-    Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
-    ```
-
-  - To view **all policies** in the Strict preset security policy, run the following command:
+  - To view the individual security policies for the Strict preset security policy in organizations with **Defender for Office 365**, run the following command:
 
     ```powershell
     Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
@@ -300,7 +288,7 @@ Remember, if you never turned on the Standard preset security policy or the Stri
 
 Remember, if you never turned on the Standard preset security policy or the Strict preset security policy in the Microsoft 365 Defender portal, the associated rules for those policies don't exist.
 
-- **Built-in protection preset security policy**: The associated rule is named ATP Built-In Protection Rule.
+- **Built-in protection preset security policy**: There's only one rule named ATP Built-In Protection Rule.
 
   To view the rule that's associated with the Built-in protection preset security policy, run the following command:
 
@@ -358,7 +346,7 @@ To turn on or turn off the Standard or Strict preset security policies in PowerS
 
 If your organization has EOP only, you disable or enable the rule for EOP protections.
 
-If your organization has Defender for Office 365, you enable or disable the rule for EOP protections and the rule for Defender for Office 365 protections.
+If your organization has Defender for Office 365, you enable or disable the rule for EOP protections and the rule for Defender for Office 365 protections (enable or disable both rules).
 
 - **Organizations with EOP only**:
 
@@ -494,14 +482,16 @@ In addition, it's important to understand how preset security policies fit in th
 
 A profile determines the level of protection. The following profiles are available for preset security policies:
 
-- **Standard protection**: A baseline protection profile that's suitable for most users.
-- **Strict protection**: A more aggressive protection profile for selected users (high value targets or priority users).
+- **Standard protection**: A baseline profile that's suitable for most users.
+- **Strict protection**: A more aggressive profile for selected users (high value targets or priority users).
 - **Built-in protection** (Microsoft Defender for Office 365 only): Effectively provides default policies for Safe Links and Safe Attachments only.
 
-Until you turn on the profiles and assign users to them, the **Standard** and **Strict** preset security policies are assigned to no one. In contrast, the **Built-in protection** preset security policy is assigned to all recipients by default, but you can configure exceptions.
+To compare the configurations between Standard and Strict, see the individual feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+
+Until you turn on the profiles and assign users to them, the Standard and Strict preset security policies are assigned to no one. In contrast, the Built-in protection preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
 > [!IMPORTANT]
-> Unless you configure exceptions to **Built-in protection**, all recipients in the organization will receive Safe Links and Safe Attachments protection.
+> Unless you configure exceptions to the Built-in protection preset security policy, all recipients in the organization receive Safe Links and Safe Attachments protection.
 
 ### Policies in preset security policies
 
@@ -524,13 +514,13 @@ Preset security policies use special versions of the individual protection polic
   - [Safe Links policies](safe-links-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
   - [Safe Attachments policies](safe-attachments-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
 
-As previously described, you can apply EOP protections to different users than Defender for Office 365 protections, or you can apply EOP and Defender for Office 365 to the same recipients.
+As previously described, you can apply EOP protections to different users than Defender for Office 365 protections, or you can apply EOP and Defender for Office 365 protections to the same recipients.
 
 ### Policy settings in preset security policies
 
-Fundamentally, you can't modify the individual policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values, including the [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy) that are used, are listed in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+Fundamentally, you can't modify the individual policy settings in the protection profiles. The Standard, Strict, and Built-in protection policy setting values, including the associated [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy), are listed in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-The required exception is the individual users (senders) and domains to receive [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365. Otherwise, preset security policies automatically configure the following types of impersonation protection:
+But, you need to configure the individual users (senders) and domains to receive [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365. Otherwise, preset security policies automatically configure the following types of impersonation protection:
 
 - Domain impersonation protection for all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
 - [Mailbox intelligence protection (contact history)](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
@@ -542,20 +532,22 @@ When a recipient is defined in multiple policies, the policies are applied in th
 1. The Strict preset security policy.
 2. The Standard preset security policy.
 3. Custom policies based on the priority of the policy (a lower number indicates a higher priority).
-4. The Built-in protection preset security policy for Safe Links and Safe Attachments; default policies for anti-malware, anti-spam, and anti-phishing.
+4. The Built-in protection preset security policy for Safe Links and Safe Attachments; the default policies for anti-malware, anti-spam, and anti-phishing.
 
-In other words, the settings of the **Strict** preset security policy override the settings of the **Standard** preset security policy, which overrides the settings from any custom policies, which override the settings of the **Built-in protection** preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
+In other words, the settings of the Strict preset security policy override the settings of the Standard preset security policy, which overrides the settings from any custom policies, which override the settings of the Built-in protection preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
 
-For example, a security setting exists in **Standard protection** and an admin specifies a user for **Standard protection**. The **Standard protection** setting is applied to the user instead of what's configured for that setting in a custom policy or in the default policy.
+This order is shown on the pages of the individual security policies in the Defender portal (the policies are applied in the order they're shown on the page).
 
-You might want to apply the **Standard** or **Strict** preset security policies to a subset of users, and apply custom policies to other users in your organization to meet specific needs. To meet this requirement, consider the following methods:
+For example, an admin configures the Standard preset security policy and a custom anti-spam policy with the same recipient. The anti-spam policy settings from the Standard preset security policy are applied to the user instead of what's configured in the custom policy anti-spam policy or in the default anti-spam policy.
 
-- Use unambiguous groups or lists of recipients for application of the **Standard** preset security policy, the **Strict** preset security, and custom policies so exceptions aren't required. Using this method, you don't need to account for overlap and the order of precedence.
-- If you can't avoid some overlap, use the following strategies:
+Consider applying the Standard or Strict preset security policies to a subset of users, and apply custom policies to other users in your organization to meet specific needs. To meet this requirement, consider the following methods:
+
+- Use unambiguous groups or lists of recipients in the Standard preset security policy, the Strict preset security, and in custom policies so exceptions aren't required. Using this method, you don't need to account for multiple policies applying to the same users and the effects of the order of precedence.
+- If you can't avoid multiple policies applying to the same users, use the following strategies:
   - Configure recipients who should get the settings of the **Standard** preset security policy and custom policies as exceptions in the **Strict** preset security policy.
   - Configure recipients who should get the settings of custom policies as exceptions in the **Standard** preset security policy.
-- Configure the users who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
+  - Configure the users who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
 
-**Built-in protection** doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
+The Built-in protection** doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
 
 For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
