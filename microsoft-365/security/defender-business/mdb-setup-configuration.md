@@ -83,7 +83,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
    >    
    > Defender for Business also offers automatic onboarding for Windows devices enrolled in Intune. Automatic onboarding is a simplified way to onboard Windows devices to Defender for Business. We recommend selecting the "all devices enrolled" option so that as Windows devices are enrolled in Intune, they're onboarded to Defender for Business automatically. 
    
-7. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can start with your default policies, and add more later. See [Set up, review, and edit your security policies and settings](mdb-configure-security-settings.md).
+7. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can start with your default policies and add more later. See [Set up, review, and edit your security policies and settings](mdb-configure-security-settings.md).
 
 8. **Select your next step**. After the setup wizard has completed, you're prompted to choose a next step. For example, you can onboard devices, view your security dashboard, or view your security policies.
 
@@ -96,7 +96,7 @@ When you're ready to set up and configure Defender for Business, you can choose 
 
 2. **Add users and assign licenses**. Assign a license for Defender for Business (or Microsoft 365 Business Premium, if that's your subscription) to each member of your organization to protect their devices. You'll also want to make sure multifactor authentication is enabled for all users. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
 
-3. **Assign roles and permissions to your security team**. People on your security team need certain permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through roles. See [Assign roles and permissions](mdb-roles-permissions.md). 
+3. **Assign roles and permissions to your security team**. People on your security team need certain permissions to perform tasks such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through roles. See [Assign roles and permissions](mdb-roles-permissions.md). 
 
 4. **Set up email notifications for your security team**. As alerts are generated, or new vulnerabilities are discovered, people on your security team can be notified automatically, via email messages. See [Set up email notifications](mdb-email-notifications.md).
 

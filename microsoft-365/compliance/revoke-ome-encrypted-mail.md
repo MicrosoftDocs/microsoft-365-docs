@@ -127,13 +127,13 @@ Once you know the Message ID of the email you want to revoke, and you have verif
 
 To revoke the message using the Microsoft Purview compliance portal
 
-1. Using a work or school account that has global administrator permissions in your organization, connect to the Microsoft Purview compliance portal.
+1. Using a work or school account that has global administrator or compliance administrator permissions in your organization, connect to the Microsoft Purview compliance portal.
 
 2. In the **Encryption report**, in the **Details** table for the message, choose **Revoke message**.
 
 To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation cmdlet.
 
-1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Using a work or school account that has global administrator, compliance administrator, or Exchange administrator permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEMessageRevocation cmdlet as follows:
 
