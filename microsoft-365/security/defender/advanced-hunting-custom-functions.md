@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 05/16/2023
 ---
 
 # Use custom functions
