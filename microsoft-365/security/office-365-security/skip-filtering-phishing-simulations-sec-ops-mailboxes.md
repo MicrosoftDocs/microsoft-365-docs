@@ -99,7 +99,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 - The **Display name** column contains display name of the mailboxes.
 - The **Email** column contains the email address for each entry.
-- To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+- To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 ## Use the Microsoft 365 Defender portal to modify or remove SecOps mailboxes in the advanced delivery policy
 
@@ -165,7 +165,7 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 - The **Value** column contains the domain, IP address or URL entry.
 - The **Type** column contains the value **Sending IP**, **Domain**, or **Allowed simulation URL** for each entry.
 - The **Date** column shows when the entry was created.
-- To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+- To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 ## Use the Microsoft 365 Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
 

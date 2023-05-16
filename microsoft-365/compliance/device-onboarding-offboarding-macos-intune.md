@@ -34,7 +34,7 @@ You can use Microsoft Intune to onboard macOS devices into Microsoft Purview sol
 
 ## Before you begin ## 
 
-- Make sure your [macOS devices are onboarded into Intune](https://learn.microsoft.co/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](https://learn.microsoft.co/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home).
 - Create the user groups that you're going to assign the configuration updates to.
 - OPTIONAL: Install the v95+ Microsoft Edge browser on your macOS devices to have native Endpoint DLP support on Microsoft Edge.
