@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/16/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -50,7 +50,7 @@ Listed below are details about steps and information that will help you prepare 
 
 - Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
 - Understand [regulatory templates](compliance-manager-templates.md), which contain the controls and action recommendations for assessments.
-- Set up [connectors](#set-up-connectors) if you're assessing services from other companies.
+- Set up [connectors](#set-up-connectors) if you're assessing non-Microsoft services.
 
 ## Groups for assessments
 

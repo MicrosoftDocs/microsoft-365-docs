@@ -1,11 +1,11 @@
 ---
-title: "Zoom data connector setup for Microsoft Purview Compliance Manager"
+title: "Zoom connector setup for Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 05/16/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Configure settings in your Zoom accounts in order to activate data connectors for Microsoft Purview Compliance Manager."
+description: "Configure settings in your Zoom accounts in order to activate connectors for Microsoft Purview Compliance Manager."
 ---
 
-# Zoom setup for Compliance Manager data connector
+# Zoom setup for Compliance Manager connector
 
-Follow the instructions on this page to enable the connection between your Zoom account and the Compliance Manager data connector for Zoom.
+Follow the instructions on this page to enable the connection between your Zoom account and the Compliance Manager connector for Zoom.
 
 ## Overview
 
@@ -33,25 +33,25 @@ Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports dif
 
 #### Enable permissions
 
-The user who will handle the connector activation process for Zoom will need view and edit permissions so that they can set up a Server-to-Server OAuth app in Zoom. The administrator must enable the Server-to-Server OAuth app role by going to **User Management** > **Roles** > **Role Settings** > **Advanced features** and selecting the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
+The user who handles the connector activation process for Zoom needs view and edit permissions so that they can set up a Server-to-Server OAuth app in Zoom. The administrator must enable the Server-to-Server OAuth app role by going to **User Management** > **Roles** > **Role Settings** > **Advanced features** and selecting the **View** and **Edit** checkboxes for **Server-to-Server OAuth** app. See Zoom's [Using role management](https://support.zoom.com/hc/articles/115001078646) for details.
 
 #### Create a Server-to-Server OAuth app
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
-1. Log into your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
+1. Log in to your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
 1. From the **Develop** drop-down menu, select **Build application**.
 1. Find the **Server-to-Server OAuth** app type card, then select **Create**.
 1. Enter a name for your app, then select **Create**.
 1. On the **App credentials** page: View and copy your Account ID, Client ID and Client secret.
     > [!TIP]
-    > These are the three items you'll enter when activating the Zoom connector in Compliance Manager. The client secret expires after one hour, so you may want to activate the connector in Compliance Manager at the same time as, or right after, you generte the client secret.
+    > You'll enter these credendials when activating the Zoom connector in Compliance Manager. The client secret expires one hour after you generate it, so you may want to activate the Zoom connector in Compliance Manager soon after creating the Server-to-Server OAuth app.
 1. On the **Information** page: Add information about your app, such as a short description and developer contact information (name and email address is required for activation).
 1. On the **Feature** page: Set the toggle to your preferred setting for event subscriptions. If enabled, choose the event subscriptions you'd like to use.
 1. On the **Scopes** page: If you have the role permission to add scopes, add any scopes that you’d like to enable. Choose **Add Scopes** to search for and add scopes. Select the required scopes listed below, which are required for Microsoft APIs:
     - user:read:admin
     - account:read:admin
-1. On the **Activation** page: Select **Activate your app**. Your app should be activated. If you see errors that prevent activation, address them and try to activaet again. You won't be able to generate an access token to make API calls unless your app is activated.
+1. On the **Activation** page: Select **Activate your app**. Your app should be activated. If you see errors preventing activation, address them and retry the activation. You won't be able to generate an access token to make API calls unless your app is activated.
 
 If your app is deactivated, existing tokens will no longer work. You can also choose to deactivate your app in this section.
 
@@ -59,9 +59,7 @@ If your app is deactivated, existing tokens will no longer work. You can also ch
 
 **Use account credentials to get an access token**
 
-To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id:.
-
-The successful response will be the access token, which is a Bearer token type that **expires in an hour**, with the scopes that you chose in your app settings screen.
+To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id:. The successful response will be the access token, which is a Bearer token type that **expires in an hour**, with the scopes that you chose in your app settings screen.
 
 **Get a new access token**
 
@@ -84,7 +82,7 @@ Authorization: Bearer {Your token here}
 The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
 - The token is the owner’s access token.
 - The token’s time to live is one hour.
-- There is no refresh token.
+- There's no refresh token.
 - Tokens stop working when the app is deactivated.
 - Server-to-Server OAuth apps can be deleted.
 - Account administrators authorize the scopes available to Developers building these app types.
@@ -92,7 +90,7 @@ The Zoom account **client credentials** grant type facilitates OAuth-authenticat
 > [!TIP]
 > Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
 
-Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) below for details.
+Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#enable-permissions) for details.
 
 **Difference from app credentials**
 
