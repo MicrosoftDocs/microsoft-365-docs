@@ -431,6 +431,9 @@ You can search the audit log for activities in Power Automate (formerly called M
 
 You can search the audit log for activities in Microsoft Project for the web. For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
 
+>[!NOTE]
+>Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
 |Friendly name|Operation|Description|
 |:------------|:--------|:----------|
 |Created project|ProjectCreated|A project is created by a user or app.|
