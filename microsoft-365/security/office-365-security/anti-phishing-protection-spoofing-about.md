@@ -73,13 +73,13 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of phishing that uses the spoofed sender msoutlook94@service.outlook.com:
 
-  ![Phishing message impersonating service.outlook.com.](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  :::image type="content" source="../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg" alt-text="Phishing message impersonating service.outlook.com." lightbox="../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg":::
 
   This message didn't come from service.outlook.com, but the attacker spoofed the **From** header field to make it look like it did. This was an attempt to trick the recipient into clicking the **change your password** link and giving up their credentials.
 
   The following message is an example of BEC that uses the spoofed email domain contoso.com:
 
-  ![Phishing message - business email compromise.](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  :::image type="content" source="../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg" alt-text="Phishing message - business email compromise." lightbox="../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg":::
 
   The message looks legitimate, but the sender is spoofed.
 
@@ -87,7 +87,7 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of a real password reset message from the Microsoft Security account:
 
-  ![Microsoft legitimate password reset.](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  :::image type="content" source="../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg" alt-text="Microsoft legitimate password reset." lightbox="../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg":::
 
   The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
 
