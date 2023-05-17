@@ -36,7 +36,7 @@ Select the link in the welcome email to directly launch the Defender Experts set
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR require Service provider access that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
+By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
 You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you’d like them to handle on your behalf:
 
@@ -50,7 +50,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 **To grant our experts permissions:**
 
 1. In the same Defender Experts settings step-by-step guide, under **Permissions**, choose the access level(s) you want to grant our experts.
-2. Select **Next**, to [add contact persons or teams](#tell-us-who-to-contact-for-important-matters).
+2. Select **Next** to [add contact persons or teams](#tell-us-who-to-contact-for-important-matters).
 
 > [!IMPORTANT]
 > If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization.
@@ -74,9 +74,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
 2. Select **Next**. Under **Service review contact**, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
-
 3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#run-initial-defender-experts-readiness-checks).
-
 4. Select **Close** to exit the settings step-by-step guide.
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**:

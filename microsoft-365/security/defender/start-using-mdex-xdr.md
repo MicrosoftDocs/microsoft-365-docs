@@ -85,11 +85,7 @@ The **Investigation summary** section provides you with more context about the i
 
 #### Actions
 
-The **Actions** tab displays task cards that contain response actions recommended by our experts.
-
-**Screenshot**[need updated screenshot that says defender experts and not dex analyst]
-
-Defender Experts for XDR currently supports the following one-click guided response actions:
+The **Actions** tab displays task cards that contain response actions recommended by our experts. Defender Experts for XDR currently supports the following one-click guided response actions:
 
 |**Action**|**Description**|
 |------------|-----------------|
