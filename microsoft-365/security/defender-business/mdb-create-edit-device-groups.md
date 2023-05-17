@@ -51,7 +51,7 @@ Currently, in Defender for Business, you can create a new device group while you
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Configuration Management** and select **Device configuration**. 
+2. In the navigation pane, choose **Configuration management** and select **Device configuration**. 
 
 3. Take one of the following actions:
 
