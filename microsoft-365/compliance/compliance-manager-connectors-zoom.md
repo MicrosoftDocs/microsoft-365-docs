@@ -64,5 +64,3 @@ You can always retrieve your app credientials by following these steps:
 1.  From the Zoom App Marketplace, select **Manage** in the upper right corner.
 1. Select the app you created in step 2 above.
 1. On the **App credentials** page, select **Copy** next to the credentials you need to copy.
-
-Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
