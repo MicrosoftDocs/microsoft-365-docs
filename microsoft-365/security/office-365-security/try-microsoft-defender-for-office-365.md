@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 5/16/2023
+ms.date: 5/19/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -77,15 +77,15 @@ Do you want your Defender for Office 365 experience to be active or passive? Sel
 
 - **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
 
-  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
+  Audit mode provides reports for threats detected by Defender for Office 365 on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>.
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
   The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Exchange Online PowerShell](#policy-settings-associated-with-defender-for-office-365-trials).
 
-  Blocking mode doesn't provide customized reports for threats detected by Defender for Office 365. Instead, the information is available in the regular reports and investigation features of Defender for Office 365 Plan 2.
+  Information about threats detected by Defender for Office 365 is available in the regular reports and investigation features of Defender for Office 365 Plan 2.
 
-A key factor in audit mode vs. blocking mode is how email is delivered to your Microsoft 365 organization:
+A key factor in which mode is available to you is how email is delivered to your Microsoft 365 organization:
 
 - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
@@ -103,15 +103,15 @@ A key factor in audit mode vs. blocking mode is how email is delivered to your M
 
 What's the difference between an evaluation and a trial of Defender for Office 365 Plan 2? Aren't they the same thing? Well, yes and no. Here's what you need to know:
 
-- If you don't already have Defender for Office 365 Plan 2 licenses (for example, standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or Defender for Office 365 Plan 1), you can start your trial from the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub> or the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> in the Microsoft 365 Defender portal. At either location, you can select **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) as previously described.
+- If you don't already have Defender for Office 365 Plan 2 licenses (for example, standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or Defender for Office 365 Plan 1), you can start your trial from the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub> or the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> in the Microsoft 365 Defender portal. At either location, you can select **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) as previously described.
 
   Regardless of which location you use, we automatically provision the required Defender for Office 365 Plan 2 trial licenses for you when you enroll. Manual or outside steps for getting and assigning Plan 2 licenses in the Microsoft 365 admin center are no longer required. The trial licenses are good for 90 days:
 
   - For organizations without Defender for Office 365 (for example, standalone EOP or Microsoft 365 E3) the features of Defender for Office 365 (in particular, the policies) are available to you during the trial period.
 
-  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2: anti-phishing policies with impersonation protection, Safe Attachments policies, and Safe Links policies. The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't available in Plan 1.
+  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2: anti-phishing policies with impersonation protection, Safe Attachments policies, and Safe Links policies. The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't available in Plan 1.
 
-- If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), you don't see **Defender for Office 365** on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>. Instead, you start your evaluation of Defender for Office 365 Plan to on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> in **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies).
+- If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), you don't see **Defender for Office 365** on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>. Instead, you start your evaluation of Defender for Office 365 Plan to on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> in **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) (evaluation policies).
 
   By definition, these organizations don't require trial licenses of Defender for Office 365 Plan 2, so their evaluations are unlimited in duration.
 
@@ -123,7 +123,7 @@ The information from the previous list is summarized in the following table:
 |Defender for Office 365 Plan 1 <br><br> Microsoft 365 Business Premium|Audit mode <br> Blocking mode|Yes|Yes|Unlimited<sup>\*</sup>|
 |Microsoft 365 E5|Audit mode <br> Blocking mode|Yes|No|Unlimited|
 
-<sup>\*</sup> The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
+<sup>\*</sup> The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
 
 ## Set up an evaluation or trial in audit mode
 
@@ -132,7 +132,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 1. Start the evaluation in any of the available locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For example:
    - On the banner at the top of any Defender for Office 365 feature page, select **Start free trial**.
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
-   - On the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
+   - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
 2. In the **Turn on protection** dialog, select **No, I only want reporting**, and then select **Continue**.
 
@@ -168,11 +168,12 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
    - One of the following options is automatically selected based on our detection of the MX record for your domain:
 
-     - **I'm using a third-party and/or on-premises service provider**: The MX record for your domain points somewhere other than Microsoft 365. This selection requires the following additional settings after you select **Next**:
+     - **I'm using a third-party and/or on-premises service provider**: The MX record for your domain points somewhere other than Microsoft 365. Verify or configure the following settings:
+       - **Third party service your organization is using**: Verify or select one of the following values:
+            - **Other**: This value also requires information in **If your email messages pass through multiple gateways, list each gateway IP address**, which is available only for the value **Other**.
 
-       1. In the **Third party or on-premises settings** dialog, configure the following settings:
+              Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
-          - **Select a third party service provider**: Select one of the following values:
             - **Barracuda**
             - **IronPort**
             - **Mimecast**
@@ -180,29 +181,12 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
             - **Sophos**
             - **Symantec**
             - **Trend Micro**
-            - **Other**
 
-          - **The connector to apply this evaluation to**: Select the connector that's used for mail flow into Microsoft 365.
+       - **The connector to apply this evaluation to**: Select the connector that's used for mail flow into Microsoft 365.
 
-            [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
+         [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
-
-          - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
-
-          When you're finished in the **Third party or on-premises settings** dialog, select **Next**.
-
-       2. In the **Exchange mail flow rules** dialog, decide if you need an Exchange Online mail flow rule (also known as a transport rule) that skips spam filtering for incoming messages from the third-party protection service or device.
-
-          It's likely that you already have an SCL=-1 mail flow rule in Exchange Online that allows all inbound mail from the protection service to bypass (most) Microsoft 365 filtering. Many protection services encourage this spam confidence level (SCL) mail flow rule method for Microsoft 365 customers who use their services.
-
-          As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
-
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service vastly improves the detection capabilities of EOP protection features like [spoof intelligence](anti-phishing-protection-spoofing-about.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
-
-          To create an SCL=-1 mail flow rule or to review your existing rules, select the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
-
-          When you're finished in the **Exchange mail flow rules**, select **Finish**.
+         When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
 
      - **I'm only using Microsoft Exchange Online**: The MX records for your domain point to Microsoft 365. There's nothing left to configure, so select **Finish**.
 
@@ -212,6 +196,18 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
 5. When set up is complete, you get a **Let us show you around** dialog. Select **Start tour** or **Dismiss**.
 
+ <!--- In the **Exchange mail flow rules** dialog, decide if you need an Exchange Online mail flow rule (also known as a transport rule) that skips spam filtering for incoming messages from the third-party protection service or device.
+
+It's likely that you already have an SCL=-1 mail flow rule in Exchange Online that allows all inbound mail from the protection service to bypass (most) Microsoft 365 filtering. Many protection services encourage this spam confidence level (SCL) mail flow rule method for Microsoft 365 customers who use their services.
+
+As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
+
+Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service vastly improves the detection capabilities of EOP protection features like [spoof intelligence](anti-phishing-protection-spoofing-about.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+
+To create an SCL=-1 mail flow rule or to review your existing rules, select the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+
+When you're finished in the **Exchange mail flow rules**, select **Finish**. --->
+
 ## Set up an evaluation or trial in blocking mode
 
 Remember, when you try Defender for Office 365 in blocking mode, the Standard preset security is turned on and the specified users (some or everyone) are included in the Standard preset security policy. For more information about the Standard preset security policy, see [Preset security policies](preset-security-policies.md).
@@ -219,7 +215,7 @@ Remember, when you try Defender for Office 365 in blocking mode, the Standard pr
 1. Start the trial in any of the available locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For example:
    - On the banner at the top of any Defender for Office 365 feature page, select **Start free trial**.
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
-   - On the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
+   - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
 2. In the **Turn on protection** dialog, select **Yes, protect my organization by blocking threats**, and then select **Continue**.
 
@@ -255,31 +251,67 @@ Remember, when you try Defender for Office 365 in blocking mode, the Standard pr
 
 ## Manage your evaluation or trial of Defender for Office 365
 
-After you set up your evaluation or trial in audit mode or blocking mode, the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> is your central location for information about trying Defender for Office 365 Plan 2.
+After you set up your evaluation or trial in audit mode or blocking mode, the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> is your central location for information about the results of trying Defender for Office 365 Plan 2.
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> select **Evaluation mode** in the **Others** section. Or, to go directly to the **Microsoft Defender for Office 365 evaluation** page, use <https://security.microsoft.com/atpEvaluation>.
 
-On the **Microsoft Defender for Office 365 evaluation** page, you can do the following tasks:
+The actions that are available on the **Microsoft Defender for Office 365 evaluation** page are described in the following subsections.
 
-- Select **Buy a paid subscription** to buy Defender for Office 365 Plan 2.
+### Manage evaluation settings
 
-- Select **Manage evaluation settings**. In the **Microsoft Defender for Office 365 evaluation** flyout that opens, you can do the following tasks:
+On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Manage evaluation settings**.
 
-  - Change who the evaluation or trial applies to as described earlier in the [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode) and [Set up an evaluation or trial in blocking mode](#set-up-an-evaluation-or-trial-in-blocking-mode).
+In the **Manage MDO evaluation settings** flyout that opens, the following settings and information is available:
 
-  - To switch from **audit mode** (evaluation policies) to blocking mode (Standard preset security policy), select **Convert to standard protection**, and then select **Continue** in the dialog that appears to be taken to the **Apply standard protection** wizard on the **Preset security policies** page. The existing included and excluded recipients are copied over. For more information, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+- Whether the evaluation is on is shown at the top of the flyout (**Evaluation on** or **Evaluation off**). This information is also available on the **Microsoft Defender for Office 365 evaluation** page.
 
-    **Notes**:
+  The :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** or **Turn on** action allows you to turn off or turn on the evaluation policies.
 
-    - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on. To turn off the evaluation policies, use the **Turn off** button.
-    - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
-      1. Turn off the Standard preset security policy on the **Preset security policies** page.
-      2. After selecting **Manage evaluation settings** on the **Microsoft Defender for Office 365 evaluation** page, verify the presence of the **Turn off** action, which indicates the evaluation policies are turned on. If you see the **Turn on** button, select it to turn on the evaluation policies.
-      3. Verify the users that the evaluation applies to.
+  - How many days are left in the evaluation is shown at the top of the flyout (**nn days remaining**).
 
-  - To turn off the evaluation policies, select **Turn off**. To turn them back on, select **Turn on**.
+- **Detection capabilities** section: Use the toggles to turn on or turn off the following Defender for Office 365 protections:
+  - **Safe Links**
+  - **Safe Attachments**
+  - **Anti-phishing**
 
-When you're finished in the flyout, select **Save**.
+- **Users, groups, and domains** section: Select **Edit users, groups, and domains** to change who the evaluation or trial applies to as described earlier in [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode) and [Set up an evaluation or trial in blocking mode](#set-up-an-evaluation-or-trial-in-blocking-mode). 
+
+- **Impersonation settings** section:
+  - If impersonation protection isn't configured in the anti-phishing evaluation policy, select **Apply impersonation protection** to configure impersonation protection:
+    - Internal and external users (senders) for user impersonation protection.
+    - Custom domains for domain impersonation protection.
+    - Trusted senders and domains to exclude from impersonation protection.
+
+    The steps are essentially the same as described in the **Impersonation** section in Step 5 at [Use the Microsoft 365 Defender portal to create anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies).
+
+  - If impersonation protection is configured in the anti-phishing evaluation policy, this section shows the impersonation protection settings for:
+    - **User impersonation protection**
+    - **Domain impersonation protection**
+    - **Trusted impersonated senders and domains**
+
+    To modify the settings, select **Edit impersonation settings**.
+
+When you're finished in the **Manage MDO evaluation settings** flyout, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close**.
+
+### Convert to standard protection
+
+For your evaluation or trial, you can switch from **audit mode** (evaluation policies) to blocking mode (Standard preset security policy) using either of the following methods:
+
+- <u>On the **Microsoft Defender for Office 365 evaluation** page</u>: Select **Convert to standard protection**
+- <u>In the **Manage MDO evaluation settings** flyout</u>: On the **Microsoft Defender for Office 365 evaluation** page, select **Manage evaluation settings**. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-convert-to-std-prot-icon.png" border="false"::: **Convert to standard protection**.
+
+Read the information in the **Convert to standard protection** dialog that opens, and then select **Continue**.
+
+You're taken to the **Apply standard protection** wizard on the **Preset security policies** page. The list of recipients that are included and excluded from the evaluation or trial are copied over into the Standard preset security policy. For more information, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+
+- The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on.
+- There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
+      1. Turn off the Standard preset security policy on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
+      2. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, verify the value **Evaluation on** is shown.
+
+         If **Evaluation off** is shown, select **Manage evaluation settings**. In the **Manage MDO evaluation settings** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on**.
+
+      3. Select **Manage evaluation settings** to verify the users that the evaluation applies to in the **Users, groups, and domains** section in the **Manage MDO evaluation settings** details flyout that opens.
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
@@ -287,7 +319,7 @@ This section describes the reports that are available in audit mode and blocking
 
 ### Reports for blocking mode
 
-In **blocking mode**, the following reports show detections by Defender for Office 365:
+No special reports are created for **blocking mode**, so you use the standard reports that are available in Defender for Office 365. Specifically, you're looking for reports that apply only to Defender for Office 365 features (for example, Safe Links or Safe Attachments) or reports that can be filtered by Defender for Office 365 detections:
 
 - The [Mailflow view for the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report):
 
@@ -296,9 +328,9 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
 - The [Threat protection status report](reports-email-security.md#threat-protection-status-report):
 
-  - [View data by Overview](reports-email-security.md#view-data-by-overview):
+  You can filter many of the views in the Threat protection status report by the **Protected by** value **MDO** to see the effects of Defender for Office 365.
 
-    You can filter most views by the **Protected by** value **MDO** to see the effects of Defender for Office 365.
+  - [View data by Overview](reports-email-security.md#view-data-by-overview)
 
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
@@ -325,60 +357,56 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
     Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) appear in **MDO detonation**.
 
-  - The [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
+- The [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
 
-    **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
+  **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
 
-  - The [URL protection report](reports-defender-for-office-365.md#url-protection-report)
+- The [URL protection report](reports-defender-for-office-365.md#url-protection-report)
 
 ### Reports for audit mode
 
-In **audit mode**, the following reports show detections by Defender for Office 365:
-
-- The [Threat protection status report](reports-email-security.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
-  - [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+In **audit mode**, you're looking for reports that show detections by the evaluation policies only:
 
 - [Threat Explorer](threat-explorer-about.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   :::image type="content" source="../../media/evalv2-detection-banner.png" alt-text="Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message." lightbox="../../media/evalv2-detection-banner.png":::
 
-The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> consolidates the reporting for the policies in the evaluation.
+- The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> consolidates the detections from the standard reports that are available in Defender for Office 365. The reports on this page are primarily filtered by **Evaluation: Yes** to show detections by the evaluation policies only, but most reports also use additional clarifying filters.
 
-Virtually all of the cards on the page are filtered information from the [Threat protection status report](reports-email-security.md#threat-protection-status-report), where the primary filter is **Evaluation: Yes**. The lone exception is the **Real-time URL click protection** card, which is information from the [URL protection report](reports-defender-for-office-365.md#url-protection-report) that's also filtered by **Evaluation: Yes**.
+  By default, the report summaries on the page show data for the last 30 days, but you can filter the date range by selecting :::image type="icon" source="../../media/m365-cc-sc-add-internal-icon.png" border="false"::: **30 days** and selecting from following additional values that are less than 30 days:
 
-By default, the cards show data for the last 30 days, but you can filter the date range by selecting :::image type="icon" source="../../media/m365-cc-sc-add-internal-icon.png" border="false"::: **30 days** and selecting from following additional values that are less than 30 days:
+  - **24 hours**
+  - **7 days**
+  - **14 days**
+  - **Custom date range**
 
-- **24 hours**
-- **7 days**
-- **14 days**
-- **Custom date range**
+  The date range filter affects the data that's displayed in the report summaries on the page and in the main report when you select **View details** in a card.
 
-The date range filter affects the data that's displayed in the cards on the page and in the main report when you select **View details** in a card.
+  Select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download** to download the chart data to a .csv file.
 
-The following list describes the Threat protection status report views and additional **Detection** filter values that are used. If you select **View details** in a card, you go to the specified view in Threat protection status report using the specified **Detection** filter values:
+  - The following reports on the page contain filtered information from specific views in the [Threat protection status report](reports-email-security.md#threat-protection-status-report):
+    - **Email links**:
+      - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+      - **Detection** filters: **URL detonation reputation** and **URL detonation**.
+    - **Attachments in email**: 
+      - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+      - **Detection** filters: **File detonation** and **File detonation reputation**.
+    - **Impersonation**
+      - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+      - **Detection** filters: **Impersonation user**, **Impersonation domain**, and **Mailbox intelligence impersonation**.
+    - **Attachment links**
+      - Report view: [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+      - **Detection** filters: **URL detonation** and **URL detonation reputation**.
+    - **Embedded malware**
+      - Report view: [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+      - **Detection** filters: **File detonation** and **File detonation reputation**.
+    - **Spoofed senders**: 
+      - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+     - **Detection** filters: **Spoof intra-org**, **Spoof external domain**, and **Spoof DMARC**.
 
-- **Email links**:
-  - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **URL detonation reputation** and **URL detonation**.
-- **Attachments in email**: 
-  - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **File detonation** and **File detonation reputation**.
-- **Impersonation**
-  - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **Impersonation user**, **Impersonation domain**, and **Mailbox intelligence impersonation**.
-- **Attachment links**
-  - Report view: [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **URL detonation** and **URL detonation reputation**.
-- **Embedded malware**
-  - Report view: [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **File detonation** and **File detonation reputation**.
-- **Spoofed senders**: 
-  - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - **Detection** filters: **Spoof intra-org**, **Spoof external domain**, and **Spoof DMARC**.
+  - **Real-time URL click protection**: Uses the [View data by URL click protection action in the URL protection report](reports-defender-for-office-365.md#view-data-by-url-click-protection-action-in-the-url-protection-report) that's filtered by **Evaluation: Yes**.
 
-Select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download** to download the chart data to a .csv file.
+    Although the [View data by URL click by application in the URL protection report](reports-defender-for-office-365.md#view-data-by-url-click-by-application-in-the-url-protection-report) isn't shown on the **Microsoft Defender for Office 365 evaluation** page, it's also filterable by **Evaluation: Yes**.
 
 ## Required permissions
 
