@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ""
+description: "How to manage Teams apps that work in Outlook and Microsoft 365 through controls in the Integrated Apps portal."
 ---
 
 # Teams apps that work on Outlook and Microsoft 365

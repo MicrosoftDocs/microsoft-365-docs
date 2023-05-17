@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
+description: "How to block and unblock apps Teams apps that only work on Teams through controls in the Integrated Apps portal."
 ---
 
 # Teams apps that only work on Teams
 
-In addition to the above controls, admins can also block or unblock Teams apps that only work on Teams from the Integrated apps portal. Such apps have a manifest version less than 1.13. These are apps that can be identified by the availability status **Some or all users in the organization can install** in the **Available Apps** list. At this time, only blocking and unblocking of such an app is supported via the Integrated Apps portal.
+In addition to the controls available to you in the Integrated Apps portal, admins can also block or unblock Teams apps that only work on Teams. Such apps have a manifest version less than 1.13. These are apps that can be identified by the availability status **Some or all users in the organization can install** in the **Available Apps** list. At this time, only blocking and unblocking of such an app is supported via the Integrated Apps portal.
 
 ## Before you begin
 

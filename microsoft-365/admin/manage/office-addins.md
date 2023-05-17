@@ -1,5 +1,5 @@
 ---
-title: "Office Add-ins"
+title: "Deploy and manage Office Add-ins"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -17,10 +17,10 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ""
+description: "An overview of how to deploy and manage Office Add-ins."
 ---
 
-# Office Add-ins
+# Deploy and manage Office Add-ins
 
 ## What are Office add-ins?
 

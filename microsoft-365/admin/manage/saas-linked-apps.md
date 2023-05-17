@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ""
+description: "Gives an oveview of software as a service (SaaS) linked apps."
 ---
 
 # SaaS linked apps
@@ -26,14 +26,14 @@ The Microsoft 365 admin center gives you the flexibility to deploy single store 
 
 We help our admins discover these linked apps with the SaaS offer and manage them all at once from Integrated apps. The UX on the Integrated Apps portal allows the admin to apply the same gesture across all the apps at once.
 
-An admin can choose not to deploy an app which is linked to an SaaS offer. On returning to Integrated apps, admins will find the status of **More apps available** in the Deployed Apps list view. This is to inform the admins that there are more integrations from the ISVs that haven’t been deployed yet.
+An admin can choose not to deploy an app that is linked to a SaaS offer. On returning to Integrated apps, admins will find the status of **More apps available** in the Deployed Apps list view. This status is to inform the admins that there are more integrations from the ISVs that haven’t been deployed yet.
 
-There are the scenarios when SaaS linked apps cannot be managed from Integrated Apps.
+There are the scenarios when SaaS linked apps can't be managed from Integrated Apps.
 
 ## Unsupported scenarios
 
-You won't be able to deploy a single store add-in from the Integrated apps portal for the following scenarios:
+You are not able to deploy a single store add-in from the Integrated apps portal for the following scenarios:
 
 - The same add-in is linked to more than one SaaS offer.
-- The SaaS offer is linked to add-ins, but it does not integrate with Microsoft Graph and no AAD App ID is provided.
-- The SaaS offer is linked to add-ins, but AAD App ID provided for Microsoft Graph integration is shared across multiple SaaS offers.
+- The SaaS offer is linked to add-ins, but it doesn't integrate with Microsoft Graph and no Azure AD App ID is provided.
+- The SaaS offer is linked to add-ins, but Azure AD App ID provided for Microsoft Graph integration is shared across multiple SaaS offers.
