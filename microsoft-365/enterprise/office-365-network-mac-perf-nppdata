@@ -83,6 +83,8 @@ In addition, we remove outliers from the sample source where outliers are define
 > [!div class="mx-imgBorder"]
 > ![Network outlier calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-outlier.png)
 
+Network providers will additionally not be shown in a tenant or location view if that network provider accounts for fewer than 0.01% of users represented in that view.
+
 ## Network Provider Index Chart
 
 The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
