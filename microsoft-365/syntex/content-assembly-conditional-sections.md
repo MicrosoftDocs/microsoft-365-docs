@@ -64,7 +64,7 @@ For this example, we want to show the selected content for two conditions: if th
 
 4. In the **Enter a value** box, enter the appropriate value. (For this example, we entered **Full Time**.)
 
-5. When you're done entering conditions, select **Save**. The new field is displayed in the **Set up the template panel** and shows the conditions based on which this section will be included in the final document.
+5. When you're done entering conditions, select **Save**. The new field is displayed in the **Set up the template** panel and shows the conditions based on which this section will be included in the final document.
 
    ![Screenshot of the Set up the template panel and template document showing the conditions.](../media/content-understanding/content-assembly-conditional-5.png)
 
@@ -81,3 +81,6 @@ To edit the conditions in a conditional section, you can use either of these two
 > - Currently, you can create conditional sections around text and complete paragraphs. Conditional sections around images and tables is not yet supported.<br>
 >- You can't add nested conditions. To achieve nested conditions, you'll need to create conditional sections around every section and specify all the required conditions.
  
+## See also
+
+[Create a document from a modern template](content-assembly-create-document.md)
