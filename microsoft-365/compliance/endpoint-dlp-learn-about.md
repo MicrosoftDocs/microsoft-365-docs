@@ -60,7 +60,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
 
 - Create a policy and scope it to endpoints and to that group of users.
-- Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type**, and select **Credit Card**.
+- Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type*, and select **Credit Card**.
 - Set the actions for each activity to **Block**.
 
 See [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
