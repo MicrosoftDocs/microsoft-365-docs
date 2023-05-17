@@ -141,7 +141,7 @@ DLP can copy items that match policies on devices to an [Azure storage account](
 - For more information on this feature, see [Learn about collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-learn.md)  
 - For more information on how to configure this feature, see [Get started with collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-get-started.md)
 
-### Network share coverage and exclusions
+### Network share coverage and exclusions (preview)
 
 > [!IMPORTANT]
 > To use **Network share coverage and exclusions** devices must have these updates applied:
