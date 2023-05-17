@@ -83,7 +83,7 @@ What if you don't want to move email for everyone on your domain to Microsoft 36
 
 There are a couple of scenarios when you just need to verify your organization's domain and not set up any services. For example, to prove to Microsoft 365 that your organization qualifies for a school subscription.
   
-Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
+Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Viva Engage](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
   
 ## Services not working with your domain?
 

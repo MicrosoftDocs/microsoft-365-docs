@@ -60,7 +60,7 @@ The following are definitions of the metrics available in the report table.
 |Group name |The name of the group. |
 |Deleted |The number of deleted groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true. |
 |Group owner |The name of the group owner. |
-|Last activity date (UTC) |The latest date a message was received by the group. - This is the latest date an activity happened in an email conversation, Yammer, or the Site. |
+|Last activity date (UTC) |The latest date a message was received by the group. - This is the latest date an activity happened in an email conversation, Viva Engage, or the Site. |
 |Type |The type of group. This can be private or public group. |
 |Emails received in Exchange |The number of messages received by the group.|
 |Emails in Exchange (total) |The total number of items in the group's mailbox. |
@@ -68,9 +68,9 @@ The following are definitions of the metrics available in the report table.
 |SharePoint files (total) |The number of files stored in SharePoint group sites. |
 |SharePoint files (active) |The number of files in the SharePoint group site that were acted on (viewed or modified, synched, shared internally or externally) during the reporting period. |
 |Total site storage used for SharePoint (MB) |The amount of storage in MB used during the reporting period. |
-|Messages in Yammer (posted) |The number of messages posted in the Yammer group over the reporting period. |
-|Messages in Yammer (read) |The number of conversations read in the Yammer group over the reporting period. |
-|Messages in Yammer (liked) |The number of messages liked in the Yammer group over the reporting period. |
+|Messages in Viva Engage (posted) |The number of messages posted in the Viva Engage group over the reporting period. |
+|Messages in Viva Engage (read) |The number of conversations read in the Viva Engage group over the reporting period. |
+|Messages in Viva Engage (liked) |The number of messages liked in the Viva Engage group over the reporting period. |
 |Members |The number of members in the group. |
 |External members |The number of external users in the group.|
 |Total organized meetings  |The sum of one-time scheduled and recurring meetings a user organized during the specified time period.|

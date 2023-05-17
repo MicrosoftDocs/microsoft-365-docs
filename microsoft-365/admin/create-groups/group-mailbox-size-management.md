@@ -15,7 +15,7 @@ ms.author: serdars
 
 # Microsoft 365 group mailbox size management 
 
-Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the emails received on the group. The group mailbox is also used by applications like SharePoint Online, Yammer, Teams etc. The group mailbox is equipped with initial storage quota of 50 GB. If the group mailbox quota is reached, people sending emails to the group receive a non-delivery report. Hence, it’s a good practice to remove the older content from group mailboxes, to ensure the group mailbox doesn’t reach its quota. 
+Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the emails received on the group. The group mailbox is also used by applications like SharePoint Online, Viva Engage, Teams etc. The group mailbox is equipped with initial storage quota of 50 GB. If the group mailbox quota is reached, people sending emails to the group receive a non-delivery report. Hence, it’s a good practice to remove the older content from group mailboxes, to ensure the group mailbox doesn’t reach its quota. 
 
 The following ways help you understand how the quota calculation works, best practices or proactive approach taken to ensure the group mailbox doesn't reach its quota. And the course of action to be performed if the group mailbox as reached or exceeded its quota.
 
