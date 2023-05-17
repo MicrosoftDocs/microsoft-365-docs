@@ -48,7 +48,7 @@ For this example, we want to show the selected content for two conditions: if th
 
    ![Screenshot of the Set condition panel and template document for the first condition.](../media/content-understanding/content-assembly-conditional-3.png)
 
-2. From the **Choose a condition** dropdown list, select the appropriate value. (For this example, we selected **greater than**.)
+2. From the **Choose a condition** dropdown list, select the appropriate condition. (For this example, we selected **greater than**.)
 
 3. In the **Enter a value** box, enter the appropriate value. (For this example, we entered **0**.)
 
@@ -60,7 +60,7 @@ For this example, we want to show the selected content for two conditions: if th
 
    ![Screenshot of the Set condition panel and template document for the second condition.](../media/content-understanding/content-assembly-conditional-4.png)
 
-3. From the **Choose a condition** dropdown list, select the appropriate value. (For this example, we selected **exact match**.)
+3. From the **Choose a condition** dropdown list, select the appropriate condition. (For this example, we selected **exact match**.)
 
 4. In the **Enter a value** box, enter the appropriate value. (For this example, we entered **Full Time**.)
 
