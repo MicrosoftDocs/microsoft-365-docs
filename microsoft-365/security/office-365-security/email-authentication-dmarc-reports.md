@@ -31,7 +31,7 @@ Domain-based Message Authentication, Reporting, and Conformance (**DMARC**) help
 
 ## Office 365 DMARC reporting
 
-In Office 365, the DMARC reports are sent to all sender domain owners that have a valid rua address defined in their DMARC record. This is independent of your platform or configuration.
+In Office 365, the DMARC reports are sent to all sender domain owners that have a valid rua address defined in their DMARC record (independent of your platform or configuration).
 
 The only exception is where the MX record for the recipient domain doesn't directly point to Office 365. In that case no DMARC Report is sent to the sender domain owner rua address.
 
@@ -43,7 +43,7 @@ The only exception is where the MX record for the recipient domain doesn't direc
 
 **Mailbox A report result** > automatically sent an aggregated DMARC report to all email sender domain owners with a valid rua address in their DMARC record.
 
-But if the contoso.com domain's MX record points to a *different email security solution* that sits in front of Office 365, then *no DMARC aggregate reports will be sent to any sender domain's rua address* (configured in their DMARC record). This is because information about the sending infrastructure is likely affected by complex mail flow routing.
+But if the contoso.com domain's MX record points to a *different email security solution* that sits in front of Office 365, then *no DMARC aggregate reports are sent to any sender domain's rua address* (configured in their DMARC record). This is because information about the sending infrastructure is likely affected by the complex mail flow routing.
 
 ## What DMARC Reports do for you
 
@@ -61,13 +61,13 @@ Admins should regularly read and monitor the daily DMARC reports sent in email. 
     - Quarantine
     - Reject
 
-DMARC reports let you know who is sending mail on your domain, and can alert you to potential spammers, but another advantage is that once the majority of messages pass DMARC, admins can change enforcement by creating a stricter DMARC policy. This makes the environment increasingly unfriendly to spoofing and phishing.
+DMARC reports let you know who is sending mail on your domain, and can alert you to potential spammers. Another advantage is that once most messages pass DMARC, admins can change enforcement by creating a stricter DMARC policy. This makes the environment increasingly unfriendly to spoofing and phishing.
 
-Reviewing DMARC reports can verify messages from their domain are being sent by authorized servers, and determine whether they pass authentication checks. Over time, this will allow admins to fine tune their response, choosing from amongst reject, quarantine, or no response (none).
+Reviewing DMARC reports can verify that messages are sent by authorized servers, and determine whether they pass authentication checks. Over time, this will allow admins to fine tune their response, choosing from amongst reject, quarantine, or no response (none).
 
 ## Reading your DMARC Reports
 
-When DMARC is turned on, reports are sent, daily, to the email address or addresses specified in your DMARC record (reports using the rua tag in the DMARC record contain the email information).
+When DMARC is turned on, reports are sent daily to the email address or addresses specified in your DMARC record (reports using the rua tag in the DMARC record contain the email information).
 
 Every server that gets mail from your domain also sends back an XML DMARC report, including whether messages coming out of your domain pass or fail DMARC. You'll also see:
 
