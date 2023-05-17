@@ -59,47 +59,10 @@ If your app is deactivated, existing tokens will no longer work. You can also ch
 
 When you activate a Zoom connector in Compliance Manager, you'll provide your Account ID, Client ID, and Client secret. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
-## More resources
+You can always retrieve your app credientials by following these steps:
 
-#### Get access tokens for development environments
+1.  From the Zoom App Marketplace, select **Manage** in the upper right corner.
+1. Select the app you created in step 2 above.
+1. On the **App credentials** page, select **Copy** next to the credentials you need to copy.
 
-**Use account credentials to get an access token**
-
-To use account credentials to get an access token for your app, call the Zoom OAuth token API with the account_credentials grant_type and your account_id:. The successful response will be the access token, which is a Bearer token type that **expires in an hour**, with the scopes that you chose in your app settings screen.
-
-**Get a new access token**
-
-There are no refresh tokens for this grant type. To get a new access token, your app should call the /oauth/token endpoint again with the account_credentials grant.
-
-**Make API calls to Zoom endpoints**
-
-Use OAuth 2.0 to make API calls to Zoom endpoints. Send the access token in the Authorization header as a Bearer token.
-
-Example:
-
-GET https://api.zoom.us/v2/accounts/me/settings?option=security  
-
-Authorization: Bearer {Your token here}
-
-### About Zoom account credentials
-
-**Zoom Account client credentials grant type**
-
-The Zoom account **client credentials** grant type facilitates OAuth-authenticated requests between servers without end user involvement, also known as server-to-server or two-legged OAuth. Use this grant type to enable your private server application to get your account owner access token without user interaction. The features of the account credentials grant type are:
-- The token is the owner’s access token.
-- The token’s time to live is one hour.
-- There's no refresh token.
-- Tokens stop working when the app is deactivated.
-- Server-to-Server OAuth apps can be deleted.
-- Account administrators authorize the scopes available to Developers building these app types.
-
-> [!TIP]
-> Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
-
-Account administrators must grant developers role-based access permissions to create, edit, or view Server-to-Server OAuth apps. See [Enable permissions](#1-enable-permissions) for details.
-
-**Difference from app credentials**
-
-- **Zoom account client credentials** is a new grant type that developers can use with the Zoom OAuth Service to facilitate OAuth-authenticated requests without end user involvement. This document describes this grant type and how to use it.
-
-- **App credentials** are the app client credentials, including the client ID and secret, which Zoom provides to app developers to access the Zoom platform.
+Once you've set up a connector in Compliance Manger for one service instance, the connector takes care of the token refresh automatically. You don't need to keep getting new tokens for the same account. If you set up a new connector for another account within the same service, you'll need to go to Zoom to get a new token following the guidance on this page.
