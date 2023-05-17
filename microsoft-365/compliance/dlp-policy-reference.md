@@ -61,7 +61,7 @@ Also, you need to be aware of the following constraints of the platform:
 
 ## Policy templates
 
-DLP policy templates are pre-sorted into four categories:
+DLP policy templates are presorted into four categories:
 
 - Ones that can detect and protect types of **Financial** information.
 - Ones that can detect and protect types of **Medical and health** information.
@@ -174,7 +174,7 @@ DLP supports associating policies with administrative units. See [Administrative
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional pre-requisites |
+|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional prerequisites |
 |---------|---------|---------|---------|---------|
 |Exchange email online|Yes |distribution group | data-in-motion| No |
 |SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
@@ -187,13 +187,13 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 #### Exchange location scoping 
 
-If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. 
+If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
 
 
 |Sender is  |Recipient is  |Resultant behavior  |
 |---------|---------|---------|
 |In scope     |N/A     |Policy is applied         |
-|Out of scope     |In scope         |Policy is not applied         |
+|Out of scope     |In scope         |Policy isn't applied         |
 
 ##### Exchange location scope calculation
 
@@ -207,14 +207,14 @@ Say you have four users in your org, *U1*, *U2*, *U3*, *U4* and, two distributio
 |DG1     |U1, U2 |
 |DG2     |U2, U3 |
 
-U4 is not a member of any group.
+U4 isn't a member of any group.
 
 
 |Include setting |Exclude setting  |Policy applies to  |Policy doesn't apply to   |Explanation of behavior|
 |---------|---------|---------|---------|---------|
 |All  |None         |All senders in the Exchange org (U1, U2, U3, U4)         |N/A         |When neither are defined, all senders are included|
-|DG1     |None         |Member senders of DG1 (U1, U2)         |All senders who are not members of DG1 (U3, U4)         |When one setting is defined and the other isn't the defined setting is used|
-|All  |DG2         |All senders in the Exchange org who are not members of DG2  (U1, U4)      |All senders who are members of DG2 (U2, U3)  |When one setting is defined and the other isn't the defined setting is used         |
+|DG1     |None         |Member senders of DG1 (U1, U2)         |All senders who aren't members of DG1 (U3, U4)         |When one setting is defined and the other isn't the defined setting is used|
+|All  |DG2         |All senders in the Exchange org who aren't members of DG2  (U1, U4)      |All senders who are members of DG2 (U2, U3)  |When one setting is defined and the other isn't the defined setting is used         |
 |DG1  |DG2         |U1         |U2, U3, U4         |Exclude overrides include|
   
 
@@ -387,7 +387,7 @@ depending on the [location(s)](#location-support-for-how-content-can-be-defined)
 
 The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick.
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
+SITs have a predefined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
@@ -719,7 +719,7 @@ and
 
 - all actions for the non-Exchange location
 
-actions will be available.
+actions are available.
 
 If you select two or more non-Exchange locations for the policy to be applied to, the
 
@@ -753,12 +753,12 @@ Whether an action takes effect or not depends on how you configure the mode of t
 |Restrict access or encrypt content in Microsoft 365| EXO/SPO/ODB |  |
 |Set headers | EXO | |
 |Remove header | EXO | |
-|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Cannot be DL/SG|
+|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Can't be DL/SG|
 |Forward the message for approval to sender's manager | EXO | Manager should be defined in AD|
 |Forward the message for approval to specific approvers |EXO | Groups aren't supported|
-|Add recipient to the **To** box | EXO | Recipient count <= 10; Cannot be DL/SG|
-|Add recipient to the **Cc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
-|Add recipient to the **Bcc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
+|Add recipient to the **To** box | EXO | Recipient count <= 10; Can't be DL/SG|
+|Add recipient to the **Cc** box | EXO | Recipient count <= 10; Can't be DL/SG|
+|Add recipient to the **Bcc** box | EXO | Recipient count <= 10; Can't be DL/SG|
 |Add the sender's manager as recipient | EXO | Manager attribute should be defined in AD|
 |Apply HTML disclaimer| EXO| |
 |Prepend subject| EXO| |
@@ -940,7 +940,7 @@ Alerts can be sent every time an activity matches a rule, which can be noisy or 
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
-DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there's a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
 #### Evidence collection for file activities on devices (preview)
 
