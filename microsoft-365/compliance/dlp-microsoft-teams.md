@@ -47,7 +47,7 @@ You can extend the Teams DLP policy to cover SharePoint Online and OneDrive for 
 
 - Office 365 E5/A5/G5
 - Microsoft 365 E5/A5/G5
-- Microsoft 365 E5/A5/G5 Information Protection and Governance
+- Microsoft 365 E5/A5/G5/F5 Information Protection and Governance
 - Microsoft 365 E5/A5/G5/F5 Compliance and F5 Security & Compliance
 
 Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
