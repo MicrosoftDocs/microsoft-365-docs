@@ -29,7 +29,7 @@ This process involves obtaining a token for a given Salesforce account. Therefor
 
 ## Setup steps
 
-1. Log in to your Salesforce account with your credentials.
+1. Sign in to your Salesforce account with your credentials.
 
 1. Go to your account **Settings** and select **Reset My Security Token**. This can be done by any user.
 
