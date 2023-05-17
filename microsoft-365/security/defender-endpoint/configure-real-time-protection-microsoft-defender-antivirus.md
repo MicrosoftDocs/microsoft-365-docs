@@ -37,7 +37,22 @@ Always-on protection consists of real-time protection, behavior monitoring, and 
 > When [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
 
 
-## Enable and configure always-on protection in Group Policy
+## Manage antivirus settings with Microsoft Intune
+
+You can use Intune to configure antivirus policies, and then apply those policies across devices in your organization. Antivirus policies help security admins focus on managing the discrete group of antivirus settings for managed devices. Each antivirus policy includes several profiles. Each profile contains only the settings that are relevant for Microsoft Defender Antivirus for macOS and Windows devices, or for the user experience in the Windows Security app on Windows devices.
+
+See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-antivirus-policy).
+ 
+
+1. Go to the [Intune admin center](https://intune.microsoft.com/) and sign in.
+
+2. In the navigation pane, choose **Endpoint security** and then, under **Manage**, choose **Antivirus**.
+
+## Are you using Group Policy?
+
+If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) will be ignored. 
+
+Moreover, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, you cannot turn it off by using Group Policy. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
 
 You can use **Local Group Policy Editor** to enable and configure Microsoft Defender Antivirus always-on protection settings.
 
