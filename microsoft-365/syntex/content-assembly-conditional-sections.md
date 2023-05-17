@@ -64,7 +64,7 @@ For this example, we want to show the selected content for two conditions: if th
 
 4. In the **Enter a value** box, enter the appropriate value. (For this example, we entered **Full Time**.)
 
-5. When you are done entering conditions, select **Save**. The new field is displayed in the **Set up the template panel** and shows the conditions based on which this section will be included in the final document.
+5. When you're done entering conditions, select **Save**. The new field is displayed in the **Set up the template panel** and shows the conditions based on which this section will be included in the final document.
 
    ![Screenshot of the Set up the template panel and template document showing the conditions.](../media/content-understanding/content-assembly-conditional-5.png)
 
@@ -72,9 +72,10 @@ For this example, we want to show the selected content for two conditions: if th
 
 To edit the conditions in a conditional section, you can use either of these two methods:
  
-- Select the **+1 more condition** hyperlink, which will take you to the **Set conditions** page.
-
+- Select the **+1 more condition** hyperlink, which takes you to the **Set conditions** page.
 - Select the three dots, and then select **Edit**.
+
+   ![Screenshot of a conditional section with the edit options highlighted.](../media/content-understanding/content-assembly-conditional-edit.png)
 
 > [!NOTE]
 > - Currently, you can create conditional sections around text and complete paragraphs. Conditional sections around images and tables is not yet supported.<br>
