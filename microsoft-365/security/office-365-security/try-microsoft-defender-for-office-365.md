@@ -257,29 +257,29 @@ Remember, when you try Defender for Office 365 in blocking mode, the Standard pr
 
 After you set up your evaluation or trial in audit mode or blocking mode, the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> is your central location for information about trying Defender for Office 365 Plan 2.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> select **Evaluation mode** in the **Others** section. Or, to go directly to the **Microsoft Defender for Office 365 evaluation** page, use <https://security.microsoft.com/atpEvaluation>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> select **Evaluation mode** in the **Others** section. Or, to go directly to the **Microsoft Defender for Office 365 evaluation** page, use <https://security.microsoft.com/atpEvaluation>.
 
-2. On the **Microsoft Defender for Office 365 evaluation** page, you can do the following tasks:
+On the **Microsoft Defender for Office 365 evaluation** page, you can do the following tasks:
 
-   - Select **Buy a paid subscription** to buy Defender for Office 365 Plan 2.
+- Select **Buy a paid subscription** to buy Defender for Office 365 Plan 2.
 
-   - Select **Manage**. In the **Microsoft Defender for Office 365 evaluation** flyout that appears, you can do the following tasks:
+- Select **Manage evaluation settings**. In the **Microsoft Defender for Office 365 evaluation** flyout that opens, you can do the following tasks:
 
-     - Change who the evaluation or trial applies to as described earlier in the [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode) and [Set up an evaluation or trial in blocking mode](#set-up-an-evaluation-or-trial-in-blocking-mode).
+  - Change who the evaluation or trial applies to as described earlier in the [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode) and [Set up an evaluation or trial in blocking mode](#set-up-an-evaluation-or-trial-in-blocking-mode).
 
-     - To switch from **audit mode** (evaluation policies) to blocking mode (Standard preset security policy), select **Convert to standard protection**, and then select **Continue** in the dialog that appears to be taken to the **Apply standard protection** wizard on the **Preset security policies** page. The existing included and excluded recipients are copied over. For more information, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+  - To switch from **audit mode** (evaluation policies) to blocking mode (Standard preset security policy), select **Convert to standard protection**, and then select **Continue** in the dialog that appears to be taken to the **Apply standard protection** wizard on the **Preset security policies** page. The existing included and excluded recipients are copied over. For more information, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-       **Notes**:
+    **Notes**:
 
-       - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on. To turn off the evaluation policies, use the **Turn off** button.
-       - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
-         1. Turn off the Standard preset security policy on the **Preset security policies** page.
-         2. After selecting **Manage** on the **Microsoft Defender for Office 365 evaluation** page, verify the presence of the **Turn off** button, which indicates the evaluation policies are turned on. If you see the **Turn on** button, select it to turn on the evaluation policies.
-         3. Verify the users that the evaluation applies to.
+    - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on. To turn off the evaluation policies, use the **Turn off** button.
+    - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
+      1. Turn off the Standard preset security policy on the **Preset security policies** page.
+      2. After selecting **Manage evaluation settings** on the **Microsoft Defender for Office 365 evaluation** page, verify the presence of the **Turn off** action, which indicates the evaluation policies are turned on. If you see the **Turn on** button, select it to turn on the evaluation policies.
+      3. Verify the users that the evaluation applies to.
 
-     - To turn off the evaluation policies, select **Turn off**. To turn them back on, select **Turn on**.
+  - To turn off the evaluation policies, select **Turn off**. To turn them back on, select **Turn on**.
 
-     When you're finished in the flyout, select **Save**.
+When you're finished in the flyout, select **Save**.
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
