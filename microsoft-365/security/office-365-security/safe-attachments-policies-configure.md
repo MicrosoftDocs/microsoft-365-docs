@@ -63,6 +63,8 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
+- For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
+
 ## Use the Microsoft 365 Defender portal to create Safe Attachments policies
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
@@ -82,7 +84,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
