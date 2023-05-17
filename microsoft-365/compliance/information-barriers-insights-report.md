@@ -28,12 +28,12 @@ The insights report in [information barriers](information-barriers.md) (IB) can 
 
 The insights report provides the following information for the top 100 most actively used sites and accounts in your organization:
 
-|**Section**|**Description**|**Applies to**|
+|**Report section**|**Description**|**Applies to**|
 |:-------|:--------------|:-------------|
 |Explicit mode section|Top restrictive sites with highest collaboration between IB users|SharePoint sites and OneDrive accounts|
 |Implicit mode section|Top sites with highest collaboration between compatible users|SharePoint sites only|
 |Mixed mode section|Top accounts with collaboration between segmented and unsegmented users|OneDrive accounts only|
-|Mode Distribution|The number and percentage of modes across all sites and accounts|SharePoint sites and OneDrive accounts|
+|Mode Distribution section|The number and percentage of modes across all sites and accounts|SharePoint sites and OneDrive accounts|
 |Open mode section|Top least restrictive sites|SharePoint sites and OneDrive accounts|
 |Owner Moderated mode section|Top sites with highest collaboration between IB users and non-IB users|SharePoint sites and OneDrive accounts|
 
@@ -193,16 +193,27 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 
 **Example**:
 
-`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Explicit`
+`Get-SPOInformationBarriersInsightsReport -reportId ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776 -service OneDrive -section Open`
 
 **Example results**:
 
-`Content: Explicit` <br>
-`State: Completed`<br>
-`Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776`<br>
-`StartTimeInUtc: 4/25/2023 4:10:16 PM`<br>
-`CompleteTimeInUtc: 4/25/2023 4:10:25 PM`<br>
-`QueuedTimeInUtc: 4/25/2023 4:06:47 PM`
+`SiteName: User1` <br>
+`SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user1_spdfcontoso_onmicrosoft_com`<br>
+`Site Owner: user1@spdfcontoso.onmicrosoft.com`<br>
+`LastActivity:`<br>
+`IBMode: Open`
+
+`SiteName: User2` <br>
+`SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user2_spdfcontoso_onmicrosoft_com`<br>
+`Site Owner: user2@spdfcontoso.onmicrosoft.com`<br>
+`LastActivity:`<br>
+`IBMode: Open`
+
+`SiteName: User3` <br>
+`SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user3_spdfcontoso_onmicrosoft_com`<br>
+`Site Owner: user3@spdfcontoso.onmicrosoft.com`<br>
+`LastActivity:`<br>
+`IBMode: Open`
 
 ### View the details for the mode distribution for OneDrive accounts
 
