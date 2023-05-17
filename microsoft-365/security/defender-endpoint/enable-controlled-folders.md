@@ -81,11 +81,11 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 4. Name the policy and add a description. Select **Next**.
 
-5. Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
+5. Scroll down to the bottom, select the **Enable Controlled Folder Access** drop-down, and choose **Enable**.
 
-6. Select **List of additional folders that need to be protected** and add the folders that need to be protected.
+6. Select **Controlled Folder Access Protected Folders** and add the folders that need to be protected.
 
-7. Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
+7. Select **Controlled Folder Access Allowed Applications** and add the apps that have access to protected folders.
 
 8. Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
 
