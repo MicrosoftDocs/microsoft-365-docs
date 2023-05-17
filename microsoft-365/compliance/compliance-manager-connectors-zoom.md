@@ -39,7 +39,7 @@ The user who handles the connector activation process for Zoom needs view and ed
 
 Follow the steps below to create a Server-to-Server OAuth app to use with account credentials.
 
-1. Log in to your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
+1. Sign in to your Zoom account and go to the Zoom App Marketplace: https://marketplace.zoom.com/develop/create.
 1. From the **Develop** drop-down menu, select **Build application**.
 1. Find the **Server-to-Server OAuth** app type card, then select **Create**.
 1. Enter a name for your app, then select **Create**.
@@ -59,7 +59,7 @@ If your app is deactivated, existing tokens will no longer work. You can also ch
 
 When you activate a Zoom connector in Compliance Manager, you'll provide your Account ID, Client ID, and Client secret. Once you validate the connection during the connector activation process, you're all set up and ready to begin using the connector. Get details at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
-You can always retrieve your app credientials by following these steps:
+You can always retrieve your app credentials by following these steps:
 
 1.  From the Zoom App Marketplace, select **Manage** in the upper right corner.
 1. Select the app you created in step 2 above.
