@@ -38,5 +38,5 @@ After a user connects their device to your organization by signing in with their
 
 ## Related content
 
-[Remove company data from devices](../business-premium/m365bp-remove-company-data.md) (article)\
-[Reset Windows 10 devices to their factory settings](../business-premium/m365bp-reset-devices-to-factory-settings.md) (article)
+- [Microsoft 365 Business Premium administration guide](../business-premium/m365bp-admin-guide.md)
+- [Microsoft 365 Business Premium security operations guide](../business-premium/m365bp-security-operations-guide.md)
