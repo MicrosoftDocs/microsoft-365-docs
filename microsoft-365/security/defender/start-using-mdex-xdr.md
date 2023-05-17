@@ -210,4 +210,6 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 ### See also
 
-[Search audit logs for actions performed by Defender Experts](auditing.md)
+- [Search audit logs for actions performed by Defender Experts](auditing.md)
+- [Additional information](additional-information-xdr.md)
+- [Frequently asked questions](frequently-asked-questions.md)

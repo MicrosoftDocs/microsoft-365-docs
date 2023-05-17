@@ -96,3 +96,7 @@ Once you’ve completed the readiness checks, our experts will start monitoring 
 ### Next step
 
 [Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)
+
+### See also
+- [Frequently asked questions](frequently-asked-questions.md)
+- [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
