@@ -15,7 +15,7 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
   - m365-security
   - tier1
-description: Read your DMARC Reports. If you set the rua tag while configuring, DMARC Reports will be sent daily to the email addresses specified, which will help admins and SecOps fight spoofing and phishing emails. Domain-based Message Authentication, Reporting, and Conformance (DMARC) will validate messages sent from your organization, and generate reporting that highlights DMARC effectiveness.
+description: Read your DMARC Reports. If you set the rua tag while configuring, DMARC Reports are sent daily to the email addresses specified, which help admins and SecOps fight spoofing and phishing emails. Domain-based Message Authentication, Reporting, and Conformance (DMARC) validate messages sent from your organization, and generate reporting that highlights DMARC effectiveness.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -69,7 +69,7 @@ Reviewing DMARC reports can verify messages from their domain are being sent by 
 
 When DMARC is turned on, reports are sent, daily, to the email address or addresses specified in your DMARC record (reports using the rua tag in the DMARC record contain the email information).
 
-Every server that gets mail from your domain will also send back an XML DMARC report, including whether messages coming out of your domain pass or fail DMARC. You'll also see:
+Every server that gets mail from your domain also sends back an XML DMARC report, including whether messages coming out of your domain pass or fail DMARC. You'll also see:
 
 - Any results for SPF, DKIM, and DMARC email authentication.
 - How many messages came from each IP address that day.
