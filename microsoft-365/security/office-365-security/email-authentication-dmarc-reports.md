@@ -23,7 +23,7 @@ ms.service: microsoft-365-security
 # Use DMARC Reports to validate email in Microsoft Office 365
 
 > [!NOTE]
-> If you haven't set up DMARC the directions are [here](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure?view=o365-worldwide). For an overview of email authentication including SPF, DKIM and DMARC in Microsoft Office 365, see this [link](/microsoft-365/security/office-365-security/email-authentication-about?view=o365-worldwide).
+> If you haven't set up DMARC, the directions are [here](email-authentication-dmarc-configure.md). For an overview of email authentication including SPF, DKIM and DMARC in Microsoft Office 365, see this [topic](email-authentication-about.md).
 
 Domain-based Message Authentication, Reporting, and Conformance (**DMARC**) helps protect against spoofing and phishing, and prevents benign messages from being marked as spam.
 
@@ -31,9 +31,9 @@ Domain-based Message Authentication, Reporting, and Conformance (**DMARC**) help
 
 ## Office 365 DMARC reporting
 
-In Office 365, the DMARC reports are sent to all sender domain owners that have a valid rua address defined in their DMARC record will get a DMARC Report (this is independent of your platform or configuration).
+In Office 365, the DMARC reports are sent to all sender domain owners that have a valid rua address defined in their DMARC record. This is independent of your platform or configuration.
 
-The only exception is where the MX record for the recipient domain doesn't directly point to Office 365. In that case no DMARC Report will be sent to the sender domain owner rua address.
+The only exception is where the MX record for the recipient domain doesn't directly point to Office 365. In that case no DMARC Report is sent to the sender domain owner rua address.
 
 **Example:**
 
@@ -47,7 +47,7 @@ But if the contoso.com domain's MX record points to a *different email security 
 
 ## What DMARC Reports do for you
 
-It is recommended that admins set up, and regularly review, DMARC Reporting in their domain.
+It's recommended that admins set up and regularly review DMARC Reporting in their domain.
 
 Admins should regularly read and monitor the daily DMARC reports sent in email. The reports outline what messages from the domain pass one of email authentication methods **Sender Policy Framework (SPF)**, or **DomainKeys Identified Mail (DKIM)**, and the verdict of **DMARC** authentication.
 
@@ -77,18 +77,18 @@ Every server that gets mail from your domain will also send back an XML DMARC re
 ## Interpreting your DMARC data
 
 > [!IMPORTANT]
-> The numbers of DMARC emails varies in the same way the amount of email your domain sends does. For example, there may be lulls during holidays, and peaks during an organization's events. This can add up to a lot of reporting, so it's best to dedicate a group and mailbox to the practice of getting and analysing these reports.
+> The numbers of DMARC emails varies in the same way the amount of email your domain sends does. For example, there may be lulls during holidays, and peaks during an organization's events. This can add up to a lot of reporting, so it's best to dedicate a group and mailbox to the practice of getting and analyzing these reports.
 
 DMARC Reports can be difficult to read and interpret. Using a third-party service that specializes in DMARC, from receiving and storing this data, to analyzing and even aggregating reports, may be the answer.
 
-Ultimately the value of your DMARC investment, how effectively it's working, and whether or not it's meeting goals comes down to analysing the data. If your DMARC Reports are handled by a 3rd party have a discussion about your key DMARC objectives.
+Ultimately the value of your DMARC investment, how effectively it's working, and whether or not it's meeting goals comes down to analyzing the data. If your DMARC Reports are handled by a 3rd party have a discussion about your key DMARC objectives.
 
 ## More information
 
-[**SPF**](/microsoft-365/security/office-365-security/email-authentication-spf-configure?view=o365-worldwide) SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is).
+[**SPF**](email-authentication-spf-configure.md) SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is).
 
 [**DKIM**](email-authentication-dkim-configure.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
 
 [**DMARC**](email-authentication-dmarc-configure.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
-[**Use trusted ARC Senders for legitimate mailflows**](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)
+[**Use trusted ARC Senders for legitimate mailflows**](use-arc-exceptions-to-mark-trusted-arc-senders.md)
