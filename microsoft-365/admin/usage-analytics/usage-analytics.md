@@ -56,13 +56,13 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 - **Usage** &ndash; Offers a drill-down view into the volume of active users and the key activities for each product for the last 12 months. Use the reports in this section to learn how people in your organization are using Microsoft 365.
 
-- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Yammer, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
+- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Viva Engage, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
 
 - **Collaboration** &ndash; See how people in your organization use OneDrive and SharePoint to store documents and collaborate with each other, and how these trends evolve month over month. You can also see how many users shared documents internally or externally and how many users used SharePoint sites or OneDrive accounts, broken out by owners and other collaborators.
 
 - **Storage** &ndash; Use this report to track cloud storage for mailboxes, OneDrive, and SharePoint sites.
 
-- **Mobility** &ndash; Track which clients and devices people use to connect to email, Teams, Skype, or Yammer.
+- **Mobility** &ndash; Track which clients and devices people use to connect to email, Teams, Skype, or Viva Engage.
 
 ## Activation and licensing
 
@@ -74,7 +74,7 @@ The activation and license page offers reports on Microsoft 365 activation; that
 
 ## Product usage
 
-This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Yammer. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, and accounts, as well as activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
+This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Viva Engage. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, and accounts, as well as activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
 
 ## User activity
 
@@ -155,7 +155,7 @@ The current version of the template app includes file activity from SharePoint t
 
 ### Which groups are included in the Microsoft 365 Groups usage report?
 
-The current version of the template app includes usage from Outlook groups, Yammer groups, and SharePoint groups. It does not include groups related to Microsoft Teams or Planner.
+The current version of the template app includes usage from Outlook groups, Viva Engage groups, and SharePoint groups. It does not include groups related to Microsoft Teams or Planner.
 
 ### When will an updated version of the template app become available?
 
