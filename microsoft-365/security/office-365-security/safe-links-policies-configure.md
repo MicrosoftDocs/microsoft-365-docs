@@ -60,6 +60,8 @@ You configure Safe Links policies in the Microsoft 365 Defender portal or in Exc
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
+- For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
+
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. Or, to go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
