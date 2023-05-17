@@ -18,31 +18,35 @@ description: Learn how to create conditional sections for templates in Microsoft
 
 # Create conditional sections for templates in Microsoft Syntex
 
-When you create a modern template, you can specify which parts of a document will be included and under what conditions. This lets you control which sections of the text will be in the generated document.
+When you create a modern template, you can specify which parts of a document will be included and under what conditions. This lets you control which sections of the template will be included when you generate a document.
 
 ## Create a conditional section
 
-Before you can create a conditional section, you first need to [create form fields in the template](content-assembly-modern-template#create-and-reuse-fields). Then, follow these steps tp create a conditional section.
+Before you can create a conditional section, you first need to [create form fields in the template](content-assembly-modern-template#create-and-reuse-fields). Then, follow these steps to create a conditional section.
 
 1. In the document, select the block of text for which you want to specify the condition.
 
 2. On the **Set up the template** panel, select **Conditional section**. 
 
-   ![Screenshot of the Publish template panel and template document.](../media/content-understanding/content-assembly-map-fields-1.png)
+   ![Screenshot of the Set up the template panel and template document.](../media/content-understanding/content-assembly-conditional-1.png)
 
-3. On the **New conditional section** panel, in the **Name** box, enter a name that reflects the content you've selected. For this example, we name it **Compensation Section**.
+3. On the **New conditional section** panel, in the **Name** box, enter a name that reflects the content you've selected. (For this example, we named it **Compensation Section**.)
+
+   ![Screenshot of the New condition section panel and template document.](../media/content-understanding/content-assembly-conditional-2.png)
 
 4. Select **Next**.
 
 ### Set conditions
 
-Follow these steps to add conditions to specify whether this section of the template will be included in the final generated document.
+You can add conditions to specify whether this section of the template will be included in the final generated document.
 
 For this example, we want to show the selected content for two conditions: if the fees are greater than zero and if the nature of employment is full time. 
 
 #### To add the first condition
 
 1. On the **Set condition** panel, from the **Choose a field** dropdown list, select the appropriate field. (For this example, we selected **Fees**.)
+
+   ![Screenshot of the Set condition panel and template document for the first condition.](../media/content-understanding/content-assembly-conditional-3.png)
 
 2. From the **Choose a condition** dropdown list, select the appropriate value. (For this example, we selected **greater than**.)
 
@@ -54,12 +58,16 @@ For this example, we want to show the selected content for two conditions: if th
 
 2. On the **Set condition** panel, from the **Choose a field** dropdown list, the appropriate field. (For this example, we selected **Nature of Employment**.)
 
+   ![Screenshot of the Set condition panel and template document for the second condition.](../media/content-understanding/content-assembly-conditional-4.png)
+
 3. From the **Choose a condition** dropdown list, select the appropriate value. (For this example, we selected **exact match**.)
 
 4. In the **Enter a value** box, enter the appropriate value. (For this example, we entered **Full Time**.)
 
 5. When you are done entering conditions, select **Save**. The new field is displayed in the **Set up the template panel** and shows the conditions based on which this section will be included in the final document.
- 
+
+   ![Screenshot of the Set up the template panel and template document showing the conditions.](../media/content-understanding/content-assembly-conditional-5.png)
+
 ## Edit a conditional section
 
 To edit the conditions in a conditional section, you can use either of these two methods:
