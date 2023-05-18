@@ -96,8 +96,8 @@ To turn on audit log search, see [Turn audit log search on or off](../../complia
 
 Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality:
 
-- Reported simulation email information isn't available.
-- Simulation email delivery, simulation compromise, and training status information is available.
+- Data on whether users read, forwarded, or deleted the simulation email isn't available for on-premises mailboxes.
+- The number of users who reported the simulation email isn't available for on-premises mailboxes.
 
 ### Simulation reports are not updated immediately
 
