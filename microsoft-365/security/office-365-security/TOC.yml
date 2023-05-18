@@ -38,6 +38,8 @@
          href: email-authentication-dkim-configure.md
        - name: Step 3 - Use DMARC to validate email
          href: email-authentication-dmarc-configure.md
+       - name: Use DMARC Reports to validate email
+         href: email-authentication-dmarc-reports.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
          href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Phase 2 - Choose your installation path
