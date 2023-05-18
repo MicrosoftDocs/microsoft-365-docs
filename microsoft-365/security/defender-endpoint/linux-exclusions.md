@@ -62,7 +62,7 @@ File, folder, and process exclusions support the following wildcards:
 
 Wildcard|Description|Example|Matches|Does not match
 ---|---|---|---|---
-\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/tmp`|`/var/log/tmp/system.log`|`/var/log/nested/system.log`
 ?|Matches any single character|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## How to configure the list of exclusions
@@ -128,15 +128,20 @@ Examples:
 - Add an exclusion for a folder with a wildcard in it:
 
     ```bash
-    mdatp exclusion folder add --path "/var/*/"
+    mdatp exclusion folder add --path "/var/*/tmp"
     ```
 
     > [!NOTE]
-    > This will only exclude paths one level below */var/*, but not folders which are more deeply nested; for example, */var/this-subfolder/but-not-this-subfolder*.
+    > This will only exclude paths below */var/*/tmp/*, but not folders which are siblings of *tmp*; for example, */var/this-subfolder/tmp*, but not */var/this-subfolder/not-tmp*.
 
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+    OR
+    ```bash
+    mdatp exclusion folder add --path "/var/*/"
+    ```
+    
 
     > [!NOTE]
     > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
