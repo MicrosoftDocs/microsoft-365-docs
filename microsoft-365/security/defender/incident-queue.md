@@ -23,7 +23,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 05/18/2023
 ---
 
 # Prioritize incidents in Microsoft 365 Defender
