@@ -50,7 +50,7 @@ With Microsoft Teams, Viva Connections, and SharePoint, you can enable these sce
 
 ## Connect across your organization with Viva Engage
 
-Engage with communities in Viva Engage, which brings the power of Yammer into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
+Engage with communities in Viva Engage, which brings the power of Viva Engage into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
 
 You can create communities for individual locations, identity or interest groups, or work groups such as nurses and financial advisors.
 
