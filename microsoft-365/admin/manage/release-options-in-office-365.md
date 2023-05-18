@@ -3,7 +3,7 @@ title: "Set up the Standard or Targeted release options"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -32,7 +32,7 @@ description: "Learn how to set up the release option for new product and feature
 # Set up the Standard or Targeted release options
 
 > [!IMPORTANT]
-> The Microsoft 365 updates described in this article apply to OneDrive for Business, SharePoint Online, Office for the web, Microsoft 365 admin center and some components of Exchange Online. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. They do not currently apply to services other than those listed previously. For information about release options for Microsoft 365 Apps, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
+> The Microsoft 365 updates described in this article apply to OneDrive for Business, SharePoint Online, Microsoft 365 for the web, Microsoft 365 admin center, some components of Exchange Online and Microsoft Teams. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. They do not currently apply to services other than those listed previously. For information about release options for Microsoft 365 Apps, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
 
@@ -61,7 +61,7 @@ A good practice is to leave the majority of users in **Standard release** and IT
 With this option, you and your users can be the first to see the latest updates and help shape the product by providing early feedback. You can choose to have individuals or the entire organization receive updates early.
   
 > [!IMPORTANT]
-> Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release. Targeted release is now available for customers with either the Office 365 GCC plan or the Office 365 GCC High plan and DoD plan (including the services listed above except for Office for the web).
+> Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release. Targeted release is now available for customers with either the Office 365 GCC plan or the Office 365 GCC High plan and DoD plan for the following services: OneDrive for Business, SharePoint Online, Microsoft 365 admin center, and some components of Exchange Online.
   
 ### Targeted release for entire organization
 
@@ -115,4 +115,4 @@ Discover how to [manage messages](/office365/admin/manage/message-center) in you
 
 ## Related content
 
-[Join the Office Insider Program](https://insider.office.com/join/windows) (article)
+[Join the Microsoft 365 Insider Program](https://insider.office.com/join/windows) (article)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -62,6 +62,33 @@ For instructions to add users to the default roles or create your own role group
 
 These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition. The person configuring these labels doesn't require access to the content.
 
+## Support for administrative units
+
+Now rolling out in preview, records management supports [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+
+- You can assign administrative units to members of role groups that are used with Microsoft Purview Records Management. Edit the Records Management role group or other role groups that support administrative units. From these role groups, select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+
+- You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
+    
+    > [!IMPORTANT]
+    > Don't select administrative units for a retention label policy that you want to apply to SharePoint sites. Because administrative units support only users and groups, if you configure a retention label policy to use administrative units, you won't be able to select the locations for SharePoint sites.
+
+- Both adaptive scopes and static scopes support administrative units.
+
+- Additional impact for restricted administrators
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
+
+- Currently, retention labels and [events](event-driven-retention.md) don't support administrative units.
+
+- Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
+
+Scoped admins can view all adaptive scopes across AUs using cmdlets
+
+- Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
+
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+
 ## Common scenarios
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
@@ -76,7 +103,7 @@ Use the following table to help you map your business requirements to the scenar
 |Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let users automatically apply retain and delete actions to emails by using Outlook rules|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let admins apply retain and delete actions to a Microsoft Syntex model, so that these settings are automatically applied to identified files in a SharePoint library|[Publish retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Do custom actions or integrate with other solutions at the end of the retention period| [Customize what happens at the end of the retention period](retention-label-flow.md)|
@@ -86,7 +113,7 @@ Use the following table to help you map your business requirements to the scenar
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management (preview)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management | [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management) |
 
 ## End-user documentation
 

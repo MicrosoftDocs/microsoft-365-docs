@@ -48,7 +48,7 @@ There are four steps to troubleshooting these problems:
 
 ## Confirm prerequisites
 
-Attack surface reduction rules will only work on devices with the following conditions:
+Attack surface reduction rules only work on devices with the following conditions:
 
 - Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
 

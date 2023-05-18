@@ -119,7 +119,7 @@ Follow the steps below to add a custom record for a website or 3rd party service
 
 3. On the **Domains** page, select a domain. 
     
-4. Under **DNS settings**, select **Custom Records**; then select **New custom record**.
+4. Under **DNS records**, select **Custom Records**; then select **Add record**.
 
 5. Select the type of DNS record you want to add and type the information for the new record.
     
