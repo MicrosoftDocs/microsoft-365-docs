@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 05/18/2023
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -34,7 +34,7 @@ search.appverid: met150
 
 Investigate a domain to see if the devices and servers in your enterprise network have been communicating with a known malicious domain.
 
-You can investigate a URL or domain by using the search feature, from the incident experience (in evidence tab, or from the alert story) or by clicking on the URL or domain link from the **Device timeline**.
+You can investigate a URL or domain by using the search feature, from the incident experience (in evidence tab, or from the alert story), from advanced hunting, from the email page and side panel, or by clicking on the URL or domain link from the **Device timeline**.
 
 You can see information from the following sections in the URL and domain view:
 
@@ -42,13 +42,17 @@ You can see information from the following sections in the URL and domain view:
 
 - Microsoft verdict
 
-- Incidents related to this URL or domain
+- Incidents and alerts related to this URL or domain
 
 - Prevalence of the URL or domain in the organization
 
 - Most recent observed devices with URL or domain
 
- ![The overview section of the new URL & domain page at a glance.](media/domain-url-overview.png)
+- Most recent emails containing the URL or domain
+
+- Most recent clicks to the URL or domain
+
+![The overview section of the new URL & domain page at a glance.](media/domain-url-overview.png)
 
 ## Domain entity
 
@@ -56,19 +60,19 @@ You can pivot to the domain page from the domain details in the URL page or side
 
 ## URL and Domain overview
 
-The URL worldwide section lists the URL, a link to further details at Whois, the number of related open incidents, and the number of active alerts.
+The URL worldwide section lists the URL, a link to further details at whois, the number of related open incidents, and the number of active alerts, the number of affected devices, emails, and the number of user clicks observed.
 
 ### URL summary details
 
 Displays the original URL (existing URL information), with the query parameters and the application-level protocol. Below that you can find the full domain details, such as registration date, modification date and registrant contact info.
 
-Microsoft verdict of the URL or domain and a devices prevalence section. In this area, you can see the number of devices that communicated with the URL or domain in the last 30 days, and pivot to the first or last event in the device timeline right away. To investigate initial access or if there's still a malicious activity in your environment.
+Microsoft verdict of the URL or domain, a devices prevalence, emails and user clicks section. In this area, you can see the number of devices that communicated with the URL or domain in the last 30 days, and pivot to the first or last event in the device timeline right away. To investigate initial access or if there's still a malicious activity in your environment.
 
 ### Incidents and alerts
 
 The Incident and alerts section displays a bar chart of all active alerts in incidents over the past 180 days.
 
-### Microsoft Verdict
+### Microsoft verdict
 
 The Microsoft verdict section displays the verdict of the URL or domain from Microsoft TI library. It shows if the URL or domain is already known as phishing or malicious entity.
 
