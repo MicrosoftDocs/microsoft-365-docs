@@ -24,7 +24,7 @@ description: "Use Microsoft 365 monitoring for information about incidents or ad
 
 You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability was initially started with Exchange Online and now getting expanded to other Microsoft services like Microsoft Teams, Microsoft 365 Apps and more service in future. 
 
-Microsoft 365 Monitoring enables increases observability and minimizes downtime through providing near real time, user usage telemetry data with enriched alerts in M365 Admin Center's Service Health dashboard. 
+Microsoft 365 monitoring increases observability and minimizes downtime by providing near real-time, user usage telemetry data with enriched alerts in Microsoft 365 admin center Service Health dashboard. 
 
 Monitoring provides you with information about incidents and advisories that are collected in these categories:
 
