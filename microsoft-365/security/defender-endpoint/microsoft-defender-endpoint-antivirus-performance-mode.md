@@ -107,7 +107,7 @@ Depending on configuration settings, you may use the Window Security App to view
   :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-manage-settings.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-manage-settings.png":::
 
 > [!NOTE]
-> You may need to refresh the **Manage Settings** page to see the current status of performance mode if the status of performance mode changed while the page was open. You can do this by navigating to the page again following the instructions in the section, [To view the state of Real-time protection and performance mode](#to-view-the-state-of-rteal-time-protection-and-performance-mode).
+> You may need to refresh the **Manage Settings** page to see the current status of performance mode if the status of performance mode changed while the page was open. You can do this by navigating to the page again following the instructions in the section, [To view the state of Real-time protection and performance mode](#to-view-the-state-of-real-time-protection-and-performance-mode).
 
 ## Performance mode scenarios
 
