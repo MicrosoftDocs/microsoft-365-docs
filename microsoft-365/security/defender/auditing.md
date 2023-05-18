@@ -42,22 +42,18 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 3. Select the **Workload** and **Record type** from the list shown in the following table to further narrow your search
 4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
 
-![Screenshot of audit log search in Defender experts for XDR](../../media/xdr/audit.png)
+![Partial screenshot of Microsoft Purview compliance portal Defender New search page](../../media/xdr/audit.png)
 
 
-<div align="center">
-
-| Action performed by Defender Experts         | Workload | Record type |
-|--------------|:-----:|-----------:|
+| Action performed by Defender Experts | Workload | Record type |
+|--------------|-----|-----------|
 | Sign into customer tenant |  AzureActiveDirectory |        AzureActiveDirectoryStsLogon |
 | Make changes to incidents in Microsoft 365 Defender portal      |  Microsoft365Defender |  MS365Dincident |
 |Make changes to alert suppression rules in Microsoft 365 Defender portal|Microsoft365Defender|MS365DSuppressionRule|
 |Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 
-</div>
-
-![Screenshot of sample audit log in Defender experts for XDR](../../media/xdr/audit-2.png)
+![Partial screenshot of a sample audit log related to Defender Experts](../../media/xdr/audit-2.png)
 
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 
@@ -66,7 +62,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 3. Under **Workload**, choose _MicrosoftDefenderExperts_.
 4. Select **Search** to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
-![Screenshot of a sample audit log search in Defender experts for XDR](../../media/xdr/audit-3.png)
+![Partial screenshot of Microsoft Purview compliance portal Defender New search page showing the Workload field selected to "MicrosoftDefenderExperts"](../../media/xdr/audit-3.png)
 
 ## Search the audit logs using a PowerShell script
 

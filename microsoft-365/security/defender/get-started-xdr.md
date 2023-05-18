@@ -32,7 +32,7 @@ Once the Defender Experts for XDR team is ready to onboard your organization, yo
 
 Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft 365 Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
-![Screenshot of Set up Defender Experts for XDR page](../../media/XDR/security-team-boost.png)
+![Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide](../../media/XDR/security-team-boost.png)
 
 ## Grant permissions to our experts
 
@@ -45,7 +45,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 
 [Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
-![Screenshot of grant permissions to our experts](../../media/xdr/grant-permissions-to-experts.png)
+![Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide](../../media/xdr/grant-permissions-to-experts.png)
 
 **To grant our experts permissions:**
 
@@ -64,7 +64,7 @@ To edit or update permissions after the initial setup, go to **Settings** > **De
 
 Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there are critical incidents, service updates, occasional queries, and other recommendations. Once identified, the individuals will receive an email notifying them that they have been chosen as a contact for incident notification or service review purposes.
 
-![Screenshot of who to contact for important matters in XDR](../../media/XDR/who-to-contact-for-important-matters.png)
+![Screenshot of Incident contacts page in Defender for Experts XDR settings step-by-step guide](../../media/XDR/who-to-contact-for-important-matters.png)
 
 **To add notification contacts:**
 
