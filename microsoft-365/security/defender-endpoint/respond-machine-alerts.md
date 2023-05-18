@@ -109,13 +109,21 @@ To download the package (Zip file) and investigate the events that occurred on a
 
 Alternate steps:
 
-1. Select **Action center** from the response actions section of the device page.
+1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
+![collect-investigation-package](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/9e6b0a48-8676-4e25-878c-a489eac3f26a)
+   
+2.	Add comments and select **Confirm**.
 
-2. In the Action center fly-out, select **Package collection package available** to download the zip file.
+![comments-confirm](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/662d0b80-501d-4f4e-918f-ec81ac102d27)
 
-   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
+3.	Select **Action center** from the response actions section of the device page.
+
+![action-center](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/45ceeee1-b694-4c78-bde3-be842e641b7d)
+
+4.	Click the **Package collection package available** to download the collection package.
+
+![download-package](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/55c57fd5-5c0e-4dd6-aec8-819d723ef840)
 
 For Windows devices, the package contains the following folders:
 
