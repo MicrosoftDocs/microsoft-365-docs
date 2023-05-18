@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 ms.date: 1/31/2023
 ---
 
-# Responding to a Compromised Email Account
+# Responding to a compromised email account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -36,19 +36,17 @@ ms.date: 1/31/2023
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
-## What is a Compromised Email Account in Microsoft 365?
-
 Access to Microsoft 365 mailboxes, data and other services, is controlled by using credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
 
-Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
+Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending email as the original user to recipients both inside and outside of the organization. When the attacker email data to external recipients, this is called data exfiltration.
 
-## Symptoms of a Compromised Microsoft Email Account
+## Symptoms of a compromised Microsoft email account
 
 Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
-- Suspicious activity, such as missing or deleted emails.
-- Other users might receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.
-- The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
+- Suspicious activity, such as missing or deleted email.
+- Other users might receive email from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.
+- The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward email to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
 - The user's display name might be changed in the Global Address List.
 - The user's mailbox is blocked from sending email.
 - The Sent or Deleted Items folders in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App) contain common hacked-account messages, such as "I'm stuck in London, send money."
@@ -82,7 +80,7 @@ Even after you've regained access to your account, the attacker may have added b
 
 You must do all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you do these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
 
-### Step 1 Reset the user's password
+### Step 1: Reset the user's password
 
 Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
@@ -100,7 +98,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 >
 > - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-### Step 2 Remove suspicious email forwarding addresses
+### Step 2: Remove suspicious email forwarding addresses
 
 1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, go to **Users** \> **Active users**. To go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
@@ -110,7 +108,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 4. If the value in the **Email forwarding** section is **Applied**, click **Manage email forwarding**. In the **Manage email forwarding** flyout that appears, clear **Forward all email sent to this mailbox**, and then click **Save changes**.
 
-### Step 3 Disable any suspicious inbox rules
+### Step 3: Disable any suspicious inbox rules
 
 1. Sign in to the user's mailbox using Outlook on the web.
 
@@ -120,7 +118,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 4. Disable or delete suspicious rules.
 
-### Step 4 Unblock the user from sending mail
+### Step 4: Unblock the user from sending mail
 
 If the suspected compromised mailbox was used illicitly to send spam email, it's likely that the mailbox has been blocked from sending mail.
 

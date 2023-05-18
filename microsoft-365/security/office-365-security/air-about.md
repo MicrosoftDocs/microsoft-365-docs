@@ -76,7 +76,7 @@ During and after each automated investigation, your security operations team can
 
 AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
-- [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) (should be turned on)
+- [Verify audit logging is turned on](../../compliance/audit-log-enable-disable.md)
 - [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
