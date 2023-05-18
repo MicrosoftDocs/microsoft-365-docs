@@ -70,9 +70,9 @@ After the switch to the new plan is finished, users can [Import email, contacts,
 
 Before being switched to a different subscription, users can [download files and folders from OneDrive or SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) to a different location, such as a folder on their computer's hard drive, or a file share on the organization's network.
   
-### Save Yammer information
+### Save Viva Engage information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Viva Engage Enterprise](/viva/engage/manage-security-and-compliance/export-viva-engage-enterprise-data). Developers can use the [Viva Engage API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
   
 ### How to save SharePoint information
 
