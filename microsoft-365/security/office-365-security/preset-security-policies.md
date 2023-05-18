@@ -140,7 +140,7 @@ The rest of this article how to configure preset security policies.
 
    The domains you added are listed on the page. To remove a domain, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
 
-   To remove an existing entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove.png" border="false"::: next to the entry.
+   To remove an existing entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-icon.png" border="false"::: next to the entry.
 
    When you're finished on the **Add domains to flag when impersonated by attackers**, select **Next**.
 
