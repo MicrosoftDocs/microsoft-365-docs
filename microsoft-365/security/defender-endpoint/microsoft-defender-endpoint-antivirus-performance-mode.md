@@ -74,11 +74,11 @@ An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive
 
 ## Microsoft Defender Antivirus requirements for performance mode
 
-- Antimalware platform version of 4.18.2303.8 (or above)
-- Antimalware signature version of 1.385.1455.0 (or above)
+- Antimalware platform version of 4.18.2303.8 (or higher
+- Antimalware signature version of 1.385.1455.0 (or higher)
 - Real-time protection must be turned on
 
-For Dev Drive requirements, please consult [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
+For Dev Drive requirements, see [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
 
 ## Manage performance mode
 
@@ -89,11 +89,11 @@ During public preview, users can choose between these options to protect Dev Dri
 
 - Real-time protection
 - Performance mode (default)
-- No protection on the Dev Drive at all: no antivirus filter attached to Dev Drive. On this scenario, Dev Drive is not protected neither by Real-time protection nor performance mode.
+- No protection on the Dev Drive at all: no antivirus filter attached to Dev Drive. In this scenario, Dev Drive isn't protected by Real-time protection or performance mode.
 
 Dev Drives are automatically designated as trusted using a flag stored in the system registry during the original formatting time, providing the best possible performance by default. A trusted Dev Drive means that the developer using the volume has high confidence in the security of the content stored there.
 
-Similar to when a developer chooses to Add an exclusion to Windows Security, the developer takes on the responsibility for managing the security of the content stored in order to gain additional performance. A Dev Drive marked as trusted is a signal for Microsoft Defender Antivirus to run in performance mode. Running performance mode provides a balance between threat protection and performance. Real-time protection will still be enabled on all other storage volumes. An untrusted Dev Drive will not have the same privileges as a trusted Dev Drive. Security will run in real-time protection mode when a Dev Drive is untrusted. 
+Similar to when a developer chooses to add an exclusion to Windows Security, the developer takes on the responsibility for managing the security of the content stored in order to gain more performance. A Dev Drive marked as trusted is a signal for Microsoft Defender Antivirus to run in performance mode. Running performance mode provides a balance between threat protection and performance. Real-time protection is still enabled on all other storage volumes. An untrusted Dev Drive doesn't have the same privileges as a trusted Dev Drive. Security runs in real-time protection mode when a Dev Drive is untrusted. 
 
 > [NOTE!]
 > Performance mode will only run on a “trusted” Dev Drive.
@@ -102,17 +102,17 @@ Similar to when a developer chooses to Add an exclusion to Windows Security, the
 
 Depending on configuration settings, you may use the Window Security App to view the state of Real-time protection and Performance mode for the device under “Virus & threat protection” pillar.
 
-To view the state of Real-time protection and Performance mode: 
+### To view the state of Real-time protection and performance mode
 
-1. Open the **Windows Security App** from: 
+1. Open the **Windows Security App** from:
   - The notification area of the taskbar
-  - The **Start** menu by searching for **Windows Security** 
+  - The **Start** menu by searching for **Windows Security**
   :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png":::
 1. Navigate to the **Virus & threat protection** pillar >  **Manage Settings**.
   :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-manage-settings.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-manage-settings.png":::
 
 > [!NOTE]
-> You may need to refresh the **Manage Settings** page to see the current status of performance mode if the status of performance mode changed while the page was open. You can do this by navigating to the page again following the instructions above.
+> You may need to refresh the **Manage Settings** page to see the current status of performance mode if the status of performance mode changed while the page was open. You can do this by navigating to the page again following the instructions [To view the state of Real-time protection and performance mode](#to-view-the-state-of-rteal-time-protection-and-performance-mode).
 
 ## Performance mode scenarios
 
@@ -130,67 +130,16 @@ Microsoft Defender Antivirus is in the enabled state.
 
 #### Enterprise scenario 1.1
 
-:::image type="content" source="images/microsoft-defender-rtp-on-performance-on-policy-enforced.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI in an enterprise in which the SecOps administrators have enabled Microsoft Defender Antivirus, switched on **Real-time protection**, SecOps manages Developer Protection Mode, and enabled performance mode" lightbox="images/microsoft-defender-rtp-on-performance-on-policy-enforced.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-windows-security-performance-mode-on.png" alt-text="Shows a screen capture of Windows Security UI for Dev Drive protection with status when performance mode is on." lightbox="images/microsoft-defender-antivirus-windows-security-performance-mode-on.png":::
 
 #### Enterprise scenario 1.2
 
-:::image type="content" source="images/microsoft-defender-rtp-on-performance-off-policy-enforced.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI in an enterprise environment in which the SecOps administrators have enabled Microsoft Defender Antivirus, switched on **Real-time protection**, SecOps manages Developer Protection Mode, and haven't enabled performance mode." lightbox="images/microsoft-defender-rtp-on-performance-off-policy-enforced.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-windows-security-performance-mode-off.png" alt-text="Shows a screen capture of Windows Security UI for Dev Drive protection with status when performance mode is off." lightbox="images/microsoft-defender-antivirus-windows-security-performance-mode-off.png":::
 
 #### Enterprise scenario 1.3
 
-:::image type="content" source="images/microsoft-defender-rtp-on-performance-off-policy-not-enforced.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI in an enterprise environment in which the SecOps administrators switched on **Real-time protection**, there's at least one Dev Drive. SecOps isn't managing Developer Protection Mode." lightbox="images/microsoft-defender-rtp-on-performance-off-policy-not-enforced.png":::
-
-### Enterprise scenario 2
-
-Microsoft Defender Antivirus isn't in an enabled state.
-
-| Image link | Microsoft Defender Antivirus = not enabled (Off) <br> Dev Drive configuration = | Result |
-|:---|:---|:---|
-| [Enterprise 2.1](#enterprise-scenario-21) | performance mode = Off <br> No Dev Drive configured | No perfromance mode string surfaces. (default) |
-| [Enterprise 2.2](#enterprise-scenario-22) | performance mode = Off <br> Dev Drive is configured| Windows Security app: Real-time protection = Off. Windows Security app surfaces string indicating Dev Drive is "not protected because RTP is OFF." |
-
-#### Enterprise scenario 2.1
-
-:::image type="content" source="images/microsoft-defender-rtp-off-no-developer-volume.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI in an enterprise environment in which the SecOps administrators have switched off **Real-time protection**, and there aren't any Dev Drives." lightbox="images/microsoft-defender-rtp-off-no-developer-volume.png":::
-
-#### Enterprise scenario 2.2
-
-:::image type="content" source="images/microsoft-defender-rtp-off-with-developer-volume.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI in an enterprise environment in which the SecOps administrators have switched off **Real-time protection**, there's at least one Dev Drive, SecOps isn't managing Developer Protection Mode, and the user hasn't enabled performance mode." lightbox="images/microsoft-defender-rtp-off-with-developer-volume.png":::
-
-### Consumer scenario 1
-
-Microsoft Defender Antivirus is set to the enabled state.
-
-| Image link | Real-time protection = <br> Microsoft Defender Antivirus = enabled (On) <br> performance mode = | Result |
-|:---|:---|:---|
-| [Consumer 1.1](#consumer-scenario-11) | Real-time protection = On <br> performance mode = On | Windows Security app: Surface states of the volume, indicating "performance mode is on and active."|
-| [Consumer 1.2](#consumer-scenario-12) | Real-time protection = Off <br> performance mode = Off | Windows Security app: Surface states of the volume, indicating the Dev Drive is "not protected because RTP is off." |
-| [Consumer 1.3](#consumer-scenario-13) | Real-time protection = On <br> performance mode = Off | Windows Security app: Surface states of volume(s), indicating that for Dev Drives, Microsoft Defender Antivirus is "running in standard Real-time protection mode." |
-
-#### Consumer scenario 1.1
-
-:::image type="content" source="images/microsoft-defender-consumer-rtp-on-performance-on-with-volume.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI on a customer computer in which the customer has enabled **Real-time protection**, created a Dev Drive, and enabled performance mode." lightbox="images/microsoft-defender-consumer-rtp-on-performance-on-with-volume.png":::
-
-#### Consumer scenario 1.2
-
-:::image type="content" source="images/microsoft-defender-consumer-rtp-off-with-volume.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI on a customer computer in which the customer has switched off **Real-time protection**. A Dev Drive exists, but isn't using performance mode." lightbox="images/microsoft-defender-consumer-rtp-off-with-volume.png":::
-
-#### Consumer scenario 1.3
-
-:::image type="content" source="images/microsoft-defender-consumer-rtp-on-performance-off-with-volume.png" alt-text="Shows a screen capture of the Virus & threat protection UI on a customer computer in which the customer has switched on Real-time protection, created a Dev Drive, but hasn't enabled performance mode." lightbox="images/microsoft-defender-consumer-rtp-on-performance-off-with-volume.png":::
-
-### Consumer scenario 2
-
-Microsoft Defender Antivirus isn't in an enabled state.
-
-| Image link | Microsoft Defender Antivirus = not enabled (Off) <br> performance mode = | Result |
-|:---|:---|:---|
-| [Consumer 2.1](#consumer-scenario-21) | performance mode = Off (default) | Windows Security app: No string surfaces. |
-
-#### Consumer scenario 2.1
-
-Microsoft Defender Antivirus isn't enabled, performance mode is Off.
-
-:::image type="content" source="images/microsoft-defender-consumer-rtp-off-without-volume.png" alt-text="Shows a screen capture of the **Virus & threat protection** UI on a customer computer in which the customer has left Microsoft Defender Antivirus enabled, switched off **Real-time protection**, has created a Dev Drive, but hasn't enabled performance mode." lightbox="images/microsoft-defender-consumer-rtp-off-without-volume.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-performance-mode-windows-security-filter-not-attached.png" alt-text="Shows a screen capture of Windows Security UI for Dev Drive protection with status when filter isn't attached on device." lightbox="images/microsoft-defender-antivirus-performance-mode-windows-security-filter-not-attached.png":::
 
 ## See also
+
+[Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive)
