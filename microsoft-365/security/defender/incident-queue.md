@@ -85,8 +85,8 @@ This table lists the filter names that are available.
 | Classification | Specify the set of classifications of the related alerts. |
 | Automated investigation state | Specify the status of automated investigation.  |
 | Associated threat | Specify a named threat.  |
-| Actors | Specify a named threat actor.  |
-|||
+| Alert policies | Specify an alert policy title.  |
+
 
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
 
