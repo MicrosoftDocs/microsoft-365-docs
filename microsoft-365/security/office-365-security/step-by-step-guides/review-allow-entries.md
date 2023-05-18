@@ -25,7 +25,7 @@ ms.date: 01/04/2023
 
 # Introduction
 
-Historically, allow lists have told Exchange Online Protection to ignore the signals indicating an email is malicious. It is commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it is a pressing security loophole to have unnecessary allow list entries. This step-by-step guide will walk you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
+Historically, allow lists have told Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allow list entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
 
 ## What you will need
 
@@ -37,7 +37,7 @@ Historically, allow lists have told Exchange Online Protection to ignore the sig
 
 1. [Login to the security portal and navigate to advanced hunting](https://security.microsoft.com/advanced-hunting)
 2. Enter the KQL query into the query box, and press **Run Query**.
-3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results will load a flyout, allowing easy access to the email entity page, where the **analysis** tab will provide further details, such as the transport rule(s) which that email matched.
+3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results loads a flyout, allowing easy access to the email entity page, where the **analysis** tab provides further details, such as the transport rule(s) that email matched.
 4. The results can also be exported by pressing **Export** for manipulation / analysis offline.
 
 > [!TIP]

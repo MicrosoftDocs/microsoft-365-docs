@@ -66,7 +66,7 @@ from Google Play Store and try again.
 
 **Cause:**
 
-You do not have Microsoft 365 license assigned, or your organization does not have a license for Microsoft 365 Enterprise subscription.
+You don't have Microsoft 365 license assigned, or your organization doesn't have a license for Microsoft 365 Enterprise subscription.
 
 **Solution:**
 
@@ -74,7 +74,7 @@ Contact your administrator for help.
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
+Phishing websites impersonate trustworthy websites for obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.
 
 ## Phishing pages aren't blocked on some OEM devices
 
@@ -83,7 +83,7 @@ Phishing websites impersonate trustworthy websites for the purpose of obtaining 
 - **Xiaomi**
 
 Phishing and harmful web threats that are detected by Defender for Endpoint
-for Android are not blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
+for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
 :::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
@@ -112,7 +112,7 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 
 **Cause:**
 
-Xiaomi changed the battery optimization permissions in Android 11. Defender for Endpoint is not allowed to configure this setting to ignore battery optimizations.
+Xiaomi changed the battery optimization permissions in Android 11. Defender for Endpoint isn't allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
 
@@ -121,7 +121,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 
 ## Send in-app feedback
 
-If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide **in-app feedback** along with **diagnostic data**. Our team can then investigate the logs to provide the right solution. Users can follow these steps to do the same:
+If a user faces an issue, which isn't already addressed in the above sections or is unable to resolve using the listed steps, the user can provide **in-app feedback** along with **diagnostic data**. Our team can then investigate the logs to provide the right solution. Users can follow these steps to do the same:
 
 1. Open the **MDE application** on your device and click on the **profile icon** in the top-left corner.
 
@@ -139,7 +139,7 @@ If a user faces an issue which is not already addressed in the above sections or
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
 
-5. Provide details of the issue that you are facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
+5. Provide details of the issue that you're facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 

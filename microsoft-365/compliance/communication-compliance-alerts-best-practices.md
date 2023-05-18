@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/28/2023
+ms.date: 04/14/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -52,16 +52,16 @@ When you first start using trainable classifiers, you might not get enough match
 |Racy images|Medium|
 |Gory images|Medium|
 |Gifts & entertainment|Medium|
-|Money laundering (preview)|Medium|
-|Regulatory collusion (preview)|Medium|
-|Stock manipulation (preview)|Medium|
-|Unauthorized disclosure (preview)|High|
+|Money laundering|Medium|
+|Regulatory collusion|Medium|
+|Stock manipulation|Medium|
+|Unauthorized disclosure|High|
 
 Consider using the Adult images classifier instead of the Racy images classifier since the Adult images classifier detects a more explicit image. You can use the Content explorer page to help you understand the volume that you can expect for your organization for each of the trainable classifiers.
 
 ## Filter email blasts
 
-You can [filter out email messages](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. 
+You can [filter out email messages](communication-compliance-policies.md#filter-email-blasts) that are generic and intended for mass communication. For example, filter out spam, newsletters, and so on. [Learn about the Email blast senders report](communication-compliance-reports-audits.md#detailed-reports)
 
 ## Filter out email signatures/disclaimers 
 

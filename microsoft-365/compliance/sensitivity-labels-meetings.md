@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2023
+ms.date: 05/11/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -21,8 +21,6 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> For this scenario, Outlook calendar events are still rolling out in general availability for Windows and macOS.
-> 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can extend sensitivity labels to protect meeting invites and responses that use Outlook and Teams, and to protect Teams meetings and chat:
@@ -64,8 +62,8 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
-- **Outlook for Windows**: Rolling out to Current Channel, version 2302+
-- **Outlook for Mac**: Rolling out to version 16.70+
+- **Outlook for Windows**: Current Channel, version 2302+
+- **Outlook for Mac**: Version 16.70+
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
 
@@ -76,6 +74,8 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 > [!IMPORTANT]
 > If meeting participants or organizers don't use a Teams client that meets these requirements, the configured label meeting options can't be enforced for these users.
+
+Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) can't be used to protect calendar items, Teams meetings, and chat.
 
 ## Limitations
 
@@ -208,6 +208,6 @@ However, if you select a label that applies encryption, it must be a label with 
 
 ## End-user documentation
 
-To help end users understand how to apply and change sensitivity labels in Teams, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6). For calendar items in Outlook, the labeling experience is very similar to labeling emails. For Outlook, probably the only additional information users need is [which Outlook clients](#requirements) currently support this labeling feature.
+To help end users understand how to apply and change sensitivity labels in Teams, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-2b244d1d-72d0-471e-8e58-c41079e190fb). For calendar items in Outlook, the labeling experience is very similar to labeling emails. For Outlook, probably the only additional information users need is [which Outlook clients](#requirements) currently support this labeling feature.
 
 Remember to provide your own guidance which named label to apply for different types of meetings. Then, users can focus on the label name instead of the individual settings applied by the label.

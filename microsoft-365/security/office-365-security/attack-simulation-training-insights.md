@@ -14,22 +14,22 @@ ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/7/2023
+ms.date: 4/3/2023
 ---
 
-# Insights and reports for Attack simulation training in Defender for Office 365
+# Insights and reports for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights and reports from the results of simulations and the corresponding trainings. This information keeps you informed on the threat readiness progress of your users, as well as recommended next steps to better prepare your users for future attacks.
+In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights and reports from the results of simulations and the corresponding trainings. This information keeps you informed on the threat readiness progress of your users, and recommended next steps to better prepare your users for future attacks.
 
-Insights and reports are available in the following locations in Attack simulation training in the Microsoft 365 Defender portal:
+Insights and reports are available in the following locations on the **Attack simulation training** page in the Microsoft 365 Defender portal:
 
 - The **Overview** tab.
-- Simulation details on the **Simulations** tab.
+- The simulation report for in-progress or completed simulations that you select from the **Recent simulations** card on the **Overview** tab or on the **Simulations** tab.
 
 The rest of this article describes the available information.
 
@@ -49,36 +49,23 @@ You can select a simulation to view details.
 
 Selecting **View all simulations** takes you to the **Simulations** tab.
 
-Selecting **Launch a simulation** starts the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
+Selecting **Launch a simulation** starts the new simulation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
 :::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="The Recent simulations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
-### Behavior impact on compromise rate card
+### Recommendations card
 
-The **Behavior impact on compromise rate** card on the **Overview** tab shows how your users responded to your simulations as compared to the historical data in Microsoft 365. You can use these insights to track progress in users threat readiness by running multiple simulations against the same groups of users.
+The **Recommendations** card on the **Overview** tab suggests different types of simulations to run.
 
-The chart data itself shows the following information:
+Selecting **Launch now** starts the new simulation wizard with the specified simulation type automatically selected on the **Select technique** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
-- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation (users compromised / total number of users who receive the simulation). To learn more about the predicted compromise rate (PCR), see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-
-- **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
-
-If you hover over a data point in the chart, the actual percentage values are shown.
-
-The following summary information is also shown on the card:
-
-- **users less susceptible to phishing**: The difference between the actual number of users compromised by the simulated attack and the predicted compromise rate. This number of users is less likely to be compromised by similar attacks in the future.
-- **x% better than predicted rate**: Indicates how users did overall in contrast with the predicted compromise rate.
-
-:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="The Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
-
-To see a more detailed report, click **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="The Recommendations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### Simulation coverage card
 
-The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who've received a simulation (**Simulated users**) vs. those who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
+The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who have received a simulation (**Simulated users**) vs. users who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
 
-Selecting **Launch simulation for non-simulated users** starts the simulation creation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
+Selecting **Launch simulation for non-simulated users** starts the new simulation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
 Selecting **View simulation coverage report** takes you to the [User coverage tab for the Attack simulation report](#user-coverage-tab-for-the-attack-simulation-report).
 
@@ -98,30 +85,43 @@ Selecting **View training completion report** takes you to the [Training complet
 
 ### Repeat offenders card
 
-The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>. For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
 The chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
 - **All**
-- **Malware attachment**
-- **Link to malware**
-- **Credential harvest**
+- **Malware Attachment**
+- **Link to Malware**
+- **Credential Harvest**
 - **Link in attachments**
 - **Drive-by URL**
 
 Selecting **View repeat offender report** takes you to the [Repeat offenders tab for the Attack simulation report](#repeat-offenders-tab-for-the-attack-simulation-report).
 
-### Recommendations card
+### Behavior impact on compromise rate card
 
-The **Recommendations** card on the **Overview** tab suggests different types of simulations to run.
+The **Behavior impact on compromise rate** card on the **Overview** tab shows how your users responded to your simulations as compared to the historical data in Microsoft 365. You can use these insights to track progress in users threat readiness by running multiple simulations against the same groups of users.
 
-Selecting **Launch now** starts the simulation creation wizard with the specified simulation type automatically selected on the **Select technique** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
+The chart data shows the following information:
 
-:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="The Recommendations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this simulation. To learn more about the predicted compromise rate (PCR), see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+
+- **Actual compromise rate**: The actual percentage of people who were compromised by the simulation (actual users compromised / total number of users in your organization who received the simulation).
+
+If you hover over a data point in the chart, the actual percentage values are shown.
+
+The following summary information is also shown on the card:
+
+- **users less susceptible to phishing**: The difference between the actual number of users compromised by the simulated attack and the predicted compromise rate. This number of users is less likely to be compromised by similar attacks in the future.
+- **x% better than predicted rate**: Indicates how users did overall in contrast with the predicted compromise rate.
+
+:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="The Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
+
+To see a more detailed report, select **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
 
 ### Attack simulation report
 
-You can open the **Attack simulation report** from the **Overview** tab by clicking on the **View ... report** buttons that are available in many of the cards that are described in this article. To go directly to the report, use <https://security.microsoft.com/attacksimulationreport>
+You can open the **Attack simulation report** from the **Overview** tab by clicking on the **View ... report** buttons that are available in some of the cards that are described in this article. To go directly to the report, use <https://security.microsoft.com/attacksimulationreport>
 
 #### Training efficacy tab for the Attack simulation report
 
@@ -143,11 +143,11 @@ The details table below the chart shows the following information:
 
 You can sort the results by clicking on an available column header.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Select **Customize columns** to remove the columns that are shown. When you're finished, select **Apply**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### User coverage tab for the Attack simulation report
 
@@ -165,13 +165,11 @@ The details table below the chart shows the following information:
 - **Count of clicked**
 - **Count of compromised**
 
-You can sort the results by clicking on an available column header.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
-
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Training completion tab for the Attack simulation report
 
@@ -190,35 +188,29 @@ The details table below the chart shows the following information:
 - **Date completed**
 - **All trainings**
 
-You can sort the results by clicking on an available column header.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by the **Status** values of the trainings: **Completed**, **In progress**, or **All**.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by one or more of the following values:
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-- **Completed**
-- **In progress**
-- **All**
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
-
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
-
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Repeat offenders tab for the Attack simulation report
 
 :::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="The Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
-A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>. For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
 On the **Repeat offenders** tab, the chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
 - **All**
-- **Credential harvest**
-- **Malware attachment**
-- **Link in attachment**
-- **Link to malware**
+- **Credential Harvest**
+- **Malware Attachment**
+- **Link in Attachment**
+- **Link to Malware**
 - **Drive-by URL**
 
 If you hover over a data point in the chart, the actual values are shown.
@@ -230,30 +222,31 @@ The details table below the chart shows the following information:
 - **Simulation types**
 - **Simulations**
 
-You can sort the results by clicking on an available column header.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by some or all of the simulation type values:
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by some or all of the simulation type values:
+- **Credential Harvest**
+- **Malware Attachment**
+- **Link in Attachment**
+- **Link to Malware**
 
-- **Credential harvest**
-- **Malware attachment**
-- **Link in attachment**
-- **Link to malware**
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by any of the column values. Wildcards aren't supported.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by any of the column values. Wildcards aren't supported.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+## Simulation report in Attack simulation training
 
-## Insights and reports in the simulation details of Attack simulation training
+To view the details of in-progress or completed simulations, use either of the following methods:
 
-To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training**, and then select the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+- On the **Overview** tab at <https://security.microsoft.com/attacksimulator?viewid=overview>, select a simulation from the [Recent simulations card](#recent-simulations-card).
+- On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, select a simulation by clicking anywhere in the row other than the check box next to the name.
 
-When you select a simulation from the list, a details page opens. This page contains the configuration settings of the simulation that you would expect to see (status, launch date, payload used, etc.).
+The page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describes the insights and reports that are available on the **Report** tab.
 
-The rest of this section describe the insights and reports that are available on the simulation details page.
+For details about the **Users** and **Details** tabs, see [View simulation details](attack-simulation-training-simulations.md#view-simulation-reports).
 
 ### Simulation impact section
 

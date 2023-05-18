@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - tier1
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
@@ -34,7 +34,7 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-Find more information on [Azure Active Directory roles and RBAC](/azure/active-directory/roles/permissions-reference.md).
+Find more information on [Azure Active Directory roles and RBAC](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Intune built-in roles
 

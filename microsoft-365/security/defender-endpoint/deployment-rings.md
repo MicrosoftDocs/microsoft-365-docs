@@ -27,6 +27,8 @@ ms.date: 01/31/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,9 +45,9 @@ The deployment rings can be applied in the following scenarios:
 
 :::image type="content" source="images/deployment-rings.png" alt-text="The deployment rings." lightbox="images/deployment-rings.png":::
 
-A ring-based approach is a method of identifying a set of endpoints to onboard and verifying that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria for each ring and ensure that they are satisfied before moving on to the next ring.
+A ring-based approach is a method of identifying a set of endpoints to onboard and verifying that certain criteria are met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria for each ring and ensure that they're satisfied before moving on to the next ring.
 
-Adopting a ring-based deployment helps reduce potential issues that could arise while rolling out the service. By piloting a certain number of devices first, you can identify potential issues and mitigate potential risks that might arise.
+Adopting a ring-based deployment helps reduce potential issues that could arise while rolling out the service. By piloting some devices first, you can identify potential issues and mitigate potential risks that might arise.
 
 Table 1 provides an example of the deployment rings you might use.
 
@@ -68,11 +70,11 @@ An example set of exit criteria for these rings can include:
 
 ### Evaluate
 
-Identify a small number of test machines in your environment to onboard to the service. Ideally, these machines would be fewer than 50 endpoints.
+Identify a few test machines in your environment to onboard to the service. Ideally, these machines would be fewer than 50 endpoints.
 
 ### Pilot
 
-Microsoft Defender for Endpoint supports a variety of endpoints that you can onboard to the service. In this ring, identify several devices to onboard and based on the exit criteria you define, decide to proceed to the next deployment ring.
+Microsoft Defender for Endpoint supports various endpoints that you can onboard to the service. In this ring, identify several devices to onboard and based on the exit criteria you define, decide to proceed to the next deployment ring.
 
 The following table shows the supported endpoints and the corresponding tool you can use to onboard devices to the service.
 
@@ -118,7 +120,7 @@ The choice of the channel determines the type and frequency of updates that are 
 
 :::image type="content" source="images/insider-rings.png" alt-text="The insider rings." lightbox="images/insider-rings.png":::
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either Beta or Preview.
+In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.

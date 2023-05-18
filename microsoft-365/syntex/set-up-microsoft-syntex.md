@@ -5,11 +5,12 @@ author: MikePlumleyMSFT
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
+- Tier1
 ms.custom: 
 - admindeeplinkMAC
 search.appverid: MET150

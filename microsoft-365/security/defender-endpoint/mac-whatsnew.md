@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
+ms.reviewer: mavel
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
@@ -25,15 +26,18 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
-- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
-- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
+- - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
+- - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
 **Mac devices to soon receive built-in protection**
 
@@ -46,6 +50,30 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 **Catalina Deprecation**<br>
 Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 </br>
+
+### May-2023 (Build: 101.98.70  | Release version: 20.123022.19870.0)
+
+| Build:             | **101.98.70**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123022.19870.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.389.1396.0**       |
+
+##### What's new
+
+- Bug and performance fixes
+
+### Mar-2023 (Build: 101.98.30  | Release version: 20.123012.19830.0)
+
+| Build:             | **101.98.30**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123012.19830.0** |
+| Engine version:    | **1.1.20100.6**       |
+| Signature version: | **1.385.924.0**       |
+
+##### What's new
+
+- Bug and performance fixes
 
 ### Feb-2023 (Build: 101.97.94  | Release version: 20.123011.19794.0)
 
@@ -63,9 +91,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 
-<details>
-  <summary>Jan-2023 (Build: 101.96.85  | Release version: 20.122112.19413.0)</summary>
-
 &ensp;Build: **101.96.85**<br/>
 &ensp;Release version: **20.122112.19413.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
@@ -77,9 +102,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Dec-2022 (Build: 101.90.97  | Release version: 20.122102.19097.0)</summary>
 
 &ensp;Build: **101.90.97**<br/>
 &ensp;Release version: **20.122102.19097.0**<br/>
@@ -96,9 +118,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Nov-2022 (Build: 101.87.30  | Release version: 20.122082.18681.0)</summary>
-
 &ensp;Released: **Nov 5, 2022**<br/>
 &ensp;Published: **Nov 5, 2022**<br/>
 &ensp;Build: **101.87.30**<br/>
@@ -113,9 +132,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>
 
 &ensp;Released: **Oct 25, 2022**<br/>
 &ensp;Published: **Oct 25, 2022**<br/>
@@ -153,9 +169,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
-
 &ensp;Build: **101.78.13**<br/>
 &ensp;Release version: **20.122072.17813.0**<br/>
 &ensp;Engine version: **1.1.19500.2**<br/>
@@ -173,9 +186,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Aug-2022 (Build: 101.75.90  | Release version: 20.122071.17590.0)</summary>
-
 &ensp;Released: **Aug 3, 2022**<br/>
 &ensp;Published: **Aug 3, 2022**<br/>
 &ensp;Build: **101.75.90**<br/>
@@ -191,9 +201,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Jul-2022 (Build: 101.73.77  | Release version: 20.122062.17377.0)</summary>
 
 &ensp;Released: **Jul 21, 2022**<br/>
 &ensp;Published: **Jul 21, 2022**<br/>
@@ -213,9 +220,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Jul-2022 (Build: 101.71.18  | Release version: 20.122052.17118.0)</summary>
-
 &ensp;Released: **Jul 7, 2022**<br/>
 &ensp;Published: **Jul 7, 2022**<br/>
 &ensp;Build: **101.71.18**<br/>
@@ -232,9 +236,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Jun-2022 (Build: 101.70.19  | Release version: 20.122051.17019.0)</summary>
-
 &ensp;Released: **Jun 14, 2022**<br/>
 &ensp;Published: **Jun 14, 2022**<br/>
 &ensp;Build: **101.70.19**<br/>
@@ -247,9 +248,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Jun-2022 (Build: 101.70.18 | Release version: 20.122042.17018.0)</summary>
 
 &ensp;Released: **Jun 2, 2022**<br/>
 &ensp;Published: **Jun 2, 2022**<br/>
@@ -265,9 +263,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>May-2022 (Build: 101.66.54 | Release version: 20.122041.16654.0) </summary>
-
 &ensp;Released: **May 11, 2022**<br/>
 &ensp;Published: **May 11, 2022**<br/>
 &ensp;Build: **101.66.54**<br/>
@@ -280,9 +275,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Apr-2022 (Build: 101.64.15 | Release version: 20.122032.16415.0)</summary>
 
 &ensp;Released: **Apr 26, 2022**<br/>
 &ensp;Published: **Apr 26, 2022**<br/>
@@ -299,9 +291,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Mar-2022 (Build: 101.61.69 | Release version: 20.122022.16169.0) </summary>
-
 &ensp;Released: **Mar 25, 2022**<br/>
 &ensp;Published: **Mar 25, 2022**<br/>
 &ensp;Build: **101.61.69**<br/>
@@ -314,9 +303,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Mar-2022 (Build: 101.60.91 | Release version: 20.122021.16091.0)</summary>
-
 &ensp;Released: **Mar 8, 2022**<br/>
 &ensp;Published: **Mar 8, 2022**<br/>
 &ensp;Build: **101.60.91**<br/>
@@ -328,9 +314,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary>Feb-2022 (Build: 101.59.50 | Release version: 20.122021.15950.0) </summary>
 
 &ensp;Released: **Feb 28, 2022**<br/>
 &ensp;Published: **Feb 28, 2022**<br/>
@@ -364,9 +347,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Feb-2022 (Build: 101.56.62 | Release version: 20.121122.15662.0)</summary>
-
 &ensp;Released: **Feb 7, 2022**<br/>
 &ensp;Published: **Feb 7, 2022**<br/>
 &ensp;Build: **101.56.62**<br/>
@@ -378,9 +358,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details>
-  <summary> Jan-2022 (Build: 101.56.35 | Release version: 20.121121.15635.0)</summary>
 
 &ensp;Released: **Jan 30, 2022**<br/>
 &ensp;Published: **Jan 30, 2022**<br/>
@@ -401,9 +378,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details>
-  <summary>Jan-2022 (Build: 101.54.16 | Release version: 20.121111.15416.0) </summary>
-
 &ensp;Released: **Jan 12, 2022**<br/>
 &ensp;Published: **Jan 12, 2022**<br/>
 &ensp;Build: **101.54.16**<br/>
@@ -418,9 +392,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>2021 releases </summary><blockquote>
-    <details><summary>(Build: 101.49.25 | Release version: 20.121092.14925.0)</summary>
-
 &ensp;Build: **101.49.25**<br/>
 &ensp;Release version: **20.121092.14925.0** <br/>
 
@@ -432,8 +403,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.47.27 | Release version: 20.121082.14727.0)</summary>
-
 &ensp;Build: **101.47.27**<br/>
 &ensp;Release version: **20.121082.14727.0** <br/>
 
@@ -443,8 +412,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.43.84 | Release version: 20.121082.14384.0)</summary>
 
 &ensp;Build: **101.43.84**<br/>
 &ensp;Release version: **20.121082.14384.0** <br/>
@@ -456,8 +423,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.41.10 | Release version: 20.121072.14110.0)</summary>
 
 &ensp;Build: **101.41.10**<br/>
 &ensp;Release version: **20.121072.14110.0** <br/>
@@ -473,8 +438,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.40.84 | Release version: 20.121071.14084.0)</summary>
-
 &ensp;Build: **101.40.84**<br/>
 &ensp;Release version: **20.121071.14084.0** <br/>
 
@@ -486,8 +449,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.37.97 | Release version: 20.121062.13797.0)</summary>
-
 &ensp;Build: **101.37.97**<br/>
 &ensp;Release version: **20.121062.13797.0** <br/>
 
@@ -497,8 +458,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.34.28 | Release version: 20.121061.13428.0)</summary>
 
 &ensp;Build: **101.34.28**<br/>
 &ensp;Release version: **20.121061.13428.0** <br/>
@@ -510,8 +469,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.34.27 | Release version: 20.121052.13427.0)</summary>
-
 &ensp;Build: **101.34.27**<br/>
 &ensp;Release version: **20.121052.13427.0** <br/>
 
@@ -521,8 +478,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.34.20 | Release version: 20.121051.13420.0)</summary>
 
 &ensp;Build: **101.34.20**<br/>
 &ensp;Release version: **20.121051.13420.0** <br/>
@@ -536,8 +491,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.32.69 | Release version: 20.121042.13269.0)</summary>
-
 &ensp;Build: **101.32.69**<br/>
 &ensp;Release version: **20.121042.13269.0** <br/>
 
@@ -547,8 +500,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.29.64 | Release version: 20.121042.12964.0)</summary>
 
 &ensp;Build: **101.29.64**<br/>
 &ensp;Release version: **20.121042.12964.0** <br/>
@@ -564,8 +515,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.27.50 | Release version: 20.121022.12750.0)</summary>
-
 &ensp;Build: **101.27.50**<br/>
 &ensp;Release version: **20.121022.12750.0** <br/>
 
@@ -575,8 +524,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.25.69 | Release version: 20.121022.12569.0)</summary>
 
 &ensp;Build: **101.25.69**<br/>
 &ensp;Release version: **20.121022.12569.0** <br/>
@@ -589,8 +536,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.23.64 | Release version: 20.121021.12364.0)</summary>
-
 &ensp;Build: **101.23.64**<br/>
 &ensp;Release version: **20.121021.12364.0** <br/>
 
@@ -602,11 +547,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-</details>
-
-<details><summary>Prior releases </summary><blockquote>
-<details><summary>(Build: 101.22.79  | Release version: 20.121012.12279.0)</summary>
-
 &ensp;Build: **101.22.79** <br>
 &ensp;Release version: **20.121012.12279.0**<br>
 
@@ -617,8 +557,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.19.88  | Release version: 20.121011.11988.0)</summary>
-
 &ensp;Build:**101.19.88**<br>
 &ensp;Release version: **20.121011.11988.0**<br>
 
@@ -628,8 +566,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.19.48  | Release version: 20.120121.11948.0)</summary>
 
 &ensp;Build: **101.19.48**<br>
 &ensp;Release version: **20.120121.11948.0**<br>
@@ -644,8 +580,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.19.21  | Release version: 20.120101.11921.0)</summary>
-
 &ensp;Build: **101.19.21**<br>
 &ensp;Release version: **20.120101.11921.0** <br>
 
@@ -655,8 +589,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.15.26  | Release version: 20.120102.11526.0)</summary>
 
 &ensp;Build: **101.15.26**<br>
 &ensp;Release version: **20.120102.11526.0**<br>
@@ -670,8 +602,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.13.75  | Release version: 20.120101.11375.0)</summary>
-
 &ensp;Build: **101.13.75**<br>
 &ensp;Release version: **20.120101.11375.0**<br>
 
@@ -684,8 +614,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.10.72)</summary>
-
 &ensp;Build: **101.10.72** <br>
 
 **What's new**
@@ -694,8 +622,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.09.61)</summary>
 
 &ensp;Build: **101.09.61**<br>
 
@@ -707,8 +633,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.09.50)</summary>
 
 &ensp;Build: **101.09.50**<br>
 
@@ -724,8 +648,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.09.49)</summary>
-
 &ensp;Build: **101.09.49**<br>
 
 **What's new**
@@ -736,8 +658,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.07.23)</summary>
 
 &ensp;Build: **101.07.23**<br>
 
@@ -753,8 +673,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.06.63)</summary>
-
 &ensp;Build: **101.06.63**<br>
 
 **What's new**
@@ -763,8 +681,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.05.17)</summary>
 
 &ensp;Build: **101.05.17**<br>
 
@@ -779,8 +695,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.05.16)</summary>
-
 &ensp;Build: **101.05.16**<br>
 
 **What's new**
@@ -792,8 +706,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 101.03.12)</summary>
-
 &ensp;Build: **101.03.12**<br>
 
 **What's new**
@@ -802,8 +714,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.01.54)</summary>
 
 &ensp;Build: **101.01.54**<br>
 
@@ -815,8 +725,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 101.00.31)</summary>
 
 &ensp;Build: **101.00.31** <br>
 
@@ -831,8 +739,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.90.27)</summary>
-
 &ensp;Build: **100.90.27** <br>
 
 **What's new**
@@ -845,8 +751,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.86.92)</summary>
-
 &ensp;Build: **100.86.92**<br>
 
 **What's new**
@@ -858,8 +762,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 100.86.91)</summary>
 
 &ensp;Build: **100.86.91**<br>
 
@@ -875,8 +777,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.83.73)</summary>
-
 &ensp;Build: **100.83.73**<br>
 
 **What's new**
@@ -888,8 +788,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.82.60)</summary>
-
 &ensp;Build: **100.82.60** <br>
 
 **What's new**
@@ -899,8 +797,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.80.42)</summary>
-
 &ensp;Build: **100.80.42**<br>
 
 **What's new**
@@ -909,8 +805,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 100.79.42)</summary>
 
 &ensp;Build: **100.79.42**<br>
 
@@ -928,8 +822,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.72.15)</summary>
-
 &ensp;Build: **100.72.15**<br>
 
 **What's new**
@@ -938,8 +830,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 100.70.99)</summary>
 
 &ensp;Build: **100.70.99**<br>
 
@@ -950,8 +840,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 <br/>
 </details>
 
-<details><summary>(Build: 100.68.99)</summary>
-
 &ensp;Build: **100.68.99**<br>
 
 **What's new**
@@ -961,8 +849,6 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/>
 </details>
-
-<details><summary>(Build: 100.65.28)</summary>
 
 &ensp;Build: **100.65.28**<br>
 
@@ -985,3 +871,5 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 <br/><br/>
 </details>
+
+

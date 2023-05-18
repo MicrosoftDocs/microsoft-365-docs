@@ -249,7 +249,7 @@ For **System security**, see this table.
 |Simple passwords|Block|
 |Password type|Device default|
 |Minimum password length|6|
-|Maximum minutes of inactivity before password is required|15 minutes|
+|Maximum minutes of inactivity before a password is required|15 minutes|
 |Password expiration (days)|41|
 |Number of previous passwords to prevent reuse|5|
 |Require password when device returns from idle state (Mobile and Holographic)|Require|
@@ -287,11 +287,9 @@ When configuring your policy, use the following risk levels.
 
 Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
 
-For Exchange Online, you can use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
 ### High risk users must change password
 
-Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to require users with compromised credentials to change their password.
+Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user) to require users with compromised credentials to change their password.
 
 Use this policy along with [Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants in addition to terms specific to your organization. Using Azure AD password protection ensures that changed passwords are stronger.
 
