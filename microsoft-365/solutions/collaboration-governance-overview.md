@@ -18,7 +18,7 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "Learn governance best practices for Microsoft 365 collaboration tools, including Microsoft 365 Groups, Teams, SharePoint, and Yammer."
+description: "Learn governance best practices for Microsoft 365 collaboration tools, including Microsoft 365 Groups, Teams, SharePoint, and Viva Engage."
 ---
 
 # What is collaboration governance?
@@ -29,7 +29,7 @@ Organizations today are using a diverse tool set. There's the team of developers
 
 If users feel the IT-provided tools do not fit their needs, they will likely download their favorite consumer app which supports their scenarios. Although this process allows users to get started quickly, it leads to a frustrating user experience across the organization with multiple logins, difficulty sharing, and no single place to view content. This concept is referred to as “Shadow IT” and poses a significant risk to organizations. It reduces the ability to uniformly manage user access, ensure security, and service compliance needs.
 
-Services such as Microsoft 365 groups, Teams, and Yammer empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. 
+Services such as Microsoft 365 groups, Teams, and Viva Engage empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. 
 
 ![Chart showing collaboration governance options in Microsoft 365.](../media/collaboration-governance-overview.png)
 
@@ -45,9 +45,9 @@ If your organization is multi-national and you have data residency requirements 
 
 ## Why Microsoft 365 groups are important in collaboration governance
 
-Microsoft 365 groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Yammer use Microsoft 365 groups to manage their membership.
+Microsoft 365 groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Viva Engage use Microsoft 365 groups to manage their membership.
 
-Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, a Power BI workspace, a mailbox and calendar, and Stream. Depending on how you create the group, you can optionally add other services such as Teams, Yammer, and Project.
+Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, a Power BI workspace, a mailbox and calendar, and Stream. Depending on how you create the group, you can optionally add other services such as Teams, Viva Engage, and Project.
 
 ![Diagram showing Microsoft 365 Groups and related services.](../media/microsoft-365-groups-hub-spoke.png)
 
@@ -62,7 +62,7 @@ Microsoft 365 groups include a suite of linked resources that users can use for 
 |[SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
 |[Stream](https://support.microsoft.com/microsoft-stream)|A video streaming service|
 |[Teams](https://support.microsoft.com/teams)|A chat-based workspace in Microsoft 365|
-|[Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
+|[Viva Engage group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
 
@@ -74,9 +74,9 @@ There are three main communication methods supported by Microsoft 365:
 
 - Outlook: collaboration through email with a shared group inbox and calendar
 - Microsoft Teams: a persistent-chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
-- Yammer: enterprise social experience for collaboration
+- Viva Engage: enterprise social experience for collaboration
 
-![Diagram showing when to use Teams, Yammer, and Outlook.](../media/inner-loop-outer-loop.png)
+![Diagram showing when to use Teams, Viva Engage, and Outlook.](../media/inner-loop-outer-loop.png)
 
 - Teams: chat-based workspace (high velocity collaboration) – inner loop
   - Built for collaboration with the people your users work with every day
@@ -84,7 +84,7 @@ There are three main communication methods supported by Microsoft 365:
   - Add tabs, connectors and bots
   - Live chat, audio/video conferencing, recorded meetings
 
-- Yammer: connect across the org (enterprise social) – outer loop
+- Viva Engage: connect across the org (enterprise social) – outer loop
   - Communities of practice - Cross-functional groups of people who share a common interest or expertise but are not necessarily working together on a day-to-day basis
   - Leadership connection, learning communities, role-based communities
 
@@ -95,7 +95,7 @@ There are three main communication methods supported by Microsoft 365:
 As you determine how you want to use collaboration features in Microsoft 365, consider these methods of communication and which your users are likely to use in different scenarios.
 
 > [!NOTE]
-> When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Teams.
+> When a new Office 365 Group is created via Viva Engage or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Viva Engage groups cannot be connected to Teams.
 
 ## Collaboration governance best practices checklist
 
@@ -158,7 +158,7 @@ Follow these basic steps to create your governance plan:
 3. Plan to manage user access - plan [the level of access you want to grant users in groups, SharePoint, and Teams](groups-teams-access-governance.md).
 4. Plan to manage compliance settings - review the available [compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration](groups-teams-compliance-governance.md).
 5. Plan to manage communications - review the available [communications governance options for collaboration scenarios](groups-teams-communication-governance.md).
-6. Plan for organization and lifecycle governance - choose [the policies you want to use for group and team creation, naming, expiration, and archiving](plan-organization-lifecycle-governance.md). Also, understand the [end of lifecycle options for groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md)
+6. Plan for organization and lifecycle governance - choose [the policies you want to use for group and team creation, naming, expiration, and archiving](plan-organization-lifecycle-governance.md). Also, understand the [end of lifecycle options for groups, teams, and Viva Engage](end-life-cycle-groups-teams-sites-viva-engage.md)
 
 ![Illustration of recommended governance steps.](../media/collaboration-governance-steps.png)
 
@@ -240,9 +240,9 @@ Learn how to set up your groups expiry lifecycle, naming policies, classificatio
 
 **Customer example**
 
-See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Yammer work together to provide a global collaboration platform.
+See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Viva Engage work together to provide a global collaboration platform.
 
-- [Finding your collaboration sweet spot with Microsoft 365 Groups, SharePoint, Teams, and Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Finding your collaboration sweet spot with Microsoft 365 Groups, SharePoint, Teams, and Viva Engage](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## See also
 

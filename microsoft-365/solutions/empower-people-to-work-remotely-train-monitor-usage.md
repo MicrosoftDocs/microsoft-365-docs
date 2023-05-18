@@ -35,7 +35,7 @@ Train your hybrid workers on:
 
 This training should include hands-on exercises so that your workers can experience these capabilities and their results.
 
-Create a forum for your workers to ask questions or get issues addressed, such as a team or a Yammer group.
+Create a forum for your workers to ask questions or get issues addressed, such as a team or a Viva Engage group.
 
 In the weeks after training:
 

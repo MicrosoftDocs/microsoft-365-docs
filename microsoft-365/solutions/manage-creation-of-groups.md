@@ -34,7 +34,7 @@ When you limit who can create a group, it affects all services that rely on grou
 
 - Outlook
 - SharePoint
-- Yammer
+- Viva Engage
 - Microsoft Teams
 - Microsoft Stream
 - Planner

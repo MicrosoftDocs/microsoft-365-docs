@@ -26,7 +26,7 @@ description: "Learn about Microsoft 365 groups expiration policies."
 
 With the increase in usage of Microsoft 365 groups and Microsoft Teams, administrators and users need a way to clean up unused groups and teams. A Microsoft 365 groups expiration policy can help remove inactive groups from the system and make things cleaner.
 
-When a group expires, [almost all of its associated services (the mailbox, Planner, SharePoint site, team, etc.) are also deleted](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer).
+When a group expires, [almost all of its associated services (the mailbox, Planner, SharePoint site, team, etc.) are also deleted](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage).
 
 When a group expires it is "soft-deleted" which means it can still be recovered for up to 30 days.
 
@@ -36,7 +36,7 @@ Groups that are actively in use are renewed automatically around 35 days before 
 - SharePoint - View, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
 - Outlook - Join or edit group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - Visit a teams channel.
-- Yammer - View a post within a Yammer community or an interactive email in Outlook.
+- Viva Engage - View a post within a Viva Engage community or an interactive email in Outlook.
 - Forms - View, create, or edit forms, or submit a response to a form. 
 
 > [!IMPORTANT]
@@ -83,7 +83,7 @@ If for some reason none of the owners or admins renew the group before it expire
 
 ## Archiving group contents
 
-If you have a group that you no longer plan to use, but you want to retain its content, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information about how to export information from the different groups services.
+If you have a group that you no longer plan to use, but you want to retain its content, see [Archive groups, teams, and Viva Engage](end-life-cycle-groups-teams-sites-viva-engage.md) for information about how to export information from the different groups services.
 
 ## Related topics
 

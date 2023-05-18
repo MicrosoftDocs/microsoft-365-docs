@@ -261,7 +261,7 @@ Upon request, Microsoft will provide an attestation letter of compliance with SE
 
 In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
-Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer (2022)](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b) download document.
+Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Viva Engage (2022)](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b) download document.
 
 ## Establish ethical walls with information barriers
 
@@ -306,7 +306,7 @@ Financial institutions are typically required to establish and maintain a superv
  
 ### Communication compliance
 
-[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) is a compliance solution that helps minimize communication risks by helping you detect, investigate, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
+[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) is a compliance solution that helps minimize communication risks by helping you detect, investigate, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Viva Engage, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
   
 Communication compliance provides reports that enable policy review activities to be audited based on the policy and the reviewer. Reports are available to validate that policies are working as defined by an organization's written policies. They can also be used to identify communications that require review and those that aren't compliant with corporate policy. Finally, all activities related to configuring policies and reviewing communications are audited in the Office 365 unified audit log. As a result, communication compliance also helps financial institutions to comply with FINRA Rule 3120.
 

@@ -25,7 +25,7 @@ description: "Groups services interactions"
 Microsoft 365 Groups provides a common fabric for several services and workloads within the Microsoft 365 platform to deliver a connected experience for end users. At its core, a Microsoft 365 group exists to provide:
 
 - A way to manage the membership (Azure AD)
-- A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Yammer)
+- A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Viva Engage)
 - A place for files to be stored (SharePoint)
 - A calendar for scheduling (Exchange)
 - A notebook for capturing notes (OneNote)
@@ -44,7 +44,7 @@ Examples of this include:
 - Power Automate for workflows
 - Project on the web and Roadmap for waterfall-based project management
 - Teams for channel-based conversations
-- Yammer for communities of interest
+- Viva Engage for communities of interest
 
 ## User interactions with groups
 
@@ -52,7 +52,7 @@ Microsoft 365 Groups can be created and managed from various interfaces, both by
 
 ### Administrative experiences
 
-Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API. The only exception to this is Yammer groups – which must be created from within the Yammer web interface.
+Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API. The only exception to this is Viva Engage groups – which must be created from within the Viva Engage web interface.
 
 **Related settings**
 
@@ -84,7 +84,7 @@ The following services allow creation of groups by end users:
 - SharePoint
 - Stream
 - Microsoft Teams
-- Yammer
+- Viva Engage
 
 #### Restriction of group creation
 
@@ -100,7 +100,7 @@ The experience of group creation restriction varies between apps and services:
 |SharePoint|Still able to create a team site that is not connected to a group.|
 |Stream|**Group** option does not appear under the **Create menu**.|
 |Teams|User cannot create a team with a new group but can still create a team that utilizes an existing group.<br><br>**Create a team** button is replaced with **Create team from a group**.|
-|Yammer|**Create a group** option is removed from main Groups/Communities navigation.|
+|Viva Engage|**Create a group** option is removed from main Groups/Communities navigation.|
 
 ## Services interactions with groups
 
@@ -128,7 +128,7 @@ The following table provides an overview of Microsoft 365 Groups interactions wi
 |SharePoint|Site|Yes|Yes|Yes|
 |Stream|Channel, video|Yes|Yes|Yes|
 |Teams|Team|No|Yes|Yes|
-|Yammer|Group|Yes|Yes|Yes|
+|Viva Engage|Group|Yes|Yes|Yes|
 
 While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are several nuances and intricacies that you should understand. The following sections take a more in-depth look at the specific workloads and their interactions with groups.
 
@@ -603,47 +603,47 @@ Yes and no; videos in Stream are owned by the original uploader or meeting recor
 
 No, deleting videos or channels doesn’t delete the group. However, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.
 
-## Yammer
+## Viva Engage
 
-Yammer is an enterprise social platform designed to foster community engagement within and between organizations.
+Viva Engage is an enterprise social platform designed to foster community engagement within and between organizations.
 
-Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.
+Creating a community (formerly known as “group”) in Viva Engage creates a mailbox, but at present this is not used.
 
-A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.
+A Microsoft 365 group that is associated with Viva Engage cannot be used with a team in Microsoft Teams.
 
-A Yammer group cannot be used with a PowerBI Pro Workspace.
+A Viva Engage group cannot be used with a PowerBI Pro Workspace.
 
 **Key features provided to Groups**
 
 - Conversation area
 
-**Can Yammer create a Microsoft 365 group?**
+**Can Viva Engage create a Microsoft 365 group?**
 
-Yes, creating a new group in Yammer will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.
+Yes, creating a new group in Viva Engage will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.
 
-A Yammer group with associated Microsoft 365 group cannot be created in any interface or service other than Yammer itself.
+A Viva Engage group with associated Microsoft 365 group cannot be created in any interface or service other than Viva Engage itself.
 
-**Does a Yammer group exist without a Microsoft 365 group?**
+**Does a Viva Engage group exist without a Microsoft 365 group?**
 
-Yes, it is possible to create a Yammer group without a Microsoft 365 group.
+Yes, it is possible to create a Viva Engage group without a Microsoft 365 group.
 
-If the Yammer platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Yammer groups are created without a Microsoft 365 group association.
+If the Viva Engage platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Viva Engage groups are created without a Microsoft 365 group association.
 
-**Can there be multiple Yammer groups per Microsoft 365 group?**
+**Can there be multiple Viva Engage groups per Microsoft 365 group?**
 
-No, the relationship between a Yammer group and a Microsoft 365 group is 1:1.
+No, the relationship between a Viva Engage group and a Microsoft 365 group is 1:1.
 
-**Can a Yammer group be associated with multiple Microsoft 365 groups?**
+**Can a Viva Engage group be associated with multiple Microsoft 365 groups?**
 
-No, the Yammer group can only be associated with a single Microsoft 365 group. It is possible for posts to be shared with or moved to other Yammer groups.
+No, the Viva Engage group can only be associated with a single Microsoft 365 group. It is possible for posts to be shared with or moved to other Viva Engage groups.
 
-**Can a Yammer group’s association with a Microsoft 365 group change?**
+**Can a Viva Engage group’s association with a Microsoft 365 group change?**
 
-No, the Yammer group can only ever be associated with the Microsoft 365 group to which it was originally associated.
+No, the Viva Engage group can only ever be associated with the Microsoft 365 group to which it was originally associated.
 
-**Does deleting the Yammer group delete the Microsoft 365 group?**
+**Does deleting the Viva Engage group delete the Microsoft 365 group?**
 
-Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.
+Yes, deleting the group in Viva Engage will delete related Microsoft group and group-associated services and content.
 
 ## Related topics
 

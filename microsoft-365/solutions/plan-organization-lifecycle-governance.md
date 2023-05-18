@@ -48,7 +48,7 @@ When a Microsoft 365 group is deleted, by default it's retained for 30 days. Thi
 
 If you have retention policies in place to retain chat, files, or mail, those items will be preserved after the group is deleted. See [Learn about retention policies](../compliance/retention.md) for details.
 
-If you want to delete a group but preserve the content from one or more of the group-connected services, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information.
+If you want to delete a group but preserve the content from one or more of the group-connected services, see [Archive groups, teams, and Viva Engage](end-life-cycle-groups-teams-sites-viva-engage.md) for information.
 
 ## Group naming policy
 
