@@ -242,7 +242,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
      - **Assign users** section: Select one of the following values:
        - **Just me**
        - **Entire organization**
-       - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **Added users** section that appears below the search box. To remove a selection, select :::image type="icon" source="../../media/m365-cc-sc-remove.png" border="false"::: on the entry.
+       - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **Added users** section that appears below the search box. To remove a selection, select :::image type="icon" source="../../media/m365-cc-sc-remove-icon.png" border="false"::: on the entry.
 
      - **Email notification** section: **Send email notification to assigned users** and **View email sample** aren't selectable.
 
