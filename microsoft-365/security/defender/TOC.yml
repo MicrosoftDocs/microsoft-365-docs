@@ -270,7 +270,9 @@
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
-                 - name: Functions
+                 - name: Create custom functions 
+                   href: advanced-hunting-custom-functions.md                   
+                 - name: Use built-in functions
                    items: 
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
