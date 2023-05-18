@@ -26,8 +26,8 @@ description: Train your users and ensure that issues are dealt with quickly.
 Train your hybrid workers on:
 
 - Proper sign-in procedures using MFA, including registering an additional verification method.
-- The use of devices and how endpoint management policies can be used to block access for non-compliant or unmanaged devices.
-- The use of allowed apps and how endpoint management application polices can be used to block the use of some apps.
+- The use of devices and how endpoint management policies can be used to block access for noncompliant or unmanaged devices.
+- The use of allowed apps and how endpoint management application policies can be used to block the use of some apps.
 - Windows 11 or 10 Enterprise security features.
 - How to use [Teams](/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.
 - How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.
@@ -46,4 +46,4 @@ Then, retrain your users as needed.
 
 ## Results of Step 6
 
-Your hybrid workers are trained and there is a responsive and open forum for them to provide feedback and post issues with security, compliance, remote access, and productivity apps.
+Your hybrid workers are trained and there's a responsive and open forum for them to provide feedback and post issues with security, compliance, remote access, and productivity apps.
