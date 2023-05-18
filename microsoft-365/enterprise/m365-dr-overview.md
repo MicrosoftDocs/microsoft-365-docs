@@ -77,9 +77,9 @@ Some examples:
 
 **Example 3:** For a _Tenant_ with the sign-up country as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned  into the _Macro Region Geography 3 - Americas_.  Why?  Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
 
-**Example 4a:** For a _Tenant_ with the sign-up country as "Sweden" that has a new subscription that includes Microsoft Yammer, then the customer data for Yammer will be provisioned  into the _Macro Region Geography 1 - EMEA_.  Why?  Because Yammer is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
+**Example 4a:** For a _Tenant_ with the sign-up country as "Sweden" that has a new subscription that includes Microsoft Viva Engage, then the customer data for Viva Engage will be provisioned  into the _Macro Region Geography 1 - EMEA_.  Why?  Because Viva Engage is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
 
-**Example 4b:** For a _Tenant_ with the sign-up country as "Sweden" that has a subscription that includes Microsoft Yammer from before Yammer was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Yammer will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Yammer only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
+**Example 4b:** For a _Tenant_ with the sign-up country as "Sweden" that has a subscription that includes Microsoft Viva Engage from before Viva Engage was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Viva Engage will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Viva Engage only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
 
 ### Migrations/Moves
 

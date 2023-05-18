@@ -90,6 +90,6 @@ If you have custom profile properties, then we recommend that you use the same p
 
 See [Work with user profiles in a Multi-Geo tenant](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) for additional details and for developer guidance.
 
-## Yammer
+## Viva Engage
 
-Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the _Tenant's_ central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Viva Engage is not a Multi-Geo workload. Viva Engage threads stored in Viva Engage will be placed in the _Tenant's_ central location. Viva Engage is rolling out a file storage change which will store Viva Engage files within SharePoint. Viva Engage files stored in SharePoint will be placed the SharePoint site associated with the Viva Engage group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

@@ -104,7 +104,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `Viva Engage_ENTERPRISE` <br/> |Viva Engage  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
@@ -130,12 +130,12 @@ Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 ```
 
-Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:
+Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and VIVAENGAGE_ENTERPRISE:
 
 ```powershell
 $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
-$planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
+$planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","VIVAENGAGE_ENTERPRISE" )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
