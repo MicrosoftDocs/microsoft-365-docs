@@ -45,9 +45,9 @@ The **Most recent incidents and alerts** section shows a graph of the number of 
 
 By default, the incident queue in the Microsoft 365 Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
-The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for analysis.
+The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
 
-For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
+For more visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
@@ -94,7 +94,7 @@ You can quickly remove a filter by selecting the **X** in the name of a filter i
 
 ## Save custom filters as URLs
 
-Once you have configured a useful filter in the incidents queue, you can bookmark the URL of the browser tab or otherwise save it as a link on a Web page, a Word document, or a place of your choice. This will give you single-click access to key views of the incident queue, such as:
+Once you've configured a useful filter in the incidents queue, you can bookmark the URL of the browser tab or otherwise save it as a link on a Web page, a Word document, or a place of your choice. Bookmarking gives you single-click access to key views of the incident queue, such as:
 
 - New incidents
 - High-severity incidents
@@ -107,7 +107,7 @@ Once you have configured a useful filter in the incidents queue, you can bookmar
 - Incidents with a specific associated threat
 - Incidents with a specific actor
 
-Once you have compiled and stored your list of useful filter views as URLs, you can use it to quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent assignment and analysis.
+Once you have compiled and stored your list of useful filter views as URLs, use it to quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent assignment and analysis.
 
 ## Search for incidents
 
@@ -121,12 +121,12 @@ You can name an asset&mdash;such as a user, device, mailbox, or application name
 
 The default list of incidents is for those that occurred in the last six months. You can specify a new time range from the drop-down box next to the calendar icon by selecting:
 
- - 1 day
- - 3 days
- - 1 week
+ - One day
+ - Three days
+ - One week
  - 30 days
  - 30 days
- - 6 months
+ - Six months
  - A custom range in which you can specify both dates and times
 
 ## Next steps
