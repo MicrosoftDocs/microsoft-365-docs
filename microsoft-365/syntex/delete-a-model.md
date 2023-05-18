@@ -20,15 +20,17 @@ description: Learn how to delete a model in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-At some point, you might want to delete a model. The easiest way is to delete the model from the model home page.
+At some point, you might want to delete a model. The easiest way is to delete the model is from the model home page.
 
 ## Delete a model from the model home page
 
 1. On the **Models** page, select the model you want to delete.
 
-2. From the home page of the model, select **Model settings**.
+2. On the home page of the model, select **Model settings**.
 
 3. On the **Model settings** panel, at the bottom of the panel, select **Delete model**.
+
+    ![Screenshot of the Models settings panel showing Delete model option.](../media/content-understanding/model-settings-delete-model.png)
 
 4. To confirm you want to delete the model, on the **Delete model** screen, select **Yes, delete this model**, and then select **Delete**.
 
