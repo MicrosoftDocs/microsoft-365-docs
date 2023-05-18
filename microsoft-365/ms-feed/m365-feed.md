@@ -80,7 +80,7 @@ When a user creates and stores a document in a folder in OneDrive, and this fold
 
 2. **How does following work?**
 
-Following is synchronized between Microsoft Feed and Yammer. Following features in Microsoft Feed are only available to users who have a Yammer license. If users don’t have a Yammer license, the My network page is not available, and the users can’t follow others from Microsoft Feed.
+Following is synchronized between Microsoft Feed and Viva Engage. Following features in Microsoft Feed are only available to users who have a Viva Engage license. If users don’t have a Viva Engage license, the My network page is not available, and the users can’t follow others from Microsoft Feed.
 
 3. **What's the connection between** [Office Delve](https://delve.office.com) **and Microsoft Feed?**
 
