@@ -111,19 +111,19 @@ Alternate steps:
 
 1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-![collect-investigation-package](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/9e6b0a48-8676-4e25-878c-a489eac3f26a)
+    ![Image of collect investigation package](images/collect-investigation-package.png)
    
 2.	Add comments and select **Confirm**.
 
-![comments-confirm](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/662d0b80-501d-4f4e-918f-ec81ac102d27)
+    ![Image of confirm comment](images/comments-confirm.png)
 
 3.	Select **Action center** from the response actions section of the device page.
 
-![action-center](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/45ceeee1-b694-4c78-bde3-be842e641b7d)
+    ![Image of action center](images/action-center-selected.png)
 
 4.	Click the **Package collection package available** to download the collection package.
 
-![download-package](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/13512492/55c57fd5-5c0e-4dd6-aec8-819d723ef840)
+    ![Image of download package](images/download-package.png)
 
 For Windows devices, the package contains the following folders:
 
