@@ -96,10 +96,14 @@ Depending on configuration settings, you may use the Window Security App to view
 ### To view the state of Real-time protection and performance mode
 
 1. Open the **Windows Security App** from:
+
   - The notification area of the taskbar
   - The **Start** menu by searching for **Windows Security**
+
   :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png":::
-1. Navigate to the **Virus & threat protection** pillar >  **Manage Settings**.
+
+2. Navigate to the **Virus & threat protection** pillar >  **Manage Settings**.
+
   :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-manage-settings.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-manage-settings.png":::
 
 > [!NOTE]
