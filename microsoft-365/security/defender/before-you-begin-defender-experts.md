@@ -35,11 +35,11 @@ This document outlines the key infrastructure requirements you must meet and imp
 
 ## Check if your environment meets licensing and access prerequisites
 
-Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access. 
+Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access.
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers will be assigned two Experts on Demand credits on the first of each month, which may be used to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers will be assigned two Ask Defender Experts (Experts on Demand) credits on the first of each month, which they can use to submit questions. They can also still submit inquiries beyond the initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
