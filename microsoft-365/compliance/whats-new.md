@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/03/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -44,9 +44,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
 
 ### Insider risk management
 
+- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
+- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings-intelligent-detections.md) reduces alert noise.
+- Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
 
 ## April 2023
@@ -152,7 +156,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
    - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - **New article**: Added article that [summarizes the privacy principles for insider risk management](insider-risk-solution-privacy.md). 
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
-- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
+- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings-policy-timeframes.md).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
 
 ### Microsoft Priva
