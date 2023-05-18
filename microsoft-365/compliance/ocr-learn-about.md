@@ -122,7 +122,7 @@ This functionality supports scanning images in the following file types, with th
 OCR scanning supports more than [150 languages](https://azure.microsoft.com/cognitive-services/computer-vision/language-support).
 
 ## Summary
-- You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
+- To use OCR, you must set up Microsoft Syntex pay-as-you-go billing. (You don’t need to set up Microsoft Syntex itself.)
 - Configuring OCR occurs at the tenant level, so once OCR is configured, they're available to the entire Microsoft Purview stack.
 - You don't need to create separate data classifiers for OCR. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
 
