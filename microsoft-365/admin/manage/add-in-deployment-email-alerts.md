@@ -5,9 +5,10 @@ ms.author: elizs
 author: ElizabethSamuel-MSFT
 manager: aljerabe
 ms.reviewer: akshah
+ms.date: 06/14/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management

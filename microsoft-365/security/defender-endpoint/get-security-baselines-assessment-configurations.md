@@ -1,8 +1,8 @@
 ---
 title: Security baselines assessment configurations
-description: Provides information about the security baselines assessment configurations that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+description: Provides information about the security baselines assessment configurations that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,14 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 05/02/2022
 ---
 
 # List security baselines assessment configurations
@@ -27,7 +31,7 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender Vulnerability Management? [Sign up for a free trial.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## 1. Get all security baselines assessment configurations
 
@@ -62,12 +66,15 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |Property | Type | Description |
 |:---|:---|:---|
 |Id | String | Unique identifier for the specific configuration in the baseline benchmark.
+|benchmarkName| String | The name of the benchmark.
 |name | String | The configuration name at it appears in the benchmark.
 |description | String | The configuration description as it appears in the benchmark.
 |category | String | The configuration  category as it appears in the benchmark.
 |complianceLevel|String|The compliance level of the benchmark where this configuration appears.
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
+|source|String| The registry path or other location used to determine the current device setting.
+|remediation|String| The recommended steps to remediate.
 
 ## 1.6 Example
 

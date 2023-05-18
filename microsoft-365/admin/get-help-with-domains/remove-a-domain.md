@@ -2,14 +2,17 @@
 title: "Remove a domain"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -146,7 +149,7 @@ For example, change the MX record at your DNS host. Email sent to your domain st
 
 - Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
 
-- On the day you change the MX record, make sure to [save your data](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) and [uninstall Office if needed](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
+- On the day you change the MX record, make sure to [save your data](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) and [uninstall Microsoft 365 if needed](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
 
 #### Update your domain MX and other DNS records (if you're using a custom domain)
 
@@ -160,7 +163,7 @@ To change your NS records, see [Change nameservers to set up Microsoft 365 with 
 
 ## How long does it take for a domain to be removed?
 
-It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
+It can take as little as five minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, aliases, shared mailboxes, resource mailboxes, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
 
 If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 

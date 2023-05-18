@@ -1,16 +1,20 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 01/01/2023
   title: "Importing PST files FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: v-tophillips
-  author: v-tophillips
+  ms.author: robmazz
+  author: robmazz
   manager: laurawi
   audience: Admin
   ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
-  ms.collection: M365-security-compliance
+  ms.collection: 
+  - tier1
+  - purview-compliance
+  - import
   search.appverid:
   - MOE150
   - MED150

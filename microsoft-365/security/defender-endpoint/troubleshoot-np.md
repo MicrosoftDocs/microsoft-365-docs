@@ -2,7 +2,7 @@
 title: Troubleshoot problems with Network protection
 description: Resources and sample code to troubleshoot issues with Network protection in Microsoft Defender for Endpoint.
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,13 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot network protection
@@ -119,7 +123,7 @@ Set-MpPreference -ProxyServer <proxy IP address: Port>
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
-You can configure the registry key by using PowerShell, Microsoft Endpoint Manager, or Group Policy. Here are some resources to help:
+You can configure the registry key by using PowerShell, Microsoft Configuration Manager, or Group Policy. Here are some resources to help:
 
 - [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys)
 - [Configure custom client settings for Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)

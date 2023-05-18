@@ -3,7 +3,8 @@ title: Submit files for analysis by Microsoft
 description: Learn how to submit files to Microsoft for malware analysis, how to track your submissions, and dispute detections.
 ms.reviewer:
 keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn't detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn't detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,23 +12,42 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: met150
-ms.technology: m365d
+ms.date: 03/18/2022
 ---
 
 # Submit files for analysis
 
 If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to us for analysis. This page has answers to some common questions about submitting a file for analysis.
 
-## How do I send a malware file to Microsoft?
+> [!TIP]
+> If your organization's subscription includes [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), [Microsoft Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/defender-for-office-365), or [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), you can use the [new unified submissions portal](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770). To learn more, see [Submit files in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/admin-submissions-mde).
 
-You can send us files that you think might be malware or files that have been incorrectly detected through the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
+## How do I submit a file to Microsoft for analysis?
 
-We receive a large number of samples from many sources. Our analysis is prioritized by the number of file detections and the type of submission. You can help us complete a quick analysis by providing detailed information about the product you were using and what you were doing when you found the file.
+### Send a malware file
+
+You can send files that you think might be malware or files that have been incorrectly detected through the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
+
+You can complete a quick analysis by providing detailed information about the product you were using and what you were doing when you found the file.
 
 After you sign in, you will be able to track your submissions.
+
+> [!NOTE]
+>
+> You can use the WDSI submission feature even if you don't have Microsoft Defender for Endpoint Plan 2 or Microsoft Defender for Office Plan 2.
+
+### Submit a suspected email attachment
+
+Use the [Microsoft 365 Defender portal](https://security.microsoft.com/) to submit suspected email attachments to Microsoft for review. For more information, see [Submit a suspected email attachment to Microsoft](../office-365-security/submissions-admin.md).
+
+### Submit a file or file hash
+
+Use the unified submissions feature in Microsoft Defender for Endpoint to submit files and file hashes to Microsoft for review. For more information, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 ## Can I send a sample by email?
 
@@ -76,3 +96,7 @@ Processing submissions take dedicated analyst resource. Because we regularly rec
 * Submissions flagged as high priority by SAID holders are given immediate attention.
 
 Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. Note that the same file may have already been processed by an analyst. To check for updates to the determination, select rescan on the submission details page.
+
+## See also
+
+[Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](../defender-endpoint/defender-endpoint-antivirus-exclusions.md)

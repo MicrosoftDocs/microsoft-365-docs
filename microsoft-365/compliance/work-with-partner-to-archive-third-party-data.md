@@ -1,27 +1,28 @@
 ---
 title: "Work with a partner to archive third-party data"
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date:
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
 ---
 
 # Work with a partner to archive third-party data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365. A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items. The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes. After third-party data is imported, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.
 
@@ -39,6 +40,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the third-party data import process works
 
@@ -495,11 +498,11 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
     - Place the third-party data mailbox on Litigation Hold. You can also apply a Microsoft 365 retention policy in the security and compliance center. Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following topics:
 
-      - [Place a mailbox on Litigation Hold](./create-a-litigation-hold.md)
+      - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
 
       - [Learn about retention policies and retention labels](retention.md)
 
-    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
+    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](audit-mailboxes.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
 
 ## Step 3: Configure user mailboxes for third-party data
 
@@ -509,7 +512,7 @@ The next step is to configure user mailboxes to support third-party data. Comple
 
 2. Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:
 
-    - [Place a mailbox on Litigation Hold](./create-a-litigation-hold.md)
+    - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
 
     - [Learn about retention policies and retention labels](retention.md)
 
@@ -590,6 +593,6 @@ To revoke consent for a third-party data connector, you can delete the applicati
 
    For more information about using Content Search and creating keyword search queries, see:
 
-  - [Content Search](content-search.md)
+  - [Content Search](ediscovery-content-search.md)
 
-  - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+  - [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 07/21/2020
 audience: Admin
 search.appverid: MET150
 ms.topic: conceptual
@@ -14,15 +14,15 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 
 # Learn about sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
+Identifying and classifying sensitive items that are under your organization's control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types
@@ -31,6 +31,8 @@ Identifying and classifying sensitive items that are under your organizations co
 Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitive information types are used in
 
@@ -41,6 +43,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## Categories of sensitive information types
 
@@ -143,10 +147,10 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 In a sensitive information type entity definition, **confidence level** reflects how much supporting evidence is detected in addition to the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. For example, matches with a high confidence level will contain more supporting evidence in close proximity to the primary element, whereas matches with a low confidence level would contain little to no supporting evidence in close proximity.
 
-A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels returns more false positives but few to zero false negatives.
+A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels return more false positives but few to zero false negatives.
 
 - **low confidence**: Matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches. The low confidence level has a value of 65.
-- **medium confidence**: Matched items will contain an average amount of false positives and false negatives. Medium confidence returns all medium, and high confidence matches. The medium confidence level has a value of 75.
+- **medium confidence**: Matched items will contain an average number of false positives and false negatives. Medium confidence returns all medium, and high confidence matches. The medium confidence level has a value of 75.
 - **high confidence**: Matched items will contain the fewest false positives but the most false negatives. High confidence only returns high confidence matches and has a value of 85.
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
@@ -194,6 +198,11 @@ You can choose from several options to create custom sensitive information types
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > We recommend using string match instead of word match in a keyword list.
+
+## Provide match/not a match accuracy feedback in sensitive info types
+
+You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+
 
 ## For further information
 

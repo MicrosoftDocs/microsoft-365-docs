@@ -2,7 +2,7 @@
 title: Protect macOS security settings with tamper protection
 description: Use tamper protection to prevent malicious apps from changing important macOS security settings.
 keywords: macos, tamper protection, security settings, malware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-ms.topic: article
-ms.technology: mde
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
+ms.date: 03/24/2023
 ---
 
 # Protect macOS security settings with tamper protection
@@ -26,7 +29,14 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+
 Tamper protection in macOS helps prevent unwanted changes to security settings from being made by unauthorized users. Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS. This capability also helps important security files, processes, and configuration settings from being tampered.
+
+> [!IMPORTANT]
+>
+> Between March and May of 2023, Microsoft Defender for Endpoint on macOS will start respecting the selection for tamper protection applied via the global tamper protection switch under advanced settings in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can choose to enforce (block/audit/disable) your own macOS tamper protection settings by using a Mobile Device Management (MDM) solution such as Intune (recommended). If the tamper protection setting was not enforced via MDM, a local administrator can continue to manually change the setting with the following command: `sudo mdatp config tamper-protection enforcement-level --value (chosen mode)`.
 
 You can set tamper protection in the following modes:
 
@@ -45,7 +55,6 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Creation of new files under Defender for Endpoint location is logged (audited)
 - Deletion of Defender for Endpoint files is logged (audited)
 - Renaming of Defender for Endpoint files is logged (audited)
-- Commands to stop the agent fail
 
 **Block mode**:
 
@@ -64,18 +73,24 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 > [!NOTE]
 >
-> - The mode change will apply immediately. You don't need to change the feature flag nor restart Microsoft Defender for Endpoint.
+> - The mode change will apply immediately.
 > - If you used JAMF during the initial configuration, then you'll need to update the configuration using JAMF as well.
 
 ## Before you begin
 
-- Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+)
-- Minimum required version for Defender for Endpoint: 101.49.25
+- Supported macOS versions: Big Sur (11), or later.
+- Minimum required version for Defender for Endpoint: 101.70.19.
 
 **Highly recommended settings:**
 
-1. System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
-1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
+- System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+- Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
+- Ensure that Defender for Endpoint has **Full Disk Access** authorization.
+
+> [!NOTE]
+> 
+> Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly 
+.
 
 ## Configure tamper protection on macOS devices
 
@@ -87,9 +102,48 @@ There are several ways you can configure tamper protection:
 
 ### Before you begin
 
-Verify that "tamper_protection" is set to "disabled".
+Verify that "tamper_protection" is set to "disabled" or "audit" to observe the state change.
 
-![Image of command line with tamper protection in disable mode](images/verify-tp.png)
+```bash
+mdatp health
+```
+
+```console
+healthy                                     : true
+health_issues                               : []
+licensed                                    : true
+engine_version                              : "1.1.19300.3"
+app_version                                 : "101.70.19"
+org_id                                      : "..."
+log_level                                   : "info"
+machine_guid                                : "..."
+release_ring                                : "InsiderFast"
+product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+cloud_enabled                               : true
+cloud_automatic_sample_submission_consent   : "safe"
+cloud_diagnostic_enabled                    : false
+passive_mode_enabled                        : false
+real_time_protection_enabled                : true
+real_time_protection_available              : true
+real_time_protection_subsystem              : "endpoint_security_extension"
+network_events_subsystem                    : "network_filter_extension"
+device_control_enforcement_level            : "audit"
+tamper_protection                           : "audit"
+automatic_definition_update_enabled         : true
+definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+definitions_updated_minutes_ago             : 5
+definitions_version                         : "1.369.896.0"
+definitions_status                          : "up_to_date"
+edr_early_preview_enabled                   : "disabled"
+edr_device_tags                             : []
+edr_group_ids                               : ""
+edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+edr_machine_id                              : "..."
+conflicting_applications                    : []
+network_protection_status                   : "stopped"
+data_loss_prevention_status                 : "disabled"
+full_disk_access_enabled                    : true
+```
 
 ### Manual configuration
 
@@ -106,7 +160,46 @@ Verify that "tamper_protection" is set to "disabled".
 
 2. Verify the result.
 
-    ![Image of result of manual configuration command](images/result-manual-config.png)
+  ```bash
+  mdatp health
+  ```
+
+  ```console
+  healthy                                     : true
+  health_issues                               : []
+  licensed                                    : true
+  engine_version                              : "1.1.19300.3"
+  app_version                                 : "101.70.19"
+  org_id                                      : "..."
+  log_level                                   : "info"
+  machine_guid                                : "..."
+  release_ring                                : "InsiderFast"
+  product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+  cloud_enabled                               : true
+  cloud_automatic_sample_submission_consent   : "safe"
+  cloud_diagnostic_enabled                    : false
+  passive_mode_enabled                        : false
+  real_time_protection_enabled                : true
+  real_time_protection_available              : true
+  real_time_protection_subsystem              : "endpoint_security_extension"
+  network_events_subsystem                    : "network_filter_extension"
+  device_control_enforcement_level            : "audit"
+  tamper_protection                           : "block"
+  automatic_definition_update_enabled         : true
+  definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+  definitions_updated_minutes_ago             : 5
+  definitions_version                         : "1.369.896.0"
+  definitions_status                          : "up_to_date"
+  edr_early_preview_enabled                   : "disabled"
+  edr_device_tags                             : []
+  edr_group_ids                               : ""
+  edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+  edr_machine_id                              : "..."
+  conflicting_applications                    : []
+  network_protection_status                   : "stopped"
+  data_loss_prevention_status                 : "disabled"
+  full_disk_access_enabled                    : true
+  ```
 
 Notice that the "tamper_protection" is now set to "block".
 
@@ -129,7 +222,7 @@ Configure tamper protection mode in Microsoft Defender for Endpoint [configurati
 ```
 
 > [!NOTE]
-> If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You don't need to create a second configuration profile.
+> If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You should not create a second configuration profile.
 
 ### Intune
 
@@ -203,9 +296,7 @@ The result will show "block" if tamper protection is on:
 
 ![Image of tamper protection in block mode](images/tp-block-mode.png)
 
-You can also run full `mdatp health` and look for the "tamper_protection" in the output:
-
-![Image of tamper protection when in block mode](images/health-tp-audit.png)
+You can also run full `mdatp health` and look for the "tamper_protection" in the output
 
 ## Verify tamper protection preventive capabilities
 
@@ -220,7 +311,7 @@ Tampering alert is raised in the Microsoft 365 Defender portal
 ### Verify block mode and audit modes
 
 - Using Advanced hunting, you'll see tampering alerts appear
-- Tampering events can be found in the local device logs: `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image of tamper protection log](images/tamper-protection-log.png)
 

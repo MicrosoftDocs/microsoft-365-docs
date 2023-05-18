@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -36,7 +39,7 @@ When signed in with valid work or school accounts, users can get cloud-based ass
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available worldwide (standard multi-tenant). For more information on finding the usage location, please visit [View additional property values for accounts](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts).
+- Microsoft 365 experiences, such as Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available worldwide (standard multi-tenant). For more information on finding the usage location, please visit [View additional property values for accounts](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts).
 
 - Existing consumer experiences, including Cortana in Windows 10 (version 1909 and earlier), are governed by the [Microsoft Services Agreement](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) (see “Existing services for consumers” section below). These terms will also govern Cortana enterprise services provided to the user when signed in with their consumer credentials.
 
@@ -167,20 +170,6 @@ Individuals can opt out of Play My Emails using the following steps.
 4. Move the toggle to off on the accounts you want to disable.
 
 [Learn more about Play My Emails](https://support.microsoft.com/help/4558256)
-
-### Briefing email
-
-Cortana sends a personalized briefing email with tasks and commitments you made with a convenient way to mark them as **done** or schedule focus time to get them done. It also includes a summary of your meetings and relevant documents for your day. Cortana extracts information from a user’s email messages and stores it in their Exchange Online mailbox until it’s consolidated into the Briefing email. At no time is personal data accessible outside of your Exchange Online mailbox. Users get access to the Briefing email only if they have licenses that include the Exchange Online service plan.
-
-### How to opt out of Briefing email
-
-Admins can configure Briefing for their organization using [PowerShell](/briefing/be-admin) in Exchange Online. Individuals can opt out of Cortana's Briefing email by selecting **Unsubscribe** in the footer of the message.
-
-[Learn more about the Briefing email](https://support.microsoft.com/help/4558259)
-
-We'll continue to introduce more experiences like the above to help increase your organization's productivity.
-
-[Learn more about Microsoft Compliance offerings](/compliance/regulatory/offering-home)
 
 ## How is the delivery of Cortana enterprise services different from the delivery of other Cortana features I may have previously experienced?
 

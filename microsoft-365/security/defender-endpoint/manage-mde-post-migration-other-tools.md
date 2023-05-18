@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe
 description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,14 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-scenario
-ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+- ms.custom: admindeeplinkDEFENDER
+ms.topic: conceptual
 ms.reviewer: chventou
+search.appverid: met150
+ms.date: 10/22/2021
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
@@ -29,14 +31,11 @@ ms.reviewer: chventou
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!NOTE]
-> We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
->
-> - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
-> - [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-mde-post-migration-intune.md)
-> - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)
+We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) to manage Defender for Endpoint settings. However, you can use other tools to manage some settings, such as Microsoft Defender Antivirus, exploit protection, and customized attack surface reduction rules with:
 
-You can manage some Microsoft Defender Antivirus settings on devices with [PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell),  [Windows Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI), and the [Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). For example, you can manage some Microsoft Defender Antivirus settings. And, in some cases, you can customize your attack surface reduction rules and exploit protection settings.
+- [PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell);
+- [Windows Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI); and
+- The [Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). 
 
 > [!IMPORTANT]
 > Threat protection features that you configure by using PowerShell, WMI, or MCPmdRun.exe can be overwritten by configuration settings that are deployed with Intune or Configuration Manager.
@@ -57,7 +56,7 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 
 ## Configure Microsoft Defender for Endpoint with Windows Management Instrumentation (WMI)
 
-WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](/windows/win32/wmisdk/using-wmi).<br/><br/>
+WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](/windows/win32/wmisdk/using-wmi).
 
 |Task|Resources to learn more|
 |---|---|
@@ -81,6 +80,4 @@ You can also configure whether and what features end users can see in the Micros
 
 ## Next steps
 
-- [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-- [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)
+- [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

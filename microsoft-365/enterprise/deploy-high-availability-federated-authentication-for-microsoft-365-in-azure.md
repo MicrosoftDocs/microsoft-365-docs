@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:

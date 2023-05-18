@@ -3,10 +3,14 @@ title: "Add a marketing campaign ID to a Bookings page URL"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: 
+- Tier1
+- scotvorg
 description: "How to add a campaign ID to a Bookings page URL"
 ---
 

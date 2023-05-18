@@ -2,7 +2,7 @@
 title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, machines
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Machine resource type
@@ -36,10 +40,6 @@ ms.custom: api
 
 ## Methods
 
-<br>
-
-****
-
 |Method|Return Type|Description|
 |---|---|---|
 |[List machines](get-machines.md)|[machine](machine.md) collection|List set of [machine](machine.md) entities in the org.|
@@ -55,22 +55,17 @@ ms.custom: api
 |[Get missing KBs](get-missing-kbs-machine.md)|KB collection|Get a list of missing KBs associated with the machine ID|
 |[Set device value](set-device-value.md)|[machine](machine.md) collection|Set the [value of a device](tvm-assign-device-value.md).|
 |[Update machine](update-machine-method.md)|[machine](machine.md) collection|Get the update status of a machine.|
-|
 
 ## Properties
-
-<br>
-
-****
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|[machine](machine.md) identity.|
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
-|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours.|
+|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property does not correspond to the lastseen value in the UI. It is pertains to the last device update.|
 |osPlatform|String|Operating system platform.|
-|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded" and "offboarded".|
+|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
 |version|String|Operating system Version.|
 |osBuild|Nullable long|Operating system build number.|
@@ -86,4 +81,3 @@ ms.custom: api
 |deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
 |osArchitecture|String|Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.|
-|

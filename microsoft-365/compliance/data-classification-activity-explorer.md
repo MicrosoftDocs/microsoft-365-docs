@@ -5,15 +5,17 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 10/02/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1 
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -22,9 +24,7 @@ description: "Activity explorer lets you see and filter on the actions users are
 
 # Get started with activity explorer
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
+The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. [Activity explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
 
 ![placeholder screenshot overview activity explorer.](../media/data-classification-activity-explorer-1.png)
 
@@ -41,6 +41,8 @@ There are over 30 different filters available for use, some are:
 
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
@@ -56,73 +58,55 @@ Every account that accesses and uses data classification must have a license ass
 
 An account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
 
-### Roles and Role Groups in preview
+### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine-tune your access controls.
+There are roles and role groups that you can use to fine-tune your access controls. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+| Microsoft Purview Roles | Microsoft Purview Role Groups | Microsoft 365 Roles | Microsoft 365 Role Groups |
+|:------------------------|:------------------------------|:--------------------|:-------------------------|
+| Information Protection Admin| Information Protection | Global Admins |Compliance Administrator |
+| Information Protection Analyst | Information Protection Admins | Compliance Admins | Security Administrator |
+| Information Protection Investigator | Information Protection Investigators |Security Admins | Security Reader |
+| Information Protection Reader | Information Protection Analysts | Compliance Data Admins |  |
+|                   | Information Protection Readers   |   |            |
 
-- Information Protection Admin
-- Information Protection Analyst
-- Information Protection Investigator
-- Information Protection Reader
-
-Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
-
-- Information Protection
-- Information Protection Admins
-- Information Protection Analysts
-- Information Protection Investigators
-- Information Protection Readers
-
-<!--
-> [!IMPORTANT]
-> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
-
-**Microsoft 365 role groups**
-
-- Global administrator
-- Compliance administrator
-- Security administrator
-- Compliance data administrator
-
-**Microsoft 365 roles**
-
-- Compliance administrator
-- Security administrator
-- Security Reader
+> [!NOTE]
+> Roles other than the Global Admin and Compliance Admin roles can view activities only, not the sensitive content itself.
 
 ## Activity types
 
-Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
+Activity explorer gathers information from the audit logs of multiple sources of activities. 
 
-**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
+Some examples of the **Sensitivity label activities** and **Retention labeling activities** from applications native to Microsoft Office, the Azure Information Protection (AIP) unified labeling client and scanner, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive include:
 
 - Label applied
 - Label changed (upgraded, downgraded, or removed)
 - Autolabeling simulation
 - File read
 
-**Azure Information Protection (AIP) scanner and AIP clients**
+
+Labeling activity particular to **Azure Information Protection (AIP) scanner and AIP clients** that comes into Activity explorer includes:
 
 - Protection applied
 - Protection changed
 - Protection removed
 - Files discovered
 
-Activity explorer also gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (preview), on-premises SharePoint folders and libraries, and on-premises file shares, and Windows 10 devices via **Endpoint data loss prevention (DLP)**. Some examples events from Windows 10 devices are file:
+For more detailed information on what labeling activity makes it into Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-- Deletions
-- Creations
-- Copied to clipboard
-- Modified
+In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (preview), on-premises SharePoint folders and libraries, on-premises file shares, and Windows 10 devices. Some example events gathered from Windows 10 devices include the following actions taken on files:
+
+- Deletion
+- Creation
+- Copy to clipboard
+- Modify
 - Read
-- Printed
-- Renamed
-- Copied to network share
-- Accessed by unallowed app 
+- Print
+- Rename
+- Copy to network share
+- Access by an unallowed app
 
-Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected—such as a large number of items that are labeled `highly confidential` and are downgraded to `general`—you can manage your policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.

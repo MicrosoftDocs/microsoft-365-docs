@@ -1,12 +1,13 @@
-﻿---
+---
 title: "SharePoint storage quotas in multi-geo environments"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020

@@ -2,7 +2,7 @@
 title: How to schedule scans with Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
+ms.date: 10/22/2021
 ---
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
@@ -105,7 +109,7 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## For those who use Ansible, Chef, or Puppet
+## For those who use Ansible, Chef, Puppet, or SaltStack
 
 Use the following commands:
 
@@ -113,6 +117,7 @@ Use the following commands:
 
 ```bash
 cron - Manage cron.d and crontab entries
+```
 
 See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
@@ -120,9 +125,8 @@ See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://d
 
 ```bash
 cron resource
-```bash
-
 ```
+
 See <https://docs.chef.io/resources/cron/> for more information.
 
 ### To set cron jobs in Puppet
@@ -133,9 +137,25 @@ Resource Type: cron
 
 See <https://puppet.com/docs/puppet/5.5/types/cron.html> for more information.
 
-Automating with Puppet: Cron jobs and scheduled tasks
+**Automating with Puppet: Cron jobs and scheduled tasks**
 
 See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
+
+### To manage cron jobs in SaltStack
+
+```bash
+Resource Type: salt.states.cron
+```
+
+**Example:**
+
+```yml
+mdatp scan quick > /tmp/mdatp_scan_log.log:
+  cron.present:
+    - special: '@hourly'
+```
+
+See <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html> for more information.
 
 ## Additional information
 
@@ -157,7 +177,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### To backup crontab entries
+### To back up crontab entries
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
@@ -204,9 +224,11 @@ crontab -u username -r
 
 ### Explanation
 
+```
 +—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
 | +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
 | | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>
-| | | +——- month (values: 1 - 12) (special characters: , \- \* / )  <br>
+| | | +——- month (values: 1 - 12) (special characters: , \- \* /)  <br>
 | | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed
+```

@@ -3,7 +3,7 @@ title: Troubleshoot performance issues
 description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
 keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,10 @@ manager: dansimp
 ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
 ---
 
 # Troubleshoot performance issues related to real-time protection
@@ -43,6 +45,8 @@ You can also provide additional logs to your submission to Microsoft support by 
 
 - [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
 - [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
+
+For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
 ## Check with vendor for antivirus exclusions
 
@@ -79,7 +83,7 @@ If the previous step doesn't solve the problem, you can collect more information
 
 Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring.
 
-1. Download [Process Monitor v3.60](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
+1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
 2. To remove the file's mark of the web:
     1. Right-click **ProcessMonitor.zip** and select **Properties**.
@@ -290,7 +294,26 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
+
 ## See also
 
 - [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

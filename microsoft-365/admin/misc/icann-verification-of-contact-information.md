@@ -2,14 +2,17 @@
 title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -33,5 +36,3 @@ For validation, an email is sent to the registrant's address.
 The email will look like this:
 
 ![Email example.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
-
-

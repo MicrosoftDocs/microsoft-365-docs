@@ -5,11 +5,13 @@ f1.keywords:
 ms.author: pebaum
 author: pebaum
 manager: scotv
+ms.date: 10/29/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW

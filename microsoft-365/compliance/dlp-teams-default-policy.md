@@ -1,28 +1,29 @@
 ---
-title: "Learn about the default DLP policy in Microsoft Teams (preview)"
+title: "Learn about the default DLP policy in Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 01/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
 description: "Learn about the default data loss prevention policy in Microsoft Teams"
 ---
 
-# Learn about the default data loss prevention policy in Microsoft Teams (preview)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# Learn about the default data loss prevention policy in Microsoft Teams
 
 [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) capabilities have been extended to include Microsoft Teams chat and channel messages, including private channel messages. As a part of this release, we created a default DLP policy for Microsoft Teams for first-time customers to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Licensing
 
@@ -40,5 +41,4 @@ Admins can view this policy in the [Microsoft Purview compliance portal](https:/
 
 ## Edit or delete the default policy
 
-To [edit the default policy for better performance or to delete it](create-test-tune-dlp-policy.md#tune-a-dlp-policy), just use an account with **DLP Compliance Management** permissions. For more information, see, [Permissions](create-test-tune-dlp-policy.md#permissions).
-
+To [edit the default policy for better performance or to delete it](dlp-create-deploy-policy.md), just use an account with **DLP Compliance Management** permissions. For more information, see, [Permissions](dlp-create-deploy-policy.md#permissions).

@@ -8,9 +8,11 @@ ms.reviewer: sinakassaw, nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -22,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
-ms.date: 04/22/2022
+ms.date: 01/05/2023
 ---
 
 # Remove a license from a shared mailbox

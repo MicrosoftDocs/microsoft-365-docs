@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 07/21/2020
 audience: Admin
 search.appverid: MET150
 ms.topic: article
@@ -14,15 +14,16 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
 ---
 
 # Use named entities in your data loss prevention policies
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
@@ -32,7 +33,7 @@ For full licensing details see, [the service description](/office365/servicedesc
 
 ### Permissions
 
-The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Add users or groups to a Microsoft Purview built-in role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group).
 
 
 ## Supported locations
@@ -53,7 +54,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 ## Create and edit enhanced policies
 
-To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+To create or edit a DLP policy, use the procedures in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)).
 
 ## Workloads and services that support named entities
 
@@ -126,7 +127,7 @@ Here are some practices you can use when you create or edit a policy that uses a
 
 
 ## For further information
+
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about named entities](named-entities-learn.md).
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

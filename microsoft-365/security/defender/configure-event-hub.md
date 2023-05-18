@@ -4,7 +4,8 @@ description: Learn how to configure your Event Hubs
 keywords: event hub, configure, insights
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-MS.technology: mde
+ms.topic: conceptual
+ms.date: 02/08/2023
 ---
 
 # Configure your Event Hubs
@@ -27,6 +30,9 @@ MS.technology: mde
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 Learn how to configure your Event Hubs so that it can ingest events from Microsoft 365 Defender.
 
@@ -159,10 +165,10 @@ You can verify that events are being sent to the Event Hubs by running a basic A
 
 ```console
 EmailEvents
-|joinkind=fullouterEmailAttachmentInfoonNetworkMessageId
-|joinkind=fullouterEmailUrlInfoonNetworkMessageId
-|joinkind=fullouterEmailPostDeliveryEventsonNetworkMessageId
-|whereTimestamp\>ago(1h)
+|join kind=fullouter EmailAttachmentInfo on NetworkMessageId
+|join kind=fullouter EmailUrlInfo on NetworkMessageId
+|join kind=fullouter EmailPostDeliveryEvents on NetworkMessageId
+|where Timestamp > ago(1h)
 |count
 ```
 
@@ -177,3 +183,7 @@ Once you've verified there's data to export, you can view the Event Hubs page to
 for your custom app to ingest.
 
 :::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text=" The Overview page in the Microsoft 365 Azure portal" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

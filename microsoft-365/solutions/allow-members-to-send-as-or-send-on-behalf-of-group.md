@@ -1,18 +1,21 @@
 ---
 title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+- Tier1
 ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150

@@ -3,7 +3,7 @@ title: Advanced Hunting API
 ms.reviewer:
 description: Learn to use the advanced hunting API to run advanced queries on Microsoft Defender for Endpoint. Find out about limitations and see an example.
 keywords: apis, supported apis, advanced hunting, query
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,25 +12,34 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Advanced hunting API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
-**Applies to:** 
+**Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> [!NOTE]
+> For the full available Advanced Hunting API experience across all Microsoft Defenders' products, visit [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> [!NOTE]
+> This API can only query tables belonging to Microsoft Defender for Endpoint. Tables belonging to other Microsoft 365 Defender services require the use of the [Microsoft 365 Defender Advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting).
 
 ## Limitations
 
@@ -42,11 +51,11 @@ ms.custom: api
    - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
-4. The maximal execution time of a single request is 10 minutes.
+4. The maximal execution time of a single request is 200 seconds.
 
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
 
 ## Permissions
 
@@ -62,6 +71,8 @@ Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
 >
 > - The user needs to have 'View Data' AD role
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 
@@ -153,6 +164,8 @@ Here is an example of the response.
 ```
 
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Microsoft Defender for Endpoint APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)

@@ -3,7 +3,8 @@ title: Automated investigation and response in Microsoft 365 Defender
 description: Get an overview of automated investigation and response capabilities, also called self-healing, in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +13,15 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # Automated investigation and response in Microsoft 365 Defender
@@ -43,7 +44,6 @@ Watch the following video to see how self-healing works: <p>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
 In Microsoft 365 Defender, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities.
- 
 > [!TIP]
 > This article describes how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
@@ -73,7 +73,7 @@ Remediation actions for malicious or suspicious entities are identified. Example
 - Blocking a URL 
 - Other actions
 
-For more information, see See [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).
+For more information, see [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).
 
 Depending on [how automated investigation and response capabilities are configured](m365d-configure-auto-investigation-response.md) for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the [Action center](m365d-action-center.md).
 
@@ -94,6 +94,15 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
+## Automated investigation & response card 
+
+The new Automated investigation & response card is available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This new card visibility to the total number of available remediation actions. The card also gives an overview of all the alerts and required approval time for each alert.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="Screenshot that shows the automated investigation & response card.":::
+
+Using the Automated investigation & response card, your security operations team can quickly navigate to the Action center by selecting the **Approve in Action Center** link, and then taking appropriate actions. The card enables your security operations team to more effectively manage actions that are pending approval. 
+
+
 ## Training for security analysts
 
 Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.
@@ -103,10 +112,11 @@ Use this learning module from Microsoft Learn to understand how Microsoft 365 De
 |![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/defender-self-healing/)
+> [Start >](/training/modules/defender-self-healing/)
 
 ## Next steps
 
 - [See the prerequisites for automated investigation and response](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configure automated investigation and response for your organization](m365d-configure-auto-investigation-response.md)
 - [Learn more about the Action center](m365d-action-center.md)
+

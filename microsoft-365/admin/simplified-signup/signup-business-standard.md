@@ -5,18 +5,25 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 04/22/2021
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
+- VSBFY23
 description: "Purchase Microsoft 365 Business Standard and set up your organization."
 ---
 
 # Sign up for a Microsoft 365 Business Standard subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Want to sign up for a Microsoft 365 Business Standard subscription?
 

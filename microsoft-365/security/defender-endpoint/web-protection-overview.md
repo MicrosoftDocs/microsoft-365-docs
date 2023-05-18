@@ -3,18 +3,21 @@ title: Web protection
 description: Learn about the web protection in Microsoft Defender for Endpoint and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 12/16/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Web protection
@@ -27,9 +30,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## About web protection
 
@@ -46,6 +47,17 @@ Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization.
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the devices that access these URLs.
 - A full set of security features that track general access trends to malicious and unwanted websites.
+
+> [!NOTE]
+> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+>
+> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - Full URL path blocks can be applied for unencrypted URLs.
+>
+> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 For more information, see [Web threat protection](web-threat-protection.md).
 
@@ -69,6 +81,8 @@ Web content filtering includes:
 
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
 - You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+    > [!NOTE]
+    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 - You can access web reports in the same central location, with visibility over actual blocks and web usage.
 
 For more information, see [Web content filtering](web-content-filtering.md).
@@ -146,7 +160,7 @@ DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
@@ -182,7 +196,7 @@ In any case, no block pages are shown in third-party browsers, and the user sees
 
 To report a false positive for sites that have been deemed dangerous by SmartScreen, use the link that appears on the block page in Microsoft Edge (as shown above).
 
-For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports and then click **Report Inaccuracy**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
+For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports. You will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 

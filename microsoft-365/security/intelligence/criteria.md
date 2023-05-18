@@ -3,7 +3,8 @@ title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
 description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it's malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,11 +12,12 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: m365d
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
@@ -26,7 +28,7 @@ You can assist Microsoft by [submitting unknown or suspicious software for analy
 
 The next sections provide an overview of the classifications we use for applications and the types of behaviors that lead to that classification.
 
->[!NOTE]
+> [!NOTE]
 > New forms of malware and potentially unwanted applications are being developed and distributed rapidly. The following list may not be comprehensive, and Microsoft reserves the right to adjust, expand, and update these without prior notice or announcement.
 
 ## Unknown – Unrecognized software  

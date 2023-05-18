@@ -4,7 +4,8 @@ description: Learn how to construct fast, efficient, and error-free threat hunti
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +16,11 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
-ms.technology: m365d
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Advanced hunting query best practices
@@ -39,6 +42,8 @@ After running your query, you can see the execution time and its resource usage 
 
 Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
 
+Watch [Optimizing KQL queries](https://www.youtube.com/watch?v=ceYvRuPp5D8) to see some of the most common ways to improve your queries.  
+
 ## General optimization tips
 
 - **Size new queries**—If you suspect that a query will return a large result set, assess it first using the [count operator](/azure/data-explorer/kusto/query/countoperator). Use [limit](/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid large result sets.
@@ -59,6 +64,8 @@ Customers who run multiple queries regularly should track consumption and apply 
 - **Filter tables not expressions**—Don't filter on a calculated column if you can filter on a table column.
 - **No three-character terms**—Avoid comparing or filtering using terms with three characters or fewer. These terms are not indexed and matching them will require more resources.
 - **Project selectively**—Make your results easier to understand by projecting only the columns you need. Projecting specific columns prior to running [join](/azure/data-explorer/kusto/query/joinoperator) or similar operations also helps improve performance.
+
+
 
 ## Optimize the `join` operator
 The [join operator](/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables by matching values in specified columns. Apply these tips to optimize queries that use this operator.
@@ -181,7 +188,7 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-Watch this [short video](https://www.youtube.com/watch?v=ceYvRuPp5D8) to learn how you can optimize the Kusto Query Language.  
+
 
 ## Query scenarios
 
@@ -264,10 +271,11 @@ There are various functions you can use to efficiently handle strings that need 
 
 To learn about all supported parsing functions, [read about Kusto string functions](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
 
->[!NOTE]
->Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> [!NOTE]
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
+
 - [Kusto query language documentation](/azure/data-explorer/kusto/query/)
 - [Quotas and usage parameters](advanced-hunting-limits.md)
 - [Handle advanced hunting errors](advanced-hunting-errors.md)

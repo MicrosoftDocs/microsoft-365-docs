@@ -5,15 +5,20 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
@@ -34,6 +39,10 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 # Reset passwords in Microsoft 365 for business
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
 
 > [!NOTE]
@@ -50,7 +59,7 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 ## Watch: Reset a business password for a user
 
-Watch a short video about resetting user passwords.<br><br>
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
@@ -73,7 +82,17 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Microsoft 365](let-users-reset-passwords.md).
+
+## Resend user password
+  
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+
+2. On the **Active users** page, select the user and then select **Reset password**.
+
+3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
+
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
 
 ## Reset my admin password
 
@@ -98,7 +117,6 @@ If you forgot your password and can't sign in:
 - Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
-<a name="bkmk_forgot"> </a>
 
 These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).
   
@@ -113,7 +131,6 @@ These steps work for a business with tens of users. If you have hundreds or thou
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
 ## Reset business passwords in bulk
-<a name="bkmk_forgot"> </a>
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
@@ -124,10 +141,28 @@ For overview information, see [Manage Microsoft 365 with PowerShell](../../enter
 ## Force a password change for all users in your business
 
 Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## Set strong passwords
+
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
   
 ## I don't have a Microsoft 365 for business subscription
 
-Try this article: [I forgot the username or password for the account I use with Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
+Try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## Related content
   

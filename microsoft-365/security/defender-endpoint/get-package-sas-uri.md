@@ -2,7 +2,7 @@
 title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,14 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get package SAS URI API
@@ -57,6 +61,8 @@ Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 >
 > - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 
 ## HTTP request
 
@@ -76,13 +82,13 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a very short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but is not complete, this returns 404 Not Found.
+If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but isn't complete, this returns 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
@@ -90,7 +96,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525c
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok

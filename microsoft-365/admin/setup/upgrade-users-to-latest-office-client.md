@@ -5,10 +5,13 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
+- scotvorg
 - Adm_O365
 - Adm_TOC
 search.appverid:

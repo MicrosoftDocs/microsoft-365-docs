@@ -1,6 +1,7 @@
 ---
 title: "Set up Customer Key"
 ms.author: krowley
+ms.date: 03/24/2023
 author: kccross
 manager: laurawi
 audience: ITPro
@@ -10,13 +11,12 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-description: "Learn how to set up Customer Key."
+- purview-compliance
+- tier1
+description: "This article describes the steps to create and configure the required Azure resources and then provides the steps to set up Customer Key."
 ---
 
 # Set up Customer Key
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
@@ -25,6 +25,8 @@ Set up Azure before you can use Customer Key. This article describes the steps y
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this article. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up Customer Key
 
 Before you get started, ensure that you have the appropriate Azure subscriptions and M365/O365 licensing for your organization. You must use paid Azure Subscriptions. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
@@ -239,7 +241,7 @@ You'll need to define three separate sets of permissions for each key vault, dep
    Get-AzKeyVault -VaultName <vault name> | fl
    ```  
 
-  - If you are using **Role-Based Access Control (RBAC)** for assinging wrapKey, unwrapkey and get permissions, you must assign “*Key Vault Crypto Service Encryption User*” role to the corresponding M365 app. See [Grant permission to applications to access an Azure key vault using Azure RBAC | Microsoft Learn](<https://learn.microsoft.com/azure/key-vault/general/rbac-guide?tabs=azure-cli>)
+  - If you're using Role-Based Access Control (RBAC) to assign `wrapKey`, `unwrapkey`, and `get` permissions, you must assign the “*Key Vault Crypto Service Encryption User*” role to the corresponding Microsoft 365 app. See [Grant permission to applications to access an Azure key vault using Azure RBAC | Microsoft Learn](/azure/key-vault/general/rbac-guide?tabs=azure-cli).
 
 > [!TIP]
 > Before moving on, make sure the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**.

@@ -4,22 +4,23 @@ description: Study common hunting scenarios and sample queries that cover device
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+ms.collection:
+  - m365-security
+  - tier1
+ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Hunt for threats across devices, emails, apps, and identities
@@ -31,18 +32,21 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 [Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:
+
 - Devices managed by Microsoft Defender for Endpoint
 - Emails processed by Microsoft 365
 - Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity
 
-With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices. 
+With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.
 
 Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.
 
 ## Get entity info
-Use these queries to learn how you can quickly get information about user accounts, devices, and files. 
+
+Use these queries to learn how you can quickly get information about user accounts, devices, and files.
 
 ### Obtain user accounts from email addresses
+
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. You can generally do this for either recipient or sender address using the *local-host* from the email address.
 
 In the snippet below, we use the [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.
@@ -51,6 +55,7 @@ In the snippet below, we use the [tostring()](/azure/data-explorer/kusto/query/t
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
+
 The query below shows how this snippet can be used:
 
 ```kusto
@@ -61,7 +66,7 @@ EmailEvents
 
 ### Merge the IdentityInfo table
 
-You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md). The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient. 
+You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md). The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.
 
 ```kusto
 EmailEvents
@@ -69,21 +74,21 @@ EmailEvents
 //Get email processing events where the messages were identified as either phishing or malware
 | where ThreatTypes has "Malware" or ThreatTypes has "Phish"
 //Merge email events with identity info to get recipient details
-| join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle, 
-Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn 
+| join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle,
+Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn
 //Show important message and recipient details
-| project Timestamp, NetworkMessageId, Subject, ThreatTypes, 
-SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle, 
+| project Timestamp, NetworkMessageId, Subject, ThreatTypes,
+SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.  
+Watch this [short video](https://www.youtube.com/watch?v=8qZx7Pp5XgM) to learn how you can use Kusto Query Language to join tables.
 
 ### Get device information
 
 The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables. For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly. This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.
 
->[!Tip]
+> [!TIP]
 > This query uses `kind=inner` to specify an [inner-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values for `DeviceId`.
 
 ```kusto
@@ -96,13 +101,12 @@ DeviceInfo
 | project AlertId
 //List all alerts on devices that user has logged on to
 | join AlertInfo on AlertId
-| project AlertId, Timestamp, Title, Severity, Category 
+| project AlertId, Timestamp, Title, Severity, Category
 ```
-
 
 ### Get file event information
 
-Use the following query to get information on file related events. 
+Use the following query to get information on file related events.
 
 ```kusto
 DeviceInfo
@@ -110,12 +114,11 @@ DeviceInfo
 | where ClientVersion startswith "20.1"
 | summarize by DeviceId
 | join kind=inner (
-    DeviceFileEvents 
+    DeviceFileEvents
     | where Timestamp > ago(1d)
 ) on DeviceId
 | take 10
 ```
-
 
 ### Get network event information
 
@@ -127,7 +130,7 @@ DeviceInfo
 | where ClientVersion startswith "20.1"
 | summarize by DeviceId
 | join kind=inner (
-    DeviceNetworkEvents 
+    DeviceNetworkEvents
     | where Timestamp > ago(1d)
 ) on DeviceId
 | take 10
@@ -143,12 +146,11 @@ DeviceInfo
 | where ClientVersion startswith "20.1"
 | summarize by DeviceId
 | join kind=inner (
-    DeviceNetworkEvents 
+    DeviceNetworkEvents
     | where Timestamp > ago(1d)
 ) on DeviceId
 | take 10
 ```
-
 
 ### Example query for macOS devices
 
@@ -182,7 +184,6 @@ DeviceInfo
 | take 10
 ```
 
-
 ## Hunting scenarios
 
 ### List logon activities of users that received emails that were not zapped successfully
@@ -190,16 +191,16 @@ DeviceInfo
 [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received. If ZAP fails, malicious code might eventually run on the device and leave accounts compromised. This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.
 
 ```kusto
-EmailPostDeliveryEvents 
+EmailPostDeliveryEvents
 | where Timestamp > ago(7d)
 //List malicious emails that were not zapped successfully
 | where ActionType has "ZAP" and ActionResult == "Error"
-| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
+| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress
 //Get logon activity of recipients using RecipientEmailAddress and AccountUpn
 | join kind=inner IdentityLogonEvents on $left.RecipientEmailAddress == $right.AccountUpn
 | where Timestamp between ((ZapTime-24h) .. (ZapTime+24h))
 //Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
-| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
+| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn,
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
@@ -249,14 +250,14 @@ This query finds the 10 latest logons performed by email recipients within 30 mi
 //Define new table for malicious emails
 let MaliciousEmails=EmailEvents
 //List emails detected as malware, getting only pertinent columns
-| where ThreatTypes has "Malware" 
+| where ThreatTypes has "Malware"
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmails
 | join (
 //Merge malicious emails with logon events to find logons by recipients
 IdentityLogonEvents
 | project LogonTime = Timestamp, AccountName, DeviceName
-) on AccountName 
+) on AccountName
 //Check only logons within 30 minutes of receipt of an email
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
@@ -264,7 +265,7 @@ IdentityLogonEvents
 
 ### Review PowerShell activities after receipt of emails from known malicious sender
 
-Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads. If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.  
+Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads. If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.
 
 ```kusto
 //Define new table for emails from specific sender
@@ -280,7 +281,7 @@ DeviceProcessEvents
 //Add line below to check only events initiated by Outlook
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
 | project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
-) on AccountName 
+) on AccountName
 //Check only PowerShell activities within 30 minutes of receipt of an email
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```

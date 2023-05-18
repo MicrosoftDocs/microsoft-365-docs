@@ -1,18 +1,18 @@
 ---
 title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual 
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.collection: 
+- m365-security
+- tier1
+ms.subservice: m365bp
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---
@@ -61,7 +61,7 @@ When threats are detected by Microsoft Defender Antivirus, the following things 
 - Detections are listed in the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) on the **Protection history** page.  
 - If you've [secured your Windows 10 devices](../admin/setup/secure-win-10-pcs.md) and [enrolled them in Intune](/mem/intune/enrollment/windows-enrollment-methods), and your organization has 800 or fewer devices enrolled, you'll see threat detections and insights in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> on the **Threats and antivirus** page, which you can access from the **Microsoft Defender Antivirus** card on the **Home** page (or from the navigation pane by selecting **Health** > **Threats & antivirus**).
 
-    If your organization has more than 800 devices enrolled in Intune, you'll be prompted to view threat detections and insights from [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) instead of from the **Threats and antivirus** page.
+    If your organization has more than 800 devices enrolled in Intune, you'll be prompted to view threat detections and insights from Microsoft Intune instead of from the **Threats and antivirus** page.
  
     > [!NOTE]
     > The **Microsoft Defender Antivirus** card and **Threats and antivirus** page are being rolled out in phases, so you may not have immediate access to them.
@@ -84,4 +84,4 @@ To learn more about different threats, visit the <a href="https://www.microsoft.
 [How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
 [How to turn on Microsoft Defender Antivirus by using Group Policy](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (article)\
 [How to update your antivirus definitions](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (article)\
-[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (article)
+[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submissions-submit-files-to-microsoft) (article)

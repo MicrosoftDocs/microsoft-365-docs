@@ -2,19 +2,24 @@
 title: "Find your domain registrar"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,6 +30,8 @@ description: "Learn to find your domain registrar and DNS hosting provider using
 ---
 
 # Find your domain registrar
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
@@ -59,4 +66,3 @@ description: "Learn to find your domain registrar and DNS hosting provider using
 5. On the **Whois Search Results** page, locate the **Registrar** entry. This entry lists your DNS hosting provider, the DNS provider who owns the name server for your domain.
 
 ---
-

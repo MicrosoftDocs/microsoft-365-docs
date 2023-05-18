@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:

@@ -1,0 +1,102 @@
+### YamlMime:Hub
+
+title: Microsoft 365 for frontline workers # < 60 chars
+summary: Microsoft 365 for frontline workers provides simple, intuitive, and secure solutions you can deploy to support the frontline workers who are essential to your business. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 for frontline workers # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Deploy and manage simple, intuitive, and secure solutions for your essential frontline workers with Microsoft 365 for frontline workers. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-frontline #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  manager: pamgreen
+  audience: Admin
+  ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
+  ms.collection:
+    - m365-frontline
+    - highpri
+    - tier2
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: What is Microsoft 365 for frontline workers?
+      itemType: overview
+      url: flw-overview.md
+    # Card
+    - title: Choose your scenarios for Microsoft 365 for frontline workers
+      itemType: get-started
+      url: flw-choose-scenarios.md
+    # Card
+    - title: Technical planning guide for deploying frontline solutions
+      itemType: whats-new
+      url: flw-technical-planning-guide-deployment.md
+
+# productDirectory section (optional)
+productDirectory:
+  items:
+    # Card
+    - title: Solutions to transform your business
+      imageSrc: /office/media/icons/lightbulb-idea-capture-blue.svg
+      links:
+        - url: flw-team-collaboration.md
+          text: Communication
+        - url: flw-wellbeing-engagement.md
+          text: Wellbeing & engagement
+        - url: flw-onboarding-training.md
+          text: Training & onboarding
+        - url: shifts-for-teams-landing-page.md
+          text: Schedule management
+        - url: simplify-business-processes.md
+          text: Digitized processes
+        - url: virtual-appointments.md
+          text: Virtual Appointments
+    # Card
+    - title: Solutions for your industry
+      imageSrc: /office/media/icons/walkthrough-map-blue.svg
+      links:
+        - url: teams-in-hc.md
+          text: Healthcare
+        - url: teams-for-retail-landing-page.md
+          text: Retail
+        - url: teams-for-financial-services.md
+          text: Financial services
+        - url: teams-for-manufacturing.md
+          text: Manufacturing
+    # Card
+    - title: Manage apps
+      imageSrc: /office/media/icons/blocks-blue.svg
+      links:
+        - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Approvals
+        - url: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Bookings
+        - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Shifts
+        - url: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Tasks
+        - url: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Updates
+        - url: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: More >
+    # Card
+    - title: Set up and configure Microsoft 365 for frontline workers
+      imageSrc: /office/media/icons/settings.svg
+      summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
+      url: flw-deploy-overview.md
+    # Card
+    - title: Adoption resources
+      imageSrc: /office/media/icons/users-group.svg
+      summary: Go from inspiration to execution with these adoption resources.
+      url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
+    # Card
+    - title: End user training
+      imageSrc: /office/media/icons/video-play.svg
+      summary: Get your frontline workforce up and running quickly with these training videos.
+      url: https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7#bkmk_flwscenarios

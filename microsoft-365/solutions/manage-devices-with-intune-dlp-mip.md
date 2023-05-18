@@ -7,17 +7,20 @@ f1.keywords:
 - data loss prevention
 - dlp policies
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - endpoint dlp
 - data loss prevention
 - dlp policies 
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 description: Implement Endpoint DLP by working with your information protection and governance team to create DLP policies for your organization.    

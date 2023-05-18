@@ -2,19 +2,24 @@
 title: "Change nameservers to set up Microsoft 365 with any domain registrar"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -29,6 +34,8 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 ---
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
+
+
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
@@ -177,7 +184,7 @@ In addition, you can create a CNAME record to help customers find your website.
 1. Select **Add record**.
 2. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **CNAME (Alias)**.
 3. In the **Host name or Alias** box, type **www**.
-4. In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.5om**.
+4. In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.com**.
 5. If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 6.
 6. Select **Save**.
 

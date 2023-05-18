@@ -3,7 +3,8 @@ title: Threat analytics in Microsoft 365 Defender
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
 - m365initiative-m365-defender 
-ms.topic: article
+- tier1
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+search.appverid: met150
+ms.date: 02/16/2021
 ---
 
 # Threat analytics in Microsoft 365 Defender
@@ -41,7 +45,7 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
 You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 
@@ -186,7 +190,7 @@ In the **Exposure & mitigations** section, review the list of specific actionabl
   - Potentially unwanted application (PUA) protection
   - Real-time protection
 
-Mitigation information in this section incorporates data from [threat and vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
+Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="The mitigations section of a threat analytics report showing secure configuration details" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -238,7 +242,7 @@ To set up email notifications for threat analytics reports, perform the followin
 ## Additional report details and limitations
 
 > [!NOTE]
-> As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office E5 license holders.
+> As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office 365 license holders.
 >
 > If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint).
 
@@ -246,7 +250,7 @@ To access threat analytics reports, you need certain roles and permissions. See 
 
 - To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
 - To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data.
-- To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
+- To view mitigations, you need to have permissions to Defender Vulnerability Management data in Microsoft Defender for Endpoint.
 
 When looking at the threat analytics data, remember the following factors:
 

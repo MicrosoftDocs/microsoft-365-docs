@@ -7,7 +7,8 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.collection: M365-security-compliance
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Configure Defender for Identity detection exclusions in Microsoft 365 Defender
@@ -26,8 +27,8 @@ This article explains how to configure [Microsoft Defender for Identity](/defend
 
 For example, a **DNS Reconnaissance** alert could be triggered by a security scanner that uses DNS as a scanning mechanism. Creating an exclusion helps Defender for Identity ignore such scanners and reduce false positives.
 
->[!NOTE]
->Of the most common domains with [Suspicious communication over DNS](/defender-for-identity/exfiltration-alerts#suspicious-communication-over-dns-external-id-2031) alerts opened on them, we observed the domains that customers most excluded from the alert. These domains are added to the exclusions list by default, but you have the option to easily remove them.
+> [!NOTE]
+> Of the most common domains with [Suspicious communication over DNS](/defender-for-identity/exfiltration-alerts#suspicious-communication-over-dns-external-id-2031) alerts opened on them, we observed the domains that customers most excluded from the alert. These domains are added to the exclusions list by default, but you have the option to easily remove them.
 
 ## How to add detection exclusions
 

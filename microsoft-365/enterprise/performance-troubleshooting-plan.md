@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 5/10/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -19,6 +19,7 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 description: This article can help you troubleshoot Office 365 performance issues and even fix some of the most common issues.

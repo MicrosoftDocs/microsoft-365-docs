@@ -3,7 +3,8 @@ title: Pilot Microsoft Defender for Identity
 description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Pilot Microsoft Defender for Identity
-
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -38,7 +40,7 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 The following table describes the steps in the illustration.
 
 - [Step 1: Configure benchmark recommendations for your identity environment](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
-- [Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types ](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
+- [Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
 
 ## Step 1. Configure benchmark recommendations for your identity environment
 
@@ -51,6 +53,7 @@ These benchmark recommendations include [Azure security baseline for Microsoft D
 The Microsoft Defender for Identity documentation includes a series of tutorials that walk through the process of identifying and remediating various attack types.
 
 Try out Defender for Identity tutorials:
+
 - [Reconnaissance alerts](/defender-for-identity/reconnaissance-alerts)
 - [Compromised credential alerts](/defender-for-identity/compromised-credentials-alerts)
 - [Lateral movement alerts](/defender-for-identity/lateral-movement-alerts)

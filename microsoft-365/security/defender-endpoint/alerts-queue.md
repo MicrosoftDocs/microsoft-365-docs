@@ -2,7 +2,7 @@
 title: View and organize the Microsoft Defender for Endpoint Alerts queue
 description: Learn about how the Microsoft Defender for Endpoint alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.date: 03/27/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
@@ -58,7 +61,7 @@ Informational <br> (Grey)|Alerts that might not be considered harmful to the net
 
 #### Understanding alert severity
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.
+Microsoft Defender Antivirus and Defender for Endpoint alert severities are different because they represent different scopes.
 
 The Microsoft Defender Antivirus threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual device, if infected.
 
@@ -67,7 +70,7 @@ The Defender for Endpoint alert severity represents the severity of the detected
 So, for example:
 
 - The severity of a Defender for Endpoint alert about a Microsoft Defender Antivirus detected threat that was prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
-- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
+- An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender Antivirus, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 - An alert about malware detected while executing which can pose a threat not only to the individual device but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 - Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 
@@ -75,15 +78,16 @@ So, for example:
 
 You can choose to filter the list of alerts based on their Status.
 
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
+
 ### Categories
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
 ### Service sources
 
-Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
-
-Filter the alerts based on the following Service sources:
+You can filter the alerts based on the following Service sources:
 
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
@@ -92,6 +96,8 @@ Filter the alerts based on the following Service sources:
 - Microsoft Defender for Office 365
 - App Governance
 - AAD Identity Protection
+
+Microsoft Endpoint Notification customers can now filter and see detections from the service by filtering by _Microsoft Defender Experts_ nested under the _Microsoft Defender for Endpoint_ service source.
 
 > [!NOTE]
 > The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
@@ -114,7 +120,7 @@ You can filter the alerts based on the following policies:
 |EDR|WindowsDefenderAtp|
 |Microsoft 365 Defender|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
-|Microsoft Threat Experts|ThreatExperts|
+|Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 
 ### Entities

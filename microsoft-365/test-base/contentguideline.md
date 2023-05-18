@@ -3,16 +3,16 @@ title: 'Test package guidelines'
 description: Review the guidelines around test package
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 02/04/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 # Test package guidelines
@@ -88,7 +88,11 @@ Validation is necessary to properly diagnose where errors occur during a test ru
 
 > [!IMPORTANT]
 > **Avoid the following:**
-> Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.
+> Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.  
+> [!IMPORTANT]
+> The maximum disc space available is 127 Gb. Packages that consume more than this amount of space will not be executed.  
+> [!IMPORTANT]
+> Packages that interact with the Windows UI must have the Autologon Credentials enabled to execute properly.
 
 ## 3. Log collection
 

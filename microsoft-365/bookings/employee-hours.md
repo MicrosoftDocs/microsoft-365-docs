@@ -3,10 +3,14 @@ title: "Employee working hours - Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/24/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: 
+- Tier1
+- scotvorg
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: "Set employee working hours and availability in Microsoft Bookings."
 ---

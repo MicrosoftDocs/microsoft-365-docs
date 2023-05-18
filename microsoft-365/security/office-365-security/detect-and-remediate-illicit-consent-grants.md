@@ -1,25 +1,24 @@
 ---
 title: Detect and Remediate Illicit Consent Grants
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
-  - o365_security_incident_response
-  - M365-security-compliance
-
+- tier2
+- m365-security
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Illicit Consent Grants
 
@@ -56,7 +55,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 3. Click the **Activity** column to sort the results and look for **Consent to application**.
 
-4. Select an entry from the list to see the details of the activity. Check to see if IsAdminContent is set to True.
+4. Select an entry from the list to see the details of the activity. Check to see if IsAdminConsent is set to True.
 
 > [!NOTE]
 >
@@ -125,7 +124,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 
 1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
 
-2. In the Permission column (column F) review the permissions that each delegated application has to content. Look for "Read" and "Write" permission or "*.All" permission, and review these carefully because they may not be appropriate.
+2. In the Permission column (column F) review the permissions that each delegated application has to content. Look for "Read" and "Write" permission or "All" permission, and review these carefully because they may not be appropriate.
 
 3. Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
 
@@ -155,14 +154,6 @@ After you have identified an application with illicit permissions, you have seve
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 
 - You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](../../admin/misc/user-consent.md).
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also
 

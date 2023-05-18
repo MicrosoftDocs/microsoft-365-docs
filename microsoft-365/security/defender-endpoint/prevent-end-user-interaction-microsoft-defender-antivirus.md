@@ -2,7 +2,7 @@
 title: Hide the Microsoft Defender Antivirus interface
 description: You can hide virus and threat protection tile in the Windows Security app.
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface
@@ -52,7 +55,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="The warning message when headless mode is enabled in Windows 10, versions earlier than 1703" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## Use Group Policy to hide the Microsoft Defender AV interface from users
+## Use Group Policy to hide the Microsoft Defender Antivirus interface from users
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 

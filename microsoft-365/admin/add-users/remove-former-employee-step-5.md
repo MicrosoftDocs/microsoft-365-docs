@@ -5,11 +5,14 @@ f1.keywords:
 ms.author: kwekua
 author: kwekua
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -49,6 +52,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 > [!NOTE]
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
 > When you move or copy documents that have version history, only the latest version is moved.  
+> Administrative options for an active user under the OneDrive tab in the Microsoft 365 admin center are currently not supported for multi-geo tenants. 
 
 You can also grant access to another user to access a former employee's OneDrive.
 

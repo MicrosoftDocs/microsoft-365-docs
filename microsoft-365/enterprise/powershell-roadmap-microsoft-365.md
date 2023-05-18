@@ -8,9 +8,11 @@ manager: scotv
 ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: The roadmap to use PowerShell for Microsoft 365.
 ---

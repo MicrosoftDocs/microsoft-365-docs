@@ -2,19 +2,23 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
-
 - Adm_O365_Setup
 ms.custom: 
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -28,6 +32,8 @@ description: "Gather the values/information you need to create DNS records to co
 ---
 
 # Gather the information you need to create DNS records
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -45,7 +51,7 @@ description: "Gather the values/information you need to create DNS records to co
 
 ::: moniker-end
     
-2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
+2. On the **Domains** page, select your domain, then select **Continue setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
 3. On the **Domain Verification** page, select **Add a TXT record to the domain's DNS records**, then select **Continue**.
     

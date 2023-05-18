@@ -1,30 +1,30 @@
 ---
 title: Delete items in the Recoverable Items folder
+description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 ---
 
 # Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The Recoverable Items folder for an Exchange Online mailbox exists to protect from accidental or malicious deletions. It's also used to store items that are retained and accessed by compliance features, such as holds and eDiscovery searches. However, in some situations organizations might have data that's been unintentionally retained in the Recoverable Items folder that they must delete. For example, a user might unknowingly send or forward an email message that contains sensitive information or information that may have serious business consequences. Even if the message is permanently deleted, it might be retained indefinitely because a legal hold has been placed on the mailbox. This scenario is known as *data spillage* because data has been unintentionally *spilled* into Office 365. In these situations, you can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on hold with one of the different hold features in Office 365. These types of holds include Litigation Holds, In-Place Holds, eDiscovery holds, and retention policies created in the security and compliance center in Office 365 or Microsoft 365.
 
@@ -45,9 +45,11 @@ This article explains how admins can delete items from the Recoverable Items fol
 > [!CAUTION]
 > The procedures outlined in this article will result in data being permanently deleted (purged) from an Exchange Online mailbox. That means messages that you delete from the Recoverable Items folder can't be recovered and won't be available for legal discovery or other compliance purposes. If you want to delete messages from a mailbox that's placed on hold as part of a Litigation Hold, In-Place Hold, eDiscovery hold, or retention policy created in the Microsoft Purview compliance portal, check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you delete items
 
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./ediscovery-assign-permissions.md).
 
 - If a mailbox is assigned to an organization-wide retention policy, you have to exclude the mailbox from the policy before you can delete items from the Recoverable Items folder. It may take up to 24 hours to synchronize the policy change, and remove the mailbox from the policy. For more information, see "Organization-wide retention policies" in the [Remove all holds from the mailbox](#organization-wide-retention-policies) section in this article.
 
@@ -175,7 +177,7 @@ Perform the following steps in Exchange Online PowerShell.
 
 ## Step 3: Remove all holds from the mailbox
 
-The last step before you can delete items from the Recoverable Items folder is to remove all holds (that you identified in Step 1) placed on the mailbox. All holds must be removed so that items won't be retained after you delete them from the Recoverable Items folder. The following sections contain information about removing different types of holds on a mailbox. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox. For more information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
+The last step before you can delete items from the Recoverable Items folder is to remove all holds (that you identified in Step 1) placed on the mailbox. All holds must be removed so that items won't be retained after you delete them from the Recoverable Items folder. The following sections contain information about removing different types of holds on a mailbox. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox. For more information, see [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > As previously stated, check with your records management or legal departments before removing a hold from a mailbox.
@@ -209,7 +211,7 @@ Run the following command in [Security & Compliance PowerShell](/powershell/exch
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the retention policy, go to the **Data lifecycle management** > **Retention** page in the compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
+After you identify the retention policy, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
   
 ### Organization-wide retention policies
   
@@ -219,7 +221,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
 
 > [!IMPORTANT]
 > After you exclude a mailbox from an organization-wide retention policy, it may take up to 24 hours to synchronize this change and remove the mailbox from the policy.
@@ -238,7 +240,7 @@ After you've identified that a mailbox is on hold because a retention label is a
 
 - The "Using Content Search to find all content with a specific retention label" section in [Learn about retention policies and retention labels](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 
-- The "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+- The "Search conditions" section in [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
 For more information about labels, see [Learn about retention policies and retention labels](retention.md).
 
@@ -258,11 +260,11 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance center, open the case, and remove the mailbox from the hold. For more information about identifying eDiscovery holds, see the "eDiscovery holds" section in [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
+After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance center, open the case, and remove the mailbox from the hold. For more information about identifying eDiscovery holds, see the "eDiscovery holds" section in [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## Step 4: Remove the delay hold from the mailbox
 
-After any type of hold is removed from a mailbox, the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* mailbox property is set to **True**. This occurs the next time the Managed Folder Assistant processes the mailbox and detects that a hold has been removed. This is called a *delay hold* and means the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted from the mailbox. (The purpose of a delay hold is to give admins an opportunity to search for or recover mailbox items that will be purged after a hold is removed.)  When a delay hold is placed on the mailbox, the mailbox is still considered to be on hold for an unlimited duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the *DelayHoldApplied* or *DelayReleaseHoldApplied* property to **False**) so that the hold is removed. For more information about a delay hold, see the "Managing mailboxes on delay hold" section in [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+After any type of hold is removed from a mailbox, the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* mailbox property is set to **True**. This occurs the next time the Managed Folder Assistant processes the mailbox and detects that a hold has been removed. This is called a *delay hold* and means the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted from the mailbox. (The purpose of a delay hold is to give admins an opportunity to search for or recover mailbox items that will be purged after a hold is removed.)  When a delay hold is placed on the mailbox, the mailbox is still considered to be on hold for an unlimited duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the *DelayHoldApplied* or *DelayReleaseHoldApplied* property to **False**) so that the hold is removed. For more information about a delay hold, see the "Managing mailboxes on delay hold" section in [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 If the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* property is set to **True**, run one of the following commands to remove the delay hold:
 
@@ -394,11 +396,11 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     **Retention policies applied to specific mailboxes**
 
-    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
+    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
     **Organization-wide retention policies**
 
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
 
     **eDiscovery case holds**
 
@@ -422,7 +424,7 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
 ## More information
 
-Here's a table that describes how to identify different types of holds based on the values in the  *InPlaceHolds*  property when you run the **Get-Mailbox** or **Get-OrganizationConfig** cmdlets. For more detailed information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
+Here's a table that describes how to identify different types of holds based on the values in the  *InPlaceHolds*  property when you run the **Get-Mailbox** or **Get-OrganizationConfig** cmdlets. For more detailed information, see [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md).
 
 As previously explained, you have to remove all holds and retention policies from a mailbox before you can successfully delete items in the Recoverable Items folder.
   

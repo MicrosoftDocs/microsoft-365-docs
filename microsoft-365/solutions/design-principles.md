@@ -6,13 +6,15 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
+ms.date: 09/22/2022
 ---
 
 # Microsoft 365 Enterprise architecture design principles

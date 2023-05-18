@@ -3,7 +3,8 @@ title: Microsoft 365 Defender advanced hunting API
 description: Learn how to run advanced hunting queries using Microsoft 365 Defender's advanced hunting API
 keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +15,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
+ms.date: 02/08/2023
 ---
 
 # Microsoft 365 Defender Advanced hunting API
@@ -30,6 +33,9 @@ ms.custom: api
 **Applies to:**
 
 - Microsoft 365 Defender
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true). 
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -59,10 +65,10 @@ Permission type | Permission | Permission display name
 Application | AdvancedHunting.Read.All| Run advanced queries
 Delegated (work or school account) | AdvancedHunting.Read | Run advanced queries
 
->[!Note]
+> [!NOTE]
 > When obtaining a token using user credentials:
 >
->- The user needs to have the 'View Data' AD role
+>- The user needs to have the 'View Data' role.
 >- The user needs to have access to the device, based on device group settings.
 
 ## HTTP request
@@ -174,6 +180,8 @@ In the following example, a user sends the query below and receives an API respo
 ```
 
 ## Related articles
+
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
