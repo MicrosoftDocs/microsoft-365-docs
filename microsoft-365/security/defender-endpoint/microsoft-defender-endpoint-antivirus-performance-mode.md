@@ -113,10 +113,6 @@ Depending on configuration settings, you may use the Window Security App to view
 
 The following tables describe how (and if) the UI displays status for Performance mode, depending on configuration settings at device level.
 
-### Performance mode scenarios
-
-The following tables describe how (and if) the UI displays status for Performance mode, depending on configuration settings at device level.
-
 | Link to scenario image | Microsoft Defender Antivirus = enabled (On) <br> performance mode = | Result |
 |:---|:---|:---|
 | [Scenario 1](#scenario-1) | performance mode = On. | Windows Security app: Surface the states of performance mode as _enabled_. |
