@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 5/17/2023
 ---
 
 # Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal
@@ -51,7 +51,7 @@ A **role** grants the permissions to do a set of tasks.
 
 A **role group** is a set of roles that lets people do their jobs in the Microsoft 365 Defender portal.
 
-Defender for Office 365 permissions in the Microsoft 365 Defender portal includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
+Defender for Office 365 permissions in the Microsoft 365 Defender portal includes default role groups for the most common tasks and functions that you need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
 
 :::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="The relationship of a role group to its roles and members" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
@@ -67,7 +67,7 @@ The following types of roles and role groups are available in on the **Permissio
 
 ### Azure AD roles in the Microsoft 365 Defender portal
 
-When you open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration roles** \> **Permissions & roles** \> **Azure AD roles** \> **Roles** (or directly to <https://security.microsoft.com/aadpermissions>) you'll see the Azure AD roles that are described in this section.
+When you open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Permissions** \> **Azure AD** \> **Roles** (or directly to <https://security.microsoft.com/aadpermissions>) you see the Azure AD roles that are described in this section.
 
 When you select a role, a details flyout that contains the description of the role and the user assignments appears. But to manage those assignments, you need to click **Manage members in Azure AD** in the details flyout.
 
@@ -89,13 +89,16 @@ For more information, see [View and assign administrator roles in Azure Active D
 
 ### Email & collaboration roles in the Microsoft 365 Defender portal
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Email & collaboration roles** \> **Permissions & roles** page \> **Email & collaboration roles** \> **Roles** (or directly at <https://security.microsoft.com/emailandcollabpermissions>) you'll see the same role groups that are available in the Microsoft Purview compliance portal at <https://compliance.microsoft.com> \> **Permissions** page \> **Microsoft Purview solutions** \> **Roles** (or directly at <https://compliance.microsoft.com/compliancecenterpermissions>).
+The same role groups and roles are available in the Microsoft 365 Defender portal and in the Microsoft Purview compliance portal:
+
+- [Defender portal](https://security.microsoft.com): **Permissions** \> **Email & collaboration roles** \> **Roles** or directly at <https://security.microsoft.com/emailandcollabpermissions>
+- [Purview compliance portal](https://compliance.microsoft.com): **Roles & Scopes** \> **Permissions** \> **Microsoft Purview solutions** \> **Roles** or directly at <https://compliance.microsoft.com/compliancecenterpermissions>
 
 For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](scc-permissions.md)
 
 #### Modify Email & collaboration role membership in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration roles** \> **Permissions & roles** \> **Email & collaboration roles** \> **Roles**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
 
 2. On the **Permissions** page, select the role group that you want to modify from the list. You can click on the **Name** column header to sort the list by name, or you can click **Search** ![Search icon.](../../media/m365-cc-sc-search-icon.png) to find the role group.
 
