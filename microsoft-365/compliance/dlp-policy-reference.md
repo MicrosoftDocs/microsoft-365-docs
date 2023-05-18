@@ -413,41 +413,43 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
+- User's risk level for Adaptice Protection is
+- Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
 - Sender IP address is
-- Has sender overridden the policy tip
-- Sender is
-- Sender domain is
-- Sender address contains words
-- Sender address contains patterns
+- Header contains words or phrases
 - Sender AD Attribute contains words or phrases
+- Content character set contains words
+- Header matches patterns
 - Sender AD Attribute matches patterns
-- Sender is a member of
-- Any email attachment's content couldn't be scanned
-- Any email attachment's content didn't complete scanning
-- Attachment is password protected
-- File extension is
-- Recipient is member of
-- Recipient domain is
-- Recipient is
-- Recipient address contains words
-- Recipient address matches patterns
 - Recipient AD Attribute contains words or phrases
 - Recipient AD Attribute matches patterns
+- Recipient is member of
+- Document property is
+- Any email attachment's content could not be scanned
+- Document or attachment is password protected
+- Has sender overridden the policy tip
+- Sender is a member of
+- Any email attachment's content didn't complete scanning
+- Recipient address contains words
+- File extension is
+- Recipient domain is
+- Recipient is
+- Sender is
+- Sender domain is
+- Recipient address matches patterns
 - Document name contains words or phrases
 - Document name matches patterns
-- Document property is
+- Subject contains words or phrases
+- Subject matches patterns
+- Subject or body contains words or phrases
+- Subject or body matches patterns
+- Sender address contains words
+- Sender address matches patterns
 - Document size equals or is greater than
 - Document content contains words or phrases
 - Document content matches patterns
-- Subject contains words or phrases
-- Subject matches patterns
-- Subject or Body contains words or phrases
-- Subject or body matches patterns
-- Content character set contains words
-- Header contains words or phrases
-- Header matches patterns
 - Message size equals or is greater than
 - Message type is
 - Message importance is
@@ -456,44 +458,45 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - Content is shared from Microsoft 365
-- Document created by
-- Document created by member of (currently deprecated for customers not already using this condition) 
-- Document name contains words or phrases
-- Document size equals or is greater than
-- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
+- Document name contains words or phrases
+- Document size equals or is greater than
+- Document created by
+- Document created by member of  
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Document created by
-- Document created by member of (currently deprecated for customers not already using this condition) 
-- Document name contains words or phrases
-- Document size equals or is greater than
-- Document name matches patterns (currently deprecated for customers not already using this condition)
 - Document property is
 - File extension is
+- Document name contains words or phrases
+- Document size equals or is greater than
+- Document created by
+- Document created by member of 
 - Document is shared
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
+- Users risk level for Adaptive Protection is
 - Content is shared from Microsoft 365
+- Recipient domain is
+-Recipient is
 - Sender is
 - Sender domain is
-- Recipient domain is
-- Recipient is
 
 ##### Conditions Devices supports
 
 - Content contains
-- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This predicate detects only open protected files.
-- Content isn't labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- (preview) The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-- File extension is
+- User's risk level for Adaptive Protection is
+- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
+- File extension is
+- The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
@@ -577,28 +580,6 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Document contains words | EXO | Individual word length <= 128; Count <= 600  |  Medium|
 |Document matches patterns| EXO| Regex length <= 128 char; Count <= 300  | Medium|
 
-
-<!--### Exceptions
-
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in Classic rule builder mode. When you toggle the UI to the **New DLP rule builder**, which enabled nested groups and the boolean operators AND, OR, and, NOT, exceptions are displayed as a nested group under conditions and joined to the conditions with a boolean NOT. To learn more on how to use the **New DLP rule builder** to create exceptions see, [Complex rule design](dlp-policy-design.md#complex-rule-design)
-
-In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
-
-For example, keeping with the HIPPA policy, we could modify the rule to exclude any item that contains a Belgium drivers license number, like this:
-
-![HIPPA policy with exclusions](../media/dlp-rule-exceptions.png)
-
-The exceptions conditions that are supported by location are identical to all the inclusion conditions with the only difference being the prepending of "Except if" to each supported condition. If a rule contains only exceptions, it will apply to all emails or files that do not meet the exclusion criteria.
-
-Just as all locations support the inclusive condition:
-
-- Content contains
-
-the exception would be:
-
-- **Except if** content contains-->
-
 ### Actions
 
 Any item that makes it through the ***conditions*** <!--and exclusive ***exceptions***--> filter will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
@@ -627,8 +608,9 @@ The actions that are available in a rule are dependent on the locations that hav
 - Add the sender's manager as recipient
 - Removed O365 Message Encryption and rights protection
 - Prepend Email Subject
-- Modify Email Subject
 - Add HTML Disclaimer
+- Modify Email Subject
+- Deliver the message to the hosted quarantine
 
 #### SharePoint sites location actions
 
@@ -644,9 +626,8 @@ The actions that are available in a rule are dependent on the locations that hav
 
 #### Devices actions
 
-<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- Restrict access or encrypt the content in Microsoft 365 locations.
-- Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+- Restrict access or encrypt the content in Microsoft 365 locations
+- Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices (See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.)
 - Audit or restrict activities on devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
