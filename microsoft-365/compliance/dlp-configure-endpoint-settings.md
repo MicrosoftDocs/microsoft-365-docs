@@ -347,7 +347,7 @@ When you list a website in **Sensitive service domains**, you can `audit`, `bloc
 - copy data from a website
 - save a website as local files
 - upload or drag/drop a sensitive file to an excluded website
-- paste sensitive data to an excluded website
+- (in preview) paste sensitive data to an excluded website
 
 For the print, copy data, and save actions, each website must be listed in a website group.
 
@@ -371,7 +371,7 @@ When it comes to pasting sensitive data to an excluded website, make sure you ha
 - Win 11 22H2 - [KB5023778](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
 
 > [!IMPORTANT]
-> **Known Issue:** Once **PasteToBrowser** is enabled and deployed in a policy, all onboarded devices will see a briefcase icon in the address bar in Microsoft Edge when browsing to any site. This is not an indicator that a **PasteToBrowser** policy is being applied or enforced on that specific device.
+> **Known Issue:** Once **PasteToBrowser** (preview) is enabled and deployed in a policy, all onboarded devices will see a briefcase icon in the address bar in Microsoft Edge when browsing to any site. This is not an indicator that a **PasteToBrowser** policy is being applied or enforced on that specific device.
 
 For more information, see [Scenario 7: Restrict pasting sensitive content into a browser](endpoint-dlp-using.md#scenario-7-restrict-pasting-sensitive-content-into-a-browser-preview).
 
