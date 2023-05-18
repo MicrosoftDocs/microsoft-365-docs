@@ -131,7 +131,7 @@ Here's the descriptions of the pre-collection estimate management options.
 
     - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
 
-        - Include Microsoft Teams and Yammer conversations
+        - Include Microsoft Teams and Viva Engage conversations
         - Include cloud attachments
         - Include all existing versions of Microsoft 365 documents on SharePoint
         - Include subfolder contents (insider subfolders of a matched folder)
@@ -141,7 +141,7 @@ Here's the descriptions of the pre-collection estimate management options.
 
     - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
 
-        - Include Microsoft Teams and Yammer conversations
+        - Include Microsoft Teams and Viva Engage conversations
         - Include cloud attachments
         - Include all existing versions of Microsoft 365 documents on SharePoint
         - Include subfolder contents (inside subfolders of a matched folder)

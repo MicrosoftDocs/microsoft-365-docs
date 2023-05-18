@@ -54,7 +54,7 @@ Unintentional sharing of sensitive items can cause financial harm to your organi
 
 ### Manage your data lifecycle
 
-[Microsoft Purview Data Lifecycle Management](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (formerly Microsoft Information Governance) provides you with tools and capabilities to retain and delete content across Exchange, SharePoint, OneDrive, Microsoft 365 Groups, Teams, and Yammer. Retaining and deleting emails, documents, and messages are often needed for compliance and regulatory requirements. However, deleting content that no longer has business value also reduces your attack surface.
+[Microsoft Purview Data Lifecycle Management](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (formerly Microsoft Information Governance) provides you with tools and capabilities to retain and delete content across Exchange, SharePoint, OneDrive, Microsoft 365 Groups, Teams, and Viva Engage. Retaining and deleting emails, documents, and messages are often needed for compliance and regulatory requirements. However, deleting content that no longer has business value also reduces your attack surface.
 
 For more information, see [Learn about data lifecycle management](/microsoft-365/compliance/data-lifecycle-management).
 
@@ -101,7 +101,7 @@ For more information about auditing solutions, see [Audit (Premium)](/microsoft-
 
 ### Identify and manage data for legal cases with eDiscovery (Premium) or eDiscovery (Standard)
 
-Electronic discovery, or eDiscovery, is the process of identifying, collecting, and auditing electronic information for legal, regulatory, or business reasons. You can use [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery) to search for data and content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results for analysis and review.
+Electronic discovery, or eDiscovery, is the process of identifying, collecting, and auditing electronic information for legal, regulatory, or business reasons. You can use [Microsoft Purview eDiscovery solutions](/microsoft-365/compliance/ediscovery) to search for data and content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Viva Engage teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results for analysis and review.
 
 For more information about eDiscovery solutions, see [eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) and [eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery).
 

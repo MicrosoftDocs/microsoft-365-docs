@@ -47,7 +47,7 @@ To keep what you need and delete what you don't:
  
 |Capability|What problems does it solve?|
 |:------|:------------|:----------------|
-|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages. |
+|[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Lets you retain or delete content with policy management for email, documents, Teams and Viva Engage messages. |
 |[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
 |[Archive mailboxes](archive-mailboxes.md)| Provides additional mailbox storage space for users.|
 |[Import service for PST files](importing-pst-files-to-office-365.md)| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements. |

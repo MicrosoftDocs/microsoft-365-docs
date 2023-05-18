@@ -76,11 +76,11 @@ Use the following group management configurations to bring individual user chats
 
 Mailboxes hosted on Microsoft Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message analysis. Exchange email messages and attachments matching communication compliance policy conditions may take approximately 24 hours to process. Supported attachment types for communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-## Yammer
+## Viva Engage
 
-Private messages and public conversations and associated attachments in Microsoft Yammer communities can also be analyzed. When users are added to a communication compliance policy that includes Yammer as a defined channel, communications across all Yammer communities that a user is a member of are included in the analysis. Yammer chats and attachments matching communication compliance policy conditions may take up to 24 hours to process. 
+Private messages and public conversations and associated attachments in Microsoft Viva Engage communities can also be analyzed. When users are added to a communication compliance policy that includes Viva Engage as a defined channel, communications across all Viva Engage communities that a user is a member of are included in the analysis. Viva Engage chats and attachments matching communication compliance policy conditions may take up to 24 hours to process. 
 
-Yammer must be configured in [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode) for communication compliance policies to detect Yammer communications and attachments. In Native Mode, all Yammer users are in Azure Active Directory, all groups are Office 365 Groups, and all files are stored in SharePoint Online.
+Viva Engage must be configured in [Native Mode](/viva/engage/configure-your-viva-engage-network/overview-native-mode) for communication compliance policies to detect Viva Engage communications and attachments. In Native Mode, all Viva Engage users are in Azure Active Directory, all groups are Office 365 Groups, and all files are stored in SharePoint Online.
 
 ## Third-party sources
 

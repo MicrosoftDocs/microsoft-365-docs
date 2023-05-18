@@ -52,7 +52,7 @@ Within this 10,000 policies limit, there are also some limits on the maximum num
 > [!NOTE]
 > These maximum numbers for Exchange and SharePoint are not exclusive to retention but are shared with other types of hold policies that include eDiscovery holds and In-Place Holds.
 
-Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer.
+Although retention policies for Microsoft Teams and Viva Engage use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Viva Engage.
 
 ## Maximum number of items per policy
 
@@ -69,8 +69,8 @@ Maximum numbers of items per policy for retention for static scopes:
 - Microsoft 365 Groups: 1,000
 - Teams channel messages: 1,000
 - Teams chats: 1,000
-- Yammer community messages: 1,000
-- Yammer user messages: 1,000
+- Viva Engage community messages: 1,000
+- Viva Engage user messages: 1,000
 - SharePoint sites: 100
 - OneDrive accounts: 100
 

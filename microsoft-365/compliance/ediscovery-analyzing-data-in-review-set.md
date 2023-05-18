@@ -64,12 +64,12 @@ The following list describes the result of the filter query in terms of what con
 - **Email**. Displays items that are marked as **Inclusive** or **InclusiveMinus**. An inclusive item is the final message in an email thread. It contains all previous content in the email thread. An inclusive minus it contains one or more attachments associated with the specific message in the email thread. A reviewer can use the inclusive minus value to determine which specific messages in the email thread have associated attachments.
 - **Attachments**. Filters out duplicate attachments in the same Email Set. Only attachments that are unique in an email thread are displayed.
 - **Documents and other**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
-- **Teams conversations**. All Teams (and Yammer) conversations in the review set are displayed.
+- **Teams conversations**. All Teams (and Viva Engage) conversations in the review set are displayed.
 
 For more information about inclusive types and document uniqueness, see [Email threading in eDiscovery (Premium)](ediscovery-email-threading.md).
 
 > [!NOTE]
-> During the public preview of [the new case format](ediscovery-new-case-format.md) in eDiscovery (Premium), the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
+> During the public preview of [the new case format](ediscovery-new-case-format.md) in eDiscovery (Premium), the **For Review** filter query did not return Teams or Viva Engage conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Viva Engage conversations are included.
 
 ## Analytics report
 

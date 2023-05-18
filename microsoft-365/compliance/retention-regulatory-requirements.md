@@ -43,9 +43,9 @@ This report helps you understand how the system aspects of the New Zealand Publi
 
 ## SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
 
-**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer** - [Download assessment](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b)
+**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Viva Engage** - [Download assessment](https://servicetrust.microsoft.com/DocumentPage/f028b699-8e39-451e-8af4-e8a66426068b)
 
-Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Yammer
+Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Viva Engage
 
 Latest version released July 2022, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
 
