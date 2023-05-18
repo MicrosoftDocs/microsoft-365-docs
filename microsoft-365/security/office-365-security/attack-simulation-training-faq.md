@@ -94,7 +94,10 @@ To turn on audit log search, see [Turn audit log search on or off](../../complia
 
 ### Reporting issues with on-premises mailboxes
 
-Attack simulation training supports on-premises mailboxes, but with limited functionality. Specifically, reported email telemetry isn't available for on-premises accounts.
+Attack simulation training supports on-premises mailboxes, but with reduced functionality:
+
+- Reported simulation email information isn't available.
+- Simulation email delivery, simulation compromise, and training status information is available.
 
 ### Simulation reports are not updated immediately
 
