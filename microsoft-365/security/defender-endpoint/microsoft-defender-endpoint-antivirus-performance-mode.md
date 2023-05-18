@@ -39,25 +39,18 @@ ms.date: 05/04/2023
 
 - Windows 11
 
-## Prerequisites
-
-- Platform version of 4.18.2303.8 or higher
-- Microsoft Defender Antivirus signature version of 1.385.1455.0 or higher
-- Real-time protection active 
-
 ## What is performance mode
 
-Performance mode is now available in Windows 11 as a new Microsoft Defender Antivirus capability.
+Performance mode is now available on Windows 11 as a new Microsoft Defender Antivirus capability. This capability reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated _Dev Drive_. The goal of performance mode is to improve functional performance for developers who use Windows 11 devices. It’s important to note that performance mode can run only on Dev Drive, not on volumes that have operating systems; for example, `(C:)`. Also note that Real-time protection (“On”) is required for performance mode to function. Enabling this feature on a Dev Drive doesn’t change standard Real-time protection running on volumes having operating systems or other volumes formatted FAT32 or NTFS.
 
-Performance mode is a capability of Microsoft Defender Antivirus that reduces the performance impact of Microsoft Defender Antivirus scans for files stored on a designated "Dev Drive." The goal of performance mode is to improve functional performance for developers who use Windows 11 devices. It's important to note that performance mode can run only on Dev Drive, not on volumes that have operating systems; for example, `(C:)`. Also note that Real-time protection ("On") is required for performance mode to function. Enabling performance mode on a Dev Drive doesn't change _standard_ Real-time protection running on volumes having operating systems or other volumes formatted FAT32 or NTFS.
+### Dev Drive
 
-To best understand how performance mode works, it's essential to have a basic understanding of Dev Drive.
+Dev Drive is a new form of storage volume available to improve performance for key developer workloads.
+Dev Drive utilizes ReFS to employ targeted file system optimizations and provide more control over storage volume settings and security, including trust designation, antivirus configuration, and  provide more control to admins over what filters are attached.
 
-### Microsoft Dev Drive
+For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive)
 
-Dev Drive utilizes ReFS to employ targeted file system optimizations. ReFS also provides more control over storage volume settings and security, including trust designation, antivirus configuration, and other security filters. For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive)
-
-### Performance mode and trusted versus untrusted Dev Drives
+### Performance mode compared to real time protection
 
 The "_trusted_" or "_untrusted_" designations applied to Dev Drives help you make decisions about security. A _trusted_ Dev Drive means the developer using the volume has high confidence in the security of the content stored and doesn't require strong threat protection. Similar to when a developer chooses to [Add an exclusion to Windows Security](/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26), the developer takes on the responsibility for managing the security of the stored content to gain performance.
 
@@ -65,58 +58,75 @@ The "_trusted_" or "_untrusted_" designations applied to Dev Drives help you mak
 
 ### Performance mode compared to real-time protection
 
-By default, to give the best possible performance, creating a Dev Drive automatically grants trust in the new volume. A _trusted_ Dev Drive volume causes Real-time protection to run in a special _asynchronous_ “performance mode” for that volume. Running performance mode provides a balance between threat protection and performance. The balance is achieved by deferring security scans until after the file open operation has completed instead of performing the security scan synchronously while the file operation is being processed. This mode of performing security scans inherently provides faster performance, but with less protection. However, enabling performance mode provides significantly better protection than other _performance tuning methods_ such as using folder exclusions, which block security scans altogether. 
+By default, to give the best possible performance, creating a Dev Drive automatically grants trust in the new volume. A trusted Dev Drive volume causes real-time protection to run in a special asynchronous “performance mode” for that volume. Running performance mode provides a balance between threat protection and performance. The balance is achieved by deferring security scans until after the file open operation has completed instead of performing the security scan synchronously while the file operation is being processed. This mode of performing security scans inherently provides faster performance, but with less protection. However, enabling performance mode provides significantly better protection than other performance tuning methods such as using folder exclusions, which block security scans altogether.
 
 > [!NOTE]
 > To enable performance mode, Real-time protection must be "On".
 
 The following table summarizes performance mode synchronous and asynchronous scan behavior.
 
-| Performance mode - state | Scan type | Description | Summary |
+| Performance mode state | Scan type | Description | Summary |
 |:---|:---|:---|:---|
 |Not enabled (Off) | **Synchronous** | Opening a file or directory initiates a Real-time protection scan. | Open now, scan now. |
-|Enabled (On) | **Asynchronous** | File open operations are scanned asynchronously | Open now, scan later. |
+|Enabled (On) | **Asynchronous** | File open operations are scanned asynchronously. | Open now, scan later. |
 
 An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive. For example, security may run in synchronous, Real-time protection mode when a Dev Drive is _untrusted_.  Synchronous, Real-time protection scans may impact performance.
 
+## Microsoft Defender Antivirus requirements for performance mode
+
+- Antimalware platform version of 4.18.2303.8 (or above)
+- Antimalware signature version of 1.385.1455.0 (or above)
+- Real-time protection must be turned on
+
+For Dev Drive requirements, please consult [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
+
 ## Manage performance mode
 
-Performance mode is enabled by default when a new Dev Drive is created. Disabling it through management tools will be available in the foreseeable future.  
+Performance mode is enabled by default when a new Dev Drive is created. To enable users to control the balance between performance and security when protecting a Dev Drive, they can choose between these options:
+
 
 During public preview, users can choose between these options to protect Dev Drive: 
 
-- Performance mode (default mode) 
-- Real-time protection – a Dev Drive can switch back to real-time protection “untrusting” a Dev Drive volume
-- No security on a Dev Drive – detaching the filter manager from specified Dev Drive volumes. When filter manager is removed from a specific drive, the volume is not protected by either real-time protection or performance mode
+- Real-time protection
+- Performance mode (default)
+- No protection on the Dev Drive at all: no antivirus filter attached to Dev Drive. On this scenario, Dev Drive is not protected neither by Real-time protection nor performance mode.
 
-See: [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
+Dev Drives are automatically designated as trusted using a flag stored in the system registry during the original formatting time, providing the best possible performance by default. A trusted Dev Drive means that the developer using the volume has high confidence in the security of the content stored there.
+
+Similar to when a developer chooses to Add an exclusion to Windows Security, the developer takes on the responsibility for managing the security of the content stored in order to gain additional performance. A Dev Drive marked as trusted is a signal for Microsoft Defender Antivirus to run in performance mode. Running performance mode provides a balance between threat protection and performance. Real-time protection will still be enabled on all other storage volumes. An untrusted Dev Drive will not have the same privileges as a trusted Dev Drive. Security will run in real-time protection mode when a Dev Drive is untrusted. 
+
+> [NOTE!]
+> Performance mode will only run on a “trusted” Dev Drive.
 
 ## Viewing performance mode status
 
-Depending on configuration settings, you can use the Window Security App to view the state of Real-time protection and performance mode on Dev Drives.
+Depending on configuration settings, you may use the Window Security App to view the state of Real-time protection and Performance mode for the device under “Virus & threat protection” pillar.
 
-To view the state of Real-time protection, select **_Start_**, > type **Windows Security**, > **Virus & threat protection**.
+To view the state of Real-time protection and Performance mode: 
 
-:::image type="content" source="images/microsoft-defender-performance-mode-view-windows-security.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-performance-mode-view-windows-security.png":::
+1. Open the **Windows Security App** from: 
+  - The notification area of the taskbar
+  - The **Start** menu by searching for **Windows Security** 
+  :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-view-windows-security.png":::
+1. Navigate to the **Virus & threat protection** pillar >  **Manage Settings**.
+  :::image type="content" source="images/microsoft-defender-antivirus-performance-mode-manage-settings.png" alt-text="Shows a screen capture of the Windows Security UI with the Virus & threat protection navigation button." lightbox="images/microsoft-defender-antivirus-performance-mode-manage-settings.png":::
+
+> [!NOTE]
+> You may need to refresh the **Manage Settings** page to see the current status of performance mode if the status of performance mode changed while the page was open. You can do this by navigating to the page again following the instructions above.
 
 ## Performance mode scenarios
 
-The following tables describe how (and if) the UI displays status for performance mode, depending on Enterprise-level or consumer-level configuration settings:
-
-- Microsoft Defender Antivirus
-- Real-time protection
-- Dev Drive
-- Performance mode
+The following tables describe how (and if) the UI displays status for Performance mode, depending on configuration settings at device level.
 
 ### Enterprise scenario 1
 
 Microsoft Defender Antivirus is in the enabled state.
 
-| Image link | Microsoft Defender Antivirus = enabled (On) <br> performance mode = | Result |
+| Link to scenario image | Microsoft Defender Antivirus = enabled (On) <br> performance mode = | Result |
 |:---|:---|:---|
-| [Enterprise 1.1](#enterprise-scenario-11) | performance mode = On. <br>Performance mode settings are managed by IT. | Windows Security app: Surfaces the states of the Dev Drives and IT admin settings. <br> For Dev Drives, Microsoft Defender Antivirus is running in performance mode. |
-| [Enterprise 1.2](#enterprise-scenario-12) | performance mode = Off. <br>Performance mode settings are managed by IT. | Windows Security app: Surfaces the states of the volume and IT admin settings. <br> For Dev Drives, Microsoft Defender Antivirus is running in standard _Real-time protection_ mode. |
-| [Enterprise 1.3](#enterprise-scenario-13) | performance mode = Off. <br>Performance mode settings _are not_ managed by IT. | Windows Security app: Surfaces the states of Dev Drives. <br>Real-time protection = On|
+| [Enterprise 1.1](#enterprise-scenario-11) | performance mode = On. | Windows Security app: Surface the states of performance mode as _enabled_. |
+| [Enterprise 1.2](#enterprise-scenario-12) | performance mode = Off | Windows Security app: Surface the states of performance mode as _disabled_. |
+| [Enterprise 1.3](#enterprise-scenario-13) | Microsoft Defender Antivirus filter (WdFilter) = not attached | Windows Security app: Surface the state of Dev Drive volumes as not protected either by _Real-time protection mode_ or _performance mode_. |
 
 #### Enterprise scenario 1.1
 
