@@ -86,7 +86,7 @@ Dev Drives are automatically designated as trusted using a flag stored in the sy
 
 Similar to when a developer chooses to add an exclusion to Windows Security, the developer takes on the responsibility for managing the security of the content stored in order to gain more performance. A Dev Drive marked as trusted is a signal for Microsoft Defender Antivirus to run in performance mode. Running performance mode provides a balance between threat protection and performance. Real-time protection is still enabled on all other storage volumes. An untrusted Dev Drive doesn't have the same privileges as a trusted Dev Drive. Security runs in real-time protection mode when a Dev Drive is untrusted. 
 
-> [NOTE!]
+> [!NOTE]
 > Performance mode will only run on a “trusted” Dev Drive.
 
 ## Viewing performance mode status
