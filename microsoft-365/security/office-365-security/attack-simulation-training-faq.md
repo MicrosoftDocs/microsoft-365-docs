@@ -74,7 +74,7 @@ It's possible that the number of users who actually receive the simulation email
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with valid Exchange Online mailboxes will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 
@@ -91,6 +91,13 @@ To turn on audit log search, see [Turn audit log search on or off](../../complia
 
 > [!NOTE]
 > Empty activity details can also be caused by no E5 licenses being assigned to users. Verify at least one E5 license is assigned to an active user to ensure that reporting events are captured and recorded.
+
+### Reporting issues with on-premises mailboxes
+
+Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality:
+
+- Data on whether users read, forwarded, or deleted the simulation email isn't available for on-premises mailboxes.
+- The number of users who reported the simulation email isn't available for on-premises mailboxes.
 
 ### Simulation reports are not updated immediately
 
