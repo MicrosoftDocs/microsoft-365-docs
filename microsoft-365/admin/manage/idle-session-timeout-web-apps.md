@@ -3,7 +3,7 @@ title: "Idle session timeout for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/03/2022
 audience: Admin

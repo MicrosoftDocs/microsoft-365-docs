@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 10/11/2019
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -171,7 +171,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
 - OneDrive sync app, minimum versions:
     - Windows: 21.002
     - macOS: 21.002
-    - iOS: Rolling out in 12.30
+    - iOS: 12.30
     - Android: Not yet supported
 
 Known limitations:
