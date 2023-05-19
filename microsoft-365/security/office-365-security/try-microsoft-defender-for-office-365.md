@@ -306,12 +306,12 @@ You're taken to the **Apply standard protection** wizard on the **Preset securit
 
 - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on.
 - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
-      1. Turn off the Standard preset security policy on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
-      2. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, verify the value **Evaluation on** is shown.
+  1. Turn off the Standard preset security policy on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
+  2. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, verify the value **Evaluation on** is shown.
 
-         If **Evaluation off** is shown, select **Manage evaluation settings**. In the **Manage MDO evaluation settings** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on**.
+     If **Evaluation off** is shown, select **Manage evaluation settings**. In the **Manage MDO evaluation settings** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on**.
 
-      3. Select **Manage evaluation settings** to verify the users that the evaluation applies to in the **Users, groups, and domains** section in the **Manage MDO evaluation settings** details flyout that opens.
+  3. Select **Manage evaluation settings** to verify the users that the evaluation applies to in the **Users, groups, and domains** section in the **Manage MDO evaluation settings** details flyout that opens.
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
