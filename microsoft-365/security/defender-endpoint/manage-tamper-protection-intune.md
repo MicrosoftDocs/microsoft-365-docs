@@ -66,7 +66,7 @@ Using Intune, you can:
 - Your devices must be onboarded to Defender for Endpoint.
 
 > [!NOTE]
-> If devices are not enrolled in Microsoft Defender for Endpoint, tamper protection will show as **Not Applicable** until the onboarding process completes.
+> If devices are not enrolled in Microsoft Defender for Endpoint, tamper protection shows up as **Not Applicable** until the onboarding process completes.
 > Tamper protection can prevent changes to security settings from occurring. If you see an error code with Event ID 5013, see [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
 ## Turn tamper protection on (or off) in Microsoft Intune
@@ -120,7 +120,7 @@ You can use a registry key to determine whether the functionality to protect Mic
    - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
 
 > [!CAUTION]
-> **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
+> **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys has no effect on whether tamper protection applies to exclusions.
 
 ## See also
 
