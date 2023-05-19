@@ -48,7 +48,14 @@ See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpo
 
 2. In the navigation pane, choose **Endpoint security** and then, under **Manage**, choose **Antivirus**.
 
-3. 
+3. Select an existing policy, or choose **+ Create Policy** to create a new policy. 
+
+   | Task | What to do |
+   |---|---|
+   | Edit an existing policy | |
+   | Create a new policy for Windows devices | 1. In the **Create a profile** step, in the **Platform** list, select **Windows 10, Windows 11, and Windows Server**. For **Profile**, select **Microsoft Defender Antivirus**. Then choose **Create**.<br/><br/>2. On the **Basics** step, type a name and description for your policy, and then choose **Next**.<br/><br/>3. On the **Configuration settings** step, expand **Defender**, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx). <br/><br/>4. On the **Scope tags** step, choose **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile, and then select **Next** to continue.<br/><br/>5. On the **Assignments** page, select the groups that will receive this profile, and then select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).<br/><br/>6. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.  |
+   | Create a new policy for macOS devices | 1. In the **Create a profile** step, in the **Platform** list, select **macOS**. For **Profile**, select **Antivirus**. Then choose **Create**.<br/><br/>2. On the **Basics** step, type a name and description for your policy, and then choose **Next**.<br/><br/>3. On the **Configuration settings** step, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).<br/><br/>4. On the **Scope tags** step, choose **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile, and then select **Next** to continue.<br/><br/>5. On the **Assignments** page, select the groups that will receive this profile, and then select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).<br/><br/>6. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.  |
+
 
 ## Are you using Group Policy?
 
