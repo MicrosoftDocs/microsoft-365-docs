@@ -3,13 +3,11 @@ title: Configure Microsoft Defender Antivirus with Group Policy
 description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender for Endpoint.
 keywords: group policy, GPO, configuration, settings
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/04/2022
+ms.date: 05/19/2023
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.subservice: mde
@@ -37,9 +35,18 @@ search.appverid: met150
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
+> [!IMPORTANT]
+> We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Configuration Manager](/mem/configmgr/core/understand/introduction) to manage Microsoft Defender Antivirus settings for your organization. However, you can use Group Policy to manage some Microsoft Defender Antivirus settings. 
+> 
+> If [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, Any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. In addition, you cannot turn off tamper protection by using Group Policy. 
+> 
+> If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+> 
+
+
 ## Configure Microsoft Defender Antivirus using Group Policy
 
-In general, you can use the following procedure to configure or change Microsoft Defender Antivirus group policy settings:
+In general, you can use the following procedure to configure or change some settings for Microsoft Defender Antivirus.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
