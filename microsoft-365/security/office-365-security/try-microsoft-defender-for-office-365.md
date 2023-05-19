@@ -170,7 +170,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
      - **I'm using a third-party and/or on-premises service provider**: The MX record for your domain points somewhere other than Microsoft 365. Verify or configure the following settings:
        - **Third party service your organization is using**: Verify or select one of the following values:
-            - **Other**: This value also requires information in **If your email messages pass through multiple gateways, list each gateway IP address**, which is available only for the value **Other**.
+            - **Other**: This value also requires information in **If your email messages pass through multiple gateways, list each gateway IP address**, which is available only for the value **Other**. Use this value if you're using an on-premises service provider.
 
               Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
@@ -306,12 +306,12 @@ You're taken to the **Apply standard protection** wizard on the **Preset securit
 
 - The policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on.
 - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
-      1. Turn off the Standard preset security policy on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
-      2. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, verify the value **Evaluation on** is shown.
+  1. Turn off the Standard preset security policy on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
+  2. On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, verify the value **Evaluation on** is shown.
 
-         If **Evaluation off** is shown, select **Manage evaluation settings**. In the **Manage MDO evaluation settings** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on**.
+     If **Evaluation off** is shown, select **Manage evaluation settings**. In the **Manage MDO evaluation settings** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on**.
 
-      3. Select **Manage evaluation settings** to verify the users that the evaluation applies to in the **Users, groups, and domains** section in the **Manage MDO evaluation settings** details flyout that opens.
+  3. Select **Manage evaluation settings** to verify the users that the evaluation applies to in the **Users, groups, and domains** section in the **Manage MDO evaluation settings** details flyout that opens.
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
