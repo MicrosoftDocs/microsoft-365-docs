@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2021
 
 Policy tips in Outlook Web Access (OWA) are supported for these conditions and actions:
 
-### Conditions that support policyt tips in Outlook Web Access
+### Conditions that support policy tips in Outlook Web Access
 
 - Content contains (SIT)
 - Content is shared from M365
