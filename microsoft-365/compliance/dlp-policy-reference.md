@@ -868,7 +868,7 @@ This table shows the DLP blocking and notification behavior for policies that ar
 #### Learn more URL
 
 Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide.
-This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps).
+This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps&preserve-view=true ).
 
 > [!IMPORTANT]
 > You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this funcationality out of the box.
