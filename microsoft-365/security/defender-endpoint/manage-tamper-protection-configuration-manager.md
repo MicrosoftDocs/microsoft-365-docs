@@ -6,7 +6,7 @@ description: Turn tamper protection on or off using tenant attach with Configura
 keywords: malware, defender, antivirus, tamper protection, Configuration Manager
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/09/2023
+ms.date: 05/19/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
