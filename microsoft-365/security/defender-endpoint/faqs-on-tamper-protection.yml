@@ -98,6 +98,8 @@ sections:
           - Notifications are visible in the Windows Security app on Windows devices.
           - Archived files are scanned. 
           
+          See [What happens when tamper protection is turned on](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on)?
+
       - question: |
           If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
         answer: |
