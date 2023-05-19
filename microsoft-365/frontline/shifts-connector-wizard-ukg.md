@@ -131,9 +131,11 @@ Signing in with your username enables access to all instances created in UKG Dim
 > https://contoso-sso.mykronos.com 
 > - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
 > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
-    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. When you're done, select **Save connection**.
+    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
+
+
 
 > [!NOTE]
 > If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
