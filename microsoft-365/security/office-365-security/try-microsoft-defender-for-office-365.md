@@ -170,7 +170,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
      - **I'm using a third-party and/or on-premises service provider**: The MX record for your domain points somewhere other than Microsoft 365. Verify or configure the following settings:
        - **Third party service your organization is using**: Verify or select one of the following values:
-            - **Other**: This value also requires information in **If your email messages pass through multiple gateways, list each gateway IP address**, which is available only for the value **Other**.
+            - **Other**: This value also requires information in **If your email messages pass through multiple gateways, list each gateway IP address**, which is available only for the value **Other**. Also select **Other** if using an on-premises service provider.
 
               Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
