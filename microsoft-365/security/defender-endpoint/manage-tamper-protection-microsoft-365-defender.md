@@ -52,8 +52,7 @@ search.appverid: met150
 - [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be turned on.
 
 > [!NOTE]
-> When tamper protection is enabled via the Microsoft 365 Defender portal, [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) is required so that the enabled state of tamper protection can be controlled.  
-> Starting with the November 2021 update (platform version `4.18.2111.5`), if cloud-delivered protection is not already turned on for a device, when tamper protection is turned on, cloud-delivered protection is turned on automatically on the device.   
+> When tamper protection is enabled via the Microsoft 365 Defender portal, [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) is required so that the enabled state of tamper protection can be controlled. Starting with the November 2021 update (platform version `4.18.2111.5`), if cloud-delivered protection is not already turned on for a device, when tamper protection is turned on, cloud-delivered protection is turned on automatically on the device.   
 
 ## Turn tamper protection on (or off) in the Microsoft 365 Defender portal
 
