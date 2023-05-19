@@ -45,7 +45,7 @@ Licensing for eDiscovery (Premium) requires the appropriate organization subscri
 
 To access eDiscovery (Premium) or added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal. Members of this role group can create and manage eDiscovery (Premium) cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an eDiscovery (Premium) case.
 
-For step-by-step guidance to configure permissions for eDiscovery, see see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
+For step-by-step guidance to configure permissions for eDiscovery, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 
 ## Step 3: Configure global settings for eDiscovery (Premium)
 
@@ -58,7 +58,7 @@ For more information about setting up and using the attorney-client privilege de
 
 ## Step 4: Verify that required eDiscovery apps are enabled
 
-eDiscovery (Premium) requires the following Enterprise apps to be enabled in your Microsoft 365 or Office 365 organization. If these apps are not enabled, you won't be able to access eDiscovery (Premium) view, filter, and search features.
+eDiscovery (Premium) requires the following Enterprise apps to be enabled in your Microsoft 365 or Office 365 organization. If these apps aren't enabled, you won't be able to access eDiscovery (Premium) view, filter, and search features.
 
 |**App**|**App ID**|
 |:------|:---------|

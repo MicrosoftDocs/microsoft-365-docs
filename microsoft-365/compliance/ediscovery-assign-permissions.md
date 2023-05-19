@@ -148,7 +148,7 @@ For more information about holds, see:
 
 ### Manage review set tags
 
-This role lets users create, edit, and delete review set tags for cases they can access. Users will need to at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
+This role lets users create, edit, and delete review set tags for cases they can access. Users need to at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
 
 ### Preview
 
@@ -173,7 +173,7 @@ You can add role groups as members of eDiscovery (Standard) and eDiscovery (Prem
 - [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-5-optional-add-members-to-a-ediscovery-standard-case)
 - [Add or remove members from an eDiscovery (Premium) case](ediscovery-add-or-remove-members-from-a-case.md)
 
-With this requirement in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+With this requirement in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it is removed from all cases it was a member of.
 
 Before you add or remove roles to a role group that may be a member of an eDiscovery case, you can run the following commands in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to get a list of cases the role group is a member of. After you update the role group, you add the role group back as a member of those cases.
 
