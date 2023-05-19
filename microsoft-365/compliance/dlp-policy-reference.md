@@ -757,7 +757,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in- context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
+When a user attempts an activity on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in-context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
 For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
 
@@ -842,6 +842,8 @@ produces this text in the customized notification:
 
 *pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE isn't allowed by your organization. Select the 'Allow' button if you want to bypass the policy Contoso highly confidential*
 
+You can localize your custom policy tips by using the [Set-DlpComplianceRule -NotifyPolicyTipCustomTextTranslations cmdlet](/powershell/module/exchange/new-dlpcompliancerule#-notifypolicytipcustomtexttranslations).
+
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
 >
@@ -850,28 +852,6 @@ produces this text in the customized notification:
 To learn more about user notification and policy tip configuration and use, including how to customize the notification and tip text, see
 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
-
-<!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
-
-In addition to sending an email notification, a user notification displays a policy tip:
-
-- In Outlook and Outlook on the web.
-
-- For the document on a SharePoint Online or OneDrive for Business site.
-
-- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-
-The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-
-Here's what a policy tip looks like in a OneDrive for Business account.
-
-![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-
- To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
-
-> [!NOTE]
-> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
--->
 
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
@@ -884,6 +864,15 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it's uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
 |- **Content is shared from Microsoft 365**    |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
+
+#### Learn more URL
+
+Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide.
+This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps&preserve-view=true ).
+
+> [!IMPORTANT]
+> You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this funcationality out of the box.
+
 
 ### User overrides
 
@@ -905,6 +894,21 @@ Typically, user overrides are useful when your organization is first rolling out
 To learn more about user overrides, see:
 
 - [View the justification submitted by a user for an override](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
+
+#### Business justification X-Header
+
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides, open the [DLP false positives and overrides report](/microsoft-365/compliance/view-the-dlp-reports#view-the-justification-submitted-by-a-user-for-an-override) or you can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log values:
+```xml
+{
+    "FalsePositive"; false,
+    "Justification"; My manager approved sharing of this content",
+    "Reason"; "Override",
+    "Rules": [
+         "<message guid>"
+    ]
+}
+```
+If you have a automated process that makes use of the business justification values, the process can access that information progamatically in the email X-header data. 
 
 ### Incident reports
 
