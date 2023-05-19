@@ -52,7 +52,7 @@ Users included in communication compliance policies must be assigned one of the 
 > [!IMPORTANT]
 > Communication compliance is currently available for tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
-If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
+If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
 
 > [!NOTE]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
@@ -117,13 +117,16 @@ Depending on how you want to manage communication compliance policies and alerts
 
 Choose from these solution role group options when configuring and managing communication compliance:
 
-| Role | Role permissions |
-|:-----|:-----------------|
-| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that don't need separate permissions defined for separate groups of users. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
-| **Communication Compliance Admins** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group can't view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
-| **Communication Compliance Analysts** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they're assigned as Reviewers, view message metadata and content, and escalate to additional reviewers. Analysts can resolve pending alerts. |
-| **Communication Compliance Investigators** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an eDiscovery (Premium) case, send notifications to users, and resolve the alert. |
-| **Communication Compliance Viewers** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+|Actions|Communication Compliance|Communication Compliance Admins|Communication Compliance Analysts|Communication Compliance Investigators|Communication Compliance Viewers|
+|---------------------------------|----|----|----|----|----|
+|Configure policies and settings|Yes|Yes|No|No|No|
+|Access and investigate alerts|Yes|No|Yes|Yes|No|
+|View **Conversation** and **Translation** tabs for a specific message|Yes|No|No|Yes|No|
+|Do advanced remediation actions: Escalate for investigation; Remove message in Teams; Download; Run Power Automate flow|Yes|No|No|Yes|No|
+|Create message details report |Yes|No|No|Yes|No|
+|Access reports|Yes|No|No|No|Yes|
+|Manage settings: privacy, notice templates, and so on|Yes|Yes|No|No|No|
+|View and export policy updates|Yes|Yes|No|No|Yes|
 
 ### Option 1: Assign all compliance users to the Communication Compliance role group
 

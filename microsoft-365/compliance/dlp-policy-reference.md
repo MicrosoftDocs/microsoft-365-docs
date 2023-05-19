@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 04/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -61,7 +61,7 @@ Also, you need to be aware of the following constraints of the platform:
 
 ## Policy templates
 
-DLP policy templates are pre-sorted into four categories:
+DLP policy templates are presorted into four categories:
 
 - Ones that can detect and protect types of **Financial** information.
 - Ones that can detect and protect types of **Medical and health** information.
@@ -128,7 +128,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
-DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
+DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
 - users
 - groups
@@ -174,7 +174,7 @@ DLP supports associating policies with administrative units. See [Administrative
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional pre-requisites |
+|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional prerequisites |
 |---------|---------|---------|---------|---------|
 |Exchange email online|Yes |distribution group | data-in-motion| No |
 |SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
@@ -185,7 +185,42 @@ A DLP policy can find and protect items that contain sensitive information acros
 |On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
 |Power BI |No| workspaces | data-in-use | No|
 
-If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+#### Exchange location scoping 
+
+If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
+
+
+|Sender is  |Recipient is  |Resultant behavior  |
+|---------|---------|---------|
+|In scope     |N/A     |Policy is applied         |
+|Out of scope     |In scope         |Policy isn't applied         |
+
+##### Exchange location scope calculation
+
+Here's an example of how Exchange location scope is calculated
+
+Say you have four users in your org, *U1*, *U2*, *U3*, *U4* and, two distribution groups *DG1*, and *DG2* that you'll use for defining Exchange location inclusion and exclusion scopes. Group membership is set up like this:
+
+
+|Distribution Group  |Membership  |
+|---------|---------|
+|DG1     |U1, U2 |
+|DG2     |U2, U3 |
+
+U4 isn't a member of any group.
+
+
+|Include setting |Exclude setting  |Policy applies to  |Policy doesn't apply to   |Explanation of behavior|
+|---------|---------|---------|---------|---------|
+|All  |None         |All senders in the Exchange org (U1, U2, U3, U4)         |N/A         |When neither are defined, all senders are included|
+|DG1     |None         |Member senders of DG1 (U1, U2)         |All senders who aren't members of DG1 (U3, U4)         |When one setting is defined and the other isn't the defined setting is used|
+|All  |DG2         |All senders in the Exchange org who aren't members of DG2  (U1, U4)      |All senders who are members of DG2 (U2, U3)  |When one setting is defined and the other isn't the defined setting is used         |
+|DG1  |DG2         |U1         |U2, U3, U4         |Exclude overrides include|
+  
+
+You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+
+#### SharePoint and OneDrive location scoping
 
 If you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
@@ -215,29 +250,16 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
-
-<!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
-<!--
-- What is a rule in the context of a Policy?
-- when and why should I have more than one rule?
-- The purpose of rule groups
-- How do I tune the behavior of a Policy through the tuning of rules
-- what's in a rule-->
-
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
-- [**Incident Reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
-- [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
+- [**Incident reports**](#incident-reports) that notify admins and other key stakeholders when a rule match occurs
+- [**Additional options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
-
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
 ### The priority by which rules are evaluated and applied
 
@@ -262,7 +284,7 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### For endpoints (preview)
+#### For endpoints
 
 When an item matches multiple DLP rules, DLP goes uses through a complex algorithm to decide which actions to apply. Endpoint DLP will apply the aggregate or sum of most restrictive actions. DLP uses these factors when making the calculation.
 
@@ -343,7 +365,7 @@ An item on a monitored device contains credit card number, so it matches policy 
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|
 |ABC|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block**|Audit|Audit|
 |MNO|Audit|Audit|**Auth group A - Block with override**|Audit|Audit|**Auth group B - block**|Audit|Audit|
-|Actions applied at runtime|Audit|Audit|**Auth group A - BLock**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
+|Actions applied at runtime|Audit|Audit|**Auth group A - Block**|Audit|Audit|**Auth group A - Block, Auth group B - Block**|Audit|Audit|
 
 ### Conditions
 
@@ -365,7 +387,7 @@ depending on the [location(s)](#location-support-for-how-content-can-be-defined)
 
 The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick.
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
+SITs have a predefined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
@@ -391,41 +413,43 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
+- User's risk level for Adaptice Protection is
+- Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
 - Sender IP address is
-- Has sender overridden the policy tip
-- Sender is
-- Sender domain is
-- Sender address contains words
-- Sender address contains patterns
+- Header contains words or phrases
 - Sender AD Attribute contains words or phrases
+- Content character set contains words
+- Header matches patterns
 - Sender AD Attribute matches patterns
-- Sender is a member of
-- Any email attachment's content couldn't be scanned
-- Any email attachment's content didn't complete scanning
-- Attachment is password protected
-- File extension is
-- Recipient is member of
-- Recipient domain is
-- Recipient is
-- Recipient address contains words
-- Recipient address matches patterns
 - Recipient AD Attribute contains words or phrases
 - Recipient AD Attribute matches patterns
+- Recipient is member of
+- Document property is
+- Any email attachment's content could not be scanned
+- Document or attachment is password protected
+- Has sender overridden the policy tip
+- Sender is a member of
+- Any email attachment's content didn't complete scanning
+- Recipient address contains words
+- File extension is
+- Recipient domain is
+- Recipient is
+- Sender is
+- Sender domain is
+- Recipient address matches patterns
 - Document name contains words or phrases
 - Document name matches patterns
-- Document property is
+- Subject contains words or phrases
+- Subject matches patterns
+- Subject or body contains words or phrases
+- Subject or body matches patterns
+- Sender address contains words
+- Sender address matches patterns
 - Document size equals or is greater than
 - Document content contains words or phrases
 - Document content matches patterns
-- Subject contains words or phrases
-- Subject matches patterns
-- Subject or Body contains words or phrases
-- Subject or body matches patterns
-- Content character set contains words
-- Header contains words or phrases
-- Header matches patterns
 - Message size equals or is greater than
 - Message type is
 - Message importance is
@@ -434,43 +458,45 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - Content is shared from Microsoft 365
-- Document created by
-- Document created by member of
-- Document name contains words or phrases
-- Document name matches patterns
-- Document size over
 - Document property is
 - File extension is
+- Document name contains words or phrases
+- Document size equals or is greater than
+- Document created by
+- Document created by member of  
 
 ##### Conditions OneDrive accounts supports
 
 - Content contains
 - Content is shared from Microsoft 365
-- Document created by
-- Document created by member of
-- Document name contains words or phrases
-- Document name matches patterns
-- Document size over
 - Document property is
 - File extension is
+- Document name contains words or phrases
+- Document size equals or is greater than
+- Document created by
+- Document created by member of 
+- Document is shared
 
 ##### Conditions Teams chat and channel messages supports
 
 - Content contains
+- Users risk level for Adaptive Protection is
 - Content is shared from Microsoft 365
+- Recipient domain is
+-Recipient is
 - Sender is
 - Sender domain is
-- Recipient domain is
-- Recipient is
 
 ##### Conditions Devices supports
 
 - Content contains
-- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This predicate detects only open protected files.
-- Content isn't labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- (preview) The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-- File extension is
+- User's risk level for Adaptive Protection is
+- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
+- File extension is
+- The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
@@ -554,28 +580,6 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Document contains words | EXO | Individual word length <= 128; Count <= 600  |  Medium|
 |Document matches patterns| EXO| Regex length <= 128 char; Count <= 300  | Medium|
 
-
-<!--### Exceptions
-
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in Classic rule builder mode. When you toggle the UI to the **New DLP rule builder**, which enabled nested groups and the boolean operators AND, OR, and, NOT, exceptions are displayed as a nested group under conditions and joined to the conditions with a boolean NOT. To learn more on how to use the **New DLP rule builder** to create exceptions see, [Complex rule design](dlp-policy-design.md#complex-rule-design)
-
-In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
-
-For example, keeping with the HIPPA policy, we could modify the rule to exclude any item that contains a Belgium drivers license number, like this:
-
-![HIPPA policy with exclusions](../media/dlp-rule-exceptions.png)
-
-The exceptions conditions that are supported by location are identical to all the inclusion conditions with the only difference being the prepending of "Except if" to each supported condition. If a rule contains only exceptions, it will apply to all emails or files that do not meet the exclusion criteria.
-
-Just as all locations support the inclusive condition:
-
-- Content contains
-
-the exception would be:
-
-- **Except if** content contains-->
-
 ### Actions
 
 Any item that makes it through the ***conditions*** <!--and exclusive ***exceptions***--> filter will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
@@ -604,8 +608,9 @@ The actions that are available in a rule are dependent on the locations that hav
 - Add the sender's manager as recipient
 - Removed O365 Message Encryption and rights protection
 - Prepend Email Subject
-- Modify Email Subject
 - Add HTML Disclaimer
+- Modify Email Subject
+- Deliver the message to the hosted quarantine
 
 #### SharePoint sites location actions
 
@@ -621,9 +626,8 @@ The actions that are available in a rule are dependent on the locations that hav
 
 #### Devices actions
 
-<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- Restrice access or encrypt the content in Microsoft 365 locations.
-- Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+- Restrict access or encrypt the content in Microsoft 365 locations
+- Audit or restricted activities when users access sensitive websites in Microsoft Edge browser on Windows devices (See, [Scenario 6 Monitor or restrict user activities on sensitive service domains)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.)
 - Audit or restrict activities on devices
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
@@ -696,7 +700,7 @@ and
 
 - all actions for the non-Exchange location
 
-actions will be available.
+actions are available.
 
 If you select two or more non-Exchange locations for the policy to be applied to, the
 
@@ -730,12 +734,12 @@ Whether an action takes effect or not depends on how you configure the mode of t
 |Restrict access or encrypt content in Microsoft 365| EXO/SPO/ODB |  |
 |Set headers | EXO | |
 |Remove header | EXO | |
-|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Cannot be DL/SG|
+|Redirect the message to specific users | EXO| Total of 100 across all DLP rules. Can't be DL/SG|
 |Forward the message for approval to sender's manager | EXO | Manager should be defined in AD|
 |Forward the message for approval to specific approvers |EXO | Groups aren't supported|
-|Add recipient to the **To** box | EXO | Recipient count <= 10; Cannot be DL/SG|
-|Add recipient to the **Cc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
-|Add recipient to the **Bcc** box | EXO | Recipient count <= 10; Cannot be DL/SG|
+|Add recipient to the **To** box | EXO | Recipient count <= 10; Can't be DL/SG|
+|Add recipient to the **Cc** box | EXO | Recipient count <= 10; Can't be DL/SG|
+|Add recipient to the **Bcc** box | EXO | Recipient count <= 10; Can't be DL/SG|
 |Add the sender's manager as recipient | EXO | Manager attribute should be defined in AD|
 |Apply HTML disclaimer| EXO| |
 |Prepend subject| EXO| |
@@ -879,7 +883,7 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |- **Content is shared from Microsoft 365** </br>- **only with people inside my organization**        | No actions are configured         |-  **User notifications** set to **On**   </br>- **Notify users in Office 365 service with a policy tip** is selected  </br>- **Notify the user who sent, shared, or last modified the content** is selected    |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |- Notifications are sent when a file is uploaded |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it's uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
-|- **Content is shared from Microsoft 365** </br>- **with people outside my organization**     |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
+|- **Content is shared from Microsoft 365**    |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
 
 ### User overrides
 
@@ -909,17 +913,19 @@ To learn more about user overrides, see:
 /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
 /microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
-When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
+When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes the original message as an attachment that matches a DLP policy.
 
 DLP feeds incident information to other Microsoft Purview Information Protection services, like [insider risk management](insider-risk-management.md). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
-
-<!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
 Alerts can be sent every time an activity matches a rule, which can be noisy or they can be aggregated into fewer alerts based on number of matches or volume of items over a set period of time.
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
-DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there's a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+
+#### Evidence collection for file activities on devices (preview)
+
+If you've enabled **Setup evidence collection for file activities on devices (preview)** and added Azure storage accounts, you can select **Collect original file as evidence for all selected file activities on Endpoint** and the Azure storage account you want to copy the items to. You must also choose the activities you want to copy items for. For example, if you select **Print** but not **Copy to a network share**, then only items that are printed from monitored devices will be copied to the Azure storage account.
 
 ### Additional options
 

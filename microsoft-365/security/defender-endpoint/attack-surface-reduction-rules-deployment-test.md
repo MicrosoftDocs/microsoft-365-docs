@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Test attack surface reduction (ASR) rules
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Testing Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules helps you determine if rules will impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
 
 In this section of the ASR rules deployment guide, you will learn how to:

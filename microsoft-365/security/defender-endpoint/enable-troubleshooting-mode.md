@@ -1,13 +1,9 @@
 ---
 title: Get started with troubleshooting mode in Microsoft Defender for Endpoint 
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
-keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 03/06/2023
+ms.date: 04/18/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
@@ -26,7 +22,10 @@ ms.date: 03/06/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -113,7 +112,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Advanced hunting queries
 
-Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](/defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
+Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
 
@@ -137,6 +136,7 @@ DeviceEvents
 
 ```kusto
 DeviceEvents
+| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 3 hours 
 | where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"

@@ -270,7 +270,9 @@
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
-                 - name: Functions
+                 - name: Create custom functions 
+                   href: advanced-hunting-custom-functions.md                   
+                 - name: Use built-in functions
                    items: 
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
@@ -544,6 +546,8 @@
         items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
+          - name: Threat actor naming
+            href: ../intelligence/microsoft-threat-actor-naming.md
           - name: Understand malware & other threats
             href: ../intelligence/understanding-malware.md
             items: 
