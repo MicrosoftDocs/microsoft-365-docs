@@ -24,7 +24,13 @@ ms.date: 3/23/2023
 
 ## Overview
 
-[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
+The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+
+The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UGG instances and teams in Microsoft Teams.
+
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a Microsoft team at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
+
+With UKG Dimensions, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG to set up schedules.
 
 ### Terms used in this article
 
@@ -36,20 +42,53 @@ ms.date: 3/23/2023
 
 ## Integrate Shifts with UKG Dimensions
 
-The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection and a connection instance to UKG Dimensions through the connector.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we explain how to run the wizard to set up a connection and a connection instance to UKG Dimensions.
 
 > [!NOTE]
-> You can also use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
+> If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
 
 ## Before you begin
 
-You must be a Microsoft 365 global admin to run the wizard.
+How you set up UKG Dimensions for your organization determines if the Shifts connector will work. If you follow these steps and still aren’t able to get the connector to work properly, please contact your Microsoft support representative. We’re continually working to upgrade the connector and make sure it works with a wide variety of UKG configurations.
 
-<a name="prerequisites"> </a>
-### Prerequisites
-[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
+### Examine your UKG organizational setup
 
-- The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
+Before you try using the Shifts connector, make sure you understand your organization’s UKG Dimensions setup.
+
+- Have you already configured a UKG instance? This refers to a team (a group of users) within your UKG Dimensions system, which is different than a team in Microsoft Teams.
+
+- How is this instance configured?
+
+Each organization that uses UKG Dimensions must establish how its teams will be organized to mirror the organization’s structure and business needs. An admin must set up the relevant requests for your business needs in UKG Dimensions, such as open shift requests and time off requests. 
+
+After you have a complete understanding of your UKG Dimensions setup, check to make sure you meet all the prerequisites for the Shifts connector.  
+
+### Shifts connector prerequisites
+
+Before you try the Shifts connector wizard, check that you meet all these prerequisites:
+
+-	Make sure you’re a Microsoft 365 global admin.
+
+-	Know your UKG Dimensions account username, password and these other details:
+    - API URL
+    - Application key
+    - Client ID
+    - Client secret
+    - Single Sign On (SSO) URL
+
+    If you don't have all this information, contact UKG Dimensions support.
+
+-	Make sure your organization is using Azure Active Directory (Azure AD). This is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
+
+-	Make sure Federated SSO authentication is enabled in your UKG Dimensions environment. Follow the steps below to [configure UKG Dimensions single sign-on](#configure-single-sign-on).
+
+-	Make sure you have at least one team set up in Microsoft Teams.
+
+-	Make sure you’ve added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
+
+    You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+
+- Make sure the teams you want to map don't have any schedules in Shifts or UKG Dimensions. If a team has an existing schedule, follow the steps below to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
 ### Configure single sign-on
 
@@ -58,14 +97,13 @@ You must be a Microsoft 365 global admin to run the wizard.
 <a name="remove_schedules"> </a>
 ## Remove schedule entities from teams you want to map
 
-> [!NOTE]
-> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
+Complete this step if you're mapping UKG Dimensions instances to existing teams with schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedule entities from teams.
 
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment)
+1. If you don’t have PowerShell installed already, install the PowerShell modules and [set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment)
 
-1. Run the following command:
+1. Run this command in PowerShell:
 
     ```powershell
     Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
@@ -75,11 +113,13 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-## Run the wizard
+## Run the Shifts connector wizard
+
+After you’ve followed all the steps above and made sure you meet the prerequisites, now you’re ready to run the wizard and connect your UKG Dimensions system to Shifts in Microsoft Teams. 
 
 ### Create a connection
 
-1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
+1. In the left navigation menu of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
 
 1. Select **Connector Management Console**.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
