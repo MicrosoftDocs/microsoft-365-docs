@@ -204,17 +204,6 @@
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
 
-    - name: Integration with Microsoft Defender for Cloud
-      href: azure-server-integration.md
-    - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
-      href: run-detection-test.md
-    - name: Run simulated attacks on devices
-      href: attack-simulations.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
-
     - name: Configure Microsoft Defender for Endpoint on macOS
       items:
       - name: Configure and validate exclusions
@@ -264,16 +253,24 @@
         href: android-configure-mam.md
       - name: Configure Microsoft Defender for Endpoint on iOS features
         href: ios-configure-features.md
-
+    - name: How to guides
+      items:
+    - name: Integration with Microsoft Defender for Cloud
+      href: azure-server-integration.md
+    - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
+      href: run-detection-test.md
+    - name: Run simulated attacks on devices
+      href: attack-simulations.md
+    - name: Onboard devices without Internet access
+      href: onboard-offline-machines.md
+    - name: Configure proxy and Internet connectivity settings
+      href: configure-proxy-internet.md
     - name: Create an onboarding or offboarding notification rule
       href: onboarding-notification.md
-
     - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
-
     - name: Manage Defender for Endpoint P1/P2 across devices
       href: defender-endpoint-subscription-settings.md
-
     - name: Configure portal settings
       items:
       - name: Configure general Defender for Endpoint settings
