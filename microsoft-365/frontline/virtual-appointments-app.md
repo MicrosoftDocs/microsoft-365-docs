@@ -106,7 +106,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 ![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 > [!NOTE]
-> We'll be providing unlimited SMS notifications through April 3, 2023 (previously March 1, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide more details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
+> Virtual Appointments SMS notifications are now part of Teams Premium. Contact your administrator if you need a license for Teams Premium.
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
