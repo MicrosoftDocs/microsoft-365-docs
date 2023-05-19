@@ -115,6 +115,8 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
 
+    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
+
 1. Enter your UKG Dimensions information:
     - Account username
     - Account password
@@ -133,9 +135,6 @@ Signing in with your username enables access to all instances created in UKG Dim
 > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
 
 1. When you're done, select **Save connection**.
-    :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
-
-
 
 > [!NOTE]
 > If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
