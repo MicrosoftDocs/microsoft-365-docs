@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -191,9 +191,9 @@ Improvement actions set for manual testing are actions which you manually test a
 #### Automatic
 Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-setup.md#testing-source-for-automated-testing) on which improvement actions can and can't be tested automatically.
 
-For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
+For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions and cloud services. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
 
-When signals indicate that an improvement action has been successfully implemented, you'll automatically receive the points eligible for that action, which will factor into scores for any related controls and assessments. Learn more about [scoring](compliance-score-calculation.md).
+When signals indicate that an improvement action has been successfully implemented, you automatically receive the eligible points that action, which factor into scores for any related controls and assessments. Learn more about [scoring](compliance-score-calculation.md).
 
  Automatic testing is on by default for all eligible improvement actions. You can adjust these settings to automatically test only certain improvement actions, or you can turn off automatic testing for all actions. Learn more about how automated testing works and how to adjust your settings at [Set up automated testing](compliance-manager-setup.md#manage-automated-testing-settings).
 
