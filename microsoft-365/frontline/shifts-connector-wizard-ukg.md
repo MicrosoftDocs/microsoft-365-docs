@@ -116,23 +116,21 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
 
 1. Enter your UKG Dimensions information:
-Account username
-Account password
-API URL
-Application key
-Client ID
-Client secret
-SSO URL
+    - Account username
+    - Account password
+    - API URL
+    - Application key
+    - Client ID
+    - Client secret
+    - SSO URL
 
 Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
 
-Note
-Check that your SSO URL is structured like this sample URL: https://contoso-sso.mykronos.com
-
-Then you need to add this extra text at the end of the URL, structured like this (for a sample client ID XDV45GTaaaaab43342XA):
-https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
-
-
+> [!NOTE]
+> - Check that your SSO URL is structured like this sample URL:  
+> https://contoso-sso.mykronos.com 
+> - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
+> https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. When you're done, select **Save connection**.
