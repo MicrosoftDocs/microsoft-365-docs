@@ -126,7 +126,7 @@ After you’ve followed all the steps above and made sure you meet the prerequis
     - Client secret
     - SSO URL
 
-Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+    Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
 
 > [!NOTE]
 > - Check that your SSO URL is structured like this sample URL:  
