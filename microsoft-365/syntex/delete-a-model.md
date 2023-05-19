@@ -20,7 +20,7 @@ description: Learn how to delete a model in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-At some point, you might want to delete a model. The easiest way is to delete the model is from the model home page.
+At some point, you might want to delete a Syntex model if it is no longer being used, if it contains inaccurate or outdated information, or if it is taking up too much storage space.
 
 > [!NOTE]
 > Deleting a model doesn't delete the associated content type. 
@@ -43,7 +43,7 @@ This is the easiest method to use to delete a model.
 
 ## Delete a model from the Models library
 
-You can also delete a model from a SharePoint document library. However, before you delete the model, you must first remove the model from all of the other document libraries where it has been applied.
+You can also delete a model from the **Models** library. However, before you delete the model, you must first remove the model from all of the document libraries where it has been applied.
 
 1. Remove the model either from the model home page or from the document library by selecting **Automate** > **View applied models** > **Remove from library**.
 
