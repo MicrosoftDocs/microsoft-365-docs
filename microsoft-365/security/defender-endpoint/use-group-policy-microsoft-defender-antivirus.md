@@ -65,11 +65,8 @@ In general, you can use the following procedure to configure or change some sett
 The following table lists commonly used Group Policy settings that are available in Windows 10.
 
 > [!TIP]
-> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. <br/><br/> Here are the most recent versions:
-> - [Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
-> - [Group Policy Settings Reference Spreadsheet for Windows 11 October 2021 Update (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
+> For the most current settings, see get the latest ADMX files in your central store to access the correct policy options. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files. 
 
-<br/><br/>
 
 |Location|Setting|Article|
 |---|---|---|
