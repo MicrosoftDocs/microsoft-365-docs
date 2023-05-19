@@ -128,7 +128,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
-This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+This feature is available if your organization uses Microsoft Defender Antivirus with [cloud protection](cloud-protection-microsoft-defender-antivirus.md) enabled. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
