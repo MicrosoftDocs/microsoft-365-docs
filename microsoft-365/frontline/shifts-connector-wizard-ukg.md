@@ -134,7 +134,7 @@ Signing in with your username enables access to all instances created in UKG Dim
 > - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
 > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
 
-1. When you're done, select **Save connection**.
+7. When you're done, select **Save connection**.
 
 > [!NOTE]
 > If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
