@@ -20,7 +20,7 @@ description: Learn how to delete a model in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-At some point, you might want to delete a Syntex model if it is no longer being used, if it contains inaccurate or outdated information, or if it is taking up too much storage space.
+At some point, you might want to delete a Syntex model if it's no longer being used, if it contains inaccurate or outdated information, or if it's taking up too much storage space.
 
 > [!NOTE]
 > Deleting a model doesn't delete the associated content type. 
