@@ -147,7 +147,7 @@ When it identifies items that match policies on devices, DLP can copy them to an
 >
 > - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates.md#april-2023-platform-41823048--engine-11203003)
 
-The following table shows the default settings for network share coverage and exclusions.
+This table shows the default settings for network share coverage and exclusions.
 
 |Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
 |---------|---------|---------|
@@ -156,7 +156,7 @@ The following table shows the default settings for network share coverage and ex
 |Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all network shares and mapped drives that the device is connected to.         |
 | | | |
 
-**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions). The following table shows the exclusion settings and the resulting behavior depending on whether DLP is enabled or disabled for on-premises repositories.
+**Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions). This table shows the exclusion settings and the resulting behavior depending on whether DLP is enabled or disabled for on-premises repositories.
 
 |Network share coverage and exclusions|DLP on-premises repositories|Resultant behavior|
 |---------|---------|---------|
@@ -358,9 +358,8 @@ The following table shows which browsers support these features:
 
 | Browser | Supported Feature|
 |---|---|
-| Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste|
-| Microsoft Edge <br> Google Chrome (with the Microsoft Purview extension)| Upload |
-| |
+| Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste </br>- Upload|
+| Google Chrome (with the Microsoft Purview extension)| - Upload </br>- Paste|
 
 Additionally, for Devices, you must use **Sensitive service domains** with a DLP policy. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. You can add a maximum of 50 websites into a single group and you can create a maximum of 20 groups. For more information, see [Scenario 6: Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 
