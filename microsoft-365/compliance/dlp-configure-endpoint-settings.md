@@ -358,8 +358,8 @@ The following table shows which browsers support these features:
 
 | Browser | Supported Feature|
 |---|---|
-| Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste </br>- Upload|
-| Google Chrome (with the Microsoft Purview extension)| - Upload </br>- Paste|
+| Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste (preview) </br>- Upload|
+| Google Chrome (with the Microsoft Purview extension)| - Upload </br>- Paste (preview)|
 
 Additionally, for Devices, you must use **Sensitive service domains** with a DLP policy. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. You can add a maximum of 50 websites into a single group and you can create a maximum of 20 groups. For more information, see [Scenario 6: Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 
