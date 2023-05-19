@@ -54,3 +54,9 @@ Here's what you see in the Windows Security app:
 > To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 >
 > After you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
+
+## See also
+
+[Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+
+[Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
