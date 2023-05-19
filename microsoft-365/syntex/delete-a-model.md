@@ -26,9 +26,9 @@ At some point, you might want to delete a model. The easiest way is to delete th
 
 1. On the **Models** page, select the model you want to delete.
 
-    ![Screenshot of the Models settings button on the model home page.](../media/content-understanding/model-settings-button.png)
-
 2. On the home page of the model, select **Model settings**.
+
+    ![Screenshot of the Models settings button on the model home page.](../media/content-understanding/model-settings-button.png)
 
 3. On the **Model settings** panel, at the bottom of the panel, select **Delete model**.
 
