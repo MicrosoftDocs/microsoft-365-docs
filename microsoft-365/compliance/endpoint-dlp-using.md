@@ -93,17 +93,17 @@ This scenario is for an unrestricted admin modifying a full directory scoped pol
 
 1. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 
-![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+    ![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
-6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
+1. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
-7. Choose **Save**.
+1. Choose **Save**.
 
-8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
+1. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 
-9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+1. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
-10. Check Activity explorer for the event.
+1. Check Activity explorer for the event.
 
 ## Scenario 3: Modify the existing policy, block the action with allow override
 
