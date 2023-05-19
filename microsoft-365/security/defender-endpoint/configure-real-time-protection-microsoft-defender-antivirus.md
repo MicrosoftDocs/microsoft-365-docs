@@ -102,7 +102,7 @@ To enable and configure always-on protection:
 
 ### Real-time protection policy settings
 
-For the most current settings, see get the latest ADMX files in your central store to access the correct policy options. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files. 
+For the most current settings, get the latest ADMX files in your central store. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files. 
 
 ### Disable real-time protection in Group Policy
 
