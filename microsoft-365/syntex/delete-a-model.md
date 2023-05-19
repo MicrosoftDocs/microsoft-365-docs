@@ -39,9 +39,9 @@ At some point, you might want to delete a model. The easiest way is to delete th
 
     ![Screenshot of the Delete model confirmation page.](../media/content-understanding/delete-model-confirmation.png)
 
-## Delete a model from a document library
+## Delete a model from the Models library
 
-You can also delete a model from a SharePoint document library. However, before you delete the model, you must first remove the model from all of the other document libraries where it has been applied.
+If you prefer, you can also delete a model from a SharePoint document library. However, before you delete the model, you must first remove the model from all of the other document libraries where it has been applied.
 
 1. Remove the model either from the model home page or from the document library by selecting **Automate** > **View applied models** > **Remove from library**.
 
