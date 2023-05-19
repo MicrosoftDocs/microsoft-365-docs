@@ -27,7 +27,7 @@ At some point, you might want to delete a Syntex model if it is no longer being 
 
 ## Delete a model from the model home page
 
-This is the easiest method to use to delete a model.
+This is the easiest method to use to delete a model. It deletes the model and automatically removes it from all of the document libraries where it has been applied.
 
 1. On the home page of the model, select **Model settings**.
 
