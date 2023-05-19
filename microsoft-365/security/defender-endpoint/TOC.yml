@@ -100,13 +100,11 @@
       href: mdb-roles-permissions.md
     - name: Step 4 - Set up email notifications for your security team
       href: mdb-email-notifications.md
-    - name: Step 5 - Onboard devices
-      href: mdb-onboard-devices.md
+    - name: Step 5 - Onboard devices and configure Microsoft Defender for Endpoint capabilities
+      href: onboard-configure.md
 
   - name: Onboard and configure devices
     items:
-    - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
-      href: onboard-configure.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -185,8 +183,7 @@
           - name: Manual deployment
             href: linux-install-manually.md
           - name: Saltstack based deployment
-            href: linux-install-with-saltack.md
-            
+            href: linux-install-with-saltack.md   
           
         - name: Update
           href: linux-updates.md
