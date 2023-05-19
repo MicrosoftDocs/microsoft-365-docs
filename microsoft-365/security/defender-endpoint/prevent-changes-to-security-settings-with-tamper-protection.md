@@ -55,8 +55,7 @@ When tamper protection is turned on, tamper-protected settings can't be changed.
 - Notifications are visible in the Windows Security app on Windows devices.
 - Archived files are scanned. 
 
-> [!NOTE]
-> As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is enabled.
+*As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is enabled.*
 
 > [!IMPORTANT]
 > When tamper protection is turned on, the tamper-protected settings listed above cannot be changed. To avoid breaking management experiences, including [Intune](manage-tamper-protection-intune.md) and [Configuration Manager](manage-tamper-protection-configuration-manager.md), keep in mind that changes made to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. Depending on your particular scenario, you have several options available: 
