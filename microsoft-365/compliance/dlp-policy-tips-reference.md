@@ -23,30 +23,37 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy tips reference
 
-DLP policy tips in Outlook Web Access are supported for all the conditions, and actions that are applicable on Exchange workload in a DLP policy except the following:
+## DLP policy tips in Outlook Web Access
 
-**Conditions:**
+Policy tips in Outlook Web Access (OWA) are supported for these conditions and actions:
 
-- Recipient is a member of
-- Header contains words or phrases
-- Header matches patterns
-- Message type is
-- Content character set contains words
-- Has sender overridden the policy tip
-- Message size equals or is greater than
-- Sender AD attribute contains words or phrases
-- Sender AD attribute matches patterns
-- Sender IP ranges
-- Recipient AD attribute contains words or phrases
-- Recipient AD attribute matches patterns
+### Conditions that support policyt tips in Outlook Web Access
+
+- Content contains (SIT)
+- Content is shared from M365
+- Sender is a member of
+- Recipient Domain Is 
+- Recipient is
+- Subject Contains Words or phrases
+- Sender is
+- Sender domain is
+- File extension is
+- Subject matches patterns
+- Subject or Body contains words or phrases
+- Doc or Attachment is password protected
 - Document name contains words or phrases
+- Sender address contains words
+- Document size equals or is greater than
+- Subject or Body matches patterns
+- Recipient address contains words
+- Sender address matches patterns
 - Document name matches patterns
-- Document content contains words or phrases
-- Document content matches patterns
-- Any email attachment's content didn't complete scanning
-- Any email attachment's content could not be scanned
+- Recipient address matches patterns
+- Message importance is
+- Any email attachment's content could not be scanned (DocIsUnsupported)
+- Document property is
 
-**Actions:**
+### Actions that support policty tips in Outlook Web Access
 
 - Forward the message for approval to sender’s manager
 - Forward the message for approval to specific approvers
@@ -60,6 +67,8 @@ DLP policy tips in Outlook Web Access are supported for all the conditions, and 
 - Remove O365 Message Encryption and rights protection
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+<!--### Sensitive information types that support policy tips in Outlook Web Access-->
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions
 
