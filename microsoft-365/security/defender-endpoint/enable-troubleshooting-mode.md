@@ -29,7 +29,10 @@ ms.date: 04/18/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Troubleshooting mode in Microsoft Defender for Endpoint enables you to troubleshoot various Microsoft Defender Antivirus features by enabling them on a device and testing different scenarios, even if they're controlled by organization policy. Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
+Troubleshooting mode in Microsoft Defender for Endpoint enables you to troubleshoot various Microsoft Defender Antivirus features by enabling them on a device and testing different scenarios, even if they're controlled by organization policy. For example, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, [certain settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) cannot be modified or turned off, but you can use troubleshooting mode on a device to edit those settings temporarily.
+
+Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
+
 
 ## What do you need to know before you begin?
 
@@ -170,10 +173,10 @@ DeviceEvents
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```
 
-## Related topic
+## Related articles
 
 > [!TIP]
-> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+> **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
 >
 > - Top paths that impact scan time
 > - Top files that impact scan time
