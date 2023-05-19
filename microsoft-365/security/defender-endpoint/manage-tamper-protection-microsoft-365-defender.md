@@ -66,9 +66,15 @@ search.appverid: met150
 
 ## Important points to keep in mind
 
-- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide and restricts [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) to their secure defaults. You can use [Intune](manage-tamper-protection-intune.md) or [Configuration Manager with tenant attach](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. You can also use Intune to [tamper-protect antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions). 
-
 - Currently, the option to manage tamper protection in the Microsoft 365 Defender portal is on by default for new deployments, as part of [built-in protection, which helps guard against ransomware](built-in-protection.md). For existing deployments, tamper protection is available on an opt-in basis. To opt in, in the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), choose **Settings** \> **Endpoints** \> **Advanced features** \> **Tamper protection**. 
+
+- When you enable tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide and restricts [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) to their secure defaults. Any changes made to tamper-protected settings are ignored. Depending on your particular scenario, you have several options available: 
+
+   - If you must make changes to a device and those changes are blocked by tamper protection, you can use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+   
+   - You can use [Intune](manage-tamper-protection-intune.md) or [Configuration Manager](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. 
+   
+   - If you're managing tamper protection through Intune and certain other conditions are met, you can [manage tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).  
 
 ## See also
 
