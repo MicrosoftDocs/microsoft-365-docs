@@ -122,7 +122,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 If the suspected compromised mailbox was used illicitly to send spam email, it's likely that the mailbox has been blocked from sending mail.
 
-To unblock a mailbox from sending mail, follow the procedures in [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
+To unblock a mailbox from sending mail, follow the procedures in [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
 
 ### Step 5 Optional: Block the user account from signing-in
 
