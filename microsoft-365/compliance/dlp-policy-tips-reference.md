@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2021
 
 Policy tips in Outlook Web Access (OWA) are supported for these conditions and actions:
 
-### Conditions that support policyt tips in Outlook Web Access
+### Conditions that support policy tips in Outlook Web Access
 
 - Content contains (SIT)
 - Content is shared from M365
@@ -55,16 +55,21 @@ Policy tips in Outlook Web Access (OWA) are supported for these conditions and a
 
 ### Actions that support policty tips in Outlook Web Access
 
-- Forward the message for approval to sender’s manager
-- Forward the message for approval to specific approvers
+- Restrict access or encrypt the content in Microsoft 365 locations
+- Set headers
+- Remove header
 - Redirect the message to specific users
-- Add recipients to the To Box
-- Add recipients to the Cc Box
-- Add recipients to the Bcc Box
-- Add the sender’s manager as recipient
-- Add HTML disclaimer
-- Prepend email subject
-- Remove O365 Message Encryption and rights protection
+- Forward the message for approval to sender's manager
+- Forward the message for approval to specific approvers
+- Add recipient to the To box
+- Add recipient to the Cc box
+- Add recipient to the Bcc box
+- Add the sender's manager as recipient
+- Removed O365 Message Encryption and rights protection
+- Prepend Email Subject
+- Add HTML Disclaimer
+- Modify Email Subject
+- Deliver the message to the hosted quarantine
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
