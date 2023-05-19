@@ -86,7 +86,7 @@ sections:
       - question: |
           What settings can't be changed when tamper protection is turned on?
         answer: |
-          Tamper-protected settings are as follows: 
+          When tamper protection is turned on, the following security settings are configured: 
           
           - Virus and threat protection is enabled.
           - Real-time protection is turned on.
