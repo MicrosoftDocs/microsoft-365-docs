@@ -34,7 +34,9 @@ ms.date: 5/17/2023
 
 Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in all of Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign **Email & collaboration** permissions in the Microsoft 365 Defender portal.
 
-To manage Defender for Office 365 permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** \> expand **Email & collaboration roles** \> select **Roles** or go directly to <https://security.microsoft.com/securitypermissions>. You need to be a **Global administrator** or a member of the **Organization Management** role group in Defender for Office 365 permissions. Specifically, the **Role Management** role in Defender for Office 365 allows users to view, create, and modify Defender for Office 365 role groups. By default, that role is assigned only to the **Organization Management** role group (and by extension, global administrators).
+To manage Defender for Office 365 permissions in the Microsoft 365 Defender portal, go to **Permissions** \> **Email & collaboration roles** \> **Roles** or go directly to <https://security.microsoft.com/emailandcollabpermissions>.
+
+You need to be member of the **Global Administrator** role in Azure AD or a member of the **Organization Management** role group in Defender for Office 365 permissions. Specifically, the **Role Management** role in Defender for Office 365 allows users to view, create, and modify Defender for Office 365 role groups. By default, that role is assigned only to the **Organization Management** role group (and by extension, global administrators).
 
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -57,7 +59,7 @@ Defender for Office 365 permissions in the Microsoft 365 Defender portal include
 
 ## Roles and role groups in the Microsoft 365 Defender portal
 
-The following types of roles and role groups are available in on the **Permissions & roles** page at <https://security.microsoft.com/securitypermissions> in the Microsoft 365 Defender portal:
+On the **Permissions** page in the Defender portal at <https://security.microsoft.com/securitypermissions>, the following types of roles and role groups are available:
 
 - **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
 
