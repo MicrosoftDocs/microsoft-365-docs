@@ -20,7 +20,7 @@ With Microsoft Bookings, you can set up SMS text notifications to be sent to the
 
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
 
-![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
+![Information icon](../frontline/media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 > [!NOTE]
 >Virtual Appointments SMS notifications are now part of Teams Premium. Contact your administrator if you need a license for Teams Premium.
