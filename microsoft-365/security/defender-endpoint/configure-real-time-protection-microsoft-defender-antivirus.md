@@ -4,14 +4,11 @@ description: Enable and configure Microsoft Defender Antivirus real-time protect
 keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
-ms.date: 05/06/2023
+ms.date: 05/19/2023
 manager: dansimp
 ms.custom: nextgen
 ms.collection: 
@@ -52,10 +49,10 @@ See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpo
 
    | Task | What to do |
    |---|---|
-   | Edit an existing policy for Windows devices | 1. Select an antivirus policy for Windows devices. <br/><br/>2. Next to **Configuration settings**, choose **Edit**. <br/><br/>3. Expand **Defender**, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx). <br/><br/>4. select **Review + save**., and then select **Save**.  |
-   | Edit an existing policy for macOS devices |  |
    | Create a new policy for Windows devices | 1. In the **Create a profile** step, in the **Platform** list, select **Windows 10, Windows 11, and Windows Server**. For **Profile**, select **Microsoft Defender Antivirus**. Then choose **Create**.<br/><br/>2. On the **Basics** step, type a name and description for your policy, and then choose **Next**.<br/><br/>3. On the **Configuration settings** step, expand **Defender**, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx). <br/><br/>4. On the **Scope tags** step, choose **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile, and then select **Next** to continue.<br/><br/>5. On the **Assignments** page, select the groups that will receive this profile, and then select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).<br/><br/>6. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.  |
    | Create a new policy for macOS devices | 1. In the **Create a profile** step, in the **Platform** list, select **macOS**. For **Profile**, select **Antivirus**. Then choose **Create**.<br/><br/>2. On the **Basics** step, type a name and description for your policy, and then choose **Next**.<br/><br/>3. On the **Configuration settings** step, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).<br/><br/>4. On the **Scope tags** step, choose **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile, and then select **Next** to continue.<br/><br/>5. On the **Assignments** page, select the groups that will receive this profile, and then select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).<br/><br/>6. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.  |
+   | Edit an existing policy for Windows devices | 1. Select an antivirus policy for Windows devices. <br/><br/>2. Next to **Configuration settings**, choose **Edit**. <br/><br/>3. Expand **Defender**, and then edit settings for your policy. To get help with your settings, refer to [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx). <br/><br/>4. select **Review + save**., and then select **Save**.  |
+   | Edit an existing policy for macOS devices | 1. Select an antivirus policy for macOS devices. <br/><br/>2. Select **Properties**, and then, next to **Configuration settings**, choose **Edit**. <br/><br/>3. Under **Microsoft Defender for Endpoint**, edit settings for your policy. To get help with your settings, refer to [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).<br/><br/>4. select **Review + save**., and then select **Save**.  |
 
 
 ## Are you using Group Policy?
@@ -110,29 +107,16 @@ To enable and configure always-on protection:
 
 ### Real-time protection policy settings
 
-|Setting|Default setting|
-|---|---|
-|Turn on behavior monitoring <br/><br/> The antivirus engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity.|Enabled|
-|Scan all downloaded files and attachments <br/><br/> Downloaded files and attachments are automatically scanned. This scan  operates in addition to the Windows Defender SmartScreen filter, which scans files before and during downloading.|Enabled|
-|Monitor file and program activity on your computer <br/><br/> The Microsoft Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run).|Enabled|
-|Turn on raw volume write notifications <br/><br/> Information about raw volume writes will be analyzed by behavior monitoring.|Enabled|
-|Turn on process scanning whenever real-time protection is enabled <br/><br/> You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled.|Enabled|
-|Define the maximum size of downloaded files and attachments to be scanned <br/><br/> You can define the size in kilobytes.|Enabled|
-|Configure local setting override for turn on behavior monitoring <br/><br/> Configure a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
-|Configure local setting override for scanning all downloaded files and attachments <br/><br/> Configure a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
-|Configure local setting override for monitoring file and program activity on your computer <br/><br/> Configure a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
-|Configure local setting override to turn on real-time protection <br/><br/> Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
-|Configure local setting override for monitoring for incoming and outgoing file activity <br/><br/> Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
-|Configure monitoring for incoming and outgoing file and program activity <br/><br/> Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This action is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes.|Enabled (both directions)|
+For the most current settings, see get the latest ADMX files in your central store to access the correct policy options. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files. 
 
-## Disable real-time protection in Group Policy
+### Disable real-time protection in Group Policy
 
 > [!WARNING]
-> Disabling real-time protection drastically reduces the protection on your endpoints and is not recommended. In addition, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, you cannot turn it off by using Group Policy. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+> **Disabling real-time protection drastically reduces the protection on your endpoints and is not recommended**. In addition, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, you cannot turn it off by using Group Policy. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
 
 The main real-time protection capability is enabled by default, but you can disable it by using **Local Group Policy Editor**.
 
-### To disable real-time protection in Group policy
+#### To disable real-time protection in Group Policy
 
 1. Open **Local Group Policy Editor**.
 
