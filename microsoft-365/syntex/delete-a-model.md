@@ -27,28 +27,30 @@ At some point, you might want to delete a model. The easiest way is to delete th
 
 ## Delete a model from the model home page
 
+This is the easiest method to use to delete a model.
+
 1. On the home page of the model, select **Model settings**.
 
     ![Screenshot of the Models settings button on the model home page.](../media/content-understanding/model-settings-button.png)
 
-3. On the **Model settings** panel, at the bottom of the panel, select **Delete model**.
+2. On the **Model settings** panel, at the bottom of the panel, select **Delete model**.
 
     ![Screenshot of the Models settings panel showing Delete model option.](../media/content-understanding/model-settings-delete-model.png)
 
-4. To confirm you want to delete the model, on the **Delete model** screen, select **Yes, delete this model**, and then select **Delete**.
+3. To confirm you want to delete the model, on the **Delete model** screen, select **Yes, delete this model**, and then select **Delete**.
 
     ![Screenshot of the Delete model confirmation page.](../media/content-understanding/delete-model-confirmation.png)
 
 ## Delete a model from the Models library
 
-If you prefer, you can also delete a model from a SharePoint document library. However, before you delete the model, you must first remove the model from all of the other document libraries where it has been applied.
+You can also delete a model from a SharePoint document library. However, before you delete the model, you must first remove the model from all of the other document libraries where it has been applied.
 
 1. Remove the model either from the model home page or from the document library by selecting **Automate** > **View applied models** > **Remove from library**.
 
    > [!NOTE]
-   > If you try to delete a model that has been applied to one or more libraries, you will receive a message indicating that you must first remove it from the library.
+   > If you try to delete a model that has been applied to one or more libraries, you will receive an error message indicating that you must first remove it from all libraries to which it's been applied.
  
-2. From the **Models** page, select the model you want to delete.
+2. From the **Models** library, select the model you want to delete.
 
 3. By using either the ribbon or the **Show actions** button (next to the model name), select **Delete**. 
 
