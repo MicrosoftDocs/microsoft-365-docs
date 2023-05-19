@@ -111,7 +111,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-1. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
+1. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in Scenario 1.
 
 1. Choose **edit policy**.
 
@@ -141,7 +141,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
-## Before you begin scenario 4
+## Before you begin Scenario 4
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You will need:
 
