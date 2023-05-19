@@ -26,7 +26,7 @@ ms.date: 3/23/2023
 
 The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
-The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UGG instances and teams in Microsoft Teams.
+The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Microsoft Teams.
 
 You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a Microsoft team at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
 
@@ -46,22 +46,6 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 > [!NOTE]
 > If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
-
-## Before you begin
-
-How you set up UKG Dimensions for your organization determines if the Shifts connector will work. If you follow these steps and still aren’t able to get the connector to work properly, please contact your Microsoft support representative. We’re continually working to upgrade the connector and make sure it works with a wide variety of UKG configurations.
-
-### Examine your UKG organizational setup
-
-Before you try using the Shifts connector, make sure you understand your organization’s UKG Dimensions setup.
-
-- Have you already configured a UKG instance? This refers to a team (a group of users) within your UKG Dimensions system, which is different than a team in Microsoft Teams.
-
-- How is this instance configured?
-
-Each organization that uses UKG Dimensions must establish how its teams will be organized to mirror the organization’s structure and business needs. An admin must set up the relevant requests for your business needs in UKG Dimensions, such as open shift requests and time off requests. 
-
-After you have a complete understanding of your UKG Dimensions setup, check to make sure you meet all the prerequisites for the Shifts connector.  
 
 ### Shifts connector prerequisites
 
@@ -131,7 +115,24 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
 
-1. Enter your UKG Dimensions account username (which enables access to all instances created in UKG Dimensions) and password and service URLs. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+1. Enter your UKG Dimensions information:
+Account username
+Account password
+API URL
+Application key
+Client ID
+Client secret
+SSO URL
+
+Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+
+Note
+Check that your SSO URL is structured like this sample URL: https://contoso-sso.mykronos.com
+
+Then you need to add this extra text at the end of the URL, structured like this (for a sample client ID XDV45GTaaaaab43342XA):
+https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
+
+
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
 1. When you're done, select **Save connection**.
