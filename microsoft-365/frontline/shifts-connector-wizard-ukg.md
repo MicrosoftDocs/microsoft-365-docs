@@ -117,7 +117,7 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
-1. Enter your UKG Dimensions information:
+1. Enter your UKG Dimensions information and then select **Save connection**.
     - Account username
     - Account password
     - API URL
@@ -133,8 +133,6 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 > https://contoso-sso.mykronos.com 
 > - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
 > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
-
-7. When you're done, select **Save connection**.
 
 > [!NOTE]
 > If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
