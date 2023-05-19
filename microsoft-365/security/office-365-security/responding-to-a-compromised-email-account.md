@@ -186,7 +186,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
    2. On the **Admin roles** page, select a role group from the list by clicking anywhere in the row other than the round check box that appears next to the name.
    3. In the details flyout that opens, select the **Assigned** tab, and then look for the user account. If the role group contains the user account, do the following steps:
       1. Select the user account.
-      2. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false":::![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** action that appears, select **Yes, remove** in the warning dialog, and then select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: **Close** at the top of the flyout.
+      2. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, select **Yes, remove** in the warning dialog, and then select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: **Close** at the top of the flyout.
 
    4. Repeat the previous steps for each role group in the list.
 
