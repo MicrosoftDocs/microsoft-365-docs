@@ -48,11 +48,17 @@ See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpo
 
 2. In the navigation pane, choose **Endpoint security** and then, under **Manage**, choose **Antivirus**.
 
+3. 
+
 ## Are you using Group Policy?
 
-If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) will be ignored. 
-
-Moreover, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, you cannot turn it off by using Group Policy. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+> [!IMPORTANT]
+> We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Configuration Manager](/mem/configmgr/core/understand/introduction) to manage Microsoft Defender Antivirus settings for your organization. However, you can use Group Policy to manage some Microsoft Defender Antivirus settings. 
+> 
+> If [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, Any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. In addition, you cannot turn off tamper protection by using Group Policy. 
+> 
+> If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+> 
 
 You can use **Local Group Policy Editor** to enable and configure Microsoft Defender Antivirus always-on protection settings.
 
