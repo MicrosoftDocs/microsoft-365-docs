@@ -134,8 +134,7 @@ After you’ve followed all the steps above and made sure you meet the prerequis
 > - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
 > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
 
-> [!NOTE]
-> If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
+To create another connection, go to the Connector Management Console page and select **Add connection**.
 
 ### Create a connection instance
 
