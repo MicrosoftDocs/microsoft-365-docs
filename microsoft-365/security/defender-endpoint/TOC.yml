@@ -250,8 +250,8 @@
         href: android-configure-mam.md
       - name: Configure Microsoft Defender for Endpoint on iOS features
         href: ios-configure-features.md
-    - name: How to guides
-      items:
+  - name: How to guides
+    items:
     - name: Integration with Microsoft Defender for Cloud
       href: azure-server-integration.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
@@ -268,57 +268,57 @@
       href: security-config-management.md
     - name: Manage Defender for Endpoint P1/P2 across devices
       href: defender-endpoint-subscription-settings.md
-    - name: Configure portal settings
+  - name: Configure portal settings
+    items:
+    - name: Configure general Defender for Endpoint settings
+      href: preferences-setup.md
+    - name: General
       items:
-      - name: Configure general Defender for Endpoint settings
-        href: preferences-setup.md
-      - name: General
-        items:
-        - name: Configure alert notifications
-          href: ../defender/configure-email-notifications.md
-        - name: Configure vulnerability email notifications
-          href: configure-vulnerability-email-notifications.md
-        - name: Configure advanced features
-          href: advanced-features.md
+      - name: Configure alert notifications
+        href: ../defender/configure-email-notifications.md
+      - name: Configure vulnerability email notifications
+        href: configure-vulnerability-email-notifications.md
+      - name: Configure advanced features
+        href: advanced-features.md
 
-      - name: Permissions
+    - name: Permissions
+      items:
+      - name: Use basic permissions to access the portal
+        href: basic-permissions.md
+      - name: Assign user access to the portal
+        href: assign-portal-access.md
+      - name: Manage portal access using RBAC
+        href: rbac.md
         items:
-        - name: Use basic permissions to access the portal
-          href: basic-permissions.md
-        - name: Assign user access to the portal
-          href: assign-portal-access.md
-        - name: Manage portal access using RBAC
-          href: rbac.md
-          items:
-          - name: Create and manage roles
-            href: user-roles.md
-          - name: Create and manage device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
+        - name: Create and manage roles
+          href: user-roles.md
+        - name: Create and manage device groups
+          href: machine-groups.md
+        - name: Create and manage device tags
+          ref: machine-tags.md
 
-      - name: Rules
+    - name: Rules
+      items:
+      - name: Manage suppression rules
+        href: manage-suppression-rules.md
+      - name: Create indicators
+        href: manage-indicators.md
         items:
-        - name: Manage suppression rules
-          href: manage-suppression-rules.md
-        - name: Create indicators
-          href: manage-indicators.md
-          items:
-          - name: Create indicators for files
-            href: indicator-file.md
-          - name: Create indicators for IPs and URLs/domains
-            href: indicator-ip-domain.md
-          - name: Create indicators for certificates
-            href: indicator-certificates.md
-          - name: Manage indicators
-            href: indicator-manage.md
+        - name: Create indicators for files
+          href: indicator-file.md
+        - name: Create indicators for IPs and URLs/domains
+          href: indicator-ip-domain.md
+        - name: Create indicators for certificates
+          href: indicator-certificates.md
+        - name: Manage indicators
+          href: indicator-manage.md
         - name: Manage automation file uploads
           href: manage-automation-file-uploads.md
         - name: Manage automation folder exclusions
           href: manage-automation-folder-exclusions.md
 
-      - name: Device management
-        items:
+    - name: Device management
+      items:
         - name: Onboarding devices
           href: onboard-configure.md
         - name: Offboarding devices
@@ -328,9 +328,8 @@
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
 
-
-      - name: Configure time zone settings
-        href: time-settings.md
+    - name: Configure time zone settings
+      href: time-settings.md
 
   - name: Migration guides
     items:
