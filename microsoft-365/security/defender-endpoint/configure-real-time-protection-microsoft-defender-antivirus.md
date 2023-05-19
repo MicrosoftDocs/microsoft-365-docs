@@ -1,5 +1,5 @@
 ---
-title: Enable and configure Microsoft Defender Antivirus protection capabilities
+title: Enable and configure Microsoft Defender Antivirus always-on protection
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
 keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
 ms.service: microsoft-365-security
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
+# Enable and configure Microsoft Defender Antivirus always-on protection
 
 **Applies to:**
 
@@ -32,7 +32,6 @@ Always-on protection consists of real-time protection, behavior monitoring, and 
 
 > [!IMPORTANT]
 > When [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. If you must turn off tamper protection or make changes to any tamper-protected settings on a device, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
-
 
 ## Manage antivirus settings with Microsoft Intune
 
@@ -53,7 +52,6 @@ See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpo
    | Create a new policy for macOS devices | 1. In the **Create a profile** step, in the **Platform** list, select **macOS**. For **Profile**, select **Antivirus**. Then choose **Create**.<br/><br/>2. On the **Basics** step, type a name and description for your policy, and then choose **Next**.<br/><br/>3. On the **Configuration settings** step, select the settings you want to use for your policy, and then choose **Next**. To get help with your settings, refer to [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).<br/><br/>4. On the **Scope tags** step, choose **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile, and then select **Next** to continue.<br/><br/>5. On the **Assignments** page, select the groups that will receive this profile, and then select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).<br/><br/>6. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.  |
    | Edit an existing policy for Windows devices | 1. Select an antivirus policy for Windows devices. <br/><br/>2. Next to **Configuration settings**, choose **Edit**. <br/><br/>3. Expand **Defender**, and then edit settings for your policy. To get help with your settings, refer to [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx). <br/><br/>4. select **Review + save**., and then select **Save**.  |
    | Edit an existing policy for macOS devices | 1. Select an antivirus policy for macOS devices. <br/><br/>2. Select **Properties**, and then, next to **Configuration settings**, choose **Edit**. <br/><br/>3. Under **Microsoft Defender for Endpoint**, edit settings for your policy. To get help with your settings, refer to [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).<br/><br/>4. select **Review + save**., and then select **Save**.  |
-
 
 ## Are you using Group Policy?
 
