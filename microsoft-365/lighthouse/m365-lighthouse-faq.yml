@@ -106,7 +106,7 @@ sections:
               > [!NOTE]
               > Dismissal of a deployment task impacts all users in the tenant.
 
-      - question: How do I change the deployment state of a configuration for a conditional access policy deployed through Lighthouse from "Report Only" to "Enabled"?
+      - question: How do I change the deployment state of a configuration from "Report Only" to "Enabled" for a conditional access policy deployed through Lighthouse?
         answer: |
           Do one of the following:
           
@@ -122,7 +122,7 @@ sections:
             2. Select **Next** to proceed to the **Review detected configurations** page.
             3. From the list of detected configurations, select the applicable configuration to open it in Azure AD.
             4. Delete the configuration in Azure AD.
-            5. Retturn to the **Review detected configurations** page in Lighthouse, and then select **Refresh** to refresh the detected configurations.
+            5. Return to the **Review detected configurations** page in Lighthouse, and then select **Refresh** to refresh the detected configurations.
             6. Select **Next** to confirm and deploy.
 
       - question: How do I fix an existing configuration that has a setting that's not compliant with the deployment plan?
@@ -209,12 +209,12 @@ sections:
 
       - question: Why do one or more deployment tasks have a status of "Not complete"?
         answer: |
-          Deployment plans are **Not complete** if there are one or more tasks that are either **Not Licensed** or **Not compliant**. 
+          Deployment plans are **Not complete** if there are one or more tasks that are either **Not licensed** or **Not compliant**. 
           
           To investigate and resolve a **Not complete** deployment plan:
         
           1. Open the customer tenant's deployment plan to view the status of the assigned deployment tasks.
-          
+
           2. Review each deployment task that has a status of **Not licensed** or **Not compliant**, and then do one of the following:
               - To resolve **Not licensed** deployment tasks, either assign the required license to each of the targeted users or dismiss the task from the deployment plan.
               - To resolve **Not compliant** deployment tasks, either complete the deployment of the task or dismiss the task from the deployment plan.
