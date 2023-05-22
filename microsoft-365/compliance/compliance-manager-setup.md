@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/17/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
