@@ -21,7 +21,7 @@ With Microsoft Bookings, you can set up SMS text notifications to be sent to the
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
 
 > [!NOTE]
-> We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
+>Virtual Appointments SMS notifications are now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Contact your administrator if you need a license for Teams Premium.
 
 ## Before you begin
 
@@ -40,7 +40,7 @@ You can configure SMS notification in Bookings in a couple of ways:
 > [!NOTE]
 > You need to be a Teams admin to see Teams and Bookings data on the Teams admin center.
 
-You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports include data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after March 1, 2023.
+You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports include data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after April 3, 2023.
 
 1. On the Teams admin center, go to **SMS notifications usage**.
 

@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
@@ -27,6 +27,7 @@ ms.date: 05/02/2022
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -63,8 +64,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 1.3 URL
 
@@ -158,8 +159,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 2.3 URL
 

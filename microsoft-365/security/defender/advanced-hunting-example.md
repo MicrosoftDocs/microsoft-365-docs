@@ -18,7 +18,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 ms.date: 06/10/2021
 ---

@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/05/2020
+ms.date: 02/07/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -73,36 +73,7 @@ Select dedicated stakeholders to investigate and review the alerts and cases on 
 
 ### Configure permissions
 
-There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
-
-- Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
-- Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
-- *Communication Compliance* role group
-- *Communication Compliance Admins* role group
-
-Members of the following roles have the same solution permissions included with the *Communication Compliance Admins* role group:
-
-- Azure Active Directory *Global Administrator*
-- Azure Active Directory *Compliance Administrator*
-- Microsoft Purview compliance portal *Organization Management*
-- Microsoft Purview compliance portal *Compliance Administrator*
-
-> [!IMPORTANT]
-> Make sure you always have at least one user in the *Communication Compliance* or *Communication Compliance Admins* role groups (depending on the option you choose) so that your communication compliance configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
-
-Depending on how you wish to manage communication compliance policies and alerts, you'll need to assign users to specific role groups to manage different sets of communication compliance features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of communication compliance features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Communication Compliance* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
-
-Choose from these solution role group options when configuring and managing communication compliance:
-
-|**Role**|**Role permissions**|
-|:-----|:-----|
-| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that don't need separate permissions defined for separate groups of users. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online. |
-| **Communication Compliance Admins** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group can't view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online. |
-| **Communication Compliance Analysts** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they're assigned as Reviewers, view message metadata and content, and escalate to additional reviewers. Analysts can resolve pending alerts. |
-| **Communication Compliance Investigators** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an eDiscovery (Premium) case, send notifications to users, and resolve the alert. |
-| **Communication Compliance Viewers** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+There are six role groups used to configure initial permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, you must be assigned to one those groups. For more information, see [Enable permissions for communication compliance](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 ### Scoped users
 
@@ -118,6 +89,9 @@ When you create a communication compliance policy, you must determine who review
 ### Groups for scoped users and reviewers
 
 To simplify your setup, we recommend you create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to identify communications between two distinct groups of people, or if you want to specify a group that isn't in scope. When you assign a Distribution group in the policy, the policy detects all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy detects all emails sent to that group, not the individual emails received by each group member.
+
+> [!NOTE]
+> Before you create a policy, you should decide whether you want to apply an **adaptive scope** for users or groups. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 Adding groups and distribution lists to communication compliance policies are part of the overall conditions and rules set, so the maximum number of groups and distribution lists that a policy supports varies depending on the number of conditions also added to the policy. Each policy should support approximately 20 groups or distribution lists, depending on the number of additional conditions present in the policy.
 
@@ -144,6 +118,7 @@ Creating communication compliance policies is quick and easy with the [pre-defin
 When planning for communication compliance policies, consider the following areas:
 
 - Consider adding all users in your organization as in-scope for your communication compliance policies. Identifying specific users as in-scope for individual policies are useful in some circumstances, however most organizations should include all users in communication compliance policies optimized for harassment or discrimination detection.
+- Decide whether you want to apply an adaptive scope to your communication compliance policy. For more information, see [Adaptive policy scopes for retention](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). Creating multiple policies can result in higher administrative overheads. 
 - Configure the percentage of communications to review at 100% to ensure that policies are catching all issues of concern in communications for your organization.
 - You can analyze communications from [third-party sources](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a third-party connector to these services before messages meeting policy conditions are detected by a communication policy.
 - Policies can support detecting languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with) in Microsoft 365.

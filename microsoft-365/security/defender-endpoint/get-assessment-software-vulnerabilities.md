@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+author: Dansimp
 ms.author: dansimp
-author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -27,6 +27,7 @@ ms.date: 06/04/2021
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -102,7 +103,7 @@ CveId|String|Unique identifier assigned to the security vulnerability under the 
 CvssScore|String|The CVSS score of the CVE.|6.2
 DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
-DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
+DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]
 ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
 Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
@@ -112,7 +113,7 @@ RbacGroupName|String|The role-based access control (RBAC) group. If this device 
 RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
 RecommendedSecurityUpdateId (optional)|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
-RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|["HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight"]
 SecurityUpdateAvailable|Boolean|Indicates whether a security update is available for the software.| Possible values are true or false.
 SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google
@@ -403,7 +404,7 @@ RbacGroupName|String|The role-based access control (RBAC) group. If this device 
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
 RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
-RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
+RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|["HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome"]  
 SoftwareName|String|Name of the software product.|Chrome  
 SoftwareVendor|String|Name of the software vendor.|Google  
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138  
@@ -417,7 +418,7 @@ VulnerabilitySeverityLevel|String|Severity level that is assigned to the securit
    1. Fixed: CVE-A on version 1.0 was fixed.
    1. New: CVE-A on version 2.0 was added.
 
-- If a specific vulnerability (for example, CVE-A) was first seen at a specific time (for example, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you will receive these two separated events:
+- If a specific vulnerability (for example, CVE-A) was first seen at a specific time (for example, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you'll receive these two separated events:
    1. Fixed: CVE-X, FirstSeenTimestamp January 10, version 1,0.
    1. New: CVE-X, FirstSeenTimestamp January 10, version 2.0.
 

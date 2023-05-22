@@ -48,7 +48,7 @@ invoke SeenBy(x)
 
 - where **x** is the device ID of interest
 
->[!TIP]
+> [!TIP]
 > Enrichment functions will show supplemental information only when they are available. Availability of information is varied and depends on a lot of factors. Make sure to consider this when using SeenBy() in your queries or in creating custom detections. For best results, we recommend using the SeenBy() function with the DeviceInfo table.
 
 ### Example: Obtain list of onboarded devices that have seen a device

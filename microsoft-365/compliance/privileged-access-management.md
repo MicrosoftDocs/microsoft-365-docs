@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft Purview, compliance, privileged access manage
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/10/2019
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: overview
 f1.keywords:

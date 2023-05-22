@@ -43,7 +43,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploy using Intune OMA-URI
 
-Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
+Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
 
 1. Enable or Disable Device control (Optional):
 

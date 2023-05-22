@@ -65,7 +65,7 @@ The From address is defined in detail across several RFCs (for example, RFC 5322
   These are some additional considerations for the EmailAddress value:
 
   - Only one email address.
-  - We recommend that you do not separate the angle brackets with spaces.
+  - We recommend that you don't separate the angle brackets with spaces.
   - Don't include additional text after the email address.
 
 ## Examples of valid and invalid From addresses
@@ -82,7 +82,7 @@ The following From email addresses are valid:
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)
+- `From: Microsoft 365 <sender@contoso.com>` (Not recommended because the display name isn't enclosed in double quotation marks.)
 
 The following From email addresses are invalid:
 
@@ -94,15 +94,15 @@ The following From email addresses are invalid:
 
   Now, messages with a blank From address are no longer accepted.
 
-- `From: Microsoft 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
+- `From: Microsoft 365 sender@contoso.com` (The display name is present, but the email address isn't enclosed in angle brackets.)
 
 - `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)
 
-- `From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)
+- `From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but isn't enclosed in double quotation marks.)
 
 - `From: "Microsoft 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address isn't enclosed in angle brackets.)
 
 - `From: Microsoft 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)
 
@@ -110,7 +110,7 @@ The following From email addresses are invalid:
 
 ## Suppress auto-replies to your custom domain
 
-You can't use the value `From: <>` to suppress auto-replies. Instead, you need to set up a null MX record for your custom domain. Auto-replies (and all replies) are naturally suppressed because there is no published address that the responding server can send messages to.
+You can't use the value `From: <>` to suppress auto-replies. Instead, you need to set up a null MX record for your custom domain. Auto-replies (and all replies) are naturally suppressed because there's no published address that the responding server can send messages to.
 
 - Choose an email domain that can't receive email. For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.
 
@@ -130,8 +130,8 @@ For more information about publishing a null MX, see [RFC 7505](https://tools.ie
 
 To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-You can't override the From address requirements for outbound email that you send from Microsoft 365. In addition, Outlook.com will not allow overrides of any kind, even through support.
+You can't override the From address requirements for outbound email that you send from Microsoft 365. In addition, Outlook.com won't allow overrides of any kind, even through support.
 
 ## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../business-premium/secure-your-business-data.md).

@@ -70,8 +70,7 @@ This policy is named **Default DLP policy** and appears under **Data loss preven
   
 This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. You can also turn off or delete the policy, so that your users no longer receive policy tips or email notifications.
   
-![DLP policy named Default DLP policy.](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
-  
+ 
 ## When the widget does and does not appear
 
 The widget named **Further protect shared content** appears in the **Recommended for you** section of the **Home** page of the Microsoft Purview compliance portal. 
