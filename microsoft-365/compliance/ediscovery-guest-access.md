@@ -72,6 +72,11 @@ After guest invitations are submitted, eDiscovery admins must approve the reques
 1. eDiscovery managers are notified of pending invitation requests on the **Overview** tab in eDiscovery (Premium).
 2. To review and approve or deny the request, navigate to **eDiscovery** > **Premium** > **eDsicovery (Premium) settings** > **Guest users (preview)**. Select the guest request and select **Create account** or **Deny**. It may take up to 24 hours for the guest account to be created and for the guest user to receive the invitation email.
 
+In you encounter an error when approving the guest user access to a case, check the following:
+
+- The guest user’s email is not disabled, blocked or deleted by the tenant admin.
+- If there are any members in the *Reviewer* role group whose AAD account has been deleted. Currently, an error will occur when adding a new member to a role group that has any deleted users. If the *Reviewer* role group has any deleted users, [remove them from the role group](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#remove-users-or-groups-from-a-microsoft-purview-built-in-role-group) and retry the guest user approval.
+
 ## Accepting guest user invitations
 
 After the request is approved by the eDiscovery manager, the guest user receives a welcome email from the eDiscovery admin. This email contains information about the eDiscovery invitation and link where the guest can accept the invite and sign in.
@@ -84,10 +89,9 @@ After accepting the invitation and authenticating, the guest can participate in 
 
 ## Removing guest access
 
-An eDiscovery admin can remove a guest user’s access to a case from eDiscovery Premium settings page.
+An eDiscovery admin can remove a guest user’s access to a case from eDiscovery Premium settings page. To remove guest access for a user, eDiscovery admins will complete the following steps:
 
-To remove guest access for a user, eDiscovery admins will complete the following steps:
+1. To review and approve or deny the request, navigate to **eDiscovery** > **Premium** > **eDsicovery (Premium) settings** > **Guest users (preview)**. 
+2. Select the guest user and select **Remove** from the flyput pane.
 
-STEPS
-
-The guest user will continue to have access to other cases that they have been added to. When a guest user is removed from the last case, they have access to, they will be removed from the Reviewer role group and will not have access to any cases in eD Premium. 
+The guest user will continue to have access to other cases that they have been added to. When a guest user is removed from the last case they have access to, they are removed from the *Reviewer* role group and won't have access to any cases in eDiscovery (Premium).
