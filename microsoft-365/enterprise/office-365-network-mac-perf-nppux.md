@@ -39,7 +39,7 @@ The top five network providers by network requests from your users are shown on 
 
 In the lower part of the page shows a table of all significant detected network providers. It can show these attributes for each network provider:
 
-* **Network provider name** - The network provider name from public contributions
+* **Network provider name** – The network provider name from public contributions
 * **Solution name** – Listed if a network provider has multiple network solutions which are measured separately
 * **Percent of requests** – The percentage of requests for the specific provider for all your users
 * **Performance** – The network assessment performance out of 100 attributed to this network provider
