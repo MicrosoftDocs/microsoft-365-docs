@@ -1,7 +1,7 @@
 ---
 title: "Network provider connectivity attribution in the Microsoft 365 Admin Center (PREVIEW)"
 ms.author: teleary
-author: teleary-msft
+author: temanteleary
 manager: scotv
 ms.date: 05/05/2023
 audience: Admin
@@ -27,7 +27,7 @@ In the Microsoft 365 Admin Center you can view network providers in use by your 
 > [!div class="mx-imgBorder"]
 > ![Network provider traffic.](../media/m365-mac-perf/m365-mac-perf-nppux-networktraffic.png)
 
-When you navigate to the Network traffic tab you will see information about connectivity solutions from network providers that have been detected between Office 365 users and Microsoft’s network.
+When you navigate to the Network traffic tab you will see information about connectivity solutions from network providers that have been detected between Office 365 users and Microsoft's network.
 
 Network providers are identified as either of the following:
 
