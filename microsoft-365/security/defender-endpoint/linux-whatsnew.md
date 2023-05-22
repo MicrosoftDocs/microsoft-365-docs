@@ -49,7 +49,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - There are multiple fixes and new changes in this release 
 	- Improved Network Protection Proxy handling.
 	- In Passive mode, MDE no longer scans when Definition update happens.
-	- Device will continue to be protected even after MDE agent is expired. It is still recommended to upgrade to receive latest bug fixes, features and performance improvements.
+	- Device will continue to be protected even after MDE agent is expired. It's still recommended to upgrade to receive latest bug fixes, features and performance improvements.
 	- Removed semanage package dependency.
 	- Engine Update to 1.1.20100.7 and Signatures Ver: 1.385.1648.0.
 	- Bug fixes.
@@ -196,7 +196,7 @@ sudo systemctl disable mdatp
 &ensp;Signature version: **1.379.1299.0**<br/>
 	
 **What's new**
-- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There's no change for other customers and upgrade is optional. 
 	
 **Known issues**
 
