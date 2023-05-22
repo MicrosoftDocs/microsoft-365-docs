@@ -93,7 +93,7 @@
     - name: Overview
       href: mde-planning-guide.md
     - name: Step 1 - Confirm your license state
-      href: production-deployment.md
+      href: prepare-deployment.md
     - name: Step 2 - inventory your environment
       href: prepare-deployment.md
     - name: Step 3 - Assign roles and permissions
