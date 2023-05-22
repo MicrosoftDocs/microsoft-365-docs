@@ -177,8 +177,25 @@ Yes
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
+LEFT OFF HERE 
 
-LEFT OFF HERE#
+## Supported sensitivity labels
+
+Lorem ipsum:
+
+- dolor sit amet
+
+## Supported retention labels
+
+Lorem ipsum:
+
+- dolor sit amet
+
+## Supported trainable classifiers
+
+Lorem ipsum:
+
+- dolor sit ame
 
 ## From Elsewhere
 
@@ -216,38 +233,6 @@ Note that when you add sensitive information to an email, there may be latency b
 
 
 
-## DLP policy match notification supported
+## DLP policy match email notification supported
 
 
-## Supported versions and channels
-
-
-
-
-F
-
-
-
-Lorem ipsum:
-
-- dolor sit amet
-
-
-
-## Supported sensitivity labels
-
-Lorem ipsum:
-
-- dolor sit amet
-
-## Supported retention labels
-
-Lorem ipsum:
-
-- dolor sit amet
-
-## Supported trainable classifiers
-
-Lorem ipsum:
-
-- dolor sit amet
