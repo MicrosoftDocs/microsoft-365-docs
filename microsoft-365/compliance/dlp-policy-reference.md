@@ -50,7 +50,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum number of DLP rules:
     - In a policy: Limited by the size of the policy
     - In a tenant: 600
-- Maximum size of an individual DLP rule: 80 KB
+- Maximum size of an individual DLP rule: 100 KB
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
 - Regex size limit for all matches predicted: 20 KB
