@@ -16,7 +16,6 @@ ms.collection:
 - tier3
 search.appverid: 
 - MOE150
-- MET150
 description: Identify the minimum versions of Office apps that support specific capabilities for sensitivity labels from Microsoft Purview Information Protection.
 ---
 
@@ -66,7 +65,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) |Current Channel: 2301+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: Under review |16.69+ |Preview: Rolling out to [Beta Channel](https://insider.office.com/join/ios) |Preview: Rolling out to [Beta Channel](https://insider.office.com/join/android)| [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Encrypt files using double key encryption](https://learn.microsoft.com/en-us/microsoft-365/compliance/double-key-encryption) |Preview: [Beta Channel](https://office.com/insider) <br /><br> Current Channel: Under review <br /><br>Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: Under review |Under review |Under review |Under review| Under review |
+|[Double key encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) |Preview: [Beta Channel](https://office.com/insider) <br /><br> Current Channel: Under review <br /><br>Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: Under review |Under review |Under review |Under review| Under review |
 
 
 ## Sensitivity label capabilities in Outlook
@@ -104,8 +103,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) |Current Channel: 2303+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: 2302+ |Rolling out: 16.70+ <sup>\*</sup> | Rolling out: 4.2309+ |Rolling out: 4.2309+ |Yes |
 |[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)|Preview: [Current Channel (Preview)](https://office.com/insider) |Under review |Under review |Under review |Under review |
 |[Label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments) |Current Channel: 2303+ <br /><br> Monthly Enterprise Channel: 2304+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
-|[Encrypt emails using double key encryption](https://learn.microsoft.com/en-us/microsoft-365/compliance/double-key-encryption) |Preview: [Beta Channel](https://office.com/insider) <br /><br> Current Channel: Under review <br /><br>Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel: Under review |Under review |Under review |Under review| Under review |
-
+|[Double key encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) |Under review |Under review |Under review |Under review| Under review |
 
 **Footnotes:**
 

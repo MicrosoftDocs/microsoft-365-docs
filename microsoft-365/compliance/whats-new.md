@@ -53,6 +53,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
 
+### Sensitivity labels
+- **In preview**: Word, Excel, and PowerPoint, but not yet Outlook support [double key encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) in preview. Unlike the AIP add-in that can apply DKE, built-in labeling for DKE supports co-authoring and AutoSave for encrypted documents.
+
 ## April 2023
 
 ### Communication compliance
