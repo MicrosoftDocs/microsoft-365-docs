@@ -270,6 +270,44 @@
       href: security-config-management.md
     - name: Manage Defender for Endpoint P1/P2 across devices
       href: defender-endpoint-subscription-settings.md
+ 
+  - name: Migration guides
+    items:
+    - name: Migration guides overview
+      href: migration-guides.md
+    - name: Migrate Defender for Endpoint servers to Defender for Cloud
+      href: migrating-mde-server-to-cloud.md
+    - name: Migrate to Defender for Endpoint
+      href: switch-to-mde-overview.md
+      items:
+      - name: Phase 1 - Prepare
+        href: switch-to-mde-phase-1.md
+      - name: Phase 2 - Setup
+        href: switch-to-mde-phase-2.md
+      - name: Phase 3 - Onboard
+        href: switch-to-mde-phase-3.md
+
+    - name: Manage Defender for Endpoint after migration or setup
+      items:
+      - name: Overview
+        href: manage-mde-post-migration.md
+      - name: Use Intune (recommended)
+        href: manage-mde-post-migration-intune.md
+      - name: Use Configuration Manager
+        href: manage-mde-post-migration-configuration-manager.md
+      - name: Use Group Policy
+        href: manage-mde-post-migration-group-policy-objects.md
+      - name: Use PowerShell, WMI, or MPCmdRun.exe
+        href: manage-mde-post-migration-other-tools.md
+      - name: Updating MMA on Windows devices
+        href: update-agent-mma-windows.md
+      - name: Server migration scenarios
+        items:
+        - name: Overview
+          href: server-migration.md
+        - name: Migrating servers from Microsoft Monitoring Agent to the unified solution
+          href: application-deployment-via-mecm.md
+
   - name: Configure portal settings
     items:
     - name: Configure general Defender for Endpoint settings
@@ -332,44 +370,6 @@
 
     - name: Configure time zone settings
       href: time-settings.md
-
-  - name: Migration guides
-    items:
-    - name: Migration guides overview
-      href: migration-guides.md
-    - name: Migrate Defender for Endpoint servers to Defender for Cloud
-      href: migrating-mde-server-to-cloud.md
-    - name: Migrate to Defender for Endpoint
-      href: switch-to-mde-overview.md
-      items:
-      - name: Phase 1 - Prepare
-        href: switch-to-mde-phase-1.md
-      - name: Phase 2 - Setup
-        href: switch-to-mde-phase-2.md
-      - name: Phase 3 - Onboard
-        href: switch-to-mde-phase-3.md
-
-    - name: Manage Defender for Endpoint after migration or setup
-      items:
-      - name: Overview
-        href: manage-mde-post-migration.md
-      - name: Use Intune (recommended)
-        href: manage-mde-post-migration-intune.md
-      - name: Use Configuration Manager
-        href: manage-mde-post-migration-configuration-manager.md
-      - name: Use Group Policy
-        href: manage-mde-post-migration-group-policy-objects.md
-      - name: Use PowerShell, WMI, or MPCmdRun.exe
-        href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
-      - name: Server migration scenarios
-        items:
-        - name: Overview
-          href: server-migration.md
-        - name: Migrating servers from Microsoft Monitoring Agent to the unified solution
-          href: application-deployment-via-mecm.md
-
 
   - name: Detect threats and protect endpoints
     items:
