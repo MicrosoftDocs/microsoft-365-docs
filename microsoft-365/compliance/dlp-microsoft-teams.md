@@ -34,10 +34,13 @@ You can extend the Teams DLP policy to cover SharePoint Online and OneDrive for 
 > [!NOTE]
 > Only those Teams policies that have rules with conditions of **content contains** or **content is shared from Microsoft 365** can be extended for automatic file protection. If the condition or exception configuration has **Sender is**, **sender domain is**, **recipient is**, and **recipient domain is** present, the extension action will fail because these conditions don’t apply to SharePoint and OneDrive.
 
-- **Example 3: Protecting communications in Teams Shared Channels**. For shared channels, the host Teams team DLP policy is applied. For example let’s say there's a shared channel owned by TeamA of Contoso. TeamA has a DLP policy P1. There are 3 ways to share a channel:
-    - **Share with member**: You invite user1 from Contoso to join the shared channel without making him a member of TeamA. Everyone in this shared channel, including user1, will be covered by P1.
-    - **Share with team (internally)**: You share the channel with another team TeamB in Contoso. That another team may have a different DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA and TeamB users.
-    - **Share with team (cross tenant)**: You share the channel with a team TeamF in Fabrikam. Fabrikam may have its own DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA (Contoso) and TeamF (Fabrikam) users.
+- **Example 3: Protecting communications in Teams Shared Channels**. For shared channels, the host Teams team DLP policy is applied. For example let’s say there's a shared channel owned by TeamA of Contoso. Team A has a DLP policy P1. There are 3 ways to share a channel:
+    - **Share with member**: You invite User1 from Contoso to join the shared channel without making him a member of Team A. Everyone in this shared channel, including User1, will be covered by P1.
+    - **Share with team (internally)**: You share the channel with another team Team B in Contoso. That another team may have a different DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both Team A and Team B users.
+    - **Share with team (cross tenant)**: You share the channel with a team Team F in Fabrikam. Fabrikam may have its own DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both Team A (Contoso) and Team F (Fabrikam) users.
+
+- **Example 4: Protecting communications when chatting with external users in Microsoft Teams**. When using the *external access* feature in Microsoft Teams, people from different organizations can all join the same chat session. Each user is subject to the DLP policies of their own organization. For instance, say that UserA, UserB and UserC, all from Contoso, and UserX, UserY, and UserZ, all from Fabrikam, are in the same Teams chat. Contoso's DLP policies with regard to sharing information in Teams apply to UserA, UserB and UserC, while Fabrikam's DLP policies apply to UserX, UserY, and UserZ. For more information on using Microsoft Teams to chat with people external to your organization, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/trusted-organizations-external-meetings-chat)
+
  
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
