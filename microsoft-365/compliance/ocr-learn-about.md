@@ -119,7 +119,7 @@ This functionality supports scanning images in the following file types, with th
 <br>
 
 ## What languages are supported?
-OCR scanning supports more than [150 languages](https://azure.microsoft.com/cognitive-services/computer-vision/language-support).
+OCR scanning supports more than [150 languages](/azure/cognitive-services/language-support).
 
 ## Summary
 - To use OCR, you must set up Microsoft Syntex pay-as-you-go billing. (You don’t need to set up Microsoft Syntex itself.)

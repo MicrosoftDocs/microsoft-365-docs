@@ -12,8 +12,8 @@
     tocHref: /microsoft-365/bookings/
     topicHref: /microsoft-365/bookings/
   - name: Microsoft 365 Business Premium
-    tocHref: /microsoft-365/business-premium/index
-    topicHref: /business-premium/index
+    tocHref: /microsoft-365/business-premium/
+    topicHref: /microsoft-365/business-premium/index
   - name: Microsoft Purview
     tocHref: /microsoft-365/compliance/
     topicHref: /microsoft-365/compliance/
