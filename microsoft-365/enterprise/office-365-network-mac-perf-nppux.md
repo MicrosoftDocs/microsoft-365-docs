@@ -31,7 +31,7 @@ When you navigate to the Network traffic tab you will see information about conn
 
 Network providers are identified as either of the following:
 
-* **ISP** - Internet Service Provider that provides data transmission media such as terrestrial ISP, cellular ISP, or satellite ISP
+* **ISP** – Internet Service Provider that provides data transmission media such as terrestrial ISP, cellular ISP, or satellite ISP
 * **Overlay** – An additional detected network provider providing other services such as VPN, Cloud Proxy, SD-WAN, and SASE
 * **Corporate** – The customer owns detection attributes for network providers
 
