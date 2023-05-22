@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -456,7 +456,7 @@ However, take into consideration the outcome when an email client doesn't suppor
 
 ## PDF support
 
-For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md). The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
+For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify supported versions. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
 Office for Windows: Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 

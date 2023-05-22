@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -55,7 +55,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) for Word, Excel, and PowerPoint.
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that Word, Excel, and PowerPoint can convert an Office document into a PDF document.
 
 ## April 2023
 
