@@ -49,7 +49,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - There are multiple fixes and new changes in this release 
 	- Improved Network Protection Proxy handling.
 	- In Passive mode, MDE no longer scans when Definition update happens.
-	- Change in behaviour of product expiration. The AV scan will continue to work even when the MDE agent is expired.
+	- Device will continue to be protected even after MDE agent is expired. It is still recommended to upgrade to receive latest bug fixes, features and performance improvements.
 	- Removed semanage package dependency.
 	- Engine Update to 1.1.20100.7 and Signatures Ver: 1.385.1648.0.
 	- Bug fixes.
