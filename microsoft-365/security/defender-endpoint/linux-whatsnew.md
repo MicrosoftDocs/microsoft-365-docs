@@ -313,7 +313,7 @@ sudo systemctl disable mdatp
   - Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
   - Fixes an issue with Network Protection and SMB.
   - lttng performance tracing support.
-  - TVM, eBPF, auditd, telemetry and mdatp cli improvements.
+  - TVM, eBPF, auditd, telemetry and mdatp CLI improvements.
   - mdatp health will now report behavior_monitoring
   - Other fixes.
 
