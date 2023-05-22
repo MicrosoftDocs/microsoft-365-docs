@@ -81,3 +81,13 @@ After the request is approved by the eDiscovery manager, the guest user receives
 Guests that have a work or school account in Azure Active Directory can accept the invitation and authenticate immediately. Other users are sent a [one-time passcode](/azure/active-directory/external-identities/one-time-passcode) to validate their identity. Guests can also authenticate via social media accounts if those methods are enabled in Azure settings.
 
 After accepting the invitation and authenticating, the guest can participate in the eDiscovery case like an internal reviewer of the case and perform review activities such as querying, filtering, tagging, redaction, and more.
+
+## Removing guest access
+
+An eDiscovery admin can remove a guest user’s access to a case from eDiscovery Premium settings page.
+
+To remove guest access for a user, eDiscovery admins will complete the following steps:
+
+STEPS
+
+The guest user will continue to have access to other cases that they have been added to. When a guest user is removed from the last case, they have access to, they will be removed from the Reviewer role group and will not have access to any cases in eD Premium. 
