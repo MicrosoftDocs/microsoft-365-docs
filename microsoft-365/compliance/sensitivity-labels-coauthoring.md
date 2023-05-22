@@ -83,6 +83,8 @@ Make sure you understand the following prerequisites before you turn on this fea
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
         - Additionally, you're not using [Double Key Encryption](double-key-encryption.md) in the same tenant
+            > [!NOTE]
+            > If you want to use Double Key Encryption with co-authoring and Auto-Save, use built-in labeling instead of the Azure Information Protection unified labeling client. For release details, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
