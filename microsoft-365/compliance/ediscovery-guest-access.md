@@ -89,7 +89,10 @@ After the request is approved by the eDiscovery admin, the guest receives a welc
 
 ![Email invitation for guest access to an eDiscovery (Premium case).](..\media\ediscovery-guest-user-invite-email.png)
 
-Guests that have a work or school account in Azure Active Directory can accept the invitation and authenticate immediately. Other users are sent a one-time passcode to validate their identity. You must ensure that the [one-time passcode setting](/azure/active-directory/external-identities/one-time-passcode) is enabled in your organization.```
+Guests that have a work or school account in Azure Active Directory can accept the invitation and authenticate immediately. Other users are sent a one-time passcode to validate their identity. You must ensure that the [one-time passcode setting](/azure/active-directory/external-identities/one-time-passcode) is enabled in your organization.
+
+>[!NOTE]
+>If the guest is logged into another eDiscovery organization in their browser, they need to sign out from the organization and and clear their browser cache before selecting the link in the invitation email.
 
 After accepting the invitation and authenticating, the guest can participate in the eDiscovery case like an internal reviewer of the case and perform review activities such as querying, filtering, tagging, redaction, downloading single items for review, and more.
 
