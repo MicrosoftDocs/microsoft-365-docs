@@ -77,7 +77,7 @@ INSERT LIST HERE
 
 YES/NO
 
-HERE IS THE COMPLETE LIST, DELETE THE UNSUPPORTED ONES
+HERE IS THE COMPLETE LIST, DELETE THE UNSUPPORTED ONES, these will link to the detailed definition articles
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [All credentials](sit-defn-all-creds.md)
