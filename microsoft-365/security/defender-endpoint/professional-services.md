@@ -192,6 +192,10 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 |[Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)|Quorum Cyber|Quorum Cyber's Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 
+## Kroll
+
+Kroll provides proprietary data, technology and insights to help our clients stay ahead of complex demands related to risk, governance and growth. Our solutions deliver a powerful competitive advantage, enabling faster, smarter and more sustainable decisions. With 5,000 experts around the world, we create value and impact for our clients and communities. For more information, see [Kroll](https://www.kroll.com/en).
+
 ## Related topics
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
