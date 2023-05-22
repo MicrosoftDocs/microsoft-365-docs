@@ -88,19 +88,21 @@
       - name: URL reputation demonstrations
         href: defender-endpoint-demonstration-smartscreen-url-reputation.md
  
-  - name: Prepare to deploy Defender for Endpoint
+  - name: Deploy Defender for Endpoint
     items:
     - name: Overview
       href: mde-planning-guide.md
-    - name: Step 1 - Get Defender for Business
-      href: get-defender-business.md
-    - name: Step 2 - Add users and assign licenses
-      href: mdb-add-users.md
-    - name: Step 3 - Assign security roles and permissions
-      href: mdb-roles-permissions.md
-    - name: Step 4 - Set up email notifications for your security team
-      href: mdb-email-notifications.md
-    - name: Step 5 - Onboard devices and configure Microsoft Defender for Endpoint capabilities
+    - name: Step 1 - Confirm your license state
+      href: production-deployment.md
+    - name: Step 2 - inventory your environment
+      href: prepare-deployment.md
+    - name: Step 3 - Assign roles and permissions
+      href: prepare-deployment.md
+    - name: Step 4 - Identify your architecture
+      href: deployment-strategy.md
+    - name: Step 5 - Choose your deployment method
+      href: onboarding.md
+    - name: Step 6 - Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
 
   - name: Onboard and configure devices
