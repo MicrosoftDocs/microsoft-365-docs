@@ -47,9 +47,9 @@ Compliance Manager detects signals from complementary improvement actions that a
 
 Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multicloud support](compliance-manager-multicloud.md) and [scoring](compliance-score-calculation.md).
 
-#### Data connectors
+#### Connectors
 
-We're rolling out a selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services. Connectors for Salesforce and Zoom are available now, with more connectors releasing soon. Learn more at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
+We're rolling out a selection of connectors built specifically for Compliance Manager to support other non-Microsoft services. Connectors for Salesforce and Zoom are available now, with more connectors releasing soon. Learn more at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## Improvement actions details page
 
