@@ -164,6 +164,9 @@ The **Download file** button can have the following states:
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
+> [!IMPORTANT]
+> Tenants that have [role-based access (RBAC)](/microsoft-365/security/defender/manage-rbac.md) permissions will have the option File collection (manage) enabled to collect non-portable executable files.
+
 ### Download quarantined files
 
 Files that have been quarantined by Microsoft Defender Antivirus or your security team will be saved in a compliant way according to your [sample submission configurations](enable-cloud-protection-microsoft-defender-antivirus.md). Your security team can download the files directly from the file's detail page via the "Download file" button. **This feature is turned 'On' by default**.
