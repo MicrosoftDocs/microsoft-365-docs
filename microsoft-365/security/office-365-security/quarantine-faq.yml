@@ -64,7 +64,7 @@ sections:
       - question: |
           What messages can end users access in quarantine?
         answer: |
-          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). 
+          Quarantine policies define whether users can access quarantined messages based on why the message was quarantined for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
           For the default access to quarantined messages, see the table in [Find and release quarantined messages as a user in EOP](quarantine-end-user.md)
 

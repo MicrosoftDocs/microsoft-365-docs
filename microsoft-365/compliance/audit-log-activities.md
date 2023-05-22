@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,7 +24,7 @@ search.appverid:
 
 The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the compliance portal.
 
-These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list (or that are available in PowerShell) and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 > [!TIP]
 > Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
@@ -76,6 +76,9 @@ The following table lists the activities in Briefing email that are logged in th
 ## Communication compliance activities
 
 The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about Microsoft Purview Communication Compliance](communication-compliance.md).
+
+> [!NOTE]
+> These activities are available when using the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. These activities aren't available in the **Activities** drop-down list.
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -147,7 +150,7 @@ You can also search the audit log for activities in Microsoft Purview eDiscovery
 
 Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](audit-log-encrypted-messages.md).
 
-Each audit entry for a tracked message will contain the following fields:
+Each audit entry for a tracked message contains the following fields:
 
 - **MessageID**: Contains the ID of the message being tracked. The key identifier used to follow a message through the system.
 - **Recipient**: List of all recipient email addresses.
@@ -314,6 +317,15 @@ The following table lists the activities in information barriers that are logged
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
 
+## Microsoft Defender Experts activities
+
+The following table lists the activities in Microsoft Defender Experts that are logged into the Microsoft 365 audit log. For more information about Microsoft Defender Experts, see [Learn about Microsoft Defender Experts for XDR](/microsoft-365/security/defender/dex-xdr-overview) and [Learn about Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting)
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+| Defender Experts analyst permission created | DefenderExpertsAnalystPermissionCreated | An administrator granted one or more role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
+| Defender Experts analyst permission modified | DefenderExpertsAnalystPermissionModified | An administrator modified role permissions for Defender Experts analysts to investigate incidents or remediate threats.|
+
 ## Microsoft Forms activities
 
 The tables in this section the user and admin activities in Microsoft Forms that are logged in the audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. Where noted below in the descriptions, some operations contain additional activity parameters.
@@ -339,11 +351,11 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Removed form coauthor|RemoveFormCoauthor|Form owner deletes a collaboration link.|
 |Viewed response page|ViewRuntimeForm|User has opened a response page to view. This event is logged regardless of whether the user submits a response or not.|
 |Created response|CreateResponse|Similar to receiving a new response.  A user has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
-|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property is null.|
 |Deleted all responses|DeleteAllResponses|Form owner deletes all response data.|
 |Deleted Response|DeleteResponse|Form owner deletes one response. <br><br>Property ResponseId:string indicates the response being deleted.|
 |Viewed responses|ViewResponses|Form owner views the aggregated list of responses. <br><br>Property ViewType:string indicates whether form owner is viewing Detail or Aggregate|
-|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property is null.|
 |Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
 |Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
@@ -544,7 +556,7 @@ The following table describes the audit events for activities involving creation
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity will surface under the audit activities “Created rule package” or “Edited rule package.” </p>|
+|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity surfaces under the audit activities 'Created rule package' or 'Edited rule package'. </p>|
 |Edited a sensitive information type|EditRulePackage| An existing sensitive information type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive information type. </br><p>**Note:** This activity will surface under the audit activity "Edited rule package."</p> |
 | Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. </br><p>**Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package.”</p> |
 
@@ -571,7 +583,7 @@ Additional auditing information for sensitivity labels:
 
 ## SharePoint list activities
 
-The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
+The following table describes activities related to when users interact with lists and list items in SharePoint Online. Audit records for some SharePoint activities indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -644,7 +656,7 @@ The following table lists events that result from site administration tasks in S
 |Canceled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Microsoft 365 admin center, SharePoint admin center, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
 |Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Microsoft 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).|
-|Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form will be returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
+|Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form is returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
 |Changed network access policy|NetworkAccessPolicyChanged|A SharePoint or global administrator changed the location-based access policy (also called a trusted network boundary) in the SharePoint admin center or by using SharePoint Online PowerShell. This type of policy controls who can access SharePoint and OneDrive resources in your organization based on authorized IP address ranges that you specify. For more information, see [Control access to SharePoint Online and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location).|
 |Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Created Sent To connection|SendToConnectionAdded|A SharePoint or global administrator creates a new Send To connection on the Records management page in the SharePoint admin center. A Send To connection specifies settings for a document repository or a records center. When you create a Send To connection, a Content Organizer can submit documents to the specified location.|
