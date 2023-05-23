@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn how to manage Microsoft Defender for Office 365 (Email & collaboration) permissions in the Microsoft 365 Defender portal for all tasks related to Defender for Office 365 security features.
+description: Admins can learn how to manage Microsoft Defender for Office 365 (Email & collaboration) permissions in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/17/2023
+ms.date: 5/23/2023
 ---
 
 # Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal
@@ -47,7 +47,7 @@ You need to be member of the **Global Administrator** role in Azure AD or a memb
 
 ## Relationship of members, roles, and role groups
 
-Defender for Office 365 permissions in the Microsoft 365 Defender portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 Defender portal will be very familiar.
+Defender for Office 365 permissions in the Microsoft 365 Defender portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 Defender portal should be familiar.
 
 A **role** grants the permissions to do a set of tasks.
 
@@ -63,13 +63,13 @@ On the **Permissions** page in the Defender portal at <https://security.microsof
 
 - **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
 
-- **Email & collaboration roles**: You can view and manage these role groups directly in the Microsoft 365 Defender portal. These permissions are specific to the Microsoft 365 Defender portal and the Microsoft Purview compliance portal, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
+- **Email & collaboration roles**: You can view and manage these role groups directly in the Microsoft 365 Defender portal. These permissions are specific to the Microsoft 365 Defender portal and the Microsoft Purview compliance portal. These permissions don't cover all of the permissions that you need in other Microsoft 365 workloads.
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="The Permissions & roles page in the Microsoft 365 Defender portal" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### Azure AD roles in the Microsoft 365 Defender portal
 
-When you open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Permissions** \> **Azure AD** \> **Roles** (or directly to <https://security.microsoft.com/aadpermissions>) you see the Azure AD roles that are described in this section.
+Azure AD roles that are described in this section are available in the [Defender portal](https://security.microsoft.com) \> **Permissions** \> **Azure AD** \> **Roles** or directly at <https://security.microsoft.com/aadpermissions>.
 
 When you select a role, a details flyout opens that contains the description of the role and the user assignments. But to manage those assignments, you need to select **Manage members in Azure AD** at the bottom of the flyout.
 
@@ -83,7 +83,7 @@ For more information, see [View and assign administrator roles in Azure Active D
 |**Compliance data administrator**|Keep track of your organization's data across Microsoft 365, make sure it's protected, and get insights into any issues to help mitigate risks. For more information, see [Compliance Data Administrator](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
 |**Compliance administrator**|Help your organization stay compliant with any regulatory requirements, manage eDiscovery cases, and maintain data governance policies across Microsoft 365 locations, identities, and apps. For more information, see [Compliance Administrator](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
 |**Security operator**|View, investigate, and respond to active threats to your Microsoft 365 users, devices, and content. For more information, see [Security Operator](/azure/active-directory/roles/permissions-reference#security-operator).|
-|**Security reader**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they do not have permissions to respond by taking action. For more information, see [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader).|
+|**Security reader**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they don't have permissions to respond by taking action. For more information, see [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Security administrator**|Control your organization's overall security by managing security policies, reviewing security analytics and reports across Microsoft 365 products, and staying up-to-speed on the threat landscape. For more information, see [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Global reader**|The read-only version of the **Global administrator** role. View all settings and administrative information across Microsoft 365. For more information, see [Global Reader](/azure/active-directory/roles/permissions-reference#global-reader).|
 |**Attack simulation administrator**|Create and manage all aspects of [attack simulation](attack-simulation-training-simulations.md) creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
@@ -91,7 +91,7 @@ For more information, see [View and assign administrator roles in Azure Active D
 
 ### Email & collaboration roles in the Microsoft 365 Defender portal
 
-The same role groups and roles are available in the Microsoft 365 Defender portal and in the Microsoft Purview compliance portal:
+The same role groups and roles are available in the Defender portal and in the Purview compliance portal:
 
 - [Defender portal](https://security.microsoft.com): **Permissions** \> **Email & collaboration roles** \> **Roles** or directly at <https://security.microsoft.com/emailandcollabpermissions>
 - [Purview compliance portal](https://compliance.microsoft.com): **Roles & Scopes** \> **Permissions** \> **Microsoft Purview solutions** \> **Roles** or directly at <https://compliance.microsoft.com/compliancecenterpermissions>
@@ -161,6 +161,18 @@ The following actions are available for Email & collaboration role groups in the
 Back on the **Permissions** page, the new role group is listed.
 
 #### Copy Email & collaboration role groups in the Microsoft 365 Defender portal
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+
+2. On the **Permissions** page, select the role group from the list. Use the **Name** column header to sort the list by name, or the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the role group.
+
+3. In the role group details flyout that opens, select **Copy role group** at the top of the flyout.
+
+The new role group wizard opens as previously described for [creating a new role group](#create-email--collaboration-role-groups-in-the-microsoft-365-defender-portal).
+
+The default name of the new role group is **Copy of \<original role group name\>**, but you can change it.
+
+The roles and members are populated with the values from the role you're copying, but you can change them.
 
 #### Modify Email & collaboration role group membership in the Microsoft 365 Defender portal
 
