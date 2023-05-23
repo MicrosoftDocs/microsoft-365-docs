@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/15/2023
+ms.date: 05/16/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -75,17 +75,26 @@ For example, you could use administrative units to delegate permissions to admin
 
 The following Microsoft Purview compliance solutions support administrative units:
 
-|**Solution**|**Description of support**|
+|**Solution**|**Configuration support**|
 |:-----------|:-------------------------|
-| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
+| [Data lifecycle management](data-lifecycle-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-data-lifecycle-management.md#support-for-administrative-units) |
+| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) | 
+| [Communication compliance](/microsoft-365/compliance/communication-compliance.md)|Adaptive scopes|
+| [Records management](records-management.md) | [Role groups, retention policies, retention label policies](get-started-with-records-management.md#support-for-administrative-units), and [adaptive scopes](purview-adaptive-scopes.md)|
+| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | [Role groups, sensitivity label policies, and auto-labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
-For these solutions, the following features also support administrative units:
+The configuration for administrative units automatically flows down to the following features:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
+- [Adaptive scopes](purview-adaptive-scopes.md): 
+    - Restricted administrators can select, create, edit, and view adaptive scopes only for users in those administrators' assigned administrative units
+    - When a restricted administrator configures a policy that's using adaptive scopes, that administrator can only select adaptive scopes that are assigned to their administrative units
+- Data lifecycle management and records management:
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units
 
-Administrative units are also supported for some built-in role groups. You can add users and groups to administrative units for the following built-in role groups:
+You can add users and groups to administrative units by using the following built-in role groups:
 
 - Compliance Administrator
 - Compliance Data Administrators
@@ -96,6 +105,7 @@ Administrative units are also supported for some built-in role groups. You can a
 - Information Protection Investigators
 - Information Protection Readers
 - Organization Management
+- Records Management
 - Security Administrator
 - Security Operator
 - Security Reader
@@ -151,7 +161,9 @@ Further into the policy configuration, administrators who selected administrativ
 
 For information about administrative units that is specific to each supported solution, see the following sections:
 
+- For data lifecycle management: [Support for administrative units](get-started-with-data-lifecycle-management.md#support-for-administrative-units)
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
+- For records management:[Support for administrative units](get-started-with-records-management.md#support-for-administrative-units)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
 ## Add users or groups to a Microsoft Purview built-in role group

@@ -2,7 +2,7 @@
 title: Corporate communications with frontline workers
 description: Learn how you can use Viva Connections and Viva Engage to connect your frontline team to your broader organization.
 ms.topic: conceptual
-author: daisyfeller
+author: daisyfell
 ms.author: daisyfeller
 audience: admin
 manager: pamgreen
@@ -64,3 +64,4 @@ More information about Viva Engage:
 ## Connect over email with Exchange Online and Outlook
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) and create mailboxes for your frontline workers and managers so you can send broadcast communications over email. Users must have an F3 license to have an email mailbox.
+

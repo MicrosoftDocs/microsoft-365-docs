@@ -32,7 +32,7 @@ Optical character recognition (OCR) scanning enables Microsoft Purview to scan c
 | Phase | What's needed|
 |-------|--------------|
 |**Phase 1:** Create Azure subscription if needed | If your organization doesn't already have an Azure pay-as-you-go subscription for your tenant, your Global admin needs to start by creating an [Azure account](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions). |
-|**Phase 2:** Set up pay-as-you-go billing to enable OCR. | Your Global or SharePoint admin must follow the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR. |
+|**Phase 2:** Set up pay-as-you-go billing to enable OCR. | Your Global or SharePoint admin must follow the instructions in [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) to add a subscription for OCR. |
 |**Phase 3:** Configure OCR scanning settings | The Compliance admin for your organization configures the OCR settings for your tenant.|
 
 
@@ -44,14 +44,14 @@ To use OCR scanning, your organization's Global admin needs to verify that an Az
 
 When you enable OCR, all sensitive information types and trainable classifiers can detect characters that are in images.
 
-Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/syntex/syntex-azure-billing.md) to add a subscription for OCR.
+Because it's an optional feature, your Global admin must set up pay-as-you-go billing to enable OCR. Refer to the instructions in [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) to add a subscription for OCR.
 
 > [!NOTE]
 > When you go to the Microsoft Syntex billing page to sign up for your OCR subscription, you do **not** need to also sign up for Microsoft Syntex.
 >
-> You can find OCR pay-as-you-go pricing information on the [Configure Microsoft Syntex for pay-as-you-go billing in Azure](/microsoft-365/syntex/syntex-azure-billing) page.
+> You can find OCR pay-as-you-go pricing information on the [Set up Microsoft Syntex billing in Azure](../syntex/syntex-azure-billing.md#set-up-microsoft-syntex-billing-in-azure) page.
 
-#### Charges ####
+#### Charges 
 
 The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
 
@@ -63,12 +63,24 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 ### Phase 3: Configure your OCR settings
 
+#### Permissions ####
+
+The account you use to create and deploy policies must be a member of one of these role groups
+
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
+- Information Protection Admin
+
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
 
 > [!NOTE]
-> For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+> - In general, OCR settings take effect about an hour after being turned on.
+>
+> - For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+
 
 | Location | Supported Solutions |
 |--------------|----------|
@@ -107,10 +119,10 @@ This functionality supports scanning images in the following file types, with th
 <br>
 
 ## What languages are supported?
-OCR scanning supports more than [150 languages](https://azure.microsoft.com/cognitive-services/computer-vision/language-support).
+OCR scanning supports more than [150 languages](/azure/cognitive-services/language-support).
 
 ## Summary
-- You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
+- To use OCR, you must set up Microsoft Syntex pay-as-you-go billing. (You don’t need to set up Microsoft Syntex itself.)
 - Configuring OCR occurs at the tenant level, so once OCR is configured, they're available to the entire Microsoft Purview stack.
 - You don't need to create separate data classifiers for OCR. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
 
