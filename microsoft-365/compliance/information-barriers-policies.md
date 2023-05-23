@@ -126,8 +126,8 @@ In addition to the required subscriptions and permissions, make sure that the fo
       ```powershell
       Connect-MgGraph -Tenant "<yourtenantdomain.com>"  //for example: Connect-MgGraph -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
+      $sp=Get-MgServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-MgServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
