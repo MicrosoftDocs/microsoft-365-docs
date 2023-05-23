@@ -28,14 +28,14 @@ description: "DLP policy tip reference for Outlook 2013 for Win32."
 
 ## DLP policy tips supported
 
-Yes
+Yes.
 
 > [!IMPORTANT]
 > When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
 <!--## Email notification supported for Outlook on the Web
 
-Yes
+Yes.
 -->
 
 ## Conditions that support policy tips in Outlook on the Web
