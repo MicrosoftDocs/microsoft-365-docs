@@ -74,7 +74,6 @@ An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive
 - Antimalware platform version of 4.18.2303.8 (or higher)
 - Antimalware signature version of 1.385.1455.0 (or higher)
 - Real-time protection must be turned on
-- Antivirus filter must be attached to Dev Drive. 
 
 For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
 
