@@ -77,10 +77,9 @@ The account you use to create and deploy policies must be a member of one of the
 3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
 
 > [!NOTE]
-> In general, OCR settings take effect about an hour after being turned on.
-
-
- For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+> - In general, OCR settings take effect about an hour after being turned on.
+>
+> - For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
 
 
 | Location | Supported Solutions |
