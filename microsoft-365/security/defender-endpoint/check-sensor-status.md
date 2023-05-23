@@ -20,7 +20,7 @@ ms.date: 05/16/2023
 search.appverid: met150
 ---
 
-# Check sevice health at Microsoft Defender for Endpoint
+# Check service health at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
