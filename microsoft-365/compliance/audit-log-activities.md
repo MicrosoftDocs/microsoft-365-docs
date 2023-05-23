@@ -312,14 +312,19 @@ The following table describes the folder activities in SharePoint Online and One
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
 |Friendly name|Operation|Description|
-|:----------------|:------------|:--------------|
-|Added segments to a site|SegmentsAdded|A SharePoint, global administrator, or site owner added one or more information barriers segments to a site.|
-|Changed segments of a site|SegmentsChanged|A SharePoint or global administrator changed one or more information barriers segments for a site.|
+|:------------|:--------|:----------|
+|Applied information barrier mode to site|NEED OPERATOR|NEED DESCRIPTION|
+|Applied segments to site|SegmentsAdded|A SharePoint, global administrator, or site owner added one or more information barriers segments to a site.|
+|Changed default information barrier mode for OneDrive|NEED OPERATOR|NEED DESCRIPTION|
+|Changed information barrier mode of site|NEED OPERATOR|NEED DESCRIPTION|
+|Changed segments of site|SegmentsChanged|A SharePoint or global administrator changed one or more information barriers segments for a site.|
+|Disabled information barriers for SharePoint and OneDrive|NEED OPERATOR|NEED DESCRIPTION|
+|Enabled information barriers for SharePoint and OneDrive|NEED OPERATOR|NEED DESCRIPTION|
 |Information barriers insights report completed|InformationBarriersInsightsReportCompleted| System completes build of the information barriers insights report.|
 |Information barriers insights report OneDrive section queried|InformationBarriersInsightsReportOneDriveSectionQueried |An administrator queries the information barriers insights report for OneDrive accounts.|
 |Information barriers insights report scheduled|InformationBarriersInsightsReportSchedule|An administrator schedules the information barriers insights report.|
 |Information barriers insights report SharePoint section queried|InformationBarriersInsightsReportSharePointSectionQueried|An administrator queries the information barriers insights report for Sharepoint sites.|
-|Removed segments from a site|SegmentsRemoved|A SharePoint or global administrator removed one or more information barriers segments from a site.|
+|Removed segment from site|SegmentsRemoved|A SharePoint or global administrator removed one or more information barriers segments from a site.|
 
 ## Microsoft Defender Experts activities
 
