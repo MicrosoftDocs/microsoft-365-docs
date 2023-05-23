@@ -63,7 +63,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## May 2023
 
-- Performance mode capability in Microsoft Defender Antivirus is now available for public preview. This new mode provides asynchronous scanning on the Dev Drive, and does not change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
+- Performance mode for Microsoft Defender Antivirus is now available for public preview. This new capability provides asynchronous scanning on a Dev Drive, and does not change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
 
 ## March 2023
 
