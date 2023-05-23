@@ -1,5 +1,5 @@
 ---
-title: "Outlook On the Web data loss prevention policy tip reference"
+title: "Data loss prevention policy tip reference for Outlook on the Web"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ recommendations: false
 description: "DLP policy tip reference for Outlook 2013 for Win32."
 ---
 
-# Outlook On the Web data loss prevention policy tip reference
+# Data loss prevention policy tip reference for Outlook on the Web
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -33,7 +33,12 @@ Yes
 > [!IMPORTANT]
 > When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
-## Conditions that support policy tips in Outlook Web Access
+<!--## Email notification supported for Outlook on the Web
+
+Yes
+-->
+
+## Conditions that support policy tips in Outlook on the Web
 
 - Content contains (SIT)
 - Content is shared from M365
@@ -59,7 +64,7 @@ Yes
 - Any email attachment's content could not be scanned (DocIsUnsupported)
 - Document property is
 
-## Actions that support policy tips in Outlook Web Access
+## Actions that support policy tips in Outlook on the Web
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Set headers
@@ -78,7 +83,7 @@ Yes
 - Deliver the message to the hosted quarantine
 
 
-## Sensitive information types that support policy tips in Outlook Web Access
+## Sensitive information types that support policy tips in Outlook on the Web
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
@@ -181,16 +186,16 @@ Yes
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
 
-## Sensitivity labels that support policy tips in Outlook Web Access
-
+<!--## Sensitivity labels that support policy tips in Outlook Web Access
+to be added later
 
 
 ## Retention labels that support policy tips in Outlook Web Access
-
+to be added later
 
 
 ## Trainable classifiers that support policy tips in Outlook Web Access
-
+to be added later-->
 
 
 <!-- END USER CONTENT ## Policy tips in Outlook on the web
@@ -211,9 +216,4 @@ If the policy tips are configured to allow override, you can choose **Show Detai
 
 Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 -->
-
-
-
-## DLP policy match email notification supported
-
 

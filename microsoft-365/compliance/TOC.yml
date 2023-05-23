@@ -1328,7 +1328,9 @@
             - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
-              href: dlp-migration-assistant-for-symantec-use.md       
+              href: dlp-migration-assistant-for-symantec-use.md
+            - name: Data loss prevention policy tip reference for Outlook on the Web
+              href: dlp-owa-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
