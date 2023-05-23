@@ -332,7 +332,7 @@
           href: information-barriers-edit-segments-policies.md
         - name: Use multi-segment support in information barriers
           href: information-barriers-multi-segment.md
-        - name: Information barriers & Microsoft Teams
+        - name: Information barriers attributes
           href: information-barriers-attributes.md
         - name: Information barriers & Microsoft Teams
           items:
