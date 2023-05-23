@@ -231,9 +231,9 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 
 `Total site count: 19305` <br>
 `Owner Moderated SiteCount: 167 SitePercentage: 0.87` <br>
-`Open SiteCount: 9347 SitePercentage: 48.42` <br>
+`Mixed SiteCount: 4881 SitePercentage: 25.28` <br>
 `Explicit SiteCount: 4910 SitePercentage: 25.43` <br>
-`Mixed SiteCount: 4881 SitePercentage: 25.28`
+`Open SiteCount: 9347 SitePercentage: 48.42`
 
 ## Download the results of the insights report
 
