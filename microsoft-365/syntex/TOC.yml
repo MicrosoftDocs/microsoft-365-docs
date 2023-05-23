@@ -142,11 +142,11 @@
     - name: Content query
       href: metadata-search.md
 
-    - name: Image tagging
-      href: image-tagging.md
-
     - name: Annotations
       href: annotations.md
+
+    - name: Image tagging
+      href: image-tagging.md
 
     - name: Taxonomy
       items:
