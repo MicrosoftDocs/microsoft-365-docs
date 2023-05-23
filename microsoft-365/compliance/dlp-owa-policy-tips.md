@@ -186,15 +186,15 @@ Yes
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
 
-<!--## Sensitivity labels that support policy tips in Outlook Web Access
+<--## Sensitivity labels that support policy tips in Outlook on the Web
 to be added later
 
 
-## Retention labels that support policy tips in Outlook Web Access
+## Retention labels that support policy tips in Outlook on the Web
 to be added later
 
 
-## Trainable classifiers that support policy tips in Outlook Web Access
+## Trainable classifiers that support policy tips in Outlook on the Web
 to be added later-->
 
 
