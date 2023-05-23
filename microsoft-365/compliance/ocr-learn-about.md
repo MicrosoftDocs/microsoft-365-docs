@@ -63,6 +63,10 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 ### Phase 3: Configure your OCR settings
 
+1. In the Microsoft Purview compliance portal, go to **Settings**.
+2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
+3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the table below.
+
 #### Permissions ####
 
 The account you use to create and deploy policies must be a member of one of these role groups
@@ -72,16 +76,12 @@ The account you use to create and deploy policies must be a member of one of the
 - Information Protection
 - Information Protection Admin
 
-1. In the Microsoft Purview compliance portal, go to **Settings**.
-2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
-3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
-
 > [!NOTE]
 > - In general, OCR settings take effect about an hour after being turned on.
 >
 > - For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
 
-
+#### Supported Locations and Solutions ####
 | Location | Supported Solutions |
 |--------------|----------|
 | Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection: [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)<sup>1</sup> <br> <br> Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> | 
