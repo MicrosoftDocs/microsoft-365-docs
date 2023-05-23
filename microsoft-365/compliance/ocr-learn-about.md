@@ -79,8 +79,9 @@ The account you use to create and deploy policies must be a member of one of the
 > [!NOTE]
 > In general, OCR settings take effect about an hour after being turned on.
 
-> [!NOTE]
-> For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+
+ For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+
 
 | Location | Supported Solutions |
 |--------------|----------|
