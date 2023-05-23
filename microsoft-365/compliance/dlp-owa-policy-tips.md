@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/22/2023
+ms.date: 05/23/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -29,6 +29,9 @@ description: "DLP policy tip reference for Outlook 2013 for Win32."
 ## DLP policy tips supported
 
 Yes
+
+> [!IMPORTANT]
+> When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
 ## Conditions that support policy tips in Outlook Web Access
 
@@ -177,43 +180,20 @@ Yes
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
-LEFT OFF HERE 
 
 ## Supported sensitivity labels
 
-Lorem ipsum:
 
-- dolor sit amet
 
 ## Supported retention labels
 
-Lorem ipsum:
 
-- dolor sit amet
 
 ## Supported trainable classifiers
 
-Lorem ipsum:
-
-- dolor sit ame
-
-## From Elsewhere
-
-DLP policy tips in Outlook Web Access are supported for all the conditions, and actions that are applicable on Exchange workload in a DLP policy except the following:
 
 
-
-
-
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-
-
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-FROM ELSEWHERE
-
-## Policy tips in Outlook on the web
+<!-- END USER CONTENT ## Policy tips in Outlook on the web
 
 When you compose a new email in Outlook on the web and Outlook 2013 and later, you'll see a policy tip if you add content that matches a rule in a DLP policy, and that rule uses policy tips. The policy tip appears at the top of the message, above the recipients, while the message is being composed.
 
@@ -230,6 +210,7 @@ If the policy tips are configured to allow override, you can choose **Show Detai
 ![Policy tip dialog where you can override the policy tip.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
 Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears. When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
+-->
 
 
 
