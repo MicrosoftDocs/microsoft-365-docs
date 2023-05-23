@@ -1,7 +1,7 @@
 ---
 title: Protect Dev Drive using performance mode
 description: Learn how to manage, configure, Microsoft Defender Antivirus performance mode for developers who use Dev Drive.
-keywords: performance mode, Dev Drive, Dev Drive, Real-time protection (Real-time protection), Windows Security App, Microsoft Defender Antivirus, windows Defender, Resilient File System (ReFS), virus, malware, threat, detection, protection, security
+keywords: performance mode, Dev Drive, Real-time protection (Real-time protection), Windows Security App, Microsoft Defender Antivirus, windows Defender, Resilient File System (ReFS), virus, malware, threat, detection, protection, security
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -51,7 +51,7 @@ Dev Drive is a new form of storage volume available to improve performance for k
 
 Dev Drive builds on ReFS technology to employ targeted file system optimizations and provide more control over storage volume settings and security, including trust designation, antivirus configuration, and administrative control over which filters are attached.
 
-For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive)
+For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-drive)
 
 ### Performance mode compared to real-time protection
 
@@ -75,7 +75,7 @@ An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive
 - Antimalware signature version of 1.385.1455.0 (or higher)
 - Real-time protection must be turned on
 
-For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
+For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/windows/dev-drive).
 
 ## Manage performance mode
 
@@ -92,8 +92,8 @@ Similar to when a developer chooses to [Add an exclusion](/support.microsoft.com
 > [!NOTE]
 > Performance mode can only run on a “trusted” Dev Drive.
 
-For more information on trusted Dev Drive and to confirm whether a designated Dev Drive is trusted, see: [Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive).
+For more information on trusted Dev Drive and to confirm whether a designated Dev Drive is trusted, see: [Set up a Dev Drive on Windows 11](/windows/dev-drive).
 
 ## See also
 
-[Set up a Dev Drive on Windows 11](/windows/dev-environment/dev-drive)
+[Set up a Dev Drive on Windows 11](/windows/dev-drive)
