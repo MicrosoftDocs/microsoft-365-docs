@@ -41,11 +41,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## May 2023
 
-### Data lifecycle management and records management
-
-- **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
-- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
-
 ### Compliance Manager
 
 - **General availability (GA)**: New multicloud support for Compliance Manager.
@@ -62,6 +57,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
     - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments). 
 
+### Data lifecycle management and records management
+
+- **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
+
 ### Insider risk management
 
 - **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
@@ -71,8 +71,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Microsoft Priva
 
-- Updates to [Get started with Priva](/privacy/priva/priva-setup.md#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
-- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile.md#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
+- Updates to [Get started with Priva](/privacy/priva/priva-setup#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
+- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
 
 ### Sensitivity labels
 
@@ -110,8 +110,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## Microsoft Priva
 
-- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies.md#set-alerts)
-- **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer.md#custom-setup-guided-policy-creation-process)
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policiesd#set-alerts)
+- **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
 
