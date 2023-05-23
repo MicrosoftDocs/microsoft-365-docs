@@ -401,7 +401,7 @@ Follow this path to get to the same location in the Real-time detections report:
 
 ## See malware detected in email by technology
 
-Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
+Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Malware](threat-explorer-views.md#malware) view of Explorer (or Real-time detections).
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -428,7 +428,7 @@ The report refreshes to show the results that malware detected in email, using t
 
 Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links-about.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
-To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
+To review phish URLs in messages and clicks on URLs in phish messages, use the [**Phish**](threat-explorer-views.md#phish) view of Explorer or Real-time detections.
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -475,7 +475,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 ## Review email messages reported by users
 
-Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), use the [**Email** \> **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
+Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), use the [**All email**](threat-explorer-views.md#all-email) view of Explorer (or Real-time detections).
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
