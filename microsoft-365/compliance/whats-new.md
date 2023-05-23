@@ -55,7 +55,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Assigning user roles per regulatory template**: New capability allowing you to provide scoped access to any assessment built for a specific regulation. Updated pages include:
     - [Learn about regulations](compliance-manager-templates.md#grant-user-access-to-regulations)
     - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
-    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments). 
+    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) 
 
 ### Data lifecycle management and records management
 
