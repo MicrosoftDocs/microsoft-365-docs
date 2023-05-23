@@ -55,7 +55,7 @@ Policy tips in Outlook Web Access (OWA) are supported for these conditions and a
 - Any email attachment's content could not be scanned (DocIsUnsupported)
 - Document property is
 
-### Actions that support policty tips in Outlook Web Access
+### Actions that support policy tips in Outlook Web Access
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Set headers
