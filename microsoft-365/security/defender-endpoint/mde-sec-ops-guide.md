@@ -36,44 +36,20 @@ This article gives an overview of the requirements and tasks for successfully op
 
 This article also describes daily, weekly, monthly, and ad-hoc tasks required to be performed by the security operations personnel in your organization.
 
+> [!NOTE]
+> These are recommended steps; check them against your own policies and environment to make sure they are fit for purpose.
+
 ## Prerequisites:
 
-For general configuration and setup, see the following articles:
+It is expected that the Microsoft Defender Endpoint is set up to support your standard security operations process. While this is not covered in this document, for configuration and setup, see the following articles:
 
 - [**Configure general Defender for Endpoint settings**](preferences-setup.md) 
 
-- **General**
-
-    - [Configure alert notifications](../defender/configure-email-notifications.md) 
-    - [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md) 
-    - [Configure advanced features](advanced-features.md) 
-- **Permissions**
-    - [Use basic permissions to access the portal](basic-permissions.md) 
-    - [Assign user access to Microsoft Defender Security Center](assign-portal-access.md) 
-    - Manage portal access using RBAC 
-        - [Manage portal access using RBAC](rbac.md) 
-        - [Create and manage roles](user-roles.md) 
-        - [Create and manage device groups](machine-groups.md) 
-        - [Create and manage device tags](machine-tags.md)
-        
-- **Rules**
-    - [Manage suppression rules](manage-suppression-rules.md) 
-    - Create indicators. 
-        - [Create indicators](manage-indicators.md) 
-        - [Create indicators for files](indicator-file.md) 
-        - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md) 
-        - [Create indicators for certificates](indicator-certificates.md) 
-        - [Manage indicators](indicator-manage.md) 
-    - [Manage automation file uploads](manage-automation-file-uploads.md)
-    - [Manage automation folder exclusions](manage-automation-folder-exclusions.md) 
-
-- **Device management** 
-    - [Onboarding devices](onboard-configure.md) 
-    - [Offboarding devices](offboard-machines.md) 
-    - [Ensure your devices are configured properly](configure-machines.md) 
-    - [Monitor and increase device onboarding](configure-machines-onboarding.md) 
-
-- [**Configure Microsoft Defender Security Center time zone settings**](time-settings.md) 
+    - General
+    - Permissions
+    - Rules
+    - Device management 
+    - Configure Microsoft Defender Security Center time zone settings 
 
 - **Set up Microsoft 365 Defender incident notifications** <p> To get email notifications on defined Microsoft 365 Defender incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
 
@@ -112,15 +88,15 @@ For general configuration and setup, see the following articles:
     
     Review health reports to identify any device health trends that need to be addressed.  The device health reports cover Microsoft Defender for Endpoint AV signature, platform health, and EDR health. See [Device health reports in Microsoft Defender for Endpoint.](device-health-reports.md)
 
-- **Check Endpoint Detection and Response (EDR) health**
+- **Check Endpoint Detection and Response (EDR) Sensor health**
 
     EDR health is maintaining the connection to the EDR service to make sure that MDE is getting all the required signals to alert and identify vulnerabilities.  
     
-    Review unhealthy devices. 
+    Review unhealthy devices. See [Device health, Sensor health & OS report.](device-health-sensor-health-os.md) 
 
-- **Check AV health** 
+- **Check Microsoft Defender Antivirus health** 
 
-    The Microsoft Defence Antivirus (MDAV) update status is critical for the best performance of your MDE environment and up-to-date detections.  The device health page shows you the status of your fleet for platform, intelligence, and engine version. 
+    The Microsoft Defence Antivirus (MDAV) update status is critical for the best performance of your MDE environment and up-to-date detections.  The device health page shows you the status of your fleet for platform, intelligence, and engine version. See [Device health, Microsoft Defender Antivirus health report.](device-health-microsoft-defender-antivirus-health.md)
 
 ## Weekly activities 
 
@@ -148,7 +124,7 @@ For general configuration and setup, see the following articles:
 
 - **Review threat and vulnerability (TVM) status** 
 
-    Review TVM to identify any new vulnerabilities that require action. See [Vulnerability management dashboard.](../defender-vulnerability-management/tvm-dashboard-insights.md)
+    Review TVM to identify any new vulnerabilities and recommendations that require action. See [Vulnerability management dashboard.](../defender-vulnerability-management/tvm-dashboard-insights.md)
 
 - **Review attack surface reduction (ASR) reporting** 
 
@@ -183,15 +159,9 @@ Review the relevant What’s new pages for your fleet to understand the recently
     If any devices are excluded from the policy for any reason, review whether the devices still need to be excluded.
     
     > [!NOTE]
-    > Review the troubleshooting mode for troubleshooting. See G[et started with troubleshooting mode in Microsoft Defender for Endpoint.](enable-troubleshooting-mode.md)
+    > Review the troubleshooting mode for troubleshooting. See [Get started with troubleshooting mode in Microsoft Defender for Endpoint.](enable-troubleshooting-mode.md)
 
-- **Review Device health states** 
- 
-    Verify sensor health states to make sure the “impaired communication” or “No sensor data” are investigated and troubleshoot accordingly.  
-     
-    [https://security.microsoft.com/devicehealth?viewid=sensorhealthsreport](https://security.microsoft.com/devicehealth?viewid=sensorhealthsreport )
-   
-## Periodically (Yearly / Half Yearly) 
+## Periodically 
 
 These tasks are seen as maintenance for your security posture and are critical for your ongoing protection.  But as they may take time and effort, it's recommended that you set a standard schedule that you can maintain to perform these tasks.
 
@@ -212,40 +182,15 @@ These tasks are seen as maintenance for your security posture and are critical f
 
 ## Troubleshooting
 
-- **Troubleshoot Sensor state**
-    - [Check sensor state ](check-sensor-status.md)
-    - [Fix unhealthy sensors](fix-unhealthy-sensors.md) 
-    - [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
-    - [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices) 
-    - [Review sensor events and errors on machines with Event Viewer](event-error-codes.md) 
+The following articles provide guidance to troubleshoot and fix errors that you may experience when setting up your Microsoft Defender for Endpoint service.
 
-- **Troubleshoot sensor health issues using Client Analyzer** 
+[**Troubleshoot**](check-sensor-status.md)
 
-    - [Client analyzer overview](overview-client-analyzer.md) 
-    - [Download and run the client analyzer](download-client-analyzer.md) 
-    - [Run the client analyzer on Windows](run-analyzer-windows.md) 
-    - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md) 
-    - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md) 
-    - [Understand the analyzer HTML report](analyzer-report.md) 
-    - [Provide feedback on the client analyzer tool](analyzer-feedback.md) 
-
-- **Troubleshoot Microsoft Defender for Endpoint service issues** 
-
-    - [Troubleshoot service issues](troubleshoot-mdatp.md) 
-    - [Contact Microsoft Defender for Endpoint support](contact-support.md) 
-
-- **[Troubleshoot live response issues](troubleshoot-live-response.md)** 
-
-
-- **[Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)** 
-
-- **Troubleshoot attack surface reduction issues** 
-    - [Network protection](troubleshoot-np.md)
-    - [Attack surface reduction rules](troubleshoot-asr.md) 
-    - [Migrate to Attack surface reduction rules](migrating-asr-rules.md) 
-
-- **Troubleshoot onboarding issues**
-
-    - [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
-    - [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
-    - [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md) 
+- Troubleshoot Sensor state
+- Troubleshoot sensor health issues using Client Analyzer 
+- Troubleshoot Microsoft Defender for Endpoint service issues
+- Troubleshoot live response issues
+- Collect support logs using LiveAnalyzer
+- Troubleshoot attack surface reduction issues
+- Troubleshoot onboarding issues
+ 
