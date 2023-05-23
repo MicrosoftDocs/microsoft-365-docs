@@ -101,7 +101,7 @@ A New SharePoint Online recommendation is now available as a Secure Score improv
 New Microsoft Information Protection recommendations are now available as Secure Score improvement actions:
 
 - **Labeling**
-  - Extend Microsoft 365 sensitivity labeling to assets in Azure Purview data map
+  - Extend M365 sensitivity labeling to assets in Azure Purview data map
   - Ensure Auto-labeling data classification policies are setup and used
   - Publish M365 sensitivity label data classification policies
   - Create Data Loss Prevention (DLP) policies
@@ -131,7 +131,7 @@ New Microsoft Defender for Office 365 recommendations are now available as Secur
 
 ## June 2022
 
-- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations is now available as Secure Score improvement actions:
+- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
 
   - Disallow offline access to shares
   - Remove share write permission set to **Everyone**
