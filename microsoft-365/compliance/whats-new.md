@@ -51,7 +51,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: New multicloud support for Compliance Manager.
     - **New article**: [Multicloud support in Compliance Manager](compliance-manager-multicloud.md) explains the new integration with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance.
     - **New article**: [Configure cloud settings for use with Compliance Manager](compliance-manager-cloud-settings.md) details the setup process to receive multicloud support in Compliance Manager.
-    - **New article**: [Compliance Manager glossary of terms](compliance-manager-glossary.md) explaining new and existing terms and concepts.
+    - **New article**: [Compliance Manager glossary of terms](compliance-manager-glossary.md) explains new and existing terms and concepts.
 - **General availability (GA)**: New configuration connectors for building assessments that cover non-Microsoft services.
     - **New article**: [Working with connectors in Compliance Manager](compliance-manager-connectors.md) details how to set up and use connectors for building assessments for non-Microsoft services.
     - **New article**: [Salesforce setup for Compliance Manager connector](compliance-manager-connectors-salesforce.md) explains the seupt process for using the Salesforce connector.
@@ -71,8 +71,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Microsoft Priva
 
-- Updates to [Get started with Priva](/privacy/priva/priva-setup.md#when-insights-start-to-populate) reflecting that insights for the data minimization policy will start surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
-- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile.md#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager
+- Updates to [Get started with Priva](/privacy/priva/priva-setup.md#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
+- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile.md#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
 
 ### Sensitivity labels
 
@@ -90,7 +90,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- Updated [regulatory templates list](compliance-manager-templates-list.md) with templates Turkey - Information and Communication Security Guide and SA - Saudi Arabia Monetary Authority (SAMA) & National Cybersecurity Authority (NCA)
+- Updated [regulatory templates list](compliance-manager-templates-list.md) with templates Turkey - Information and Communication Security Guide and SA - Saudi Arabia Monetary Authority (SAMA) & National Cybersecurity Authority (NCA).
 
 ### Data lifecycle management and records management
 
@@ -110,7 +110,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## Microsoft Priva
 
-- **General availability (GA)**: [Recommended, customizable policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies.md#set-alerts)
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies.md#set-alerts)
 - **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer.md#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
