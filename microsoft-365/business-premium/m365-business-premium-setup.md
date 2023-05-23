@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 04/10/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
@@ -21,19 +21,57 @@ ms.custom: intro-get-started
 
 # Set up Microsoft 365 Business Premium
 
-After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
+This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
 
-- Start with the guided setup experience for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or 
+> [!TIP]
+> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](m365-campaigns-setup.md).
+
+## Sign up for Microsoft 365 Business Premium
+
+When you're ready to sign up for Microsoft 365 Business Premium, you have several options. You can:
+
+- Try or buy Microsoft 365 Business Premium on your own; or
+- Work with a Microsoft partner.
+
+## [Sign up on your own](#tab/GetOwn)
+
+1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
+
+2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
+
+3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
+
+## [Work with a Microsoft partner](#tab/Partner)
+
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. If you're not already working with a solution provider, you can find one by following these steps: 
+
+1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir).
+
+2. In the **Filters** pane, specify search criteria, such as:
+
+   - Your location
+   - Your organization's size
+   - **Focus areas**, such as **Security** and/or **Threat Protection** 
+   - **Services**, such as **Licensing** or **Managed Services (MSP)**
+
+   As soon as you select one or more criteria, the list of partners updates.
+
+3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+
+---
+
+## Set up Microsoft 365 Business Premium
+
+To complete the basic setup process, you can choose from several options available:
+
+- Start with the guided setup experience for basic setup and configuration, and then proceed to [set up your security protection](m365bp-security-overview.md); or 
 - Work with a Microsoft partner who can help you get everything set up and configured.
-
 
 ##  [**Guided setup process**](#tab/Guided)
 
-Microsoft 365 Business Premium includes a guided process, as shown in the following video, and described step by step in this article: 
+Microsoft 365 Business Premium includes a guided setup process, as shown in the following video: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
-
-**As soon as you've completed the guided setup process, proceed to [boost your security protection](m365bp-security-overview.md)**.
 
 ### The guided setup process, step by step
 
@@ -72,7 +110,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 > [!IMPORTANT]
 > At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
-## [**Work with a Microsoft partner**](#tab/Partner)
+## [**Work with a Microsoft partner**](#tab/UsePartner)
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
