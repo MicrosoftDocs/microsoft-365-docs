@@ -1,5 +1,5 @@
 ---
-title: "Get information barriers insights"
+title: "SharePoint & OneDrive insights report"
 description: Use the insights report to get information about information barriers usage in your organization.
 keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 ms.date: 05/31/2023
 ---
 
-# Get information barriers insights
+# SharePoint & OneDrive insights reports
 
 The insights report in [information barriers](information-barriers.md) (IB) can help you identify and discover usage patterns across SharePoint sites and OneDrive accounts in your organization. Administrators can use PowerShell to create and view reports to identify top sites and their modes to help apply suitable controls for the sites as applicable.
 
