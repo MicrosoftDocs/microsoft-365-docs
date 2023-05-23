@@ -58,7 +58,10 @@ Endpoint Attack Notifications are alerts that have been hand crafted by Microsof
 - The alerts queue in the Microsoft 365 Defender portal
 - Using the [API](../../security/defender-endpoint/get-alerts.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
-- Your email if you [configure an email notifications](../../security/defender-endpoint/configure-email-notifications.md) rule
+- Your email if you [configure an email notifications](../../security/defender-endpoint/configure-vulnerability-email-notifications.md) rule
+
+
+
 
 
 Endpoint Attack Notifications can be identified by:
