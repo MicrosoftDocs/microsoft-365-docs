@@ -1,5 +1,5 @@
 ---
-title: Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert
+title: Investigate domains and URLs associated with an alert
 description: Use the investigation options to see if devices and servers have been communicating with malicious domains.
 keywords: investigate domain, domain, malicious domain, Microsoft Defender for Endpoint, alert, URL
 ms.service: microsoft-365-security
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 05/18/2023
+ms.date: 05/23/2023
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert
+# Investigate domains and URLs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,7 +52,7 @@ You can see information from the following sections in the URL and domain view:
 
 - Most recent clicks to the URL or domain
 
-![The overview section of the new URL & domain page at a glance.](media/domain-url-overview.png)
+:::image type="content" source="../../media/investigate-urls/investigate-url-main.png" alt-text="The main URL/domain page" lightbox="media/investigate-urls/investigate-url-main.png":::
 
 ## Domain entity
 
@@ -78,7 +78,7 @@ The Microsoft verdict section displays the verdict of the URL or domain from Mic
 
 ### Prevalence
 
-The Prevalence section provides the details on the prevalence of the URL within the organization, over the last 30 days, such and trend chart – which shows the number of distinct devices that communicated with the URL or domain over a specific period of time. Below if you can find details of the first and last device observations communicated with the URL in the last 30 days, where you can pivot to the device timeline right away, to investigate initial access from the phish link, or if there's still a malicious communication in your environment.
+The Prevalence section provides the details on the prevalence of the URL within the organization, over the last 30 days, such and trend chart – which shows the number of distinct devices that communicated with the URL or domain over a specific period of time. Below you can find details of the first and last device observations communicated with the URL in the last 30 days, where you can pivot to the device timeline right away, to investigate initial access from the phish link, or if there's still a malicious communication in your environment.
 
 ## Incident and alerts
 
@@ -98,11 +98,21 @@ Although the default time period is the past 30 days, you can customize this fro
 
 Using the export button above the table, you can export all the data into a .csv file (including the first and last event time and action type), for further investigation and reporting.
 
+## Emails
+
+The Emails tab provides a detailed view of all the emails observed in the last 30 days that contained the URL or domain. This tab includes a trend chart and a customizable table listing email details, such as subject, sender, recipient, and more.
+
+:::image type="content" source="../../media/investigate-urls/investigate-url-email.png" alt-text="The email tab for investigating a URL/domain" lightbox="media/investigate-urls/investigate-url-email.png":::
+
+## Clicks
+
+The Clicks tab provides a detailed view of all the clicks to the URL or domain observed in the last 30 days.
+
 ### Investigate a URL or domain
 
 1. Select **URL** from the **Search bar** drop-down menu.
 
-2. Enter the URL in the **Search** field.
+2. Enter the URL in the **Search** field. Alternatively, you can navigate to the URL or domain from the **Incident attack story tab**, from the **device timeline**, through **advanced hunting**, or from the **email side panel and page**.
 
 3. Click the search icon or press **Enter**. Details about the URL are displayed.
 
@@ -112,6 +122,10 @@ Using the export button above the table, you can export all the data into a .csv
 4. Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the URL, the file associated with the communication and the last date observed.
 
 5. Clicking any of the device names will take you to that device's view, where you can continue to investigate reported alerts, behaviors, and events.
+**
+6. If you disagree with the verdict of a URL or domain, you can report it to Microsoft as *clean*, *phishing*, or *malicious* by selecting **Submit to Microsoft for analysis.
+
+:::image type="content" source="../../media/investigate-urls/investigate-url-submit-verdict.png" alt-text="Submit for analysis option in the URL/domain page" lightbox="media/investigate-urls/investigate-url-submit-verdict.png":::
 
 ## Related articles
 
