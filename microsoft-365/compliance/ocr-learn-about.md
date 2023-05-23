@@ -63,12 +63,24 @@ When you first start using OCR, limit usage to just a few people and applicable 
 
 ### Phase 3: Configure your OCR settings
 
+#### Permissions ####
+
+The account you use to create and deploy policies must be a member of one of these role groups
+
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
+- Information Protection Admin
+
 1. In the Microsoft Purview compliance portal, go to **Settings**.
 2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
 3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
 
 > [!NOTE]
-> For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+> - In general, OCR settings take effect about an hour after being turned on.
+>
+> - For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
+
 
 | Location | Supported Solutions |
 |--------------|----------|
@@ -110,7 +122,7 @@ This functionality supports scanning images in the following file types, with th
 OCR scanning supports more than [150 languages](/azure/cognitive-services/language-support).
 
 ## Summary
-- You can subscribe to OCR scanning without subscribing to Microsoft Syntex.
+- To use OCR, you must set up Microsoft Syntex pay-as-you-go billing. (You don’t need to set up Microsoft Syntex itself.)
 - Configuring OCR occurs at the tenant level, so once OCR is configured, they're available to the entire Microsoft Purview stack.
 - You don't need to create separate data classifiers for OCR. Once OCR is configured, existing [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types), [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [fingerprint SITs](document-fingerprinting.md#document-fingerprinting) scan images as well as documents and emails.
 
