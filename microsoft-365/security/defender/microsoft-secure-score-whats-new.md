@@ -101,7 +101,7 @@ A New SharePoint Online recommendation is now available as a Secure Score improv
 New Microsoft Information Protection recommendations are now available as Secure Score improvement actions:
 
 - **Labeling**
-  - Extend M365 sensitivity labeling to assets in Azure Purview data map
+  - Extend Microsoft 365 sensitivity labeling to assets in Azure Purview data map
   - Ensure Auto-labeling data classification policies are setup and used
   - Publish M365 sensitivity label data classification policies
   - Create Data Loss Prevention (DLP) policies
@@ -117,7 +117,7 @@ New Microsoft Defender for Office 365 recommendations are now available as Secur
   - Set action to take on bulk spam detection
   - Retain spam in quarantine for 30 days
   - Ensure spam safety tips are enabled
-  - Ensure that no sender domains are allowed for anti-spam policies (will replace "Ensure that there are no sender domains allowed for Anti-spam policies" to extend functionality also for specific senders)
+  - Ensure that no sender domains are allowed for anti-spam policies (replaces "Ensure that there are no sender domains allowed for Anti-spam policies" to extend functionality also for specific senders)
 
 - **Anti-spam - Outbound policy**
   - Set maximum number of external recipients that a user can email per hour
@@ -131,7 +131,7 @@ New Microsoft Defender for Office 365 recommendations are now available as Secur
 
 ## June 2022
 
-- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations are now available as Secure Score improvement actions:
+- New Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management recommendations is now available as Secure Score improvement actions:
 
   - Disallow offline access to shares
   - Remove share write permission set to **Everyone**
@@ -173,7 +173,7 @@ New Microsoft Defender for Office 365 recommendations are now available as Secur
 
 ## We want to hear from you
 
-If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community to provide help.
 
 ## Related resources
 
