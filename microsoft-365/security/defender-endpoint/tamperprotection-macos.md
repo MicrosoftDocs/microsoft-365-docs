@@ -464,7 +464,7 @@ Sealed Resources=none
 Internal requirements count=1 size=64
 ```
 
-Configure [preferences](mac-preferences.md#Exclusions), for example for JAMF:
+Configure [preferences](mac-preferences.md#exclusions), for example for JAMF:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
