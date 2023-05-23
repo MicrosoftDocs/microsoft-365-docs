@@ -853,6 +853,12 @@ To learn more about user notification and policy tip configuration and use, incl
 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
 
+#### Policy tip references
+
+Details on support for policy tips and notfications for different apps can be found here:
+
+- [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
+
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
 This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business.
