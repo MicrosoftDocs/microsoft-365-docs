@@ -51,7 +51,7 @@ Dev Drive is a new form of storage volume available to improve performance for k
 
 Dev Drive builds on ReFS technology to employ targeted file system optimizations and provide more control over storage volume settings and security, including trust designation, antivirus configuration, and administrative control over which filters are attached.
 
-For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-drive)
+For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/windows/dev-drive).
 
 ### Performance mode compared to real-time protection
 
@@ -87,7 +87,7 @@ Performance mode is enabled by default when a new Dev Drive is created. To contr
 
 A Dev Drive is automatically designated as trusted, providing the best possible performance by default. A trusted Dev Drive means that the developer using the volume has high confidence in the security of the content stored there.
 
-Similar to when a developer chooses to [Add an exclusion](https://support.microsoft.com/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) to Microsoft Defender configuration, the developer takes on the responsibility for managing the security of the content stored in order to gain more performance. As mentioned, an untrusted Dev Drive doesn’t have the same privileges as a trusted Dev Drive. Security runs in Real-time protection mode when a Dev Drive is untrusted. 
+Similar to when an administrator chooses to add an exclusion to a Microsoft Defender Antivirus configuration, it's the administrator's responsibility to assess the performance benefits and security risks when using performance mode. As mentioned,security runs in Real-time protection mode when a Dev Drive is untrusted. 
 
 > [!NOTE]
 > Performance mode can only run on a “trusted” Dev Drive.
