@@ -109,13 +109,21 @@ To download the package (Zip file) and investigate the events that occurred on a
 
 Alternate steps:
 
-1. Select **Action center** from the response actions section of the device page.
+1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
+    ![Image of collect investigation package](images/collect-investigation-package.png)
+   
+2.	Add comments and select **Confirm**.
 
-2. In the Action center fly-out, select **Package collection package available** to download the zip file.
+    ![Image of confirm comment](images/comments-confirm.png)
 
-   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
+3.	Select **Action center** from the response actions section of the device page.
+
+    ![Image of action center](images/action-center-selected.png)
+
+4.	Click the **Package collection package available** to download the collection package.
+
+    ![Image of download package](images/download-package.png)
 
 For Windows devices, the package contains the following folders:
 

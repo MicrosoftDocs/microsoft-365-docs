@@ -266,8 +266,32 @@
           href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
-        - name: Get started with insider risk settings
-          href: insider-risk-management-settings.md
+        - name: Get started with insider risk management settings
+          items:
+          - name: Learn about insider risk management settings
+            href: insider-risk-management-settings.md
+          - name: Privacy setting
+            href: insider-risk-management-settings-privacy.md
+          - name: Policy indicators setting
+            href: insider-risk-management-settings-policy-indicators.md
+          - name: Intelligent detections setting
+            href: insider-risk-management-settings-intelligent-detections.md
+          - name: Export alerts setting
+            href: insider-risk-management-settings-alerts.md
+          - name: Priority user groups setting
+            href: insider-risk-management-settings-priority-user-groups.md
+          - name: Priority physical assets setting (preview)
+            href: insider-risk-management-settings-priority-physical-assets.md
+          - name: Power Automate flows setting (preview)
+            href: insider-risk-management-settings-power-automate.md
+          - name: Microsoft Teams setting (preview)
+            href: insider-risk-management-settings-teams.md
+          - name: Analytics setting
+            href: insider-risk-management-settings-analytics.md
+          - name: Admin notifications setting
+            href: insider-risk-management-settings-admin-notifications.md
+          - name: Inline alert customization setting
+            href: insider-risk-management-settings-inline-alert-customization.md
         - name: Learn about policy templates
           href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
@@ -1643,6 +1667,8 @@
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
+            - name: Invite guest users to cases
+              href: ediscovery-guest-access.md
         - name: Analyze case content
           href: ediscovery-analyzing-data-in-review-set.md
           items: 
@@ -1812,7 +1838,15 @@
             - name: Learn about multicloud support
               href: compliance-manager-multicloud.md
             - name: Configure cloud settings
-              href: compliance-manager-cloud-settings.md  
+              href: compliance-manager-cloud-settings.md
+            - name: Connectors
+              items:
+                - name: Set up connectors to use in assessments
+                  href: compliance-manager-connectors.md
+                - name: Salesforce
+                  href: compliance-manager-connectors-salesforce.md
+                - name: Zoom
+                  href: compliance-manager-connectors-zoom.md
         - name: Create assessments
           items:
             - name: Build and manage assessments
