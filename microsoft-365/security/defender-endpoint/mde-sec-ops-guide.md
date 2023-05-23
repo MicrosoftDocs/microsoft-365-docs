@@ -41,7 +41,7 @@ This article also describes daily, weekly, monthly, and ad-hoc tasks required to
 
 ## Prerequisites:
 
-It is expected that the Microsoft Defender Endpoint is set up to support your standard security operations process. While this is not covered in this document, for configuration and setup, see the following articles:
+The Microsoft Defender Endpoint should be set up to support your regular security operations process. Although not covered in this document, the following articles provide configuration and setup information:
 
 - [**Configure general Defender for Endpoint settings**](preferences-setup.md) 
 
@@ -65,7 +65,7 @@ It is expected that the Microsoft Defender Endpoint is set up to support your st
 
     In the action centre, review the actions that have been taken in your environment, both automated and manual. This will help you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions.](auto-investigation-action-center.md)
 
-### Security Operations Team  
+### Security operations team  
 
 - **Monitor the Microsoft 365 Defender Incidents queue**
 
@@ -88,7 +88,7 @@ It is expected that the Microsoft Defender Endpoint is set up to support your st
     
     Review health reports to identify any device health trends that need to be addressed.  The device health reports cover Microsoft Defender for Endpoint AV signature, platform health, and EDR health. See [Device health reports in Microsoft Defender for Endpoint.](device-health-reports.md)
 
-- **Check Endpoint Detection and Response (EDR) Sensor health**
+- **Check Endpoint detection and response (EDR) sensor health**
 
     EDR health is maintaining the connection to the EDR service to make sure that MDE is getting all the required signals to alert and identify vulnerabilities.  
     
@@ -152,9 +152,9 @@ Review the relevant What’s new pages for your fleet to understand the recently
  
 - [What's new in Microsoft Defender for Endpoint on Android](android-whatsnew.md)
 
-### Security Administration Team 
+### Security administration team 
 
-- **Review Device Excluded from policy**
+- **Review device excluded from policy**
  
     If any devices are excluded from the policy for any reason, review whether the devices still need to be excluded.
     
@@ -174,11 +174,17 @@ These tasks are seen as maintenance for your security posture and are critical f
 
     Periodically review your Defender configuration settings to confirm that they're set as required. 
 
-- **Review Automation levels** 
+- **Review automation levels**
 
-    - [Automation levels in automated investigation and remediation | Microsoft Learn](automation-levels.md) 
-    - [Review custom detection](../defender/custom-detection-rules.md)
-    - [Review alerts suppression](manage-alerts.md)
+    Review automation levels in automated investigation and remediation capabilities. See [Automation levels in automated investigation and remediation | Microsoft Learn](automation-levels.md) 
+
+- **Review custom detections** 
+
+    Periodically review whether the custom detections that have been created are still valid and effective. See [Review custom detection](../defender/custom-detection-rules.md)
+
+- **Review alerts suppression**
+
+    Periodically review any alert suppression rules that have been created to confirm they are still required and valid. See  [Review alerts suppression](manage-alerts.md)
 
 ## Troubleshooting
 
