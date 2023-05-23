@@ -8,6 +8,7 @@ ms.date: 03/17/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 
     - enabler-strategic
