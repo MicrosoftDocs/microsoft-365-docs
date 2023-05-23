@@ -31,10 +31,6 @@ Read about the network performance assessment calculation method at [Microsoft 3
 Network availability is measured from the client and is defined using this formula.
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png" alt-text="Network availability calculation.":::
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network availability calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png)
--->
 
 We receive notification of unsuccessful connections after network connectivity is restored.
 
@@ -58,11 +54,6 @@ What if you don't see the exact same measurement as our aggregation? Our aggrega
 The formula used for the standard error is:
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-standard-error.png" alt-text="Network standard error calculation.":::
-
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network standard error calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-standard-error.png)
--->
 
 Where:
 
@@ -90,11 +81,6 @@ The markers **Privacy requirement** and **Dominating customer** aren't shown in 
 In addition, we remove outliers from the sample source where outliers are defined as:
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-outlier.png" alt-text="Network outlier calculation.":::
-
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network outlier calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-outlier.png)
--->
 
 Network providers will additionally not be shown in a tenant or location view if that network provider accounts for fewer than 0.01% of users represented in that view.
 

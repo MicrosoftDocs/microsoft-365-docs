@@ -26,11 +26,6 @@ In the Microsoft 365 Admin Center you can view network providers in use by your 
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-networktraffic.png" alt-text="Network provider traffic." lightbox="../media/m365-mac-perf/m365-mac-perf-nppux-networktraffic.png":::
 
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network provider traffic.](../media/m365-mac-perf/m365-mac-perf-nppux-networktraffic.png)
--->
-
 When you navigate to the Network traffic tab you will see information about connectivity solutions from network providers that have been detected between Office 365 users and Microsoft's network.
 
 Network providers are identified as either of the following:
@@ -77,11 +72,6 @@ The table of locations can be filtered by specific network providers. The table 
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-locationsnpp.png" alt-text="Network locations showing providers." lightbox="../media/m365-mac-perf/m365-mac-perf-nppux-locationsnpp.png":::
 
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network locations showing providers.](../media/m365-mac-perf/m365-mac-perf-nppux-locationsnpp.png)
--->
-
 A network providers column is included in the table where network providers are shown as fit. The network providers are all shown in the details tab.
 
 ## Network Provider Index Chart for the location
@@ -89,11 +79,6 @@ A network providers column is included in the table where network providers are 
 The Network Provider Index Chart (NPI Chart) shows in an office location summary and lists large network providers that are being used by Office 365 customers in the same country and state as your office. We include availability and performance information attributed to these providers. This chart also shows a target baseline that shows what good performance observed in the same country and state looks like.
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-NPIChart.png" alt-text="Network provider NPI chart.":::
-
-<!--
-> [!div class="mx-imgBorder"]
-> ![Network provider NPI Chart.](../media/m365-mac-perf/m365-mac-perf-nppux-NPIChart.png)
--->
 
 Below the NPI Chart is a list of network providers detected for your users at this specific office location. The Table of network providers for this location has the following fields:
 
