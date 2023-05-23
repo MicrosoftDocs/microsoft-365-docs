@@ -612,6 +612,8 @@
           href: schedule-antivirus-scans-wmi.md
       - name: Use limited periodic scanning in Microsoft Defender Antivirus
         href: limited-periodic-scanning-microsoft-defender-antivirus.md
+      - name: Protect Dev Drive using performance mode
+        href: microsoft-defender-endpoint-antivirus-performance-mode.md
       - name: Compatibility with other security products
         href: microsoft-defender-antivirus-compatibility.md
       - name: Find malware detection names for Microsoft Defender for Endpoint
