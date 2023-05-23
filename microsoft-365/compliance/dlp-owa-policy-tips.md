@@ -186,7 +186,7 @@ Yes
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
 
-<--## Sensitivity labels that support policy tips in Outlook on the Web
+<!--## Sensitivity labels that support policy tips in Outlook on the Web
 to be added later
 
 
