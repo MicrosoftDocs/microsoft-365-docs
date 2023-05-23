@@ -87,7 +87,7 @@ Performance mode is enabled by default when a new Dev Drive is created. To contr
 
 A Dev Drive is automatically designated as trusted, providing the best possible performance by default. A trusted Dev Drive means that the developer using the volume has high confidence in the security of the content stored there.
 
-Similar to when an administrator chooses to add an exclusion to a Microsoft Defender Antivirus configuration, it's the administrator's responsibility to assess the performance benefits and security risks when using performance mode. As mentioned,security runs in Real-time protection mode when a Dev Drive is untrusted. 
+Similar to when an administrator chooses to add an exclusion to a Microsoft Defender Antivirus configuration, it's the administrator's responsibility to assess the performance benefits and security risks when using performance mode. As mentioned, security runs in Real-time protection mode when a Dev Drive is untrusted. 
 
 > [!NOTE]
 > Performance mode can only run on a “trusted” Dev Drive.
