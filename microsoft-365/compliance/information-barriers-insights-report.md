@@ -26,7 +26,7 @@ ms.date: 05/31/2023
 
 The insights report in [information barriers](information-barriers.md) (IB) can help you identify and discover usage patterns across SharePoint sites and OneDrive accounts in your organization. Administrators can use PowerShell to create and view reports to identify top sites and their modes to help apply suitable controls for the sites as applicable.
 
-The insights report provides the following information for the top 100 most actively used sites and accounts in your organization:
+The insights report provides the following information for the top 100 most actively used SharePoint sites and OneDrive accounts in your organization:
 
 |**Report section**|**Description**|**Applies to**|
 |:-------|:--------------|:-------------|
@@ -39,35 +39,35 @@ The insights report provides the following information for the top 100 most acti
 
 ## Prerequisites
 
-- Your organization must have information barriers enabled for SharePoint and OneDrive to be able to create the insights report. To enable IB in SharePoint and OneDrive for you organization, see [Use information barriers with SharePoint](/microsoft-365/compliance/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization).
-- You must use the latest version of the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588). If you've installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall *SharePoint Online Management Shell* and then install the latest version. To learn more about SharePoint Online Management Shell, see [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- Your organization must have information barriers enabled for SharePoint and OneDrive to be able to create the insights report. To enable IB in SharePoint and OneDrive for your organization, see [Use information barriers with SharePoint](/microsoft-365/compliance/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization).
+- You must use the latest version of the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588). If you've installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall *SharePoint Online Management Shell* and then install the latest version. To learn more about SharePoint Online Management Shell, see [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ## Create the insights report
 
-Before you can run specific queries for information barriers details, you must first create a build of the report. After the report build has completed successfully, you can run specific detail reports.
+Before you can run specific queries for information barriers details, you must first create a report. After the report has completed successfully, you can run specific detail reports.
 
-One insight report build is supported for every 24 hour period and the previous report build is overwritten when the next report build is created. For example, if you create an insights report build on 4/25/2023 at 4:10 PM, you can't create another insight report build until after 4:10 PM on 4/26/2023.
+One insight report is supported for every 24 hour period and the previous report is overwritten when the next report is created. For example, if you create an insights report on 4/25/2023 at 4:10 PM, you can't create another insight report until after 4:10 PM on 4/26/2023.
 
 To create the insights report, complete the following steps:
 
 1. [Connect to SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) as a global administrator or SharePoint administrator in Microsoft 365.
-2. Run the following PowerShell cmdlet  and accept the confirmation prompt to build the insights report:
+2. Run the following PowerShell cmdlet  and accept the confirmation prompt to create the insights report:
 
     ```powershell
     Start-SPOInformationBarriersInsightsReport
     ```
 
     > [!NOTE]
-    > Depending on the number of SharePoint sites and OneDrives accounts in your organization, it may take up to one hour for this report to build.
+    > Depending on the number of SharePoint sites and OneDrives accounts in your organization, it may take up to one hour for this report to created.
 
     You can automate acceptance of the confirmation prompt when creating the insights report by appending the *-Yes* as an parameter to the cmdlet. For example, `Start-SPOInformationBarriersInsightsReport -Yes`.
-3. Run the following PowerShell cmdlet to view the build status of the insights report:
+3. Run the following PowerShell cmdlet to view the status of the insights report:
 
     ```powershell
     Get-SPOInformationBarriersInsightsReport
     ```
 
-   The following example shows the information returned for the insights report build:
+   The following example shows the information returned for the insights report:
 
     `State: Completed` <br>
     `Id: ec65a1cf-9b1a-48c2-a1b4-f923ac4c0776` <br>
@@ -77,15 +77,15 @@ To create the insights report, complete the following steps:
 
     The report is ready to view or download when the *State* value is *Completed*. Other *State* values include:
 
-    - *Not Started*: State when the inisghts report build hasn't started.
-    - *In Progress*: State when the insights report build is in progress.
-    - *Error*: State when the insights report build has failed.
+    - *Not Started*: State when the inisghts report  hasn't started.
+    - *In Progress*: State when the insights report is in progress.
+    - *Error*: State when the insights report has failed.
 
 ## Insights reports for SharePoint sites
 
 ### View a summary of modes with results for SharePoint sites
 
-To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
+To view a summary of the modes with results for SharePoint sites, use the following cmdlet syntax to view insights from the report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID>
@@ -108,7 +108,7 @@ In this example, the insights report results are displayed for SharePoint sites 
 
 ### View the details for a specific mode for SharePoint sites
 
-To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
+To view details about a specific mode with results for SharePoint sites, use the following cmdlet syntax to view insights from the insights report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>
@@ -122,25 +122,25 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <Mode>
 
 `SiteName: Contoso Budget Planning` <br>
 `SiteURL: https://contoso.sharepoint.com/sites/ContosoBudgetPlanning`<br>
-`Site Owner:`<br>
+`Site Owner: User1`<br>
 `LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Explicit`
 
 `SiteName: Contoso Training Budgets` <br>
 `SiteURL: https://contoso.sharepoint.com/sites/ContosoTrainingBudgets`<br>
-`Site Owner:`<br>
+`Site Owner: User2`<br>
 `LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Explicit`
 
 `SiteName: Contoso Viewpoint Project` <br>
 `SiteURL: https://contoso.sharepoint.com/sites/ContosoViewpointProject`<br>
-`Site Owner:`<br>
+`Site Owner: User3`<br>
 `LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Explicit`
 
 ### View the details for the mode distribution for SharePoint sites
 
-To view details about the mode distribution with results for SharePoint sites, use the following cmdlet syntax to view insights from the build report:
+To view details about the mode distribution with results for SharePoint sites, use the following cmdlet syntax to view insights from the insights report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistribution>
@@ -154,15 +154,15 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -section <ModeDistributi
 
 `Total site count: 10000` <br>
 `Owner Moderated SiteCount: 500 SitePercentage: 5` <br>
+`Open SiteCount: 1682 SitePercentage: 16.82` <br>
 `Explicit SiteCount: 3628 SitePercentage: 36.82` <br>
-`Implicit SiteCount: 4190 SitePercentage: 41.9` <br>
-`Open SiteCount: 1682 SitePercentage: 16.82`
+`Implicit SiteCount: 4190 SitePercentage: 41.9`
 
 ## Insights reports for OneDrive accounts
 
 ### View a summary of modes with results for OneDrive accounts
 
-To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
+To view a summary of the modes with results for OneDrive accounts, use the following cmdlet syntax to view insights from the insights report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service <OneDrive>
@@ -185,7 +185,7 @@ In this example, the insights report results are displayed for OneDrive accounts
 
 ### View the details for a specific mode for OneDrive accounts
 
-To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
+To view details about a specific mode with results for OneDrive accounts, use the following cmdlet syntax to view insights from the insights report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <Mode>
@@ -200,24 +200,24 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 `SiteName: User1` <br>
 `SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user1_spdfcontoso_onmicrosoft_com`<br>
 `Site Owner: user1@spdfcontoso.onmicrosoft.com`<br>
-`LastActivity:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Open`
 
 `SiteName: User2` <br>
 `SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user2_spdfcontoso_onmicrosoft_com`<br>
 `Site Owner: user2@spdfcontoso.onmicrosoft.com`<br>
-`LastActivity:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Open`
 
 `SiteName: User3` <br>
 `SiteURL: https://spdfcontoso-my.sharepoint.com/personal/user3_spdfcontoso_onmicrosoft_com`<br>
 `Site Owner: user3@spdfcontoso.onmicrosoft.com`<br>
-`LastActivity:`<br>
+`LastActivity: 4/25/2023 4:10:16 PM`<br>
 `IBMode: Open`
 
 ### View the details for the mode distribution for OneDrive accounts
 
-To view details about the mode distribution with results for OneDrive accounts, use the following cmdlet syntax to view insights from the build report:
+To view details about the mode distribution with results for OneDrive accounts, use the following cmdlet syntax to view insights from the insights report:
 
 ```powershell
 Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -section <ModeDistribution>
@@ -231,9 +231,9 @@ Get-SPOInformationBarriersInsightsReport -reportId <ID> -service OneDrive -secti
 
 `Total site count: 10000` <br>
 `Owner Moderated SiteCount: 500 SitePercentage: 5` <br>
+`Open SiteCount: 1682 SitePercentage: 16.82` <br>
 `Explicit SiteCount: 3628 SitePercentage: 36.82` <br>
-`Mixed SiteCount: 4190 SitePercentage: 41.9` <br>
-`Open SiteCount: 1682 SitePercentage: 16.82`
+`Mixed SiteCount: 4190 SitePercentage: 41.9`
 
 ## Download the results of the insights report
 
