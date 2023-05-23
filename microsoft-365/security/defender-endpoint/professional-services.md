@@ -108,6 +108,8 @@ Respond to security incidents quickly, effectively and at scale with complete in
 |[SepagoSOC](https://go.microsoft.com/fwlink/?linkid=2202677)|Sepago GmbH|SepagoSOC experts ensure that your environment is constantly monitored and protected utilizing the complete range of Microsoft 365 Defender solutions and Microsoft Sentinel.They help you to constantly evolve your security landscape with both technical and organizational experience.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 |[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895)|Open Systems|Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24x7 protection while reducing attack surfaces and MTTR.|
+|[Kroll](https://www.kroll.com/en)|Kroll|Kroll provides proprietary data, technology and insights to help our clients stay ahead of complex demands related to risk, governance and growth. Our solutions deliver a powerful competitive advantage, enabling faster, smarter and more sustainable decisions. With 5,000 experts around the world, we create value and impact for our clients and communities.|
+
 
 ## Protect
 
@@ -191,10 +193,6 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 |[Synergy Advisors Teams App](https://go.microsoft.com/fwlink/?linkid=2202392)|Synergy Advisors LLC|E-Visor Teams App is a centralized place to involve and empower your end-users in the security and productivity of the organization by presenting unique information using data from Microsoft Defenders and Azure Active Directory while ensuring identity governance, and compliance.|
 |[Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)|Quorum Cyber|Quorum Cyber's Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
-
-## Kroll
-
-Kroll provides proprietary data, technology and insights to help our clients stay ahead of complex demands related to risk, governance and growth. Our solutions deliver a powerful competitive advantage, enabling faster, smarter and more sustainable decisions. With 5,000 experts around the world, we create value and impact for our clients and communities. For more information, see [Kroll](https://www.kroll.com/en).
 
 ## Related topics
 
