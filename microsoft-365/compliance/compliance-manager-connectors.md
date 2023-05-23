@@ -99,7 +99,7 @@ Now you're ready to build an assessment with a connector so that it tracks progr
 
 The next screen confirms the assessment was created. When you select **Done**, you're taken to your new assessment's details page.
 
-## How to view connector data in an assessment
+## Viewing service data in an assessment
 
 The assessment details page shows a detailed view of the assessment's rate of progress. When you add a connector as a service for the assessment, you see the connector name as one of the services listed on the assessment's **Progress** tab. You can view more details about service progress by selecting **View service details**.
 

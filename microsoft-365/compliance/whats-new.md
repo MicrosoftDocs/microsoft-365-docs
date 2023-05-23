@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -48,10 +48,14 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Insider risk management
 
-- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings.md#indicator-level-settings) to reduce alert noise.
-- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings.md#intelligent-detections) reduces alert noise.
+- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
+- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings-intelligent-detections.md) reduces alert noise.
 - Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
+
+### Sensitivity labels
+
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings and encryption persists.
 
 ## April 2023
 
@@ -156,7 +160,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
    - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - **New article**: Added article that [summarizes the privacy principles for insider risk management](insider-risk-solution-privacy.md). 
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
-- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
+- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings-policy-timeframes.md).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
 
 ### Microsoft Priva
