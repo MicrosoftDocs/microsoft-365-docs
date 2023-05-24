@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,20 +39,79 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## May 2023
+
+### Compliance Manager
+
+- **General availability (GA)**: New multicloud support for Compliance Manager.
+    - **New article**: [Multicloud support in Compliance Manager](compliance-manager-multicloud.md) explains the new integration with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance.
+    - **New article**: [Configure cloud settings for use with Compliance Manager](compliance-manager-cloud-settings.md) details the setup process to receive multicloud support in Compliance Manager.
+    - **New article**: [Compliance Manager glossary of terms](compliance-manager-glossary.md) explains new and existing terms and concepts.
+- **General availability (GA)**: New configuration connectors for building assessments that cover non-Microsoft services.
+    - **New article**: [Working with connectors in Compliance Manager](compliance-manager-connectors.md) details how to set up and use connectors for building assessments for non-Microsoft services.
+    - **New article**: [Salesforce setup for Compliance Manager connector](compliance-manager-connectors-salesforce.md) explains the seupt process for using the Salesforce connector.
+    - **New article**: [Zoom setup for Compliance Manager](compliance-manager-connectors-zoom.md) explains the setup process fo using the Zoom connector.
+    - Update to [Build and manage assessments](compliance-manager-assessments.md) about incorporating connectors for non-Microsoft services.
+- **Assigning user roles per regulatory template**: New capability allowing you to provide scoped access to any assessment built for a specific regulation. Updated pages include:
+    - [Learn about regulations](compliance-manager-templates.md#grant-user-access-to-regulations)
+    - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
+    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) 
+
+### Data lifecycle management and records management
+
+- **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
+
+### Insider risk management
+
+- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
+- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings-intelligent-detections.md) reduces alert noise.
+- Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
+- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps).
+
+### Microsoft Priva
+
+- Updates to [Get started with Priva](/privacy/priva/priva-setup#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
+- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
+
+### Sensitivity labels
+
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings and encryption persists.
+
 ## April 2023
+
+### Communication compliance
+
+- New content on the [Filter email blasts feature](communication-compliance-policies.md#filter-email-blasts) and the [Email blasts senders report](communication-compliance-reports-audits.md#detailed-reports).
+- Updates to [User-reported messages policy](communication-compliance-policies.md#user-reported-messages-policy).
+- New fields for [Message Details reports](communication-compliance-reports-audits.md#message-details-report). 
+- New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
+- **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
+
+### Compliance Manager
+
+- Updated [regulatory templates list](compliance-manager-templates-list.md) with templates Turkey - Information and Communication Security Guide and SA - Saudi Arabia Monetary Authority (SAMA) & National Cybersecurity Authority (NCA).
 
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
 
-- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md)
+- **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+- **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
 
 ### Insider risk management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+
+### Microsoft Priva
+
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies#set-alerts)
+- **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
 
@@ -103,7 +162,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
 
 ### Device onboarding
-- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Windows 10/11](device-onboarding-overview.md#device-configuration-and-policy-sync-status-preview) and [macOS](device-onboarding-macos-overview.md#device-configuration-and-policy-sync-status-preview) devices
+- **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [Onboarding devices into device management](device-onboarding-macos-overview.md#onboarding-devices-into-device-management) devices
 
 ### eDiscovery
 
@@ -129,7 +188,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
    - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - **New article**: Added article that [summarizes the privacy principles for insider risk management](insider-risk-solution-privacy.md). 
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
-- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
+- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings-policy-timeframes.md).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
 
 ### Microsoft Priva
@@ -295,8 +354,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-templates) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
-- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
+- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-regulations) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+- Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#improvement-actions-details-page), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
 
 ### Data lifecycle management and records management
 
@@ -332,7 +391,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- New [role-based access to assessments](compliance-manager-setup.md#role-based-access-to-assessments) allows you to [assign users roles for viewing and managing individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+- New [role-based access to assessments](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations) allows you to assign users roles for viewing and managing individual assessments.
 - [Working with improvement actions](compliance-manager-improvement-actions.md#assign-improvement-action-to-assessor-for-completion) - clarified that users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes, and that roles can now be assigned for individual assessments.
 
 ### eDiscovery

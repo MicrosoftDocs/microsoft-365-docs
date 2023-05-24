@@ -71,7 +71,7 @@ The following table describes the decryption supported by eDiscovery (Standard) 
 | Encrypted email | Search | Yes | Yes |
 | Encrypted email | Decryption to .pst | No | Yes |
 | Encrypted email | Decryption to file | Yes | Yes |
-| Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
+| Encrypted mail and attachment | Search | No | Yes (with Advanced indexing)<sup>1</sup> |
 | Encrypted mail and attachment | Decryption to .pst | No | Yes |
 | Encrypted mail and attachment | Decryption to file | No | Yes |
 | File in SharePoint with MIP label | Search | No | Yes |
@@ -111,7 +111,7 @@ Keep the following things in mind when exporting encrypted email messages and at
 
 ## Notes
 
-<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about advanced indexing, see [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md).
+<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about Advanced indexing, see [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md).
 
 <sup>2</sup> Only items labeled in SharePoint (or uploaded to SharePoint after integration with sensitivity labels are enabled) and that have labels with admin-defined permissions and no expiration are decrypted. All other encrypted files in SharePoint aren't decrypted. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 

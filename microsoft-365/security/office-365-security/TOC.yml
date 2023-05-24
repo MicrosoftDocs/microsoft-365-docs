@@ -38,6 +38,8 @@
          href: email-authentication-dkim-configure.md
        - name: Step 3 - Use DMARC to validate email
          href: email-authentication-dmarc-configure.md
+       - name: Use DMARC Reports to validate email
+         href: email-authentication-dmarc-reports.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
          href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Phase 2 - Choose your installation path
@@ -194,8 +196,6 @@
            href: safe-links-about.md
          - name: Set up Safe Links policies in Defender for Office 365
            href: safe-links-policies-configure.md
-         - name: Configure the "Block the following URLs" list for Safe Links in Defender for Office 365
-           href: safe-links-policies-global-settings-configure.md
        - name: Zero-hour Auto Purge (ZAP)
          items:
          - name: Zero-hour auto purge - protection against spam and malware
@@ -254,7 +254,7 @@
          items:
          - name: User tags in Defender for Office 365
            href: user-tags-about.md
-         - name: Configure and review priority accounts
+         - name: Configure and review priority account protection
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
          href: mdo-email-entity-page.md
@@ -362,8 +362,6 @@
              href: air-custom-reporting.md
            - name: Email analysis in investigations
              href: email-analysis-investigations.md
-         - name: Recover from a ransomware attack
-           href: recover-from-ransomware.md
          - name: Detect and Remediate Illicit Consent Grants in Office 365
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
