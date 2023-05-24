@@ -1,5 +1,5 @@
 ---
-title: Report false positives and false negatives in Outlook
+title: Report phishing and suspicious emails in Outlook for admins
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn how to report false positives and false negatives in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
+description: Learn how to report phishing and suspicious emails in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 ms.date: 12/05/2022
 ---
 
-# Report false positives and false negatives in Outlook
+# Report phishing and suspicious emails in Outlook for admins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
