@@ -145,7 +145,7 @@ When it identifies items that match policies on devices, DLP can copy them to an
 > - Windows 10 - [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23), [March 28, 2023—KB5023774 (OS Build 22000.1761) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839) 
 >- Windows 11 - [March 28, 2023—KB5023778 (OS Build 22621.1485) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
 >
-> - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates.md#april-2023-platform-41823048--engine-11203003)
+> - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates#april-2023-platform-41823048--engine-11203003)
 
 This table shows the default settings for network share coverage and exclusions.
 
