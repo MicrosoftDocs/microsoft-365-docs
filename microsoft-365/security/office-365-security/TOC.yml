@@ -290,7 +290,7 @@
              href: submissions-admin.md
            - name: Enable the Report Message and Report Phishing add-ins
              href: submissions-users-report-message-add-in-configure.md
-           - name: Report phishing and suspicious emails in Outlook
+           - name: Report phishing and suspicious emails in Outlook for admins
              href: submissions-outlook-report-messages.md
            - name: User reported settings
              href: submissions-user-reported-messages-custom-mailbox.md
