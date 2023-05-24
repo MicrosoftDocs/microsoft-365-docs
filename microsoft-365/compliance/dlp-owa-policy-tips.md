@@ -185,6 +185,12 @@ Yes.
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
+## Exact data match sensitive information types support policy tips in Outlook on the Web
+
+Yes.
+
+> [!NOTE]
+> All exact data match sensitive information types are custom created. For more details, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md).
 
 <!--## Sensitivity labels that support policy tips in Outlook on the Web
 to be added later
