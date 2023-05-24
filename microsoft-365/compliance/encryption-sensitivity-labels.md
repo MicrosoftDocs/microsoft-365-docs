@@ -284,9 +284,9 @@ For more information, see [Rights Management issuer and Rights Management owner]
 > 
 > For the Azure Information Protection unified labeling client, this feature is supported only when you haven't enabled your tenant for co-authoring and AutoSave for encrypted document.
 
-**Limitation for the preview of Double Key Encryption for Outlook and built-in labeling:**
+Limitation for the preview of Double Key Encryption and built-in labeling:
 
-- Currently, sensitivity labels that are configured for Double Key Encryption and applied in Outlook don't apply content markings that are specified in the labels.
+- Currently, sensitivity labels using built-in labeling and configured for Double Key Encryption don't apply content markings in Outlook.
 
 Select the **Double Key Encryption** label option only after you've configured the Double Key Encryption service and you need to use this double key encryption for files and emails that will have this label applied. After the label is configured and saved, you won't be able to edit it.
 
