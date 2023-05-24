@@ -50,7 +50,9 @@ sections:
       - question: |
           What happens if Microsoft Defender Antivirus isn't active on a device?
         answer: |
-          Devices that are onboarded to Microsoft Defender for Endpoint have Microsoft Defender Antivirus running in passive mode. In these cases, tamper protection continues to protect the service and its features.
+          If non-Microsoft antivirus/antimalware software is installed on a device, when that device is onboarded to Microsoft Defender for Endpoint, Microsoft Defender Antivirus runs in passive mode by default. In this case, tamper protection continues to protect the service and its features.
+
+          If/when non-Microsoft antivirus/antimalware software is uninstalled, Microsoft Defender Antivirus switches to active mode automatically. Tamper protection continues to protect the service and its features.
 
       - question: |
           How do I turn tamper protection on or off?
@@ -74,7 +76,7 @@ sections:
 
           When tamper protection is turned on, the tamper-protected settings cannot be changed, even if those changes appear to be successful. Depending on your particular scenario, you have several options available: 
           
-          - If you must make changes to a device and those changes are blocked by tamper protection, you can use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+          - If you must make changes to a device and those changes are blocked by tamper protection, you can use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
           - You can use Intune or Configuration Manager to exclude devices from tamper protection. 
           - If you're managing tamper protection through Intune and certain other conditions are met, you can [manage tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
@@ -86,7 +88,7 @@ sections:
       - question: |
           What settings can't be changed when tamper protection is turned on?
         answer: |
-          When tamper protection is turned on, the following security settings are configured: 
+          When tamper protection is turned on, the following security capabilities are configured: 
           
           - Virus and threat protection is enabled.
           - Real-time protection is turned on.
@@ -98,7 +100,7 @@ sections:
           - Notifications are visible in the Windows Security app on Windows devices.
           - Archived files are scanned. 
           
-          See [What happens when tamper protection is turned on](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on)?
+          For more information, see [What happens when tamper protection is turned on](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on)?
 
       - question: |
           If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
