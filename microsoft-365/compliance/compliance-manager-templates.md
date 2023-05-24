@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -75,4 +75,61 @@ Select **View details** the counter to view a detailed list of all regulations i
 
 ## Regulations details page
 
-Select a regulation from the list on the **Regulations** page to bring up its details page. This page contains a description of the regulation and details about applicable services, the date it was last updated, and tabs for viewing controls and improvement actions.
+Similarly, templates that belong to the same regulation family are also counted as one template. The regulation family is shown in the **Overarching regulation** column on the **Assessment templates** page. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
+
+For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+## Grant user access to regulations
+
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, their role extends by default to all regulations (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). This access means that, depending on the user's role type, they can view or interact with any existing or future assessments created with that regulation.
+
+You can give users a specific role that will apply to certain regulations by managing user roles from a regulation's details page. When you set a user's role for a regulation, the user will be able to interact at that role level for all assessments (existing and future) created with that regulation. (You can also restrict access to individual assessments following [these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
+
+External users who need access for auditing or other purposes can also be assigned an access role for regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+
+#### Steps for granting access
+
+Follow the steps to grant user access to a regulation.
+
+1. From the **Regulations** page, find the regulation you want to grant access to. Select it to open its details page.
+
+1. In the upper-right corner, select **Manage user access**.
+
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Reader, Assessor, and Contributor. Navigate to the tab for the role you want your user to hold for this regulation.
+
+1. Select the **+ Add** command for the role tab you're on: **Add readers**, or **Add assessors** or **Add contributors**.
+
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar and select the user from there. You can select multiple users at once.
+
+1. After making all your selections, select **Add**.
+    > [!NOTE]
+    > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
+
+1. The flyout pane will close and you'll arrive back at the regulation details page. Select **Save**.  A confirmation message at the top will confirm the new role assignment for that regulatin.
+
+#### Steps for removing access
+
+You can remove a user's access to individual regulations by following the steps below:
+
+1. On the regulation's details page, select **Manage user access**.
+
+1. On the **Manage user access** flyout pane, go the tab corresponding to the user's role you want to remove.
+
+1. Find the user whose role you want to remove. Check the circle to the left of their name, then select the **Remove** command just below the role tab. To remove all users at once, simply select the **Remove all** command without checking the circle next to every user's name.
+
+1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
+
+1. Select **Save** on the flyout pane. The users' roles will now be removed from the assessment.
+
+##### Note about multiple roles
+
+- A user can have one role that applies to a regulation, while also holding another role that applies broadly to overall Compliance Manager access.
+
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific regulation. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+    - Removing a regulation-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you'll have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
+
+- For an individual regulation, one user can only hold one assessment-based role at a time.
+    - For example, if a user holds a reader role for the GDPR regulation and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
+
+> [!NOTE]
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more regulations, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this pane. Learn more about [setting Compliance Manager permissions and roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
