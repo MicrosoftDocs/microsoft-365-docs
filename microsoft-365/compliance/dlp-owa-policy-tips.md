@@ -85,6 +85,8 @@ Yes.
 
 ## Sensitive information types that support policy tips in Outlook on the Web
 
+These preconfigured sensitive informaiton types (SIT) support policy tips in Outlook on the Web.
+
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
 - [Australia bank account number](sit-defn-australia-bank-account-number.md)
@@ -185,12 +187,18 @@ Yes.
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
-## Exact data match sensitive information types support policy tips in Outlook on the Web
+## Exact data match sensitive information types support for policy tips in Outlook on the Web
 
 Yes.
 
-> [!NOTE]
-> All exact data match sensitive information types are custom created. For more details, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md).
+All exact data match sensitive information types are custom created. For more details, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md).
+
+## Custom sensitive information types support for policy tips in Outlook on the Web
+
+Yes.
+
+Custom sensitive information types that use REGEX, functions, keyword lists and keyword dictionaries support policy tips in Outlook on the Web. For more details, see [Create custom sensitive information types in the compliance portal](create-a-custom-sensitive-information-type.md) and [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+
 
 <!--## Sensitivity labels that support policy tips in Outlook on the Web
 to be added later
