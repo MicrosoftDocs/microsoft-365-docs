@@ -6,7 +6,7 @@ description: Use tamper protection to prevent malicious apps from changing impor
 keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/15/2023
+ms.date: 05/24/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
