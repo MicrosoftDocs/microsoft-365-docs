@@ -80,14 +80,16 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
-    1. Select the operating system.
+    2. Select the operating system.
 
-    1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+    3.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
-    1. Click **Download package** and save the .zip file.
+    4. Click **Download package** and save the .zip file.
 
 2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/primary image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+
     1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
+
     2. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
@@ -99,6 +101,7 @@ The following steps guide you through onboarding VDI devices and highlight steps
    > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
 4. Depending on the method you'd like to implement, follow the appropriate steps:
+
     - For single entry for each device:
 
          Select the **PowerShell Scripts** tab, then select **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it is triggered automatically.
@@ -108,11 +111,17 @@ The following steps guide you through onboarding VDI devices and highlight steps
          Select the **Scripts** tab, then click **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Test your solution:
+
    1. Create a pool with one device.
+
    2. Log on to device.
+   
    3. Log off from device.
+   
    4. Log on to device with another user.
+   
    5. Depending on the method you'd like to implement, follow the appropriate steps:
+   
       - For single entry for each device: Check only one entry in Microsoft 365 Defender portal.
       - For multiple entries for each device: Check multiple entries in Microsoft 365 Defender portal.
 
@@ -178,13 +187,17 @@ The following configuration settings are recommended:
 - Defender Cloud Extended Timeout In Seconds: 20
 
 #### Exclusions
+
 - Disable local admin merge: Not configured
+
 - Defender processes to exclude:
+
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
 
 - File extensions to exclude from scans and real-time protection:
+
   - `%Programfiles%\FSLogix\Apps\frxccd.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
   - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
@@ -200,6 +213,7 @@ The following configuration settings are recommended:
 - Turn on all settings and set to monitor all files
 
 #### Remediation
+
 - Number of days to keep quarantined malware: 30
 - Submit samples consent: Send all samples automatically
 - Action to take on potentially unwanted apps: Enable
@@ -222,13 +236,16 @@ The following configuration settings are recommended:
 - Check for signature updates before running scan: Yes
 
 #### Updates
+
 - Enter how often to check for security intelligence updates: 8
 - Leave other settings in default state
 
 #### User experience
+
 - Allow user access to Microsoft Defender app: Not configured
 
 #### Enable Tamper protection
+
 - Enable tamper protection to prevent Microsoft Defender being disabled: Enable
 
 #### Attack surface reduction
@@ -239,6 +256,7 @@ The following configuration settings are recommended:
 - Block unverified file download: Yes
 
 #### Attack surface reduction rules
+
 - Configure all available rules to Audit.
 
 > [!NOTE]
