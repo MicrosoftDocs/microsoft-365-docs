@@ -254,7 +254,7 @@
          items:
          - name: User tags in Defender for Office 365
            href: user-tags-about.md
-         - name: Configure and review priority accounts
+         - name: Configure and review priority account protection
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
          href: mdo-email-entity-page.md
