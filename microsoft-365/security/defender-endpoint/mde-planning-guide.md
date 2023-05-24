@@ -110,4 +110,4 @@ After you've completed this guide, you'll be set up with the right access permis
 
 After reading this article, proceed to:
 
-- **[Confirm your license state.](production-deployment.md)**: Begin by confirm you have the correct licenses to start deploying Defender for Endpoint.
+- **[Set up Microsoft Defender for Endpoint deployment](production-deployment.md)**
