@@ -78,8 +78,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings and encryption persists.
 
-### Sensitivity labels
-- **In preview**: Word, Excel, and PowerPoint, but not yet Outlook support [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) in preview. Unlike the AIP add-in that can apply DKE, built-in labeling for DKE supports co-authoring and AutoSave for encrypted documents.
+- **In preview**: Built-in labeling support for [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) is in preview. Unlike the AIP add-in that can apply DKE, built-in labeling for DKE supports co-authoring and AutoSave for encrypted documents.
 
 ## April 2023
 
