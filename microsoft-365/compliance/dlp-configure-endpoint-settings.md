@@ -148,7 +148,7 @@ DLP can copy items that match policies on devices to an [Azure storage account](
 > - Windows 10 - [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23), [March 28, 2023—KB5023774 (OS Build 22000.1761) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023774-os-build-22000-1761-preview-67b4cfda-120a-422f-98c0-35124ddba839) 
 >- Windows 11 - [March 28, 2023—KB5023778 (OS Build 22621.1485) Preview](https://support.microsoft.com/en-us/topic/march-28-2023-kb5023778-os-build-22621-1485-preview-d490bb51-492e-410c-871f-50ad01b0f765)
 >
-> - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates.md#april-2023-platform-41823048--engine-11203003)
+> - Microsoft Defender [April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates#april-2023-platform-41823048--engine-11203003)
 
 **Network share coverage and exclusions** extends endpoint DLP policies and actions to new and edited files on network shares and mapped network drives. If [just in time protection (preview)](endpoint-dlp-learn-about.md#just-in-time-protection-preview) is also enabled, it will also be extended to cover network shares and mapped drives when you enable network share coverage and exclusions. If you want to exclude a specific network path for all monitored devices, add the path value in **Exclude these network share paths**.
 
