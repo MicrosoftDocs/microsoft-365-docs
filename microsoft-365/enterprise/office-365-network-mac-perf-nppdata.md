@@ -3,7 +3,7 @@ title: "Microsoft 365 network provider assessments (PREVIEW)"
 ms.author: teleary
 author: temanteleary
 manager: scotv
-ms.date: 05/05/2023
+ms.date: 05/22/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -20,7 +20,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Microsoft 365 network provider assessments (PREVIEW)
 
-Microsoft measures network performance and availability between client applications on user machines and Microsoft’s network.
+Microsoft measures network performance and availability between client applications on user machines and Microsoft's network.
 
 ## Network performance
 
@@ -30,8 +30,7 @@ Read about the network performance assessment calculation method at [Microsoft 3
 
 Network availability is measured from the client and is defined using this formula.
 
-> [!div class="mx-imgBorder"]
-> ![Network availability calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png)
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png" alt-text="Formula use to calculate network availability.":::
 
 We receive notification of unsuccessful connections after network connectivity is restored.
 
@@ -54,10 +53,10 @@ What if you don't see the exact same measurement as our aggregation? Our aggrega
 
 The formula used for the standard error is:
 
-> [!div class="mx-imgBorder"]
-> ![Network standard error calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-standard-error.png)
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-standard-error.png" alt-text="Formula used to calculate the standard error of sampling.":::
 
 Where:
+
 * z is the statistical coefficient and for 95% confidence interval the value is 1.96
 * c is the error coefficient for the percentile and for the 50th percentile it's 1.09
 * σ is the standard deviation of the aggregation
@@ -76,13 +75,12 @@ There are some markers we show where data can't be reported.
 * **Statistical significance** – As described above we don't show data where the standard error of sampling is greater than 20%.
 * **No data** – This is displayed if for some reason this data element had no samples.
 * **Privacy requirement** – This is displayed for the network provider view if there were fewer than five customers in any aggregation result or if there were fewer than 24 samples in the aggregation. We don't provide customer performance data directly to network providers for customer privacy reasons.
-* **Dominating customer** – Even where there are five or more customers, there may be cases where a customer can be guessed due to the specific network provider having a large customer in a geographic area. To avoid this, we compare the population including the largest customer with the same population excluding the largest customer. Using a Cohen’s D calculation, we discard results where the population difference is greater than 0.5. This means that where the largest customer has a medium to large Cohen’s D effect on the aggregation result the result is blocked. A network provider simply needs to expand their geographic area where they have more customers to see results.
+* **Dominating customer** – Even where there are five or more customers, there may be cases where a customer can be guessed due to the specific network provider having a large customer in a geographic area. To avoid this, we compare the population including the largest customer with the same population excluding the largest customer. Using a Cohen's D calculation, we discard results where the population difference is greater than 0.5. This means that where the largest customer has a medium to large Cohen's D effect on the aggregation result the result is blocked. A network provider simply needs to expand their geographic area where they have more customers to see results.
 
 The markers **Privacy requirement** and **Dominating customer** aren't shown in customer reports.
 In addition, we remove outliers from the sample source where outliers are defined as:
 
-> [!div class="mx-imgBorder"]
-> ![Network outlier calculation.](../media/m365-mac-perf/m365-mac-perf-nppdata-outlier.png)
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-outlier.png" alt-text="Formula used to calculate the network outlier cutoff.":::
 
 Network providers will additionally not be shown in a tenant or location view if that network provider accounts for fewer than 0.01% of users represented in that view.
 
