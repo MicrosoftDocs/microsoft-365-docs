@@ -108,9 +108,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
 
-## Microsoft Priva
+### Microsoft Priva
 
-- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policiesd#set-alerts)
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies#set-alerts)
 - **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
