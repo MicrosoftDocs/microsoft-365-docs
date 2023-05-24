@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 04/18/2023
+ms.date: 05/24/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -124,13 +124,10 @@ For more information, see [Manage indicators](manage-indicators.md).
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you've selected for your Defender for Endpoint data.
 
 ## Tamper protection
-During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
 
-Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
+During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
-This feature is available if your organization uses Microsoft Defender Antivirus with [cloud protection](cloud-protection-microsoft-defender-antivirus.md) enabled. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
-
-Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
+For more information, including how to configure tamper protection, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
 ## Show user details
 
