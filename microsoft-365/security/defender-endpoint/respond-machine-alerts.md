@@ -223,8 +223,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 > - Exclusion for both macOS and Linux isolation is not supported.
 > - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
-> An isolated device is removed from isolation when an administrator adds or modifies a new iptable to the isolated device.
-> Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
+> - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
@@ -246,9 +245,9 @@ The device isolation feature is an invaluable tool for safeguarding devices agai
 There's a downloadable script for these instances that admins can run to forcibly release devices from isolation. The script is available through a link in the UI.
 
 > [!NOTE]
-> Only MDE admins can forcibly release devices from isolation.
-> The script is valid for the specific device only.
-> The script will expire in three days.
+> - Only MDE admins can forcibly release devices from isolation.
+> - The script is valid for the specific device only.
+> - The script will expire in three days.
 
 To forcibly release device from isolation:
 
