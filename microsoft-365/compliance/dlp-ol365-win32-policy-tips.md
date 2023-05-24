@@ -1,5 +1,5 @@
 ---
-title: "Outlook 365 for Win32 data loss prevention policy tip reference"
+title: "Data loss prevention policy tip reference for Outlook 365 for Win32"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,24 +22,28 @@ recommendations: false
 description: "DLP policy tip reference for Outlook 2013 for Win32."
 ---
 
-# Outlook 365 for Win32 data loss prevention policy tip reference
+# Data loss prevention policy tip reference for Outlook 365 for Win32
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## DLP policy tips supported
+
+Yes
+
+## DLP policy match email notification supported for Outlook 365 for Win 32
+
+Yes
 
 ## Supported versions and channels
  
 - version 2105 build 14026.2000
 - semi-annual channel version 2102 build 13801.20862
 
-## DLP policy tips supported
 
-Yes
 
-## DLP policy match email notification supported
 
-Yes
 
-## Supported conditions
+## Conditions that support policy tips in Outlook 365 for Win32
 
 For E3 users:
 
@@ -67,13 +71,13 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 > [!NOTE]
 > Outlook does not support showing policy tips for a DLP polies that's applied to a dynamic distribution group or non-email enabled security groups. 
 
-## Supported actions
+## Actions that support policy tips in Outlook 365 for Win 32
 
 INSERT LIST HERE
 
-## Supported sensitive information types
+## Sensitive informaiton types that support policy tips in Outlook 365 for Win32
 
-### Preconfigured SITs and Named Entity SITs
+Preconfigured SITs and Named Entity SITs
 
 YES/NO
 
@@ -393,15 +397,16 @@ HERE IS THE COMPLETE LIST, DELETE THE UNSUPPORTED ONES, these will link to the d
 
 For more informaiton on named entity SITs, see [Learn about named entities](named-entities-learn.md)
 
-### Custom SITS
-
-YES/NO
-
-### Exact Data Match SITs
+### Exact Data Match sensitive information types that support policy tips Outlook 365 for Win32
 
 YES/NO
 
 For more information on exact data match based SITs, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
+
+### Custom sensitive information types support for policy tips in Outlook 365 for Win32
+
+YES/NO
+
 
 ### Document Fingerprint SITs
 
@@ -409,7 +414,7 @@ YES/NO
 
 For more information on document fingerprint SITs, see [Document fingerprinting](document-fingerprinting.md)
 
-## Supported sensitivity labels
+## Sensitivity labels that support policy tips in Outlook 365 for Win32
 
 YES/NO
 
@@ -417,7 +422,7 @@ INSERT LIST HERE
 
 For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
 
-## Supported retention labels
+## Retention labels that support policy tips Outlook 365 for Win32
 
 YES/NO
 
@@ -426,7 +431,7 @@ INSERT LIST HERE
 For more information on retention labels, see [Learn about retention policies and retention labels](retention.md)
 
 
-## Supported trainable classifiers
+## Trainable classifiers that support policy tips in Outlook 365 for Win32
 
 YES/NO
 
