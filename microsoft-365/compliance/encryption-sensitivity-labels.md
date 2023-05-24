@@ -280,7 +280,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 ### Double Key Encryption
 
 > [!NOTE]
-> For built-in labeling, this feature is currently in preview for Word, Excel, and PowerPoint, but not yet for Outlook. For release details, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**. When you use built-in labeling with DKE, co-authoring and AutoSave are supported for encrypted documents.
+> For built-in labeling, this feature is currently in preview. For release details, use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**. When you use built-in labeling with DKE, co-authoring and AutoSave are supported for encrypted documents.
 > 
 > For the Azure Information Protection unified labeling client, this feature is supported only when you haven't enabled your tenant for co-authoring and AutoSave for encrypted document.
 
