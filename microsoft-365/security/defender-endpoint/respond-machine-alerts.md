@@ -251,7 +251,7 @@ There's a downloadable script for these instances that admins can run to forcibl
 
 To forcibly release device from isolation:
 
-1. On the device page, the MDE admin selects **Download force release from isolation script** from the action menu.
+1. On the device page, the MDE admin selects **Download script to force-release a device from isolation** from the action menu.
 1. On the right-hand side wizard, the admin selects **Download script**.
 
 ### Notification on device user
