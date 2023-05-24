@@ -71,6 +71,8 @@ If you [Set up the release option in the admin center](#set-up-the-release-optio
 
 If you [Set up the release option in the admin center](#set-up-the-release-option-in-the-admin-center) for this option, you can define specific users, usually power users, to receive early access to features and functionality.
 
+It's important to ensure that your HelpDesk is opted in to Targeted release so that they have access to the Targeted release features needed to support your users.
+
 > [!IMPORTANT]
 > Some features only roll out on a per-organization basis. This means that the entire organization will receive access to the feature at the same time. For features like this, it’s not possible for selected users in the targeted release program to get the feature early. This means that your organization will not be able to receive these features early if you have configured selected users in targeted release. To make sure that you see all features in targeted release, you will need to configure targeted release for the entire organization or set up a test organization.
   

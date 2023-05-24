@@ -41,6 +41,22 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## May 2023
 
+### Compliance Manager
+
+- **General availability (GA)**: New multicloud support for Compliance Manager.
+    - **New article**: [Multicloud support in Compliance Manager](compliance-manager-multicloud.md) explains the new integration with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance.
+    - **New article**: [Configure cloud settings for use with Compliance Manager](compliance-manager-cloud-settings.md) details the setup process to receive multicloud support in Compliance Manager.
+    - **New article**: [Compliance Manager glossary of terms](compliance-manager-glossary.md) explains new and existing terms and concepts.
+- **General availability (GA)**: New configuration connectors for building assessments that cover non-Microsoft services.
+    - **New article**: [Working with connectors in Compliance Manager](compliance-manager-connectors.md) details how to set up and use connectors for building assessments for non-Microsoft services.
+    - **New article**: [Salesforce setup for Compliance Manager connector](compliance-manager-connectors-salesforce.md) explains the seupt process for using the Salesforce connector.
+    - **New article**: [Zoom setup for Compliance Manager](compliance-manager-connectors-zoom.md) explains the setup process fo using the Zoom connector.
+    - Update to [Build and manage assessments](compliance-manager-assessments.md) about incorporating connectors for non-Microsoft services.
+- **Assigning user roles per regulatory template**: New capability allowing you to provide scoped access to any assessment built for a specific regulation. Updated pages include:
+    - [Learn about regulations](compliance-manager-templates.md#grant-user-access-to-regulations)
+    - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
+    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) 
+
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
@@ -51,7 +67,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
 - **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings-intelligent-detections.md) reduces alert noise.
 - Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
-- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
+- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps).
+
+### Microsoft Priva
+
+- Updates to [Get started with Priva](/privacy/priva/priva-setup#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
+- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
 
 ### Sensitivity labels
 
@@ -67,12 +88,15 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
 - **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
 
+### Compliance Manager
+
+- Updated [regulatory templates list](compliance-manager-templates-list.md) with templates Turkey - Information and Communication Security Guide and SA - Saudi Arabia Monetary Authority (SAMA) & National Cybersecurity Authority (NCA).
 
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
@@ -84,6 +108,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
 
+### Microsoft Priva
+
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies#set-alerts)
+- **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
 
