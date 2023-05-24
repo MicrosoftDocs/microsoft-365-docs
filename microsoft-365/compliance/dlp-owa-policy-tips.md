@@ -200,16 +200,19 @@ Yes.
 Custom sensitive information types that use REGEX, functions, keyword lists and keyword dictionaries support policy tips in Outlook on the Web. For more details, see [Create custom sensitive information types in the compliance portal](create-a-custom-sensitive-information-type.md) and [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 
-<!--## Sensitivity labels that support policy tips in Outlook on the Web
-to be added later
+## Sensitivity labels that support policy tips in Outlook on the Web
+
+No.
 
 
 ## Retention labels that support policy tips in Outlook on the Web
-to be added later
+
+No.
 
 
 ## Trainable classifiers that support policy tips in Outlook on the Web
-to be added later-->
+
+No.
 
 
 <!-- END USER CONTENT ## Policy tips in Outlook on the web
