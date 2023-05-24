@@ -41,6 +41,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 - Use troubleshooting mode to disable/change the tamper protection setting to perform:
 
   - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).
+
   - Microsoft Defender Antivirus performance troubleshooting by using troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
 - If a tampering event occurs (for example, the `MpPreference` snapshot is altered or deleted), troubleshooting mode ends and tamper protection is re-enabled on the device.
@@ -48,6 +49,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
   - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
+
   - Local admins can configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
 - Admins with "Manage Security settings" permissions have access to turn on troubleshooting mode.
@@ -55,7 +57,9 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 - Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
 
   - A snapshot of `MpPreference` is taken before troubleshooting mode begins.
+
   - A second snapshot is taken just before troubleshooting mode expires.
+  
   - Operational logs from during troubleshooting mode are also collected.
 
   - Logs and snapshots are collected and are available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them.
