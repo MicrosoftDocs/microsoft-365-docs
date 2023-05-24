@@ -108,10 +108,6 @@ For the most current settings, get the latest ADMX files in your central store. 
 > [!WARNING]
 > **Disabling real-time protection drastically reduces the protection on your endpoints and is not recommended**. In addition, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, you cannot turn it off by using Group Policy. If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 
-The main real-time protection capability is enabled by default, but you can disable it by using **Local Group Policy Editor**.
-
-#### To disable real-time protection in Group Policy
-
 1. Open **Local Group Policy Editor**.
 
    1. In your Windows 10 or Windows 11 taskbar search box, type **gpedit**.
