@@ -49,6 +49,8 @@ The steps include:
 
 This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
 
+To ensure you are ready to deploy Def, use the Planning guide to move to Microsoft Intune. It covers personal devices, licensing considerations, creating a rollout plan, communicating changes to your users, and more.
+
 - You're a global admin.
 - You meet the [minimum requirements](minimum-requirements.md)
 
