@@ -63,7 +63,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 
 ## Advanced classification scanning and protection
 
-Advanced classification scanning and protection allow the Microsoft Purview cloud-based data classification service to scan items, classify them, and return the results to the local machine. Therefore, you can take advantage of classification techniques such as [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
+Advanced classification scanning and protection allow the Microsoft Purview cloud-based data classification service to scan items, classify them, and return the results to the local machine. Therefore, you can take advantage of classification techniques such as [exact data match](sit-learn-about-exact-data-match-based-sits.md) classification, and [named entities](named-entities-learn.md) in your DLP policies.
 
 When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth usage is a concern, you can set a limit on how much bandwidth can be used in a rolling 24-hour period. The limit is configured in **Endpoint DLP settings** and is applied per device. If you set a bandwidth usage limit and it's exceeded, DLP stops sending the user content to the cloud. At that point, data classification continues locally on the device but classification using exact data match, named entities, and trainable classifiers aren't available. When the cumulative bandwidth usage drops below the rolling 24-hour limit, communication with the cloud services resumes.
 
@@ -128,10 +128,10 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 ## Set up evidence collection for file activities on devices (preview)
 
-When it identifies items that match policies on devices, DLP can copy them to an [Azure storage account](/azure/storage/common/storage-account-overview.md). This is useful for auditing policy activity and troubleshooting specific matches. Use this section to add the name and URL of the storage account. 
+When it identifies items that match policies on devices, DLP can copy them to an [Azure storage account](/azure/storage/common/storage-account-overview). This is useful for auditing policy activity and troubleshooting specific matches. Use this section to add the name and URL of the storage account. 
 
 > [!NOTE]
-> Before you enable this feature, you must create an Azure storage account and a container in that storage account. You must also configure permissions for the account. As you set up your Azure storage account, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider configuring [Azure storage account access tiers](/azure/storage/blobs/storage-blob-storage-tiers.md) and [Azure storage account pricing](/azure/storage/common/storage-account-overview#pricing.md).
+> Before you enable this feature, you must create an Azure storage account and a container in that storage account. You must also configure permissions for the account. As you set up your Azure storage account, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider configuring [Azure storage account access tiers](/azure/storage/blobs/storage-blob-storage-tiers) and [Azure storage account pricing](/azure/storage/common/storage-account-overview#pricing).
 
 - For more information on this feature, see [Learn about collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-learn.md).  
 - For more information on how to configure this feature, see [Get started with collecting files that match data loss prevention policies from devices](dlp-copy-matched-items-get-started.md).
