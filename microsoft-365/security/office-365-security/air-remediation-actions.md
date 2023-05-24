@@ -16,7 +16,7 @@ ms.collection:
 - m365-security
 - tier2
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
-ms.date: 1/31/2023
+ms.date: 5/31/2023
 ms.custom: 
 - air
 ms.subservice: mdo

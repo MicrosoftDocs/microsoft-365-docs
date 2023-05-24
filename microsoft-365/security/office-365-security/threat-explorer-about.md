@@ -21,7 +21,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/2/2023
+ms.date: 5/31/2023
 ---
 
 # Threat Explorer and Real-time detections
