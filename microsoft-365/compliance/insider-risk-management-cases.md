@@ -223,7 +223,7 @@ To run, manage, or create Power Automate flows for an insider risk management ca
 2. Choose the Power Automate flow to run, then select **Run flow**.
 3. After the flow has completed, select **Done**.
 
-To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md).
 
  ### View or create a Microsoft Teams team for the case
 
@@ -233,7 +233,7 @@ For cases opened before enabling Microsoft Team integration, risk investigators 
 
 When a case is resolved, the associated Microsoft Team will be automatically archive (hidden and turned to read-only).
 
-To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
+To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings-teams.md).
 
 ### Resolve the case
 
