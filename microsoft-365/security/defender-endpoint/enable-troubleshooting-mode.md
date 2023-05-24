@@ -70,7 +70,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
 
-- Notifications are sent to the user when troubleshooting mode begins and when troubleshooting mode ends. A warning is also sent to indicate taht troubleshooting mode is ending soon.
+- Notifications are sent to the user when troubleshooting mode begins and when troubleshooting mode ends. A warning is also sent to indicate that troubleshooting mode is ending soon.
 
 - The beginning and ending of troubleshooting mode is identified in the **Device Timeline** on the device page.
 
