@@ -58,12 +58,14 @@ sections:
           How do I turn tamper protection on or off?
         answer: |
           Tamper protection is part of [built-in protection](built-in-protection.md), and should be enabled. 
-          
-          If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See the following articles:
 
-          - [Manage tamper protection using Microsoft Intune](manage-tamper-protection-intune.md)
-          - [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
-          - [Manage tamper protection using Configuration Manager](manage-tamper-protection-configuration-manager.md)
+          We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage Microsoft Defender Antivirus settings for your organization. With Intune, you can control where tamper protection is enabled (or disabled) through policies. You can also protect Microsoft Defender Antivirus exclusions. See [Tamper protection: Microsoft Defender Antivirus exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions).
+          
+          If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you can choose from several options to manage tamper protection:
+
+          - [Use Microsoft Intune](manage-tamper-protection-intune.md)
+          - [Use the Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md)
+          - [Use Configuration Manager](manage-tamper-protection-configuration-manager.md)
           
           If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
 
