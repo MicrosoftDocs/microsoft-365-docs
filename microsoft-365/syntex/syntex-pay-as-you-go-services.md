@@ -18,7 +18,7 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 
 # Pay-as-you-go services and pricing for Microsoft Syntex
 
-When you use Microsoft Syntex pay-as-you-go, services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex. The table below describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization will be able to take advantage of Syntex services right away. Your tenant will be billed according to the details shown in this article.
+When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex. The following table describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization will be able to take advantage of Syntex services right away. Your tenant will be billed according to the details shown in this article.
 
 |Service|What's counted?|What's billed?|
 |:----|:--------------|:-------------|
