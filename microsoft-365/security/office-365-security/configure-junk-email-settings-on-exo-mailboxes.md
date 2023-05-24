@@ -44,7 +44,7 @@ Admins can use Exchange Online PowerShell to configure entries in the safelist c
 > [!NOTE]
 > Messages from senders that users have added to their own Safe Senders lists will skip content filtering as part of EOP (the SCL is -1). To prevent users from adding entries to their Safe Senders list in Outlook, use Group Policy as mentioned in the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section later in this article. Policy filtering, Content filtering and Defender for Office 365 checks will still be applied to the messages.
 >
-> EOP uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow for Exchange Online mailboxes. EOP routes messages based on the actions set in anti-spam policies. The user's Safe Sender list and Blocked Senders continue to work as usual.
+> EOP uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet has no effect on mail flow for Exchange Online mailboxes. EOP routes messages based on the actions set in anti-spam policies. The user's Safe Sender list and Blocked Senders continue to work as usual.
 
 ## What do you need to know before you begin?
 
