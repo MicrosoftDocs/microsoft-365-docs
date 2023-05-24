@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 05/24/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -33,10 +33,10 @@ Yes.
 > [!IMPORTANT]
 > When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
-<!--## Email notification supported for Outlook on the Web
+## Email notification supported for Outlook on the Web
 
 Yes.
--->
+
 
 ## Conditions that support policy tips in Outlook on the Web
 
