@@ -91,7 +91,7 @@ If you select this export option, the exported content is organized in the follo
     > [!NOTE]
     > Skipped processing also contains the number of extracted child items for PST format. For example, a review set has two items, one corresponding to an email and one corresponding to an attachment. When the file is converted to the PST, it is mappped to one item only (the mail item). This results in skipping the child attachment.
 
-    - *Export Containers*: This contains the list of zips and PSTs that have been created for the export.
+    - *Export Containers*: This contains the list of .ZIP and .PST files created for the export.
 
 - Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition. The root folder contains the following:
   
