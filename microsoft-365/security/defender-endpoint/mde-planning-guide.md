@@ -34,37 +34,77 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article provides an overview of the steps to prepare, deploy and onboard your devices to Microsoft Defender for Endpoint.
+Defender for Endpoint helps you gain an holistic view into your environment, mitigate advanced threats, and respond to alerts from a single, unified platform.
+
+This article provides an overview of the steps to deploy Defender for Endpoint as your multi-platform endpoint protection solution. Each section corresponds to a separate article in this solution.
 
 The steps include:
 
-1. [Confirm your license state.](production-deployment.md)
-2. [Inventory your environment.](prepare-deployment.md)
-3. [Assign roles and permissions.](prepare-deployment.md)
-4. [Identify your architecture.](deployment-strategy.md)
-5. [Choose your deployment method.](onboarding.md)
-6. [Onboard devices and configure Microsoft Defender for Endpoint capabilities.](onboarding.md)
+1. [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
+2. [Assign roles and permissions](prepare-deployment.md)
+3. [Identify your architecture](deployment-strategy.md)
+4. [Choose your deployment method and onboard devices](onboarding.md)
+5. [Configure Microsoft Defender for Endpoint capabilities](onboarding.md)
 
 ## Before you begin
 
-This solution guide provides specific and actionable steps to strengthen your security posture, and assumes the following facts:
+Preparation is key to any successful deployment. In this section guides, you'll be guided on the points you'll need to consider as you prepare to deploy Defender for Endpoint.
 
-To ensure you are ready to deploy Def, use the Planning guide to move to Microsoft Intune. It covers personal devices, licensing considerations, creating a rollout plan, communicating changes to your users, and more.
+- You're a global admin
 
-- You're a global admin.
 - You meet the [minimum requirements](minimum-requirements.md)
 
-## Step 1 - Confirm your license state
+- You have a full inventory of your environment. The table below provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which will help identify potential dependencies and/or changes required in technologies or processes.
 
-## Step 2 - Inventory your environment
+|What|Description|
+|---|---|
+|Endpoint count|Total count of endpoints by operating system.|
+|Server count|Total count of Servers by operating system version.|
+|Management engine|Management engine name and version (for example, System Center Configuration Manager Current Branch 1803).|
+|CDOC distribution|High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).|
+|Security information and event (SIEM)|SIEM technology in use.|
 
-## Step 3 - Assigning roles and permissions
+## Step 1 - Set up Microsoft Defender for Endpoint deployment
 
-## Step 4 - Identify your architecture
+In this deployment scenario, you'll be guided through the steps on:
 
-## Step 5 - Choose your deployment method
+Licensing validation
+Tenant configuration
+Network configuration
 
-## Step 6 - Onboarding devices and configure Microsoft Defender for Endpoint capabilities
+For more information see, [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
+
+## Step 2 - Assign roles and permissions
+
+Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends [review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
+
+For more information, see [Assign roles and permissions](prepare-deployment.md).
+
+## Step 3 - Identify your architecture
+
+We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Depending on your environment, some tools are better suited for certain architectures.
+
+To select the appropriate Defender for Endpoint architecture that best suites your organization, see [Identify your architecture](deployment-strategy.md).
+
+## Step 4 - Choose your deployment method and onboard devices
+
+The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately. For more information, see [Choose your deployment method](onboarding.md)
+
+## Step 5 - Configure Microsoft Defender for Endpoint capabilities
+
+After onboarding endpoints, configure the security capabilities in Defender for Endpoint so that you can maximize the robust security protection available in the suite. Capabilities include:
+
+Endpoint detection and response
+Next-generation protection
+Attack surface reduction
+
+In many cases, organizations will have existing endpoint security products in place. The bare minimum every organization should have been an antivirus solution. But in some cases, an organization might also have implanted an EDR solution already.
+
+Historically, replacing any security solution used to be time intensive and difficult to achieve due to the tight hooks into the application layer and infrastructure dependencies. However, because Defender for Endpoint is built into the operating system, replacing third-party solutions is now easy to achieve.
+
+For more information, see [Configure Microsoft Defender for Endpoint capabilities](onboarding.md).
+
+After you've completed this guide, you'll be set up with the right access permissions, your endpoints will be onboarded and reporting sensor data to the service, and capabilities such as next-generation protection and attack surface reduction will be in place.
 
 ## Next steps
 
