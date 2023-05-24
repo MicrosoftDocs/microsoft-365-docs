@@ -427,7 +427,7 @@ File activity is always audited for onboarded devices, regardless of whether the
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions.
 
-The most common use case for creating printer groups is to use them for limiting the printing of contracts to only those printers in an organization's Legal department. After you define a printer group here, you can use it in all of your policies that are scoped to **Devices**. For more information on configuring policy actions to use authorization groups, see[Scenario 8 Authorization groups](endpoint-dlp-using.md#scenario-8-authorization-groups) .
+The most common use case for creating printer groups is to use them for limiting the printing of contracts to only those printers in an organization's Legal department. After you define a printer group here, you can use it in all of your policies that are scoped to **Devices**. For more information on configuring policy actions to use authorization groups, see [Scenario 8 Authorization groups](endpoint-dlp-using.md#scenario-8-authorization-groups) .
 
 You can create a maximum of 20 printer groups. Each group can contain a maximum of 50 printers.
 
