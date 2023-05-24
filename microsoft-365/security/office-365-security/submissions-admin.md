@@ -220,7 +220,7 @@ After a few moments, the block entry will appear on the **URL** tab on the **Ten
 
            For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
 
-         - **Allow entry note**: EEnter optional information about why you're allowing and submitting this email message.
+         - **Allow entry note**: Enter optional information about why you're allowing and submitting this email message.
 
            For spoofed senders, any value you enter here is not shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block List**.
 
