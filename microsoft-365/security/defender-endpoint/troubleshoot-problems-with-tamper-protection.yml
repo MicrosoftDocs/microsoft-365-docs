@@ -57,16 +57,18 @@ sections:
 
           2. Confirm that only Intune manages the device. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**.
 
-            - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required to protect Microsoft Defender Antivirus exclusions*).
-            - If **ManagedDefenderProductType** has a value of `7`, then the device is comanaged, such as by Intune and Configuration Manager (*this value indicates that exclusions aren't currently tamper protected*).
+             - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required to protect Microsoft Defender Antivirus exclusions*).
+
+             - If **ManagedDefenderProductType** has a value of `7`, then the device is comanaged, such as by Intune and Configuration Manager (*this value indicates that exclusions aren't currently tamper protected*).
 
           3. Confirm that tamper protection is deployed and that Microsoft Defender Antivirus exclusions are protected. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**.
 
-            - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-            - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
-          
-          > [!CAUTION]
-          > **Don't change the value of the registry keys**. Use the preceding procedure for information only. Changing keys have no effect on whether tamper protection applies to exclusions.
+             - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
+
+             - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
+
+             > [!CAUTION]
+             > **Don't change the value of the registry keys**. Use the preceding procedure for information only. Changing keys have no effect on whether tamper protection applies to exclusions.
 
 
       
