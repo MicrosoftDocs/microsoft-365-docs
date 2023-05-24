@@ -51,7 +51,7 @@ Anyone from your organization can complete the customer interest form for Micros
 
 Defender Experts for Hunting is a managed threat hunting service that proactively hunts for threats across endpoints, email, identity, and cloud apps. To carry out hunting on your behalf, Microsoft experts need access to your Microsoft 365 Defender advanced hunting data. Enrolling in this service means you're granting permission to Microsoft experts to access the said data.
 
-The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://aka.ms/trustcenter-dex4hunting) > scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH).
+The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://www.microsoft.com/en-us/trust-center/product-overview) then scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://aka.ms/trustcenter-defenderexperts).
 
 ### Data collection, usage, and retention
 
