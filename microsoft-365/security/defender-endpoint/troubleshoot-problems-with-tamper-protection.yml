@@ -31,8 +31,6 @@ sections:
         answer: |
          If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 
-         We recommend keeping tamper protection turned on for your organization.
-
       - question: |
           Changes to Microsoft Defender Antivirus settings using Group Policy are ignored. Why is this happening, and what can we do about it?
         answer: |
