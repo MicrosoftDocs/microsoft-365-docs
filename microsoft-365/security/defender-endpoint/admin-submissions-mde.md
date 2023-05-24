@@ -37,7 +37,7 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 ## What do you need to know before you begin?
 
-- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender, Microsoft Defender for Endpoint Plan 2, or Microsoft Defender for Office Plan 2.
+- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2.
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
