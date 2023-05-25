@@ -489,6 +489,35 @@ If your organization is using the Shifts app in Microsoft Teams, you can search 
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
+## Microsoft To Do activities
+
+The following table lists the activities in Microsoft To Do that are logged in the Microsoft 365 audit log. For more information about Microsoft To Do, see [Support for Microsoft To Do](https://support.microsoft.com/todo).
+
+> [!NOTE]
+> Auditing events for Microsoft To Do activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Accepted sharing link on folder|AcceptedSharingLinkOnFolder|Accepted sharing link for a folder.|
+|Attachment created|AttachmentCreated|An attachment was created for a task.|
+|Attachment updated|AttachmentUpdated|An attachment was updated.|
+|Attachment deleted |AttachmentDeleted|An attachment was deleted.|
+|Folder sharing link shared|FolderSharingLinkShared|Created a sharing link for a folder.|
+|Linked entity deleted|LinkedEntityDeleted|A linked entity was deleted.|
+|Linked entity updated|LinkedEntityUpdated|A linked entity was updated.|
+|Linked entity created|LinkedEntityCreated|A linked entity of task was created.|
+|SubTask created|SubTaskCreated|A subtask was created.|
+|SubTask deleted|SubTaskDeleted|A subtask was deleted.|
+|SubTask updated|SubTaskUpdated|A subtask was updated.|
+|Task created|TaskCreated|A task was created.|
+|Task deleted|TaskDeleted|A task was deleted.|
+|Task read|TaskRead|A task was read.|
+|Task updated|TaskUpdated|A task was updated.|
+|TaskList created|TaskListCreated|A task list was created.|
+|TaskList read|TaskListRead|A task list was read.|
+|TaskList updated|TaskListUpdated |A task list was updated.|
+|User invited|UserInvited|Invited user to a folder.|
+
 ## Microsoft Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
