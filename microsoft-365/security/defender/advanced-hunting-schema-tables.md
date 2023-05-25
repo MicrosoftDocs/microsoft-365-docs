@@ -56,8 +56,12 @@ The following reference lists all the tables in the schema. Each table name link
 
 | Table name | Description |
 |------------|-------------|
+| **[AADSignInEventsBeta](advanced-hunting-aadsignineventsbeta-table.md)** | INSERT TEXT |
+| **[AADSpnSignInEventsBeta](advanced-hunting-aadspnsignineventsbeta-table.md)** | INSERT TEXT |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Files, IP addresses, URLs, users, or devices associated with alerts |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity, including severity information and threat categorization  |
+| **[BehaviorEntities](advanced-hunting-behaviorentities-table.md)** | INSERT TEXT |
+| **[BehaviorInfo](advanced-hunting-behaviorinfo-table.md)** | INSERT TEXT |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Events involving accounts and objects in Office 365 and other cloud apps and services |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Certificate information of signed files obtained from certificate verification events on endpoints |
@@ -69,8 +73,12 @@ The following reference lists all the tables in the schema. Each table name link
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Network properties of devices, including physical adapters, IP and MAC addresses, as well as connected networks and domains |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creation and modification of registry entries |
+| **[DeviceTvmHardwareFirmware](advanced-hunting-devicetvmhardwarefirmware-table.md)** | INSERT TEXT|
+| **[DeviceTvmInfoGathering](advanced-hunting-deviceinfogathering-table.md)** | INSERT TEXT |
+| **[DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md)** | INSERT TEXT|
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Knowledge base of various security configurations used by Microsoft Defender Vulnerability Management to assess devices; includes mappings to various standards and benchmarks  |
+| **[DeviceTvmSoftwareEvidenceBeta](advanced-hunting-devicetvmsoftwareevidencebeta-table.md)** | INSERT TEXT|
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventory of software installed on devices, including their version information and end-of-support status |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Software vulnerabilities found on devices and the list of available security updates that address each vulnerability |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available |
@@ -82,6 +90,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Account information from various sources, including Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Authentication events on Active Directory and Microsoft online services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Queries for Active Directory objects, such as users, groups, devices, and domains |
+| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)** | INSERT TEXT |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
