@@ -280,9 +280,9 @@ For more information, see [Rights Management issuer and Rights Management owner]
 ### Double Key Encryption
 
 > [!NOTE]
-> For built-in labeling, this feature is currently in preview. For release details, use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**. When you use built-in labeling with DKE, co-authoring and AutoSave are supported for encrypted documents.
+> For built-in labeling, this feature is currently in preview. For release details, use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**. When you use DKE with built-in labeling, you can enable your tenant for [co-authoring and AutoSave](sensitivity-labels-coauthoring.md).
 > 
-> For the Azure Information Protection unified labeling client, this feature is supported only when you haven't enabled your tenant for co-authoring and AutoSave for encrypted document.
+> When you use the Azure Information Protection (AIP) Office add-in, DKE is supported only when you haven't enabled your tenant for co-authoring and AutoSave.
 
 Limitation for the preview of Double Key Encryption and built-in labeling:
 
