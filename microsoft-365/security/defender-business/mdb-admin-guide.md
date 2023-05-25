@@ -24,7 +24,7 @@ description: "Get an overview of tasks your administrators perform to maintain y
 
 # Microsoft Defender for Business tenant administration guide
 
-Maintaining your Microsoft Defender for Business environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
+Maintaining your Defender for Business environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
 
 Many admin tasks can be performed in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), although some tasks, such as adding/removing devices, can be performed in other portals (such as the Microsoft 365 Defender portal or the Microsoft Intune admin center). 
 
@@ -55,7 +55,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 
 | Task | Resources to learn more |
 |:---|:---|
-| View current status of and manage devices | [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md) |
+| View current status of and manage devices | [Manage devices in Defender for Business](mdb-manage-devices.md) |
 | Onboard devices to Defender for Business | [Onboard devices to Defender for Business](mdb-onboard-devices.md) |
 | Offboard devices from Defender for Business | [Offboard a device from Defender for Business](mdb-offboard-devices.md) |
 | Manage devices with Intune | [What does device management with Intune mean?](/mem/intune/fundamentals/what-is-device-management)<br/><br/>[Manage your devices and control device features in Microsoft Intune](/mem/intune/fundamentals/manage-devices) |
@@ -73,6 +73,6 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 
 ## See also
 
-- [Maintain your Microsoft Defender for Business environment](mdb-maintain-environment.md)
+- [Maintain your Defender for Business environment](mdb-maintain-environment.md)
 - [Microsoft 365 admin center help](/microsoft-365/admin/index)
 - [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md)
