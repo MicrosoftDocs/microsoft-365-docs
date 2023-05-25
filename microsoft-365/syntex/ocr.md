@@ -21,7 +21,7 @@ description: Learn about optical character recognition in Microsoft Syntex.
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for [compliance features like data loss prevention (DLP)](#compliance-center).
+The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for [compliance features like data loss prevention (DLP)](#compliance-portal).
 
 For example, you have an image file in your document library. With the OCR service enabled, Syntex automatically scans the image, extracts the relevant text, and makes the text from the image available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
 
@@ -51,7 +51,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
-In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF, EXO all PDF and TIFF, and endpoint image-only PDF and TIFF and images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
+In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF iamages, Exchange Online all PDF and TIFF images, and Windows endpoint image-only PDF and TIFF images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance.
 
 ## Requirements and limitations
 
@@ -72,7 +72,7 @@ The OCR service supports more than [150 languages](https://learn.microsoft.com/e
 
 ### File limitations
 
-- Image file sizes must be less than 20 MB.
+- Image file sizes must be less than 50 MB.
 
 - Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
 
