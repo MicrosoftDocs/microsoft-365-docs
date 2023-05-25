@@ -31,10 +31,10 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 ## Microsoft 365 services that support auditing
 
-Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features that are supported by the unified audit log.
+Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services, apps, and features that are supported by the unified audit log.
 
 |Microsoft 365 service or feature|Record types|
-|---|---|
+|:-------------------------------|:-----------|
 |Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
 |Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
 |Communication compliance|ComplianceSupervisionExchange|
@@ -54,6 +54,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
 |Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 |Microsoft Teams|MicrosoftTeams|
+|Microsoft To Do|MicrosoftToDo, MicrosoftToDoAudit|
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
 |Power Apps|PowerAppsApp, PowerAppsPlan|
@@ -69,7 +70,6 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Viva Goals|Viva Goals|
 |Workplace Analytics|WorkplaceAnalytics|
 |Yammer|Yammer|
-
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
 
