@@ -68,7 +68,8 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Manage your payment methods | [Manage payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods) |
 | Change the frequency of your payments | [Change your Microsoft 365 subscription billing frequency](/microsoft-365/commerce/billing-and-payments/change-payment-frequency) |
 | Change your billing address | [Change your Microsoft 365 for business billing addresses](/microsoft-365/commerce/billing-and-payments/change-your-billing-addresses) |
-| Upgrade your subscription | [Sign up for Microsoft 365 Business Premium](../../business-premium/m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium) |
+| Upgrade your subscription | [Try or buy Microsoft 365 Business Premium](../../business-premium/m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium) |
+| Try Defender for Office 365 <br/>(to protect email and collaboration content) | [Try Microsoft Defender for Office 365](../office-365-security/try-microsoft-defender-for-office-365.md) |
 
 ## See also
 
