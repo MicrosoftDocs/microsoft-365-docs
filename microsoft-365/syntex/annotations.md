@@ -20,7 +20,11 @@ description: Learn how to use universal annotations to mark and collaborate on i
 
 Use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries—either for yourself or for collaborating with others. You can use the annotations feature without modifying the original files, so the original records are preserved.
 
-Annotation tools currently include pen and highlighter, where can choose the colors you want to use, and an eraser for removing ink strokes and previous annotations. The feature is currently available for the following files types: .ai, .dwg, .epub, .pdf, .rtf, and .tiff. More annotation tools and file types will be added in future releases.
+Annotation tools currently include pen and highlighter, where can choose the colors you want to use, and an eraser for removing ink strokes and previous annotations.
+
+The feature is currently available for the following file types: .ai, .dwg, .epub, .pdf, .rtf, and .tiff.
+
+More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex. 
