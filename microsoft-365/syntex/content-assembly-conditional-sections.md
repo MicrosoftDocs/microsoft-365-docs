@@ -22,7 +22,7 @@ When you create a modern template, you can specify which parts of a document wil
 
 ## Create a conditional section
 
-Before you can create a conditional section, you first need to [create form fields in the template](content-assembly-modern-template#create-and-reuse-fields). Then, follow these steps to create a conditional section.
+Before you can create a conditional section, you first need to [create form fields in the template](content-assembly-modern-template.md#create-and-reuse-fields). Then, follow these steps to create a conditional section.
 
 1. In the document, select the block of text for which you want to specify the condition.
 
