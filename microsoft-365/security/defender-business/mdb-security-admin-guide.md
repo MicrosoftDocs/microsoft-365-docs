@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.subservice: mdb
 ms.date: 05/09/2023
 ms.localizationpriority: medium
 ms.collection:
@@ -44,9 +44,3 @@ The following table lists common tasks that security admins typically perform, w
 
 - [Microsoft Defender for Business security operations guide](mdb-security-operations-guide.md)
 - 
-
-- [Microsoft 365 Business Premium general administration guide](m365bp-admin-guide.md)
-- [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md)
-- [Microsoft Defender for Office 365 Security Operations Guide](../security/office-365-security/mdo-sec-ops-guide.md)
-
-

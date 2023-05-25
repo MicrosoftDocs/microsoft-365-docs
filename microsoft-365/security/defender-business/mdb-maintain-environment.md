@@ -1,5 +1,5 @@
 ---
-title: "Maintain your environment"
+title: "Maintain your Microsoft Defender for Business environment"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.subservice: mdb
 ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.collection: 
@@ -25,7 +25,7 @@ search.appverid:
 description: "Maintain your systems, user accounts, and policies to help protect against cyberattacks."
 ---
 
-# Maintain your environment
+# Maintain your Microsoft Defender for Business environment
 
 The [missions](index.md) that were completed during the setup and configuration process focused on setting up your subscription, user accounts, and devices, as well as securing users, devices, and data. Now, you can put together plans for administration and security operations.
 
