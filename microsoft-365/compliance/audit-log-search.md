@@ -35,6 +35,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 
 |Microsoft 365 service or feature|Record types|
 |---|---|
+|Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
 |Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
 |Communication compliance|ComplianceSupervisionExchange|
 |Content explorer|LabelContentExplorer|
