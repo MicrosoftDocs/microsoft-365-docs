@@ -53,47 +53,25 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Remove a user account when someone leaves your organization | [Overview: Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee) |
 | Reset passwords for user accounts | [Reset passwords in Microsoft 365 for business](/microsoft-365/admin/add-users/reset-passwords) |
 
-## Email and calendars
-
-| Task | Resources to learn more |
-|:---|:---|
-| Migrate email and contacts from Gmail or another email provider to Microsoft 365 | [Migrate email and contacts to Microsoft 365](../admin/setup/migrate-email-and-contacts-admin.md) |
-| Add an email signature, legal disclaimer, or disclosure statement to email messages that come in or go out | [Create organization-wide signatures and disclaimers](../admin/setup/create-signatures-and-disclaimers.md) |
-| Set up, edit, or delete a security group | [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md) |
-| Add users to a distribution group | [Add a user or contact to a Microsoft 365 distribution group](../admin/email/add-user-or-contact-to-distribution-list.md) |
-| Set up a shared mailbox so people can monitor and send email from a common email addresses, like `info@contoso.com` | [Create a shared mailbox](../admin/email/create-a-shared-mailbox.md) |
-
 ## Devices
 
 | Task | Resources to learn more |
 |:---|:---|
-| Use Windows Autopilot to set up and pre-configure new devices or to to reset, repurpose, and recover devices | [Overview of Windows Autopilot](/mem/autopilot/windows-autopilot) |
-| View current status of and manage devices | [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md) |
-| Onboard devices to Defender for Business | [Onboard devices to Defender for Business](../security/defender-business/mdb-onboard-devices.md) |
-| Offboard devices from Defender for Business | [Offboard a device from Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
+| View current status of and manage devices | [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md) |
+| Onboard devices to Defender for Business | [Onboard devices to Defender for Business](mdb-onboard-devices.md) |
+| Offboard devices from Defender for Business | [Offboard a device from Defender for Business](mdb-offboard-devices.md) |
 | Manage devices with Intune | [What does device management with Intune mean?](/mem/intune/fundamentals/what-is-device-management)<br/><br/>[Manage your devices and control device features in Microsoft Intune](/mem/intune/fundamentals/manage-devices) |
-
-
-## Domains
-
-| Task | Resources to learn more |
-|:---|:---|
-| Add a domain (like contoso.com) to your Microsoft 365 subscription | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
-| Buy a domain | [Buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md) |
-| Remove a domain | [Remove a domain](../admin/get-help-with-domains/remove-a-domain.md) |
 
 ## Subscriptions and billing
 
 | Task | Resources to learn more |
 |:---|:---|
-| View your bill or invoice | [View your Microsoft 365 for business subscription bill or invoice](../commerce/billing-and-payments/view-your-bill-or-invoice.md) |
-| Manage your payment methods | [Manage payment methods](../commerce/billing-and-payments/manage-payment-methods.md) |
-| Change the frequency of your payments | [Change your Microsoft 365 subscription billing frequency](../commerce/billing-and-payments/change-payment-frequency.md) |
-| Change your billing address | [Change your Microsoft 365 for business billing addresses](../commerce/billing-and-payments/change-your-billing-addresses.md) |
+| View your bill or invoice | [View your Microsoft 365 for business subscription bill or invoice](/microsoft-365//commerce/billing-and-payments/view-your-bill-or-invoice) |
+| Manage your payment methods | [Manage payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods) |
+| Change the frequency of your payments | [Change your Microsoft 365 subscription billing frequency](/microsoft-365/commerce/billing-and-payments/change-payment-frequency) |
+| Change your billing address | [Change your Microsoft 365 for business billing addresses](/microsoft-365/commerce/billing-and-payments/change-your-billing-addresses) |
 
 ## See also
 
-- [Microsoft 365 admin center help](../admin/index.yml)
-- [Secure your data with Microsoft 365 for business](secure-your-business-data.md)
-- [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md)
-- [Microsoft 365 Business Premium security administration guide](m365bp-security-admin-guide.md)
+- [Microsoft 365 admin center help](/microsoft-365/admin/index)
+- [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md)
