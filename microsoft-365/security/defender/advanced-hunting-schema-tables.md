@@ -74,7 +74,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creation and modification of registry entries |
 | **[DeviceTvmHardwareFirmware](advanced-hunting-devicetvmhardwarefirmware-table.md)** | Hardware and firmware information of devices as checked by Defender Vulnerability Management |
-| **[DeviceTvmInfoGathering](advanced-hunting-deviceinfogathering-table.md)** | Defender Vulnerability Management assessment events including configuration and attack surface area states |
+| **[DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)** | Defender Vulnerability Management assessment events including configuration and attack surface area states |
 | **[DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md)** | Metadata for assessment events collected in the `DeviceTvmInfogathering` table|
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Knowledge base of various security configurations used by Microsoft Defender Vulnerability Management to assess devices; includes mappings to various standards and benchmarks  |
