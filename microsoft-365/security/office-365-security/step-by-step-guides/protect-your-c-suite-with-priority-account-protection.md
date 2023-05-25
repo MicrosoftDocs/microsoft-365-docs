@@ -48,7 +48,9 @@ To learn what priority account tags are see [Manage and monitor priority account
 
 ## Next Steps
 
-[Review the differentiated protection for users tagged as priority accounts](../../office-365-security/priority-accounts-turn-on-priority-account-protection.md).
+[Review differentiated protection from priority account protection]
+
+[Review the differentiated protection for users tagged as Priority accounts](../priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection).
 
 ## PowerShell configuration
 
