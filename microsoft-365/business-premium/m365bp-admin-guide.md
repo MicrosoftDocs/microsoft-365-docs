@@ -1,5 +1,5 @@
 ---
-title: "Administration guide for Microsoft 365 Business Premium"
+title: "Tenant administration guide for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,7 +24,7 @@ search.appverid:
 description: "Get an overview of tasks your administrators perform to maintain your Microsoft 365 Business Premium subscription."
 ---
 
-# Microsoft 365 Business Premium administration guide
+# Microsoft 365 Business Premium tenant administration guide
 
 Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
 
