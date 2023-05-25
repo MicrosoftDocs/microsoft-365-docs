@@ -85,6 +85,16 @@
       href: mdb-view-edit-create-policies.md
     - name: Understand policy order
       href: mdb-policy-order.md
+  - name: Maintain your environment
+    items:
+    - name: Overview
+      href: ../business-premium/m365bp-maintain-environment.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
+    - name: Tenant administration guide
+      href: ../business-premium/m365bp-admin-guide.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
+    - name: Security administration guide
+      href: ../business-premium/m365bp-security-admin-guide.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
+    - name: Security operations guide
+      href: ../business-premium/m365bp-security-operations-guide.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data
