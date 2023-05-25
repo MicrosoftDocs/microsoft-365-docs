@@ -9,11 +9,9 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
-ms.date: 05/08/2023
+ms.date: 05/25/2023
 ms.localizationpriority: medium
 ms.collection:
-- m365solution-smb
-- highpri
 - m365-security
 - tier2
 ms.custom:
@@ -30,14 +28,14 @@ Maintaining your Microsoft 365 Business Premium environment includes managing us
 
 Many admin tasks can be performed in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), although some tasks, such as adding/removing devices, can be performed in other portals (such as the Microsoft 365 Defender portal or the Microsoft Intune admin center). 
 
-If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
+If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
 ## General tasks
 
 | Task | Resources to learn more |
 |:---|:---|
-| Get started using the Microsoft 365 admin center | [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md) |
-| Learn about new features in the Microsoft 365 admin center | [What's new in the Microsoft 365 admin center](../admin/whats-new-in-preview.md) |
+| Get started using the Microsoft 365 admin center | [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) |
+| Learn about new features in the Microsoft 365 admin center | [What's new in the Microsoft 365 admin center](/microsoft-365/admin/whats-new-in-preview) |
 | Find out about new product updates and features so you can help prepare users | [Stay on top of Microsoft 365 product and feature changes](../admin/manage/stay-on-top-of-updates.md) |
 | View usage reports to see how people are using Microsoft 365 | [Microsoft 365 Reports in the admin center](../admin/activity-reports/activity-reports.md) |
 | Open a technical support ticket | [Get support for Microsoft 365 for business](../admin/get-help-support.md) |
