@@ -12,10 +12,8 @@ ms.subservice: mdb
 ms.date: 05/25/2023
 ms.localizationpriority: medium
 ms.collection:
-- m365solution-smb
-- highpri
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

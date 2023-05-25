@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
-ms.date: 05/09/2023
+ms.date: 05/25/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
