@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Get an overview of tasks your administrators perform to maintain your Microsoft 365 Business Premium subscription."
+description: "Get an overview of tasks your administrators perform to maintain your Microsoft Defender for Business environment."
 ---
 
 # Microsoft Defender for Business tenant administration guide
