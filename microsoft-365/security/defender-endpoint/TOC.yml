@@ -400,8 +400,6 @@
           href: /azure/defender-for-iot/organizations/eiot-defender-for-endpoint/
         - name: Manage Defender for IoT plans
           href: /azure/defender-for-iot/organizations/manage-subscriptions-enterprise/
-        - name: Enhance Enterprise IoT discovery
-          href: /azure/defender-for-iot/organizations/eiot-sensor/
       - name: Device discovery FAQ
         href: device-discovery-faq.md  
 
@@ -614,6 +612,8 @@
           href: schedule-antivirus-scans-wmi.md
       - name: Use limited periodic scanning in Microsoft Defender Antivirus
         href: limited-periodic-scanning-microsoft-defender-antivirus.md
+      - name: Protect Dev Drive using performance mode
+        href: microsoft-defender-endpoint-antivirus-performance-mode.md
       - name: Compatibility with other security products
         href: microsoft-defender-antivirus-compatibility.md
       - name: Find malware detection names for Microsoft Defender for Endpoint

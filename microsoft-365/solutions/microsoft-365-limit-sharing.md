@@ -196,6 +196,8 @@ For example:
 Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
+Note that if you disable *People in your organization* links, people sharing files in the site may need to use *Specific people* links which can be shared with a maximum of 50 people.
+
 ## Create sites, groups, and teams
 
 By default, users can create new sites, groups, and teams from which they may be able to share content (depending on your sharing settings). You can restrict who can create sites, groups, and teams. See the following references:

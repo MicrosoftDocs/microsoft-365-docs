@@ -149,7 +149,7 @@ sudo systemctl disable mdatp
 &ensp;Signature version: **1.379.1299.0**<br/>
 	
 **What's new**
-- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There's no change for other customers and upgrade is optional. 
 	
 **Known issues**
 
@@ -322,7 +322,7 @@ sudo systemctl disable mdatp
   - V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
   - V2 engine support configuration path for AV definitions. (mdatp definition set path)
   - Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
-  - In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+  - In case crash collection is disabled by configuration, crash monitoring process won't be launched.
   - Performance fixes to optimally use system events for AV capabilities.
   - Stability improvement in case of mdatp restart and loading of epsext issues.
   - Other fixes
@@ -368,7 +368,7 @@ sudo systemctl disable mdatp
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) aren't impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 **Known issues**
 
