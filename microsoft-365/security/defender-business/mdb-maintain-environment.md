@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Maintain your systems, user accounts, and policies to help protect against cyberattacks."
+description: "Learn how to maintain Defender for Business environment."
 ---
 
 # Maintain your Microsoft Defender for Business environment
