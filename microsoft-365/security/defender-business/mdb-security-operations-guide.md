@@ -1,5 +1,5 @@
 ---
-title: "Security operations guide for Microsoft 365 Business Premium"
+title: "Security operations guide for Microsoft Defender for Business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
