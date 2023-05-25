@@ -1,5 +1,5 @@
 ---
-title: "Tenant administration guide for Microsoft 365 Business Premium"
+title: "Tenant administration guide for Microsoft Defender for Business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,7 +24,7 @@ description: "Get an overview of tasks your administrators perform to maintain y
 
 # Microsoft Defender for Business tenant administration guide
 
-Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
+Maintaining your Microsoft Defender for Business environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
 
 Many admin tasks can be performed in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), although some tasks, such as adding/removing devices, can be performed in other portals (such as the Microsoft 365 Defender portal or the Microsoft Intune admin center). 
 
