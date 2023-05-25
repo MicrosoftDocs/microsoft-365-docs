@@ -438,7 +438,9 @@ You can search the audit log for activities in Power Automate (formerly called M
 
 ## Microsoft Project for the web activities
 
-You can search the audit log for activities in Microsoft Project for the web. For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
+You can search the audit log for activities in Microsoft Project for the web. Microsoft Project for the web is built on the [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and has an associated Project Power App. To enable auditing for scenarios where the user is using the Microsoft Dataverse or the Project Power App, see the [System Settings Auditing tab](/power-platform/admin/system-settings-dialog-box-auditing-tab) guidance. For a list of entities related to Project for the web, see the [Export user data from Project for the web](/project-for-the-web/export-user-data-from-project-for-the-web#find-user-data-in-dataverse-with-the-advanced-find-search-feature) guidance.
+
+For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
 
 >[!NOTE]
 >Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
