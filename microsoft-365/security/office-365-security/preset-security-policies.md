@@ -17,7 +17,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/15/2023
+ms.date: 5/18/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -31,9 +31,15 @@ ms.date: 5/15/2023
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and[Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
+Depending on your organization, preset security policies provide the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
 
-For details about the elements of preset security policies, see the [Appendix](#appendix) section at the end of this article.
+The following preset security policies are available:
+
+- **Standard** preset security policy
+- **Strict** preset security policy
+- **Built-in protection** preset security policy (default policies for Safe Attachments and Safe Links protection in Defender for Office 365)
+
+For details about these preset security policies, see the [Appendix](#appendix) section at the end of this article.
 
 The rest of this article how to configure preset security policies.
 
@@ -140,7 +146,7 @@ The rest of this article how to configure preset security policies.
 
    The domains you added are listed on the page. To remove a domain, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
 
-   To remove an existing entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove.png" border="false"::: next to the entry.
+   To remove an existing entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-icon.png" border="false"::: next to the entry.
 
    When you're finished on the **Add domains to flag when impersonated by attackers**, select **Next**.
 
@@ -486,7 +492,7 @@ A profile determines the level of protection. The following profiles are availab
 - **Strict protection**: A more aggressive profile for selected users (high value targets or priority users).
 - **Built-in protection** (Microsoft Defender for Office 365 only): Effectively provides default policies for Safe Links and Safe Attachments only.
 
-To compare the configurations between Standard and Strict, see the individual feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+In general, the **Strict protection** profile tends to quarantine less harmful email (for example, bulk and spam) than the **Strict protection** profile, but many of the settings in both profiles are the same (in particular, for unquestionably harmful email like malware or phishing). For a comparison of the setting differences, see the tables in the next section.
 
 Until you turn on the profiles and assign users to them, the Standard and Strict preset security policies are assigned to no one. In contrast, the Built-in protection preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
@@ -525,6 +531,34 @@ But, you need to configure the individual users (senders) and domains to receive
 - Domain impersonation protection for all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
 - [Mailbox intelligence protection (contact history)](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
+The differences in meaningful policy settings in the Standard preset security policy and the Strict preset security policy are summarized in the following table:
+
+|&nbsp;|Standard|Strict|
+|---|:---:|:---:|
+|**Anti-malware policy**|No difference|No difference|
+|**Anti-spam policy**|||
+|&nbsp;&nbsp;**Bulk** detection action (_BulkSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|7|6|
+|&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|**Anti-phishing policy**|||
+|&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
+|**Safe Attachments policy**|No difference|No difference|
+|**Safe Links policy**|No difference|No difference|
+
+The differences in Safe Attachments and Safe Links policy settings in the Built-in protection preset security policy and in the Standard and Strict preset security policies are summarized in the following table:
+
+|&nbsp;|Built-in protection|Standard and Strict|
+|---|:---:|:---:|
+|**Safe Attachments policy**|No difference|No difference|
+|**Safe Links policy**|||
+|&nbsp;&nbsp;**Let users click through to the original URL** (_AllowClickThrough_)|Selected (`$true`)|Not selected (`$false`)|
+|&nbsp;&nbsp;**Do not rewrite URLs, do checks via Safe Links API only** (_DisableURLRewrite_)|Selected (`$true`)|Not selected (`$false`)|
+|&nbsp;&nbsp;**Apply Safe Links to email messages sent within the organization** (_EnableForInternalSenders_)|Not selected (`$false`)|Selected (`$true`)|
+
+For details about these settings, see the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+
 ### Order of precedence for preset security policies and other policies
 
 When a recipient is defined in multiple policies, the policies are applied in the following order:
@@ -538,7 +572,7 @@ In other words, the settings of the Strict preset security policy override the s
 
 This order is shown on the pages of the individual security policies in the Defender portal (the policies are applied in the order they're shown on the page).
 
-For example, an admin configures the Standard preset security policy and a custom anti-spam policy with the same recipient. The anti-spam policy settings from the Standard preset security policy are applied to the user instead of what's configured in the custom policy anti-spam policy or in the default anti-spam policy.
+For example, an admin configures the Standard preset security policy and a custom anti-spam policy with the same recipient. The anti-spam policy settings from the Standard preset security policy are applied to the user instead of what's configured in the custom anti-spam policy or in the default anti-spam policy.
 
 Consider applying the Standard or Strict preset security policies to a subset of users, and apply custom policies to other users in your organization to meet specific needs. To meet this requirement, consider the following methods:
 
@@ -546,7 +580,7 @@ Consider applying the Standard or Strict preset security policies to a subset of
 - If you can't avoid multiple policies applying to the same users, use the following strategies:
   - Configure recipients who should get the settings of the **Standard** preset security policy and custom policies as exceptions in the **Strict** preset security policy.
   - Configure recipients who should get the settings of custom policies as exceptions in the **Standard** preset security policy.
-  - Configure the users who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
+  - Configure recipients who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
 
 The Built-in protection** doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
 
