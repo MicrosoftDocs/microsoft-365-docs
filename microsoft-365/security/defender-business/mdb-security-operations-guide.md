@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 05/08/2023
+ms.subservice: mdb
+ms.date: 05/25/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365solution-smb
@@ -24,9 +24,9 @@ search.appverid:
 description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform."
 ---
 
-# Microsoft 365 Business Premium security operations guide
+# Microsoft Defender for Business security operations guide
 
-If you're new to Microsoft 365 Business Premium, or if your business doesn't have a security operations guide in place yet, use this article as a starting point. If you do already have a security operations guide, review it against the recommendations in this article.
+If you're new to Microsoft Defender for Business, or if your business doesn't have a security operations guide in place yet, use this article as a starting point. If you do already have a security operations guide, review it against the recommendations in this article.
 
 You can use this guidance to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
@@ -55,19 +55,19 @@ You can use this guidance to make decisions about security incident priorities a
 |---------|---------|
 | Run reports | Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.<br/><br/>2. Choose a report to review. Each report displays many pertinent categories for that report.<br/><br/>3. Select **View details** to see deeper information for each category.<br/><br/>4. Select the title of a particular threat to see details specific to it.|
 | Run a simulation tutorial | It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft 365 Defender portal. The tutorials cover several types of cyber threats. To get started, follow these steps:<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.<<br/><br/>2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions. |
-| Explore the Learning hub | Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft 365 Defender and Endpoints sections.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Note that some resources in the Learning hub might cover functionality that isn't actually included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md). |
+| Explore the Learning hub | Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft 365 Defender and Endpoints sections.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Note that some resources in the Learning hub might cover functionality that isn't actually included in Microsoft Defender for Business. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft Defender for Business. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md). |
 
 ### Tasks to perform as needed
 
 | Task | Description  |
 |---------|---------|
 | Use the Threat analytics dashboard | Use the threat analytics dashboard to get an overview of the current threat landscape by highlighting reports that are most relevant to your organization. <br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Threat analytics** to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:<br/>- **Latest threats** lists the most recently published or updated threat reports, along with the number of active and resolved alerts.<br/>- **High-impact threats** lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.<br/>- **Highest exposure** lists threats with the highest exposure levels first. The exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.<br/><br/>3. Select the title of the one you want to investigate, and read the associated report.<br/><br/>4. You can also review the full Analyst report for more details, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.|
-| Remediate an item | Microsoft 365 Business Premium includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
+| Remediate an item | Microsoft Defender for Business includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
 
 
-## Remediation actions in Microsoft 365 Business Premium
+## Remediation actions in Microsoft Defender for Business
 
-The following table summarizes remediation actions that are available in Microsoft 365 Business Premium:
+The following table summarizes remediation actions that are available in Microsoft Defender for Business:
 
 | Source  | Actions  |
 |---------|---------|
