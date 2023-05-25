@@ -12,11 +12,8 @@ ms.subservice: mdb
 ms.date: 05/25/2023
 ms.localizationpriority: medium
 ms.collection: 
-- M365-Campaigns
-- m365solution-smb
-- highpri
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -35,3 +32,6 @@ After you have [set up and configured Defender for Business](mdb-setup-configura
 | Security administration | Security administration includes tasks that your security administrators (also referred to as *security admins*) perform in portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))<br/>- The Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com); if you're using Intune)<br/><br/>These kinds of tasks include defining or editing security policies, onboarding or offboarding devices, and so forth, and are listed in the [Microsoft Defender for Business security admin guide](mdb-security-admin-guide.md). |
 | Security operations | Security operations (also referred to as *SecOps*) and includes tasks that your security team performs in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). <br/><br/>As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks (and more!) are listed in the [Microsoft Defender for Business security operations guide](mdb-security-operations-guide.md). |
 
+## See also
+
+[Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
