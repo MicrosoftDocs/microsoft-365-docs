@@ -77,3 +77,4 @@ The following table summarizes remediation actions that are available in Microso
 ## See also
 
 - [Maintain your Microsoft Defender for Business environment](mdb-maintain-environment.md)
+- [Microsoft Defender for Business security administration guide](mdb-security-admin-guide.md)

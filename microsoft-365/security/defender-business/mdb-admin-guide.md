@@ -72,5 +72,6 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 
 ## See also
 
+- [Maintain your Microsoft Defender for Business environment](mdb-maintain-environment.md)
 - [Microsoft 365 admin center help](/microsoft-365/admin/index)
 - [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md)
