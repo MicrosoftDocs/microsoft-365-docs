@@ -57,6 +57,11 @@ The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scan
 
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
+> [!NOTE]
+> - To reduce the bill of OCR, images like logo or signature sent in Exchange email are scanned and billed only once per unique image across all users of the tenant. For all subsequent instances, the results of the previous scan will be reused.
+> Each image is scanned and billed only once irrespective of the number and type of compliance policies. For example, if an image sent in Exchange mail is scanned, it will be charged only once even though the classification results will be used by multiple policies across DLP, IRM, Auto labelling and DLM.  
+
+
 #### Estimate your bill ####
 
 When you first start using OCR, limit usage to just a few people and applicable workloads. After a short while, you can view your bill in Azure and see the usage statistics & charges for each day. From there, you can extrapolate the costs for your full set of users. In addition, you can use the "workload" tag in Azure cost management to see the breakdown of usage per workload.
@@ -106,15 +111,13 @@ This functionality supports scanning images in the following file types, with th
 
 > [!IMPORTANT]
 >
-> - Only images with machine-typed text are supported.
-> - Only images uploaded after OCR has been enabled are scanned.
-> - Only stand-alone images are scanned.
+> - Only stand-alone images are scanned. Scanning images embedded inside Microsoft Office files (docx, xlsx, pptx) and compressed/archive files (zip, rar, etc.) isn't supported at this point.
 > - SharePoint and OneDrive support only the following file types: JPEG, JPG, PNG, and BMP.
 > - Data loss prevention policy tips are not supported for images in Exchange.
-> - Scanning images in compressed/archive files isn't supported.
 > - If you [exclude a path](dlp-configure-endpoint-settings.md#file-path-exclusions) in the endpoint data loss prevention settings, OCR will not scan images in those folders.
 > - When OCR is turned on for Windows devices, the devices start sending messages to the cloud for scanning. The default bandwidth limit is [1024 MB of data per device per day](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection). OCR stops scanning images once this daily limit is reached. If you want to continue scanning images, you can increase the bandwidth limit.
-
+> - Only images with machine-typed text are supported.
+> - Only images uploaded after OCR has been enabled are scanned.
 
 <br>
 
