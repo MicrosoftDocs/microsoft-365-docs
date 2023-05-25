@@ -41,4 +41,4 @@ ms.date: 03/17/2021
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
-|YAMMER|✔|✔|✔|✔|N/A|
+|Viva Engage|✔|✔|✔|✔|N/A|
