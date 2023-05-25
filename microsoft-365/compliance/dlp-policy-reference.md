@@ -50,7 +50,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum number of DLP rules:
     - In a policy: Limited by the size of the policy
     - In a tenant: 600
-- Maximum size of an individual DLP rule: 80 KB
+- Maximum size of an individual DLP rule: 100 KB (102,400 characters)
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
 - Regex size limit for all matches predicted: 20 KB
@@ -413,7 +413,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
-- User's risk level for Adaptice Protection is
+- User's risk level for Adaptive Protection is
 - Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
@@ -908,7 +908,7 @@ When a user overrides a block with override action on an email, the override opt
     ]
 }
 ```
-If you have a automated process that makes use of the business justification values, the process can access that information progamatically in the email X-header data. 
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data. 
 
 ### Incident reports
 
