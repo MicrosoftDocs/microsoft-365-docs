@@ -422,7 +422,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Rescan status**:
   - **Pending**
   - **Completed**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -542,7 +542,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)**: **Start date** and **End date**
 - **Detection**: The same values as in the chart.
-- **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review Priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
+- **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Evaluation**: **Yes** or **No**.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**
 - **Direction**:
@@ -602,7 +602,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: The same values as in the chart.
-- **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review Priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
+- **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Direction**:
   - **All**
   - **Inbound**

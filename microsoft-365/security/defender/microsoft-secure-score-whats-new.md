@@ -39,7 +39,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 A new Microsoft Exchange Online recommendation is now available as Secure Score improvement action:
 
-- Ensure mail transport rules do not whitelist specific domains
+- Ensure mail transport rules do not allow specific domains
 
 New Microsoft SharePoint recommendations are now available as Secure Score improvement actions:
 
