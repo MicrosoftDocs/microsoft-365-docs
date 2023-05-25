@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform."
+description: "Learn about daily, weekly, monthly, and as needed tasks for your security team to perform with Defender for Business."
 ---
 
 # Microsoft Defender for Business security operations guide
