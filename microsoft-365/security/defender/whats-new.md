@@ -42,7 +42,7 @@ You can also get product updates and important notifications through the [messag
 
 ## May 2023
 
-- (Preview) [Alert tuning](investigate-alerts.md#public-preview-tune-an-alert) is now available in public preview. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. 
+- (Preview) [Alert tuning](investigate-alerts.md#public-preview-tune-an-alert) is now available in public preview. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
 - (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
 
 ## April 2023
