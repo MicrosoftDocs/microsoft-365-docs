@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 03/17/2023
+ms.date: 05/30/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -45,13 +45,13 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
-[Setup and manage will be mostly likely moved to a separate admin article, in which case it will just be linked to from here.]
+*[Verify setup info still applies.]*
 
 ### Compliance portal
 
-The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [link to article when available].
+The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
-In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SPO and ODB image-only PDF and TIFF, EXO all PDF and TIFF, and endpoint image-only PDF and TIFF and images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
+In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF, EXO all PDF and TIFF, and endpoint image-only PDF and TIFF and images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance. 
 
 ## Requirements and limitations
 
@@ -68,9 +68,7 @@ The OCR service is available for the following file types:
 
 ### Supported languages
 
-OCR for printed text includes support for the following languages: TBD
-
-OCR for handwritten text includes support for the following languages: TBD
+The OCR service supports more than [150 languages](https://learn.microsoft.com/en-us/azure/cognitive-services/language-support).
 
 ### File limitations
 
@@ -80,7 +78,7 @@ OCR for handwritten text includes support for the following languages: TBD
 
 - Only images uploaded after OCR has been enabled are scanned.
 
-- Images that are embedded in Office documents aren't currently supported.
+- Currently, images that are embedded in Office documents aren't supported.
 
 
 
