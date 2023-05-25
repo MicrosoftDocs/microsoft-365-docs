@@ -21,7 +21,7 @@ ms.service: microsoft-365-security
 search.appverid: met150
 ---
 
-# Threat Explorer and Real-time detections basics
+# What is Threat Explorer and Real-time detections?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -38,7 +38,7 @@ In this article:
 > [!NOTE]
 > This is part of a **3-article series** on **Explorer (also known as Threat Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Explorer](threat-explorer-threat-hunting.md) and [Email security with Explorer](email-security-in-microsoft-defender.md).
 
-This article explains the difference between Explorer and real-time detections reporting, updated experience with Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
+This article explains the difference between Threat Explorer and real-time detections reporting, updated experience with Threat Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 

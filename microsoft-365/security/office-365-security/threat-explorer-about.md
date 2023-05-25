@@ -1,5 +1,5 @@
 ---
-title: Threat Explorer and Real-time detections
+title: Threat Explorer and Real-time Detections
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 ms.date: 5/31/2023
 ---
 
-# Threat Explorer and Real-time detections
+# Improvements to Threat Hunting in Threat Explorer
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -32,16 +32,16 @@ ms.date: 5/31/2023
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!).
+If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Threat Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!).
 
-Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. With this report, you can:
+Threat Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. With this report, you can:
 
 - [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - [Investigate malicious email, and more](#more-ways-to-use-explorer-and-real-time-detections)
 
-## Improvements to Threat Hunting Experience
+## The Threat Hunting Experience
 
 ### Introduction of Alert ID for Defender for Office 365 alerts within Explorer/Real-time detections
 
@@ -102,7 +102,7 @@ Tags information is also shown in the URL clicks flyout. To view it, go to Phish
 >
 Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
-## Improvements to the threat hunting experience (upcoming)
+## Upcoming improvements to the threat hunting experience 
 
 ### Updated threat information for emails
 
@@ -311,7 +311,7 @@ This example uses Threat Explorer.
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** > **Explorer** (or **Real-time detections**).
 
-2. In the View menu, choose Email > Phish.
+2. In the View menu, choose **Phish**.
 
    Here you can choose **impersonated domain** or **impersonated user**.
 
@@ -385,13 +385,13 @@ For more information, see [Investigate and remediate malicious email that was de
 
 You can now export reports for URL clicks to Microsoft Excel to view their **network message ID** and **click verdict**, which helps explain where your URL click traffic originated. Here's how it works: In Threat Management on the Office 365 quick-launch bar, follow this chain:
 
-**Explorer** \> **View Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
+**Explorer** \> **Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
 
 When you select a URL in the list, you'll see a new **Export** button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
 Follow this path to get to the same location in the Real-time detections report:
 
-**Explorer** \> **Real-time detections** \> **View Phish** \> **URLs** \> **Top URLs** or **Top Clicks** \> Select any record to open the URL flyout \> navigate to the **Clicks** tab.
+**Explorer** \> **Real-time detections** \> **Phish** \> **URLs** \> **Top URLs** or **Top Clicks** \> Select any record to open the URL flyout \> navigate to the **Clicks** tab.
 
 > [!TIP]
 > The Network Message ID maps the click back to specific mails when you search on the ID through Explorer or associated third-party tools. Such searches identify the email associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
@@ -405,7 +405,7 @@ Suppose you want to see malware detected in email sorted by Microsoft 365 techno
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** \> **Malware**.
+2. In the **View** menu, choose **Malware**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="The View menu for Explorer" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
