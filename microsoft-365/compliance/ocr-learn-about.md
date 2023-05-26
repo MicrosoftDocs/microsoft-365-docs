@@ -58,8 +58,8 @@ The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scan
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
 > [!NOTE]
-> - To reduce the bill of OCR, images like logo or signature sent in Exchange email are scanned and billed only once per unique image across all users of the tenant. For all subsequent instances, the results of the previous scan will be reused.
-> Each image is scanned and billed only once irrespective of the number and type of compliance policies. For example, if an image sent in Exchange mail is scanned, it will be charged only once even though the classification results will be used by multiple policies across DLP, IRM, Auto labelling and DLM.  
+> - To reduce your OCR costs, small images, such as logos and signatures that are sent in email via Microsoft Exchange are scanned and billed only once per unique image across all users of the tenant. For all subsequent instances, the results of the previous scan will be reused.
+> Every image is charged only once, irrespective of the number of policies across data loss prevention, insider risk management, auto-labeling, and records management.  
 
 
 #### Estimate your bill ####
@@ -111,7 +111,7 @@ This functionality supports scanning images in the following file types, with th
 
 > [!IMPORTANT]
 >
-> - Only stand-alone images are scanned. Scanning images embedded inside Microsoft Office files (docx, xlsx, pptx) and compressed/archive files (zip, rar, etc.) isn't supported at this point.
+> - Only stand-alone images are scanned. Scanning images embedded inside Microsoft Office files (.docx, .xlsx, .pptx) and compressed/archive files (.zip, .rar, etc.) isn't supported at this point.
 > - SharePoint and OneDrive support only the following file types: JPEG, JPG, PNG, and BMP.
 > - Data loss prevention policy tips are not supported for images in Exchange.
 > - If you [exclude a path](dlp-configure-endpoint-settings.md#file-path-exclusions) in the endpoint data loss prevention settings, OCR will not scan images in those folders.
