@@ -474,7 +474,7 @@ Office for the web: You must download the file from the browser. The following m
     - Export > Download as PDF > Download
     - Print > Print > Download as PDF > Download
 
-When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+When the PDF is created, it inherits the label with any content markings. For Windows, if the label applied encryption, that encryption is also inherited. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook does support warning or blocking users from printing to PDF, as described next.
 
