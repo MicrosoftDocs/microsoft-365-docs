@@ -74,7 +74,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
         > [!NOTE]
-        > If you want to use [Double Key Encryption (DKE)](double-key-encryption.md), you'll need a later version. For details, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
+        > If you want to use Double Key Encryption in the same tenant, you'll need a later version. For details, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
     - **macOS**: Minimum version 16.51
     - **iOS**: Minimum version 2.58
     - **Android**: Minimum version 16.0.14931
