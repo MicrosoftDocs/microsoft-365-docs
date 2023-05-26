@@ -147,7 +147,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policy.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deploymetn Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deploymetn Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
 
 ## Setting up the production environment
 
@@ -167,21 +167,21 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | In: | Change: |
    |:---|:---|
    | **Type of deployment** | Select **Required** |
-   | **Detail level** | Select "Only error messages** |
-   | **Some software updates include a license agreement** | Select "Automatically deploy all software updates found by this rule, and approve any license agreements". |
+   | **Detail level** | Select **Only error messages** |
+   | **Some software updates include a license agreement** | Select **Automatically deploy all software updates found by this rule, and approve any license agreements**. |
    
-1. Click **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, make the following settings:
+1. Click **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, enter the following:
    
    | In: | Change: |
    |:---|:---|
    | **Property filters** | Select **Product** and **Update Classification** |
-   | **Search Criteria** | Enter the following <br> **Article ID** = **2267602**  <br> **Date Released or Revised** = **Last 1 month** <br> **Product** = **Windows Defender** <br> **Superseded** = **No** <br> **Update Classification** = **"Critical Updates" OR "Definition Updates"** |
+   | **Search Criteria** | Enter the following: <br> **Article ID** = _2267602_  <br> **Date Released or Revised** = _Last 1 month_ <br> **Product** = _Windows Defender_ <br> **Superseded** = _No_ <br> **Update Classification** = _Critical Updates_ OR _Definition Updates_ |
      
    > [!TIP]
    > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
    
    > [!NOTE]
-   > **Date Released or Revised: Last 1 month** - If your WSUS/SUP have been healthy, you may want to set this to “Last 1 week”.
+   > **Date Released or Revised: Last 1 month** - If your WSUS/SUP have been healthy, you may want to set this to **Last 1 week**.
    >
    > **Product: “Windows Defender”** -  We are removing “System Center Endpoint Protection”, because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
    >
@@ -204,15 +204,15 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **User visual experience** > **User notifications** | Select **Hide in Software center and all notifications** |
    | **Deadline behavior** | Select **Software Update Installation** |
    | **Device restart behavior** | Select **Servers** | 
-   | ** Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts) |
+   | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts)** |
    
 1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, click **Browse**, navigate to, and select the deployment pachage and then click **Next**.
    
 1. On the top-level **Deployment Package** page, under **Select deployment package for this automatic deployment rule**, select **Select a deployment package**.
    
-1. On the **Down load Location page, under **Specify download location for this Automatic Deployment Rule**, select **Download software updaes fromt the Interntet**, and then click **Next**.
+1. On the **Down load Location page**, under **Specify download location for this Automatic Deployment Rule**, select **Download software updaes fromt the Interntet**, and then click **Next**.
    
-1. On the **Language Selection** page, under **Specify the update languages for product**, under **Product**, specify the necessary Product and Update languages.. 
+1. On the **Language Selection** page, under **Specify the update languages for product**, under **Product**, specify the necessary Product and Update languages.
    
 1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavour for clients on slow site boundries**,  select the following:
    
