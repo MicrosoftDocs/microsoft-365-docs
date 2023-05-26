@@ -9,10 +9,10 @@ ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 04/24/2023
+ms.date: 05/25/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -42,10 +42,10 @@ You can also get product updates and important notifications through the [messag
 
 ## May 2023
 
+- (Preview) [Alert tuning](investigate-alerts.md#public-preview-tune-an-alert) is now available in public preview. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
 - (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
 
 ## April 2023
-
 - (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
 - Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](/microsoft-365/security/intelligence/microsoft-threat-actor-naming).
 
