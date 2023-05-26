@@ -60,7 +60,7 @@ The protection features of EOP and Defender for Office 365 are implemented using
 - [Impersonation protection in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Safe Attachments for email messages](safe-attachments-about.md)
 - [Safe Links for email messages and Microsoft Teams](safe-links-about.md)
-  - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, use allow entries for URLs in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+  - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, submit the URLs to Microsoft as good URLs. For instructions, see [Report good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft).
   - Safe Links doesn't wrap URL links in email message bodies.
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization remain able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
@@ -76,6 +76,8 @@ The default policies for these EOP features are always on, apply to all recipien
 Do you want your Defender for Office 365 experience to be active or passive? The following modes are available:
 
 - **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
+
+  You can also selectively turn on or turn off anti-phishing protection (spoofing and impersonation), Safe Links protection, and Safe Attachments protection. For instructions, see [Manage evaluation settings](#manage-evaluation-settings).
 
   Audit mode provides specialized reports for threats that are detected by the evaluation policies on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>. These reports are described in the [Reports for audit mode](#reports-for-audit-mode) section later in this article.
 
@@ -108,13 +110,14 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
 - **No Defender for Office Plan 2**: If you don't already have Defender for Office 365 Plan 2 (for example, you have standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or a Defender for Office 365 Plan 1 add-on subscription), you can start the Defender for Office 365 Plan 2 experience from the following locations in the Microsoft 365 Defender portal:
 
-  - The **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>: You can select **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) during the set up of the trial.
+  - The **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>.
+  - The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>.
 
-  - The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>: **Audit mode** (evaluation policies) is automatically selected, and you can't change to **blocking mode** during the set up of the evaluation. After the setup is complete, and at any point during the evaluation period, you can _convert_ to **blocking mode** (Standard preset security policy). For instructions, see the [Convert to Standard protection](#convert-to-standard-protection) section later in this article.
+  You can select **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) during the set up of the evaluation or trial.
 
   Regardless of which location you use, we automatically provision any required Defender for Office 365 Plan 2 licenses when you enroll. Manually getting and assigning Plan 2 licenses in the Microsoft 365 admin center isn't required.
 
-  The automatically-provisioned licenses are good for 90 days. What this 90 day period means depends the existing licensing in your organization:
+  The automatically provisioned licenses are good for 90 days. What this 90 day period means depends the existing licensing in your organization:
 
   - **No Defender for Office 365 Plan 1**: For organizations without Defender for Office 365 Plan 1 (for example, standalone EOP or Microsoft 365 E3) all Defender for Office 365 Plan 2 features (in particular, the security policies) are available during the 90 day period only.
 
@@ -122,9 +125,11 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
     The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. What ends after 90 days are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Defender for Office 365 Plan 2 that aren't available in Plan 1.
 
-- **Defender for Office 365 Plan 2**: If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), **Defender for Office 365** isn't available to select on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>. In other words, you can't set up a trial and select **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) during the set up of the trial.
+  If you set up your evaluation or trial in **audit mode** (evaluation policies), you can later _convert_ to **blocking mode** (Standard preset security policy). For instructions, see the [Convert to Standard protection](#convert-to-standard-protection) section later in this article.
 
-  Your only option is to set up an evaluation of Defender for Office 365 on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>. As previously described, all evaluations are automatically set up in **Audit mode** (evaluation policies), and you can't change to **blocking mode** during set up.
+- **Defender for Office 365 Plan 2**: If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), **Defender for Office 365** isn't available to select on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>.
+
+  Your only option is to set up an evaluation of Defender for Office 365 on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>. Furthermore, the evaluation is automatically set up in **Audit mode** (evaluation policies).
 
   Later, you can _convert_ to **blocking mode** (Standard preset security policy) using the [**Convert to standard** action on the **Microsoft Defender for Office 365 evaluation** page](#convert-to-standard-protection) or by [turning off the evaluation on the **Microsoft Defender for Office 365 evaluation** page](#manage-evaluation-settings) and then [configuring the Standard preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
@@ -132,30 +137,30 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
 The information from the previous list is summarized in the following table:
 
-|Organization|Evaluation from the<br>Evaluation page?|Trial from the<br>Trials page?|Available modes|Evaluation<br>period|
-|---|---|:---:|:---:|---|
-|Standalone EOP (no Exchange Online mailboxes) <br><br> Microsoft 365 E3|Yes|Yes|Audit mode <br> Blocking mode¹|90 days|
-|Defender for Office 365 Plan 1 <br><br> Microsoft 365 Business Premium|Yes|Yes|Audit mode <br> Blocking mode¹|90 days²|
-|Microsoft 365 E5|Yes|No|Audit mode <br> Blocking mode¹ ³|Unlimited|
+|Organization|Enroll from<br>the Trials page?|Enroll from<br>the Evaluation page?|Available modes|Evaluation<br>period|
+|---|:---:|:---:|---|---|
+|Standalone EOP (no Exchange Online mailboxes) <br><br> Microsoft 365 E3|Yes|Yes|Audit mode <br><br> Blocking mode¹|90 days|
+|Defender for Office 365 Plan 1 <br><br> Microsoft 365 Business Premium|Yes|Yes|Audit mode <br><br> Blocking mode¹|90 days²|
+|Microsoft 365 E5|No|Yes|Audit mode <br><br> Blocking mode¹ ³|Unlimited|
 
 ¹ As [previously described](#audit-mode-vs-blocking-mode-for-defender-for-office-365), **blocking mode** (Standard preset security policy) isn't available if internet mail flows through a third-party protection service or device before delivery to Microsoft 365.
 
 ² The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. The [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
 
-³ An evaluation that you configure from the **Microsoft Defender for Office 365 evaluation** page is always set up in **audit mode** (evaluation policies). At any point after the setup is complete, you can _convert_ to **blocking mode** (Standard preset security policy) as described in [Convert to Standard protection](#convert-to-standard-protection).
+³ The evaluation is set up in **audit mode** (evaluation policies). At any point after the setup is complete, you can _convert_ to **blocking mode** (Standard preset security policy) as described in [Convert to Standard protection](#convert-to-standard-protection).
 
 Now that you understand the differences between evaluations, trials, audit mode, and blocking mode, you're ready to set up your evaluation or trial as described in the next sections.
 
 ## Set up an evaluation or trial in audit mode
 
-Remember, when you evaluate Defender for Office 365 in audit mode, special evaluation policies are created so Defender for Office 365 can detect threats. The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
+Remember, when you evaluate or try Defender for Office 365 in audit mode, special evaluation policies are created so Defender for Office 365 can detect threats. The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
 
 1. Start the evaluation in any of the available locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For example:
    - On the banner at the top of any Defender for Office 365 feature page, select **Start free trial**.
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
    - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. The **Turn on protection** dialog isn't used in evaluations; it's only used in trials. If you don't see the **Turn on protection** dialog, you're setting up an evaluation in **audit mode**, so skip to the next step.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
 
    In the **Turn on protection** dialog, select **No, I only want reporting**, and then select **Continue**.
 
@@ -219,15 +224,18 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
 5. When set up is complete, you get a **Let us show you around** dialog. Select **Start tour** or **Dismiss**.
 
-## Set up a trial in blocking mode
+## Set up an evaluation or trial in blocking mode
 
 Remember, when you try Defender for Office 365 in **blocking mode**, the Standard preset security is turned on and the specified users (some or everyone) are included in the Standard preset security policy. For more information about the Standard preset security policy, see [Preset security policies](preset-security-policies.md).
 
 1. Start the trial in any of the available locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For example:
    - On the banner at the top of any Defender for Office 365 feature page, select **Start free trial**.
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
+   - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. In the **Turn on protection** dialog, select **Yes, protect my organization by blocking threats**, and then select **Continue**.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
+
+   In the **Turn on protection** dialog, select **Yes, protect my organization by blocking threats**, and then select **Continue**.
 
 3. In the **Select the users you want to include** dialog, configure the following settings:
 
@@ -445,8 +453,6 @@ A: A maximum of two times. If your first trial expires, you need to wait at leas
 ### Q: In audit mode, are there scenarios where Defender for Office 365 acts on messages?
 
 A: Yes. For the protection of the service, no one in any program or SKU can turn off or bypass taking action on messages that are classified as malware or high confidence phishing by the service.
-
-Even in audit mode, [anti-spoofing protection in EOP](anti-phishing-policies-about.md#spoof-settings) also takes action on messages. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 ### Q: In what order are policies evaluated?
 
