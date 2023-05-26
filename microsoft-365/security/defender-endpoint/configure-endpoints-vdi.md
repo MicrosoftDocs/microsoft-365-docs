@@ -172,6 +172,12 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
    >  exit
    >  ```
 
+If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft 365 Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
+
+If either the main image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it will stop Defender from creating entries for new non-persistent VDIs in the Microsoft 365 Defender portal.
+
+Reach out to your third-party vendors for further assistance.
+
 ## Other recommended configuration settings
 
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
