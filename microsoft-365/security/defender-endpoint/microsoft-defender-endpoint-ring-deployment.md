@@ -20,10 +20,10 @@ ms.subservice: mde
 search.appverid: met150
 ms.date: 05/24/2023
 ---
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -67,7 +67,7 @@ Updates are released monthly using a gradual release process. This process helps
 > [!NOTE]
 > For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
 
-## Deployment methods
+## Management tools
 
 To create your own custom gradual rollout process for daily and/or monthly updates, you can use the following methods that use the tools:
 
@@ -75,15 +75,14 @@ To create your own custom gradual rollout process for daily and/or monthly updat
 - [**System Center Configuration Manager and Windows Server Update Services**](#system-center-configuration-manager-and-windows-server-update-services) - System Center Configuration Manager (SCCM) Software Update Point (SUP) = SCCM + Windows Server Update Services (WSUS)
 - [**Group Policy and WSUS**](#group-policy-and-wsus)
 - [**Group Policy and Microsoft Update**](#group-policy-and-microsoft-update) - Requires direct access to the internet.
-- [**Group Policy and network share**](#group-policy-and-network-share) - For example, UNC path, SMB, CIFS
+- [**Group Policy and network share**](#group-policy-and-network-share)  For example, UNC path, SMB, CIFS
 
 For details on how to use these tools, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
 
+Customers that prioritize availability over security, should take a crawl, walk, run approach.
 
 ## Deployment scenarios
 
-### Microsoft Intune and Microsoft Update
-
-Microsoft Intune and direct access to the internet [Microsoft Update (MU), formerly known as Windows Update (WU)].
-
-Customers who prioritize availability over security, should take a crawl, walk, run approach: 
+[Ring deployment using Intune with direct internt access to Microsoft Update](microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md)
+[Ring deploymen using System Center Configuration Manager and Windows Server Update Services](microsoft-defender-endpoint-ring-deployment-sscm-wsus.md)
+[Ring deployment using Group Policy and Windows Server Update Service](microsoft-defender-endpoint-ring-deployment-group-policy-wsus.md)
