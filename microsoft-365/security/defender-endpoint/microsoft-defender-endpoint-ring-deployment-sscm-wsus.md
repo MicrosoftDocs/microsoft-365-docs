@@ -43,12 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-<p><p>
-
-Watch the following video to learn more about Defender for Endpoint:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
-
 ## Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
 
 :::image type="content" source="images/mde-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/mde-deploy-ring-sccm-wsus-schedule.png":::
@@ -133,13 +127,13 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | ** Package Source (Example):\\<server>\<folder path>** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or click **Browse** to navigate to - and select - your package source. |
    | **Sending piroity:** | Select **High** and select Enable binary differential replication** |
    
-   1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution piont groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
+1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution piont groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
    
- 1. Click **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select Download software updates from the Internet, and then click **Next**.
+1. Click **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select Download software updates from the Internet, and then click **Next**.
    
- 1. On the **Distribution location** page, under **Specify the update languages for product**, under product, select **WIndows Update**. 
+1. On the **Distribution location** page, under **Specify the update languages for product**, under product, select **WIndows Update**. 
    
- 1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavour for clients on slow site boundries**,  select the following:
+1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavour for clients on slow site boundries**,  select the following:
    
    | In: | Change: |
    |:---|:---|
@@ -147,7 +141,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **Deployment options** | Select **Download and install software updates from the distribution points in site default boundry group** |
    | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundry group settings, Microsoft update will be the preferred source.** |
    
- 1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settins are shown in the followng figure.
+1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settins are shown in the followng figure.
    
    :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly-configured Automatic Deployment Rule." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
 
