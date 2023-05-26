@@ -163,7 +163,7 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
    sc query sense
    ```
 
-2. Run the following commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip):
+2. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
 
    ```console
    PsExec.exe -s cmd.exe
