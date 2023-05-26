@@ -115,7 +115,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that have any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
-    - **Double Key Encryption**, which is supported only for built-in labeling when you've enabled co-authoring for files encrypted with sensitivity labels.
+    - **Double Key Encryption**, which for this scenario, is supported only for built-in labeling.
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
