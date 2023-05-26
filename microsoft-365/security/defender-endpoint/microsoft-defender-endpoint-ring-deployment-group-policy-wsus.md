@@ -59,8 +59,8 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 ### Resources
 
 The followng resources provide information for using and managing Windows Server Update Services (WSUS).
-- [Deploy Windows Defender definition updates using WSUS - Configuration Manager](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/update-management/deploy-definition-updates-using-wsus)
-- [Windows Server Update Services Help](https://learn.microsoft.com/en-us/previous-versions/orphan-topics/ws.11/dn343567(v=ws.11)?redirectedfrom=MSDN)
+- [Deploy Windows Defender definition updates using WSUS - Configuration Manager](/troubleshoot/mem/configmgr/update-management/deploy-definition-updates-using-wsus)
+- [Windows Server Update Services Help](/previous-versions/orphan-topics/ws.11/dn343567(v=ws.11)?redirectedfrom=MSDN)
 
 1. Launch the **Windows Server Update Services Configuration Wizard**.
 
@@ -106,7 +106,25 @@ The Windows Server Update Servises Configuration Wizard is complete.
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png" alt-text="Shows a screen capture of the Update Services snap-in console with synchronization in progress." lightbox="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png":::
 
+1. In the **Search** dialog, under **Update Title**, double-click one of the listed KB items. One of two things will happen:
 
+   - If you do not have **Microsoft Report Viewer 2012 Restributable** installed you will get the following error message:
+     
+     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Restributable is not installed." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png":::
+
+     Follow the link in the error message to install the Microsof Report Viewer 2012 Redistributable before proceeding to the next numbered step of this procedure.
+
+    - If **Microsoft Report Viewer 2012 Restributable** installed, **Update Report for YR2k19** opens, presenting information related to the KB you selected above.  This is shown in the following image. 
+
+     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
+
+   To find out which Platform Update version is the Current Channel (Broad), go to the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623).
+ 
+
+
+ 
 ## See also 
 
 [Microsoft Defender for Endpoint ring deployment](microsoft-defender-endpoint-ring-deployment.md)
+
+
