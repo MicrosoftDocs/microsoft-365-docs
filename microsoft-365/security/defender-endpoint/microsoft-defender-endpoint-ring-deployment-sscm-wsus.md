@@ -95,7 +95,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    >
    > **Product: “Windows Defender”** -  We are removing “System Center Endpoint Protection”, because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
    >
-   > **Update Classification: “Critical Updates” and “Definition Updates”
+   > **Update Classification**: “Critical Updates” and “Definition Updates”
    
 1. Click **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then click **Customize**.
 
@@ -114,7 +114,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **User visual experience** > **User notifications** | Select **Hide in Software center and all notifications** |
    | **Deadline behavior** | Select **Software Update Installation** |
    | **Device restart behavior** | Select **Servers** | 
-   | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts) |
+   | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts)** |
    
 1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, and then click **Next**.
    
@@ -155,9 +155,9 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    
    | In: | Change: |
    |:---|:---|
-   | **Name** | Type a name for your deployment rule. For example, type MDE-MDAV_Security_Intelligence_Update_Production |
+   | **Name** | Type a name for your deployment rule. For example, type _MDE-MDAV_Security_Intelligence_Update_Production_ |
    | **Description** | Type a bief description for your pilot |
-   | **Template** | Select **SCEP and Windows Defender Antivirus Updates |
+   | **Template** | Select **SCEP and Windows Defender Antivirus Updates** |
    | **Collection** | Type **Windows_Security_Intelligence_Production** |
    | **Each time the rule runas and finds new updates**. | Select **Add to an existing Software Update Group** |
    | **Each time the rule runas and finds new updates** | Select **Enable the deployment after this rule is run** |
