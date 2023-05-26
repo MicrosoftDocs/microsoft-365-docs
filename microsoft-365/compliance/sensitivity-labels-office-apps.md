@@ -441,7 +441,7 @@ However, take into consideration the outcome when an email client doesn't suppor
     
     - **Double Key Encryption**: Behavior depends on whether Outlook supports this encryption method. Use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)** to confirm support for your version.
     
-        - When Outlook supports DKE: If the highest priority label applies the encryption setting for Double Key Encryption, no label or encryption is selected for the email message if the label is configured for **Let users assign permissions when they apply the label**. The label and protection is applied if the label is configured for **Assign permissions now**.
+        - When Outlook supports DKE: If the highest priority label applies the encryption setting for Double Key Encryption and **Assign permissions now**, Outlook for Windows applies that label and protection to the email message. The label and protection isn't applied if the label is configured for **Let users assign permissions when they apply the label**.
         
         - When Outlook doesn't support DKE: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows.
 
