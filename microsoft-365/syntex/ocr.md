@@ -49,9 +49,9 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ### Compliance portal
 
-The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for DLP policies. If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
+The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
-In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF iamages, Exchange Online all PDF and TIFF images, and Windows endpoint image-only PDF and TIFF images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance.
+In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF images, Exchange Online PDF and TIFF images, and Windows endpoint image-only PDF and TIFF images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance.
 
 ## Requirements and limitations
 
@@ -80,8 +80,3 @@ The OCR service supports more than [150 languages](https://learn.microsoft.com/e
 
 - Currently, images that are embedded in Office documents aren't supported.
 
-
-
- 
-
- 
