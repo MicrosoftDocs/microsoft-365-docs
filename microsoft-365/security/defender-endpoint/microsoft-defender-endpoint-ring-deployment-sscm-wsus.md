@@ -233,7 +233,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 1. Navigate to **Software Library**
 1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on “MDE-MDAV_Security_Intelligence_Update_Production”, and then click **Disable**. This is shown in the following figure:
 
-   :::image type="content" source="mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="Shows as screen capture of how to disable Automatic Deployment Rules in the event of erros or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules in the event of erros or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
 
 ## See also 
 
