@@ -52,10 +52,10 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
 
-On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have:
+On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, Include at least 1 Citrix VM (non-persistent) and/or (persistent)
+> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 1. In the System Center Configuration Manager > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings :
    

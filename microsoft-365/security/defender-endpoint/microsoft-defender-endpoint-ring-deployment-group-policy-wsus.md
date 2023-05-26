@@ -1,5 +1,5 @@
 ---
-title: Ring deployment using System Center Configuration Manager and Windows Server Update Services
+title: Ring deployment using Group Policy and Windows Server Update Services
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article explains how to deploy Microsoft Defender for Endpoint in measured, staged cycles.
 keywords: deploy Microsoft Defender for Endpoint, Ring deployment Microsoft Defender for Endpoint, cybersecurity, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
 ms.service: microsoft-365-security
@@ -43,15 +43,68 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-# Microsoft Defender for Endpoint ring deployment using 
+# Microsoft Defender for Endpoint ring deployment using Group Policy and Windows Server Update Services
 
+:::image type="content" source="images/mde-deploy-ring-group-policy-wsus.png" alt-text="Shows an example deployment schedule for Group Policy with WSUS deployments." lightbox="images/mde-deploy-ring-group-policy-wsus.png":::
 
+## Setting up the pilot environment
 
+This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Service (WSUS).
 
+On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
+> [!NOTE]
+> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
+### Resources
 
+The followng resources provide information for using and managing Windows Server Update Services (WSUS).
+- [Deploy Windows Defender definition updates using WSUS - Configuration Manager](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/update-management/deploy-definition-updates-using-wsus)
+- [Windows Server Update Services Help](https://learn.microsoft.com/en-us/previous-versions/orphan-topics/ws.11/dn343567(v=ws.11)?redirectedfrom=MSDN)
 
+1. Launch the **Windows Server Update Services Configuration Wizard**.
+
+1. On the **Before You Begin** page, review the preliminary information and attend to any configuration or credential matters, and then click **Next**.
+
+1. ON the **Microsoft Update Improvement Program** page, if you would like to participate in the program, select **Yes, I would like to join the Microsoft Update Improvement Program**. Click **Next**.
+
+1. On the **Choose Upstream Server** page, select **Synchronize from Microsoft Update** and then click **Next**.
+
+1. On teh **Specify Proxy Server** page, select **Next**.
+
+1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to down load, and then click **Next**
+
+1. On the **Choose Products** page, select **Forefront Client Security** and **System Center Endpoint Protection**, scroll down to **Windows** and select **Microsoft Defender Antivirus**. This is shown in the following figure.
+   
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-choose-products-av.md" alt-text="Shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/mde-deploy-ring-group-policy-wsus-choose-products-av.md":::
+
+1.  Click **Next**. On the **Choose Classification** page, select: **critical Updates**, **Definition Updates**, and **Security Updates**, and then click **Next**.
+
+1. On the **Configure Sunc Schedule** page, do the following:
+
+   | In: | Change: |
+   |:---|:---|
+   | **Synchronizae automatically** | select (enable) |
+   | **First synchronization** | Set time to _5:00:00 AM_ |
+   | **Synchronizations per day** | Set to _1_ |
+
+1. Click **Next**. On the **Finished** page, click **Next**.
+
+1. On the **What's next** page, click **Finish**.
+
+The Windows Server Update Servises Configuration Wizard is complete. 
+
+1. Open the Update Services snap-in console, and naveigate to **YR2K19**. This is shown in the following figure.
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-update-service-synch.png" alt-text="Shows a screen capture of the Update Services snap-in console with synchronization in progress." lightbox="images/mde-deploy-ring-group-policy-wsus-update-service-synch.png":::
+
+1. When synchronization is complete, you will see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **Your WSUS server currently shows that no computers are registered to receive updates." This warning is normal at this point of the deployment configuration process. 
+
+1. In the **Actions** column, click **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** will list updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intellegence_. This is shown in the next image.
+
+   See [ Viewing and Managing Updates](/windows-server/administration/windows-server-update-services/manage/viewing-and-managing-updates.md).
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png" alt-text="Shows a screen capture of the Update Services snap-in console with synchronization in progress." lightbox="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png":::
 
 
 ## See also 
