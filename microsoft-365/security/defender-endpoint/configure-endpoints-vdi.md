@@ -156,21 +156,23 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-   > [!NOTE]
-   > If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
-   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
-   >  ```console
-   >  sc query sense
-   >  ```
-   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
-   >
-   >  ```console
-   >  PsExec.exe -s cmd.exe
-   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-   >  del *.* /f /s /q
-   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
-   >  exit
-   >  ```
+If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+
+1. Ensure the sensor is stopped by running the following command in a CMD window:
+
+   ```console
+   sc query sense
+   ```
+
+2. Run the following commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip):
+
+   ```console
+   PsExec.exe -s cmd.exe
+   cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   del *.* /f /s /q
+   REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   exit
+   ```
 
 If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft 365 Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
 
