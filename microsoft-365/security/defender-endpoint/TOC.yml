@@ -118,7 +118,7 @@
       - name: Ring deployment using Intune and Microsoft Update
         href: microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md
       - name: Ring deployment using System Center Configuration Manager and Windows Server Update Service
-        href: microsoft-defender-endpoint-ring-deployment-sscm-wsus
+        href: microsoft-defender-endpoint-ring-deployment-sscm-wsus.md
       - name: Ring deployment using Group Policy and Wnidows Server Update Service
         href: microsoft-defender-endpoint-ring-deployment-group-policy-wsus.md
 
