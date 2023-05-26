@@ -43,11 +43,11 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-## Ring deployment using Intune and direct internt access for Microsoft Update
+# Ring deployment using Intune and direct internt access for Microsoft Update
 
 :::image type="content" source="images/mde-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/mde-deploy-ring-intune-schedule.png":::
 
-### Setting up the pilot environment 
+## Setting up the pilot environment 
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
 
@@ -72,7 +72,7 @@ Recommended settings are as follows:
 - [Use Endpoint security Antivirus policy to manage Microsoft Defender update behavior](/mem/intune/fundamentals/whats-new#use-endpoint-security-antivirus-policy-to-manage-microsoft-defender-update-behavior-preview)
 - [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout)
 
-### Setting up the Production environment 
+## Setting up the Production environment 
 
 In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), create or append to your MDAV policy using the following setting:
 For example, your production policy named _MDAV_Settings_Production_.
@@ -85,7 +85,7 @@ For example, your production policy named _MDAV_Settings_Production_.
 | Platform Updates Channel | Critical – Time delay | It will be delayed by 2 days.|
 | Security Intelligence Updates Channel | Current Channel (Broad) * This will provide you with 3 hours of time to find a FP and prevent the production systems from getting an incompatible signature update. (Staged) | This will provide you with 3 hours of time to find a FP and prevent the production systems from getting an incompatible signature update. |
 
-#### If you encounter problems change the source of the MDAV updates
+### If you encounter problems change the source of the MDAV updates
 
 1. In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), go to **Endpoint Security**, click **Antivirus**, and then find your Intune production policy (for example, MDAV_Settings_Production), and then, in **Configuration settings**, click **Edit**.
 
@@ -93,11 +93,11 @@ For example, your production policy named _MDAV_Settings_Production_.
 
    :::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png" alt-text="Shows Intune Microsoft Defender Antivirus production policy fallback setting." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png":::
 
-##### What does this do
+#### What does this do
 
 It forces MDAV to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn’t exist.
 
-##### How long does it take for the Intune policy to refresh?
+#### How long does it take for the Intune policy to refresh?
 
 If you update a policy, it’s within a few minutes (3-5 minutes) via WNS, as long the WNS URL’s are open.
 

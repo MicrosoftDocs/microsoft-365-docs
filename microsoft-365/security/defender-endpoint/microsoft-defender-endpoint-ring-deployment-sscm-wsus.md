@@ -43,12 +43,12 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-## Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
+# Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
 
 :::image type="content" source="images/mde-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/mde-deploy-ring-sccm-wsus-schedule.png":::
 
 
-### Setting up the pilot environment 
+## Setting up the pilot environment 
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
 
@@ -114,7 +114,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **User visual experience** > **User notifications** | Select **Hide in Software center and all notifications** |
    | **Deadline behavior** | Select **Software Update Installation** |
    | **Device restart behavior** | Select **Servers** | 
-   | ** Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts) |
+   | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts) |
    
 1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, and then click **Next**.
    
@@ -124,7 +124,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    |:---|:---|
    | **Name** | Type a name for your new depoyment package. For example, type _MDE-MDAV Security Intellegence Update_ |
    | **Descriptioin** | Type a brief description for you new deployment package |
-   | ** Package Source (Example):\\<server>\<folder path>** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or click **Browse** to navigate to - and select - your package source. |
+   | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or click **Browse** to navigate to - and select - your package source. |
    | **Sending piroity:** | Select **High** and select Enable binary differential replication** |
    
 1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution piont groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
@@ -147,9 +147,9 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deploymetn Rules." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policy.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deploymetn Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
 
-### Setting up the production environment
+## Setting up the production environment
 
 1. In the System Center Configuration Manager > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings :
    
@@ -228,7 +228,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. 
 
-#### If you encounter problems
+### If you encounter problems
 
 1. Navigate to **Software Library**
 1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on “MDE-MDAV_Security_Intelligence_Update_Production”, and then click **Disable**. This is shown in the following figure:
