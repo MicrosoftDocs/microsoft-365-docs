@@ -129,6 +129,7 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0796|Phlox Tempest|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
+|DEV-XXXX|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques) |China|BRONZE SILHOUETTE|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 
