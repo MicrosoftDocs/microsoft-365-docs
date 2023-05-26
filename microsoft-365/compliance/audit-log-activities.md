@@ -436,6 +436,37 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+## Microsoft Project for the web activities
+
+You can search the audit log for activities in Microsoft Project for the web. Microsoft Project for the web is built on the [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and has an associated Project Power App. To enable auditing for scenarios where the user is using the Microsoft Dataverse or the Project Power App, see the [System Settings Auditing tab](/power-platform/admin/system-settings-dialog-box-auditing-tab) guidance. For a list of entities related to Project for the web, see the [Export user data from Project for the web](/project-for-the-web/export-user-data-from-project-for-the-web#find-user-data-in-dataverse-with-the-advanced-find-search-feature) guidance.
+
+For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
+
+>[!NOTE]
+>Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Created project|ProjectCreated|A project is created by a user or app.|
+|Created roadmap|RoadmapCreated|A roadmap is created by a user or app.|
+|Created roadmap item|RoadmapItemCreated|A roadmap item is created by a user or app.|
+|Created task|TaskCreated|A task is created by a user or app.|
+|Deleted project|ProjectDeleted|A project is deleted by a user or app.|
+|Deleted roadmap|RoadmapDeleted|A roadmap is deleted by a user or app.|
+|Deleted roadmap item|RoadmapItemDeleted|A roadmap item is deleted by a user or app.|
+|Deleted task|TaskDeleted|A task is deleted by a user or app.|
+|Project accessed|ProjectAccessed|A project is read or app.|
+|Project home accessed|ProjectListAccessed|A list of projects and/or roadmaps is queried by a user.|
+|Roadmap accessed|RoadmapAccessed|A roadmap is read by a user or app.|
+|Roadmap item accessed|RoadmapItemAccessed|A roadmap item is read by a user or app.|
+|Task accessed|TaskAccessed|A task is read by a user or app.|
+|Updated project settings|ProjectForTheWebProjectSettings|Project settings is updated by an admin.|
+|Updated roadmap|RoadmapUpdated|A roadmap is modified by a user or app.|
+|Updated roadmap item|RoadmapItemUpdated|A roadmap item is modified by a user or app.|
+|Updated roadmap settings|ProjectForTheWebRoadmaptSettings|Roadmap settings is updated by an admin.|
+|Updated task|TaskUpdated|A task is modified by a user or app.|
+|Updated project|ProjectUpdated|A project is modified by a user or app.|
+
 ## Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
