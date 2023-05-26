@@ -94,7 +94,7 @@ DLP audits the activities for these file types, even if there isn't a policy mat
 - Excel files
 - PDF files
 
-[!INCLUDE [dlp-pdf-adobe-requirements](/includes/dlp-pdf-adobe-requirements.md)]
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
