@@ -89,7 +89,7 @@ All our updates contain
 
 #### What's new
 
-- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format will look like: 
+- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format looks like: 
    - Platform: `4.18.23050.1` 
    - Engine: `1.1.23050.63000` 
 - Fixed memory leak in behavior monitoring
@@ -217,9 +217,13 @@ For Windows 10 release information, see the [Windows lifecycle fact sheet](https
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-We recommend updating your Windows 10 and 11 (Enterprise, Pro, and Home editions), Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2 OS installation images up to date, including WIM and VHD(x) files, with the latest antivirus and antimalware updates. 
+To avoid a gap in protection, keep your OS installation images up to date with the latest antivirus and antimalware updates. Updates are available for:
 
-Keeping your OS installation images up to date helps avoid a gap in protection. Updates are released for x86, x64, and ARM64 Windows architecture.
+- Windows 10 and 11 (Enterprise, Pro, and Home editions)
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2
+- WIM and VHD(x) files 
+
+Updates are released for x86, x64, and ARM64 Windows architecture.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
