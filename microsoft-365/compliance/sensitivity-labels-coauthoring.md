@@ -73,8 +73,6 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
-        > [!NOTE]
-        > If you want to use Double Key Encryption in the same tenant, you'll need a later version. For details, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
     - **macOS**: Minimum version 16.51
     - **iOS**: Minimum version 2.58
     - **Android**: Minimum version 16.0.14931
@@ -84,7 +82,7 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
-        - If you want to use Double Key Encryption in your tenant, make sure the [Azure Information Protection Office add-in is disabled](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+        - If you want to use Double Key Encryption in your tenant, make sure the [Azure Information Protection Office add-in is disabled](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). It's not supported to enable coauthoring and use the add-in for sensitivity labels that are configured for Double Key Encryption.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
@@ -115,7 +113,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 - Co-authoring and AutoSave aren't supported and don't work for labeled and encrypted Office documents that have any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
-    - **Double Key Encryption**, which for this scenario, is supported only for built-in labeling.
+    - **Double Key Encryption**
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
