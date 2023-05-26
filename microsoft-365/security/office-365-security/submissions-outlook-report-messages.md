@@ -35,7 +35,7 @@ Admins configure user reported messages to go to a designated reporting mailbox,
 Microsoft provides the following tools for users to report good and bad messages:
 
 - Built-in reporting in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
+- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
