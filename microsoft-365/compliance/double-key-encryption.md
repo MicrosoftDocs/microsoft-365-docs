@@ -547,18 +547,6 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 > [!NOTE]
 > It may take up to 24 hours for the clients to refresh with the new labels.
 
-### Enable DKE in your client
-
-If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
-
-```console
-   [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
-   "DoubleKeyProtection"=dword:00000001
-
-   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
-   "DoubleKeyProtection"=dword:00000001
-```
-
 ## Migrate protected files from HYOK labels to DKE labels
 
 If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the Microsoft Purview Information Protection scanner. To get started using the scanner, see [Understand the information protection scanner](deploy-scanner.md).
