@@ -51,7 +51,7 @@ In this example, you can see that the recipients of the detected email message h
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 
 > [!IMPORTANT]
-> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals back in the time. After the convergence of security experiences into unified portal that we call M365 Defender today, these settings are irrelevant and they don't have any functionality associated with them. Customers can safely ignore the status of the control until it is removed from the portal.
+> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft 365 Defender, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
