@@ -50,7 +50,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum number of DLP rules:
     - In a policy: Limited by the size of the policy
     - In a tenant: 600
-- Maximum size of an individual DLP rule: 80 KB
+- Maximum size of an individual DLP rule: 100 KB (102,400 characters)
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
 - Regex size limit for all matches predicted: 20 KB
@@ -413,7 +413,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
-- User's risk level for Adaptice Protection is
+- User's risk level for Adaptive Protection is
 - Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
@@ -491,13 +491,14 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - User's risk level for Adaptive Protection is
-- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (PDF, Office files, .ZIP, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
 - File extension is
-- The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-
+- The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
 
@@ -908,7 +909,7 @@ When a user overrides a block with override action on an email, the override opt
     ]
 }
 ```
-If you have a automated process that makes use of the business justification values, the process can access that information progamatically in the email X-header data. 
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data. 
 
 ### Incident reports
 
