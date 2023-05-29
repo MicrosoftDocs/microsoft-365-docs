@@ -82,7 +82,7 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
-        - If you want to use Double Key Encryption in your tenant, make sure the [Azure Information Protection Office add-in is disabled](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). It's not supported to enable coauthoring and use the add-in for sensitivity labels that are configured for Double Key Encryption.
+        - If you want to use [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) in your tenant, make sure the [Azure Information Protection Office add-in is disabled](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). It's not supported to enable coauthoring and use the add-in for sensitivity labels that are configured for Double Key Encryption.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
