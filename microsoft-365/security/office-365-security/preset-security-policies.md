@@ -550,9 +550,9 @@ The differences in meaningful policy settings in the Standard preset security po
 The differences in Safe Attachments and Safe Links policy settings in the Built-in protection preset security policy and in the Standard and Strict preset security policies are summarized in the following table:
 
 |&nbsp;|Built-in protection|Standard and Strict|
-|---|:---:|:---:|:---:|
+|---|:---:|:---:|
 |**Safe Attachments policy**|No difference|No difference|
-|**Safe Links policy**||||
+|**Safe Links policy**|||
 |&nbsp;&nbsp;**Let users click through to the original URL** (_AllowClickThrough_)|Selected (`$true`)|Not selected (`$false`)|
 |&nbsp;&nbsp;**Do not rewrite URLs, do checks via Safe Links API only** (_DisableURLRewrite_)|Selected (`$true`)|Not selected (`$false`)|
 |&nbsp;&nbsp;**Apply Safe Links to email messages sent within the organization** (_EnableForInternalSenders_)|Not selected (`$false`)|Selected (`$true`)|

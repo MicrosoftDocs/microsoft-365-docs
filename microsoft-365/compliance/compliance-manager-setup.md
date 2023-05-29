@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -46,7 +46,7 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 ## Set user permissions and assign roles
 
-Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments-and-regulations) below to learn more.
 
 The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in either of the following places:
 
@@ -93,16 +93,23 @@ A user can only hold one role at a time. Any change in a user's role will overri
 | **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
 | **Manage assessments, regulatory templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
-### Role-based access to assessments
+### Role-based access to assessments and regulations
 
-You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#setting-permissions-in-azure-ad).
+You can assign roles to users in order to grant access to specific assessments, or all assessments based on the regulation. Granting user access in these ways is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data.
 
-The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
+These four roles provide access to assessments:
+- Compliance Manager Reader
+- Compliance Manager Contribution
+- Compliance Manager Assessor
+- Compliance Manager Administration
 
-To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
+What you can do with each assessment remains restricted based on which activities the role allows.
+
+To grant users access to an assessment or all assessments for a regulation, open the its details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
 
 **More information**:
-- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
+- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+- See [Grant user access to regulations](compliance-manager-templates.md#grant-user-access-to-regulations) for more detailed instructions.
 - Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings.
 
 ## Start a premium assessments trial
@@ -255,17 +262,22 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to assessment-based role assignments. To add or remove such roles for users, follow the steps below:
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to role assignments.
+
+ - When you grant a user access to an **assessment**: The user will have access to just that one assessment.
+ - When you grant a user access to a **regulation**: The user will have access to any assessment created with that regulation, including existing assessements and any assessments created in the future.
+
+To add or remove user access roles for assessments and regulations, follow the steps below:
 
 1. In **Compliance Manager settings,** select **User access**.
 
 1. Select the checkbox next to the name of one or more users whose role you want to edit.
 
-1. From the **Edit assessment roles** dropdown menu above the list of names, select **Add assessment permissions** or **Remove assessment permissions**.
+1. Depending on whether you're editing roles for assessments or regulations: From the **Edit assessment roles** or **Edit regulation roles** dropdown menu above the list of names, select **Add assessment/regulation permissions** or **Remove assessment/regulation permissions**.
 
-1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments**. On the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
+1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments/regulations**. On the next flyout pane, choose the checkbox next to the assessments/regulations and select **Apply**, then select **Save**.
 
-1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
+1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments/regulations for which you want to remove access, and select the X mark in the **Remove** column.
 
    1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
 
@@ -345,7 +357,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Regulations**: The regulations or standards pertaining to the action.
 - **Group**: The group to which you assigned the action.
 - **Solutions**: The solution where you can go to perform the action.
-- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments)).
+- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments-and-regulations)).
 - **Categories**: The related data protection category (such as, protect information, manage devices, etc.).
 - **Test status**:
   - **None** – no status update recorded
