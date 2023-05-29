@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 05/29/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
