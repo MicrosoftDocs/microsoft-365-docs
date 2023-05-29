@@ -67,6 +67,9 @@ You can use filters to focus in on internet-facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-endpoint/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-endpoint/internet-facing-filter.png":::
 
+> [!NOTE]
+> The Internet facing tag is removed from from active devices in the device inventory that have had no new events for 48 hours.
+
 ## Investigate your internet-facing devices
 
 To learn more about an internet-facing device, select the device in the device inventory to open its flyout pane:
