@@ -160,6 +160,7 @@ The **Download file** button can have the following states:
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
+    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
