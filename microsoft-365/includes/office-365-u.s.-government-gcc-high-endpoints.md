@@ -33,7 +33,6 @@ ID | Category | ER | Addresses | Ports
 > - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 > - [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
 
-
 ## Microsoft 365 Common and Office Online
 
 ID | Category | ER | Addresses | Ports
