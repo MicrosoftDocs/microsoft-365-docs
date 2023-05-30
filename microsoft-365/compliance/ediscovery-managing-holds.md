@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/22/2023
+ms.date: 05/30/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -37,11 +37,8 @@ In some cases, you may have a set of custodians that you've identified and have 
 To view the custodian hold policy:
 
 1. In the Microsoft Purview compliance portal, select **eDiscovery > Premium** to display the list of cases in your organization.
-
 2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an eDiscovery (Premium) case, see [Add Custodians to a case](ediscovery-add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
-
 3. Go to the **Holds** tab and select **CustodianHold\<HoldId>**.
-
 4. On the flyout page, you can perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ## Manage non-custodial holds
@@ -54,19 +51,12 @@ When you create a hold, you have the following options to scope the content that
 To create a non-custodial hold for an eDiscovery (Premium) case:
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, select **eDiscovery > Premium** to display the list of cases in your organization.
-  
 2. Select **Open** next to the case that you want to create the holds in.
-  
 3. From the home page for the case, select the **Holds** tab.
-  
 4. On the **Holds** tab, select **Create**.
-  
 5. On the **Name your hold** page, give the hold a name. The name of the hold must be unique in your organization.
-
 6. (Optional) In the **Description** box, add a description of the hold.
-  
 7. Select **Next**.
-  
 8. Choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
    1. **Exchange email** - select **Choose users, groups, or teams** and then select **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft 365 group or a Microsoft Team. Select the user, group, team check box, select **Choose**, and then select **Done**.
@@ -82,7 +72,6 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
    1. **Exchange public folders** - Move the toggle switch to the All position to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch set to **None** if you don't want to put a hold on public folders.
 
 9. When you're done adding content locations to the hold, select **Next**.
-  
 10. To create a query-based hold with conditions, complete the following. Otherwise, just select **Next**.
 
     - In the box under **Keywords**, type a search query in the box so that only the content that meets the search criteria is placed on hold. You can specify keywords, message properties, or document properties, such as file names. You can also use more complex queries that use a Boolean operator, such as AND, OR, or NOT. If you leave the keyword box empty, then all content located in the specified content locations will be placed on hold.
@@ -92,7 +81,6 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
      For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions).
 
 11. After configuring a query-based hold, select **Next**.
-
 12. Review your settings, and then select **Create this hold**.
 
 > [!NOTE]
@@ -104,6 +92,9 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 ## Place a hold on Microsoft Teams and Microsoft 365 groups
 
 Microsoft Teams is built on Microsoft 365 groups. Therefore, placing them on hold in eDiscovery (Premium) is similar.
+
+> [!IMPORTANT]
+> When you select a distribution list to be placed on hold, the hold is placed on each of the member mailboxes in the distribution list when the policy is created. Subsequent changes in the distribution list do not change or update the holds or the policy.
 
 - **How do I map an additional Microsoft 365 groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Microsoft 365 groups and Microsoft Teams?** Microsoft Teams is built on Microsoft 365 groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Microsoft 365 groups and Microsoft Teams on hold.
 
