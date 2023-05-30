@@ -30,7 +30,6 @@ The Recoverable Items folder for an Exchange Online mailbox exists to protect fr
 
 There is another scenario that requires you to delete items from the Recoverable Items folder. In this scenario, the user is unable to send/delete emails to because the Recoverable Items folder is full. The user sending an email will get an Non-Delivery Report (NDR) error message **554 5.2.0 STOREDRV.Deliver.Exception** (see [When sending emails in Exchange Online](/exchange/troubleshoot/email-delivery/ndr/mapiexceptionnotfound-ndr)). This NDR error has been caused by a Versions folder that is full, and hence requires you to delete the items in the Versions folder (see [Cannot update calendar items from OWA or Outlook on Mac](/microsoft-365/troubleshoot/holds/cannot-update-calendar-items-from-owa-or-outlook-on-mac)).
 
-
 This article explains how admins can delete items from the Recoverable Items folder for cloud-based mailboxes that are on hold. This procedure involves disabling access to the mailbox and disabling single item recovery, disabling the Managed Folder Assistant from processing the mailbox, temporarily removing the hold, deleting items from the Recoverable Items folder, and then reverting the mailbox to its previous configuration. Here's the process:
   
 [Step 1: Collect information about the mailbox](#step-1-collect-information-about-the-mailbox)
