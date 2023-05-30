@@ -37,11 +37,11 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 ## What do you need to know before you begin?
 
-- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender, Microsoft Defender for Endpoint Plan 2, or Microsoft Defender for Office Plan 2.
+- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2.
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/mdo-portal-permissions.md).
+  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/mdo-portal-permissions.md).
 
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/submissions-report-messages-files-to-microsoft.md).
 
@@ -51,10 +51,9 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 ### Submit a file or file hash
 
-1. Open Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**.
+1. Open Microsoft 365 Defender at [https://security.microsoft.com](https://security.microsoft.com), click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Add new submission](../../media/unified-admin-submission-new.png)
+    :::image type="content" source="../../media/unified-admin-submission-new.png" alt-text="Screenshot showing how to add a new submission.":::
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.
 
@@ -66,8 +65,7 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk file or file hash submission** is the only choice, and is automatically selected.
 
-    > [!div class="mx-imgBorder"]
-    > ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png)
+    :::image type="content" source="../../media/unified-admin-submission-file.png" alt-text="Screenshot showing how to submit files.":::
 
 7. Click **Submit**.
 
@@ -77,19 +75,17 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 You can also submit a file or file hash directly from the list of alerts on the **Alerts** page.
 
-1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
+1. Open the Microsoft 365 Defender at [https://security.microsoft.com](https://security.microsoft.com), click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
 
 2. Select the alert you want to report. Note that you are submitting a file that is nestled within the alert.
 
 3. Click the ellipses next to **Manage alert** to see additional options. Select **Submit items to Microsoft for review**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Submit items from alerts queue](../../media/unified-admin-submission-alerts-queue.png)
+    :::image type="content" source="../../media/unified-admin-submission-alerts-queue.png" alt-text="Screenshot showing how to submit items from an alerts queue.":::
 
 4. In the next flyout that opens, select the submission type.
 
-    > [!div class="mx-imgBorder"]
-    > ![Complete the required fields](../../media/unified-admin-submission-alert-queue-flyout.png)
+    :::image type="content" source="../../media/unified-admin-submission-alert-queue-flyout.png" alt-text="Screenshot showing how to specify a submission type and fill in required fields.":::
 
     If you select **File** as the submission type, upload the file, categorize your submission, and choose the priority.
 
