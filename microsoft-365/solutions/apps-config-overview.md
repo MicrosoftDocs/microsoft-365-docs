@@ -16,15 +16,19 @@ keywords:
 
 # Configure apps using Microsoft Intune
 
-Once you've set up Intune and added the apps you want to manage to Intune, you can begin the process of creating app configuration policies so that members of your organization (end-users) can easily install and use those apps on their devices. You create app configuration policies in Intune. App configuration policies can help you eliminate app setup problems by letting you assign configuration settings to a policy that is then assigned to end-users before they run the app. The settings are then supplied automatically when the app is configured on the end-users device, and end-users don't need to take action. The configuration settings are unique for each app.
+Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune) and you've [added apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), you can begin the process of creating app configuration policies so that members of your organization (end-users) can easily install and use those apps on their devices. You create app configuration policies directly in Intune that are unique for each app.
 
-You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. These configuration settings allow an app to be customized by using app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run.
+> [!NOTE]
+> Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps.
 
-An app configuration setting, for example, might require you to specify any of the following details:
+ App configuration policies can help you eliminate app setup problems by letting you assign configuration settings to a policy that is then assigned to end-users before they run the app. The settings are then supplied automatically when the app is configured on the end-user's device. Most importantly, end-users don't need to take action. You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run.
+
+For example, an app configuration setting might require you to specify any of the following details:
 - A custom port number
 - Language settings
-- Security settings
-- Branding settings such as a company logo
+- S/MIME settings
+- Security and protection settings
+- Branding settings (such as a company logo)
 
 If end-users were to enter these settings instead, they could do this incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end-users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be easier and quicker.
 
@@ -45,20 +49,53 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## What's in this solution
 
-This solution steps you through the process of creating app configuration policies in Microsoft Intune and assigning those policies to your organization. Once you've completed the above steps, you're ready to create app protection policies for your organization in Intune. Using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
+This solution steps you through the process of creating app configuration policies in Microsoft Intune for specific apps and assigning those policies to your organization. Once you've completed the above prerequisites, you're ready to create app protection policies for your organization in Intune. Using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
 
 :::image type="content" source="../media/configure-managed-apps/configure-managed-apps-01.png" alt-text="Steps used to configure managed apps with Microsoft Intune." border="false" :::
 
 ## Configure the Company Portal
 
-The Company Portal apps, Company Portal website, and Intune app on Android are where users access company data and can do common tasks. Common task may include enrolling devices, installing apps, and locating information (such as for assistance from your IT department). Additionally, they allow users to securely access company resources. The end-user experience provides several different pages, such as Home, Apps, App details, Devices, and Device details. End-users can quickly find apps within the Company Portal.
+End-users use the Company Portal to securely access company data and do common tasks. Common task may include enrolling devices, installing apps, locating information, and performing device actions. End-users can access these tasks and information using either the Company Portal app, Company Portal website, or Intune app. The Company Portal app supports iOS/iPadOS, Linux, macOS, and Windows devices. The Intune app supports Android devices.
+
+As an Intune admin, you can customize the Company Portal user experience for your organization. Specifically, you can set the Company Portal branding, support information, enrollment, privacy, notifications, device categories, app sources, and self-service actions.
+
+> [!NOTE]
+> The "Company Portal" is commonly used as the descriptor for the Intune app, Company portal app, and the Company portal website.
+
+## End-users and the Company Portal
+
+There are specific steps related to the Company Portal that end-users can take when using Microsoft Intune. Those steps start with the Company Portal.
+
+You can direct end-users to follow these steps:
+1. [Install the Company Portal](/mem/intune/user-help/sign-in-to-the-company-portal) on their device.
+2. [Update the Company Portal](/mem/intune/user-help/install-a-new-version-of-the-company-portal-app) to get the latest version on their device. Having your end-uers get the latest version of the Company Portal app or Intune app on their device allows them to get the latest bug fixes and security updates for the app. 
+3. Enroll devices to be managed by Microsoft Intune based on device platform:
+    - [iOS/iPad devices](/mem/intune/user-help/enroll-your-device-in-intune-ios)
+    - [Android devices](/mem/intune/user-help/why-enroll-android-device)
+    - [Linux devices](mem/intune/user-help/enroll-device-linux)
+    - [macOS devices](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)
+    - [Windows devices](/mem/intune/user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)
+
+    > [!IMPORTANT]
+    > Each device platform may offer different enrollment methods depending on the device type, device management, and device configuration.
+4. Add or update their [device password, PIN, or passcode](/mem/intune/user-help/password-does-not-meet-it-administrator-requirements).
+5. Find and install managed apps for their devices:
+    - [iOS/iPad apps](/mem/intune/user-help/use-managed-apps-on-your-device-ios)
+    - [Android apps](/mem/intune/user-help/use-managed-apps-on-your-device-android)
+    - [Windows apps](/mem/intune/user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)
+
+
+----------------
+
+
+The Company Portal apps, Company Portal website, and Intune app on Android are where users access company data and can do common tasks. Common task may include enrolling devices, installing apps, and locating information (such as for assistance from your IT department). Additionally, these apps allow users to securely access company resources. The end-user experience provides several different pages, such as Home, Apps, App details, Devices, and Device details. In addition, end-users can quickly find apps within the Company Portal.
 
 You can customize the Company Portal end-user experience, which will help provide a familiar and helpful experience for your end users. The Company Portal supports customizing the look of the app with details specific to your organization, such as the following details:
-- Add branding information, including organization name, colo, logo, and more.
+- Add branding information, including organization name, logo, and more.
 - Provide support information for your organization
 - Configure the Company Portal experience for enrollment, privacy, notifications, device categories, app sources, and self-service actions.
 
-In addition, end-users can perform self-service device actions from the Company Portal, such as the following device actions:
+In addition, end-users can perform self-service device actions from the Company Portal, including the following device actions:
 - Retire
 - Wipe
 - Rename
