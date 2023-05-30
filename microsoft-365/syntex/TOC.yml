@@ -147,6 +147,9 @@
     - name: Annotations
       href: annotations.md
 
+    - name: Image tagging
+      href: image-tagging.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
