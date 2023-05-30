@@ -140,7 +140,7 @@ On the **Campaigns** page, the **Campaign origin** tab below the chart shows the
 
 At the top of the **Campaign** page, there are several filter settings to help you find and isolate specific campaigns. The filters you select affect the chart and the details table.
 
-:::image type="content" source="../../media/campaign-filters-on-the-campaigns-page.png" alt-text="The Campaign filters" lightbox="../../media/campaign-filters-on-the-campaigns-page.png":::
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Campaign filters on the Campaigns page." lightbox="../../media/campaign-filters-and-settings.png":::
 
 You can filter the results by the start date/time and end date/time. Data is available for the last 30 days.
 
