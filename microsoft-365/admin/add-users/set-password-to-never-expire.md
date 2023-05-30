@@ -47,7 +47,7 @@ This guide applies to other providers, such as Intune and Microsoft 365, which a
 
 ## How to check the expiration policy for a password
 
-Use the `Connect-MgGraph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
+Use the `Connect-MgGraph` command to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
