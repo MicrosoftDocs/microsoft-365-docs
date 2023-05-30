@@ -67,7 +67,7 @@ After you go to **Explorer**, by default, you'll arrive on the **All email** pag
 
 Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters such as Sender, Recipient, and Subject,  or select an appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
 
-:::image type="content" source="../../media/sender-drop-down-new.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down-new.png":::
+:::image type="content" source="../../media/sender-drop-down-new.png" alt-text="Screenshot of the Sender button in Threat Explorer." lightbox="../../media/sender-drop-down-new.png":::
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
