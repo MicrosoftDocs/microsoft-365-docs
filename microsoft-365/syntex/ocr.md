@@ -42,7 +42,7 @@ You can set up the OCR service by using either of these methods:
 - [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center) - Set up OCR settings in the same admin area that you used to set up billing.
 - [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal) - The compliance admin for your organization configures the OCR settings for your tenant.
 
-### Set up in the Microsoft 365 admin center
+### Microsoft 365 admin center
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -52,9 +52,9 @@ You can set up the OCR service by using either of these methods:
 
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
-### Set up in the Microsoft Purview compliance portal
+### Microsoft Purview compliance portal
 
-You must be a compliance admin to configure the OCR settings in the Microsoft Purview compliance portal.  tofor your organization configures the OCR settings for your tenant.(https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings)
+You must be a compliance admin to configure the OCR settings in the Microsoft Purview compliance portal. Follow these [steps to configure the OCR settings for your tenant](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings).
 
 The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
