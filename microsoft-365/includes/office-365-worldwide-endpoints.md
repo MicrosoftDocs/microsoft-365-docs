@@ -45,6 +45,13 @@ ID | Category | ER | Addresses | Ports
 127 | Default<BR>Required | No | `*.skype.com` | **TCP:** 443, 80
 167 | Default<BR>Required | No | `*.ecdn.microsoft.com` | **TCP:** 443
 180 | Default<BR>Required | No | `compass-ssl.microsoft.com` | **TCP:** 443
+  
+Notes for this table:
+
+For  Cross-Cloud Join to properly work, you must whitelist the endpoints for the cloud of the target meeting
+  
+  [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
+  [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
 
 ## Microsoft 365 Common and Office Online
 
