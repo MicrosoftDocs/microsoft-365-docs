@@ -423,8 +423,6 @@ You can create up to five customized options that appear when users interact wit
 
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn off this feature if you want this activity to be audited only when onboarded devices are included in an active policy.
 
-File activity is always audited for onboarded devices, regardless of whether they're included in an active policy.
-
 ## Printer groups
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions.
