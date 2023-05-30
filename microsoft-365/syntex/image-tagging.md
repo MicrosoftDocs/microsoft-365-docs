@@ -25,7 +25,8 @@ Microsoft Syntex makes it easier to find and manage images in SharePoint documen
 The image tagging feature makes it even easier to tag images without any training, thereby reducing the need for manual tagging or custom AI model building. This means you can quickly find images in your libraries and set up processes based on the tags for the images.
 
 > [!NOTE]
-> Syntex image tagger is available on a [pay-as-you-go basis](syntex-pay-as-you-go-services.md) and is not included in the Syntex seat license.
+> Before you can use image tagging in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
+
 
 ## To enable image tagging in a library
 
