@@ -102,7 +102,7 @@ All our updates contain
 - Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
 - Removed Image File Execution Options (IFEO) debugger value during installation which can be used to prevent service starts   
 - Fixed memory leaked in ASR logic  
-- Improved validation guard-rail for MSRT release  
+- Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
 ### Known Issues  
 
