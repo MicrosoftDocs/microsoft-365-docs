@@ -89,7 +89,7 @@ All our updates contain
    
 ### What's new  
 
-- New version format for Platform and Engine (see [April-2023 update](#april-2023-platform-41823048--engine-11203003))
+- New version format for Platform and Engine (see the [April-2023 update](#whats-new))
 - Improved processing of SmartLockerMode  
 - Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
 - Improved installation experience for Windows Server 2012 R2 and Windows Server 2016  
