@@ -37,10 +37,9 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ## Set up OCR
 
-After you have configured [Syntex billing](syntex-azure-billing.md), you can set up the OCR service by using either of these methods:
+You can set up the OCR service by using either of these methods:
 
-- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center) - You can set up OCR in the same admin area that you used to set up billing.
-
+- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center) - Set up OCR settings in the same admin area that you used to set up billing.
 - [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal) - The compliance admin for your organization configures the OCR settings for your tenant.
 
 ### Set up in the Microsoft 365 admin center
