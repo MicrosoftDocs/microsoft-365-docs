@@ -52,7 +52,7 @@ A TPD is an XML file that contains information about your organization's rights 
 > [!IMPORTANT]
 > Previously, you could choose to import TPDs from the Active Directory Rights Management service (AD RMS) into your organization. However, doing so will prevent you from using Microsoft Purview Message Encryption and is not recommended. If your organization is currently configured this way, Microsoft recommends that you create a plan to migrate from your on-premises Active Directory RMS to cloud-based Azure Information Protection. For more information, see [Migrating from AD RMS to Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). You will not be able to use Microsoft Purview Message Encryption until you have completed the migration to Azure Information Protection.
 
-**To import TPDs from Azure RMS**:
+**To import TPDs from Azure RMS (Deprecated)**:
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

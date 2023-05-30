@@ -23,7 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 05/09/2023
+ms.date: 05/30/2023
 ---
 
 # Investigate alerts in Microsoft 365 Defender
@@ -188,10 +188,7 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Screenshot of an example of alert recommendations":::
 
-## Public preview: Tune an alert
-
-> [!IMPORTANT]
-> Some information relates to pre-release feature that might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+## Tune an alert
 
 As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. An analyst's time is valuable, wanting to focus only on high severity and high priority alerts. Meanwhile, analysts are also required to triage and resolve lower priority alerts, which tends to be a manual process.
 
@@ -227,7 +224,7 @@ There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert 
 
    IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
 
-     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-ioc.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-ioc.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
 
    To set multiple rule conditions, use **AND**, **OR**, and grouping options to build relationship between these multiple 'evidence types' that cause the alert.
 
@@ -251,7 +248,7 @@ There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert 
    > [!NOTE]
    > The **alert title (Name)** is based on the **alert type (IoaDefinitionId)**, which decides the alert title. Two alerts that have the same alert type can change to a different alert title.
 
-     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action2.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
 
 To tune an alert from the **Alerts** page:
 
@@ -259,7 +256,7 @@ To tune an alert from the **Alerts** page:
 
     You can tune an alert through the **Tune alert** pane that automatically opens on the right side of the alert details page.
 
-   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane.png" lightbox="../../media/investigate-alerts/alert-tuning-tune-pane.png" alt-text="Screenshot of Tune an alert pane within an Alert page.":::
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane2.png" lightbox="../../media/investigate-alerts/alert-tuning-tune-pane2.png" alt-text="Screenshot of Tune an alert pane within an Alert page.":::
 
 2. Select the conditions where the alert applies in the **Alert types** section. Select **Only this alert type** to apply the rule on the selected alert.
 

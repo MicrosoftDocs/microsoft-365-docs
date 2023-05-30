@@ -4,8 +4,10 @@
       href: index.md
     - name: What's new
       href: m365bp-mdb-whats-new.md
-    - name: Productivity and security 
+    - name: Why choose Microsoft 365 Business Premium? 
       href: why-choose-microsoft-365-business-premium.md
+    - name: Top 10 ways to secure your business data
+      href: secure-your-business-data.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
@@ -16,13 +18,9 @@
     items: 
       - name: Overview
         href: m365bp-setup-overview.md
-      - name: Get Microsoft 365 Business Premium
-        href: get-microsoft-365-business-premium.md
-      - name: Set up Microsoft 365 Business Premium
-        href: m365bp-setup.md
-      - name: Get Microsoft 365 for Campaigns
-        href: get-microsoft-365-campaigns.md
-      - name: Set up Microsoft 365 Business for Campaigns
+      - name: Microsoft 365 Business Premium
+        href: m365-business-premium-setup.md
+      - name: Microsoft 365 for Campaigns
         href: m365-campaigns-setup.md
   - name: Boost your security protection
     items: 
@@ -50,7 +48,7 @@
       - name: Install Microsoft 365 Apps on devices
         href: m365bp-users-install-m365-apps.md
       - name: Protect unmanaged devices
-        href: m365bp-protect-pcs-macs.md
+        href: m365bp-users-protect-unmanaged-devices.md
   - name: Use email securely
     items: 
       - name: Overview
@@ -109,7 +107,7 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
-    - name: Administration guide
+    - name: Tenant administration guide
       href: m365bp-admin-guide.md
     - name: Security administration guide
       href: m365bp-security-admin-guide.md
@@ -117,8 +115,6 @@
       href: m365bp-security-operations-guide.md
 - name: Reference
   items:
-    - name: Top 10 ways to secure your business data
-      href: secure-your-business-data.md
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
