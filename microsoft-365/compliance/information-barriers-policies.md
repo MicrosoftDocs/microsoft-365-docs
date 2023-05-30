@@ -113,21 +113,21 @@ In addition to the required subscriptions and permissions, make sure that the fo
     - **For organizations in *Legacy* mode**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
     - **For organizations in *SingleSegment* or *MultiSegment* mode**: Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs won't have any impact to the existing ABPs when enabling information barriers.
 
-- **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, but you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
+- **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, but you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
-  - [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)
+  - [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation)
 
 - **Admin consent for IB in Microsoft Teams**: When your IB policies are in place, they can remove non-IB compliance users from Groups (for example, Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable IB policies to work as expected in Microsoft Teams.
 
-   1. Prerequisite: [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+   1. Prerequisite: [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
 
    2. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
+      Connect-MgGraph -Tenant "<yourtenantdomain.com>"  //for example: Connect-MgGraph -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
+      $sp=Get-MgServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-MgServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 

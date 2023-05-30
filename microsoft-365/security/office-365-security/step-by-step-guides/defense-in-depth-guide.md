@@ -69,7 +69,7 @@ The information below will detail how to get the most out of your investment, br
 
 ### Protection features
 
-- Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
+- Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL=-1) you'll need to address this before turning on other protection features.
 
 **Read more here:** [Anti-phishing policies](../anti-phishing-policies-about.md)
 
