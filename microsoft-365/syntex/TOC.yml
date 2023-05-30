@@ -125,6 +125,8 @@
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
           href: content-assembly-map-fields.md
+        - name: Create conditional sections in templates
+          href: content-assembly-conditional-sections.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
         - name: Create a document from a modern template 
