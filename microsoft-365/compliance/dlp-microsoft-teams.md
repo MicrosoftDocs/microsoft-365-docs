@@ -140,7 +140,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 ## Define a new DLP policy for Microsoft Teams
 
-For information about how to create and implement a new DLP policy see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
+For information about how to create and implement a new DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 ## Prevent external access to sensitive documents
 
