@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 05/26/2023
+ms.date: 05/30/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -79,6 +79,34 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### May-2023 (Platform: 4.18.23050.3| Engine:  1.1.23050.2)
+
+- Security intelligence update version:  **1.387.2997.n**    
+- Released: **May 30, 2023**    
+- Platform: **4.18.23050.3**    
+- Engine: ** 1.1.23050.2**    
+- Support phase: **Security and Critical Updates**  
+   
+### What's new  
+
+- Improved processing of SmartLockerMode  
+- Fixed input parameters for DefinitionUpdateChannel cmdlet in Set-MpPreference  
+- Improved installation experience for Defender Server 2012 R2 and Server 2016  
+- Added ability to disable Defender task maintenance tasks programmatically  
+- Fixed WDFilter 0x50 bug check  
+- Fixed print enforcement issue for device control  
+- Fixed scan randomization issue when setting Intune policy  
+- Fixed sense offboarding on Server 2016 when Tamper Protection enabled  
+- Fixed inconsistent results of caching files with the internal Defender file cache  
+- Augmented ASR telemetry with more data related to the ASR detection  
+- Removed IFEO debugger value during installation which can be used to prevent service starts   
+- Fixed memory leaked in ASR logic  
+- Improved validation guard-rail for MSRT release  
+  
+### Known Issues  
+
+- None
+
 ### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
 
 - Security intelligence update version: **1.387.2997.0**
@@ -130,37 +158,6 @@ All our updates contain
 #### Known issues
 
 - None
-
-### February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
-
-- Security intelligence update version: **1.385.68.0**
-- Release date: **March 27, 2023**
-- Platform: **4.18.2302.7**
-- Engine: **1.1.20100.6**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
-- Fixed threat DefaultAction outputs in Get-MpPreference 
-- Improved Defender performance during file copy operations for .NET applications 
-- Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature 
-- Added opt-in feature to allow users seeing exclusions 
-- Fixed [ASR](overview-attack-surface-reduction.md) warn policy 
-- Increased maximum size for quarantine archive file to 4 GB 
-- Improvements to threat remediation logic 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) hardening for temporary exclusions 
-- Fixed time zone calculation in [Defender PowerShell](/powershell/module/defender) module 
-- Fixed merging logic for exclusions in Defender PowerShell module 
-- Improvements in the [contextual exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) syntax
-- Improved scheduled scan robustness
-- Improved serviceability for internal database files
-- Enhanced certificate indicators determination logic
-- Enhanced memory usage
-
-#### Known Issues
-
-- None  
 
 ### Previous version updates: Technical upgrade support only
 
