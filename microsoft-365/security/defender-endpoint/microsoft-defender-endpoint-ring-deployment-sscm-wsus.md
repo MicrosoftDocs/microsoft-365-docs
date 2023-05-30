@@ -85,7 +85,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    
    These settings are shown in the following immage:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the "Software Updates" page." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the Software Updates page." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
    
    > [!TIP]
    > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
