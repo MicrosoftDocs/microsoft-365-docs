@@ -51,7 +51,7 @@ If you don't have an **Image Tags** column in your library, use these steps to e
 
 1. From the document library, select **Automate** > **Enable image tagger**.
 
-   ![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-automate-menu.png) 
+   ![Screenshot showing the Automate menu in a document library.](../media/content-understanding/image-tagger-automate-menu.png) 
 
 2. Enhanced image tagging is then activated. Images uploaded are tagged with a set of descriptive keywords. The keywords are available in the **Image Tags** column that is added to the library view.
 
