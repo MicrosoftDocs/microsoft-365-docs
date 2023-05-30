@@ -28,12 +28,10 @@ ID | Category | ER | Addresses | Ports
 21 | Default<BR>Required | No | `msteamsstatics.blob.core.usgovcloudapi.net, statics.teams.microsoft.com, teamsapuiwebcontent.blob.core.usgovcloudapi.net` | **TCP:** 443
 31 | Allow<BR>Required | Yes | `*.gov.skypeforbusiness.us, *.gov.teams.microsoft.us, gov.teams.microsoft.us`<BR>`52.127.88.0/21, 104.212.44.0/22, 195.134.228.0/22` | **TCP:**  443, 80
   
-Notes for this table:
-
-For  Cross-Cloud Join to properly work, you must whitelist the endpoints for the cloud of the target meeting
-  
-  - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-  - [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
+> [!NOTE]
+> For  Cross-Cloud Anonymous Join to work properly, you must add these endpoints for the cloud of the target meeting to the safe senders list:
+> - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+> - [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
 
 
 ## Microsoft 365 Common and Office Online
