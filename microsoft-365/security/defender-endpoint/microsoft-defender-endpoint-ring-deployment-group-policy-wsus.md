@@ -55,7 +55,7 @@ The following resources provide information for using and managing Windows Serve
 
 ## Setting up the pilot environment
 
-This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Service (WSUS).
+This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Services (WSUS).
 
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
@@ -112,11 +112,11 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    - If you don't have **Microsoft Report Viewer 2012 Redistributable** installed, the following error message appears:
      
-     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Restributable isn't installed." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png":::
+     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Redistributable isn't installed." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png":::
 
      Follow the link in the error message to install the Microsoft Report Viewer 2012 Redistributable before proceeding to the next numbered step of this procedure.
 
-    - If **Microsoft Report Viewer 2012 Redistributable** installed, **Update Report for YR2k19** opens, presenting information related to the KB you previously selected.  This is shown in the following image. 
+    - If **Microsoft Report Viewer 2012 Redistributable** installed, **Update Report for YR2k19** opens, presenting a report with information related to the KB you previously selected.  An example report is shown in the following image. 
 
      :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
 

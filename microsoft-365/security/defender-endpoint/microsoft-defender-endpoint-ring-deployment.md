@@ -85,4 +85,4 @@ Customers that prioritize availability over security, should take a crawl, walk,
 
 - [Ring deployment using Intune with direct internet access to Microsoft Update](microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md)
 - [Ring deployment using System Center Configuration Manager and Windows Server Update Services](microsoft-defender-endpoint-ring-deployment-sscm-wsus.md)
-- [Ring deployment using Group Policy and Windows Server Update Service](microsoft-defender-endpoint-ring-deployment-group-policy-wsus.md)
+- [Ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-endpoint-ring-deployment-group-policy-wsus.md)

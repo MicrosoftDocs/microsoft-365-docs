@@ -83,7 +83,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Property filters** | Select **Article ID** and **Date Released or Revised** |
    | **Search Criteria** | Enter the following <br> **Article ID** = **2267602**  <br> **Date Released or Revised** = **Last 1 month** <br> **Product** = **Windows Defender** <br> **Superseded** = **No** <br> **Update Classification** = **"Critical Updates" OR "Definition Updates"** |
    
-   These settings are shown in the following immage:
+   These settings are shown in the following image:
    
    :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the Software Updates page." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
    
@@ -175,7 +175,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | In: | Change: |
    |:---|:---|
    | **Property filters** | Select **Product** and **Update Classification** |
-   | **Search Criteria** | Enter the following: <br> **Article ID** = _2267602_  <br> **Date Released or Revised** = _Last 1 month_ <br> **Product** = _Windows Defender_ <br> **Superseded** = _No_ <br> **Update Classification** = _Critical Updates_ OR _Definition Updates_ |
+   | **Search Criteria** | Enter the following product and update classifications: <br> **Article ID** = _2267602_  <br> **Date Released or Revised** = _Last 1 month_ <br> **Product** = _Windows Defender_ <br> **Superseded** = _No_ <br> **Update Classification** = _Critical Updates_ OR _Definition Updates_ |
      
    > [!TIP]
    > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
@@ -233,7 +233,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
 1. Navigate to **Software Library**
 1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on **MDE-MDAV_Security_Intelligence_Update_Production**, and then click **Disable**. This setting is shown in the following figure:
 
-   :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules in the event of erros or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules if you encounter errors or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
 
 ## See also 
 
