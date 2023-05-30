@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 05/30/2023
+ms.date: 05/31/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -37,12 +37,14 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ## Set up OCR
 
-You can set up the OCR service by using either of these methods:
+You can configure the OCR service by using either or both of these methods:
 
-- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center) - Set up OCR settings in the same admin area that you used to set up billing.
-- [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal) - The compliance admin for your organization configures the OCR settings for your tenant.
+- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center)
+- [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal)
 
 ### Microsoft 365 admin center
+
+You can set up the OCR service in the same admin area that you used to set up billing.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -54,9 +56,11 @@ You can set up the OCR service by using either of these methods:
 
 ### Microsoft Purview compliance portal
 
-You must be a compliance admin to configure the OCR settings in the Microsoft Purview compliance portal. Follow these [steps to configure the OCR settings for your tenant](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings).
+You must have a compliance admin configure the OCR settings in the Microsoft Purview compliance portal. Follow these [steps to configure the OCR settings for your tenant](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings).
 
-The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
+The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two setup locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
+
+To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
 ## Requirements and limitations
 
