@@ -55,7 +55,7 @@ The standards or regulations listed below are supported across Defender for Clou
 - NIST SP 800-53 Rev.4 (Azure)
 - NIST SP 800 53 Rev.5 (Azure, AWS, GCP)
 - PCI DSS 3.2.1 (AWS, GCP)
-- PSC DSS v4 (Azure)
+- PCI DSS 4 (Azure)
 - SOC 2 Type 2 (Azure)
 - SWIFT CSP-CDCF v2022 (Azure)
 
