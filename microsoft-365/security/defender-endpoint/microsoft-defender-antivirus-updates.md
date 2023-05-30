@@ -92,7 +92,7 @@ All our updates contain
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
 - Improved processing of SmartLockerMode  
 - Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
-- Improved installation experience for Windows Server 2012 R2 and Windows Server 2016  
+- Improved installation experience for [Windows Server 2012 R2 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)  
 - Added ability to disable Defender task maintenance tasks programmatically  
 - Fixed WDFilter 0x50 bug check  
 - Fixed print enforcement issue for device control  
