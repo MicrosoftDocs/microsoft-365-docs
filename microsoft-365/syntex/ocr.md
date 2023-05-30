@@ -21,9 +21,9 @@ description: Learn about optical character recognition in Microsoft Syntex.
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for [compliance features like data loss prevention (DLP)](#compliance-portal).
+The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention (DLP)](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention).
 
-For example, you have an image file in your document library. With the OCR service enabled, Syntex automatically scans the image, extracts the relevant text, and makes the text from the image available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+For example, you enable the OCR service and then add image files to your document library. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
 
 ## Prerequisites
 
@@ -33,9 +33,17 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and set up the OCR service in Syntex.
+You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex. 
 
 ## Set up OCR
+
+After you have configured [Syntex billing](syntex-azure-billing.md), you can set up the OCR service by using either of these methods:
+
+- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center) - You can set up OCR in the same admin area that you used to set up billing.
+
+- [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal) - The compliance admin for your organization configures the OCR settings for your tenant.
+
+### Set up in the Microsoft 365 admin center
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -45,13 +53,11 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
-*[Verify setup info still applies.]*
+### Set up in the Microsoft Purview compliance portal
 
-### Compliance portal
+You must be a compliance admin to configure the OCR settings in the Microsoft Purview compliance portal.  tofor your organization configures the OCR settings for your tenant.(https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings)
 
-The compliance admin can also specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
-
-In the compliance portal, OCR can be configured for Exchange embedded images and attachments, Teams embedded images, SharePoint Online and OneDrive for Business image-only PDF and TIFF images, Exchange Online PDF and TIFF images, and Windows endpoint image-only PDF and TIFF images. If the compliance admin has configured OCR, you'll be able to see a message in the Syntex set up area indicating that something has been configured in compliance.
+The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?#learn-about-data-loss-prevention). If there are different sites specified in the two set up locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing. To learn more about the compliance portal configuration of OCR, see [Learn about optical character recognition in Microsoft Purview](https://learn.microsoft.com/en-us/microsoft-365/compliance/ocr-learn-about?view=o365-worldwide).
 
 ## Requirements and limitations
 
