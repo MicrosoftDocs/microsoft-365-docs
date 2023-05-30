@@ -47,6 +47,12 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 :::image type="content" source="images/mde-deploy-ring-group-policy-wsus.png" alt-text="Shows an example deployment schedule for Group Policy with WSUS deployments." lightbox="images/mde-deploy-ring-group-policy-wsus.png":::
 
+### Resources
+
+The following resources provide information for using and managing Windows Server Update Services (WSUS).
+- [Deploy Windows Defender definition updates using WSUS - Configuration Manager](/troubleshoot/mem/configmgr/update-management/deploy-definition-updates-using-wsus)
+- [Windows Server Update Services Help](/previous-versions/orphan-topics/ws.11/dn343567(v=ws.11)?redirectedfrom=MSDN)
+
 ## Setting up the pilot environment
 
 This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Service (WSUS).
@@ -54,13 +60,7 @@ This section provides information about setting up the pilot (UAT/Test/QA) envir
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
-
-### Resources
-
-The followng resources provide information for using and managing Windows Server Update Services (WSUS).
-- [Deploy Windows Defender definition updates using WSUS - Configuration Manager](/troubleshoot/mem/configmgr/update-management/deploy-definition-updates-using-wsus)
-- [Windows Server Update Services Help](/previous-versions/orphan-topics/ws.11/dn343567(v=ws.11)?redirectedfrom=MSDN)
+> If you have a Citrix enviroment, include at least one Citrix VM (non-persistent) and/or (persistent)
 
 1. Launch the **Windows Server Update Services Configuration Wizard**.
 
@@ -70,21 +70,23 @@ The followng resources provide information for using and managing Windows Server
 
 1. On the **Choose Upstream Server** page, select **Synchronize from Microsoft Update** and then click **Next**.
 
-1. On teh **Specify Proxy Server** page, select **Next**.
+1. On the **Specify Proxy Server** page, select **Next**.
 
-1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to down load, and then click **Next**
+1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to download, and then click **Next**
 
-1. On the **Choose Products** page, select **Forefront Client Security** and **System Center Endpoint Protection**, scroll down to **Windows** and select **Microsoft Defender Antivirus**. This is shown in the following figure.
+1. On the **Choose Products** page, scroll down to **Forefront**, select **Forefront Client Security** and **System Center Endpoint Protection** This is shown in the following figure.
    
-   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-choose-products-av.md" alt-text="Shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/mde-deploy-ring-group-policy-wsus-choose-products-av.md":::
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-choose-products-av.png" alt-text="Shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/mde-deploy-ring-group-policy-wsus-choose-products-av.png":::
+
+   While still on the **Choose Products** page, scroll down to **Windows** and select **Microsoft Defender Antivirus**.
 
 1.  Click **Next**. On the **Choose Classification** page, select: **critical Updates**, **Definition Updates**, and **Security Updates**, and then click **Next**.
 
-1. On the **Configure Sunc Schedule** page, do the following:
+1. On the **Configure Sync Schedule** page, do the following:
 
    | In: | Change: |
    |:---|:---|
-   | **Synchronizae automatically** | select (enable) |
+   | **Synchronize automatically** | select (enable) |
    | **First synchronization** | Set time to _5:00:00 AM_ |
    | **Synchronizations per day** | Set to _1_ |
 
@@ -92,29 +94,29 @@ The followng resources provide information for using and managing Windows Server
 
 1. On the **What's next** page, click **Finish**.
 
-The Windows Server Update Servises Configuration Wizard is complete. 
+The Windows Server Update Services Configuration Wizard is complete. 
 
-1. Open the Update Services snap-in console, and naveigate to **YR2K19**. This is shown in the following figure.
+1. Open the **Update Services** snap-in console, and navigate to **YR2K19**. The console is shown in the following figure.
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-update-service-synch.png" alt-text="Shows a screen capture of the Update Services snap-in console with synchronization in progress." lightbox="images/mde-deploy-ring-group-policy-wsus-update-service-synch.png":::
 
-1. When synchronization is complete, you will see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **Your WSUS server currently shows that no computers are registered to receive updates." This warning is normal at this point of the deployment configuration process. 
+1. When synchronization is complete, you can see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **Your WSUS server currently shows that no computers are registered to receive updates." This warning is normal at this point of the deployment configuration process. 
 
-1. In the **Actions** column, click **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** will list updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intellegence_. This is shown in the next image.
+1. In the **Actions** column, click **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** lists updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intelligence_. Example results are shown in the next image.
 
    See [ Viewing and Managing Updates](/windows-server/administration/windows-server-update-services/manage/viewing-and-managing-updates.md).
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png" alt-text="Shows a screen capture of the Update Services snap-in console with synchronization in progress." lightbox="images/mde-deploy-ring-group-policy-wsus-update-service-search-defender.png":::
 
-1. In the **Search** dialog, under **Update Title**, double-click one of the listed KB items. One of two things will happen:
+1. In the **Search** dialog, under **Update Title**, double-click one of the listed KB items. One of two things happens:
 
-   - If you do not have **Microsoft Report Viewer 2012 Restributable** installed you will get the following error message:
+   - If you don't have **Microsoft Report Viewer 2012 Redistributable** installed, the following error message appears:
      
-     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Restributable is not installed." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png":::
+     :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Restributable isn't installed." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-error.png":::
 
-     Follow the link in the error message to install the Microsof Report Viewer 2012 Redistributable before proceeding to the next numbered step of this procedure.
+     Follow the link in the error message to install the Microsoft Report Viewer 2012 Redistributable before proceeding to the next numbered step of this procedure.
 
-    - If **Microsoft Report Viewer 2012 Restributable** installed, **Update Report for YR2k19** opens, presenting information related to the KB you selected above.  This is shown in the following image. 
+    - If **Microsoft Report Viewer 2012 Redistributable** installed, **Update Report for YR2k19** opens, presenting information related to the KB you previously selected.  This is shown in the following image. 
 
      :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/mde-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
 
