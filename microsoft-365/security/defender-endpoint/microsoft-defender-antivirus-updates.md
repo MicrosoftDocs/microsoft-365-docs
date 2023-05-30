@@ -100,7 +100,7 @@ All our updates contain
 - Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
 - Fixed inconsistent results of caching files with the internal Defender file cache  
 - Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
-- Removed Image File Execution Options (IFEO) debugger value during installation which can be used to prevent service starts   
+- Removed Image File Execution Options (IFEO) debugger value during installation which can be used to prevent service starts
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
