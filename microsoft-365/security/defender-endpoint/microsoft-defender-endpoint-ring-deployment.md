@@ -21,6 +21,8 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
+# Deploy Microsoft Defender for Endpoint in rings for a gradual rollout process
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -49,11 +51,9 @@ Watch the following video to learn more about Defender for Endpoint:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-# Deploy Microsoft Defender for Endpoint in rings for a gradual rollout process
-
 Deploying Microsoft Defender for Endpoint can be done using a ring-based deployment approach and updating using the gradual rollout process.
 
-## Overview
+## Ring deployment overview
 
 It's important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
 Capabilities are provided through several components: 

@@ -21,6 +21,8 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
+# Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -42,8 +44,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
-
-# Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
 
 :::image type="content" source="images/mde-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/mde-deploy-ring-sccm-wsus-schedule.png":::
 
