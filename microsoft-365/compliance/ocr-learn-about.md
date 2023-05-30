@@ -55,6 +55,9 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
 
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
+
+
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
 #### Estimate your bill ####
@@ -62,6 +65,10 @@ To view your bill, follow the instructions described in [Monitor your Microsoft 
 When you first start using OCR, limit usage to just a few people and applicable workloads. After a short while, you can view your bill in Azure and see the usage statistics & charges for each day. From there, you can extrapolate the costs for your full set of users. In addition, you can use the "workload" tag in Azure cost management to see the breakdown of usage per workload.
 
 ### Phase 3: Configure your OCR settings
+
+1. In the Microsoft Purview compliance portal, go to **Settings**.
+2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
+3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the table below.
 
 #### Permissions ####
 
@@ -72,16 +79,12 @@ The account you use to create and deploy policies must be a member of one of the
 - Information Protection
 - Information Protection Admin
 
-1. In the Microsoft Purview compliance portal, go to **Settings**.
-2. Select **Optical character recognition (OCR) (preview)** to enter your OCR configuration settings.
-3. Select the locations where you wish to scan images. Then, for each location and solution, define the scope (users/groups/sites) for the OCR. Supported locations and solutions are listed in the following table.
-
 > [!NOTE]
 > - In general, OCR settings take effect about an hour after being turned on.
 >
 > - For information on OCR functionality in Microsoft Purview Communication Compliance, see **[Create and manage communication compliance policies](communication-compliance-policies.md#optical-character-recognition-ocr)**.
 
-
+#### Supported Locations and Solutions ####
 | Location | Supported Solutions |
 |--------------|----------|
 | Exchange | Data loss prevention <sup>1</sup><br> <br> Information protection: [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)<sup>1</sup> <br> <br> Records management: [Auto-apply retention label policies](apply-retention-labels-automatically.md#automatically-apply-a-retention-label-to-retain-or-delete-content)<sup>2</sup> | 
