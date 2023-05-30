@@ -24,6 +24,8 @@ search.appverid: met150
 # Common mistakes to avoid when defining exclusions
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Endpoint Plan 1
 - Microsoft Defender Antivirus 

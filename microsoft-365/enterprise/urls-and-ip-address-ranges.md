@@ -60,6 +60,9 @@ Data columns shown are:
 
 - **Ports**: Lists the TCP or UDP ports that are combined with listed IP addresses to form the network endpoint. You may notice some duplication in IP address ranges where there are different ports listed.
 
+> [!NOTE]
+> Microsoft has begun a long-term transition to providing services from the **cloud.microsoft** namespace to simplify the endpoints managed by our customers. If you are following existing guidance for allowing access to required endpoints as listed below, there’s no further action required from you.
+
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 > [!NOTE]
