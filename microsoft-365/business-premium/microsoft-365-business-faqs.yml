@@ -6,7 +6,8 @@ metadata:
   f1.keywords:
   - NOCSH
   ms.author: deniseb
-  ms.topic: reference
+  manager: deniseb
+  ms.topic: how-to
   ms.service: microsoft-365-security
   ms.collection:
   - tier1
@@ -74,8 +75,8 @@ sections:
           
           See the following articles to learn more:
 
-          - [Set up unmanaged (BYOD) devices](/microsoft-365/business-premium/m365bp-devices-overview)
-          - [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices)
+          - [Set up unmanaged (BYOD) devices](/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices)
+          - [Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-managed-devices)
           
       - question: How does Microsoft 365 Business Premium help protect PCs in my organization from malicious attacks?
         answer: |

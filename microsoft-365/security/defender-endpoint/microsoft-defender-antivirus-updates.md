@@ -4,7 +4,7 @@ description: Manage how Microsoft Defender Antivirus receives protection and pro
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 04/11/2023
+ms.date: 05/26/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -79,6 +79,37 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
+
+- Security intelligence update version: **1.387.2997.0**
+- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
+- Platform: **4.18.2304.8** 
+- Engine: **1.1.20300.3**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format looks like: 
+   - Platform: `4.18.23050.1` 
+   - Engine: `1.1.23050.63000` 
+- Fixed memory leak in behavior monitoring
+- Improved resiliency of signature loading and platform updates
+- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed MSERT to only use release engine version
+- Improved the enforcement of exclusions
+- Added support for enabling real-time protection and signature updates during OOBE
+- Fixed localization for Defender events
+- Deprecated real-time signature delivery setting
+- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
+- Fixed abandoned threats in the Windows Security app
+- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
+
+
+#### Known issues
+
+- None
+
 ### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
 
 - Security intelligence update version: **1.387.695.0**
@@ -126,24 +157,6 @@ All our updates contain
 - Improved serviceability for internal database files
 - Enhanced certificate indicators determination logic
 - Enhanced memory usage
-
-#### Known Issues
-
-- None  
-
-### January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
-
-- Security intelligence update version: **1.383.26.0**
-- Release date: **February 14, 2023**
-- Platform: **4.18.2301.6**
-- Engine: **1.1.20000.2**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
-- Updated Sense token hardening
-- Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
 
 #### Known Issues
 
@@ -204,9 +217,30 @@ For Windows 10 release information, see the [Windows lifecycle fact sheet](https
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, Windows Server 2016, and Windows Server 2012 R2 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
+To avoid a gap in protection, keep your OS installation images up to date with the latest antivirus and antimalware updates. Updates are available for:
+
+- Windows 10 and 11 (Enterprise, Pro, and Home editions)
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2
+- WIM and VHD(x) files 
+
+Updates are released for x86, x64, and ARM64 Windows architecture.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+
+### 20230503.1
+
+- Defender package version: **20230503.1**
+- Security intelligence version: **1.389.44.0**
+- Engine version: **1.1.20300.3**
+- Platform version: **4.18.2304.8**
+
+#### Fixes
+
+- None
+
+#### Additional information
+
+- None
 
 ### 20230330.2
 

@@ -154,6 +154,8 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
 
+##### Manually map instances to teams
+
 :::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
 1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
@@ -167,6 +169,43 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
 
 1. When you've mapped all your teams, select **Next**.
+
+##### Use a CSV file to map instances to teams
+
+1. On the **Mapping** page, choose **CSV upload tool**.
+
+2. Select **Download template** to get the CSV mapping file. The template will include a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
+
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
+
+   And the bottom rows of your template will look like this:
+
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Blank |Blank |Automatically pre-filled |Automatically pre-filled |Default*|
+
+3. Choose a team that you want to map to a UKG Dimensions instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the desired UKG Dimensions instance. A completed row of your template should look like this:
+
+   |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
+   |------|------|------|------|------|
+   |Automatically pre-filled |Automatically pre-filled |Team ID that you moved |Team Name that you moved |Default*|
+
+Repeat this for all your desired mappings.
+
+4. Enter the correct location in the Time Zone column if needed.
+
+>[!NOTE]
+>The wizard supports approximately 460 locations. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
+
+5. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+
+6. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
+
+7. Your new mappings will appear on the **Mappings** page.
+
+8. Choose **Next**.
 
 ### Review and finish
 
