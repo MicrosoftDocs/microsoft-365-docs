@@ -39,8 +39,8 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 You can configure the OCR service by using either or both of these methods:
 
-- [Microsoft 365 admin center](#set-up-in-the-microsoft-365-admin-center)
-- [Microsoft Purview compliance portal](#set-up-in-the-microsoft-purview-compliance-portal)
+- [Microsoft 365 admin center](#microsoft-365-admin-center)
+- [Microsoft Purview compliance portal](#microsoft-purview-compliance-portal)
 
 ### Microsoft 365 admin center
 
