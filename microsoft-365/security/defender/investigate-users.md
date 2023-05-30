@@ -74,7 +74,7 @@ This card includes the calculated investigation priority score breakdown and a t
 
 ### Active directory account control 
 
-In this card, Defender for Identity surfaces security settings that may need your attentions. You can see important flags about the user, such as if the the user can press enter to bypass the password, and if the user has a password that never expires, etc.
+In this card, Defender for Identity surfaces security settings that may need your attentions. You can see important flags about the user, such as if the user can press enter to bypass the password, and if the user has a password that never expires, etc.
 
 For more information, see [User Account Control flags](/windows/win32/adschema/a-useraccountcontrol).
 
