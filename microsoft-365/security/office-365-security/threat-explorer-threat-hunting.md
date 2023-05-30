@@ -85,15 +85,15 @@ Note that these filter conditions are available based on filter types and input 
 
 Use the **Column options** button to get the kind of information on the table that would be most helpful:
 
-:::image type="content" source="../../media/threat-explorer-column-options-new.png" alt-text="The Column options button highlighted" lightbox="../../media/threat-explorer-column-options-new.png":::
+:::image type="content" source="../../media/threat-explorer-column-options-new.png" alt-text="Screenshot of the Column options button highlighted." lightbox="../../media/threat-explorer-column-options-new.png":::
 
-:::image type="content" source="../../media/column-options-new.png" alt-text="The available options in Columns" lightbox="../../media/column-options-new.png":::
+:::image type="content" source="../../media/column-options-new.png" alt-text="Screenshot showing available options in Columns." lightbox="../../media/column-options-new.png":::
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions.
 
-:::image type="content" source="../../media/threat-explorer-email-origin-map-new.png" alt-text="The Email Origins map" lightbox="../../media/threat-explorer-email-origin-map-new.png":::
+:::image type="content" source="../../media/threat-explorer-email-origin-map-new.png" alt-text="Screenshot of the Email Origins map." lightbox="../../media/threat-explorer-email-origin-map-new.png":::
 
-:::image type="content" source="../../media/threat-explorer-campaign-display-new.png" alt-text="The Campaign display options" lightbox="../../media/threat-explorer-campaign-display-new.png":::
+:::image type="content" source="../../media/threat-explorer-campaign-display-new.png" alt-text="Screenshot of the Campaign display options." lightbox="../../media/threat-explorer-campaign-display-new.png":::
 
 ### Email investigation
 
@@ -103,22 +103,22 @@ The email entity page pulls together contents that can be found under **Details*
 
 When you reach this stage, the email entity page will be critical to the final step—*remediation*.
 
-:::image type="content" source="../../media/threat-explorer-email-entity-page-new.png" alt-text="The email entity page" lightbox="../../media/threat-explorer-email-entity-page-new.png":::
+:::image type="content" source="../../media/threat-explorer-email-entity-page-new.png" alt-text="Screenshot of the email entity page." lightbox="../../media/threat-explorer-email-entity-page-new.png":::
 
 > [!TIP]
 > To learn more about the rich email entity page (seen below on the **Analysis** tab), including the results of detonated Attachments, findings for included URLs, and safe Email preview, click [here](mdo-email-entity-page.md).
 
-:::image type="content" source="../../media/threat-explorer-analysis-tab-new.png" alt-text="The Analysis tab of the email entity page" lightbox="../../media/threat-explorer-analysis-tab-new.png":::
+:::image type="content" source="../../media/threat-explorer-analysis-tab-new.png" alt-text="Screenshot of the Analysis tab of the email entity page." lightbox="../../media/threat-explorer-analysis-tab-new.png":::
 
 ### Email remediation
 
 Once a Sec Ops person determines that an email is a threat, the next Explorer or Real-time detection step is dealing with the threat and remediating it. This can be done by returning to Threat Explorer, selecting the checkbox for the problem email, and using the **Actions** button.
 
-:::image type="content" source="../../media/threat-explorer-email-actions-button-new.png" alt-text="The Actions button in the Threat Explorer" lightbox="../../media/threat-explorer-email-actions-button-new.png":::
+:::image type="content" source="../../media/threat-explorer-email-actions-button-new.png" alt-text="Screenshot of the Actions button in the Threat Explorer." lightbox="../../media/threat-explorer-email-actions-button-new.png":::
 
 Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the mail can also be reported as clean.
 
-:::image type="content" source="../../media/threat-explorer-email-actions-drop-down-new.png" alt-text="The Actions drop down" lightbox="../../media/threat-explorer-email-actions-drop-down-new.png":::
+:::image type="content" source="../../media/threat-explorer-email-actions-drop-down-new.png" alt-text="Screenshot of the Actions drop down." lightbox="../../media/threat-explorer-email-actions-drop-down-new.png":::
 
 ## Required licenses and permissions
 
