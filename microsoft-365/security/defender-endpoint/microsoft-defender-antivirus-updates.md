@@ -89,17 +89,18 @@ All our updates contain
    
 ### What's new  
 
+- New version format for Platform and Engine 
 - Improved processing of SmartLockerMode  
-- Fixed input parameters for DefinitionUpdateChannel cmdlet in Set-MpPreference  
-- Improved installation experience for Defender Server 2012 R2 and Server 2016  
+- Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
+- Improved installation experience for Windows Server 2012 R2 and Windows Server 2016  
 - Added ability to disable Defender task maintenance tasks programmatically  
 - Fixed WDFilter 0x50 bug check  
 - Fixed print enforcement issue for device control  
 - Fixed scan randomization issue when setting Intune policy  
-- Fixed sense offboarding on Server 2016 when Tamper Protection enabled  
+- Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
 - Fixed inconsistent results of caching files with the internal Defender file cache  
-- Augmented ASR telemetry with more data related to the ASR detection  
-- Removed IFEO debugger value during installation which can be used to prevent service starts   
+- Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
+- Removed Image File Execution Options (IFEO) debugger value during installation which can be used to prevent service starts   
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for MSRT release  
   
