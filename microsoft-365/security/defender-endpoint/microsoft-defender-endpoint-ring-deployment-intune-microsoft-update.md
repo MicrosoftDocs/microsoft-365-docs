@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-# Ring deployment using Intune and direct internt access for Microsoft Update
+# Ring deployment using Intune and direct internet access for Microsoft Update
 
 :::image type="content" source="images/mde-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/mde-deploy-ring-intune-schedule.png":::
 
@@ -54,7 +54,7 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have:
 
 In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), create or append to your MDAV policy the following setting:
-For example, your pilot policy named _MDAV_Settings_Pilot_. If you have a Citrix enviroment, nclude at least 1 Citrix VM (non-persistent and/or  persistent).
+For example, your pilot policy named _MDAV_Settings_Pilot_. If you have a Citrix environment, include at least one Citrix VM (non-persistent and/or  persistent).
 
 :::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png":::
 
@@ -81,25 +81,25 @@ For example, your production policy named _MDAV_Settings_Production_.
 
 |Feature  | Recommendation | Comments |
 |:--- |:--- |:--- |
-| Engine Updates Channel | Critical – Time delay | It will be delayed by 2 days.|
-| Platform Updates Channel | Critical – Time delay | It will be delayed by 2 days.|
-| Security Intelligence Updates Channel | Current Channel (Broad) * This will provide you with 3 hours of time to find a FP and prevent the production systems from getting an incompatible signature update. (Staged) | This will provide you with 3 hours of time to find a FP and prevent the production systems from getting an incompatible signature update. |
+| Engine Updates Channel | Critical – Time delay | It's delayed by two days.|
+| Platform Updates Channel | Critical – Time delay | It's delayed by two days.|
+| Security Intelligence Updates Channel | Current Channel (Broad) | This configuration provides you with 3 hours of time to find an FP and prevent the production systems from getting an incompatible signature update. |
 
 ### If you encounter problems change the source of the MDAV updates
 
-1. In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), go to **Endpoint Security**, click **Antivirus**, and then find your Intune production policy (for example, MDAV_Settings_Production), and then, in **Configuration settings**, click **Edit**.
+1. In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), go to **Endpoint Security**, select **Antivirus**, and then find your Intune production policy (for example, MDAV_Settings_Production), and then, in **Configuration settings**, select **Edit**.
 
-1. Change the entry to "FileShares". This is shown in the following figure.
+1. Change the entry to **FileShares**. This change is shown in the following figure.
 
    :::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png" alt-text="Shows Intune Microsoft Defender Antivirus production policy fallback setting." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png":::
 
-#### What does this do
+#### What does this change do
 
 It forces MDAV to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn’t exist.
 
 #### How long does it take for the Intune policy to refresh?
 
-If you update a policy, it’s within a few minutes (3-5 minutes) via WNS, as long the WNS URL’s are open.
+If you update a policy, it’s within a few minutes (3-5 minutes) via WNS, as long the WNS URLs' are open.
 
 Reference:   [Intune actions that immediately send a notification to a device](/mem/intune/configuration/device-profile-troubleshoot#intune-actions-that-immediately-send-a-notification-to-a-device)
 

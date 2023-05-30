@@ -55,14 +55,14 @@ Deploying Microsoft Defender for Endpoint can be done using a ring-based deploym
 
 ## Overview
 
-It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
+It's important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
 Capabilities are provided through several components: 
 
 - [Endpoint Detection & Response](overview-endpoint-detection-response.md)
 - [Next-generation protection](microsoft-defender-antivirus-windows.md) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md)
 - [Attack Surface Reduction](overview-attack-surface-reduction.md)
 
-Updates are released monthly using a gradual release process. This process helps to enable early failure detection to catch impact in your unique environment as it occurs and address it quickly before a larger rollout.
+Updates are released monthly using a gradual release process. This process helps to enable early failure detection to identify problematic results in your unique environment as it occurs and address it quickly before a larger rollout.
 
 > [!NOTE]
 > For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
@@ -83,6 +83,6 @@ Customers that prioritize availability over security, should take a crawl, walk,
 
 ## Deployment scenarios
 
-- [Ring deployment using Intune with direct internt access to Microsoft Update](microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md)
-- [Ring deploymen using System Center Configuration Manager and Windows Server Update Services](microsoft-defender-endpoint-ring-deployment-sscm-wsus.md)
+- [Ring deployment using Intune with direct internet access to Microsoft Update](microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md)
+- [Ring deployment using System Center Configuration Manager and Windows Server Update Services](microsoft-defender-endpoint-ring-deployment-sscm-wsus.md)
 - [Ring deployment using Group Policy and Windows Server Update Service](microsoft-defender-endpoint-ring-deployment-group-policy-wsus.md)

@@ -52,29 +52,29 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
 
-On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
+On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
 > If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
-1. In the System Center Configuration Manager > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings :
+1. In **System Center Configuration Manager** > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings:
    
    | In: | Change: |
    |:---|:---|
-   | **Name** | Type a name for your deployment rule. For example, type MDE-MDAV_Security_Intelligence_Update_Pilot |
-   | **Description** | Type a bief description for your pilot |
-   | **Template** | Select **SCEP and Windows Defender Antivirus Updates |
+   | **Name** | Type a name for your deployment rule. For example, type _MDE-MDAV_Security_Intelligence_Update_Pilot_ |
+   | **Description** | Type a brief description for your pilot |
+   | **Template** | Select **SCEP and Windows Defender Antivirus Updates** |
    | **Collection** | Type **Windows_Security_Intelligence_Pilot** |
-   | **Each time the rule runas and finds new updates**. | Select **Create a new Software Update Group** |
-   | **Each time the rule runas and finds new updates** | Select **Enable the deployment after this rule is run** |
+   | **Each time the rule runs and finds new updates**. | Select **Create a new Software Update Group** |
+   | **Each time the rule runs and finds new updates** | Select **Enable the deployment after this rule is run** |
 
 1. Click **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
    
    | In: | Change: |
    |:---|:---|
    | **Type of deployment** | Select **Required** |
-   | **Detail level** | Select "Only error messages** |
-   | **Some software updates include a license agreement** | Select "Automatically deploy all software updates found by this rule, and approve any license agreements". |
+   | **Detail level** | Select **Only error messages** |
+   | **Some software updates include a license agreement** | Select **Automatically deploy all software updates found by this rule, and approve any license agreements**. |
    
 1. Click **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, make the following settings:
    
@@ -85,7 +85,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    
    These settings are shown in the following immage:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the "Software Updates" page." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
    
    > [!TIP]
    > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
@@ -99,11 +99,11 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    
 1. Click **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then click **Customize**.
 
-1. On the **Deployment Schedule** page, under **Configure schedule details for this deployment, do the following:
+1. On the **Deployment Schedule** page, under **Configure schedule details for this deployment**, do the following:
    
    | In: | Change: |
    |:---|:---|
-   | **Schedule evalutation** > **Time based on** | Select **UTC** |
+   | **Schedule evaluation** > **Time based on** | Select **UTC** |
    | **Software available time** | Select **As soon as possible** |
    | **Installation deadline** | Select **As soon as possible** | 
    
@@ -122,45 +122,45 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    
    | In: | Change: |
    |:---|:---|
-   | **Name** | Type a name for your new depoyment package. For example, type _MDE-MDAV Security Intellegence Update_ |
-   | **Descriptioin** | Type a brief description for you new deployment package |
+   | **Name** | Type a name for your new deployment package. For example, type _MDE-MDAV Security Intelligence Update_. |
+   | **Description** | Type a brief description for your new deployment package |
    | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or click **Browse** to navigate to - and select - your package source. |
-   | **Sending piroity:** | Select **High** and select Enable binary differential replication** |
+   | **Sending piroity:** | Select **High** and select **Enable binary differential replication** |
    
-1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution piont groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
+1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution point groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
    
-1. Click **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select Download software updates from the Internet, and then click **Next**.
+1. Click **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then click **Next**.
    
-1. On the **Distribution location** page, under **Specify the update languages for product**, under product, select **WIndows Update**. 
+1. On the **Distribution location** page, under **Specify the update languages for product**, under **product**, select **Windows Update**. 
    
-1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavour for clients on slow site boundries**,  select the following:
+1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
    
    | In: | Change: |
    |:---|:---|
-   | **Name** | In **Deployment options** select **Download software upadates from distribution point and install** |
-   | **Deployment options** | Select **Download and install software updates from the distribution points in site default boundry group** |
-   | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundry group settings, Microsoft update will be the preferred source.** |
+   | **Name** | In **Deployment options** select **Download software updates from distribution point and install** |
+   | **Deployment options** | Select **Download and install software updates from the distribution points in site default boundary group** |
+   | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundary group settings, Microsoft update will be the preferred source.** |
    
-1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settins are shown in the followng figure.
+1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure.
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly-configured Automatic Deployment Rule." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly configured Automatic Deployment Rule." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
 
 1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deploymetn Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deployment Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
 
 ## Setting up the production environment
 
-1. In the System Center Configuration Manager > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings :
+1. In the System Center Configuration Manager > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings:
    
    | In: | Change: |
    |:---|:---|
    | **Name** | Type a name for your deployment rule. For example, type _MDE-MDAV_Security_Intelligence_Update_Production_ |
-   | **Description** | Type a bief description for your pilot |
+   | **Description** | Type a brief description for your pilot |
    | **Template** | Select **SCEP and Windows Defender Antivirus Updates** |
    | **Collection** | Type **Windows_Security_Intelligence_Production** |
-   | **Each time the rule runas and finds new updates**. | Select **Add to an existing Software Update Group** |
-   | **Each time the rule runas and finds new updates** | Select **Enable the deployment after this rule is run** |
+   | **Each time the rule runs and finds new updates**. | Select **Add to an existing Software Update Group** |
+   | **Each time the rule runs and finds new updates** | Select **Enable the deployment after this rule is run** |
 
 1. Click **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
    
@@ -185,7 +185,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    >
    > **Product: “Windows Defender”** -  We are removing “System Center Endpoint Protection”, because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
    >
-   > **Update Classification: “Critical Updates” and “Definition Updates”
+   > **Update Classification**: “Critical Updates” and “Definition Updates”
    
 1. Click **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then click **Customize**.
 
@@ -193,7 +193,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    
    | In: | Change: |
    |:---|:---|
-   | **Schedule evalutation** > **Time based on** | Select **UTC** |
+   | **Schedule evaluation** > **Time based on** | Select **UTC** |
    | **Software available time** | Select **As soon as possible** |
    | **Installation deadline** | Select **As soon as possible** | 
    
@@ -206,32 +206,32 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **Device restart behavior** | Select **Servers** | 
    | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts)** |
    
-1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, click **Browse**, navigate to, and select the deployment pachage and then click **Next**.
+1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, click **Browse**, navigate to, and select the deployment package and then click **Next**.
    
 1. On the top-level **Deployment Package** page, under **Select deployment package for this automatic deployment rule**, select **Select a deployment package**.
    
-1. On the **Down load Location page**, under **Specify download location for this Automatic Deployment Rule**, select **Download software updaes fromt the Interntet**, and then click **Next**.
+1. On the **Download Location page**, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then click **Next**.
    
 1. On the **Language Selection** page, under **Specify the update languages for product**, under **Product**, specify the necessary Product and Update languages.
    
-1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavour for clients on slow site boundries**,  select the following:
+1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
    
    | In: | Change: |
    |:---|:---|
-   | **Deployment options** | Select **Download and install software updates from the distribution pointsand install** |
-   | **Deployment options** | Select **Download and install software updates from the distribution pointsin site default boundry group** |
-   | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundry group settings, Microsoft update will be the preferred source.** |
+   | **Deployment options** | Select **Download and install software updates from the distribution points and install** |
+   | **Deployment options** | Select **Download and install software updates from the distribution points site default boundary group** |
+   | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundary group settings, Microsoft update will be the preferred source.** |
    
-1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the followng figure:
+1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png" alt-text="Shows as screen capture of the configuration details for the newly-configured Automatic Deployment Rule for a production environment." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png":::
+   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png" alt-text="Shows as screen capture of the configuration details for the newly configured Automatic Deployment Rule for a production environment." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png":::
 
 1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. 
 
 ### If you encounter problems
 
 1. Navigate to **Software Library**
-1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on “MDE-MDAV_Security_Intelligence_Update_Production”, and then click **Disable**. This is shown in the following figure:
+1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on **MDE-MDAV_Security_Intelligence_Update_Production**, and then click **Disable**. This setting is shown in the following figure:
 
    :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules in the event of erros or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
 
