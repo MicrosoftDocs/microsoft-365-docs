@@ -29,12 +29,10 @@ ID | Category | ER | Addresses | Ports
 21 | Default<BR>Required | No | `dodteamsapuiwebcontent.blob.core.usgovcloudapi.net, msteamsstatics.blob.core.usgovcloudapi.net, statics.teams.microsoft.com` | **TCP:** 443
 22 | Allow<BR>Required | Yes | `endpoint1-proddodcecompsvc-dodc.streaming.media.usgovcloudapi.net, endpoint1-proddodeacompsvc-dode.streaming.media.usgovcloudapi.net`<BR>`52.181.167.113/32, 52.182.52.226/32` | **TCP:** 443
   
-Notes for this table:
-
-For  Cross-Cloud Join to properly work, you must whitelist the endpoints for the cloud of the target meeting
-  
-  [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-  [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
+> [!NOTE]
+> For  Cross-Cloud Anonymous Join to work properly, you must add these endpoints for the cloud of the target meeting to the safe senders list:
+> - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+> - [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
 
 ## Microsoft 365 Common and Office Online
 
