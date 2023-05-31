@@ -5,7 +5,7 @@ description: Frequently asked questions about Double Key Encryption.
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 02/28/2022
+ms.date: 05/31/2023
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -33,7 +33,7 @@ DKE helps you meet regulatory requirements across several regulations and standa
 
 ## Can I use Double Key Encryption with Microsoft Office built-in sensitivity labeling?
 
-You'll need to use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. Currently, you can't use Microsoft Office built-in sensitivity labeling.
+Yes! You can use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. For other methods that support DKE with built-in sensitivity labeling, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
 
 ## What Microsoft 365 Apps can I use with DKE?
 
