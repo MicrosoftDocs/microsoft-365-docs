@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 05/31/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -77,7 +77,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Sensitivity labels
 
 - **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings persists.
-- **In preview**: Built-in labeling support for [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) is in preview.
+- **In preview**: Built-in labeling support for [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) is in preview as a parity feature for the AIP add-in.
 
 ## April 2023
 
