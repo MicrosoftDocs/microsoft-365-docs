@@ -68,7 +68,7 @@ Vulnerable drivers can be blocked from being loaded by Windows Defender Applicat
 
 Other malicious drivers can be blocked by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
 
-Exploited vulnerable and signed drivers can be blocked from being written to disk by Attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and like WDAC has an audit mode to avoid accidentally impacting legitimate use.
+Exploited vulnerable and signed drivers can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and like WDAC has an audit mode to avoid accidentally impacting legitimate use.
 
 ## Preventing tampering via exclusions - Windows
 
