@@ -21,7 +21,7 @@ description: Learn how to extract text from images using optical character recog
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention (DLP)](..compliance/dlp-learn-about-dlp).
+The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention (DLP)](..compliance/dlp-learn-about-dlp.md).
 
 For example, you enable the OCR service and then add image files to your document library. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
 
@@ -56,11 +56,11 @@ You can set up the OCR service in the same admin area that you used to set up bi
 
 ### Microsoft Purview compliance portal
 
-The compliance admin for your organization [configures the OCR settings for your tenant](../compliance/ocr-learn-about?#phase-3-configure-your-ocr-settings) in the Microsoft Purview compliance portal.
+The compliance admin for your organization [configures the OCR settings for your tenant](../compliance/ocr-learn-about.md?#phase-3-configure-your-ocr-settings) in the Microsoft Purview compliance portal.
 
-The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](../compliance/dlp-learn-about-dlp). If there are different sites specified in the two setup locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
+The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](../compliance/dlp-learn-about-.md). If there are different sites specified in the two setup locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
 
-For more information, see [Learn about optical character recognition in Microsoft Purview](../compliance/ocr-learn-about).
+For more information, see [Learn about optical character recognition in Microsoft Purview](../compliance/ocr-learn-about.md).
 
 ## Requirements and limitations
 
