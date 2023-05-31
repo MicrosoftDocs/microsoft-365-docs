@@ -1,5 +1,5 @@
 ---
-title: Pilot ring deployment using Group Policy and Windows Server Update Services
+title: Production ring deployment using Group Policy and Windows Server Update Services
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article explains how to deploy Microsoft Defender for Endpoint in measured, staged cycles.
 keywords: deploy Microsoft Defender for Endpoint, Ring deployment Microsoft Defender for Endpoint, cybersecurity, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender for Endpoint pilot ring deployment using Group Policy and Windows Server Update Services
+# Microsoft Defender for Endpoint production ring deployment using Group Policy and Windows Server Update Services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
