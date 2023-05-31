@@ -45,9 +45,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and Microsoft Updates." lightbox="images/mde-deploy-ring-gp-mu-schedule.png"::
-
-:::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and Microsoft Updates." lightbox="images/mde-deploy-ring-gp-mu-schedule.png":::
+:::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and network share." lightbox="images/mde-deploy-ring-gp-mu-schedule.png":::
 
 ## Prerequisites
 
