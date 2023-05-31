@@ -74,12 +74,22 @@ For more details see - [Tamper protection for anti-virus exclusions](https://lea
 
 <li>Attackers can be preventing from discovering existing anti-virus exclusion by enabling <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins">HideExclusionsFromLocalAdmin</a></li></ul>  
 
-## Detecting potential tampering activity on a device 
 
-When tamper protection is enabled, and a tampering attempt is blocked, an alert is raised in [Microsoft 365 Defender portal](https://review.learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/faqs-tamper-protection?view=o365-worldwide&branch=tamper-protect-exclusions#if-the-status-of-tamper-protection-changes-are-alerts-shown-in-the-microsoft-365-defender-portal).
 
-When the abuse of exploited vulnerable or signed driver ASR rule is triggered, this can be seen in the [ASR Report](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report?view=o365-worldwide) as well as in [Advanced Hunting](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize?view=o365-worldwide#asr-rules-advanced-hunting)
+## Detecting potential tampering activity is the Microsoft 365 Defender portal 
 
-When WDAC is enabled, the [block and audit activity can be seen in Advanced Hunting](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting)
+When tampering is detected, an alert is raised with one one the following titles:
+
+<ul>
+<li>Possible Antimalware Scan Interface (AMSI) tampering</li>
+<li>Potential attempt to tamper with MDE via drivers</li>
+<li>Tamper Protection bypass</li>
+</ul>
+
+If the abuse of exploited vulnerable or signed driver ASR rule is triggered, this can be seen in the [ASR Report](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report?view=o365-worldwide) as well as in [Advanced Hunting](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize?view=o365-worldwide#asr-rules-advanced-hunting)
+
+If WDAC is enabled, the [block and audit activity can be seen in Advanced Hunting](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting)
+
+
 
 
