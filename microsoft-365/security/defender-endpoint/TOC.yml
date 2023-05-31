@@ -427,7 +427,7 @@
       href: host-firewall-reporting.md
 
     - name: Tamper resiliency
-      href: tammper-resiliency.md
+      href: tamper-resiliency.md
 
     - name: Attack surface reduction
       items:
