@@ -95,7 +95,7 @@ If you encounter problems with your deployment, change the source of the MDAV up
 
    :::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png" alt-text="Shows Intune Microsoft Defender Antivirus production policy fallback setting." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png":::
 
-#### What does this change do
+#### What this change does
 
 It forces MDAV to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn’t exist.
 
