@@ -49,14 +49,14 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 ## Before you begin
 
-This article assumes that you have experience with Windows Server Update Services (WSUS) and/or already have WSUS installed. If you are not alreadyy familiar with WSUS, see the following articles for important configuration details:
+This article assumes that you have experience with Windows Server Update Services (WSUS) and/or already have WSUS installed. If you aren't already familiar with WSUS, see the following articles for important configuration details:
 
 - [Configure WSUS](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus.md) - Applies to: Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012)
 - [Configure Windows Server Update Services (WSUS) in Analytics Platform System][/sql/analytics-platform-system/configure-windows-server-update-services-wsus.md] - Analytics Platform System
 
 ## Setting up the production environment
 
-1 On the left pane of Server Manager, select **Dashboard** > **Tools** > **Windows Server Update Services**.
+1 On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
 
    > [!NOTE]
    > If the **Complete WSUS Installation** dialog box appears, select **Run**. In the **Complete WSUS Installation** dialog box, select **Close when the installation successfully finishes**.
@@ -65,54 +65,108 @@ This article assumes that you have experience with Windows Server Update Service
 
 1. Read the instructions on the **Join the Microsoft Update Improvement Program** page. Keep the default selection if you want to participate in the program, or clear the checkbox if you don't. Then select **Next**.
 
-1. On the **Choose Upstream Server** page, select one of the two options: 
+1. On the **Choose Upstream Server** page, select **Synchronize from another Windows Server Update Services server**.
 
-    - **Synchronize the updates with Microsoft Update** 
-    - **Synchronize from another Windows Server Update Services server**.
+   - In **Server name**, enter the server name. For example, type _YR2K19_.
+   - In **Port number** enter the port on which this server communicates with the upstream server. For example, type _8530_.
 
-   If you choose to synchronize from another WSUS server:
+   This is shown in the following figure.
 
-   -  Specify the server name and the port on which this server will communicate with the upstream server.
-   - To use SSL, select the Use SSL when synchronizing update information checkbox. The servers will use port 443 for synchronization. (Make sure that this server and the upstream server support SSL.)
-   - If this is a replica server, select the This is a replica of the upstream server checkbox.
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-production-update-service-upstream.png" alt-text="Shows a screen capture of the Update Services snap-in console, Choose Upstream Server page" lightbox="images/mde-deploy-ring-group-policy-wsus-production-update-service-upstream.png":::
 
-1. After you select the options for your deployment, select **Next**.
+1. Select **Next**. 
 
-On the **Specify Proxy Server** page, select the **Use a proxy server when synchronizing** checkbox. Then enter the proxy server name and port number (port 80 by default) in the corresponding boxes.
+   An autonomous downstream server, like a replica server, also uses another WSUS server as its master repository, but allows for individual approvals for updates different from approvals of the master. The autonomous server:
+
+      - Allows flexibility in creating computer groups
+      - Doesn't have to be in the same Active Directory forest as the master
+
+1. (Optional, depending on configuration) On the **Specify Proxy Server** page, select the **Use a proxy server when synchronizing** checkbox. Then enter the proxy server name and port number (port 80 by default) in the corresponding boxes.
 
    > [!IMPORTANT]
    > You must complete this step if you identified that WSUS needs a proxy server to have internet access.
 
-1. If you want to connect to the proxy server by using specific user credentials, select the **Use user credentials to connect to the proxy server** checkbox. Then enter the user name, domain, and password of the user in the corresponding boxes.
+   - If you want to connect to the proxy server by using specific user credentials, select the **Use user credentials to connect to the proxy server** checkbox. Then enter the user name, domain, and password of the user in the corresponding boxes.
+   - If you want to enable basic authentication for the user who is connecting to the proxy server, select the **Allow basic authentication (password is sent in cleartext)** checkbox.
 
-1. If you want to enable basic authentication for the user who is connecting to the proxy server, select the **Allow basic authentication (password is sent in cleartext)** checkbox.
+   Select **Next**. 
 
-1. Select **Next**. On the **Connect to Upstream Server** page, select **start Connecting**. When WSUS connects to the server, select **Next**.
+1. On the **Connect to Upstream Server** page, select **start Connecting**. When WSUS connects to the server, select **Next**.
 
-1. On the **Choose Languages** page, you have the option to select the languages from which WSUS will receive updates: **all languages** or a **subset of languages**. Selecting a subset of languages will save disk space, but it's important to choose all the languages that all the clients of this WSUS server need.
+1. On the **Choose Languages** page, you can select the languages from which WSUS receives updates: **all languages** or a **subset of languages**. Selecting a subset of languages saves disk space, but it's important to choose all the languages that all the clients need on this WSUS server.
 
    If you choose to get updates only for specific languages, select **Download updates only in these languages**, and then select the languages for which you want updates. Otherwise, leave the default selection.
 
    > [!WARNING]
-   > If you select the option **Download updates only in these languages**, and this server has a downstream WSUS server connected to it, this option will force the downstream server to also use only the selected languages.
+   > If you select the option **Download updates only in these languages**, and the server has a downstream WSUS server connected to it, selecting this option will force the downstream server to also use only the selected languages.
 
    After you select the language options for your deployment, select **Next**.
 
-1. The **Choose Products** page allows you to specify the products for which you want updates. Select product categories, such as Windows, or specific products, such as Windows Server 2012. Selecting a product category selects all the products in that category.
+1. The **Set Sync Schedule** page opens. (The **Choose Products** and **Choose Classifications** pages are grayed out and can't be configured). 
 
-   After you select the product options for your deployment, select **Next**.
+   - Select **Synchronize automatically**, the WSUS server synchronizes at set intervals.
+   - In **First synchronization** specify a time for the first synchronization. For example, select _5:00:00 PM._
+   - In **Synchronizations per day**, specify the number of times you want synchronizations to occur. For example, select _1_, and then select **Next**.
 
-1. On the **Choose Classifications** page, select the update classifications that you want to get. Choose all the classifications or a subset of them, and then select **Next**.
+1. On the **Finished** page, select **Next**.
 
-1. The **Set Sync Schedul**e page enables you to select whether to perform synchronization manually or automatically. 
+1. On the **What's next** page, select **Next** to finish.
 
-   - If you select **Synchronize manually**, you must start the synchronization process from the WSUS Administration Console.
-   - If you select **Synchronize automatically**, the WSUS server will synchronize at set intervals.
+#### Define the order of sources for downloading security intelligence updates
 
-1. Set the time for **First synchronization**, and then specify the number of synchronizations per day that you want this server to perform. For example, if you specify four synchronizations per day, starting at 3:00 AM, synchronizations will occur at 3:00 AM, 9:00 AM, 3:00 PM, and 9:00 PM.  After you select the synchronization options for your deployment, select **Next**.
+1. On your Group Policy management computer, open the **Group Policy Management Console**, right-click the _Group Policy Object_ you want to configure and select **Edit**.
 
-On the **Finished** page, you have the option to start the synchronization now by selecting the **Begin initial synchronization** checkbox.
+1. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies**, then select **Administrative templates**.
 
-If you don't select this option, you must use the WSUS Management Console to perform the initial synchronization. Select **Next** if you want to read more about additional settings, or select **Finish** to conclude this wizard and finish the initial WSUS setup.
+1. Expand the tree to **Windows components** > **Windows Defender** > **Signature updates**.
 
-After you select Finish, the WSUS Administration Console appears. You'll use this console to manage your WSUS network, as described later on.
+   - Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
+
+   - In **Options**, type _InternalDefinitionUpdateServer_, and then select **OK**. The configured **Define the order of sources for downloading security intelligence updates** page is shown in the following figure.
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
+
+1. In **Define the order of sources for downloading security intelligence updates**, select **Enabled**. In **Options**, enter the order of sources for downloading  security intelligence updates. For example, type _InternalDefinitionUpdateServer_.
+
+ ## If you encounter problems
+
+If you encounter problems with your deployment, create or append your Microsoft Defender Antivirus policy:
+
+1. In [Group Policy Management Console](previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), create or append to your Microsoft Defender Antivirus policy using the following setting:
+ 
+   Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > (administrator-defined) _PolicySettingName_. For example, _MDAV\_Settings\_Production_, right-click, and then select **Edit**. **Edit** for **MDAV\_Settings\_Production** is shown int eh following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-edit.png"::: 
+
+1. Select **Define the order of sources for downloading security intelligence updates**.
+
+1. Select the radio button named **Enabled**. 
+
+1. Under **Options:**, change the entry to _FileShares_, select **Apply**, and then select **OK**. This change is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-define-order.png"::: 
+
+1. Select **Define the order of sources for downloading security intelligence updates**.
+
+1. Select the radio button named **Disabled**, select **Apply**, and then select **OK**. The disabled option is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-disabled.png"::: 
+
+1. The change is active when Group Policy updates. There are two methods to refresh Group Policy:
+
+   - From the command line, run the Group Policy update command. For example, run `gpupdate / force`. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate.md)
+   - Wait for Group Policy to automatically refresh. Group Policy refreshes every 90 minutes +/- 30 minutes.
+
+   If you have multiple forests/domains, force replication or wait 10-15 minutes. Then force a Group Policy Update from the Group Policy Management Console. 
+
+   - Right-click on an organizational unit (OU) that contains the machines (for example, Desktops), select **Group Policy Update**. This UI command is the equivalent of doing a gpupdate.exe /force on every machine in that OU. The feature to force Group Policy to refresh is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
+
+1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`.
+
+ See also:
+
+ - [Step 3: Configure WSUS | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852346(v=ws.11)?redirectedfrom=MSDN#31-configure-network-connections)
+ - [Step 4: Approve and Deploy WSUS Updates | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852348(v=ws.11)?redirectedfrom=MSDN)
+ - [Step 5: Configure Group Policy Settings for Automatic Updates | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn595129(v=ws.11))

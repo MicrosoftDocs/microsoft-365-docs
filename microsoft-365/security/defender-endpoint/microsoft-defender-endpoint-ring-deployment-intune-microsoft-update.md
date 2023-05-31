@@ -85,7 +85,9 @@ For example, your production policy named _MDAV_Settings_Production_.
 | Platform Updates Channel | Critical – Time delay | It's delayed by two days.|
 | Security Intelligence Updates Channel | Current Channel (Broad) | This configuration provides you with 3 hours of time to find an FP and prevent the production systems from getting an incompatible signature update. |
 
-### If you encounter problems change the source of the MDAV updates
+### If you encounter problems
+
+If you encounter problems with your deployment, change the source of the MDAV updates:
 
 1. In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), go to **Endpoint Security**, select **Antivirus**, and then find your Intune production policy (for example, MDAV_Settings_Production), and then, in **Configuration settings**, select **Edit**.
 
