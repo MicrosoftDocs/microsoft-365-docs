@@ -63,17 +63,19 @@ DKE sensitivity labels are made available to end users through the sensitivity b
 
 ### Azure Information Protection is required for DKE
 
-DKE works with sensitivity labels and requires Azure Information Protection.
+DKE works with sensitivity labels and requires Azure Information Protection service for encryption.
 
-### Azure Information Protection Unified Labeling Client requirements for DKE
+### Azure Information Protection Unified Labeling Client and Office Apps for Desktop requirements for DKE
 
-Version 2.14.94.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018)
+If you choose to use the labeling client and Office Apps for Desktop combination, use the following information.
 
-### Microsoft Office Apps for enterprise requirements for DKE with the AIP client
+- Unified Labeling Client version 2.14.94.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
-Version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows. [Open a support case](/azure/information-protection/information-support#to-contact-microsoft-support) for Unified Labeling client versions with DKE label support in Outlook.
+- Microsoft Office Apps for enterprise requirements for DKE with the AIP labeling client version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
 
-### DKE built-label requirements for DKE
+- For Outlook Desktop, [open a support case](/azure/information-protection/information-support#to-contact-microsoft-support) for Unified Labeling client versions with DKE label support in Outlook.
+
+### DKE built-in labeling requirements for DKE
 
 For information about support in Word, Excel, and PowerPoint see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
 
