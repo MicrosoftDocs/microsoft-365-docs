@@ -3,7 +3,7 @@ title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/19/2020
 audience: Admin
@@ -25,11 +25,11 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
+description: Learn about how to upgrade Microsoft Office to the latest Microsoft 365 apps for users in your organization.
 ms.topic: article
 ---
 
-# Upgrade your Microsoft 365 for business users to the latest Office client
+# Upgrade your Microsoft 365 for business users to the latest Microsoft 365 apps
 
 ## Get ready to upgrade to Microsoft 365
 
@@ -43,7 +43,7 @@ If you're the admin responsible for the Microsoft 365 for business subscription 
 
 ## Upgrade steps
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+The steps below will guide you through the process of upgrading your users to the latest Microsoft 365 desktop apps. We recommend you read through these steps before beginning the upgrade process.
   
 ## Step 1 - Check system requirements
 
@@ -115,7 +115,7 @@ If you haven't already done so, assign licenses to any users in your organizatio
   
 ## Step 5 - Install Microsoft 365
 
-After you've verified the users you want to upgrade all have licenses, the final step is to have them install the Microsoft 365 apps. See [Download and install or reinstall Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+After you've verified the users you want to upgrade all have licenses, the final step is to have them install the Microsoft 365 apps. See [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
 > If you don't want your users installing Office themselves, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365). You can use the [Deployment Tool](/DeployOffice/overview-office-deployment-tool) to download Microsoft 365 apps to your local network and then deploy using the software deployment method you typically use.

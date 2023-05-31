@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/06/2020
+ms.date: 03/28/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,7 +20,7 @@ description: Learn about onboarding macOS devices into Compliance solutions
 
 # Onboard macOS devices into Microsoft 365 overview
 
-MacOS devices can be onboarded into Microsoft Purview solutions using either Intune or JAMF Pro. The onboarding procedures differ depending on which management solution you are using. If your macOS devices have already been onboarded into Microsoft Defender for Endpoint (MDE), there are fewer steps. See [Next steps](#next-steps) for links to the appropriate procedures for you.
+MacOS devices can be onboarded into Microsoft Purview solutions using either Intune or JAMF Pro. The onboarding procedures differ depending on which management solution you use. If your macOS devices have already been onboarded into Microsoft Defender for Endpoint (MDE), there are fewer steps. See [Next steps](#next-steps) for links to the appropriate procedures for you.
 
 **Applies to:**
 
@@ -31,18 +31,18 @@ MacOS devices can be onboarded into Microsoft Purview solutions using either Int
 
 ## Before you begin
 
-Before you get started with Endpoint DLP on macOS devices (three latest released versions), you should familiarize yourself with these articles:
+Before you get started with Endpoint DLP on macOS devices (the latest three released versions), familiarize yourself with these articles:
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 
-If you are not familiar with DLP at all, you should familiarize yourself with these articles as well:
+If you aren't familiar with DLP at all, you should familiarize yourself with these articles as well:
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Data loss prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
-If you are not familiar with Insider Risk, you should familiarize yourself with these articles:
+If you aren't familiar with Insider Risk, read these articles:
 
  - [Insider risk management](insider-risk-management.md)
  - [Plan for insider risk management](insider-risk-management-plan.md#plan-for-insider-risk-management)
@@ -69,29 +69,35 @@ Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
+## Conditions supported on macOS 
+
+Once a macOS device is onboarded into Microsoft Purview solutions, you can use the following condition with data loss prevention (DLP) policies:
+
+**Content Contains** – Applies to documents that contain sensitive information types and sensitivity labels. 
+
 ## Activities that can be audited and restricted on macOS 
 
-Once a macOS device is onboarded into Microsoft Purview solutions, you can monitor and restrict these actions with data loss prevention (DLP) policies.
+Once a macOS device is onboarded into Microsoft Purview solutions, you can monitor and restrict the following actions using data loss prevention (DLP) policies.
 
-**Copy to a USB removable media** – when enforced, this action blocks, warns or audits the copying or moving of protected files from an endpoint device to USB removable media 
+**Copy to a USB removable media** – When enforced, this action blocks, warns, or audits the copying or moving of protected files from an endpoint device to USB removable media.
 
-**Copy to network shares** – when enforced, this action blocks, warns, or audits the copying or moving of protected files from an endpoint device to any network share 
+**Copy to network shares** – When enforced, this action blocks, warns, or audits the copying or moving of protected files from an endpoint device to any network share.
 
-**Print** – when enforced, this action blocks, warns, or audits when protected files are printed from an endpoint device 
+**Print** – When enforced, this action blocks, warns, or audits when protected files are printed from an endpoint device.
 
-**Copy to clipboard** – when enforced, this action blocks, warns, or audits data in protected file that is being copied to a clipboard on an endpoint device 
+**Copy to clipboard** – When enforced, this action blocks, warns, or audits data in protected file that is being copied to a clipboard on an endpoint device.
 
-**Upload to cloud** – this action blocks, warns, or audits when protected files are prevented from or allowed to be uploaded to cloud services based on the allow/unallowed domains list in global settings. When this action is set to warn or block, other browsers (defined on unallowed browsers list under Global settings) are blocked from accessing the file. 
+**Upload to cloud** – This action blocks, warns, or audits when protected files are uploaded or prevented from being uploaded to cloud services based on the allow/unallowed domains list in global settings. When this action is set to warn or block, other browsers (defined on the unallowed browsers list under Global settings) are blocked from accessing the file.
 
-**Accessed by unallowed apps** – when enforced, this action prevents applications that are on the unallowed apps list (as defined in Global settings) from accessing protected files on an endpoint device. Sample scenarios 
+**Accessed by unallowed apps** – When enforced, this action prevents applications that are on the unallowed apps list (as defined in Global settings) from accessing protected files on an endpoint device.
 
 ## Onboarding devices into device management
 
 You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
 
-When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
+When you want to onboard devices that haven't been onboarded yet, download the appropriate script and deploy it to those devices. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
-<!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
+<!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will automatically appear in the managed devices list.-->
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
 
@@ -102,7 +108,7 @@ When you want to onboard devices that haven't been onboarded yet, you'll downloa
 
 ## Next steps
 
-Getting devices onboarding into Microsoft Purview solutions is required in order to receive DLP sensor telemetry and to enforce data loss prevention policies. 
+Getting devices onboarded into Microsoft Purview solutions is required in order to receive DLP sensor telemetry and to enforce data loss prevention policies. As mentioned, macOS devices can be onboarded into Microsoft Purview solutions using either Intune or JAMF Pro. the following articles for the procedures appropriate to your situation.
 
 Topic | Description
 :---|:---
@@ -111,26 +117,26 @@ Topic | Description
 |[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | For macOS devices that are managed through JAMF Pro
 |[JAMF Pro for Microsoft Defender for Endpoint](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
-## Device configuration and policy sync status (preview)
+## Device configuration and policy sync status
 
-You can check the **Configuration status** and the **Policy sync status** of all your onboarded devices in the **Devices** list. For macOS devices the minimum version is 101.95.07. For more information on the configuration and policy status, select an onboarded device to open the details pane.
 
-**Configuration status** shows you if the device is configured correctly, meets DLP configuration requirements, and the last time the configuration was validated. For macOS  devices configuration includes:
-- Checking the UPN configuration by making sure your devices are [onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) if you are using Intune.
-- Making sure that they are enrolled in the [Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)
-- If you use [JAMF Pro make sure that they are onboarded](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) for checking the UPN configuration.
+You can check the **Configuration status** and the **Policy sync status** of all your onboarded devices in the **Devices** list. For macOS devices, the minimum version is 101.95.07. For more information on the configuration and policy status, select an onboarded device and then open the details pane.
 
-**Policy sync status** shows you if the most current versions of the endpoint DLP policies have been synchronized to the device and the last time a policy sync occurred.
+**Configuration status** shows you whether the device is configured correctly, meets DLP configuration requirements, and the last time the configuration was validated. For macOS  devices, configuration includes:
+- If you use Intune, check the UPN configuration by making sure your devices are [onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos).
+- If you use Intune, make sure that your devices are enrolled in the [Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)
+- If you use JAMF Pro, [make sure your devices are onboarded](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) before checking the UPN configuration.
 
+**Policy sync status** shows you whether the most current versions of the endpoint DLP policies have been synchronized to the device and the last time a policy sync occurred.
 
 |Field value  |Configuration status  |Policy sync status  |
 |---------|---------|---------|
 |Updated    |Device health parameters are enabled and correctly set.   |Device has been updated with the current versions of policies.         |
-|Not updated    | You need to enable the configuration settings for this device. Follow the procedures for your environment: </br>- [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune) </br>- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers)</br>- [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro)</br>- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers) |This device has not synced the latest policy updates. If the policy update was made within the last 2 hours, wait for the policy to reach your device. |
-|Not available  | Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
+|Not updated    | You need to enable the configuration settings for this device. Follow the procedures for your environment: </br></br>- [Onboard and offboard macOS devices into Microsoft Purview solutions using Intune](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune) </br></br>- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers)</br></br>- [Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro)</br></br>- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers) |This device hasn't synced the latest policy updates. If the policy update was made within the last 2 hours, wait for the policy to reach your device. |
+|Not available  | Device properties aren't available in the device list. This could be because the device doesn't meet the minimum OS version or configuration, or because the device was just onboarded.        |Device properties aren't available in the device list. This could be because the device doesn't meet the minimum OS version or configuration, or because the device was just onboarded.|
 
 
-## Related topics
+## Related articles
 
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Support Matrix for DLP policy tips across Microsoft apps](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

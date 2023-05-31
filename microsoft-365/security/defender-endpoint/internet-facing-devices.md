@@ -67,6 +67,9 @@ You can use filters to focus in on internet-facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-endpoint/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-endpoint/internet-facing-filter.png":::
 
+> [!NOTE]
+> If no new events for a device occur for 48 hours, the Internet-facing tag is removed and it will no longer be visible in the Microsoft 365 Defender portal.
+
 ## Investigate your internet-facing devices
 
 To learn more about an internet-facing device, select the device in the device inventory to open its flyout pane:
@@ -88,9 +91,10 @@ Use this query to find all devices that are internet facing.
 ```kusto
 // Find all devices that are internet-facing
 DeviceInfo
+| where Timestamp > ago(7d)
 | where IsInternetFacing
 | extend InternetFacingInfo  = AdditionalFields
-| extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
+| extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingPublicScannedPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingPublicScannedIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
@@ -110,14 +114,11 @@ For TCP connections, you can  gain further insights into applications or service
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
 ```kusto
-DeviceNetworkEvents
-| where Timestamp > ago(7d)
-| where DeviceId == ""
-| where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-| where ActionType =="InboundConnectionAccepted"
-| extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-| where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
-| project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine, InitiatingProcessId, DeviceName
+// Use this function to obtain the device incoming communication from public IP addresses
+// Input:
+// DeviceId – the device ID that you want to investigate.
+// The function will return the last 7 days of data.
+InboundExternalNetworkEvents(“<DeviceId>”)
 ```
 
 >[!Note]
@@ -127,6 +128,7 @@ Use the following query for devices tagged with the reason **This device was det
 
 ```kusto
 DeviceNetworkEvents
+| where Timestamp > ago(7d)
 | where DeviceId == ""
 | where Protocol == "Tcp"
 | where ActionType == "InboundInternetScanInspected"
@@ -136,6 +138,7 @@ For UDP connections, gain insights into devices that were identified as host rea
 
 ```kusto
 DeviceNetworkEvents
+| where Timestamp > ago(7d)
 | where DeviceId == ""
 | where Protocol == "Udp"
 | where ActionType == "InboundInternetScanInspected"
