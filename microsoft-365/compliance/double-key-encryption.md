@@ -35,7 +35,7 @@ For more information about the default, cloud-based tenant root keys, see [Plann
 
 ## When your organization should adopt DKE
 
-Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you'll be using Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you use Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
 
 - Transport rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
@@ -77,7 +77,7 @@ DKE sensitivity labels are made available to end users through the sensitivity b
 Apply DKE labels outside of Office apps using the File Explorer "Classify & Protect" right-click, AIP PowerShell commandlets or the AIP scanner by administrators.
 
 **Encryption only and do not forward scenarios**
-Encrypt Only and Do Not Forward are not supported with DKE, including all DKE scenarios with AIP, the SDK, or the built-in labeling experience. If you attempt to configure DKE for unsupported scenarios, such as Encrypt Only and Do Not Forward, you'll see a warning in the label configuration experience, and you won't be able to save your configuration.
+Encrypt Only and Do Not Forward are not supported with DKE.
 
 ## Overview of deploying DKE
 
