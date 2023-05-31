@@ -107,7 +107,6 @@ You'll follow these general steps to set up Double Key Encryption for your organ
 1. [Validate your deployment](#validate-your-deployment)
 1. [Register your key store](#register-your-key-store)
 1. [Create sensitivity labels using DKE](#create-sensitivity-labels-using-dke)
-1. [Enable DKE in your client](#enable-dke-in-your-client)
 1. [Migrate protected files from HYOK labels to DKE labels](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
 When you're done, you can encrypt documents and files using DKE. For information, see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
@@ -549,18 +548,6 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 > [!NOTE]
 > It may take up to 24 hours for the clients to refresh with the new labels.
-
-### Enable DKE in your client
-
-If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
-
-```console
-   [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
-   "DoubleKeyProtection"=dword:00000001
-
-   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
-   "DoubleKeyProtection"=dword:00000001
-```
 
 ## Migrate protected files from HYOK labels to DKE labels
 
