@@ -83,15 +83,15 @@ If you select this export option, the exported content is organized in the follo
 
 - **Summary.csv**: Includes a summary of the content exported from the review set. This file is structured with the following columns:
 
-    - *Total*: The number of the items found in the review set.
-    - *Actual*: he number of items fetched in the package for the export.
-    - *Errors*: The number of errors and warnings. More information can be found in the errors and warnings file.
-    - *Skipped Processing*: The number of items skipped for processing.
+  - *Total*: The number of the items found in the review set.
+  - *Actual*: he number of items fetched in the package for the export.
+  - *Errors*: The number of errors and warnings. More information can be found in the errors and warnings file.
+  - *Skipped Processing*: The number of items skipped for processing.
 
-    > [!NOTE]
-    > Skipped processing also contains the number of extracted child items for PST format. For example, a review set has two items, one corresponding to an email and one corresponding to an attachment. When the file is converted to the PST, it is mappped to one item only (the mail item). This results in skipping the child attachment.
+  > [!NOTE]
+  > Skipped processing also contains the number of extracted child items for PST format. For example, a review set has two items, one corresponding to an email and one corresponding to an attachment. When the file is converted to the PST, it is mappped to one item only (the mail item). This results in skipping the child attachment.
 
-    - *Export Containers*: This contains the list of .ZIP and .PST files created for the export.
+  - *Export Containers*: This contains the list of .ZIP and .PST files created for the export.
 
 - Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition. The root folder contains the following:
   
@@ -100,12 +100,12 @@ If you select this export option, the exported content is organized in the follo
   
 - **Exchange**: This folder contains all content from Exchange stored in PST files. Redacted PDF files can't be included with this option. If an attachment is selected in the review set, the parent email message will be exported with the attachment attached.
   
-    The Exchange folder may also contain a subfolder named mailboxname_loosefiles.zip, which contains the following items:
+  The Exchange folder may also contain a subfolder named mailboxname_loosefiles.zip, which contains the following items:
 
-    - Information Rights Management (IRM) protected messages that have been decoded.
-    - Error-remediated messages.
-    - Modern attachments or links referenced in messages.
-    - Encrypted items (which aren't included in the PST files in the Exchange folder).
+  - Information Rights Management (IRM) protected messages that have been decoded.
+  - Error-remediated messages.
+  - Modern attachments or links referenced in messages.
+  - Encrypted items (which aren't included in the PST files in the Exchange folder).
   
 - **SharePoint**: This folder contains all native content from SharePoint in a native file format. Redacted PDF files can't be included with this option.
 
@@ -114,7 +114,18 @@ If you select this export option, the exported content is organized in the follo
 
 ### Condensed directory structure
 
-- **Summary.csv**: Includes a summary of the content exported from the review set
+- **Summary.csv**: Includes a summary of the content exported from the review set. This file is structured with the following columns:
+
+  - *Total*: The number of the items found in the review set.
+  - *Actual*: he number of items fetched in the package for the export.
+  - *Errors*: The number of errors and warnings. More information can be found in the errors and warnings file.
+  - *Skipped Processing*: The number of items skipped for processing.
+
+  > [!NOTE]
+  > Skipped processing also contains the number of extracted child items for PST format. For example, a review set has two items, one corresponding to an email and one corresponding to an attachment. When the file is converted to the PST, it is mappped to one item only (the mail item). This results in skipping the child attachment.
+
+  - *Export Containers*: This contains the list of .ZIP and .PST files created for the export.
+
 - **Root folder**: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
   
   - *Export_load_file_x of z.csv*: The metadata file and also includes the location of each file that is stored in the ZIP file
