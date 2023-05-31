@@ -48,9 +48,9 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Print a document    |When this activity is detected, you can block, warn, or audit the printing of protected files from an endpoint device. |Supported|Supported|Auditable and restrictable         |
 |Copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session. |Supported|Not supported|  Auditable and restrictable|
 |Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported (preview)| Auditable and restrictable|
-|Create an item|Detects when a user creates an item.|Supported |Supported |Auditable|
-|Rename an item|Detects when a user renames an item.|Supported |Supported |Auditable|
-|Copy to clipboard| When this activity is detected, you can block, warn, or audit data the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
+|Create an item|Detects the creation of an item.|Supported |Supported |Auditable|
+|Rename an item|Detects the renaming of an item.|Supported |Supported |Auditable|
+|Copy to clipboard| When this activity is detected, you can block, warn, or audit the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
 |Access by unallowed apps| Detects when an application that is on the unallowed apps list (as defined in [restricted apps and app groups](dlp-configure-endpoint-settings.md)) attempts to access protected files on an endpoint device. |Supported |Supported|
 
 ## Best practice for endpoint DLP policies
@@ -91,6 +91,8 @@ DLP audits the activities for these file types, even if there isn't a policy mat
 - PowerPoint files
 - Excel files
 - PDF files
+
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
@@ -231,6 +233,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 > [!IMPORTANT]
 > If you want to try out just-in-time protection, you must register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
 
+Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
 Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
 
 Just-in-time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
