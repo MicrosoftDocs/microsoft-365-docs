@@ -47,14 +47,14 @@ Insider risk management uses different types of events and indicators to collect
 
 Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow more flexibility and customization for your policies and when users are in-scope for a policy. Also, you can define risk management activity thresholds for these triggering indicators for more fine-grained control in a policy.
 
-## Built-in indicators and custom indicators
+## Two types of policy indicators: built-in indicators and custom indicators
 
 Policy indicators are organized into two tabs:
 
-- **Built-in Indicators**: Insider risk management includes many built-in indicators for various scenarios that you can use right away in your policies. Choose the indicators that you want to activate, and then customize indicator thresholds for each indicator level when you create an insider risk policy. The built-in indicators are described in more detail below. 
-- **Custom Indicators**: Use custom indicators together with the [Insider Risk Indicators (preview) connector](import-insider-risk-indicators.md) to bring non-Microsoft detections to insider risk management. For example, you might want to extend your detections to include Salesforce and Dropbox and use them alongside the built-in detections provided by the insider risk management solution, which is focused on Microsoft workloads (SharePoint Online and Exchange Online, for example). [Learn more about creating a custom indicator](#custom-indicators)
+- **Built-in indicators**: Insider risk management includes many built-in indicators for various scenarios that you can use right away in your policies. Choose the indicators that you want to activate, and then customize indicator thresholds for each indicator level when you create an insider risk policy. The built-in indicators are described in more detail below. 
+- **Custom indicators**: Use custom indicators together with the [Insider Risk Indicators (preview) connector](import-insider-risk-indicators.md) to bring non-Microsoft detections to insider risk management. For example, you might want to extend your detections to include Salesforce and Dropbox and use them alongside the built-in detections provided by the insider risk management solution, which is focused on Microsoft workloads (SharePoint Online and Exchange Online, for example). [Learn more about creating a custom indicator](#custom-indicators)
 
-### Built-in Indicators
+### Built-in indicators
 
 The following indicators are available "out-of-the-box" in insider risk management:
 
@@ -119,7 +119,7 @@ In some cases, you may want to limit the insider risk policy indicators that are
    > [!NOTE]
    > It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab in the details pane.
 
-### Custom Indicators
+### Custom indicators
 
 Use the **Custom Indicators** tab to create a custom indicator to use as a trigger or as a policy indicator in your policies. 
 
