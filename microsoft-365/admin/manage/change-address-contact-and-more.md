@@ -78,10 +78,10 @@ The organization's name is used throughout Microsoft 365, including but not limi
 * Viva Engage navigation
   * In Viva Engage, the left navigation uses the organization name as the name of the home Engage network.  
 * OneDrive Sync
- * The organization name is shown in File Explorer on Windows and Finder on Mac in the left navigation (the Navigation pane). 
-  * In the navigation pane, the blue cloud icon for OneDrive for your M365 tenant is labeled "OneDrive - <tenant name>" (for example, "OneDrive - Contoso").  
- * The organization name is used in the file paths
- * The organization name is shown in:
+  * The organization name is shown in File Explorer on Windows and Finder on Mac in the left navigation (the Navigation pane). 
+    * In the navigation pane, the blue cloud icon for OneDrive for your M365 tenant is labeled "OneDrive - <tenant name>" (for example, "OneDrive - Contoso").  
+    * The organization name is used in the file paths
+  * The organization name is shown in:
   * the OneDrive activity center
   * The tooltip of the OneDrive cloud icon
   *  and the OneDrive settings window. 
