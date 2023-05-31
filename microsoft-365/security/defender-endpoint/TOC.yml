@@ -120,7 +120,9 @@
       - name: Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)
         href: microsoft-defender-endpoint-ring-deployment-sscm-wsus.md
       - name: Ring deployment using Group Policy and Microsoft Updates
-        href: microsoft-defender-endpoint-ring-deployment-group-policy-microsoft-update.md        
+        href: microsoft-defender-endpoint-ring-deployment-group-policy-microsoft-update.md
+        - name: Ring deployment using Group Policy and network share
+        href: microsoft-defender-endpoint-ring-deployment-group-policy-network-share.md      
       - name: Ring deployment using Group Policy and Windows Server Update Services (WSUS)
         items: 
         - name: Pilot ring deployment using Group Policy and Windows Server Update Services
