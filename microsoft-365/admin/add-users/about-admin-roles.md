@@ -128,9 +128,9 @@ A partner can assign these roles:
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. The partner has to be an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
 
-## Volume Licensing Roles
+## Volume licensing roles
 
-Permissions to volume licensing information in Microsoft 365 admin center is controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
 
 - Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
 
