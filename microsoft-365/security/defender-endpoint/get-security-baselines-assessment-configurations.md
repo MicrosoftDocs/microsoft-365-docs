@@ -69,6 +69,7 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |uniqueId | String | Identifier for the specific configuration across baseline benchmarks.
 |Id | String | Identifier of the specific configuration in the baseline benchmark.
 |benchmarkName| String | The name of the benchmark.
+|benchmarkVersion| String | The version of the benchmark. May contain operating system details.
 |name | String | The configuration name at it appears in the benchmark.
 |description | String | The configuration description as it appears in the benchmark.
 |category | String | The configuration  category as it appears in the benchmark.
@@ -95,25 +96,25 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
     "@odata.context": " https://api-df.securitycenter.microsoft.com/api/$metadata#BaselineConfigurations ", 
     "value": [
         {
-            "uniqueId": "Microsoft_1.0-windows_11-10.0.22000_1.6",
-            "id": "1.6",
-            "benchmarkName": "Microsoft",
-            "benchmarkVersion": "1.0-windows_11-10.0.22000",
-
-            "name": "Configuration title'",
-            "description": "Description of the risk",
+            "UniqueId": "STIG_2.002-windows_10-10.0.19042_SV-220826r569187",
+            "Id": "SV-220826r569187",
+            "BenchmarkName": "STIG",
+            "BenchmarkVersion": "2.002-windows_10-10.0.19042",
+            "Name": "The Application Compatibility Program Inventory must be prevented from collecting data and sending the information to Microsoft",
+            "Description": "Some features may communicate with the vendor, sending system information or downloading data or components for the feature. Turning off this capability will prevent potentially sensitive information from being sent outside the enterprise and uncontrolled updates to the system. This setting will prevent the Program Inventory from collecting data about a system and sending the information to Microsoft.",
+            "Category": "SRG-OS-000095-GPOS-00049",
             "complianceLevels": [
-                "level1",
-                "level2"
+                "CAT III", 
+                "All"
             ],
             "cce": "",
-            "rationale": "Why you should configure this",
-            "remediation": "Remediation steps",
+            "rationale": "Not available",
+            "remediation": "Configure the policy value for Computer Configuration > Administrative Templates > Windows Components > Application Compatibility > \"Turn off Inventory Collector\" to \"Enabled\".",
             "recommendedValue": [ 
                 "Equals '1'" 
             ], 
             "source": [
-                "hkey_local_machine\\software\\policies\\microsoft\\fve\\disableexternaldmaunderlock"
+                "hkey_local_machine\\software\\policies\\microsoft\\windows\\appcompat\\disableinventory"
             ],
             "isCustom": false
         }, 
