@@ -64,15 +64,15 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. Launch the **Windows Server Update Services Configuration Wizard**.
 
-1. On the **Before You Begin** page, review the preliminary information and attend to any configuration or credential matters, and then click **Next**.
+1. On the **Before You Begin** page, review the preliminary information and attend to any configuration or credential matters, and then select **Next**.
 
-1. ON the **Microsoft Update Improvement Program** page, if you would like to participate in the program, select **Yes, I would like to join the Microsoft Update Improvement Program**. Click **Next**.
+1. ON the **Microsoft Update Improvement Program** page, if you would like to participate in the program, select **Yes, I would like to join the Microsoft Update Improvement Program**. Select **Next**.
 
-1. On the **Choose Upstream Server** page, select **Synchronize from Microsoft Update** and then click **Next**.
+1. On the **Choose Upstream Server** page, select **Synchronize from Microsoft Update** and then select **Next**.
 
 1. On the **Specify Proxy Server** page, select **Next**.
 
-1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to download, and then click **Next**
+1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to download, and then select **Next**
 
 1. On the **Choose Products** page, scroll down to **Forefront**, select **Forefront Client Security** and **System Center Endpoint Protection** This is shown in the following figure.
    
@@ -80,7 +80,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
    While still on the **Choose Products** page, scroll down to **Windows** and select **Microsoft Defender Antivirus**.
 
-1.  Click **Next**. On the **Choose Classification** page, select: **critical Updates**, **Definition Updates**, and **Security Updates**, and then click **Next**.
+1.  Select **Next**. On the **Choose Classification** page, select: **critical Updates**, **Definition Updates**, and **Security Updates**, and then select **Next**.
 
 1. On the **Configure Sync Schedule** page, do the following:
 
@@ -90,9 +90,9 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
    | **First synchronization** | Set time to _5:00:00 AM_ |
    | **Synchronizations per day** | Set to _1_ |
 
-1. Click **Next**. On the **Finished** page, click **Next**.
+1. Select **Next**. On the **Finished** page, select **Next**.
 
-1. On the **What's next** page, click **Finish**.
+1. On the **What's next** page, select **Finish**.
 
 The Windows Server Update Services Configuration Wizard is complete. 
 
@@ -105,7 +105,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 #### View update details
 
 1. In the **Update Services** console, in the navigation tree, go to > **Update Services** > **YR2K19** > **Updates** > **All Updates**.
-1. In the **Actions** column, click **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** lists updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intelligence_. Example results are shown in the next image.
+1. In the **Actions** column, select **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** lists updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intelligence_. Example results are shown in the next image.
 
    See [ Viewing and Managing Updates](/windows-server/administration/windows-server-update-services/manage/viewing-and-managing-updates.md).
 
@@ -128,7 +128,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 #### To find out which Platform Update version is the Current Channel (Broad)
 
 1. Go to the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623). (_This link automatically loads a search filtered to KB4052623_)
-1. Search for a KB by name. For example, In the search box, type _KB4052623_, and then click **Search**. 
+1. Search for a KB by name. For example, In the search box, type _KB4052623_, and then select **Search**. 
 
    For example, on April 11, 2023, the latest production version is **4.18.2302.7**, where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.
 
@@ -137,7 +137,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 #### To determine if updates are synchronized
 
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Updates** > **All Updates**.
-1. In **Approval**, select **Any Except Declined**, and the click **Refresh**.
+1. In **Approval**, select **Any Except Declined**, and the select **Refresh**.
 
    The **All Updates** field lists “Platform Updates” and “Security Intelligence Updates” (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
 
@@ -155,9 +155,9 @@ The Windows Server Update Services Configuration Wizard is complete.
 
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Computers** > **Options**. The **Options** window opens
 1. Select **Automatic Approvals** to launch the **Automatic Approvals** configuration wizard. 
-1. In **Automatic Approvals** page, on the **Update Rules** tab, click **OK**.
+1. In **Automatic Approvals** page, on the **Update Rules** tab, select **OK**.
 1. On the **Add Rule** page, is **Step 1**, select **When an update is in a specific classification** and **When an update is in a specific product.
-1. In **Choose Products**, scroll to **Forefront**, and then select **Forefront Client Security**.  Scroll to **Windows**, and then select **Microsoft Defender Antivirus**, and then click **OK**. The workflow returns you to the **Add Rule** page.
+1. In **Choose Products**, scroll to **Forefront**, and then select **Forefront Client Security**.  Scroll to **Windows**, and then select **Microsoft Defender Antivirus**, and then select **OK**. The workflow returns you to the **Add Rule** page.
 1. On the **Add Rule** page, in **Step 1: Select Properties**, ensure the following are selected:
    - **When an update is in a specific classification**
    - **When an updates is in a specific product**
@@ -171,20 +171,20 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-updates-add-rule.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/mde-deploy-ring-group-policy-wsus-updates-add-rule.png"::: 
 
-1. Click **OK**. The work flow returns to the **Update Rules** page. Select your new rule, For example, select **Microsoft Defender Antivirus updates**.
-1. In **Rule Properties**, verify the information is correct, and then click **OK**.
+1. Select **OK**. The work flow returns to the **Update Rules** page. Select your new rule, For example, select **Microsoft Defender Antivirus updates**.
+1. In **Rule Properties**, verify the information is correct, and then select **OK**.
 
 #### Define the order of sources for downloading security intelligence updates
 
-1. On your Group Policy management computer, open the **Group Policy Management Console**, right-click the _Group Policy Object_ you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the **Group Policy Management Console**, right-click the _Group Policy Object_ you want to configure and select **Edit**.
 
-1. In the **Group Policy Management Editor** go to **Computer configuration**, click **Policies**, then click **Administrative templates**.
+1. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies**, then select **Administrative templates**.
 
 1. Expand the tree to **Windows components** > **Windows Defender** > **Signature updates**.
 
    - Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
 
-   - In **Options**, type _InternalDefinitionUpdateServer_, and then click **OK**. The configured **Define the order of sources for downloading security intelligence updates** page is shown in the following figure.
+   - In **Options**, type _InternalDefinitionUpdateServer_, and then select **OK**. The configured **Define the order of sources for downloading security intelligence updates** page is shown in the following figure.
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
 

@@ -68,7 +68,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Each time the rule runs and finds new updates**. | Select **Create a new Software Update Group** |
    | **Each time the rule runs and finds new updates** | Select **Enable the deployment after this rule is run** |
 
-1. Click **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
+1. Select **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
    
    | In: | Change: |
    |:---|:---|
@@ -76,7 +76,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Detail level** | Select **Only error messages** |
    | **Some software updates include a license agreement** | Select **Automatically deploy all software updates found by this rule, and approve any license agreements**. |
    
-1. Click **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, make the following settings:
+1. Select **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, make the following settings:
    
    | In: | Change: |
    |:---|:---|
@@ -97,7 +97,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    >
    > **Update Classification**: “Critical Updates” and “Definition Updates”
    
-1. Click **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then click **Customize**.
+1. Select **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then select **Customize**.
 
 1. On the **Deployment Schedule** page, under **Configure schedule details for this deployment**, do the following:
    
@@ -107,7 +107,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Software available time** | Select **As soon as possible** |
    | **Installation deadline** | Select **As soon as possible** | 
    
-1. Click **Next**. On the **User Experience** page, under **Specify the user experience for this deployment**, ensure the following are selected:
+1. Select **Next**. On the **User Experience** page, under **Specify the user experience for this deployment**, ensure the following are selected:
    
    | In: | Change: |
    |:---|:---|
@@ -116,7 +116,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Device restart behavior** | Select **Servers** | 
    | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts)** |
    
-1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, and then click **Next**.
+1. Select **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, and then select **Next**.
    
 1. On the top-level **Deployment Package** page, under **Select deployment package for this automatic deployment rule**, select **Create a new deployment package**, and then do the following:
    
@@ -124,16 +124,16 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    |:---|:---|
    | **Name** | Type a name for your new deployment package. For example, type _MDE-MDAV Security Intelligence Update_. |
    | **Description** | Type a brief description for your new deployment package |
-   | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or click **Browse** to navigate to - and select - your package source. |
+   | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or select **Browse** to navigate to - and select - your package source. |
    | **Sending piroity:** | Select **High** and select **Enable binary differential replication** |
    
-1. Click **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution point groups to host the content**,  click **Add** and then specify your distribution point or distribution point groups.
+1. Select **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution point groups to host the content**,  select **Add** and then specify your distribution point or distribution point groups.
    
-1. Click **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then click **Next**.
+1. Select **Next**. On the **Distribution location** page, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then select **Next**.
    
 1. On the **Distribution location** page, under **Specify the update languages for product**, under **product**, select **Windows Update**. 
    
-1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
+1. Select **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
    
    | In: | Change: |
    |:---|:---|
@@ -141,11 +141,11 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Deployment options** | Select **Download and install software updates from the distribution points in site default boundary group** |
    | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundary group settings, Microsoft update will be the preferred source.** |
    
-1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure.
+1. Select **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure.
    
    :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly configured Automatic Deployment Rule." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
 
-1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
+1. Select **Next**. Wait until the process completes and the **Completion** page opens. Select **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
    
    :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deployment Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
 
@@ -162,7 +162,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Each time the rule runs and finds new updates**. | Select **Add to an existing Software Update Group** |
    | **Each time the rule runs and finds new updates** | Select **Enable the deployment after this rule is run** |
 
-1. Click **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
+1. Select **Next**. On the **Deployment Settings** page, under **Specify the settings for this Automatic Deployment Rule**, then do the following:
    
    | In: | Change: |
    |:---|:---|
@@ -170,7 +170,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Detail level** | Select **Only error messages** |
    | **Some software updates include a license agreement** | Select **Automatically deploy all software updates found by this rule, and approve any license agreements**. |
    
-1. Click **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, enter the following:
+1. Select **Next**. On the **Software Updates** page, under **Select the property filters and search criteria**, enter the following:
    
    | In: | Change: |
    |:---|:---|
@@ -187,7 +187,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    >
    > **Update Classification**: “Critical Updates” and “Definition Updates”
    
-1. Click **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then click **Customize**.
+1. Select **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then select **Customize**.
 
 1. On the **Deployment Schedule** page, under **Configure schedule details for this deployment, do the following:
    
@@ -197,7 +197,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Software available time** | Select **As soon as possible** |
    | **Installation deadline** | Select **As soon as possible** | 
    
-1. Click **Next**. On the **User Experience** page, under **Specify the user experience for this deployment**, ensure the following are selected:
+1. Select **Next**. On the **User Experience** page, under **Specify the user experience for this deployment**, ensure the following are selected:
    
    | In: | Change: |
    |:---|:---|
@@ -206,15 +206,15 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Device restart behavior** | Select **Servers** | 
    | **Write filter handling for Windows Embedded devices** | Select **Commit changes at deadline or during a maintenance windows (requires restarts)** |
    
-1. Click **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, click **Browse**, navigate to, and select the deployment package and then click **Next**.
+1. Select **Next**. On the **Alerts** page, under **Specify software update alert options for this deployment**, select **Generate an alert when this Rule fails**, select **Browse**, navigate to, and select the deployment package and then select **Next**.
    
 1. On the top-level **Deployment Package** page, under **Select deployment package for this automatic deployment rule**, select **Select a deployment package**.
    
-1. On the **Download Location page**, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then click **Next**.
+1. On the **Download Location page**, under **Specify download location for this Automatic Deployment Rule**, select **Download software updates from the Internet**, and then select **Next**.
    
 1. On the **Language Selection** page, under **Specify the update languages for product**, under **Product**, specify the necessary Product and Update languages.
    
-1. Click **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
+1. Select **Next**. On the **Download Settings** page, under **Specify the software updates download behavior for clients on slow site boundaries**,  select the following:
    
    | In: | Change: |
    |:---|:---|
@@ -222,16 +222,16 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Deployment options** | Select **Download and install software updates from the distribution points site default boundary group** |
    | **Deployment options** | Select **"Prefer cloud based sources over on-premises sources" is configures in the boundary group settings, Microsoft update will be the preferred source.** |
    
-1. Click **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure:
+1. Select **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure:
    
    :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png" alt-text="Shows as screen capture of the configuration details for the newly configured Automatic Deployment Rule for a production environment." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png":::
 
-1. Click **Next**. Wait until the process completes and the **Completion** page opens. Click **Close** to finish the process. 
+1. Select **Next**. Wait until the process completes and the **Completion** page opens. Select **Close** to finish the process. 
 
 ### If you encounter problems
 
 1. Navigate to **Software Library**
-1. Under **Software Updates**, click on **Automatic Deployment Rules**, right-click on **MDE-MDAV_Security_Intelligence_Update_Production**, and then click **Disable**. This setting is shown in the following figure:
+1. Under **Software Updates**, select on **Automatic Deployment Rules**, right-click on **MDE-MDAV_Security_Intelligence_Update_Production**, and then select **Disable**. This setting is shown in the following figure:
 
    :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules if you encounter errors or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
 
