@@ -76,8 +76,8 @@ DKE sensitivity labels are made available to end users through the sensitivity b
 **Labeling scenarios outside of Office apps**
 Apply DKE labels outside of Office apps using the File Explorer "Classify & Protect" right-click, AIP PowerShell commandlets or the AIP scanner by administrators.
 
-**Outlook encryption only and do not forward scenarios**
-Configuring DKE for supported scenarios will create a warning in the label configuration experience. For encryption only and do not forward, these unsupported scenarios have no warning in the label configuration experience.
+**Encryption only and do not forward scenarios**
+Encrypt Only and Do Not Forward are not supported with DKE, including all DKE scenarios with AIP, the SDK, or the built-in labeling experience. If you attempt to configure DKE for unsupported scenarios, such as Encrypt Only and Do Not Forward, you'll see a warning in the label configuration experience, and you won't be able to save your configuration.
 
 ## Overview of deploying DKE
 
