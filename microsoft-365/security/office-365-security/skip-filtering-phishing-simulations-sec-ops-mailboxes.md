@@ -18,7 +18,7 @@ ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that shouldn't be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/5/2023
+ms.date: 5/31/2023
 ---
 
 # Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes
@@ -55,7 +55,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 - [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer-about.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 - The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message that was allowed by organization policy by either **SecOps mailbox** or **Phishing simulation** under **Tenant override** in the **Override(s)** section.
-- The [Threat protection status report](reports-email-security.md#threat-protection-status-report): Admin can filter by **view data by System override** in the drop down menu and select to see messages allowed due to a phishing simulation system override. To see messages allowed by the SecOps mailbox override, you can select **chart breakdown by delivery location** in the **chart breakdown by reason** drop down menu.
+- The [Threat protection status report](reports-email-security.md#threat-protection-status-report): Admin can filter by **view data by System override** in the drop down menu and select to see messages allowed due to a phishing simulation system override. To see messages allowed by the SecOps mailbox override, you can select **chart breakdown by delivery location** in the **chart breakdown by reason** dropdown list.
 - [Advanced hunting in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md): Phishing simulation and SecOps mailbox system overrides are options within OrgLevelPolicy in EmailEvents.
 - [Campaign Views](campaigns.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 
@@ -126,7 +126,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 >
 > - At least one **Domain**.
 > - At least one **Sending IP**.
-> - For **non-email** phishing simulations (for example, Microsoft Teams messages or Office apps like Word or Excel), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
+> - For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
 >
 > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
 >
@@ -152,7 +152,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
+   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
      Add URL entries by expanding this setting, clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list).
 
@@ -335,7 +335,7 @@ In PowerShell, the basic elements of third-party phishing simulations in the adv
 - **The allowed (unblocked) phishing simulation URLs**: Controlled by the **\*-TenantAllowBlockListItems** cmdlets.
 
 > [!NOTE]
-> As previously described, identifying phishing simulation URLs isn't required for links email-based phishing simulations. You can optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
+> As previously described, identifying URLs isn't required for links in email-based phishing simulations. You can optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
 This behavior has the following results:
 
@@ -352,7 +352,7 @@ Configuring a third-party phishing simulation in PowerShell is a multi-step proc
 2. Create the phishing simulation override rule that specifies:
    - The policy that the rule applies to.
    - The source IP address of the phishing simulation messages.
-3. Optionally, identity the phishing simulation URLs in **non-email** phishing simulations (links in Teams messages or in Office apps) that shouldn't be treated as real threats at time of click.
+3. Optionally, identity the phishing simulation URLs in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
