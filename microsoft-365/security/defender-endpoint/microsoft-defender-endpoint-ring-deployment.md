@@ -45,12 +45,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-<p><p>
-
-Watch the following video to learn more about Defender for Endpoint:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
-
 Deploying Microsoft Defender for Endpoint can be done using a ring-based deployment approach and updating using the gradual rollout process.
 
 ## Ring deployment overview
