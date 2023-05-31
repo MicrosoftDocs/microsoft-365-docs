@@ -45,7 +45,7 @@ IoC matching is an essential feature in every endpoint protection solution. This
 
 Organizations can create indicators that define the detection, prevention, and exclusion of IoC entities. You can define the action to be taken as well as the duration for when to apply the action, and the scope of the device group to apply it to.
 
-This video introduces IoC and a walkthrough of creating and adding indicators:
+This video shows a walkthrough of creating and adding indicators:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
@@ -159,5 +159,6 @@ Customers may experience issues with alerts for Indicators of Compromise. The fo
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
+
 
 
