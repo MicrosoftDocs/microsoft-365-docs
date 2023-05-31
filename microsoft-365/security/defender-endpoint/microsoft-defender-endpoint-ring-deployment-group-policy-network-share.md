@@ -45,19 +45,17 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and network share." lightbox="images/mde-deploy-ring-gp-mu-schedule.png":::
-
 ## Prerequisites
 
 Review the _read me_ article at [Readme](https://github.com/microsoft/defender-updatecontrols/blob/main/README.md) 
 https://github.com/microsoft/defender-updatecontrols/blob/main/README.md
 
-Download the latest defender .admx and .adml 
+1. Download the latest defender .admx and .adml 
 
-- [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
-- [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)
+   - [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
+   - [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)
 
-2)	Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
+1. Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
 
 
 ## Setting up the Pilot (UAT/Test/QA) environment
