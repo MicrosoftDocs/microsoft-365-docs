@@ -47,6 +47,8 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 :::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and Microsoft Updates." lightbox="images/mde-deploy-ring-gp-mu-schedule.png"::
 
+:::image type="content" source="images/mde-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for updating Microsoft Defender Antivirus using Group Policy and Microsoft Updates." lightbox="images/mde-deploy-ring-gp-mu-schedule.png":::
+
 ## Prerequisites
 
 Review the _read me_ article at [Readme](https://github.com/microsoft/defender-updatecontrols/blob/main/README.md) 
@@ -66,3 +68,5 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 
 > [!NOTE]
 > If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+
+

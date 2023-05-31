@@ -121,7 +121,7 @@
         href: microsoft-defender-endpoint-ring-deployment-sscm-wsus.md
       - name: Ring deployment using Group Policy and Microsoft Updates
         href: microsoft-defender-endpoint-ring-deployment-group-policy-microsoft-update.md
-        - name: Ring deployment using Group Policy and network share
+      - name: Ring deployment using Group Policy and network share
         href: microsoft-defender-endpoint-ring-deployment-group-policy-network-share.md      
       - name: Ring deployment using Group Policy and Windows Server Update Services (WSUS)
         items: 
