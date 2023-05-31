@@ -1,5 +1,5 @@
 ---
-title: Overview of the OCR service in Microsoft Syntex
+title: Extract text from images using the OCR service in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn about optical character recognition in Microsoft Syntex.
+description: Learn how to extract text from images using optical character recognition in Microsoft Syntex.
 ---
 
-# Overview of the OCR service in Microsoft Syntex
+# Extract text from images using the OCR service in Microsoft Syntex
 
 Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
