@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 05/31/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -280,9 +280,15 @@ For more information, see [Rights Management issuer and Rights Management owner]
 ### Double Key Encryption
 
 > [!NOTE]
-> This feature is currently supported only by the Azure Information Protection unified labeling client, and if you haven't enabled your tenant for co-authoring and AutoSave for encrypted document.
+> For built-in labeling, this feature is currently in preview. For release details, use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
+> 
+> When you use the Azure Information Protection (AIP) Office add-in, DKE is supported only when you haven't enabled your tenant for co-authoring and AutoSave.
 
-Select this option only after you've configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied. After the label is configured and saved, you won't be able to edit it.
+Limitation for the preview of Double Key Encryption and built-in labeling:
+
+- Currently, sensitivity labels using built-in labeling and configured for Double Key Encryption don't apply content markings in Outlook.
+
+Select the **Double Key Encryption** label option only after you've configured the Double Key Encryption service and you need to use this double key encryption for files and emails that will have this label applied. After the label is configured and saved, you won't be able to edit it.
 
 For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
 
