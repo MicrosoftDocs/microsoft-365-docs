@@ -277,7 +277,7 @@ OCR settings do not apply to forensic evidence clips in insider risk management.
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before potentially risky activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
 
 > [!NOTE]
-> To create a custom trigger or indicator for a non-Microsoft workload, see [Custom indicators](insider-risk-management-settings.md#custom-indicators).
+> To create a custom trigger or indicator for a non-Microsoft workload, see [Custom indicators](insider-risk-management-settings-policy-indicators.md#custom-indicators).
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.

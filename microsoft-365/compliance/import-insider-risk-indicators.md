@@ -34,7 +34,7 @@ To bring your own detections to the insider risk management solution, you import
 Bringing your own detections to insider risk management is a three-step process:
 
 1. In Microsoft Purview, create the Insider Risk Indicators (preview) connector as described in this article.
-2. In the insider risk management solution, [create custom indicators](insider-risk-management-settings.md#custom-indicators). 
+2. In the insider risk management solution, [create custom indicators](insider-risk-management-settings-policy-indicators.md#custom-indicators). 
 3. In the insider risk management solution, [use the custom indicators in policies as triggers or indicators and define thresholds](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
 
 When a user activity crosses the threshold value that you specify for the policy, the user is brought into scope of the policy, and then is scored for risk. An alert is generated and analysts can investigate the alert using custom indicator details.
@@ -356,5 +356,5 @@ If needed, you can update the flow to create triggers based on file availability
 
 ## Next steps
 
-- [Create custom indicators in insider risk management](insider-risk-management-settings.md#custom-indicators)
+- [Create custom indicators in insider risk management](insider-risk-management-settings-policy-indicators.md#custom-indicators)
 - [Use the custom indicators in policies as triggers or indicators and define thresholds](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy)
