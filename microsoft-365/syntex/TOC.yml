@@ -147,6 +147,9 @@
     - name: Annotations
       href: annotations.md
 
+    - name: Optical character recognition 
+      href: ocr.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
