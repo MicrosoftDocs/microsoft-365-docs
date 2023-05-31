@@ -79,31 +79,31 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
    The three options are shown in the following figure.
 
-   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Shows a screen capture of the Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png"::: 
+   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png"::: 
 
    For more information, see [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout.md)
 
-1. For platform updates, double-click **Select the channel for Microsoft Defender monthly Platform updates**.
+1. Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
 
-1. On the **Select the channel for Microsoft Defender monthly Platform updates** page, select **Enabled**, and in **Options**, select **Beta Channel**. These two settings are shown in the following figure:
+1. For _intelligence_ updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
 
-   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-beta.png" alt-text="Shows a screen capture of the Select the channel for Microsoft Defender monthly Platform updates page with Enabled and Beta Channel selected." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-beta.png":::
+   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+
+1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Staged)**.
 
 1. Select **Apply**, and then select **OK**.
 
 1. Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
 
-1. For engine updates, double-click **Select the channel for Microsoft Defender monthly engine updates**.
+1. For _engine_ updates, double-click **Select the channel for Microsoft Defender monthly engine updates**.
 
 1. On the **Select the channel for Microsoft Defender monthly Platform updates** page, select **Enabled**, and in **Options**, select **Beta Channel**.
 
 1. Select **Apply**, and then select **OK**.
 
-1. Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
+1. For _platform_ updates, double-click **Select the channel for Microsoft Defender monthly Platform updates**.
 
-1. For intelligence updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
-
-1. On the **Select the channel for Microsoft Defender monthly imtelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Staged)**.
+1. On the **Select the channel for Microsoft Defender monthly Platform updates** page, select **Enabled**, and in **Options**, select **Beta Channel**. These two settings are shown in the following figure:
 
 1. Select **Apply**, and then select **OK**.
 
@@ -113,3 +113,80 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 - [Use Endpoint security Antivirus policy to manage Microsoft Defender update behavior (Preview)](/mem/intune/fundamentals/whats-new#use-endpoint-security-antivirus-policy-to-manage-microsoft-defender-update-behavior-preview)
 - [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout.md)
 
+## Setting up the production environment
+
+1. In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.  
+
+   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Shows a screen capture of the production Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channels.png"::: 
+
+1. Set the three policies as follows: 
+
+   | Feature | Recommendation for the production systems | Remarks |
+   |:---|:---| 
+   | Select the channel for Microsoft Defender daily **Security Intelligence updates** | Current Channel (Broad) | This setting provides you with 3 hours of time to find an FP and prevent the production systems from getting an incompatible signature update. |
+   | Select the channel for Microsoft Defender monthly **Engine updates**  | Critical – Time delay | Updates are delayed by two days. |
+   | Select the channel for Microsoft Defender monthly **Platform updates**  | Critical – Time delay | Updates are delayed by two days. |
+
+1. For _intelligence_ updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
+
+1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Broad)**.
+
+   :::image type="content" source="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/mde-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+
+1. Select **Apply**, and then select **OK**.
+
+1. For _engine_ updates, double-click **Select the channel for Microsoft Defender monthly engine updates**.
+
+1. On the **Select the channel for Microsoft Defender monthly Platform updates** page, select **Enabled**, and in **Options**, select **Critical – Time delay**.
+
+1. Select **Apply**, and then select **OK**.
+
+1. For _platform_ updates, double-click **Select the channel for Microsoft Defender monthly Platform updates**.
+
+1. On the **Select the channel for Microsoft Defender monthly Platform updates** page, select **Enabled**, and in **Options**, select **Critical – Time delay**.
+
+1. Select **Apply**, and then select **OK**.
+
+## If you encounter problems
+
+If you encounter problems with your deployment, create or append your Microsoft Defender Antivirus policy:
+
+1. In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), create or append to your Microsoft Defender Antivirus policy using the following setting:
+ 
+   Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > (administrator-defined) _PolicySettingName_. For example, _MDAV\_Settings\_Production_, right-click, and then select **Edit**. **Edit** for **MDAV\_Settings\_Production** is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-edit.png"::: 
+
+1. Select **Define the order of sources for downloading security intelligence updates**.
+
+1. Select the radio button named **Enabled**. 
+
+1. Under **Options:**, change the entry to _FileShares_, select **Apply**, and then select **OK**. This change is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-define-order.png"::: 
+
+1. Select **Define the order of sources for downloading security intelligence updates**.
+
+1. Select the radio button named **Disabled**, select **Apply**, and then select **OK**. The disabled option is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-policy-disabled.png"::: 
+
+1. The change is active when Group Policy updates. There are two methods to refresh Group Policy:
+
+   - From the command line, run the Group Policy update command. For example, run `gpupdate / force`. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate.md)
+   - Wait for Group Policy to automatically refresh. Group Policy refreshes every 90 minutes +/- 30 minutes.
+
+   If you have multiple forests/domains, force replication or wait 10-15 minutes. Then force a Group Policy Update from the Group Policy Management Console. 
+
+   - Right-click on an organizational unit (OU) that contains the machines (for example, Desktops), select **Group Policy Update**. This UI command is the equivalent of doing a gpupdate.exe /force on every machine in that OU. The feature to force Group Policy to refresh is shown in the following figure:
+
+   :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
+
+1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`.
+
+
+## See also
+
+- [Antivirus profiles - Devices managed by Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy#antivirus-profiles)
+- [Use Endpoint security Antivirus policy to manage Microsoft Defender update behavior (Preview)](/mem/intune/fundamentals/whats-new#use-endpoint-security-antivirus-policy-to-manage-microsoft-defender-update-behavior-preview)
+- [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout.md)
