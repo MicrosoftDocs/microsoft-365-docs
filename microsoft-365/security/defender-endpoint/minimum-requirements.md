@@ -49,6 +49,10 @@ For information licensing requirements for Microsoft Defender for Endpoint, see 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
 For more information on the array of features in Windows editions, see [Compare Windows editions](https://www.microsoft.com/windowsforbusiness/compare).
+
+> [!NOTE]
+> You can onboard and secure up to five client devices per user license.
+
 ## Browser requirements
 
 Access to Defender for Endpoint is done through a browser, supporting the following browsers:
