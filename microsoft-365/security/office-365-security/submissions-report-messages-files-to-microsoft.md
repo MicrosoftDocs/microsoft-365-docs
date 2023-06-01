@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 5/31/2023
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
@@ -55,7 +55,7 @@ Watch this video that shows more information about the unified submissions exper
 - [The Submissions page](submissions-admin.md)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md)
 - [The User-reported messages report](reports-email-security.md#user-reported-messages-report)
-- [Threat Explorer](threat-explorer-views.md#email--submissions)
+- [Threat Explorer](threat-explorer-views.md)
 
 Admins can use mail flow rules (also known as transport rules) to notify specified email address when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
 
