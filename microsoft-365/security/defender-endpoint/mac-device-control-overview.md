@@ -127,8 +127,8 @@ Query type 1 is as follows:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| `$type` | Identify the logical operation to perform on the clauses | **all**: Any attributes under the **clauses** will be an _And_ relationship. For example, if the administrator puts `vendorId` and `serialNumber`, for every connected USB, the system will check to see whether the USB meets both values.<br> **and**: is equivalent to _all_ <br> **any:** The attributes under the **clauses** will be _Or_ relationship. For example, if administrator puts `vendorId` and `serialNumber`, for every connected USB, system will do the enforcement as long as the USB has either an identical `vendorId` or `serialNumber` value. <br> **or**: is equivalent to _any_ |
-| `clauses` | Use media device property to set group condition. | An array of clause objects which are evaluated to determine group membership. See the [Clause](#clause) section below. |
+| `$type` | Identify the logical operation to perform on the clauses | **all**: Any attributes under the **clauses** are an _And_ relationship. For example, if the administrator puts `vendorId` and `serialNumber`, for every connected USB, the system checks to see whether the USB meets both values.<br> **and**: is equivalent to _all_ <br> **any:** The attributes under the **clauses** are _Or_ relationship. For example, if administrator puts `vendorId` and `serialNumber`, for every connected USB, system does the enforcement as long as the USB has either an identical `vendorId` or `serialNumber` value. <br> **or**: is equivalent to _any_ |
+| `clauses` | Use media device property to set group condition. | An array of clause objects that are evaluated to determine group membership. See the [Clause](#clause) section below. |
 
 Query type 2 is as follows:
 
@@ -153,9 +153,9 @@ Query type 2 is as follows:
 | `primaryId` | One of: <br>- `apple_devices`<br>- `removable_media_devices` <br>- `portable_devices` <br>- `bluetooth_devices` | |
 | `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
 | `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
-| `serialNumber` | string | Matches a device’s serial number.  Will not match if device does not have a serial number. |
+| `serialNumber` | string | Matches a device’s serial number.  Won't match if device doesn't have a serial number. |
 | `encryption` | apfs | Match if a device is apfs-encrypted. |
-| `groupId` | UUID string | Match if a device is a member of another group.  The value represents the UUID of the group to match against. <br> Note that the group must be defined within the policy prior to the clause. |
+| `groupId` | UUID string | Match if a device is a member of another group.  The value represents the UUID of the group to match against. <br> The group must be defined within the policy prior to the clause. |
 
 ### Access policy rule
 
@@ -163,8 +163,8 @@ Query type 2 is as follows:
 |:---|:---|:---|
 | `id` | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
 | `name` | String, the name of the policy and will display on the toast based on the policy setting. | |
-| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy will be applied to any media in all those groups.  If not specified, the rule will be applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it will be _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| `excludeGroups` | The group(s) that the policy will not be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it will be _OR_. |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy is applied to any media in all those groups.  If not specified, the rule is applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it is _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group(s) that the policy won't be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it is _OR_. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table below to get details. |
 
 The following table lists the properties you can use in your entry:
@@ -219,15 +219,15 @@ The following table lists the properties you can use in entry:
 | generic | generic_write | | Equivalent to setting all access values denoted in this table that map to generic_write. |
 | generic | generic_execute | | Equivalent to setting all access values denoted in this table that map to generic_execute. |
 
-## Enduser experience
+## End-user experience
 
-Once Deny happens and the notification is enabled in the policy, the end user will see a dialog:
+Once Deny happens and the notification is enabled in the policy, the end user sees a dialog:
 
 :::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
 
 ## Reporting
 
-You will be able to see the policy event on Advanced hunting and Device Control report. For more details, see [Protect your organization's data with Device Control](device-control-report.md).
+You'll be able to see the policy event on Advanced hunting and Device Control report. For more information, see [Protect your organization's data with Device Control](device-control-report.md).
 
 ## Scenarios
 
@@ -235,7 +235,7 @@ Here are some common scenarios to help you familiarize with Microsoft Defender f
 
 ### Scenario 1: Deny any removable media but allow specific USBs
 
-In this scenario, you need to create two groups: one group for any removable medias, and another group for approved USBs group. You also need to create an access policy rule.
+In this scenario, you need to create two groups: one group for any removable media, and another group for approved USBs group. You also need to create an access policy rule.
 
 #### Step 1: Settings: enable Device Control and set Default Enforcement
 
@@ -425,10 +425,10 @@ Create access policy rule and put into ‘rules’:
     ] 
 ```
 
-In this case, only have one access rule policy, but if you have multiple, make sure add all into ‘rules’.
+In this case, only have one access rule policy, but if you have multiple, make sure to add all into ‘rules’.
 
 ## See also
 
 - [Deploy Device Control by using Intune](mac-device-control-intune.md)
 - [Deploy Device Control by using JAMF](mac-device-control-jamf.md)
-- [MacOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+- [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
