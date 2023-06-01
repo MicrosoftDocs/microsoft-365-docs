@@ -83,7 +83,7 @@ Here's a list of applicable roles. To learn more about them, see [Permissions in
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more about these role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
