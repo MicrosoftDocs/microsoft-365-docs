@@ -95,6 +95,19 @@ sections:
           
           To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
 
+      - question: Are device control removable storage protection capabilities available in Microsoft Defender for Business?
+        answer: |
+          [Device control removable storage protection in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection) prevents users, endpoints, or both from using unauthorized removable storage media.
+
+          These capabilities can be configured in Defender for Business, as described in the following table:
+
+          | OS | Method | Notes |
+          |---|---|---|
+          | Windows  | [Attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) | You'll need Microsoft Intune to set up your ASR rules. Intune is not included in the standalone version of Defender for Business, but you can add it on. Intune is included in Microsoft 365 Business Premium. <br/><br/>|
+          | Mac | 
+
+
+
       - question: How do I run custom reports with Defender for Business?
         answer: |
           Defender for Business currently includes a set of APIs to support robust custom reporting, and a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email. See [API reference information](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners). Also see [Microsoft Defender for Business and Microsoft partner resources](mdb-partners.md).
