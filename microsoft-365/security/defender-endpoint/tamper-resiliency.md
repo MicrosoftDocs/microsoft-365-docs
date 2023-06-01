@@ -18,7 +18,7 @@ audience: ITPro
 
 # Protect your organization from the effects of tampering
 
-Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack.  As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device to detecting attacks and minimizing their impact. 
+Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack. As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device to detecting attacks and minimizing their impact. 
 
 **Applies to:**
 
@@ -29,7 +29,7 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 ## Organization wide tamper resiliency is built on Zero Trust
 
-The foundation for defending against tampering is following a [Zero Trust](/windows/security/zero-trust-windows-device-health) model.   
+The foundation for defending against tampering is following a [Zero Trust](/windows/security/zero-trust-windows-device-health) model. 
 
 - Follow the best practice of least privilege. See [Access control overview for Windows](/windows/security/identity-protection/access-control/access-control).
 - Configure [Conditional Access policies](/azure/active-directory/conditional-access/overview) to keep untrusted users and devices isolated.
@@ -48,7 +48,7 @@ You can view health status for [Microsoft Defender Antivirus](/microsoft-365/sec
 
 ## Preventing tampering on a single device
 
-Attackers use various tampering techniques to disable Microsoft Defender for Endpoint on a single device.  These techniques are prevented differently on different operating systems.
+Attackers use various tampering techniques to disable Microsoft Defender for Endpoint on a single device. These techniques are prevented differently on different operating systems.
 
 | Control | OS | Technique Families |
 |--- |---| ---|
@@ -70,18 +70,18 @@ Microsoft provides several ways to keep devices well protected and up-to-date ag
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year. Microsoft will occasionally publish future updates through regular Windows servicing. With Windows 11 2022 update, the vulnerable driver blocklist is enabled by default for all devices, but requires either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode to be active. 
 
-See [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  
+See [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).
 
 For devices that don't meet those requirements, this list of drivers can be blocked by using Windows Defender Application Control policy. 
 
-See [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  
+See [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).
 
 
 ### Faster updates - Block exploited vulnerable and signed drivers ASR rule
 
-This list of drivers blocked by the exploited and vulnerable drivers get updated more frequently than the recommended drivers blocklist.  ASR rules can run in audit mode first to ensure that there's no impact before applying the rule in block mode.
+This list of drivers blocked by the exploited and vulnerable drivers get updated more frequently than the recommended drivers blocklist. ASR rules can run in audit mode first to ensure that there's no impact before applying the rule in block mode.
 
-See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)).  
+See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)).
 
 ### Block other drivers - Windows Defender Application Control (WDAC)
 
@@ -91,14 +91,14 @@ WDAC also provides an audit mode to help understand the impact of applying the p
 
 ## Preventing tampering via Microsoft Defender Antivirus exclusions on Windows
 
-A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents such attacks from occurring when all of the following conditions are met:
+A common technique used by attackers is to make unauthorized changes to anti-virus exclusions. Tamper protection prevents such attacks from occurring when all of the following conditions are met:
 
 - The device is managed by Intune; and 
 - The device has [Disable Local Admin Merge enabled](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#use-microsoft-intune-to-disable-local-list-merging).
 
 For more information, see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
 
-Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).  
+Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).
 
 ## Detecting potential tampering activity in the Microsoft 365 Defender portal 
 
