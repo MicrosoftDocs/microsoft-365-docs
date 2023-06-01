@@ -55,8 +55,7 @@ Microsoft continually updates security intelligence in antimalware products to c
 
 ## Appendix B - Engine Updates
 
-Engine updates, are the updates for the scan engine, which is used by the “Security Intelligence Updates”
-Note: First released on [July 15, 2010](http://blogs.technet.com/b/enginenotifications/archive/2010/07/09/antimalware-engine-release-for-july-2010.aspx)
+Engine updates are the updates for the scan engine, which is used by the “Security Intelligence Updates”. First released on July 15, 2010.
 
 ## Appendix C - Platform Updates
 
