@@ -33,7 +33,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
 |Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 22H2|
-|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2303|
+|Microsoft Configuration Manager, Version 2103|Microsoft Configuration Manager, Version 2303|
 |Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -110,7 +110,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 - [Windows client deployment resources and documentation](/windows/deployment)
 - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
-- [Microsoft Endpoint Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+- [Microsoft Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Getting Started with Intune](/intune/get-started-evaluation)
 
