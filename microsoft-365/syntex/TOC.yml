@@ -48,6 +48,8 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Manage library settings
+                  href: manage-library-settings.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
                 - name: Manage models with PowerShell
