@@ -52,7 +52,7 @@ Microsoft Defender Antivirus is the [next generation protection](https://www.you
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category that has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- 2022 AV-TEST Award – for tested IT Security :  [Best Advanced Protection for Consumer Users and Best Advanced Protection](https://www.av-test.org/en/news/av-test-award-2022-for-microsoft/)
+- 2022 AV-TEST Award – for tested IT Security:  [Best Advanced Protection for Consumer Users and Best Advanced Protection](https://www.av-test.org/en/news/av-test-award-2022-for-microsoft/)
 
 - November - December 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup>**Latest**</sup>
 
