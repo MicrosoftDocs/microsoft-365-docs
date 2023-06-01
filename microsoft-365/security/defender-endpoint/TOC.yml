@@ -562,7 +562,7 @@
         href: evaluate-microsoft-defender-antivirus.md
       - name: Microsoft Defender Antivirus ring deployments
         items:
-        - name: Microsoft Defender Antivirus ring deployments overview
+        - name: Microsoft Defender Antivirus ring deployment overview
           href: microsoft-defender-antivirus-ring-deployment.md
         - name: Microsoft defender Antivirus ring deployment guides
           items:

@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Deploy Microsoft Defender Antivirus in rings for a gradual rollout process
+# Deploy Microsoft Defender Antivirus in rings
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,6 +60,8 @@ Updates are released monthly using a gradual release process. This process helps
 
 > [!NOTE]
 > For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
+
+This article provides overview information about deploying Microsoft Defender Antivirus in rings for a gradual rollout process.
 
 ## Management tools
 
