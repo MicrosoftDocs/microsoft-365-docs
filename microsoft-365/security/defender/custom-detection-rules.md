@@ -126,19 +126,27 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time, see [Continous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
->[!NOTE]
->If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
 
 When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 
-Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
 
-##### Tables that support Continuous (NRT) frequency
+##### Continuous (NRT) frequency
+
+Setting a custom detection to run in Continuous (NRT) frequency increases your organization's ability to identify threats faster and has minimal to no impact to your resource usage.
+
+###### Queries you can run continously
+
+You can run a query continuously as long as:
+- The query references one table only.
+- The query uses an operator from the list of supported KQL operators. **[Supported KQL features](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features)**
+- The query does not use joins, unions, or the `externaldata` operator.
+
+###### Tables that support Continuous (NRT) frequency
 
 Near real-time detections are supported for the following tables:
 
