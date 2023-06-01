@@ -16,9 +16,9 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-# Protect your organization from the impact of tampering
+# Protect your organization from the effects of tampering
 
-Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack.  As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device, but detecting attacks and minimizing their impact. 
+Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack.  As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device to detecting attacks and minimizing their impact. 
 
 **Applies to:**
 
