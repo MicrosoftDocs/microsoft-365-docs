@@ -62,16 +62,16 @@ Beyond basic hygiene, attackers use a varierty of tampering techniques to disabl
 
 One of the most common tampering techniques is to use a driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.To assist customers in blocking drivers, Microsoft provides a layered approach. 
 
-### Blocking known bad drivers with Windows 
+### Block known bad drivers with Windows 
 A known bad driver is a driver that has no legitimate use.  These drivers are blocked from being loaded by Windows using the [Microsoft recommended driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  This functionality in on by default. It is updated as part of operating system releases.  
 
 Customers who want to stay more up-to-date can use WDAC to deploy the [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  
 
-### Blocking exploited vulnerable and signed drivers with Attack Surface Reduction (ASR) rules
+### Block exploited vulnerable and signed drivers with Attack Surface Reduction (ASR) rules
 An exploited vulnerable and signed driver is a driver that has legitimate usage, but is also being leveraged by attackers for tampering.  These drivers
 can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and has an audit mode to give customers visibility and control over which devices the ASR rule is deployed.
 
-### Blocking additional drivers with Windows Defender Application Control (WDAC)
+### Block additional drivers with Windows Defender Application Control (WDAC)
 Attackers may use drivers that are not blocked by either the recommended driver block list or by the ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
 
 WDAC also provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
