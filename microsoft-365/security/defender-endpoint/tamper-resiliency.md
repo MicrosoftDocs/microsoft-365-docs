@@ -18,7 +18,7 @@ audience: ITPro
 
 # Protect your organization from the impact of tampering
 
-Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers is not to impact a single device, but rather to achieve their objective such as launching a ransomware attack.  As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device, but detecting attacks and minimizing their impact. 
+Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack.  As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device, but detecting attacks and minimizing their impact. 
 
 **Applies to:**
 
@@ -48,12 +48,12 @@ The health of [Microsoft Defender Antivirus](/microsoft-365/security/defender-en
 
 ## Preventing tampering on a single device
 
-Attackers use a variety of tampering techniques to disable Microsoft Defender for Endpoint on a single device.  These techniques are prevented differently on different operating systems.
+Attackers use various tampering techniques to disable Microsoft Defender for Endpoint on a single device.  These techniques are prevented differently on different operating systems.
 
 | Control | OS | Technique Families |
 |--- |---| ---|
 | [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | - Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
-| [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | <br/>- Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
+| [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | - Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
 |Attack surface reduction (ASR) rules | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
 | Windows Defender Application Control (WDAC) | Windows | Kernel drivers (see [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
 
@@ -66,7 +66,7 @@ In order to prevent a driver based tampering on a single device, the device need
 
 Microsoft provides several ways to keep devices well protected and up-to-date against driver based tampering.
 
-### Broadest protection - Microsoft vulnerable driver block list
+### Broadest protection - Microsoft vulnerable driver blocklist
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year. Microsoft will occasionally publish future updates through regular Windows servicing. With Windows 11 2022 update, the vulnerable driver blocklist is enabled by default for all devices, but requires either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode to be active. 
 
@@ -79,7 +79,7 @@ See ([Vulnerable Driver blocklist XML](/windows/security/threat-protection/windo
 
 ### Faster updates - Block exploited vulnerable and signed drivers ASR rule
 
-This list of drivers blocked by the exploited and vulnerable drivers get updated more frequently than the recommended drivers block list.  ASR rules can run in audit mode first to ensure that there is no impact before applying the rule in block mode.
+This list of drivers blocked by the exploited and vulnerable drivers get updated more frequently than the recommended drivers blocklist.  ASR rules can run in audit mode first to ensure that there's no impact before applying the rule in block mode.
 
 See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)).  
 
