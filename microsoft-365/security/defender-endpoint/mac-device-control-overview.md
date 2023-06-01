@@ -85,7 +85,7 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 ```
 
 - Minimum product version: 101.91.92 or higher
-  - Run _mdatp version_ through Terminal, you will see product version on your client machine:
+- Run _mdatp version_ through Terminal to see the product version on your client machine:
 
 :::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
@@ -106,18 +106,18 @@ Here are the properties you can use when you create the group and policy.
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| features | Feature specific configurations | You can set ‘disable’ false/true for following features: <br> <ul><li>removableMedia</li><li>appleDevice</li><li>portableDevice, including camera or PTP media</li><li>bluetoothDevice</li></ul> <br> Default is true, so if you do not configure this value, even you create custom policy for removableMedia, system will not apply because it is disabled by default. |
-| global | Set default enforcement  | You can set **defaultEnforcement**: <br> <ul><li>allow: _default_</li><li>deny</li></ul> |
-| ux | You can set hyperlink on notification. | navigationTarget: string, for example, "http://www.microsoft.com". |
+| features | Feature specific configurations | You can set `disable` to false or true for following features: <br/>- `removableMedia`<br/>- `appleDevice`<br/>- `portableDevice`, including camera or PTP media<br/>- `bluetoothDevice`<br/><br/>The default is `true`, so if you don't configure this value, it will not apply even if you create a custom policy for `removableMedia`, because it's disabled by default. |
+| global | Set default enforcement  | You can set `defaultEnforcement` to<br/>- `allow` (_default_)<br/>- `deny` |
+| ux | You can set a hyperlink on notification. | `navigationTarget: string`. Example: `"http://www.microsoft.com"` |
 
 ### Group
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | The kind of group | “device” |
-| id | GUID, a unique ID, represents the group and will be used in the policy. | You can generate ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2&preserve-view=true) or the uuidgen command on macOS |
-| name | Friendly name for the group. | string |
-| query | The media coverage under this group | See the **query** properties tables below for details. |
+| `$type` | The kind of group | “device” |
+| `id` | GUID, a unique ID, represents the group and will be used in the policy. | You can generate the ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2&preserve-view=true) or the uuidgen command on macOS |
+| `name` | Friendly name for the group. | string |
+| `query` | The media coverage under this group | See the **query** properties tables below for details. |
 
 ### Query
 
@@ -127,15 +127,15 @@ Query type 1 is as follows:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | Identify the logical operation to perform on the clauses | **all**: Any attributes under the **clauses** will be an _And_ relationship. For example, if the administrator puts `vendorId` and `serialNumber`, for every connected USB, the system will check to see whether the USB meets both values.<br> **and**: is equivalent to _all_ <br> **any:** The attributes under the **clauses** will be _Or_ relationship. For example, if administrator puts `vendorId` and `serialNumber`, for every connected USB, system will do the enforcement as long as the USB has either an identical `vendorId` or `serialNumber` value. <br> **or**: is equivalent to _any_ |
-| clauses | Use media device property to set group condition. | An array of clause objects which are evaluated to determine group membership. See the [Clause](#clause) section below. |
+| `$type` | Identify the logical operation to perform on the clauses | **all**: Any attributes under the **clauses** will be an _And_ relationship. For example, if the administrator puts `vendorId` and `serialNumber`, for every connected USB, the system will check to see whether the USB meets both values.<br> **and**: is equivalent to _all_ <br> **any:** The attributes under the **clauses** will be _Or_ relationship. For example, if administrator puts `vendorId` and `serialNumber`, for every connected USB, system will do the enforcement as long as the USB has either an identical `vendorId` or `serialNumber` value. <br> **or**: is equivalent to _any_ |
+| `clauses` | Use media device property to set group condition. | An array of clause objects which are evaluated to determine group membership. See the [Clause](#clause) section below. |
 
 Query type 2 is as follows:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | Identify the logical operation to perform on the subquery | not: logical negation of a query |
-| query | A subquery | **A query which will be negated.** |
+| `$type` | Identify the logical operation to perform on the subquery | not: logical negation of a query |
+| `query` | A subquery | **A query which will be negated.** |
 
 ### Clause
 
@@ -143,19 +143,19 @@ Query type 2 is as follows:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | The type of clause | See the following table for supported clauses. |
-| value | $type specific value to use | |
+| `$type` | The type of clause | See the following table for supported clauses. |
+| `value` | $type specific value to use | |
 
 #### Supported clauses
 
 | clause $type | value | Description |
 |:---|:---|:---|
-| primaryId | One of: <br>- apple_devices <br>-removable_media_devices <br>- portable_devices <br>- bluetooth_devices | |
-| vendorId | 4 digit hexadecimal string | Matches a device’s vendor ID |
-| productId | 4 digit hexadecimal string | Matches a device’s product ID |
-| serialNumber | string | Matches a device’s serial number.  Will not match if device does not have a serial number. |
-| encryption | apfs | Match if a device is apfs-encrypted. |
-| groupId | UUID string | Match if a device is a member of another group.  ‘value’ represents the UUID of the group to match against. <br> Note: The group must be defined within the policy prior to the clause. |
+| `primaryId` | One of: <br>- apple_devices <br>-removable_media_devices <br>- portable_devices <br>- bluetooth_devices | |
+| `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
+| `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
+| `serialNumber` | string | Matches a device’s serial number.  Will not match if device does not have a serial number. |
+| `encryption` | apfs | Match if a device is apfs-encrypted. |
+| `groupId` | UUID string | Match if a device is a member of another group.  The value represents the UUID of the group to match against. <br> Note that the group must be defined within the policy prior to the clause. |
 
 ### Access policy rule
 
