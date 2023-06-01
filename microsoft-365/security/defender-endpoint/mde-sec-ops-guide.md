@@ -32,7 +32,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article gives an overview of the requirements and tasks for successfully operating Microsoft Defender for Endpoint in your organization. This helps your security operations center (SOC) to effectively detect and respond to email and collaboration-related security threats.
+This article gives an overview of the requirements and tasks for successfully operating Microsoft Defender for Endpoint in your organization. These tasks help your security operations center (SOC) effectively detect and respond to Microsoft Defender for Endpoint detected security threats.
 
 This article also describes daily, weekly, monthly, and ad-hoc tasks required to be performed by the security operations personnel in your organization.
 
@@ -156,7 +156,7 @@ Review the relevant What’s new pages for your fleet to understand the recently
 
 - **Review device excluded from policy**
  
-    If any devices are excluded from the policy for any reason, review whether the devices still need to be excluded.
+    If any devices are excluded from the Microsoft Defender Endpoint policy for any reason, review whether the device still needs to be excluded from the policy.
     
     > [!NOTE]
     > Review the troubleshooting mode for troubleshooting. See [Get started with troubleshooting mode in Microsoft Defender for Endpoint.](enable-troubleshooting-mode.md)
