@@ -110,7 +110,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
 
    If the value of the *DelayHoldApplied* or *DelayReleaseHoldApplied* property is set to **True**, a delay hold is applied to the mailbox and must be removed. For more information about delay holds, see [Step 4: Remove the delay hold from the mailbox](#step-4-remove-the-delay-hold-from-the-mailbox).
 
-   If the value of either properties is set to **False**, a delay hold is not applied to the mailbox, and you can skip Step 4.
+   If the value of either properties is set to **False**, a delay hold isn't applied to the mailbox, and you can skip Step 4.
 
 7. Run the following command to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
 
@@ -161,7 +161,7 @@ Perform the following steps in Exchange Online PowerShell.
     > [!NOTE]
     > It might take up to 240 minutes to disable single item recovery. Don't delete items in the Recoverable Items folder until this period has elapsed.
   
-4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock is not applied to the mailbox.
+4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock isn't applied to the mailbox.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
@@ -207,13 +207,13 @@ After you identify the retention policy, go to the **Data lifecycle management**
   
 ### Organization-wide retention policies
   
-Organization-wide, Exchange-wide, and Teams-wide retention policies are applied to every mailbox in the organization. They are applied at the organization level (not the mailbox level) and are returned when you run the **Get-OrganizationConfig** cmdlet in Step 1. Run the following command in [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell) to identify the organization-wide retention policies. Use the GUID (not including the  `mbx` prefix) for the organization-wide retention policies that you identified in Step 1.
+Organization-wide, Exchange-wide, and Teams-wide retention policies are applied to every mailbox in the organization. They're applied at the organization level (not the mailbox level) and are returned when you run the **Get-OrganizationConfig** cmdlet in Step 1. Run the following command in [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell) to identify the organization-wide retention policies. Use the GUID (not including the  `mbx` prefix) for the organization-wide retention policies that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this removes the user's mailbox from the retention policy.
 
 > [!IMPORTANT]
 > After you exclude a mailbox from an organization-wide retention policy, it may take up to 24 hours to synchronize this change and remove the mailbox from the policy.
@@ -252,7 +252,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance center, open the case, and remove the mailbox from the hold. For more information about identifying eDiscovery holds, see the "eDiscovery holds" section in [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
+After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance portal, open the case, and remove the mailbox from the hold. For more information about identifying eDiscovery holds, see the "eDiscovery holds" section in [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## Step 4: Remove the delay hold from the mailbox
 
@@ -289,11 +289,11 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
    Here's a list and description of the subfolders in the Recoverable Items folder that you can search and delete items from:
 
-   - **Deletions**: Contains soft-deleted items whose deleted item retention period has not expired. Users can recover soft-deleted items from this subfolder using the Recover Deleted Items tool in Outlook.
+   - **Deletions**: Contains soft-deleted items whose deleted item retention period hasn't expired. Users can recover soft-deleted items from this subfolder using the Recover Deleted Items tool in Outlook.
    - **DiscoveryHolds**: Contains hard-deleted items that have been preserved by an eDiscovery hold or a retention policy. This subfolder isn't visible to end users.
    - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold. This subfolder isn't visible to end users.
 
-3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Deletions and eDiscoveryHolds subfolders:
+3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance PowerShell) or use the Content search tool in the compliance portal to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Deletions and eDiscoveryHolds subfolders:
 
    ```text
    folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
@@ -385,11 +385,11 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     **Retention policies applied to specific mailboxes**
 
-    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
+    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
     **Organization-wide retention policies**
 
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this reapplies the retention policy to the user's mailbox.
 
     **eDiscovery case holds**
 
