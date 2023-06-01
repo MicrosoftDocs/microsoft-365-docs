@@ -42,7 +42,7 @@ This is the easiest method to use to delete a model. It deletes the model and au
     ![Screenshot of the Delete model confirmation page.](../media/content-understanding/delete-model-confirmation.png)
 
 > [!NOTE]
-> For freeform and structured models, this action doesn't delete the model in AI Builder. It only deletes from the SharePoint document library for Syntex.
+> For freeform and structured models, this action doesn't delete the model in AI Builder. It only deletes it from the SharePoint document library in Syntex.
 
 ## Delete a model from the Models library
 
