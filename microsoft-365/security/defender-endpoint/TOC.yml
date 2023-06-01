@@ -560,11 +560,11 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus
         href: evaluate-microsoft-defender-antivirus.md
-      - name: Microsoft Defender Antivirus ring deployments
+      - name: Microsoft Defender Antivirus ring deployment guides
         items:
         - name: Microsoft Defender Antivirus ring deployment overview
           href: microsoft-defender-antivirus-ring-deployment.md
-        - name: Microsoft defender Antivirus ring deployment guides
+        - name: Microsoft defender Antivirus ring deployments
           items:
           - name: Ring deployment using Group Policy and Microsoft Updates
             href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
