@@ -50,13 +50,9 @@ This article explains how admins can delete items from the Recoverable Items fol
 ## Before you delete items
 
 - To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./ediscovery-assign-permissions.md).
-
 - If a mailbox is assigned to an organization-wide retention policy, you have to exclude the mailbox from the policy before you can delete items from the Recoverable Items folder. It may take up to 24 hours to synchronize the policy change, and remove the mailbox from the policy. For more information, see "Organization-wide retention policies" in the [Remove all holds from the mailbox](#organization-wide-retention-policies) section in this article.
-
 - You can't perform this procedure for a mailbox that has been assigned retention settings with a retention policy that's locked by using Preservation Lock. That's because this lock prevents you from removing or excluding the mailbox from the policy and from disabling the Managed Folder Assistant on the mailbox. For more information about locking policies for retention,see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
-
 - The procedure described in this article isn't supported for inactive mailboxes. That's because you can't reapply a hold (or retention policy) to an inactive mailbox after you remove it. When you remove a hold from an inactive mailbox, it's changed to a normal soft-deleted mailbox and will be permanently deleted from your organization after it's processed by the Managed Folder Assistant.
-
 - If a mailbox isn't placed on hold (or doesn't have single item recovery enabled), you can delete the items from the Recoverable Items folder. For more information about how to do this, see [Search for and delete email messages in your organization](./search-for-and-delete-messages-in-your-organization.md).
 
 ## Step 1: Collect information about the mailbox
@@ -64,7 +60,6 @@ This article explains how admins can delete items from the Recoverable Items fol
 This first step is to collect selected properties from the target mailbox that will affect this procedure. Be sure to write down these settings or save them to a text file because you'll change some of these properties and then revert back to the original values in Step 6, after you delete items from the Recoverable Items folder. Here's a list of the mailbox properties you need to collect.
   
 - *SingleItemRecoveryEnabled*  and  *RetainDeletedItemsFor*. If necessary, you'll disable single recovery and increase the deleted items retention period in Step 3.
-
 - *LitigationHoldEnabled*  and  *InPlaceHolds*. You need to identify all the holds placed on the mailbox so that you can temporarily remove them in Step 3. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox.
 
 Additionally, you need to get the mailbox client access settings so you can temporarily disable them so the owner (or other users) can't access the mailbox during this procedure. Finally, you can get the current size and number of items in the Recoverable Items folder. After you delete items in the Recoverable Items folder in Step 5, you'll use this information to verify that items were removed.
@@ -136,11 +131,8 @@ Additionally, you need to get the mailbox client access settings so you can temp
 After collecting and saving information about the mailbox, the next step is to prepare the mailbox by performing the following tasks:
   
 - **Disable client access to mailbox** so that the mailbox owner can't access their mailbox and make any changes to the mailbox data during this procedure.
-
 - **Increase the deleted item retention period** to 30 days (the maximum value in Exchange Online) so that items aren't purged from the Recoverable Items folder before you can delete them in Step 5.
-
 - **Disable single Item recovery** so that items won't be retained (for the duration of the deleted item retention period) after you delete them from the Recoverable Items folder in Step 5.
-
 - **Disable the Managed Folder Assistant** so that it doesn't process the mailbox and retain the items that you delete in Step 5.
 
 Perform the following steps in Exchange Online PowerShell.
@@ -286,6 +278,9 @@ Now you're ready to actually delete items in the Recoverable Items folder by usi
 
 To search for items that are located in the Recoverable Items folder, we recommend that you perform a *targeted collection*. This means you narrow the scope of your search only to items located in the Recoverable Items folder. You can do this by running the script in the [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md) article. This script returns the value of the folder ID property for all the subfolders in the target Recoverable Items folder. Then you use the folder ID in a search query to return items located in that folder.
 
+>[!NOTE]
+>If the mailbox quota is met and the user mailbox is declining emails, you may receive a 554 5.2.0 error when deleting recoverable items. For more information, see ["554 5.2.0 STOREDRV.Deliver.Exception" when sending emails in Exchange Online](/exchange/troubleshoot/email-delivery/ndr/mapiexceptionnotfound-ndr).
+
 Here's an overview of the process to search for and delete items in a user's Recoverable Items folder:
 
 1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session. For more information, see [Run the script to get a list of folders for a mailbox](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
@@ -295,9 +290,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
    Here's a list and description of the subfolders in the Recoverable Items folder that you can search and delete items from:
 
    - **Deletions**: Contains soft-deleted items whose deleted item retention period has not expired. Users can recover soft-deleted items from this subfolder using the Recover Deleted Items tool in Outlook.
-
    - **DiscoveryHolds**: Contains hard-deleted items that have been preserved by an eDiscovery hold or a retention policy. This subfolder isn't visible to end users.
-
    - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold. This subfolder isn't visible to end users.
 
 3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Deletions and eDiscoveryHolds subfolders:
@@ -348,13 +341,9 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 The final step is to revert the mailbox back to its previous configuration. This means resetting the properties that you changed in Step 2 and reapplying the holds that you removed in Step 3. This includes:
   
 - Changing the deleted item retention period back to its previous value. Alternatively, you can just leave this set to 30 days, the maximum value in Exchange Online.
-
 - Re-enabling single Item recovery.
-
 - Re-enabling the client access methods so that the owner can access their mailbox.
-
 - Reapplying the holds and retention policies that you removed.
-
 - Re-enabling the Managed Folder Assistant to process the mailbox.
 
 > [!IMPORTANT]
