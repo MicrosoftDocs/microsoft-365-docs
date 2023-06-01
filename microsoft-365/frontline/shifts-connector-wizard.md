@@ -48,7 +48,7 @@ The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#micr
 > [!NOTE]
 > If you prefer, you can use PowerShell to integrate Shifts with Blue Yonder WFM. To learn more, see [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
 
-### Shift connector prerequisites
+### Shifts connector prerequisites
 
 Before you try the Shifts connector wizard, check that you meet all these prerequisites:
 
