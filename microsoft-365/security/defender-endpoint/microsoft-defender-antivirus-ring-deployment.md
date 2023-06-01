@@ -77,10 +77,10 @@ Customers that prioritize availability over security, should take a crawl, walk,
 
 ## Deployment scenarios
 
-- [Ring deployment using Group Policy and Microsoft Updates](microsoft-defender-endpoint-ring-deployment-group-policy-microsoft-update.md)
-- [Ring deployment using Group Policy and network share](microsoft-defender-endpoint-ring-deployment-group-policy-network-share.md)
+- [Ring deployment using Group Policy and Microsoft Updates](microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md)
+- [Ring deployment using Group Policy and network share](microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md)
 - Ring deployment using Group Policy and Windows Server Update Services
-   - [Pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-endpoint-pilot-ring-deployment-group-policy-wsus.md)
-   - [Production ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-endpoint-production-ring-deployment-group-policy-wsus.md)
-- [Ring deployment using Intune and Microsoft Update](microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md)
-- [Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)](microsoft-defender-endpoint-ring-deployment-sscm-wsus.md)
+   - [Pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md)
+   - [Production ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md)
+- [Ring deployment using Intune and Microsoft Update](microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md)
+- [Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)](microsoft-defender-antivirus-ring-deployment-sscm-wsus.md)
