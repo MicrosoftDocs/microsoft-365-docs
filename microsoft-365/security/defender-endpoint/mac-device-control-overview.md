@@ -163,9 +163,9 @@ Query type 2 is as follows:
 |:---|:---|:---|
 | `id` | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
 | `name` | String, the name of the policy and will display on the toast based on the policy setting. | |
-| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy is applied to any media in all those groups.  If not specified, the rule is applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it is _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| `excludeGroups` | The group(s) that the policy won't be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it is _OR_. |
-| `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table below to get details. |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy is applied to any media in all those groups.  If not specified, the rule is applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it's _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group(s) that the policy won't be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it's _OR_. |
+| `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table later in this article to get the details. |
 
 The following table lists the properties you can use in your entry:
 
