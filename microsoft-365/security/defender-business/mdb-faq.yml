@@ -95,9 +95,9 @@ sections:
           
           To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
 
-      - question: Are device control removable storage protection capabilities available in Microsoft Defender for Business?
+      - question: Are device control capabilities available in Microsoft Defender for Business?
         answer: |
-          [Device control removable storage protection in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection) prevents users, endpoints, or both from using unauthorized removable storage media.
+          [Device control in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection) prevents users, endpoints, or both from using unauthorized removable storage media.
 
           These capabilities can be configured in Defender for Business, as described in the following table:
 
