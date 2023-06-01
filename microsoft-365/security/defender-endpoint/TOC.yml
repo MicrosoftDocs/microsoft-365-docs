@@ -109,27 +109,6 @@
       - name: Onboarding using Microsoft Intune
         href: onboarding-endpoint-manager.md
 
-  - name: Microsoft Defender for Endpoint ring deployment guide
-    items:
-    - name: Microsoft Defender for Endpoint ring deployment guide overview
-      href: microsoft-defender-endpoint-ring-deployment.md
-    - name: Microsoft defender for Endpoint ring deployment guides
-      items:
-      - name: Ring deployment using Intune and Microsoft Update
-        href: microsoft-defender-endpoint-ring-deployment-intune-microsoft-update.md
-      - name: Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)
-        href: microsoft-defender-endpoint-ring-deployment-sscm-wsus.md
-      - name: Ring deployment using Group Policy and Microsoft Updates
-        href: microsoft-defender-endpoint-ring-deployment-group-policy-microsoft-update.md
-      - name: Ring deployment using Group Policy and network share
-        href: microsoft-defender-endpoint-ring-deployment-group-policy-network-share.md      
-      - name: Ring deployment using Group Policy and Windows Server Update Services (WSUS)
-        items: 
-        - name: Pilot ring deployment using Group Policy and Windows Server Update Services
-          href: microsoft-defender-endpoint-pilot-ring-deployment-group-policy-wsus.md
-        - name: Production ring deployment using Group Policy and Windows Server Update Services
-          href: microsoft-defender-endpoint-production-ring-deployment-group-policy-wsus.md
-
   - name: Migration guides
     items:
     - name: Migration guides overview
@@ -581,6 +560,28 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus
         href: evaluate-microsoft-defender-antivirus.md
+      - name: Microsoft Defender Antivirus ring deployments
+        items:
+        - name: Microsoft Defender Antivirus ring deployments overview
+          href: microsoft-defender-antivirus-ring-deployment.md
+        - name: Microsoft defender Antivirus ring deployment guides
+          items:
+          - name: Ring deployment using Group Policy and Microsoft Updates
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
+          - name: Ring deployment using Group Policy and network share
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md
+          - name: Ring deployment using Group Policy and Windows Server Update Services (WSUS)
+            items: 
+            - name: Pilot ring deployment using Group Policy and Windows Server Update Services (WSUS)
+              href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
+            - name: Production ring deployment using Group Policy and Windows Server Update Services (WSUS)
+              href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
+             - name: Appendices for pilot ring deployment using Group Policy and Windows Server Update Services (WSUS)   (link to in Pilot GP/WSUS)
+               href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
+          - name: Ring deployment using Intune and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
+          - name: Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)
+            href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
