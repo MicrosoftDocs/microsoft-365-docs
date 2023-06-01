@@ -237,4 +237,4 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
 
 ## See also 
 
-[Microsoft Defender for Endpoint ring deployment](microsoft-defender-endpoint-ring-deployment.md)
+[Microsoft Defender for Endpoint ring deployment](microsoft-defender-antivirus-ring-deployment.md)
