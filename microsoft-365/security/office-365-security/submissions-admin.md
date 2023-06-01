@@ -567,7 +567,7 @@ For more information about the actions that are available on the **User reported
      - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (Defender for Office 365 Plan 2 only). This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
      - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#admin-submission-of-user-reported-messages)**
      - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **[Mark as and notify](#notify-users-about-admin-submitted-messages-to-microsoft)**
-     - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **[View alert](#view-the-associated-alert-for-user-and-admin-email-submissions)** (Defender for Office 365 Plan 2 only)
+     - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **[View alert](#view-the-associated-alert-for-user-reported-messages)** (Defender for Office 365 Plan 2 only)
      - :::image type="icon" source="../../media/m365-cc-sc-view-submission-icon.png" border="false"::: **[View the converted admin submission](#view-converted-admin-submissions)**
 
      <sup>\*</sup> Depending on the status of the message, some actions might not be available, are available directly in the flyout, or are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions**.
