@@ -83,20 +83,20 @@ This list of drivers blocked by the exploited and vulnerable drivers get updated
 
 See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)).  
 
-### Block additional drivers - Windows Defender Application Control (WDAC)
+### Block other drivers - Windows Defender Application Control (WDAC)
 
-Attackers may use drivers that are not blocked by either the recommended driver block list or by the ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
+Attackers may use drivers that aren't blocked by either the recommended driver blocklist or by the ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
 
 WDAC also provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
 
-## Preventing tampering via Microsof Defender Antivirus exclusions on Windows
+## Preventing tampering via Microsoft Defender Antivirus exclusions on Windows
 
 A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents this from happening when all of the following conditions are met:
 
 - The device is managed by Intune; and 
 - The device has [Disable Local Admin Merge enabled](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#use-microsoft-intune-to-disable-local-list-merging).
 
-For more details see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
+For more details, see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).  
 
@@ -110,7 +110,7 @@ When tampering is detected, an alert is raised. Some of the alert titles for tam
 - Tampering with the Microsoft Defender for Endpoint sensor
 - Possible tampering with protected processes
 
-If the abuse of exploited vulnerable or signed driver attack surface reduction (ASR) rule is triggered, this can be seen in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) as well as in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
+If the [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) attack surface reduction (ASR) rule is triggered, this can be seen in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) as well as in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
 
 If WDAC is enabled, the [block and audit activity can be seen in Advanced Hunting](/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting).
 
