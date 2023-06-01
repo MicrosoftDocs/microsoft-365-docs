@@ -59,7 +59,7 @@ Engine updates are the updates for the scan engine, which is used by the “Secu
 
 ## Appendix C - Platform Updates
 
-Platform Updates, are the .exe’s, dll’s, and .sys’s for the MDAV service.
+Platform Updates, are the .exe’s, dll’s, and .sys’s for the Microsoft Defender Antivirus service.
 
 | Channel: | Version: | Revision: | &nbsp; | Remarks |
 |:---|:---|:---|:---|:---|
