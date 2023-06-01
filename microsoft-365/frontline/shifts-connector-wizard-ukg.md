@@ -47,7 +47,7 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 > [!NOTE]
 > If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
 
-### Shifts connector prerequisites
+### Prerequisites
 
 Before you try the Shifts connector wizard, check that you meet all these prerequisites:
 
@@ -161,7 +161,7 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 3. Then, choose your sync frequency.
 
-4. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#before-you-begin) that is a team owner of all the teams you want to map.
+4. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#prerequisites) that is a team owner of all the teams you want to map.
 
 <a name="email"> </a>
 
