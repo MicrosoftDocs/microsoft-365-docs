@@ -124,6 +124,19 @@ This feature is useful when you have a specific piece of information you want to
 
 [Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
+## Image tagging
+
+:::row:::
+   :::column span="3":::
+      Use image tagging in Syntex to find and manage images in SharePoint document libraries. Syntex automatically tags images with descriptive keywords using AI. These keywords are stored in a managed metadata column, making it easier to search, sort, filter, and manage the images.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic image tagging icon.](../media/content-understanding/image-tagging-image.png) 
+   :::column-end:::
+:::row-end:::
+
+[Learn more about image tagging in Microsoft Syntex.](image-tagging.md)
+
 ## Optical character recognition
 
 :::row:::
