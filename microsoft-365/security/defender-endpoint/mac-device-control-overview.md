@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 - Microsoft Defender for Endpoint entitlement (can be trial)
 - Minimum OS version: macOS 11 or higher
-- Deploy Full Disk Access: you may already have been previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.  
+- Deploy Full Disk Access: you may already have been previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.
 - Enable Device Control on the MDE Preference setting:
 
    Data Loss Prevention (DLP)/Features/
@@ -163,7 +163,7 @@ Query type 2 is as follows:
 |:---|:---|:---|
 | `id` | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
 | `name` | String, the name of the policy and will display on the toast based on the policy setting. | |
-| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy is applied to any media in all those groups.  If not specified, the rule is applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it's _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The **id** value inside the group must be used in this instance. If multiple groups are in the `includeGroups`, it's _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
 | `excludeGroups` | The group(s) that the policy doesn't apply to. | The **id** value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's _OR_. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table later in this article to get the details. |
 
