@@ -70,7 +70,7 @@ Other malicious drivers can be blocked by using [WDAC to create a policy to bloc
 
 Exploited vulnerable and signed drivers can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and like WDAC has an audit mode to avoid accidentally impacting legitimate use.
 
-## Preventing tampering via exclusions - Windows
+## Preventing tampering via Microsof Defender Antivirus exclusions on Windows
 
 A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents this from happening when all of the following conditions are met:
 
@@ -83,11 +83,13 @@ Attackers can be preventing from discovering existing antivirus exclusions by en
 
 ## Detecting potential tampering activity in the Microsoft 365 Defender portal 
 
-When tampering is detected, an alert is raised with one one the following titles:
+When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 
 - Possible Antimalware Scan Interface (AMSI) tampering
 - Potential attempt to tamper with MDE via drivers
 - Tamper Protection bypass
+- Tampering with the Microsoft Defender for Endpoint sensor
+- Possible tampering with protected processes
 
 If the abuse of exploited vulnerable or signed driver ASR rule is triggered, this can be seen in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) as well as in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
 
