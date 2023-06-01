@@ -31,7 +31,7 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 The foundation for defending against tampering is following a [Zero Trust](/windows/security/zero-trust-windows-device-health) model.   
 
-- Follow the best practice of least privlege. See [Access control overview for Windows](/windows/security/identity-protection/access-control/access-control).
+- Follow the best practice of least privilege. See [Access control overview for Windows](/windows/security/identity-protection/access-control/access-control).
 - Configure [Conditional Access policies](/azure/active-directory/conditional-access/overview) to keep untrusted users and devices isolated.
 
 In order to provide an effective defense against tampering, devices must be healthy.
@@ -44,23 +44,23 @@ In order to provide an effective defense against tampering, devices must be heal
 > On Windows devices, Microsoft Defender Antivirus can be also be managed via Group Policy, WMI, and PowerShell cmdlets. These methods are more susceptible to tampering than using Microsoft Intune or Microsoft Configuration Manager or Microsoft Defender for Endpoint Security Configuration Management. 
 > If you're using Group Policy, we recommend [disabling local overrides for Microsoft Defender Antivirus settings](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#configure-local-overrides-for-microsoft-defender-antivirus-settings) and [disabling local list merging](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged).
 
-The health of [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health) and [sensors](/microsoft-365/security/defender-endpoint/device-health-sensor-health-os) are avaialable in the [device health reports in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-health-reports). 
+The health of [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health) and [sensors](/microsoft-365/security/defender-endpoint/device-health-sensor-health-os) are available in the [device health reports in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-health-reports). 
 
 ## Preventing tampering on a single device
 
-Beyond basic hygiene, attackers use a varierty of tampering techniques to disable Microsoft Defender for Endpoint on a single device.  Different techniques are preventing by different controls on different operating systems.
+Attackers use a variety of tampering techniques to disable Microsoft Defender for Endpoint on a single device.  These techniques are prevented differently on different operating systems.
 
 | Control | OS | Technique Families |
 |--- |---| ---|
 | [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | <br/>- Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
 | [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | <br/>- Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
-|Attack surface reduction rules | Windows | Kernel drivers (see [Block abuse of exploted vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
+|Attack surface reduction (ASR) rules | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
 | Windows Defender Application Control (WDAC) | Windows | Kernel drivers (see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
 
 
 ## Understanding the different ways to prevent driver based tampering on Windows
 
-One of the most common tampering techniques is to use a driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.To assist customers in blocking drivers, Microsoft provides a layered approach. 
+One of the most common tampering techniques is to use a driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.  To assist customers in blocking drivers, Microsoft provides a layered approach. 
 
 ### Block known bad drivers with Windows 
 A known bad driver is a driver that has no legitimate use.  These drivers are blocked from being loaded by Windows using the [Microsoft recommended driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  This functionality in on by default. It is updated as part of operating system releases.  
@@ -76,7 +76,7 @@ Attackers may use drivers that are not blocked by either the recommended driver 
 
 WDAC also provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
 
-## Preventing tampering via Microsof Defender Antivirus exclusions on Windows
+## Preventing tampering via Microsoft Defender Antivirus exclusions on Windows
 
 A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents this from happening when all of the following conditions are met:
 
