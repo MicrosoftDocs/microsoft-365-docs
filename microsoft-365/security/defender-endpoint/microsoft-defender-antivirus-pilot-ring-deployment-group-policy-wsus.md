@@ -150,7 +150,6 @@ The Windows Server Update Services Configuration Wizard is complete.
    > For the “Engine Updates”, please see Appendix B.
    > For the “Platform Updates”, please see Appendix C.  
 
-
 #### Approve and deploy updates in WSUS
 
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Computers** > **Options**. The **Options** window opens
@@ -188,12 +187,9 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    :::image type="content" source="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/mde-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
 
-
 For more information, see [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md).
 
 
 ## See also 
 
-[Microsoft Defender for Endpoint ring deployment](microsoft-defender-endpoint-ring-deployment.md)
-
-
+[Microsoft Defender Antivirus ring deployment](microsoft-defender-antivirus-ring-deployment.md)

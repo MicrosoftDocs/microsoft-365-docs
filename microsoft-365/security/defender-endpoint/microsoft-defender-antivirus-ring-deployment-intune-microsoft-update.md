@@ -111,4 +111,4 @@ After the issue is resolved, set the “Signature Update Fallback Order” back 
 
 ## See also 
 
-[Microsoft Defender for Endpoint ring deployment](microsoft-defender-endpoint-ring-deployment.md)
+[Microsoft Defender Antivirus ring deployment](microsoft-defender-antivirus-ring-deployment.md)
