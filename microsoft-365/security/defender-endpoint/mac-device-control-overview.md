@@ -43,9 +43,12 @@ Device Control for macOS has the following prerequisites:
 > - Minimum OS version: macOS 11 or higher
 > - Minimum product version: 101.34.20
 
-## Overveiw
+## Overview
 
-Microsoft Defender for Endpoint Device Control feature enables you to audit, allow, or prevent the read, write, or execute access to removable storage, and allows you to manage iOS and Portable device and Apple APFS encrypted device and Bluetooth media with or without exclusions.
+Microsoft Defender for Endpoint Device Control feature enables you to:
+
+- Audit, allow, or prevent the read, write, or execute access to removable storage; and 
+- Manage iOS and Portable devices, and Apple APFS encrypted devices and Bluetooth media, with or without exclusions.
 
 ## Prepare your endpoints
 
