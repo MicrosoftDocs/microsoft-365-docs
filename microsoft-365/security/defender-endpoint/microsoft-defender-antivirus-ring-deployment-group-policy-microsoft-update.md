@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender for Endpoint production ring deployment using Group Policy and Microsoft Updates
+# Microsoft Defender Antivirus production ring deployment using Group Policy and Microsoft Updates
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 Review the _read me_ article at [Readme](https://github.com/microsoft/defender-updatecontrols/blob/main/README.md) 
 https://github.com/microsoft/defender-updatecontrols/blob/main/README.md
 
-Download the latest defender .admx and .adml 
+Download the latest Windows Defender .admx and .adml 
 
 - [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
 - [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)

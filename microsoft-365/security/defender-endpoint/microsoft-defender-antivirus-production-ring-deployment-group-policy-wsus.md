@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender for Endpoint production ring deployment using Group Policy and Windows Server Update Services
+# Microsoft Defender Antivirus production ring deployment using Group Policy and Windows Server Update Services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

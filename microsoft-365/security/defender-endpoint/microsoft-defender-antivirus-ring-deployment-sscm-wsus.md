@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender for Endpoint ring deployment using System Center Configuration Manager and Windows Server Update Services
+# Microsoft Defender Antivirus ring deployment using System Center Configuration Manager and Windows Server Update Services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

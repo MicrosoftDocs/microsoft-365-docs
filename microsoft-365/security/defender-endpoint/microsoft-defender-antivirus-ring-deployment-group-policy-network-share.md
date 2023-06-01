@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender for Endpoint production ring deployment using Group Policy and network share
+# Microsoft Defender Antivirus production ring deployment using Group Policy and network share
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +55,7 @@ This article describes how to deploy Microsoft Defender Antivirus in rings using
 Review the _read me_ article at [Readme](https://github.com/microsoft/defender-updatecontrols/blob/main/README.md) 
 https://github.com/microsoft/defender-updatecontrols/blob/main/README.md
 
-1. Download the latest defender .admx and .adml 
+1. Download the latest Windows Defender .admx and .adml 
 
    - [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
    - [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)
