@@ -168,7 +168,7 @@ After ingesting the ADMX, the steps below can be followed to create a configurat
 
 If you don't want to use Microsoft Intune, you can use group policies to deploy the extension across your organization.
 
-#### Adding the Chrome Extension to the ForceInstall List
+#### Adding the Firefox Extension to the ForceInstall List
 
 1. In the Group Policy Management Editor, navigate to your OU.
 
