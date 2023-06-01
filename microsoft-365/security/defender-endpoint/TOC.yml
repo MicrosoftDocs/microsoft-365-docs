@@ -426,8 +426,8 @@
     - name: Host firewall reporting in Microsoft Defender for Endpoint
       href: host-firewall-reporting.md
 
-    - name: Built-in protection
-      href: built-in-protection.md
+    - name: Tamper resiliency
+      href: tamper-resiliency.md
 
     - name: Attack surface reduction
       items:
@@ -746,6 +746,8 @@
         href: configure-machines-security-baseline.md
       - name: Optimize attack surface reduction rule deployment and detections
         href: configure-machines-asr.md
+      - name: Built-in protection
+        href: built-in-protection.md
 
   - name: Investigate and respond to threats
     items:
