@@ -54,7 +54,7 @@ Attackers use various tampering techniques to disable Microsoft Defender for End
 |--- |---| ---|
 | [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | - Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
 | [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | - Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
-|Attack surface reduction (ASR) rules | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
+| [Attack surface reduction (ASR) rules](attack-surface-reduction.md) | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
 | [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide) (WDAC) | Windows | Kernel drivers (see [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
 
 
