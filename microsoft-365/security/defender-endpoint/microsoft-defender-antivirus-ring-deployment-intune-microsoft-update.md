@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/mde-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/mde-deploy-ring-intune-schedule.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png":::
 
 ## Setting up the pilot environment 
 
@@ -56,7 +56,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), create or append to your MDAV policy the following setting:
 For example, your pilot policy named _MDAV_Settings_Pilot_. If you have a Citrix environment, include at least one Citrix VM (non-persistent and/or  persistent).
 
-:::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png":::
 
 Recommended settings are as follows:
 
@@ -77,7 +77,7 @@ Recommended settings are as follows:
 In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), create or append to your MDAV policy using the following setting:
 For example, your production policy named _MDAV_Settings_Production_.
 
-:::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus production policy settings." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-settings.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-production-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus production policy settings." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-production-policy-settings.png":::
 
 |Feature  | Recommendation | Comments |
 |:--- |:--- |:--- |
@@ -93,7 +93,7 @@ If you encounter problems with your deployment, change the source of the MDAV up
 
 1. Change the entry to **FileShares**. This change is shown in the following figure.
 
-   :::image type="content" source="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png" alt-text="Shows Intune Microsoft Defender Antivirus production policy fallback setting." lightbox="images/mde-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png" alt-text="Shows Intune Microsoft Defender Antivirus production policy fallback setting." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-production-policy-fallback.png":::
 
 #### What this change does
 

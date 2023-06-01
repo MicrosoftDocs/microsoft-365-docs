@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/mde-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/mde-deploy-ring-sccm-wsus-schedule.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png":::
 
 
 ## Setting up the pilot environment 
@@ -85,7 +85,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    
    These settings are shown in the following image:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the Software Updates page." lightbox="images/mde-deploy-ring-sccm-wizard-software-updates.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the Software Updates page." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-software-updates.png":::
    
    > [!TIP]
    > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
@@ -143,11 +143,11 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    
 1. Select **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure.
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly configured Automatic Deployment Rule." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-settings.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-confirm-settings.png" alt-text="Shows the configuration details for the newly configured Automatic Deployment Rule." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-confirm-settings.png":::
 
 1. Select **Next**. Wait until the process completes and the **Completion** page opens. Select **Close** to finish the process. Automatic Deployment rules are saved, and can be managed from the location shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deployment Rules." lightbox="images/mde-deploy-ring-sccm-manage-pilot-policys.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-manage-pilot-policys.png" alt-text="Shows the Configuration Manager Software library and configured Automatic Deployment Rules." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-manage-pilot-policys.png":::
 
 ## Setting up the production environment
 
@@ -224,7 +224,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    
 1. Select **Next**. On the **Summary** page, under **Confirm the settings**, review the settings. Example settings are shown in the following figure:
    
-   :::image type="content" source="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png" alt-text="Shows as screen capture of the configuration details for the newly configured Automatic Deployment Rule for a production environment." lightbox="images/mde-deploy-ring-sccm-wizard-confirm-production-settings.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-confirm-production-settings.png" alt-text="Shows as screen capture of the configuration details for the newly configured Automatic Deployment Rule for a production environment." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-confirm-production-settings.png":::
 
 1. Select **Next**. Wait until the process completes and the **Completion** page opens. Select **Close** to finish the process. 
 
@@ -233,7 +233,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
 1. Navigate to **Software Library**
 1. Under **Software Updates**, select on **Automatic Deployment Rules**, right-click on **MDE-MDAV_Security_Intelligence_Update_Production**, and then select **Disable**. This setting is shown in the following figure:
 
-   :::image type="content" source="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules if you encounter errors or problems." lightbox="images/mde-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-disable-automatic-deployment-rules.png" alt-text="hows as screen capture of how to disable Automatic Deployment Rules if you encounter errors or problems." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-disable-automatic-deployment-rules.png":::
 
 ## See also 
 

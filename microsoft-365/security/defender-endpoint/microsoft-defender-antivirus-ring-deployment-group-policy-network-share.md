@@ -65,3 +65,4 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 > [!NOTE]
 > If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
+(page 70)
