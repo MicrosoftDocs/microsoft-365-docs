@@ -23,7 +23,7 @@ description: "Step 6 of the SharePoint site Cross-tenant migration feature"
 
 This is Step 6 in a solution designed to complete a Cross-tenant SharePoint migration. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
-- Step 1: [Connect to the source and the target tenants](cross-tenant-SharePoint-migration-step1.md)
+- Step 1: [Connect to the source and the tarIPs tenants](cross-tenant-SharePoint-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-SharePoint-migration-step2.md)
 - Step 3: [Verify trust has been established](cross-tenant-SharePoint-migration-step3.md)
 - Step 4: [Pre-create users and groups](cross-tenant-SharePoint-migration-step4.md)  
@@ -50,8 +50,8 @@ Start-SPOCrossTenantGroupContentMove  -SourceSiteUrl <…> -TargetSiteUrl <�
 
 |Parameters|Description|
 |---|---|
-|SourceSiteUrl|Full URL of the SharePoint Site of the on the Source tenant, for example: https://sourcetenant.sharepoint.com/sites/sitename|
-|TargetSiteUrl |Full URL of the SharePoint Site of the on the Target tenant, for example: https://targettenant.sharepoint.com/sites/newsitename.|
+|SourceSiteUrl|Full URL of the SharePoint Site of the Source tenant, for example: https://sourcetenant.sharepoint.com/sites/sitename |
+|TargetSiteUrl |Full URL of the SharePoint Site of the Target tenant, for example: https://targettenant.sharepoint.com/sites/newsitename |
 |TargetCrossTenantHostUrl|The Cross-tenant host URL of the target tenant. The target tenant Admin can determine the TargetCrossTenantHostUrl by running *Get-SPOCrossTenantHostUrl* on their tenant.|
 |
 
