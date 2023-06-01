@@ -576,7 +576,7 @@
               href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
             - name: Production ring deployment using Group Policy and Windows Server Update Services (WSUS)
               href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
-            - name: Appendices for pilot ring deployment using Group Policy and Windows Server Update Services (WSUS)   (link to in Pilot GP/WSUS)
+            - name: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
               href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
           - name: Ring deployment using Intune and Microsoft Update
             href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
