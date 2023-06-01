@@ -11049,6 +11049,11 @@
     "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
     "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions",
+    "redirect_document_id": false
   }
  ]
 }
