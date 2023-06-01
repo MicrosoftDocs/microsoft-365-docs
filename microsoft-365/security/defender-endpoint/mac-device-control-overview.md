@@ -150,7 +150,7 @@ Query type 2 is as follows:
 
 | clause $type | value | Description |
 |:---|:---|:---|
-| `primaryId` | One of: <br>- apple_devices <br>-removable_media_devices <br>- portable_devices <br>- bluetooth_devices | |
+| `primaryId` | One of: <br>- `apple_devices`<br>- `removable_media_devices` <br>- `portable_devices` <br>- `bluetooth_devices` | |
 | `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
 | `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
 | `serialNumber` | string | Matches a device’s serial number.  Will not match if device does not have a serial number. |
@@ -161,20 +161,20 @@ Query type 2 is as follows:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| id | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
-| name | String, the name of the policy and will display on the toast based on the policy setting. | |
-| includeGroups | The group(s) that the policy will be applied to. If multiple groups are specified, the policy will be applied to any media in all those groups.  If not specified, the rule will be applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it will be _AND_. <br> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| excludeGroups | The group(s) that the policy will not be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it will be _OR_. |
-| entries | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table below to get details. |
+| `id` | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
+| `name` | String, the name of the policy and will display on the toast based on the policy setting. | |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy will be applied to any media in all those groups.  If not specified, the rule will be applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it will be _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group(s) that the policy will not be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it will be _OR_. |
+| `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table below to get details. |
 
-The following table lists the properties you can use in entry:
+The following table lists the properties you can use in your entry:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | | Includes: <br> <ul><li>removableMedia</li><li>appleDevice</li><li>PortableDevice</li><li>bluetoothDevice</li><li>generic</li></ul> |
-| enforcement | | <ul><li>$type:</li><ul><li>allow</li><li>deny</li><li>auditAllow</li><li>auditDeny</li></ul></ul><br> **When $type allow is selected, options value supports:** <br> <ul><li>`disable_audit_allow`: Even if **Allow** happens and the **auditAllow** is setting configured, the system won't send event.</li></ul> <br> **When $type deny is selected, options value supports:** <br> <ul><li>`disable_audit_deny`: Even if **Block** happens and the **auditDeny** is setting configured, the system won't show notification or send event.</li></ul><br> **When $type auditAllow is selected, options value supports:** <br> <ul><li>send_event</li></ul> <br> **When $type auditDeny is selected, options value supports: <br> <ul><li>send_event</li><li>show_notification</li></ul> |
-| access| |Specify one or more access rights for this rule. These may include either device specific granular permissions, or broader generic permissions. See table below for more details on the valid access types for a given entry $type. |
-| id| UUID| |
+| `$type` | | Includes: <br/>- `removableMedia`<br/>- `appleDevice`<br/>- `PortableDevice`<br/>- `bluetoothDevice`<br/>- `generic` |
+| enforcement | | - `$type`:<br/>- `allow`<br/>- `deny`<br/>- `auditAllow`<br/>- `auditDeny`<br/><br/>**When $type allow is selected, options value supports:** <br/>- `disable_audit_allow`<br/> Even if **Allow** happens and the **auditAllow** is setting configured, the system won't send event.<br/><br/>**When $type deny is selected, options value supports:** <br/>`disable_audit_deny`<br/>Even if **Block** happens and the **auditDeny** is setting configured, the system won't show notification or send event.<br/><br/>**When $type auditAllow is selected, options value supports:** <br/>`send_event`<br/><br/>**When $type auditDeny is selected, options value supports:** <br/>`send_event`<br/>`show_notification` |
+| `access`| |Specify one or more access rights for this rule. These may include either device specific granular permissions, or broader generic permissions. See table below for more details on the valid access types for a given entry $type. |
+| `id`| UUID| |
 
 The following table lists the properties you can use in entry:
 
@@ -184,18 +184,18 @@ The following table lists the properties you can use in entry:
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| $type | The type of enforcement | See table below for supported enforcements |
-| options | $type specific value to use | An array of options for the entry.  May be omitted if not options are desired. |
+| `$type` | The type of enforcement | See table below for supported enforcements |
+| `options` | $type specific value to use | An array of options for the entry.  May be omitted if not options are desired. |
 
 #### Enforcement type
 
 | Property name | Description | Options |
 |:---|:---|:---|
-|Enforcement $type | ‘options’ values [string] | Description |
-| allow | disable_audit_allow | Even if **Allow** happens and the **auditAllow** is setting configured, the system won't send event. |
-| deny | disable_audit_deny | Even if **Block** happens and the auditDeny is setting configured, the system won't show notification or send event. |
-| auditAllow | send_event | Send telemetry |
-| auditDeny | <ol><li>send_event</li><li>show_notification/li></ol> | <ol><li>Send telemetry</li><li>Display Block UX to user/li></ol> |
+|`Enforcement $type` | `options` values [string] | Description |
+| `allow` | `disable_audit_allow` | Even if **Allow** happens and the **auditAllow** is setting configured, the system won't send event. |
+| `deny` | `disable_audit_deny` | Even if **Block** happens and the auditDeny is setting configured, the system won't show notification or send event. |
+| `auditAllow` | `send_event` | Send telemetry |
+| `auditDeny` | - `send_event`<br/>- `show_notification` | - Send telemetry<br/>- Display Block UX to user |
 
 ### Access types
 
