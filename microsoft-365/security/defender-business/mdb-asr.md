@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - m365-security
 - tier1
-ms.reviewer: efratka, 
+ms.reviewer: efratka 
 search.appverid: MET150
 f1.keywords: NOCSH 
 audience: Admin
