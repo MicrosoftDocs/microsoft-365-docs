@@ -60,7 +60,7 @@ Attackers use a variety of tampering techniques to disable Microsoft Defender fo
 
 ## Understanding the different ways to prevent driver based tampering on Windows
 
-One of the most common tampering techniques is to use a driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.
+One of the most common tampering techniques is to use a vulnerable driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.
 
 In order to prevent a driver based tampering on a single device, the device needs to be configured to block the loading of that driver before the attack.
 
@@ -70,7 +70,7 @@ Microsoft provides several ways to keep devices well protected and up-to-date ag
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year. Microsoft will occasionally publish future updates through regular Windows servicing. With Windows 11 2022 update, the vulnerable driver blocklist is enabled by default for all devices, but requires either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode to be active. 
 
-See ([Microsoft recommended driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist)).  
+See ([Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist)).  
 
 For devices that don't meet those requirements, this list of drivers can be blocked by using Windows Defender Application Control policy. 
 
