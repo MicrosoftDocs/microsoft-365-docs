@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 ## Appendix A - Security Intelligence Updates
 
-Microsoft continually updates security intelligence in antimalware products to cover the latest threats and to constantly tweak detection logic, enhancing the ability of Microsoft Defender Antivirus and other Microsoft antimalware solutions to accurately identify threats. This security intelligence works directly with cloud-based protection to deliver fast and powerful AI-enhanced, next-generation protection.
+Microsoft continually updates security intelligence in antimalware products to cover the latest threats and to constantly tweak detection logic. The updates enhance the ability of Microsoft Defender Antivirus and other Microsoft antimalware solutions to accurately identify threats. This security intelligence works directly with cloud-based protection to deliver fast and powerful AI-enhanced, next-generation protection.
 
 ### References: 
 
@@ -63,10 +63,10 @@ Platform Updates, are the .exe’s, dll’s, and .sys’s for the MDAV service.
 
 | Channel: | Version: | Revision: | &nbsp; | Remarks |
 |:---|:---|:---|:---|:---|
-| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This is the one that you want to test for app compatibility, reability and performance. |
-| **Current Channel (Preview)** | 4.18.2303.8 | ‘23 Mar, minor rev 8 | n/a | Same as above. |
-| **Current Channel (Staged)** | 4.18.2303.7 | ‘23 Mar, minor rev 7 | n/a | Same as above. |
-| **Current Channel (Broad)** | 4.18.2302.7 <br> see note | ‘23 Feb, minor rev 7 | ’23 Mar | This is the one that you want to push out to 90%-100% of your production systems. |
+| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This channel is the one you want to test for app compatibility, reability and performance. |
+| **Current Channel (Preview)** | 4.18.2303.8 | ‘23 Mar, minor rev 8 | n/a | Same as for _Beta Channel - Prerelease_ |
+| **Current Channel (Staged)** | 4.18.2303.7 | ‘23 Mar, minor rev 7 | n/a | Same as for _Beta Channel - Prerelease_  |
+| **Current Channel (Broad)** | 4.18.2302.7 <br> see note | ‘23 Feb, minor rev 7 | ’23 Mar | This channel is the one you want to push out to 90%-100% of your production systems. |
 
 > [!NOTE]
 > Where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.
