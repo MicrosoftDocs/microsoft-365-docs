@@ -91,7 +91,7 @@ WDAC also provides an audit mode to help understand the impact of applying the p
 
 ## Preventing tampering via Microsoft Defender Antivirus exclusions on Windows
 
-A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents such attacks from ocurring when all of the following conditions are met:
+A common technique used by attackers is to make unauthorized changes to anti-virus exclusions.  Tamper protection prevents such attacks from occurring when all of the following conditions are met:
 
 - The device is managed by Intune; and 
 - The device has [Disable Local Admin Merge enabled](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#use-microsoft-intune-to-disable-local-list-merging).
