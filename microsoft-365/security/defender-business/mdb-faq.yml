@@ -103,7 +103,7 @@ sections:
 
           | OS | Method | Notes |
           |---|---|---|
-          | Windows  | [Attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) | On Windows devices, you can configure device control through ASR rules. You'll need Microsoft Intune to set up your ASR rules. Intune is not included in the standalone version of Defender for Business, but you can add it on. Intune is included in Microsoft 365 Business Premium. <br/><br/>[ASR capabilities in Defender for Business](mdb-asr.md) |
+          | Windows  | [Attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) | On Windows devices, you can configure device control through ASR rules. You'll need [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to set up your ASR rules. Intune is not included in the standalone version of Defender for Business, but you can add it on. Intune is included in Microsoft 365 Business Premium. <br/><br/>[ASR capabilities in Defender for Business](mdb-asr.md) |
           | Mac | Jamf |  |
           | Mac | Intune |  |
 
