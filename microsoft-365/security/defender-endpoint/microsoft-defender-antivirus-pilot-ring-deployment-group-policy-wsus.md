@@ -146,9 +146,9 @@ The Windows Server Update Services Configuration Wizard is complete.
 1. Select **KB4052623** version **4.18.2302.7** to see the synchronization status. 
    
    > [!NOTE]
-   > For the “Security Intelligence Updates”, please see Appendix A.
-   > For the “Engine Updates”, please see Appendix B.
-   > For the “Platform Updates”, please see Appendix C.  
+   > For the “Security Intelligence Updates”, please see [Appendix A](microsoft-defender-antivirus-ring-deployment-appendices.md).
+   > For the “Engine Updates”, please see [Appendix B](microsoft-defender-antivirus-ring-deployment-appendices.md).
+   > For the “Platform Updates”, please see [Appendix C](microsoft-defender-antivirus-ring-deployment-appendices.md).  
 
 #### Approve and deploy updates in WSUS
 

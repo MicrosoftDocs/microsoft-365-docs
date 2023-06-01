@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/24/2023
 ---
 
-# Microsoft Defender Antivirus appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
+# Appendices for Microsoft Defender Antivirus ring deployment using Group Policy and Windows Server Update Services (WSUS)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,3 +42,32 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
+
+## Appendix A - Security Intelligence Updates
+
+Microsoft continually updates security intelligence in antimalware products to cover the latest threats and to constantly tweak detection logic, enhancing the ability of Microsoft Defender Antivirus and other Microsoft antimalware solutions to accurately identify threats. This security intelligence works directly with cloud-based protection to deliver fast and powerful AI-enhanced, next-generation protection.
+
+### References: 
+
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates)
+
+- [Description of Forefront endpoint security definition updates](https://support.microsoft.com/topic/description-of-forefront-endpoint-security-definition-updates-b0833c24-fab3-390b-820b-3835beeb03b3)
+
+## Appendix B - Engine Updates
+
+Engine updates, are the updates for the scan engine, which is used by the “Security Intelligence Updates”
+Note: First released on [July 15, 2010](http://blogs.technet.com/b/enginenotifications/archive/2010/07/09/antimalware-engine-release-for-july-2010.aspx)
+
+## Appendix C - Platform Updates
+
+Platform Updates, are the .exe’s, dll’s, and .sys’s for the MDAV service.
+
+| Channel: | Version: | Revision: | &nbsp; | Remarks |
+|:---|:---|:---|:---|:---|
+| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This is the one that you want to test for app compatibility, reability and performance. |
+| **Current Channel (Preview)** | 4.18.2303.8 | ‘23 Mar, minor rev 8 | n/a | Same as above. |
+| **Current Channel (Staged)** | 4.18.2303.7 | ‘23 Mar, minor rev 7 | n/a | Same as above. |
+| **Current Channel (Broad)** | 4.18.2302.7 <br> see note | ‘23 Feb, minor rev 7 | ’23 Mar | This is the one that you want to push out to 90%-100% of your production systems. |
+
+> [!NOTE]
+> Where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.
