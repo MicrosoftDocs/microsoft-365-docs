@@ -67,16 +67,14 @@ A known bad driver is a driver that has no legitimate use.  These drivers are bl
 
 Customers who want to stay more up-to-date can use WDAC to deploy the [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  
 
-### Blocking exploited vulnerable and signed drivers with ASR
+### Blocking exploited vulnerable and signed drivers with Attack Surface Reduction (ASR) rules
+An exploited vulnerable and signed driver is a driver that has legitimate usage, but is also being leveraged by attackers for tampering.  These drivers
+can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and has an audit mode to give customers visibility and control over which devices the ASR rule is deployed.
 
-Exploited vulnerable and signed drivers can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and has an audit mode to avoid accidentally impacting legitimate use.
+### Blocking additional drivers with Windows Defender Application Control (WDAC)
+Attackers may use drivers that are not blocked by either the recommended driver block list or by the ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
 
-### Blocking dual-use drivers with WDAC
-A dual use driver is a driver that has legitimate usage, but is also being leveraged by attackers for tampering.  In this case, adding that driver to either the recommended driver block list or the ASR rule would have negative impact on customers.
-
-Customer still can block these drivers by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
-
-Like ASR, WDAC provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
+WDAC also provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
 
 ## Preventing tampering via Microsof Defender Antivirus exclusions on Windows
 
