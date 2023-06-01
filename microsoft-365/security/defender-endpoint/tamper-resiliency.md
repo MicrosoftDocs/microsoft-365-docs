@@ -54,21 +54,29 @@ Beyond basic hygiene, attackers use a varierty of tampering techniques to disabl
 |--- |---| ---|
 | [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | <br/>- Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
 | [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | <br/>- Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
-|Attack surface reduction rules | Windows | Kernel drivers (see [Block abuse of exploted vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)|
-| Windows Defender Application Control (WDAC) | Windows | Kernel drivers (see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)|
-| Windows operating system | - | Kernel drivers (see [Microsoft vulnerable drivers block list](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist)|
+|Attack surface reduction rules | Windows | Kernel drivers (see [Block abuse of exploted vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
+| Windows Defender Application Control (WDAC) | Windows | Kernel drivers (see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
+
 
 ## Understanding the different ways to prevent driver based tampering on Windows
 
-One of the most common techniques is for an attacker to use a driver that has a vulnerability, exploit it, and to gain access to the kernel.  This makes chosing which drivers to block complicated as they often are still used legitimately in many customer environment. To that end, Microsoft provides mechanisms for blocking drivers.
+One of the most common tampering techniques is to use a driver to gain access to the kernel. This driver is often wrapped in an easy to deploy tool, but the underlying technique is the same.To assist customers in blocking drivers, Microsoft provides a layered approach. 
 
-A known set of malicious drivers can be blocked from being loaded by Windows using the [Microsoft recommended driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  This functionality in on by default. It is updated as part of operating system releases.  
+### Blocking known bad drivers with Windows 
+A known bad driver is a driver that has no legitimate use.  These drivers are blocked from being loaded by Windows using the [Microsoft recommended driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  This functionality in on by default. It is updated as part of operating system releases.  
 
-Vulnerable drivers can be blocked from being loaded by Windows Defender Application Control (WDAC) using the [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  This list is updated more frequently.  WDAC provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
+Customers who want to stay more up-to-date can use WDAC to deploy the [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).  
 
-Other malicious drivers can be blocked by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
+### Blocking exploited vulnerable and signed drivers with ASR
 
-Exploited vulnerable and signed drivers can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and like WDAC has an audit mode to avoid accidentally impacting legitimate use.
+Exploited vulnerable and signed drivers can be blocked from being written to disk by attack surface reduction rules (ASR) using the [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).  This list is updated more frequently, and has an audit mode to avoid accidentally impacting legitimate use.
+
+### Blocking dual-use drivers with WDAC
+A dual use driver is a driver that has legitimate usage, but is also being leveraged by attackers for tampering.  In this case, adding that driver to either the recommended driver block list or the ASR rule would have negative impact on customers.
+
+Customer still can block these drivers by using [WDAC to create a policy to block other drivers](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide). 
+
+Like ASR, WDAC provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
 
 ## Preventing tampering via Microsof Defender Antivirus exclusions on Windows
 
