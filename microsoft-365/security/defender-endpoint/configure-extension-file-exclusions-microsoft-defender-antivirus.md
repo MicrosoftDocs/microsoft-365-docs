@@ -353,7 +353,7 @@ You can validate that your exclusion lists are working by using PowerShell with 
 In the following PowerShell snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure you run the cmdlet within that path.
 
 ```PowerShell
-Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
+Invoke-WebRequest "https://secure.eicar.org/eicar.com.txt" -OutFile "test.txt"
 ```
 
 If Microsoft Defender Antivirus reports malware, then the rule is not working. If there is no report of malware and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
