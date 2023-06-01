@@ -7,7 +7,7 @@ manager: dansimp
 ms.reviewer: joshbregman
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.date: 05/31/2023
+ms.date: 06/01/2023
 ms.topic: overview
 ms.collection: 
 - tier1
@@ -52,7 +52,7 @@ Attackers use a variety of tampering techniques to disable Microsoft Defender fo
 
 | Control | OS | Technique Families |
 |--- |---| ---|
-| [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | <br/>- Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
+| [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | - Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
 | [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | <br/>- Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
 |Attack surface reduction (ASR) rules | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
 | Windows Defender Application Control (WDAC) | Windows | Kernel drivers (see [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
@@ -110,7 +110,7 @@ When tampering is detected, an alert is raised. Some of the alert titles for tam
 - Tampering with the Microsoft Defender for Endpoint sensor
 - Possible tampering with protected processes
 
-If the abuse of exploited vulnerable or signed driver ASR rule is triggered, this can be seen in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) as well as in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
+If the abuse of exploited vulnerable or signed driver attack surface reduction (ASR) rule is triggered, this can be seen in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) as well as in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
 
 If WDAC is enabled, the [block and audit activity can be seen in Advanced Hunting](/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting).
 
