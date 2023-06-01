@@ -453,7 +453,7 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"real_time",
+      "enforcementLevel":"passive",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
@@ -491,7 +491,7 @@ The following configuration profile contains entries for all settings described 
          "restore"
       ],
       "nonExecMountPolicy":"unmute",
-      "unmonitoredFilesystems": ["nfs"],
+      "unmonitoredFilesystems": ["nfs,fuse"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {

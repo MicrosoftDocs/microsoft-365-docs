@@ -6,6 +6,8 @@
       href: m365bp-mdb-whats-new.md
     - name: Why choose Microsoft 365 Business Premium? 
       href: why-choose-microsoft-365-business-premium.md
+    - name: Top 10 ways to secure your business data
+      href: secure-your-business-data.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
@@ -105,7 +107,7 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
-    - name: Administration guide
+    - name: Tenant administration guide
       href: m365bp-admin-guide.md
     - name: Security administration guide
       href: m365bp-security-admin-guide.md
@@ -113,8 +115,6 @@
       href: m365bp-security-operations-guide.md
 - name: Reference
   items:
-    - name: Top 10 ways to secure your business data
-      href: secure-your-business-data.md
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content
