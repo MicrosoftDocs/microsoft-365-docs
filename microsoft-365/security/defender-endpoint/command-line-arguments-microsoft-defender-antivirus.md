@@ -70,8 +70,8 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-RemoveDynamicSignature [-SignatureSetID]`|Removes dynamic security intelligence.|
 |`-CheckExclusion -path <path>`|Checks whether a path is excluded.|
 |`-ValidateMapsConnection`|Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
-|`-ResetPlatform`| Revert platform binaries back to the previous installed version of the Defender platform.|
-|`-RevertPlatform`|reset platform binaries back to `%ProgramFiles%\Windows Defender`.|
+|`-ResetPlatform`| Reset platform binaries back to `%ProgramFiles%\Windows Defender`|
+|`-RevertPlatform`| Revert platform binaries back to the previous installed version of the Defender platform.|
 
 ## Common errors in running commands via mpcmdrun.exe
 
