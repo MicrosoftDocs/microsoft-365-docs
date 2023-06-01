@@ -85,7 +85,7 @@ See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/sec
 
 ### Block other drivers - Windows Defender Application Control (WDAC)
 
-Attackers may use drivers that aren't blocked by either the recommended driver blocklist or by the ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
+Attackers might attempt to use drivers that aren't blocked by either the recommended driver blocklist or an ASR rule. In this case, customers can protect themselves by using [WDAC to create a policy to block](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
 
 WDAC also provides an audit mode to help understand the impact of applying the policy in block mode to avoid accidentally impacting legitimate use.
 
