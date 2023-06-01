@@ -1,5 +1,5 @@
 ---
-title: Baseline profile configurations in use
+title: Get baseline profile configurations
 description: Provides information about the security baselines assessment configurations that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 05/02/2022
 ---
 
-# List configurations in use in active baseline profiles
+# List configurations in active baseline profiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.date: 05/02/2022
 
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-## 1. Get a list of the configuration settings in use in active baseline profiles
+## 1.API description
 
-This API retrieves a list of the configuration settings being assessed in active baseline profiles.
+This API retrieves a list of the configurations being assessed in active baseline profiles.
 
 ### 1.1 Parameters
 

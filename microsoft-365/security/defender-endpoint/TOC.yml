@@ -1191,7 +1191,7 @@
               href: export-security-baseline-assessment.md
             - name: List security baselines assessment profiles
               href: get-security-baselines-assessment-profiles.md
-            - name: List security baselines assessment configurations
+            - name: Get baseline profile configurations
               href: get-security-baselines-assessment-configurations.md
 
           - name: Software
