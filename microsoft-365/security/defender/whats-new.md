@@ -42,7 +42,8 @@ You can also get product updates and important notifications through the [messag
 
 ## May 2023
 
-- (Preview) [Alert tuning](investigate-alerts.md#public-preview-tune-an-alert) is now available in public preview. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
+- (GA) [Alert tuning](investigate-alerts.md#tune-an-alert) is now generally available. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
+- (GA) [Automatic attack disruption](automatic-attack-disruption.md) is now generally available.
 - (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
 
 ## April 2023
@@ -52,16 +53,15 @@ You can also get product updates and important notifications through the [messag
 ## March 2023 
 
 - (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
+
 This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**. [Learn more](defender-threat-intelligence.md)
 - (Preview) Complete device reports for the [`DeviceInfo` table](advanced-hunting-deviceinfo-table.md) in advanced hunting are now sent *every hour* (instead of the previous daily cadence). In addition, complete device reports are also sent whenever there is a change to any previous report. New columns were also added to the `DeviceInfo` table, along with several improvements to existing data in `DeviceInfo` and [DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md) tables.
 - (Preview) Near real-time custom detection is now available for public preview in advanced hunting custom detections. There is a new [Continuous (NRT)](custom-detection-rules.md) frequency, which checks data from events as they are collected and processed in near real-time.
 - (Preview) [Behaviors in Microsoft Defender for Cloud Apps](/defender-cloud-apps/behaviors) is now available for public preview. Preview customers can now also hunt for behaviors in advanced hunting using the [BehaviorEntities](advanced-hunting-behaviorentities-table.md) and [BehaviorInfo](advanced-hunting-behaviorinfo-table.md) tables.
 
-
 ## February 2023
 
 - (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
-
 
 ## January 2023
 
@@ -94,6 +94,7 @@ This change introduces a new navigation menu within the Microsoft 365 Defender p
 - (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
 
 - The newly introduced Automated investigation & response card in the Microsoft 365 Defender portal provides an overview on pending remediation actions.
+
 The security operations team can view all actions pending approval, and the stipulated time to approve those actions in the card itself. The security team can quickly navigate to the Action center and take appropriate remediation actions. The Automated investigation & response card also has a link to the Full Automation page. This enables the security operations team to effectively manage alerts and complete remediation actions in a timely manner.
 
 ## May 2022
@@ -108,7 +109,6 @@ The security operations team can view all actions pending approval, and the stip
 ## March 2022
 
 - (Preview) The incident queue has been enhanced with several features designed to help your investigations. Enhancements include capabilities such as ability to search for incidents by ID or name, specify a custom time range, and others.
-
 
 ## December 2021
 
@@ -195,3 +195,5 @@ The security operations team can view all actions pending approval, and the stip
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md)
 
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
+
+
