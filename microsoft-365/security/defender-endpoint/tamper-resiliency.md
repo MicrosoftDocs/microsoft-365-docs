@@ -96,7 +96,7 @@ A common technique used by attackers is to make unauthorized changes to anti-vir
 - The device is managed by Intune; and 
 - The device has [Disable Local Admin Merge enabled](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#use-microsoft-intune-to-disable-local-list-merging).
 
-For more details, see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
+For more information, see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).  
 
@@ -106,7 +106,7 @@ When tampering is detected, an alert is raised. Some of the alert titles for tam
 
 - Possible Antimalware Scan Interface (AMSI) tampering
 - Potential attempt to tamper with MDE via drivers
-- Tamper Protection bypass
+- Tamper protection bypass
 - Tampering with the Microsoft Defender for Endpoint sensor
 - Possible tampering with protected processes
 
