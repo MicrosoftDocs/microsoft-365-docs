@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 - Microsoft Defender for Endpoint entitlement (can be trial)
 - Minimum OS version: macOS 11 or higher
-- Deploy Full Disk Access: you may already have been previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant additional Full Disk Access permission for a new application: com.microsoft.dlp.daemon.  
+- Deploy Full Disk Access: you may already have been previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.  
 - Enable Device Control on the MDE Preference setting:
 
    Data Loss Prevention (DLP)/Features/
