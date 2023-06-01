@@ -80,14 +80,14 @@ If you use distribution groups or mail-enabled security groups to target users, 
 
 ### Attack simulation training reports do not contain any activity details
 
-Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports aren't populated with data, verify that audit log search is turned on in your organization (it's on by default).
+Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports aren't populated with data, verify that audit logging is turned on in your organization (it's on by default).
 
-Audit log search is required by Attack simulation training so events can be captured, recorded, and read back. Turning off audit log search has the following consequences for Attack simulation training:
+Audit logging is required by Attack simulation training so events can be captured, recorded, and read back. Turning off audit logging has the following consequences for Attack simulation training:
 
 - Reporting data isn't available across all reports. The reports will appear empty.
 - Training assignments are blocked, because data isn't available.
 
-To turn on audit log search, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+To verify that audit logging is on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
 > [!NOTE]
 > Empty activity details can also be caused by no E5 licenses being assigned to users. Verify at least one E5 license is assigned to an active user to ensure that reporting events are captured and recorded.

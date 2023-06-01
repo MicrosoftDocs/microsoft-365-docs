@@ -50,7 +50,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum number of DLP rules:
     - In a policy: Limited by the size of the policy
     - In a tenant: 600
-- Maximum size of an individual DLP rule: 80 KB
+- Maximum size of an individual DLP rule: 100 KB (102,400 characters)
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
 - Regex size limit for all matches predicted: 20 KB
@@ -176,16 +176,19 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional prerequisites |
 |---------|---------|---------|---------|---------|
-|Exchange email online|Yes |distribution group | data-in-motion| No |
-|SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
-|OneDrive for Business accounts|Yes| account or distribution group |data-at-rest </br> data-in-use|No|
-|Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
-|Power BI |No| workspaces | data-in-use | No|
+|Exchange |Yes |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Dynamic distribution lists </br> - Microsoft 365 groups (Group members only, not the group as an entity) | data-in-motion | No |
+|SharePoint |No   |Sites       | data-at-rest </br> data-in-use | No|
+|OneDrive |Yes| - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity) |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages|Yes     | - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)|data-in-motion </br> data-in-use |  No       |
+|Microsoft Defender for Cloud Apps|No   | Cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)|No    |Repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
+|Power BI |No| Workspaces | data-in-use | No|
+| Third-party apps | None | No | No | No |
+| Power BI | No | None | No | No |
 
-#### Exchange location scoping 
+
+#### Exchange location scoping
 
 If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
 
@@ -413,7 +416,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
-- User's risk level for Adaptice Protection is
+- User's risk level for Adaptive Protection is
 - Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
@@ -491,13 +494,14 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - User's risk level for Adaptive Protection is
-- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (PDF, Office files, .ZIP, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
 - File extension is
-- The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-
+- The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
 
@@ -757,7 +761,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in- context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
+When a user attempts an activity on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in-context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
 For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
 
@@ -842,6 +846,8 @@ produces this text in the customized notification:
 
 *pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE isn't allowed by your organization. Select the 'Allow' button if you want to bypass the policy Contoso highly confidential*
 
+You can localize your custom policy tips by using the [Set-DlpComplianceRule -NotifyPolicyTipCustomTextTranslations cmdlet](/powershell/module/exchange/new-dlpcompliancerule#-notifypolicytipcustomtexttranslations).
+
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
 >
@@ -851,27 +857,11 @@ To learn more about user notification and policy tip configuration and use, incl
 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
 
-<!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
+#### Policy tip references
 
-In addition to sending an email notification, a user notification displays a policy tip:
+Details on support for policy tips and notfications for different apps can be found here:
 
-- In Outlook and Outlook on the web.
-
-- For the document on a SharePoint Online or OneDrive for Business site.
-
-- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-
-The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-
-Here's what a policy tip looks like in a OneDrive for Business account.
-
-![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-
- To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
-
-> [!NOTE]
-> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
--->
+- [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
 
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
@@ -884,6 +874,15 @@ This table shows the DLP blocking and notification behavior for policies that ar
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization**    | - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block only people outside your organization** is selected          |- **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected  |  - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**             | - Access to a sensitive file is blocked as soon as it's uploaded </br>- Notifications sent when content is shared from Microsoft 365 with people outside my organization         |
 |- **Content is shared from Microsoft 365** </br>- **with people outside my organization** |  - **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** is selected </br>- **Block everyone** is selected        | - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected </br>- **Notify the user who sent, shared, or last modified the content** is selected         | - **Send an alert to admins when a rule match occurs** set to **On** </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**        |Notifications are sent when a file is shared with an external user and an external user access that file.         |
 |- **Content is shared from Microsoft 365**    |- **Restrict access or encrypt the content in Microsoft 365 locations** is selected </br>- **Block only people who were given access to the content through the "Anyone with the link" option** is selected.         |  - **User notifications** set to **On** </br>- **Notify users in Office 365 service with a policy tip** is selected.  </br>- **Notify the user who sent, shared, or last modified the content** is selected     |- **Send an alert to admins when a rule match occurs** set to **On**   </br>- **Send alert every time an activity matches the rule** is selected </br>- **Use email incident reports to notify you when a policy match occurs** set to **On**       |Notifications are sent as soon as a file is uploaded         |
+
+#### Learn more URL
+
+Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide.
+This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps&preserve-view=true ).
+
+> [!IMPORTANT]
+> You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this funcationality out of the box.
+
 
 ### User overrides
 
@@ -905,6 +904,21 @@ Typically, user overrides are useful when your organization is first rolling out
 To learn more about user overrides, see:
 
 - [View the justification submitted by a user for an override](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
+
+#### Business justification X-Header
+
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides, open the [DLP false positives and overrides report](/microsoft-365/compliance/view-the-dlp-reports#view-the-justification-submitted-by-a-user-for-an-override) or you can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log values:
+```xml
+{
+    "FalsePositive"; false,
+    "Justification"; My manager approved sharing of this content",
+    "Reason"; "Override",
+    "Rules": [
+         "<message guid>"
+    ]
+}
+```
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data. 
 
 ### Incident reports
 
