@@ -36,6 +36,8 @@ To access these settings, from the Microsoft Purview compliance portal, navigate
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
+
 ## Endpoint DLP Windows 10/11 and macOS settings
 The following table describes the supported endpoint settings for Windows 10/11 and macOS.
 
