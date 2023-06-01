@@ -153,9 +153,9 @@ Query type 2 is as follows:
 | `primaryId` | One of: <br>- `apple_devices`<br>- `removable_media_devices` <br>- `portable_devices` <br>- `bluetooth_devices` | |
 | `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
 | `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
-| `serialNumber` | string | Matches a device’s serial number.  Won't match if device doesn't have a serial number. |
+| `serialNumber` | string | Matches a device’s serial number. Doesn't match if the device doesn't have a serial number. |
 | `encryption` | apfs | Match if a device is apfs-encrypted. |
-| `groupId` | UUID string | Match if a device is a member of another group.  The value represents the UUID of the group to match against. <br> The group must be defined within the policy prior to the clause. |
+| `groupId` | UUID string | Match if a device is a member of another group. The value represents the UUID of the group to match against. <br> The group must be defined within the policy prior to the clause. |
 
 ### Access policy rule
 
@@ -164,7 +164,7 @@ Query type 2 is as follows:
 | `id` | GUID, a unique ID, represents the rule and will be used in the policy. | New-Guid (Microsoft.PowerShell.Utility) - PowerShell <br> uuidgen |
 | `name` | String, the name of the policy and will display on the toast based on the policy setting. | |
 | `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy is applied to any media in all those groups.  If not specified, the rule is applied to all devices. | The **id** value inside the group must be used at this instance. If there are multiple groups in the `includeGroups`, it's _AND_. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| `excludeGroups` | The group(s) that the policy won't be applied to. | The **id** value inside the group must be used at this instance. If there are multiple groups in the excludeGroups, it's _OR_. |
+| `excludeGroups` | The group(s) that the policy doesn't apply to. | The **id** value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's _OR_. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table later in this article to get the details. |
 
 The following table lists the properties you can use in your entry:
@@ -185,7 +185,7 @@ The following table lists the properties you can use in entry:
 | Property name | Description | Options |
 |:---|:---|:---|
 | `$type` | The type of enforcement | See table below for supported enforcements |
-| `options` | $type specific value to use | An array of options for the entry.  May be omitted if not options are desired. |
+| `options` | $type specific value to use | An array of options for the entry. May be omitted if not options are desired. |
 
 #### Enforcement type
 
