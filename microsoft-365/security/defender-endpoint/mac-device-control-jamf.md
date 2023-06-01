@@ -38,6 +38,8 @@ Microsoft Defender for Endpoint Device Control feature enables you to audit, all
 
 Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
+
 ## Deploy policy by using JAMF
 
 ### Step 1: Create policy JSON
