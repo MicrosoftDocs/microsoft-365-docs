@@ -63,7 +63,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review actions**
 
-    In the action centre, review the actions that have been taken in your environment, both automated and manual. This will help you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions.](auto-investigation-action-center.md)
+    In the action center, review the actions that have been taken in your environment, both automated and manual. This will help you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions.](auto-investigation-action-center.md)
 
 ### Security operations team  
 
@@ -106,7 +106,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
     Microsoft 365 Defender uses the Microsoft 365 Message center to notify you of upcoming changes, such as new and changed features, planned maintenance, or other important announcements. 
       
-    Review the Message centre messages to understand any upcoming changes that will impact your environment. 
+    Review the Message center messages to understand any upcoming changes that will impact your environment. 
      
     You can access this in the Microsoft 365 admin center under the Health tab. See [How to check Microsoft 365 service health.](../../enterprise/view-service-health.md)
 
