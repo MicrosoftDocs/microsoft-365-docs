@@ -60,7 +60,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 After a sensitivity label has been applied to a site, you must have the following role to change that label in SharePoint or Teams:
-- For a group-connect site: Microsoft 365 group [Owners](/admin/create-groups/office-365-groups)
+- For a group-connect site: Microsoft 365 group [Owners](/microsoft-365/admin/create-groups/office-365-groups)
 - For a site that isn't group-connected: SharePoint [site admin](/sharepoint/site-permissions#site-admins)
 
 > [!NOTE]
