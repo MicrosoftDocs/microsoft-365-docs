@@ -29,7 +29,7 @@ description: Learn how to enable guest invitations between Microsoft 365 clouds 
 ## Prerequisites
 
 
-See one of the following depending on your secenario:
+See one of the following depending on your scenario:
 - [Collaborate with guests on a document](collaborate-on-documents)
 - [Collaborate with guests in a site](collaborate-in-site.md)
 - [Collaborate with guests in a team](collaborate-as-team.md)
