@@ -61,7 +61,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 5. Name the policy \> **Next**.
 
-6. Assign admin units, as appropriate \> **Next**..
+6. Assign admin units, as appropriate. \> **Next**.
 
 7. To choose the locations that you want the DLP policy to protect, do one of the following:
 
@@ -83,7 +83,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 12. On the **Protection actions** page, select the notification options you want to apply to the policy.
 
-    ![Protection actions User Notification settintg.](../media/protection-actions-use-notifications.png)
+:::image type="content" alt-text="This screenshot displays the Protection actions User Notification setting." source="../media/protection-actions-use-notifications.png" lightbox="../media/protection-actions-use-notifications.png":::
 
 13. Choose **Next**.
 
