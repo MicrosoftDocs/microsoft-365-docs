@@ -155,8 +155,8 @@ After configuring a connector, the updates by Defender Experts to an incident’
 
 Defender Experts for XDR includes an interactive, on-demand report that provides a clear summary of the work our expert analysts are doing on your behalf, aggregate information about your incident landscape, and granular details about specific incidents. Your service delivery manager (SDM) also uses the report to provide you with more context regarding the service during a monthly business review.
 
-:::image type="content" source="../../media/xdr/Defender-xdr-report.png" alt-text="Screenshot of Defender Experts for XDR report." lightbox="../../media/xdr/Defender-xdr-report.png":::
-![Screenshot of Defender Experts for XDR report](../../media/xdr/Defender-xdr-report.png)
+:::image type="content" source="../../media/xdr/defender-xdr-report.png" alt-text="Screenshot of Defender Experts for XDR report." lightbox="../../media/xdr/Defender-xdr-report.png":::
+![Screenshot of Defender Experts for XDR report](../../media/xdr/defender-xdr-report.png)
 
 Each section of the report is designed to provide more insights about the incidents our experts investigated and resolved in your environment in real time. You can also select the **Date range** to get detailed information about incidents based on severity, category, and understand the time taken to investigate and resolve an incident during a specific period.
 

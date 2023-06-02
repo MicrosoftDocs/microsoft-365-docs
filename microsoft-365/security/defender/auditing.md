@@ -42,8 +42,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 3. Select the **Workload** and **Record type** from the list shown in the following table to further narrow your search
 4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
 
-![Partial screenshot of Microsoft Purview compliance portal Defender New search page](../../media/xdr/audit.png)
-
+:::image type="content" source="../../media/xdr/audit.png" alt-text="Partial screenshot of Microsoft Purview compliance portal Defender New search page.":::
 
 | Action performed by Defender Experts | Workload | Record type |
 |--------------|-----|-----------|
@@ -53,7 +52,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 |Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 
-![Partial screenshot of a sample audit log related to Defender Experts](../../media/xdr/audit-2.png)
+:::image type="content" source="../../media/xdr/audit-2.png" alt-text="Partial screenshot of a sample audit log related to Defender Experts.":::
 
 ## Search the audit logs for actions performed by your administrators in the Defender Experts settings
 
@@ -62,7 +61,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 3. Under **Workload**, choose _MicrosoftDefenderExperts_.
 4. Select **Search** to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
-![Partial screenshot of Microsoft Purview compliance portal Defender New search page showing the Workload field selected to "MicrosoftDefenderExperts"](../../media/xdr/audit-3.png)
+:::image type="content" source="../../media/xdr/audit-3.png" alt-text="Partial screenshot of Microsoft Purview compliance portal Defender New search page showing the Workload field selected to "MicrosoftDefenderExperts.":::
 
 ## Search the audit logs using a PowerShell script
 
