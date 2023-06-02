@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 06/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -82,4 +82,4 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 ## Licensing requirements
 
-License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for Microsoft Purview Information Protection, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
+License requirements to protect your sensitive data depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. For more information, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
