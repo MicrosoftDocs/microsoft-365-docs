@@ -35,7 +35,7 @@ ms.date: 02/08/2023
 - Microsoft 365 Defender
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true). 
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true). 
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -49,8 +49,7 @@ The following conditions relate to all queries.
 1. Queries explore and return data from the past 30 days.
 2. Results can return up to 100,000 rows.
 3. You can make up to at least 45 calls per minute per tenant. The number of calls varies per tenant based on its size.
-1. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant has reached 100% of the allocated resources until after the next 15-minute cycle.
-1. Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](advanced-hunting-best-practices.md). 
+1. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant has reached 100% of the allocated resources until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](advanced-hunting-best-practices.md). 
 1. If a single request runs for more than three minutes, it times out and returns an error.
 1. A `429` HTTP response code indicates that you've reached the allocated CPU resources, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
