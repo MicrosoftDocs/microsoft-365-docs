@@ -48,7 +48,7 @@ When our experts conclude their investigation on an incident, the incident’s *
 
 The **Determination** field corresponding to each classification is also updated to provide more insights on the findings that led our experts to determine the said classification.
 
-![Screenshot of Incidents page showing the Tags, Status, Assigned to, Classification, and Determination fields](../../media/xdr/incidents-xdr-1.png)
+:::image type="content" source="../../media/xdr/incidents-xdr-1.png" alt-text="Screenshot of Incidents page showing the Tags, Status, Assigned to, Classification, and Determination fields." lightbox="../../media/xdr/incidents-xdr-1.png":::
 
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then the incident's **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and the **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These updates are posted in the incident’s **Comments and history** flyout panel.
 
@@ -63,11 +63,11 @@ Otherwise, if an incident is classified as _True Positive_, our experts then ide
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
 
-![Screenshot of the Defender Experts card in Microsoft 365 Defender portal showing the number of incidents awaiting customer action](../../media/xdr/view-incidents.png)
+:::image type="content" source="../../media/xdr/view-incidents.png" alt-text="Screenshot of the Defender Experts card in Microsoft 365 Defender portal showing the number of incidents awaiting customer action." lightbox="../../media/xdr/view-incidents.png":::
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft 365 Defender portal using the _Defender Experts_ tag.
 
-![Screenshot of the Incidents queue in Microsoft 365 Defender portal filtered to only show those with the  Defender Experts tag](../../media/xdr/incidents-filter.png)
+:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft 365 Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
 
 ### How to use guided response in Microsoft 365 Defender
 
@@ -75,13 +75,13 @@ In the Microsoft 365 Defender portal, an incident that requires your attention u
 
 Select **View guided response** on the task card or on the top of the portal page (**Guided response** tab) to open a flyout panel where you can read our experts’ investigation summary, complete pending actions identified by our experts, or engage with them through chat.
 
-![Screenshot of the view guided response task card](../../media/xdr/view-guided-response-button.png)
+:::image type="content" source="../../media/xdr/view-guided-response-button.png" alt-text="Screenshot of the view guided response task card." lightbox="../../media/xdr/view-guided-response-button.png":::
 
 #### Investigation summary
 
 The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
 
-![Screenshot of guided response investigation summary](../../media/xdr/investigation-summary.png)
+:::image type="content" source="../../media/xdr/investigation-summary.png" alt-text="Screenshot of guided response investigation summary." lightbox="../../media/xdr/investigation-summary.png":::
 
 #### Actions
 
@@ -107,7 +107,7 @@ Apart from these one-click actions, you can also receive guided responses from o
 1. For cards with one-click response actions, select the recommended action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action’s outcome.
 
 > [!TIP]
-> You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). 
+> You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md).
 
 3. For cards with recommended actions that you need to perform manually, select **Mark as complete** once you’ve performed them. 
 1. If you don’t want to complete a recommended action right away, select the ellipsis icon on the top of the card and choose any of the following other options:
@@ -119,7 +119,7 @@ Apart from these one-click actions, you can also receive guided responses from o
 
 The **Chat** tab provides you with a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
 
-![Screenshot of the chat tab in the Guided response flyout panel](../../media/xdr/chat.png)
+:::image type="content" source="../../media/xdr/chat.png" alt-text="Screenshot of the chat tab in the Guided response flyout panel." lightbox="../../media/xdr/chat.png":::
 
 > [!NOTE]
 > The chat option is only available for incidents where we issued guided response.
@@ -143,7 +143,7 @@ The following section describes how an incident handled by our experts is update
 1. An incident that our experts have confirmed as a _True Positive_ has a guided response posted in Microsoft 365 Defender, and the **Owner** is listed as _Customer_. You need to act on the incident based on using the provided guided response.
 1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident’s **Status** is updated to _Resolved_ and a **Reason for closing** is provided.
 
-![Screenshot of Microsoft Sentinel incidents](../../media/xdr/microsoft-sentinel-incidents.png)
+:::image type="content" source="../../media/xdr/microsoft-sentinel-incidents.png" alt-text="Screenshot of Microsoft Sentinel incidents." lightbox="../../media/xdr/microsoft-sentinel-incidents.png":::
 
 ### Other applications
 
@@ -155,6 +155,7 @@ After configuring a connector, the updates by Defender Experts to an incident’
 
 Defender Experts for XDR includes an interactive, on-demand report that provides a clear summary of the work our expert analysts are doing on your behalf, aggregate information about your incident landscape, and granular details about specific incidents. Your service delivery manager (SDM) also uses the report to provide you with more context regarding the service during a monthly business review.
 
+:::image type="content" source="../../media/xdr/Defender-xdr-report.png" alt-text="Screenshot of Defender Experts for XDR report." lightbox="../../media/xdr/Defender-xdr-report.png":::
 ![Screenshot of Defender Experts for XDR report](../../media/xdr/Defender-xdr-report.png)
 
 Each section of the report is designed to provide more insights about the incidents our experts investigated and resolved in your environment in real time. You can also select the **Date range** to get detailed information about incidents based on severity, category, and understand the time taken to investigate and resolve an incident during a specific period.
@@ -206,11 +207,11 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 - _**Alerts page flyout menu**_:
 
-  ![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal." lightbox="../../media/mte/defenderexperts/alerts-flyout-menu.png":::  
 
 - _**Incidents page actions menu**_:
 
-  ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="IScreenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal." lightbox="../../media/mte/defenderexperts/incidents-page-actions-menu.png":::
 
 ### See also
 
