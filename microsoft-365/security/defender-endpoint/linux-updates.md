@@ -37,7 +37,8 @@ ms.date: 12/18/2020
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
 > [!WARNING]
-> Each version of Defender for Endpoint on Linux has an expiration date, after which it will no longer continue to protect your device. You must update the product prior to this date. To check the expiration date, run the following command:
+> Each version of Defender for Endpoint on Linux is set to expire automatically. While expired versions continue to receive security intelligence updates, install the latest version to get all available fixes and enhancements. <br>
+>To check the expiration date, run the following command:
 > ```bash
 > mdatp health --field product_expiration
 > ```
