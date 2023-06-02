@@ -80,6 +80,10 @@ You can configure the tamper protection mode by providing the mode name as enfor
 - Supported macOS versions: Big Sur (11), or later.
 - Minimum required version for Defender for Endpoint: 101.70.19.
 
+
+>[!WARNING]
+>Repackaging the Defender for Endpoint on macOS agent is not a supported scenario. Doing so can negatively impact the integrity of the product and lead to adverse results, including but not limited to triggering tampering alerts and updates failing to apply. 
+
 **Highly recommended settings:**
 
 - System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
