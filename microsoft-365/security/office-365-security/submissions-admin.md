@@ -425,13 +425,6 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-   - To group the entries, select ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the drop-down list:
-     - **None**
-     - **Reason**
-     - **Status**
-     - **Result**
-     - **Tags**
-
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
 ### View URLs admin submissions to Microsoft
