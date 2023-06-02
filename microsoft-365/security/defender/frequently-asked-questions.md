@@ -26,7 +26,7 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 
 | Questions | Answers |
 |---------|---------|
