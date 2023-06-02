@@ -83,7 +83,7 @@ The following table lists the available tools based on the endpoint that you nee
 > [!NOTE]
 > For devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager, you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Intune.
 
-The following table lists the available tools based on the endpoint that you need to onboard.
+
 
 ## Configure capabilities of the service
 Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.
