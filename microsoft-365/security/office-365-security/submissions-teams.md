@@ -150,7 +150,7 @@ The availability of Teams messages on the **User reported** tab on the **Submiss
     - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
   - **Send reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages were not analyzed by Microsoft.
 
-- Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Admin submission of user reported messages](submissions-admin.md#admin-submission-of-user-reported-messages), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
+- Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-Microsoft-for-analysis), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
 
   But only the following values are available in **Submit to Microsoft for analysis** for reported Teams messages:
 
