@@ -61,7 +61,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 3. Under **Workload**, choose _MicrosoftDefenderExperts_.
 4. Select **Search** to list the audit logs related to actions taken by your tenant administrators to the Defender Experts settings.
 
-:::image type="content" source="../../media/xdr/audit-3.png" alt-text="Partial screenshot of Microsoft Purview compliance portal Defender New search page showing the Workload field selected to "MicrosoftDefenderExperts.":::
+:::image type="content" source="../../media/xdr/audit-3.png" alt-text="Partial screenshot of Microsoft Purview compliance portal Defender New search page showing the Workload field selected to MicrosoftDefenderExperts.":::
 
 ## Search the audit logs using a PowerShell script
 
