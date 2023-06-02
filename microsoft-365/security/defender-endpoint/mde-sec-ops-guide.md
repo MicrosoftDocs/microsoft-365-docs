@@ -188,13 +188,12 @@ These tasks are seen as maintenance for your security posture and are critical f
 
 ## Troubleshooting
 
-The following articles provide guidance to troubleshoot and fix errors that you may experience when setting up your Microsoft Defender for Endpoint service. See [**Troubleshoot**.](check-sensor-status.md)
+The following articles provide guidance to troubleshoot and fix errors that you may experience when setting up your Microsoft Defender for Endpoint service.
 
-- Troubleshoot Sensor state
-- Troubleshoot sensor health issues using Client Analyzer 
-- Troubleshoot Microsoft Defender for Endpoint service issues
-- Troubleshoot live response issues
-- Collect support logs using LiveAnalyzer
-- Troubleshoot attack surface reduction issues
-- Troubleshoot onboarding issues
+- [Troubleshoot Sensor state](check-sensor-status.md)
+- [Troubleshoot sensor health issues using Client Analyzer](fix-unhealthy-sensors.md) 
+- [Troubleshoot live response issues](troubleshoot-live-response.md)
+- [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+- [Troubleshoot attack surface reduction issues](troubleshoot-asr.md)
+- [Troubleshoot onboarding issues](troubleshoot-onboarding.md)
  
