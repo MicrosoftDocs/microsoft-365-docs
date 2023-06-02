@@ -1,5 +1,5 @@
 ---
-title: Getting started with Microsoft Defender Experts for XDR
+title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
@@ -58,7 +58,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**. In this page, you could also turn **Access security data from all devices** on or off under the access levels.
 
 > [!IMPORTANT]
-> If you turn off **Access security data from all devices**, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md)
+> If you turn off **Access security data from all devices**, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md).
 
 ## Tell us who to contact for important matters
 

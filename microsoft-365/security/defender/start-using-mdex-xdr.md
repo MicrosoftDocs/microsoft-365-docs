@@ -55,7 +55,7 @@ If an incident is classified as _False Positive_ or _Informational_, _Expected A
 > [!NOTE]
 > Incident comments are one-way posts. Defender Experts can’t respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
 
-Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
+Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
 - If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident’s [Guided response](#how-to-use-guided-response-in-microsoft-365-defender) flyout panel in your Microsoft 365 Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
@@ -71,7 +71,7 @@ To view the incidents our experts have investigated or are currently investigati
 
 ### How to use guided response in Microsoft 365 Defender
 
-In the Microsoft 365 Defender portal, an incident that requires your attention using guided response has the **Assigned to** field set to _Customer_ and a task card on top of the **Incidents** pane. Your designated incident contacts also receives a corresponding email notification with a link to the Defender portal to view the incident. [Learn more about notification contacts](get-started-xdr.md#tell-us-who-to-contact-for-important-matters)
+In the Microsoft 365 Defender portal, an incident that requires your attention using guided response has the **Assigned to** field set to _Customer_ and a task card on top of the **Incidents** pane. Your designated incident contacts also receives a corresponding email notification with a link to the Defender portal to view the incident. [Learn more about notification contacts](get-started-xdr.md#tell-us-who-to-contact-for-important-matters).
 
 Select **View guided response** on the task card or on the top of the portal page (**Guided response** tab) to open a flyout panel where you can read our experts’ investigation summary, complete pending actions identified by our experts, or engage with them through chat.
 
@@ -99,7 +99,7 @@ Defender Experts for XDR currently supports the following one-click guided respo
 Apart from these one-click actions, you can also receive guided responses from our experts that you need to perform manually.
 
 > [!NOTE]
-> Before performing any of the recommended guided response actions, make sure that they are not already being addressed by your automated investigation and response configurations. [Learn more about automated investigation and response capabilities in Microsoft 365 Defender](m365d-autoir.md)
+> Before performing any of the recommended guided response actions, make sure that they are not already being addressed by your automated investigation and response configurations. [Learn more about automated investigation and response capabilities in Microsoft 365 Defender](m365d-autoir.md).
 
 **To view and perform the guided response actions:**
 
@@ -195,9 +195,9 @@ Defender Experts for XDR also includes proactive threat hunting offered by [Micr
 
 Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization may face. Consult an expert to:
 
-- Gather additional information on alerts and incidents, including root causes and scope
-- Gain clarity into suspicious devices, alerts, or incidents and get the next steps if faced with an advanced attacker
-- Determine risks and available protections related to activity groups, campaigns, or emerging attacker techniques
+- Gather additional information on alerts and incidents, including root causes and scope.
+- Gain clarity into suspicious devices, alerts, or incidents and get the next steps if faced with an advanced attacker.
+- Determine risks and available protections related to activity groups, campaigns, or emerging attacker techniques.
 
 > [!NOTE]
 > Ask Defender Experts is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).

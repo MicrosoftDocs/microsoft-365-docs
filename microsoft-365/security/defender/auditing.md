@@ -39,7 +39,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) to use [Audit New Search](/microsoft-365/compliance/audit-new-search).
 2. Provide a **Date and time range (UTC)**.
-3. Select the **Workload** and **Record type** from the list shown in the following table to further narrow your search
+3. Select the **Workload** and **Record type** from the list shown in the following table to further narrow your search.
 4. Select **Search** to list the audit logs related to actions taken by our experts in your tenant.
 
 :::image type="content" source="../../media/xdr/audit.png" alt-text="Partial screenshot of Microsoft Purview compliance portal Defender New search page.":::
@@ -65,7 +65,7 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 
 ## Search the audit logs using a PowerShell script
 
-In addition to using Audit New Search in the Microsoft Purview compliance portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script)
+In addition to using Audit New Search in the Microsoft Purview compliance portal, you can use PowerShell cmdlets to search for audit logs. [Learn more](/microsoft-365/compliance/audit-log-search-script).
 
 ### See also
 
