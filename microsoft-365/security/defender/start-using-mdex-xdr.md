@@ -87,7 +87,7 @@ The **Investigation summary** section provides you with more context about the i
 
 The **Actions** tab displays task cards that contain response actions recommended by our experts. 
 
-![Screenshot of the Actions tab showing one-click and manual guided response actions](../../media/xdr/guided-response-actions.png)
+:::image type="content" source="../../media/xdr/guided-response-actions.png" alt-text="Screenshot of the Actions tab showing one-click and manual guided response actions.":::
 
 Defender Experts for XDR currently supports the following one-click guided response actions:
 
