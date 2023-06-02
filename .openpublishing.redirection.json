@@ -11058,7 +11058,7 @@
   {
     "source_path": "microsoft-365/compliance/compliance-manager-mcca.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": false
+    "redirect_document_id": true
   }
  ]
 }
