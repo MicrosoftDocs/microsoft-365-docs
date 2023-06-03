@@ -604,7 +604,7 @@ On the **User reported** tab, actions for user reported messages are available o
   - [Actions in Microsoft Defender for Office 365 Plan 2 only](#actions-for-user-reported-messages-in-defender-for-office-365-plan-2):
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
     - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**
-    - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert
+    - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**
 
   > [!TIP]
   > To see details or take action on other user reported messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
