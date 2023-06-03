@@ -128,7 +128,7 @@ When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on
   > [!IMPORTANT]
   >
   > - If you select **My reporting mailbox only**, the **Result** value of entries on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> is **Not Submitted to Microsoft**, because the messages were not analyzed by Microsoft.
-  > - In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the only available selection in the **Send the reported messages to** section is **My reporting mailbox only**. The other two options are grayed out due to compliance reasons.
+  > - In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the only available selection in the **Send the reported messages to** section is **My reporting mailbox only**. The other two options are grayed out for compliance reasons (data isn't allowed to leave the organization boundary).
   >
   > - If you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations, and you're sending user reported messages to a reporting mailbox, you need to configure the reporting mailbox as a SecOps mailbox as described in the [Configuration requirements for the reporting mailbox](#configuration-requirements-for-the-reporting-mailbox) section earlier in this article. If you don't, a user reported message might trigger a training assignment by the phishing simulation product.
 

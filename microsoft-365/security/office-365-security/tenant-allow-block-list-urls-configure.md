@@ -73,7 +73,7 @@ You have the following options to create block entries for URLs:
 
 ### Use the Microsoft 365 Defender portal to create block entries for URLs on the Submissions page
 
-When you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit URLs as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry on the **URLs** tab in the Tenant Allow/Block List.
+When you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to submit URLs as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry on the **URLs** tab in the Tenant Allow/Block List.
 
 For instructions, see [Submit questionable URLs to Microsoft](submissions-admin.md#report-questionable-urls-to-microsoft).
 
@@ -120,16 +120,16 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page
 
-You can't create URL allow entries directly in the Tenant Allow/Block List. Instead, you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit the URL as a false positive, which also adds an allow entry on the **URLs** tab in the Tenant Allow/Block List.
+You can't create URL allow entries directly in the Tenant Allow/Block List. Instead, you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to submit the URL as a false positive, which also adds an allow entry on the **URLs** tab in the Tenant Allow/Block List.
 
 For instructions, see [Submit good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft).
 
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the allow entry creation process for URLs from the Submissions page. We'll create allow entries for URLs that were determined to be malicious by our filters during mail flow or at time of click.
+> Microsoft manages the allow entry creation process for URLs from the **Submissions** page. We'll create allow entries for URLs that were determined to be malicious by our filters during mail flow or at time of click.
 >
-> We allow subsequent messages that contain variations of the original URL. For example, you use the Submissions page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+> We allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 >
 > When the URL is encountered again, all filters associated with the URL are overridden.
 >

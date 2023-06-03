@@ -180,7 +180,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 >
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They are sent only to the reporting mailbox that you identify. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They're sent only to the reporting mailbox that you identify for compliance reasons (data isn't allowed to leave the organization boundary). For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal/home#/Settings/AddIns>, select **Settings** \> **Add-ins** \> **Deploy Add-in** \> **Upload custom apps**.
 

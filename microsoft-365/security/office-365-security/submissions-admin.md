@@ -31,10 +31,15 @@ ms.date: 5/25/2023
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft 365 Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
-- **Admin-originated submissions**: Admins identify and report messages, attachments, or URLs  by selecting ::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** as described in the [Admin-originated submissions](#admin-originated-submissions) section. These submissions happen outside of the built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) in Microsoft 365. In other words, the reported items don't appear on the **User reported** tab on the **Submissions** page first.
-- **Admins submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured (using Microsoft reporting tools or supported third-party reporting tools), and the reported messages are delivered only to the reporting mailbox, not to Microsoft. The user reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit the messages to Microsoft. After the admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page. These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
+- **Admin-originated submissions**: Admins identify and report messages, attachments, or URLs (entities) by selecting ::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** from the tabs on the **Submissions** page as described in the [Admin-originated submissions](#admin-originated-submissions) section.
 
-When admins submit an email message for analysis, Microsoft does the following checks:
+  After the admin reports the entity, an entry appears on the corresponding tab on the **Submissions** page (anywhere except the **User reported** tab).
+
+- **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured (using Microsoft reporting tools or supported third-party reporting tools), and the reported messages are delivered only to the reporting mailbox, not to Microsoft. The user reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit the messages to Microsoft from the **User reported** tab.
+
+  After the admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
+
+When admins submit email messages for analysis, Microsoft does the following checks:
 
 - **Email authentication check**: Whether email authentication passed or failed when it was delivered.
 - **Policy hits**: Information about any policies or overrides that might have allowed or blocked the incoming email into the organization, thus overriding our filtering verdicts.
@@ -42,12 +47,15 @@ When admins submit an email message for analysis, Microsoft does the following c
 - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. The messages are analyzed only for email authentication check and policy check. Payload reputation/detonation and grader analysis are not done as data is not supposed to leave the tenant boundary for compliance purposes.
-
-For other ways to submit email messages, URLs, attachments and files to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit messages to Microsoft for analysis. The messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
+
+For more information about how **users** can submit messages and files to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+
+For other ways that **admins** can report messages to Microsoft in the Defender portal, see [Related reporting settings for admins](submissions-report-messages-files-to-microsoft.md#related-reporting-settings-for-admins).
 
 ## What do you need to know before you begin?
 
@@ -60,16 +68,16 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 - Admins can submit email messages as old as 30 days if they're still available in the mailbox and haven't been purged by the user or an admin.
 
 - Admin submissions are throttled at the following rates:
-  - Maximum submissions in any 15 minutes period: 150 submissions
+  - Maximum submissions in any 15 minute period: 150 submissions
   - Same submissions in a 24 hour period: 3 submissions
   - Same submissions in a 15 minute period: 1 submission
 
-- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+- A **Files** tab is available on the **Submissions** page only in organizations with Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 ## Admin-originated submissions
 
 > [!TIP]
-> Strictly speaking, the tab where you select select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** doesn't matter, as long as you set **Select the submission type** to the correct value.
+> The tab where you select select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** doesn't particularly matter, as long as you set **Select the submission type** to the correct value.
 
 ### Report questionable email to Microsoft
 
@@ -279,7 +287,7 @@ After a few moments, the allow entry is available on the **Files** tab on the **
 
 ### Report good URLs to Microsoft
 
-For URLs reported as false positives, we allow subsequent messages that contain variations of the original URL. For example, you use the Submissions page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+For URLs reported as false positives, we allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -499,23 +507,9 @@ On the **Emails**, **Email attachments** and **URLs** tabs on the **Submissions*
   - **Block URL/file in Tenant Allow/Block List**
   - **Remove URL/file from Tenant Allow/Block List**
 
-- [Actions in Microsoft Defender for Office 365 Plan 2 only](#actions-for-admin-submissions-in-defender-for-office-365-plan-2)
-  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
-  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**
-  - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**
-  - Links in the **Result details** section for [Threat Explorer](threat-explorer-about.md):
-    - **View this message in Explorer**
-    - **Search for similar messages in Explorer**
-    - **Search for URL or file**
-
-  > [!TIP]
-  > To see details or take action on other user reported messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
-
-<sup>\*</sup> Depending on the nature and status of the message, some actions might not be available.
-
 #### Actions for admin submissions in Defender for Office 365 Plan 2
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions might also be available in the details flyout of an admin submission:
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are also available in the details flyout of an admin submission:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
 
@@ -689,23 +683,3 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
-
-### View the associated alert for user reported messages
-
-In Microsoft Defender for Office 365 Plan 2, an alert is generated for each user reported message. To view the alert that corresponds to the reported message, do the following steps:
-
-- **User reported messages**:
-
-  On the **User reported** tab at <https://security.microsoft.com/reportsubmission?viewid=user>, select the message by clicking anywhere in the row other than the check box.
-
-  In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**.
-
-  :::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option to view the related alert from a user reported phishing message.":::
-
-- **Admin reported messages**:
-
-  On the **emails** tab at <https://security.microsoft.com/reportsubmission?viewid=email>, select the message by clicking anywhere in the row other than the check box.
-
-  In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**.
-
-  :::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Option to view the related alert from an admin submission.":::

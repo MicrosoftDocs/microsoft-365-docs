@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/10/2023
+ms.date: 6/5/2023
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -1037,7 +1037,7 @@ The details table below the graph shows the same information and has the same ac
 - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify**
 - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis**
 
-For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
+For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft) and [Admin actions for user reported messages](submissions-admin.md#admin-actions-for-user-reported-messages).
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
