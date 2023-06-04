@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/10/2023
+ms.date: 03/20/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -61,6 +61,19 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## May 2023
+
+- Performance mode for Microsoft Defender Antivirus is now available for public preview. This new capability provides asynchronous scanning on a Dev Drive, and does not change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
+
+## March 2023
+
+- Support for [Mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is now in preview! With these capabilities, you can [Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)](defender-endpoint-subscription-settings.md).
+
+## February 2023
+ 
+- The Microsoft Defender for Identity integration toggle is now removed from the Microsoft Defender for Endpoint Settings > Advanced features page. Because Defender for Identity is now integrated with Microsoft 365 Defender, this toggle is no longer required. You don't need to manually configure integration between services. See [What's new - Microsoft Defender for Identity](/defender-for-identity/whats-new#defender-for-identity-release-2194).
+
+
 ## January 2023
 
 - [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
@@ -72,9 +85,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 ## December 2022
 
 - Microsoft Defender for Endpoint Device control removable storage access control updates:
-    1. Microsoft Endpoint Manager support for removable storage access control is now available in Intune. See [Deploy Removable Storage Access Control by using Intune user interface](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
+    1. Microsoft Intune support for removable storage access control is now available. See [Deploy Removable Storage Access Control by using Intune user interface](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
     2. The new default enforcement policy of removable storage access control is designed for all device control features. Printer Protection is now available for this policy. If you create a Default Deny policy, printers will be blocked in your organization.
-        - Intune:*./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
+        - Intune: *./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
         - Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> See [Deploy and manage Removable Storage Access Control using group policy](deploy-manage-removable-storage-group-policy.md)
 
 - Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. For more information, see
@@ -95,7 +108,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
    - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
 
    > [!NOTE]
-   > This integration doesn’t currently support the use of custom scripts to gain visibility into extra signals.
+   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
 
 
 ## October 2022
@@ -157,7 +170,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Announcing the public preview of Defender for Endpoint personal profile for Android Enterprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979)<br>We're happy to announce that users who wish to enroll their own devices in their workplace’s BYOD program can now benefit from the protection provided by Microsoft Defender for Endpoint in their personal profile as well.
 
-- [Security Settings Management in Microsoft Defender for Endpoint is now generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>In late 2021, we announced that Microsoft Defender for Endpoint expanded its configuration management capabilities. This release empowered security teams to configure devices with their desired security settings without needing to deploy and implement other tools or infrastructure.  Made possible with Microsoft Endpoint Manager, organizations have been able to manage antivirus (AV), endpoint detection and response (EDR), and firewall (FW) policies from a single view for all enlisted devices. Today, we're announcing that this capability is now generally available for Windows client and Windows server, supporting Windows 10, Windows 11, and Windows Server 2012 R2 or later.
+- [Security Settings Management in Microsoft Defender for Endpoint is now generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>In late 2021, we announced that Microsoft Defender for Endpoint expanded its configuration management capabilities. This release empowered security teams to configure devices with their desired security settings without needing to deploy and implement other tools or infrastructure.  Made possible with Microsoft Intune, organizations have been able to manage antivirus (AV), endpoint detection and response (EDR), and firewall (FW) policies from a single view for all enlisted devices. Today, we're announcing that this capability is now generally available for Windows client and Windows server, supporting Windows 10, Windows 11, and Windows Server 2012 R2 or later.
 
 ## April 2022
 
@@ -187,5 +200,5 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639)<br>Starting January 14, Microsoft Defender for Endpoint Plan 1 (P1) will be automatically included in Microsoft 365 E3/A3 licenses.
 
-- [Zero-touch onboarding of Microsoft Defender for Endpoint on iOS now in public preview](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/zero-touch-onboarding-of-microsoft-defender-for-endpoint-on-ios/ba-p/3038045)<br>With this new capability, enterprises can now deploy Microsoft Defender for Endpoint on iOS devices that are enrolled with Microsoft Endpoint Manager automatically, without needing end-users to interact with the app. This eases the deployment frictions and significantly reduces the time needed to deploy the app across all devices as Microsoft Defender for Endpoint gets silently activated on targeted devices and starts protecting your iOS estate.
+- [Zero-touch onboarding of Microsoft Defender for Endpoint on iOS now in public preview](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/zero-touch-onboarding-of-microsoft-defender-for-endpoint-on-ios/ba-p/3038045)<br>With this new capability, enterprises can now deploy Microsoft Defender for Endpoint on iOS devices that are enrolled with Microsoft Intune automatically, without needing end-users to interact with the app. This eases the deployment frictions and significantly reduces the time needed to deploy the app across all devices as Microsoft Defender for Endpoint gets silently activated on targeted devices and starts protecting your iOS estate.
 

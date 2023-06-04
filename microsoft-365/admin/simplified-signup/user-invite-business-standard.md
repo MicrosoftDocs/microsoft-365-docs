@@ -3,8 +3,9 @@ title: "Accept an email invitation to a Microsoft 365 for business subscription 
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 04/22/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,6 +22,8 @@ description: "Accept invite to join a Microsoft 365 for business organization"
 ---
 
 # Accept an email invitation to a Microsoft 365 for business subscription (User)
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!IMPORTANT]
 > These steps apply to Microsoft 365 Business Standard, Microsoft 365 Business Basic and Microsoft 365 Apps for business.
@@ -60,7 +63,7 @@ Follow the steps in the [Migrate data to my Microsoft 365 for business subscript
 
 ### No data to migrate?
 
-Download and start using [Office apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
+Download and start using [Microsoft 365 apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
 ## Frequently asked questions
 
@@ -83,7 +86,7 @@ Your data will remain in your old account, nothing will be deleted.  You will be
 
 ### Why does it say my admin now handles my data?
 
-When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft Office (and within other apps in Microsoft 365 for business subscriptions) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner.
+When using an upgraded Microsoft 365 Business account, your documents, email and data that you create within Microsoft 365 (and within other apps in Microsoft 365 for business subscriptions) will be owned by the technical administrator in your organization. For example, the person who sent you the invitation email or your business owner.
 
 ### How do I get started with my new account?
 

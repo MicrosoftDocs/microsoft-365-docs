@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/02/2023
 ---
 
 # Investigate entities on devices using live response
@@ -78,29 +78,17 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
-  > Only admins and users who have "Manage Portal Settings" permissions can enable live response. 
-  >
-  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
+  > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
   > [!NOTE]
   > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
 
-- **Ensure that the device has an Automation Remediation level assigned to it**.
-
-  You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
-  > [!NOTE]
-  > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2. 
-
-  You'll receive the following error:
-
-  :::image type="content" source="images/live-response-error.png" alt-text="The error message" lightbox="images/live-response-error.png":::
-
 - **Enable live response unsigned script execution** (optional).
 
-  >[!IMPORTANT]
-  >Signature verification only applies for PowerShell scripts.
+  > [!IMPORTANT]
+  > Signature verification only applies for PowerShell scripts.
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -163,7 +151,7 @@ The following commands are available for user roles that are granted the ability
 | connections  | Shows all the active connections.  | Y  | N  | N  |
 | dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
 | drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
-| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
+| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
 | fileinfo  | Get information about a file.  | Y  | Y  | Y  |
 | findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
 | getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
@@ -185,9 +173,9 @@ The following commands are available for user roles that are granted the ability
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
-| collect  | Collects forensics package from machine  | N  | Y  | Y  |
-| isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service  | N  | Y  | N  |
-| release  | Releases a device from network isolation  | N  | Y  | N  |
+| collect  | Collects forensics package from device.  | N  | Y  | Y  |
+| isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
+| release  | Releases a device from network isolation.  | N  | Y  | N  |
 | run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
 | library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
@@ -221,10 +209,6 @@ To enable your security operations team to continue investigating an impacted de
 - To bring a file download to the foreground, in the live response command console, type `fg <command_id>`.
 
 Here are some examples:
-
-<br>
-
-****
 
 |Command|What it does|
 |---|---|

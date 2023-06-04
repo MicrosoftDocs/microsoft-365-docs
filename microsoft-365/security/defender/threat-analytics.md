@@ -45,7 +45,7 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
 You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 

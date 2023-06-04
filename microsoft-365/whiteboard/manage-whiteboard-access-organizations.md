@@ -1,9 +1,10 @@
 ---
 title: Manage access to Microsoft Whiteboard for your organization
 ms.author: alexfaulkner
-author: alexfaulkner
+author: alexsfaulkner
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 11/03/2021
 audience: admin
 ms.topic: article
 ms.custom: 
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for your organization in the Microsoft 365 admin center.
-
 ---
 
 # Manage access to Microsoft Whiteboard for your organization
@@ -76,3 +76,4 @@ To prevent access to Whiteboard for specific users, see [Building a Conditional 
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
+

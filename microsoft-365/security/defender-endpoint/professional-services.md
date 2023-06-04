@@ -30,6 +30,8 @@ ms.date: 09/28/2022
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -42,7 +44,7 @@ Managed security services that assist organizations to detect threats early and 
 
 |Service name|Vendor|Description|
 |---|---|---|
-|[Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)|Microsoft|Defender Experts for Hunting is a proactive threat hunting service for Microsoft 365 Defender.|
+|[Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)|Microsoft|Defender Experts for Hunting are a proactive threat hunting service for Microsoft 365 Defender.|
 |[Cloud Security Operations Center](https://go.microsoft.com/fwlink/?linkid=2202671)|glueckkanja-gab AG|Monitors your Microsoft Security Solutions 24/7, responds to threats on your behalf and works closely with your IT to continuously improve your security posture.|
 |[Wortell Protect](https://go.microsoft.com/fwlink/?linkid=2202480)|Wortell|Wortell offers a 24.7.365 Managed Detection and Response service, SOC-as-a-service, to secure your Azure subscriptions and Microsoft 365 environment. With this managed service, Wortell will provide security monitoring and incident response, and operate Microsoft Defender and (optionally) Microsoft Sentinel on your behalf. The service also includes threat intelligence feeds and custom machine learning models|
 |[CRITICALSTART® Managed Detection & Response Services for Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2202761)|CRITICALSTART|Critical Start Managed Detection and Response (MDR) services for Microsoft 365 Defender (M365D) extends security defenses to provide cross-domain threat protection and simplify breach prevention. Their team of Microsoft security experts leverages integration with M365D to detect, investigate and respond with the right actions to alerts from identity, to email and cloud – before they disrupt business operations.|
@@ -71,6 +73,7 @@ Managed security services that assist organizations to detect threats early and 
 |[Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)|Quorum Cyber|Quorum Cyber's Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 |[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895)|Open Systems|Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24x7 protection while reducing attack surfaces and MTTR.|
+|[Kroll](https://www.kroll.com/en)|Kroll|Kroll provides proprietary data, technology and insights to help our clients stay ahead of complex demands related to risk, governance and growth. Our solutions deliver a powerful competitive advantage, enabling faster, smarter and more sustainable decisions. With 5,000 experts around the world, we create value and impact for our clients and communities.|
 
 ## Respond
 
@@ -107,6 +110,7 @@ Respond to security incidents quickly, effectively and at scale with complete in
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 |[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895)|Open Systems|Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24x7 protection while reducing attack surfaces and MTTR.|
 
+
 ## Protect
 
 Protect your organization proactively by evaluating your organization's ability to effectively prevent, detect, and respond to cyber threats before they disrupt your business.
@@ -116,7 +120,7 @@ Protect your organization proactively by evaluating your organization's ability 
 |[Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)|Microsoft|Defender Experts for Hunting is a proactive threat hunting service for Microsoft 365 Defender.|
 |[Microsoft Consulting Services - Security Operations and Threat Protection Services](https://www.microsoft.com/industrysolutions/solutions/security?activetab=pivot1:primaryr4)|Microsoft|The Microsoft Consulting Services (MCS) Security Operations and Threat Protection Services (SOTPS), provides a structured approach to modern Security Operations Center (SOC) design and implementation using effective change management techniques so your security professionals can detect attacks faster and respond more effectively.|
 |[Onevinn Threat Hunting](https://go.microsoft.com/fwlink/?linkid=2202584)|Onevinn|If your Internal SOC needs an extra pair of eyes looking for threats, Onevinn's Threat Hunters can be purchased as your extended hunting team.|
-|[Microsoft 365 Security Assessment](https://go.microsoft.com/fwlink/?linkid=2202389)|Nedscaper|The Microsoft 365 Security assessment provides a risk-based approach to scan and analyze the security baseline (prevention is better than the cure) and settings of the Microsoft 365 Security products, from Microsoft 365 E3 security products like Azure AD Conditional Access and Microsoft Endpoint Manager (Microsoft Defender Antivirus policies) to the Microsoft 365 E5 Security products like Microsoft 365 Defender, Azure AD identity Protection and Microsoft Defender for Identity, Devices, Office 365 and Cloud Apps.|
+|[Microsoft 365 Security Assessment](https://go.microsoft.com/fwlink/?linkid=2202389)|Nedscaper|The Microsoft 365 Security assessment provides a risk-based approach to scan and analyze the security baseline (prevention is better than the cure) and settings of the Microsoft 365 Security products, from Microsoft 365 E3 security products like Azure AD Conditional Access and Microsoft Intune (Microsoft Defender Antivirus policies) to the Microsoft 365 E5 Security products like Microsoft 365 Defender, Azure AD identity Protection and Microsoft Defender for Identity, Devices, Office 365 and Cloud Apps.|
 |[Invoke Monthly Microsoft 365 Security Assessments](https://go.microsoft.com/fwlink/?linkid=2202583)|Invoke LLC|Provides monthly detailed assessment reports of active threats, vulnerabilities active and Phishing/malware campaigns targeted on your Microsoft 365 Environment. Helps with prescribed mitigations for active threats and improvement actions for recurring threats if any.Monitor Secure score and recommendations, giving your security teams an extra set of eyes to stay on top of risks.|
 |[Cloud Security Operations Center](https://go.microsoft.com/fwlink/?linkid=2202671)|glueckkanja-gab AG|Monitors your Microsoft Security Solutions 24/7, respond to threats on your behalf and work closely with your IT to continuously improve your security posture.|
 |[Wortell Protect](https://go.microsoft.com/fwlink/?linkid=2202480)|Wortell|Wortell offers a 24.7.365 Managed Detection and Response service, SOC-as-a-service, to secure your Azure subscriptions and Microsoft 365 environment. With this managed service, Wortell will provide security monitoring and incident response, and operate Microsoft Defender and (optionally) Microsoft Sentinel on your behalf. The service also includes threat intelligence feeds and custom machine learning models|

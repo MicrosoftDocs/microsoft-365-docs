@@ -59,9 +59,9 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - Response will include only devices that the user have access to based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - Response will include only devices that the user have access to based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - Response will include only devices that the user have access to based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -84,7 +84,7 @@ Empty
 ## Response
 
 If successful - 200 OK with list of the machines in the response body.
-If the timestamp is not in the past 30 days - 400 Bad Request.
+If the timestamp isn't in the past 30 days - 400 Bad Request.
 
 ## Example
 

@@ -97,7 +97,7 @@ In addition, a notification is shown on the iOS device. Tapping on the notificat
 After onboarding, it takes few hours for device to show up in the Device inventory in the Defender for Endpoint security console. Also, ensure that device is registered correctly with Azure Active Directory and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Azure AD.
 
 > [!NOTE]
-> Sometimes, the device name is not consistent with that in Microsoft Endpoint Manager (Intune) console. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad model>. You can also use Azure AD device ID to identify the device in the Defender for Endpoint console.
+> Sometimes, the device name is not consistent with that in Microsoft Intune admin center. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad model>. You can also use Azure AD device ID to identify the device in the Defender for Endpoint console.
 
 ## Data and Privacy
 

@@ -27,6 +27,8 @@ ms.date: 12/18/2020
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,17 +47,22 @@ You'll need to know the exact Linux distros and macOS versions that are compatib
 
 ## Onboarding non-Windows devices
 
-You'll need to take the following steps to onboard non-Windows devices:
+You can choose to onboard non-Windows devices through Microsoft Defender for Endpoint or through a third-party solution.
 
-1. Select your preferred method of onboarding:
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.
-    1. In the navigation pane, select **Partners and APIs** \> **Partner Applications** . Make sure the third-party solution is listed.
-    2. In the **Partner Applications** page, select the partner that supports your non-Windows devices.
-    3. Click **View** to open the partner's page. Follow the instructions provided on the page.
-    4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it's aligned with the service that you require.
+You'll need to take the following steps:
+
+1.	Select your preferred method of onboarding:
+    - To onboard macOS devices using Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+    - To onboard Linux devices using Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux).
+    - To onboard non-windows devices using third party solution:
+        1.	In the navigation pane, select **Partners and APIs > Connected Applications**. Make sure the third-party solution is listed.
+        2.	In the **Connected Applications** page, select the partner that supports your non-Windows devices.
+        3.	Select **View** to open the partner's page. Follow the instructions provided on the page.
+        4.	After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it's aligned with the service that you require.
+
 
 2. Run a detection test by following the instructions of the third-party solution.
 

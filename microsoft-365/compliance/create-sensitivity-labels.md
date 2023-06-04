@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ First, create and configure the sensitivity labels that you want to make availab
 
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
-> [!TIP]
+> [!NOTE]
 > If you don't yet have any sensitivity labels, you might be eligible for the automatic creation of default labels and a default label policy. Even if you have some labels, you might find it useful to see the configuration of these default labels that we're creating for new customers. For example, you can make the same manual configurations to help accelerate your own label deployment.
 > 
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
@@ -54,10 +54,10 @@ The global admin for your organization has full permissions to create and manage
     > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they're published:
-
-    ![Scopes for sensitivity labels.](../media/sensitivity-labels-scopes.png)
-
-    - If **Items** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. Optionally, in preview, you can extend these labels to [include meetings](sensitivity-labels-meetings.md) from Teams and Outlook, and to protecting Teams meetings themselves by enforcing settings for Teams meetings and related chat. 
+    
+    :::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scopes for sensitivity labels."
+    
+    - If **Items** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. Optionally, you can extend these labels to [include meetings](sensitivity-labels-meetings.md) from Teams and Outlook, and to protecting Teams meetings themselves by enforcing settings for Teams meetings and related chat. 
     
       If the **Items** option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
 
@@ -231,7 +231,7 @@ In comparison, when you delete a label:
 
 - For containers, such as sites in SharePoint and Teams: The label is removed and any settings that were configured with that label are no longer enforced. This action typically takes between 48-72 hours for SharePoint sites, and can be quicker for Teams and Microsoft 365 Groups.
 
-- Be aware that without a GUID-to-name mapping available after you delete a label, deleted labels can display as GUIDs rather than label names in applications such as [activity explorer](data-classification-activity-explorer.md).
+- Be aware that without a GUID-to-name mapping available after you delete a label, deleted labels can display as GUIDs rather than label names in applications such as [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md).
 
 As with all label changes, removing a sensitivity label from a label policy or deleting a sensitivity label takes time to replicate to all users and services.
 

@@ -1,10 +1,10 @@
 ---
-title: Attack surface reduction in Microsoft Defender for Business           
-description: Get an overview of attack surface reduction capabilities in Microsoft Defender for Business            
+title: Enable your attack surface reduction rules in Microsoft Defender for Business           
+description: Get an overview of attack surface reduction capabilities, including ASR rules, in Microsoft Defender for Business            
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 02/07/2023
+ms.date: 05/04/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -12,33 +12,24 @@ ms.localizationpriority: medium
 ms.collection: 
 - m365-security
 - tier1
-ms.reviewer: efratka, oogunrinde
+ms.reviewer: efratka 
 search.appverid: MET150
 f1.keywords: NOCSH 
 audience: Admin
 ---
 
-# Attack surface reduction capabilities in Microsoft Defender for Business
+# Enable your attack surface reduction rules in Microsoft Defender for Business
 
 Your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecured devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
 
-To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction capabilities that are rolling out now. This article provides an overview of those capabilities, and includes links to more detailed information.
+To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction (ASR) capabilities, including ASR rules. This article describes how to set up your ASR rules and describes attack surface reduction capabilities.
 
-## Attack surface reduction in Defender for Business
+> [!NOTE]
+> Intune is not included in the standalone version of Defender for Business, but it can be added on.
 
-The following table summarizes attack surface reduction capabilities in Defender for Business, and how to set them up:
+## Standard protection ASR rules
 
-| Capability | Setup |
-|:---|:---|
-| **Attack surface reduction rules** <br/> Also referred to as ASR rules, attack surface reduction rules prevent specific actions that are commonly associated with malicious activity to run on Windows devices. | See [Enable your standard protection ASR rules](#enable-your-standard-protection-asr-rules) (in this article). |
-| **Controlled folder access** <br/>Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. | See [Set up controlled folder access with Intune](#set-up-controlled-folder-access) (in this article). |
-| **Network protection** <br/>Network protection prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). | Network protection is already enabled by default when devices are onboarded to Defender for Business and [next-generation protection settings](mdb-next-gen-configuration-settings.md) are applied. Your default policies are configured to use recommended security settings. |
-| **Web protection** <br/>Web protection integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports. | [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).  |
-| **Firewall protection** <br/>Firewall protection determines what network traffic is permitted to flow to or from your organization's devices. | Firewall protection is already enabled by default when devices are onboarded to Defender for Business and [firewall settings](mdb-firewall.md) are applied. Your default policies are configured to use recommended security settings. |
-
-## Enable your standard protection ASR rules
-
-We recommend enabling the following standard protection rules as soon as possible:
+There are lots of ASR rules available. You don't have to set them all up at once. And, you can set some rules up in audit mode just to see how they'll work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
 
 - [Block credential stealing from the Windows local security authority subsystem](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
@@ -46,7 +37,7 @@ We recommend enabling the following standard protection rules as soon as possibl
 
 These rules help protect your network and devices but shouldn't cause disruption for users. Use Intune to set up your ASR rules.
 
-### To set up ASR rules using Intune
+## Set up ASR rules using Intune
 
 1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
 
@@ -76,7 +67,9 @@ These rules help protect your network and devices but shouldn't cause disruption
 > [!TIP]
 > If you prefer, you can set up your ASR rules in audit mode at first to see detections before files or processes are actually blocked. For more detailed information about ASR rules, see [ASR rules deployment overview](../defender-endpoint/attack-surface-reduction-rules-deployment.md).
 
-### View your attack surface reduction report
+## View your attack surface reduction report
+
+Defender for Business includes an attack surface reduction report that will show you how ASR rules are working for you.
 
 1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
@@ -93,31 +86,22 @@ To learn more about ASR rules, see the following articles:
 - [ASR rules reference](../defender-endpoint/attack-surface-reduction-rules-reference.md)
 - [ASR rules deployment overview](../defender-endpoint/attack-surface-reduction-rules-deployment.md)
 
-## Set up controlled folder access
+## Attack surface reduction capabilities in Defender for Business
 
-1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+ASR rules are part of your attack surface reduction capabilities that are available in Defender for Business. The following table summarizes attack surface reduction capabilities in Defender for Business. Notice how other capabilities, such as next-generation protection and web content filtering, work together with your attack surface reduction capabilities.
 
-2. Select an existing policy, or choose **Create policy** to create a new policy.
-
-   - For **Platform**, choose **Windows 10 and later**.
-   - For Profile, select **Attack Surface Reduction Rules**, and then choose **Create**.
-
-3. Set up your policy as follows:
-
-   1. Specify a name and description, and then choose **Next**.
-   
-   2. Scroll down, and set **Enable Controlled Folder Access** to **Enabled**. Then choose **Next**.
-
-   3. On the **Scope tags** step, choose **Next**.
-
-   4. On the **Assignments** step, choose the users or devices to receive the rules, and then choose **Next**. (We recommend selecting **Add all devices**.)
-
-   5. On the **Review + create** step, review the information, and then choose **Create**.
-
-To learn more about controlled folder access, see [Protect important folders with controlled folder access](../defender-endpoint/controlled-folders.md).
+| Capability | How to set it up |
+|:---|:---|
+| **Attack surface reduction rules** <br/> Also referred to as ASR rules, attack surface reduction rules prevent specific actions that are commonly associated with malicious activity to run on Windows devices. | [Enable your standard protection ASR rules](#standard-protection-asr-rules) (section in this article). |
+| **Controlled folder access** <br/>Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. | [Set up controlled folder access policy in Microsoft Defender for Business](mdb-controlled-folder-access.md). |
+| **Network protection** <br/>Network protection prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of [Web content filtering in Microsoft Defender for Business](mdb-web-content-filtering.md). | Network protection is already enabled by default when devices are onboarded to Defender for Business and [next-generation protection policies in Defender for Business](mdb-next-generation-protection.md) are applied. Your default policies are configured to use recommended security settings. |
+| **Web protection** <br/>Web protection integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports. | [Set up Web content filtering in Microsoft Defender for Business](mdb-web-content-filtering.md).  |
+| **Firewall protection** <br/>Firewall protection determines what network traffic is permitted to flow to or from your organization's devices. | Firewall protection is already enabled by default when devices are onboarded to Defender for Business and [firewall policies in Defender for Business](mdb-firewall.md) are applied. |
 
 ## Next steps
 
+- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 - [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
+

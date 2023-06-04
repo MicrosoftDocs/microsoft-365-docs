@@ -40,7 +40,7 @@ Use this guide to:
 - [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
-- [Get an overview of maintenance and operations](mde-p1-maintenance-operations.md)
+- [Get an overview of maintenance and operations](manage-mde-post-migration.md)
 
 > [!TIP]
 > [Learn more about the differences between Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
@@ -195,7 +195,7 @@ Most organizations use various devices and operating systems. Defender for Endpo
 Servers require an additional license, such as:
 
 - **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business-servers.md).
+- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
 - **Microsoft Defender for Endpoint for Servers**. See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 > [!TIP]
@@ -210,5 +210,5 @@ Servers require an additional license, such as:
 - [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
-- [Manage Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
+- [Manage Defender for Endpoint Plan 1](manage-mde-post-migration.md)
 - [Learn about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

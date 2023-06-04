@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 01/06/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,6 +31,8 @@ description: "Learn how to move your domain from Google Workspace to Microsoft 3
 
 # Add your Google Workspace domain to Microsoft 365
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Add Google Workspace domain
@@ -53,4 +56,4 @@ Add your Google Workspace domain to Microsoft 365 for business so you can keep u
 1. Choose a user, select **Manage username and email**, **Edit**, select your domain from the dropdown, then select **Done** and **Save changes**. 
 1. Repeat this process for each user. 
 
-    When you're finished, you'll be ready to install Office apps and migrate your email and calendar items to Microsoft 365. 
+    When you're finished, you'll be ready to install Microsoft 365 apps and migrate your email and calendar items to Microsoft 365. 

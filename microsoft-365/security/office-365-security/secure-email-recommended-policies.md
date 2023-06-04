@@ -1,5 +1,5 @@
 ---
-title: Secure email recommended policies - Microsoft 365 for enterprise | Microsoft Docs
+title: Secure email recommended policies
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
 ms.author: dansimp
 author: dansimp
@@ -21,9 +21,10 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Policy recommendations for securing email
@@ -62,8 +63,6 @@ Exchange ActiveSync can be used to synchronize messaging and calendaring data on
 For mobile devices, modern authentication-capable Exchange ActiveSync clients that do not support Intune app protection policies (or supported clients that are not defined in the app protection policy) and Exchange ActiveSync clients that use basic authentication are blocked based on the Conditional Access policy created in [Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection-policies).
 
 To block Exchange ActiveSync using basic authentication on other devices, follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
-
-You can also use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
 
 ## Limit access to Exchange Online from Outlook on the web
 

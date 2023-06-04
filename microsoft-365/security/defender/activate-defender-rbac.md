@@ -43,8 +43,8 @@ The following steps guide you on how to activate the Microsoft 365 Defender RBAC
 1. [Activate in the permissions and roles page](#activate-from-the-permissions-and-roles-page)
 2. [Activate in Microsoft 365 Defender settings](#activate-in-microsoft-365-defender-settings)
 
->[!Important]
->You must be a Global Administrator or Security Administrator in Azure Active Directory to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> [!IMPORTANT]
+> You must be a Global Administrator or Security Administrator in Azure Active Directory to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 ### Activate from the Permissions and roles page
 
@@ -61,7 +61,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
 
-    >[!Note]
+    > [!NOTE]
     > The **Activate workloads** button is only available when there are existing roles in the roles list.
 
 2. **Workload settings**
@@ -85,7 +85,7 @@ Follow these steps to activate your workloads directly in Microsoft 365 Defender
 
 You have now successfully activated (or deactivated) that workload.
 
->[!Note]
+> [!NOTE]
 > The Microsoft 365 Defender RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
 ## Deactivate Microsoft 365 Defender RBAC

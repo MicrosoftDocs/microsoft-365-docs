@@ -1,8 +1,9 @@
 ---
 title: "Azure Active Directory setup guides"
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 12/13/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

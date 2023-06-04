@@ -1,5 +1,5 @@
 ---
-title: Recommended secure document policies - Microsoft 365 for enterprise | Microsoft Docs
+title: Recommended secure document policies
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
 ms.author: dansimp
 author: dansimp
@@ -20,9 +20,10 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - highpri
+  - tier1
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 10/08/2020
+ms.date: 1/31/2023
 ---
 
 # Policy recommendations for securing SharePoint sites and files

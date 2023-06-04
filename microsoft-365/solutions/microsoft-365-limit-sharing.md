@@ -3,11 +3,13 @@ title: "Limit sharing in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: 
 - highpri
+- Tier1
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -193,6 +195,8 @@ For example:
 ```powershell
 Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
+
+Note that if you disable *People in your organization* links, people sharing files in the site may need to use *Specific people* links which can be shared with a maximum of 50 people.
 
 ## Create sites, groups, and teams
 

@@ -11,7 +11,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.date: 10/07/2022
+ms.date: 05/04/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid: 
@@ -60,7 +60,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)
 
-Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration through a setup wizard. The setup wizard helps you grant access to your security team, set up email notifications for your security team, and onboard your company's Windows devices. **[Use the setup wizard](mdb-use-wizard.md)**.
+Defender for Business was designed to save small and medium-sized businesses time and effort. You can do initial setup and configuration through a setup wizard. The setup wizard helps you grant access to your security team, set up email notifications for your security team, and onboard your company's Windows devices. **[Use the setup wizard](mdb-setup-configuration.md)**.
 
 > [!NOTE]
 > You can only use the setup wizard once.
@@ -68,7 +68,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 #### Setup wizard flow: what to expect
 
 > [!TIP]
-> **Using the setup wizard is optional.** (See [What happens if I don't use the wizard?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
+> **Using the setup wizard is optional.** If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
@@ -77,7 +77,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 3. **[Onboard and configure Windows devices](mdb-onboard-devices.md)**. Onboarding devices right away helps protect those devices from day one.
 
    > [!NOTE]
-   > When you use the setup wizard, the system detects if you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once or select specific devices at first and then add more devices later. [Learn more about automatic onboarding](mdb-use-wizard.md#what-is-automatic-onboarding).
+   > When you use the setup wizard, the system detects if you have Windows devices that are already enrolled in Intune. You'll be asked if you want to use automatic onboarding for all or some of those devices. You can onboard all Windows devices at once or select specific devices at first and then add more devices later. 
 
    To onboard other devices, see [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
@@ -85,7 +85,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 
 ### Step 4: Set up and configure Defender for Business
 
-If you choose not to use the setup wizard, see the following diagram that depicts the [overall setup and configuration process](mdb-setup-configuration.md#the-setup-and-configuration-process) for Defender for Business.
+If you choose not to use the setup wizard, see the following diagram that depicts the [overall setup and configuration process](mdb-setup-configuration.md) for Defender for Business.
 
 [:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Defender for Business.":::](mdb-setup-configuration.md)
 
@@ -111,10 +111,10 @@ Defender for Business includes pre-configured security policies that use recomme
 
 Security policies to review and configure include:
 
-- [Next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) which determine antivirus and antimalware protection for your company's devices
-- [Firewall protection and rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) which determine what network traffic is allowed to flow to and from your company's devices
-- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering)which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
-- [Advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
+- [Next-generation protection policies](mdb-next-generation-protection.md) which determine antivirus and antimalware protection for your company's devices
+- [Firewall protection and rules](mdb-firewall.md) which determine what network traffic is allowed to flow to and from your company's devices
+- [Web content filtering](mdb-web-content-filtering.md) which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
+- [Advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
 ## Start using Defender for Business
 
@@ -168,7 +168,7 @@ Quickly see how Defender for Business works by trying a tutorial.
 
 Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal.
 
->[!NOTE]
+> [!NOTE]
 > This tutorial requires Microsoft Word to be installed on your test device.
 
 To access the tutorial, do the following:

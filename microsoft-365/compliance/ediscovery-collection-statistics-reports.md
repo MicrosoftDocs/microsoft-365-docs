@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
+ms.date: 01/01/2023
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -80,7 +81,7 @@ The **Summary** tab for committed collections contains several sections that pro
 
 #### Collection overview (preview)
 
-The **Collection overview (preview)** section on the **Summary** tab of a committed review set contains information about how items were found, retrieved, and processed as part of the collection. The information in this section is a summary of the information gathered and displayed during the initial collection estimate and includes information gathered and processed during the collection committal to the the review set. You can use the information in this section to help improve understanding on how the final collection data evolves from the estimate data during collection committal and processing.
+The **Collection overview (preview)** section on the **Summary** tab of a committed review set contains information about how items were found, retrieved, and processed as part of the collection. The information in this section is a summary of the information gathered and displayed during the initial collection estimate and includes information gathered and processed during the collection committal to the review set. You can use the information in this section to help improve understanding on how the final collection data evolves from the estimate data during collection committal and processing.
 
 This information is segmented and displayed in the following sub-sections:
 
@@ -97,8 +98,8 @@ This information is segmented and displayed in the following sub-sections:
     |**Item type**|**Item type description**|
     |:------------|:------------------------|
     | Items with hits | Estimated number of items found by search. |
-    | Review set duplicates | Items that are already in the same review set are not collected. |
-    | Search duplicates | Duplicate instances of the same items are not collected. |
+    | Review set duplicates | Items that are already in the same review set aren't collected. |
+    | Search duplicates | Duplicate instances of the same items aren't collected. |
     | All versions | All versions of items in SharePoint are collected. |
     | Historical versions | Historical versions maintained by SharePoint are collected. |
     | Cloud attachments | Cloud attachments are identified and collected from SharePoint links. |
@@ -153,7 +154,7 @@ The **Collection parameters** section on the **Summary** tab of a committed revi
 
 ## Data sources tab for collections
 
-The **Data sources** tab contains information about custodial and non-custodial data sources. The **Custodial data sources** section displays the all custodial data sources for each custodian included in the collection. The **Non-custodial data sources** section displays the all non-custodial data sources for the collection. The data source information displayed here is also available on the main **Data sources** tab for each case.
+The **Data sources** tab contains information about custodial and non-custodial data sources. The **Custodial data sources** section displays the all custodial data sources for each custodian included in the collection. The **Non-custodial data sources** section displays the all non-custodial data sources for the collection. The data source information displayed is also available on the main **Data sources** tab for each case.
 
 ## Search statistics tab for collections
 

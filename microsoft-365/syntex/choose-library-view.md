@@ -4,8 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 10/12/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -42,6 +43,3 @@ For example, if you select **Tiles** from the list, the page will display as sho
 The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields are shown: Sensitivity (if available), Retention (if available), Content type, Modified date, Modified by, and Classification date.
 
 To edit any current view, on the view dropdown menu, select **Edit current view**.
-
-
-

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/17/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,7 +27,7 @@ description: "Admins can learn to create mail flow rules (transport rules) to en
 
 As an administrator that manages Exchange Online, you can create mail flow rules (also known as transport rules) to help protect email messages you send and receive. You can set up rules to encrypt any outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. You can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to create these rules. In addition to overall encryption rules, you can also choose to enable or disable individual message encryption options for end users.
 
-You can't encrypt inbound mail from senders outside of your organization.
+You can't encrypt inbound mail from senders outside of your Exchange Online organization. If a mail flow rule is set up to encrypt mail from outside the organization, the inbound mail will be delivered without encryption.
 
 If you recently migrated from Active Directory RMS to Azure Information Protection, you'll need to review your existing mail flow rules to ensure that they continue to work in your new environment. Also, to use Microsoft Purview Message Encryption with Azure Information Protection, you need to update your existing mail flow rules. Otherwise, your users will continue to receive encrypted mail that uses the previous HTML attachment format instead of the new, seamless experience. If you haven't set up message encryption yet, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md) for information.
 
@@ -53,7 +54,9 @@ You can define mail flow rules for triggering message encryption with by using t
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
-6. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
+6. In **Apply this rule if**, select where the mail originates from inside the Exchange Online organization. Add **The sender is located** \> **Inside the organization** for sending mail.
+
+7. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
 
    1. In **Apply this rule if**, select **the recipient is**.
 
@@ -63,11 +66,11 @@ You can define mail flow rules for triggering message encryption with by using t
 
       - To enter a new name, type an email address in the **check names** box and then select **check names** \> **OK**.
 
-7. To add more conditions, choose **More options** and then choose **add condition** and select from the list.
+8. To add more conditions, choose **More options** and then choose **add condition** and select from the list.
 
    For example, to apply the rule only if the recipient is outside your organization, select **add condition** and then select **The recipient is external/internal** \> **Outside the organization** \> **OK**.
 
-8. To enable message encryption, from **Do the following**, select **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
+9. To enable message encryption, from **Do the following**, select **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
   
   The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption as described in [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt-only** option, see [Encrypt-only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
@@ -113,7 +116,7 @@ You can remove encryption from messages that was applied by your organization. Y
 
 5. In **Name**, type a name for the rule, such as `Remove encryption from outgoing mail`.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail out to any recipients _or_ add **The recipient is located** \> **Inside the organization** for receiving mail replies from outside the organization.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection applied by the organization**.
 

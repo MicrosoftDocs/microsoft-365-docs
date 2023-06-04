@@ -71,7 +71,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Government Community Cloud High (GCC High)
 >- US Department of Defense
 >- All US government institutions with commercial licenses
->- See availability for the above enviroments here: [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
+>- See availability for the above environments here: [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
 
 Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
@@ -94,7 +94,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 | Area | Description of change |
 |---------|---------|
-|Search   |  The search bar is located at the top of the page. Suggestions are provided as you type. You can search across the following entities in Defender for Endpoint and Defender for Identity: <br><br> - **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators, for example, you can use "contains" to search for part of a host name. <br><br> - **Users** - supported for both Defender for Endpoint and Defender for Identity. <br><br> - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint. <br> NOTE: *IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page.  <br><br> - **MDVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). <br><br>  The enhanced search results page centralizes the results from all entities.  |
+|Search   |  The search bar is located at the top of the page. Suggestions are provided as you type. You can search across the following entities in Defender for Endpoint and Defender for Identity: <br><br> - **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators, for example, you can use "contains" to search for part of a host name. <br><br> - **Users** - supported for both Defender for Endpoint and Defender for Identity. <br><br> - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint. <br> NOTE: *IP and URL searches are exact match and don't appear in the search results page – they lead directly to the entity page.  <br><br> - **MDVM** - same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). <br><br>  The enhanced search results page centralizes the results from all entities.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. See an overview of how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected. |
 |Device inventory | No changes. |
 |[Vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Name was shortened to fit in the navigation pane. It's the same as the Microsoft Defender Vulnerability Management section, with all the pages underneath.     |

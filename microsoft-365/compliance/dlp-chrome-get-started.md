@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -97,11 +97,11 @@ Here's a list of applicable role groups. To learn more about them, see [Permissi
 
 ### Overall installation workflow
 
-Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
+Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Intune or Group Policy for organization-wide deployments.
 
 1. [Prepare your devices](#prepare-your-devices).
 2. [Basic Setup Single Machine Selfhost](#basic-setup-single-machine-selfhost)
-3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
+3. [Deploy using Microsoft Intune](#deploy-using-microsoft-intune)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the extension](#test-the-extension)
 6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
@@ -126,17 +126,15 @@ This is the recommended method.
 
 2. Install the extension using the instructions on the Chrome Web Store page.
 
-### Deploy using Microsoft Endpoint Manager
+### Deploy using Microsoft Intune
 
 Use this setup method for organization-wide deployments.
 
-#### Microsoft Endpoint Manager Force Install Steps
+#### Microsoft Intune Force Install Steps
 
-Before adding the extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Using the settings catalog, follow these steps to manage Chrome extensions:
 
- After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
-
-1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Navigate to Configuration Profiles.
 
@@ -144,7 +142,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 4. Select **Windows 10 and later** as the platform.
 
-5. Select **Templates** as the profile type.
+5. Select **Settings catalog** as the profile type.
 
 6. Select **Custom** as the template name.
 
@@ -152,15 +150,15 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 8. Enter a name and optional description on the **Basics** tab and select **Next**.
 
-9. Select **Add** on the **Configuration settings** tab.
+9. Select **Add settings** on the **Configuration settings** tab.
+10. Select **Administrative Templates** > **Google** > **Google Chrome** > **Extensions**.
+11. Select **Configure the list of force-installed apps and extensions**.
+12. Change the toggle to **Enabled**.
+13. Enter the following value for the extensions and app IDs and update URL:
+     `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`.
 
-10. Enter the following policy information.
-
-    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
-    Data type: `String`<br/>
-    Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
     
-11. Select **Save** and then select **Next**.
+11. Select **Next**.
 
 12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
 
@@ -172,7 +170,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 ### Deploy using Group Policy
 
-If you don't want to use Microsoft Endpoint Manager, you can use group policies to deploy the extension across your organization.
+If you don't want to use Microsoft Intune, you can use group policies to deploy the extension across your organization.
 
 #### Adding the Chrome Extension to the ForceInstall List
 

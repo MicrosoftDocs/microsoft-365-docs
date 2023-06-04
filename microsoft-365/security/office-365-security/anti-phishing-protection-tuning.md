@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier2
   - MET150
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
 ms.subservice: mdo

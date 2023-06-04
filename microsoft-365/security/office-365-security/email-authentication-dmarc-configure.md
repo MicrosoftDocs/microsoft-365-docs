@@ -7,15 +7,15 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 05/10/2021
+ms.date: 5/3/2023
 ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
-description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
+  - tier1
+description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization, contains information on DMARC reject or OReject.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -37,7 +37,7 @@ DMARC ensures the destination email systems trust messages sent from your domain
 > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
 
 > [!TIP]
-> **Hove you seen our step-by-step guides?** Configuration 1-2-3s and no frills, for admins in a hurry. Visit for the steps to *[enable DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
+> **Have you seen our step-by-step guides?** Configuration 1-2-3s and no frills, for admins in a hurry. Visit for the steps to *[enable DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
 
 ## How do SPF and DMARC work together to protect email in Microsoft 365?
 
@@ -180,12 +180,12 @@ Examples:
 
 Once you've formed your record, you need to update the record at your domain registrar.
 
-## DMARC Mail (Public Preview feature)
+## DMARC Mail
 
 > [!CAUTION]
-> Mails may not be sent out daily, and the report itself may change during public preview. The DMARC aggregate report emails can be expected from the Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts).
+> Mails may not be sent out daily.
 
-In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`, you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
+In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.example.com; ruf=mailto:d@ruf.example.com; fo=1"`, you can see the *rua* address. This address is used to send 'aggregate feedback' for analysis, which is used to generate a report.
 
 > [!TIP]
 > Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
@@ -218,6 +218,21 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
    ```
 
+## DMARC Reject
+
+> [!NOTE]
+> The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
+
+DMARC p = reject is a DMARC policy set by domain owners in their DNS to notify service providers to *reject* emails.
+
+It came about because, with OReject set as the default for reject, any rejected emails were sent to quarantine in Enterprise, and Junk folder in Consumer (due to lack of quarantine there). However, with DMARC Reject the mails will simply be rejected.
+
+Configuration can be done in the Microsoft 365 Defender portal, or by the [New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy) or [Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). For more information, see the following articles:
+
+- [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
+
 ## How Microsoft 365 handles outbound email that fails DMARC
 
 If a message is outbound from Microsoft 365 and fails DMARC, and you have set the policy to p=quarantine or p=reject, the message is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md). There's no override for outbound email.
@@ -226,7 +241,7 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 ## How Microsoft 365 handles inbound email that fails DMARC
 
-If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
+If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way, or you can configure anti-phishing policies to honor `p=quarantine` and `p=reject` in sender DMARC policies and specify separate actions for each DMARC policy. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
 Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
 
