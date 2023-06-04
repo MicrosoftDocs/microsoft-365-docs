@@ -87,6 +87,23 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 - **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
 - **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
+### Adding support for PDF
+
+> [!NOTE]
+> This feature is in preview and subject to change.
+
+Not supported by default, and now rolling out in preview, PDFs are supported for applying a sensitivity label in Office on the web or in SharePoint, and also uploading a labeled document, and then extracting and displaying that sensitivity label. 
+
+To enable this support, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
+
+    ```PowerShell
+    Set-SPOTenant -EnableSensitivityLabelforPDF $true
+    ```
+
+If you need more information about how to run cmdlets from the SharePoint Online Management Shell, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
+
+For Microsoft 365 Multi-Geo: Similarly to the instructions to run the PowerShell command to enable support for sensitivity labels, you must connect to each of your geo-locations, and then run the command to enable support for PDFs.
+
 ## Limitations
 
 - SharePoint and OneDrive can't process some files that are labeled and encrypted from Office desktop apps when these files contain PowerQuery data, data stored by custom add-ins, or custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. This limitation also applies to files that include a [bibliography](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5), and to files that have a [Document ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) added when they are uploaded.
