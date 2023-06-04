@@ -43,7 +43,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **Preview**: Rolling out in preview, PDF support for auto-labeling policies, default sensitivity labels for SharePoint document libraries, and labeling activities in Office on the web that include manual labeling and displaying labeled documents, and encrypted PDFs are now supported  for DLP, eDiscovery, and search. You must opt-in for this PDF support, by using a PowerShell cmdlet.
+- **Preview**: Rolling out in preview, PDF support for auto-labeling policies, default sensitivity labels for SharePoint document libraries, and labeling activities in Office on the web that include manual labeling and displaying labeled documents, and encrypted PDFs are now supported  for DLP, eDiscovery, and search. You must opt-in for this PDF support, by [using PowerShell](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
 
 ## May 2023
 
