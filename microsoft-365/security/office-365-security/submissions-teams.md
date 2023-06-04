@@ -32,7 +32,7 @@ ms.date:
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
 
-Users can report messages in Teams from **internal** chats and meeting conversations. Users can only report messages as malicious.
+Users can report messages in Teams from **internal** chats, channels and meeting conversations. Users can only report messages as malicious.
 
 > [!NOTE]
 > User reporting of messages in Teams is not supported in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD).
@@ -43,7 +43,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, you must have it turned on in the Defender portal for submissions to show up correctly.
+- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, it also needs to be turned on the Defender portal for user reported messages to show up correctly.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -53,7 +53,7 @@ To view or configure this setting, you need to be a member of the **Global Admin
 
 2. On the **Messaging policies** page, verify that the **Manage policies** tab is selected, and do either of the following actions to edit the appropriate policy (the **Global (Org-wide) default** policy or a custom policy):
    - Click the link in the **Name** column.
-   - Select the policy by clicking anywhere other than the **Name** column, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Select the policy by clicking anywhere in the row other than the **Name** column, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
 
 3. In the policy details page that opens, find the **Report a security concern** toggle. By default, it's ![Teams 'Report a security concern' toggle on.](../../media/scc-toggle-on.png) **On**. To turn it off, toggle the setting to ![Teams 'Report a security concern' toggle off.](../../media/scc-toggle-off.png) **Off**.
 
@@ -90,7 +90,7 @@ For more information about user reported message settings in the Defender portal
    :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
-   > If you've [turned on reporting for Microsoft Purview Communication Compliance](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), you might also see **Inappropriate - Harassment, violence, nudity, and disturbing content** as an available selection in the **Select a problem** dropdown list.
+   > If [reporting for Microsoft Purview Communication Compliance is turned off](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), users might not have the dropdown list to select **Security risk - Spam, phishing, malicious content**. Instead, they're shown a confirmation pop-up.
 
 3. In the confirmation dialog that opens, click **Close**.
 

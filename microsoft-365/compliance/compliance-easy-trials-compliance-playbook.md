@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 11/16/2021
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 You may also want to jump right to key sections of our documentation using the links below:
 
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
-- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions): controls, assessments, templates, and improvement actions
+- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-regulations-improvement-actions): controls, assessments, regulations, and improvement actions
 - [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
@@ -282,7 +282,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics check results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
 
-To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
+To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings-analytics.md) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
 
 > [!NOTE]
 > To enable insider risk analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin.
