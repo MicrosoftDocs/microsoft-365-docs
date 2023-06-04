@@ -39,6 +39,18 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+### Sensitivity labels
+
+- **In preview**: New conditions are rolling out in preview for auto-label policies. Just the final new condition listed requires an advanced rule, whereas the others are available in common rules:
+    - File extension is
+    - Document name contains words or phrases
+    - Document property is
+    - Document size equals or is greater than
+    - **Document created by (for OneDrive and SharePoint only)**
+    - Attachment name contains words or phrases
+    - Attachment property is
+    - Attachment size equals or is greater than
+
 ## May 2023
 
 ### Compliance Manager
