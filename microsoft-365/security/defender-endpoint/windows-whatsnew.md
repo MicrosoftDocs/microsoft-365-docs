@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-mathavale
 author: v-mathavale
 ms.localizationpriority: medium
-ms.date: 01/10/2023
+ms.date: 05/14/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -38,8 +38,27 @@ All updates contain:
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
-<details>
-  <summary>Dec-2022 (Release version: 10.8210.*)</summary>
+## May-2023 (Release version: 10.8295.22621.1023)
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1023|
+  
+**What's new**
+
+- Supports new security settings management capabilities
+
+## Jan/Feb-2023 (Release version: 10.8295.22621.1019)
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1019|
+  
+**What's new**
+
+- Improved command and control security, quality fixes
+
+## Dec-2022 (Release version: 10.8210.22621.1016)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -48,10 +67,8 @@ All updates contain:
 **What's new**
 
 - Bug fixes and stability improvements
-</details>
 
-<details>  
-  <summary>Aug-2022 (Release version: 10.8210.*)</summary>
+## Aug-2022 (Release version: 10.8210.*)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -76,8 +93,6 @@ All updates contain:
  > [!NOTE] 
  > Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule, the package will be published completely, including to the update catalog for manual download. For the current release, this will be in the second half of October. If you want to test the package sooner, you can use [gradual rollout controls for platform updates](configure-updates.md) to select the Preview channel.
   
-<br/>
-</details>
 
 See also: 
 - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)

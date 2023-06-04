@@ -17,7 +17,9 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 03/18/2022
 ---
+
 # Unwanted software
 
 Unwanted software are programs that alter the Windows experience without your consent or control. This can take the form of modified browsing experience, lack of control over downloads and installation, misleading messages, or unauthorized changes to Windows settings.

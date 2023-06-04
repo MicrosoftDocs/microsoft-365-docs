@@ -1,10 +1,11 @@
 ---
-title: "Free trial - Microsoft Purview compliance solutions"
+title: "Free trial of Microsoft Purview compliance solutions"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -22,7 +23,7 @@ description: "Try all Microsoft Purview risk and compliance solutions at the E5 
 
 # About the Microsoft Purview risk and compliance solutions trial
 
-The Microsoft Purview solutions trial is a free and easy way to try all the [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft Purview solutions trial is a free and easy way to try [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, the features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 - [**Start now** at the Microsoft Purview compliance trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)
 - [Get detailed sign-up instructions](#how-to-sign-up-for-the-trial)
@@ -33,9 +34,9 @@ The Microsoft Purview solutions trial is a free and easy way to try all the [cap
 
 ## Eligibility and licensing
 
-Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
+Microsoft 365 E3, Office 365 E3, and Enterprise Mobility and Security E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
 
-As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days. You may want to refer to [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for licensing details for each solution.
 
 ## Required roles for starting the trial
 
@@ -81,7 +82,10 @@ If you decide not to upgrade to the E5 level solutions, unless stated otherwise 
 
 ## Learn more about Purview solutions
 
-Wondering what you can experience in your free trial? The Purview solutions trial includes the following solutions:
+The Purview solutions trial includes the solutions listed below.
+
+> [!NOTE]
+> Certain Purview features may appear in other Microsoft products for which a license is needed. Refer to each Purview solution's licensing details at [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 - **Audit**
 
@@ -97,8 +101,10 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes aren't subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md).
 
+  Learn more about [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
+ 
 - **Data Loss Prevention**
 
   Microsoft Purview Data Loss Prevention (DLP) helps you control sharing and use of sensitive info on devices, apps, and services. With trials, you can extend coverage of DLP policies to Teams and devices, protect even more sensitive content using trainable classifiers and exact data match (EDM), and get started quickly with our recommended DLP policies.  [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
@@ -140,14 +146,14 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Records Management**
 
-  Use integrated Microsoft Purview Records Management features to:
+  Use integrated Microsoft Purview Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition:
 
   - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
   - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
   - Get full content lifecycle support, including the ability to perform disposition review on contents before they're permanently deleted at the end
 
-  For more information on the full range of feature for Microsoft Records Management, learn more about [Records Management](records-management.md)
+  For more information on the full range of features for Microsoft Purview Records Management, learn more about [Records Management](records-management.md)
 
 ## Terms and conditions
 

@@ -1,7 +1,7 @@
 ---
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, big sur, monterey, ventura, mde or mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos,  big sur, monterey, ventura, mde or mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on macOS
@@ -41,9 +42,9 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 > [!CAUTION]
 > Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint on macOS. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
-If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint on macOS.
+If your organization uses a Mobile Device Management (MDM) solution that isn't officially supported, this doesn't mean you're unable to deploy or run Microsoft Defender for Endpoint on macOS.
 
-Microsoft Defender for Endpoint on macOS does not depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
+Microsoft Defender for Endpoint on macOS doesn't depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
 
 - Deploy a macOS .pkg to managed devices.
 - Deploy macOS system configuration profiles to managed devices.
@@ -53,8 +54,8 @@ Most modern MDM solutions include these features, however, they may call them di
 
 You can deploy Defender for Endpoint without the last requirement from the preceding list, however:
 
-- You will not be able to collect status in a centralized way.
-- If you decide to uninstall Defender for Endpoint, you will need to log on to the client device locally as an administrator.
+- You won't be able to collect status in a centralized way.
+- If you decide to uninstall Defender for Endpoint, you'll need to log on to the client device locally as an administrator.
 
 ## Deployment
 
@@ -65,13 +66,17 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 Configure deployment of a [required application package](mac-install-with-jamf.md), 
 with the installation package (wdav.pkg) downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
+
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
 ### License settings
 
 Set up [a system configuration profile](mac-install-with-jamf.md). 
 
-Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS is not part of macOS.
+Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS isn't part of macOS.
 
 Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
@@ -82,7 +87,7 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 
 ### System configuration profiles
 
-macOS requires that a user manually and explicitly approves certain functions that an application uses, for example system extensions, running in background, sending notifications, full disk access etc. Microsoft Defender for Endpoint relies on these functions, and cannot properly function until all these consents are received from a user.
+macOS requires that a user manually and explicitly approves certain functions that an application uses, for example system extensions, running in background, sending notifications, full disk access etc. Microsoft Defender for Endpoint relies on these functions, and can't properly function until all these consents are received from a user.
 
 To grant consent automatically on a user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend doing, instead of relying on manual approvals from end users.
 
@@ -97,7 +102,7 @@ To set up profiles:
 3) Assign proper scope for each created configuration profile.
 
 Note that Apple regularly creates new types of payloads with new versions of OS.
-You will have to visit the above mentioned page, and publish new profiles once they became available.
+You'll have to visit the above mentioned page, and publish new profiles once they became available.
 We post notifications to our [What's New page](mac-whatsnew.md) once we make changes like that.
 
 ## Check installation status

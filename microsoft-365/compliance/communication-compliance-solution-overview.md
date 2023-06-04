@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 05/03/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -23,7 +24,7 @@ ms.collection:
 # Communication compliance
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include potentially inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
@@ -50,8 +51,8 @@ Users are given [permissions](/microsoft-365/compliance/communication-compliance
 
 Communication compliance empowers organizations to detect, triage, and remediate communications with potential business conduct and/or regulatory compliance violations. Communication compliance provides the following policy templates that use machine learning classifiers for users:  
 
-- **Business conduct**: Corporate sabotage (preview), discrimination, profanity, threat, and targeted harassment classifiers
-- **Regulatory compliance**: Customer complaints, gifts & entertainment (preview), money laundering (preview), regulatory collusion (preview), stock manipulation (preview), unauthorized disclosure (preview) classifiers
+- **Business conduct**: Discrimination, Profanity, Threat, and Targeted harassment classifiers
+- **Regulatory compliance**: Corporate sabotage, customer complaints, gifts & entertainment, money laundering, regulatory collusion, stock manipulation, unauthorized disclosure classifiers
 
 ## Metrics used to evaluate and measure performance
 

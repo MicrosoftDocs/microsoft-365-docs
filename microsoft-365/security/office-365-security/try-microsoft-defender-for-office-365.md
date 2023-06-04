@@ -15,10 +15,12 @@ search.appverid:
   - MOE150
 ms.collection:
   - m365-security
+  - tier1
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
+ms.date: 1/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -46,6 +48,8 @@ You can also learn more about Defender for Office 365 at this [interactive guide
 Watch this short video to learn more about how you can get more done in less time with Microsoft Defender for Office 365.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
+
+For pricing information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
 ## How trials and evaluations work for Defender for Office 365
 

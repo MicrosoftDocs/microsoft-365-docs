@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. And, Microsoft Defender for Business servers is now generally available! Learn more at https://aka.ms/mdb-servers.
+summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. Mobile threat defense capabilities are now in preview! See https://aka.ms/MDB-mobile.
 metadata:
   title: Microsoft Defender for Business documentation
   description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. Onboard all your devices today.
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 10/28/2022
+  ms.date: 05/04/2023
   ms.collection: 
   - SMB
   - m365-security
@@ -30,18 +30,14 @@ landingContent:
         links:
           - text: What is Defender for Business?
             url: mdb-overview.md
-          - text: The simplified configuration process
-            url: mdb-simplified-configuration.md
+          - text: What's new in Defender for Business?
+            url: /microsoft-365/business-premium/m365bp-mdb-whats-new
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
           - text: Resources for Microsoft partners
             url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
-      - linkListType: how-to-guide
-        links:
-          - text: Get the most from your Defender for Business trial
-            url: trial-playbook-defender-business.md
 
   # Card
   - title: Get started
@@ -52,14 +48,22 @@ landingContent:
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
-          - text: Get Microsoft Defender for Business servers
-            url: get-defender-business-servers.md
           - text: See the trial user guide
             url: trial-playbook-defender-business.md
-          - text: Use the setup wizard
-            url: mdb-use-wizard.md
           - text: Turn on preview features
             url: mdb-preview.md
+
+  # Card
+  - title: Setup
+    linkLists:
+      - links:
+          - text: Setup and configuration
+            url: mdb-setup-configuration.md
+          - text: Onboard devices
+            url: mdb-onboard-devices.md
+          - text: Create, view, or edit security policies
+            url: mdb-configure-security-settings.md
+        linkListType: how-to-guide
 
   # Card
   - title: Help and more resources
@@ -70,7 +74,7 @@ landingContent:
             url: mdb-get-help.md
           - text: Frequently asked questions
             url: mdb-faq.yml
-          - text: Glossary of security terms
-            url: /microsoft-365/business-premium/m365bp-glossary
+          - text: Microsoft Security Intelligence
+            url: https://www.microsoft.com/wdsi/threats
 
  

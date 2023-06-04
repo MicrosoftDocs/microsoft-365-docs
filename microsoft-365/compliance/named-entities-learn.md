@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 04/25/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: conceptual
@@ -32,11 +32,10 @@ description: "Learn how named entities help you detect sensitive items containin
 - [Data Lifecycle Management](information-governance.md)
 - [Records management](records-management.md)
 - [Microsoft Purview eDiscovery](ediscovery.md)
-- [Microsoft Priva](/privacy/priva/priva-overview.md)
+- [Microsoft Priva](/privacy/priva/priva-overview)
 - [Exact data match sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
 
-DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
- and use a named entity SIT as a condition.
+DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](dlp-create-deploy-policy.md) from a blank template and use a named entity SIT as a condition.
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
@@ -51,7 +50,10 @@ Named entity SITs come in two flavors, *bundled* and *unbundled*
 Bundled named entity SITs detect all possible matches. Use them as broad criteria in your DLP policies for detecting sensitive items.
 
 Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a narrower detection scope.
- 
+
+>[!Note]
+> To use bundled SITs, you must activate [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) for the relevant [data loss prevention settings](dlp-configure-endpoint-settings.md) before they will be discoverable.
+
 Here are some examples of named entity SITs. You can find all of them in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 |Named Entity |Description  |Bundled/Unbundled  |
@@ -65,7 +67,7 @@ Here are some examples of named entity SITs. You can find all of them in [Sensit
 
 ## Examples of enhanced DLP policies
 
-Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview compliance portal > Data loss prevention > Create policy**. Enhanced templates can be used in DLP and auto-labeling.
+Here are some examples of enhanced DLP policies that use named entity SITs. You can find all 10 of them in the **Microsoft Purview compliance portal** Navigate to **Data loss prevention** > **Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 |Policy category  |Template  |Description  |
 |---------|---------|---------|
@@ -85,10 +87,8 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 - [Learn about Sensitive information types](sensitive-information-type-learn-about.md)
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
 - [Autolabeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) 
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) 

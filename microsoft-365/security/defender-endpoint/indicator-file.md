@@ -49,7 +49,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - This feature is available if your organization uses **Microsoft Defender Antivirus (in active mode)** and **Cloud-based protection is enabled**. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
-- The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+- The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
 
 - Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
     
@@ -158,8 +158,8 @@ Cert and File IoC policy handling conflict will follow the below order:
 - Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**
 - Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
->[!NOTE]
-> In situations when Microsoft Defender Antivirus is set to **Block**, but Defender for Endpoint is set to **Allow**, the policy will default to **Allow**.
+> [!NOTE]
+> In situations when Microsoft Defender Antivirus is set to **Block**, but Defender for Endpoint - Indicators - File hash or Certificate is set to **Allow**, the policy will default to **Allow**.
 
 If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure (meaning longer) hash will be applied. For example, an SHA-256 file hash IoC policy will win over an MD5 file hash IoC policy if both hash types define the same file.
 

@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -35,7 +36,7 @@ This article provides an overview of Audit (Premium) capabilities and shows you 
 
 ## Long-term retention of audit logs
 
-Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
+Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **AzureActiveDirectory**, **Exchange**, **OneDrive**, or **SharePoint**, for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
 In addition to the one-year retention capabilities of Audit (Premium), we've also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
@@ -145,7 +146,9 @@ In addition to the events in Exchange Online and SharePoint Online, there are ev
 
 - [Microsoft Forms](audit-log-activities.md#microsoft-forms-activities)
 - [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
+- [Microsoft Project for the web](audit-log-activities.md#microsoft-project-for-the-web-activities)
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
+- [Microsoft To Do](audit-log-activities.md#microsoft-to-do-activities)
 - [Yammer](audit-log-activities.md#yammer-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API

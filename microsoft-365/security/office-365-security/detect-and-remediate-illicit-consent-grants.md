@@ -8,9 +8,9 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.collection:
-- o365_security_incident_response
+- tier2
 - m365-security
-ms.date: 07/28/2022
+ms.date: 1/31/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -135,7 +135,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 Defender portal](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
-> [Mailbox auditing](../../compliance/enable-mailbox-auditing.md) and [Activity auditing for admins and users](../../compliance/turn-audit-log-search-on-or-off.md) must have been enabled prior to the attack for you to get this information.
+> [Mailbox auditing](../../compliance/audit-mailboxes.md) and [Activity auditing for admins and users](../../compliance/audit-log-enable-disable.md) must have been enabled prior to the attack for you to get this information.
 
 ## How to stop and remediate an illicit consent grant attack
 

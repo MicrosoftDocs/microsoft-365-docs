@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 03/30/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -32,7 +33,7 @@ This article covers the differences between Azure Information Protection (AIP) s
 
 While our goal is to deliver all commercial features and functionality to customers in China with our AIP for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.
 
-The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
+Following is a list of gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings:
 
 - Active Directory Rights Management Services (AD RMS) encryption is supported only in Microsoft 365 Apps for enterprise (build 11731.10000 or later). Office Professional Plus doesn't support AD RMS.
 
@@ -53,6 +54,8 @@ The following list includes the existing gaps between AIP for Office 365 operate
 - AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
     - Download label and label policies: `*.protection.partner.outlook.cn`
     - Azure Rights Management service: `*.aadrm.cn`
+
+- Document Tracking and Revocation *by users* is currently not available.
 
 ## Configure AIP for customers in China
 
