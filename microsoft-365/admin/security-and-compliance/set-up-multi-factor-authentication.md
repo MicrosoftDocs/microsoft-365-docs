@@ -3,7 +3,7 @@ title: "Set up multifactor authentication for users"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/27/2023
 audience: Admin
@@ -95,7 +95,7 @@ If you have been using [baseline Conditional Access policies](/azure/active-dire
 If your organization has more granular sign-in security needs, Conditional Access policies can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service.
 
 > [!IMPORTANT]
-> Turn off both per-user MFA and Security defaults before you enable Conditional Access policies.
+> Do not forget to disable per-user MFA after you have enabled Conditional Access policies. This is important as it will result in inconsistent user experience.
 
 Conditional Access is available for customers who have purchased Azure AD Premium P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
@@ -123,4 +123,4 @@ For most subscriptions modern authentication is automatically turned on, but if 
 
 [Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)\
 
-[Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access) (article)
+[Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-turn-on-mfa) (article)

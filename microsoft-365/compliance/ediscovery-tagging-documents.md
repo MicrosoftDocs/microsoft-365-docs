@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -62,19 +62,11 @@ Tagging items in review sets is a two-step process. The first step is to create 
 Before applying tags to items in a review set, you need to create a tag structure.
 
 1. Open a review set, go to the command bar, and select **Tag files**.
-
 2. On the **Tag files** flyout page, select **Create/edit tags**.
-
-   ![Select Create/edit tags on the flyout page.](../media/CreateAeDTags1.png)
-
 3. On the **Tags** page, select **Add section**.
-
 4. Type a tag group title and an optional description, and then select**Save**.
-
 5. Select the triple dot dropdown menu next to the tag group title and select **Add check box** or **Add option button**.
-
 6. Type a name and description for the checkbox or option button.
-
 7. Repeat this process to create new tag sections, tag options, and checkboxes. For example, the following screenshot shows a tag group named **Review**, which consists of **Responsive** and **Not-responsive** checkboxes.
 
    ![Configure tag structure.](../media/ManageTagOptions3.png)
@@ -84,27 +76,29 @@ Before applying tags to items in a review set, you need to create a tag structur
 With the tag structure in place, reviewers can apply tags to items in a review set by configuring tagging settings.
 
 1. In the review set command bar, select **Tag files** to display the **Tag files** flyout page (also called the *tagging panel*).
-
-   ![Select Tag files in the command bar to open the tagging panel.](../media/TagFilesFlyoutPage.png)
-
 2. On the **Tag files** flyout page, you can set the following options to configure how to tag items displayed in the review set. The filters or filter queries currently applied to the review set determine which items are displayed and therefore the items that you can apply tags to. For more information, see [Query and filter content in a review set](ediscovery-review-set-search.md).
 
    - **Choose selection**. Choose one the following options to determine the scope of items to apply tags to.
 
       - **Tag selected items**: This option applies tags to the items that you select. You can select items before or after launching the tagging panel. This option displays (in real time) the number of selected items that will be tagged.
-
       - **Tag all items in list**: This option applies tags to all items displayed in the review set. This option displays the total number of items that will be tagged.
 
-   - **Expand selection**: Use the following options to tag additional items that are related to tagged items in the review set.
+   - **Expand selection**: Use the following options to tag additional items that are related to tagged items in the review set. Depending on the **Enable group** option [enabled in the case settings](ediscovery-configure-review-set-settings.md), you'll see the following options:
 
+      **With *Enable group* in settings disabled**:
+
+      - **None**: This option doesn't apply tags to associated family items or associated conversation items. It only applies tags to the items that are selected or to all items in the review set list.
       - **Include associated family items**: This option applies the same tag to the associated family items of items that are tagged.  *Family items* are items that share the same **FamilyId** metadata property value. For example, a document that's attached to an email message shares the same **FamilyId** as the email message. So if this option is selected for this example, the email message and the document are tagged, even though the document might not be included in the list of review set items.
-
       - **Include associated conversation items**: This option applies the same tag to all items that are in the same Teams or Yammer conversation as the items that are tagged. *Conversation items* are items that share the same **ConversationId** metadata property value. All messages, posts, and corresponding transcript file of a conversation share the same **ConversationId**. If this option is selected, then all items in the same conversation (and transcript file) are tagged, even though some of those conversation items might not be included in the list of review set items. For more information about conversation items, see the "Grouping" section in [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
-      - **None**: This option doesn't apply tags to family items or conversation items. It only applies tags to the items that are selected or to all items in the review set list.
+      >[!NOTE]
+      >Including associated family or conversation items will not change the count of items shown in the **Tag selected items** or **Tag all items in list** options. In other words, the number of associated items that will be tagged is not displayed.
 
-   > [!NOTE]
-   > Including associated family or conversation items will not change the count of items shown in the **Tag selected items** or **Tag all items in list** options. In other words, the number of associated items that will be tagged is not displayed.
+      **With *Enable group* in settings enabled**:
+
+      - **None**: This option doesn't apply tags to family group items or conversation group items. It only applies tags to the items that are selected or to all items in the review set list.
+      - **Include family groups**: This option applies the same tag to the associated family items of items that are tagged.  *Family group* items are items that share the same **GroupId** metadata property value. For example, a document that's attached to an PowerPoint file shares the same **GroupId** as the document. So if this option is selected for this example, the document and the PowerPoint file are both tagged. Both are grouped together in the list of review set items.
+      - **Include conversation groups**: This option applies the same tag to all items that are in the same email, Teams, or Yammer conversation as the items that are tagged. *Conversation group* items are items that share the same **ThreadId** metadata property value. All messages, posts, and corresponding transcript files of a conversation share the same **ThreadId**. If this option is selected, then all items in the same conversation (and transcript file) are tagged. All items are grouped together in the list of review set items.
 
    - **Assign tags**: This section displays the tags (organized by tag groups) that you can apply to documents. You can only apply one single-choice tag (identified by a radio button) per tag group. However, you can apply multiple multi-choice tags (which are identified by a checkbox).
 
@@ -125,10 +119,8 @@ You can remove tags from items in a review set. However, you can't remove a sing
 
 To remove a tag:
 
-1. Select the items the you want to remove the tag from.
-
+1. Select the items that you want to remove the tag from.
 2. Select **Tag files** to display the tagging panel.
-
 3. Under **Assign tags**, unselect the tag, and then select **Apply tags**.
 
 You can also use the previous procedure to change the tag applied to selected items. After unselecting the current tag, you can select a different one.

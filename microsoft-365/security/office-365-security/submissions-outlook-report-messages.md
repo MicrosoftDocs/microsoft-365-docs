@@ -1,5 +1,5 @@
 ---
-title: Report false positives and false negatives in Outlook
+title: Report phishing and suspicious emails in Outlook for admins
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn how to report false positives and false negatives in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
+description: Learn how to report phishing and suspicious emails in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 ms.date: 12/05/2022
 ---
 
-# Report false positives and false negatives in Outlook
+# Report phishing and suspicious emails in Outlook for admins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -27,14 +27,15 @@ ms.date: 12/05/2022
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or in on-premises mailboxes that use hybrid modern authentication, users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
+In Microsoft 365 organizations with mailboxes in Exchange Online or in on-premises mailboxes that use hybrid modern authentication, users can report phishing and suspicious emails in Outlook.
+Users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
 
 Admins configure user reported messages to go to a designated reporting mailbox, to Microsoft, or both. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 Microsoft provides the following tools for users to report good and bad messages:
 
 - Built-in reporting in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
+- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
@@ -57,6 +58,10 @@ For more information about reporting messages to Microsoft, see [Report messages
 >   If the toggle is **Off** ![Toggle off.](../../media/scc-toggle-off.png) or if **Use a non-Microsoft add-in button** is selected, then the **Report** button is not available in Outlook on the web.
 >
 > - Currently, the **Report** button in Outlook on the web does not honor the **Before a message is reported** and **After a message is reported** settings (notification pop-ups) in the [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+>
+> - Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+>   - Shared mailboxes require Send As or Send On Behalf permission for the user.
+>   - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
 
 ### Use the built-in Report button in Outlook on the web to report junk and phishing messages
 

@@ -1,11 +1,11 @@
 ---
-title: "Learn about assessment templates in Microsoft Purview Compliance Manager"
+title: "Learn about regulations in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
@@ -19,122 +19,117 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use and manage templates for building assessments in Microsoft Purview Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to use and manage regulatory templates for building assessments in Microsoft Purview Compliance Manager."
 ---
 
-# Learn about assessment templates in Compliance Manager
+# Learn about regulations in Compliance Manager
 
-**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Templates overview
+## Regulations overview
 
-A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
+The **Regulations** tab displays the list of regulations and certifications for which Compliance Manager provides control-mapping templates. When you build an assessment, you choose the underlying regulation by selecting from among our [set of regulatory templates](compliance-manager-templates-list.md), then select the services you want to assess for that regulation. Setting up Compliance Manager for multicloud support provides you with greater automation in testing and monitoring of controls.
 
-## Template versions: Microsoft and universal
+Each regulatory template also comes in a universal version, which provides general control mapping that can broadly apply to services. Universal templates provide the most general type of implementation guidance and require manual implementation and testing by the organization. Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can't currently use universal templates.
 
-Compliance Manger can be used to assess different types of products. All templates, except the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template, come in two versions:
+## Regulation availability and licensing
 
-1. A version that applies to a pre-defined product, such as Microsoft 365, and
-2. A universal version that can be tailored to suit other products.
+The [Microsoft data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) regulatory template is available for all organizations. The regulations designated as **premium** require purchase of a license to use them. Once you purchase a license for a regulation, you can create as many assessments for that regulation as you wish. Depending on your [licensing agreement](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager), your organization may be able to use up to three additional **premium** regulatory templates for free. When you begin creating assessments, Compliance Manager tracks how many templates are active so you can monitor your usage. To learn more, see [Active and inactive regulations](#active-and-inactive-regulations).
 
-Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+### Purchasing premium regulations
 
-Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
+Licenses for premium regulatory templates can be obtained in various ways, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours. Licenses for [activated regulations](#active-and-inactive-regulations) are good for one year.
 
-## Template availability and licensing
+- **Commercial and GCC Moderate**: Purchase licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+    - [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+    - [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+    - You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+- **GCC High and DOD accounts**: Purchase through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
-There are two categories of templates in Compliance Manager: **included** and **premium**.
+##### Staring a premium trial
 
-1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
-2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
-
-When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
-
-View the [full list of templates](compliance-manager-templates-list.md) available in Compliance Manager.
-
-### Purchase premium template licenses
-
-Template licenses can be obtained by one or more of these methods, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
-
-**Commercial and GCC Moderate**
-
-Commercial and GCC Moderate accounts can purchase template licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
-
-Purchase links:
-
-- [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
-
-You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
-
-**GCC High and DOD accounts**
-
-GCC High and DOD accounts must purchase template licenses through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
-
-### Try out premium templates
-
-To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
-
-If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
-
-If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
+You can try out premium regulation templates by acquiring trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours. If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md). If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
 - [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
-#### Active and inactive templates
+## Active and inactive regulations
 
-Templates will display an activation status as either active or inactive:
+Regulations display a status as either active or inactive:
 
-- A template is considered **active** once you create an assessment from that template.
-- A template is considered **inactive** if your organization isn't using it for an assessment.
+- **Active** indicates use in at least one assessment.
+- **Inactive** indicates it's not being used for an assessment.
 
-If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
+When you use a premium regulation to create an assessment, that regulation's availability status changes to **Active** and the purchased license is active for one year. Your purchase will automatically renew unless you cancel.
 
-#### Activated templates counter
+### Activated regulations counter
 
-Your **Assessment templates** page has an **Activated/Licensed templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
+The **Activated/Regulation** counter near the top of the **Regulations** page represents the number of regulatory templates in use out of the number you're eligible to use according to your licensing agreement and any purchased licenses. For example, if your counter shows 2/5, this means your organization has activated 2 regulations out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium regulations in use.
 
-For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+Select **View details** the counter to view a detailed list of all regulations in use and their corresponding assessments.
 
-Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying regulation across more than one product. Using either or both versions of the same template will only count as one activated template.
+## Regulations details page
 
 Similarly, templates that belong to the same regulation family are also counted as one template. The regulation family is shown in the **Overarching regulation** column on the **Assessment templates** page. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## View and manage templates
+## Grant user access to regulations
 
-The assessment templates page in Compliance Manager displays a list of templates and key details about them. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, their role extends by default to all regulations (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). This access means that, depending on the user's role type, they can view or interact with any existing or future assessments created with that regulation.
 
-Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
+You can give users a specific role that will apply to certain regulations by managing user roles from a regulation's details page. When you set a user's role for a regulation, the user will be able to interact at that role level for all assessments (existing and future) created with that regulation. (You can also restrict access to individual assessments following [these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).)
 
-## Create an assessment template
+External users who need access for auditing or other purposes can also be assigned an access role for regulations. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
-To create your own new template for custom assessments in Compliance Manager, you'll use a specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager. To learn more, see [Create an assessment template](compliance-manager-templates-create.md).
+#### Steps for granting access
 
-## Modify an assessment template
+Follow the steps to grant user access to a regulation.
 
-When working with assessments in Compliance Manager, you may want to modify an assessment template that you've created. The process is similar to the template creation process in that you'll upload a formatted Excel file with your template data. To learn more about how to make changes and how to preserve data you still want to maintain, see [Modify an assessment template](compliance-manager-templates-modify.md).
+1. From the **Regulations** page, find the regulation you want to grant access to. Select it to open its details page.
 
-## Extend an assessment template
+1. In the upper-right corner, select **Manage user access**.
 
-Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template. To extend a template, you will use special instructions for adding to template data, depending on whether you're extending Microsoft assessment templates or universal assessment templates. To learn more, see [Extend an assessment template](compliance-manager-templates-extend.md).
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Reader, Assessor, and Contributor. Navigate to the tab for the role you want your user to hold for this regulation.
 
-## Format assessment template data in Excel
+1. Select the **+ Add** command for the role tab you're on: **Add readers**, or **Add assessors** or **Add contributors**.
 
-When creating, modifying, or extending assessment templates in Compliance Manager, you will work with Excel spreadsheets that use a specific format and schema. These specifications must be followed for the files to import correctly. To learn more, see [Format assessment template data in Excel](compliance-manager-templates-format-excel.md).
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar and select the user from there. You can select multiple users at once.
 
-## Export a template
+1. After making all your selections, select **Add**.
+    > [!NOTE]
+    > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
 
-You can export an Excel file that contains all of a template's data. You'll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](compliance-manager-templates-modify.md). You can also export a template for reference if you want to use data from it while constructing a new custom template.
+1. The flyout pane will close and you'll arrive back at the regulation details page. Select **Save**.  A confirmation message at the top will confirm the new role assignment for that regulatin.
 
-To export your template, go to your template details page and select the **Export to Excel** button.
+#### Steps for removing access
 
-Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
+You can remove a user's access to individual regulations by following the steps below:
+
+1. On the regulation's details page, select **Manage user access**.
+
+1. On the **Manage user access** flyout pane, go the tab corresponding to the user's role you want to remove.
+
+1. Find the user whose role you want to remove. Check the circle to the left of their name, then select the **Remove** command just below the role tab. To remove all users at once, simply select the **Remove all** command without checking the circle next to every user's name.
+
+1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
+
+1. Select **Save** on the flyout pane. The users' roles will now be removed from the assessment.
+
+##### Note about multiple roles
+
+- A user can have one role that applies to a regulation, while also holding another role that applies broadly to overall Compliance Manager access.
+
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific regulation. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+    - Removing a regulation-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you'll have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
+
+- For an individual regulation, one user can only hold one assessment-based role at a time.
+    - For example, if a user holds a reader role for the GDPR regulation and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
+
+> [!NOTE]
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more regulations, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this pane. Learn more about [setting Compliance Manager permissions and roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
