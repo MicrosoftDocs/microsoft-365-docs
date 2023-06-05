@@ -52,6 +52,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **Security Data / email quarantine (manage)** (management via PowerShell). Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Take action on quarantined messages for all users_: Membership in the **Organization Management**, **Security Administrator**, or **Quarantine Administrator** role groups.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role group.
