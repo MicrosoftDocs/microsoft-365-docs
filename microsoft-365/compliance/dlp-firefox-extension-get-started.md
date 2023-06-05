@@ -83,7 +83,7 @@ Here's a list of applicable roles. To learn more about them, see [Permissions in
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more about these role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -168,7 +168,7 @@ After ingesting the ADMX, the steps below can be followed to create a configurat
 
 If you don't want to use Microsoft Intune, you can use group policies to deploy the extension across your organization.
 
-#### Adding the Chrome Extension to the ForceInstall List
+#### Adding the Firefox Extension to the ForceInstall List
 
 1. In the Group Policy Management Editor, navigate to your OU.
 
