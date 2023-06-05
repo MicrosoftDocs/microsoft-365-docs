@@ -55,9 +55,9 @@ To rollout Network Protection for macOS, we recommend the following:
 
 ## Current capabilities
 
-- Custom Indicators of Compromise on Domains and IPs
-- Web Content Filtering support -
-  - Block website categories scoped to device groups through policies created in the MDEP Portal.
+- Custom Indicators of Compromise on Domains and IPs.
+- Web Content Filtering support:
+  - Block website categories scoped to device groups through policies created in the MDEP portal.
   - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
 - Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations
 - Microsoft Defender for Cloud Apps
