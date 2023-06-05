@@ -23,6 +23,8 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
+
 
 This article provides answers to frequently asked questions about device control removable storage capabilities in Microsoft Defender for Endpoint.
 
@@ -120,3 +122,11 @@ The best way to understand this is to check the event on the Advanced hunting wh
 ## Can I use both Group Policy and Intune deploy policies?
 
 You can use Group Policy and Intune to manage device control, but for one machine, use *either* Group Policy *or* Intune. If a machine is covered by both, device control will only apply the Group Policy setting.
+
+## Is device control available in Microsoft Defender for Business?
+
+Yes, for Windows and Mac.
+
+To set up device control on Windows, use [attack surface reduction rules in Defender for Business](/microsoft-365/security/defender-business/mdb-asr). You'll need [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). The standalone version of Defender for Business does not include Intune, but it can be added on. [Microsoft 365 Business Premium](/microsoft-365/business-premium) does include Intune. See [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+
+To set up device control on Mac, use Intune or Jamf. See [Device Control for macOS](mac-device-control-overview.md).
