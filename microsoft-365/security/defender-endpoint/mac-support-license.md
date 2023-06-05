@@ -88,7 +88,7 @@ You can also suppress switching to experience for Individuals on MDM enrolled ma
     <string>disabled</string>
 </dict>
 ```
-## Recommenced content
+## Recommended content
 
 - [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md): Install Microsoft Defender for Endpoint on macOS manually, from the command line.
 - [Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md): Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro.
