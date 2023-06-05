@@ -52,7 +52,7 @@ Contact your administrator for help.
 
 You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
 
-You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date. 
+You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date.
 
 ### Solution:
 
@@ -79,7 +79,7 @@ You downloaded and installed [Microsoft Defender for individuals on macOS](https
 
 Click **Switch to enterprise app** to switch to Enterprise experience.
 
-You can also suppress switching to experience for Individuals on MDM enrolled machines by including **userInterface**/**consumerExperience** into Defender's settings:
+You can also suppress switching to experience for Individuals on MDM-enrolled machines by including **userInterface**/**consumerExperience** in the Defender's settings:
 
 ```json
 <key>userInterface</key>
