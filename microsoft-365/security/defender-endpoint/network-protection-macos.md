@@ -63,7 +63,7 @@ To rollout Network Protection for macOS, we recommend the following:
 - Microsoft Defender for Cloud Apps
   - Shadow IT discovery - Identify which apps are being used in your organization.
   - Blocking Applications - Block entire applications (e.g Slack, Facebook) from being used in your organization
-- Corporate VPN in tandem or "side by side" with Network Protection. 
+- Corporate VPN in tandem or side-by-side with Network Protection: 
   - Currently, no VPN conflicts are identified. 
   - If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
 
