@@ -46,7 +46,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices that meet the minimum requirements. All of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
 
-To rollout Network Protection for macOS, we recommend the following:
+To roll out Network Protection for macOS, we recommend the following:
 
 - Create a device group for a small set of device that you can use to test Network Protection.
 - Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies which target those macOS devices where Network Protection is in Block mode.
