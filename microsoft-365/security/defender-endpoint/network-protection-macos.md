@@ -62,7 +62,7 @@ To roll out Network Protection for macOS, we recommend the following:
 - Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
 - Microsoft Defender for Cloud Apps:
   - Shadow IT discovery - Identify which apps are being used in your organization.
-  - Blocking Applications - Block entire applications (e.g Slack, Facebook) from being used in your organization
+  - Block applications - Block entire applications (such as Slack and Facebook) from being used in your organization.
 - Corporate VPN in tandem or side-by-side with Network Protection: 
   - Currently, no VPN conflicts are identified. 
   - If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
