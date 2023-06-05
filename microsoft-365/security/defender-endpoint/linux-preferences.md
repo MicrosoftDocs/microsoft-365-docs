@@ -70,7 +70,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
   - On-demand scanning is turned on : Still use the scan capabilites on the endpoint.
   - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
-  - Security intelligence updates are turned on : Alerts will be availble on security admins tenant.
+  - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
 |Description|Value|
 |---|---|
