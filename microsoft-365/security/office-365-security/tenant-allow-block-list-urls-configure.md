@@ -50,7 +50,6 @@ You manage allow and block entries for URLs in the Microsoft 365 Defender Portal
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
@@ -340,7 +339,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left wildcard (subdomain)
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `*.contoso.com`
 
@@ -372,7 +371,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left tilde
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `~contoso.com`
 
@@ -404,7 +403,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `*.contoso.com/*`
 
@@ -420,7 +419,7 @@ Valid URL entries and their results are described in the following sections.
 #### Scenario: Left and right tilde
 
 > [!TIP]
->  Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md). 
+>  Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 **Entry**: `~contoso.com~`
 

@@ -48,7 +48,6 @@ You can configure outbound spam policies in the Microsoft 365 Defender portal or
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -115,7 +114,7 @@ You can configure outbound spam policies in the Microsoft 365 Defender portal or
        - The alert policy named **User restricted from sending email** notifies admins (via email and on the **Incidents & alerts** \> **View alerts** page).
        - Any recipients specified in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the policy are also notified.
        - The user is unable to send any more messages until the following day, based on UTC time. There's no way for the admin to override this block.
-     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to **Restricted users** <https://security.microsoft.com/restrictedusers> in the Microsoft 365 Defender portal, and the user can't send email until they're removed from **Restricted users** by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to **Restricted users** <https://security.microsoft.com/restrictedusers> in the Microsoft 365 Defender portal, and the user can't send email until they're removed from **Restricted users** by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
      - **No action, alert only**: Email notifications are sent.
 
    - **Forwarding rules** section: The setting in this section controls automatic email forwarding by **Exchange Online mailboxes** to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md).
@@ -180,14 +179,14 @@ On the **Anti-spam policies** page, the following properties are displayed in th
   - **Custom outbound spam policy**
   - Blank for the default outbound spam policy (for example, **Anti-spam outbound policy (Default)**).
 
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
 Select an outbound spam policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
-> To see details about other outbound spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other outbound spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on outbound spam policies
 
@@ -226,15 +225,13 @@ On the **Anti-spam policies** page, the **Status** value of the policy is now **
 
 Outbound spam policies are processed in the order that they're displayed on the **Anti-spam policies** page:
 
-- The outbound spam policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
-- The outbound spam policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
-- Custom outbound spam policies are applied next in priority order (if they're enabled):
+- Custom outbound spam policies are applied in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
   - By default, a new outbound spam policy is created with a priority that's lower than the lowest existing custom outbound spam policy (the first is 0, the next is 1, etc.).
   - No two outbound spam policies can have the same priority value.
 - The default outbound spam policy always has the priority value **Lowest**, and you can't change it.
 
-Outbound spam protection stops for a sender after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Outbound spam protection stops for a sender after the first policy is applied (the highest priority policy for that sender). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom outbound spam policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 
@@ -499,7 +496,7 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 
 ## For more information
 
-[Remove blocked users from the Restricted Users portal](removing-user-from-restricted-users-portal-after-spam.md)
+[Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md)
 
 [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md)
 

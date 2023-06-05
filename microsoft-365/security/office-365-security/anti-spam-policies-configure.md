@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/19/2023
+ms.date: 4/21/2023
 ---
 
 # Configure anti-spam policies in EOP
@@ -42,7 +42,6 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -53,6 +52,8 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 - You can't completely turn off spam filtering, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
   - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+
+- If you disagree with the verdict from anti-spam filtering, you can report the message to Microsoft as a false positive. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 ## Use the Microsoft 365 Defender portal to create anti-spam policies
 
@@ -213,20 +214,27 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
    2. In the flyout that opens, do the following steps:
       1. Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add senders** or **Add domains**.
-      2. In the **Add senders** or **Add domains** flyout that appears, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the email address or domain, select the value below the box.
+      2. In the **Add senders** or **Add domains** flyout that opens, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the value, select the value below the box.
       3. Repeat the previous step as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
       When you're finished in the **Add senders** or **Add domains** flyout, select **Add senders** or **Add domains**.
 
-      Back on the first flyout, the senders or domains that you added are listed on the flyout. To remove an entry from this flyout, select the sender or domain by selecting the round check box that appears next to the entry, and then select the :::image type="icon" source="../../media/m365-cc-sc-remove-selected-users-icon.png" border="false"::: action that appears.
+      Back on the first flyout, the senders or domains that you added are listed.
 
-      To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+      To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-      Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find senders or domains on the flyout.
+       Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
-      When you're finished on the flyout, select **Done**.
+       To add entries, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add senders** or **Add domains** and repeat the previous steps.
 
-      Back on the **Allow & block list** page, select **Next** when you're read to continue.
+       To remove entries, do either of the following steps:
+
+       - Select one or more entries by selecting the round check box that appears in the blank area next to the sender or domain value.
+       - Select all entries at once by selecting the round check box that appears in the blank area next to the column header.
+
+       When you're finished on the flyout, select **Done** to return to the **Allow & block list** page.
+
+   When you're finished on the **Allow & block list** page, select **Next**.
 
 8. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
@@ -254,14 +262,14 @@ On the **Anti-spam policies** page, the following properties are displayed in th
   - **Custom anti-spam policy**
   - Blank for the default anti-spam policy (for example, **Anti-spam inbound policy (Default)**).
 
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
 Select an anti-spam policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
-> To see details about other anti-spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other anti-spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-spam policies
 
@@ -312,7 +320,7 @@ Anti-spam policies are processed in the order that they're displayed on the **An
   - No two anti-spam policies can have the same priority value.
 - The default anti-spam policy always has the priority value **Lowest**, and you can't change it.
 
-Anti-spam protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Anti-spam protection stops for a recipient after the first policy is applied (the highest priority policy for that recipient). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom anti-spam policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 

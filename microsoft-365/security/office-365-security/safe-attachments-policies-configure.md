@@ -33,7 +33,7 @@ ms.date: 4/12/2023
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-In organizations with Microsoft Defender for Office 365, Safe Attachments is an additional layer of protection against malware in messages. After message attachments are scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md), Safe Attachments opens the files in a virtual environment to see if anything bad happens (a process known as _detonation_) before the messages are delivered to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md).
+In organizations with Microsoft Defender for Office 365, Safe Attachments is an additional layer of protection against malware in messages. After message attachments are scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md), Safe Attachments opens files in a virtual environment to see what happens (a process known as _detonation_) before the messages are delivered to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md).
 
 Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients by default. Recipients who are specified in the Standard or Strict preset security policies or in custom Safe Attachments policies aren't affected. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
@@ -51,7 +51,6 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to policies_: Membership in one of the following role groups:
@@ -62,6 +61,8 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 - For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
+
+- For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
 
 ## Use the Microsoft 365 Defender portal to create Safe Attachments policies
 
@@ -82,7 +83,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
@@ -151,7 +152,7 @@ On the **Safe Attachments** page, the following properties are displayed in the 
 - **Status**: Values are **On** or **Off**.
 - **Priority**: For more information, see the [Set the priority of Safe Attachments policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-attachments-policies) section.
 
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific Safe Attachment policies.
 
@@ -162,7 +163,7 @@ Use :::image type="icon" source="../../media/m365-cc-sc-view-reports-icon.png" b
 Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
-> To see details about other Safe Attachments policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other Safe Attachments policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on Safe Attachments policies
 
@@ -221,7 +222,7 @@ Safe Attachments policies are processed in the order that they're displayed on t
   - No two policies can have the same priority value.
 - The Safe Attachments policy named **Built-in protection (Microsoft)** that's associated with Built-in protection always has the priority value **Lowest**, and you can't change it.
 
-Safe Attachments protection stops for a recipient after the first policy is applied. For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Safe Attachments protection stops for a recipient after the first policy is applied (the highest priority policy for that recipient). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 After you select the custom Safe Attachments policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
 

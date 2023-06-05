@@ -128,11 +128,11 @@ Users see enriched detonation details for known malicious attachments or URLs fo
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange mail flow rules (also known as transport rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
-- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured transport rule or an email allowed due to an end-user setting for Safe Senders.
+- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured mail flow rule or an email allowed due to an end-user setting for Safe Senders.
 
-- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured transport rule, as well as a tenant configured policy setting (for example, from the Tenant Allow Block lists), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email.
+- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured mail flow rule, as well as a tenant configured policy setting (for example, from the Tenant Allow/Block List), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email.
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
@@ -187,9 +187,9 @@ You'll be able to select **Take actions** from the top right corner of the entit
 
 In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You'll be able to see and track these actions in the
  [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the
-  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in [Tenant Allow/Block Lists](https://security.microsoft.com/tenantAllowBlockList) page for (TABL blocks).
+  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in the [Tenant Allow/Block List](https://security.microsoft.com/tenantAllowBlockList) page for (Tenant Allow/Block List blocks).
 
-We're also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages.
+We're also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, the block URL and block attachment entries can be tracked on the **URLs** and **Files** tabs on the Tenant Allow/Block List page.
 ![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
 
 See [permissions](mdo-portal-permissions.md) required to take these actions.

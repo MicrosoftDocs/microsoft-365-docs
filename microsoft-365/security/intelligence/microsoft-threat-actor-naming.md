@@ -22,6 +22,9 @@ ms.date: 04/18/2023
 
 # How Microsoft names threat actors
 
+> [!IMPORTANT]
+> Learn about how [Volt Typhoon targets US critical infrastructure with living-off-the-land techniques](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/#:~:text=Volt%20Typhoon%20has%20been%20active%20since%20mid-2021%20and,construction%2C%20maritime%2C%20government%2C%20information%20technology%2C%20and%20education%20sectors)
+
 Microsoft has shifted to a new naming taxonomy for threat actors aligned with the theme of weather. With the new taxonomy, we intend to bring better clarity to customers and other security researchers already confronted with an overwhelming amount of threat intelligence data and offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves.
 
 :::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-naming-categories2.png":::
@@ -84,6 +87,7 @@ Use the following reference table below to understand how our previously publicl
 |OSMIUM|Opal Sleet|North Korea|Konni|
 |PARINACOTA|Wine Tempest|Financially motivated|Wadhrama|
 |PHOSPHORUS|Mint Sandstorm|Iran|APT35, Charming Kitten|
+|PLUTONIUM|Onyx Sleet|North Korea|Silent Chollima, Andariel, DarkSeoul|
 |POLONIUM|Plaid Rain|Lebanon||
 |RADIUM|Raspberry Typhoon|China|APT30, LotusBlossom|
 |RUBIDIUM|Lemon Sandstorm|Iran|Fox Kitten, UNC757, PioneerKitten|
@@ -125,8 +129,7 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0796|Phlox Tempest|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
-
-A [downloadable version of the threat actor mapping](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx) is also available.
+|DEV-XXXX|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques) |China|BRONZE SILHOUETTE|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 
@@ -135,3 +138,20 @@ Read our announcement about the new taxonomy for more information: [https://aka.
 [Intel profiles in Microsoft Defender Threat Intelligence](../defender/defender-threat-intelligence.md) bring crucial threat actor insights directly into defenders' hands so that they can get the context they need as they prepare for and respond to threats.
 
 Additionally, to further operationalize the threat intelligence you get from Microsoft, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](/graph/api/resources/security-threatintelligence-overview).
+
+## Resources
+
+Use the following query on Microsoft 365 Defender and other Microsoft security products supporting the Kusto query language (KQL) to get information about a threat actor using the old name, new name, or industry name:
+
+```kusto
+let TANames = externaldata(PreviousName: string, NewName: string, Origin: string, OtherNames: dynamic)[@"https://raw.githubusercontent.com/microsoft/mstic/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json"] with(format="multijson", ingestionMapping='[{"Column":"PreviousName","Properties":{"Path":"$.Previous name"}},{"Column":"NewName","Properties":{"Path":"$.New name"}},{"Column":"Origin","Properties":{"Path":"$.Origin/Threat"}},{"Column":"OtherNames","Properties":{"Path":"$.Other names"}}]'); 
+let GetThreatActorAlias = (Name: string) { 
+TANames 
+| where Name =~ NewName or Name =~ PreviousName or OtherNames has Name 
+}; 
+GetThreatActorAlias("ZINC")
+```
+The following files containing the comprehensive mapping of old threat actor names with their new names are also available:
+
+- [JSON format](https://github.com/microsoft/mstic/blob/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json)
+- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx)
