@@ -70,6 +70,10 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 > [!IMPORTANT] 
 > It's important that you review any content the AI generates for you to make sure it has accurately produced what you wanted.
 
+## Data security and privacy
+
+The new Copilot experiences do not change Microsoft’s commitment and principles for data security and privacy. Learn more about [Microsoft’s standards for data Security and privacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/administration-of-microsoft-365-in-the-new-era-of-ai/ba-p/3767079).
+
 ## Let us know what you think
 
 If you have a suggestion for Copilot for Syntex, or if there's something you like or something you don't like about it, you can submit feedback to Microsoft from the **Copilot** panel. Select **More options** (<sup>**...**</sup>), and then select **Send feedback**.
