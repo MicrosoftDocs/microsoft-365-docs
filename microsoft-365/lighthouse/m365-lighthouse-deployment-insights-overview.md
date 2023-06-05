@@ -132,7 +132,7 @@ Selecting any customer tenant from the list opens the deployment insights detail
 - Required licenses
 
 > [!NOTE]
-> Deployment insights for dismissed tasks, excluded users, and required licenses are also available from the **Tenants** page.
+> Deployment insights for dismissed tasks, excluded users, and required licenses are also available on the **Tenants** page.
 
 #### Overview tab
 
@@ -169,7 +169,7 @@ The **Required licenses** tab provides details about deployment tasks where one 
 
 | **Column**                    | **Description**                                                     |
 |-------------------------------|---------------------------------------------------------------------|
-| Tasks with not-licensed users | The name of the task from which one or more users aren't licensed. |
+| Tasks with not-licensed users | The name of the task for which one or more users aren't licensed. |
 | Not-licensed users            | The name of each user who isn't licensed to complete the task.     |
 
 ### Deployment insights table by task
