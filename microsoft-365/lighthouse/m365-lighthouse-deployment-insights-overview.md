@@ -43,14 +43,14 @@ To access deployment insights, in the left navigation pane in Lighthouse, select
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15vPs]
 
 ## Deployment insights page
-The Deployment insights page includes the following:
+The **Deployment insights** page includes the following:
 
 - Tenant progress
 - User progress
 - Deployment insights based on customer tenants and tasks
 
 > [!NOTE]
-> The Deployment insights page measures deployment progress across all customer tenants that have an onboarding status of **Active**. By default, the deployment insights are filtered to display insights for all tenants but can be filtered by tenant tag.
+> The **Deployment insights** page measures deployment progress across all customer tenants that have an onboarding status of **Active**. By default, the deployment insights are filtered to display insights for all tenants but can be filtered by tenant tag.
 
 :::image type="content" source="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png" alt-text="Screenshot of deployment insights page" lightbox="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png":::
 
@@ -132,7 +132,7 @@ Selecting any customer tenant from the list opens the deployment insights detail
 - Required licenses
 
 > [!NOTE]
-> Deployment insights for dismissed tasks, excluded users, and required licenses are also available from the **Tenant** page.
+> Deployment insights for dismissed tasks, excluded users, and required licenses are also available from the **Tenants** page.
 
 #### Overview tab
 
@@ -161,7 +161,7 @@ The **Excluded users** tab provides details about users who've been excluded fro
 | **Column**               | **Description**                                                      |
 |--------------------------|----------------------------------------------------------------------|
 | Task with excluded users | The name of the task from which one or more users have been excluded. |
-| Excluded users           | The names of each user that's been excluded.                       |
+| Excluded users           | The names of each user who's been excluded.                       |
 
 #### Required licenses tab
 
