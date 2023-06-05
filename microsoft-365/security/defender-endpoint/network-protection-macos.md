@@ -48,8 +48,8 @@ Network Protection for macOS is now available for all Microsoft Defender for End
 
 To roll out Network Protection for macOS, we recommend the following:
 
-- Create a device group for a small set of device that you can use to test Network Protection.
-- Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies which target those macOS devices where Network Protection is in Block mode.
+- Create a device group for a small set of devices that you can use to test Network Protection.
+- Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies that target those macOS devices where Network Protection is in Block mode.
 - Deploy an audit or block mode policy to this device group and verify there are no issues or broken workstreams.
 - Gradually deploy Network Protection to a larger set of devices until completely rolled out.
 
