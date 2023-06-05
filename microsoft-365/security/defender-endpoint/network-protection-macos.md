@@ -44,19 +44,27 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 ## Availability
 
-Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. All of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
 
-To prepare for the macOS network protection rollout, we recommend the following:
+To rollout Network Protection for macOS, we recommend the following:
 
-- For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices.
-- Verify the Network Protection configuration on your macOS devices is set to the desired state.
-- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement policies which target those macOS devices where Network Protection is in Block mode.
+- Create a device group for a small set of device that you can use to test Network Protection.
+- Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies which target those macOS devices where Network Protection is in Block mode.
+- Deploy an audit or block mode policy to this device group and verify there are no issues or broken workstreams.
+- Gradually deploy Network Protection to a larger set of devices until completely rolled out.
 
-## New and updated capabilities
+## Current capabilities
 
-- You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
-  - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 features, such as Microsoft Defender for Cloud Apps or Custom Indicators, currently also require network protection.
+- Custom Indicators of Compromise on Domains and IPs
+- Web Content Filtering support -
+  - Block website categories scoped to device groups through policies created in the MDEP Portal.
+  - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
+- Microsoft Defender for Cloud Apps
+  - Shadow IT discovery - Identify which apps are being used in your organization.
+  - Blocking Applications - Block entire applications (e.g Slack, Facebook) from being used in your organization
+- Corporate VPN in tandem or "side by side" with Network Protection. 
+  - Currently, no VPN conflicts are identified. 
+  - If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
 
 ### Known issues
 
@@ -70,7 +78,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 > [!NOTE]
 >
-> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection will provide this protection to Microsoft Edge for macOS as well if network protection is enabled.
+> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection will provide this protection to Microsoft Edge for macOS if network protection is enabled.
 
 ## Prerequisites
 
