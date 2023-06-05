@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft 365 Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/25/2023
+ms.date: 6/6/2023
 ---
 
 # Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
@@ -31,13 +31,13 @@ ms.date: 5/25/2023
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft 365 Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
-- **Admin-originated submissions**: Admins identify and report messages, attachments, or URLs (entities) by selecting ::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** from the tabs on the **Submissions** page as described in the [Admin-originated submissions](#admin-originated-submissions) section.
+- **Admin-originated submissions**: Admins identify and report messages, attachments, or URLs (entities) by selecting :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** from the tabs on the **Submissions** page as described in the [Admin-originated submissions](#admin-originated-submissions) section.
 
   After the admin reports the entity, an entry appears on the corresponding tab on the **Submissions** page (anywhere except the **User reported** tab).
 
-- **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured (using Microsoft reporting tools or supported third-party reporting tools), and the reported messages are delivered only to the reporting mailbox, not to Microsoft. The user reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit the messages to Microsoft from the **User reported** tab.
+- **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured, and the reported messages are delivered only to the reporting mailbox, not to Microsoft. The user reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit the messages to Microsoft from the **User reported** tab.
 
-  After the admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
+  After an admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
 
 When admins submit email messages for analysis, Microsoft does the following checks:
 
@@ -68,9 +68,9 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 - Admins can submit email messages as old as 30 days if they're still available in the mailbox and haven't been purged by the user or an admin.
 
 - Admin submissions are throttled at the following rates:
-  - Maximum submissions in any 15 minute period: 150 submissions
-  - Same submissions in a 24 hour period: 3 submissions
-  - Same submissions in a 15 minute period: 1 submission
+  - Maximum submissions in any 15-minute period: 150 submissions
+  - Same submissions in a 24 hour period: Three submissions
+  - Same submissions in a 15-minute period: One submission
 
 - A **Files** tab is available on the **Submissions** page only in organizations with Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
@@ -211,7 +211,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
    - **Add the network message ID or upload the email file**: Select one of the following options:
      - **Add the email network message ID**: The GUID value is available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
-     - **Upload the email file (.msg or .eml)**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
+     - **Upload the email file (.msg or .eml)**: Select **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
 
    - **Choose a recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
@@ -229,7 +229,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
          - **Allow entry note**: Enter optional information about why you're allowing and submitting this email message.
 
-           For spoofed senders, any value you enter here is not shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block List**.
+           For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block List**.
 
    When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
 
@@ -502,7 +502,7 @@ If an override or policy configuration was found, the result should be available
 
 On the **Emails**, **Email attachments** and **URLs** tabs on the **Submissions** page, actions for admin submissions are available in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:<sup>\*</sup>:
 
-- Links in the **Result details** section:
+- Links in the **Result details** section: This section often contains actionable links, depending on the nature and status of the entry. For example:
   - **View Exchange mail flow rules (transport rules)**
   - **Block URL/file in Tenant Allow/Block List**
   - **Remove URL/file from Tenant Allow/Block List**
@@ -526,8 +526,8 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 If the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on and you've deployed supported methods for users to report messages (the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web), or [supported third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools)), you can see what users are reporting on the **User reported** tab on the **Submissions** page:
 
-- User reported messages that are sent to Microsoft only or to Microsoft and the reporting mailbox appear on the **User reported** tab on the **Submissions** page. Admins don't need to submit these messages to Microsoft for analysis.
-- User reported messages that are sent only to the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab on the **Submissions** page with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
+- User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Admins don't need to submit these messages to Microsoft for analysis.
+- User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -630,7 +630,7 @@ In the **Submit to Microsoft for analysis** dropdown list, select one of the fol
 
 - **Report clean**: In the dialog that opens, review or configure the following settings:
 
-  **Allow email with similar attributes (URL, sender, etc)**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
+  **Allow email with similar attributes (URL, sender, etc.)**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
 
     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
       - **1 day**
@@ -641,7 +641,7 @@ In the **Submit to Microsoft for analysis** dropdown list, select one of the fol
 
   When you're finished in the **Submit message as clean to Microsoft** dialog, select **Submit**.
 
-- **Report phishing**, **Report malware** or **Report spam**: These selection have the same options in the dialog that opens:
+- **Report phishing**, **Report malware** or **Report spam**: These selections have the same options in the dialog that opens:
 
   **Block all email from this sender or domain**: Select this option to add a sender or domain block entry in Tenant Allow/Block List. The following settings are available:
 
