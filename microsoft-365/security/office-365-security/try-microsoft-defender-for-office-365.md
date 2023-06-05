@@ -49,7 +49,9 @@ Watch this short video to learn more about how you can get more done in less tim
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
 
-## How evaluations and trials of Defender for Office 365 work
+For pricing information, see [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
+
+## How trials and evaluations work for Defender for Office 365
 
 ### Policies
 

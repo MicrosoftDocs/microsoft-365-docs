@@ -38,8 +38,11 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 To access Deployment insights, in the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
 
-:::image type="content" source="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png" alt-text="Screenshot of deployment insights page" lightbox="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png":::
+## Watch: Deployment insights
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15vPs]
+
+## Deployment insights page
 The Deployment insights page includes the following:
 
 - Tenant progress
@@ -50,7 +53,9 @@ The Deployment insights page includes the following:
 
 **Note:** The Deployment insights page measures deployment progress across all tenants that have an Onboarding Status of **Active**. By default, the deployment insights are filtered to display insights for all tenants but can be filtered by tenant tag.
 
-## Tenant progress
+:::image type="content" source="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png" alt-text="Screenshot of deployment insights page" lightbox="../media/m365-lighthouse-deployment-insights-overview/m365-lighthouse-deployment-insights-overview-page.png":::
+
+### Tenant progress
 
 The tenant progress graph measures deployment progress by tenant, reporting the status of each tenants’ deployment plans as either:
 
@@ -58,7 +63,7 @@ The tenant progress graph measures deployment progress by tenant, reporting the 
 
 - **Not complete** – the status of for one or more of the deployment tasks is **Not compliant** or **Not licensed**.
 
-## User progress
+### User progress
 
 The user progress graph measures deployment progress by user, reporting users as either:
 
@@ -66,7 +71,7 @@ The user progress graph measures deployment progress by user, reporting users as
 
 - **Not complete** – the status for one or more of the deployment tasks is either **Not compliant** or **Not licensed**.
 
-## Deployment insights table
+### Deployment insights table
 
 The deployment insights table organizes information by tenant and task.
 
@@ -118,7 +123,7 @@ In this example, all tenants have 100 users and have been assigned a baseline th
 | K      | Default baseline | Not complete           | 0/10          | 0               | 0                  | 10               | 99/100        | 0              | 0               |
 | L      | Default baseline | Not complete           | 0/10          | 0               | 0                  | 10              | 99/100        | 0              | 0               |
 
-## Deployment insights details by tenant
+### Deployment insights details by tenant
 
 Selecting any tenant from the list opens the deployment insights details pane for that tenant, which provides the following information for each tenant:
 
@@ -129,7 +134,7 @@ Selecting any tenant from the list opens the deployment insights details pane fo
 
 **NOTE**: Deployment insights around dismissed tasks, excluded users, and required licenses are also available from the **Tenant** page.
 
-### Overview tab
+#### Overview tab
 
 The **Overview** tab provides the status of each deployment task assigned to the tenant with the following information:
 
@@ -139,7 +144,7 @@ The **Overview** tab provides the status of each deployment task assigned to the
 | Task Status | The status of the deployment task.                                                                                           |
 | User status | The number of users who have completed the task, who have been excluded from the task, or who haven't been targeted for the task. |
 
-### Dismissed tasks tab
+#### Dismissed tasks tab
 
 The **Dismissed tasks** tab provides details around tasks that have been dismissed from the deployment plan and allows you to reinstate tasks. The tab includes the following information:
 
@@ -149,7 +154,7 @@ The **Dismissed tasks** tab provides details around tasks that have been dismiss
 | Reason        | The reason provided for the dismissal of the task.        |
 | Justification | The justification provided for the dismissal of the task. |
 
-### Excluded users tab
+#### Excluded users tab
 
 The **Excluded users** tab provides details around users that have been excluded from a deployment task. This tab includes the following information:
 
@@ -158,7 +163,7 @@ The **Excluded users** tab provides details around users that have been excluded
 | Task with excluded users | The name of the task from which one or more users has been excluded. |
 | Excluded users           | The names of each user that has been excluded.                       |
 
-### Required licenses tab
+#### Required licenses tab
 
 The **Required licenses** tab provides details around deployment tasks for which one or more users requires additional licensing to complete the task. This tab includes the following information:
 
@@ -167,7 +172,7 @@ The **Required licenses** tab provides details around deployment tasks for which
 | Tasks with not licensed users | The name of the task from which one or more users aren't licensed. |
 | Not licensed users            | The name of each user who isn't licensed to complete the task.     |
 
-## Deployment insights table by task
+### Deployment insights table by task
 
 To view deployment insights by task, select the **Tasks** tab. The **Tasks** tab can be filtered by baseline and category. It provides the following information for each tenant:
 

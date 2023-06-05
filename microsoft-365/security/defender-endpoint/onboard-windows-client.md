@@ -42,6 +42,12 @@ In general, you'll identify the client you're onboarding, then follow the corres
 
 :::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
 
+
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
+
+
 ## Related topics
 - [Onboard Windows devices using Microsoft Intune](configure-endpoints-mdm.md)
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
