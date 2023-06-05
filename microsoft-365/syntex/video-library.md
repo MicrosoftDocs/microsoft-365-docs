@@ -24,7 +24,7 @@ description: Watch videos to learn about some of the different features in Micro
 |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of Syntex overview video.":::](https://www.microsoft.com/videoplayer/embed/RW15yuU)<br>[Learn more about Syntex](syntex-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)          |
 
 
-|Unstructured document processing  |Freeform and structured document processing  |
+|Unstructured models  |Freeform and structured models  |
 |---------|---------|
 |[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSoL)<br>[Learn more about freeform and structured models](freeform-and-document-processing-overview.md)         |
 
