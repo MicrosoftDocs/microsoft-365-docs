@@ -32,7 +32,7 @@ Once the Defender Experts for XDR team is ready to onboard your organization, yo
 
 Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft 365 Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
-:::image type="content" source="../../media/xdr/security-team-boost.png" alt-text="Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide" lightbox="../../media/xdr/security-team-boost.png":::
+:::image type="content" source="../../media/xdr/security-team-boost.png" alt-text="Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/security-team-boost.png":::
 
 ## Grant permissions to our experts
 
@@ -45,7 +45,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 
 [Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
-:::image type="content" source="../../media/xdr/grant-permissions-to-experts.png" alt-text="Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide" lightbox="../../media/xdr/grant-permissions-to-experts.png":::
+:::image type="content" source="../../media/xdr/grant-permissions-to-experts.png" alt-text="Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/grant-permissions-to-experts.png":::
 
 **To grant our experts permissions:**
 
