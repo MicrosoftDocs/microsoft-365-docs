@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/30/2023
+ms.date: 06/05/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -30,6 +30,9 @@ Applies to:
 
 - Outlook perpetual versions E3 and E5 users
 - Microsoft 365 for enterprise E3 and E5 users
+
+> [!NOTE]
+> Microsoft Purview data loss prevention will only process the first four MB on message content for policy tip in Outlook 365 for Win32 and only classify up to two MB of attchments.
 
 ## DLP policy tips supported
 
