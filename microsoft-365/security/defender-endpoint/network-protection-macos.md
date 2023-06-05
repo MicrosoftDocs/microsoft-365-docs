@@ -59,7 +59,7 @@ To rollout Network Protection for macOS, we recommend the following:
 - Web Content Filtering support:
   - Block website categories scoped to device groups through policies created in the MDEP portal.
   - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
-- Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations
+- Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
 - Microsoft Defender for Cloud Apps
   - Shadow IT discovery - Identify which apps are being used in your organization.
   - Blocking Applications - Block entire applications (e.g Slack, Facebook) from being used in your organization
