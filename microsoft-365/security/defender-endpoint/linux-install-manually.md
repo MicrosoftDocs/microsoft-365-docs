@@ -297,6 +297,8 @@ In order to preview new features and provide early feedback, it is recommended t
 
 Download the onboarding package from Microsoft 365 Defender portal.
 
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
 > [!IMPORTANT]
 > If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
 
