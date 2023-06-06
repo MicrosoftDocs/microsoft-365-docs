@@ -21,6 +21,8 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
+In Microsoft Syntex, library settings in a SharePoint document library are used to provide information about the model and let you set up specific Syntex settings for the library.
+
 ## Automatic classification and extraction
 
 When you apply a model to a library, Syntex automatically adds the content type and updates the default view with the labels you extracted showing as columns.
