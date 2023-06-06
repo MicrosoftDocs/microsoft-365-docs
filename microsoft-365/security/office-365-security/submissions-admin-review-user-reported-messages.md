@@ -16,7 +16,7 @@ description: Admins can learn how to review messages that were reported by users
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/31/2023
+ms.date: 6/6/2023
 ---
 
 # Admin review for user reported messages
@@ -36,7 +36,7 @@ Admins can mark messages and notify users of review results only if the user [re
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>. To go directly to the **User reported** page, use <https://security.microsoft.com/reportsubmission?viewid=user>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>. To go directly to the **User reported** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Security Administrator** role groups.
@@ -67,7 +67,7 @@ Admins can mark messages and notify users of review results only if the user [re
 
 The reported message is marked as **No threats found**, **Phishing**, or **Spam**, and an email is automatically sent to notify the user who reported the message.
 
-To customize the notification message, see the next section.
+To customize the notification email, see the next section.
 
 ## Customize the messages used to notify users
 

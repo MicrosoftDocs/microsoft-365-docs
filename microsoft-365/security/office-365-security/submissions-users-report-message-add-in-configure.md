@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.reviewer: dhagarwal
 ms.topic: how-to
-ms.date: 5/12/2023
+ms.date: 6/6/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -106,7 +106,7 @@ After the add-in is installed and enabled, users see the following icons based o
   > - The toggle on the **User reported** page is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
   > - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
 
-- Organizations that use URL filtering or a third-party security solutions (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
+- Organizations that use URL filtering or a third-party security solution (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
   - `ipagave.azurewebsites.net`
   - `outlook.office.com`
 
