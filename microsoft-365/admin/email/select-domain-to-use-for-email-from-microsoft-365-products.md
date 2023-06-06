@@ -48,7 +48,7 @@ The default option is that users receive no-reply emails sent by Microsoft on be
 
 ## <a name="configsetting">Configure the "Send email notifications from your domain" setting</a>
 
-The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings, select Org Settings, and then the Organization profile tab as illustrated below. 
+The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings, select Org settings, and then select the Organization profile tab as illustrated below. 
 
 :::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
