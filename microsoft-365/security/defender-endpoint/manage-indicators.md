@@ -3,8 +3,8 @@ title: Create indicators
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.service: microsoft-365-security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 ms.reviewer: thdoucet
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 04/10/2023
+ms.date: 05/31/2023
 ---
 
 # Create indicators
@@ -44,6 +44,10 @@ To halt additional compromise or prevent breaches of known IoCs, successful IoC 
 IoC matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
 
 Organizations can create indicators that define the detection, prevention, and exclusion of IoC entities. You can define the action to be taken as well as the duration for when to apply the action, and the scope of the device group to apply it to.
+
+This video shows a walkthrough of creating and adding indicators:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
 ### About Microsoft indicators
 
@@ -155,3 +159,6 @@ Customers may experience issues with alerts for Indicators of Compromise. The fo
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
+
+
+
