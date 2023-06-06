@@ -77,7 +77,7 @@ The default policies for these EOP features are always on, apply to all recipien
 
 Do you want your Defender for Office 365 experience to be active or passive? The following modes are available:
 
-- **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
+- **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article. We also automatically turn on SafeLinks time of click protection in audit mode for non-email workloads (for example, Microsoft Teams, SharePoint, and OneDrive for Business)
 
   You can also selectively turn on or turn off anti-phishing protection (spoofing and impersonation), Safe Links protection, and Safe Attachments protection. For instructions, see [Manage evaluation settings](#manage-evaluation-settings).
 
