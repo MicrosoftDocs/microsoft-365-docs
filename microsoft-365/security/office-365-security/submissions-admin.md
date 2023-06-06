@@ -35,7 +35,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, admins can use th
 
   After the admin reports the entity, an entry appears on the corresponding tab on the **Submissions** page (anywhere except the **User reported** tab).
 
-- **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured, and the reported messages are delivered only to the reporting mailbox, not to Microsoft. The user reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit the messages to Microsoft from the **User reported** tab.
+- **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured. User reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit or resubmit the messages to Microsoft from the **User reported** tab.
 
   After an admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
 
@@ -47,7 +47,7 @@ When admins submit email messages for analysis, Microsoft does the following che
 - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit messages to Microsoft for analysis. The messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit messages to Microsoft for analysis, but the messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 
@@ -498,18 +498,9 @@ When you select an entry on the tab by clicking anywhere in the row other than t
 
 If an override or policy configuration was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override or policy, the detonation and feedback from graders could take up to a day.
 
-### Actions for admin submissions
+### Actions for admin submissions in Defender for Office 365 Plan 2
 
-On the **Emails**, **Email attachments** and **URLs** tabs on the **Submissions** page, actions for admin submissions are available in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:<sup>\*</sup>:
-
-- Links in the **Result details** section: This section often contains actionable links, depending on the nature and status of the entry. For example:
-  - **View Exchange mail flow rules (transport rules)**
-  - **Block URL/file in Tenant Allow/Block List**
-  - **Remove URL/file from Tenant Allow/Block List**
-
-#### Actions for admin submissions in Defender for Office 365 Plan 2
-
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are also available in the details flyout of an admin submission:
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are available for admin submissions in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
 
@@ -526,7 +517,7 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 If the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on and you've deployed supported methods for users to report messages (the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web), or [supported third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools)), you can see what users are reporting on the **User reported** tab on the **Submissions** page:
 
-- User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Admins don't need to submit these messages to Microsoft for analysis.
+- User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Although these messages have already been reported to Microsoft, admins can resubmit the reported messages.
 - User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
@@ -609,7 +600,7 @@ On the **User reported** tab, actions for user reported messages are available o
   > [!TIP]
   > To see details or take action on other user reported messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-<sup>\*</sup> Depending on the nature and status of the message, some actions might not be available, are available directly in the flyout, or are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions**.
+<sup>\*</sup> Depending on the nature and status of the message, some actions might not be available, are available directly at the top of the flyout, or are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** at the top of the flyout.
 
 These actions are described in the following subsections.
 
@@ -617,8 +608,6 @@ These actions are described in the following subsections.
 > After a user reports a suspicious message, the user or admins can't undo the reporting of the message, regardless of where the reported message goes (to the reporting mailbox, to Microsoft, or both). The user can recover the reported message from their Deleted Items or Junk Email folders.
 
 #### Submit user reported messages to Microsoft for analysis
-
-On the **User reported** tab, admins can submit messages with the **Result** value **Not Submitted to Microsoft** to Microsoft for analysis.
 
 After you select the message on the **User reported** tab, use either of the following methods to submit the message to Microsoft:
 
