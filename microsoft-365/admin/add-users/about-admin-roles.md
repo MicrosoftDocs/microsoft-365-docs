@@ -127,6 +127,20 @@ A partner can assign these roles:
 - **Helpdesk Agent** Privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. The partner has to be an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
+
+## Volume licensing roles
+
+Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+
+- Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
+
+- Volume licensing users see no other Microsoft 365 admin center information or functionality.
+
+- Microsoft 365 admin center Global Admins have no role in assigning VL user permissions and do not need to assign any admin permissions to VL users for them to see the volume licensing blade.
+
+- Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
+
+- For more information about volume licensing in Microsoft 365 admin center, go to [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
   
 ## Related content
 

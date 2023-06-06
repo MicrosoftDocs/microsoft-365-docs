@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/15/2023
+ms.date: 05/31/2023
 ---
 
 # Automatic attack disruption in Microsoft 365 Defender
@@ -39,8 +39,6 @@ Automatic attack disruption limits lateral movement early on and reduces the ove
 This article provides an overview of automated attack disruption and includes links to the next steps and additional resources.
 
 ## How automatic attack disruption works
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account.
 
@@ -104,3 +102,5 @@ For more information, see [view attack disruption details and results](autoad-re
 
 - [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
 - [View details and results](autoad-results.md)
+
+
