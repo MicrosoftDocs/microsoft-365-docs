@@ -79,7 +79,7 @@ For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/
 
 ## Manage performance mode
 
-Performance mode can only run on a “trusted” Dev Drive and is enabled by default when a new Dev Drive is created. For more information, see: [Understanding security risks and trust in relation to Dev Drive](/windows/dev-drive#understanding-security-risks-and-trust-in-relation-to-dev-drive).
+Performance mode can only run on a *trusted* Dev Drive and is enabled by default when a new Dev Drive is created. For more information, see [Understanding security risks and trust in relation to Dev Drive](/windows/dev-drive#understanding-security-risks-and-trust-in-relation-to-dev-drive).
 
 ## See also
 
