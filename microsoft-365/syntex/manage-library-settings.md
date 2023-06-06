@@ -43,6 +43,8 @@ Follow these steps if you want Syntex to process new files only.
 
     ![Screenshot of the Settings menu for a SharePoint document library.](../media/content-understanding/syntex-library-settings.png)
 
-2. On the **Library settings** panel, in the **Automatic classification and extraction** section, select **New files only**, and then select **Save**.
+2. On the **Library settings** panel, under **Automatic classification and extraction**, select **New files only**, and then select **Save**.
 
     ![Screenshot of the Library settings panel with the Automatic classification and extraction option highlighted.](../media/content-understanding/automatic-classification-setting.png)
+
+2. Select **Save**. Syntex will now process new files only.
