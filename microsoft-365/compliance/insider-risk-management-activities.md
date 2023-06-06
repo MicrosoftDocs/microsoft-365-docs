@@ -254,10 +254,10 @@ If you create a filter and customize columns for the filter, you can save a view
 1. Create a filter and customize columns.
    > [!TIP]
    > If you want to start over at any point, select **Reset filters**. To change columns that you've customized, select **Reset columns**.  
-1. When you have the filter the way you want it, select **Save this view**, enter a name for the view, and then select **Save**.
+2. When you have the filter the way you want it, select **Save this view**, enter a name for the view, and then select **Save**.
    > [!NOTE]
    > The maximum length for a view name is 40 characters and you can't use any special characters. 
-1. To reuse the view of the filter later, select **Views**, and then select the view you want to open from the **Recommended** tab (shows the most-used views) or the **All views** tab (the most frequently used filters are displayed at the top of the list). 
+3. To reuse the view of the filter later, select **Views**, and then select the view you want to open from the **Recommended views** tab (shows the most-used views) or the **Custom views** tab (the most frequently used filters are displayed at the top of the list). 
 
 When you select a view this way, it will reset all the existing filters and replace them with the view that you selected. 
 
