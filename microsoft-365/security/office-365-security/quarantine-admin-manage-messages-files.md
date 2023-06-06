@@ -52,7 +52,6 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **Security Data / email quarantine (manage)** (management via PowerShell). Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Take action on quarantined messages for all users_: Membership in the **Organization Management**, **Security Administrator**, or **Quarantine Administrator** role groups.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role group.
@@ -350,7 +349,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **Should not have been blocked (false negative)**: If you select this option, the following settings appear:
+  - **Should have been blocked (false negative)**: If you select this option, the following settings appear:
     - **The email should have been categorized as**: Select **Phish**, **Spam**, or **Spam**.
     - **Block all email from this sender or domain**: If you select this option, block entries for the **Sender** or **Domain** (you choose) are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
       - **Remove block entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, **90 days**, **Never expire**, or a **Specific date**.
@@ -412,7 +411,7 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
 
 #### Take action on multiple quarantined email messages
 
