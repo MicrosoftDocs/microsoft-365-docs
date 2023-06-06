@@ -86,7 +86,7 @@ An example of the Azure blob container URL will be in the format `https://storag
 
 ### Set permissions on the Azure blob storage
 
-From the use of Azure Active Directory authorization, you have to configure two sets of permissions on the blobs; one for the administrators and investigators so they can view and manage evidence; and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
+Using Azure Active Directory authorization, you have to configure two sets of permissions on the blobs; one for the administrators and investigators so they can view and manage evidence and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
 
 #### Permissions on Azure blob for administrators and investigators
 
@@ -180,8 +180,7 @@ The JSON for user role group should look like this:
 
 1. Set how long you want items to be cached on devices if they can't access the Azure storage account. You can choose, **7**, **30**, or **60** days.
 
-1. Select **+ Add storage** and provide the Name and URL of the Azure storage account.
-    1. The URL format is the storage account FQDN/containerName. No SAS token is required as Azure Active Directory authorization is in use. 
+1. Select **+ Add storage** and provide the Name and URL of the Azure storage account. The URL format is the storage account FQDN/containerName. No SAS token is required as Azure Active Directory authorization is in use. 
 
 ### Policy configuration 
 
