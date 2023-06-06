@@ -21,7 +21,11 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-When you apply a model to a library, Syntex adds the associated content type, the columns, and the view.
+When you apply a model to a library, Syntex automatically adds the content type and updates the default view with the labels you extracted showing as columns.
+
+By default, every time you then add or edit a document, Syntex processes the document again. After the model is applied, every time a new file is added to or modified in the library, applying the model to the document library, you can begin uploading documents to the site and see the results.
+
+Because the model is associated to a content type, when you apply it to the library it will add the content type and update the default view with the labels you extracted showing as columns.
 
 Syntex automatically classifies new and modified documents and also extracts text from them.
 
