@@ -96,28 +96,30 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
     "@odata.context": " https://api-df.securitycenter.microsoft.com/api/$metadata#BaselineConfigurations ", 
     "value": [
         {
-            "UniqueId": "STIG_2.002-windows_10-10.0.19042_SV-220826r569187",
-            "Id": "SV-220826r569187",
-            "BenchmarkName": "STIG",
-            "BenchmarkVersion": "2.002-windows_10-10.0.19042",
-            "Name": "The Application Compatibility Program Inventory must be prevented from collecting data and sending the information to Microsoft",
-            "Description": "Some features may communicate with the vendor, sending system information or downloading data or components for the feature. Turning off this capability will prevent potentially sensitive information from being sent outside the enterprise and uncontrolled updates to the system. This setting will prevent the Program Inventory from collecting data about a system and sending the information to Microsoft.",
-            "Category": "SRG-OS-000095-GPOS-00049",
+            "id": "9.3.9",
+            "uniqueId": "CIS_1.4.0-windows_server_2016_9.3.9",
+            "benchmarkName": "CIS",
+            "benchmarkVersion": "1.4.0-windows_server_2016",
+            "name": "(L1) Ensure 'Windows Firewall: Public: Logging: Log dropped packets' is set to 'Yes'",
+            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">  Use this option to log when Windows Firewall with Advanced Security discards an inbound packet for any reason. The log records why and when the packet was dropped. Look for entries with the word             <span class=\"inline_block\">DROP</span>   in the action column of the log.          </p>",
+            "category": "Public Profile",
             "complianceLevels": [
-                "CAT III", 
-                "All"
+                "Level 1 - Domain Controller",
+                "Level 1 - Member Server",
+                "Level 2 - Domain Controller",
+                "Level 2 - Member Server"
             ],
-            "cce": "",
-            "rationale": "Not available",
-            "remediation": "Configure the policy value for Computer Configuration > Administrative Templates > Windows Components > Application Compatibility > \"Turn off Inventory Collector\" to \"Enabled\".",
-            "recommendedValue": [ 
-                "Equals '1'" 
-            ], 
+            "cce": "CCE-35116-3",
+            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">If events are not recorded it may be difficult or impossible to determine the root cause of system problems or the unauthorized activities of malicious users.</p>",
+            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">    <p>      <p>  To establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Yes</span>  :              </p>      <code class=\"code_block\">Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Windows Firewall with Advanced Security\\Windows Firewall with Advanced Security\\Windows Firewall Properties\\Public Profile\\Logging Customize\\Log dropped packets  </code>      <p class=\"bold\">Impact:</p>      <p>        <p>Information about dropped packets will be recorded in the firewall log file.</p>      </p>    </p>  </div>",
+            "recommendedValue": [
+                "Equals '1'"
+            ],
             "source": [
-                "hkey_local_machine\\software\\policies\\microsoft\\windows\\appcompat\\disableinventory"
+                "hkey_local_machine\\software\\policies\\microsoft\\windowsfirewall\\publicprofile\\logging\\logdroppedpackets"
             ],
             "isCustom": false
-        }, 
+        },
     ] 
 } 
 ```
