@@ -31,7 +31,7 @@ By default, Syntex processes a file every time the file is uploaded or edited. I
 
 Follow these steps if you want Syntex to process new files only.
 
-1. From a SharePoint document library, select **Settings** ![Image showing the Settings menu icon](../media/content-understanding/settings-icon.png)> **Library settings**.
+1. From a SharePoint document library, select **Settings** ![Image showing the Settings menu icon](../media/content-understanding/settings-icon.png) > **Library settings**.
 
     ![Screenshot of the Settings menu for a SharePoint document library.](../media/content-understanding/syntex-library-settings.png)
 
