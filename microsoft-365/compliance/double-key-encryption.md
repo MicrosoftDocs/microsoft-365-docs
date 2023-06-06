@@ -37,7 +37,7 @@ For more information about the default, cloud-based tenant root keys, see [Plann
 
 Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE isn't intended for all data. In general, you use Double Key Encryption to protect only a small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
 
-- Transport rules including anti-malware and spam that require visibility into the attachment
+- Mail flow rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
 - eDiscovery
 - Content search and indexing
@@ -57,15 +57,27 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-**Double Key Encryption** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Double Key Encryption comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps, File Explorer right-click, AIP Powershell, and the AIP scanner. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps, File Explorer right-click, AIP Powershell and the AIP scanner. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+### Azure Information Protection is required for DKE
 
-**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
+DKE works with sensitivity labels and requires Azure Information Protection service for encryption.
 
-**Azure Information Protection Unified Labeling Client** versions 2.14.94.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018) for DKE label support in Word, Excel and PowerPoint. [Open a support case](/azure/information-protection/information-support#to-contact-microsoft-support) for Unified Labeling client versions with DKE label support in Outlook.
+### Azure Information Protection Unified Labeling Client and Office Apps for Desktop requirements for DKE
+
+If you choose to use the labeling client and Office Apps for Desktop combination, use the following information.
+
+- Unified Labeling Client version 2.14.94.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
+
+- Microsoft Office Apps for enterprise requirements for DKE with the AIP labeling client version 2009 or later (Desktop versions of Word, Excel, PowerPoint and Outlook) on Windows.
+
+- For Outlook Desktop, [open a support case](/azure/information-protection/information-support#to-contact-microsoft-support) for Unified Labeling client versions with DKE label support in Outlook.
+
+### DKE built-in labeling requirements for DKE
+
+For information about support in Word, Excel, and PowerPoint see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
 
 ## Supported environments for storing and viewing DKE-protected content
 
