@@ -59,6 +59,6 @@ You can also delete a model from the **Models** library. However, before you del
 
     ![Screenshot of the Models page showing a selected model with the Delete options highlighted.](../media/content-understanding/select-model-delete.png)
 
-4. On the **Delete model** panel, select **Delete**.
+4. To confirm you want to delete the model, on the **Delete** screen, select **Delete**.
 
 
