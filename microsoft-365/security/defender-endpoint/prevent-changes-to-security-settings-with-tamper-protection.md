@@ -43,13 +43,13 @@ Tamper protection is part of anti-tampering capabilities that include [standard 
 
 ## What happens when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings can't be changed.
+When tamper protection is turned on, these tamper-protected settings can't be changed:
 
-- Virus and threat protection is enabled.
-- Real-time protection is turned on.
-- Behavior monitoring is turned on.
-- Antivirus protection, including IOfficeAntivirus (IOAV) is enabled.
-- Cloud protection is enabled.
+- Virus and threat protection remains enabled.
+- Real-time protection remains turned on.
+- Behavior monitoring remains turned on.
+- Antivirus protection, including IOfficeAntivirus (IOAV) remains enabled.
+- Cloud protection remains enabled.
 - Security intelligence updates occur.
 - Automatic actions are taken on detected threats.
 - Notifications are visible in the Windows Security app on Windows devices.
