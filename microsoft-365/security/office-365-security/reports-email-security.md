@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/10/2023
+ms.date: 6/5/2023
 ---
 
 # View email security reports in the Microsoft 365 Defender portal
@@ -1019,7 +1019,7 @@ The **User reported messages** report shows information about email messages tha
 
 On the **Email & collaboration reports** page at <https://security.microsoft.com/emailandcollabreport>, find **User reported messages**, and then select **View details**. Or, to go directly to the report, use <https://security.microsoft.com/reports/userSubmissionReport>.
 
-To go directly to the **Submissions** page in the Defender portal, select **Go to submissions**.
+To go directly to the **User reported** tab on the **Submissions** page in the Defender portal, select **Go to submissions**.
 
 :::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="The user-reported messages widget on the Email & collaboration reports page." lightbox="../../media/user-reported-messages-widget.png":::
 
@@ -1029,38 +1029,15 @@ The chart shows the following information:
 - **Phish**
 - **Not junk**
 
-The details table below the graph shows the same information and has the same :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**, :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis**, and :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark and notify** actions as the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
+The details table below the graph shows the same information and has the same actions that are available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>
 
-Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
+- :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**
+- :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**
+- :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**
+- :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify**
+- :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis**
 
-- **Date reported**: **Start time** and **End time**
-- **Reported by**
-- **Name**
-- **Message reported ID**
-- **Network Message ID**
-- **Teams message ID** (currently in Preview)
-- **Sender**
-- **Reported reason**
-  - **No threats**
-  - **Threats**
-  - **Spam**
-- **Reported from**: **Microsoft and **Third party**
-- **Phish simulation**: **Yes** and **No**.
-- **Converted to admin submission**: **Yes** and **No**.
-- **Message type**:
-  - **Email**
-  - **Teams message** (currently in Preview)
-
-When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
-
-To group the entries, select **Group** and select one of the following values from the drop-down list:
-
-- **None**
-- **Reason**
-- **Sender**
-- **Reported by**
-- **Rescan result**
-- **Phish simulation**
+For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft) and [Admin actions for user reported messages](submissions-admin.md#admin-actions-for-user-reported-messages).
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
@@ -1072,7 +1049,6 @@ On the **User reported messages** page, the :::image type="icon" source="../../m
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
-- [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
 - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**

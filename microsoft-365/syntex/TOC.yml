@@ -143,9 +143,12 @@
 
     - name: Content query
       href: metadata-search.md
-     
+
     - name: Annotations
       href: annotations.md
+
+    - name: Optical character recognition 
+      href: ocr.md
 
     - name: Taxonomy
       items:
