@@ -19,7 +19,8 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
-## Data Residency commitments available
+>[!NOTE]
+>Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time.  
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
@@ -65,7 +66,7 @@ Capability summary: Microsoft Viva Goals is a goal-alignment solution that conne
 
 #### Data Residency Available
 
-Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
+Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boundary-learn) for new tenants in the [European Union Data Boundary (EUDB)](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) and in the United Kingdom will be stored in data centers located in the EU. All other tenants will have their Viva Goals Customer Data stored in data centers located in the United States. Tenants aren't provided with a choice for the specific deployment region for data storage.  
 
 To be considered a tenant in the EUDB:
  
@@ -74,7 +75,7 @@ To be considered a tenant in the EUDB:
 
 #### Migration
 
-Customers who signed up for Viva Goals prior to December 5, 2022, currently have their data stored in the US data centers. We'll migrate the data for these customers to data centers located in the EU over the coming months. Customers won't have to do anything to facilitate this move.
+Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2022, have now been migrated to EU data centers.  
 
 ### Viva Insights – Advanced, Mgr, Leader
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.  The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
@@ -100,6 +101,8 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Canada
 1. Japan
 1. India
+1. United Kingdom
+1. France
 
 | Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
@@ -143,7 +146,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | BI | Burundi | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KH | Cambodia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | CM | Cameroon | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| CA | Canada | AMER<sup>3</sup>| AMER<sup>3</sup>| CAN<sup>5</sup>|
+| CA | Canada | AMER<sup>3</sup>| Canada<sup>5</sup>| CAN<sup>5</sup>|
 | CV | Cape Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KY | Cayman Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | CF | Central African Republic | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -179,7 +182,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | FM | Federated States of Micronesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | FJ | Fiji | APC<sup>2</sup>| APC<sup>2</sup>| AUS<sup>4</sup>|
 | FI | Finland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| FR | France | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| FR | France | EUR<sup>1</sup>| France<sup>9</sup>| EUR<sup>1</sup>|
 | GF | French Guiana | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | PF | French Polynesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TF | French Southern Territories | AMER<sup>3</sup>| EUR<sup>1</sup>| AMER<sup>3</sup>|
@@ -335,7 +338,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | UG | Uganda | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | UA | Ukraine | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AE | United Arab Emirates | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| GB | United Kingdom | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| GB | United Kingdom | EUR<sup>1</sup>| UK<sup>8</sup>| EUR<sup>1</sup>|
 | TZ | United Republic of Tanzania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | US | United States of America | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | UY | Uruguay | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|

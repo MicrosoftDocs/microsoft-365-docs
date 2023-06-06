@@ -49,7 +49,6 @@ You manage allow and block entries for email in the Microsoft 365 Defender Porta
 - An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
@@ -87,7 +86,7 @@ You can create block entries for domains and email addresses directly in the Ten
 Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 
 > [!NOTE]
-> Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant recipient block policy.` The entire message is blocked for all recipients of the message, even if only one recipient email address or domain is defined in a block entry.
+> Users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant recipient block policy.` The entire message is blocked for all *external* recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 

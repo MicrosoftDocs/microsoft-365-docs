@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for independent software vendor (ISV) apps in the Microsoft 365 admin center."
-ms.date: 06/08/2022
+ms.date: 05/10/2023
 ---
 
 # Manage ISV app licenses in the Microsoft 365 admin center

@@ -42,9 +42,15 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## May 2023
+
+- Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+  - Shared mailboxes require Send As or Send On Behalf permission for the user.
+  - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
+
 ## April 2023
 
-- [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation. 
+- [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation.
 - [Training only campaigns available with an expanded library](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/training-only-campaign-is-now-available-with-an-expanded/ba-p/3795237): You can now directly assign training content to your organization without needing to tie training to a phishing simulation campaign. We have also expanded our training module library to more than 70 different modules.
 
 ## March 2023
@@ -57,7 +63,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This prevents your legitimate emails from going to junk or quarantine.
 - **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
-- [Enhanced user telemetry in the simulation reports in Attack Simulation Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-new-insights-into-targeted-user/ba-p/3673105): As part of our enhanced user telemetry, administrators can now view additional details about how their targeted users are interacting with the phishing payload from phishing simulation campaigns. 
+- [Enhanced user telemetry in the simulation reports in Attack Simulation Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-new-insights-into-targeted-user/ba-p/3673105): As part of our enhanced user telemetry, administrators can now view additional details about how their targeted users are interacting with the phishing payload from phishing simulation campaigns.
 
 ## December 2022
 
@@ -66,6 +72,8 @@ For more information on what's new with other Microsoft Defender security produc
 - [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk.
 
 ## October 2022
+
+- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again.
 
 - [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):
   - With **allow expiry management** (currently in private preview), if Microsoft hasn't learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
@@ -78,18 +86,20 @@ For more information on what's new with other Microsoft Defender security produc
 - **Anti-spoofing enhancement for internal domains and senders:**
   - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they are today.
 
-**Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
+- **Automatic redirection from Office action center to unified action center:** The action center in the Email & Collaboration section **Email & Collaboration** > **Review** > **Action center** (https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
-- Redirection URLs:
-  - GCC Environment:
-    - From Office 365 Security & Compliance Center URL: protection.office.com
-    - To Microsoft 365 Defender URL: security.microsoft.com
-  - GCC-High Environment:
-    - From Office 365 Security & Compliance Center URL: scc.office365.us
-    - To Microsoft 365 Defender URL: security.microsoft.us
-  - DoD Environment:
-    - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
-    - To Microsoft 365 Defender URL: security.apps.mil
+- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
+
+  - Redirection URLs:
+    - GCC Environment:
+      - From Office 365 Security & Compliance Center URL: protection.office.com
+      - To Microsoft 365 Defender URL: security.microsoft.com
+    - GCC-High Environment:
+      - From Office 365 Security & Compliance Center URL: scc.office365.us
+      - To Microsoft 365 Defender URL: security.microsoft.us
+    - DoD Environment:
+      - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
+      - To Microsoft 365 Defender URL: security.apps.mil
 - Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
 - This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
 - This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
@@ -97,7 +107,7 @@ For more information on what's new with other Microsoft Defender security produc
 - This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** \> **Review** \> **Quarantine**.
 - Redirection is enabled by default and impacts all users of the Tenant.
 - Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** \> **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
-- **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md) and to learn about the specific Safe Links and Safe Attachment controls set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+- **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md) and to learn about the specific Safe Links and Safe Attachment controls set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 - **Bulk Complaint Level** is now available in the EmailEvents table in Advanced Hunting with numeric BCL values from 0 to 9. A higher BCL score indicates that bulk message is more likely to generate complaints and is more likely to be spam.
 
 ## July 2022

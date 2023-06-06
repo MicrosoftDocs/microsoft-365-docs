@@ -33,6 +33,56 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+
+## May-2023 Build: 101.98.64 | Release version: 30.123032.19864.0
+
+&ensp;Released: **May 3,2023**<br/>
+&ensp;Published: **May 3, 2023**<br/>
+&ensp;Build: **101.98.64**<br/>
+&ensp;Release version: **30.123032.19864.0**<br/>
+&ensp;Engine version: **1.1.20100.6**<br/>
+&ensp;Signature version: **1.385.68.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Health message improvements to capture details about auditd failures.
+	- Improvements to handle augenrules which was causing installation failure.
+	- Periodic memory cleanup in engine process.
+	- Fix for memory issue in mdatp audisp plugin.
+	- Handled missing plugin directory path during installation.
+	- When conflicting application is using blocking fanotify, with default configuration mdatp health will show unhealthy. This is now fixed.
+	- Support for ICMP traffic inspection in BM.
+	- Engine Update to 1.1.20100.6 and Signatures Ver: 1.385.68.0.
+	- Bug fixes.
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
+Caution: Some customers (<1%) experience issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+<details>
 	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
@@ -99,7 +149,7 @@ sudo systemctl disable mdatp
 &ensp;Signature version: **1.379.1299.0**<br/>
 	
 **What's new**
-- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There is no change for other customers and upgrade is optional. 
+- This new release is build over March 2023 release (101.98.05) with fix for Live response commands failing for one of our customers. There's no change for other customers and upgrade is optional. 
 	
 **Known issues**
 
@@ -272,7 +322,7 @@ sudo systemctl disable mdatp
   - V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
   - V2 engine support configuration path for AV definitions. (mdatp definition set path)
   - Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
-  - In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+  - In case crash collection is disabled by configuration, crash monitoring process won't be launched.
   - Performance fixes to optimally use system events for AV capabilities.
   - Stability improvement in case of mdatp restart and loading of epsext issues.
   - Other fixes
@@ -318,7 +368,7 @@ sudo systemctl disable mdatp
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) aren't impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 **Known issues**
 

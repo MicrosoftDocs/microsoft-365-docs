@@ -35,13 +35,13 @@ When you create or edit an eDiscovery search for a collection in eDiscovery (Pre
 
 ## Using the query builder
 
-After you've selected **Use new query builder***, you're ready to get started. To create a query and custom filtering for your search, you'll use the following controls:
+After you've selected **Use new query builder**, you're ready to get started. To create a query and custom filtering for your search, use the following controls:
 
 - **AND/OR**: These conditional logical operators allow you to select the query condition that applies to specific filters and filter subgroups. These operators allow you to use multiple filters or subgroups connected to a single filter in your query.
 - **Select a filter**: Allows you to select filters for the specific data sources and location content selected for the collection.
 - **Add filter**: Allows you to add multiple filters to your query. Is available after you've defined at least one query filter.
 - **Select an operator**: Depending on the selected filter, the operators compatible for the filter are available to select. For example, if the *Date* filter is selected, the available operators are *Before*, *After*, and *Between*. If the *Size (in bytes)* filter is selected, the available operators are *Greater than*, *Greater or equal*, *Less than*, *Less or equal*, *Between*, and *Equal*.
-- **Value**: Depending on the selected filter, the values compatible for the filter are available. Additionally, some filters support multiple values and some filters support one specific value. For example, if the *Date* filter is selected, you'll select date values. If the *Size (in bytes)* filter is selected, you'll select a value for bytes.
+- **Value**: Depending on the selected filter, the values compatible for the filter are available. Additionally, some filters support multiple values and some filters support one specific value. For example, if the *Date* filter is selected, select date values. If the *Size (in bytes)* filter is selected, select a value for bytes.
 - **Add subgroup**: After you've defined a filter, you can add a subgroup to refine the results returned by the filter. You can also add a subgroup to a subgroup for multi-layered query refinement.
 - **Remove a filter condition**: To remove an individual filter or subgroup, select the remove icon to the right of each filter line or subgroup.
 - **Clear all**: To clear the entire query of all filters and subgroups, select **Clear all**.

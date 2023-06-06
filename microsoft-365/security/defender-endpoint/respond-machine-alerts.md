@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 03/16/2023
+ms.date: 05/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -109,13 +109,21 @@ To download the package (Zip file) and investigate the events that occurred on a
 
 Alternate steps:
 
-1. Select **Action center** from the response actions section of the device page.
+1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
+    ![Image of collect investigation package](images/collect-investigation-package.png)
+   
+2.	Add comments and select **Confirm**.
 
-2. In the Action center fly-out, select **Package collection package available** to download the zip file.
+    ![Image of confirm comment](images/comments-confirm.png)
 
-   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
+3.	Select **Action center** from the response actions section of the device page.
+
+    ![Image of action center](images/action-center-selected.png)
+
+4.	Click the **Package collection package available** to download the collection package.
+
+    ![Image of download package](images/download-package.png)
 
 For Windows devices, the package contains the following folders:
 
@@ -214,6 +222,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 > - Exclusion for both macOS and Linux isolation is not supported.
+> - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
+> - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
