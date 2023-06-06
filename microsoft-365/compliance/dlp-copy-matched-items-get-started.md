@@ -77,7 +77,7 @@ You can also configure immutability policies for your blob data that protects ag
 The procedures for setting up your Azure storage account, container and blobs are documented in the Azure document set. Here are links to relevant articles you can refer to help you get started:
 1. [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)
 1. [Create a storage account](/azure/storage/common/storage-account-create)
-1. [Default to and authorize access to blobs using Azure Active Directory](azure/storage/blobs/authorize-access-azure-active-directory)
+1. [Default to and authorize access to blobs using Azure Active Directory](/azure/storage/blobs/authorize-access-azure-active-directory)
 1. [Manage blob containers using the Azure portal](/azure/storage/blobs/blob-containers-portal)
 1. [Manage block blobs with PowerShell](/azure/storage/blobs/blob-powershell)
 
