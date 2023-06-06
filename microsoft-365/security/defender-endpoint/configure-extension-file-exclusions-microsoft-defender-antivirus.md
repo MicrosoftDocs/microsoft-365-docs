@@ -1,13 +1,10 @@
 ---
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
-keywords: exclusions, files, extension, file type, folder name, file name, scans
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 11/15/2022
+ms.date: 06/06/2023
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
