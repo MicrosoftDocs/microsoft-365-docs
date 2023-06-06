@@ -72,7 +72,7 @@ As you prioritize and align the scenarios to support, consider how and where cer
 
 Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes.
 
-- **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-viva-engage-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+- **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
 
     > [!NOTE]
     > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
@@ -120,7 +120,7 @@ Members of your leadership or management team can host live events on Viva Engag
 > [!NOTE]
 > Only users with an E3 or E5 license can host live events, but users with F licenses can join them. [Learn more about who can host and join live events in Viva Engage](/viva/engage/manage-viva-engage-groups/viva-engage-live-events).
 
-[Learn more about Viva Engage](https://support.microsoft.com/office/what-is-viva-engage-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
+[Learn more about Viva Engage](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
 
 ## Boost morale with Praise
 
