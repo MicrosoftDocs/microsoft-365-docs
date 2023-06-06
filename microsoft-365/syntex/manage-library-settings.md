@@ -21,13 +21,15 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
+## Automatic classification and extraction
+
 When you apply a model to a library, Syntex automatically adds the content type and updates the default view with the labels you extracted showing as columns.
 
-Every time you then add or edit a document, Syntex processes the document again, classifying the document and extracting text from it.
+Then, every time you add or edit a document to the library, Syntex processes the document again, classifying the document and extracting text from it.
 
-By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process only new files, you need to enable the setting.
+By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process new files only and not every time a file is modified, you can enable the setting.
 
-## Process new files only
+### To process new files only
 
 Follow these steps if you want Syntex to process new files only.
 
