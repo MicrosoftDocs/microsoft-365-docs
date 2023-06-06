@@ -49,9 +49,9 @@ The following conditions relate to all queries.
 1. Queries explore and return data from the past 30 days.
 2. Results can return up to 100,000 rows.
 3. You can make up to at least 45 calls per minute per tenant. The number of calls varies per tenant based on its size.
-1. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant has reached 100% of the allocated resources until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](advanced-hunting-best-practices.md). 
-1. If a single request runs for more than three minutes, it times out and returns an error.
-1. A `429` HTTP response code indicates that you've reached the allocated CPU resources, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
+4. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant has reached 100% of the allocated resources until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](advanced-hunting-best-practices.md). 
+5. If a single request runs for more than three minutes, it times out and returns an error.
+6. A `429` HTTP response code indicates that you've reached the allocated CPU resources, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
 
 ## Permissions
