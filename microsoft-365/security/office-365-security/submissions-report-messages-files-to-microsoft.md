@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 5/31/2023
+ms.date: 6/6/2023
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
@@ -61,7 +61,7 @@ User reported messages are also available to admins in the following locations i
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md) (Defender for Office 365 Plan 2)
 - [Threat Explorer](threat-explorer-views.md) (Defender for Office 365 Plan 2)
 
-In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
 
 Admins can use Exchange mail flow rules (also known as transport rules) to receive notifications when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
 
