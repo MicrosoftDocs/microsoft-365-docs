@@ -28,7 +28,7 @@ In **Microsoft 365** (previously Office.com), while signed in with a work or sch
 
 In **Microsoft Edge**, select the **Microsoft 365** page when opening a new tab.
 
-![Select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
+![Image of the select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
