@@ -148,7 +148,7 @@ Contoso IT administrators review and complete the [step-by-step instructions](/m
 
 Communication compliance requires that the Viva Engage tenant for an organization is in Native Mode to detect potentially inappropriate text in private messages and public community conversations.
 
-Contoso IT administrators make sure they review the information in the [Overview of Viva Engage Native Mode in Microsoft 365 article](/viva-engage/configure-your-viva-engage-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva-engage/configure-your-viva-engage-network/native-mode) article.
+Contoso IT administrators make sure they review the information in the [Overview of Viva Engage Native Mode in Microsoft 365 article](/viva/engage/configure-your-viva-engage-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva/engage/configure-your-viva-engage-network/native-mode) article.
 
 ### Setting up a group for in-scope users
 

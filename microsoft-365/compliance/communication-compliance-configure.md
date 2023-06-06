@@ -221,8 +221,8 @@ In Native Mode, all Viva Engage users are in Azure Active Directory (Azure AD), 
 
 For more information about configuring Viva Engage in Native Mode, see:
 
-- [Overview of Viva Engage Native Mode in Microsoft 365](/viva-engage/configure-your-viva-engage-network/overview-native-mode)
-- [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva-engage/configure-your-viva-engage-network/native-mode)
+- [Overview of Viva Engage Native Mode in Microsoft 365](/viva/engage/configure-your-viva-engage-network/overview-native-mode)
+- [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva/engage/configure-your-viva-engage-network/native-mode)
 
 ## Step 5 (required): Create a communication compliance policy
 
