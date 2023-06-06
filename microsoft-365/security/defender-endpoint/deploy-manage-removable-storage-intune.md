@@ -108,6 +108,8 @@ Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **
        - **Custom XML** as selected XML file
 
          Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's a [group example XML file for any removable storage and CD-ROM and Windows portable devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
+         
+To get the GroupId, Sign in to the **Microsoft Intune admin center** > Select Groups > Copy the Object ID.
 
        :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
 
