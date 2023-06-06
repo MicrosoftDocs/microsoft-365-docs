@@ -181,7 +181,7 @@ The methods supported to prevent copying chat:
 - Share to Outlook
 - Copy link
 
-Copying using developer tools or third-party apps, and screen captures won't be prevented.
+Copying using developer tools, third-party apps, or using screen captures won't be prevented.
 
 ## How to configure and apply a label for channel meetings
 
