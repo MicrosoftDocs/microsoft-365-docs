@@ -20,7 +20,7 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 *This article is currently in development.*
 <!---
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 --->
 
 <!---
@@ -34,3 +34,16 @@ library settings  syntex settings (reprocess on edit; off by default)
 
 From a SharePoint document libary, select **Settings** > **Library settings**.
 --->
+When you apply a model to a library, Syntex adds the associated content type, the columns, and the view.
+
+By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process oly new files, follow these steps.
+
+## To specify processing new files only
+
+1. From a SharePoint document libary, select **Settings** (../media/content-understanding/settings-icon.png)> **Library settings**.
+
+    ![Screenshot of the Settings menu for a SharePoint document library.](../media/content-understanding/syntex-library-settings.png)
+
+2. On the **Library settings** panel, in the **Automatic classification and extraction** section, select **New files only**, and then select **Save**.
+
+    ![Screenshot of the Library settings panel with the Automatic classification and extraction option highlighted.](../media/content-understanding/automatic-classification-setting.png)
