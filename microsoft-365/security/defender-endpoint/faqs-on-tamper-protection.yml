@@ -110,7 +110,7 @@ sections:
       - question: |
           If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
         answer: |
-          A tamper protection policy defined in Intune can override tamper protection that is turned on in the Microsoft 365 Defender portal. Policies defined in Intune take priority. Affected devices must be part of a device group that is included in the Intune policy.
+          A tamper protection policy defined in Intune cannot override tamper protection that is turned on in the Microsoft 365 Defender portal.
 
       - question: |
           How do I deploy DisableLocalAdminMerge?
