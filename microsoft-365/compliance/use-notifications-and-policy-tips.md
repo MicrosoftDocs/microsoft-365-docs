@@ -91,7 +91,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
  
 15. Select whether you want to turn the policy on right away or test it out first. \> **Next**.
  
-16. Review your policy details, and edit as necessary /> **Submit**.
+16. Review your policy details, and edit as necessary \> **Submit**.
 
 > [!NOTE]
 > Notification emails are sent unprotected.
