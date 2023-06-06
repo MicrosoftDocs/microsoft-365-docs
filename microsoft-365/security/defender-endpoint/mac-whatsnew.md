@@ -51,6 +51,34 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 </br>
 
+### June-2023 (Build: 101.98.84  | Release version: 20.123042.19884.0)
+
+| Build:             | **101.98.84**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123042.19884.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.391.221.0**      |
+
+##### What's new
+
+- System Extensions health command `mdatp health --details system_extensions`
+- Bug and performance fixes
+
+### May-2023 (Build: 101.98.71  | Release version: 20.123032.19871.0)
+
+| Build:             | **101.98.71**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123032.19871.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.389.1872.0**      |
+
+##### What's new
+
+- Tamper Protection health command `mdatp health --details tamper_protection`
+- Tamper Protection - [MDM processes exclusions](tamperprotection-macos.md#exclusions)
+- Fix: Remove Codesigned Artifact from App Bundle
+- Bug and performance fixes
+
 ### May-2023 (Build: 101.98.70  | Release version: 20.123022.19870.0)
 
 | Build:             | **101.98.70**         |

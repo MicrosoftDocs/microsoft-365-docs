@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 05/24/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +25,9 @@ description: "Configure settings in your Salesforce accounts in order to activat
 
 Follow the instructions on this page to enable the connection between your Salesforce account and the Compliance Manager connector for Salesforce.
 
-This process involves obtaining a token for a given Salesforce account. Therefore, if you activate multiple connectors for multiple Salesforce accounts, you'll need to repeat this process for each account in order to get the token
+This process involves obtaining a token for a given Salesforce account. Therefore, if you activate multiple connectors for multiple Salesforce accounts, you'll need to repeat this process for each account in order to get the token.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Setup steps
 

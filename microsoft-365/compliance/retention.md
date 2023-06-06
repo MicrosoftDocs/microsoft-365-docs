@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/24/2023
+ms.date: 06/05/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -231,7 +231,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 For retention labels that mark items as a record or a regulatory record:
 
-- These retention labels are never automatically changed during their configured retention period.
+- These retention labels are never automatically changed during their configured retention period, even if the existing label was applied as a default label.
 
 - Only admins for the container can manually change or remove retention labels that mark items as a record, but can't manually change or remove retention labels that mark items as a regulatory record. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
