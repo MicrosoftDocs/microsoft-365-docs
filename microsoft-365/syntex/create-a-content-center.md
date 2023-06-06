@@ -38,7 +38,7 @@ Additionally, if you want to try Syntex, you can create a content center using t
 > [!NOTE]
 > In a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location. You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment. 
 
-## To create a content center
+## Create a content center
 
 A SharePoint admin can create a content center site like they would [create any other SharePoint site](/sharepoint/create-site-collection) through the admin center site provisioning panel.
 
