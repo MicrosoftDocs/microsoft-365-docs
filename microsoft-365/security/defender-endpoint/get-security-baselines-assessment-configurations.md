@@ -101,7 +101,7 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
             "benchmarkName": "CIS",
             "benchmarkVersion": "1.4.0-windows_server_2016",
             "name": "(L1) Ensure 'Windows Firewall: Public: Logging: Log dropped packets' is set to 'Yes'",
-            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">  Use this option to log when Windows Firewall with Advanced Security discards an inbound packet for any reason. The log records why and when the packet was dropped. Look for entries with the word             <span class=\"inline_block\">DROP</span>   in the action column of the log.          </p>",
+            "description": "Use this option to log when Windows Firewall with Advanced Security discards an inbound packet for any reason. The log records why and when the packet was dropped. Look for entries with the word in the action column of the log",
             "category": "Public Profile",
             "complianceLevels": [
                 "Level 1 - Domain Controller",
@@ -110,8 +110,8 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
                 "Level 2 - Member Server"
             ],
             "cce": "CCE-35116-3",
-            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">If events are not recorded it may be difficult or impossible to determine the root cause of system problems or the unauthorized activities of malicious users.</p>",
-            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">    <p>      <p>  To establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Yes</span>  :              </p>      <code class=\"code_block\">Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Windows Firewall with Advanced Security\\Windows Firewall with Advanced Security\\Windows Firewall Properties\\Public Profile\\Logging Customize\\Log dropped packets  </code>      <p class=\"bold\">Impact:</p>      <p>        <p>Information about dropped packets will be recorded in the firewall log file.</p>      </p>    </p>  </div>",
+            "rationale": ">If events are not recorded it may be difficult or impossible to determine the root cause of system problems or the unauthorized activities of malicious users.",
+            "remediation": "To establish the recommended configuration via GP, set the following UI path Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Windows Firewall with Advanced Security\\Windows Firewall with Advanced Security\\Windows Firewall Properties\\Public Profile\\Logging Customize\\Log dropped packets Impact: Information about dropped packets will be recorded in the firewall log file.",
             "recommendedValue": [
                 "Equals '1'"
             ],
