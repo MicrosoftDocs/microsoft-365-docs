@@ -35,7 +35,7 @@ ms.date: 02/08/2023
 - Microsoft 365 Defender
 
 > [!WARNING]
-> The Microsoft Defender Endpoint advanced hunting API is being deprecated soon. To avoid any disruption in threat hunting activities today, use the **[Microsoft Graph security API](/graph/api/resources/security-api-overview)** instead. See **[Advanced hunting using Microsoft Graph security API](/graph/api/resources/security-api-overview#advanced-hunting)**
+> The Microsoft 365 Defender advanced hunting API is being deprecated soon. To avoid any disruption in threat hunting activities today, use the **[Microsoft Graph security API](/graph/api/resources/security-api-overview)** instead. See **[Advanced hunting using Microsoft Graph security API](/graph/api/resources/security-api-overview#advanced-hunting)**
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
