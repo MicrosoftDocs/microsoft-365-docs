@@ -13,6 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to manage settings on a SharePoint document library with Microsoft Syntex.
 ---
 
@@ -26,9 +27,9 @@ Syntex automatically classifies new and modified documents and also extracts tex
 
 Use the classify and extract option to update existing files when their content changes, even when new files only is selected.
 
-By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process only new files, follow these steps.
-
 ## Process new files only
+
+By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process only new files, follow these steps.
 
 1. From a SharePoint document library, select **Settings** ![Image showing the Settings menu icon](../media/content-understanding/settings-icon.png)> **Library settings**.
 
