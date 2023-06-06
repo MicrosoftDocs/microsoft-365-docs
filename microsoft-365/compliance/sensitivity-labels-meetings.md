@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 05/11/2023
+ms.date: 05/31/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -75,7 +75,7 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 > [!IMPORTANT]
 > If meeting participants or organizers don't use a Teams client that meets these requirements, the configured label meeting options can't be enforced for these users.
 
-Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) can't be used to protect calendar items, Teams meetings, and chat.
+Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) or [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) can't be used to protect calendar items, Teams meetings, and chat.
 
 ## Limitations
 
