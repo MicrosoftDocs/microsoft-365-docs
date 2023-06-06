@@ -43,4 +43,4 @@ Follow these steps if you want Syntex to process new files only.
 
 2. Select **Save**. Syntex will now automatically process new files only.
 
-Even with this setting selected to only process new files, you can still select files and manually process the files using the **Classify and extract** option in the document library.
+   Even with this setting selected, you can still select updated files and manually process them using the **Classify and extract** option in the document library.
