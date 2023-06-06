@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.date: 05/20/2023
+ms.date: 06/06/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -37,7 +37,7 @@ This is the easiest method to use to delete a model. It deletes the model and au
 
     ![Screenshot of the Models settings panel showing Delete model option.](../media/content-understanding/model-settings-delete-model.png)
 
-3. To confirm you want to delete the model, on the **Delete model** screen, select **Yes, delete this model**, and then select **Delete**.
+3. To confirm you want to delete the model, on the **Delete** screen, select **Delete**.
 
     ![Screenshot of the Delete model confirmation page.](../media/content-understanding/delete-model-confirmation.png)
 
@@ -61,6 +61,4 @@ You can also delete a model from the **Models** library. However, before you del
 
 4. On the **Delete model** panel, select **Delete**.
 
-## See also
 
-[Rename a model](rename-a-model.md)
