@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 05/24/2023
+ms.date: 06/06/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -147,9 +147,12 @@ Enabling the Skype for Business integration gives you the ability to communicate
 
 ## Office 365 Threat Intelligence connection
 
-This feature is only available if you've an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
+> [!IMPORTANT]
+> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft 365 Defender, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
 
-When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+This feature is only available if you have an active subscription for Office 365 E5 or the Threat Intelligence add-on. For more information, see the [Office 365 E5 product page](https://www.microsoft.com/en-us/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab).
+
+This feature enables you to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.

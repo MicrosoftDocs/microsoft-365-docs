@@ -75,7 +75,7 @@ You have the following options to create block entries for files:
 
 ### Use the Microsoft 365 Defender portal to create block entries for files on the Submissions page
 
-When you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
+When you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to submit files as **Should have been blocked (False negative)**, you can select **Block this file** to add a block entry on the **Files** tab in the Tenant Allow/Block List.
 
 For instructions, see [Submit questionable email attachments to Microsoft](submissions-admin.md#report-questionable-email-attachments-to-microsoft).
 
@@ -122,14 +122,14 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page
 
-You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the Submissions page at <https://security.microsoft.com/reportsubmission> to submit the message attachment as a false positive, which also adds an allow entry on the **Files** tab in the Tenant Allow/Block List.
+You can't create allow entries for files directly in the Tenant Allow/Block List. Instead, you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to submit the message attachment as a false positive, which also adds an allow entry on the **Files** tab in the Tenant Allow/Block List.
 
 For instructions, see [Submit good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft).
 
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the creation of allow entries from the Submissions page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a file in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the file.
+> Microsoft manages the creation of allow entries from the **Submissions** page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a file in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the file.
 >
 > When that entity is encountered again, all filters associated with that entity are overridden.
 >
