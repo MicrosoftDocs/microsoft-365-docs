@@ -66,16 +66,15 @@ The causes for the license-not-found error message could be either of the follow
 
 1. Depending on the deployment management tool used, follow the tool-specific instructions to onboard the package (register the license) as described in the following table:
 
+    |Management  |License deployment instructions (Onboarding instructions)  |
+    |---------|---------|
+    |Intune     |    [Onboarding blob](mac-install-with-intune.md)      |
+    |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md)     |
+    |Other MDM     |     [License settings](mac-install-with-other-mdm.md)    |
+    |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md); and [Client configuration](mac-install-manually.md#client-configuration)     |
 
-|Management  |License deployment instructions (Onboarding instructions)  |
-|---------|---------|
-|Intune     |    [Onboarding blob](mac-install-with-intune.md)      |
-|JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md)     |
-|Other MDM     |     [License settings](mac-install-with-other-mdm.md)    |
-|Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md); and [Client configuration](mac-install-manually.md#client-configuration)     |
-
-> [!NOTE]
-> If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
+    > [!NOTE]
+    > If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
 
 2. For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to update the agent.
 
