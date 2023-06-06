@@ -111,7 +111,7 @@ Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps
 
 **Specific to Teams**:
 
-- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) aren't supported and display the original language only.
+- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) aren't supported for the [new Teams client](https://support.microsoft.com/office/try-the-new-microsoft-teams-2d4a0c96-fa52-43f8-a006-4bfbc62cf6c5), and display the original language only. This limitation doesn't apply for the classic Teams client.
 
 - For iOS and Android, the label isn't displayed in the calendar but is displayed when the user joins the meeting.
 
