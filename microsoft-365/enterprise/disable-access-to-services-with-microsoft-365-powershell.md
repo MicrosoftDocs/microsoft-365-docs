@@ -102,7 +102,7 @@ User      Success            57ff2da0-773e-42df-b2af-ffb7a2317929 TEAMS1
 User      Success            21b439ba-a0ca-424f-a6cc-52f954a5b111 WIN10_PRO_ENT_SUB
 User      Success            eec0eb4f-6444-4f95-aba0-50c24d67f998 AAD_PREMIUM_P2
 User      Success            c1ec4a95-1f05-45b3-a911-aa3fa01094f5 INTUNE_A
-User      Success            7547a3fe-08ee-4ccb-b430-5077c5041653 VIVAENGAGE_ENTERPRISE
+User      Success            7547a3fe-08ee-4ccb-b430-5077c5041653 YAMMER_ENTERPRISE
 User      Success            a23b959c-7ce8-4e57-9140-b90eb88a9e97 SWAY
 User      Success            e95bec33-7c88-4a70-8e19-b10bd9d0c014 SHAREPOINTWAC
 User      Success            5dbe027f-2339-4123-9542-606e4d348a72 SHAREPOINTENTERPRISE

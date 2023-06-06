@@ -255,7 +255,7 @@ You have to use [PSPing](/sysinternals/downloads/psping) or another tool that do
     
   - psping outlook.office365.com:443
     
-  - psping www.vivaengage.com:443
+  - psping www.yammer.com:443
     
     ![The PSPing command going to microsoft-my.sharepoint.com port 443.](../media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
