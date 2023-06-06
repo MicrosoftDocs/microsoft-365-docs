@@ -22,6 +22,10 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 When you apply a model to a library, Syntex adds the associated content type, the columns, and the view.
 
+Syntex automatically classifies new and modified documents and also extracts text from them.
+
+Use the classify and extract option to update existing files when their content changes, even when new files only is selected.
+
 By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process only new files, follow these steps.
 
 ## Process new files only
