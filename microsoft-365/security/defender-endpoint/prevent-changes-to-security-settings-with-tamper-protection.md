@@ -3,10 +3,9 @@ title: Protect security settings with tamper protection
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
-keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 05/24/2023
+ms.date: 06/06/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
