@@ -21,11 +21,11 @@ description: Learn how to manage settings on a SharePoint document library with 
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-In Microsoft Syntex, library settings in a SharePoint document library let you see information about the model and also let you configure specific Syntex settings for the library.
+In Microsoft Syntex, library settings in a SharePoint document library lets you see information about the model and also lets you configure specific Syntex settings for the library.
 
 To access library settings from a SharePoint document library, select **Settings** ![Image showing the Settings menu icon](../media/content-understanding/settings-icon.png) > **Library settings**.
 
-    ![Screenshot of the Settings menu for a SharePoint document library.](../media/content-understanding/syntex-library-settings.png)
+![Screenshot of the Settings menu for a SharePoint document library.](../media/content-understanding/syntex-library-settings.png)
 
 ## Automatic classification and extraction
 
