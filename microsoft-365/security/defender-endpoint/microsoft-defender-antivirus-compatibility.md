@@ -89,8 +89,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 | Microsoft Defender Antivirus | No | On | Passive mode (automatically) |
 | A non-Microsoft antivirus/antimalware solution | Yes | N/A <br/>Smart App Control is a consumer-only product | Passive mode (automatically) |
 
-
-### Windows Server and passive mode
+## Windows Server and passive mode
 
 On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus doesn't enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, set Microsoft Defender Antivirus to passive mode to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using a registry key as follows:
 
@@ -135,29 +134,31 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
-| [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]</sup> | No | No | 
+| [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See [note 1 (below)](#notes-about-protection-states) | No | No | 
 | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
 | [Network protection](network-protection.md)  | Yes | No | No | No | 
 | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No | No | 
-| [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[5](#fn5)]</sup> | No | Yes | 
-| [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[6](#fn6)]</sup> | No | Yes | 
-| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <sup>[[7](#fn7)]</sup> | No | Yes <sup>[[7](#fn7)]</sup> | 
+| [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>See [note 2 (below)](#notes-about-protection-states) | No | Yes | 
+| [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See [note 3 (below)](#notes-about-protection-states) | No | Yes | 
+| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>See [note 4 (below)](#notes-about-protection-states) | No | Yes <sup>[[7](#fn7)]</sup> | 
 | [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
 | [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
-| [Web content filtering](web-content-filtering.md) | Yes | See note <sup>[[8](#fn8)]</sup> | No | No |
+| [Web content filtering](web-content-filtering.md) | Yes | See [note 5 (below)](#notes-about-protection-states) | No | No |
 | [Device control](device-control-report.md) | Yes | Yes | No | No |
 | [PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Yes | No | No | No |
 
-(<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
+### Notes about protection states
 
-(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. Note that scan tasks that are enabled in Windows Task Scheduler will continue to run according to their schedule. If you have such scheduled tasks, you can remove these if preferred.
+1. In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
 
-(<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
+2. When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. Note that scan tasks that are enabled in Windows Task Scheduler will continue to run according to their schedule. If you have such scheduled tasks, you can remove these if preferred.
 
-(<a id="fn7">7</a>) The security intelligence update cadence is controlled by Windows Update settings only. Defender-specific update schedulers (daily/weekly at specific time, interval-based) settings only work when Microsoft Defender Antivirus is in active mode. They're ignored in passive mode.
+3. When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
-(<a id="fn8">8</a>) When Microsoft Defender Antivirus is in passive mode, web content filtering only works with the Microsoft Edge browser. 
+4. The security intelligence update cadence is controlled by Windows Update settings only. Defender-specific update schedulers (daily/weekly at specific time, interval-based) settings only work when Microsoft Defender Antivirus is in active mode. They're ignored in passive mode.
+
+5. When Microsoft Defender Antivirus is in passive mode, web content filtering only works with the Microsoft Edge browser. 
 
 > [!IMPORTANT]
 > - [Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in either active or passive mode.
