@@ -18,7 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 05/04/2023
+ms.date: 06/06/2023
 ---
 
 # Protecting Dev Drive using performance mode
@@ -79,20 +79,7 @@ For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/
 
 ## Manage performance mode
 
-Performance mode is enabled by default when a new Dev Drive is created. To control of the balance between performance and security when protecting a Dev Drive, administrators can choose between these options:
-
-- Real-time protection
-- Performance mode (default)
-- No antivirus filter attached to Dev Drive. In this scenario, Dev Drive isn't protected by Real-time protection or performance mode.
-
-A Dev Drive is automatically designated as trusted, providing the best possible performance by default. A trusted Dev Drive means that the developer using the volume has high confidence in the security of the content stored there.
-
-Similar to when an administrator chooses to add an exclusion to a Microsoft Defender Antivirus configuration, it's the administrator's responsibility to assess the performance benefits and security risks when using performance mode. As mentioned, security runs in Real-time protection mode when a Dev Drive is untrusted. 
-
-> [!NOTE]
-> Performance mode can only run on a “trusted” Dev Drive.
-
-For more information on trusted Dev Drive and to confirm whether a designated Dev Drive is trusted, see: [Set up a Dev Drive on Windows 11](/windows/dev-drive).
+Performance mode can only run on a *trusted* Dev Drive and is enabled by default when a new Dev Drive is created. For more information, see [Understanding security risks and trust in relation to Dev Drive](/windows/dev-drive#understanding-security-risks-and-trust-in-relation-to-dev-drive).
 
 ## See also
 

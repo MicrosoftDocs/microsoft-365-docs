@@ -78,12 +78,10 @@ We provide you with supporting data on each of the Set Up, Meet up and Follow Up
 
 This represents the phase that involves scheduling and sharing the details of the meeting and participants joining the meeting.
 
-:::image type="content" source="../../media/meetings-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score":::
+:::image type="content" source="../../media/adoption-score-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score":::
 
 - **Communication shared ahead of time**: This represents the score for Microsoft Teams meetings that had a Teams conversation meeting chat started before conducting the meeting. For this to be tracked, a user must go to the meeting chat with the participants and send a message to the participants, before the scheduled meeting time.
-- **Scheduled with at least 24 hours notice**: This represents the score for Microsoft Teams meetings that were scheduled at least 24 hours earlier than their start time.
 - **Invitation accepted at a high rate (>50%)**: This represents the score for Microsoft Teams meetings that had more than 50% of invited participants accept the meeting invite.
-- **Joined within 5 minutes of start time (>50%)**: This represents the score for Microsoft Teams meetings that had more than 50% of invited participants join the meeting within 5 minutes of the start time.
 
 ## Meet up
 
