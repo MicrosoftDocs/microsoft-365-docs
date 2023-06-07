@@ -12,6 +12,7 @@ ID | Category | ER | Addresses | Ports
 8 | Default<BR>Required | No | `*.outlook.com, autodiscover.<tenant>.onmicrosoft.com` | **TCP:** 443, 80
 9 | Allow<BR>Required | Yes | `*.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 52.238.78.88/32, 104.47.0.0/17, 2a01:111:f400::/48, 2a01:111:f403::/48` | **TCP:** 443
 10 | Allow<BR>Required | Yes | `*.mail.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 104.47.0.0/17, 2a01:111:f400::/48, 2a01:111:f403::/48` | **TCP:** 25
+  
 
 ## SharePoint Online and OneDrive for Business
 
@@ -42,6 +43,12 @@ ID | Category | ER | Addresses | Ports
 127 | Default<BR>Required | No | `*.skype.com` | **TCP:** 443, 80
 167 | Default<BR>Required | No | `*.ecdn.microsoft.com` | **TCP:** 443
 180 | Default<BR>Required | No | `compass-ssl.microsoft.com` | **TCP:** 443
+  
+> [!NOTE]
+> For  Cross-Cloud Anonymous Join to work properly, you must add these endpoints for the cloud of the target meeting to the safe senders list:
+> - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+> - [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
+
 
 ## Microsoft 365 Common and Office Online
 

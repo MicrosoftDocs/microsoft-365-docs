@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/31/2023
+ms.date: 06/06/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## June 2023
+
+### Sensitivity labels
+
+- **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
 
