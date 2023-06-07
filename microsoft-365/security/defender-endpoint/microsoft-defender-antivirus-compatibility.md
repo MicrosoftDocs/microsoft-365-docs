@@ -141,7 +141,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No | No | 
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>See [note 2 (below)](#notes-about-protection-states) | No | Yes | 
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See [note 3 (below)](#notes-about-protection-states) | No | Yes | 
-| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>See [note 4 (below)](#notes-about-protection-states) | No | Yes <sup>[[7](#fn7)]</sup> | 
+| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>See [note 4 (below)](#notes-about-protection-states) | No | Yes<br/>See [note 4 (below)](#notes-about-protection-states) | 
 | [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
 | [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
 | [Web content filtering](web-content-filtering.md) | Yes | See [note 5 (below)](#notes-about-protection-states) | No | No |
