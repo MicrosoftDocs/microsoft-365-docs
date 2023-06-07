@@ -331,7 +331,7 @@ You can upload the CSV data using Power Automate templates and define triggers. 
 
 Complete the following steps to automatically upload data when new files become available on OneDrive for Business:
 
-1.	Download the *ImportHRDataforIRM.zip* package from the [GitHub site](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/ImportInsiderRiskDetections.zip).
+1.	Download the *ImportHRDataforIRM.zip* package from the [GitHub site](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/ImportHRDataforIRM.zip).
 2. In [Power Automate](https://make.preview.powerautomate.com), go to **My flows**.
 3.	Select **Import**, and then upload the *ImportHRDataforIRM.zip* package.
 4.	After the package is uploaded, update the content (name and OneDrive for Business connection), and then select **Import**.

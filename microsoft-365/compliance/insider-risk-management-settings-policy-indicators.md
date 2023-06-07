@@ -56,7 +56,14 @@ Policy indicators are organized into two tabs:
 
 ### Built-in indicators
 
-The following indicators are available "out-of-the-box" in insider risk management:
+Insider risk management includes many "out-of-the-box" indicators which are described below. To define the insider risk policy indicators that are enabled in all insider risk policies:
+
+1. Select the **Settings** button, and then select **Policy indicators**.
+2. Select one or more policy indicators. 
+   The indicators selected on the **Policy indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
+
+   > [!NOTE]
+   > It may take several hours for new manually added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab in the details pane.
 
 #### Office indicators
 
@@ -109,15 +116,6 @@ These include raising the risk score for activity for the following reasons:
      > When you enable the potential high impact user risk score booster, you're agreeing to share Azure AD data with the compliance portal. If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, this detection may be less accurate. If a user is detected as both a member of a priority user group and also a potential high-impact user, their risk score will only be boosted once. 
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
-
-## Define the insider risk policy indicators that are enabled in all insider risk policies
-
-1. Select the **Settings** button, and then select **Policy indicators**.
-2. Select one or more policy indicators. 
-   The indicators selected on the **Policy indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
-
-   > [!NOTE]
-   > It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab in the details pane.
 
 ### Custom indicators
 
