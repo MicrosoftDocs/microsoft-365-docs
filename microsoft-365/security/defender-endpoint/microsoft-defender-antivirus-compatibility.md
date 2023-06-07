@@ -30,7 +30,7 @@ search.appverid: met150
 
 Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
 
-- Windows 10 or newer
+- Windows 10 or 11
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, version 1803, or newer
