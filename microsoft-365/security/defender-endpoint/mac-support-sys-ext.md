@@ -513,4 +513,4 @@ You'll return to the following screen:
 
 :::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
 
-5. Select **Action needed**. 
+5. Select **Action needed**.
