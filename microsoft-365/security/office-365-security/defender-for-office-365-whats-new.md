@@ -116,7 +116,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## June 2022
 
-- [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-on-the-submissions-page): Create allowed spoofed sender entries using the Tenant Allow/Block List.
+- [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
 - [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft 365 Defender.
 
@@ -166,7 +166,7 @@ For more information on what's new with other Microsoft Defender security produc
 - You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
   - [Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page)
   - [Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page](tenant-allow-block-list-files-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-on-the-submissions-page)
-  - [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page)
+  - [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft)
 
 ## July 2021
 

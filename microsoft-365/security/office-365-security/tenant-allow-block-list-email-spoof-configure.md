@@ -519,7 +519,7 @@ Submitting a message that was incorrectly blocked as impersonation on the **Subm
 
 Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
-The instructions to submit the message are identical to the steps in [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions page](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
+For submission instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Currently, Graph Impersonation isn't taken care of from here.
