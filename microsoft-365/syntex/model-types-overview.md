@@ -131,8 +131,3 @@ The prebuilt receipt processing model analyzes and extracts key information from
 
 For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
-## See also
-
-[Compare custom models in Microsoft Syntex](./difference-between-document-understanding-and-form-processing-model.md)
-
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
