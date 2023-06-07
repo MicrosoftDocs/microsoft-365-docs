@@ -79,14 +79,21 @@ The organization's name is used throughout Microsoft 365, including but not limi
   * In Viva Engage, the left navigation uses the organization name as the name of the home Engage network.  
 * OneDrive Sync
   * The organization name is shown in File Explorer on Windows and Finder on Mac. 
-    * On Windows, in File Explorer, in the navigation pane, the blue cloud icon for OneDrive for your M365 tenant is labeled "OneDrive - \<tenant name\>" (for example, "OneDrive - Contoso").  
+    * On Windows, in File Explorer, in the navigation pane, the blue cloud icon for OneDrive for your M365 tenant is labeled "OneDrive - \<organization name\>" (for example, "OneDrive - Contoso").  
     * When a user syncs a SharePoint library, it shows up in File Explorer under a node in the left navigation that bears a blue office building icon and the tenant name.
-  * The organization name is used in the file paths
+  * The organization name is used in file paths:
+    * The file path for the root of the OneDrive for that user defaults to C:\users\<username>\OneDrive - \<Tenant Name>\
+    * The file path for SharePoint libraries that get synced is  C:\users\<username>\OneDrive - \<Tenant Name>\
+    * The file path for the Documents Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Documents
+    * The file path for the Pictures Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Pictures
+    * The file path for the Desktop Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Desktop
   * The organization name is shown in:
     * the OneDrive activity center
     * The tooltip of the OneDrive cloud icon
     * the OneDrive settings window, on the Accounts tab. 
-*  Currently, updating the organization name does not update it for configured clients. <br/> MS Teams: Organization Switcher in Teams displays the organization Name 
+  *  Currently, updating the organization name does not update it for configured clients. 
+*  MS Teams: Organization Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant. 
+*  In the Windows desktop applications for Word, Excel, and PowerPoint, the File Save and File Open display the organization name.   
 
 ## Change your alternate email address
 
