@@ -237,7 +237,7 @@ The following sections describe what to expect when Microsoft Defender Antivirus
 
 ### Active mode
 
-In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as in the Microsoft Intune admin center or the Microsoft Defender Antivirus app on the endpoint).  
+In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as in the Microsoft Intune admin center or the Microsoft Defender Antivirus app on the endpoint).  
 
 ### Passive mode or EDR Block mode
 
