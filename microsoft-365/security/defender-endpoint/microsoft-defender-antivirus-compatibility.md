@@ -134,17 +134,17 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
-| [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See [note 1](#notes-about-protection-states) | No | No | 
+| [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | [See note 1](#notes-about-protection-states) | No | No | 
 | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
 | [Network protection](network-protection.md)  | Yes | No | No | No | 
 | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
 | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No | No | 
-| [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>See [note 2](#notes-about-protection-states) | No | Yes | 
-| [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See [note 3](#notes-about-protection-states) | No | Yes | 
-| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>See [note 4](#notes-about-protection-states) | No | Yes<br/>See [note 4](#notes-about-protection-states) | 
+| [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>[See note 2](#notes-about-protection-states) | No | Yes | 
+| [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | [See note 3](#notes-about-protection-states) | No | Yes | 
+| [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>[See note 4](#notes-about-protection-states) | No | Yes<br/>[See note 4](#notes-about-protection-states) | 
 | [Data Loss Prevention](../../compliance/endpoint-dlp-learn-about.md) | Yes | Yes | No | No |
 | [Controlled folder access](controlled-folders.md) | Yes |No | No | No |
-| [Web content filtering](web-content-filtering.md) | Yes | See [note 5](#notes-about-protection-states) | No | No |
+| [Web content filtering](web-content-filtering.md) | Yes | [See note 5](#notes-about-protection-states) | No | No |
 | [Device control](device-control-report.md) | Yes | Yes | No | No |
 | [PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Yes | No | No | No |
 
