@@ -19,18 +19,15 @@ description: Learn about the capabilities and features in Microsoft Syntex.
 
 # Overview of Microsoft Syntex
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
+
+</br>
+
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries.
 
-:::row:::
-   :::column span="":::      
-      With Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
-
-      Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
-   :::column-end:::
-   :::column span="":::
-      ![Image of computers running Syntex.](../media/content-understanding/syntex-devices-image.png)
-   :::column-end:::
-:::row-end:::
+With Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization. Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 

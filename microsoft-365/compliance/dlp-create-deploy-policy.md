@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2023
+ms.date: 06/07/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -246,7 +246,7 @@ Scenario recommendation: Restrict users from uploading sensitive data to unsanct
 
 -->
 
-### Scenario 2 Show policy tip as oversharing popup (preview)
+### Scenario 2 Show policy tip as oversharing popup
 
 Oversharing popup is an E5 feature.
 > [!IMPORTANT]
