@@ -46,6 +46,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: Now rolling out, Outlook for Android and Outlook for iOS support a setting for mandatory labeling that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
+### Data loss prevention
+
+- **General availability (GA)**: Oversharing Popup for Outlook Win 32. [Scenario 2 Show policy tip as oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup) and [Business justification X-Header](dlp-policy-reference.md#business-justification-x-header).
+
 ## May 2023
 
 ### Compliance Manager
