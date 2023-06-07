@@ -21,8 +21,8 @@ ms.service: microsoft-365-security
 adobe-target: true
 ms.date: 6/7/2023
 appliesto:
-  - ✅ [Exchange Online Protection](eop-about.md)
-  - ✅ [Microsoft Defender for Office 365 plan 1 and plan 2](microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Microsoft Defender for Office 365 security product overview
