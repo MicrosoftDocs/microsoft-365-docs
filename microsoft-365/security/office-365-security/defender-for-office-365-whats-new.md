@@ -118,11 +118,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-on-the-submissions-page): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
-- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft 365 Defender.
 
-- [View converted admin submission from user reported messages](submissions-admin.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+- [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
-- [View associated alert for user and admin submissions](submissions-admin.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
+- View the associated alerts for [user reported messages](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365-plan-2) and [admin submissions](submissions-admin.md#actions-for-admin-submissions-in-defender-for-office-365-plan-2): View the corresponding alert for each user reported phish message and admin email submission.
 
 - [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
