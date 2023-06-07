@@ -92,8 +92,13 @@ The organization's name is used throughout Microsoft 365, including but not limi
     * The tooltip of the OneDrive cloud icon
     * the OneDrive settings window, on the Accounts tab. 
   *  Currently, updating the organization name does not update it for configured clients. 
-*  MS Teams: Organization Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant. 
-*  In the Windows desktop applications for Word, Excel, and PowerPoint, the File Save and File Open display the organization name.   
+*  Microsoft Teams: Organization Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant. 
+*  OneNote:  End users may have a notebook named in this pattern: \<first name>@\<organization name>.
+*  Windows desktop applications for Word, Excel, and PowerPoint, the File Save and File Open display the organization name.  
+*  Mobile apps such as Word, Excel, PowerPoint, OneNote, Outlook, and the M365 App may display the organization name on various screens, especially ones that let you pick files from M365 services such as SharePoint and OneDrive. 
+
+Note that only Microsoft Teams will automatically detect the change to the organization name.  None of the other applications pick up the name change automatically.  Mobile apps may require you to sign out and sign back in or reinstall them before they will display the new name. 
+There is a script that can help you force Office desktop applications to pick up the new name, but not without causing the user to sign back in again.
 
 ## Change your alternate email address
 
