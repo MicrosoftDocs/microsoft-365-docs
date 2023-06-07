@@ -78,6 +78,7 @@ Whether Microsoft Defender Antivirus runs in active mode, passive mode, or is di
 - Which version of Windows is installed on an endpoint
 - Whether Microsoft Defender Antivirus is the primary antivirus/antimalware solution on the endpoint
 - Whether the endpoint is onboarded to Defender for Endpoint
+- Whether Smart App Control is turned on or is in evaluation mode. (See [What is Smart App Control](https://support.microsoft.com/en-us/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003)?)
 
 The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. 
 
