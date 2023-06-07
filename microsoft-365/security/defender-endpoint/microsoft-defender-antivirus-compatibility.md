@@ -1,20 +1,16 @@
 ---
 title: Microsoft Defender Antivirus compatibility with other security products
 description: Learn about Microsoft Defender Antivirus with other security products and the operating systems.
-keywords: windows defender, defender for endpoint, next-generation, antivirus, compatibility, passive mode
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 03/15/2023
+ms.date: 06/07/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
-ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
