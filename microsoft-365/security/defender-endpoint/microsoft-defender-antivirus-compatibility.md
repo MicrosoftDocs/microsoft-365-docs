@@ -88,6 +88,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 | Microsoft Defender Antivirus | No | Off or Evaluation | Active mode |
 | Microsoft Defender Antivirus | No | On | Passive mode (automatically) |
 | A non-Microsoft antivirus/antimalware solution | Yes | N/A <br/>Smart App Control is a consumer-only product | Passive mode (automatically) |
+| A non-Microsoft antivirus/antimalware solution | No | Evaluation or On | Passive mode (automatically) |
 
 ## Windows Server and passive mode
 
