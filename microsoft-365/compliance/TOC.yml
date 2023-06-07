@@ -1281,7 +1281,7 @@
             href: device-onboarding-configure-proxy.md
           - name: Get started with the Microsoft Purview Chrome Extension
             href: dlp-chrome-get-started.md
-          - name: Get started with the Microsoft Purview Firefox extension (preview)
+          - name: Get started with the Microsoft Purview Firefox extension
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
