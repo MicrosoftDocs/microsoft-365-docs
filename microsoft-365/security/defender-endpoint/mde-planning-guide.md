@@ -51,9 +51,7 @@ The steps include:
 Preparation is key to any successful deployment. In this section guides, you'll be guided on the points you'll need to consider as you prepare to deploy Defender for Endpoint.
 
 - You're a global admin
-
 - You meet the [minimum requirements](minimum-requirements.md)
-
 - You have a full inventory of your environment. The table below provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which will help identify potential dependencies and/or changes required in technologies or processes.
 
 |What|Description|
