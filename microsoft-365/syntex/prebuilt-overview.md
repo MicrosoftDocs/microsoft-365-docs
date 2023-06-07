@@ -45,12 +45,6 @@ Additional prebuilt models will be available in future releases.
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
-## See also
 
-[Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md)
-
-[Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md)
-
-[Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md)
 
  
