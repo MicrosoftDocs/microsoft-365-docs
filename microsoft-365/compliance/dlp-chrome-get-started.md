@@ -24,7 +24,7 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Purview extension for Chrome."
 ---
 
-# Get started with Microsoft Purview extension for Chrome
+# Get started with the Microsoft Purview extension for Chrome
 
 Use these procedures to roll out the Microsoft Purview extension for Chrome.
 
