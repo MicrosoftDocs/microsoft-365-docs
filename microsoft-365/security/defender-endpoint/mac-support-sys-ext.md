@@ -483,3 +483,34 @@ $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-e
 ```
 1. From the JAMF portal, navigate to **Configuration Profiles** and select the **Upload** button. Select **com.microsoft.network-extension.signed.mobileconfig** when prompted for the file.
 
+#### Other MDM
+
+See [System configuration profiles](mac-install-with-other-mdm.md).
+
+#### Manual deployment
+
+##### System Extensions
+
+You might see the prompt that's shown in the following screenshot:
+
+:::image type="content" source="images/system-extension-blocked-prompt.png" alt-text="The system extensions blocked prompt screen." lightbox="images/system-extension-blocked-prompt.png":::
+
+1. Select **OK**. You might get a second prompt which is shown in the following screenshot:
+
+:::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
+
+2. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
+
+:::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
+
+3. On the screen displaying the **Installation succeeded** notification message, select **OK**.
+
+You'll return to the following screen:
+
+:::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
+
+4. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
+
+:::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
+
+5. Select **Action needed**. 
