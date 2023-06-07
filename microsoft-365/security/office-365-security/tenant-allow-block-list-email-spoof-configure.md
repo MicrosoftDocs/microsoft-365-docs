@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
   - m365-security
   - tier1
-description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
+description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/7/2022
@@ -28,13 +28,13 @@ ms.date: 6/7/2022
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, admins can create and manage allow and block entries for domains and email addresses (including spoofed senders) in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, admins can create and manage entries for domains and email addresses (including spoofed senders) in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
-Admins can manage allow and block entries for email in the Microsoft 365 Defender Portal or in Exchange Online PowerShell.
+This article describes how admins can manage entries for email senders in the Microsoft 365 Defender Portal and in Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -62,11 +62,27 @@ Admins can manage allow and block entries for email in the Microsoft 365 Defende
 
 ## Domains and email addresses in the Tenant Allow/Block List
 
+### Create allow entries for domains and email addresses
+
+You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Unnecessary allow entries expose your organization to malicious email that would have been filtered by the system.
+
+Instead, you use the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. When you submit a blocked message as **Should not have been blocked (False positive)**, an allow entry for the sender is added to the **Domains & email addresses** tab on the **Tenant Allow/Block Lists** page. For instructions, see [Submit good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
+
+> [!NOTE]
+> Allow entries are added based on the filters that determined the message was malicious during mail flow. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
+>
+> When the entity in the allow entry is encountered again (during mail flow or at time of click), all filters associated with that entity are overridden.
+>
+> By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities are delivered, unless something else in the message is detected as malicious.
+>
+> During mail flow, if messages containing the allowed entity pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), URL filtering, and file filtering, the message is delivered if it's also from an allowed sender.
+
 ### Create block entries for domains and email addresses
 
 To create block entries for *domains and email addresses*, use either of the following methods:
 
-- From the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. When you submit a message as **Should have been blocked (False negative)**, you can select **Block all emails from this sender or domain** to add a block entry to the **Domains & email addresses** tab in the Tenant Allow/Block List. For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft).
+- From the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. When you submit a message as **Should have been blocked (False negative)**, you can select **Block all emails from this sender or domain** to add a block entry to the **Domains & email addresses** tab on the **Tenant Allow/Block Lists** page. For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft).
+
 - From the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
 To create block entries for *spoofed senders*, see [this section](#use-the-microsoft-365-defender-portal-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list) later in this article.
@@ -75,16 +91,14 @@ By default, allow entries for domains and email addresses exist for 30 days. Dur
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Tenant Allow/Block List
 
-You can create block entries for domains and email addresses directly in the Tenant Allow/Block List.
-
 Email messages from these senders are marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Spam** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 > [!NOTE]
-> Users in the organization also can't *send* email to these blocked domains and addresses. The message is returned in the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant recipient block policy.` The entire message is blocked for all *external* recipients of the message, even if only one recipient email address or domain is defined in a block entry.
+> Users in the organization also can't *send* email to these blocked domains and addresses. The message is returned in the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant recipient block policy.` The entire message is blocked for all *external* recipients of the message, even if only one recipient email address or domain is defined in the block entry.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. On the **Tenant Allow/Block List** page, verify that the **Domains & addresses** tab is selected.
+2. On the **Tenant Allow/Block Lists** page, verify that the **Domains & addresses** tab is selected.
 
 3. On the **Domains & addresses** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Block**.
 
@@ -120,21 +134,6 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### Create allow entries for domains and email addresses
-
-You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Unnecessary allow entries expose your organization to malicious email that would have been filtered by the system.
-
-Instead, you use the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. When you submit a blocked message as **Should not have been blocked (False positive)**, an allow entry for the sender is added to the **Domains & email addresses** tab in the Tenant Allow/Block List. For instructions, see [Submit good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
-
-By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities are delivered, unless something else in the message is detected as malicious.
-
-> [!NOTE]
-> Allow entries are added based on the filters that determined the message was malicious during mail flow. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
->
-> When the entity in the allow entry is encountered again (during mail flow or at time of click), all filters associated with that entity are skipped.
->
-> During mail flow, if messages containing the allowed entity pass other checks in the filtering stack, the messages will be delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), URL filtering, and file filtering, a message from an allowed sender email address will be delivered.
 
 ### Use the Microsoft 365 Defender portal to view entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -188,9 +187,9 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use the Microsoft 365 Defender portal to modify entries for domains and email addresses in the Tenant Allow/Block List
 
-For existing domain and email address entries, you can change the expiration date and notes.
+In existing domain and email address entries, you can change the expiration date and note.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Verify the **Domains & addresses** tab is selected.
 
@@ -234,9 +233,9 @@ Set-TenantAllowBlockListItems -ListType Sender -Entries "julia@fabrikam.com" -Ex
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Use the Microsoft 365 Defender portal to remove entries for domains and email addresses in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to remove entries for domains and email addresses from the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Verify the **Domains & addresses** tab is selected.
 
@@ -273,6 +272,8 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 ## Spoofed senders in the Tenant Allow/Block List
 
+When you override the verdict in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
+
 ### Create allow entries for spoofed senders
 
 To create allow entries for spoofed senders, use either of the following methods:
@@ -280,25 +281,24 @@ To create allow entries for spoofed senders, use either of the following methods
 - From the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. When you submit a message that was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md) as **Should not have been blocked (False positive)**, an allow entry for the spoofed sender is added to the **Spoofed senders** tab in the Tenant Allow/Block List. For instructions, see [Submit good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 - From the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
-
 > [!NOTE]
 > Allow entries for spoofed senders account for intra-org, cross-org, and DMARC spoofing.
 >
 > Only the combination of the spoofed user *and* the sending infrastructure as defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is allowed to spoof.
 >
-> When you configure an allow entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md). The spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
+> When you configure an allow entry for a domain pair, the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 >
 > Allow entries for spoofed senders never expire.
 >
-> If the sender wasn't blocked by spoof intelligence, submitting the message to Microsoft won't create an allow entry for the sender in the Tenant Allow/Block List.
+> If the sender wasn't blocked by spoof intelligence, submitting the message to Microsoft doesn't create an allow entry for the sender in the Tenant Allow/Block List.
 
 #### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Tenant Allow/Block List
 
 In the Tenant Allow/Block List, you can create allow entries for spoofed senders before they're detected and blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. On the **Tenant Allow/Block List** page, select the **Spoofed senders** tab.
+2. On the **Tenant Allow/Block Lists** page, select the **Spoofed senders** tab.
 
 3. On the **Spoofed senders** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add**.
 
@@ -343,7 +343,7 @@ The only difference is: for the **Action** value in Step 4, select **Block** ins
 >
 > Only the combination of the spoofed user *and* the sending infrastructure as defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is blocked from spoofing.
 >
-> When you configure a block entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md).
+> When you configure a block entry for a domain pair, the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 >
 > Block entries for spoofed senders never expire.
 
@@ -424,13 +424,11 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 When you modify an allow or block entry for spoofed senders in the Tenant Allow/Block list, you can only change the entry from **Allow** to **Block**, or vice-versa.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the **Spoofed senders** tab.
 
-Select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
-
-3. On the **Spoofed senders** tab, select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** button that appears.
+3. Select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
 
 4. In the **Edit spoofed sender** flyout that opens, select **Allow** or **Block**, and then select **Save**.
 
@@ -450,9 +448,9 @@ Set-TenantAllowBlockListItems -Identity Default -Ids 3429424b-781a-53c3-17f9-c0b
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### Use the Microsoft 365 Defender portal to remove entries for spoofed senders in the Tenant Allow/Block List
+### Use the Microsoft 365 Defender portal to remove entries for spoofed senders from the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the **Spoofed senders** tab.
 
@@ -486,12 +484,13 @@ A domain pair for a spoofed sender in the Tenant Allow/Block List uses the follo
 - **Spoofed user**: This value involves the email address of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` or P2 sender address. Valid values include:
   - An individual email address (for example, chris@contoso.com).
   - An email domain (for example, contoso.com).
-  - The wildcard character (for example, \*).
+  - The wildcard character (\*).
 
 - **Sending infrastructure**: This value indicates the source of messages from the spoofed user. Valid values include:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address (for example, fabrikam.com).
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
   - A verified DKIM domain.
+  - The wildcard character (\*).
 
 Here are some examples of valid domain pairs to identify spoofed senders:
 
@@ -499,27 +498,25 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It doesn't allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user.
+> [!NOTE]
+> You can specify wildcards in the sending infrastructure or in the spoofed user, but not in both at the same time. For example, `*, *` isn't permitted.
 
-For example, you add an allow entry for the following domain pair:
+Adding a domain pair allows or blocks the *combination* of the spoofed user *and* the sending infrastructure *only*. For example, you add an allow entry for the following domain pair:
 
 - **Domain**: gmail.com
 - **Sending infrastructure**: tms.mx.com
 
 Only messages from that domain *and* sending infrastructure pair are allowed to spoof. Other senders attempting to spoof gmail.com aren't allowed. Messages from senders in other domains originating from tms.mx.com are checked by spoof intelligence.
 
-> [!NOTE]
-> You can specify wildcards in the sending infrastructure or in the spoofed user, but not in both at the same time. For example, `*, *` isn't permitted.
-
 ## About impersonated domains or senders
 
-You can't create allow entries in the Tenant Allow/Block List for messages that were detected as [impersonated users or impersonated domains in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+You can't create allow entries in the Tenant Allow/Block List for messages that were detected as [impersonated users or impersonated domains by anti-phishing policies in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-Submitting a message that was incorrectly blocked as impersonation on the **Submissions** page at <https://security.microsoft.com/reportsubmission> doesn't add the sender or domain as an allow entry in the Tenant Allow/Block List.
+Submitting a message that was incorrectly blocked as impersonation on the **Emails** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email> doesn't add the sender or domain as an allow entry in the Tenant Allow/Block List.
 
-Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
-For submission instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
+For submission instructions for impersonation false positives, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Currently, Graph Impersonation isn't taken care of from here.
