@@ -119,7 +119,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
 
-After a few moments, the block entry is available on the **Domains & addresses** tab on the **Tenant Allow/Block List** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Sender>.
+After a few moments, the block entry is available on the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Sender>.
 
 ### Report questionable email attachments to Microsoft
 
@@ -157,7 +157,7 @@ After a few moments, the block entry is available on the **Domains & addresses**
 
 :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
 
-After a few moments, the block entry is available on the **Files** tab on the **Tenant Allow/Block List** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=FileHash>.
+After a few moments, the block entry is available on the **Files** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=FileHash>.
 
 ### Report questionable URLs to Microsoft
 
@@ -195,7 +195,7 @@ After a few moments, the block entry is available on the **Files** tab on the **
 
 :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
 
-After a few moments, the block entry is available on the **URL** tab on the **Tenant Allow/Block List** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
+After a few moments, the block entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
 ### Report good email to Microsoft
 
@@ -229,13 +229,13 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
          - **Allow entry note**: Enter optional information about why you're allowing and submitting this email message.
 
-           For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block List**.
+           For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
    When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
-After a few moments, the associated allow entries appear on the **Domains & addresses**, **Spoofed senders**, **URL**, or **Files** tab on the **Tenant Allow/Block List** page at <https://security.microsoft.com/tenantAllowBlockList>.
+After a few moments, the associated allow entries appear on the **Domains & addresses**, **Spoofed senders**, **URLs**, or **Files** tabs on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList>.
 
 > [!IMPORTANT]
 >
@@ -245,7 +245,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 > - During mail flow, if messages from the allowed domain or email address pass other checks in the filtering stack, the messages are delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message from an allowed sender email address are delivered.
 > - By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages from those domains or email addresses are delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 > - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
-> - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
+> - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 ### Report good email attachments to Microsoft
 
@@ -317,7 +317,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
 
    :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
 
-After a few moments, the allow entry is available on the **URL** tab on the **Tenant Allow/Block List** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
+After a few moments, the allow entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
 > [!NOTE]
 >
