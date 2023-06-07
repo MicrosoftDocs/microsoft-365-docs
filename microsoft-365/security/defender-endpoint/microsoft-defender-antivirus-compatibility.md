@@ -205,7 +205,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 ### Use Windows PowerShell to confirm that Microsoft Defender Antivirus is running
 
 > [!NOTE]
-> Use this procedure only to confirm whether Microsoft Defender Antirivus is running on an endpoint.
+> Use this procedure only to confirm whether Microsoft Defender Antivirus is running on an endpoint.
 
 1. On a Windows device, open Windows PowerShell. 
 
