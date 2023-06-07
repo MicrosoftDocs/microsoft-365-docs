@@ -47,7 +47,16 @@ Insider risk management uses different types of events and indicators to collect
 
 Certain policy indicators and sequences may also be used for customizing triggering events for specific policy templates. When configured in the policy wizard for the *General data leaks* or *Data leaks by priority users* templates, these indicators or sequences allow more flexibility and customization for your policies and when users are in-scope for a policy. Also, you can define risk management activity thresholds for these triggering indicators for more fine-grained control in a policy.
 
-## Two types of policy indicators: built-in indicators and custom indicators
+## Define the insider risk policy indicators that are enabled in all insider risk policies
+
+1. Select the **Settings** button, and then select **Policy indicators**.
+2. Select one or more policy indicators. 
+   The indicators selected on the **Policy indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
+
+   > [!NOTE]
+   > It may take several hours for new manually added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab in the details pane.## Two types of policy indicators: built-in indicators and custom indicators
+
+## Built-in indicators vs. custom indicators
 
 Policy indicators are organized into two tabs:
 
@@ -56,14 +65,7 @@ Policy indicators are organized into two tabs:
 
 ### Built-in indicators
 
-Insider risk management includes many "out-of-the-box" indicators which are described below. To define the insider risk policy indicators that are enabled in all insider risk policies:
-
-1. Select the **Settings** button, and then select **Policy indicators**.
-2. Select one or more policy indicators. 
-   The indicators selected on the **Policy indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
-
-   > [!NOTE]
-   > It may take several hours for new manually added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab in the details pane.
+Insider risk management includes the following built-in indicators.
 
 #### Office indicators
 
