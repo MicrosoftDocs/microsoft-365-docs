@@ -116,7 +116,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## June 2022
 
-- [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-on-the-submissions-page): Create allowed spoofed sender entries using the Tenant Allow/Block List.
+- [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
 - [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft 365 Defender.
 
@@ -163,7 +163,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## August 2021
 
 - [Admin review for reported messages](submissions-admin-review-user-reported-messages.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
-- You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow is added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
+- You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
   - [Report good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft)
   - [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft)
   - [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft)

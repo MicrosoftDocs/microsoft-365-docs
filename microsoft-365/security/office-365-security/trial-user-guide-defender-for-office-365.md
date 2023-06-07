@@ -51,7 +51,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
-  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Policy settings associated with Defender for Office 365 trials](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-trials)
+  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Policy settings associated with Defender for Office 365 evaluations and trials](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-evaluations-and-trials)
 
   Blocking mode does not provide customized reports for threats detected by Defender for Office 365. Instead, the information is available in the regular reports and investigation features of Defender for Office 365 Plan 2.
 

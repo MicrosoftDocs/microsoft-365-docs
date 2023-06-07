@@ -71,7 +71,7 @@ EmailEvents
 | summarize count() by SenderMailFromAddress, BulkComplaintLevel
 ```
 
-This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's less than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
+This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's less than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
 
 Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
@@ -89,6 +89,6 @@ Organizations without Defender for Office 365 Plan 2 can try the features in Mic
 
 4. In Defender for Office 365 Plan 2, select a bulk message to investigate, and then select email entity to learn more about the sender.
 
-5. After you identify wanted and unwanted bulk senders, adjust the bulk threshold in the default anti-spam policy and in custom anti-spam policies. If some bulk senders don't fit within your bulk threshold, [report the messages to Microsoft for analysis](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
+5. After you identify wanted and unwanted bulk senders, adjust the bulk threshold in the default anti-spam policy and in custom anti-spam policies. If some bulk senders don't fit within your bulk threshold, [report the messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft).
 
 Admins can follow the [recommended bulk threshold values](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) or choose a bulk threshold value that suits the needs of their organization.
