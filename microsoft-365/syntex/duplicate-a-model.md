@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.topic: article
+ms.date: 10/18/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -49,8 +50,3 @@ Follow these steps to duplicate an unstructured document processingmodel.
 
 5. Select **Duplicate**.
 
-## See also
-
-[Rename a model](rename-a-model.md)
-
-[Syntex accessibility mode](accessibility-mode.md)

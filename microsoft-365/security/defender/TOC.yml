@@ -6,6 +6,8 @@
       items:
       - name: What is Microsoft 365 Defender
         href: microsoft-365-defender.md
+      - name: Zero Trust with Microsoft 365 Defender
+        href: zero-trust-with-microsoft-365-defender.md  
       - name: Microsoft 365 Defender portal
         href: microsoft-365-defender-portal.md
       - name: What's new in Microsoft 365 Defender
@@ -26,6 +28,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: Redirecting Defender for Identity to Microsoft 365 Defender
           href: microsoft-365-security-mdi-redirection.md
+        - name: Redirecting Defender for Cloud Apps to Microsoft 365 Defender
+          href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
       - name: Microsoft 365 Defender for US Government customers
@@ -104,6 +108,8 @@
           href: m365d-enable.md
         - name: 2. Deploy supported services
           href: deploy-supported-services.md
+        - name: Setup guides for Microsoft 365 Defender
+          href: deploy-configure-m365-defender.md  
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
         - name: Train your security staff
@@ -182,7 +188,7 @@
                    href: investigate-dlp.md
                  - name: Alerts
                    href: investigate-alerts.md    
-                 - name: Alert grading playbooks
+                 - name: Alert classification playbooks
                    items: 
                     - name: Overview
                       href: alert-grading-playbooks.md
@@ -196,6 +202,8 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
+                    - name: Password spray attacks
+                      href: alert-grading-password-spray-attack.md                    
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -217,7 +225,15 @@
               - name: View details and results
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
-                href: m365d-autoir-report-false-positives-negatives.md   
+                href: m365d-autoir-report-false-positives-negatives.md
+       - name: Manage automatic attack disruption
+         items: 
+              - name: Overview
+                href: automatic-attack-disruption.md
+              - name: Configure capabilities
+                href: configure-attack-disruption.md
+              - name: View details and results
+                href: autoad-results.md             
        - name: Search for threats with advanced hunting
          items: 
              - name: Overview
@@ -254,7 +270,9 @@
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
-                 - name: Functions
+                 - name: Create custom functions 
+                   href: advanced-hunting-custom-functions.md                   
+                 - name: Use built-in functions
                    items: 
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
@@ -284,6 +302,10 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
+                - name: BehaviorEntities
+                  href: advanced-hunting-behaviorentities-table.md
+                - name: BehaviorInfo
+                  href: advanced-hunting-behaviorinfo-table.md                                    
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents
@@ -360,6 +382,8 @@
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
+              - name: Defender Threat Intelligence in Microsoft 365 Defender
+                href: defender-threat-intelligence.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
        - name: Endpoint Attack Notifications
@@ -378,16 +402,24 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
-       - name: Expanded Microsoft Defender Experts for XDR preview
+       - name: Collaborate with Microsoft Defender Experts for XDR
          items:
               - name: Overview
                 href: dex-xdr-overview.md
-              - name: Get started with Microsoft Defender Experts for XDR preview service
+              - name: Before you begin
+                href: before-you-begin-xdr.md
+              - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
-              - name: Start using Microsoft Defender Experts for XDR preview service
+              - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Auditing
+                href: auditing.md
+              - name: Additional information
+                href: additional-information-xdr.md
               - name: Frequently asked questions
                 href: frequently-asked-questions.md
+              - name: How Defender Experts for XDR permissions work
+                href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
@@ -442,6 +474,8 @@
               href: device-profile.md
             - name: Troubleshoot Microsoft 365 Defender service issues
               href: troubleshoot.md
+            - name: Configure alert notifications
+              href: configure-email-notifications.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
@@ -520,6 +554,8 @@
         items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
+          - name: Threat actor naming
+            href: ../intelligence/microsoft-threat-actor-naming.md
           - name: Understand malware & other threats
             href: ../intelligence/understanding-malware.md
             items: 

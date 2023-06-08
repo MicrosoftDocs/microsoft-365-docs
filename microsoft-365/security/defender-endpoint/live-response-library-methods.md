@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: reference
 ms.subservice: mde
+ms.date: 06/03/2021
 ---
 
 #  Live response library methods and properties

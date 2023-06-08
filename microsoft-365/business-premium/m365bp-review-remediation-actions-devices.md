@@ -1,5 +1,5 @@
 ---
-title: Review remediation actions in Microsoft 365 Business Premium
+title: Review remediation actions in Microsoft 365 Defender
 description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 12/05/2022
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -20,9 +20,11 @@ ms.collection:
 - tier1
 ---
 
-# Review remediation actions in Microsoft 365 Business Premium
+# Review remediation actions in the Microsoft 365 Defender portal
 
 Okay, you've discovered a security breach, but what do you do? It depends on the nature of it.
+
+Microsoft 365 Business Premium includes remediation actions. Some actions are taken automatically when threats are detected, and other actions can be taken manually by your security team.
 
 Examples of remediation actions include sending a file to quarantine, stopping a process from running, or completely removing a scheduled task. All remediation actions are tracked in the Action center, which is located at [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 

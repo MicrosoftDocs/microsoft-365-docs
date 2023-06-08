@@ -1,6 +1,7 @@
 ---
 title: "Multi-Geo Capabilities in Microsoft Teams"
 ms.reviewer: daro
+ms.date: 03/12/2021
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -28,6 +29,7 @@ Teams uses the Preferred Data Location (PDL) for users and groups to determine w
 
 > [!NOTE]
 > Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
+>
 
 ## User chat
 
@@ -44,6 +46,7 @@ To find the current location of a user's Teams data, [connect to Teams PowerShel
 ```PowerShell
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 ```
+Enable port 8653 to allow execution of this command.
 
 ## Channel messages
 

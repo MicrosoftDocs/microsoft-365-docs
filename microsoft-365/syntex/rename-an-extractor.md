@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.topic: article
+ms.date: 10/18/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -47,9 +48,5 @@ Follow these steps to rename an entity extractor.
    b. (Optional) Under **Advanced settings**, select whether you want to associate an existing site column.
 
 5. Select **Rename**.
-
-## See also
-
-[Create an extractor](create-an-extractor.md)
 
 

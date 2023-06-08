@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 09/23/2022
 audience: admin
-ms.topic: article
-ms.custom: intro-get-started
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -45,11 +45,3 @@ Not only can you look through analyze the sample model to get a better understan
 ## Get sample models
 
 You can access the [Syntex Samples repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of unstructured document processing models. The samples in this repository contain both the model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
-
-## See also
-
-[Overview of unstructured document processing](document-understanding-overview.md)
-
-[Create a classifier](create-a-classifier.md)
-
-[Create an extractor](create-an-extractor.md)

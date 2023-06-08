@@ -5,16 +5,18 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 search.appverid: 
   - MET150s
 description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 1/31/2023
 ---
 
 # Create blocked sender lists in EOP
@@ -49,7 +51,7 @@ A standard SMTP email message consists of a _message envelope_ and message conte
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address). If the message can't be delivered, it's the recipient for the non-delivery report (also known as an NDR or bounce message).
 
-- The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
+- The `5322.From` address (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
 Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different.
 
@@ -61,7 +63,7 @@ Our number one recommended option for blocking mail from specific senders or dom
 
 Email messages from these senders are marked as _high confidence spam_ (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 
-As an added benefit, users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
+As an added benefit, users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
 
 Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to block senders.
 

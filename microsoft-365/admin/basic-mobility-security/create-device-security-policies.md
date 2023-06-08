@@ -3,8 +3,9 @@ title: "Create device security policies in Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 09/01/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

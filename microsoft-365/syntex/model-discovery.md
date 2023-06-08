@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.topic: article
+ms.date: 10/12/2022
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -47,6 +48,4 @@ To make your trained model available for others to use:
 
 4. Select the sites where you want the model to be available for other users to apply, and then select **Save**.
 
-## See also
 
-[Discover other trained models](discover-other-trained-models.md)

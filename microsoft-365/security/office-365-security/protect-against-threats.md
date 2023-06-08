@@ -8,14 +8,15 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 06/22/2021
+ms.date: 4/5/2023
 search.appverid: 
   - MOE150
   - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: 
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
+  - highpri
 description: Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
@@ -69,7 +70,7 @@ To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal
 
 ### Turn on audit logging for reporting and investigation
 
-- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -83,7 +84,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
    - **Protection settings** section:
      - **Enable the common attachments filter**: Select (turn on). Click **Customize file types** to add more file types.
      - **Enable zero-hour auto purge for malware**: Verify this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
-   - **Quarantine policy**: Leave the default value AdminOnlyAccessPolicy selected. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+   - **Quarantine policy**: Leave the default value AdminOnlyAccessPolicy selected. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
    - **Notification** section: Verify that none of the notification settings are selected.
 
    When you're finished, click **Save**.
@@ -120,10 +121,10 @@ The following procedure describes how to configure the default anti-phishing pol
 
    - **Actions** section: Click **Edit actions** and configure the following settings in the flyout that opens:
      - **Message actions** section: Configure the following settings:
-       - **If message is detected as an impersonated user**<sup>\*</sup>: Select **Quarantine the message**. An **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by user impersonation protection.
-       - **If message is detected as an impersonated domain**<sup>\*</sup>: Select **Quarantine the message**. An **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by domain impersonation protection.
-       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict). If you select **Quarantine the message**, an **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by mailbox intelligence protection.
-       - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).  If you select **Quarantine the message**, an **Apply quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by spoof intelligence protection.
+       - **If a message is detected as user impersonation**<sup>\*</sup>: Select **Quarantine the message**. Select nothing in the **Apply quarantine policy** box that appears to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by user impersonation protection.
+       - **If a message is detected as domain impersonation**<sup>\*</sup>: Select nothing in the **Apply quarantine policy** box that appears to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by user domain impersonation protection.
+       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move the message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict). Select nothing in the **Apply quarantine policy** box that appears to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by mailbox intelligence protection.
+       - **If the message is detected as spoof by spoof intelligence**: Select **Move the message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict). Select nothing in the **Apply quarantine policy** box that appears to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by spoof intelligence protection.
      - **Safety tips & indicators** section: Configure the following settings:
        - **Show first contact safety tip**: Select (turn on).
        - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
@@ -163,7 +164,7 @@ For more information about the recommended settings for anti-spam, see [EOP anti
        - **High confidence phishing**: Verify **Quarantine messages** is selected.
        - **Bulk**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
 
-       For each action where you select **Quarantine message**, a **Select quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by anti-spam protection.
+       For each action where you select **Quarantine message**, leave the default value in the **Select quarantine policy** box that appears (including blank values) to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by anti-spam protection.
 
      - **Retain spam in quarantine for this many days**: Verify the value **30** days.
      - **Enable spam safety tips**: Verify this setting is selected (turned on).
@@ -195,7 +196,7 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
 
      > [!IMPORTANT]
-     > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization**. This action is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
+     > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization** (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
    - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
    - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
@@ -211,13 +212,13 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
    - **Settings** page:
      - **Safe Attachments unknown malware response**: Select **Block**.
-     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine policy**: The default value is blank, which means the default AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
      - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 
 5. When you're finished, click **Submit**, and then click **Done**.
 
-6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true` in SharePoint Online PowerShell.
+6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the *DisallowInfectedFileDownload* parameter set to `$true` in SharePoint Online PowerShell.
    - `$true` blocks all actions (except Delete) for detected files. People can't open, move, copy, or share detected files.
    - `$false` blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
 
@@ -231,7 +232,7 @@ For detailed instructions for configuring Safe Attachments policies and global s
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
-For more information about the recommended settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+For more information about the recommended settings for Safe Links, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then click ![Create icon.](../../media/m365-cc-sc-create-icon.png).
 

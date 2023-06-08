@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/16/2020
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
   - m365-security
+  - tier1
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
 ms.custom:
 - seo-marvel-apr2020
@@ -44,7 +45,7 @@ Make sure that the following requirements are met:
 
 - Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
-- [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
+- [Audit logging](../../compliance/audit-log-enable-disable.md) is turned on for your organization (it's on by default).
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
@@ -91,7 +92,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 3. **Search and filter in Threat Explorer**: Filters appear at the top of the page in the search bar to help admins in their investigations. Notice that multiple filters can be applied at the same time, and multiple comma-separated values added to a filter to narrow down the search. Remember:
 
     - Filters do exact matching on most filter conditions.
-    - Subject filter uses a CONTAINS query.
+    - Subject filter uses a CONTAINS query. A CONTAINS query will look for an exact match of the substring. Wildcards or regular expressions are not supported.
     - URL filters work with or without protocols (ex. https).
     - URL domain, URL path, and URL domain and path filters don't require a protocol to filter.
     - You must click the Refresh icon every time you change the filter values to get relevant results.

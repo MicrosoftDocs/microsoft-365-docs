@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: overview
-
 search.appverid: 
   - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
@@ -18,6 +16,7 @@ ms.collection:
   - m365initiative-defender-office365
   - EngageScoreSep2022
   - ContentEngagementFY23
+  - tier2
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
@@ -25,6 +24,7 @@ ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # Anti-spoofing protection in EOP
@@ -50,7 +50,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
-- **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
+- **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
 
 - **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
@@ -73,13 +73,13 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of phishing that uses the spoofed sender msoutlook94@service.outlook.com:
 
-  ![Phishing message impersonating service.outlook.com.](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  :::image type="content" source="../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg" alt-text="Phishing message impersonating service.outlook.com." lightbox="../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg":::
 
   This message didn't come from service.outlook.com, but the attacker spoofed the **From** header field to make it look like it did. This was an attempt to trick the recipient into clicking the **change your password** link and giving up their credentials.
 
   The following message is an example of BEC that uses the spoofed email domain contoso.com:
 
-  ![Phishing message - business email compromise.](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  :::image type="content" source="../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg" alt-text="Phishing message - business email compromise." lightbox="../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg":::
 
   The message looks legitimate, but the sender is spoofed.
 
@@ -87,7 +87,7 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of a real password reset message from the Microsoft Security account:
 
-  ![Microsoft legitimate password reset.](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  :::image type="content" source="../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg" alt-text="Microsoft legitimate password reset." lightbox="../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg":::
 
   The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
 

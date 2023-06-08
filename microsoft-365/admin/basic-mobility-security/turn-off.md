@@ -2,8 +2,9 @@
 title: "Turn off Basic Mobility and Security"
 f1.keywords: NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 08/27/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -52,4 +53,4 @@ These options remove Basic Mobility and Security enforcement for devices in your
 3. In the Warning dialog box, select **Yes**.
 
 > [!NOTE]
-> For more steps to unblock devices if your organization devices are still in a blocked state, see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+> For more steps to unblock devices if your organization devices are still in a blocked state, see the blog post [Removing access control from Basic Mobility and Security for Microsoft 365](https://techcommunity.microsoft.com/t5/intune-customer-success/removing-access-control-from-basic-mobility-and-security-for/ba-p/279934).

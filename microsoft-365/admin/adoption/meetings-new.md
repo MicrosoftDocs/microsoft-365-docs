@@ -6,6 +6,7 @@ ms.author: camillepack
 author: camillepack
 manager: scotv
 ms.reviewer:
+ms.date: 10/12/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,6 +21,8 @@ description: "Learn more about Meetings insights score - people experiences Adop
 ---
 
 # Meetings insights score – People experiences
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
@@ -75,12 +78,10 @@ We provide you with supporting data on each of the Set Up, Meet up and Follow Up
 
 This represents the phase that involves scheduling and sharing the details of the meeting and participants joining the meeting.
 
-:::image type="content" source="../../media/meetings-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score":::
+:::image type="content" source="../../media/adoption-score-set-up.jpg" alt-text="Screenshot: Set up phase section for meeting score":::
 
 - **Communication shared ahead of time**: This represents the score for Microsoft Teams meetings that had a Teams conversation meeting chat started before conducting the meeting. For this to be tracked, a user must go to the meeting chat with the participants and send a message to the participants, before the scheduled meeting time.
-- **Scheduled with at least 24 hours notice**: This represents the score for Microsoft Teams meetings that were scheduled at least 24 hours earlier than their start time.
 - **Invitation accepted at a high rate (>50%)**: This represents the score for Microsoft Teams meetings that had more than 50% of invited participants accept the meeting invite.
-- **Joined within 5 minutes of start time (>50%)**: This represents the score for Microsoft Teams meetings that had more than 50% of invited participants join the meeting within 5 minutes of the start time.
 
 ## Meet up
 

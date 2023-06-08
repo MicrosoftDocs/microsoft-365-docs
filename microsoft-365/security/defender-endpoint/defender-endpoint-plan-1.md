@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 01/25/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
@@ -40,7 +40,7 @@ Use this guide to:
 - [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
-- [Get an overview of maintenance and operations](mde-p1-maintenance-operations.md)
+- [Get an overview of maintenance and operations](manage-mde-post-migration.md)
 
 > [!TIP]
 > [Learn more about the differences between Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
@@ -52,7 +52,7 @@ Defender for Endpoint Plan 1 includes the following capabilities:
 - **[Next-generation protection](#next-generation-protection)** that includes industry-leading, robust antimalware and antivirus protection
 - **[Manual response actions](#manual-response-actions)**, such as sending a file to quarantine, that your security team can take on devices or files when threats are detected
 - **[Attack surface reduction capabilities](#attack-surface-reduction)** that harden devices, prevent zero-day attacks, and offer granular control over endpoint access and behaviors
-- **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Endpoint Manager
+- **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Intune
 - **[Protection for a variety of platforms](#cross-platform-support)**, including Windows, macOS, iOS, and Android devices
 
 The following sections provide more details about these capabilities. 
@@ -183,22 +183,32 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 ## Cross-platform support
 
-Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 supports the following operating systems:
+Most organizations use various devices and operating systems. Defender for Endpoint Plan 1 supports the following operating systems:
 
-- Windows 7 (ESU required)
-- Windows 8.1
-- Windows 10, version 1709, or later
-- Windows 10 Enterprise
-- Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT
+- Windows 10 and 11
+- Windows 7 ([ESU required](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)) Pro or Enterprise 
+- Windows 8.1 Pro, Enterprise, and Pro Education 
 - macOS (the three most recent releases are supported)
 - iOS
 - Android OS
+
+Servers require an additional license, such as:
+
+- **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
+- **Microsoft Defender for Endpoint for Servers**. See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+
+> [!TIP]
+> For more details about supported operating systems, see the following articles: 
+> 
+> - [Defender for Endpoint Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
+> - [Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
+> - [Microsoft licensing and product terms](https://www.microsoft.com/en-us/licensing/product-licensing/products)
 
 ## Next steps
 
 - [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
-- [Manage Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
+- [Manage Defender for Endpoint Plan 1](manage-mde-post-migration.md)
 - [Learn about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

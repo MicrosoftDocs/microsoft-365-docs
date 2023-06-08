@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 05/04/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,44 +27,42 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## How to read your compliance score
+## Understanding your compliance score
 
 The Compliance Manager dashboard displays your overall compliance score. This score measures your progress in completing recommended improvement actions within controls. Your score can help you understand your current compliance posture. It can also help you prioritize actions based on their potential to reduce risk.
 
 A score value is assigned at these levels:
 
-1. **Improvement action**: Each action has a different impact on your score depending on the potential risk involved. See [Action types and points](#action-types-and-points) below for details.
+1. **Improvement action**: Each action has a different impact on your score depending on the potential risk involved. See [Action types and points](#action-types-and-scoring) below for details.
 
 2. **Assessment**: This score is calculated using improvement action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it's referenced in a control.
 
-The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-points).
+The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-scoring).
 
-## Initial score based on Microsoft 365 data protection baseline
+#### Initial score based on Microsoft 365 data protection baseline
   
 Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-Your initial score is calculated according to the default Data Protection Baseline assessment provided to all organizations. Upon your first visit, Compliance Manager is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
+Your initial score is calculated according to the default Data Protection Baseline assessment provided to all organizations. Upon your first visit, Compliance Manager is already collecting signals from your Microsoft 365 solutions. You see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Because every organization has specific needs, Compliance Manager relies on you to set up and manage assessments to help minimize and mitigate risk as comprehensively as possible.
 
-## How Compliance Manager continuously assesses controls
-
-Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including data lifecycle management, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
-
-Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
-
-For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Manager detects the setting and reflects it in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Manager flags that as a recommended action for you to take.
-
-Learn more about [Secure Score and how it works](../security/defender/microsoft-secure-score.md).
-  
-## Action types and points
+## Action types and scoring
 
 Compliance Manager tracks two types of actions:
 
 1. **Your improvement actions**: Managed by your organization
 2. **Microsoft actions**: Managed by Microsoft
 
-Both types of actions have points that count toward your overall score when completed.
+Both types of actions have points that count toward your overall score when completed. Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
+
+Points are awarded per action per assessment. For example, if an action is worth 10 points but it appears in two assessments, the action is worth 20 points overall for your tenant.
+
+### Actions for services supported by Microsoft Defender for Cloud
+
+An improvement action’s overall score is based on the average of scores received by its subscriptions. Each subscription is scored based on the status of the relevant virtual resources.
+
+For example, consider an action with two subscriptions, A and B. Subscription A has 0 out of 1 resources completed, and subscription B has 1 out of 2 resources completed. The subscription scores are: A is 0%, B is 50%. The two subscription scores are averaged to get the overall action score of 25%.
 
 ### Technical and non-technical actions
 
@@ -71,7 +70,7 @@ Actions are grouped by whether they are technical or non-technical in nature. Th
 
 - **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
 
-- **Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you will receive the action's point value each time you implement it within a group.
+- **Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you receive the action's point value each time you implement it within a group.
 
 **Example of how technical and non-technical actions are scored:**
 

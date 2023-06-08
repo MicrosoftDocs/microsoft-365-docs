@@ -3,8 +3,9 @@ title: "About the Microsoft 365 admin mobile app"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -33,6 +34,8 @@ description: "Get the Microsoft 365 Admin app, your companion to the web-based M
 
 # About the Microsoft 365 Admin mobile app
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), and from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), as well as from Microsoft 365 Admin app link in the upper right in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
@@ -54,7 +57,7 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
 > [!IMPORTANT]
 > If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
 
-## Watch: Install the admin mobile app
+## Watch: Install and use the admin mobile app
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198017).
 
@@ -74,10 +77,6 @@ You must be an administrator in a Microsoft 365 organization to use the admin mo
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-
-## Watch: Install and use the admin mobile app
-
-[!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## Frequently asked questions
 

@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/28/2022
+ms.date: 06/06/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -57,7 +57,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploy Removable Storage Access Control by using Intune OMA-URI
 
-Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
+Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
 
 1. Enable or Disable Device control (Optional):
 
@@ -108,8 +108,10 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
        - **Custom XML** as selected XML file
 
          Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's a [group example XML file for any removable storage and CD-ROM and Windows portable devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
+         
+   To get the GroupId, sign in to the **Microsoft Intune admin center** and select **Groups** > **Copy the Object ID**.
 
-       :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
+      :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
 
    > [!NOTE]
    > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
@@ -257,7 +259,7 @@ For this scenario, you need to create two groups: one removable storage group fo
 
 ## Deploy Removable Storage Access Control by using Intune user interface
 
-This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>).
+This capability is available in the Microsoft Intune admin center (<https://endpoint.microsoft.com/>).
 
 Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 

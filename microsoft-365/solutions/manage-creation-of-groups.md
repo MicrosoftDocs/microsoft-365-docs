@@ -3,6 +3,7 @@ title: "Manage who can create Microsoft 365 Groups"
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin

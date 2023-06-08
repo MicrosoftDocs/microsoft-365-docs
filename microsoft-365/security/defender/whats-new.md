@@ -9,10 +9,10 @@ ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/27/2022
+ms.date: 05/25/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -40,11 +40,41 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## June 2023
+
+- (GA) Microsoft Defender Experts for XDR is now generally available. Defender Experts for XDR augments your security operations center by combining automation and Microsoft's security analyst expertise, helping you detect and respond to threats with confidence and improve your security posture. Microsoft Defender Experts for XDR is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for XDR, see [Overview of Microsoft Defender Experts for XDR](dex-xdr-overview.md).
+
+## May 2023
+
+- (GA) [Alert tuning](investigate-alerts.md#tune-an-alert) is now generally available. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
+- (GA) [Automatic attack disruption](automatic-attack-disruption.md) is now generally available. This capability automatically disrupts human-operated ransomware (HumOR), business email compromise (BEC), and adversary-in-the-middle (AiTM) attacks.
+- (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
+
+## April 2023
+- (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
+- Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](/microsoft-365/security/intelligence/microsoft-threat-actor-naming).
+
+## March 2023 
+
+- (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
+
+This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**. [Learn more](defender-threat-intelligence.md)
+- (Preview) Complete device reports for the [`DeviceInfo` table](advanced-hunting-deviceinfo-table.md) in advanced hunting are now sent *every hour* (instead of the previous daily cadence). In addition, complete device reports are also sent whenever there is a change to any previous report. New columns were also added to the `DeviceInfo` table, along with several improvements to existing data in `DeviceInfo` and [DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md) tables.
+- (Preview) Near real-time custom detection is now available for public preview in advanced hunting custom detections. There is a new [Continuous (NRT)](custom-detection-rules.md) frequency, which checks data from events as they are collected and processed in near real-time.
+- (Preview) [Behaviors in Microsoft Defender for Cloud Apps](/defender-cloud-apps/behaviors) is now available for public preview. Preview customers can now also hunt for behaviors in advanced hunting using the [BehaviorEntities](advanced-hunting-behaviorentities-table.md) and [BehaviorInfo](advanced-hunting-behaviorinfo-table.md) tables.
+
+## February 2023
+
+- (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
+- (Preview) The [automatic attack disruption](automatic-attack-disruption.md) capability now disrupts business email compromise (BEC).
+
 ## January 2023
 
-- The new Microsoft Defender Experts for Hunting report is now available. The report's new interface now lets customers have more contextual details about the suspicious activities Defender Experts have observed in their environments. It also shows which suspicious activities have been continuously trending from month to month. For details, see [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
+- The new version of Microsoft Defender Experts for Hunting report is now available. The report's new interface now lets customers have more contextual details about the suspicious activities Defender Experts have observed in their environments. It also shows which suspicious activities have been continuously trending from month to month. For details, see [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
 
-- (GA) Live Response is now generally available for macOS and Linux. 
+- (GA) Live Response is now generally available for macOS and Linux.
+
+- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft 365 Defender. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user’s identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
 
 ## December 2022
 
@@ -54,6 +84,10 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) Microsoft Defender Experts for XDR (Defender Experts for XDR) is now available for preview. Defender Experts for XDR is a managed detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Microsoft 365 Defender workloads: Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD). For details, refer to [Expanded Microsoft Defender Experts for XDR preview](dex-xdr-overview.md).
 - (Preview) The query resource report is now available in advanced hunting. The report shows your organization's consumption of CPU resources for hunting based on queries that ran in the last 30 days using any of the hunting interfaces. See [View query resources report](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) to find inefficient queries.
+
+## October 2022
+
+- (Preview) The new automatic attack disruption capability is now in preview. This capability combines security research insights and advances AI models to automatically contain attacks in progress. Automatic attack disruption also provides more time to security operations centers (SOCs) to fully remediate an attack and limits an attack's impact to organizations. This preview automatically disrupts ransomware attacks.
 
 ## August 2022
 
@@ -69,6 +103,7 @@ You can also get product updates and important notifications through the [messag
 - (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
 
 - The newly introduced Automated investigation & response card in the Microsoft 365 Defender portal provides an overview on pending remediation actions.
+
 The security operations team can view all actions pending approval, and the stipulated time to approve those actions in the card itself. The security team can quickly navigate to the Action center and take appropriate remediation actions. The Automated investigation & response card also has a link to the Full Automation page. This enables the security operations team to effectively manage alerts and complete remediation actions in a timely manner.
 
 ## May 2022
@@ -83,7 +118,6 @@ The security operations team can view all actions pending approval, and the stip
 ## March 2022
 
 - (Preview) The incident queue has been enhanced with several features designed to help your investigations. Enhancements include capabilities such as ability to search for incidents by ID or name, specify a custom time range, and others.
-
 
 ## December 2021
 
@@ -170,3 +204,5 @@ The security operations team can view all actions pending approval, and the stip
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md)
 
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
+
+

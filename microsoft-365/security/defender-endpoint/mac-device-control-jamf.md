@@ -1,6 +1,6 @@
 ---
-title: Examples of device control policies for JAMF
-description: Learn how to use device control policies using examples that can be used with JAMF.
+title: Deploy and manage device control using JAMF 
+description: Learn how to use device control policies using JAMF.
 keywords: microsoft, defender, endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, jamf
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
@@ -17,203 +17,64 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/31/2023
 ---
 
-# Examples of device control policies for JAMF
+# Deploy and manage Device Control using JAMF
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This document contains examples of device control policies that you can customize for your own organization. These examples are applicable if you are using JAMF to manage devices in your enterprise.
+Microsoft Defender for Endpoint Device Control feature enables you to audit, allow, or prevent the read, write, or execute access to removable storage, and allows you to manage iOS and Portable device and Bluetooth media with or without exclusions.
 
-## Restrict access to all removable media
+## Licensing requirements
 
-The following example restricts access to all removable media. Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>deviceControl</key>
-    <dict>
-        <key>removableMediaPolicy</key>
-        <dict>
-            <key>enforcementLevel</key>
-            <string>block</string>
-            <key>permission</key>
-            <array>
-                <string>none</string>
-            </array>
-        </dict>
-    </dict>
-</dict>
-</plist>
-```
+[!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
-## Set all removable media to be read-only
+## Deploy policy by using JAMF
 
-The following example configures all removable media to be read-only. Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.
+### Step 1: Create policy JSON
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>deviceControl</key>
-    <dict>
-        <key>removableMediaPolicy</key>
-        <dict>
-            <key>enforcementLevel</key>
-            <string>block</string>
-            <key>permission</key>
-            <array>
-                <string>read</string>
-            </array>
-        </dict>
-    </dict>
-</dict>
-</plist>
-```
+Now, you have ‘groups’ and ‘rules’ and ‘settings’, combine ‘settings’ and ‘groups’ and rules into one JSON, here is the demo file: [mdatp-devicecontrol/deny_removable_media_except_kingston.json at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/examples/deny_removable_media_except_kingston.json). Make sure to validate your policy with the JSON schema so your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
 
-## Disallow program execution from removable media
+See [Device Control for macOS](mac-device-control-overview.md) for information about settings, rules and groups.
 
-The following example shows how program execution from removable media can be disallowed. Note the `read` and `write` permissions that are applied at the top level of the policy.
+### Step 2: Update MDE Preferences Schema
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>deviceControl</key>
-    <dict>
-        <key>removableMediaPolicy</key>
-        <dict>
-            <key>enforcementLevel</key>
-            <string>block</string>
-            <key>permission</key>
-            <array>
-                <string>read</string>
-                <string>write</string>
-            </array>
-        </dict>
-    </dict>
-</dict>
-</plist>
-```
+The [MDE Preferences schema](https://github.com/microsoft/mdatp-xplat/blob/master/macOS/schema/schema.json) has been updated to include the new `deviceControl/policy` key. The existing MDE Preferences configuration profile should be updated to use the new schema file’s content.
 
-## Restrict all devices from specific vendors
+:::image type="content" source="images/macos-device-control-jamf-mde-preferences-schema.png" alt-text="Shows where to edit the Microsoft Defender for Endpoint Preferences Schema to update." lightbox="images/macos-device-control-jamf-mde-preferences-schema.png":::
 
-The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`). All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
+### Step 3: Add Device Control Policy to MDE Preferences
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>deviceControl</key>
-    <dict>
-        <key>removableMediaPolicy</key>
-        <dict>
-            <key>enforcementLevel</key>
-            <string>block</string>
-            <key>permission</key>
-            <array>
-                <string>read</string>
-                <string>write</string>
-                <string>execute</string>
-            </array>
-            <key>vendors</key>
-            <dict>
-                <key>fff0</key>
-                <dict>
-                    <key>permission</key>
-                    <array>
-                        <string>none</string>
-                    </array>
-                </dict>
-                <key>4525</key>
-                <dict>
-                    <key>permission</key>
-                    <array>
-                        <string>none</string>
-                    </array>
-                </dict>
-            </dict>
-        </dict>
-    </dict>
-</dict>
-</plist>
-```
+A new ‘Device Control’ property will now be available to add to the UX.  
 
-## Restrict specific devices identified by vendor ID, product ID, and serial number
+1. Select the topmost **Add/Remove properties** button, then select **Device Control** and press **Apply**.
 
-The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
+:::image type="content" source="images/macos-device-control-jamf-device-control-property.png" alt-text="Shows how to add Device Control in Microsoft Defender for Endpoint" lightbox="images/macos-device-control-jamf-device-control-property.png":::
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>deviceControl</key>
-    <dict>
-        <key>removableMediaPolicy</key>
-        <dict>
-            <key>enforcementLevel</key>
-            <string>block</string>
-            <key>permission</key>
-            <array>
-                <string>read</string>
-                <string>write</string>
-                <string>execute</string>
-            </array>
-            <key>vendors</key>
-            <dict>
-                <key>fff0</key>
-                <dict>
-                    <key>permission</key>
-                    <array>
-                        <string>read</string>
-                        <string>write</string>
-                        <string>execute</string>
-                    </array>
-                    <key>products</key>
-                    <dict>
-                        <key>1000</key>
-                        <dict>
-                            <key>permission</key>
-                            <array>
-                                <string>read</string>
-                                <string>write</string>
-                                <string>execute</string>
-                            </array>
-                            <key>serialNumbers</key>
-                            <dict>
-                                <key>04ZSSMHI2O7WBVOA</key>
-                                <array>
-                                  <string>none</string>
-                                </array>
-                                <key>04ZSSMHI2O7WBVOB</key>
-                                <array>
-                                  <string>none</string>
-                                </array>
-                            </dict>
-                        </dict>
-                    </dict>
-                </dict>
-            </dict>
-        </dict>
-    </dict>
-</dict>
-</plist>
-```
+2. Next, scroll down until you see the **Device Control** property (it will be the bottommost entry), and select **Add/Remove properties** directly underneath it.
 
-## Related topics
+3. Select **Device Control Policy**, and then click **Apply**.  
 
-- [Overview of device control for macOS](mac-device-control-overview.md)
+:::image type="content" source="images/macos-device-control-jamf-device-control-add-remove-property.png" alt-text="Shows how to apply Device Control Policy in Microsoft Defender for Endpoint." lightbox="images/macos-device-control-jamf-device-control-add-remove-property.png":::
+
+4. To finish, copy and paste the Device Control policy JSON into the text box, and save your changes to the configuration profile.
+
+:::image type="content" source="images/macos-device-control-jamf-device-control-policy-json.png" alt-text="Shows where to add the Device Control policy JSON in Microsoft Defender for Endpoint." lightbox="images/macos-device-control-jamf-device-control-policy-json.png":::
+
+## See also
+
+- [Device Control for macOS](mac-device-control-overview.md)
+- [Deploy and manage Device Control using Intune](mac-device-control-intune.md)
+- [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)

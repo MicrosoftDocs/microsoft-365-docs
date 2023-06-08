@@ -4,8 +4,10 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
+ms.date: 10/12/2022
 audience: admin
-ms.topic: article
+ms.topic: conceptual
+ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -49,12 +51,4 @@ If you need it enabled on your document library, contact your Microsoft 365 admi
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#structured-document-processing).
 
-## See also
 
-[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
-
-[Train a structured document processing model](create-a-form-processing-model.md)
-
-[Power Automate documentation](/power-automate/)
-
-[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 11/25/2022
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -20,7 +20,7 @@ search.appverid:
 description: "This article describes the prerequisites and configuration of the Microsoft Purview Data Loss Prevention migration assistant for Symantec."
 ---
 
-# Get started with the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+# Get started with the Microsoft Purview Data Loss Prevention migration assistant for Symantec
 
 This article walks you through the prerequisites and installation of the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
 
@@ -77,7 +77,7 @@ Follow these steps to install the Microsoft Purview Data Loss Prevention migrati
 
 ## Next steps
 
-Now that you have installed Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview), you're ready to move on to your next step where you use the migration assistant.
+Now that you have installed Microsoft Purview Data Loss Prevention migration assistant for Symantec, you're ready to move on to your next step where you use the migration assistant.
 
 - [Using the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-use.md)
 
@@ -85,5 +85,5 @@ Now that you have installed Microsoft Purview Data Loss Prevention migration ass
 
 - [Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

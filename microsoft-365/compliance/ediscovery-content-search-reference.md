@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -189,7 +190,7 @@ Here are a few things to keep in mind when searching inactive mailboxes.
 
 - If an existing content search includes a user mailbox and that mailbox is made inactive, the content search will continue to search the inactive mailbox when you rerun the search after it becomes inactive.
 
-- Sometimes a user may have an active mailbox and an inactive mailbox that have the same SMTP address. In this case, only the specific mailbox that you select as a location for a content search is searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes are searched. Only the mailbox that you explicitly add to the search is searched.
+- Sometimes a user may have an active mailbox and an inactive mailbox that have different SMTP addresses. In this case, only the specific mailbox that you select as a location for a content search is searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes are searched. Only the mailbox that you explicitly add to the search is searched.
 
 - You can use Security & Compliance PowerShell to create a content search to search an inactive mailbox. To do this, you have to pre-append a period ( . ) to the email address of the inactive mailbox. For example, the following command creates a content search that searches an inactive mailbox with the email address pavelb@contoso.onmicrosoft.com:
 
@@ -250,3 +251,7 @@ Keep the following things in mind when using search permissions filters to searc
 - The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters are searched when you search mailboxes.
 
 For more information about using search permissions filters in a multi-geo environment, see the "Searching and exporting content in Multi-Geo environments" section in [Set up compliance boundaries for eDiscovery investigations](ediscovery-set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
+
+## Need help with eDiscovery issues?
+
+Check out the [Resolve common eDiscovery issues](/microsoft-365/troubleshoot/ediscovery/resolve-ediscovery-issues) article for basic troubleshooting steps that you can take to identify and resolve issues that you might encounter during an eDiscovery search or elsewhere in the eDiscovery process.
