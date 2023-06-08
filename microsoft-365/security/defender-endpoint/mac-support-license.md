@@ -73,15 +73,15 @@ Depending on the deployment management tool used, please follow the instructions
 
 |Management|Onboarding instructions (License deployment instructions)|
 |-|-|
-|Intune|[Onboarding blob](microsoft-365/security/defender-endpoint/mac-install-with-intune.md?view=o365-worldwide#onboarding-blob)|
-|JamF|[Onboarding package](microsoft-365/security/defender-endpoint/mac-jamfpro-policies.md?view=o365-worldwide#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)|
-|Other MDM|[License settings](microsoft-365/security/defender-endpoint/mac-install-with-other-mdm.md?view=o365-worldwide#license-settings)|
-|Manual installation| Go thru [Download onboarding package](microsoft-365/security/defender-endpoint/mac-install-manually.md?view=o365-worldwide#download-installation-and-onboarding-packages) and go thru the registration of the license according to [client-configuration](microsoft-365/security/defender-endpoint/mac-install-manually.md?view=o365-worldwide#client-configuration)|
+|Intune|[Onboarding blob](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide#onboarding-blob)|
+|JamF|[Onboarding package](/microsoft-365/security/defender-endpoint/mac-jamfpro-policies?view=o365-worldwide#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)|
+|Other MDM|[License settings](/microsoft-365/security/defender-endpoint/mac-install-with-other-mdm?view=o365-worldwide#license-settings)|
+|Manual installation| Go thru [Download onboarding package](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide#download-installation-and-onboarding-packages) and go thru the registration of the license according to [client-configuration](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide#client-configuration)|
 
 >[!TIP] 
 > If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
 
-For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](microsoft-365/security/defender-endpoint/mac-updates.md?view=o365-worldwide) the agent.
+For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](/microsoft-365/security/defender-endpoint/mac-updates?view=o365-worldwide) the agent.
 
 To assign a license to the end-user, do the following:
 1. In the Microsoft 365 Defender portal (security.microsoft.com), click on **Settings -> Endpoints -> Licenses**. 
