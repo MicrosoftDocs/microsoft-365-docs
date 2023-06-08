@@ -23,7 +23,9 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy Teams at scale
+      - name: Deploy dynamic Teams at scale
+        href: deploy-dynamic-teams-at-scale.md
+      - name: Deploy Teams at scale with PowerShell
         href: deploy-teams-at-scale.md
     - name: Manage devices
       items:

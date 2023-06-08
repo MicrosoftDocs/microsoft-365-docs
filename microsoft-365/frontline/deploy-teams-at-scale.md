@@ -1,7 +1,7 @@
 ---
-title: Deploy Teams at scale for frontline workers
-author: LanaChin
-ms.author: v-lanachin
+title: Deploy Teams at scale with PowerShell for frontline workers
+author: daisyfell
+ms.author: daisyfeller
 ms.reviewer: rahuldey
 manager: samanro
 ms.topic: how-to
@@ -21,7 +21,7 @@ appliesto:
 ms.date: 10/28/2022
 ---
 
-# Deploy Teams at scale for frontline workers
+# Deploy Teams at scale with PowerShell for frontline workers
 
 ## Overview
 
