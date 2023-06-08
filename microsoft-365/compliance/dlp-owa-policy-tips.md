@@ -16,7 +16,6 @@ ms.localizationpriority: medium
 ms.collection:
 - tier3
 - purview-compliance
-hideEdit: true
 feedback_system: None
 recommendations: false
 description: "DLP policy tip reference for Outlook 2013 for Win32."
