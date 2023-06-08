@@ -330,7 +330,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 4. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-5. For the page **Assign admin units**: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+5. For the page **Assign admin units**: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), auto-labeling policies can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
     
@@ -341,8 +341,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > For organizations that are using administrative units:
     >
-    > - If you selected the option to use administrative units in the previous step, the locations for SharePoint sites and OneDrive accounts become unavailable. Only auto-labeling policies exclusingly for Exchange support administrative units.
-    > - When you use the **Included** or **Excluded** options, you will  see and can select only users from the administrative units selected in the previous step.
+    > - When you use the **Included** or **Excluded** options, you will see and can select only users from the administrative units selected in the previous step.
     
     If you use the **Included** or **Excluded** options:
     
