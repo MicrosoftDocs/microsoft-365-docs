@@ -344,7 +344,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > For organizations that are using administrative units:
     
-    > - If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies Exchange and OneDrive support administrative units.
+    > - If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies for Exchange and OneDrive support administrative units.
     > - When you use the **Included** or **Excluded** options, you will see and can select only users from the administrative units selected in the previous step.
     > - 
     
