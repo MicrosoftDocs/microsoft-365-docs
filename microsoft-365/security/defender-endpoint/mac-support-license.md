@@ -40,7 +40,6 @@ While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-en
 
 Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking the **Action Needed** prompt will bring up the following licensing error message: 
 
-
 When you click on it, you might see\
 "Action Needed"
 
