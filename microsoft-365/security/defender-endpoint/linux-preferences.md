@@ -63,14 +63,14 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-- Real-time (`real_time`): Real-time protection (scan files as they're accessed) is enabled.
+- Real-time (`real_time`): Real-time protection (scan files as they're modified) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
-- Passive (`passive`): Runs the antivirus engine in passive mode. In this:
-  - Real-time protection is turned off.
-  - On-demand scanning is turned on.
-  - Automatic threat remediation is turned off.
-  - Security intelligence updates are turned on.
+- [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
+  - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
+  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
+  - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
 |Description|Value|
 |---|---|
@@ -453,7 +453,7 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"real_time",
+      "enforcementLevel":"passive",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
@@ -491,7 +491,7 @@ The following configuration profile contains entries for all settings described 
          "restore"
       ],
       "nonExecMountPolicy":"unmute",
-      "unmonitoredFilesystems": ["nfs"],
+      "unmonitoredFilesystems": ["nfs,fuse"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {

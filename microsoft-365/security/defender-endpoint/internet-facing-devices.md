@@ -67,6 +67,9 @@ You can use filters to focus in on internet-facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-endpoint/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-endpoint/internet-facing-filter.png":::
 
+> [!NOTE]
+> If no new events for a device occur for 48 hours, the Internet-facing tag is removed and it will no longer be visible in the Microsoft 365 Defender portal.
+
 ## Investigate your internet-facing devices
 
 To learn more about an internet-facing device, select the device in the device inventory to open its flyout pane:

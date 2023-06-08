@@ -62,7 +62,7 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions & Roles**, and then select **Roles** under **Email and Collaboration**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
 2. On the **Permissions** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
@@ -83,7 +83,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
    ```powershell
-   Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   Add-RoleGroupMember "<Role Group Name>" -Member "<Azure Security Group>"`
    ```
 
 ## Test your configuration of PIM with Defender for Office 365
