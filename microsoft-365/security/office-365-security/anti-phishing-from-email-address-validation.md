@@ -45,7 +45,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).
 
-- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
+- The `5322.From` address (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
 
 The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 
