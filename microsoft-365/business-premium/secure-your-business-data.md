@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your business data with Microsoft 365 for business
+title: Top 10 ways to secure your data with Microsoft 365 for business
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn best practices to protect your business from ransomware, phishing, and malicious URLs or attachments with Microsoft 365 for business."
+description: "Learn best practices to protect your data using Micrsoft 365 Business Basic, Standard, or Premium. Protect devices, email, files, and accounts."
 ---
 
 # Secure your data with Microsoft 365 for business

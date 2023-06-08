@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/18/2022
+ms.date: 06/06/2023
 ---
 
 # Microsoft Virus Initiative
@@ -27,7 +27,7 @@ The Microsoft Virus Initiative (MVI) helps organizations develop better-together
 ## Become a member
 
 > [!NOTE]
-> The MVI Program is not currently accepting new applications for membership. Please contact MVI@microsoft.com for more information.
+> The MVI Program is not currently accepting new applications for membership but will reopen for new member applications on June 1, 2023. Please contact MVI@microsoft.com for more information.
 
 You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. 
 
