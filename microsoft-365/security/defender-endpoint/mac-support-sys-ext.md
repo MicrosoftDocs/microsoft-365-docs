@@ -584,7 +584,7 @@ If you run systemextensionsctl list, you'll see a screen as shown in the followi
 
 1. Confirm that the Microsoft Defender extension has full disk access; if not, check the **Microsoft Defender** checkbox.
  
-   :::image type="content" source="images/check-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="images/check-md-checkbox.png":::
+   :::image type="content" source="images/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="images/check-md-checkbox.png":::
 
 ##### Notifications
 
