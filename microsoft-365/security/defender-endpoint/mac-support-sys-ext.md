@@ -503,57 +503,57 @@ You might see the prompt that's shown in the following screenshot:
 
    :::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
 
-2. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
+1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
    :::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
 
-3. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
+1. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 
    :::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
 
-4. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
+1. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
    :::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
 
-5. Select **Action needed**. The screen as shown in the following screenshot appears:
+1. Select **Action needed**. The screen as shown in the following screenshot appears:
 
    :::image type="content" source="images/virus-and-threat-protection-screen.png" alt-text="The Virus & threat protection screen containing the Fix button." lightbox="images/virus-and-threat-protection-screen.png":::
 
-6. Click **Fix** on the top-right corner of this screen. You'll get a prompt, as shown in the following screenshot:
+1. Click **Fix** on the top-right corner of this screen. You'll get a prompt, as shown in the following screenshot:
 
    :::image type="content" source="images/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="images/prompt-on-virus-and-threat-protection-screen.png":::
 
-7. Enter your password and select **OK**.
-8. Click 
+1. Enter your password and select **OK**.
+1. Click 
    :::image type="content" source="images/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="images/system-preferences-icon.png":::
 
    The **System Preferences** screen appears.
 
    :::image type="content" source="images/system-preferences-screen.png" alt-text="The System Preferences screen." lightbox="images/system-preferences-screen.png":::
 
-9. Click **Security & Privacy**. The **Security & Privacy** screen appears.
+1. Click **Security & Privacy**. The **Security & Privacy** screen appears.
 
    :::image type="content" source="images/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="images/security-and-privacy-screen.png":::
 
-10. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
+1. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
 
-    :::image type="content" source="images/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="images/prompt-on-security-and-privacy-screen.png":::
+   :::image type="content" source="images/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="images/prompt-on-security-and-privacy-screen.png":::
 
-11. Enter your password and click **Unlock**. The screen as shown in the following screenshot appears:
+1. Enter your password and click **Unlock**. The screen as shown in the following screenshot appears:
 
-    :::image type="content" source="images/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="images/screen-on-clicking-unlock.png":::
+   :::image type="content" source="images/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="images/screen-on-clicking-unlock.png":::
 
-12. Select **Details**, next to **Some software system requires your attention before it can be used**.
+1. Select **Details**, next to **Some software system requires your attention before it can be used**.
 
-    :::image type="content" source="images/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="images/screen-on-clicking-details.png":::
+   :::image type="content" source="images/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="images/screen-on-clicking-details.png":::
 
-13. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot appears:
+1. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot appears:
 
-    :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
+   :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
 
-14. On the **“Microsoft Defender” Would like to Filter Network Content** pop-up screen, click **Allow**.
+1. On the **“Microsoft Defender” Would like to Filter Network Content** pop-up screen, click **Allow**.
 
-15. On the **Microsoft Defender wants to make changes** pop-up screen, enter your password and select **OK**.
+1. On the **Microsoft Defender wants to make changes** pop-up screen, enter your password and select **OK**.
 
 If you run systemextensionsctl list, you'll see a screen as shown in the following screenshot:
 
