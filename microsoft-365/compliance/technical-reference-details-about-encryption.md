@@ -56,28 +56,50 @@ Use this table to figure out if you have to take action:
 |Client Applications|Service Applications|Action Required?| What do I need to do?
 |:-----|:-----|:-----|:-----|
 |Microsoft 365 Apps|Exchange Online, SharePoint Online |No|N/A|
-|Office 2013, 2016, 2019, or 2021|Exchange Online, SharePoint Online| Yes (Optional)| ??? What is the optional step they can take for Office Pro Plus? |
+|Office 2013, 2016, 2019, or 2021|Exchange Online, SharePoint Online| Yes (Optional)| See [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
 |Microsoft 365 Apps|Exchange Server or hybrid|Yes (Mandatory)| See [Set up Exchange Server for AES256-CBC support](#set-up-exchange-server-for-aes256-cbc-support).|
+|Office 2013, 2016, 2019, or 2021|Exchange Server or hybrid| Yes (Mandatory)| Complete [Option 1](#option-1) (required), and then see [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
 |Microsoft 365 Apps|MIP SDK|Yes (Optional)| See [Set up MIP SDK for AES256-CBC support](#set-up-mip-sdk-for-aes256-cbc-support).|
 |Any|SharePoint Server|No|N/A||
+
+#### Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode
+
+You'll need to configure Office 2013, 2016, 2019, or 2021 to use AES256-CBC mode using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version XXXX of Microsoft 365 Apps, CBC mode is used by default. Use the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+
+For example, to force CBC mode, select the group policy setting as follows:
+
+Encryption mode for Information Rights Management (IRM): [1, Cipher Block Chaining (CBC)]
 
 #### Set up Exchange Server for AES256-CBC support
 
 Exchange Server doesn't support decrypting content that uses AES256-CBC. To work around this problem, you have two options.
 
-Option #1
+##### Option 1
 
-- Install the hotfix on your Exchange Servers when it becomes available. For the most recent information about ship dates, see the [Microsoft 365 product roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=117576).  
+Customers using Exchange Online with the Azure Rights Management Connector service deployed will be opted out of the AES256-CBC publishing change in both Exchange Online and SharePoint Online.
 
-- If you're using Exchange Server with the Azure Rights Management Connector Service, you'll need to run the GenConnectorConfig.ps1 script will on each Exchange server. For more information, see[Configure servers for the Rights Management connector](/azure/information-protection/configure-servers-rms-connector). To download the Azure RMS connector, see the [official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40839)
+To move to AES256-CBC mode, complete these steps:
 
-Option #2
+1. Install the hotfix on your Exchange Servers when it becomes available. For the most recent information about ship dates, see the [Microsoft 365 product roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=117576).  
 
-Deploy group policy or client settings that force Microsoft 365 clients to ECB mode.
+2. If you're using Exchange Server with the Azure Rights Management Connector Service, you'll need to run the GenConnectorConfig.ps1 script on each Exchange server. For more information, see [Configure servers for the Rights Management connector](/azure/information-protection/configure-servers-rms-connector). To download the Azure RMS connector, see the [official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40839)
 
-Customers using Exchange Online with the Azure Rights Management Connector service deployed will be opted out of the AES256-CBC publishing change in both Exchange Online and SharePoint Online. Once your organization has installed the patch across Exchange Server, open a support case and request these services to be enabled for AES256-CBC publishing.  
+Once your organization has installed the patch across all of your Exchange Servers, open a support case and request these services to be enabled for AES256-CBC publishing.  
 
-Office for Mac details: https://learn.microsoft.com/deployoffice/mac/preferences-office#security 
+##### Option 2
+
+This option gives you some extra time before you need to patch all of your Exchange servers.
+
+If you're unable to complete the steps in [option 1](#option-1) when the hotfix becomes available, you'll need to deploy group policy or client settings that force Microsoft 365 clients to keep using AES128-ECB mode. Deploy this setting using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version XXXX of Microsoft 365 Apps, CBC mode is used by default. You can configure Office and Microsoft 365 Apps for Windows to use ECB or CBC mode with the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+
+For example, to force EBC mode for Windows clients, set the group policy setting as follows:
+
+Encryption mode for Information Rights Management (IRM): [2, Electronic Codebook (ECB)]
+
+To configure settings for Office for Mac clients, see [Set suite-wide preferences for Office for Mac](/deployoffice/mac/preferences-office).
+
+As soon as you can, complete the steps in [option 1](#set-up-exchange-server-for-aes256-cbc-support).
+
 
 #### Set up MIP SDK for AES256-CBC support
 
@@ -100,7 +122,7 @@ To maintain a secure connection to Office 365 and Microsoft 365 services, all cl
   
 ## Deprecating support for 3DES
 
-Since October 31, 2018, Microsoft 365 no longer supports the use of 3DES cipher suites for communication to Microsoft 365. More specifically, Microsoft 365 no longer supports the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher suite. Since February 28, 2019, this cipher suite has been disabled in Microsoft 365. Clients and servers that communicate with Microsoft 365 must support one or more of the supported ciphers. For a list of supported ciphers, see [TLS cipher suites supported by Office 365](#tls-cipher-suites-supported-by-office-365).
+Since October 31, 2018, Microsoft 365 no longer supports the use of 3DES cipher suites for communication to Microsoft 365. More specifically, Microsoft 365 no longer supports the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher suite. Since February 28, 2019, this cipher suite has been disabled in Microsoft 365. Clients and servers that communicate with Microsoft 365 must support one or more of the supported ciphers. For a list of supported ciphers, see [TLS cipher suites supported by Microsoft 365](#tls-cipher-suites-supported-by-microsoft-365).
   
 ## Deprecating SHA-1 certificate support in Microsoft 365
 
