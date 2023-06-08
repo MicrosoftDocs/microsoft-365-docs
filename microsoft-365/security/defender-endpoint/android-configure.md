@@ -104,8 +104,11 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     |Automatic Remediation of Network Protection Alerts|1 - Enable (default) , 0 - Disable ; This setting is used by IT admins to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access points or deleting suspicious certificates detected by Defender|
     |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable; This setting is managed by IT Admin to enable, audit or disable open network detection. In audit mode, alerts will be send only to the ATP portal with no user side experience. For user experience, set the config in enabled mode.|  
     |Manage Network protection Detection for Certificates|0 - Disable , 1 - Audit mode (default) , 2 - Enable ; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications is displayed to the user when defender detects a bad certificate.Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value ,when the feature is enabled with value as 2, end user notifications are sent to the user when defender detects a bad certificate and alerts are also sent to the SOC Admin|
+
 6. Add the required groups on which the policy will have to be applied. Review and create the policy.
 
+    | Configuration Key| Description|
+    |---|---|
     |Enable Network protection in Microsoft Defender|1: Enable <br/> 0: Disable (default) <br/><br/> This setting is used by the IT admin to enable or disable the network protection capabilities in the Defender app.|
     |Enable Network Protection Privacy|1: Enable (default) <br/> 0: Disable <br/><br/> This setting is managed by IT admins to enable or disable privacy in network protection.|
     |Enable Users to Trust Networks and Certificates|1 <br/> Enable <br/> 0:Disable (default) <br/><br/> This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
