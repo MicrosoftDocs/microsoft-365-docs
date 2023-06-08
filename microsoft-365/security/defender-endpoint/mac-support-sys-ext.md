@@ -442,6 +442,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     </dict>
 </plist>
 ```
+
 2. Verify that the above file was copied correctly by running the **plutil** utility in the Terminal:
 
 ```BashCopy
@@ -452,7 +453,8 @@ For example, if the file was stored in Documents:
 ```BashCopy
 $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
 ```
-1. Verify that the above file was copied correctly by running the plutil utility in the Terminal:
+
+3. Verify that the above file was copied correctly by running the plutil utility in the Terminal:
 
 ```BashCopy
 $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
@@ -464,13 +466,13 @@ For example, if the file was stored in Documents:
 $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
 ```
 
-3. Verify that the command outputs **OK**
+4. Verify that the command outputs **OK**
 
 ```BashCopy
 <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
 ```
 
-4. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
+5. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
 5. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
 ```BashCopy
@@ -482,6 +484,7 @@ For example, if the certificate name is *SigningCertificate* and the signed file
 ```BashCopy
 $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
 ```
+
 6. From the JAMF portal, navigate to **Configuration Profiles** and select the **Upload** button. Select **com.microsoft.network-extension.signed.mobileconfig** when prompted for the file.
 
 #### Other MDM
