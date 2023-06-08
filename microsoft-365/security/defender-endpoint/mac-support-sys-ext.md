@@ -84,19 +84,19 @@ If you didn't approve the system extension during the deployment/installation of
 
 1. Check the system extensions by running the following command in the terminal:
 
-```BashCopy
-systemextensionsctl list
-```
+   ```BashCopy
+   systemextensionsctl list
+   ```
 
-:::image type="content" source="images/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="images/check-system-extension.png":::
+   :::image type="content" source="images/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="images/check-system-extension.png":::
 
 You'll notice that both Microsoft Defender for Endpoint on macOS extensions are in the **[activated waiting for user]** state.
 
 2. In the terminal, run the following command:
 
-```BashCopy
-mdatp health --details system_extensions
-```
+   ```BashCopy
+   mdatp health --details system_extensions
+   ```
 
 You'll get the following output:
 
@@ -107,6 +107,7 @@ network_extension_installed		        : true
 endpoint_security_extension_ready		: false
 endpoint_security_extension_installed	: true
 ```
+
 This output is depicted in the following screenshot:
 
 :::image type="content" source="images/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="images/details-system-extensions-command.png":::
@@ -227,9 +228,9 @@ To approve the system extensions:
 
 The custom configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension.
 
-Save the following content to a file named *sysext.xml*:
+1. Save the following content to a file named *sysext.xml*:
 
-```powershell
+    ```powershell
    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>
@@ -324,7 +325,7 @@ Save the following content to a file named *sysext.xml*:
         </array>
     </dict>
 </plist>
-```
+  ```
 
 Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs:
 
@@ -343,8 +344,8 @@ sysext.xml: OK
 
 :::image type="content" source="images/deploy-custom-configuration-profile.png" alt-text="Deploying custom configuration profile." lightbox="images/deploy-custom-configuration-profile.png":::
 
-1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
-1. Review and create this configuration profile.
+5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
+6. Review and create this configuration profile.
 
 #### JamF
 
@@ -441,7 +442,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
     </dict>
 </plist>
 ```
-1. Verify that the above file was copied correctly by running the **plutil** utility in the Terminal:
+2. Verify that the above file was copied correctly by running the **plutil** utility in the Terminal:
 
 ```BashCopy
 $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
@@ -463,14 +464,14 @@ For example, if the file was stored in Documents:
 $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
 ```
 
-Verify that the command outputs **OK**
+3. Verify that the command outputs **OK**
 
 ```BashCopy
 <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
 ```
 
-1. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
-1. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
+4. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
+5. After the certificate is created and installed to your device, run the following command from the Terminal to sign the file:
 
 ```BashCopy
 $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
@@ -481,7 +482,7 @@ For example, if the certificate name is *SigningCertificate* and the signed file
 ```BashCopy
 $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
 ```
-1. From the JAMF portal, navigate to **Configuration Profiles** and select the **Upload** button. Select **com.microsoft.network-extension.signed.mobileconfig** when prompted for the file.
+6. From the JAMF portal, navigate to **Configuration Profiles** and select the **Upload** button. Select **com.microsoft.network-extension.signed.mobileconfig** when prompted for the file.
 
 #### Other MDM
 
@@ -497,21 +498,19 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Select **OK**. You might get a second prompt which is shown in the following screenshot:
 
-:::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
+   :::image type="content" source="images/system-extension-blocked-second-prompt.png" a    lt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
 
 2. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
-:::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
+   :::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
 
-3. On the screen displaying the **Installation succeeded** notification message, select **OK**.
+3. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 
-You'll return to the following screen:
-
-:::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
+   :::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
 
 4. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
-:::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
+   :::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
 
 5. Select **Action needed**. The screen as shown in the following screenshot appears:
 
@@ -522,7 +521,7 @@ You'll return to the following screen:
    :::image type="content" source="images/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="images/prompt-on-virus-and-threat-protection-screen.png":::
 
 7. Enter your password and select **OK**.
-8. Click the following icon: 
+8. Click 
    :::image type="content" source="images/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="images/system-preferences-icon.png":::
 
    The **System Preferences** screen appears.
