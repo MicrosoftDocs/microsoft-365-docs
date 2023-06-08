@@ -106,6 +106,10 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
     :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal" lightbox="images/assignment.png":::
 
+>[!NOTE]
+>If a config policy is to be targeted to >unenrolled devices(MAM), the >recommendation is to deploy the general >app configuration settings in a Managed >Apps instead of using Managed devices. 
+>When deploying app configuration >policies to devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. These issues are due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent these issues by ensuring that only a single app configuration policy for devices is defined and targeted for the same app and user
+
 
 ## End-user prerequisites
 - The broker app must be installed
@@ -166,11 +170,11 @@ Admins can use the following steps to enable privacy and not collect the domain 
 
 3. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
 
-4. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as true. 
+4. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as 1. 
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
-5. Assign this policy to users. By default, this value is set to false.
+5. Assign this policy to users. By default, this value is set to 0.
 
 6. Review and create the policy.
 
@@ -187,12 +191,12 @@ Use the following steps to enable Optional permissions for devices.
 
 3. Select **Microsoft Defender for Endpoint*** in public apps.
 
-4. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key and value type as Boolean. 
+4. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key. 
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
-5. To enable Optional permissions, enter value as **true** and assign this policy to users. By default, this value is set to false.
-For users with key set as true, the users will be able to onboard the app without giving these permission.
+5. To enable Optional permissions, enter value as **1** and assign this policy to users. By default, this value is set to 0.
+For users with key set as 1, the users will be able to onboard the app without giving these permission.
 
 6. Select **Next** and assign this profile to targeted devices/users.
 

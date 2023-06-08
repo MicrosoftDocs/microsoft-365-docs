@@ -115,9 +115,33 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 Xiaomi changed the battery optimization permissions in Android 11. Defender for Endpoint is not allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
+1. Install MDE app in personal profile. (Sign-in is not required) 
+2. Open company portal and tap on settings. 
+3. Go to Battery Optimization section and tap on the “Turn Off” button and then “Allow” to turn Battery optimization off for Company Portal. 
+4. Again, go to Battery Optimization section, tap on the “Turn On” button. This will now open battery saver section. 
+5. Find the Defender app and tap on it. 
+6. Tap on “No Restriction”. Go back to the Defender app in work profile and tap on allow button.  
+7. The application should not be uninstalled from personal profile for this to work. 
 
->[!IMPORTANT]
->This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
+>[!NOTE]
+>This is a temporary workaround. This cna be used to unblock onboarding on Xiaomi devices. the Defender team is working on a permanent fix. As MDE app is not onboarded in personal profile, it will not have any visibility there.
+
+## Unable to use banking applications with MDE app
+
+**Applies to:** banking apps like iMobile (ICICI), PNB one.
+
+**Cause:** Android allows apps in personal profile to check if there is a VPN active on the device, even outside of personal profile. The banking app is checking that and blocking it in case of VPN in work profile only. The banking app does not work with any other VPN product.
+
+**Solution:**
+Users will need to disable MDE VPN from settings page. The following steps can be used -
+1. Go to Settings on the mobile device.
+2. Search for VPN or open 'Network and Internet' and click on VPN.
+3. Click on Microsoft defender and select Disconnect.
+
+Users should enable VPN when they are no longer using the banking app to ensure that their devices are protected. 
+
+>[!NOTE]
+> This is a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from wihtin the app. 
 
 
 ## Send in-app feedback
