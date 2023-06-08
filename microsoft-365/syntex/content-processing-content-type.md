@@ -37,26 +37,20 @@ To set a content type when a file is added to a document library, follow these s
 3. To complete the rule statement, under **When a new file is added**:
 
     1. Select **Choose action**, and then, select **set content to to**.
-    
+
        ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
 
-    2. Select **Enter a site name or address**, and then select the site that contains the document library you want the file moved or copied to.
+    2. Select **Content Type**, and then select the appropriate content type for the file.
 
-       ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
+    3. Select **Choose file property**, and then select the appropriate property for the file.
 
-          When you select **Enter a site name or address**, you can either select from the list of recent sites or enter the name or URL of another site.
+    4. Select **Choose a condition**, and then select the appropriate condition.
 
-    3. Select **Choose a library**, and then select the document library you want the file moved or copied to.
+    5. In the **Enter a value** field, enter the appropriate value.
 
-       ![Screenshot of the rule statement page showing the choose a library option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
+       ![Screenshot of the rule statement page showing the completed statement.](../media/content-understanding/content-rule-completed-statement.png)
 
-          When you select **Choose a library**, you can either select from the list of suggested libraries or enter the name of another library.
-
-       > [!NOTE]
-       > If you try to set up a rule to move or copy a file to a library that already has a move or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).<br>      
-       >![Screenshot of the rule statement page with the message stating that the library already has a rule applied.](../media/content-understanding/content-rule-disable-rules.png)
-
-4. When your rule statement is complete, select **Create**. You'll see the new rule on the **Manage rules** page.
+4. When your rule statement is complete, select **Create**. You'll see and manage the new rule on the **Manage rules** page.
 
 ## Manage a rule
 
