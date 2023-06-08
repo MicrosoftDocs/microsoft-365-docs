@@ -230,7 +230,7 @@ The custom configuration profile enables the network extension and grants Full D
 
 1. Save the following content to a file named *sysext.xml*:
 
-    ```powershell
+```powershell
    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>
@@ -325,7 +325,7 @@ The custom configuration profile enables the network extension and grants Full D
         </array>
     </dict>
 </plist>
-  ```
+```
 
 Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs:
 
