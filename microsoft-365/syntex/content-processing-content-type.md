@@ -36,7 +36,7 @@ To set a content type when a file is added to a document library, follow these s
 
 3. To complete the rule statement, under **When a new file is added**:
 
-    1. Select **Choose action**, and then, select **set content type to**.
+    1. Select **Choose action**, and then select **set content type to**.
 
        ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
 
