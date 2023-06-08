@@ -36,12 +36,9 @@ To set a content type when a file is added to a document library, follow these s
 
 3. To complete the rule statement, under **When a new file is added**:
 
-    1. Select **Choose action**, and then:
-
-        - To copy a file, select **copy file to**.
-        - To move a file, select **move file to**.
-
-       ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
+    1. Select **Choose action**, and then, select **set content to to**.
+    
+       ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
 
     2. Select **Enter a site name or address**, and then select the site that contains the document library you want the file moved or copied to.
 
