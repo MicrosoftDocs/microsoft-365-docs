@@ -38,6 +38,8 @@ For example, you can create a rule to move files tagged with a specific customer
 
    ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
-## See also
+## Syntex processing rules
 
 [Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
+
+[Create a rule to set a content type when a file is added to a document library](content-processing-content-type.md)
