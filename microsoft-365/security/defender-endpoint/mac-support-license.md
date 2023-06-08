@@ -40,11 +40,9 @@ While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-en
 
 Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking the **Action Needed** prompt will bring up the following licensing error message: 
 
-When you click on it, you might see\
-"Action Needed"
 
 
-:::image type="content" source="images/no-license-found.png" alt-text="License error" lightbox="images/no-license-found.png":::
+:::image type="content" source="images/no-license-found.png" alt-text="Screenshot that shows a licensing error for Microsoft Defender for Endpoint on macOS shield." lightbox="images/no-license-found.png":::
 ### Message:
 
 No license found
@@ -53,29 +51,25 @@ Looks like your organization does not have a license for Microsoft 365 Enterpris
 
 Contact your administrator for help.
 
-Or
 
-In terminal, if you type "mdatp health" without the double quotes, you might see the following warning:
+Or if you type "mdatp health" in the terminal without the double quotes, you might see the following warning:
 ### Message:
-ATTENTION: No license found.  Contact your administrator for help.\
+ATTENTION: No license found. Contact your administrator for help.\
 healthy: false\
 health_issues: [“missing license”]\
 licensed: false
 
 ### Cause:
 
-You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package") which contains the license settings.
+You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but might not have run the configuration script ("Download onboarding package") that contains the license settings.
 
-or
 
-You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date.
+You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date or if you have not assigned a license to the user.
 
-or
 
-You have not assigned a license to the user.
 
 ### Solution:
-Step 1.  Depending on the deployment management tool used, please follow the instructions to onboard the package (register the license) as documented here:
+Depending on the deployment management tool used, please follow the instructions to onboard the package (register the license) as documented here:
 
 |Management|Onboarding instructions (License deployment instructions)|
 |-|-|
@@ -84,22 +78,19 @@ Step 1.  Depending on the deployment management tool used, please follow the ins
 |Other MDM|[License settings](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-with-other-mdm?view=o365-worldwide#license-settings)|
 |Manual installation| Go thru [Download onboarding package](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide#download-installation-and-onboarding-packages) and go thru the registration of the license according to [client-configuration](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide#client-configuration)|
 
-TIP: If the onboarding package runs correctly, the licensing information will be located in "/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist".
+>[!TIP] 
+> If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
 
-Step 2.  For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-updates?view=o365-worldwide) the agent.
+For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-updates?view=o365-worldwide) the agent.
 
-Step 3.  Assign a license to the end-user\
-In the Microsoft 365 Defender portal (security.microsoft.com)\
-Click on “Settings”\
-Click on “Endpoints”\
-Click on “Licenses”\
-Select your license\
-Click on “Assign licenses”\
-Enter their name or e-mail address\
-Check the box for “Microsoft Defender for Endpoint”\
-Click on “Assign”
+To assign a license to the end-user, do the following:
+1. In the Microsoft 365 Defender portal (security.microsoft.com), click on **Settings -> Endpoints -> Licenses**. 
+1. Select your license.
+1. Click **Assign licenses**.
+1. Enter the name and email address of the person being assigned.
+1. Check the box for "Microsoft Defender for Endpoint" and click **Assign**.
 
-Step 4. If the licensing issues have been resolved, when you run "mdatp health", you should see the following results:\
+If the licensing issues have been resolved, when you run "mdatp health," you should see the following results:\
 healthy: true\
 health_issues: []\
 licensed: true
