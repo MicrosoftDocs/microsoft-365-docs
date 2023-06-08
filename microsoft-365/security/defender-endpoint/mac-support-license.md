@@ -43,7 +43,6 @@ Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking t
 When you click on it, you might see\
 "Action Needed"
 
-When you click on "Action Needed", you might see:
 
 :::image type="content" source="images/no-license-found.png" alt-text="License error" lightbox="images/no-license-found.png":::
 ### Message:
