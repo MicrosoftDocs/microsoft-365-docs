@@ -28,6 +28,16 @@ For example, you can create a rule to move files tagged with a specific customer
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex.
 
+## Manage a rule
+
+1. In the document library, select **Automate** > **Rules** > **Manage rules**.
+
+   ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
+
+2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#create-a-rule-to-move-or-copy-a-file-from-one-document-library-to-another-in-microsoft-syntex) to automate actions on a specific document library.
+
+   ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
+
 ## See also
 
 [Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
