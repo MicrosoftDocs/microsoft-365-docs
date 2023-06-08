@@ -68,7 +68,7 @@ The causes for the license-not-found error message could be either of the follow
 
     |Management  |License deployment instructions (Onboarding instructions)  |
     |---------|---------|
-    |Intune     |   [Download the onboarding package](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide&branch=pr-en-us-20839)      |
+    |Intune     |   [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package&preserve-view=true)     |
     |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)     |
     |Other MDM     |     [License settings](mac-install-with-other-mdm.md#license-settings)   |
     |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Client configuration](mac-install-manually.md#client-configuration)     |
