@@ -84,6 +84,9 @@ Now in preview, sensitivity labels support [administrative units that have been 
 
 - You can define the initial scope of sensitivity label policies and auto-labeling policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
 
+> [!IMPORTANT]
+> Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the SharePoint location.
+
 For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
 
 ## Deployment strategy for sensitivity labels
