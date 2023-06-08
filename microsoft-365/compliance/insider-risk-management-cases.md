@@ -103,6 +103,7 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed in the queue:
 
+- Alert
 - Alert ID
 - Status
 - Severity
