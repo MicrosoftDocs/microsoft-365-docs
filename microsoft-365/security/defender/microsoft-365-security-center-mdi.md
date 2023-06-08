@@ -37,7 +37,7 @@ Microsoft Defender for Identity is now part of Microsoft 365 Defender. The Micro
 Microsoft Defender for Identity contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
 
 > [!IMPORTANT]
-> TBD important note about licensing
+> What you see in Microsoft 365 Defender depends on your current subscriptions and licenses. You must have a Microsoft Defender for Identity license, avaialable from the Microsoft 365 Marketplace, to view Defender for Identity data.
 
 ## Converged experiences in Microsoft 365 Defender
 
