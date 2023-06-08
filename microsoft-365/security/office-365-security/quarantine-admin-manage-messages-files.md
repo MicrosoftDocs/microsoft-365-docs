@@ -57,7 +57,10 @@ Watch this short video to learn how to manage quarantined messages as an admin.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role group.
     - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Quarantine Administrator** role group. To do quarantine procedures in Exchange Online PowerShell, you also need membership in the **Hygiene Management** role group in Exchange Online RBAC.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
+    - _Take action on quarantined messages for all users_: Membership in the **Global Administrator** or **Security Administrator** roles.
+    - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role.
+    - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader** or **Security Reader** roles.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
 
