@@ -68,10 +68,10 @@ The causes for the license-not-found error message could be either of the follow
 
     |Management  |License deployment instructions (Onboarding instructions)  |
     |---------|---------|
-    |Intune     |    [Onboarding blob](mac-install-with-intune.md)      |
-    |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md)     |
-    |Other MDM     |     [License settings](mac-install-with-other-mdm.md)    |
-    |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md); and [Client configuration](mac-install-manually.md#client-configuration)     |
+    |Intune     |   [Download the onboarding package](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide&branch=pr-en-us-20839)      |
+    |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)     |
+    |Other MDM     |     [License settings](mac-install-with-other-mdm.md#license-settings)   |
+    |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Client configuration](mac-install-manually.md#client-configuration)     |
 
     > [!NOTE]
     > If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
@@ -79,13 +79,44 @@ The causes for the license-not-found error message could be either of the follow
 2. For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to update the agent.
 
 3. In the Microsoft 365 Defender portal (security.microsoft.com):
-    1. Select **Settings**.
+    1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
+       
+       :::image type="content" source="images/endpoints-option-on-settings-screen.png" alt-text="The Settings screen on which the Endpoints option is listed." lightbox="images/endpoints-option-on-settings-screen.png":::
+ 
+       The **Endpoints** screen appears.
+     
+       :::image type="content" source="images/endpoints-screen.png" alt-text="The Endpoints screen." lightbox="images/endpoints-screen.png":::
+
     1. Select **Licenses**.
-    1. Select your license, and select **Assign licenses**.
-    1. Enter the name or email address of the person to whom you want to assign this license.
-    1. Check the **Microsoft Defender for Endpoint** checkbox.
-    1. Select **Assign**.
+     
+       :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Selecting Licenses option from the Endpoints screen." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
+       
+    1. Click **View and purchase licenses in the Microsoft 365 admin center**. The screen in the Microsoft 365 admin center portal appears, as shown in the following screenshot:
+
+       :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="The Microsoft 365 admin center portal screen from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
+
+    1. Check the checkbox of the license you want to purchase from Microsoft, and click on it. The screen displaying details of the chosen license appears:
+
+       :::image type="content" source="images/resultant-screen-of-clicking-preferred-license.png" alt-text="The screen on which you can click the option of assigning the purchased license." lightbox="images/resultant-screen-of-clicking-preferred-license.png":::
+
+    1. Click the **Assign licenses** link.
+    
+       :::image type="content" source="images/assign-licenses-link.png" alt-text="The Assign licenses link." lightbox="images/assign-licenses-link.png":::
+
+       The screen as shown in the following screenshot appears:
+
+       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="The screen containing the option + Assign licenses." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+
+    1. Select **+ Assign licenses**.
+    1. Enter the name or email address of the person to whom you want to assign this license. 
+    
+       The resultant screen displays the details of the chosen license assignee, and a list of options.
+
+       :::image type="content" source="images/assignee-details-and-options.png" alt-text="The screen displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
+ 
+    1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft 365**, and **Microsoft Defender for Endpoint**.
+    1. Select **Save**.
 
 On implementing these solution options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see results that are shown in the following screenshot:
 
