@@ -51,11 +51,11 @@ To see how user tags are part of the strategy to help protect high-impact user a
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/system (manage)** or **configuration/system (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
     - _Apply and remove existing custom user tags from users_: Membership in the **Organization Management** or **Security Administrator** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
   > [!NOTE]
   > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
