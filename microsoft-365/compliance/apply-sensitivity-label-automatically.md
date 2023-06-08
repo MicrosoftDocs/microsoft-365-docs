@@ -432,7 +432,7 @@ You can also see the results of your auto-labeling policy by using [content expl
 - **Content Explorer List Viewer** role group lets you see a file's label but not the file's contents.
 - **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups let you see the file's contents.
 
-However currently, restricted admins won't be able to see when a [sensitivity label has been applied](data-classification-activity-explorer-available-events.md#sensitivity-label-applied) in activity explorer.
+However currently, restricted admins won't be able to see labeling activities for OneDrive in activity explorer.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
