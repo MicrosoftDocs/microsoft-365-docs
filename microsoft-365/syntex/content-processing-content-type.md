@@ -42,6 +42,9 @@ To set a content type when a file is added to a document library, follow these s
 
     2. Select **Content Type**, and then select the appropriate content type for the file.
 
+       ![Screenshot of the rule statement page showing the statement options.](../media/content-understanding/content-rule-statement-options.png)
+
+
     3. Select **Choose file property**, and then select the appropriate property for the file.
 
     4. Select **Choose a condition**, and then select the appropriate condition.
