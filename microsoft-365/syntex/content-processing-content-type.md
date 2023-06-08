@@ -53,4 +53,4 @@ To set a content type when a file is added to a document library, follow these s
 
        ![Screenshot of the rule statement page showing the completed statement.](../media/content-understanding/content-rule-completed-statement.png)
 
-4. When your rule statement is complete, select **Create**. You can see and [manage the new rule](content-processing-overview#manage-a-rule) on the **Manage rules** page.
+4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview#manage-a-rule) on the **Manage rules** page.
