@@ -64,7 +64,11 @@ for example:
 
 ## Credential example 
 
-`key=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+|Confidence Band|  |
+|----|----|
+|High| `N/A` |
+|Medium| `N/A` |
+|Low| `key=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;` |
 
 ## Checksum
 
