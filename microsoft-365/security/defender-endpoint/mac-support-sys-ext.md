@@ -498,7 +498,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Select **OK**. You might get a second prompt which is shown in the following screenshot:
 
-   :::image type="content" source="images/system-extension-blocked-second-prompt.png" a    lt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
+   :::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
 
 2. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
