@@ -36,7 +36,9 @@ ms.date: 12/18/2020
 
 ## No license found
 
-While you are going through the deployment of [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and you might get the following error:
+While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **X** on top of the Microsoft Defender for Endpoint on macOS shield may appear. 
+
+Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking the **Action Needed** prompt will bring up the following licensing error message: 
 
 A x on top of the Microsoft Defender for Endpoint on macOS shield.
 
