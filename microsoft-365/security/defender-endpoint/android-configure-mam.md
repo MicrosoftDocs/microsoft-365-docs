@@ -111,7 +111,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   Select **Included groups**. Then add the relevant groups.
 
-    :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal." lightbox="images/assignment.png":
+    :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal." lightbox="images/assignment.png":::
 >[!NOTE]
 >If a config policy is to be targeted to >unenrolled devices(MAM), the >recommendation is to deploy the general >app configuration settings in a Managed >Apps instead of using Managed devices. 
 >When deploying app configuration >policies to devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. These issues are due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent these issues by ensuring that only a single app configuration policy for devices is defined and targeted for the same app and user
