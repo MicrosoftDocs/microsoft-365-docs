@@ -334,6 +334,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
     
+    > [!NOTE]
+    > If you are editing an existing policy and change the administrative units, you must now reconfigure the locations in the next step.
+    
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
     
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
@@ -341,8 +344,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > For organizations that are using administrative units:
     
-    >- If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies Exchange and OneDrive support administrative units.
+    > - If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies Exchange and OneDrive support administrative units.
     > - When you use the **Included** or **Excluded** options, you will see and can select only users from the administrative units selected in the previous step.
+    > - 
     
     If you use the **Included** or **Excluded** options:
     
@@ -427,6 +431,8 @@ You can also see the results of your auto-labeling policy by using [content expl
 
 - **Content Explorer List Viewer** role group lets you see a file's label but not the file's contents.
 - **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups let you see the file's contents.
+
+However currently, restricted admins won't be able to see when a [sensitivity label has been applied](data-classification-activity-explorer-available-events.md#sensitivity-label-applied) in activity explorer.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
