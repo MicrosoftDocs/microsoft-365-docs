@@ -203,7 +203,9 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
-### High volume of sensitive info shared or save externally (preview)
+### High volume of sensitive info shared or save externally
+
+*This feature is in preview*
 
 Microsoft 365 provides you with visibility into risky user activities outside of DLP policies. The **High volume of sensitive info shared or saved externally (preview)** card on the DLP homepage shows a count of sensitive items that users have:
 

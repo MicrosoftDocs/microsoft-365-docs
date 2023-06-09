@@ -112,10 +112,6 @@ From this page, you can:
 - Associate custom tags to DLP incidents and filter by them.
 - Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue.
 
-## High volume of sensitive info shared or saved externally (preview)
-
-
-
 ## See Also
 
 - [Get started with the data loss prevention alert dashboard](dlp-alerts-dashboard-get-started.md)
