@@ -83,10 +83,10 @@ These tasks include:
 
 1. Go to the **Microsoft 365 admin center**.
 6. In the Microsoft 365 admin center, in the left nav, select **Show all**, select **Settings**, select **Domains**, and then **Add domain**. 
-7. Enter the subdomain you previously created, then select **Use this domain**. 
+7. Enter the subdomain you previously created, then select **Use this domain**.
 8. To connect the domain, select **Continue**.
 9. Select **Add DNS records**. Depending on your domain host provider, Microsoft 365 will try to update your DNS records for the domain.
-110. When complete, select **Done**.
+10. When complete, select **Done**.
 
 ### Create a subdomain for mail routing to Google Workspace
 
