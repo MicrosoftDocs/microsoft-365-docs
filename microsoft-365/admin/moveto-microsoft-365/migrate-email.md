@@ -69,7 +69,8 @@ These tasks include:
 - Adding all mail user accounts to Microsoft 365 for users you are migrating.
 - Verifying that the Google migration admin account has the correct permissions.
 
-Completing the prerequisite tasks may require you to log into your domain hosts to create subdomains and update your DNS records. If you are not comfortable doing this, you should look for assistance with this.
+> [!NOTE]
+> Completing the prerequisite tasks may require you to log into your domain hosts to create subdomains and update your DNS records. If you are not comfortable doing this, you should look for assistance with this.
 
 ### Create a subdomain for email going to Microsoft 365
 
