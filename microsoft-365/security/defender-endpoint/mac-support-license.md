@@ -69,9 +69,9 @@ Or if you type "mdatp health" in the terminal without the double quotes, you mig
 ### Message
 
 ATTENTION: No license found. Contact your administrator for help.\
-healthy: false\
-health_issues: [“missing license”]\
-licensed: false
+healthy                                   : false\
+health_issues                             : [“missing license”]\
+licensed                                  : false
 
 ### Cause
 
