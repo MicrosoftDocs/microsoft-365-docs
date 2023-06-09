@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date: 03/01/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -83,13 +83,15 @@ If you want to remove the schema you're using for EDM-based classification, foll
 
 ### Edit or delete the EDM schema with the wizard
 
-1. Open **Compliance center** \> **Data classification** \> **Exact data matches**.
+1. Open **Compliance center** \> **Data classification** \> **Classifiers**.
 
-2. Choose **EDM schemas**.
+2. Choose **EDM classifiers**.
+ 
+3. Double-click on the EDM SIT you want to edit.
 
-3. Choose the EDM SIT you want to edit.
-
-4. Choose **Edit EDM schema** or **Delete EDM schema** from the flyout.
+4. Choose **Edit EDM sensitive info type** or **Delete EDM sensitive info type** from the flyout.
+ 
+5. Follow the steps in the wizard to complete your edits or to delete the classifier.
 
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
