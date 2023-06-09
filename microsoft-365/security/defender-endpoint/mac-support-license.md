@@ -36,11 +36,14 @@ ms.date: 12/18/2020
 
 ## No license found
 
-While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), you might get the following error:
+While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **X** on top of the Microsoft Defender for Endpoint on macOS shield may appear. 
 
-The **x** symbol on top of the Microsoft Defender for Endpoint on macOS shield, as shown in the following screenshot:
+Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking the **Action Needed** prompt will bring up the following licensing error message: 
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The error displayed when deploying Microsoft Defender for Endpoint on macOS" lightbox="images/error-mde-mac-deployment.png":::
+
+
+:::image type="content" source="images/no-license-found.png" alt-text="Screenshot that shows a licensing error for Microsoft Defender for Endpoint on macOS shield." lightbox="images/no-license-found.png":::
+### Message:
 
 When you click the **x** symbol, you might options as shown in the following screenshot:
 
@@ -54,15 +57,25 @@ You will encounter this message in a different way: In the terminal, if you ente
 
 :::image type="content" source="images/no-license-found-warning.png" alt-text="The license-not-found message when using the terminal." lightbox="images/no-license-found-warning.png":::
 
+
+Or if you type "mdatp health" in the terminal without the double quotes, you might see the following warning:
+### Message:
+ATTENTION: No license found. Contact your administrator for help.\
+healthy: false\
+health_issues: [“missing license”]\
+licensed: false
+
 ### Cause:
 
-The causes for the license-not-found error message could be either of the following causes:
+You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but might not have run the configuration script ("Download onboarding package") that contains the license settings.
 
-1. You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package") which contains the licensing settings.
-1. The Microsoft Defender for Endpoint on macOS agent isn't up to date.
-1. You haven't assigned a license to the user.
+
+You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date or if you have not assigned a license to the user.
+
+
 
 ### Solution:
+Depending on the deployment management tool used, please follow the instructions to onboard the package (register the license) as documented here:
 
 1. Depending on the deployment management tool used, follow the tool-specific instructions to onboard the package (register the license) as described in the following table:
 
