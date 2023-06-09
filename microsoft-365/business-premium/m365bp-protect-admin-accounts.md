@@ -101,4 +101,4 @@ To protect all your admin accounts, make sure to follow these recommendations:
 
 ## Next objective
 
-[Increase threat protection for Microsoft 365 Business Premium](m365bp-increase-protection.md)
+[Increase threat protection for Microsoft 365 Business Premium](m365bp-protect-against-malware-cyberthreats.md)

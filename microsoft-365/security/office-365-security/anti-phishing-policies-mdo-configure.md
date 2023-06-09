@@ -17,7 +17,7 @@ description: Admins can learn how to create, modify, and delete the advanced ant
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 4/21/2023
+ms.date: 5/3/2023
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -46,7 +46,6 @@ For anti-phishing policy procedures in organizations without Defender for Office
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -125,7 +124,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
        Back on the **Manage senders for impersonation protection** flyout, the users you selected are listed by **Display name** and **Sender email address**.
 
-       To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+       To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
        Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
@@ -161,7 +160,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
        Back on the **Manage custom domains for impersonation protection** flyout, the domains you entered are listed.
 
-       To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+       To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
        Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
@@ -187,7 +186,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
          Back on the **Sender** tab, the senders you entered are listed.
 
-         To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+         To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
          Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
@@ -206,6 +205,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
          > - `noreply@email.teams.microsoft.com`
          > - `noreply@emeaemail.teams.microsoft.com`
          > - `no-reply@sharepointonline.com`
+         > - `noreply@planner.office365.com`
 
        - **Domain** tab: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add domains**. In the **Add trusted domains** flyout that opens, enter domain in the **Domain** box, and then select the domain in drop down list that appears. Repeat this step as many times as necessary. To remove an existing entry, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: for the entry.
 
@@ -213,7 +213,7 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
          Back on the **Domain** tab, the domains you added are now listed.
 
-         To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+         To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
          Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the tab.
 
@@ -286,6 +286,17 @@ For anti-phishing policy procedures in organizations without Defender for Office
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
+     - **Honor DMARC record policy when the message when the message is detected as spoof** (currently in Preview): When this setting is turned on, you control what happens to messages where the sender fails explicit [DMARC](email-authentication-dmarc-configure.md) checks and the DMARC policy is set to `p=quarantine` or `p=reject`:
+       - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: Select one of the following actions:
+         - **Quarantine the message**: This is the default value.
+         - **Move message to the recipients' Junk Email folders**
+
+       - **If the message is detected as spoof and DMARC Policy is set as p=reject**: Select one of the following actions:
+         - **Quarantine the message**: This is the default value.
+         - **Reject the message**
+
+       For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
+
      - **If the message is detected as spoof by spoof intelligence**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
        - **Move the message to the recipients' Junk Email folders** (default)
        - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection.
@@ -325,18 +336,18 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
   - **Always on** for the default anti-phishing policy.
   - **On** or **Off** for other anti-spam policies.
 - **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-phishing-policies) section.
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-Select ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the policies by **Time range** (creation date) or **Status**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the policies by **Time range** (creation date) or **Status**.
 
-Use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box and a corresponding value to find specific anti-phishing policies.
+Use the :::image type="icon" source="../../media/search-icon.png" border="false"::: **Search** box and a corresponding value to find specific anti-phishing policies.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
 Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
-> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-phishing policies
 
@@ -424,51 +435,6 @@ Select **Yes** in the warning dialog that opens.
 
 On the **Anti-phishing** page, the deleted policy is no longer listed.
 
-## DMARC Reject (OReject) for phishing emails
-
-DMARC is an important tool for domain owners to protect their email from malicious actors. Microsoft currently uses a policy of **DMARC = Oreject**, which sends rejected emails to *quarantine in enterprise* and the *Junk folder in consumer*.
-
-To address customer needs for more control over DMARC policies, three new properties were added to the AntiPhishPolicy. These three policies will allow tenants to choose to honour the sender's DMARC policy, and set the DMARC reject, and the DMARC quarantine actions. All three properties can also be set by **command line** as well as **in the user interface**.
-
-### DMARC policies
-
-**HonorDmarcPolicy**:  
-**Type**: Boolean
-**Values**: False (default), true
-
-When the `DmarcRejectAction` and `DmarcQuarantineAction` settings are enabled, emails detected as spoofs will be rejected or moved to the junk folder depending on the sender's DMARC policy. If these settings are disabled, the existing spoof action will be followed.
-
-**DmarcRejectAction**
-**Type**: Enum
-**Values**: Quarantine (default), Reject
-
-When 'HonorDmarcPolicy' is set to 'True', emails that fail DMARC and have a sender's DMARC policy of 'p=reject', will be rejected.
-
-**DmarcQuarantineAction**
-**Type**: Enum
-**Values**: Quarantine (default), MoveToJmf
-
-When 'HonorDmarcPolicy' is set to 'True', if an email fails DMARC and the sender's DMARC policy is 'p=quarantine', the quarantine action will be taken and the mail moved to Junk.
-
-In this example for a test policy *TestPolicy1* in tenant *o365e5test017.onmicrosoft.com* we use this Powershell syntax:
-
-```PowerShell
-Get-AntiPhishPolicy -Organization o365e5test017.onmicrosoft.com -Identity TestPolicy1 | Set-AntiPhishPolicy -HonorDmarcPolicy $true -DmarcRejectAction Reject -DmarcQuarantineAction Quarantine
-```
-
-| Honour DMARC | Spoof Intelligence |
-| ------------- | ------------------ |
-| ON            | ON                |
-| Separate actions for implicit (p=None/NA) versus explicit email authentication failures. Implicit failures use the *If the message is detected as spoof* action in anti-phishing policies, while explicit email authentication failures use the *p=reject* and *p=quarantine* actions specified in anti-phishing policies. |
-| OFF           | ON                |
-| One action is taken for implicit (p=None/NA) and explicit email authentication failures, which is the *If the message is detected as spoof* action. In other words, explicit email authentication failures ignore p=reject and p=quarantine and use the *If the message is detected as spoof* action instead. |
-| ON            | OFF               |
-| Explicit email authentication failures only, but p=reject and p=quarantine actions selectable in anti-phishing policies. |
-| OFF           | OFF               |
-| Explicit email authentication failures only, p=reject and p=quarantine in DMARC records used as actions. Failing emails are handled with **p=oreject and p=oquaratine**. |
-
-:::image type="content" source="../../media/honour-dmarc-policy.png" alt-text="Under Policies and Rules, Threat Policies, Create a new Antiphishing policy for Phishing threshold and protection, admins can set honour DMARC policy under Actions.":::
-
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
 In PowerShell, the basic elements of an anti-phishing policy are:
@@ -511,20 +477,26 @@ To create an anti-phish policy, use this syntax:
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
 ```
 
+> [!NOTE]
+> The DMARC-related parameters are currently in Preview. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
+
 This example creates an anti-phish policy named Research Quarantine with the following settings:
 
 - The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).
 - The description is: Research department policy.
-- Changes the default action for spoofing detections to Quarantine, and uses the default quarantine policy for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
 - Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.
 - Specifies Quarantine as the action for domain impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedDomainQuarantineTag_ parameter).
 - Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.
 - Specifies Quarantine as the action for user impersonation detections, and uses the default quarantine policy for the quarantined messages (we aren't using the _TargetedUserQuarantineTag_ parameter).
 - Enables mailbox intelligence (_EnableMailboxIntelligence_), allows mailbox intelligence protection to take action on messages (_EnableMailboxIntelligenceProtection_), specifies Quarantine as the action for detected messages, and uses the default quarantine policy for the quarantined messages (we aren't using the _MailboxIntelligenceQuarantineTag_ parameter).
+- Changes the default action for spoofing detections to Quarantine, and uses the default quarantine policy for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
+- Turns on honoring `p=quarantine` and `p=reject` in sender DMARC policies.
+  - Messages that fail DMARC where the sender's DMARC policy is `p=quarantine` are quarantined (we aren't using the _DmarcQuarantineAction_ parameter, and the default value is Quarantine).
+  - Messages that fail DMARC where the sender's DMARC policy is `p=reject` are rejected.
 - Enables all safety tips.
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction -AuthenticationFailAction Quarantine -HonorDmarcPolicy $true -DmarcRejectAction Reject Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).

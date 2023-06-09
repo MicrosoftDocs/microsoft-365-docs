@@ -32,11 +32,11 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 > [!TIP]
 > Save this trial user guide to your browser favorites. When links in the trial user guide take you away from this location, it'll be easier to return to this guide to continue.
 
-1. [Set up your trial](../business-premium/m365bp-setup.md)!
+1. [Set up your trial](../business-premium/m365-business-premium-setup.md)!
 
    After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
-2. [Turn on Multi-Factor Authentication](m365bp-conditional-access.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
+2. [Turn on Multi-Factor Authentication](m365bp-turn-on-mfa.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
 
 3. Use your [preset security policies](../security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
@@ -78,7 +78,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 ## Use Microsoft 365 Apps on devices
 
-1. First, you'll need to [install Microsoft 365 Apps](m365bp-install-office-apps.md).
+1. First, you'll need to [install Microsoft 365 Apps](m365bp-users-install-m365-apps.md).
 
 2. Go to [https://office.com](https://office.com) and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 

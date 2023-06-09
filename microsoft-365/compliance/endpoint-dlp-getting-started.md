@@ -81,7 +81,6 @@ Here are the virtual operating systems that are supported by virtualization envi
 |Amazon workspaces|<ul><li>Single session supported for 20H2, 21H1, 21H2|N/A|N/A|N/A|
 |Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|Supported with Hybrid AD join|Supported with Hybrid AD join|
 
-
 #### Known issues
 
 1. You can't monitor Copy to Clipboard and Enforcing Endpoint DLP on Azure Virtual Desktop environments via browsers. However the same egress operation will be monitored by Endpoint DLP for actions via Remote Desktop Session (RDP) today.

@@ -69,6 +69,12 @@ Endpoint DLP supports these browsers on macOS (three latest released versions):
 
 See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
+## Conditions supported on macOS 
+
+Once a macOS device is onboarded into Microsoft Purview solutions, you can use the following condition with data loss prevention (DLP) policies:
+
+**Content Contains** – Applies to documents that contain sensitive information types and sensitivity labels. 
+
 ## Activities that can be audited and restricted on macOS 
 
 Once a macOS device is onboarded into Microsoft Purview solutions, you can monitor and restrict the following actions using data loss prevention (DLP) policies.

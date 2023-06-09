@@ -161,10 +161,10 @@ If they are using Exchange Online or if their account is linked with your organi
 
 This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List.
 
-To fix this, log in to the [Azure Active Directory Module for PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) with your Microsoft 365 administrator credentials. and use the following syntax:
+To fix this, log in to the [Microsoft Graph Powershell](/powershell/microsoftgraph/overview) with your Microsoft 365 administrator credentials. and use the following syntax:
 
 ```powershell
-Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com
+Update-MgUser -UserId anne.wallace@contoso.onmicrosoft.com -UserPrincipalName anne.jones@contoso.com
 ```
 
 > [!TIP]

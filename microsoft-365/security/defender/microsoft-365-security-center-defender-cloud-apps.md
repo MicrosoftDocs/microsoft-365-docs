@@ -122,8 +122,6 @@ The capabilities on the following pages are fully integrated into Microsoft 365 
   - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
 
 - The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
-- New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
-- Some links may redirect you to the Defender for Cloud Apps portal.
 
 ## What's changed
 

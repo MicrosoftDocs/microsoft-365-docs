@@ -22,6 +22,9 @@ ms.date: 04/18/2023
 
 # How Microsoft names threat actors
 
+> [!IMPORTANT]
+> Learn about how [Volt Typhoon targets US critical infrastructure with living-off-the-land techniques](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/#:~:text=Volt%20Typhoon%20has%20been%20active%20since%20mid-2021%20and,construction%2C%20maritime%2C%20government%2C%20information%20technology%2C%20and%20education%20sectors)
+
 Microsoft has shifted to a new naming taxonomy for threat actors aligned with the theme of weather. With the new taxonomy, we intend to bring better clarity to customers and other security researchers already confronted with an overwhelming amount of threat intelligence data and offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves.
 
 :::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-naming-categories2.png":::
@@ -126,6 +129,7 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0796|Phlox Tempest|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
+|DEV-XXXX|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques) |China|BRONZE SILHOUETTE|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 

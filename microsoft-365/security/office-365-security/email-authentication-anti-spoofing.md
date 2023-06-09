@@ -84,7 +84,7 @@ The following examples show how SPF works in different situations. In these exam
 
 SPF works best when the path from sender to receiver is direct, for example:
 
-![Diagram showing how SPF authenticates email when it is sent directly from server to server.](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+:::image type="content" source="../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg" alt-text="Diagram showing how SPF authenticates email when it is sent directly from server to server." lightbox="../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg":::
 
 When woodgrovebank.com receives the message, if IP address #1 is in the SPF TXT record for contoso.com, the message passes the SPF check and is authenticated.
 
@@ -93,7 +93,7 @@ When woodgrovebank.com receives the message, if IP address #1 is in the SPF TXT 
 
 Suppose a phisher finds a way to spoof contoso.com:
 
-![Diagram showing how SPF authenticates email when it is sent from a spoofed server.](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+:::image type="content" source="../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg" alt-text="Diagram showing how SPF authenticates email when it is sent from a spoofed server." lightbox="../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg":::
 
 Since IP address #12 isn't in contoso.com's SPF TXT record, the message fails the SPF check and the receiver may choose to mark it as spam.
 
@@ -102,7 +102,7 @@ Since IP address #12 isn't in contoso.com's SPF TXT record, the message fails th
 
 One drawback of SPF is that it doesn't work when an email has been forwarded. For example, suppose the user at woodgrovebank.com has set up a forwarding rule to send all email to an outlook.com account:
 
-![Diagram showing how SPF cannot authenticate email when the message is forwarded.](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+:::image type="content" source="../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg" alt-text="Diagram showing how SPF cannot authenticate email when the message is forwarded." lightbox="../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg":::
 
 The message originally passes the SPF check at woodgrovebank.com but it fails the SPF check at outlook.com because IP #25 isn't in contoso.com's SPF TXT record. Outlook.com might then mark the message as spam. To work around this problem, use SPF with other email authentication methods such as DKIM and DMARC.
 

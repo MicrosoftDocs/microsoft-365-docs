@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -35,7 +35,7 @@ Auto-applying retention labels are powerful because:
 - You don't need to rely on users to classify all content correctly.
 - Users no longer need to know about data governance policies - they can focus on their work.
 
-You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). You can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -59,10 +59,7 @@ Use the following instructions for the two admin steps.
 
 ## Learn about simulation mode
 
-> [!NOTE]
-> This option is in preview and subject to change.
-
-Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+You can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
@@ -359,7 +356,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is in preview and subject to change.
+> Support for cloud attachments that are shared in Yammer is in preview.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 

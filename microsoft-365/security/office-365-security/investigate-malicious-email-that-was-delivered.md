@@ -45,7 +45,7 @@ Make sure that the following requirements are met:
 
 - Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
-- [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
+- [Audit logging](../../compliance/audit-log-enable-disable.md) is turned on for your organization (it's on by default).
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 

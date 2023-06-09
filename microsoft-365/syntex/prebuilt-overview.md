@@ -33,7 +33,7 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 Currently, there are three prebuilt models available: [invoices](prebuilt-model-invoice.md), [receipts](prebuilt-model-receipt.md), and [contracts](prebuilt-model-contract.md).
 
-- The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
+- The prebuilt *contracts model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
 - The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
@@ -45,12 +45,6 @@ Additional prebuilt models will be available in future releases.
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
-## See also
 
-[Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md)
-
-[Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md)
-
-[Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md)
 
  

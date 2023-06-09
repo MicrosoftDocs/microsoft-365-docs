@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 05/16/2023
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
@@ -78,15 +78,18 @@ The following Microsoft Purview compliance solutions support administrative unit
 |**Solution**|**Configuration support**|
 |:-----------|:-------------------------|
 | [Data lifecycle management](data-lifecycle-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-data-lifecycle-management.md#support-for-administrative-units) |
-| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Records management](records-management.md) | [Role groups, retention policies, and retention label policies](get-started-with-records-management.md#support-for-administrative-units)|
+| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) | 
+| [Communication compliance](/microsoft-365/compliance/communication-compliance.md)|Adaptive scopes|
+| [Records management](records-management.md) | [Role groups, retention policies, retention label policies](get-started-with-records-management.md#support-for-administrative-units), and [adaptive scopes](purview-adaptive-scopes.md)|
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | [Role groups, sensitivity label policies, and auto-labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 
-When you configure these solutions to use administrative units, the configuration automatically flows down to the following features:
+The configuration for administrative units automatically flows down to the following features:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
-- [Adaptive scopes](purview-adaptive-scopes.md): When adaptive scopes are supported by a solution, restricted administrators can select, create, edit, and view adaptive scopes only from users in assigned administrative units
+- [Adaptive scopes](purview-adaptive-scopes.md): 
+    - Restricted administrators can select, create, edit, and view adaptive scopes only for users in those administrators' assigned administrative units
+    - When a restricted administrator configures a policy that's using adaptive scopes, that administrator can only select adaptive scopes that are assigned to their administrative units
 - Data lifecycle management and records management:
     - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
     - [Disposition review and verification](disposition.md): Restricted administrators will be able to add reviewers only from within their assigned administrative units, and see disposition reviews and items disposed only from users within their assigned administrative units

@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/02/2023
 ---
 
 # Investigate entities on devices using live response
@@ -154,6 +154,7 @@ The following commands are available for user roles that are granted the ability
 | fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
 | fileinfo  | Get information about a file.  | Y  | Y  | Y  |
 | findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
+| getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
 | help  | Provides help information for live response commands.  | Y  | Y  | Y  |
 | jobs  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
 | persistence  | Shows all known persistence methods on the device.  | Y  | N  | N  |
@@ -173,7 +174,6 @@ The following commands are available for user roles that are granted the ability
 |---|---|---|---|---|
 | analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
 | collect  | Collects forensics package from device.  | N  | Y  | Y  |
-| getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
 | isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
 | release  | Releases a device from network isolation.  | N  | Y  | N  |
 | run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
