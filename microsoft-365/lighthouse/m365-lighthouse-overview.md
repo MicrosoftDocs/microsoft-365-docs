@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 05/25/2021
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -60,13 +60,13 @@ Lighthouse helps MSPs secure and manage Microsoft 365 services and connected end
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61O]
 
-> [!NOTE] 
+> [!NOTE]
 > For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
-[Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)
-[Overview of the Device compliance page in Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
+[Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\
+[Overview of the Device compliance page in Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Microsoft Defender for Business](../security/defender-business/index.yml) (link page)
