@@ -24,23 +24,22 @@ description: Learn how to enable guest invitations between Microsoft 365 clouds 
 
 # Collaborate with guests from other Microsoft clouds
 
+Microsoft 365 organizations are located in one of three Microsoft clouds:
 
+- Microsoft Azure Commercial
+- Microsoft Azure Government
+- Microsoft Azure China (operated by 21Vianet)
+
+In order to invite guests from an organization in a different cloud, you must enable B2B collaboration with that cloud and then set up cross-tenant access settings with the organization that you want to collaborate with.
 
 ## Prerequisites
 
-
-See one of the following depending on your scenario:
+Inviting guests from organizations in other clouds requires that guest access be configured for your organization. If you haven't previously configured guest access, see one of the following depending on your scenario:
 - [Collaborate with guests on a document](collaborate-on-documents)
 - [Collaborate with guests in a site](collaborate-in-site.md)
 - [Collaborate with guests in a team](collaborate-as-team.md)
 
-
-- **Obtain the partner's tenant ID.** To enable B2B collaboration with a partner's Azure AD organization in another Microsoft Azure cloud, you'll need the partner's tenant ID. Using an organization's domain name for lookup isn't available in cross-cloud scenarios.
-- **Decide on inbound and outbound access settings for the partner.** Selecting a cloud in your Microsoft cloud settings doesn't automatically enable B2B collaboration. Once you enable another Microsoft Azure cloud, all B2B collaboration is blocked by default for organizations in that cloud. You'll need to add the tenant you want to collaborate with to your Organizational settings. At that point, your default settings go into effect for that tenant only. You can allow the default settings to remain in effect. Or, you can modify the inbound and outbound settings for the organization.
-- **Obtain any required object IDs or app IDs.** If you want to apply access settings to specific users, groups, or applications in the partner organization, you'll need to contact the organization for information before configuring your settings. Obtain their user object IDs, group object IDs, or application IDs (*client app IDs* or *resource app IDs*) so you can target your settings correctly.
-
-> [!NOTE]
-> Users from another Microsoft cloud must be invited using their user principal name (UPN). [Email as sign-in](../authentication/howto-authentication-use-email-signin.md#b2b-guest-user-sign-in-with-an-email-address) is not currently supported when collaborating with users from another Microsoft cloud.
+To enable B2B collaboration with an organization in another cloud, you need the organization's tenant ID. Using an organization's domain name for lookup isn't available in cross-cloud scenarios.
 
 ## Enable the cloud in your Microsoft cloud settings
 
@@ -55,7 +54,7 @@ In your Microsoft cloud settings, enable the Microsoft Azure cloud you want to c
 
 ### Add an organization
 
-Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration.
+Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud, cross-cloud B2B collaboration requires that each organization be added to Azure AD cross-tenant access settings.
 
 To add an organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
@@ -90,6 +89,8 @@ To configure outbound settings for an organization
 1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
 
 ## Related topics
+
+[Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings)
 
 [Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
