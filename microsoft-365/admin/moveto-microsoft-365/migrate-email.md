@@ -124,7 +124,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW11RRY?autoplay=false]
 
-After successfully completing all the prerequisites, you can now use the batch migration tool to migrate your users from Google Workspace to Microsoft 365. For more detailed information, see [Perform an automated Google Workspace migration to Microsoft 365](/exchange/mailbox-migration/automated-migration-neweac).
+After successfully completing all the prerequisites, you can now use the batch migration tool to migrate your users from Google Workspace to Microsoft 365. Here is a summary of the required steps. For more detailed information, see [Perform an automated Google Workspace migration to Microsoft 365](/exchange/mailbox-migration/automated-migration-neweac). 
 
 1. In the Exchange admin center, select **Migration**.
 1. On the **Migration batches** page, select **Add migration batch**.
