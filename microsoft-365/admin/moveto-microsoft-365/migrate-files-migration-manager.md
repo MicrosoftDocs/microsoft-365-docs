@@ -40,9 +40,9 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 
-When you move to Microsoft 365 for business from Google Workspace, you'll want to migrate your files from Google Drive. You can use the SharePoint Migration Manager to move files from personal and shared Drives. This video and summary of the required steps gives you an overview of how to do this. For more information, see [Migrate Google Workspace to Microsoft 365 with Migration Manager](/sharepointmigration/mm-google-overview).
-
 > [!NOTE]
+> When you move to Microsoft 365 for business from Google Workspace, you'll want to migrate your files from Google Drive. You can use the SharePoint Migration Manager to move files from personal and shared Drives. This video and summary of the required steps gives you an overview of how to do this. For more information, see [**Migrate Google Workspace to Microsoft 365 with Migration Manager**](/sharepointmigration/mm-google-overview).
+>
 > Migration Manager will make a copy of the files and move the copies to Microsoft 365 for business. The original files will stay in Google Drives also.
 
 ## Before you start
