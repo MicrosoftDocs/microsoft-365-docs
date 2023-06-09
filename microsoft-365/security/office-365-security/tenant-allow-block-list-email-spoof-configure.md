@@ -337,17 +337,13 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoo
 To create block entries for *spoofed senders*, use any of the following methods:
 
 - From the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft).
-  - When you submit a message that was detected and allowed by [spoof intelligence](anti-spoofing-spoof-intelligence.md), a block entry for the spoofed sender is added to the **Spoofed senders** tab in the Tenant Allow/Block List.
-  - If the sender wasn't detected and allowed by spoof intelligence, submitting the message to Microsoft doesn't create a block entry for the sender in the Tenant Allow/Block List.
 - From the **Spoof intelligence insight** page at <https://security.microsoft.com/spoofintelligence> *if* the sender was detected and allowed by spoof intelligence. For instructions, see [Override the spoof intelligence verdict](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict).
   - When you override the verdict in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the spoofed sender becomes a manual entry that appears only on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 - From the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
-You can create block entries for *spoofed senders* directly in the Tenant Allow/Block List as described in the following subsections.
-
 > [!NOTE]
 >
-> Only the combination of the spoofed user *and* the sending infrastructure as defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is blocked from spoofing.
+> Only the combination of the spoofed user *and* the sending infrastructure defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is blocked from spoofing.
 >
 > Email from these senders is marked as *phishing*. What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Phishing** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 >
@@ -361,7 +357,7 @@ The steps are nearly identical to [creating allow entries for spoofed senders](#
 
 The only difference is: for the **Action** value in Step 4, select **Block** instead of **Allow**.
 
-#### Use PowerShell to create block entries for spoofed senders in the Tenant Allow/Block List
+##### Use PowerShell to create block entries for spoofed senders in the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
