@@ -176,16 +176,19 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional prerequisites |
 |---------|---------|---------|---------|---------|
-|Exchange email online|Yes |distribution group | data-in-motion| No |
-|SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
-|OneDrive for Business accounts|Yes| account or distribution group |data-at-rest </br> data-in-use|No|
-|Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
-|Power BI |No| workspaces | data-in-use | No|
+|Exchange |Yes |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Dynamic distribution lists </br> - Microsoft 365 groups (Group members only, not the group as an entity) | data-in-motion | No |
+|SharePoint |No   |Sites       | data-at-rest </br> data-in-use | No|
+|OneDrive |Yes| - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity) |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages|Yes     | - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)|data-in-motion </br> data-in-use |  No       |
+|Microsoft Defender for Cloud Apps|No   | Cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)|No    |Repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
+|Power BI |No| Workspaces | data-in-use | No|
+| Third-party apps | None | No | No | No |
+| Power BI | No | None | No | No |
 
-#### Exchange location scoping 
+
+#### Exchange location scoping
 
 If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
 
@@ -915,7 +918,14 @@ When a user overrides a block with override action on an email, the override opt
     ]
 }
 ```
-If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data. 
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data.
+
+> [!NOTE]
+> The `msip_justification` values are stored in the following order: 
+>
+> `False Positive; Recipient Entitled; Manager Approved; I Acknowledge; JustificationText_[free text]`. 
+>
+>  Notice that the values are separated by semicolons. The maximum free text allowed is 500 characters.
 
 ### Incident reports
 

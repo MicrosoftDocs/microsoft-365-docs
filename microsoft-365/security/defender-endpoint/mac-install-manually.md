@@ -44,7 +44,9 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft 365 Defender portal:
+Download the installation and onboarding packages from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
