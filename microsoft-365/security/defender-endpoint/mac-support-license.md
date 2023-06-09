@@ -56,8 +56,6 @@ When you click **Action needed**, you get the following error message:
 
 **Contact your administrator for help.**
 
-The following screenshot shows how this error message is shown on the screen:
-
 :::image type="content" source="images/license-not-found-message.png" alt-text="The message stating that there is no license for Microsoft 365 Enterprise subscription." lightbox="images/license-not-found-message.png":::
 
 You'll encounter this message in a different way: In terminal, if you enter **mdatp health** without the double quotes, you might see the warning as shown in the following screenshot:
