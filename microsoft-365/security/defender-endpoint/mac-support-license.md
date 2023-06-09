@@ -42,17 +42,9 @@ Click the **X** symbol.
 
 :::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The menu bar that contains the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
 
-A list of options are displayed as shown in the following screenshot:
-
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="The list of options displated on clicking the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/x-symbol-menu-items.png":::
-
-Clicking the **Action Needed** prompt will bring up the following licensing error message:
-
-:::image type="content" source="images/no-license-found.png" alt-text="Screenshot that shows a licensing error for Microsoft Defender for Endpoint on macOS shield." lightbox="images/no-license-found.png":::
-
 ### Message:
 
-When you click the **x** symbol, you might options as shown in the following screenshot:
+When you click the **x** symbol, you'll see options as shown in the following screenshot:
 
 :::image type="content" source="images/x-symbol-menu-items.png" alt-text="The option listed when you click on the x symbol." lightbox="images/x-symbol-menu-items.png":::
 
