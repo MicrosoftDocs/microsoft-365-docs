@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/06/2023
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
