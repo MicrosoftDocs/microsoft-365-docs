@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 06/30/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -61,6 +61,20 @@ Use the **Search** control to search case names for specific text and use the ca
 - Status
 - Time case opened, start date, and end date
 - Last updated, start date, and end date
+
+## Assign a case
+
+If you're an administrator with the appropriate permissions, you can assign ownership of a case to yourself or to an insider risk management user with the Insider Risk Management, Insider Risk Management Analyst, or Insider Risk Management Investigator role. After a case is assigned, you can also reassign it to a user with any of the same roles. You can only assign a case to one admin at a time. 
+
+If an admin is assigned to a case, you can filter by admin. 
+
+### Assign a case from the Cases dashboard
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Cases** tab.
+2. On the **Cases dashboard**, select the case(s) that you want to assign.
+3. In the button bar above the cases queue, select **Assign**. 
+4. In the **Assign owner** pane on the right side of the screen, search for an admin with the appropriate permissions, and then select the checkbox for that admin.
+5. Select **Assign**.
 
 ## Filter cases
 
