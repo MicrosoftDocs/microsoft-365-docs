@@ -24,9 +24,16 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 # Where your Microsoft 365 customer data is stored
 
-See the following links to understand workload data location.
+>[!NOTE]
+>The **Poland** local data center region launched on April 26, 2023.  If your organization requires the migration of your Microsoft 365 customer data to Poland, and a data residency commitments for Poland, please refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
 
-- Exchange Online [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo)
+>[!NOTE]
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom), additional workloads are available for data residency commitments.  Refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+
+
+See the following links to understand how you can determine current workload data location.
+
+- Exchange Online [Data Location](m365-dr-workload-exo#how-can-i-determine-customer-data-location)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
 - Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)

@@ -1,5 +1,5 @@
 ---
-title: "Learn about the Microsoft Purview Chrome Extension"
+title: "Learn about the Microsoft Purview extension for Chrome"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -23,11 +23,11 @@ search.appverid:
 description: "The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
 ---
 
-# Learn about the Microsoft Purview Chrome Extension
+# Learn about the Microsoft Purview extension for Chrome
 
 [Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10/11 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [data loss prevention policies](dlp-learn-about-dlp.md).
 
-Once the Microsoft Purview Chrome Extension is installed on a Windows 10/11 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
+Once the Microsoft Purview extension for Chrome is installed on a Windows 10/11 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -51,11 +51,11 @@ activity |description  | supported policy actions|
 
 ## Next steps
 
-See [Get started with the Microsoft Purview Chrome Extension](dlp-chrome-get-started.md) for complete deployment procedures and scenarios.
+See [Get started with the Microsoft Purview extension for Chrome](dlp-chrome-get-started.md) for complete deployment procedures and scenarios.
 
 ## See also
 
-- [Get started with Microsoft Purview Chrome Extension](dlp-chrome-get-started.md)
+- [Get started with Microsoft Purview extension for Chrome](dlp-chrome-get-started.md)
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
