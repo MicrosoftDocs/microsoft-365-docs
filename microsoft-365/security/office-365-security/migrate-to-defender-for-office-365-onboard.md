@@ -172,7 +172,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
-  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](tenant-allow-block-list-about.md) feature to configure safe overrides for those false positives.
+  Report any false positives to Microsoft as early as possible through [admin submissions](submissions-admin.md), and use the [Tenant Allow/Block List](tenant-allow-block-list-about.md) feature to configure safe overrides for those false positives.
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft 365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 
