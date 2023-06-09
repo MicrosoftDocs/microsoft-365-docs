@@ -66,35 +66,28 @@ To add an organization
 1. Select **Add**.
 1. The organization appears in the organizations list. At this point, all access settings for this organization are inherited from your default settings.
 
-##### Configure inbound settings
+New organizations inherit B2B collaboration settings from the default. If your default settings block B2B collaboration or if you want to limit collaboration to specific users or groups, update the organization's inbound and outbound settings.
 
-Follow this procedure for each organization where you want to invite external participants.
+##### Configure inbound settings for the organization
+
+Use the inbound settings to specify which users or groups from the external organization can access resources in your organization.
 
 To configure inbound settings for an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the inbound access link for the organization that you want to modify.
-1. On the **B2B direct connect** tab, choose **Customize settings**.
-1. On the **External users and groups** tab, choose **Allow access** and **All external users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
-1. On the **Applications** tab, choose **Allow access** and **Select applications**.
-1. Select **Add Microsoft applications**.
-1. Select the **Office 365** application, and then choose **Select**.
+1. On the **B2B collaboration** tab, choose **Customize settings**.
+1. On the **External users and groups** tab, choose **Allow access** and **All <organization> users and groups**. (You can choose **Select <organization> users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
+1. If you want to limit guest access to Microsoft 365, you can select the **Office 365** application on the **Applications** tab.
 1. Select **Save** and close the **Inbound access settings** blade.
 
-##### Configure outbound settings
+##### Configure outbound settings for the organization
 
-Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
+Use the outbound settings to specify which users or groups from the external organization can access resources in your organization.
 
 To configure outbound settings for an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the outbound access link for the organization that you want to modify.
-1. On the **B2B direct connect** tab, choose **Customize settings**.
-1. On the **External users and groups** tab, choose **Allow access** and set an **Applies to** of all users.
-1. On the **External applications** tab, choose **Allow access** and **Select external applications**.
-1. Select **Add Microsoft applications**.
-1. Select the **Office 365** application, and then choose **Select**.
+1. On the **B2B collaboration** tab, choose **Customize settings**.
+1. On the **Users and groups** tab, choose **Allow access** and set an **Applies to** of all users, or select the users or groups that you want to allow to access the external organization.
 1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
-
-
 
 ## Related topics
 
