@@ -19,7 +19,8 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
-## Data Residency commitments available
+>[!NOTE]
+>Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time.  
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
