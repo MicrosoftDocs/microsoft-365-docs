@@ -130,7 +130,7 @@ To learn more about litigation hold, see [Create a Litigation Hold](../../compli
 
 If you choose not to show the shared mailbox in the global address list, the mailbox won't appear in your organization's address list, but it will still receive email sent to it. 
 
-1. In the admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
+1. In the admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a>.
 
 2. Select the shared mailbox you want to edit, then select **Show in global address list** \> **Edit**.
 
