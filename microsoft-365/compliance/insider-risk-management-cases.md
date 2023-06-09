@@ -76,6 +76,13 @@ If an admin is assigned to a case, you can filter by admin.
 4. In the **Assign owner** pane on the right side of the screen, search for an admin with the appropriate permissions, and then select the checkbox for that admin.
 5. Select **Assign**.
 
+### Assign a case from the Cases detail page
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Cases** tab.
+2. Select a case.
+3. In the detail pane for the case, to the left of the **Resolve a case** button, select **Assign**.
+4. In the **Suggested contacts** list, select the appropriate admin.
+
 ## Filter cases
 
 Depending on the number and type of active insider risk management policies in your organization, reviewing a large queue of cases can be challenging. Using case filters can help analysts and investigators sort cases by several attributes. To filter alerts on the **Cases dashboard**, select the **Filter** control. You can filter cases by one or more attributes:
