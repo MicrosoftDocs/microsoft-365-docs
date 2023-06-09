@@ -37,6 +37,9 @@ In order to invite guests from an organization with a different tenant type, you
 1. If the organization you want to collaborate with is in a different cloud (such as commercial and DoD), enable cross-tenant connections with that cloud.
 1. Set up cross-tenant access settings in Azure AD with the organization that you want to collaborate with.
 
+> [!IMPORTANT]
+> The organization that you're collaborating with must also configure these settings for their organization.
+
 ## Prerequisites
 
 Inviting guests from organizations with different tenant types requires that guest access be configured for your organization. If you haven't previously configured guest access, see one of the following depending on your scenario:
