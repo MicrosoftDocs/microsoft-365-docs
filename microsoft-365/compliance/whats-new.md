@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 06/07/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,7 +39,34 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## June 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: Now rolling out, Outlook for Android and Outlook for iOS support a setting for mandatory labeling that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
+- **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
+
+### Data loss prevention
+
+- **General availability (GA)**: Oversharing Popup for Outlook Win 32. [Scenario 2 Show policy tip as oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup) and [Business justification X-Header](dlp-policy-reference.md#business-justification-x-header).
+
 ## May 2023
+
+### Compliance Manager
+
+- **General availability (GA)**: New multicloud support for Compliance Manager.
+    - **New article**: [Multicloud support in Compliance Manager](compliance-manager-multicloud.md) explains the new integration with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance.
+    - **New article**: [Configure cloud settings for use with Compliance Manager](compliance-manager-cloud-settings.md) details the setup process to receive multicloud support in Compliance Manager.
+    - **New article**: [Compliance Manager glossary of terms](compliance-manager-glossary.md) explains new and existing terms and concepts.
+- **General availability (GA)**: New configuration connectors for building assessments that cover non-Microsoft services.
+    - **New article**: [Working with connectors in Compliance Manager](compliance-manager-connectors.md) details how to set up and use connectors for building assessments for non-Microsoft services.
+    - **New article**: [Salesforce setup for Compliance Manager connector](compliance-manager-connectors-salesforce.md) explains the seupt process for using the Salesforce connector.
+    - **New article**: [Zoom setup for Compliance Manager](compliance-manager-connectors-zoom.md) explains the setup process fo using the Zoom connector.
+    - Update to [Build and manage assessments](compliance-manager-assessments.md) about incorporating connectors for non-Microsoft services.
+- **Assigning user roles per regulatory template**: New capability allowing you to provide scoped access to any assessment built for a specific regulation. Updated pages include:
+    - [Learn about regulations](compliance-manager-templates.md#grant-user-access-to-regulations)
+    - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
+    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) 
 
 ### Data lifecycle management and records management
 
@@ -48,10 +75,20 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Insider risk management
 
-- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings.md#indicator-level-settings) to reduce alert noise.
-- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings.md#intelligent-detections) reduces alert noise.
+- **In preview**: [Fine-tune policy indicator thresholds with real-time analytics](insider-risk-management-settings-policy-indicators.md) to reduce alert noise.
+- **In preview**: New [Ignore email signature attachments setting](insider-risk-management-settings-intelligent-detections.md) reduces alert noise.
 - Updates for [forensic evidence billing](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
-- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps). 
+- Updates for forensic evidence policy enforcement SLA: [Get started with insider risk management forensic evidence](insider-risk-management-forensic-evidence-configure.md#next-steps).
+
+### Microsoft Priva
+
+- Updates to [Get started with Priva](/privacy/priva/priva-setup#when-insights-start-to-populate): insights for the data minimization policy begin surfacing within three days after starting Priva for data that hasn't been modified within the last 30 days.
+- Updates to [Find and visualize personal data in Priva](/privacy/priva/priva-data-profile#privacy-regulations) for the privacy regulations card, which pulls in insights from Compliance Manager.
+
+### Sensitivity labels
+
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings persists.
+- **In preview**: Built-in labeling support for [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) is in preview as a parity feature for the AIP add-in.
 
 ## April 2023
 
@@ -63,23 +100,31 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - New conditions for [Regulatory compliance policy template](communication-compliance-policies.md#policy-templates).
 - **New video**: Learn how to [detect communication risks in Microsoft Teams with communication compliance](communication-compliance-channels.md#microsoft-teams).
 
+### Compliance Manager
+
+- Updated [regulatory templates list](compliance-manager-templates-list.md) with templates Turkey - Information and Communication Security Guide and SA - Saudi Arabia Monetary Authority (SAMA) & National Cybersecurity Authority (NCA).
 
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
 - **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
+- **General availability (GA)**: Data loss prevention policies in Power BI to automatically detect sensitive information as it is being uploaded into Power BI and take immediate remediation actions. [Learn about data loss prevention policies in Power BI)](/microsoft-365/compliance/dlp-powerbi-get-started).
 
 ### Insider risk management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
 
+### Microsoft Priva
+
+- **General availability (GA)**: [Recommended policy alert thresholds for more relevant and actionable alerts](/privacy/priva/risk-management-policies#set-alerts)
+- **General availability (GA)**: [Flexible boundary options when setting conditions for data transfer policies](/privacy/priva/risk-management-policy-data-transfer#custom-setup-guided-policy-creation-process)
 
 ### Sensitivity labels
 
@@ -97,7 +142,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - Updates for *UserKey* and *UserType* schema values to address [scenarios](/microsoft-365/compliance/audit-log-detailed-properties#usertype-and-userkey-scenarios) for enumeration for audit records generated by guest users and to remove ambiguity for accepted data.
 - Updates for [audit search records and activities](/microsoft-365/compliance/audit-log-search) related to Microsoft Defender for Identity (MDI).
-- Updates for [new audit log fields](/microsoft-365/compliance/audit-log-detailed-properties) added to support Microsoft Information Protection.
+- Updates for [new audit log fields](/microsoft-365/compliance/audit-log-detailed-properties) added to support Microsoft Purview Information Protection.
 - Updates for across all [audit content](/microsoft-365/compliance/audit-solutions-overview) for new UTC support in audit solutions.
 - Updates for all [events that are logged](/microsoftteams/audit-log-events) for the **Updates app** activities in Teams in the audit log.
 
@@ -110,7 +155,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- **General availability (GA)**: Rolling out in general availability, [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
+- **General availability (GA)**: Rolling out in general availability, [Microsoft Graph records management APIs](/graph/api/resources/security-recordsmanagement-overview) to support the management of retention labels and event-based retention.
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview are now gradually rolling out support for URL text links.
 - **Improvements for Teams retention policies**: Now rolling out, support for existing call data records as well as newly created call data records, and support for the control message events that name and rename a chat.
 - **Improvements that support Power Automate flows**: Now rolling out to support the scenario of [customizing what happens at the end of the retention period](retention-label-flow.md), the existing Power Automate compliance actions have been renamed to more accurately describe their purpose. **Apply label on the item** is renamed **Relabel an item at the end of retention**, and **Deletes the item** is renamed **Deletes an item at the end of retention**. Additionally:
@@ -125,9 +170,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - [Endpoint DLP Aggregated most restrictive actions applied to endpoints](dlp-policy-reference.md#for-endpoints)
     - [Just in time protection for endpoints and network shares](endpoint-dlp-learn-about.md#just-in-time-protection-preview)
     - [Display of conditions matched when an item matches a policy](dlp-configure-view-alerts-policies.md#other-matched-conditions)
-    - [Endpoint DLP policies can be applied to network shares](dlp-configure-endpoint-settings.md#network-share-coverage-and-exclusions)
-    - Support for [endpoint DLP policies in Azure virtual desktop, Citrix Virtual Apps and Desktops 7, Amazon virtual workspaces and Hyper-v environments](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
-    - [Show policy tips as an oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview)
+    - [Endpoint DLP policies can be applied to network shares](dlp-configure-endpoint-settings.md#network-share-groups)
+    - Support for [endpoint DLP policies in Azure virtual desktop, Citrix Virtual Apps and Desktops 7, Amazon virtual workspaces and Hyper-V environments](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
 
 ### Device onboarding
 - **In preview**: Device configuration and policy sync status is now viewable in the onboarded devices list for [Onboarding Windows 10 or Windows 11 devices](device-onboarding-overview.md#onboarding-windows-10-or-windows-11-devices) and [Onboarding devices into device management](device-onboarding-macos-overview.md#onboarding-devices-into-device-management) devices
@@ -156,7 +200,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
    - [Purchase/analyze capacity for captured clips and/or sign up for 20 GB of trial capacity](insider-risk-management-forensic-evidence-manage.md#capacity-and-billing).
 - **New article**: Added article that [summarizes the privacy principles for insider risk management](insider-risk-solution-privacy.md). 
 - Clarification about [adding "webhook.ingestion.office.com" to the allowlist when setting up a connector to import HR data](import-hr-data.md#before-you-begin).
-- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings.md#policy-timeframes).
+- Clarification about the [past activity detection period for email activities (contrasted to audit activities)](insider-risk-management-settings-policy-timeframes.md).
 - Clarification on the [retention time for user activities reports](insider-risk-management-activities.md#retention-and-item-limits).
 
 ### Microsoft Priva
@@ -177,7 +221,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **General availability (GA)**: Now in general availability for built-in labeling for Windows, support for a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label) as a parity feature for the AIP add-in.
 - **General availability (GA)**: For labeling built into Windows, macOS, iOS, and Android, auditing actions for sensitivity labels include encryption details such as a change in the encryption status and settings, and the Rights Management owner.
 - **In preview**: The ability to [scope labels to files and emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails), so that, for example, a sensitivity label is visible to users in Outlook but not in Word, Excel, or PowerPoint. This configuration can be used as a parity feature for the AIP add-in, which could be disabled per app.
-- **In preview**: Prevent [oversharing of labeled emails as a DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup-preview). This DLP policy configuration is an equivalent for the AIP add-in with PowerShell advanced settings that implement pop-up messages in Outlook that warn, justify, or block emails being sent.
 - **In preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 - **In preview**: Preview versions of Outlook for Mac now support [label colors](sensitivity-labels-office-apps.md#label-colors) but don't yet support the sensitivity bar.
 - **In preview**: For mandatory labeling, Outlook for Android in the Beta Channel supports a setting that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
@@ -349,7 +392,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Audit
 
 - [Audit New Search](/microsoft-365/compliance/audit-new-search) - the new export limit is now up to a maximum of 500K (500,000 rows) for a single export.
-- [Search the audit log in the compliance portal](/microsoft-365/compliance/audit-log-search) - clarified table for retention policies and labels.
+- [Search the audit sign in the compliance portal](/microsoft-365/compliance/audit-log-search) - clarified table for retention policies and labels.
 
 ### Communication compliance
 
@@ -359,7 +402,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- New [role-based access to assessments](compliance-manager-setup.md#role-based-access-to-assessments) allows you to [assign users roles for viewing and managing individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+- New [role-based access to assessments](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations) allows you to assign users roles for viewing and managing individual assessments.
 - [Working with improvement actions](compliance-manager-improvement-actions.md#assign-improvement-action-to-assessor-for-completion) - clarified that users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes, and that roles can now be assigned for individual assessments.
 
 ### eDiscovery
@@ -373,7 +416,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Insider risk management
 
 - [Sensitive info types](/microsoft-365/compliance/insider-risk-management-settings) now has a limit of 500 types that you can exclude. The previous limit was 100 sensitive info types.
-- Admins can now enable [potential high impact user](/microsoft-365/compliance/insider-risk-management-settings) and [cumulative exfiltration activities](/microsoft-365/compliance/insider-risk-management-configure) score boosters in policy settings.
+- Admins can now enable [potential high-impact user](/microsoft-365/compliance/insider-risk-management-settings) and [cumulative exfiltration activities](/microsoft-365/compliance/insider-risk-management-configure) score boosters in policy settings.
 - New [risky browser indicators](/microsoft-365/compliance/insider-risk-management-settings) available for detecting user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident.
 
 ### Microsoft Priva

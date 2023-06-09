@@ -85,7 +85,7 @@ Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/micr
   
 ## Related topics
 
-[Restore deleted items](/Exchange/recipients-in-exchange-online/restore-deleted-items-group)
+[Restore deleted email conversations](/Exchange/recipients-in-exchange-online/restore-deleted-items-group)
 
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) 
 

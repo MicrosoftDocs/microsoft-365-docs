@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,9 +47,9 @@ Compliance Manager detects signals from complementary improvement actions that a
 
 Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multicloud support](compliance-manager-multicloud.md) and [scoring](compliance-score-calculation.md).
 
-#### Data connectors (coming soon)
+#### Connectors
 
-A selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services such as Salesforce and Zoom are rolling out in the near future. Check back with this page for updates.
+We're rolling out a selection of connectors built specifically for Compliance Manager to support other non-Microsoft services. Connectors for Salesforce and Zoom are available now, with more connectors releasing soon. Learn more at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## Improvement actions details page
 
@@ -77,7 +77,7 @@ To begin implementation work on an improvement action, you can do the work yours
 
 2. The **Assign to user** flyout pane shows a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
 
-3. Select **Assign**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
+3. Select **Assign**. The assigned user receives an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
 
 > [!NOTE]
 > US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
@@ -95,11 +95,11 @@ You can assign multiple improvement actions to one user by following these steps
 
 ### Implementation work
 
-Implementation guidance will vary depending on whether you go to Microsoft Defender for Cloud to perform the work to complete the action. Learn more about [multicloud support](compliance-manager-multicloud.md).
+Implementation guidance varies depending on whether you go to Microsoft Defender for Cloud to perform the work to complete the action. Learn more about [multicloud support](compliance-manager-multicloud.md).
 
 ##### Actions for services supported by Defender for Cloud
 
-Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud. The action description on the **Implementation** tab will indicate that implementation occurs through Defender for Cloud, with a link taking you there to perform the work.
+Improvement actions that pertain to cloud services such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) are implemented and monitored using Compliance Manager’s integration with Defender for Cloud. The action description on the **Implementation** tab indicates that implementation occurs through Defender for Cloud, with a link taking you there to perform the work.
 
 These infrastructure cloud actions can be of two types:
 
@@ -108,7 +108,7 @@ These infrastructure cloud actions can be of two types:
 
 The **Implementation** tab shows a list of all related subscriptions, indicating subscription type, the number of virtual resources completed, points achieved, and the assessments in which the action appears. Select a subscription from the list to view more details in a flyout pane.
 
-To begin implementation, first locate the action’s **Testing source** to determine if the action is automatic or manual. Then review the subscriptions listed for the action. Each subscription will have its own test status.
+To begin implementation, first locate the action’s **Testing source** to determine if the action is automatic or manual. Then review the subscriptions listed for the action. Each subscription has its own test status.
 
 **For manual actions**:
 
@@ -116,16 +116,16 @@ To begin implementation, first locate the action’s **Testing source** to deter
 - Then attest to the completion of this work in Compliance Manager and/or Defender for Cloud by completing the implementation and testing status fields.
     > [!NOTE]
     > Manual actions don’t synchronize status between Compliance Manager and Defender for Cloud. You can update the status in either location, however the statuses won't synch.
--  Each subscription will need to have its status updated. Each subscription will contain a single virtual resource, which represents the subscription itself.
+-  Each subscription needs to have its status updated. Each subscription contains a single virtual resource, which represents the subscription itself.
 
 **For automatic actions**:
 
 - For each subscription listed on the **Implementation** tab, view the **Virtual resources completed** column.
-- If a subscription shows that there are virtual resources that are not complete, select the subscription and on the flyout pane, select the **Virtual resources** tab.
+- If a subscription shows that there are virtual resources that aren't complete, select the subscription and on the flyout pane, select the **Virtual resources** tab.
 - Inspect the status of each resource to determine which require ones require remediation.
 - For the resources needing remediation, review the **How to implement guidance** on the action’s **Implementation** tab. Then select the Defender for Cloud link to make the necessary changes in Defender for Cloud.
 
-Updates to the improvement action’s status will show within 24 hours.
+Updates to the improvement action’s status shows within 24 hours.
 
 ##### Actions not implemented through Defender for Cloud
 
@@ -174,9 +174,9 @@ Automatically tested actions may also show one of the following states in the **
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
 #### Exporting testing history
-You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#testing-source), since such actions are regularly or frequently updated based on your tenant's data.
+You can export a report that shows you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#testing-source), since such actions are regularly or frequently updated based on your tenant's data.
 
-On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
+On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report downloads as an Excel file.
 
 ## Testing source
 
@@ -186,14 +186,12 @@ Compliance Manager provides options for how to test improvement actions. In the 
 > Testing source can’t be changed on actions for services supported by Defender for Cloud. If you don’t agree with an automated testing result, you can go to the related assessment in Defender for Cloud to alter the testing logic and scope.
 
 #### Manual
-Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
+Improvement actions set for manual testing are actions that you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic
 Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-setup.md#testing-source-for-automated-testing) on which improvement actions can and can't be tested automatically.
 
-For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
-
-When signals indicate that an improvement action has been successfully implemented, you'll automatically receive the points eligible for that action, which will factor into scores for any related controls and assessments. Learn more about [scoring](compliance-score-calculation.md).
+For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager detects signals from other compliance solutions and cloud services. The **Testing logic** field on the **Testing** tab shows what kind of policy or configuration is required in another solution or service in order for the action to pass. When signals indicate that an improvement action has been successfully implemented, you automatically receive the eligible points for that action, which factor into scores for any related controls and assessments. Learn more about [scoring](compliance-score-calculation.md).
 
  Automatic testing is on by default for all eligible improvement actions. You can adjust these settings to automatically test only certain improvement actions, or you can turn off automatic testing for all actions. Learn more about how automated testing works and how to adjust your settings at [Set up automated testing](compliance-manager-setup.md#manage-automated-testing-settings).
 
@@ -201,7 +199,7 @@ When automated testing is turned on, the action’s test date won’t be updated
 
 #### Parent
 
-When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action inherits the implementation and testing details of the parent action. Anytime the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab belonging to the parent action, which could override any data that previously existed in the child action's **Documents**.
+When you select **Parent** as the testing source for an improvement action, you choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action inherits the implementation and testing details of the parent action. Anytime the parent action's status changes, the child's status inherits those changes. The child action will also accept all evidence in its **Documents** tab belonging to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
 > [!NOTE]
 > Having a testing source of **Parent** doesn't necessarily mean that the action is automatically tested by Compliance Manager. For example, if the parent action's testing source is **manual**, then the child action will take on the status of parent action, which is a manual test and implementation by your organization.
@@ -213,7 +211,7 @@ To set up a parent testing source, follow the steps below:
 - Select **Assign parent**.
 - On the **Assign parent improvement action** flyout pane, find the improvement action you want to assign as the parent from the list, or enter the action's name in the search bar near the top. When you identify your intended action, select the checkbox that appears to the left of the action name when you hover over it, then select **Save**.
 
-You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
+You come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
 ## Storing evidence
 
@@ -241,21 +239,21 @@ After you complete the work, conduct testing, and upload evidence, the next step
 
 - **If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
 
-- **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
+- **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for more work.
 
-Users will need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
+Users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based access to assessments and regulations](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations).
 
 ## Accepting updates to improvement actions
 
-When an update is available for an improvement action, you’ll see a notification next to its name. You can either accept the update or defer it for a later time.
+When an update is available for an improvement action, you see a notification next to its name. You can either accept the update or defer it for a later time.
 
 ##### What causes an update
 
 An update occurs when there are changes related to scoring, automation, or scope. Changes may involve new guidance for improvement actions based on regulatory changes, or could be because of product changes. Only the improvement actions managed by your organizations receive update notifications.
 
-##### Where you’ll see assessment update notifications
+##### Where you see assessment update notifications
 
-When an improvement action is updated, you’ll see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
+When an improvement action is updated, you see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
 
 Go to the improvement action’s details page, and select the **Review update** button in the top banner to review details about the changes and accept or defer the update.
 
@@ -268,7 +266,7 @@ Select **Accept update** to accept all the changes to the improvement action. **
 > [!NOTE]
 > When you accept an update to an action, you’re also accepting updates to any other versions or instances of this action. Updates will propagate tenant-wide for technical actions, and will propagate group-wide for non-technical actions.
 
-If you select **Cancel**, the update won’t be applied to the improvement action. However, you’ll continue to see the **Pending update** notification until you accept the update.
+If you select **Cancel**, the update won’t be applied to the improvement action. However, you continue to see the **Pending update** notification until you accept the update.
 
 - **Why we recommend accepting updates**: Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
 
@@ -276,9 +274,9 @@ If you select **Cancel**, the update won’t be applied to the improvement actio
 
 ##### Accept all updates at once
 
-If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
+If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane appears which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
 
-Note that when you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
+When you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
 
 ## Set up alerts for improvement action changes
 

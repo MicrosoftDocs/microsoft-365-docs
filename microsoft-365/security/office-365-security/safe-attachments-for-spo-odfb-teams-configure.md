@@ -48,7 +48,7 @@ You turn on or turn off Safe Attachments for Office 365 for SharePoint, OneDrive
 
 - To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) or [SharePoint Administrator](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) roles in Azure AD.
 
-- Verify that audit logging is enabled for your organization. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Verify that audit logging is enabled for your organization (it's on by default). For instructions, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
 - Allow up to 30 minutes for the settings to take effect.
 
@@ -60,7 +60,7 @@ You turn on or turn off Safe Attachments for Office 365 for SharePoint, OneDrive
 
 3. In the **Global settings** flyout that opens, go to the **Protect files in SharePoint, OneDrive, and Microsoft Teams** section.
 
-   Move the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle to the right ![Toggle on.](../../media/scc-toggle-on.png) to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
+   Move the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle to the right :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 
    When you're finished in the **Global settings** flyout, select **Save**.
 
