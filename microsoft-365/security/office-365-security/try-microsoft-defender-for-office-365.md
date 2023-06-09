@@ -555,8 +555,8 @@ The settings are also described in the following tables.
 |EnableForInternalSenders|False|
 |EnableOrganizationBranding|False|
 |EnableSafeLinksForEmail|True|
-|EnableSafeLinksForOffice|False|
-|EnableSafeLinksForTeams|False|
+|EnableSafeLinksForOffice|True|
+|EnableSafeLinksForTeams|True|
 |IsBuiltInProtection|False|
 |LocalizedNotificationTextList|{}|
 |RecommendedPolicyType|Evaluation|
