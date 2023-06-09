@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2023
+ms.date: 06/07/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -194,7 +194,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
-<!--### Scenario 2 Monitor or restrict user activities on sensitive service domains
+<!--### Scenario Monitor or restrict user activities on sensitive service domains
 
 Use this scenario when you want to audit or block these user activities on a website.
 
@@ -204,13 +204,13 @@ Use this scenario when you want to audit or block these user activities on a web
 
 The user must be accessing the website through Microsoft Edge.
 
-#### Scenario 2 pre-requisites and assumptions
+#### Scenario  pre-requisites and assumptions
 
 This scenario requires that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
-#### Scenario 2 policy intent statement and mapping
+#### Scenario policy intent statement and mapping
 
-#### Steps to create policy for scenario 2
+#### Steps to create policy for scenario
 
 ### Configure Sensitive service domains
 
@@ -230,23 +230,21 @@ This scenario requires that you already have devices onboarded and reporting int
 1. Finish configuring the rule and policy and apply it.
 -->
 <!--
-### Scenario 2
+### Scenario
 
-5)	Scenario 2 email - “Contoso needs to block all emails that contain a password protected OR a zip document file extension is zip/7z except it the recipient is in  the contoso.com domain OR the fabrikam domain OR the sender is a member of the Contoso HR group. Introduces nested NOT with and OR
+5)	Scenario  email - “Contoso needs to block all emails that contain a password protected OR a zip document file extension is zip/7z except it the recipient is in  the contoso.com domain OR the fabrikam domain OR the sender is a member of the Contoso HR group. Introduces nested NOT with and OR
 a.	Mapping
 b.	Creation - can include creation from a template
 c.	Deployment
 i.	testing/tuning
 ii.	move fully into production
 
-### Scenario 3
 
 Scenario recommendation: Restrict users from uploading sensitive data to unsanctioned locations (Web sites, USB devices, printers, etc) AND block users from copying/saving data from Sensitive sites.
 
-
 -->
 
-### Scenario 2 Show policy tip as oversharing popup (preview)
+### Scenario 2 Show policy tip as oversharing popup
 
 Oversharing popup is an E5 feature.
 > [!IMPORTANT]
