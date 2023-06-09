@@ -37,7 +37,7 @@ Yes.
 Yes.
 
 
-## DLP Conditions that support policy tips in Outlook on the Web
+## Conditions that support policy tips in Outlook on the Web
 
 - Content contains (SIT)
 - Content is shared from M365
@@ -64,7 +64,7 @@ Yes.
 - Document property is
 - Content is not labeled
 
-## DLP Actions that support policy tips in Outlook on the Web
+## Actions that support policy tips in Outlook on the Web
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Set headers
