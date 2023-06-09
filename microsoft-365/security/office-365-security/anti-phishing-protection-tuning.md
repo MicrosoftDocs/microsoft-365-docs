@@ -17,15 +17,14 @@ ms.collection:
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Tune anti-phishing protection
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
 
@@ -59,7 +58,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer-about.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
 
-- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the **Spoofed senders** tab in the [Tenant Allow/Block List](tenant-allow-block-list-about.md), and the [Spoof detections report](reports-email-security.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
+- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as _phishing_ in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), [entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-view-entries-for-spoofed-senders-in-the-tenant-allowblock-list), and the [Spoof detections report](reports-email-security.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
 - You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365. The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
