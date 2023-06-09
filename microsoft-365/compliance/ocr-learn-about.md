@@ -55,6 +55,13 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 
 The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
 
+> [!NOTE]
+> To reduce your OCR costs, charges for scanning each unique image are incurred only once.
+>
+> Small images, such as logos and signatures that are sent in email via Microsoft Exchange are scanned and billed only once per unique image across all users of the tenant. For all subsequent instances, the results of the previous scan will be reused.
+>
+>Additionally, each scanned image can be used in any number of policies across data loss prevention, insider risk management, auto-labeling, and records management at no additional charge.
+
 [!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 
