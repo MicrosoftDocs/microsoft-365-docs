@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/02/2020
+ms.date: 7/12/2021
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -68,7 +68,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > [!IMPORTANT]
 > It can take up to eight days for aggregated items to appear under the trainable classifiers heading.
 
-3. Choose the trainable classifier you used in you auto-apply retention label policy. This is the trainable classifier you'll give feedback on.
+3. Choose the trainable classifier you used in your auto-apply retention label policy. This is the trainable classifier you'll give feedback on.
 
 > [!NOTE]
 > If an item has an entry in the **Retention label** column, it means that the item was classified as a `match`.  If an item doesn't have an entry in the **Retention label** column, it means it was classified as a `close match`. You can improve the classifier precision the most by providing feedback on `close match` items. 
@@ -87,6 +87,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > This information goes to the classifier in your tenant, **it does not go back to Microsoft**.
 
 9. Open **Trainable classifiers**.
+
 10. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
 ![classifier in retraining status.](../media/classifier-retraining.png)

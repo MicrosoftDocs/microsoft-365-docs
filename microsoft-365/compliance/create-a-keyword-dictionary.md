@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 09/17/2019
+ms.date: 06/02/2023
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -30,7 +30,7 @@ Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect 
 
 ## Keyword dictionary limits
 
-There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, connect follow the procedures in [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and then run this PowerShell script:
+There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, follow the procedures in [Connect to the Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to connect to your tenant and then run this PowerShell script:
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -86,25 +86,25 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 2. Navigate to **Data Classifications > Classifiers > Sensitive info types**.
 
-3. Select **Create** and enter a **Name** and **Description** for your sensitive info type, then select **Next**.
+3. Select **Create** and then enter a **Name** and **Description** for your sensitive info type. Choose **Next**.
+ 
+4. On the **Define patterns for this sensitive info type** page, choose **Create pattern**.
 
-4. You can use your keyword dictionary as either the primary element or a secondary element. To use a keyword dictionary as the primary element, in the **Primary Element** field, select **Add Primary Element** and then select **Keyword dictionary** in the dropdown list.
+5. In the **New pattern** window, select a **Confidence level**.
+6. Choose **Add a Primary element** and select from the following options:
+    1. **Regular expression:** </br> If you choose to add a regular expression, enter a name for the regular expression, enter the pattern, and select the validators to add. Choose **Done**.
+    1. **Keyword list:** </br> If you choose to add a keyword list, enter a name for the list and add the keywords you want to detect. You can enter both case sensitive and case-insensitive keywords, and you can specify whether you want to detect a word match or a string match. When you are finished, choose **Done**.
+    1. **Keyword dictionary:** </br> If you choose to add a keyword dictionary, you can choose from an existing dictionary, upload a new dictionary of keywords (as a TXT or CSV file), or enter a dictionary name and keywords in the fields provided.
+    1. **Functions:** </br> Functions are used to find text that's formatted in a specific way. For example, 'func_credit_card' looks for 14 to 16 digit credit card numbers. If you choose this option, in the **Add function** window, select **Choose functions**, select your desired function, and then choose **Add**. When you are finished, choose **Done**.
 
-5. On the **Add keyword dictionary** page, you can choose from existing dictionaries, upload a dictionary, or create a dictionary.
-    1. To use an existing dictionary,choose **Choose from existing dictionaries**.
-    1. To upload a keyword dictionary, choose **Upload a dictionary** and follow the prompts to upload either a TXT or CSV file.
-    1. To create a dictionary:
-        1. Enter a **Name** for your custom dictionary.
-        1. In the **Keywords** field, enter each keyword in your dictionary on a separate line.
-        1. When you are finished, choose **Done**.
+7. Still in the **New Pattern** window, for **Character proximity**, specify how far away (in number of characters) that any supporting elements must be to be detected. The closer the primary and supporting elements are to each other, the more likely the detected content is going to be what you're looking for.
 
-6. On the next page, choose **Create**.
+8. Add the **Supporting elements** you wish to use to increase the accuracy of detecting what you're looking for.
 
-7. If you want to add additional patterns to your sensitive information type, you can do so on the next page. When finished, choose **Next**.
+9. Add any **Additional checks** and then choose **Create**.
+ 
+10. Choose **Next** to continue creating your sensitive information type.
 
-8. Confirm the confidence level for your sensitive information type and choose **Next**.
-
-9. Review and finalize your sensitive info type selections, then select **Create** and then **Done**.
 
 ## Create a keyword dictionary from a file using PowerShell
 
@@ -156,7 +156,7 @@ The output of the command looks like this:
 `IsValid           : True` <br>
 `ObjectState       : Unchanged` <br>
 
-Paste the **identity** value into the XML for your custom sensitive information type as the **idRef**. Next, upload the XML file. Your dictionary will now appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
+Paste the **identity** value into the XML for your custom sensitive information type as the **idRef**. Next, upload the XML file. Your dictionary now appears in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
 
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
