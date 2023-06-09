@@ -144,6 +144,8 @@ On implementing these solution options (either of them), if the licensing issues
 
 ## Sign in with your Microsoft account
 
+:::image type="content" source="images/mac-consumer-login.png" alt-text="Sign in with your Microsoft account to get started." lightbox="images/mac-consumer-login.png":::
+
 ![Sign in with your Microsoft account to get started](images/mac-consumer-login.png)
 
 ### Message
