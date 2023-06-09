@@ -85,7 +85,7 @@ If the tool indicates a mismatch in number of columns, it might be due to the pr
   - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 
 > [!IMPORTANT]
-> 1. If using Windows Server 2016 or before, you must also [install Visual C++](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) prior to installing the EDM Upload Agent.
+> 1. If using Windows Server 2016 or before, you must also [install Visual C++](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) prior to installing the EDM Upload Agent.
 >
 > 2. Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
 > 
