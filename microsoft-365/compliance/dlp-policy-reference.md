@@ -918,7 +918,14 @@ When a user overrides a block with override action on an email, the override opt
     ]
 }
 ```
-If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data. 
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data.
+
+> [!NOTE]
+> The `msip_justification` values are stored in the following order: 
+>
+> `False Positive; Recipient Entitled; Manager Approved; I Acknowledge; JustificationText_[free text]`. 
+>
+>  Notice that the values are separated by semicolons. The maximum free text allowed is 500 characters.
 
 ### Incident reports
 
