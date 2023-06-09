@@ -17,15 +17,14 @@ ms.collection:
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Tune anti-phishing protection
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
 

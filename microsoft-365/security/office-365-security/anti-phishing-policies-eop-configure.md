@@ -17,15 +17,13 @@ description: Admins can learn how to create, modify, and delete the anti-phishin
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/3/2023
+ms.date: 06/09/2023appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
 ---
 
 # Configure anti-phishing policies in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, anti-phishing policies provide anti-spoofing protection. For more information, see [Spoof settings in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 

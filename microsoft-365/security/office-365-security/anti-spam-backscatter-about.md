@@ -19,15 +19,14 @@ ms.custom:
 description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/01/2022
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Backscatter in EOP
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 *Backscatter* is non-delivery reports (also known as NDRs or bounce messages) that you receive for messages that you didn't send. Backscatter is caused by spammers forging (spoofing) the From address (also known as the `5322.From` or P2 address) in their messages. Spammers will often use real email addresses as the From address to lend credibility to their messages. When spam is sent to a non-existent recipient, the destination email server is essentially tricked into returning the undeliverable message in an NDR to the forged sender in the From address.
 
