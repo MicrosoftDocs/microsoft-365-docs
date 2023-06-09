@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Purview Chrome Extension"
+title: "Get started with the Microsoft Purview extension for Chrome"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,23 +21,23 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy the Microsoft Purview Extension."
+description: "Prepare for and deploy the Microsoft Purview extension for Chrome."
 ---
 
-# Get started with Microsoft Purview Chrome Extension
+# Get started with the Microsoft Purview extension for Chrome
 
-Use these procedures to roll out the Microsoft Purview Chrome Extension.
+Use these procedures to roll out the Microsoft Purview extension for Chrome.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 > [!NOTE]
-> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
+> Microsoft Purview extension for Chrome is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
 
 ## Before you begin
 
-To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview extension for Chrome, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview extension for Chrome](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)

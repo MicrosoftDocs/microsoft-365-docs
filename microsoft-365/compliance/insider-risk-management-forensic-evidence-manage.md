@@ -122,7 +122,7 @@ When you select the **Forensics evidence** tab, captured clips and associated in
 
 Each captured clip includes the following information:
 
-- **Date/time (UTC)**: The date, time (UTC), and duration of the capture.
+- **Date/time (UTC)**: The date, time (UTC), and duration of the capture. The duration of the capture is the total time spanned by the capture. The actual length of the capture may be shorter since insider risk management automatically eliminates identical frames.
 - **Device**: The name of the device in Windows 10/11.
 - **Activities**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
 - **User**: The name of the user.

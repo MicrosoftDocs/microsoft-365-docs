@@ -28,6 +28,11 @@ ID | Category | ER | Addresses | Ports
 7 | Optimize<BR>Required | Yes | `*.dod.teams.microsoft.us, *.online.dod.skypeforbusiness.us, dod.teams.microsoft.us`<BR>`52.127.64.0/21, 52.180.249.148/32, 52.180.252.118/32, 52.180.252.187/32, 52.180.253.137/32, 52.180.253.154/32, 52.181.165.243/32, 52.181.166.119/32, 52.181.167.43/32, 52.181.167.64/32, 52.181.200.104/32, 104.212.32.0/22, 104.212.60.0/23, 195.134.240.0/22` | **TCP:** 443<BR>**UDP:** 3478, 3479, 3480, 3481
 21 | Default<BR>Required | No | `dodteamsapuiwebcontent.blob.core.usgovcloudapi.net, msteamsstatics.blob.core.usgovcloudapi.net, statics.teams.microsoft.com` | **TCP:** 443
 22 | Allow<BR>Required | Yes | `endpoint1-proddodcecompsvc-dodc.streaming.media.usgovcloudapi.net, endpoint1-proddodeacompsvc-dode.streaming.media.usgovcloudapi.net`<BR>`52.181.167.113/32, 52.182.52.226/32` | **TCP:** 443
+  
+> [!NOTE]
+> For  Cross-Cloud Anonymous Join to work properly, you must add these endpoints for the cloud of the target meeting to the safe senders list:
+> - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+> - [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
 
 ## Microsoft 365 Common and Office Online
 
