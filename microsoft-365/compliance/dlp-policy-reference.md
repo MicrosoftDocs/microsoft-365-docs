@@ -558,7 +558,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <= 600 | Medium |
 |Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1 MB  | Low |
-|Attachment is password-protected | EXO | File types: Office files, PDF, ZIP, and 7z |Low|
+|Attachment is password-protected | EXO | File types: Office files, .PDF, .ZIP, and 7z |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <= 50 | High|
 |Recipient is a member of |EXO | Count <= 600 | High |
 |Recipient domain is | EXO| Domain name length <= 67; Count <= 5000  | Low |
