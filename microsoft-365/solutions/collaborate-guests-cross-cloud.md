@@ -46,32 +46,27 @@ See one of the following depending on your scenario:
 
 In your Microsoft cloud settings, enable the Microsoft Azure cloud you want to collaborate with.
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
+1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Microsoft cloud settings**.
 1. Select the checkboxes next to the external Microsoft Azure clouds you want to enable.
 
-   ![Screenshot showing Microsoft cloud settings.](media/cross-cloud-settings/cross-cloud-settings.png)
-
-> [!NOTE]
-> Selecting a cloud doesn't automatically enable B2B collaboration with organizations in that cloud. You'll need to add the organization you want to collaborate with, as described in the next section.
-
-
+   ![Screenshot showing Microsoft cloud settings.](../media/cross-cloud-settings.png)
 
 ### Add an organization
 
-Add each organization with which you want to participate in shared channels.
+Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration.
 
 To add an organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
-1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization and press Enter.
+1. On the **Add organization** pane, type the tenant ID for the organization and press Enter. (Note that you can't search on domain names from other clouds.)
 1. Select **Add**.
 1. The organization appears in the organizations list. At this point, all access settings for this organization are inherited from your default settings.
 
-### Configure inbound settings
+##### Configure inbound settings
 
 Follow this procedure for each organization where you want to invite external participants.
 
@@ -85,7 +80,7 @@ To configure inbound settings for an organization
 1. Select the **Office 365** application, and then choose **Select**.
 1. Select **Save** and close the **Inbound access settings** blade.
 
-### Configure outbound settings
+##### Configure outbound settings
 
 Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
 
