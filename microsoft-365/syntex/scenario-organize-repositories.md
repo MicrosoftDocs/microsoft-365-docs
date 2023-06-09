@@ -40,7 +40,9 @@ Your organization drafts and stores policies and procedures in a few large docum
 
 Experienced users might know where the policy or procedure is they need to reference to do their job effectively. However, new users or users who don’t regularly focus on a specific policy might not know where to look.
 
-By using Syntex and the SharePoint term store, as policies are added to the library and processed Syntex can assign the correct term. Users are then able to filter or search using these terms, or thier synonyms. The terms can also be used to generate topics in Viva Topics. The Viva Topics curation AI will then generate topics for these terms and associate files tagged with the term.
+By using Syntex and the SharePoint term store, as policies are added to the library and processed Syntex can assign the correct term. Users are then able to filter or search using these terms, or their synonyms.
+
+The terms can also be used to generate topics in Viva Topics. The Viva Topics curation AI will then generate topics for these terms and associate files tagged with the term.
 
 Instead of navigating a folder structure, users can then search for synonyms or alternate names as defined in the topic and see the appropriate policy or procedure.
 
