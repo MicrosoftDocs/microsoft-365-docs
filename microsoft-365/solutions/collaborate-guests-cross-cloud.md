@@ -24,38 +24,32 @@ description: Learn how to enable guest invitations between Microsoft 365 clouds 
 
 # Collaborate with guests from other Microsoft clouds
 
-Microsoft 365 organizations are located in one of three Microsoft clouds:
+Microsoft 365 organizations have one of several tenant types and are located in one of three Microsoft clouds:
 
-- Microsoft Azure Commercial - commercial and GCC tenants
-- Microsoft Azure Government - GCC-High and DoD tenants
-- Microsoft Azure China (operated by 21Vianet)
+|Cloud|Tenant types|
+|:----|:-----------|
+|Microsoft Azure Commercial|Commercial, GCC|
+|Microsoft Azure Government|GCC High, DoD|
+|Microsoft Azure China|China (21Vianet)|
 
-In order to invite guests from an organization in a different cloud, you must do the following:
-1. If the organization you want to collaborate with is in a different cloud (such as GCC and commercial), enable cross-tenant connections with that cloud.
-1. Set up cross-tenant access settings with the organization that you want to collaborate with.
+In order to invite guests from an organization with a different tenant type, you must do the following:
+
+1. If the organization you want to collaborate with is in a different cloud (such as commercial and DoD), enable cross-tenant connections with that cloud.
+1. Set up cross-tenant access settings in Azure AD with the organization that you want to collaborate with.
 
 ## Prerequisites
 
-Inviting guests from organizations in other clouds requires that guest access be configured for your organization. If you haven't previously configured guest access, see one of the following depending on your scenario:
+Inviting guests from organizations with different tenant types requires that guest access be configured for your organization. If you haven't previously configured guest access, see one of the following depending on your scenario:
+
 - [Collaborate with guests on a document](collaborate-on-documents)
 - [Collaborate with guests in a site](collaborate-in-site.md)
 - [Collaborate with guests in a team](collaborate-as-team.md)
 
-To enable B2B collaboration with an organization in another cloud, you need the organization's tenant ID. Using an organization's domain name for lookup isn't available in cross-cloud scenarios. You need to contact the other organization to get their tenant ID.
+Additionally, to enable B2B collaboration with an organization with a different tenant type, you need the organization's tenant ID. If you know the fully qualified domain name of the other organization, you can look up the tenantID in the Teams admin center. Open [meeting settings](https://admin.teams.microsoft.com/meetings/settings), select **Lookup** under **Cross-cloud meetings**, type in the fully qualified domain name, and select **Show tenant ID**.
 
 ## Allow cross-tenant connections with other Microsoft 365 clouds
 
-If you're setting up a cross-cloud guest sharing with a tenant that's in a different Microsoft Azure cloud than yours, then you need to enable connections with that cloud before you add the organizational relationship.
-
-The following table shows which cloud each type of tenant is in.
-
-|Tenant type|Cloud|
-|:----------|:----|
-|Commercial|Microsoft Azure Commercial|
-|GCC|Microsoft Azure Commercial|
-|GCC High|Microsoft Azure Government|
-|DoD|Microsoft Azure Government|
-|China (21Vianet)|Microsoft Azure China|
+If you're setting up guest sharing with a tenant that's in a different Microsoft Azure cloud than yours, then you need to enable connections with that cloud before you add the organizational relationship.
 
 Enable the Microsoft Azure cloud you want to collaborate with in Azure AD cross tenant access settings.
 
@@ -68,7 +62,7 @@ Enable the Microsoft Azure cloud you want to collaborate with in Azure AD cross 
 
 ### Add an organization
 
-Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud, cross-cloud B2B collaboration requires that each organization be added to Azure AD cross-tenant access settings.
+Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud, B2B collaboration with different tenant types requires that each organization be added to Azure AD cross-tenant access settings.
 
 To add an organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
