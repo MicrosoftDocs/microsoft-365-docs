@@ -124,6 +124,10 @@ To dismiss an insider risk alert, complete the following steps:
 4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
 5. Select **Dismiss alerts** to resolve the alerts as benign or select **Cancel** to close the details pane without dismissing the alerts.
 
+## Assign an alert
+
+If you're an administrator with the appropriate permissions, you can assign ownership of an alert to yourself or to an insider risk management user with the Insider Risk Management, Insider Risk Management Analyst, or Insider Risk Management Investigator role. After an alert is assigned, you can also reassign it to a user with any of the same roles. You can only assign an alert to one admin at a time. 
+
 ## Triage alerts
 
 To triage an insider risk alert, complete the following steps:
