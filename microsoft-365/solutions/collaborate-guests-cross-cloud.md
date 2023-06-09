@@ -104,6 +104,8 @@ To configure outbound settings for an organization
 
 ## Related topics
 
+[Meet with people in other Microsoft 365 clouds](/microsoftteams/cross-cloud-meetings)
+
 [Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings)
 
 [Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
