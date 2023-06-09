@@ -94,16 +94,20 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 
 Not supported by default, and now rolling out in preview, you can enable support for PDFs for the following scenarios:
 
-- Applying a sensitivity label in Office on the web or in SharePoint
+- Applying a sensitivity label in Office on the web
 - Uploading a labeled document, and then extracting and displaying that sensitivity label.
 - Search, eDiscovery, and data loss prevention
-- Auto-labeling policies and default sensitivity labels for SharePoint document libraries
+- [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) and [default sensitivity labels for SharePoint document libraries](sensitivity-labels-sharepoint-default-label.md)
 
 > [!IMPORTANT]
-> Be aware that enabling PDF support 
+> Be aware that enabling PDF support can impact the number of files that get automatically labeled with auto-labeling policies that support a maximum of 25,000 files a day.
 
+To enable this PDF support, you have two options:
 
-To enable this support, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
+- Use the following PowerShell command
+- If PDF files are detected for your auto-labeling policies, you will be prompted to turn on PDF support from within the simulation results
+
+To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
 
     ```PowerShell
     Set-SPOTenant -EnableSensitivityLabelforPDF $true
