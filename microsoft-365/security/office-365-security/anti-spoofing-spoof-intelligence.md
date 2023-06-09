@@ -46,11 +46,11 @@ When a sender spoofs an email address, they appear to be a user in one of your o
   - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
   - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
-You can use the **spoof intelligence insight** in the Microsoft 365 Defender portal to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
+You can use the *spoof intelligence insight* in the Microsoft 365 Defender portal to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
 
 By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
 
-Likewise, you can use the **spoof intelligence insight** to review spoofed senders that were allowed by spoof intelligence and manually block those senders.
+Likewise, you can use the spoof intelligence insight to review spoofed senders that were allowed by spoof intelligence and manually block those senders.
 
 The rest of this article explains how to use the spoof intelligence insight in the Microsoft 365 Defender portal and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
