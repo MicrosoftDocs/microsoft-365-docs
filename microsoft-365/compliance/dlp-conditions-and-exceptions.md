@@ -106,7 +106,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 |condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
-|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents,PDF,.zip files, and .7z files.|
+|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .PDF,.zip files, and .7z files.|
 |Attachment's file extension is|condition: *ContentExtensionMatchesWords* <br/><br/> exception: *ExceptIfContentExtensionMatchesWords*|Words|Messages where an attachment's file extension matches any of the specified words.|
 |Any email attachment's content could not be scanned|condition: *DocumentIsUnsupported* <br/><br/>exception: *ExceptIf DocumentIsUnsupported*|n/a|Messages where an attachment isn't natively recognized by Exchange Online.|
 |Any email attachment's content didn't complete scanning|condition: *ProcessingLimitExceeded* <br/><br/> exception: *ExceptIfProcessingLimitExceeded*|n/a|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
