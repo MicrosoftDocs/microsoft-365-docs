@@ -21,7 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150 
-description: "Learned how to upgrade or change to a different plan in the Microsoft 365 admin center."
+description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
 ms.date: 04/27/2023
 ---
 

@@ -196,6 +196,26 @@
               href: cross-tenant-onedrive-migration-step7.md
             - name: FAQs
               href: cross-tenant-onedrive-migration-faqs.md
+        - name: Cross-tenant SharePoint migration
+          items:
+            - name: Cross-tenant SharePoint migration overview
+              href: cross-tenant-sharepoint-migration.md
+            - name: Step 1 Connect to tenants
+              href: cross-tenant-sharepoint-migration-step1.md
+            - name: Step 2 Establish trust between the tenants
+              href: cross-tenant-sharepoint-migration-step2.md
+            - name: Step 3 Verify trust between the tenants
+              href: cross-tenant-sharepoint-migration-step3.md
+            - name: Step 4 Pre-create users & groups
+              href: cross-tenant-sharepoint-migration-step4.md
+            - name: Step 5 Prepare the identity mapping file
+              href: cross-tenant-sharepoint-migration-step5.md
+            - name: Step 6 Start a cross-tenant sharepoint migration
+              href: cross-tenant-sharepoint-migration-step6.md
+            - name: Step 7 Post migration steps
+              href: cross-tenant-sharepoint-migration-step7.md
+            - name: FAQs
+              href: cross-tenant-sharepoint-migration-faqs.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency

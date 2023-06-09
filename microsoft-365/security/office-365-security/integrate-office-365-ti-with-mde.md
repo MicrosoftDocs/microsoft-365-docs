@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 05/29/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -49,6 +49,9 @@ In this example, you can see that the recipients of the detected email message h
 - You must have access to [Explorer (or real-time detections)](threat-explorer-about.md).
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
+
+> [!IMPORTANT]
+> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft 365 Defender, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 

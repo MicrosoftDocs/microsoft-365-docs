@@ -80,7 +80,7 @@ Here's an example of the meeting metadata.
 
 For more information about conducting an eDiscovery investigation, see [Get started with eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery).
 
-Microsoft Teams data will appear as IM or Conversations in the Excel eDiscovery export output. You can open the `.pst` file in Outlook to view those messages after you export them.
+Microsoft Teams data appears as IM or Conversations in the Excel eDiscovery export output. You can open the `.pst` file in Outlook to view those messages after you export them.
 
 When viewing the .pst file for the team, all conversations are located in the Team Chat folder under Conversation History. The title of the message contains the team name and channel name. For example, the image below shows a message from Bob who messaged the Project 7 standard channel of the Manufacturing Specs team.
 
@@ -169,12 +169,12 @@ You can use eDiscovery tools to search for Teams content related to guests in yo
 
 To search for content for guests:
 
-1. Connect to Azure AD PowerShell. For instructions, see the "Connect with the Azure Active Directory PowerShell" section in [Connect to Microsoft 365 with PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Be sure to complete Step 1 and Step 2 in the previous article.
+1. Connect to Microsoft Graph PowerShell. For more information, see the [Microsoft Graph PowerShell overview](/powershell/microsoftgraph/overview). Be sure to complete Step 1 and Step 2 in the previous article.
 
-2. After you successfully connect to Azure AD PowerShell, run the following command to display the user principal name (UPN) for all guests in your organization. You have to use the UPN of the guest when you create the search in step 4.
+2. After you successfully connect to Microsoft Graph PowerShell, run the following command to display the user principal name (UPN) for all guests in your organization. You have to use the UPN of the guest when you create the search in step 4.
 
    ```powershell
-   Get-AzureADUser -Filter "userType eq 'Guest'" -All $true | FL UserPrincipalName
+   Get-MgUser -Filter "userType eq 'Guest'" -All $true | FL UserPrincipalName
    ```
 
    > [!TIP]

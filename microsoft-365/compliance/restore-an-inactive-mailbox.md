@@ -168,6 +168,9 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   ```
 
 - **What does the TargetRootFolder parameter do?** As previously explained, you can use the **TargetRootFolder** parameter to specify a folder in the top of the folder structure (also called the root) in the target mailbox in which to restore the contents of the inactive mailbox. If you don't use this parameter, mailbox items from the inactive mailbox are merged into the corresponding default folders of the target mailbox, and custom folders are re-created in the root of the target mailbox. The following illustrations highlight these differences between not using and using the **TargetRootFolder** parameter.
+      
+    > [!NOTE]
+    > To restore the contents of a primary mailbox to an archive mailbox, use the **TargetRootFolder** parameter to specify the archive mailbox folders to migrate the content to. This content will be visible after it's restored. If you don't use this parameter, the restored content is not visible because it's mapped to locations in the archive mailbox that aren't visible to users.
 
   **Folder hierarchy in the target mailbox when the TargetRootFolder parameter isn't used**
 

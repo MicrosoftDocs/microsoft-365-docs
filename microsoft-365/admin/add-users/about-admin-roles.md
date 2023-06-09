@@ -90,7 +90,7 @@ You'll probably only need to assign the following roles in your organization. By
 |License admin    |   Assign the License admin role to users who need to assign and remove licenses from users and edit their usage location. <br/><br/> License admins also can: <br> - Reprocess license assignments for group-based licensing <br> - Assign product licenses to groups for group-based licensing  |
 |Message center privacy reader    |   Assign the Message center privacy reader role to users who need to read privacy and security messages and updates in the Microsoft 365 Message center. Message center privacy readers may get email notifications related to data privacy, depending on their preferences, and they can unsubscribe using Message center preferences. Only global administrators and Message center privacy readers can read data privacy messages. This role has no permission to view, create, or manage service requests. <br><br>Message center privacy readers can also: <br> - Monitor all notifications in the Message Center, including data privacy messages <br> - View groups, domains, and subscriptions   |
 |Message center reader |   Assign the Message center reader role to users who need to do the following: <br> - Monitor message center notifications <br> - Get weekly email digests of message center posts and updates <br> - Share message center posts <br> - Have read-only access to Azure AD services, such as users and groups|
-|Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Cloud Policy service for Microsoft 365 to create and manage cloud-based policies for Office <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Office apps   <br> - Monitor service health  |
+|Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Cloud Policy service for Microsoft 365 to create and manage cloud-based policies. <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Microsoft 365 apps   <br> - Monitor service health  |
 |Organizational Message Writer    |    Assign the Organizational Message Writer role to users who need to write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.   |
 |Password admin  |   Assign the Password admin role to a user who needs to reset passwords for non-administrators and Password Administrators.   |
 |Power Platform admin |   Assign the Power Platform admin role to users who need to do the following: <br> - Manage all admin features for Power Apps, Power Automate, and Microsoft Purview Data Loss Prevention <br> - Create and manage service requests <br> - Monitor service health  |
@@ -127,6 +127,20 @@ A partner can assign these roles:
 - **Helpdesk Agent** Privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. The partner has to be an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
+
+## Volume licensing roles
+
+Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+
+- Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
+
+- Volume licensing users see no other Microsoft 365 admin center information or functionality.
+
+- Microsoft 365 admin center Global Admins have no role in assigning VL user permissions and do not need to assign any admin permissions to VL users for them to see the volume licensing blade.
+
+- Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
+
+- For more information about volume licensing in Microsoft 365 admin center, go to [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
   
 ## Related content
 
