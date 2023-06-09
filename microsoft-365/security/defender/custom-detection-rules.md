@@ -126,18 +126,20 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time, see [Continous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
-
-
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time (NRT), see [Continous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
+
 
 ##### Continuous (NRT) frequency
 
-Setting a custom detection to run in Continuous (NRT) frequency increases your organization's ability to identify threats faster and has minimal to no impact to your resource usage.
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
+
+> [!NOTE]
+>  Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization.
 
 ###### Queries you can run continously
 
@@ -169,6 +171,8 @@ Near real-time detections are supported for the following tables:
 
 > [!NOTE]
 > Only columns that are generally available can support **Continuous (NRT)** frequency.
+
+
 
 ### 3. Choose the impacted entities
 
