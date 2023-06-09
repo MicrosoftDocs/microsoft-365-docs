@@ -36,9 +36,17 @@ ms.date: 12/18/2020
 
 ## No license found
 
-While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **X** on top of the Microsoft Defender for Endpoint on macOS shield may appear. 
+While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **X** on top of the Microsoft Defender for Endpoint on macOS shield may appear.
 
-Click the **X** symbol and an **Action Needed** prompt should pop up. Clicking the **Action Needed** prompt will bring up the following licensing error message: 
+Click the **X** symbol. 
+
+:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The menu bar that contains the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
+
+A list of options are displayed as shown in the following screenshot:
+
+:::image type="content" source="images/x-symbol-menu-items.png" alt-text="The list of options displated on clicking the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/x-symbol-menu-items.png":::
+
+Clicking the **Action Needed** prompt will bring up the following licensing error message:
 
 :::image type="content" source="images/no-license-found.png" alt-text="Screenshot that shows a licensing error for Microsoft Defender for Endpoint on macOS shield." lightbox="images/no-license-found.png":::
 
@@ -61,15 +69,6 @@ When you click **Action needed**, you get the following error message:
 You'll encounter this message in a different way: In terminal, if you enter **mdatp health** without the double quotes, you might see the warning as shown in the following screenshot:
 
 :::image type="content" source="images/no-license-found-warning.png" alt-text="The license-not-found message when using the terminal." lightbox="images/no-license-found-warning.png":::
-
-Or if you type "mdatp health" in the terminal without the double quotes, you might see the following warning:
-
-### Message
-
-ATTENTION: No license found. Contact your administrator for help.\
-healthy                                   : false\
-health_issues                             : [“missing license”]\
-licensed                                  : false
 
 ### Cause
 
