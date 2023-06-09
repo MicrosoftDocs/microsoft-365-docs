@@ -20,16 +20,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/12/2023
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Impersonation insight in Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _Impersonation_ is when the sender of an email message looks similar to a real or expected sender's email address. Attackers often use impersonated sender email addresses in phishing or other types of attacks to gain the trust of the recipient. There are two basic types of impersonation:
 
@@ -47,7 +46,6 @@ Admins can use the impersonation insight in the Microsoft 365 Defender portal to
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**

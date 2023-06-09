@@ -24,17 +24,16 @@ ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Anti-spoofing protection in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
 
@@ -50,7 +49,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
-- **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
+- **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#spoofed-senders-in-the-tenant-allowblock-list).
 
 - **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
@@ -151,21 +150,14 @@ The mailing list server receives the message, modifies its content, and replays 
 To help mailing list messages pass anti-spoofing checks, do following steps based on whether you control the mailing list:
 
 - Your organization owns the mailing list:
-
   - Check the FAQ at DMARC.org: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F).
-
   - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures).
-
   - Consider installing updates on your mailing list server to support ARC, see <http://arc-spec.org>.
 
 - Your organization doesn't own the mailing list:
-
   - Ask the maintainer of the mailing list to configure email authentication for the domain that the mailing list is relaying from.
-
     When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
-
-  - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md).
-
+  - Create inbox rules in your email client to move messages to the Inbox.
   - Use the Tenant Allow/Block List to create an override for the mailing list to treat it as legitimate. For more information, see [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).

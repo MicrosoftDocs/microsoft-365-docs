@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/31/2023
+ms.date: 06/06/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -323,7 +323,7 @@ When the options are supported, use the following table to identify when users s
 
 When both settings are selected, the label is therefore visible in both Outlook and in Word, Excel, and PowerPoint.
 
-A sensitivity label that lets users assign permissions must be applied to content manually by users; it can't be auto-applied or used as a recommended label.
+A sensitivity label that lets users assign permissions can be recommended to users, but can only be automatically applied for the Do Not Forward and Encrypt-Only options.
 
 Configuring the user-assigned permissions:
 

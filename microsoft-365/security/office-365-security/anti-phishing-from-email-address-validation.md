@@ -19,17 +19,16 @@ description: Admins can learn about the types of email addresses that are accept
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
+ms.date: 06/09/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # How EOP validates the From address to prevent phishing
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-phishing-protection-spoofing-about.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
 
@@ -45,7 +44,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).
 
-- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
+- The `5322.From` address (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
 
 The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 
