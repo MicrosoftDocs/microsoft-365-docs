@@ -29,14 +29,14 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 In the Viva Goals report, you can understand the activity of every Viva Goals user in your organization. It also helps you to understand the level of collaboration going on by looking at the active usage and number of OKRs created. 
 
-## How do I get to the to the Viva Goals activity report?
+## How do I get to the Viva Goals activity report?
 
 1. In the admin center, go to the **Reports**, and then select **Usage**. 
 2. Find **Viva Goals page**.
 
 ## Interpret the Viva Goals report 
 
-You can use this report to see the activity and usage of Viva Goals in your organization. You'll see the following summary charts in this report:  
+You can use this report to see the activity and usage of Viva Goals in your organization. You see the following summary charts in this report:  
 
 :::image type="content" source="../../media/viva-goals-cfr/cfr-1.png" alt-text="Screenshot of the activity report.":::
 
