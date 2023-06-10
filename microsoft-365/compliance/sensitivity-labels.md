@@ -164,7 +164,7 @@ The ordering of sublabels is also used with [label inheritance from email attach
 
 When you select a sensitivity label, you can reorder it by using the options to move it to the top or bottom of the list if it's not a sublabel, move it up or down by one label, or directly assign a number.
 
-![Option to create a sublabel.](../media/Sensitivity-label-sublabel-options.png)
+:::image type="content" source="../media/sensitivity-label-reorder-options.png" alt-text="Screenshot that shows options to reoder sensitivity labels.":::
 
 ### Sublabels (grouping labels)
 
