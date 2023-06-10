@@ -355,9 +355,6 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 #### Auto-apply labels to cloud attachments
 
-> [!NOTE]
-> Support for cloud attachments that are shared in Yammer is in preview.
-
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 
 > [!IMPORTANT]
