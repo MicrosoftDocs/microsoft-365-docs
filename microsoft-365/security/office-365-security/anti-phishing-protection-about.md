@@ -44,7 +44,7 @@ With the growing complexity of attacks, it's even difficult for trained users to
 
 ## Anti-phishing protection in EOP
 
-EOP contains the following features that can help protect your organization from phishing threats:
+Microsoft 365 organizations with mailboxes in Exchange Online or standalone EOP organizations without Exchange Online mailboxes contain the following features that help protect your organization from phishing threats:
 
 - **Spoof intelligence**: Use the spoof intelligence insight to review detected spoofed senders in messages from external and internal domains, and manually allow or block those detected senders. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
