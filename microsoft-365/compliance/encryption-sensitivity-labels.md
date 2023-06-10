@@ -99,7 +99,7 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 4.  On the **Encryption** page, select one of the following options:
     
-    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label will remove existing encryption, even if it was applied independently from a sensitivity label.
+    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label removes existing encryption, even if it was applied independently from a sensitivity label.
         
         It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption. For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section.
     

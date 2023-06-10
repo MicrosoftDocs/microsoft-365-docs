@@ -164,7 +164,7 @@ The ordering of sublabels is also used with [label inheritance from email attach
 
 When you select a sensitivity label, you can reorder it by using the options to move it to the top or bottom of the list if it's not a sublabel, move it up or down by one label, or directly assign a number.
 
-:::image type="content" source="../media/sensitivity-label-reorder-options.png" alt-text="Screenshot that shows options to reoder sensitivity labels.":::
+:::image type="content" source="../media/sensitivity-label-reorder-options.png" alt-text="Screenshot that shows options to reorder sensitivity labels.":::
 
 ### Sublabels (grouping labels)
 
@@ -180,7 +180,7 @@ Example of how sublabels display for users:
 
 ### Editing or deleting a sensitivity label
 
-If you delete a sensitivity label from the admin portal, the label is not automatically removed from content, and any protection settings continue to be enforced on content that had that label applied.
+If you delete a sensitivity label from the admin portal, the label is't automatically removed from content, and any protection settings continue to be enforced on content that had that label applied.
 
 If you edit a sensitivity label, the version of the label that was applied to content is what's enforced on that content.
 
@@ -257,7 +257,7 @@ Similarly for users in the legal department, who are assigned the third policy w
 
 ## Sensitivity labels and Azure Information Protection
 
-The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). The AIP Office add-in component from this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). When the AIP client is installed, it is no longer the default labeling client for the latest Office apps.
+The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). The AIP Office add-in component from this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). When the AIP client is installed, it's no longer the default labeling client for the latest Office apps.
 
 If you're using the AIP add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 
