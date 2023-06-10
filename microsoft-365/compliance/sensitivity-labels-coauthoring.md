@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 01/05/2021
+ms.date: 01/31/2021
 ms.localizationpriority: high
 ms.collection: 
 - purview-compliance
@@ -82,7 +82,7 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Azure Information Protection unified labeling client and scanner:**
         - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - For Office apps, requires minimum versions listed for Microsoft 365 Apps for enterprise
-        - Additionally, you're not using [Double Key Encryption](double-key-encryption.md) in the same tenant
+        - If you want to use [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) in your tenant, make sure the [Azure Information Protection Office add-in is disabled](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps). It's not supported to enable coauthoring and use the add-in for sensitivity labels that are configured for Double Key Encryption.
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
@@ -110,9 +110,9 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
 
-- Co-authoring and AutoSave isn't supported for Office documents that use the [label encryption configuration](encryption-sensitivity-labels.md#configure-encryption-settings) **User access to content expires** when it is set to a value other than **Never**.
+- Co-authoring and AutoSave isn't supported for Office documents that use the [label encryption configuration](encryption-sensitivity-labels.md#configure-encryption-settings) **User access to content expires** when it is set to a value other than **Never**, or **Double Key Encryption** is configured.
     
-    Labels with this configuration do still display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
+    Labels with these configurations do still display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
 - Co-authoring and AutoSave are now supported in preview with [specific versions and limitations](sensitivity-labels-sharepoint-onedrive-files.md#support-for-labels-configured-for-user-defined-permissions) for sensitivity labels that are configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected.
 
