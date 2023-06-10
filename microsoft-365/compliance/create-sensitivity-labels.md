@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 06/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -67,9 +67,9 @@ The global admin for your organization has full permissions to create and manage
 
     For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the UI for individual settings.
 
-5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
+5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **Actions**, and then select **Create sublabel**.
 
-6. When you've created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
+6. When you've created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **Actions**, and then select one of the reordering options, such as **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
 To edit an existing label, select it, and then select the **Edit label** button:
 
@@ -175,7 +175,7 @@ To check your label's configuration, including advanced settings, use the follow
 
 7. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 
-7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
+7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **Actions**, and then select one of the reodering options. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
 
 Completing the **Create policy** configuration automatically publishes the label policy. To make changes to a published policy, simply edit it. There's no specific publish or republish action for you to select.
 
@@ -237,7 +237,7 @@ As with all label changes, removing a sensitivity label from a label policy or d
 
 ## Next steps
 
-To configure and use your sensitivity labels for specific scenarios, use the following articles:
+To configure and use your sensitivity labels for specific scenarios, you might find the following articles helpful:
 
 - [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 
