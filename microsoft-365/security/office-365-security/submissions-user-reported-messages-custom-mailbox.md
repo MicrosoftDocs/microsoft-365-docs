@@ -52,7 +52,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Turn off Zero-hour auto purge (ZAP) for malware (**Protection settings** section \> **Enable zero-hour auto purge for malware** isn't selected or `-ZapEnabled $false` in PowerShell).
 
-  - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** isn't selected or `-EnableFileFilter $false` in PowerShell).
+  - Turn off the [common attachments filter](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies) (**Protection settings** section \> **Enable the common attachments filter** isn't selected or `-EnableFileFilter $false` in PowerShell).
 
   For instructions, see [Create an anti-malware policy](anti-malware-policies-configure.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
