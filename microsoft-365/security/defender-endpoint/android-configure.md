@@ -43,6 +43,7 @@ For more information about how to set up Defender for Endpoint on Android and Co
 Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
 
 ## Configure web protection
+
 Defender for Endpoint on Android allows IT Administrators the ability to configure the web protection feature. This capability is available within the Microsoft Intune admin center.
 
 [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Anti-phishing and custom indicators (URL and IP addresses) are supported as part of web protection. Web content filtering is currently not supported on mobile platforms.
@@ -78,7 +79,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     > [!div class="mx-imgBorder"]
     > ![Image of add configuration policy.](images/npvalue.png)
 
-1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices . Establishing trust helps prevents Defender flag root CAs as rogue certificates.
+1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices. Establishing trust helps prevents Defender flag root CAs as rogue certificates.
 
     To establish trust for the root CAs, use **'Trusted CA certificate list for Network Protection'** as the key. In the value, add the **'comma separated list of certificate thumbprints (SHA 1)'**.
 
@@ -98,12 +99,12 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     | Configuration Key| Description|
     |---|---|
     |Trusted CA certificate list for Network Protection|Security admins manage this setting to establish trust for root CA and self-signed certificates|
-    |Enable Network protection in Microsoft Defender|1 - Enable, 0- Disable (default) ; This setting is used by the IT admin to enable or disable the network protection capabilities in the defender app|
-    |Enable Network Protection Privacy|1 - Enable (default) , 0 - Disable ; Security admins manage this setting to enable or disable privacy in network protection.|
-    |Enable Users to Trust Networks and Certificates|1 - Enable , 0 - Disable (default) ; Security admins manage this setting to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
-    |Automatic Remediation of Network Protection Alerts|1 - Enable (default) , 0 - Disable ; Security admins manage this setting to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access points or deleting suspicious certificates detected by Defender|
-    |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable; Security admins manage this setting to enable, audit or disable open network detection. In audit mode, alerts will be send only to the ATP portal with no user side experience. For user experience, set the config in enabled mode.|  
-    |Manage Network protection Detection for Certificates|0 - Disable , 1 - Audit mode (default) , 2 - Enable ; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications is displayed to the user when defender detects a bad certificate.Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value ,when the feature is enabled with value as 2, end user notifications are sent to the user when defender detects a bad certificate and alerts are also sent to the SOC Admin|
+    |Enable Network protection in Microsoft Defender|1 - Enable, 0- Disable (default); This setting is used by the IT admin to enable or disable the network protection capabilities in the Defender app|
+    |Enable Network Protection Privacy|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable privacy in network protection.|
+    |Enable Users to Trust Networks and Certificates|1 - Enable, 0 - Disable (default); Security admins manage this setting to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
+    |Automatic Remediation of Network Protection Alerts|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access point or deleting suspicious certificates detected by Defender|
+    |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable; Security admins manage this setting to enable, audit or disable open network detection. In audit mode, alerts are send only to the ATP portal with no user side experience. For user experience, set the config in enabled mode.|  
+    |Manage Network protection Detection for Certificates|0 - Disable, 1 - Audit mode (default), 2 - Enable; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications are displayed to the user when Defender detects a bad certificate. Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value, when the feature is enabled with value as 2, end user notifications are sent to the user when Defender detects a bad certificate and alerts are also sent to the SOC Admin|
 
 6. Add the required groups on which the policy will have to be applied. Review and create the policy.
 
@@ -116,7 +117,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     |Manage Network Protection detection for Open Networks|0: Disable (default) <br/> 1: Audit Mode <br/><br/> Security admins manage this setting enable or disable open network detection.|
     |Manage Network protection Detection for Certificates|0: Disable <br/> 1: Audit mode (default) <br/> 2: Enable <br/><br/> When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications are shown when Defender detects a bad certificate. Admins can disable this detection with the value 0 or enable full feature functionality by setting the value 2. When the value is 2, end user notifications are sent to users and alerts are sent to SOC admins when Defender detects a bad certificate.|
 
-1. Add the required groups on which the policy will have to be applied. Review and create the policy.
+1. Add the required groups on which the policy has to be applied. Review and create the policy.
 
 > [!NOTE]
 > Users need to enable location permission (which is an optional permission); this enables Defender for Endpoint to scan their networks and alert them when there are WIFI-related threats. If the location permission is denied by the user, Defender for Endpoint will only be able to provide limited protection against network threats and will only protect the users from rogue certificates.
@@ -128,14 +129,14 @@ Following privacy controls are available for configuring the data that is sent b
 
 |Threat Report     |Details      |
 |--------------------|-------------|
-|Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
-|Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
+|Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint won't send the malware app name and other app details as part of the malware alert report |
+|Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint won't send the domain name and details of the unsafe website as part of the phish alert report |
 |Vulnerability assessment of apps |By default only information about apps installed in the work profile is sent for vulnerability assessment. Admins can disable privacy to include personal apps|
-|Network Protection (preview)| Admins can enable or disable privacy in network protection - If enabled, then Defender will not send network details.|
+|Network Protection (preview)| Admins can enable or disable privacy in network protection - If enabled, then Defender won't send network details.|
 
 ### Configure privacy alert report
 
-Admins can now enable privacy control for the phish report, malware report and network report sent by Microsoft Defender for Endpoint on android. This configuration ensures that the domain name, app details and network details respectively are not sent as part of the alert whenever a corresponding threat is detected.
+Admins can now enable privacy control for the phish report, malware report and network report sent by Microsoft Defender for Endpoint on android. This configuration ensures that the domain name, app details and network details respectively aren't sent as part of the alert whenever a corresponding threat is detected.
 
 Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
@@ -145,7 +146,7 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 3. Select **Microsoft Defender for Endpoint** as the target app.
 
-4. In Settings page, select **Use configuration designer** and add click on **Add**.
+4. In Settings page, select **Use configuration designer** and add select on **Add**.
 
 5. Select the required privacy setting -
     - Hide URLs in report
@@ -162,17 +163,17 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 These controls help the end user to configure the information shared to their organization.
 
-1. For **Android Enterprise work profile**, end user controls will not be visible. Admins control these settings.
+1. For **Android Enterprise work profile**, end user controls won't be visible. Admins control these settings.
 2. For **Android Enterprise personal profile**, the control is displayed under **Settings> Privacy**.
-3. Users will see a toggle for Unsafe Site Info, malicious application, and network protection.
+3. Users see a toggle for Unsafe Site Info, malicious application, and network protection.
 
 These toggles will only be visible if enabled by the admin. Users can decide if they want to send the information to their organization or not.
 
-Enabling/disabling the above privacy controls will not impact the device compliance check or conditional access.
+Enabling/disabling the above privacy controls won't impact the device compliance check or conditional access.
 
 ## Configure vulnerability assessment of apps for BYOD devices
 
-From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll be able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
+From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you're able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
 
 > [!NOTE]
 > Vulnerability assessment is part of [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) in Microsoft Defender for Endpoint.
@@ -192,7 +193,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator
-   - **Profile**: Select "Custom" and click Create
+   - **Profile**: Select "Custom" and select Create
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -203,7 +204,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
    - Data type: Select Integer in the drop-down list.
    - Value: Enter 0 to disable privacy setting (By default, the value is 1)
 
-4. Click **Next** and assign this profile to targeted devices/users.
+4. Select **Next** and assign this profile to targeted devices/users.
 
 ### Configure privacy for Android Enterprise work profile
 
@@ -214,10 +215,10 @@ Defender for Endpoint supports vulnerability assessment of apps in the work prof
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
    - To disable vulnerability of apps in the work profile, enter value as `1` and assign this policy to users. By default, this value is set to `0`.
-   - For users with key set as `0`, Defender for Endpoint will send the list of apps from the work profile to the backend service for vulnerability assessment.
-5. Click **Next** and assign this profile to targeted devices/users.
+   - For users with key set as `0`, Defender for Endpoint sends the list of apps from the work profile to the backend service for vulnerability assessment.
+5. Select **Next** and assign this profile to targeted devices/users.
 
-Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+Turning the above privacy controls on or off won't impact the device compliance check or conditional access.
 
 ## Configure privacy for phishing alert report
 
@@ -230,7 +231,7 @@ Use the following steps to turn it on for targeted users:
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator.
-   - **Profile**: Select "Custom" and click **Create**.
+   - **Profile**: Select "Custom" and select **Create**.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -241,9 +242,9 @@ Use the following steps to turn it on for targeted users:
    - Data type: Select Integer in the drop-down list.
    - Value: Enter 1 to enable privacy setting. The default value is 0.
 
-4. Click **Next** and assign this profile to targeted devices/users.
+4. Select **Next** and assign this profile to targeted devices/users.
 
-Using this privacy control will not impact the device compliance check or conditional access.
+Using this privacy control won't impact the device compliance check or conditional access.
 
 ### Configure privacy for phishing alert report on Android Enterprise work profile
 
@@ -254,9 +255,9 @@ Use the following steps to turn on privacy for targeted users in the work profil
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**.
    - Enter **1 to enable privacy**. The default value is 0.
-5. Click **Next** and assign this profile to targeted devices/users.
+5. Select **Next** and assign this profile to targeted devices/users.
 
-Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+Turning the above privacy controls on or off won't impact the device compliance check or conditional access.
 
 ## Configure privacy for malware threat report
 
@@ -269,7 +270,7 @@ Use the following steps to turn it on for targeted users:
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator.
-   - **Profile**: Select "Custom" and click **Create**.
+   - **Profile**: Select "Custom" and select **Create**.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -280,9 +281,9 @@ Use the following steps to turn it on for targeted users:
    - Data type: Select Integer in the drop-down list.
    - Value: Enter 1 to enable privacy setting. The default value is 0.
 
-4. Click **Next** and assign this profile to targeted devices/users.
+4. Select **Next** and assign this profile to targeted devices/users.
 
-Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
+Using this privacy control won't impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
 ### Configure privacy for malware alert report on Android Enterprise work profile
 
@@ -293,11 +294,11 @@ Use the following steps to turn on privacy for targeted users in the work profil
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeAppInReport** as the key and value type as **Integer**
    - Enter **1 to enable privacy**. The default value is 0.
-5. Click **Next** and assign this profile to targeted devices/users.
+5. Select **Next** and assign this profile to targeted devices/users.
 
-Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
+Using this privacy control won't impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
-## Related topics
+## Related articles
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
