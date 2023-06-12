@@ -81,7 +81,7 @@ See [Vulnerable Driver blocklist XML](/windows/security/threat-protection/window
 
 This list of drivers blocked by the exploited and vulnerable drivers get updated more frequently than the recommended drivers blocklist. ASR rules can run in audit mode first to ensure that there's no impact before applying the rule in block mode.
 
-See([Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers)).
+See [Block abuse of exploited vulnerable signed drivers rule](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers).
 
 ### Block other drivers - Windows Defender Application Control (WDAC)
 

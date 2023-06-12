@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -42,20 +42,19 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
  You can manage email signatures by adding an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
-## Watch: Create a company-wide email signature
-  
+## Create a signature that applies to all messages
+
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198031).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
 1. Select **Mail flow**.
-1. Select **Add +**, and then select **Apply disclaimers**.
+1. Select **Rules**.
+1. Select **Add a rule +**, and then select **Apply disclaimers**.
 1. On the **New rule** page, complete the steps. 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-
-## Create a signature that applies to all messages
 
 > [!TIP]
 > Organization-wide signatures are called "disclaimers," regardless of what they include. For example, they can just be a signature, or also include your address, legal disclaimer, or other information you want.
@@ -73,38 +72,38 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 ::: moniker-end
 
 1. Select the app launcher ![The app launcher icon.](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), and then select **Admin**.
-   
-    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the apps available to you. From there, you can search for a specific app. 
-    
-2. Select **Admin centers**, and then choose **Exchange**.
-    
-3. Under Mail flow, select **Rules**.
-    
-4. Select the **+** (Add) icon and choose **Apply disclaimers**.
-    
-5. Give the rule a name.
-    
-6. Under **Apply this rule**, select **[Apply to all messages]**.
-    
-    > [!TIP]
-    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
-  
-7. Under Do the following, leave **Append the disclaimer** selected. 
-    
-8.  Select **Enter text** and type your disclaimer. 
-    
-    > [!TIP]
-    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
 
-9. Select **Select one** and choose **Wrap** as a fallback option. Then **OK**. This means that if the disclaimer can't be added because of encryption or another mail setting, it will be wrapped in a message envelope.
-    
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
-    
-11. Choose **Enforce** to turn on the disclaimer immediately, unless you want to test it first. 
-    
-12. Choose **More options** to include additional conditions or exceptions. 
-    
-13. Choose **Save** when finished. 
+1. Select **Admin centers**, and then choose **Exchange**.
+
+1. Under Mail flow, select **Rules**.
+
+1. Select the **+** (Add) icon and choose **Apply disclaimers**.
+
+1. Give the rule a name.
+
+1. Under **Apply this rule**, select **[Apply to all messages]**.
+  
+1. Under Do the following, leave **Append the disclaimer** selected. 
+
+1. Select **Enter text**, type your disclaimer, and then select **Save**. 
+
+1. Select **Select one**, choose **Wrap** as a fallback option, and then select **Save**. This means that if the disclaimer can't be added because of encryption or another mail setting, it will be wrapped in a message envelope.
+
+1. Under **Except if**, choose whether you want exceptions for sender, recipient, attachment and more and follow those steps. 
+
+1. Choose **Next**. 
+
+1. Under **Rule mode**, choose **Enforce** to turn on the disclaimer immediately, otherwise, choose **Test with Policy Tips** or **Test without Policy Tips**. 
+
+1. Choose a Severity level. 
+
+1. Choose **Activate this rule on** and specify a date. 
+
+1. Choose **Deactivate this rule on** and specify a date. 
+
+1. Choose **Stop processing more rules** if you only want this signature rule to run. 
+
+1. Choose **Defer the message** if rule processing doesn’t complete if you want this experience. 
     
 ## Limitations of organization wide signatures
 

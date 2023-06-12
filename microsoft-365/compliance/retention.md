@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/05/2023
+ms.date: 06/08/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -211,7 +211,7 @@ As with sensitivity labels, an item such as an email or document can have only a
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 - [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
 
-If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of multiple policies, the retention label for the oldest auto-apply retention label policy (by date created) is selected.
+If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of more than one of these policies, you can't control which retention label will be selected. However, in some cases, the retention label for the oldest auto-apply retention label policy (by date created) is selected. This happens only when the matching policies don't include multiple instances of the same type of condition (sensitive information types, specific keywords or searchable properties, or trainable classifiers).
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
