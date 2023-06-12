@@ -1328,7 +1328,9 @@
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
               href: dlp-migration-assistant-for-symantec-use.md
             - name: Data loss prevention policy tip reference for Outlook on the Web
-              href: dlp-owa-policy-tips.md       
+              href: dlp-owa-policy-tips.md
+            - name: Data loss prevention policy tips reference for SharePoint Online and OneDrive for Business web client
+              href: dlp-spo-odbweb-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
