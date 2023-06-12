@@ -860,6 +860,8 @@
           href: api-power-bi.md
         - name: Threat protection reports
           href: threat-protection-reports.md
+        - name: Monthly security summary
+          href: monthly-security-summary-report.md
 
     - name: Advanced hunting
       href: /microsoft-365/security/defender/advanced-hunting-overview
