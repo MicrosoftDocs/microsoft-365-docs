@@ -75,7 +75,6 @@ Select **Activity**  to view the details of that activity in the sidebar. Here's
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
 
-
 ## Investigation workflow
 
 While investigating this alert, you must determine:
