@@ -146,10 +146,10 @@ Microsoft is currently working on a third-party export API solution for Loop com
 
 [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
 
-[Overview of Loop components in Teams](/microsoftteams/live-components-in-teams)
+[Overview of Loop components in Teams](loop-components-teams.md)
 
 [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 
-[Use Loop components in Word for the web](https://support.microsoft.com/office/use-loop-components-in-word-for-the-web-645cc20d-5c98-4bdb-b559-380c5a27c5e5)
+[Use Loop components in Word for the web](https://support.microsoft.com/office/645cc20d-5c98-4bdb-b559-380c5a27c5e5)
 
-[Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)
+[Loop components in Whiteboard](https://support.microsoft.com/office/c5f08f54-995e-473e-be6e-7f92555da347)

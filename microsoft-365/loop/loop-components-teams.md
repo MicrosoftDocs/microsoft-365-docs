@@ -35,7 +35,7 @@ Loop components in Teams chat offer a new way to ideate, create, and make decisi
 
 **Start in chat, build from there.** Every component you create from Teams chat is automatically saved to a file in OneDrive. So, you might begin collaborating in chat then later move to the file on Office.com, where you have a larger visual space for editing and can add as many components as you like.
 
-For information on admin settings for Loop components in Teams, see [Manage Loop components in SharePoint](/sharepoint/manage-loop-components).
+For information on admin settings for Loop components in Teams, see [Manage Loop components in SharePoint](loop-components-sharepoint.md).
 
 ## Clients and platforms
 
@@ -71,11 +71,11 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## Does .fluid files support eDiscovery?
 
-Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](/sharepoint/manage-loop-components#settings-management) section.
+Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](loop-components-sharepoint.md#settings-management) section.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
-If you disable these experiences as outlined in the [Settings management](/sharepoint/manage-loop-components#settings-management) section, the following experience changes will apply:
+If you disable these experiences as outlined in the [Settings management](loop-components-sharepoint.md#settings-management) section, the following experience changes will apply:
 
 - The create/insert entry point within Teams messaging will be hidden. Users won't be able to create new .fluid files.
 - Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink "Loop component." No interactive content will be displayed within Teams.
