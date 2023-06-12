@@ -862,6 +862,7 @@ To learn more about user notification and policy tip configuration and use, incl
 Details on support for policy tips and notifications for different apps can be found here:
 
 - [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
+- [Data loss prevention policy tip reference for SharePoint Online and OneDrive for Business web client](dlp-spo-odbweb-policy-tips.md)
 
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
