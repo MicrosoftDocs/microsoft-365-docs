@@ -110,7 +110,7 @@ To filter alerts on the **Alerts dashboard**, select the **Filter** control. You
 
 ## Search alerts on the Alert dashboard
 
-To search the alert name for a specific word, select the **Search** control and type the word to search. The search results display any policy alert containing the word defined in the search.
+Use the **Search** control to search for an Alert ID or search for a specific word in the alert name. The search results display any policy alert containing the Alert ID or a word defined in the search.
 
 ## Dismiss multiple alerts (preview)
 

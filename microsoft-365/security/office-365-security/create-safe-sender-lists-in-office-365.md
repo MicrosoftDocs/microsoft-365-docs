@@ -54,7 +54,7 @@ The rest of this article contains specifics about each method.
 
 ## Use allow entries in the Tenant Allow/Block List
 
-Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md).
+Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Create allow entries for domains and email addresses](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) and [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
 Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to allow senders.
 
@@ -121,7 +121,7 @@ When messages skip spam filtering due to entries in a user's Safe Senders list, 
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders aren't moved to the Junk Email folder.
   - **Quarantine**: Domain entries aren't honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders aren't quarantined) if either of the following statements are true:
     - The message isn't identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address isn't also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
+    - The email address isn't also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses).
 - Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
