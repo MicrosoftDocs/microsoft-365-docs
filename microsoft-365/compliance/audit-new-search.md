@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/16/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -71,6 +71,9 @@ Some examples of different searches include the following criteria. Explore thes
     - Search across selected users
     - Scoping the search using the activities field
     - Adding a specific file, folder, or site
+
+  > [!IMPORTANT]
+  > Terms entered in the **Keyword Search** field are only searched within indexed content (content within the Audit *common schema*). Audit *data content* in the audit log isn't searched for these keywords.
 
 5. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
 6. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
