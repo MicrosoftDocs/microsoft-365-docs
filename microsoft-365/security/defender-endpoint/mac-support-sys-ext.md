@@ -63,6 +63,8 @@ You can also run **mdatp health**: It reports if real-time protection is enabled
 ```bash
 mdatp health
 ```
+The output on running **mdatp health** is:
+
 ```Output
 healthy				            : false
 health_issues		            : [“no active event provider”, “network event provider not running”, “full disk access has not been granted”]
@@ -198,6 +200,7 @@ OR
 1. Run the script directly from the Web by executing the following command:
 
    BashCopy
+
    sudo curl https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py        
 | python3 -
 
