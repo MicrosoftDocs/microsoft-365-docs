@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 06/06/2023
+ms.date: 06/12/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
