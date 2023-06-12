@@ -38,7 +38,7 @@ You can use the Exchange Online autoexpanding archiving feature to enable additi
     
     - Autoexpanding archiving prevents you from recovering or restoring an [inactive mailbox](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). That means if you enable autoexpanding archiving for a mailbox and the mailbox is made inactive at a later date, you won't be able to [recover the inactive mailbox](recover-an-inactive-mailbox.md) (by converting it to an active mailbox) or [restore it](restore-an-inactive-mailbox.md) (by merging the contents to an existing mailbox). 
         
-        If autoexpanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft Purview compliance portal to export the data from the mailbox and import to another mailbox. For more information, see the [Inactive mailboxes and autoexpanding archives](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-autoexpanding-archives).
+        If autoexpanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft Purview compliance portal to export the data from the mailbox and import to another mailbox. For more information, see the [Inactive mailboxes and autoexpanding archives](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
 - You must be a global administrator in your organization or a member of the Organization Management role group in your Exchange Online organization to enable autoexpanding archiving. Alternately, you have to be a member of a role group that's assigned the Mail Recipients role to enable autoexpanding archiving for specific users.
 
