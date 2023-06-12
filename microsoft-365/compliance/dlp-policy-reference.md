@@ -495,7 +495,7 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - User's risk level for Adaptive Protection is
 - Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (PDF, Office files, .ZIP, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Document or attachment is password protected (PDF, Office files, .ZIP, .7z, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
 - File extension is
 - The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
@@ -558,7 +558,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <= 600 | Medium |
 |Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1 MB  | Low |
-|Attachment is password-protected | EXO | File types: Office files, ZIP, and 7z |Low|
+|Attachment is password-protected | EXO | File types: Office files, .PDF, .ZIP, and 7z |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <= 50 | High|
 |Recipient is a member of |EXO | Count <= 600 | High |
 |Recipient domain is | EXO| Domain name length <= 67; Count <= 5000  | Low |
@@ -859,7 +859,7 @@ To learn more about user notification and policy tip configuration and use, incl
 
 #### Policy tip references
 
-Details on support for policy tips and notfications for different apps can be found here:
+Details on support for policy tips and notifications for different apps can be found here:
 
 - [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
 
