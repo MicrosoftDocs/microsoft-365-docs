@@ -16,7 +16,7 @@ ms.collection:
   - tier2
 ms.custom: 
   - seo-marvel-apr2020
-description: Learn about Backscatter and Microsoft Exchange Online Protection (EOP)
+description: In this article, admins can about backscatter and how Microsoft Exchange Online Protection (EOP) tries to prevent it.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/09/2023
