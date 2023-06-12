@@ -36,9 +36,9 @@ ms.date: 12/18/2020
 
 ## No license found
 
-While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **X** on top of the Microsoft Defender for Endpoint on macOS shield may appear.
+While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **x** on top of the Microsoft Defender for Endpoint on macOS shield appears.
 
-Click the **X** symbol. 
+Click the **x** symbol.
 
 :::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The menu bar that contains the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
 
@@ -48,7 +48,7 @@ When you click the **x** symbol, you'll see options as shown in the following sc
 
 :::image type="content" source="images/x-symbol-menu-items.png" alt-text="The option listed when you click on the x symbol." lightbox="images/x-symbol-menu-items.png":::
 
-When you click **Action needed**, you get the following error message:
+When you click **Action needed**, you'll get the following error message:
 
 **No license found**
 
@@ -56,22 +56,19 @@ When you click **Action needed**, you get the following error message:
 
 **Contact your administrator for help.**
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="The message stating that there is no license for Microsoft 365 Enterprise subscription." lightbox="images/license-not-found-message.png":::
+:::image type="content" source="images/license-not-found-message.png" alt-text="The message stating that there's no license for Microsoft 365 Enterprise subscription." lightbox="images/license-not-found-message.png":::
 
-You'll encounter this message in a different way: In terminal, if you enter **mdatp health** without the double quotes, you might see the warning as shown in the following screenshot:
+You'll encounter this message in a different way: In terminal, if you enter **mdatp health** without the double quotes, you might see a warning as shown in the following screenshot:
 
 :::image type="content" source="images/no-license-found-warning.png" alt-text="The license-not-found message when using the terminal." lightbox="images/no-license-found-warning.png":::
 
 ### Cause
 
-You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but might not have run the configuration script ("Download onboarding package") that contains the license settings.
+You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but might not have run the configuration script ("Download onboarding package") that contains the license settings.
 
-
-You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date or if you haven't assigned a license to the user.
+You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date or if you haven't assigned a license to the user.
 
 ### Solution
-
-Depending on the deployment management tool used, follow the instructions to onboard the package (register the license) as documented here:
 
 1. Depending on the deployment management tool used, follow the tool-specific instructions to onboard the package (register the license) as described in the following table:
 
@@ -101,7 +98,7 @@ Depending on the deployment management tool used, follow the instructions to onb
      
        :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Selecting Licenses option from the Endpoints screen." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
        
-    1. Click **View and purchase licenses in the Microsoft 365 admin center**. The screen in the Microsoft 365 admin center portal appears, as shown in the following screenshot:
+    1. Click **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
        :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="The Microsoft 365 admin center portal screen from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
 
@@ -113,21 +110,21 @@ Depending on the deployment management tool used, follow the instructions to onb
     
        :::image type="content" source="images/assign-licenses-link.png" alt-text="The Assign licenses link." lightbox="images/assign-licenses-link.png":::
 
-       The screen as shown in the following screenshot appears:
+       The following screen appears:
 
        :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="The screen containing the option + Assign licenses." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
     1. Select **+ Assign licenses**.
-    1. Enter the name or email address of the person to whom you want to assign this license. 
+    1. Enter the name or email address of the person to whom you want to assign this license.
     
-       The resultant screen displays the details of the chosen license assignee, and a list of options.
+       The following screen appears, displaying the details of the chosen license assignee and a list of options.
 
        :::image type="content" source="images/assignee-details-and-options.png" alt-text="The screen displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
  
     1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft 365 Defender**, and **Microsoft Defender for Endpoint**.
     1. Select **Save**.
 
-On implementing these solution options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see results that are shown in the following screenshot:
+On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
 :::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="The results that are displayed after running mdatp health, once the licensing issues have been resolved." lightbox="images/results-after-license-issues-resolved.png":::
 
@@ -143,7 +140,7 @@ Create new account or Switch to enterprise app.
 
 ### Cause
 
-You downloaded and installed [Microsoft Defender for individuals on macOS](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) on top of previously installed Microsoft Defender for Endpoint.
+You've downloaded and installed [Microsoft Defender for individuals on macOS](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) on top of previously installed Microsoft Defender for Endpoint.
 
 ### Solution
 
@@ -161,7 +158,7 @@ You can also suppress switching to experience for Individuals on MDM-enrolled ma
 
 ## Recommended content
 
-- [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md): Install Microsoft Defender for Endpoint on macOS manually, from the command line.
+- [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md): Install Microsoft Defender for Endpoint on macOS manually from the command line.
 - [Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md): Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro.
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md): Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
 - [Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro](mac-install-with-jamf.md): Learn how to deploy Microsoft Defender for Endpoint on macOS with Jamf Pro.
