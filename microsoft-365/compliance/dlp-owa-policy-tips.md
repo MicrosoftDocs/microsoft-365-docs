@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/24/2023
+ms.date: 06/12/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -18,7 +18,7 @@ ms.collection:
 - purview-compliance
 feedback_system: None
 recommendations: false
-description: "DLP policy tip reference for Outlook 2013 for Win32."
+description: "DLP policy tip reference for Outlook on the web."
 ---
 
 # Data loss prevention policy tip reference for Outlook on the Web
