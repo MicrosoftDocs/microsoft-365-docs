@@ -35,11 +35,11 @@ ms.date: 1/31/2023
 >
 > Spoofed sender management in Exchange Online PowerShell or Standalone EOP PowerShell is in the process of being migrated exclusively to the related **\*-TenantAllowBlockListSpoofItems**, **Get-SpoofIntelligenceInsight**, and **Get-SpoofMailReport** cmdlets. For procedures using these cmdlets, see the following articles:
 >
-> - [Use PowerShell to view existing allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-view-existing-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to view entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-view-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 > - [Use PowerShell to create allow entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
 > - [Use PowerShell to create block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to modify existing allow or block entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-modify-existing-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
-> - [Use PowerShell to remove existing allow or block entries for spoofed senders from the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-remove-existing-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
+> - [Use PowerShell to modify entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-modify-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Use PowerShell to remove entries for spoofed senders from the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-powershell-to-remove-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > The older spoofed sender management experience using the **Get-PhishFilterPolicy** and **Set-PhishFilterPolicy** cmdlets is in the process of being deprecated, but is still presented in this article for completeness until the cmdlets are removed everywhere.
 
