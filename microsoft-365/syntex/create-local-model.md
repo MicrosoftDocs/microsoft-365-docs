@@ -18,12 +18,12 @@ description: Learn how to create a local model on a local SharePoint site with M
 
 # Create a model on a local SharePoint site with Microsoft Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 Microsoft Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
 
 > [!NOTE]
-> If you want to make your model discoverable and available for other users, you need to create an *enterprise model*. An enterprise model is a model that is created and trained in the [content center](create-a-content-center.md).  
+> If you want to make your model discoverable and available for other users, you need to [create an enterprise model](create-syntex-model.md). An enterprise model is a model that is created and trained in the [content center](create-a-content-center.md). Currently, information about [model usage analytics](model-usage-analytics.md) is only available for enterprise models.
 
 By activating document classification and extraction on your SharePoint site, Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
 

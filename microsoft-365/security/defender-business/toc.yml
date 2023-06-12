@@ -67,8 +67,6 @@
       href: mdb-create-edit-device-groups.md
     - name: Offboard devices
       href: mdb-offboard-devices.md
-    - name: How to get Microsoft Defender for Business servers
-      href: get-defender-business-servers.md
   - name: View and respond to detected threats
     items: 
     - name: View and use reports
@@ -87,6 +85,16 @@
       href: mdb-view-edit-create-policies.md
     - name: Understand policy order
       href: mdb-policy-order.md
+  - name: Maintain your environment
+    items:
+    - name: Overview
+      href: mdb-maintain-environment.md
+    - name: Tenant administration guide
+      href: mdb-admin-guide.md
+    - name: Security administration guide
+      href: mdb-security-admin-guide.md
+    - name: Security operations guide
+      href: mdb-security-operations-guide.md
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data

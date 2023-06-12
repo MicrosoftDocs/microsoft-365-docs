@@ -42,6 +42,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## May 2023
+
+- Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+  - Shared mailboxes require Send As or Send On Behalf permission for the user.
+  - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
+
 ## April 2023
 
 - [Using machine learning to drive more effective simulations in Attack Simulation and Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-using-machine-learning-to-drive-more/ba-p/3791023): Make use of intelligent predicted compromise rate (PCR) and Microsoft Defender for Office 365 payload recommendations for utilizing high-quality payloads in your simulation.
@@ -49,13 +55,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## March 2023
 
-- **Collaboration security for Microsoft Teams**: With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 is extending its [Safelinks](safe-links-about.md) protection with increased capabilities for zero-hour auto purge (ZAP), quarantine, and end user reporting of potential malicious messages to their admins. For more information, see [Microsoft Defender for Office 365 support for Microsoft Teams (Preview)](mdo-support-teams-about.md).
-- **Built-in protection: Safe Links time of click protection enabled for email**: Microsoft will now by default protect URLs in email messages at time of click as part of this update to Safe Links settings (_EnableSafeLinksForEmail_) within the Built-in protection preset security policy. To learn about the specific Safe Links protections in the Built-in protection policy, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+- **Collaboration security for Microsoft Teams**: With the increased use of collaboration tools like Microsoft Teams, the possibility of malicious attacks using URLs and messages has increased as well. Microsoft Defender for Office 365 is extending its [Safe Links](safe-links-about.md) protection with increased capabilities for zero-hour auto purge (ZAP), quarantine, and end user reporting of potential malicious messages to their admins. For more information, see [Microsoft Defender for Office 365 support for Microsoft Teams (Preview)](mdo-support-teams-about.md).
+- **Built-in protection: Safe Links time of click protection enabled for email**: By default, Microsoft now protects URLs in email messages at time of click as part of this update to Safe Links settings (_EnableSafeLinksForEmail_) within the Built-in protection preset security policy. To learn about the specific Safe Links protections in the Built-in protection policy, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 - **Quarantine notifications enabled in preset security policies**: If your organization has enabled or will enable the Standard or Strict preset security policies, the policies will be automatically updated to use the new DefaultFullAccessWithNotificationPolicy quarantine policy (notifications enabled) wherever the DefaultFullAccessPolicy (notifications disabled) was used. To learn more about quarantine notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md). For more information about specific settings in preset security policies, see [Microsoft recommendations for EOP and Defender for Office 365 security settings](recommended-settings-for-eop-and-office365.md).
 
 ## January 2023
 
-- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This prevents your legitimate emails from going to junk or quarantine.
+- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft now automatically removes allow entries from the Tenant Allow/Block List once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This behavior prevents legitimate email from going to junk or quarantine.
 - **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 - [Enhanced user telemetry in the simulation reports in Attack Simulation Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-new-insights-into-targeted-user/ba-p/3673105): As part of our enhanced user telemetry, administrators can now view additional details about how their targeted users are interacting with the phishing payload from phishing simulation campaigns.
 
@@ -67,13 +73,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2022
 
-- [Automated Investigations email cluster action de-duplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation will not be processed again.
+- [Automated Investigations email cluster action deduplication](air-review-approve-pending-completed-actions.md): We have added additional checks. If the same investigation cluster is already approved during the past hour, new duplicate remediation isn't processed again.
 
 - [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):
-  - With **allow expiry management** (currently in private preview), if Microsoft hasn't learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
-  - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience won't leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
+  - With **allow expiry management** (currently in Private Preview), if Microsoft hasn't learned from the allow, Microsoft automatically extends the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
+  - Customers in government cloud environments are now able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using admin submissions for URLs and email attachments. The data submitted through the submissions experience doesn't leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 - **Enhancement in URL click alerts:**
-  - With the new lookback scenario, the "A potentially malicious URL click was detected" alert will now include any clicks during the _past 48 hours_ (for emails) from the time the malicious URL verdict is identified.
+  - With the new lookback scenario, the "A potentially malicious URL click was detected" alert now includes any clicks during the _past 48 hours_ (for email) from the time the malicious URL verdict is identified.
 
 ## September 2022
 
@@ -82,7 +88,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - **Automatic redirection from Office action center to unified action center:** The action center in the Email & Collaboration section **Email & Collaboration** > **Review** > **Action center** (https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
-- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports.
+- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This change is for all security workflows like (for example, Alerts, Threat Management, and Reports).
 
   - Redirection URLs:
     - GCC Environment:
@@ -95,13 +101,13 @@ For more information on what's new with other Microsoft Defender security produc
       - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
       - To Microsoft 365 Defender URL: security.apps.mil
 - Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
-- This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
+- This change is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
 - This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
 - This change impacts all customers who use the Office 365 Security & Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-- This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** \> **Review** \> **Quarantine**.
+- This change impacts all users who sign in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** \> **Review** \> **Quarantine**.
 - Redirection is enabled by default and impacts all users of the Tenant.
 - Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** \> **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
-- **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md) and to learn about the specific Safe Links and Safe Attachment controls set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+- **Built-in protection**: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers. To learn more about this new policy and order of precedence, see [Preset security policies](preset-security-policies.md). To learn about the specific Safe Links and Safe Attachment controls that are set, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) and [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 - **Bulk Complaint Level** is now available in the EmailEvents table in Advanced Hunting with numeric BCL values from 0 to 9. A higher BCL score indicates that bulk message is more likely to generate complaints and is more likely to be spam.
 
 ## July 2022
@@ -110,13 +116,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## June 2022
 
-- [Use the Microsoft 365 Defender portal to create allow entries for spoofed senders on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-on-the-submissions-page): Create allowed spoofed sender entries using the Tenant Allow/Block List.
+- [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
-- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft 365 Defender.
 
-- [View converted admin submission from user reported messages](submissions-admin.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+- [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
-- [View associated alert for user and admin submissions](submissions-admin.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
+- View the associated alerts for [user reported messages](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365-plan-2) and [admin submissions](submissions-admin.md#actions-for-admin-submissions-in-defender-for-office-365-plan-2): View the corresponding alert for each user reported phish message and admin email submission.
 
 - [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
@@ -158,9 +164,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Admin review for reported messages](submissions-admin-review-user-reported-messages.md): Admins can now send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
 - You can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process. Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List. In most cases, the allows are added to give the system some time and allow it naturally if warranted. In some cases, Microsoft manages the allow for you. For more information, see:
-  - [Use the Microsoft 365 Defender portal to create allow entries for URLs on the Submissions page](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page)
-  - [Use the Microsoft 365 Defender portal to create allow entries for files on the Submissions page](tenant-allow-block-list-files-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-on-the-submissions-page)
-  - [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page)
+  - [Report good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft)
+  - [Report good email attachments to Microsoft](submissions-admin.md#report-good-email-attachments-to-microsoft)
+  - [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft)
 
 ## July 2021
 

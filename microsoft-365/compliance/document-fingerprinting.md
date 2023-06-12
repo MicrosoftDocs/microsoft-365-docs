@@ -71,7 +71,7 @@ Document fingerprinting doesn't detect sensitive information in the following ca
 - Files larger than 4 MB
  
 > [!NOTE]
-> To use document fingerprinting with devices, **Advanced fingerprinting** must be turned on.
+> To use document fingerprinting with devices, [**Advanced classification scanning and protection**](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) must be turned on.
 
 Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create approximately 50 fingerprints per tenant.
 

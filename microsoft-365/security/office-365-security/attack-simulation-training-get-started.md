@@ -21,7 +21,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/8/2023
+ms.date: 5/16/2023
 ---
 
 # Get started using Attack simulation training
@@ -41,7 +41,9 @@ Watch this short video to learn more about Attack simulation training.
 
 ## What do you need to know before you begin?
 
-- Attack simulation training requires a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license.
+- Attack simulation training requires a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license. For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
+
+- Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality. For more information, see [Reporting issues with on-premises mailboxes](attack-simulation-training-faq.md#reporting-issues-with-on-premises-mailboxes).
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
@@ -63,7 +65,7 @@ Watch this short video to learn more about Attack simulation training.
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
 
-- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in GCC High or DoD environments.
+- As of June 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in GCC High or DoD environments.
 
 > [!NOTE]
 > Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
@@ -88,74 +90,121 @@ In Attack simulation training, multiple types of social engineering techniques a
 
 The URLs that are used by Attack simulation training are described in the following list:
 
+- <https://www.attemplate.com>
 - <https://www.bankmenia.com>
 - <https://www.bankmenia.de>
+- <https://www.bankmenia.es>
 - <https://www.bankmenia.fr>
 - <https://www.bankmenia.it>
 - <https://www.bankmenia.org>
 - <https://www.banknown.de>
+- <https://www.banknown.es>
 - <https://www.banknown.fr>
 - <https://www.banknown.it>
 - <https://www.banknown.org>
 - <https://www.browsersch.com>
 - <https://www.browsersch.de>
+- <https://www.browsersch.es>
 - <https://www.browsersch.fr>
 - <https://www.browsersch.it>
 - <https://www.browsersch.org>
+- <https://www.docdeliveryapp.com>
+- <https://www.docdeliveryapp.net>
+- <https://www.docstoreinternal.com>
+- <https://www.docstoreinternal.net>
 - <https://www.doctorican.de>
+- <https://www.doctorican.es>
 - <https://www.doctorican.fr>
 - <https://www.doctorican.it>
 - <https://www.doctorican.org>
 - <https://www.doctrical.com>
 - <https://www.doctrical.de>
+- <https://www.doctrical.es>
 - <https://www.doctrical.fr>
 - <https://www.doctrical.it>
 - <https://www.doctrical.org>
+- <https://www.doctricant.com>
 - <https://www.doctrings.com>
 - <https://www.doctrings.de>
+- <https://www.doctrings.es>
 - <https://www.doctrings.fr>
 - <https://www.doctrings.it>
 - <https://www.doctrings.org>
 - <https://www.exportants.com>
 - <https://www.exportants.de>
+- <https://www.exportants.es>
 - <https://www.exportants.fr>
 - <https://www.exportants.it>
 - <https://www.exportants.org>
 - <https://www.financerta.com>
 - <https://www.financerta.de>
+- <https://www.financerta.es>
 - <https://www.financerta.fr>
 - <https://www.financerta.it>
 - <https://www.financerta.org>
 - <https://www.financerts.com>
 - <https://www.financerts.de>
+- <https://www.financerts.es>
 - <https://www.financerts.fr>
 - <https://www.financerts.it>
 - <https://www.financerts.org>
+- <https://www.hardwarecheck.net>
+- <https://www.hrsupportint.com>
+- <https://www.mcsharepoint.com>
+- <https://www.mesharepoint.com>
+- <https://www.officence.com>
+- <https://www.officenced.com>
+- <https://www.officences.com>
+- <https://www.officentry.com>
+- <https://www.officested.com>
 - <https://www.passwordle.de>
 - <https://www.passwordle.fr>
 - <https://www.passwordle.it>
 - <https://www.passwordle.org>
+- <https://www.payrolltooling.com>
+- <https://www.payrolltooling.net>
 - <https://www.prizeably.com>
 - <https://www.prizeably.de>
+- <https://www.prizeably.es>
 - <https://www.prizeably.fr>
 - <https://www.prizeably.it>
 - <https://www.prizeably.org>
+- <https://www.prizegiveaway.net>
+- <https://www.prizegives.com>
+- <https://www.prizemons.com>
+- <https://www.prizesforall.com>
+- <https://www.prizewel.com>
+- <https://www.prizewings.com>
 - <https://www.resetts.de>
+- <https://www.resetts.es>
 - <https://www.resetts.fr>
 - <https://www.resetts.it>
 - <https://www.resetts.org>
+- <https://www.salarytoolint.com>
+- <https://www.salarytoolint.net>
 - <https://www.securembly.com>
 - <https://www.securembly.de>
+- <https://www.securembly.es>
 - <https://www.securembly.fr>
 - <https://www.securembly.it>
 - <https://www.securembly.org>
 - <https://www.securetta.de>
+- <https://www.securetta.es>
 - <https://www.securetta.fr>
 - <https://www.securetta.it>
+- <https://www.shareholds.com>
+- <https://www.sharepointen.com>
+- <https://www.sharepointin.com>
+- <https://www.sharepointle.com>
+- <https://www.sharesbyte.com>
+- <https://www.sharession.com>
+- <https://www.sharestion.com>
 - <https://www.supportin.de>
+- <https://www.supportin.es>
 - <https://www.supportin.fr>
 - <https://www.supportin.it>
 - <https://www.supportres.de>
+- <https://www.supportres.es>
 - <https://www.supportres.fr>
 - <https://www.supportres.it>
 - <https://www.supportres.org>
@@ -164,60 +213,13 @@ The URLs that are used by Attack simulation training are described in the follow
 - <https://www.techidal.fr>
 - <https://www.techidal.it>
 - <https://www.techniel.de>
+- <https://www.techniel.es>
 - <https://www.techniel.fr>
 - <https://www.techniel.it>
-- <https://www.bankmenia.es>
-- <https://www.banknown.es>
-- <https://www.browsersch.es>
-- <https://www.doctorican.es>
-- <https://www.doctrical.es>
-- <https://www.doctrings.es>
-- <https://www.exportants.es>
-- <https://www.financerta.es>
-- <https://www.financerts.es>
-- <https://www.prizeably.es>
-- <https://www.resetts.es>
-- <https://www.securembly.es>
-- <https://www.securetta.es>
-- <https://www.supportin.es>
-- <https://www.supportres.es>
-- <https://www.techniel.es>
-- <https://www.mcsharepoint.com>
-- <https://www.mesharepoint.com>
-- <https://www.officence.com>
-- <https://www.officenced.com>
-- <https://www.officences.com>
-- <https://www.officentry.com>
-- <https://www.officested.com>
-- <https://www.prizegives.com>
-- <https://www.prizemons.com>
-- <https://www.prizewel.com>
-- <https://www.prizewings.com>
-- <https://www.shareholds.com>
-- <https://www.sharepointen.com>
-- <https://www.sharepointin.com>
-- <https://www.sharepointle.com>
-- <https://www.sharesbyte.com>
-- <https://www.sharession.com>
-- <https://www.sharestion.com>
 - <https://www.templateau.com>
 - <https://www.templatent.com>
 - <https://www.templatern.com>
 - <https://www.windocyte.com>
-- <https://www.attemplate.com>
-- <https://www.doctricant.com>
-- <https://www.salarytoolint.com>
-- <https://www.prizesforall.com>
-- <https://www.payrolltooling.com>
-- <https://www.hrsupportint.com>
-- <https://www.docstoreinternal.com>
-- <https://www.docdeliveryapp.com>
-- <https://www.docstoreinternal.net>
-- <https://www.hardwarecheck.net>
-- <https://www.payrolltooling.net>
-- <https://www.prizegiveaway.net>
-- <https://www.salarytoolint.net>
-- <https://www.docdeliveryapp.net>
 
 
 > [!NOTE]

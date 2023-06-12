@@ -32,7 +32,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 > [!TIP]
 > Save this trial user guide to your browser favorites. When links in the trial user guide take you away from this location, it'll be easier to return to this guide to continue.
 
-1. [Set up your trial](../business-premium/m365bp-setup.md)!
+1. [Set up your trial](../business-premium/m365-business-premium-setup.md)!
 
    After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
 
