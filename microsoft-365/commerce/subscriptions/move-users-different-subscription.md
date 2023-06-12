@@ -72,7 +72,7 @@ Before being switched to a different subscription, users can [download files and
   
 ### Save Viva Engage information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Viva Engage Enterprise](/viva/engage/manage-security-and-compliance/export-viva-engage-enterprise-data). Developers can use the [Viva Engage API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Viva Engage Enterprise](/viva/engage/manage-security-and-compliance/export-viva-engage-enterprise-data).
   
 ### How to save SharePoint information
 
