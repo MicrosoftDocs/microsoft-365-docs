@@ -68,6 +68,7 @@ Enable the Microsoft Azure cloud you want to collaborate with in Azure AD cross 
 Once you've enabled the clouds you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud, B2B collaboration with different tenant types requires that each organization be added to Azure AD cross-tenant access settings.
 
 To add an organization
+
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
@@ -83,6 +84,7 @@ New organizations inherit B2B collaboration settings from the default. If your d
 Use the inbound settings to specify which users or groups from the external organization can access resources in your organization.
 
 To configure inbound settings for an organization
+
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B collaboration** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and **All <organization> users and groups**. (You can choose **Select <organization> users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
@@ -94,6 +96,7 @@ To configure inbound settings for an organization
 Use the outbound settings to specify which users or groups from the external organization can access resources in your organization.
 
 To configure outbound settings for an organization
+
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B collaboration** tab, choose **Customize settings**.
 1. On the **Users and groups** tab, choose **Allow access** and set an **Applies to** of all users, or select the users or groups that you want to allow to access the external organization.
