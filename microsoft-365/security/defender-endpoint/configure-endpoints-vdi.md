@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 05/26/2023
 ms.subservice: mde
 ---
 
@@ -76,7 +76,7 @@ The following steps guide you through onboarding VDI devices and highlight steps
 > [!NOTE]
 > Windows Server 2016 and Windows Server 2012 R2 must be prepared by applying the installation package first using the instructions in [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
@@ -134,8 +134,7 @@ The following steps guide you through onboarding VDI devices and highlight steps
 > [!NOTE]
 > These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
-> [!NOTE]
-> The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
+The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
 
 1. Set registry value to:
 
@@ -156,21 +155,30 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
-   > [!NOTE]
-   > If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
-   > 1. Ensure the sensor is stopped by running the command below in a CMD window:
-   >  ```console
-   >  sc query sense
-   >  ```
-   > 2. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip)
-   >
-   >  ```console
-   >  PsExec.exe -s cmd.exe
-   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
-   >  del *.* /f /s /q
-   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
-   >  exit
-   >  ```
+If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+
+1. Ensure the sensor is stopped by running the following command in a CMD window:
+
+   ```console
+   sc query sense
+   ```
+
+2. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+
+   ```console
+   PsExec.exe -s cmd.exe
+   del "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber\*.*" /f /s /q
+   REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   exit
+   ```
+
+### Are you using a third party for VDIs?
+
+If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft 365 Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
+
+If either the primary image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it will stop Defender from creating entries for new non-persistent VDIs in the Microsoft 365 Defender portal.
+
+Reach out to your third-party vendors for further assistance.
 
 ## Other recommended configuration settings
 
@@ -263,6 +271,7 @@ The following configuration settings are recommended:
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
 ## Related topics
+
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using Microsoft Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
