@@ -65,7 +65,7 @@ The SPF TXT record for Office 365 will be made in external DNS for any custom do
 
 - Domain names to use for all third-party domains that you need to include in your SPF TXT record. Some bulk mail providers have set up subdomains to use for their customers. For example, the company MailChimp has set up **servers.mcsv.net**.
 
-- Figure out what enforcement rule you want to use for your SPF TXT record. The **-all** rule is recommended. For detailed information about other syntax options, see [SPF TXT record syntax for Office 365](email-authentication-anti-spoofing.md#SPFSyntaxO365).
+- Figure out what enforcement rule you want to use for your SPF TXT record. The **-all** rule is recommended. For detailed information about other syntax options, see [SPF TXT record syntax for Microsoft 365](email-authentication-anti-spoofing.md#spf-txt-record-syntax-for-microsoft-365).
 
 > [!IMPORTANT]
 > In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing.
@@ -118,7 +118,7 @@ A wildcard SPF record (`*.`) is required for every domain and subdomain to preve
 
 ## Troubleshooting SPF
 
-Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](email-authentication-anti-spoofing.md#SPFTroubleshoot).
+Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](#troubleshooting-best-practices-for-spf-in-microsoft-365).
 
 ## What does SPF email authentication actually do?
 
@@ -138,7 +138,7 @@ If you've already set up mail for Office 365, then you have already included Mic
 
 ## More information about SPF
 
-For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#HowSPFWorks).
+For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Microsoft 365](email-authentication-anti-spoofing.md#how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365).
 
 ## Next Steps: DKIM and DMARC
 
@@ -148,7 +148,7 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 
 [**DMARC**](email-authentication-dmarc-configure.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
- For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#HowSPFWorks).
+ For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365).
 
 [Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)
 
