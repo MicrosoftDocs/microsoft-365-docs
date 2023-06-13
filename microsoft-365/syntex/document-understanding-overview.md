@@ -30,14 +30,12 @@ description: Learn about the unstructured document processing model in Microsoft
 
 Use the unstructured document processing model ([teaching method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts. 
 
-## About unstructured models
+## Introduction to unstructured models
 
 The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).
-
-## Creating unstructured models
 
 Unstructured document processing models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
