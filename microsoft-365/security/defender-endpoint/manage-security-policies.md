@@ -35,7 +35,7 @@ Use security policies to manage security settings on devices. As a security admi
 You'll find endpoint security policies under **Endpoints > Configuration management > Endpoint security policies**.
 
 
-::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft 365 Defender portal":::
+:::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft 365 Defender portal":::
 
 Following are brief descriptions of each endpoint security policy type. To learn more about them, including the available profiles for each, follow the links to content dedicated to each policy type:
 
@@ -70,19 +70,18 @@ The following sections apply to all of the endpoint security policies.
 
    When your done configuring settings, select **Next**.
 
-7. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see [Assign user and device profiles](../configuration/device-profile-assign.md).
+7. On the **Assignments** page, select the groups that will receive this profile. 
 
    Select **Next**.
 
-8. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
+8. On the **Review + create** page, when you're done, select **Save**. The new profile is displayed in the list when you select the policy type for the profile you created.
 
 
 >[!NOTE]
 >To edit the scope tags, you'll need to go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 
-
-## To edit a policy
+## To edit an endpoint security policy
 
 1. Select the new policy, and then select **Edit**.
 2. Select **Settings** to expand a list of the configuration settings in the policy. You can't modify the settings from this view, but you can review how they're configured.
@@ -92,5 +91,16 @@ The following sections apply to all of the endpoint security policies.
    - Settings
 4. After you've made changes, select **Save** to save your edits.  Edits to one category must be saved before you can introduce edits to additional categories.
 
-## Confirm a policy
+
+
+
+## Verify endpoint security policies
+
+To verify that you have successfully created a policy, you can view details of a policy by selecting a policy name from the list of endpoint security policies.
+
+The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
+
+During an investigation, you can also view the **Security policies** tab in the device page to view the list of policies that are being applied to a particular device. For more information, see [Investigating devices](investigate-machines.md).
+
+
 
