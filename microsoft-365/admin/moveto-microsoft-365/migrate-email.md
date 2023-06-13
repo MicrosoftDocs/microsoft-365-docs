@@ -32,7 +32,7 @@ description: "Learn how to migrate email, contacts, and calendar from Google Wor
 # Migrate business email and calendar from Google Workspace
 
 > [!NOTE]
-> The videos and content in this article are meant to give SMB customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calenders from Google Workspace.
+> The videos and content in this article are meant to give Small and Medium business (SMB) customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calenders from Google Workspace.
 >
 > Please refer to the resource links provided in this article for additional detailed information needed to use the batch migration tool successfully.
 
