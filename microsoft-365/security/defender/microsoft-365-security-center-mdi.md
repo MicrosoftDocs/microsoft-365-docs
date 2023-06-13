@@ -8,9 +8,9 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: diannegali
-author: diannegali
-manager: dansimp
+ms.author: bagol
+author: batamig
+manager: raynew
 ms.date: 06/07/2023
 audience: ITPro
 ms.topic: conceptual
