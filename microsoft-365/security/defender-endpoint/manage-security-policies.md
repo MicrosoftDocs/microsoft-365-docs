@@ -96,7 +96,7 @@ The following sections apply to all of the endpoint security policies.
 
 ## Verify endpoint security policies
 
-To verify that you have successfully created a policy, you can view details of a policy by selecting a policy name from the list of endpoint security policies.
+To verify that you have successfully created a policy, select a policy name from the list of endpoint security policies.
 
 The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
 
