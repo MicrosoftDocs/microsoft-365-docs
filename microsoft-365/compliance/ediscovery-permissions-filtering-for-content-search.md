@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 06/13/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -117,8 +117,8 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 
 - **Site and site content filtering:** There are two SharePoint- and OneDrive-related filters that you can use to specify what site or site content the assigned users can search.
 
-  - **Site_**_SearchableSiteProperty_
-  - **SiteContent_**_SearchableSiteProperty_
+  - **Site_**_QueryableSiteProperty_
+  - **SiteContent_**_QueryableSiteProperty_
 
    These two filters are interchangeable. For example, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` and  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` return the same results. For a list of searchable site properties, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md#searchable-site-properties)  For a more complete list, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter.
 

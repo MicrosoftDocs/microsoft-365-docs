@@ -24,7 +24,8 @@ description: Learn how to use Microsoft Syntex to automatically generate routine
       Use the content assembly feature in Microsoft Syntex to create modern templates for files that need to be created on a regular basis. Files can then be generated based on these templates, either through manual request or through an automation.
 
       Features used:
-      - Content assembly 
+      - Content assembly
+      - SharePoint lists
       - Power Automate  
    :::column-end:::
    :::column span="":::

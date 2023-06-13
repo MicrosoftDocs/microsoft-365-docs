@@ -20,16 +20,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/12/2023
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Impersonation insight in Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _Impersonation_ is when the sender of an email message looks similar to a real or expected sender's email address. Attackers often use impersonated sender email addresses in phishing or other types of attacks to gain the trust of the recipient. There are two basic types of impersonation:
 
@@ -71,13 +70,15 @@ The insight has two modes:
 - **Insight mode**: If impersonation protection is enabled and configured in any anti-phishing policies, the insight shows the number of detected messages from impersonated domains and impersonated users (senders) over the past seven days. The number shown is the total of all detected impersonation attempts from all anti-phishing policies.
 - **What if mode**: If impersonation protection isn't enabled and configured in any active anti-phishing policies, the insight shows how many messages _would have been_ detected by impersonation protection over the past seven days.
 
-To view information about the impersonation detections, select the **View impersonations** link in the impersonation insight.
+To view information about impersonation detections, select **View impersonations** in the impersonation insight to go to the **Impersonation insight** page.
 
 ## View information about domain impersonation detections
 
-After you select the **View impersonations** link in the impersonation insight, you're taken to the **Impersonation insight** page. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+The **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight> is available when you select **View impersonations** in the impersonation insight on the **Anti-phishing** page.
 
-On the **Impersonation insight** page, verify that the **Domains** tab is selected. The following information is shown:<sup>\*</sup>:
+On the **Impersonation insight** page, verify the **Domains** tab is selected.
+
+You can sort the entries by clicking on an available column header. The following columns are available:<sup>\*</sup>:
 
 - **Sender Domain**: The impersonating domain, which is the domain that was used to send the email message.
 - **Message count**: The number of messages from impersonating sender domain over the last seven days.
@@ -89,9 +90,7 @@ On the **Impersonation insight** page, verify that the **Domains** tab is select
   - **Yes**: The domain was configured as trusted domain (an exception for impersonation protection) in the anti-phishing policy that detected the message. Messages from the impersonated domain were detected, but allowed.
   - **No**: The domain was configured for impersonation protection in the anti-phishing policy that detected the message. The action for domain impersonation detections in the anti-phishing policy is done to the message.
 
-Select a column header to sort by that column.
-
-sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -142,9 +141,11 @@ When you're finished in the details flyout, select **Close**.
 
 ## View information about user impersonation detections
 
-After you select the **View impersonations** link in the impersonation insight, you're taken to the **Impersonation insight** page. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+The **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight> is available when you select **View impersonations** in the impersonation insight on the **Anti-phishing** page.
 
-On the **Impersonation insight** page, select the **Users** tab. The following information is shown:<sup>\*</sup>:
+On the **Impersonation insight** page, select the **Users** tab.
+
+You can sort the entries by clicking on an available column header. The following columns are available:<sup>\*</sup>:
 
 - **Sender**: The email address of the impersonating sender that sent the email message.
 - **Message count**: The number of messages from the impersonating sender over the last seven days.
@@ -156,9 +157,7 @@ On the **Impersonation insight** page, select the **Users** tab. The following i
   - **Yes**: The sender was configured as trusted user (an exception for impersonation protection) in the anti-phishing policy that detected the message. Messages from the impersonated sender were detected, but allowed.
   - **No**: The sender was configured for impersonation protection in the anti-phishing policy that detected the message. The action for user impersonation detections in the anti-phishing policy is done to the message.
 
-Select a column header to sort by that column.
-
-sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
