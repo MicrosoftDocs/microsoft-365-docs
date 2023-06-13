@@ -75,6 +75,9 @@ Some examples of different searches include the following criteria. Explore thes
   > [!IMPORTANT]
   > Terms entered in the **Keyword Search** field are only searched within indexed content (content within the Audit *common schema*). Audit *data content* in the audit log isn't searched for these keywords.
 
+  > [!NOTE]
+  > To search for text that contain special characters, replace the special characters with an asterisk(\*) in your keyword search. For example, to search for *test_search_document*, use *test\*search\*document*.
+
 5. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
 6. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
 
