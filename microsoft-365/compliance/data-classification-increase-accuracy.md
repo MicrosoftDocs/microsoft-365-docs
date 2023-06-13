@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/03/2023
+ms.date: 06/13/2023
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -20,9 +20,9 @@ description: "Learn how to increase the accuracy of your classifiers"
 
 # Increase classifier accuracy
 
-Classifiers, like [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md) are used in various kinds of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
+Classifiers, such as [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md), are used in various types of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
 
-This article shows you how to confirm whether items matched by a classifier are true positive (a **Match**) or a false positive (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+This article shows you how to confirm whether items matched by a classifier are true positives (a **Match**) or a false positives (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
 
 The **Match**, **Not a match** experience is available in:
 
@@ -48,8 +48,8 @@ The **Match**, **Not a match** experience is available in:
 |Custom trainable classifier |No| No| Yes|
 
 > [!IMPORTANT]
-> The match/not a match feedback experience supports items in :
-> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type/ Trainaable Classifier Matched Items, DLP Alerts and MTP Alerts.
+> The match/not a match feedback experience supports items in:
+> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type and Trainable Classifier Matched Items, DLP Alerts and MTP Alerts.
 > Emails in Exchange - for DLP Alerts and MTP Alerts.
 
 ## Licensing and Subscriptions
