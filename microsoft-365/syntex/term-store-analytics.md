@@ -3,8 +3,8 @@ title: Term store reports
 description: Learn how to report on term store activity.
 ms.author: chucked
 author: chuckedmonson
-manager: serdars
-ms.date: 05/15/2023
+manager: pamgreen
+ms.date: 05/15/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
