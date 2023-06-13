@@ -37,7 +37,7 @@ You'll find endpoint security policies under **Endpoints > Configuration managem
 
 :::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft 365 Defender portal":::
 
-Following are brief descriptions of each endpoint security policy type. To learn more about them, including the available profiles for each, follow the links to content dedicated to each policy type:
+The following list provides a brief descriptions of each endpoint security policy type:
 
 - Antivirus - Antivirus policies help security admins focus on managing the discrete group of antivirus settings for managed devices. 
 
