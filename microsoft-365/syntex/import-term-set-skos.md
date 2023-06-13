@@ -2,7 +2,7 @@
 title: Import a term set using a SKOS-based format
 ms.author: chucked
 author: chuckedmonson
-manager: serdars
+manager: pamgreen
 ms.date: 05/14/2022
 audience: admin
 ms.service: microsoft-syntex
