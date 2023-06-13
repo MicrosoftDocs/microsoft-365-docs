@@ -100,7 +100,7 @@ To verify that you have successfully created a policy, select a policy name from
 
 The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
 
-During an investigation, you can also view the **Security policies** tab in the device page to view the list of policies that are being applied to a particular device. For more information, see [Investigating devices](investigate-machines.md).
+During an investigation, you can also view the **Security policies** tab in the device page to view the list of policies that are being applied to a particular device. For more information, see [Investigating devices](investigate-machines.md#security-policies).
 
 
 
