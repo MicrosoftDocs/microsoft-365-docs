@@ -102,7 +102,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
 - `ipv4:` or `ipv6:` indicates the type of IP address that you're using.
 
-- Typically, the IP addresses that you specify are the outbound email servers for your organization. Instead of individual IP addresses, you can also specify IP address ranges using CIDR notation, for example `ip4:192.168.0.1/26`. For more information, see [Example: SPF TXT record for multiple outbound on-premises mail servers and Microsoft 365](#example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365) later in this article.
+- Typically, the IP addresses that you specify are the outbound email servers for your organization. Instead of individual IP addresses, you can also specify IP address ranges using CIDR notation, for example `ip4:192.168.0.1/26`.
 
 - Use `include:` statements to add domains as legitimate senders. For example, any custom domain with mailboxes in Microsoft 365 requires the value `include:spf.protection.outlook.com`. For a list of domain names you should include for Microsoft 365, see [External DNS records required for SPF](../../enterprise/external-domain-name-system-records.md).
 
