@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/06/2023
+ms.date: 06/13/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -615,6 +615,10 @@ The actions that are available in a rule are dependent on the locations that hav
 - Add HTML Disclaimer
 - Modify Email Subject
 - Deliver the message to the hosted quarantine
+- Apply branding to encrypted messages 
+
+> [!TIP]
+> For the **Apply branding to encrypted messages** action, if you already have Office Message Encryption implemented, the templates will automatically show up in the drop down list. If you want to implement Microsoft Purview Message Encryption, see  for background on OME and procedure to create and configure your branding templates.
 
 #### SharePoint sites location actions
 
