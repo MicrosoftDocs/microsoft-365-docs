@@ -1273,7 +1273,7 @@
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Get started with data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises repositories
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
