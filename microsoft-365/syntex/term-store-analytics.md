@@ -1,6 +1,5 @@
 ---
 title: Term store reports
-description: Learn how to report on term store activity.
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
