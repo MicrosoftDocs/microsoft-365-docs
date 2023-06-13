@@ -68,7 +68,7 @@ The following sections apply to all of the endpoint security policies.
 
 6. On the **Settings** page, expand each group of settings, and configure the settings you want to manage with this profile.
 
-   When your done configuring settings, select **Next**.
+   When you're done configuring settings, select **Next**.
 
 7. On the **Assignments** page, select the groups that will receive this profile. 
 
