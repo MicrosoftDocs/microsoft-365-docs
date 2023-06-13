@@ -118,7 +118,7 @@ A wildcard SPF record (`*.`) is required for every domain and subdomain to preve
 
 ## Troubleshooting SPF
 
-Having trouble with your SPF TXT record? See [Troubleshooting: Best practices for SPF in Microsoft 365](#troubleshooting-best-practices-for-spf-in-microsoft-365).
+Having trouble with your SPF TXT record? See [Troubleshooting: Best practices for SPF in Microsoft 365](email-authentication-anti-spoofing.md#troubleshooting-best-practices-for-spf-in-microsoft-365).
 
 ## What does SPF email authentication actually do?
 
