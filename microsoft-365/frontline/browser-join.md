@@ -113,7 +113,7 @@ Here are some things about the user experience to know about with browser join.
 
 ### Screen sharing
 
-The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. However, attendees can't share their screen from a desktop or mobile browser.
+The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. Attendees can share their screen when joining on desktop, but can't share on a mobile browser.
 
 ### Live captions
 

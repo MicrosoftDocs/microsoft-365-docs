@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ To apply flexible protection actions that include encryption, access restriction
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|
-|[Sensitivity labels](sensitivity-labels.md)| A single labeling solution across apps, services, and devices to protect your data as it travels inside and outside your organization. <br /><br /> Example scenarios: <br />- [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <br />- [Encrypt documents and emails](encryption-sensitivity-labels.md) <br />-  [Apply and view labels in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> For a comprehensive list of supported scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
+|[Sensitivity labels](sensitivity-labels.md)| A single labeling solution across apps, services, and devices to protect your data as it travels inside and outside your organization. <br /><br /> Example scenarios: <br />- [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <br />- [Encrypt documents and emails](encryption-sensitivity-labels.md) <br />-  [Protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md) <br /><br /> For a comprehensive list of supported scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed| [Azure Information Protection unified labeling client administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary. | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
 |[Office 365 Message Encryption (OME)](ome.md)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information. <br /><br />  Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
@@ -74,12 +74,13 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:---------------------|
-|[Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)| Helps prevent unintentional sharing of sensitive items. | [Learn about data loss prevention](dlp-learn-about-dlp.md)|
 |[Endpoint data loss prevention](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers. | [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)|
-|[Microsoft Compliance Extension](dlp-chrome-learn-about.md) | Extends DLP capabilities to the Chrome browser | [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started.md)|
-|[Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)|Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.|[Get started with Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)|
-|[Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | Extends some DLP functionality to Teams chat and channel messages | [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)|
+|[Microsoft Purview extension for Chrome](dlp-chrome-learn-about.md) | Extends DLP capabilities to the Chrome browser | [Get started with the Microsoft Purview extension for Chrome](dlp-chrome-get-started.md)|
+|[Learn about the Microsoft Purview extension for Firefox](dlp-firefox-extension-learn.md)|Extends DLP capabilities to the Firefox browser|[Get startd with the Microsoft Purview extension for Firefox](dlp-firefox-extension-get-started.md)
+|[Microsoft Purview data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md)|Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.|[Get started with Microsoft Purview data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md)|
+|[Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | Extends some DLP functionality to Teams chat and channel messages | [Learn about the default data loss prevention policy in Microsoft Teams](dlp-teams-default-policy.md)|
 
 ## Licensing requirements
 
-License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for Microsoft Purview Information Protection, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
+License requirements to protect your sensitive data depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. For more information, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.

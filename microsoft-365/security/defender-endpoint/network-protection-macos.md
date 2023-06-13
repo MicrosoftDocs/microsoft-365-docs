@@ -40,7 +40,7 @@ Microsoft Network protection helps reduce the attack surface of your devices fro
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Availability
 
@@ -353,3 +353,5 @@ No End-user notification on third party browsers? Check your toast message setti
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
+
+

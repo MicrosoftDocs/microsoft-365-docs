@@ -123,7 +123,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    - Select the checkbox to allow the connector app to sign in to Twitter.
 
-   - Add the OAuth redirect Uri using the following format: **\<connectorserviceuri>/Views/TwitterOAuth**, where the value of *connectorserviceuri* is the Azure app service URL for your organization; for example, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
+   - Add the OAuth redirect Uri using the following format: **\<connectorserviceuri>/Views/TwitterOAuth**, where the value of *connectorserviceuri* is the Azure app service URL for your organization.
 
     ![Allow connector app to sign in to Twitter and add OAuth redirect Uri.](../media/TCimage32.png)
 
@@ -175,7 +175,7 @@ The Twitter developer app is now ready to use.
 
     - In the **Name** box, type a name for the connector, such as **Twitter help handle**.
 
-    - In the **Connector URL** box, type or paste the Azure app service URL; for example `https://twitterconnector.azurewebsites.net`.
+    - In the **Connector URL** box, type or paste the Azure app service URL.
 
     - In the **Password** box, type or paste the value of the APISecretKey that you created in Step 2.
 

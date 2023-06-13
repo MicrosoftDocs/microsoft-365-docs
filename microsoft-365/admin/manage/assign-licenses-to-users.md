@@ -9,7 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg 

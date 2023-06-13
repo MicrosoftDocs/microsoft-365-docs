@@ -31,22 +31,20 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Available prebuilt models
 
-Currently, there are two prebuilt models available: [invoices](prebuilt-model-invoice.md) and [receipts](prebuilt-model-receipt.md).
+Currently, there are three prebuilt models available: [invoices](prebuilt-model-invoice.md), [receipts](prebuilt-model-receipt.md), and [contracts](prebuilt-model-contract.md).
 
-- The *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+- The prebuilt *contracts model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
-- The *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+- The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
+- The prebuilt *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+ 
 Additional prebuilt models will be available in future releases.
 
 ## Requirements
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
-## See also
 
-[Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md)
-
-[Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md)
 
  

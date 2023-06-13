@@ -175,7 +175,9 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
     
     Example of a filled in template:
     
-    ![File plan template with information filled in.](../media/file-plan-filled-out-template.png)
+    :::image type="content" source="../media/file-plan-filled-out-template.png" alt-text="File plan template example with information filled in ready to import to create retention labels.":::
+
+
 
 4. Select **Upload a file** to upload the filled-out template.
     

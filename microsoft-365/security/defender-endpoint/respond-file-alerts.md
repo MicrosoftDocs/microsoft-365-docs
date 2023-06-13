@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/29/2023
 ---
 
 # Take response actions on a file
@@ -160,6 +160,7 @@ The **Download file** button can have the following states:
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
+    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::

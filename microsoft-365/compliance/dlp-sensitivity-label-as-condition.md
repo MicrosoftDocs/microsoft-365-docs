@@ -30,7 +30,8 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 - Exchange Online email messages
 - SharePoint Online
 - OneDrive for Business sites
-- Windows 10/11 devices
+- Devices
+
 
 Sensitivity labels appear as an option in the **Content contains** list.
 
@@ -57,7 +58,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |OneDrive for Business     |items         |yes         |yes         |
 |Teams     |Teams and channel messages         |not applicable         |not applicable         |
 |Teams     |attachments         |yes **         |yes **         |
-|Windows 10/11 devices     |items         |yes         |yes         |
+|Devices|items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
 \* DLP detection of sensitivity labeled email attachments is supported for Open XML-based Office file types only.

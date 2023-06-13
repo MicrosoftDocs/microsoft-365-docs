@@ -57,5 +57,4 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Next steps
 
-- [Use the setup wizard in Defender for Business](mdb-use-wizard.md)
 - [See the overall setup and configuration process](mdb-setup-configuration.md)

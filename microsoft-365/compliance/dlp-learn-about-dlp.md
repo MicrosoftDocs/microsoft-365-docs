@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 02/14/2023
+ms.date: 04/27/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -25,11 +25,12 @@ Organizations have sensitive information under their control such as financial d
 
 In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
-- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
 - Office applications such as Word, Excel, and PowerPoint
 - Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
-- on-premises file shares and on-premises SharePoint.
+- on-premises file shares and on-premises SharePoint
+- Power BI
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
@@ -110,7 +111,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - On-premises repositories
 - Power BI sites
 
-Each one has different pre-requisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
+Each one has different prerequisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
 
 ### Deploy your policies in production
 
@@ -156,33 +157,33 @@ You have flexibility in how you create and configure your DLP policies. You can 
 
 3. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
 
-location | include/exclude by|
-|---------|---------|
-|Exchange email| distribution groups|
-|SharePoint sites |sites |
-|OneDrive accounts |accounts or distribution groups |
-|Teams chat and channel messages |account or distribution group |
-|Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
-|Microsoft Cloud App Security |instance |
-|On-premises repositories| repository file path|
-|Power BI (preview)| workspaces|
+   |location | include/exclude by|
+   |---------|---------|
+   |Exchange email| distribution groups|
+   |SharePoint sites |sites |
+   |OneDrive accounts |accounts or distribution groups |
+   |Teams chat and channel messages |account or distribution group |
+   |Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
+   |Microsoft Cloud App Security |instance |
+   |On-premises repositories| repository file path|
+   |Power BI (preview)| workspaces|
 
-4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
+4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept preconfigured conditions or define custom conditions. Some examples are:
 
-- item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
-- item has a specified sensitivity label
-- item with sensitive information is shared either internally or externally
+   - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
+   - item has a specified sensitivity label
+   - item with sensitive information is shared either internally or externally
 
 5. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
 
-- SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
-- Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
-- Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
-- On-premises file shares: move the file from where it's stored to a quarantine folder
+   - SharePoint/Exchange/OneDrive: Block people who are outside your organization from accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
+   - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
+   - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+   - Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
+   - On-premises file shares: move the file from where it's stored to a quarantine folder
 
-> [!NOTE]
-> The conditions and the actions to take are defined in an object called a Rule.
+   > [!NOTE]
+   > The conditions and the actions to take are defined in an object called a Rule.
 
 ## Create and deploy a DLP policy
 
@@ -201,6 +202,20 @@ After the policy's synced to the right locations, it starts to evaluate content 
 ## Viewing policy application results
 
 DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+
+### High volume of sensitive info shared or save externally
+
+*This feature is in preview*
+
+Microsoft 365 provides you with visibility into risky user activities outside of DLP policies. The **High volume of sensitive info shared or saved externally (preview)** card on the DLP homepage shows a count of sensitive items that users have:
+
+- uploaded to the suspicious domains
+- accessed with a suspicious application
+- copied to a removable drive
+
+Microsoft 365 scans the audit logs for risky activities and runs them through a correlation engine to find activities that are occurring at a high volume.  No DLP policies are required. 
+
+To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
 
 ### DLP Alerts Dashboard
 
