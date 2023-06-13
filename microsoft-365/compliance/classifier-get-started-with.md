@@ -31,13 +31,6 @@ Creating a custom trainable classifier first involves giving it samples that are
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
-Watch this video for a quick summary of creating a trainable classifier. You'll still need to read this full article to get the details.
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
-
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
@@ -48,23 +41,25 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 
 ### Permissions
 
-To access classifiers in the UI: 
+To access classifiers in the UI:
 
 - the Global admin needs to opt in for the tenant to create custom classifiers.
-- Compliance Administrator role is required to train a classifier.
+- the Compliance Administrator role is required to train a classifier.
 
-You'll need accounts with these permissions to use classifiers in these scenarios:
+To use classifiers in the following scenarios, you will need the permissions listed:
 
-- Retention label policy scenario: Record Management and Retention Management roles 
-- Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
-- Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
+| Scenario | Required Role Permissions|
+| -------- | --------|
+| Retention label policy | Record Management <br> Retention Management |
+| Sensitivity label policy | Security Administrator <br> Compliance Administrator <br> Compliance Data Administrator
+| Communication compliance policy | Insider Risk Management Administrator <br> Supervisory Review Administrator|
 
 > [!IMPORTANT]
 > By default, only the user who creates a custom classifier can train and review predictions made by that classifier.
 
-## Prepare for a custom trainable classifier 
+## Prepare for a custom trainable classifier
 
-It's helpful to understand what's involved in creating a custom trainable classifier before you dive in. 
+It's helpful to understand what's involved in creating a custom trainable classifier before you dive in.
 
 ### Timeline
 
@@ -73,7 +68,7 @@ This timeline reflects a sample deployment of trainable classifiers.
 ![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content. Contact your global administrator to kick off the opt-in process.
+> You must opt-in to create and work with trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organization's content after you opt-in. Contact your global administrator to kick off the opt-in process.
 
 ### Overall workflow
 
@@ -84,7 +79,7 @@ To understand more about the overall workflow of creating custom trainable class
 When you want a trainable classifier to independently and accurately identify an item as being in particular category of content, you first have to present it with many samples of the type of content that are in the category. This feeding of samples to the trainable classifier is known as *seeding*. Seed content is selected by a human and is judged to represent the category of content.
 
 > [!TIP]
-> You need to have at least 50 positive samples and as many as 500. The trainable classifier will process up to the 500 most recent created samples (by file created date/time stamp). The more samples you provide, the more accurate the predictions the classifier will make.
+> You need to have at least 50 positive samples and can have as many as 500. The trainable classifier will process up to the 500 most recently created samples (by file created date/time stamp). The more samples you provide, the more accurate the predictions the classifier makes will be.
 
 ### Testing content
 
@@ -95,29 +90,29 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+1. Collect between 50-500 seed content items. These must be limited to samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
-   > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
+   > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing whether a sample is a weak or negative match to the category.
 
 2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library, and folder URL.
 
    > [!TIP]
    > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-3. Sign in to Microsoft Purview compliance portal with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Data classification**.
+3. Sign in to the Microsoft Purview compliance portal with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> navigate to </a> **Data classification** > **Classifiers**. 
 
 4. Choose the **Trainable classifiers** tab.
 
 5. Choose **Create trainable classifier**.
 
-6. Fill in appropriate values for the `Name` and `Description` fields of the category of items you want this trainable classifier to identify.
+6. Fill in appropriate values for the **Name** and **Description** fields of the category of items you want this trainable classifier to identify.
 
-7. Pick the SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose `Add`.
+7. Pick the SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose **Add**.
 
-8. Review the settings and choose `Create trainable classifier`.
+8. Review the settings and choose **Create trainable classifier**.
 
-9. Within 24 hours the trainable classifier will process the seed data and build a prediction model. The classifier status is `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status changes to `Need test items`.
+9. Within 24 hours the trainable classifier will process the seed data and build a prediction model. The classifier status is **In progress** while it processes the seed data. When the classifier is finished processing the seed data, the status changes to **Need test items**.
 
 10. You can now view the details page by choosing the classifier.
 
@@ -126,34 +121,34 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
-12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the SharePoint Online site, library, and folder URL.
+12. Place the test content in a SharePoint Online folder that is dedicated to holding *only the test content*. Make note of the SharePoint Online site, library, and folder URL.
 
     > [!TIP]
     > If you create a new site and folder for your test data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-13. Choose `Add items to test`.
+13. Choose **Add items to test**.
 
-14. Pick the SharePoint Online site, library, and folder URL for the test content site from step 12. Choose `Add`.
+14. Pick the SharePoint Online site, library, and folder URL for the test content site from step 12. Choose **Add sites**.
 
-15. Finish the wizard by choosing `Done`. Your trainable classifier will take up to an hour to process the test files.
+15. Finish the wizard by choosing **Done**. Your trainable classifier will take up to an hour to process the test files.
 
-16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose `Add items to test` and allow the trainable classifier to process the additional items.
+16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose **Add items to test** and allow the trainable classifier to process the additional items.
 
     > [!div class="mx-imgBorder"]
     > ![ready to review screenshot.](../media/classifier-trainable-ready-to-review-detail.png)
 
-17. Choose `Tested items to review` tab to review items.
+17. Choose the **Tested items to review** tab to review items.
 
-18. Microsoft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
+18. Microsoft 365 will present 30 items at a time. Review them; in the **We predict this item is "Relevant". Do you agree?** box, choose **Yes**, or **No**, or **Not sure, skip to next item**. Model accuracy is automatically updated every 30 items.
 
     > [!div class="mx-imgBorder"]
     > ![review items box.](../media/classifier-trainable-review-detail.png)
 
-19. Review *at least* 200 items. Once the accuracy score has stabilized, the **publish** option will become available and the classifier status will say `Ready to use`.
+19. Review *at least* 200 items. Once the accuracy score has stabilized, the **publish** option will become available and the classifier status will say **Ready to use**.
 
     > [!div class="mx-imgBorder"]
     > ![accuracy score and ready to publish.](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publish the classifier.
 
-21. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
+21. Once published, your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
