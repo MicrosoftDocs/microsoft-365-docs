@@ -39,7 +39,9 @@ Before you start these procedures, you should review [Learn about evidence colle
 
 ## Licensing and Subscriptions
 
-See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP. You don't need any additional licenses over what is needed for endpoint DLP.
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
+
+See the pre-requisite [licensing requirements for Azure Active Directory P1 or P2](azure/active-directory/roles/custom-create#prerequisites) needed to create custom role-based access control (RBAC). 
 
 ## Permissions
 
@@ -75,14 +77,17 @@ You can also configure immutability policies for your blob data that protects ag
 The procedures for setting up your Azure storage account, container and blobs are documented in the Azure document set. Here are links to relevant articles you can refer to help you get started:
 1. [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)
 1. [Create a storage account](/azure/storage/common/storage-account-create)
+1. [Default to and authorize access to blobs using Azure Active Directory](/azure/storage/blobs/authorize-access-azure-active-directory)
 1. [Manage blob containers using the Azure portal](/azure/storage/blobs/blob-containers-portal)
 1. [Manage block blobs with PowerShell](/azure/storage/blobs/blob-powershell)
 
 Be sure to save the name and URL of the Azure blob container. To view the URL, open the Azure storage portal \> **Home \> **Storage Accounts** \> **Container** \> **Properties**
 
+An example of the Azure blob container URL will be in the format `https://storageAccountName.blob.core.windows.net/containerName`.
+
 ### Set permissions on the Azure blob storage
 
-You have to configure two sets of permissions on the blobs, one for the administrators and investigators so they can view and manage evidence and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
+Using Azure Active Directory authorization, you have to configure two sets of permissions on the blobs; one for the administrators and investigators so they can view and manage evidence and another for users whose devices need to upload items to Azure. You should [create custom role groups in Microsoft Purview compliance](../security/office-365-security/scc-permissions.md) to enforce least privileges and assign accounts to them.
 
 #### Permissions on Azure blob for administrators and investigators
 
@@ -176,7 +181,7 @@ The JSON for user role group should look like this:
 
 1. Set how long you want items to be cached on devices if they can't access the Azure storage account. You can choose, **7**, **30**, or **60** days.
 
-1. Select **+ Add storage** and provide the Name and URL of the Azure storage account.
+1. Select **+ Add storage** and provide the Name and URL of the Azure storage account. The URL format is the storage account FQDN/containerName. No SAS token is required as Azure Active Directory authorization is in use.
 
 ### Policy configuration 
 
