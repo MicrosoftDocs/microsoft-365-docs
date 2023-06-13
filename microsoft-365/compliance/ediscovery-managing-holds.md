@@ -29,7 +29,7 @@ ms.custom:
 You can use a Microsoft Purview eDiscovery (Premium) case to create holds to preserve content that might be relevant to your case. Using the eDiscovery (Premium) hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business sites. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for a Microsoft 365 group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you release the custodian, remove a specific data location, or delete the hold policy entirely.
 
 >[!IMPORTANT]
->Although eDiscovery holds retain content included in holds, it is strongly advised that you don't rely on eDisscovery holds for long-term data retention for content. You organization should consider using retention policies and retention labels for long-term data preservation. For more information, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
+> For long term data retention not related to eDiscovery investigations, it is strongly advised to use retention policies and retention labels. For more information, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

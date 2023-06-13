@@ -26,7 +26,7 @@ search.appverid:
 You can use a Microsoft Purview eDiscovery (Standard) case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Microsoft 365 groups, and Yammer Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
 
 >[!IMPORTANT]
->Although eDiscovery holds retain content included in holds, it is strongly advised that you don't rely on eDisscovery holds for long-term data retention for content. You organization should consider using retention policies and retention labels for long-term data preservation. For more information, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
+> For long term data retention not related to eDiscovery investigations, it is strongly advised to use retention policies and retention labels. For more information, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
 After you create an eDiscovery hold, it may take up to 24 hours for the hold to take effect.
 
