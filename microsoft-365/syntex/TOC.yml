@@ -34,8 +34,6 @@
               items:
                 - name: Apply a model
                   href: apply-a-model.md
-                - name: Choose a library view 
-                  href: choose-library-view.md
                 - name: Share an enterprise model 
                   href: model-discovery.md
                 - name: Discover other trained models 
@@ -48,6 +46,8 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
                 - name: Manage models with PowerShell
@@ -146,6 +146,9 @@
 
     - name: Annotations
       href: annotations.md
+
+    - name: Optical character recognition 
+      href: ocr.md
 
     - name: Taxonomy
       items:
