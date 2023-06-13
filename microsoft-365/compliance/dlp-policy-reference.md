@@ -859,7 +859,7 @@ To learn more about user notification and policy tip configuration and use, incl
 
 #### Policy tip references
 
-Details on support for policy tips and notfications for different apps can be found here:
+Details on support for policy tips and notifications for different apps can be found here:
 
 - [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
 
