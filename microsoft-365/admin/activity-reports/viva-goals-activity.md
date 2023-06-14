@@ -38,7 +38,7 @@ In the Viva Goals report, you can understand the activity of every Viva Goals 
 
 You can use this report to see the activity and usage of Viva Goals in your organization. You see the following summary charts in this report:  
 
-:::image type="content" source="../../media/viva-goals-cfr/cfr-1.png" alt-text="Screenshot of the activity report." lightbox="../../media/viva-goals-cfr/cfr-1.png":::
+:::image type="content" source="../../media/viva-goals-cfr/cfr-1.jpg" alt-text="Screenshot of the activity report." lightbox="../../media/viva-goals-cfr/cfr-1.jpg":::
 
 **Active users** shows you the number of daily active users on each day over time. This includes Viva Goals on the web and Teams app usage.
 
@@ -54,7 +54,7 @@ The report also has a table that shows activity for each Viva Goals user in your
 
 Select Choose Columns to add or remove columns from the table.
 
-:::image type="content" source="../../media/viva-goals-cfr/cfr-2.png" alt-text="Screenshot of choosing and removing contents from the report." lightbox="../../media/viva-goals-cfr/cfr-2.png":::
+:::image type="content" source="../../media/viva-goals-cfr/cfr-2.jpg" alt-text="Screenshot of choosing and removing contents from the report." lightbox="../../media/viva-goals-cfr/cfr-2.jpg":::
 
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Viva Goals usage data of all users and enables you to do simple sorting and filtering for further analysis. 
 
