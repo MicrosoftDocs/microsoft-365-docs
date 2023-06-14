@@ -157,7 +157,7 @@ Unrestricted policies are created and managed by users in these role groups:
 
 See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. 
 
-Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer-and-reports).
 
 ### Administrative Unit restricted policies (preview)
 
