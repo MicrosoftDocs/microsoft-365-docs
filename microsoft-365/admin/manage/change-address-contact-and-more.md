@@ -83,7 +83,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
     * When a user syncs a SharePoint library, it shows up in File Explorer under a node in the left navigation that bears a blue office building icon and the tenant name.
   * The organization name is used in file paths:
     * The file path for the root of the OneDrive for that user defaults to C:\users\<username>\OneDrive - \<Tenant Name>\
-    * The file path for SharePoint libraries that get synced is  C:\users\<username>\OneDrive - \<Tenant Name>\
+    * The file path for SharePoint libraries that get synced is  C:\users\<username>\<Tenant Name>\
     * The file path for the Documents Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Documents
     * The file path for the Pictures Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Pictures
     * The file path for the Desktop Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Desktop
