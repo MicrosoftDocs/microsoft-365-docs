@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -518,9 +518,9 @@ The following table lists the activities in Microsoft To Do that are logged in t
 |TaskList updated|TaskListUpdated |A task list was updated.|
 |User invited|UserInvited|Invited user to a folder.|
 
-## Microsoft Workplace Analytics activities
+## Microsoft Viva Insights activities
 
-Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
+Viva Insights provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Viva Insights. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Viva Insights. For more information, see [Introducing Microsoft Viva Insights](/viva/insights/introduction).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -538,16 +538,16 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 
 > [!NOTE]
-> <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
+> <sup>*</sup>An Azure Active Directory sign in and sign off activity event is created when a user signs in. This activity is logged even if you don't have Viva Insights turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-## MyAnalytics activities
+## Personal insights activities
 
-The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
+The following table lists the activities in personal insights that are logged in the Microsoft 365 audit log. For more information about personal insights, see [Admin guide for personal insights](/viva/insights/personal/Overview/mya-for-admins).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
-|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for personal insights. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for personal insights.|
 
 ## Power BI activities
 

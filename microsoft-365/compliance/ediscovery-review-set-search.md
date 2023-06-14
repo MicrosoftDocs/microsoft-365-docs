@@ -42,7 +42,7 @@ In a review set, there are five default filters that are pre-loaded in the revie
 Select each filter to expand it and assign a value. Select outside the filter to automatically apply the filter to the review set.
 
 > [!NOTE]
-> A review set displays a maximum of 1,000 items per page. Use default or custom filters to adjust the displayed items as needed.
+> A review set displays a maximum of 1,000 items per page and up to 10 pages (for a total of 10,000 items displayed per review set). Use default or custom filters to adjust the displayed items as needed.
 
 ## Add or remove filters
 
