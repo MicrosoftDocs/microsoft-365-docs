@@ -1,9 +1,9 @@
 ---
 title: SKOS format reference for SharePoint taxonomy
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 09/14/2020
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.date: 05/14/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -11,7 +11,7 @@ search.appverid:
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-ms.localizationpriority: high
+ms.localizationpriority: medium
 description: Learn about the SKOS format reference for SharePoint taxonomy.
 ---
 
@@ -288,7 +288,7 @@ ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean;
 
 ## Domain and range
 
-The table below describes the domain and range of SharePoint taxonomy vocabulary.
+The following table describes the domain and range of SharePoint taxonomy vocabulary.
 
 |Predicates/verb|Meaning|Domain|Range|
 |:--------------|:------|:-----|:----|
@@ -315,7 +315,3 @@ propertyName|Has Property Label|SharedCustomPropertyForTerm, LocalCustomProperty
 - SharePoint taxonomy doesn't support associative relations.
 - SharePoint taxonomy only allows two types of Hierarchical relations – sharepoint-taxonomy: parent and sharepoint-Taxonomy: child.
 - Unlike [SKOS](https://www.w3.org/TR/skos-primer/) the hierarchical relationship in SharePoint taxonomy vocabulary, can only be established with Terms within the same TermSet.
-
-## See also
-
-[Import a term set using a SKOS-based format](import-term-set-skos.md)
