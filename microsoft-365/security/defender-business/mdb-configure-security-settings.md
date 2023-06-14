@@ -66,7 +66,7 @@ Note that in the preceding image, **Use Defender for Business configuration inst
 
 
 >[!TIP]
->You can export your list of policies through the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/). 
+>You can export your list of policies through the [Microsoft Intune admin center](https://intune.microsoft.com/). 
 
 ## Next steps
 
