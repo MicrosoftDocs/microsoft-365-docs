@@ -40,7 +40,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
 4. On the **Copilot** panel, you can:
 
-    - Select one of the questions Copilot has generated for you tailored for the specific file.
+    - Select one of the questions Copilot has generated for you tailored for the specific file. Or select **Refresh** (![Image of the Refresh icon.](../media/content-understanding/copilot-refresh-icon.png)) to generate additional questions.
 
        ![Screenshot of the generated questions on the Copilot panel.](../media/content-understanding/copilot-generated-questions.png)
 
