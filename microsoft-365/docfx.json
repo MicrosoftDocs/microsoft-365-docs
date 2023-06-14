@@ -86,7 +86,8 @@
         "v-dihans",
         "AngelaMotherofDragons",
         "alexbuckgit", 
-        "beccarobins"
+        "beccarobins",
+        "dstrome"
       ]
     },
     "fileMetadata": {
@@ -100,7 +101,6 @@
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft Purview (compliance)",
         "security/mtp/**/*.md": "Microsoft 365 security",
-        "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
         "business-premium/**/*.md": "Microsoft 365 Business Premium",
@@ -113,6 +113,7 @@
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
         "security/**/*.md":"https://docs.microsoft.com/microsoft-365/security/defender/feedback",
+        "security/defender/**/*.md":"https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection",
         "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",

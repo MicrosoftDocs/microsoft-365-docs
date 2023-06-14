@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.reviewer: dhagarwal
 ms.topic: how-to
-ms.date: 5/12/2023
+ms.date: 6/6/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -106,7 +106,7 @@ After the add-in is installed and enabled, users see the following icons based o
   > - The toggle on the **User reported** page is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
   > - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
 
-- Organizations that use URL filtering or a third-party security solutions (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
+- Organizations that use URL filtering or a third-party security solution (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
   - `ipagave.azurewebsites.net`
   - `outlook.office.com`
 
@@ -180,7 +180,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 >
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They are sent only to the reporting mailbox that you identify. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They're sent only to the reporting mailbox that you identify for compliance reasons (data isn't allowed to leave the organization boundary). For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal/home#/Settings/AddIns>, select **Settings** \> **Add-ins** \> **Deploy Add-in** \> **Upload custom apps**.
 

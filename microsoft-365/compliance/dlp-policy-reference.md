@@ -50,7 +50,7 @@ Also, you need to be aware of the following constraints of the platform:
 - Maximum number of DLP rules:
     - In a policy: Limited by the size of the policy
     - In a tenant: 600
-- Maximum size of an individual DLP rule: 80 KB
+- Maximum size of an individual DLP rule: 100 KB (102,400 characters)
 - GIR evidence limit: 100, with each SIT evidence, in proportion of occurrence
 - Text extraction limit: 1 MB
 - Regex size limit for all matches predicted: 20 KB
@@ -176,16 +176,19 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 |Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional prerequisites |
 |---------|---------|---------|---------|---------|
-|Exchange email online|Yes |distribution group | data-in-motion| No |
-|SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
-|OneDrive for Business accounts|Yes| account or distribution group |data-at-rest </br> data-in-use|No|
-|Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
-|Power BI |No| workspaces | data-in-use | No|
+|Exchange |Yes |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Dynamic distribution lists </br> - Microsoft 365 groups (Group members only, not the group as an entity) | data-in-motion | No |
+|SharePoint |No   |Sites       | data-at-rest </br> data-in-use | No|
+|OneDrive |Yes| - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity) |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages|Yes     | - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)|data-in-motion </br> data-in-use |  No       |
+|Microsoft Defender for Cloud Apps|No   | Cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)|No    |Repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
+|Power BI |No| Workspaces | data-in-use | No|
+| Third-party apps | None | No | No | No |
+| Power BI | No | None | No | No |
 
-#### Exchange location scoping 
+
+#### Exchange location scoping
 
 If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
 
@@ -413,7 +416,7 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Exchange supports
 
 - Content contains
-- User's risk level for Adaptice Protection is
+- User's risk level for Adaptive Protection is
 - Content is not labeled
 - Content is shared from Microsoft 365
 - Content is received from
@@ -491,13 +494,14 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - User's risk level for Adaptive Protection is
-- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- Document or attachment is password protected (PDF, Office files, .ZIP, .7z, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
 - File extension is
-- The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
-
+- The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
 ##### Conditions Microsoft Defender for Cloud Apps supports
 
@@ -554,7 +558,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <= 600 | Medium |
 |Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1 MB  | Low |
-|Attachment is password-protected | EXO | File types: Office files, ZIP, and 7z |Low|
+|Attachment is password-protected | EXO | File types: Office files, .PDF, .ZIP, and 7z |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <= 50 | High|
 |Recipient is a member of |EXO | Count <= 600 | High |
 |Recipient domain is | EXO| Domain name length <= 67; Count <= 5000  | Low |
@@ -853,6 +857,12 @@ To learn more about user notification and policy tip configuration and use, incl
 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
 
+#### Policy tip references
+
+Details on support for policy tips and notifications for different apps can be found here:
+
+- [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
+
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 
 This table shows the DLP blocking and notification behavior for policies that are scoped to SharePoint Online and OneDrive for Business.
@@ -908,7 +918,14 @@ When a user overrides a block with override action on an email, the override opt
     ]
 }
 ```
-If you have a automated process that makes use of the business justification values, the process can access that information progamatically in the email X-header data. 
+If you have an automated process that makes use of the business justification values, the process can access that information programmatically in the email X-header data.
+
+> [!NOTE]
+> The `msip_justification` values are stored in the following order: 
+>
+> `False Positive; Recipient Entitled; Manager Approved; I Acknowledge; JustificationText_[free text]`. 
+>
+>  Notice that the values are separated by semicolons. The maximum free text allowed is 500 characters.
 
 ### Incident reports
 

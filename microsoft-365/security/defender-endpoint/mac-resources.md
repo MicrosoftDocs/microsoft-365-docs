@@ -121,11 +121,11 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Configuration|Turn on/off file hash computation|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
-|Configuration|Turn on/off data_loss_prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
+|Configuration|Turn on/off data loss prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
-|Health|Check for a spefic product attribute|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Health|Check for a specific product attribute|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
 |Protection|Scan a path|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|Do a quick scan|`mdatp scan quick`|
 |Protection|Do a full scan|`mdatp scan full`|

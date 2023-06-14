@@ -1245,9 +1245,9 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Chrome Extension
+          - name: Learn about the Microsoft Purview extension for Chrome
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension
+          - name: Learn about the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -1273,15 +1273,15 @@
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Get started with data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises repositories
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Chrome Extension
+          - name: Get started with the Microsoft Purview extension for Chrome
             href: dlp-chrome-get-started.md
-          - name: Get started with the Microsoft Purview Firefox extension (preview)
+          - name: Get started with the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
@@ -1307,8 +1307,6 @@
               href: protect-documents-that-have-fci-or-other-properties.md
             - name: View the DLP reports
               href: view-the-dlp-reports.md
-            - name: Form a query to find sensitive data stored on sites
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
             - name: Configure and view alerts for DLP policies
@@ -1328,7 +1326,9 @@
             - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
-              href: dlp-migration-assistant-for-symantec-use.md       
+              href: dlp-migration-assistant-for-symantec-use.md
+            - name: Data loss prevention policy tip reference for Outlook on the Web
+              href: dlp-owa-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1667,7 +1667,7 @@
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
-            - name: Invite guest users to cases
+            - name: Invite guest users to cases (preview)
               href: ediscovery-guest-access.md
         - name: Analyze case content
           href: ediscovery-analyzing-data-in-review-set.md
@@ -1831,8 +1831,6 @@
           items:
             - name: Permissions and settings
               href: compliance-manager-setup.md
-            - name: Configuration Analyzer for Microsoft Purview
-              href: compliance-manager-mcca.md
         - name: Multicloud support in Compliance Manager
           items:
             - name: Learn about multicloud support

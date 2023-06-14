@@ -137,6 +137,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
 
     > [!NOTE]
     > Wildcards are not supported and WebDav locations are not supported.
+    > Scanning of OneDrive locations as repositories is not supported.
     >
 
     If you add a SharePoint path for **Shared Documents**:
