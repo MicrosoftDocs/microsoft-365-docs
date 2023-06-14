@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/13/2023
+ms.date: 04/03/2023 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -70,7 +70,7 @@ The contextual summary experience, where you indicate whether a matched item is 
 
 ### Using Content Explorer
 
-This example shows you how to use the **Contextual Summary** tab to give feedback.
+This example shows you how to use the **Contextual Summary** tab to give feedback. <!-- Can't fully verify procedure b/c I can't get Content Explorer to display any data in this view -->
 
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
@@ -107,7 +107,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 
 ### Using Trainable Classifier Matched Items page
 
-1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Trainable classifiers**.
+1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Classifiers** > **Trainable classifiers**.
 1. Select the trainable classifier whose accuracy you want to check.
 1. Open the trainable classifier. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.

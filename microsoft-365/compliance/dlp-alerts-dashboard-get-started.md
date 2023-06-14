@@ -36,9 +36,9 @@ If you are new to DLP alerts, you should review [Learn about the data loss preve
 
 Before you begin, make sure you have the necessary prerequisites:
 
--   Licensing for the DLP alerts management dashboard
--   Licensing for alert configuration options
--   Roles
+- Licensing for the DLP alerts management dashboard
+- Licensing for alert configuration options
+- Roles
 
 ### Licensing for the DLP alert management dashboard
 
