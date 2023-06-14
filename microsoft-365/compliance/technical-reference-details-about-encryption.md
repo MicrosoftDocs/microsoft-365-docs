@@ -53,8 +53,8 @@ In late August 2023, Microsoft Purview Information Protection will begin to use 
 
 Use this table to figure out if you have to take action:
 
-|Client Applications|Service Applications|Action Required?|What do I need to do?|
-|-----|-----|-----|-----|
+|**Client applications**|**Service applications**|**Action required?**|**What do I need to do?**|
+|:-----|:-----|:-----|:-----|
 |Microsoft 365 Apps|Exchange Online, SharePoint Online |No|N/A|
 |Office 2013, 2016, 2019, or 2021|Exchange Online, SharePoint Online| Yes (Optional)| See [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
 |Microsoft 365 Apps|Exchange Server or hybrid|Yes (Mandatory)| See [Set up Exchange Server for AES256-CBC support](#set-up-exchange-server-for-aes256-cbc-support).|
