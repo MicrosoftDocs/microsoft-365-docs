@@ -1,5 +1,5 @@
 ---
-title: Send electronic signature requests in Microsoft Syntex (Preview)
+title: Send electronic signature requests using Microsoft Syntex eSignature (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,9 +14,9 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use Microsoft eSignature to send electronic signature requests with Microsoft Syntex to people inside and outside your organization. 
+description: Learn how to use Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Send electronic signature requests in Microsoft Syntex (Preview)
+# Send electronic signature requests using Microsoft Syntex eSignature (Preview)
 
 *This article is currently in development. It will include steps for how to use the feature.*
