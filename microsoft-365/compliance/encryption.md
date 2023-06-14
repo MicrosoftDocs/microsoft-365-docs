@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/31/2023
+ms.date: 06/14/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -58,7 +58,7 @@ With Office 365, multiple layers and kinds of encryption work together to secure
 
 ## Microsoft 365 Crypto Update
 
-In July 2023, Microsoft Purview Information Protection will begin to use Advanced Encryption Standard (AES) with 256-bit key length in Cipher Block Chaining mode (AES256-CBC). By August 2023, AES256-CBC will be the default for encryption of Microsoft 365 Apps documents and emails. For more information, see [Technical reference details about encryption](technical-reference-details-about-encryption.md).
+In late August 2023, Microsoft Purview Information Protection will begin to use Advanced Encryption Standard (AES) with 256-bit key length in Cipher Block Chaining mode (AES256-CBC). By October 2023, AES256-CBC will be the default for encryption of Microsoft 365 Apps documents and emails. You may need to take action to support this change in your organization. For more information, see [Technical reference details about encryption](technical-reference-details-about-encryption.md).
 
 ## What if I need more control over encryption to meet security and compliance requirements?
 
