@@ -60,7 +60,7 @@ Use this table to figure out if you have to take action:
 |Microsoft 365 Apps|Exchange Server or hybrid|Yes (Mandatory)| See [Set up Exchange Server for AES256-CBC support](#set-up-exchange-server-for-aes256-cbc-support).|
 |Office 2013, 2016, 2019, or 2021|Exchange Server or hybrid| Yes (Mandatory)| Complete [Option 1](#option-1) (required), and then see [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
 |Microsoft 365 Apps|MIP SDK|Yes (Optional)| See [Set up MIP SDK for AES256-CBC support](#set-up-mip-sdk-for-aes256-cbc-support).|
-|Any|SharePoint Server|No|N/A||
+|Any|SharePoint Server|No|N/A|
 
 #### Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode
 
@@ -140,7 +140,7 @@ Microsoft 365 responds to a connection request by first attempting to connect us
 | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA    | ECDH/192 | Yes | AES/256 | RSA/112 |
 | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA    | ECDH/128 | Yes | AES/128 | RSA/112 |
 | TLS_RSA_WITH_AES_256_GCM_SHA384       | RSA/112  | No  | AES/256 | RSA/112 |
-| TLS_RSA_WITH_AES_128_GCM_SHA256       | RSA/112  | No  | AES/256 | RSA/112 ||
+| TLS_RSA_WITH_AES_128_GCM_SHA256       | RSA/112  | No  | AES/256 | RSA/112 |
 
 The following cipher suites supported TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was January 15, 2020. For Worldwide and GCC environments that date was October 15, 2020.
 
@@ -151,7 +151,7 @@ The following cipher suites supported TLS 1.0 and 1.1 protocols until their depr
 | TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_256_CBC_SHA       | RSA/112  | No  | AES/256 | RSA/112 |
 | TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_128_CBC_SHA       | RSA/112  | No  | AES/128 | RSA/112 |
 | TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_256_CBC_SHA256    | RSA/112  | No  | AES/256 | RSA/112 |
-| TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_128_CBC_SHA256    | RSA/112  | No  | AES/256 | RSA/112 ||
+| TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_128_CBC_SHA256    | RSA/112  | No  | AES/256 | RSA/112 |
 
 Certain Office 365 products (including Microsoft Teams) use [Azure Front Door](/azure/frontdoor/front-door-overview) to terminate TLS connections and route network traffic efficiently. At least one of the [cipher suites supported by Azure Front Door over TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) must be enabled to successfully connect to these products. For Windows 10 and above, we recommend enabling one or both of the ECDHE cipher suites for better security. Windows 7, 8, and 8.1 aren't compatible with Azure Front Door's ECDHE cipher suites and the DHE cipher suites have been provided for compatibility with those operating systems.
 
