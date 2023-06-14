@@ -65,7 +65,8 @@ Note that in the preceding image, **Use Defender for Business configuration inst
 > If you're managing your security policies in the Microsoft 365 Defender portal, you can view those policies in the Intune admin center, where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Intune admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
 
 
-
+>[!TIP]
+>You can export your list of policies through the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/). 
 
 ## Next steps
 
