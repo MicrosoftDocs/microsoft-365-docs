@@ -91,6 +91,8 @@ Although renaming and moving files after an instance of the flow is triggered ar
 
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
 
+- If your chosen flow uses an [environment type other than Default](/power-platform/admin/environments-overview#types-of-environments), you must use [PowerShell to create the retention label](https://learn.microsoft.com/en-us/powershell/module/exchange/new-compliancetag?view=exchange-ps#example-1), and use the *FlowId* parameter.
+
 ## Power Automate dependency
 
 Power Automate is a workflow service that automates actions across applications and services. Specific to running a Power Automate flow at the end of the retention period:
