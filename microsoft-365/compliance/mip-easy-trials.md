@@ -171,7 +171,7 @@ The default DLP policy for Teams detects the presence of credit card numbers in 
 
 This policy is unobtrusive to users with no policy tip visible and no messages blocked, but admins will have records of the sensitive information shared in these messages. If required, you can edit the settings to change this default configuration.
 
-To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer-and-reports).
 
 If you want to edit the DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
