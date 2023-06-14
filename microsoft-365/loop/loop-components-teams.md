@@ -71,11 +71,11 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## Does .fluid files support eDiscovery?
 
-Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](loop-components-sharepoint.md#settings-management) section.
+Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
-If you disable these experiences as outlined in the [Settings management](loop-components-sharepoint.md#settings-management) section, the following experience changes will apply:
+If you disable these experiences as outlined in the [Settings management](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section, the following experience changes will apply:
 
 - The create/insert entry point within Teams messaging will be hidden. Users won't be able to create new .fluid files.
 - Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink "Loop component." No interactive content will be displayed within Teams.
