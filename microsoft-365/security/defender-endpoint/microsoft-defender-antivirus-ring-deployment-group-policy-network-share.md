@@ -50,6 +50,8 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 This article describes how to deploy Microsoft Defender Antivirus in rings using Group Policy and Network share (also known as UNC path, SMB, CIFS).
 
+:::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Shows an example Microsoft Defender Antivirus ring deployment schedule for Group Policy and network share environments." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
+
 ## Prerequisites
 
 Review the _read me_ article at [Readme](https://github.com/microsoft/defender-updatecontrols/blob/main/README.md) 
