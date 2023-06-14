@@ -66,14 +66,110 @@ https://github.com/microsoft/defender-updatecontrols/blob/main/README.md
 
 ## Setting up the pilot environment 
 
-> [!NOTE]
-> Per Yong - Note:  The only difference would be in Steps 3, 4, 5, 6, 7. Instead, you could setup a Powershell script to copy the signatures from the UNC Share for the Pilot Environment at 5:00 p.m. 
-> I assume by "The only difference would be..." is that this procedure is the same as the procedure for deployment using GP and MU. Accordingly, I coppied that section into this article. 
-> However, the steps in the Word version are not numbered, and I'm not exactly sure where and how to revise.
-
 :::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
 
 This section describes the process for setting up the pilot UAT / Test / QA environment. On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have:
+
+### Create a UNC share for security intelligence and platform updates
+
+Set up a network file share (UNC/mapped drive) to download security intelligence and platform updates from the MMPC site by using a scheduled task.
+
+1. On the system on which you want to provision the share and download the updates, create a folder to which you will save the script.
+
+    ```console
+    Start, CMD (Run as admin)
+    MD C:\Tool\PS-Scripts\
+    ```
+
+2. Create the folder to which you will save the signature updates.
+
+    ```console
+    MD C:\Temp\TempSigs\x64
+    MD C:\Temp\TempSigs\x86
+    ```
+
+3. Setup a PowerShell script, `CopySignatures.ps1`
+
+   Copy-Item -Path “\\SourceServer\Sourcefolder”  -Destination “\\TargetServer\Targetfolder”
+
+4. Use the command line to set up the scheduled task.
+
+   > [!NOTE]
+   > There are two types of updates: full and delta.
+
+   - For x64 delta:
+
+       ```powershell
+       Powershell (Run as admin)
+
+       C:\Tool\PS-Scripts\
+
+       ".\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $true -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
+       ```
+
+   - For x64 full:
+
+       ```powershell
+       Powershell (Run as admin)
+
+       C:\Tool\PS-Scripts\
+
+       ".\SignatureDownloadCustomTask.ps1 -action create -arch x64 -isDelta $false -destDir C:\Temp\TempSigs\x64 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
+       ```
+
+   - For x86 delta:
+
+       ```powershell
+       Powershell (Run as admin)
+
+       C:\Tool\PS-Scripts\
+
+       ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $true -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
+       ```
+
+   - For x86 full:
+
+       ```powershell
+       Powershell (Run as admin)
+
+       C:\Tool\PS-Scripts\
+
+       ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
+       ```
+
+   > [!NOTE]
+   > When the scheduled tasks are created, you can find these in the Task Scheduler under `Microsoft\Windows\Windows Defender`.
+
+5. Run each task manually and verify that you have data (`mpam-d.exe`, `mpam-fe.exe`, and `nis_full.exe`) in the following folders (you might have chosen different locations):
+
+   - `C:\Temp\TempSigs\x86`
+   - `C:\Temp\TempSigs\x64`
+
+   If the scheduled task fails, run the following commands:
+
+    ```console
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
+
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
+
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x86 -isDelta $False -destDir C:\Temp\TempSigs\x86"
+
+    C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x86 -isDelta $True -destDir C:\Temp\TempSigs\x86"
+    ```
+
+    > [!NOTE]
+    > Issues could also be due to execution policy.
+
+6. Create a share pointing to `C:\Temp\TempSigs` (e.g., `\\server\updates`).
+
+    > [!NOTE]
+    > At a minimum, authenticated users must have "Read" access. This requirement also applies to domain computers, the share, and NTFS (security).
+
+7. Set the share location in the policy to the share.
+
+    > [!NOTE]
+    > Do not add the x64 (or x86) folder in the path. The mpcmdrun.exe process adds it automatically.
+
 
 ## Setting up the Pilot (UAT/Test/QA) environment
 

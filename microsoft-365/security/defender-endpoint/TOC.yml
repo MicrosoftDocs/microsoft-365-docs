@@ -564,24 +564,6 @@
         items:
         - name: Microsoft Defender Antivirus ring deployment overview
           href: microsoft-defender-antivirus-ring-deployment.md
-        - name: Microsoft defender Antivirus ring deployments
-          items:
-          - name: Ring deployment using Group Policy and Microsoft Updates
-            href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
-          - name: Ring deployment using Group Policy and network share
-            href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md
-          - name: Ring deployment using Group Policy and Windows Server Update Services (WSUS)
-            items: 
-            - name: Pilot ring deployment using Group Policy and Windows Server Update Services (WSUS)
-              href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
-            - name: Production ring deployment using Group Policy and Windows Server Update Services (WSUS)
-              href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
-            - name: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
-              href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
-          - name: Ring deployment using Intune and Microsoft Update
-            href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
-          - name: Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)
-            href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
@@ -654,6 +636,27 @@
           href: manage-gradual-rollout.md
         - name: Configure gradual rollout process for Microsoft Defender updates
           href: configure-updates.md
+        - name: Ring deployment
+          items:
+          - name: Overview
+            href: microsoft-defender-antivirus-ring-deployment.md
+          - name: Intune and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
+          - name: Configuration Manager and WSUS
+            href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
+          - name: Group Policy and Microsoft Updates
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
+          - name: Group Policy and network share
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md
+          - name: Group Policy and WSUS
+            items:
+            - name: Pilot ring
+              href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
+            - name: Production ring
+              href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
+            - name: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
+              href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
+
         - name: Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
           href: manage-outdated-endpoints-microsoft-defender-antivirus.md
         - name: Manage event-based forced updates
