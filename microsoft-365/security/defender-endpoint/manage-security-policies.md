@@ -30,6 +30,11 @@ ms.date: 06/19/2023
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+
+>[!NOTE]
+>The following capability is only available to customers who turn on preview features. 
+
+
 Use security policies to manage security settings on devices. As a security administrator, you can configure security policy settings in Microsoft 365 Defender. 
 
 You'll find endpoint security policies under **Endpoints > Configuration management > Endpoint security policies**.
@@ -103,7 +108,7 @@ The following list provides a brief descriptions of each endpoint security polic
 To verify that you have successfully created a policy, select a policy name from the list of endpoint security policies.
 
 >[!NOTE]
->It can take up to 90 minutes for a policy to reach a device. To expedite the process, you can select **Policy sync** from the actions menu. The policy is applied on a device in approximately 10 minutes.
+>It can take up to 90 minutes for a policy to reach a device. To expedite the process, you can select **Policy sync** from the actions menu so that it is applied in approximately 10 minutes.
 > :::image type="content" source="./images/policy-sync.png" alt-text="Image showing policy sync button":::
 
 The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
