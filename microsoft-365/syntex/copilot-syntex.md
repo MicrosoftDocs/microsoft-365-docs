@@ -34,11 +34,15 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
     ![Screenshot of a document library page showing a document selected and the Copilot button on the ribbon.](../media/content-understanding/copilot-document-selected.png)
 
-3. The **Copilot** panel opens.
+3. The first time you use Copilot for Syntex, you'll see this **Copilot** panel.
+
+    ![Screenshot of the first-run experience Copilot panel.](../media/content-understanding/copilot-panel-first-run.png)
+
+4. After that, you'll see this **Copilot** panel.
 
     ![Screenshot of the Copilot panel.](../media/content-understanding/copilot-panel.png)
 
-4. On the **Copilot** panel, you can:
+5. On the **Copilot** panel, you can:
 
     - Select one of the questions Copilot has generated for you tailored for the specific file. Or select **Refresh** (![Image of the Refresh icon.](../media/content-understanding/copilot-refresh-icon.png)) to generate additional questions.
 
