@@ -42,7 +42,7 @@ Click the **x** symbol.
 
 :::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The menu bar that contains the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
 
-### Message:
+### Message
 
 When you click the **x** symbol, you'll see options as shown in the following screenshot:
 
