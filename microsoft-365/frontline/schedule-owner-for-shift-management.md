@@ -67,7 +67,8 @@ As an admin, you use policies to control schedule management ownership in your o
 - [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps)
 - [Remove-CsTeamsShiftsPolicy](/powershell/module/teams/remove-csteamsshiftspolicy?view=teams-ps)
 
-You need to conntect to [Microsoft Teams PowerShell](/powershell/module/teams/connect-microsoftteams)
+Note that you need to be connected to [Microsoft Teams PowerShell](/powershell/module/teams/connect-microsoftteams).
+
 ### Example 1
 
 Here, we create a new policy named ScheduleOwnerPolicy with the Schedule Owner feature turned on.
