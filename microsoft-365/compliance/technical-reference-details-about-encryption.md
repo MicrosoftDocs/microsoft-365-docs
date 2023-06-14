@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 05/31/2023
+ms.date: 06/14/2023
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -47,14 +47,14 @@ All cipher suites supported by Office 365 use algorithms acceptable under FIPS 1
 
 ## AES256-CBC support for Microsoft 365
 
-In July 2023, Microsoft Purview Information Protection will begin to use Advanced Encryption Standard (AES) with 256-bit key length in Cipher Block Chaining mode (AES256-CBC). By August 2023, AES256-CBC will be the default for encryption of Microsoft 365 Apps documents and emails. You may need to take action to support this change in your organization. 
+In late August 2023, Microsoft Purview Information Protection will begin to use Advanced Encryption Standard (AES) with 256-bit key length in Cipher Block Chaining mode (AES256-CBC). By October 2023, AES256-CBC will be the default for encryption of Microsoft 365 Apps documents and emails. You may need to take action to support this change in your organization.
 
 ### Who is impacted and what do I need to do?
 
 Use this table to figure out if you have to take action:
 
 |Client Applications|Service Applications|Action Required?|What do I need to do?|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |Microsoft 365 Apps|Exchange Online, SharePoint Online |No|N/A|
 |Office 2013, 2016, 2019, or 2021|Exchange Online, SharePoint Online| Yes (Optional)| See [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
 |Microsoft 365 Apps|Exchange Server or hybrid|Yes (Mandatory)| See [Set up Exchange Server for AES256-CBC support](#set-up-exchange-server-for-aes256-cbc-support).|
@@ -64,7 +64,7 @@ Use this table to figure out if you have to take action:
 
 #### Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode
 
-You'll need to configure Office 2013, 2016, 2019, or 2021 to use AES256-CBC mode using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default. Use the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+You need to configure Office 2013, 2016, 2019, or 2021 to use AES256-CBC mode using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default. Use the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
 
 For example, to force CBC mode, select the group policy setting as follows:
 
@@ -88,9 +88,7 @@ Once your organization has installed the patch across all of your Exchange Serve
 
 ##### Option 2
 
-This option gives you some extra time before you need to patch all of your Exchange servers.
-
-If you're unable to complete the steps in [option 1](#option-1) when the hotfix becomes available, you'll need to deploy group policy or client settings that force Microsoft 365 clients to keep using AES128-ECB mode. Deploy this setting using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default. You can configure Office and Microsoft 365 Apps for Windows to use ECB or CBC mode with the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+This option gives you some extra time before you need to patch all of your Exchange servers. Use this option if you're unable to complete the steps in [option 1](#option-1) when the hotfix becomes available. Instead, deploy group policy or client settings that force Microsoft 365 clients to keep using AES128-ECB mode. Deploy this setting using Group Policy, or by using the Cloud Policy service for Microsoft 365. You can configure Office and Microsoft 365 Apps for Windows to use ECB or CBC mode with the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default.
 
 For example, to force EBC mode for Windows clients, set the group policy setting as follows:
 
@@ -100,16 +98,15 @@ To configure settings for Office for Mac clients, see [Set suite-wide preference
 
 As soon as you can, complete the steps in [option 1](#set-up-exchange-server-for-aes256-cbc-support).
 
-
 #### Set up MIP SDK for AES256-CBC support
 
- Update to MIP SDK 1.13, 1.14, or later. MIP SDK 1.14 protects Microsoft 365 files and email with AES256-CBC by default. If you choose to update to MIP SDK 1.13, you'll need to configure a setting to force AES256-CBC. For more information, see the [MIP SDK Version 1.13.158 Critical Update](/information-protection/develop/version-release-history).
+Update to MIP SDK 1.13 or later. If you choose to update to MIP SDK 1.13, you'll need to configure a setting to force AES256-CBC. For more information, see the [MIP SDK Version 1.13.158 Critical Update](/information-protection/develop/version-release-history). Later versions of the MIP SDK will protect Microsoft 365 files and email with AES256-CBC by default.
 
 ## Versions of TLS supported by Microsoft 365
 
 TLS, and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. Microsoft 365 supports TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) is supported by some of the services.
+Some of the services continue to support TLS version 1.3 (TLS 1.3).
 
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
@@ -132,7 +129,7 @@ Since June 2016, Microsoft 365 no longer accepts an SHA-1 certificate for outbou
 
 TLS uses *cipher suites*, collections of encryption algorithms, to establish secure connections. Microsoft 365 supports the cipher suites listed in the following table. The table lists the cipher suites in order of strength, with the strongest cipher suite listed first.
 
-Microsoft 365 responds to a connection request by first attempting to connect using the most secure cipher suite. If the connection doesn't work, Microsoft 365 tries the second most secure cipher suite in the list, and so on. The service continues down the list until the connection is accepted. Likewise, when Microsoft 365 requests a connection, the receiving service chooses whether TLS will be used and which cipher suite to use.
+Microsoft 365 responds to a connection request by first attempting to connect using the most secure cipher suite. If the connection doesn't work, Microsoft 365 tries the second most secure cipher suite in the list, and so on. The service continues down the list until the connection is accepted. Likewise, when Microsoft 365 requests a connection, the receiving service chooses whether to use TLS and which cipher suite to use.
 
 | Cipher suite name | Key exchange algorithm/strength | Forward secrecy | Cipher/strength | Authentication algorithm/strength |
 |:-----|:-----|:-----|:-----|:-----|
@@ -156,7 +153,7 @@ The following cipher suites supported TLS 1.0 and 1.1 protocols until their depr
 | TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_256_CBC_SHA256    | RSA/112  | No  | AES/256 | RSA/112 |
 | TLS 1.0, 1.1, 1.2 | TLS_RSA_WITH_AES_128_CBC_SHA256    | RSA/112  | No  | AES/256 | RSA/112 ||
 
-Certain Office 365 products (including Microsoft Teams) use [Azure Front Door](/azure/frontdoor/front-door-overview) to terminate TLS connections and route network traffic efficiently. At least one of the [cipher suites supported by Azure Front Door over TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) must be enabled to successfully connect to these products. For Windows 10 and above, we recommend enabling one or both of the ECDHE cipher suites for better security. Windows 7, 8, and 8.1 are not compatible with Azure Front Door's ECDHE cipher suites and the DHE cipher suites have been provided for compatibility with those operating systems.
+Certain Office 365 products (including Microsoft Teams) use [Azure Front Door](/azure/frontdoor/front-door-overview) to terminate TLS connections and route network traffic efficiently. At least one of the [cipher suites supported by Azure Front Door over TLS 1.2](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-) must be enabled to successfully connect to these products. For Windows 10 and above, we recommend enabling one or both of the ECDHE cipher suites for better security. Windows 7, 8, and 8.1 aren't compatible with Azure Front Door's ECDHE cipher suites and the DHE cipher suites have been provided for compatibility with those operating systems.
 
 ## Related articles
 
