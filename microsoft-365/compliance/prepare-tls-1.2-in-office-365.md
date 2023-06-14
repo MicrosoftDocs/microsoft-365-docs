@@ -35,7 +35,7 @@ After you upgrade to TLS 1.2, make sure that the cipher suites you're using are 
 
 ## More information
 
-We have already completed deprecation of TLS 1.0 and 1.1.
+We have already completed the deprecation of TLS 1.0 and 1.1.
 
 We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) in order to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
 
