@@ -48,9 +48,9 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
        ![Screenshot of the text box on the Copilot panel.](../media/content-understanding/copilot-text-box.png)
 
-    - In the text box, select **More from Syntex** to find more information about the file.
+<!---    - In the text box, select **More from Syntex** to find more information about the file.
 
-       ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)
+       ![Screenshot of the text box on the Copilot panel with the starter prompt highlighted.](../media/content-understanding/copilot-starter-prompt.png)--->
 
 > [!NOTE]
 > If you want to clear the current session, at the top of the **Copilot** panel, select **More options** (<sup>**...**</sup>), and then select **Clear session**.
