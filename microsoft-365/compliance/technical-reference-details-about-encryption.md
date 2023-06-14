@@ -53,7 +53,7 @@ In July 2023, Microsoft Purview Information Protection will begin to use Advance
 
 Use this table to figure out if you have to take action:
 
-|Client Applications|Service Applications|Action Required?| What do I need to do?
+|Client Applications|Service Applications|Action Required?|What do I need to do?|
 |:-----|:-----|:-----|:-----|
 |Microsoft 365 Apps|Exchange Online, SharePoint Online |No|N/A|
 |Office 2013, 2016, 2019, or 2021|Exchange Online, SharePoint Online| Yes (Optional)| See [Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode](#set-up-office-2013-2016-2019-or-2021-for-aes256-cbc-mode). |
@@ -64,7 +64,7 @@ Use this table to figure out if you have to take action:
 
 #### Set up Office 2013, 2016, 2019, or 2021 for AES256-CBC mode
 
-You'll need to configure Office 2013, 2016, 2019, or 2021 to use AES256-CBC mode using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version XXXX of Microsoft 365 Apps, CBC mode is used by default. Use the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+You'll need to configure Office 2013, 2016, 2019, or 2021 to use AES256-CBC mode using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default. Use the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
 
 For example, to force CBC mode, select the group policy setting as follows:
 
@@ -82,7 +82,7 @@ To move to AES256-CBC mode, complete these steps:
 
 1. Install the hotfix on your Exchange Servers when it becomes available. For the most recent information about ship dates, see the [Microsoft 365 product roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=117576).  
 
-2. If you're using Exchange Server with the Azure Rights Management Connector Service, you'll need to run the GenConnectorConfig.ps1 script on each Exchange server. For more information, see [Configure servers for the Rights Management connector](/azure/information-protection/configure-servers-rms-connector). To download the Azure RMS connector, see the [official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40839)
+1. If you're using Exchange Server with the Azure Rights Management Connector Service, you'll need to run the GenConnectorConfig.ps1 script on each Exchange server. For more information, see [Configure servers for the Rights Management connector](/azure/information-protection/configure-servers-rms-connector). To download the Azure RMS connector, see the [official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40839)
 
 Once your organization has installed the patch across all of your Exchange Servers, open a support case and request these services to be enabled for AES256-CBC publishing.  
 
@@ -90,7 +90,7 @@ Once your organization has installed the patch across all of your Exchange Serve
 
 This option gives you some extra time before you need to patch all of your Exchange servers.
 
-If you're unable to complete the steps in [option 1](#option-1) when the hotfix becomes available, you'll need to deploy group policy or client settings that force Microsoft 365 clients to keep using AES128-ECB mode. Deploy this setting using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version XXXX of Microsoft 365 Apps, CBC mode is used by default. You can configure Office and Microsoft 365 Apps for Windows to use ECB or CBC mode with the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
+If you're unable to complete the steps in [option 1](#option-1) when the hotfix becomes available, you'll need to deploy group policy or client settings that force Microsoft 365 clients to keep using AES128-ECB mode. Deploy this setting using Group Policy, or by using the Cloud Policy service for Microsoft 365. Starting with version 16.0.16327 of Microsoft 365 Apps, CBC mode is used by default. You can configure Office and Microsoft 365 Apps for Windows to use ECB or CBC mode with the `Encryption mode for Information Rights Management (IRM)` setting under `User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings`.
 
 For example, to force EBC mode for Windows clients, set the group policy setting as follows:
 
