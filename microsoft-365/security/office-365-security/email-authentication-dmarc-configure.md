@@ -247,7 +247,7 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Users add safe senders individually by using their email client.
 
-- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to allow messages from the spoofed sender.
+- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) or the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to allow messages from the spoofed sender.
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 

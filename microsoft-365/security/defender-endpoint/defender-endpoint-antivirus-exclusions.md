@@ -68,7 +68,7 @@ If you have a file that you think is wrongly detected as malware (a false positi
 
 Submitting files for analysis helps reduce false positives and false negatives for all customers. To learn more, see the following articles:
 
-- [Submit files for analysis](/microsoft-365/security/intelligence/submission-guide.md) (available to all customers)
+- [Submit files for analysis](/microsoft-365/security/intelligence/submission-guide) (available to all customers)
 - [Submit files using the new unified submissions portal in Defender for Endpoint](admin-submissions-mde.md) (available to customers who have Defender for Endpoint Plan 2 or Microsoft 365 Defender)
 
 ## Suppressing alerts

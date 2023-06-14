@@ -36,18 +36,6 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 
-**In this article:**
-
-[Before you begin](#before-you-begin)\
-[What's the easiest way to cancel?](#whats-the-easiest-way-to-cancel)\
-[How do I cancel my free trial?](#how-do-i-cancel-my-free-trial)\
-[What if I bought my subscription through a partner?](#what-if-i-bought-my-subscription-through-a-partner)\
-[Determine your cancellation options](#determine-your-cancellation-options)\
-[Steps to cancel your subscription](#steps-to-cancel-your-subscription)\
-[Save your data](#save-your-data)\
-[Next steps](#next-steps)\
-[Related content](#related-content)
-
 ## Before you begin
 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
