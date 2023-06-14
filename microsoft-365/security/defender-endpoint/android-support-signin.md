@@ -58,11 +58,11 @@ from Google Play Store and try again.
 
 ## Sign in failed - invalid license
 
-**Sign in failed:** *Invalid license, please contact administrator*
+**Sign in failed:** *Invalid license, contact administrator*
 
 :::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
-**Message:** *Invalid license, please contact administrator*
+**Message:** *Invalid license, contact administrator*
 
 **Cause:**
 
@@ -82,14 +82,14 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 
 - **Xiaomi**
 
-Phishing and harmful web threats that are detected by Defender for Endpoint
+Phishing and harmful web threats detected by Defender for Endpoint
 for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
 :::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
-Xiaomi devices include a new permission model. This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
+Xiaomi devices include a new permission model. This permission model prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
@@ -118,7 +118,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 1. Install MDE app in personal profile. (Sign-in is not required) 
 2. Open company portal and tap on settings. 
 3. Go to Battery Optimization section and tap on the “Turn Off” button and then “Allow” to turn Battery optimization off for Company Portal. 
-4. Again, go to Battery Optimization section, tap on the “Turn On” button. This will now open battery saver section. 
+4. Again, go to Battery Optimization section, tap on the “Turn On” button. The battery saver section opens. 
 5. Find the Defender app and tap on it. 
 6. Tap on “No Restriction”. Go back to the Defender app in work profile and tap on allow button.  
 7. The application should not be uninstalled from personal profile for this to work. 
@@ -131,7 +131,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 
 **Applies to:** banking apps like iMobile (ICICI), PNB one.
 
-**Cause:** Android allows apps in personal profile to check if there is a VPN active on the device, even outside of personal profile. The banking app is checking that and blocking it in case of VPN in work profile only. The banking app does not work with any other VPN product.
+**Cause:** Android allows apps in personal profile to check if there is a VPN active on the device, even outside of personal profile. The banking app is checking that and blocking it in VPN work profiles only. The banking app does not work with any other VPN product.
 
 **Solution:**
 Users will need to disable MDE VPN from settings page. The following steps can be used -
