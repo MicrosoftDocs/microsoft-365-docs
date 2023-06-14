@@ -15,7 +15,7 @@ description: Learn how to report phishing and suspicious emails in Outlook using
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 12/05/2022
+ms.date: 6/9/2023
 ---
 
 # Report phishing and suspicious emails in Outlook for admins
