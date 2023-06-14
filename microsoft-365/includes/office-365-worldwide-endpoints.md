@@ -99,7 +99,7 @@ ID | Category | ER | Addresses | Ports
 125 | Default<BR>Required | No | `*.entrust.net, *.geotrust.com, *.omniroot.com, *.public-trust.com, *.symcb.com, *.symcd.com, *.verisign.com, *.verisign.net, apps.identrust.com, cacerts.digicert.com, cert.int-x3.letsencrypt.org, crl.globalsign.com, crl.globalsign.net, crl.identrust.com, crl3.digicert.com, crl4.digicert.com, isrg.trustid.ocsp.identrust.com, mscrl.microsoft.com, ocsp.digicert.com, ocsp.globalsign.com, ocsp.msocsp.com, ocsp2.globalsign.com, ocspx.digicert.com, secure.globalsign.com, www.digicert.com, www.microsoft.com` | **TCP:** 443, 80
 126 | Default<BR>Optional<BR>**Notes:** Connection to the speech service is required for Office Dictation features. If connectivity is not allowed, Dictation will be disabled. | No | `officespeech.platform.bing.com` | **TCP:** 443
 147 | Default<BR>Required | No | `*.office.com, www.microsoft365.com` | **TCP:** 443, 80
-152 | Default<BR>Optional<BR>**Notes:** These endpoints enables the Office Scripts functionality in Office clients available through the Automate tab.  This feature can also be disabled through the Office 365 Admin portal. | No | `*.microsoftusercontent.com` | **TCP:** 443
+152 | Default<BR>Optional<BR>**Notes:** These endpoints enable the Office Scripts functionality in Office clients available through the Automate tab.  This feature can also be disabled through the Office 365 Admin portal. | No | `*.microsoftusercontent.com` | **TCP:** 443
 153 | Default<BR>Required | No | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com, *.powerautomate.com` | **TCP:** 443
 156 | Default<BR>Required | No | `*.activity.windows.com, activity.windows.com` | **TCP:** 443
 157 | Default<BR>Required | No | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80
