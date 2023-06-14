@@ -52,12 +52,12 @@ To view or configure this setting, you need to be a member of the **Global Admin
 1. In the Teams admin center at <https://admin.teams.microsoft.com>, go to **Messaging policies**. Or, to go directly to the **Messaging policies** page, use <https://admin.teams.microsoft.com/policies/messaging>.
 
 2. On the **Messaging policies** page, verify that the **Manage policies** tab is selected, and do either of the following actions to edit the appropriate policy (the **Global (Org-wide) default** policy or a custom policy):
-   - Click the link in the **Name** column.
-   - Select the policy by clicking anywhere in the row other than the **Name** column, and then click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
+   - Select the link in the **Name** column.
+   - Select the policy by clicking anywhere in the row other than the **Name** column, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In the policy details page that opens, find the **Report a security concern** toggle. By default, it's ![Teams 'Report a security concern' toggle on.](../../media/scc-toggle-on.png) **On**. To turn it off, toggle the setting to ![Teams 'Report a security concern' toggle off.](../../media/scc-toggle-off.png) **Off**.
+3. In the policy details page that opens, find the **Report a security concern** toggle. By default, it's :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**. To turn it off, toggle the setting to :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: **Off**.
 
-4. Click **Save**, and then click **Confirm** in the confirmation dialog that opens.
+4. Select **Save**, and then select **Confirm** in the confirmation dialog that opens.
 
 :::image type="content" source="../../media/submissions-teams-turn-on-off-tac.png" alt-text="Screenshot of the 'Report a security concern' toggle in Messaging policies in the Teams admin center." lightbox="../../media/submissions-teams-turn-on-off-tac.png":::
 
@@ -81,24 +81,24 @@ For more information about user reported message settings in the Defender portal
 
 ## How users report messages in Teams
 
-1. In the Microsoft Teams client, hover over the malicious message without selecting it, and then click **... More options** \> **More actions** \> **Report this message**.
+1. In the Microsoft Teams client, hover over the malicious message without selecting it, and then select **... More options** \> **More actions** \> **Report this message**.
 
-   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-path.png" alt-text="Screenshot of the Click path to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-path.png":::
+   :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-path.png" alt-text="Screenshot of the Select path to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-path.png":::
 
-2. In the **report this message** dialog that opens, verify **Security risk - Spam, phishing, malicious content** is selected, and then click **Report**.
+2. In the **report this message** dialog that opens, verify **Security risk - Spam, phishing, malicious content** is selected, and then select **Report**.
 
    :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
    > If [reporting for Microsoft Purview Communication Compliance is turned off](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), users might not have the dropdown list to select **Security risk - Spam, phishing, malicious content**. Instead, they're shown a confirmation pop-up.
 
-3. In the confirmation dialog that opens, click **Close**.
+3. In the confirmation dialog that opens, select **Close**.
 
 **Notes**:
 
 - The reported message remains visible to the user in the Teams client.
 - Users can report the same message multiple times.
-- The message sender is not notified that the message(s) was reported.
+- The message sender isn't notified that the message(s) was reported.
 - Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email sent to user after admin review** on **User reported** page as described in [Options for Microsoft reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-microsoft-reporting-tools).
 
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ For more information, see [User reported settings](submissions-user-reported-mes
 - Regardless of the **Send reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
 - Regardless of the **Send reported messages to** setting, the alert policy named **Teams message reported by user as a security risk** generates an alert when a user reports a message in Teams by default. For more information, see [Manage alerts](/microsoft-365/compliance/alert-policies#manage-alerts).
 
-  To view the corresponding alert for a user reported message in Teams, go to the **User reported** tab on the **Submission** page, and then double-click the message to open the submission flyout. Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View alert**.
+  To view the corresponding alert for a user reported message in Teams, go to the **User reported** tab on the **Submission** page, and then double-click the message to open the submission flyout. Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View alert**.
 
 ## View and triage user reported messages in Teams
 
@@ -131,26 +131,26 @@ As previously described, information about user reported messages in Teams is av
 
 The availability of Teams messages on the **User reported** tab on the **Submissions** page introduces the following changes to the page:
 
-- Differences in available columns displayed by default (marked with an asterisk (\*)) and when you click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**:
+- Differences in available columns displayed by default (marked with an asterisk (\*)) and when you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**:
   - **Name and type**<sup>\*</sup> is available (previously named **Submission name**<sup>\*</sup>).
   - **Teams message ID** is available.
 
-- Differences in available filters when you click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter**:
+- Differences in available filters when you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**:
   - **Teams message ID** is available.
   - **Message type** is available. Values are **Email** and **Teams message**
 
-- Differences in available values when you click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group**:
-  - **Reason** is not available.
-  - **Phish simulation** is not available.
+- Differences in available values when you select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**:
+  - **Reason** isn't available.
+  - **Phish simulation** isn't available.
 
 - The **Result** column contains the following information for reported Teams messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
   - **Send reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains values derived from the following analysis:
     - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
     - **Payload reputation/detonation**: Up-to-date examination of any URLs and files in the message.
     - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
-  - **Send reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages were not analyzed by Microsoft.
+  - **Send reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages weren't analyzed by Microsoft.
 
-- Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Convert user reported messages in the reporting mailbox into admin submissions](submissions-admin.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
+- Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
 
   But only the following values are available in **Submit to Microsoft for analysis** for reported Teams messages:
 
