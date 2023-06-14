@@ -1310,6 +1310,8 @@
          "redirect_url":"/microsoft-365/admin/get-help-support",
          "redirect_document_id":false
       },
+
+
       {
         "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
         "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
