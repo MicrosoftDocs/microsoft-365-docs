@@ -70,7 +70,7 @@ The contextual summary experience, where you indicate whether a matched item is 
 
 ### Using Content Explorer
 
-This example shows you how to use the **Contextual Summary** tab to give feedback. <!-- Can't fully verify procedure b/c I can't get Content Explorer to display any data in this view -->
+This example shows you how to use the **Contextual Summary** tab to give feedback. <!-- Can't fully verify procedure b/c I can't get Content Explorer to display any data in this view on ediscosdf or on ocg1-->
 
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
