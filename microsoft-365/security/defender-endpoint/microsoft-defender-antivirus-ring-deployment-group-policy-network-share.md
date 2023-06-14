@@ -66,9 +66,9 @@ https://github.com/microsoft/defender-updatecontrols/blob/main/README.md
 
 ## Setting up the pilot environment 
 
-:::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
+This section describes the process for setting up the pilot UAT / Test / QA environment. On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
-This section describes the process for setting up the pilot UAT / Test / QA environment. On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have:
+:::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
 
 ### Create a UNC share for security intelligence and platform updates
 

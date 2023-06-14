@@ -47,9 +47,9 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 ## Setting up the pilot environment 
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png":::
-
 This section describes the process for setting up the pilot UAT / Test / QA environment.
+
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png" alt-text="Shows an example deployment schedule." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-schedule.png":::
 
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have:
 

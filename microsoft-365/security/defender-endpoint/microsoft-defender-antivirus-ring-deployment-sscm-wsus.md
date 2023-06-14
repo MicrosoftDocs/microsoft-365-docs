@@ -45,12 +45,11 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png":::
-
-
 ## Setting up the pilot environment 
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
+
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png":::
 
 On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have.
 

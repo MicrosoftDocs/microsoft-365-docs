@@ -45,8 +45,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example deployment schedule for Group Policy with WSUS deployments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
-
 ## Before you begin
 
 This article assumes that you have experience with Windows Server Update Services (WSUS) and/or already have WSUS installed. If you aren't already familiar with WSUS, see the following articles for important configuration details:
@@ -55,6 +53,10 @@ This article assumes that you have experience with Windows Server Update Service
 - [Configure Windows Server Update Services (WSUS) in Analytics Platform System][/sql/analytics-platform-system/configure-windows-server-update-services-wsus.md] - Analytics Platform System
 
 ## Setting up the production environment
+
+This section provides information about setting up the production environment using Group Policy and Windows Server Update Services (WSUS).
+
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 1 On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
 

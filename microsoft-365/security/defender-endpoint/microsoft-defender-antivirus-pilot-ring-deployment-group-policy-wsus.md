@@ -45,8 +45,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 >
 > For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example deployment schedule for Group Policy with WSUS deployments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
-
 ### Resources
 
 The following resources provide information for using and managing Windows Server Update Services (WSUS).
@@ -56,6 +54,8 @@ The following resources provide information for using and managing Windows Serve
 ## Setting up the pilot environment
 
 This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Services (WSUS).
+
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
