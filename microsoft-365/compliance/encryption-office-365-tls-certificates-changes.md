@@ -49,7 +49,7 @@ All certificate information in this article was previously provided in [Microsof
 
 ## When will this change happen?
 
-Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.
+Services began transitioning to the new Root CAs in January 2022.
 
 ## What is changing?
 
