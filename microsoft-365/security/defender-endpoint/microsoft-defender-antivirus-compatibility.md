@@ -4,7 +4,7 @@ description: Learn about Microsoft Defender Antivirus with other security produc
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 06/07/2023
+ms.date: 06/14/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
