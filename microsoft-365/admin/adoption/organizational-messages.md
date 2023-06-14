@@ -9,7 +9,7 @@ ms.date: 11/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - Tier2

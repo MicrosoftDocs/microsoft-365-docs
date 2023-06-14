@@ -2,8 +2,8 @@
 title: Configure automated investigation and response capabilities in Microsoft 365 Defender
 description: Configure automated investigation and response with self-healing in Microsoft 365 Defender
 search.appverid: MET150
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 audience: ITPro
 ms.topic: how-to

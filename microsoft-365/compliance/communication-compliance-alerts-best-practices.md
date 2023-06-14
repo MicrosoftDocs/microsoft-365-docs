@@ -52,10 +52,10 @@ When you first start using trainable classifiers, you might not get enough match
 |Racy images|Medium|
 |Gory images|Medium|
 |Gifts & entertainment|Medium|
-|Money laundering (preview)|Medium|
-|Regulatory collusion (preview)|Medium|
-|Stock manipulation (preview)|Medium|
-|Unauthorized disclosure (preview)|High|
+|Money laundering|Medium|
+|Regulatory collusion|Medium|
+|Stock manipulation|Medium|
+|Unauthorized disclosure|High|
 
 Consider using the Adult images classifier instead of the Racy images classifier since the Adult images classifier detects a more explicit image. You can use the Content explorer page to help you understand the volume that you can expect for your organization for each of the trainable classifiers.
 

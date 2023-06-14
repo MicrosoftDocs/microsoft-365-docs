@@ -14,6 +14,7 @@ ms.localizationpriority:   medium
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - tier1
 f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
@@ -55,7 +56,7 @@ Run through this list of tasks and questions to protect existing systems from at
 
 * If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
 * If you're experiencing or expect an imminent and active ransomware deployment:
-  * [Suspend privileged and local accounts](/investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
+  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
   * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.

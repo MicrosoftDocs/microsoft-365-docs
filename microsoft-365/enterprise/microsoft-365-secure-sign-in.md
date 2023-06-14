@@ -9,7 +9,7 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - M365-security-compliance

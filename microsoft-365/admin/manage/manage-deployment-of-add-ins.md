@@ -3,7 +3,7 @@ title: "Deploy add-ins in the admin center"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -83,7 +83,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick appears when the add-in is deployed. Follow the on-page instructions to test the add-in.
 
     > [!NOTE]
-    > Users might need to relaunch Office to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
+    > Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
 
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 
@@ -123,7 +123,7 @@ When updating a manifest, the typical changes are to an add-in's icon and text. 
   
 Updates for add-ins happen as follows:
   
-- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
 
     > [!NOTE]
     > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.

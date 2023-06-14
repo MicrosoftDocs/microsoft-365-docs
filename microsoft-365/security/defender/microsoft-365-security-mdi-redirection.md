@@ -18,7 +18,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security
-  - tier2
+  - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 04/28/2022
@@ -38,6 +38,11 @@ This guide explains how to route accounts to Microsoft 365 Defender by enabling 
 ## What to expect
 
 Starting January 31, 2023, the portal redirection setting will be automatically enabled for each tenant. Once the redirection setting is enabled, any requests to the standalone Defender for Identity portal (`portal.atp.azure.com`) will be redirected to Microsoft 365 Defender (<https://security.microsoft.com>) along with any direct links to its functionality. Accounts accessing the former Microsoft Defender for Identity portal will be automatically routed to the Microsoft 365 Defender portal.
+
+> [!IMPORTANT]
+> As of June 30th, customers still using the classic Microsoft Defender for Identity portal will be automatically redirected to Microsoft 365 Defender, with no option to revert back to the classic portal.
+> 
+> For more information, see [Microsoft Defender for Identity in Microsoft 365 Defender.](microsoft-365-security-center-mdi.md).
 
 ## When does this take effect?
 
@@ -78,6 +83,9 @@ To revert to the former Microsoft Defender for Identity portal:
 This setting can be enabled again at any time.
 
 Once disabled, accounts will no longer be routed to security.microsoft.com.
+
+> [!NOTE]
+> For tenants created after March 15, 2023, the option to disable the setting toggle is not available.
 
 ## Related information
 

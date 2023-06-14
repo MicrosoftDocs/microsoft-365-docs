@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,10 +31,10 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 ## Microsoft 365 services that support auditing
 
-Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features that are supported by the unified audit log.
+Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services, apps, and features that are supported by the unified audit log.
 
 |Microsoft 365 service or feature|Record types|
-|---|---|
+|:-------------------------------|:-----------|
 |Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
 |Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
 |Communication compliance|ComplianceSupervisionExchange|
@@ -43,31 +43,34 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 |Dynamics 365|CRM|
 |eDiscovery (Standard + Premium)|Discovery, AeD|
+|Encrypted message portal|OMEPortal|
 |Exact Data Match|MipExactDataMatch|
 |Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated|
 |Forms|MicrosoftForms|
 |Information barriers|InformationBarrierPolicyApplication|
 |Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
+|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
 |Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
-|Microsoft Teams|MicrosoftTeams|
 |Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
+|Microsoft Project for the web|ProjectAccessed, ProjectCreated, ProjectDeleted, ProjectTenantSettingsUpdated, ProjectUpdated, RoadmapAccessed,RoadmapCreated, RoadmapDeleted, RoadmapItemAccessed,RoadmapItemCreated,RoadmapItemDeleted, RoadmapItemUpdated, RoadmapTenantSettingsUpdated, RoadmapUpdated, TaskAccessed, TaskCreated,TaskDeleted, TaskUpdated|
+|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+|Microsoft Teams|MicrosoftTeams|
+|Microsoft To Do|MicrosoftToDo, MicrosoftToDoAudit|
 |MyAnalytics|MyAnalyticsSettings|
 |OneDrive for Business|OneDrive|
 |Power Apps|PowerAppsApp, PowerAppsPlan|
 |Power Automate|MicrosoftFlow|
 |Power BI|PowerBIAudit|
 |Quarantine|Quarantine|
-|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 |Sensitive information types|DlpSensitiveInformationType|
 |Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
-|Encrypted message portal|OMEPortal|
 |SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation|
 |Stream|MicrosoftStream|
-|Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
-|Viva Goals|Viva Goals|
-|Workplace Analytics|WorkplaceAnalytics|
-|Yammer|Yammer|
 |SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
+|Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+|Viva Goals|VivaGoals|
+|Viva Insights|VivaInsights|
+|Yammer|Yammer|
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
 
@@ -133,7 +136,7 @@ Be sure to review the following items before you start searching the audit log.
 
 - Microsoft doesn't guarantee a specific time after an event occurs for the corresponding audit record to be returned in the results of an audit log search. For core services (such as Exchange, SharePoint, OneDrive, and Teams), audit record availability is typically 60 to 90 minutes after an event occurs. For other services, audit record availability may be longer. However, some issues that are unavoidable (such as a server outage) may occur outside of the audit service that delays the availability of audit records. For this reason, Microsoft doesn't commit to a specific time.
 
-- Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
+- To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
 
 ## Search the audit log
 

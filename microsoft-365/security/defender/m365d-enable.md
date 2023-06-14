@@ -19,7 +19,7 @@ ms.collection:
     - m365-security
     - m365solution-getstarted
     - highpri
-    - tier1
+    - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/11/2023
+ms.date: 05/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,97 +31,45 @@ This article discusses the steps necessary to set up eDiscovery (Standard). This
 
 ## Step 1: Verify and assign appropriate licenses
 
-Licensing for eDiscovery (Standard) requires the appropriate organization subscription and per-user licensing.
-
-- **Organization subscription:** To access eDiscovery (Standard) in the Microsoft Purview compliance portal and use the hold and export features, your organization must have an Exchange online Plan 2 or Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
-
-- **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
-
-  -  Exchange online Plan 2 license
-
-   OR
-
-  - A Microsoft 365 E3 or Office 365 E3 license or higher
-
-   OR
-
-  - Microsoft 365 Business Premium (Exchange only) license
+Microsoft Purview eDiscovery capabilities are included with Microsoft Purview. The licensing requirements may vary even within capabilities, depending on configuration options. For licensing requirements, guidance, and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery).
   
+For information about how to assign licenses, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
-   OR
+## Step 2: Verify that required eDiscovery apps are enabled
 
-  - Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
+eDiscovery (Standard) requires the following Enterprise apps to be enabled in your Microsoft 365 or Office 365 organization. If these apps aren't enabled, you won't be able to access eDiscovery (Standard) view, filter, and search features.
 
-   OR
+|**App**|**App ID**|
+|:------|:---------|
+| ComplianceWorkbenchApp | 92876b03-76a3-4da8-ad6a-0511ffdf8647 |
+| MicrosoftPurviewEDiscovery | b26e684c-5068-4120-a679-64a5d2c909d9 |
+| Microsoft Exchange Online Protection | 00000007-0000-0ff1-ce00-000000000000 |
+| Office365Zoom | 0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7 |
 
-  - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on license  
+For more information about how to view and enable apps, see:
 
-  AND
+- [Quickstart: View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal)
+- [Quickstart: Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal)
 
-  - Office 365 E1 license with a SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
-  
-  For information about how to assign licenses, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
-
-For information and guidance on security and compliance:
-
-- Download and see the eDiscovery and auditing section in the [Microsoft 365 Comparison table](https://aka.ms/M365EnterprisePlans).
-
-- See the [Microsoft 365 guidance for security & compliance - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
-## Step 2: Assign eDiscovery permissions
+## Step 3: Assign eDiscovery permissions
 
 To access eDiscovery (Standard) or be added as a member of a eDiscovery (Standard) case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the compliance portal. Members of this role group can create and manage eDiscovery (Standard) cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a eDiscovery (Standard) case.
 
-Complete the following steps to add users to the eDiscovery Manager role group:
+For step-by-step guidance to configure permissions for eDiscovery, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 
-1. Go to the compliance portal and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
-
-2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
-
-3. On the eDiscovery Manager flyout page, select **Edit** next to the **eDiscovery Manager** section.
-
-4. On the **Choose eDiscovery Manager** page in the edit role group wizard, select **Choose Discovery Manager**.
-
-5. Select **Add** then select the checkbox for all users you want to add to the role group.
-
-6. Select **Add** to add the selected users, and then select **Done**.
-
-7. Select **Save** to add the users to the role group, and then select **Close** to complete the step.
-
-### More information about the eDiscovery Manager role group
-
-There are two subgroups in the eDiscovery Manager role group. The difference between these subgroups is based on scope.
-
-- **eDiscovery Manager**: Can view and manage the eDiscovery (Standard) cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the eDiscovery (Standard) page in the compliance center. In general, most people in your organization can be added to the eDiscovery Manager subgroup.
-
-- **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
-
-  - View all cases that are listed on the eDiscovery (Standard) page.
-  - Manage any case in the organization after they add themselves as a member of the case.
-  - Access and export case data for any case in the organization.
-  - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
-
-  Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
-
-For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
-
-## Step 3: Create a eDiscovery (Standard) case
+## Step 4: Create a eDiscovery (Standard) case
 
 The next step is to create a case and start using eDiscovery (Standard). Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create eDiscovery (Standard) cases.
-
 2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
-
 3. On the **eDiscovery (Standard)** page, select **Create a case**.
-
 4. On the **New case** flyout page, give the case a name (required) and then type an optional description. The case name must be unique in your organization.
-
 5. Select **Save** to create the case.
 
-   The new case is created and displayed on the eDiscovery (Standard) page. You may have to select **Refresh** to display the new case.
+The new case is created and displayed on the eDiscovery (Standard) page. You may have to select **Refresh** to display the new case.
 
-## Step 4 (optional): Add members to a eDiscovery (Standard) case
+## Step 5 (optional): Add members to a eDiscovery (Standard) case
 
 If you create a case in Step 3 and you're the only person who will use the case, then you don't have to perform this step. You can start using the case to create eDiscovery holds, search for content, and export search results. Perform this step if you want to give other users (or roles group) access to the case.
 
@@ -131,7 +79,7 @@ If you create a case in Step 3 and you're the only person who will use the case,
 
 3. On the **Access & permissions** flyout page, under **Members**, select **Add** to add members to the case.
 
-    You can also choose to add role groups as members of a case. Under **Role groups**, select **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
+    You can also choose to add role groups as members of a case. Under **Role groups**, select **Add**. You can only assign the role groups that you're a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
 
 4. In the list of people or role groups that can be added as members of the case, select to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can be added as members, use the **Search** box to search for a specific person or role group in the list.
   
@@ -141,7 +89,7 @@ If you create a case in Step 3 and you're the only person who will use the case,
 >
 >- If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
 >
->- As previously explained, only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
+>- Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 >
 
 ## Explore the eDiscovery (Standard) workflow

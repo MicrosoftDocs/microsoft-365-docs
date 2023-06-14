@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/12/2020
+ms.date: 04/06/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -160,7 +160,7 @@ To work with the DLP alert management dashboard:
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
 
-### Other matched conditions (preview)
+### Other matched conditions
 
 Microsoft Purview supports showing matched conditions in a DLP event to reveal the exact cause for a flagged DLP policy. This information will show up in:
 
