@@ -93,7 +93,7 @@ There are multiple ways to find the Message ID of the email that you want to rev
 
 #### To identify the Message ID of the email you want to revoke by using Message Encryption reports in the Microsoft 365 Defender portal
 
-1. In the Microsoft 365 Defender portal, navigate to the **Message encryption report**. For information on this report, see [View email security reports in the Security &amp; Compliance Center](../security/office-365-security/reports-email-security.md).
+1. In the Microsoft 365 Defender portal, navigate to the **Message encryption report**. For information about this report, see [View email security reports in the Security &amp; Compliance Center](../security/office-365-security/reports-email-security.md).
 
 2. Choose the **View details** table and identify the message that you want to revoke.
 
