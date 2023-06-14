@@ -20,7 +20,7 @@ description: Learn how to use Microsoft 365 Copilot to easier find information i
 # Overview of Copilot for Microsoft Syntex (Preview)
 
 > [!NOTE]
-> The feature is currently in limited preview and subject to change.
+> This feature is currently in limited preview and subject to change.
 
 Microsoft Syntex is now integrated with Microsoft 365 Copilot to bring the power of assistive AI into your organization's intelligent document processing.
 
