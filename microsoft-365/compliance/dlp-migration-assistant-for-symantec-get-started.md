@@ -31,13 +31,13 @@ If you're using the Microsoft Purview Data Loss Prevention migration assistant f
 > [!TIP]
 > If the application won't launch after completing all the steps in this article, refer to [Troubleshooting](dlp-migration-assistant-for-symantec-use.md#troubleshooting).
 
-### 1. Have appropriate Microsoft 365 subscription
+### 1. Have an appropriate Microsoft 365 subscription
 
 You'll need the appropriate DLP licensing for the locations that the migrated policies are scoped to. Check [here](https://aka.ms/dlplicensing).
 
 ### 2. Have appropriate user role and privileges
 
-You need to have a *Global Administrator or Compliance Administrator* role to be able to use the migration assistant.
+You need to have either the *Global Administrator or Compliance Administrator* role to be able to use the migration assistant.
 
 ### 3. Check your Operating System
 

@@ -24,7 +24,7 @@ description: "The migration assistant is a Windows based desktop application tha
 
 This article helps you to learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec.
 
-The migration assistant is a Windows-based desktop application that will migrate your Symantec data loss prevention (DLP) policies to Microsoft Purview Data Loss Prevention. This takes you through the five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can use the migration assistant to create DLP policies in test mode. Policies in test mode won't impact your live data or impact your existing business processes.
+The migration assistant is a Windows-based desktop application for migrating your Symantec data loss prevention (DLP) policies to Microsoft Purview Data Loss Prevention. This article takes you through the five-step migration process. The migration assistant accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can use the migration assistant to create DLP policies in test mode. Policies in test mode won't affect your live data or impact your existing business processes.
 
 ## What can the migration assistant help with?
 
@@ -33,7 +33,7 @@ The migration assistant helps with some of the tasks involved in a Data Loss Pre
 - In a manual migration scenario, you need to perform a feasibility analysis between the source and target DLP platforms, map the features, migrate policies manually, and test and tweak DLP policies. With the migration assistant, your migrated DLP policies can be up and running within minutes of starting the migration assistant process.
 - With migration assistant, you can quickly scale up your migration project. You can start by moving a single policy manually to multiple policies at the same time.
 - The migration assistant automatically identifies sensitive information types (SITs) or Data Identifiers in source policies and creates custom SITs in your Microsoft tenant. It also moves all of your custom regular expressions and keywords in a few clicks.
-- The migration assistant detects which conditions, exclusions and actions are currently being used in source policies and automatically creates new rules with the same conditions, and actions.
+- The migration assistant detects which conditions, exclusions, and actions are currently used in source policies and automatically creates new rules with the same conditions and actions.
 - The migration assistant provides you with a detailed migration report that includes the migration status and recommendations at the policy level.
 - The migration assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
 
@@ -43,7 +43,7 @@ Here's how the migration process works:
 
 :::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Microsoft Purview Data Loss Prevention migration assistant for Symantec.":::
 
-Each time the migration assistant runs, it runs the following steps:
+Each time the migration assistant runs, it performs the following steps:
 
 - **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
 - **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
