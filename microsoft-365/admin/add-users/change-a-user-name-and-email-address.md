@@ -165,7 +165,7 @@ This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is 
 To fix this, log in to the [Microsoft Graph Powershell](/powershell/microsoftgraph/overview) with your Microsoft 365 administrator credentials and use the following syntax:
 
 ```powershell
-Update-MgUser -UserId anne.wallace@contoso.onmicrosoft.com -UserPrincipalName anne.jones@contoso.com
+Update-MgUser -UserId anne.wallace@contoso.com -UserPrincipalName anne.jones@contoso.com
 ```
 
 > [!TIP]
