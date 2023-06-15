@@ -149,7 +149,7 @@ To protect your Teams chats and channels, go to the Microsoft 365 Defender porta
 
 :::image type="content" source="../../media/zap-teams-policy-mdo.png" alt-text="Image showing policy settings for Microsoft Teams." lightbox="../../media/zap-teams-policy-mdo.png":::
 
-Admins should have the ability to configure quarantine policy options for malware and high-confidence phishing. The following quarantine options are available for this release of the product:  
+Admins can configure quarantine policy options for malware and high-confidence phishing. The following quarantine options are available for this release of the product.  
 
 - Malware quarantine policy: 
 
@@ -163,7 +163,7 @@ Admins should have the ability to configure quarantine policy options for malwar
 
 Select the **Malware** drop-down and the **High-confidence phishing** drop-down to select a policy. If no policy is configured, the default for malware and high-confidence phishing should be **AdminOnlyAccessPolicy**. 
 
-Admins should have the ability to configure exceptions to the ZAP policy.  
+You can also configure exceptions to the ZAP policy.  
 
 - User exceptions:  
 
@@ -185,13 +185,19 @@ Admins should have the ability to configure exceptions to the ZAP policy.
 
   - Once you save the policy, the domain exception list is exempt from the policy setting.  
 
-#### Create quarantine policies in PowerShell
+#### Create ZAP quarantine policies in PowerShell
 
-If you'd rather use PowerShell to create quarantine policies, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the `TeamsProtectionPolicy` cmdlet.
+You can also use PowerShell to create quarantine policies. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the `TeamsProtectionPolicy` cmdlet.
 
+All parameters and values are defined in the following table.
 
-
-
+|Parameter|Desciption|Value|
+|---|---|---|
+|MalwareQuarantinePolicy|The quarantine policy to be applied for malware.|`AdminOnlyAccessPolicy`|
+|HighConfidencePhishQuarantinePolicy|The quarantine policy applied for High-confidence phish verdicts.|`AdminOnlyAccessPolicy`|
+|ExemptUsers|List of users exempt from ZAP.|`ExceptIfSentTo`|
+|ExemptGroups|List of groups exempt from ZAP.|`ExceptIfSentToMemberOf`|
+|ExemptDomains|List of domains exempt frpm ZAP.|`ExceptIfRecipientDomainIs`|
 
 ## Zero-hour auto purge (ZAP) FAQ
 
