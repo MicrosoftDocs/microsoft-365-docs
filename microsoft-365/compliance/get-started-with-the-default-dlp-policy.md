@@ -48,7 +48,7 @@ To help protect the sensitive information, the default DLP policy:
     
 - Shows a policy tip and sends an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).
     
-- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](audit-log-search.md) (where **Activity** = **DLP**) to see this information.
+- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [audit log data](audit-log-search.md) (where **Activity** = **DLP**) to see this information.
     
 To quickly refine the default DLP policy, you can choose to have it:
   
