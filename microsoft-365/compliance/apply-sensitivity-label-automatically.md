@@ -55,7 +55,7 @@ There are two different methods for automatically applying a sensitivity label t
     
     Specific to auto-labeling for SharePoint and OneDrive:
     
-    - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
+    - <a name="file-extensions"></a>Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files can't be auto-labeled if they're part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
@@ -281,7 +281,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
         - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types-activities). This restriction applies to all custom sensitive information types and any new built-in information types.
         - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
-    - If you plan to use document properties as a condition (**Document property is**), this option uses SharePoint managed properties. The [preparation for DLP policies](protect-documents-that-have-fci-or-other-properties.md#before-you-create-the-dlp-policy) equally applies for when you use this condition with auto-labeling policies.
+    - <a name="document-properties"></a>If you plan to use document properties as a condition (**Document property is**), this option uses SharePoint managed properties. The [preparation for DLP policies](protect-documents-that-have-fci-or-other-properties.md#before-you-create-the-dlp-policy) equally applies for when you use this condition with auto-labeling policies.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
@@ -361,9 +361,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
     - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
     - Other conditions (in preview) that you can select:
-        - File extension is
+        - [File extension is](#file-extensions)
         - Document name contains words or phrases
-        - Document property is
+        - [Document property is](#document-properties)
         - Document size equals or is greater than
 
     If your location is **Exchange** and you selected **Advanced rules**, there are additional conditions that you can select:
