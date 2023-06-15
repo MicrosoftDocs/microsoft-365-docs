@@ -49,7 +49,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Now rolling out, Outlook for Android and Outlook for iOS support a setting for mandatory labeling that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
 - **In preview**: Now rolling out, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
-- **In preview**: The following new conditions are rolling out in preview for auto-labeling policies. Just the final new condition listed requires an advanced rule, whereas the others are available in common rules:
+- **In preview**: The following new conditions are rolling out in preview for auto-labeling policies. Just the final new condition listed requires an advanced rule, and is applicable to OneDrive and SharePoint only. The othere new conditions are available in common rules:
     - File extension is
     - Document name contains words or phrases
     - Document property is
@@ -57,7 +57,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - Attachment name contains words or phrases
     - Attachment property is
     - Attachment size equals or is greater than
-    - Document created by (for OneDrive and SharePoint only)
+    - Document created by
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
