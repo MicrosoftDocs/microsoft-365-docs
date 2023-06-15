@@ -281,7 +281,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
         - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types-activities). This restriction applies to all custom sensitive information types and any new built-in information types.
         - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
-    - If plan to use the condition **Document property is**, this option uses SharePoint managed properties. The [preparation for DLP policies](protect-documents-that-have-fci-or-other-properties.md#before-you-create-the-dlp-policy) equally applies for when you use this condition with auto-labeling policies.
+    - If you plan to use the condition **Document property is**, this option uses SharePoint managed properties. The [preparation for DLP policies](protect-documents-that-have-fci-or-other-properties.md#before-you-create-the-dlp-policy) equally applies for when you use this condition with auto-labeling policies.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
