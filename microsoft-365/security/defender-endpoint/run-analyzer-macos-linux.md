@@ -275,7 +275,7 @@ Syntax that can be used to skip the faulty rules in auditd. This option will con
 
 ```console
 -h, --help                                  show this help message and exit
--e <true/false>, --enable <true/false>      enable/disable the rate limit with default values
+-e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules
 ```
 
 Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
