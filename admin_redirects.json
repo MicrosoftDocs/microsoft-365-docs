@@ -1271,11 +1271,6 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"microsoft-365/admin/email/email-collaboration.md",
-         "redirect_url":"/microsoft-365/admin/index",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"microsoft-365/admin/add-users/resend-user-password.md",
          "redirect_url":"/microsoft-365/admin/add-users/reset-passwords",
          "redirect_document_id":false
@@ -1309,18 +1304,6 @@
          "source_path":"microsoft-365/admin/admin-overview/what-is-help.md",
          "redirect_url":"/microsoft-365/admin/get-help-support",
          "redirect_document_id":false
-      },
-
-
-      {
-        "source_path": "microsoft-365/commerce/billing-and-payments/psd2.md",
-        "redirect_url": "https://support.microsoft.com/account-billing/payment-services-directive-2-and-strong-customer-authentication-3527fa95-9c6a-5f6f-d8e6-f27f33aba50e",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
-        "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
-        "redirect_document_id": true  
       },
       {
          "source_path":"microsoft-365/admin/misc/power-bi-in-your-organization.md",
@@ -1533,21 +1516,6 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"microsoft-365/commerce/subscriptions/switch-to-a-different-plan.md",
-         "redirect_url":"/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/commerce/subscriptions/switch-plans-manually.md",
-         "redirect_url":"/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/commerce/subscriptions/why-can-t-i-switch-plans.md",
-         "redirect_url":"/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"microsoft-365/admin/dns/create-dns-records-at-crazy-domains.md",
          "redirect_url":"/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
          "redirect_document_id":false
@@ -1713,58 +1681,8 @@
          "redirect_document_id":true
       },
       {
-         "source_path":"microsoft-365/admin/activity-reports/index.md",
-         "redirect_url":"activity-reports",
-         "redirect_document_id":true
-      },
-      {
-         "source_path":"microsoft-365/admin/manage/manage.md",
-         "redirect_url":"index",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/email/email.md",
-         "redirect_url":"index",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/admin-overview/index.md",
-         "redirect_url":"admin-overview",
-         "redirect_document_id":true
-      },
-      {
-         "source_path":"microsoft-365/admin/create-groups/index.md",
-         "redirect_url":"create-groups",
-         "redirect_document_id":true
-      },
-      {
-         "source_path":"microsoft-365/admin/services-in-china/index.md",
-         "redirect_url":"services-in-china",
-         "redirect_document_id":true
-      },
-      {
-         "source_path":"microsoft-365/admin/usage-analytics/index.md",
-         "redirect_url":"usage-analytics",
-         "redirect_document_id":true
-      },
-      {
-         "source_path":"microsoft-365/admin/misc/index.md",
-         "redirect_url":"misc",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/admin-home.md",
-         "redirect_url":"index",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"microsoft-365/security-and-compliance/index.md",
          "redirect_url":"/microsoft-365/business-premium/secure-your-business-data",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/dns/index.md",
-         "redirect_url":"../setup/add-domain",
          "redirect_document_id":false
       },
       {
