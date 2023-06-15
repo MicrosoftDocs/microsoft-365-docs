@@ -54,10 +54,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - Document name contains words or phrases
     - Document property is
     - Document size equals or is greater than
-    - **Document created by (for OneDrive and SharePoint only)**
     - Attachment name contains words or phrases
     - Attachment property is
     - Attachment size equals or is greater than
+    - Document created by (for OneDrive and SharePoint only)
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
