@@ -400,7 +400,7 @@ This syntax applies to all http/https websites. Here are some examples:
 
 ### Business justification in policy tips
 
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
+You can control how users interact with the business justification option in [DLP policy tip notifications](use-notifications-and-policy-tips.md#add-user-notifications-to-a-dlp-policy). This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
 - **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
 - **Only show default options**: Users are limited to selecting from a list of built-in justifications.
@@ -452,7 +452,7 @@ Let's look at an example. Say you want your DLP policy to block printing of cont
     - **IP range**
     - **Print to file** - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
     - **Universal print deployed on a printer** -  For more information on universal printers, see [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started).
-    - **Corporate printer** - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
+    - **Corporate printer** - is a print queue shared through on-premises Windows print server in your domain. Its path might look like this:  \\print-server\contoso.com\legal_printer_001
     - **Print to local** -  Any printer connecting through Microsoft print port but not any of above types. For example: print through remote desktop or redirect printer.
 
 2. Assign each printer in the group a **Display name**. These names appear only in the Microsoft Purview console.
@@ -476,7 +476,7 @@ Let's look at an example. Say you want your DLP policy to block printing of cont
 1. Select the parameters and provide the values to unambiguously identify the specific printer.
 1. Select **Add**.
 1. Add other printers as needed.
-1. Select **Close**.
+1. Select **Save** and then **Close**.
 
 ## Removable storage device groups
 
@@ -522,7 +522,7 @@ You can assign these policy actions to the group in a DLP policy:
 6. Select the parameters and provide the values to unambiguously identify the specific device.
 7. Select **Add**.
 8. Add other devices to the group as needed.
-9. Select **Close**.
+9. Select **Save** and then **Close**.
 
 The most common use case for creating removable storage groups is to use them to specify which removable storage devices users can copy files to. Generally, copying is only allowed for devices in a designated **Backup** group.
 
@@ -569,7 +569,7 @@ Once you have defined a network share group, you can use it in all of your DLP p
 1. Add the file path to the share.
 1. Select **Add**.
 1. Add other share paths to the group as needed.
-1. Select **Close**.
+1. Select **Save** and then **Close**.
 
 ## VPN settings
 
