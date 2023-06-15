@@ -157,33 +157,33 @@ You have flexibility in how you create and configure your DLP policies. You can 
 
 3. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
 
-location | include/exclude by|
-|---------|---------|
-|Exchange email| distribution groups|
-|SharePoint sites |sites |
-|OneDrive accounts |accounts or distribution groups |
-|Teams chat and channel messages |account or distribution group |
-|Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
-|Microsoft Cloud App Security |instance |
-|On-premises repositories| repository file path|
-|Power BI (preview)| workspaces|
+   |location | include/exclude by|
+   |---------|---------|
+   |Exchange email| distribution groups|
+   |SharePoint sites |sites |
+   |OneDrive accounts |accounts or distribution groups |
+   |Teams chat and channel messages |account or distribution group |
+   |Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
+   |Microsoft Cloud App Security |instance |
+   |On-premises repositories| repository file path|
+   |Power BI (preview)| workspaces|
 
 4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept preconfigured conditions or define custom conditions. Some examples are:
 
-- item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
-- item has a specified sensitivity label
-- item with sensitive information is shared either internally or externally
+   - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
+   - item has a specified sensitivity label
+   - item with sensitive information is shared either internally or externally
 
 5. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
 
-- SharePoint/Exchange/OneDrive: Block people who are outside your organization from accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
-- Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
-- Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
-- On-premises file shares: move the file from where it's stored to a quarantine folder
+   - SharePoint/Exchange/OneDrive: Block people who are outside your organization from accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
+   - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
+   - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+   - Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
+   - On-premises file shares: move the file from where it's stored to a quarantine folder
 
-> [!NOTE]
-> The conditions and the actions to take are defined in an object called a Rule.
+   > [!NOTE]
+   > The conditions and the actions to take are defined in an object called a Rule.
 
 ## Create and deploy a DLP policy
 
@@ -203,6 +203,20 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
+### High volume of sensitive info shared or save externally
+
+*This feature is in preview*
+
+Microsoft 365 provides you with visibility into risky user activities outside of DLP policies. The **High volume of sensitive info shared or saved externally (preview)** card on the DLP homepage shows a count of sensitive items that users have:
+
+- uploaded to the suspicious domains
+- accessed with a suspicious application
+- copied to a removable drive
+
+Microsoft 365 scans the audit logs for risky activities and runs them through a correlation engine to find activities that are occurring at a high volume.  No DLP policies are required. 
+
+To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
+
 ### DLP Alerts Dashboard
 
 When DLP takes an action on a sensitive item, you can be notified of that action via a configurable alert. Rather than having these alerts pile up in a mailbox for you to sift through, the compliance portal makes them available in the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). Use the DLP Alerts dashboard to configure alerts, review them, triage them and track resolution of DLP Alerts. Here's an example of alerts generated by policy matches and activities from Windows 10 devices.
@@ -215,19 +229,39 @@ You can also view details of the associated event with rich metadata in the same
 > [!div class="mx-imgBorder"]
 > ![event info.](../media/Event-info-1.png)
 
-### Reports
-
-The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) show broad trends over time and give specific insights into:
-
-- **DLP Policy Matches** over time and filter by date range, location, policy, or action
-- **DLP incident matches** also shows matches over time, but pivots on the items rather than the policy rules.
-- **DLP false positives and overrides** shows the count of false positives and, if configured, user-overrides along with the user justification.
-
-### DLP Activity Explorer
+### DLP Activity Explorer and reports
 
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
+<!--![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)-->
+
+You can view the last 30 days of DLP information in [Activity Axplorer](data-classification-activity-explorer.md) using these preconfigured filters:
+
+- Endpoint DLP activities
+- Files containing sensitive info types
+- Egress activities
+- DLP policies that detected activities
+- DLP policy rules that detected activities
+
+You can also access DLP report using via these cmdlets in the Security & Compliance PowerShell.
+
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+
+Use these cmdlets:
+
+[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+[Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
+[Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
+
+However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, the following cmdlets for DLP reports are available in Exchange Online Powershell. To use the cmdlets for these DLP reports, do these steps:
+
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+
+Use these cmdlets:
+
+[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+[Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
+
 
 #### Contextual summary
 
