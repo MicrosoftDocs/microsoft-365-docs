@@ -2608,7 +2608,7 @@
       {
         "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
         "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
-        "redirect_document_id": true
+        "redirect_document_id": false
       
       }
      ]
