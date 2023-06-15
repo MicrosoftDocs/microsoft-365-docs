@@ -701,11 +701,6 @@
         "redirect_document_id":false
      },
      {
-        "source_path":"microsoft-365/business-premium/m365bp-set-up-windows-devices.md",
-        "redirect_url":"/microsoft-365/business-premium/m365bp-protect-devices",
-        "redirect_document_id":false
-     },
-     {
         "source_path":"microsoft-365/business-premium/m365-campaigns-security-overview.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-security-overview",
         "redirect_document_id":false
