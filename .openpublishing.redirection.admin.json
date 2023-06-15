@@ -1656,11 +1656,6 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"microsoft-365/commerce/extend-your-trial.md",
-         "redirect_url":"/microsoft-365/commerce/try-or-buy-microsoft-365",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"microsoft-365/admin/manage/resolve-license-conflicts.md",
          "redirect_url":"/microsoft-365/commerce/licenses/buy-licenses",
          "redirect_document_id":false
@@ -1678,11 +1673,6 @@
       {
          "source_path":"microsoft-365/admin/misc/become-admin-and-make-purchases.md",
          "redirect_url":"/microsoft-365/admin/misc/become-the-admin",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/security-and-compliance/index.md",
-         "redirect_url":"/microsoft-365/business-premium/secure-your-business-data",
          "redirect_document_id":false
       },
       {
