@@ -229,19 +229,39 @@ You can also view details of the associated event with rich metadata in the same
 > [!div class="mx-imgBorder"]
 > ![event info.](../media/Event-info-1.png)
 
-### Reports
-
-The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) show broad trends over time and give specific insights into:
-
-- **DLP Policy Matches** over time and filter by date range, location, policy, or action
-- **DLP incident matches** also shows matches over time, but pivots on the items rather than the policy rules.
-- **DLP false positives and overrides** shows the count of false positives and, if configured, user-overrides along with the user justification.
-
-### DLP Activity Explorer
+### DLP Activity Explorer and reports
 
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
+<!--![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)-->
+
+You can view the last 30 days of DLP information in [Activity Axplorer](data-classification-activity-explorer.md) using these preconfigured filters:
+
+- Endpoint DLP activities
+- Files containing sensitive info types
+- Egress activities
+- DLP policies that detected activities
+- DLP policy rules that detected activities
+
+You can also access DLP report using via these cmdlets in the Security & Compliance PowerShell.
+
+1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+
+Use these cmdlets:
+
+[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+[Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
+[Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
+
+However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, the following cmdlets for DLP reports are available in Exchange Online Powershell. To use the cmdlets for these DLP reports, do these steps:
+
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+
+Use these cmdlets:
+
+[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+[Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
+
 
 #### Contextual summary
 
