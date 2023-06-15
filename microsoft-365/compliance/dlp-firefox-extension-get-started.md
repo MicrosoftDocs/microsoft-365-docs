@@ -160,7 +160,7 @@ After ingesting the ADMX, the steps below can be followed to create a configurat
                 } 
             }'/> `
 
-9.  Note: It is critical that updates_disabled is set to false so that the extension can automatically update over time. 
+9.  Note: It is critical that `updates_disabled` is set to `false` so that the extension can automatically update over time.
 
 10. Click create.
 
@@ -202,8 +202,8 @@ Now that you’ve removed Firefox from the disallowed browsers/apps list, you ca
 - Print a document
   - To test, open a file that is protected against print actions in the Firefox browser and attempt to print the file.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-- Copy to USB Removeable Media
-  - To test, try to save the file to a removeable media storage.
+- Copy to USB Removable Media
+  - To test, try to save the file to a removable media storage.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to Network Share
   - To test, try to save the file to a network share.
