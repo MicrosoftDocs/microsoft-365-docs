@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/24/2023
+ms.date: 06/15/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -30,7 +30,9 @@ description: "DLP policy tip reference for Outlook 2013 for Win32."
 Yes.
 
 > [!IMPORTANT]
-> When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
+>
+> - When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
+> - Poicy tips that rely on conditions which evaluate custom X-headers will not display for Outlook on the Web messages because the transport service on the mailbox servers insert custom X-header values after the policy tips are evaluated.
 
 ## Email notification supported for Outlook on the Web
 

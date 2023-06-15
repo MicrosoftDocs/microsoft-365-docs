@@ -17,7 +17,9 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/21/2023
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Microsoft Defender for Office 365 support for Microsoft Teams (Preview)
@@ -25,9 +27,6 @@ ms.date: 4/21/2023
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 > [!NOTE]
 > This article lists new features in the latest release of Microsoft Defender for Office 365. These features are currently in preview. Once you run the cmdlet, please be aware that it will take a few days for the features to to be available. 
