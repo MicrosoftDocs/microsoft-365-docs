@@ -82,7 +82,7 @@ You should also confirm that all users in the pilot have a supported way to repo
 
 - [The built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)
 - [The Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)
-- Supported third party reporting tools as described [here](submissions-user-reported-messages-custom-mailbox.md#message-submission-format).
+- Supported third party reporting tools as described [here](submissions-user-reported-messages-custom-mailbox.md#message-submission-format-for-third-party-reporting-tools).
 
 Don't underestimate the importance of this step. Data from user reported messages will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, and provide data-backed reports to management that the migration went smoothly.
 
