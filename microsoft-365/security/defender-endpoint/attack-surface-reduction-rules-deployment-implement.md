@@ -34,7 +34,6 @@ search.appverid: met150
 
 Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
 
-> [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
   
 
