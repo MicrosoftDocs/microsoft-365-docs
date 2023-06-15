@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/02/2023
+ms.date: 06/14/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -38,11 +38,11 @@ Before you begin, make sure you have the necessary prerequisites:
 
 - Licensing for the DLP alerts management dashboard
 - Licensing for alert configuration options
-- Roles
+- Required roles
 
 ### Licensing for the DLP alert management dashboard
 
-All eligible tenants for DLP can access the DLP alert management dashboard. To get started, you should be eligible for Microsoft Purview DLP for Exchange Online, SharePoint Online, and OneDrive for Business. For more information about the licensing requirements for DLP, see [Which licenses provide the rights for a user to benefit from the service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+All eligible tenants for DLP can access the DLP alert management dashboard. To get started, you should be eligible for Microsoft Purview DLP for Exchange, SharePoint, and OneDrive. For more information about the licensing requirements for DLP, see [Which licenses provide the rights for a user to benefit from the service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
 Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
 
@@ -56,7 +56,7 @@ The **content preview** feature is available only for these licenses:
 
 ### Licensing for alert configuration options
 
-**Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription can create alert policies only where an alert is triggered every time an activity occurs.
+**Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription, or an E3 or G3 subscription, can create alert policies only where an alert is triggered every time an activity occurs.
 
 **Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must one of these licensing configurations:
 
@@ -76,20 +76,12 @@ If you want to view the DLP alert management dashboard or to edit the alert conf
 - Security Operator
 - Security Reader
 
-To access the DLP alert management dashboard, you need the:
-
-- Manage alerts
-
-and either of these two roles:
+To access the DLP alert management dashboard, you need the *Manage alerts* role and either of these two roles:
 
 - DLP Compliance Management
 - View-Only DLP Compliance Management
 
-To access the Content preview feature and the Matched sensitive content and context features you must be a member of:
-
-- Content Explorer Content Viewer role group
-
-which has the data classification content viewer role pre-assigned.
+To access the Content preview feature and the Matched sensitive content and context features you must be a member of the *Content Explorer Content Viewer* role group, which has the *Data classification content viewer* role pre-assigned.
 
 ### Roles and Role Groups
 
@@ -115,11 +107,11 @@ Here's a list of applicable role groups. To learn more about them, see [Permissi
 To learn how to configure an alert in your DLP policy, see [Configure and view alerts for data loss prevention polices](dlp-configure-view-alerts-policies.md).
 
 > [!IMPORTANT]
-> Your organizations audit log retention policy configuration controls how long an alert remains visible in the console. See, [Manage audit log retention policies](audit-log-retention-policies.md#manage-audit-log-retention-policies) for more information.
+> Your organization's audit log retention policy configuration controls how long an alert remains visible in the console. See, [Manage audit log retention policies](audit-log-retention-policies.md#manage-audit-log-retention-policies) for more information.
 
 ### Aggregate event alert configuration
 
-If your org is licensed for [aggregated alert configuration options](#licensing-for-alert-configuration-options),
+If your organization is licensed for [aggregated alert configuration options](#licensing-for-alert-configuration-options),
 then you'll see these options when you create or edit a DLP policy.
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options." border="false":::
@@ -128,7 +120,7 @@ This configuration allows you to set up a policy to generate an alert every time
 
 ### Single event alert configuration
 
-If your org is licensed for [single-event alert configuration options](#licensing-for-alert-configuration-options), then you'll see these options when you create or edit a DLP policy. Use this option to create an alert that's raised every time a DLP rule match happens.
+If your organization is licensed for [single-event alert configuration options](#licensing-for-alert-configuration-options), then you'll see these options when you create or edit a DLP policy. Use this option to create an alert that's raised every time a DLP rule match happens.
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for single-event alert configuration options." border="false":::
 
@@ -142,20 +134,18 @@ To work with the DLP alert management dashboard:
 
 :::image type="content" source="../media/alert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard." border="false":::
 
-4. Select the **Events** tab to view all of the events associated with the alert. You can choose a particular event to view its details. For a list of some of the available event details, see, [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md).
-5. Select **Details** to open the **Overview** page for the alert. The overview page provides a summary:
+4. Select the **Events** tab to view all of the events associated with the alert. (You can choose a particular event to view its details. For a list of some of the available event details, see, [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md).)
+5. Select **View details** to open the **Overview** page for the alert. The overview page provides a summary:
     1. of what happened
     1. who performed the actions that caused the policy match
-    1. information about the matched policy, and more 
+    1. information about the matched policy, and more
 
 6. Choose the **Events** tab to access the:
     1. content involved
     1. sensitive information types matched
     1. metadata
 
-7. Select the **Sensitive Info Types** tab to view details about the sensitive information types detected in the content. Details include confidence, count, and the content that matches the sensitive information type.
-
-8. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
+7. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
 
 - To see the history of workflow management, choose **Management log**.
 - After you take the required action for the alert, set the status of the alert to **Resolved**.
