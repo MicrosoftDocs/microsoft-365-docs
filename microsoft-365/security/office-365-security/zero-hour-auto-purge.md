@@ -22,14 +22,13 @@ ms.custom:
 description: Zero-hour auto purge (ZAP) retroactively moves delivered messages in an Exchange Online mailbox to the Junk Email folder or quarantine if those messages are found to be spam, phishing, or contain malware.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 6/30/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -143,6 +142,56 @@ Note that for this release, ZAP is available only for messages that are identifi
 ### Review messages blocked in Teams
 
 To find out if ZAP blocked your message, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+
+### Review ZAP quarantine policies for Teams
+
+To protect your Teams chats and channels, go to the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Settings** > **Email & collaboration** > **Microsoft Teams protection**. The Zero-hour auto purge protection is turned on by default.
+
+:::image type="content" source="../../media/zap-teams-policy-mdo.png" alt-text="Image showing policy settings for Microsoft Teams." lightbox="../../media/zap-teams-policy-mdo.png":::
+
+Admins should have the ability to configure quarantine policy options for malware and high-confidence phishing. The following quarantine options are available for this release of the product:  
+
+- Malware quarantine policy: 
+
+  - **AdminOnlyAccessPolicy**
+  - [Need other options] 
+
+- High-confidence phishing quarantine policy: 
+
+  - **AdminOnlyAccessPolicy** 
+  - [need other options]
+
+Select the **Malware** drop-down and the **High-confidence phishing** drop-down to select a policy. If no policy is configured, the default for malware and high-confidence phishing should be **AdminOnlyAccessPolicy**. 
+
+Admins should have the ability to configure exceptions to the ZAP policy.  
+
+- User exceptions:  
+
+  - You can select one or multiple users.  
+
+  - Once you save the policy, the users in the exception list are exempt from the policy setting.
+
+  - Exceptions is only honored when all users in the chat are on the exception list.  
+
+- Group exceptions:
+
+  - You can select one or multiple groups selected. 
+
+  - Once you save the policy, the groups in the exception list are exempt from the policy setting. 
+
+- Domain exceptions: 
+
+  - You can select one or multiple domains. 
+
+  - Once you save the policy, the domain exception list is exempt from the policy setting.  
+
+#### Create quarantine policies in PowerShell
+
+If you'd rather use PowerShell to create quarantine policies, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the `TeamsProtectionPolicy` cmdlet.
+
+
+
+
 
 ## Zero-hour auto purge (ZAP) FAQ
 
