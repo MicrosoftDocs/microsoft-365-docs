@@ -35,6 +35,7 @@ There are two ways to run the client analyzer tool:
 1. Using a binary version (no Python dependency)
 2. Using a Python-based solution
 
+
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
@@ -110,6 +111,9 @@ When using a terminal, unzip the file using one of the following commands based 
 > [!NOTE]
 >
 > - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+>
+> >[!WARNING]
+> >Running the Python-based client analyzer requires the installation of pip packages which may cause some issues in your environment. 
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
