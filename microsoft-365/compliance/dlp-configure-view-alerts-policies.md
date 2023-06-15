@@ -154,8 +154,8 @@ To work with the DLP alert management dashboard:
     
 After you investigate the alert, choose **Manage alert** to change the status (**Active**, **Investigating**, **Dismissed**, or **Resolved**). You can also add comments and assign the alert to someone in your organization.
 
-    -   To see the history of workflow management, choose **Management log**.
-    -   After you take the required action for the alert, set the status of the alert to **Resolved**.
+-   To see the history of workflow management, choose **Management log**.
+-   After you take the required action for the alert, set the status of the alert to **Resolved**.
 
 ### Other matched conditions
 
