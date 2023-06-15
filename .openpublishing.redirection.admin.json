@@ -1608,7 +1608,7 @@
       {
          "source_path":"microsoft-365/admin/dns/change-nameservers-at-1-1-internet.md",
          "redirect_url":"/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/dns/change-nameservers-at-aws.md",
@@ -1663,7 +1663,7 @@
       {
          "source_path":"microsoft-365/admin/manage/resolve-license-conflicts.md",
          "redirect_url":"/microsoft-365/commerce/licenses/buy-licenses",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/dns/create-dns-records-at-bluehost.md",
@@ -1673,12 +1673,12 @@
       {
          "source_path":"microsoft-365/admin/dns/create-dns-records-at-hover.md",
          "redirect_url":"/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/misc/become-admin-and-make-purchases.md",
          "redirect_url":"/microsoft-365/admin/misc/become-the-admin",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security-and-compliance/index.md",
@@ -1728,7 +1728,7 @@
       {
          "source_path":"microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data.md",
          "redirect_url":"/microsoft-365/admin/add-users/remove-former-employee-step-4",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/admin-video-library.yml",
@@ -1768,7 +1768,7 @@
       {
          "source_path":"microsoft-365/admin/misc/secure-windows-10-devices.md",
          "redirect_url":"/microsoft-365/business-premium/m365bp-secure-windows-devices",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
@@ -1888,47 +1888,47 @@
       {
          "source_path":"microsoft-365/admin/productivity/apps-health.md",
          "redirect_url":"/microsoft-365/admin/adoption/apps-health",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/communication.md",
          "redirect_url":"/microsoft-365/admin/adoption/communication",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/content-collaboration.md",
          "redirect_url":"/microsoft-365/admin/adoption/content-collaboration",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/meetings.md",
          "redirect_url":"/microsoft-365/admin/adoption/meetings",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/mobility.md",
          "redirect_url":"/microsoft-365/admin/adoption/mobility",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/privacy.md",
          "redirect_url":"/microsoft-365/admin/adoption/privacy",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/productivity-score.md",
          "redirect_url":"/microsoft-365/admin/adoption/adoption-score",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/productivity/teamwork.md",
          "redirect_url":"/microsoft-365/admin/adoption/teamwork",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/adoption/organizational-message.md",
          "redirect_url":"/microsoft-365/admin/adoption/organizational-messages",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/admin/manage/upgrade-distribution-lists.md",
