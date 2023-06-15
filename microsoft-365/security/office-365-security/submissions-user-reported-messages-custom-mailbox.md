@@ -388,9 +388,7 @@ Turning off reporting in Outlook has the following consequences:
 - The **Report** button in Outlook on the web and the Microsoft Report Message and Report Phishing add-ins are unavailable in all Outlook platforms.
 - Third-party reporting tools still work, but reported messages don't appear on the **User reported** tab on the **Submissions** page in the Defender portal.
 
-This example creates the report submission policy with the following settings:
-
-- **Outlook** section \> **Monitor reported messages in Outlook** not selected: `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter. `-EnableReportToMicrosoft $false`, `-EnableThirdPartyAddress $false, -ReportJunkToCustomizedAddress $false, -ReportNotJunkToCustomizedAddress $false, and -ReportPhishToCustomizedAddress $false` are required.
+This example creates the report submission policy with reporting in Outlook turned off (**Outlook** section \> **Monitor reported messages in Outlook** not selected): `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter. `-EnableReportToMicrosoft $false`, `-EnableThirdPartyAddress $false, -ReportJunkToCustomizedAddress $false, -ReportNotJunkToCustomizedAddress $false, and -ReportPhishToCustomizedAddress $false` are required.
 
 ```powershell
 New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false
