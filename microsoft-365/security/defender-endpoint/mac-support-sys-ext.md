@@ -165,8 +165,9 @@ curl -O https://URL
 
 For example,
 
-BashCopy  
+```Bash
 curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/sysext.mobileconfig
+```
 
 ### Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint
 
@@ -183,14 +184,16 @@ curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mob
 1. Click **Raw**. The new URL will be https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py.
 1. Save it as *analyze_profiles.py* to **Downloads** by running the following command in terminal:
 
-   BashCopy  
+```Bash 
       curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py
+```
 
 1. Run the profile analyzer python3 script without any parameters by executing the following command in terminal:
 
-   BashCopy  
+```Bash  
    cd /Downloads  
    sudo python3 analyze_profiles.py
+```
 
    > [!NOTE]
    > It will ask to sudo.
@@ -199,10 +202,10 @@ OR
 
 1. Run the script directly from the Web by executing the following command:
 
-   BashCopy
-
+```Bash
    sudo curl https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py        
 | python3 -
+```
 
    > [!NOTE]
    > It will ask to sudo.
