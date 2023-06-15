@@ -1,11 +1,11 @@
 ---
-title: Overview of Copilot for Microsoft Syntex
+title: Overview of Syntex File Q&A for Microsoft 365 Copilot (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.date: 04/19/2023
+ms.date: 06/16/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -17,16 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use Microsoft 365 Copilot to easier find information in Microsoft Syntex.
 ---
 
-# Overview of Copilot for Microsoft Syntex (Preview)
+# Overview of Syntex File Q&A for Microsoft 365 Copilot (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
 Microsoft Syntex is now integrated with Microsoft 365 Copilot to bring the power of assistive AI into your organization's intelligent document processing.
 
-Copilot for Syntex analyzes the text of a selected file in a SharePoint document library, in OneDrive for Business, or in Teams. It then generates a set of questions you can ask about the information in the file. The questions can be used to quickly identify the type of document, generate a summary of information in the document, and identify key points or other important information. You can also ask your own questions, such as "When does this contract expire?" or "What is the fee schedule for this project?"
+Syntex File Q&A for Copilot analyzes the text of a selected file in a SharePoint document library, in OneDrive for Business, or in Teams. It then generates a set of questions you can ask about the information in the file. The questions can be used to quickly identify the type of document, generate a summary of information in the document, and identify key points or other important information. You can also ask your own questions, such as "When does this contract expire?" or "What is the fee schedule for this project?"
 
-## To use Copilot for Syntex
+## To use Syntex File Q&A for Copilot
 
 1. From a SharePoint document library, select a document.
 
@@ -34,7 +34,7 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
     ![Screenshot of a document library page showing a document selected and the Copilot button on the ribbon.](../media/content-understanding/copilot-document-selected.png)
 
-3. The first time you use Copilot for Syntex, you'll see this **Copilot** panel.
+3. The first time you use Syntex File Q&A for Copilot, you'll see this **Copilot** panel.
 
     ![Screenshot of the first-run experience Copilot panel.](../media/content-understanding/copilot-panel-first-run.png)
 
@@ -61,17 +61,17 @@ Copilot for Syntex analyzes the text of a selected file in a SharePoint document
 
 ## Current limitations
 
-- Copilot for Syntex currently works on Word (.docx), PowerPoint (.pptx), and text-readable .pdf file types. More file types will be added in the future.
+- Syntex File Q&A for Copilot currently works on Word (.docx), PowerPoint (.pptx), and text-readable .pdf file types. More file types will be added in the future.
 
-- Copilot for Syntex is currently only available to customers in the United States, and currently only understands instructions in English. More languages and locales will be added in the future.
+- Syntex File Q&A for Copilot is currently only available to customers in the United States, and currently only understands instructions in English. More languages and locales will be added in the future.
 
-- Copilot for Syntex works on a single selected file at a time, and it only processes the first 4,000 tokens (approximately six pages).
+- Syntex File Q&A for Copilot works on a single selected file at a time, and it only processes the first 4,000 tokens (approximately six pages).
 
-- Copilot for Syntex won't process encrypted files or files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
+- Syntex File Q&A for Copilot won't process encrypted files or files stamped with "Confidential" or "Highly Confidential" sensitivity labels.
 
-- Copilot for Syntex doesn't save the context of your session, but you can copy the information if you want to save it. 
+- Syntex File Q&A for Copilot doesn't save the context of your session, but you can copy the information if you want to save it.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > It's important that you review any content the AI generates for you to make sure it has accurately produced what you wanted.
 
 ## Data security and privacy
@@ -80,8 +80,8 @@ The new Copilot experiences do not change Microsoft’s commitment and principle
 
 ## Let us know what you think
 
-If you have a suggestion for Copilot for Syntex, or if there's something you like or something you don't like about it, you can submit feedback to Microsoft from the **Copilot** panel. Select **More options** (<sup>**...**</sup>), and then select **Send feedback**.
+If you have a suggestion for Syntex File Q&A for Copilot, or if there's something you like or something you don't like about it, you can submit feedback to Microsoft from the **Copilot** panel. Select **More options** (<sup>**...**</sup>), and then select **Send feedback**.
 
   ![Screenshot of the Copilot panel showing the Send feedback option.](../media/content-understanding/copilot-send-feedback.png)
 
-This feedback will be used to help us improve your experience in Copilot for Syntex.
+This feedback will be used to help us improve your experience in Syntex File Q&A for Copilot.
