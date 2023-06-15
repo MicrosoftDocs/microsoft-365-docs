@@ -157,3 +157,65 @@ After you investigate the alert, choose **Manage alert** to change the status (*
     -   To see the history of workflow management, choose **Management log**.
     -   After you take the required action for the alert, set the status of the alert to **Resolved**.
 
+### Other matched conditions
+
+Microsoft Purview supports showing matched conditions in a DLP event to reveal the exact cause for a flagged DLP policy. This information will show up in:
+
+- DLP Alerts console
+- [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
+- [Microsoft Defender for Business portal](../security/defender-business/mdb-view-manage-incidents.md#view-and-manage-incidents-in-microsoft-defender-for-business)
+
+In the **Events** tab open **Details** to see **Other matched conditions**.
+
+#### Prerequisites
+
+- Must be running Windows 10 x64 build 1809 or later or Windows 11.
+    - See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+- Matched conditions data is available for valid E3 and E5 license holders
+- Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
+- Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+Matched events information is supported for these conditions
+
+|Condition|Exchange|Sharepoint|Teams|Endpoint|
+|-----|-----|-----|-----|-----|
+|Sender is|Yes|No|Yes|No|
+|Sender domain is|Yes|No|Yes|No|
+|Sender address contains words|Yes|No|No|No|
+|Sender address matches patterns|Yes|No|No|No|
+|Sender is a member of|Yes|No|No|No|
+|Sender IP address is|Yes|No|No|No|
+|Has sender overriden the policy tip|Yes|No|No|No|
+|SenderAdAttribute Contains words|Yes|No|No|No|
+|SenderAdAttribute Matches patterns|Yes|No|No|No|
+|Recipient is|Yes|No|Yes|No|
+|Recipient domain is|Yes|No|Yes|No|
+|Recipient address contains words|Yes|No|No|No|
+|Recipient address matches patterns|Yes|No|No|No|
+|Recipient is a member of|Yes|No|No|No|
+|RecipientAdAttribute Contains words |Yes|No|No|No|
+|RecipientAdAttribute Matches patterns|Yes|No|No|No|
+|Document is password protected|Yes|No|No|No|
+|Document could not be scanned|Yes|No|No|No|
+|Document did not complete scanning|Yes|No|No|No|
+|Document name contains words|Yes|Yes|No|No|
+|Document name matches patterns|Yes|No|No|No|
+|Document property is|Yes|Yes|No|No|
+|Document size over|Yes|Yes|No|No|
+|Document content contains words|Yes|No|No|No|
+|Document content matches patterns|Yes|No|No|No|
+|Document type is|No|No|No|Yes|
+|Document extension is|Yes|Yes|No|Yes|
+|Content is shared from M365|Yes|Yes|Yes|No|
+|Content is received from|Yes|No|No|No|
+|Content character set contains words|Yes|No|No|No|
+|Subject contains words|Yes|No|No|No|
+|Subject matches patterns|Yes|No|No|No|
+|Subject or body contains words|Yes|No|No|No|
+|Subject or body matches patterns|Yes|No|No|No|
+|Header contains words|Yes|No|No|No|
+|Header matches patterns|Yes|No|No|No|
+|Message size over|Yes|No|No|No|
+|Message type is|Yes|No|No|No|
+|Message importance is|Yes|No|No|No|
+
