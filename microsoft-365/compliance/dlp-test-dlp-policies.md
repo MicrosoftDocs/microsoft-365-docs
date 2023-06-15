@@ -24,7 +24,7 @@ You should test and tune the behavior of your Microsoft Purview Data Loss Preven
 
 ## Test mode
 
-When you deploy a new policy, [you should run it in test mode,](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [view the reports for](view-the-dlp-reports.md) and any [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
+When you deploy a new policy, [you should run it in test mode,](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
 
 ## Test-DlpPolicies (preview)
 
