@@ -41,7 +41,7 @@ Team membership will be automatically managed over time through the power of dyn
 
 - Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an AAD P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - The admin running the wizard needs Teams admin center permissions.
-- Ensure you can define your frontline workers and their work locations through data available in AAD. If you don't have this data in AAD, you can sync it through a human capital management (HCM) connector or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
+- Ensure you can define your frontline workers and their work locations through data available in AAD. If you don't have this data in AAD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 
   >[!NOTE]
   >The PowerShell solution creates static teams, which aren't managed automatically.
@@ -49,31 +49,62 @@ Team membership will be automatically managed over time through the power of dyn
 ## Set up your frontline dynamic teams
 
 1. Navigate to your [Teams admin center](https://admin.teams.microsoft.com).
-1. Open the **Teams** section on the left rail.
-1. Select **Manage frontline teams**.
-1. Choose **Setup** in the table.
-1. Review the prerequisite information.
-1. Select the AAD attribute that defines your frontline workers. You can only choose one AAD attribute, but you can define multiple values by separating them with commas.
-1. Select the AAD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
-1. Define your team structure by choosing a prefix. The prefix will be applied in the format: "prefix-location" for all of your teams.
-1. Optionally, choose a team template. The team template you choose will define the channel structure for all of your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
-1. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
+
+2. Open the **Teams** section on the left rail.
+
+3. Select **Manage frontline teams**.
+
+4. Choose **Setup** in the table.
+
+    ![Screenshot of the manage frontline teams table in the Teams admin center.](media/dtas-manage-setup.png)
+
+5. Review the prerequisite information.
+
+6. Select the AAD attribute that defines your frontline workers. You can only choose one AAD attribute, but you can define multiple values by separating them with commas.
+
+    ![Screenshot of where to enter your AAD attribute and values for frontline workers.](media/dtas-frontline-attribute.png)
+
+7. Select the AAD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+
+    ![Screenshot of where to enter your AAD attribute for frontline locations.](media/dtas-location-attribute.png)
+
+8. Define your team structure by choosing a prefix. The prefix will be applied in the format: "prefix-location" for all of your teams.
+
+    ![Screenshot of the prefix, team template, and team owner account fields.](media/dtas-prefix.png)
+
+9. Optionally, choose a team template. The team template you choose will define the channel structure for all of your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+
+10. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, navigate to your [Azure portal](https://portal.azure.com).
     1. Select **Azure Active Directory**.
     1. Select **Users**.
     1. Choose your user.
     1. Copy the user's object ID.
-1. Review the settings and choose **Finish setup.**
-    >[!NOTE]
-    . The setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
+
+11. Review the settings and choose **Finish setup.**
+
+  >[!NOTE]
+  >The setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
+
+    ![Screenshot of the Manage frontline teams page with a banner showing that setup has been submitted.](media/dtas-setup-submitted.png)
 
 ## Deploy your frontline dynamic teams
 
 1. After the setup is complete, go to your **Manage frontline teams** page and select the **Deploy** button.
-1. From here you can review your settings and view the list of locations that don't yet have a frontline dynamic team created.
-1. Select the locations you want to create teams for in the table.
-1. Select **Deploy**. This process can take multiple hours depending on how many teams you're creating. After the deployment is complete, you'll see the Number of frontline teams tile update. In this tile you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the last deployment health tile.
-1. You can repeat this process for any frontline locations that don't have a team.
+
+    ![Screenshot of the Deploy button.](media/dtas-deploy.png)
+
+2. From here you can review your settings and view the list of locations that don't yet have a frontline dynamic team created.
+
+3. Select the locations you want to create teams for in the table.
+
+    ![Screenshot of the table of locations.](media/dtas-deploy-locations.png)
+
+4. Select **Deploy**. This process can take multiple hours depending on how many teams you're creating. After the deployment is complete, you'll see the Number of frontline teams tile update. In this tile you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the last deployment health tile.
+
+    ![Screenshot of where you can get the CSV file on your Manage frontline teams page.](media/dtas-view-errors.png)
+
+5. You can repeat this process for any frontline locations that don't have a team.
 
 ## Managing your frontline dynamic teams
 
@@ -82,11 +113,18 @@ You can manage your teams when changes happen in your organization.
 ### Create new teams for newly opened locations
 
 1. First, navigate to your [Teams admin center](https://admin.teams.microsoft.com).
-1. Open the **Teams** section on the left rail.
-1. Select **Manage frontline teams**.
-1. Choose **Deploy** in the table.
-1. Selec the **Refresh locations** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
-1. After your refresh completes, your setup status will show **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
+
+2. Open the **Teams** section on the left rail.
+
+3. Select **Manage frontline teams**.
+
+4. Choose **Deploy** in the table.
+
+5. Select the **Refresh locations** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
+
+    ![Screenshot of the Refresh locations button.](media/dtas-refresh-locations.png)
+
+6. After your refresh completes, your setup status will show **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
 
