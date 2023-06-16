@@ -16,7 +16,7 @@ ms.collection:
 description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/7/2022
+ms.date: 6/9/2023
 ---
 
 # Allow or block email using the Tenant Allow/Block List
