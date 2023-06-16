@@ -121,7 +121,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 |"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
 |"...the email is sent from someone on the finance team..."| **Condition for match**: Sender is a member of|
 |"...and..."| **Condition for match**: add a second second condition to the NOT group|
-|"...to adele.vance@fabrikam.com..." | **Condition for match**:  Sender is|
+|"...to adele.vance@fabrikam.com..." | **Condition for match**:  Recipient is|
 |"...Notify..."|**User notifications**: enabled|
 |"...the compliance admin every time an email is blocked and notify the user who sent the item..."| **Notify users in Office 365 service with a policy tip**: selected </br> - **Notify these people**: selected </br> **The person who sent, shared, or modified the content**: selected </br> - **Send the email to these additional people**: add the email address of the compliance administrator|
 |"...and no one can be allowed to override the block...| **Allow overrides from M365 Services**: not selected|
