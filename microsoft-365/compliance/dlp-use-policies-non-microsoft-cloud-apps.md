@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to use dlp policies for non-Microsoft cloud apps.
+description: Learn how to use DLP policies for non-Microsoft cloud apps.
 ---
 
 # Use data loss prevention policies for non-Microsoft cloud apps
@@ -52,7 +52,7 @@ Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, y
 
 ### Connect a non-Microsoft cloud app
 
-To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
+To use a DLP policy that's scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
 
 - [Connect Box](/defender-cloud-apps/connect-box)
 - [Connect Dropbox](/defender-cloud-apps/connect-dropbox)
