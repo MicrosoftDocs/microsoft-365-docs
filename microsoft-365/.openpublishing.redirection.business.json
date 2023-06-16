@@ -173,7 +173,7 @@
      {
         "source_path":"microsoft-365/business/prepare-for-office-client-deployment.md",
         "redirect_url":"/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
@@ -233,7 +233,7 @@
      {
         "source_path":"microsoft-365/business/validate-protection-settings-on-windows-10-pcs.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/move-files-to-onedrive.md",
@@ -288,7 +288,7 @@
      {
         "source_path":"microsoft-365/business/validate-settings-on-windows-10-pcs.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-validate-settings-on-windows-10-pcs",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/review-threats-take-action.md",
@@ -298,17 +298,17 @@
      {
         "source_path":"microsoft-365/business/map-protection-features-to-intune-settings.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/set-up-compliance.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-set-up-compliance",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/device-states.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-device-states",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/pre-requisites-for-data-protection.md",
@@ -323,7 +323,7 @@
      {
         "source_path":"microsoft-365/business/create-and-edit-autopilot-devices.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/protection-settings-for-windows-10-devices.md",
@@ -338,27 +338,27 @@
      {
         "source_path":"microsoft-365/business/create-and-edit-autopilot-profiles.md",
         "redirect_url":"/microsoft-365/business-premium/create-and-edit-autopilot-profiles",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/autopilot-profile-settings.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/threats-detected-defender-av.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-review-threats-take-action",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/remove-company-data.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-remove-company-data",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/reset-devices-to-factory-settings.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/protection-settings-for-windows-10-pcs.md",
@@ -373,37 +373,37 @@
      {
         "source_path":"microsoft-365/business/app-protection-settings-for-android-and-ios.md",
         "redirect_url":"/microsoft-365/admin/devices/app-protection-settings-for-android-and-ios",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/validate-settings-on-android-or-ios.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-validate-settings-on-android-or-ios",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/manage-domain-users.md",
         "redirect_url":"/microsoft-365/admin/setup/manage-domain-users",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/set-up-mobile-devices.md",
         "redirect_url":"/microsoft-365/admin/setup/set-up-mobile-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/access-resources.md",
         "redirect_url":"/microsoft-365/admin/setup/access-resources",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/support/microsoft-365-business-faqs.yml    ",
         "redirect_url":"/microsoft-365/business-premium/microsoft-365-business-faqs",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/set-up.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-setup",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/add-autopilot-devices-and-profile.md",
@@ -418,7 +418,7 @@
      {
         "source_path":"microsoft-365/business/manage-windows-devices.md",
         "redirect_url":"/microsoft-365/admin/setup/manage-windows-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business/set-up-advanced-security.md",
@@ -453,7 +453,7 @@
      {
         "source_path":"microsoft-365/business-video/moveto-microsoft-365/index.md",
         "redirect_url":"move-from-google-workspace-overview",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-video/index.yml",
@@ -803,67 +803,67 @@
      {
         "source_path":"microsoft-365/business-premium/m365bp-secure-users.md",
         "redirect_url":"/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-conditional-access.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-turn-on-mfa",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-increase-protection.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-devices-overview.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-set-up-unmanaged-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-multifactor-authentication.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-mfa-for-users",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-install-office-apps.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-users-install-m365-apps",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-protect-pcs-macs.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-users-protect-unmanaged-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-protect-email-overview.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-use-email-securely",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/send-encrypted-email.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-use-labels-encryption",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-protect-devices.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-protect-managed-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-upgrade-windows-10-pro.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-upgrade-windows-pro",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-security-incident-quick-start.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-security-operations-guide",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-add-users.md",
         "redirect_url":"/microsoft-365/business-premium/m365bp-admin-guide",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/m365bp-reset-passwords.md",
@@ -888,7 +888,7 @@
      {
         "source_path":"microsoft-365/business-premium/m365bp-setup.md",
         "redirect_url":"/microsoft-365/business-premium/m365-business-premium-setup",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/business-premium/get-microsoft-365-business-premium.md",
