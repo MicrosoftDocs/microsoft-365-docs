@@ -44,13 +44,13 @@ Endpoint DLP is part of the [larger DLP offering](dlp-learn-about-dlp.md) and pa
 
 ### Evidence collection for file activities on devices and eDiscovery
 
-This feature makes copies of items that match DLP policies on onboarded Windows devices and places those copies in an Azure storage account. These copies aren't held in a changless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+This feature makes copies of items that match DLP policies on onboarded Windows devices and places those copies in an Azure storage account. These copies aren't held in a changeless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
 
 ### Evidence collection for file activities on devices and contextual summary
 
  When an item and the activity that a user takes on that item match the conditions defined in a DLP policy, a **DLPRuleMatch** event shows up in [Activity explorer](data-classification-activity-explorer.md). This is true for every location that DLP supports. The **DLPRuleMatch** event contains a limited amount of the text that surrounds the matched content. This limited amount of text is called [contextual summary](dlp-learn-about-dlp.md#contextual-summary).
 
-It's important to understand the difference between evidence collection for file activities on devices and acontextual summary. Evidence collection for file activities on devices is only available for onboarded Windows devices. It saves a copy of the entire item that matched a policy to the Azure storage account. A contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggered the match.
+It's important to understand the difference between evidence collection for file activities on devices and a contextual summary. Evidence collection for file activities on devices is only available for onboarded Windows devices. It saves a copy of the entire item that matched a policy to the Azure storage account. A contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggered the match.
 
 ## Covered user activities
  
