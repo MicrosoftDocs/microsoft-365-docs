@@ -133,7 +133,7 @@
      {
         "source_path":"microsoft-365/compliance/controlling-your-data-using-customer-key.md",
         "redirect_url":"customer-key-overview",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
@@ -238,22 +238,22 @@
      {
         "source_path":"microsoft-365/compliance/records.md",
         "redirect_url":"/microsoft-365/compliance/records-management#records",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/recently-updated-topics-mcc.md",
         "redirect_url":"/microsoft-365/compliance/whats-new",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/use-exchange-online-to-comply-with-sec-rule-17a-4.md",
         "redirect_url":"/microsoft-365/compliance/retention-regulatory-requirements",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/gdpr-arc-Dynamics365.md",
         "redirect_url":"/microsoft-365/compliance/gdpr-arc-azure-dynamics",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/gdpr-arc-Azure.md",
@@ -263,7 +263,7 @@
      {
         "source_path":"microsoft-365/compliance/compliance-manager-overview.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-manager-release-notes.md",
@@ -288,37 +288,37 @@
      {
         "source_path":"microsoft-365/compliance/compliance-score-setup.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-setup",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-score-assessments.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-assessments",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-score-templates.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-templates-list",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-score-improvement-actions.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-improvement-actions",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-score-methodology.md",
         "redirect_url":"/microsoft-365/compliance/compliance-score-calculation",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-score-faq.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-faq",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/classifier-getting-started-with.md",
         "redirect_url":"/microsoft-365/compliance/classifier-get-started-with",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/classifier-creating-a-trainable-classifier.md",
@@ -333,12 +333,12 @@
      {
         "source_path":"microsoft-365/compliance/classifier-using-a-ready-to-use-classifier.md",
         "redirect_url":"/microsoft-365/compliance/classifier-learn-about",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/custom-sensitive-info-types.md",
         "redirect_url":"/microsoft-365/compliance/sensitive-information-type-learn-about",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/offering-23-NYCRR-Part-500.md",
@@ -1038,7 +1038,7 @@
      {
         "source_path":"microsoft-365/compliance/label-analytics.md",
         "redirect_url":"/microsoft-365/compliance/data-classification-overview",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/supervision-policies.md",
@@ -1068,7 +1068,7 @@
      {
         "source_path":"microsoft-365/compliance/view-label-activity-for-documents.md",
         "redirect_url":"/microsoft-365/compliance/data-classification-activity-explorer",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/insider-risk-management-alerts.md",
@@ -1368,77 +1368,77 @@
      {
         "source_path":"microsoft-365/compliance/privileged-access-management-overview.md",
         "redirect_url":"/microsoft-365/compliance/privileged-access-management",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/sit-defn-credentials-in-url.md",
         "redirect_url":"/microsoft-365/compliance/sensitive-information-type-entity-definitions",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/advanced-audit.md",
         "redirect_url":"/microsoft-365/compliance/audit-premium",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/auditing-solutions-overview.md",
         "redirect_url":"/microsoft-365/compliance/audit-solutions-overview",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/auditing-troubleshooting-scenarios.md",
         "redirect_url":"/microsoft-365/compliance/audit-troubleshooting-scenarios",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-detailed-properties",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/export-view-audit-log-records.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-export-records",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/mailitemsaccessed-forensics-investigations.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-investigate-accounts",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/ome-message-access-logs.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-encrypted-messages",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/search-the-audit-log-in-security-and-compliance.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-search",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/set-up-basic-audit.md",
         "redirect_url":"/microsoft-365/compliance/audit-standard-setup",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/turn-audit-log-search-on-or-off.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-enable-disable",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/use-sharing-auditing.md",
         "redirect_url":"/microsoft-365/compliance/audit-log-sharing",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/set-up-advanced-audit.md",
         "redirect_url":"/microsoft-365/compliance/audit-premium-setup",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/enable-mailbox-auditing.md",
         "redirect_url":"/microsoft-365/compliance/audit-mailboxes",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/acknowledge-hold-notification.md",
@@ -2023,47 +2023,47 @@
      {
         "source_path":"microsoft-365/compliance/search-for-content.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-content-search-overview",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/export-search-results.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-export-search-results",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/search-for-and-delete-messages-in-your-organization.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-search-for-and-delete-email-messages",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/retry-failed-content-search.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-retry-failed-content-search",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/disable-reports-when-you-export-content-search-results.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-disable-reports-for-exported-content-search-results",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/use-content-search-for-targeted-collections.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-use-content-search-for-targeted-collections",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-search-mailboxes-and-onedrive-for-users",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/clone-a-content-search.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-clone-a-content-search",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md",
         "redirect_url":"/microsoft-365/compliance/ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/ediscovery-change-the-size-of-pst-files-when-exporting-results.md",
@@ -2073,7 +2073,7 @@
      {
         "source_path":"microsoft-365/compliance/compliance-manager-templates-create.md",
         "redirect_url":"/microsoft-365/compliance/compliance-manager-templates",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/compliance/compliance-manager-templates-modify.md",
