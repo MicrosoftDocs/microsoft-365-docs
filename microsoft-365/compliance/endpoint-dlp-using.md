@@ -95,7 +95,7 @@ This scenario is for an unrestricted admin modifying a full directory scoped pol
 
 1. Scroll down to the **Incident reports** section and toggle **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients.
 
-   :::image type="content" alt-text="This screenshot shows the option to turn on incident reports. source="../media/endpoint-dlp-2-using-dlp-incident-reports.png":::
+   :::image type="content" alt-text="This screenshot shows the option to turn on incident reports." source="../media/endpoint-dlp-2-using-dlp-incident-reports.png":::
    
 1. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
@@ -121,7 +121,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Scroll down to the **Audit or restrict activities on Windows device** section and set both options under the **Service domain and browser activities** to **Block with override**.
 
-   :::image type="content" alt-text="The screenshot shows the set block with override action options." source="../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png:::
+   :::image type="content" alt-text="The screenshot shows the set block with override action options." source="../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png":::
    
 1. Choose **Save**.
 
