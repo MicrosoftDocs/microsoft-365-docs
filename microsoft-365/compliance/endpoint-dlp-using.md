@@ -174,9 +174,9 @@ There are three procedures.
 
 1. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
-   **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah Langer* will place the moved items in a folder named:  
+  > **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah Langer* will place the moved items in a folder named:  
 
-   *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
+  > *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
 1. Append a date and time stamp to the original file name.
    
@@ -222,7 +222,9 @@ There are three procedures.
    1. Under **User notifications**, toggle **User notifications** to **On** and under **Endpoint devices** choose **Show users a policy tip notification when an activity** if not already enabled.
   
 1. Choose **Save** and **Next**.
+
 1. Choose **Turn it on right away**. Choose **Next**.
+
 1. Review your settings and choose **Submit**.
 
    > [!NOTE]
@@ -233,6 +235,7 @@ There are three procedures.
 ### Test Auto-quarantine on the Windows 10/11 device
 
 1. Sign in to the Windows 10/11 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential, step 5.
+
 1. Create a folder whose contents won't be synchronized to OneDrive. For example:
 
    > *C:\auto-quarantine source folder*
@@ -364,28 +367,45 @@ You can set up different levels of enforcement when it comes to blocking data fr
 **Create a URL group**
 
 1. In Microsoft Purview, open the [compliance portal](https://sip.compliance.microsoft.com/homepage) and navigate to **Data loss prevention** > **Endpoint DLP settings**, and scroll down to **Browser and domain restrictions to sensitive data**. Expand the section.
+
 1. Scroll down to **Sensitive service domain groups**.
+
 1. Choose **Create sensitive service domain group**.
+
    1. Enter a **Group name**.
    1. In the **Sensitive service domain** field, enter the URL for the first website you want to monitor and then choose **Add site**.
    1. Continue adding URLs for the rest of the websites you want to monitor in this group.
    1. When you are finished adding all URLs to your group, choose **Save**.
+
 1. Create as many separate groups of URLs as you need.
 
 **Restrict pasting content into a browser**
 1. Create a DLP policy scoped to **Devices**. For information on how to create a DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
+
 1. On the [Define policy settings page](https://sip.compliance.microsoft.com/datalossprevention/policies) in the DLP policy creation flow, select **Create or customize advanced DLP rules** and then choose **Next**.
+
 1. On the **Customize advanced DLP rules** page, choose **Create rule**.
+
 1. Enter a name and description for the rule.
+
 1. Expand **Conditions**, choose **Add condition**, and then select the **Sensitive info types**.
+
 1. Under **Content Contains**, scroll down and select the new sensitive information type that you previously chose or created.
+
 1. Scroll down to the **Actions** section, and choose **Add an action**.
+
 1. Choose **Audit or restrict activities on devices**
+
 1. In the **Actions** section, under **Service domain and browser activities**, select **Paste to supported browsers**.1. 
+
 1. Set the restriction to **Audit**, **Block with override**, or **Block**, and then choose **Add**.
+
 1. Choose **Save**.
+
 1. Choose **Next**
+
 1. Choose whether you want to test your policy, turn it on right away, or keep it off, and then choose **Next**.
+
 1. Choose **Submit**.
 
 ## Scenario 8: Authorization groups
@@ -401,8 +421,11 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Create and use printer groups
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
+
 1. Select **Create printer group** and enter a **Group a name**. In this scenario, we'll use `Legal printers`.
+
 1. Select **Add printer** and provide a name. You can define printers by:
+
    1. Friendly printer name 
    1. USB product ID
    1. USB vendor ID
@@ -411,28 +434,42 @@ In this scenario, we'll define a group of printers that the legal department use
    1. Universal print deployed on a printer
    1. Corporate printer
    1. Print to local
+
 1. Select **Close**.
 
 ### Configure policy printing actions
 
 1. Navigate to **Data loss prevention** > **Policies**.
+
 1. Select **Create policy** and select the custom policy template.
+
 1. Select **Full directory** under **Admin units**.
+
 1. Scope the location to only the **Devices** location.
+
 1. Create a rule with the following values:
+
    1. Add a **Condition**: **Content contains** = **Trainable classifiers**, **Legal Affairs**
    1. **Actions** = **Audit or restrict activities on devices**
    1. Then pick **File activities on all apps**
    1. The select **Apply restrictions to specific activity**
    1. Select **Print** = **Block**
+
 1. Select **Choose different print restrictions**
+
 1. Under **Printer group restrictions**, select **Add group** and select **Legal printers**.
+
 1. Set **Action** = **Allow**.
+
    > [!TIP]
    > The **Allow** action wil record  and audit event to the audit log, but not generate an alert or notification. 
+
 1. Select **Save** and then **Next**.
+
 1. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+
 1. Review your settings and choose **Submit**.
+
 1. The new DLP policy will appear in the policy list.
 
 ## Scenario 9: Network exceptions
@@ -457,6 +494,7 @@ Network exceptions enable you to configure Allow, Audit only, Block with overrid
 #### Get the Server address or Network address
 
 1. On a DLP monitored Windows device, open a **Windows PowerShell** window as an administrator.
+
 1. Run this cmdlet:
 
    ```powershell-interactive
@@ -464,6 +502,7 @@ Network exceptions enable you to configure Allow, Audit only, Block with overrid
    ```
 
 1. Running this cmdlet returns multiple fields and values.
+
 1. Find the **ServerAddress** field and record that value. You'll use this when you create a VPN entry in the VPN list.
 
 1. Find the **Name** field and record that value. The **Name** field maps to the **Network address** field when you create a VPN entry in the VPN list.
@@ -471,25 +510,37 @@ Network exceptions enable you to configure Allow, Audit only, Block with overrid
 #### Add a VPN
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **VPN settings**.
+
 1. Select **Add or edit VPN addresses**.
+
 1. Provide either the **Server address** or **Network address** from running Get-VpnConnection.
+
 1. Select **Save**.
+
 1. Close the item.
 
 #### Configure policy actions
 
 1. Open **Data loss prevention** > **Policies**.
+
 1. Select **Create policy** and select the custom policy template.
+
 1. Select **Full directory** under **Admin units**.
+
 1. Scope the location to **Devices** only.
+
 1. Create a rule where:
+
    1. **Content contains** = **Trainable classifiers**, **Legal Affairs**
    1. **Actions** = **Audit or restrict activities on devices**
    1. Then pick **File activities on all apps**
    1. The select **Apply restrictions to specific activity**
    1. Select the actions that you want to configure **Network exceptions** for.
+
 1. Select **Copy to clipboard** and the **Audit only** action
+
 1. Select **Choose different copy to clipboard restrictions**.
+
 1. Select **VPN** and set the action to **Block with override**.
 
    > [!IMPORTANT]
@@ -499,8 +550,11 @@ Network exceptions enable you to configure Allow, Audit only, Block with overrid
    > The **Apply to all activities** option will copy the network exceptions that are defined here and apply them to all the other configured specific activities, like **Print**, and **Copy to a network share**. ***This will overwrite the network exceptions on the other activities The last saved configuration wins.***  
 
 1. **Save**.
+
 1. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+
 1. Review your settings and choose **Submit** and then **Done**.
+
 1. The new DLP policy will appear in the policy list.
  
 ## See also
