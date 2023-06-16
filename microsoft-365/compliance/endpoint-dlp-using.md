@@ -315,7 +315,7 @@ You can also audit, block with override, or block these user upload sensitive it
 
 15. Select the user activities you want to monitor or restrict and the actions for DLP to take in response to those activities.
 
-16. On the **Policy mode** page, choose **Turn it on right away**. Choose **Next** and then **Submit**
+16. On the **Policy mode** page, choose **Turn it on right away**. Choose **Next** and then **Submit**.
 
 ## Scenario 6: Monitor or restrict user activities on sensitive service domains
 
