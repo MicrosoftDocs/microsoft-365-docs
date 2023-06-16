@@ -47,7 +47,7 @@ Use these steps to perform a DLP policy migration:
 
 ## Interactive guide
 
-Check out this [interactive guide](https://mslearn.cloudguides.com/guides/Use%20the%20Microsoft%20Purview%20DLP%20migration%20assistant) for a visual walk through of the migration process.
+Check out this [interactive guide](https://mslearn.cloudguides.com/guides/Use%20the%20Microsoft%20Purview%20DLP%20migration%20assistant) for a visual walkthrough of the migration process.
 
 ### Step 1: Log in to your account
 
@@ -193,7 +193,7 @@ Once imported, DLP policies can be in one of three states:
 
 You can set the state in the migration assistant prior to migrating a policy using these two steps:
 
-1. Choose whether to turn-on or off from the following three options:
+1. Choose whether to turn on or off from the following three options:
     - Turn on policy immediately.
     - Turn on policy in test mode first. Remove from test mode later manually.
     - Keep it off. Turn it on later manually.
