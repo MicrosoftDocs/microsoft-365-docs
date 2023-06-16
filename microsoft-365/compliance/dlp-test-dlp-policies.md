@@ -28,7 +28,7 @@ When you deploy a new policy, [you should run it in test mode,](dlp-overview-pla
 
 ## Test-DlpPolicies (preview)
 
-**Test-DlpPolicies** is a cmdlet that allows you to see what SharePoint Online and OneDrive for Business scoped DLP policies match/don't match an individual item in SharePoint Online or OneDrive for Business. 
+**Test-DlpPolicies** is a cmdlet that allows you to see what DLP policies scoped to SharePoint and OneDrive match/don't match an individual item in SharePoint or OneDrive.
 
 ### Before you begin
 
@@ -39,8 +39,8 @@ When you deploy a new policy, [you should run it in test mode,](dlp-overview-pla
 
 > [!IMPORTANT]
 >
-> - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
-> - It will only report results for policies that include SharePoint Online alone, OneDrive alone or SharePoint and OneDrive in their scope.
+> - Test-DlpPolicies only works for items that are in SharePoint or OneDrive.
+> - It will only report results for policies that include SharePoint alone, OneDrive alone, or SharePoint and OneDrive in their scope.
 > - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
 ### Use Test-DlpPolices
@@ -51,9 +51,9 @@ To see which DLP policies an item will match, follow these steps:
 
 1. Open the SharePoint or OneDrive folder in a browser.
 
-1. Select the files ellipsis and select **details**.
+1. Select the file's ellipsis and select **details**.
 
-1. In the details pane, scroll down and select **Path** (Copy direct link). Save it.
+1. In the details pane, scroll down and select **Path**. Copy the direct link and save it.
 
 For example:
 
@@ -63,7 +63,7 @@ For example:
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-1. For SharePoint use the following syntax to get the site id and save it.
+1. For SharePoint, use the following syntax to get the site ID and save it:
 
 ```powershell
 $reportAddress = "email@report.com" $siteName = "SITENAME@TENANT.onmicrosoft.com" $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  $r = Get-Mailbox -Identity $siteName -GroupMailbox $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
@@ -80,8 +80,7 @@ Here's an example of a returned value:
 
 #### Run Test-DlpPolicies
 
-1. Run this syntax in the PowerShell window
- 
+1. Run the following syntax in the PowerShell window:
 
 ```powershell
 Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
@@ -96,7 +95,7 @@ For detailed syntax and parameter information, see [Test-DlpPolicies](/powershel
 
 ### Interpret the report
 
-The report is sent to the smtp address you passed the Test-DlpPolicies PowerShell command. There are multiple fields, here are explanations of the most important ones.
+The report is sent to the SMTP address that you passed the Test-DlpPolicies PowerShell command to. There are multiple fields. Here are explanations of the most important ones.
 
 
 |Field name  |Means  |
