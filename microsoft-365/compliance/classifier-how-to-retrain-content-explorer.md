@@ -23,7 +23,7 @@ description: "Learn how to provide feedback to a trainable classifier in Content
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify items for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
-This article shows you how to improve the performance of custom trainable classifiers by providing them more feedback.
+This article shows you how to improve the performance of custom trainable classifiers by providing them with more feedback.
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
