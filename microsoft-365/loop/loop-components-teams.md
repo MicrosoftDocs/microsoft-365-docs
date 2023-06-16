@@ -79,7 +79,7 @@ Microsoft is currently working on a third-party graph export API solution for Lo
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
-If you disable these experiences as outlined in the [Settings management for Loop functionality in Teams](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section, or disable these experiences as outlined in the [Settings management in Cloud Policy](settings-management-in-cloud-policy) section, the following experience changes will apply:
+If you disable these experiences as outlined in the [Settings management for Loop functionality in Teams](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section, or disable these experiences as outlined in the [Settings management in Cloud Policy](loop-components-sharepoint.md#settings-management-in-cloud-policy) section, the following experience changes will apply:
 
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. Users won't be able to create new .loop files.
 - Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content will be displayed within the app that Loop components have been disabled in.
