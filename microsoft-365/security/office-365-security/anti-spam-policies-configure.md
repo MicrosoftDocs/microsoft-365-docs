@@ -132,7 +132,7 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.¹ ⁴|✔<sup>\*</sup>|✔<sup>\*</sup>|✔||✔<sup>\*</sup>|
+     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.¹ ⁴|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|✔<sup>\*</sup>|✔<sup>\*</sup>|
      |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <br/><br/> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <br/><br/> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.¹ ²|✔|✔|✔||✔|
      |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.¹ ² <br/><br/> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
      |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <br/><br/> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
