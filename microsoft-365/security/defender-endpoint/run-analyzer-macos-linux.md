@@ -275,7 +275,7 @@ You can use this option to skip the faulty rules added in any of the auditd rule
 
 ```console
 -h, --help                                  show this help message and exit
--e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules, default is true.
+-e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules. In case no argumanet is passed, the option will be true by default.
 ```
 
 Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
