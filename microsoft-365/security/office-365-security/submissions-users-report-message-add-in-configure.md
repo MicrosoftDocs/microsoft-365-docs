@@ -98,13 +98,13 @@ After the add-in is installed and enabled, users see the following icons based o
 
 - The add-ins aren't available for on-premises Exchange mailboxes.
 
-- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
+- For more information on how to report a message using reporting in Outlook, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
   > [!NOTE]
-  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
+  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
   >
-  > - The toggle on the **User reported** page is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-  > - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
+  > - **Monitor reported messages in Outlook** is selected.
+  > - **Use the built-in "Report" button in Outlook** is selected.
 
 - Organizations that use URL filtering or a third-party security solution (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
   - `ipagave.azurewebsites.net`

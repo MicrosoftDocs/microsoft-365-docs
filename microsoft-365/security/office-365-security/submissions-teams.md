@@ -98,8 +98,8 @@ For more information about user reported message settings in the Defender portal
 
 - The reported message remains visible to the user in the Teams client.
 - Users can report the same message multiple times.
-- The message sender isn't notified that the message(s) was reported.
-- Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email sent to user after admin review** on **User reported** page as described in [Options for Microsoft reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-microsoft-reporting-tools).
+- The message sender isn't notified that messages were reported.
+- Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email notifications** section on **User reported settings** page as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users).
 
 > [!IMPORTANT]
 >
