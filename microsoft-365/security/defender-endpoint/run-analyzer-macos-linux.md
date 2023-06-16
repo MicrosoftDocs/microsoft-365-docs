@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/18/2023
+ms.date: 06/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -35,6 +35,7 @@ There are two ways to run the client analyzer tool:
 1. Using a binary version (no Python dependency)
 2. Using a Python-based solution
 
+
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
@@ -47,10 +48,10 @@ If using a terminal download using the command:
 2. Verify the download
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'E812F96A7735C746129ACD66468E2C524CB016359780AFB8CF972D281C2A2B81'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13'
 
     ```console
-    echo 'E812F96A7735C746129ACD66468E2C524CB016359780AFB8CF972D281C2A2B81  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13  XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -109,7 +110,10 @@ When using a terminal, unzip the file using one of the following commands based 
 
 > [!NOTE]
 >
-> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+> - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+>
+> >[!WARNING]
+> >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -128,7 +132,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo '01AC21ED1963E5BFA9926300029B7BC57826ED3904DE774458CD8CF7C872E896  XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '1A8004C89E8B75FF892AAC66F1B1D07F3C7030720070A1A1E677A099A9ADC32E  XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
@@ -226,21 +230,23 @@ Add exclusions for audit-d monitoring.
 > This functionality exists for Linux only
 
 ```console
--h, --help            show this help message and exit
--e <executable>, --exe <executable>
-                      exclude by executable name, i.e: bash
--p <process id>, --pid <process id>
-                      exclude by process id, i.e: 911
--d <directory>, --dir <directory>
-                      exclude by target path, i.e: /var/foo/bar
--x <executable> <directory>, --exe_dir \<executable\> <directory>
-                      exclude by executable path and target path, i.e:
-                      /bin/bash /var/foo/bar
--q <q_size>, --queue <q_size>
-                      set dispatcher q_depth size
--r, --remove          remove exclusion file
--s, --stat            get statistics about common executables
--l, --list            list auditd rules
+  -h, --help            show this help message and exit
+  -e <executable>, --exe <executable>
+                        exclude by executable name, i.e: bash
+  -p <process id>, --pid <process id>
+                        exclude by process id, i.e: 911
+  -d <directory>, --dir <directory>
+                        exclude by target path, i.e: /var/foo/bar
+  -x <executable> <directory>, --exe_dir <executable> <directory>
+                        exclude by executable path and target path, i.e: /bin/bash /var/foo/bar
+  -q <q_size>, --queue <q_size>
+                        set dispatcher q_depth size
+  -r, --remove          remove exclusion file
+  -s, --stat            get statistics about common executables
+  -l, --list            list auditd rules
+  -o, --override        Override the existing auditd exclusion rules file for mdatp
+  -c <syscall number>, --syscall <syscall number>
+                        exclude all process of the given syscall
 ```
 
 Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`

@@ -157,7 +157,7 @@ Unrestricted policies are created and managed by users in these role groups:
 
 See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. 
 
-Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer-and-reports).
 
 ### Administrative Unit restricted policies (preview)
 
@@ -495,7 +495,7 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - User's risk level for Adaptive Protection is
 - Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (PDF, Office files, .ZIP, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Document or attachment is password protected (PDF, Office files, .ZIP, .7z, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
 - File type is
 - File extension is
 - The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
@@ -558,7 +558,7 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 |Sender AD attribute matches patterns | EXO | Regex length <= 128 char; Count <= 600 | Medium |
 |Content of email attachment(s) can't be scanned|EXO| [Supported file types](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)  | Low |
 |Incomplete scan of email attachment content | EXO | Size > 1 MB  | Low |
-|Attachment is password-protected | EXO | File types: Office files, ZIP, and 7z |Low|
+|Attachment is password-protected | EXO | File types: Office files, .PDF, .ZIP, and 7z |Low|
 |Attachment's file extension is |EXO/SPO/ODB | Count <= 50 | High|
 |Recipient is a member of |EXO | Count <= 600 | High |
 |Recipient domain is | EXO| Domain name length <= 67; Count <= 5000  | Low |
@@ -859,7 +859,7 @@ To learn more about user notification and policy tip configuration and use, incl
 
 #### Policy tip references
 
-Details on support for policy tips and notfications for different apps can be found here:
+Details on support for policy tips and notifications for different apps can be found here:
 
 - [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
 
@@ -895,19 +895,11 @@ The intent of **User overrides** is to give users a way to bypass, with justific
 
 Typically, user overrides are useful when your organization is first rolling out a policy. The feedback that you get from any override justifications and identifying false positives helps in tuning the policy.
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
-
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
-
-<!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
-
-To learn more about user overrides, see:
-
-- [View the justification submitted by a user for an override](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
 #### Business justification X-Header
 
-When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides, open the [DLP false positives and overrides report](/microsoft-365/compliance/view-the-dlp-reports#view-the-justification-submitted-by-a-user-for-an-override) or you can [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log values:
+When a user overrides a block with override action on an email, the override option and the text that they provide are stored in the [Audit log](/microsoft-365/compliance/audit-solutions-overview.md) and in the email X-header. To view the business justification overrides [search the audit log in the compliance portal](audit-log-search.md) for `ExceptionInfo` value for the details. Here's an example of the audit log values:
 ```xml
 {
     "FalsePositive"; false,
@@ -928,11 +920,6 @@ If you have an automated process that makes use of the business justification va
 >  Notice that the values are separated by semicolons. The maximum free text allowed is 500 characters.
 
 ### Incident reports
-
-<!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
-
-/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes the original message as an attachment that matches a DLP policy.
 
