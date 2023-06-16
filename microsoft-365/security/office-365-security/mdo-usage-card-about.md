@@ -32,7 +32,7 @@ appliesto:
 In Microsoft Defender for Office 365 (MDO), usage card is available to help admins and SecOps teams understand their organization’s active usage of MDO licenses in comparison to the actual number of licenses purchased. This can encourage a license true-up.
 
 > [!NOTE]
-> The usage card is enabled for tenants with at least 1 paid Defender for Office 365 Plan 1 (P1) or Defender for Office 365 Plan 2 (P2) license.
+> The usage card is enabled for tenants with at least one paid Defender for Office 365 Plan 1 (P1) or Defender for Office 365 Plan 2 (P2) license.
 
 Usage cards can help determine:
 
@@ -50,7 +50,7 @@ In the usage card for the global and billing admins, there’s a **Add more lice
 
 [Add image]
 
-The **See licensing details** option is available only for global and billing admins. For security admins, SecOps, and security readers, this option is not available.  
+The **See licensing details** option is available only for global and billing admins. For security admins, SecOps, and security readers, this option isn't available.  
 
 ## Understand the usage details
 
@@ -84,7 +84,7 @@ Click **See licensing details** to go to the billing page to purchase more licen
 
 ### What are the different types of active users?
 
-There are 3 types of active users:
+There are three types of active users:
 
 - **Defender for Office 365 active users**: The distinct user count with active usage of MDO (P1 and/or P2 features) over a rolling 28 days for a given paid MDO tenant.
 
@@ -108,7 +108,7 @@ Usage counts can be determined in the following way:
 
 ### What does Collecting license and usage data status mean?
 
-If you see the following status in your usage card, it means Microsoft is still collecting your current licensing and usage data. When it is available, you will be able to see the full usage card and insights.
+If you see the following status in your usage card, it means Microsoft is still collecting your current licensing and usage data. When it's available, you'll be able to see the full usage card and other details.
 
 [Add image]
 
