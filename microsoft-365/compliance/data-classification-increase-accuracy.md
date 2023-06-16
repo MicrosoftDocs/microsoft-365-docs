@@ -22,7 +22,7 @@ description: "Learn how to increase the accuracy of your classifiers"
 
 Classifiers, such as [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md), are used in various types of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
 
-This article shows you how to confirm whether items matched by a classifier are true positives (a **Match**) or a false positives (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+This article shows you how to confirm whether items matched by a classifier are true positives (a **Match**) or false positives (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
 
 The **Match**, **Not a match** experience is available in:
 
