@@ -560,10 +560,6 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus
         href: evaluate-microsoft-defender-antivirus.md
-      - name: Microsoft Defender Antivirus ring deployment guides
-        items:
-        - name: Microsoft Defender Antivirus ring deployment overview
-          href: microsoft-defender-antivirus-ring-deployment.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
