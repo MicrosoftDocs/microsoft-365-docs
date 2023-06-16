@@ -1245,9 +1245,9 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Chrome Extension
+          - name: Learn about the Microsoft Purview extension for Chrome
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension
+          - name: Learn about the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -1273,15 +1273,15 @@
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Get started with data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises repositories
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Chrome Extension
+          - name: Get started with the Microsoft Purview extension for Chrome
             href: dlp-chrome-get-started.md
-          - name: Get started with the Microsoft Purview Firefox extension (preview)
+          - name: Get started with the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
@@ -1305,8 +1305,6 @@
               href: what-the-dlp-policy-templates-include.md
             - name: Create a DLP policy to protect documents with FCI or other properties
               href: protect-documents-that-have-fci-or-other-properties.md
-            - name: View the DLP reports
-              href: view-the-dlp-reports.md
             - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
             - name: Configure and view alerts for DLP policies

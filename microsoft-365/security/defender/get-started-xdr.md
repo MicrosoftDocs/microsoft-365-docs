@@ -1,5 +1,5 @@
 ---
-title: Getting started with Microsoft Defender Experts for XDR
+title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
@@ -26,13 +26,13 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 
 Once the Defender Experts for XDR team is ready to onboard your organization, you’ll receive a welcome email to continue the setup and get you started.
 
 Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft 365 Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
-![Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide](../../media/XDR/security-team-boost.png)
+:::image type="content" source="../../media/xdr/security-team-boost.png" alt-text="Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/security-team-boost.png":::
 
 ## Grant permissions to our experts
 
@@ -45,7 +45,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 
 [Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
-![Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide](../../media/xdr/grant-permissions-to-experts.png)
+:::image type="content" source="../../media/xdr/grant-permissions-to-experts.png" alt-text="Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/grant-permissions-to-experts.png":::
 
 **To grant our experts permissions:**
 
@@ -58,13 +58,13 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**. In this page, you could also turn **Access security data from all devices** on or off under the access levels.
 
 > [!IMPORTANT]
-> If you turn off **Access security data from all devices**, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md)
+> If you turn off **Access security data from all devices**, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md).
 
 ## Tell us who to contact for important matters
 
 Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there are critical incidents, service updates, occasional queries, and other recommendations. Once identified, the individuals will receive an email notifying them that they have been chosen as a contact for incident notification or service review purposes.
 
-![Screenshot of Incident contacts page in Defender for Experts XDR settings step-by-step guide](../../media/XDR/who-to-contact-for-important-matters.png)
+:::image type="content" source="../../media/xdr/who-to-contact-for-important-matters.png" alt-text="Screenshot of Incident contacts page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/who-to-contact-for-important-matters.png":::
 
 **To add notification contacts:**
 
@@ -83,7 +83,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 2. Select the **Notification type** from the dropdown box.
 3. Select **Add**.
 
-![Screenshot of notification contacts](../../media/xdr/who-to-contact-for-imp-matters-2.png)
+:::image type="content" source="../../media/xdr/who-to-contact-for-imp-matters-2.png" alt-text="Screenshot of notification contacts." lightbox="../../media/xdr/who-to-contact-for-imp-matters-2.png":::
 
 ## Run initial Defender Experts readiness checks
 
