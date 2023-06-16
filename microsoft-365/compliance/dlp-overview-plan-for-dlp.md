@@ -45,7 +45,7 @@ Many organizations choose to implement DLP to comply with various governmental o
 
 Organizations can start their DLP journey:
 
-- from a platform focus,for instance, if they want to protect information in Teams Chat and Channel messages or on Windows 10 or 11 devices
+- from a platform focus, for instance, if they want to protect information in Teams Chat and Channel messages or on Windows 10 or 11 devices
 - knowing what sensitive information they want to prioritize protecting, like health care records, and going straight to defining policies to protect it
 - without knowing what their sensitive information is, where it is, or who is doing what with it; in this case they start with discovery and categorization and take a more methodical approach
 - without knowing what their sensitive information is, or where it is, or who is doing what with it, but moving straight to defining policies and using those outcomes as a starting place and then refining their policies from there
@@ -197,11 +197,11 @@ If you're creating DLP policies with a large potential impact, we recommend foll
     
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content is protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
-    ![Options for using test mode and turning on policy.](../media/dlp-policy-mode.png)
+    ![Screenshot of options for using test mode and turning on policy.](../media/dlp-policy-mode.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy.](../media/dlp-toggle-rule-off-on.png)
+    ![Screenshot of options for turning off a rule in a policy.](../media/dlp-toggle-rule-off-on.png)
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In the row for a rule, choose the ellipses (**...**), and then move an item down in the list to the desired position.
 
