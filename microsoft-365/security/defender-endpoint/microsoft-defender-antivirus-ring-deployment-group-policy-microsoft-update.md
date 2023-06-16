@@ -191,3 +191,4 @@ If you encounter problems with your deployment, create or append your Microsoft 
 - [Antivirus profiles - Devices managed by Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy#antivirus-profiles)
 - [Use Endpoint security Antivirus policy to manage Microsoft Defender update behavior (Preview)](/mem/intune/fundamentals/whats-new#use-endpoint-security-antivirus-policy-to-manage-microsoft-defender-update-behavior-preview)
 - [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout.md)
+- [Microsoft Defender Antivirus ring deployment overview](microsoft-defender-antivirus-ring-deployment.md)

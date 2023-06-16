@@ -86,5 +86,3 @@ Customers that prioritize availability over security, should take a crawl, walk,
 - Ring deployment using Group Policy and Windows Server Update Services
    - [Pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md)
    - [Production ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md)
-
-

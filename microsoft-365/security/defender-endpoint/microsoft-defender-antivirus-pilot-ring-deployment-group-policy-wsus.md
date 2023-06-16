@@ -189,7 +189,6 @@ The Windows Server Update Services Configuration Wizard is complete.
 
 For more information, see [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md).
 
-
 ## See also 
 
 [Microsoft Defender Antivirus ring deployment](microsoft-defender-antivirus-ring-deployment.md)
