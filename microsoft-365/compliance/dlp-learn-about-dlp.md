@@ -231,7 +231,7 @@ You can also view details of the associated event with rich metadata in the same
 
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-You can view the last 30 days of DLP information in [Activity Axplorer](data-classification-activity-explorer.md) using these preconfigured filters:
+You can view the last 30 days of DLP information in [Activity Explorer](data-classification-activity-explorer.md) using these preconfigured filters:
 
 - Endpoint DLP activities
 - Files containing sensitive info types
