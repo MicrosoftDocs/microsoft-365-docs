@@ -218,7 +218,7 @@ There are three procedures.
     1. Select **Sensitivity labels** then **Highly Confidential** and choose **Add**.
     1. Under **Actions** choose **Add an action**. 
     1. Select **Audit or restrict activities on Windows devices** > **File activities for apps in restricted app groups**.
-    1. Choose **Add restricted app group** then choose the *Cloud Sync Apps* group you created previously
+    1. Choose **Add restricted app group** then choose the *Cloud Sync Apps* group you created previously.
     1. Choose **Apply a restriction to all activity** > **Block**. For the purposes of this scenario, clear all the other activities.
     1. Under **User notifications**, toggle **User notifications** to **On** and under **Endpoint devices** choose **Show users a policy tip notification when an activity** if not already enabled.
     
