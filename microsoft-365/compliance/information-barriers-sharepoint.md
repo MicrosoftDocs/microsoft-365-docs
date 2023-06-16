@@ -389,7 +389,7 @@ Learn more about managing [Microsoft Teams connected teams sites](/sharepoint/te
 Users will see search results from:
 
 - **Segment associated sites**: When the site's segment matches the user's segment and the user has site access permission. For example, a site with *Explicit* mode.
-- **Non-segmented sites**: When the user has existing access to the content or site. For example, sites with *Open*, *Owner Moderated* or *Implicit* mode. When the user selects the search result to open the content in the site, the user is denied access if they don't match with the site's IB policy.
+- **Non-segmented sites**: When the user has existing access to the content or site. For example, sites with *Open*, *Owner Moderated* or *Implicit* mode. When the user selects the search result to open the content in the site, the user is denied access if they don't match the site's IB policy.
 
 ## Effects of changes to user segments
 
