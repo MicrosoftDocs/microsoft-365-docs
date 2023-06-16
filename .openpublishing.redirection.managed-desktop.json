@@ -418,7 +418,7 @@
      {
         "source_path":"microsoft-365/managed-desktop/service-description/mmd-app-requirements.md",
         "redirect_url":"/managed-desktop/service-description/mmd-app-requirements",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/service-description/operations-and-monitoring.md",
