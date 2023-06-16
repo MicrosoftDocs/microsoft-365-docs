@@ -30,7 +30,7 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
 > [!TIP]
 > You can change your EDM schema and sensitive information table source file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Using the caseInsensitive and ignoredDelimiters fields](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields).
 
-1. Edit your **edm.xml** file (this is the file discussed in the [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
+1. Edit your **edm.xml** file (this file is discussed in the [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
 2. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -40,7 +40,7 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
       Set-DlpEdmSchema -FileData ([System.IO.File]::ReadAllBytes('.\\edm.xml')) -Confirm:$true
       ```
 
-      You will be prompted to confirm, as follows:
+      You're prompted to confirm as follows:
 
       > Confirm
       >
@@ -68,7 +68,7 @@ If you want to remove the schema you're using for EDM-based classification, foll
       Remove-DlpEdmSchema -Identity 'patientrecords'
       ```
 
-      You will be prompted to confirm:
+      You're prompted to confirm the following message:
 
       > Confirm
       >
