@@ -77,7 +77,7 @@ This scenario is for an unrestricted admin creating and full directory policy.
 
 14. In the left navigation pane, choose **Data loss prevention** and then **Activity explorer**.
 
-15. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+15. Try to share a test item containing content that will trigger the U.S. Personally Identifiable Information (PII) Data condition. This should trigger the policy.
 
 16. Check Activity explorer for the event.
 
@@ -87,7 +87,7 @@ This scenario is for an unrestricted admin modifying a full directory scoped pol
 
 1. Navigate to the data loss prevention [Policies page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in Scenario 1.
+2. Choose the **U.S. Personally Identifiable Information (PII) Data Enhanced** policy that you created in Scenario 1.
 
 3. Choose **Edit policy**.
 
@@ -103,7 +103,7 @@ This scenario is for an unrestricted admin modifying a full directory scoped pol
 
 8. Retain all your previous settings by choosing **Next** throughout the rest of the wizard, then **Submit** the policy changes.
 
-9. Attempt to share a test item that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+9. Try to share a test item containing content that will trigger the U.S. Personally Identifiable Information (PII) Data condition. This should trigger the policy.
 
 10. Check the activity explorer for the event.
 
@@ -139,7 +139,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Check the activity explorer for the event.
 
-## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with autoquarantine
+## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with Auto-quarantine
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
@@ -147,14 +147,14 @@ This scenario is for an unrestricted admin creating a full directory policy.
 
 In this scenario, synchronizing files with the **Highly Confidential** sensitivity label to OneDrive is blocked. This is a complex scenario with multiple components and procedures. You'll need:
 
-- A Microsoft Azure Active Directory (Azure AD) user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
+- A Microsoft Azure Active Directory (Azure AD) user account to target and an onboarded Windows 10/11 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
 - Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
 
-1. Configure the Endpoint DLP Autoquarantine settings.
+1. Configure the Endpoint DLP Auto-quarantine settings.
 2. Create a policy that blocks sensitive items that have the **Highly Confidential** sensitivity label.
-3. Create a Word document on the Windows 10 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized.  
+3. Create a Word document on the Windows 10/11 device that the policy is targeted to, apply the label, and copy it to the user accounts local OneDrive folder that is being synchronized.  
 
 ### Configure Endpoint DLP unallowed app and Auto-quarantine settings
 
@@ -182,8 +182,8 @@ There are three procedures.
 
 10. Append a date and time stamp to the original file name.
    
-    > [!NOTE]
-    > DLP Auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
+> [!NOTE]
+> DLP auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
 
 10. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*, you could enter:
     
@@ -228,20 +228,20 @@ There are three procedures.
 
 11. Review your settings and choose **Submit**.
 
-    > [!NOTE]
-    > Allow at least an hour for the new policy to be replicated and applied to the target Windows 10 computer.
+> [!NOTE]
+> Allow at least an hour for the new policy to be replicated and applied to the target Windows 10 computer.
 
 12. The new DLP policy appears in the policy list.
 
-### Test Auto-quarantine on the Windows 10 device
+### Test Auto-quarantine on the Windows 10/11 device
 
-1. Sign in to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
+1. Sign in to the Windows 10/11 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
 2. Create a folder whose contents won't be synchronized to OneDrive. For example:
 
     *C:\auto-quarantine source folder*
 
-3. Open Microsoft Word and create a file in the autoquarantine source folder. Apply the **Highly confidential** sensitivity label; see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label; see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
 
@@ -291,7 +291,7 @@ You can also audit, block with override, or block these user upload sensitive it
 
 3. Name the group.
 
-4. Enter the **Sensitive service domain** for the group. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com.
+4. Enter the **Sensitive service domain** for the group. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website, or: \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com.
  
 5. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
 
@@ -442,8 +442,8 @@ In this scenario, we'll define a group of printers that the legal department use
 1. Under **Printer group restrictions**, select **Add group** and select **Legal printers**.
 
 1. Set **Action** = **Allow**.
-    > [!TIP]
-    > The **Allow** action wil record  and audit event to the audit log, but not generate an alert or notification. 
+> [!TIP]
+> The **Allow** action wil record  and audit event to the audit log, but not generate an alert or notification. 
 
 1. Select **Save** and then **Next**.
 
@@ -535,7 +535,6 @@ Get-VpnConnection
 1. Review your settings and choose **Submit** and then **Done**.
 
 1. The new DLP policy will appear in the policy list.
- 
  
 ## See also
 
