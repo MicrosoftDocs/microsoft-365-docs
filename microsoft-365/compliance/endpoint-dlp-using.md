@@ -139,7 +139,7 @@ This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Check the activity explorer for the event.
 
-## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with Auto-quarantine
+## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine
 
 This scenario is for an unrestricted admin creating a full directory policy.
 
