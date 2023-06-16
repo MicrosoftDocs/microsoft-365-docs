@@ -18,7 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 05/24/2023
+ms.date: 06/24/2023
 ---
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and Microsoft Updates
