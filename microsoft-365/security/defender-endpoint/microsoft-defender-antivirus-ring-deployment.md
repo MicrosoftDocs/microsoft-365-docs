@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Antivirus ring deployment
-description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article explains how to deploy Microsoft Defender for Endpoint in measured, staged cycles.
-keywords: deploy Microsoft Defender for Endpoint, Ring deployment Microsoft Defender for Endpoint, cybersecurity, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
+title: Microsoft Defender Antivirus ring deployment guide overview
+description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides an overview about how to use ring deployment methods to update your Microsoft Defender Antivirus clients.
+keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, threat intelligence, cybersecurity, cloud security,
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 05/24/2023
+ms.date: 06/24/2023
 ---
 
 # Deploy Microsoft Defender Antivirus in rings

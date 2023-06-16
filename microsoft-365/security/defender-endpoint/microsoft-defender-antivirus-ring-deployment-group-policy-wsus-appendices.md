@@ -1,7 +1,7 @@
 ---
 title: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
-description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article explains how to deploy Microsoft Defender for Endpoint in measured, staged cycles.
-keywords: deploy Microsoft Defender for Endpoint, Ring deployment Microsoft Defender for Endpoint, cybersecurity, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
+description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides supplemental information to the Microsoft Defender Antiviurs Gropu Policy WSUS ring deployment guide.
+keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Intune Microsoft Defender Antivirus Microsoft Update, Microsoft Defender Antivirus Intune MU, threat intelligence, cybersecurity, cloud security,
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 05/24/2023
+ms.date: 06/24/2023
 ---
 
 # Appendices for Microsoft Defender Antivirus ring deployment using Group Policy and Windows Server Update Services (WSUS)

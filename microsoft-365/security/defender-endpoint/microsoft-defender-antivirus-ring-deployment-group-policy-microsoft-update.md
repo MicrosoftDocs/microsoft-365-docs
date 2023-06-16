@@ -1,7 +1,7 @@
 ---
-title: Production ring deployment using Group Policy and Microsoft Updates
-description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article explains how to deploy Microsoft Defender for Endpoint in measured, staged cycles.
-keywords: deploy Microsoft Defender for Endpoint, Ring deployment Microsoft Defender for Endpoint, cybersecurity, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
+title: Production ring deployment using Group Policy and Microsoft Update (MU)
+description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using Group Policy and Microsoft Update (MU).
+keywords: Deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Group Policy, Microsoft Defender Antivirus Microsoft Update (MU), Microsoft Defender Antivirus Group Policy and Microsoft Update, threat intelligence, cybersecurity, cloud security,
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
