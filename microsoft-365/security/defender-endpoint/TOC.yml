@@ -640,7 +640,7 @@
             href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
           - name: Configuration Manager and WSUS
             href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
-          - name: Group Policy and Microsoft Updates
+          - name: Group Policy and Microsoft Update
             href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
           - name: Group Policy and network share
             href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md

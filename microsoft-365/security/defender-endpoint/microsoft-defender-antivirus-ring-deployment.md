@@ -69,9 +69,9 @@ To create your own custom gradual rollout process for daily and/or monthly updat
 
 - **Microsoft Intune and Microsoft Update** microsoft-intune-and-microsoft-update - Requires direct access to the internet. Microsoft Update (MU), formerly known as Windows Update (WU)
 - **System Center Configuration Manager and Windows Server Update Services** - System Center Configuration Manager (SCCM) Software Update Point (SUP) = SCCM + Windows Server Update Services (WSUS)
-- **Group Policy and WSUS**
 - **Group Policy and Microsoft Update** - Requires direct access to the internet
 - **Group Policy and network share** - For example, UNC path, SMB, CIFS
+- **Group Policy and WSUS**
 
 For details on how to use these tools, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
 
@@ -79,10 +79,12 @@ Customers that prioritize availability over security, should take a crawl, walk,
 
 ## Deployment scenarios
 
-- [Ring deployment using Group Policy and Microsoft Updates](microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md)
+- [Ring deployment using Intune and Microsoft Update](microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md)
+- [Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)](microsoft-defender-antivirus-ring-deployment-sscm-wsus.md)
+- [Ring deployment using Group Policy and Microsoft Update](microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md)
 - [Ring deployment using Group Policy and network share](microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md)
 - Ring deployment using Group Policy and Windows Server Update Services
    - [Pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md)
    - [Production ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md)
-- [Ring deployment using Intune and Microsoft Update](microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md)
-- [Ring deployment using System Center Configuration Manager and Windows Server Update Services (WSUS)](microsoft-defender-antivirus-ring-deployment-sscm-wsus.md)
+
+

@@ -193,3 +193,5 @@ For more information, see [Manage how and where Microsoft Defender Antivirus rec
 ## See also 
 
 [Microsoft Defender Antivirus ring deployment](microsoft-defender-antivirus-ring-deployment.md)
+
+[Microsoft Defender Antivirus production ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md)

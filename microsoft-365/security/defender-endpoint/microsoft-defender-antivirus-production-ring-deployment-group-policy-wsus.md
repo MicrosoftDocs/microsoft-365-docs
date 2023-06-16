@@ -172,3 +172,4 @@ If you encounter problems with your deployment, create or append your Microsoft 
  - [Step 3: Configure WSUS | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852346(v=ws.11)?redirectedfrom=MSDN#31-configure-network-connections)
  - [Step 4: Approve and Deploy WSUS Updates | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852348(v=ws.11)?redirectedfrom=MSDN)
  - [Step 5: Configure Group Policy Settings for Automatic Updates | Microsoft Learn](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn595129(v=ws.11))
+ - [Microsoft Defender Antivirus pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md)
