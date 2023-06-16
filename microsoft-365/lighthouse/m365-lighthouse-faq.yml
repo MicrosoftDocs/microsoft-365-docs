@@ -223,7 +223,7 @@ sections:
         answer: |
           When a customer tenant's configuration is updated in Lighthouse, the tenant's deployment status is refreshed automatically. However, changes made outside of Lighthouse are not immediately detected. Outside changes won't be detected until the next scheduled Lighthouse scan, or until a detection scan is manually initiated by a Lighthouse user. 
           
-          For instance, if Lighthouse indicates a user isn't licensed for a task, you can resolve this by assigning the required license to the user in the Microsoft 365 admin center. Afterwards, do one of the following to see the license assignment reflected in the deployment status:
+          For instance, if Lighthouse indicates a user isn't licensed for a task, you can resolve this by assigning the required license to the user in the Microsoft 365 admin center. Afterwards, do one of the following to see the license assignment reflected in the deployment status in Lighthouse:
         
           - Manually initiate a scan by selecting **Run detection** for the deployment task. This immediately updates the user's deployment status.
           - Wait for Lighthouse to automatically rescan the tenant and update the deployment status.
