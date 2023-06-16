@@ -103,27 +103,27 @@
      {
         "source_path":"microsoft-365/managed-desktop/service-description/device-lifecycle.md",
         "redirect_url":"/microsoft-365/managed-desktop/service-description/device-requirements",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/get-started/register-devices-self.md",
         "redirect_url":"/microsoft-365/managed-desktop/get-started/manual-registration",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/get-started/register-devices-partner.md",
         "redirect_url":"/microsoft-365/managed-desktop/get-started/partner-registration",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/get-started/register-reused-devices-self.md",
         "redirect_url":"/microsoft-365/managed-desktop/get-started/manual-registration-existing-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/get-started/set-up-devices.md",
         "redirect_url":"/microsoft-365/managed-desktop/get-started/prepare-devices",
-        "redirect_document_id":false
+        "redirect_document_id":true
      },
      {
         "source_path":"microsoft-365/managed-desktop/change-history-managed-desktop.md",
@@ -418,7 +418,7 @@
      {
         "source_path":"microsoft-365/managed-desktop/service-description/mmd-app-requirements.md",
         "redirect_url":"/managed-desktop/service-description/mmd-app-requirements",
-        "redirect_document_id":true
+        "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/managed-desktop/service-description/operations-and-monitoring.md",
