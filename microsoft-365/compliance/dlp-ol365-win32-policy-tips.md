@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/05/2023
+ms.date: 06/16/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -42,11 +42,11 @@ Yes
 
 Yes
 
-## Supported versions and channels
+<!--## Supported versions and channels
  
 - Version 2303 build 16.0.16216.10000 and higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
-
+-->
 ## Conditions that support policy tips in Outlook 365 for Win32
 
 ### Outlook perpetual versions for E3 and E5 users:
@@ -66,13 +66,12 @@ Applies to:
 - Content contains Sensitive info types
 - Content is shared from Microsoft 365
 
-### Microsoft 365 for enteprise
+### Conditions that support policy tips in Microsoft 365 for enteprise
 
 Applies to:
 
 - E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
-
 - Content contains Sensitive information types
 - Content contains Sensitivity labels (works for email labels, Office docs and PDF files)
 - Content is shared
@@ -89,22 +88,23 @@ Applies to:
 
 ## Actions that support policy tips in Outlook 365 for Win 32
 
-INSERT LIST HERE
+- Restrict access or encrypt the content in Microsoft 365 locations
+- Set headers
+- Remove header
+- Redirect the message to specific users
+- Forward the message for approval to sender's manager
+- Forward the message for approval to specific approvers
+- Add recipient to the To box
+- Add recipient to the Cc box
+- Add recipient to the Bcc box
+- Add the sender's manager as recipient
+- Removed O365 Message Encryption and rights protection
+- Prepend Email Subject
+- Add HTML Disclaimer
+- Modify Email Subject
+- Deliver the message to the hosted quarantine
 
-## Sensitive informaiton types that support policy tips in Outlook 365 for Win32
-
-Yes.
-
-### Outlook perpetual versions E3 and E5 users
-
-Applies to:
-
-- E3 users
-- Offline E5 users
-- E5 users with connected experience disabled
-- Online E5 users with Production version and build lower than 2303 &16.0.16216.10000
-- Semi-annual channel version and build lower than 2302 & 16.0.16130.20478
-
+## Sensitive information types that support policy tips in Outlook 365 for Win32
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
@@ -206,9 +206,7 @@ Applies to:
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
 
-
-
-### Microsoft 365 for enterprise ?????
+### Microsoft 365 for enterprise
 
 Applies to:
 
@@ -446,23 +444,19 @@ Custom sensitive information types that use REGEX, functions, keyword lists and 
 
 ### Document Fingerprint SITs
 
-YES/NO
+Policy tips are not supported.
 
 For more information on document fingerprint SITs, see [Document fingerprinting](document-fingerprinting.md)
 
 ## Sensitivity labels that support policy tips in Outlook 365 for Win32
 
-YES/NO
-
-INSERT LIST HERE
+Yes.
 
 For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
 
 ## Retention labels that support policy tips Outlook 365 for Win32
 
-YES/NO
-
-INSERT LIST HERE
+Retention labels don't support policy tips in Outlook 365 for Win32
 
 For more information on retention labels, see [Learn about retention policies and retention labels](retention.md)
 
