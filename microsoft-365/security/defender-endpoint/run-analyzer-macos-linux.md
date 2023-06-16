@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/18/2023
+ms.date: 06/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -34,6 +34,7 @@ There are two ways to run the client analyzer tool:
 
 1. Using a binary version (no Python dependency)
 2. Using a Python-based solution
+
 
 ## Running the binary version of the client analyzer
 
@@ -109,7 +110,10 @@ When using a terminal, unzip the file using one of the following commands based 
 
 > [!NOTE]
 >
-> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+> - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+>
+> >[!WARNING]
+> >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
