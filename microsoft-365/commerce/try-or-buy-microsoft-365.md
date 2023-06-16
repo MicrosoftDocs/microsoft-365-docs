@@ -83,7 +83,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
-**If you have an MCA billing account type**
+**If you have an MCA billing account type:**
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
@@ -92,7 +92,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 3. In the **Extend your trial's end date** pane, review the extension information, and, if necessary, select a payment method.
 4. Select **Extend trial**.
 
-**If you have a MOSA billing account type**
+**If you have a MOSA billing account type:**
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. and do one of the following:
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
@@ -109,7 +109,7 @@ If you want to buy your subscription before your trial is over, use the followin
 
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
-**If you have an MCA billing account type**
+**If you have an MCA billing account type:**
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
@@ -117,7 +117,7 @@ If you want to buy your subscription before your trial is over, use the followin
 2. On the subscription details page, select **Start a paid subscription now**.
 3. In the **Start a paid subscription now** pane, enter the number of licenses that you want, select a subscription length and billing frequency, then select **Change plan**.
 
-**If you have a MOSA billing account type**
+**If you have a MOSA billing account type:**
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
@@ -138,7 +138,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
-**If you have an MCA billing account type**
+**If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
@@ -154,7 +154,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 8. If necessary, change the number of licenses that you want to buy when the trial ends.
 9. When you're ready, select **Place order**.
 
-**If you have a MOSA billing account type**
+**If you have a MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
@@ -181,7 +181,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
-**If you have an MCA billing account type**
+**If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
@@ -192,7 +192,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 5. The **Product name** section lists the cost, subscription term, number of licenses, and renewal date for the subscription. To match the renewal date with another subscription paid by the billing profile, select **Select a different renewal date**.
 6. Select **Place order**.
 
-**If you have a MOSA billing account type**
+**If you have a MOSA billing account type:**
 
 *Watch: Move users to a different subscription*
 
