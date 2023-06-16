@@ -38,7 +38,7 @@ To access classifiers in the Microsoft Purview compliance portal:
 
 - the Compliance admin role or Compliance Data Administrator is required to train a classifier
 
-To use classifiers in the following scenarios, y9ou will need the permissions listed:
+To use classifiers in the following scenarios, you will need the permissions listed:
 
 | Scenario | Required Role Permissions|
 | -------- | --------|
