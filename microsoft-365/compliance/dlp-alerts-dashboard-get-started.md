@@ -58,7 +58,7 @@ The **content preview** feature is available only for these licenses:
 
 **Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription, or an E3 or G3 subscription, can create alert policies only where an alert is triggered every time an activity occurs.
 
-**Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must one of these licensing configurations:
+**Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must use one of these licensing configurations:
 
 - An E5 or G5 subscription
 - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
