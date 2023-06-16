@@ -171,7 +171,7 @@ You can ensure that documents are protected until DLP scans and marks them as sa
     - **Policy tips** [Select all that apply]
         
        > [!div class="mx-imgBorder"]
-       > ![DLP action to block external sharing of sensitive content.](../media/dlp-teams-external-sharing/user-notifications.png)
+       > ![DLP action to enable user notifications.](../media/dlp-teams-external-sharing/user-notifications.png)
 
 DLP policy in action when attempting to share a document in SharePoint that contains sensitive information with an external guest:
 
