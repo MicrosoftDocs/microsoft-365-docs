@@ -115,7 +115,7 @@ To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the
 2. Run the following command.
 
    ```powershell
-   Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
+   Get-MgDevice -All -ExpandProperty "registeredOwners" | Where-Object {($_.RegisteredOwners -ne $null) -and ($_.RegisteredOwners.Count -gt 0)}
    ```
 
 For more examples, see [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
