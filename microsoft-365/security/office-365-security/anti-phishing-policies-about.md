@@ -128,7 +128,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 > [!NOTE]
 > The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
 
-In anti-phishing policies, you can control whether `p=quarantine` or `p=reject` values in sender DMARC policies are honored. If a messages fails DMARC checks, you can specify separate actions for `p=quarantine` or `p=reject` in the sender's DMARC policy. The following settings are involved:
+In anti-phishing policies, you can control whether `p=quarantine` or `p=reject` values in sender DMARC policies are honored. If a message fails DMARC checks, you can specify separate actions for `p=quarantine` or `p=reject` in the sender's DMARC policy. The following settings are involved:
 
 - **Honor DMARC record policy when the message is detected as spoof**: This setting turns on honoring the sender's DMARC policy for explicit email authentication failures. When you select this setting, the following settings are available:
   - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: The available actions are:
