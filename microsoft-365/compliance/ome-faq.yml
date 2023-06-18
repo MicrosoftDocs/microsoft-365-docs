@@ -295,8 +295,8 @@ sections:
           You can log in to the encrypted message portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
 
       - question: |
-          What do I do if I don't receive the one-time pass code after I requested it?
+          What do I do if I don't receive the one-time passcode after I requested it?
         answer: |
           First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
           
-          Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.
+          Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time passcode, especially the first ones your organization receives, end up in quarantine.
