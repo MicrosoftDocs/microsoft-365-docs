@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/06/2021
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -45,7 +45,7 @@ To connect to Security & Compliance PowerShell, see [Security & Compliance Power
    ```
 
    > [!NOTE]
-   > The built-in rule package that contains the built-in sensitive information types is named Microsoft Rule Package. The rule package that contains the custom sensitive information types that you created in the Compliance center UI is named Microsoft.SCCManaged.CustomRulePack.
+   > The built-in rule package that contains the built-in sensitive information types is named *Microsoft Rule Package*. The rule package that contains the custom sensitive information types that you created in the Compliance center UI is named *Microsoft.SCCManaged.CustomRulePack*.
 
 2. Use the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet to store the custom rule package to a variable:
 

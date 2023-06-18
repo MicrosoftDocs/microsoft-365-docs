@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 03/01/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -29,7 +29,7 @@ You might need to modify keywords in one of your keyword dictionaries, or modify
 
 ## Modify a keyword dictionary in Compliance center
 
-Keyword dictionaries can be used as `Primary elements` or `Supporting elements` in sensitive information type (SIT) patterns. You can edit a keyword dictionary while creating a SIT or in an existing SIT. For example to edit an existing keyword dictionary:
+Keyword dictionaries can be used as **Primary elements** or **Supporting elements** in sensitive information type (SIT) patterns. You can edit a keyword dictionary while creating a SIT or in an existing SIT. For example to edit an existing keyword dictionary:
 
 1. Open the pattern that has the keyword dictionary you want to update.
 2. Find the keyword dictionary you want to update and choose edit.
@@ -37,7 +37,7 @@ Keyword dictionaries can be used as `Primary elements` or `Supporting elements` 
 
    ![screenshot edit keywords.](../media/edit-keyword-dictionary.png)
 
-4. Choose `Done`.
+4. Choose **Done**.
 
 ## Modify a keyword dictionary using PowerShell
 
