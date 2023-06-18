@@ -32,7 +32,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
 
-Microsoft Defender for Identity is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
+Microsoft Defender for Identity is now part of Microsoft 365 Defender, the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location, simplifying workflows, and integrating functionality from other Microsoft 365 Defender services.
 
 Microsoft Defender for Identity contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
 
@@ -40,7 +40,7 @@ Microsoft Defender for Identity contributes identity focused information into th
 
 [Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the [classic Defender for Identity portal](/defender-for-identity/classic-workspace-portal). 
 
-While they may not be in exactly same pages, much of your data is integrated into Microsoft 365 Defender pages so that you can view your data across all of your monitored entities.
+While data placement might differ from the classic Defender for Identity portal, your data is now integrated into Microsoft 365 Defender pages so that you can view your data across all of your monitored entities.
 
 The following sections describe enhanced Defender for Identity features found in Microsoft 365 Defender.
 
