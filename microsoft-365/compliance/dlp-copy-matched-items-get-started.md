@@ -41,7 +41,7 @@ Before you start these procedures, you should review [Learn about evidence colle
 
 See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
 
-See the pre-requisites [licensing requirements for Azure Active Directory P1 or P2](/azure/active-directory/roles/custom-enterprise-apps) needed to create custom role-based access control (RBAC). 
+See the prerequisites [licensing requirements for Azure Active Directory P1 or P2](/azure/active-directory/roles/custom-enterprise-apps) needed to create custom role-based access control (RBAC).
 
 ## Permissions
 
