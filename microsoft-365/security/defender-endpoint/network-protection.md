@@ -56,9 +56,8 @@ The following table summarizes network protection areas of coverage.
 | Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
 
 > [!NOTE]
-> Network protection does not monitor msedge.exe on Windows devices.
-> For Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
-> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+> On Mac and Linux, you must have Network Protection in block mode to get support for these features in Edge.
+> On Windows, Network Protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement
 > - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
