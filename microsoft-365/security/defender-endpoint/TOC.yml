@@ -149,8 +149,6 @@
     items:
     - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
-    - name: Step 1: Configure your environment to connect to the service
-      href: configure-environment.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
