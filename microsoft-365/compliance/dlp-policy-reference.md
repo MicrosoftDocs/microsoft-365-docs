@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/06/2023
+ms.date: 06/16/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -61,14 +61,14 @@ Also, you need to be aware of the following constraints of the platform:
 
 ## Policy templates
 
-DLP policy templates are presorted into four categories:
+DLP policy templates are sorted into four categories:
 
-- Ones that can detect and protect types of **Financial** information.
-- Ones that can detect and protect types of **Medical and health** information.
-- Ones that can detect and protect types of **Privacy** information.
-- A **Custom** template that you can use to build your own policy if one of the others doesn't meet your organizations needs.
+- policies that can detect and protect types of **Financial** information.
+- policies that can detect and protect types of **Medical and health** information.
+- policies that can detect and protect types of **Privacy** information.
+- A **Custom** policy template that you can use to build your own policy if none of the others meet your organization's needs.
 
-This table lists all policy templates and the sensitive information types (SIT) that they cover.
+The following table lists all policy templates and the sensitive information types (SIT) that they cover.
 
 |Category|Template | SIT |
 |---------|---------|---------|
@@ -139,11 +139,11 @@ DLP policies are scoped at two different levels. The first level applies unrestr
 - on-premises repositories
 - Power BI workspaces
 
-in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview). 
+in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview).
 
 At this level, an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
 
-The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, both unrestricted and administrative unit restricted administrators will see only the users, distribution groups, groups, and accounts that were included in the first level of policy scoping and are available in for that location. 
+The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, both unrestricted and administrative unit restricted administrators will see only the users, distribution groups, groups, and accounts that were included in the first level of policy scoping and that are available for that location. 
 
 ### Unrestricted policies
 
@@ -181,7 +181,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |OneDrive |Yes| - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity) |data-at-rest </br> data-in-use|No|
 |Teams chat and channel messages|Yes     | - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)|data-in-motion </br> data-in-use |  No       |
 |Microsoft Defender for Cloud Apps|No   | Cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   | data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)|No    |Repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
 |Power BI |No| Workspaces | data-in-use | No|
 | Third-party apps | None | No | No | No |
@@ -190,7 +190,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 
 #### Exchange location scoping
 
-If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
+If you choose to include specific distribution groups in Exchange, the DLP policy is scoped only to the emails sent by members of that group. Similarly, excluding a distribution group excludes all the emails sent by the members of that distribution group from policy evaluation. 
 
 
 |Sender is  |Recipient is  |Resultant behavior  |
@@ -202,7 +202,7 @@ If you choose to include specific distribution groups in Exchange, the DLP polic
 
 Here's an example of how Exchange location scope is calculated
 
-Say you have four users in your org, *U1*, *U2*, *U3*, *U4* and, two distribution groups *DG1*, and *DG2* that you'll use for defining Exchange location inclusion and exclusion scopes. Group membership is set up like this:
+Say you have four users in your org, *U1*, *U2*, *U3*, *U4* and two distribution groups *DG1*, and *DG2* that you'll use for defining Exchange location inclusion and exclusion scopes. Group membership is set up like this:
 
 
 |Distribution Group  |Membership  |
@@ -220,7 +220,6 @@ U4 isn't a member of any group.
 |All  |DG2         |All senders in the Exchange org who aren't members of DG2  (U1, U4)      |All senders who are members of DG2 (U2, U3)  |When one setting is defined and the other isn't the defined setting is used         |
 |DG1  |DG2         |U1         |U2, U3, U4         |Exclude overrides include|
   
-
 You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
 #### SharePoint and OneDrive location scoping
@@ -231,10 +230,10 @@ If you choose to include or exclude specific OneDrive accounts or groups, a DLP 
 
 ### Location support for how content can be defined
 
-DLP policies detect sensitive items by matching them to a sensitive information type (SIT), or to a sensitivity label, or a retention label. Each location supports different methods of defining sensitive content. When you combine locations in a policy, how the content can be defined can change from how it can be defined by a single location.
+DLP policies detect sensitive items by matching them to a sensitive information type (SIT), or to a sensitivity label or a retention label. Each location supports different methods of defining sensitive content. When you combine locations in a policy, how the content can be defined can change from how it can be defined by a single location.
 
 > [!IMPORTANT]
-> When you select multiple locations for a policy, a "no" value for a content definition category takes precedence over "yes" value. For example, when you select SharePoint sites only, the policy will support detecting sensitive items by one or more of SIT, by sensitivity label, or by retention label. But, when you select SharePoint sites ***and*** Teams chat and channel messages locations, the policy will only support detecting sensitive items by SIT.
+> When you select multiple locations for a policy, a "no" value for a content definition category takes precedence over "yes" value. For example, when you select SharePoint sites only, the policy will support detecting sensitive items by one or more of SIT, by sensitivity label or by retention label. But, when you select SharePoint sites ***and*** Teams chat and channel messages locations, the policy will only support detecting sensitive items by SIT.
 
 |Location| Content can be defined by SIT| Content can be defined sensitivity label| Content can be defined by retention label|
 |---------|---------|---------|---------|
@@ -247,7 +246,7 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |On-premises repositories| Yes| Yes| No|
 |Power BI|Yes | Yes| No|
 
-DLP supports using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange Online, SharePoint Online sites, OneDrive for Business accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
+DLP supports using trainable classifiers as a condition to detect sensitive documents. Content can be defined by trainable classifiers in Exchange, SharePoint sites, OneDrive accounts, Teams Chat and Channels, and Devices. For more information, see [Trainable Classifiers](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP supports detecting sensitivity labels on emails and attachments. For more information, see [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -268,7 +267,7 @@ Rules are the business logic of DLP policies. They consist of:
 
 #### Hosted service workloads
 
-For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on.
+For the hosted service workloads, like Exchange, SharePoint, and OneDrive, each rule is assigned a priority in the order in which it's created. This means that the rule created first has first priority, the rule created second has second priority, and so on.
 
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
@@ -283,7 +282,7 @@ Rules 1, 2, and 4 would be evaluated, but not applied. In this example, matches 
 
 You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all of the rules needed to comply with a specific regulation.
 
-For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
+For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint sites and all OneDrive sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
 
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
@@ -372,7 +371,7 @@ An item on a monitored device contains credit card number, so it matches policy 
 
 ### Conditions
 
-Conditions are where you define what you want the rule to look for and context in which those items are being used. They tell the rule—when you find an item that looks like *this* and is being used like *that—it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
+Conditions are where you define what you want the rule to look for and the context in which those items are being used. They tell the rule: when you find an item that looks like *this* and is being used like *that*—it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
 > [!NOTE]
 > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
@@ -393,7 +392,7 @@ The rule will only look for the presence of any **sensitivity labels** and **ret
 SITs have a predefined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
-> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
+> SITs have two different ways of defining the maximum unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 #### Adaptive Protection in Microsoft Purview (preview)
 
@@ -520,7 +519,7 @@ The available context options change depending on which location you choose. If 
 
 #### Condition groups
 
-Sometimes you need a rule to only identify one thing, like all content that contains a U.S. Social Security Number, which is defined by a single SIT. But in many scenarios, where the types of items you're trying to identify are more complex and therefore harder to define, more flexibility in defining conditions is required.
+Sometimes you need a rule to identify only one thing, such as all content that contains a U.S. Social Security Number, which is defined by a single SIT. However, in many scenarios where the types of items you're trying to identify are more complex and therefore harder to define, more flexibility in defining conditions is required.
 
 For example, to identify content subject to the U.S. Health Insurance Act (HIPAA), you need to look for:
 
@@ -538,8 +537,7 @@ For the **U.S. Health Insurance Act (HIPPA)**, conditions are grouped like this:
 
 The first group contains the SITs that identify an individual and the second group contains the SITs that identify medical diagnosis.
 
-Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that you defining a rule by stating what should be included and then define exclusions in a different group joined to the first by a NOT.
-To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
+Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that you define a rule by stating what should be included and then defining exclusions in a different group joined to the first by a NOT. To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
 
 #### DLP Platform Limitations for Conditions
 
@@ -586,17 +584,17 @@ To learn more about how Purview DLP implements booleans and nested groups see, [
 
 ### Actions
 
-Any item that makes it through the ***conditions*** <!--and exclusive ***exceptions***--> filter will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
+Any item that makes it through the ***conditions*** <!--and exclusive ***exceptions***--> filter will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action, you need to choose from these options:
 
 - Block users from accessing shared SharePoint, OneDrive, and Teams content
   - Block everyone. Only the content owner, last modifier, and site admin will continue to have access
   - Block only people from outside your organization. Users inside your organization will continue to have access.
 - Encrypt email messages (applies only to content in Exchange)
 
-The actions that are available in a rule are dependent on the locations that have been selected. If you select only one location for the policy to be applied to, the available actions are listed below.
+The actions that are available in a rule depend on the locations that have been selected. The available actions for each individual location are listed below.
 
 > [!IMPORTANT]
-> For SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+> For SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information (regardless of whether the document is shared or not) for all external users; internal users will continue to have access to the document.
 
 #### Exchange location actions
 
@@ -636,7 +634,7 @@ The actions that are available in a rule are dependent on the locations that hav
 
 To use `Audit or restrict activities on Windows devices`, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
-The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
+The devices location provides many sub-activities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
 When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by:
 
@@ -650,7 +648,7 @@ When you configure the **Allow/Block cloud service domains** and the **Unallowed
 
 ##### File activities for all apps
 
-With the **File activities for all apps** option, you select either **Don't restrict file activities** or **Apply restrictions to specific activities**. When you select to apply restrictions to specific activities, the actions that you select here are applied when a user has accessed a DLP protected item. You can tell DLP to `Audit only`, `Block with override`, `Block` (the actions) on these user activities:
+With the **File activities for all apps** option, you select either **Don't restrict file activities** or **Apply restrictions to specific activities**. When you select **Apply restrictions to specific activities**, the actions that you select here are applied when a user has accessed a DLP protected item. You can tell DLP to `Audit only`, `Block with override`, or `Block` (the actions) these user activities:
 
 - **Copy to clipboard**
 - **Copy to a USB removable drive**
@@ -661,7 +659,7 @@ With the **File activities for all apps** option, you select either **Don't rest
 
 ##### Restricted app activities
 
-Previously called Unallowed apps, you define a list of apps in Endpoint DLP settings that you want to place restrictions on. When a user attempts to access a DLP protected file using an app that is on the list, you can either `Audit only`, `Block with override`, or `Block` the activity. DLP actions defined in **Restricted app activities** are overridden if the app is a member of restricted app group. Then the actions defined in the restricted app group are applied.
+Previously called Unallowed apps, *restricted app activities* are apps that you want to place restrictions on. You define these apps in a list in Endpoint DLP settings. When a user attempts to access a DLP protected file using an app that is on the list, you can either `Audit only`, `Block with override`, or `Block` the activity. DLP actions defined in **Restricted app activities** are overridden if the app is a member of restricted app group. Then the actions defined in the restricted app group are applied.
 
 ##### File activities for apps in restricted app groups (preview)
 
@@ -698,25 +696,13 @@ See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restric
 
 If you select Exchange and any other single location for the policy to be applied to, the
 
-- Restrict access or encrypt the content in Microsoft 365 locations
-
-and
-
-- all actions for the non-Exchange location
-
-actions are available.
+- Restrict access or encrypt the content in Microsoft 365 locations and all actions for the non-Exchange location actions are available.
 
 If you select two or more non-Exchange locations for the policy to be applied to, the
 
-- Restrict access or encrypt the content in Microsoft 365 locations
+- Restrict access or encrypt the content in Microsoft 365 locations and all actions for non-Exchange locations actions will be available.
 
-AND
-
-- all actions for non-Exchange locations
-
-actions will be available.
-
-For example, if you select Exchange and Devices as locations, these actions will be available:
+For example, if you select the Exchange and Devices locations, these actions will be available:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Audit or restrict activities on Windows devices
@@ -761,9 +747,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an activity on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in-context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
-
-For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
+When a user attempts an activity on a sensitive item in a context that meets the conditions of a rule (for example, content such as an Excel workbook on a OneDrive site that contains personally identifiable information (PII) and is shared with a guest), you can let them know about it through user notification emails and in-context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -792,7 +776,7 @@ For example, content like an Excel workbook on a OneDrive for Business site that
 
 You can also give people the option to [override the policy](#user-overrides), so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
 
-The user notifications and policy tips configuration options vary depending on the monitoring locations you selected. If you selected:
+The user notifications and policy tips configuration options vary depending on the monitoring locations you've selected. If you selected:
 
 - Exchange
 - SharePoint
@@ -811,7 +795,7 @@ and customize the email text, subject, and the policy tip text.
 
 ![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-If you selected Devices only, you'll get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
+If you selected Devices only, you'll get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and Defender for Cloud Apps, plus the option to customize the notification title and content that appears on the Windows 10/11 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)
 
@@ -877,16 +861,15 @@ This table shows the DLP blocking and notification behavior for policies that ar
 
 #### Learn more URL
 
-Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide.
-This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps&preserve-view=true ).
+Users may want to learn why their activity is being blocked. You can configure a site or a page that explains more about your policies. When you select **Provide a compliance URL for the end user to learn more about your organization's policies (available for Exchange workload only)**, and the user receives a policy tip notification in Outlook Win 32, the *Learn more* link will point to the site URL that you provide. This URL has priority over the global compliance URL configured with [Set-PolicyConfig -ComplainceURL](/powershell/module/exchange/set-policyconfig?view=exchange-ps&preserve-view=true ).
 
 > [!IMPORTANT]
-> You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this funcationality out of the box.
+> You must configure the site or page that *Learn more* points to from scratch. Microsoft Purview doesn't provide this functionality out of the box.
 
 
 ### User overrides
 
-The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive, or Teams so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips.
+The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive, or Teams, so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips.
 
 ![User override options for a DLP policy](../media/dlp-user-overrides.png)
 
@@ -929,7 +912,7 @@ Alerts can be sent every time an activity matches a rule, which can be noisy or 
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
-DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there's a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+DLP scans email differently than it does SharePoint or OneDrive items. In SharePoint and OneDrive, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange, DLP only scans new email messages and generates a report if there's a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
 #### Evidence collection for file activities on devices (preview)
 
