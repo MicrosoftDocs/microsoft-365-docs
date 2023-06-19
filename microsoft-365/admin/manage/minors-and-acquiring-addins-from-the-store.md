@@ -35,7 +35,7 @@ A user is determined to be a minor based on data specified in Azure Active Direc
 
 If the parent/guardian consents to a minor using a specific add-In, then the organization admin can use centralized deployment to deploy that add-In to all minors who have consent.
 
-To be GDPR compliant for minors you need to ensure that one of following builds of Office is deployed in your school/organization.
+To be GDPR compliant for minors you need to ensure that one of following builds is deployed in your school/organization.
 
  **For Word, Excel, PowerPoint, and Project**:
 
@@ -63,13 +63,13 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 
 Word, Excel, and PowerPoint 2013 for Windows will support the same minors checks if Active Directory Authentication Library (ADAL) is enabled. There are two options for compliance, as explained next.
 
-- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [Using Microsoft 365 modern authentication with Office clients](../../enterprise/modern-auth-for-office-2013-and-2016.md).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
+- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
 
   - [Description of the security update for Office 2013: April 10, 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
 
   - [April 3, 2018, update for Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
 
-- **Don't enable ADAL**. If you're unable to enable ADAL in Office 2013, then our recommendation is to use Group Policy to turn off the Store for the Office clients. Information on how to turn off the app for Office settings is located [here](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)).
+- **Don't enable ADAL**. If you're unable to enable ADAL in Office 2013, then our recommendation is to use Group Policy to turn off the Store for the Office apps. Information on how to turn off the app for Office settings is located [here](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)).
 
 ## Related articles
 

@@ -32,7 +32,7 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 > ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
+> Network connectivity in the Admin Center supports tenants in WW Commercial but not GCC Moderate, GCC High, DoD or China.
 
 When you first navigate to the network performance page, you'll have to configure your locations in order to see the map of global network performance, a network assessment scoped to the entire tenant, percentage of your users working remotely vs onsite, and a list of current issues to take action on and/or to research further. From the overview pane, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -233,6 +233,10 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
    > ![Select a .tsc file to upload.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
 
 7. Click **Upload** button at the bottom of the panel to upload the office locations.
+
+## Understanding test sampling
+
+
 
 ## FAQ
 

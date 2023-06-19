@@ -45,11 +45,11 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 
 |Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[Increase sign-in security for priority accounts](#increase-sign-in-security-for-priority-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Use Strict preset security policies for priority accounts](#use-strict-preset-security-policies-for-priority-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Apply user tags to priority accounts](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Monitor priority accounts in alerts, reports, and detections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Train users](#train-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Increase sign-in security for priority accounts](#increase-sign-in-security-for-priority-accounts)|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
+|[Use Strict preset security policies for priority accounts](#use-strict-preset-security-policies-for-priority-accounts)|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
+|[Apply user tags to priority accounts](#apply-user-tags-to-priority-accounts)|||:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
+|[Monitor priority accounts in alerts, reports, and detections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
+|[Train users](#train-users)|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
 
 > [!NOTE]
 > For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).

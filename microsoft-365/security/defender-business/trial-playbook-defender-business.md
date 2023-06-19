@@ -11,7 +11,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.date: 10/07/2022
+ms.date: 05/04/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid: 
@@ -111,10 +111,10 @@ Defender for Business includes pre-configured security policies that use recomme
 
 Security policies to review and configure include:
 
-- [Next-generation protection policies](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) which determine antivirus and antimalware protection for your company's devices
-- [Firewall protection and rules](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) which determine what network traffic is allowed to flow to and from your company's devices
-- [Web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering) which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
-- [Advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
+- [Next-generation protection policies](mdb-next-generation-protection.md) which determine antivirus and antimalware protection for your company's devices
+- [Firewall protection and rules](mdb-firewall.md) which determine what network traffic is allowed to flow to and from your company's devices
+- [Web content filtering](mdb-web-content-filtering.md) which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
+- [Advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features) such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
 ## Start using Defender for Business
 

@@ -17,17 +17,16 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/21/2023
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Configure anti-spam policies in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection-about.md).
 
@@ -42,7 +41,6 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -53,6 +51,8 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 - You can't completely turn off spam filtering, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
   - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+
+- If you disagree with the verdict from anti-spam filtering, you can report the message to Microsoft as a false positive. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 ## Use the Microsoft 365 Defender portal to create anti-spam policies
 
@@ -151,7 +151,11 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
      ⁴ For **High confidence phishing**, the **Move message to Junk Email folder** action has effectively been deprecated. Although you might be able to select that action, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
 
      ⁵ Users can't release their own messages that were quarantined as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
+     
+  - **Intra-Organizational messages to take action on**: Select what types of intra-organizational messages containing malicious or spam-based URLs to take action on. The default setting is to take no action on messages. The action taken on different spam filtering verdicts for intra-org messages is the same as configured above in the message actions section.
 
+    The default behavior will be updated in the future to take action on high-confidence phishing messages. Additional details on handling malicious intra-organizational messages are communicated through posts in the Message Center Portal.
+   
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and isn't recoverable. A valid value is from 1 to 30 days.
 
      > [!NOTE]
@@ -220,7 +224,7 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
       Back on the first flyout, the senders or domains that you added are listed.
 
-      To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+      To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
        Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
@@ -261,14 +265,14 @@ On the **Anti-spam policies** page, the following properties are displayed in th
   - **Custom anti-spam policy**
   - Blank for the default anti-spam policy (for example, **Anti-spam inbound policy (Default)**).
 
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
 
 Select an anti-spam policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 > [!TIP]
-> To see details about other anti-spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other anti-spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-spam policies
 

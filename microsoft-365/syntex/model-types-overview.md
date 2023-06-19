@@ -21,15 +21,15 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
-
-When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
-
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
 </br>
+
+Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+
+When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
 Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
@@ -131,8 +131,3 @@ The prebuilt receipt processing model analyzes and extracts key information from
 
 For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
-## See also
-
-[Compare custom models in Microsoft Syntex](./difference-between-document-understanding-and-form-processing-model.md)
-
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

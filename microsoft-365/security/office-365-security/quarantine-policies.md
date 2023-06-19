@@ -74,7 +74,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
    When you're finished on the **Policy name** page, select **Next**.
 
 4. On the **Recipient message access** page, select one of the following values:
-   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval. 
+   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval.
 
    - **Set specific access (Advanced)**: Use this value to specify custom permissions. Configure the following settings that appear:
      - **Select release action preference**: Select one of the following values from the drop down:

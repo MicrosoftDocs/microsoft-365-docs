@@ -20,7 +20,6 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-- zerotrust-services
 ms.date: 1/31/2023
 ---
 

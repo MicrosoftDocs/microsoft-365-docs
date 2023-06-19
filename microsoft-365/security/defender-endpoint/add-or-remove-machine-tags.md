@@ -64,7 +64,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/machines/{id}/tags
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 ```
 
 ## Request headers

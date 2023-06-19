@@ -67,7 +67,7 @@ You can also create a new role group that aligns with your organizational needs.
 
 An eDiscovery case provides an effective way to manage your data spillage investigation. You can add members to the role group that you created in Step 1, add the role group as a member of new a eDiscovery case, perform iterative searches to find the spilled data, export a report to share, track the status of the case, and then refer back to the details of the case if needed. Consider establishing a naming convention for eDiscovery cases used for data spillage incidents, and provide as much information as you can in the case name and description so you can locate and refer to in the future if necessary.
   
-To create a new case, you can use eDiscovery in the Microsoft Purview compliance portal. See "Create a new case" in [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-3-create-a-ediscovery-standard-case).
+To create a new case, you can use eDiscovery in the Microsoft Purview compliance portal. See "Create a new case" in [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-4-create-a-ediscovery-standard-case).
   
 ## Step 3: Search for the spilled data
 

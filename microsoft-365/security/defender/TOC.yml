@@ -270,7 +270,9 @@
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
-                 - name: Functions
+                 - name: Create custom functions 
+                   href: advanced-hunting-custom-functions.md                   
+                 - name: Use built-in functions
                    items: 
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
@@ -400,16 +402,24 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
-       - name: Expanded Microsoft Defender Experts for XDR preview
+       - name: Collaborate with Microsoft Defender Experts for XDR
          items:
               - name: Overview
                 href: dex-xdr-overview.md
-              - name: Get started with Microsoft Defender Experts for XDR preview service
+              - name: Before you begin
+                href: before-you-begin-xdr.md
+              - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
-              - name: Start using Microsoft Defender Experts for XDR preview service
+              - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Auditing
+                href: auditing.md
+              - name: Additional information
+                href: additional-information-xdr.md
               - name: Frequently asked questions
                 href: frequently-asked-questions.md
+              - name: How Defender Experts for XDR permissions work
+                href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
