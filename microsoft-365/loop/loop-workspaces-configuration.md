@@ -2,8 +2,8 @@
 ms.date: 06/19/2023
 title: "Manage Loop workspaces in Syntex repository services"
 ms.reviewer: dancost, tonchan
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: dansimp
 recommendations: true
 audience: Admin
