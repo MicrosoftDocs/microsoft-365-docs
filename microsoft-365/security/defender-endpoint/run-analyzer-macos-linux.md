@@ -270,10 +270,10 @@ Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
 
 ### AuditD Skip Faulty Rules
 
-This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there sis a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
+This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there is a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
 
 > [!NOTE]
-> This functionality is available for Linux only.
+> This functionality is only available on Linux.
 
 ```console
 
