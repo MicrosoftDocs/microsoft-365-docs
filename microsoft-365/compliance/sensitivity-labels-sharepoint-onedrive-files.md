@@ -89,7 +89,7 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 
 ## Support for labels configured for user-defined permissions
 
-Now in preview, there's now limited support for labels configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
+Rolling out in preview, there's now limited support for labels configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
 
 - When a document is labeled with user-defined permissions and uploaded to SharePoint or OneDrive, these services can now process the document so that it can be opened and edited in Office for the web, the label name is displayed in the **Sensitivity** column, and the encrypted file is returned in search results for the label ID.
 
