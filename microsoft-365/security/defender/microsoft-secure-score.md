@@ -107,9 +107,18 @@ If you turn on security defaults, you'll be awarded full points for the followin
 > [!IMPORTANT]
 > Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" recommended actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
 
-## Required permissions
+## Secure score permissions
 
-To have permission to access Microsoft Secure Score, you must be assigned one of the following roles in Azure Active Directory.
+As part of the [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md) model you can create dedicated custom roles with permissions for secure score. You can manage user’s permissions to access secure score data for the following RBAC data sources:
+
+- Microsoft Secure Score
+- Microsoft Defender for Endpoint
+- Microsoft Defender for Office 365
+- Microsoft Defender for Identity
+
+You can manage access to secure score data as a standalone or in conjunction with access to secure score data coming from the other data sources.
+
+Azure Active Directory global roles (for example, Global Administrator) can still be used to access secure score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure score data based on the following Azure Active directory roles:
 
 ### Read and write roles
 
@@ -130,6 +139,10 @@ With read-only access, you aren't able to edit status or notes for a recommended
 - Security reader
 - Security operator
 - Global reader
+
+Note: If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Azure Active Directory global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom RBAC roles will take effect.
+
+Note: currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Azure Active Directory roles. Support GraphAPI is planned at a later date.s
 
 ## Risk awareness
 
