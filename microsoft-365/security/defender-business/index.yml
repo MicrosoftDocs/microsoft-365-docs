@@ -82,7 +82,7 @@ landingContent:
             url: mdb-admin-guide.md
           - text: Security administration
             url: mdb-security-admin-guide.md
-          - text: Security Operations
+          - text: Security operations
             url: mdb-security-operations-guide.md
 
   # Card
