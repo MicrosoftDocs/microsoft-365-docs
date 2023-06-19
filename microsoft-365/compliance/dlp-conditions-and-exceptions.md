@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 06/14/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -24,11 +24,11 @@ description: "Learn about dlp policy conditions and exceptions that identify sen
 
 Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
-- Conditions define what to include
-- Exceptions define what to exclude.
-- Actions define what happens as a consequence of condition or exception being met
+- *Conditions* define what to include
+- *Exceptions* define what to exclude.
+- *Actions* define what happens as a consequence of condition or exception being met
 
-Most conditions and exceptions have one property that supports one or more values. For example, if the DLP policy is being applied to Exchange emails, the **The sender** is condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Attachment is password protected** condition simply looks for attachments in messages that are password protected.
+Most conditions and exceptions have one property that supports one or more values. For example, if the DLP policy is being applied to Exchange emails, the **The sender** condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Attachment is password protected** condition simply looks for attachments in messages that are password protected.
 
 Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
@@ -48,7 +48,7 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured. By default,  DLP rules use the Header address as the sender address.
+If you use the sender address as a condition or exception, the actual field where the value is looked for varies depending on the configured sender address location. By default, DLP rules use the Header address as the sender address.
 
 ![Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
