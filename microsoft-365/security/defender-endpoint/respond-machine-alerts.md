@@ -242,17 +242,17 @@ Once you have selected **Isolate device** on the device page, type a comment and
 ### Forcibly release device from isolation
 
 The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive.<br> 
-There's a downloadable script for these instances that admins can run to forcibly release devices from isolation. The script is available through a link in the UI.
+There's a downloadable script for these instances that you can run to forcibly release devices from isolation. The script is available through a link in the UI.
 
 > [!NOTE]
-> - Only MDE admins can forcibly release devices from isolation.
+> - Admins and manage security settings in Security Center permissions can forcibly release devices from isolation. 
 > - The script is valid for the specific device only.
 > - The script will expire in three days.
 
 To forcibly release device from isolation:
 
-1. On the device page, the MDE admin selects **Download script to force-release a device from isolation** from the action menu.
-1. On the right-hand side wizard, the admin selects **Download script**.
+1. On the device page, select **Download script to force-release a device from isolation** from the action menu.
+1. On the right-hand side wizard, select **Download script**.
 
 #### Minimum requirements
 The minimum requirements for 'forcibly release device from isolation' feature are:
@@ -264,12 +264,6 @@ The minimum requirements for 'forcibly release device from isolation' feature ar
     - Windows 11 version 22H2, all editions with KB5023778 
     - WindowsServer2012R2
     - WindowsServer2016
-
-#### Permissions
-Permissions for 'forcibly release device from isolation' feature are:
-
-- This feature does not support Admin role.
-- You need to manage security settings in Security Center.
 
 
 ### Notification on device user
