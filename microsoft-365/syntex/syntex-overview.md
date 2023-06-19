@@ -31,7 +31,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Scenarios and use cases
+## Explore scenarios and use cases
 
 :::row:::
    :::column span="3":::
@@ -45,6 +45,70 @@ You can dive deeper into your content to truly understand it, and you can turn t
 :::row-end:::
 
 [Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
+
+## Syntex services
+
+### Annotations
+
+:::row:::
+   :::column span="":::
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
+
+### Content assembly
+
+:::row:::
+   :::column span="":::
+      ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      With Syntex, you can create *modern templates* based on the business documents you use most.
+
+      You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+   :::column-end:::
+:::row-end:::
+
+ This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+
+[Learn more about how to generate documents using content assembly.](content-assembly.md)
+
+### Content query
+
+:::row:::
+   :::column span="3":::
+      The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
+
+      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
+   :::column-end:::
+:::row-end:::
+
+This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+
+### Prebuilt models
+
+Use a [prebuilt model](prebuilt-overview.md) to save time processing and automatically extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md).
+
+Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+
+[Learn more about prebuilt models in Microsoft Syntex.](model-types-overview.md)
+| Contract processing | Invoice processing | Receipt processing | 
+| ------------- | ------------- | ------------- |
+| ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
+| Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
+
+
+
 
 ## Models
 
@@ -74,67 +138,6 @@ You build custom models to understand the layout of your files from example docu
 |  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |  ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) |
 | Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more about unstructured models.](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about freeform models.](freeform-document-processing-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more about structured models.](form-processing-overview.md) |
 
-### Prebuilt models
-
-If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md). This type of model is pretrained to extract predefined entities from common business files. Prebuilt models include:
-
-- [Contract processing](prebuilt-model-contract.md)
-- [Invoice processing](prebuilt-model-invoice.md)
-- [Receipt processing](prebuilt-model-receipt.md)
-
-| Contract processing | Invoice processing | Receipt processing | 
-| ------------- | ------------- | ------------- |
-| ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
-| Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
-
-[Learn more about custom and prebuilt models in Microsoft Syntex.](model-types-overview.md)
-
-## Content assembly
-
-:::row:::
-   :::column span="":::
-      ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png) 
-   :::column-end:::
-   :::column span="3":::
-      With Syntex, you can create *modern templates* based on the business documents you use most.
-
-      You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
-   :::column-end:::
-:::row-end:::
-
- This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
-
-[Learn more about how to generate documents using content assembly.](content-assembly.md)
-
-## Content query
-
-:::row:::
-   :::column span="3":::
-      The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
-
-      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
-   :::column-end:::
-:::row-end:::
-
-This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
-
-[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
-
-## Annotations
-
-:::row:::
-   :::column span="":::
-      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png) 
-   :::column-end:::
-   :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
-   :::column-end:::
-:::row-end:::
-
-[Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ## Optical character recognition
 
