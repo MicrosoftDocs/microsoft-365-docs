@@ -94,7 +94,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 
 10. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
-<!-- ![classifier in retraining status.](../media/classifier-retraining.png) -->
+<!-- 6-19-2023--Comment needed until image can be replaced: classifier in retraining status.](../media/classifier-retraining.png) -->
 
 12. Once retraining completes, choose the classifier to open the retraining overview.
 

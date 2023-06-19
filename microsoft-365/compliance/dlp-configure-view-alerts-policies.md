@@ -26,7 +26,7 @@ description: Learn how to define and manage alerts for data loss prevention poli
 
 # Configure and view alerts for data loss prevention policies
 
-Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
+Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the new DLP alert management dashboard in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) to view alerts, events, and associated metadata for DLP policy violations.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -34,8 +34,7 @@ Microsoft Purview Data Loss Prevention (DLP) policies can take protective action
 
 The following features are part of this:
 
--   **DLP alert management dashboard**: In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, this dashboard shows
-    alerts for DLP policies that are enforced on the following workloads:
+-   **DLP alert management dashboard**: This dashboard in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) shows alerts for DLP policies that are enforced on the following workloads:
 
     -   Exchange
     -   SharePoint
