@@ -90,12 +90,7 @@ Defender for Endpoint Plan 1 and 2, Defender for Business, and Microsoft 365 Bus
 > [!TIP]
 > If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
-## More resources
+## Learn more about subscriptions and licensing
 
 - [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-- [How to contact support for Defender for Endpoint](contact-support.md).
-- [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
 - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
