@@ -51,7 +51,7 @@ You can read more about this metadata change from the following resources:
 
 - Open Specifications: [2.6.3 LabelInfo versus Custom Document Properties](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Because of these changes, do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
+Because of these changes, don't enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
 
 - A document that is labeled appears to users to be unlabeled.
 
@@ -69,7 +69,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - You must be a global admin to turn on this feature.
 
-- Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
+- Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it is automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel, or minimum version 2202 from Semi-Annual Enterprise Channel
@@ -110,7 +110,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     Specific to Excel: Metadata for a sensitivity label that doesn't apply encryption can be deleted from a file if somebody edits and saves that file by using a version of Excel that doesn't support the metadata changes for sensitivity labels.
 
-- Co-authoring and AutoSave isn't supported for Office documents that use the [label encryption configuration](encryption-sensitivity-labels.md#configure-encryption-settings) **User access to content expires** when it is set to a value other than **Never**, or **Double Key Encryption** is configured.
+- Co-authoring and AutoSave aren't supported for Office documents that use the [label encryption configuration](encryption-sensitivity-labels.md#configure-encryption-settings) **User access to content expires** when it's set to a value other than **Never**, or **Double Key Encryption** is configured.
     
     Labels with these configurations do still display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
@@ -142,13 +142,13 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 > [!IMPORTANT]
 > If you do need to disable this feature, for example, you've discovered some apps don't support the metadata changes and you can't immediately update these apps, be aware that labeling information can be lost.
 
-After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting in the compliance portal and this action is supported only by using PowerShell. This is not a setting that you casually disable, and why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable the setting.
+After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting in the compliance portal, and this action is supported only by using PowerShell. This isn't a setting that you casually disable, and why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable the setting.
 
 If you do disable this setting for your tenant:
 
 - For apps and services that support the new labeling metadata, they now revert to the original metadata format and location when labels are read or saved.
 
-- The new metadata format and location for Office documents that were used while the setting was enabled will not be copied to the original format and location. As a result, this labeling information for unencrypted Word, Excel, and PowerPoint files will be lost.
+- The new metadata format and location for Office documents that were used while the setting was enabled won't be copied to the original format and location. As a result, this labeling information for unencrypted Word, Excel, and PowerPoint files will be lost.
 
 - Co-authoring and AutoSave no longer work in your tenant for labeled and encrypted documents.
 
