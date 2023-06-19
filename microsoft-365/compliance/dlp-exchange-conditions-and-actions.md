@@ -1,5 +1,5 @@
 ---
-title: "DLP policy conditions and actions"
+title: "Data loss prevention Exchange conditions and actions reference"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ recommendations: false
 description: "Learn about dlp policy conditions that identify sensitive items that the policy is applied to."
 ---
 
-# Data loss prevention policy conditions and actions
+# Data loss prevention Exchange conditions and actions reference
 
 Conditions in Microsoft Purview Data Loss Prevention (DLP) policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
@@ -35,7 +35,7 @@ Actions typically require additional properties. For example, when the DLP polic
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Conditions Exchange for DLP policies
-<!-- this is in DLP policy referende-->
+<!-- this is in DLP policy reference-->
 The tables in the following sections describe the conditions and exceptions that are available in DLP.
 
 - [Senders](#senders)
