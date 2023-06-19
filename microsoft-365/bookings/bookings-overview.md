@@ -26,7 +26,7 @@ Microsoft Bookings makes scheduling and managing appointments a breeze. Bookings
 > [!NOTE]
 > The Bookings calendar is a mailbox in Exchange Online.
 
-Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) and Skype for Business. Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app. Bookings is also available as an app within Teams, which allows you to create Bookings calendars, assign staff, and both schedule new and manage existing appointments without ever leaving Teams.
+Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) and Skype for Business. Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app. Bookings is also available as an [app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), which allows you to create Bookings calendars, assign staff, and both schedule new and manage existing appointments without ever leaving Teams.
 
 Bookings is made up of these components:
 
