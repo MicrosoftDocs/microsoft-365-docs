@@ -62,21 +62,13 @@ landingContent:
   # Card
   - title: Setup
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: deploy
         links:
           - text: Setup and configuration overview
             url: mdb-setup-configuration.md
-          - text: Step 1 - Get Defender for Business
-            url: get-defender-business.md
-          - text: Step 2 - Add users and assign licenses
-            url: mdb-add-users.md
-          - text: Step 3 - Assign security roles and permissions
-            url: mdb-roles-permissions.md
-          - text: Step 4 - Set up notifications for your security team
-            url: mdb-email-notifications.md
-          - text: Step 5 - Onboard devices
+          - text: Onboard devices
             url: mdb-onboard-devices.md
-          - text: Step 6 - Set up and review security policies
+          - text: Set up and review security policies
             url: mdb-configure-security-settings.md
 
   # Card
