@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 05/31/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -71,7 +71,7 @@ Because admins have access to sensitive data and files, we recommend that you fo
 | Assign the *least permissive* role    | Assigning the *least permissive* role means giving admins only the access they need to get the job done. For example, if you want someone to reset employee passwords you shouldn't assign the unlimited global admin role, you should assign a limited admin role, like Password admin or Helpdesk admin.                 |
 | Require multi-factor authentication for admins                  |    It's actually a good idea to require MFA for all of your users, but admins should definitely be required to use MFA to sign in. MFA makes users use a second method of identification to verify their identity. Admins can have access to much of customer and employee data. If you require MFA, even if the admin's password gets compromised, the password is useless without the second method of identification.  <br><br>When you turn on MFA, the next time the user signs in, they'll need to provide an alternate email address and phone number for account recovery.  <br> [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-If you get a message in the admin center that you don't have permissions to edit a setting or page, it's because you're assigned a role that doesn't have that permission.
+If you get a message in the admin center that you don't have permissions to edit a setting or page, it's because you're assigned a role that doesn't have that permission. Talk to another admin to assign you the correct permissions or see [Assign admin roles](assign-admin-roles.md) to assign yourself the correct role.
 
 ## Commonly used Microsoft 365 admin center roles
 
