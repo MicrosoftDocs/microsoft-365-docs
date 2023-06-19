@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date: 03/01/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
@@ -27,7 +27,7 @@ This article walks you through the steps to modify and remove an existing custom
 
 ## Modify custom sensitive information types in the compliance portal
 
-1. In the Compliance Center, go to **Data classification** \> **Classifiers** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify. Choose **Edit**.
+1. In the compliance portal, go to **Data classification** \> **Classifiers** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify. Choose **Edit**.
 
 2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and [**additional checks**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) or edit/remove the existing ones.
 
@@ -39,7 +39,7 @@ This article walks you through the steps to modify and remove an existing custom
 > [!IMPORTANT]
 > Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as *transport rules*) still reference the sensitive information type.
 
-1. In the Compliance Center, go to **Data classification** \> **Classifiers** \>**Sensitive info types** and choose the sensitive information type that you want to remove from the list.
+1. In the compliance portal, go to **Data classification** \> **Classifiers** \>**Sensitive info types** and choose the sensitive information type that you want to remove from the list.
 
 2. On the detail page for the selected sensitive information type, choose **Delete**.
 
