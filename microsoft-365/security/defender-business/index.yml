@@ -60,7 +60,7 @@ landingContent:
             url: mdb-preview.md
 
   # Card
-  - title: Setup
+  - title: Setup information
     linkLists:
       - linkListType: deploy
         links:
