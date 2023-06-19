@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 05/04/2023
+ms.date: 06/19/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -74,11 +74,13 @@ You can also use a newly added license usage report to track status.
 
 ## Options for onboarding servers
 
-Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalone), and Microsoft 365 Business Premium don't include server licenses. To onboard servers, choose from the following options:
+Defender for Endpoint Plan 1 and 2, Defender for Business, and Microsoft 365 Business Premium don't include server licenses. To onboard servers, choose from the following options:
 
-- **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+- **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender for Business servers** (*recommended for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
-- **Microsoft Defender for Endpoint for Servers** (*if you already have these licenses*). See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+
+> [!NOTE]
+> Microsoft Defender for Endpoint for Servers is no longer available. If you previously purchased these licenses, consider moving to [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction).
 
 ## Start a trial
 
