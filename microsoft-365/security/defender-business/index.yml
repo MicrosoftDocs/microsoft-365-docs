@@ -40,7 +40,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Resources for Microsoft partners
+          - text: Resources for Microsoft partners, including a security guide and checklist
             url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
