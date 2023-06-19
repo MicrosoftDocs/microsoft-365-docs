@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/27/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -27,7 +27,7 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (three latest released versions) endpoints
+- Windows 10, Windows 11, and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint
 - Power BI
@@ -96,11 +96,9 @@ DLP policies can block prohibited activities, like inappropriate sharing of sens
 
 A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
 
-<!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for data loss prevention](dlp-plan-for-dlp.md).-->
-
 ### Prepare for DLP
 
-You can apply DLP policies to data at rest, data in use, and data in motion in locations, such as:
+You can apply DLP policies to data at rest, data in use, and data in motion in locations such as:
 
 - Exchange Online email
 - SharePoint Online sites
@@ -111,7 +109,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - On-premises repositories
 - Power BI sites
 
-Each one has different prerequisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
+Each one has different prerequisites. Sensitive items in some locations, like Exchange online, can be brought under the DLP umbrella by just configuring a policy that applies to them. Others, such as on-premises file repositories, require a deployment of Azure Information Protection (AIP) scanner. You'll need to prepare your environment, code draft policies, and test them thoroughly before activating any blocking actions.
 
 ### Deploy your policies in production
 
@@ -140,7 +138,7 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 
 #### Enable the control and tune your policies
 
-Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. 
+Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed.
 
 > [!NOTE]
 > In general, policies take effect about an hour after being turned on.
@@ -150,7 +148,7 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 You have flexibility in how you create and configure your DLP policies. You can start from a predefined template and create a policy in just a few clicks or you can design your own from the ground up. No matter which you choose, all DLP policies require the same information from you.
 
 1. **Choose what you want to monitor** - DLP comes with many predefined policy templates to help you get started or you can create a custom policy.
-    - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
+    - A predefined policy template, such as Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 
 2. **Choose administrative scoping** - DLP supports assigning [Administrative Units](/azure/active-directory/roles/administrative-units) to policies (preview). Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, and accounts that they're assigned to. So, policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping) for more DLP specific details. See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for the details on administrative units across Microsoft Purview Information Protection.
@@ -168,7 +166,7 @@ You have flexibility in how you create and configure your DLP policies. You can 
    |On-premises repositories| repository file path|
    |Power BI (preview)| workspaces|
 
-4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept preconfigured conditions or define custom conditions. Some examples are:
+4. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept preconfigured conditions or you can define custom conditions. Some examples are:
 
    - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
    - item has a specified sensitivity label
@@ -178,12 +176,12 @@ You have flexibility in how you create and configure your DLP policies. You can 
 
    - SharePoint/Exchange/OneDrive: Block people who are outside your organization from accessing the content. Show the user a tip and send them an email notification that they're taking an action that is prohibited by the DLP policy.
    - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-   - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+   - Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removable USB device
    - Office Apps: Show a popup notifying the user that they're engaging in a risky behavior and block or block but allow override.
    - On-premises file shares: move the file from where it's stored to a quarantine folder
 
    > [!NOTE]
-   > The conditions and the actions to take are defined in an object called a Rule.
+   > The conditions and the actions to take are defined in an object called a *rule*.
 
 ## Create and deploy a DLP policy
 
@@ -191,17 +189,17 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 After you create a DLP policy in the compliance portal, it's stored in a central policy store, and then synced to the various content sources, including:
 
-- Exchange Online, and from there to Outlook on the web and Outlook.
-- OneDrive for Business sites.
-- SharePoint Online sites.
-- Office desktop programs (Excel, PowerPoint, and Word).
-- Microsoft Teams channels and chat messages.
+- Exchange, and from there to Outlook on the web and Outlook
+- OneDrive
+- SharePoint sites
+- Office desktop programs (Excel, PowerPoint, and Word)
+- Microsoft Teams channels and chat messages
 
-After the policy's synced to the right locations, it starts to evaluate content and enforce actions.
+After the policy is synced to the right locations, it starts to evaluate content and enforce actions.
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information to Microsoft Purview from monitoring to policy matches and actions, to user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### High volume of sensitive info shared or save externally
 
@@ -231,11 +229,9 @@ You can also view details of the associated event with rich metadata in the same
 
 ### DLP Activity Explorer and reports
 
-The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
+The Activity explorer tab on the DLP page has multiple filters you can use to view DLP events. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-<!--![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)-->
-
-You can view the last 30 days of DLP information in [Activity Axplorer](data-classification-activity-explorer.md) using these preconfigured filters:
+You can view the last 30 days of DLP information in [Activity Explorer](data-classification-activity-explorer.md) using these preconfigured filters:
 
 - Endpoint DLP activities
 - Files containing sensitive info types
@@ -243,31 +239,37 @@ You can view the last 30 days of DLP information in [Activity Axplorer](data-cla
 - DLP policies that detected activities
 - DLP policy rules that detected activities
 
+
+|To see this information |Select this activity |
+|---------|---------|
+|User overrides   |**DLP rule undo**         |
+|Items that match a DLP rule|**DLP rule matched**         |
+
 You can also access DLP report using via these cmdlets in the Security & Compliance PowerShell.
 
 1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 Use these cmdlets:
 
-[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-[Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
-[Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
+- [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+- [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
+- [Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
 
-However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, the following cmdlets for DLP reports are available in Exchange Online Powershell. To use the cmdlets for these DLP reports, do these steps:
+However, DLP reports need to pull data from across Microsoft 365, including Exchange. For this reason, the following cmdlets for DLP reports are available in Exchange Powershell. To use the cmdlets for these DLP reports, take the following steps:
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connect to Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 Use these cmdlets:
 
-[Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
-[Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
+- [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
+- [Get-MailDetailDlpPolicyReport](/powershell/module/exchange/get-maildetaildlppolicyreport)
 
 
 #### Contextual summary
 
 You can see the text that surrounds the matched content, like a credit card number in a **DLPRuleMatch** event in Activity explorer. To do this you must first enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
 
-**DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
+**DLPRuleMatch** events are paired with the user activity event. They should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
 
 For endpoint, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices or above
 
