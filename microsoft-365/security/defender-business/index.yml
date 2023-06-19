@@ -50,7 +50,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Interactive guide - Get started with Defender for Business
+          - text: Interactive guide - Get started with Microsoft Defender for Business
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
