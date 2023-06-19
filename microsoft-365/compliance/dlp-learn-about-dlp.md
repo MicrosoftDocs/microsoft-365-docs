@@ -231,7 +231,7 @@ You can also view details of the associated event with rich metadata in the same
 
 ### DLP Activity Explorer and reports
 
-The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
+The Activity explorer tab on the DLP page has multiple filters you can use to view DLP events. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
 <!--![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)-->
 
@@ -242,6 +242,12 @@ You can view the last 30 days of DLP information in [Activity Axplorer](data-cla
 - Egress activities
 - DLP policies that detected activities
 - DLP policy rules that detected activities
+
+
+|To see this information |Select this activity |
+|---------|---------|
+|User overrides   |**DLP rule undo**         |
+|Items that match a DLP rule|**DLP rule matched**         |
 
 You can also access DLP report using via these cmdlets in the Security & Compliance PowerShell.
 
