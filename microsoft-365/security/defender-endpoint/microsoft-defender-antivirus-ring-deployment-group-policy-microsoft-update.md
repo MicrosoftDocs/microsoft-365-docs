@@ -63,10 +63,13 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png" alt-text="Shows an example schedule for Microsoft Defender Antivirus ring deployments in Group Policy and Microsoft Updates environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png":::
 
+> [!NOTE]
+> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+
  On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have, perform the following tasks.
  
  > [!NOTE]
-> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+ > If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), create or append to your Microsoft Defender Antivirus  policy.
 

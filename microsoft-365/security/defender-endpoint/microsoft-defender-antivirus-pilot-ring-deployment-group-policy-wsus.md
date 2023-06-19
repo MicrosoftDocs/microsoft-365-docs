@@ -57,6 +57,9 @@ This section provides information about setting up the pilot (UAT/Test/QA) envir
 
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
+> [!NOTE]
+> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]

@@ -58,6 +58,9 @@ This section provides information about setting up the production environment us
 
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
+> [!NOTE]
+> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+
 1 On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
 
    > [!NOTE]

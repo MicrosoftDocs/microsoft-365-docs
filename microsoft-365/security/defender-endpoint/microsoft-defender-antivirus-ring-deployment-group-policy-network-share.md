@@ -70,6 +70,9 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 
 :::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Shows an example Microsoft Defender Antivirus ring deployment schedule for Group Policy and network share environments." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
 
+> [!NOTE]
+> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+
 ### Create a UNC share for security intelligence and platform updates
 
 Set up a network file share (UNC/mapped drive) to download security intelligence and platform updates from the MMPC site by using a scheduled task.

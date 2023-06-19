@@ -58,6 +58,9 @@ For example, your pilot policy named _MDAV_Settings_Pilot_. If you have a Citrix
 
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png":::
 
+> [!NOTE]
+> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+
 Recommended settings are as follows:
 
 |Feature  | Recommendation |
