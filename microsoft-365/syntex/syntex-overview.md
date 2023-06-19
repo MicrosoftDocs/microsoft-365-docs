@@ -164,7 +164,16 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 ## Content processing
 
-Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+:::row:::
+   :::column span="":::
+      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
 ## Premium taxonomy services
 
