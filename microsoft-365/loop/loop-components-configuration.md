@@ -41,7 +41,7 @@ To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-3
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
 
-You'll be able to use this group for the Cloud Policy setup procedure below.
+You'll be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
@@ -61,7 +61,6 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 ## Example configurations
 
-
 |Scenario  |Policies Configured  |
 |---------|---------|
 |Enable Loop components everywhere     |  **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $true`       |
@@ -74,7 +73,7 @@ The Loop experiences (except for Microsoft Teams) check the following Cloud Poli
 - **Create and view Loop files in Microsoft apps that support Loop**
 - **Create and view Loop files in Outlook**
 
-You can also get more information on the available policy settings by visiting the [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting templates.
+You can also get more information on the [available policy settings](#available-policy-settings) by visiting the [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting templates.
 
 For information on how each app checks these settings, see [Available policy settings](#available-policy-settings).
 
