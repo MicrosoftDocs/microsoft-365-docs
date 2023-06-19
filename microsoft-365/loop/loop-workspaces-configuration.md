@@ -2,8 +2,8 @@
 ms.date: 06/19/2023
 title: "Manage Loop workspaces in Syntex repository services"
 ms.reviewer: dancost, tonchan
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: v-smandalika
+author: v-smandalika
 manager: dansimp
 recommendations: true
 audience: Admin
@@ -30,7 +30,7 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 ## Requirements
 
-Just like the experiences provided by other Microsoft 365 components, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable connections to Loop services and thereby Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Just like other Microsoft 365 components which provide experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable connections to Loop services and thereby Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ### Microsoft 365 Groups for Cloud Policy
 
@@ -45,7 +45,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ### Exchange Online license
 
-Loop workspaces currently require each user to have an Exchange Online license. If not, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update;  and encounter failures in other experiences also.
+Loop workspaces currently require each user to have an Exchange Online license. If not, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
 
 ### WebSocket connections
 
