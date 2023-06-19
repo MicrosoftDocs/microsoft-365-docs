@@ -457,7 +457,7 @@ The available context options change depending on which location you choose. If 
 - Message importance is
 
 > [!TIP]
-> For more information on the conditions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions).
+> For more information on the conditions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
 
 ##### Conditions SharePoint supports
 
@@ -618,7 +618,7 @@ The actions that are available in a rule depend on the locations that have been 
 - Deliver the message to the hosted quarantine
 
 > [!TIP]
-> For more information on the actions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions).
+> For more information on the actions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
 
 #### SharePoint sites location actions
 
