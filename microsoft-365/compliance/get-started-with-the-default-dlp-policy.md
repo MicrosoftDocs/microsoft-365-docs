@@ -45,6 +45,9 @@ To help protect the sensitive information, the default DLP policy:
   - Content containing source code (as matched by our Source Code trainable classifier)
   - Content matching our U.S HIPAA Enhanced template
   - Content containing Intellectual Property (as matched by our IP, Project Documents, M&A Files, Software Product development files, IT Infra and Network Security Documents, and Strategic planning documents trainable classifiers)
+ 
+  > [!NOTE]
+  > Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
     
 - Shows a policy tip and sends an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).
     
