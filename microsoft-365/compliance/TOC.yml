@@ -1313,8 +1313,8 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions
-              href: dlp-conditions-and-exceptions.md
+            - name: Data loss prevention Exchange conditions and actions reference
+              href: dlp-exchange-conditions-and-actions.md
             - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
