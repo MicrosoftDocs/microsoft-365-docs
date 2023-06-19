@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 01/31/2021
+ms.date: 06/19/2023
 ms.localizationpriority: high
 ms.collection: 
 - purview-compliance
