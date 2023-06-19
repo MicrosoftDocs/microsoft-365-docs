@@ -33,7 +33,7 @@ For dynamic groups, users need one of the following licenses: Microsoft 365 F1, 
 ### Key considerations
 
 - You can choose a mix of dynamic frontline teams and static frontline teams for your organization.
-- You can convert static frontline teams to dynamic frontline teams in your [Azure AD portal](/azure/active-directory/enterprise-users/groups-change-type) by converting the group membership type to Dynamic and setting your dynamic team membership rules. Teams you convert with this method aren't currently possible to view in the Dynamic team management view in your Teams admin center.
+- You can convert static frontline teams to dynamic frontline teams in your [Azure AD portal](/azure/active-directory/enterprise-users/groups-change-type) by converting the group membership type to Dynamic and setting your dynamic team membership rules. Teams you convert with this method aren't currently possible to view in the Dynamic team management view in your Teams admin center, but this functionality is planned for future releases.
 
 ## When should I choose dynamic teams?
 
@@ -45,10 +45,10 @@ You should use dynamic frontline teams if:
 - You have AAD attributes that can define who is a frontline worker and what locations they work in.
 - You want to simplify the process of creating a team for each frontline location, including support for creating new teams when a new location opens.
 
-> [!NOTE]
-> You can't manually add members to dynamic teams. If you need to manually add or remove members, it's recommended that you use a static team.
-
 [Learn more about deploying dynamic frontline teams from your Microsoft 365 admin center](deploy-dynamic-teams-at-scale.md).
+
+> [!NOTE]
+> You can't manually add members to dynamic teams. If you need to manually add or remove members, it's recommended that you use a [static team](#when-should-i-choose-static-teams).
 
 ## When should I choose static teams?
 

@@ -83,8 +83,8 @@ Team membership will be automatically managed over time through the power of dyn
 
 11. Review the settings and choose **Finish setup.**
 
-  >[!NOTE]
-  >The setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
+    >[!NOTE]
+    >The setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
 
     ![Screenshot of the Manage frontline teams page with a banner showing that setup has been submitted.](media/dtas-setup-submitted.png)
 
@@ -137,7 +137,7 @@ You can manage your teams when changes happen in your organization.
 |Setting |Effect on existing frontline teams |Effect on new frontline teams |
 |--------|-----------------------------------|------------------------------|
 |Define your frontline AAD attribute. |All existing frontline teams will be members that have the new AAD attribute defined |All new frontline teams members will have the new AAD attribute defined |
-|Define your AAD attribute values. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated AAD attributes you have defined. |
+|Choose the values applicable to your frontline AAD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated AAD attributes you have defined. |
 |Define your frontline locations. | Existing teams will continue to persist. If a team no longer is tied a location there will be no users in that team and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new AAD attribute. |
 |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that has been changed. |All new teams will have the updated naming convention. |
 |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
