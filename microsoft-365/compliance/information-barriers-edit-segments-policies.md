@@ -262,7 +262,7 @@ After you have started applying information barriers policies, if you want to st
 ## Enable or disable user discoverability
 
 > [!IMPORTANT]
-> Support for enabling or disabling search restrictions is only available when your organization isn't in *Legacy* mode. Organizations in *Legacy* mode cannot enable or disable search restrictions. Enabling or disabling search restrictions requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](information-barriers-multi-segment.md) for details.<br><br> Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers)..
+> Support for enabling or disabling search restrictions is only available when your organization isn't in *Legacy* mode. Organizations in *Legacy* mode cannot enable or disable search restrictions. Enabling or disabling search restrictions requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](information-barriers-multi-segment.md) for details.<br><br> Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
 
 To enable the people picker search restriction using PowerShell, complete the following steps:
 
