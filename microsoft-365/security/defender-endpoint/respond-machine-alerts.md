@@ -255,7 +255,7 @@ To forcibly release device from isolation:
 1. On the right-hand side wizard, the admin selects **Download script**.
 
 #### Minimum requirements
-The minimum requirements for 'Forcibly release device from isolation' feature are:
+The minimum requirements for 'forcibly release device from isolation' feature are:
 
 - Supports only Windows
 - The following Windows versions are supported:
@@ -266,7 +266,7 @@ The minimum requirements for 'Forcibly release device from isolation' feature ar
     - WindowsServer2016
 
 #### Permissions
-Permissions for 'Forcibly release device from isolation' are:
+Permissions for 'forcibly release device from isolation' feature are:
 
 - This feature does not support Admin role.
 - You need to manage security settings in Security Center.
