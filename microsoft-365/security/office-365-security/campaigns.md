@@ -19,15 +19,14 @@ ms.custom:
 description: Learn about Campaigns in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/31/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Campaigns in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Microsoft 365 organizations with Microsoft Defender for Office 365 Plan 2, the _campaigns_ feature identifies and categorizes coordinated phishing and malware email attacks. Microsoft's categorization of email attacks into discrete campaigns helps you to:
 
