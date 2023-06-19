@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/06/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -68,8 +68,8 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Stream|MicrosoftStream|
 |SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
 |Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
-|Viva Goals|Viva Goals|
-|Workplace Analytics|WorkplaceAnalytics|
+|Viva Goals|VivaGoals|
+|Viva Insights|VivaInsights|
 |Yammer|Yammer|
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
