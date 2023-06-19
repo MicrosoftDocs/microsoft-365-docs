@@ -46,6 +46,8 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
                 - name: Analyze model usage
