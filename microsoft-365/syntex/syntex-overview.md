@@ -149,10 +149,6 @@ This feature is useful when you have a specific piece of information you want to
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
 
-## Content processing
-
-Microsoft Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
-
 ## Content compliance
 
 :::row:::
@@ -165,6 +161,10 @@ Microsoft Syntex lets you build simple rules-driven actions in document librarie
 :::row-end:::
 
 Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+## Content processing
+
+Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
 
 ## Premium taxonomy services
 
