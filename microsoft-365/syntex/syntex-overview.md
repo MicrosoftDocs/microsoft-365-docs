@@ -31,6 +31,21 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
+## Scenarios and use cases
+
+:::row:::
+   :::column span="3":::
+      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
+
+      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
+   :::column-end:::
+:::row-end:::
+
+[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
+
 ## Models
 
 :::row:::
@@ -165,20 +180,6 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 - [Term store reports](term-store-analytics.md), which provides you insights into published term sets and their use across your organization.
 
-## Scenarios and use cases
-
-:::row:::
-   :::column span="3":::
-      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
-
-      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
-   :::column-end:::
-:::row-end:::
-
-[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
 <!---<br><br>
 > [!div class="nextstepaction"]
 > [Learn more about model types in Microsoft Syntex](model-types-overview.md)

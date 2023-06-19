@@ -206,6 +206,9 @@
     - name: Video library 
       href: video-library.md
 
+    - name: Syntex-SharePoint Account Management
+      href: /sharepoint/advanced-management
+
     - name: Extensibility
       items: 
         - name: Microsoft Syntex REST API 
