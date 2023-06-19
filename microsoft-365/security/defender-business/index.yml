@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Simple, comprehensive endpoint security to help you protect your business, so you can focus on what matters. Defender for Business is available as a standalone subscription and is included in Microsoft 365 Business Premium. Mobile threat defense capabilities are now in preview! See https://aka.ms/MDB-mobile.
+summary: Simple, comprehensive endpoint security to help you protect your small or medium-sized business, so you can focus on what matters. Protect your computers, tablets, and phones with enterprise-grade security at an affordable price. Defender for Business is available as a standalone subscription or as part of Microsoft 365 Business Premium. Mobile threat defense capabilities are now in preview! See https://aka.ms/MDB-mobile.
 metadata:
   title: Microsoft Defender for Business documentation
-  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses. Protect devices with enterprise-grade security at an affordable price. Onboard all your devices today.
+  description: Defender for Business is a cybersecurity solution for small and medium-sized businesses to protect devices, such as computers, tablets, and phones. Protect devices with enterprise-grade security at an affordable price. Try or by Defender for Business today!
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.topic: landing-page
-  ms.date: 05/04/2023
+  ms.date: 06/19/2023
   ms.collection: 
   - SMB
   - m365-security
@@ -34,7 +34,13 @@ landingContent:
             url: /microsoft-365/business-premium/m365bp-mdb-whats-new
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
-          - text: Resources for Microsoft partners
+
+  # Card
+  - title: Resources for partners
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Resources for Microsoft partners, including a security guide and checklist
             url: mdb-partners.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
@@ -44,7 +50,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Interactive guide - Get started with Defender for Business
+          - text: Interactive guide - Get started with Microsoft Defender for Business
             url: https://aka.ms/MDB-GetStartedGuide
           - text: Get Defender for Business
             url: get-defender-business.md
@@ -54,16 +60,30 @@ landingContent:
             url: mdb-preview.md
 
   # Card
-  - title: Setup
+  - title: Setup information
     linkLists:
-      - links:
-          - text: Setup and configuration
+      - linkListType: deploy
+        links:
+          - text: Setup and configuration overview
             url: mdb-setup-configuration.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
-          - text: Create, view, or edit security policies
+          - text: Set up and review security policies
             url: mdb-configure-security-settings.md
-        linkListType: how-to-guide
+
+  # Card
+  - title: Operations and maintenance
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Maintain your environment
+            url: mdb-maintain-environment.md
+          - text: Tenant administration
+            url: mdb-admin-guide.md
+          - text: Security administration
+            url: mdb-security-admin-guide.md
+          - text: Security Operations
+            url: mdb-security-operations-guide.md
 
   # Card
   - title: Help and more resources
