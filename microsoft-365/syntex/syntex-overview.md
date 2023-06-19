@@ -97,9 +97,12 @@ This feature is useful when you have a specific piece of information you want to
 
 ### Prebuilt models
 
-Use a [prebuilt model](prebuilt-overview.md) to save time processing and automatically extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md).
+Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md).
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+Prebuilt models are pretrained to recognize common business documents and the structured information in the documents. You don't have to start from the beginning to create a document processing model. You can use a prebuilt model to jumpstart your document project.
+
+
+Instead of having to create a new document processing model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
 [Learn more about prebuilt models in Microsoft Syntex.](model-types-overview.md)
 | Contract processing | Invoice processing | Receipt processing | 
