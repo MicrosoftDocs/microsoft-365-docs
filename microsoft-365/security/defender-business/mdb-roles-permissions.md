@@ -54,9 +54,9 @@ The following table describes the three roles that can be assigned in Defender f
 
 3. Select one of the following roles to open its side pane:
 
-   - Global administrator
-   - Security administrator
-   - Security reader
+   - Global Administrator
+   - Security Administrator
+   - Security Reader
 
    > [!IMPORTANT]
    > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
