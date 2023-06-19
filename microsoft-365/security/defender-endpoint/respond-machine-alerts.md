@@ -254,14 +254,21 @@ To forcibly release device from isolation:
 1. On the device page, the MDE admin selects **Download script to force-release a device from isolation** from the action menu.
 1. On the right-hand side wizard, the admin selects **Download script**.
 
-#### Minimum requirements:
+#### Minimum requirements
 
-- The minimum supported client version for the feature is >= 10.8470
-- The following Windows versions are supported:
-    - Windows 10 Enterprise Multi-Session, version 20H2 - KB5023773
-    - Windows 11 version 21H2, all editions - KB5023774 
-    - Windows 11 version 22H2, all editions - KB5023778 
 - Supports only Windows
+- The following Windows versions are supported:
+    - Windows 10 21H2 and 22H2 with KB KB5023773
+    - Windows 11 version 21H2, all editions with KB5023774 
+    - Windows 11 version 22H2, all editions with KB5023778 
+    - WindowsServer2012R2
+    - WindowsServer2016
+
+#### Permissions
+
+- This feature does not support Admin role.
+- Manage security settings in Security Center
+
 
 ### Notification on device user
 
