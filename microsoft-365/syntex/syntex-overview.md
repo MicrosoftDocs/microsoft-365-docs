@@ -138,48 +138,14 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 
 [Learn more about unstructured models in Microsoft Syntex.](document-understanding-overview.md)
 
-
-
-
-
-<!---
-## Models
+### Optical character recognition
 
 :::row:::
    :::column span="":::
-      ![Image of generic model icon.](../media/content-understanding/model-generic-image.png) 
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.! 
    :::column-end:::
    :::column span="3":::
-      Understanding your content with Syntex begins with models. Models let you identify and classify documents that are uploaded to your SharePoint document libraries, and then to extract the information you need from each file.
-
-      In Syntex, you can build [custom models](model-types-overview.md) or you can use [prebuilt models](prebuilt-overview.md). 
-   :::column-end:::
-:::row-end:::
-
-The type of model you choose will depend on the types of files you use, the format and structure of the files, the information you want to extract, and where you want to apply the model.
-
-### Custom models
-
-You build custom models to understand the layout of your files from example documents. The models learn to look for the data you need to extract from similar documents. Custom models include:
-
-- [Unstructured document processing](document-understanding-overview.md)
-- [Freeform document processing](freeform-document-processing-overview.md)
-- [Structured document processing](form-processing-overview.md)
-
-| Unstructured<br>document processing  | Freeform<br>document processing  | Structured<br>document processing  |
-| ------------- | ------------- | ------------- |
-|  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |  ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) |
-| Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more about unstructured models.](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about freeform models.](freeform-document-processing-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more about structured models.](form-processing-overview.md) |
---->
-
-## Optical character recognition
-
-:::row:::
-   :::column span="":::
-      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png) 
-   :::column-end:::
-   :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+      [Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
 :::row-end:::
 
@@ -187,33 +153,33 @@ You build custom models to understand the layout of your files from example docu
 
 ## Additional Syntex features
 
-## Content compliance
+### Content compliance
 
 :::row:::
    :::column span="3":::
-      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
    :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png) 
+       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
    :::column-end:::
 :::row-end:::
 
 Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
 
-## Content processing
+### Content processing
 
 :::row:::
    :::column span="":::
-      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png) 
+      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
    :::column-end:::
    :::column span="3":::
-      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
    :::column-end:::
 :::row-end:::
 
 [Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
-## Premium taxonomy services
+### Premium taxonomy services
 
 :::row:::
    :::column span="":::
