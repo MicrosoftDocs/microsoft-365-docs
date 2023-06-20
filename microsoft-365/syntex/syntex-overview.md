@@ -141,10 +141,10 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 ### Optical character recognition
 
 :::row:::
-   :::column span="":::
+   :::column span="3":::
       The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.! 
    :::column-end:::
-   :::column span="3":::
+   :::column span="":::
       [Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
 :::row-end:::
@@ -156,10 +156,10 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 ### Content compliance
 
 :::row:::
-   :::column span="3":::
+   :::column span="":::
       ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
-   :::column span="":::
+   :::column span="3":::
        Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
    :::column-end:::
 :::row-end:::
@@ -169,10 +169,10 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 ### Content processing
 
 :::row:::
-   :::column span="":::
+   :::column span="3":::
       Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
    :::column-end:::
-   :::column span="3":::
+   :::column span="":::
       ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
    :::column-end:::
 :::row-end:::
