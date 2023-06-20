@@ -1,5 +1,5 @@
 ﻿---
-title: Migrating device connectivity for Microsoft Defender for Endpoint 
+title: Streamlining device connectivity for Microsoft Defender for Endpoint 
 description: Learn how to use a simplified domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
 author: mjcaparas
 ms.author: macapara 
@@ -17,16 +17,15 @@ search.appverid: MET150
 audience: ITPro
 ---
 
-# Migrating device connectivity for Microsoft Defender for Endpoint 
-
+# Streamlining device connectivity for Microsoft Defender for Endpoint 
 
 
 The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. 
 
-To simplify the configuration of network requirements and ease management, you have the option of migrating to use a Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** or dedicated static IP ranges for Microsoft Defender for Endpoint.  
+To streamline the configuration of network requirements and ease management, you have the option of using Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** or dedicated static IP ranges for Microsoft Defender for Endpoint.  
 
 > [!NOTE] 
-> This feature will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service is changed. 
+> The streamlined connectivity will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service is changed. 
 
 Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
 
@@ -56,12 +55,7 @@ The following table lists the Defender for Endpoint service URLs that the simpli
 
 ## Before you begin 
 
-You can use the simplified connectivity solution for new devices that need to be onboarded as well as devices that have been previously onboarded to Defender for Endpoint.  
-
--   **Stage 1 –** In this stage, you will perform the steps required to configure Defender for Endpoint cloud connectivity.  
-
--   **Stage 2** – In this stage, you will proceed with the actual onboarding process to use the simplified method.  
-
+Use the streamlined device connectivity solution on devices that have previously been onboarded to Defender for Endpoint.  
 ### Operating systems prerequisites
 
 ==MAY CHANGE!! NOTE TO JOEY - CHECK AGAIN CLOSER TO PUBLICATION==
@@ -86,7 +80,7 @@ The following Operating Systems are supported:
 
 ## Stage 1. Configure your environment for cloud connectivity 
 
-Because some URLs and IPs have been consolidated into the new domain, you'll need to configure your existing network device settings to connect using the new method instead.  
+Because some URLs and IPs have been consolidated into the new domain, you'll need to configure your existing network device settings to connect using the new method instead.  For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md). 
 
 Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs are not included in the consolidation. 
 
@@ -100,7 +94,7 @@ The following list provides options you can use to configure your environment fo
 
 ### Services not included in the consolidated domain
 
-You'll need to maintain connectivity with the required Defender for Endpoint services that are not included in the consolidation.
+You'll need to maintain connectivity with the required Defender for Endpoint services that are not included in the consolidation. For a complete list of the consolidated URLs, [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET].
 
 The following table lists the services that are **not** included in consolidation effort. You must ensure that you maintain connectivity with the following required endpoints: 
 
@@ -153,6 +147,8 @@ Allow firewall or proxy connections to **all of the following Defender for Endpo
 
 ## Stage 2. Onboard devices using the simplified method
 
+NOTE: For tenants created before *this date*, 
+
 Confirm devices meet [prerequisites](#operating-systems-prerequisites) and have fully updated Microsoft Defender Antivirus versions.
 
 Configure devices to communicate through connectivity infrastructure. For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
@@ -176,7 +172,7 @@ Run Defender for Endpoint Client Analyzer on device to confirm pre-onboarding co
 
 
 
-### Onboard devices using the simplified method
+### Migrating devices using the streamlined method
 
 
 The following table lists the available tools based on the endpoint that you need to onboard.
@@ -190,6 +186,12 @@ MARYSIA - PLEASE VERIFY WHICH OF THE TOOLS FOR EACH OF THE OSES NEED TO BE REMOV
 |**Windows servers | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
+
+## [**Windows 10 and 11 **](#tab/windows10and11)
+
+## Windows 10 and 11
+
+These our recommended approaches to migrating to the streamlined connectivity.
 
 ## [**Windows Server**](#tab/Windowsserver)
 
@@ -263,7 +265,7 @@ Choose one of the following options to onboard Mac:
 For more information on migrating a device that was previously onboarded to the simplified domain, see [Migrating a device to the simplified domain](#migrating-a-device-to-the-simplified-domain).
 
 
-## Verifying device connectivity 
+## Verifying device connectivity for migrated devices
 
 
 You can use the following methods to check that you have successfully connected devices:
@@ -272,6 +274,27 @@ You can use the following methods to check that you have successfully connected 
 - Registry editor??
 
 ### Use Defender for Endpoint Client Analyzer to validate connectivity post-onboarding for new endpoints
+
+#### Validate connectivity before onboarding endpoints
+
+
+1. Download ‘simplified’ onboarding package for relevant OS from ** Settings > Endpoints > Device management> Onboarding ** in Microsoft 365 Defender portal.
+
+a. Extract the .cmd from onboarding package.
+
+2. Open Command Prompt as administrator.
+
+3. There are two options:
+
+  a. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within MDEClientAnalyzer folder. The command will use parameters from onboarding script to test connectivity.
+
+  b. Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>`, where parameter - MISSING BITS!!
+
+4. View connectivity results within HTML output file or command prompt.
+
+
+
+#### Validate connectivity after onboarding endpoints
 
 1.  Open a command prompt as an administrator.
 
@@ -283,10 +306,15 @@ You can use the following methods to check that you have successfully connected 
 For more information, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
 
 
-### Registry editor??
+### Registry editor
+Check "OnboardedInfo" field in the Registry Editor (Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection). 
 
 
-### PowerShell detection test -- MARYSIA IS THIS CORRECT?
+>[!NOTE]
+>The field may be updated in Registry prior to reboot (reboot is still necessary for previously onboarded devices for full connectivity switch).
+
+
+### PowerShell detection test 
 
 1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
@@ -299,37 +327,6 @@ For more information, see [Verify client connectivity to Microsoft Defender for 
    ```
 
 After the command runs, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device within about 10 minutes.
-
-
-
-
-
-## Migrating devices to use the simplified method
-
-Use the following recommended guidance for previously onboarded devices to use the simplified method.
-
- 
-
-
-Recommended steps to take if you migrate a device to the simplified method:
-
-If the device has been previously onboarded to Defender for Endpoint, restart the device.
-
-    >[!IMPORTANT]
-    >Restart the test device if it was previously onboarded to Defender for Endpoint. You may see the `OnboardedInfo` registry key switch but **you must still restart the device** for sensor communication to switch. <br><br>
-    > For pre-onboarded devices, this step is mandatory for completing re-onboarding to the simplified domain. 
-
-
-
-Draft items:
-
-- Start gradually with a couple of devices then build up
-- Tracking migrations
-
-
-### Tracking migrated devices
-
-PLACEHOLDER FOR INSTRUCTIONS ON HOW TO TRACK MIGRATED DEVICES. 
 
 
 

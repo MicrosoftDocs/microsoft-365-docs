@@ -28,7 +28,17 @@ Take the following steps to configure your environment to connect devices to the
 
 ## Enable access to Microsoft Defender for Endpoint service URLs in the proxy server
 
+
+Configure your environment to allow connections with the simplified Defender for Endpoint domain: **\*.endpoint.security.microsoft.com**. **MARYSIA - DID I PLACE THIS HERE CORRECTLY?**
+
+
+NOTE: After this date <>, you will be using the onboarding script for the consolidated URL. 
+
+If you are supporting Windows 7 or 8, you'll need to add the domains from the sheet available in the table below.
+
+
 By default, if a proxy or firewall is blocking all traffic by default and allowing only specific domains, then add the domains listed in the downloadable sheet to the allowed domains list.
+
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optional, you may need to create an *allow* rule specifically for them.
 
@@ -36,7 +46,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list| Description|
 |---|---|
-| Microsoft Defender for Endpoint consolidated URL list  (NEW) | IMPORTANT: Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> **Prerequisites:** <br> -   Windows 10, with at least KB5011487 (March 8, 2022)  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   ==NEED SPECIFICS ON MAC AND LINUX<br>If you are migrating to the streamlined connectivity, see [Migrating device connectivity](migrating-device-connectivity.md).
+| Microsoft Defender for Endpoint consolidated URL list  (NEW) <br> | IMPORTANT: Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET] <br><br> **Prerequisites:** <br> -   Windows 10, with at least KB5011487 (March 8, 2022)  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   ==NEED SPECIFICS ON MAC AND LINUX<br>If you are migrating to the streamlined connectivity, see [Migrating device connectivity](migrating-device-connectivity.md).
 |Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
@@ -53,6 +63,11 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 
 > [!NOTE]
 > Microsoft does not provide a proxy server. These URLs are accessible via the proxy server that you configure.
+
+
+
+>[!IMPORTANT]
+> In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
 
 ## Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
