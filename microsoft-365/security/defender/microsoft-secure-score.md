@@ -135,7 +135,7 @@ The following roles with read and write access can make changes, directly intera
 - Exchange administrator
 - SharePoint administrator
 
-roles with read-only access, you aren't able to edit status or notes for a recommended action, edit score zones, or edit custom comparisons.
+The following roles with read-only access, aren't able to edit status or notes for a recommended action, edit score zones, or edit custom comparisons.
 
 - Helpdesk administrator
 - User administrator
