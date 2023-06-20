@@ -1673,11 +1673,7 @@
       {
          "source_path":"microsoft-365/admin/misc/become-admin-and-make-purchases.md",
          "redirect_url":"/microsoft-365/admin/misc/become-the-admin",
-<<<<<<< HEAD:.openpublishing.redirection.admin.json
          "redirect_document_id":true
-=======
-         "redirect_document_id":false
->>>>>>> dee7d9c48a6bb2b5753a25b9d1f3861c5ad41bff:admin_redirects.json
       },
       {
          "source_path":"microsoft-365/admin/dns/add-or-edit-custom-dns-records.md",
