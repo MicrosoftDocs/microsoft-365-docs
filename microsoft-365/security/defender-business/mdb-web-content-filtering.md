@@ -34,9 +34,9 @@ In Defender for Business, you can have one web content filtering policy and it's
 
 2. Specify a name and description for your policy.
 
-3. Select the categories to block. Use the expand icon to fully expand each parent category, and then select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
+3. Select the categories to block (do not select **Uncategorized**). Use the expand icon to fully expand each parent category, and then select specific web content categories. 
 
-   Don't select **Uncategorized**.
+   To set up an audit-only policy that doesn't block any websites, don't select any categories. 
 
 4. Apply the policy to all users.
 
