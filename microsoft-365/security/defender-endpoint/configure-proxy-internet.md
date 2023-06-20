@@ -21,7 +21,7 @@ ms.subservice: mde
 ms.date: 04/04/2023
 ---
 
-# Configure device proxy and Internet connectivity settings
+# STEP 2: Configure device proxy and Internet connectivity settings - WHAT SHOULD THIS ARTICLE BE CALLED - PAUL/MARYSIA?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
