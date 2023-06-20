@@ -136,3 +136,8 @@ The report is sent to the SMTP address that you passed the Test-DlpPolicies Powe
 |Predicates - Rule's Actions     |The action defined in the DLP rule         |
 |Predicates - IsMatched     | Whether the item matched the rule        |
 |IsMatched     |Whether the item matched the overall policy         |
+
+## See Also
+
+- [Test-DataClassification](/powershell/module/exchange/test-dataclassification) explains how to use the PowerShell cmdlet `Test-DataClassification `.
+- [Test-Message](powershell/module/exchange/test-message) explains how to use the PowerShell cmdlet `Test-Message`.
