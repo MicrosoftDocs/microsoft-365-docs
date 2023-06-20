@@ -89,7 +89,7 @@ Please see the [Static data location information for select workloads](#static-d
 ### Whiteboard
 Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
-### Yammer
+### Viva Engage (formally known as Yammer)
 Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
 
 ## Static data location information for select workloads
