@@ -47,7 +47,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `AccountName` | `string` | User name of the account |
 | `AccountDomain` | `string` | Domain of the account |
-| `DistinguishedName`[*](#mdi-only) | string | For identities from Active Directory only, the user's [distinguished name](/windows/win32/adsi/ldap-adspath). |
+| `DistinguishedName` [*](#mdi-only) | string | For identities from Active Directory only, the user's [distinguished name](/windows/win32/adsi/ldap-adspath). |
 | `CloudSid` | `string` | Cloud security identifier of the account |
 | `GivenName` | `string` | Given name or first name of the account user |
 | `Surname` | `string` | Surname, family name, or last name of the account user |
@@ -64,7 +64,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SourceProvider` [*](#mdi-only)  | `string` |For identities from Active Directory only, the account user's Active Directory source <!--is this descriptive enough?--> |
 | `ChangeSource` [*](#mdi-only)  | `string` |For identities from Active Directory only, the source of the change made to the account user <!--this doesn't make sense--> |
 | `Tags` [*](#mdi-only)  | `dynamic` | For identities from Active Directory only, tags assigned to the account user |
-| `AssignedRoles [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
+| `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
 
 <a name="mdi-only"></a>* Available only for tenants with Microsoft Defender for Identity deployed.
 
