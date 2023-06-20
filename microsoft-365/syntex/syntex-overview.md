@@ -125,6 +125,24 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 Learn more about [structured models](form-processing-overview.md) and [freeform models](freeform-document-processing-overview.md) in Microsoft Syntex.
 
+### Unstructured document processing
+
+:::row:::
+   :::column span="":::
+      ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) 
+   :::column-end:::
+   :::column span="3":::
+      Use an [unstructured model](document-understanding-overview.md) to automatically classify documents and extract information from them. It works best for documents that vary in composition, such as letters or contracts. This model type supports the widest range of file types. 
+   :::column-end:::
+:::row-end:::
+
+[Learn more about unstructured models in Microsoft Syntex.](document-understanding-overview.md)
+
+
+
+
+
+<!---
 ## Models
 
 :::row:::
@@ -152,7 +170,7 @@ You build custom models to understand the layout of your files from example docu
 | ------------- | ------------- | ------------- |
 |  ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) | ![Icon for freeform document processing model.](../media/content-understanding/custom-extract-by-text-pattern-and-layout.png) |  ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png) |
 | Use this custom model to automatically classify documents and extract information from them. Use the patterns of the text in example documents to train the model. Best for Office files and automatic classification of files. <br>[Learn more about unstructured models.](document-understanding-overview.md) | Use this custom model to automatically extract information from unstructured documents. Use the patterns of the text or the layout in example documents to train the model. Best for a mix of both text and layout needs. <br>[Learn more about freeform models.](freeform-document-processing-overview.md) |  Use this custom model to automatically identify field and table values from structured or semi-structured documents like forms. Best for most languages and files that include form layouts or tables. <br>[Learn more about structured models.](form-processing-overview.md) |
-
+--->
 
 ## Optical character recognition
 
