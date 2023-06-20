@@ -33,14 +33,14 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> June-2023 (Build: 101.98.84 | Release version: 30.123042.19884.0)</summary>
+	<summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
 
-## June-2023 Build: 101.98.84 | Release version: 30.123042.19884.0
+## June-2023 Build: 101.98.89 | Release version: 30.123042.19889.0
 
-&ensp;Released: **June 5,2023**<br/>
-&ensp;Published: **June 5, 2023**<br/>
-&ensp;Build: **101.98.84**<br/>
-&ensp;Release version: **30.123042.19884.0**<br/>
+&ensp;Released: **June 12,2023**<br/>
+&ensp;Published: **June 12, 2023**<br/>
+&ensp;Build: **101.98.89**<br/>
+&ensp;Release version: **30.123042.19889.0**<br/>
 &ensp;Engine version: **1.1.20100.7**<br/>
 &ensp;Signature version: **1.385.1648.0**<br/>
 
@@ -48,8 +48,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - There are multiple fixes and new changes in this release 
 	- Improved Network Protection Proxy handling.
-	- In Passive mode, MDE no longer scans when Definition update happens.
-	- Device will continue to be protected even after MDE agent is expired. It's still recommended to upgrade to receive latest bug fixes, features and performance improvements.
+	- In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
+	- Device will continue to be protected even after Defender for Endpoint agent has expired. It is still recommended to upgrade the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
 	- Removed semanage package dependency.
 	- Engine Update to 1.1.20100.7 and Signatures Ver: 1.385.1648.0.
 	- Bug fixes.
@@ -313,7 +313,7 @@ sudo systemctl disable mdatp
   - Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
   - Fixes an issue with Network Protection and SMB.
   - lttng performance tracing support.
-  - TVM, eBPF, auditd, telemetry and mdatp CLI improvements.
+  - TVM, eBPF, auditd, telemetry and mdatp cli improvements.
   - mdatp health will now report behavior_monitoring
   - Other fixes.
 
@@ -369,7 +369,7 @@ sudo systemctl disable mdatp
   - V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
   - V2 engine support configuration path for AV definitions. (mdatp definition set path)
   - Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
-  - In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+  - In case crash collection is disabled by configuration, crash monitoring process won't be launched.
   - Performance fixes to optimally use system events for AV capabilities.
   - Stability improvement in case of mdatp restart and loading of epsext issues.
   - Other fixes
@@ -415,7 +415,7 @@ sudo systemctl disable mdatp
 
 **What's new**
 
-- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) aren't impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 **Known issues**
 

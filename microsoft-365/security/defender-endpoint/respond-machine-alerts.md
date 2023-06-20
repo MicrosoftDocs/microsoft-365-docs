@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 03/16/2023
+ms.date: 05/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -222,6 +222,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 > - Exclusion for both macOS and Linux isolation is not supported.
+> - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
+> - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 

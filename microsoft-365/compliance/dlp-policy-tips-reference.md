@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/15/2021
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -23,162 +23,11 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy tips reference
 
-## DLP policy tips in Outlook Web Access
-
-Policy tips in Outlook Web Access (OWA) are supported for these conditions and actions:
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-### Conditions that support policy tips in Outlook Web Access
-
-- Content contains (SIT)
-- Content is shared from M365
-- Sender is a member of
-- Recipient Domain Is 
-- Recipient is
-- Subject Contains Words or phrases
-- Sender is
-- Sender domain is
-- File extension is
-- Subject matches patterns
-- Subject or Body contains words or phrases
-- Doc or Attachment is password protected
-- Document name contains words or phrases
-- Sender address contains words
-- Document size equals or is greater than
-- Subject or Body matches patterns
-- Recipient address contains words
-- Sender address matches patterns
-- Document name matches patterns
-- Recipient address matches patterns
-- Message importance is
-- Any email attachment's content could not be scanned (DocIsUnsupported)
-- Document property is
-
-### Actions that support policty tips in Outlook Web Access
-
-- Restrict access or encrypt the content in Microsoft 365 locations
-- Set headers
-- Remove header
-- Redirect the message to specific users
-- Forward the message for approval to sender's manager
-- Forward the message for approval to specific approvers
-- Add recipient to the To box
-- Add recipient to the Cc box
-- Add recipient to the Bcc box
-- Add the sender's manager as recipient
-- Removed O365 Message Encryption and rights protection
-- Prepend Email Subject
-- Add HTML Disclaimer
-- Modify Email Subject
-- Deliver the message to the hosted quarantine
-
-
-### Sensitive information types that support policy tips in Outlook Web Access
-
-- ABA Routing Number
-- Argentina National Identity (DNI) Number
-- Australia Bank Account Number
-- Australia Medical Account Number
-- Australia Passport Number
-- Australia Tax File Number
-- Azure DocumentDB Auth Key  
-- Azure IAAS Database Connection String and Azure SQL Connection String  
-- Azure IoT Connection String  
-- Azure Publish Setting Password  
-- Azure Redis Cache Connection String  
-- Azure SAS  
-- Azure Service Bus Connection String  
-- Azure Storage Account Key  
-- Azure Storage Account Key (Generic)  
-- Belgium National Number
-- Brazil CPF Number
-- Brazil Legal Entity Number (CNPJ)
-- Brazil National ID Card (RG)
-- Canada Bank Account Number
-- Canada Driver's License Number
-- Canada Health Service Number
-- Canada Passport Number
-- Canada Personal Health Identification Number (PHIN)
-- Canada Social Insurance Number
-- Chile Identity Card Number
-- China Resident Identity Card (PRC) Number
-- Credit Card Number
-- Croatia Identity Card Number  
-- Croatia Personal Identification (OIB) Number  
-- Czech Personal Identity Number  
-- Denmark Personal Identification Number
-- Drug Enforcement Agency (DEA) Number
-- EU Debit Card Number
-- EU Driver's License Number  
-- EU National Identification Number  
-- EU Passport Number  
-- EU Social Security Number (SSN) or Equivalent ID  
-- EU Tax Identification Number (TIN)  
-- Finland National ID
-- Finland Passport Number
-- France Driver's License Number
-- France National ID Card (CNI)
-- France Passport Number
-- France Social Security Number (INSEE)
-- German Driver's License Number
-- German Passport Number
-- Germany Identity Card Number
-- Greece National ID Card  
-- Hong Kong Identity Card (HKID) Number
-- India Permanent Account Number (PAN)
-- India Unique Identification (Aadhaar) Number
-- Indonesia Identity Card (KTP) Number
-- International Banking Account Number (IBAN)
-- International Classification of Diseases (ICD-10-CM)  
-- International Classification of Diseases (ICD-9-CM)  
-- IP Address
-- Ireland Personal Public Service (PPS) Number 
-- Israel Bank Account Number
-- Israel National ID
-- Italy Driver's License Number
-- Japan Bank Account Number
-- Japan Driver's License Number
-- Japan Passport Number
-- Japan Resident Registration Number
-- Japan Social Insurance Number (SIN)
-- Japanese Residence Card Number
-- Malaysia Identity Card Number
-- Netherlands Citizen's Service (BSN) Number  
-- New Zealand Ministry of Health Number
-- Norway Identity Number  
-- Philippines Unified Multi-Purpose ID Number
-- Poland Identity Card
-- Poland National ID (PESEL)
-- Poland Passport
-- Portugal Citizen Card Number
-- Saudi Arabia National ID
-- Singapore National Registration Identity Card (NRIC) Number
-- South Africa Identification Number  
-- South Korea Resident Registration Number
-- Spain Social Security Number (SSN)
-- SQL Server Connection String  
-- Sweden National ID
-- Sweden Passport Number
-- SWIFT Code
-- Taiwan National ID
-- Taiwan Passport Number
-- Taiwan Resident Certificate (ARC/TARC)
-- Thai Population Identification Code
-- Turkish National Identification number
-- U.K. Driver's License Number
-- U.K. Electoral Roll Number
-- U.K. National Health Service Number
-- U.K. National Insurance Number (NINO)
-- U.S. / U.K. Passport Number
-- U.S. Bank Account Number
-- U.S. Driver's License Number
-- U.S. Individual Taxpayer Identification Number (ITIN)
-- U.S. Social Security Number (SSN)
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions
 
-Currently, Outlook 2013 and later supports showing policy tips for policies that contain these conditions:
+Currently, Outlook 2013 and later support showing policy tips for policies that contain these conditions:
 
 For E3 licensed users
 - Content contains Sensitive information types (preconfigured SITs and custom SITs)
@@ -196,13 +45,13 @@ For E5 licensed users (preview)
 - Recipient domain is
 - Subject contains words
 
-All the conditions work for emails authored in Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
+All the conditions work for emails authored in the Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
 
 ## Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types
 
 For E3 licensed users, DLP policy tips are shown in Outlook 2013 and later for pre-configured SITs and custom SITs.
 
-For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later, for policies that use: (preview)
+For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later for policies that use:
 
 - [Preconfigured sensitive information types](sensitive-information-type-entity-definitions.md) (SITs)
 - Custom SITs
@@ -422,13 +271,13 @@ The list of out-of-the-box sensitive information types that will be detected in 
 - Ukraine Passport Number (Domestic) 
 - Ukraine Passport Number (International) 
  
-Custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
+Custom sensitive information types (SITs) will also be detected in addition to the above out-of-the-box sensitive information types
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
-|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
+|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Conditions and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Exact Data match SITs|subset||
+|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset, see [Sensitive information types that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#sensitive-information-types-that-support-policy-tips-in-outlook-on-the-web) |Subset, see [Conditions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#conditions-that-support-policy-tips-in-outlook-on-the-web) and [Actions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#actions-that-support-policy-tips-in-outlook-on-the-web)|For full details, see [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)|
 |**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all SITS are supported for E5 users; pre-configured SITs and customer SITs are supported for E3 users|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported on Outlook mobile|
 |**Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook for Mac|
