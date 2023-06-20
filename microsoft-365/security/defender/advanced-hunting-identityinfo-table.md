@@ -66,10 +66,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Tags` [*](#mdi-only)  | `dynamic` | For identities from Active Directory only, tags assigned to the account user |
 | `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
 
-<a name="mdi-only"></a>* Available only for tenants with Microsoft Defender for Identity deployed.
-
-
-Indicated data from Active Directory is available only for tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
+<a name="mdi-only"></a>* Available only for tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
 
 ## Related topics
 
