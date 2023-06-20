@@ -34,13 +34,11 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Attackers are more likely to compromise unmanaged devices and, by doing so, threaten your network. Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.
+Attackers are more likely to compromise unmanaged devices and, by doing so, threaten your network. Onboarding your devices to Microsoft Defender for Endpoint puts you in the best position to protect your organization from these kinds of attacks. The more devices you onboard, the quicker you’ll be able identify and stop attacks, prioritize risks, evolve your defenses across operating systems and network devices, and essentially elevate your security posture.
 
-Microsoft Defender for Endpoint will probe and scan your network to discover unmanaged devices. After discovery, Defender for Endpoint provides an holistic view into the devices in your environment along with tools to help assess, onboard, and protect the discovered devices.
+Microsoft Defender for Endpoint also probes and scans your network to discover unmanaged devices in your environment and provides tools to help assess, onboard, and protect these discovered devices.
 
-, mitigate advanced threats, and respond to alerts from a single, unified platform.
-
-This article provides an overview of the steps to deploy Defender for Endpoint as your multi-platform endpoint protection solution. Each section corresponds to a separate article in this solution.
+This article provides an overview of the steps to deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment method for you organization, guide you on how onboard your devices and configure Defender for Endpoint capabilities. Each section corresponds to a separate article in this solution.
 
 The steps include:
 
