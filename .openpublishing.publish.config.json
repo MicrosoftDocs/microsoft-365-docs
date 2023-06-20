@@ -81,6 +81,7 @@
   "need_generate_intellisense": false,
   "redirection_files": [
     ".openpublishing.redirection.json",
+    ".openpublishing.redirection.admin.json",
     ".openpublishing.redirection.bookings.json",
     ".openpublishing.redirection.business.json",
     ".openpublishing.redirection.commerce.json",
