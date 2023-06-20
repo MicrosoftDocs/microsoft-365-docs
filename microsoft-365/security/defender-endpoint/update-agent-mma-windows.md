@@ -1,16 +1,12 @@
 ---
 title: Update your agent on devices for Microsoft Defender for Endpoint
 description: Learn about your options for updating or replacing your MMA agent on Windows devices for Defender for Endpoint.
-keywords: MMA, agent, azure log
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/25/2022
+ms.date: 06/20/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
