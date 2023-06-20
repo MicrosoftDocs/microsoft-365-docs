@@ -2421,6 +2421,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/mfi-mail-flow-map-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mail-flow-insights",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": false
@@ -11059,6 +11064,16 @@
     "source_path": "microsoft-365/compliance/compliance-manager-mcca.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/view-the-dlp-reports.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp#dlp-activity-explorer-and-reports",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/dlp-conditions-and-exceptions.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-exchange-conditions-and-actions",
+    "redirect_document_id": true
   }
  ]
 }

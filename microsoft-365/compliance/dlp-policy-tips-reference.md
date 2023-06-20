@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2021
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions
 
-Currently, Outlook 2013 and later supports showing policy tips for policies that contain these conditions:
+Currently, Outlook 2013 and later support showing policy tips for policies that contain these conditions:
 
 For E3 licensed users
 - Content contains Sensitive information types (preconfigured SITs and custom SITs)
@@ -45,7 +45,7 @@ For E5 licensed users (preview)
 - Recipient domain is
 - Subject contains words
 
-All the conditions work for emails authored in Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
+All the conditions work for emails authored in the Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
 
 =================================================================
 THIS SECTION WILL BE MOVED TO dlp-ol365-win32-policy-tips.md
@@ -54,7 +54,7 @@ THIS SECTION WILL BE MOVED TO dlp-ol365-win32-policy-tips.md
 
 For E3 licensed users, DLP policy tips are shown in Outlook 2013 and later for pre-configured SITs and custom SITs.
 
-For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later, for policies that use: (preview)
+For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later for policies that use:
 
 - [Preconfigured sensitive information types](sensitive-information-type-entity-definitions.md) (SITs)
 - Custom SITs
@@ -271,8 +271,7 @@ For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later, 
 - Ukraine Passport Number (Domestic) 
 - Ukraine Passport Number (International) 
  
-Custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
-==============================================================================================
+Custom sensitive information types (SITs) will also be detected in addition to the above out-of-the-box sensitive information types
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
