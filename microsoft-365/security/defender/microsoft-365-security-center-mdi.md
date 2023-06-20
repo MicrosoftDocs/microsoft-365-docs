@@ -32,7 +32,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
 
-Microsoft Defender for Identity is now part of Microsoft 365 Defender, the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location, which simplifyies workflows and integrating functionality from other Microsoft 365 Defender services.
+Microsoft Defender for Identity is now part of Microsoft 365 Defender, the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location, which simplifies workflows and integrating functionality from other Microsoft 365 Defender services.
 
 Microsoft Defender for Identity contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
 
