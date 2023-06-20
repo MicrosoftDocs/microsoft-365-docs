@@ -34,6 +34,17 @@ You can dive deeper into your content to truly understand it, and you can turn t
 ## Explore scenarios and use cases
 
 :::row:::
+   :::column span="":::
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
+
+      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
+   :::column-end:::
+:::row-end:::
+<!---
+:::row:::
    :::column span="3":::
       Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
 
@@ -43,13 +54,23 @@ You can dive deeper into your content to truly understand it, and you can turn t
       ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
    :::column-end:::
 :::row-end:::
-
+--->
 [Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
 
 ## Syntex services
 
 ### Annotations
 
+:::row:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
+   :::column-end:::
+:::row-end:::
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png) 
@@ -58,7 +79,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
-
+--->
 [Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ### Content assembly
@@ -111,12 +132,12 @@ Instead of having to create a new document processing model from scratch, you ca
 [Learn more about prebuilt models in Microsoft Syntex.](model-types-overview.md)
 
 
-
+<!---
 | Contract processing | Invoice processing | Receipt processing | 
 | ------------- | ------------- | ------------- |
 | ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
 | Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
-
+--->
 
 
 
