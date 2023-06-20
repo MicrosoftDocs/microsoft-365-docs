@@ -40,14 +40,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` [*](#mdi-only) | `datetime` | For identities from Active Directory only, the date and time that the user was last active. <!--i made this up. what is it?--> |
+| `Timestamp` [*](#mdi-only) | `datetime` | For identities from Active Directory only, the date and time that the line was written to the database. This is used when there are multiple lines for each identity, such as when a change is detected, or if a certain timeframe has passed, as noted in the `ChangeSource` attribute. |
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `AccountName` | `string` | User name of the account |
 | `AccountDomain` | `string` | Domain of the account |
-| `DistinguishedName` [*](#mdi-only) | string | For identities from Active Directory only, the user's [distinguished name](/windows/win32/adsi/ldap-adspath). |
+| `DistinguishedName` [*](#mdi-only) | string | For identities from Active Directory only, the user's [distinguished name](/windows/desktop/ldap/distinguished-names). |
 | `CloudSid` | `string` | Cloud security identifier of the account |
 | `GivenName` | `string` | Given name or first name of the account user |
 | `Surname` | `string` | Surname, family name, or last name of the account user |
@@ -61,8 +61,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Manager` [*](#mdi-only)  | `string` | For identities from Active Directory only, the listed manager of the account user |
 | `Phone` [*](#mdi-only)  | `string` | For identities from Active Directory only, the listed phone number of the account user|
 | `CreatedDateTime` [*](#mdi-only)  | `datetime` | For identities from Active Directory only, the date and time that the user was created|
-| `SourceProvider` [*](#mdi-only)  | `string` |For identities from Active Directory only, the account user's Active Directory source <!--is this descriptive enough?--> |
-| `ChangeSource` [*](#mdi-only)  | `string` |For identities from Active Directory only, the source of the change made to the account user <!--this doesn't make sense--> |
+| `SourceProvider` [*](#mdi-only)  | `string` |For identities from Active Directory only, the identity's source, such as Azure Active Directory, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning), synchronized from Active Directory to Azure Active Directory. |
+| `ChangeSource` [*](#mdi-only)  | `string` |For identities from Active Directory only, indicates whether enough time has passed and a new line is added for the account user. |
 | `Tags` [*](#mdi-only)  | `dynamic` | For identities from Active Directory only, tags assigned to the account user |
 | `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
 
