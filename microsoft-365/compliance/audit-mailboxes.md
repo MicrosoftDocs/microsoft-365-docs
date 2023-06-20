@@ -236,7 +236,7 @@ Set-Mailbox -Identity "Team Discussion" -AuditDelegate @{Remove="MoveToDeletedIt
 Regardless of the method you use, customizing the audited mailbox actions on user mailboxes or shared mailboxes has the following results:
 
 - For the sign-in type that you customized, the audited mailbox actions are no longer managed by Microsoft.
-- The sign-in type that you customized is no longer displayed in the *DefaultAuditSet* property value for the mailbox as [previously described](#verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type).
+- The sign-in type that you customized is no longer displayed in the *DefaultAuditSet* property value for the mailbox as [previously described](#verify-that-default-mailbox-actions-are-being-logged-for-each-sign-in-type).
 
 ### Restore the default mailbox actions
 
