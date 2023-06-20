@@ -43,19 +43,8 @@ You can dive deeper into your content to truly understand it, and you can turn t
       With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
    :::column-end:::
 :::row-end:::
-<!---
-:::row:::
-   :::column span="3":::
-      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
 
-      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
-   :::column-end:::
-:::row-end:::
---->
-[Learn more about scenarios and use case for Syntex.](adoption-scenarios.md)
+[Learn more about scenarios and use case for Microsoft Syntex.](adoption-scenarios.md)
 
 ## Syntex services
 
@@ -70,16 +59,6 @@ You can dive deeper into your content to truly understand it, and you can turn t
    :::column-end:::
 :::row-end:::
 
-<!---
-:::row:::
-   :::column span="":::
-      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png) 
-   :::column-end:::
-   :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
-   :::column-end:::
-:::row-end:::
---->
 [Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ### Content assembly
@@ -116,7 +95,7 @@ This feature is useful when you have a specific piece of information you want to
 
 [Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
 
-### Prebuilt models
+### Prebuilt document processing
 
 :::row:::
    :::column span="":::
@@ -131,15 +110,20 @@ Instead of having to create a new document processing model from scratch, you ca
 
 [Learn more about prebuilt models in Microsoft Syntex.](model-types-overview.md)
 
+### Structured and freeform document processing
 
-<!---
-| Contract processing | Invoice processing | Receipt processing | 
-| ------------- | ------------- | ------------- |
-| ![Icon for Contracts model.](../media/content-understanding/trained-contracts-model.png)| ![Icon for Invoices model.](../media/content-understanding/trained-invoices-model.png) | ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) |
-| Use this prebuilt model to save time processing contracts. Automatically extract key information specific to contract documents. <br>[Learn more about contract models.](prebuilt-model-contract.md) | Use this prebuilt model to save time processing invoices. Automatically extract key information specific to invoices. <br>[Learn more about invoice models.](prebuilt-model-invoice.md) | Use this prebuilt model to save time processing receipts. Automatically extract key information specific to expenses. <br>[Learn more about receipt models.](prebuilt-model-receipt.md) | 
---->
+:::row:::
+   :::column span="3":::
+      Use a structured model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a freeform model to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
+   :::column-end:::
+   :::column span="":::
+      ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png)
+   :::column-end:::
+:::row-end:::
 
+Freeform document processing models use Microsoft Power Apps AI Builder to create and train models within Syntex.
 
+Learn more about [structured models](form-processing-overview.md) and [freeform models](freeform-document-processing-overview.md).
 
 ## Models
 
