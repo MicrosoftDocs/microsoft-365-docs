@@ -33,6 +33,9 @@ This article explains how to download software and product license keys for perp
 
 You must be a Global admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
+> [!NOTE]
+> If you are a partner, you need to log in to the customer tenant with an admin account created in this tenant.
+
 ## Download software and product license keys
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
