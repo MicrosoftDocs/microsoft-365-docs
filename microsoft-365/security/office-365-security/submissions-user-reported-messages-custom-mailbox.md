@@ -66,7 +66,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Create a Safe Links policy for the reporting mailbox where Safe Links scanning in email is turned off (**URL & click protection settings** \> **On: Safe Links checks a list of known, malicious links when users click links in email** isn't selected or `EnableSafeLinksForEmail $false` in PowerShell). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
-- If you have data loss prevention (DLP), exclude the reporting mailbox from DLP. For instructions, see [Creating exceptions in DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
+- If you have data loss prevention (DLP), exclude the reporting mailbox from DLP. For more information, see [Data loss prevention Exchange conditions and actions reference](../../compliance/dlp-exchange-conditions-and-actions.md).
 
 After you verify that the reporting mailbox meets all of these requirements, use the procedures in this article to identify the reporting mailbox and to configure the related settings.
 

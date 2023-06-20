@@ -4,7 +4,7 @@ description: Learn how to set up, view, and edit your web content filtering poli
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 05/04/2023
+ms.date: 06/20/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -25,6 +25,8 @@ Web content filtering enables your security team to track and regulate access to
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information, see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
 
+In Defender for Business, you can have one web content filtering policy and it's applied to all users.
+
 
 ## Set up web content filtering
 
@@ -36,7 +38,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
    Don't select **Uncategorized**.
 
-4. Specify the policy scope by selecting device groups to apply the policy to. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
+4. Apply the policy to all users.
 
 5. Review the summary and save the policy. The policy refresh might take up to two hours to apply to your selected devices.
 
