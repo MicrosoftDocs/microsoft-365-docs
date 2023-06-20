@@ -95,7 +95,7 @@
     ".openpublishing.redirection.solutions.json",
     ".openpublishing.redirection.campaigns.json",
     ".openpublishing.redirection.knowledge.json",
-    ".openpublishing.redirection.learning.json"
-
+    ".openpublishing.redirection.learning.json",
+    ".openpublishing.redirection.syntex.json"
   ]
 }
