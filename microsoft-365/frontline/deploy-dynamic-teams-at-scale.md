@@ -25,9 +25,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 ## Overview
 
-Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (AAD) attributes. [Learn more about AAD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
+Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
-In the wizard, you'll define the following with AAD attributes:
+In the setup process, you'll define the following with Azure AD attributes:
 
 - Who your frontline workers are
 - What locations they work at
@@ -40,9 +40,9 @@ Team membership will be automatically managed over time through the power of dyn
 
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an AAD P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- The admin running the wizard needs Teams admin center permissions.
-- Ensure you can define your frontline workers and their work locations through data available in AAD. If you don't have this data in AAD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
+- Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- The admin running the deployment process needs Teams admin center permissions.
+- Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 
   >[!NOTE]
   >The PowerShell solution creates static teams, which aren't managed automatically.
@@ -61,13 +61,13 @@ Team membership will be automatically managed over time through the power of dyn
 
 5. Review the prerequisite information.
 
-6. Select the AAD attribute that defines your frontline workers. You can only choose one AAD attribute, but you can define multiple values by separating them with commas.
+6. Select the Azure AD attribute that defines your frontline workers. You can only choose one Azure AD attribute, but you can define multiple values by separating them with commas.
 
-    ![Screenshot of where to enter your AAD attribute and values for frontline workers.](media/dtas-frontline-attribute.png)
+    ![Screenshot of where to enter your Azure AD attribute and values for frontline workers.](media/dtas-frontline-attribute.png)
 
-7. Select the AAD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+7. Select the Azure AD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
-    ![Screenshot of where to enter your AAD attribute for frontline locations.](media/dtas-location-attribute.png)
+    ![Screenshot of where to enter your Azure AD attribute for frontline locations.](media/dtas-location-attribute.png)
 
 8. Define your team structure by choosing a prefix. The prefix will be applied in the format: "prefix-location" for all of your teams.
 
@@ -137,9 +137,9 @@ You can manage your teams when changes happen in your organization.
 
 |Setting |Effect on existing frontline teams |Effect on new frontline teams |
 |--------|-----------------------------------|------------------------------|
-|Define your frontline AAD attribute. |All existing frontline teams will be members that have the new AAD attribute defined |All new frontline teams members will have the new AAD attribute defined |
-|Choose the values applicable to your frontline AAD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated AAD attributes you have defined. |
-|Define your frontline locations. | Existing teams will continue to persist. If a team no longer is tied a location there will be no users in that team and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new AAD attribute. |
+|Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined |All new frontline teams members will have the new Azure AD attribute defined |
+|Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes you have defined. |
+|Define your frontline locations. | Existing teams will continue to persist. If a team no longer is tied a location there will be no users in that team and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
 |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that has been changed. |All new teams will have the updated naming convention. |
 |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
 |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
