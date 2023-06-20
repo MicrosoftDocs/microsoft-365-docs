@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -436,6 +436,37 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+## Microsoft Project for the web activities
+
+You can search the audit log for activities in Microsoft Project for the web. Microsoft Project for the web is built on the [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and has an associated Project Power App. To enable auditing for scenarios where the user is using the Microsoft Dataverse or the Project Power App, see the [System Settings Auditing tab](/power-platform/admin/system-settings-dialog-box-auditing-tab) guidance. For a list of entities related to Project for the web, see the [Export user data from Project for the web](/project-for-the-web/export-user-data-from-project-for-the-web#find-user-data-in-dataverse-with-the-advanced-find-search-feature) guidance.
+
+For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
+
+>[!NOTE]
+>Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Created project|ProjectCreated|A project is created by a user or app.|
+|Created roadmap|RoadmapCreated|A roadmap is created by a user or app.|
+|Created roadmap item|RoadmapItemCreated|A roadmap item is created by a user or app.|
+|Created task|TaskCreated|A task is created by a user or app.|
+|Deleted project|ProjectDeleted|A project is deleted by a user or app.|
+|Deleted roadmap|RoadmapDeleted|A roadmap is deleted by a user or app.|
+|Deleted roadmap item|RoadmapItemDeleted|A roadmap item is deleted by a user or app.|
+|Deleted task|TaskDeleted|A task is deleted by a user or app.|
+|Project accessed|ProjectAccessed|A project is read or app.|
+|Project home accessed|ProjectListAccessed|A list of projects and/or roadmaps is queried by a user.|
+|Roadmap accessed|RoadmapAccessed|A roadmap is read by a user or app.|
+|Roadmap item accessed|RoadmapItemAccessed|A roadmap item is read by a user or app.|
+|Task accessed|TaskAccessed|A task is read by a user or app.|
+|Updated project settings|ProjectForTheWebProjectSettings|Project settings is updated by an admin.|
+|Updated roadmap|RoadmapUpdated|A roadmap is modified by a user or app.|
+|Updated roadmap item|RoadmapItemUpdated|A roadmap item is modified by a user or app.|
+|Updated roadmap settings|ProjectForTheWebRoadmaptSettings|Roadmap settings is updated by an admin.|
+|Updated task|TaskUpdated|A task is modified by a user or app.|
+|Updated project|ProjectUpdated|A project is modified by a user or app.|
+
 ## Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
@@ -458,9 +489,38 @@ If your organization is using the Shifts app in Microsoft Teams, you can search 
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
-## Microsoft Workplace Analytics activities
+## Microsoft To Do activities
 
-Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
+The following table lists the activities in Microsoft To Do that are logged in the Microsoft 365 audit log. For more information about Microsoft To Do, see [Support for Microsoft To Do](https://support.microsoft.com/todo).
+
+> [!NOTE]
+> Auditing events for Microsoft To Do activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Accepted sharing link on folder|AcceptedSharingLinkOnFolder|Accepted sharing link for a folder.|
+|Attachment created|AttachmentCreated|An attachment was created for a task.|
+|Attachment updated|AttachmentUpdated|An attachment was updated.|
+|Attachment deleted |AttachmentDeleted|An attachment was deleted.|
+|Folder sharing link shared|FolderSharingLinkShared|Created a sharing link for a folder.|
+|Linked entity deleted|LinkedEntityDeleted|A linked entity was deleted.|
+|Linked entity updated|LinkedEntityUpdated|A linked entity was updated.|
+|Linked entity created|LinkedEntityCreated|A linked entity of task was created.|
+|SubTask created|SubTaskCreated|A subtask was created.|
+|SubTask deleted|SubTaskDeleted|A subtask was deleted.|
+|SubTask updated|SubTaskUpdated|A subtask was updated.|
+|Task created|TaskCreated|A task was created.|
+|Task deleted|TaskDeleted|A task was deleted.|
+|Task read|TaskRead|A task was read.|
+|Task updated|TaskUpdated|A task was updated.|
+|TaskList created|TaskListCreated|A task list was created.|
+|TaskList read|TaskListRead|A task list was read.|
+|TaskList updated|TaskListUpdated |A task list was updated.|
+|User invited|UserInvited|Invited user to a folder.|
+
+## Microsoft Viva Insights activities
+
+Viva Insights provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Viva Insights. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Viva Insights. For more information, see [Introducing Microsoft Viva Insights](/viva/insights/introduction).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -478,16 +538,16 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 
 > [!NOTE]
-> <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
+> <sup>*</sup>An Azure Active Directory sign in and sign off activity event is created when a user signs in. This activity is logged even if you don't have Viva Insights turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-## MyAnalytics activities
+## Personal insights activities
 
-The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
+The following table lists the activities in personal insights that are logged in the Microsoft 365 audit log. For more information about personal insights, see [Admin guide for personal insights](/viva/insights/personal/Overview/mya-for-admins).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
-|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for personal insights. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for personal insights.|
 
 ## Power BI activities
 

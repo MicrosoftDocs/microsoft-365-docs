@@ -107,7 +107,7 @@
   items: 
     - name: Overview
       href: m365bp-maintain-environment.md
-    - name: Administration guide
+    - name: Tenant administration guide
       href: m365bp-admin-guide.md
     - name: Security administration guide
       href: m365bp-security-admin-guide.md

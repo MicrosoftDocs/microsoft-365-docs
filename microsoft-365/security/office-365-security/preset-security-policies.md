@@ -17,17 +17,16 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/18/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
@@ -50,7 +49,6 @@ The rest of this article how to configure preset security policies.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
@@ -565,10 +563,11 @@ When a recipient is defined in multiple policies, the policies are applied in th
 
 1. The Strict preset security policy.
 2. The Standard preset security policy.
-3. Custom policies based on the priority of the policy (a lower number indicates a higher priority).
-4. The Built-in protection preset security policy for Safe Links and Safe Attachments; the default policies for anti-malware, anti-spam, and anti-phishing.
+3. [Defender for Office 365 evaluation policies](try-microsoft-defender-for-office-365.md#audit-mode-vs-blocking-mode-for-defender-for-office-365)
+4. Custom policies based on the priority of the policy (a lower number indicates a higher priority).
+5. The Built-in protection preset security policy for Safe Links and Safe Attachments; the default policies for anti-malware, anti-spam, and anti-phishing.
 
-In other words, the settings of the Strict preset security policy override the settings of the Standard preset security policy, which overrides the settings from any custom policies, which override the settings of the Built-in protection preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
+In other words, the settings of the Strict preset security policy override the settings of the Standard preset security policy, which overrides the settings from any anti-phishing, Safe Links, or Safe Attachments evaluation policies, which overrides the settings from any custom policies, which override the settings of the Built-in protection preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
 
 This order is shown on the pages of the individual security policies in the Defender portal (the policies are applied in the order they're shown on the page).
 

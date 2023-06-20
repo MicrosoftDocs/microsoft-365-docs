@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date: 04/18/2023
+ms.date: 06/16/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -23,11 +23,7 @@ description: How to implement this preview of optical character recognition (OCR
 
 Optical character recognition (OCR) scanning enables Microsoft Purview to scan content in images for sensitive information. An optional feature, OCR scanning is first enabled at the tenant level. Once enabled, you select the locations where you want to scan images. Image scanning is available for Exchange, SharePoint, OneDrive, Teams, and Windows devices. Once the OCR settings are configured, your existing policies for data loss prevention (DLP), records management, and insider risk management (IRM) are applied to images and text-based content. For example, say that you've configured the DLP condition *content contains sensitive information* and included a data classifier such as the "Credit Card" sensitive information type (SIT). In this case, Microsoft Purview scans for credit card numbers in both text and images at all of the chosen locations.
 
-> [!IMPORTANT]
-> By default, Exchange and Teams can be configured for  OCR. To enable OCR for SharePoint, OneDrive, and Devices, **[sign up here]( https://forms.office.com/r/vudjYnaUM6)**.
-
 ## Workflow at a glance
-
 
 | Phase | What's needed|
 |-------|--------------|
@@ -54,6 +50,16 @@ Because it's an optional feature, your Global admin must set up pay-as-you-go bi
 #### Charges 
 
 The charge for using OCR is $1.00 for every 1,000 items scanned. Each image scanned counts as one transaction. This means that stand-alone images (JPEG, JPG, PNG, BMP, or TIFF) each count as a single transaction. It also means that *each page* in a PDF file is charged separately. For example, if there are 10 pages in a PDF file, an OCR scan of the PDF file counts as 10 separate scans.
+
+> [!NOTE]
+> To reduce your OCR costs, charges for scanning each unique image are incurred only once.
+>
+> Small images, such as logos and signatures that are sent in email via Microsoft Exchange are scanned and billed only once per unique image across all users of the tenant. For all subsequent instances, the results of the previous scan will be reused.
+>
+>Additionally, each scanned image can be used in any number of policies across data loss prevention, insider risk management, auto-labeling, and records management at no additional charge.
+
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
+
 
 To view your bill, follow the instructions described in [Monitor your Microsoft Syntex pay-as-you-go usage](/microsoft-365/syntex/syntex-azure-billing#monitor-your-microsoft-syntex-pay-as-you-go-usage).
 
