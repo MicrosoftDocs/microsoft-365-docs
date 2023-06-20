@@ -40,22 +40,33 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
+| `Timestamp`[*](#mdi-only) | `datetime` | For identities from Active Directory only, the date and time that the user was last active. <!--i made this up. what is it?--> |
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
+| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `AccountName` | `string` | User name of the account |
+| `AccountDomain` | `string` | Domain of the account |
+| `DistinguishedName`[*](#mdi-only) | string | For identities from Active Directory only, the user's [distinguished name](/windows/win32/adsi/ldap-adspath). |
 | `CloudSid` | `string` | Cloud security identifier of the account |
 | `GivenName` | `string` | Given name or first name of the account user |
 | `Surname` | `string` | Surname, family name, or last name of the account user |
-| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `Department` | `string` | Name of the department that the account user belongs to |
 | `JobTitle` | `string` | Job title of the account user |
-| `AccountName` | `string` | User name of the account |
-| `AccountDomain` | `string` | Domain of the account |
 | `EmailAddress` | `string` | SMTP address of the account |
 | `SipProxyAddress` | `string` | Voice over IP (VOIP) session initiation protocol (SIP) address of the account |
 | `City` | `string` | City where the account user is located |
 | `Country` | `string` | Country/Region where the account user is located |
 | `IsAccountEnabled` | `boolean` | Indicates whether the account is enabled or not |
+| `Manager`[*](#mdi-only)  | `string` | For identities from Active Directory only, the listed manager of the account user |
+| `Phone`[*](#mdi-only)  | `string` | For identities from Active Directory only, the listed phone number of the account user|
+| `CreatedDateTime`[*](#mdi-only)  | `datetime` | For identities from Active Directory only, the date and time that the user was created|
+| `SourceProvider`[*](#mdi-only)  | `string` |For identities from Active Directory only, the account user's Active Directory source <!--is this descriptive enough?--> |
+| `ChangeSource`[*](#mdi-only)  | `string` |For identities from Active Directory only, the source of the change made to the account user <!--this doesn't make sense--> |
+| `Tags`[*](#mdi-only)  | `dynamic` | For identities from Active Directory only, tags assigned to the account user |
+| `AssignedRoles[*](#mdi-only) ` | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
+
+<a name="mdi-only"></a>* For identities from on-premises Active Directory, currently available only in tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
 
 ## Related topics
 
