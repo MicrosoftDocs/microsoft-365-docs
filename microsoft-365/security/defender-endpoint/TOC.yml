@@ -155,7 +155,7 @@
           href: configure-environment.md
         - name: Step 2 - Configure device proxy and Internet settings
           href: configure-proxy-internet.md
-        - name: Step 3 - Migrating device connectivity
+        - name: Migrating device connectivity
           href: migrating-device-connectivity.md
     - name: Onboarding Windows Client
       items:

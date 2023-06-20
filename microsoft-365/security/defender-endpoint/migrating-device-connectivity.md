@@ -17,7 +17,7 @@ search.appverid: MET150
 audience: ITPro
 ---
 
-# STEP 3: Migrating device connectivity for Microsoft Defender for Endpoint 
+# Migrating device connectivity for Microsoft Defender for Endpoint 
 
 
 
