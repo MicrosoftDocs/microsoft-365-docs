@@ -32,11 +32,11 @@ If you're looking to manage Loop workspaces in the Loop app, see [Manage Loop wo
 
 ## Requirements
 
-Just like other Microsoft 365 components which provide experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop experiences or OneDrive and SharePoint files-backed experiences powered by Fluid Framework, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
+Just like other Microsoft 365 experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop experiences or OneDrive and SharePoint files-backed experiences powered by Fluid Framework, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
 ### Microsoft 365 Groups for Cloud Policy
 
-To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups). You need to create or use an existing Microsoft 365 group when you want to scope. This Microsoft 365 group - new or existing that you use - defines which users in your organization this policy will apply to.
+If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
 
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
@@ -68,18 +68,15 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 ## Settings management in Cloud Policy
 
-The Loop experiences (except for Microsoft Teams) check the following Cloud Policy settings:
+The Loop experiences (except for Microsoft Teams) check the following Cloud Policy settings, and this process' information is available in [available policy settings](#available-policy-settings):
 
 - **Create and view Loop files in Microsoft apps that support Loop**
 - **Create and view Loop files in Outlook**
 
-You can also get more information on the [available policy settings](#available-policy-settings) by visiting the [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting templates.
+For in-depth information about these settings, see [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) Settings templates. To configure these settings, perform the following steps:
 
-For information on how each app checks these settings, see [Available policy settings](#available-policy-settings).
-
-If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
-
-To configure these Cloud Policy settings, perform the following steps:
+> [!TIP]
+> If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
 1. Select **Customization** from the left pane.
@@ -104,7 +101,7 @@ In case you create a new policy configuration or change the configuration for an
 
 ## Settings management for Loop functionality in Teams
 
-You'll need the latest version of SharePoint PowerShell module to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization has been set to **view-only** as the default value for other file types. For more information, see the **Learn more** link next to the setting.
+You'll need the latest version of SharePoint PowerShell module to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as te default value for other file types. For more information, see the **Learn more** link next to the setting.
 
 |Experience  |SharePoint organization properties  |Notes  |
 |---------|---------|---------|
@@ -122,12 +119,6 @@ To check if Loop components are enabled, run `Get-SPOTenant` without any argumen
 To enable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $true`. The change will take a short time to apply across your organization.
 
 To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. The change will take a short time to apply across your organization. If your organization has multiple regions (that is, organization URLs), you need to disable loop components for all the regions to have consistent results across the organization.
-
-## eDiscovery for Loop components
-
-Loop components created in Teams or Outlook are discoverable and have eDiscovery workflow support when being used with the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
-
-Microsoft is currently working on a third-party export API solution for Loop components.
 
 ## Related topics
 

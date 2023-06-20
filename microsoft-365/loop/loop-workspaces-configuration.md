@@ -30,11 +30,11 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 ## Requirements
 
-Just like other Microsoft 365 components which provide experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable connections to Loop services and thereby Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Just like other Microsoft 365 experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
 ### Microsoft 365 Groups for Cloud Policy
 
-To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups). You need to create or use an existing Microsoft 365 group when you want to scope. This Microsoft 365 group - new or existing that you use - defines which users in your organization this policy will apply to.
+If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
 
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.

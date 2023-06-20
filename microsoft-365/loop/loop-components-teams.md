@@ -24,10 +24,10 @@ appliesto:
 
 # Overview of Loop components in Teams
 
-Loop components in Teams chat offer a new way to ideate, create, and make decisions together. Send a component - like a table, task list, or paragraph — where everyone in your chat can edit inline and see changes as they're made. 
+Loop components in Teams chat offer a new way to ideate, create, and make decisions together. Send a component - like a table, task list, or paragraph — where everyone in your chat can edit inline and see changes as they're made.
 
 > [!Note]
-> Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams. 
+> Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
 
 **Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These are just a few scenarios made easier with Loop components.
 
@@ -71,7 +71,7 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## Does .fluid files support eDiscovery?
 
-Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section.
+Loop components created in Teams are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
