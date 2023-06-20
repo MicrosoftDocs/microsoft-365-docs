@@ -85,7 +85,8 @@ Conditions
 
 <!--
 >> [!NOTE]
-> Outlook does not support showing policy tips for a DLP polcies that's applied to a dynamic distribution group or non-email enabled security groups.-->
+> Outlook does not support showing policy tips for a DLP polcies that's applied to a dynamic distribution group or non-email enabled security groups.
+-->
 
 ## Actions that support policy tips
 
