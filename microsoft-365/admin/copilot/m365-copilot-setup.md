@@ -32,20 +32,20 @@ description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 
 Before you can access Copilot, you must meet the following requirements:
 
-- **Microsoft 365 Apps for enterprise** must be deployed for your users, which seamlessly integrates with Microsoft 365 Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](https://learn.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+- **Microsoft 365 Apps for enterprise** must be deployed for your users, which seamlessly integrates with Microsoft 365 Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
-- **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. See [Azure Active Directory](https://learn.microsoft.com//azure/active-directory/fundamentals/active-directory-whatis) to learn more.
+- **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. See [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) to learn more.
 
 - **OneDrive Account** You need to have a OneDrive account for several features within Microsoft 365 Copilot, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
 - **New Outlook for Windows** For seamless integration of Microsoft 365 Copilot with Outlook, you are required to use the new Outlook for Windows, currently in preview. You can switch to Outlook Mobile to access the new Outlook experience. For more information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627).
 
-- **Microsoft Teams** To use Microsoft 365 Copilot with Microsoft Teams, you must use the Teams desktop client or web client. You can [download the desktop client here](https://www.microsoft.com/microsoft-teams/download-app) or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](https://learn.microsoft.com/microsoftteams/get-clients?tabs=Windows).
+- **Microsoft Teams** To use Microsoft 365 Copilot with Microsoft Teams, you must use the Teams desktop client or web client. You can [download the desktop client here](https://www.microsoft.com/microsoft-teams/download-app) or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](/microsoftteams/get-clients?tabs=Windows).
 
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. See [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c) for more information on enabling Loop.
 
 >[!NOTE]
-> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. See [update channels for Microsoft 365 Apps](https://learn.microsoft.com/deployoffice/updates/overview-update-channels#current-channel-overview) to learn more.
+> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. See [update channels for Microsoft 365 Apps](deployoffice/updates/overview-update-channels#current-channel-overview) to learn more.
 
 ## Manage licenses for Copilot
 
@@ -53,11 +53,8 @@ You can manage Microsoft 365 Copilot licenses from the Microsoft 365 admin cente
 
 To access license management in the Microsoft 365 admin center, go to **Billing** > **Licenses**.
 
-You can also assign licenses in bulk to [groups of users through the Azure admin center](https://learn.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) or [<u>assign licenses to users with PowerShell</u>](https://learn.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide). For more information, see [Assign Microsoft 365 licenses to users](https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+You can also assign licenses in bulk to [groups of users through the Azure admin center](/azure/active-directory/enterprise-users/licensing-groups-assign) or [<u>assign licenses to users with PowerShell</u>](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 ## Security and privacy
 
 Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [link to privacy doc].
-
-
-[def]: https://learn.microsoft.com/deployoffice/updates/overview-update-channels\
