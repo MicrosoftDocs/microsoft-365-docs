@@ -23,7 +23,7 @@ description: "Learn about the Microsoft 365 Copilot Early Access Program."
 
 # Microsoft 365 Copilot Early Access Program
 
-The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview that will roll out to a select group of customers worldwide. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 apps (Word, Outlook, Excel, PowerPoint, Teams, and more).
+The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview that will roll out to a select group of customers worldwide. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more).
 
 ## Before you begin
 
