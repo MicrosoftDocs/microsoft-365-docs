@@ -55,7 +55,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
    :::column-end:::
 :::row-end:::
 --->
-[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
+[Learn more about scenarios and use case for Syntex.](adoption-scenarios.md)
 
 ## Syntex services
 
