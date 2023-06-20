@@ -26,11 +26,11 @@ description: "Mailbox audit logging is turned on by default in Microsoft 365 (al
 
 # Manage mailbox auditing
 
-Mailbox audit logging is turned on by default for all organization. This effort started in January 2019, and means that certain actions performed by mailbox owners, delegates, and admins are automatically logged. The corresponding mailbox audit records are available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization.
+Mailbox audit logging is turned on by default in all organizations. This effort started in January 2019, and means that certain actions performed by mailbox owners, delegates, and admins are automatically logged. The corresponding mailbox audit records are available for admins to search in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually turn on mailbox auditing on each individual mailbox.
 
 Here are some benefits of mailbox auditing on by default:
 
-- Auditing is automatically enabled when you create a new mailbox. You don't need to manually enable it for new users.
+- Auditing is automatically turned on when you create a new mailbox. You don't need to manually turn on mailbox auditing for new users.
 - You don't need to manage the mailbox actions that are audited. A predefined set of mailbox actions are audited by default for each sign-in type (Admin, Delegate, and Owner).
 - When Microsoft releases a new mailbox action, the action might be added automatically to the list of mailbox actions that are audited by default (subject to the user having the appropriate license). This result means you don't need to add new actions on mailboxes as they're released.
 - You have a consistent mailbox auditing policy across your organization (because you're auditing the same actions for all mailboxes).
@@ -50,9 +50,9 @@ To verify that mailbox auditing on by default is turned on for your organization
 Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
-The value **False** indicates that mailbox auditing on by default is enabled for the organization. On by default in the organization overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions are still audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
+The value **False** indicates that mailbox auditing on by default is turned on for the organization. Mailbox auditing on by default in the organization overrides the mailbox auditing settings on individual mailboxes. For example, if mailbox auditing is turned off for a mailbox (the *AuditEnabled* property on the mailbox is **False**), the default mailbox actions are still audited for the mailbox, because mailbox auditing on by default is turned on for the organization.
 
-To keep mailbox auditing disabled for specific mailboxes, you configure mailbox auditing bypass for the mailbox owner and other users who have been delegated access to the mailbox. For more information, see the [Bypass mailbox audit logging](#bypass-mailbox-audit-logging) section later in this article.
+To keep mailbox auditing disabled for specific mailboxes, you configure *mailbox auditing bypass* for the mailbox owner and other users with delegated access to the mailbox. For more information, see the [Bypass mailbox audit logging](#bypass-mailbox-audit-logging) section later in this article.
 
 > [!NOTE]
 > When mailbox auditing on by default is turned on for the organization, the *AuditEnabled* property for affected mailboxes won't be changed from **False** to **True**. In other words, mailbox auditing on by default ignores the *AuditEnabled* property on mailboxes.
@@ -120,7 +120,7 @@ The following table describes the mailbox actions that are available in mailbox 
 |**UpdateInboxRules**|An inbox rule was added, removed, or changed. Inbox rules process messages in the user's Inbox based on conditions. Actions specify what to do to messages that match the conditions of the rule. For example, move the message to a specified folder or delete the message.|✔<sup>\*</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|
 
 > [!IMPORTANT]
-> If you customized the mailbox actions to audit for any logon type *before* mailbox auditing on by default was enabled in your organization, the customized settings are preserved on the mailbox and aren't overwritten by the default mailbox actions as described in this section. To revert the audit mailbox actions to their default values (which you can do at any time), see the [Restore the default mailbox actions](#restore-the-default-mailbox-actions) section later in this article.
+> If you customized the mailbox actions to audit *before* mailbox auditing on by default was turned on in your organization, the customized mailbox auditing settings are preserved on the mailbox and aren't overwritten by the default mailbox actions as described in this section. To revert the audit mailbox actions to their default values (which you can do at any time), see the [Restore the default mailbox actions](#restore-the-default-mailbox-actions) section later in this article.
 
 ### Mailbox actions for Microsoft 365 Group mailboxes
 
@@ -279,9 +279,9 @@ Set-OrganizationConfig -AuditDisabled $true
 
 Turning off mailbox auditing on by default has the following results:
 
-- Mailbox auditing is disabled for your organization.
-- From the time you disabled mailbox auditing on by default, no mailbox actions are audited, even if auditing is enabled on a mailbox (the *AuditEnabled* property on the mailbox is **True**).
-- Mailbox auditing isn't enabled for new mailboxes and setting the *AuditEnabled* property on a new or existing mailbox to **True** is ignored.
+- Mailbox auditing is turned off for your organization.
+- From the time you turn off mailbox auditing on by default, no mailbox actions are audited, even if mailbox auditing is enabled on a mailbox (the *AuditEnabled* property on the mailbox is **True**).
+- Mailbox auditing isn't turned on for new mailboxes and setting the *AuditEnabled* property on a new or existing mailbox to **True** is ignored.
 - Any mailbox audit bypass association settings (configured by using the **Set-MailboxAuditBypassAssociation** cmdlet) are ignored.
 - Existing mailbox audit records are retained until the audit log age limit for the record expires.
 
@@ -319,11 +319,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- As previously mentioned, although mailbox audit logging on by default is enabled for all organizations, only users with [licenses that include Audit (Premium)](audit-solutions-overview.md#audit-premium-1) (collectively referred to in this article as *E5/A5/G5 licenses*) returns mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](audit-log-search.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- As previously mentioned, although mailbox audit logging on by default is turned on for all organizations, only users with [licenses that include Audit (Premium)](audit-solutions-overview.md#audit-premium-1) (collectively referred to in this article as *E5/A5/G5 licenses*) return mailbox audit log events in [audit log searches in the Microsoft Purview compliance portal](audit-log-search.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5/A5/G5 licenses, you can use any of the following workarounds:
 
-  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you run the command, you can use audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API.
+  - Manually turn on mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you run the command, you can use audit log searches in the Microsoft Purview compliance portal or via the Office 365 Management Activity API.
 
     > [!NOTE]
     > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the *AuditEnabled* parameter to `$false` and then back to `$true`.
