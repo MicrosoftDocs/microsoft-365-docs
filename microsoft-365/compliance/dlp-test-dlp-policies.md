@@ -140,4 +140,4 @@ The report is sent to the SMTP address that you passed the Test-DlpPolicies Powe
 ## See Also
 
 - [Test-DataClassification](/powershell/module/exchange/test-dataclassification) explains how to use the PowerShell cmdlet `Test-DataClassification `.
-- [Test-Message](powershell/module/exchange/test-message) explains how to use the PowerShell cmdlet `Test-Message`.
+- [Test-Message](/powershell/module/exchange/test-message) explains how to use the PowerShell cmdlet `Test-Message`.
