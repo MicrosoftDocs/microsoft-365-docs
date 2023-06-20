@@ -24,9 +24,9 @@ description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 # Get started with Microsoft 365 Copilot
 
 >[!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only paid preview program for commercial customers.  Details are subject to change. For more information on the Early Access Program, see \[link to M365 EAP doc\].
+> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only paid preview program for commercial customers.  Details are subject to change. For more information on the Early Access Program, see [Microsoft 365 Early Access Program](m365-early-access-program.md).
 
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 apps. It works alongside popular Microsoft 365 applications such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Copilot in Microsoft 365. 
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 apps. It works alongside popular Microsoft 365 applications such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Copilot in Microsoft 365.
 
 ## Prerequisites for Microsoft 365 Copilot
 
@@ -45,7 +45,7 @@ Before you can access Copilot, you must meet the following requirements:
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. See [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c) for more information on enabling Loop.
 
 >[!NOTE]
-> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. See [update channels for Microsoft 365 Apps](deployoffice/updates/overview-update-channels#current-channel-overview) to learn more.
+> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. See [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview) to learn more.
 
 ## Manage licenses for Copilot
 
@@ -53,8 +53,8 @@ You can manage Microsoft 365 Copilot licenses from the Microsoft 365 admin cente
 
 To access license management in the Microsoft 365 admin center, go to **Billing** > **Licenses**.
 
-You can also assign licenses in bulk to [groups of users through the Azure admin center](/azure/active-directory/enterprise-users/licensing-groups-assign) or [<u>assign licenses to users with PowerShell</u>](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+You can also assign licenses in bulk to [groups of users through the Azure admin center](/azure/active-directory/enterprise-users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Security and privacy
 
-Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [link to privacy doc].
+Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Copilot privacy](/DeployOffice/privacy/microsoft-365-copilot).
