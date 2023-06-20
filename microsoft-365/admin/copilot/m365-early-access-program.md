@@ -51,7 +51,7 @@ A: No. During the Early Access Program, Copilot can only be deployed in one tena
 
 ### Q: What is the Microsoft Customer Agreement?
 
-The Microsoft Customer Agreement provides a consistent and simplified purchasing experience. Learn more [here](https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement).
+A: The Microsoft Customer Agreement provides a consistent and simplified purchasing experience. Learn more [here](https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement).
 
 ### Q: Does accepting the Microsoft Customer Agreement impact my existing Microsoft Enterprise Agreements?
 
