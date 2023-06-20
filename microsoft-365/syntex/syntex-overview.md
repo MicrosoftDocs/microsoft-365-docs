@@ -151,7 +151,7 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
 
-## Additional Syntex features
+## More Syntex features
 
 ### Content compliance
 
@@ -195,7 +195,7 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 - [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
 
-- [Term store reports](term-store-analytics.md), which provides you insights into published term sets and their use across your organization.
+- [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
 
 <!---<br><br>
 > [!div class="nextstepaction"]
