@@ -268,6 +268,25 @@ Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
 > [!NOTE]
 > This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
 
+### AuditD Skip Faulty Rules
+
+This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there is a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
+
+> [!NOTE]
+> This functionality is only available on Linux.
+
+```console
+
+```console
+-h, --help                                  show this help message and exit
+-e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules. In case no argumanet is passed, the option will be true by default.
+```
+
+Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
+
+> [!NOTE]
+> This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
+
 ## Result package contents on macOS and Linux
 
 - report.html
