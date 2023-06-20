@@ -30,7 +30,7 @@ ms.date: 02/16/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [Microsoft Secure Score](https://security.microsoft.com/securescore) in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
@@ -120,11 +120,15 @@ If you turn on security defaults, you'll be awarded full points for the followin
 
 ## Secure score permissions
 
+### Manage permissions with Microsoft 365 Defender role-based access control(RBAC)
+
 With [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md) you can create custom roles with permissions for Secure Score. You can control which users have access to Secure Score data for Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity to help you manage the security of your devices, identities, and Microsoft Office 365 apps.
 
-You can also manage permissions to access Microsoft Secure Score data from additional data sources. Additional data sources include all the other products supported by Secure Score today, for more information, see [Products included in Secure Score](#products-included-in-secure-score).
+You can also manage permissions to access Microsoft Secure Score data from additional data sources. Additional data sources include all the other products supported by Secure Score today, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the data from the additional data sources either alone or alongside the other data sources.
 
-You can choose to view the data from the additional data sources on its own or in conjunction with the other data sources.
+To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permissions see, See [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md).
+
+### Manager permissions with Azure Active Directory global roles
 
 Azure Active Directory global roles (for example, Global Administrator) can still be used to access secure score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure score data based on the following Azure Active directory roles:
 
