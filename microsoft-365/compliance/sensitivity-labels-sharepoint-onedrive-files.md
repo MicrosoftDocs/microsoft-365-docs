@@ -28,11 +28,7 @@ Enable built-in labeling for [supported Office files](sensitivity-labels-office-
 
 Now rolling out in preview: For SharePoint, users can also see and apply sensitivity labels from the details pane. This method is also available from the **Files** tab in Teams.
 
-<<<<<<< HEAD
 Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files and optionally, [PDF documents](sensitivity-labels-office-apps.md#pdf-support) that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features won't work for these files.
-=======
-Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features don't work for these files.
->>>>>>> 8ff01898d86154d6bf520b47734036e58b7c9490
 
 After you enable sensitivity labels for these files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md):
 
@@ -91,7 +87,6 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 - **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
 - **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
-<<<<<<< HEAD
 ### Adding support for PDF
 
 > [!NOTE]
@@ -100,7 +95,7 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 Not supported by default, and now rolling out in preview, you can enable support for PDFs for the following scenarios:
 
 - Applying a sensitivity label in Office on the web
-- Uploading a labeled document, and then extracting and displaying that sensitivity label.
+- Uploading a labeled document, and then extracting and displaying that sensitivity label
 - Search, eDiscovery, and data loss prevention
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) and [default sensitivity labels for SharePoint document libraries](sensitivity-labels-sharepoint-default-label.md)
 
@@ -121,7 +116,7 @@ To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/m
 If you need more information about how to run cmdlets from the SharePoint Online Management Shell, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
 
 For Microsoft 365 Multi-Geo: Similarly to the instructions to run the PowerShell command to enable support for sensitivity labels, you must connect to each of your geo-locations, and then run the command to enable support for PDFs.
-=======
+
 ## Support for labels configured for user-defined permissions
 
 Rolling out in preview, there's now limited support for labels configured for user-defined permissions. This encryption configuration refers to the setting **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected:
@@ -140,7 +135,6 @@ To support AutoSave and co-authoring for these encrypted files using a desktop a
 > If you use earlier versions and co-authoring is enabled for your tenant, AutoSave and co-authoring will be temporarily disabled for documents after users apply a sensitivity label that's configured with user-defined permissions, or users change the permissions. After they close the document and wait 10 minutes, these features are available again.
 
 This preview of labels configured for user-defined permissions is automatically applied to tenants. To opt out, contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this preview.
->>>>>>> 8ff01898d86154d6bf520b47734036e58b7c9490
 
 ## Limitations
 
