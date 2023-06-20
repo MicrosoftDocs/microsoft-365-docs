@@ -118,19 +118,19 @@ If you turn on security defaults, you'll be awarded full points for the followin
 > [!IMPORTANT]
 > Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" recommended actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
 
-## Secure score permissions
+## Secure Score permissions
 
 ### Manage permissions with Microsoft 365 Defender role-based access control(RBAC)
 
 With [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md) you can create custom roles with permissions for Secure Score. You can control which users have access to Secure Score data for Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity to help you manage the security of your devices, identities, and Microsoft Office 365 apps.
 
-You can also manage permissions to access Microsoft Secure Score data from additional data sources. Additional data sources include all the other products supported by Secure Score today, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the data from the additional data sources either alone or alongside the other data sources.
+You can also manage user's permissions to access Microsoft Secure Score data from additional data sources. Additional data sources include all the other products supported by Secure Score today, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
 
-To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permissions see, See [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md).
+To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permissions, see [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md).
 
-### Manager permissions with Azure Active Directory global roles
+### Using Azure Active Directory global roles permissions
 
-Azure Active Directory global roles (for example, Global Administrator) can still be used to access secure score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure score data based on the following Azure Active directory roles:
+Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure Score data based on the following Azure Active directory roles:
 
 The following roles with read and write access can make changes, directly interact with Secure Score, and can assign read-only access to other users:
 
