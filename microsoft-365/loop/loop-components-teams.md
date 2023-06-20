@@ -73,9 +73,7 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## Do .loop (and .fluid) files support eDiscovery?
 
-Loop components created in Teams, Outlook, Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
-
-Currently, .fluid files are stored in the creator's OneDrive and are available for search and collection in eDiscovery (Standard) and available for search, collection, review, and export in eDiscovery (Premium). More information about eDiscovery support is outlined in the [Settings management](loop-components-sharepoint.md#settings-management-for-loop-functionality-in-teams) section.
+Loop components created in Teams are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
