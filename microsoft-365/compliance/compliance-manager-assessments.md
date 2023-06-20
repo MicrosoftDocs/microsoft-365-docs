@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -273,9 +273,7 @@ If you select **Cancel**, the update won't be applied to the assessment. However
 
 ## Export an assessment report
 
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save and share.
-
-The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, and test results.
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On the assessment details page, select the **Export actions** in the top right corner of the page, which creates an Excel file you can save and share. The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, and test results.
 
 ## Delete an assessment
 
