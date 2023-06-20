@@ -130,7 +130,7 @@ To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permiss
 
 ### Using Azure Active Directory global roles permissions
 
-Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure Score data based on the following Azure Active directory roles:
+Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
 
 The following roles have read and write access and can make changes, directly interact with Secure Score, and can assign read-only access to other users:
 
