@@ -38,7 +38,7 @@ In Defender for Business, you can have one web content filtering policy and it's
 
    To set up an audit-only policy that doesn't block any websites, don't select any categories. 
 
-4. Apply the policy to all users.
+4. Apply the policy to all users. (Scoping to specific devices is not available in Defender for Business.)
 
 5. Review the summary and save the policy. The policy refresh might take up to two hours to apply to your selected devices.
 
