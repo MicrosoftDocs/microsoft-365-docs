@@ -64,7 +64,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SourceProvider` [*](#mdi-only)  | `string` |For identities from Active Directory only, the account user's Active Directory source <!--is this descriptive enough?--> |
 | `ChangeSource` [*](#mdi-only)  | `string` |For identities from Active Directory only, the source of the change made to the account user <!--this doesn't make sense--> |
 | `Tags` [*](#mdi-only)  | `dynamic` | For identities from Active Directory only, tags assigned to the account user |
-| `AssignedRoles1 [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
+| `AssignedRoles [*](#mdi-only) | `dynamic` | For identities from Active Directory only, the roles assigned to the account user|
 
 <a name="mdi-only"></a>* Available only for tenants with Microsoft Defender for Identity deployed.
 
