@@ -48,7 +48,7 @@ This guide is designed to help you configure DMARC for domains not covered by th
 1. Select **+ Add record**.
 1. A flyout will appear on the right. Ensure that the selected Type is **TXT (Text)**.
 1. Add `_dmarc` as **TXT name**.
-1. Add your specific DMARC value.
+1. Add your specific DMARC value. For more information check [how to Form the DMARC TXT record for your domain](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure#step-4-form-the-dmarc-txt-record-for-your-domain)
 1. Press **Save**.
 
 ## Active DMARC for parked domains
