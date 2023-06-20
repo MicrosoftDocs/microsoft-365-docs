@@ -262,9 +262,7 @@ The minimum requirements for 'forcibly release device from isolation' feature ar
     - Windows 10 21H2 and 22H2 with KB KB5023773
     - Windows 11 version 21H2, all editions with KB5023774 
     - Windows 11 version 22H2, all editions with KB5023778 
-    - WindowsServer2012R2
-    - WindowsServer2016
-
+    
 
 ### Notification on device user
 
