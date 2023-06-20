@@ -185,6 +185,8 @@ You build custom models to understand the layout of your files from example docu
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
 
+## Additional Syntex features
+
 ## Content compliance
 
 :::row:::
