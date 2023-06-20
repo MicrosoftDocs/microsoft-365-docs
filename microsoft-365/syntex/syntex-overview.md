@@ -121,9 +121,9 @@ Instead of having to create a new document processing model from scratch, you ca
    :::column-end:::
 :::row-end:::
 
-Freeform document processing models use Microsoft Power Apps AI Builder to create and train models within Syntex.
+Both structured and freeform models use Microsoft Power Apps AI Builder to create and train models within Syntex.
 
-Learn more about [structured models](form-processing-overview.md) and [freeform models](freeform-document-processing-overview.md).
+Learn more about [structured models](form-processing-overview.md) and [freeform models](freeform-document-processing-overview.md) in Microsoft Syntex.
 
 ## Models
 
