@@ -17,12 +17,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-search.appverid:
-- MET150
-- MOE150
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 ---
 
