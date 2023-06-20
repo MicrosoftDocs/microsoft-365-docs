@@ -18,6 +18,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.date: 06/16/2023
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # How to find the best frontline team solution for your organization
@@ -58,6 +59,6 @@ You should use static teams if:
 
 - You want to manage team members and owners manually or delegate management to the team owner(s).
 - You can't identify your frontline workforce with an AAD attribute or you can't define your frontline locations with an AAD attribute.
-- Your users don't have the [required license](#licensing-considerations) for dynamic teams.
+- Your users don't have the [required license](#licensing) for dynamic teams.
 
 [Learn more about deploying static frontline teams with PowerShell](deploy-teams-at-scale.md).

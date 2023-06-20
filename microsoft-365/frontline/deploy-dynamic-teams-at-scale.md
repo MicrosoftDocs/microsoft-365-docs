@@ -18,6 +18,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.date: 06/08/2023
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Deploy frontline dynamic teams at scale
