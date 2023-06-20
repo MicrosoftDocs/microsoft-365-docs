@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/14/2023
+ms.date: 06/13/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,11 +24,11 @@ description: "Activity explorer lets you see and filter on the actions users are
 
 # Get started with activity explorer
 
-The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. [Activity explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
+The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. [Activity explorer](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and then made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
 
 ![placeholder screenshot overview activity explorer.](../media/data-classification-activity-explorer-1.png)
 
-There are over 30 different filters available for use, some are:
+There are more than 30 different filters available for use, some are:
 
 - Date range
 - Activity type
@@ -55,7 +55,7 @@ Every account that accesses and uses data classification must have a license ass
 
 ### Permissions
 
-An account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
+An account must be explicitly assigned membership in any one of these role groups, or must be explicitly granted the role.
 
 ### Roles and Role Groups
 
@@ -101,7 +101,7 @@ In addition, using **Endpoint data loss prevention (DLP)**, Activity explorer ga
 - Copy to network share
 - Access by an unallowed app
 
-Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected—such as a large number of items that are labeled `highly confidential` and are downgraded to `general`—you can manage your policies and take new actions to restrict the undesired behavior.
+Understanding the actions that are taken on content with sensitivity labels helps you determine whether the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies, are effective. If not, or if you discover something unexpected (such as a large number of items labeled `highly confidential` that are downgraded to `general`), you can manage your policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange.
