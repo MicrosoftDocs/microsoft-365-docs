@@ -56,6 +56,11 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/security-and-compliance/index.md",
+      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
+      "redirect_document_id": false
+      },
+      {
          "source_path":"enterprise/moving-data-to-new-datacenter-geos.md",
          "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview#migrationsmoves",
          "redirect_document_id":false
@@ -105,6 +110,11 @@
          "redirect_url":"https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms",
          "redirect_document_id":false
       },
+       {
+      "source_path": "microsoft-365/viva/index.yml",
+      "redirect_url": "/viva/",
+      "redirect_document_id": false
+      },
       {
          "source_path":"solutions/secure-teams-security-isolation.md",
          "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
@@ -134,6 +144,11 @@
          "source_path":"solutions/team-security-isolation-dev-test.md",
          "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
          "redirect_document_id":true
+      },
+      {
+      "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
+      "redirect_url": "/viva/setup-microsoft-viva",
+      "redirect_document_id": false
       },
       {
          "source_path":"security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
