@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/26/2021
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,10 +19,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Manage feedback your users can send to Microsoft about Microsoft products."
 ---
 
