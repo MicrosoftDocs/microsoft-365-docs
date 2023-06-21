@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/12/2023
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 ---
 
-# Search the audit log in the compliance portal
+# Search the audit log in the Microsoft Purview compliance portal
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
@@ -183,7 +183,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 4. Select **Search** to run the search using your search criteria.
 
-   The search results are loaded, and after a few moments they're displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events will be displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned will be displayed.
+   The search results are loaded, and after a few moments they're displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events are displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned are displayed.
 
    ![The number of results are displayed after the search is finished.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -259,6 +259,9 @@ Access to search the audit log is scoped based upon the administrative units ass
 | None (Default): Unrestricted access | All administrative units are available | Unrestricted access to all activity logs from any user, non-user, or system account.  |
 | One or more administrative units: Restricted access | Only those administrative units assigned to the admin are available | Restricted access to activity logs from users with a matching administrative unit assignment. |
 
+> [!NOTE]
+> The [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) and [Search-AdminAuditLog cmdlets](/powershell/module/exchange/search-adminauditlog) currently do not support scoped access.
+
 For more information about administrative units, see [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview).
 
 ## Frequently asked questions
@@ -301,7 +304,7 @@ No. The auditing service pipeline is near real time, and therefore can't support
 
 **Where is auditing data stored?**
 
-We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions will have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
+We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
 
 **Is auditing data encrypted?**
 
