@@ -105,6 +105,16 @@
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
       },
+       {
+      "source_path": "microsoft-365/admin/email/email.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
+     },
+      {
+      "source_path": "microsoft-365/admin/email/email-collaboration.md",
+      "redirect_url": "/microsoft-365/admin/index",
+      "redirect_document_id": false
+     }, 
       {
          "source_path":"microsoft-365/admin/support/australia.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
