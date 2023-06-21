@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint on Android, which already protects enterprise us
 
 Microsoft Defender for Endpoint on Android threat information is applied by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.
 
-Microsoft Defender for Endpoint on Android supports both the configurations of MAM.
+Microsoft Defender for Endpoint on Android supports both the configurations of MAM. 
 
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This provision means that apps can be managed by Intune on devices enrolled with third-party EMM providers.
