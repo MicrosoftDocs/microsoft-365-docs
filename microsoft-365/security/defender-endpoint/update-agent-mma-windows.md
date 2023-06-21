@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 06/20/2023
+ms.date: 06/21/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -18,6 +18,9 @@ search.appverid: met150
 ---
 
 # Updating MMA on Windows devices for Microsoft Defender for Endpoint
+
+> [!IMPORTANT]
+> If you've arrived on this page as a result of clicking on a notification at the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you have devices in your environment with outdated agents, and you need to take action (see below) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to [Message Center](/microsoft-365/admin/manage/message-center])).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
