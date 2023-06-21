@@ -135,6 +135,11 @@
         "redirect_url":"customer-key-overview",
         "redirect_document_id":true
      },
+    {
+      "source_path": "microsoft-365/compliance/archive-jive-data.md",
+      "redirect_url": "compliance/index",
+      "redirect_document_id": false
+    },
      {
         "source_path":"microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
         "redirect_url":"customer-key-overview",
@@ -145,6 +150,11 @@
         "redirect_url":"/microsoft-365/compliance/gdpr",
         "redirect_document_id":false
      },
+    {
+    "source_path": "microsoft-365/compliance/dlp-conditions-and-exceptions.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-exchange-conditions-and-actions",
+    "redirect_document_id": true
+    },
      {
         "source_path":"microsoft-365/compliance/disposition-reviews.md",
         "redirect_url":"/microsoft-365/compliance/disposition",
@@ -154,6 +164,11 @@
         "source_path":"microsoft-365/compliance/go-to-the-securitycompliance-center.md",
         "redirect_url":"/microsoft-365/compliance/microsoft-365-compliance-center",
         "redirect_document_id":false
+     },
+     {
+    "source_path": "microsoft-365/compliance/view-the-dlp-reports.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp#dlp-activity-explorer-and-reports",
+    "redirect_document_id": false
      },
      {
         "source_path":"microsoft-365/compliance/what-the-sensitive-information-types-look-for.md",
