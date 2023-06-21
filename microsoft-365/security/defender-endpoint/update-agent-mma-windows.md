@@ -17,6 +17,9 @@ ms.reviewer: pahuijbr
 search.appverid: met150
 ---
 
+> [!IMPORTANT]
+> If you've arrived at this page as a result of clicking on a notification on the security.microsoft.com portal, you have machines in your environment with outdated agents and need to take action (see below) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to (Message Center)[/microsoft-365/admin/manage/message-center]).
+
 # Updating MMA on Windows devices for Microsoft Defender for Endpoint
 
 **Applies to:**
