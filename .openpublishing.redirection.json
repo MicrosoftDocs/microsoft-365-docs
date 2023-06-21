@@ -36,6 +36,21 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/microsoft-365/compliance/apply-or-remove-a-document-deletion-policy-for-a-site.md",
+      "redirect_url": "/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/microsoft-365/compliance/create-a-document-deletion-policy.md",
+      "redirect_url": "/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/microsoft-365/compliance/document-deletion-policies.md",
+      "redirect_url": "/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+      },
+      {
          "source_path":"defender/threat-intelligence/index.md",
          "redirect_url":"/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
          "redirect_document_id":false
@@ -49,6 +64,11 @@
          "source_path":"enterprise/request-your-data-move.md",
          "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/plan-for-multi-geo",
          "redirect_document_id":false
+      },
+      {
+      "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
+      "redirect_url": "/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
+      "redirect_document_id": false
       },
       {
          "source_path":"enterprise/routing-with-expressroute.md",
