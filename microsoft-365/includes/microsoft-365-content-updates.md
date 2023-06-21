@@ -2,6 +2,115 @@
 
 
 
+## Week of June 12, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/12/2023 | [Monthly security summary reporting in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/monthly-security-summary-report?view=o365-worldwide) | added |
+| 6/12/2023 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) | modified |
+| 6/12/2023 | [Apply encryption using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) | modified |
+| 6/12/2023 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) | modified |
+| 6/12/2023 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-worldwide) | modified |
+| 6/12/2023 | [Run the client analyzer on macOS or Linux](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux?view=o365-worldwide) | modified |
+| 6/12/2023 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide) | modified |
+| 6/12/2023 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection-about?view=o365-worldwide) | modified |
+| 6/12/2023 | [Anti-malware protection FAQ](/microsoft-365/security/office-365-security/anti-malware-protection-faq?view=o365-worldwide) | modified |
+| 6/12/2023 | [How EOP validates the From address to prevent phishing](/microsoft-365/security/office-365-security/anti-phishing-from-email-address-validation?view=o365-worldwide) | modified |
+| 6/12/2023 | [Impersonation insight](/microsoft-365/security/office-365-security/anti-phishing-mdo-impersonation-insight?view=o365-worldwide) | modified |
+| 6/12/2023 | [Anti-phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection-about?view=o365-worldwide) | modified |
+| 6/12/2023 | [Anti-spoofing protection](/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-about?view=o365-worldwide) | modified |
+| 6/12/2023 | [Tune anti-phishing protection](/microsoft-365/security/office-365-security/anti-phishing-protection-tuning?view=o365-worldwide) | modified |
+| 6/12/2023 | [ASF settings in EOP](/microsoft-365/security/office-365-security/anti-spam-policies-asf-settings-about?view=o365-worldwide) | modified |
+| 6/12/2023 | [Mail flow intelligence](/microsoft-365/security/office-365-security/connectors-mail-flow-intelligence?view=o365-worldwide) | modified |
+| 6/12/2023 | [Enable autoexpanding archiving](/microsoft-365/compliance/enable-autoexpanding-archiving?view=o365-worldwide) | modified |
+| 6/12/2023 | [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection?view=o365-worldwide) | modified |
+| 6/12/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
+| 6/12/2023 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide) | modified |
+| 6/13/2023 | [Migrate business email and calendar from Google Workspace](/microsoft-365/admin/moveto-microsoft-365/migrate-email?view=o365-worldwide) | modified |
+| 6/13/2023 | [Create eDiscovery holds in a eDiscovery (Standard) case](/microsoft-365/compliance/ediscovery-create-holds?view=o365-worldwide) | modified |
+| 6/13/2023 | [How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/email-authentication-anti-spoofing?view=o365-worldwide) | modified |
+| 6/13/2023 | [Overview of freeform document processing in Microsoft Syntex](/microsoft-365/syntex/freeform-document-processing-overview) | modified |
+| 6/13/2023 | [Import a term set using a SKOS-based format](/microsoft-365/syntex/import-term-set-skos) | modified |
+| 6/13/2023 | [Overview of prebuilt models in Microsoft Syntex](/microsoft-365/syntex/prebuilt-overview) | modified |
+| 6/13/2023 | [Push content types to a hub](/microsoft-365/syntex/push-content-type-to-hub) | modified |
+| 6/13/2023 | [SKOS format reference for SharePoint taxonomy](/microsoft-365/syntex/skos-format-reference) | modified |
+| 6/13/2023 | [Term store reports](/microsoft-365/syntex/term-store-analytics) | modified |
+| 6/14/2023 | [Manage Loop experiences (Loop workspaces and Loop components) in SharePoint](/microsoft-365/loop/loop-components-sharepoint?view=o365-worldwide) | added |
+| 6/14/2023 | [Overview of Loop components in Teams](/microsoft-365/loop/loop-components-teams?view=o365-worldwide) | added |
+| 6/14/2023 | [Mail flow in EOP](/microsoft-365/security/office-365-security/mail-flow-about?view=o365-worldwide) | modified |
+| 6/14/2023 | [Add support for anonymous inbound email over IPv6](/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about?view=o365-worldwide) | modified |
+| 6/14/2023 | [Troubleshooting mail sent to Microsoft 365](/microsoft-365/security/office-365-security/mail-flow-troubleshooting?view=o365-worldwide) | modified |
+| 6/14/2023 | [Anti-spam message headers](/microsoft-365/security/office-365-security/message-headers-eop-mdo?view=o365-worldwide) | modified |
+| 6/14/2023 | [Microsoft Defender for Identity in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-mdi?view=o365-worldwide) | modified |
+| 6/14/2023 | [Give mailbox permissions to another user - Admin Help](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
+| 6/14/2023 | [About the Microsoft Purview Compliance Manager premium assessment trial](/microsoft-365/compliance/compliance-easy-trials-compliance-manager-assessments?view=o365-worldwide) | modified |
+| 6/14/2023 | [Encryption in Microsoft 365](/microsoft-365/compliance/encryption?view=o365-worldwide) | modified |
+| 6/14/2023 | [Technical reference details about encryption](/microsoft-365/compliance/technical-reference-details-about-encryption?view=o365-worldwide) | modified |
+| 6/14/2023 | [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide) | modified |
+| 6/14/2023 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-worldwide) | modified |
+| 6/14/2023 | [Configure junk email settings on Exchange Online mailboxes](/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) | modified |
+| 6/14/2023 | [Configure the default connection filter policy](/microsoft-365/security/office-365-security/connection-filter-policies-configure?view=o365-worldwide) | modified |
+| 6/14/2023 | [Respond to a compromised connector in Microsoft 365](/microsoft-365/security/office-365-security/connectors-detect-respond-to-compromise?view=o365-worldwide) | modified |
+| 6/14/2023 | [Mail flow intelligence](/microsoft-365/security/office-365-security/connectors-mail-flow-intelligence?view=o365-worldwide) | modified |
+| 6/14/2023 | [Remove blocked connectors from the Restricted entities page in Microsoft 365](/microsoft-365/security/office-365-security/connectors-remove-blocked?view=o365-worldwide) | modified |
+| 6/14/2023 | [Create blocked sender lists](/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365?view=o365-worldwide) | modified |
+| 6/14/2023 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-worldwide) | modified |
+| 6/14/2023 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365-whats-new?view=o365-worldwide) | modified |
+| 6/14/2023 | [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide) | modified |
+| 6/14/2023 | [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide) | modified |
+| 6/14/2023 | [Data Loss Prevention policy reference](/microsoft-365/compliance/dlp-policy-reference?view=o365-worldwide) | modified |
+| 6/14/2023 | View the reports for data loss prevention | removed |
+| 6/14/2023 | [Step 7. Implement data loss prevention (DLP) with information protection capabilities](/microsoft-365/solutions/manage-devices-with-intune-dlp-mip?view=o365-worldwide) | modified |
+| 6/15/2023 | [Microsoft 365 admin center Viva Goals activity reports](/microsoft-365/admin/activity-reports/viva-goals-activity?view=o365-worldwide) | added |
+| 6/15/2023 | [Email authentication in Microsoft 365](/microsoft-365/security/office-365-security/email-authentication-about?view=o365-worldwide) | modified |
+| 6/15/2023 | [How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/email-authentication-anti-spoofing?view=o365-worldwide) | modified |
+| 6/15/2023 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide) | modified |
+| 6/15/2023 | [Support for validation of Domain Keys Identified Mail (DKIM) signed messages](/microsoft-365/security/office-365-security/email-authentication-dkim-support-about?view=o365-worldwide) | modified |
+| 6/15/2023 | [Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure?view=o365-worldwide) | modified |
+| 6/15/2023 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/email-authentication-spf-configure?view=o365-worldwide) | modified |
+| 6/15/2023 | [Email security with Threat Explorer in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/email-security-in-microsoft-defender?view=o365-worldwide) | modified |
+| 6/15/2023 | [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/eop-about?view=o365-worldwide) | modified |
+| 6/15/2023 | [Help and support for EOP](/microsoft-365/security/office-365-security/help-and-support-for-eop?view=o365-worldwide) | modified |
+| 6/15/2023 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-worldwide) | modified |
+| 6/15/2023 | [Investigate malicious email that was delivered in Microsoft 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide) | modified |
+| 6/15/2023 | [Mail flow in EOP](/microsoft-365/security/office-365-security/mail-flow-about?view=o365-worldwide) | modified |
+| 6/15/2023 | [Add support for anonymous inbound email over IPv6](/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about?view=o365-worldwide) | modified |
+| 6/15/2023 | [Microsoft Defender for Office 365 email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide) | modified |
+| 6/15/2023 | [Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions?view=o365-worldwide) | modified |
+| 6/15/2023 | [Anti-spam message headers](/microsoft-365/security/office-365-security/message-headers-eop-mdo?view=o365-worldwide) | modified |
+| 6/15/2023 | [Message trace in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/message-trace-scc?view=o365-worldwide) | modified |
+| 6/16/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
+| 6/16/2023 | [Alert classification for suspicious email forwarding activity](/microsoft-365/security/defender/alert-grading-playbook-email-forwarding?view=o365-worldwide) | modified |
+| 6/16/2023 | [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) | modified |
+| 6/16/2023 | [Migrate Exchange Online DLP policies to Microsoft Purview compliance portal](/microsoft-365/compliance/dlp-migrate-exo-policy-to-unified-dlp?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec](/microsoft-365/compliance/dlp-migration-assistant-for-symantec-use?view=o365-worldwide) | modified |
+| 6/16/2023 | [Get started with data loss prevention on-premises repositories](/microsoft-365/compliance/dlp-on-premises-scanner-get-started?view=o365-worldwide) | modified |
+| 6/16/2023 | [Learn about data loss prevention on-premises repositories](/microsoft-365/compliance/dlp-on-premises-scanner-learn?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use data loss prevention on-premises repositories](/microsoft-365/compliance/dlp-on-premises-scanner-use?view=o365-worldwide) | modified |
+| 6/16/2023 | [Plan for data loss prevention](/microsoft-365/compliance/dlp-overview-plan-for-dlp?view=o365-worldwide) | modified |
+| 6/16/2023 | [Data loss prevention policy tip reference for Outlook on the Web](/microsoft-365/compliance/dlp-owa-policy-tips?view=o365-worldwide) | modified |
+| 6/16/2023 | [Design a Data loss prevention policy](/microsoft-365/compliance/dlp-policy-design?view=o365-worldwide) | modified |
+| 6/16/2023 | [Data Loss Prevention policy reference](/microsoft-365/compliance/dlp-policy-reference?view=o365-worldwide) | modified |
+| 6/16/2023 | [Data Loss Prevention policy tips reference](/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide) | modified |
+| 6/16/2023 | [Get started with DLP for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use sensitivity labels as conditions in DLP policies](/microsoft-365/compliance/dlp-sensitivity-label-as-condition?view=o365-worldwide) | modified |
+| 6/16/2023 | [Share DLP alerts](/microsoft-365/compliance/dlp-share-alerts?view=o365-worldwide) | modified |
+| 6/16/2023 | [Test your DLP policies](/microsoft-365/compliance/dlp-test-dlp-policies?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use DLP policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps?view=o365-worldwide) | modified |
+| 6/16/2023 | [Get started with Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide) | modified |
+| 6/16/2023 | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) | modified |
+| 6/16/2023 | [Using Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-using?view=o365-worldwide) | modified |
+| 6/16/2023 | [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy?view=o365-worldwide) | modified |
+| 6/16/2023 | [How DLP works with Compliance portal & Exchange admin center](/microsoft-365/compliance/how-dlp-works-between-admin-centers?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use information barriers with SharePoint](/microsoft-365/compliance/information-barriers-sharepoint?view=o365-worldwide) | modified |
+| 6/16/2023 | [Use named entities in DLP policies](/microsoft-365/compliance/named-entities-use?view=o365-worldwide) | modified |
+| 6/16/2023 | [Create a DLP policy to protect documents](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties?view=o365-worldwide) | modified |
+| 6/16/2023 | [Common usage scenarios for sensitive information types](/microsoft-365/compliance/sit-common-scenarios?view=o365-worldwide) | modified |
+| 6/16/2023 | [Manage your exact data match schema](/microsoft-365/compliance/sit-use-exact-data-manage-schema?view=o365-worldwide) | modified |
+| 6/16/2023 | [Device health Microsoft Defender Antivirus health report](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health?view=o365-worldwide) | modified |
+
+
 ## Week of June 05, 2023
 
 
@@ -273,85 +382,3 @@
 | 5/19/2023 | [Assign eDiscovery permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/ediscovery-assign-permissions?view=o365-worldwide) | modified |
 | 5/19/2023 | [Get started with eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-premium-get-started?view=o365-worldwide) | modified |
 | 5/19/2023 | [Get started with eDiscovery (Standard)](/microsoft-365/compliance/ediscovery-standard-get-started?view=o365-worldwide) | modified |
-
-
-## Week of May 08, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/8/2023 | [Security Operations Guide for Defender for Endpoint](/microsoft-365/security/defender-endpoint/mde-sec-ops-guide?view=o365-worldwide) | added |
-| 5/8/2023 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide) | modified |
-| 5/8/2023 | [Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro](/microsoft-365/security/defender-endpoint/mac-jamfpro-policies?view=o365-worldwide) | modified |
-| 5/8/2023 | [Manage automation file uploads](/microsoft-365/security/defender-endpoint/manage-automation-file-uploads?view=o365-worldwide) | modified |
-| 5/8/2023 | [Investigate users in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-users?view=o365-worldwide) | modified |
-| 5/8/2023 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide) | modified |
-| 5/8/2023 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files?view=o365-worldwide) | modified |
-| 5/8/2023 | [Administration guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-admin-guide?view=o365-worldwide) | added |
-| 5/8/2023 | [Security operations guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-security-operations-guide?view=o365-worldwide) | added |
-| 5/8/2023 | Add a new user to your network and systems | removed |
-| 5/8/2023 | [Maintain your environment](/microsoft-365/business-premium/m365bp-maintain-environment?view=o365-worldwide) | modified |
-| 5/8/2023 | [Secure managed and unmanaged devices](/microsoft-365/business-premium/m365bp-managed-unmanaged-devices?view=o365-worldwide) | modified |
-| 5/8/2023 | Remove company data from devices | removed |
-| 5/8/2023 | Reset Windows devices to their factory settings | removed |
-| 5/8/2023 | Reset passwords | removed |
-| 5/8/2023 | Security operations guide for Microsoft 365 Business Premium | removed |
-| 5/8/2023 | [Microsoft Purview Compliance Manager regulations list](/microsoft-365/compliance/compliance-manager-templates-list?view=o365-worldwide) | modified |
-| 5/8/2023 | Security Operations Guide for Defender for Endpoint | removed |
-| 5/9/2023 | [Security administration guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-security-admin-guide?view=o365-worldwide) | added |
-| 5/9/2023 | [Document compliance with Microsoft Syntex](/microsoft-365/syntex/scenario-document-compliance) | added |
-| 5/9/2023 | [Find content details with Microsoft Syntex](/microsoft-365/syntex/scenario-find-content-details) | added |
-| 5/9/2023 | [Generate documents in bulk with Microsoft Syntex](/microsoft-365/syntex/scenario-generate-documents-bulk) | added |
-| 5/9/2023 | [Automatically generate routine documents with Microsoft Syntex](/microsoft-365/syntex/scenario-generate-routine-documents) | added |
-| 5/9/2023 | [Handle incoming documents with Microsoft Syntex](/microsoft-365/syntex/scenario-handle-incoming-documents) | added |
-| 5/9/2023 | [Make information easier to find with Microsoft Syntex](/microsoft-365/syntex/scenario-organize-repositories) | added |
-| 5/9/2023 | [Get started with Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide) | modified |
-| 5/9/2023 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-worldwide) | modified |
-| 5/9/2023 | [Create and manage insider risk management policies](/microsoft-365/compliance/insider-risk-management-policies?view=o365-worldwide) | modified |
-| 5/9/2023 | [Get started with insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-worldwide) | modified |
-| 5/9/2023 | [Investigate alerts in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-alerts?view=o365-worldwide) | modified |
-| 5/9/2023 | [Scenarios and use cases for Microsoft Syntex](/microsoft-365/syntex/adoption-scenarios) | modified |
-| 5/9/2023 | [Protect against malware and other threats with Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats?view=o365-worldwide) | modified |
-| 5/9/2023 | [Boost your security protection with Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-security-overview?view=o365-worldwide) | modified |
-| 5/9/2023 | [Top 10 ways to secure your business data with Microsoft 365 for business](/microsoft-365/business-premium/secure-your-business-data?view=o365-worldwide) | modified |
-| 5/10/2023 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365-business-premium-setup?view=o365-worldwide) | renamed |
-| 5/10/2023 | Sign up for Microsoft 365 Business Premium | removed |
-| 5/10/2023 | Get Microsoft 365 for Campaigns | removed |
-| 5/10/2023 | [Microsoft 365 Business Premium overview](/microsoft-365/business-premium/index?view=o365-worldwide) | modified |
-| 5/10/2023 | [Setup overview for Microsoft 365 for Campaigns](/microsoft-365/business-premium/m365-campaigns-setup?view=o365-worldwide) | modified |
-| 5/10/2023 | [Why choose Microsoft 365 Business Premium? Productivity and security](/microsoft-365/business-premium/why-choose-microsoft-365-business-premium?view=o365-worldwide) | modified |
-| 5/10/2023 | [Get started with Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide) | modified |
-| 5/10/2023 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-worldwide) | modified |
-| 5/10/2023 | [Set up Microsoft 365 Business Premium](/microsoft-365/business-premium/m365-business-premium-setup?view=o365-worldwide) | modified |
-| 5/10/2023 | Get Microsoft Defender for Business servers | removed |
-| 5/10/2023 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-worldwide) | modified |
-| 5/10/2023 | [Microsoft Defender for Business frequently asked questions](/microsoft-365/security/defender-business/mdb-faq?view=o365-worldwide) | modified |
-| 5/10/2023 | [Manage devices in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-manage-devices?view=o365-worldwide) | modified |
-| 5/10/2023 | [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/defender-endpoint-antivirus-exclusions?view=o365-worldwide) | modified |
-| 5/10/2023 | Recover from a ransomware attack | removed |
-| 5/11/2023 | [Audit log activities](/microsoft-365/compliance/audit-log-activities?view=o365-worldwide) | modified |
-| 5/11/2023 | [Search the audit log in the Microsoft Purview compliance portal](/microsoft-365/compliance/audit-log-search?view=o365-worldwide) | modified |
-| 5/11/2023 | [Search for and delete chat messages in Teams](/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages?view=o365-worldwide) | modified |
-| 5/11/2023 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/reports-defender-for-office-365?view=o365-worldwide) | modified |
-| 5/11/2023 | [View email security reports](/microsoft-365/security/office-365-security/reports-email-security?view=o365-worldwide) | modified |
-| 5/11/2023 | [Malaysia passport number entity definition](/microsoft-365/compliance/sit-defn-malaysia-passport-number?view=o365-worldwide) | added |
-| 5/11/2023 | [Singapore driver's license number entity definition](/microsoft-365/compliance/sit-defn-singapore-drivers-license-number?view=o365-worldwide) | added |
-| 5/11/2023 | [Singapore passport number entity definition](/microsoft-365/compliance/sit-defn-singapore-passport-number?view=o365-worldwide) | added |
-| 5/11/2023 | [South Korea driver's license number entity definition](/microsoft-365/compliance/sit-defn-south-korea-drivers-license-number?view=o365-worldwide) | added |
-| 5/11/2023 | [South Korea passport number entity definition](/microsoft-365/compliance/sit-defn-south-korea-passport-number?view=o365-worldwide) | added |
-| 5/11/2023 | [UAE identity card number entity definition](/microsoft-365/compliance/sit-defn-uae-identity-card-number?view=o365-worldwide) | added |
-| 5/11/2023 | [UAE passport number entity definition](/microsoft-365/compliance/sit-defn-uae-passport-number?view=o365-worldwide) | added |
-| 5/11/2023 | [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program?view=o365-worldwide) | modified |
-| 5/11/2023 | [Overview and Definitions](/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide) | modified |
-| 5/11/2023 | [Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq?view=o365-worldwide) | modified |
-| 5/12/2023 | [Restore a deleted Microsoft 365 group](/microsoft-365/admin/create-groups/restore-deleted-group?view=o365-worldwide) | modified |
-| 5/12/2023 | [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings?view=o365-worldwide) | modified |
-| 5/12/2023 | [Malaysia passport number entity definition](/microsoft-365/compliance/sit-defn-malaysia-passport-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [Singapore passport number entity definition](/microsoft-365/compliance/sit-defn-singapore-passport-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [South Korea driver's license number entity definition](/microsoft-365/compliance/sit-defn-south-korea-drivers-license-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [South Korea passport number entity definition](/microsoft-365/compliance/sit-defn-south-korea-passport-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [UAE identity card number entity definition](/microsoft-365/compliance/sit-defn-uae-identity-card-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [UAE passport number entity definition](/microsoft-365/compliance/sit-defn-uae-passport-number?view=o365-worldwide) | modified |
-| 5/12/2023 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) | modified |
-| 5/12/2023 | [Impersonation insight](/microsoft-365/security/office-365-security/anti-phishing-mdo-impersonation-insight?view=o365-worldwide) | modified |
-| 5/12/2023 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/anti-phishing-policies-mdo-configure?view=o365-worldwide) | modified |
