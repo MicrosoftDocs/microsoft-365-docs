@@ -72,9 +72,8 @@ An explanation of each field is provided below.
 
 ## Change the organization's Name
 The organization's name is used throughout Microsoft 365, including but not limited to:  
-* Azure Active Directory Sign-in dialogs and multi-factor authentication prompts. 
+* Azure Active Directory Sign-in dialogs and multi-factor authentication prompts.  This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices 
  * If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.
- * The organization's name is shown in multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices
 * Viva Engage navigation
   * In Viva Engage, the left navigation uses the organization name as the name of the home Engage network.  
 * OneDrive Sync
@@ -94,7 +93,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
   *  Currently, updating the organization name does not update it for configured clients. 
 *  Microsoft Teams: Organization Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant. 
 *  OneNote:  End users may have a notebook named in this pattern: \<first name>@\<organization name>.
-*  Windows desktop applications for Word, Excel, and PowerPoint, the File Save and File Open display the organization name.  
+*  Windows desktop applications for Word, Excel, and PowerPoint: The File Save and File Open display the organization name.  
 *  Mobile apps such as Word, Excel, PowerPoint, OneNote, Outlook, and the M365 App may display the organization name on various screens, especially ones that let you pick files from M365 services such as SharePoint and OneDrive. 
 
 Note that only Microsoft Teams will automatically detect the change to the organization name.  None of the other applications pick up the name change automatically.  Mobile apps may require you to sign out and sign back in or reinstall them before they will display the new name. 
