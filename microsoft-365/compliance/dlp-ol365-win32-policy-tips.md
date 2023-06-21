@@ -26,10 +26,6 @@ description: "DLP policy tip reference for Outlook 2013 for Win32."
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Applies to:
-
-- Outlook perpetual versions E3 and E5 users
-- Microsoft 365 for enterprise E3 and E5 users
 
 > [!NOTE]
 > Microsoft Purview data loss prevention will only process the first four MB on message content for policy tip in Outlook 365 for Win32 and only classify up to two MB of attchments.
@@ -49,39 +45,21 @@ Yes
 -->
 ## Conditions that support policy tips
 
-### Outlook perpetual versions
+The conditions that support policy tips vary by the version and license.
 
-- Content contains Sensitive info types
-- Content is shared from Microsoft 365
+### Conditions that support policy tips for Outlook perpetual users
 
-### Microsoft 365 for enterprise
+|For Outlook perpetual versions and and users  |These conditions apply  |
+|---------|---------|
+|-E3 users</br>-E5 users    |- Content contains sensitive information types </br>- Content is shared from Microsoft 365 |
 
-Applies to:
- - All E3 users
- - All offline E5 users
- - All E5 users with connected experience disabled
- - All online E5 users with production version and build lower than 2303 &16.0.16216.10000
- - All online E5 users with Semi-annual channel version and build lower than 2302 & 16.0.16130.20478
+### Conditions that support policy tips for Microsoft 365 for Enterprise users
 
-Conditions
-- Content contains Sensitive info types
-- Content is shared from Microsoft 365
+|For Microsoft 365 for Enterprise Outlook versions and users  |These conditions apply|
+|---------|---------|
+|- All E3 users </br>- All offline E5 users </br>- All E5 users with connected experience disabled </br>- All online E5 users with production version and build lower than 2303 &16.0.16216.10000 </br>- All online E5 users with semi-annual channel version and build lower than 2302 and 16.0.16130.20478     |- Content contains sensitive information types </br>- Content is shared from Microsoft 365         |
+|- All online E5 users with connected experience enabled with production version and build 2303 and 16.0 16216.10000 or higher </br>- semi-annual channel tenative version 2302 build 16.0.16130.20478 | - Content contains sensitive information types </br>- Content contains sensitivity labels (works for email labels, Office docs and PDF files) </br>- Content is shared </br>- Sender is </br>- Sender is member of </br>- Sender domain is </br>- Recipient is </br>- Recipient is a member of </br>- Recipient domain is </br>- Subject contains words|
 
-Applies to:
-- E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
-- Semi-annual channel tentative version 2302 build 16.0.16130.20478
-
-Conditions
-- Content contains Sensitive information types
-- Content contains Sensitivity labels (works for email labels, Office docs and PDF files)
-- Content is shared
-- Sender is
-- Sender is member of
-- Sender domain is
-- Recipient is
-- Recipient is a member of
-- Recipient domain is
-- Subject contains words
 
 <!--
 >> [!NOTE]
@@ -89,6 +67,8 @@ Conditions
 -->
 
 ## Actions that support policy tips
+
+All Exchange actions support policy tips
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Set headers
@@ -107,6 +87,8 @@ Conditions
 - Deliver the message to the hosted quarantine
 
 ## Sensitive information types that support policy tips
+
+### Outlook perpetual versions
 
 <!--applies to perpetual outlook only and m365 E3, E5 for enterpise   - All E3 users
  - All offline E5 users
