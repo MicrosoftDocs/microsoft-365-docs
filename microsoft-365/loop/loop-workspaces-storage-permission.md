@@ -43,14 +43,15 @@ Sharing the workspace in Loop adds the user to the workspace roster. All workspa
 
 :::image type="content" source="media/share-workspace-in-loop.png" alt-text="Share Workspace in Loop":::
 
-There's a distinction between sharing a specific Loop page with a user versus inviting them to a Workspace. </br>
-When you invite a user to a workspace, that user has access to all the pages in that workspace. Currently, Loop only supports inviting users to a workspace via this Workspace roster management flow, which enables access and sends an email invite to the invited users.
+There's a distinction between sharing a specific Loop page with a user versus inviting them to a Workspace.
+
+When you invite a user to a workspace, that user has access to all the pages in that workspace. Loop only supports inviting users to a workspace via this Workspace roster management flow, which enables access and sends an email invite to the invited users.
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin has disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*" or "*read only*" access.
 
-## Loop workspaces and Microsoft 365 Groups
+## Loop workspaces and Microsoft 365 groups
 
-Loop workspaces don't use M365 Groups for access management, instead they create a roster for access management.
+Loop workspaces don't use Microsoft 365 groups for access management, instead they create a roster for access management.
 
 ## Storage management after user departure
 
@@ -68,8 +69,6 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 ## Management of Loop app's storage
 
 You may have questions such as how to manage workspaces that only have one owner and the owner leaves the company, how to delete workspaces after the owner has left the company, how to enumerate and manage rosters for workspaces, how to restore workspaces deleted by end-users, how to find ownerless workspaces, how to access and log file reporting, etc.
-
-Microsoft is currently working on building enumerate, manage, delete and recover admin management capabilities for Loop workspaces on Syntex repository storage.
 
 ## Pricing and licensing model for Loop app
 
