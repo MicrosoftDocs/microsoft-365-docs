@@ -68,7 +68,7 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 ## Management of Loop app's storage
 
-You may have questions such as how to manage workspaces that only have one owner and the owner leaves the company, how to delete workspaces after the owner has left the company, how to enumerate and manage rosters for workspaces, how to restore workspaces deleted by end-users, how to find ownerless workspaces, how to access and log file reporting, etc.
+Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex reposity storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
 
 ## Pricing and licensing model for Loop app
 
