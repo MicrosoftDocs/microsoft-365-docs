@@ -72,7 +72,7 @@ An explanation of each field is provided below.
 
 ## Change the organization's Name
 The organization's name is used throughout Microsoft 365, including but not limited to:  
-* Azure Active Directory Sign-in dialogs and multi-factor authentication prompts.  This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices 
+* Azure Active Directory Sign-in dialogs and multi-factor authentication prompts.  This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices. 
  * If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.
 * Viva Engage navigation
   * In Viva Engage, the left navigation uses the organization name as the name of the home Engage network.  
@@ -97,7 +97,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
 *  Mobile apps such as Word, Excel, PowerPoint, OneNote, Outlook, and the M365 App may display the organization name on various screens, especially ones that let you pick files from M365 services such as SharePoint and OneDrive. 
 
 Note that only Microsoft Teams will automatically detect the change to the organization name.  None of the other applications pick up the name change automatically.  Mobile apps may require you to sign out and sign back in or reinstall them before they will display the new name. 
-There is a script that can help you force Office desktop applications to pick up the new name, but not without causing the user to sign back in again.
+[There is a script](https://learn.microsoft.com/en-us/office/troubleshoot/activation/reset-office-365-proplus-activation-state) that can help you force Office desktop applications to pick up the new name, but it forces the user to sign back in to the Ofice desktop apps again.
 
 ## Change your alternate email address
 
