@@ -32,11 +32,11 @@ appliesto:
 In Microsoft Defender for Office 365, usage card is available to help admins and Security Operations (SecOps) teams understand their organization’s active usage of Defender for Office 365 licenses in comparison to the actual number of licenses purchased. This can encourage a license true-up.
 
 > [!NOTE]
-> The usage card is enabled for tenants with at least one paid Defender for Office 365 Plan 1 (P1) or Defender for Office 365 Plan 2 (P2) license.
+> The usage card is enabled for tenants with at least one paid Defender for Office 365 plan 1 (P1) or Defender for Office 365 plan 2 (P2) license.
 
 Usage cards can help determine:
 
-- Active usage of Exchange licenses and how many of those are active usage of Microsoft Defender for Office 365. 
+- Active usage of Exchange Online licenses and how many of those are active usage of Microsoft Defender for Office 365. 
 
 - Breakdown of active usage across key P1 and P2 capabilities (P1: protection and detection; P2: SecOps capabilities). 
 
@@ -112,6 +112,6 @@ If you see **Collecting license and usage data** status in your usage card, it m
 
 :::image type="content" source="../../media/usage-card-collecting-data.png" alt-text="Screenshot of the usage card showing the collecting data status." lightbox="../../media/usage-card-collecting-data.png":::
 
-### Why does it still show overage even though I don't have any Microsoft Defender for Office 365 P2 license and no usage of SecOps capabilities?
+### Why does it still show overage even though you don't have any Microsoft Defender for Office 365 P2 license and no usage of SecOps capabilities?
 
 If you have overage across Microsoft Defender for Office 365 P1 licenses offering protection and detection, you can remediate this overage by purchasing more Microsoft Defender for Office 365 P1 licenses.
