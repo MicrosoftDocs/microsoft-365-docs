@@ -46,6 +46,11 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/admin/create-groups/index.md",
+      "redirect_url": "create-groups",
+      "redirect_document_id": true
+     },
+      {
          "source_path":"microsoft-365/admin/support/andorra.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
