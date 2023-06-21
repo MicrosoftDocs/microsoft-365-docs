@@ -45,6 +45,11 @@
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
       },
+       {
+      "source_path": "microsoft-365/admin/admin-home.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
+    },
       {
          "source_path":"microsoft-365/admin/support/angola.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
