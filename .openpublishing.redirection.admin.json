@@ -15,11 +15,11 @@
          "redirect_url":"/microsoft-365/admin/manage/servicenow-virtual-agent-integration",
          "redirect_document_id":false
       },
-        {
-      "source_path": "microsoft-365/admin/admin-overview/index.md",
-      "redirect_url": "admin-overview",
-      "redirect_document_id": true
-    },
+      {
+         "source_path":"microsoft-365/admin/admin-overview/index.md",
+         "redirect_url":"admin-overview",
+         "redirect_document_id":true
+      },
       {
          "source_path":"microsoft-365/admin/support/afghanistan.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
@@ -46,20 +46,20 @@
          "redirect_document_id":false
       },
       {
-      "source_path": "microsoft-365/admin/create-groups/index.md",
-      "redirect_url": "create-groups",
-      "redirect_document_id": true
-     },
+         "source_path":"microsoft-365/admin/create-groups/index.md",
+         "redirect_url":"create-groups",
+         "redirect_document_id":true
+      },
       {
          "source_path":"microsoft-365/admin/support/andorra.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
       },
-       {
-      "source_path": "microsoft-365/admin/admin-home.md",
-      "redirect_url": "index",
-      "redirect_document_id": false
-    },
+      {
+         "source_path":"microsoft-365/admin/admin-home.md",
+         "redirect_url":"index",
+         "redirect_document_id":false
+      },
       {
          "source_path":"microsoft-365/admin/support/angola.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
@@ -86,35 +86,40 @@
          "redirect_document_id":false
       },
       {
-      "source_path": "microsoft-365/admin/dns/index.md",
-      "redirect_url": "../setup/add-domain",
-      "redirect_document_id": false
-     },
+         "source_path":"microsoft-365/admin/dns/index.md",
+         "redirect_url":"../setup/add-domain",
+         "redirect_document_id":false
+      },
       {
          "source_path":"microsoft-365/admin/support/aruba.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
       },
-        {
-      "source_path": "microsoft-365/admin/activity-reports/index.md",
-      "redirect_url": "activity-reports",
-      "redirect_document_id": true
-    },
+      {
+         "source_path":"microsoft-365/admin/manage/manage.md",
+         "redirect_url":"index",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/admin/activity-reports/index.md",
+         "redirect_url":"activity-reports",
+         "redirect_document_id":true
+      },
       {
          "source_path":"microsoft-365/admin/support/ascension.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
          "redirect_document_id":false
       },
-       {
-      "source_path": "microsoft-365/admin/email/email.md",
-      "redirect_url": "index",
-      "redirect_document_id": false
-     },
       {
-      "source_path": "microsoft-365/admin/email/email-collaboration.md",
-      "redirect_url": "/microsoft-365/admin/index",
-      "redirect_document_id": false
-     }, 
+         "source_path":"microsoft-365/admin/email/email.md",
+         "redirect_url":"index",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/admin/email/email-collaboration.md",
+         "redirect_url":"/microsoft-365/admin/index",
+         "redirect_document_id":false
+      },
       {
          "source_path":"microsoft-365/admin/support/australia.md",
          "redirect_url":"/microsoft-365/admin/support-contact-info",
