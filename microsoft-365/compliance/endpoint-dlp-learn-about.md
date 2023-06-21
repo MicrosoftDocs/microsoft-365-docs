@@ -241,6 +241,10 @@ Just-in-time protection applies a candidate policy to onboarded Windows 10/11 de
 
 - Items that have never been evaluated.
 - Items on which the evaluation has gone stale. These are previously evaluated items that haven't been reevaluated by the current, updated cloud versions of the policies.
+ 
+[!NOTE]
+- Simulate Mode: Just-in-time protection is triggered in the background. Admins can see just-in-time events in Activity explorer, without users being blocked.
+- Enforce Mode: End users are blocked until the evaluation is complete.
 
 <!-- You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**. -->
 
