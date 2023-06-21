@@ -101,6 +101,6 @@ You can find these policy settings under User Configuration\Policies\Administrat
 
 ### User experience examples
 
-:::image type="content" source="../../media/manage-feedback-1.png" alt-text="Screenshot: Feedback page showing metadata example":::
+:::image type="content" source="../../media/manage-feedback-1.png" alt-text="Screenshot: Example of user feedback submission to Microsoft":::
 
-:::image type="content" source="../../media/manage-feedback-2.png" alt-text="Screenshot: In-product customer research question example":::
+:::image type="content" source="../../media/manage-feedback-2.png" alt-text="Screenshot: Example of user submission feedback to Microsoft":::
