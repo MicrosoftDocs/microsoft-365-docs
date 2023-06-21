@@ -20,7 +20,9 @@ ms.custom: migrationguides
 description: "Complete the steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/22/2023
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 3: Onboard
@@ -172,7 +174,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
-  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](tenant-allow-block-list-about.md) feature to configure safe overrides for those false positives.
+  Report any false positives to Microsoft as early as possible through [admin submissions](submissions-admin.md), and use the [Tenant Allow/Block List](tenant-allow-block-list-about.md) feature to configure safe overrides for those false positives.
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft 365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 

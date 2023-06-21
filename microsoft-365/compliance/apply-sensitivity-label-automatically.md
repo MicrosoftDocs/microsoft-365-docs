@@ -343,10 +343,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     > [!NOTE]
     > For organizations that are using administrative units:
-    
     > - If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies for Exchange and OneDrive support administrative units.
     > - When you use the **Included** or **Excluded** options, you will see and can select only users from the administrative units selected in the previous step.
-    > - 
     
     If you use the **Included** or **Excluded** options:
     
@@ -354,7 +352,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
         -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
     
-    - For the OneDrive location, you must specify users or groups. Previously, you had to specify sites by URLs. Any existing OneDrive URL sites in auto-labeling policies will continue to work but before you can specify new OneDrive locations, or for restricted admins, you must first delete any existing site URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
+    - Rolling out: For the OneDrive location, you must specify users or groups. Previously, you had to specify sites by URLs. Any existing OneDrive URL sites in auto-labeling policies will continue to work but before you can specify new OneDrive locations, or for restricted admins, you must first delete any existing site URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
     
