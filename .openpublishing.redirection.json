@@ -61,6 +61,16 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/lti/teams-classes-lms.md",
+      "redirect_url": "/MicrosoftTeams/Teams-overview",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
+      "redirect_url": "/lti/onedrive-lti",
+      "redirect_document_id": false
+      },
+      {
          "source_path":"enterprise/bgp-communities-in-expressroute.md",
          "redirect_url":"enterprise/azure-expressroute.md",
          "redirect_document_id":false
