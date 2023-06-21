@@ -98,6 +98,7 @@ See [Static data location information for select workloads](#static-data-locatio
 
 ### Whiteboard
 
+
 See [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
 ### Viva Engage (formally known as Yammer)
