@@ -68,14 +68,14 @@ sections:
       - question: |
           What happens if I disable anti-spoofing protection for my organization?
         answer: |
-          We don't recommend disabling anti-spoofing protection. Disabling the protection will allow more delivered phishing and spam messages in your organization. Not all phishing is spoofing, and not all spoofed messages will be missed. However, your risk will be higher.
+          We don't recommend disabling anti-spoofing protection. Disabling the protection allows more delivered phishing and spam messages in your organization. Not all phishing is spoofing, and not all spoofed messages will be missed. However, your risk is higher.
 
           Now that [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) is available, we no longer recommended turning off anti-spoofing protection when your email is routed through another service before EOP.
 
       - question: |
-          Does anti-spoofing protection mean I will be protected from all phishing?
+          Does anti-spoofing protection mean I'm protected from all phishing?
         answer: |
-          Unfortunately, no. Attackers will adapt to use other techniques (for example, compromised accounts or accounts in free email services). However, anti-phishing protection works much better to detect these other types of phishing methods. The protection layers in EOP are designed work together and build on top of each other.
+          Unfortunately, no. Attackers constantly adapt to use other techniques (for example, compromised accounts or accounts in free email services). However, anti-phishing protection works better to detect these other types of phishing methods. The protection layers in EOP are designed work together and build on top of each other.
 
       - question: |
           Do other large email services block unauthenticated inbound email?
@@ -85,7 +85,7 @@ sections:
       - question: |
           Do I still need to enable the Advanced Spam Filter setting "SPF record: hard fail" ('MarkAsSpamSpfRecordHardFail') if I enable anti-spoofing?
         answer: |
-          No. This ASF setting is no longer required. Anti-spoofing protection considers both SPF hard fails and a much wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you will probably get more false positives.
+          No. This ASF setting is no longer required. Anti-spoofing protection considers both SPF hard fails and a wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you'll probably get more false positives.
 
           We recommend that you disable this feature as it provides almost no additional benefit for detecting spam or phishing message, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in EOP](anti-spam-policies-asf-settings-about.md).
 

@@ -45,18 +45,18 @@ sections:
       - question: |
           By default, what happens to a message that's detected as spam?
         answer: |
-          **Inbound messages:** The majority of spam is deleted via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
+          - **Inbound messages:** Most spam is deleted via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
           
-          Anti-spam policies are used in the Standard and Strict preset security policies. You can create custom anti-spam policies that apply to specific groups of users. There's also a default anti-spam policy that applies to all recipients who aren't specified in the Standard and Strict preset security policies or in custom policies.
+            Anti-spam policies are used in the Standard and Strict preset security policies. You can create custom anti-spam policies that apply to specific groups of users. There's also a default anti-spam policy that applies to all recipients who aren't specified in the Standard and Strict preset security policies or in custom policies.
           
-          By default, messages that are identified as spam are moved to the Junk Email folder by the Standard preset security policy, custom anti-spam policies (configurable), and the default anti-spam policy (configurable). In the Strict preset security policy, spam messages are quarantined.
+            By default, messages that are identified as spam are moved to the Junk Email folder by the Standard preset security policy, custom anti-spam policies (configurable), and the default anti-spam policy (configurable). In the Strict preset security policy, spam messages are quarantined.
           
-          For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+            For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-          > [!IMPORTANT]
-          > In hybrid deployments where EOP protects on-premises Exchange mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filtering headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+            > [!IMPORTANT]
+            > In hybrid deployments where EOP protects on-premises Exchange mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filtering headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-          **Outbound messages:** The message is either routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls](outbound-spam-protection-about.md).
+          - **Outbound messages:** The message is either routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls](outbound-spam-protection-about.md).
 
       - question: |
           What's a zero-day spam variant and how is it handled by the service?
@@ -64,7 +64,7 @@ sections:
           A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
 
           > [!NOTE]
-          > If you receive a message that might be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+          > If you receive a message that might be a zero-day spam variant, in order to help us improve the service, submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
       - question: |
           Do I need to configure the service to provide anti-spam protection?
@@ -96,7 +96,7 @@ sections:
       - question: |
           Does the service provide URL filtering?
         answer: |
-          Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected then the message is marked as spam.
+          Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected, the message is marked as spam.
 
           Customers with Microsoft 365 Defender for Office licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
@@ -121,14 +121,14 @@ sections:
           Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
       - question: |
-          Will the service throttle (rate limit) my mail if my users send outbound spam?
+          Does the service throttle (rate limit) my mail if users send outbound spam?
         answer: |
-          If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by EOP, the user will be blocked from sending messages. In most cases, if an outbound message is determined to be spam, it is routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
+          If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by EOP, the user is blocked from sending messages. In most cases, if an outbound message is determined to be spam, it's routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
 
           Notifications are automatically sent when users are blocked due to sending outbound spam or exceeding sending limits. For more information, see [Outbound spam protection in EOP](outbound-spam-protection-about.md).
 
       - question: |
-          Can I use a third-party anti-spam and anti-malware provider in conjunction with Microsoft?
+          Can I use a third-party anti-spam and anti-malware provider with Microsoft 365?
         answer: |
           Yes. Although we recommend that you point your MX record directly to Microsoft, we realize that there are legitimate business reasons to route your email to somewhere other than Microsoft first.
 
@@ -146,13 +146,13 @@ sections:
           The service focuses on spam and malware detection and removal, though we might occasionally investigate especially dangerous or damaging campaigns and pursue the perpetrators. This pursuit might involve working with our legal and digital crime units to take down a botnet, blocking the spammer from using the service (if they're using it for sending outbound email), and passing the information on to law enforcement for criminal prosecution.
 
       - question: |
-          What are a set of best practices for outbound mail that will help to ensure my mail is delivered?
+          What are the best practices for outbound mail that help to ensure my mail is delivered?
         answer: |
           The guidelines at [Best practices for bulk emailing to Microsoft 365 users](mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
 
           - **The source email domain should resolve in DNS**: For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.168.43.10.
 
-            If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool, regardless of the message content. For more information about the high risk delivery pool, see [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md).
+            If a sending domain has no A-record and no MX record in DNS, the service routes the message through its higher risk delivery pool, regardless of the message content. For more information about the high risk delivery pool, see [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md).
 
           - **The source email server should have a reverse DNS (PTR) entry**: For example, if the email source IP address is 192.168.43.10, the reverse DNS entry would be `43-10.any.icann.org`.`
 
