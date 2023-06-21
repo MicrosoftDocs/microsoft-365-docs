@@ -34,19 +34,15 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Attackers are more likely to compromise unmanaged devices and, by doing so, threaten your network. Onboarding your devices to Microsoft Defender for Endpoint puts you in the best position to protect your organization from these kinds of attacks. The more devices you onboard, the quicker you’ll be able identify and stop attacks, prioritize risks, evolve your defenses across operating systems and network devices, and essentially elevate your security posture.
+To ensure your network is secure from attackers, it is important to onboard all of your devices to Microsoft Defender for Endpoint. This will allow you to quickly identify and stop attacks, prioritize risks, and evolve your defenses across operating systems and network devices.
 
-Microsoft Defender for Endpoint also probes and scans your network to discover unmanaged devices in your environment and provides tools to help assess, onboard, and protect these discovered devices.
+Microsoft Defender for Endpoint provides tools to help you assess, onboard, and protect your devices. It also probes and scans your network to discover unmanaged devices in your environment that you can subsequently onboard. By onboarding your devices to Microsoft Defender for Endpoint, you can ensure that your network is secure from attackers and that your devices are protected from threats.
 
-This article provides an overview of the steps to deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment method for you organization, guide you on how onboard your devices and configure Defender for Endpoint capabilities. Each section corresponds to a separate article in this solution.
+This article provides an overview of the steps to deploy Defender for Endpoint as a multi-platform endpoint protection solution. It will help you choose the best deployment method, onboard devices, and configure capabilities. Each section corresponds to a separate article.
 
-The steps include:
+The steps to deploy Defender for Endpoint are:
 
-1. [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
-2. [Assign roles and permissions](prepare-deployment.md)
-3. [Identify your architecture](deployment-strategy.md)
-4. [Choose your deployment method and onboard devices](onboarding.md)
-5. [Configure Microsoft Defender for Endpoint capabilities](onboarding.md)
+:::image type="content" source="../../media/defender-endpoint/onboard-mde.png" alt-text="The deployment steps" lightbox="../../media/defender-endpoint/onboard-mde.png":::
 
 ## Before you begin
 
@@ -87,6 +83,10 @@ We understand that every enterprise environment is unique, so we've provided sev
 To select the appropriate Defender for Endpoint architecture that best suites your organization, see [Identify your architecture](deployment-strategy.md).
 
 ## Step 4 - Choose your deployment method and onboard devices
+
+1. Assess your devices: Use the Microsoft Defender for Endpoint assessment tool to determine which devices need to be onboarded.
+
+2. Onboard your devices: Use the onboarding wizard to add your devices to Microsoft Defender for Endpoint.
 
 The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately. For more information, see [Choose your deployment method](onboarding.md)
 
