@@ -676,7 +676,7 @@ Yes.
 - [Discrimination](classifier-tc-definitions.md#discrimination)
 - [Employee disciplinary action](classifier-tc-definitions.md#employee-disciplinary-action)
 - [Employee insurance](classifier-tc-definitions.md#employee-insurance)
-- [Employment agreement](classifier-tc-definitions.md#employement-agreement)
+- [Employment agreement](classifier-tc-definitions.md#employment-agreement)
 - [Employee Pension Records](classifier-tc-definitions.md#employee-pension-records)
 - [Employee Stocks and Financial Bond Records](classifier-tc-definitions.md#employee-stocks-and-financial-bond-records)
 - [Enterprise Risk Management](classifier-tc-definitions.md#enterprise-risk-management)
