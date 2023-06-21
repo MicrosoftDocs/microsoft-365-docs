@@ -40,10 +40,6 @@ Microsoft Defender for Endpoint provides tools to help you assess, onboard, and 
 
 This article provides an overview of the steps to deploy Defender for Endpoint as a multi-platform endpoint protection solution. It will help you choose the best deployment method, onboard devices, and configure capabilities. Each section corresponds to a separate article.
 
-The steps to deploy Defender for Endpoint are:
-
-:::image type="content" source="../../media/defender-endpoint/onboard-mde.png" alt-text="The deployment steps" lightbox="../../media/defender-endpoint/onboard-mde.png":::
-
 ## Before you begin
 
 Preparation is key to any successful deployment. In this section guides, you'll be guided on the points you'll need to consider as you prepare to deploy Defender for Endpoint.
@@ -59,6 +55,10 @@ Preparation is key to any successful deployment. In this section guides, you'll 
 |Management engine|Management engine name and version (for example, System Center Configuration Manager Current Branch 1803).|
 |CDOC distribution|High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).|
 |Security information and event (SIEM)|SIEM technology in use.|
+
+The steps to deploy Defender for Endpoint are:
+
+:::image type="content" source="../../media/defender-endpoint/onboard-mde.png" alt-text="The deployment steps" lightbox="../../media/defender-endpoint/onboard-mde.png":::
 
 ## Step 1 - Set up Microsoft Defender for Endpoint deployment
 
