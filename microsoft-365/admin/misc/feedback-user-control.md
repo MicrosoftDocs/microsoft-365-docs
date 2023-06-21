@@ -92,11 +92,11 @@ If you've enabled the corresponding policies, we may allow users to submit scree
 - Content samples: Portions of content from the customer’s document or interactions with Microsoft services. Example: the prompt the user sent to an AI service and the response the user received back from that AI service.
 - Log files: Additional log files that are not included in Overview of diagnostic log files for Office - Microsoft Support and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
 
-:::image type="content" source="../../media/manage-feedback-3.jpg" alt-text="Product feedback in the Microsoft 365 admin center":::
-
 ## How can I see my user's feedback?
 
 To meet Microsoft’s legal obligations to customers, we've added an experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators now have the ability to view, export and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+
+:::image type="content" source="../../media/manage-feedback-3.jpg" alt-text="Product feedback in the Microsoft 365 admin center":::
 
 ## Data handling and privacy
 
