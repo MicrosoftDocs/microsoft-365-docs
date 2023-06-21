@@ -209,7 +209,7 @@ If the deployment tools used do not indicate an error in the onboarding process,
    |`63`|Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4|Identify what is causing changes in start type of mentioned service. If the exit code isn't 0, fix the start type manually to expected start type.|
    |`64`|Starting stopped external service. Name: %1, exit code: %2|Contact support if the event keeps re-appearing.|
    |`68`|The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3|Identify what is causing changes in start type. Fix mentioned service start type.|
-   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if persists.|
+   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if the issue persists.|
    |
 
 There are additional components on the device that the Microsoft Defender for Endpoint agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender for Endpoint agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
