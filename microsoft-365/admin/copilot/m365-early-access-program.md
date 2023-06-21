@@ -47,11 +47,11 @@ A: Work directly with your account manager to confirm acceptance. After acceptin
 
 A: With the Early Access Program, you can use Copilot prior to the general release of the product and can receive extra engineering support to deploy Copilot and promote adoption. You also have the opportunity to test use cases and provide feedback to influence the development of the product.
 
-### Q How do I complete the purchase?
+### Q: How do I complete the purchase?
 
 A: You will use an online purchase experience in the Microsoft 365 admin center. During this purchase experience, you'll need to agree to the Microsoft Customer Agreement (MCA) if you don't already have one. There are also supplemental terms for the Early Access Program. You may work with your account team to review these documents in advance.
 
-### Q How am I invoiced and how do I pay? 
+### Q: How am I invoiced and how do I pay? 
 
 A: The Microsoft 365 Copilot Early Access Pass is a one-time invoice and purchase, and there are no additional usage fees associated with the program. You will have 21 days to complete the purchase. If you need to complete an internal PO or approval process, you can view the total price including any applicable taxes based on your billing account, and then come back and complete the purchase within the 21-day period. You will receive your invoice on the 5th day of the month following your purchase. The invoice can be viewed in the Microsoft 365 admin center and can be paid by wire transfer.
 
@@ -71,7 +71,7 @@ A: No, the Microsoft Customer Agreement doesn’t impact the terms of existing E
 
 ### Q: Where do I go to assign and manage licenses?
 
-A: There’s no difference between Microsoft 365 Copilot licenses and other Microsoft 365 product licenses. You can assign licenses to individual users in the Microsoft 365 admin center.
+A: There’s no difference between Microsoft 365 Copilot licenses and other Microsoft 365 product licenses. You can assign licenses to individual users in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage).
 
 ### Q: My organization has multiple tenants, can I assign licenses across tenants?
 
