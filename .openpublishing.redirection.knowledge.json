@@ -56,6 +56,11 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/knowledge/give-user-permissions-to-the-topic-center.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-user-permissions",
+      "redirect_document_id": true
+      },
+      {
          "source_path":"microsoft-365/knowledge/search.md",
          "redirect_url":"/viva/topics/search",
          "redirect_document_id":false
@@ -86,6 +91,11 @@
          "redirect_document_id":false
       },
       {
+      "source_path": "microsoft-365/knowledge/knowledge-management-overview.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-overview",
+      "redirect_document_id": true
+      },
+      {
          "source_path":"microsoft-365/knowledge/topic-experiences-discovery.md",
          "redirect_url":"/viva/topics/topic-experiences-discovery",
          "redirect_document_id":false
@@ -114,6 +124,21 @@
          "source_path":"microsoft-365/knowledge/topic-experiences-security-privacy.md",
          "redirect_url":"/viva/topics/topic-experiences-security-privacy",
          "redirect_document_id":false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/manage-knowledge-network.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-discovery",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
+      "redirect_url": "/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/work-with-topics.md",
+      "redirect_url": "/microsoft-365/knowledge/manage-topics",
+      "redirect_document_id": true
       },
       {
          "source_path":"microsoft-365/knowledge/topic-experiences-security-trimming.md",
