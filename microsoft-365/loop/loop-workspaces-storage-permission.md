@@ -62,13 +62,13 @@ Shared workspaces are backed by a roster and continue to exist even if someone l
 
 Personal workspaces are also backed by a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become "ownerless".
 
-### In Loop components created in M365 outside of the Loop app
+### In Loop components created in Microsoft 365 outside of the Loop app
 
 Loop components created outside of the Loop are stored in the OneDrive of the person who created the component. Therefore, if that user leaves the organization, the standard OneDrive IT policy is applied.
 
 ## Management of Loop app's storage
 
-Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex reposity storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
+Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex repository storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
 
 ## Pricing and licensing model for Loop app
 
