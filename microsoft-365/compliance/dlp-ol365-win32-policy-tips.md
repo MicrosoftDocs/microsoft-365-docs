@@ -19,7 +19,7 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "DLP policy tip reference for Outlook 2013 for Win32."
+description: "DLP policy tip reference for Outlook 365 for Win32."
 ---
 
 # Data loss prevention policy tip reference for Outlook 365 for Win32
@@ -34,7 +34,7 @@ description: "DLP policy tip reference for Outlook 2013 for Win32."
 
 Yes
 
-## DLP policy match email notification supported for Outlook 365 for Win 32
+## DLP policy match email notification support
 
 Yes
 
@@ -49,7 +49,7 @@ Yes
 |---------|---------|
 |-E3 users</br>-E5 users    |- Content contains sensitive information types </br>- Content is shared from Microsoft 365 |
 
-## Conditions that support policy tips for Microsoft 365 for Enterprise users
+## Conditions that support policy tips for Microsoft 365 for Enterprise Outlook users
 
 |For Microsoft 365 for Enterprise Outlook versions and users  |These conditions apply|
 |---------|---------|
@@ -84,7 +84,7 @@ All Exchange actions support policy tips
 
 ## Sensitive information types that support policy tips for Outlook perpetual users
 
-For Outlook perpetual version E3 and E5 users these sensitive information types support policy tips:
+**For Outlook perpetual version E3 and E5 users these sensitive information types support policy tips:**
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
@@ -188,7 +188,7 @@ For Outlook perpetual version E3 and E5 users these sensitive information types 
 
 ## Sensitive information types that support policy tips for Microsoft 365 for Enterprise Outlook users
 
-For these Outlook versions and users:
+**For these Outlook versions and users:**
 
 - All Microsoft 365 for Enterprise E3 users
 - All Microsoft 365 for Enterprise offline E5 users
@@ -196,7 +196,7 @@ For these Outlook versions and users:
 - All Microsoft 365 for Enterprise online E5 users with production version and build lower than 2303 &16.0.16216.10000
 - All Microsoft 365 for Enterprise online E5 users with semi-annual channel version and build lower than 2302 and 16.0.16130.20478
 
-These sensitive information types support policy tips:
+**These sensitive information types support policy tips:**
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
@@ -298,13 +298,12 @@ These sensitive information types support policy tips:
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)     
 
-
-For these Outlook versions and users:
+**For these Outlook versions and users:**
 
 - Online E5 users with connected experience enabled with Production version and build 2303 & 16.0.16216.10000 or higher.
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478.
 
-These sensitive information types support policy tips:
+**These sensitive information types support policy tips:**
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [All credentials](sit-defn-all-creds.md)
@@ -618,19 +617,19 @@ These sensitive information types support policy tips:
 - [User login credentials](sit-defn-user-login-credentials.md)
 - [X.509 certificate private key](sit-defn-x-509-certificate-private-key.md)
 
-#### Named entity sensitive information types that support policy tips for Outlook 365 for Win 32
+## Named entity sensitive information types that support policy tips for Outlook
 
 Yes.
 
 For more information on named entity SITs, see [Learn about named entities](named-entities-learn.md)
 
-#### Exact Data Match sensitive information types that support policy tips Outlook 365 for Win32
+## Exact Data Match sensitive information types that support policy tips Outlook
 
 Yes.
 
 For more information on exact data match based SITs, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
 
-#### Custom sensitive information types support for policy tips in Outlook 365 for Win32
+## Custom sensitive information types support for policy tips in Outlook
 
 Yes.
 
@@ -643,7 +642,7 @@ Policy tips are not supported.
 
 For more information on document fingerprint SITs, see [Document fingerprinting](document-fingerprinting.md)-->
 
-## Sensitivity label support
+## Sensitivity label support for Outlook
 
 Applies to:
 
@@ -655,9 +654,10 @@ Yes.
 
 For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
 
-## Trainable classifiers support
+## Trainable classifiers support for Outlook
 
 Applies to:
+
 - Outlook versions that are included in Microsoft 365 for Enterprise
 - E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
