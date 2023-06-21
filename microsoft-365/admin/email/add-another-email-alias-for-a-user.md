@@ -28,7 +28,7 @@ description: "Learn how you can have more than one email address, called an emai
   
 A primary email address in Microsoft 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Microsoft 365 for business account. These additional addresses are called aliases. You can create up to 400 aliases for a user. No additional fees or licenses are required.
 
-For example, Jenna at your organization has the email address jenna@contosoco.com, but she also wants to receive email at jen@contosoco.com because some people refer to her by that name. You can create aliases for her so that both email addresses go to Jenna's inbox.
+For example, Jenna at your organization has the email address jenna@contosoco.com, but she also wants to receive email at jen@contosoco.com because some people refer to her by that name. You can create aliases for her so that email sent to both email addresses go to Jenna's inbox.
   
 If you want multiple people to manage email sent to a single email address like info@contoso.com or sales@contoso.com, create a shared mailbox. Learn more at [Create a shared mailbox](create-a-shared-mailbox.md).
 
@@ -40,7 +40,7 @@ If you want multiple people to manage email sent to a single email address like 
 
 ## Before you begin
 
-You must have be a member of the Global admin role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+You must be a member of the Global admin role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 ## Add email aliases to a user
 
@@ -57,25 +57,25 @@ You must have be a member of the Global admin role to add email aliases to a use
 
 5. Wait 24 hours for the new aliases to update in Microsoft 365.
 
-6. The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@contoso.com, and her alias, Liz@contoso.com, will go to Eliza's Inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
-
-## Troubleshooting
-
-### Did you get "A parameter cannot be found that matches parameter name EmailAddresses"?
-
-If you get this error message it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
-
-### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory"?
-
-If you get this error message it means that you need to modify the attributes in your on-premises Active Directory.
-  
-### Did you purchase your subscription from GoDaddy or another Partner?
-
-If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you can't set the new alias in the Microsoft 365 admin center. You must go to the GoDaddy/partner management console.
+6. The user will now have a primary address and an alias. For example, all mail sent to jenna@contoso.com, and her alias, jen@contoso.com, will go to Jenna's inbox. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received. Outlook desktop will use her primary email alias.**
 
 ### Sending email from the proxy address easily
 
 Your users can now send from their aliases when using Outlook on the web. When the global admin has set the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the organization will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the **From** dropdown in the **Compose** form.
+
+## Troubleshooting
+
+### Did you get "A parameter cannot be found that matches parameter name EmailAddresses" message?
+
+If you get this error message it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
+
+### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory" message?
+
+If you get this error message it means that you need to add the alias in your on-premises Active Directory.
+
+### Did you purchase your subscription from GoDaddy or another Partner?
+
+If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you can't set the new alias in the Microsoft 365 admin center. You must go to the GoDaddy/partner management console.
   
 ## Related content
 
