@@ -181,7 +181,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |OneDrive |Yes| - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity) |data-at-rest </br> data-in-use|No|
 |Teams chat and channel messages|Yes     | - Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)|data-in-motion </br> data-in-use |  No       |
 |Microsoft Defender for Cloud Apps|No   | Cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Devices|Yes  |- Distribution groups </br> - Security groups </br> - Non-mail enabled security groups </br> - Microsoft 365 groups (Group members only, not the group as an entity)   | data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)|No    |Repository         | data-at-rest         | - [Learn about the data loss prevention on-premises repositories](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises repositories](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-repositories) |
 |Power BI |No| Workspaces | data-in-use | No|
 | Third-party apps | None | No | No | No |
@@ -456,6 +456,9 @@ The available context options change depending on which location you choose. If 
 - Message type is
 - Message importance is
 
+> [!TIP]
+> For more information on the conditions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
+
 ##### Conditions SharePoint supports
 
 - Content contains
@@ -613,6 +616,9 @@ The actions that are available in a rule depend on the locations that have been 
 - Add HTML Disclaimer
 - Modify Email Subject
 - Deliver the message to the hosted quarantine
+
+> [!TIP]
+> For more information on the actions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
 
 #### SharePoint sites location actions
 
