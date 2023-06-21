@@ -55,6 +55,11 @@
         "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-non-delivery-details-report",
         "redirect_document_id": false
       },
+     {
+      "source_path": "microsoft-365/security/office-365-security/controlling-outbound-spam-in-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
+      "redirect_document_id": false
+      },
       {
         "source_path": "microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow.md",
         "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports",
