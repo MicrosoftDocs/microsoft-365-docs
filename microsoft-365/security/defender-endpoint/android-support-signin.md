@@ -129,7 +129,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 
 ## Unable to use banking applications with MDE app
 
-**Applies to:** banking apps like iMobile (ICICI), PNB one.
+**Applies to:** banking apps like iMobile Pay (ICICI), PNB ONE.
 
 **Cause:** Android allows apps in personal profile to check if there is a VPN active on the device, even outside of personal profile. The banking app is checking that and blocking it in VPN work profiles only. The banking app does not work with any other VPN product.
 
