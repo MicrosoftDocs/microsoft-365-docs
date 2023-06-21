@@ -28,7 +28,7 @@ description: "Manage feedback your users can send to Microsoft about Microsoft p
 
 # Manage Microsoft feedback for your organization
 
-As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+As the admin of a Microsoft 365 organization, there are several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these policies, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product experiences for users, including by improving the quality of AI-generated responses and troubleshooting product issues. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 To learn more about the types of feedback and how Microsoft uses user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
@@ -51,7 +51,7 @@ The table below represents which apps and services are currently connected to th
 |**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
-|**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||Yes||
 |**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
@@ -61,14 +61,6 @@ The table below represents which apps and services are currently connected to th
 |**Yammer**|Yes|Yes|Yes|Yes|
 
 [See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
-
-**Metadata collection**
-
-:::image type="content" source="../../media/feedback-metadata2.png" alt-text="Screenshot: Feedback page showing metadata example":::
-
-**Customer engagement**
-
-:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::
 
 ## Before you begin
 
@@ -87,15 +79,18 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
-|Allow users to access feedback portal|On|Manage user access to the feedback portal|
-|Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications|
-|Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product|
-|Allow users to include screenshots and attachments when they submit feedback to Microsoft|Off|Determines what metadata the user can decide to submit with feedback/survey|
-|Allow Microsoft to follow up on feedback submitted by users|Off|Determines if user can share contact info with feedback/survey|
-|Allow users to include log files and content samples when feedback is submitted to Microsoft|Off|Determines metadata the user can decide to submit with feedback/survey|
+|Allow users to access feedback portal|On|Manage user access to the feedback portal where users can follow-up on their feedback and participate in community feedback.|
+|Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications.|
+|Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product.|
+|Allow users to include screenshots and attachments when they submit feedback to Microsoft|Off|Allows users to choose relevant files, screen recordings and screenshots to help Microsoft better understand and troubleshoot their feedback.|
+|Allow Microsoft to follow up on feedback submitted by users|Off|Determines if user can share contact info with feedback/survey for followup by Microsoft. Also allows users to get notified of feedback status changes. Users can manage communications settings in the feedback portal.|
+|Allow users to include log files and content samples when feedback is submitted to Microsoft|Off|Allows users to include Microsoft generated files such as additional log files and content samples when relevant to feedback they are submitting. Examples may include [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) prompt and response interactions.|
 
 > [!NOTE]
-> The **Allow users to access the feedback portal** policy is a cloud policy. This policy is not defined in ADMX and does not have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
+> The **Allow users to access the feedback portal** policy is a cloud policy. This policy isn't defined in ADMX and doesn't have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
+
+> [!NOTE]
+> The default state for **Allow users to include screenshots and attachments when they submit feedback to Microsoft**, allows Microsoft to follow up on feedback submitted by users, and allows users to include log files and relevant content samples when feedback is submitted to Microsoft. The default setting will be changing from **Off** to **On** starting <insert date here once we know when we will actually do the message center post>. Your users can decide to opt-out.
 
 ## Configure policies
 
@@ -107,3 +102,9 @@ You can find these policy settings under User Configuration\Policies\Administrat
 
 > [!NOTE]
 > It takes a few hours for the client applications to update.
+
+### User experience examples
+
+:::image type="content" source="../../media/manage-feedback-1.png" alt-text="Screenshot: Feedback page showing metadata example":::
+
+:::image type="content" source="../../media/manage-feedback-2.png" alt-text="Screenshot: In-product customer research question example":::
