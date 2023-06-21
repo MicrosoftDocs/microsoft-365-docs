@@ -219,8 +219,8 @@ There are additional components on the device that the Microsoft Defender for En
 ### Ensure the diagnostic data service is enabled
 
    > [!NOTE]
-   > Starting from Windows 10 build 1809 and later Defender for Endpoint EDR service no longer has direct dependency on the DiagTrack service.
-   > EDR cyber evidence can still be uploaded if this service is not running. 
+   > In Windows 10 build 1809 and later, the Defender for Endpoint EDR service no longer has a direct dependency on the DiagTrack service.
+   > The EDR cyber evidence can still be uploaded if this service is not running. 
 
 If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
