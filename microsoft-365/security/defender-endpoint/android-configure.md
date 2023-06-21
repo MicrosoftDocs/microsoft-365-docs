@@ -103,7 +103,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     |Enable Network Protection Privacy|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable privacy in network protection.|
     |Enable Users to Trust Networks and Certificates|1 - Enable, 0 - Disable (default); Security admins manage this setting to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
     |Automatic Remediation of Network Protection Alerts|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access point or deleting suspicious certificates detected by Defender|
-    |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable; Security admins manage this setting to enable, audit or disable open network detection. In audit mode, alerts are send only to the ATP portal with no user side experience. For user experience, set the config in enabled mode.|  
+    |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable; Security admins manage this setting to disable, audit or enable open network detection respectively. In 'Audit' mode, alerts are send only to the ATP portal with no end user experience. For user experience, set the config in 'Enable' mode.|  
     |Manage Network protection Detection for Certificates|0 - Disable, 1 - Audit mode (default), 2 - Enable; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications are displayed to the user when Defender detects a bad certificate. Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value, when the feature is enabled with value as 2, end user notifications are sent to the user when Defender detects a bad certificate and alerts are also sent to the SOC Admin|
 
 6. Add the required groups on which the policy will have to be applied. Review and create the policy.
@@ -136,7 +136,7 @@ Following privacy controls are available for configuring the data that is sent b
 
 ### Configure privacy alert report
 
-Admins can now enable privacy control for the phish report, malware report and network report sent by Microsoft Defender for Endpoint on android. This configuration ensures that the domain name, app details and network details respectively aren't sent as part of the alert whenever a corresponding threat is detected.
+Admins can now enable privacy control for the phish report, malware report and network report sent by Microsoft Defender for Endpoint on Android. This configuration ensures that the domain name, app details and network details respectively aren't sent as part of the alert whenever a corresponding threat is detected.
 
 Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
@@ -146,7 +146,7 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 3. Select **Microsoft Defender for Endpoint** as the target app.
 
-4. In Settings page, select **Use configuration designer** and add select on **Add**.
+4. In Settings page, select **Use configuration designer** and add select **Add**.
 
 5. Select the required privacy setting -
     - Hide URLs in report
