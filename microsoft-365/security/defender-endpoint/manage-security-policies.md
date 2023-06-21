@@ -32,7 +32,7 @@ ms.date: 06/19/2023
 
 
 >[!NOTE]
->The following capability is only available to customers who turn on preview features. For more informtion, see [Turn on preview features](preview.md#turn-on-preview-features). 
+>The following capability is only available to customers who turn on preview features. For more information, see [Turn on preview features](preview.md#turn-on-preview-features). 
 
 
 Use security policies to manage security settings on devices. As a security administrator, you can configure security policy settings in Microsoft 365 Defender. 
