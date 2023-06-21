@@ -1,7 +1,7 @@
 ---
 title: Manage endpoint security policies in Microsoft Defender for Endpoint
-description: 
-keywords: 
+description: Learn how to set windows, mac, and linux endpoint security policies such as antivirus, firewall, endpoint detection and response in Microsoft Defender for Endpoint.
+keywords: policies, security policy, configure policies, 
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
