@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/15/2021
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -23,61 +23,11 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy tips reference
 
-## DLP policy tips in Outlook Web Access
-
-Policy tips in Outlook Web Access (OWA) are supported for these conditions and actions:
-
-### Conditions that support policy tips in Outlook Web Access
-
-- Content contains (SIT)
-- Content is shared from M365
-- Sender is a member of
-- Recipient Domain Is 
-- Recipient is
-- Subject Contains Words or phrases
-- Sender is
-- Sender domain is
-- File extension is
-- Subject matches patterns
-- Subject or Body contains words or phrases
-- Doc or Attachment is password protected
-- Document name contains words or phrases
-- Sender address contains words
-- Document size equals or is greater than
-- Subject or Body matches patterns
-- Recipient address contains words
-- Sender address matches patterns
-- Document name matches patterns
-- Recipient address matches patterns
-- Message importance is
-- Any email attachment's content could not be scanned (DocIsUnsupported)
-- Document property is
-
-### Actions that support policty tips in Outlook Web Access
-
-- Restrict access or encrypt the content in Microsoft 365 locations
-- Set headers
-- Remove header
-- Redirect the message to specific users
-- Forward the message for approval to sender's manager
-- Forward the message for approval to specific approvers
-- Add recipient to the To box
-- Add recipient to the Cc box
-- Add recipient to the Bcc box
-- Add the sender's manager as recipient
-- Removed O365 Message Encryption and rights protection
-- Prepend Email Subject
-- Add HTML Disclaimer
-- Modify Email Subject
-- Deliver the message to the hosted quarantine
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-<!--### Sensitive information types that support policy tips in Outlook Web Access-->
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions
 
-Currently, Outlook 2013 and later supports showing policy tips for policies that contain these conditions:
+Currently, Outlook 2013 and later support showing policy tips for policies that contain these conditions:
 
 For E3 licensed users
 - Content contains Sensitive information types (preconfigured SITs and custom SITs)
@@ -95,13 +45,13 @@ For E5 licensed users (preview)
 - Recipient domain is
 - Subject contains words
 
-All the conditions work for emails authored in Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
+All the conditions work for emails authored in the Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
 
 ## Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types
 
 For E3 licensed users, DLP policy tips are shown in Outlook 2013 and later for pre-configured SITs and custom SITs.
 
-For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later, for policies that use: (preview)
+For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later for policies that use:
 
 - [Preconfigured sensitive information types](sensitive-information-type-entity-definitions.md) (SITs)
 - Custom SITs
@@ -321,13 +271,13 @@ The list of out-of-the-box sensitive information types that will be detected in 
 - Ukraine Passport Number (Domestic) 
 - Ukraine Passport Number (International) 
  
-Custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
+Custom sensitive information types (SITs) will also be detected in addition to the above out-of-the-box sensitive information types
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
-|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
+|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Conditions and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Exact Data match SITs|subset||
+|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset, see [Sensitive information types that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#sensitive-information-types-that-support-policy-tips-in-outlook-on-the-web) |Subset, see [Conditions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#conditions-that-support-policy-tips-in-outlook-on-the-web) and [Actions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#actions-that-support-policy-tips-in-outlook-on-the-web)|For full details, see [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)|
 |**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all SITS are supported for E5 users; pre-configured SITs and customer SITs are supported for E3 users|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported on Outlook mobile|
 |**Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook for Mac|

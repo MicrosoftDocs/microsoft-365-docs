@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/16/2023
+ms.date: 6/20/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -18,15 +18,14 @@ ms.custom:
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # User tags in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _User tags_ are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
@@ -42,23 +41,7 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 >
 > Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
 
-After you apply system tags or custom tags to users, you can use those tags as filters in alerts, incidents, reports, and investigations:
-
-- [Alerts](alerts.md)
-- [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
-- [Threat Explorer and real-time detections](threat-explorer-about.md)
-- [Compromised user report](reports-email-security.md#compromised-users-report)
-- [Email entity page](mdo-email-entity-page.md)
-- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
-- [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
-- [Attack simulation](attack-simulation-training-simulations.md#target-users)
-- [Campaign Views](campaigns.md)
-- [Admin submissions and user reported messages](submissions-admin.md)
-- [Quarantine](quarantine-about.md)
-- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
-
-This article explains how to configure user tags in the Microsoft 365 Defender portal. You can also apply or remove the Priority Account tag using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). No PowerShell cmdlets are available to manage custom user tags.
+This article explains how to configure user tags in the Microsoft 365 Defender portal. You can also apply or remove the Priority account tag using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). No PowerShell cmdlets are available to manage custom user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](priority-accounts-security-recommendations.md).
 
@@ -67,16 +50,16 @@ To see how user tags are part of the strategy to help protect high-impact user a
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/system (manage)** or **configuration/system (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
-    - _Add and remove members from the Priority Account tag_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
-    - _Add and remove members from existing custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
+    - _Apply and remove existing custom user tags from users_: Membership in the **Organization Management** or **Security Administrator** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
   > [!NOTE]
   > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
-- You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+- You can also manage and monitor the Priority account tag in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
 - For information about securing _privileged accounts_ (admin accounts), see [this article](/security/compass/critical-impact-accounts).
 
@@ -141,7 +124,7 @@ Select a user tag by clicking anywhere in the row other than the check box next 
 
 The details flyout of the user tag contains the following information, based on the type of tag:
 
-- **System tags**: The details flyout for the Priority Account tag contains the following information:
+- **System tags**: The details flyout for the Priority account tag contains the following information:
   - **Last updated**
   - **Description**
   - A link to <https://security.microsoft.com/securitysettings/priorityAccountProtection> to turn on or turn off [priority account protection](priority-accounts-turn-on-priority-account-protection.md)
@@ -169,12 +152,12 @@ After you select the user tag, use either of the following methods to modify it:
 
 The same wizard and most of the same settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article, with the following exceptions:
 
-- You can't rename or change the description of the Priority Account tag, so the **Define tag** page isn't available for the Priority Account tag.
+- You can't rename or change the description of the Priority account tag, so the **Define tag** page isn't available for the Priority account tag.
 - The **Define tag** page is available for custom tags, but you can't rename the tag; you can only change the description.
 
 ## Use the Microsoft 365 Defender portal to remove user tags
 
-You can't remove the built-in Priority Account tag.
+You can't remove the built-in Priority account tag.
 
 After you select the custom tag, use either of the following methods to remove it:
 
@@ -185,6 +168,34 @@ Read the warning in the confirmation dialog that opens, and then select **Yes, r
 
 Back on the **User tags** page, the custom tag is no longer listed.
 
+## User tags in reports and features
+
+After you apply system tags or custom tags to users, you can use those tags as filters in the following features:
+
+- [Alerts](../defender/investigate-alerts.md)
+- [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
+- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
+- [Threat Explorer](threat-explorer-about.md)
+- [Campaign Views](campaigns.md)
+- [Email entity page](mdo-email-entity-page.md)
+- [Email security reports](reports-email-security.md)
+  - [Compromised user report](reports-email-security.md#compromised-users-report)
+  - [Submissions report](reports-email-security.md#submissions-report)
+  - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+  - [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
+- [Attack simulation training](attack-simulation-training-get-started.md)
+  - [Simulations](attack-simulation-training-simulations.md)
+  - [Simulation automations](attack-simulation-training-simulation-automations.md)
+  - [Payloads](attack-simulation-training-payloads.md)
+  - [Training campaigns](attack-simulation-training-training-campaigns.md)
+  - [Training modules](attack-simulation-training-training-modules.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md)
+- [Admin submissions and user reported messages](submissions-admin.md)
+- In organizations above a certain size, the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) is available in the Exchange admin center (EAC).
+
+For information about where the effects of priority account protection are visible, see [Review differentiated protection from priority account protection](priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection). 
+
 ## More information
 
-[Configure and review priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md)
+- [Configure and review priority account protection](priority-accounts-turn-on-priority-account-protection.md)
+- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)

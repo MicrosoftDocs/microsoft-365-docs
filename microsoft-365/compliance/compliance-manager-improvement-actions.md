@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/19/2023
+ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,9 +47,9 @@ Compliance Manager detects signals from complementary improvement actions that a
 
 Integration with Defender for Cloud allows Compliance Manager to facilitate improvement actions and provide continuous monitoring across multiple Microsoft and non-Microsoft cloud services, such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The cloud infrastructure of this monitoring means that action status can be evaluated and graded at the subscription level of the intended service. You can see specific implementation and testing results for each improvement action within each subscription of your service. The overall score you receive for the improvement action is an aggregate of the individual scores of each subscription within that service. Learn more about [multicloud support](compliance-manager-multicloud.md) and [scoring](compliance-score-calculation.md).
 
-#### Data connectors (coming soon)
+#### Connectors
 
-A selection of data connectors built specifically for Compliance Manager to support other non-Microsoft services such as Salesforce and Zoom are rolling out in the near future. Check back with this page for updates.
+We're rolling out a selection of connectors built specifically for Compliance Manager to support other non-Microsoft services. Connectors for Salesforce and Zoom are available now, with more connectors releasing soon. Learn more at [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## Improvement actions details page
 
@@ -125,7 +125,7 @@ To begin implementation, first locate the action’s **Testing source** to deter
 - Inspect the status of each resource to determine which require ones require remediation.
 - For the resources needing remediation, review the **How to implement guidance** on the action’s **Implementation** tab. Then select the Defender for Cloud link to make the necessary changes in Defender for Cloud.
 
-Updates to the improvement action’s status will show within 24 hours.
+Updates to the improvement action’s status shows within 24 hours.
 
 ##### Actions not implemented through Defender for Cloud
 
@@ -170,6 +170,8 @@ Automatically tested actions may also show one of the following states in the **
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: action has been partially tested;  neither passes nor fails
 
+Some actions may show a status of **Out of scope** when automatic monitoring through Defender for Cloud is first set up. This is because it can take up to 24 hours to process the signals from Defender for Cloud. Improvement action statuses refresh every 24 hours.
+
 > [!NOTE]
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
@@ -211,7 +213,7 @@ To set up a parent testing source, follow the steps below:
 - Select **Assign parent**.
 - On the **Assign parent improvement action** flyout pane, find the improvement action you want to assign as the parent from the list, or enter the action's name in the search bar near the top. When you identify your intended action, select the checkbox that appears to the left of the action name when you hover over it, then select **Save**.
 
-You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
+You come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
 ## Storing evidence
 
@@ -241,7 +243,7 @@ After you complete the work, conduct testing, and upload evidence, the next step
 
 - **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for more work.
 
-Users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
+Users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based access to assessments and regulations](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations).
 
 ## Accepting updates to improvement actions
 
@@ -251,9 +253,9 @@ When an update is available for an improvement action, you see a notification ne
 
 An update occurs when there are changes related to scoring, automation, or scope. Changes may involve new guidance for improvement actions based on regulatory changes, or could be because of product changes. Only the improvement actions managed by your organizations receive update notifications.
 
-##### Where you’ll see assessment update notifications
+##### Where you see assessment update notifications
 
-When an improvement action is updated, you’ll see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
+When an improvement action is updated, you see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
 
 Go to the improvement action’s details page, and select the **Review update** button in the top banner to review details about the changes and accept or defer the update.
 

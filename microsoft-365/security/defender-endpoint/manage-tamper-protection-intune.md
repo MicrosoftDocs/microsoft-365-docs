@@ -6,7 +6,7 @@ description: Turn tamper protection on or off for your organization in Microsoft
 keywords: malware, defender, antivirus, tamper protection, Microsoft Intune
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 05/04/2023
+ms.date: 05/24/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -44,7 +44,10 @@ Using Intune, you can:
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, make sure to set [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
 >
-> When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) cannot be changed. To avoid breaking management experiences, including Intune and Configuration Manager, keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. You can use Intune and [Configuration Manager](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. And, if you're managing tamper protection through Intune, you can change [tamper-protected antivirus exclusions](#tamper-protection-for-antivirus-exclusions).
+> When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) cannot be changed. To avoid breaking management experiences, including Intune (and [Configuration Manager](manage-tamper-protection-configuration-manager.md)), keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. Depending on your particular scenario, you have several options available: 
+> - If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+> - You can use Intune or [Configuration Manager](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. 
+> - If you're managing tamper protection through Intune, you can change [tamper-protected antivirus exclusions](#tamper-protection-for-antivirus-exclusions).
 
 ## Requirements for managing tamper protection in Intune
 
@@ -63,7 +66,7 @@ Using Intune, you can:
 - Your devices must be onboarded to Defender for Endpoint.
 
 > [!NOTE]
-> If devices are not enrolled in Microsoft Defender for Endpoint, tamper protection will show as **Not Applicable** until the onboarding process completes.
+> If devices are not enrolled in Microsoft Defender for Endpoint, tamper protection shows up as **Not Applicable** until the onboarding process completes.
 > Tamper protection can prevent changes to security settings from occurring. If you see an error code with Event ID 5013, see [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).
 
 ## Turn tamper protection on (or off) in Microsoft Intune
@@ -117,10 +120,11 @@ You can use a registry key to determine whether the functionality to protect Mic
    - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
 
 > [!CAUTION]
-> **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys will have no effect on whether tamper protection applies to exclusions.
+> **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys has no effect on whether tamper protection applies to exclusions.
 
 ## See also
 
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
+- [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
