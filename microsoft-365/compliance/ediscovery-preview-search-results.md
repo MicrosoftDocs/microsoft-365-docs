@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/22/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,6 +26,9 @@ ms.custom:
 # Preview eDiscovery search results
 
 After you run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
+
+> [!NOTE]
+> There may be scenarios when the preview sample doesn't contain all available results of searches. For the most accurate and complete search results, you need to [export](/microsoft-365/compliance/ediscovery-export-search-results) the search results.
 
 To preview a sample of results returned by a search:
 
