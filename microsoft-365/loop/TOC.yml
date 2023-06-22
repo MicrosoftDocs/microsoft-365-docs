@@ -1,0 +1,8 @@
+- name: Microsoft Loop
+  items:
+    - name: Loop components in Microsoft 365
+      href: loop-components-teams.md
+    - name: Loop components in SharePoint
+      href: loop-components-sharepoint.md
+    - name: Loop workspaces storage and permissions
+      href: loop-workspaces-storage-permission.md

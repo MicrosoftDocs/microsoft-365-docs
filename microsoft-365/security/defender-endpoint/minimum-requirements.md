@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 05/11/2023
+ms.date: 06/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -109,7 +109,7 @@ For more information on supported versions of Windows 10, see [Windows 10 releas
 >
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 >
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need either Defender for Endpoint for Servers, or Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support follows the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic continues to be provided until at least:
 
