@@ -52,7 +52,7 @@ You can only create a freeform document processing model in SharePoint document 
 
 If you need it enabled on your document library, contact your Microsoft 365 admin.
 
-## Requirements
+## Requirements and limitations
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#freeform-document-processing). 
 

@@ -43,7 +43,7 @@ Currently, there are three prebuilt models available: [contracts](prebuilt-model
  
 Additional prebuilt models will be available in future releases.
 
-## Requirements
+## Requirements and limitations
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md). 
 
