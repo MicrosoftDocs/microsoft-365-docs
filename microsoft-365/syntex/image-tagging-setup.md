@@ -8,6 +8,7 @@ ms.reviewer: shrganguly
 ms.date: 07/01/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.custom: admindeeplinkMAC
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -24,13 +25,13 @@ Before you can use image tagging in Microsoft Syntex, it must be configured in t
 
 ### Licensing
 
-Before you can use content assembly in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Content assembly in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use image tagging in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up image tagging in Syntex.  
 
-## Set up content assembly
+## Set up image tagging
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
