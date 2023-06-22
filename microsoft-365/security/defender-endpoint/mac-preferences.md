@@ -3,9 +3,6 @@ title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos,  big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -17,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 06/22/2023
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on macOS
@@ -912,7 +909,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
                 <key>tamperProtection</key>
                 <dict>
                     <key>enforcementLevel</key>
-                    <string>block</key>
+                    <string>block</string>
                 </dict>
             </dict>
         </array>
