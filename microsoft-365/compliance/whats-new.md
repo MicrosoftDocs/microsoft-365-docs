@@ -52,13 +52,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: Now rolling out in preview, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
 - **In preview**: Now rolling out in preview, [limited support for labels configured for user-defined permissions](sensitivity-labels-sharepoint-onedrive-files.md#support-for-labels-configured-for-user-defined-permissions) for Office on the web, SharePoint and OneDrive.
 - **In preview**: The following new conditions are rolling out in preview for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Just the final new condition listed requires an advanced rule, and is applicable to OneDrive and SharePoint only. All the other new conditions are available in common rules:
-    - File extension is
-    - Document name contains words or phrases
-    - Document property is
-    - Document size equals or is greater than
-    - Attachment name contains words or phrases
-    - Attachment property is
-    - Attachment size equals or is greater than
+    - Attachment or file extension is
+    - Attachment or document name contains words or phrases
+    - Attachment or document property is
+    - Attachment or document size equals or is greater than
     - Document created by
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
