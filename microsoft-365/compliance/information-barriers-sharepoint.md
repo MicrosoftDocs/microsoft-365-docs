@@ -92,13 +92,13 @@ When a site is associated with segment(s) and site's information barriers mode i
 
 ## Access control for IB modes
 
-Access to sites by users is based on the IB mode of the site.
+IB policy is enforced when opening the SharePoint site or content in the SharePoint site. This is based on the IB mode of the site.
 
 ### Open mode
 
 For a user to access a SharePoint site that has no segment and site's information barriers  mode is set to *Open*:
 
-- The user has site access permissions..
+- The user has site access permissions.
 
 ### Owner Moderated mode
 
@@ -169,9 +169,6 @@ To enable Microsoft 365 group-membership based access and sharing control for al
 ```powershell
 Set-SPOTenant -IBImplicitGroupBased $true
 ```
-
->[!NOTE]
->If you have Microsoft 365 Multi-Geo, you must run this command for each of your geo-locations.
 
 If you installed a previous version of the SharePoint Online Management Shell, complete the following steps:
 
@@ -391,8 +388,8 @@ Learn more about managing [Microsoft Teams connected teams sites](/sharepoint/te
 
 Users will see search results from:
 
-- Sites that have an associated segment that matches the user's segment and the user has access permission to the site.
-- Sites that don't have associated segments if they have access to the site.
+- **Segment associated sites**: When the site's segment matches the user's segment and the user has site access permission. For example, a site with *Explicit* mode.
+- **Non-segmented sites**: When the user has existing access to the content or site. For example, sites with *Open*, *Owner Moderated* or *Implicit* mode. When the user selects the search result to open the content in the site, the user is denied access if they don't match the site's IB policy.
 
 ## Effects of changes to user segments
 

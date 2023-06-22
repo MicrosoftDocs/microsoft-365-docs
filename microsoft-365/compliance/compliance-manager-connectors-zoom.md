@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 05/24/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,9 +25,9 @@ description: "Configure settings in your Zoom accounts in order to activate conn
 
 Follow the instructions on this page to enable the connection between your Zoom account and the Compliance Manager connector for Zoom.
 
-## Overview
-
 Zoom must authenticate each HTTP request made to the Zoom API. Zoom supports different authentication methods. Compliance Manager connectors use the **Server-to-Server OAuth app**, which enables you to securely integrate with Zoom APIs and get your account owner access token without user interaction. This is different from the OAuth app type, which requires user authentication. This app type is added and managed across an account by account admins. This app type also enables you to utilize event subscriptions using Webhooks.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Setup steps
 

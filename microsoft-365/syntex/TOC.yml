@@ -34,8 +34,6 @@
               items:
                 - name: Apply a model
                   href: apply-a-model.md
-                - name: Choose a library view 
-                  href: choose-library-view.md
                 - name: Share an enterprise model 
                   href: model-discovery.md
                 - name: Discover other trained models 
@@ -48,6 +46,10 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
                 - name: Manage models with PowerShell
@@ -125,6 +127,8 @@
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
           href: content-assembly-map-fields.md
+        - name: Create conditional sections in templates
+          href: content-assembly-conditional-sections.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
         - name: Create a document from a modern template 
@@ -141,9 +145,12 @@
 
     - name: Content query
       href: metadata-search.md
-     
+
     - name: Annotations
       href: annotations.md
+
+    - name: Optical character recognition 
+      href: ocr.md
 
     - name: Taxonomy
       items:
@@ -205,6 +212,9 @@
       items: 
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+
+    - name: Syntex-SharePoint Advanced Management
+      href: /sharepoint/advanced-management
 
 
 
