@@ -1,16 +1,13 @@
 ---
 title: Create indicators
-ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: thdoucet
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/31/2023
 ---
 
 # Create indicators
@@ -47,6 +44,10 @@ To halt additional compromise or prevent breaches of known IoCs, successful IoC 
 IoC matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
 
 Organizations can create indicators that define the detection, prevention, and exclusion of IoC entities. You can define the action to be taken as well as the duration for when to apply the action, and the scope of the device group to apply it to.
+
+This video shows a walkthrough of creating and adding indicators:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
 ### About Microsoft indicators
 
@@ -142,9 +143,22 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 >
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
+## Known issues and limitations
+
+Customers may experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts may not be created or may be created with inaccurate information. Each of these issues are being investigated by our engineering team and will be resolved in an upcoming update.
+
+- **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (i.e. custom title and severity) will not be fired in these cases.
+- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers may see a generic alert, whereas a custom alert may show in other cases.
+- **Allow** – No alerts are generated (by design).
+- **Audit** - Alerts will be generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections may take precedence over those stemming from AV blocks, in which case an information alert will be generated.
+
 ## Related articles
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
+
+
+

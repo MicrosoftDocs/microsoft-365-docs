@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
-author: dansimp
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

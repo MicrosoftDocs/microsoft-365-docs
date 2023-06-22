@@ -3,7 +3,7 @@ title: "Step 4 - Forward a former employee's email to another employee or conver
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/17/2021
 audience: Admin

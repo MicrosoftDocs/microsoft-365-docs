@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 04/03/2023
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,6 +28,36 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## May 2023
+
+### GDAP Setup now checks for required roles
+
+We've updated GDAP Setup in Microsoft 365 Lighthouse to check whether you have the required roles before getting started. If you don't have the required roles, a message will alert you.  
+
+To access GDAP Setup in Lighthouse, go to the **GDAP Setup** card on the **Home** page, and then select **Set up GDAP**.
+
+To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
+
+## April 2023
+
+### Configuration drift reporting
+
+Microsoft 365 Lighthouse now has the capability to identify deployment tasks that have regressed&mdash;or drifted&mdash;from a *Compliant* or *Dismissed* state to a state of *Not compliant* or *Not licensed*. 
+
+Deployment tasks can drift from a preferred state for any number of reasons that can be difficult to detect, and understanding how a customer tenant's configuration has drifted from the preferred state can be a complex and labor-intensive process.  
+
+Microsoft 365 Lighthouse not only lets you know which deployment tasks have drifted from which tenants' deployment plans, but it also lets you see which settings, within which configurations, for which users, have drifted from the preferred state so that you can efficiently and effectively restore the tenant to a healthy, productive, and secure state.
+
+### Addition of OneDrive sync configuration to deployment plans
+
+You can now deploy OneDrive policies by using a deployment task within the default baseline. The addition of this configuration helps protect your customer tenants' data by restricting syncing in OneDrive to properly authenticated users.
+
+### New GDAP management capabilities
+
+Managed Service Provider (MSP) technicians responsible for managing granular delegated admin privileges (GDAP) can now get at-a-glance details of all their customers' delegated relationships in Microsoft 365 Lighthouse. This new capability helps ensure GDAP is set up correctly for all of your customers. 
+
+To view the status of your customers' delegated relationships, including delegated access type, whether a GDAP template has been assigned, number of active and pending relationships, nearest expiration date, and security groups with access to manage the customer tenant, go to **Permissions** > **Delegated access**.
 
 ## March 2023
 

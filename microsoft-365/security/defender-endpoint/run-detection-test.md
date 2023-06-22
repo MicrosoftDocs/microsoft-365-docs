@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2022
+ms.date: 04/24/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,6 +32,7 @@ ms.subservice: mde
 - Windows Server, version 1803
 - Windows Server 2019
 - Windows Server 2022
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,6 +61,9 @@ Run the following PowerShell script on a newly onboarded device to verify that i
    ```
 
 The Command Prompt window closes automatically. If successful, a new alert appears in the portal for the onboarded device in about 10 minutes.
+
+> [!NOTE]
+> You can also use the EICAR test string to perform this test. Create a text file, paste the EICAR line, and save the file as an executable file to your endpoint's local drive. You will receive a test endpoint notification and an alert in the Microsoft 365 Defender portal.
 
 ## Related topics
 

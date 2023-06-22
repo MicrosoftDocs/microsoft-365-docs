@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 10/11/2019
+ms.date: 06/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -59,7 +59,9 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
-After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint or Teams.
+After a sensitivity label has been applied to a site, you must have the following role to change that label in SharePoint or Teams:
+- For a group-connect site: Microsoft 365 group [Owners](/microsoft-365/admin/create-groups/office-365-groups)
+- For a site that isn't group-connected: SharePoint [site admin](/sharepoint/site-permissions#site-admins)
 
 > [!NOTE]
 > Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
@@ -171,7 +173,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
 - OneDrive sync app, minimum versions:
     - Windows: 21.002
     - macOS: 21.002
-    - iOS: Rolling out in 12.30
+    - iOS: 12.30
     - Android: Not yet supported
 
 Known limitations:

@@ -3,7 +3,7 @@ title: "Sign up for a Microsoft Teams business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 11/17/2021
 audience: Admin

@@ -46,6 +46,7 @@ The insider risk management **Cases dashboard** allows you to view and act on ca
 
 The case queue lists all active and closed cases for your organization, in addition to the current status of the following case attributes:
 
+- **Case ID**: The ID of the case. 
 - **Case name**: The name of the case, defined when an alert is confirmed and the case is created.  
 - **Status**: The status of the case, either *Active* or *Closed*.
 - **User**: The user for the case. If anonymization for usernames is enabled, anonymized information is displayed.
@@ -56,7 +57,7 @@ The case queue lists all active and closed cases for your organization, in addit
 
 ![Insider risk management Cases dashboard.](../media/insider-risk-cases-dashboard.png)
 
-Use the **Search** control to search case names for specific text and use the case filter to sort cases by the following attributes:
+Use the **Search** control to search for a Case ID or to search for specific text in case names. Use the case filter to sort cases by the following attributes:
 
 - Status
 - Time case opened, start date, and end date
@@ -80,6 +81,7 @@ Selecting a case opens the case management tools and allows analysts and investi
 
 The **Case overview** tab summarizes the case details for risk analysts and investigators. It includes the following information in the **About this case** area
 
+- **Case ID**: The ID of the case. 
 - **Status**: The current status of the case, either Active or Closed.
 - **Case created on**: The date and time the case was created.
 - **User's risk score**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses alert risk scores from all active alerts associated to the user. When *User is detected as a potential high impact user* or *User is a member of a priority user group* risk booster is enabled as **Risk score boosters** in the **Policy indicators** section of the **Insider risk management settings** page, the **User details** page includes detailed information about the user's calculated risk level. 
@@ -101,13 +103,15 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed in the queue:
 
+- Alert
+- Alert ID
 - Status
 - Severity
 - Time detected
 
 Select an alert from the queue to display the **Alert detail** page.
 
-Use the search control to search alert names for specific text and use the alert filter to sort cases by the following attributes:
+Use the search control to search for an Alert ID or to search for specific text in alert names. Use the alert filter to sort cases by the following attributes:
 
 - Status
 - Severity
@@ -223,7 +227,7 @@ To run, manage, or create Power Automate flows for an insider risk management ca
 2. Choose the Power Automate flow to run, then select **Run flow**.
 3. After the flow has completed, select **Done**.
 
-To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md).
 
  ### View or create a Microsoft Teams team for the case
 
@@ -233,7 +237,7 @@ For cases opened before enabling Microsoft Team integration, risk investigators 
 
 When a case is resolved, the associated Microsoft Team will be automatically archive (hidden and turned to read-only).
 
-To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
+To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings-teams.md).
 
 ### Resolve the case
 

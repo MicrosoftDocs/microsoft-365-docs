@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard
 ms.author: alexfaulkner
-author: alexfaulkner
+author: alexsfaulkner
 manager: alexfaulkner
 ms.reviewer: 
 ms.date: 03/08/2023
@@ -105,3 +105,4 @@ Once the .whiteboard file appears in the OneDrive for Business of the new owner,
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
+

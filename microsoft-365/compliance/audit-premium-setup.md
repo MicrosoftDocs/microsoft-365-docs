@@ -46,7 +46,7 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
 5. If the checkbox isn't selected, select it, and then select **Save changes.**
 
-   The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 3 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
+   The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 2 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
 
 Also, if you've customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Audit (Premium) events released by Microsoft won't be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](audit-mailboxes.md#change-or-restore-mailbox-actions-logged-by-default).
 

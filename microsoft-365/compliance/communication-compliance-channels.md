@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -33,7 +33,12 @@ With communication compliance policies, you can choose to analyze messages in on
 
 ## Microsoft Teams
 
-You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for are automatically detected across all Microsoft Teams where users are a member. 
+You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications are automatically detected across all Microsoft Teams where users are a member. 
+
+Watch the video below to learn how to detect communication risks in Microsoft Teams with communication compliance:
+   <br>
+   <br>
+   >[!VIDEO https://www.microsoft.com/videoplayer/embed/RW11p2Z]
 
 Microsoft Purview Communication Compliance automatically includes Microsoft Teams coverage for pre-defined policy templates and is selected as the default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 
@@ -79,9 +84,9 @@ Yammer must be configured in [Native Mode](/yammer/configure-your-yammer-network
 
 ## Third-party sources
 
-You can analyze communications for data imported into all mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS, and many others. For a full list of connectors supported in communication compliance, see [Learn about connectors for third-party data](/microsoft-365/compliance/archiving-third-party-data).
+You can analyze communications for data imported into all mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS, and many others. For a full list of connectors supported in communication compliance, see [Learn about connectors for third-party data](/microsoft-365/compliance/archive-third-party-data).
 
-You must configure a [third-party connector](/microsoft-365/compliance/archiving-third-party-data) for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
+You must configure a [third-party connector](/microsoft-365/compliance/archive-third-party-data) for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
 ## Channel limits
 

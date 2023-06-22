@@ -32,9 +32,6 @@ description: "Let Microsoft send notification messages from an email address wit
 
 # Select the domain to use for email from Microsoft 365 products
 
-> [!NOTE]
-> The following feature will be rolling out to public preview shortly, and may currently not be available to you.
-
 <b>In this article</b>:
 - [Configure the "Send email notifications from your domain" setting](#configure-the-send-email-notifications-from-your-domain-setting)
 - [Supported Products](#supported-products)
@@ -51,7 +48,7 @@ The default option is that users receive no-reply emails sent by Microsoft on be
 
 ## <a name="configsetting">Configure the "Send email notifications from your domain" setting</a>
 
-The setting is available via the Microsoft 365 Admin Center Settings menu item. Select Settings, select Org Settings, and then the Organizational Settings profile tab as illustrated below. 
+The setting is available via the Microsoft 365 Admin Center **Settings** menu item. Select **Settings**, select **Org settings**, and then select the **Organization profile** tab as illustrated below. 
 
 :::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
@@ -64,8 +61,8 @@ The setting is available via the Microsoft 365 Admin Center Settings menu item. 
 
 1. In the Microsoft 365 admin center, in the navigation pane select **Settings**.
 2. Select **Org settings**.
-3. On the **Org settings** page, select **Organizational profile**.
-4. On the **Organizational profile** page, select **Send email notifications from your domain**.
+3. On the **Org settings** page, select **Organization profile**.
+4. On the **Organization profile** page, select **Send email notifications from your domain**.
 5. In the **Send email notifications from your domain** page, select **Use a custom send-from domain address**.
 6. The **Domains** menu, select the domain that you want to use for your email replies.The domains listed in the menu includes verified complete and incomplete domains as Microsoft 365 allows DNS settings to be configured and managed outside of the tenant. Your System or Exchange administrator must ensure that they follow and meet all DNS and domain requirements. 
 7. For **Custom username**, administrators can optionally configure the no-reply prefix. They could then create a matching email address in Exchange, if they would like to monitor responses from users.

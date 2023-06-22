@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 02/16/2021

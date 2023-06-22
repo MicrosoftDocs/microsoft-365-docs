@@ -7,8 +7,8 @@ author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 ms.reviewer: denik, pablom
-audience: how-to
-ms.topic: article
+audience: Admin
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

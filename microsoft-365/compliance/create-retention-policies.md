@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 05/09/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -78,9 +78,13 @@ Select the tab for instructions to create a retention policy for Teams, Yammer, 
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+
+5. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Teams chats** but not **Teams channel messages**. 
     
@@ -91,11 +95,11 @@ Select the tab for instructions to create a retention policy for Teams, Yammer, 
         
        By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
 For guidance when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
@@ -135,9 +139,13 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 2. Select **New retention policy** to create a new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+
+5. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Yammer user messages** but not **Yammer community messages**. 
     
@@ -149,11 +157,11 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
         - If you leave the default at **All users**, Azure B2B guest users are not included. 
         - If you select **Edit** for **All users**, you can apply a retention policy to external users if you know their account.
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content. 
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
 For technical details about how retention works for Yammer, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Yammer](retention-policies-yammer.md).
 
@@ -181,13 +189,20 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
+> [!NOTE]
+> If your organization is using [administrative units]( ) and you're a restricted administrator (assigned one or more adminsitrative units), you won't be able to configure a retention policy that includes SharePoint sites or Exchange public folders. For these locations, you must be an unrestricted administrator.
+
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option. Adaptive policies don't support the locations for Exchange public folders or Skype for Business.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention policy that doesn't include SharePoint sites or Exchange public folders can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the locations for SharePoint sites and Exchange public folders.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option. Adaptive policies don't support the locations for Exchange public folders or Skype for Business.
+
+5. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
@@ -199,11 +214,11 @@ Use the following instructions for retention policies that apply to any of these
     - [Microsoft 365 Group mailboxes & sites](retention-settings.md#configuration-information-for-microsoft-365-group-mailboxes--sites)
     - [Skype for Business](retention-settings.md#configuration-information-for-skype-for-business)
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
 ---
 
@@ -236,6 +251,8 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+If you no longer need the retention settings that you've configured, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
 ## Troubleshooting retention policies
 

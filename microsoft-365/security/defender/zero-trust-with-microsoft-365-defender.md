@@ -20,9 +20,9 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom: 
-
 ms.topic: conceptual
 adobe-target: true
+ms.date: 04/24/2023
 ---
 
 # Zero Trust with Microsoft 365 Defender

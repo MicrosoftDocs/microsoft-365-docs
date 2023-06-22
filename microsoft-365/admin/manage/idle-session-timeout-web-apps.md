@@ -3,7 +3,7 @@ title: "Idle session timeout for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/03/2022
 audience: Admin
@@ -65,6 +65,10 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
 
     - Microsoft 365 Admin Center
+
+    - M365 Defender Portal
+
+    - Microsoft Purview Compliance Portal
     
     - Azure Portal
 
@@ -127,6 +131,10 @@ The following Microsoft 365 apps are supported.
 - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
 
 - Microsoft 365 admin center
+
+- M365 Defender Portal
+
+- Microsoft Purview Compliance Portal
 
 - Azure Portal
 

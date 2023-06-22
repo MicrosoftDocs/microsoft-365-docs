@@ -23,6 +23,8 @@ search.appverid: met150
 # Cloud protection and sample submission at Microsoft Defender Antivirus
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
@@ -62,7 +64,7 @@ Microsoft Defender Antivirus and cloud protection automatically block most new, 
 
    2. After examining the metadata, if Microsoft Defender Antivirus cloud protection can't reach a conclusive verdict, it can request a sample of the file for further inspection. This request honors the settings configuration for sample submission:
 
-      1. **Send safe samples automatically** (default)
+      1. **Send safe samples automatically** 
          - Safe samples are samples considered to not commonly contain PII data like: .bat, .scr, .dll, .exe.
          - If file is likely to contain PII, the user gets a request to allow file sample submission.
          - This option is the default on Windows, macOS, and Linux.

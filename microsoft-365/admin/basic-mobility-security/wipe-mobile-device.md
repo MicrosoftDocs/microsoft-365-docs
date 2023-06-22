@@ -3,7 +3,7 @@ title: "Wipe a mobile device in Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin

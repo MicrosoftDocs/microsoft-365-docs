@@ -14,6 +14,7 @@ ms.custom:
   - it-pro
   - admindeeplinkMAC
   - admindeeplinkEXCHANGE
+ms.localizationpriority: high
 ms.collection:
   - scotvorg
   - M365-subscription-management
@@ -43,10 +44,7 @@ When a mailbox is migrated cross-tenant with this feature, only user visible con
 
 ## Licensing
 
-> [!IMPORTANT]
-> This cross-tenant functionality is only available to customers with Enterprise Agreements. Licensing is not available via other purchase options at this time.
-
-Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
+Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](/microsoft-365/enterprise/cross-tenant-onedrive-migration). Contact your Microsoft account team for details.
 
 Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; OneDrive for Business.
 
@@ -386,9 +384,13 @@ Get-MailUser -Identity <Migrate Mail User> | Enable-RemoteMailbox
 
 While Teams meetings are moved, the meeting URL isn't updated when items migrate cross-tenant. Since the URL will be invalid in the target tenant, you must remove and recreate Teams meetings.
 
+### What content is migrated cross-tenant?
+
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions, and Purges are migrated.  
+
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content doesn't migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated.
+No, the Teams chat folder content does not migrate cross-tenant. However, once the mailbox has been migrated cross-tenant, the Teams chat folder content will be available for source tenant admins to search and export using a content search.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
@@ -585,7 +587,7 @@ Yes. It's possible to have two instances of Azure AD Connect synchronize to diff
 
 ### Do auto-expanded archive mailboxes move?
 
-Yes, if the user in source has auto-expanding archives enabled and has additional auxiliary archives, cross-tenant mailbox migration will work. We support moving users that have no more than 12 auxiliary archive mailboxes. Additionally, users with large primary, large main archive, and large auxiliary archive mailboxes will require extra time to synchronize and should be submitted well in advance of the cutover date. Also note that if the source mailbox is expanded during the mailbox migration process, the migration will fail as a new auxiliary archive will be created in the source, but not in the target. In this case, you'll need to remove the user from the batch and resubmit them.
+- **Issue: Auto Expanded archives cannot be migrated.** Yes, if the user in source has auto-expanding archives enabled and has additional auxiliary archives, cross-tenant mailbox migration will work. We support moving users that have no more than 12 auxiliary archive mailboxes. Additionally, users with large primary, large main archive, and large auxiliary archive mailboxes will require extra time to synchronize and should be submitted well in advance of the cutover date. Also note that if the source mailbox is expanded during the mailbox migration process, the migration will fail as a new auxiliary archive will be created in the source, but not in the target. In this case, you'll need to remove the user from the batch and resubmit them.
 
 ## Known issues
 

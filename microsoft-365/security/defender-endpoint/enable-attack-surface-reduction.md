@@ -3,9 +3,6 @@ title: Enable attack surface reduction rules
 description: Enable attack surface reduction (ASR) rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
@@ -19,13 +16,14 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.date: 1/11/2023
+ms.date: 04/20/2023
 ---
 
 # Enable attack surface reduction rules
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -86,19 +84,20 @@ Enterprise-level management such as Intune or Microsoft Configuration Manager is
 
 ## Exclude files and folders from ASR rules
 
-You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it doesn't block the file from running. This could potentially allow unsafe files to run and infect your devices.
-
-You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators. (See [Manage indicators](manage-indicators.md).)
+You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it doesn't block the file from running.
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
 > If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
-You can specify individual files or folders (using folder paths or fully qualified resource names). An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
+An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
-For information about per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the article [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+When adding exclusions, keep in mind:
 
-ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+  * Exclusions are typically based on individual files or folders (using folder paths or the full path of the file to be excluded).
+  * Exclusion paths can use environment variables and wildcards. See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+  * When deployed through Group Policy or PowerShell, exclusions apply to all ASR rules. Using Intune, it is possible to configure an exclusion for a specific ASR rule. See [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions)
+  * Exclusions can be added based on certificate and file hashes, by allowing specified Defender for Endpoint file and certificate indicators. See [Manage indicators](manage-indicators.md).
 
 ## Policy Conflict
 
@@ -106,7 +105,7 @@ ASR rules support environment variables and wildcards. For information about usi
 
 2. Attack surface reduction rules for managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that aren't in conflict are merged, while those that are in conflict aren't added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
    - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:
-     - Devices > Configuration policy > Endpoint protection profile > **Microsoft Defender Exploit Guard** > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+     - Devices > Configuration profiles > Endpoint protection profile > **Microsoft Defender Exploit Guard** > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
      - Endpoint security > **Attack surface reduction policy** > [Attack surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
      - Endpoint security > Security baselines > **Microsoft Defender ATP Baseline** > [Attack Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
    - Settings that don't have conflicts are added to a superset of policy for the device.
