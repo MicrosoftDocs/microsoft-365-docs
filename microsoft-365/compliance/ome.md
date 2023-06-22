@@ -59,7 +59,7 @@ Microsoft Purview Advanced Message Encryption lets you create multiple branding 
 
 Advanced Message Encryption in Microsoft 365 helps you meet compliance obligations that require more flexible control over external recipient's access to encrypted emails. With Advanced Message Encryption, as an administrator, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types (for example, PII, Financial or Health IDs) or keywords to enhance protection by expiring access through a secure web portal to encrypted emails. As an admin you can further control encrypted emails accessed through a web portal by revoking access to an email anytime.
 
-Message revocation and expiration only work for emails that your users send to recipients outside your organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in a mail flow rule. For more information about Advanced Message Encryption, see [Advanced Message Encryption](ome-advanced-message-encryption.md).
+Message revocation and expiration only work for emails that your users send to recipients outside your organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in an email flow rule. For more information about Advanced Message Encryption, see [Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## Defining rules for Microsoft Purview Message Encryption
 
