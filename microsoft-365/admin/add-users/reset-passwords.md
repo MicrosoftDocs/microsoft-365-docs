@@ -140,7 +140,7 @@ For overview information, see [Manage Microsoft 365 with PowerShell](../../enter
 
 ## Set strong passwords
 
-1. Connect to [Microsoft Graph Powershell](/powershell/microsoftgraph/installation):
+1. Connect to [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation):
 
     ```powershell
     Connect-MgGraph -Scopes "User.ReadWrite.All"
@@ -162,7 +162,7 @@ For overview information, see [Manage Microsoft 365 with PowerShell](../../enter
     Get-MgUser -UserId user@contoso.com | ForEach-Object -Process { Update-MgUser -UserId $_.Id -PasswordPolicies None }
     ```
 
-Additional information concerning this command can be found here: [https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguser](/powershell/module/microsoft.graph.users/update-mguser)
+Additional information concerning this command can be found here: [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
 
 > [!NOTE]
 > The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
