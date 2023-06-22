@@ -30,7 +30,7 @@ description: Learn how to use Microsoft Syntex to manage various incoming busine
       - Content assembly
    :::column-end:::
    :::column span="":::
-      ![Image of a generic firstline workers in a worksite setting.](../media/content-understanding/uc-incoming-documents.png)
+      ![Image of generic firstline workers in a worksite setting.](../media/content-understanding/uc-incoming-documents.png)
    :::column-end:::
 :::row-end:::
 
@@ -54,7 +54,9 @@ Taking this a little further, PowerApps can begin to list all the active tenants
 
 As part of annual verification of partners and vendors, W-9 forms and Certificates of Liability (CLIs) are sent in. These documents are reviewed and updates are made accordingly. Thousands of CLIs and W-9 forms are reviewed manually for changes and updates into the appropriate systems used for bids.
 
-An improved process is required to do more with less. A Power Platform solution is created to extract attachments from incoming emails to save them to SharePoint. Syntex models are then created to identify and extract information from CLIs and W-9 forms, such as name, type of coverage, amount of coverage, date. Extracted information can be used to populate other applications used during construction proposals. 
+An improved process is required to do more with less. A Power Platform solution is created to extract attachments from incoming emails to save them to SharePoint.
+
+Syntex models are then created to identify and extract information from CLIs and W-9 forms, such as name, type of coverage, amount of coverage, date. Extracted information can be used to populate other applications used during construction proposals. 
 <br>
 <br>
 
