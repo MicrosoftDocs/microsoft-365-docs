@@ -912,7 +912,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
                 <key>tamperProtection</key>
                 <dict>
                     <key>enforcementLevel</key>
-                    <string>block</key>
+                    <string>block</string>
                 </dict>
             </dict>
         </array>
