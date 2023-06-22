@@ -100,7 +100,7 @@ Not supported by default, and now rolling out in preview, you can enable support
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) and [default sensitivity labels for SharePoint document libraries](sensitivity-labels-sharepoint-default-label.md)
 
 > [!IMPORTANT]
-> Be aware that enabling PDF support can impact the number of files that get automatically labeled with auto-labeling policies that support a maximum of 25,000 files a day.
+> Be aware that enabling PDF support can increase the number of files that get automatically labeled with auto-labeling policies that support a maximum of 25,000 files a day.
 
 To enable this PDF support, you have two options:
 
