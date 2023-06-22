@@ -68,12 +68,10 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 ## Settings management in Cloud Policy
 
-The Loop experiences (except for Microsoft Teams) check the following Cloud Policy settings, and this process' information is available in [available policy settings](#available-policy-settings):
+The Loop experiences (except for Microsoft Teams) check the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) settings. See [Available policy settings](#available-policy-settings) to understand how each app checks these settings:
 
 - **Create and view Loop files in Microsoft apps that support Loop**
 - **Create and view Loop files in Outlook**
-
-For in-depth information about these settings, see [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) Settings templates. To configure these settings, perform the following steps:
 
 > [!TIP]
 > If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).

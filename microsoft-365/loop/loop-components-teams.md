@@ -45,7 +45,7 @@ Available on Whiteboard apps on Windows, Surface, iOS, Android, and web. iOS and
 
 ## Loop components and .loop files
 
-Loop components created in Teams, Outlook are backed by a .loop (earlier versions of Loop created .fluid) file stored in the creator's OneDrive. Being a file in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document. 
+Loop components created in Teams, Outlook are backed by a .loop (earlier versions of Loop created .fluid) file stored in the creator's OneDrive. Being a file in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
 
 ## How are .loop files stored?
 
@@ -73,7 +73,9 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## Do .loop (and .fluid) files support eDiscovery?
 
-Loop components created in Teams are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+
+Microsoft is currently working on a third-party graph export API solution for Loop components.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
