@@ -27,18 +27,24 @@ This article walks you through how to review, create, or edit your security poli
 
 :::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
+## Default policies
+
 When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as:
 
 - [Next-generation protection](mdb-next-generation-protection.md)
 - [Firewall protection](mdb-firewall.md)
 
+## Additional policies
+
 In addition to your default security policies, you can add other policies, such as:
 
 - [Web content filtering](mdb-web-content-filtering.md)
-- [Controlled folder access](mdb-controlled-folder-access.md)
-- [Attack surface reduction rules](mdb-asr.md)
+- [Controlled folder access](mdb-controlled-folder-access.md) (*requires Microsoft Intune*)
+- [Attack surface reduction rules](mdb-asr.md) (*ASR rules are configured in Intune*)
 
-And, you can view and edit settings for advanced features, such as:
+## Advanced features and settings
+
+You can view and edit settings for advanced features, such as:
 
 - [Turning on (or off) advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features);
 - [Specifying which time zone to use in the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md#view-and-edit-other-settings-in-the-microsoft-365-defender-portal); and 
