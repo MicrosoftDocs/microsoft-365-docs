@@ -361,16 +361,15 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
     - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
     - Other conditions (in preview) that you can select:
-        - [File extension is](#file-extensions)
-        - Document name contains words or phrases
-        - [Document property is](#document-properties)
-        - Document size equals or is greater than
+        - [Attachment or file extension is](#file-extensions)
+        - Attachment or document name contains words or phrases
+        - [Attachment or document property is](#document-properties)
+        - Attachment or document size equals or is greater than
 
     If your location is **Exchange** and you selected **Advanced rules**, there are additional conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
-    - Attachment's file extension is
     - Attachment is password protected
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
@@ -382,9 +381,6 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Sender domain is
     - Recipient is a member of
     - Sender is
-    - Attachment name contains words or phrases (in preview)
-    - Attachment property is (in preview)
-    - Attachment size equals or is greater than (in preview)
     
     If your location is **SharePoint sites** or **OneDrive accounts** and you selected **Advanced rules**, there is one other condition that you can select:
     - Document created by (in preview)
