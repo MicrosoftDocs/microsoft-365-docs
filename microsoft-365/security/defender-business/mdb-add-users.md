@@ -75,4 +75,5 @@ One good way to make sure MFA is enabled for all users is by using [security def
 
 ## Next steps
 
-- Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+- [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+- [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).

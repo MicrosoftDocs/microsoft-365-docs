@@ -18,16 +18,15 @@ ms.collection:
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Safe Attachments in [Microsoft Defender for Office 365](defender-for-office-365.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
@@ -40,7 +39,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 |Pat's Microsoft 365 E5 organization has no Safe Attachments policies configured.|Pat is protected by Safe Attachments due to the **Built-in protection** preset security policy that applies to all recipients who are not otherwise defined in Safe Attachments policies.|
 |Lee's organization has a Safe Attachments policy that applies only to finance employees. Lee is a member of the sales department.|Lee and the rest of the sales department are protected by Safe Attachments due to the **Built-in protection** preset security policy that applies to all recipients who are not otherwise defined in Safe Attachments policies.|
 |Yesterday, an admin in Jean's organization created a Safe Attachments policy that applies to all employees. Earlier today, Jean received an email message that included an attachment.|Jean is protected by Safe Attachments due to that custom Safe Attachments policy. <br/><br/> Typically, it takes about 30 minutes for a new policy to take effect.|
-|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chis is protected by Safe Attachments. <br/><br/> If the external recipients are in a Microsoft 365 organization, then the forwarded messages are also protected by Safe Attachments.|
+|Chris's organization has long-standing Safe Attachments policies for everyone in the organization. Chris receives an email that has an attachment, and then forwards the message to external recipients.|Chris is protected by Safe Attachments. <br/><br/> If the external recipients are in a Microsoft 365 organization, then the forwarded messages are also protected by Safe Attachments.|
 
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 

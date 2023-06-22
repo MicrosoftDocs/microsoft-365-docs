@@ -18,16 +18,15 @@ search.appverid:
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-user guide
-ms.date: 1/31/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Welcome to the Microsoft Defender for Office 365 trial user guide! This user guide will help you make the most of your free trial by teaching you how to safeguard your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
@@ -51,7 +50,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
-  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Policy settings associated with Defender for Office 365 trials](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-trials)
+  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in [Policy settings associated with Defender for Office 365 evaluations and trials](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-evaluations-and-trials)
 
   Blocking mode does not provide customized reports for threats detected by Defender for Office 365. Instead, the information is available in the regular reports and investigation features of Defender for Office 365 Plan 2.
 
@@ -145,7 +144,8 @@ Defender for Office 365 enables you to investigate activities that put people in
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
 
 - [Identify campaigns](campaigns.md#what-is-a-campaign) targeting your users.
-- [Visualize the scope](campaigns.md#campaigns-in-the-microsoft-365-defender-portal) of the attack.
+- 
+- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-365-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
   :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::

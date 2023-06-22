@@ -104,9 +104,9 @@ Depending on your subscription, here are the available reports in all environmen
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
-|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
-|[Microsoft Teams team activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|N/A<sup>1</sup>|
+|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams team activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|Yes|
 |[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
@@ -116,10 +116,10 @@ Depending on your subscription, here are the available reports in all environmen
 |[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
 |[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
-|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A|N/A|N/A|N/A<sup>2</sup>|
-|[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A|N/A|N/A<sup>2</sup>|
-|[Project activity](project-activity.md)|Yes|Yes|N/A|N/A|N/A<sup>2</sup>|
-|[Visio activity](visio-activity.md)|Yes|Yes|N/A|N/A|N/A<sup>2</sup>|
+|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Project activity](project-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Visio activity](visio-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 
 N/A<sup>1</sup>: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 

@@ -19,20 +19,32 @@ description: Learn about the capabilities and features in Microsoft Syntex.
 
 # Overview of Microsoft Syntex
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
+
+</br>
+
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries.
 
-:::row:::
-   :::column span="":::      
-      With Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization.
+With Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization. Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
 
-      Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
+You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
+
+## Scenarios and use cases
+
+:::row:::
+   :::column span="3":::
+      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
+
+      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
    :::column-end:::
    :::column span="":::
-      ![Image of computers running Syntex.](../media/content-understanding/syntex-devices-image.png)
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
    :::column-end:::
 :::row-end:::
 
-You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
+[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
 
 ## Models
 
@@ -124,6 +136,19 @@ This feature is useful when you have a specific piece of information you want to
 
 [Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
+## Optical character recognition
+
+:::row:::
+   :::column span="":::
+      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
+
 ## Content compliance
 
 :::row:::
@@ -136,6 +161,19 @@ This feature is useful when you have a specific piece of information you want to
 :::row-end:::
 
 Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+## Content processing
+
+:::row:::
+   :::column span="":::
+      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
 ## Premium taxonomy services
 
@@ -155,20 +193,6 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 - [Term store reports](term-store-analytics.md), which provides you insights into published term sets and their use across your organization.
 
-## Scenarios and use cases
-
-:::row:::
-   :::column span="3":::
-      Syntex can help your organization automate business processes, improve search accuracy, and manage compliance risk.
-
-      With content AI services and capabilities, you can build content understanding and classification directly into the content management flow.
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
-   :::column-end:::
-:::row-end:::
-
-[Learn more about how to use Syntex to streamline processes in your organization.](adoption-scenarios.md)
 <!---<br><br>
 > [!div class="nextstepaction"]
 > [Learn more about model types in Microsoft Syntex](model-types-overview.md)

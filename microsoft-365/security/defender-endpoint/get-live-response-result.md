@@ -79,8 +79,8 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-Application|Machine.Read.All|''Read all machine profiles''
-Application|"Machine.ReadWrite.All|'Read and write all machine information'
+Application|Machine.Read.All|Read all machine profiles
+Application|Machine.ReadWrite.All|Read and write all machine information
 |Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request

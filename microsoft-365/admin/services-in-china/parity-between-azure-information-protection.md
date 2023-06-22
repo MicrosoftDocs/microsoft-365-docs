@@ -55,6 +55,8 @@ Following is a list of gaps between AIP for Office 365 operated by 21Vianet and 
     - Download label and label policies: `*.protection.partner.outlook.cn`
     - Azure Rights Management service: `*.aadrm.cn`
 
+- Document Tracking and Revocation *by users* is currently not available.
+
 ## Configure AIP for customers in China
 
 To configure AIP for customers in China:

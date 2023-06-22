@@ -41,7 +41,7 @@ These steps create a new application in your organization's enterprise applicati
 1. Run the following PowerShell cmdlets.
 
     ```PowerShell
-    Connect-AzureAD
+    Connect-MgGraph
     Connect-AzAccount
     $appId="f46c682f-628c-48e6-b963-03309e34639e"
     $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
