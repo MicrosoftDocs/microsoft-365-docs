@@ -150,7 +150,13 @@
       href: annotations.md
 
     - name: Image tagging
-      href: image-tagging.md
+      items: 
+        - name: Overview 
+          href: image-tagging-overview.md
+        - name: Set up and configure 
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
 
     - name: Optical character recognition 
       href: ocr.md
