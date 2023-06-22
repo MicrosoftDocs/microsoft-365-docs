@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/04/2023
+ms.date: 06/20/2023
 ms.reviewer: jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -47,7 +47,7 @@ You can choose from several options for managing your next-generation protection
 
 ## [**Intune admin center**](#tab/Intune)
 
-1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<
+1. Go to the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) and sign in. 
 
 2. Select **Endpoint security**.
 

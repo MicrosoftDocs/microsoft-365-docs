@@ -55,7 +55,7 @@ Not all Teams content is eDiscoverable. The following table shows the Teams cont
 |Reactions (such as likes, hearts, and other reactions)|Reactions are supported for all commercial customers after June 1, 2022. Reactions before this date aren't available for eDiscovery. Expanded reactions are now supported. To understand reaction history, the content must be on legal hold.|
 |Subject||
 |Tables||
-|Teams Video Clip (TVC)|Search TVC with "Video-Clip" keyword and "save as" a .mp4 file for each TVC attachment by right-clicking the preview (search by keyword will be available in October 2022). TVC data is discoverable in eDiscovery [review sets](/microsoft-365/compliance/add-data-to-review-set).
+|Teams Video Clip (TVC)|Search TVC with "Video-Clip" keyword and "save as" a .mp4 file for each TVC attachment by right-clicking the preview. <p> TVCs are collected as Teams conversation attachments and separate .mp4 files. TVC file data is discoverable in eDiscovery [review sets](/microsoft-365/compliance/add-data-to-review-set) and can be exported.
 
 <a name="teams-metadata"></a><sup>1</sup> Meeting (and call) metadata includes the following:
 
