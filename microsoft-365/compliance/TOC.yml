@@ -242,6 +242,8 @@
           href: communication-compliance-configure.md
         - name: Detect channel signals with communication compliance
           href: communication-compliance-channels.md
+        - name: Microsoft Teams and communication compliance
+          href: communication-compliance-teams.md
         - name: Create and manage communication compliance policies
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
@@ -264,8 +266,32 @@
           href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
-        - name: Get started with insider risk settings
-          href: insider-risk-management-settings.md
+        - name: Get started with insider risk management settings
+          items:
+          - name: Learn about insider risk management settings
+            href: insider-risk-management-settings.md
+          - name: Privacy setting
+            href: insider-risk-management-settings-privacy.md
+          - name: Policy indicators setting
+            href: insider-risk-management-settings-policy-indicators.md
+          - name: Intelligent detections setting
+            href: insider-risk-management-settings-intelligent-detections.md
+          - name: Export alerts setting
+            href: insider-risk-management-settings-alerts.md
+          - name: Priority user groups setting
+            href: insider-risk-management-settings-priority-user-groups.md
+          - name: Priority physical assets setting (preview)
+            href: insider-risk-management-settings-priority-physical-assets.md
+          - name: Power Automate flows setting (preview)
+            href: insider-risk-management-settings-power-automate.md
+          - name: Microsoft Teams setting (preview)
+            href: insider-risk-management-settings-teams.md
+          - name: Analytics setting
+            href: insider-risk-management-settings-analytics.md
+          - name: Admin notifications setting
+            href: insider-risk-management-settings-admin-notifications.md
+          - name: Inline alert customization setting
+            href: insider-risk-management-settings-inline-alert-customization.md
         - name: Learn about policy templates
           href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
@@ -308,7 +334,7 @@
           href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
-        - name: Information barriers & Microsoft 365 services
+        - name: Information barriers & Microsoft Teams
           items:
             - name: Microsoft Teams and information barriers
               href: information-barriers-teams.md
@@ -316,8 +342,12 @@
               href: information-barriers-teams-shared-channels.md
             - name: Microsoft Teams PowerShell script and information barriers
               href: information-barriers-teams-powershell-script.md
+        - name: Information barriers & OneDrive
+          items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+        - name: Information barriers & SharePoint
+          items:
             - name: SharePoint and information barriers
               href: information-barriers-sharepoint.md
             - name: SharePoint information barriers compliance assistant (preview)
@@ -846,6 +876,8 @@
                 href: sit-defn-luxemburg-physical-addresses.md
               - name: Malaysia identification card number
                 href: sit-defn-malaysia-identification-card-number.md
+              - name: Malaysia passport card number
+                href: sit-defn-malaysia-passport-number.md
               - name: Malta drivers license number
                 href: sit-defn-malta-drivers-license-number.md
               - name: Malta identity card number
@@ -856,7 +888,7 @@
                 href: sit-defn-malta-physical-addresses.md
               - name: Malta tax identification number
                 href: sit-defn-malta-tax-identification-number.md
-              - name: Medical specialities
+              - name: Medical specialties
                 href: sit-defn-medical-specialities.md
               - name: Medicare Beneficiary Identifier (MBI) card
                 href: sit-defn-medicare-beneficiary-Identifier-card.md
@@ -936,8 +968,12 @@
                 href: sit-defn-russia-passport-number-international.md
               - name: Saudi Arabia National ID
                 href: sit-defn-saudi-arabia-national-id.md
+              - name: Singapore driver's license number
+                href: sit-defn-singapore-drivers-license-number.md
               - name: Singapore national registration identity card (NRIC) number
                 href: sit-defn-singapore-national-registration-identity-card-number.md
+              - name: Singapore passport number
+                href: sit-defn-singapore-passport-number.md
               - name: Slack access token
                 href: sit-defn-slack-access-token.md
               - name: Slovakia drivers license number
@@ -960,6 +996,10 @@
                 href: sit-defn-slovenia-unique-master-citizen-number.md
               - name: South Africa identification number
                 href: sit-defn-south-africa-identification-number.md
+              - name: South Korea driver's license number
+                href: sit-defn-south-korea-drivers-license-number.md
+              - name: South Korea passport number
+                href: sit-defn-south-korea-passport-number.md
               - name: South Korea resident registration number
                 href: sit-defn-south-korea-resident-registration-number.md
               - name: Spain DNI
@@ -1008,7 +1048,11 @@
                 href: sit-defn-turkey-physical-addresses.md
               - name: Types of medication
                 href: sit-defn-types-of-medication.md
-              - name: U.K. drivers license number
+              - name: UAE identity card number
+                href: sit-defn-uae-identity-card-number.md
+              - name: UAE passport number
+                href: sit-defn-uae-passport-number.md
+              - name: U.K. driver's license number
                 href: sit-defn-uk-drivers-license-number.md
               - name: U.K. electoral roll number
                 href: sit-defn-uk-electoral-roll-number.md
@@ -1201,9 +1245,9 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Chrome Extension
+          - name: Learn about the Microsoft Purview extension for Chrome
             href: dlp-chrome-learn-about.md
-          - name: Learn about the Microsoft Purview Firefox Extension
+          - name: Learn about the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -1211,6 +1255,8 @@
             href: dlp-migration-assistant-for-symantec-learn.md
           - name: Learn about adaptive protection in data loss prevention (preview)
             href: dlp-adaptive-protection-learn.md
+          - name: Learn about evidence collection for file activities on devices (preview)
+            href: dlp-copy-matched-items-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1227,22 +1273,24 @@
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Get started with data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises repositories
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Chrome Extension
+          - name: Get started with the Microsoft Purview extension for Chrome
             href: dlp-chrome-get-started.md
-          - name: Get started with the Microsoft Purview Firefox extension (preview)
+          - name: Get started with the Microsoft Purview extension for Firefox
             href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI
             href: dlp-powerbi-get-started.md
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
-            href: dlp-migration-assistant-for-symantec-get-started.md  
+            href: dlp-migration-assistant-for-symantec-get-started.md
+          - name: Get started with collecting files that match data loss prevention policies from devices (preview)
+            href: dlp-copy-matched-items-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1257,20 +1305,16 @@
               href: what-the-dlp-policy-templates-include.md
             - name: Create a DLP policy to protect documents with FCI or other properties
               href: protect-documents-that-have-fci-or-other-properties.md
-            - name: View the DLP reports
-              href: view-the-dlp-reports.md
-            - name: Form a query to find sensitive data stored on sites
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
-            - name: Configure and view alerts for DLP policies (preview)
+            - name: Configure and view alerts for DLP policies
               href: dlp-configure-view-alerts-policies.md
             - name: Use sensitivity labels as a condition in DLP policies
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions
-              href: dlp-conditions-and-exceptions.md
+            - name: Data loss prevention Exchange conditions and actions reference
+              href: dlp-exchange-conditions-and-actions.md
             - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
@@ -1280,7 +1324,9 @@
             - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
-              href: dlp-migration-assistant-for-symantec-use.md       
+              href: dlp-migration-assistant-for-symantec-use.md
+            - name: Data loss prevention policy tip reference for Outlook on the Web
+              href: dlp-owa-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1607,16 +1653,20 @@
               href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: ediscovery-add-data-to-review-set-from-another-review-set.md
+            - name: Configure review set grouping settings
+              href: ediscovery-configure-review-set-settings.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
               href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
               href: ediscovery-tagging-documents.md
-            - name: View documents in a review set
+            - name: Group and view documents in a review set
               href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
               href: ediscovery-dashboard.md
+            - name: Invite guest users to cases (preview)
+              href: ediscovery-guest-access.md
         - name: Analyze case content
           href: ediscovery-analyzing-data-in-review-set.md
           items: 
@@ -1766,29 +1816,51 @@
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
-          href: compliance-manager.md
-        - name: What's new in Compliance Manager
-          href: compliance-manager-whats-new.md
+          items:
+            - name: Overview
+              href: compliance-manager.md
+            - name: What's new
+              href: compliance-manager-whats-new.md
+            - name: Compliance Manager glossary of terms
+              href: compliance-manager-glossary.md
+            - name: Frequently asked questions (FAQ)
+              href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
-          href: compliance-manager-setup.md
-        - name: Build and manage assessments
-          href: compliance-manager-assessments.md
-        - name: Learn about assessment templates
-          href: compliance-manager-templates.md
-        - name: Compliance Manager templates list
-          href: compliance-manager-templates-list.md
-        - name: Working with improvement actions
-          href: compliance-manager-improvement-actions.md
-        - name: Updating improvement actions
-          href: compliance-manager-update-actions.md
+          items:
+            - name: Permissions and settings
+              href: compliance-manager-setup.md
+        - name: Multicloud support in Compliance Manager
+          items:
+            - name: Learn about multicloud support
+              href: compliance-manager-multicloud.md
+            - name: Configure cloud settings
+              href: compliance-manager-cloud-settings.md
+            - name: Connectors
+              items:
+                - name: Set up connectors to use in assessments
+                  href: compliance-manager-connectors.md
+                - name: Salesforce
+                  href: compliance-manager-connectors-salesforce.md
+                - name: Zoom
+                  href: compliance-manager-connectors-zoom.md
+        - name: Create assessments
+          items:
+            - name: Build and manage assessments
+              href: compliance-manager-assessments.md
+            - name: Learn about Compliance Manager regulations
+              href: compliance-manager-templates.md
+            - name: Regulations list
+              href: compliance-manager-templates-list.md
+        - name: Improvement actions
+          items:
+            - name: Working with improvement actions
+              href: compliance-manager-improvement-actions.md
+            - name: Updating improvement actions
+              href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
-        - name: How your compliance score is calculated
+        - name: Scoring
           href: compliance-score-calculation.md
-        - name: Configuration Analyzer for Microsoft Purview
-          href: compliance-manager-mcca.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.yml
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance

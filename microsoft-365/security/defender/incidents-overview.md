@@ -69,6 +69,10 @@ You can view the entity details directly from the graph and act on them with res
 
 The additional tabs for an incident are:
 
+- Attack story
+
+  The full story of the attack, including all the alerts, assets, and remediation actions taken.
+
 - Alerts
 
   All the alerts related to the incident and their information.

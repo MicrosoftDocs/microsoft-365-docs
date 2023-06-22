@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 03/16/2023
+ms.date: 05/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -68,7 +68,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -109,13 +109,21 @@ To download the package (Zip file) and investigate the events that occurred on a
 
 Alternate steps:
 
-1. Select **Action center** from the response actions section of the device page.
+1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
+    ![Image of collect investigation package](images/collect-investigation-package.png)
+   
+2.	Add comments and select **Confirm**.
 
-2. In the Action center fly-out, select **Package collection package available** to download the zip file.
+    ![Image of confirm comment](images/comments-confirm.png)
 
-   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
+3.	Select **Action center** from the response actions section of the device page.
+
+    ![Image of action center](images/action-center-selected.png)
+
+4.	Click the **Package collection package available** to download the collection package.
+
+    ![Image of download package](images/download-package.png)
 
 For Windows devices, the package contains the following folders:
 
@@ -206,7 +214,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > [!IMPORTANT]
 >
 > - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
-> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 > - You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
@@ -214,6 +222,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 > - Exclusion for both macOS and Linux isolation is not supported.
+> - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
+> - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
@@ -228,6 +238,31 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
+
+### Forcibly release device from isolation
+
+The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive.<br> 
+There's a downloadable script for these instances that you can run to forcibly release devices from isolation. The script is available through a link in the UI.
+
+> [!NOTE]
+> - Admins and manage security settings in Security Center permissions can forcibly release devices from isolation. 
+> - The script is valid for the specific device only.
+> - The script will expire in three days.
+
+To forcibly release device from isolation:
+
+1. On the device page, select **Download script to force-release a device from isolation** from the action menu.
+1. On the right-hand side wizard, select **Download script**.
+
+#### Minimum requirements
+The minimum requirements for 'forcibly release device from isolation' feature are:
+
+- Supports only Windows
+- The following Windows versions are supported:
+    - Windows 10 21H2 and 22H2 with KB KB5023773
+    - Windows 11 version 21H2, all editions with KB5023774 
+    - Windows 11 version 22H2, all editions with KB5023778 
+    
 
 ### Notification on device user
 

@@ -3,7 +3,7 @@ title: "Capabilities of Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/31/2020
 audience: Admin

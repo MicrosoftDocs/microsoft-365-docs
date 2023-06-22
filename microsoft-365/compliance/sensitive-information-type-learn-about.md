@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 04/25/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: conceptual
@@ -28,7 +28,7 @@ Identifying and classifying sensitive items that are under your organization's c
 - automated pattern recognition, like sensitive information types
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
+Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
 
@@ -50,7 +50,7 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 
 ### Built in sensitive information types
 
-These SITs are created by Microsoft show up in the compliance console by default. These SITs cannot be edited, but they can be used as templates and copied to create custom sensitive information types. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a full listing of all SITs.
+These SITs are created by Microsoft and show up in the compliance console by default. These SITs can't be edited, but you can use them as templates by copying them to create custom sensitive information types. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a full list of all SITs.
 
 ### Named entity sensitive information types
 
@@ -58,11 +58,11 @@ Named entity SITs also show up in the compliance console by default. They detect
 
 **un-bundled**
 
-These named entity SITs have a narrower focus, like a single country, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
+These named entity SITs have a narrower focus, such as a single country, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
 
 **bundled**
 
-Bundled named entity SITs detect all possible matches in a class, like All physical addresses. Use them as broad criteria in your DLP policies for detecting sensitive items. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
+Bundled named entity SITs detect all possible matches in a class, such as *All physical addresses*. Use them as broad criteria in your DLP policies for detecting sensitive items. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
 
 ### Custom sensitive information types
 
@@ -70,19 +70,19 @@ If the pre-configured sensitive information types don't meet your needs, you can
 
 ### Exact data match sensitive information types
 
-All EDM-based SITs are created from scratch. You use them to detect items that have exact values which you define in a database of sensitive information. See, [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for more information.
+All exact data match (EDM)-based SITs are created from scratch. You use them to detect items that have exact values which you define in a database of sensitive information. See, [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for more information.
 
 ## Fundamental parts of a sensitive information type
 
 Every sensitive information type entity is defined by these fields:
 
-- name: how the sensitive information type is referred to
-- description: describes what the sensitive information type is looking for
-- pattern: A pattern defines what a sensitive information type detects. It consists of the following components.
-  - Primary element – The main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
-  - Supporting element – Elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword "SSN" in proximity to an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
-  - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
-  - Proximity – Number of characters between primary and supporting element.
+- Name: indicates how the sensitive information type is referred to
+- Description: describes what the sensitive information type is looking for
+- Pattern: A pattern defines what a sensitive information type detects. It consists of the following components.
+  - Primary element – the main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
+  - Supporting element – an element that acts as supporting evidence that help in increasing the confidence of the match. For example, keyword "SSN" in proximity to a Social Security Number (SSN). It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+  - Confidence Level - confidence levels (high, medium, low) reflect how much supporting evidence is detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
+  - Proximity – the number of characters between the primary and supporting elements.
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
@@ -187,13 +187,13 @@ You can choose from several options to create custom sensitive information types
 >
 > - For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
 >
-> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), you should create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only.
+> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contains non-Chinese/Japanese words also (for instance, English only), you should create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English-only keywords.
 >
 > - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the you should create two keyword lists.
 >     1. Highly confidential
 >     2. 機密性が高い, 机密的document and 机密的 document
 >
-> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like you would escape a hyphen or period in a regex. Here is a sample regex for reference:
 >
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >

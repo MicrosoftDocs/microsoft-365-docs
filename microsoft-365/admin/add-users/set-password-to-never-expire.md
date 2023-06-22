@@ -3,7 +3,7 @@ title: "Set an individual user's password to never expire"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -47,8 +47,13 @@ This guide applies to other providers, such as Intune and Microsoft 365, which a
 
 ## How to check the expiration policy for a password
 
-For more information about the Get-MgUser command in the AzureAD module, see the reference article [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser).
+Use the `Connect-MgGraph` command to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
+```powershell
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+ ```
+The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
+ 
 Run one of the following commands:
 
 - To see if a single user's password is set to never expire, run the following cmdlet by using the UPN (for example, *user@contoso.onmicrosoft.com*) or the user ID of the user you want to check:

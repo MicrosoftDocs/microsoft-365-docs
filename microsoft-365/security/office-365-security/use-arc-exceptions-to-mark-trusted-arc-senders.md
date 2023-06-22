@@ -18,16 +18,14 @@ ms.custom:
 description: Authenticated Received Chain (ARC) is email authentication that tries to preserve authentication results across devices and any indirect mailflows that come between the sender and recipient. Here's how to make exceptions for your trusted ARC Senders.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows
-
-**Applies to**
-
-- Exchange Online Protection
-- Microsoft Defender for Office 365 plan 1 and plan 2
-- Microsoft 365 Defender
 
 Email authentication mechanisms like [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), [DMARC](email-authentication-dmarc-configure.md) are used to verify the senders of emails for the *safety* of email recipients, but some legitimate services may make changes to the email between the sender and recipient. **In Microsoft 365 Defender, ARC will help reduce SPF, DKIM, and DMARC delivery failures that happen due to *legitimate* indirect mailflows.**
 

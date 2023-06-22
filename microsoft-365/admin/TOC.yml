@@ -321,6 +321,8 @@
               href: activity-reports/sharepoint-site-usage-ww.md
             - name: Visio activity
               href: activity-reports/visio-activity.md
+            - name: Viva Goals activity
+              href: activity-reports/viva-goals-activity.md
             - name: Viva Insights activity
               href: activity-reports/viva-insights-activity.md
             - name: Viva Learning activity
@@ -365,7 +367,17 @@
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Integrated apps
-           href: manage/test-and-deploy-microsoft-365-apps.md
+           items:
+            - name: What is Integrated Apps
+              href: manage/test-and-deploy-microsoft-365-apps.md
+            - name: Manage Office add-ins
+              href: manage/office-addins.md 
+            - name: Teams apps that work on Outlook & Microsoft 365
+              href: manage/teams-apps-work-on-outlook-and-m365.md  
+            - name: Teams apps that only work on Teams
+              href: manage/teams-apps-work-only-on-teams.md  
+            - name: SaaS Linked Apps
+              href: manage/saas-linked-apps.md  
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins

@@ -3,7 +3,7 @@ title: "Sign up for Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/17/2022
 audience: Admin

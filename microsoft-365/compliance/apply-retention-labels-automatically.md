@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/24/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -35,7 +35,7 @@ Auto-applying retention labels are powerful because:
 - You don't need to rely on users to classify all content correctly.
 - Users no longer need to know about data governance policies - they can focus on their work.
 
-You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). You can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -59,10 +59,7 @@ Use the following instructions for the two admin steps.
 
 ## Learn about simulation mode
 
-> [!NOTE]
-> This option is in preview and subject to change.
-
-Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+You can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
@@ -145,9 +142,13 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
-4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the policy configuration with this option.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
-5. Depending on your selected scope:
+5. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the policy configuration with this option.
+
+6. Depending on your selected scope:
 
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
@@ -155,7 +156,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
+7. Follow the prompts to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
@@ -355,20 +356,22 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is in preview and subject to change.
+> Support for cloud attachments that are shared in Yammer is in preview.
 
-You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Yammer](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-yammer).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. Cloud attachments shared over meeting invites and apps other than Teams or Outlook aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Yammer, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
+
+Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Yammer aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
 
@@ -380,27 +383,30 @@ When you configure the locations for this option, you can select:
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
-You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Yammer.
 
 > [!NOTE]
-> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange and Teams.
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Yammer.
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- If cloud attachments and links in a Teams message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
+- Yammer must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support cloud attachments.
+
+- If cloud attachments and links in a Teams or Yammer message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments and URL text links. If these attachments were shared within 48 hours of the user added to the conversation, current copies of the attachments are auto-labeled for retention. Attachments shared before this time period aren't supported for newly added users.
 
-- Attachments and links shared outside Teams and Outlook aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
+- Attachments and links shared outside Teams, Outlook, and Yammer aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
-- Cloud attachments and links in encrypted emails or encrypted messages  aren't supported.
+- Cloud attachments and links in encrypted emails or encrypted messages aren't supported.
+
+- Sharing an existing Yammer message with an attachment isn't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings.
-    - Not supported for files that are uploaded to Yammer and from there, shared as URLs via email or Teams messages (typically have "https://web.yammer.com" at the beginning of the URL)
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
-    - Not supported beyond 5,000 characters in the initial email body or Teams message
+    - Not supported beyond 5,000 characters in the initial email body or in Teams and Yammer messages
 
 - The following items aren't supported as attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
