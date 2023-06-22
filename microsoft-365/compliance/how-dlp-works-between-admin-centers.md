@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -38,23 +38,23 @@ DLP policies created in these admin centers work side by side - this article exp
 
 ## How DLP in the Compliance portal works with DLP and mail flow rules in the Exchange admin center
 
-After you create a DLP policy in the Compliance portal, the policy is deployed to all of the locations included in the policy. If the policy includes Exchange Online, the policy's synced there and enforced in exactly the same way as a DLP policy created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 
+After you create a DLP policy in the Compliance portal, the policy is deployed to all of the locations included in the policy. If the policy includes Exchange, the policy is synced there and enforced in exactly the same way as a DLP policy created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. 
   
-If you've created DLP policies in the Exchange admin center, those policies will continue to work side by side with any policies for email that you create in the Compliance portal. But note that rules created in the Exchange admin center take precedence. All Exchange mail flow rules are processed first, and then the DLP rules from the Compliance portal are processed.
+If you've created DLP policies in the Exchange admin center, those policies will continue to work side by side with any policies for email that you create in the compliance portal. However, rules created in the Exchange admin center take precedence. All Exchange mail flow rules are processed first, and then the DLP rules from the compliance portal are processed.
   
-It means:
+This means:
   
-- Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the Compliance portal.
-- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP won't be scanned by DLP. 
-- If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Compliance portal, such as adding external users, then the DLP rules will detect it and enforce the policy as needed.
+- Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the compliance portal
+- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP won't be scanned by DLP 
+- If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the compliance portal, such as adding external users, then the DLP rules will detect it and enforce the policy as needed.
     
-Also note that Exchange mail flow rules that use the "stop processing" action don't affect the processing of DLP rules in the Compliance portal - they'll still be processed.
+Also note that Exchange mail flow rules that use the **stop processing** action don't affect the processing of DLP rules in the compliance portal - they'll still be processed.
   
 ## Policy tips in the Compliance portal vs. the Exchange admin center
 
-Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, or with DLP policies created in the Compliance portal, but not both. It is because these policies are stored in different locations, but policy tips can draw only from a single location.
+Policy tips can work either with DLP policies and mail flow rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> or with DLP policies created in the compliance portal, but not both. The reason for this is that these policies are stored in different locations but policy tips can draw only from a single location.
   
-If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Compliance portal won't appear to users in Outlook on the web, and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules will continue to work until you choose to switch over to the Compliance portal.
+If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the compliance portal won't appear to users in Outlook on the web or Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules will continue to work until you choose to switch over to the compliance portal.
   
 >[!Note]
->While policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Compliance portal and the Exchange admin center.
+>While policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the compliance portal and the Exchange admin center.

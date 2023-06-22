@@ -83,7 +83,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
    ```powershell
-   Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   Add-RoleGroupMember "<Role Group Name>" -Member "<Azure Security Group>"`
    ```
 
 ## Test your configuration of PIM with Defender for Office 365
