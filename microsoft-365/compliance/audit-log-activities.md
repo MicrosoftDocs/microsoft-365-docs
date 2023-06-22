@@ -27,7 +27,7 @@ The tables in this article describe the activities that are audited in Microsoft
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list (or that are available in PowerShell) and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 > [!TIP]
-> Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
+> Select one of the links in the **In this article** list at the top of this article to go directly to a specific product table.
 
 ## Application administration activities
 
