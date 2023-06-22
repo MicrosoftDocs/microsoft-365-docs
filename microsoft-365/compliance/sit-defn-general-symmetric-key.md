@@ -64,7 +64,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `N/A` |
 |Medium| `N/A` |

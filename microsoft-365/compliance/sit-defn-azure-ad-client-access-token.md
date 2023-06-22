@@ -87,7 +87,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIm5vbmNlIjoibm9uY2UifQ.eyJhdWQiOiJodHRwczovL2hvc3QiLCJleHAiOjk5OTk5OTk5OTksImFwcGlkIjoiaWQiLCJ2ZXIiOiIxLjAifQ.UVQYT1FBt5J_` |
 |Medium| `Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2hvc3QiLCJleHAiOjk5OTk5OTk5OTksImFwcGlkIjoiaWQiLCJ2ZXIiOiIxLjAifQ.UVQYT1FBt5J_` |

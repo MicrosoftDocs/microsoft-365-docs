@@ -48,7 +48,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `Amazon AWS Access Key: abcdefghijklmnopqrst0123456789/+ABCDEFGH;` |
 |Medium| `Client secret (AWS): abcdefghijklmnopqrst0123456789/+ABCDEFGH;` |

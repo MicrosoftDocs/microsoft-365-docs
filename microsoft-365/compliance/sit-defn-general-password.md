@@ -225,7 +225,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `password = D3m0P@sswd!` |
 |Medium| `secret : DemoPasswd!` |

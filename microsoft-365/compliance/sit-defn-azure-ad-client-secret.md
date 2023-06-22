@@ -49,7 +49,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `"TenentId=01234567-abcd-abcd-abcd-abcdef012345;AppId=01234567-abcd-abcd-abcd-abcdef012345;AppSecret=abc8Q~defghijklmnopqrstuvwxyz-_.~0123456;"` |
 |Medium| `AppId=01234567-abcd-abcd-abcd-abcdef012345;AppSecret=abcdefghijklmnopqrstuvwxyz-_012345;  ` |

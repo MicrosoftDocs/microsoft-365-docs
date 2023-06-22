@@ -97,7 +97,7 @@ for example:
 
 ## Credential example 
 
-|Confidence Band|  |
+|Confidence Band|Example|
 |----|----|
 |High| `initial catalog=host_name;database=db_name;uid=user_name;password=ZYXWVU_2;` |
 |Medium| `user=user_name;password=ZYXWVU_2` |
