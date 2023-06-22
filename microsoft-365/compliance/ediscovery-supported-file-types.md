@@ -39,10 +39,13 @@ Microsoft Purview eDiscovery (Premium) supports many file types at many differen
 |Mime type|File identification|Metadata extraction|Container extraction|Possible Extensions|
 |---|:---:|:---:|:---:|:---:|
 |application/x-7z-compressed|Yes|Yes|Yes|.7z|
-|application/x-rar-compressed|Yes|Yes|Yes|.rar|
+|application/x-rar-compressed|Yes|Yes|Yes|.rar<sup>1</sup>|
 |application/x-tar|Yes|Yes|Yes|.tar|
 |application/zip|Yes|Yes|Yes|.zip|
 |
+
+> [!NOTE]
+> <sup>1</sup> Version 5 .rar files aren't currently supported.
 
 ## Audio / Video
 
