@@ -60,7 +60,7 @@ Summary of outcomes:
 
 - You've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). To check this status, you can run `(Get-SPOTenant).EnableAIPIntegration` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to **True**.
 
-- To support sensitivity labels for PDFs, you've [added support for PDFs in SharePoin](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf). To check this status, you can run `(Get-SPOTenant).EnableSensitivityLabelforPDF` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to **True**.
+- To support sensitivity labels for PDFs, you've [added support for PDFs in SharePoint](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf). To check this status, you can run `(Get-SPOTenant).EnableSensitivityLabelforPDF` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to **True**.
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
 
