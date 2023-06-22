@@ -1,11 +1,11 @@
 ---
-title: "Get started with the Microsoft Purview Chrome Extension"
+title: "Get started with the Microsoft Purview extension for Chrome"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -21,23 +21,23 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy the Microsoft Purview Extension."
+description: "Prepare for and deploy the Microsoft Purview extension for Chrome."
 ---
 
-# Get started with Microsoft Purview Chrome Extension
+# Get started with the Microsoft Purview extension for Chrome
 
-Use these procedures to roll out the Microsoft Purview Chrome Extension.
+Use these procedures to roll out the Microsoft Purview extension for Chrome.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 > [!NOTE]
-> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
+> Microsoft Purview extension for Chrome is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
 
 ## Before you begin
 
-To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview extension for Chrome, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or Endpoint DLP
 
-- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview extension for Chrome](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -59,10 +59,9 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-- Your org must be licensed for Endpoint DLP
+- Your organization must be licensed for Endpoint DLP.
 - Your devices must be running Windows 10 x64 build 1809 or later.
-- The device must have Antimalware Client Version is 4.18.2202.x or later. Check your current version by opening **Windows Security** app, select the **Settings** icon, and then select **About**.
-
+- The device must have Antimalware Client version 4.18.2202.x or later. Check your current version by opening the **Windows Security** app, select the **Settings** icon, and then select **About**.
 
 ### Permissions
 
@@ -96,6 +95,7 @@ Here's a list of applicable role groups. To learn more about them, see [Permissi
 - Information Protection Readers
 
 ### Overall installation workflow
+<!-- 6/14/2023--No test environment available for verifying the procedures herein. -->
 
 Deploying the extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Intune or Group Policy for organization-wide deployments.
 
@@ -156,17 +156,16 @@ Using the settings catalog, follow these steps to manage Chrome extensions:
 12. Change the toggle to **Enabled**.
 13. Enter the following value for the extensions and app IDs and update URL:
      `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`.
-
     
-11. Select **Next**.
+14. Select **Next**.
 
-12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
+15. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
 
-13. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
+16. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
 
-14. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
+17. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
 
-15. Select **Create**.
+18. Select **Create**.
 
 ### Deploy using Group Policy
 
@@ -194,7 +193,7 @@ If you don't want to use Microsoft Intune, you can use group policies to deploy 
 
 #### Upload to cloud service, or access by unallowed browsers Cloud Egress
 
-1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
+1. Create or get a sensitive item and try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
 #### Testing other DLP scenarios in Chrome
 
@@ -206,8 +205,8 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 - Print a document
   - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-- Copy to USB Removeable Media
-  - To test, try to save the file to a removeable media storage.
+- Copy to USB Removable Media
+  - To test, try to save the file to a removable media storage.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to Network Share
   - To test, try to save the file to a network share.

@@ -20,16 +20,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/12/2023
+ms.date: 6/22/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Impersonation insight in Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _Impersonation_ is when the sender of an email message looks similar to a real or expected sender's email address. Attackers often use impersonated sender email addresses in phishing or other types of attacks to gain the trust of the recipient. There are two basic types of impersonation:
 
@@ -71,13 +70,15 @@ The insight has two modes:
 - **Insight mode**: If impersonation protection is enabled and configured in any anti-phishing policies, the insight shows the number of detected messages from impersonated domains and impersonated users (senders) over the past seven days. The number shown is the total of all detected impersonation attempts from all anti-phishing policies.
 - **What if mode**: If impersonation protection isn't enabled and configured in any active anti-phishing policies, the insight shows how many messages _would have been_ detected by impersonation protection over the past seven days.
 
-To view information about the impersonation detections, select the **View impersonations** link in the impersonation insight.
+To view information about impersonation detections, select **View impersonations** in the impersonation insight to go to the **Impersonation insight** page.
 
 ## View information about domain impersonation detections
 
-After you select the **View impersonations** link in the impersonation insight, you're taken to the **Impersonation insight** page. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+The **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight> is available when you select **View impersonations** in the impersonation insight on the **Anti-phishing** page.
 
-On the **Impersonation insight** page, verify that the **Domains** tab is selected. The following information is shown:<sup>\*</sup>:
+On the **Impersonation insight** page, verify the **Domains** tab is selected.
+
+You can sort the entries by clicking on an available column header. The following columns are available:<sup>\*</sup>:
 
 - **Sender Domain**: The impersonating domain, which is the domain that was used to send the email message.
 - **Message count**: The number of messages from impersonating sender domain over the last seven days.
@@ -89,9 +90,7 @@ On the **Impersonation insight** page, verify that the **Domains** tab is select
   - **Yes**: The domain was configured as trusted domain (an exception for impersonation protection) in the anti-phishing policy that detected the message. Messages from the impersonated domain were detected, but allowed.
   - **No**: The domain was configured for impersonation protection in the anti-phishing policy that detected the message. The action for domain impersonation detections in the anti-phishing policy is done to the message.
 
-Select a column header to sort by that column.
-
-sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -107,44 +106,54 @@ Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" borde
 
 On the **Domains** tab on the **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight?type=Domain>, select one of the impersonation detections by clicking anywhere in the row other than the check box.
 
-The details flyout that open contains the following actions and information:
+The following information is available in the details flyout:
+
+- **Why did we catch this?**
+- **What do you need to do?**
+- **Domain summary**: The domain that was detected as impersonation.
+- **Whois data**: Contains information about the domain:
+  - **Sender location**
+  - **Domain created date**
+  - **Domain expiration date**
+  - **Registrant**
+
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+
+- **Email from sender**: This section shows the following information about similar messages from senders in the domain:
+  - **Date**
+  - **Recipient**
+  - **Subject**
+  - **Sender**
+  - **Sender IP**
+  - **Delivery action**
 
 > [!TIP]
 > To see details about other domain impersonation entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-- **Select impersonation policy to modify** and **Add to the allowed to impersonation list**: These settings work together to add the domain to the [Trusted senders and domains](anti-phishing-policies-about.md#trusted-senders-and-domains) list in the selected policy so messages from senders in this domain are no longer identified as domain impersonation:
-  - Select the anti-phishing policy in the dropdown list. The anti-phishing policy that was responsible for detecting the message is shown in the **Policy** value on the **Domain** tab.
-  - Slide the toggle to on: :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: to add the domain to the **Trusted senders and domains** list in the selected policy.
+To prevent senders in a detected domain from being identified as domain impersonation, see the next subsection.
 
-    To remove the domain from the **Trusted senders and domains** list, slide the toggle back to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::
+### Exempt senders in a detected domain from future domain impersonation checks
 
-- The following information is available in the details flyout:
-  - **Why did we catch this?**
-  - **What do you need to do?**
-  - **Domain summary**: The domain that was detected as impersonation.
-  - **Whois data**: Contains information about the domain:
-    - **Sender location**
-    - **Domain created date**
-    - **Domain expiration date**
-    - **Registrant**
+On the **Domains** tab of the **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight?type=Domain>, use the following steps to exempt senders in a detected domain from being identified as domain impersonation:
 
-  - **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+Select the entry from the list by clicking anywhere in the row other than the check box.
 
-  - **Email from sender**: This section shows the following information about similar messages from senders in the domain:
-    - **Date**
-    - **Recipient**
-    - **Subject**
-    - **Sender**
-    - **Sender IP**
-    - **Delivery action**
+In the details flyout that opens, use the **Select impersonation policy to modify** and **Add to the allowed to impersonation list** settings at the top of the flyout. These settings work together to add the domain to the [Trusted senders and domains](anti-phishing-policies-about.md#trusted-senders-and-domains) list in the policy that incorrectly identified the message as domain impersonation:
+
+- Select the anti-phishing policy in the dropdown list. The anti-phishing policy that was responsible for detecting the message is shown in the **Policy** value on the **Domain** tab.
+- Slide the toggle to on: :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: to add the domain to the **Trusted senders and domains** list in the selected policy.
+
+  To remove the domain from the **Trusted senders and domains** list, slide the toggle back to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::
 
 When you're finished in the details flyout, select **Close**.
 
 ## View information about user impersonation detections
 
-After you select the **View impersonations** link in the impersonation insight, you're taken to the **Impersonation insight** page. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+The **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight> is available when you select **View impersonations** in the impersonation insight on the **Anti-phishing** page.
 
-On the **Impersonation insight** page, select the **Users** tab. The following information is shown:<sup>\*</sup>:
+On the **Impersonation insight** page, select the **Users** tab.
+
+You can sort the entries by clicking on an available column header. The following columns are available:<sup>\*</sup>:
 
 - **Sender**: The email address of the impersonating sender that sent the email message.
 - **Message count**: The number of messages from the impersonating sender over the last seven days.
@@ -156,9 +165,7 @@ On the **Impersonation insight** page, select the **Users** tab. The following i
   - **Yes**: The sender was configured as trusted user (an exception for impersonation protection) in the anti-phishing policy that detected the message. Messages from the impersonated sender were detected, but allowed.
   - **No**: The sender was configured for impersonation protection in the anti-phishing policy that detected the message. The action for user impersonation detections in the anti-phishing policy is done to the message.
 
-Select a column header to sort by that column.
-
-sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
 - Horizontally scroll in your web browser.
 - Narrow the width of appropriate columns.
@@ -174,30 +181,38 @@ Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" borde
 
 On the **Users** tab on the **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight?type=User>, select one of the impersonation detections by clicking anywhere in the row other than the check box.
 
-The details flyout that open contains the following actions and information:
+The following information is available in the details flyout:
+
+- **Why did we catch this?**
+- **What do you need to do?**
+- **Sender summary**: The sender that was detected as impersonation.
+
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+
+- **Email from sender**: This section shows the following information about similar messages from the sender:
+  - **Date**
+  - **Recipient**
+  - **Subject**
+  - **Sender**
+  - **Sender IP**
+  - **Delivery action**
 
 > [!TIP]
 > To see details about other user impersonation entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-- **Select impersonation policy to modify** and **Add to the allowed to impersonation list**: These settings work together to add the user to the [Trusted senders and domains](anti-phishing-policies-about.md#trusted-senders-and-domains) list in the selected policy so messages from this sender are no longer identified as user impersonation:
-  - Select the anti-phishing policy in the dropdown list. The anti-phishing policy that was responsible for detecting the message is shown in the **Policy** value on the **Domain** tab.
-  - Slide the toggle to on: :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: to add the user to the **Trusted senders and domains** list in the selected policy.
+To prevent a detected sender from being identified as user impersonation, see the next subsection.
 
-    To remove the user from the **Trusted senders and domains** list, slide the toggle back to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::
+### Exempt a detected sender from future user impersonation checks
 
-- The following information is available in the details flyout:
-  - **Why did we catch this?**
-  - **What do you need to do?**
-  - **Sender summary**: The sender that was detected as impersonation.
+On the **Users** tab of the **Impersonation insight** page at <https://security.microsoft.com/impersonationinsight?type=User>, use the following steps to exempt detected senders from being identified as user impersonation:
 
-  - **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+Select the entry from the list by clicking anywhere in the row other than the check box.
 
-  - **Email from sender**: This section shows the following information about similar messages from the sender:
-    - **Date**
-    - **Recipient**
-    - **Subject**
-    - **Sender**
-    - **Sender IP**
-    - **Delivery action**
+In the details flyout that opens, use the **Select impersonation policy to modify** and **Add to the allowed to impersonation list** settings at the top of the flyout. These settings work together to add the sender to the [Trusted senders and domains](anti-phishing-policies-about.md#trusted-senders-and-domains) list in the policy that incorrectly identified the message as user impersonation:
+
+- Select the anti-phishing policy in the dropdown list. The anti-phishing policy that was responsible for detecting the message is shown in the **Policy** value on the **Domain** tab.
+- Slide the toggle to on: :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: to add the sender to the **Trusted senders and domains** list in the selected policy.
+
+  To remove the sender from the **Trusted senders and domains** list, slide the toggle back to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::
 
 When you're finished in the details flyout, select **Close**.

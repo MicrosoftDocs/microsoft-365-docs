@@ -98,7 +98,7 @@ Here are the browsers that are currently supported. We support the latest versio
 |Platform  |Google Chrome |Apple Safari |Microsoft Edge (Chromium)|
 |---------|:---|:---|:---:|
 |Android   | &#x2714; &sup1;      |         |         |
-|iOS    |         | &#x2714; &sup1; &sup2; |         |
+|iOS    | &#x2714; | &#x2714; &sup1; &sup2; |         |
 |macOS     | &#x2714; | &#x2714;|         |
 |Windows    | &#x2714; |   | &#x2714; |
 |Ubuntu/Linux     | &#x2714;         |     |         |

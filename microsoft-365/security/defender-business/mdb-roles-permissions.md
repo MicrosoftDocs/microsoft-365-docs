@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/01/2023
+ms.date: 06/19/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -42,9 +42,9 @@ The following table describes the three roles that can be assigned in Defender f
 
 | Permission level | Description |
 |:---|:---|
-| **Global administrators** (also referred to as global admins) <p> *As a best practice, limit the number of global admins.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. <p> Global admins are able to modify settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **Security administrators** (also referred to as security admins) | Security admins can perform the following tasks: <br/>- View and manage security policies<br/>- View and manage security threats and alerts (these activities include taking response actions on endpoints)<br/>- View security information and reports |
-| **Security reader** | Security readers can perform the following tasks:<br/>- View security policies<br/>- View security threats and alerts<br/>- View security information and reports  |
+| **Global administrators** (also referred to as global admins) <br/><br/> *As a best practice, limit the number of global admins. See [Security guidelines for assigning roles](/microsoft-365/admin/add-users/about-admin-roles#security-guidelines-for-assigning-roles).* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default. Global admins typically complete the setup and configuration process in Defender for Business, including onboarding devices.<br/><br/> Global admins are able to modify settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
+| **Security administrators** (also referred to as security admins) | Security admins can perform the following tasks: <br/>- View and manage security policies<br/>- View, respond to, and manage alerts <br/>- Take response actions on devices with detected threats<br/>- View security information and reports <br/><br/>In general, security admins use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) to perform security tasks. |
+| **Security reader** | Security readers can perform the following tasks:<br/>- View a list of onboarded devices<br/>- View security policies<br/>- View alerts and detected threats<br/>- View security information and reports <br/><br/>Security readers cannot add or edit security policies, nor can they onboard devices. |
 
 ## View or edit role assignments
 
@@ -54,9 +54,9 @@ The following table describes the three roles that can be assigned in Defender f
 
 3. Select one of the following roles to open its side pane:
 
-   - Global administrator
-   - Security administrator
-   - Security reader
+   - Global Administrator
+   - Security Administrator
+   - Security Reader
 
    > [!IMPORTANT]
    > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 

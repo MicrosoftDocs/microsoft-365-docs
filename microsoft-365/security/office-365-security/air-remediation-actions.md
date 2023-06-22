@@ -16,20 +16,19 @@ ms.collection:
 - m365-security
 - tier2
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
-ms.date: 5/31/2023
+ms.date: 06/09/2023
 ms.custom: 
 - air
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Remediation actions in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## Remediation actions
 
@@ -59,7 +58,7 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 |User|A user is sending malware/phish|Automated investigation doesn't result in a specific pending action. <p> The user might be reporting malware/phish, or someone could be [spoofing the user](anti-phishing-protection-spoofing-about.md) as part of an attack. Use [Threat Explorer](threat-explorer-about.md) to view and handle email containing [malware](threat-explorer-views.md#malware) or [phish](threat-explorer-views.md#phish).|
 |User|Email forwarding <br> (Mailbox forwarding rules are configured, chch could be used for data exfiltration.)|Remove forwarding rule <p> Use the [Autofowarded messages report](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) to view specific details about forwarded email.|
 |User|Email delegation rules <br> (A user's account has delegations set up.)|Remove delegation rule <p> If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection/), consider [investigating the user](/microsoft-365/security/defender-endpoint/investigate-user) who's getting the delegation permission.|
-|User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](../../compliance/dlp-learn-about-dlp.md) |Automated investigation doesn't result in a specific pending action. <p> [View DLP reports and take action](../../compliance/view-the-dlp-reports.md).|
+|User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](../../compliance/dlp-learn-about-dlp.md) |Automated investigation doesn't result in a specific pending action. <p> [Get started with Activity Explorer](../../compliance/data-classification-activity-explorer.md#get-started-with-activity-explorer).|
 |User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation doesn't result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use the [New users forwarding email insight in the EAC](/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight) and [Outbound message report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to determine what's going on and take action.|
 
 ## Next steps
