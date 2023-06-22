@@ -257,7 +257,7 @@ Access to search the audit log is scoped based upon the administrative units ass
 | Admin units assigned to admins | Admin units available for scoped Search | Access to search and export audit logs |
 |--|--|--|
 | None (Default): Unrestricted access | All administrative units are available | Unrestricted access to all activity logs from any user, non-user, or system account.  |
-| One or more administrative units: Restricted access | Only those administrative units assigned to the admin are available | Restricted access to activity logs from users with a matching administrative unit assignment. |
+| One or more administrative units: Scoped access | Only those administrative units assigned to the admin are available | Scoped access to activity logs from users with a matching administrative unit assignment. |
 
 > [!NOTE]
 > The [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) and [Search-AdminAuditLog cmdlets](/powershell/module/exchange/search-adminauditlog) currently do not support scoped access. Search requests using these cmdlets always include unscoped activity logs from Exchange, even when the user performing the search is a scoped admin. To access scoped activity logs from any Microsoft service, including Exchange mailbox activity logs, use the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet.
