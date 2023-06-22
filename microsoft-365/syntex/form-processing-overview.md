@@ -19,9 +19,6 @@ description: Learn how to use AI Builder to create structured document processin
 
 # Overview of structured document processing in Microsoft Syntex
 
-> [!NOTE]
-> *Structured document processing* was known as *form processing* in previous releases.
-
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15YNo]
@@ -55,7 +52,7 @@ You can only create a structured document processing model in SharePoint documen
 
 If you need it enabled on your document library, contact your Microsoft 365 admin.
 
-## Requirements
+## Requirements and limitations
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#structured-document-processing).
 
