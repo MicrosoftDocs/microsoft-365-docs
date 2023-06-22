@@ -39,6 +39,6 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 3. On the **Manage Microsoft Syntex** page, select **Image tagging**.
 
-4. On the **Image tagging** page, choose the options that you want to use.
+4. On the **Image tagging** page, choose the option that you want to use.
 
 5. Select **Save**.
