@@ -641,7 +641,7 @@ MIP_S_CLP1            Disabled
 MIP_S_CLP2            Disabled
 ADALLOM_S_O365        PendingInput
 RMS_S_ENTERPRISE      Success
-Viva Engage           Success
+YAMMER_ENTERPRISE     Success
 PROJECTWORKMANAGEMENT Success
 BI_AZURE_P2           Success
 WHITEBOARD_PLAN3      Success
