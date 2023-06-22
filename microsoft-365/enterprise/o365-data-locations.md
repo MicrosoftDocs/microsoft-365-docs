@@ -62,3 +62,4 @@ See the following links to understand how you can determine current workload dat
 - OneNote Services [Data Location](m365-dr-workload-other.md#onenote-services)
 - Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#power-apps-for-microsoft-365)
 - Stream [Data Location](m365-dr-workload-other.md#stream)
+- Shifts [Data Location](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq#where-is-shifts-data-stored)
