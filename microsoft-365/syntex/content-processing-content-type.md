@@ -40,7 +40,7 @@ To set a content type when a file is added to a document library, follow these s
 
        ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
 
-    2. Select **Choose a content type**, and then select the appropriate content type for the file. The content types available in this list are the ones available in the library.
+    2. Select **Choose a content type**, and then select the appropriate [content type](https://learn.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) for the file. The content types shown in this list are the ones available in the library.
 
        ![Screenshot of the rule statement page showing the statement options.](../media/content-understanding/content-rule-statement-options.png)
 
@@ -49,7 +49,7 @@ To set a content type when a file is added to a document library, follow these s
 
     4. Select **Choose a condition**, and then select the appropriate condition.
 
-    5. In the **Enter a value** field, enter the appropriate value.
+    5. In the **Enter a value** field, enter the appropriate value. The value can be a specific keyword or text string you want to find in the file property.
 
        ![Screenshot of the rule statement page showing the completed statement.](../media/content-understanding/content-rule-completed-statement.png)
 
