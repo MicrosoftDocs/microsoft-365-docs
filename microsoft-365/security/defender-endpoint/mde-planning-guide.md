@@ -34,7 +34,7 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-To ensure your network is secure from attackers, it is important to onboard all of your devices to Microsoft Defender for Endpoint. This will allow you to quickly identify and stop attacks, prioritize risks, and evolve your defenses across operating systems and network devices.
+To ensure your network is secure from attackers, it is important to onboard all of your devices to Microsoft Defender for Endpoint. This will help you to quickly identify and stop attacks, prioritize risks, and evolve your defenses across operating systems and network devices.
 
 Microsoft Defender for Endpoint provides tools to help you assess, onboard, and protect your devices. It also probes and scans your network to discover unmanaged devices in your environment that you can subsequently onboard. By onboarding your devices to Microsoft Defender for Endpoint, you can ensure that your network is secure from attackers and that your devices are protected from threats.
 
