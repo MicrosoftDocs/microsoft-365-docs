@@ -93,7 +93,7 @@ If you disable these experiences as outlined in the [Settings management](loop-w
 - Guests won't be able to view or collaborate on a Loop component.
 - External recipients of emails won't be able to view or collaborate on a Loop component.
 - Loop components aren't supported in Teams channels.
-- Loop components won't load only if the file was moved to a different library. If file is moved to different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
+- Loop components won't load only if the file was moved to a different library. If the file is moved to different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
 
 ## Related topics
 
