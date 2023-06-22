@@ -40,7 +40,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` [*](#mdi-only) | `datetime` | The date and time that the line was written to the database. <br><br>This is used when there are multiple lines for each identity, such as when a change is detected, or if a certain timeframe has passed, as noted in the `ChangeSource` attribute. |
+| `Timestamp` [*](#mdi-only) | `datetime` | The date and time that the line was written to the database. <br><br>This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added. |
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
@@ -62,8 +62,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Phone` [*](#mdi-only)  | `string` | The listed phone number of the account user|
 | `CreatedDateTime` [*](#mdi-only)  | `datetime` | The date and time that the user was created|
 | `SourceProvider` [*](#mdi-only)  | `string` |The identity's source, such as Azure Active Directory, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning) synchronized from Active Directory to Azure Active Directory |
-| `ChangeSource` [*](#mdi-only)  | `string` |Identifies which identity provider or internal process triggered the creation of the new role |
-| `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user |
+| `ChangeSource` [*](#mdi-only)  | `string` |Identifies which identity provider or process triggered the addition of the new row. For example, the `System-UserPersistence` value is used for any rows added by an automated process.|
+| `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user by Defender for Identity |
 | `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Azure Active Directory only, the roles assigned to the account user|
 
 <a name="mdi-only"></a>* Available only for tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
