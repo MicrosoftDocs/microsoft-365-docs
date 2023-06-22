@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 06/16/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -119,7 +119,7 @@ For more information about the differences between eDiscovery holds and Microsof
 
 ## Inactive mailboxes and auto-expanding archives
 
-An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. In situations where it's necessary to recover data from an inactive mailbox with an auto-expanding archive, we recommended that you use the content search tool to export the data from the mailbox and then import to another mailbox. For step-by-step instructions to search an inactive mailbox and export the search results, see:
+An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. If, for compliance reasons, you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox. This action is supported for eDiscovery purposes only, and can't be used as a backup solution. For instructions to use content search for the recovery of data for eDiscovery, see following articles:
 
 - [Content search](ediscovery-content-search.md)
 

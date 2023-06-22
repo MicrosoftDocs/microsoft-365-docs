@@ -162,6 +162,13 @@ Here's the descriptions of the pre-collection estimate management options.
   - The total size (in bytes) of the items in each content location.
   - The service (such as Exchange or SharePoint) in which the content location is located.
 
+  The limits for the export report and report results are as follows:
+  
+    - Total items: 1 million
+    - Total locations: 500,000
+    - Exported results (items): 500,000
+    - Exported results (locations): 100,000
+
 - **Copy collection**: Create a new collection estimate by copying the settings from an existing collection. You have to use a different name for the new collection. You also have the option to modify the settings before you submit the new collection. After you submit it, the search query runs and new estimates and statistics are generated. This is a good way to quickly create additional collection estimate and then modify selected settings as necessary while still preserving information in the original collection. This also lets you easily compare the results of two similar collections.
 
 > [!NOTE]

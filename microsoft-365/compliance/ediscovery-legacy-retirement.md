@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 06/15/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,9 +25,11 @@ ms.custom: admindeeplinkCOMPLIANCE
 > [!IMPORTANT]
 > The functionality of the legacy eDiscovery tools described in this article has either been removed from the Microsoft 365 service or is still available, but no longer supported. Any functionality that's still available may be removed without notice. If you're still using any of these legacy tools, consider migrating to the eDiscovery tools in the Microsoft Purview compliance portal or one of the alternatives described in this article.
 
-Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Microsoft 365 services, such as SharePoint Online and Microsoft 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Microsoft 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>. This allows organizations to respond to legal, internal, and other document requests for content across many Microsoft 365 services, including Exchange Online.
+Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Microsoft 365 services, such as SharePoint Online and Microsoft 365 Groups. 
 
-As a result of this new and improved eDiscovery functionality in the compliance portal, we're retiring the following eDiscovery-related features and functionality related to searching for email content in Exchange Online and Microsoft 365:
+To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Microsoft 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>. This allows organizations to respond to legal, internal, and other document requests for content across many Microsoft 365 services, including Exchange Online.
+
+As a result of this new and improved eDiscovery functionality in the compliance portal, the following eDiscovery-related features and functionality related to searching for email content in Exchange Online and Microsoft 365 are retired:
 
 - [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) and [In-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) in the Exchange admin center.
 
@@ -59,7 +61,7 @@ The following sections in this article provide guidance about each feature being
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
+## In-Place eDiscovery and In-Place Holds in the Exchange admin center
 
 As per the original announcement on July 1, 2017, the In-Place eDiscovery & Hold functionality in the Exchange admin center (EAC) is being retired. The In-Place eDiscovery & Holds page in the EAC allowed you to search, hold, and export content from Exchange Online. In-Place eDiscovery also let you copy search results to a discovery mailbox so that you or other eDiscovery managers could review content and make it available for legal, regulatory, and public requests.
 
@@ -70,12 +72,13 @@ Because all of these capabilities (except for copying search results to a discov
 - Office 365 and Microsoft 365 Enterprise organizations
 - Office 365 and Microsoft 365 Education organizations
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-- Office 365 Germany
+- Office 365 and Microsoft 365 operated by 21Vianet (China)
+- Office 365 and Microsoft 365 Germany
 
 ### Timeline for retirement
 
 - July 1, 2020: You won't be able to create new searches and holds, but you can still run, edit, and delete existing searches at your own risk. Microsoft Support will no longer In-Place eDiscovery & Holds in the EAC.
-- October 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
+- October 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC was placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
 
 ### Alternative tools
 
@@ -169,12 +172,13 @@ Because these capabilities are now available in the [<span class="underline">com
 - Office 365 and Microsoft 365 Enterprise organizations
 - Office 365 and Microsoft 365 Education organizations
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
+- Office 365 and Microsoft 365 operated by 21Vianet (China)
 - Office 365 Germany
 
 ### Timeline
 
 - July 1, 2020: You won't be able to use **New-MailboxSearch** to create new In-Place eDiscovery searches and In-Place Holds, but you can still use cmdlets to run, edit, and delete existing searches and holds at your own risk. Microsoft Support will no longer provide assistance for these types of searches and holds.
-- October 1, 2020: As previously stated, The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. That also means that you won't be able to use the **New-MailboxSearch**, **Start-MailboxSearch**, or **Set-MailboxSearch** cmdlets. You'll only be able to get and remove existing searches and holds.
+- October 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC was placed in a read-only mode. You won't be able to use the **New-MailboxSearch**, **Start-MailboxSearch**, or **Set-MailboxSearch** cmdlets. You'll only be able to get and remove existing searches and holds.
 
 ### Alternative tools
 
@@ -246,6 +250,7 @@ The **Search-Mailbox** cmdlet in Exchange Online PowerShell is being retired as 
 - Office 365 and Microsoft 365 Enterprise organizations
 - Office 365 and Microsoft 365 Education organizations
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
+- Office 365 and Microsoft 365 operated by 21Vianet (China)
 - Office 365 Germany
 
 ### Timeline
