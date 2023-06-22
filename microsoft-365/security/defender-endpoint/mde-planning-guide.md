@@ -41,9 +41,13 @@ Use the guidance in these articles to deploy Defender for Endpoint as your multi
 
 The steps to deploy Defender for Endpoint are:
 
+:::image type="content" source="../../media/defender-endpoint/onboard-mde.png" alt-text="The deployment steps" lightbox="../../media/defender-endpoint/onboard-mde.png":::
 
-
-:::image type="content" source="../../media/defender-endpoint/onboard-mde.png" alt-text="The deployment steps" lightbox="../../media/defender-endpoint/onboard-mde.png"::
+1. [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md): This step focuses on getting your environment ready for deployment.
+2. [Step 2 - Assign roles and permissions](prepare-deployment.md)
+3. [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md): Identify your architecture and the deployment method that best suites your organization.
+4. [Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Microsoft Defender for Endpoint.
+5. [Step 5 - Configure Microsoft Defender for Endpoint capabilities](onboarding.md): You're now ready to configure Defender for Endpoint security capabilities to protect your devices.
 
 ## Before you begin
 
@@ -61,56 +65,8 @@ Preparation is key to any successful deployment. In this section guides, you'll 
 |CDOC distribution|High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).|
 |Security information and event (SIEM)|SIEM technology in use.|
 
-:
-
-## Step 1 - Set up Microsoft Defender for Endpoint deployment
-
-In this deployment scenario, you'll be guided through the steps on:
-
-Licensing validation
-Tenant configuration
-Network configuration
-
-For more information see, [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
-
-## Step 2 - Assign roles and permissions
-
-Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends [review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
-
-For more information, see [Assign roles and permissions](prepare-deployment.md).
-
-## Step 3 - Identify your architecture
-
-We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Depending on your environment, some tools are better suited for certain architectures.
-
-To select the appropriate Defender for Endpoint architecture that best suites your organization, see [Identify your architecture](deployment-strategy.md).
-
-## Step 4 - Choose your deployment method and onboard devices
-
-1. Assess your devices: Use the Microsoft Defender for Endpoint assessment tool to determine which devices need to be onboarded.
-
-2. Onboard your devices: Use the onboarding wizard to add your devices to Microsoft Defender for Endpoint.
-
-The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately. For more information, see [Choose your deployment method](onboarding.md)
-
-## Step 5 - Configure Microsoft Defender for Endpoint capabilities
-
-After onboarding endpoints, configure the security capabilities in Defender for Endpoint so that you can maximize the robust security protection available in the suite. Capabilities include:
-
-Endpoint detection and response
-Next-generation protection
-Attack surface reduction
-
-In many cases, organizations will have existing endpoint security products in place. The bare minimum every organization should have been an antivirus solution. But in some cases, an organization might also have implanted an EDR solution already.
-
-Historically, replacing any security solution used to be time intensive and difficult to achieve due to the tight hooks into the application layer and infrastructure dependencies. However, because Defender for Endpoint is built into the operating system, replacing third-party solutions is now easy to achieve.
-
-For more information, see [Configure Microsoft Defender for Endpoint capabilities](onboarding.md).
-
-After you've completed this guide, you'll be set up with the right access permissions, your endpoints will be onboarded and reporting sensor data to the service, and capabilities such as next-generation protection and attack surface reduction will be in place.
-
-## Next steps
+## Next step
 
 After reading this article, proceed to:
 
-- **[Set up Microsoft Defender for Endpoint deployment](production-deployment.md)**
+- [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
