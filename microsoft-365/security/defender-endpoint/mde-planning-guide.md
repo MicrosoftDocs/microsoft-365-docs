@@ -34,10 +34,9 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-By onboarding your devices to Microsoft Defender for Endpoint, you can take advantage of the extensive security capabilities available to protect your organization from malicious attacks.
-With devices onboarded you'll be able to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
+Maximize available security capabilities and better protect your enterprise from cyber threats by deploying Microsoft Defender for Endpoint and onboarding your devices. Onboarding your devices will enable you to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
 
-Use the guidance in these articles to deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment method, onboard devices, and configure capabilities. Each step corresponds to a separate article.
+Use the guidance in these articles to deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
 
 The steps to deploy Defender for Endpoint are:
 
@@ -49,9 +48,9 @@ The steps to deploy Defender for Endpoint are:
 4. [Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Microsoft Defender for Endpoint.
 5. [Step 5 - Configure capabilities](onboard-configure.md): You're now ready to configure Defender for Endpoint security capabilities to protect your devices.
 
-## Before you begin
+## Requirements
 
-Preparation is key to any successful deployment. In this section guides, you'll be guided on the points you'll need to consider as you prepare to deploy Defender for Endpoint.
+The following is a list of pre-requisites required to deploy Defender for Endpoint:
 
 - You're a global admin
 - You meet the [minimum requirements](minimum-requirements.md)
