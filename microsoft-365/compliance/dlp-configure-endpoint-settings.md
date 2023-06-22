@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -54,7 +54,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 |Always audit file activity for devices     |Supported         |Supported         |         |
 |Printer groups| Supported |Not Supported| |
 |Removable USB device groups| Supported | Not Supported | |
-|Autoquarantine file from unallowed apps | Supported | Supported (preview)| |
+|Auto-quarantine file from unallowed apps | Supported | Supported (preview)| |
 |Network share groups | Supported | Not Supported | |
 |VPN settings | Supported | Not Supported | |
 |Business justification in policy tips | Supported | Supported (preview)| |
@@ -84,7 +84,7 @@ These Windows versions support advanced classification scanning and protection:
 > - DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 > [!TIP]
-> To use advanced classification for Windows 10 devices, you must install KB5016688. To use advanced classification for Windows 11 devices, you must install KB5016691 be installed for Windows 11 devices. Additionally, you must enable advanced classification before **Activity explorer** will display contextual text for DLP rule-matched events. To learn more about contextual text, see [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  
+> To use advanced classification for Windows 10 devices, you must install KB5016688. To use advanced classification for Windows 11 devices, KB5016691 must be installed on those Windows 11 devices. Additionally, you must enable advanced classification before **Activity explorer** will display contextual text for DLP rule-matched events. To learn more about contextual text, see [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  
 
 ## File path exclusions
 
@@ -130,7 +130,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 ## Set up evidence collection for file activities on devices (preview)
 
-When it identifies items that match policies on devices, DLP can copy them to an [Azure storage account](/azure/storage/common/storage-account-overview). This is useful for auditing policy activity and troubleshooting specific matches. Use this section to add the name and URL of the storage account. 
+When it identifies items that match policies on devices, DLP can copy them to an [Azure storage account](/azure/storage/common/storage-account-overview). This is useful for auditing policy activity and troubleshooting specific matches. Use this section to add the name and URL of the storage account.
 
 > [!NOTE]
 > Before you enable this feature, you must create an Azure storage account and a container in that storage account. You must also configure permissions for the account. As you set up your Azure storage account, keep in mind that you'll probably want to use a storage account that's in the same Azure region/geopolitical boundary as your tenant. You should also consider configuring [Azure storage account access tiers](/azure/storage/blobs/storage-blob-storage-tiers) and [Azure storage account pricing](/azure/storage/common/storage-account-overview#pricing).
@@ -154,8 +154,8 @@ This table shows the default settings for network share coverage and exclusions.
 |Network share coverage and exclusions (preview) |Just in time protection (preview) |Resultant behavior  |
 |---------|---------|---------|
 |Enabled     |Disabled         |- DLP policies scoped to Devices are applied to all network shares and mapped drives that the device is connected to.  [Devices actions](dlp-policy-reference.md#devices-actions)        |
-|Disabled    |Enabled         |- Just in time protection is applied only to the files on storage devices that are local to the endpoint. |
-|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just in time protection is applied to all network shares and mapped drives that the device is connected to.         |
+|Disabled    |Enabled         |- Just-in-time protection is applied only to the files on storage devices that are local to the endpoint. |
+|Enabled     |Enabled         |- DLP policies that are scoped to Devices are applied to all network shares and mapped drives that the device is connected to. [Devices actions](dlp-policy-reference.md#devices-actions) </br>- Just-in-time protection is applied to all network shares and mapped drives that the device is connected to.         |
 | | | |
 
 **Network share coverage and exclusions** complements [DLP On-premises repository actions](dlp-on-premises-scanner-learn.md#dlp-on-premises-repository-actions). This table shows the exclusion settings and the resulting behavior depending on whether DLP is enabled or disabled for on-premises repositories.
@@ -176,7 +176,7 @@ The **Restricted apps** list (previously called **Unallowed apps**), is a custom
 > [!IMPORTANT]
 >  - Do not include the path to the executable. Include only the executable name (such as browser.exe).
 >
->   - The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
+>   - The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item.
 
 When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity is `audited`, `blocked`, or `blocked with override`, depending on how you configured the **Restricted apps** list. EXCEPTION: If an app on the **Restricted apps** list is also a member of a **Restricted app group**, the actions configured for activities in the **Restricted app group** override the actions configured for the **Restricted apps** list. All activity is audited and available for review in activity explorer.
 
@@ -229,6 +229,7 @@ When User A opens a DLP-protected file using Notepad, DLP allows the access and 
 If an app *isn't* in the **File activities for apps in restricted app groups** or the **Restricted app activities** list, or *is* in the **Restricted app activities** list, with an action of either `Audit only`, or `Block with override`, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
 ### macOS devices
+<!-- 6/14/2023: No Mac access; can't verify -->
 
 You can also prevent macOS apps from accessing sensitive data by defining them in the **Restricted app activities** list.
 
@@ -250,11 +251,11 @@ To prevent sensitive items from being synced to the cloud by cloud sync apps suc
 > [!NOTE]
 > When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Restricted apps**.  
 
-#### Autoquarantine 
+#### Auto-quarantine 
 
-When enabled, Autoquarantine is triggered when a restricted app attempts to access a DLP-protected sensitive item. Autoquarantine moves the sensitive item to an admin-configured folder. If configured to do so, autoquarrantine can leave a placeholder (**.txt**) file in place of the original. You can configure the text in the placeholder file to tell users the new location of the item, and other pertinent information.  
+When enabled, Auto-quarantine is triggered when a restricted app attempts to access a DLP-protected sensitive item. Auto-quarantine moves the sensitive item to an admin-configured folder. If configured to do so, autoquarrantine can leave a placeholder (**.txt**) file in place of the original. You can configure the text in the placeholder file to tell users the new location of the item, and other pertinent information.  
 
-You can use also autoquarantine to prevent an endless chain of DLP notifications for the user and admins. For more information, see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with autoquarantine](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-autoquarantine).
+You can use also auto-quarantine to prevent an endless chain of DLP notifications for the user and admins. For more information, see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine)
 
 ## Unallowed (Restricted) Bluetooth apps
 
@@ -269,6 +270,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 For Windows devices you can restrict the use of specified web browsers, identified by their executable names. The specified browsers are blocked from accessing files that match the conditions of an enforced a DLP policy where the upload-to-cloud services restriction is set to `block` or `block override`. When these browsers are blocked from accessing a file, end users see a toast notification asking them to open the file through Microsoft Edge.
 
 For macOS devices, you must add the full file path. To find the full path of Mac apps:
+<!-- 6/14/2023: No Mac access; can't verify -->
 
 1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
 
@@ -316,7 +318,7 @@ If a user attempts to upload a sensitive file with credit card numbers to contos
 However, if a user attempts to upload a sensitive file with credit card numbers to wingtiptoys.com (which isn't on the restricted list), the policy *isn't* applied and the user activity is simply audited. An event is generated, but it doesn't list the policy name or that of the triggering rule in the event details. No alert is generated.
 
 > [!IMPORTANT]
-> When the service restriction mode is set to `Allow`, you must have at least one service domain configured before restrictions are enforced.
+> When the service restriction mode is set to **Allow**, you must have at least one service domain configured before restrictions are enforced.
 
 **Summary table**
 The following table shows how the system behaves depending on the settings listed.
@@ -339,7 +341,7 @@ For example:
 | **`www.contoso.com`** |**Matches the specified domain name**: <p>`www.contoso.com` <p>**Does not match unspecified domains or subdomains** <p>*://anysubdomain.contoso.com/, in this case, you have to put the FQDN domain name itself `www.contoso.com`|
 | | |
 
-You can configure Up to 50 domains under **Sensitive Service domains**.
+You can configure up to 50 domains under **Sensitive Service domains**.
 	
 ### Sensitive service domains
 
@@ -354,7 +356,7 @@ When you list a website in **Sensitive service domains**, you can `audit`, `bloc
 For the print, copy data, and save actions, each website must be listed in a website group.
 
 > [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or an instance of Google Chrome that has the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or an instance of Google Chrome or Mozilla Firefox that has the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 
 The following table shows which browsers support these features:
 
@@ -362,6 +364,7 @@ The following table shows which browsers support these features:
 |---|---|
 | Microsoft Edge | - Print <br> - Copy <br> - Save <br> - Paste (preview) </br>- Upload|
 | Google Chrome (with the Microsoft Purview extension)| - Upload </br>- Paste (preview)|
+| Mozilla Firefox (with the Microsoft Purview extension)| - Upload </br>- Paste (preview)|
 
 Additionally, for Devices, you must use **Sensitive service domains** with a DLP policy. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. You can add a maximum of 50 websites into a single group and you can create a maximum of 20 groups. For more information, see [Scenario 6: Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 
@@ -383,7 +386,7 @@ Don't include the networking protocol as part of the URL (for instance, *https:/
 - Use `*` as a wildcard to specify all domains or all subdomains
 - Use `/` as a terminator at the end of a URL to scope to that specific site only.
 
-When you add a URL without a terminating slash mark ( `/`), that URL is scoped to that site and all subsites.
+When you add a URL without a terminating slash mark ( `/`), that URL is scoped to that site and all sub-sites.
 
 This syntax applies to all http/https websites. Here are some examples:
 
@@ -400,7 +403,7 @@ This syntax applies to all http/https websites. Here are some examples:
 
 ### Business justification in policy tips
 
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
+You can control how users interact with the business justification option in [DLP policy tip notifications](use-notifications-and-policy-tips.md#add-user-notifications-to-a-dlp-policy). This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
 - **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
 - **Only show default options**: Users are limited to selecting from a list of built-in justifications.
@@ -452,7 +455,7 @@ Let's look at an example. Say you want your DLP policy to block printing of cont
     - **IP range**
     - **Print to file** - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
     - **Universal print deployed on a printer** -  For more information on universal printers, see [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started).
-    - **Corporate printer** - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
+    - **Corporate printer** - is a print queue shared through on-premises Windows print server in your domain. Its path might look like this:  \\print-server\contoso.com\legal_printer_001
     - **Print to local** -  Any printer connecting through Microsoft print port but not any of above types. For example: print through remote desktop or redirect printer.
 
 2. Assign each printer in the group a **Display name**. These names appear only in the Microsoft Purview console.
@@ -476,7 +479,7 @@ Let's look at an example. Say you want your DLP policy to block printing of cont
 1. Select the parameters and provide the values to unambiguously identify the specific printer.
 1. Select **Add**.
 1. Add other printers as needed.
-1. Select **Close**.
+1. Select **Save** and then **Close**.
 
 ## Removable storage device groups
 
@@ -522,7 +525,7 @@ You can assign these policy actions to the group in a DLP policy:
 6. Select the parameters and provide the values to unambiguously identify the specific device.
 7. Select **Add**.
 8. Add other devices to the group as needed.
-9. Select **Close**.
+9. Select **Save** and then **Close**.
 
 The most common use case for creating removable storage groups is to use them to specify which removable storage devices users can copy files to. Generally, copying is only allowed for devices in a designated **Backup** group.
 
@@ -569,7 +572,7 @@ Once you have defined a network share group, you can use it in all of your DLP p
 1. Add the file path to the share.
 1. Select **Add**.
 1. Add other share paths to the group as needed.
-1. Select **Close**.
+1. Select **Save** and then **Close**.
 
 ## VPN settings
 

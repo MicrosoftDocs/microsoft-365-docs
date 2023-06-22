@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/23/2023
+ms.date: 6/20/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -18,15 +18,14 @@ ms.custom:
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # User tags in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 _User tags_ are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
