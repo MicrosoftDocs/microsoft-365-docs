@@ -45,7 +45,7 @@ The steps to deploy Defender for Endpoint are:
 1. [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md): This step focuses on getting your environment ready for deployment.
 2. [Step 2 - Assign roles and permissions](prepare-deployment.md): Identify and assign roles and permissions to view and manage Defender for Endpoint.
 3. [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md): Identify your architecture and the deployment method that best suits your organization.
-4. [Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Microsoft Defender for Endpoint.
+4. [Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Defender for Endpoint.
 5. [Step 5 - Configure capabilities](onboard-configure.md): You're now ready to configure Defender for Endpoint security capabilities to protect your devices.
 
 ## Requirements
