@@ -277,7 +277,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block all Office applications from creating child processes
 
-This rule blocks Office apps from creating child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access.
+This rule blocks Office apps from creating child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access. This rule also blocks execution of untrusted files that may have been saved by Office macros that are allowed to run in Office files.
 
 Creating malicious child processes is a common malware strategy. Malware that abuses Office as a vector often runs VBA macros and exploit code to download and attempt to run more payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes; such as spawning a command prompt or using PowerShell to configure registry settings.
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,7 +47,7 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft Purview compliance portal.
 
 > [!NOTE]
-> Now in preview, a sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+> A sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

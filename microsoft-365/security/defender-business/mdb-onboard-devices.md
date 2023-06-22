@@ -274,7 +274,7 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 ## Servers
 
 > [!NOTE]
-> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business-servers.md). Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers). To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
+> If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers). Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers). To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 Choose the operating system for your server:
 
@@ -285,7 +285,7 @@ Choose the operating system for your server:
 
 > [!IMPORTANT]
 > Make sure that you meet the following requirements before you onboard a Windows Server endpoint:
-> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)
 > - The enforcement scope for Windows Server is turned on. Go to **Settings** > **Endpoints** > **Configuration management** > **Enforcement scope**. Select **Use MDE to enforce security configuration settings from MEM**, select  **Windows Server**, and then select **Save**.
 
 You can onboard an instance of Windows Server to Defender for Business by using a local script.
@@ -340,7 +340,7 @@ After the command runs, the Command Prompt window will close automatically. If s
 
 > [!IMPORTANT]
 > Make sure that you meet the following requirements before you onboard a Linux Server endpoint:
-> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business-servers.md).)
+> - You have a Microsoft Defender for Business servers license. (See [How to get Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)
 > - You meet the [prerequisites for Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### Onboard Linux Server endpoints

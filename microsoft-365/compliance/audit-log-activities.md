@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -316,6 +316,15 @@ The following table lists the activities in information barriers that are logged
 | Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+
+## Microsoft Defender Experts activities
+
+The following table lists the activities in Microsoft Defender Experts that are logged into the Microsoft 365 audit log. For more information about Microsoft Defender Experts, see [Learn about Microsoft Defender Experts for XDR](/microsoft-365/security/defender/dex-xdr-overview) and [Learn about Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting)
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+| Defender Experts analyst permission created | DefenderExpertsAnalystPermissionCreated | An administrator granted one or more role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
+| Defender Experts analyst permission modified | DefenderExpertsAnalystPermissionModified | An administrator modified role permissions for Defender Experts analysts to investigate incidents or remediate threats.|
 
 ## Microsoft Forms activities
 

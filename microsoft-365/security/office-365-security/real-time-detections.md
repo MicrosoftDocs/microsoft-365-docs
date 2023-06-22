@@ -112,7 +112,7 @@ Here are the common components within these experiences:
 
   - You can also customize your columns to add or remove columns to optimize your view.
 
-  > [!Note]
+  > [!NOTE]
   > You can toggle between the *Chart View* and the *List View* to maximize your result set.
 
   > [!div class="mx-imgBorder"]

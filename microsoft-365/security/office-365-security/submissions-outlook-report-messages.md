@@ -57,6 +57,10 @@ For more information about reporting messages to Microsoft, see [Report messages
 >   If the toggle is **Off** ![Toggle off.](../../media/scc-toggle-off.png) or if **Use a non-Microsoft add-in button** is selected, then the **Report** button is not available in Outlook on the web.
 >
 > - Currently, the **Report** button in Outlook on the web does not honor the **Before a message is reported** and **After a message is reported** settings (notification pop-ups) in the [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+>
+> - Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+>   - Shared mailboxes require Send As or Send On Behalf permission for the user.
+>   - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
 
 ### Use the built-in Report button in Outlook on the web to report junk and phishing messages
 

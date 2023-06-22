@@ -56,18 +56,6 @@ Some regulations are included in Compliance Manager by default, depending on sub
 - **Customers at the A5/E5/G5 subscription levels**: In addition to the Microsoft Data Protection baseline, you can choose any three premium regulations to use for free.
 - **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: Cybersecurity Maturity Model Certification (CMMC), levels 1 through 5, is included in addition to the Microsoft Data Protection Baseline.
 
-#### Preview regulations
-
-The regulations listed below are available in preview. Creating assessments from these regulations won't count toward your total of licensed regulations used.
-
-- ISO 27001:2013 for Azure (Preview)
-- ISO 27001:2013 for Dynamics 365 (Preview)
-- FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 for Dynamics 365 (Preview)
-- ISO 27018:2019 for Azure (Preview)
-- ISO 27018:2019 for Dynamics 365 (Preview)
-
 ## Premium regulations
 
 The regulatory templates listed below may be purchased by your organization. Certain licensing agreements allow for the use of three premium regulations for free. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).

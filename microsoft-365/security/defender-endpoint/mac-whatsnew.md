@@ -51,6 +51,18 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 </br>
 
+### May-2023 (Build: 101.98.70  | Release version: 20.123022.19870.0)
+
+| Build:             | **101.98.70**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123022.19870.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.389.1396.0**       |
+
+##### What's new
+
+- Bug and performance fixes
+
 ### Mar-2023 (Build: 101.98.30  | Release version: 20.123012.19830.0)
 
 | Build:             | **101.98.30**         |

@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/13/2023
+ms.date: 05/09/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -190,6 +190,28 @@ For the first daily event level, you set the threshold at *10 or more events per
 
 Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
+#### Use real-time analytics (preview) to manage alert volume 
+
+You can use real-time analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that enables you to quickly select the appropriate thresholds for each policy indicator. This guided experience can help you efficiently adjust selection of indicators and thresholds of activity occurrence so you don't have too few or too many policy alerts. When analytics is turned on, you can choose the **Customize thresholds** option in the policy wizard to see:
+
+- **A**. A gauge that shows the approximate number of scoped users whose activities from the past 10 days exceeded the lowest daily thresholds for at least one of the selected indicators in the policy. This gauge can help you estimate the number of alerts that might be generated if all users included in the policy were being assigned risk scores.
+- **B**. A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise."
+- **C**. An insight for each indicator, displayed below the thresholds. The insight shows the approximate number of users whose activities from the past 10 days exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of users in the policy who performed more than 100 download activities on an average in the past 10 days. If you adjust the threshold setting to 200, the insight will update in real time to show you the number of users whose activity exceeded levels that exceeded the new thresholds. This helps you quickly configure the appropriate thresholds for each indicator and achieve the highest level of alert effectiveness before activating your policies. 
+
+   ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
+
+Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and [global exclusions (intelligent detections) are taken into account](#intelligent-detections). 
+
+##### Prerequisites for using real-time analytics
+
+To use real-time analytics (preview), you must:
+
+1. [Enable insider risk analytics insights](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights).
+2. Choose the **Include all users and groups** option when you [create the policy](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy).
+
+   > [!NOTE]
+   > If you've chosen to receive alerts only for activities that include priority content for this policy, real-time analytics insights (preview) will not be displayed since they're not supported for these policies.
+
 ## Policy timeframes
 
 Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
@@ -217,7 +239,7 @@ Turning on this setting significantly eliminates noise from email signature atta
 
 ### File activity detection
 
-To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions will be ignored by all insider risk management policies.
+To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches, enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions will be ignored by all insider risk management policies.
 
 ### Alert volume
 
@@ -654,10 +676,17 @@ Depending on the number of users assigned to insider risk management role groups
 
 ## Analytics
 
-Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. Analytics scans offer the following advantages for your organization:
+Enabling insider risk analytics offers two important benefits. When analytics is enabled, you can:
+
+- Conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies.
+- Receive real-time guidance on configuring indicator threshold settings.
+
+### Conduct an evaluation of insider risks in your organization
+
+Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you might want to configure. Analytics scans offer the following advantages for your organization:
 
 - Easy to configure: To get started with analytics scans, you can select Run scan when prompted by the analytics recommendation or go to **Insider risk settings** > **Analytics** and enable analytics.
-- Privacy by design: Scan results and insights are returned as aggregated and anonymized user activity, individual user names aren't identifiable by reviewers.
+- Privacy by design: Scanned results and insights are returned as aggregated and anonymized user activity; individual usernames aren't identifiable by reviewers. Since insider risk management doesn't classify any identity in the organization for analytics, the solution accounts for all the UPNs/identities that might be involved in data leaving the organization boundary. This might involve user accounts, system accounts, guest accounts, and so on.
 - Understand potential risks through consolidated insights: Scan results can help you quickly identify potential risk areas for your users and which policy would be best to help mitigate these risks.
 
 Check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
@@ -671,7 +700,11 @@ Analytics scans for risk management activity from several sources to help identi
 
 Analytics insights from scans are based on the same risk management activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 10 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 10 days of activity.
 
-### Enable analytics and start your scan
+### Receive real-time guidance on configuring indicator threshold settings
+
+Manually tuning policies to reduce "noise" can be a very time-consuming experience that requires you to do a lot of trial and error to determine the desired configuration for your policies. If analytics is turned on, and you decide to customize your indicator threshold settings, you can get real-time insights from analytics if you want to take advantage of a guided (data-driven) threshold configuration experience that will help you configure the appropriate thresholds when you create a new policy or tune an existing one. These insights can help you efficiently adjust the selection of indicators and thresholds of activity occurrence so that you don’t receive too few or too many policy alerts. Real-time analytics (preview) is based on the last 10 days of activity data in your tenant and global exclusions are taken into account. For more information on real-time analytics for threshold settings, [see Indicator level settings](insider-risk-management-settings.md#indicator-level-settings).
+
+### Enable analytics and start a scan of potential insider risks in your organization
 
 To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
@@ -682,7 +715,7 @@ Complete the following steps to enable insider risk analytics:
 
 ![Insider risk management analytics settings](../media/insider-risk-settings-analytics-enable.png)
 
-### Viewing analytics insights and creating new policies
+### Viewing analytics insights after the first analytics scan
 
 After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admins* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admins* role group for new scanning insights.
 
@@ -690,7 +723,7 @@ To view potential risks for your organization, go to the **Overview** tab and se
 
 ![Insider risk management analytics report ready card](../media/insider-risk-analytics-ready-card.png)
 
-For completed analyses, you'll see the potential risks discovered in your organization and insights and recommendations to address these risks. Identified risks and specific insights are included in reports grouped by area, the total number of users with identified risks, the percentage of these users with potentially risky activities, and a recommended insider risk policy to help mitigate these risks. The reports include:
+For completed analyses, you'll see the potential risks discovered in your organization and insights and recommendations to address these risks. Identified risks and specific insights are included in reports grouped by area, the total number of users (all types of Azure AD accounts, including user, guest, system, and so on) with identified risks, the percentage of these users with potentially risky activities, and a recommended insider risk policy to help mitigate these risks. The reports include:
 
 - **Data leaks insights**: For all users that may include accidental oversharing of information outside your organization or data leaks by users with malicious intent.
 - **Data theft insights**: For departing users or users with deleted Azure AD accounts that may include risky sharing of information outside your organization or data theft by users with malicious intent.
@@ -704,12 +737,15 @@ To display more information for an insight, select **View details** to display t
 
 ### Turn off analytics
 
-To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
+To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics:
+
+- Analytics insight reports will remain static and will not be updated for new risks. 
+- You won't be able to [see real-time analytics when you customize indicator threshold settings for your policies](#indicator-level-settings).
 
 Complete the following steps to turn off insider risk analytics:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
-2. Select **Insider risk settings** > **Analytics** page.
+2. Select **Insider risk settings** > **Analytics**.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.
 
 ## Admin notifications

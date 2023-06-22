@@ -117,7 +117,6 @@ To filter the results, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
-  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -182,7 +181,7 @@ In the details flyout that opens, the following information is available:
 To take action on the message, see the next section.
 
 > [!TIP]
-> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Take action on quarantined email
 
@@ -190,7 +189,7 @@ To take action on the message, see the next section.
 
 2. On the **Email** tab, select the quarantined email message by using either of the following methods:
 
-   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out. 
+   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out.
 
      :::image type="content" source="../../media/quarantine-user-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-user-message-selected-message-actions.png":::
 

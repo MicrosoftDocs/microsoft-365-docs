@@ -41,7 +41,8 @@ landingContent:
         links:
           - text: Prebuilt model for contracts
             url: prebuilt-model-contract.md
-
+          - text: Scenarios and use cases
+            url: adoption-scenarios.md
 
 # Card 2
   - title: Get started

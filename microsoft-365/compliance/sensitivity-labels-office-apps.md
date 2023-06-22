@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 05/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -391,7 +391,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 > [!NOTE]
 > Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
-> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
+> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies or configure it to [protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md).
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 

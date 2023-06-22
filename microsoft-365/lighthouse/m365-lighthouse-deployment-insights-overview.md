@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 - Review deployment exceptions such as **Dismissed** tasks and **Excluded** users
 
-- Review regressions such as tasks the change from a **Compliant** or **Dismissed** status to a status of **Not compliant** or **Not licensed**.
+- Review regressions such as tasks that change from a **Compliant** or **Dismissed** status to a status of **Not compliant** or **Not licensed**.
 
 - Quantify threats based on user- and task-level deployment progress
 

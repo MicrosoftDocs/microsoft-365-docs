@@ -79,6 +79,9 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
+> [!NOTE]
+> Before uninstalling Microsoft Defender for Endpoint on macOS, please offboard per [Offboard non-Windows devices](/microsoft-365/security/defender-endpoint/configure-endpoints-non-windows?view=o365-worldwide#offboard-non-windows-devices&preserve-view=true).
+
 There are several ways to uninstall Microsoft Defender for Endpoint on macOS. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation

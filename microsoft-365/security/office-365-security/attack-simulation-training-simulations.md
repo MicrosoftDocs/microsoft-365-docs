@@ -690,7 +690,7 @@ The rest of the details page contains the following tabs:
   - **Country**
   - **Manager**
 
-  To change the list of users from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+  To change the list of users from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
   If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, the following filters are available:
 
