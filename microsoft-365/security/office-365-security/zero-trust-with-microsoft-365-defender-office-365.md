@@ -20,19 +20,16 @@ ms.collection:
   - m365-security
   - tier1
   - zerotrust-services
-ms.custom: 
-
+ms.date: 6/20/2023
 ms.topic: conceptual
 adobe-target: true
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365</a>
 ---
 
 # Zero Trust with Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-
-- Microsoft Defender for Office 365
 
 Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization against advanced threats to email and collaboration tools, like Phishing, business email compromise, and Malware attacks. Defender for Office 365 also provides investigation, Threat Hunting, and remediation capabilities to help security teams efficiently identify, prioritize, investigate, and respond to threats.
 
