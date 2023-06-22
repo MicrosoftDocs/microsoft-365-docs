@@ -133,7 +133,7 @@ The JSON for the investigator role group should look like this:
 
 #### Permissions on Azure blob for users
 
-Assign these permissions to the Azure blob for the users role:
+Assign these permissions to the Azure blob for the users' role:
 
 ##### User actions
 
