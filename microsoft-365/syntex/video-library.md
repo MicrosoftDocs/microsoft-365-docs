@@ -26,7 +26,7 @@ description: Watch videos to learn about some of the different features in Micro
 
 |Unstructured models  |Freeform and structured models  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RW15YNo)<br>[Learn about freeform and structured models](freeform-and-document-processing-overview.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RW15YNo)<br>[Learn about freeform and structured models](freeform-document-processing-overview.md)         |
 
 
 |Create a content center  |Apply a model to a document library  |
