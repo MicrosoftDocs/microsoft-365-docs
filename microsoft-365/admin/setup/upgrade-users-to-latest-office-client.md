@@ -25,11 +25,11 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
+description: Learn about how to upgrade Microsoft Office to the latest Microsoft 365 apps for users in your organization.
 ms.topic: article
 ---
 
-# Upgrade your Microsoft 365 for business users to the latest Office client
+# Upgrade your Microsoft 365 for business users to the latest Microsoft 365 apps
 
 ## Get ready to upgrade to Microsoft 365
 
@@ -43,7 +43,7 @@ If you're the admin responsible for the Microsoft 365 for business subscription 
 
 ## Upgrade steps
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+The steps below will guide you through the process of upgrading your users to the latest Microsoft 365 desktop apps. We recommend you read through these steps before beginning the upgrade process.
   
 ## Step 1 - Check system requirements
 

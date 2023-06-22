@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 05/02/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -21,10 +21,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Discover why Microosft 365 Business Premium is a wise choice for small and medium sized businesses. Learn how it helps you run your business more securely with productivity and security."
+description: "Discover why Microsoft 365 Business Premium is a wise choice for small and medium sized businesses. Learn how it helps you run your business more securely with productivity and security."
 ---
 
-# Why should I consider Microsoft 365 Business Premium?
+# Why should I choose Microsoft 365 Business Premium?
 
 Microsoft 365 Business Premium is a complete productivity and security solution for small and medium-sized businesses. It provides comprehensive cloud productivity and security and is designed especially for small and medium-sized businesses (1-300 employees). With Microsoft 365 Business Premium, you can:
 
@@ -66,12 +66,10 @@ Our digital threats guide describes different kinds of threats and what you and 
 
 ## Next steps
 
-1. Get either [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) or [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
+1. Get either [Microsoft 365 Business Premium](m365-business-premium-setup.md) or [Microsoft 365 for Campaigns](m365-campaigns-setup.md), and [start the setup process](m365bp-setup-overview.md).
 
-2. [Start the setup process](m365bp-setup-overview.md).
+2. [Set up your security capabilities](m365bp-security-overview.md).
 
-3. [Set up your security capabilities](m365bp-security-overview.md).
+3. Help everyone [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md), [Use email securely](m365bp-use-email-securely.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
 
-4. Help everyone [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md), [Use email securely](m365bp-use-email-securely.md), and [Collaborate and share securely](m365bp-collaborate-share-securely.md).
-
-5. [Set up and secure managed devices](m365bp-protect-managed-devices.md)
+4. [Set up and secure managed devices](m365bp-protect-managed-devices.md)

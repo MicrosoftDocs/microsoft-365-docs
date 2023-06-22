@@ -35,9 +35,9 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |Maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
 |Maximum number of keyword dictionary based SITs in a tenant| 50 |
 |Maximum number of MIP+MIG policies in a tenant| 10,000 |
-|Maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
+|Maximum number of DLP rules in a policy | up to 600, as long as the policy size remains below 100KB and there is a maximum of 600 rules in the tenant |
 |Maximum number of DLP rules in a tenant | 600 |
-|Maximum size of an individual DLP rule | 80KB |
+|Maximum size of an individual DLP rule | 100KB |
 |Maximum size of a DLP policy | 100KB |
 |Policy name character limit | 64 |
 |Policy rule character limit | 64 |

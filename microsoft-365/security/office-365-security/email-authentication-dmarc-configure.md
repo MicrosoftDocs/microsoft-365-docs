@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 6/15/2023
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -18,16 +18,15 @@ ms.collection:
 description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization, contains information on DMARC reject or OReject.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Use DMARC to validate email
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders.
 
@@ -220,18 +219,18 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 ## DMARC Reject
 
-**IN PREVIEW** *The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.*
+> [!NOTE]
+> The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
+
 DMARC p = reject is a DMARC policy set by domain owners in their DNS to notify service providers to *reject* emails.
 
 It came about because, with OReject set as the default for reject, any rejected emails were sent to quarantine in Enterprise, and Junk folder in Consumer (due to lack of quarantine there). However, with DMARC Reject the mails will simply be rejected.
 
-Configuration can be done in the User Interface, or by PowerShell commandlet.
+Configuration can be done in the Microsoft 365 Defender portal, or by the [New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy) or [Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). For more information, see the following articles:
 
-> [!IMPORTANT]
-> For *details* on three new properties in the *AntiPhishPolicy* that impact DMARC policy, as well as a sample PowerShell command to set up the DMARC Reject policy see [**Configure >anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md).
->
->**This feature can also be set in the UX on the https://security.microsoft.com/antiphishing page**. Navigate to *Policies & Rules* > *Threat Policies* > *Create a new anti phishing policy*, where you will see "Honour DMARC record policy when >the message is detected as spoof" listed as an *Action*.
-
+- [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 ## How Microsoft 365 handles outbound email that fails DMARC
 
@@ -241,13 +240,13 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 ## How Microsoft 365 handles inbound email that fails DMARC
 
-If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
+If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way, or you can configure anti-phishing policies to honor `p=quarantine` and `p=reject` in sender DMARC policies and specify separate actions for each DMARC policy. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
 Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
 
 - Users add safe senders individually by using their email client.
 
-- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to allow messages from the spoofed sender.
+- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) or the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to allow messages from the spoofed sender.
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
