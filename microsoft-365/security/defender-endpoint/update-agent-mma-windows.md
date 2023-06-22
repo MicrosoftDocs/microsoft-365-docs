@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 06/19/2023
+ms.date: 06/21/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -18,6 +18,9 @@ search.appverid: met150
 ---
 
 # Updating MMA on Windows devices for Microsoft Defender for Endpoint
+
+> [!IMPORTANT]
+> If you've arrived on this page as a result of clicking on a notification at the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you have devices in your environment with outdated agents, and you need to take action (see below) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to [Message Center](/microsoft-365/admin/manage/message-center])).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -32,8 +35,6 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 ## Update MMA on your devices
 
 *This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.* 
-
-To help you identify older versions of the MMA inside of your organization, you can leverage the "EOSDate" column in advanced hunting, or follow the instructions in [Plan for end-of-support software and software versions](/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software) to leverage the vulnerability management feature inside of Microsoft Defender for Endpoint to track remediation.
 
 - See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command line approach for use with various deployment tools and methods at your disposal. 
 
