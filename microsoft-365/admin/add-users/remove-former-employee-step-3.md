@@ -39,7 +39,7 @@ If your former employee had an organization phone, you can use the <a href="http
 
 1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
 1. Select the user, and under **Mobile Devices**, select **View details**.
-1. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe Data**![Wipe Device.](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block**.
+1. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe company data**![Wipe Device.](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block access**.
 1. Select **Save**.
    > [!TIP]
    > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
