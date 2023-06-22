@@ -60,7 +60,8 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
   > [!NOTE]
   > This policy was previously mistitled **Create and view Loop files in Loop**.
 
-  If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
+  > [!TIP]
+  > If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
 
 To configure these Cloud Policy settings, perform the following steps:
 
