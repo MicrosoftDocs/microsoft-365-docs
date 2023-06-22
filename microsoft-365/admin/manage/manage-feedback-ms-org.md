@@ -86,7 +86,7 @@ Your devices must be on a minimum build number to use these policies. See the ta
 > The **Allow users to access the feedback portal** policy is a cloud policy. This policy isn't defined in ADMX and doesn't have a corresponding registry key available to set the policy. You should create a cloud policy to enforce it. This is a cloud policy because the feedback portal is a web application that makes a call to the cloud policy service, which is also a web application, requesting the policies for the person who signs in. If this policy is configured, the feedback portal will receive the configured policy value in the response from the cloud policy service.
 
 > [!NOTE]
-> The default state for **Allow users to include screenshots and attachments when they submit feedback to Microsoft**, allows Microsoft to follow up on feedback submitted by users, and allows users to include log files and relevant content samples when feedback is submitted to Microsoft. The default setting will be changing from **Off** to **On** starting <insert date here once we know when we will actually do the message center post>. Your users can decide to opt-out.
+> The default state for **Allow users to include screenshots and attachments when they submit feedback to Microsoft**, **Allow Microsoft to follow up on feedback submitted by users**, and **Allow users to include log files and relevant content samples when feedback is submitted to Microsoft** will be changing from Off to On starting **July 21st, 2023**. Your users can decide to opt-out.
 
 ## Configure policies
 
@@ -99,8 +99,8 @@ You can find these policy settings under User Configuration\Policies\Administrat
 > [!NOTE]
 > It takes a few hours for the client applications to update.
 
-### User experience examples
+<!-- ### User experience examples
 
-:::image type="content" source="../../media/manage-feedback-1.png" alt-text="Screenshot: Example of user feedback submission to Microsoft":::
+:::image type="content" source="../../media/manage-feedback-1.jpg" alt-text="Screenshot: Example of user feedback submission to Microsoft":::
 
-:::image type="content" source="../../media/manage-feedback-2.png" alt-text="Screenshot: Example of user submission feedback to Microsoft":::
+:::image type="content" source="../../media/manage-feedback-2.jpg" alt-text="Screenshot: Example of user submission feedback to Microsoft"::: -->
