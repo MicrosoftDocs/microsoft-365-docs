@@ -199,7 +199,7 @@ After the policy is synced to the right locations, it starts to evaluate content
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information to Microsoft Purview from monitoring to policy matches and actions, to user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information to Microsoft Purview from monitoring to policy matches and actions, to user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### High volume of sensitive info shared or save externally
 
