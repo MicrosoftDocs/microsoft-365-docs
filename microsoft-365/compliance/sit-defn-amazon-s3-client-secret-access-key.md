@@ -1,5 +1,5 @@
 ---
-title: "Amazon S3 client secret access key entity definition"
+title: "Amazon AWS access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,10 +19,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Amazon S3 client secret access key sensitive information type entity definition."
+description: "Amazon AWS access key sensitive information type entity definition."
 ---
 
-# Amazon S3 client secret access key
+# Amazon AWS secret access key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
