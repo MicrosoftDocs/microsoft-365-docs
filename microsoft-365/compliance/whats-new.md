@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/21/2023
+ms.date: 06/23/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -40,6 +40,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## June 2023
+
+### Data lifecycle management and records management
+
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Yammer are now in general availability.
 
 ### Data loss prevention
 
