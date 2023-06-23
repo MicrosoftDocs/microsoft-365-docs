@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 06/23/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -354,9 +354,6 @@ To consider when using trainable classifiers to auto-apply retention labels:
 - You can't auto-label SharePoint and OneDrive items that are older than six months.
 
 #### Auto-apply labels to cloud attachments
-
-> [!NOTE]
-> Support for cloud attachments that are shared in Yammer is in preview.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 
