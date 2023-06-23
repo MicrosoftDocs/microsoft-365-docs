@@ -234,7 +234,7 @@ Use the following steps to enable Optional permissions for devices.
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
-5. To enable Optional permissions, enter value as **1** and assign this policy to users. By default, this value is set to 0.
+5. To enable Optional permissions, enter the value as **1** and assign this policy to users. By default, this value is set to 0.
 For users with key set as 1, the users will be able to onboard the app without giving these permission.
 
 1. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key and value type as Boolean.
