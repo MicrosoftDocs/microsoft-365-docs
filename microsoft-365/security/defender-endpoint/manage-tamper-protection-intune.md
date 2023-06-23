@@ -52,6 +52,7 @@ Using Intune, you can:
 ## Requirements for managing tamper protection in Intune
 
 | Requirement | Details |
+|---|---|
 | Roles and permissions | You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access). |
 | Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices). |
 | Intune licenses | Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses. |
