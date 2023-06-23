@@ -146,7 +146,7 @@ Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
 3. Select **Microsoft Defender for Endpoint** as the target app.
 
-4. In Settings page, select **Use configuration designer** and add select **Add**.
+4. On the Settings page, select **Use configuration designer** and then select **Add**.
 
 5. Select the required privacy setting -
     - Hide URLs in report
