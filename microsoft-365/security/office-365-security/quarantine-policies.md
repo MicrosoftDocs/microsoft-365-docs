@@ -676,7 +676,7 @@ The relationship between permissions, permissions groups, and the default quaran
 
 ³ **Allow recipients to release a message from quarantine** isn't honored for messages that were quarantined as **malware** by anti-malware policies or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies.
 
-⁴ This policy is used in [preset security policies](preset-security-policies.md) instead of the policy named DefaultFullAccessPolicy to enable quarantine notifications.
+⁴ This policy is used in [preset security policies](preset-security-policies.md) to enable quarantine notifications instead of the policy named DefaultFullAccessPolicy where notifications are turned off.
 
 ⁵ Your organization might not have the policy named NotificationEnabledPolicy as described in the next section.
 
