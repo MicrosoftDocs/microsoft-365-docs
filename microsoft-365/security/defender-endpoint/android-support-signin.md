@@ -134,7 +134,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 **Cause:** Android allows apps in personal profile to check if there is a VPN active on the device, even outside of personal profile. The banking app is checking that and blocking it in VPN work profiles only. The banking app does not work with any other VPN product.
 
 **Solution:**
-Users will need to disable MDE VPN from settings page. The following steps can be used -
+Users will need to disable MDE VPN from the Settings page. The following steps can be used:
 1. Go to Settings on the mobile device.
 2. Search for VPN or open 'Network and Internet' and click on VPN.
 3. Click on Microsoft defender and select Disconnect.
