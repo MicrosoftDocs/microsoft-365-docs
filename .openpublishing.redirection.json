@@ -11069,6 +11069,16 @@
     "source_path": "microsoft-365/compliance/view-the-dlp-reports.md",
     "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp#dlp-activity-explorer-and-reports",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/dlp-conditions-and-exceptions.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-exchange-conditions-and-actions",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/loop/loop-components-sharepoint.md",
+    "redirect_url": "/microsoft-365/loop/loop-workspaces-configuration",
+    "redirect_document_id": true
   }
  ]
 }
