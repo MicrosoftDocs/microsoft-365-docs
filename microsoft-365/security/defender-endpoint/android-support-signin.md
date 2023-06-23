@@ -120,7 +120,7 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 3. Go to the Battery Optimization section, tap on the “Turn Off” button, and then click on “Allow” to turn Battery Optimization off for the Company Portal. 
 4. Again, go to the Battery Optimization section and tap on the “Turn On” button. The battery saver section opens. 
 5. Find the Defender app and tap on it. 
-6. Tap on “No Restriction”. Go back to the Defender app in work profile and tap on allow button.  
+6. Select “No Restriction”. Go back to the Defender app in work profile and tap on "Allow" button.  
 7. The application should not be uninstalled from personal profile for this to work. 
 
 
