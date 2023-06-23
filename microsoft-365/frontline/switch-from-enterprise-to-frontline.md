@@ -230,7 +230,7 @@ Communicate to your users that the change is completed and let them know how to 
 
 ## User setup, help, and learning resources
 
-Here are some links to setup, help, and learning resources that you can share with your frontline workers for training and support.
+Here are some links to set up, help, and learning resources that you can share with your frontline workers for training and support.
 
 |App|Links |
 |---------|---------|
