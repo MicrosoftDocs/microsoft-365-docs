@@ -105,7 +105,7 @@ You can use Microsoft Intune and other methods to configure or manage tamper pro
 | Use the [Windows Security app](manage-tamper-protection-individual-device.md). | Turn tamper protection on (or off) on an individual device that isn't managed by a security team (such as devices for home use). This method won't override tamper protection settings that are managed by the Microsoft 365 Defender portal, Intune, or Configuration Manager, and it isn't intended to be used by organizations. <br/><br/>For more information, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md). |
 
 > [!TIP]
-> If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that any changes made to tamper-protected settings are ignored. If you must make changes to a device and those changes are blocked by tamper protection, use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+> If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that any changes made to tamper-protected settings are ignored. If you must make changes to a device and those changes are blocked by tamper protection, use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 
 ## Protect Microsoft Defender Antivirus exclusions from tampering
 
