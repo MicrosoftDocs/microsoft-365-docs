@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/08/2023
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -52,10 +52,17 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Sensitivity labels
 
 - **General availability (GA)**: Now rolling out, Outlook for Android and Outlook for iOS support a setting for mandatory labeling that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
-- **In preview**: Now rolling out, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups. 
+- **General availability (GA)**: Outlook for Android and Outlook for iOS, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors) are now in general availability. For iOS, the release is still rolling out.
+- **In preview**: Now rolling out in preview, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
+- **In preview**: Now rolling out in preview, [limited support for labels configured for user-defined permissions](sensitivity-labels-sharepoint-onedrive-files.md#support-for-labels-configured-for-user-defined-permissions) for Office on the web, SharePoint and OneDrive.
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
+
+### Audit
+
+- Updates for audit log support for [Microsoft Project for the web](/microsoft-365/compliance/audit-log-activities#microsoft-project-for-the-web-activities), [Microsoft To Do](/microsoft-365/compliance/audit-log-activities#microsoft-to-do-activities),and [Microsoft Defender Experts](/microsoft-365/compliance/audit-log-activities#microsoft-defender-experts-activities) activities.
+- Updates to clarify [audit log rentention policies](/microsoft-365/compliance/audit-log-retention-policies) and duration options.
 
 ### Compliance Manager
 
@@ -71,12 +78,19 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Assigning user roles per regulatory template**: New capability allowing you to provide scoped access to any assessment built for a specific regulation. Updated pages include:
     - [Learn about regulations](compliance-manager-templates.md#grant-user-access-to-regulations)
     - [Get started](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations)
-    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) 
+    - [Build and manage assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments)
 
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
 - **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
+
+### eDiscovery
+
+- **In preview**: New article for [guest access in eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-guest-access). With guest access, you can provide access to an eDiscovery Premium case to people outside your organization. You can invite guests users to eDiscovery (Premium) cases just like you can invite guests into your Teams environment.
+- **In preview**: New support for *Export collected items* and *Export as report* [options for review sets](/microsoft-365/compliance/ediscovery-create-draft-collection#manage-a-collection-estimate) in eDiscovery (Premium).
+- **In preview**: New support for viewing [job reports](/microsoft-365/compliance/ediscovery-managing-jobs#jobs-report-preview) for eDiscovery (Premium). eDiscovery (Premium) now includes a jobs report tool that lists all jobs that count towards the jobs concurrency and daily limits in eDiscovery for a defined time period.
+- Updates to clarify the [indexing of non-custodial data sources](/microsoft-365/compliance/ediscovery-indexing-custodian-data) in eDiscovery (Premium) cases.
 
 ### Insider risk management
 
@@ -92,10 +106,14 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint converts a labeled Office document into a PDF document, the label with any content markings persists.
+- **Rolling out**: [PDF support for Office on the web](sensitivity-labels-office-apps.md#pdf-support) so that when Word, Excel, and PowerPoint convert a labeled Office document into a PDF document, the label with any content markings persists.
 - **In preview**: Built-in labeling support for [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) is in preview as a parity feature for the AIP add-in.
 
 ## April 2023
+
+### Audit
+
+- Updates for audit log support for [Microsoft Planner](/microsoft-365/compliance/audit-log-activities#microsoft-planner-activities) activities.
 
 ### Communication compliance
 
@@ -122,9 +140,26 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: Save a copy of items that match DLP policies to Azure storage [Learn about evidence collection for file activities on devices (preview)](dlp-copy-matched-items-learn.md) and [Get started with collecting files that match data loss prevention policies from devices (preview)](dlp-copy-matched-items-get-started.md).
 - **General availability (GA)**: Data loss prevention policies in Power BI to automatically detect sensitive information as it is being uploaded into Power BI and take immediate remediation actions. [Learn about data loss prevention policies in Power BI)](/microsoft-365/compliance/dlp-powerbi-get-started).
 
+### eDiscovery
+
+- **New article**: [Configure review set grouping settings for eDiscovery (Premium) cases](/microsoft-365/compliance/ediscovery-configure-review-set-settings) details how you can configure grouping settings for each Microsoft Purview eDiscovery (Premium) case to control how the data in a review set is grouped and displayed.
+- **In preview**: New support for [upgrading a eDiscovery (Standard) case to eDiscovery (Premium)](/microsoft-365/compliance/ediscovery-close-reopen-delete-cases#upgrade-a-case-to-ediscovery-premium-preview).
+- **In preview**: New support for Microsoft Teams meeting [recordings and transcripts](/microsoft-365/compliance/ediscovery-teams-investigation).
+- **In preview**: New support for the [*Export item report* action](/microsoft-365/compliance/ediscovery-create-draft-collection) for collections in eDiscovery (Premium).
+- **In preview**: New support for using the [new query builder to create search queries](/microsoft-365/compliance/ediscovery-query-builder). The query builder option in collection search tool provides a visual filtering experience when you build search queries in Microsoft Purview eDiscovery (Premium).
+- Updates to [clarify the syntax](/microsoft-365/compliance/ediscovery-create-hold-notification) for issuance and release hold notifications for multiple users and email fields.
+- Updates for a [new script](/microsoft-365/compliance/ediscovery-use-content-search-for-targeted-collections#script-to-pull-the-folderid-from-multiple-mailboxes) to pull the FolderID from multiple mailboxes in a content search for targeted collections.
+- Update for [retry hold actions](/microsoft-365/compliance/ediscovery-add-custodians-to-case#retry-hold-action) when custodians are placed on hold.
+- Update for [character and URL limits](/microsoft-365/compliance/ediscovery-limits-for-content-search) when searching SharePoint and OneDrive for Business locations.
+- Clarification for the [data retention](/microsoft-365/compliance/ediscovery-managing-jobs) for job information.
+- Updates for [requirements for decryption](/microsoft-365/compliance/ediscovery-decryption#requirements-for-decryption-in-ediscovery) in eDiscovery.
+- **Article retired**: the *Change the size of PST files when exporting eDiscovery search results* article has been retired.
+
 ### Insider risk management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md).
+- Updates to clarify the [required enterprise apps](/microsoft-365/compliance/ediscovery-premium-get-started#step-4-verify-that-required-ediscovery-apps-are-enabled) needed to access eDiscovery (Premium) view, filter, and search features.
+- Updates to include an [example of remediating errors](/microsoft-365/compliance/ediscovery-error-remediation-when-processing-data#remediating-errors-by-uploading-the-extracted-text) by uploading the extracted text.
 
 ### Microsoft Priva
 
