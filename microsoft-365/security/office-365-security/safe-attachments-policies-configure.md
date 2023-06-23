@@ -108,12 +108,11 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
      - **Off**
      - **Monitor**
      - **Block**: This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).
-     - **Replace**: This action will be deprecated. For more information, see [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Dynamic Delivery (Preview messages)**
 
      These values are explained in [Safe Attachments policy settings](safe-attachments-about.md#safe-attachments-policy-settings).
 
-   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block**, **Replace**, or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block** or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
      By default, the quarantine policy named AdminOnlyAccessPolicy is used for malware detections by Safe Attachments policies. For more information about this quarantine policy, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
@@ -170,7 +169,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 2. On the **Safe Attachments** page, select the Safe Attachments policy by using either of the following methods:
 
-   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** drop down list that appears:
+   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** dropdown list that appears:
      - **Enable selected policies**.
      - **Disable selected policies**.
      - **Delete selected policies**.
