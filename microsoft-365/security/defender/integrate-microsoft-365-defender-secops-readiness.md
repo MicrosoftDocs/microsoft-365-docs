@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365solution-m365dsecops
-  - - tier2
+  - zerotrust-solution
+  - msftsolution-secops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150

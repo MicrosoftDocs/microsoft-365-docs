@@ -9,7 +9,7 @@ ms.date: 07/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - scotvorg

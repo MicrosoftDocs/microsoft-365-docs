@@ -8,12 +8,13 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
   - NOCSH
-ms.date: 02/16/2023
+ms.date: 06/23/2023
 ms.reviewer: georgiah
 ms.custom:
   - it-pro
   - admindeeplinkMAC
   - admindeeplinkEXCHANGE
+ms.localizationpriority: high
 ms.collection:
   - scotvorg
   - M365-subscription-management
@@ -42,13 +43,13 @@ When a mailbox is migrated cross-tenant with this feature, only user visible con
 > If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
 
 ## Licensing
-
 > [!IMPORTANT]
-> This cross-tenant functionality is only available to customers with Enterprise Agreements. Licensing is not available via other purchase options at this time.
-
-Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
+> As of Nov. 2022, **Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](/microsoft-365/enterprise/cross-tenant-onedrive-migration). Contact your Microsoft account team for details.
 
 Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; OneDrive for Business.
+
+> [!WARNING]
+> You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations will fail if this has not been completed. Microsoft does not offer exceptions for this licensing.
 
 ## Preparing source and target tenants
 
@@ -220,7 +221,7 @@ For any mailbox moving from a source organization, you must provision a MailUser
 
       1. ExchangeGUID (direct flow from source to target): The mailbox GUID must match. The move process won't proceed if this isn't present on target object.
       1. ArchiveGUID (direct flow from source to target): The archive GUID must match. The move process won't proceed if this isn't present on the target object. (This is only required if the source mailbox is Archive enabled).
-      1. LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN\>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes won't proceed if these aren't present on the target object. Also, this step is important for enabling reply ability for emails that are sent before migration. The sender/recipient address in each email item and the auto-complete cache in Microsoft Outlook and in Microsoft Outlook Web App (OWA) uses the value of the LegacyExchangeDN attribute. If a user can't be located using the LegacyExchangeDN value, the delivery of email messages may fail with a 5.1.1 NDR.
+      1. LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN\>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. **In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user.** The move processes won't proceed if these aren't present on the target object. Also, this step is important for enabling reply ability for emails that are sent before migration. The sender/recipient address in each email item and the auto-complete cache in Microsoft Outlook and in Microsoft Outlook Web App (OWA) uses the value of the LegacyExchangeDN attribute. If a user can't be located using the LegacyExchangeDN value, the delivery of email messages may fail with a 5.1.1 NDR.
       1. UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
       1. Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwindtraders.com).
       1. TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress, which will cause move failures.
@@ -237,10 +238,11 @@ For any mailbox moving from a source organization, you must provision a MailUser
 | PrimarySmtpAddress   | Lara.Newton@northwindtraders.com                                                                                                     |
 | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                                   |
 | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                                 |
-| LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara       |
+| LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035-Lara      |
 | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara |
 |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                                          |
 |                      | SMTP:Lara.Newton@northwindtraders.com                                                                                                |
+|                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara       |
 
 Example **source** Mailbox object:
 
@@ -252,9 +254,10 @@ Example **source** Mailbox object:
 | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                                                                                  |
 | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                                                                        |
 | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                           |
-| LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
+| LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara|
 | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                                                                             |
 |                      | SMTP:Lara.Newton@contoso.com                                                                                                   |
+|                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara |
 
 1. Other attributes may be included in Exchange hybrid write-back already. If not, they should be included.
    1. msExchBlockedSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
@@ -386,9 +389,13 @@ Get-MailUser -Identity <Migrate Mail User> | Enable-RemoteMailbox
 
 While Teams meetings are moved, the meeting URL isn't updated when items migrate cross-tenant. Since the URL will be invalid in the target tenant, you must remove and recreate Teams meetings.
 
+### What content is migrated cross-tenant?
+
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions, and Purges are migrated.  
+
 ### Does the Teams chat folder content migrate cross-tenant?
 
-No, the Teams chat folder content doesn't migrate cross-tenant. When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated.
+No, the Teams chat folder content does not migrate cross-tenant. However, once the mailbox has been migrated cross-tenant, the Teams chat folder content will be available for source tenant admins to search and export using a content search.
 
 ### How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?
 
@@ -416,7 +423,7 @@ $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,
 ```PowerShell
 # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
 $symbols = '!@#$%^&*'.ToCharArray()
-@([char[]]([char]'a'..[char]'z'), [char[]]([char]'A'..[char]'Z'), [char[]]([char]'0'..[char]'9') + $symbols)
+$characterList = @([char[]]([char]'a'..[char]'z'), [char[]]([char]'A'..[char]'Z'), [char[]]([char]'0'..[char]'9') + $symbols)
 
 function GeneratePassword {
     param(
@@ -585,7 +592,7 @@ Yes. It's possible to have two instances of Azure AD Connect synchronize to diff
 
 ### Do auto-expanded archive mailboxes move?
 
-Yes, if the user in source has auto-expanding archives enabled and has additional auxiliary archives, cross-tenant mailbox migration will work. We support moving users that have no more than 12 auxiliary archive mailboxes. Additionally, users with large primary, large main archive, and large auxiliary archive mailboxes will require extra time to synchronize and should be submitted well in advance of the cutover date. Also note that if the source mailbox is expanded during the mailbox migration process, the migration will fail as a new auxiliary archive will be created in the source, but not in the target. In this case, you'll need to remove the user from the batch and resubmit them.
+- **Issue: Auto Expanded archives cannot be migrated.** Yes, if the user in source has auto-expanding archives enabled and has additional auxiliary archives, cross-tenant mailbox migration will work. We support moving users that have no more than 12 auxiliary archive mailboxes. Additionally, users with large primary, large main archive, and large auxiliary archive mailboxes will require extra time to synchronize and should be submitted well in advance of the cutover date. Also note that if the source mailbox is expanded during the mailbox migration process, the migration will fail as a new auxiliary archive will be created in the source, but not in the target. In this case, you'll need to remove the user from the batch and resubmit them.
 
 ## Known issues
 

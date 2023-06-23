@@ -1,16 +1,12 @@
 ---
 title: Microsoft Defender Antivirus updates - Previous versions for technical upgrade support
 description: Understand the type of technical support offered for previous versions of Microsoft Defender Antivirus
-keywords: minimum requirements, licensing, comparison table
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 04/04/2023
+ms.date: 05/30/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,6 +25,56 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
+
+- Security intelligence update version: **1.385.68.0**
+- Release date: **March 27, 2023**
+- Platform: **4.18.2302.7**
+- Engine: **1.1.20100.6**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed threat DefaultAction outputs in Get-MpPreference 
+- Improved Defender performance during file copy operations for .NET applications 
+- Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature 
+- Added opt-in feature to allow users seeing exclusions 
+- Fixed [ASR](overview-attack-surface-reduction.md) warn policy 
+- Increased maximum size for quarantine archive file to 4 GB 
+- Improvements to threat remediation logic 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) hardening for temporary exclusions 
+- Fixed time zone calculation in [Defender PowerShell](/powershell/module/defender) module 
+- Fixed merging logic for exclusions in Defender PowerShell module 
+- Improvements in the [contextual exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) syntax
+- Improved scheduled scan robustness
+- Improved serviceability for internal database files
+- Enhanced certificate indicators determination logic
+- Enhanced memory usage
+
+### Known Issues
+
+- None  
+
+
+## January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
+
+- Security intelligence update version: **1.383.26.0**
+- Release date: **February 14, 2023**
+- Platform: **4.18.2301.6**
+- Engine: **1.1.20000.2**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Improved [ASR rule](attack-surface-reduction-rules-reference.md) processing logic
+- Updated Sense token hardening
+- Improved [Defender CSP](/windows/client-management/mdm/defender-csp) module update channel logic
+
+### Known Issues
+
+- None 
 
 ## November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
 

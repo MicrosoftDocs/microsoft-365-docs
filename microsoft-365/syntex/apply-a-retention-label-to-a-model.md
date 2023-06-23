@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 10/01/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -44,7 +44,7 @@ You can apply a pre-existing retention label to your model through your model se
 
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for you to apply to the model.
 
- ![Retention label menu.](../media/content-understanding/retention-labels-menu.png)
+   ![Retention label menu.](../media/content-understanding/retention-labels-menu.png)
 
 3. Select the retention label you want to apply to the model, and then select **Save**.
 
@@ -130,6 +130,4 @@ You can add a retention label to an existing structured document processing mode
 > [!NOTE]
 > You must be the model owner for the model settings pane to be editable. 
 
-## See also
 
-[Apply a sensitivity label to a model in Microsoft Syntex](create-a-classifier.md)

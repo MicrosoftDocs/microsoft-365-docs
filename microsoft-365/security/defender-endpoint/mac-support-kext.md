@@ -38,6 +38,9 @@ This article provides information on how to troubleshoot issues with the kernel 
 
 Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they're allowed to run on the device.
 
+>[!TIP]
+>Kernel extensions only apply up to macOS Catalina (10.15).  Starting with macOS BigSur (11), Microsoft Defender for Endpoint on macOS uses System Extensions.
+
 If you didn't approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint on macOS, the application displays a banner prompting you to enable it:
 
 :::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP disabled" lightbox="images/mdatp-32-main-app-fix.png":::

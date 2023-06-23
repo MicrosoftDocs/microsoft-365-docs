@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/04/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -299,6 +299,8 @@ In order to preview new features and provide early feedback, it is recommended t
 ## Download the onboarding package
 
 Download the onboarding package from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 > [!IMPORTANT]
 > If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.

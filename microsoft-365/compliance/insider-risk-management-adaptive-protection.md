@@ -269,7 +269,7 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 - **Policy state**: The current state of the policy. Values are *Active* or *Inactive*.
 - **Policy location**: The [locations](/microsoft-365/compliance/dlp-policy-reference#locations) included in the DLP policy. Currently, Adaptive Protection only supports Exchange, Teams, and Devices.
 - **Risk levels included**: The risk levels included in the DLP policy using the **User's risk level for adaptive protection is** condition. The options are *Elevated*, *Moderate*, or *Minor* risk levels.
-- **Policy status**: The current [status](/microsoft-365/compliance/create-test-tune-dlp-policy#where-to-start-with-data-loss-prevention) of the DLP policy. The options are *On* or *Test with notifications*.
+- **Policy status**: The current status of the DLP policy. The options are *On* or *Test with notifications*.
 - **Created**: The date the DLP policy was created.
 - **Last modified**: The date the DLP policy was last edited.
 

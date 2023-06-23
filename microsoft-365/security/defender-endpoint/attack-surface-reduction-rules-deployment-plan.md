@@ -74,7 +74,7 @@ To start, you should get an inventory of the apps that are approved for use acro
 
 ## Define reporting and response ASR rules team roles and responsibilities
 
-Clearly articulating roles and responsibilities of persons responsible for monitoring and communicating ASR  rules status and activity is a core activity of ASR  maintenance. Therefore, it is important to determine:
+Clearly articulating roles and responsibilities of persons responsible for monitoring and communicating ASR rules status and activity is a core activity of ASR  maintenance. Therefore, it is important to determine:
 
 - The person or team responsible for gathering reports
 - How and with whom reports are shared
@@ -83,12 +83,12 @@ Clearly articulating roles and responsibilities of persons responsible for monit
 Typical roles and responsibilities include:
 
 - IT admins: Implement ASR rules, manage exclusions. Work with different business units on apps and processes. Assembling and sharing reports to stakeholders
-- Certified security operations center (CSOC) analyst: Responsible for investing high-priority, blocked processes, to determine wither the threat is valid or not
+- Certified security operations center (CSOC) analyst: Responsible for investigating high-priority, blocked processes, to determine whether the threat is valid or not
 - Chief information security officer (CISO): Responsible for the overall security posture and health of the organization
 
 ## ASR rules ring deployment
 
-For large enterprises, Microsoft recommends deploying ASR  rules in "rings." Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
+For large enterprises, Microsoft recommends deploying ASR rules in "rings." Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition to the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
 See: [Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 

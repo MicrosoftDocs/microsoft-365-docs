@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/27/2023
+ms.date: 06/14/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -90,6 +90,8 @@ Although renaming and moving files after an instance of the flow is triggered ar
 - By default, the account that creates the Power Automate flow must be the same account that creates the retention label. If you share the flow in Power Automate, the people you share it with can also select the flow when they create a retention label.
 
 - If you select the relabel action in the flow, the retention label that you select as the replacement can't be [configured to mark the item as a regulatory record](declare-records.md#configuring-retention-labels-to-declare-records). It can be configured to mark the item as a record, or not mark the item as a record.
+
+- If your chosen flow uses an [environment type other than Default](/power-platform/admin/environments-overview#types-of-environments), you must use [PowerShell to create the retention label](/powershell/module/exchange/new-compliancetag), and use the *FlowId* parameter.
 
 ## Power Automate dependency
 

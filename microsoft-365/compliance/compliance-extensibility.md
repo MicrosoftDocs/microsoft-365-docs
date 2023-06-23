@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 08/18/2020
+ms.date: 04/18/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,16 +29,15 @@ Microsoft Purview solutions help organizations intelligently assess their compli
 There are two key building blocks for compliance extensibility:
 
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
-
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Data connectors
 
-Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
+Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archive-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
 
-To learn more about Microsoft Purview Data Connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
+To learn more about Microsoft Purview Data Connectors, see [Archiving third-party data](archive-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](archive-partner-third-party-data.md).
 
 ### Prerequisites for data connectors
 
@@ -50,7 +49,7 @@ For guidance and requirements for third-party data connectors, see the "Data con
 
 ## APIs
 
-Microsoft Purview and Microsoft Priva APIs are available in the Microsoft Information Protection SDK, Microsoft Graph API, and the Office 365 Management Activity API. Some compliance APIs are part of a new set of security and compliance APIs that enable developers for Microsoft 365 customers, independent software vendors, system integrators, and managed security service providers to build high-value security and compliance solutions.
+Microsoft Purview and Microsoft Priva APIs are available in the Microsoft Information Protection SDK, Microsoft Graph API, and the Office 365 Management Activity API. Some compliance APIs are part of a new set of security and compliance APIs that enable developers for Microsoft 365 customers, independent software publishers, system integrators, and managed security service providers to build high-value security and compliance solutions.
 
 To learn more about how to access Graph APIs, see [Overview of Microsoft Graph](/graph/overview).
 
@@ -62,14 +61,12 @@ To learn more, see [Microsoft Graph APIs for subject rights request](/graph/api/
 
 ### Microsoft Information Protection (MIP) SDK
 
-The MIP SDK exposes the labeling and protection services from Microsoft 365 security and compliance centers to third-party applications and services. Developers can use the SDK to build native support for applying labels and protection to files. Developers can determine which actions should be taken when specific labels are detected, and reason over MIP-encrypted information.
+The MIP SDK exposes the labeling and protection services from the Microsoft Purview compliance portal to third-party applications and services. Developers can use the SDK to build native support for applying labels and protection to files. Developers can determine which actions should be taken when specific labels are detected, and reason over MIP-encrypted information.
 
 High-level MIP SDK use cases include:
 
 - A line-of-business application that applies classification labels to files on export.
-
 - A CAD/CAM design application that provides native support for sensitivity labels.
-
 - A cloud access security broker or data loss prevention solution that can encrypt data with Azure Information Protection.
 
 To learn more about the MIP SDK, prerequisites, additional scenarios, and samples, see [MIP SDK Overview](/information-protection/develop/overview).
@@ -94,7 +91,7 @@ For the licensing requirements for eDiscovery (Premium) and the API, see the "eD
 
 ### Microsoft Graph API for Teams Export
 
-Enterprise Information Archiving (EIA) for Microsoft Teams is a key scenario for our customers as it allows them to solve for regulatory requirements. In addition to our built-in capabilities for archiving content in Microsoft Teams, customers and partners can now use Teams Export APIs to solve for custom application and integration scenarios. The Teams Export APIs support bulk-export (up to 200 requests per second/per app/per tenant) of Teams messages and message attachments. Deleted messages are also accessible by the API for up to 30 days after they are deleted. For more information about these Teams Export APIs and how to use them in your applications, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
+Enterprise Information Archiving (EIA) for Microsoft Teams is a key scenario for our customers as it allows them to solve for regulatory requirements. In addition to our built-in capabilities for archiving content in Microsoft Teams, customers and partners can now use Teams Export APIs to solve for custom application and integration scenarios. The Teams Export APIs support bulk-export (up to 200 requests per second/per app/per tenant) of Teams messages and message attachments. Deleted messages are also accessible by the API for up to 30 days after they're deleted. For more information about these Teams Export APIs and how to use them in your applications, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
 
 For the licensing requirements for the use of the Teams Export APIs, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 

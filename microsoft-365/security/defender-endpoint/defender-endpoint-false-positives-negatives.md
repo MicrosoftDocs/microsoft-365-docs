@@ -346,79 +346,23 @@ Defender for Endpoint offers a wide variety of options, including the ability to
 
 ### Cloud-delivered protection
 
-Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**; however, we recommend setting it to **High**. To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
+Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**; however, we recommend turning it on. To learn more about configuring your cloud-delivered protection, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.  (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md)).
+You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.
 
-#### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
-
-2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-
-3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
-
-4. Choose **Review + save**, and then **Save**.
-
-#### Use Intune to set cloud-delivered protection settings (for a new policy)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
-
-2. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
-
-3. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
-
-   - Set **Turn on cloud-delivered protection** to **Yes**.
-   - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
-
-5. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Review + create** tab, review the settings, and then choose **Create**.
+See [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ### Remediation for potentially unwanted applications
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA isn't considered malware, some kinds of software are PUA based on their behavior and reputation.
 
-> [!TIP]
-> To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus.
 
-We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
+We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
-#### Use Intune to edit PUA protection (for existing configuration profiles)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-pua-protection-for-a-new-configuration-profile).)
-
-2. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
-
-3. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-4. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
-
-5. Choose **Review + save**, and then choose **Save**.
-
-#### Use Intune to set PUA protection (for a new configuration profile)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
-
-2. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
-
-3. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-5. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
-
-8. On the **Review + create** tab, review your settings, and, and then choose **Create**.
+See [Configure PUA protection in Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md#configure-pua-protection-in-microsoft-defender-antivirus).
 
 ### Automated investigation and remediation
 
@@ -440,18 +384,12 @@ If you've worked through all the steps in this article and still need help, cont
 
 2. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
-
 ## See also
 
 - [Manage Defender for Endpoint](manage-mde-post-migration.md)
 - [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
+- [Configure Defender for Endpoint on Android features](android-configure.md)

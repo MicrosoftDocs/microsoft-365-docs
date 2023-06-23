@@ -433,13 +433,6 @@
   - name: Contoso compliance case study
     href: ../compliance/communication-compliance-case-study.md
 
-- name: Test Lab Guides
-  items:
-  - name: Test Lab Guides for solutions and scenarios
-    href: test-lab-guides-overview-solutions.md
-  - name: Team with security isolation
-    href: team-security-isolation-dev-test.md
- 
 - name: Industry-specific guidance
   items: 
     - name: Microsoft 365 for frontline workers

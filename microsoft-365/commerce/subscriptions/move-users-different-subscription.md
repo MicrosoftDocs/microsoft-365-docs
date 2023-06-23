@@ -54,9 +54,9 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 5. At the bottom, select **Save Changes** \> **Close**.
 
-## Back up data before switching Microsoft 365 for business plans
+## Back up data before changing Microsoft 365 for business plans
 
-If a user will be switched to another subscription that has fewer data-related services or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
+If you plant to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
 
 If you're moving a user to a subscription that has the same or more services, you don't need to back up user data.
   
@@ -72,7 +72,7 @@ Before being switched to a different subscription, users can [download files and
   
 ### Save Yammer information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data).
   
 ### How to save SharePoint information
 
@@ -103,6 +103,6 @@ If you're not going to [reassign the unused licenses to other users](../../manag
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Remove licenses from your subscription](../licenses/buy-licenses.md) (article)\
-[Change plans manually](change-plans-manually.md) (article)\
+[Change plans manually](upgrade-to-different-plan.md#change-plans-manually) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
 [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) (article)
