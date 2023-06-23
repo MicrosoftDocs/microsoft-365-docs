@@ -136,7 +136,7 @@ Following privacy controls are available for configuring the data that is sent b
 
 ### Configure privacy alert report
 
-Admins can now enable privacy control for the phish report, malware report and network report sent by Microsoft Defender for Endpoint on Android. This configuration ensures that the domain name, app details and network details respectively aren't sent as part of the alert whenever a corresponding threat is detected.
+Admins can now enable privacy control for the phishing report, malware report, and network report sent by Microsoft Defender for Endpoint on Android. This configuration ensures that the domain name, app details, and network details, respectively, aren't sent as part of the alert whenever a corresponding threat is detected.
 
 Admin Privacy Controls (MDM) Use the following steps to enable privacy.
 
