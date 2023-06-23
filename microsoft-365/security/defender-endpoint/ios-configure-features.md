@@ -111,7 +111,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
     | Key | Value Type | Default (true-enable, false-disable) | Description |
     | --- | --- | --- | --- |
-    | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - enable, 0 - disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience. |
+    | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - Audit, 0 - Disable(default), 2 - Enable. This setting is managed by an IT Admin to audit, disable, or enable open network detection, respectively. In 'Audit' mode, alerts will be sent only to the ATP portal with no end-user experience. For end-user experience, set the config to 'Enable' mode.|
     | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
     | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender. |
     | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection. |
@@ -138,7 +138,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0|1 - enable, 0 - disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience.|
+    |`DefenderOpenNetworkDetection`|0|1 - enable, 0 - disable, 2 - Enable. This setting is managed by an IT Admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
