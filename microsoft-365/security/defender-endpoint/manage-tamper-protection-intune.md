@@ -90,15 +90,13 @@ Using Intune, you can:
 
 If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection protects those exclusions, provided all of the following conditions are met:
 
-- Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).)
-
-- `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
-
-- Tamper protection is deployed through Intune, and devices are managed in Intune only.
-
-- Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
-
-- Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. (See [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device).)
+| Condition | Criteria |
+|---|---|
+| Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).) |
+| `DisableLocalAdminMerge` setting | - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).) |
+| Tamper protection deployment | Tamper protection is deployed through Intune. |
+| Device management | Devices are managed in Intune only (not co-managed). |
+| Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).) <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. (See [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device).) |
 
 > [!TIP]
 > For more detailed information about Microsoft Defender Antivirus exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
