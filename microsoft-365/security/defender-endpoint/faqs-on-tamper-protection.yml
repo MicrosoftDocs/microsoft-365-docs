@@ -133,7 +133,9 @@ sections:
       - question: |
           Can I configure tamper protection with Microsoft Configuration Manager?
         answer: |
-          If you're using tenant attach, you can configure tamper protection with Configuration Manager. See the following resources:
+          If you're using tenant attach, you can configure tamper protection with Configuration Manager. Similar to using Intune, policies that you define with Configuration Manager can override settings in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+          
+          See the following resources:
           - [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)
           - [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
