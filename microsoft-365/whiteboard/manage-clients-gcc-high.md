@@ -20,8 +20,6 @@ description: Learn which clients are currently supported for Whiteboard.
 > [!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Whiteboard clients are currently being updated to support OneDrive for Business. 
-
 ## Clients supported
 
 The following clients are currently supported in Whiteboard:
@@ -29,16 +27,16 @@ The following clients are currently supported in Whiteboard:
 - Standalone Whiteboard web application at [https://whiteboard.office365.us](https://whiteboard.office365.us)
 - Microsoft Teams meetings, chats, and channels using Teams desktop and web
 - Standalone Whiteboard application for mobile
+- Standalone Whiteboard application for Windows 10 or later versions
+- Standalone Whiteboard application for Surface Hub
+- Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms
+- Whiteboard in 1:1 calls in Teams
 
 ## Clients planned
 
 The following clients are planned for future releases of Whiteboard:
 
-- Standalone Whiteboard application for Windows 10 or later versions
-- Standalone Whiteboard application for Surface Hub (currently can be used in anonymous mode)
 - Whiteboard in the Office.com app launcher
-- Whiteboard in Teams meetings on Surface Hub and Teams meeting rooms
-- Whiteboard in 1:1 calls in Teams
 
 > [!NOTE]
 > While users can install the Windows client, they won't be able to sign in until the client is updated.

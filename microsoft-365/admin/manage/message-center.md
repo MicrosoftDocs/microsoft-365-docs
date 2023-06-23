@@ -3,7 +3,7 @@ title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -163,7 +163,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in the **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon.
 

@@ -3,7 +3,7 @@ title: "Set up Outlook for email"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 11/17/2020
 audience: Admin

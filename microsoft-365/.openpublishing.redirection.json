@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "business-video/TOC",
+            "redirect_url": "https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "admin/top-m365-admin-articles.md",
             "redirect_url": "https://support.microsoft.com/smallbusiness",
             "redirect_document_id": false
@@ -89,6 +94,11 @@
             "source_path": "solutions/team-security-isolation-dev-test.md",
             "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
             "redirect_document_id": true
-        }
+        },
+        {
+            "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
+            "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
+            "redirect_document_id": false
+    }
     ]
 }

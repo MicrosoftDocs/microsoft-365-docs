@@ -3,7 +3,7 @@ title: "Microsoft 365 Teams monitoring"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/25/2022
+ms.date: 03/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise

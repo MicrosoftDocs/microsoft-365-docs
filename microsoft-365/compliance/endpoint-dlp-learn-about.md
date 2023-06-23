@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -28,7 +28,7 @@ description: "Endpoint data loss prevention extends monitoring of file activitie
 
 You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (three latest released versions) devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-create-deploy-policy.md).
+**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS devices running any of the latest releases. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-create-deploy-policy.md).
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
@@ -41,22 +41,26 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 
 |Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS three latest released versions | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
-|upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge. Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
-|copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|supported|supported         | auditable and restrictable|
-|copy to USB removable media |Detects when a user attempts to copy an item or information to removable media or USB device.|supported|supported         | auditable and restrictable|
-|copy to a network share    |Detects when a user attempts to copy an item to a network share or mapped network drive |supported|supported         |auditable and restrictable|
-|print a document    |Detects when a user attempts to print a protected item to a local or network printer.|supported|supported|auditable and restrictable         |
-|copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session |supported|not supported|  auditable and restrictable|
-|copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|supported|not supported| auditable and restrictable|
-|create an item|Detects when a user creates an item|supported |supported |auditable|
-|rename an item|Detects when a user renames an item|supported |supported |auditable|
+|Upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they're using a browser that is listed in DLP as an unallowed browser, the upload activity is blocked and the user is redirected to use Microsoft Edge. Microsoft Edge then either allows or blocks the upload or access based on the DLP policy configuration. You can block, warn, or audit when protected files are uploaded or blocked from being uploaded to cloud services based on the allow/unallowed domains list in Global settings. When the configured action is set to warn or block, other browsers (defined in the unallowed browsers list under Global settings) are blocked from accessing the file.   |Supported |Supported|Auditable and restrictable|
+|Paste to a browser| This activity is detected when a user copies and pastes sensitive information strings (rather than trying to attach or upload a sensitive file) into a browser. For instance, copying data from a database and pasting it into a web form. | Supported | Not supported | Auditable and restrictable |
+|Copy to another app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. It also detects when a user copies and pastes content among files within the same app, process or item for Word, Excel, and PowerPoint.|Supported|Supported         | Auditable and restrictable|
+|Copy to USB removable media |When this activity is detected, you can block, warn or audit the copying or moving of protected files from an endpoint device to USB removable media.|Supported|Supported  |Auditable and restrictable|
+|Copy to a network share    | When this activity is detected, you can block, warn, or audit the copying or moving of protected files from an endpoint device to any network share. |Supported|Supported         |Auditable and restrictable|
+|Print a document    |When this activity is detected, you can block, warn, or audit the printing of protected files from an endpoint device. |Supported|Supported|Auditable and restrictable         |
+|Copy to a remote session|Detects when a user attempts to copy an item to a remote desktop session. |Supported|Not supported|  Auditable and restrictable|
+|Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported (preview)| Auditable and restrictable|
+|Create an item|Detects the creation of an item.|Supported |Supported |Auditable|
+|Rename an item|Detects the renaming of an item.|Supported |Supported |Auditable|
+|Copy to clipboard| When this activity is detected, you can block, warn, or audit the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
+|Access by unallowed apps| Detects when an application that is on the unallowed apps list (as defined in [restricted apps and app groups](dlp-configure-endpoint-settings.md)) attempts to access protected files on an endpoint device. |Supported |Supported|
+
 
 ## Best practice for endpoint DLP policies
 
-Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
+Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend the following:
 
 - Create a policy and scope it to endpoints and to that group of users.
-- Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type**, and select **Credit Card**.
+- Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type*, and select **Credit Card**.
 - Set the actions for each activity to **Block**.
 
 See [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
@@ -90,15 +94,17 @@ DLP audits the activities for these file types, even if there isn't a policy mat
 - Excel files
 - PDF files
 
+[!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
+
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
- If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
+ If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv files are always audited, even if the device isn't targeted by any policy.
 
 To ensure activities are audited for all supported file types, create a [custom DLP policy](dlp-create-deploy-policy.md).
 
-Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed for these files types:
+Endpoint DLP monitors activity-based on MIME type, so activities are captured, even if the file extension is changed for these files types:
 
-After the extension is changed to any other file extension
+After the extension is changed to any other file extension:
 - doc
 - docx
 - xls
@@ -121,7 +127,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
+File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices. 
 
 |File Type |App  |monitored file extensions  |
 |---------|---------|---------|
@@ -137,10 +143,10 @@ File Types are a grouping of file formats which are utilized to protect specific
 If the File types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
 
 > [!IMPORTANT]
-> The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
+> The **file extensions** and **file types** options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
 
 > [!IMPORTANT]
-> These Windows versions support File types and File extension features:
+> These Windows versions support **file extensions** and **file types** features:
 >- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 >- Windows 10 versions 19H1/19H2 (KB 5007189)
 >- Windows 10 RS5 (KB 5006744)
@@ -152,14 +158,14 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 ### Enabling Device management
 
-Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft Purview solutions like Endpoint DLP and [insider risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
+Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft Purview solutions like Endpoint DLP and [insider risk management](insider-risk-management.md). You need to onboard all devices you want to use as locations in DLP policies.
 
 > [!div class="mx-imgBorder"]
 > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Onboarding and offboarding are handled via scripts you download from the Device management center. The center has custom scripts for each of these deployment methods:
+Onboarding and offboarding are handled via scripts that you download from the device management center. The device management center has custom scripts for each of the following deployment methods:
 
-- local script (up to 10 machines)
+- Local script (up to 10 machines)
 - Group policy
 - System Center Configuration Manager (version 1610 or later)
 - Mobile Device Management/Microsoft Intune
@@ -170,7 +176,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will automatically show up in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
+If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices automatically show up in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -227,19 +233,23 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 ## Just in time protection (preview)
 
 > [!IMPORTANT]
-> If you want to try out just in time protection, you have to register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
+> If you want to try out just-in-time protection, you must register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
 
-Endpoint DLP can use **Just in time protection** once it is enabled in **Microsoft Purview compliance console** > **Settings**. 
+Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
 
-Just in time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
+Just-in-time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
 
 - Items that have never been evaluated.
 - Items on which the evaluation has gone stale. These are previously evaluated items that haven't been reevaluated by the current, updated cloud versions of the policies.
+ 
+> [!NOTE]
+> - Simulate Mode: Just-in-time protection is triggered in the background. Admins can see just-in-time events in Activity explorer, without users being blocked.
+> - Enforce Mode: End users are blocked until the evaluation is complete.
 
-You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete <!--in 30 seconds-->. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
+<!-- You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if policy evaluation doesn't complete. You configure fallback settings in **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**. -->
 
 > [!TIP]
-> Because the candidate policy from just in time protection is applied to all files on onboarded devices, it may block user activity on files that won't have a policy applied once evaluation occurs. To prevent this productivity interruption, you should configure and deploy policies to devices before enabling just in time protection. 
+> Because the candidate policy from just-in-time protection is applied to all files on onboarded devices, it may block user activity on files that won't have a policy applied once evaluation occurs. To prevent this productivity interruption, you should configure and deploy policies to devices before enabling just in time protection. 
 
 ## Next steps
 

@@ -3,7 +3,7 @@ title: "Manage device access settings in Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/31/2020
 audience: Admin
@@ -57,46 +57,42 @@ Here's a breakdown for the device details available to you.
 
 Here are a few things you need to set up to run the commands and scripts that follow:
 
-### Step 1: Download and install the Azure Active Directory Module for Windows PowerShell
+### Step 1: Download and install the Microsoft Graph PowerShell SDK
 
-For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
+For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/powershell/microsoftgraph/installation).
 
-1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi) and select **Download for Microsoft Online Services Sign-in Assistant**.
-
-2. Install the Microsoft Azure Active Directory Module for Windows PowerShell with these steps:
+1. Install the Microsoft Graph PowerShell SDK for Windows PowerShell with these steps:
 
     1. Open an administrator-level PowerShell command prompt.
 
-    2. Run the `Install-Module MSOnline` command.
-
+    2. Run the following command:
+         ```powershell
+         Install-Module Microsoft.Graph -Scope AllUsers
+         ```
     3. If prompted to install the NuGet provider, type Y and press ENTER.
 
     4. If prompted to install the module from PSGallery, type Y and press ENTER.
 
-    5. After installation, close the PowerShell command window.
+    5.  After installation, close the PowerShell command window.
 
 ### Step 2: Connect to your Microsoft 365 subscription
 
-1. In the Windows Azure Active Directory Module for Windows PowerShell, run the following command.
+1. In Powershell window, run the following command.
 
    ```powershell
-   $UserCredential = Get-Credential
+   Connect-MgGraph -Scopes Device.Read.All, User.Read.All
    ```
 
-2. In the Windows PowerShell Credential Request dialog box, type the user name and password for your Microsoft 365 global admin account, and then select **OK**.
+2. A popup will open for you to sign in. Provide the credentials of your Administrative Account and log in.
 
-3. Run the following command.
-
-   ```powershell
-   Connect-MsolService -Credential $UserCredential
-   ```
+3. If your account has the necessary permissions you'll see "Welcome To Microsoft Graph!" in the Powershell window.
 
 ### Step 3: Make sure you're able to run PowerShell scripts
 
 > [!NOTE]
 > You can skip this step if you're already set up to run PowerShell scripts.
 
-To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the running of PowerShell scripts.
+To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable the running of PowerShell scripts.
 
 1. From your Windows Desktop, select **Start**, and then type Windows PowerShell. Right-click Windows PowerShell, and then select **Run as administrator**.
 
@@ -108,17 +104,17 @@ To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable the
 
 3. When prompted, type Y and then press Enter.
 
-#### Run the Get-MsolDevice cmdlet to display details for all devices in your organization
+#### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 
 1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
 
 2. Run the following command.
 
    ```powershell
-   Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
+   Get-MgDevice -All -ExpandProperty "registeredOwners" | Where-Object {($_.RegisteredOwners -ne $null) -and ($_.RegisteredOwners.Count -gt 0)}
    ```
 
-For more examples, see [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
+For more examples, see [Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice).
 
 ### Run a script to get device details
 
@@ -126,72 +122,103 @@ First, save the script to your computer.
 
 1. Copy and paste the following text into Notepad.
 
-   ```powershell
+```powershell
    param (
-   [PSObject[]]$users = @(),
-   [Switch]$export,
-   [String]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
-   [String]$exportPath = [Environment]::GetFolderPath("Desktop")
-   )
-   [System.Collections.IDictionary]$script:schema = @{
-   DeviceId = ''
-   DeviceOSType = ''
-   DeviceOSVersion = ''
-   DeviceTrustLevel = ''
-   DisplayName = ''
-   IsCompliant = ''
-   IsManaged = ''
-   ApproximateLastLogonTimestamp = ''
-   DeviceObjectId = ''
-   RegisteredOwnerUpn = ''
-   RegisteredOwnerObjectId = ''
-   RegisteredOwnerDisplayName = ''
-   }
-   function createResultObject
-   {
-   [PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema
-   return $resultObject
-   }
-   If ($users.Count -eq 0)
-   {
-   $users = Get-MsolUser
-   }
-   [PSObject[]]$result = foreach ($u in $users)
-   {
-   [PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName
-   foreach ($d in $devices)
-   {
-   [PSObject]$deviceResult = createResultObject
-   $deviceResult.DeviceId = $d.DeviceId
-   $deviceResult.DeviceOSType = $d.DeviceOSType
-   $deviceResult.DeviceOSVersion = $d.DeviceOSVersion
-   $deviceResult.DeviceTrustLevel = $d.DeviceTrustLevel
-   $deviceResult.DisplayName = $d.DisplayName
-   $deviceResult.IsCompliant = $d.GraphDeviceObject.IsCompliant
-   $deviceResult.IsManaged = $d.GraphDeviceObject.IsManaged
-   $deviceResult.DeviceObjectId = $d.ObjectId
-   $deviceResult.RegisteredOwnerUpn = $u.UserPrincipalName
-   $deviceResult.RegisteredOwnerObjectId = $u.ObjectId
-   $deviceResult.RegisteredOwnerDisplayName = $u.DisplayName
-   $deviceResult.ApproximateLastLogonTimestamp = $d.ApproximateLastLogonTimestamp
-   $deviceResult
-   }
-   }
-   If ($export)
-   {
-   $result | Export-Csv -path ($exportPath + "\" + $exportFileName) -NoTypeInformation
-   }
-   Else
-   {
-   $result
-   }
-   ```
+    [Parameter(Mandatory = $false)]
+    [PSObject[]]$users = @(),
+    [Parameter(Mandatory = $false)]
+    [Switch]$export,
+    [Parameter(Mandatory = $false)]
+    [String]$exportFileName = "UserDeviceOwnership_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
+    [Parameter(Mandatory = $false)]
+    [String]$exportPath = [Environment]::GetFolderPath("Desktop")
+)
 
-2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MsolUserDeviceComplianceStatus.ps1.
+#Clearing the screen
+Clear-Host
+
+#Preparing the output object
+$deviceOwnership = @()
+
+
+if ($users.Count -eq 0) {
+    Write-Output "No user has been provided, gathering data for all devices in the tenant"
+    #Getting all Devices and their registered owners
+    $devices = Get-MgDevice -All -Property * -ExpandProperty registeredOwners
+
+    #For each device which has a registered owner, extract the device data and the registered owner data
+    foreach ($device in $devices) {
+        $DeviceOwners = $device | Select-Object -ExpandProperty 'RegisteredOwners'
+        #Checking if the DeviceOwners Object is empty
+        if ($DeviceOwners -ne $null) {
+            foreach ($DeviceOwner in $DeviceOwners) {
+                $OwnerDictionary = $DeviceOwner.AdditionalProperties
+                $OwnerDisplayName = $OwnerDictionary.Item('displayName')
+                $OwnerUPN = $OwnerDictionary.Item('userPrincipalName')
+                $OwnerID = $deviceOwner.Id
+                $deviceOwnership += [PSCustomObject]@{
+                    DeviceDisplayName             = $device.DisplayName
+                    DeviceId                      = $device.DeviceId
+                    DeviceOSType                  = $device.OperatingSystem
+                    DeviceOSVersion               = $device.OperatingSystemVersion
+                    DeviceTrustLevel              = $device.TrustType
+                    DeviceIsCompliant             = $device.IsCompliant
+                    DeviceIsManaged               = $device.IsManaged
+                    DeviceObjectId                = $device.Id
+                    DeviceOwnerID                 = $OwnerID
+                    DeviceOwnerDisplayName        = $OwnerDisplayName
+                    DeviceOwnerUPN                = $OwnerUPN
+                    ApproximateLastLogonTimestamp = $device.ApproximateLastSignInDateTime
+                }
+            }
+        }
+
+    }
+}
+
+else {
+    #Checking that userid is present in the users object
+    Write-Output "List of users has been provided, gathering data for all devices owned by the provided users"
+    foreach ($user in $users) {
+        $devices = Get-MgUserOwnedDevice -UserId $user.Id -Property *
+        foreach ($device in $devices) {
+            $DeviceHashTable = $device.AdditionalProperties
+            $deviceOwnership += [PSCustomObject]@{
+                DeviceId                      = $DeviceHashTable.Item('deviceId')
+                DeviceOSType                  = $DeviceHashTable.Item('operatingSystem')
+                DeviceOSVersion               = $DeviceHashTable.Item('operatingSystemVersion') 
+                DeviceTrustLevel              = $DeviceHashTable.Item('trustType')
+                DeviceDisplayName             = $DeviceHashTable.Item('displayName')
+                DeviceIsCompliant             = $DeviceHashTable.Item('isCompliant')
+                DeviceIsManaged               = $DeviceHashTable.Item('isManaged')
+                DeviceObjectId                = $device.Id
+                DeviceOwnerUPN                = $user.UserPrincipalName
+                DeviceOwnerID                 = $user.Id
+                DeviceOwnerDisplayName        = $user.DisplayName
+                ApproximateLastLogonTimestamp = $DeviceHashTable.Item('approximateLastSignInDateTime')
+            }
+        }
+    }
+
+}
+
+$deviceOwnership
+
+if ($export) {
+    $exportFile = Join-Path -Path $exportPath -ChildPath $exportFileName
+    $deviceOwnership | Export-Csv -Path $exportFile -NoTypeInformation
+    Write-Output "Data has been exported to $exportFile"
+}
+```
+
+2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MgGraphDeviceOwnership.ps1.
+
+> [!NOTE]
+> The script is also available for download on [Github](https://github.com/Raindrops-dev/RAIN-MicrosoftGraphPowershellCode/blob/main/Get-MgGraphDeviceOwnership.ps1).
 
 ### Run the script to get device information for a single user account
 
-1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
+1. Open Powershell.
 
 2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
 
@@ -199,23 +226,23 @@ First, save the script to your computer.
    cd C:\PS-Scripts
    ```
 
-3. Run the following command to identify the user you want to get device details for. This example gets details for bar@example.com.
+3. Run the following command to identify the user you want to get device details for. This example gets details for user@contoso.com.
 
    ```powershell
-   $u = Get-MsolUser -UserPrincipalName bar@example.com
+   $user = Get-MgUser -UserId "user@contoso.com"
    ```
 
 4. Run the following command to initiate the script.
 
    ```powershell
-   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
+   .\Get-GraphUserDeviceComplianceStatus.ps1 -users $user -Export
    ```
 
 The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
 
 ### Run the script to get device information for a group of users
 
-1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
+1. Open Powershell.
 
 2. Go to the folder where you saved the script. For example, if you saved it to C:\PS-Scripts, run the following command.
 
@@ -226,13 +253,14 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 3. Run the following command to identify the group you want to get device details for. This example gets details for users in the FinanceStaff group.
 
    ```powershell
-   $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_.ObjectId }
+   $groupId = Get-MgGroup -Filter "displayName eq 'FinanceStaff'" | Select-Object -ExpandProperty Id
+   $Users = Get-MgGroupMember -GroupId $groupId | Select-Object -ExpandProperty Id | % { Get-MgUser -UserId $_ }
    ```
 
 4. Run the following command to initiate the script.
 
    ```powershell
-   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
+   .\Get-GraphUserDeviceComplianceStatus.ps1 -User $Users -Export
    ```
 
 The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
@@ -243,4 +271,10 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 [Overview of Basic Mobility and Security](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)
+[Retirement announcement for MSOnline and AzureAD cmdlets](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270)
+
+[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
+
+[Get-MgDevice](/powershell/module/microsoft.graph.users/get-mgdevice)
+
+[Get-MgUserOwnedDevice](/powershell/module/microsoft.graph.users/get-mguserowneddevice)

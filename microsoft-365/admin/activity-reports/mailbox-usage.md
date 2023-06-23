@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center mailbox usage reports"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -46,6 +46,8 @@ To access shared mailbox information, change the drop-down selection at the top 
 :::image type="content" alt-text="Mailbox usage report." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
 The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
+
+The **Mailbox usage** report does not include **Recoverable Items** as they are included in the **Recoverable Items mailbox quota**.
 
 ### The Mailbox chart
 

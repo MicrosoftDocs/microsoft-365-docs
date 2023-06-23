@@ -20,7 +20,6 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-- zerotrust-services
 ms.date: 1/31/2023
 ---
 
@@ -69,6 +68,10 @@ In this illustration:
 - Information protection and governance provide sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
 
 This article assumes you have already configured cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
+
+
+> [!TIP]
+> When you understand the steps and the end-to-end deployment process, you can use the [Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2224820) advanced deployment guide when signed in to the Microsoft 365 admin center. This guide steps you through applying Zero Trust principles for standard and advanced technology pillars. To step through the guide without signing in, go to the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2222968).
 
 ## Step 1. Configure Zero Trust identity and device access protection — starting-point policies
 

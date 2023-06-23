@@ -192,7 +192,6 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 > [!NOTE]
 > Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
-> In Microsoft Intune, per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in Intune to replace the existing policy.
 
 To configure per-rule exclusions:
 

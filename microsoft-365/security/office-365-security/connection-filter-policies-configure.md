@@ -19,25 +19,24 @@ ms.custom:
 description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/01/2022
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Configure connection filtering
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+In Microsoft 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, _connection filtering_ and the default connection filter policy identify good or bad source email servers by IP addresses. The key components of the default connection filter policy are:
 
-Microsoft 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes can use _connection filtering_ and the default connection filter policy to identify good or bad source email servers by IP addresses. The key components of the default connection filter policy are:
+- **IP Allow List**: Skip spam filtering for all incoming messages from the specified source IP addresses or IP address ranges. All incoming messages are scanned for malware and high-confidence phishing. For other scenarios where spam filtering still occurs on messages from servers in the IP Allow List, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
-- **IP Allow List**: Skip spam filtering for all incoming messages from the source email servers that you specify by IP address or IP address range. For scenarios where spam filtering might still occur on messages from these sources, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
+- **IP Block List**: Block all incoming messages from the specified source IP addresses or IP address ranges. The incoming messages are rejected, aren't marked as spam, and no other filtering occurs. For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
-- **IP Block List**: Block all incoming messages from the source email servers that you specify by IP address or IP address range. The incoming messages are rejected, aren't marked as spam, and no other filtering occurs. For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
-
-- **Safe list**: The _safe list_ is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
+- **Safe list**: The _safe list_ in the connection filter policy is a dynamic allow list that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the servers in the list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
 This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in Exchange Online PowerShell. For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection-about.md).
 
@@ -53,7 +52,6 @@ This article describes how to configure the default connection filter policy in 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Modify policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -67,47 +65,49 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to modify the default connection filter policy
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
-2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking on the name of the policy.
+2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name.
 
-3. In the policy details flyout that appears, configure any of the following settings:
+3. In the policy details flyout that opens, use the **Edit** links to modify the policy settings:
 
-   - **Description** section: Click **Edit name and description**. In the **Edit name and description** flyout that appears, enter optional descriptive text in the **Description** box.
+   - **Description** section: Select **Edit description** to enter a description for the policy in the **Description** box of the **Edit name and description** flyout that opens. You can't modify the name of the policy.
 
-     When you're finished, click **Save**.
+     When you're finished in the **Edit name and description** flyout, select **Save**.
 
-   - **Connection filtering section**: Click **Edit connection filter policy**. In the flyout that appears, configure the following settings:
+   - **Connection filtering** section: Select **Edit connection filter policy**. In the flyout that opens, configure the following settings:
 
-     - **Always allow messages from the following IP addresses or address range**: This setting is the IP Allow list. Click in the box, enter a value, and then press Enter or select the complete value that's displayed below the box. Valid values are
+     - **Always allow messages from the following IP addresses or address range**: This setting is the IP Allow List. Click in the box, enter a value, and then press the ENTER key or select the complete value that's displayed below the box. Valid values are:
        - Single IP: For example, 192.168.1.1.
        - IP range: For example, 192.168.0.1-192.168.0.254.
        - CIDR IP: For example, 192.168.0.1/25. Valid subnet mask values are /24 through /32. To skip spam filtering for /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this article.
 
-       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
-
-     To add the IP address or address range, enter the value in the box and then click **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
+       Repeat this step as many times as necessary. To remove an existing entry, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
    - **Always block messages from the following IP addresses or address range**: This setting is the IP Block List. Enter a single IP, IP range, or CIDR IP in the box as previously described in the **Always allow messages from the following IP addresses or address range** setting.
 
-   - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that will skip spam filtering. To use the safe list, select the check box.
+   - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that skip spam filtering. To use the safe list, select the check box.
 
-   When you're finished, click **Save**.
+   When you're finished in the flyout, select **Save**.
 
-4. Back on the policy details flyout, click **Close**.
+4. Back on the policy details flyout, select **Close**.
 
 ## Use the Microsoft 365 Defender portal to view the default connection filter policy
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
-2. On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
+On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
 
-   - **Name**: This value is **Connection filter policy (Default)** for the default connection filter policy.
-   - **Status**: This value is **Always on** for the default connection filter policy.
-   - **Priority**: This value is **Lowest** for the default connection filter policy.
-   - **Type**: This value is blank for the default connection filter policy.
+- **Name**: The default connection filter policy is named **Connection filter policy (Default)**.
+- **Status**: The value is **Always on** for the default connection filter policy.
+- **Priority**: The value is **Lowest** for the default connection filter policy.
+- **Type**: The value is blank for the default connection filter policy.
 
-3. When you select the default connection filter policy, the policy settings are displayed in a flyout.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
+
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific policies.
+
+Select the default connection filter policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to modify the default connection filter policy
 
@@ -116,8 +116,6 @@ Use the following syntax:
 ```powershell
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
-
-**Notes**:
 
 - Valid IP address or address range values are:
   - Single IP: For example, 192.168.1.1.
@@ -141,11 +139,11 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 For detailed syntax and parameter information, see [Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## How do you know this worked?
+## How do you know these procedures worked?
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- On the **Anti-spam** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
+- On the **Anti-spam policies** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name, and verify the policy settings in the details flyout that opens.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 
@@ -159,9 +157,12 @@ To verify that you've successfully modified the default connection filter policy
 
 The following sections identify additional items that you need to know about when you configure the IP Allow List.
 
+> [!NOTE]
+> All incoming messages are scanned for malware and high-confidence phishing, regardless of whether the message source is in the IP Allow List.
+
 ### Skip spam filtering for a CIDR IP outside of the available range
 
-As described earlier in this article, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't use the mail flow rule method, because the messages will be blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
+As described earlier in this article, you can only use a CIDR IP with the network mask /24 to /32 in the IP Allow List. To skip spam filtering on messages from source email servers in the /1 to /23 range, you need to use Exchange mail flow rules (also known as transport rules). But, we recommend that you don't use the mail flow rule method, because the messages are blocked if an IP address in the /1 to /23 CIDR IP range appears on any of Microsoft's proprietary or third-party block lists.
 
 Now that you're fully aware of the potential issues, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from these IP addresses skip spam filtering:
 
@@ -189,7 +190,7 @@ Messages from an email server in your IP Allow List are still subject to spam fi
 
 - An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in _any_ tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in _the same_ Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** _is_ added to the message's [anti-spam message headers](message-headers-eop-mdo.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
 
-- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in *different* Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *isn't* added to the message headers, so the message is still subject to spam filtering.
+- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in _different_ Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *isn't* added to the message headers, so the message is still subject to spam filtering.
 
 If you encounter either of these scenarios, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from the problematic IP addresses skip spam filtering:
 
@@ -200,4 +201,4 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 
 ****
 
-![The short icon for LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.
+:::image type="content" source="../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png" alt-text="The short icon for LinkedIn Learning."::: **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.

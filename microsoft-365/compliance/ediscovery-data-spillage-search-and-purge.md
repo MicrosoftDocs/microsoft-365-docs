@@ -67,7 +67,7 @@ You can also create a new role group that aligns with your organizational needs.
 
 An eDiscovery case provides an effective way to manage your data spillage investigation. You can add members to the role group that you created in Step 1, add the role group as a member of new a eDiscovery case, perform iterative searches to find the spilled data, export a report to share, track the status of the case, and then refer back to the details of the case if needed. Consider establishing a naming convention for eDiscovery cases used for data spillage incidents, and provide as much information as you can in the case name and description so you can locate and refer to in the future if necessary.
   
-To create a new case, you can use eDiscovery in the security and compliance center. See "Create a new case" in [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-3-create-a-ediscovery-standard-case).
+To create a new case, you can use eDiscovery in the Microsoft Purview compliance portal. See "Create a new case" in [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-4-create-a-ediscovery-standard-case).
   
 ## Step 3: Search for the spilled data
 
@@ -114,7 +114,7 @@ For more information about exporting reports, see [Export a Content Search repor
 
 To further investigate if email with spilled data was shared, you can optionally query the message trace logs with the sender information and the date range information that you gathered in Step 4. The retention period for message trace is 30 days for real-time data and 90 days for historical data.
   
-You can use Message trace in the security and compliance center or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message tracing doesn't offer full guarantees on the completeness of data returned. For more information about using Message trace, see: 
+You can use Message trace in the Microsoft Purview compliance portal or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message tracing doesn't offer full guarantees on the completeness of data returned. For more information about using Message trace, see: 
   
 - [Message trace in the Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
 - [New Message Trace in Security & Compliance Center](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
@@ -188,7 +188,7 @@ If you changed any mailbox configuration in Step 6 to prepare the mailboxes befo
 
 If the keywords in the search query that you created and used in Step 3 contains some of all of the actual spilled data, you should delete the search query to prevent further data spillage.
   
-1. In the security and compliance center, open the eDiscovery case, go to the **Search** page, and select the appropriate content search.
+1. In the Microsoft Purview compliance portal, open the eDiscovery case, go to the **Search** page, and select the appropriate content search.
 
 2. On the flyout page, select **Delete**.
 

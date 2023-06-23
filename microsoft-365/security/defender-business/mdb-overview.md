@@ -62,7 +62,6 @@ With Defender for Business, you can help protect the devices and data your busin
 
 - **Learn how to set up your threat protection capabilities**. 
    - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
-   - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
 - **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. 
@@ -77,6 +76,6 @@ With Defender for Business, you can help protect the devices and data your busin
 ## Next steps
 
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
-- [Learn more about the simplified configuration process in Defender for Business](mdb-simplified-configuration.md)
+- [Learn more about the simplified configuration process in Defender for Business](mdb-setup-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
 - [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)

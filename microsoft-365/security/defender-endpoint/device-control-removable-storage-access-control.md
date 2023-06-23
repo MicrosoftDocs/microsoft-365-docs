@@ -2,9 +2,6 @@
 title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -16,8 +13,8 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 03/22/2022
-ms.reviewer: tewchen
+ms.date: 04/25/2023
+ms.reviewer: tewchen, kurtsarens
 search.appverid: met150
 ---
 
@@ -26,6 +23,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
@@ -99,8 +97,8 @@ The following table lists the properties you can use in **PolicyRule**:
 |---|---|---|
 | **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).|
 | **Name** | String, the name of the policy and will display on the toast based on the policy setting. | |
-| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| **ExcludedIDList** | The group(s) that the policy won't  be applied to. | The Group ID/GUID must be used at this instance. |
+| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, **the media must be a member of each group in the list** to be included.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| **ExcludedIDList** | The group(s) that the policy won't  be applied to. If multiple groups are added, **the media must be a member of a group in the list** to be excluded. | The Group ID/GUID must be used at this instance. |
 | **Entry** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See Entry properties table below to get details.|
 
 

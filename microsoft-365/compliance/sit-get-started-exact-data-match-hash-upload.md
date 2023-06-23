@@ -122,7 +122,7 @@ This computer must have direct access to your Microsoft 365 tenant.
    > [!NOTE]
    > The EDMUploadAgent at the above links has been updated to automatically add a salt value to the hashed data. Alternately, you can provide your own salt value. Once you have used this version, you will not be able to use the previous version of the EDMUploadAgent.
    >
-   > You can upload data with the EDMUploadAgent to any given data store only twice per day.
+   > You can upload data with the EDMUploadAgent to any given data store up to five times per day.
 
 3. Authorize the EDM Upload Agent, open Command Prompt window as an administrator, switch to the **C:\EDM\Data** directory, and then run the following command:
 
@@ -133,7 +133,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 4. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
-   OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema, you ***must*** download it for use in this procedure if you haven't already. Run this command in a Command Prompt window:
+   IMPORTANT: If you used the Exact Data Match schema and sensitive information type wizard to create your schema, you ***must*** download it for use in this procedure if you haven't already. Run this command in a Command Prompt window:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
@@ -152,7 +152,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
    If your sensitive information table has some incorrectly formatted values, but you still want to import the remaining data while ignoring invalid rows, you can use the */AllowedBadLinesPercentage* parameter in the command. The example above specifies a five percent threshold. This means that the tool hashes and uploads the sensitive information table, even if up to five percent of the rows are invalid.
 
-   This command automatically adds a randomly-generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt \<saltvalue\>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
+   This command automatically adds a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt \<saltvalue\>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 6. Check the upload status by running this command:
 

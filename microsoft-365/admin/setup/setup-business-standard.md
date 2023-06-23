@@ -3,7 +3,7 @@ title: "Set up Microsoft 365 Business Standard with a new or existing domain"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 05/27/2020
 audience: Admin
@@ -43,7 +43,7 @@ When you purchase Microsoft 365 Business Standard, you have the option of adding
 In this article, we'll walk you through the steps of adding an existing domain you already own or buying a new one. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
 > [!Tip]
-> If you have a Microsoft 365 Business Premium subscription, please see [Set up Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
+> If you have a Microsoft 365 Business Premium subscription, please see [Set up Microsoft 365 Business Premium](../../business-premium/m365-business-premium-setup.md).
 
 ## Set up Microsoft 365 for business
 

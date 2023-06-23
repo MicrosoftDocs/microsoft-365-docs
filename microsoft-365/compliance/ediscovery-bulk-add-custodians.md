@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -97,3 +97,7 @@ Here's an example of a CSV file with custodian information:<br/><br/>
 
 > [!NOTE]
 > As previously explained, add a "." prefix to the UPN address of an  inactive mailbox to import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian.
+
+## Retry hold action
+
+Once a custodian is placed on hold, you can validate the status in the **Hold** column of the list page. If the hold status isn't equal to *True* (when hold is enabled) or *False* (when hold is disabled), you can multi-select the relevant custodians and select *Retry hold action* at the top of the page. *Retry hold action* is only available for custodial sources and when multiple custodians are selected. If *Retry hold action* is performed for data sources succesfully placed or released from hold, no action is triggered.

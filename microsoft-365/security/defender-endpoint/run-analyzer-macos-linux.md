@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/18/2023
+ms.date: 06/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -35,6 +35,7 @@ There are two ways to run the client analyzer tool:
 1. Using a binary version (no Python dependency)
 2. Using a Python-based solution
 
+
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
@@ -47,10 +48,10 @@ If using a terminal download using the command:
 2. Verify the download
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13'
 
     ```console
-    echo '550EAE6FAA26972D49D3013520644E551AFA846E92CD59F5C6A6A72A6B77E9E9  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13  XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -109,7 +110,10 @@ When using a terminal, unzip the file using one of the following commands based 
 
 > [!NOTE]
 >
-> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+> - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+>
+> >[!WARNING]
+> >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -128,7 +132,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'E3119C47975A3E50A5144B0751F59BFC42327A151BDA5D8334D1ED64F7898A7F  XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '1A8004C89E8B75FF892AAC66F1B1D07F3C7030720070A1A1E677A099A9ADC32E  XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
@@ -226,24 +230,62 @@ Add exclusions for audit-d monitoring.
 > This functionality exists for Linux only
 
 ```console
--h, --help            show this help message and exit
--e <executable>, --exe <executable>
-                      exclude by executable name, i.e: bash
--p <process id>, --pid <process id>
-                      exclude by process id, i.e: 911
--d <directory>, --dir <directory>
-                      exclude by target path, i.e: /var/foo/bar
--x <executable> <directory>, --exe_dir \<executable\> <directory>
-                      exclude by executable path and target path, i.e:
-                      /bin/bash /var/foo/bar
--q <q_size>, --queue <q_size>
-                      set dispatcher q_depth size
--r, --remove          remove exclusion file
--s, --stat            get statistics about common executables
--l, --list            list auditd rules
+  -h, --help            show this help message and exit
+  -e <executable>, --exe <executable>
+                        exclude by executable name, i.e: bash
+  -p <process id>, --pid <process id>
+                        exclude by process id, i.e: 911
+  -d <directory>, --dir <directory>
+                        exclude by target path, i.e: /var/foo/bar
+  -x <executable> <directory>, --exe_dir <executable> <directory>
+                        exclude by executable path and target path, i.e: /bin/bash /var/foo/bar
+  -q <q_size>, --queue <q_size>
+                        set dispatcher q_depth size
+  -r, --remove          remove exclusion file
+  -s, --stat            get statistics about common executables
+  -l, --list            list auditd rules
+  -o, --override        Override the existing auditd exclusion rules file for mdatp
+  -c <syscall number>, --syscall <syscall number>
+                        exclude all process of the given syscall
 ```
 
 Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+
+### AuditD Rate Limiter
+
+Syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events will be limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
+
+> [!NOTE]
+> This functionality exists for Linux only.
+
+```console
+-h, --help                                  show this help message and exit
+-e <true/false>, --enable <true/false>      enable/disable the rate limit with default values
+```
+
+Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
+
+> [!NOTE]
+> This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
+
+### AuditD Skip Faulty Rules
+
+This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there is a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
+
+> [!NOTE]
+> This functionality is only available on Linux.
+
+```console
+
+```console
+-h, --help                                  show this help message and exit
+-e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules. In case no argumanet is passed, the option will be true by default.
+```
+
+Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
+
+> [!NOTE]
+> This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
 
 ## Result package contents on macOS and Linux
 

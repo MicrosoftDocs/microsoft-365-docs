@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/31/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -90,13 +90,23 @@ Use the *Export* option to create a .csv file containing the report details for 
   - User notified
   - Case created
 
-- **Sensitive information type per location**: Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
+> [!NOTE]
+> The items and actions displayed are only for the items and actions *matched* during the date range included in the date range filter mentioned above.
+
+- **Sensitive information type per location** (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
 
   - **Email**: Sensitive information types detected in Exchange email messages.
   - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
   - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
   - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
   - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
+
+- **Email blast senders**: Review and export the list of senders of email blast messages that were filtered out from your communication compliance policies to reduce "noise." [**Filter email blasts** is a communication compliance policy setting](communication-compliance-policies.md#filter-email-blasts). The Email blast senders report includes the following fields:
+
+   - Policy name
+   - Policy last modified date
+   - Sender
+   - Number of mails filtered
 
 ### Message details report
 

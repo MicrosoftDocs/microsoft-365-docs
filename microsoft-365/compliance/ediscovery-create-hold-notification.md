@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -38,15 +38,11 @@ The first step is to specify the appropriate details for legal hold notices or o
 ![Name Communication page.](../media/NameCommunication.PNG)
 
 1. In the Microsoft Purview compliance portal, go to **eDiscovery > Premium** to display the list of cases in your organization.
-
 2. Select a case, select the **Communications** tab, and then select **New communication**.
-
 3. On the **Name communication** page, specify the following communication settings.
 
     - **Name**: This is the name for the communication.
-
     - **Issuing officer**: The drop-down list displays users in your organization who can be selected as the issuing officer for the communication. Each communication sent to custodians will be sent on behalf of the selected issuing officer. The list of users in the drop-down consists of the members of the case and the organization-wide issuing officers. These issuing officers are added by an eDiscovery Administrator, and are available in all eDiscovery (Premium) cases in your organization. For more information, see [Manage issuing officers](ediscovery-issuing-officers.md).
-
     - **Select communication template**: The drop-down list displays the templates from the Communications library on the eDiscovery (Premium) settings page. If you select a template, it will be displayed on the **Define portal content** as a starting point for the text of the notification that you're creating. If you don't select a template, then you'll have to create the notice yourself from scratch. For more information about communication templates, see [Manage custodian communications templates](ediscovery-communications-library.md).
 
 4. Select **Next**.
@@ -60,9 +56,7 @@ Next, you can create and add the content of the hold notice. On the **Define por
 To create the portal content:
 
 1. Type (or cut and paste from another document) your hold notice in the textbox for the portal content. If you selected a communications template on the previous wizard page, the template is displayed. You can edit the template content as necessary.
-
 2. Insert merge variables into your notice to customize the notice and share the Custodian Compliance Portal.
-
 3. Select **Next**.
 
   > [!TIP]
@@ -81,13 +75,9 @@ After the communication is created, the **Issuance Notification** is initiated b
 To create an issuance notification:
 
 1. In the **Issuance** tile, select **Edit**.
-
-2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon.
-
+2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
 3. Specify the **Subject** for the notice (required).
-
 4. Specify the contents or additional instructions that you would like to provide to the custodian (required). The portal content you defined in Step 2 is added to the end of the issuance notice.
-
 5. Select **Save**.
 
 ### Re-Issuance notification
@@ -97,13 +87,9 @@ As the case progresses, custodians may be required to preserve additional or les
 To create a reissuance notification:
 
 1. In the **Reissue** tile, select **Edit**.
-
-2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon.
-
+2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
 3. Specify the **Subject** for the notice (required).
-
 4. Specify the contents or additional instructions that you would like to provide to the custodian (required). The portal content you defined in Step 2 is added to the end of the reissuance notice.
-
 5. Select **Save**.
 
 > [!NOTE]
@@ -116,13 +102,9 @@ After a matter is resolved or if a custodian is no longer subject to preserve co
 To create a release notification:
 
 1. In the **Release** tile, select **Edit**.
-
-2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon.
-
+2. If necessary, add additional case members or staff to the **Cc** and **Bcc** fields. To add multiple users to these fields, separate email addresses with a semi-colon and without spaces between the addresses. For example, *user1@contoso.com;user2@contoso.com;user3@contoso.com*.
 3. Specify the **Subject** for the notice (required).
-
 4. Specify the contents or additional instructions that you would like to provide to the custodian (required).
-
 5. Select **Save** and go to the next step.
 
 ## (Optional) Step 4: Set the optional notifications
@@ -133,22 +115,16 @@ Optionally, you can simplify the workflow for following up with unresponsive cus
 
 ### Reminders
 
-After you have sent a hold notification, you can follow up with unresponsive custodians by defining a reminder workflow.
+After you've sent a hold notification, you can follow up with unresponsive custodians by defining a reminder workflow.
 
 To schedule reminders:
 
 1. In the **Reminder** tile, select **Edit**.
-
 2. Enable the **Reminder** workflow by turning on the **Status** toggle (required).
-
 3. Specify the **Reminder interval (in days)** (required). This is the number of days to wait before sending the first and follow-up reminder notifications. For example, if you set the reminder interval to seven days, then the first reminder would be sent seven days after the hold notification was initially issued. All subsequent reminders would also be sent every seven days.
-
 4. Specify the **Number of reminders** (required). This field specifies how many reminders to send to unresponsive custodians. For example, if you set the number of reminders to 3, then a custodian would receive a maximum of three reminders. After a custodian acknowledges the hold notification, reminders will no longer be sent to that user.
-
 5. Specify the **Subject** for the notice (required).
-
 6. Specify the contents or additional instructions that you would like to provide to the custodian (required). The portal content you defined in Step 2 is added to the end of the reminder notice.
-
 7. Select **Save** and go the next step.
 
 ### Escalations
@@ -158,17 +134,11 @@ In some situations, you may need additional ways to follow up with unresponsive 
 To schedule escalations:
 
 1. In the **Escalation** tile, select **Edit**.
-
 2. Enable the **Escalation** workflow by turning on the **Status** toggle.
-
 3. Specify the **Escalation interval (in days)** (required).
-
 4. Specify the **Number of escalations** (required). This field specifies how many escalations to send to unresponsive custodians. For example, if you set the number of escalations to 3, then an escalation notice would be sent to the custodian and their manager a maximum of three times. After a custodian acknowledges the hold notification, escalations will no longer be sent.
-
 5. Specify the **Subject** for the notice (required).
-
 6. Specify the contents or additional instructions that you would like to provide to the custodian (required). The portal content you defined in Step 2 is added to the end of the escalation notice.
-
 7. Select **Save** and go the next step.
 
 ## Step 5: Assign custodians to receive notifications
