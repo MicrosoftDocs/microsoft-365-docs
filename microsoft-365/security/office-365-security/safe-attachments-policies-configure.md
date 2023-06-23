@@ -78,7 +78,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 4. On the **Users and domains** page, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -262,7 +262,7 @@ In PowerShell, the difference between safe attachment policies and safe attachme
 
 - In PowerShell, you create the safe attachment policy first, then you create the safe attachment rule, which identifies the associated policy that the rule applies to.
 - In PowerShell, you modify the settings in the safe attachment policy and the safe attachment rule separately.
-- When you remove an safe attachment policy from PowerShell, the corresponding safe attachment rule isn't automatically removed, and vice versa.
+- When you remove a safe attachment policy from PowerShell, the corresponding safe attachment rule isn't automatically removed, and vice versa.
 
 ### Use PowerShell to create Safe Attachments policies
 
