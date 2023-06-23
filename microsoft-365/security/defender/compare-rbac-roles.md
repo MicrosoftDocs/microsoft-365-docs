@@ -114,7 +114,33 @@ Use this table to learn about the permissions assigned by default for each workl
 |Help desk administrator|Security posture \ Posture management \ Vulnerability management (read) </br> Security posture \ Posture management \ Secure score (read) |not applicable|
 |Compliance administrator|not applicable|_**Defender for Office only permissions**_ </br> Security operations \ Security data \ Security data basics (read)</br> Security operations \ Security data \ Alerts (manage)|
 |Compliance data administrator|not applicable|Same as Compliance administrator|
-|Billing admin|not applicable|not applicable|
+|Billing admn|not applicable|not applicable|
+
+## Azure Active Directory Global roles access - temp
+
+|Permission|Global administrator|Security administrator|Global reader|Security reader|Security operator|Compliance administrator|Compliance data administrator|Billing admin|
+|---|---|---|---|---|---|---|---|
+|Authorization and settings \ Authorization \ (All permissions)|||||||
+|Authorization and settings \ Authorization \ (read)|||||||
+|Authorization and settings \ Security settings \ (All permissions)|||||||
+|Authorization and settings \ Security settings \ (read)|||||||
+|Authorization and settings \ System settings \ (All permissions)|||||||
+|Authorization and settings \ System settings \ (read)|||||||
+|Security operations \ Advanced live response (manage)|||||||
+|Security operations \ Basic live response (manage)|||||||
+|Security operations \ Raw data (Email & collaboration) \ Email message headers (read)|||||||
+|Security operations \ Security data \ Advanced live response (manage)|||||||
+|Security operations \ Security data \ Alerts (manage)|||||||
+|Security operations \ Security data \ Basic live response (manage)|||||||
+|Security operations \ Security data \ Email advanced actions (manage)|||||||
+|Security operations \ Security data \ Email quarantine (manage)|||||||
+|Security operations \ Security data \ Response (manage)|||||||
+|Security operations \ Security data \ Security data basics (read)|||||||
+|Security posture \ Posture management \ Application handling (manage)|||||||
+|Security posture \ Posture management \ Exception handling (manage)|||||||
+|Security posture \ Posture management \ Remediation handling (manage)|||||||
+|Security posture \ Posture management \ Security baseline assessment (manage)|||||||
+|Security posture \ Posture management \ Vulnerability management (read)|||||||
 
 > [!NOTE]
 > By activating the Microsoft 365 Defender RBAC model, users with Security reader and Global reader roles will have access to Defender for Endpoint data.
