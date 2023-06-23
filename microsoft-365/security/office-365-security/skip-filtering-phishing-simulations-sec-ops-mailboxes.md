@@ -129,6 +129,10 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
 >
 > If your MX record doesn't point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) so the correct IP address is detected.
+> 
+> If your safe links policy has do not rewrite links enabled or you do no have safe links policy created and are on built-in protection policy, time of click protection will not treat phishing simulation links as a threat for emails in Outlook web(OWA), Outlook mobile, Outlook win32 version >= 16.0.15317.10000, Outlook mac version >= 16.74.23061100. If you are using older versions, then consider disabling the do not rewrite links in safe links policy.
+>
+> By design, safe links will send a HEAD request to all URLs present in the email to determine what to do with the URL. Some phishing simulation vendors might show these HEAD requests as user clicks and you might end up seeing 2 clicks. This is not an issue with MDO, please ask your phishing simulation vendor to fix this by ignore those HEAD requests. 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
