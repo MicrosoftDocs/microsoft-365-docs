@@ -110,7 +110,7 @@ sections:
       - question: |
           If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
         answer: |
-          If tamper protection is turned on in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and policies are defined in Microsoft Intune, Intune can override settings in the Microsoft 365 Defender portal. For example, you can turn tamper protection on in the Microsoft 365 Defender portal, and then define a policy in Intune that excludes certain devices from tamper protection. 
+          When tamper protection is turned on in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), tamper protection is turned on, tenant wide. However, Intune policies can override settings in the Microsoft 365 Defender portal. For example, you can define a policy in Intune that excludes certain devices from tamper protection. 
 
       - question: |
           How do I deploy DisableLocalAdminMerge?
@@ -120,7 +120,7 @@ sections:
       - question: |
           How can I confirm whether exclusions are tamper protected on a Windows device?
         answer: |
-         1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
+         1. On a Windows device open Registry Editor. (Read-only mode is fine; don't edit the registry key.)
          
          2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
 
