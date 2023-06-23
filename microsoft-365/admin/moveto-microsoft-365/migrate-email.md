@@ -32,7 +32,7 @@ description: "Learn how to migrate email, contacts, and calendar from Google Wor
 # Migrate business email and calendar from Google Workspace
 
 > [!NOTE]
-> The videos and content in this article are meant to give Small and Medium business (SMB) customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calenders from Google Workspace.
+> The videos and content in this article are meant to give customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calenders from Google Workspace.
 >
 > Please refer to the resource links provided in this article for additional detailed information needed to use the batch migration tool successfully.
 
@@ -50,9 +50,16 @@ You can use the batch migration tool in the Exchange admin center to migrate ema
 
 An *automated* batch migration does some of the migration tasks for you, so it is recommended over the *manual* batch migration.
 
-If you are a VSB (very small business) where you have a small number of users, it may be easier for you to migrate your email using a different method, such as [importing to Outlook through a PST file](https://support.microsoft.com/office/import-gmail-to-outlook-20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7).
-
 For more detailed information, see [Perform a Google Workspace migration to Microsoft 365](/exchange/mailbox-migration/perform-g-suite-migration).
+
+> [!NOTE]
+> You can also migrate your email from Google Workspace to Microsoft 365 through an [IMAP migration](/exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes). You should compare methods to determine which is more suitable for migrating your email.
+
+It is recommended that you [get help from Microsoft](/microsoft-365/admin/get-help-support) or from a [partner](https://appsource.microsoft.com/en-us/marketplace/partner-dir) when planning to migrate with either of the above methods.
+
+If you are a VSB (very small business) where you have a small number of users, you should migrate your email using a different method, such as [importing to Outlook through a PST file](https://support.microsoft.com/office/import-gmail-to-outlook-20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7).
+
+
 
 ## Prerequisites for automated batch migration from Google Workspace
 
