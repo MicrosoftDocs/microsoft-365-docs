@@ -51,19 +51,15 @@ Using Intune, you can:
 
 ## Requirements for managing tamper protection in Intune
 
-- You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access).)
-
-- Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices). (Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
-
-- Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).)
-
-- You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or later).
-
-- Devices must be using anti-malware platform version `4.18.1906.3` (or above) and anti-malware engine version `1.1.15500.X` (or later). (See [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).)
-
-- Your Intune and Defender for Endpoint tenants must share the same Azure Active Directory infrastructure.
-
-- Your devices must be onboarded to Defender for Endpoint.
+| Requirement | Details |
+| Roles and permissions | You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access). |
+| Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices). |
+| Intune licenses | Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses. |
+| Operating System | Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).) <br/><br/>For Mac, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md). |
+| Security intelligence | You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or later). |
+| Antimalware platform | Devices must be using antimalware platform version `4.18.1906.3` (or above) and anti-malware engine version `1.1.15500.X` (or later). See [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md). |
+| Azure Active Directory (Azure AD) | Your Intune and Defender for Endpoint tenants must share the same Azure AD infrastructure. |
+| Defender for Endpoint | Your devices must be onboarded to Defender for Endpoint. |
 
 > [!NOTE]
 > If devices are not enrolled in Microsoft Defender for Endpoint, tamper protection shows up as **Not Applicable** until the onboarding process completes.
