@@ -114,7 +114,7 @@ Use this table to learn about the permissions assigned by default for each workl
 |Help desk administrator|Security posture \ Posture management \ Vulnerability management (read) </br> Security posture \ Posture management \ Secure score (read) |not applicable|
 |Compliance administrator|not applicable|_**Defender for Office only permissions**_ </br> Security operations \ Security data \ Security data basics (read)</br> Security operations \ Security data \ Alerts (manage)|
 |Compliance data administrator|not applicable|Same as Compliance administrator|
-|Billing admn|not applicable|not applicable|
+|Billing admin|not applicable|not applicable|
 
 > [!NOTE]
 > By activating the Microsoft 365 Defender RBAC model, users with Security reader and Global reader roles will have access to Defender for Endpoint data.
