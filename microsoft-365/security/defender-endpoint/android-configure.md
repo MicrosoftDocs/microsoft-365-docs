@@ -173,7 +173,7 @@ Enabling/disabling the above privacy controls won't impact the device compliance
 
 ## Configure vulnerability assessment of apps for BYOD devices
 
-From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you're able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
+From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you're able to run vulnerability assessments of the OS and apps installed on the onboarded mobile devices.
 
 > [!NOTE]
 > Vulnerability assessment is part of [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) in Microsoft Defender for Endpoint.
