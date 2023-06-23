@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 01/25/2023
+ms.date: 06/19/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
@@ -195,15 +195,12 @@ Most organizations use various devices and operating systems. Defender for Endpo
 Servers require an additional license, such as:
 
 - **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business-servers.md).
-- **Microsoft Defender for Endpoint for Servers**. See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
 
-> [!TIP]
-> For more details about supported operating systems, see the following articles: 
-> 
-> - [Defender for Endpoint Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
-> - [Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
-> - [Microsoft licensing and product terms](https://www.microsoft.com/en-us/licensing/product-licensing/products)
+
+> [!NOTE]
+> Microsoft Defender for Endpoint for Servers is no longer available. If you previously purchased these licenses, consider moving to [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction).
+> See [Microsoft licensing and product terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).
 
 ## Next steps
 

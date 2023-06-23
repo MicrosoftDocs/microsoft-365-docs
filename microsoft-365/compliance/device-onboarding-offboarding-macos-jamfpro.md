@@ -2,8 +2,8 @@
 title: Onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro
 f1.keywords:
     NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: v-katykoenen
+author: kmkoenen
 manager: laurawi
 ms.date: 04/24/2023
 audience: ITPro
@@ -158,7 +158,7 @@ Download the following files.
 
 8. For the **Action** choose **Install**.
  
-9. Choose the **Scope** tab and then target computers before choosing choose **Save**.
+9. Choose the **Scope** tab and then target computers before choosing **Save**.
  
 10. On the **General** page, enter a name for the new policy.
 
