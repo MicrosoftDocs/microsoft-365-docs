@@ -5,7 +5,7 @@ manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 06/06/2023
+ms.date: 06/23/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -78,7 +78,7 @@ Tamper protection is also available for Mac, although it works a little differen
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
 > - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
-### Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
+### Tamper protection on Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809
 
 If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
