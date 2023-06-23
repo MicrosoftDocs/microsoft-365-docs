@@ -6,7 +6,7 @@ ms.topic: include
 ms.service: O365-seccomp
 ---
 
-- [ABA routing number](sit-defn-aba-routing.md)
+- [ABA routing number](../compliance/sit-defn-aba-routing.md)
 - [All credentials](sit-defn-all-creds.md)
 - [All full names](sit-defn-all-full-names.md)
 - [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md)
