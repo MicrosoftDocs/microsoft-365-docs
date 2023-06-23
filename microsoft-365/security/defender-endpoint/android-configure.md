@@ -106,7 +106,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable. Security admins manage this setting to disable, audit, or enable open network detection, respectively. In 'Audit' mode, alerts are sent only to the ATP portal with no end user experience. For user experience, set the config to 'Enable' mode.|  
     |Manage Network protection Detection for Certificates|0 - Disable, 1 - Audit mode (default), 2 - Enable. When network protection is enabled, Audit mode for certificate detection is enabled by default. In Audit mode, notification alerts are sent to SOC admins, but no end-user notifications are displayed to the user when Defender detects a bad certificate. Admins can, however, disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value. When the feature is enabled with the value of 2, end-user notifications are sent to the user when Defender detects a bad certificate, and alerts are also sent to the SOC Admin.|
 
-6. Add the required groups on which the policy will have to be applied. Review and create the policy.
+6. Add the required groups to which the policy will have to be applied. Review and create the policy.
 
     | Configuration Key| Description|
     |---|---|
