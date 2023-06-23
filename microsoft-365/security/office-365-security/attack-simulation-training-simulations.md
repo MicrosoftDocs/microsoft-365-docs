@@ -283,7 +283,7 @@ On the **Assign training** page, you can assign trainings for the simulation. We
 
 Use the following options on the page to assign trainings as part of the simulation:
 
-- **Select training content preference**: Choose one of the following options in the drop down list:
+- **Select training content preference**: Choose one of the following options in the dropdown list:
 
   - **Microsoft training experience (Recommended)**: This is the default value that has the following associated options to configure on the page:
     - Select one of the following options:
