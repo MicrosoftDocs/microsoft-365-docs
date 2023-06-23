@@ -79,7 +79,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     > [!div class="mx-imgBorder"]
     > ![Image of add configuration policy.](images/npvalue.png)
 
-1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices. Establishing trust helps prevents Defender flag root CAs as rogue certificates.
+1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices. Establishing trust helps prevent Defender from flagging root CAs as rogue certificates.
 
     To establish trust for the root CAs, use **'Trusted CA certificate list for Network Protection'** as the key. In the value, add the **'comma separated list of certificate thumbprints (SHA 1)'**.
 
@@ -98,11 +98,11 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 
     | Configuration Key| Description|
     |---|---|
-    |Trusted CA certificate list for Network Protection|Security admins manage this setting to establish trust for root CA and self-signed certificates|
-    |Enable Network protection in Microsoft Defender|1 - Enable, 0- Disable (default); This setting is used by the IT admin to enable or disable the network protection capabilities in the Defender app|
-    |Enable Network Protection Privacy|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable privacy in network protection.|
-    |Enable Users to Trust Networks and Certificates|1 - Enable, 0 - Disable (default); Security admins manage this setting to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks and malicious certificates.|
-    |Automatic Remediation of Network Protection Alerts|1 - Enable (default), 0 - Disable; Security admins manage this setting to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access point or deleting suspicious certificates detected by Defender|
+    |Trusted CA certificate list for Network Protection|Security admins manage this setting to establish trust for root CA and self-signed certificates.|
+    |Enable Network protection in Microsoft Defender|1 - Enable, 0- Disable (default). This setting is used by the IT admin to enable or disable the network protection capabilities in the Defender app.|
+    |Enable Network Protection Privacy|1 - Enable (default), 0 - Disable. Security admins manage this setting to enable or disable privacy in network protection.|
+    |Enable Users to Trust Networks and Certificates|1 - Enable, 0 - Disable (default). Security admins manage this setting to enable or disable the end user's in-app experience to trust and untrust unsecure and suspicious networks and malicious certificates.|
+    |Automatic Remediation of Network Protection Alerts|1 - Enable (default), 0 - Disable. Security admins manage this setting to enable or disable the remediation alerts that are sent when a user performs remediation activities, such as switching to a safer Wi-Fi access point or deleting suspicious certificates detected by Defender.|
     |Manage Network Protection detection for Open Networks|0 - Disable (default), 1 - Audit Mode, 2 - Enable. Security admins manage this setting to disable, audit, or enable open network detection, respectively. In 'Audit' mode, alerts are sent only to the ATP portal with no end user experience. For user experience, set the config to 'Enable' mode.|  
     |Manage Network protection Detection for Certificates|0 - Disable, 1 - Audit mode (default), 2 - Enable. When network protection is enabled, Audit mode for certificate detection is enabled by default. In Audit mode, notification alerts are sent to SOC admins, but no end-user notifications are displayed to the user when Defender detects a bad certificate. Admins can, however, disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value. When the feature is enabled with the value of 2, end-user notifications are sent to the user when Defender detects a bad certificate, and alerts are also sent to the SOC Admin.|
 
@@ -193,7 +193,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
    - **Platform**: Select Android device administrator
-   - **Profile**: Select "Custom" and select Create
+   - **Profile**: Select "Custom" and select Create.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
