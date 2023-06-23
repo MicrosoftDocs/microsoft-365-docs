@@ -72,7 +72,7 @@ sections:
       - question: |
           Does tamper protection apply to Microsoft Defender Antivirus exclusions?
         answer: |
-          New functionality is rolling out now to protect Microsoft Defender Antivirus exclusions on devices that are managed by Intune. Certain conditions must be met. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#protect-microsoft-defender-antivirus-exclusions-from-tampering)? 
+          New functionality is rolling out now to protect Microsoft Defender Antivirus exclusions on devices. Certain conditions must be met. For example, your organization must be managing devices with Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#protect-microsoft-defender-antivirus-exclusions-from-tampering)? 
 
       - question: |
           How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
