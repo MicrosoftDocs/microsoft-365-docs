@@ -125,7 +125,7 @@ sections:
          2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
 
           - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-          - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
+          - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. In this case, review the requirements in [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
 
           > [!CAUTION]
           > Don't change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key has no effect on whether tamper protection applies to exclusions.
