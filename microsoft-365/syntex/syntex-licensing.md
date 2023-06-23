@@ -21,8 +21,8 @@ description: Learn about licensing for Microsoft Syntex.
 
 Microsoft Syntex has two types of product offerings to choose from:
 
-- SharePoint Syntex per-user licensing
-- Microsoft Syntex pay-as-you-go
+- [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go)
+- [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing)
 
 The features available for each license type are described below. <!-- You can use both licenses if you need to.-->
 
@@ -37,12 +37,13 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 
 - Prebuilt document processing
 - Unstructured document processing (formerly document understanding)
+- Optical character recognition
 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
 
-## SharePoint Syntex per-user licensing
+## Microsoft Syntex per-user licensing
 
-To use Microsoft Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
+To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 
 #### Tasks requiring a per-user license
  

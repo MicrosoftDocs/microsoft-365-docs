@@ -2,8 +2,8 @@
 title: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: v-katykoenen
+author: kmkoenen
 manager: laurawi
 ms.date: 04/24/2023
 audience: ITPro

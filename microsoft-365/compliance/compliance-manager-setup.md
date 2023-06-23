@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 01/25/2023
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -46,8 +46,7 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 ## Set user permissions and assign roles
 
-Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
-
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments-and-regulations) below to learn more.
 
 The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in either of the following places:
 
@@ -92,40 +91,31 @@ A user can only hold one role at a time. Any change in a user's role will overri
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
 | **Edit data - for example, can create an assessment and edit improvement action data**| Compliance Manager Contribution | Compliance Administrator |
 | **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
-| **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+| **Manage assessments, regulatory templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 
-### Role-based access to assessments
+### Role-based access to assessments and regulations
 
-You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#setting-permissions-in-azure-ad).
+You can assign roles to users in order to grant access to specific assessments, or all assessments based on the regulation. Granting user access in these ways is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data.
 
-The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
+These four roles provide access to assessments:
+- Compliance Manager Reader
+- Compliance Manager Contribution
+- Compliance Manager Assessor
+- Compliance Manager Administration
 
-To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
+What you can do with each assessment remains restricted based on which activities the role allows.
+
+To grant users access to an assessment or all assessments for a regulation, open the its details page and select **Manage users access** to add users by role. If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
 
 **More information**:
-- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
+- See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed instructions.
+- See [Grant user access to regulations](compliance-manager-templates.md#grant-user-access-to-regulations) for more detailed instructions.
 - Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings.
 
 ## Start a premium assessments trial
 
-The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
+The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 360 regulatory templates correspond to governmental regulations and industry standards around the world.
 Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
-
-You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
-
-1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
-
-2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial and continue with creating assessments.
-
-3. Select one or more industries that identify your organization, then select **Next**.
-
-4. Select one or more regions for your organization's location, then select **Next**.
-
-5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
-
-6. Review your final selections and select **Add Recommended Assessments** to create your new assessments.
-
-Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
 ## Compliance Manager settings
 
@@ -142,7 +132,7 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 ## Testing source for automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Compliance Manager detects a variety of signals to provide automated testing and monitoring of improvement actions. This automation derives from three primary sources: built-in, Microsoft Secure Score, and Microsoft Defender for Cloud ([get details about automated testing sources](compliance-manager-improvement-actions.md#automated-testing-and-monitoring)). Compliance Manager also detects signals from Microsoft Priva (this capability is in preview; [learn more](/privacy/priva/priva-overview#how-priva-works-with-microsoft-purview-risk-and-compliance-solutions)). When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets credited to your overall compliance score.
 
 #### Initial settings
 
@@ -154,9 +144,7 @@ While automated testing helps maximize efficiency in your compliance activities,
 
 #### How to tell which actions are tested automatically
 
-On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
-
-Note that improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing.
+On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#testing-source).
 
 #### When actions are added or updated
 
@@ -274,17 +262,22 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to assessment-based role assignments. To add or remove such roles for users, follow the steps below:
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to role assignments.
+
+ - When you grant a user access to an **assessment**: The user will have access to just that one assessment.
+ - When you grant a user access to a **regulation**: The user will have access to any assessment created with that regulation, including existing assessements and any assessments created in the future.
+
+To add or remove user access roles for assessments and regulations, follow the steps below:
 
 1. In **Compliance Manager settings,** select **User access**.
 
 1. Select the checkbox next to the name of one or more users whose role you want to edit.
 
-1. From the **Edit assessment roles** dropdown menu above the list of names, select **Add assessment permissions** or **Remove assessment permissions**.
+1. Depending on whether you're editing roles for assessments or regulations: From the **Edit assessment roles** or **Edit regulation roles** dropdown menu above the list of names, select **Add assessment/regulation permissions** or **Remove assessment/regulation permissions**.
 
-1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments**. On the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
+1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments/regulations**. On the next flyout pane, choose the checkbox next to the assessments/regulations and select **Apply**, then select **Save**.
 
-1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
+1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments/regulations for which you want to remove access, and select the X mark in the **Remove** column.
 
    1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
 
@@ -343,11 +336,11 @@ To remove filters:
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
 - Select **Filter** on the upper-right side of your dashboard, then on the **Filters** flyout pane, select **Clear filters**.
 
-## Improvement actions page
+### Improvement actions page
 
 [Improvement actions](compliance-manager-improvement-actions.md) are actions managed by your organization. Working with improvement actions helps to centralize your compliance activities and align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
-### View your improvement actions
+#### View your improvement actions
 
 The Compliance Manager dashboard shows your key improvement actions. To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, which brings you to your improvement actions page. You can also select **View all improvement actions** underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
@@ -364,7 +357,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Regulations**: The regulations or standards pertaining to the action.
 - **Group**: The group to which you assigned the action.
 - **Solutions**: The solution where you can go to perform the action.
-- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments)).
+- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments-and-regulations)).
 - **Categories**: The related data protection category (such as, protect information, manage devices, etc.).
 - **Test status**:
   - **None** – no status update recorded
@@ -383,15 +376,11 @@ The improvement actions page shows the following data points for each improvemen
 
 Learn [how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
-## Solutions page
+### Solutions page
 
-The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
+The **Solutions** page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
 
-Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
-
-### Filtering your solutions view
-
-To filter your view of solutions:
+Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard. To filter your view of solutions:
 
 1. Select **Filter** at the top-left corner of your assessments list.
 2. On the **Filters** flyout pane, place a check next to the desired criteria (regulations, solutions, action types, groups, categories).
@@ -399,9 +388,9 @@ To filter your view of solutions:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### Taking action from the solution page
+#### Taking action from the solution page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
+The **Solutions** page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
 There are two ways you can take action from this screen:
 
@@ -409,11 +398,11 @@ There are two ways you can take action from this screen:
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll arrive at the solution's location in the Microsoft Purview compliance portal,  Microsoft 365 Defender portal, or its admin center, where you can take the recommended action.
 
-## Assessments page
+### Assessments page
 
-The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
+The **Assessments** page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
+The **Activated/Regulation** counter near the top of the page shows the number of regulations currently in use out of the total number available for your organization to use. Learn more about [active regulations](compliance-manager-templates.md#regulation-availability-and-licensing).
 
 The assessments page summarizes key information about each assessment:
 
@@ -430,8 +419,6 @@ The assessments page summarizes key information about each assessment:
 - **Product**: associated product, such as Microsoft 365 or another product defined for assessment
 - **Regulation**: the regulatory standard, policy, or law that applies to the assessment
 
-### Filtering your assessments view
-
 To filter your view of assessments:
 
 1. Select **Filter** at the top-left corner of your assessments list.
@@ -440,19 +427,9 @@ To filter your view of assessments:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### Default assessment
+### Regulations page
 
-By default, you'll see the [Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) assessment on the assessments page. Compliance Manager also provides several pre-built [templates](compliance-manager-templates-list.md) for building assessments.
-
-## Assessment templates page
-
-A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created.
-
-The **Activated/Licensed templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
-
-Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
-
-**Learn more:** [Read how to work with assessment templates](compliance-manager-templates.md).
+A regulatory template is a framework for creating an assessment in Compliance Manager. The **Regulations** page displays a list of regulatory templates and key details. The **Activated/Regulation** counter near the top of the page shows the number of active regulations currently in use out of the total number available for your organization to use. See [Regulation availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) for more information.
 
 ## Next step
 
