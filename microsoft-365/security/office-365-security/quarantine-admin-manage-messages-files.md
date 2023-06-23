@@ -569,13 +569,13 @@ Back on the **Files** tab, the file is no longer listed.
 
 #### Take action on multiple quarantined files
 
-When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** dropdown list appears where you can take the following actions:
 
 - [Release quarantined files from quarantine](#release-quarantined-files-from-quarantine)
 - [Delete quarantined files from quarantine](#delete-quarantined-files-from-quarantine)
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 ## Use the Microsoft 365 Defender portal to manage quarantined messages in Microsoft Teams
 
