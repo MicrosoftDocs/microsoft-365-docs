@@ -230,7 +230,7 @@ Use the following steps to enable Optional permissions for devices.
 1. Select **Microsoft Defender for Endpoint** in public apps.
 
 
-4. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key. 
+4. On the Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key. 
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
