@@ -88,7 +88,7 @@ sections:
       - question: |
           If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
         answer: |
-          If you're using Intune to configure and manage tamper protection, it is not necessarily applied to your entire organization. With Intune, you can choose to apply tamper protection to your entire organization, or you can select specific devices and user groups to receive tamper protection.
+          If you're using Intune to configure and manage tamper protection, you do not necessarily have to apply tamper protection to your entire organization. With Intune, you can choose to apply tamper protection to your entire organization, or you can select specific devices or user groups to receive tamper protection. You can also exclude specific devices from tamper protection.
 
       - question: |
           What settings can't be changed when tamper protection is turned on?
