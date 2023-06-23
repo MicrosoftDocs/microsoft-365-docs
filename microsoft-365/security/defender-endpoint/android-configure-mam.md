@@ -200,7 +200,7 @@ Admins can use the following steps to enable privacy and not collect the domain 
 1. Give the policy a **name**.
 
 1. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
-4. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as 1. 
+4. On the Settings page, under General Configuration Settings, add **DefenderExcludeURLInReport** and **DefenderExcludeAppInReport** as the keys and value as 1. 
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
