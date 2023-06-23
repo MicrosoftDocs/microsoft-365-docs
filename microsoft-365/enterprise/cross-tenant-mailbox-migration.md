@@ -49,7 +49,7 @@ When a mailbox is migrated cross-tenant with this feature, only user visible con
 Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; OneDrive for Business.
 
 > [!WARNING]
-> You must have purchased, or verified that you can purchase, cross tenant user data migration licenses priot to the next steps. Migrations will fail if this has not been completed. Microsoft does not offer exceptions for this licensing.
+> You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations will fail if this has not been completed. Microsoft does not offer exceptions for this licensing.
 
 ## Preparing source and target tenants
 
