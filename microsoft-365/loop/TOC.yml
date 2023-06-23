@@ -7,4 +7,4 @@
     - name: Loop workspaces in Syntex repository services
       href: loop-workspaces-configuration.md
     - name: Loop workspaces storage and permissions
-      href: loop-workspaces-storage-permission
+      href: loop-workspaces-storage-permission.md
