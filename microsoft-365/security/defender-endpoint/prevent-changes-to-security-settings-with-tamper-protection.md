@@ -107,7 +107,7 @@ You can use Microsoft Intune and other methods to configure or manage tamper pro
 > [!TIP]
 > If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that any changes made to tamper-protected settings are ignored. If you must make changes to a device and those changes are blocked by tamper protection, use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 
-## Protect Microsoft Defender Antivirus exclusions from tampering
+## Protect Microsoft Defender Antivirus exclusions
 
 Under certain conditions, tamper protection can protect exclusions that are defined for Microsoft Defender Antivirus. For more information, see [Tamper protection for exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
