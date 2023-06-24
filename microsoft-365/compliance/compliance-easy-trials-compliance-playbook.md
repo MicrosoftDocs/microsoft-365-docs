@@ -239,7 +239,7 @@ Here are our most popular records management scenarios:
 
 Auto-applying labels removes the need for your users to manually perform the labeling activities. As an example, you can auto-apply retention labels to content that has specific metadata properties in SharePoint.
 
-First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, [create a retention label](file-plan-manager). Then, [follow the steps](auto-apply-retention-labels-scenario.md) to auto-apply the label based on SharePoint metadata.
+First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, [create a retention label](file-plan-manager.md). Then, [follow the steps](auto-apply-retention-labels-scenario.md) to auto-apply the label based on SharePoint metadata.
 
 ### Step 2: Review content to approve before it's permanently deleted
 
