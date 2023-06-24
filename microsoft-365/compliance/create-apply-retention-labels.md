@@ -148,7 +148,7 @@ After content is labeled, see the following information to understand when the a
 
 ### Manually apply retention labels 
 
-End users can manually apply retention labels from the following locations:
+Users can manually apply retention labels from the following locations:
 
 - Outlook
 - OneDrive and SharePoint
@@ -206,7 +206,7 @@ Users can also apply the retention labels directly in Teams, from the **Files** 
 
 ### Default labels for SharePoint and Outlook
 
-After a retention label is published to SharePoint and Outlook, you can apply it as a default retention label so that it's inherited by all unlabeled items. Although the same label is applied, each item will be retained and deleted separately, according to the start of the retention period setting in the label.
+After a retention label is published to SharePoint and Outlook, users can apply it as a default retention label so that it's inherited by all unlabeled items. Although the same label is applied, each item will be retained and deleted separately, according to the start of the retention period setting in the label.
 
 When you use default retention labels, there are some scenarios that can result in the inherited label being replaced or removed. See each tab for details about the label behavior.
 
@@ -242,7 +242,7 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 You can apply a default retention label to Outlook folders so that the label is inherited by all unlabeled items.
 
-in the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then select the retention label you want to use as that folder's default retention label.
+In the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then select the retention label you want to use as that folder's default retention label.
 
 In Outlook on the web, right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
 
