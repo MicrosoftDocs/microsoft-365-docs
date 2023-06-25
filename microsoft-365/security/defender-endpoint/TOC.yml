@@ -1382,6 +1382,8 @@
         href: mac-support-kext.md
       - name: Troubleshoot license issues
         href: mac-support-license.md
+      - name: Troubleshoot system extention issues
+        href: mac-support-sys-ext.md
 
     - name: Troubleshoot Microsoft Defender for Endpoint on Linux
       items:
