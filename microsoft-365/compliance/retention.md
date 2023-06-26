@@ -208,7 +208,7 @@ As with sensitivity labels, an item such as an email or document can have only a
 - [Auto-apply retention label policy](apply-retention-labels-automatically.md)
 - [A Microsoft Syntex model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default retention label for SharePoint or Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook)
-- [Outlook rules](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-outlook)
+- [Outlook rules](create-apply-retention-labels.md#automatically-apply-a-retention-label-to-email-by-using-outlook-rules)
 - [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
 
 If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of more than one of these policies, you can't control which retention label will be selected. However, in some cases, the retention label for the oldest auto-apply retention label policy (by date created) is selected. This happens only when the matching policies don't include multiple instances of the same type of condition (sensitive information types, specific keywords or searchable properties, or trainable classifiers).
