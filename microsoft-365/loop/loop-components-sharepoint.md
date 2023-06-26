@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection:
