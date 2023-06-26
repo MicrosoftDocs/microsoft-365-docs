@@ -227,7 +227,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
     
         For more information about the label behavior when it's applied by using a default label:
         - [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - [Label behavior when you use a default label for Outlook](/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide&branch=main&tabs=manual-outlook%2Cdefault-label-for-outlook#label-behavior-when-you-use-a-default-label-for-outlook)
+        - [Label behavior when you use a default label for Outlook](/microsoft-365/compliance/create-apply-retention-labels&tabs=manual-outlook%2Cdefault-label-for-outlook#label-behavior-when-you-use-a-default-label-for-outlook)
 
 For retention labels that mark items as a record or a regulatory record:
 
