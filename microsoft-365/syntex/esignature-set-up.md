@@ -57,25 +57,25 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ## Document storage
 
-Syntex eSignature lets you start a signature request from any document (Word or PDF) that is saved in a SharePoint library for which eSignature has been enabled. After all required parties have signed, the eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender will be notified by email with a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
+Syntex eSignature lets you start a signature request from any document (Word or PDF) that is saved in a SharePoint library for which eSignature has been enabled. After all required parties have signed, the eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender is notified in an email that includes a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
 
-Before sending a signature request and at completion, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. if the permission changes when the eSignature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This can happen when:
+Before you send a signature request and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the eSignature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
 - The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or a SharePoint admin.
 
-- Initial write permissions of the sender to the originating folder was downgraded to view only.
+- Initial write permission of the sender to the originating folder was downgraded to view only.
 
 - The originating folder was deleted.
 
 ## Expiration of URL links in email
 
-Every email notification you receive in relation to an eSignature request contains a URL link that allows you to view, review, and sign the document. When a request reaches a terminal state, you will have 30 days to view, download, and store it in your preferred location. After the link expires, it can no longer be used to access the document.
+Every email notification you receive in relation to an eSignature request contains a URL link that allows you to view, review, and sign the document. When a request reaches a terminal state, you have 30 days to view, download, and store it in your preferred location. After the link expires, it can no longer be used to access the document.
   
-For additional protection, when a request is cancelled by the sender, recipients will immediately lose access to the request document. The email received by recipients will not contain a URL link to view the request.
+For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email received by recipients won't contain a URL link to view the request.
 
 ## Document retention
 
-When you create an eSignature request from a document in SharePoint, a working copy of the document is created by the eSignature service. It is this working copy that is sent out to all recipients for signing, and it is how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
+When you create an eSignature request from a document in SharePoint, the eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
 
 The working copy of the request is stored and retained for five years or in accordance with the document retention policy set up by the SharePoint or tenant admin. Learn more about [retention policies](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint).
 
