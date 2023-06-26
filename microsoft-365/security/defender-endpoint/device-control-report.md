@@ -22,9 +22,15 @@ search.appverid: met150
 
 # Device control report
 
-Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media use by devices in your organization, such as using removable storage devices and USB drives.
+Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media use by devices in your organization, such as using removable storage devices and USB drives. You can use device control events through:
 
-You can use device control events through **Advanced hunting** and **Device control report**.
+- Advanced hunting; and
+- the Device control report. 
+
+Select a tab to learn more about that method.
+
+## [**Advanced hunting**](#tab/advhunt)
+
 
 ## Advanced hunting
 
@@ -41,7 +47,7 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 - **RemovableStoragePolicyTriggered:** Shows the event triggered by Disk and file system level enforcement for both printer and removable storage when the `AuditAllowed` or `AuditDenied` is configured in your policy and **Send event** is selected in **Options**.
 - **RemovableStorageFileEvent:** Shows the event triggered by the Evidence file feature for both printer and removable storage when **Options**  8 is configured in **Allow** Entry.
 
-The event will be sent to Advanced hunting or the device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
+The event is sent to Advanced hunting or the device control report for every covered access (`AccessMask` in the entry), regardless of whether it was initiated by the system or by the user who signed in.
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk and file system level enforcement for both Printer and Removable storage based on your policy
@@ -83,6 +89,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+## [**Device control report**](#tab/report)
 
 ## Device control report
 
@@ -128,7 +135,7 @@ When you select an event, a flyout appears that shows you more information:
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/devicecontrolreportfilter.png" alt-text="The Filter On Device Control Report page" lightbox="images/devicecontrolreportfilter.png":::
 
-To see real-time activity for this media across the organization, select the **Open Advanced hunting** button. This includes an embedded, pre-defined query.
+To see real-time activity for this media across the organization, select the **Open Advanced hunting** button. This includes an embedded, predefined query.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/Devicecontrolreportquery.png" alt-text="The Query On Device Control Report page" lightbox="images/Devicecontrolreportquery.png":::
@@ -141,3 +148,6 @@ To see the security of the device, select the **Open device page** button on the
 ### Reporting delays
 
 There might be a delay of up to six hours from the time a media connection occurs to the time the event is reflected in the card or in the domain list.
+
+---
+
