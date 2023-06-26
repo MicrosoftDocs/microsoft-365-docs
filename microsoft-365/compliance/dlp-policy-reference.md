@@ -126,7 +126,7 @@ The following table lists all policy templates and the sensitive information typ
 
 ## Policy Scoping
 
-See, [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
+See, [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
 DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
@@ -163,7 +163,7 @@ Unrestricted administrators can manage all policies and see all the alerts and e
 
 Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, distribution groups, and accounts. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
   
-DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
