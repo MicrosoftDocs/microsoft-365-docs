@@ -119,9 +119,9 @@ The rest of this article how to configure preset security policies.
 
    Each entry consists of a display name and an email address:
 
-   - **Internal users**: Click in the **Add a valid email** box or start typing the user's email address. Select the email address in the **Suggested contacts** drop down list that appears. The user's display name is added to the **Add a name** box (which you can change). When you're finished selecting the user, select **Add**.
+   - **Internal users**: Click in the **Add a valid email** box or start typing the user's email address. Select the email address in the **Suggested contacts** dropdown list that appears. The user's display name is added to the **Add a name** box (which you can change). When you're finished selecting the user, select **Add**.
 
-   - **External users**: Type the external user's full email address in the **Add a valid email** box, and then select the email address in the **Suggested contacts** drop down list that appears. The email address is also added in the **Add a name** box (which you can change to a display name).
+   - **External users**: Type the external user's full email address in the **Add a valid email** box, and then select the email address in the **Suggested contacts** dropdown list that appears. The email address is also added in the **Add a name** box (which you can change to a display name).
 
    Repeat these steps as many times as necessary.
 
@@ -490,7 +490,7 @@ A profile determines the level of protection. The following profiles are availab
 - **Strict protection**: A more aggressive profile for selected users (high value targets or priority users).
 - **Built-in protection** (Microsoft Defender for Office 365 only): Effectively provides default policies for Safe Links and Safe Attachments only.
 
-In general, the **Strict protection** profile tends to quarantine less harmful email (for example, bulk and spam) than the **Strict protection** profile, but many of the settings in both profiles are the same (in particular, for unquestionably harmful email like malware or phishing). For a comparison of the setting differences, see the tables in the next section.
+In general, the **Strict protection** profile tends to quarantine less harmful email (for example, bulk and spam) than the **Standard protection** profile, but many of the settings in both profiles are the same (in particular, for unquestionably harmful email like malware or phishing). For a comparison of the setting differences, see the tables in the next section.
 
 Until you turn on the profiles and assign users to them, the Standard and Strict preset security policies are assigned to no one. In contrast, the Built-in protection preset security policy is assigned to all recipients by default, but you can configure exceptions.
 
@@ -567,7 +567,7 @@ When a recipient is defined in multiple policies, the policies are applied in th
 4. Custom policies based on the priority of the policy (a lower number indicates a higher priority).
 5. The Built-in protection preset security policy for Safe Links and Safe Attachments; the default policies for anti-malware, anti-spam, and anti-phishing.
 
-In other words, the settings of the Strict preset security policy override the settings of the Standard preset security policy, which overrides the settings from any anti-phishing, Safe Links, or Safe Attachments evaluation policies, which overrides the settings from any custom policies, which override the settings of the Built-in protection preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
+In other words, the settings of the Strict preset security policy override the settings of the Standard preset security policy, which overrides the settings from any anti-phishing, Safe Links, or Safe Attachments evaluation policies, which override the settings from any custom policies, which override the settings of the Built-in protection preset security policy for Safe Links and Safe Attachments, and the default policies for anti-spam, anti-malware, and anti-phishing.
 
 This order is shown on the pages of the individual security policies in the Defender portal (the policies are applied in the order they're shown on the page).
 
