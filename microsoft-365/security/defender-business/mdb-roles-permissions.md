@@ -52,11 +52,11 @@ The following table describes the three roles that can be assigned in Defender f
 
 2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
 
-3. Select one of the following roles to open its side pane:
+3. Select a roles to open its side pane, where you can view who's assigned each role. The following roles are relevant to Defender for Business:
 
-   - Global Administrator
-   - Security Administrator
-   - Security Reader
+   - Global administrator
+   - Security administrator
+   - Security reader
 
    > [!IMPORTANT]
    > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
