@@ -35,7 +35,7 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex. 
 
-## Set up OCR
+## Set up optical character recognition
 
 You can configure the OCR service by using either or both of these methods:
 
@@ -50,9 +50,9 @@ You can set up the OCR service in the same admin area that you used to set up bi
 
 2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**. 
 
-3. On the **Manage Microsoft Syntex** page, select **OCR**.
+3. On the **Manage Microsoft Syntex** page, select **Optical character recognition**.
 
-4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
+4. On the **Optical character recognition** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
 
 ### Microsoft Purview compliance portal
 
