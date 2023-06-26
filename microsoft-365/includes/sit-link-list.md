@@ -6,9 +6,6 @@ ms.topic: include
 ms.service: O365-seccomp
 ---
 
-[!INCLUDE [notes](../includes/sit-link-list.md)]
-
-SEPERATOR TEXT
 - [ABA routing number](../compliance/sit-defn-aba-routing.md)
 - [All credentials](../compliance/sit-defn-all-creds.md)
 - [All full names](../compliance/sit-defn-all-full-names.md)
