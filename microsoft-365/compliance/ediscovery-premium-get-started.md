@@ -39,7 +39,7 @@ This includes ensuring the proper licensing required to access eDiscovery (Premi
 
 ## Step 1: Verify and assign appropriate licenses
 
-Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing. For a list of licensing requirements for eDiscovery (Premium), see [Subscriptions and licensing](ediscovery-overview.md#subscriptions-and-licensing).
+Microsoft Purview eDiscovery capabilities are included with Microsoft Purview. The licensing requirements may vary even within capabilities, depending on configuration options. For licensing requirements, guidance, and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery).
 
 ## Step 2: Assign eDiscovery permissions
 

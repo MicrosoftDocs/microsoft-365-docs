@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/22/2023
+ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -170,6 +170,8 @@ Automatically tested actions may also show one of the following states in the **
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: action has been partially tested;  neither passes nor fails
 
+Some actions may show a status of **Out of scope** when automatic monitoring through Defender for Cloud is first set up. This is because it can take up to 24 hours to process the signals from Defender for Cloud. Improvement action statuses refresh every 24 hours.
+
 > [!NOTE]
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.
 
@@ -241,7 +243,7 @@ After you complete the work, conduct testing, and upload evidence, the next step
 
 - **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for more work.
 
-Users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
+Users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based access to assessments and regulations](compliance-manager-setup.md#role-based-access-to-assessments-and-regulations).
 
 ## Accepting updates to improvement actions
 

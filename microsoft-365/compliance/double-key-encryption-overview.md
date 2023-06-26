@@ -5,7 +5,7 @@ description: Frequently asked questions about Double Key Encryption.
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 02/28/2022
+ms.date: 05/31/2023
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -33,7 +33,7 @@ DKE helps you meet regulatory requirements across several regulations and standa
 
 ## Can I use Double Key Encryption with Microsoft Office built-in sensitivity labeling?
 
-You'll need to use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. Currently, you can't use Microsoft Office built-in sensitivity labeling.
+Yes! You can use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. For other methods that support DKE with built-in sensitivity labeling, see the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
 
 ## What Microsoft 365 Apps can I use with DKE?
 
@@ -53,7 +53,7 @@ You can share Double Key Encrypted documents with users on a separate tenant as 
 
 ## What happens to documents that are protected with HYOK?
 
-Deploying Double Key Encryption won't affect your existing HYOK setup. However, we recommend that you start using Double Key Encryption in parallel with HYOK.
+Deploying Double Key Encryption doesn't affect your existing HYOK setup. However, we recommend that you start using Double Key Encryption in parallel with HYOK.
 
 ## Can I run Double Key Encryption in my non-Microsoft air-gapped environment?
 
@@ -61,7 +61,7 @@ DKE doesn't support these environments because the service requires access to Mi
 
 ## Where can I store Double Key Encrypted documents?
 
-You can store Double Key Encrypted documents on-premises or in the cloud. In the cloud, you can move encrypted content to SharePoint Online and OneDrive for Business. Since Microsoft doesn't have access to your private key, the encrypted data remains opaque to Microsoft. This also means that you can't view the encrypted documents online in Office Web Apps.
+You can store Double Key Encrypted documents on-premises or in the cloud. In the cloud, you can move encrypted content to SharePoint Online and OneDrive for Business. Since Microsoft doesn't have access to your private key, the encrypted data remains opaque to Microsoft. Because the data is opaque to Microsoft services, you can't view the encrypted documents online in Office Web Apps.
 
 ## What regions and languages is Double Key Encryption available in? Is Double Key Encryption available worldwide?
 
