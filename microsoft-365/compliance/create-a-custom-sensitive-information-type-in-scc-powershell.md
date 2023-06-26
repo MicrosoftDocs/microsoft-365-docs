@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Learn how to create and import a custom sensitive information type for policies in the Compliance center."
+description: "Learn how to create and import a custom sensitive information type for policies in the compliance portal."
 ---
 
 # Create a custom sensitive information type using PowerShell
@@ -36,7 +36,7 @@ After you've created a well-formed XML file, you can upload it to Microsoft 365 
 
 Microsoft Support can't help you create content-matching definitions.
 
-For custom content-matching development, testing, and debugging, you'll need to use your own internal IT resources, or use consulting services, such as Microsoft Consulting Services (MCS). Microsoft Support engineers can provide limited support for this feature, but they can't guarantee that custom content-matching suggestions will fully meet your needs.
+For custom content-matching development, testing, and debugging, you need to use your own internal IT resources, or use consulting services, such as Microsoft Consulting Services (MCS). Microsoft Support engineers can provide limited support for this feature, but they can't guarantee that custom content-matching suggestions will fully meet your needs.
 
 MCS can provide regular expressions for testing purposes. They can also provide assistance in troubleshooting an existing RegEx pattern that's not working as expected with a single specific content example.
 
@@ -49,7 +49,7 @@ For more information about the Boost.RegEx (formerly known as RegEx++) engine th
 
 ## Sample XML of a rule package
 
-Here's the sample XML of the rule package that we'll create in this article. Elements and attributes are explained in the sections below.
+Here's the sample XML of the rule package that we create in this article. Elements and attributes are explained in the sections that follow.
 
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
@@ -134,7 +134,7 @@ Here's the sample XML of the rule package that we'll create in this article. Ele
 
 ## What are your key requirements? [Rule, Entity, Pattern elements]
 
-It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help your custom sensitive information type to identify the right content.
+It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure helps your custom sensitive information type to identify the right content.
 
 A rule defines one or more entities (also known as sensitive information types). Each entity defines one or more patterns. A pattern is what a policy looks for when it evaluates content (for example, email and documents).
 
@@ -159,13 +159,13 @@ For example, to increase the likelihood of identifying content that contains an 
 
 ![Diagram of entity with multiple patterns.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
 
-There are important points to consider for multiple pattern matches:
+There are important points to consider for multiple-pattern matches:
 
 - Patterns that require more evidence have a higher confidence level. Based on the confidence level, you can take the following actions:
   - Use more restrictive actions (such as block content) with higher-confidence matches.
   - Use less restrictive actions (such as send notifications) with lower-confidence matches.
 
-- The supporting `IdMatch` and `Match` elements reference RegExes and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This behavior means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
+- The supporting `IdMatch` and `Match` elements reference RegExes and keywords that are actually children of the `Rule` element, not the `Pattern`. The`Pattern` references supporting elements, but they're included in the `Rule`. This behavior means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
 
 ## What entity do you need to identify? [Entity element, ID attribute]
 
@@ -174,7 +174,7 @@ An entity is a sensitive information type, such as a credit card number, that ha
 ### Name the entity and generate its GUID
 
 1. In your XML editor of choice, add the `Rules` and `Entity` elements.
-2. Add a comment that contains the name of your custom entity, such as Employee ID. Later, you'll add the entity name to the localized strings section, and that name appears in the admin center when you create a policy.
+2. Add a comment that contains the name of your custom entity, such as Employee ID. Later, you add the entity name to the localized strings section, and that name appears in the admin center when you create a policy.
 3. Generate a unique GUID for your entity. For example, in Windows PowerShell, you can run the command `[guid]::NewGuid()`. Later, you'll also add the GUID to the localized strings section of the entity.
 
 ![XML markup showing Rules and Entity elements.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -183,7 +183,7 @@ An entity is a sensitive information type, such as a credit card number, that ha
 
 The pattern contains the list of what the sensitive information type is looking for. The pattern can include RegExes, keywords, and built-in functions. Functions do task like running RegExes to find dates or addresses. Sensitive information types can have multiple patterns with unique confidences.
 
-In the following diagram, all of the patterns reference the same regular expression. This RegEx looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. This regular expression is referenced by the `IdMatch` element, and is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
+In the following diagram, all of the patterns reference the same regular expression. This RegEx looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. The `IdMatch` element references this regular expression, and it is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
 
 ![XML markup showing multiple Pattern elements referencing single Regex element.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
 
@@ -202,11 +202,11 @@ A `Pattern` might include multiple `Match` elements:
 - Directly in the `Pattern` element.
 - Combined by using the `Any` element.
 
-`Match` elements are joined by an implicit AND operator. In other words, all `Match` elements must be satisfied for the pattern to be matched.
+`Match` elements are joined with an implicit AND operator. In other words, all `Match` elements must be satisfied for the pattern to be matched.
 
 You can use the `Any` element to introduce AND or OR operators. The `Any` element is described later in this article.
 
-You can use the optional `minCount` attribute to specify how many instances of a match need to be found for each `Match` elements. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.
+You can use the optional `minCount` attribute to specify how many instances of a match need to be found for each `Match` element. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.
 
 ![XML markup showing Match element with minOccurs attribute.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
 
@@ -218,7 +218,7 @@ Keywords are included as a list of `Term` elements in a `Group` element. The `Gr
 
 - **matchStyle="word"**: A word match identifies whole words surrounded by white space or other delimiters. You should always use **word** unless you need to match parts of words or words in Asian languages.
 
-- **matchStyle="string"**: A string match identifies strings no matter what they're surrounded by. For example, "ID" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
+- **matchStyle="string"**: A string match identifies strings no matter what they're surrounded by. For example, "ID" matches both "b**id**" and "**id**ea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
 
 Finally, you can use the `caseSensitive` attribute of the `Term` element to specify that the content must match the keyword exactly, including lower-case and upper-case letters.
 
@@ -240,7 +240,7 @@ For more information, see [Sensitive information type functions](sit-functions.m
 
 ## Different combinations of evidence [Any element, minMatches and maxMatches attributes]
 
-In a `Pattern` element, all `IdMatch` and `Match` elements are joined by an implicit AND operator. In other words, all of the matches must be satisfied before the pattern can be satisfied.
+In a `Pattern` element, all `IdMatch` and `Match` elements are joined with an implicit AND operator. In other words, all of the matches must be satisfied before the pattern can be satisfied.
 
 You can create more flexible matching logic by using the `Any` element to group `Match` elements. For example, you can use the `Any` element to match all, none, or an exact subset of its child `Match` elements.
 
@@ -248,7 +248,7 @@ The `Any` element has optional `minMatches` and `maxMatches` attributes that you
 
 ### Match at least one child Match element
 
-To require only a minimum number of `Match` elements, you can use the `minMatches` attribute. In effect, these `Match` elements are joined by an implicit OR operator. This `Any` element is satisfied if a US-formatted date or a keyword from either list is found.
+To require only a minimum number of `Match` elements, you can use the `minMatches` attribute. In effect, these `Match` elements are joined with an implicit OR operator. This `Any` element is satisfied if a US-formatted date or a keyword from either list is found.
 
 ```xml
 <Any minMatches="1" >
@@ -270,9 +270,9 @@ To require an exact number of `Match` elements, set `minMatches` and `maxMatches
 </Any>
 ```
 
-### Match none of children Match elements
+### Match none of children "Match" elements
 
-If you want to require the absence of specific evidence for a pattern to be satisfied, you can set both minMatches and maxMatches to 0. This can be useful if you have a keyword list or other evidence that are likely to indicate a false positive.
+If you want to require the absence of specific evidence for a pattern to be satisfied, you can set both minMatches and maxMatches to 0. This can be useful if you have a keyword list or other evidence that is likely to indicate a false positive.
 
 For example, the employee ID entity looks for the keyword "card" because it might refer to an "ID card". However, if card appears only in the phrase "credit card", "card" in this content is unlikely to mean "ID card". So you can add "credit card" as a keyword to a list of terms that you want to exclude from satisfying the pattern.
 
@@ -283,9 +283,9 @@ For example, the employee ID entity looks for the keyword "card" because it migh
 </Any>
 ```
 
-### Match a number of unique terms
+### Match several unique terms
 
-If you want to match a number of unique terms, use the *uniqueResults* parameter, set to *true*, as shown in the following example:
+If you want to match several unique terms, use the *uniqueResults* parameter, set to *true*, as shown in the following example:
 
 ```xml
 <Pattern confidenceLevel="75">
@@ -310,7 +310,7 @@ The example below illustrates how the proximity window affects the pattern match
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Note that for email, the message body and each attachment are treated as separate items. This means that the proximity window doesn’t extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside in that item.
+For email, the message body and each attachment are treated as separate items. This means that the proximity window doesn’t extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside in that item.
 
 ## What are the right confidence levels for different patterns? [confidenceLevel attribute, recommendedConfidence attribute]
 
@@ -320,15 +320,15 @@ The Pattern element has a required confidenceLevel attribute. You can think of t
 
 ![XML markup showing Pattern elements with different values for confidenceLevel attribute.](../media/sit-xml-markedup-2.png)
 
-In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a policy, if you don't specify a confidence level for the rule to use, that rule will match based on the recommended confidence level for the entity. Please note that the recommendedConfidence attribute is mandatory for each Entity ID in the Rule Package, if missing you won't be able to save policies that use the Sensitive Information Type.
+In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a policy, if you don't specify a confidence level for the rule to use, that rule matches based on the recommended confidence level for the entity. Note that the recommendedConfidence attribute is mandatory for each Entity ID in the Rule Package, if missing you won't be able to save policies that use the Sensitive Information Type.
 
-## Do you want to support other languages in the UI of the Compliance center? [LocalizedStrings element]
+## Do you want to support other languages in the UI of the compliance portal? [LocalizedStrings element]
 
 If your compliance team uses the Microsoft Purview compliance portal to create policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
 
 ![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-The Rules element must contain a LocalizedStrings element, which contains a Resource element that references the GUID of your custom entity. In turn, each Resource element contains one or more Name and Description elements that each use the langcode attribute to provide a localized string for a specific language.
+The Rules element must contain a LocalizedStrings element, which contains a Resource element that references the GUID of your custom entity. In turn, each Resource element contains one or more Name and Description elements that each use the `langcode` attribute to provide a localized string for a specific language.
 
 ![XML markup showing contents of LocalizedStrings element.](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
 
@@ -338,7 +338,7 @@ Note that you use localized strings only for how your custom sensitive informati
 
 Finally, the beginning of each RulePackage contains some general information that you need to fill in. You can use the following markup as a template and replace the ". . ." placeholders with your own info.
 
-Most importantly, you'll need to generate a GUID for the RulePack. Above, you generated a GUID for the entity; this is a second GUID for the RulePack. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid().
+Most importantly, you need to generate a GUID for the RulePack. Earlier, you generated a GUID for the entity; this is a second GUID for the RulePack. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid().
 
 The Version element is also important. When you upload your rule package for the first time, Microsoft 365 notes the version number. Later, if you update the rule package and upload a new version, make sure to update the version number or Microsoft 365 won't deploy the rule package.
 
@@ -449,7 +449,7 @@ In this example, a date validator is defined for a RegEx part of which is date.
 
 ## Changes for Exchange Online
 
-Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and the Compliance center. As part of this improvement, you should use Security & Compliance PowerShell to import your custom sensitive information types — you can't import them from Exchange Online PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
+Previously, you might have used Exchange Online PowerShell to import your custom sensitive information types for DLP. Now your custom sensitive information types can be used in both the [Exchange admin center]()]"https://go.microsoft.com/fwlink/p/?linkid=2059104") and the Microsoft Purview compliance portal. As part of this improvement, you should use Security & Compliance PowerShell to import your custom sensitive information types—you can't import them from Exchange Online PowerShell anymore. Your custom sensitive information types will continue to work just like before; however, it may take up to one hour for changes made to custom sensitive information types in the Compliance center to appear in the Exchange admin center.
 
 Note that in the Compliance center, you use the **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet to upload a rule package. (Previously, in the Exchange admin center, you used the  **ClassificationRuleCollection**` cmdlet.)
 

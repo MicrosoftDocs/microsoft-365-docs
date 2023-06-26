@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/12/2023
+ms.date: 06/26/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -30,7 +30,7 @@ description: "DLP policy tip reference for Outlook on the web."
 Yes.
 
 > [!IMPORTANT]
-> When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
+> When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the *detect encryption* condition, policy tips will not appear.
 
 ## Email notification supported for Outlook on the Web
 
@@ -85,7 +85,7 @@ Yes.
 
 ## Sensitive information types that support policy tips in Outlook on the Web
 
-These preconfigured sensitive information types (SIT) support policy tips in Outlook on the Web.
+These preconfigured sensitive information types (SITs) support policy tips in Outlook on the Web.
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
@@ -197,7 +197,7 @@ All exact data match sensitive information types are custom created. For more de
 
 Yes.
 
-Custom sensitive information types that use REGEX, functions, keyword lists and keyword dictionaries support policy tips in Outlook on the Web. For more details, see [Create custom sensitive information types in the compliance portal](create-a-custom-sensitive-information-type.md) and [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+Custom sensitive information types that use REGEX, functions, keyword lists, and keyword dictionaries support policy tips in Outlook on the Web. For more details, see [Create custom sensitive information types in the compliance portal](create-a-custom-sensitive-information-type.md) and [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 
 ## Sensitivity labels support for policy tips in Outlook on the Web
