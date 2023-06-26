@@ -38,7 +38,6 @@ Select a tab to learn more about that method.
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control and Printer Protection. To access the Microsoft 365 Defender portal, you must have the following subscription:
 
@@ -96,6 +95,8 @@ DeviceEvents
 **Applies to:** 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
+
 
 With the device control report, you can view events that relate to media usage. Such events include:
 
