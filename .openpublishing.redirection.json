@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/security/defender/microsoft-365-security-mdi-redirection.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdi",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
       "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
