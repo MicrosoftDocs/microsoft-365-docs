@@ -67,8 +67,6 @@ For more information about compliance features in Microsoft 365 for business, se
 
 ## Use sensitivity labels
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
-
 Sensitivity labels are available in Microsoft 365 Apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 
 - Normal

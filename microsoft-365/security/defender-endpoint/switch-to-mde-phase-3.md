@@ -17,7 +17,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 06/19/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -73,7 +73,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 > [!IMPORTANT]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either Defender for Endpoint for Servers, or [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Step 2: Run a detection test
 
