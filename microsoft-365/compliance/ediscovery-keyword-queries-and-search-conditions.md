@@ -52,7 +52,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - The timezone for all searches is Coordinated Universal Time (UTC). Changing timezones for your organization isn't currently supported.
 - Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
 - The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
+- A space between two keywords or two  `property:value` expressions is the same as using **OR**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis or messages that contain the word reorganization in the subject line.
 - Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages sent to pilarp.
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 - You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren't supported.
