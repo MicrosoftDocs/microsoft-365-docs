@@ -163,7 +163,7 @@ Further into the policy configuration, administrators who selected administrativ
 For information about administrative units that is specific to each supported solution, see the following sections:
 
 - For data lifecycle management: [Support for administrative units](get-started-with-data-lifecycle-management.md#support-for-administrative-units)
-- For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
+- For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies)
 - For records management:[Support for administrative units](get-started-with-records-management.md#support-for-administrative-units)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
