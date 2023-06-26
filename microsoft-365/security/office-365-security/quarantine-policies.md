@@ -68,7 +68,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop-down lists in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in dropdown lists in upcoming steps.
 
    When you're finished on the **Policy name** page, select **Next**.
 
@@ -76,7 +76,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
    - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval.
 
    - **Set specific access (Advanced)**: Use this value to specify custom permissions. Configure the following settings that appear:
-     - **Select release action preference**: Select one of the following values from the drop down:
+     - **Select release action preference**: Select one of the following values from the dropdown list:
        - Blank: Users can't release or request the release of their messages from quarantine. This is the default value.
        - **Allow recipients to request a message to be released from quarantine**
        - **Allow recipients to release a message from quarantine**
@@ -206,7 +206,7 @@ The rest of this step explains how to assign quarantine policies for supported f
 
 2. On the **Anti-spam policies** page, use either of the following methods:
    - Select an existing **inbound** anti-spam policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Actions** section and then select **Edit actions**.
-   - Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create policy**, select **Inbound** from the drop down list to start the new anti-spam policy wizard, and then get to the **Actions** page.
+   - Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create policy**, select **Inbound** from the dropdown list to start the new anti-spam policy wizard, and then get to the **Actions** page.
 
 3. On the **Actions** page or flyout, every verdict that has the **Quarantine message** action selected also has the **Select quarantine policy** box for you to select a quarantine policy.
 
