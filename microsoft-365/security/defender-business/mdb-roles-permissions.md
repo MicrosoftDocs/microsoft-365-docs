@@ -65,25 +65,12 @@ The following table describes the three roles that can be assigned in Defender f
 
 4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to the **Users** view in Azure Active Directory (Azure AD), where you can view and manage your role assignments.
 
-5. To assign a role, follow these steps:
+5. To add or remove a role, use one of the following procedures:
 
-   1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile. 
-
-   2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.
-
-   3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.
-
-      - Global Administrator
-      - Security Administrator
-      - Security Reader
-
-5. To remove a role, follow these steps:
-
-   1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.
-
-   2. In navigation pane, under **Manage**, select **Assigned roles**.
-
-   3. Select one or more administrative roles, and then select **X Remove assignments**. 
+   | Task | Procedure |
+   |---|---|
+   | Add a role to a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
+   | Remove a role from a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In navigation pane, under **Manage**, select **Assigned roles**.<br/><br/>3. Select one or more administrative roles, and then select **X Remove assignments**. |
 
 ## Next steps
 
