@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: conceptual
-ms.service: sharepoint-online
+ms.service: loop
 ms.reviewer: michalbr
 ms.date: 07/16/2021
 ms.localizationpriority: medium
