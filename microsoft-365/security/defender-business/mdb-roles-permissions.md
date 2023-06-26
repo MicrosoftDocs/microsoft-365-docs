@@ -55,27 +55,35 @@ The following table describes the three roles that can be assigned in Defender f
 
 2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
 
-3. Select a roles to open its side pane, where you can view who's assigned each role. The following roles are relevant to Defender for Business:
+3. Select one of the following roles that are relevant to Defender for Business:
 
    - Global administrator
    - Security administrator
    - Security reader
 
-4. To assign a role to one or more users, follow these steps:
+   A side pane opens and displays information, such as which users are assigned that role.
 
-   1. In the side pane, select the **Manage members in Azure AD** link. This action takes you to the **Users** view in Azure Active Directory (Azure AD), where you can view and manage your role assignments.
+4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to the **Users** view in Azure Active Directory (Azure AD), where you can view and manage your role assignments.
 
-   2. Select a user to open their profile. 
+5. To assign a role, follow these steps:
 
-   3. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.
+   1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile. 
 
-   4. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.
+   2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.
+
+   3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.
 
       - Global Administrator
       - Security Administrator
       - Security Reader
 
-8. To remove a role, in the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a 
+5. To remove a role, follow these steps:
+
+   1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.
+
+   2. In navigation pane, under **Manage**, select **Assigned roles**.
+
+   3. Select one or more administrative roles, and then select **X Remove assignments**. 
 
 ## Next steps
 
