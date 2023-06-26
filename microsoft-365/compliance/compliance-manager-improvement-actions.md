@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -169,6 +169,8 @@ Automatically tested actions may also show one of the following states in the **
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: action has been partially tested;  neither passes nor fails
+
+Some actions may show a status of **Out of scope** when automatic monitoring through Defender for Cloud is first set up. This is because it can take up to 24 hours to process the signals from Defender for Cloud. Improvement action statuses refresh every 24 hours.
 
 > [!NOTE]
 > The test status and testing notes for automatically tested improvement actions can't be edited manually. Compliance Manager updates these fields for you.

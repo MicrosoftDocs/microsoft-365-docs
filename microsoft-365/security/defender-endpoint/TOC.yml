@@ -583,7 +583,7 @@
           href: prevent-changes-to-security-settings-with-tamper-protection.md
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
-        - name: Manage tamper protection using Microsoft Intune
+        - name: Manage tamper protection with Intune
           href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
@@ -860,6 +860,8 @@
           href: api-power-bi.md
         - name: Threat protection reports
           href: threat-protection-reports.md
+        - name: Monthly security summary
+          href: monthly-security-summary-report.md
 
     - name: Advanced hunting
       href: /microsoft-365/security/defender/advanced-hunting-overview
@@ -1195,7 +1197,7 @@
               href: export-security-baseline-assessment.md
             - name: List security baselines assessment profiles
               href: get-security-baselines-assessment-profiles.md
-            - name: List security baselines assessment configurations
+            - name: Get baseline profile configurations
               href: get-security-baselines-assessment-configurations.md
 
           - name: Software

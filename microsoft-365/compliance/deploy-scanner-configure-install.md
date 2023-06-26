@@ -63,13 +63,9 @@ Before you install the scanner, or upgrade it from an older general availability
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) with one of the following roles:
 
-    - **Global administrator**
     - **Compliance administrator**
     - **Compliance data administrator**
-    - **Security administrator**
-    - **Security operator**
-    - **Security reader**
-    - **Global reader**
+    - **Organization Management**
 
     Then, navigate to the **Settings** pane.
 
