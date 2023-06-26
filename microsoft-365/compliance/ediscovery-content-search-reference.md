@@ -169,10 +169,10 @@ You can use the **ItemClass** email property or the **Type** search condition to
 
   - To use the **ItemClass** property as part of the keyword search query, in the **Keywords** box of a search query, you can type one (or all) of the following property:value pairs:
 
-     - ItemClass:IPM.Viva Engage.message
-     - ItemClass:IPM.Viva Engage.poll
-     - ItemClass:IPM.Viva Engage.praise
-     - ItemClass:IPM.Viva Engage.question
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
 
     For example, you can use the following search query to return Viva Engage messages and Viva Engage praise items:
 
