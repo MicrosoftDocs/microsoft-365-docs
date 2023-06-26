@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 6/15/2023
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -21,14 +21,13 @@ ms.custom:
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Threat investigation and response
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies To**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 Threat investigation and response capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 
