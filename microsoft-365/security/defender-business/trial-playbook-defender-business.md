@@ -96,7 +96,7 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 2. **[Assign roles and permissions](mdb-roles-permissions.md)** in the Microsoft 365 Defender portal.
 
    - [Learn about roles in Defender for Business](mdb-roles-permissions.md#roles-in-defender-for-business). 
-   - [View or edit role assignments for your security team](mdb-roles-permissions.md#view-or-edit-role-assignments).
+   - [View or edit role assignments for your security team](mdb-roles-permissions.md#view-and-edit-role-assignments).
 
 3. **[Set up email notifications](mdb-email-notifications.md)** for your security team.
 
