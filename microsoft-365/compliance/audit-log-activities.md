@@ -27,7 +27,7 @@ The tables in this article describe the activities that are audited in Microsoft
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list (or that are available in PowerShell) and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 > [!TIP]
-> Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
+> Select one of the links in the **In this article** list at the top of this article to go directly to a specific product table.
 
 ## Application administration activities
 
@@ -312,10 +312,18 @@ The following table describes the folder activities in SharePoint Online and One
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
 |Friendly name|Operation|Description|
-|:----------------|:------------|:--------------|
-| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
-| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
-| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+|:------------|:--------|:----------|
+|Applied information barrier mode to site|SiteIBModeSet|A SharePoint or global administrator has applied a mode to the site.|
+|Applied segments to site|SiteIBSegmentsSet|A SharePoint, global administrator, or site owner added one or more information barriers segments to a site.|
+|Changed information barrier mode of site|SiteIBModeChanged|A SharePoint or global administrator has updated the mode of the site.|
+|Changed segments of site|SiteIBSegmentsChanged|A SharePoint or global administrator changed one or more information barriers segments for a site.|
+|Disabled information barriers for SharePoint and OneDrive|SPOIBIsDisabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Enabled information barriers for SharePoint and OneDrive|SPOIBIsEnabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Information barriers insights report completed|InformationBarriersInsightsReportCompleted| System completes build of the information barriers insights report.|
+|Information barriers insights report OneDrive section queried|InformationBarriersInsightsReportOneDriveSectionQueried |An administrator queries the information barriers insights report for OneDrive accounts.|
+|Information barriers insights report scheduled|InformationBarriersInsightsReportSchedule|An administrator schedules the information barriers insights report.|
+|Information barriers insights report SharePoint section queried|InformationBarriersInsightsReportSharePointSectionQueried|An administrator queries the information barriers insights report for Sharepoint sites.|
+|Removed segment from site|SiteIBSegmentsRemoved|A SharePoint or global administrator removed one or more information barriers segments from a site.|
 
 ## Microsoft Defender Experts activities
 
