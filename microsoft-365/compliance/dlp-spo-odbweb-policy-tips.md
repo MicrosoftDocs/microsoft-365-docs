@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/12/2023
+ms.date: 06/26/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -52,6 +52,7 @@ Yes.
 ## Sensitive information types that support policy tips in SharePoint Online and OneDrive for Business web client
 
 These preconfigured sensitive information types (SIT) support policy tips in SharePoint Online and OneDrive for Business web client
+
 
 - [ABA routing number](sit-defn-aba-routing.md)
 - [All credentials](sit-defn-all-creds.md)
