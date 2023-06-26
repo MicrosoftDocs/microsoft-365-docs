@@ -24,8 +24,8 @@ search.appverid: met150
 
 Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media use by devices in your organization, such as using removable storage devices and USB drives. You can use device control events through:
 
-- Advanced hunting; and
-- the Device control report. 
+- **Advanced hunting**; and
+- the **Device control report**. 
 
 Select a tab to learn more about that method.
 
