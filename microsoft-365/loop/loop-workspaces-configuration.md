@@ -45,7 +45,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ### Exchange Online license
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If not, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
 
 ### WebSocket connections
 
