@@ -37,7 +37,7 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you n
     1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - This article introduces all the components of a DLP policy and how each one influences the behavior of a policy.
 1. [Design a DLP policy](dlp-policy-design.md) - This article walks you through creating a policy intent statement and mapping it to a specific policy configuration.
-1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you can map to configuration options. It then walks you through configuring those options.
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options. Then, it walks you through configuring those options.
 
 ## Multiple starting points
 
@@ -46,12 +46,12 @@ Many organizations choose to implement DLP to comply with various governmental o
 Organizations can start their DLP journey from several different points:
 
 - With a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 or 11 devices
-- Knowing the sensitive information they want to prioritize protecting, such as health care records, and jumping in by defining policies to protect it
-- With discovery and categorization, because they don't know what their sensitive information is, where it is, and who is doing what with it
-- By defining policies as a starting place (without knowing what their sensitive information is, where it is, or who is doing what with it) and then using those outcomes to refine their policies
-- Knowing that they need to implement the full Microsoft Purview Information Protection stack, with a plan to take a longer term, methodical approach
+- Knowing the sensitive information they want to prioritize protecting, such as health care records, and going straight to defining policies to protect it
+- Without knowing what their sensitive information is, where it is, or who is doing what with it; so, they start with discovery and categorization and take a more methodical approach
+- Without knowing what their sensitive information is, where it is, or who is doing what with it, they go straight to defining policies and then using those outcomes to refine them
+- Knowing that they need to implement the full Microsoft Purview Information Protection stack, and a plan to take a longer term, methodical approach
 
-These are just some examples of how customers can approach DLP. It doesn't matter where you start from. DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy.
+These are just some examples of how customers can approach DLP. It doesn't matter where you start from; DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy.
 
 ## Overview of planning process
 
@@ -136,7 +136,7 @@ As you begin your DLP adoption, you can use these questions to focus your policy
 
 ##### What laws, regulations, and industry standards must your organization comply with?
 
-Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. Rather, you should consult your legal team and business executives for an answer.
+Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. Instead, you should consult your legal team and business executives for an answer.
  
 **Example** Your organization is subject to U.K. financial regulations.
 
@@ -159,7 +159,7 @@ The items that contain your organization's sensitive information are used every 
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Windows 10/11 and macOS Devices
+- Windows 10, 11 and macOS Devices
 - Microsoft Defender for Cloud Apps
 - On-premises repositories
 
