@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 04/26/2023
+ms.date: 06/26/2023
 ms.reviewer: efratka
 ms.collection: 
 - SMB
@@ -99,6 +99,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>Windows, Mac, iOS, and Android OS (*For Windows Server and Linux, see note 6 below*) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)| | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |Partner APIs|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|Microsoft Sentinel integration|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 
 > [!NOTE]
@@ -113,6 +114,8 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > 5. In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 > 
 > 6. To onboard servers, another license is required. See [Onboard devices to Defender for Business](mdb-onboard-devices.md) or [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+>
+> 7. 
 
 
 ## Next steps
