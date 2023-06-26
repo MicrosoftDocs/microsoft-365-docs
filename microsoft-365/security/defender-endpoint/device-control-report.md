@@ -2,9 +2,6 @@
 title: Protect your organization's data with device control
 description: Monitor your organization's data security through device control reports.
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 06/26/2023
 ms.author: deniseb
@@ -27,7 +24,7 @@ Microsoft Defender for Endpoint device control protects against data loss by mon
 - **Advanced hunting**; and
 - the **Device control report**. 
 
-Select a tab to learn more about that method.
+Select each tab to learn more about these methods.
 
 ## [**Advanced hunting**](#tab/advhunt)
 
