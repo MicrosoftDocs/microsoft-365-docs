@@ -47,7 +47,12 @@ You'll need to know the exact Linux distros and macOS versions that are compatib
 
 ## Onboarding non-Windows devices
 
-You can choose to onboard non-Windows devices through Microsoft Defender for Endpoint or through a third-party solution. You'll need to take the following steps:
+You can choose to onboard non-Windows devices through Microsoft Defender for Endpoint or through a third-party solution.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
+
+You'll need to take the following steps:
 
 1.	Select your preferred method of onboarding:
     - To onboard macOS devices using Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).

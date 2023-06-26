@@ -198,7 +198,7 @@
             items:
             - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
               href: mac-install-with-jamf.md
-            - name: Login to Jamf Pro
+            - name: Log in to Jamf Pro
               href: mac-install-jamfpro-login.md
             - name: Set up device groups
               href: mac-jamfpro-device-groups.md
@@ -226,7 +226,7 @@
             href: linux-deploy-defender-for-endpoint-with-chef.md
           - name: Manual deployment
             href: linux-install-manually.md
-          - name: Saltstack based deployment
+          - name: Saltstack-based deployment
             href: linux-install-with-saltack.md
             
           
@@ -382,6 +382,8 @@
 
   - name: Detect threats and protect endpoints
     items:
+    - name: Defender for Endpoint Security Operations Guide 
+      href: mde-sec-ops-guide.md
     - name: Microsoft Defender Vulnerability Management
       href: ../defender-vulnerability-management/index.yml
     - name: Device discovery
@@ -426,8 +428,8 @@
     - name: Host firewall reporting in Microsoft Defender for Endpoint
       href: host-firewall-reporting.md
 
-    - name: Built-in protection
-      href: built-in-protection.md
+    - name: Tamper resiliency
+      href: tamper-resiliency.md
 
     - name: Attack surface reduction
       items:
@@ -581,7 +583,7 @@
           href: prevent-changes-to-security-settings-with-tamper-protection.md
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
-        - name: Manage tamper protection using Microsoft Intune
+        - name: Manage tamper protection with Intune
           href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
@@ -746,6 +748,8 @@
         href: configure-machines-security-baseline.md
       - name: Optimize attack surface reduction rule deployment and detections
         href: configure-machines-asr.md
+      - name: Built-in protection
+        href: built-in-protection.md
 
   - name: Investigate and respond to threats
     items:
@@ -856,6 +860,8 @@
           href: api-power-bi.md
         - name: Threat protection reports
           href: threat-protection-reports.md
+        - name: Monthly security summary
+          href: monthly-security-summary-report.md
 
     - name: Advanced hunting
       href: /microsoft-365/security/defender/advanced-hunting-overview
@@ -955,11 +961,11 @@
               href: get-alert-related-domain-info.md
             - name: Get alert related file information
               href: get-alert-related-files-info.md
-            - name: Get alert related IPs information
+            - name: Get alert-related IPs information
               href: get-alert-related-ip-info.md
-            - name: Get alert related device information
+            - name: Get alert-related device information
               href: get-alert-related-machine-info.md
-            - name: Get alert related user information
+            - name: Get alert-related user information
               href: get-alert-related-user-info.md
 
           - name: Assessments of vulnerabilities and secure configurations
@@ -1191,7 +1197,7 @@
               href: export-security-baseline-assessment.md
             - name: List security baselines assessment profiles
               href: get-security-baselines-assessment-profiles.md
-            - name: List security baselines assessment configurations
+            - name: Get baseline profile configurations
               href: get-security-baselines-assessment-configurations.md
 
           - name: Software

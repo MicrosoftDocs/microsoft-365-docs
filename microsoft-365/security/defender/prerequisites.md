@@ -48,7 +48,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features via th
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Cloud Apps or [Cloud App Discovery](/defender-cloud-apps/editions-cloud-app-security-aad)
 - Defender for Office 365 (Plan 2)
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
