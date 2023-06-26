@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/08/2023
+ms.date: 06/24/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -207,8 +207,8 @@ As with sensitivity labels, an item such as an email or document can have only a
 
 - [Auto-apply retention label policy](apply-retention-labels-automatically.md)
 - [A Microsoft Syntex model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
-- [Default retention label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
-- [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+- [Default retention label for SharePoint or Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook)
+- [Outlook rules](create-apply-retention-labels.md#automatically-apply-a-retention-label-to-email-by-using-outlook-rules)
 - [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
 
 If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of more than one of these policies, you can't control which retention label will be selected. However, in some cases, the retention label for the oldest auto-apply retention label policy (by date created) is selected. This happens only when the matching policies don't include multiple instances of the same type of condition (sensitive information types, specific keywords or searchable properties, or trainable classifiers).
@@ -226,8 +226,8 @@ For standard retention labels (they don't mark items as a [record or regulatory 
     - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
     
         For more information about the label behavior when it's applied by using a default label:
-        - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+        - [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - [Label behavior when you use a default label for Outlook](/microsoft-365/compliance/create-apply-retention-labels&tabs=manual-outlook%2Cdefault-label-for-outlook#label-behavior-when-you-use-a-default-label-for-outlook)
 
 For retention labels that mark items as a record or a regulatory record:
 
@@ -600,7 +600,7 @@ If you currently use these older features, they will usually work side by side w
 
   - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
 
-  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
 - [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
     
