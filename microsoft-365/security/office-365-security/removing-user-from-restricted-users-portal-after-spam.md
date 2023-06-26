@@ -21,17 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/19/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Remove blocked users from the Restricted entities page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, several things happen if a user exceeds the [outbound sending limits of the service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or the [limits in outbound spam policies](outbound-spam-policies-configure.md):
 
@@ -102,7 +101,7 @@ The default alert policy named **User restricted from sending email** automatica
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. Or, to go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpoliciesv2>.
 
-2. On the **Alert policy** page, find the alert named **User restricted from sending email**. You can sort the alerts by name, or use the ::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
+2. On the **Alert policy** page, find the alert named **User restricted from sending email**. You can sort the alerts by name, or use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
 
    Select the **User restricted from sending email** alert by clicking anywhere in the row other than the check box next to the name.
 

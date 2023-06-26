@@ -20,17 +20,16 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/12/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Exchange Online Protection (EOP)** is the core of security for Microsoft 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Microsoft Defender for Office 365** Plan 1 or Plan 2 contain additional features that give more layers of security, control, and investigation.
 
@@ -92,7 +91,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 Wherever you select **Quarantine message** as the action for a spam filter verdict, a **Select quarantine policy** box is available. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
-If you _change_ the action of a spam filtering verdict to **Quarantine message** when you create anti-spam policies the the Defender portal, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that spam filtering verdict is used. These default quarantine policies enforce the historical capabilities for the spam filter verdict that quarantined the message as described in the table [here](quarantine-end-user.md). When you later view or edit the anti-spam policy settings, the quarantine policy name is shown.
+If you _change_ the action of a spam filtering verdict to **Quarantine message** when you create anti-spam policies the Defender portal, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that spam filtering verdict is used. These default quarantine policies enforce the historical capabilities for the spam filter verdict that quarantined the message as described in the table [here](quarantine-end-user.md). When you later view or edit the anti-spam policy settings, the quarantine policy name is shown.
 
 Admins can create or use quarantine policies with more restrictive or less restrictive capabilities. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
@@ -110,7 +109,7 @@ Admins can create or use quarantine policies with more restrictive or less restr
 |**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)||
 |**Quarantine policy** for **Spam** (_SpamQuarantineTag_)|DefaultFullAccessPolicy¹|DefaultFullAccessPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if spam detections are quarantined.|
 |**High confidence spam** detection action (_HighConfidenceSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|**Quarantine message** (`Quarantine`)||
-|**Quarantine policy** for **Hight confidence spam** (_HighConfidenceSpamQuarantineTag_)|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if high confidence spam detections are quarantined.|
+|**Quarantine policy** for **High confidence spam** (_HighConfidenceSpamQuarantineTag_)|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if high confidence spam detections are quarantined.|
 |**Phishing** detection action (_PhishSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)<sup>\*</sup>|**Quarantine message** (`Quarantine`)|**Quarantine message** (`Quarantine`)|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Defender portal.|
 |**Quarantine policy** for **Phishing** (_PhishQuarantineTag_)|DefaultFullAccessPolicy¹|DefaultFullAccessWithNotificationPolicy|DefaultFullAccessWithNotificationPolicy|The quarantine policy is meaningful only if phishing detections are quarantined.|
 |**High confidence phishing** detection action (_HighConfidencePhishAction_)|**Quarantine message** (`Quarantine`)|**Quarantine message** (`Quarantine`)|**Quarantine message** (`Quarantine`)|Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.|
