@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 06/24/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -55,7 +55,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 
 ## Best practice for endpoint DLP policies
 
-Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
+Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend the following:
 
 - Create a policy and scope it to endpoints and to that group of users.
 - Create a rule in the policy that detects the type of information that you want to protect. In this case, set **content contains** to *Sensitive information type**, and select **Credit Card**.
@@ -96,13 +96,13 @@ DLP audits the activities for these file types, even if there isn't a policy mat
 
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
- If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited, even if the device isn't targeted by any policies.
+ If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv files are always audited, even if the device isn't targeted by any policy.
 
 To ensure activities are audited for all supported file types, create a [custom DLP policy](dlp-create-deploy-policy.md).
 
 Endpoint DLP monitors activity-based on MIME type, so activities are captured, even if the file extension is changed, for these files types:
 
-After the extension is changed to any other file extension
+After the extension is changed to any other file extension:
 - doc
 - docx
 - xls
@@ -125,7 +125,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats that are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices.
+File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices. 
 
 |File Type |App  |Monitored file extensions  |
 |---------|---------|---------|
@@ -141,10 +141,10 @@ File types are a grouping of file formats that are utilized to protect specific 
 If the file types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
 
 > [!IMPORTANT]
-> The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
+> The **file extensions** and **file types** options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
 
 > [!IMPORTANT]
-> These Windows versions support file type and file extension features:
+> These Windows versions support **file extensions** and **file types** features:
 >- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 >- Windows 10 versions 19H1/19H2 (KB 5007189)
 >- Windows 10 RS5 (KB 5006744)
@@ -161,9 +161,9 @@ Device management is the functionality that enables the collection of telemetry 
 > [!div class="mx-imgBorder"]
 > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Onboarding and offboarding are handled via scripts that you download from the Device management center. The center has custom scripts for each of these deployment methods:
+Onboarding and offboarding are handled via scripts that you download from the device management center. The device management center has custom scripts for each of the following deployment methods:
 
-- local script (up to 10 machines)
+- Local script (up to 10 machines)
 - Group policy
 - System Center Configuration Manager (version 1610 or later)
 - Mobile Device Management/Microsoft Intune
@@ -240,6 +240,10 @@ Just-in-time protection applies a candidate policy to onboarded Windows 10/11 de
 
 - Items that have never been evaluated.
 - Items on which the evaluation has gone stale. These are previously evaluated items that haven't been reevaluated by the current, updated cloud versions of the policies.
+ 
+> [!NOTE]
+> - Simulate Mode: Just-in-time protection is triggered in the background. Admins can see just-in-time events in Activity explorer, without users being blocked.
+> - Enforce Mode: End users are blocked until the evaluation is complete.
 
 You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if the policy evaluation doesn't complete. To configure fallback settings, navigate to **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
 

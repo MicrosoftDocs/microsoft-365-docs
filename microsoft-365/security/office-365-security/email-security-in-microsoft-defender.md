@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 5/31/2023
+ms.date: 6/15/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -18,24 +18,14 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Email security with Threat Explorer in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-In this article:
-
-- [View malware detected in email](#view-malware-detected-in-email)
-- [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
-- [Start automated investigation and response](#start-automated-investigation-and-response)
-
-> [!NOTE]
-> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-explorer-threat-hunting.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features.
 
@@ -51,7 +41,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Ma
 
 2. In the **Explorer** page, verify that **Malware** is selected.
 
-3. Select the filter dropdown, and then choose **Basic** \> **Detection technology** in the drop down list.
+3. Select the filter dropdown, and then choose **Basic** \> **Detection technology** in the dropdown list.
 
    :::image type="content" source="../../media/threat-explorer-malware-detection.png" alt-text="Screenshot of the malware detection technology." lightbox="../../media/threat-explorer-malware-detection.png":::
 
@@ -77,7 +67,7 @@ You can use the **Report clean** option in Explorer to report a message as false
 
    :::image type="content" source="../../media/report-clean-option-explorer-new.png" alt-text="Screenshot of the Report clean option in the Explorer." lightbox="../../media/report-clean-option-explorer-new.png":::
 
-5. Select the **Allow emails with similar attributes** checkbox. From the drop down list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**.
+5. Select the **Allow emails with similar attributes** checkbox. From the dropdown list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**.
 
 ## View phishing URL and click verdict data
 
@@ -91,7 +81,7 @@ You can view phishing attempts through URLs in email, including a list of URLs t
 
    :::image type="content" source="../../media/explorer-view-email-phish-menu-new.png" alt-text="Screenshot of the View menu for Explorer in phishing context." lightbox="../../media/explorer-view-email-phish-menu-new.png":::
 
-3. Select the filter dropdown, and then choose **URLs** \> **Click verdict** in the drop down list.
+3. Select the filter dropdown, and then choose **URLs** \> **Click verdict** in the dropdown list.
 
 4. In options that appear, select one or more options, such as **Blocked** and **Block overridden**, and then click **Refresh** (don't refresh your browser window).
 

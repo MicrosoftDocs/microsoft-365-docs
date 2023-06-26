@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/20/2021
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -41,7 +41,7 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you n
 
 ## Multiple starting points
 
-Many organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
+Many organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. However, the starting place and ultimate destination in the DLP journey vary.
 
 Organizations can start their DLP journey from several different points:
 
@@ -59,13 +59,13 @@ The [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md#
 
 ### Identify stakeholders
 
-When implemented, DLP policies can be applied across large portions of your organization. IT can't develop a broad ranging plan on their own without negative consequences. You need to identify the stakeholders who can describe and explain:
+When implemented, DLP policies can be applied across large portions of your organization. Your IT department can't develop a broad ranging plan on their own without negative consequences. You need to identify the stakeholders who can:
 
 - the regulations, laws, and industry standards your organization is subject to
 - the categories of sensitive items to be protected
 - the business processes they're used in
 - the risky behavior that should be limited
-- prioritize which data should be protected first based on the sensitivity of the items and risk involved
+- prioritize which data should be protected first, based on the sensitivity of the items and risk involved
 - outline the DLP policy match event review and remediation process
  
 In general, these needs tend to be 85% regulatory and compliance protection, and 15% intellectual property protection. Here are some suggestions on roles to include in your planning process:
@@ -80,14 +80,14 @@ In general, these needs tend to be 85% regulatory and compliance protection, and
 
 ### Describe the categories of sensitive information to protect
 
-The stakeholders then describe the categories of sensitive information to be protected and the business process that they're used in. For example, DLP defines these categories:
+Once identified, the stakeholders then describe the categories of sensitive information to be protected and the business processes that they're used in. For example, DLP defines these categories:
 
-- Financial 
+- Financial
 - Medical and health information
 - Privacy
 - Custom
 
-The stakeholders might identify the sensitive information as "We're a data processor, so we have to implement privacy protections on data subject information and financial information".
+Stakeholders might identify the sensitive information as "We are a data processor, so we have to implement privacy protections on data subject information and financial information".
 
   <!-- The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.-->
 
@@ -134,7 +134,7 @@ There are multiple ways to discover what individual sensitive items are and wher
 
 As you begin your DLP adoption, you can use these questions to focus your policy design and implementation efforts.
 
-##### What laws, regulations and industry standards must your organization comply with?
+##### What laws, regulations, and industry standards must your organization comply with?
 
 Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. Rather, you should consult your legal team and business executives for an answer.
  
@@ -176,7 +176,7 @@ Different groups in your organization may have different views on what counts as
 
 #### Planning for prerequisites
 
-Before you can monitor some DLP locations, there are prerequisites that must be met. See the **Before you begin** sections of:
+Before you can monitor some DLP locations, there are prerequisites that must be met. See the **Before you begin** sections of the following articles:
 
 - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#before-you-begin)
@@ -195,13 +195,13 @@ If you're creating DLP policies with a large potential impact, we recommend foll
     
 3. **Start full policy enforcement** so that the actions in the rules are applied and the content is protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend.
 
-    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Screenshot of options for using test mode and turning on policy.](../media/dlp-policy-mode.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Screenshot of options for turning off a rule in a policy.](../media/dlp-toggle-rule-off-on.png)
 
-    You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
+    You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In the row for a rule, choose the ellipses (**...**), and then move an item down in the list to the desired position.
 
     ![Set rule priority.](../media/dlp-set-rule-priority.png)
 

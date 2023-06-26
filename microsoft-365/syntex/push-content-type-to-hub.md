@@ -1,11 +1,10 @@
 ---
 title: Push content types to a hub
-description: Learn how to push content types to a hub.
 ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: shrganguly
-ms.date: 09/14/2020
-manager: serdars
+author: chucked
+ms.reviewer: chuckedmonson
+ms.date: 05/14/2022
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,7 +13,8 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
-ms.localizationpriority: high
+ms.localizationpriority: medium
+description: Learn how to push content types to a hub.
 ---
 
 # Push content types to a hub

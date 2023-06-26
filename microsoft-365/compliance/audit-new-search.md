@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/16/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -48,7 +48,7 @@ Additional information:
 - Searching via an EXO PowerShell session using the Search-UnifiedAuditLog cmdlet isn't compatible with the New Search at this time.
 - Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites.
 - Searching and filtering using date, time, search name, activities, and users are all fully functional
-- Audit Log data will be stored for the defined retention period, regardless of a search job being deleted
+- Audit Log data is stored for the defined retention period, regardless of a search job being deleted
 
 ## Get started with audit new search
 
@@ -71,6 +71,13 @@ Some examples of different searches include the following criteria. Explore thes
     - Search across selected users
     - Scoping the search using the activities field
     - Adding a specific file, folder, or site
+    - Scoping the search using administrative units
+
+  > [!IMPORTANT]
+  > Terms entered in the **Keyword Search** field are only searched within indexed content (content within the Audit *common schema*). Audit *data content* in the audit log isn't searched for these keywords.
+
+  > [!NOTE]
+  > To search for text that contain special characters, replace the special characters with an asterisk(\*) in your keyword search. For example, to search for *test_search_document*, use *test\*search\*document*.
 
 5. Initiate another 2-9 searches in the compliance portal. A maximum of 10 search jobs can be run in parallel in one account.
 6. Explore the search job history and select different search jobs to get their corresponding data from the search job results. Results can be sorted by their creation time by selecting the corresponding button at the top of the table.
@@ -91,11 +98,11 @@ Some examples of different searches include the following criteria. Explore thes
 
 - Search jobs can take in the following criteria: Date Range, Time Range, Search Job Name, Activities, Users, Files, Folders, and Sites.
 - File, folder, or site search text box will return all related results for corresponding file, folders, and sites
-- The search jobs will run at the bottom of the search page.
+- The search jobs runs at the bottom of the search page.
   - Search jobs can be *Queued*, *In Progress*, and *Completed*
   - A maximum of 10 *In Progress* search jobs can be completed simultaneously per user
 - Full search names for jobs can be seen by hovering the cursor over the search job
-- Search jobs will display the Search Name, Status, Progress %, Number of results, creation time, and searched by
+- Search jobs display the Search Name, Status, Progress %, Number of results, creation time, and searched by
 
 ## Audit search results overview
 
