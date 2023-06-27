@@ -67,7 +67,7 @@ Your users can now send from their aliases when using Outlook on the web. When t
 
 ### Did you get "A parameter cannot be found that matches parameter name EmailAddresses" message?
 
-If you get this error message it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
+If you get this error message it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
 
 ### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory" message?
 
