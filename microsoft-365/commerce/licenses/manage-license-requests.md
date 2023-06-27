@@ -52,7 +52,7 @@ If your organization has its own request process, you can use it instead. You cr
 3. In the right pane, in the **Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
 4. Select **Save**.
 
-When you return to the **Requests** list, you see the message **You're using your own license request process**. To make changes to the message that is sent to users, select **Use your existing request process instead**.
+When you return to the **Requests** list, you see the message **You're using your own license request process**. To make changes to the message that is displayed to users, select **Use your existing request process instead**.
 
 ## Stop using your own request process
 
