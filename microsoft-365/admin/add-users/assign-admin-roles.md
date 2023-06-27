@@ -24,13 +24,6 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: "Learn how to assign administrator roles to a user or multiple users in your business so that they can perform specific tasks in the admin center."
 ---
 
