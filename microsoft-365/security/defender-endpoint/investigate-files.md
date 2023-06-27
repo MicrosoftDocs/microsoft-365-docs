@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 11/10/2022
+ms.date: 06/27/2023
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Investigate a file associated with a Microsoft Defender for Endpoint alert
+# Investigate a file
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,38 +40,35 @@ Once on the detailed profile page, you can switch between the new and old page l
 
 You can get information from the following sections in the file view:
 
-- File details, Malware detection, File prevalence
-- File PE metadata (if it exists)
-- Alerts
+- File details and PE metadata (if it exists)
+- Incidents and alerts
 - Observed in organization
 - Deep analysis
 - File names
-- Action center
+- File content and capabilities (if a file has been analyzed by Microsoft)
 
 You can also take action on a file from this page.
 
 ## File actions
 
-Along the top of the profile page, above the file information cards. Actions you can perform here include:
+The file actions are above the file information cards at the top of the profile page. Actions you can perform here include:
 
 - Stop and quarantine
-- Add/edit indicator
+- Manage indicator
 - Download file
-- Consult a threat expert
+- Ask Defender Experts
 - Manual actions
+- Go hunt
+- Deep analysis
 
-For more information on these actions, see [Take response action on a file](respond-file-alerts.md).
+See [take response action on a file](respond-file-alerts.md) for more information on these actions.
 
-## File details, Malware detection, and File prevalence
+## File page overview
 
-The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
-
-You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender Antivirus detection if available, and the file's prevalence.
-
-The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue the investigation in the device timeline. 
+The file page offers an overview of the file’s details and attributes, the incidents and alerts where the file is seen, file names used, the number of devices where the file was seen in the last 30 days, including the dates when the file was first and last seen in the organization, Virus Total detection ratio, Microsoft Defender Antivirus detection, the number of cloud apps connected to the file, and the file’s prevalence in devices outside of the organization.
 
 > [!NOTE]
-> Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
+> Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the role-based access control (RBAC) scope that a user has. This means if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
 
 ![Screenshot showing file prevalence.](https://user-images.githubusercontent.com/96785904/200525998-e11576f7-e495-4d16-98fb-940d8bd9a0d6.png)
