@@ -151,19 +151,7 @@ To protect your Teams chats and channels, go to the Microsoft 365 Defender porta
 
 :::image type="content" source="../../media/zap-teams-policy-mdo.png" alt-text="Image showing policy settings for Microsoft Teams." lightbox="../../media/zap-teams-policy-mdo.png":::
 
-Admins can configure quarantine policy options for malware and high-confidence phishing. The following quarantine options are available for this release of the product.  
-
-- Malware quarantine policy: 
-
-  - **AdminOnlyAccessPolicy**
-  - [Need other options] 
-
-- High-confidence phishing quarantine policy: 
-
-  - **AdminOnlyAccessPolicy** 
-  - [need other options]
-
-Select the **Malware** drop-down and the **High-confidence phishing** drop-down to select a policy. If no policy is configured, the default for malware and high-confidence phishing should be **AdminOnlyAccessPolicy**. 
+Admins can configure quarantine policy options for malware and high-confidence phishing. **AdminOnlyAccessPolicy** is the only quarantine policy available for both malware and high-confidence phishing for this release of the product.  
 
 You can also configure exceptions to the ZAP policy.  
 
@@ -185,7 +173,9 @@ You can also configure exceptions to the ZAP policy.
 
   - You can select one or multiple domains. 
 
-  - Once you save the policy, the domain exception list is exempt from the policy setting.  
+  - Once you save the policy, the domain exception list is exempt from the policy setting. 
+
+For more information on creating policies, see [Quarantine policies](quarantine-policies.md). Note that creating custom policies is currently not supported in this release. 
 
 #### Create ZAP quarantine policies in PowerShell
 
