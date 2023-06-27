@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/12/2023
+ms.date: 06/26/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -77,6 +77,9 @@ For example, to find content related to specific employees (*User 1* and *User 2
 - Select User 1 and User 2's Exchange Online locations as collection locations
 - For **Keyword**, use *Tradewinds*
 - For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
+
+> [!IMPORTANT]
+> For emails, when a keyword is used, we search subject, body and many properties related to the participants. However, due to recipient expansion, search may not return expected results when using the alias or part of the alias. Therefore we recommend using the full UPN.
 
 ## Searchable email properties
 
