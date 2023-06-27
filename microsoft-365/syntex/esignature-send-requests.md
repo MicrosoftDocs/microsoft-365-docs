@@ -1,5 +1,5 @@
 ---
-title: Send and receive signature requests using Microsoft Syntex eSignature (Preview)
+title: Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,24 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Send and receive signature requests using Microsoft Syntex eSignature (Preview)
+# Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Syntex eSignature lets you safely and easily send PDF documents for signature to multiple recipients. It allows you to add a message and edit the name of the request, and to send it to multiple recipients while leveraging the security and compliance of Microsoft 365.
-  
-Microsoft Syntex eSignature is a key component of the Microsoft Syntex suite of products. The Create flow is the process of initializing a request for eSignature on a PDF document through the OneDrive One-Up Viewer.
+Microsoft Syntex eSignature lets you safely and easily send PDF documents for signature to multiple recipients. It allows you to add a message and edit the name of the request, and to send it to multiple recipients while leveraging the security and compliance of Microsoft 365.
 
-## Request an eSignature
-
-### Before you begin
+## Before you begin
 
 Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-set-up) in the Microsoft 365 admin center.
 
 You must be signed in to SharePoint Online with your work email.
 
-### Create a signature request
+## Create a signature request
 
 1. From a SharePoint document library, open the file for which you want to start the Syntex eSignature process.
 
@@ -72,4 +68,20 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 - Azure Active Directory (AAD) collaboration settings restrict document sharing to specific individuals. This will limit who the requests can be sent to.
 
-## Cancel a signature request
+### Cancel a signature request
+
+If you create a signature request and want to cancel it, following these steps.
+
+1. From one of your notification emails, select **View Request**.
+
+2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
+
+    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option.png)
+
+3. On the **Cancel signature request** confirmation screen, enter a message detailing why the request is canceled if needed, and then select **Yes, cancel**.
+
+    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
+
+    Once canceled, the status of the request is set to **Canceled** and recipients will receive a notification email telling them that the request was cancelled and that no further action will be possible on this request.
+
+## Review and sign a signature request
