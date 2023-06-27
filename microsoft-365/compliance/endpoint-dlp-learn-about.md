@@ -125,15 +125,17 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices. 
+File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices and macOS devices, as listed in the following table
 
-|File Type |App  |Monitored file extensions  |
-|---------|---------|---------|
-|word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
-|spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
-|presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
-|email    |Outlook |.pst, .ost, .msg         |
+#### Monitored File Types
+
+| File type //<br> Application| Windows <br> Default Audit | Windows <br> Custom Policy | macOS <br> Default Audit | <br> Custom Policy|
+|---|----|----| ---- |----|
+|doc, //word   | Y | Y| Y| Y |
+|docx, //word   | Y | Y| Y| Y |
+|docm, //word   | Y | Y| Y| Y |
+|dot, //word   | Y | Y| Y| Y |
+
 
 
 ### File extensions
