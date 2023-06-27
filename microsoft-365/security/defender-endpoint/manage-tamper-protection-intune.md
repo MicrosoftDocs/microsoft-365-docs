@@ -6,7 +6,7 @@ description: Turn tamper protection on or off for your organization in Microsoft
 keywords: malware, defender, antivirus, tamper protection, Microsoft Intune
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/09/2023
+ms.date: 06/27/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -91,7 +91,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 
-- Tamper protection is deployed through Intune, and devices are managed by Intune only.
+- Devices are managed by Intune only.
 
 - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
