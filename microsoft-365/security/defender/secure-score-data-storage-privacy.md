@@ -32,7 +32,7 @@ Secure score operates in the Microsoft Azure datacenters in the European Union, 
 
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
-Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
+Once configured, you can't change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
 
 ## How long will Microsoft store my data? What is Microsoft's data retention policy?
 
@@ -42,4 +42,4 @@ By default, data is retained for 90 days based on your active licenses.
 
 ### At contract termination or expiration
 
-Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, data which is associated to expired or terminated license will be erased from Microsoft's systems to make it unrecoverable, no later than 90 days from the associated contract termination or expiration.
+Your data is kept and is available to you while the license is under grace period or suspended mode. At the end of this period, data that is associated to expired or terminated license is erased from Microsoft's systems to make it unrecoverable, no later than 90 days from the associated contract termination or expiration.

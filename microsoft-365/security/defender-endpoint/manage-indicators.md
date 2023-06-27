@@ -1,16 +1,13 @@
 ---
 title: Create indicators
-ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: thdoucet
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/31/2023
 ---
 
 # Create indicators
@@ -37,7 +34,7 @@ ms.date: 12/18/2020
 
 ## Indicator of compromise (IoC) overview
 
-An Indicator of compromise (IoC) is a forensic artifact, observed on the network or host. An IoC indicates - with high confidence - a computer or network intrusion has occurred. IoCs are observable, which link them directly to measurable events. Some IoC examples include:
+An Indicator of compromise (IoC) is a forensic artifact, observed on the network or host. An IoC indicates - with high confidence - a computer or network intrusion has occurred. IoCs are observable, which links them directly to measurable events. Some IoC examples include:
 
 - hashes of known malware
 - signatures of malicious network traffic
@@ -48,11 +45,15 @@ IoC matching is an essential feature in every endpoint protection solution. This
 
 Organizations can create indicators that define the detection, prevention, and exclusion of IoC entities. You can define the action to be taken as well as the duration for when to apply the action, and the scope of the device group to apply it to.
 
+This video shows a walkthrough of creating and adding indicators:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
+
 ### About Microsoft indicators
 
 As a general rule, you should only create indicators for known bad IoCs, or for any files / websites that should be explicitly allowed in your organization. For more information on the types of sites that MDE may block by default, see [Microsoft Defender SmartScreen overview](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
 
-False Positive (FP) refers to a SmartScreen false positive, Microsoft says it is malware / phish but it is actually a safe site, so customer wants to create an allow policy for this.
+False Positive (FP) refers to a SmartScreen false positive, Microsoft says it's malware / phish but it's actually a safe site, so customer wants to create an allow policy for this.
 
 You can also help drive improvements to Microsoft's security intelligence by submitting false positives, and suspicious or known-bad IoCs for analysis. If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can submit a file to Microsoft for review. For more information, see [Submit files for analysis](https://www.microsoft.com/en-us/wdsi/filesubmission/).
 
@@ -70,7 +71,7 @@ See [Web protection](web-protection-overview.md) and [Web content filtering](web
 
 In some cases, creating a new indicator for a newly identified file IoC - as an immediate stop-gap measure - might be appropriate to block files or even applications. However, using indicators to attempt to block an application may not provide the expected results as applications are typically composed of many different files. The preferred methods of blocking applications are to use [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) or AppLocker.
 
-Because each version of an application has a different file hash, using indicators to block hashes is not recommended.  
+Because each version of an application has a different file hash, using indicators to block hashes isn't recommended.  
 
 [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create)
 
@@ -88,27 +89,27 @@ Currently, the supported Microsoft sources for IoCs are:
 
 ## Cloud detection engine
 
-The cloud detection engine of Defender for Endpoint regularly scans collected data and tries to match the indicators you set. When there is a match, action will be taken according to the settings you specified for the IoC.
+The cloud detection engine of Defender for Endpoint regularly scans collected data and tries to match the indicators you set. When there's a match, action is taken according to the settings you specified for the IoC.
 
 ## Endpoint prevention engine
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators are treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus prevents file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus won't detect nor block the file from being run.
 
 ## Automated investigation and remediation engine
 
-The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
+The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation treat it as "bad".
 
-The `EnableFileHashComputation` setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It will be concurrently enabled and disabled with the allow or block file setting. `EnableFileHashComputation` is enabled manually through Group Policy, and is disabled by default.
+The `EnableFileHashComputation` setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It is concurrently enabled with the allow or block file setting. `EnableFileHashComputation` is enabled manually through Group Policy, and is disabled by default.
 
 ## Enforcement types for Indicators 
 
 When creating a new indicator (IoC), one or more of the following actions are available:
 
-- **Allow** – the IoC will be allowed to run on your devices.
-- **Audit** – an alert will be triggered when the IoC runs.
-- **Warn** – the IoC will prompt a warning that the user can bypass
-- **Block execution** - the IoC will not be allowed to run.
-- **Block and remediate** - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
+- **Allow** – the IoC is allowed to run on your devices.
+- **Audit** – an alert is triggered when the IoC runs.
+- **Warn** – the IoC prompts a warning that the user can bypass
+- **Block execution** - the IoC won't be allowed to run.
+- **Block and remediate** - the IoC won't be allowed to run and a remediation action will be applied to the IoC.
 
 > [!NOTE]
 > Using Warn mode will prompt your users with a warning if they open a risky app or website. The prompt won't block them from allowing the application or website to run, but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need. For more information, see Govern apps discovered by Microsoft Defender for Endpoint.
@@ -129,7 +130,7 @@ The table below shows exactly which actions are available per indicator (IoC) ty
 | [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Warn <br> Block execution |
 | [Certificates](indicator-certificates.md) | Allow <br> Block and remediate |
 
-The functionality of pre-existing IoCs will not change. However, the indicators were renamed to match the current supported response actions:
+The functionality of pre-existing IoCs won't change. However, the indicators were renamed to match the current supported response actions:
 
 - The "alert only" response action was renamed to "audit" with the generate alert setting enabled.
 - The "alert and block" response was renamed to "block and remediate" with the optional generate alert setting.
@@ -142,9 +143,22 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 >
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
+## Known issues and limitations
+
+Customers may experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts may not be created or may be created with inaccurate information. Each of these issues are being investigated by our engineering team and will be resolved in an upcoming update.
+
+- **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (i.e. custom title and severity) will not be fired in these cases.
+- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers may see a generic alert, whereas a custom alert may show in other cases.
+- **Allow** – No alerts are generated (by design).
+- **Audit** - Alerts will be generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections may take precedence over those stemming from AV blocks, in which case an information alert will be generated.
+
 ## Related articles
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
+
+
+

@@ -31,9 +31,6 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
   
 For example, you can understand the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
 
-> [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
-
 ## How do I get to the OneDrive Activity report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 

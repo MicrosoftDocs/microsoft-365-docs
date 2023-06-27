@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/17/2019
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -34,13 +34,13 @@ Microsoft Purview Data Loss Prevention (DLP) policies can use classification pro
 
 ![Diagram showing Office 365 and external classification system.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-For example, your organization might use Windows Server FCI to identify items with personal data such as social security numbers, and then classify the document by setting the **Personally Identifiable Information** property to **High**, **Moderate**, **Low**, **Public**, or **Not PII** based on the type and number of occurrences of personal data found in the document.
+For example, your organization might use Windows Server FCI to identify items with personal data, such as social security numbers, and then classify those documents by setting the **Personally Identifiable Information** property to **High**, **Moderate**, **Low**, **Public**, or **Not PII** based on the type and number of occurrences of personal data found in each document.
 
-In Microsoft 365, you can create a DLP policy that identifies documents that have that property set to specific values, such as **High** and **Medium**, and then takes an action such as blocking access to those files. The same policy can have another rule that takes a different action if the property is set to **Low**, such as sending an email notification. In this way, DLP integrates with Windows Server FCI and can help protect Office documents uploaded or shared to Microsoft 365 from Windows Server-based file servers.
+In Microsoft 365, you can create a DLP policy that identifies documents that have that property set to specific values, such as **High** and **Medium**, and then takes an action such as blocking access to those files. The same policy can have another rule that takes a different action if the property is set to **Low**, such as sending an email notification. This way, DLP integrates with Windows Server FCI and can help protect Office documents uploaded or shared to Microsoft 365 from Windows Server-based file servers.
 
 A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy—for example, if you want a rule that blocks access to the document for guests when the **Customer** field contains **Contoso**.
 
-If you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, refer to l[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
+If you want to apply your DLP policy to content with specific Microsoft 365 labels, don't follow the steps here. Instead, refer to l[Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -48,26 +48,24 @@ If you want to apply your DLP policy to content with specific Microsoft 365 labe
 
 Before you can use a Windows Server FCI property or other property in a DLP policy, you need to create a managed property in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. Here's why.
 
-In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
+In SharePoint and OneDrive, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. (Examples of metadata are the author and the title of a document.) However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
 
 > [!NOTE]
-> Be sure to use a managed property name and not a crawled property name when creating DLP rules using the `ContentPropertyContainsWords` condition.
-
-This is important because DLP uses the search crawler to identify and classify sensitive information on your sites, and then store that sensitive information in a secure portion of the search index. When you upload a document to Office 365, SharePoint automatically creates crawled properties based on the document properties. But to use an FCI or other property in a DLP policy, that crawled property needs to be mapped to a managed property so that content with that property is kept in the index.
+> Be sure to use a managed property name, not a crawled property name, when creating DLP rules using the `ContentPropertyContainsWords` condition. This is important because DLP uses the search crawler to identify and classify sensitive information on your sites, and then stores that sensitive information in a secure portion of the search index. When you upload a document to Office 365, SharePoint automatically creates crawled properties based on the document properties. However, to use an FCI or other property in a DLP policy, that crawled property needs to be mapped to a managed property so that the content with that property is kept in the index.
 
 For more information on search and managed properties, see [Manage the search schema in SharePoint Online](/sharepoint/manage-search-schema).
 
 ### Step 1: Upload a document with the needed property to Office 365
 
-You first need to upload a document with the property that you want to reference in your DLP policy. Microsoft 365 will detect the property and automatically create a crawled property from it. In the next step, you'll create a managed property, and then map the managed property to this crawled property.
+First, you need to upload a document with the property that you want to reference in your DLP policy. Microsoft 365 will detect the property and automatically create a crawled property from it. In the next step, you'll create a managed property, and then map the managed property to this crawled property.
 
 ### Step 2: Create a managed property
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
+2. In the left navigation pane, choose **Admin centers** \> **SharePoint**. You're now in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
-3. In the left navigation, choose **search** \> on the **search administration** page \> **Manage Search Schema**.
+3. In the left navigation pane, choose **search**. On the **search administration** page, choose **Manage Search Schema**.
 
    ![search administration page in SharePoint admin center.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
@@ -81,19 +79,19 @@ You first need to upload a document with the property that you want to reference
 
 7. Under **Main characteristics**, select **Queryable** and **Retrievable**.
 
-8. Under **Mappings to crawled properties** \> **Add a mapping**.
+8. Under **Mappings to crawled properties** choose **Add a mapping**.
 
-9. In the **crawled property selection** dialog box \> find and select the crawled property that corresponds to the Windows Server FCI property or other property that you will use in your DLP policy \> **OK**.
+9. In the **crawled property selection** dialog box, find and select the crawled property that corresponds to the Windows Server FCI property or other property that you will use in your DLP policy, then choose **OK**.
 
    ![crawled property selection dialog box.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
-10. At the bottom of the page \> **OK**.
+10. At the bottom of the page choose **OK**.
 
 ## Create a DLP policy that uses an FCI property or other property
 
 In this example, an organization is using FCI on its Windows Server-based file servers; specifically, they're using the FCI classification property named **Personally Identifiable Information** with possible values of **High**, **Moderate**, **Low**, **Public**, and **Not PII**. Now they want to use their existing FCI classification in their DLP policies in Office 365.
 
-First, they follow the steps above to create a managed property in SharePoint Online, which maps to the crawled property created automatically from the FCI property.
+To begin, they follow the steps above to create a managed property in SharePoint Online, which maps to the crawled property created automatically from the FCI property.
 
 Next, they create a DLP policy with two rules that both use the condition **Document properties contain any of these values**:
 
@@ -101,7 +99,7 @@ Next, they create a DLP policy with two rules that both use the condition **Docu
 
 - **FCI PII content - Low** The second rule sends a notification to the document owner if the FCI classification property **Personally Identifiable Information** equals **Low** and the document is shared with people outside the organization.
 
-### Create the DLP policy by using Security & Compliance PowerShell
+<!-- ### Create the DLP policy by using Security & Compliance PowerShell
 
 The condition **Document properties contain any of these values** is temporarily not available in the Microsoft Purview compliance portal, but you can still use this condition in Security & Compliance PowerShell. You can use the `New\Set\Get-DlpCompliancePolicy` cmdlets to work with a DLP policy, and use the `New\Set\Get-DlpComplianceRule` cmdlets with the `ContentPropertyContainsWords` parameter to add the condition **Document properties contain any of these values**.
 
@@ -131,14 +129,16 @@ One rule blocks access to content where the **Personally Identifiable Informatio
 
 ![New DLP policy dialog showing two rules just created.](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
 
+-->
+
 ## After you create the DLP policy
 
-Doing the steps in the previous sections will create a DLP policy that will quickly detect content with that property, but only if that content is newly uploaded (so that the content's indexed), or if that content is old but just edited (so that the content's re-indexed).
+Completing the steps in the previous sections creates a DLP policy that will quickly detect content with that property, but only if that content is newly uploaded (so that the content's indexed), or if that content is old but just edited (so that the content's re-indexed).
 
-To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
+To detect content with that property everywhere, you'll need to have your library, site, or site collection re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint, content is automatically crawled when content is edited. Specific SharePoint sites can't be manually re-indexed. 
 
 > [!CAUTION]
-> Re-indexing a site can cause a massive load on the search system. Don't re-index your site unless your scenario absolutely requires it.
+> Re-indexing a site for DLP scenarios is not possible.
 
 For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 

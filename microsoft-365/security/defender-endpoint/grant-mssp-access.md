@@ -27,7 +27,6 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
@@ -54,9 +53,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 2. Create Defender for Endpoint roles for appropriate access levels in Customer Defender for Endpoint.
 
-    To enable RBAC in the customer Microsoft 365 Defender portal, access **Settings > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
-
-    :::image type="content" source="images/mssp-access.png" alt-text="MSSP access" lightbox="images/mssp-access.png":::
+    To enable RBAC in the customer Microsoft 365 Defender portal, access **Settings > Endpoints > Permissions > Roles** and "Turn on roles", from a user account with Global Administrator or Security Administrator rights.
 
     Then, create RBAC roles to meet MSSP SOC Tier needs. Link these roles to the created user groups via "Assigned user groups".
 

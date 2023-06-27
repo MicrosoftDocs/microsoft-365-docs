@@ -31,6 +31,8 @@ ms.date: 09/28/2022
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -173,7 +175,7 @@ The following are the solution's categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
+|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft 365 Defender dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content

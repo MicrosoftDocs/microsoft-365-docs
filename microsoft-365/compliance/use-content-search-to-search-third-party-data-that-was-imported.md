@@ -25,10 +25,10 @@ ms.custom: seo-marvel-apr2020
 
 You can use the [Content search eDiscovery tool](ediscovery-content-search.md) in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
   
-For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).
+For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](archive-partner-third-party-data.md).
 
 > [!IMPORTANT]
-> The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
+> The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archive-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
   
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -40,7 +40,7 @@ To search (or place on hold) any type of third-party data that you've imported t
 kind:externaldata AND subject:contoso
 ```
 
-The previous keyword query example includes the subject property. For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
+The previous keyword query example includes the subject property. For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in [Work with a partner to archive third-party data in Office 365](archive-partner-third-party-data.md#more-information).
   
 When creating queries to search and hold third-party data, you can also use conditions to narrow the search results. For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
   

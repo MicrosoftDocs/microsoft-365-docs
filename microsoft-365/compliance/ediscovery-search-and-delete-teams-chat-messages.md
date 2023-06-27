@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/24/2023
+ms.date: 05/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,7 +29,11 @@ You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for 
 ## Before you search and purge chat messages
 
 - To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the *eDiscovery Manager* role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the *Search And Purge* role. This role is assigned to the *Data Investigator* and *Organization Management* role groups by default. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
-- Search and purge are supported for conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
+- Search and purge are supported for most conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
+
+    > [!IMPORTANT]
+    > Chats with yourself (or chats by users with themselves) aren't supported for search and purge.
+
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
 ## Search and purge workflow
@@ -44,7 +48,7 @@ The first step is to create a case in eDiscovery (Premium) to manage the search 
 
 ## Step 2: Create a collection estimate
 
-After you create a case, the next step is to create a collection estimate to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 will purge all items that are found in the collection estimate.
+After you create a case, the next step is to create a collection estimate to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 purges all items that are found in the collection estimate (within the 10 item per location limit).
 
 In eDiscovery (Premium), a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the collection estimate in the case that you created in the previous step. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
@@ -89,9 +93,9 @@ For instructions about how to identify and remove holds and retention policies, 
 ## Step 5: Purge chat messages from Teams
 
 > [!NOTE]
-> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks. See the [Purge chat messages with PowerShell](#purge-chat-messages-with-powershell) for details.
+> Because Microsoft Graph Explorer is not available in some US Government clouds (GCC High and DOD), you must use PowerShell to accomplish these tasks. See the [Purge chat messages with PowerShell](#purge-chat-messages-with-powershell) for details.
 
-Now you're ready to actually purge chat messages from Teams. You'll use the Microsoft Graph Explorer to perform the following three tasks:
+Now you're ready to actually purge chat messages from Teams. Use the Microsoft Graph Explorer to perform the following three tasks:
 
 1. Get the ID of the eDiscovery (Premium) case that you created in Step 1. This is the case that contains the collection created in Step 2.
 2. Get the ID of the collection that you created in Step 2 and verified the search results in Step 3. The search query in this collection returns the chat messages that will be purged.
@@ -108,13 +112,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
-   ![GET request for case Id.](..\media\ediscovery-GraphGetRequestForCaseId.png)
-
    This request returns information about all cases in your organization on the **Response preview** tab.
 
 3. Scroll through the response to locate the eDiscovery (Premium) case. Use the **displayName** property to identify the case.
-
-   ![Response with case Id.](..\media\GraphResponseForCaseId.png)
 
 4. Copy the corresponding ID (or copy and paste it to a text file). You'll use this ID in the next task to get the collection ID.
 
@@ -123,11 +123,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the eDiscoverySearchID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases{'ediscoverySearchID'}/searches` in the address bar of the request query, where *{ediscoverySearchID}* is the ID that you obtained in the previous procedure.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/searches` in the address bar of the request query, where *{ediscoveryCaseID}* is the CaseID that you obtained in the previous procedure.
 
 2. Scroll through the response to locate the collection that contains the items that you want to purge. Use the *displayName* property to identify the collection that you created in Step 3.
-
-   ![Response with collection Id.](..\media\GraphResponseForCollectionId.png)
 
    In the response, the search query from the collection is displayed in the *contentQuery* property. Items returned by this query will be purged in the next task.
 
@@ -138,9 +136,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{'ediscoveryCaseID'}/searches/{'ediscoverySearchID'}/purgeData` in the address bar of the request query, where *{ediscoveryCaseID}* and *{ediscoverySearchID}* are the IDs that you obtained in the previous procedures.
-
-      ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/searches/{ediscoverySearchID}/purgeData` in the address bar of the request query, where *{ediscoveryCaseID}* and *{ediscoverySearchID}* are the IDs that you obtained in the previous procedures.
 
    If the POST request is successful, an HTTP response code is displayed in a green banner stating that the request was accepted.
 
@@ -182,10 +178,9 @@ Admins can use the procedures in this article to search and delete Teams chat me
 - If a conversation thread has users in two organizations, purged chat messages are removed from the Teams client in both organizations.
 - The only way to purge chat messages from user mailboxes in your organization for chat messages in conversation threads owned by another organization is to use retention policies for Teams. For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
-
 ## End-user experience
 
-For deleted chat messages, users will see an automatically generated message stating "This message was deleted by an admin".
+For deleted chat messages, users see an automatically generated message stating "This message was deleted by an admin".
 
 ![View of purged chat message in Teams client.](..\media\TeamsPurgeTombstone.png)
 

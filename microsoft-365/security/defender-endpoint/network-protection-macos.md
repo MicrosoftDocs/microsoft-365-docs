@@ -40,23 +40,32 @@ Microsoft Network protection helps reduce the attack surface of your devices fro
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Availability
 
-Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 with target completion, subject to change, in May 2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices that meet the minimum requirements. All of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
 
-To prepare for the macOS network protection rollout, we recommend the following:
+To roll out Network Protection for macOS, we recommend the following:
 
-- For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices.
-- Verify the Network Protection configuration on your macOS devices is set to the desired state.
-- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement policies which target those macOS devices where Network Protection is in Block mode.
+- Create a device group for a small set of devices that you can use to test Network Protection.
+- Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies that target those macOS devices where Network Protection is in Block mode.
+- Deploy an audit or block mode policy to this device group and verify there are no issues or broken workstreams.
+- Gradually deploy Network Protection to a larger set of devices until completely rolled out.
 
-## New and updated capabilities
+## Current capabilities
 
-- You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
-  - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Apps or Custom Indicators currently also require network protection.
+- Custom Indicators of Compromise on Domains and IPs.
+- Web Content Filtering support:
+  - Block website categories scoped to device groups through policies created in the MDEP portal.
+  - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
+- Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
+- Microsoft Defender for Cloud Apps:
+  - Shadow IT discovery - Identify which apps are being used in your organization.
+  - Block applications - Block entire applications (such as Slack and Facebook) from being used in your organization.
+- Corporate VPN in tandem or side-by-side with Network Protection: 
+  - Currently, no VPN conflicts are identified. 
+  - If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
 
 ### Known issues
 
@@ -70,11 +79,11 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 > [!NOTE]
 >
-> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection will provide this protection to Microsoft Edge for macOS as well if network protection is enabled.
+> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection will provide this protection to Microsoft Edge for macOS if network protection is enabled.
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
+- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.94.13 or later
@@ -291,7 +300,7 @@ The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you wo
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender for Endpoint Security Center under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
+Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
 
 :::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 
@@ -353,3 +362,5 @@ No End-user notification on third party browsers? Check your toast message setti
 - [Web protection](web-protection-overview.md)
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
+
+

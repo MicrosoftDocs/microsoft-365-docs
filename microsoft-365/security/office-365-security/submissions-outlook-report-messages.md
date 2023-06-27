@@ -1,5 +1,5 @@
 ---
-title: Report false positives and false negatives in Outlook
+title: Report phishing and suspicious emails in Outlook for admins
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -11,62 +11,53 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn how to report false positives and false negatives in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
+description: Learn how to report phishing and suspicious emails in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 12/05/2022
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
-# Report false positives and false negatives in Outlook
+# Report phishing and suspicious emails in Outlook for admins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-In Microsoft 365 organizations with mailboxes in Exchange Online or in on-premises mailboxes that use hybrid modern authentication, users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
-
-Admins configure user reported messages to go to a designated reporting mailbox, to Microsoft, or both. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or in on-premises mailboxes that use hybrid modern authentication, users can report phishing and suspicious email in Outlook. Users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
 
 Microsoft provides the following tools for users to report good and bad messages:
 
 - Built-in reporting in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
+- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
-> [!NOTE]
-> Admins in Microsoft 365 organizations with Exchange Online mailboxes use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. For instructions, see [Use the Submissions page to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
->
-> Admins can view reported messages on the **Submissions** page at <https://security.microsoft.com/reportsubmission> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
->
-> - The toggle on the **User reported** page is **On** ![Toggle on.](../../media/scc-toggle-on.png).
-> - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected.
+Admins configure user reported messages to go to a specified reporting mailbox, to Microsoft, or both. These user reported messages are available on the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender Portal. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ## Use the built-in Report button in Outlook on the web
 
-> [!NOTE]
->
-> - The built-in **Report** button is available in Outlook on the web **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
->   - The toggle on the **User reported** page is **On** ![Toggle on.](../../media/scc-toggle-on.png).
->   - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected.
->
->   If the toggle is **Off** ![Toggle off.](../../media/scc-toggle-off.png) or if **Use a non-Microsoft add-in button** is selected, then the **Report** button is not available in Outlook on the web.
->
-> - Currently, the **Report** button in Outlook on the web does not honor the **Before a message is reported** and **After a message is reported** settings (notification pop-ups) in the [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+- The built-in **Report** button is available in Outlook on the web *only* if user reporting is turned on *and* the built-in **Report** button in Outlook (not a non-Microsoft add-in button) are configured in the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) at <https://security.microsoft.com/securitysettings/userSubmission>:
+
+  If user reporting is turned off and a non-Microsoft add-in button is selected, the **Report** button isn't available in Outlook on the web.
+
+- Currently, the **Report** button in Outlook on the web doesn't honor the before and after notification pop-up options in the user reported settings.
+
+- Built-in reporting in Outlook on the web supports reporting messages from shared mailboxes or other mailboxes by a delegate.
+  - Shared mailboxes require Send As or Send On Behalf permission for the user.
+  - Other mailboxes require Send As or Send On Behalf permission _and_ Read and Manage permissions for the delegate.
 
 ### Use the built-in Report button in Outlook on the web to report junk and phishing messages
 
-- You can report a message as junk from the Inbox or any email folder other than Junk Email folder.
-- You can report a message as phishing from any email folder.
+- Users can report a message as junk from the Inbox or any email folder other than Junk Email folder.
+- Users can report a message as phishing from any email folder.
 
-In Outlook on the web, select one or more messages, click **Report**, and then select **Report phishing** or **Report junk** in the dropdown list.
+In Outlook on the web, select one or more messages, select **Report**, and then select **Report phishing** or **Report junk** in the dropdown list.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/owa-report-junk-phishing.png" alt-text="The results of clicking the Report button after selecting multiple messages in Outlook on the web." lightbox="../../media/owa-report-junk-phishing.png":::
+> :::image type="content" source="../../media/owa-report-junk-phishing.png" alt-text="The results of selecting the Report button after selecting multiple messages in Outlook on the web." lightbox="../../media/owa-report-junk-phishing.png":::
 
 Based on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The following actions are also taken on the reported messages in the mailbox:
 
@@ -75,41 +66,40 @@ Based on the [User reported settings](submissions-user-reported-messages-custom-
 
 ### Use the built-in Report button in Outlook on the web to report messages that aren't junk
 
-In Outlook on the web, select one or more messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
+In Outlook on the web, select one or more messages in the Junk Email folder, select **Report**, and then select **Not junk** in the dropdown list.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of clicking the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
+> :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of selecting the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
 
 Based on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox.
 
 ## Use the Report Message and Report Phishing add-ins in Outlook
 
-> [!NOTE]
->
-> - The procedures in this section require the Microsoft Report Message or Report Phishing add-ins to be installed. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md) installed.
-> - The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](submissions-users-report-message-add-in-configure.md#what-do-you-need-to-know-before-you-begin).
+- The procedures in this section require the Microsoft Report Message or Report Phishing add-ins. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md) installed.
+
+- The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](submissions-users-report-message-add-in-configure.md#what-do-you-need-to-know-before-you-begin).
 
 ### Use the Report Message add-in to report junk and phishing messages in Outlook
 
-- You can report a message as junk from the Inbox or any email folder other than the Junk Email folder.
-- You can report a message as phishing from any email folder.
+- Users can report a message as junk from the Inbox or any email folder other than the Junk Email folder.
+- Users can report a message as phishing from any email folder.
 
 1. In Outlook, do one of the following steps:
    - Select an email message from the list.
    - Open a message.
 2. Do one of the following steps based on your **Ribbon Layout** configuration in Outlook:
 
-   - **Classic Ribbon**: Click **Report Message**, and then select **Junk** or **Phishing** in the dropdown list.
+   - **Classic Ribbon**: Select **Report Message**, and then select **Junk** or **Phishing** in the dropdown list.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/OutlookReportMessage-classic-expanded.png" alt-text="Select a message and then click the Report Message button in the Classic Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-classic-expanded.png":::
+     > :::image type="content" source="../../media/OutlookReportMessage-classic-expanded.png" alt-text="Select a message and then select the Report Message button in the Classic Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-classic-expanded.png":::
 
-   - **Simplified Ribbon**: Click ![More commands icon.](../../media/m365-cc-sc-more-actions-icon.png) **More commands** \> **Protection** section \> **Report Message** \> select **Junk** or **Phishing**.
+   - **Simplified Ribbon**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More commands** \> **Protection** section \> **Report Message** \> select **Junk** or **Phishing**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/OutlookReportMessage-simplified-expanded.png" alt-text="Select a message and then click the Report Message button in the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified-expanded.png":::
+     > :::image type="content" source="../../media/OutlookReportMessage-simplified-expanded.png" alt-text="Select a message and then select the Report Message button in the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified-expanded.png":::
 
-Based on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The following actions are also taken on the reported messages in the mailbox:
+Based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The following actions are also taken on the reported messages in the mailbox:
 
 - **Reported as junk**: The messages are moved to the Junk Email folder.
 - **Reported as phishing**: The messages are deleted.
@@ -119,36 +109,36 @@ Based on the [User reported settings](submissions-user-reported-messages-custom-
 1. In Outlook, open a message in the Junk Email folder.
 2. Do one of the following steps based on your **Ribbon Layout** configuration in Outlook:
 
-   - **Classic Ribbon**: Click **Report Message**, and then select **Not Junk** in the dropdown list.
+   - **Classic Ribbon**: Select **Report Message**, and then select **Not Junk** in the dropdown list.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/OutlookReportMessage-classic-expanded.png" alt-text="Select a message in the Junk Email folder, and then click the Report Message button in the Classic Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-classic-expanded.png":::
+     > :::image type="content" source="../../media/OutlookReportMessage-classic-expanded.png" alt-text="Select a message in the Junk Email folder, and then select the Report Message button in the Classic Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-classic-expanded.png":::
 
-   - **Simplified Ribbon**: Click ![More commands icon.](../../media/m365-cc-sc-more-actions-icon.png) **More commands** \> **Protection** section \> **Report Message** \> select **Not Junk**.
+   - **Simplified Ribbon**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More commands** \> **Protection** section \> **Report Message** \> select **Not Junk**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/OutlookReportMessage-simplified-expanded.png" alt-text="Select a message in the Junk Email folder, and then click the Report Message button in the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified-expanded.png":::
+     > :::image type="content" source="../../media/OutlookReportMessage-simplified-expanded.png" alt-text="Select a message in the Junk Email folder, and then select the Report Message button in the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified-expanded.png":::
 
-Based on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox.
+Based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also moved out of Junk Email to the Inbox.
 
 ### Use the Report Phishing add-in to report phishing messages in Outlook
 
-You can report phishing messages from any email folder.
+Users can report phishing messages from any email folder.
 
 1. In Outlook, do one of the following steps:
    - Select an email message from the list.
    - Open a message.
 2. Do one of the following steps based on your **Ribbon Layout** configuration in Outlook:
 
-   - **Classic Ribbon**: Click **Report Phishing**.
+   - **Classic Ribbon**: Select **Report Phishing**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/Outlook-ReportPhishing.png" alt-text="Select a message and then click the Report Phishing button in the Classic Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing.png":::
+     > :::image type="content" source="../../media/Outlook-ReportPhishing.png" alt-text="Select a message and then select the Report Phishing button in the Classic Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing.png":::
 
-   - **Simplified Ribbon**: Click ![More commands icon.](../../media/m365-cc-sc-more-actions-icon.png) **More commands** \> **Protection** section \> **Phishing**
+   - **Simplified Ribbon**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More commands** \> **Protection** section \> **Phishing**
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/Outlook-ReportPhishing-simplified.png" alt-text="Select a message and then click the Report Phishing button in the Simplified Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing-simplified.png":::
+     > :::image type="content" source="../../media/Outlook-ReportPhishing-simplified.png" alt-text="Select a message and then select the Report Phishing button in the Simplified Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing-simplified.png":::
 
 Based on the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in your organization, the messages are sent to the reporting mailbox, to Microsoft, or both. The messages are also deleted.
 

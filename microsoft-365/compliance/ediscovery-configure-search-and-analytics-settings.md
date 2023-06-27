@@ -1,12 +1,12 @@
 ---
-title: Configure search and analytics settings - eDiscovery (Premium)
+title: Configure search and analytics settings for eDiscovery (Premium) cases
 description: "Configure Microsoft Purview eDiscovery (Premium) settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -21,9 +21,9 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 ---
 
-# Configure search and analytics settings in eDiscovery (Premium)
+# Configure search and analytics settings for eDiscovery (Premium) cases
 
-You can configure settings for each Microsoft Purview eDiscovery (Premium) case to control the following functionality.
+You can configure settings for each Microsoft Purview eDiscovery (Premium) case to control the following functionality:
 
 - Near duplicates and email threading
 - Themes
@@ -31,19 +31,18 @@ You can configure settings for each Microsoft Purview eDiscovery (Premium) case 
 - Ignore text
 - Optical character recognition
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Configure analytics settings for a case
+
 To configure search and analytics settings for a case:
 
 1. On the **eDiscovery (Premium)** page, select the case.
+2. On the **Settings** tab, under **Search & analytics**, choose **Select**. The case settings page is displayed. These settings are applied to all review sets in a case.
 
-2. On the **Settings** tab, under **Search & analytics**, select **Select**.
+The following sections in this article describe the analytics settings that you can configure for a case.
 
-   The case settings page is displayed. These settings are applied to all review sets in a case.
-
-   ![Configure analytics and search settings for an eDiscovery (Premium) case.](../media/AeDCaseSettings.png)
-
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-## Near duplicates and email threading
+### Near duplicates and email threading
 
 In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](ediscovery-near-duplicate-detection.md) and [Email threading](ediscovery-email-threading.md).
 
@@ -51,7 +50,7 @@ In this section, you can set parameters for duplicate detection, near duplicate 
 - **Document and email similarity threshold:** If the similarity level for two documents is above the threshold, both documents are put in the same near duplicate set.
 - **Minimum/maximum number of words:** These settings specify that near duplicates and email threading analysis are performed only on documents that have at least the minimum number of words and at most the maximum number of words.
 
-## Themes
+### Themes
 
 In this section, you can set parameters for themes. For more information, see [Themes](ediscovery-themes.md).
 
@@ -60,7 +59,7 @@ In this section, you can set parameters for themes. For more information, see [T
 - **Include numbers in themes:** When turned on, numbers (that identifies a theme) are included when generating themes.
 - **Adjust maximum number of themes dynamically:** In certain situations, there may not be enough documents in a review set to produce the desired number of themes. When this setting is enabled, eDiscovery (Premium) adjusts the maximum number of themes dynamically rather than attempting to enforce the maximum number of themes.
 
-## Review set query
+### Review set query
 
 If you select the **Automatically create a For Review saved search after analytics** checkbox, eDiscovery (Premium) autogenerates review set query named **For Review.** 
 
@@ -68,11 +67,11 @@ If you select the **Automatically create a For Review saved search after analyti
 
 This query basically filters out duplicate items from the review set. This lets you review the unique items in the review set. This query is created only when you run analytics for a review set in the case. For more information, about review set queries, see [Query the data in a review set](ediscovery-review-set-search.md).
 
-## Ignore text
+### Ignore text
 
 There are situations where certain text will diminish the quality of analytics, such as lengthy disclaimers that get added to email messages regardless of the content of the email. If you know of text that should be ignored, you can exclude it from analytics by specifying the text string and the analytics functionality (Near-duplicates, Email threading, Themes, and Relevance) that the text should be excluded for. Using regular expressions (RegEx) as ignored text is also supported.
 
-## Optical character recognition (OCR)
+### Optical character recognition (OCR)
 
 When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
 

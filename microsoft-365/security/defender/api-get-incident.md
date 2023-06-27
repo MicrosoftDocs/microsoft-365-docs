@@ -94,6 +94,6 @@ Here's an example of the request.
 ```http
 GET https://api.security.microsoft.com/api/incidents/{id}
 ```
-## Related topics
+## Related articles
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

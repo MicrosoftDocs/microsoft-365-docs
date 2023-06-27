@@ -25,6 +25,8 @@ ms.date: 12/18/2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -81,7 +83,7 @@ This section describes what is considered required diagnostic data and what is c
 
 ### Data fields that are common for all events
 
-There is some information about events that is common to all events, regardless of category or data subtype.
+There's some information about events that is common to all events, regardless of category or data subtype.
 
 The following fields are considered common for all events:
 
@@ -136,7 +138,7 @@ The following fields are collected:
 |edr.early_preview|Whether the device should run EDR early preview features.|
 |edr.group_id|Group identifier used by the detection and response component.|
 |edr.tags|User-defined tags.|
-|features.\[optional feature name\]|List of preview features, along with whether they are enabled or not.|
+|features.\[optional feature name\]|List of preview features, along with whether they're enabled or not.|
 
 #### Product and service usage data events
 
@@ -167,7 +169,7 @@ The following fields are collected:
 |subsystem|The underlying subsystem used for real-time protection.|
 |ipc.connects|Number of connection requests received by the kernel extension.|
 |ipc.rejects|Number of connection requests rejected by the kernel extension.|
-|ipc.connected|Whether there is any active connection to the kernel extension.|
+|ipc.connected|Whether there's any active connection to the kernel extension.|
 
 #### Support data
 

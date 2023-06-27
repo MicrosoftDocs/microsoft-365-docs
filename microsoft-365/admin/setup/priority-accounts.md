@@ -3,7 +3,7 @@ title: "Manage and monitor priority accounts"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 06/10/2020
 audience: Admin
@@ -54,19 +54,17 @@ The **Premium Mail Flow Monitoring** feature that's described in this topic is a
 
 When you apply priority account protection to a mailbox, you should also apply priority account protection to users who have access to the mailbox (for example, the CEO and the CEO's executive assistant who manages the CEO's calendar).
 
-### Add priority accounts from the Setup page
+### Add priority accounts from the Microsoft 365 Defender page
 
-Add priority accounts from the **Setup page**.
+Add priority accounts from the **Microsoft 365 Defender page**.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to  Microsoft 365 Defender at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
 
-2. Go to **Setup** > **Organizational knowledge**, and choose **View** under **Monitor your most important accounts**.
+2. Go to **Settings** > **Email and Collaboration** > **User Tags** > **Create**.
 
-3. Select **Get Started** or **Manage**.
+3. The priority account tag is already created for you by default. By selecting **Edit** you can add users to the priority tag. Then, **Add members** > **Add** to add members to the priority account.
 
-4. On the **Add Priority accounts** page, in the search field, type the name or email address of the person you want to add to the priority accounts list. You can also set your email threshold for failed or delayed emails and get a weekly report of issues for priority accounts.
-
-5. Select the user and choose **Save**.
+5. Select **Next** and  **Submit**.
 
 You can also add priority accounts from the Active users page.
 

@@ -18,25 +18,24 @@ ms.custom:
 description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Manage incidents and alerts from Microsoft Defender for Office 365 in Microsoft 365 Defender
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/microsoft-365/compliance/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We refer to this page as the _Incidents queue_.
 
-An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/microsoft-365/compliance/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We'll refer to this page as the _Incidents queue_.
-
-Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts will automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
+Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
 
 Watch this short video on how to manage Microsoft Defender for Office 365 alerts in Microsoft 365 Defender.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrL2]
 
-Defender for Office 365 alerts, investigations, and their data are automatically correlated. When a relationship is determined, an incident is created by the system to give security teams visibility for the entire attack.
+Defender for Office 365 alerts, investigations, and their data are automatically correlated. When a relationship is determined, the system creates an incident to give security teams visibility for the entire attack.
 
 We strongly recommend that SecOps teams manage incidents and alerts from Defender for Office 365 in the Incidents queue at <https://security.microsoft.com/incidents-queue>. This approach has the following benefits:
 
@@ -58,7 +57,7 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 
 - Related Defender for Office 365 alerts, AIR investigations, and pending actions from investigations are automatically added to incidents.
 
-- If the AIR investigation finds no threat, the related alerts are automatically resolved by the system. If all alerts within an incident are resolved, the incident status also changes to **Resolved**.
+- If the AIR investigation finds no threat, the system automatically resolves the related alerts If all alerts within an incident are resolved, the incident status also changes to **Resolved**.
 
 - Related evidence and response actions are automatically aggregated on the **Evidence and response** tab of the incident.
 
@@ -66,7 +65,7 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 
 - Recommended email actions are created only when the latest delivery location of a malicious email is a cloud mailbox.
 
-- Pending email actions are updated based on the latest delivery location. If the email was already remediated by a manual action, the status will reflect that.
+- Pending email actions are updated based on the latest delivery location. If the email was already remediated by a manual action, the status reflects that.
 
 - Recommended actions are created only for email and email clusters that are determined to be the most critical threats:
   - Malware
@@ -79,21 +78,21 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 
 Manage incidents on the **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue>:
 
-![Incidents page in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incidents.png)
+:::image type="content" source="../../media/mdo-sec-ops-incidents.png" alt-text="Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incidents.png":::
 
-![Details flyout on the Incidents page in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incident-details.png)
+:::image type="content" source="../../media/mdo-sec-ops-incident-details.png" alt-text="Details flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-details.png":::
 
-![Filter flyout on the Incidents page in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incident-filters.png)
+:::image type="content" source="../../media/mdo-sec-ops-incident-filters.png" alt-text="Filter flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-filters.png":::
 
-![Summary tab of the incident details in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incident-summary-tab.png)
+:::image type="content" source="../../media/mdo-sec-ops-incident-summary-tab.png" alt-text="Summary tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-summary-tab.png":::
 
-![Evidence and alerts tab of the incident details in the Microsoft 365 Defender portal.](../../media/mdo-sec-ops-incident-evidence-and-response-tab.png)
+:::image type="content" source="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png" alt-text="Evidence and alerts tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png":::
 
 Manage incidents on the **Incidents** page in Microsoft Sentinel at <https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel>:
 
-![Incidents page in Microsoft Sentinel.](../../media/mdo-sec-ops-microsoft-sentinel-incidents.png)
+:::image type="content" source="../../media/mdo-sec-ops-microsoft-sentinel-incidents.png" alt-text="Incidents page in Microsoft Sentinel." lightbox="../../media/mdo-sec-ops-microsoft-sentinel-incidents.png":::
 
-![Incident details page in Microsoft Sentinel.](../../media/mdo-sec-ops-microsoft-sentinel-incident-details.png)
+:::image type="content" source="../../media/mdo-sec-ops-microsoft-sentinel-incident-details.png" alt-text="Incident details page in Microsoft Sentinel." lightbox="../../media/mdo-sec-ops-microsoft-sentinel-incident-details.png":::
 
 ## Response actions to take
 
@@ -118,9 +117,9 @@ Security teams can take wide variety of response actions on email using Defender
 
 - You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
-Defender for Office 365 actions are seamlessly integrated into hunting experiences and the history of actions are visible on the **History** tab in the unified **Action center** at <https://security.microsoft.com/action-center/history>.
+Actions in Defender for Office 365 are seamlessly integrated into hunting experiences and the history of actions are visible on the **History** tab in the unified **Action center** at <https://security.microsoft.com/action-center/history>.
 
-The most effective way to take action is to use the built-in integration with Incidents in Microsoft 365 Defender. You can simply approve the actions that were recommended by AIR in Defender for Office 365 on the [Evidence and response](/microsoft-365/security/defender/investigate-incidents#evidence-and-response) tab of an Incident in Microsoft 365 Defender. This method of tacking action is recommended for the following reasons:
+The most effective way to take action is to use the built-in integration with Incidents in Microsoft 365 Defender. You can approve the actions that were recommended by AIR in Defender for Office 365 on the [Evidence and response](/microsoft-365/security/defender/investigate-incidents#evidence-and-response) tab of an incident in Microsoft 365 Defender. This method of tacking action is recommended for the following reasons:
 
 - You investigate the complete attack story.
 - You benefit from the built-in correlation with other workloads: Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps.

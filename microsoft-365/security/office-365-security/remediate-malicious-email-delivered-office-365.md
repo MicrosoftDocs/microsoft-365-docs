@@ -15,17 +15,16 @@ search.appverid: MET150
 description: Threat remediation
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Remediate malicious email delivered in Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-
-Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 Plan 2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
+Remediation means to take a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 Plan 2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
 > To remediate malicious email, security teams need the *Search and Purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
@@ -101,14 +100,14 @@ Open any remediation item to view details about it, including its remediation na
 
   If your organization's retention period for email in Explorer is 30 days and you're remediating emails going back 29-30 days, mail submission counts may not always add up. The emails might have started moving out of the retention period already.
 
-  If remediations are stuck in the "In progress" state for a while, it's likely due to system delays. It could take up to a few hours to remediate. You might see variations in mail submission counts, as some of the emails may not have been included the query at the start of remediation due to system delays. It is a good idea to retry remediating in such cases.
+  If remediations are stuck in the "In progress" state for a while, it's likely due to system delays. It could take up to a few hours to remediate. You might see variations in mail submission counts, as some of the emails may not have been included the query at the start of remediation due to system delays. It's a good idea to retry remediating in such cases.
 
   > [!NOTE]
   > For best results, remediation should be done in batches of 50,000 or fewer.
 
   Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-  Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. By default, emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
+  Admins can take actions on emails in quarantine if necessary, but those emails expire out of quarantine if they're not manually purged. By default, emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
 
 - **Action logs**: This shows the messages remediated, successful, failed, already in destination.
 
@@ -126,11 +125,11 @@ Open any remediation item to view details about it, including its remediation na
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
-  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one that are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
+  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one that are already soft deleted. Now these emails won't be acted upon again, they'll just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
-  - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Threat Explorer to signal if the mail has already been remediated. *Already in destination* will help security teams understand the total number of messages that still need to be addressed.
+  - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Threat Explorer to signal if the mail has already been remediated. *Already in destination* helps security teams understand the total number of messages that still need to be addressed.
 
-Actions can only be taken on messages in Inbox, Junk, Deleted, and Soft Deleted folders of Threat Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message will be handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
+Actions can only be taken on messages in Inbox, Junk, Deleted, and Soft Deleted folders of Threat Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message is handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
 
 Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a system error during remediation. In those cases, it's a good idea to retry the remediation action.
 

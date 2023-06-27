@@ -34,8 +34,6 @@
               items:
                 - name: Apply a model
                   href: apply-a-model.md
-                - name: Choose a library view 
-                  href: choose-library-view.md
                 - name: Share an enterprise model 
                   href: model-discovery.md
                 - name: Discover other trained models 
@@ -48,6 +46,10 @@
                   href: rename-a-model.md
                 - name: Delete a model
                   href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
                 - name: Manage models with PowerShell
@@ -110,6 +112,8 @@
       items:
             - name: Overview 
               href: prebuilt-overview.md
+            - name: Use a contracts model 
+              href: prebuilt-model-contract.md
             - name: Use an invoices model 
               href: prebuilt-model-invoice.md
             - name: Use a receipts model 
@@ -123,6 +127,8 @@
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
           href: content-assembly-map-fields.md
+        - name: Create conditional sections in templates
+          href: content-assembly-conditional-sections.md
         - name: Edit a modern template
           href: content-assembly-edit-template.md
         - name: Create a document from a modern template 
@@ -139,9 +145,12 @@
 
     - name: Content query
       href: metadata-search.md
-     
+
     - name: Annotations
       href: annotations.md
+
+    - name: Optical character recognition 
+      href: ocr.md
 
     - name: Taxonomy
       items:
@@ -159,11 +168,30 @@
         - name: Get started with adoption
           href: adoption-getstarted.md
         - name: Scenarios and use cases
-          href: adoption-scenarios.md 
+          items:
+            - name: Overview
+              href: adoption-scenarios.md 
+            - name: Site template solutions
+              href: site-templates.md 
+            - name: Generate routine documents
+              href: scenario-generate-routine-documents.md 
+            - name: Generate documents in bulk
+              href: scenario-generate-documents-bulk.md 
+            - name: Handle incoming documents
+              href: scenario-handle-incoming-documents.md
+            - name: Make information easier to find
+              href: scenario-organize-repositories.md
+            - name: Find content details
+              href: scenario-find-content-details.md
+            - name: Document compliance
+              href: scenario-document-compliance.md
+
         - name: Assess your environment
           href: adoption-assessment-tool.md 
         - name: Run a trial
           href: trial-syntex.md
+        - name: Solution accelerators
+          href: site-templates.md 
         - name: Solutions
           items:
             - name: Manage contracts in Microsoft 365
@@ -176,12 +204,6 @@
                  href: solution-manage-contracts-step2.md
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
-        - name: Site templates
-          items:
-            - name: Contracts management template
-              href: use-contracts-management-site.md 
-            - name: Content center template
-              href: use-content-center-site.md 
 
     - name: Video library 
       href: video-library.md
@@ -190,6 +212,9 @@
       items: 
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+
+    - name: Syntex-SharePoint Advanced Management
+      href: /sharepoint/advanced-management
 
 
 

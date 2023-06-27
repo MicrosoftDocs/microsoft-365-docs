@@ -51,7 +51,7 @@ Users submitting and responding to privileged access management requests must be
 > [!IMPORTANT]
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-If you don't have an existing Office 365 Enterprise E5 plan and want to try privileged access management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Office 365 Enterprise E5 plan and want to try privileged access management, you can [add Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Enable and configure privileged access management
 
@@ -177,7 +177,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### Requesting elevation authorization to execute privileged tasks
 
-Requests for privileged access are valid for up to 24 hours after the request is submitted. If not approved or denied, the requests expire and access is not approved.
+Requests for privileged access are valid for up to 24 hours after the request is submitted. If not approved or denied, the requests expire and access isn't approved.
 
 #### In the Microsoft 365 Admin Center
 
@@ -287,7 +287,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ## Delete a privileged access policy in Office 365
 
-If it is no longer needed in your organization, you can delete a privileged access policy.
+If it's no longer needed in your organization, you can delete a privileged access policy.
 
 ### In the Microsoft 365 admin center
 
@@ -305,7 +305,7 @@ If it is no longer needed in your organization, you can delete a privileged acce
 
 ### In Exchange Management PowerShell
 
-To delete a privileged access policy, run the following command in Exchange Online Powershell:
+To delete a privileged access policy, run the following command in Exchange Online PowerShell:
 
 ```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
@@ -313,7 +313,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ## Disable privileged access in Office 365
 
-If needed, you can disable privileged access management for your organization. Disabling privileged access does not delete any associated approval policies or approver groups.
+If needed, you can disable privileged access management for your organization. Disabling privileged access doesn't delete any associated approval policies or approver groups.
 
 ### In the Microsoft 365 admin center
 
@@ -325,7 +325,7 @@ If needed, you can disable privileged access management for your organization. D
 
 ### In Exchange Management PowerShell
 
-To disable privileged access, run the following command in Exchange Online Powershell:
+To disable privileged access, run the following command in Exchange Online PowerShell:
 
 ```PowerShell
 Disable-ElevatedAccessControl

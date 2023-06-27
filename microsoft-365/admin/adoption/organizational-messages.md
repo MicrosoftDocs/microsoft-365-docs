@@ -9,7 +9,7 @@ ms.date: 11/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - Tier2
@@ -207,7 +207,7 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > Each tenant can have one active message for each insight. If you want to schedule a new message, you can go to the **Your org's message** page to cancel active ones.
 
-## FAQ
+## FAQs
 
 ### Q: Why does the total number of messages seen differ from the expected number?
 

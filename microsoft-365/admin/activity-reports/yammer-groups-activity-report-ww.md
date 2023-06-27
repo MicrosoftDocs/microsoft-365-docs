@@ -28,9 +28,6 @@ description: "Get the Yammer groups activity report to learn more about the numb
 # Microsoft 365 Reports in the admin center - Yammer groups activity report
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Yammer groups activity report, you can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
-
-> [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
  
 ## How do I get to the Yammer groups activity report?
 

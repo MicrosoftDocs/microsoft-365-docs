@@ -92,36 +92,38 @@ Depending on your subscription, here are the available reports in all environmen
 
 |Report|Public|GCC|GCC-High|DoD|Office 365 operated by 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Microsoft browser usage](browser-usage-report.md)|Yes|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
+|[Microsoft browser usage](browser-usage-report.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
 |[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes
+|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes
 |[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>2</sup>|
-|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A<sup>2</sup>|
-|[Microsoft Teams usage activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|N/A<sup>2</sup>|
+|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams team activity](microsoft-teams-usage-activity.md)|Yes|Yes|Yes|Yes|Yes|
 |[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
-|[Forms activity](forms-activity-ww.md)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
+|[Forms activity](forms-activity-ww.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
 |[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
-|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes|
-|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes|
-|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes|
-|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No<sup>1</sup>|No<sup>1</sup>|Yes|
-|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A|N/A|N/A|N/A|
-|[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A|N/A|N/A|
-|[Project activity](project-activity.md)|Yes|Yes|N/A|N/A|N/A|
+|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
+|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
+|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
+|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Project activity](project-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Visio activity](visio-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 
 N/A<sup>1</sup>: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
-N/A<sup>2</sup>: The service is not available in the environment so no plan to release the report.
+
+N/A<sup>2</sup>: The service is not available in the environment, so there's no plan to release the report.
 
 ## How to view licensing information
 

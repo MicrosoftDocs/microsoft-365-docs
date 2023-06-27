@@ -19,19 +19,18 @@ ms.custom:
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Create safe sender lists in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of ensuring that users will receive email from trusted senders. Collectively, you can think of these options as _safe sender lists_.
+If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of ensuring that users receive email from trusted senders. Collectively, you can think of these options as _safe sender lists_.
 
 The available safe sender lists are described in the following list in order from most recommended to least recommended:
 
@@ -54,7 +53,7 @@ The rest of this article contains specifics about each method.
 
 ## Use allow entries in the Tenant Allow/Block List
 
-Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md).
+Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Create allow entries for domains and email addresses](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) and [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
 Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to allow senders.
 
@@ -74,11 +73,11 @@ The following example assumes you need email from contoso.com to skip spam filte
      - **Header name**: `Authentication-Results`
      - **Header value**: `dmarc=pass` or `dmarc=bestguesspass` (add both values).
 
-     This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
+     This condition checks the email authentication status of the sending email domain to ensure that the sending domain isn't being spoofed. For more information about email authentication, see [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
 
    - **IP Allow List**: Specify the source IP address or address range in the connection filter policy. For instructions, see [Configure connection filtering](connection-filter-policies-configure.md).
 
-     Use this setting if the sending domain does not use email authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
+     Use this setting if the sending domain doesn't use email authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Don't use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
 
    > [!IMPORTANT]
    >
@@ -96,9 +95,9 @@ The following example assumes you need email from contoso.com to skip spam filte
    1. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
    2. **Modify the message properties** \> **set a message header**:
       - **Header name**: For example, `X-ETR`.
-      - **Heaver value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
+      - **Header value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
 
-      If you have more than one domain in the rule, you can customize the header text as appropriate.
+      If you've more than one domain in the rule, you can customize the header text as appropriate.
 
 When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
 
@@ -111,17 +110,17 @@ When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN`
 
 Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Safe Senders list entries in the mailbox affect that mailbox only.
 
-This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](submissions-report-messages-files-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
+This method isn't desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](submissions-report-messages-files-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
 
 When messages skip spam filtering due to entries in a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing (not high confidence phishing) was bypassed.
 
 **Notes**:
 
 - In Exchange Online, whether entries in the Safe Senders list work or don't work depends on the verdict and action in the policy that identified the message:
-  - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
-  - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
-    - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address is not also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
+  - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders aren't moved to the Junk Email folder.
+  - **Quarantine**: Domain entries aren't honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders aren't quarantined) if either of the following statements are true:
+    - The message isn't identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
+    - The email address isn't also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses).
 - Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
@@ -134,7 +133,7 @@ The next best option is to add the source email server or servers to the IP Allo
 **Notes**:
 
 - It's important that you keep the number of allowed IP addresses to a minimum, so avoid using entire IP address ranges whenever possible.
-- Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
+- Don't use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
 - Regularly review the entries in the IP Allow List and remove the entries that you no longer need.
 
 ## Use allowed sender lists or allowed domain lists
@@ -147,7 +146,7 @@ The next best option is to add the source email server or servers to the IP Allo
 
 The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
 
-The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
+The maximum limit for these lists is approximately 1000 entries; although, you'll only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
 > [!NOTE]
 > As of September 2022, if an allowed sender, domain, or subdomain is in an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization, that sender, domain, or subdomain must pass [email authentication](email-authentication-about.md) checks in order to skip anti-spam filtering.
@@ -157,14 +156,14 @@ The maximum limit for these lists is approximately 1000 entries; although, you w
 A standard SMTP email message consists of a _message envelope_ and message content. The message envelope contains information that's required for transmitting and delivering the message between SMTP servers. The message content contains message header fields (collectively called the _message header_) and the message body. The message envelope is described in RFC 5321, and the message header is described in RFC 5322. Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address). If the message can't be delivered, it's the recipient for the non-delivery report (also known as an NDR or bounce message).
-- The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
+- The `5322.From` address (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
 Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different. This happens most often for bulk email messages.
 
 For example, suppose that Blue Yonder Airlines has hired Margie's Travel to send advertising email messages. The message you receive in your Inbox has the following properties:
 
 - The `5321.MailFrom` address is blueyonder.airlines@margiestravel.com.
-- The `5322.From` address is blueyonder@news.blueyonderairlines.com, which is what you'll see in Outlook.
+- The `5322.From` address is blueyonder@news.blueyonderairlines.com, which is what you see in Outlook.
 
 Safe sender lists and safe domain lists in anti-spam policies in EOP inspect only the `5322.From` addresses. This behavior is similar to Outlook Safe Senders that use the `5322.From` address.
 

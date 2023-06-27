@@ -59,7 +59,11 @@ When you create a collection estimate, you can view information about the estima
 
     - To search all content locations for a specific service (Exchange mailboxes, SharePoint and OneDrive sites, or Exchange public folders), select the corresponding **Select all** toggle in the **Status** column. This option will search all content locations in the selected service.
 
-    - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
+8. On the **Search query** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection or user the query builder to define query operators, filters, and conditions. For more information, see:
+
+    - [Build search queries using keywords and conditions for collections](ediscovery-building-search-queries.md)
+    - [Use the KQL editor to build search queries](/microsoft-365/compliance/ediscovery-kql-editor)
+    - [Use the query builder to build search queries (preview)](/microsoft-365/compliance/ediscovery-query-builder)
 
     Use the **Additional search options** options to include other search locations. The options available here are set by your admin in eDiscovery global settings. Search options that aren't defined by your eDiscovery admin aren't selectable or available. Search options enabled by your eDiscovery admin can be selected and included in the collection as applicable. You have two choices for additional search options:
 
@@ -119,20 +123,53 @@ You can use the options in the **Actions** menu on the flyout page of a collecti
 
 ![Options on Actions menu for collection estimate.](../media/ediscovery-collection-estimate-actions-menu.png)
 
-Here's the descriptions of the management options.
+Here's the descriptions of the pre-collection estimate management options.
 
 - **Edit collection**: Change the settings of the collection estimate. After you make changes, you can rerun the collection and update the search estimates and statistics. As previously explained, you use this option to commit a collection estimate to a review set.  
 - **Commit collection**: Commit a collection to a review set. This means that you rerun the collection (using the current settings) and add the items returned by the collection to a review set. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a collection estimate to a review set](ediscovery-commit-draft-collection.md).
+- **Export item report**: Similar to the [exporting items in Content search](/microsoft-365/compliance/ediscovery-export-a-content-search-report), you can choose this option to export the results of the report that is based on the actual items that can be retrieved from the source. After selecting, you have the following export options for collected items:
+
+    - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
+
+        - Include Microsoft Teams and Yammer conversations
+        - Include cloud attachments
+        - Include all existing versions of Microsoft 365 documents on SharePoint
+        - Include subfolder contents (insider subfolders of a matched folder)
+        - Include files in SharePoint lists (and their child items)
+
+- **Export collected items (preview)**: Export the collected items without adding the items to the review set. This option is useful in scenarios where data residency requirements associated with data storage may be prohibitive and you need collected data as a download. After selecting, you have the following export options for collected items:
+
+    - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
+
+        - Include Microsoft Teams and Yammer conversations
+        - Include cloud attachments
+        - Include all existing versions of Microsoft 365 documents on SharePoint
+        - Include subfolder contents (inside subfolders of a matched folder)
+        - Include files in SharePoint lists (and their child items)
+
+    - **How to format emails**: Choose an option of how collected emails should be formatted:
+
+        - Individual .pst files for each mailbox
+        - Individual .msg files for each message
+        - Individual .eml files for each message
+
 - **Delete collection**: Delete a collection estimate. After you commit a collection estimate to a review set, it can't be deleted.
 - **Refresh estimates**: Rerun the query (against the data sources) specified in the collection estimate to update the search estimates and statistics.
-- **Export as report**: Exports information about the collection estimate to a CSV file that you can download to your local computer. The export report contains the following information:
+- **Export as report (preview)**: Exports information about the collection estimate to a CSV file that you can download to your local computer. The export report contains the following information:
 
   - The identity of each content location that contains items that match the search query in the collection estimate. These locations are typically mailboxes or sites.
   - The total number of items in each content location.
   - The total size (in bytes) of the items in each content location.
   - The service (such as Exchange or SharePoint) in which the content location is located.
 
+  The limits for the export report and report results are as follows:
+  
+    - Total items: 1 million
+    - Total locations: 500,000
+    - Exported results (items): 500,000
+    - Exported results (locations): 100,000
+
 - **Copy collection**: Create a new collection estimate by copying the settings from an existing collection. You have to use a different name for the new collection. You also have the option to modify the settings before you submit the new collection. After you submit it, the search query runs and new estimates and statistics are generated. This is a good way to quickly create additional collection estimate and then modify selected settings as necessary while still preserving information in the original collection. This also lets you easily compare the results of two similar collections.
 
 > [!NOTE]
-> After a collection estimate is committed to a review set, you can only copy the collection and export a report.
+> After a collection estimate is committed to a review set, you can only select **Copy collection** and **Export as report**.

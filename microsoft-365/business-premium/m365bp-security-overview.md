@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 03/27/2023
+ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -34,9 +34,9 @@ Stay vigilant - the safety and reliability of your system relies upon you.
 
 Your objectives are to:
 
-- [Turn on MFA](m365bp-conditional-access.md).
-- [Protect your admin accounts](m365bp-protect-admin-accounts.md).
-- [Protect against malware and other threats](m365bp-increase-protection.md).
-
-Once you've achieved these objectives, proceed to [Set up unmanaged (BYOD) devices](m365bp-devices-overview.md).
+1. [Turn on MFA](m365bp-turn-on-mfa.md).
+2. [Protect your admin accounts](m365bp-protect-admin-accounts.md).
+3. [Protect against malware and other threats](m365bp-protect-against-malware-cyberthreats.md).
+4. [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+5. [Set up information protection capabilities](m365bp-set-up-compliance.md).
 

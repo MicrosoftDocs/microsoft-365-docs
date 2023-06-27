@@ -272,64 +272,7 @@ Now that the retention labels are applied, let's focus on the event that will in
 
 You can manually create the event in the Microsoft Purview compliance portal by going to **Records Managements** > **Events**. You would choose the event type, set the correct asset IDs, and enter a date for the event. For more information, see [Start retention when an event occurs](event-driven-retention.md).
 
-But for this scenario, we'll automatically generate the event from an external production system. The system is a simple SharePoint list that indicates whether a product is in production. A [Power Automate](/power-automate/getting-started) flow that's associated with the list will trigger the event. In a real-world scenario, you could use various systems to generate the event, such as an HR or CRM system. Power Automate contains many ready-to-use interactions and building block for Microsoft 365 workloads, such as Microsoft Exchange, SharePoint, Teams, and Dynamics 365, plus third-party apps such as Twitter, Box, Salesforce, and Workdays. This feature makes it easy to integrate Power Automate with various systems. For more information, see [Automate event-driven retention](./event-driven-retention.md#automate-events-by-using-a-rest-api).
-
-The following screenshot shows the SharePoint list that will be used the trigger the event:
-
-[ ![The list that will trigger the retention event.](../media/SPRetention23.png) ](../media/SPRetention23.png#lightbox)
-
-There are two products currently in production, as indicated by the ***Yes*** in the **In Production** column. When the value in this column is set to ***No*** for a product, the flow associated with the list will automatically generate the event. The event triggers the start of the retention period for the retention label that was auto-applied to the corresponding product documents.
-
-For this scenario, we use the following flow to trigger the event:
-
-[ ![Configuring the flow that will trigger the event.](../media/SPRetention24.png) ](../media/SPRetention24.png#lightbox)
-
-To create this flow, start from a SharePoint connector and select the **When an item is created or modified** trigger. Specify the site address and list name. Then add a condition based on when the **In Production** list column value is set to ***No*** (or equal to *false* on the condition card). Then add an action based on the built-in HTTP template. Use the values in the following section to configure the HTTP action. You can copy the values for the **URI** and **Body** properties from the following section and paste them into the template.
-
-- **Method**: POST
-- **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
-- **Headers**: Key = Content-Type, Value = application/atom+xml
-- **Body**:
-
-    ```xml
-    <?xml version='1.0' encoding='utf-8' standalone='yes'>
-    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
-    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
-    <updated>9/9/2017 10:50:00 PM</updated>
-    <content type='application/xml'>
-    <m:properties>
-    <d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
-    <d:EventType>Product Cessation&lt;</d:EventType>
-    <d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
-    <d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
-    </m:properties>
-    </content&gt>
-    </entry>
-    ```
-
-This list describes the parameters in the **Body** property of the action that must be configured for this scenario:
-
-- **Name**: This parameter specifies the name of the event that will be created in the Microsoft Purview compliance portal. For this scenario, the name is "Cessation Production *xxx*", where *xxx* is the value of the **ProductName** managed property that we created earlier.
-- **EventType**: The value for this parameter corresponds to the event type that the created event will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation."
-- **SharePointAssetIdQuery**: This parameter defines the asset ID for the event. Event-based retention needs a unique identifier for the document. We can use asset IDs to identify the documents that a particular event applies to or, as in this scenario, the metadata column **Product Name**. To do  this, we need to create a new **ProductName** managed property that can be used in the KQL query. (Alternatively, we could use **RefinableString00** instead of creating a new managed property). We also need to map this new managed property to the **ows_Product_x0020_Name** crawled property. Here's a screenshot of this managed property.
-
-    [ ![Rentention managed property.](../media/SPRetention25.png) ](../media/SPRetention25.png#lightbox)
-
-- **EventDateTime**: This parameter defines the date that the event occurs. Use the current date format:<br/><br/>*formatDateTime(utcNow(),'yyyy-MM-dd'*)
-
-### Putting it all together
-
-Now the retention label is created and auto-applied, and the flow is configured and created. When the value in the **In Production** column for the Spinning Widget product in the Products list is changed from ***Yes*** to ***No***, the flow is triggered to create the event. To see this event in the Microsoft Purview compliance portal, go to **Records management** > **Events**.
-
-Select the event to view the details on the flyout pane. Notice that even though the event is created, the event status shows that no SharePoint sites or documents have been processed.
-
-![Event details.](../media/SPRetention29.png)
-
-But after a delay, the event status shows that a SharePoint site and a SharePoint document have been processed.
-
-![Event details show that documents were processed.](../media/SPRetention31.png)
-
-This shows that the retention period for the label applied to the Spinning Widget product document has been initiated, based on the event date of the *Cessation Production Spinning Widget* event. Assuming that you implemented the scenario in your test environment by configuring a one-day retention period, you can go to the document library for your product documents a few days after the event was created and verify that the document was deleted (after the deletion job in SharePoint has run).
+Or, you can automate this by using [Microsoft Graph Records Management APIs](/graph/api/resources/security-recordsmanagement-overview).
 
 ### More about asset IDs
 

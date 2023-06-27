@@ -27,6 +27,7 @@ ms.date: 12/18/2020
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -85,7 +86,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
     > [!NOTE]
     > This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
 
-- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, manage email notifications, and manage evaluation lab
+- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, manage email notifications, manage evaluation lab, and manage allowed/blocked lists for indicators
 
 - **Live response capabilities**
   - **Basic** commands:

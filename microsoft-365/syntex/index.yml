@@ -33,10 +33,16 @@ landingContent:
             url: model-types-overview.md
       - linkListType: learn
         links:
-          - text: Intro to Syntex
+          - text: Introduction to Syntex
             url: /training/modules/syntex-intro
           - text: Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
+      - linkListType: whats-new
+        links:
+          - text: Optical character recognition
+            url: ocr.md
+          - text: Prebuilt model for contracts
+            url: prebuilt-model-contract.md
 
 # Card 2
   - title: Get started
@@ -65,6 +71,10 @@ landingContent:
             url: create-a-form-processing-model.md
           - text: Prebuilt models
             url: prebuilt-overview.md
+      - linkListType: video
+        links:
+          - text: Syntex model types
+            url: https://www.microsoft.com/videoplayer/embed/RE4GJXS
       - linkListType: how-to-guide
         links:
           - text: Create an enterprise model
@@ -107,18 +117,6 @@ landingContent:
             url: automate-document-generation.md
 
     # Card 6
-  - title: More features
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Annotations
-            url: annotations.md
-          - text: Content query
-            url: metadata-search.md
-          - text: Content processing
-            url: content-processing-overview.md
-
-    # Card 7
   - title: Adoption
     linkLists:
       - linkListType: overview
@@ -133,18 +131,26 @@ landingContent:
             url: adoption-assessment-tool.md
           - text: Run a trial
             url: trial-syntex.md
+      - linkListType: whats-new
+        links:
+          - text: Solution accelerators
+            url: site-templates.md
+
+    # Card 7
+  - title: More features
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
+          - text: Optical character recognition
+            url: ocr.md
 
     # Card 8
-  - title: Get support
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Tech Community blog
-            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
-          - text: FAQ
-            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
-
-    # Card 9
   - title: Extensibility
     linkLists:
       - linkListType: reference
@@ -155,4 +161,13 @@ landingContent:
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: Syntex-SharePoint Advanced Management
             url: /sharepoint/advanced-management
- 
+
+    # Card 9
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab

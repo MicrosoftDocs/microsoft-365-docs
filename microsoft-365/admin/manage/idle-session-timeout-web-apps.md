@@ -3,7 +3,7 @@ title: "Idle session timeout for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/03/2022
 audience: Admin
@@ -64,7 +64,14 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
     - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
 
-    - Microsoft 365 admin center
+    - Microsoft 365 Admin Center
+
+    - M365 Defender Portal
+
+    - Microsoft Purview Compliance Portal
+    
+    - Azure Portal
+
 
 - Activity refers to any client-side user interaction happening in the context of the web app. For example, mouse clicks and keyboard presses.  
 
@@ -124,6 +131,12 @@ The following Microsoft 365 apps are supported.
 - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
 
 - Microsoft 365 admin center
+
+- M365 Defender Portal
+
+- Microsoft Purview Compliance Portal
+
+- Azure Portal
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 

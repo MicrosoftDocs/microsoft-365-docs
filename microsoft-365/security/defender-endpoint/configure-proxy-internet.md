@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 12/18/2020
+ms.date: 04/04/2023
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -26,10 +26,15 @@ ms.date: 12/18/2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+> [!IMPORTANT]
+> Devices that are configured for IPv6-only traffic are not supported.
 
 The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account.
 
@@ -123,7 +128,9 @@ Configure the static proxy using the Group Policy available in Administrative Te
     ```
 
 > [!NOTE]
->
+
+> If you are using static proxy setting on devices that are otherwise completely offline, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is required to add the additional registry setting SSLOptions with a dword value of 0. Parent registry path location for "SSLOptions" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet"
+
 > For resiliency purposes and the real-time nature of cloud-delivered protection, Microsoft Defender Antivirus will cache the last known working proxy. Ensure your proxy solution does not perform SSL inspection. This will break the secure cloud connection. 
 >
 > Microsoft Defender Antivirus will not use the static proxy to connect to Windows Update or Microsoft Update for downloading updates. Instead, it will use a system-wide proxy if configured to use Windows Update, or the configured internal update source according to the [configured fallback order](manage-protection-updates-microsoft-defender-antivirus.md). 

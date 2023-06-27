@@ -25,6 +25,8 @@ ms.date: 01/31/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -81,7 +83,7 @@ The following table lists the available tools based on the endpoint that you nee
 > [!NOTE]
 > For devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager, you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Intune.
 
-The following table lists the available tools based on the endpoint that you need to onboard.
+
 
 ## Configure capabilities of the service
 Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint.

@@ -28,15 +28,22 @@ description: "Portugal citizen card number sensitive information type entity def
 
 ## Format
 
-eight digits
+Twelve alphanumeric characters
 
 ## Pattern
 
-eight digits
+Twelve alphanumeric characters:
+
+- Eight digits
+- An optional space or dash "-"
+- One digit
+- An optional space
+- Two characters
+- One check digit
 
 ## Checksum
 
-No
+Yes
 
 ## Definition
 

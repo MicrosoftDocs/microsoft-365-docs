@@ -46,7 +46,7 @@ Updatable properties are: `status`, `determination`, `classification` and `assig
 
 ## Limitations
 
-1. You can update alerts that are available in the API. See [List Alerts](get-alerts.md) for more information.
+1. You can update alerts that are available in the API. For more information, see [List Alerts](get-alerts.md).
 2. Rate limitations for this API are 10 calls per minute and 500 calls per hour.
 
 ## Permissions
@@ -61,8 +61,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Alerts investigation'. For more information, see [Create and manage roles](user-roles.md).
+> - The user needs to have access to the device associated with the alert, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -83,7 +83,7 @@ Content-Type | String | application/json. **Required**.
 
 In the request body, supply the IDs of the alerts to be updated and the values of the relevant fields that you wish to update for these alerts.
 
-Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
 For best performance you shouldn't include existing values that haven't changed.
 
@@ -107,7 +107,7 @@ If successful, this method returns 200 OK, with an empty response body.
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/alerts/batchUpdate

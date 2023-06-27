@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 03/28/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,9 +36,8 @@ Prior to this new capability, only the content of an email message protected by 
 
 ## Requirements for decryption in eDiscovery
 
-You have to be assigned the *RMS Decrypt* role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in eDiscovery (Premium).
-
-This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md#rms-decrypt).
+- **Permissions**: You have to be assigned the *RMS Decrypt* role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in eDiscovery (Premium). This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft Purview compliance portal. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md#rms-decrypt).
+- **Run the Inbox Repair tool on exported PST files**: After you've exported PST files, we recommend that you run the [Inbox Repair tool (ScanPST.exe)](/outlook/troubleshoot/data-files/how-to-repair-personal-folder-file) to fully decrypt the contents of the PST files.
 
 ## Supported encryption technologies
 
@@ -72,7 +71,7 @@ The following table describes the decryption supported by eDiscovery (Standard) 
 | Encrypted email | Search | Yes | Yes |
 | Encrypted email | Decryption to .pst | No | Yes |
 | Encrypted email | Decryption to file | Yes | Yes |
-| Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
+| Encrypted mail and attachment | Search | No | Yes (with Advanced indexing)<sup>1</sup> |
 | Encrypted mail and attachment | Decryption to .pst | No | Yes |
 | Encrypted mail and attachment | Decryption to file | No | Yes |
 | File in SharePoint with MIP label | Search | No | Yes |
@@ -112,7 +111,7 @@ Keep the following things in mind when exporting encrypted email messages and at
 
 ## Notes
 
-<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about advanced indexing, see [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md).
+<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about Advanced indexing, see [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md).
 
 <sup>2</sup> Only items labeled in SharePoint (or uploaded to SharePoint after integration with sensitivity labels are enabled) and that have labels with admin-defined permissions and no expiration are decrypted. All other encrypted files in SharePoint aren't decrypted. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 

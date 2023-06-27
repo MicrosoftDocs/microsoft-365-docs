@@ -9,8 +9,6 @@
     href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
-  - name: Frontline deployment white paper
-    href: flw-technical-planning-guide-deployment.md
   - name: Set up and configure
     items:
     - name: Overview
@@ -25,10 +23,8 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy Teams at scale
+      - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-      - name: Onboard your users with the onboarding wizard
-        href: flw-onboarding-wizard.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices

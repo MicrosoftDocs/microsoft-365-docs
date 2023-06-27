@@ -28,7 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -288,7 +288,7 @@ When you select a file, a **Summary & expected impact** fly out opens, presentin
 
 The Add exclusion page has two buttons for actions that can be used on any detected files (after selection). You can:
 
-- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
+- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](enable-attack-surface-reduction.md) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::

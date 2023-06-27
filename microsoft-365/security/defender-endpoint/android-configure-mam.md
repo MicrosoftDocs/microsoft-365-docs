@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: shthota
-author: shthota
+author: shthota77
 manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
@@ -30,11 +30,11 @@ ms.date: 01/13/2023
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that are not enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM). This capability allows you to manage and protect your organization's data within an application.
+Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that aren't enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM). This capability allows you to manage and protect your organization's data within an application.
 
 Microsoft Defender for Endpoint on Android threat information is applied by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.
 
-Microsoft Defender for Endpoint on Android supports both the configurations of MAM.
+Microsoft Defender for Endpoint on Android supports both the configurations of MAM. 
 
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This provision means that apps can be managed by Intune on devices enrolled with third-party EMM providers.
@@ -52,7 +52,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   b. Select **Settings > Endpoints > Advanced Features > Microsoft Intune Connection** is turned on.
 
-  c. If the connection is not turned on, select the toggle to turn it on and then select **Save Preferences**.
+  c. If the connection isn't turned on, select the toggle to turn it on and then select **Save Preferences**.
 
      :::image type="content" source="images/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft 365 Defender portal." lightbox="images/enable-intune-connection.png":::
 
@@ -104,6 +104,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
      Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action: "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
+
      :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
 
 - **Assign user groups for whom the policy needs to be applied.**
@@ -111,6 +112,10 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
   Select **Included groups**. Then add the relevant groups.
 
     :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal." lightbox="images/assignment.png":::
+>[!NOTE]
+>If a config policy is to be targeted at unenrolled devices (MAM), the recommendation is to deploy the general app configuration settings in Managed Apps instead of using Managed Devices. 
+>When deploying app configuration policies to devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. These issues are due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent these issues by ensuring that only a single app configuration policy for devices is defined and targeted for the same app and user.
+
 
 ## End-user prerequisites
 
@@ -125,13 +130,13 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 2. Select **Continue**. A screen is presented which recommends downloading and setting up of Microsoft Defender for Endpoint on Android app.
 
-3. Select **Download**. You will be redirected to the app store (Google play).
+3. Select **Download**. You'll be redirected to the app store (Google play).
 
 4. Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
    :::image type="content" source="images/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="images/download-mde.png":::
 
-5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You will automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
+5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You'll automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
 
 6. Select **Continue** to log into the managed application.
 
@@ -169,7 +174,7 @@ Web protection helps to secure devices against web threats and protect users fro
 
 2. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
 
-3. Add the key and value from the table below. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key should not exist. When you are done, click **Next**.
+3. Add the key and value from the following table. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key shouldn't exist. When you're done, click **Next**.
 
    | Key | Value Type | Default (true-enable, false-disable) | Description |
    | --- | --- | --- | --- |
@@ -195,12 +200,18 @@ Admins can use the following steps to enable privacy and not collect the domain 
 1. Give the policy a **name**.
 
 1. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
+4. On the Settings page, under General Configuration Settings, add **DefenderExcludeURLInReport** and **DefenderExcludeAppInReport** as the keys and value as 1. 
+
+1. Add **DefenderMAMConfigs** key and set the value as 1.
+
+5. Assign this policy to users. By default, this value is set to 0.
 
 1. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as true.
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 1. Assign this policy to users. By default, this value is set to false.
+
 
 1. Review and create the policy.
 
@@ -218,12 +229,21 @@ Use the following steps to enable Optional permissions for devices.
 
 1. Select **Microsoft Defender for Endpoint** in public apps.
 
+
+4. On the Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key. 
+
+1. Add **DefenderMAMConfigs** key and set the value as 1.
+
+5. To enable Optional permissions, enter the value as **1** and assign this policy to users. By default, this value is set to 0.
+For users with key set as 1, they will be able to onboard the app without giving these permissions.
+
 1. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key and value type as Boolean.
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 1. To enable Optional permissions, enter value as **true** and assign this policy to users. By default, this value is set to false.
-For users with key set as true, the users will be able to onboard the app without giving these permissions.
+For users with key set as true, the users are able to onboard the app without giving these permissions.
+
 
 1. Select **Next** and assign this profile to targeted devices/users.
 
@@ -233,9 +253,9 @@ Users can install and open the app to start the onboarding process.
 
 1. If an admin has setup Optional permissions, then users can choose to skip the VPN or accessibility permission or both and complete onboarding.
 
-2. Even if the user has skipped these permissions, the device will be able to onboard, and a heartbeat will be sent.
+2. Even if the user has skipped these permissions, the device is able to onboard, and a heartbeat will be sent.
 
-3. Since permissions are disabled, Web protection will not be active. It will be partially active if one of the permissions is given.
+3. Since permissions are disabled, Web protection won't be active. It will be partially active if one of the permissions is given.
 
 4. Later, users can enable Web protection from within the app. This will install the VPN configuration on the device.
 
@@ -246,3 +266,5 @@ Users can install and open the app to start the onboarding process.
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
+
+

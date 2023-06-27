@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 05/16/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 
 # Adaptive scopes
 
-When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
+When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a [policy for retention](retention.md#retention-policies-and-retention-labels), you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
 - An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
 - For example, you can assign different policy settings to users according to their department by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
@@ -36,6 +36,7 @@ The advantages of using adaptive scopes include:
 - Powerful targeting for your policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific policy. 
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 - A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
+- Support for [Azure AD administrative units](/azure/active-directory/roles/administrative-units).
 
 For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
@@ -58,23 +59,26 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 | Adaptive scope type | Attributes or properties supported include |
 |:--------------------|:-------------------------------------------|
 |**Users** - applies to:  <br/> - Exchange mailboxes <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
+|**SharePoint sites** - applies to:  <br/> - SharePoint sites <sup>\*</sup> <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
+<sup>\*</sup> Currently, [shared channel SharePoint sites](/microsoftteams/shared-channels#shared-channel-sharepoint-sites) aren't supported for adaptive scopes.
 
 > [!NOTE]
-> For communication compliance policies, SharePoint sites and OneDrive accounts are not supported. Excluded users and Microsoft 365 groups are supported.
+> For communication compliance policies:
+> - SharePoint sites and OneDrive accounts aren't supported.
+> - Excluded users and Microsoft 365 groups are supported.
 
 The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-The attribute names for users and groups are based on [(https://learn.microsoft.com/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
+The attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
 - **Alias** maps to the LDAP name **mailNickname** that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
 
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
-To configure an adaptive scope:
+### How to configure an adaptive scope
 
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
@@ -93,7 +97,14 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, select **Roles and Scopes**.
 3. Select **Adaptive scopes**, and then **+ Create scope**.
-4. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
+4. Follow the prompts in the configuration where you'll first be asked to assign an administrative unit. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one administrative unit that will restrict the scope membership.
+    
+    > [!NOTE]
+    > Because administrative units don't yet support SharePoint sites, you won't be able to create an adaptive scope for SharePoint sites if you select administrative units.
+    
+    If you don't want to restrict the adaptive scope by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
+
+5. Select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
 
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
 
@@ -148,12 +159,12 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
     > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
     > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
 
-3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy.
+6. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy.
 
 > [!NOTE]
 > It can take up to five days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy.
 
-To confirm the current membership and membership changes for an adaptive scope:
+<a name="confirm-scope-membership"></a>To confirm the current membership and membership changes for an adaptive scope:
 
 1. Double-click (or select and press Enter) the scope on the **Adaptive scopes** page
 

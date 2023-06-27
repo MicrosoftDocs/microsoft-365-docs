@@ -21,11 +21,16 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 12/18/2022
+ms.date: 03/31/2023
 search.appverid: met150
 ---
 
 # Attack surface reduction (ASR) rules deployment overview
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules can help.
 
@@ -85,7 +90,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules |  Email rules | Script rules | Misc rules |
 |:---|:---|:---|:---|:---|:---|
-| Block executable files from running unless they meet a prevalence (1000 machines), age (24 hrs), or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
+| Block executable files from running unless they meet a prevalence (1000 machines), age, or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
 | Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Block Office apps from creating child processes |  Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content | |
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |

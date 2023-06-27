@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/13/2020
+ms.date: 06/08/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -78,14 +78,14 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for administrative units
 
-Now rolling out in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+Now in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
 - You can assign administrative units to members of role groups that are used with Microsoft Purview Information Protection. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 
-- You can define the initial scope of sensitivity label policies and auto-labeling policies for Exchange when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
+- You can define the initial scope of sensitivity label policies and auto-labeling policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
 
 > [!IMPORTANT]
-> Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
+> Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the SharePoint location.
 
 For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
 
@@ -145,7 +145,7 @@ You can also use the following resources for basic instructions:
 
 - [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
 
-- [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6)
+- [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-2b244d1d-72d0-471e-8e58-c41079e190fb)
 
 - [Azure Information Protection unified labeling user guide](/azure/information-protection/rms-client/clientv2-user-guide)
 

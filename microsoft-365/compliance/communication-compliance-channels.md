@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -33,7 +33,12 @@ With communication compliance policies, you can choose to analyze messages in on
 
 ## Microsoft Teams
 
-You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for are automatically detected across all Microsoft Teams where users are a member. 
+You can analyze chats in public and private Microsoft Teams channels and individual communications. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications are automatically detected across all Microsoft Teams where users are a member. 
+
+Watch the video below to learn how to detect communication risks in Microsoft Teams with communication compliance:
+   <br>
+   <br>
+   >[!VIDEO https://www.microsoft.com/videoplayer/embed/RW11p2Z]
 
 Microsoft Purview Communication Compliance automatically includes Microsoft Teams coverage for pre-defined policy templates and is selected as the default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 
@@ -64,6 +69,9 @@ Use the following group management configurations to bring individual user chats
 - **For Teams channel communications:** Assign every Microsoft Teams channel or Microsoft 365 group you want to analyze that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Microsoft 365 groups, be sure to add these new channels and groups to the communication compliance policy. If any member of the channel is a scoped user within a policy and the *Inbound* direction is configured in a policy, all messages sent within the channel are subject to review, and potential policy matches (even for users in the channel that aren't explicitly scoped). For example, User A is the owner or a member of a channel. User B and User C are members of the same channel and use language that is matched to the potentially inappropriate content policy that applies only to User A. User B and User C create policy matches for conversations within the channel even though they aren't directly scoped in the potentially inappropriate content policy. Teams conversations between User B and User C that are outside of the channel and include User A wouldn't be subject to the potentially inappropriate content policy that includes User A. To exclude channel members from being scoped when other members of the channel are explicitly scoped, turn off the *Inbound* communication direction setting in the applicable communication compliance policy.
 - **For Teams chats with hybrid email environments**: Communication compliance can detect chat messages for organizations with an Exchange on-premises deployment or an external email provider that has enabled Microsoft Teams. You must create a distribution group for the users with on-premises or external mailboxes. When creating a communication compliance policy, you'll assign this distribution group using the **Choose users and groups** selection in the policy wizard. For more information about the requirements and limitations for enabling cloud-based storage and Teams support for on-premises users, see [Search for Teams chat data for on-premises users](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
+> [!TIP]
+> For a more flexible configuration and to reduce administrative overhead, consider using an [adaptive scope](purview-adaptive-scopes.md) instead of a distribution group.
+
 ## Exchange
 
 Mailboxes hosted on Microsoft Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message analysis. Exchange email messages and attachments matching communication compliance policy conditions may take approximately 24 hours to process. Supported attachment types for communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
@@ -76,9 +84,9 @@ Yammer must be configured in [Native Mode](/yammer/configure-your-yammer-network
 
 ## Third-party sources
 
-You can analyze communications for data imported into all mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS, and many others. For a full list of connectors supported in communication compliance, see [Learn about connectors for third-party data](/microsoft-365/compliance/archiving-third-party-data).
+You can analyze communications for data imported into all mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS, and many others. For a full list of connectors supported in communication compliance, see [Learn about connectors for third-party data](/microsoft-365/compliance/archive-third-party-data).
 
-You must configure a [third-party connector](/microsoft-365/compliance/archiving-third-party-data) for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
+You must configure a [third-party connector](/microsoft-365/compliance/archive-third-party-data) for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
 ## Channel limits
 

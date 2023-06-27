@@ -4,11 +4,11 @@ f1.keywords: CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.date: 02/07/2023
+ms.date: 03/31/2023
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - M365-subscription-management
@@ -19,15 +19,10 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 search.appverid: MET150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to turn the pronouns feature on or off in the Microsoft 365 admin center."
 ---
 
 # Turn pronouns on or off for your organization in the Microsoft 365 admin center
-
-> [!IMPORTANT]
->
-> This is prerelease documentation. The capabilities for this article are associated with [roadmap IDs 83382 and 115511](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns) and are not currently available in production environments. For availability information, refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns).
 
 As a Microsoft 365 administrator, you can turn on a feature that lets all users in your organization add their pronouns on their profile cards in Microsoft 365. The pronouns feature is off by default and requires configuration to turn on. Before you decide to turn the feature on or off, see [Pronouns on your profile in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85), [Frequently asked questions about pronouns in Microsoft 365](https://support.microsoft.com/topic/48135f04-e822-49b5-ba6b-e9bae2ce503a), and [Pronouns best practices](https://support.microsoft.com/topic/ef1701ad-711d-4c6e-b664-64c3ee188d68).
 
@@ -35,7 +30,7 @@ Pronouns are stored with other data in the user's Exchange mailbox. For more inf
 
 > [!IMPORTANT]
 >
->- Knowing someone’s pronouns doesn't always equate to knowing their gender identity. We encourage you to understand any applicable local laws, regulations, and cultural norms that might pose extra risk to employees should their pronouns be publicly displayed and take this into consideration when you decide whether to turn on this feature. 
+>- Knowing someone's pronouns doesn't always equate to knowing their gender identity. We encourage you to understand any applicable local laws, regulations, and cultural norms that might pose extra risk to employees should their pronouns be publicly displayed and take this into consideration when you decide whether to turn on this feature. 
 >- If you decide to use the pronouns feature, we recommend that you engage with internal and/or external subject matter experts in transgender inclusion to consider how pronoun display can complement, not substitute, more comprehensive efforts to support transgender communities in your organization.
 
 ## Before you begin
@@ -58,6 +53,8 @@ Use the following steps to turn the pronouns feature on or off in the Microsoft 
 2. Select **Pronouns**.
 3. To turn on the pronouns feature, in the **Pronouns** pane, select the **Turn on and allow pronouns** checkbox. To turn off the pronouns feature, clear the checkbox.
 4. Select **Save**.
+
+To turn the pronouns feature on or off for your organization using Microsoft Graph, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
 ## Next steps
 

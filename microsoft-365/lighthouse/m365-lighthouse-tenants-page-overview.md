@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Tenants page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you manage tenant accounts by selecting **Tenants** in the left navigation pane to open the Tenants page. The Tenants page contains a list of all your tenants. You can select a tenant to view detailed information including contact details and deployment status.
+Microsoft 365 Lighthouse lets you manage customer tenant accounts by selecting **Tenants** in the left navigation pane to open the Tenants page. The Tenants page contains a list of all your customer tenants. You can select a tenant to view detailed information including contact details and deployment status.
 
 The Tenants page also includes the following options:
 
@@ -37,9 +37,9 @@ The Tenants page also includes the following options:
 
 ## Tenant list
 
-The tenant list provides insights into the different tenants you have a contract with, including their tenant Lighthouse onboarding status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
+The tenant list provides insights into the different customer tenants that you have a contract with, including their Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
 
-After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), its status will show as **Active** in the tenant list.
+After your customer tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), their status will show as **Active** in the tenant list.
 
 The tenant list lets you:
 
@@ -49,53 +49,52 @@ The tenant list lets you:
 - Search for tenants by name.
 - Filter tenants by status, delegated admin privilege (DAP), and tags.
 
-To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+To inactivate a tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
-For information on how to add tenants, see [Add and manage multiple tenants in your Partner Center account](/partner-center/multi-tenant-account).
+For information on how to add customer tenants, see [Add and manage multiple tenants in your Partner Center account](/partner-center/multi-tenant-account).
 
 ## Tenant status
 
 The following table shows the different statuses and their meaning. For information on how to troubleshoot customer tenant statuses, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: Customer tenant onboarding](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
-| Status                                   | Description                                                                                             |
-|------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Active                                   | Tenant onboarding and data flow have started.                                                           |
-| Inactive                                 | Tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse.           |
-| In process                               | Tenant discovered but not fully onboarded.                                                              |
-| Ineligible - DAP or GDAP isn't set up    | Partner must have delegated (DAP) or granular delegated (GDAP) admin privileges set up with the tenant. |
-| Ineligible - Required license is missing | Tenant doesn't have the required license.                                                               |
-| Ineligible - User count exceeded         | Tenant has more users than allowed.                                                                     |
-| Ineligible - Geo check failed            | Partner and customer must reside in the same geographic location.                                       |
+| Status           | Description                                                                                                        |
+|------------------|--------------------------------------------------------------------------------------------------------------------|
+| Active           | This customer tenant can be actively managed and monitored in Lighthouse for users and devices with required licenses.      |
+| Inactive         | Your organization has excluded this customer tenant from Lighthouse management.                                    |
+| Limited          | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. <br> Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).|
+| In process       | An error occurred during the onboarding process for this customer tenant and we're working on a fix. If this error persists for more than 24 hours, please contact Support. |
 
-Once you inactivate a tenant, you can't take action on the tenant until the inactivation process completes. It may take up to 48 hours for inactivation to complete. If you decide to reactivate a tenant, it may take up to 48 hours for data to reappear.
+> [!NOTE]
+> Once you inactivate a customer tenant, you can't take action on the tenant until the inactivation process completes. It may take up to 48 hours for inactivation to complete. If you decide to reactivate a customer tenant, it may take up to 48 hours for data to reappear.
 
 ## Tenant tags
 
-To help organize your tenants and easily filter the existing views, you can create and assign tags to your tenants. To learn more, see [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
+To help organize your customer tenants and easily filter the existing views, you can create and assign tags to your tenants. To learn more, see [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > You can create up to 30 tags across all tenant.
 
 ## Tenant details page
 
-To view detailed tenant information, select a tenant from the list of tenants. The tenant details page contains contact information and deployment plan status.
+To view detailed customer tenant information, select a tenant from the list of tenants. The tenant details page contains contact information and deployment plan status.
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png":::
 
 ### Overview tab
 
-On the Overview tab, you can view tenant overview, contact information, and Microsoft 365 service usage.
+On the Overview tab, you can view customer tenant overview information, contact information, and Microsoft 365 service usage.
 
 #### Tenant overview section
 
-The Tenant overview section provides information about the tenant from its Microsoft 365 account.<br><br>
+The Tenant overview section provides information about the customer tenant from its Microsoft 365 account.<br><br>
 
 | Tenant information    | Description|
 |-----------------------|------------------|
+| Roles    | The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view.|
 | Headquarters    | Where the tenant is located.|
 | Industry    |The organization's industry.|
-| Website    |The organization's website. You may edit this field if no data is provided.|
 | Customer domain    |The organization's domain.|
+| Website    |The organization's website. You may edit this field if no data is provided.|
 | Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
 | Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
@@ -115,7 +114,7 @@ To edit details, add notes, or delete an existing contact, select the contact na
 
 #### Microsoft 365 services usage section
 
-Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. The **Active users & devices** column indicates the number of users or devices that have signed in to the service at least once in the past 28 days. The **Change in activity** column indicates change in active users and devices since last month.
+Lighthouse provides insights into Microsoft 365 services usage, including how many users within a customer tenant are licensed and actively using each service. The **Active users & devices** column indicates the number of users or devices that have signed in to the service at least once in the past 28 days. The **Change in activity** column indicates change in active users and devices since last month.
 
 The **Microsoft 365 services usage** section contains two sub-sections:
 
@@ -124,7 +123,7 @@ The **Microsoft 365 services usage** section contains two sub-sections:
 
 ### Deployment Plan tab
 
-The Deployment Plans tab provides status on a tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
+The Deployment Plans tab provides status on a customer tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
 
 The Deployment Plan tab also includes the following options:
 
@@ -137,4 +136,4 @@ The Deployment Plan tab also includes the following options:
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)

@@ -27,6 +27,11 @@ search.appverid: met150
 
 # Test attack surface reduction (ASR) rules
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Testing Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules helps you determine if rules will impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
 
 In this section of the ASR rules deployment guide, you will learn how to:
@@ -55,7 +60,7 @@ You can use Microsoft Intune Endpoint Security to configure custom ASR rules.
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
-4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
+4. In **Platform**, select **Windows 10, Windows 11, and Windows Server**, and in **Profile**, select **Attack surface reduction rules**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
@@ -187,7 +192,6 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 > [!NOTE]
 > Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
-> In Microsoft Intune, per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in Intune to replace the existing policy.
 
 To configure per-rule exclusions:
 

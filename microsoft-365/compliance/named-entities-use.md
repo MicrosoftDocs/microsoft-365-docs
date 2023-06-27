@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 06/02/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: article
@@ -43,7 +43,7 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Devices (Windows 10, and 11 endpoint devices)
+- Devices (Windows 10/11 endpoint devices)
 - Exchange mailboxes
 - Microsoft Defender for Cloud Apps
 
@@ -54,7 +54,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 ## Create and edit enhanced policies
 
-To create or edit a DLP policy, use the procedures in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)).
+To create or edit a DLP policy, use the procedures in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md).
 
 ## Workloads and services that support named entities
 
@@ -113,17 +113,17 @@ Here are some practices you can use when you create or edit a policy that uses a
 
 - Use low instance counts (three to five) when you're looking for data that's in a spreadsheet and the keyword that's required by the SIT for that data is only in the column header. For example, let's say you're looking for US Social Security numbers, and the keyword `Social Security Number` only occurs in the column header. Since the values (the corroborative evidence) is in the cells below, it's likely that only the first few instances would be in close enough proximity to the keyword to be detected.  
 
-- If you are using a named entity SIT, like All Full Names, to help find US Social Security numbers, use larger instance counts such as 10 or 50. Then when both the person names and the SSNs are detected together, you're more likely to get true positives.
+- If you are using a named entity SIT, like All Full Names, to help find US Social Security numbers, use larger instance counts such as 10 or 50. Then, when both the person names and the SSNs are detected together, you're more likely to get true positives.
 
-- You can use [Auto-labeling simulations](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) to test the accuracy of named entity SITs. Run a simulation using a named entity SIT to see what items match the policy. With this information you can fine tune accuracy by adjusting the instance counts and confidence levels in your custom policies or the enhanced template conditions. You can iterate simulations until the accuracy is where you want it, before deploying a DLP or auto-labeling policy containing named entities in production. Here's an overview of the flow:
+- You can use [Auto-labeling simulations](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) to test the accuracy of named entity SITs. Run a simulation using a named entity SIT to see what items match the policy. With this information, you can fine tune accuracy by adjusting the instance counts and confidence levels in your custom policies or the enhanced template conditions. You can iterate simulations until the accuracy is where you want it before deploying a DLP or auto-labeling policy containing named entities in production. Here's an overview of the flow:
 
-1. Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited.
-1. Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts.
+1. Identify the SIT or combination of SITs you want to test in simulation mode, either custom or cloned and edited
+1. Identify or create a sensitivity label to be applied when the auto-labeling policy finds a match in Exchange, SharePoint sites, or OneDrive accounts
 1. Create a sensitivity auto-labeling policy that uses the SIT from step 1 and with same Conditions and Exceptions that will be used in your DLP policy
 1. Run the policy simulation
 1. View the results
 1. Tune the SIT or policy and the instance count and confidence levels to reduce false positives.
-1. Repeat until you get the accuracy results you want.
+1. Repeat until you get the accuracy results you want
 
 
 ## For further information

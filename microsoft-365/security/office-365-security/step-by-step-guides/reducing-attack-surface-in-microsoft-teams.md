@@ -1,7 +1,7 @@
 ---
 title: Reduce the attack surface for Microsoft Teams
 description: Configuration which can be used to reduce the attack surface in Microsoft Teams, including enabling Microsoft Defender for Office 365.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -50,8 +50,8 @@ If licensed for Microsoft Defender for Office 365 (free 90-day evaluation availa
 2. Press **Global settings**.
 3. Ensure **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to on.
 4. Navigate to the security center's Safe links configuration page at: <https://security.microsoft.com/safelinksv2>.
-5. If you have multiple policies, you will need to complete this step for each policy (excluding built-in, standard and strict preset policies).
-6. **Select** a policy, a flyout will appear on the left-hand side.
+5. If you have multiple policies, you'll need to complete this step for each policy (excluding built-in, standard and strict preset policies).
+6. **Select** a policy, a flyout appears on the left-hand side.
 7. Press **Edit protection settings**.
 8. Ensure **Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** is checked.
 9. Press **Save**.
@@ -68,7 +68,7 @@ An attacker could email channels directly if they discover the channel email add
 
 ## Managing third party storage options
 
-Users can store their files in potentially unsupported 3rd party storage providers. If you do not use these providers, you can disable this setting to reduce data leakage risk.
+Users can store their files in potentially unsupported third party storage providers. If you don't use these providers, you can disable this setting to reduce data leakage risk.
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Teams** and then choose **Teams settings**.
@@ -77,33 +77,33 @@ Users can store their files in potentially unsupported 3rd party storage provide
 
 ## Disabling Third-party & custom apps
 
-Applications are a very useful part of Microsoft teams, but it is recommended to maintain a list of allowed apps rather than allowing all apps by default.
+Applications are a very useful part of Microsoft teams, but it's recommended to maintain a list of allowed apps rather than allowing all apps by default.
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Teams apps** and then choose **Permission Policies**.
-3. If you have custom permission policies, you will need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
+3. If you have custom permission policies, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
 4. Select the appropriate settings for your organization, a recommended starting point is:
    - Microsoft apps – set to **Allow all apps** (default).
-   - Third-party apps – set to **Allow specific apps and block all others** (if you already have 3rd party apps to then select for allowing) otherwise select **Block all apps**.
+   - Third-party apps – set to **Allow specific apps and block all others** (if you already have third party apps to then select for allowing) otherwise select **Block all apps**.
    - Custom apps – set to **Allow specific apps and block all others** (if you already have custom apps to then select for allowing) otherwise select **Block all apps**.
 5. Press **Save**.
-6. You'll need to change this setting for each policy (if you have multiple).
+6. You need to change this setting for each policy (if you've multiple).
 
 ## Configure meeting settings
 
-You can reduce the attack surface by ensuring people outside your organization cannot request access to control presenter's screens and require dial in and all external people to be authenticated & admitted from a meeting lobby.
+You can reduce the attack surface by ensuring people outside your organization can't request access to control presenter's screens and require dial in and all external people to be authenticated & admitted from a meeting lobby.
 [Learn more](/microsoftteams/meeting-policies-participants-and-guests) (detailed documentation).
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
-3. If you have assigned any custom or built-in policies to users, you will need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
+3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
 4. Under the **Content sharing** heading, ensure **External participants can give or request control** is set to **off**.
 5. Under the **Participants & guests** heading, ensure **Automatically admit people** is set to **Invited users only**.
 6. Ensure **Dial-in users can bypass the lobby** is set to **off**.
 7. Ensure **Let anonymous people join a meeting** is set to **off**.
 8. Set **Chat in meetings** to **"Turn it on for everyone but anonymous users"**.
 9. Press **Save**.
-10. You'll need to change this setting for each policy.
+10. You need to change this setting for each policy.
 
 ## Configure meeting settings (Restrict presenters)
 
@@ -111,10 +111,10 @@ You can reduce the risk of unwanted or inappropriate content being shared during
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
-3. If you have assigned any custom or built-in policies to users, you will need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
+3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
 4. Under the **Participants & guests** heading, toggle who can present in meetings to **Organizers, but users can override.**
 5. Press **Save**.
-6. You'll need to change this setting for each policy.
+6. You need to change this setting for each policy.
 
 ## Disable open federation
 

@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/15/2021
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -18,163 +18,47 @@ ms.collection:
 - purview-compliance
 - SPO_Content
 recommendations: false
-description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they are working with content that conflicts with a DLP policy."
+description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they're working with content that conflicts with a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy tips reference
-
-DLP policy tips in Outlook Web Access is supported for all the conditions, and actions that are applicable on Exchange workload in a DLP policy except the following:
-
-**Conditions:**
-
-- Recipient is a member of
-- Header contains words or phrases
-- Header matches patterns
-- Message type is
-- Content character set contains words
-- Has sender overridden the policy tip
-- Message size equals or is greater than
-- Sender AD attribute contains words or phrases
-- Sender AD attribute matches patterns
-- Sender IP ranges
-- Recipient AD attribute contains words or phrases
-- Recipient AD attribute matches patterns
-- Document name contains words or phrases
-- Document name matches patterns
-- Document content contains words or phrases
-- Document content matches patterns
-- Any email attachment's content didn't complete scanning
-- Any email attachment's content could not be scanned
-
-**Actions:**
-
-- Forward the message for approval to sender’s manager
-- Forward the message for approval to specific approvers
-- Redirect the message to specific users
-- Add recipients to the To Box
-- Add recipients to the Cc Box
-- Add recipients to the Bcc Box
-- Add the sender’s manager as recipient
-- Add HTML disclaimer
-- Prepend email subject
-- Remove O365 Message Encryption and rights protection
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions
 
-Currently, Outlook 2013 and later supports showing policy tips for policies which do not contain any condition or exception apart from the below mentioned conditions:
+Currently, Outlook 2013 and later support showing policy tips for policies that contain these conditions:
 
-- Content contains (works only for Sensitive information types. Sensitivity labels are not supported)
+For E3 licensed users
+- Content contains Sensitive information types (preconfigured SITs and custom SITs)
 - Content is shared
 
-Note that all the conditions work for emails authored in Outlook client app, where they will match content and enforce protective actions on content. However, showing policy tips to users is not supported for any conditions that are used apart from the ones mentioned above.
+For E5 licensed users (preview)
+- Content contains Sensitive information types
+- Content contains Sensitivity labels (works for email labels, Office docs and PDF files)
+- Content is shared
+- Sender is
+- Sender is member of
+- Sender domain is
+- Recipient is
+- Recipient is a member of
+- Recipient domain is
+- Subject contains words
+
+All the conditions work for emails authored in the Outlook client app, where they'll match content and enforce protective actions on content. However, showing policy tips to users isn't supported for any conditions that are used apart from the ones mentioned above.
 
 ## Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types
 
-The list of out-of-the-box sensitive information types that will be detected for showing DLP policy tips in Outlook on Desktop (2013 and later) and Office apps (Word, Excel, PowerPoint) on Desktop are the following:
+For E3 licensed users, DLP policy tips are shown in Outlook 2013 and later for pre-configured SITs and custom SITs.
 
-- ABA Routing Number
-- Argentina National Identity (DNI) Number
-- Australia Bank Account Number
-- Australia Medical Account Number
-- Australia Passport Number
-- Australia Tax File Number
-- Azure DocumentDB Auth Key  
-- Azure IAAS Database Connection String and Azure SQL Connection String  
-- Azure IoT Connection String  
-- Azure Publish Setting Password  
-- Azure Redis Cache Connection String  
-- Azure SAS  
-- Azure Service Bus Connection String  
-- Azure Storage Account Key  
-- Azure Storage Account Key (Generic)  
-- Belgium National Number
-- Brazil CPF Number
-- Brazil Legal Entity Number (CNPJ)
-- Brazil National ID Card (RG)
-- Canada Bank Account Number
-- Canada Driver's License Number
-- Canada Health Service Number
-- Canada Passport Number
-- Canada Personal Health Identification Number (PHIN)
-- Canada Social Insurance Number
-- Chile Identity Card Number
-- China Resident Identity Card (PRC) Number
-- Credit Card Number
-- Croatia Identity Card Number  
-- Croatia Personal Identification (OIB) Number  
-- Czech Personal Identity Number  
-- Denmark Personal Identification Number
-- Drug Enforcement Agency (DEA) Number
-- EU Debit Card Number
-- EU Driver's License Number  
-- EU National Identification Number  
-- EU Passport Number  
-- EU Social Security Number (SSN) or Equivalent ID  
-- EU Tax Identification Number (TIN)  
-- Finland National ID
-- Finland Passport Number
-- France Driver's License Number
-- France National ID Card (CNI)
-- France Passport Number
-- France Social Security Number (INSEE)
-- German Driver's License Number
-- German Passport Number
-- Germany Identity Card Number
-- Greece National ID Card  
-- Hong Kong Identity Card (HKID) Number
-- India Permanent Account Number (PAN)
-- India Unique Identification (Aadhaar) Number
-- Indonesia Identity Card (KTP) Number
-- International Banking Account Number (IBAN)
-- International Classification of Diseases (ICD-10-CM)  
-- International Classification of Diseases (ICD-9-CM)  
-- IP Address
-- Ireland Personal Public Service (PPS) Number 
-- Israel Bank Account Number
-- Israel National ID
-- Italy Driver's License Number
-- Japan Bank Account Number
-- Japan Driver's License Number
-- Japan Passport Number
-- Japan Resident Registration Number
-- Japan Social Insurance Number (SIN)
-- Japanese Residence Card Number
-- Malaysia Identity Card Number
-- Netherlands Citizen's Service (BSN) Number  
-- New Zealand Ministry of Health Number
-- Norway Identity Number  
-- Philippines Unified Multi-Purpose ID Number
-- Poland Identity Card
-- Poland National ID (PESEL)
-- Poland Passport
-- Portugal Citizen Card Number
-- Saudi Arabia National ID
-- Singapore National Registration Identity Card (NRIC) Number
-- South Africa Identification Number  
-- South Korea Resident Registration Number
-- Spain Social Security Number (SSN)
-- SQL Server Connection String  
-- Sweden National ID
-- Sweden Passport Number
-- SWIFT Code
-- Taiwan National ID
-- Taiwan Passport Number
-- Taiwan Resident Certificate (ARC/TARC)
-- Thai Population Identification Code
-- Turkish National Identification number
-- U.K. Driver's License Number
-- U.K. Electoral Roll Number
-- U.K. National Health Service Number
-- U.K. National Insurance Number (NINO)
-- U.S. / U.K. Passport Number
-- U.S. Bank Account Number
-- U.S. Driver's License Number
-- U.S. Individual Taxpayer Identification Number (ITIN)
-- U.S. Social Security Number (SSN)
+For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later for policies that use:
 
-Note that some custom sensitive information types are also supported for DLP policy tips in addition to the above out-of-the-box sensitive information types.
+- [Preconfigured sensitive information types](sensitive-information-type-entity-definitions.md) (SITs)
+- Custom SITs
+- [Named entity SITs](named-entities-learn.md)
+- [Exact data match (EDM) SITs](sit-get-started-exact-data-match-based-sits-overview.md)
+- [Credential scanning SITs](sit-defn-all-creds.md)
+- [Trainable classifiers definitions](classifier-tc-definitions.md)
 
 > [!NOTE]
 > Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility. Office 2019 supports custom SITs that use Regular Expressions, Keyword Lists, and Keyword Dictionary only.
@@ -387,23 +271,24 @@ The list of out-of-the-box sensitive information types that will be detected in 
 - Ukraine Passport Number (Domestic) 
 - Ukraine Passport Number (International) 
  
-Please note that custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
+Custom sensitive information types (SITs) will also be detected in addition to the above out-of-the-box sensitive information types
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
-|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
+|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Conditions and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subset||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|subset|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook mobile|
+|**Outlook On the Web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset, see [Sensitive information types that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#sensitive-information-types-that-support-policy-tips-in-outlook-on-the-web) |Subset, see [Conditions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#conditions-that-support-policy-tips-in-outlook-on-the-web) and [Actions that support policy tips in Outlook on the Web](dlp-owa-policy-tips.md#actions-that-support-policy-tips-in-outlook-on-the-web)|For full details, see [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)|
+|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all SITS are supported for E5 users; pre-configured SITs and customer SITs are supported for E3 users|subset|See [Outlook 2013 and later supports showing policy tips for only some conditions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions) and [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
+|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported on Outlook mobile|
+|**Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on Outlook for Mac|
 |**SharePoint Online/OneDrive for Business Web client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all SPO/ODB predicates and actions in DLP||
-|**SharePoint Win32/ OneDrive for Business Win32 client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported on SharePoint or OneDrive desktop client apps|
+|**SharePoint Win32/ OneDrive for Business Win32 client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported on SharePoint or OneDrive desktop client apps|
 |**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all SPO/ODB predicates and actions in DLP|DLP policy tip is supported if the document is hosted on SPO or ODB web app and the DLP policy is already stamped.|
-|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips are not supported in mobile apps for Office.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all Teams predicates in DLP policy|Policy tips will show when a message is flagged as “This message has been flagged. What can I do?” When clicking the link, the user can review the sensitive info types detected and override or report an issue if allowed by the admin. Note that no policy tips are shown for files. When the recipient tries to access the document, they might get access denied if not allowed.|
+|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|DLP policy tips aren't supported in mobile apps for Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|all Teams predicates in DLP policy|Policy tips will show when a message is flagged as “This message has been flagged. What can I do?” When clicking the link, the user can review the sensitive info types detected and override or report an issue if allowed by the admin. No policy tips are shown for files. When the recipient tries to access the document, they might get access denied if not allowed.|
 |**Win32 Endpoint Devices**|:::image type="icon" source="../media/rightmrk.png" border="false":::|subset|all Endpoint DLP predicates and actions in DLP policy|See [Data Loss Prevention on Endpoint supports policy tips for only some sensitive information types](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**macOS devices**|default tips only|all|subset|Data loss prevention policies are enforceable on macOS devices. Custom policy tips are not supported.|
-|**3rd party cloud apps**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Data Loss Prevention policy tips are not supported on 3rd party cloud apps|
+|**macOS devices**|default tips only|all|subset|Data loss prevention policies are enforceable on macOS devices. Custom policy tips aren't supported.|
+|**3rd party cloud apps**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Data Loss Prevention policy tips aren't supported on third party cloud apps|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
-|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|subset|subset|Please see [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for the list of sensitive information types supported</br></br>Policy tips for WXP client apps will work for documents stored on SharePoint Online or OneDrive for Business Sites for all DLP policies which have exactly the below or a subset of conditions or actions in the DLP policy:</br> <ul><li>Content contains sensitive information types</li><li>Access Scope (Content is shared internally/externally)</li><li>Notify User (policy tips/user notifications)</li><li>Block everyone</li><li>Incident reports</li></ul></br> If any other condition or action is present, the DLP policy tip for that policy will not appear in the desktop apps of Word, Excel or PowerPoint.</br>See [Policy tips in Excel, PowerPoint, and Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) for more details|
+|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|subset|subset|See [Outlook 2013 and later and Office apps on Desktop support showing policy tips for only some sensitive information types](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) for the list of sensitive information types supported</br></br>Policy tips for WXP client apps will work for documents stored on SharePoint Online or OneDrive for Business Sites for all DLP policies that have exactly the below or a subset of conditions or actions in the DLP policy:</br> <ul><li>Content contains sensitive information types</li><li>Access Scope (Content is shared internally/externally)</li><li>Notify User (policy tips/user notifications)</li><li>Block everyone</li><li>Incident reports</li></ul></br> If any other condition or action is present, the DLP policy tip for that policy won't appear in the desktop apps of Word, Excel or PowerPoint.</br>See [Policy tips in Excel, PowerPoint, and Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) for more details|
 |**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|subset|subset|Data loss prevention policies in Power BI are in Public Preview. </br></br> Policy tips and admin alerts are supported. |

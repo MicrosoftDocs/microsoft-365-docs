@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 11/16/2021
+ms.date: 05/01/2023
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
@@ -54,7 +54,7 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 You may also want to jump right to key sections of our documentation using the links below:
 
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
-- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions): controls, assessments, templates, and improvement actions
+- [Overview of key elements](compliance-manager.md#key-elements-controls-assessments-regulations-improvement-actions): controls, assessments, regulations, and improvement actions
 - [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
@@ -215,9 +215,9 @@ Start by managing the lifecycle of sensitive data by managing it automatically u
 
 You can set a default retention label in SharePoint to automatically apply it to all items within a specific document library, folder, or document set in SharePoint. This option is useful when users store a specific type of document in one of these locations.
 
-First, identify the content you would like to manage and the location of the content in SharePoint. Next, [create a retention label](retention.md#retention-labels) with your desired retention or deletion settings. Finally, [publish the retention to the document library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+First, identify the content you would like to manage and the location of the content in SharePoint. Next, [create a retention label](create-retention-labels-data-lifecycle-management.md#how-to-create-retention-labels-for-data-lifecycle-management) with your desired retention or deletion settings. Then, [publish the retention label to SharePoint](create-apply-retention-labels.md#how-to-publish-retention-labels). Finally, apply the published label as a [default retention label in SharePoint](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
-### Step 3: Dynamically target retention policies with Adaptive Policy Scopes
+### Step 3: Dynamically target retention policies with adaptive policy scopes
 
 Many customers want to target a retention policy to specific users or mailboxes. For example, they may want to apply a longer retention period to the mailboxes of people in leadership roles or apply shorter retention to shared mailboxes. Adaptive policy scopes allow you to do this by using their AD attributes to target the policy. If one of the attribute values changes then the retention policy will automatically update its membership.
 
@@ -227,7 +227,7 @@ First, [decide what attributes you'll use to target](purview-adaptive-scopes.md#
 
 **Manage high-value items for business, legal, or regulatory record-keeping requirements**
 
-Records Management helps you to comply with more granular retention and deletion requirements. As an example, you can track your retention schedule or use flexible automation options. Additionally, you can make content immutable, trigger retention using an event, or require approval before items are disposed.
+Records management helps you to comply with more granular retention and deletion requirements. As an example, you can track your retention schedule or use flexible automation options. Additionally, you can make content immutable, trigger retention using an event, or require approval before items are disposed.
 
 Here are our most popular records management scenarios:
 
@@ -238,15 +238,16 @@ Here are our most popular records management scenarios:
 ### Step 1: Automatically apply a retention label based on SharePoint file metadata
 
 Auto-applying labels removes the need for your users to manually perform the labeling activities. As an example, you can auto-apply retention labels to content that has specific metadata properties in SharePoint.
-First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, [create a retention label](retention.md#retention-labels). Then, [follow the steps](auto-apply-retention-labels-scenario.md) to auto-apply the label based on SharePoint metadata.
+
+First, decide the metadata properties you would like to use, the locations where you want to look for matches, and the retention or deletion settings you want to apply. Next, [create a retention label](file-plan-manager.md). Then, [follow the steps](auto-apply-retention-labels-scenario.md) to auto-apply the label based on SharePoint metadata.
 
 ### Step 2: Review content to approve before it's permanently deleted
 
-Some organizations have a requirement to review content at the end of its retention period before it's permanently deleted. Using Records Management, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. Reviewers can also choose to assign a different retention period to the content or postpone deletion. Learn more here:   Disposition of content.
+Some organizations have a requirement to review content at the end of its retention period before it's permanently deleted. Using records management, users you specify ("reviewers") can be notified to review the content and approve the permanent disposal action. Reviewers can also choose to assign a different retention period to the content or postpone deletion. Learn more here:   [Disposition of content](disposition.md).
 
 ### Step 3: Make content immutable to prevent users from editing it
 
-Some content has a lifecycle phase where both the file and the metadata shouldn't be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in Records Management: [Create a retention label that declares content as a record or a regulatory record](declare-records.md).
+Some content has a lifecycle phase where both the file and the metadata shouldn't be available for editing, often called declaring the content as an immutable record. Learn how to configure this option in records management: [Create a retention label that declares content as a record or a regulatory record](declare-records.md).
 
 ## Manage insider risks
 
@@ -282,7 +283,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics check results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
 
-To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
+To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings-analytics.md) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
 
 > [!NOTE]
 > To enable insider risk analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin.

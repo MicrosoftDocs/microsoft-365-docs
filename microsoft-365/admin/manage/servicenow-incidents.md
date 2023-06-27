@@ -29,7 +29,7 @@ The Microsoft 365 support integration app enables you to create ServiceNow incid
 :::image type="content" source="../../media/servicenowincident1.png" alt-text="image of m365 servicehealth dashboard":::
 
 > [!NOTE]
-> This article was partially generated using Azure OpenAI Service. Before publishing, an author reviewed and revised the content as needed. See [Our principles for using AI-generated content in Microsoft Learn](/azure/principles-for-ai-generated-content).
+> This article was partially generated using Azure OpenAI Service. Before publishing, an author reviewed and revised the content as needed. See [Our principles for using AI-generated content in Microsoft Learn](https://aka.ms/ai-content-principles).
 
 When a Microsoft Service Health Incident is updated, the app posts the same updates to the ServiceNow incident. You can choose to have the app automatically close the ServiceNow incident when the Microsoft service health incident is resolved, or you can close it manually.
 
