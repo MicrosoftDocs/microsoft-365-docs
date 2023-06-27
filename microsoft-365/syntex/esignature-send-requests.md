@@ -22,7 +22,7 @@ description: Learn how to use Microsoft Syntex eSignature to send electronic sig
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Microsoft Syntex eSignature lets you safely and easily send PDF documents for signature to multiple recipients. It allows you to add a message and edit the name of the request, and to send it to multiple recipients while leveraging the security and compliance of Microsoft 365.
+Microsoft Syntex eSignature lets you safely and easily send PDF documents for signature to multiple recipients. It allows you to add a message and edit the name of the request, and to send it to multiple recipients while applying the security and compliance of Microsoft 365.
 
 ## Before you begin
 
@@ -46,27 +46,27 @@ You must be signed in to SharePoint Online by using your work email address.
 
     ![Screenshot of the Add form fields panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
 
-5. On the **Review request** panel, enter a title for the request, add an optional message, and review the details on the panel to make sure it is correct. Then select **Send**.
+5. On the **Review request** panel, enter a title for the request, add an optional message, and review the details on the panel to make sure it's correct. Then select **Send**.
 
     ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel.png)
 
-    Once sent, the status of the request is set to **In progress** and recipients will be able to add their signatures.
+    Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures.
 
 ### Troubleshoot creating requests
 
 #### PDF settings from the PDF viewer
 
-The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to request signatures won't be available if the PDF is viewed in any other way (for example, in Microsoft Edge). If  PDF files are opened in any other way, the **Get signatures** option is not available.
+The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to request signatures won't be available if the PDF is viewed in any other way (for example, in Microsoft Edge). If  PDF files are opened in any other way, the **Get signatures** option isn't available.
 
 #### Collaboration settings
 
-Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant, SharePoint site and library, folder and file level might impact whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant, SharePoint site and library, folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
-- The document has a sensitivity label applied that restricts access or sharing. This will limit who can start signature request with that document or the recipients that it can be sent to, depending on the label settings and the user's role.
+- The document has a sensitivity label applied that restricts access or sharing. This event limits who can start signature request with that document or the recipients that it can be sent to, depending on the label settings and the user's role.
 
-- The document is stored in a library or folder that has unique permissions or sharing settings. This might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
+- The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
-- Azure Active Directory (AAD) collaboration settings restrict document sharing to specific individuals. This will limit who the requests can be sent to.
+- Azure Active Directory collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 ### Cancel a signature request
 
@@ -82,7 +82,7 @@ If you create a signature request and want to cancel it, following these steps.
 
     ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
 
-    Once canceled, the status of the request is set to **Canceled** and recipients will receive a notification email telling them that the request was cancelled and that no further action will be possible on this request.
+    Once canceled, the status of the request is set to **Canceled** and recipients receive a notification email telling them that the request was canceled and that no further action will be possible on this request.
 
 ## Review and sign a signature request
 
@@ -105,7 +105,7 @@ To continue the electronic signing process, you must consent to the terms and co
 
 ### Sign the document
 
-Once you give your consent, the document viewer will open in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This will bring you to the first location where your input is needed.  
+Once you give your consent, the document viewer opens in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This action brings you to the first location where your input is needed.  
 
 ![Screenshot of the document to be signed showing the Start button.](../media/content-understanding/esignature-start-signing.png)
 
@@ -133,7 +133,7 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 In some locations within the document, you might be asked to add your initials to acknowledge a particular clause.
 
-1. Select **Initial here**, and enter your initials. This will be prepopulated if you have already entered your signature.
+1. Select **Initial here**, and enter your initials. This action will be prepopulated if you have already entered your signature.
 
     ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here.png)
 
@@ -150,9 +150,9 @@ When you have entered all of the required input, select **Submit** to complete t
 
 ![Screenshot of the completed document showing the Submit button.](../media/content-understanding/esignature-submit.png)
 
-The status of the request will change from **In progress** to **Completed**. The document will become read-only. You will get an email notification that your signature has been received and the requester will be notified.
+The status of the request changes from **In progress** to **Completed**. The document becomes read-only. You'll get an email notification that your signature has been received and the requester will be notified.
 
-Once everyone has signed the document, you will get an email notification where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
+Once everyone has signed the document, you'll get an email notification where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
 
 ### Decline to sign the document
 
@@ -166,15 +166,15 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
     ![Screenshot of the You are declining to sign this document screen.](../media/content-understanding/esignature-decline-to-sign-screen.png)
 
-Once you decline, you won't be able to add your signature but you will be able to see the document in read-only mode.
+Once you decline, you won't be able to add your signature, but you'll be able to see the document in read-only mode.
  
 Once you decline, a notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete signing process and change the status of the request from **In progress** to **Declined**.
   
-If there are additional recipients, they'll also receive a notification saying that the request has been declined.
+If there are more recipients, they'll also receive a notification saying that the request has been declined.
 
 ### View request history and details
 
-Whether you are a requester or a recipient, you can select **View request** from any of your notification emails to view the document and find out more about the request.
+Whether you're a requester or a recipient, you can select **View request** from any of your notification emails to view the document and find out more about the request.
 
 1. In the document viewer, select the **View history** tab to see the status of the request. On the **Request history** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
 
@@ -190,23 +190,23 @@ When you create a signature request with Syntex eSignature, it goes through diff
 
 |Status  |Description  |
 |---------|---------|
-|**In progress**  |The request is in progress as soon as it is created. The status remains at this state until the request has been reviewed by all recipients or cancelled by the sender of the request.|
+|**In progress**  |The request is in progress as soon as it's created. The status remains at this state until the request has been reviewed by all recipients or canceled by the sender of the request.|
 |**Completed**   |The request is completed when all recipients have signed the document. |
-|**Cancelled**   |The request has been cancelled by the sender. |
+|**Canceled**   |The request has been canceled by the sender. |
 |**Declined**    |One of the recipients has declined to sign.|
 
-When the status of a request is **Completed**, **Cancelled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a request is declined by a recipient, the sender would need to send a new request after the reason for declining has been addressed. The original declined request cannot be edited.
+When the status of a request is **Completed**, **Canceled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a recipient declines a request, the sender would need to send a new request after the reason for declining has been addressed. The original declined request can't be edited.
 
 ## Access the signed document
 
-All parties involved in the request will receive a notification email saying that the request has been completed and the status of the request will be **Completed**.  In the email, you can select **View request** to access the signed document and the request history. Access to the document via the notification email will be available for 30 days after the request is completed.
+All parties involved in the request receive a notification email saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View request** to access the signed document and the request history. Access to the document via the notification email will be available for 30 days after the request is completed.
 
-Additionally, the signed document also will be saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
+Additionally, the signed document also is saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
 
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
 
-### Access to the signed documents in SharePoint
+### Unable to access to the signed document
 
 Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
@@ -225,7 +225,7 @@ To avoid potential issues, you should check the status and settings of their doc
 
 ## Security of the signed document
 
-After all recipients have signed, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. This provides evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it cannot be tampered with.  
+After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
 For technical details about the certificate and the signing process, see [Set up Microsoft Syntex eSignature](esignature-set-up.md).
 
