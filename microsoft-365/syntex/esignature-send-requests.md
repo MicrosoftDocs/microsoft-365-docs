@@ -28,7 +28,7 @@ Microsoft Syntex eSignature lets you safely and easily send PDF documents for si
 
 Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-set-up) in the Microsoft 365 admin center.
 
-You must be signed in to SharePoint Online with your work email.
+You must be signed in to SharePoint Online by using your work email address.
 
 ## Create a signature request
 
@@ -99,7 +99,7 @@ When you receive the notification email, select **View request** in the email to
 To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **Electronic Record and Signature Disclosure** screen:
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
-- Or select **Decline** if you'd prefer not to use your digital signature, and contact the person who requested your signature to complete the signature by using a different method.
+- Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
 
 ![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
 
@@ -126,7 +126,7 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 2. Select **Done** to add your signature to the document.
 
     ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added.png)
-	 
+
 3. Select **Next** to go to the next location in the document that requires your input.
 
 #### Initials
@@ -143,6 +143,8 @@ In some locations within the document, you might be asked to add your initials t
 #### Date
 
 The date will be prepopulated with the current day’s date.
+
+### Submit the signed document
 
 When you have entered all of the required input, select **Submit** to complete the signing process.
 
