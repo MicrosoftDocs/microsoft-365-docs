@@ -47,13 +47,13 @@ You must have Global admin or SharePoint admin permissions to be able to access 
     To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites.
 
 5. Select **Save**.
-<!---
-### Disable Syntex eSignature
 
-1. On the **Manage Microsoft Syntex** page, select **eSignature**.
+### Turn off Syntex eSignature
 
-2. On the **Disable eSignature** page, select **Disable**.
---->
+1. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
+
+2. On the **Turn off Syntex eSignature** page, select **Turn off**.
+
 
 ## Document storage
 

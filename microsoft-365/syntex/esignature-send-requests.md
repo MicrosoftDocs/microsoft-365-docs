@@ -184,41 +184,46 @@ Whether you are a requester or a recipient, you can select **View request** from
 
 ## Monitor the status of a request
 
-When you create an signature request Syntex eSignature, it goes through different stages that are reflected in the request statuses. The status of a request is visible when you open the request document by clicking any of the email notifications you received about the eSignature request. The following table shows the request statuses and their meaning. 
+When you create an signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning. 
 
 |Status  |Description  |
 |---------|---------|
-|In progress  |A request is in progress as soon as it is created. The status remains at this state until the request has been reviewed by all recipients or cancelled by the sender of the request.|
-|Completed   |A request is completed when all recipients have signed the document. |
-|Cancelled   |This status of a request when it is cancelled by the sender. |
-|Declined    |This is the status of a request when one of the recipients declined to sign.|
+|**In progress**  |A request is in progress as soon as it is created. The status remains at this state until the request has been reviewed by all recipients or cancelled by the sender of the request.|
+|**Completed**   |A request is completed when all recipients have signed the document. |
+|**Cancelled**   |This status of a request when it is cancelled by the sender. |
+|**Declined**    |This is the status of a request when one of the recipients declined to sign.|
 
-### Terminal statuses
-
-When a request reaches a terminal state, it can no longer be acted on by either the sender or the recipients. Terminal statuses are **Completed**, **Cancelled**, and **Declined**. As an example, if a request is declined by a recipient, the sender would need to send a new request after the reason for declining has been addressed. The original declined request cannot be edited.
+When the status of a request is **Completed**, **Cancelled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a request is declined by a recipient, the sender would need to send a new request after the reason for declining has been addressed. The original declined request cannot be edited.
 
 ## Access the signed document
 
-All parties involved in the request will receive a notification email saying that the request has been completed and the status of the request will be *Completed*.  In the email, you can select **View request** to access the signed document and the request history. Access to the document via the notification email will be available for 30 days after the request is completed.
+All parties involved in the request will receive a notification email saying that the request has been completed and the status of the request will be **Completed**.  In the email, you can select **View request** to access the signed document and the request history. Access to the document via the notification email will be available for 30 days after the request is completed.
 
 Additionally, the signed document also will be saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
 
 > [!NOTE]
-> When open the document on a SharePoint site, if your default PDF viewer is set to Adobe you won't see the details of the request when you click on the PDF. To set the PDF viewer as your default viewer, do the following…
+> When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
 
-Why can’t I find my signed documents in SharePoint?
-Before sending a signature request and at completion, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. We may not be able to save a copy of the signed document in the originating folder if the permission changes when the eSign request is in progress. This can happen when:
-1.	The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or SharePoint admin.
-2.	Initial write permissions of the sender to the originating folder were downgraded to view only
-3.	The originating folder was deleted. 
+### Access to the signed documents in SharePoint
 
-To avoid potential issues, you should check the status and settings of their documents before starting an eSignature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients. 
-•	Data loss prevention (DLP) policies
-•	AAD collaboration settings
-•	SharePoint sharing settings and policies
-•	User permissions and document access
-Security of the signed document
-After all recipients have signed, the signatures will be added and an Audit trail will be appended to the signed PDF.  Details of the request including activities and timestamps of when they occurred throughout the signing process will be included e.g. date and time request created, recipient signed, etc. This provides evidence of the integrity of the signing process.   The signed document will then be digitally signed by a Microsoft certificate to ensure that it cannot be tampered with.  
+Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
-Technical details of the certificate and the signing process can be found here Add link to Admin documentation
+- The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or a SharePoint admin.
+
+- Initial write permission of the sender to the originating folder was downgraded to view only.
+
+- The originating folder was deleted.
+
+To avoid potential issues, you should check the status and settings of their documents before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
+
+- Data loss prevention (DLP) policies
+- Azure Active Directory collaboration settings
+- SharePoint sharing settings and policies
+- User permissions and document access
+
+## Security of the signed document
+
+After all recipients have signed, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. This provides evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it cannot be tampered with.  
+
+For technical details about the certificate and the signing process, see [Set up Microsoft Syntex eSignature](esignature-set-up.md).
 
