@@ -66,213 +66,217 @@ For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later f
 > [!NOTE]
 > Not all elements of custom sensitive information types are compatible with every version of Office. Entity elements for Custom SITs, such as Functions, may cause incompatibility. Office 2019 supports custom SITs that use Regular Expressions, Keyword Lists, and Keyword Dictionary only.
 
+ -->
 
-- ABA Routing Number 
-- Argentina National Identity (DNI) Number 
-- Australia Bank Account Number 
-- Australia Medical Account Number 
-- Australia Passport Number 
-- Australia Tax File Number 
-- Australian Business Number 
-- Australian Company Number 
-- Austria Driver's License Number 
-- Austria Identity Card 
-- Austria Passport Number 
-- Austria Social Security Number 
-- Austria Tax Identification Number 
-- Austria Value Added Tax (VAT) Number 
-- Azure DocumentDB Auth Key 
-- Azure IAAS Database Connection String and Azure SQL Connection String 
-- Azure IoT Connection String 
-- Azure Publish Setting Password 
-- Azure Redis Cache Connection String 
-- Azure SAS 
-- Azure Service Bus Connection String 
-- Azure Storage Account Key 
-- Azure Storage Account Key (Generic) 
-- Belgium Driver's License Number 
-- Belgium National Number 
-- Belgium Passport Number 
-- Belgium Value Added Tax Number 
-- Brazil CPF Number 
-- Brazil Legal Entity Number (CNPJ) 
-- Brazil National ID Card (RG) 
-- Bulgaria Driver's License Number 
-- Bulgaria Passport Number 
-- Bulgaria Uniform Civil Number 
-- Canada Bank Account Number 
-- Canada Driver's License Number 
-- Canada Health Service Number 
-- Canada Passport Number 
-- Canada Personal Health Identification Number (PHIN) 
-- Canada Social Insurance Number 
-- Chile Identity Card Number 
-- China Resident Identity Card (PRC) Number 
-- Credit Card Number 
-- Croatia Driver's License Number 
-- Croatia Identity Card Number 
-- Croatia National ID Card Number 
-- Croatia Passport Number 
-- Croatia Personal Identification (OIB) Number 
-- CSCAN-AZURE0060 Azure Storage Account Shared Access Signature 
-- CSCAN-GENERAL0140 General Symmetric Key 
-- Cyprus Driver's License Number 
-- Cyprus Identity Card 
-- Cyprus Passport Number 
-- Cyprus Tax Identification Number 
-- Czech Driver's License Number 
-- Czech Personal Identity Number 
-- Czech Republic Passport Number 
-- Denmark Driver's License Number 
-- Denmark Passport Number 
-- Denmark Personal Identification Number 
-- Drug Enforcement Agency (DEA) Number 
-- Estonia Driver's License Number 
-- Estonia Passport Number 
-- Estonia Personal Identification Code 
-- EU Debit Card Number 
-- EU Driver's License Number 
-- EU National Identification Number 
-- EU Passport Number 
-- EU Social Security Number (SSN) or Equivalent ID 
-- EU Tax Identification Number (TIN) 
-- Finland Driver's License Number 
-- Finland European Health Insurance Number 
-- Finland National ID 
-- Finland Passport Number 
-- France Driver's License Number 
-- France Health Insurance Number 
-- France National ID Card (CNI) 
-- France Passport Number 
-- France Social Security Number (INSEE) 
-- France Tax Identification Number (numéro SPI.) 
-- France Value Added Tax Number 
-- German Driver's License Number 
-- German Passport Number 
-- Germany Identity Card Number 
-- Germany Tax Identification Number 
-- Germany Value Added Tax Number 
-- Greece Driver's License Number 
-- Greece National ID Card 
-- Greece Passport Number 
-- Greece Social Security Number (AMKA) 
-- Greek Tax identification Number 
-- Hong Kong Identity Card (HKID) Number 
-- Hungarian Social Security Number (TAJ) 
-- Hungarian Value Added Tax Number 
-- Hungary Driver's License Number 
-- Hungary Passport Number 
-- Hungary Personal Identification Number 
-- Hungary Tax identification Number 
-- India Permanent Account Number (PAN) 
-- India Unique Identification (Aadhaar) Number 
-- Indonesia Identity Card (KTP) Number 
-- International Banking Account Number (IBAN) 
-- International Classification of Diseases (ICD-10-CM) 
-- International Classification of Diseases (ICD-9-CM) 
-- IP Address 
-- Ireland Driver's License Number 
-- Ireland Passport Number 
-- Ireland Personal Public Service (PPS) Number 
-- Israel Bank Account Number 
-- Israel National ID 
-- Italy Driver's License Number 
-- Italy Fiscal Code 
-- Italy Passport Number 
-- Italy Value Added Tax Number 
-- Japan Bank Account Number 
-- Japan Driver's License Number 
-- Japan Passport Number 
-- Japan Resident Registration Number 
-- Japan Social Insurance Number (SIN) 
-- Japanese My Number Corporate 
-- Japanese My Number Personal 
-- Japanese Residence Card Number 
-- Latvia Driver's License Number 
-- Latvia Passport Number 
-- Latvia Personal Code 
-- Lithuania Driver's License Number 
-- Lithuania Passport Number 
-- Lithuania Personal Code 
-- Luxemburg Driver's License Number 
-- Luxemburg National Identification Number (Natural persons) 
-- Luxemburg National Identification Number (Non-natural persons) 
-- Luxemburg Passport Number 
-- Malaysia Identity Card Number 
-- Malta Driver's License Number 
-- Malta Identity Card Number 
-- Malta Passport Number 
-- Malta Tax ID Number 
-- Netherlands Citizen's Service (BSN) Number 
-- Netherlands Driver's License Number 
-- Netherlands Passport Number 
-- Netherlands Tax Identification Number 
-- Netherlands Value Added Tax Number 
-- New Zealand bank account number 
-- New Zealand Driver License Number 
-- New Zealand Inland Revenue number 
-- New Zealand Ministry of Health Number 
-- New Zealand Social Welfare Number 
-- Norway Identity Number 
-- Philippines Unified Multi-Purpose ID Number 
-- Poland Driver's License Number 
-- Poland Identity Card 
-- Poland National ID (PESEL) 
-- Poland Passport 
-- Poland Tax Identification Number 
-- Polish REGON Number 
-- Portugal Citizen Card Number 
-- Portugal Driver's License Number 
-- Portugal Passport Number 
-- Portugal Tax Identification Number 
-- Romania Driver's License Number 
-- Romania Passport Number 
-- Romania Personal Numerical Code (CNP) 
-- Russian Passport Number (Domestic) 
-- Russian Passport Number (International) 
-- Saudi Arabia National ID 
-- Singapore National Registration Identity Card (NRIC) Number 
-- Slovakia Driver's License Number 
-- Slovakia Passport Number 
-- Slovakia Personal Number 
-- Slovenia Driver's License Number 
-- Slovenia Passport Number 
-- Slovenia Tax Identification Number 
-- Slovenia Unique Master Citizen Number 
-- South Africa Identification Number 
-- South Korea Resident Registration Number 
-- Spain DNI 
-- Spain Driver's License Number 
-- Spain Passport Number 
-- Spain Social Security Number (SSN) 
-- Spain Tax Identification Number 
-- SQL Server Connection String 
-- Sweden Driver's License Number 
-- Sweden National ID 
-- Sweden Passport Number 
-- Sweden Tax Identification Number 
-- SWIFT Code 
-- Swiss Social Security Number AHV 
-- Taiwan National ID 
-- Taiwan Passport Number 
-- Taiwan Resident Certificate (ARC/TARC) 
-- Thai Population Identification Code 
-- Turkish National Identification number 
-- U.K. Driver's License Number 
-- U.K. Electoral Roll Number 
-- U.K. National Health Service Number 
-- U.K. National Insurance Number (NINO) 
-- U.K. Unique Taxpayer Reference Number 
-- U.S. / U.K. Passport Number 
-- U.S. Bank Account Number 
-- U.S. Driver's License Number 
-- U.S. Individual Taxpayer Identification Number (ITIN) 
-- U.S. Social Security Number (SSN) 
-- Ukraine Passport Number (Domestic) 
-- Ukraine Passport Number (International) 
--->
- 
-<!--Custom sensitive information types (SITs) will also be detected in addition to the above out-of-the-box sensitive information types-->
+## Data Loss Prevention on endpoint devices supports policy tips for only some sensitive information types
+
+These sensitive information types (SIT)s can be detected on endpoint devices:
+
+- [ABA routing number](sit-defn-aba-routing.md)
+- [Argentina national identity (DNI) number](sit-defn-argentina-national-identity-numbers.md)
+- [Australia bank account number](sit-defn-australia-bank-account-number.md)
+- [Australia medical account number](sit-defn-australia-medical-account-number.md)
+- [Australia passport number](sit-defn-australia-passport-number.md)
+- [Australia tax file number](sit-defn-australia-tax-file-number.md)
+- [Australia business number](sit-defn-australia-business-number.md)
+- [Australia Company Number](sit-defn-australia-company-number.md)
+- [Austria Driver's License Number](sit-defn-austria-drivers-license-number.md)
+- [Austria Identity Card](sit-defn-austria-identity-card.md)
+- [Austria Passport Number](sit-defn-austria-passport-number.md)
+- [Austria Social Security Number](sit-defn-austria-social-security-number.md)
+- [Austria Tax Identification Number](sit-defn-austria-tax-identification-number.md)
+- [Austria value added tax](sit-defn-austria-value-added-tax.md)
+- [Azure DocumentDB auth key](sit-defn-azure-document-db-auth-key.md)
+- [Azure IAAS database connection string and Azure SQL connection string](sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md)
+- [Azure IoT connection string](sit-defn-azure-iot-connection-string.md)
+- [Azure publish setting password](sit-defn-azure-publish-setting-password.md)
+- [Azure Redis cache connection string](sit-defn-azure-redis-cache-connection-string.md)
+- [Azure SAS](sit-defn-azure-sas.md)
+- [Azure service bus connection string](sit-defn-azure-service-bus-connection-string.md)
+- [Azure storage account key](sit-defn-azure-storage-account-key.md)
+- [Azure Storage account key (generic)](sit-defn-azure-storage-account-key-generic.md)
+- [Belgium drivers license number](sit-defn-belgium-drivers-license-number.md)
+- [Belgium National Number](sit-defn-belgium-national-number.md)
+- [Belgium passport number](sit-defn-belgium-passport-number.md)
+- [Belgium value added tax number](sit-defn-belgium-value-added-tax-number.md)
+- [Brazil CPF number](sit-defn-brazil-cpf-number.md)
+- [Brazil legal entity number (CNPJ)](sit-defn-brazil-legal-entity-number.md)
+- [Brazil national identification card (RG)](sit-defn-brazil-national-identification-card.md)
+- [Bulgaria drivers license number](sit-defn-bulgaria-drivers-license-number.md)
+- [Bulgaria passport number](sit-defn-bulgaria-passport-number.md)
+- [Bulgaria Uniform Civil Number](sit-defn-bulgaria-uniform-civil-number.md)
+- [Canada bank account number](sit-defn-canada-bank-account-number.md)
+- Canada Driver's License Number
+- Canada Health Service Number
+- Canada Passport Number
+- Canada Personal Health Identification Number (PHIN)
+- Canada Social Insurance Number
+- Chile Identity Card Number
+- China Resident Identity Card (PRC) Number
+- Credit Card Number
+- Croatia Driver's License Number
+- Croatia Identity Card Number
+- Croatia National ID Card Number
+- Croatia Passport Number
+- Croatia Personal Identification (OIB) Number
+- Azure Storage Account Shared Access Signature
+- General Symmetric Key
+- Cyprus Driver's License Number
+- Cyprus Identity Card
+- Cyprus Passport Number
+- Cyprus Tax Identification Number
+- Czech Driver's License Number
+- Czech Personal Identity Number
+- Czech Republic Passport Number
+- Denmark Driver's License Number
+- Denmark Passport Number
+- Denmark Personal Identification Number
+- Drug Enforcement Agency (DEA) Number
+- [Estonia drivers license number](sit-defn-estonia-drivers-license-number.md#estonia-drivers-license-number)
+- Estonia Passport Number
+- Estonia Personal Identification Code
+- EU Debit Card Number
+- EU Driver's License Number
+- EU National Identification Number
+- EU Passport Number
+- EU Social Security Number (SSN) or Equivalent ID
+- EU Tax Identification Number (TIN)
+- Finland Driver's License Number
+- Finland European Health Insurance Number
+- Finland National ID
+- Finland Passport Number
+- France Driver's License Number
+- France Health Insurance Number
+- France National ID Card (CNI)
+- France Passport Number
+- France Social Security Number (INSEE)
+- France Tax Identification Number (numéro SPI.)
+- France Value Added Tax Number
+- German Driver's License Number
+- German Passport Number
+- Germany Identity Card Number
+- Germany Tax Identification Number
+- Germany Value Added Tax Number
+- Greece Driver's License Number
+- Greece National ID Card
+- Greece Passport Number
+- Greece Social Security Number (AMKA)
+- Greek Tax identification Number
+- Hong Kong Identity Card (HKID) Number
+- Hungarian Social Security Number (TAJ)
+- Hungarian Value Added Tax Number
+- Hungary Driver's License Number
+- Hungary Passport Number
+- Hungary Personal Identification Number
+- Hungary Tax identification Number
+- India Permanent Account Number (PAN)
+- India Unique Identification (Aadhaar) Number
+- Indonesia Identity Card (KTP) Number
+- International Banking Account Number (IBAN)
+- International Classification of Diseases (ICD-10-CM)
+- International Classification of Diseases (ICD-9-CM)
+- IP Address
+- Ireland Driver's License Number
+- Ireland Passport Number
+- Ireland Personal Public Service (PPS) Number
+- Israel Bank Account Number
+- Israel National ID
+- Italy Driver's License Number
+- Italy Fiscal Code
+- Italy Passport Number
+- Italy Value Added Tax Number
+- Japan Bank Account Number
+- Japan Driver's License Number
+- Japan Passport Number
+- Japan Resident Registration Number
+- Japan Social Insurance Number (SIN)
+- Japanese My Number Corporate
+- Japanese My Number Personal
+- Japanese Residence Card Number
+- Latvia Driver's License Number
+- Latvia Passport Number
+- Latvia Personal Code
+- Lithuania Driver's License Number
+- Lithuania Passport Number
+- Lithuania Personal Code
+- [Luxemburg drivers license number](sit-defn-luxemburg-drivers-license-number.md)
+- [Luxemburg national identification number (natural persons)](sit-defn-luxemburg-national-identification-number-natural-persons.md)
+- [Luxemburg national identification number (non-natural persons)](sit-defn-luxemburg-national-identification-number-non-natural-persons.md)
+- [Luxemburg passport number](sit-defn-luxemburg-passport-number.md)
+- Malaysia Identity Card Number
+- Malta Driver's License Number
+- Malta Identity Card Number
+- Malta Passport Number
+- Malta Tax ID Number
+- Netherlands Citizen's Service (BSN) Number
+- Netherlands Driver's License Number
+- Netherlands Passport Number
+- Netherlands Tax Identification Number
+- Netherlands Value Added Tax Number
+- New Zealand bank account number
+- New Zealand Driver License Number
+- New Zealand Inland Revenue number
+- New Zealand Ministry of Health Number
+- New Zealand Social Welfare Number
+- Norway Identity Number
+- Philippines Unified Multi-Purpose ID Number
+- Poland Driver's License Number
+- Poland Identity Card
+- Poland National ID (PESEL)
+- Poland Passport
+- Poland Tax Identification Number
+- Polish REGON Number
+- Portugal Citizen Card Number
+- Portugal Driver's License Number
+- Portugal Passport Number
+- Portugal Tax Identification Number
+- Romania Driver's License Number
+- Romania Passport Number
+- Romania Personal Numerical Code (CNP)
+- Russian Passport Number (Domestic)
+- Russian Passport Number (International)
+- Saudi Arabia National ID
+- [Singapore national registration identity card (NRIC) number](sit-defn-singapore-national-registration-identity-card-number.md)
+- Slovakia Driver's License Number
+- Slovakia Passport Number
+- Slovakia Personal Number
+- Slovenia Driver's License Number
+- Slovenia Passport Number
+- Slovenia Tax Identification Number
+- Slovenia Unique Master Citizen Number
+- South Africa Identification Number
+- South Korea Resident Registration Number
+- Spain DNI
+- Spain Driver's License Number
+- Spain Passport Number
+- Spain Social Security Number (SSN)
+- Spain Tax Identification Number
+- SQL Server Connection String
+- Sweden Driver's License Number
+- Sweden National ID
+- Sweden Passport Number
+- Sweden Tax Identification Number
+- SWIFT Code
+- Swiss Social Security Number AHV
+- Taiwan National ID
+- Taiwan Passport Number
+- Taiwan Resident Certificate (ARC/TARC)
+- Thai Population Identification Code
+- Turkish National Identification number
+- U.K. Driver's License Number
+- U.K. Electoral Roll Number
+- U.K. National Health Service Number
+- U.K. National Insurance Number (NINO)
+- U.K. Unique Taxpayer Reference Number
+- [U.S./U.K. passport number](sit-defn-us-uk-passport-number.md)
+- [U.S. bank account number](sit-defn-us-bank-account-number.md)
+- [U.S. drivers license number](sit-defn-us-drivers-license-number.md)
+- [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
+- [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)
+- [Ukraine passport domestic](sit-defn-ukraine-passport-domestic.md)
+- [Ukraine passport international](sit-defn-ukraine-passport-international.md)
+
+Custom sensitive information types  will also be detected in addition to the above out-of-the-box sensitive information types.
 
 ## Support Matrix for DLP policy tips across Microsoft apps
 
