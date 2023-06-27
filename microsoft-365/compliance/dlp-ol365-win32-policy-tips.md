@@ -1,11 +1,11 @@
 ---
-title: "Data loss prevention policy tip reference for Outlook 365 for Win32"
+title: "Data loss prevention policy tip reference for Outlook for Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/23/2023
+ms.date: 06/27/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -22,13 +22,13 @@ recommendations: false
 description: "DLP policy tip reference for Outlook 365 for Win32."
 ---
 
-# Data loss prevention policy tip reference for Outlook 365 for Win32
+# Data loss prevention policy tip reference for Outlook for Microsoft 365
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 
 > [!NOTE]
-> Microsoft Purview data loss prevention will only process the first four MB on message content for policy tip in Outlook 365 for Win32 and only classify up to two MB of attchments.
+> Microsoft Purview data loss prevention will only process the first four MB on message content for policy tip in Outlook for Microsoft 365 and only classify up to two MB of attchments.
 
 ## DLP policy tips supported
 
@@ -49,7 +49,7 @@ Yes
 |---------|---------|
 |-E3 users</br>-E5 users    |- Content contains sensitive information types </br>- Content is shared from Microsoft 365 |
 
-## Conditions that support policy tips for Microsoft 365 for Enterprise Outlook users
+## Conditions that support policy tips for Outlook for Microsoft 365 users
 
 |For Microsoft 365 for Enterprise Outlook versions and users  |These conditions apply|
 |---------|---------|
@@ -336,7 +336,7 @@ For more information on document fingerprint SITs, see [Document fingerprinting]
 
 Applies to:
 
-- Outlook versions that are included in Microsoft 365 for Enterprise
+- Outlook versions that are included in Outlook for Microsoft 365
 - E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
 
