@@ -21,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - business_assist
-description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account."
+description: "Learn how you can add more than one email address, called an email alias to users in your Microsoft 365 organization."
 ---
 
 # Add another email alias for a Microsoft 365 business subscription user
   
-A primary email address in Microsoft 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Microsoft 365 for business account. These additional addresses are called aliases. You can create up to 400 aliases for a user. No additional fees or licenses are required.
+A primary email address in Microsoft 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Microsoft 365 for business account. These additional addresses are called aliases. You can create up to 400 aliases for a user. No additional fees or licenses are required. This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
 
 For example, Jenna at your organization has the email address jenna@contosoco.com, but she also wants to receive email at jen@contosoco.com because some people refer to her by that name. You can create aliases for her so that email sent to both email addresses go to Jenna's inbox.
   
