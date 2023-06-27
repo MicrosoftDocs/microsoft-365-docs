@@ -346,6 +346,8 @@
           items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
         - name: Information barriers & SharePoint
           items:
             - name: SharePoint and information barriers
@@ -354,6 +356,8 @@
               href: information-barriers-sharepoint-assistant.md
             - name: SharePoint information barriers policy compliance report
               href: information-barriers-sharepoint-report.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -1313,8 +1317,8 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions
-              href: dlp-conditions-and-exceptions.md
+            - name: Data loss prevention Exchange conditions and actions reference
+              href: dlp-exchange-conditions-and-actions.md
             - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference

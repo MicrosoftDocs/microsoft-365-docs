@@ -19,16 +19,15 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/21/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -210,7 +209,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 2. On the **Safe Links** page, select the Safe Links policy by using either of the following methods:
 
-   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** drop down list that appears:
+   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** dropdown list that appears:
      - **Enable selected policies**.
      - **Disable selected policies**.
      - **Delete selected policies**.
