@@ -115,26 +115,34 @@ There are three different types of input you can be asked for:
 - Initials
 - Date
 
-Signature
-Electronic signatures enable you to digitally sign a document by enabling you to add a representation of your physical signature.  
-To add your signature, type your name and choose a font.	 
-	
-Clicking Done will add your signature to the document:
-	 
-	
-Clicking Next will bring you to the next location requiring input
-	 
+#### Signature
 
-Initials
-In some locations within the document, you may be asked to add your initials to acknowledge a particular clause.
-Click Initial here to add your initials
+Electronic signatures let you digitally sign a document by enabling you to add a representation of your physical signature.  
+
+1. To add your signature, type your name. If you want to choose a different font style for your signature, select **Change font** and choose the font you want to use.
+
+    ![Screenshot of setting up your name and font for your signature.](../media/content-understanding/esignature-name-and-font.png)
+
+2. Select **Done** to add your signature to the document.
+
+    ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added.png)
 	 
-	
-Enter your initials. This will be prepopulated if you have entered your signature already. 
-Hit Done when complete	 
-			
-Date
-The date will be prepopulated as today’s date.	 
+3. Select **Next** to go to the next location in the document that requires your input.
+
+#### Initials
+
+In some locations within the document, you might be asked to add your initials to acknowledge a particular clause.
+
+1. Select **Initial here**, and enter your initials. This will be prepopulated if you have already entered your signature.
+
+    ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here.png)
+
+
+2. Select **Next** to go to the next location in the document that requires your input.
+
+#### Date
+
+The date will be prepopulated with today’s date.
 
 Once you have entered input in all the requested locations within the document, the Submit button will be enabled.  Clicking this will complete signing process and change the status of the request from In Progress to Completed. The document will become read only. You will get an email notification that your signature has been received and the Creator will be notified.
 Once everyone has signed the document, you will get an email notification where you can view the document and request details.  The document is available via View Request button in the email for 30 days, so make sure you download it for your own records.
