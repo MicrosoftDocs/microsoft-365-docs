@@ -142,18 +142,45 @@ In some locations within the document, you might be asked to add your initials t
 
 #### Date
 
-The date will be prepopulated with today’s date.
+The date will be prepopulated with the current day’s date.
 
-Once you have entered input in all the requested locations within the document, the Submit button will be enabled.  Clicking this will complete signing process and change the status of the request from In Progress to Completed. The document will become read only. You will get an email notification that your signature has been received and the Creator will be notified.
-Once everyone has signed the document, you will get an email notification where you can view the document and request details.  The document is available via View Request button in the email for 30 days, so make sure you download it for your own records.
+When you have entered all of the required input, select **Submit** to complete the signing process.
 
-Declining to sign the document
-If you review the document and don’t wish to sign it, you can decline to sign by clicking on the Decline to Sign button found in the overflow menu:
+![Screenshot of the completed document showing the Submit button.](../media/content-understanding/esignature-submit.png)
 
+The status of the request will change from **In progress** to **Completed**. The document will become read-only. You will get an email notification that your signature has been received and the requester will be notified.
+
+Once everyone has signed the document, you will get an email notification where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
+
+### Decline to sign the document
+
+If you review the document and don’t want to sign it, you can decline to sign.
+
+1. In the document viewer, select **More options** (...), and then select **Decline to sign**.
+
+    ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign.png)
+
+2. On the **You are declining to sign this document** screen, enter a reason for not signing document, and then select **Decline**. Or if you change your mind, select **Go back**.
+
+    ![Screenshot of the You are declining to sign this document screen.](../media/content-understanding/esignature-decline-to-sign-screen.png)
+
+Once you decline, you won't be able to add your signature but you will be able to see the document in read-only mode.
  
-
-You can enter a reason for not signing document and then hit Decline to complete the request.  Or hit Go back if you change your mind.  Once you hit Decline, you will not be able to add your signature but will be able to see the document in read-only mode.
- 
-Declining to sign will send a notification to the creator saying that you don’t wish to sign the document. Declining to Sign will complete signing process and change the status of the request from In Progress to Declined.
+Once you decline, a notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete signing process and change the status of the request from **In progress** to **Declined**.
   
-If there are additional recipients, they will also get a notification saying that the request has been declined.   
+If there are additional recipients, they'll also receive a notification saying that the request has been declined.
+
+### View request history and details
+
+Whether you are a requester or a recipient, you can select **View request** from any of your notification emails to view the document and find out more about the request.
+
+1. In the document viewer, select the **View history** tab to see the status of the request. On the **Request history** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
+
+    ![Screenshot of the View history tab and the Request history panel.](../media/content-understanding/esignature-view-history.png)
+
+2. Select the **View details** tab to see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
+
+    ![Screenshot of the View details tab and the Request details panel.](../media/content-understanding/esignature-view-details.png)
+
+## Signature statuses
+
