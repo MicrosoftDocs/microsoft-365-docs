@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 06/19/2023
+ms.date: 06/26/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -32,7 +32,7 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Defen
 ## What to do
 
 1. [Learn about roles in Defender for Business](#roles-in-defender-for-business).
-2. [View or edit role assignments for your security team](#view-or-edit-role-assignments).
+2. [View or edit role assignments for your security team](#view-and-edit-role-assignments).
 3. [Proceed to your next steps](#next-steps).
 
 
@@ -46,27 +46,31 @@ The following table describes the three roles that can be assigned in Defender f
 | **Security administrators** (also referred to as security admins) | Security admins can perform the following tasks: <br/>- View and manage security policies<br/>- View, respond to, and manage alerts <br/>- Take response actions on devices with detected threats<br/>- View security information and reports <br/><br/>In general, security admins use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) to perform security tasks. |
 | **Security reader** | Security readers can perform the following tasks:<br/>- View a list of onboarded devices<br/>- View security policies<br/>- View alerts and detected threats<br/>- View security information and reports <br/><br/>Security readers cannot add or edit security policies, nor can they onboard devices. |
 
-## View or edit role assignments
+## View and edit role assignments
+
+> [!IMPORTANT]
+> Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
 
-3. Select one of the following roles to open its side pane:
+3. Select one of the following roles that are relevant to Defender for Business:
 
-   - Global Administrator
-   - Security Administrator
-   - Security Reader
+   - Global administrator
+   - Security administrator
+   - Security reader
 
-   > [!IMPORTANT]
-   > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
+   A side pane opens and displays information, such as which users are assigned that role.
 
-4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD), where you can view and manage your role assignments.
+4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to the **Users** view in Azure Active Directory (Azure AD), where you can view and manage your role assignments.
 
-5. Select a user to open their profile, and then choose **Assigned roles**.
+5. To add or remove a role, use one of the following procedures:
 
-   - To add a role, choose **+ Add assignments**.
-   - To remove a role, choose **X Remove assignments**. 
+   | Task | Procedure |
+   |---|---|
+   | Add a role to a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
+   | Remove a role from a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In navigation pane, under **Manage**, select **Assigned roles**.<br/><br/>3. Select one or more administrative roles, and then select **X Remove assignments**. |
 
 ## Next steps
 
