@@ -29,7 +29,7 @@ description: "Learn how to assign administrator roles to a user or multiple user
 
 # Assign admin roles in the Microsoft 365 admin center
 
-Microsoft 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. For more information, see [About admin roles](about-admin-roles.md).
+A Microsoft 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. For more information, see [About admin roles](about-admin-roles.md).
 
 > [!IMPORTANT]
 > If you're the person who purchased your Microsoft business subscription, you are the global admin. This means you have unlimited control over the products in your subscriptions and you can access most data.
@@ -60,8 +60,8 @@ If you found this video helpful, check out the [complete training series for sma
 
 1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank"> **Roles** -> **Role assignments**</a>. Choose the **Azure AD**, **Exchange**, **Intune** or **Billing** tab to view the admin roles available for your organization.
 
-> [!NOTE]
-> You might not see all the tabs depending on your Microsoft 365 subscription.
+    > [!NOTE]
+    > You might not see all the tabs depending on your Microsoft 365 subscription.
 
 1. Select the admin role that you want to assign the user to.
 1. On the Assigned tab, select **Add users** or **Add groups**.
@@ -107,4 +107,4 @@ You can check admin role permissions in 2 different ways:
 [About Microsoft 365 admin roles](about-admin-roles.md) (article)\
 [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
-[Add, change, or remove partner relationships](../misc/add-partner.md) (article)\
+[Add, change, or remove partner relationships](../misc/add-partner.md) (article)
