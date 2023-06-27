@@ -85,3 +85,65 @@ If you create a signature request and want to cancel it, following these steps.
     Once canceled, the status of the request is set to **Canceled** and recipients will receive a notification email telling them that the request was cancelled and that no further action will be possible on this request.
 
 ## Review and sign a signature request
+
+When a signature request is created, a notification email is sent to the recipients. The notification email contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex eSignature or Microsoft account to sign the request. This section summarizes how a recipient can add their signature to a document.
+
+### Access the document to be signed
+
+When you receive the notification email, select **View request** to begin the signing process.
+
+![Screenshot of a notification email showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
+
+### Consent to use your electronic signature
+
+To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **Electronic Record and Signature Disclosure** screen:
+
+- Select **Agree** to use your electronic signature and continue with the signing process.  
+- Or select **Decline** if you'd prefer not to use your digital signature, and contact the person who requested your signature to complete the signature by using a different method.
+
+![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
+
+### Sign the document
+
+Once you click Agree, the document viewer will open in a new browser tab from where you can navigate and read the document, and review the content.  When you’re happy to sign, click the Start button – this will bring you to the first location where your input is needed.  
+ 
+There are three different types of input you can be asked for:
+
+- Signature
+- Initials
+- Date
+
+Signature
+Electronic signatures enable you to digitally sign a document by enabling you to add a representation of your physical signature.  
+To add your signature, type your name and choose a font.	 
+	
+Clicking Done will add your signature to the document:
+	 
+	
+Clicking Next will bring you to the next location requiring input
+	 
+
+Initials
+In some locations within the document, you may be asked to add your initials to acknowledge a particular clause.
+Click Initial here to add your initials
+	 
+	
+Enter your initials. This will be prepopulated if you have entered your signature already. 
+Hit Done when complete	 
+			
+Date
+The date will be prepopulated as today’s date.	 
+
+Once you have entered input in all the requested locations within the document, the Submit button will be enabled.  Clicking this will complete signing process and change the status of the request from In Progress to Completed. The document will become read only. You will get an email notification that your signature has been received and the Creator will be notified.
+Once everyone has signed the document, you will get an email notification where you can view the document and request details.  The document is available via View Request button in the email for 30 days, so make sure you download it for your own records.
+
+Declining to sign the document
+If you review the document and don’t wish to sign it, you can decline to sign by clicking on the Decline to Sign button found in the overflow menu:
+
+ 
+
+You can enter a reason for not signing document and then hit Decline to complete the request.  Or hit Go back if you change your mind.  Once you hit Decline, you will not be able to add your signature but will be able to see the document in read-only mode.
+ 
+Declining to sign will send a notification to the creator saying that you don’t wish to sign the document. Declining to Sign will complete signing process and change the status of the request from In Progress to Declined.
+  
+If there are additional recipients, they will also get a notification saying that the request has been declined.   
