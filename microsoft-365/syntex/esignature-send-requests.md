@@ -180,20 +180,20 @@ Whether you are a requester or a recipient, you can select **View request** from
 
     ![Screenshot of the View history tab and the Request history panel.](../media/content-understanding/esignature-view-history.png)
 
-2. Select the **View details** tab to see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
+2. Select the **View details** tab to see the details of the request. On the **Request details** panel, you can see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
 
     ![Screenshot of the View details tab and the Request details panel.](../media/content-understanding/esignature-view-details.png)
 
 ## Monitor the status of a request
 
-When you create an signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning. 
+When you create a signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning. 
 
 |Status  |Description  |
 |---------|---------|
-|**In progress**  |A request is in progress as soon as it is created. The status remains at this state until the request has been reviewed by all recipients or cancelled by the sender of the request.|
-|**Completed**   |A request is completed when all recipients have signed the document. |
-|**Cancelled**   |This status of a request when it is cancelled by the sender. |
-|**Declined**    |This is the status of a request when one of the recipients declined to sign.|
+|**In progress**  |The request is in progress as soon as it is created. The status remains at this state until the request has been reviewed by all recipients or cancelled by the sender of the request.|
+|**Completed**   |The request is completed when all recipients have signed the document. |
+|**Cancelled**   |The request has been cancelled by the sender. |
+|**Declined**    |One of the recipients has declined to sign.|
 
 When the status of a request is **Completed**, **Cancelled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a request is declined by a recipient, the sender would need to send a new request after the reason for declining has been addressed. The original declined request cannot be edited.
 
