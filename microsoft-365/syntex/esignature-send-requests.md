@@ -105,8 +105,10 @@ To continue the electronic signing process, you must consent to the terms and co
 
 ### Sign the document
 
-Once you click Agree, the document viewer will open in a new browser tab from where you can navigate and read the document, and review the content.  When you’re happy to sign, click the Start button – this will bring you to the first location where your input is needed.  
- 
+Once you give your consent, the document viewer will open in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This will bring you to the first location where your input is needed.  
+
+![Screenshot of the document to be signed showing the Start button.](../media/content-understanding/esignature-start-signing.png)
+
 There are three different types of input you can be asked for:
 
 - Signature
