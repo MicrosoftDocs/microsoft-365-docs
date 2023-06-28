@@ -35,7 +35,7 @@ Your organization's security team needs certain permissions to perform tasks, su
 - Viewing incidents and alerts
 - Taking response actions on detected threats
 
-Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+Permissions are granted through certain roles in the [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). These roles can be assigned in the Microsoft 365 admin center or in the Microsoft Entra admin center.
 
 ## What to do
 
