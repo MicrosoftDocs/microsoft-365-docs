@@ -51,7 +51,7 @@ Yes
 
 ## Conditions that support policy tips for Outlook for Microsoft 365 users
 
-|For Microsoft 365 for Enterprise Outlook versions and users  |These conditions apply|
+|For Outlook for Microsoft versions and users  |These conditions apply|
 |---------|---------|
 |- All E3 users </br>- All offline E5 users </br>- All E5 users with connected experience disabled </br>- All online E5 users with production version and build lower than 2303 &16.0.16216.10000 </br>- All online E5 users with semi-annual channel version and build lower than 2302 and 16.0.16130.20478     |- Content contains sensitive information types </br>- Content is shared from Microsoft 365         |
 |- All online E5 users with connected experience enabled with production version and build 2303 and 16.0 16216.10000 or higher </br>- semi-annual channel tenative version 2302 build 16.0.16130.20478 | - Content contains sensitive information types </br>- Content contains sensitivity labels (works for email labels, Office docs and PDF files) </br>- Content is shared </br>- Sender is </br>- Sender is member of </br>- Sender domain is </br>- Recipient is </br>- Recipient is a member of </br>- Recipient domain is </br>- Subject contains words|
@@ -307,23 +307,12 @@ All Exchange actions support policy tips
 
 [!INCLUDE [SIT link list](../includes/sit-link-list.md)]
 
-## Named entity sensitive information types that support policy tips for Outlook
 
-Yes.
-
-For more information on named entity SITs, see [Learn about named entities](named-entities-learn.md)
-
-## Exact Data Match sensitive information types that support policy tips Outlook
+### Exact Data Match sensitive information types that support policy tips Outlook for Microsoft 365
 
 Yes.
 
 For more information on exact data match based SITs, see [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
-
-## Custom sensitive information types support for policy tips in Outlook
-
-Yes.
-
-Custom sensitive information types that use REGEX, functions, keyword lists and keyword dictionaries support policy tips in Outlook on the Web. For more details, see [Create custom sensitive information types in the compliance portal](create-a-custom-sensitive-information-type.md) and [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 
 <!--### Document Fingerprint SITs
@@ -332,11 +321,10 @@ Policy tips are not supported.
 
 For more information on document fingerprint SITs, see [Document fingerprinting](document-fingerprinting.md)-->
 
-## Sensitivity label support for Outlook
+## Sensitivity label support for Outlook for Microsoft 365
 
 Applies to:
 
-- Outlook versions that are included in Outlook for Microsoft 365
 - E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
 
@@ -344,11 +332,10 @@ Yes.
 
 For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
 
-## Trainable classifiers support for Outlook
+### Trainable classifiers support for Outlook for Microsoft 365
 
 Applies to:
 
-- Outlook versions that are included in Microsoft 365 for Enterprise
 - E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
 - Semi-annual channel tentative version 2302 build 16.0.16130.20478
 
