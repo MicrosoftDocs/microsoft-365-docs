@@ -114,6 +114,11 @@
             "source_path": "admin/activity-reports/yammer-groups-activity-report-ww.md",
             "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-groups-activity-report-ww.md",
             "redirect_document_id": false
+        },    
+        {
+            "source_path": "compliance/retention-policies-yammer.md",
+            "redirect_url": "/microsoft-365/compliance/retention-policies-viva-engage.md",
+            "redirect_document_id": false
     }
     ]
 }

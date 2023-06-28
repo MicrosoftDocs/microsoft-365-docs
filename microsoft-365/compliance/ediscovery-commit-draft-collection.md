@@ -50,7 +50,7 @@ When you're satisfied with the items you've collected in a collection estimate a
 
       ![Configure additional collection settings.](../media/ediscovery-additional-collection-settings.png).
 
-       A. **Teams and Yammer conversations**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. Collect up to 12 hours of related conversations when a message matches a search. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
+       A. **Teams and Viva Engage conversations**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. Collect up to 12 hours of related conversations when a message matches a search. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
 
        B. **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
 

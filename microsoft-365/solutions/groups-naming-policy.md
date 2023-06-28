@@ -27,7 +27,7 @@ description: "Learn how to create a naming policy for Microsoft 365 groups."
 
 You can use a group naming policy to enforce a consistent naming strategy for groups created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
 
-The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). It gets applied to both the group name and group alias. It also gets applied when a user creates a group and when the group name, alias, description, or avatar is edited for an existing group.
+The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Viva Engage, etc.). It gets applied to both the group name and group alias. It also gets applied when a user creates a group and when the group name, alias, description, or avatar is edited for an existing group.
 
 > [!TIP]
 > A Microsoft 365 group naming policy only applies to Microsoft 365 groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
@@ -79,7 +79,7 @@ It's recommended that you use attributes that have values filled in for all user
   > [!NOTE]
   > A period (.) or a hyphen (-) is permitted anywhere in the group name, except at the beginning or end of the name. An underscore (_) is permitted anywhere in the group name, including at the beginning or end of the name.
 
-- If you are using Yammer Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Yammer users will not be able to create groups.
+- If you are using Viva Engage Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Viva Engage users will not be able to create groups.
 
 > [!Tip]
 > - Use short strings as suffix.
