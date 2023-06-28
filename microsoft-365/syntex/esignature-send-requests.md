@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 07/01/2023
+ms.date: 08/01/2023
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -60,7 +60,7 @@ The PDF viewer is opened by selecting a PDF file from SharePoint Online. The abi
 
 #### Collaboration settings
 
-Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant, SharePoint site and library, folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
 - The document has a sensitivity label applied that restricts access or sharing. This event limits who can start signature request with that document or the recipients that it can be sent to, depending on the label settings and the user's role.
 
@@ -82,7 +82,7 @@ If you create a signature request and want to cancel it, follow these steps.
 
     ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
 
-    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action will be possible on this request.
+    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
 
 ## Review and sign a signature request
 
@@ -133,7 +133,7 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 In some locations within the document, you might be asked to add your initials to acknowledge a particular clause.
 
-1. Select **Initial here**, and enter your initials. This action will be prepopulated if you have already entered your signature.
+1. Select **Initial here**, and enter your initials. This action is prepopulated if you've already entered your signature.
 
     ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here.png)
 
@@ -142,7 +142,7 @@ In some locations within the document, you might be asked to add your initials t
 
 #### Date
 
-The date will be prepopulated with the current day’s date.
+The date is prepopulated with the current day’s date.
 
 ### Submit the signed document
 
@@ -152,7 +152,7 @@ When you have entered all of the required input, select **Submit** to complete t
 
 The status of the request changes from **In progress** to **Completed**. The document becomes read-only. You'll receive an email notification saying that your signature has been received and the requester will be notified.
 
-Once everyone has signed the document, you'll get an email notification saying where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
+Once everyone has signed the document, you'll receive an email notification saying where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
 
 ### Decline to sign the document
 
@@ -168,7 +168,7 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
 Once you decline, you won't be able to add your signature, but you'll be able to see the document in read-only mode.
  
-Once you decline, an email notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete signing process and change the status of the request from **In progress** to **Declined**.
+Once you decline, an email notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete the signing process and change the status of the request from **In progress** to **Declined**.
   
 If there are more recipients, they'll also receive a notification saying that the request has been declined.
 
