@@ -186,7 +186,7 @@ All Exchange actions support policy tips
 - [U.S. individual taxpayer identification number (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)
 - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)     
 
-## Sensitive information types that support policy tips for Microsoft 365 for Enterprise Outlook users
+## Sensitive information types that support policy tips for Outlook for Microsoft 365 users
 
 **For these Outlook versions and users:**
 
