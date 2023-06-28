@@ -55,7 +55,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
 ## [**Microsoft 365 admin center**](#tab/M365Admin)
 
-1. Go to the Microsoft 365 admin center (https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in. 
+1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) and sign in. 
 
 2. In the navigation pane, go to **Users** > **Active users**.
 
