@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: bagol
 author: batamig
 manager: raynew
-ms.date: 06/26/2023
+ms.date: 06/28/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -20,7 +20,7 @@ search.appverid:
 ms.collection: 
 - m365-security 
 - tier2
-ms.custom: admindeeplinkDEFENDER
+ms.custom: admindeeplinkDEFENDER, defender-for-identity
 ---
 
 # Microsoft Defender for Identity in Microsoft 365 Defender
@@ -32,7 +32,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
 
-Microsoft Defender for Identity is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
+Microsoft Defender for Identity is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 Microsoft Defender for Identity contributes identity focused information into the incidents and alerts that Microsoft 365 Defender presents. This information is key to providing context and correlating alerts from the other products within Microsoft 365 Defender.
 
@@ -45,7 +45,8 @@ While they may not be in exactly same pages, much of your data is integrated int
 The following sections describe enhanced Defender for Identity features found in Microsoft 365 Defender.
 
 > [!NOTE]
-> As of June 30th, 2023, customers using the classic Defender for Identity portal are automatically redirected to Microsoft 365 Defender, with no option to revert back to the classic portal.
+> Customers using the classic Defender for Identity portal are now automatically redirected to Microsoft 365 Defender, with no option to revert back to the classic portal.
+
 
 ### Configuration and posture
 
