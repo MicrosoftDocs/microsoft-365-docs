@@ -99,9 +99,9 @@ All users in both the source and target organizations must be licensed with the 
 
 1. Under **Essentials**, copy the **Application (client) ID**. You'll need it later to create a URL for the target tenant.
 
-1. Now, in the navigation pane, select **API permissions** to view permissions assigned to your app.
+1. In the navigation pane, select **API permissions** to view permissions assigned to your app.
 
-1. By default, User. Read permissions are assigned to the app you created, but aren't required for mailbox migrations. You can remove that permission.
+1. By default, **User.Read** permissions are assigned to the app you created, but aren't required for mailbox migrations. You can remove that permission.
 
     ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
