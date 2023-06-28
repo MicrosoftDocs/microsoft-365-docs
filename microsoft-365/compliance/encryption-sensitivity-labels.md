@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/10/2023
+ms.date: 06/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -314,14 +314,14 @@ You can use the following options to let users assign permissions when they manu
 > [!NOTE]
 > You won't be able to use these configurations if the label scope excludes email (for Do Not Forward and Encrypt-Only) or excludes files (for prompting users in Word, PowerPoint, and Excel). For more information, see [Scope labels to just files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails).
 
-When the options are supported, use the following table to identify when users see the sensitivity label:
+When the options are supported, use the following table to identify when users see the sensitivity label, unless it's prevented by the [label scope configuration](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails):
 
 |Setting |Label visible in Outlook|Label visible in Word, Excel, PowerPoint|
 |:-----|:-----|:-----|:-----|
 |**In Outlook, enforce restrictions with the Do Not Forward or Encrypt-Only option**|Yes |No |
 |**In Word, PowerPoint, and Excel, prompt users to specify permissions**|No |Yes|
 
-When both settings are selected, the label is therefore visible in both Outlook and in Word, Excel, and PowerPoint.
+When both settings are selected, by default, the label is therefore visible in both Outlook and in Word, Excel, and PowerPoint.
 
 A sensitivity label that lets users assign permissions can be recommended to users, but can only be automatically applied for the Do Not Forward and Encrypt-Only options.
 
