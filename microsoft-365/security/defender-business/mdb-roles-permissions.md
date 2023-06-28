@@ -67,7 +67,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
    | Task | Procedure |
    |---|---|
-   | Add a role to a user account | 1. Select **Admin center access**, scroll down, and then expand **Show all by category**.<br/><br/>2. Select one of the following roles:<br/><br/>3. <br/>- Global Administrator (listed under **Global**)<br/>- Security Administrator (listed under **Security & Compliance**)<br/>- Security Reader (listed under **Read-only**)<br/><br/>4. Select **Save changes**. |
+   | Add a role to a user account | 1. Select **Admin center access**, scroll down, and then expand **Show all by category**.<br/><br/>2. Select one of the following roles:<br/>- Global Administrator (listed under **Global**)<br/>- Security Administrator (listed under **Security & Compliance**)<br/>- Security Reader (listed under **Read-only**)<br/><br/>3. Select **Save changes**. |
    | Remove a role from a user account | 1. Either select **User (no admin center access)** to remove *all** admin roles, or select one or more of the assigned roles. <br/><br/>2. Select **Save changes**. |
 
 ## [**Microsoft Entra admin center**](#tab/Entra)
