@@ -51,7 +51,7 @@ The following table describes the three roles that can be assigned in Defender f
 > [!IMPORTANT]
 > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
-You can use the Microsoft 365 admin center or the Microsoft Entra portal to view and edit role assignments.
+You can use the Microsoft 365 admin center or the Microsoft Entra admin center to view and edit role assignments.
 
 ## [**Microsoft 365 admin center**](#tab/M365Admin)
 
@@ -70,7 +70,7 @@ To add or remove a role, use one of the following procedures:
    | Add a role to a user account | 1. Select **Admin center access**, scroll down, and then expand **Show all by category**.<br/><br/>2. Select one of the following roles:<br/><br/>3. <br/>- Global Administrator (listed under **Global**)<br/>- Security Administrator (listed under **Security & Compliance**)<br/>- Security Reader (listed under **Read-only**)<br/><br/>4. Select **Save changes**. |
    | Remove a role from a user account | 1. Either select **User (no admin center access)** to remove *all** admin roles, or select one or more of the assigned roles. <br/><br/>2. Select **Save changes**. |
 
-## [**Microsoft Entra portal**](#tab/Entra)
+## [**Microsoft Entra admin center**](#tab/Entra)
 
 1. Go to the Microsoft Entra admin center ([https://entra.microsoft.com](https://entra.microsoft.com/)) and sign in.
 
