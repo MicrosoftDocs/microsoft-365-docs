@@ -206,7 +206,7 @@ Additionally, the signed document also is saved to the folder where the original
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
 
-### Unable to access to the signed document
+### Unable to access the signed document
 
 Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
@@ -227,5 +227,5 @@ To avoid potential issues, you should check the status and settings of their doc
 
 After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
-For setup and technical information for admins, see [Set up Microsoft Syntex eSignature](esignature-set-up.md).
+For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-set-up.md).
 
