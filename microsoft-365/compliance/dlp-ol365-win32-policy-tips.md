@@ -45,7 +45,7 @@ Yes
 -->
 ## Conditions that support policy tips for Outlook perpetual users
 
-|For Outlook perpetual versions and and users  |These conditions apply  |
+|For Outlook perpetual versions and users  |These conditions apply  |
 |---------|---------|
 |-E3 users</br>-E5 users    |- Content contains sensitive information types </br>- Content is shared from Microsoft 365 |
 
