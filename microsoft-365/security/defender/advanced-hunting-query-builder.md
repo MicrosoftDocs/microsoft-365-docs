@@ -38,7 +38,7 @@ The query builder in guided mode allows analysts to craft meaningful hunting que
 
 The analyst can choose which data set to look at and which filters and conditions to use to narrow the data down to what they need. 
 
-You can watch this video to get an overview of how guided hunting works:
+You can watch this video to get an overview of guided hunting:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12cm6]
 
