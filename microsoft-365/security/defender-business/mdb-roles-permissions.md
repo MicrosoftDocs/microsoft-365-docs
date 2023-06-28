@@ -76,7 +76,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
 2. In the navigation pane, go to **Users** > **All users**.
 
-3. Select a user to open their profile.
+3. Select a user account to open their profile.
 
 4. To add or remove a role, use one of the following procedures:
 
