@@ -32,7 +32,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In organizations with Microsoft Defender for Office 365, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams provides an additional layer of protection against malware. After files are asynchronously scanned by the [common virus detection engine in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md), Safe Attachments opens files in a virtual environment to see what happens (a process known as _detonation_). Safe Attachments for SharePoint, OneDrive, and Microsoft Teams also helps detect and block existing files that are identified as malicious in team sites and document libraries.
+In organizations with Microsoft Defender for Office 365, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams provides an additional layer of protection against malware. After files are asynchronously scanned by the [common virus detection engine in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md), Safe Attachments opens files in a virtual environment to see what happens (a process known as _detonation_). As part of detonation, any password protected files are checked against a list of known passwords or patterns that are typically used by malicious actors. Safe Attachments for SharePoint, OneDrive, and Microsoft Teams also helps detect and block existing files that are identified as malicious in team sites and document libraries.
 
 Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled by default. To turn it on or off, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md).
 
