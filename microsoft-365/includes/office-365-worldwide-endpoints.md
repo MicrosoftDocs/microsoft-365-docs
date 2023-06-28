@@ -3,6 +3,7 @@
 <!--Worldwide endpoints version 2023053000-->
 <!--File generated 2023-05-30 08:00:07.1339-->
 
+
 ## Exchange Online
 
 ID | Category | ER | Addresses | Ports
@@ -12,7 +13,7 @@ ID | Category | ER | Addresses | Ports
 8 | Default<BR>Required | No | `*.outlook.com, autodiscover.<tenant>.onmicrosoft.com` | **TCP:** 443, 80
 9 | Allow<BR>Required | Yes | `*.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 52.238.78.88/32, 104.47.0.0/17, 2a01:111:f400::/48, 2a01:111:f403::/48` | **TCP:** 443
 10 | Allow<BR>Required | Yes | `*.mail.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 104.47.0.0/17, 2a01:111:f400::/48, 2a01:111:f403::/48` | **TCP:** 25
-  
+
 
 ## SharePoint Online and OneDrive for Business
 
@@ -43,11 +44,13 @@ ID | Category | ER | Addresses | Ports
 127 | Default<BR>Required | No | `*.skype.com` | **TCP:** 443, 80
 167 | Default<BR>Required | No | `*.ecdn.microsoft.com` | **TCP:** 443
 180 | Default<BR>Required | No | `compass-ssl.microsoft.com` | **TCP:** 443
+
   
 > [!NOTE]
 > For  Cross-Cloud Anonymous Join to work properly, you must add these endpoints for the cloud of the target meeting to the safe senders list:
 > - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 > - [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
+
 
 
 ## Microsoft 365 Common and Office Online
@@ -91,8 +94,8 @@ ID | Category | ER | Addresses | Ports
 105 | Default<BR>Optional<BR>**Notes:** Outlook for Android and iOS: Outlook Privacy | No | `www.acompli.com` | **TCP:** 443
 114 | Default<BR>Optional<BR>**Notes:** Office Mobile URLs | No | `*.appex.bing.com, *.appex-rf.msn.com, c.bing.com, c.live.com, d.docs.live.net, directory.services.live.com, docs.live.net, partnerservices.getmicrosoftkey.com, signup.live.com` | **TCP:** 443, 80
 116 | Default<BR>Optional<BR>**Notes:** Office for iPad URLs | No | `account.live.com, auth.gfx.ms, login.live.com` | **TCP:** 443, 80
-117 | Default<BR>Optional<BR>**Notes:** Yammer | No | `*.yammer.com, *.yammerusercontent.com` | **TCP:** 443
-118 | Default<BR>Optional<BR>**Notes:** Yammer CDN | No | `*.assets-yammer.com` | **TCP:** 443
+117 | Default<BR>Optional<BR>**Notes:** Viva Engage | No | `*.yammer.com, *.yammerusercontent.com` | **TCP:** 443
+118 | Default<BR>Optional<BR>**Notes:** Viva Engage CDN | No | `*.assets-yammer.com` | **TCP:** 443
 121 | Default<BR>Optional<BR>**Notes:** Planner: auxiliary URLs | No | `www.outlook.com` | **TCP:** 443, 80
 122 | Default<BR>Optional<BR>**Notes:** Sway CDNs | No | `eus-www.sway-cdn.com, eus-www.sway-extensions.com, wus-www.sway-cdn.com, wus-www.sway-extensions.com` | **TCP:** 443
 124 | Default<BR>Optional<BR>**Notes:** Sway | No | `sway.com, www.sway.com` | **TCP:** 443
