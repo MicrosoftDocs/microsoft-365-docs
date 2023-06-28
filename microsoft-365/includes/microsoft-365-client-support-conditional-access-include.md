@@ -38,4 +38,4 @@ ms.date: 03/17/2021
 |WHITEBOARD|✔|Planned|N/A|N/A|Planned|
 |WORD|✔|✔|✔|✔|N/A|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
-|YAMMER|Planned|Planned|Planned|Planned|N/A|
+|Viva Engage|Planned|Planned|Planned|Planned|N/A|
