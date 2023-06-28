@@ -63,7 +63,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
 4. On the **Account** tab, under **Roles**, select **Manage roles**.
 
-To add or remove a role, use one of the following procedures:
+5. To add or remove a role, use one of the following procedures:
 
    | Task | Procedure |
    |---|---|
