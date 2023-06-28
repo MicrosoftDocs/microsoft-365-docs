@@ -591,7 +591,7 @@
           href: prevent-changes-to-security-settings-with-tamper-protection.md
         - name: Manage tamper protection using Microsoft 365 Defender
           href: manage-tamper-protection-microsoft-365-defender.md
-        - name: Manage tamper protection using Microsoft Intune
+        - name: Manage tamper protection with Intune
           href: manage-tamper-protection-intune.md
         - name: Manage tamper protection with Configuration Manager
           href: manage-tamper-protection-configuration-manager.md
