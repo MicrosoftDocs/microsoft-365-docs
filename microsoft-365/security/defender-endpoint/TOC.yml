@@ -156,7 +156,7 @@
         - name: Step 2 - Configure device proxy and Internet settings
           href: configure-proxy-internet.md
         - name: Streamlining device connectivity
-          href: streamlining-device-connectivity.md
+          href: configure-device-connectivity.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview

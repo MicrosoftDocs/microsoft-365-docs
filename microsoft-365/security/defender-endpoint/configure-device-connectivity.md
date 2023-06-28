@@ -1,10 +1,10 @@
 ﻿---
-title: Streamlining device connectivity for Microsoft Defender for Endpoint 
+title: Onboarding devices using streamlined device connectivity for Microsoft Defender for Endpoint 
 description: Learn how to use a simplified domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
-ms.date: 5/12/2023
+ms.date: 6/28/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -17,15 +17,29 @@ search.appverid: MET150
 audience: ITPro
 ---
 
-# Streamlining device connectivity for Microsoft Defender for Endpoint 
+# Onboarding devices using streamlined device connectivity for Microsoft Defender for Endpoint 
 
+
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
 The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. 
 
-To streamline the configuration of network requirements and ease management, you have the option of using Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** or dedicated static IP ranges for Microsoft Defender for Endpoint.  
+To simplify the configuration of network requirements and ease management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set. The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
+
+Alternatively, you can now configure connectivity using dedicated static IP ranges for Microsoft Defender for Endpoint. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
 > [!NOTE] 
-> The streamlined connectivity will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service is changed. 
+> The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
 Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
 

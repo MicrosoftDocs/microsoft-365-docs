@@ -1,6 +1,6 @@
 ---
-title: Configure device proxy and Internet connection settings
-description: Configure the Microsoft Defender for Endpoint proxy and internet settings to enable communication with the cloud service.
+title: Configure your devices to connect to the Defender for Endpoint service using a proxy
+description: Learn how to configure your devices to enable communication with the cloud service using a proxy.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,10 +18,10 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/04/2023
+ms.date: 06/28/2023
 ---
 
-# STEP 2: Configure device proxy and Internet connectivity settings - WHAT SHOULD THIS ARTICLE BE CALLED - PAUL/MARYSIA?
+# STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

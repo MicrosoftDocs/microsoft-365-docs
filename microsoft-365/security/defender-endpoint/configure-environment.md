@@ -1,5 +1,5 @@
 ---
-title: Configure your environment to connect to the Defender for Endpoint service
+title: Configure your network environment to ensure connectivity with Defender for Endpoint service
 description: 
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
@@ -22,38 +22,49 @@ ms.date: 06/19/2023
 ---
 
 
-# STEP 1: Configure your environment to connect to the Defender for Endpoint service
+# STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service
+
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+
+[!Include[Prerelease information](../../includes/prerelease.md)]
+
 
 Take the following steps to configure your environment to connect devices to the Defender for Endpoint service.
 
 ## Enable access to Microsoft Defender for Endpoint service URLs in the proxy server
-
-
-Configure your environment to allow connections with the simplified Defender for Endpoint domain: **\*.endpoint.security.microsoft.com**. **MARYSIA - DID I PLACE THIS HERE CORRECTLY?**
-
-
-NOTE: After this date <>, you will be using the onboarding script for the consolidated URL. 
-
-If you are supporting Windows 7 or 8, you'll need to add the domains from the sheet available in the table below.
-
-
 By default, if a proxy or firewall is blocking all traffic by default and allowing only specific domains, then add the domains listed in the downloadable sheet to the allowed domains list.
 
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optional, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optionally, you may need to create an *allow* rule specifically for them.
+
+
+>[!NOTE]
+>APPLIES TO PUBLIC PREVIEW:<br>
+>- Starting *INSERT DATE HERE*, you'll be provided the default option in Microsoft 365 Defender to use the consolidated Defender for Endpoint URL. The use of the new consolidated URL will require you to use a new onboarding script. You must verify that your devices meet the prerequisites before using the new solution. <br>
+>- As part of this preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
+>- Some services were not included in this consolidation effort. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see [Services not under the consolidated domain]().
 
 <br>
 
 |Spreadsheet of domains list| Description|
 |---|---|
-| Microsoft Defender for Endpoint consolidated URL list  (NEW) <br> | IMPORTANT: Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET] <br><br> **Prerequisites:** <br> -   Windows 10, with at least KB5011487 (March 8, 2022)  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   ==NEED SPECIFICS ON MAC AND LINUX<br>If you are migrating to the streamlined connectivity, see [Migrating device connectivity](migrating-device-connectivity.md).
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
+| Microsoft Defender for Endpoint consolidated URL list  (NEW) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET -  WILL ADD URL OF SPREADSHEET ONCE IT'S AVAILABLE] <br><br> **Prerequisites:** <br> -   Windows 10, with at least KB5011487 (March 8, 2022) excluding version 1607 & 1703  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   macOS/Linux with Defender for Endpoint product version 101.23052.0003 or later.<br><br>If you are moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br><br> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
+|Microsoft Defender for Endpoint URL list for commercial customers (legacy)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)<br> NOTE: You will need to use the legacy list of URLs if you have devices running on Windows 10 (excluding version 1607 & 1703), Windows 7, Windows 8.1, Windows Server 2009 R2 MMA, and Servers not upgraded to Unified Agent (MMA). <p> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
 
 > [!NOTE]
+> Applies to legacy URLS: <br>
 > Windows devices running with version 1803 or earlier needs `settings-win.data.microsoft.com`.  <br>
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
