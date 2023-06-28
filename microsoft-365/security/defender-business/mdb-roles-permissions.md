@@ -76,12 +76,14 @@ To add or remove a role, use one of the following procedures:
 
 2. In the navigation pane, go to **Users** > **All users**.
 
-3. To add or remove a role, use one of the following procedures:
+3. Select a user to open their profile.
+
+4. To add or remove a role, use one of the following procedures:
 
    | Task | Procedure |
    |---|---|
-   | Add a role to a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
-   | Remove a role from a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In navigation pane, under **Manage**, select **Assigned roles**.<br/><br/>3. Select one or more administrative roles, and then select **X Remove assignments**. |
+   | Add a role to a user account | 1. Under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>2. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
+   | Remove a role from a user account | 1. Under **Manage**, select **Assigned roles**.<br/><br/>2. Select one or more administrative roles, and then select **X Remove assignments**. |
 
 ---
 
