@@ -352,7 +352,7 @@ This configuration is an extension to the **Items** scope, when you [create or e
 
 Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
-Remember that other label configurations can also influence whether sensitivity labels are visible in apps. For example, sensitivity labels that are configured to apply the encryption setting of **In Word, PowerPoint, and Excel, prompt users to specify permissions**, [won't be visible in Outlook](encryption-sensitivity-labels.md#let-users-assign-permissions), even if you configure the label scope for **Emails**. Check the documentation for the label configurations that you use.
+Remember that other label configurations can also influence whether sensitivity labels are visible in apps. Check the documentation for the label configurations that you use.
 
 > [!NOTE]
 > The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
