@@ -207,8 +207,7 @@ Now that you've successfully created the migration application and secret, the n
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
    If ($null -ne $existingOrgRel)
    {
-       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId - 
-  MailboxMovePublishedScopes $scope
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId - MailboxMovePublishedScopes $scope
    }
    If ($null -eq $existingOrgRel)
    {
