@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 06/26/2023
+ms.date: 06/28/2023
 ms.reviewer: efratka
 ms.collection: 
 - SMB
