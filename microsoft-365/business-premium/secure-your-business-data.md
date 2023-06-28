@@ -1,15 +1,15 @@
 ---
-title: Top 10 ways to secure your data with Microsoft 365 for business
+title: Microsoft 365 for business security best practices
 f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 06/22/2023
+ms.date: 06/28/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn best practices to protect your data using Micrsoft 365 Business Basic, Standard, or Premium. Protect devices, email, files, and accounts."
 ---
 
-# Secure your data with Microsoft 365 for business
+# Microsoft 365 for business security best practices
 
 When it comes to securing your business data, Microsoft 365 Business Basic, Standard, and Premium all include antiphishing, antispam, and antimalware protection. However, Microsoft 365 Business Premium includes even more security capabilities, such as advanced cybersecurity protection for devices (such as computers, tablets, and phones; also referred to as endpoints), email & collaboration content (such as Office documents), and information protection. For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
