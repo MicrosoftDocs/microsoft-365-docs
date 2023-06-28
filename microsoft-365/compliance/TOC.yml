@@ -346,6 +346,8 @@
           items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
         - name: Information barriers & SharePoint
           items:
             - name: SharePoint and information barriers
@@ -354,6 +356,8 @@
               href: information-barriers-sharepoint-assistant.md
             - name: SharePoint information barriers policy compliance report
               href: information-barriers-sharepoint-report.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -1345,8 +1349,8 @@
               href: retention-policies-sharepoint.md
             - name: Teams
               href: retention-policies-teams.md
-            - name: Yammer
-              href: retention-policies-yammer.md
+            - name: Viva Engage
+              href: retention-policies-viva-engage.md
             - name: Exchange
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion
@@ -1719,6 +1723,8 @@
               href: ediscovery-document-metadata-fields.md
             - name: Search and purge Teams chat messages
               href: ediscovery-search-and-delete-Teams-chat-messages.md
+            - name: Find sensitive data stored on sites
+              href: ediscovery-find-sensitive-data-stored-on-sites.md
             - name: Set up historical versions
               href: ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
