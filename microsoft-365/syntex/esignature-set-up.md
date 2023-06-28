@@ -54,7 +54,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 2. On the **Turn off Syntex eSignature** page, select **Turn off**.
 
-## Storage and retention considerations
+## Document storage and retention
 
 ### Document storage
 
@@ -79,3 +79,5 @@ The working copy of the request is stored and retained for five years or in acco
 Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Canceled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
   
 For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
+
+For user instructions about how to use Syntex eSignature, see [Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)](esignature-send-requests.md).
