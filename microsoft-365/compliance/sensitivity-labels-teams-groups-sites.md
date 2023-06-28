@@ -390,7 +390,7 @@ The following apps and services don't currently support sensitivity labels confi
 - User apps and services:
 
   - Dynamics 365
-  - Yammer
+  - Viva Engage
   - Project
   - Power BI
   - My Apps portal

@@ -96,7 +96,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 2. Run one of the following commands:
     
-    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Viva Engage user messages** and **Viva Engage community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
