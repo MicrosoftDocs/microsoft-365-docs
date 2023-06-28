@@ -4,7 +4,7 @@ description: Learn how to set up, view, and edit your web content filtering poli
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 06/20/2023
+ms.date: 06/28/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
