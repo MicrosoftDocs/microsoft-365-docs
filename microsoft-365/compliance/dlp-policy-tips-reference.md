@@ -21,7 +21,7 @@ recommendations: false
 description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they're working with content that conflicts with a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
-# Data Loss Prevention policy tips reference
+# Data loss prevention policy tips reference
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -68,7 +68,7 @@ For E5 licensed users, DLP policy tips will be shown in Outlook 2013 and later f
 
  -->
 
-## Data Loss Prevention on endpoint devices supports policy tips for only some sensitive information types
+## Data loss prevention on endpoint devices supports policy tips for only some sensitive information types
 
 These sensitive information types (SIT)s can be detected on endpoint devices:
 
