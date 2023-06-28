@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 07/01/2023
+ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -28,7 +28,7 @@ Before you can use Microsoft Syntex eSignature, it must be configured in the Mic
 
 ### Licensing
 
-Before you can use Syntex eSignature, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing is not activated during this preview.)
+Before you can use Syntex eSignature, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing isn't activated during this preview.)
 
 ### Permissions
 
@@ -54,10 +54,11 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 2. On the **Turn off Syntex eSignature** page, select **Turn off**.
 
+## Storage and retention considerations
 
-## Document storage
+### Document storage
 
-Syntex eSignature lets a requester start a signature request from a PDF document that is saved in a SharePoint library for which eSignature has been enabled. After all required parties have signed, the Syntex eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender is notified in an email that includes a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
+Syntex eSignature lets a requester start a signature request from a PDF document that is saved in a SharePoint library for which Syntex eSignature has been enabled. After all required parties have signed, the Syntex eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender is notified in an email that includes a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
 
 Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
@@ -67,15 +68,14 @@ Before a signature request is sent and at the completion of the request, certain
 
 - The originating folder was deleted.
 
-## Expiration of URL links in email
-
-Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Cancelled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
-  
-For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email received by recipients won't contain a URL link to view the request.
-
-## Document retention
+### Document retention
 
 When a signature request is created for a document in SharePoint, the Syntex eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
 
 The working copy of the request is stored and retained for five years or in accordance with the document retention policy set up by the SharePoint or tenant admin. Learn more about [retention policies](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint).
 
+### Expiration of URL links in email
+
+Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Canceled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
+  
+For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
