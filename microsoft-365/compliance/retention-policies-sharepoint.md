@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 06/28/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -142,7 +142,7 @@ When you apply a retention policy to a location that includes OneNote content, o
 
 Because of this structure, each section will be individually retained and deleted (with all its pages), according to the retention settings you specify. 
 
-![Behind the scenes file folder and file structure for OneNote and how retention settings are applied.](../media/onenote-backend-structure.png)
+:::image type="content" source="../media/onenote-backend-structure.png" alt-text="Behind the scenes file folder and file structure for OneNote and how retention settings are applied..":::
 
 Only sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each individual notebook, this date is not used by Microsoft 365 retention.
 
