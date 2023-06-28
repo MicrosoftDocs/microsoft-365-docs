@@ -59,7 +59,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
 2. In the navigation pane, go to **Users** > **Active users**.
 
-3. Select a user account. A flyout pane opens.
+3. Select a user account to open their flyout pane.
 
 4. On the **Account** tab, under **Roles**, select **Manage roles**.
 
