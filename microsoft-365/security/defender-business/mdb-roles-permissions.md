@@ -72,21 +72,11 @@ To add or remove a role, use one of the following procedures:
 
 ## [**Microsoft Entra portal**](#tab/Entra)
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Entra admin center ([https://entra.microsoft.com](https://entra.microsoft.com/)) and sign in.
 
-2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
+2. In the navigation pane, go to **Users** > **All users**.
 
-3. Select one of the following roles that are relevant to Defender for Business:
-
-   - Global administrator
-   - Security administrator
-   - Security reader
-
-   A side pane opens and displays information, such as which users are assigned that role.
-
-4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to the **Users** view in Azure Active Directory (Azure AD), where you can view and manage your role assignments.
-
-5. To add or remove a role, use one of the following procedures:
+3. To add or remove a role, use one of the following procedures:
 
    | Task | Procedure |
    |---|---|
