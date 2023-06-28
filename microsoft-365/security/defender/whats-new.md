@@ -41,7 +41,7 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## July 2023
-- (Preview) [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now has two new columns for public preview, `DeviceManualTags` and `DeviceDynamicTags`. These new columns surface both manual and dynamically assigned tags related to the device you are investigating.
+- (Preview) [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now has two new columns for public preview, `DeviceManualTags` and `DeviceDynamicTags`. These new columns surface both manually and dynamically assigned tags related to the device you are investigating.
 
 ## June 2023
 
