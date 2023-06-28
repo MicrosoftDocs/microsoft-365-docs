@@ -62,7 +62,6 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
     - Attachment or document size equals or is greater than
     - Document created by
 - **In preview**: A **Contextual Summary** tab is added to auto-labeling policies that are in simulation. Similar to [other solutions that support contextual summary](data-classification-increase-accuracy.md), when you select an item to review, this new tab highlights the matched content and its surrounding context. Use this tab to confirm that the match is positive and therefore suitable to turn on the policy. Or, the match is negative, in which case you can fine-tune the policy and rerun simulation.
->>>>>>> a3a660563150810693bc3d11e9e2a2c58305703d
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
