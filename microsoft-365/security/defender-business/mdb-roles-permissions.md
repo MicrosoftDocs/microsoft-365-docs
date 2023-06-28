@@ -6,11 +6,11 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: overview
+ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 06/26/2023
+ms.date: 06/28/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -51,6 +51,27 @@ The following table describes the three roles that can be assigned in Defender f
 > [!IMPORTANT]
 > Microsoft recommends that you grant people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
+You can use the Microsoft 365 admin center or the Microsoft Entra portal to view and edit role assignments.
+
+## [**Microsoft 365 admin center**](#tab/M365Admin)
+
+1. Go to the Microsoft 365 admin center (https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in. 
+
+2. In the navigation pane, go to **Users** > **Active users**.
+
+3. Select a user account. A flyout pane opens.
+
+4. On the **Account** tab, under **Roles**, select **Manage roles**.
+
+To add or remove a role, use one of the following procedures:
+
+   | Task | Procedure |
+   |---|---|
+   | Add a role to a user account | 1. Select **Admin center access**, scroll down, and then expand **Show all by category**.<br/><br/>2. Select one of the following roles:<br/><br/>3. <br/>- Global Administrator (listed under **Global**)<br/>- Security Administrator (listed under **Security & Compliance**)<br/>- Security Reader (listed under **Read-only**)<br/><br/>4. Select **Save changes**. |
+   | Remove a role from a user account | 1. Either select **User (no admin center access)** to remove *all** admin roles, or select one or more of the assigned roles. <br/><br/>2. Select **Save changes**. |
+
+## [**Microsoft Entra portal**](#tab/Entra)
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
@@ -71,6 +92,8 @@ The following table describes the three roles that can be assigned in Defender f
    |---|---|
    | Add a role to a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In the navigation pane, under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>3. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
    | Remove a role from a user account | 1. In the [**Users** view in Azure AD](https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers), select a user to open their profile.<br/><br/>2. In navigation pane, under **Manage**, select **Assigned roles**.<br/><br/>3. Select one or more administrative roles, and then select **X Remove assignments**. |
+
+---
 
 ## Next steps
 
