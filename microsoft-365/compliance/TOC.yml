@@ -1349,8 +1349,8 @@
               href: retention-policies-sharepoint.md
             - name: Teams
               href: retention-policies-teams.md
-            - name: Yammer
-              href: retention-policies-yammer.md
+            - name: Viva Engage
+              href: retention-policies-viva-engage.md
             - name: Exchange
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion
