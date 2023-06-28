@@ -22,13 +22,17 @@ description: Learn how to use Microsoft Syntex eSignature to send electronic sig
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Microsoft Syntex eSignature lets you safely and easily send PDF documents for signature to multiple recipients. It allows you to add a message and edit the name of the request, and to send it to multiple recipients while applying the security and compliance of Microsoft 365.
+Microsoft Syntex eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365. With Syntex eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. YOu also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
 
 ## Before you begin
 
 Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-set-up) in the Microsoft 365 admin center.
 
 You must be signed in to SharePoint Online by using your work email address.
+
+> [!NOTE]
+> For this preview, Syntex eSignature is available for PDF documents only at this time.
+
 
 ## Create a signature request
 
@@ -136,7 +140,6 @@ In some locations within the document, you might be asked to add your initials t
 1. Select **Initial here**, and enter your initials. This action is prepopulated if you've already entered your signature.
 
     ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here.png)
-
 
 2. Select **Next** to go to the next location in the document that requires your input.
 
