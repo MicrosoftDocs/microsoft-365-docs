@@ -38,7 +38,7 @@ You must be signed in to SharePoint Online by using your work email address.
 
 ## Create a signature request
 
-1. From a SharePoint document library, open the file for which you want to start the Syntex eSignature process.
+1. From a SharePoint document library, open the document for which you want to start the Syntex eSignature process.
 
 2. In the document viewer, select **More options** (...), and then select **Get signatures**.
 
