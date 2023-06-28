@@ -321,17 +321,6 @@ Policy tips are not supported.
 
 For more information on document fingerprint SITs, see [Document fingerprinting](document-fingerprinting.md)-->
 
-## Sensitivity label support for Outlook for Microsoft 365
-
-Applies to:
-
-- E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
-- Semi-annual channel tentative version 2302 build 16.0.16130.20478
-
-Yes.
-
-For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
-
 ### Trainable classifiers support for Outlook for Microsoft 365
 
 Applies to:
@@ -402,3 +391,14 @@ Yes.
 - [Word count requirements](classifier-tc-definitions.md#word-count-requirements)
 
 For more information on trainable classifiers, see [Learn about trainable classifiers](classifier-learn-about.md)
+
+## Sensitivity label support for Outlook for Microsoft 365
+
+Applies to:
+
+- E5 users with connected experience enabled with production version and build 2303 & 16.0.16216.10000 or higher
+- Semi-annual channel tentative version 2302 build 16.0.16130.20478
+
+Yes.
+
+For more information on sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md)
