@@ -90,7 +90,7 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
    | Task | Procedure |
    |---|---|
-   | Add a role to a user account | 1. Under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>2. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
+   | Add a role to a user account | 1. Under **Manage**, select **Assigned roles**, and then choose **+ Add assignments**.<br/><br/>2. Search for one of the following roles, select it, and then choose **Add** to assign that role to the user account.<br/><br/>- Global Administrator<br/>- Security Administrator<br/>- Security Reader |
    | Remove a role from a user account | 1. Under **Manage**, select **Assigned roles**.<br/><br/>2. Select one or more administrative roles, and then select **X Remove assignments**. |
 
 ---
