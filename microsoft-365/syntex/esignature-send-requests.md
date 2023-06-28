@@ -70,9 +70,9 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 ### Cancel a signature request
 
-If you create a signature request and want to cancel it, following these steps.
+If you create a signature request and want to cancel it, follow these steps.
 
-1. From one of your notification emails, select **View Request**.
+1. From one of your email notifications, select **View Request**.
 
 2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
 
@@ -82,17 +82,17 @@ If you create a signature request and want to cancel it, following these steps.
 
     ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
 
-    Once canceled, the status of the request is set to **Canceled** and recipients receive a notification email telling them that the request was canceled and that no further action will be possible on this request.
+    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action will be possible on this request.
 
 ## Review and sign a signature request
 
-When a signature request is created, a notification email is sent to the recipients. The notification email contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex eSignature or Microsoft account to sign the request.
+When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex license or a Microsoft account to sign the request.
 
 ### Access the document to be signed
 
-When you receive the notification email, select **View request** in the email to begin the signing process.
+When you receive the email notification, select **View request** in the email to begin the signing process.
 
-![Screenshot of a notification email showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
+![Screenshot of an email notification showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
 
 ### Consent to use your electronic signature
 
@@ -101,7 +101,7 @@ To continue the electronic signing process, you must consent to the terms and co
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
 
-![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
+    ![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
 
 ### Sign the document
 
@@ -111,9 +111,9 @@ Once you give your consent, the document viewer opens in a new browser tab. Here
 
 There are three different types of input you can be asked for:
 
-- Signature
-- Initials
-- Date
+- [Signature](#signature)
+- [Initials](#initials)
+- [Date](#date)
 
 #### Signature
 
@@ -150,9 +150,9 @@ When you have entered all of the required input, select **Submit** to complete t
 
 ![Screenshot of the completed document showing the Submit button.](../media/content-understanding/esignature-submit.png)
 
-The status of the request changes from **In progress** to **Completed**. The document becomes read-only. You'll get an email notification that your signature has been received and the requester will be notified.
+The status of the request changes from **In progress** to **Completed**. The document becomes read-only. You'll receive an email notification saying that your signature has been received and the requester will be notified.
 
-Once everyone has signed the document, you'll get an email notification where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
+Once everyone has signed the document, you'll get an email notification saying where you can view the document and request details. The document is available via the **View request** button in the email for 30 days, so make sure you download it for your own records.
 
 ### Decline to sign the document
 
@@ -168,13 +168,13 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
 Once you decline, you won't be able to add your signature, but you'll be able to see the document in read-only mode.
  
-Once you decline, a notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete signing process and change the status of the request from **In progress** to **Declined**.
+Once you decline, an email notification is sent to the requester saying that you don’t want to sign the document. Declining to sign will complete signing process and change the status of the request from **In progress** to **Declined**.
   
 If there are more recipients, they'll also receive a notification saying that the request has been declined.
 
 ### View request history and details
 
-Whether you're a requester or a recipient, you can select **View request** from any of your notification emails to view the document and find out more about the request.
+Whether you're a requester or a recipient, you can select **View request** from any of your email notifications to view the document and find out more about the request.
 
 1. In the document viewer, select the **View history** tab to see the status of the request. On the **Request history** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
 
@@ -186,7 +186,7 @@ Whether you're a requester or a recipient, you can select **View request** from 
 
 ## Monitor the status of a request
 
-When you create a signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning. 
+When you create a signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
 
 |Status  |Description  |
 |---------|---------|
@@ -199,7 +199,7 @@ When the status of a request is **Completed**, **Canceled**, or **Declined**, th
 
 ## Access the signed document
 
-All parties involved in the request receive a notification email saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View request** to access the signed document and the request history. Access to the document via the notification email will be available for 30 days after the request is completed.
+All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View request** to access the signed document and the request history. Access to the document via the email notification will be available for 30 days after the request is completed.
 
 Additionally, the signed document also is saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
 
