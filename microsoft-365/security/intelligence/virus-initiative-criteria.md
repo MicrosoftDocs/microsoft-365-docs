@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 06/06/2023
+ms.date: 06/28/2023
 ---
 
 # Microsoft Virus Initiative
