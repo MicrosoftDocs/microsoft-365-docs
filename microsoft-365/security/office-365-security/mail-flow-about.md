@@ -35,7 +35,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, or standalone Exc
 
 EOP offers flexibility in how your messages are routed. The following articles explain steps in the mail flow process.
 
-[Directory Based Edge Blocking](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) reject messages to invalid recipients at the service network perimeter by default.
+[Directory Based Edge Blocking](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) rejects messages to invalid recipients at the service network perimeter by default.
 
 [View or edit accepted domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) describes how to manage domains that are associated with your EOP service.
 
