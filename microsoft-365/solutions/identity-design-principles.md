@@ -245,7 +245,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
   - **Permission Filtering** - (../compliance/index.yml)
   - **Compliance Boundaries** - (../compliance/set-up-compliance-boundaries.md)
   - **eDiscovery (Premium)** - (../compliance/overview-ediscovery-20.md)
-- **Yammer** - (/yammer/manage-yammer-users/manage-yammer-admins)
+- **Viva Engage** - (/viva/engage/manage-viva-engage-users/manage-viva-engage-admins)
 - **Multi-geo** - (../enterprise/add-a-sharepoint-geo-admin.md)
 - **Dynamics 365** – (/dynamics365/)
 

@@ -31,7 +31,7 @@ When you select the **On-premises repositories** location, Microsoft Purview Dat
 
 ## DLP relies on Microsoft Purview Information Protection scanner
 
-DLP relies on a full implementation of the Microsoft Purview Information Protection scanner to monitor, label and protect sensitive items. If you haven't implemented Information Protection scanner, must do so first. See these articles:
+DLP relies on a full implementation of the Microsoft Purview Information Protection scanner to monitor, label, and protect sensitive items. If you haven't implemented Information Protection scanner, you must do so before you can use DLP. For more information, read these articles:
 
 - [What is Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Learn about the information protection scanner](deploy-scanner.md)
@@ -41,7 +41,7 @@ DLP relies on a full implementation of the Microsoft Purview Information Protect
 
 ## DLP On-premises repository actions
 
-DLP detects files in on-premises repositories by one of these four methods:
+DLP detects files in on-premises repositories by looking for the following:
 
 - sensitive information types
 - sensitivity labels

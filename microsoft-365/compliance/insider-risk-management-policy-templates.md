@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 06/28/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -157,4 +157,4 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by risky users|7,500|
-|Forensic evidence|5 users for preview release|
+|Forensic evidence|Unlimited|

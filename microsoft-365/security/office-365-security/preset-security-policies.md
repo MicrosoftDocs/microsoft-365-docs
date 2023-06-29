@@ -535,7 +535,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |---|:---:|:---:|
 |**Anti-malware policy**|No difference|No difference|
 |**Anti-spam policy**|||
-|&nbsp;&nbsp;**Bulk** detection action (_BulkSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|&nbsp;&nbsp;**Bulk compliant level (BCL) met or exceeded** detection action (_BulkSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|7|6|
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||

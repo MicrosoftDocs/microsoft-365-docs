@@ -63,11 +63,11 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 |:-----|:-----|:-----|
 |Microsoft 365 Groups - Email, calendar, OneNote, and shared files in a central place | Groups are supported in Business Essentials, Business Premium, Education, and the Enterprise E1, E3, and E5 plans. People in one Microsoft 365 tenant can create a group and invite people in another Microsoft 365 tenant as guest users. Applies to Dynamics CRM as well. |  <ul><li> [Learn about Microsoft 365 groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) </li><li> [Guest access in Microsoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) </li><li> [Deploy Microsoft 365 Groups](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn896591(v=crm.8)) </li></ul> |
 
-## Yammer collaboration options
+## Viva Engage collaboration options
 
 | Sharing goal | Administrative action | How-to information |
 |:-----|:-----|:-----|
-|Yammer - Collaboration through an enterprise social medium | Unless the ability to create external groups is disabled by a Yammer admin, users can create external groups to collaborate in Yammer through conversations, the ability to like and follow posts, share files, and chat online. | [Create and manage external groups in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a)|
+|Viva Engage - Collaboration through an enterprise social medium | Unless the ability to create external groups is disabled by a Viva Engage admin, users can create external groups to collaborate in Viva Engage through conversations, the ability to like and follow posts, share files, and chat online. | [Create and manage external groups in Viva Engage](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a)|
 
 ## Teams collaboration options
 
