@@ -209,27 +209,32 @@ Run Defender for Endpoint Client Analyzer on device to confirm pre-onboarding co
 
 To leverage the new simplified onboarding method, you will need to onboard devices using the updated onboarding script. The onboarding script is required to establish communication with the updated URL/static IP ranges. 
 
-Go to the Microsoft 365 Defender portal settings page: **Settings > Endpoints > Device management> Onboarding**.
+1. Navigate to the Microsoft 365 Defender portal settings page.
 
+2. Select **Settings > Endpoints > Device management> Onboarding**.
 
 :::image type="content" source="images/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
 
-Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
+3. Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
 
 
 >[!NOTE]
 >If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
 
 
+4. Select the relevant OS from the operating system dropdown. 
+ 
+5. Onboard using the deployment method of choice. See the preceeding section for guidelines on each deployment method.
 
 :::image type="content" source="images/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
 
-Select the relevant OS from the operating system dropdown. Onboard using the deployment method of choice. See the following section for guidelines on each deployment method.  
+  
 
 
 Rebooting devices is mandatory for devices that are currently onboarded to MDE. The switch will not be made until this occurs.   
 
-IMPORTANT NOTE: Reonboarding scenario; Reboot is required if devices have been previously onboarded to MDE. If you are migrating devices, you are not required to offboard. You can simply rerun the script & reboot. 
+>[!IMPORTANT]
+>Reonboarding scenario; Reboot is required if devices have been previously onboarded to MDE. If you are migrating devices, you are not required to offboard. You can simply rerun the script & reboot. 
 
 For more information on what tools are supported and how to use them see the next section. 
 
