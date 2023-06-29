@@ -102,7 +102,7 @@ MailboxRegionLastUpdateTime : 2/6/2023 8:21:01 PM
 
 ## Move an existing cloud-only mailbox to a specific geo location
 
-A cloud-only user (a user created directly in Azure AD) is a user that's not synchronized to the tenant via Azure AD Connect. Use the **Get-MsgUser** and **Set-MsgUser** cmdlets in Microsoft Graph PowerShell to view or specify the geo location where a cloud-only user's mailbox is stored.
+A cloud-only user (a user created directly in Azure AD) is a user that's not synchronized to the tenant via Azure AD Connect. Use the **Get-MgUser** and **Set-MgUser** cmdlets in Microsoft Graph PowerShell to view or specify the geo location where a cloud-only user's mailbox is stored.
 
 To view the **PreferredDataLocation** value for users, run the following command in Microsoft Graph PowerShell:
 
