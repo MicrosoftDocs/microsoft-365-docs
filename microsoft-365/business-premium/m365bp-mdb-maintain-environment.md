@@ -35,7 +35,7 @@ After you have set up and configured [Microsoft 365 Business Premium](index.md) 
 
 - **[Security operations](#security-operations)** (also referred to as *SecOps*) includes tasks that your security team performs, such as reviewing and addressing detected threats, running antivirus scans on devices, starting automated investigations, and more. These kinds of tasks are listed in [Security operations](#security-operations). 
 
-In each section, select 
+In each section, select the tab that corresponds to your subscription.
 
 ## Tenant administration
 
