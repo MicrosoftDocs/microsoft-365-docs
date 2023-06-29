@@ -1,4 +1,5 @@
 ---
+
 title: "Get started with sensitivity labels"
 f1.keywords:
 - CSH
@@ -13,20 +14,7 @@ ms.localizationpriority: high
 ms.collection:
 - purview-compliance
 - tier1
-- highpriKaty Koenen
-commented 5h ago
-
-
-
-
-@Martin Berzin:
-
-Made the following changes:
-All full names: fixed typo in "strings"
-Taiwan physical addresses: Added Latin characters as a supported language
-Ukraine physical addresses: Fixed "Ukrainian" typo
-Diseases:  Updated note:
-Image
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
@@ -35,6 +23,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Prescriptive steps for admins, licensing requirements, and common scenarios that use sensitivity labels to help protect your organization's data."
+
 ---
 
 # Get started with sensitivity labels
