@@ -135,7 +135,11 @@ File types are a grouping of file formats. They are utilized to protect specific
 |docx, //word   | Y | Y| Y| Y |
 |docm, //word   | Y | Y| Y| Y |
 |dot, //word   | Y | Y| Y| Y |
-
+|dotx, //word   | Y | Y| Y| Y |
+|dotm, //word   | Y | Y| Y| Y |
+|docb, //word   | Y | Y| Y| Y |
+|xls, //excel   | Y | Y| Y| Y |
+|xlsx, //excel  | Y | Y| Y| Y |
 
 
 ### File extensions
