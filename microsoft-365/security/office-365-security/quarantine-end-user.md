@@ -321,7 +321,72 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 - [Request the release of quarantined email](#request-the-release-of-quarantined-email)
 - [Delete email from quarantine](#delete-email-from-quarantine)
 
-
 ## Manage quarantined messages in Microsoft Teams
 
-When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages.
+When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft 365 Defender portal.
+
+### View your quarantined messages in Microsoft Teams
+
+In the Microsoft 365 Defender portal at https://security.microsoft.com, go to **Email & collaboration** > **Review** > **Quarantine** > **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>. 
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are:
+
+- **Teams message text**: Contains the subject for the teams message.
+- **Date quarantined**: Showed when the message was quarantined.
+- **Status**: Shows whether the message is already reviewed and released or needs review. 
+- **Sender**: The person who sent the message that was quarantined.
+- **Quarantine reason**: Available options are "High confidence phish" and "Malware".
+- **Expires**: Indicates the time after which the message is removed from quarantine. By default, this value is 30 days.
+
+To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
+
+- **Sender address**
+- **Time received**:
+  - **Last 24 hours**
+  - **Last 7 days**
+  - **Last 14 days**
+  - **Last 30 days** (default)
+  - **Custom**: Enter a **Start time** and **End time** (date).
+- **Expires in**:
+  - **Custom** (default): Enter a **Start time** and **End time** (date).
+  - **Today**
+  - **Next 2 days**
+  - **Next 7 days**
+- **Quarantine reason**: Available values are **Malware** and **High confidence phishing**.
+- **Status**: Select **Needs review** and **Released**.
+
+When you're finished in the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific Teams messages. Wildcards aren't supported.
+
+After you find a specific quarantined Teams message, select the message to view details about it and to take action on it (for example, view, release, download, or delete the message).
+
+#### View quarantined message details in Microsoft Teams
+
+On the **Teams messages** tab, select the quarantined message by clicking anywhere in the row other than the check box.
+
+In the details flyout that opens, the following information is available:
+
+- **Quarantine details** section: Includes quarantine reason, expiry date, quarantine policy type, and other information.
+  - **Expires**
+  - **Time received**
+  - **Quarantine reason**
+  - **Release status**
+  - **Policy type**
+- **Message details** section: Includes date and time of the message sent, the sender address, Teams message ID, and the list of recipients.
+  - **Sender address** 
+  - **Time received**
+  - **Recipients**
+  - **Teams message ID**
+
+To take action on the message, see the next section.
+
+### Take action on quarantined messages in Microsoft Teams
+
+On the **Teams messages** tab, select the quarantined message by selecting the check box next to the first column. The following options are available:
+
+- **Request release**: You can request to release the message from quarantine.
+- **Delete**: You can request to delete the message from the list of quarantined messages.
+- **Preview message**: You can view the details of the message you selected.
+
+Note that if you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
