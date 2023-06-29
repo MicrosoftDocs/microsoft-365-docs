@@ -79,9 +79,6 @@ Defender for Endpoint Plan 1 and 2, Defender for Business, and Microsoft 365 Bus
 - **Microsoft Defender for Endpoint for Servers** (*recommended for enterprise customers*). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 - **Microsoft Defender for Business servers** (*recommended for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
 
-> [!NOTE]
-> Microsoft Defender for Endpoint for Servers is no longer available. If you previously purchased these licenses, consider moving to [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction).
-
 ## Start a trial
 
 - To try Defender for Endpoint, go to the [Defender for Endpoint trial sign-up page](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
