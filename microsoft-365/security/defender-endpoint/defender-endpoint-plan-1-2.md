@@ -1,7 +1,6 @@
 ---
 title: Compare Microsoft endpoint security plans
 description: Compare Microsoft endpoint security plans, such as Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
-keywords: Defender for Endpoint, advanced threat protection, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
