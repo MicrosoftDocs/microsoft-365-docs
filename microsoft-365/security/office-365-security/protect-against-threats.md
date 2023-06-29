@@ -161,7 +161,7 @@ For more information about the recommended settings for anti-spam, see [EOP anti
        - **High confidence spam**: Select **Quarantine message**.
        - **Phishing**: Select **Quarantine message**.
        - **High confidence phishing**: Verify **Quarantine messages** is selected.
-       - **Bulk**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
+       - **Bulk compliant level (BCL) met or exceeded**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
 
        For each action where you select **Quarantine message**, leave the default value in the **Select quarantine policy** box that appears (including blank values) to use the default [quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) that applies to messages that are quarantined by anti-spam protection.
 
