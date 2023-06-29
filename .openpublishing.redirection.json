@@ -11079,6 +11079,11 @@
     "source_path": "microsoft-365/loop/loop-components-sharepoint.md",
     "redirect_url": "/microsoft-365/loop/loop-workspaces-configuration",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-maintain-environment.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_document_id": true
   }
  ]
 }
