@@ -126,8 +126,6 @@ With [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rba
 
 You can also manage user permissions to access Secure Score data from additional data sources, such as the other products supported by Secure Score, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
 
-Access to this data will help you strengthen the security posture of your devices, identities, and Microsoft Office 365 apps.
-
 To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permissions, see [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md).
 
 > [!NOTE]
