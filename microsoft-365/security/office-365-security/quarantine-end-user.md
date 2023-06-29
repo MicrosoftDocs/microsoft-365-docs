@@ -28,7 +28,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
-# Find and release quarantined messages as a user in EOP
+# Manage quarantined messages and files as a user
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -69,7 +69,9 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 - By default, messages that were quarantined for high confidence phishing, malware, or by mail flow rules are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
 
-## View your quarantined messages
+## Manage quarantined messages in EOP
+
+### View your quarantined messages
 
 > [!NOTE]
 > Your ability to view quarantined messages is controlled by the quarantine policy that applies to the reason why the message was quarantined (which might be the default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
@@ -152,7 +154,7 @@ After you find a specific quarantined message, select the message to view detail
 >
 > :::image type="content" source="../../media/quarantine-user-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and then selecting More on a mobile device." lightbox="../../media/quarantine-user-message-main-page-mobile-actions.png":::
 
-### View quarantined message details
+#### View quarantined message details
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Email** tab. Or, to go directly to the **Email** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Email>.
 
@@ -182,7 +184,7 @@ To take action on the message, see the next section.
 > [!TIP]
 > To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-## Take action on quarantined email
+### Take action on quarantined email
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Email** tab. Or, to go directly to the **Email** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Email>.
 
@@ -211,7 +213,7 @@ After you select the quarantined message, the available actions are described in
 >
 >   :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions shown." lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
 
-### Release quarantined email
+#### Release quarantined email
 
 > [!NOTE]
 > Your ability to release quarantined messages is controlled by the quarantine policy for the protection feature that quarantined the message (which might be a default quarantine policy as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)).
@@ -237,7 +239,7 @@ Back on the **Email** tab, the **Release status** value of the message is **Rele
 
 The message is delivered to your Inbox (or some other folder, depending on any [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in your mailbox).
 
-### Request the release of quarantined email
+#### Request the release of quarantined email
 
 > [!NOTE]
 > Your ability to request the release of quarantined messages is controlled by the quarantine policy for the protection feature that quarantined the message.
@@ -257,7 +259,7 @@ In the **Request release** flyout that opens, review the information, select **R
 
 Back on the **Quarantine page**, the **Release status** value of the message is **Release requested**. An admin will review your request and approve it or deny it.
 
-### Delete email from quarantine
+#### Delete email from quarantine
 
 When you delete an email message from quarantine, the message is removed and isn't sent to the original recipients.
 
@@ -275,7 +277,7 @@ In the **Delete (n) messages from quarantine** flyout that opens, use one of the
 
 After you select **Delete** on the **Delete (n) messages from quarantine** flyout, you return to the **Email** tab where the message is no longer listed.
 
-### Preview email from quarantine
+#### Preview email from quarantine
 
 After you select the message, use either of the following methods to preview it:
 
@@ -286,7 +288,7 @@ In the flyout that opens, choose one of the following tabs:
   - **Source**: Shows the HTML version of the message body with all links disabled.
   - **Plain text**: Shows the message body in plain text.
 
-### View email message headers
+#### View email message headers
 
 After you select the message, use either of the following methods to view the message headers:
 
@@ -299,7 +301,7 @@ Use :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="f
 
 Select the **Microsoft Message Header Analyzer** link to analyze the header fields and values in depth. Paste the message header into the **Insert the message header you would like to analyze** section (CTRL+V or right-click and choose **Paste**), and then select **Analyze headers**.
 
-### Block email senders from quarantine
+#### Block email senders from quarantine
 
 The Block senders action adds the message sender to the Blocked Senders list in the your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
@@ -313,7 +315,7 @@ In the **Block sender** flyout that opens, review the information about the send
 > [!TIP]
 > The organization can still receive mail from the blocked sender. Messages from the sender are delivered to user Junk Email folders or to quarantine. To delete messages from the sender upon arrival, an admin can use [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to **Block the message**.
 
-### Take action on multiple quarantined email messages
+#### Take action on multiple quarantined email messages
 
 When you select multiple quarantined messages on the **Email** tab by selecting the check boxes next to the first column, the following bulk actions are available on the **Email** tab (depending on the **Release status** values of the messages that you selected):
 
