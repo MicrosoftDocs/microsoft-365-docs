@@ -27,7 +27,7 @@ description: "Maintain your systems, user accounts, and policies to help protect
 
 # Maintain your environment
 
-After you have set up and configured [Microsoft 365 Business Premium](index.md) or [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (standalone), your next step is to prepare a plan for maintenance and operations. You can use this article as a guide to prepare your plan.
+After you have set up and configured [Microsoft 365 Business Premium](index.md) or [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (standalone), your next step is to prepare a plan for maintenance and operations. You can use this article as a guide to prepare your plan. 
 
 | Area | Description |
 |---|---|
