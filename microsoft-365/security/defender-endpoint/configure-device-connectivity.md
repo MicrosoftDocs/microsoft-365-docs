@@ -137,7 +137,7 @@ Defender for Endpoint services consolidated under the simplified method should n
 
 The following list provides options you can use to configure your environment for cloud connectivity:
 
-- [Option 1: Use the simplified domain](#option-1-configure-using-the-simplified-domain)
+- [Option 1: Use the simplified domain](#option-1-configure-connectivity-using-the-simplified-domain)
 - [Option 2: Use static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges)
  
 
@@ -327,7 +327,7 @@ Choose one of the following options to onboard Mac:
 
 
 
-For more information on migrating a device that was previously onboarded to the simplified domain, see [Migrating a device to the simplified domain](#migrating-a-device-to-the-simplified-domain).
+For more information on migrating a device that was previously onboarded to the simplified domain, see [Migrating a device to the simplified domain](#migrating-devices-using-the-strealined-method).
 
 
 ## Verifying device connectivity for migrated devices
