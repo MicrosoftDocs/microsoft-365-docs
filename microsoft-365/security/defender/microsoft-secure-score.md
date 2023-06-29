@@ -122,9 +122,11 @@ If you turn on security defaults, you'll be awarded full points for the followin
 
 ### Manage permissions with Microsoft 365 Defender role-based access control(RBAC)
 
-With [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md) you can create custom roles with permissions for Secure Score. You can control which users have access to Secure Score data for Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity to help you manage the security of your devices, identities, and Microsoft Office 365 apps.
+With [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md), you can create custom roles with specific permissions for Secure Score. This allows you to control which users have access to Secure Score data, the products for which they will see Secure Score data (for example, Microsoft Defender for Endpoint) and their permission level to the data.
 
-You can also manage user's permissions to access Microsoft Secure Score data from additional data sources. Additional data sources include all the other products supported by Secure Score today, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
+You can also manage user permissions to access Secure Score data from additional data sources, such as the other products supported by Secure Score, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
+
+Access to this data will help you strengthen the security posture of your devices, identities, and Microsoft Office 365 apps.
 
 To start using Microsoft 365 Defender (RBAC) to manage your Secure Score permissions, see [Microsoft 365 Defender role-based access control(RBAC)](manage-rbac.md).
 
