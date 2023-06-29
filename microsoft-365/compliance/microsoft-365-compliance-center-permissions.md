@@ -64,6 +64,9 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 
 ## Administrative units
 
+> [!NOTE]
+> Support for administrative units is in preview for some solutions: Data lifecycle management, Communication compliance, Records management
+
 Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units. They also allow you to assign administrative units to members of role groups in Microsoft Purview solutions, so that these administrators can manage only the members (and associated features) of those assigned administrative units.
 
 For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization. You can create region or department-specific policies or view user activity as a result of those policies and administrative unit assignment. You can also use administrative units as an initial scope for a policy, where the selection of users eligible for the policy depends on membership in administrative units.

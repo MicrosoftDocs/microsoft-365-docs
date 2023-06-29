@@ -13,7 +13,20 @@ ms.localizationpriority: high
 ms.collection:
 - purview-compliance
 - tier1
-- highpri
+- highpriKaty Koenen
+commented 5h ago
+
+
+
+
+@Martin Berzin:
+
+Made the following changes:
+All full names: fixed typo in "strings"
+Taiwan physical addresses: Added Latin characters as a supported language
+Ukraine physical addresses: Fixed "Ukrainian" typo
+Diseases:  Updated note:
+Image
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
@@ -87,7 +100,7 @@ Now in preview, sensitivity labels support [administrative units that have been 
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the SharePoint location.
 
-For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 ## Deployment strategy for sensitivity labels
 
