@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 06/27/2023
+ms.date: 07/01/2023
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Investigate a file
+# Investigate files in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
