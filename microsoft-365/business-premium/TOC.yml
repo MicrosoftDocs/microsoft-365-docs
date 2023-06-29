@@ -104,15 +104,7 @@
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
-  items: 
-    - name: Overview
-      href: m365bp-mdb-maintain-environment.md
-    - name: Tenant administration guide
-      href: m365bp-admin-guide.md
-    - name: Security administration guide
-      href: m365bp-security-admin-guide.md
-    - name: Security operations guide
-      href: m365bp-security-operations-guide.md
+  href: m365bp-mdb-maintain-environment.md 
 - name: Reference
   items:
     - name: Microsoft 365 Business Premium FAQ
