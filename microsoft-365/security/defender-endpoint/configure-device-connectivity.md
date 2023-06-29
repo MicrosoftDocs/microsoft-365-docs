@@ -212,7 +212,7 @@ To leverage the new simplified onboarding method, you will need to onboard devic
 Go to the Microsoft 365 Defender portal settings page: **Settings > Endpoints > Device management> Onboarding**.
 
 
-:::image type="content" source="../../media/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
+:::image type="content" source="images/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
 
 Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
 
@@ -222,7 +222,7 @@ Navigate to the 'Simplified Connectivity options' toggle at the top of the page.
 
 
 
-:::image type="content" source="../../media/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
+:::image type="content" source="images/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
 
 Select the relevant OS from the operating system dropdown. Onboard using the deployment method of choice. See the following section for guidelines on each deployment method.  
 
