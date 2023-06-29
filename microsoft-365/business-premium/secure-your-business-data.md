@@ -262,7 +262,7 @@ Microsoft 365 Business Premium also includes advanced security and compliance ca
 
 See the following articles:
 
-- [Maintain your environment](m365bp-maintain-environment.md) 
+- [Maintain your environment](m365bp-mdb-maintain-environment.md) 
 - [Security incident management in Microsoft 365 Business Premium](m365bp-security-incident-management.md)
 - [Microsoft 365 Business Premium security operations guide](m365bp-security-operations-guide.md) 
 
