@@ -35,10 +35,10 @@ After you have set up and configured [Microsoft 365 Business Premium](index.md) 
 | Security administration | Security administration includes tasks that your security administrators (also referred to as *security admins*) perform in portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))<br/>- The Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com))<br/><br/>These kinds of tasks include defining or editing security policies, onboarding or offboarding devices, and so forth, and are listed in [Security administration](#security-administration). |
 | Security operations | Security operations (also referred to as *SecOps*) and includes tasks that your security team performs in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). <br/><br/>As threats are detected, those threats must be reviewed and addressed. Regular antivirus scans should occur on devices, and you can initiate scans when needed. In addition, you can run automated investigations on devices that have a high risk level or detected threats. These kinds of security tasks (and more!) are listed in [Security operations](#security-operations). |
 
-
 ## Tenant administration
 
-If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
+> [!TIP]
+> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
 
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
@@ -162,7 +162,8 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 
 ## Security administration
 
-If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
+> [!TIP]
+> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
 
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
@@ -206,7 +207,8 @@ The following table lists common tasks that security admins typically perform, w
 
 ## Security operations
 
-If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
+> [!TIP]
+> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
 
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
