@@ -63,6 +63,8 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## June 2023
 
+- Microsoft Defender Antivirus scan is supported for macOS and Linux for client version 101.98.84 and above. It is in preview. See [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md).
+- Isolating devices from the network is supported for macOS and Linux for client version 101.98.84 and above. It is in preview. See [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md).
 - Forcibly releasing devices from isolation is now available for public preview. This new capability allows you to forcibly release devices from isolation, when isolated devices become unresponsive. For more information, see [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md).
 
 ## May 2023
