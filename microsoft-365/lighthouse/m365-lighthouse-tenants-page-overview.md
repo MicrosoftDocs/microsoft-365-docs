@@ -32,6 +32,7 @@ The Tenants page also includes the following options:
 - **Manage Tags:** Select to add, edit, or delete a tag.
 - **Assign Tags:** Select to assign a tag to a tenant.
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
+- **Manage services:** Select to manage services for a tenant in the applicable admin center.
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenants page." lightbox="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png":::
 
