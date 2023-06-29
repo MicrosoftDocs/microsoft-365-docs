@@ -616,6 +616,10 @@ The actions that are available in a rule depend on the locations that have been 
 - Add HTML Disclaimer
 - Modify Email Subject
 - Deliver the message to the hosted quarantine
+- Apply branding to encrypted messages 
+
+> [!TIP]
+> For the **Apply branding to encrypted messages** action, if you already have Office Message Encryption implemented, the templates will automatically show up in the drop down list. If you want to implement Microsoft Purview Message Encryption, see  for background on OME and procedure to create and configure your branding templates.
 
 > [!TIP]
 > For more information on the actions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
