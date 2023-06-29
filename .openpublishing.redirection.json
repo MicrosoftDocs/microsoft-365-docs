@@ -11082,37 +11082,42 @@
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-maintain-environment.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": true
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-admin-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/security/defender-business/mdb-admin-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-security-admin-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/security/defender-business/mdb-security-admin-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-security-operations-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/security/defender-business/mdb-security-operations-guide.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business/manage-protected-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
     "redirect_document_id": false
   }
  ]
