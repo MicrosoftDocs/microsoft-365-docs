@@ -106,6 +106,14 @@ Usage count can be determined by:
 
 - **Users targeted by phishing simulation training**: Users who were targeted as part of simulations over past 28 days. 
 
+### I have Defender for Office 365 P1 or P2 paid license. Why can I not see the usage card?
+
+If you have at least one Defender for Office 365 P1 or P2 license, but you're still unable to see the card because of one of the following reasons:
+
+- You don't have the required role to be able to view the card.
+
+- Your organization had no active usage in the past 28 days.
+
 ### What does Collecting license and usage data status mean?
 
 If you see **Collecting license and usage data** status in your usage card, it means Microsoft is still collecting your current licensing and usage data. When it's available, you'll be able to see the full usage card and other details.
