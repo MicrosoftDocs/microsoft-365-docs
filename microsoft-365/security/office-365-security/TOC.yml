@@ -471,7 +471,7 @@
        href: sending-mail-to-office-365.md
      - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
-     - name: Services for non-customers
+     - name: Microsoft 365 services for external email senders
        href: services-for-non-customers.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
