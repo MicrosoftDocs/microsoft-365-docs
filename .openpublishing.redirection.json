@@ -11091,17 +11091,27 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "/microsoft-365/security/defender-business/mdb-admin-guide.md",
+    "source_path": "microsoft-365/security/defender-business/mdb-admin-guide.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
-    "source_path": "/microsoft-365/business-premium/m365bp-security-admin-guide.md",
+    "source_path": "microsoft-365/business-premium/m365bp-security-admin-guide.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
     "redirect_document_id": false
   },
   {
-    "source_path": "/microsoft-365/security/defender-business/mdb-security-admin-guide.md",
+    "source_path": "microsoft-365/security/defender-business/mdb-security-admin-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-security-operations-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-security-operations-guide.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
     "redirect_document_id": false
   }
