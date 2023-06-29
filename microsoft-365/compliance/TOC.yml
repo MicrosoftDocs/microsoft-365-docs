@@ -83,7 +83,9 @@
        - name: HR data 
          href: import-hr-data.md
        - name: ICE Chat
-         href: archive-icechat-data.md 
+         href: archive-icechat-data.md
+       - name: Insider Risk Indicators (preview)
+         href: import-insider-risk-indicators.md 
        - name: Instant Bloomberg
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
