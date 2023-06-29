@@ -38,6 +38,8 @@ After you have set up and configured [Microsoft 365 Business Premium](index.md) 
 
 ## Tenant administration
 
+If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
+
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
@@ -46,7 +48,7 @@ Many admin tasks can be performed in the Microsoft 365 admin center ([https://ad
 
 If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
-## General tasks
+### General tasks
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -56,7 +58,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | View usage reports to see how people are using Microsoft 365 | [Microsoft 365 Reports in the admin center](../admin/activity-reports/activity-reports.md) |
 | Open a technical support ticket | [Get support for Microsoft 365 for business](../admin/get-help-support.md) |
 
-## Users, groups, and passwords
+### Users, groups, and passwords
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -69,7 +71,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Remove a user account when someone leaves your organization | [Overview: Remove a former employee and secure data](../admin/add-users/remove-former-employee.md) |
 | Reset passwords for user accounts | [Reset passwords in Microsoft 365 for business](../admin/add-users/reset-passwords.md) |
 
-## Email and calendars
+### Email and calendars
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -79,7 +81,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Add users to a distribution group | [Add a user or contact to a Microsoft 365 distribution group](../admin/email/add-user-or-contact-to-distribution-list.md) |
 | Set up a shared mailbox so people can monitor and send email from a common email addresses, like `info@contoso.com` | [Create a shared mailbox](../admin/email/create-a-shared-mailbox.md) |
 
-## Devices
+### Devices
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -89,7 +91,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Offboard devices from Defender for Business | [Offboard a device from Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
 | Manage devices with Intune | [What does device management with Intune mean?](/mem/intune/fundamentals/what-is-device-management)<br/><br/>[Manage your devices and control device features in Microsoft Intune](/mem/intune/fundamentals/manage-devices) |
 
-## Domains
+### Domains
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -97,7 +99,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Buy a domain | [Buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md) |
 | Remove a domain | [Remove a domain](../admin/get-help-with-domains/remove-a-domain.md) |
 
-## Subscriptions and billing
+### Subscriptions and billing
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -114,7 +116,7 @@ Many admin tasks can be performed in the Microsoft 365 admin center ([https://ad
 
 If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 
-## General tasks
+### General tasks
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -124,7 +126,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | View usage reports to see how people are using Microsoft 365 | [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) |
 | Open a technical support ticket | [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support) |
 
-## Users, groups, and passwords
+### Users, groups, and passwords
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -135,7 +137,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Remove a user account when someone leaves your organization | [Overview: Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee) |
 | Reset passwords for user accounts | [Reset passwords in Microsoft 365 for business](/microsoft-365/admin/add-users/reset-passwords) |
 
-## Devices
+### Devices
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -144,7 +146,7 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Offboard devices from Defender for Business | [Offboard a device from Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
 | Manage devices with Intune | [What does device management with Intune mean?](/mem/intune/fundamentals/what-is-device-management)<br/>[Manage your devices and control device features in Microsoft Intune](/mem/intune/fundamentals/manage-devices) |
 
-## Subscriptions and billing
+### Subscriptions and billing
 
 | Task | Resources to learn more |
 |:---|:---|
@@ -159,6 +161,8 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 ---
 
 ## Security administration
+
+If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
 
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
@@ -202,13 +206,13 @@ The following table lists common tasks that security admins typically perform, w
 
 ## Security operations
 
+If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
+
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 If you're new to Microsoft 365 Business Premium, or if your business doesn't have a security operations guide in place yet, use this article as a starting point. If you do already have a security operations guide, review it against the recommendations in this article.
 
 You can use this guidance to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
-
-## Security operations tasks to perform
 
 ### Daily tasks
 
@@ -220,7 +224,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Learn about new incidents or alerts | As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.<br/><br/>2. Select an alert to open its flyout pane, where you can learn more about the alert.<br/><br/>3. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. |
 | Run a scan or automated investigation | Your security team can initiate a scan or an automated investigation on a device that has a high risk level or detected threats. Depending on the results of the scan or automated investigation, [remediation actions](#remediation-actions-in-microsoft-365-business-premium) can occur automatically or upon approval.<br/><br/>1. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose **Assets** > **Devices**.<br/><br/>2. Select a device to open its flyout panel, and review the information that is displayed.<br/>- Select the ellipsis (...) to open the actions menu.<br/>- Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**. |
 
-## Weekly tasks
+### Weekly tasks
 
 | Task | Description  |
 |---------|---------|
@@ -242,7 +246,7 @@ You can use this guidance to make decisions about security incident priorities a
 | Use the Threat analytics dashboard | Use the threat analytics dashboard to get an overview of the current threat landscape by highlighting reports that are most relevant to your organization. <br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Threat analytics** to display the Threat analytics dashboard. The dashboard summarizes the threats into the following sections:<br/>- **Latest threats** lists the most recently published or updated threat reports, along with the number of active and resolved alerts.<br/>- **High-impact threats** lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.<br/>- **Highest exposure** lists threats with the highest exposure levels first. The exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.<br/><br/>3. Select the title of the one you want to investigate, and read the associated report.<br/><br/>4. You can also review the full Analyst report for more details, or select other headings to view the related incidents, impacted assets, and exposure and mitigations.|
 | Remediate an item | Microsoft 365 Business Premium includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
 
-## Remediation actions in Microsoft 365 Business Premium
+### Remediation actions in Microsoft 365 Business Premium
 
 The following table summarizes remediation actions that are available in Microsoft 365 Business Premium:
 
@@ -257,8 +261,6 @@ The following table summarizes remediation actions that are available in Microso
 If you're new to Defender for Business, or if your business doesn't have a security operations guide in place yet, use this article as a starting point. If you do already have a security operations guide, review it against the recommendations in this article.
 
 You can use this guidance to make decisions about security incident priorities and tasks your security team will perform in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
-
-## Security operations tasks to perform
 
 ### Daily tasks
 
