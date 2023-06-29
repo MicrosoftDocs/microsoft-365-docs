@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 06/19/2023
+ms.date: 06/29/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
