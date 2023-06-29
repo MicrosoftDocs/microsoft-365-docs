@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/03/2023
+ms.date: 06/29/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -121,39 +121,37 @@ In some cases, you may want to limit the insider risk policy indicators that are
 
 ### Custom indicators
 
-Use the **Custom Indicators** tab to create a custom indicator to use as a trigger or as a policy indicator in your policies. 
+Use the **Custom Indicators** tab to create a custom indicator to use as a trigger or as a policy indicator in your policies.
 
 > [!NOTE]
-> Before you can create a custom indicator to import third-party indicator data, you must [create an Insider Risk Indicators connector](import-insider-risk-indicators.md) (preview). 
-1. In Settings, select **Policy indicators**, and then select the **Custom Indicators** tab.
+> Before you can create a custom indicator to import third-party indicator data, you must [create an Insider Risk Indicators connector](import-insider-risk-indicators.md) (preview).
+
+1. In Settings, select **Policy indicators** and select the **Custom Indicators** tab.
 2. Select **Add custom indicator**.
 3. Enter an indicator name and a description (optional).
-4. In the **Data connector** list, select the Insider Risk Indicator connector that you created previously. 
+4. In the **Data connector** list, select the Insider Risk Indicator connector that you created previously.
 
-   When you select a data connector: 
+   When you select a data connector:
 
-    - The name of the source column that you selected when you created the connector is displayed in the **Source column from mapping file** field. If you didn’t select a source column when you created the connector, **None** will appear in this field and you don’t need to make a selection. 
-    - In the **Values in source column** list, select the value that you want to assign to the custom indicator. These are the values that are related to the source column that you specified when you created the connector. For example, if you created a single connector that includes data for two indicators (Salesforce and Dropbox), you would see those values in the list.    
-    
-   ![Insider risk management add custom indicator](../media/insider-risk-management-custom-indicator.png)
+   - The name of the source column that you selected when you created the connector is displayed in the **Source column from mapping file** field. If you didn’t select a source column when you created the connector, **None** appears in this field and you don’t need to make a selection.
+   - In the **Values in source column** list, select the value that you want to assign to the custom indicator. These are the values that are related to the source column that you specified when you created the connector. For example, if you created a single connector that includes data for two indicators (Salesforce and Dropbox), you would see those values in the list.
 
-5. If you want to use a column to set threshold values, in the **Data from mapping file** list, select the column that you want to use for the threshold setting; otherwise, select the **Use only as a triggering event without any thresholds** option. 
+5. If you want to use a column to set threshold values, in the **Data from mapping file** list, select the column that you want to use for the threshold setting; otherwise, select the **Use only as a triggering event without any thresholds** option.
 
    > [!NOTE]
-   > Only fields that have a Number data type appear in the **Data from mapping file** list, since a Number data type is required to set a threshold value. The data type is specified when you set up the connector. 
-   
-6. Select **Add indicator**.
+   > Only fields that have a *Number* data type appear in the **Data from mapping file** list, since a *Number* data type is required to set a threshold value. The data type is specified when you set up the connector.
 
-   The indicator is added to the **Custom Indicators** list. 
+6. Select **Add indicator**. The indicator is added to the **Custom Indicators** list.
 
-At this point, you can [use the custom indicator in any *Data theft* or *Data leaks* policies that you create or edit](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy). 
+Now you can [use the custom indicator](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy) in any *Data theft* or *Data leaks* policies that you create or edit.
 
-- If you're using the custom indicator as a trigger, select your custom trigger on the **Triggers** page when you create or edit the policy. 
-- If you're using the custom indicator as a policy indicator, select your custom indicator on the **Indicators** page when you create or edit the policy. 
+- If you're using the custom indicator as a trigger, select your custom trigger on the **Triggers** page when you create or edit the policy.
+- If you're using the custom indicator as a policy indicator, select your custom indicator on the **Indicators** page when you create or edit the policy.
 
 > [!NOTE]
-> After selecting your custom trigger or indicator, make sure to set a custom threshold (it's not recommended that you use the default thresholds). You can't set trigger thresholds on a custom indicator if you selected the **Use only as a triggering event without any thresholds** option. 
-After adding the custom indicator to your policies, the triggers and insights generated based on the custom indicators will appear in the Alerts dashboard, Activity explorer, and User timeline. 
+> After selecting your custom trigger or indicator, make sure to set a custom threshold (it's not recommended that you use the default thresholds). You can't set trigger thresholds on a custom indicator if you selected the **Use only as a triggering event without any thresholds** option.
+
+After adding the custom indicator to your policies, the triggers and insights generated based on the custom indicators appear in the **Alerts dashboard**, **Activity explorer**, and **User timeline**.
 
 ## Enable device indicators and onboard Windows devices
 
@@ -183,7 +181,7 @@ In this deployment scenario, you'll enable devices that haven't been onboarded y
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-3. Select **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+3. Select **Device management** to open the **Devices** list. The list is empty until you onboard devices.
 4. Select **Onboarding** to begin the onboarding process.
 5. Select the way you want to deploy to these devices from the **Deployment method** list, and then select **download package**.
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
@@ -200,7 +198,7 @@ When you're done and the endpoint device is onboarded, it should be visible in t
 
 ### If devices are already onboarded to Microsoft Defender for Endpoint
 
-If Microsoft Defender for Endpoint is already deployed and endpoint devices are reporting in, the endpoint devices will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by going to [Step 2: Onboarding devices](#step-2-onboard-devices).
+If Microsoft Defender for Endpoint is already deployed and endpoint devices are reporting in, the endpoint devices appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by going to [Step 2: Onboarding devices](#step-2-onboard-devices).
 
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Open the compliance portal settings page, and then select **Enable device monitoring**.
@@ -214,7 +212,7 @@ If Microsoft Defender for Endpoint is already deployed and endpoint devices are 
     - Onboard Windows machines using a local script
     - Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
-When you're done and endpoint devices are onboarded, they should be visible under the **Devices** tab and the endpoint devices will start reporting audit activity logs to insider risk management.
+When you're done and endpoint devices are onboarded, they should be visible under the **Devices** tab and the endpoint devices start reporting audit activity logs to insider risk management.
 
 > [!NOTE]
 > This experience is under license enforcement. Without the required license, data will not be visible or accessible.
@@ -244,7 +242,7 @@ These settings effectively mean:
 - If there are 20-29 SharePoint events that take place after a triggering event, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
 - If there are 30 or more SharePoint events that take place after a triggering event, the risk score is inherently higher and alert severity levels would tend to be at a high level.
 
-Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but is not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
+Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but isn't selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
 ### Use real-time analytics (preview) to manage alert volume 
 
@@ -252,7 +250,7 @@ You can use real-time analytics if you want to take advantage of a guided (data-
 
 - **A**. A gauge that shows the approximate number of scoped users whose activities from the past 10 days exceeded the lowest daily thresholds for at least one of the selected indicators in the policy. This gauge can help you estimate the number of alerts that might be generated if all users included in the policy were being assigned risk scores.
 - **B**. A list of the top five indicators sorted by the number of users exceeding the lowest daily thresholds. If your policies are generating a lot of alerts, these are the indicators you might want to focus on to reduce "noise."
-- **C**. An insight for each indicator, displayed below the thresholds. The insight shows the approximate number of users whose activities from the past 10 days exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of users in the policy who performed more than 100 download activities on an average in the past 10 days. If you adjust the threshold setting to 200, the insight will update in real time to show you the number of users whose activity exceeded levels that exceeded the new thresholds. This helps you quickly configure the appropriate thresholds for each indicator and achieve the highest level of alert effectiveness before activating your policies. 
+- **C**. An insight for each indicator, displayed below the thresholds. The insight shows the approximate number of users whose activities from the past 10 days exceeded the currently specified low thresholds for this indicator. For example, if the low threshold setting for *Downloading content from SharePoint* is set to 100, the insight shows the number of users in the policy who performed more than 100 download activities on an average in the past 10 days. If you adjust the threshold setting to 200, the insight updates in real time to show you the number of users whose activity exceeded levels that exceeded the new thresholds. This helps you quickly configure the appropriate thresholds for each indicator and achieve the highest level of alert effectiveness before activating your policies. 
 
    ![Insider risk management real-time analytics](../media/insider-risk-management-real-time-analytics.png)
 

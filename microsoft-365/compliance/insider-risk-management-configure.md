@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/09/2023
+ms.date: 06/29/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -166,18 +166,19 @@ Most insider risk management policies have prerequisites that must be configured
 
 ### Configure Insider Risk Indicator (preview) connector
 
-You can extend insider risk management by importing detections for non-Microsoft (third-party) workloads. For example, you might want to extend your detections to include Salesforce and Dropbox and use them alongside the built-in detections provided by the insider risk management solution, which is focused on Microsoft workloads (for example, SharePoint Online and Exchange Online). 
+You can extend insider risk management by importing detections for non-Microsoft (third-party) workloads. For example, you might want to extend your detections to include Salesforce and Dropbox activities and use them alongside the built-in detections provided by the insider risk management solution, which is focused on Microsoft services like SharePoint Online and Exchange Online.
 
-To bring your own detections to the insider risk management solution, you import pre-processed, aggregated detections from security information and event management (SIEM) solutions such as Microsoft Sentinel or Splunk. You do this by importing a sample file into the Insider Risk Indicators connector wizard. The connector wizard analyzes the sample file and imposes the required schema. 
+To bring your own detections to the insider risk management solution, you import pre-processed, aggregated detections from security information and event management (SIEM) solutions such as Microsoft Sentinel or Splunk. You do this by importing a sample file into the Insider Risk Indicators connector wizard. The connector wizard analyzes the sample file and configures the required schema.
 
 > [!NOTE]
-> At this time, you cannot import "raw" detection signals into insider risk management. You can only import pre-processed aggregations as a file. 
-You can use a custom indicator as: 
+> Currently, you cannot import "raw" detection signals into insider risk management. You can only import pre-processed aggregations as a file.
 
-- A trigger, which is used to bring a user into the scope of a policy.
-- A policy indicator, which is used to score the user for risk. 
+You can use a custom indicator as:
 
-[Learn more about creating an Insider Risk Indicator (preview) connecter to bring your own detections to insider risk management](import-insider-risk-indicators.md)
+- A trigger used to bring a user into the scope of a policy.
+- A policy indicator used to score the user for risk.
+
+See the [Insider Risk Indicator connector](import-insider-risk-indicators.md) article for step-by-step guidance to configure the Insider Risk Indicator connector for your organization. After you've configured the HR connector, return to these configuration steps.
 
 ### Configure Microsoft 365 HR connector
 
