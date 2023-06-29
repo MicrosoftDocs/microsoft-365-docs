@@ -1,15 +1,11 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/17/2023
+ms.date: 06/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
