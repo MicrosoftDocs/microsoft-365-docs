@@ -43,6 +43,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
+**Network Protection available for macOS**
+
+Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. To learn more, see [Use network protection to help prevent macOS connections to bad sites](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide).
+
 **Known issues**
 
 Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.<br>
