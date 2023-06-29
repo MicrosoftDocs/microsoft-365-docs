@@ -37,9 +37,6 @@ After you have set up and configured [Microsoft 365 Business Premium](index.md) 
 
 ## Tenant administration
 
-> [!TIP]
-> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
-
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
@@ -162,9 +159,6 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 
 ## Security administration
 
-> [!TIP]
-> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
-
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 Security administrators (also referred to as *security admins*) perform various tasks, such as:
@@ -206,9 +200,6 @@ The following table lists common tasks that security admins typically perform, w
 ---
 
 ## Security operations
-
-> [!TIP]
-> If you're using the standalone version of Defender for Business, select the **Defender for Business** tab.
 
 ## [**Microsoft 365 Business Premium**](#tab/M365BP)
 
