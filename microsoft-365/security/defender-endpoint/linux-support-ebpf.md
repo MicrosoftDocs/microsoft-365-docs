@@ -1,3 +1,4 @@
+---
 title: Configure eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, events, ebpf
