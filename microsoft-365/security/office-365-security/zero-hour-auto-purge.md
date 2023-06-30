@@ -147,7 +147,7 @@ To find out if ZAP blocked your Teams message, see [Manage quarantined messages 
 
 ### Zero-hour auto purge (ZAP) quarantine policies for Teams
 
-To protect your Teams chats and channels, go to the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Settings** > **Email & collaboration** > **Microsoft Teams protection**. The Zero-hour auto purge protection is turned on by default.
+To protect your Teams chats and channels, go to the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Settings** > **Email & collaboration** > **Microsoft Teams protection**. The Zero-hour auto purge protection is turned on by default. Note that for this release, protection for Teams chats and shared and standard channels are supported. 
 
 :::image type="content" source="../../media/zap-teams-policy-mdo.png" alt-text="Image showing policy settings for Microsoft Teams." lightbox="../../media/zap-teams-policy-mdo.png":::
 
