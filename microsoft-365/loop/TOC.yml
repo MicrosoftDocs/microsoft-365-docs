@@ -1,6 +1,6 @@
 - name: Microsoft Loop
   items:
-    - nane: Summary compliance capabilities
+    - name: Summary compliance capabilities
       href: loop-compliance-summary.md
     - name: Microsoft Loop components
       items:
