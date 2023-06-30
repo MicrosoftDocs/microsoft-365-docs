@@ -751,7 +751,7 @@ When you select multiple quarantined messages on the **Teams messages** tab by s
 
 :::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
 
-#### Approve or deny release requests from users for quarantined Teams messages
+### Approve or deny release requests from users for quarantined Teams messages
 
 When a user requests the release of a quarantined Teams message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
