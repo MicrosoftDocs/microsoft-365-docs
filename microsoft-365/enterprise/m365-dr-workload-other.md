@@ -19,7 +19,8 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
-## Data Residency commitments available
+>[!NOTE]
+>Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time.  
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
@@ -31,12 +32,12 @@ Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatama
 Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
-Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
-
-- Microsoft will not store Intune customer data at rest outside the stated geo, except if:
+Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune. Microsoft will not store Intune customer data at rest outside the stated geo, except if:
 - It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including through the use of the following:
 - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
+
+- If you are using the Remote Help feature, the Helper and Sharer's information may be sent outside of the stated Geo for 48 hours.
 - For Azure Active Directory: Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
@@ -100,6 +101,8 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Canada
 1. Japan
 1. India
+1. United Kingdom
+1. France
 
 | Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
@@ -143,7 +146,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | BI | Burundi | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KH | Cambodia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | CM | Cameroon | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| CA | Canada | AMER<sup>3</sup>| AMER<sup>3</sup>| CAN<sup>5</sup>|
+| CA | Canada | AMER<sup>3</sup>| Canada<sup>5</sup>| CAN<sup>5</sup>|
 | CV | Cape Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KY | Cayman Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | CF | Central African Republic | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -179,7 +182,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | FM | Federated States of Micronesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | FJ | Fiji | APC<sup>2</sup>| APC<sup>2</sup>| AUS<sup>4</sup>|
 | FI | Finland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| FR | France | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| FR | France | EUR<sup>1</sup>| France<sup>9</sup>| EUR<sup>1</sup>|
 | GF | French Guiana | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | PF | French Polynesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TF | French Southern Territories | AMER<sup>3</sup>| EUR<sup>1</sup>| AMER<sup>3</sup>|
@@ -335,7 +338,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | UG | Uganda | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | UA | Ukraine | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AE | United Arab Emirates | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| GB | United Kingdom | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| GB | United Kingdom | EUR<sup>1</sup>| UK<sup>8</sup>| EUR<sup>1</sup>|
 | TZ | United Republic of Tanzania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | US | United States of America | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | UY | Uruguay | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|

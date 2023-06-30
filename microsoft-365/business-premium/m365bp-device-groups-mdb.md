@@ -124,4 +124,4 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Next steps
 
-Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-maintain-environment.md).
+Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-mdb-maintain-environment.md).
