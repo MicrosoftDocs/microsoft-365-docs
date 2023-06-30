@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 06/28/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -64,7 +64,7 @@ See the [Create and Deploy data loss prevention policies](dlp-create-deploy-poli
 
 ### Data leaks by priority users (preview)
 
-Protecting data and preventing data leaks for users in your organization may depend on their position, level of access to sensitive information, or risk history. Data leaks can include accidental oversharing of highly sensitive information outside your organization or data theft with malicious intent. With an assigned data loss prevention (DLP) policy as a triggering event option, this template starts scoring real-time detections of suspicious activity and result in an increased likelihood of insider risk alerts and alerts with higher severity levels. Priority users are defined in [priority user groups](insider-risk-management-settings.md#priority-user-groups) configured in the insider risk management settings area.
+Protecting data and preventing data leaks for users in your organization may depend on their position, level of access to sensitive information, or risk history. Data leaks can include accidental oversharing of highly sensitive information outside your organization or data theft with malicious intent. With an assigned data loss prevention (DLP) policy as a triggering event option, this template starts scoring real-time detections of suspicious activity and result in an increased likelihood of insider risk alerts and alerts with higher severity levels. Priority users are defined in [priority user groups](insider-risk-management-settings-priority-user-groups.md) configured in the insider risk management settings area.
 
 As with the **Data leaks template**, you can choose a DLP policy to trigger indicators in the insider risk policy for high severity alerts in your organization. Follow the Data leaks policy guidelines for DLP policies when creating a policy with the DLP option when using this template. You can also choose to assign selected indicators as triggering events for a policy. This flexibility and customization help scope the policy to only the activities covered by the indicators. Additionally, you'll need to assign priority user groups created in **Insider risk management** > **Settings** > **Priority user groups** to the policy.
 
@@ -102,7 +102,7 @@ When using this policy template, you'll need several prerequisites. For more inf
 
 Departing users, whether leaving on positive or negative terms, may be higher risks for security policy violations. To help protect against inadvertent or malicious security violations for departing users, this policy template uses Defender for Endpoint alerts to provide insights into security-related activities. These activities include the user installing malware or other potentially harmful applications and disabling security features on their devices. By using either the [Microsoft HR connector](import-hr-data.md) or the option to automatically check for user account deletion in Azure Active Directory for your organization, this template starts scoring for risk indicators relating to these security activities and how they correlate with user employment status.
 
-You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defenfder Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### Security policy violations by priority users (preview)
 
@@ -157,4 +157,4 @@ Use the following table to determine the maximum number of in-scope users suppor
 |Security policy violation by priority users|1,000|
 |Security policy violations by departing users|15,000|
 |Security policy violations by risky users|7,500|
-|Forensic evidence|5 users for preview release|
+|Forensic evidence|Unlimited|

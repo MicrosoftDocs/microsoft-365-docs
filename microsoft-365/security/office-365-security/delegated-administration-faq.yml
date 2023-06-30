@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 1/31/2023
+  ms.date: 6/22/2023
   audience: ITPro
   ms.topic: faq
   ms.localizationpriority: medium
@@ -38,14 +38,14 @@ sections:
           - [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
 
       - question: |
-          I'm a customer, not a reseller. How can set up delegated administrator for my subtenants?
+          I'm a customer, not a reseller. How can I set up delegated administrator for my subtenants?
         answer: |
-          Delegated administration is only available for resellers and partners. However, there's a sample PowerShell script that will help you apply policies to your subtenants (companies). For more information, see [Sample script for applying EOP settings to multiple tenants](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
+          Delegated administration is only available for resellers and partners. However, there's a sample PowerShell script to help you apply policies to your subtenants (companies). For more information, see [Sample script for applying EOP settings to multiple tenants](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
 
       - question: |
           Can I prevent my subtenant admin from modifying my policy?
         answer: |
-          No. Microsoft 365 does not currently have this capability.
+          No. Microsoft 365 doesn't currently have this capability.
 
       - question: |
           Can I get consolidated reporting across all of my subtenants?

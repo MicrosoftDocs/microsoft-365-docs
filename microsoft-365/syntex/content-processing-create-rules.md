@@ -82,6 +82,3 @@ In the document library, in the upper-right corner of the page, select the detai
 > [!NOTE]
 > Currently, the activity feed shows only move activity. Copy activity will be available in a future release.
 
-## See also
-
-[Overview of content processing](content-processing-overview.md)

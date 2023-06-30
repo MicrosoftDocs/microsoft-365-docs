@@ -1,5 +1,5 @@
 ---
-ms.date: 08/10/2020
+ms.date: 05/24/2023
 ---
 |  Geo location                          |  Code  |  eDiscovery data location        |
 |:---------------------------------------|:-------|:---------------------------------|
@@ -16,6 +16,7 @@ ms.date: 08/10/2020
 |Macro Region Geography 3 - Americas     |NAM     |US datacenters                    |
 |Norway                                  |NOR     |(eDiscovery data location coming soon)|
 |Qatar                                   |QAT     |(eDiscovery data location coming soon)|
+|Poland                                  |POL     |(eDiscovery data location coming soon)|
 |South Africa                            |ZAF     |Europe datacenters                |
 |Sweden                                  |SWE     |Europe datacenters                |
 |Switzerland                             |CHE     |Europe datacenters                |
