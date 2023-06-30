@@ -24,6 +24,9 @@ ms.date: 07/17/2023
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
