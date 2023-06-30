@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 05/11/2023
+ms.date: 06/06/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -21,8 +21,6 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> For this scenario, Outlook calendar events are still rolling out in general availability for Windows.
-> 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can extend sensitivity labels to protect meeting invites and responses that use Outlook and Teams, and to protect Teams meetings and chat:
@@ -77,7 +75,7 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 > [!IMPORTANT]
 > If meeting participants or organizers don't use a Teams client that meets these requirements, the configured label meeting options can't be enforced for these users.
 
-Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) can't be used to protect calendar items, Teams meetings, and chat.
+Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) or [Double Key Encryption (DKE)](encryption-sensitivity-labels.md#double-key-encryption) can't be used to protect calendar items, Teams meetings, and chat.
 
 ## Limitations
 
@@ -113,39 +111,27 @@ Sensitivity labels that apply [S/MIME protection](sensitivity-labels-office-apps
 
 **Specific to Teams**:
 
-- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) aren't supported and display the original language only.
-
-- For Teams on the web, the prevent copy to clipboard option isn't supported for all browsers, such as Safari and Firefox.
+- Labels configured for [other languages](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) aren't supported for the [classic Teams client](https://support.microsoft.com/office/try-the-new-microsoft-teams-2d4a0c96-fa52-43f8-a006-4bfbc62cf6c5), and display the original language only. This limitation doesn't apply for the new Teams client.
 
 - For iOS and Android, the label isn't displayed in the calendar but is displayed when the user joins the meeting.
 
-- If your label policy includes any of the following configurations, these aren't currently supported:
-    - Justification for changing a label
-    - Require users to label their meetings and calendar event (also known as mandatory labeling)
-    - Help link to a custom help page
-
 - While a meeting is in session, a sensitivity label can't prevent participants from inviting people to join  by copying the meeting link, or by sharing via default email or the Outlook calendar. These choices are from the Teams meeting  **Share invite** option.
-
-- If there's a label change made in Outlook clients while the meeting is progress, any changes to the meeting options won't take effect for the current meeting. If the meeting is in a series, the changes will apply to the next instance.
 
 - If there's a label change made in Teams while the meeting is progress, any changes to the following meeting options won't take effect for the current meeting unless the organizer ends and restarts the meeting:
     - Who can record
     - Encryption for meeting video and audio
     - Automatically record
     - Video watermark for screen sharing and camera streams
-    - Prevent copy of meeting chat
 
 - The following meeting options won't take effect for a Meet Now meeting:
     - Who can record
     - Encryption for meeting video and audio
     - Automatically record
     - Video watermark for screen sharing and camera streams
-    - Prevent copy of meeting chat
 
 - Sensitivity labels can't be applied to live events and webinars.
 
 - Labeling meeting invites with Graph APIs isn't supported.
-
 
 ## How to configure a sensitivity label to protect calendar items, Teams meetings, and chat
 
@@ -189,9 +175,13 @@ Other label policy settings that are specific just to calendar items, Teams meet
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
-This setting is currently unsupported for virtual desktop infrastructure (VDI).
+The methods supported to prevent copying chat: 
+- Select the text and then right-click \> **Copy** or Ctrl+C 
+- Forward messages
+- Share to Outlook
+- Copy link
 
-The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
+Copying using developer tools, third-party apps, or using screen captures won't be prevented.
 
 ## How to configure and apply a label for channel meetings
 

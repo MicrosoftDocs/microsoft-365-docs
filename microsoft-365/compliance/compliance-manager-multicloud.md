@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 05/25/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -49,7 +49,8 @@ The services listed below can be assessed by Compliance Manager:
 
 In addition, Compliance Manager provides a [universal version of regulatory templates](compliance-manager-templates.md#regulations-overview) that allows you to track compliance with any unsupported service through manual implementation and testing.
 
-We’ll soon roll out a selection of data connectors built specifically for Compliance Manager that can support other non-Microsoft services such as Salesforce and Zoom.
+> [!TIP]
+> Compliance Manager has a dedicated selection of connectors to support other non-Microsoft services such as Salesforce and Zoom. Visit [Working with connectors in Compliance Manager](compliance-manager-connectors.md).
 
 ## Service subscriptions
 
@@ -60,10 +61,6 @@ If you choose subscriptions that are in scope within Defender for Cloud for a ma
 ## Supported regulations
 
 View the [list of regulations supported by both Compliance Manager and Defender for Cloud](compliance-manager-cloud-settings.md#standards-supported-by-compliance-manager-and-defender-for-cloud).
-
-## Known issues
-
-In cases where an infrastructure cloud action in Compliance Manager receives an automated test result from Defender for Cloud, and the corresponding assessment in Defender for Cloud doesn't have any resources listed or all associated resources are listed as **Not applicable**, Compliance Manager will show the test status of this action as **Failed High Risk**. This is a known issue and will be resolved soon.
 
 ## Get started
 
