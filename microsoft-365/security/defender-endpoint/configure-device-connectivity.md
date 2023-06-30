@@ -255,11 +255,62 @@ Migration recommendation:
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
 
-## [**Windows 10 and 11 **](#tab/windows10and11)
+## [Windows 10 and 11](#tab/windows10and11)
 
 ## Windows 10 and 11
 
-These our recommended approaches to migrating to the streamlined connectivity.
+>[!IMPORTANT]
+>Windows 10 1607 & 1703 versions are not supported and will need to leverage the legacy URL set. For more information, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+
+### New device onboarding
+Follow any of the onboarding steps and tools from the previous section, but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method).
+
+### Devices previously onboarded
+For devices migrating to the new URL set, after completing [Step 1](), select your preferred onboarding method of choice below.
+
+### Local script
+
+Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+
+### Group policy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## [**Windows Server**](#tab/Windowsserver)
 
