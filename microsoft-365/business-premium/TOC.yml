@@ -6,6 +6,8 @@
       href: m365bp-mdb-whats-new.md
     - name: Why choose Microsoft 365 Business Premium? 
       href: why-choose-microsoft-365-business-premium.md
+    - name: Top 10 ways to secure your business data
+      href: secure-your-business-data.md
     - name: Trial user guide - Microsoft 365 Business Premium
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
@@ -102,19 +104,9 @@
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
-  items: 
-    - name: Overview
-      href: m365bp-maintain-environment.md
-    - name: Administration guide
-      href: m365bp-admin-guide.md
-    - name: Security administration guide
-      href: m365bp-security-admin-guide.md
-    - name: Security operations guide
-      href: m365bp-security-operations-guide.md
+  href: m365bp-mdb-maintain-environment.md 
 - name: Reference
   items:
-    - name: Top 10 ways to secure your business data
-      href: secure-your-business-data.md
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 admin content

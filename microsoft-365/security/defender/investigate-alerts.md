@@ -23,7 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 05/09/2023
+ms.date: 05/30/2023
 ---
 
 # Investigate alerts in Microsoft 365 Defender
@@ -188,10 +188,7 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Screenshot of an example of alert recommendations":::
 
-## Public preview: Tune an alert
-
-> [!IMPORTANT]
-> Some information relates to pre-release feature that might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+## Tune an alert
 
 As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. An analyst's time is valuable, wanting to focus only on high severity and high priority alerts. Meanwhile, analysts are also required to triage and resolve lower priority alerts, which tends to be a manual process.
 

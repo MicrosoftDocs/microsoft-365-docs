@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/27/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -41,17 +41,21 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 ## Where evidence collection for file activities on devices fits in Purview
 
 Endpoint DLP is part of the [larger DLP offering](dlp-learn-about-dlp.md) and part of the larger range of services offered in [Microsoft Purview](/microsoft-365/compliance.md). You should understand how evidence collection for file activities on devices fits into the larger set of service offerings.
+
 ### Evidence collection for file activities on devices and eDiscovery
 
-This feature makes copies of items that match DLP policies on onboarded Windows devices and places those copies in an Azure storage account. These copies aren't held in a changless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+This feature makes copies of items that match DLP policies on onboarded Windows devices and places those copies in an Azure storage account. These copies aren't held in a changeless state and aren't evidence in the legal sense of the term. If you need to find and hold items for legal purposes, you should use the [Microsoft Purview eDiscovery solutions](ediscovery.md). Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+
 ### Evidence collection for file activities on devices and contextual summary
 
- When an item and the activity that a user is taking on that item match the conditions defined in a DLP policy, a **DLPRuleMatch** event shows up in [Activity explorer](data-classification-activity-explorer.md). This is true for every location that DLP supports. The **DLPRuleMatch** event contains a limited amount of the text that surrounds the matched content. This limited amount of text is called [contextual summary](dlp-learn-about-dlp.md#contextual-summary).
-It's important to understand the difference between evidence collection for file activities on devices and contextual summary. Evidence collection for file activities on devices is only available for onboarded Windows devices and saves a copy of the entire item that matched a policy to the Azure storage account. Contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggered the match. 
+ When an item and the activity that a user takes on that item match the conditions defined in a DLP policy, a **DLPRuleMatch** event shows up in [Activity explorer](data-classification-activity-explorer.md). This is true for every location that DLP supports. The **DLPRuleMatch** event contains a limited amount of the text that surrounds the matched content. This limited amount of text is called [contextual summary](dlp-learn-about-dlp.md#contextual-summary).
+
+It's important to understand the difference between evidence collection for file activities on devices and a contextual summary. Evidence collection for file activities on devices is only available for onboarded Windows devices. It saves a copy of the entire item that matched a policy to the Azure storage account. A contextual summary is captured for every DLP policy rule match and only contains a limited amount of the text that surrounds the target text that triggered the match.
 
 ## Covered user activities
  
 You can configure evidence collection for file activities on devices to save a copy of a matched item to the Azure storage account when a user attempts to do one of these activities on a matched item:
+
  - Copy to a removable USB
  - Copy to Network share
  - Print
@@ -69,18 +73,18 @@ When you enable evidence collection for file activities on devices in Endpoint D
 
 These actions are configured in the DLP policy. For more information on how to create a DLP policy, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) and [Using Endpoint data loss prevention](endpoint-dlp-using.md).
  
-## Design consideration
+## Design considerations
 
 ### Regions for your Azure Storage accounts
 
-To comply with regulatory requirements, make sure that the Azure storage accounts that you use are in the same geo-political or regulatory boundaries as the devices that they're being copied from. Also, be aware of the geo-political location of the DLP investigators who will be accessing the sensitive items once they're saved. Consider using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to scope the administration of the users and devices that the DLP policy will be scoped to. To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
-Evidence collection for file activities on devices supports up to 10 Azure storage accounts.
+To comply with regulatory requirements, make sure that the Azure storage accounts that you use are in the same geopolitical or regulatory boundaries as the devices that they're being copied from. Also, be aware of the geopolitical location of the DLP investigators who will be accessing the sensitive items once they're saved. Consider using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to scope the administration of the users and devices that the DLP policy will be scoped to. To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2239593&clcid=0x409). Evidence collection for file activities on devices supports up to 10 Azure storage accounts.
 
-To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2239593&clcid=0x409).
 
 ### Local storage and bandwidth
 
 By default, copies of matched items are saved asynchronously to the configured Azure storage account over the existing network connection. If the device doesn't have connectivity, matched items are save locally, up to the 500-MB limit. You can save items locally up to 60 days.
+
 While the device has connectivity to the Azure storage account URL, there's no limit on bandwidth usage. The bandwidth that evidence collection for file activities on devices uses doesn't impact the default or configured bandwidth limits for [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
 
 ### Azure storage accounts
