@@ -149,7 +149,7 @@
     items:
     - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md
-    - name: Configure service connection
+    - name: Configure device service connection
       items:
         - name: Step 1 - Configure your environment
           href: configure-environment.md

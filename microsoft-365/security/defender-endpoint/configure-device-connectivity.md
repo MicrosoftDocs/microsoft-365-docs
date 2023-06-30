@@ -93,9 +93,9 @@ The following table lists the services that are **not** included in consolidatio
 |     SmartScreen/ Network   Protection    |     <br><br>*.smartscreen-prod.microsoft.com <br>*.smartscreen.microsoft.com                                                                            |
 |     Windows Notification   Service ***    |    <br><br>*.wns.windows.com  <br>login.microsoftonline.com  <br>login.live.com <br>                                                            |
 
+**Footnotes**
 
-
-\* In fully disconnected environments with no access to CRL, PreferStaticProxyForHttpRequest is a workaround for use in tandem with TelemetryProxyServer,  although should have common practice to update CTL. Clients should always have access to CRL (web browsing). 
+   <sup>1</sup> In fully disconnected environments with no access to CRL, PreferStaticProxyForHttpRequest is a workaround for use in tandem with TelemetryProxyServer,  although should have common practice to update CTL. Clients should always have access to CRL (web browsing). 
 
 ** EDR Cyberdata is in scope for future consolidation work. This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information,  see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.  
 
@@ -218,8 +218,8 @@ To leverage the new simplified onboarding method, you will need to onboard devic
 3. Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
 
 
->[!NOTE]
->If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
+  >[!NOTE]
+  >If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
 
 
 4. Select the relevant OS from the operating system dropdown. 
@@ -246,18 +246,18 @@ Migration recommendation:
 
 - **Validate and monitor** - After onboarding the small set of devices, validating that devices have successfully onboarded and are communicating with the service. 
 
-- **Full migration **- At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
+- **Full migration**- At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
 
 |Endpoint|Supported deployment tool|
 |---|---|
 |**Windows 10 & 11 (excluding version 1607 & 1703)**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022  | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Configuration Manager](configure-endpoints-sccm.md)<br>[Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|**Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022**  | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Configuration Manager](configure-endpoints-sccm.md)<br>[Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
 
-## [Windows 10 and 11](#tab/windows10and11)
+### [Windows 10 and 11](#tab/windows10and11)
 
-## Windows 10 and 11
+### Windows 10 and 11
 
 >[!IMPORTANT]
 >Windows 10 1607 & 1703 versions are not supported and will need to leverage the legacy URL set. For more information, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
