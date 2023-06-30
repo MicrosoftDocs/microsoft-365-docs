@@ -325,7 +325,7 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 
 ## Manage quarantined messages in Microsoft Teams
 
-When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft 365 Defender portal.
+When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft 365 Defender portal. Note that end user quarantine notifications are not supported for Teams workload. 
 
 ### View your quarantined messages in Microsoft Teams
 
@@ -387,8 +387,9 @@ To take action on the message, see the next section.
 
 On the **Teams messages** tab, select the quarantined message by selecting the check box next to the first column. The following options are available:
 
-- **Request release**: You can request to release the message from quarantine.
+- **Request release**: You can request to release the message from quarantine. Your organization's admin needs to approve the release.
 - **Delete**: You can request to delete the message from the list of quarantined messages.
 - **Preview message**: You can view the details of the message you selected.
 
 Note that if you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
+ 

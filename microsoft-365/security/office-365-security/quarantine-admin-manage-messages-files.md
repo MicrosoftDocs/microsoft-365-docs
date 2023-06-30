@@ -311,8 +311,9 @@ After you select the message, use either of the following methods to preview it:
 - **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-sc-preview-message-icon.png" border="false"::: **Preview message**.
 
 In the flyout that opens, choose one of the following tabs:
-  - **Source**: Shows the HTML version of the message body with all links disabled.
-  - **Plain text**: Shows the message body in plain text.
+
+- **Source**: Shows the HTML version of the message body with all links disabled.
+- **Plain text**: Shows the message body in plain text.
 
 #### View email message headers
 
@@ -749,6 +750,12 @@ When you select multiple quarantined messages on the **Teams messages** tab by s
 - [Download Teams messages from quarantine](#download-teams-messages-from-quarantine)
 
 :::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+
+#### Approve or deny release requests from users for quarantined Teams messages
+
+When a user requests the release of a quarantined Teams message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
+
+For more inforamtion, see [Approve or deny release requests from users](#approve-or-deny-release-requests-from-users-for-quarantined-email).
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
 
