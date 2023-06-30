@@ -26,11 +26,11 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse allows you to manage multifactor authentication (MFA) settings across all tenants. The Multifactor Authentication page provides detailed information on the status of MFA enablement and the ability to take action on specific users.
 
-For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/overview) to configure specific policies.
+For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
 
 ## Before you begin
 
-The customer tenant must be active within Microsoft 365 Lighthouse. To determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](https://learn.microsoft.com/en-us/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
+The customer tenant must be active within Microsoft 365 Lighthouse. To determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
 
 ## Notify users who aren't registered for MFA
 
@@ -104,12 +104,12 @@ Blocking a user prevents anyone from signing in as this user and is a good idea 
 
 ## Next steps
 
-Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see Manage self-service password reset in Microsoft 365 Lighthouse. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](https://learn.microsoft.com/en-us/microsoft-365/lighthouse/m365-lighthouse-manage-sspr?view=o365-worldwide).
+Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see Manage self-service password reset in Microsoft 365 Lighthouse. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 
-[Overview of multifactor authentication in Lighthouse](m365-lighthouse-mfa-overview.md) (article)  
-[Plan an Azure Active Directory Multi-Factor Authentication deployment](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted) (article)  
-[What are security defaults?](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (article)  
-[What is Conditional Access?](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/overview) (article)  
-[Learn how to convert users from per-user MFA to Conditional Access](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted#convert-users-from-per-user-mfa-to-conditional-access-based-mfa) (article)
+[Overview of multifactor authentication in Lighthouse](m365-lighthouse-mfa-overview.md) (article)\
+[Plan an Azure Active Directory Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) (article)\
+[What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (article)\
+[What is Conditional Access?](/azure/active-directory/conditional-access/overview) (article)\
+[Learn how to convert users from per-user MFA to Conditional Access](/azure/active-directory/authentication/howto-mfa-getstarted#convert-users-from-per-user-mfa-to-conditional-access-based-mfa) (article)
