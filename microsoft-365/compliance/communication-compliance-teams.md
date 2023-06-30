@@ -44,7 +44,7 @@ Communication compliance and Microsoft Teams are tightly integrated and can help
 
 ### Getting started
 
-Getting started with communication compliance in Microsoft Teams begins with [planning](communication-compliance-plan.md) and creating pre-defined or custom policies to identify inappropriate user activities in Teams channels or in 1:1 and groups. Keep in mind that you'll need to [configure](communication-compliance-configure.md) some permissions and basic prerequisites as part of the configuration process.
+Getting started with communication compliance in Microsoft Teams begins with [planning](communication-compliance-plan.md) and creating predefined or custom policies to identify inappropriate user activities in Teams channels or in 1:1 and groups. Keep in mind that you'll need to [configure](communication-compliance-configure.md) some permissions and basic prerequisites as part of the configuration process.
 
 Teams administrators can configure communication compliance policies at the following levels:
 
