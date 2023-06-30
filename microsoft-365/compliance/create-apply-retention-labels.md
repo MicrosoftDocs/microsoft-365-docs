@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/24/2023
+ms.date: 06/30/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -162,7 +162,7 @@ Your published retention labels display in Outlook alongside any legacy [MRM ret
 
 To label an item in the Outlook desktop client, select the item. On the **Home** tab on the ribbon, select **Assign Policy**, and then choose the retention label. For example:
   
-![Assign Policy button.](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Apply retention label from Outlook, Assign Policy button.](../media/outlook-retention-labels.png)
 
 If you don't immediately see the option to assign policy, look for the **Tags** group on the ribbon.
 
