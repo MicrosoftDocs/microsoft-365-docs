@@ -172,9 +172,9 @@ To label an item in Outlook on the web, right-click the item, select **Assign po
   
 ![Assign policy menu in Outlook on the web.](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
-After the retention label is applied, you can view that retention label at the top of the item. For example:
+After the retention label is applied, you can view that retention label at the top of the item, and the calculated expired date. For example, for an email that's sent:
   
-![Label assigned to email in Outlook on the web.](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Label assigned to email in Outlook on the web.](../media/outlook-retention-label-applied.png)
 
 For more information about the expiry date displayed to users, see [User notification of expiry date](retention-policies-exchange.md#user-notification-of-expiry-date).
   
