@@ -67,7 +67,7 @@ In the next dialog box, the user selects the **Inappropriate - Harassment, viole
 ![Report a message choices.](../media/communication-compliance-report-message-choices.png)
 
 > [!NOTE]
-> The other choice in the list (**Security risk- Spam, phishing, malicious content**), if available, is managed by Microsoft Defender for Office 365. The user might also be presented with just the **Inappropriate - Harassment, violence, nudity, and disturbing content** option, depending on which policy options are turned on in the Microsoft Teams admin center. 
+> The other choice in the list (**Security risk- Spam, phishing, malicious content**), if available, is managed by Microsoft Defender for Office 365. The user might also be presented with just the **Inappropriate - Harassment, violence, nudity, and disturbing content** option, depending on which policy options are turned on in the Microsoft Teams admin center. [Learn more about the Microsoft Defender for Office setting](https://go.microsoft.com/fwlink/?linkid=2226727)
 
 After submitting the message for review, the user receives a confirmation of the submittal in Microsoft Teams. Other participants in the chat do not see this notification.
 
