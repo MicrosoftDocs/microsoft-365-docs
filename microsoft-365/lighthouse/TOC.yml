@@ -48,6 +48,12 @@
       href: m365-lighthouse-reinstate-task.md
     - name: Manage tenants using deployment insights
       href: m365-lighthouse-manage-tenants-using-deployment-insights.md
+- name: Manage alerts
+  items: 
+    - name: Overview of the Alerts page
+      href: m365-lighthouse-alerts-overview.md
+    - name: Create and manage alert rules
+      href: m365-lighthouse-create-manage-alert-rules.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
