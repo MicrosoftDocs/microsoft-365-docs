@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 06/23/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -35,7 +35,7 @@ Auto-applying retention labels are powerful because:
 - You don't need to rely on users to classify all content correctly.
 - Users no longer need to know about data governance policies - they can focus on their work.
 
-You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). You can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -354,9 +354,6 @@ To consider when using trainable classifiers to auto-apply retention labels:
 - You can't auto-label SharePoint and OneDrive items that are older than six months.
 
 #### Auto-apply labels to cloud attachments
-
-> [!NOTE]
-> This option is in preview and subject to change.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 

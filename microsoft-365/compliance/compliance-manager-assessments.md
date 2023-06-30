@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,6 +25,8 @@ description: "Build assessments in Microsoft Purview Compliance Manager that hel
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
+**New**: With integrated connectors, you can now can build assessments for services other than Microsoft to help you manage compliance across your digital estate. See [Set up connectors](#set-up-connectors) below for details.
+
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Introduction to assessments
@@ -42,7 +44,15 @@ To get you started, Microsoft provides a **default** assessment for the **Micros
 
 This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You'll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take. Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
 
-## Understand groups before creating assessments
+## Initial steps before creating assessments
+
+Listed below are details about steps and information that will help you prepare for creating an assessment:
+
+- Plan a [grouping strategy](#groups-for-assessments) for your assesssments.
+- Understand [regulatory templates](compliance-manager-templates.md), which contain the controls and action recommendations for assessments.
+- Set up [connectors](#set-up-connectors) if you're assessing non-Microsoft services.
+
+## Groups for assessments
 
 When you create an assessment, you must assign it to a group. Groups are containers that allow you to organize assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. This is why we recommend planning a grouping strategy before you create assessments. Below are examples of two groups and their underlying assessments:
 
@@ -67,12 +77,16 @@ Different assessments within a group or groups may share improvement actions. Im
 - Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups can't be deleted.
 
+## Set up connectors
+
+Compliance Manager has an integrated set of connectors to build assessments that cover non-Microsoft services like Salesforce and Zoom. Visit [Working with connectors](compliance-manager-connectors.md) to learn more and start the setup process.
+
 ## Create assessments
 
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments). To create an assessment, you'll use a guided process to select a regulation and designate services.
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#groups-for-assessments). To create an assessment, you'll use a guided process to select a regulation and designate services.
 
 #### Create an assessment using a guided process
 
@@ -97,9 +111,7 @@ Before you begin, be sure you know which group you'll assign it to, or be prepar
 
 1. **Review and finish:** Review all your selections and make any necessary edits. When you're satisfied with the settings, select **Create assessment**.
 
-The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page.
-
-If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
+The next screen confirms the assessment was created. When you select **Done**, you are taken to your new assessment's details page. If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
 #### Edit an assessment
 
@@ -164,7 +176,7 @@ The Microsoft actions tab appears for assessments based on templates that suppor
 
 ## Grant user access to individual assessments
 
-When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties. (You can also set [user access for regulations](compliance-manager-templates.md#grant-user-access-to-regulations), which allows users to access all assessments created for that regulation.)
 
 External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
@@ -261,9 +273,7 @@ If you select **Cancel**, the update won't be applied to the assessment. However
 
 ## Export an assessment report
 
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save and share.
-
-The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, and test results.
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On the assessment details page, select the **Export actions** in the top right corner of the page, which creates an Excel file you can save and share. The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, and test results.
 
 ## Delete an assessment
 

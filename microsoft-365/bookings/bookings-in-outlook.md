@@ -17,13 +17,13 @@ description: "Use Bookings with me to let others schedule meetings with you in O
 
 # Bookings with me
 
-**Bookings with me** in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings with me lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
+**Bookings with me** in Outlook is a web-based personal time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. Bookings with me lets people schedule a meeting or appointment with you through a personal scheduling page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
 
 Bookings with me has two different views:
 
-- [Bookings with me: setup and sharing](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings with me page. You can access your Bookings with me page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
+- **Organizer view**: An organizer is someone who creates meeting types and shares the booking page with others so that they can easily schedule meetings with them. A personal booking page where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can also choose to add a Teams meeting to all meetings booked through your Bookings with me page. You can access your Bookings with me page through Outlook on the web. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature. [Learn more about setup and sharing in Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
 
-- [Attendee view](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a) When you share your Bookings with me page with others, they'll see the attendee view. If the organizer has shared their Bookings with me page link with you, you'll be able to see all of their public meeting types. If the organizer has shared a meeting link, you'll only be able to view that meeting.
+- **Attendee view**: An attendee is someone who uses the booking page to create or attend a meeting scheduled by an organizer. After the organizer shares their Bookings with me page with others, those visitors will see the attendee view. If the organizer has shared their Bookings with me page link with you, you'll be able to see all of their public meeting types. If the organizer has shared a meeting link, you'll only be able to view that meeting. [Learn more about selecting a booking time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
   - Public meetings can be viewed and scheduled by anyone that has your Bookings with me page link. You are in control of who you share that link with. All public meeting types will be visible to anyone that has your Bookings with me page link.
   - Private meetings can only be viewed by people who have the link for that meeting type. The difference between public meetings and private meetings is private meetings can have different links and the links expire after 90 days. You can also set private links to expire after a one-time booking. When accessing the scheduling view for a private meeting, only that meeting type will be visible.
 
@@ -34,7 +34,7 @@ Bookings with me is an ideal solution for enterprise, small business, and users 
 - Schedule interviews with external candidates
 - Set up customer and client meetings
 - Schedule tech support
-- Set up office hours
+- Set up office/consultation hours
 - Set up mentoring hours
 - 1:1 meetings with direct reports
 - Lunch and coffee breaks
@@ -59,24 +59,6 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 1. Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
 
    To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
-
-2. For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
-
-   ```Powershell:
-      get-mailbox adam@contoso.com | Format-List SharingPolicy
-   ```
-
-   If the command returns:
-
-   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
-
-   You must update the policy with one of the required domains:
-
-   ```Powershell
-   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
-   ```
-
-For more information, see [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## Turn Bookings with me on or off
 
@@ -225,10 +207,6 @@ Bookings with me integrates with your Outlook calendar and can only be used for 
 
 Also, Bookings with me won't create a new mailbox for each Bookings with me page.
 
-### Why is Bookings with me in preview?
-
-Bookings with me is in preview for all enterprise users worldwide. We're collecting feedback and making improvement while it is being integrated into scheduling experiences in Bookings and Outlook.  
-
 ### Who can access my public Bookings page?
 
 Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
@@ -241,7 +219,7 @@ Private meeting types can also generate single use links. Single use links expir
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
-No. Anyone can schedule time with you using your Bookings with me page, even if they don't have a Microsoft account. You need a Bookings license to create a Bookings with me page.
+No. Anyone or any attendee can schedule time with you using your Bookings with me page, even if they don't have a Microsoft account. You, as an organizer, need a Bookings license to create a Bookings with me page.
 
 ## Privacy
 
