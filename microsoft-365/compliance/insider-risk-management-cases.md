@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 06/30/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -46,6 +46,7 @@ The insider risk management **Cases dashboard** allows you to view and act on ca
 
 The case queue lists all active and closed cases for your organization, in addition to the current status of the following case attributes:
 
+- **Case ID**: The ID of the case. 
 - **Case name**: The name of the case, defined when an alert is confirmed and the case is created.  
 - **Status**: The status of the case, either *Active* or *Closed*.
 - **User**: The user for the case. If anonymization for usernames is enabled, anonymized information is displayed.
@@ -56,11 +57,32 @@ The case queue lists all active and closed cases for your organization, in addit
 
 ![Insider risk management Cases dashboard.](../media/insider-risk-cases-dashboard.png)
 
-Use the **Search** control to search case names for specific text and use the case filter to sort cases by the following attributes:
+Use the **Search** control to search for a Case ID or to search for specific text in case names. Use the case filter to sort cases by the following attributes:
 
 - Status
 - Time case opened, start date, and end date
 - Last updated, start date, and end date
+
+## Assign a case
+
+If you're an administrator with the appropriate permissions, you can assign ownership of a case to yourself or to an insider risk management user with the Insider Risk Management, Insider Risk Management Analyst, or Insider Risk Management Investigator role. After a case is assigned, you can also reassign it to a user with any of the same roles. You can only assign a case to one admin at a time. 
+
+If an admin is assigned to a case, you can filter by admin. 
+
+### Assign a case from the Cases dashboard
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Cases** tab.
+2. On the **Cases dashboard**, select the case(s) that you want to assign.
+3. In the button bar above the cases queue, select **Assign**. 
+4. In the **Assign owner** pane on the right side of the screen, search for an admin with the appropriate permissions, and then select the checkbox for that admin.
+5. Select **Assign**.
+
+### Assign a case from the Cases detail page
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Cases** tab.
+2. Select a case.
+3. In the detail pane for the case, to the left of the **Resolve a case** button, select **Assign**.
+4. In the **Suggested contacts** list, select the appropriate admin.
 
 ## Filter cases
 
@@ -80,6 +102,7 @@ Selecting a case opens the case management tools and allows analysts and investi
 
 The **Case overview** tab summarizes the case details for risk analysts and investigators. It includes the following information in the **About this case** area
 
+- **Case ID**: The ID of the case. 
 - **Status**: The current status of the case, either Active or Closed.
 - **Case created on**: The date and time the case was created.
 - **User's risk score**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses alert risk scores from all active alerts associated to the user. When *User is detected as a potential high impact user* or *User is a member of a priority user group* risk booster is enabled as **Risk score boosters** in the **Policy indicators** section of the **Insider risk management settings** page, the **User details** page includes detailed information about the user's calculated risk level. 
@@ -101,13 +124,15 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed in the queue:
 
+- Alert
+- Alert ID
 - Status
 - Severity
 - Time detected
 
 Select an alert from the queue to display the **Alert detail** page.
 
-Use the search control to search alert names for specific text and use the alert filter to sort cases by the following attributes:
+Use the search control to search for an Alert ID or to search for specific text in alert names. Use the alert filter to sort cases by the following attributes:
 
 - Status
 - Severity

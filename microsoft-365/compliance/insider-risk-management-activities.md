@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/09/2023
+ms.date: 06/30/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -110,7 +110,7 @@ To filter alerts on the **Alerts dashboard**, select the **Filter** control. You
 
 ## Search alerts on the Alert dashboard
 
-To search the alert name for a specific word, select the **Search** control and type the word to search. The search results display any policy alert containing the word defined in the search.
+Use the **Search** control to search for an Alert ID or search for a specific word in the alert name. The search results display any policy alert containing the Alert ID or a word defined in the search.
 
 ## Dismiss multiple alerts (preview)
 
@@ -124,9 +124,30 @@ To dismiss an insider risk alert, complete the following steps:
 4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
 5. Select **Dismiss alerts** to resolve the alerts as benign or select **Cancel** to close the details pane without dismissing the alerts.
 
+## Assign an alert
+
+If you're an administrator with the appropriate permissions, you can assign ownership of an alert to yourself or to an insider risk management user with the Insider Risk Management, Insider Risk Management Analyst, or Insider Risk Management Investigator role. After an alert is assigned, you can also reassign it to a user with any of the same roles. You can only assign an alert to one admin at a time. 
+
+After an admin is assigned, you can filter by admin. 
+
+### Assign an alert from the Alerts dashboard
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Alerts** tab.
+2. On the **Alerts dashboard**, select the alert(s) that you want to assign.
+3. In the button bar above the alerts queue, select **Assign**. 
+4. In the **Assign owner** pane on the right side of the screen, search for an admin with the appropriate permissions, and then select the checkbox for that admin.
+5. Select **Assign**.
+
+### Assign an alert from the Alerts detail page
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Alerts** tab.
+2. Select an alert.
+3. In the detail pane for the alert, in the upper-right corner of the page, select **Assign**.
+4. In the **Suggested contacts** list, select the appropriate admin.
+
 ## Triage alerts
 
-To triage an insider risk alert, complete the following steps:
+To triage an insider risk alert:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.

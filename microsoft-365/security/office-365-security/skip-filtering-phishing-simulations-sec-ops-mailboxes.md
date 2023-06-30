@@ -18,31 +18,30 @@ ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that shouldn't be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/31/2023
+ms.date: 6/23/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 To keep your organization [secure by default](secure-by-default.md), Exchange Online Protection (EOP) doesn't allow safe lists or filtering bypass for messages that are identified as malware or high confidence phishing. But, there are specific scenarios that require the delivery of unfiltered messages. For example:
 
-- **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
+- **Third-party phishing simulations**: Simulated attacks can help you identify and train vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
 
-You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messages _in these specific scenarios_ from being filtered¹. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
+Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these specific scenarios_ from being filtered¹. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
 - Filters in EOP and Defender for Office 365 take no action on these messages.¹
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages².
 - [Default system alerts](/microsoft-365/compliance/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](air-about.md) ignores these messages.
 - Specifically for third-party phishing simulations:
-  - [Admin submissions](submissions-admin.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR aren't triggered. The admin submissions experience shows these messages as a simulated threat.
+  - [Admin submission](submissions-admin.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR aren't triggered. The admin submissions experience shows these messages as a simulated threat.
   - When a user reports a phishing simulation message using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook), the system doesn't generate an alert, investigation, or incident. The links or files aren't detonated, but the message appears on the **User reported** tab of the **Submissions** page.
   - [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
@@ -51,7 +50,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
 
 ² You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
-Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences show these messages as **Phishing simulation** or **SecOps mailbox** system overrides. Admins can filter and analyze on these system overrides in the following experiences:
+Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences show these messages as **Phishing simulation** or **SecOps mailbox** system overrides. Admins can use these values to filter and analyze messages in the following experiences:
 
 - [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer-about.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 - The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message that was allowed by organization policy by either **SecOps mailbox** or **Phishing simulation** under **Tenant override** in the **Override(s)** section.
@@ -61,7 +60,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, open <https://security.microsoft.com/advanceddelivery>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -121,16 +120,20 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
+To configure a third-party phishing simulation, you need to provide the following information:
+
+- At least one **Domain**.
+- At least one **Sending IP**.
+- For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
+
+There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
+
+If your MX record doesn't point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) so the correct IP address is detected.
+
 > [!NOTE]
-> To configure a third-party phishing simulation, you need to provide the following information:
+> If you're using the [Built-in protection preset security policy](preset-security-policies.md#profiles-in-preset-security-policies) or your custom Safe Links policies have the setting **Do not rewrite URLs, do checks via SafeLinks API only** enabled, time of click protection doesn't treat phishing simuation links in email as threats in Outlook on the web, Outlook for iOS and Android, Outlook for Windows v16.0.15317.10000 or later, and Outlook for Mac v16.74.23061100 or later. If you're using older versions of Outlook, consider disabling the **Do not rewrite URLs, do checks via SafeLinks API only** setting in custom Safe Links policies.
 >
-> - At least one **Domain**.
-> - At least one **Sending IP**.
-> - For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
->
-> There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
->
-> If your MX record doesn't point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) so the correct IP address is detected.
+> By design, Safe Links sends a `HEAD` request to all URLs in the email message to determine what to do with the URL. Some phishing simulation vendors might show these `HEAD` requests as user clicks, so you might see two user clicks for a URL. This problem isn't an issue with Defender for Office 365. Ask your phishing simulation vendor to fix this problem by ignoring `HEAD` requests. 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
