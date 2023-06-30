@@ -8,7 +8,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: anwara
-ms.date: 04/17/2023
+ms.date: 06/30/2023
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
