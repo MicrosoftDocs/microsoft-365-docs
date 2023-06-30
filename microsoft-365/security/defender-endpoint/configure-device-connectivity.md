@@ -213,7 +213,7 @@ To leverage the new simplified onboarding method, you will need to onboard devic
 
 2. Select **Settings > Endpoints > Device management> Onboarding**.
 
-:::image type="content" source="images/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
+    :::image type="content" source="images/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
 
 3. Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
 
@@ -226,29 +226,32 @@ To leverage the new simplified onboarding method, you will need to onboard devic
  
 5. Onboard using the deployment method of choice. See the preceeding section for guidelines on each deployment method.
 
-:::image type="content" source="images/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
-
-  
+    :::image type="content" source="images/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
 
 
-Rebooting devices is mandatory for devices that are currently onboarded to MDE. The switch will not be made until this occurs.   
+Restarting devices is mandatory for devices that are currently onboarded to Defender for Endpoint. The switch will not be made until this occurs.   
 
 >[!IMPORTANT]
->Reonboarding scenario; Reboot is required if devices have been previously onboarded to MDE. If you are migrating devices, you are not required to offboard. You can simply rerun the script & reboot. 
+>Restarting scenario: Restarting devices is required if devices have been previously onboarded to Defender for Endpoint. If you are migrating devices, you are not required to offboard. You can simply rerun the script and restart. 
 
 For more information on what tools are supported and how to use them see the next section. 
 
-### Migrating devices using the strealined method
+### Migrating devices using the streamlined method
 
 The following table lists the available tools based on the endpoint that you need to onboard.
 
+Migration recommendation:
 
-MARYSIA - PLEASE VERIFY WHICH OF THE TOOLS FOR EACH OF THE OSES NEED TO BE REMOVED / OR NOT APPLICABLE - THANK YOU!!
+- **Start small** - It is recommended to start with a small set of devices first. apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
 
-|Endpoint|Deployment tool|
+- **Validate and monitor** - After onboarding the small set of devices, validating that devices have successfully onboarded and are communicating with the service. 
+
+- **Full migration **- At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
+
+|Endpoint|Supported deployment tool|
 |---|---|
-|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|**Windows 10 & 11 (excluding version 1607 & 1703)**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
+|**Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022  | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Configuration Manager](configure-endpoints-sccm.md)<br>[Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
 
