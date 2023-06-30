@@ -1,5 +1,5 @@
 ---
-title: "Overview of Multifactor authentication page in Microsoft 365 Lighthouse"
+title: "Overview of the Multifactor authentication page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn more about multifactor authentication in Microsoft 365 Lighthouse."
 ---
 
-# Overview of Multifactor authentication page in Microsoft 365 Lighthouse
+# Overview of the Multifactor authentication page in Microsoft 365 Lighthouse
 
 Multifactor authentication (MFA) in Azure Active Directory (Azure AD) helps protect your customer tenants against breaches due to lost or stolen credentials by using a second form of authentication to provide an extra layer of security.
 
