@@ -66,7 +66,7 @@ The capabilities below are **not available** yet for content created in Loop wor
 *This list of capabilities is not exhaustive*
 
 > [!NOTE]
-> This list of capabilities applies only to content created in Loop workspaces. It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web.
+> The list of capabilities in this section applies to content created in Loop workspaces. It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web.
 
 ## Related topics
 
