@@ -305,3 +305,7 @@ The following table summarizes remediation actions that are available in Defende
 ## See also
 
 [Security incident management](m365bp-security-incident-management.md)  
+
+[Reports in Defender for Business](../security/defender-business/mdb-reports.md)
+
+[Microsoft 365 for business security best practices](secure-your-business-data.md)
