@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 04/24/2023
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,6 +28,16 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+
+## May 2023
+
+### GDAP Setup now checks for required roles
+
+We've updated GDAP Setup in Microsoft 365 Lighthouse to check whether you have the required roles before getting started. If you don't have the required roles, a message will alert you.  
+
+To access GDAP Setup in Lighthouse, go to the **GDAP Setup** card on the **Home** page, and then select **Set up GDAP**.
+
+To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
 
 ## April 2023
 

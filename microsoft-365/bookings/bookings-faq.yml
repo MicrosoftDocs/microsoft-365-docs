@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 04/07/2021
+  ms.date: 06/06/2023
   title: "Microsoft Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
@@ -29,15 +29,15 @@ sections:
         answer: |
           Bookings is available with the following subscriptions: 
           - Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operated by 21Vianet.
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. 
-          You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. 
+          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
           
           A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
       - question: |
           How do I use Microsoft Bookings?
         answer: |
-          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
+          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience.
 
       - question: |
           Will my customers see my personal or business calendar?
@@ -52,8 +52,8 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There’s also a companion app available for iOS and Android.
-
+          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. 
+          
       - question: |
           Can I use Bookings in my own Web site?
         answer: |
