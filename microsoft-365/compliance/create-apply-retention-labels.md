@@ -166,9 +166,9 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
 
 If you don't immediately see the option to assign policy, look for the **Tags** group on the ribbon.
 
-You can also right-click an item, for example from the Drafts or Sent folder.  Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
+You can also right-click an item, for example from the **Drafts** or **Sent Items** folder. Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
 
-To label an item in Outlook on the web, right-click the item for example, from the Drafts or Sent folder. Then, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
+To label an item in Outlook on the web, right-click the item for example, from the **Drafts** or **Sent Items** folder. Then, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
   
 ![Assign policy menu in Outlook on the web.](../media/owa-retention-labels.png)
   
