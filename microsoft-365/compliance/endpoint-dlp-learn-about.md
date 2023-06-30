@@ -131,15 +131,62 @@ File types are a grouping of file formats. They are utilized to protect specific
 
 | File type //<br> Application| Windows <br> Default Audit | Windows <br> Custom Policy | macOS <br> Default Audit | <br> Custom Policy|
 |---|----|----| ---- |----|
-|doc, //word   | Y | Y| Y| Y |
+|doc, //word    | Y | Y| Y| Y |
 |docx, //word   | Y | Y| Y| Y |
 |docm, //word   | Y | Y| Y| Y |
-|dot, //word   | Y | Y| Y| Y |
+|dot, //word    | Y | Y| Y| Y |
 |dotx, //word   | Y | Y| Y| Y |
 |dotm, //word   | Y | Y| Y| Y |
 |docb, //word   | Y | Y| Y| Y |
 |xls, //excel   | Y | Y| Y| Y |
 |xlsx, //excel  | Y | Y| Y| Y |
+|xlt, //excel   | Y | Y| Y| Y |
+|xlm, //excel   | Y | Y| Y| Y |
+|xlsm, //excel  | Y | Y| Y| Y |
+|xltx, //excel  | Y | Y| Y| Y |
+|xltm, //excel  | Y | Y| Y| Y |
+|xlsb, //excel  | Y | Y| Y| Y |
+|xlw, //excel   | Y | Y| Y| Y |
+|ppt, //ppt     | Y | Y| Y| Y |
+|pptx, //ppt    | Y | Y| Y| Y |
+|pos, //ppt     | Y | Y| Y| Y |
+|pps, //ppt     | Y | Y| Y| Y |
+|pptm, //ppt    | Y | Y| Y| Y |
+|potx, //ppt    | Y | Y| Y| Y |
+|potm, //ppt    | Y | Y| Y| Y |
+|ppam, //ppt    | Y | Y| Y| Y |
+|ppsx, //ppt    | Y | Y| Y| Y |
+|pbix           | Y | Y| Y| Y |
+|pdf, //pdf     | Y | Y| Y| Y |
+|csv, //csv     | Y | Y| Y| Y |
+|tsv, //??      | Y | Y| Y| Y |
+|zip            | Y | Y| N| N |
+|zipx           | Y | Y| N| N |
+|rar            | Y | Y| N| N |
+|7z             | Y | Y| N| N |
+|tar            | Y | Y| N| N |
+|war            | Y | Y| N| N |
+|gz             | Y | Y| N| N |
+|pst            | Y | Y| Y| Y |
+|dlp            | Y | Y| N| N |
+|jpg            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|png            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|tif            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|tiff           | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|bmp            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|jpe            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
+|txt            | N | Y| N| Y |
+|c              | N | Y| N| Y |
+|class          | N | Y| N| N |
+|cpp            | N | Y| N| Y |
+|cs             | N | Y| N| Y |
+|h              | N | Y| N| Y |
+|java           | N | Y| N| Y |
+|html           | N | Y| N| Y |
+|htm            | N | Y| N| Y |
+|rtf            | N | Y| N| Y |
+|json           | N | Y| N| Y |
+|config         | N | Y| N| Y |
 
 
 ### File extensions
