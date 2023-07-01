@@ -242,9 +242,11 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 You can apply a default retention label to Outlook folders so that the label is inherited by all unlabeled items.
 
-In the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then select the retention label you want to use as that folder's default retention label.
+In the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then change **Use parent folder policy** to the retention label you want to use as that folder's default retention label. For example:
 
-In Outlook on the web, right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
+![Apply default retention label for Outlook folder.](../media/outlook-default-retention-label.png)
+
+Similarly in Outlook on the web, right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
 
 ##### Label behavior when you use a default label for Outlook
 
