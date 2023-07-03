@@ -168,10 +168,12 @@ If you don't immediately see the option to assign policy, look for the **Tags** 
 
 You can also right-click an item from a folder, such as the **Inbox** folder for emails received or the **Drafts** folder for an email to be sent. Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
 
-To label an item in Outlook on the web, first right-click the item from a folder. Then, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
+To label an item in Outlook on the web, first right-click the item from a folder. Then, select **Advanced actions** \> **Assign policy**, and then choose the retention label. For example:
   
 ![Assign policy menu in Outlook on the web.](../media/owa-retention-labels.png)
-  
+
+As with Outlook desktop, you can also use this labeling method if you multi-select items.
+
 After the retention label is applied, you can view that retention label at the top of the item, and the calculated expired date. For example, for an email that's sent:
   
 ![Label assigned to email in Outlook on the web.](../media/outlook-retention-label-applied.png)
