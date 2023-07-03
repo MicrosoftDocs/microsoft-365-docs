@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/30/2023
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -174,7 +174,7 @@ To label an item in Outlook on the web, first right-click the item from a folder
 
 As with Outlook desktop, you can also use this labeling method if you multi-select items.
 
-After the retention label is applied, you can view that retention label at the top of the item, and the calculated expired date. For example, for an email that's sent:
+After the retention label is applied, you can view that retention label at the top of the item, and the calculated expired date. For example:
   
 ![Label assigned to email in Outlook on the web.](../media/outlook-retention-label-applied.png)
 
@@ -184,7 +184,7 @@ For more information about the expiry date displayed to users, see [User notific
 
 Manually applying retention labels is supported in the new experience only, and not the classic experience.
 
-To label a document (including OneNote files) in OneDrive or SharePoint, first select the item. Then in the upper-right corner, open the details pane, and choose the retention label from **Apply retention label**.
+To label a document (including OneNote files) in OneDrive or SharePoint, first select the item. Then in the upper-right corner, open the details pane, and choose the retention label from **Apply label**.
 
 You can also apply a retention label to a list item, folder, or document set, and you can set a [default retention label for a document library](#default-labels-for-sharepoint-and-outlook). 
   
