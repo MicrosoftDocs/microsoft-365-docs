@@ -7,7 +7,7 @@ manager: dansimp
 ms.reviewer: joshbregman
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.date: 06/01/2023
+ms.date: 07/04/2023
 ms.topic: overview
 ms.collection: 
 - tier1
