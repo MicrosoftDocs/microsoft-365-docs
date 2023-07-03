@@ -1,3 +1,7 @@
+- name: Understanding detection technology within the email entity page in
+    Microsoft Defender for Office 365
+  href: ./step-by-step-guides/understand-detection-technology-in-email-entity.md
+  displayName: email entity detection technology
 - name: Office 365 security
   href: index.yml
   expanded: true
