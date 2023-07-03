@@ -166,9 +166,9 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
 
 If you don't immediately see the option to assign policy, look for the **Tags** group on the ribbon.
 
-You can also right-click an item, for example from the **Drafts** or **Sent Items** folder. Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
+You can also right-click an item from a folder, such as the **Inbox** folder for emails received or the **Drafts** folder for an email to be sent. Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
 
-To label an item in Outlook on the web, right-click the item for example, from the **Drafts** or **Sent Items** folder. Then, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
+To label an item in Outlook on the web, first right-click the item from a folder. Then, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
   
 ![Assign policy menu in Outlook on the web.](../media/owa-retention-labels.png)
   
@@ -217,8 +217,8 @@ When you use default retention labels, there are some scenarios that can result 
 For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library.
   
 For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
-  
-![Apply label option on library Settings page.](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+
+:::image type="content" source="../media/sharepoint-default-retention-label.png" alt-text="Apply default label for a SharePoint library.":::
 
 ##### Label behavior when you use a default label for SharePoint
 
