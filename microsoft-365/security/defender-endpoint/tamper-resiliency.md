@@ -104,11 +104,29 @@ Attackers can be preventing from discovering existing antivirus exclusions by en
 
 When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 
+- Attempt to bypass Microsoft Defender for Endpoint client protection
+- Attempt to stop Microsoft Defender for Endpoint sensor
+- Attempt to tamper with Microsoft Defender on multiple devices
+- Attempt to turn off Microsoft Defender Antivirus protection
+- Defender detection bypass
+- Driver-based tampering attempt blocked
+- Image file execution options set for tampering purposes
+- Microsoft Defender Antivirus protection turned off
+- Microsoft Defender Antivirus tampering
+- Modification attempt in Microsoft Defender Antivirus exclusion list
+- Pending file operations mechanism abused for tampering purposes
 - Possible Antimalware Scan Interface (AMSI) tampering
+- Possible remote tampering
+- Possible sensor tampering in memory
 - Potential attempt to tamper with MDE via drivers
+- Security software tampering
+- Suspicious Microsoft Defender Antivirus exclusion
 - Tamper protection bypass
+- Tampering activity typical to ransomware attacks
+- Tampering with Microsoft Defender for Endpoint sensor communication
+- Tampering with Microsoft Defender for Endpoint sensor settings 
 - Tampering with the Microsoft Defender for Endpoint sensor
-- Possible tampering with protected processes
+
 
 If the [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) attack surface reduction (ASR) rule is triggered, the event is viewable in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) and in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
 
