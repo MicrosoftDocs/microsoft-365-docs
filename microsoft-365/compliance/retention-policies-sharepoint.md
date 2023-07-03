@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 06/29/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -138,9 +138,13 @@ To safeguard against the original file being deleted or moved by users before th
 
 ## How retention works with OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, the different OneNote sections inherit the retention settings as individual files. Pages from each section are contained within the file and inherit the retention settings from their parent section. 
+
+Because of this structure, each section will be individually retained and deleted (with all its pages), according to the retention settings you specify. 
 
 Only sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each individual notebook, this date is not used by Microsoft 365 retention.
+
+:::image type="content" source="../media/onenote-backend-structure.png" alt-text="OneNote folder and file structure to demonstrate how retention settings are applied to each section and then inherited by pages in that section.":::
 
 ## How retention works with document versions
 
