@@ -31,16 +31,16 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Deciding how to onboard, remediate and manage endpoints to the Defender for Endpoint service comes down to two important decisions:
+We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Deciding how to onboard, remediate and manage endpoints to the Defender for Endpoint service comes down to two important steps:
 
-- Which architecture best maps to your organizations strategy
-- Which deployment methods can be used based on the enterprises’ current configuration management and deployment tools.
+- Step 1: Choose which architecture best maps to your organizations strategy
+- Step 2: Choose which deployment methods can be used based on the enterprises’ current configuration management and deployment tools.
 
-:::image type="content" source="../../media/defender-endpoint/onboarding-architecture-2.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture-2.png":::
+    :::image type="content" source="../../media/defender-endpoint/onboarding-architecture-2.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture-2.png":::
 
-## Identify your architecture
+## Step 1: Identify your architecture
 
-Depending on your environment, some tools are better suited for certain architectures so the first step is to select the appropriate Defender for Endpoint architecture that best suites your organization.
+Depending on your environment, some tools are better suited for certain architectures. Use the table below to decide which Defender for Endpoint architecture best suits your organization.
 
 |Architecture |Description |
 |---|---|
@@ -49,9 +49,9 @@ Depending on your environment, some tools are better suited for certain architec
 |**On-premise**|We recommend this architecture for enterprises that want to maximize their investments in Configuration Manager or Active Directory Domain Services while still leveraging the cloud-based  power of Microsoft Defender for Endpoint.|
 |**Script and evaluation**|We recommend this architecture for SOCs that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but haven’t invested in management or deployment tools. This architecture may also be used to onboard devices that are in small environments without management infrastructure (for example, a DMZ).|
 
-## Select deployment method
+## Step 2: Select deployment method
 
-The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately.
+Once you understand your architecture and have an inventory of your environment as described in the [requirements section](../defender-endpoint/mde-planning-guide.md#requirements) use the table to below to decide on the deployment tool for the endpoints in your environment so you can plan the deployment appropriately.
 
 |Endpoint|Deployment tool|
 |---|---|
