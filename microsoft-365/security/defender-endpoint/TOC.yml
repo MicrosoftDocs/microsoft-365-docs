@@ -96,9 +96,9 @@
       href: production-deployment.md
     - name: Step 2 - Assign roles and permissions
       href: prepare-deployment.md
-    - name: Step 3 - Identify your architecture
+    - name: Step 3 - Identify your architecture and deployment method
       href: deployment-strategy.md
-    - name: Step 4 - Choose your deployment method and onboard devices
+    - name: Step 4 - Onboard devices
       href: onboarding.md
     - name: Step 5 - Configure Microsoft Defender for Endpoint capabilities
       href: onboard-configure.md

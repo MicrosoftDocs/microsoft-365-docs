@@ -1,5 +1,5 @@
 ---
-title: Plan your Microsoft Defender for Endpoint deployment
+title: Identify Defender for Endpoint architecture
 description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
 keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem, intune
 search.product: eADQiWindows 10XVcnh
@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Plan your Microsoft Defender for Endpoint deployment
+# Identify Defender for Endpoint architecture
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,25 +33,26 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-Plan your Microsoft Defender for Endpoint deployment so that you can maximize the security capabilities within the suite and better protect your enterprise from cyber threats.
+We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Depending on your environment, some tools are better suited for certain architectures so the first step is to select the appropriate Defender for Endpoint architecture that best suites your organization.
 
-This solution provides guidance on how to identify your environment architecture, select the type of deployment tool that best fits your needs, and guidance on how to configure capabilities.
+Deciding how to onboard, remediate and manage endpoints to the Defender for Endpoint service comes down to two important decisions:
 
-:::image type="content" source="images/deployment-guide-plan.png" alt-text="The deployment flow" lightbox="images/deployment-guide-plan.png":::
+- Which architecture best maps to your organizations strategy
+- Which deployment methods can be used based on the enterprises’ current configuration management and deployment tools.
 
-## Step 1: Identify architecture
+:::image type="content" source="../../media/defender-endpoint/onboarding-architecture.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture.png":::
 
-We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service.
+## Architecture overview
 
-Depending on your environment, some tools are better suited for certain architectures.
+|Architecture |Description |
+|---|---|
+|**Cloud native**| We recommend onboarding, configuring, and remediating endpoints from the cloud with Microsoft Intune for enterprises that don’t have an on-premises configuration management solution or whom are trying to reduce their current on-premises infrastructure footprint. |
+|**Co-management**| We recommend this architecture for organizations that host both on-premises and cloud-based workloads. ConfigMgr and Intune provide integrated cloud-powered management
+tools, and unique co-management options to provision, deploy, manage, and secure endpoints and applications across an organization. |
+|**On-premise**|We recommend this architecture for enterprises that want to maximize their investments in Configuration Manager or Active Directory Domain Services while still leveraging the cloud-based  power of Microsoft Defender for Endpoint.|
+|**Script and evaluation**|We recommend this architecture for SOCs that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but haven’t invested in management or deployment tools. This architecture may also be used to onboard devices that are in small environments without management infrastructure (for example, a DMZ).|
 
-Use the following material to select the appropriate Defender for Endpoint architecture that best suites your organization.
-
-| Item | Description |
-|:-----|:-----|
-|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="The strategy for deployment of Defender for Endpoint" lightbox="images/mde-deployment-strategy.png":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) <br/><br/> [PDF document](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) <br/> [Visio drawing](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premises</li><li>Evaluation and local onboarding</li></ul>|
-
-## Step 2: Select deployment method
+## Select deployment method
 
 The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately.
 
@@ -64,15 +65,8 @@ The following table lists the supported endpoints and the corresponding deployme
 |**Android**|[Microsoft Intune](android-intune.md)|
 |**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
 
+## Next step
 
-## Step 3: Configure capabilities
+After choosing your Defender for Endpoint architecture and deployment method, proceed to:
 
-After onboarding endpoints, configure the security capabilities in Defender for Endpoint so that you can maximize the robust security protection available in the suite. Capabilities include:
-
-- Endpoint detection and response
-- Next-generation protection
-- Attack surface reduction
-
-## Related topics
-
-- [Deployment phases](deployment-phases.md)
+[Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Defender for Endpoint.
