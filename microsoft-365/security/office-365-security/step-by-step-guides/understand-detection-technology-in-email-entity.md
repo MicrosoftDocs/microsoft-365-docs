@@ -46,5 +46,5 @@ For the resolution of false positives in the below table, you should always star
 |URL detonation reputation|URLs previously detected by Safe Links during detonation||
 |URL malicious reputation|The message contains a URL that was previously identified as malicious or spam from other sources||
 
-## Watch a video on submitting messages to Microsoft to learn more.
+## Watch a video on submitting messages to Microsoft to learn more
 [!VIDEO https://www.youtube.com/watch?v=ta5S09Yz6Ks]
