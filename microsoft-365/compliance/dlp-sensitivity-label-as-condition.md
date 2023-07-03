@@ -60,7 +60,7 @@ You can use sensitivity labels as conditions on these items and in the scenarios
 |Devices|items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
-\* DLP detection of sensitivity labeled email attachments is supported for Open XML-based Office file types only.
+\* DLP detection of sensitivity labeled email attachments is supported for Open XML-based Office file types and PDF files only.
 
 \** Attachments sent in Teams over 1:1 chat or channels are automatically uploaded to OneDrive and SharePoint. So if SharePoint or OneDrive are included as locations in your DLP policy, then labeled attachments sent in Teams will be automatically included in the scope of this condition. Teams as a location does not need to be selected in the DLP policy.
 
