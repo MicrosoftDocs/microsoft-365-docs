@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/18/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,10 +24,10 @@ search.appverid:
 
 The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the compliance portal.
 
-These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list (or that are available in PowerShell) and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 > [!TIP]
-> Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
+> Select one of the links in the **In this article** list at the top of this article to go directly to a specific product table.
 
 ## Application administration activities
 
@@ -76,6 +76,9 @@ The following table lists the activities in Briefing email that are logged in th
 ## Communication compliance activities
 
 The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about Microsoft Purview Communication Compliance](communication-compliance.md).
+
+> [!NOTE]
+> These activities are available when using the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. These activities aren't available in the **Activities** drop-down list.
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -147,7 +150,7 @@ You can also search the audit log for activities in Microsoft Purview eDiscovery
 
 Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](audit-log-encrypted-messages.md).
 
-Each audit entry for a tracked message will contain the following fields:
+Each audit entry for a tracked message contains the following fields:
 
 - **MessageID**: Contains the ID of the message being tracked. The key identifier used to follow a message through the system.
 - **Recipient**: List of all recipient email addresses.
@@ -309,10 +312,27 @@ The following table describes the folder activities in SharePoint Online and One
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
 |Friendly name|Operation|Description|
-|:----------------|:------------|:--------------|
-| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
-| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
-| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+|:------------|:--------|:----------|
+|Applied information barrier mode to site|SiteIBModeSet|A SharePoint or global administrator has applied a mode to the site.|
+|Applied segments to site|SiteIBSegmentsSet|A SharePoint, global administrator, or site owner added one or more information barriers segments to a site.|
+|Changed information barrier mode of site|SiteIBModeChanged|A SharePoint or global administrator has updated the mode of the site.|
+|Changed segments of site|SiteIBSegmentsChanged|A SharePoint or global administrator changed one or more information barriers segments for a site.|
+|Disabled information barriers for SharePoint and OneDrive|SPOIBIsDisabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Enabled information barriers for SharePoint and OneDrive|SPOIBIsEnabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Information barriers insights report completed|InformationBarriersInsightsReportCompleted| System completes build of the information barriers insights report.|
+|Information barriers insights report OneDrive section queried|InformationBarriersInsightsReportOneDriveSectionQueried |An administrator queries the information barriers insights report for OneDrive accounts.|
+|Information barriers insights report scheduled|InformationBarriersInsightsReportSchedule|An administrator schedules the information barriers insights report.|
+|Information barriers insights report SharePoint section queried|InformationBarriersInsightsReportSharePointSectionQueried|An administrator queries the information barriers insights report for Sharepoint sites.|
+|Removed segment from site|SiteIBSegmentsRemoved|A SharePoint or global administrator removed one or more information barriers segments from a site.|
+
+## Microsoft Defender Experts activities
+
+The following table lists the activities in Microsoft Defender Experts that are logged into the Microsoft 365 audit log. For more information about Microsoft Defender Experts, see [Learn about Microsoft Defender Experts for XDR](/microsoft-365/security/defender/dex-xdr-overview) and [Learn about Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting)
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+| Defender Experts analyst permission created | DefenderExpertsAnalystPermissionCreated | An administrator granted one or more role permissions to Defender Experts analysts to investigate incidents or remediate threats.|
+| Defender Experts analyst permission modified | DefenderExpertsAnalystPermissionModified | An administrator modified role permissions for Defender Experts analysts to investigate incidents or remediate threats.|
 
 ## Microsoft Forms activities
 
@@ -339,11 +359,11 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Removed form coauthor|RemoveFormCoauthor|Form owner deletes a collaboration link.|
 |Viewed response page|ViewRuntimeForm|User has opened a response page to view. This event is logged regardless of whether the user submits a response or not.|
 |Created response|CreateResponse|Similar to receiving a new response.  A user has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
-|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property is null.|
 |Deleted all responses|DeleteAllResponses|Form owner deletes all response data.|
 |Deleted Response|DeleteResponse|Form owner deletes one response. <br><br>Property ResponseId:string indicates the response being deleted.|
 |Viewed responses|ViewResponses|Form owner views the aggregated list of responses. <br><br>Property ViewType:string indicates whether form owner is viewing Detail or Aggregate|
-|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property is null.|
 |Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
 |Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
@@ -424,6 +444,37 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+## Microsoft Project for the web activities
+
+You can search the audit log for activities in Microsoft Project for the web. Microsoft Project for the web is built on the [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and has an associated Project Power App. To enable auditing for scenarios where the user is using the Microsoft Dataverse or the Project Power App, see the [System Settings Auditing tab](/power-platform/admin/system-settings-dialog-box-auditing-tab) guidance. For a list of entities related to Project for the web, see the [Export user data from Project for the web](/project-for-the-web/export-user-data-from-project-for-the-web#find-user-data-in-dataverse-with-the-advanced-find-search-feature) guidance.
+
+For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
+
+>[!NOTE]
+>Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Created project|ProjectCreated|A project is created by a user or app.|
+|Created roadmap|RoadmapCreated|A roadmap is created by a user or app.|
+|Created roadmap item|RoadmapItemCreated|A roadmap item is created by a user or app.|
+|Created task|TaskCreated|A task is created by a user or app.|
+|Deleted project|ProjectDeleted|A project is deleted by a user or app.|
+|Deleted roadmap|RoadmapDeleted|A roadmap is deleted by a user or app.|
+|Deleted roadmap item|RoadmapItemDeleted|A roadmap item is deleted by a user or app.|
+|Deleted task|TaskDeleted|A task is deleted by a user or app.|
+|Project accessed|ProjectAccessed|A project is read or app.|
+|Project home accessed|ProjectListAccessed|A list of projects and/or roadmaps is queried by a user.|
+|Roadmap accessed|RoadmapAccessed|A roadmap is read by a user or app.|
+|Roadmap item accessed|RoadmapItemAccessed|A roadmap item is read by a user or app.|
+|Task accessed|TaskAccessed|A task is read by a user or app.|
+|Updated project settings|ProjectForTheWebProjectSettings|Project settings is updated by an admin.|
+|Updated roadmap|RoadmapUpdated|A roadmap is modified by a user or app.|
+|Updated roadmap item|RoadmapItemUpdated|A roadmap item is modified by a user or app.|
+|Updated roadmap settings|ProjectForTheWebRoadmaptSettings|Roadmap settings is updated by an admin.|
+|Updated task|TaskUpdated|A task is modified by a user or app.|
+|Updated project|ProjectUpdated|A project is modified by a user or app.|
+
 ## Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
@@ -446,9 +497,38 @@ If your organization is using the Shifts app in Microsoft Teams, you can search 
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
-## Microsoft Workplace Analytics activities
+## Microsoft To Do activities
 
-Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
+The following table lists the activities in Microsoft To Do that are logged in the Microsoft 365 audit log. For more information about Microsoft To Do, see [Support for Microsoft To Do](https://support.microsoft.com/todo).
+
+> [!NOTE]
+> Auditing events for Microsoft To Do activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Accepted sharing link on folder|AcceptedSharingLinkOnFolder|Accepted sharing link for a folder.|
+|Attachment created|AttachmentCreated|An attachment was created for a task.|
+|Attachment updated|AttachmentUpdated|An attachment was updated.|
+|Attachment deleted |AttachmentDeleted|An attachment was deleted.|
+|Folder sharing link shared|FolderSharingLinkShared|Created a sharing link for a folder.|
+|Linked entity deleted|LinkedEntityDeleted|A linked entity was deleted.|
+|Linked entity updated|LinkedEntityUpdated|A linked entity was updated.|
+|Linked entity created|LinkedEntityCreated|A linked entity of task was created.|
+|SubTask created|SubTaskCreated|A subtask was created.|
+|SubTask deleted|SubTaskDeleted|A subtask was deleted.|
+|SubTask updated|SubTaskUpdated|A subtask was updated.|
+|Task created|TaskCreated|A task was created.|
+|Task deleted|TaskDeleted|A task was deleted.|
+|Task read|TaskRead|A task was read.|
+|Task updated|TaskUpdated|A task was updated.|
+|TaskList created|TaskListCreated|A task list was created.|
+|TaskList read|TaskListRead|A task list was read.|
+|TaskList updated|TaskListUpdated |A task list was updated.|
+|User invited|UserInvited|Invited user to a folder.|
+
+## Microsoft Viva Insights activities
+
+Viva Insights provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Viva Insights. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Viva Insights. For more information, see [Introducing Microsoft Viva Insights](/viva/insights/introduction).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -466,16 +546,16 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 
 > [!NOTE]
-> <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
+> <sup>*</sup>An Azure Active Directory sign in and sign off activity event is created when a user signs in. This activity is logged even if you don't have Viva Insights turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-## MyAnalytics activities
+## Personal insights activities
 
-The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
+The following table lists the activities in personal insights that are logged in the Microsoft 365 audit log. For more information about personal insights, see [Admin guide for personal insights](/viva/insights/personal/Overview/mya-for-admins).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
-|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for personal insights. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for personal insights.|
 
 ## Power BI activities
 
@@ -544,7 +624,7 @@ The following table describes the audit events for activities involving creation
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity will surface under the audit activities “Created rule package” or “Edited rule package.” </p>|
+|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity surfaces under the audit activities 'Created rule package' or 'Edited rule package'. </p>|
 |Edited a sensitive information type|EditRulePackage| An existing sensitive information type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive information type. </br><p>**Note:** This activity will surface under the audit activity "Edited rule package."</p> |
 | Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. </br><p>**Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package.”</p> |
 
@@ -571,7 +651,7 @@ Additional auditing information for sensitivity labels:
 
 ## SharePoint list activities
 
-The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
+The following table describes activities related to when users interact with lists and list items in SharePoint Online. Audit records for some SharePoint activities indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -644,7 +724,7 @@ The following table lists events that result from site administration tasks in S
 |Canceled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Microsoft 365 admin center, SharePoint admin center, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
 |Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Microsoft 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).|
-|Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form will be returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
+|Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form is returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
 |Changed network access policy|NetworkAccessPolicyChanged|A SharePoint or global administrator changed the location-based access policy (also called a trusted network boundary) in the SharePoint admin center or by using SharePoint Online PowerShell. This type of policy controls who can access SharePoint and OneDrive resources in your organization based on authorized IP address ranges that you specify. For more information, see [Control access to SharePoint Online and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location).|
 |Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Created Sent To connection|SendToConnectionAdded|A SharePoint or global administrator creates a new Send To connection on the Records management page in the SharePoint admin center. A Send To connection specifies settings for a document repository or a records center. When you create a Send To connection, a Content Organizer can submit documents to the specified location.|

@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 6/19/2023
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -19,26 +19,16 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
-# Explorer and Real-time detections
+# What is Threat Explorer and Real-time detections?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-In this article:
-
-- [Differences between Explorer and Real-time detections](#differences-between-explorer-and-real-time-detections)
-- [Updated experience for Explorer and Real-time detections](#updated-experience-for-explorer-and-real-time-detections)
-- [Required licenses and permissions](#required-licenses-and-permissions)
-
-> [!NOTE]
-> This is part of a **3-article series** on **Explorer (also known as Threat Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Explorer](threat-explorer-threat-hunting.md) and [Email security with Explorer](email-security-in-microsoft-defender.md).
-
-This article explains the difference between Explorer and real-time detections reporting, updated experience with Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
+This article explains the difference between Threat Explorer and real-time detections reporting, updated experience with Threat Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 
@@ -89,9 +79,8 @@ Here are the common components within these experiences:
 
   - You can use commas to add multiple values for the same filter.
 
-  > [!div class="mx-imgBorder"]
-  > ![Explorer filters](../../media/explorer-new-experience-filters.png)
-
+    :::image type="content" source="../../media/explorer-new-experience-filters.png" alt-text="Screenshot showing filters in Explorer." lightbox="../../media/explorer-new-experience-filters.png":::
+  
 - Charts
 
   - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.
@@ -99,9 +88,8 @@ Here are the common components within these experiences:
     > [!NOTE]
     > You may see no results in chart view even if you are seeing an entry in the list view. This happens if the filter does not produce any data. For example, if you have applied the filter malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.
 
-  > [!div class="mx-imgBorder"]
-  > ![Explorer chart view](../../media/explorer-new-experience-export-chart-data.png)
-
+    :::image type="content" source="../../media/explorer-new-experience-export-chart-data.png" alt-text="Screenshot showing exporting chart data." lightbox="../../media/explorer-new-experience-export-chart-data.png":::
+  
 - Results grid
 
   - Results grid shows the email results based on the filters you've applied.
@@ -112,12 +100,11 @@ Here are the common components within these experiences:
 
   - You can also customize your columns to add or remove columns to optimize your view.
 
-  > [!Note]
+  > [!NOTE]
   > You can toggle between the *Chart View* and the *List View* to maximize your result set.
 
-  > [!div class="mx-imgBorder"]
-  > ![Explorer grid view](../../media/explorer-new-experience-list-chart-view.png)
-
+    :::image type="content" source="../../media/explorer-new-experience-list-chart-view.png" alt-text="Screenshot showing viewing chart data." lightbox="../../media/explorer-new-experience-list-chart-view.png":::
+  
 - Detailed flyout
 
   - You can click on hyperlinks to get to the email summary panel (entries in Subject column), recipient, or IP flyout.
@@ -138,10 +125,15 @@ Here are the common components within these experiences:
 
   - You can export up to 200K records for email list. However, for better system performance and reduced download time, you should use various email filters.
 
-  > [!div class="mx-imgBorder"]
-  > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
+  :::image type="content" source="../../media/explorer-new-experience-export-chart-data.png" alt-text="Screenshot showing exporting chart data." lightbox="../../media/explorer-new-experience-export-chart-data.png":::
 
 In addition to these features, you'll also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer.
+
+### Exporting data
+
+Threat Explorer and Real-time detections now allows users to export additional data in addition to the data visible on the data grid. With the new export feature, users will have the ability to selectively export the data that are relevant to their analysis or investigation, without having to shift through irrelevant data. The latest export feature includes a group of default fields that offer fundamental information from email metadata as pre-selected options. You now have the choice to pick extra fields or modify the current selection based on your requirements. The new export feature is available across all tabs in Threat Explorer and Real-time detections.
+
+:::image type="content" source="../../media/threat-explorer-exporting-data.png" alt-text="Screenshot showing Threat Explorer exporting data by date." lightbox="../../media/threat-explorer-exporting-data.png":::
 
 ## Required licenses and permissions
 
@@ -156,7 +148,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 - In Defender for Office 365:
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Azure Active Directory admin center) (<https://aad.portal.azure.com>)
   - Security Reader
 - In Exchange Online:
   - Organization Management

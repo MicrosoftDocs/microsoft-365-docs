@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/02/2019
+ms.date: 06/13/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -30,8 +30,8 @@ description: "A list of labeling activities that are available in Activity explo
 
 This event is generated each time an unlabeled document is labeled or an email is sent with a sensitivity label.
 
-- It is captured at the time of save in Office native applications and web applications.
-- It is captured at the time of occurrence for the Azure Information Protection (AIP) unified labeling client.
+- It is captured when saved in native Microsoft Office applications and web applications.
+- It is captured when a label is applied for the Azure Information Protection (AIP) unified labeling client.
 - Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter.
 
 |Source  |Reported in Activity explorer | Note  |
@@ -50,11 +50,11 @@ This event is generated each time an unlabeled document is labeled or an email i
 
 This event is generated each time a sensitivity label is updated on the document or email.
 
-- For the AIP unified client, AIP unified scanner and MIP SDK sources, the AIP *upgrade label* and *downgrade label* action maps to Activity explorer *label changed*
-- It is captured at the point of save in Office native applications and web applications.
-- It is captured at the time of occurrence for the AIP unified labeling client and scanner enforcements
-- Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured except for SharePoint Online and OneDrive.
-- Sensitivity labeling done in Office native apps on Outlook collects the last action that was generated before file save/email send actions. For example, if the user changes label on an email multiple times before sending, the last label found on the email when it is sent is captured in the audit log and then reported in Activity explorer.
+- For the AIP unified client, AIP unified scanner, and MIP SDK sources, the AIP *upgrade label* and *downgrade label* action maps to Activity explorer *label changed*
+- It is captured when the action is saved in native Microsoft Office applications and web applications.
+- It is captured when the action occurs for the AIP unified labeling client and scanner enforcements
+- Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured, except for SharePoint Online and OneDrive.
+- Sensitivity labeling done in native Microsoft Office apps: Outlook collects the last action that was generated before *file save*/*email send* actions. For example, if the user changes label on an email multiple times before sending, the last label found on the email when it is sent is captured in the audit log and then reported in Activity explorer.
 
 |Source  |Reported in Activity explorer|Note  |
 |---------|---------|---------|
@@ -73,9 +73,9 @@ This event is generated each time a sensitivity label is updated on the document
 
 This event is generated each time a sensitivity label is removed from a file or document.
 
-- This event is captured at the time of save in Office native applications and web applications.
-- It is captured at the time of occurrence for the Azure Information Protection (AIP) unified labeling client.
-- Sensitivity labeling, with Office built-in labels, on Outlook collects the last labeling event that was generated before file save/email send actions.
+- This event is captured when the document is saved in  native Microsoft Office applications and web applications.
+- It is captured at when the label is removed for the Azure Information Protection (AIP) unified labeling client.
+- Sensitivity labeling in Microsoft Office, with built-in labels: Outlook collects the last labeling event that was generated before *file save*/*email send* actions.
 
 |Source  |Reported in Activity explorer | Note  |
 |---------|---------|---------|
@@ -219,12 +219,12 @@ This event is generated each time a DLP policy is matched on a document or an em
 |SharePoint Online|Yes          |
 |OneDrive |Yes|
 |Teams |Yes   |
-|Windows 10 devices         |Yes |
+|Windows 10, Windows 11, and macOS devices         |Yes |
 |MAC         |No     |
 |On-premises         |No|
 |Microsoft Defender for Cloud Apps     |No        |
 
-The events for Windows 10 Devices (Endpoint DLP) are:
+The Endpoint DLP events for devices running Windows 10, Windows 11, and any of the three most recently released major versions of macOS are:
 
 - File deleted
 - File created
@@ -274,8 +274,8 @@ This event is generated each time a label is removed from a file or document.
 
 ## Known issues
   
-- When the recommended label tool tip is shown to an end user, it is not captured. But if the user chooses to apply the recommended label, the label will be shown under the *How applied* field as *Recommended*.
+- When the recommended label tool tip is shown to an end user, it is not captured. However, if the user chooses to apply the recommended label, the label will be shown under the *How applied* field as *Recommended*.
 
-- Justification text is not currently available on sensitivity label downgrade from SharePoint and OneDrive.
+- Justification text is not currently available when downgrading sensitivity labels from SharePoint and OneDrive.
 
-- Sensitive information types are currently not available for autolabeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.
+- Sensitive information types are currently not available for autolabeling activities from Word, Excel, PowerPoint, and Outlook, SharePoint Online, and OneDrive.

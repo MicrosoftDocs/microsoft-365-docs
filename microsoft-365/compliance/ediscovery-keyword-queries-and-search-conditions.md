@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/08/2023
+ms.date: 06/26/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -52,7 +52,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - The timezone for all searches is Coordinated Universal Time (UTC). Changing timezones for your organization isn't currently supported.
 - Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
 - The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
+- A space between two keywords or two  `property:value` expressions is the same as using **OR**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis or messages that contain the word reorganization in the subject line.
 - Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages sent to pilarp.
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 - You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren't supported.
@@ -77,6 +77,9 @@ For example, to find content related to specific employees (*User 1* and *User 2
 - Select User 1 and User 2's Exchange Online locations as collection locations
 - For **Keyword**, use *Tradewinds*
 - For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
+
+> [!IMPORTANT]
+> For emails, when a keyword is used, we search subject, body and many properties related to the participants. However, due to recipient expansion, search may not return expected results when using the alias or part of the alias. Therefore we recommend using the full UPN.
 
 ## Searchable email properties
 
@@ -201,7 +204,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`. <p> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
-|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart. For example, `best NEAR(5) worst` returns any item where the word "worst" is within five words of "best". If no number is specified, the default distance is eight words. <sup>2</sup>|
+|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart (including the keywords). For example, `best NEAR(5) worst` returns any item where the word 'worst' is within *four* other words of 'best' (because the word 'worst' is inclusive for the specified count of 5). If no number is specified, the default distance is eight words. <sup>2</sup>|
 |:|property:value|The colon (:) in the  `property:value` syntax specifies that the value of the property being searched for contains the specified value. For example,  `recipients:garthf@contoso.com` returns any message sent to garthf@contoso.com.|
 |=|property=value|The same as the `:` operator.|
 |\<|property\<value|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
@@ -356,8 +359,6 @@ Some special characters aren't included in the search index and therefore aren't
 You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
 To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
-
-For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
 ### Limitations for searching sensitive data types
 

@@ -2,8 +2,8 @@
 title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: v-katykoenen
+author: kmkoenen
 manager: laurawi
 ms.date: 04/24/2023
 audience: ITPro
@@ -101,7 +101,7 @@ To grant accessibility access to DLP, upload the `accessibility.mobileconfig` fi
 
 1. Open **System Preferences** > **Profiles**.
 
-1. The following profiles are now listed::
+1. The following profiles are now listed:
     - Accessibility
     - Full Disk Access
     - Kernel Extension Profile

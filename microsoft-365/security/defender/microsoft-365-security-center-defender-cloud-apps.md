@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: bagol
+author: batamig
 manager: dansimp
 ms.date: 08/04/2022
 audience: ITPro
@@ -109,6 +109,12 @@ The images and the tables below list the changes in navigation between Microsoft
 | IP address ranges              | Settings -> Cloud apps                                      |
 | User groups                    | Settings -> Cloud apps                                      |
 
+The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+  
+- [Settings > Azure AD Identity Protection](investigate-alerts.md)
+- [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
+- [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
+
 ## Limitations
 
 - The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
@@ -116,8 +122,6 @@ The images and the tables below list the changes in navigation between Microsoft
   - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
 
 - The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
-- New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
-- Some links may redirect you to the Defender for Cloud Apps portal.
 
 ## What's changed
 

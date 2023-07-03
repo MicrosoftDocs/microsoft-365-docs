@@ -35,7 +35,7 @@ ms.date: 04/27/2022
 The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links-about.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps.
 
 > [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> This table is currently in public preview. Some information relates to a prereleased feature which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -50,7 +50,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `IPAddress` | `string` | Public IP address of the device from which the user clicked on the link|
 | `ThreatTypes` | `string` | Verdict at the time of click, which tells whether the URL led to malware, phish or other threats|
 | `DetectionMethods` | `string` | Detection technology that was used to identify the threat at the time of click|
-| `IsClickedThrough` | `bool` | Indicates whether the user was able to click through to the original URL or wasn't allowed|
+| `IsClickedThrough` | `bool` | Indicates whether the user was able to click through to the original URL (1) or not (0)|
 | `UrlChain` | `string` | For scenarios involving redirections, it includes URLs present in the redirection chain|
 | `ReportId` | `string` | The unique identifier for a click event. For clickthrough scenarios, report ID would have same value, and therefore it should be used to correlate a click event.|
 

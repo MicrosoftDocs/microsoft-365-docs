@@ -94,6 +94,11 @@
             "source_path": "solutions/team-security-isolation-dev-test.md",
             "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
             "redirect_document_id": true
-        }
+        },
+        {
+            "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
+            "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
+            "redirect_document_id": false
+    }
     ]
 }

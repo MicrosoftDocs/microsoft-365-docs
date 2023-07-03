@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/03/2023
+ms.date: 04/03/2023 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -20,17 +20,17 @@ description: "Learn how to increase the accuracy of your classifiers"
 
 # Increase classifier accuracy
 
-Classifiers, like [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md) are used in various kinds of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
+Classifiers, such as [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md), are used in various types of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
 
-This article shows you how to confirm whether items matched by a classifier are true positive (a **Match**) or a false positive (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+This article shows you how to confirm whether items matched by a classifier are true positives (a **Match**) or false positives (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
 
 The **Match**, **Not a match** experience is available in:
 
-- Content Explorer - for SharePoint Online sites, OneDrive for Business sites
-- Sensitive Information Type Matched Items page - for SharePoint Online sites, OneDrive for Business sites
-- Trainable Classifier Matched Items page - for SharePoint Online sites, OneDrive for Business sites
-- Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
-- Microsoft Threat Protection (MTP) Alerts page - for SharePoint Online sites, OneDrive for Business sites, and emails in Exchange Online
+- Content Explorer - for SharePoint sites, OneDrive sites
+- Sensitive Information Type Matched Items page - for SharePoint sites, OneDrive sites
+- Trainable Classifier Matched Items page - for SharePoint sites, OneDrive sites
+- Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint sites, OneDrive, and emails in Exchange
+- Microsoft Threat Protection (MTP) Alerts page - for SharePoint sites, OneDrive sites, and emails in Exchange
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -48,18 +48,18 @@ The **Match**, **Not a match** experience is available in:
 |Custom trainable classifier |No| No| Yes|
 
 > [!IMPORTANT]
-> The match/not a match feedback experience supports items in :
-> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type/ Trainaable Classifier Matched Items, DLP Alerts and MTP Alerts.
+> The match/not a match feedback experience supports items in:
+> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type and Trainable Classifier Matched Items, DLP Alerts and MTP Alerts.
 > Emails in Exchange - for DLP Alerts and MTP Alerts.
 
 ## Licensing and Subscriptions
 
-For information on the relevant licensing and subscriptions see the [licensing requirements for Data classification analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
+For information on the relevant licensing and subscriptions, see the [licensing requirements for Data classification analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-## Known limitations
+## Known limitations for this preview
 
 - The contextual summary only shows a limited number of matches in any given item, not all matches.
-- The contextual summary and feedback experience is only available for items created or updated after the feedback experience was enabled for the tenant. The contextual summary and feedback experience may not be available for items that were classified before the feature was enabled.
+- The contextual summary and feedback experience is only available for items created or updated after the feedback experience was enabled for the tenant. Items that were classified before the feature was enabled may not have the contextual summary and feedback experience available.
 
 ## How to evaluate match accuracy and provide feedback
 
@@ -70,14 +70,14 @@ The contextual summary experience, where you indicate whether a matched item is 
 
 ### Using Content Explorer
 
-This example shows you how to use the **Contextual Summary** tab to give feedback.
+This example shows you how to use the **Contextual Summary** tab to give feedback. <!-- Can't fully verify procedure b/c I can't get Content Explorer to display any data in this view on ediscosdf or on ocg1-->
 
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
 1. Select the SIT.
 1. Select the location and make sure that there's a non-zero value in the **Files** column. (The only supported locations are SharePoint and OneDrive.)
 1. Open the folder and then select a document.
-1. Select the link in the **Sensitive info type** column for the document to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
+1. Select the link in the **Sensitive info type** column for the document to see which SITs the item matched and the [confidence level](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Choose **Close**
 1. Open a document and select the **Contextual Summary** tab.
 1. Review the item and confirm whether or not it's a match.
@@ -96,7 +96,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 1. Open the SIT. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.
 1. Open the folder and select a document. Only SharePoint, OneDrive are supported locations here. Make sure that there's a non-zero value in the **Files** column.
-1. Select the link in the **Sensitive info type** column for an item to see which SITs the item matched and the [confidence level](/microsoft-365/compliance/sensitive-information-type-learn-about.md#more-on-confidence-levels).
+1. Select the link in the **Sensitive info type** column for an item to see which SITs the item matched and the [confidence level](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 1. Choose **Close**.
 1. Open a document and then select the **Contextual Summary** tab.
 1. Review the item and confirm whether it's a match.
@@ -107,7 +107,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 
 ### Using Trainable Classifier Matched Items page
 
-1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Trainable classifiers**.
+1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Classifiers** > **Trainable classifiers**.
 1. Select the trainable classifier whose accuracy you want to check.
 1. Open the trainable classifier. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.
