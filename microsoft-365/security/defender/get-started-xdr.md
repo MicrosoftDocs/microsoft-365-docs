@@ -89,9 +89,9 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness assessment to help you get the most out of your Microsoft security products.
 
-The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts help prioritize and customize our recommendations to fit your environment. They request your engagement to get those configurations implemented.
+The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts collaborate with you to prioritize and tailor recommendations that align with your environment. They seek your immediate involvement to implement these configurations and comprehend the necessary actions for initiating operations.
 
-Once you’ve completed the readiness checks, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
+Once the readiness checks are completed, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
 ### Next step
 
