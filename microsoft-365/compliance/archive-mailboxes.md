@@ -22,7 +22,7 @@ description: "Learn about archive mailboxes to provide extra mailbox storage for
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use this article if you're an Exchange or compliance administrator and want to learn about mailbox archives that provide more storage space for users' online mailbox data. Additional mailbox storage might be needed to support your organization's message retention, eDiscovery, and hold requirements.
+Use this article if you're an Exchange or compliance administrator and want to learn about mailbox archives that provide more storage space for users' online mailboxes. This additional mailbox storage might be needed to support your organization's message retention, eDiscovery, and hold requirements.
 
 > [!NOTE]
 > Mailbox users can learn more about their archive mailbox storage by using the following article: [Manage email storage with online archive mailboxes](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
