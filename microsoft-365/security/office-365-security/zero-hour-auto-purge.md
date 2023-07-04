@@ -119,6 +119,8 @@ ZAP doesn't quarantine messages that are in the process of [Dynamic Delivery](sa
 > [!NOTE]
 > ZAP for Microsoft Teams is currently in Preview, and is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
 >
+> When you [join the Preview](mdo-support-teams-about.md#enable-microsoft-defender-for-teams), ZAP for Microsoft Teams is turned on.
+>
 > Currently, ZAP is available only for messages that are identified as malware or high confidence phishing.
 
 When a chat message is identified as potentially phishing or malicious in Microsoft Teams, ZAP blocks the message and quarantines it. This message is blocked for both the recipient and the sender. This protection feature applies only to messages in a chat or in a meeting within the organization.
