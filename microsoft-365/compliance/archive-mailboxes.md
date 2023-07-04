@@ -27,11 +27,11 @@ Use this article if you're an Exchange or compliance administrator and want to l
 > [!NOTE]
 > Mailbox users can learn more about their archive mailbox storage by using the following article: [Manage email storage with online archive mailboxes](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
 
-After you turn on archive mailboxes, sometimes also known as *In-Place Archiving*, a user's current mailbox becomes their *primary mailbox* and an additional and associated mailbox is created, called the *archive mailbox*. 
+After you turn on archive mailboxes, sometimes also known as *In-Place Archiving*, a user's current mailbox becomes their *primary mailbox* and an additional and associated mailbox is created, called the *archive mailbox*.
 
 Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft Purview compliance portal, Microsoft 365 retention, and Litigation Hold.
 
-Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
+Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the [Recover Deleted Items tool](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
