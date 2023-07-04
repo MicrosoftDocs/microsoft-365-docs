@@ -41,14 +41,16 @@ Depending on your environment, some tools are better suited for certain architec
 
 |Architecture |Description |
 |---|---|
-|**Cloud native**| We recommend onboarding, configuring, and remediating endpoints from the cloud with Microsoft Intune for enterprises that don’t have an on-premises configuration management solution or whom are trying to reduce their current on-premises infrastructure footprint. |
-|**Co-management**| We recommend this architecture for organizations that host both on-premises and cloud-based workloads. ConfigMgr and Intune provide integrated cloud-powered management tools, and unique co-management options to provision, deploy, manage, and secure endpoints and applications across an organization. |
-|**On-premise**|We recommend this architecture for enterprises that want to maximize their investments in Configuration Manager or Active Directory Domain Services while still leveraging the cloud-based  power of Microsoft Defender for Endpoint.|
-|**Script and evaluation**|We recommend this architecture for SOCs that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but haven’t invested in management or deployment tools. This architecture may also be used to onboard devices that are in small environments without management infrastructure (for example, a DMZ).|
+|**Cloud-native**| We recommend using Microsoft Intune to onboard, configure, and remediate endpoints from the cloud for enterprises that don't have an on-premises configuration management solution or are looking to reduce their on-premises infrastructure. |
+|**Co-management**| For organizations that host both on-premises and cloud-based workloads we recommend using Microsoft's ConfigMgr and Intune for their management needs. These tools provide a comprehensive suite of cloud-powered management features, as well as unique co-management options to provision, deploy, manage, and secure endpoints and applications across an organization. |
+|**On-premise**|For enterprises that want to take advantage of the cloud-based capabilities of Microsoft Defender for Endpoint while also maximizing their investments in Configuration Manager or Active Directory Domain Services, we recommend this architecture.|
+|**Script and evaluation**|We recommend this architecture for SOCs (Security Operations Centers) that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but don't have existing management or deployment tools. This architecture can also be used to onboard devices in small environments without management infrastructure, such as a DMZ (Demilitarized Zone).|
 
 ## Step 2: Select deployment method
 
-Once you understand your architecture and have an inventory of your environment as described in the [requirements section](../defender-endpoint/mde-planning-guide.md#requirements) use the table to below to decide on the deployment tool for the endpoints in your environment so you can plan the deployment appropriately.
+Once you understand your architecture and have an inventory of your environment as described in the [ use the table to below to decide on the deployment tool for the endpoints in your environment so you can plan the deployment appropriately.
+
+Once you have determined the architecture of your environment and have created an inventory as outlined in the [requirements section](../defender-endpoint/mde-planning-guide.md#requirements), use the table below to select the appropriate deployment tools for the endpoints in your environment. This will help you plan the deployment effectively.
 
 |Endpoint|Deployment tool|
 |---|---|
