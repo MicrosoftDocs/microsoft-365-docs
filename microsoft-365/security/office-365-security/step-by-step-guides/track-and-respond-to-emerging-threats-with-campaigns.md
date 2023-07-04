@@ -81,4 +81,4 @@ In the event that a campaign has targeted your organization and you'd like to le
 
 ## Next steps
 
-To learn more, read, [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
+To learn more, read: [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
