@@ -48,14 +48,12 @@ Depending on your environment, some tools are better suited for certain architec
 
 ## Step 2: Select deployment method
 
-Once you understand your architecture and have an inventory of your environment as described in the [ use the table to below to decide on the deployment tool for the endpoints in your environment so you can plan the deployment appropriately.
-
 Once you have determined the architecture of your environment and have created an inventory as outlined in the [requirements section](../defender-endpoint/mde-planning-guide.md#requirements), use the table below to select the appropriate deployment tools for the endpoints in your environment. This will help you plan the deployment effectively.
 
 |Endpoint|Deployment tool|
 |---|---|
 |**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers<br><br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|**Windows servers<br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
 |**Android**|[Microsoft Intune](android-intune.md)|
