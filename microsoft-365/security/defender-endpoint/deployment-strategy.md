@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Deciding how to onboard, remediate and manage endpoints to the Defender for Endpoint service comes down to two important steps:
 
-    :::image type="content" source="../../media/defender-endpoint/onboarding-architecture-2.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture-2.png":::
+:::image type="content" source="../../media/defender-endpoint/onboarding-architecture-2.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture-2.png":::
 
 ## Step 1: Identify your architecture
 
