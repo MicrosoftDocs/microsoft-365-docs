@@ -4,8 +4,8 @@
   items:
    - name: Overview
      items:
-       - name: Overview of Office 365 security
-         href: microsoft-defender-for-office-365-product-overview.md
+       - name: Why do I need Microsoft Defender for Office 365?
+         href: why-do-i-need-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
        - name: Zero Trust for Defender for Office 365
