@@ -24,7 +24,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Onboard to the Microsoft Defender for Endpoint service
+# ## Onboard devices using any of the supported management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,57 +36,13 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Learn about the various phases of deploying Microsoft Defender for Endpoint and how to configure the capabilities within the solution.
-
-
-These are the steps you need to take to deploy Defender for Endpoint:
-
-- Step 1: Onboard endpoints to the service
-- Step 2: Configure capabilities
-
-:::image type="content" source="images/deployment-steps.png" alt-text="The deployment steps" lightbox="images/deployment-steps.png":::
-
-
-
-
-## Step 1: Onboard endpoints using any of the supported management tools
-
-The [Plan deployment](deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.
+The next step when deploying Defender for Endpoint is to onboard your devices.
 
 Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-After identifying your architecture, you'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service.
-
-### Onboarding tool options
-
-The following table lists the available tools based on the endpoint that you need to onboard.
-
-|Endpoint|Deployment tool|
-|---|---|
-|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers<br><br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
-|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
-|**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
-|**Android**|[Microsoft Intune](android-intune.md)|
-|**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
-
-
-## Step 2: Configure capabilities
-After onboarding the endpoints, you'll then configure the capabilities. The following table lists the components that you can configure. Choose the components that you'd like to use and remove the ones that don't apply.
-
-| Capability | Description |
-|-|-|
-| [Endpoint Detection & Response (EDR)](overview-endpoint-detection-response.md) | Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. |
-| [Microsoft Defender Vulnerability Management (MDVM)](next-gen-threat-and-vuln-mgt.md) | Defender Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities - Invaluable device vulnerability context during incident investigations - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
-| [Next-generation protection (NGP)](microsoft-defender-antivirus-windows.md) | Microsoft Defender Antivirus is a built-in antimalware solution that provides next-generation protection for desktops, portable computers, and servers. Microsoft Defender Antivirus includes:<br> <br>-Cloud-delivered protection for near-instant detection and blocking of new and emerging threats. Along with machine learning and the Intelligent Security Graph, cloud-delivered protection is part of the next-gen technologies that power Microsoft Defender Antivirus.<br> <br> - Always-on scanning using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection").<br><br> - Dedicated protection updates based on machine learning, human and automated big-data analysis, and in-depth threat resistance research. |
-| [Attack Surface Reduction (ASR)](overview-attack-surface-reduction.md) | Attack surface reduction capabilities in Microsoft Defender for Endpoint help protect the devices and applications in the organization from new and emerging threats. |
-| [Auto Investigation & Remediation (AIR)](automated-investigations.md) | Microsoft Defender for Endpoint uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually. The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. |
-| [Microsoft Defender Experts](microsoft-threat-experts.md) | Microsoft Defender Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.      |
-
-After onboarding the endpoints, you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
+You'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. For information on the available tools based on the endpoint that you need to onboard, see [Select deployment method](../defender-endpoint/deployment-strategy.md#step-2-select-deployment-method).
 
 ## Example deployments
 
@@ -103,8 +59,8 @@ Using the mentioned deployment tools above, you'll then be guided in configuring
 - Next-generation protection configuration
 - Attack surface reduction configuration
 
-## Related topics
+## Next step
 
-- [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-configuration-manager.md)
-- [Onboarding using Microsoft Intune](onboarding-endpoint-manager.md)
-- [Safe Documents in Microsoft 365 E5](../office-365-security/safe-documents-in-e5-plus-security-about.md)
+After onboarding the endpoints proceed to Step 2 where you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction:
+
+- [Step 5 - Configure capabilities](onboard-configure.md): You're now ready to configure Defender for Endpoint security capabilities to protect your devices.
