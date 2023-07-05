@@ -36,13 +36,13 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-The next step when deploying Defender for Endpoint is to onboard your devices.
+In the previous step you decided on which deployment method to use. The deployment tool you use influences how you onboard endpoints to the service.
 
-Watch this video for a quick overview of the onboarding process and learn about the available tools and methods.
+To start onboarding your devices, go to [Select deployment method](../defender-endpoint/deployment-strategy.md#step-2-select-deployment-method) and select the tool you plan to use and follow the steps to onboard your devices.
+
+This video provides a quick overview of the onboarding process and the different tools and methods.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
-You'll need to decide which deployment method to use. The deployment tool you choose influences how you onboard endpoints to the service. For information on the available tools based on the endpoint that you need to onboard, see [Select deployment method](../defender-endpoint/deployment-strategy.md#step-2-select-deployment-method).
 
 ## Example deployments
 
