@@ -66,6 +66,4 @@ The following is a list of pre-requisites required to deploy Defender for Endpoi
 
 ## Next step
 
-After reading this article, proceed to:
-
-- [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
+Start your deployment with [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md)

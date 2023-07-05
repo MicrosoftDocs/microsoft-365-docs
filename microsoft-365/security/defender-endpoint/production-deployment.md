@@ -176,6 +176,9 @@ The following downloadable spreadsheet lists the services and their associated U
 |Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
-After reading this article, proceed to:
+After reading this article, proceed to the next step to assign roles and permissions to view and manage Defender for Endpoint.
+ to add and protect apps that access organization data.
 
-- [Step 2 - Assign roles and permissions](prepare-deployment.md): Identify and assign roles and permissions to view and manage Defender for Endpoint.
+## Next step
+
+- Continue to [Step 2 - Assign roles and permissions](prepare-deployment.md)
