@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 07/01/2023
+ms.date: 07/10/2023
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Investigate files in Microsoft Defender for Endpoint
+# Investigate a file
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,6 @@ You can get information from the following sections in the file view:
 - File details and PE metadata (if it exists)
 - Incidents and alerts
 - Observed in organization
-- Deep analysis
 - File names
 - File content and capabilities (if a file has been analyzed by Microsoft)
 
@@ -100,12 +99,6 @@ This section shows all the cloud applications where the file is observed. It als
 
 :::image type="content" source="../../media/investigate-files/investigatefiles-cloudapps.png" alt-text="Screenshot of the cloud apps page within a file" lightbox="../../media/investigate-files/investigatefiles-cloudapps.png":::
 
-## Deep analysis (need to review) 
-
-The **Deep analysis** tab allows you to [submit the file for deep analysis](respond-file-alerts.md#deep-analysis), to uncover more details about the file's behavior, as well as the effect it is having within your organizations. After you submit the file, the deep analysis report will appear in this tab once results are available. If deep analysis did not find anything, the report will be empty and the results space will remain blank.
-
-:::image type="content" source="images/submit-file.png" alt-text="The Deep analysis tab" lightbox="images/submit-file.png":::
-
 ## File names
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
@@ -115,7 +108,7 @@ The **File names** tab lists all names the file has been observed to use, within
 ## File content and capabilities
 
 > [!NOTE]
-> The file content and capabilities views depend on whether the file is detonated successfully.
+> The file content and capabilities views depend on whether Microsoft analyzed the file.
 
 The File content tab lists information about portable executable (PE) files, including process writes, process creation, network activities, file writes, file deletes, registry reads, registry writes, strings, imports, and exports. This tab also lists all the file’s capabilities.
 
@@ -124,12 +117,6 @@ The File content tab lists information about portable executable (PE) files, inc
 The file capabilities view lists a file’s activities as mapped to the MITRE ATT&CK™ techniques.
 
 :::image type="content" source="../../media/investigate-files/investigatefiles-filecapabilities.png" alt-text="Screenshot of a file's capabilities" lightbox="../../media/investigate-files/investigatefiles-filecapabilities.png":::
-
-## Action center (need to review)
-
-The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
-
-![Screenshot showing the action center](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
 
 ## Related topics
 
