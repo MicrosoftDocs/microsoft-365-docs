@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/03/2023
+ms.date: 07/05/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## July 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 
 ## June 2023
 
