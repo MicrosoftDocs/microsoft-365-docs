@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
-ms.date: 05/5/2023
+ms.date: 05/05/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -36,7 +36,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 1. In the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
 
-2. On the **Deployment insights** page, review the following areas to gather insight on your tenants’ deployment progress.
+2. On the **Deployment insights** page, review the following areas to gather insight on your tenants' deployment progress.
 
 |Area                |Description                             |
 |--------------------|----------------------------------------|
@@ -55,7 +55,7 @@ For additional solutions for common deployment issues, see [Deploying baselines]
 
 3. Select the desired tenant to see specific regressed tasks.
 
-4. Select **View tenant deployment plan** to navigate you to the tenant’s deployment plan.
+4. Select **View tenant deployment plan** to navigate you to the tenant's deployment plan.
 
 5. From the **Deployment plan** tab, select the regressed task from the list.
 
@@ -89,7 +89,7 @@ Every dismissed task and excluded user represent a potential threat. You can aud
 
 5. If a user should no longer be excluded, select **View tenant deployment plan**.
 
-6. From the tenant’s **Deployment plan** tab, select the applicable deployment task.
+6. From the tenant's **Deployment plan** tab, select the applicable deployment task.
 
 7. From the task details pane, select **Deploy**. The deployment wizard is launched.
 
