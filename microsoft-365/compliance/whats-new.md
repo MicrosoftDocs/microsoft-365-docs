@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/28/2023
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -54,6 +54,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data loss prevention
 
 - **General availability (GA)**: Oversharing Popup for Outlook Win 32. [Scenario 2 Show policy tip as oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup) and [Business justification X-Header](dlp-policy-reference.md#business-justification-x-header).
+
+### Insider risk management
+
+- **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins
+- **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
+- Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits) 
 
 ### Sensitivity labels
 
