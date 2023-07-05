@@ -32,8 +32,8 @@ Apply your company branding to customize the look of your organization's email m
 For more information about using Microsoft Purview Data Loss Prevention (DLP) policies to add customized branding to encrypted messages, see these resources.
 
 - [Exchange location actions](dlp-policy-reference.md#exchange-location-actions) for details on this action.
-- [Design a data loss prevention policy](dlp-policy-design) if you're new to DLP and want to learn more about what goes into preparing to create a DLP policy.
-- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy) for examples on how to create and deploy a DLP policy.
+- [Design a data loss prevention policy](dlp-policy-design.md) if you're new to DLP and want to learn more about what goes into preparing to create a DLP policy.
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for examples on how to create and deploy a DLP policy.
 
 The rest of this article describes using Exchange Online PowerShell.
 
