@@ -65,4 +65,4 @@ Once you have determined the architecture of your environment and have created a
 
 After choosing your Defender for Endpoint architecture and deployment method, proceed to:
 
-[Step 4 - Onboard devices](onboarding.md): Assess and onboard your devices to Defender for Endpoint.
+[Step 4 - Onboard devices](onboarding.md)

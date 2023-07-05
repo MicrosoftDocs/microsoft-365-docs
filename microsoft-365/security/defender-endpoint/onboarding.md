@@ -61,6 +61,6 @@ Using the mentioned deployment tools above, you'll then be guided in configuring
 
 ## Next step
 
-After onboarding the endpoints proceed to Step 2 where you'll then configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction:
+After onboarding the endpoints proceed to Step 4 where you'll configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction:
 
-- [Step 5 - Configure capabilities](onboard-configure.md): You're now ready to configure Defender for Endpoint security capabilities to protect your devices.
+- [Step 5 - Configure capabilities](onboard-configure.md)
