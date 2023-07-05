@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/03/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -29,7 +29,7 @@ description: "Set up Endpoint data loss prevention to monitor file activities an
 
 Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft Purview Data Loss Prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft's DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running three latest released versions. Once a device is onboarded, DLP will detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they're used and protected properly, and to help prevent risky behavior that might compromise them.
+Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running any of the three latest released versions. Once a device is onboarded, DLP detects when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they're used and protected properly, and to help prevent risky behavior that might compromise them.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,7 +46,7 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-for full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
 ### Configure proxy on the Windows 10 or Windows 11 device
 
@@ -70,26 +70,25 @@ For specific guidance to onboarding Windows devices, see:
 
 ### Endpoint DLP support for virtualized environments (preview)
 
-You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There is no change to the onboarding procedures listed above.
+You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There's no change to the onboarding procedures listed above.
 
 Here are the virtual operating systems that are supported by virtualization environments.
 
-|Virtualization </br> platform|Windows 10|Windows 11|
-|---|---|---|
-|Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>|
-|Citrix Virtual Apps and Desktops 7 (2209)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2|<ul><li>Single session supported for 21H2 (Gen2)</li><li>Multi session supported for 21H2 (Gen 2)</li></ul>|
-|Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|
-
-<!--|Amazon workspaces|<ul><li>Single session supported for 20H2, 21H1, 21H2|N/A|-->
+|Virtualization </br> platform|Windows 10|Windows 11|Windows Server 2019| Windows Server 2022</br>21H2 Data Center |
+|:---|:---|:---|:---|:---|
+|Azure virtual desktop (AVD)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session supported for 22H2</li></ul>| Supported|Supported|
+|Citrix Virtual Apps and Desktops 7 (2209)|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session supported for 20H2, 21H1, 21H2|<ul><li>Single session supported for 21H2 (Gen2)</li><li>Multi session supported for 21H2 (Gen 2)</li></ul>|Supported|Supported|
+|Amazon workspaces|<ul><li>Single session supported for 20H2, 21H1, 21H2|N/A|N/A|N/A|
+|Hyper-V|<ul><li>Single session supported for 20H2, 21H1, 21H2</li><li>Multi session with Hybrid AD join supported for 20H2, 21H1, 21H2</li></ul>|<ul><li>Single session supported for 22H2</li><li>Multi session with Hybrid AD join supported for 22H2</li></ul>|Supported with Hybrid AD join|Supported with Hybrid AD join|
 
 #### Known issues
 
-1. You cannot monitor Copy to Clipboard and Enforcing Endpoint DLP on Azure Virtual Desktop environments via browsers. However the same egress operation will be monitored by Endpoint DLP for actions via Remote Desktop Session (RDP) today.
-1. Citrix XenApp doesn't support access by unallowed app monitoring.
+1. You can't monitor **Copy to Clipboard** and **Enforcing Endpoint DLP** on Azure Virtual Desktop environments via browsers. However, the same egress operation will be monitored by **Endpoint DLP for actions via Remote Desktop Session (RDP)**.
+1. Citrix XenApp doesn't support access by restricted app monitoring.
 
 #### Limitations
 
-1. Handling of USBs in virtualized environments: USB storage devices are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts will show the **Copy to a network share** activity for all copy to USB events.
+1. Handling of USBs in virtualized environments: USB storage devices are treated as network shares. You need to include the **Copy to network share** activity to monitor **Copy to a USB device**. All activity explorer events for virtual devices and incident alerts show the **Copy to a network share** activity for all copy to USB events.
 
 ## macOS onboarding procedures
 
@@ -106,7 +105,7 @@ For specific guidance to onboarding macOS devices, see:
 |[JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md)|For macOS devices that are managed through JAMF Pro|
 |[JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them|
 
-Once a device is onboarded, it should be visible in the devices list, and also start reporting audit activity to Activity explorer.
+Once a device is onboarded, it should be visible in the devices list, and should start reporting audit activity to Activity explorer.
 
 ## See also
 

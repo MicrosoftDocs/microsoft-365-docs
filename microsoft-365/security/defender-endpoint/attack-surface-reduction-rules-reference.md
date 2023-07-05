@@ -300,11 +300,10 @@ This rule helps prevent credential stealing by locking down Local Security Autho
 
 LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows normally prevents attempts to extract credentials from LSASS. Some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
+By default the state of this rule is set to block. In most cases, many processes make calls to LSASS for access rights that are not needed. For example, such as when the initial block from the ASR rule results in a subsequent call for a lesser privilege which subsequently succeeds. For information about the types of rights that are typically requested in process calls to LSASS, see: [Process Security and Access Rights](/windows/win32/procthread/process-security-and-access-rights).
+
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
-  
-> [!IMPORTANT]
-> The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -415,7 +414,7 @@ Dependencies: Microsoft Defender Antivirus, AMSI
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
 
-Malware that abuses Office as a vector might attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique.
+Malware that abuses Office as a vector might attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique. This rule also blocks execution of untrusted files that may have been saved by Office macros that are allowed to run in Office files.
 
 Intune name: `Office apps/macros creating executable content`
 

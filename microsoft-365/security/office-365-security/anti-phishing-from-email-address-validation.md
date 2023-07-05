@@ -15,25 +15,22 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection: 
   - m365-security
   - tier2
-description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
+description: Admins can learn how Exchange Online Protection (EOP) and Outlook.com enforce email address syntax to help prevent phishing.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # How EOP validates the From address to prevent phishing
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-phishing-protection-spoofing-about.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
-
-**Notes**:
+Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-phishing-protection-spoofing-about.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com require inbound messages to include an RFC-compliant From address as described in this article.
 
 - If you regularly receive email from organizations that have malformed From addresses as described in this article, encourage these organizations to update their email servers to comply with modern security standards.
 
@@ -45,7 +42,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).
 
-- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
+- The `5322.From` address (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this article.
 
 The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 
@@ -62,61 +59,44 @@ The From address is defined in detail across several RFCs (for example, RFC 5322
   - **local-part**: A string that identifies the mailbox associated with the address. This value is unique within the domain. Often, the mailbox owner's username or GUID is used.
   - **domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.
 
-  These are some additional considerations for the EmailAddress value:
+  Also:
 
-  - Only one email address.
+  - One email address only.
   - We recommend that you don't separate the angle brackets with spaces.
-  - Don't include additional text after the email address.
+  - Don't include text after the email address.
 
-## Examples of valid and invalid From addresses
+## Examples of good and bad From addresses
 
-The following From email addresses are valid:
+The following table contains examples of valid From addresses:
 
-- `From: sender@contoso.com`
+|Address|Comments|
+|---|---|
+|`From: sender@contoso.com`|OK|
+|`From: <sender@contoso.com>`|OK|
+|`From: < sender@contoso.com >`|OK, but not recommended because there are spaces between the angle brackets and the email address.|
+|`From: "Sender, Example" <sender.example@contoso.com>`|OK|
+|`From: "Microsoft 365" <sender@contoso.com>`|OK|
+|`From: Microsoft 365 <sender@contoso.com>`|OK, but not recommended because the display name isn't enclosed in double quotation marks.|
 
-- `From: <sender@contoso.com>`
+The following table contains examples of From addresses that aren't valid:
 
-- `From: < sender@contoso.com >` (Not recommended because there are spaces between the angle brackets and the email address.)
+|Address|Comments|
+|---|---|
+|**No From address**|In the past, when Microsoft 365 or Outlook.com received a message without a From address, the service added `From: <>` to make the message deliverable. As of November 2017, messages with blank From addresses aren't accepted.|
+|`From: <firstname lastname@contoso.com>`|The email address contains a space.|
+|`From: Microsoft 365 sender@contoso.com`|The display name is present, but the email address isn't enclosed in angle brackets.|
+|`From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`|Text after the email address.|
+|`From: Sender, Example <sender.example@contoso.com>`|The display name contains a comma, but isn't enclosed in double quotation marks.|
+|`From: "Microsoft 365 <sender@contoso.com>"`|The whole value is incorrectly enclosed in double quotation marks.|
+|`From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`|The display name is present, but the email address isn't enclosed in angle brackets.|
+|`From: Microsoft 365<sender@contoso.com>`|No space between the display name and the left angle bracket.|
+|`From: "Microsoft 365"<sender@contoso.com>`|No space between the closing double quotation mark and the left angle bracket.|
 
-- `From: "Sender, Example" <sender.example@contoso.com>`
+## Suppress auto-replies to custom domains
 
-- `From: "Microsoft 365" <sender@contoso.com>`
+You can't use the value `From: <>` to suppress auto-replies. Instead, you need to set up a *null MX record* for the custom domain. After you set up the null MX record, *all* replies are naturally suppressed because there's no published address for the responding server to send messages to.
 
-- `From: Microsoft 365 <sender@contoso.com>` (Not recommended because the display name isn't enclosed in double quotation marks.)
-
-The following From email addresses are invalid:
-
-- `From: <firstname lastname@contoso.com>` (The email address contains a space.)
-
-- **No From address**: Some automated messages don't include a From address. In the past, when Microsoft 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:
-
-  `From: <>`
-
-  Now, messages with a blank From address are no longer accepted.
-
-- `From: Microsoft 365 sender@contoso.com` (The display name is present, but the email address isn't enclosed in angle brackets.)
-
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)
-
-- `From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but isn't enclosed in double quotation marks.)
-
-- `From: "Microsoft 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)
-
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address isn't enclosed in angle brackets.)
-
-- `From: Microsoft 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)
-
-- `From: "Microsoft 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)
-
-## Suppress auto-replies to your custom domain
-
-You can't use the value `From: <>` to suppress auto-replies. Instead, you need to set up a null MX record for your custom domain. Auto-replies (and all replies) are naturally suppressed because there's no published address that the responding server can send messages to.
-
-- Choose an email domain that can't receive email. For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.
-
-- The null MX record for this domain consists of a single period.
-
-For example:
+For the null MX record, choose an email domain that can't receive email. For example, if the primary domain is contoso.com, you might choose noreply.contoso.com. The null MX record for this domain consists of a single period. For example:
 
 ```text
 noreply.contoso.com IN MX .
@@ -128,10 +108,10 @@ For more information about publishing a null MX, see [RFC 7505](https://tools.ie
 
 ## Override From address enforcement
 
-To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
+To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md). Outlook.com doesn't allow overrides of any kind, even through support requests.
 
-You can't override the From address requirements for outbound email that you send from Microsoft 365. In addition, Outlook.com won't allow overrides of any kind, even through support.
+You can't override the From address requirements for outbound email that you send from Microsoft 365 or Outlook.com.
 
 ## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../business-premium/secure-your-business-data.md).
+For more information on how to strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../business-premium/secure-your-business-data.md).

@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 customer voice activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 11/10/2020
 audience: Admin

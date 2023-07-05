@@ -33,10 +33,16 @@ landingContent:
             url: model-types-overview.md
       - linkListType: learn
         links:
-          - text: Intro to Syntex
+          - text: Introduction to Syntex
             url: /training/modules/syntex-intro
           - text: Syntex on LinkedIn Learning
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
+      - linkListType: whats-new
+        links:
+          - text: Optical character recognition
+            url: ocr.md
+          - text: Prebuilt model for contracts
+            url: prebuilt-model-contract.md
 
 # Card 2
   - title: Get started
@@ -141,6 +147,8 @@ landingContent:
             url: metadata-search.md
           - text: Content processing
             url: content-processing-overview.md
+          - text: Optical character recognition
+            url: ocr.md
 
     # Card 8
   - title: Extensibility

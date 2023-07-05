@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
-ms.date: 11/29/2022
+ms.date: 05/05/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -25,7 +25,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse provides detailed information on each task within a customer deployment plan. When you view a tenant's deployment plan, all tasks for which Lighthouse can detect existing configurations will have a status assigned to them for each setting and, where applicable, each user.
 
-Each task is designated as **Compliant**, **Not compliant**, or **Not licensed**. For a definition of deployment statuses, see [Understand deployment statuses in Microsoft 365 Lighthouse](m365-lighthouse-understand-deployment-statuses.md). You can deploy, dismiss, or reinstate tasks from this view.
+By default, each task is designated as **Compliant**, **Not compliant**, or **Not licensed**. For a definition of deployment statuses, see [Understand deployment statuses in Microsoft 365 Lighthouse](m365-lighthouse-understand-deployment-statuses.md). You can deploy, dismiss, or reinstate tasks from this view.
 
 ## Before you begin
 
@@ -51,7 +51,9 @@ Additionally, each partner tenant user must meet the following requirements:
 
 4. From the task list, select a task to see more details.
 
-The task details pane provides task overview and user progress information. The Overview tab provides the following information:
+The task details pane provides an overview of the task, user progress information for the task, and a history of task status for the previous 30 days. 
+
+The Overview tab provides the following information:
 
 |Detail|Description|
 |---|---|
@@ -65,6 +67,8 @@ The task details pane provides task overview and user progress information. The 
 |For your users|Links to additional resources.|
 
 The Deployment progress tab provides user status associated with the task. Users are compliant when all settings are **Compliant** or **Extra,** and no settings are **Missing** or **Not Compliant**. No progress is reported for tasks that have been dismissed.
+
+The Detection history tab lists and shows a graphical view of each time Lighthouse has scanned the tenant to detect its configuration in the previous 30 days, providing the deployment status for the task and the number of users in each deployment status for each scan.  
 
 ## Related content
 

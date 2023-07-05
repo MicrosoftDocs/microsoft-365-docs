@@ -7,7 +7,7 @@ ms.date: 09/03/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:

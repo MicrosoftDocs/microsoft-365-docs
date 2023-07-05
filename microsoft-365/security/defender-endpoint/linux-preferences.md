@@ -63,14 +63,14 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-- Real-time (`real_time`): Real-time protection (scan files as they're accessed) is enabled.
+- Real-time (`real_time`): Real-time protection (scan files as they're modified) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
-- Passive (`passive`): Runs the antivirus engine in passive mode. In this:
-  - Real-time protection is turned off.
-  - On-demand scanning is turned on.
-  - Automatic threat remediation is turned off.
-  - Security intelligence updates are turned on.
+- [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
+  - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
+  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
+  - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
 |Description|Value|
 |---|---|
@@ -86,7 +86,6 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 <br>
 
 ****
-
 |Description|Value|
 |---|---|
 |**Key**|behaviorMonitoring|
@@ -108,6 +107,8 @@ Specifies whether to start a process scan after new security intelligence update
 #### Scan archives (on-demand antivirus scans only)
 
 Specifies whether to scan archives during on-demand antivirus scans.
+> [!NOTE]
+> Archive files are never scanned during real time protection. When the files in an archive are extracted, they are scanned. The *scanArchives* option can be used to force the scan of archives only during on-demand scan.
 
 |Description|Value|
 |---|---|
@@ -222,12 +223,16 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 #### Unmonitor Filesystems
 
-Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured are validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
+Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
+
+By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
 
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
+|**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
 #### Configure file hash computation feature
 
 Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint computes hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
@@ -372,7 +377,6 @@ This setting determines how aggressive Defender for Endpoint is in blocking and 
 |**Data type**|String|
 |**Possible values**|normal (default) <p> moderate <p> high <p> high_plus <p> zero_tolerance|
 |**Comments**|Available in Defender for Endpoint version 101.56.62 or higher.|
-  
 #### Enable / disable automatic sample submissions
 
 Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. There are three levels for controlling sample submission:
@@ -449,7 +453,7 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"real_time",
+      "enforcementLevel":"passive",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
@@ -487,7 +491,7 @@ The following configuration profile contains entries for all settings described 
          "restore"
       ],
       "nonExecMountPolicy":"unmute",
-      "unmonitoredFilesystems": ["nfs"],
+      "unmonitoredFilesystems": ["nfs,fuse"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
@@ -514,34 +518,33 @@ The following configuration profile contains entries for all settings described 
 
 When you run the `mdatp health` command for the first time, the value for the tag and group ID will be blank. To add tag or group ID to the `mdatp_managed.json` file, follow the below steps:
   
-  1. Open the configuration profile from the path `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
+1. Open the configuration profile from the path `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
   2. Go down to the bottom of the file, where the `cloudService` block is located.
   3. Add the required tag or group ID as following example at the end of the closing curly bracket for the `cloudService`.
 
-  ```JSON
-    },
-    "cloudService": {
-      "enabled": true,
-      "diagnosticLevel": "optional",
-      "automaticSampleSubmissionConsent": "safe",
-      "automaticDefinitionUpdateEnabled": true,
-      "proxy": "http://proxy.server:port/"
+```JSON
   },
-  "edr": {
-    "groupIds":"GroupIdExample",
-    "tags": [
-              {
-              "key": "GROUP",
-              "value": "Tag"
-              }
-            ]
-        }
-  }
-  ```
+  "cloudService": {
+    "enabled": true,
+    "diagnosticLevel": "optional",
+    "automaticSampleSubmissionConsent": "safe",
+    "automaticDefinitionUpdateEnabled": true,
+    "proxy": "http://proxy.server:port/"
+},
+"edr": {
+  "groupIds":"GroupIdExample",
+  "tags": [
+            {
+            "key": "GROUP",
+            "value": "Tag"
+            }
+          ]
+      }
+}
+```
 
   > [!NOTE]
   > Don't forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
-  
 ## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are many tools that can be used to verify this. For example, if you have `python` installed on your device:
@@ -571,3 +574,5 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
+
+

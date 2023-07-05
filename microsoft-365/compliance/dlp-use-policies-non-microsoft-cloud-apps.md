@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/09/2020
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to use dlp policies for non-Microsoft cloud apps.
+description: Learn how to use DLP policies for non-Microsoft cloud apps.
 ---
 
 # Use data loss prevention policies for non-Microsoft cloud apps
 
-You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
+You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect, and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -52,7 +52,7 @@ Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, y
 
 ### Connect a non-Microsoft cloud app
 
-To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
+To use a DLP policy that's scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
 
 - [Connect Box](/defender-cloud-apps/connect-box)
 - [Connect Dropbox](/defender-cloud-apps/connect-dropbox)
@@ -64,9 +64,9 @@ After you connect your cloud apps to Defender for Cloud Apps, you can create DLP
 
 ## Create a DLP policy scoped to a non-Microsoft cloud app
 
-Refer to [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for the procedures to create a DLP policy. Keep these points in mind as you configure your policy.
+Refer to [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for the procedures to create a DLP policy. Keep these points in mind as you configure your policy:
 
-- Select the turn on the **Microsoft Defender for Cloud Apps** location.
+- Turn on the **Microsoft Defender for Cloud Apps** location.
 - To select a specific app or instance, select **Choose instance**. If you don't select an instance, the policy will be scoped to all connected apps in your Microsoft Defender for Cloud Apps tenant.
 - You can select from a number of **Actions** to enforce on third party apps. To restrict third-party apps, select **Restrict Third Party Apps** and then select the specific actions.
 

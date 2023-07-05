@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 02/08/2023
+ms.date: 05/24/2023
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -31,7 +31,33 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
+[Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default. 
+
+> [!NOTE]
+> [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps keep cloud protection and other security settings from being changed. As a result, when tamper protection is enabled, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+
+## Why cloud protection should be turned on
+
+Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on, because certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. 
+
+[![alt-text="Diagram showing things that depend on cloud protection](images/mde-cloud-protection.png#lightbox)](enable-cloud-protection-microsoft-defender-antivirus.md)
+
+
+The following table summarizes the features and capabilities that depend on cloud protection: <br/><br/>
+
+| Feature/Capability  | Subscription requirement |  Description  |
+|---------|---------|--------|
+| **Checking against metadata in the cloud**. The Microsoft Defender Antivirus cloud service uses machine learning models as an extra layer of defense. These machine learning models include metadata, so when a suspicious or malicious file is detected, its metadata is checked. <br/><br/>To learn more, see [Blog: Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  | Microsoft Defender for Endpoint Plan 1 or Plan 2 (Standalone or included in a plan like Microsoft 365 E3 or E5) |   
+| **[Cloud protection and sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)**. Files and executables can be sent to the Microsoft Defender Antivirus cloud service for detonation and analysis. Automatic sample submission relies on cloud protection, although it can also be configured as a standalone setting.<br/><br/>To learn more, see [Cloud protection and sample submission in Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md). | Microsoft Defender for Endpoint Plan 1 or Plan 2 (Standalone or included in a plan like Microsoft 365 E3 or E5) | 
+| **[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)**. Tamper protection helps protect against unwanted changes to your organization's security settings. <br/><br/>To learn more, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).  | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) | 
+| **[Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)** <br/>Block at first sight detects new malware and blocks it within seconds. When a suspicious or malicious file is detected, block at first sight capabilities queries the cloud protection backend and applies heuristics, machine learning, and automated analysis of the file to determine whether it is a threat.<br/><br/>To learn more, see [What is "block at first sight"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)  | Microsoft Defender for Endpoint Plan 1 or Plan 2 (Standalone or included in a plan like Microsoft 365 E3 or E5) |   
+| **[Emergency signature updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates)**. When malicious content is detected, emergency signature updates and fixes are deployed. Rather than wait for the next regular update, you can receive these fixes and updates within minutes. <br/><br/>To learn more about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md). | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) |    
+| **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)**. EDR in block mode provides extra protection when Microsoft Defender Antivirus isn't the primary antivirus product on a device. EDR in block mode remediates artifacts found during EDR-generated scans that the non-Microsoft, primary antivirus solution might have missed. When enabled for devices with Microsoft Defender Antivirus as the primary antivirus solution, EDR in block mode provides the added benefit of automatically remediating artifacts identified during EDR-generated scans. <br/><br/>To learn more, see [EDR in block mode](edr-in-block-mode.md). | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) | 
+| **[Attack surface reduction (ASR) rules](attack-surface-reduction.md)**. ASR rules are intelligent rules that you can configure to help stop malware. Certain rules require cloud protection to be turned on in order to function fully. These rules include: <br/>- Block executable files from running unless they meet a prevalence, age, or trusted list criteria <br/>- Use advanced protection against ransomware <br/>- Block untrusted programs from running from removable drives <br/><br/>To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md). | Microsoft Defender for Endpoint Plan 1 or Plan 2 (Standalone or included in a plan like Microsoft 365 E3 or E5) |   
+| **[Indicators of compromise (IoCs)](manage-indicators.md)**. In Defender for Endpoint, IoCs can be configured to define the detection, prevention, and exclusion of entities. Examples: <br/>"Allow" indicators can be used to define exceptions to antivirus scans and remediation actions.<br/>"Alert and block" indicators can be used to prevent files or processes from executing. <br/><br/>To learn more, see [Create indicators](manage-indicators.md). | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) | 
+
+> [!TIP]
+> To learn more about Defender for Endpoint plans, see [Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## Methods to configure cloud protection
 
@@ -47,7 +73,7 @@ You can also use [Configuration Manager](/mem/configmgr/protect/deploy-use/defen
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this article. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
+> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this article. This is a legacy distinction and choosing either setting results in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
 ## Use Microsoft Intune to turn on cloud protection
 
@@ -82,9 +108,9 @@ For more information about the specific network-connectivity requirements to ens
 
     You can choose to send basic or additional information about detected software:
 
-    - Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your device. Information includes where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
+    - Basic MAPS: Basic membership sends basic information to Microsoft about malware and potentially unwanted software that has been detected on your device. Information includes where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
 
-    - Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has affected your device.
+    - Advanced MAPS: In addition to basic information, advanced membership sends detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has affected your device.
 
 6. Double-click **Send file samples when further analysis is required**. Ensure that the first option is set to **Enabled** and that the other options are set to either:
 
@@ -92,8 +118,8 @@ For more information about the specific network-connectivity requirements to ens
    - **Send all samples** (3)
 
    > [!NOTE]
-   > The **Send safe samples** (1) option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
-   > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
+   > The **Send safe samples** (1) option means that most samples are sent automatically. Files that are likely to contain personal information prompt the user for additional confirmation.
+   > Setting the option to **Always Prompt** (0) lowers the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
 7. Select **OK**.
 
@@ -110,7 +136,7 @@ For more information on how to use PowerShell with Microsoft Defender Antivirus,
 
 > [!IMPORTANT]
 > You can set **-SubmitSamplesConsent** to `SendSafeSamples` (the default, recommended setting), `NeverSend`, or `AlwaysPrompt`. 
-> The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will result in a prompt to continue and will require confirmation.
+> The `SendSafeSamples` setting means that most samples are sent automatically. Files that are likely to contain personal information result in a prompt for the user to continue, and require confirmation.
 > The `NeverSend` and `AlwaysPrompt` settings lower the protection level of the device. Furthermore, the `NeverSend` setting means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
 ## Use Windows Management Instruction (WMI) to turn on cloud protection
@@ -127,7 +153,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 ## Turn on cloud protection on individual clients with the Windows Security app
 
 > [!NOTE]
-> If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
+> If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings are greyed out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting is updated in Windows Settings.
 
 1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Windows Security**.
 
@@ -138,7 +164,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
    > [!NOTE]
-   > If automatic sample submission has been configured with Group Policy, then the setting will be greyed-out and unavailable.
+   > If automatic sample submission has been configured with Group Policy, then the setting is greyed out and unavailable.
 
 ## See also
 

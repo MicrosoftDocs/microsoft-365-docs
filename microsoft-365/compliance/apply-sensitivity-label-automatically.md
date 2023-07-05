@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 03/13/2023
+ms.date: 07/05/2023
 ms.localizationpriority: high
 ms.collection:
 - purview-compliance
@@ -55,11 +55,11 @@ There are two different methods for automatically applying a sensitivity label t
     
     Specific to auto-labeling for SharePoint and OneDrive:
     
-    - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
+    - <a name="file-extensions"></a>Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files can't be auto-labeled if they're part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they're specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 locations (SharePoint sites or OneDrive individual users or groups) when you specify specific locations by using the **Included** or **Excluded** options. If you keep the default configuration of **All**, this configuration is exempt from the 100 locations maximum.
     - Existing values for modified, modified by, and the date aren't changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -70,7 +70,9 @@ There are two different methods for automatically applying a sensitivity label t
         - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption and these files are unencrypted, they're now encrypted by using [Message encryption](ome.md). The encryption settings are inherited from the email.
     - If you have Exchange mail flow rules or Microsoft Purview Data Loss Prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there's a match by using auto-labeling.
-    - Incoming email is labeled when there is a match with your auto-labeling conditions. If this label is configured for [encryption](encryption-sensitivity-labels.md), that encryption is always applied when the sender is from your organization. By default, that encryption isn't applied when the sender is outside your organization but can be applied by configuring **Additional settings for email** and specifying a Rights Management owner.
+    - Incoming email is labeled when there's a match with your auto-labeling conditions. For this outcome to apply to senders outside your organization, the [Exchange location must be set to **All** included and **None** excluded](#incoming-email-conditions). If the label is configured for [encryption](encryption-sensitivity-labels.md):
+        - That encryption is always applied when the sender is from your organization.
+        - By default, that encryption isn't applied when the sender is outside your organization but can be applied by configuring **Additional settings for email** and specifying a Rights Management owner.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that for incoming email, this configuration can result in displaying the names of people outside your organization.
 
@@ -92,6 +94,7 @@ Use the following table to help you identify the differences in behavior for the
 |Restrict by location|No |Yes |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
+|Support for images|No |[Yes](ocr-learn-about.md) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
@@ -270,15 +273,15 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
   - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](audit-log-enable-disable.md).
-  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Matched Items** tab. Global admins don't have this role by default.
+  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups. Without the required role, you don't see the preview pane when you select an item from the **Items to review** tab. Global admins don't have this role by default.
 
 - To auto-label files in SharePoint and OneDrive:
-  - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-  - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
-
-- If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
-  - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types-activities). This restriction applies to all custom sensitive information types and any new built-in information types.
-  - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
+    - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+    - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
+    - If you plan to use [sensitive information types](sensitive-information-type-learn-about.md):
+        - The sensitive information types you select will apply only to content that's created or modified after these information types are [created or modified](audit-log-activities.md#sensitive-information-types-activities). This restriction applies to all custom sensitive information types and any new built-in information types.
+        - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
+    - <a name="document-properties"></a>If you plan to use document properties as a condition (**Document property is**), this option uses SharePoint managed properties. The [preparation for DLP policies](protect-documents-that-have-fci-or-other-properties.md#before-you-create-the-dlp-policy) equally applies for when you use this condition with auto-labeling policies.
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
@@ -316,7 +319,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to **Solutions** > **Information protection** > **Auto-labeling**:
 
     ![Auto-labeling page.](../media/auto-labeling-tab.png)
-
+    
     > [!NOTE]
     > If you don't see the **Auto-labeling** option, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
@@ -324,13 +327,16 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     ![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
 
-3. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
+3. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the search or dropdown box for countries or regions. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
 4. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-5. For the page **Assign admin units**: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+5. For the page **Assign admin units**: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), auto-labeling policies for Exchange and OneDrive can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
+    
+    > [!NOTE]
+    > If you are editing an existing policy and change the administrative units, you must now reconfigure the locations in the next step.
     
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
     
@@ -338,29 +344,32 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     > [!NOTE]
     > For organizations that are using administrative units:
-    >
-    > - If you selected the option to use administrative units in the previous step, the locations for SharePoint sites and OneDrive accounts become unavailable. Only auto-labeling policies exclusingly for Exchange support administrative units.
-    > - When you use the **Included** or **Excluded** options, you will  see and can select only users from the administrative units selected in the previous step.
+    > - If you selected the option to use administrative units in the previous step, the location for SharePoint sites becomes unavailable. Only auto-labeling policies for Exchange and OneDrive support administrative units.
+    > - When you use the **Included** or **Excluded** options, you will see and can select only users from the administrative units selected in the previous step.
     
     If you use the **Included** or **Excluded** options:
     
-    - For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
+    - <a name="incoming-email-conditions"></a>For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
         -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
     
-    - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
+    - Rolling out: For the OneDrive location, you must specify users or groups. Previously, you had to specify sites by URLs. Any existing OneDrive URL sites in auto-labeling policies will continue to work but before you can specify new OneDrive locations, or for restricted admins, you must first delete any existing site URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
 
-7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
-    
-    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including some rules that are only available for Exchange, or SharePoint sites and OneDrive accounts, select **Advanced rules**. Then select **Next**.
+
+    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), sharing options, and other conditions that are currently in preview:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
     - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
-    
-    If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
+    - Other conditions (in preview) that you can select:
+        - [Attachment or file extension is](#file-extensions)
+        - Attachment or document name contains words or phrases
+        - [Attachment or document property is](#document-properties)
+        - Attachment or document size equals or is greater than
+
+    If your location is **Exchange** and you selected **Advanced rules**, there are additional conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
-    - Attachment's file extension is
     - Attachment is password protected
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
@@ -373,8 +382,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Recipient is a member of
     - Sender is
     
-    For each of these conditions, you can then specify exceptions.
-    
+    If your location is **SharePoint sites** or **OneDrive accounts** and you selected **Advanced rules**, there is one other condition that you can select:
+    - Document created by (in preview)
+
 8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
     
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
@@ -399,13 +409,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
-Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Items to review** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
 - For a policy in the **Off** section, select the **Edit policy** button.
 
-- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab:
+- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab.
 
     ![Edit auto-labeling policy option.](../media/auto-labeling-edit.png)
 
@@ -426,12 +436,14 @@ You can also see the results of your auto-labeling policy by using [content expl
 - **Content Explorer List Viewer** role group lets you see a file's label but not the file's contents.
 - **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups let you see the file's contents.
 
+However currently, restricted admins won't be able to see labeling activities for OneDrive in activity explorer.
+
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
 
 ### Use PowerShell for auto-labeling policies
 
-You can use [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) to create and configure auto-labeling policies. This means you can fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
+You can use [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) to create and configure auto-labeling policies. This means you can fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple locations for SharePoint and OneDrive.
 
 Before you run the commands in PowerShell, you must first [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

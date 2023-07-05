@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: algreer
-ms.date: 03/10/2023
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -30,11 +30,11 @@ The Device health page provides a subset of device analytics offered through End
 
 ## Requirements
 
-Devices must be enrolled in Microsoft Intune. For more information on enrollment, see [What is Endpoint analytics?](/mem/analytics/overview) Once a device is enrolled, the Device health page will automatically populate with data. It may take up to 48 hours to see updates.
+Devices must be enrolled in Microsoft Intune. For more information on enrollment, see [What is Endpoint analytics?](/mem/analytics/overview) Once a device is enrolled, the Device health page automatically populates with data. It may take up to 48 hours to see updates.
 
 
 > [!NOTE]
-> If data doesn’t show up for a specific tenant, verify that the policy is enabled. From the tenant’s deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
+> If data doesn't show up for a specific tenant, verify that the policy is enabled. From the tenant's deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
 
 ## Overview tab
 
@@ -42,7 +42,7 @@ The Overview tab provides a multi-tenant view of device health, including the to
 
 The Overview tab also includes the following options:
 
-- **Tenant filter:** Filter by tenant or tag.
+- **Tenants filter:** Filter by tenant or tag.
 
 - **Date filter:** Filter by date range.
 
@@ -70,7 +70,7 @@ Select a device from the list for more detailed device information, including a 
 
 The Devices tab also includes the following options:
 
-- **Tenant filter:** Filter by tenant or tag.
+- **Tenants filter:** Filter by tenant or tag.
 
 - **Date filter:** Filter by date range.
 
@@ -85,4 +85,5 @@ The Devices tab also includes the following options:
 
 ## Related content
 [What is Endpoint analytics?](/mem/analytics/overview) (article)\
-[Scores, baselines, and insights in Endpoint Analytics](/mem/analytics/scores) (article)
+[Scores, baselines, and insights in Endpoint Analytics](/mem/analytics/scores) (article)\
+[Overview of the Apps page in Microsoft 365 Lighthouse](m365-lighthouse-apps-page-overview.md) (article)

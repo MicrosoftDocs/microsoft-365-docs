@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 02/27/2023
+ms.date: 06/24/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -72,7 +72,7 @@ When content has retention settings assigned to it, that content remains in its 
 - For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
-> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
+> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint, OneDrive, and Microsoft 365 groups.
 >
 These secure locations and the retained content aren't visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
@@ -193,39 +193,44 @@ Retention labels can be published to different locations, depending on what the 
 | If the retention label is... | Then the label policy can be applied to... |
 |:-----|:-----|
 |Published to admins and end users  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
-|Auto-applied based on sensitive information types or trainable classifiers  |Exchange, SharePoint, OneDrive  |
-|Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
-|Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied based on sensitive information types, keywords or a query, or trainable classifiers  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups |
+|Auto-applied to cloud attachments |SharePoint, OneDrive, Microsoft 365 Groups |
 
 Exchange public folders, Skype, Teams and Yammer messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
+Unlike [sensitivity labels](sensitivity-labels.md), you can't configure priorities for retention labels. Use the following information to understand label behavior for retention labels.
 
-- [Auto-apply label policy](apply-retention-labels-automatically.md)
-- [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
-- [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
-- [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+As with sensitivity labels, an item such as an email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
+
+- [Auto-apply retention label policy](apply-retention-labels-automatically.md)
+- [A Microsoft Syntex model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
+- [Default retention label for SharePoint or Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook)
+- [Outlook rules](create-apply-retention-labels.md#automatically-apply-a-retention-label-to-email-by-using-outlook-rules)
+- [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
+
+If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of more than one of these policies, you can't control which retention label will be selected. However, in some cases, the retention label for the oldest auto-apply retention label policy (by date created) is selected. This happens only when the matching policies don't include multiple instances of the same type of condition (sensitive information types, specific keywords or searchable properties, or trainable classifiers).
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content.
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with two possible exceptions:
-
-  - The existing label is configured to automatically apply a different retention label at the end of the retention period.
+- When items already have a retention label applied, the existing label won't be automatically removed or replaced by another retention label with the following exceptions:
     
-  - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
+    - At the end of the retention period, the existing label is configured to automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period), or the existing label is configured to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**.
     
-    For more information about the label behavior when it's applied by using a default label:
-    
-      - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-      - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+    - You use the Power Automate compliance action of **Apply a retention label on the item**. If the item already has a retention label applied, it will be replaced.
+   
+    - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed. For more information, see [Default labels for SharePoint and Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
-- If there are multiple auto-apply label policies that could apply a retention label, and content meets the conditions of multiple policies, the retention label for the oldest auto-apply label policy (by date created) is applied.
+For retention labels that mark items as a record or a regulatory record:
 
-When retention labels mark items as a record or a regulatory record, these labels are never automatically changed during their configured retention period. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- These retention labels are never automatically changed during their configured retention period, even if the existing label was applied as a default label.
+
+- Only admins for the container can manually change or remove retention labels that mark items as a record, but can't manually change or remove retention labels that mark items as a regulatory record. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+
+- At the end of the retention period, an existing label can be replaced if it's configured to mark items as a record and automatically [apply a different retention label](retention-settings.md#relabeling-at-the-end-of-the-retention-period) or to [run a Power Automate flow](retention-label-flow.md) with the compliance action of **Relabel an item at the end of retention**. You can't use these relabeling methods if the existing label is configured to mark items as a regulatory record.
 
 #### Monitoring retention labels
 
@@ -590,7 +595,7 @@ If you currently use these older features, they will usually work side by side w
 
   - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
 
-  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
 - [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
     

@@ -4,9 +4,6 @@ description: You can exclude files from scans if they've been opened by a specif
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -18,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 04/14/2023
 ---
 
 # Configure exclusions for files opened by processes
@@ -58,6 +55,9 @@ You can also use PowerShell cmdlets and WMI to configure the exclusion lists, in
 By default, local changes made to the lists (by users with administrator privileges; changes made with PowerShell and WMI) are merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence if there are conflicts.
 
 You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
+    
+> [!NOTE]
+> **Network Protection** and **Attack Surface Reduction (ASR) Rules** are directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
 
 ## Configure the list of exclusions for files opened by specified processes
 

@@ -16,58 +16,37 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom:
-description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
+description: Admins can learn how to view, create, modify, and delete Safe Links policies in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+In organizations with Microsoft Defender for Office 365, Safe Links provides URL scanning of links in messages, Microsoft Teams, and supported Office 365 apps. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
-Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients by default. Recipients who are specified in the Standard or Strict preset security policies or in custom Safe Links policies aren't affected. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-You can also use the procedures in this article to create Safe Links policies that apply to specific users, group, or domains.
+For greater granularity, you can also use the procedures in this article to create Safe Links policies that apply to specific users, group, or domains.
 
-> [!NOTE]
->
-> You configure the "Block the following URLs" list in the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](safe-links-policies-global-settings-configure.md).
->
-> Admins should consider the different configuration settings for Safe Links. One of the available options is to include user identifiable information in Safe Links. This feature enables security operations (SecOps) teams to investigate potential user compromise, take corrective action, and limit costly breaches.
-
-You can configure Safe Links policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
-
-The basic elements of a Safe Links policy are:
-
-- **The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.
-- **The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).
-
-The difference between these two elements isn't obvious when you manage Safe Links policies in the Microsoft 365 Defender portal:
-
-- When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.
-- When you modify a Safe Links policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule. All other settings modify the associated safe links policy.
-- When you remove a Safe Links policy, the safe links rule and the associated safe links policy are removed.
-
-In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) section later in this article.
+You configure Safe Links policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to policies_: Membership in one of the following role groups:
@@ -79,31 +58,29 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). As new features are added, you might need to make adjustments to your existing Safe Links policies.
+- For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
-Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates the safe links rule and the associated safe links policy at the same time using the same name for both.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. Or, to go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
+2. On the **Safe Links** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to start the new Safe Links policy wizard.
 
-2. On the **Safe Links** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
-
-3. The **New Safe Links policy** wizard opens. On the **Name your policy** page, configure the following settings:
+3. On the **Name your policy** page, configure the following settings:
 
    - **Name**: Enter a unique, descriptive name for the policy.
    - **Description**: Enter an optional description for the policy.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Name your policy** page, select **Next**.
 
-4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
+4. On the **Users and domains** page, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups (dynamic distribution groups are not supported).
+     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png"::: next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
@@ -121,47 +98,50 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    >
    > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
-   When you're finished, click **Next**.
+   When you're finished on the **Users and domains** page, select **Next**.
 
-5. On the **URL & click protection settings** page that appears, configure the following settings:
+5. On the **URL & click protection settings** page, configure the following settings:
 
    - **Email** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default**: Select this option to turn on Safe Links protection for links in email messages (URL rewriting and time of click protection). If you select this option, the following settings are available:
-       - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intra-organization messages.
+       - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning on this setting enables link wrapping for all intra-organization messages.
        - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
          - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message from external senders. The recommended setting is **On**.
        - **Do not rewrite URLs, do checks via SafeLinks API only**: Select this option to prevent URL wrapping and skip reputation check during mail flow. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
 
-     - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
+     - **Do not rewrite the following URLs in email** section: Select the **Manage (nn) URLs** link to allow access to specific URLs that would otherwise be blocked by Safe Links.
 
        > [!NOTE]
-       > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [URL allow entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-on-the-submissions-page) to override the Safe Links URL verdict.
+       > Entries in the "Do not rewrite the following URLs" list aren't scanned or wrapped by Safe Links during mail flow, but might still be blocked at time of click. Report the URL as **Should not have been blocked (False positive)** and select **Alow this URL** to add an allow entry to the Tenant Allow/Block List so the URL isn't scanned or wrapped by Safe Links during mail flow _and_ at time of click. For instructions, see [Report good URLs to Microsoft](submissions-admin.md#report-good-urls-to-microsoft).
 
-       1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
-       2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
+       1. In the **Manage URLs to not rewrite** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add URLs**.
+       2. In the **Add URLs** flyout that opens, click in the **URL** box, enter a value, and then press the ENTER key or select the complete value that's displayed below the box. Repeat this step as many times as necessary.
 
-          For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+          For URL syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
-          To remove an entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
+          To remove an entry, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
-          When you're finished, click **Save**.
+          When you're finished on the **Add URLs** flyout, select **Save**.
 
-       3. Back on the **Manage URLs to not rewrite** flyout, click **Done** or do maintenance on the list of entries:
+       3. Back on the **Manage URLs to not rewrite** flyout, the URL entries that you added are listed on the flyout.
 
-          To remove entries from the list, can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find the entry.
+          To change the list of URLs from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-          To select a single entry, click on the value in the **URLs** column.
+          Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find entries on the flyout.
 
-          To select multiple entries one at a time, click the blank area to the left of the value.
+          To add entries, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add URLs** and repeat the previous step.
 
-          To select all entries at one, click the blank area to the left of the **URLs** column header.
+          To remove entries, do either of the following steps:
 
-          With one or more entries selected, click the ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) or ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) icons that appear.
+          - Select one or more entries by selecting the round check box that appears in the blank area next to the URL value.
+          - Select all entries at once by selecting the round check box that appears in the blank area next to the **URLs** column header.
 
-          When you're finished, click **Done**.
+          With one or more entries selected, select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
+
+          When you're finished on the **Manage URLs to not rewrite** flyout, select **Done** to return to the **URL & click protection settings** page.
 
    - **Teams** section:
-     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect. This setting affects time of click protection.
+     - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in Teams. This setting might take up to 24 hours to take effect. This setting affects time of click protection.
 
    - **Office 365 apps** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten.**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps. This setting affects time of click protection.
@@ -180,94 +160,143 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
    For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-   When you're finished, click **Next**.
+   When you're finished on the **URL & click protection settings** page, select **Next**.
 
-6. On the **Notification** page that appears, select one of the following values for **How would you like to notify your users?**:
+6. On the **Notification** page, select one of the following values for **How would you like to notify your users?**:
    - **Use the default notification text**
    - **Use custom notification text**: If you select this value, the following settings appear:
      - **Use Microsoft Translator for automatic localization**
      - **Custom notification text**: Enter the custom notification text in this box (the length can't exceed 200 characters).
 
-   When you're finished, click **Next**.
+   When you're finished on the **Notification** page, select **Next**.
 
-7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+7. On the **Review** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 
-   When you're finished, click **Submit**.
+   When you're finished on the **Review** page, select **Submit**.
 
-8. On the confirmation page that appears, click **Done**.
+8. On the **New Safe Links policy created** page, you can select the links to view the policy, view Safe Links policies, and learn more about Safe Links policies.
 
-## Use the Microsoft 365 Defender portal to view Safe Links policies
+   When you're finished on the **New Safe Links policy created** page, select **Done**.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
+   Back on the **Safe Links** page, the new policy is listed.
 
-2. On the **Safe Links** page, the following properties are displayed in the list of Safe Links policies:
-   - **Name**
-   - **Status**
-   - **Priority**
+## Use the Microsoft 365 Defender portal to view Safe Links policy details
 
-3. When you select a policy by clicking on the name, the policy settings are displayed in a flyout.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
-## Use the Microsoft 365 Defender portal to modify Safe Links policies
+On the **Safe Links** page, the following properties are displayed in the list of policies:
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Policies** section \> **Safe Links**.
+- **Name**
+- **Status**: Values are **On** or **Off**.
+- **Priority**: For more information, see the [Set the priority of Safe Links policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-links-policies) section.
 
-2. On the **Safe Links** page, select a policy from the list by clicking on the name.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the Microsoft 365 Defender portal to create Safe Links policies](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) section in this article.
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific Safe Links policies.
 
-To enable or disable a policy or set the policy priority order, see the following sections.
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of policies to a CSV file.
 
-### Enable or disable Safe Links policies
+Use :::image type="icon" source="../../media/m365-cc-sc-view-reports-icon.png" border="false"::: **View reports** to open the [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
+Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy.
 
-2. On the **Safe Links** page, select a policy from the list by clicking on the name.
+> [!TIP]
+> To see details about other Safe Links policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-3. At the top of the policy details flyout that appears, you'll see one of the following values:
-   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
-   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
+## Use the Microsoft 365 Defender portal to take action on Safe Links policies
 
-4. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safealinksv2>.
 
-5. Click **Close** in the policy details flyout.
+2. On the **Safe Links** page, select the Safe Links policy by using either of the following methods:
 
-Back on the main policy page, the **Status** value of the policy will be **On** or **Off**.
+   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** dropdown list that appears:
+     - **Enable selected policies**.
+     - **Disable selected policies**.
+     - **Delete selected policies**.
 
-### Set the priority of Safe Links policies
+     :::image type="content" source="../../media/safe-links-policies-main-page.png" alt-text="The Safe Links page with a policy selected and the More actions control expanded." lightbox="../../media/safe-links-policies-main-page.png":::
 
-By default, Safe Links are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
+   - Select the policy from the list by clicking anywhere in the row other than the check box next to the name. Some or all following actions are available in the details flyout that opens:
+     - Modify policy settings by clicking **Edit** in each section (custom policies or the default policy)
+     - :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** or :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** (custom policies only)
+     - :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** or :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** (custom policies only)
+     - :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** (custom policies only)
 
-To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
+     :::image type="content" source="../../media/anti-phishing-policies-details-flyout.png" alt-text="The details flyout of a custom Safe Links policy." lightbox="../../media/anti-phishing-policies-details-flyout.png":::
 
-**Note**:
+The actions are described in the following subsections.
 
-- In the Microsoft 365 Defender portal, you can only change the priority of the Safe Links policy after you create it. In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).
-- Safe Links policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+### Use the Microsoft 365 Defender portal to modify custom Safe Links policies
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
+After you select a custom Safe Links policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Links policies](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) section earlier in this article.
 
-2. On the **Safe Links** page, select a policy from the list by clicking on the name.
+You can't modify the Safe Links policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) in the policy details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
-3. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
-   - The policy with the **Priority** value **0** has only the **Decrease priority** option available.
-   - The policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
-   - If you have three or more policies, the policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
+### Use the Microsoft 365 Defender portal to enable or disable custom Safe Links policies
 
-   Click ![Increase priority icon.](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
+You can't enable or disable the Safe Links policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) here. You enable or disable preset security policies on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
 
-4. When you're finished, click **Close** in the policy details flyout.
+After you select an enabled custom Safe Links policy (the **Status** value is **On**), use either of the following methods to disable it:
 
-## Use the Microsoft 365 Defender portal to remove Safe Links policies
+- **On the Safe Links page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Disable selected policies**.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn off** at the top of the flyout.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
+After you select a disabled custom Safe Links policy (the **Status** value is **Off**), use either of the following methods to enable it:
 
-2. On the **Safe Links** page, select a policy from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon.](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+- **On the Safe Links page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Enable selected policies**.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-turn-on-off-icon.png" border="false"::: **Turn on** at the top of the flyout.
 
-3. In the confirmation dialog that appears, click **Yes**.
+On the **Safe Links** page, the **Status** value of the policy is now **On** or **Off**.
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies
+### Use the Microsoft 365 Defender portal to set the priority of custom Safe Links policies
 
-As previously described, a Safe Links policy consists of a safe links policy and a safe links rule.
+Safe Links policies are processed in the order that they're displayed on the **Safe Links** page:
+
+- The Safe Links policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
+- The Safe Links policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
+- Custom Safe Links policies are applied next in priority order (if they're enabled):
+  - A lower priority value indicates a higher priority (0 is the highest).
+  - By default, a new policy is created with a priority that's lower than the lowest existing custom policy (the first is 0, the next is 1, etc.).
+  - No two policies can have the same priority value.
+- The Safe Links policy named **Built-in protection (Microsoft)** that's associated with Built-in protection always has the priority value **Lowest**, and you can't change it.
+
+Safe Links protection stops for a recipient after the first policy is applied (the highest priority policy for that recipient). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
+After you select the custom Safe Links policy by clicking anywhere in the row other than the check box next to the name, you can increase or decrease the priority of the policy in the details flyout that opens:
+
+- The custom policy with the **Priority** value **0** on the **Safe Links** page has the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** action at the top of the details flyout.
+- The custom policy with the lowest priority (highest **Priority** value; for example, **3**) has the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** action at the top of the details flyout.
+- If you have three or more policies, the policies between **Priority** 0 and the lowest priority have both the :::image type="icon" source="../../media/m365-cc-sc-increase-icon.png" border="false"::: **Increase priority** and the :::image type="icon" source="../../media/m365-cc-sc-decrease-icon.png" border="false"::: **Decrease priority** actions at the top of the details flyout.
+
+When you're finished in the policy details flyout, select **Close**.
+
+Back on the **Safe Links** page, the order of the policy in the list matches the updated **Priority** value.
+
+### Use the Microsoft 365 Defender portal to remove custom Safe Links policies
+
+You can't remove the Safe Links policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md).
+
+After you select the custom Safe Links policy, use either of the following methods to remove it:
+
+- **On the Safe Links page**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> **Delete selected policies**.
+- **In the details flyout of the policy**: Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete policy** at the top of the flyout.
+
+Select **Yes** in the warning dialog that opens.
+
+Back on the **Safe Links** page, the removed policy is no longer listed.
+
+## Use Exchange Online PowerShell to configure Safe Links policies
+
+In PowerShell, the basic elements of a Safe Links policy are:
+
+- **The safe links policy**: Turns on Safe Links protection, turns on real-time URL scanning, specifies whether to wait for real-time scanning to complete before delivering the message, turns on scanning for internal messages, specifies whether to track user clicks on URLs, and specifies whether to allow users to click through to the original URL.
+- **The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).
+
+The difference between these two elements isn't obvious when you manage Safe Links policies in the Microsoft 365 Defender portal:
+
+- When you create a Safe Links policy in the Defender portal, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.
+- When you modify a Safe Links policy in the Defender portal, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule. All other settings modify the associated safe links policy.
+- When you remove a Safe Links policy in the Defender portal, the safe links rule and the associated safe links policy are removed.
 
 In PowerShell, the difference between safe links policies and safe links rules is apparent. You manage safe links policies by using the **\*-SafeLinksPolicy** cmdlets, and you manage safe links rules by using the **\*-SafeLinksRule** cmdlets.
 
@@ -558,4 +587,4 @@ To verify that you've successfully created, modified, or removed Safe Links poli
   Get-SafeLinksRule -Identity "<Name>"
   ```
 
-- Use the URL <http://spamlink.contoso.com> to test Safe Links protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL is not harmful, but it will trigger Safe Links protection.
+- Use the URL `http://spamlink.contoso.com` to test Safe Links protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL isn't harmful, but it triggers a Safe Links protection response.

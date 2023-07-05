@@ -126,19 +126,29 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time
-
->[!NOTE]
->If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
-
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 
-Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
-##### Tables that support Continuous (NRT) frequency
+
+##### Continuous (NRT) frequency
+
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
+
+> [!NOTE]
+>  Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization.
+
+###### Queries you can run continuously
+
+You can run a query continuously as long as:
+- The query references one table only.
+- The query uses an operator from the list of supported KQL operators. **[Supported KQL features](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features)**
+- The query does not use joins, unions, or the `externaldata` operator.
+
+###### Tables that support Continuous (NRT) frequency
 
 Near real-time detections are supported for the following tables:
 
@@ -161,6 +171,8 @@ Near real-time detections are supported for the following tables:
 
 > [!NOTE]
 > Only columns that are generally available can support **Continuous (NRT)** frequency.
+
+
 
 ### 3. Choose the impacted entities
 
@@ -207,7 +219,9 @@ For more details on user actions, read [Remediation actions in Microsoft Defende
 
 - Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
 
-The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the query output to apply actions to email messages.
+
+The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the output results of the query to apply actions to email messages.
+
 
 ### 5. Set the rule scope
 

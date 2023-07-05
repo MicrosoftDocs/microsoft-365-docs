@@ -10,7 +10,7 @@ ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
-author: dansimp
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -74,18 +74,6 @@ To review the Suspicious Email Forwarding Activity alert, open the **Alerts** pa
 Select **Activity**  to view the details of that activity in the sidebar. Here's an example.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
-
-The **Reason** field contains the following information related to this alert.
-
-- Forwarding Type (FT) is one of the following:
-  - Exchange Transport Rule (ETR): Forwarded using and Exchange Transport Rule
-  - SMTP: Forwarded using Mailbox Forwarding
-  - InboxRule: Forwarded using an Inbox Rule
-
-- Message Trace ID (MTI): This is the identifier (NetworkMessageId) of the forwarded email that triggered this alert. NetworkMessageId is the unique identifier of an email in your organization.
-- Forwarder (F): The user who forwarded this email.
-- Suspicious Recipient List (SRL): The list of recipients considered suspicious in this email.
-- Recipient List (RL): The  list of all the recipients in this email.
 
 ## Investigation workflow
 
