@@ -45,7 +45,7 @@ The Multifactor Authentication page includes the following:
 - MFA insights
 - MFA insights by tenant
 
-:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png" alt-text="Screenshot of the Multifactor authentication page " lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png":::
+:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png" alt-text="Screenshot of the Multifactor authentication page." lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png":::
 
 ## MFA enforcement
 
@@ -110,7 +110,7 @@ Selecting any tenant from the list opens the MFA insights details pane for that 
 - Users not registered for MFA
 - Excluded users
 
-:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-detailed-pane.png" alt-text="Screenshot of MFA detailed pane" lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-detailed-pane.png":::
+:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-detailed-pane.png" alt-text="Screenshot of MFA detailed pane." lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-detailed-pane.png":::
 
 ## MFA enablement method tab
 
