@@ -147,6 +147,11 @@ Here's the descriptions of the pre-collection estimate management options.
         - Include subfolder contents (inside subfolders of a matched folder)
         - Include files in SharePoint lists (and their child items)
 
+        To export Teams messages as individual messages when exporting collected items, unselect **Teams and Yammer conversations**. This exports conversations as individual messages and not as conversation threads.
+
+          > [!NOTE]
+          > The **Teams and Yammer conversations** setting is selected by default. If selected, exported items contain Teams conversation threads related to the matched search.
+
     - **How to format emails**: Choose an option of how collected emails should be formatted:
 
         - Individual .pst files for each mailbox
