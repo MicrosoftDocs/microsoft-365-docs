@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 06/01/2023
+  ms.date: 06/29/2023
   ms.reviewer: efratka, jomaun
   f1.keywords: NOCSH 
   ms.collection: 
@@ -50,16 +50,14 @@ sections:
         answer: |
           You can onboard and secure up to five client devices per user license.
 
-          If you have servers, you'll need the [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers) add-on.
+          If you have servers, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
           
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
           Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
-          - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
+          - You can onboard Windows and Mac client devices using a local script in the Microsoft 365 Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/) or [mobile threat defense capabilities](mdb-mtd.md) (preview) in Defender for Business.
-
-          More simplification for Mac, iOS/iPadOS, and Android devices is on the roadmap. 
 
       - question: Does Defender for Business support servers? 
         answer: |
@@ -149,9 +147,9 @@ sections:
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
-          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan license. What happens if you have a mix of subscriptions like this example in your tenant?*
+          *Suppose you have assigned 10 users a Defender for Business license, 10 other users a Defender for Endpoint Plan 1 license, and 5 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          Currently, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide, even if you have Defender for Endpoint licenses in your tenant. If you have a mix of Defender for Business and Defender for Endpoint Plan licenses, all users and onboarded devices will receive Defender for Business capabilities. Note that Defender for Business was designed especially for small and medium-sized businesses, and includes more security features and capabilities than Defender for Endpoint Plan 1 (standalone). 
+          Currently, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide, even if you have Defender for Endpoint licenses in your tenant. If you have a mix of Defender for Business and Defender for Endpoint licenses, all users and onboarded devices will receive Defender for Business capabilities.  
           
           For more information, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2). For more information about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
