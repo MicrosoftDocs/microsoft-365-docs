@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 07/05/2023
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -52,7 +52,7 @@ You can see information from the following sections in the URL and domain view:
 
 - Most recent clicks to the URL or domain
 
-:::image type="content" source="../../media/investigate-urls/investigate-url-overview.png" alt-text="The main URL/domain page" lightbox="media/investigate-urls/investigate-url-overview.png":::
+:::image type="content" source="../../media/investigate-urls/investigate-url.png" alt-text="The main URL/domain page" lightbox="media/investigate-urls/investigate-url.png":::
 
 ## Domain entity
 
@@ -102,7 +102,7 @@ Using the export button above the table, you can export all the data into a .csv
 
 The Emails tab provides a detailed view of all the emails observed in the last 30 days that contained the URL or domain. This tab includes a trend chart and a customizable table listing email details, such as subject, sender, recipient, and more.
 
-:::image type="content" source="../../media/investigate-urls/investigate-url-emails.png" alt-text="The email tab for investigating a URL/domain" lightbox="media/investigate-urls/investigate-url-emails.png":::
+:::image type="content" source="../../media/investigate-urls/investigate-url-email-view.png" alt-text="The email tab for investigating a URL/domain" lightbox="media/investigate-urls/investigate-url-email-view.png":::
 
 ## Clicks
 
@@ -125,7 +125,7 @@ The Clicks tab provides a detailed view of all the clicks to the URL or domain o
 **
 6. If you disagree with the verdict of a URL or domain, you can report it to Microsoft as *clean*, *phishing*, or *malicious* by selecting **Submit to Microsoft for analysis.
 
-:::image type="content" source="../../media/investigate-urls/investigate-url-submit.png" alt-text="Submit for analysis option in the URL/domain page" lightbox="media/investigate-urls/investigate-url-submit.png":::
+:::image type="content" source="../../media/investigate-urls/investigate-url-submission.png" alt-text="Submit for analysis option in the URL/domain page" lightbox="media/investigate-urls/investigate-url-submission.png":::
 
 ## Related articles
 
