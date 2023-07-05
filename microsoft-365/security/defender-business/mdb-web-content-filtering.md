@@ -4,7 +4,7 @@ description: Learn how to set up, view, and edit your web content filtering poli
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 06/20/2023
+ms.date: 06/28/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -30,15 +30,15 @@ In Defender for Business, you can have one web content filtering policy and it's
 
 ## Set up web content filtering
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Rules** > **Web content filtering**, and then select **+ Add policy**.
 
 2. Specify a name and description for your policy.
 
-3. Select the categories to block. Use the expand icon to fully expand each parent category, and then select specific web content categories. To set up an audit-only policy that doesn't block any websites, don't select any categories.
+3. Select the [categories](#categories-for-web-content-filtering) to block (do not select **Uncategorized**). Use the expand icon to fully expand each parent category, and then select specific web content categories. 
 
-   Don't select **Uncategorized**.
+   To set up an audit-only policy that doesn't block any websites, don't select any categories. 
 
-4. Apply the policy to all users.
+4. Apply the policy to all users. (Scoping to specific devices is not available in Defender for Business.)
 
 5. Review the summary and save the policy. The policy refresh might take up to two hours to apply to your selected devices.
 
@@ -47,7 +47,9 @@ In Defender for Business, you can have one web content filtering policy and it's
 
 ## Categories for web content filtering
 
-Not all websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. You can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
+Not all websites in the categories that are listed below are malicious; however, these websites could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. 
+
+You can start with an audit-only policy to get a better understanding of whether your security team should block any website categories, and edit your policy later.
 
 The following table describes web content categories you can choose for your web content filtering policy:
 
@@ -57,7 +59,7 @@ The following table describes web content categories you can choose for your web
 | **High bandwidth** | Download sites, image sharing sites, or peer-to-peer hosts |
 | **Legal liability** | Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities |
 | **Leisure** | Sites that provide web-based chat rooms, online gaming, web-based email, or social networking |
-| **Uncategorized** | Sites that have no content or that are newly registered |
+| **Uncategorized** | Sites that have no content or that are newly registered. <br/><br/>*As a best practice, do not select **Uncategorized**.* |
 
 
 ## Next steps

@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint on Android, which already protects enterprise us
 
 Microsoft Defender for Endpoint on Android threat information is applied by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.
 
-Microsoft Defender for Endpoint on Android supports both the configurations of MAM.
+Microsoft Defender for Endpoint on Android supports both the configurations of MAM. 
 
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/apps/app-protection-policy) on devices not enrolled with Intune MDM. This provision means that apps can be managed by Intune on devices enrolled with third-party EMM providers.
@@ -104,6 +104,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
      Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action: "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
+
      :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
 
 - **Assign user groups for whom the policy needs to be applied.**
@@ -111,6 +112,10 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
   Select **Included groups**. Then add the relevant groups.
 
     :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal." lightbox="images/assignment.png":::
+>[!NOTE]
+>If a config policy is to be targeted at unenrolled devices (MAM), the recommendation is to deploy the general app configuration settings in Managed Apps instead of using Managed Devices. 
+>When deploying app configuration policies to devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. These issues are due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent these issues by ensuring that only a single app configuration policy for devices is defined and targeted for the same app and user.
+
 
 ## End-user prerequisites
 
@@ -195,12 +200,18 @@ Admins can use the following steps to enable privacy and not collect the domain 
 1. Give the policy a **name**.
 
 1. Under the Select Public Apps, choose **Microsoft Defender for Endpoint** as the target app.
+4. On the Settings page, under General Configuration Settings, add **DefenderExcludeURLInReport** and **DefenderExcludeAppInReport** as the keys and value as 1. 
+
+1. Add **DefenderMAMConfigs** key and set the value as 1.
+
+5. Assign this policy to users. By default, this value is set to 0.
 
 1. In Settings page, under the General Configuration Settings add **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** as the keys and value as true.
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 1. Assign this policy to users. By default, this value is set to false.
+
 
 1. Review and create the policy.
 
@@ -218,12 +229,21 @@ Use the following steps to enable Optional permissions for devices.
 
 1. Select **Microsoft Defender for Endpoint** in public apps.
 
+
+4. On the Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key. 
+
+1. Add **DefenderMAMConfigs** key and set the value as 1.
+
+5. To enable Optional permissions, enter the value as **1** and assign this policy to users. By default, this value is set to 0.
+For users with key set as 1, they will be able to onboard the app without giving these permissions.
+
 1. In Settings page, select **Use configuration designer** and **DefenderOptionalVPN** or **DefenderOptionalAccessibility** or **both** as the key and value type as Boolean.
 
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 1. To enable Optional permissions, enter value as **true** and assign this policy to users. By default, this value is set to false.
 For users with key set as true, the users are able to onboard the app without giving these permissions.
+
 
 1. Select **Next** and assign this profile to targeted devices/users.
 
