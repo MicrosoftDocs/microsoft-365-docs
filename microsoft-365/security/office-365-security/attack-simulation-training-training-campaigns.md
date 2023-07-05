@@ -109,8 +109,7 @@ On the **Target users** page, select who receives the Training campaign. Use the
 
     > [!NOTE]
     > Only Microsoft 365 groups are eligible to be selected.
-
-    > [!NOTE]
+    >
     > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
 
     When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
