@@ -57,9 +57,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Insider risk management
 
-- **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins
+- **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins.
 - **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
-- Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits) 
+- Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits). 
 
 ### Sensitivity labels
 
