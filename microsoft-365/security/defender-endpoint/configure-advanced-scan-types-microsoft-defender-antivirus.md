@@ -76,9 +76,9 @@ For details on configuring Microsoft Configuration Manager (current branch), see
 |Configure low CPU priority for scheduled scans <p> **Scan** \> **Configure low CPU priority for scheduled scans**|Disabled|Not available|
 
 > [!NOTE]
-> Scan packed executables have been removed from the below templates
-> 1) Administrative Templates (.admx) for Windows 11 2022 Update (22H2)
-> 2) Administrative Templates (.admx) for Windows 11 October 2021 Update (21H2)
+> Scan packed executables have been removed from the following templates:
+> - Administrative Templates (.admx) for Windows 11 2022 Update (22H2)
+> - Administrative Templates (.admx) for Windows 11 October 2021 Update (21H2)
 
 > [!NOTE]
 > If real-time protection is turned on, files are scanned before they are accessed and executed. The scanning scope includes all files, including files on mounted removable media, such as USB drives. If the device performing the scan has real-time protection or on-access protection turned on, the scan will also include network shares.
