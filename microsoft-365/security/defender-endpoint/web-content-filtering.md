@@ -126,7 +126,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 **Child abuse images**: Sites that include child abuse images or pornography.
 
-**Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities.
+**Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.
 
 **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.
 
