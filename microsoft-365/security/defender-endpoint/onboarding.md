@@ -24,7 +24,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# ## Onboard devices using any of the supported management tools
+# Onboard devices using any of the supported management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
