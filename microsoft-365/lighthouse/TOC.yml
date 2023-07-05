@@ -62,6 +62,8 @@
   items:
     - name: Overview of the Users page
       href: m365-lighthouse-users-page-overview.md
+    - name: Overview of the Multifactor authentication page
+      href: m365-lighthouse-mfa-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
     - name: Block sign-in for shared mailbox accounts
