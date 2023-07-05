@@ -106,6 +106,8 @@ On the **Target users** page, select who receives the Training campaign. Use the
     - Type fewer than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
     The number of results appears in the **Selected (0/x) users** label.
+    > [!NOTE]
+    > Only Microsoft 365 groups are eligible to be selected.
 
     > [!NOTE]
     > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
