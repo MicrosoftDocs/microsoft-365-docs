@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 10/14/2022
+ms.date: 07/04/2023
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,22 @@ ms.custom:
 - seo-marvel-jun2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-description: Learn how Microsoft 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
+description: Learn how Microsoft 365 global administrators can apply your organization's branding to encrypted email messages & the contents of the encryption portal.
 ---
 
 # Add your organization's brand to your Microsoft Purview Message Encryption encrypted messages
 
-Apply your company branding to customize the look of your organization's email messages and the encryption portal. You'll need to apply global administrator permissions to your work or school account before you can get started. Use the Get-OMEConfiguration and Set-OMEConfiguration cmdlets in Exchange Online PowerShell to customize these parts of encrypted email messages:
+Apply your company branding to customize the look of your organization's email messages and the encryption portal. You need to apply global administrator permissions to your work or school account before you can get started. You customize branding in one of two ways, using Exchange Online PowerShell or Microsoft Purview Data Loss Prevention (DLP) policies.
+
+For more information about using Microsoft Purview Data Loss Prevention (DLP) policies to add customized branding to encrypted messages, see these resources.
+
+- [Exchange location actions](dlp-policy-reference.md#exchange-location-actions) for details on this action.
+- [Design a data loss prevention policy](dlp-policy-design) if you're new to DLP and want to learn more about what goes into preparing to create a DLP policy.
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy) for examples on how to create and deploy a DLP policy.
+
+The rest of this article describes using Exchange Online PowerShell.
+
+Use the Get-OMEConfiguration and Set-OMEConfiguration cmdlets in Exchange Online PowerShell to customize these parts of encrypted email messages:
 
 - Introductory text
 - Disclaimer text
@@ -46,7 +56,7 @@ If you'd like more control, use Microsoft Purview Advanced Message Encryption to
 - Whether you want to allow emails to be revoked
 - Whether you want emails sent to external recipients to expire after a specified number of days.
 
-Once you've created the templates, apply them to encrypted emails sent from your online mailbox by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you've branded.
+Once you've created the templates, apply them to encrypted emails sent from your online mailbox by using Exchange mail flow rules. If you have Microsoft Purview Advanced Message Encryption, you can revoke any email that you have branded.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -146,12 +156,12 @@ To remove a custom branding template:
 > [!IMPORTANT]
 > Third-party applications that scan and modify mail can prevent branding from being applied correctly.
 
-After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule will apply custom branding to mail sent from your online mailbox in the following scenarios:
+After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Most importantly, the email must be encrypted. Such a rule applies custom branding to mail sent from your online mailbox in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
 - If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
 
-To ensure Microsoft Purview Message Encryption applies your custom branding, set up a mail flow rule to encrypt your messages. The priority of the encryption rule should be higher than the branding rule so that the encryption rule is processed first. By default, if you create the encryption rule before the branding rule, then the encryption rule will have a higher priority. For information, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md). For information on setting the priority of a mail flow rule, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+To ensure Microsoft Purview Message Encryption applies your custom branding, set up a mail flow rule to encrypt your messages. The priority of the encryption rule should be higher than the branding rule so that the encryption rule is processed first. By default, if you create the encryption rule before the branding rule, then the encryption rule has a higher priority. For information, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md). For information on setting the priority of a mail flow rule, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -171,7 +181,7 @@ To ensure Microsoft Purview Message Encryption applies your custom branding, set
 
 7. If you've already defined a mail flow rule to apply encryption, skip this step. Otherwise, to configure the mail flow rule to apply encryption, from **Do the following**, select **Modify the message security**, and then select **Apply Office 365 Message Encryption and rights protection**. Select a Rights Management Service (RMS) template from the list and then select **add action**.
 
-   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **Encrypt Only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption. For instructions, see [Set up Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see the [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **Encrypt Only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. From **Do the following**, select **Modify the message security** \> **Apply custom branding to OME messages**. Next, from the drop-down, select a branding template.
 
