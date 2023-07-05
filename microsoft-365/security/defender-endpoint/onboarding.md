@@ -46,18 +46,14 @@ You'll need to decide which deployment method to use. The deployment tool you ch
 
 ## Example deployments
 
-In this deployment guide, we'll guide you through using two deployment tools to onboard endpoints and how to configure capabilities.
+To provide some guidance on your deployments, in this section we'll guide you through using two deployment tools to onboard endpoints.
 
 The tools in the example deployments are:
 
 - [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Intune](onboarding-endpoint-manager.md)
 
-Using the mentioned deployment tools above, you'll then be guided in configuring the following Defender for Endpoint capabilities:
-
-- Endpoint detection and response configuration
-- Next-generation protection configuration
-- Attack surface reduction configuration
+The example deployments will guide you on configuring some of the Defender for Endpoint capabilities, but you'll find more detailed information on configuring Defender for Endpoint capabilities in the [next step](#next-step).
 
 ## Next step
 
