@@ -1,11 +1,11 @@
 ---
-title: "Get started with the Microsoft Purview Firefox Extension"
+title: "Get started with the Microsoft Purview extension for Firefox"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -20,20 +20,20 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy the Microsoft Purview Firefox Extension."
+description: "Prepare for and deploy the Microsoft Purview extension for Firefox."
 ---
 
-# Get started with Microsoft Purview Firefox Extension
+# Get started with the Microsoft Purview extension for Firefox
 
-Use these procedures to roll out the Microsoft Purview Firefox Extension.
+Use these procedures to roll out the Microsoft Purview extension for Firefox.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
-To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use the Microsoft Purview extension for Firefox, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extension-learn.md)
+- [Learn about Microsoft Purview extension for Firefox](dlp-firefox-extension-learn.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -55,7 +55,7 @@ Before you get started, you should confirm your [Microsoft 365 subscription](htt
 
 For detailed licensing guidance, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-- Your org must be licensed for Endpoint DLP
+- Your organization must be licensed for Endpoint DLP
 - Your devices must be running Windows 10 x64 build 1809 or later.
 - The device must have Antimalware Client Version is 4.18.2202.x or later. Check your current version by opening **Windows Security** app, select the **Settings** icon, and then select **About**.
 
@@ -83,7 +83,7 @@ Here's a list of applicable roles. To learn more about them, see [Permissions in
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more about these role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -160,7 +160,7 @@ After ingesting the ADMX, the steps below can be followed to create a configurat
                 } 
             }'/> `
 
-9.  Note: It is critical that updates_disabled is set to false so that the extension can automatically update over time. 
+9.  Note: It is critical that `updates_disabled` is set to `false` so that the extension can automatically update over time.
 
 10. Click create.
 
@@ -168,7 +168,7 @@ After ingesting the ADMX, the steps below can be followed to create a configurat
 
 If you don't want to use Microsoft Intune, you can use group policies to deploy the extension across your organization.
 
-#### Adding the Chrome Extension to the ForceInstall List
+#### Adding the Firefox extension to the ForceInstall List
 
 1. In the Group Policy Management Editor, navigate to your OU.
 
@@ -186,7 +186,7 @@ If you don't want to use Microsoft Intune, you can use group policies to deploy 
 
 8. Select **OK** and then **Apply**.
 
-### Test the Extension
+### Test the extension
 
 #### Upload to cloud service, or access by unallowed browsers Cloud Egress
 
@@ -202,8 +202,8 @@ Now that you’ve removed Firefox from the disallowed browsers/apps list, you ca
 - Print a document
   - To test, open a file that is protected against print actions in the Firefox browser and attempt to print the file.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
-- Copy to USB Removeable Media
-  - To test, try to save the file to a removeable media storage.
+- Copy to USB Removable Media
+  - To test, try to save the file to a removable media storage.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to Network Share
   - To test, try to save the file to a network share.

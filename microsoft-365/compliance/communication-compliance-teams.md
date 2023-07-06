@@ -8,7 +8,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: anwara
-ms.date: 04/17/2023
+ms.date: 06/30/2023
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -44,7 +44,7 @@ Communication compliance and Microsoft Teams are tightly integrated and can help
 
 ### Getting started
 
-Getting started with communication compliance in Microsoft Teams begins with [planning](communication-compliance-plan.md) and creating pre-defined or custom policies to identify inappropriate user activities in Teams channels or in 1:1 and groups. Keep in mind that you'll need to [configure](communication-compliance-configure.md) some permissions and basic prerequisites as part of the configuration process.
+Getting started with communication compliance in Microsoft Teams begins with [planning](communication-compliance-plan.md) and creating predefined or custom policies to identify inappropriate user activities in Teams channels or in 1:1 and groups. Keep in mind that you'll need to [configure](communication-compliance-configure.md) some permissions and basic prerequisites as part of the configuration process.
 
 Teams administrators can configure communication compliance policies at the following levels:
 
@@ -67,7 +67,7 @@ In the next dialog box, the user selects the **Inappropriate - Harassment, viole
 ![Report a message choices.](../media/communication-compliance-report-message-choices.png)
 
 > [!NOTE]
-> The other choice in the list (**Security risk- Spam, phishing, malicious content**), if available, is managed by Microsoft Defender for Office 365. The user might also be presented with just the **Inappropriate - Harassment, violence, nudity, and disturbing content** option, depending on which policy options are turned on in the Microsoft Teams admin center. 
+> The other choice in the list (**Security risk- Spam, phishing, malicious content**), if available, is managed by Microsoft Defender for Office 365. The user might also be presented with just the **Inappropriate - Harassment, violence, nudity, and disturbing content** option, depending on which policy options are turned on in the Microsoft Teams admin center. [Learn more about the Microsoft Defender for Office setting](https://go.microsoft.com/fwlink/?linkid=2226727)
 
 After submitting the message for review, the user receives a confirmation of the submittal in Microsoft Teams. Other participants in the chat do not see this notification.
 
