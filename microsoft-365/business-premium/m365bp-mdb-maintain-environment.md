@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 06/29/2023
+ms.date: 06/30/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -304,4 +304,6 @@ The following table summarizes remediation actions that are available in Defende
 
 ## See also
 
-[Security incident management](m365bp-security-incident-management.md)  
+- [Security incident management](m365bp-security-incident-management.md)  
+- [Reports in Defender for Business](../security/defender-business/mdb-reports.md)
+- [Microsoft 365 for business security best practices](secure-your-business-data.md)
