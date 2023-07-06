@@ -36,7 +36,7 @@ Monitoring provides you with information about incidents and advisories that are
 
 Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
-[![The Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
+[![Screenshot of the Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
 
 If Microsoft 365 monitoring discovers issues that need your attention, these will be show under the **Issues in your environment that require action** in the Active Issues section of the page.
 
@@ -44,7 +44,7 @@ To access detailed monitoring pages for specific services, select **View** under
 
 Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
 
-![Organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
+![Screenshot of organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
 
 With the scenario list page, you can see whether the Microsoft service is healthy or not and whether there are any associated incidents or advisories. For example, with Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios, if available.
 
@@ -78,7 +78,7 @@ There are two ways you can provide feedback:
 
 - Submit feedback using the **Is this post helpful? link for a specific incident or advisory.
 
-  ![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![Screenshot of the "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 
