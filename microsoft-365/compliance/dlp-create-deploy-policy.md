@@ -365,10 +365,10 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 
 |Parameter|	Configuration|
 |---------|---------|
-|[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule.md#-contentcontainssensitiveinformation)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
-|[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule.md#-exceptifrecipientdomainis)|	List of trusted domains.|
-|[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyallowoverride)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
-|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
+|[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-contentcontainssensitiveinformation)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
+|[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-exceptifrecipientdomainis)|	List of trusted domains.|
+|[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyallowoverride)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
+|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
 |
 
 To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
