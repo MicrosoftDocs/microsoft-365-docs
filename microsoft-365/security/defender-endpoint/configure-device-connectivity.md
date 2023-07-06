@@ -38,8 +38,8 @@ To simplify the configuration of network requirements and ease management, you n
 
 Alternatively, you can now configure connectivity using dedicated static IP ranges for Microsoft Defender for Endpoint. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
-> [!NOTE] 
-> The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
+>[!NOTE] 
+>The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
 Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
 
