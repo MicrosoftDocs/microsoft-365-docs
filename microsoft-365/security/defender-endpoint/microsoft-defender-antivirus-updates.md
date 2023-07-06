@@ -97,14 +97,14 @@ All our updates contain
 ### What's new  
 
 - Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps) if scan results fail to retrieve
-- Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and/or [PowerShell](/powershell/module/defender/set-mppreference).
-- Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions if present
+- Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and [PowerShell](/powershell/module/defender/set-mppreference).
+- Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions, if present
 - Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
-- Fixed warn notifications for [ASR rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
+- Fixed warn notifications for two [ASR rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
 - Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a non-elevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
-- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) (showing as exposed in the Microsoft 365 Defender portal)
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
 - Fixed [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) management for customers who have Microsoft 365 E3 or Defender for Endpoint Plan 1
-- Fixed performance issue when building and validating Defender cache
+- Fixed a performance issue when building and validating Defender cache
 - Improved performance by removing redundant exclusion checks
  
 ### Known Issues  
