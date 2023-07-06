@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -77,4 +78,3 @@ If you want to move some of your personal data over to your new business identit
 2. To import the information stored in the PST file into your Microsoft 365 for business email account, have each user complete the steps in [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
     
 ---
-

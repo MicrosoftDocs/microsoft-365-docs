@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -49,13 +49,13 @@ Complete the following prerequisites before you can set up and configure a conne
 
 - The Twitter connector can import a total of 200,000 items in a single day. If there are more than 200,000 Twitter items in a day, none of those items will be imported to Microsoft 365.
 
-- The user who sets up the Twitter connector in the compliance portal (in Step 5) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who sets up the Twitter connector in the compliance portal (in Step 5) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom Microsoft Purview role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-microsoft-purview-role-group).
 
 ## Step 1: Create an app in Azure Active Directory
 
 The first step is to register a new app in Azure Active Directory (AAD). This app corresponds to the web app resource that you implement in Step 2 for the Twitter connector.
 
-For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).
+For step-by-step instructions, see [Create an app in Azure Active Directory](archive-twitter-data.md#step-1-create-an-app-in-azure-active-directory).
 
 During the completion of this step (by following the step-by-step instructions), you'll save the following information to a text file. These values will be used in later steps in the deployment process.
 
@@ -75,7 +75,7 @@ To deploy the source code for the Twitter connector app:
 
 2. Select **Deploy to Azure**.
 
-For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](archive-twitter-data.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 While you follow the step-by-step instructions to complete this step, you provide the following information
 
@@ -89,7 +89,7 @@ After completing this step, be sure to copy the app Service URL (for example, `h
 
 The next step is to create and configure a developer app on Twitter. The custom connector that you create in Step 7 uses the Twitter app to interact with the Twitter API to obtain data from your organization's Twitter account.
 
-For step-by-step instructions, see [Create the Twitter app](deploy-twitter-connector.md#step-3-create-the-twitter-app).
+For step-by-step instructions, see [Create the Twitter app](archive-twitter-data.md#step-3-create-the-twitter-app).
 
 During the completion of this step (by following the step-by-step instructions), you save the following information to a text file. These values will be used to configure the Twitter connector app in Step 4.
 
@@ -105,7 +105,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The next step is to add configurations settings to the Twitter connector app that you deployed in Step 2. You do this by going to the home page of your connector app and configuring it.
 
-For step-by-step instructions, see [Configure the connector web app](deploy-twitter-connector.md#step-4-configure-the-connector-web-app).
+For step-by-step instructions, see [Configure the connector web app](archive-twitter-data.md#step-4-configure-the-connector-web-app).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the previous steps):
 
@@ -125,7 +125,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the Twitter connector in the compliance portal that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.
 
-For step-by-step instructions, see [Set up a Twitter connector in the Microsoft Purview compliance portal](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
+For step-by-step instructions, see [Set up a Twitter connector in the Microsoft Purview compliance portal](archive-twitter-data.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 

@@ -1,10 +1,11 @@
 ---
-title: "Microsoft Purview Compliance Manager templates list"
+title: "Microsoft Purview Compliance Manager regulations list"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 05/04/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,67 +18,47 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
+description: "Find the list of regulatory templates provided in Microsoft Purview Compliance Manager for creating assessments."
 ---
 
-# Compliance Manager templates list
+# Compliance Manager regulations list
 
-**In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
+**In this article:** View the comprehensive list of **regulations** available to build assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The regulations that are available for your organization's use by default depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview
 
-[Microsoft Purview Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+Compliance Manager provides a comprehensive set of regulatory templates for creating assessments. These **regulations**, as they're referred to in Compliance Manager, can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. Regulations are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its regulations when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
-Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
+## List of regulations and where to find them
 
-## List of templates and where to find them
+Below is the complete list of regulations in Compliance Manager. In Compliance Manager, go to the **Regulations** tab, and select a regulation's name to view its description, properties, controls, and associated improvement actions. Jump to a section below to view templates by area or industry:
 
-Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Find all templates in Compliance Manager on the **Assessment templates** tab. Select a template name to view the template's description, properties, controls, and associated improvement actions.
-
-Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. Templates that correspond to a regulation which has multiple levels or versions are treated as a single template.
-
-Jump to a section below to view templates by area or industry:
 - [Global](#global)
 - [Industry](#industry)
 - [US Government](#us-government)
 - [US States and Territories](#us-states-and-territories)
-- [Asia-Pacific Countries](#asia-pacific-countries)
+- [Asia-Pacific Countries/Regions](#asia-pacific-countriesregions)
 - [Europe, Middle East, and Africa (EMEA)](#europe-middle-east-and-africa-emea)
 - [Latin America](#latin-america)
 - [North America](#north-america)
 - [South America](#south-america)
 
-## Included templates
+## Included regulations
 
-Some assessment templates are included in Compliance Manager by default, depending on subscription level:
+Some regulations are included in Compliance Manager by default, depending on subscription level:
 
-- **Customers at all subscription levels**: The [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) template is included for all organizations as part of their subscription.
-- **Customers at the A5/E5/G5 subscription levels**: In addition to the Microsoft Data Protection baseline, you can choose any three premium templates to use for free.
-- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: The Cybersecurity Maturity Model Certification (CMMC) template, levels 1 through 5, is included in addition to the Microsoft Data Protection Baseline template.
+- **Customers at all subscription levels**: The [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) is included for all organizations as part of their subscription.
+- **Customers at the A5/E5/G5 subscription levels**: In addition to the Microsoft Data Protection baseline, you can choose any three premium regulations to use for free.
+- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: Cybersecurity Maturity Model Certification (CMMC), levels 1 through 5, is included in addition to the Microsoft Data Protection Baseline.
 
-#### Preview templates
+## Premium regulations
 
-The templates listed below are available in preview. Creating assessments from these templates won't count toward your total of licensed templates used.
-
-- ISO 27001:2013 for Azure (Preview)
-- ISO 27001:2013 for Dynamics 365 (Preview)
-- FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP Moderate for Azure (Preview)
-- FedRAMP High for Azure (Preview)
-- FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 for Azure (Preview)
-- SOC 2 for Dynamics 365 (Preview)
-- ISO 27018:2019 for Azure (Preview)
-- ISO 27018:2019 for Dynamics 365 (Preview)
-
-## Premium templates
-
-The templates listed below may be purchased by your organization. Certain licensing agreements allow for the use of three premium templates for free. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+The regulatory templates listed below may be purchased by your organization. Certain licensing agreements allow for the use of three premium regulations for free. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ### Global
 
@@ -265,7 +246,7 @@ The templates listed below may be purchased by your organization. Certain licens
 
 ### Regional
 
-#### Asia-Pacific Countries
+#### Asia-Pacific Countries/Regions
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8  
@@ -391,13 +372,16 @@ The templates listed below may be purchased by your organization. Certain licens
 - Romania - Data Protection Law 190/2018  
 - Russia - Federal Law 149-FZ On Information, Information Technology and Information Security
 - [Russian Federation Federal Law Regarding Personal Data](/compliance/regulatory/offering-russia-data-localization)  
+- Saudi Arabia - Saudi Arabia Monetary Authority (SAMA)
+- Saudi Arabia - National Cybersecurity Authority (NCA)
 - South Africa Consumer Protection ACT 68 2008  
 - South Africa Electronic Communications and Transactions Act, 2002  
 - South Africa - Promotion of Access to Information Act  
 - South African POPIA  
 - Slovakia Act on the Protection of Personal Data  
 - Spain - Nation Security Framework  
-- Switzerland - Federal Act on Data Protection (FADP)  
+- Switzerland - Federal Act on Data Protection (FADP)
+- Turkey - Information and Communication Security Guide  
 - Turkey - KVKK Protection of Personal Data 6698
 - UAE - Federal Decree Law on Combating Cyber Crimes  
 - UAE - Federal Law Concerning Electronic Transactions and Commerce

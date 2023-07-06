@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 05/23/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,13 +27,27 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## May 2023
+
+Compliance Manager now integrates with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance. This new integration provides customers with a single interface in Compliance Manager to help make it easier to manage compliance across the organization’s digital estate. Learn more about [multicloud support in Compliance Manager](compliance-manager-multicloud.md).
+
+Compliance Manager also features an integrated set of connectors that can help you understand your compliance obligations across the many services you use in your organization. Connectors for Salesforce and Zoom are now available, with more coming soon. Learn more about [working with connectors in Compliance Manager](compliance-manager-connectors.md).
+
+Also, you can now provide scoped access to assessments based on regulation. For each regulatory template, you can assign users a role that allows them to access any assessment created for that regulation. Learn more about [granting user access to regulatory templates](compliance-manager-templates.md#grant-user-access-to-regulations).
+
+## January 2023
+
+In preview: Compliance Manager has new improvement actions that correspond to actions taken in Microsoft Priva to bolster your organization's compliance with data privacy regulations. Learn more about [Priva](/privacy/priva/priva-overview) and get details about [automatic testing and monitoring of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing) in Compliance Manager.
+
 ## December 2022
 
 Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
 
+Also new in December: Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#improvement-actions-details-page) that lists all the controls associated to the action, with a link to each control's description. In the **Summary** section, the number underneath **Assessments** is now linked. When you select the number, you'll see a flyout pane listing all the assessments related to that action.
+
 ## November 2022
 
-Compliance Manager now allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+Compliance Manager allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
 
 ## August 2022
 
@@ -171,4 +186,4 @@ Compliance Manager is now available to US Government DoD customers, in addition 
 
 ### Active and inactive templates
 
-Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) to learn more.
+Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template availability and licensing](compliance-manager-templates.md#regulation-availability-and-licensing) to learn more.

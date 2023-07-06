@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/16/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -32,9 +33,9 @@ The first step is to search the audit log and then export the results in a comma
   
 1. Run an [audit log search](audit-log-search.md#search-the-audit-log) and revise the search criteria if necessary until you have the desired results.
 
-2. On the search results page, select **Export** > **Download all results**.
+2. On the search results page, select **Export**.
 
-   ![Click Download all results.](../media/ExportAuditSearchResults.png)
+   ![Click Download all results.](../media/audit-export-audit-search-results.png)
 
    This option exports all the audit records from the audit log search you ran in step 1, and adds the raw data from the audit log to a CSV file. It takes a while to prepare the download file for a large search. Large files will result when searching for all activities or using a wide date range.
 

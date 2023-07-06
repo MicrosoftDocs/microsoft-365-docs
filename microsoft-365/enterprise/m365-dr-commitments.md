@@ -8,10 +8,11 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
+ms.date: 10/27/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---

@@ -1,5 +1,5 @@
 ---
-title: Enable Corelight integration in Microsoft Defender for Endpoint
+title: Enable Corelight as data source in Microsoft Defender for Endpoint
 description: Enable Corelight integration to gain visibility focused on IoT/OT devices in areas of the network where MDE is not deployed
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
@@ -18,9 +18,10 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 11/22/2021
 ---
 
-# Enable Corelight data integration
+# Enable Corelight as data source in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +43,7 @@ With this data source enabled, all events from Corelight network appliances are 
 1. To setup the Corelight data integration, the user must have the following roles:
    - Tenant Global Administrator in Azure Active Directory
    - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
-2. An onboarded Defender for IoT plan. For more information, see [Onboard Microsoft Defender for IoT with Microsoft Defender for Endpoint](enable-microsoft-defender-for-iot-integration.md).
+2. An onboarded Defender for IoT plan. For more information, see [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/).
 
 ## Enabling the Corelight integration
 

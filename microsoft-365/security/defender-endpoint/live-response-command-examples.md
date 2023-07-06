@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 04/24/2023
 ---
 
 # Live response command examples
@@ -193,11 +194,6 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
-```
-
-```console
-# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
-remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console

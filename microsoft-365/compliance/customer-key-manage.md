@@ -3,6 +3,7 @@ title: "Manage Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -415,7 +416,7 @@ To initiate the data purge path, complete these steps:
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
-Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not supported in Customer Key. These multi-workload DEPs are used to encrypt data across multiple workloads across all tenant users. Purging such a DEP would result in data from across multiple workloads becoming inaccessible. If you decide to exit Microsoft 365 services altogether, you could pursue the path of tenant deletion per the documented process. See how to [delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Purging of SharePoint, OneDrive for work or school, and Teams files DEPs is not supported in Customer Key.  If you decide to exit Microsoft 365 services altogether, you could pursue the path of tenant deletion per the documented process. See how to [delete a tenant in Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## Related articles
 

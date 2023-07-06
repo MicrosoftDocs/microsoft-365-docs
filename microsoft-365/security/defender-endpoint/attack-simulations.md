@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 12/18/2020
 ---
 
 # Experience Microsoft Defender for Endpoint through simulated attacks 
@@ -25,7 +26,6 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,6 +60,8 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
+>
+> You can also use the EICAR test file or the EICAR test text string to perform some tests. It is possible to test real-time protection features (create a text file, paste the EICAR text, and save the file as an executable file to your endpoint's local drive—you will get a notification on the test endpoint and an alert in the MDE console) or EDR protection (you need to temporarily disable real-time protection on the test endpoint and save the EICAR test file, and then try to execute, copy, or move this file). After you run your tests, enable real-time protection on the test endpoint. 
 >
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 

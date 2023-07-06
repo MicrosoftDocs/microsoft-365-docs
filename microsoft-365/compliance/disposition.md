@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/17/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,17 +24,17 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use the **Disposition** page from **Records Management** in the Microsoft Purview compliance portal to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
+Use the **Disposition** page from **Records Management** in the Microsoft Purview compliance portal to manage disposition reviews and view the metadata of [items marked as records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition-review) for disposition.
+To manage disposition reviews and confirm that items marked as records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition-review) for disposition.
 
 ### Permissions for disposition
 
-To successfully access the **Disposition** tab in the Microsoft Purview compliance portal, users must have the **Disposition Management** role. From December 2020, this role is now included in the **Records Management** default role group.
+To successfully access the **Disposition** tab in the Microsoft Purview compliance portal, users must have the **Disposition Management** role. This role is included in the **Records Management** default role group.
 
 > [!NOTE]
 > By default, a global admin isn't granted the **Disposition Management** role. 
@@ -101,18 +101,33 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 
 Administrators can see an overview of all pending dispositions in the **Overview** tab. Reviewers see only their items pending disposition. For example:
 
-![Pending dispositions in Records management overview.](../media/dispositions-overview.png)
+:::image type="content" source="../media/dispositions-overview.png" alt-text="Pending dispositions in Records management overview.":::
 
 When you select the **View all pending dispositions**, you're taken to the **Disposition** page. For example:
 
-![Dispositions page in the Microsoft Purview compliance portal.](../media/disposition-tab.png)
-
+:::image type="content" source="../media/disposition-tab.png" alt-text="Dispositions page in the Microsoft Purview compliance portal.":::
 
 ### Workflow for a disposition review
 
 The following diagram shows the basic workflow for a disposition review (single-stage) when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be automatically applied to content.
-  
-![Chart showing flow of how disposition works.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+
+:::image type="content" source="../media/disposition-review-option.png" alt-text="Process chart showing the standard flow of how disposition works.":::
+
+### Auto-approval for disposition
+
+> [!NOTE]
+> This feature is in preview and subject to change
+
+You can optionally specify a time period (7-365 days) for auto-approval. The default period if you select this option is 14 days.
+
+If designated reviewers don't take manual action during this time period by using the [standard disposition review process](#viewing-and-disposing-of-content), the item automatically passes to the next review stage. If the item is in the final review stage, the item is automatically disposed with permanent deletion.
+
+> [!IMPORTANT]
+> If you configure this option and items are already pending disposition review, they automatically become auto-approved if they have already exceeded the number of days that you specified for auto-approval. The time period always starts from when the item is ready for disposition review and not from when you configure the option.
+
+As with all retention label changes, allow up to 7 days if you turn on, turn off, or change the number of days for this option.
+
+There's no new auditing event for auto-approval. Instead, use the details in the existing [Approved disposal](audit-log-activities.md#disposition-review-activities) auditing event to identify whether the item was manually approved or automatically approved by using this option.
 
 ### How to configure a retention label for disposition review
 
@@ -120,15 +135,17 @@ Triggering a disposition review at the end of the retention period is a configur
 
 From the **Choose what happens after the retention period** page for a retention label:
 
-![Retention settings for a label.](../media/disposition-review-option.png)
- 
+:::image type="content" source="../media/disposition-review-option.png" alt-text="Retention settings for a label that include disposition review.":::
+
 After you select the **Start a disposition review** option, select **+ Create stages and assign reviewers**. On the next page of the configuration, you'll specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
-![Specifying disposition reviewers.](../media/disposition-reviewers.png) 
+:::image type="content" source="../media/disposition-reviewers.png" alt-text="Disposition review configuration settings for a retention label.":::
+
+Optionally, select whether you want to use [automatic-approval](#auto-approval-for-disposition). If you use this option, specify the number of days reviewers have to take manual action before the item is automatically moved to the next disposition stage or automatically disposed.
 
 Select **+ Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
-For the reviewers, specify up to 10 individual users or mail-enabled security groups. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this option.
+For the reviewers, specify up to 10 individual users or mail-enabled security groups. Microsoft 365 groups aren't supported for this option.
 
 If you need more than one person to review an item at the end of its retention period, select **Add another stage** and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
@@ -139,7 +156,7 @@ Within each individual stage of disposition, any of the users you specify for th
 
 During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting **Edit stages and reviewers** that now displays for the **Start a disposition review** option. Then for each stage, you can select the Stage actions option (**...**): 
 
-![Stage actions for disposition reviews.](../media/stage-actions-disposition-review.png)
+:::image type="content" source="../media/stage-actions-disposition-review.png" alt-text="Stage actions for disposition reviews.":::
 
 However, you can't reorder or remove a stage after you've created the retention label. You'll see only the **Add a stage** and **Rename a stage** options available. You can still edit the reviewers.
 
@@ -155,7 +172,7 @@ You can customize the email messages that are sent to disposition reviewers for 
 
 From any of the Records management pages in the Microsoft Purview compliance portal, select **Records management settings**:  
 
-![Records management settings.](../media/record-management-settings.png)
+:::image type="content" source="../media/record-management-settings.png" alt-text="Records management settings.":::
 
 From the **Disposition** tab, in the **Email notifications for disposition reviews** section, select and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
@@ -200,14 +217,14 @@ As you can see from the example shown, the actions supported are:
 
 Each action taken has a corresponding audit event in the [Disposition review activities](audit-log-activities.md#disposition-review-activities) auditing activities group.
 
-During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
+During the disposition review process, unless you're using the optional setting of an [auto-approval timeout period](#auto-approval-for-disposition), the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 
 ## Disposition of records
 
 From the **Records management** main page > **Disposition** tab, you can identify:
 
 - Items deleted as a result of a disposition review.
-- Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.
+- Items marked as a record or regulatory record but not marked for disposition review and automatically deleted at the end of their retention period.
 
 These items display **Records Disposed** in the **Type** column. For example:
 

@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -30,6 +30,8 @@ ms.date: 01/21/2021
 ---
 
 # Which Microsoft 365 subscription do I have?
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   

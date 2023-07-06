@@ -3,6 +3,7 @@ title: "Planning your portal launch roll-out plan in SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

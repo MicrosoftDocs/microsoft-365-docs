@@ -125,9 +125,9 @@ conceptualContent:
             - url: solutions/deploy-threat-protection.md
               itemType: how-to-guide
               text: Deploy threat protection
-            - url: solutions/information-protection-deploy.md
+            - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
-              text: Deploy information protection for data privacy regulations
+              text: Manage data privacy and data protection
             - url: business-premium/index.md
               itemType: how-to-guide
               text: Microsoft 365 for smaller businesses and campaigns
@@ -213,10 +213,15 @@ tools:
       imageSrc: /office/media/icons/developer-blue.svg
       url: /microsoft-365/developer/?view=o365-worldwide
     # Card
-    - title: Tech community
-      imageSrc: /office/media/icons/users-group.svg
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    - title: FastTrack
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/deploy-blue.svg
+      url: /microsoft-365/fasttrack/
     # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg
       url: /microsoft-365/community/
+    # Card
+    - title: Tech community
+      imageSrc: /office/media/icons/users-group.svg
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

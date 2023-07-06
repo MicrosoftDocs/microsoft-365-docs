@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint live response issues
@@ -34,7 +35,7 @@ This page provides detailed steps to troubleshoot live response issues.
 
 ## File cannot be accessed during live response sessions
 
-If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, you'll need to use the steps below to address the issue.
+If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, you need to use the steps below to address the issue.
 
 1. Copy the following script code snippet and save it as a PS1 file:
 
@@ -60,10 +61,10 @@ If while trying to take an action during a live response session, you encounter 
 
 ## Slow live response sessions or delays during initial connections
 
-Live response leverages Defender for Endpoint sensor registration with WNS service in Windows. If you are having connectivity issues with live response, confirm the following details:
+Live response leverages Defender for Endpoint sensor registration with WNS service in Windows. If you're having connectivity issues with live response, confirm the following details:
 
-1. WpnService (Windows Push Notifications System Service) is not disabled.
-2. WpnService connectivity with WNS cloud is not disabled via group policy or MDM setting. ['Turn off notifications network usage'](/windows/client-management/mdm/policy-csp-notifications) should not be set to '1'.
+1. WpnService (Windows Push Notifications System Service) isn't disabled.
+2. WpnService connectivity with WNS cloud isn't disabled via group policy or MDM setting. ['Turn off notifications network usage'](/windows/client-management/mdm/policy-csp-notifications) shouldn't be set to '1'.
 
 Refer to the articles below to fully understand the WpnService service behavior and requirements:
 

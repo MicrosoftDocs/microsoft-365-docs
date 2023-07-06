@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -33,11 +34,7 @@ In an eDiscovery (Premium) case, legal teams can add individuals in their organi
 For more information about working with custodians, see the following articles:
 
 - [Add custodians to a case](ediscovery-add-custodians-to-case.md)
-
 - [Bulk-add custodians to a case](ediscovery-bulk-add-custodians.md)
-
 - [Manage custodians in a case](ediscovery-manage-new-custodians.md)
-
 - [View custodian activity](ediscovery-view-custodian-activity.md)
-
 - [Add non-custodial data sources to a case](ediscovery-non-custodial-data-sources.md)

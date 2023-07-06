@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 titleSuffix: Office 365
 audience: Admin
 ms.topic: article
@@ -41,13 +42,9 @@ This tab includes the following components:
 - **Parameters**: Review, Recall, Next relevant and Total cost parameters are cumulative calculated statistics pertaining to the review set in relation to the collection for the entire case. Definitions for these parameters are as follows:
 
   - **Review**: Percentage of files to review based on this cutoff.
-
   - **Recall**: Percentage of relevant files in the review set.
-
   - **Next relevant**: Cost to review and identify another relevant file that isn't currently in the review set.
-
   - **Total cost**: Cost for reviewing this percentage of the case files. Cost parameter settings can be set by the Case manager.
-
   - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.
 
 The expanded **Details** pane displays more details. Files in collection figures don't include empty or nebulous files. Family files figures represent files that aren't loaded in Relevance, yet still counted as part of the family.

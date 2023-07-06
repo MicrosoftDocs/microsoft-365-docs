@@ -3,6 +3,7 @@ title: "Learn about the availability key for Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp

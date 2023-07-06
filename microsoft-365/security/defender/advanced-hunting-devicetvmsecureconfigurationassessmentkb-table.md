@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB

@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 07/21/2022
+ms.date: 01/01/2023
 ms.collection:
 - tier1
 - purview-compliance

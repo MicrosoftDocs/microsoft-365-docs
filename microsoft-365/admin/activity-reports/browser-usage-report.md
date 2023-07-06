@@ -3,6 +3,7 @@ title: "Microsoft 365 admin center browser usage reports"
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
+ms.date: 03/09/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,7 +24,7 @@ description: "Learn how to get a Microsoft browser usage report using the Micros
 
 # Microsoft 365 Reports in the admin center - Microsoft browser usage
 
-The Microsoft 365 Reports dashboard shows you an activity overview across the products in your organization. It enables you to drill into individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). 
+The Microsoft 365 Reports dashboard shows you an activity overview across the products in your organization. It enables you to drill into individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
 
 The **Microsoft Browser Usage report** in the Microsoft 365 Admin Center lets you see if users access Microsoft 365 online services via Microsoft Edge. This report insight can help you migrate your organization to Microsoft Edge. Usage reporting is based on an aggregate count of users in your organization that sign in to their Microsoft 365 account and use the Microsoft Edge browser to access Microsoft 365 services.
 

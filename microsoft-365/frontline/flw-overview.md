@@ -96,7 +96,6 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Frontline worker onboarding wizard](flw-onboarding-wizard.md) |Enterprise, F1, F3 |
 |[Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
 |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
 
@@ -108,7 +107,7 @@ Equip your employees with industry-specific devices tailored for their needs, or
 |-----------|---------------------|
 |[Manage mobile devices for frontline workers](flw-devices.md) |Enterprise, F1, F3 |
 |[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
-|[Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
+|[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
 |[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |
 
 ## Adoption principles to help envision and implement business scenarios

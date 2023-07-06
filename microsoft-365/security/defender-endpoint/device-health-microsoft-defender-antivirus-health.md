@@ -11,18 +11,16 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
-ms.date: 09/06/2022 
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
 ---
-
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Device health, Microsoft Defender Antivirus health report
 
@@ -39,9 +37,16 @@ ms.reviewer: mkaminska
 The Device Health report provides information about the devices in your organization. The report includes trending information showing the antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
 
 > [!IMPORTANT]
+> For devices to appear in Microsoft Defender Antivirus device health reports they must meet the following pre-requisites:  
+>
+> - Device is onboarded to Microsoft Defender for Endpoint
+> - OS: Windows 10, Windows 11, Windows Server 2012 R2/, 2016 R2/ 2019/2022 (non MMA), MacOS, Linux 
+> - Sense (MsSense.exe): **10.8210.** \*+. See [Prerequisites](#prerequisites) section for related details.
+>
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
+
 - [Antivirus mode card](#antivirus-mode-card)
 - [Antivirus engine version card](#antivirus-engine-version-card)
 - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -71,7 +76,8 @@ To Assign these permissions:
 
 For more information about user role management, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Microsoft Defender Antivirus health tab 
+## Microsoft Defender Antivirus health tab
+
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
 Two cards, [Antivirus mode card](#antivirus-mode-card) and [Recent antivirus scan results card](#recent-antivirus-scan-results-card), report about Microsoft Defender Antivirus functions.
@@ -99,9 +105,11 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Windows OS
-   >[!Note]
-   >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
+- Sense (MsSense.exe): **10.8210.** \*+ 
+- Windows OS - Windows 10 1809 or later
+
+  > [!NOTE]
+  > \* Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
 :::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -143,7 +151,7 @@ There are two different export csv functionalities through the portal:
 
 - **Top level export**. You can use the top-level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
-   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Screenshot that shows the top-level export report button." lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
 - **Flyout level export**. You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
 
@@ -156,9 +164,9 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
-> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is only available in public preview.
+> Currently, only the [Antivirus Health JSON Response](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-json-response) is generally available. [Antivirus Health API via files](device-health-api-methods-properties.md#14-export-device-antivirus-health-details-api-properties-via-files) is only available in public preview.
 >
-> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
+> [Advanced Hunting custom query](run-advanced-query-api.md) is currently only available in public preview, even if the queries are visible.
 
 ### Microsoft Defender Antivirus version and update cards functionality
 
@@ -178,7 +186,7 @@ Use these reports to determine whether your organization is taking full advantag
 
 To help ensure your anti-malware solution detects the latest threats, get updates automatically as part of Windows Update.
 
-For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
+For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md).
 
 ### Card descriptions
 
@@ -215,12 +223,12 @@ For details about LPS, see [Use limited periodic scanning in Microsoft Defender 
 This card has two bars graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
 By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that aren't in active antivirus scan mode, and devices that have failed or canceled recent antivirus scans. You can return to the report with this information and gather more details and security recommendations. If any error codes are reported in this card, there will be a link to learn more about error codes.
 
-For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
 #### Antivirus engine version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
-For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
+For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md).
 
 #### Antivirus security intelligence version card
 
@@ -230,7 +238,7 @@ Microsoft continually updates Microsoft Defender security intelligence to addres
 ##### Antivirus platform version card
 
 Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
-For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+For more information on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md)
 
 #### Up-to-date cards
 
@@ -297,7 +305,7 @@ The following table lays out the possible values for up to date reports for **An
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
 
-For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).
 
 #### Antivirus platform updates card
 
@@ -312,7 +320,7 @@ The following table lays out the possible up to date report values for **Antivir
 | < 7 days (new) | whatever client reports (_Up to date <br/> Out of date <br/> Unknown)_ |
 | > 7 days (old) | _Unknown_ |
 
-For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+For information about Manage Microsoft Defender Antivirus update versions, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).
 
 ##### Security intelligence updates card
 
@@ -345,9 +353,8 @@ The following table lays out the possible up to date report values for **Securit
 >   - top scans per file
 >   - top scans per file per process
 >
-> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions.
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
->
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 - [Export device antivirus health report](device-health-api-methods-properties.md)

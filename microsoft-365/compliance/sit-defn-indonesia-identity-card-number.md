@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/11/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -28,19 +28,15 @@ description: "Indonesia identity card (KTP) number sensitive information type en
 
 ## Format
 
-16 digits containing optional periods
+Sixteen digits
 
 ## Pattern
 
-16 digits:
+Sixteen digits:
 
 - Two-digit province code
-- A period (optional)
-- Two-digit regency or city code
-- Two-digit subdistrict code
-- A period (optional)
+- Four digits
 - Six digits in the format DDMMYY, which are the date of birth
-- A period (optional)
 - Four digits
 
 ## Checksum

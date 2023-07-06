@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: fasqiu
 ms.reviewer: krowley
+ms.date: 06/30/2020
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business

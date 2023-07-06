@@ -4,6 +4,7 @@ ms.author: v-jdeweese
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
+ms.date: 12/14/2020
 audience: admin
 ms.topic: landing-page
 ms.custom: 
@@ -12,7 +13,6 @@ search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
-
 ---
 
 # Introduction to Microsoft Whiteboard

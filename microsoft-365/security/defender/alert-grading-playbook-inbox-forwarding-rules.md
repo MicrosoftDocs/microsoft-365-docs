@@ -1,7 +1,7 @@
 ---
-title: Alert grading for suspicious inbox forwarding rules
-description: Alert grading for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Alert classification for suspicious inbox forwarding rules
+description: Alert classification for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,9 +22,10 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - met150
+ms.date: 04/05/2023
 ---
 
-# Alert grading for suspicious inbox forwarding rules
+# Alert classification for suspicious inbox forwarding rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,17 +34,17 @@ search.appverid:
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive (TP) or a False Positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a true positive (TP) or a false positive (TP). You can then take recommended actions for the TP alerts to remediate the attack.
 
-For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
+For an overview of alert classification for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with inbox forwarding rules as malicious (TP) or benign (FP) activities.
+- You've identified the alerts associated with inbox forwarding rules as malicious (TP) or benign (FP) activities.
 
   If malicious, you have removed malicious inbox forwarding rules.
 
-- You have taken the necessary action if emails have been forwarded to a malicious email address.
+- You've taken the necessary action if emails have been forwarded to a malicious email address.
 
 ## Inbox forwarding rules
 
@@ -55,11 +56,11 @@ After gaining access to users' mailboxes, attackers often create an inbox rule t
 
 Malicious inbox rules automate the exfiltration process. With specific rules, every email in the target user's inbox that matches the rule criteria will be forwarded to the attacker's mailbox. For example, an attacker might want to gather sensitive data related to finance. They create an inbox rule to forward all emails that contain keywords, such as 'finance' and 'invoice' in the subject or message body, to their mailbox.
 
-Suspicious inbox forwarding rules might be very difficult to detect because maintenance of inbox rules is common task done by users. Therefore, it's important to monitor the alerts.
+Suspicious inbox forwarding rules might be difficult to detect because maintenance of inbox rules is common task done by users. Therefore, it's important to monitor the alerts.
 
 ## Workflow
 
-Here is the workflow to identify suspicious email forwarding rules.
+Here's the workflow to identify suspicious email forwarding rules.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png" alt-text="Alert investigation workflow for inbox forwarding rules" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png":::
 
@@ -83,19 +84,19 @@ The purpose of this stage is to determine if the rules look suspicious by certai
 
 Recipients of the forwarding rule:
 
-- Validate destination email address is not an additional mailbox owned by the same user (avoiding cases where the user is self-forwarding emails between personal mailboxes).
-- Validate the destination email address is not an internal address or sub-domain that belong to the company.
+- Validate destination email address isn't an additional mailbox owned by the same user (avoiding cases where the user is self-forwarding emails between personal mailboxes).
+- Validate the destination email address isn't an internal address or sub-domain that belongs to the company.
 
 Filters:
 
-- If the inbox rule contains filters which search for specific keywords in the subject or body of the email, check whether the provided keywords, such as finance, credentials, and networking, among others, seem related to malicious activity. You can find these filters under the following attributes (which shows up in the event RawEventData column): "BodyContainsWords", "SubjectContainsWords" or "SubjectOrBodyContainsWords"
+- If the inbox rule contains filters, which search for specific keywords in the subject or body of the email, check whether the provided keywords, such as finance, credentials, and networking, among others, seem related to malicious activity. You can find these filters under the following attributes (which shows up in the event RawEventData column): "BodyContainsWords", "SubjectContainsWords" or "SubjectOrBodyContainsWords"
 - If the attacker chooses not to set any filter to the mails, and instead the inbox rule forwards all the mailbox items to the attacker's mailbox), then this behavior is suspicious as well.
 
 ### Investigate IP address
 
 Review the attributes that related to the IP address that performed the relevant event of rule creation:
 
-1. Search for other suspicious cloud activities that originated from the same IP in the tenant. For instance, suspicious activity might be multiple failed logins attempts.
+1. Search for other suspicious cloud activities that originated from the same IP in the tenant. For instance, suspicious activity might be multiple failed login attempts.
 2. Is the ISP common and reasonable for this user?
 3. Is the location common and reasonable for this user?
 
@@ -105,7 +106,7 @@ You can review all user activities before creating rules, check for indicators o
 
 - Sign ins:
 
-  Validate that the sign in activity prior to the rule creation event is not suspicious (such as the common location, ISP, or user-agent).
+  Validate that the sign in activity prior to the rule creation event isn't suspicious (such as the common location, ISP, or user-agent).
 
 - Other alerts or incidents
   - Did other alerts trigger for the user prior to the rule creation. If so, then this might indicate that the user got compromised.
@@ -189,7 +190,7 @@ CloudAppEvents
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbooks.md)
+- [Overview of alert classification](alert-grading-playbooks.md)
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)

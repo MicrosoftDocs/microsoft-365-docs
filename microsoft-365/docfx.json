@@ -16,7 +16,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "contentunderstanding/**",
+          "syntex/**",
           "knowledge/**"
         ]
       },
@@ -74,7 +74,7 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft 365", "Microsoft Bookings", "Microsoft Syntex", "Microsoft 365 for frontline workers"],
+      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -84,7 +84,10 @@
         "tiburd",
         "garycentric",
         "v-dihans",
-        "AngelaMotherofDragons"
+        "AngelaMotherofDragons",
+        "alexbuckgit", 
+        "beccarobins",
+        "dstrome"
       ]
     },
     "fileMetadata": {
@@ -98,45 +101,57 @@
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft Purview (compliance)",
         "security/mtp/**/*.md": "Microsoft 365 security",
-        "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
         "business-premium/**/*.md": "Microsoft 365 Business Premium",
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "contentunderstanding/**/*.md": "Microsoft Syntex",
+        "syntex/**/*.md": "Microsoft Syntex",
         "frontline/**/*.md": "Microsoft 365 for frontline workers"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
         "security/**/*.md":"https://docs.microsoft.com/microsoft-365/security/defender/feedback",
+        "security/defender/**/*.md":"https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection",
         "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-premium/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "solutions/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "contentunderstanding/**/*.md":"https://aka.ms/syntex/feedback",
+        "syntex/**/*.md":"https://aka.ms/syntex/feedback",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "solutions/**.*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "solutions/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
         "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
         "admin/**/*.md": ["Microsoft 365"],
+        "admin/**/*.yml": ["Microsoft 365"],
         "bookings/**/*.md": ["Microsoft Bookings"],
+        "bookings/**/*.yml": ["Microsoft Bookings"],
         "business/**/*.md": ["Microsoft 365"],
+        "business/**/*.yml": ["Microsoft 365"],
         "business-video/**/*.md": ["Microsoft 365"],
+        "business-video/**/*.yml": ["Microsoft 365"],
         "commerce/**/*.md": ["Microsoft 365"],
+        "commerce/**/*.yml": ["Microsoft 365"],
         "compliance/**/*.md": ["Microsoft 365"],
-        "contentunderstanding/**/*.md":["Microsoft Syntex"],
+        "compliance/**/*.yml": ["Microsoft 365"],
         "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
-        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
+        "lighthouse/**/*.yml": ["Microsoft 365 Lighthouse"],
         "enterprise/**/*.md": ["Microsoft 365"],
+        "enterprise/**/*.yml": ["Microsoft 365"],
+        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
+        "frontline/**/*.yml": ["Microsoft 365 for frontline workers"],
         "security/**/*.md": ["Microsoft 365"],
-        "solutions/**.*.md": ["Microsoft 365"]
+        "security/**/*.yml": ["Microsoft 365"],
+        "solutions/**/*.md": ["Microsoft 365"],
+        "solutions/**/*.yml": ["Microsoft 365"],
+        "syntex/**/*.md": ["Microsoft Syntex"],
+        "syntex/**/*.yml": ["Microsoft Syntex"]
       }
     },
     "template": [],

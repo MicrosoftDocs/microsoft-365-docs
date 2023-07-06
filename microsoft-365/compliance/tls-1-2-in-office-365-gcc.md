@@ -10,6 +10,7 @@ audience: ITPro
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley
+ms.date: 07/02/2020
 ms.author: krowley
 appliesto:
 - Office 365 Business

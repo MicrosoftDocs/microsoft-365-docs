@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 10/13/2021
 ---
 
 # Investigate and respond with Microsoft 365 Defender

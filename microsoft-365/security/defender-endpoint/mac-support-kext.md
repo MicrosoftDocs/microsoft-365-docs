@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -36,6 +37,9 @@ search.appverid: met150
 This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender for Endpoint on macOS.
 
 Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they're allowed to run on the device.
+
+>[!TIP]
+>Kernel extensions only apply up to macOS Catalina (10.15).  Starting with macOS BigSur (11), Microsoft Defender for Endpoint on macOS uses System Extensions.
 
 If you didn't approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint on macOS, the application displays a banner prompting you to enable it:
 

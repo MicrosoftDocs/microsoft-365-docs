@@ -1,14 +1,16 @@
 ---
-title: Configuring and controlling external email forwarding in Microsoft 365.
+title: Configuring and controlling external email forwarding in Microsoft 365
 f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/18/2022
+ms.date: 06/19/2023
 audience: ITPro
 ms.topic: overview
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.localizationpriority: medium
 ms.assetid:
 ms.custom:
@@ -18,16 +20,15 @@ description: This article covers topics including external email forwarding, Aut
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Control automatic external email forwarding in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
 
@@ -84,7 +85,7 @@ The following information is required to create the mail flow rule in the Exchan
   This condition will match any value for the header.
 
 - (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
-- Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](reports-email-security.md#exchange-transport-rule-report) to get details of users that are forwarding.
+- Set **Audit this rule with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](reports-email-security.md#exchange-transport-rule-report) to get details of users that are forwarding.
 
 :::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="The Mail flow rule properties in the EAC for a rule to identify forwarded messages" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
 

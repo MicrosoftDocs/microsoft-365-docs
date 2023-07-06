@@ -3,8 +3,9 @@ title: "Options for accessing email from your mobile device"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: End User
 ms.topic: article
 ms.service: microsoft-365-business

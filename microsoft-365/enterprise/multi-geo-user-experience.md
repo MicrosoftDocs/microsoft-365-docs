@@ -1,6 +1,7 @@
 ---
 title: "User experience in a multi-geo environment"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -100,5 +101,3 @@ Microsoft Teams is a Multi-Geo service. OneDrive for Business files and recently
 User profile information is mastered in the user's _Geography_ location. When selecting a user, you will be directed to the appropriate _Geography_ location for the user, where you will see their full profile details.
 
 If Office Delve is turned off, you will see the classic profile experience in SharePoint Online, which is not Multi-Geo aware.
-
-

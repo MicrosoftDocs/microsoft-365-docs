@@ -4,12 +4,15 @@ ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: sovaish
+ms.date: 05/26/2021
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Integrate Microsoft Teams classes with Canvas"

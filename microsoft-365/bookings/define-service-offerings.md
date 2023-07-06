@@ -3,6 +3,7 @@ title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings

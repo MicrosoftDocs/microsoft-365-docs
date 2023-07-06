@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 
+ms.date: 06/14/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -26,7 +26,7 @@ description: Learn about data loss prevention alerts and the alerts dashboard.
 
 # Learn about the data loss prevention Alerts dashboard
 
-When the criteria in a Microsoft Purview Data Loss Prevention (DLP) policy is matched by the actions a user is taking on a sensitive item, the policy can generate an alert. This situation can result in a high volume of alerts. DLP alerts are collected in the alerts dashboard. The alerts dashboard gives you a single place to go to do a deep investigation of all the details about the policy match.  
+When the criteria in a Microsoft Purview Data Loss Prevention (DLP) policy is matched by the actions a user is taking on a sensitive item, the policy can generate an alert. This situation can result in a high volume of alerts. DLP alerts are collected in the alerts dashboard of the compliance portal. The alerts dashboard gives you a single place to go to do a deep investigation of all the details about the policy match.  
 
 <!-- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)-->
 
@@ -43,7 +43,7 @@ The [DLP alert management dashboard](https://compliance.microsoft.com/datalosspr
 - Windows 10 devices 
 
 > [!TIP]
-> Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
+> Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) and who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
 
 ## Single alert and aggregate alert
 
@@ -55,7 +55,7 @@ There are two types of alerts that can be configured in DLP policies.
 
 ## Types of events
 
-Here are some of the events associated with an alert. In the UI, you can choose a particular event to view its details. 
+Here are some of the events associated with an alert. In the UI, you can choose a particular event to view its details.
 
 ### Event details
 
@@ -97,9 +97,22 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 |actions taken |actions that were taken that caused the DLP policy match| all events|
 |violating action | action on the endpoint device that raised the DLP alert| device events | 
 |user overrode policy |did the user override the policy via a policy tip | all events|
-|use override justification |the text of the reason provided by the user for the override | all events|   
+|use override justification |the text of the reason provided by the user for the override | all events|
+
+## Investigate DLP incidents in Microsoft 365 Defender portal
+
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can be managed in the Microsoft 365 Defender portal. See, [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) for details. You can manage DLP incidents along with security incidents from **Incidents & alerts** > **Incidents** on the quick launch of the Microsoft 365 Defender portal.
+
+From this page, you can:
+
+- View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
+- View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
+- Hunt for compliance logs along with security under Advanced Hunting.
+- In-place admin remediation actions on user, file, and device.
+- Associate custom tags to DLP incidents and filter by them.
+- Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue.
 
 ## See Also
 
 - [Get started with the data loss prevention alert dashboard](dlp-alerts-dashboard-get-started.md)
-- [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

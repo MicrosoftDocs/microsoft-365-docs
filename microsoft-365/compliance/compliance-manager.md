@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 5/04/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,7 +20,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview Compliance Manager helps organizations manage their regulatory requirements with greater ease. Multicloud assessments, control mapping, and continuous control assessment help you stay on track and address risks."
+description: "Microsoft Purview Compliance Manager helps organizations automatically assess and manage compliance across their multicloud environment."
 ---
 
 # Microsoft Purview Compliance Manager
@@ -30,7 +31,7 @@ description: "Microsoft Purview Compliance Manager helps organizations manage th
 
 ## What is Compliance Manager?
 
-[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you manage your organization’s multicloud compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a solution in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> that helps you automatically assess and manage compliance across your multicloud environment. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
@@ -53,9 +54,7 @@ The Compliance Manager overview page shows your current compliance score, helps 
 
 ## Understanding your compliance score
 
-Compliance Manager awards you points for completing improvement actions taken to comply with a regulation, standard, or policy, and combines those points into an overall compliance score. Each action has a different impact on your score depending on the potential risks involved. Your compliance score can help prioritize which action to focus on to improve your overall compliance posture.
-
-Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance.
+Compliance Manager awards you points for completing improvement actions taken to comply with a regulation, standard, or policy, and combines those points into an overall compliance score. Each action has a different impact on your score depending on the potential risks involved. Your compliance score can help prioritize which action to focus on to improve your overall compliance posture. Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance.
 
 ##### Learn more
 
@@ -63,31 +62,25 @@ Compliance Manager gives you an initial score based on the Microsoft 365 data pr
 
 [Learn how to work with improvement actions](compliance-manager-improvement-actions.md).
 
-## Key elements: controls, assessments, templates, improvement actions
+## Key elements: controls, assessments, regulations, improvement actions
 
-Compliance Manager uses several data elements to help you manage your compliance activities. As you use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
+Compliance Manager uses several data elements to help you manage your compliance activities. As you use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, regulations, and improvement actions.
 
-### Controls
+Be sure to check out the [Compliance Manager glossary of terms](compliance-manager-glossary.md).
 
-A control is a requirement of a regulation, standard, or policy. It defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.
+##### Controls
 
-Compliance Manager tracks the following types of controls:
+A control is a requirement of a regulation, standard, or policy. It defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy. Compliance Manager tracks the following types of controls:
 
 1. **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
 3. **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
 
-##### Learn more
+Learn more about [monitoring control progress](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
-[Monitor progress of your controls](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
+##### Assessments
 
-[Learn how Compliance Manager continuously assesses controls](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-
-### Assessments
-
-An assessment is grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment help you meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, helps to bring your Microsoft 365 settings in line with ISO 27001 requirements.
-
-Assessments have several components:
+An assessment is grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment help you meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, helps to bring your Microsoft 365 settings in line with ISO 27001 requirements. Assessments have several components:
 
 - **In-scope services**: the specific set of Microsoft services applicable to the assessment
 - **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft implements on your behalf
@@ -95,31 +88,15 @@ Assessments have several components:
 - **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
 - **Assessment score**: shows your progress in achieving total possible points from actions within the assessment that are managed by your organization and by Microsoft
 
-When creating assessments, you’ll assign them to a group. You can configure groups in whatever way is most logical for your organization. For example, you may group assessments by audit year, region, solution, teams within your organization, or some other way. Once you create groups, you can [filter your Compliance Manager dashboard](compliance-manager-setup.md#filtering-your-dashboard-view) to view your score by one or more groups.
+Learn more about [creating and managing assessments](compliance-manager-assessments.md).
 
-##### Learn more
+##### Regulations
 
-[Build and manage assessments in Compliance Manager](compliance-manager-assessments.md).
+Compliance Manager provides over 360 regulatory templates to help you quickly create assessments. Learn more about working with [regulations in Compliance Manager](compliance-manager-templates.md) and view the full [list of regulations](compliance-manager-templates-list.md).
 
-### Templates
+##### Improvement actions
 
-Compliance Manager provides templates to help you quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also build a custom assessment by creating a template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our 325+ pre-built assessment templates.
-
-##### Learn more
-
-[View the list of assessment templates provided by Compliance Manager](compliance-manager-templates-list.md).
-
-[Get detailed instructions for creating and modifying templates for assessments](compliance-manager-templates.md).
-
-### Improvement actions
-
-Improvement actions help centralize your compliance activities. Each improvement action provides recommended guidance that’s intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
-
-##### Learn more
-
-[Use improvement actions to manage your compliance workflow](compliance-manager-improvement-actions.md).
-
-[Learn how actions impact your compliance score](compliance-score-calculation.md#action-types-and-points).
+Improvement actions help centralize your compliance activities. Each improvement action provides recommended guidance that’s intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action. Learn more about [working with improvement actions](compliance-manager-improvement-actions.md).
 
 ## Supported languages
 
@@ -152,8 +129,8 @@ Compliance Manager is available in the following languages:
 
 ## Next steps: set up and customize
 
-Learn how to sign in, assign permissions and roles, configure settings, and personalize your dashboard view at [Get started with Compliance Manager](compliance-manager-setup.md).
+- [Sign in, assign permissions and roles, configure settings, and personalize your dashboard view](compliance-manager-setup.md).
+- [Learn about and set up for multicloud support](compliance-manager-multicloud.md).
+- [Create assessments to help you comply with industry standards that matter most to your organization](compliance-manager-assessments.md).
 
-Then start customizing Compliance Manager to help you comply with industry standards that matter most to your organization by [setting up assessments](compliance-manager-assessments.md).
-
-To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including using Compliance Manager. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).

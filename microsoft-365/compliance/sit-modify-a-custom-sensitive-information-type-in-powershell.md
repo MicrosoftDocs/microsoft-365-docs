@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -35,16 +36,16 @@ To connect to Security & Compliance PowerShell, see [Security & Compliance Power
 ## Step 1: Export the existing rule package to an XML file
 
 > [!NOTE]
-> If you have a copy of the XML file (for example, you just created and imported it), you can skip to the next step to modify the XML file.
+> If you have a copy of the XML file (for example, if you just created and imported it), you can skip to [Step: 2 Modify the sensitive information type in the exported XML file](#step-2-modify-the-sensitive-information-type-in-the-exported-xml-file).
 
-1. If you don't already know it, run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to find the name of the custom rule package:
+1. If you don't already know the name of the custom rule package, run the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet to find it:
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
    > [!NOTE]
-   > The built-in rule package that contains the built-in sensitive information types is named Microsoft Rule Package. The rule package that contains the custom sensitive information types that you created in the Compliance center UI is named Microsoft.SCCManaged.CustomRulePack.
+   > The built-in rule package that contains the built-in sensitive information types is named *Microsoft Rule Package*. The rule package that contains the custom sensitive information types that you created in the Compliance center UI is named *Microsoft.SCCManaged.CustomRulePack*.
 
 2. Use the [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet to store the custom rule package to a variable:
 
@@ -72,7 +73,7 @@ To connect to Security & Compliance PowerShell, see [Security & Compliance Power
 
 ## Step 2: Modify the sensitive information type in the exported XML file
 
-Sensitive information types in the XML file and other elements in the file are described earlier in this topic.
+Find more information about modifying sensitive information types via XML in [Customize a built-in sensitive information type](/compliance/customize-a-built-in-sensitive-information-type).
 
 ## Step 3: Import the updated XML file back into the existing rule package
 

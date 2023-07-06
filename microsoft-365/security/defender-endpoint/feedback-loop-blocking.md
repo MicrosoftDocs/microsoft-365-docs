@@ -19,6 +19,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Feedback-loop blocking
@@ -27,6 +28,8 @@ search.appverid: met150
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Antivirus
 

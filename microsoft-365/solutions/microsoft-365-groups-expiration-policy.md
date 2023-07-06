@@ -1,6 +1,7 @@
 ---
 title: "Microsoft 365 group expiration policy"
 ms.reviewer: arvaradh
+ms.date: 08/12/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -31,7 +32,7 @@ When a group expires it is "soft-deleted" which means it can still be recovered 
 
 Administrators can specify an expiration period and any inactive group that reaches the end of that period, and is not renewed, will be deleted. (This includes archived teams.) The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent a notification before the expiration that allows them to renew the group for another expiration interval. Expiration notices for groups used in Teams appear in the Teams Owners feed.
 
-Groups that are actively in use are renewed automatically. Any of the following actions will autorenew a group:
+Groups that are actively in use are renewed automatically around 35 days before the group expires. In this case, the owner does not get any renewal notifications. Any of the following actions will automatically renew a group:
 - SharePoint - View, edit, download, move, share, or upload files. (Viewing a SharePoint page does not count as an action for automatic renewal.)
 - Outlook - Join or edit group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - Visit a teams channel.

@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 12/11/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - scotvorg
@@ -26,6 +27,8 @@ ms.custom:
 ---
 
 # Connect your domain to Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!NOTE]
 > If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.

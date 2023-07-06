@@ -1,5 +1,5 @@
 ---
-title: Insider risk management audit log
+title: Review activities with the insider risk management audit log
 description: Learn about the insider risk management audit log in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -10,13 +10,14 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
 ---
 
-# Insider risk management audit log
+# Review activities with the insider risk management audit log
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.

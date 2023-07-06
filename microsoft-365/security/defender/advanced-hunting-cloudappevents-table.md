@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # CloudAppEvents
@@ -31,8 +32,7 @@ ms.topic: conceptual
 
 The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Defender for Cloud Apps. For a complete list, jump to [Apps and services covered](#apps-and-services-covered). Use this reference to construct queries that return information from this table.
 
-> [!IMPORTANT]
-> This table includes information that used to be available in the `AppFileEvents` table. Starting March 7, 2021, users hunting through file-related activities in cloud services on and beyond this date should use the `CloudAppEvents` table instead. <br><br>Make sure to search for queries and custom detection rules that still use the `AppFileEvents` table and edit them to use the `CloudAppEvents` table. More guidance about converting affected queries can be found in [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857).
+
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

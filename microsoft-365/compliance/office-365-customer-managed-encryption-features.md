@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 09/17/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,7 +37,7 @@ For more information about these technologies, see the [Microsoft 365 service de
 
 [Azure Rights Management](/azure/information-protection/what-is-azure-rms) (Azure RMS) is the protection technology used by [Azure Information Protection](/information-protection/understand-explore/what-is-information-protection). It uses encryption, identity, and authorization policies to help secure your files and email across multiple platforms and devices—phones, tablets, and PCs. Information can be protected both within and outside your organization because protection remains with the data. Azure RMS provides persistent protection of all file types, protects files anywhere, supports business-to-business collaboration, and a wide range of Windows and non-Windows devices. Azure RMS protection can also augment [data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention). For more information about which applications and services can use the Azure Rights Management service from Azure Information Protection, see [How applications support the Azure Rights Management service](/information-protection/understand-explore/applications-support).
 
-Azure RMS is integrated with Microsoft 365 and available to all customers. To configure Microsoft 365 to use Azure RMS, see [Configure IRM to use Azure Rights Management and Set up Information Rights Management (IRM) in SharePoint admin center](../enterprise/activate-rms-in-microsoft-365.md). If you operate on-premises Active Directory (AD) RMS server, then you can also [configure IRM to use an on-premises AD RMS server](/office365/SecurityCompliance/configure-irm-to-use-an-on-premises-ad-rms-server), but we strongly recommend you to [migrate to Azure RMS](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) to use new features like secure collaboration with other organizations.
+Azure RMS is integrated with Microsoft 365 and available to all customers. To configure Microsoft 365 to use Azure RMS, see [Configure IRM to use Azure Rights Management and Set up Information Rights Management (IRM) in SharePoint admin center](../enterprise/activate-rms-in-microsoft-365.md). If you operate on-premises Active Directory (AD) RMS server, then you can also [configure IRM to use an on-premises AD RMS server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server), but we strongly recommend you to [migrate to Azure RMS](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) to use new features like secure collaboration with other organizations.
 
 When you protect customer data with Azure RMS, Azure RMS uses a 2048-bit RSA asymmetric key with SHA-256 hash algorithm for integrity to encrypt the data. The symmetric key for Office documents and email is AES 128-bit. For each document or email that is protected by Azure RMS, Azure RMS creates a single AES key (the "content key"), and that key is embedded in the document, and persists through editions of the document. The content key is protected with the organization's RSA key (the "Azure Information Protection tenant key") as part of the policy in the document, and the policy is also signed by the author of the document. This tenant key is common to all documents and emails that are protected by Azure RMS for the organization and this key can only be changed by an Azure Information Protection administrator if the organization is using a tenant key that is customer-managed. For more information about the cryptographic controls used by Azure RMS, see [How does Azure RMS work? Under the hood](/information-protection/understand-explore/how-does-it-work).
 
@@ -62,8 +63,8 @@ If you want to ensure secure communication with a partner, you can use inbound a
 
 Exchange Online Protection (EOP) and Exchange Online support inbound validation of Domain Keys Identified Mail (DKIM) messages. DKIM is a method for validating that a message was sent from the domain it says it originated from and that it wasn't spoofed by someone else. It ties an email message to the organization responsible for sending it, and is part of a larger paradigm of email encryption. For more information about the three parts of this paradigm, see:
 
-- [Set up SPF to help prevent spoofing](/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/email-authentication-spf-configure)
 
-- [Use DKIM to validate outbound email sent from your custom domain](/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- [Use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure)
 
-- [Use DMARC to validate email](/office365/SecurityCompliance/use-dmarc-to-validate-email)
+- [Use DMARC to validate email](/microsoft-365/security/office-365-security/email-authentication-dmarc-configurel)

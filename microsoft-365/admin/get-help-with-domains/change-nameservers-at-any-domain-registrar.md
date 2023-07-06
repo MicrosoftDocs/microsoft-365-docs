@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,6 +34,8 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 ---
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
+
+
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 

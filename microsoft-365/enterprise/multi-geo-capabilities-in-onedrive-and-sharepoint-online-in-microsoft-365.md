@@ -1,6 +1,7 @@
 ---
 title: "Multi-Geo Capabilities in OneDrive and SharePoint Online"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -31,7 +32,7 @@ Users get a seamless experience when using Microsoft 365 services, including Off
 
 ## OneDrive
 
-Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL. Personal files are then kept in that geo location, though they can be shared with users in other geo locations.
+Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL. Personal files are then kept in that geo location, though they can be shared with users in other geo locations. Note that administrative options found under the OneDrive tab of an active user within the Microsoft 365 admin center are currently not supported for multi-geo tenants.
 
 ## SharePoint Sites and Groups
 

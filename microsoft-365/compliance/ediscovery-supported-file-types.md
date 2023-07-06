@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,7 +23,10 @@ ms.custom: seo-marvel-apr2020
 
 # Supported file types in eDiscovery (Premium)
 
-Microsoft Purview eDiscovery (Premium) supports many file types at many different levels. The support files types are described in the following tables in this article. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in eDiscovery (Premium).
+Microsoft Purview eDiscovery (Premium) supports many file types at many different levels. The currently supported files types are described in the following tables in this article. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer, and also supported in the Annotate viewer in eDiscovery (Premium).
+
+> [!IMPORTANT]
+> If a file type isn't listed in the following tables, it isn't currently supported in eDiscovery solutions.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -36,10 +39,13 @@ Microsoft Purview eDiscovery (Premium) supports many file types at many differen
 |Mime type|File identification|Metadata extraction|Container extraction|Possible Extensions|
 |---|:---:|:---:|:---:|:---:|
 |application/x-7z-compressed|Yes|Yes|Yes|.7z|
-|application/x-rar-compressed|Yes|Yes|Yes|.rar|
+|application/x-rar-compressed|Yes|Yes|Yes|.rar<sup>1</sup>|
 |application/x-tar|Yes|Yes|Yes|.tar|
 |application/zip|Yes|Yes|Yes|.zip|
 |
+
+> [!NOTE]
+> <sup>1</sup> Version 5 .rar files aren't currently supported.
 
 ## Audio / Video
 

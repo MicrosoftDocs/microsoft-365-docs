@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 04/08/2021
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
@@ -52,7 +53,7 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |8|Auditing events|Auditing event signals are available in [endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (These signals are not available with non-Microsoft antivirus solutions.)|
 |9|Geographic data|Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001).|
 |10|File recovery via OneDrive|If you are using Microsoft Defender Antivirus together with [Office 365](/Office365/Enterprise), and your device is attacked by ransomware, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
-|11|Technical support|By using Microsoft Defender for Endpoint together with Microsoft Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)and [review event logs and error codes with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md).|
+|11|Technical support|By using Microsoft Defender for Endpoint together with Microsoft Defender Antivirus, you have one company to call for technical support. [Troubleshoot service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)and [review event logs and error codes with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/).|
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

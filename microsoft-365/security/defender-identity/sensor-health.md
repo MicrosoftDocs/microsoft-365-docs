@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender 
-description: Learn how to configure Microsoft Defender for Identity sensors and monitor their health in Microsoft 365 Defender 
+title: Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
+description: Learn how to configure Microsoft Defender for Identity sensors and monitor their health in Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
-author: dcurwin
-ms.author: dacurwin
+author: batamig
+ms.author: bagol
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
@@ -21,8 +21,8 @@ search.appverid: met150
 
 This article explains how to configure and monitor [Microsoft Defender for Identity](/defender-for-identity) sensors in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
->[!IMPORTANT]
->As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> [!IMPORTANT]
+> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## View Defender for Identity sensor settings and status
 
@@ -34,8 +34,8 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
     [![Sensor page.](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
 
-    >[!NOTE]
-    >In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft 365 Defender they're now on the same page.
+    > [!NOTE]
+    > In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft 365 Defender they're now on the same page.
 
 1. If you select **Filters**, you can choose which filters will be available. Then with each filter, you can choose which sensors to display.
 
@@ -50,7 +50,6 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 1. If you select any of the health issues, you'll get a pane with more details about them. If you choose a closed issue, you can reopen it from here.
 
    :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="The Issue details" lightbox="../../media/defender-identity/issue-details.png":::
-    
 
 1. If you select **Manage sensor**, a pane will open where you can configure the sensor details.
 

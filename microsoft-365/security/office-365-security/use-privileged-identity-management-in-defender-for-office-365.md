@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/03/2021
+ms.date: 1/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: high
@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
   - m365-security
-  - m365initiative-defender-office365
+  - tier1
 ms.custom:
   - seo-marvel-apr2020
 description: Learn to integrate Azure PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
@@ -45,7 +45,7 @@ In this example we will configure "Alex", a member of our security team who will
 3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
 4. As this is Alex's normal privilege level for day-to-day operations, we will Uncheck **Require justification on activation**' > **Update**.
 5. Select **Add Assignments** > **No member selected** > select or type the name to search for the correct member.
-6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permanently Eligible* will be defaults ) and **Assign**.
+6. Click the **Select** button to choose the member you need to add for PIM privileges > click **Next** > make no changes on the Add Assignment page (both assignment type *Eligible* and duration *Permanently Eligible* will be defaults) and **Assign**.
 
 The name of your user (here 'Alex') will appear under Eligible assignments on the next page, this means they are able to PIM into the role with the settings configured earlier.
 
@@ -62,7 +62,7 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions & Roles**, and then select **Roles** under **Email and Collaboration**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
 2. On the **Permissions** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
@@ -83,7 +83,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 1. [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
    ```powershell
-   Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   Add-RoleGroupMember "<Role Group Name>" -Member "<Azure Security Group>"`
    ```
 
 ## Test your configuration of PIM with Defender for Office 365

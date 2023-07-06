@@ -16,9 +16,11 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/26/2022
 ---
 
 # Ask Defender Experts

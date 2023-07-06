@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -41,5 +41,4 @@ Admins can view this policy in the [Microsoft Purview compliance portal](https:/
 
 ## Edit or delete the default policy
 
-To [edit the default policy for better performance or to delete it](create-test-tune-dlp-policy.md#tune-a-dlp-policy), just use an account with **DLP Compliance Management** permissions. For more information, see, [Permissions](create-test-tune-dlp-policy.md#permissions).
-
+To [edit the default policy for better performance or to delete it](dlp-create-deploy-policy.md), just use an account with **DLP Compliance Management** permissions. For more information, see, [Permissions](dlp-create-deploy-policy.md#permissions).

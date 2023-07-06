@@ -1,3 +1,6 @@
+---
+ms.date: 04/07/2022
+---
 > [!NOTE]
 > Microsoft Teams is evolving on a regular basis—new features and functionality are added frequently. Please monitor the following resources to stay up-to-date:
 > - Follow the [Teams Blog](https://aka.ms/teamsblog).

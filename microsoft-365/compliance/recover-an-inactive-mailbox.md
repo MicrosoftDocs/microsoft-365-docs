@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -34,7 +34,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserv
 See the [More information](#more-information) section for more details about the differences between recovering and restoring an inactive mailbox, and for a description of what happens when an inactive mailbox is recovered.
 
 > [!NOTE]
-> You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox and then import to another mailbox. For instructions, see following articles:
+> You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If, for compliance reasons, you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox. This action is supported for eDiscovery purposes only, and can't be used as a backup solution. For instructions to use content search for the recovery of data for eDiscovery, see following articles:
 >
 > - [Content search](ediscovery-content-search.md)
 > - [Export content search results](export-search-results.md)

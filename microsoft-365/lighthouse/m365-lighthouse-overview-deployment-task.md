@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,10 +27,10 @@ A tenant's deployment plan is complete when all tasks are compliant or explicitl
 
 |Factor|Description|
 |---|---|
-|Is the tenant licensed for the required services associated with the task?|<ul><li>Tasks that aren't licensed won't be eligible for deployment.</li><li>Tasks that aren't licensed may be dismissed.</li><li>Lighthouse will direct users to the Business Workshop Tool to determine licensing needs.</li><li>Once Lighthouse detects that the tenant is licensed for the required services associated with the task, the status will be updated automatically.</li></ul>|
-|Is the task related to other tasks?|<ul><li>Tasks related to other tasks must be completed in sequential order.</li><li>Subsequent tasks will be eligible for deployment once the pre-requisite tasks are compliant.</li></ul>|
+|Is the tenant licensed for the required services associated with the task?|<ul><li>Tasks that aren't licensed won't be eligible for deployment.</li><li>Tasks that aren't licensed may be **Dismissed**.</li><li>Once Lighthouse detects that the tenant is licensed for the required services associated with the task, the status will be updated automatically.</li></ul>|
+|Is the task related to other tasks?|<ul><li>Tasks related to other tasks must be completed in sequential order.</li><li>Subsequent tasks will be eligible for deployment once the pre-requisite tasks are **Compliant**.</li></ul>|
 |Can the configuration associated with the task be deployed through Lighthouse?|<ul><li>Tasks that require configurations that can't be deployed through Lighthouse will require manual implementation.</li><li>Lighthouse can't deploy tasks when it can't detect any existing configuration.</li></ul>|
-|Was the task dismissed?|<ul><li>Dismissed tasks aren't eligible for deployment.</li><li>Dismissed tasks can be reinstated.</li><li>Once a task is reinstated, the status will be updated automatically.</li></ul>|
+|Was the task dismissed?|<ul><li>Dismissed tasks aren't eligible for deployment.</li><li>Dismissed tasks can be **Reinstated**.</li><li>Once a task is **Reinstated**, the status will be updated automatically.</li></ul>|
 |Is the task compliant?|<ul><li>Compliant tasks require no further action, but users may review task details and existing configurations.</li></ul>|
 
 ## Related content

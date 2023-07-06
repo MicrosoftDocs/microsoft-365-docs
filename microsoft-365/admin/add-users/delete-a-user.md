@@ -3,8 +3,9 @@ title: "Delete a user from your organization"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -48,8 +49,8 @@ Before you begin, think about what you want to do with the user's email and OneD
 |:-----|:-----|
 |Product licenses  <br/> |You can remove the license from the user and remove it from your subscriptions to stop paying for that license. If you select this option, the license will be removed automatically from your subscriptions.  <br/><br/> **You can't remove the license** if you bought it through a Partner or volume licensing. If you're paying for an annual plan or if you're in the middle of a billing cycle, you won't be able to remove the license from your subscription until your commitment is completed.  <br/> |
 |OneDrive content  <br/> |If the user saved their files to OneDrive, you can give another user access to these files.  <br/><br/> You'll need to move the files you want to keep within the retention period that is set for OneDrive files. **By default, the retention period is 30 days.** If you don't move the files within the retention period after deleting the user, the OneDrive for the deleted user is moved to the site collection recycle bin, where it is kept for 93 days. During this time, users will no longer be able to access any shared content in the OneDrive. To restore the OneDrive, you need to use PowerShell. For info, see [Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive).<br/><br/> To increase the number of days that you retain OneDrive files for deleted accounts, see [Set the OneDrive retention for deleted users](/onedrive/set-retention).  <br/><br/> **Important!** If the deleted user used a personal computer to download files from SharePoint and OneDrive, there's no way for you to wipe those files they stored on their computer. They will continue to have access to any files that were synced from OneDrive.           |
-|Email  <br/> | Giving another user access to the deleted user's email will convert the deleted user's mailbox to a shared mailbox. The new mailbox owner can then access the mailbox and monitor for new email. You'll also have the following options:  <br/>  <br/>Change the display name - We recommend changing the display name so that it will be easy to identify the shared mailbox in the **Active users** list.  <br/>  <br/>  Turn on automatic replies - We've already written a polite automatic reply for you. You can send different automatic replies to people within your organization and people from outside your organization. <br/> <br/> [Remove any existing calendar permissions](/powershell/module/exchange/remove-mailboxfolderpermission?view=exchange-ps) using PowerShell. <br/> <br/> Clean up aliases - Aliases are additional email addresses for users. Some organizations don't use them, so if you don't have any you don't need to do anything else here. If the user does have aliases, we recommend removing them so that you can reuse those email addresses. Otherwise, you can't reuse those email addresses until the retention period for deleted mailboxes has passed. By default, a deleted mailbox is recoverable for 30 days. For more information, see  [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
-|Active Directory  <br/> |If your business uses **Active Directory** that is synchronizing with Azure AD, you need to delete the user account from Active Directory. You can't do it through Office 365. For instructions, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
+|Email  <br/> | Giving another user access to the deleted user's email will convert the deleted user's mailbox to a shared mailbox. The new mailbox owner can then access the mailbox and monitor for new email. You'll also have the following options:  <br/>  <br/>Change the display name - We recommend changing the display name so that it will be easy to identify the shared mailbox in the **Active users** list.  <br/>  <br/>  Turn on automatic replies - We've already written a polite automatic reply for you. You can send different automatic replies to people within your organization and people from outside your organization. <br/> <br/> [Remove any existing calendar permissions](/powershell/module/exchange/remove-mailboxfolderpermission) using PowerShell. <br/> <br/> Clean up aliases - Aliases are additional email addresses for users. Some organizations don't use them, so if you don't have any you don't need to do anything else here. If the user does have aliases, we recommend removing them so that you can reuse those email addresses. Otherwise, you can't reuse those email addresses until the retention period for deleted mailboxes has passed. By default, a deleted mailbox is recoverable for 30 days. For more information, see  [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
+|Active Directory  <br/> |If your business uses **Active Directory** that is synchronizing with Azure AD, you need to delete the user account from Active Directory. You can't do it through Microsoft 365. For instructions, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
 ### Get started
 
@@ -69,7 +70,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 
 2. Select the user that you want to delete, and then select **Delete user**.
 
-## User management admin: Delete one or more users from Office 365
+## User management admin: Delete one or more users from Microsoft 365
 
 > [!IMPORTANT]
 > Don't delete a user's account if you've [converted it to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md) or if you've set up email forwarding on the account. Those functions still need the account. A shared mailbox doesn't require a license. If you've converted the account to a shared mailbox you can [Stop paying for the license](#stop-paying-for-the-license). If you've set up email forwarding on the account, you can't remove the license. Doing so will stop email forwarding and deactivate the mailbox.
@@ -116,7 +117,7 @@ Later when you go through the steps to add another person to your business, you'
 
 ## Delete many users at the same time
 
-See the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
+See the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
 
 ## Fix issues with deleting a user
 
@@ -134,6 +135,6 @@ Here are the most common issues people encounter when deleting a user:
 
 [Restore a user](restore-user.md) (article)\
 [Permanently delete a mailbox](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\
-[Remove a former employee from Office 365](remove-former-employee.md) (article)\
-[Add a new employee to Office 365](add-new-employee.md) (article)\
-[Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365. (article)
+[Remove a former employee from Microsoft 365](remove-former-employee.md) (article)\
+[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
+[Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Microsoft 365. (article)

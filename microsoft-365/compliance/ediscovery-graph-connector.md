@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/15/2022
+ms.date: 02/22/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,7 +26,7 @@ search.appverid:
 
 # Use Graph connectors with eDiscovery (Premium)
 
-Microsoft 365 customers can perform eDiscovery searches on content ingested for enterprise search. This will help organizations improve their compliance posture to external content sources by bringing them within the purview of Microsoft compliance solutions.
+Microsoft 365 customers can perform eDiscovery searches on content ingested for enterprise search. This support helps organizations improve their compliance posture to external content sources by bringing them within the purview of Microsoft compliance solutions.
 
 With Graph connectors, you can enable content from external data sources to be available to Microsoft Purview eDiscovery premium solution. Learn more about establishing Graph Connectors for your organization here: [Microsoft Graph connectors overview for Microsoft Search](/microsoftsearch/connectors-overview).
 
@@ -34,9 +34,9 @@ With Graph connectors, you can enable content from external data sources to be a
 
 ## Add Graph Connector as a data source within a case
 
-Once Graph Connectors are established for an organization and eDiscovery is enabled, the option to add the Graph Connector data source to the case will be available under non-Microsoft 365 locations. Only the connectors that have been established and enabled will be available to the eDiscovery manager for inclusion in a case.
+Once you establish Graph Connectors and eDiscovery is enabled in your organization, the option to add the Graph Connector data source to the case will be available under non-Microsoft 365 locations. Only the established and enabled connectors are available to the eDiscovery manager for inclusion in a case.
 
-:::image type="content" source="../media/ediscovery-graph-new.png" alt-text="You can select Graph as a data source.":::
+![You can select Graph as a data source.](../media/ediscovery-graph-new.png)
 
 ## Collect Graph Connectors content
 

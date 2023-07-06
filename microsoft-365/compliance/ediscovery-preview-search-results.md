@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,12 +27,13 @@ ms.custom:
 
 After you run a Content search or a search associated with a Microsoft Purview eDiscovery (Standard) case, you can preview a sample of the results returned by the search. Previewing items returned by the search query can help you determine if the search is returning the results you hope for or if you need to change the search query and rerun the search.
 
+> [!NOTE]
+> There may be scenarios when the preview sample doesn't contain all available results of searches. For the most accurate and complete search results, you need to [export](/microsoft-365/compliance/ediscovery-export-search-results) the search results.
+
 To preview a sample of results returned by a search:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to the **Content search** or an eDiscovery (Standard) case.
-
 2. Select search to display the flyout page.
-
 3. On the bottom of the flyout page, select **Review sample**.
 
    ![Select Review sample on the flyout page to preview results.](../media/PreviewSearchResults1.png)
@@ -42,7 +44,7 @@ To preview a sample of results returned by a search:
 
    ![Preview items in the reading pane.](../media/PreviewSearchResults2.png)
 
-   In the previous screenshot, notice that keywords from the search query are highlighted when you preview items.
+   In the previous screenshot, the keywords from the search query are highlighted when you preview items.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -50,9 +52,9 @@ To preview a sample of results returned by a search:
 
 A maximum of 1,000 randomly selected items are available to preview. In addition to being randomly selected, items available for preview must also meet the following criteria:
 
-- A maximum of 100 items from a single content location (a mailbox or a site) can be previewed. This means that it's possible that less than 1,000 items might be available for preview. For example, if you search four mailboxes and the search returns 1,500 estimated items, only 400 will be available for preview because only 100 items from each mailbox can be previewed.
-- For mailbox items, only email messages are available to preview. Items like tasks, calendar items, and contacts can't be previewed.
-- For site items, only documents are available to preview. Items like folders, lists, or list attachments can't be previewed.
+- A maximum of 100 items from a single content location (a mailbox or a site) can be previewed. This maximum means that it's possible that less than 1,000 items might be available for preview. For example, if you search four mailboxes and the search returns 1,500 estimated items, only 400 are available for preview because only 100 items from each mailbox can be previewed.
+- For mailbox items, only email messages are available to preview. Preview for items like tasks, calendar items, and contacts aren't available.
+- For site items, only documents are available to preview. Preview for items like folders, lists, or list attachments aren't available.
 
 ## File types supported when previewing search results
 

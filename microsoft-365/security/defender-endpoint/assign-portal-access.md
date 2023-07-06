@@ -1,5 +1,5 @@
 ---
-title: Assign user access to Microsoft Defender Security Center
+title: Assign user access 
 description: Assign read and write or read only access to the Microsoft Defender for Endpoint portal.
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
@@ -18,9 +18,10 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 3/30/2023
 ---
 
-# Assign user access to Microsoft Defender Security Center
+# Assign user access 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -12,21 +12,21 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-ms.date: 08/21/2020
+ms.date: 6/20/2023
 ms.collection:
   - m365-security
+  - tier2
 description: Integrate your organization's SIEM server with Microsoft Defender for Office 365 and related threat events in the Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # SIEM integration with Microsoft Defender for Office 365
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -51,20 +51,20 @@ The SIEM server or other similar system polls the **audit.general** workload to 
 
 The following table summarizes the values of **AuditLogRecordType** that are relevant for Microsoft Defender for Office 365 events:<br/><br/>
 
-| Value | Member name | Description |
+|Value|Member name|Description|
 |---|---|---|
-| 28| ThreatIntelligence | Phishing and malware events from Exchange Online Protection and Microsoft Defender for Office 365. |
-| 41| ThreatIntelligenceUrl | Safe Links time-of-block and block override events from Microsoft Defender for Office 365. |
-| 47| ThreatIntelligenceAtpContent | Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams, from Microsoft Defender for Office 365. |
-| 64| AirInvestigation | Automated investigation and response events, such as investigation details and relevant artifacts, from Microsoft Defender for Office 365 Plan 2. |
+|28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Microsoft Defender for Office 365.|
+|41|ThreatIntelligenceUrl|Safe Links time-of-block and block override events from Microsoft Defender for Office 365.|
+|47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams, from Microsoft Defender for Office 365.|
+|64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts, from Microsoft Defender for Office 365 Plan 2.|
 
 > [!IMPORTANT]
 > You must have either the global administrator or Security Administrator role assigned in the Microsoft 365 Defender portal to set up SIEM integration with Microsoft Defender for Office 365. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 >
-> Audit logging must be turned on for your Microsoft 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+> Audit logging must be turned on for your Microsoft 365 environment (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
 ## See also
 
 [Office 365 threat investigation and response](office-365-ti.md)
 
-[Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)
+[Automated investigation and response (AIR) in Office 365](air-about-office.md)

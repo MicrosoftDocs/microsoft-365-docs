@@ -1,6 +1,7 @@
 ---
 title: "End of lifecycle options for groups, teams, and Yammer"
 ms.reviewer: mmclean
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

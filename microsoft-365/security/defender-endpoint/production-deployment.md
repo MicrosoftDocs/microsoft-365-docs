@@ -21,6 +21,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
@@ -29,6 +30,8 @@ search.appverid: met150
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -53,7 +56,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 ## Check license state
 
-Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
+Checking for the license state and whether it was properly provisioned can be done through the admin center or through the **Microsoft Azure portal**.
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 

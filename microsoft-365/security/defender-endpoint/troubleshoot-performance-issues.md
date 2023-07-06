@@ -27,6 +27,8 @@ ms.collection:
 
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
@@ -45,6 +47,8 @@ You can also provide additional logs to your submission to Microsoft support by 
 
 - [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
 - [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
+
+For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
 ## Check with vendor for antivirus exclusions
 
@@ -314,3 +318,4 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 - [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

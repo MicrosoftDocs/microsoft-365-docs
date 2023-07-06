@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 04/29/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -62,4 +62,3 @@ This bundled named entity SIT contains these individual SITs.
 - Medical specialties
 - Surgical procedures
 - Brand medication names
-

@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
+ms.date: 03/13/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -24,7 +24,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 You can set up a data connector in the Microsoft Purview compliance portal to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
-Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the compliance portal, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
+Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the compliance portal, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
 > [!IMPORTANT]
 > A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the compliance portal, select the **Connectors** tab, and then select **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
@@ -37,11 +37,13 @@ Setting up a connector for HR data that insider risk management policies can use
 
 - Determine how to retrieve or export the data from your organization's HR system (and regularly) and add it to the CSV files that you create in Step 1. The script that you run in Step 4 will upload the HR data in the CSV files to the Microsoft cloud.
 
-- The user who creates the HR connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the HR connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom Microsoft Purview role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-microsoft-purview-role-group).
 
 - The sample script that you run in Step 4 will upload your HR data to the Microsoft cloud so that it can be used by the insider risk management solution. This sample script isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 - This connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore aren't covered by the Microsoft Purview and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant. For step-by-step instructions for setting up an HR connector in a GCC environment, see [Set up a connector to import HR data in US Government](import-hr-data-US-government.md).
+
+- Add the *webhook.ingestion.office.com* domain to your firewall allowlist for your organization.
 
 ## Step 1: Prepare a CSV file with your HR data
 
@@ -73,7 +75,7 @@ The type of HR data to import depends on the insider risk management policy and 
 | Healthcare policy| Employee profile |
 |||
 
-For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policies.md#policy-templates).
+For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policy-templates.md#policy-templates).
 
 For each HR scenario, you'll need to provide the corresponding HR data in one or more CSV files. The number of CSV files to use for your insider risk management implementation is discussed later in this section.
 
@@ -313,6 +315,9 @@ If you haven't already done so, you can copy the values for the **Azure App ID**
 You can also select **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
 ## Step 4: Run the sample script to upload your HR data
+
+> [!IMPORTANT]
+> You must add the *webhook.ingestion.office.com* domain to your firewall allowlist for your organization. If this domain is blocked, the script won't run. 
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 

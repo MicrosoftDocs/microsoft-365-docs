@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
+ms.date: 06/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -46,13 +47,13 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft Purview compliance portal.
 
 > [!NOTE]
-> Now in preview, a sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+> A sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Understand how the encryption works
 
-Unless you're using [S/MIME for Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook), encryption that's applied by sensitivity labels to documents, emails, and meeting invites uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+Unless you're using [S/MIME for Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook), encryption that's applied by sensitivity labels to documents, emails, and meeting invites all use the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](/azure/information-protection/configure-super-users).
 
@@ -88,17 +89,17 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 ## How to configure a label for encryption
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the label's scope: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Items** is selected for the [label's scope](sensitivity-labels.md#label-scopes): 
     
-    ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
+    :::image type="content" source="../media/filesandemails-scope-options-sensitivity-label.png" alt-text="Sensitivity label scope option Items for encryption.":::
 
-2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Encrypt items**. Additionally, select **Include meetings** if the settings should extend to [meeting invites and replies](sensitivity-labels-meetings.md).
+2. Then, on the **Choose protection settings for labeled items** page, make sure you select **Apply or remove encryption**.
     
     :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Sensitivity label protection options for items." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  On the **Encryption** page, select one of the following options:
     
-    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label will remove existing encryption, even if it was applied independently from a sensitivity label.
+    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label removes existing encryption, even if it was applied independently from a sensitivity label.
         
         It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption. For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section.
     
@@ -279,9 +280,15 @@ For more information, see [Rights Management issuer and Rights Management owner]
 ### Double Key Encryption
 
 > [!NOTE]
-> This feature is currently supported only by the Azure Information Protection unified labeling client, and if you haven't enabled your tenant for co-authoring and AutoSave for encrypted document.
+> For built-in labeling, this feature is currently in preview. For release details, use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)**.
+> 
+> When you use the Azure Information Protection (AIP) Office add-in, DKE is supported only when you haven't enabled your tenant for co-authoring and AutoSave.
 
-Select this option only after you've configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied. After the label is configured and saved, you won't be able to edit it.
+Limitation for the preview of Double Key Encryption and built-in labeling:
+
+- Currently, sensitivity labels using built-in labeling and configured for Double Key Encryption don't apply content markings in Outlook.
+
+Select the **Double Key Encryption** label option only after you've configured the Double Key Encryption service and you need to use this double key encryption for files and emails that will have this label applied. After the label is configured and saved, you won't be able to edit it.
 
 For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
 
@@ -296,13 +303,16 @@ You can use the following options to let users assign permissions when they manu
     
     The Do Not Forward option is supported by all email clients that support sensitivity labels. However, applying the **Encrypt-Only** option with a sensitivity label is a more recent release that's supported only by built-in labeling and not the Azure Information Protection unified labeling client. For email clients that don't support this capability, the label won't be visible.
     
-    To check the minimum versions of Outlook apps that use built-in labeling to support applying the Encrypt-Only option with a sensitivity label, use the [capabilities table for Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) and the row **Let users assign permissions: - Encrypt-Only**.
+    To check the minimum versions of Outlook apps that use built-in labeling to support applying the Encrypt-Only option with a sensitivity label, use the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Let users assign permissions: - Encrypt-Only**.
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations.
 
     This option is supported by the Azure Information Protection unified labeling client and by some apps that use built-in labeling. For apps that don't support this capability, the label either won't be visible for users, or the label is visible for consistency but it can't be applied with an explanation message to users.
     
-    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
+    To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
+
+> [!NOTE]
+> You won't be able to use these configurations if the label scope excludes email (for Do Not Forward and Encrypt-Only) or excludes files (for prompting users in Word, PowerPoint, and Excel). For more information, see [Scope labels to just files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails).
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -313,7 +323,7 @@ When the options are supported, use the following table to identify when users s
 
 When both settings are selected, the label is therefore visible in both Outlook and in Word, Excel, and PowerPoint.
 
-A sensitivity label that lets users assign permissions must be applied to content manually by users; it can't be auto-applied or used as a recommended label.
+A sensitivity label that lets users assign permissions can be recommended to users, but can only be automatically applied for the Do Not Forward and Encrypt-Only options.
 
 Configuring the user-assigned permissions:
 
@@ -321,7 +331,7 @@ Configuring the user-assigned permissions:
 
 ### Outlook restrictions
 
-In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, you can choose the **Do Not Forward option** or **Encrypt-Only**. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
+In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, you can choose the **Do Not Forward option** or **Encrypt-Only**. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions. For this configuration, the administrator controls the permissions, but not who has access.
 
 ![Sensitivity label applied to message in Outlook.](../media/sensitivity-label-outlook-protection-applied.png)
 
@@ -339,34 +349,22 @@ Unencrypted Office documents that are attached to the email or meeting invite au
 
 ### Word, PowerPoint, and Excel permissions
 
-In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, the user is prompted to specify their choice of users and permissions for the encryption.
-
-For example, with the Azure Information Protection unified labeling client, unless [co-authoring is enabled](sensitivity-labels-coauthoring.md), users can:
-
-- Select a permission level, such as Viewer (which assigns View Only permission) or Co-Author (which assigns View, Edit, Copy, and Print permissions).
-- Select users, groups, or organizations. This can include people both inside or outside your organizations.
-- Set an expiration date, after which the selected users can't access the content. For more information, see the above section [Rights Management use license for offline access](#rights-management-use-license-for-offline-access).
-
-![Options for user to protect with custom permissions.](../media/sensitivity-aip-custom-permissions-dialog.png)
-
-For built-in labeling, and for the Azure Information Protection unified labeling client when [co-authoring is enabled](sensitivity-labels-coauthoring.md), users see the same dialog box as if they selected the following options:
-
-- Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
-
-- macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
-
-> [!TIP]
-> If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, the user is prompted to specify their choice of users and permissions for the encryption. For this configuration, the user and not the administrator controls both who can access the document, and what permissions they have.
 
 #### Support for organization-wide custom permissions
 
-Now rolling out in preview for built-in labeling in Windows, users can specify a domain name that will apply to all users in an organization that owns the domain and it is in Azure Active Directory. This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+For built-in labeling in Windows, users can additionally specify a domain name when they're prompted to specify their choice of users and permissions. When a domain name is entered, the permissions will apply to all users in an organization that owns the domain and it is in Azure Active Directory. To identify the minimum versions that support this setting, use the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Let users assign permissions:- Prompt users for custom permissions (users, groups, and organizations)**. 
+
+This capability provides [parity with the Azure Information Protection unified labeling client](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
 
 ![Updated dialog box to support organization-wide custom permissions.](../media/org-wide-custom-permissions-dialog.png)
 
-For example, a user types "@contoso.com" (or "contoso.com") and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
+For example, a user types **@contoso.com** (or **contoso.com**) and grants read access. Because Contoso Corporation owns the contoso.com domain, all users in that domain and all other domains that the organization owns in Azure Active Directory will be granted read access.
 
-It's important to let users know that access isn't restricted to just the users in the domain specified. For example, "@sales.contoso.com" wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
+> [!NOTE]
+> When you specify these values, don't surround them with quotation marks.
+
+It's important to let users know that access isn't restricted to just the users in the domain specified. For example, **@sales.contoso.com** wouldn't restrict access to users in just the sales subdomain, but also grant access to users in the marketing.contoso.com domain, and even users with a disjoint namespace in the same Azure Active Directory tenant.
 
 ## Example configurations for the encryption settings
 

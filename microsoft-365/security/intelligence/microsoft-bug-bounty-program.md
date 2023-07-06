@@ -14,6 +14,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.reviewer: 
 search.appverid: met150
+ms.date: 03/18/2022
 ---
 
 # About the Microsoft Bug Bounty Program

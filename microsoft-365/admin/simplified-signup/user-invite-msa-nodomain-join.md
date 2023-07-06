@@ -3,8 +3,9 @@ title: "Accept an email invitation to a Microsoft 365 for business subscription 
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 08/26/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -44,11 +45,11 @@ Your email looks like this to set up your user account. When you get this email,
 
 5. On the Review permissions page, choose **Accept**.
 
-6. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
+6. On the Welcome to Microsoft 365 page, you can download Microsoft 365 desktop and mobile apps, and set up OneDrive.
 
 ### Next steps
 
-Download and start using [Office apps for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
+Download and start using [Microsoft 365 for business](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
 ## Frequently asked questions
 

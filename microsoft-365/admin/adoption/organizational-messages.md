@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 11/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - Tier2
@@ -206,13 +207,13 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > Each tenant can have one active message for each insight. If you want to schedule a new message, you can go to the **Your org's message** page to cancel active ones.
 
-## FAQ
+## FAQs
 
 ### Q: Why does the total number of messages seen differ from the expected number?
 
 A: For any given message, not every user **in its selected audience** (selected as message recipients) will receive the message. This is expected behavior because the message delivery depends on other factors that affect a message's reach, including:
 
-- **User behavior**: some delivery channels require the user to go to a specific location/app to have a chance to see the message (for example, an Office desktop app call-out message can only be delivered to a user who opens the Office desktop app).
+- **User behavior**: some delivery channels require the user to go to a specific location/app to have a chance to see the message (for example, a  Microsoft 365 app call-out message can only be delivered to a user who opens the Microsoft 365 app).
 
 - **System protections to prevent over-messaging and user dissatisfaction**: some communication channels have message frequency limits if too many messages are live at a given time (for example, a Teaching call-out won't appear more than twice to each user).
 
@@ -228,9 +229,9 @@ A: As the frequency of the messages is at most once a week, the recommended mini
 
 A: Not currently, but additional customization options will be enabled in future releases.
 
-## Organizational Messages in Microsoft Intune (Windows Endpoint Manager)
+## Organizational Messages in Microsoft Intune
 
-Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/organizational-messages-prerequisites).
+Organizational messages in Intune enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-prerequisites).
 
 ## Appendix
 

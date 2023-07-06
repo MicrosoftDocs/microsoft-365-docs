@@ -11,11 +11,12 @@ metadata:
   services: service
   ms.service: microsoft-365-enterprise
   ms.topic: hub-page # Required
+  ms.localizationpriority: high
   ms.collection: 
   - M365-subscription-management
   - Adm_TOC
   author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kelleyvice-msft #Required; microsoft alias of author; optional team alias.
+  ms.author: kvice #Required; microsoft alias of author; optional team alias.
   ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)

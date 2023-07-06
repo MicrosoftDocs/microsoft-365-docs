@@ -30,7 +30,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Endpoint Configuration Manager current branch
+- Microsoft Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -45,7 +45,7 @@ You can use Configuration Manager to onboard endpoints to the Microsoft Defender
 
 There are several options you can use to onboard devices using Configuration Manager:
 - [Onboard devices using System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
-- [Tenant attach](/mem/configmgr/tenant-attach/)
+- [Tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started)
 
 
 
@@ -95,7 +95,7 @@ After onboarding devices to the service, it's important to take advantage of the
 
 ### Device collection configuration
 
-If you're using Endpoint Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
+If you're using Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
 
 ### Next generation protection configuration
 
@@ -121,7 +121,7 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
-For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Endpoint Configuration Manager (SCCM) follow the steps:
+For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.
@@ -201,9 +201,9 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-### Offboard devices using Microsoft Endpoint Manager current branch
+### Offboard devices using Microsoft Configuration Manager current branch
 
-If you use Microsoft Endpoint Manager current branch, see [Create an offboarding configuration file](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+If you use Microsoft Configuration Manager current branch, see [Create an offboarding configuration file](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
@@ -224,7 +224,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ## Monitor device configuration
 
-If you're using Microsoft Endpoint Manager current branch, use the built-in Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+If you're using Microsoft Configuration Manager current branch, use the built-in Defender for Endpoint dashboard in the Configuration Manager console. For more information, see [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
 If you're using System Center 2012 R2 Configuration Manager, monitoring consists of two parts:
 

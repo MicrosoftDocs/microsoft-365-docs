@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 08/25/2022
+ms.date: 03/27/2023
 search.appverid: met150
 ---
 
@@ -28,7 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,6 +60,7 @@ For more information about individual attack surface reduction rules, see [Attac
 ## Prerequisites
 
 > [!IMPORTANT]
+> To access the **Attack surface reduction rules report**, read permissions are required for the Microsoft 365 Defender portal. Access to this report granted by Azure AD roles, such as Security Global Admin or Security role, is being deprecated and will be removed in April 2023.
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in the **Attack surface reduction rules report**, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## Report access permissions
@@ -119,7 +120,7 @@ Clicking on the **ASR rules detections** link at the top of the card also opens 
 
 **The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three \(ASR\) standard protection rules](#simplified-standard-protection-option) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
 
-**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The "View configuration" button surfaces all configuration details for all ASR rules. The "Add exclusion" button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
+**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The "View configuration" button surfaces all configuration details for all ASR rules. The "Add exclusion" button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Intune.
 
 Provides two 'action' buttons:
 
@@ -174,6 +175,9 @@ Filtering provides a way for you to specify what results are returned:
 
 > [!NOTE]
 > When filtering by rule, the number of individual _detected_ items listed in the lower half of the report is currently limited to 200 rules. You can use **Export** to save the full list of detections to Excel.
+
+> [!TIP]
+> As the filter currently functions in this release, every time you want to "group by", you must first scroll down to last detection in the list to load the complete data set. After you have loaded the complete data set, you can then launch the "sort by" filtering. If you don't scroll down to last detection listed on every use or when changing filtering options (for example, the ASR rules applied to the current filter run), then results will be incorrect for any result that has more than one viewable page of listed detections.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
@@ -284,7 +288,7 @@ When you select a file, a **Summary & expected impact** fly out opens, presentin
 
 The Add exclusion page has two buttons for actions that can be used on any detected files (after selection). You can:
 
-- **Add exclusion** which will open Microsoft Endpoint Manager (MEM) ASR policy page. For more information, see: [MEM](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
+- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](enable-attack-surface-reduction.md) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::

@@ -3,8 +3,9 @@ title: "Enroll your mobile device using Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 08/26/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,7 +27,7 @@ description: "Before you can use Microsoft 365 services with your device, you mi
 # Enroll your mobile device using Basic Mobility and Security
 
 Using your phone, tablet, and other mobile devices for work is a great way to stay informed and work on business projects while you’re away from the office. Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365 using Microsoft Intune Company Portal.
-
+ 
 Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
@@ -58,7 +59,7 @@ The Intune Company Portal enables a device to be managed by Microsoft 365 and Ba
 
 Go to the Apple App Store, and download and install Intune Company Portal.
 
-To connect and configure your iOS phone or tablet with the Company portal to Office 365, see [Set up iOS device access to your company resources](/mem/intune/user-help/enroll-your-device-in-intune-ios).
+To connect and configure your iOS phone or tablet with the Company portal to Microsoft 365, see [Set up iOS device access to your company resources](/mem/intune/user-help/enroll-your-device-in-intune-ios).
 
 ### Android phone or tablet
 
@@ -77,4 +78,4 @@ To connect and configure your Windows phone or PC with the Company portal to Mic
 
 ## Next steps
 
-After your device is enrolled in Basic Mobility and Security, you can start using Office apps on your device to work with email, calendar, contacts, and documents.
+After your device is enrolled in Basic Mobility and Security, you can start using Microsoft 365 apps on your device to work with email, calendar, contacts, and documents.

@@ -4,7 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: ragovind
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -23,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus
 
-Microsoft 365 Lighthouse lets partners investigate and mitigate threats across all your tenants. You can also initiate antivirus scans on devices, make sure devices are getting the latest updates for Microsoft Defender Antivirus, and review pending actions following antivirus scans. Lighthouse only supports devices running Windows 10 or later.
+Microsoft 365 Lighthouse lets you investigate and mitigate threats across all your tenants. You can also initiate antivirus scans on devices, make sure devices are getting the latest updates for Microsoft Defender Antivirus, and review pending actions following antivirus scans. Lighthouse only supports devices running Windows 10 or later.
 
 ## Before you begin
 
@@ -97,7 +98,7 @@ To update Microsoft Defender Antivirus on a single device:
 
 You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
 
-If you need to create a new policy, select **Update policy** in the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+If you need to create a new policy, select **Update policy** in the device details pane. Lighthouse will redirect you to the Microsoft Intune admin center. For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## Check pending antivirus actions on a device
 

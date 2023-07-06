@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 02/21/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -52,35 +53,9 @@ Different geographic and organizational areas may have compliance and privacy re
 
 If you have requirements for specific stakeholders to be involved in case investigations that involve users in certain regions, roles, or divisions, you may want to implement separate (even if identical) [insider risk management policies](insider-risk-management-policies.md) targeting the different regions and populations. This configuration makes it easier for the right stakeholders to triage and manage cases that are relevant to their roles and regions. You may want to consider creating processes and policies for regions where investigators and reviewers speak the same language as the users, which can help streamline the escalation process for insider risk management alerts and cases.
 
-## Plan for the review and investigation workflow
+## Plan for permissions to support the review and investigation workflow
 
-Depending on how you want to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
-
-Choose from the following role group options and solution actions when working with insider risk management:
-
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admins**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
-|---|---|---|---|---|---|---|
-|Configure policies and settings|Yes|Yes|No|No|No|No|
-|Access analytics insights|Yes|Yes|Yes|No|No|No|
-|Access and investigate alerts|Yes|No|Yes|Yes|No|No|
-|Access and investigate cases|Yes|No|Yes|Yes|No|No|
-|Access and view the Content Explorer|Yes|No|No|Yes|No|No|
-|Configure notice templates|Yes|No|Yes|Yes|No|No|
-|View and export audit logs|Yes|No|No|No|Yes|No|
-|Access and view forensic evidence captures|Yes|No|No|Yes|No|No|
-|Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
-|Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
-|View device health report|Yes|Yes|No|No|No|No|
-
-> [!IMPORTANT]
-> Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
-
-Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admins* role group:
-
-- Azure Active Directory *Global Administrator*
-- Azure Active Directory *Compliance Administrator*
-- Microsoft Purview compliance portal *Organization Management*
-- Microsoft Purview compliance portal *Compliance Administrator*
+Depending on how you want to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. For more information, see [Get started with insider risk management](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management).
 
 ## Understand requirements and dependencies
 
@@ -91,12 +66,12 @@ Depending on how you plan to implement insider risk management policies, you nee
 > [!IMPORTANT]
 > Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
-If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 **Policy template requirements:** Depending on the policy template you choose, you need to be sure you understand the following requirements and plan accordingly prior to configuring insider risk management in your organization:
 
 - When using the **Data theft by departing users** template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector.
-- When using the **Data leaks** template, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies.
+- When using the **Data leaks** template, you must configure at least one Microsoft Purview Data Loss Prevention (DLP) policy to define sensitive information in your organization and to receive insider risk alerts for High Severity DLP policy alerts. See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article for step-by-step guidance to configure DLP policies.
 - When using the **Security policy violation** template, you must enable Microsoft Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For step-by-step guidance to enable Defender for Endpoint integration with insider risk management, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - When using the **Risky user** template, you must configure a Microsoft 365 HR connector to periodically import performance or demotion status information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector.
 

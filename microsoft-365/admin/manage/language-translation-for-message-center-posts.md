@@ -3,8 +3,9 @@ title: "Language translation for Message center posts"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -56,4 +57,3 @@ To set Message center posts to automatically machine-translate and display in yo
 
 
   
-

@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: katmartin
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -23,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides the connection status between your customer tenants and Azure Active Directory (Azure AD). When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Endpoint Manager admin center.
+Microsoft 365 Lighthouse provides the connection status between your customer tenants and Azure Active Directory (Azure AD). When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Intune admin center.
 
 ## Before you begin
 
@@ -40,7 +41,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 4. From the filtered list, select **View connection details in Microsoft Endpoint Manager** next to the connection you want to investigate.
 
-5. From the Microsoft Endpoint Manager admin center, select **View details** to learn more about the error.
+5. From the Microsoft Intune admin center, select **View details** to learn more about the error.
 
 ## Next steps
 

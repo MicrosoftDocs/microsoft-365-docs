@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 09/12/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -239,4 +239,4 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
   InactiveMailboxRetireTime : 9/30/2022 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2022.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 30 days after September 30, 2022.

@@ -17,6 +17,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
+ms.date: 03/23/2023
 ---
 
 # Microsoft Defender for Business preview features
@@ -55,6 +56,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## See also
 
 - [Get Microsoft Defender for Business](get-defender-business.md)
-- [How to get Microsoft Defender for Business servers](get-defender-business-servers.md)
+- [How to get Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers)
 - [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md)
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)

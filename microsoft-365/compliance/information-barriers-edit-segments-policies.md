@@ -5,13 +5,14 @@ keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - tier2
 - purview-compliance
-ms.localizationpriority: null
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ---
@@ -34,6 +35,7 @@ After you have [defined information barriers (IB) policies](information-barriers
 | [Remove a segment](#remove-a-segment) | Remove an information barriers segment when you no longer need a particular segment. |
 | [Remove a policy and a segment](#remove-a-policy-and-segment) | Remove an information barriers policy and a segment at the same time. |
 | [Stop a policy application](#stop-a-policy-application) | Take this action when you want to stop the process of applying information barriers policies. <br> Stopping a policy application isn't instant, and it doesn't undo policies that are already applied to users. |
+| [Enable or disable user discoverability](#enable-or-disable-user-discoverability) | Enable or disable if users are displayed in the people picker. |
 | [Define policies for information barriers](information-barriers-policies.md) | Define an information barriers policy when you don't already have such policies in place, and you must restrict or limit communications between specific groups of users. |
 | [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
@@ -91,7 +93,7 @@ Use this procedure edit the definition of a user segment. For example, you might
 
     Example: Suppose a policy was defined to block the *Research* segment from communicating with the *Sales* and *Marketing* segments. The policy was defined by using this cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
-    Suppose we want to change it so that people in the *Research* segment can only communicate with people in the *HR* segment. To make this change, we use this cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Suppose we want to change it so that users in the *Research* segment can only communicate with users in the *HR* segment. To make this change, we use this cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     In this example, we changed *SegmentsBlocked* to *SegmentsAllowed* and specified the *HR* segment.
 
@@ -257,6 +259,27 @@ After you have started applying information barriers policies, if you want to st
     |:---------|:----------|
     | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> In this example, we're stopping information barriers policies from being applied. |
 
+## Enable or disable user discoverability
+
+> [!IMPORTANT]
+> Support for enabling or disabling search restrictions is only available when your organization isn't in *Legacy* mode. Organizations in *Legacy* mode cannot enable or disable search restrictions. Enabling or disabling search restrictions requires additional actions to change the information barriers mode for your organization. For more information, see [Use multi-segment support in information barriers)](information-barriers-multi-segment.md) for details.<br><br> Organizations in *Legacy* mode will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
+
+To enable the people picker search restriction using PowerShell, complete the following steps:
+
+1. Use the **Set-PolicyConfig** cmdlet to enable the people picker restriction:
+
+```powershell
+Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Enabled'
+```
+
+To disable the people picker search restriction using PowerShell, complete the following steps:
+
+1. Use the **Set-PolicyConfig** cmdlet to disable the people picker restriction:
+
+```powershell
+Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Disabled'
+```
+
 ## Resources
 
 - [Get an overview of information barriers](information-barriers.md)
@@ -264,5 +287,6 @@ After you have started applying information barriers policies, if you want to st
 - [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)
 - [Attributes for IB policies](information-barriers-attributes.md)
 - [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

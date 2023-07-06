@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 06/26/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -25,15 +26,15 @@ ms.custom:
 
 # Keyword queries and search conditions for eDiscovery
 
-This article describes the email and document properties that you can search for in email items, Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft Purview compliance portal. 
+This article describes the properties available to help find content across email and chat in Exchange Online and documents and files stored on SharePoint and OneDrive for Business using the eDiscovery search tools in the Microsoft Purview compliance portal.
 
-This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) to search for these properties. 
+This includes Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) (eDiscovery searches in eDiscovery (Premium) are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) to search for these properties.
 
 This article also describes:
 
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
-- Searching for sensitive data types and custom sensitive data types in SharePoint and OneDrive for Business.
-- Searching for site content that's shared with users outside of your organization.
+- Searching for communications of various types related to specific employees and projects during a specific time frame.
+- Searching for site content that is related to a specific project, employees and/or subjects during a specific time period.
 
 For step-by-step instructions on how to create different eDiscovery searches, see:
 
@@ -46,9 +47,48 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Search tips and tricks
+
+- The timezone for all searches is Coordinated Universal Time (UTC). Changing timezones for your organization isn't currently supported.
+- Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
+- The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
+- A space between two keywords or two  `property:value` expressions is the same as using **OR**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis or messages that contain the word reorganization in the subject line.
+- Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages sent to pilarp.
+- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
+- You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren't supported.
+- When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example, `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
+- To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, `-from:"Sara Davis"` excludes any messages sent by Sara Davis.
+- You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.
+- When searching sites, you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.
+- The **Query language-country/region** must be defined in your search query prior to collecting content.
+- When searching the **Sent** folders for emails, using the SMTP address for the sender isn't supported. Items in the **Sent** folder contain only display names.
+
+## Finding content in Exchange Online
+
+Admins are often charged with finding out who knew what when in the most efficient and effective way possible to respond to requests concerning ongoing or potential litigation, internal investigations and other scenarios. These requests are often urgent, involve multiple stakeholder teams, and have significant impact if not completed in a timely manner. Knowing how to find the right information is critical for admins to complete searches successfully and help their organizations to manage the risk and cost associated with eDiscovery requirements.  
+
+When an eDiscovery request is submitted, often there's only partial information available for the admin to start to collect content that may be related to a particular investigation. The request may include employee names, project titles, rough date ranges when the project was active, and not much more. From this information, the admin needs to create queries to find relevant content across Microsoft 365 services to determine the information needed for a particular project or subject. Understanding how information is stored and managed for these services will help admins more efficiently find what they need quickly and in an effective manner.
+
+Email, chat, and meeting information are all stored in Exchange Online. Many communication properties are available for searching items included in Exchange Online. Some properties such as *From*, *Sent*, *Subject*, and *To* are unique to certain items and aren't relevant when searching for files or documents in SharePoint and OneDrive for Business. Including these types of properties when searching across workloads can sometimes lead to unexpected results.
+
+For example, to find content related to specific employees (*User 1* and *User 2*), associated with a project called *Tradewinds*, and during January 2020 through January 2022, you might use a query with the following properties:
+
+- Add User 1 and User 2's Exchange Online locations as data sources to the case
+- Select User 1 and User 2's Exchange Online locations as collection locations
+- For **Keyword**, use *Tradewinds*
+- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
+
+> [!IMPORTANT]
+> For emails, when a keyword is used, we search subject, body and many properties related to the participants. However, due to recipient expansion, search may not return expected results when using the alias or part of the alias. Therefore we recommend using the full UPN.
+
 ## Searchable email properties
 
-The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can enter these  `property:value` pairs in the keywords box for an eDiscovery search.
+The following table lists the email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet.
+
+> [!IMPORTANT]
+> While email messages may have other properties supported in other Microsoft 365 services, only the email properties listed in this table are supported in eDiscovery search tools. Attempting to include other email messages properties in searches isn't supported.
+
+The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples. You can enter these  `property:value` pairs in the keywords box for an eDiscovery search.
 
 > [!NOTE]
 > When searching email properties, it's not possible to search for message headers. Header information is not indexed for collections. Additionally, items in which the specified property is empty or blank are not searchable. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
@@ -65,7 +105,7 @@ The following table lists email message properties that can be searched by using
 |Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high` <p> `importance:medium` <p> `importance:low`|Messages that are marked as high importance, medium importance, or low importance.|
 |IsRead|Indicates whether messages have been read. Use the values **true** or **false**.|`isread:true` <p> `isread:false`|The first example returns messages with the IsRead property set to **True**. The second example returns messages with the IsRead property set to **False**.|
 |ItemClass|Use this property to search specific third-party data types that your organization imported to Office 365. Use the following syntax for this property:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso` <p> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|The first example returns Facebook items that contain the word "contoso" in the Subject property. The second example returns Twitter items that were posted by Ann Beebe and that contain the keyword phrase "Northwind Traders". <p> For a complete list of values to use for third-party data types for the ItemClass property, see [Use Content search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
-|Kind|The type of email message to search for. Possible values: <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|The first example returns email messages that meet the search criteria. The second example returns email messages, instant messaging conversations (including Skype for Business conversations and chats in Microsoft Teams), and voice messages that meet the search criteria. The third example returns items that were imported to mailboxes in Microsoft 365 from third-party data sources, such as Twitter, Facebook, and Cisco Jabber, that meet the search criteria. For more information, see [Archiving third-party data in Office 365](https://www.microsoft.com/?ref=go).|
+|Kind|The type of email message to search for. Possible values: <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|The first example returns email messages that meet the search criteria. The second example returns email messages, instant messaging conversations (including Skype for Business conversations and chats in Microsoft Teams), and voice messages that meet the search criteria. The third example returns items that were imported to mailboxes in Microsoft 365 from third-party data sources, such as Twitter, Facebook, and Cisco Jabber that meet the search criteria. For more information, see [Archiving third-party data in Office 365](https://www.microsoft.com/?ref=go).|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.<sup>1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.<br>([See Recipient Expansion](ediscovery-keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Received|The date that an email message was received by a recipient.|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|Messages that were received on April 15, 2021. The second example returns all messages received between January 1, 2021 and March 31, 2021.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.<br>([See Recipient Expansion](ediscovery-keyword-queries-and-search-conditions.md#recipient-expansion))|
@@ -88,11 +128,27 @@ However, be aware that preventing recipient expansion in the search query may re
 > [!NOTE]
 > If you need to review or reduce the items returned by a search query due to recipient expansion, consider using eDiscovery (Premium). You can search for messages (taking advantage of recipient expansion), add them to a review set, and then use review set queries or filters to review or narrow the results. For more information, see [Collect data for a case](collecting-data-for-ediscovery.md) and [Query the data in a review set](ediscovery-review-set-search.md).
 
+## Finding content in SharePoint and OneDrive
+
+When searching for documents and files located in SharePoint or OneDrive for Business, it may make sense to adjust the query approach based on the metadata for the documents and files of interest. Files and documents have relevant properties like *Author*, *Created*, *CreatedBy*, *FileName*, *LastModifiedTime*, and *Title*. Most of these proprieties aren't relevant when searching for communications content in Exchange Online, and using these properties may lead to unexpected results if used across both documents and communications. Additionally, *FileName* and *Title* of a document may not be the same and using one or the other to try to find a file with specific content may lead to different or inaccurate results. Keep these properties in mind when searching for specific document and file content in SharePoint and OneDrive for Business.
+
+For example, to find content related to documents created by User 1, for a project called *Tradewinds*, for specific files named *Financials*, and from January 2020 to January 2022, you might use a query with the following properties:
+
+- Add User 1's OneDrive for Business site as a data sources to the case
+- Select User 1's OneDrive for Business site as a collection location
+- Add additional SharePoint site locations related to the project as collection locations
+- For **FileName**, use *Financials*
+- For **Keyword**, use *Tradewinds*
+- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
+
 ## Searchable site properties
 
-The following table lists some of the SharePoint and OneDrive for Business properties that can be searched by using the eDiscovery search tools in the Microsoft Purview compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples.
+The following table lists the SharePoint and OneDrive for Business properties that can be searched by using the eDiscovery search tools in the Microsoft Purview compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet.
 
-For a complete list of SharePoint properties that can be searched, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be searched.
+> [!IMPORTANT]
+> While documents and files stored on SharePoint and OneDrive for Business may have other properties supported in other Microsoft 365 services, only the document and file properties listed in this table are supported in eDiscovery search tools. Attempting to include other document or file properties in searches isn't supported.
+
+The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples.
 
 |Property|Property description|Example|Search results returned by the examples|
 |---|---|---|---|
@@ -101,14 +157,12 @@ For a complete list of SharePoint properties that can be searched, see [Overview
 |Created|The date that an item is created.|`created>=2021-06-01`|All items created on or after June 1, 2021.|
 |CreatedBy|The person that created or uploaded an item. Be sure to use the user's display name for this property.|`createdby:"Garth Fort"`|All items created or uploaded by Garth Fort.|
 |DetectedLanguage|The language of an item.|`detectedlanguage:english`|All items in English.|
-|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. <p> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
+|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. We recommend using this property instead of the *Site* and *Path* properties. <p> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
 |FileExtension|The extension of a file; for example, docx, one, pptx, or xlsx.|`fileextension:xlsx`|All Excel files (Excel 2007 and later)|
 |FileName|The name of a file.|`filename:"marketing plan"` <p> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
 |LastModifiedTime|The date that an item was last changed.|`lastmodifiedtime>=2021-05-01` <p> `lastmodifiedtime>=2021-05-01 AND lastmodifiedtime<=2021-06-01`|The first example returns items that were changed on or after May 1, 2021. The second example returns items changed between May 1, 2021 and June 1, 2021.|
 |ModifiedBy|The person who last changed an item. Be sure to use the user's display name for this property.|`modifiedby:"Garth Fort"`|All items that were last changed by Garth Fort.|
-|Path|The path (URL) of a specific site in a SharePoint or OneDrive for Business site. <p> To return items only from the specified site, you have to add the trailing `/` to the end of the URL; for example, `path: "https://contoso.sharepoint.com/sites/international/"` <p> To return items located in folders in the site that you specify in the path property, you have to add `/*` to the end of the URL; for example,  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **Note:** Using the `Path` property to search OneDrive locations won't return media files, such as .png, .tiff, or .wav files, in the search results. Use a different site property in your search query to search for media files in OneDrive folders. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business site. The second example returns documents in the specified site (and folders in the site) that contain the word "confidential" in the file name.|
 |SharedWithUsersOWSUser|Documents that have been shared with the specified user and displayed on the **Shared with me** page in the user's OneDrive for Business site. These are documents that have been explicitly shared with the specified user by other people in your organization. When you export documents that match a search query that uses the SharedWithUsersOWSUser property, the documents are exported from the original content location of the person who shared the document with the specified user. For more information, see [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|Both examples return all internal documents that have been explicitly shared with Garth Fort and that appear on the **Shared with me** page in Garth Fort's OneDrive for Business account.|
-|Site|The URL of a site or group of sites in your organization.|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|The first example returns items from the OneDrive for Business sites for all users in the organization. The second example returns items from all team sites.|
 |Size|The size of an item, in bytes.|`size>=1` <p> `size:1..10000`|The first example returns items larger than 1 byte. The second example returns items from 1 through 10,000 bytes in size.|
 |Title|The title of the document. The Title property is metadata that's specified in Microsoft Office documents. It's different from the file name of the document.|`title:"communication plan"`|Any document that contains the phrase "communication plan" in the Title metadata property of an Office document.|
 
@@ -140,28 +194,6 @@ The following table lists the contact properties that are indexed and that you c
 |Surname|The name in the **Last** name property.|
 |Title|The title in the **Job title** property.|
 
-<!--## Searchable sensitive data types
-
-You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
-
-To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
-
-For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
-
-<!--### Limitations for searching sensitive data types
-
-- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
-
-  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
-
-  ```powershell
-  Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
-  ```
-
-  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
-
-- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
-
 ## Search operators
 
 Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as `>=` or `..`), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results.
@@ -172,10 +204,9 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`. <p> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
-|-|keyword1 -keyword2|The same as the **NOT** operator. So this query returns items that contain  `keyword1` and would exclude items that contain  `keyword2`.|
-|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart. For example, `best NEAR(5) worst` returns any item where the word "worst" is within five words of "best". If no number is specified, the default distance is eight words. <sup>2</sup>|
+|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart (including the keywords). For example, `best NEAR(5) worst` returns any item where the word 'worst' is within *four* other words of 'best' (because the word 'worst' is inclusive for the specified count of 5). If no number is specified, the default distance is eight words. <sup>2</sup>|
 |:|property:value|The colon (:) in the  `property:value` syntax specifies that the value of the property being searched for contains the specified value. For example,  `recipients:garthf@contoso.com` returns any message sent to garthf@contoso.com.|
-|=|property=value|The same as the **:** operator.|
+|=|property=value|The same as the `:` operator.|
 |\<|property\<value|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
 |\>|property\>value|Denotes that the property being searched is greater than the specified value.<sup>1</sup>|
 |\<=|property\<=value|Denotes that the property being searched is less than or equal to a specific value.<sup>1</sup>|
@@ -192,17 +223,12 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 
 You can add conditions to a search query to narrow a search and return a more refined set of results. Each condition adds a clause to the KQL search query that is created and run when you start the search.
 
-[Conditions for common properties](#conditions-for-common-properties)
-
-[Conditions for mail properties](#conditions-for-mail-properties)
-
-[Conditions for document properties](#conditions-for-document-properties)
-
-[Operators used with conditions](#operators-used-with-conditions)
-
-[Guidelines for using conditions](#guidelines-for-using-conditions)
-
-[Examples of using conditions in search queries](#examples-of-using-conditions-in-search-queries)
+- [Conditions for common properties](#conditions-for-common-properties)
+- [Conditions for mail properties](#conditions-for-mail-properties)
+- [Conditions for document properties](#conditions-for-document-properties)
+- [Operators used with conditions](#operators-used-with-conditions)
+- [Guidelines for using conditions](#guidelines-for-using-conditions)
+- [Examples of using conditions in search queries](#examples-of-using-conditions-in-search-queries)
 
 ### Conditions for common properties
 
@@ -218,7 +244,7 @@ Create a condition using common properties when searching mailboxes and sites in
 
 ### Conditions for mail properties
 
-Create a condition using mail properties when searching mailboxes or public folders. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
+Create a condition using mail properties when searching mailboxes or public folders in Exchange Online. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
 
 |Condition|Description|
 |---|---|
@@ -292,24 +318,6 @@ The following examples show the GUI-based version of a search query with conditi
 
 #### Example 1
 
-This example returns documents on SharePoint and OneDrive for Business sites that contain a credit card number and were last modified before January 1, 2021.
-
-**GUI**:
-
-![First example of search conditions.](../media/SearchConditions2.png)
-
-**Search query syntax**:
-
-`SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
-
-**Search query logic**:
-
-`SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
-
-Notice in the previous screenshot that the search UI reinforces that the keyword query and condition are connected by the **AND** operator.
-
-#### Example 2
-
 This example returns email items or documents that contain the keyword "report", that were sent or created before April 1, 2021, and that contain the word "northwind" in the subject field of email messages or in the title property of documents. The query excludes Web pages that meet the other search criteria.
 
 **GUI**:
@@ -324,7 +332,7 @@ This example returns email items or documents that contain the keyword "report",
 
 `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
 
-#### Example 3
+#### Example 2
 
 This example returns email messages or calendar meetings that were sent between December 1, 2019 and November 30, 2020 and that contain words that start with "phone" or "smartphone".
 
@@ -345,6 +353,23 @@ This example returns email messages or calendar meetings that were sent between 
 Some special characters aren't included in the search index and therefore aren't searchable. This also includes the special characters that represent search operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
 
 `+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
+## Searchable sensitive data types
+
+You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
+
+To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
+
+### Limitations for searching sensitive data types
+
+- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance portal (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
+  
+  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
+  ```powershell
+  Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
+  ```
+  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).
 
 ## Searching for site content shared with external users
 
@@ -422,16 +447,3 @@ For more information about character limits, see [eDiscovery search limits](edis
 
 > [!NOTE]
 > The 4,000 character limit applies to Content search, eDiscovery (Standard), and eDiscovery (Premium).
-
-## Search tips and tricks
-
-- Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
-- The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
-- Use syntax that matches the `property:value` format. Values aren't case-sensitive, and they can't have a space after the operator. If there's a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp.
-- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
-- You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren't supported.
-- When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
-- To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, `-from:"Sara Davis"` excludes any messages sent by Sara Davis.
-- You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.
-- As previously explained, when searching sites you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.

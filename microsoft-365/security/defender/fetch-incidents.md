@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.custom: api
+ms.date: 10/25/2021
 ---
 
 # Fetch Microsoft 365 Defender incidents 
@@ -30,7 +31,7 @@ ms.custom: api
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > [!NOTE]
 > This action is taken by the MSSP.
@@ -183,4 +184,4 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 
 ## Related topics
 
-[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

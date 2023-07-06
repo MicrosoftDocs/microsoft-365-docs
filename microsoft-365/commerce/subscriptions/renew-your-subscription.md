@@ -9,7 +9,7 @@ ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
@@ -28,6 +28,8 @@ ms.date: 08/18/2022
 ---
 
 # Renew Microsoft 365 for business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!IMPORTANT]
 > As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.

@@ -17,12 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - tier1
+  - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/22/2023
 ---
+
 # Microsoft 365 Defender integration with Microsoft Sentinel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -30,7 +32,7 @@ search.appverid:
 **Applies to:**
 - Microsoft 365 Defender
 
-The Microsoft 365 Defender connector for Microsoft Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized. 
+The Microsoft 365 Defender connector for Microsoft Sentinel sends all Microsoft 365 Defender incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized. 
 
 Once you add the connector, Microsoft 365 Defender incidents&mdash;which include all associated alerts, entities, and relevant information received from Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Defender for Cloud Apps&mdash;are streamed to Microsoft Sentinel as security information and event management (SIEM) data, providing you with context to perform triage and incident response with Microsoft Sentinel. 
 

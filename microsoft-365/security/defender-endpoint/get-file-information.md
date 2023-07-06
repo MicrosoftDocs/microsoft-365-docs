@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get file information API
@@ -55,7 +56,7 @@ Delegated (work or school account)|File.Read.All|'Read all file profiles'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
 
 ## HTTP request
 
@@ -75,13 +76,13 @@ Empty
 
 ## Response
 
-If successful and file exists - 200 OK with the [file](files.md) entity in the body. If file does not exist - 404 Not Found.
+If successful and file exists - 200 OK with the [file](files.md) entity in the body. If file doesn't exist - 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
@@ -89,7 +90,7 @@ GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {

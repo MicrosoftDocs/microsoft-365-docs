@@ -5,8 +5,9 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -31,6 +32,8 @@ description: "Learn how to find a new Microsoft 365 partner, or get contact info
 ---
 
 # Find your Microsoft 365 subscriptions partner or reseller
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program. 
   

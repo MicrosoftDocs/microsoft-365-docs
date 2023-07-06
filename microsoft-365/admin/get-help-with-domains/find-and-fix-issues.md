@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,6 +33,8 @@ description: "Learn to track down any problems you run into while setting up a c
 ---
 
 # Find and fix issues after adding your domain or DNS records
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -101,4 +104,3 @@ If you've fixed any DNS issues and you're still having trouble, try one of the f
 
 [Troubleshoot: Audit data on verified domain change](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
 [Domains FAQ](../setup/domains-faq.yml) (article)
-

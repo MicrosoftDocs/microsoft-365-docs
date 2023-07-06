@@ -3,8 +3,9 @@ title: "Integrated apps and Azure AD for Microsoft 365 administrators"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:

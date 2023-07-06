@@ -6,8 +6,8 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 titleSuffix: Office 365
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,7 +36,7 @@ After Assessment is completed in eDiscovery (Premium), and you enter the Relevan
 
     ![Relevance Tag panel.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    In the **Tag** tab, the file's display name is shown. This could be the path, email subject, title, or user-defined name. The ID, file path or text path can be copied by right-clicking on the file's path.
+    In the **Tag** tab, the file's display name is shown. This could be the path, email subject, title, or user-defined name. The ID, file path or text path can be copied by right-selecting on the file's path.
 
     The **Tag** tab tagging statistics show the file sample number (at the top of the left pane), the number of the currently displayed file out of the total files in the sample (bottom of right pane), and the current total number of tagged files in the sample (bottom of the left pane), which changes as you tag files. This applies for any Relevance tagging done, whether in Assessment, Training, Catch-up, or Test.
 
@@ -53,9 +53,9 @@ After Assessment is completed in eDiscovery (Premium), and you enter the Relevan
 
    - When multiple issues exist for a file, after tagging one issue, the selection moves to the next issue (if any).  
 
-   - Keywords that were defined by the Administrator or Case manager when highlighting keywords (Relevance setup \> Highlighted keywords), will be displayed (in specified colors) to help identify relevant files while tagging. If a keyword has a double underline, it can be clicked to display a tool-tip with the keyword's description.
+   - Keywords that were defined by the Administrator or Case manager when highlighting keywords (Relevance setup \> Highlighted keywords), will be displayed (in specified colors) to help identify relevant files while tagging. If a keyword has a double underline, it can be selected to display a tool-tip with the keyword's description.
 
-     Optionally, in the **Tag** tab, click **Tag settings** to set the following options:
+     Optionally, in the **Tag** tab, select **Tag settings** to set the following options:
 
       ![Relevance Tag settings.](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
@@ -71,7 +71,7 @@ After Assessment is completed in eDiscovery (Premium), and you enter the Relevan
 
 4. Guidelines for tagging can be viewed by selecting the **Tagging guidelines** option in the left pane drop-down list.
 
-5. After you finish tagging all files in the list and are ready to calculate the results, click **Calculate**. The **Track** tab is displayed.  
+5. After you finish tagging all files in the list and are ready to calculate the results, select **Calculate**. The **Track** tab is displayed.  
 
 ## Working with the sample files list
 
@@ -83,16 +83,11 @@ The sample files list allows you to view a list of the files in a training sampl
   
 2. Select a specific sample or file number by entering or selecting its number in the **Sample** or **File** boxes.
 
-   - A file sequence number is listed in the left column of the displayed file list on the **Tag** tab. By clicking the header, the original displayed order of the files returns to its original order.
-
-   - Clicking on a file row displays its content in the right pane.
-
+   - A file sequence number is listed in the left column of the displayed file list on the **Tag** tab. By selecting the header, the original displayed order of the files returns to its original order.
+   - Selecting on a file row displays its content in the right pane.
    - Navigate between files in the current sample by using the lower menu bar options. In addition, navigational keyboard shortcuts are available:
   
      - To go to the first file in the sample: `Shift + Ctrl + <`
-
      - To go to the previous file in the sample: `Shift + <`
-
      - To go to the next file in the sample: `Shift + >`
-
      - To go to the last file in the sample: `Shift + Ctrl + >`

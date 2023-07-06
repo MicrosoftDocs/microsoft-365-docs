@@ -10,24 +10,25 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
-ms.collection: m365-security
+ms.collection: 
+    - m365-security
+    - tier2
 ms.custom:
-ms.date: 12/14/2022
+ms.date: 06/09/2023
 description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Address compromised user accounts with automated investigation and response
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. This article describes one of the facets of the AIR capabilities, the compromised user security playbook.
+[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](air-about.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. This article describes one of the facets of the AIR capabilities, the compromised user security playbook.
 
 The compromised user security playbook enables your organization's security team to:
 
@@ -48,7 +49,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 - [View details about automated investigations](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
+> You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities).
 
 Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
@@ -81,7 +82,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 ## Next steps
 
-- [Review the required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities)
+- [Review the required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities)
 
 - [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 

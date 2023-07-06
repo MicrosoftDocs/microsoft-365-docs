@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: libarson
 author: libarson
 manager: aashishr
-ms.date: 
+ms.date: 10/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -63,13 +63,9 @@ Before you install the scanner, or upgrade it from an older general availability
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) with one of the following roles:
 
-    - **Global administrator**
     - **Compliance administrator**
     - **Compliance data administrator**
-    - **Security administrator**
-    - **Security operator**
-    - **Security reader**
-    - **Global reader**
+    - **Organization Management**
 
     Then, navigate to the **Settings** pane.
 
@@ -137,6 +133,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
 
     > [!NOTE]
     > Wildcards are not supported and WebDav locations are not supported.
+    > Scanning of OneDrive locations as repositories is not supported.
     >
 
     If you add a SharePoint path for **Shared Documents**:
@@ -144,7 +141,7 @@ Deep dive into your content to scan specific repositories for sensitive content.
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your SharePoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
     >
 
 
@@ -286,7 +283,7 @@ Using a data loss prevention policy enables the scanner to detect potential data
 
 - **Enable DLP rules in your content scan job** to reduce the exposure of any files that match your DLP policies. When your DLP rules are enabled, the scanner may reduce file access to data owners only, or reduce exposure to network-wide groups, such as **Everyone**, **Authenticated Users**, or **Domain Users**.
 
-- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy.md#turn-on-a-dlp-policy).
+- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 
 DLP policies are configured in the Microsoft Purview compliance portal. For more information about DLP licensing, see [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md).
 
@@ -507,7 +504,7 @@ For more information, see [Supported PowerShell cmdlets](#supported-powershell-c
     For example: `http://sp2013/SharedDocuments`
     - Specify **Documents** in the path when you want to scan all documents and all folders from a subfolder under Shared Documents.
     For example: `http://sp2013/Documents/SalesReports`
-    - Or, specify only the **FQDN** of your Sharepoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
+    - Or, specify only the **FQDN** of your SharePoint, for example `http://sp2013` to [discover and scan all SharePoint sites and subsites under a specific URL](deploy-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) and subtitles under this URL. Grant scanner **Site Collector Auditor** rights to enable this.
 
 
     Use the following syntax when adding SharePoint paths:

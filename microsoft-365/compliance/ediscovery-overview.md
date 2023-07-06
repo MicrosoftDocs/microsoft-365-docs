@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/08/2022
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -47,12 +47,9 @@ eDiscovery (Premium) in Microsoft 365 lets you discover data at the source and s
 Native search and collection capabilities for data in Teams, Yammer, SharePoint Online, OneDrive for Business, and Exchange Online further enhances data discovery. For example,  eDiscovery (Premium):
 
 - Reconstructs Teams conversations (instead of returning individual messages from conversations).
-
 - Collects cloud-based content shared with users by use of links or modern attachments in email message and Teams chats.
-
 - Has built-in support for hundreds of non-Microsoft 365 file types.
-
-- Collects data from third-party sources (such as Bloomberg, Facebook, Slack, and Zoom Meetings) that's imported and archived in Microsoft 365 by [data connectors](archiving-third-party-data.md).
+- Collects data from third-party sources (such as Bloomberg, Facebook, Slack, and Zoom Meetings) that's imported and archived in Microsoft 365 by [data connectors](archive-third-party-data.md).
 
 ### Manage eDiscovery workflow in one platform
 
@@ -77,22 +74,16 @@ The built-in workflow of eDiscovery (Premium) in Microsoft 365 aligns with the e
 At a high level, here's how eDiscovery (Premium) supports the EDRM workflow:
 
 - **Identification.** After you identify potential persons of interest in an investigation, you can add them as custodians (also called *data custodians*, because they may possess information that's relevant to the investigation) to an eDiscovery (Premium) case. After users are added as custodians, it's easy to preserve, collect, and review custodian documents.
-
 - **Preservation.** To preserve and protect data that's relevant to an investigation, eDiscovery (Premium) lets you place a legal hold on the data sources associated with the custodians in a case. You can also place non-custodial data on hold. eDiscovery (Premium) also has a built-in communications workflow so you can send legal hold notifications to custodians and track their acknowledgments.
-
 - **Collection.** After you identified (and preserved) the data sources relevant to the investigation, you can use the built-in search tool in eDiscovery (Premium) search for and collect live data from the custodial data sources (and non-custodial data sources, if applicable) that may be relevant to the case.
-
 - **Processing.** After you've collected all data relevant to the case, the next step is process it for further review and analysis. In eDiscovery (Premium), the in-place data that you identified in the collection phase is copied to an Azure Storage location (called a *review set*), which provides you with a static view of the case data.
-
 - **Review.** After data has been added to a review set, you can view specific documents and run additional queries to reduce the data to what is most relevant to the case. Also, can annotate and tag specific documents.
-
 - **Analysis.** eDiscovery (Premium) provides integrated analytics tool that helps you further cull data from the review set that you determine isn't relevant to the investigation. In addition to reducing the volume of relevant data, Advance eDiscovery also helps you save legal review costs by letting you organize content to make the review process easier and more efficient.
-
 - **Production** and **Presentation.** When you're ready, you can export documents from a review set for legal review. You can export documents in their native format or in an EDRM-specified format so they can be imported into third-party review applications.
 
 ## Subscriptions and licensing
 
-For information regarding what licenses provide the rights for a user to benefit from eDiscovery (Premium) please see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+Microsoft Purview eDiscovery capabilities are included with Microsoft Purview. The licensing requirements may vary even within capabilities, depending on configuration options. For licensing requirements, guidance, and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery).
 
 For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 

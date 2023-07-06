@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Collect support logs in Microsoft Defender for Endpoint using live response

@@ -2,9 +2,10 @@
 title: "Microsoft product NPS feedback and insights for your organization"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 03/26/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -37,6 +38,10 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 - See end-user comments on the top products and issues.
 - Export feedback and survey information to a CSV file.
 
+## Watch: NPS feedback and insights
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
+
 ## Before you begin
 
 You need to be an [administrator](../add-users/about-admin-roles.md) to view and read survey reports. Your organization needs to have feedback surveys turned on to view and read survey reports. Check out [Manage Microsoft feedback for your organization](manage-feedback-ms-org.md) to learn more.
@@ -53,7 +58,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 ### Top topic filters
 
-We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.  
+We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.
 
 :::image type="content" source="../../media/top-topics-filter.png" alt-text="Screenshot: Top five topics with the most verbatim feedback" lightbox="../../media/top-topics-filter.png":::
 
@@ -151,7 +156,7 @@ You can export raw data for further analysis using the Export to CSV functionali
 
 You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types**.
 
-**Channels** are a way for organizations to select how often they get feature updates for Office. Learn more at [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
+**Channels** are a way for organizations to select how often they get feature updates for Microsoft 365. Learn more at [Overview of update channels for Microsoft 365 apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
 
 Feedback can be submitted on various **Platforms** like Android, iOS, Mac, and Windows. This filter allows you to filter feedback based on the platform it was submitted on.
 

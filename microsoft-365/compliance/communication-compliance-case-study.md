@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 05/19/2023
 audience: Admin
 ms.topic: article
 ms.custom: 
@@ -28,7 +29,7 @@ search.appverid:
 # Case study - Contoso configures a communication compliance policy to identify potentially inappropriate text for Microsoft Teams, Exchange, and Yammer communications
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 [Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with potentially inappropriate text in your organization. Potentially inappropriate text may include profanity, threats, harassment, and adult content. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to review internal and external communications for policy matches, so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Yammer, or third-party communications throughout your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
 
@@ -80,25 +81,17 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 ### Permissions for communication compliance
 
-There are five role groups used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, Contoso administrators are assigned the *Communication Compliance Admins* role.
+There are five [role groups used to configure permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft Purview compliance portal and to continue with these configuration steps, Contoso administrators are assigned the *Communication Compliance Admins* role.
 
-Contoso decides to use the *Communication Compliance* role group assign all the communication compliance administrators, analysts, investigators, and viewers to the group. This role group configuration makes it easier for Contoso to get started quickly and best fits their compliance management requirements.
-
-|**Role**|**Role permissions**|
-|:-----|:-----|
-| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This role group configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that don't need separate permissions defined for separate groups of users. |
-| **Communication Compliance Admins** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group can't view message alerts. |
-| **Communication Compliance Analysts** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they're assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts can't resolve pending alerts. |
-| **Communication Compliance Investigators** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an eDiscovery (Premium) case, send notifications to users, and resolve the alert. |
-| **Communication Compliance Viewers** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+Contoso decides to use the *Communication Compliance* role group and assign all the communication compliance administrators, analysts, investigators, and viewers to the group. This role group configuration makes it easier for Contoso to get started quickly and best fits their compliance management requirements.
 
 1. Contoso IT administrators sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/permissions) permissions page using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
 2. In the Microsoft Purview compliance portal, they go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> and select the link to view and manage roles in Office 365.
-3. The administrators select the *Communication Compliance* role group, then select **Edit role group**.
-4. The administrators select **Choose members** from the left navigation pane, then select **Edit**.
-5. They select **Add** and then select the checkbox for all Contoso users that will manage communication compliance, investigate, and review alerts.
-6. The administrators select **Add**, then select **Done**.
-7. They select **Save** to add Contoso users to the role group. They select **Close** to complete the steps.
+3. The administrators select the *Communication Compliance* role group, and then select **Edit role group**.
+4. The administrators select **Choose members** from the left navigation pane, and then select **Edit**.
+5. They select **Add**, and then select the checkbox for all Contoso users who will manage communication compliance, and who will investigate and review alerts.
+6. The administrators select **Add**, and then select **Done**.
+7. They select **Save** to add Contoso users to the role group, and then select **Close** to complete the steps.
 
 ## Step 2: Accessing communication compliance
 
@@ -133,10 +126,6 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
-This action opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft Purview compliance portal** provided in the banner at the top of the page.
-
-![Office 365 security and compliance center.](../media/communication-compliance-case-scc.png)
-
 Once in the **Microsoft Purview compliance portal**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 
 ![Communication compliance menu.](../media/communication-compliance-case-show-all.png)
@@ -163,7 +152,7 @@ Contoso IT administrators make sure they review the information in the [Overview
 
 ### Setting up a group for in-scope users
 
-Contoso compliance specialists want to add all users to the communication policy that will detect potentially inappropriate text. They could decide to add each user account to the policy separately, but they've decided it's much easier and saves time to use an **All Users** distribution group for the users for this policy.
+Contoso compliance specialists want to add all users to the communication policy that will detect potentially inappropriate text. They could decide to add each user account to the policy separately, but they've decided it's easier and saves time to use an **All Users** distribution group for the users for this policy.
 
 They need to create a new group to include all Contoso users, so they take the following steps:
 
@@ -184,13 +173,13 @@ With all the prerequisites completed, the IT administrators and the compliance s
 
     ![Communication compliance detect inappropriate text template](../media/communication-compliance-case-template.png)
 
-2. On the policy template wizard, the Contoso IT administrators and compliance specialists work together to complete the three required fields: **Policy name**, **Users or groups to supervise**, and **Reviewers**.
-3. Since the policy wizard has already suggested a name for the policy, the IT administrators and compliance specialists decide to keep the suggested name and focus on the remaining fields. They select the *All users* group for the **Users or groups to supervise** field and select the compliance specialists that should investigate and remediate policy alerts for the **Reviewers** field. The last step to configure the policy and start gathering alert information is to select **Create policy**.
+2. On the policy template wizard, the Contoso IT administrators and compliance specialists work together to complete the three required fields: **Policy name**, **Users or groups in scope**, and **Reviewers**.
+3. Since the policy wizard has already suggested a name for the policy, the IT administrators and compliance specialists decide to keep the suggested name and focus on the remaining fields. They select the *All users* group for the **Users or groups in scope** field and select the compliance specialists that should investigate and remediate policy alerts for the **Reviewers** field. The last step to configure the policy and start gathering alert information is to select **Create policy**.
 
     ![Communication compliance detect inappropriate text wizard](../media/communication-compliance-case-wizard.png)
 
 ## Step 4: Investigate and remediate alerts
 
-Now that the communication compliance policy to detect potentially inappropriate text is configured, the next step for the Contoso compliance specialists will be to investigate and remediate any alerts generated by the policy. It will take up to an hour for the policy to fully process communications in all the communication source channels and for alerts to show up in the **Alert dashboard**.
+Now that the communication compliance policy to detect potentially inappropriate text is configured, the next step for the Contoso compliance specialists is to investigate and remediate any alerts generated by the policy. It may take up to an hour for the policy to fully process communications in all the communication source channels and for alerts to show up in the **Alert dashboard**.
 
 After alerts are generated, Contoso compliance specialists will continue to follow the [workflow instructions](/microsoft-365/compliance/communication-compliance-investigate-remediate) to investigate and remediate potentially inappropriate text issues.

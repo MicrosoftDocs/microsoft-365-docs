@@ -3,11 +3,11 @@ title: "Microsoft 365 admin center Project activity "
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 06/07/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Tier2
 - scotvorg
@@ -55,7 +55,7 @@ The **Project activity** report can be viewed for trends over the last 7 days, 3
 
 ### Privacy settings impact on the dashboard
 
-If users or admins hae their privacy settings set to **Neither**, we do not have accurate metrics for the **Project activity** chart for the Project Online desktop client. The numbers shown will be undercounted. For more information on privacy settings, see [Use policy settings to manage privacy controls for for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls.md).
+If users or admins have their privacy settings set to **Neither**, we do not have accurate metrics for the **Project activity** chart for the Project Online desktop client. The numbers shown will be undercounted. For more information on privacy settings, see [Use policy settings to manage privacy controls for for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
 
 ## User activity table
 

@@ -3,6 +3,7 @@ title: "Turn Microsoft Bookings on or off"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 08/04/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings

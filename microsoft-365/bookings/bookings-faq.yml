@@ -1,5 +1,6 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 06/06/2023
   title: "Microsoft Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
@@ -29,14 +30,14 @@ sections:
           Bookings is available with the following subscriptions: 
           - Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operated by 21Vianet.
           - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. 
-          You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
           
           A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
       - question: |
           How do I use Microsoft Bookings?
         answer: |
-          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
+          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience.
 
       - question: |
           Will my customers see my personal or business calendar?
@@ -51,8 +52,8 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There’s also a companion app available for iOS and Android.
-
+          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. 
+          
       - question: |
           Can I use Bookings in my own Web site?
         answer: |
@@ -245,7 +246,7 @@ sections:
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
         answer: |
-          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab, edit a service, and at the top of the page you'll see an option to share a URL only for that specific service.
+          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You'll see a URL only for that specific service under the Service booking page. You can then share that URL which will be for that specific service.
 
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
@@ -267,7 +268,7 @@ sections:
       - question: |
           Where is Bookings data stored?
         answer: |
-          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Office apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
           
       - question: |
           Is there a way to centrally manage Bookings calendars for all users?

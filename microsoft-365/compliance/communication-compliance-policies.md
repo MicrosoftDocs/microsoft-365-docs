@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -43,22 +44,22 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 |:-----|:-----|:-----|
 | **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
 | **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
-| **Sensitive information** | Monitor for sensitive info | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
-| **Regulatory compliance** | Monitor for regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
-| **Conflict of interest** | Monitor for conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
+| **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
+| **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure classifiers|
+| **Conflict of interest** | Detect conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
 
 Communications are scanned every 24 hours from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and Coordinated Universal Time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time.
 
 ## User-reported messages policy
 
->[!NOTE]
->Availability for user-reported messages for organizations licensed and using [communication compliance](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) and Microsoft Teams started in May 2022. This feature will be available by August 31, 2022 for all organizations licensed and using communication compliance through July 2022. For organizations starting to use communication compliance after July 2022, user-reported messages policy availability may take up to 30 days from the date of your licensing and first use of communication compliance.
+> [!NOTE]
+> The *User-reported messages* policy is implemented for your organization after you create your first communication compliance policy. It can take up to thirty days for this feature to be available after you create your first policy. 
 
 As part of a layered defense to detect and remediate inappropriate messages in your organization, you can supplement communication compliance policies with user-reported messages in Microsoft Teams. This feature empowers users in your organization to self-report inappropriate internal personal and group chat messages, such as harassing or threatening language, sharing of adult content, and sharing of sensitive or confidential information, to help foster a safe and compliant work environment.
 
-Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report a concern* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
+Enabled by default in the [Teams admin center](/microsoftteams/manage-teams-in-modern-portal), the *Report inappropriate content* option in Teams messages allows users in your organization to submit inappropriate internal personal and group chat messages for review by communication compliance reviewers for the policy. These messages are supported by a default system policy that supports reporting messages in Teams group and private chats.
 
-![Communication compliance report a concern](../media/communication-compliance-report-a-concern-full-menu.png)
+![Communication compliance report this message](../media/communication-compliance-report-message.png)
 
 When a user submits a Teams chat message for review, the message is copied to the User-reported message policy. Reported messages initially remain visible to all chat members and there isn't any notification to chat members or the submitter that a message has been reported in channel, private, or group chats. A user can't report the same message more than once and the message remains visible to all users included in the chat session during the policy review process.
 
@@ -66,22 +67,22 @@ During the review process, communication compliance reviewers can perform all th
 
 ![Communication compliance user-reported messages policy](../media/communication-compliance-user-reported-messages-policy.png)
 
-User reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.
+User-reported messages from Teams chats are the only messages processed by the User-reported message policy and only the assigned reviewers for the policy can be modified. All other policy properties aren't editable. When the policy is created, the initial reviewers assigned to the policy are all members of the *Communication Compliance Admins* role group (if populated with at least one user) or all members of your organization's *Global Admin* role group. The policy creator is a randomly selected user from the *Communication Compliance Admins* role group (if populated with at least one user) or a randomly selected user from your organization's *Global Admin* role group.
 
 Admins should immediately assign custom reviewers to this policy as appropriate for your organization. This may include reviewers such as your Compliance Officer, Risk Officer, or members of your Human Resources department. To customize the reviewers for chat messages submitted as user-reported messages, complete the following steps:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, go to **Communication compliance**.
 3. On the **Policy** tab, select the *User-reported messages* policy and select **Edit**.
-4. On the **Monitor for user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+4. On the **Detect user-reported messages** pane, assign reviewers for the policy. Reviewers must have mailboxes hosted on Exchange Online. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 5. Select **Save**.
 
-The *Report a concern* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report a concern* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
+The *Report inappropriate content* option is enabled by default and can be controlled via Teams messaging policies in the [Teams Admin Center](/microsoftteams/manage-teams-in-modern-portal). Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the *Report inappropriate content* option. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
 
 >[!IMPORTANT]
 >If you're using PowerShell to turn on or turn off the **End user reporting** option in the Teams Admin Center, you must use [Microsoft Teams cmdlets module version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) or later.
 
-## Policy for insider risk management integration (preview)
+## Policy for insider risk management integration
 
 When users experience employment stressors, they may engage in risky activities. Workplace stress may lead to uncharacteristic or malicious behavior by some users that could surface as potentially inappropriate behavior on your organization's messaging systems. Communication compliance can provide risk signals detected in applicable messages to [insider risk management](/microsoft-365/compliance/insider-risk-management) risky user policies by using a dedicated [Detect inappropriate text](#policy-templates) policy. This policy is automatically created (if selected as an option) during configuration of a [Data leaks by risky employees](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) or [Security policy violations by risky employees](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) policy in insider risk management.
 
@@ -130,6 +131,23 @@ To copy a policy and create a new policy, complete the following steps:
 3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can't be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
 4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
 
+## Mark a policy as a favorite
+
+After you've created a communication compliance policy, you can mark the policy as a favorite. Once a policy has been identified as a favorite, you can filter favorite policies to appear at the top of the policies list. By marking a policy as a favorite, you can also easily sort policies by favorites.
+
+To mark a policy as a favorite, you have the following options:
+
+- **Mark as favorite**: Enables you to mark selected policies as favorites, so you can easily find the policies that you're most interested in rather than having to search for them.
+- **Sort favorites**: Sorts the policies by favorites, so your favorite policies appear at the top of the list.
+- **Customize columns**: Choose to list the favorites that you want to see. You can also choose to sort favorite policies in ascending or descending order.
+
+To sort policies by groups:
+
+- **All policies**: This is the default view, displaying all the policies in the list.
+- **Only favorites**: Groups policies by favorites at the top of the list.
+
+![Communication compliance sort policies by group.](../media/communication-compliance-group-favorites.png)
+
 ## Policy activity detection
 
 Communications are scanned every hour from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every hour starting from when the policy was created. Editing a policy doesn't change this time. To view the last scan date and Coordinated Universal Time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to an hour to view the first policy scan date and time.
@@ -140,21 +158,21 @@ The following table outlines the time to detection for supported content types:
 |:---------------|:--------------------|
 | Email body content | 1 hour |
 | Teams body content | 1 hour |
-| Yammer body content | 13 hours |
-| Email OCR | 13 hours |
-| Teams OCR | 13 hours |
-| Email attachment | 13 hours |
-| Team attachment | 13 hours |
-| Teams modern attachment | 13 hours |
+| Yammer body content | 24 hours |
+| Email OCR | 24 hours |
+| Teams OCR | 24 hours |
+| Email attachment | 24 hours |
+| Team attachment | 24 hours |
+| Teams modern attachment | 24 hours |
 | Teams metadata | 1 hour |
 | Email metadata | 1 hour |
-| Teams shared channels | 13 hours |
+| Teams shared channels | 24 hours |
 
 For existing policies created before July 31, 2022 it may take up to 24 hours to detect messages and review alerts that match these policies. To reduce the latency for these policies, [copy the existing policy](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) and create a new policy from the copy. If you don't need to retain any data from the older policy, it can be paused or deleted.
 
 To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until February 28, 2023 for your existing policies to be automatically migrated to the new detection criteria.
 
-## Storage limit notification (preview)
+## Storage limit notification
 
 Each communication compliance policy has a storage limit size of 100 GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admins* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
 
@@ -177,9 +195,9 @@ You can choose to select **All users** or to define specific users in a communic
 
 By default, the **Direction is** condition is displayed and can't be removed. Communication direction settings in a policy are chosen individually or together:
 
-- **Inbound**: Detects communications sent **to** supervised users from external and internal senders, including other supervised users in the policy.
-- **Outbound**: Detects communications sent **from** supervised users to external and internal recipients, including other supervised users in the policy.
-- **Internal**: Detects communications **between** the supervised users or groups in the policy.
+- **Inbound**: Detects communications sent **to** scoped users from external and internal senders, including other scoped users in the policy.
+- **Outbound**: Detects communications sent **from** scoped users to external and internal recipients, including other scoped users in the policy.
+- **Internal**: Detects communications **between** the scoped users or groups in the policy.
 
 ### Sensitive information types
 
@@ -223,22 +241,25 @@ Communication compliance policies using classifiers inspect and evaluate message
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
-| [Corporate sabotage (preview)](classifier-tc-definitions.md#corporate-sabotage-preview) | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
-| [Customer complaints (preview)](classifier-tc-definitions.md#customer-complaints) | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act. |
+| [Corporate sabotage](classifier-tc-definitions.md#corporate-sabotage) | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
+| [Customer complaints](classifier-tc-definitions.md#customer-complaints) | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act. |
 | [Discrimination](classifier-tc-definitions.md#discrimination) | Detects potentially explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities. |
-| [Gifts & entertainment (preview)](classifier-tc-definitions.md#gifts--entertainment-preview) | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
+| [Gifts & entertainment](classifier-tc-definitions.md#gifts--entertainment) | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
 | [Harassment](classifier-tc-definitions.md#harassment) | Detects potentially offensive content in multiple languages that targets people regarding race, color, religion, national origin. |
-| [Money laundering (preview)](classifier-tc-definitions.md#money-laundering-preview) | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
+| [Money laundering](classifier-tc-definitions.md#money-laundering)| Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
 | [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
-| [Regulatory collusion (preview)](classifier-tc-definitions.md#regulatory-collusion-preview) | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
-| [Stock manipulation (preview)](classifier-tc-definitions.md#stock-manipulation-preview) | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
+| [Regulatory collusion](classifier-tc-definitions.md#regulatory-collusion)| Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
+| [Stock manipulation](classifier-tc-definitions.md#stock-manipulation)| Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
 | [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
-| [Unauthorized disclosure (preview)](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
+| [Unauthorized disclosure](classifier-tc-definitions.md#unauthorized-disclosure)| Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
+> Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
 
 ### Optical character recognition (OCR)
+
+> [!NOTE]
+> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time. 
 
 Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 
@@ -265,20 +286,23 @@ The following table explains more about each condition.
 
 |**Condition**|**How to use this condition**|
 |:-----|:-----|
-| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers (preview)](/microsoft-365/compliance/classifier-learn-about). |
+| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). |
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about). |
-| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages. Enter each domain and separate multiple domains with a comma. Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific emails address you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example newsletter@contoso.com). |
-| **Message is sent to any of these domains** <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains in sent messages. Enter each domain and separate multiple domains with a comma. Each domain is applied separately, only one domain must apply for the policy to apply to the message. <br><br> If you want to exclude all emails sent to two specific domains, you'd configure the **Message is not sent to any of these domains** condition with the two domains (example 'contoso.com,wingtiptoys.com'). |
+| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br> Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific emails address you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example newsletter@contoso.com). |
+| **Message is sent to any of these domains** <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains in sent messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br>Each domain is applied separately; only one domain must apply for the policy to apply to the message. <br><br> If you want to exclude all emails sent to two specific domains, configure the **Message is not sent to any of these domains** condition with the two domains (example 'contoso.com,wingtiptoys.com'). |
 | **Message is classified with any of these labels** <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention).|
-| **Message contains any of these words** <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
-| **Attachment contains any of these words** <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
-| **Attachment is any of these file types** <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Only one attachment extension must match for the policy to apply.|
+| **Message contains any of these words** <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>- Remove all leading and trailing spaces.<br>- Add quotation marks before and after each keyword or key phrase.<br>- Separate each keyword or key phrase with a comma.<br>- Do not include spaces between items separated by a comma. <br><br>**Example:** "banker","insider trading","confidential 123"<br><br>Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
+| **Attachment contains any of these words** <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document).<br><br>Make sure to use the following syntax when entering conditional text: <br><br>- Remove all leading and trailing spaces.<br>- Add quotation marks before and after each keyword or key phrase.<br>- Separate each keyword or key phrase with a comma.<br>- Do not include spaces between items separated by a comma. <br><br>**Example:** "banker","insider trading","confidential 123"<br><br>Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
+| **Attachment is any of these file types** <br><br> **Attachment is none of these file types** | To bring communications into scope that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter file types separated by a comma (example *.exe,.pdf,.zip*). Do not include spaces between items separated by a comma. Only one attachment extension must match for the policy to apply.|
 | **Message size is larger than** <br><br> **Message size is not larger than** | To review messages based on a certain size, use these conditions to specify the maximum or minimum size a message can be before it's subject to review. For example, if you specify **Message size is larger than** \> **1.0 MB**, all messages that are 1.01 MB and larger are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 | **Attachment is larger than** <br><br> **Attachment is not larger than** | To review messages based on the size of their attachments, specify the maximum or minimum size an attachment can be before the message and its attachments are subject to review. For example, if you specify **Attachment is larger than** \> **2.0 MB**, all messages with attachments 2.01 MB and over are subject to review. You can choose bytes, kilobytes, megabytes, or gigabytes for this condition.|
 
+> [!IMPORTANT]
+> If a condition includes a list, do not include spaces between list items. For example, enter "bias,harassment" instead of "bias, harassment".
+
 #### Matching words and phrases to emails or attachments
 
-Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker", "confidential", and "insider trading" separated by a comma (banker, confidential,"insider trading"). The policy applies to any messages that includes the word "banker", "confidential", or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
+Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker", "confidential", and "insider trading" separated by a comma (banker,confidential,"insider trading"). The policy applies to any messages that includes the word "banker", "confidential", or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
 
 > [!IMPORTANT]
 >
@@ -301,6 +325,13 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 ### Review percentage
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
+
+### Filter email blasts
+
+Use the **Filter email blasts** setting to exclude messages sent from email blast services. Messages that match the conditions you specify won't generate alerts. This includes bulk email, such as newsletters, as well as spam, phishing, and malware. When this option is selected, you can view a [report](communication-compliance-reports-audits.md#detailed-reports) that lists the bulk email senders that were filtered out.
+    
+> [!NOTE]
+> The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
 
 ## Alert policies
 

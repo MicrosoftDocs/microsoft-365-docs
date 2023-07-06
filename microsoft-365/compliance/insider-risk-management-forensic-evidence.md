@@ -1,5 +1,5 @@
 ---
-title: Learn about insider risk management forensic evidence (preview)
+title: Learn about insider risk management forensic evidence
 description: Learn about insider risk management forensic evidence in Microsoft Purview. Forensic evidence is an investigative tool for viewing captured user activity to help determine whether the user's actions pose a risk and may lead to a security incident.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -10,11 +10,17 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 03/01/2023
 audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Learn about insider risk management forensic evidence (preview)
+# Learn about insider risk management forensic evidence
+
+> [!IMPORTANT]
+> Forensic evidence is an opt-in add-on feature in Insider Risk Management that gives security teams visual insights into potential insider data security incidents, with user privacy built in. Forensic evidence includes customizable event triggers and built-in user privacy protection controls, enabling security teams to better investigate, understand and respond to potential insider data risks like unauthorized data exfiltration of sensitive data.
+>
+> Organizations set the right policies for themselves, including what risky events are highest priority for capturing forensic evidence and what data is most sensitive.   Forensic evidence is off by default, policy creation requires dual authorization and usernames can be masked with pseudonymization (which is on by default for Insider Risk Management).  Setting up policies and reviewing security alerts within Insider Risk Management leverages strong role-based access controls (RBAC), ensuring that the designated individuals in the organization are taking the right actions with additional auditing capabilities.
 
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -26,11 +32,13 @@ Having visual context is crucial for security teams during forensic investigatio
 ## Feature capabilities
 
 - **Visual capturing** allows organizations to capture clips of key security-related user activities, allowing for more secure or compliant visibility and meeting organizational needs.
+- **Include or exclude desktop applications and/or websites** to configure a recording policy that focuses on the  applications and websites that present the most risk. This preserves storage space and user privacy. For example, exclude personal email and social media accounts. 
 - **Protected user privacy** through multiple levels of approval for the activation of the capturing feature.
 - **Customizable triggers and capturing options** mean that security teams can set up forensic evidence to meet their needs, whether it be based on incidents (for example, *Capture 5 min before and 10 min after a user has downloaded 'SecretResearchPlans.docx'*), or based on continuous capturing needs.
 - **User-centric policy targeting** means that security and compliance teams can focus on activity by user, not device, for better contextual insights.
 - **Strong role-based access controls (RBAC)** mean that the ability to set up and review forensic clips is tightly controlled and only available to individuals in the organization with the right permissions.
 - **Deep integration with current insider risk management features**, making for easier onboarding and more familiar workflows for insider risk management administrators and a trusted single-platform approach.
+- **Trial capacity (up to 20 GB)** for captured clips, with quick access to capacity utilization and the ability to purchase additional capacity.
 
 ## Device and configuration requirements
 
@@ -63,7 +71,7 @@ The following tables include the supported minimum requirements for utilizing in
 | Display | Minimum screen resolution of 1920 x 1080 | 
 
 > [!IMPORTANT]
-> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic recordings may not be reliable.
+> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic captures may not be reliable.
 
 ## Capturing options
 
@@ -71,8 +79,8 @@ The following tables include the supported minimum requirements for utilizing in
 
 Depending how your organization decides to configure forensic evidence, there are two capturing options:
 
-- **Specific activities**: This policy option captures activity only when a triggering event has brought an approved user into scope for the forensic evidence policy and when the conditions for a policy indicator are detected for the user. For example, a user approved for forensic evidence capturing is brought in-scope to the forensic evidence policy and the user copies data to personal cloud storage services or portable storage devices. Capturing is scoped only to the configured time frame when the user is copying the data to the personal cloud storage service or portable storage device. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **Alerts** dashboard.
-- **All activities**: This policy option captures any activity performed by users. This includes mouse movement, keystrokes, and all activities defined by insider risk indicators. For example, your organization has a time-sensitive need for capturing activities for an approved user that is actively involved in potentially risky activities that may lead to a security incident. Policy indicators may not have reached the threshold for an alert to be generated by the policy and the potentially risky activity may not be documented. Continuous capturing help prevents the potentially risky activity from being missed or going undetected. Captures for this option will be available for review on the **Forensic evidence (preview)** tab on the **User activity reports (preview)** dashboard.
+- **Specific activities**: This policy option captures activity only when a triggering event has brought an approved user into scope for the forensic evidence policy and when the conditions for a policy indicator are detected for the user. For example, a user approved for forensic evidence capturing is brought in-scope to the forensic evidence policy and the user copies data to personal cloud storage services or portable storage devices. Capturing is scoped only to the configured time frame when the user is copying the data to the personal cloud storage service or portable storage device. Captures for this option will be available for review on the **Forensic evidence** tab on the **Alerts** dashboard.
+- **All activities**: This policy option captures any activity performed by users. For example, your organization has a time-sensitive need for capturing activities for an approved user that is actively involved in potentially risky activities that may lead to a security incident. Policy indicators may not have reached the threshold for an alert to be generated by the policy and the potentially risky activity may not be documented. Continuous capturing help prevents the potentially risky activity from being missed or going undetected. Captures for this option will be available for review on the **Forensic evidence** tab on the **User activity reports (preview)** dashboard.
 
 >[!IMPORTANT]
 >Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.

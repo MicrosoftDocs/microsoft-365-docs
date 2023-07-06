@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/16/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -28,7 +28,7 @@ description: "South Korea resident registration number sensitive information typ
 
 ## Format
 
-13 digits containing a hyphen
+Thirteen digits containing a hyphen
 
 ## Pattern
 
@@ -36,14 +36,11 @@ description: "South Korea resident registration number sensitive information typ
 
 - six digits in the format YYMMDD, which are the date of birth
 - a hyphen
-- one digit determined by the century and gender
-- four-digit region-of-birth code
-- one digit used to differentiate people for whom the preceding numbers are identical
-- a check digit.
+- seven digits
 
 ## Checksum
 
-Yes
+No
 
 ## Definition
 

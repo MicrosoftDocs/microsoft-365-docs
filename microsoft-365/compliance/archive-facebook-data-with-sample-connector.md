@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/15/2022
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -47,13 +47,13 @@ Complete the following prerequisites before you can set up and configure a conne
 
 - The connector for Facebook Business pages can import a total of 200,000 items in a single day. If there are more than 200,000 Facebook Business items in a day, none of those items will be imported to Microsoft 365.
 
-- The user who sets up the custom connector in the compliance portal (in Step 5) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who sets up the custom connector in the compliance portal (in Step 5) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see [Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#roles-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom Microsoft Purview role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-microsoft-purview-role-group).
 
 ## Step 1: Create an app in Azure Active Directory
 
 The first step is to register a new app in Azure Active Directory (AAD). This app corresponds to the web app resource that you implement in Step 4 and Step 5 for the Facebook connector.
 
-For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
+For step-by-step instructions, see [Create an app in Azure Active Directory](archive-facebook-data.md#step-1-create-an-app-in-azure-active-directory).
 
 During the completion of this step (by using the previous step-by-step instructions), you'll save the following information to a text file. These values are used in later steps in the deployment process.
 
@@ -67,7 +67,7 @@ During the completion of this step (by using the previous step-by-step instructi
 
 The next step is to deploy the source code for the Facebook Business pages connector app that will use the Facebook API to connect to your Facebook account and extract data so you can import it to Microsoft 365. The Facebook connector that you deploy for your organization will upload the items from your Facebook Business pages to the Azure Storage location that is created in this step. After you create a Facebook business pages connector in the compliance portal (in Step 5), the Import service will copy the Facebook business pages data from the Azure Storage location to a mailbox in your Microsoft 365 organization. As previous explained in the [Prerequisites](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) section, you must have a valid Azure subscription to create an Azure Storage account.
 
-For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
+For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](archive-facebook-data.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 In the step-by-step instructions to complete this step, you'll provide the following information:
 
@@ -81,7 +81,7 @@ After completing this step, be sure to copy the Azure app service URL (for examp
 
 The next step is to create and configure a new app on Facebook. The Facebook business pages connector that you create in Step 5 uses the Facebook web app to interact with the Facebook API to obtain data from your organization's Facebook Business pages.
 
-For step-by-step instructions, see [Register the Facebook app](deploy-facebook-connector.md#step-3-register-the-facebook-app).
+For step-by-step instructions, see [Register the Facebook app](archive-facebook-data.md#step-3-register-the-facebook-app).
 
 During the completion of this step (by following the step-by-step instructions), you save the following information to a text file. These values are used to configure the Facebook connector app in Step 4.
 
@@ -113,7 +113,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the connector in the compliance portal that will import data from your Facebook Business pages to a specified mailbox in Microsoft 365. After you complete this step, the Microsoft 365 Import service will start importing data from your Facebook Business pages to Microsoft 365.
 
-For step-by-step instructions, see [Step 5: Set up a Facebook connector in the compliance portal](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal).
+For step-by-step instructions, see [Step 5: Set up a Facebook connector in the compliance portal](archive-facebook-data.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal).
 
 During the completion of this step (by following the step-by-step instructions), you provide the following information (that you've copied to a text file after completing the steps).
 

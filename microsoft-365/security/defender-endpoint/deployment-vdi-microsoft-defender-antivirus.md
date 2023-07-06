@@ -5,7 +5,7 @@ keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, vi
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/05/2022
+ms.date: 03/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -14,7 +14,7 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
 ms.service: microsoft-365-security
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 - ContentEngagementFY23
@@ -26,6 +26,8 @@ search.appverid: met150
 **Applies to:**
 
 - Microsoft Defender Antivirus
+- [Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Platforms**
 
@@ -34,7 +36,7 @@ search.appverid: met150
 > [!TIP]
 > This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
 
-You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in. 
+You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 
 This guide describes how to configure Microsoft Defender Antivirus on your VMs for optimal protection and performance, including how to:
 
@@ -46,9 +48,8 @@ This guide describes how to configure Microsoft Defender Antivirus on your VMs f
 - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
-
 > [!IMPORTANT]
-> Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows. 
+> Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
 ## Set up a dedicated VDI file share for security intelligence
 
@@ -73,7 +74,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
+Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x"
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
@@ -84,8 +85,8 @@ Security intelligence packages are typically published once every three to four 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
 This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set this configuration up, follow these steps:
 
- 1. Create an SMB/CIFS file share. 
- 
+ 1. Create an SMB/CIFS file share.
+
  2. Use the following example to create a file share with the following share permissions.
 
     ```PowerShell
@@ -95,9 +96,9 @@ This configuration is possible when the devices have the share and read access (
     ----   --------- ----------- ----------------- -----------
     mdatp$ *         Everyone    Allow             Read
     ```
-   
+
     > [!NOTE]
-    > An NTFS permission is added for **Authenticated Users:Read:**. 
+    > An NTFS permission is added for **Authenticated Users:Read:**.
 
     For this example, the file share is:
 

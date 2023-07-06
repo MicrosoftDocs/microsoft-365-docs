@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
@@ -33,6 +33,8 @@ ms.date: 11/08/2022
 
 ::: moniker range="o365-worldwide"
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Watch: Get help or support
@@ -55,7 +57,7 @@ Save time by starting your service request online. We'll help you find a solutio
 > [!IMPORTANT]
 > You must have bought at least one subscription through Microsoft to access Microsoft support. If you bought all your subscriptions through a partner, contact your partner for support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. On the bottom right side of the page, select **Help & support**.
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
@@ -220,5 +222,5 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 ## Related content
 
 [Find docs and training](index.yml) (link page)\
-[Employee quick setup](setup/employee-quick-setup.md) (article)\
+[Employee quick setup](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)

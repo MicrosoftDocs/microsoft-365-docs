@@ -8,10 +8,11 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
+ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -46,7 +47,7 @@ In addition, processing of data that is required to analyze threats and inspect 
 
 ### Overview
 
-Service documentation: [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview)
+Service documentation: [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/eop-about)
 
 Capability summary: Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats.
 

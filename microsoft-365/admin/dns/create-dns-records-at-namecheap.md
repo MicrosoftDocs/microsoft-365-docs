@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,7 +30,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
-If Namecheap is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+If Namecheap is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Microsoft Teams, and so on.
 
 After you add these records at Namecheap, your domain will be set up to work with Microsoft services.
 
@@ -242,9 +243,9 @@ To verify the record in Microsoft 365:
 
      :::image type="content" source="../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png" alt-text="Select the Save Changes control.":::
 
-## Advanced option: Skype for Business
+## Advanced option: Microsoft Teams
 
-Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses Microsoft Teams. Teams needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
 

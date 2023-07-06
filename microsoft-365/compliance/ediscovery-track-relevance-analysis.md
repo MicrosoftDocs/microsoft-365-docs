@@ -6,8 +6,8 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 titleSuffix: Office 365
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -55,7 +55,7 @@ In Microsoft Purview eDiscovery (Premium), the Relevance Track tab displays the 
   
     ![Relevance Track training.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. When you're done tagging and if you need to continue training, click **Training**. Another sample set of files is generated from the loaded file set for additional training. You are then returned to the Tag tab to tag and train more files.
+2. When you're done tagging and if you need to continue training, select **Training**. Another sample set of files is generated from the loaded file set for additional training. You are then returned to the Tag tab to tag and train more files.
 
 ### Reaching stable training levels
 
@@ -75,7 +75,7 @@ Here, the recommended next step is "None", which indicates that no additional it
 If you want to import new files after Batch calculation, the administrator can add the imported files to a new load.
   
 > [!NOTE]
-> If you click **Cancel** during Batch calculation, the process saves what was already executed. If you run Batch calculation again, the process will continue from the last executed point. 
+> If you select **Cancel** during Batch calculation, the process saves what was already executed. If you run Batch calculation again, the process will continue from the last executed point. 
   
 ### Assessing tagging consistency
 
@@ -86,17 +86,17 @@ If there are inconsistencies in file tagging, it can affect the analysis. The eD
   
 1. In **Relevance \> Track**, expand an issue's row.
   
-2. To the right of **Next step**, click **Modify**.
+2. To the right of **Next step**, select **Modify**.
   
-3. Select **Tag inconsistencies** as the **Next step** option, after seven training samples and click **OK**.
+3. Select **Tag inconsistencies** as the **Next step** option, after seven training samples and select **OK**.
   
 4. Select **Tag inconsistencies**. The **Tag** tab opens displaying a list of the inconsistencies to retag as necessary.
   
-5. Click **Calculate** to submit the changes. The next step after tagging inconsistencies is "Training". 
+5. Select **Calculate** to submit the changes. The next step after tagging inconsistencies is "Training". 
   
 ## Viewing and using Relevance results
 
-In the **Relevance \> Track** tab, expand an issue's row, and next to **Detailed results**, click **View**. The Detailed results panes are displayed, as shown and described below.
+In the **Relevance \> Track** tab, expand an issue's row, and next to **Detailed results**, select **View**. The Detailed results panes are displayed, as shown and described below.
   
 ![Relevance training detailed results.](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
@@ -123,9 +123,7 @@ The **Training Progress** pane includes a training progress graph and quality in
 **Training quality indicator**: Displays the rating of the tagging consistency as follows:
   
 - **Good**: Files are tagged consistently. (Green light displayed)
-  
 - **Medium**: Some files may be tagged inconsistently. (Yellow light displayed)
-
 - **Warning**: Many files may be tagged inconsistently. (Red light displayed)
 
 **Training progress graph**: Shows the degree of Relevance training stability after many Relevance training cycles in comparison to the F-measure value. As we move from the left to the right across the graph, the confidence interval narrows and is used, along with the F-measure, by eDiscovery (Premium) Relevance to determine stability when the Relevance training results are optimized.
@@ -138,13 +136,9 @@ The **Training Progress** pane includes a training progress graph and quality in
 The **Batch calculation results** pane includes the number of files that were scored for Relevance, as follows: 
   
 - **Success**
-  
 - **Empty**: Contains no text, for example, only spaces/tabs
-  
 - **Failed**: Due to excessive size or could not be read
-  
 - **Ignored**: Due to excessive size
-  
 - **Nebulous**: Contains meaningless text or no features relevant to the issue
   
 > [!NOTE]
@@ -159,11 +153,7 @@ The **Training statistics** pane displays statistics and graphs based on results
 This view shows the following:
   
 - **Review-recall ratio**: Comparison of results according to Relevance scores in a hypothetically linear review. Recall is estimated given the review set size set.
-  
 - **Parameters**: Cumulative calculated statistics pertaining to the review set in relation to the file population for the entire case.
-  
 - **Review**: Percentage of files to review based on this cutoff.
-  
 - **Recall**: Percentage of Relevant files in the review set. 
-  
 - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.

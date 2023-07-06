@@ -26,6 +26,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -45,7 +46,7 @@ To manage external storage, use removable storage access control instead of [dev
 **Windows 10 and Windows 11 support details**:
 
 - Applied at either the device level, user level. or both. Only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
-- Support MEM OMA-URI and GPO.
+- Support Intune OMA-URI and GPO.
 - For Windows devices, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
 
 **Supported Platform** - Windows 10, Windows 11
@@ -55,7 +56,7 @@ To manage external storage, use removable storage access control instead of [dev
 - Applied at the device level: the same policy applies for any logged on user.
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
-**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled)
+**Supported platform** - macOS 11 (Big Sur) or later
 
 
 ### Device installation
@@ -65,7 +66,7 @@ To manage external storage, use removable storage access control instead of [dev
 **Windows 10 and Windows 11 support details**:
 
 - Applied at the device level: the same policy applies for any logged on user.
-- Supports Microsoft Endpoint Manager and Group Policy Objects.
+- Supports Microsoft Configuration Manager and Group Policy Objects.
 - For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 **Supported Platform** - Windows 10, Windows 11
@@ -75,7 +76,7 @@ To manage external storage, use removable storage access control instead of [dev
 - Applied at the device level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
-**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled) or later
+**Supported platform** - macOS 11 (Big Sur) or later
 
 ### Endpoint DLP Removable storage
 

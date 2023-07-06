@@ -3,8 +3,9 @@ title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
 author: pebaum
 manager: scotv
+ms.date: 06/18/2022
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business
@@ -319,9 +320,9 @@ Microsoft values the partnerships we have with our customers and places great em
 
 **Customer Lockbox:** As a Microsoft admin, you can use Customer Lockbox to control how a Microsoft support engineer accesses your data during a help session. In cases where the engineer requires access to your data to troubleshoot and fix an issue, Customer Lockbox allows you to approve or reject the access request. If you approve it, the engineer is able to access the data. Each request has an expiration time, and once the issue is resolved, the request is closed and access is revoked. Customer Lockbox is included in the Office 365 Enterprise 5 plan, or you can purchase a separate subscription with any other Office 365 Enterprise plan. For more information, see [Office 365 Customer Lockbox Requests](/microsoft-365/compliance/customer-lockbox-requests).
 
-**Microsoft Defender for Office 365:** Defender for Office 365 helps protect your organization against malware and viruses. Defender for Office 365 includes [Safe Links](/office365/securitycompliance/atp-safe-links), [Safe Attachments](/office365/securitycompliance/atp-safe-attachments), [Anti-phishing](/office365/securitycompliance/atp-anti-phishing), and [Spoof intelligence](/office365/securitycompliance/learn-about-spoof-intelligence) features. For more information about Defender for Office 365, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+**Microsoft Defender for Office 365:** Defender for Office 365 helps protect your organization against malware and viruses. Defender for Office 365 includes [Safe Links](/microsoft-365/security/office-365-security/safe-links-about), [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about), [Anti-phishing](/microsoft-365/security/office-365-security/anti-phishing-protection-about), and [Spoof intelligence](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence) features. For more information about Defender for Office 365, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-[**Safe Links**](/office365/securitycompliance/atp-safe-links) **and** [**Safe Attachments**](/office365/securitycompliance/atp-safe-attachments)**:** Safe Links proactively protects your users from malicious hyperlinks in a message, providing protection every time the link is selected. Safe Attachments protects against unknown malware and viruses, routing all messages and attachments that don't have a known virus/malware signature to a special environment where Defender for Office 365 can detect malicious intent.
+**[Safe Links](/microsoft-365/security/office-365-security/safe-links-about) and [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments-about)**: Safe Links proactively protects your users from malicious hyperlinks in a message, providing protection every time the link is selected. Safe Attachments protects against unknown malware and viruses, routing all messages and attachments that don't have a known virus/malware signature to a special environment where Defender for Office 365 can detect malicious intent.
 
 ## Product use rights
 

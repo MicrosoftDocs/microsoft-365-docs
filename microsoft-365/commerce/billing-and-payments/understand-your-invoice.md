@@ -24,12 +24,17 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-ms.date: 08/08/2022
+ms.date: 03/31/2023
 ---
 
 # Understand your bill or invoice
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
+
+> [!IMPORTANT]
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 To view and print your invoice:
 
@@ -102,7 +107,7 @@ If there are Azure charges on your invoice that you would like more details on, 
 
 ### Payment instructions
 
-At the bottom of the invoice are instructions on how to pay your bill. You can pay by wire, check, or online.
+At the bottom of the invoice are instructions on how to pay your bill. You can pay online or by wire transfer.
 
 ### Publisher information
 
@@ -130,7 +135,7 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 
 ### How do I pay the amount due on my Invoice?
 
-Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it's automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it's automatically charged within 10 days of the invoice date. If your payment method is by wire transfer, see the information under **Payment Instructions** in the PDF.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 

@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: itpro
 ms.collection: 
 - tier2
@@ -22,14 +23,15 @@ ms.collection:
 
 # Information barriers
 
-Microsoft 365 enables communication and collaboration across groups and organizations and supports ways to restrict communication and collaboration among specific groups of users when necessary. This may include situations or scenarios where you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. This may also include situations when you need to restrict communication and collaboration between certain people inside your organization to safeguard internal information.
+Microsoft 365 enables communication and collaboration across groups and organizations and supports ways to restrict communication and collaboration among specific groups of users when necessary. This requirement may include situations or scenarios where you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. This scenario may also include situations when you need to restrict communication and collaboration between certain people inside your organization to safeguard internal information.
 
-Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. A compliance administrator or IB administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. IB policies can be used for situations like these:
+Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. A compliance administrator or IB administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Use IB policies for situations like these:
 
-- User in the day trader group should not communicate or share files with the marketing team
-- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
-- An internal team with trade secret material should not call or chat online with people in certain groups within their organization
-- A research team should only call or chat online with a product development team
+- User in the day trader group should not communicate or share files with the marketing team.
+- Instructors in one school shouldn't be able to communicate or share files with students in another school in the same school district.
+- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization.
+- An internal team with trade secret material should not call or chat online with users in certain groups within their organization.
+- A research team should only call or chat online with a product development team.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -49,3 +51,4 @@ Use the following steps to configure IB for your organization:
 
 - [Attributes for IB policies](information-barriers-attributes.md)
 - [Edit or remove IB policies](information-barriers-edit-segments-policies.md)
+- [Use multi-segment support in information barriers](information-barriers-multi-segment.md)

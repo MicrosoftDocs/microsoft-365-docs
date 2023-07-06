@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 06/16/2023
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -80,7 +80,7 @@ If Microsoft 365 retention is used to create an inactive mailbox, the retention 
 
 ### Using adaptive policy scopes to manage retention of inactive mailboxes
 
-With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), you can apply retention settings specifically to inactive mailboxes. Benefits of this configuration include:
+With [adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes), you can apply retention settings specifically to inactive mailboxes. Benefits of this configuration include:
 
 - You can meet your organization's regulations or policies that require different retention periods for active employees and former employees.
 
@@ -88,21 +88,21 @@ With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-
 
 - You can quickly identify the policy for retention that's assigned to inactive mailboxes in your organization, which makes it easier to change the retention settings if necessary. 
 
-- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
+- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](purview-adaptive-scopes.md#configure-adaptive-scopes) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
 
 > [!NOTE]
 > Depending on the configuration of your adaptive policy scope, inactive mailboxes might or might not be included.  To specifically target or to exclude inactive mailboxes from an adaptive policy scope, see [configuration information for Exchange email and Exchange public folders](retention-settings.md#locations).
 
 ### Using static policy scopes and inactive mailboxes
 
-If you don't use [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with Microsoft 365 retention, and instead use a [static scope](retention.md#adaptive-or-static-policy-scopes-for-retention), consider the following:
+If you don't use [adaptive policy scopes and instead use a static scope](retention.md#adaptive-or-static-policy-scopes-for-retention) with Microsoft 365 retention,  consider the following:
 
-- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
+- Static policy scopes include inactive mailboxes when you use the default **All mailboxes** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
     
     > [!NOTE]
-    > This also means that any new Microsoft 365 retention settings using a static scope that is applied to the default selection of **All recipients** will automatically include all existing inactive mailboxes.
+    > This also means that any new Microsoft 365 retention settings using a static scope that is applied to the default selection of **All mailboxes** will automatically include all existing inactive mailboxes.
 
-- If you change the default selection of **All recipients** to include specific recipients, retention settings for the policy will no longer apply to any inactive mailboxes, which now become eligible for automatic deletion.
+- If you change the default selection of **All mailboxes** to include specific recipients, retention settings for the policy will no longer apply to any inactive mailboxes, which now become eligible for automatic deletion.
 
 - If you want to release a retention policy that's applied to an inactive mailbox, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
@@ -119,7 +119,7 @@ For more information about the differences between eDiscovery holds and Microsof
 
 ## Inactive mailboxes and auto-expanding archives
 
-An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. In situations where it's necessary to recover data from an inactive mailbox with an auto-expanding archive, we recommended that you use the content search tool to export the data from the mailbox and then import to another mailbox. For step-by-step instructions to search an inactive mailbox and export the search results, see:
+An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. If, for compliance reasons, you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox. This action is supported for eDiscovery purposes only, and can't be used as a backup solution. For instructions to use content search for the recovery of data for eDiscovery, see following articles:
 
 - [Content search](ediscovery-content-search.md)
 

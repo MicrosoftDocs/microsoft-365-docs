@@ -1,7 +1,7 @@
 ﻿---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
@@ -38,12 +39,13 @@ This topic provides some general steps that can be used to narrow down performan
 
 Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint on macOS.
 
->[!WARNING]
->Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance.
+> [!WARNING]
+> Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance.
 
 ## Troubleshoot performance issues using Real-time Protection Statistics
 
 **Applies to:**
+
 - Only performance issues related to AV
 
 Real-time protection (RTP) is a feature of Defender for Endpoint on macOS that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.

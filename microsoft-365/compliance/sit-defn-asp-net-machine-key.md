@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 05/16/2022
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -70,4 +70,3 @@ The patterns are designed to match actual credentials with reasonable confidence
 - password
 - key
 - connectionstring
-

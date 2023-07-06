@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/29/2023
 ---
 
 # Take response actions on a file
@@ -41,7 +42,8 @@ Response actions run along the top of the file page, and include:
 
 - Stop and Quarantine File
 - Add Indicator
-- Download file
+- Download file 
+- Collect file
 - Ask Defender Experts
 - Action center
 
@@ -145,6 +147,22 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
+The **Download file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
+
+  The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
+
+
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
 
 ### Download quarantined files
@@ -165,14 +183,34 @@ This feature won't work if sample submission is turned off. If automatic sample 
 > Download quarantined file requirements:
 >
 > - Your organization uses Microsoft Defender Antivirus in active mode
-> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
 > - Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Sample submission is turned on
 > - Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019, or Windows Server 2022, or Windows 11
 
 ### Collect files
 
-If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location. If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled.
+If a file isn't already stored by Microsoft Defender for Endpoint, you can't download it. Instead, you'll see a **Collect file** button in the same location.
+
+The **Collect file** button can have the following states:
+
+- **Active** - You'll be able to collect the file. 
+
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files. 
+
+
+    The following permissions are required: 
+
+    For Portable Executable file (.exe, .sys, .dll, and others)
+    - Global admin or Advanced live response or Alerts 
+
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
+
+
+If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled. 
+
+
 > [!Important]
 > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 

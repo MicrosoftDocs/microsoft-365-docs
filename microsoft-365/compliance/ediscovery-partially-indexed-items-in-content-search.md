@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/13/2022
+ms.date: 03/01/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -72,7 +72,7 @@ Keep the following in mind about partially indexed items:
 - When you run an eDiscovery search, the total number and size of partially indexed Exchange items (returned by the search query) are displayed in the search statistics on the flyout page, and labeled as **unindexed items**. Statistics about partially indexed items displayed on the flyout page don't include partially indexed items in SharePoint sites or OneDrive accounts.
 - If the search that you're exporting results from was a search of specific content locations or all content locations in your organization, only the unindexed items from content locations that contain items that match the search criteria will be exported. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. The reason for this is that exporting partially indexed items from lots of locations in the organization might increase the likelihood of export errors and increase the time it takes to export and download the search results.
 
-    To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results (by clicking **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons** under **Output options**).
+    To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results (by selecting **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons** under **Output options**).
 
 - If you choose to include all mailbox items in the search results, or if a search query doesn't specify any keywords or only specifies a date range, partially indexed items might not be copied to the PST file that contains the partially indexed items. This is because all items, including any partially indexed items, will be automatically included in the regular search results.
 - Partially indexed items aren't available to be previewed. You have to export the search results to view partially indexed items returned by the search.
@@ -83,14 +83,14 @@ Keep the following in mind about partially indexed items:
 
   |**Export configuration**|**Indexed items that match search query**|**Partially indexed items that match search query**|**Partially indexed items that don't match search query**|
   |:-----|:-----|:-----|:-----|
-  |Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Not exported <br/>|
+  |Export only indexed items  <br/> |Exported<br/> |Exported (included with the indexed items exported)<br/>  |Not exported <br/>|
   |Export only partially indexed items  <br/> |Not exported  <br/> |Exported (as partially indexed items)<br/> |Exported (as partially indexed items)|
-  |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Exported (as partially indexed items)<br/>|
+  |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items exported)<br/>  |Exported (as partially indexed items)<br/>|
   ||||
   
 ## Workaround for using a date range to exclude partially indexed items
 
-In Content search and Microsoft Purview eDiscovery (Standard), you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In eDiscovery (Premium), you can exclude partially indexed items by using a date range in a search query.
+In Content search and Microsoft Purview eDiscovery, you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items.
 
 As a workaround for this limitation, we recommend the following procedure.
 
@@ -142,15 +142,9 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 ## More information about partially indexed items
 
 - As previously stated, because message and document properties and their metadata are indexed, a keyword search might return results if that keyword appears in the indexed metadata. However, that same keyword search might not return the same item if the keyword only appears in the content of an item with an unsupported file type. In this case, the item would be returned as a partially indexed item.
-
 - If a partially indexed item is included in the search results because it matched the search query criteria, then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
-
 - Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
-
 - Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed. 
-
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
-
 - Email messages protected using Azure Rights Management are indexed and will be included in the search results if they match the search query. Rights-protected email messages are decrypted and can be previewed and exported. This functionality requires that you're assigned the RMS Decrypt role, which is assigned by default to the eDiscover Manager role group.
-
 - If you create a query-based hold that's associated with an eDiscovery case, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria for the hold. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](ediscovery-create-holds.md).

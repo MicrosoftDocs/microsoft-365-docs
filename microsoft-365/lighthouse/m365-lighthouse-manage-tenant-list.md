@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
+ms.date: 10/26/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -102,7 +103,7 @@ Tags that are currently assigned have a check mark to the right of the name. You
 
 ## Next steps
 
-After you've created and assigned tags, you can use them to filter your tenants. Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenant filter. You can create new tags to support specific views based on each page.
+After you've created and assigned tags, you can use them to filter your tenants. Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenants filter. You can create new tags to support specific views based on each page.
 
 ## Related content
 

@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/26/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,15 +37,14 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
 
    ![Error remediation.](../media/ediscovery-new-error-remediation.png)
 
-2. Select the errors you want to remediate by clicking the radio button next to either the error type or file type.  In the following example, we're remediating a password protected file.
-
-3. Click **New error remediation**.
+2. Select the errors you want to remediate by selecting the radio button next to either the error type or file type.  In the following example, we're remediating a password protected file.
+3. Select **New error remediation**.
 
     The error remediation workflow starts with a preparation stage where the files with errors are copied to a Microsoft-provided Azure Storage location so that you can download them to your local computer to remediate.
 
     ![Preparing error remediation.](../media/ediscovery-new-error-remediation-step-1.png)
 
-4. After the preparation is complete, click **Next: Download files** to proceed with download.
+4. After the preparation is complete, select **Next: Download files** to proceed with download.
 
     ![Download files.](../media/ediscovery-new-error-remediation-step-2.png)
 
@@ -52,7 +52,7 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
 
    The path to the parent folder is automatically added to AzCopy command (as the value of the **/Dest** parameter).
 
-6. Copy the predefined command by clicking **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.
+6. Copy the predefined command by selecting **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**.
 
     ![Prepare for error remediation.](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
@@ -64,9 +64,7 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
     `<Parent folder>\Subfolder 1\Subfolder 2\<file>`
 
     - *Subfolder 1* is named with the ID for the case or the review set, depending on the scope that you selected in step 1.
-
     - *Subfolder 2* is named with the file ID of the downloaded file
-
     - The downloaded file is located in *Subfolder 2* and is also named with the file ID.
 
     Here's an example of the folder path and error file name that's created when items are downloaded to the **C:\Remediation** parent folder:
@@ -79,8 +77,7 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
     > When you upload files in step 9 and step 10, the remediated files must have that same filename and be located in the same subfolder structure. The subfolder and file names are used to associated the remediated file with the original error file. If the folder structure or file names are changed, you'll receive the following error: `Cannot apply Error Remediation to the current Workingset`. To prevent any issues, we recommend that keep the remediated files in the same parent folder and subfolder structure.
 
 7. After downloading the files, you can remediate them with an appropriate tool. For password-protected files, there are several password cracking tools you can use. If you know the passwords for the files, you can open them and remove the password protection.
-
-8. Return to eDiscovery (Premium) and the error remediation wizard and then click **Next: Upload files**.  This moves to the next page where you can now upload the files.
+8. Return to eDiscovery (Premium) and the error remediation wizard and then select **Next: Upload files**.  This moves to the next page where you can now upload the files.
 
     ![Upload Files.](../media/ediscovery-new-error-remediation-step-3.png)
 
@@ -88,11 +85,11 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
 
     The path to the parent folder is automatically added to AzCopy command (as the value of the **/Source** parameter).
 
-10. Copy the predefined command by clicking **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**. upload the files.
+10. Copy the predefined command by selecting **Copy to clipboard**. Open a Windows Command Prompt, paste the AzCopy command, and then press **Enter**. upload the files.
 
     ![Results of successful upload of remediated files in Azcopy.](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. After you run the AzCopy command, click **Next: Process files**.
+11. After you run the AzCopy command, select **Next: Process files**.
 
     When processing is complete, you can go to review set and view the remediated files.
 
@@ -102,7 +99,12 @@ In situations when the contents of a container file (such as a .zip file) can't 
 
 ## Remediating errors by uploading the extracted text
 
-Sometimes it's not possible to remediate a file to native format that eDiscovery (Premium) can interpret. But you can replace the original file with a text file that contains the original text of the native file (in a process called *text overlay*). To do this, follow the steps described in this article but instead of remediating the original file in the native format, you would create a text file that contains the extracted text from the original file, and then upload the text file using the original filename appended with a .txt suffix. For example, you download a file during error remediation with the filename 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. You open the file in the native application, copy the text, and then paste it into a new file named 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. When you do this, be sure to remove the original file in the native format from the remediated file location on your local computer before uploading the remediated text file to eDiscovery (Premium).
+Sometimes it's not possible to remediate a file to native format that eDiscovery (Premium) can interpret. But you can replace the original file with a text file that contains the original text of the native file (in a process called *text overlay*). To do this, follow the steps described in this article but instead of remediating the original file in the native format, you would create a text file that contains the extracted text from the original file, and then upload the text file using the original filename appended with a .txt suffix.
+
+For example, you download a file during error remediation with the filename 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. You open the file in the native application, copy the text, and then paste it into a new file named 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. When you do this, be sure to remove the original file in the native format from the remediated file location on your local computer before uploading the remediated text file to eDiscovery (Premium).
+
+> [!NOTE]
+> The number of of files used in error remediation upload must match the number of files downloaded from the review set. If the number of uploaded files doesn't match the number of downloaded files, the matching process will fail (even if AzCopy reports that the upload was successful).
 
 ## What happens when files are remediated
 

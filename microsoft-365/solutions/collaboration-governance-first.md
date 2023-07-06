@@ -1,6 +1,7 @@
 ---
 title: "Create your collaboration governance plan"
 ms.reviewer: mmclean
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

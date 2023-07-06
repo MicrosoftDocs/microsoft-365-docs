@@ -1,9 +1,10 @@
 ---
 title: "Privacy and security in Basic Mobility and Security"   
 f1.keywords: NOCSH                
-ms.author: kwekua      
-author: kwekua   
+ms.author: kwekua
+author: kwekuako
 manager: scotv 
+ms.date: 08/27/2020
 audience: Admin 
 ms.topic: article 
 ms.service: microsoft-365-business 

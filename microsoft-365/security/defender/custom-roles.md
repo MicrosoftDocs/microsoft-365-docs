@@ -13,11 +13,12 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 01/03/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -83,7 +84,7 @@ The following table outlines the roles and permissions required to access each u
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
 
-|Microsoft 365 Defender workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 3655|One of the following roles is required for Defender for Cloud Apps|
+|Microsoft 365 Defender workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 365|One of the following roles is required for Defender for Cloud Apps|
 |---|---|---|---|
 |Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>|View data- security operations|<ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
 |Viewing hunting data|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|

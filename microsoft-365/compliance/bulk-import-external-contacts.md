@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 01/01/2023
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
@@ -131,7 +131,7 @@ You can repeat Steps 1 through Step 3 to add new external contacts in Exchange O
 > [!NOTE]
 > When you run the command to create new contacts, you might get an error saying that the contacts that were created earlier already exist. But any new contact added to the CSV file is created. 
   
-## Hide external contacts from the shared address book>
+## Hide external contacts from the shared address book
 
 Some companies may use external contacts only so they can be added as members of distribution groups. In this scenario, they may want to hide external contacts from the shared address book. Here's how:
   

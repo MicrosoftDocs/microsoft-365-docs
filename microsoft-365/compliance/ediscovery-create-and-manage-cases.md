@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/28/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -35,15 +36,13 @@ This article also provides a high-level overview of using cases to manage the eD
 
 Complete the following steps to create a case and configure case settings. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the *Organization Management* role group can also create eDiscovery (Premium) cases.
-
-2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Premium**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
-
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the *Organization Management* role group can also create eDiscovery (Premium) cases.
+2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Premium**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases**</a>tab.
 3. Select **Create a case**.
 
 4. On the **Name and description** page, complete the following fields:
- 
-   - **Name**: give the case a name (required).The case name must be unique in your organization
+
+   - **Name**: give the case a name (required). The case name must be unique in your organization
    - **Description**: Add an optional description to help others understand this case.
    - **Number**: Enter an optional docket number or other numeric identifier.
    - **Case format**: The **New (recommended)** option is automatically selected.
@@ -52,7 +51,6 @@ Complete the following steps to create a case and configure case settings. The u
     >The legacy **Classic** format is no longer available when creating new cases. This format is now retired for all new cases.
 
 5. Select **Next**.
-
 6. On the **Members and settings** page, complete the following fields as applicable:
 
     - **Team members**: Select users and groups that should be assigned to the case. Make sure that users and groups assigned here have been [assigned the appropriate eDiscovery permissions](/microsoft-365/compliance/ediscovery-assign-permissions#ediscovery-assign-permissions).
@@ -61,7 +59,6 @@ Complete the following steps to create a case and configure case settings. The u
     - **Optical character recognition (OCR)**: Configure the option and settings for finding text contained in images during advanced indexing.
 
 7. Select **Next**.
-
 8. On the **Summary** page, review the settings for the case and edit the settings if needed. Select **Submit** to create the new case and start your investigation.
 
 ## Mark a case as a favorite
@@ -81,8 +78,8 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
    Here are some things that happen (or that you can do) when you add custodians to a case:
 
    - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
-   - Custodian data is reindexed (by a process called *Advanced indexing*). This helps optimize searching for it in the next step.
-   - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
+   - Custodian (and non-custodial) data is reindexed (by a process called *Advanced indexing*). This helps optimize searching for it in the next step.
+   - You can place a hold on custodian (and non-custodial) data. This preserves data that may be relevant to the case during the investigation.
    - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be reindexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
    - You can use the [communications workflow](managing-custodian-communications.md) in eDiscovery (Premium) to send a legal hold notification to custodians.
 
@@ -98,7 +95,7 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
 
 4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigating. Here's a list of some tools and capabilities that you can use during this process.
 
-   - [View documents](ediscovery-view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
+   - [Group and view documents](ediscovery-view-documents-in-review-set.md). This includes selecting the group options for review sets in your cases, viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
    - [Create queries and filters](ediscovery-review-set-search.md). You create search queries using various search criteria (including the ability to search all [file metadata properties](ediscovery-document-metadata-fields.md) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply other conditions to the results of a search query to further refine those results. 
    - [Create and use tags](ediscovery-tagging-documents.md). You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents. You can also tagging to determine which documents to export.
    - [Annotate and redact documents](ediscovery-view-documents-in-review-set.md#annotate-view). You can use the annotation tool in a review to annotate documents and redact content in documents as work product. We generate a PDF version of an annotated or redacted document during review to reduce the risk of exporting the unredacted native version of the document.

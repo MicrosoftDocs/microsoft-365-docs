@@ -16,14 +16,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365solution-m365dsecops
-  - - tier2
+  - zerotrust-solution
+  - msftsolution-secops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 07/15/2021
 ---
+
 # Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

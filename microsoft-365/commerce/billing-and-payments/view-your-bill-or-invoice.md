@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid: GEA150
 ms.collection:
 - Tier1
@@ -32,6 +32,8 @@ ms.date: 01/25/2022
 ---
 
 # View your Microsoft 365 for business subscription bill or invoice
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

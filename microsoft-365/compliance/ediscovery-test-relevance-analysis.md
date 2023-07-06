@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 titleSuffix: Office 365
 audience: Admin
 ms.topic: article
@@ -36,14 +37,13 @@ The "Test the Rest" test is used to validate culling decisions, for example, to 
 This test provides statistics and a comparison between the Review set and the Test the Rest population. The results of the review set are those calculated by Relevance during Training. The results include calculations based on settings and input parameters, such as:
   
 - Test sample statistics of the number of files in a sample and identified relevant files.
-
 - Tabular comparison of the Population parameters of the Review set and the Rest, for example, the number of files, estimated number of relevant files, estimated richness, and the average cost of finding another relevant file. Cost parameter settings can be set by the administrator.
 
 To run the "Test the Rest" test:
 
 1. Open the **Relevance \> Test** tab.
 
-2. In the **Test** tab, click **New test**. The **Create test** dialog is displayed, as shown in the following example.
+2. In the **Test** tab, select **New test**. The **Create test** dialog is displayed, as shown in the following example.
 
     ![Relevance Test the Rest results.](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
@@ -59,11 +59,11 @@ To run the "Test the Rest" test:
 
 8. In **Set size**, or accept the default value. The restore icons will restore the default values.
 
-9. Click **Start tagging**. A test sample is generated.
+9. Select **Start tagging**. A test sample is generated.
 
-10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, click **Calculate**.
+10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, select **Calculate**.
 
-11. In the Test tab, you can click **View results** to see the test results. An example is shown in the following screenshot.
+11. In the Test tab, you can select **View results** to see the test results. An example is shown in the following screenshot.
 
     ![Test the rest results.](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
@@ -72,13 +72,9 @@ In the previous screenshot, the **Sample parameters** section of the table conta
 The **Population parameters** section of the table contains the test results, including the Review set population of files with a score below the selected cutoff and "The Rest" population of files with a score above the selected cutoff. For each population, the following results are displayed:
   
 - Includes files with read % - Stated cutoff
-
 - The total number of files
-
 - The estimated number of relevant files
-
 - The estimated richness
-
 - The average review cost of finding another relevant file
 
 ## Testing the slice
@@ -89,7 +85,7 @@ To run the "Test the Slice" test:
   
 1. Open the **Relevance \> Test** tab.
 
-2. In the **Test** tab, click **New test**. The **Create test** dialog is displayed.
+2. In the **Test** tab, select **New test**. The **Create test** dialog is displayed.
 
 3. In **Test name** and **Description**, type the information.
 
@@ -105,8 +101,8 @@ To run the "Test the Slice" test:
 
     The restore icons will restore the default value.
 
-9. Click **Start tagging**. A test sample is generated.
+9. Select **Start tagging**. A test sample is generated.
 
-10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, click **Calculate**.
+10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, select **Calculate**.
 
-11. In the Test tab, you can click **View results** to see the test results.
+11. In the Test tab, you can select **View results** to see the test results.

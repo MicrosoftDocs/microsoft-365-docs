@@ -4,12 +4,15 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 06/21/2021
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the Microsoft OneDrive LTI for Canvas.
 ---

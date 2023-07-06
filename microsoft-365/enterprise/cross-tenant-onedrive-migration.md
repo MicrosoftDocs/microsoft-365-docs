@@ -3,6 +3,7 @@ title: Cross-tenant OneDrive migration overview
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/10/2022
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -39,9 +40,9 @@ Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A
 
 ## Prerequisites and settings
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588)
+- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from the official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 
-- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on Source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
+- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on the source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview).
 
 - Source OneDrive accounts must be set to Read/Write. If set to Read only, they'll fail.
 
@@ -74,6 +75,10 @@ Any legal URL will be accepted when creating your Identity Map from Source to Ta
 ## OneDrive account size limits
 
 Each OneDrive account can have a maximum of 2 TB of content or 1 million items.
+
+> [!IMPORTANT]
+> If you attempt to migrate any OneDrive site that exceeds the 2 TB quota, the transfer will fail.
+
 
 ## Permissions
 

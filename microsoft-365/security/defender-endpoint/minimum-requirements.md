@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 06/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -24,6 +25,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +42,7 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 ## Licensing requirements
 
-The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+[Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) (standalone or as part of other Microsoft 365 plans) don't include server licenses. To onboard servers to those plans, you need either Microsoft Defender for Cloud or Microsoft Defender for Business servers.
 
 For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -58,6 +61,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 
 ## Hardware and software requirements
 
+Devices on your network must be running one of these editions. New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their support lifecycle. See [Supported Microsoft Defender for Endpoint capabilities by platform](/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform) for more information. Microsoft recommends the installation of the latest available security patches for any operating system.
+
 ### Supported Windows versions
 
 - Windows 11 Enterprise
@@ -66,61 +71,46 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT
-
-    >[!NOTE]
-    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
-
+- Windows 10 Enterprise IoT*
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
-- Windows 7 SP1 Enterprise ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 8.1 Enterprise**
+- Windows 8.1 Pro**
+- Windows 7 SP1 Enterprise**
+- Windows 7 SP1 Pro**
 - Windows server
-  - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
+  - Windows Server 2008 R2 SP1**
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
   - Windows Server 2019 and later
   - Windows Server 2019 core edition
   - Windows Server 2022
-- Windows Virtual Desktop
-- Windows 365
-
-Devices on your network must be running one of these editions.
-
-The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
-
-> Cores: 2 minimum, 4 preferred
-> Memory: 1 GB minimum, 4 preferred
-
-For more information on supported versions of Windows 10, see [Windows 10 release information](/windows/release-health/release-information).
-
-> [!NOTE]
-> - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
->
-> - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
->
-> - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
->
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-
-When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until at least:
-
-- The [end of support date](/lifecycle/products/) (for operating systems that do not have an Extended Security Updates (ESU) program).
-- The [end of ESU date](/lifecycle/faq/extended-security-updates) (for operating systems that have an ESU program).
+- Azure Virtual Desktop
+- Windows 365 running one of the above operating systems/versions
 
 ### Other supported operating systems
 
+- [macOS](microsoft-defender-endpoint-mac.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
-- [Linux](microsoft-defender-endpoint-linux.md)
-- [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint for the integration to work.
+> You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
+> - *While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
+> - **Requires the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent) / Microsoft Monitoring Agent (MMA)
+> - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
+> - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
+> - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+
+### Hardware requirements
+The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they are not in addition to the requirements for the operating system).
+
+> Cores: 2 minimum, 4 preferred
+> Memory: 1 GB minimum, 4 preferred
 
 ### Network and data storage and configuration requirements
 
@@ -135,8 +125,6 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 Internet connectivity on devices is required either directly or through proxy.
 
-The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.
-
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ## Microsoft Defender Antivirus configuration requirement
@@ -145,7 +133,7 @@ The Defender for Endpoint agent depends on the ability of Microsoft Defender Ant
 
 Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes on passive mode.
+When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes into passive mode.
 
 If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
 
@@ -158,7 +146,7 @@ If you're onboarding servers and Microsoft Defender Antivirus isn't the active a
 
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Manager (current branch), you'll need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Related topics
 

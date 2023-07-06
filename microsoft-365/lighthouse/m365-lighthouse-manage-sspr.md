@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +19,12 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage self-service password reset."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage self-service password reset (SSPR)."
 ---
 
 # Manage self-service password reset in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets partners manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ## Before you begin
 

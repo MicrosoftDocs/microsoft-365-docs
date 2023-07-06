@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,24 +30,24 @@ In Microsoft Purview eDiscovery (Premium) cases, it doesn't always meet your nee
 
 Follow these steps to add and manage non-custodial data sources in an eDiscovery (Premium) case.
 
-1. On the **eDiscovery (Premium)** home page, click the case that you want to add the data to.
+1. On the **eDiscovery (Premium)** home page, select the case that you want to add the data to.
 
-2. Click the **Data sources** tab and then click **Add data source** > **Add data locations**.
+2. Select the **Data sources** tab and then select **Add data source** > **Add data locations**.
 
-3. On the **New non-custodial data locations** flyout page, choose the data sources that you want to add to the case. You can add multiple mailboxes and sites by expanding the **SharePoint** or **Exchange** sections and then clicking **Edit**.
+3. On the **New non-custodial data locations** flyout page, choose the data sources that you want to add to the case. You can add multiple mailboxes and sites by expanding the **SharePoint** or **Exchange** sections and then selecting **Edit**.
 
    ![Add SharePoint sites and Exchange mailboxes as non-custodial data sources.](../media/NonCustodialDataSources1.png)
 
-   - **SharePoint** - Click **Edit** to add sites. Select a site in the list or you can search for a site by typing the URL of the site in the search bar. Select the sites that you want to add as non-custodian data sources and click **Add**.
+   - **SharePoint** - Select **Edit** to add sites. Select a site in the list or you can search for a site by typing the URL of the site in the search bar. Select the sites that you want to add as non-custodian data sources and select **Add**.
 
-   - **Exchange** - Click **Edit** to add mailboxes. Type a name or alias (a minimum of three characters) in the search box for mailboxes or distribution groups. Select the mailboxes that you want to add as non-custodian data sources and click **Add**.
+   - **Exchange** - Select **Edit** to add mailboxes. Type a name or alias (a minimum of three characters) in the search box for mailboxes or distribution groups. Select the mailboxes that you want to add as non-custodian data sources and select **Add**.
 
    > [!NOTE]
    > You can use the **SharePoint** and **Exchange** sections to add sites and mailboxes associated with a Team or Yammer group as non-custodial data sources. You have to separately add the mailbox and site associated with a Team or Yammer group.<br/><br/> Also, adding a root site URL (such as `https://contoso-my.sharepoint.com/personal/` or  `https://contoso-my.sharepoint.com/`) as a SharePoint data source isn't supported. You have to add specific sites.
 
 4. After you add non-custodial data sources, you have the option to place those locations on hold or not. Select or unselect the **Hold** checkbox next to the data source to place it on hold.
 
-5. Click **Add** at the bottom of the **New non-custodial data locations** flyout page to add the data sources to the case.
+5. Select **Add** at the bottom of the **New non-custodial data locations** flyout page to add the data sources to the case.
 
    Each non-custodial data source that you added is listed on the **Data sources** page. Non-custodial data sources are identified by the **Data location** value in the **Source type** column.
 
@@ -60,13 +61,13 @@ After you place a hold on a non-custodial data source, a hold policy that contai
 
 1. Open the eDiscovery (Premium) case and select the **Hold** tab.
 
-2. Click **NCDSHold-\<GUID\>**, where the GUID value is unique to the case.
+2. Select **NCDSHold-\<GUID\>**, where the GUID value is unique to the case.
 
    The flyout page display information and statistics about the non-custodial data sources on hold.
 
    ![The flyout page for non-custodial data sources hold displays statistics.](../media/NonCustodialDataSourcesHoldFlyout.png)
 
-3. Click **Edit hold** to view the non-custodial data sources placed on hold and perform the following management tasks:
+3. Select **Edit hold** to view the non-custodial data sources placed on hold and perform the following management tasks:
 
    - On the **Locations** page, you can release a non-custodial data source by removing it from the hold. Releasing a data source doesn't remove the non-custodial data source from the case. It only removes the hold that was placed on the data source.
 

@@ -3,11 +3,13 @@ title: "Create a more secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: 
 - highpri
+- Tier1
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection
@@ -50,15 +52,16 @@ In this example, we'll set up multi-factor authentication for guests by using a 
 To set up multi-factor authentication for guests
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** field, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
-8. Under **Access controls**, click **Grant**.
-9. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
-10. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. On the **Conditional Access | Policies** blade, click **New policy**.
+1. In the **Name** field, type a name.
+1. Select the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Select the **Cloud apps or actions** link.
+1. Select **All cloud apps** on the **Include** tab.
+1. Select the **Grant** link.
+1. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 Now, guest will be required to enroll in multi-factor authentication before they can access shared content, sites, or teams.
 
@@ -75,33 +78,35 @@ To create a terms of use, you first need to create the document in Word or anoth
 To create an Azure AD terms of use
 
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-2. Navigate to [Terms of use](https://aka.ms/catou).
-3. Click **New terms**.
+1. Navigate to [Terms of use](https://aka.ms/catou).
+1. Click **New terms**.
 
    ![Screenshot of Azure AD new terms of use settings.](../media/azure-ad-guest-terms-of-use.png)
 
-4. Type a **Name** and **Display name**.
-6. For **Terms of use document**, browse to the pdf file that you created and select it.
-7. Select the language for your terms of use document.
-8. Set **Require users to expand the terms of use** to **On**.
-9. Under **Conditional Access**, in the **Enforce with Conditional Access policy template** list choose **Create conditional access policy later**.
-10. Click **Create**.
+1. Type a **Name**.
+1. For **Terms of use document**, browse to the pdf file that you created and select it.
+1. Select the language for your terms of use document.
+1. Type a display name.
+1. Set **Require users to expand the terms of use** to **On**.
+1. Under **Conditional Access**, in the **Enforce with Conditional Access policy template** list choose **Create conditional access policy later**.
+1. Click **Create**.
 
 Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guests.
 
 To create a conditional access policy
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** box, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. Under **Access controls**, click **Grant**.
-10. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
-11. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. On the **Conditional Access | Policies** blade, click **New policy**.
+1. In the **Name** box, type a name.
+1. Select the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Select the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, then click **Select**.
+1. Select the **Grant** link.
+1. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
@@ -119,27 +124,26 @@ With access reviews in Azure AD, you can automate a periodic review of user acce
 To set up a guest access review
 
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
-2. Click **New access review**.
-3. Choose the **Teams + Groups** option.
-4. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
-5. Choose the **Guest users only** option, and then click **Next: Reviews**.
-6. Under **Select reviewers**, choose **Group Owner(s)**.
-7. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
-8. Under **Specify recurrence of review**, choose **Quarterly**.
-9. Select a start date and duration.
-10. For **End**, choose **Never**, and then click **Next: Settings**.
+1. Click **New access review**.
+1. Choose the **Teams + Groups** option.
+1. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
+1. Choose the **Guest users only** option, and then click **Next: Reviews**.
+1. Under **Select reviewers**, choose **Group Owner(s)**.
+1. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
+1. Choose a **Duration (in days)** for the review to be open for comments.
+1. Under **Specify recurrence of review**, choose **Quarterly**.
+1. Select a start date and duration.
+1. For **End**, choose **Never**, and then click **Next: Settings**.
 
     ![Screenshot of Azure AD access review tab.](../media/azure-ad-create-access-review.png)
 
-11. On the **Settings** tab, review the settings for compliance with your business rules.
+1. On the **Settings** tab, review the settings for compliance with your business rules.
 
     ![Screenshot of Azure AD access review settings tab.](../media/azure-ad-create-access-review-settings.png)
 
-12. Click **Next: Review + Create**.
-13. Type a **Review name** and review the settings.
-14. Click **Create**.
-
-It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all guests, while internal users will continue to have access to the document.
+1. Click **Next: Review + Create**.
+1. Type a **Review name** and review the settings.
+1. Click **Create**.
 
 ### More information
 
@@ -156,32 +160,29 @@ For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional ac
 To restrict guests to web-only access for Groups and Teams:
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access - Policies** blade, click **New policy**.
-3. In the **Name** box, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams** and **Outlook Groups**, and then click **Select**.
-9. Under **Assignments**, click **Conditions**.
-10. On the **Conditions** blade, click **Client apps**.
-11. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
+1. Click **New policy**.
+1. In the **Name** box, type a name.
+1. Click the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Click the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, and then click **Select**.
+1. Click the **Conditions** link.
+1. On the **Conditions** blade, click the **Client apps** link.
+1. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
 
     ![Screenshot of Azure AD conditional access client apps settings.](../media/azure-ad-conditional-access-client-mobile.png)
 
-12. Click **Done**.
-13. Under **Access controls**, click **Grant**.
-14. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
-15. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
-16. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. Click **Done**.
+1. Click the **Grant** link.
+1. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
+1. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
-To restrict guests to web-ony access for SharePoint
+### More information
 
-1. In the SharePoint admin center, expand **Policies** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control**</a>.
-2. Select **Unmanaged devices**.
-3. Select the **Allow limited, web-only access** option, and then select **Save**.
-
-Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
+[SharePoint and OneDrive unmanaged device access controls for administrators](/sharepoint/control-access-from-unmanaged-devices)
 
 ## Configure a session timeout for guests
 
@@ -190,17 +191,18 @@ Requiring guests to authenticate on a regular basis can reduce the possibility o
 To configure a guest session timeout policy
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access - Policies** blade, click **New policy**.
-3. In the **Name** box, type *Guest session timeout*.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. Under **Access controls**, click **Session**.
-10. On the **Session** blade, select **Sign-in frequency**.
-11. Select **1** and **Days** for the time period, and then click **Select**.
-12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. Click **New policy**.
+1. In the **Name** box, type *Guest session timeout*.
+1. Click the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Click the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, and then click **Select**.
+1. Click the **Session** link.
+1. On the **Session** blade, select **Sign-in frequency**.
+1. Choose **1** and **Days** for the time period, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 ## Create a sensitive information type for a highly sensitive project
 
@@ -210,47 +212,49 @@ You can create custom sensitive information types to help manage content specifi
 
 To create a sensitive information type
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
-2. Click **Create**.
-3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
-4. Click **Add an element**.
-5. On the **Detect content containing** list, select **Keywords**, and then type *Project Saturn* in the keyword box.
-6. Click **Next**, and then click **Finish**.
-7. If asked if you would like to test the sensitive information type, click **No**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, select **Data classification**, and then select the **Sensitive info types** tab.
+1. Click **Create sensitive info type**.
+1. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
+1. Select **Create pattern**.
+1. On the **New pattern** panel, select **Add primary element**, and then select **Keyword list**.
+1. Type an **ID** such as *Project Saturn*.
+1. In the **Case insensitive** box, type *Project Saturn, Saturn*, and then select **Done**.
+1. Select **Create**, and then select **Next**.
+1. Choose a confidence level, and then select **Next**.
+1. Select **Create**.
+1. Select **Done**.
 
-### More information
-
-[Custom sensitive information types](/Office365/SecurityCompliance/custom-sensitive-info-types)
+For more information, see [Custom sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about).
 
 ## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
-If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types. 
+If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types.
 
 To create an auto-labeling policy
 
 1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
-2. In the left navigation, click **Information protection**.
-3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
-4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
-5. Type a name and description for the policy and click **Next**.
-6. On the **Choose locations where you want to apply the label** page, turn on **SharePoint sites** and click **Choose sites**.
-7. Add the URLs for the sites where you want to turn on auto-labeling and click **Done**.
-8. Click **Next**.
-9. On the **Set up common or advanced rules** page, choose **Common rules** and click **Next**.
-10. On the **Define rules for content in all locations** page, click **New rule**.
-11. On the **New rule** page, give the rule a name, click **Add condition**, and then click **Content contains sensitive info types**.
-12. Click **Add**, click **Sensitive info types**, choose the sensitive info types that you want to use, click **Add**, and then click **Save**.
-13. Click **Next**.
-14. Click **Choose a label**, select the label you want to use, and then click **Add**.
-15. Click **Next**.
-16. Leave the policy in simulation mode and click **Next**.
-17. Click **Create policy**, and then click **Done**.
+1. In the left navigation, click **Information protection**.
+1. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
+1. On the **Choose info you want this label applied to** page, choose **Custom** and then click **Custom policy**.
+1. Click **Next**.
+1. Type a name and description for the policy and click **Next**.
+1. On the **Choose locations where you want to apply the label** page, turn on **SharePoint sites** and click **Choose sites**.
+1. Add the URLs for the sites where you want to turn on auto-labeling and click **Done**.
+1. Click **Next**.
+1. On the **Set up common or advanced rules** page, choose **Common rules** and click **Next**.
+1. On the **Define rules for content in all locations** page, click **New rule**.
+1. On the **New rule** page, give the rule a name, click **Add condition**, and then click **Content contains**.
+1. Click **Add**, click **Sensitive info types**, choose the sensitive info types that you want to use, click **Add**, and then click **Save**.
+1. Click **Next**.
+1. Click **Choose a label**, select the label you want to use, and then click **Add**.
+1. Click **Next**.
+1. Leave the policy in simulation mode and choose if you want it to automatically turn on.
+1. Click **Next**.
+1. Click **Create policy**, and then click **Done**.
 
 With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
 
-### More information
-
-[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)
+For more information, see [Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md).
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
@@ -259,25 +263,29 @@ You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-lea
 To create a DLP rule
 
 1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
-2. Click **Create policy**.
-3. Choose **Custom** and click **Next**.
-4. Type a name for the policy and click **Next**.
-5. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
-6. On the **Define policy settings** page, click **Next**.
-7. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
-8. Under **Conditions**, click **Add condition**, and choose **Content contains**.
-9. Click **Add**, choose **Sensitivity labels**, choose the labels you want to use, and click **Add**.
+1. On the **Policies** tab, click **Create policy**.
+1. Choose **Custom** and then **Custom policy**.
+1. Click **Next**.
+1. Type a name for the policy and click **Next**.
+1. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
+1. On the **Define policy settings** page, click **Next**.
+1. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
+1. Under **Conditions**, click **Add condition**, and choose **Content is shared from Microsoft 365**.
+1. In the dropdown, choose **with people outside my organization**.
+1. Under **Conditions**, click **Add condition**, and choose **Content contains**.
+1. Click **Add**, choose **Sensitivity labels**, choose the labels you want to use, and click **Add**.
 
    ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
-11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people outside your organization** option.
+1. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
+1. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Block only people outside your organization** option.
 
-      ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
+    ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Click **Save** and then click **Next**.
-13. Choose your test options and click **Next**.
-14. Click **Submit**, and then click **Done**.
+1. Turn user notifications **On**, and then select the **Notify users in Office 365 service with a policy tip** check box.
+1. Click **Save** and then click **Next**.
+1. Choose your test options and click **Next**.
+1. Click **Submit**, and then click **Done**.
 
 It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider these options:
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 03/02/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -28,7 +28,7 @@ description: "U.S. individual taxpayer identification number (ITIN) sensitive in
 
 ## Format
 
-nine digits that start with a "9" and contain a "7" or "8" as the fourth digit, optionally formatted with spaces or dashes
+nine digits, optionally formatted with spaces or dashes
 
 ## Pattern
 
@@ -36,18 +36,17 @@ formatted:
 
 - the digit "9"
 - two digits
-- a space or dash
-- a "7" or "8"
-- a digit
-- a space, or dash
+- a space or dash (optional)
+- two digits "50" to "65", "70" to "88", “90” to “92” and “94” to “99” for the fourth and fifth digit
+- a space, or dash (optional)
 - four digits
 
 unformatted:
 
 - the digit "9"
 - two digits
-- a "7" or "8"
-- five digits
+- two digits "50" to "65", "70" to "88", “90” to “92”, and “94” to “99” for the fourth and fifth digits
+- four digits
 
 ## Checksum
 

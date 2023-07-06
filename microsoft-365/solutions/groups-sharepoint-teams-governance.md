@@ -1,6 +1,7 @@
 ---
 title: "Settings interactions between Microsoft 365 Groups, Teams and SharePoint"
 ms.reviewer: 
+ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars

@@ -18,6 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 02/02/2021
 ---
 
 # Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
@@ -27,6 +28,7 @@ search.appverid: met150
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article provides some general steps to mitigate missing events or alerts in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.

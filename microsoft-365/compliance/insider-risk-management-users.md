@@ -1,5 +1,5 @@
 ---
-title: Insider risk management Users dashboard
+title: Manage the workflow with the insider risk management users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 04/19/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -17,14 +18,14 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Insider risk management Users dashboard
+# Manage the workflow with the insider risk management users dashboard
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
-After users are added to insider risk management policies, background processes are automatically evaluating user activities for [triggering indicators](insider-risk-management-settings.md#indicators). After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
+After users are added to insider risk management policies, background processes are automatically evaluating user activities for [triggering indicators](insider-risk-management-settings-policy-indicators.md). After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
 
 Learn more about how the Users dashboard displays users in the following scenarios:
 
@@ -98,18 +99,16 @@ To view more details about risk activity for a user, open the user details pane 
 
 ## Remove users from in-scope assignment to policies
 
-There may be scenarios where you need to stop assigning risk scores to users in insider risk management policies. Use **Remove users** on the **Users dashboard** page to stop assigning risk scores for one or more users from all insider risk management policies that they are currently in-scope for. This action does not remove users from the overall policy assignment (when you add users or groups to a policy configuration), but simply removes the users from active processing by policies after current triggering events. If the users have another triggering event in the future, risk scores from policies will automatically begin to be assigned to the users again. Any existing alerts or cases for this user will not be removed.
+There may be scenarios where you need to stop assigning risk scores to a user in insider risk management policies. Use **Stop scoring activity for users** on the **Users dashboard** to stop assigning risk scores for a user from all insider risk management policies that they are currently in scope for. This action does not remove the user from the overall policy assignment (when you add users or groups to a policy configuration), but simply removes the user from active processing by policies after current triggering events. If the user has another triggering event in the future, risk scores from policies will automatically begin to be assigned to the user again. Any existing alerts or cases for this user will not be removed.
+
+To remove a user from in-scope status in all insider risk management policies:
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**, and then select the **Users** tab.
+2. On the **Users dashboard**, select the user(s) you want to stop scoring activity for.
+3. Select **Stop scoring activity for users**.
 
 > [!NOTE]
-> Removing a user from a policy may take several minutes to complete. Once complete, the user no longer is listed on the Users page. If the removed user has active alerts or cases, then the user will remain on the Users page and the details for the user will show that they are no longer in-scope for a policy.
-
-To manually remove users from in-scope status in all insider risk management policies, complete the following steps:
-
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
-2. On the **Users dashboard**, select the user or users you want to remove from being in-scope in insider risk management policies.
-3. Select **Remove users**.
-4. On the **Remove user** pane, Select **Remove** or **Cancel** to discard the changes and close the dialog.
-5. Select **Remove** on the confirmation pane to remove the user.
+> Removing a user from in-scope status may take several minutes. Once complete, the user will not be listed on the **Users dashboard**. If the removed user has active alerts or cases, the user will remain on the **Users dashboard** and the user details will show that they are no longer in-scope for a policy. 
 
 ## Run automated tasks with Power Automate flows for a user
 
@@ -121,4 +120,4 @@ To run, manage, and create Power Automate flows for insider risk management user
 2. Choose the Power Automate flow to run, then select **Run flow**.
 3. After the flow has completed, select **Done**.
 
-To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings-power-automate.md).

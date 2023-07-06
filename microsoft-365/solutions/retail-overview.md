@@ -13,6 +13,8 @@ ms.collection:
 - M365-subscription-management
 - M365solutions
 f1.keywords: NOCSH
+ms.date: 09/22/2022
+
 ---
 
 # Microsoft 365 solutions for the retail industry

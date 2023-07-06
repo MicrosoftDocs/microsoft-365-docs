@@ -3,8 +3,9 @@ title: "User email settings"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -14,7 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0

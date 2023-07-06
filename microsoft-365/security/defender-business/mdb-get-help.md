@@ -15,7 +15,7 @@ ms.collection:
 - m365-security                 
 - tier1
 search.appverid: MET150
-ms.reviewer: shlomiakirav
+ms.reviewer: jomaun
 description: Get help or contact support if you have any issues with Defender for Business.
 ---
 

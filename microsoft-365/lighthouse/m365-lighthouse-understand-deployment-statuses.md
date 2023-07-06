@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -30,10 +31,10 @@ Tasks can have the following statuses:
 
 |Task  Status|Description|
 |---|---|
-|Compliant|<ul><li>All settings included in the subtask are Compliant.</li><li>There are no settings that are Missing or Not compliant.</li><li>There may be Extra settings detected within existing configurations.</li></ul>|
-|Not Compliant|<ul><li>One or more settings included in the subtask are either Missing or Not compliant.</li><li>There may be Extra settings detected within existing configurations.</li><p>**Note:** Doesn't apply to subtasks that aren't licensed. </p></ul>|
+|Compliant|<ul><li>All settings included in the subtask are **Compliant**.</li><li>There are no settings that are **Not compliant**.</li><li>There are no settings that are **Missing** from all existing configurations. A task can be **Compliant** if a setting is **Compliant** in one or more existing configurations without being **Not compliant** in another.</li><li>There may be **Extra** settings detected within existing configurations.</li></ul>|
+|Not compliant|<ul><li>One or more settings included in the subtask are **Not compliant**.</li><li>One or more settings are **Missing** from all existing configurations.</li><li>There may be **Extra** settings detected within existing configurations.</li><p>**NOTE:** Doesn't apply to subtasks that are **Not licensed**. </p></ul>|
 |Not licensed|The tenant isn't licensed for the services required to deploy the configuration associated with the subtask.|
-|Dismissed|The subtask has been Dismissed by a Lighthouse user.<p>**NOTE:** Not licensed subtasks may be dismissed by a Lighthouse user.</p>|
+|Dismissed|The subtask was dismissed by a Lighthouse user.<p>**NOTE:** A Lighthouse user can dismiss **Not Licensed** subtasks.</p>|
 
 Lighthouse will stop detecting or reporting deployment status for subtasks that have been dismissed.
 
@@ -43,8 +44,8 @@ Settings can be assigned the following statuses:
 
 |Setting Status|Description|
 |---|---|
-|Compliant|The value detected in the tenant is equivalent to the value in the deployment plan for all targeted users.|
-|Not compliant|The value detected in the tenant isn't equivalent to the value in the deployment plan for one or more targeted users.|
+|Compliant|The value detected in the existing configuration deployed to the customer tenant is equivalent to the value in the deployment plan for all targeted users.|
+|Not compliant|The value detected in the existing configuration deployed to the customer tenant isn't equivalent to the value in the deployment plan for one or more targeted users.|
 |Missing|There's no value detected in the tenant for a setting that is included in the deployment plan.|
 |Extra|There's a value detected in the tenant for a setting that isn't included in the deployment plan.|
 
@@ -54,11 +55,11 @@ Users can be assigned the following statuses:
 
 |User Status|Description|
 |---|---|
-|Compliant|<ul><li>The user is targeted for the subtask.</li><li>The user has been assigned licenses for all services required by the subtask.</li><li>All settings included in the subtask are Compliant.</li><li>There are no settings that are Missing or Not compliant.</li><li>There may be Extra settings detected within existing configurations.</li></ul>|
-|Not compliant|<ul><li>The user is targeted for the subtask.</li><li>The user has been assigned licenses for all services required by the subtask.</li><li>One or more settings included in the subtask are either Missing or Not compliant.</li><li>There may be Extra settings detected within existing configurations.</li><p>**NOTE:** Doesn't apply to subtasks that are Not licensed.</p></ul>|
-|Excluded|The user has been excluded from the subtask.<p>**NOTE**: When a user is excluded from a subtask, status detection and reporting will be updated accordingly, but existing configurations won't be affected.</p>|
-|Not licensed|The user isn't licensed for the services required to deploy the prescribed configuration.<p>**NOTE:** Doesn't apply to users with Not targeted status.</p>|
-|Not targeted|The user isn't targeted for the subtask. For example, a user that isn't an admin is reported as Not targeted for a subtask that is assigned only to admins.|
+|Compliant|<ul><li>The user is targeted for the subtask.</li><li>The user has been assigned licenses for all services required by the subtask.</li><li>All settings included in the subtask are **Compliant**.</li><li>There are no settings that are **Not compliant**.</li><li>There are no settings that are **Missing** from all existing configurations. A user can be **Compliant** if a setting is **Compliant** in one or more existing configurations without being **Not compliant** in another.</li><li>There may be **Extra** settings detected within existing configurations.</li></ul>|
+|Not compliant|<ul><li>The user is targeted for the subtask.</li><li>The user has been assigned licenses for all services required by the subtask.</li><li>One or more settings included in the subtask are **Not compliant**.</li><li>One or more settings are **Missing** from all existing configurations.</li><li>There may be **Extra** settings detected within existing configurations.</li><p>**NOTE:** Doesn't apply to subtasks that are **Not licensed**.</p></ul>|
+|Excluded|The user has been excluded from the subtask.<p>**NOTE**: When a user is **Excluded** from a subtask, status detection and reporting will be updated accordingly, but existing configurations won't be affected.</p>|
+|Not licensed|The user isn't licensed for the services required to deploy the prescribed configuration.<p>**NOTE:** Doesn't apply to users with **Not targeted** status.</p>|
+|Not targeted|The user isn't the intended target for the subtask. For example, a user that isn't an admin is reported as **Not targeted** for a subtask that is assigned only to admins.|
 
 ## Related content
 

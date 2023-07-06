@@ -40,8 +40,8 @@ In Microsoft 365 Defender role-based access control (RBAC), you can edit and del
 
 The following steps guide you on how to edit roles in Microsoft 365 Defender RBAC:
 
->[!Important]
->You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> [!IMPORTANT]
+> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
 2. In the navigation pane, select **Permissions**.
@@ -51,9 +51,8 @@ The following steps guide you on how to edit roles in Microsoft 365 Defender RBA
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-edit-roles.png" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
-
->[!Note]
->After editing an imported role, the changes made in Microsoft 365 Defender RBAC will not be reflected back in the individual product RBAC model.
+> [!NOTE]
+> After editing an imported role, the changes made in Microsoft 365 Defender RBAC will not be reflected back in the individual product RBAC model.
 
 ## Delete Roles
 
@@ -61,8 +60,8 @@ To delete roles in Microsoft 365 Defender RBAC, select the role or roles you wan
 
 If the workload is active, by removing the role all assigned user permission will be deleted.
 
->[!Note]
->After deleting an imported role, the role won't be deleted from the individual product RBAC model. If needed, you can re-import it to the Microsoft 365 Defender RBAC list of roles.
+> [!NOTE]
+> After deleting an imported role, the role won't be deleted from the individual product RBAC model. If needed, you can re-import it to the Microsoft 365 Defender RBAC list of roles.
 
 ## Next steps
 

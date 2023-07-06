@@ -10,26 +10,34 @@
       href: compliance-easy-trials.md
     - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
+- name: Permission, roles, and adaptive scopes
+  items: 
+    - name: Permissions in the Microsoft Purview compliance portal
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Roles and role groups in the Microsoft Purview compliance portal
+      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+    - name: Adaptive scopes
+      href: purview-adaptive-scopes.md
 - name: Get started
   items: 
+    - name: Microsoft Purview setup guides
+      href: purview-fast-track-setup-guides.md
     - name: Quick tasks to get started with compliance in Microsoft Purview
       href: compliance-quick-tasks.md
     - name: Microsoft Purview solution catalog
       href: microsoft-365-solution-catalog.md
     - name: Microsoft Purview compliance portal
       href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft Purview compliance portal
-      href: microsoft-365-compliance-center-permissions.md
-    - name: Roles and role groups in the Microsoft Purview compliance portal
-      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
-    - name: Redirecting users to the Microsoft Purview compliance portal
-      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
+- name: Optical Character Recognition 
+  items:
+    - name: Learn about Optical Character Recognition
+      href: ocr-learn-about.md
 - name: Onboard devices for Microsoft Purview
   items:
     - name: Onboard Windows devices
@@ -58,10 +66,10 @@
           href: device-onboarding-offboarding-macos-jamfpro.md
         - name: JAMF Pro for Microsoft Defender for Endpoint customers
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
-- name: Manage connectors for third-party data
+- name: Configure connectors to import third-party data
   items: 
    - name: Learn about connectors for third-party data
-     href: archiving-third-party-data.md
+     href: archive-third-party-data.md
    - name: Microsoft data connectors
      items:  
        - name: Bloomberg Message
@@ -82,8 +90,6 @@
          href: archive-linkedin-data.md
        - name: Physical badging data (preview)
          href: import-physical-badging-data.md
-       - name: Slack eDiscovery (preview)
-         href: archive-slack-data-microsoft.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
    - name: Veritas data connectors
@@ -213,7 +219,7 @@
        - name: CellTrust SL2 
          href: archive-data-from-celltrustsl2.md
    - name: Work with a partner to archive third-party data
-     href: work-with-partner-to-archive-third-party-data.md
+     href: archive-partner-third-party-data.md
    - name: Search for third-party data
      href: use-content-search-to-search-third-party-data-that-was-imported.md
    - name: View admin logs for data connectors
@@ -222,6 +228,8 @@
   items:
     - name: Microsoft Purview insider risk solutions
       href: insider-risk-solution-overview.md
+    - name: Privacy guide
+      href: insider-risk-solution-privacy.md
     - name: Communication compliance
       items:
         - name: Overview
@@ -234,10 +242,14 @@
           href: communication-compliance-configure.md
         - name: Detect channel signals with communication compliance
           href: communication-compliance-channels.md
+        - name: Microsoft Teams and communication compliance
+          href: communication-compliance-teams.md
         - name: Create and manage communication compliance policies
           href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
+        - name: Best practices for managing alert volume
+          href: communication-compliance-alerts-best-practices.md
         - name: Use communication compliance reports & audits
           href: communication-compliance-reports-audits.md
         - name: Use communication compliance with SIEM solutions 
@@ -254,22 +266,50 @@
           href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
-        - name: Get started with insider risk settings
-          href: insider-risk-management-settings.md
+        - name: Get started with insider risk management settings
+          items:
+          - name: Learn about insider risk management settings
+            href: insider-risk-management-settings.md
+          - name: Privacy setting
+            href: insider-risk-management-settings-privacy.md
+          - name: Policy indicators setting
+            href: insider-risk-management-settings-policy-indicators.md
+          - name: Intelligent detections setting
+            href: insider-risk-management-settings-intelligent-detections.md
+          - name: Export alerts setting
+            href: insider-risk-management-settings-alerts.md
+          - name: Priority user groups setting
+            href: insider-risk-management-settings-priority-user-groups.md
+          - name: Priority physical assets setting (preview)
+            href: insider-risk-management-settings-priority-physical-assets.md
+          - name: Power Automate flows setting (preview)
+            href: insider-risk-management-settings-power-automate.md
+          - name: Microsoft Teams setting (preview)
+            href: insider-risk-management-settings-teams.md
+          - name: Analytics setting
+            href: insider-risk-management-settings-analytics.md
+          - name: Admin notifications setting
+            href: insider-risk-management-settings-admin-notifications.md
+          - name: Inline alert customization setting
+            href: insider-risk-management-settings-inline-alert-customization.md
+        - name: Learn about policy templates
+          href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk activities
           href: insider-risk-management-activities.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
-        - name: Capture clips with forensic evidence (preview)
+        - name: Capture clips with forensic evidence
           items:
-          - name: Learn about forensic evidence (preview)
+          - name: Learn about forensic evidence
             href: insider-risk-management-forensic-evidence.md
-          - name: Get started with forensic evidence (preview)
+          - name: Get started with forensic evidence
             href: insider-risk-management-forensic-evidence-configure.md
-          - name: Manage forensic evidence (preview)
+          - name: Manage forensic evidence
             href: insider-risk-management-forensic-evidence-manage.md
+        - name: Help dynamically mitigate risks with Adaptive Protection (preview)
+          href: insider-risk-management-adaptive-protection.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
@@ -290,16 +330,34 @@
           href: information-barriers-policies.md
         - name: Manage information barriers
           href: information-barriers-edit-segments-policies.md
+        - name: Use multi-segment support in information barriers
+          href: information-barriers-multi-segment.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
-        - name: Information barriers & Microsoft 365 services
+        - name: Information barriers & Microsoft Teams
           items:
             - name: Microsoft Teams and information barriers
-              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+              href: information-barriers-teams.md
+            - name: Microsoft Teams shared channels and information barriers
+              href: information-barriers-teams-shared-channels.md
+            - name: Microsoft Teams PowerShell script and information barriers
+              href: information-barriers-teams-powershell-script.md
+        - name: Information barriers & OneDrive
+          items:
             - name: OneDrive and information barriers
-              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-onedrive.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
+        - name: Information barriers & SharePoint
+          items:
             - name: SharePoint and information barriers
-              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+              href: information-barriers-sharepoint.md
+            - name: SharePoint information barriers compliance assistant (preview)
+              href: information-barriers-sharepoint-assistant.md
+            - name: SharePoint information barriers policy compliance report
+              href: information-barriers-sharepoint-report.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -318,6 +376,8 @@
       href: information-protection.md
     - name: Deploy an information protection solution
       href: information-protection-solution.md
+    - name: Migrate from the Azure portal
+      href: azure-portal-migration.md
     - name: Default labels and policies to protect your data
       href: mip-easy-trials.md
     - name: Sensitive information types
@@ -642,7 +702,7 @@
                 href: sit-defn-eu-tax-identification-number.md
               - name: Finland drivers license number
                 href: sit-defn-finland-drivers-license-number.md
-              - name: Finland european health insurance number
+              - name: Finland European health insurance number
                 href: sit-defn-finland-european-health-insurance-number.md
               - name: Finland national ID
                 href: sit-defn-finland-national-id.md
@@ -820,6 +880,8 @@
                 href: sit-defn-luxemburg-physical-addresses.md
               - name: Malaysia identification card number
                 href: sit-defn-malaysia-identification-card-number.md
+              - name: Malaysia passport card number
+                href: sit-defn-malaysia-passport-number.md
               - name: Malta drivers license number
                 href: sit-defn-malta-drivers-license-number.md
               - name: Malta identity card number
@@ -830,7 +892,7 @@
                 href: sit-defn-malta-physical-addresses.md
               - name: Malta tax identification number
                 href: sit-defn-malta-tax-identification-number.md
-              - name: Medical specialities
+              - name: Medical specialties
                 href: sit-defn-medical-specialities.md
               - name: Medicare Beneficiary Identifier (MBI) card
                 href: sit-defn-medicare-beneficiary-Identifier-card.md
@@ -910,8 +972,12 @@
                 href: sit-defn-russia-passport-number-international.md
               - name: Saudi Arabia National ID
                 href: sit-defn-saudi-arabia-national-id.md
+              - name: Singapore driver's license number
+                href: sit-defn-singapore-drivers-license-number.md
               - name: Singapore national registration identity card (NRIC) number
                 href: sit-defn-singapore-national-registration-identity-card-number.md
+              - name: Singapore passport number
+                href: sit-defn-singapore-passport-number.md
               - name: Slack access token
                 href: sit-defn-slack-access-token.md
               - name: Slovakia drivers license number
@@ -934,6 +1000,10 @@
                 href: sit-defn-slovenia-unique-master-citizen-number.md
               - name: South Africa identification number
                 href: sit-defn-south-africa-identification-number.md
+              - name: South Korea driver's license number
+                href: sit-defn-south-korea-drivers-license-number.md
+              - name: South Korea passport number
+                href: sit-defn-south-korea-passport-number.md
               - name: South Korea resident registration number
                 href: sit-defn-south-korea-resident-registration-number.md
               - name: Spain DNI
@@ -982,7 +1052,11 @@
                 href: sit-defn-turkey-physical-addresses.md
               - name: Types of medication
                 href: sit-defn-types-of-medication.md
-              - name: U.K. drivers license number
+              - name: UAE identity card number
+                href: sit-defn-uae-identity-card-number.md
+              - name: UAE passport number
+                href: sit-defn-uae-passport-number.md
+              - name: U.K. driver's license number
                 href: sit-defn-uk-drivers-license-number.md
               - name: U.K. electoral roll number
                 href: sit-defn-uk-electoral-roll-number.md
@@ -1070,6 +1144,8 @@
           href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
+        - name: Minimum versions for sensitivity labels in Office apps
+          href: sensitivity-labels-versions.md
     - name: Encryption
       items: 
         - name: Understand encryption
@@ -1173,10 +1249,18 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Extension
+          - name: Learn about the Microsoft Purview extension for Chrome
             href: dlp-chrome-learn-about.md
+          - name: Learn about the Microsoft Purview extension for Firefox
+            href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
+          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec
+            href: dlp-migration-assistant-for-symantec-learn.md
+          - name: Learn about adaptive protection in data loss prevention (preview)
+            href: dlp-adaptive-protection-learn.md
+          - name: Learn about evidence collection for file activities on devices (preview)
+            href: dlp-copy-matched-items-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1187,26 +1271,30 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Create and deploy data loss prevention policies
+            href: dlp-create-deploy-policy.md
           - name: Configure endpoint data loss prevention settings
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
             href: get-started-with-the-default-dlp-policy.md
-          - name: Create a DLP policy from a template
-            href: create-a-dlp-policy-from-a-template.md
-          - name: Create, test, and tune a DLP policy
-            href: create-test-tune-dlp-policy.md
-          - name: Get started with data loss prevention on-premises scanner
+          - name: Get started with data loss prevention on-premises repositories
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Extension
+          - name: Get started with the Microsoft Purview extension for Chrome
             href: dlp-chrome-get-started.md
+          - name: Get started with the Microsoft Purview extension for Firefox
+            href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Get started with Data loss prevention policies for Power BI (preview)
+          - name: Get started with Data loss prevention policies for Power BI
             href: dlp-powerbi-get-started.md
+          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
+            href: dlp-migration-assistant-for-symantec-get-started.md
+          - name: Get started with collecting files that match data loss prevention policies from devices (preview)
+            href: dlp-copy-matched-items-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1221,26 +1309,30 @@
               href: what-the-dlp-policy-templates-include.md
             - name: Create a DLP policy to protect documents with FCI or other properties
               href: protect-documents-that-have-fci-or-other-properties.md
-            - name: View the DLP reports
-              href: view-the-dlp-reports.md
-            - name: Form a query to find sensitive data stored on sites
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: How DLP works between the Microsoft Purview compliance portal and Exchange admin center
               href: how-dlp-works-between-admin-centers.md
-            - name: Configure and view alerts for DLP policies (preview)
+            - name: Configure and view alerts for DLP policies
               href: dlp-configure-view-alerts-policies.md
             - name: Use sensitivity labels as a condition in DLP policies
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions
-              href: dlp-conditions-and-exceptions.md
+            - name: Data loss prevention Exchange conditions and actions reference
+              href: dlp-exchange-conditions-and-actions.md
             - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Test your DLP policies (preview)
+              href: dlp-test-dlp-policies.md
+            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
+              href: dlp-migration-assistant-for-symantec-use.md
+            - name: Data loss prevention policy tip reference for Outlook for Microsoft 365
+              href: dlp-ol365-win32-policy-tips.md       
+            - name: Data loss prevention policy tip reference for Outlook on the Web
+              href: dlp-owa-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1356,313 +1448,327 @@
     - name: Content search
       items:
         - name: Overview of Content search
-          href: search-for-content.md
-        - name: Search for content
-          href: content-search.md
+          href: ediscovery-content-search-overview.md
+        - name: Get started with Content search
+          href: ediscovery-content-search.md          
           items: 
+          - name: Search for content in Teams
+            href: ediscovery-teams-content-search.md 
           - name: Keyword queries and search conditions
-            href: keyword-queries-and-search-conditions.md
+            href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Search for Teams chat data for on-premises users
-            href: search-cloud-based-mailboxes-for-on-premises-users.md
+            href: ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
+            href: ediscovery-permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
+            href: ediscovery-preview-search-results.md
           - name: View statistics for search results
-            href: view-keyword-statistics-for-content-search.md
+            href: ediscovery-view-keyword-statistics-for-content-search.md
           - name: Export search results
-            href: export-search-results.md
+            href: ediscovery-export-search-results.md
           - name: Export a search report
-            href: export-a-content-search-report.md
+            href: ediscovery-export-a-content-search-report.md
           - name: Search for and delete email messages
-            href: search-for-and-delete-messages-in-your-organization.md
+            href: ediscovery-search-for-and-delete-email-messages.md
           - name: Retry a failed search
-            href: retry-failed-content-search.md
+            href: ediscovery-retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
-            href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
         - name: Content search reference
           items: 
           - name: Feature reference for Content search
-            href: content-search-reference.md
+            href: ediscovery-content-search-reference.md
           - name: eDiscovery search limits
-            href: limits-for-content-search.md
+            href: ediscovery-limits-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
+            href: ediscovery-what-is-stored-in-a-mailbox.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: ediscovery-differences-between-estimated-and-actual-search-results.md
           - name: Partially indexed items
-            href: partially-indexed-items-in-content-search.md
+            href: ediscovery-partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
-            href: investigating-partially-indexed-items-in-ediscovery.md
+            href: ediscovery-investigating-partially-indexed-items.md
           - name: De-duplication in search results
-            href: de-duplication-in-ediscovery-search-results.md
+            href: ediscovery-de-duplication-in-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
-          - name: Change the size of PST files when exporting search results
-            href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
-            href: disable-reports-when-you-export-content-search-results.md
+            href: ediscovery-disable-reports-for-exported-content-search-results.md
           - name: Check your search query for errors
-            href: check-your-content-search-query-for-errors.md
+            href: ediscovery-check-your-content-search-query-for-errors.md
           - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
+            href: ediscovery-configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
-            href: search-for-ediscovery-activities-in-the-audit-log.md
+            href: ediscovery-search-for-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
-            href: use-content-search-for-targeted-collections.md
+            href: ediscovery-use-content-search-for-targeted-collections.md
           - name: Search the mailbox and OneDrive account for a list of users
-            href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            href: ediscovery-search-mailboxes-and-onedrive-for-users.md
           - name: Create, report on, and delete multiple searches
-            href: create-report-on-and-delete-multiple-content-searches.md
+            href: ediscovery-create-reports-and-delete-multiple-content-searches.md
           - name: Clone a search
-            href: clone-a-content-search.md
+            href: ediscovery-clone-a-content-search.md
     - name: eDiscovery (Standard)
       items:
         - name: Get started with eDiscovery (Standard)
-          href: get-started-core-ediscovery.md
+          href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
-          href: create-ediscovery-holds.md
+          href: ediscovery-create-holds.md
+        - name: Create a hold for Teams users
+          href: ediscovery-teams-legal-hold.md
         - name: Search for content in a case
-          href: search-for-content-in-core-ediscovery.md
+          href: ediscovery-search-for-content.md
         - name: Export content from a case
-          href: export-content-in-core-ediscovery.md
-        - name: Close, reopen, and delete a case
-          href: close-reopen-delete-core-ediscovery-cases.md
+          href: ediscovery-export-content.md
+        - name: Upgrade (preview), close, reopen, or delete a case
+          href: ediscovery-close-reopen-delete-cases.md
         - name: eDiscovery (Standard) reference
           items:
           - name: eDiscovery search limits
-            href: limits-for-content-search.md
+            href: ediscovery-limits-for-content-search.md
           - name: Assign eDiscovery permissions
-            href: assign-ediscovery-permissions.md
+            href: ediscovery-assign-permissions.md
           - name: Keyword queries and search conditions
-            href: keyword-queries-and-search-conditions.md
+            href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
-            href: set-up-compliance-boundaries.md
+            href: ediscovery-set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
+            href: ediscovery-permissions-filtering-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
+            href: ediscovery-what-is-stored-in-a-mailbox.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: ediscovery-differences-between-estimated-and-actual-search-results.md
           - name: Partially indexed items
-            href: partially-indexed-items-in-content-search.md
+            href: ediscovery-partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
-            href: investigating-partially-indexed-items-in-ediscovery.md
+            href: ediscovery-investigating-partially-indexed-items.md
           - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
+            href: ediscovery-preview-search-results.md
           - name: Export a search report
-            href: export-a-content-search-report.md
+            href: ediscovery-export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
-            href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            href: ediscovery-use-a-script-to-add-users-to-a-hold.md
           - name: Use a script to create a holds report
-            href: create-a-report-on-holds-in-ediscovery-cases.md
+            href: ediscovery-create-a-report-on-holds-in-cases.md
           - name: View statistics for search results
-            href: view-keyword-statistics-for-content-search.md
+            href: ediscovery-view-keyword-statistics-for-content-search.md
           - name: Search and purge spilled data
-            href: data-spillage-scenariosearch-and-purge.md
+            href: ediscovery-data-spillage-search-and-purge.md
           - name: Preserve Bcc recipients for search
-            href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
           - name: Retry a failed search
-            href: retry-failed-content-search.md
+            href: ediscovery-retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
+            href: ediscovery-configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
-            href: search-for-ediscovery-activities-in-the-audit-log.md
+            href: ediscovery-search-for-activities-in-the-audit-log.md
     - name: eDiscovery (Premium)
       items:
         - name: Overview
-          href: overview-ediscovery-20.md
-        - name: Set up eDiscovery (Premium)
-          href: get-started-with-advanced-ediscovery.md
+          href: ediscovery-overview.md
+        - name: Get started with eDiscovery (Premium)
+          href: ediscovery-premium-get-started.md
+        - name: eDiscovery (Premium) with Microsoft Teams
+          items:
+            - name: eDiscovery workflow for Teams content
+              href: ediscovery-teams-workflow.md
+            - name: Conduct an investigation for Teams content
+              href: ediscovery-teams-investigation.md
         - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
-              href: create-and-manage-advanced-ediscoveryv2-case.md
+              href: ediscovery-create-and-manage-cases.md
             - name: Use the new case format
-              href: advanced-ediscovery-new-case-format.md
-        - name: eDiscovery (Premium) workflow for Teams content
-          href: teams-workflow-in-advanced-ediscovery.md
+              href: ediscovery-new-case-format.md
         - name: Manage custodians and non-custodial data sources
-          href: managing-custodians.md
+          href: ediscovery-managing-custodians.md
           items: 
             - name: Add custodians to a case
-              href: add-custodians-to-case.md
+              href: ediscovery-add-custodians-to-case.md
             - name: Import multiple custodians to a case
-              href: bulk-add-custodians.md
+              href: ediscovery-bulk-add-custodians.md
             - name: Manage custodians
-              href: manage-new-custodians.md
+              href: ediscovery-manage-new-custodians.md
             - name: View custodian activity
-              href: view-custodian-activity.md
+              href: ediscovery-view-custodian-activity.md
             - name: Add non-custodial data sources to a case
-              href: non-custodial-data-sources.md
+              href: ediscovery-non-custodial-data-sources.md
         - name: Manage custodian communications
-          href: managing-custodian-communications.md
+          href: ediscovery-managing-custodian-communications.md
           items: 
             - name: Create a hold notification
-              href: create-hold-notification.md
+              href: ediscovery-create-hold-notification.md
             - name: Use the communications editor
-              href: using-communications-editor.md
+              href: ediscovery-using-communications-editor.md
             - name: Manage hold notifications
-              href: manage-hold-notification.md
+              href: ediscovery-manage-hold-notifications.md
             - name: Acknowledge a hold notification
-              href: acknowledge-hold-notification.md
+              href: ediscovery-acknowledge-hold-notification.md
             - name: Manage issuing officers
-              href: advanced-ediscovery-issuing-officers.md
+              href: ediscovery-issuing-officers.md
             - name: Manage custodian communications templates
-              href: advanced-ediscovery-communications-library.md
+              href: ediscovery-communications-library.md
         - name: Manage holds
-          href: managing-holds.md
+          href: ediscovery-managing-holds.md
           items:
             - name: Use a script to create a holds report
-              href: create-a-report-on-holds-in-ediscovery-cases.md
+              href: ediscovery-create-a-report-on-holds-in-cases.md
         - name: Manage processing errors
-          href: processing-data-for-case.md
+          href: ediscovery-processing-data-for-case.md
           items:
             - name: Advanced indexing of custodian content
-              href: indexing-custodian-data.md
+              href: ediscovery-indexing-custodian-data.md
             - name: Error remediation when processing content
-              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+              href: ediscovery-error-remediation-when-processing-data.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md        
+              href: ediscovery-single-item-error-remediation.md        
         - name: Collect content for a case
           items: 
             - name: Learn about collections
-              href: collections-overview.md
+              href: ediscovery-collections.md
             - name: Create a collection estimate
-              href: create-draft-collection.md
+              href: ediscovery-create-draft-collection.md
             - name: Commit a collection estimate to a review set
-              href: commit-draft-collection.md
+              href: ediscovery-commit-draft-collection.md
             - name: Collection statistics and reports
-              href: collection-statistics-reports.md        
-            - name: Build search queries for collections
-              href: building-search-queries.md
+              href: ediscovery-collection-statistics-reports.md        
+            - name: Build search queries for keywords and collections
+              href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
+            - name: Use the query builder to create search queries (preview)
+              href: ediscovery-query-builder.md
             - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md 
+              href: ediscovery-keyword-queries-and-search-conditions.md 
             - name: Collect cloud attachments
-              href: advanced-ediscovery-cloud-attachments.md
+              href: ediscovery-cloud-attachments.md
         - name: Manage review sets
-          href: managing-review-sets.md
+          href: ediscovery-managing-review-sets.md
           items: 
             - name: Load non-Office 365 data into a review set
-              href: load-non-Office-365-data-into-a-review-set.md
+              href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
-              href: add-data-to-review-set-from-another-review-set.md
+              href: ediscovery-add-data-to-review-set-from-another-review-set.md
+            - name: Configure review set grouping settings
+              href: ediscovery-configure-review-set-settings.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
-              href: review-set-search.md
+              href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
-              href: tagging-documents.md
-            - name: View documents in a review set
-              href: view-documents-in-review-set.md
+              href: ediscovery-tagging-documents.md
+            - name: Group and view documents in a review set
+              href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
-              href: advanced-ediscovery-dashboard.md
+              href: ediscovery-dashboard.md
+            - name: Invite guest users to cases (preview)
+              href: ediscovery-guest-access.md
         - name: Analyze case content
-          href: analyzing-data-in-review-set.md
+          href: ediscovery-analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
-              href: near-duplicate-detection-in-advanced-ediscovery.md
+              href: ediscovery-near-duplicate-detection.md
             - name: Email threading
-              href: email-threading-in-advanced-ediscovery.md
+              href: ediscovery-email-threading.md
             - name: Themes
-              href: themes-in-advanced-ediscovery.md
+              href: ediscovery-themes.md
         - name: Use predictive coding (preview)
           items: 
             - name: Quick start - Predictive coding
-              href: predictive-coding-quick-start.md
+              href: ediscovery-predictive-coding-quick-start.md
             - name: Learn about predictive coding
-              href: predictive-coding-overview.md
+              href: ediscovery-predictive-coding-overview.md
             - name: Create a predictive coding model
-              href: predictive-coding-create-model.md
+              href: ediscovery-predictive-coding-create-model.md
             - name: Train a predictive coding model
-              href: predictive-coding-train-model.md
+              href: ediscovery-predictive-coding-train-model.md
             - name: Apply prediction score filter
-              href: predictive-coding-apply-prediction-filter.md
+              href: ediscovery-predictive-coding-apply-prediction-filter.md
             - name: Predictive coding reference
-              href: predictive-coding-reference.md
+              href: ediscovery-predictive-coding-reference.md
         - name: Export case content
-          href: exporting-data-ediscover20.md
+          href: ediscovery-exporting-data.md
           items: 
             - name: Download documents from a review set
-              href: download-documents-from-review-set.md
+              href: ediscovery-download-documents-from-review-set.md
             - name: Export documents from a review set
-              href: export-documents-from-review-set.md
+              href: ediscovery-export-documents-from-review-set.md
             - name: Export documents to an Azure Storage account
               href: download-export-jobs.md
         - name: Manage jobs
-          href: managing-jobs-ediscovery20.md
+          href: ediscovery-managing-jobs.md
         - name: Configure case settings
           items: 
             - name: Close or delete a case
-              href: close-or-delete-case.md
+              href: ediscovery-close-or-delete-case.md
             - name: Add or remove members from a case
-              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+              href: ediscovery-add-or-remove-members-from-a-case.md
             - name: Configure search and analytics settings
-              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+              href: ediscovery-configure-search-and-analytics-settings.md
         - name: eDiscovery (Premium) reference
           items:
             - name: eDiscovery (Premium) limits
-              href: limits-ediscovery20.md
+              href: ediscovery-premium-limits.md
             - name: Supported file types
-              href: supported-filetypes-ediscovery20.md
+              href: ediscovery-supported-file-types.md
             - name: Document metadata fields
-              href: document-metadata-fields-in-advanced-ediscovery.md
+              href: ediscovery-document-metadata-fields.md
             - name: Search and purge Teams chat messages
-              href: search-and-delete-Teams-chat-messages.md
+              href: ediscovery-search-and-delete-Teams-chat-messages.md
+            - name: Find sensitive data stored on sites
+              href: ediscovery-find-sensitive-data-stored-on-sites.md
             - name: Set up historical versions
-              href: advanced-ediscovery-historical-versions.md
+              href: ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md
+              href: ediscovery-attorney-privilege-detection.md
             - name: Assign eDiscovery permissions
-              href: assign-ediscovery-permissions.md
+              href: ediscovery-assign-permissions.md
             - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md
+              href: ediscovery-keyword-queries-and-search-conditions.md
             - name: Set up compliance boundaries
-              href: set-up-compliance-boundaries.md
+              href: ediscovery-set-up-compliance-boundaries.md
             - name: Configure search permissions filtering
-              href: permissions-filtering-for-content-search.md
+              href: ediscovery-permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
-              href: what-is-stored-in-exo-mailbox.md
+              href: ediscovery-what-is-stored-in-a-mailbox.md
             - name: eDiscovery for Graph connectors
               href: ediscovery-graph-connector.md  
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Conversation review sets
-              href: conversation-review-sets.md
+              href: ediscovery-conversation-review-sets.md
             - name: CJK language support
               href: ediscovery-cjk-support.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
-              href: search-for-ediscovery-activities-in-the-audit-log.md
+              href: ediscovery-search-for-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
-              href: troubleshooting-azcopy.md
+              href: ediscovery-troubleshooting-azcopy.md
     - name: Retirement of legacy eDiscovery tools
-      href: legacy-ediscovery-retirement.md
+      href: ediscovery-legacy-retirement.md
 - name: Manage holds
   items: 
     - name: How to identify the type of hold placed on a mailbox
-      href: identify-a-hold-on-an-exchange-online-mailbox.md
+      href: ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md
     - name: Delete items in the Recoverable Items folder of mailboxes on hold
-      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+      href: ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Create a Litigation hold
-      href: create-a-litigation-hold.md
+      href: ediscovery-create-a-litigation-hold.md
     - name: Preserve Bcc and expanded distribution group recipients
-      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+      href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
 - name: Manage auditing and alert policies
   items: 
     - name: Microsoft Purview auditing solutions
@@ -1697,6 +1803,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+        - name: Search the audit log for events in Teams
+          href: audit-teams-audit-log-events.md
     - name: Office 365 Management Activity API resources
       items:
         - name: Office 365 Management Activity API reference
@@ -1716,39 +1824,51 @@
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
-          href: compliance-manager.md
-        - name: What's new in Compliance Manager
-          href: compliance-manager-whats-new.md
-        - name: Compliance Manager quickstart
-          href: compliance-manager-quickstart.md
+          items:
+            - name: Overview
+              href: compliance-manager.md
+            - name: What's new
+              href: compliance-manager-whats-new.md
+            - name: Compliance Manager glossary of terms
+              href: compliance-manager-glossary.md
+            - name: Frequently asked questions (FAQ)
+              href: compliance-manager-faq.yml
         - name: Get started with Compliance Manager
-          href: compliance-manager-setup.md
-        - name: Build and manage assessments
-          href: compliance-manager-assessments.md
-        - name: Learn about assessment templates
-          href: compliance-manager-templates.md
-        - name: Create assessment templates
-          href: compliance-manager-templates-create.md
-        - name: Extend assessment templates
-          href: compliance-manager-templates-extend.md
-        - name: Modify assessment templates
-          href: compliance-manager-templates-modify.md
-        - name: Format template data in Excel
-          href: compliance-manager-templates-format-excel.md
-        - name: Compliance Manager templates list
-          href: compliance-manager-templates-list.md
-        - name: Working with improvement actions
-          href: compliance-manager-improvement-actions.md
-        - name: Updating improvement actions
-          href: compliance-manager-update-actions.md
+          items:
+            - name: Permissions and settings
+              href: compliance-manager-setup.md
+        - name: Multicloud support in Compliance Manager
+          items:
+            - name: Learn about multicloud support
+              href: compliance-manager-multicloud.md
+            - name: Configure cloud settings
+              href: compliance-manager-cloud-settings.md
+            - name: Connectors
+              items:
+                - name: Set up connectors to use in assessments
+                  href: compliance-manager-connectors.md
+                - name: Salesforce
+                  href: compliance-manager-connectors-salesforce.md
+                - name: Zoom
+                  href: compliance-manager-connectors-zoom.md
+        - name: Create assessments
+          items:
+            - name: Build and manage assessments
+              href: compliance-manager-assessments.md
+            - name: Learn about Compliance Manager regulations
+              href: compliance-manager-templates.md
+            - name: Regulations list
+              href: compliance-manager-templates-list.md
+        - name: Improvement actions
+          items:
+            - name: Working with improvement actions
+              href: compliance-manager-improvement-actions.md
+            - name: Updating improvement actions
+              href: compliance-manager-update-actions.md
         - name: Create and manage alert policies
           href: compliance-manager-alert-policies.md
-        - name: How your compliance score is calculated
+        - name: Scoring
           href: compliance-score-calculation.md
-        - name: Configuration Analyzer for Microsoft Purview
-          href: compliance-manager-mcca.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-manager-faq.yml
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: Industry-specific guidance

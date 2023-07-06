@@ -26,11 +26,14 @@ ms.date: 07/11/2022
 
 # Understand the Microsoft proposal workflow
 
-A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. Proposals represent large orders that your organization’s procurement or IT department place with Microsoft.
+A proposal is a formal offer from Microsoft for your organization to buy Microsoft products and services. Proposals represent large orders that your organization's procurement or IT department place with Microsoft.
 
 Before the proposal workflow begins, your procurement department works directly with a designated Microsoft representative to determine the specific products and services your organization needs. Next, your Microsoft representative drafts a proposal and sends your procurement department an email with a link to accept the proposal in the Azure marketplace portal. The site contains the proposal prepared specifically for you and your organization.
 
 After you follow the link and sign in to the proposal site, you can start the proposal review process. After you complete the proposal review and check out, you receive an invoice for the purchased products as per the billing plan you selected. To learn how billing works for proposals, see [Understand invoicing](#understand-invoicing) below.
+
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
 
 ## Prerequisites for buying items with a proposal
 
@@ -50,7 +53,7 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you’re a Global admin but don’t have one of those roles, you can assign the roles to yourself. If you’re not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global admin but don't have one of those roles, you can assign the roles to yourself. If you're not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
 
 The billing account owner and billing account contributor roles are assigned by using either of the following methods.
 

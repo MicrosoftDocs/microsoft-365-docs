@@ -1,7 +1,7 @@
 ---
-title: Alert grading for suspicious email forwarding activity
-description: Alert grading for suspicious email forwarding activity to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Alert classification for suspicious email forwarding activity
+description: Alert classification for suspicious email forwarding activity to review the alerts and take recommended actions to remediate the attack and protect your network.
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,9 +22,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
+ms.date: 04/05/2023
 ---
 
-# Alert grading for suspicious email forwarding activity
+# Alert classification for suspicious email forwarding activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,9 +36,9 @@ Threat actors can use compromised user accounts for several malicious purposes, 
 
 Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
 
-This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a True Positive (TP) or a False Positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a true positive (TP) or a false positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
-For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
+For an overview of alert classifications for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
 The results of using this playbook are:
 
@@ -73,18 +74,6 @@ To review the Suspicious Email Forwarding Activity alert, open the **Alerts** pa
 Select **Activity**  to view the details of that activity in the sidebar. Here's an example.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
-
-The **Reason** field contains the following information related to this alert.
-
-- Forwarding Type (FT) is one of the following:
-  - Exchange Transport Rule (ETR): Forwarded using and Exchange Transport Rule
-  - SMTP: Forwarded using Mailbox Forwarding
-  - InboxRule: Forwarded using an Inbox Rule
-
-- Message Trace ID (MTI): This is the identifier (NetworkMessageId) of the forwarded email that triggered this alert. NetworkMessageId is the unique identifier of an email in your organization.
-- Forwarder (F): The user who forwarded this email.
-- Suspicious Recipient List (SRL): The list of recipients considered suspicious in this email.
-- Recipient List (RL): The  list of all the recipients in this email.
 
 ## Investigation workflow
 
@@ -266,7 +255,7 @@ Once you determine that the activities associated make this alert a True Positiv
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbooks.md)
+- [Overview of alert classification](alert-grading-playbooks.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)

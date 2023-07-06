@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 06/14/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,16 +25,16 @@ ms.custom: seo-marvel-apr2020
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain a former employee's email after they leave your organization. If another employee takes on the job responsibilities of the departed employee or if that employee returns to your organization, there are two ways that you can make the contents of the inactive mailbox available to a user:
+An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain a former employee's email after they leave your organization. If another employee takes on the job responsibilities of the former employee or if that employee returns to your organization, there are two ways that you can make the contents of the inactive mailbox available to a user:
 
-- **Restore an inactive mailbox** If another employee takes on the job responsibilities of the departed employee, or if another user needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. You can also restore the archive from an inactive mailbox. After it's restored, the inactive mailbox is preserved and is retained as an inactive mailbox. This article describes the procedures for restoring an inactive mailbox.
+- **Restore an inactive mailbox** If another employee takes on the job responsibilities of the former employee, or if another user needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. You can also restore the archive from an inactive mailbox. After it's restored, the inactive mailbox is preserved and is retained as an inactive mailbox. This article describes the procedures for restoring an inactive mailbox.
 
-- **Recover an inactive mailbox** If the departed employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the departed employee, you can recover the contents of the inactive mailbox. This method converts the inactive mailbox to a new mailbox that contains the contents of the inactive mailbox. After it's recovered, the inactive mailbox no longer exists. For the step-by-step procedures, see [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
+- **Recover an inactive mailbox** If the former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of the former employee, you can recover the contents of the inactive mailbox. This method converts the inactive mailbox to a new mailbox that contains the contents of the inactive mailbox. After it's recovered, the inactive mailbox no longer exists. For the step-by-step procedures, see [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
 
 See the [More information](#more-information) section in this article for more details about the differences between restoring and recovering an inactive mailbox.
 
 > [!NOTE]
-> You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox and then import to another mailbox. For instructions, see following articles:
+> You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If, for compliance reasons, you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox. This action is supported for eDiscovery purposes only, and can't be used as a backup solution. For instructions to use content search for the recovery of data for eDiscovery, see following articles:
 >
 > - [Content search](ediscovery-content-search.md)
 > - [Export content search results](export-search-results.md)
@@ -168,6 +168,9 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   ```
 
 - **What does the TargetRootFolder parameter do?** As previously explained, you can use the **TargetRootFolder** parameter to specify a folder in the top of the folder structure (also called the root) in the target mailbox in which to restore the contents of the inactive mailbox. If you don't use this parameter, mailbox items from the inactive mailbox are merged into the corresponding default folders of the target mailbox, and custom folders are re-created in the root of the target mailbox. The following illustrations highlight these differences between not using and using the **TargetRootFolder** parameter.
+      
+    > [!NOTE]
+    > To restore the contents of a primary mailbox to an archive mailbox, use the **TargetRootFolder** parameter to specify the archive mailbox folders to migrate the content to. This content will be visible after it's restored. If you don't use this parameter, the restored content is not visible because it's mapped to locations in the archive mailbox that aren't visible to users.
 
   **Folder hierarchy in the target mailbox when the TargetRootFolder parameter isn't used**
 

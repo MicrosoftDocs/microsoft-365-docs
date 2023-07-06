@@ -1,12 +1,12 @@
 ---
 title: "Add data from one review set to another"
-description: "Learn how to select documents from one review set and work with them individually in another set in an Microsoft Purview eDiscovery (Premium) case."
+description: "Learn how to select documents from one review set and work with them individually in another set in a Microsoft Purview eDiscovery (Premium) case."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/05/2022
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,4 +47,4 @@ In the **Add to another review set options** flyout page, choose the review set 
 
 ![Options for adding data to another review set.](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
-After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](ediscovery-managing-jobs.md).
+After you select **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](ediscovery-managing-jobs.md).

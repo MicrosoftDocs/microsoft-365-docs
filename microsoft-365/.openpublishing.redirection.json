@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "business-video/TOC",
+            "redirect_url": "https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/top-m365-admin-articles.md",
+            "redirect_url": "https://support.microsoft.com/smallbusiness",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "enterprise/EU-data-storage-locations.md",
             "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview",
             "redirect_document_id": false
@@ -56,19 +66,39 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "solutions/secure-teams-security-isolation.md",
+            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "compliance/create-info-mgmt-policies.md",
+            "redirect_url": "https://support.microsoft.com/office/eb501fe9-2ef6-4150-945a-65a6451ee9e9",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "compliance/intro-to-info-mgmt-policies.md",
+            "redirect_url": "/sharepoint/intro-to-info-mgmt-policies",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "test-base/testbase-for-m365-product-terms-changehistory.md",
-            "redirect_url": "https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms-changehistory",
+            "redirect_url": "/legal/test-base/testbase-for-m365-product-terms-changehistory",
             "redirect_document_id": false
         },
         {
-            "source_path": "microsoft-365/security/defender/microsoft-threat-experts.md",
-            "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
-            "redirect_document_id": false
+            "source_path": "solutions/test-lab-guides-overview-solutions.md",
+            "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+            "redirect_document_id": true
         },
         {
-            "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
-            "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+            "source_path": "solutions/team-security-isolation-dev-test.md",
+            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
+            "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
             "redirect_document_id": false
-        }
+    }
     ]
 }

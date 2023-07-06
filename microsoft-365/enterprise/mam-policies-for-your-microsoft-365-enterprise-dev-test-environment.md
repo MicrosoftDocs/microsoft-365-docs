@@ -45,13 +45,13 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 ## Phase 2: Create a device compliance policy for Windows 10 devices
 
-In this phase, you create a device compliance policy for Windows 10 devices. This phase uses Microsoft Intune and the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to add a group, and create a compliance policy.
+In this phase, you create a device compliance policy for Windows 10 devices. This phase uses Microsoft Intune and the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to add a group, and create a compliance policy.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Intune admin center</a>.
 
     If a message similar to **You haven't enabled device management yet** message is shown, then select Intune as the MDM authority. For the specific steps, see [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
 
-    The Endpoint Manager admin center focuses on device management and app management. For a tour of this admin center, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+    The Intune admin center focuses on device management and app management. For a tour of this admin center, see [Tutorial: Walkthrough the Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
 2. In **Groups**, add a new **Microsoft 365** or **Security** group named **Managed Windows 10 device users**, with an **Assigned** membership type. In the next steps, you'll assign your compliance policy to this group. 
 

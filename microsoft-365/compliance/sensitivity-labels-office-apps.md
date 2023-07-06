@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 06/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -34,91 +34,18 @@ Use the information in this article to help you successfully manage sensitivity 
 
 To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must use a subscription edition of Office. This labeling client doesn't support standalone editions of Office, sometimes called "Office Perpetual".
 
-The Azure Information Protection (AIP) add-in component from the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2) is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070). If you currently use this add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
+The Azure Information Protection (AIP) add-in component from the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2) is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). If you currently use this add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release.
 
-- [Capabilities table for Word, Excel, and PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- [Capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook)
+In addition to listing the minimum versions for Windows, macOS, iOS, and Android, the tables also include whether the capability is supported for Office on the web:
 
-Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new labeling capabilities that are planned for future releases.
-
-New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you are on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
-
-New capabilities that are in private preview are not included in the tables but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
+- [Capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook)
 
 Office for iOS and Office for Android: Sensitivity labels are built into the [Office app](https://www.microsoft.com/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
-
-> [!TIP]
-> When you compare the minimum versions in the tables with the versions you have, remember the common practice of release versions to omit leading zeros.
-> 
-> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1 (and not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
-
-### Sensitivity label capabilities in Word, Excel, and PowerPoint
-
-The numbers listed are the minimum Office application versions required for each capability. 
-
-> [!NOTE]
-> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
- 
-|Capability |Windows |Mac |iOS |Android |Web |
-|-----------|-------:|----|----|--------|----|
-|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Preview: [Current Channel (Preview)](https://office.com/insider) | Not relevant  | Not relevant | Not relevant| Not relevant |
-|[Manually apply, change, or remove label](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | Under review |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to new documents                                         | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do) to existing documents | Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2207+  <br /><br> Semi-Annual Enterprise Channel: Under review | 16.63+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Current Channel: 2010+ <br /><br> Monthly Enterprise Channel: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions: <br /> - Prompt users for custom permissions (users and groups)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Current Channel: 2004+ <br /><br> Monthly Enterprise Channel: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | Under review   | Under review         | Under review                                                        |
-|[Let users assign permissions: <br /> - Prompt users for custom permissions (users, groups, and organizations)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Preview: Rolling out to [Beta Channel](https://office.com/insider)  | Under review   | Under review   | Under review         | Under review                                                        |
-|[Audit label-related user activity](#auditing-labeling-activities)                      | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Yes |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Current Channel: 2101+ <br /><br> Monthly Enterprise Channel: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[Apply a sensitivity label to files automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Apply a sensitivity label to files automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review | Under review | Under review |
-|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2209+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |  Under review | Under review | Under review | Under review |
-|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
-
-### Sensitivity label capabilities in Outlook
-
-The numbers listed are the minimum Office application versions required for each capability. 
-
-> [!NOTE]
-> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
-
-|Capability |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
-|-----------|-------------------:|----------------|---------------|-------------------|-------------------|
-|[AIP add-in disabled by default](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Preview: [Current Channel (Preview)](https://office.com/insider) | Not relevant  | Not relevant | Not relevant| Not relevant |
-|Manually apply, change, or remove label <br /> - [Files and emails](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|Manually apply, change, or remove label <br /> - [Calendar items](sensitivity-labels-meetings.md)| Preview: Rolling out to [Beta Channel](https://office.com/insider) |  Under review | Under review | Under review | Yes |
-|[Multi-language support](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Yes |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Let users assign permissions: <br /> - Do Not Forward](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Yes |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Current Channel: 2101+ <br /><br> Monthly Enterprise Channel: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Yes                |
-|[Audit label-related user activity](#auditing-labeling-activities) | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Yes |
-|[Apply a sensitivity label to emails automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
-|[Apply a sensitivity label to emails automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
-|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
-|[PDF support](#pdf-support) | Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel:Under review  | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
-|[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
-
-**Footnotes:**
-
-<sup>\*</sup>
-Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 ## Office built-in labeling client and the Azure Information Protection client
 
@@ -135,17 +62,16 @@ The Office built-in labeling client downloads sensitivity labels and sensitivity
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from the Microsoft Purview compliance portal, and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-If both of these conditions are met but you need to turn off the built-in labels in Windows Office apps, use the following Group Policy setting:
+If both of these conditions are met but you need to turn off the built-in labels in Windows Office apps, use the Office policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels**. Set the value to 0 by selecting **Disabled**.
 
-1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
+For Group Policy and [Microsoft 365 Apps for enterprise administrative templates](https://www.microsoft.com/download/details.aspx?id=49030), navigate to this setting from **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. If you're using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service), search for this setting by name. The setting takes effect when these Office apps restart.
 
-2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**.
-
-If you later need to revert this configuration, change the value to **1**. You might also need to change this value to 1 if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
- 
-Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
+If you later need to revert this configuration, change the value to 1 by selecting **Enabled**. You might also need to enable this setting if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
+
+> [!TIP]
+> If you want to stop displaying built-in labels for Word, Excel, and PowerPoint, and display them just for Outlook, or the other way around, you can achieve this outcome with a per-label setting. For more information, see [Scope labels to just files or emails](#scope-labels-to-just-files-or-emails).
 
 ## Office file types supported
 
@@ -241,11 +167,15 @@ To use the Office built-in labeling client with Office on the web for documents 
 
 When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is read and only if the user belongs to the same tenant, the label displays in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name displays on the status bar. 
 
-This means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. However, the following elements from an applied label are visible to users outside your organization:
+This implementation means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. 
+
+The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook might not retain the label metadata in the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata hasn't been retained. If that label applied encryption, the encryption persists to protect the contents.
+
+The following elements from an applied label are visible to users outside your organization:
 
 - Content markings. When a label applies a header, footer, or watermark, these are added directly to the content and remain visible until somebody modifies or deletes them.
 
-- The name and description of the underlying protection template from a label that applied encryption. This information displays in a message bar at the top of the document, to provide information about who is authorized to open the document, and their usage rights for that document.
+- The name and description of the underlying protection template from a label that applied encryption. This information displays in a message bar at the top of the content, to provide information about who is authorized to view the content, and their usage rights for that content.
 
 ### Sharing encrypted documents with external users
 
@@ -266,7 +196,6 @@ Office apps apply content marking and encryption with a sensitivity label differ
 | Word, Excel, PowerPoint on all platforms | Immediately | Immediately |
 | Outlook for PC and Mac | After Exchange Online sends the email or meeting invite | Immediately |
 | Outlook on the web, iOS, and Android | After Exchange Online sends the email or meeting invite | After Exchange Online sends the email or meeting invite |
-|
 
 Solutions that apply sensitivity labels to files outside Office apps do so by applying labeling metadata to the file. In this scenario, content marking from the label's configuration isn't inserted into the file but encryption is applied. 
 
@@ -289,7 +218,7 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 > [!IMPORTANT]
 > If your Office apps don't support this capability, they apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
-> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions supported.
+> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
@@ -341,7 +270,7 @@ Examples:
 
 > [!IMPORTANT]
 > 
-> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions.
+> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 >
 > To use mandatory labeling for documents but not emails, see the instructions in the next section that explains how to configure Outlook-specific options.
 > 
@@ -355,7 +284,7 @@ When the policy setting **Require users to apply a label to their email and docu
 
 - For labeling built in to Office apps:
     - For documents (Word, Excel, PowerPoint): When an unlabeled document is opened or saved.
-    - For emails (Outlook): At the time users send an unlabeled email message.
+    - For emails (Outlook): At the time users send an unlabeled email message. For Outlook Mobile, this can be changed to [when the email message is first composed](#for-outlook-mobile-change-when-users-are-prompted-for-a-label).
 
 Additional information for built-in labeling:
 
@@ -370,13 +299,27 @@ For guidance about when to use this setting, see the information about [policy s
 > [!NOTE]
 > If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
 >
-> The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will probably be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
-> 
-> Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+> The default label always takes priority over mandatory labeling. However, if you use a version of built-in labeling that doesn't yet support a default label for existing documents, users will be prompted to apply a sensitivity label for each new document.
+>
+> Identify the minimum versions of Word, Excel, and PowerPoint that support a default label for existing documents by using the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the row **Apply a default label to existing documents**.
+
+### For Outlook Mobile, change when users are prompted for a label
+
+Currently rolling out, this setting requires a minimum version of 4.2316.0 for Outlook for Android and Outlook for iOS.
+
+You can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
+
+Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
+
+This configuration requires you to specify the following key/value pair as a general configuration setting in the policy:
+
+|Key|Value|
+|--- |--- |
+|com.microsoft.outlook.Mail.LouderMandatoryLabelEnabled|true|
 
 ## Outlook-specific options for default label and mandatory labeling
 
-For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
+For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
 
 When the Outlook app supports a default label setting that's different from the default label setting for documents:
 
@@ -390,21 +333,72 @@ When the Outlook app supports turning off mandatory labeling:
 
 When the Outlook app doesn't support turning off mandatory labeling: If you select **Require users to apply a label to their email or documents** as a policy setting, Outlook will always prompt users to select a label for unlabeled emails.
 
+## Scope labels to just files or emails
+
 > [!NOTE]
-> If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
+> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](sensitivity-labels-versions.md), and the row **Scope labels to files or emails**.
 > 
-> Your chosen values for these PowerShell settings are reflected in the label policy configuration in the Microsoft Purview compliance portal, and they automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
+> Until this capability is supported on all the platforms used by your users, they will have an inconsistent labeling experience. For example, Word on one platform doesn't display a label that they see on a different platform.
+
+This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance portal. When you define the scope for the label for items, you can further refine the scope to just files or emails, and to [meetings](sensitivity-labels-meetings.md):
+
+- To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Files** is selected, and not the option for **Emails**.  
+- To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
+
+> [!WARNING]
+> Although you can edit an existing label and remove the **Files** scope, we don't recommend you do this because existing configurations might no longer work as expected. For example, a SharePoint site admin wouldn't understand why a sensitivity label that they selected as a default label for a document library no longer applies the label.
+> 
+> If you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
+
+Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
+
+Remember that other label configurations can also influence whether sensitivity labels are visible in apps. Check the documentation for the label configurations that you use.
+
+> [!NOTE]
+> The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
+
+Be aware that this configuration affects both client apps and services, manual labeling and automatic labeling. For example:
+
+- Default labels:
+    - If the scope doesn't include email, a configured default label for email won't be applied.
+    - If the scope doesn't include files, a configured default label for files won't be applied and can't be selected as a default sensitivity label for a SharePoint document library.
+
+- Auto-labeling policies:
+    - If the scope doesn't include email, you can't select the label for an auto-labeling policy that includes the Exchange location.
+    - If the scope doesn't include files, you can't select the label for an auto-labeling policy that includes the SharePoint and OneDrive locations.
+
+- [Encryption that lets users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions): 
+    - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
+    - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
+
+- [Label inheritance from email attachments](#configure-label-inheritance-from-email-attachments):
+    - For this configuration, the label must be scoped to both files and emails.
+
+In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope in the apps that support this feature.
+
+Because of the impact of scoping labels to just files or emails, some existing labeling configurations will prevent you from removing the scope options for **Files** and **Emails**:
+- Default label in label policies
+- Default label to apply in channel meetings
+- Label selected for auto-labeling policies
+
+Before you can scope a label to just files or emails, you must first remove it if it's configured as one of these default labels, and remove it from any auto-labeling policies.
+
+**Limitations:**
+
+- Currently, if you use any label policy settings with a sensitivity label that's scoped to just **Files** or scoped to just **Emails**, the same policy must also include at least one label with both scope options.
+
+- If the label is configured as the default label in one or more label policies, and Outlook isn't configured with its own default label in the same policy, you can't remove the scope for **Email**. As a workaround, first remove this label as the default label. You'll then be able to remove the email scope. Finally, reselect the now modified label as the default label for documents.
 
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
-> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
+> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies or configure it to [protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md).
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-Use these settings only when you have a working [S/MIME deployment](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) and want a label to automatically apply this protection method for emails rather than the [default protection that uses Rights Management encryption from Azure Information Protection](encryption-sensitivity-labels.md). The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
+Use these settings only when you have a working [S/MIME deployment](/exchange/security-and-compliance/smime-exo/smime-exo) and want a label to automatically apply this protection method for emails rather than the [default protection that uses Rights Management encryption from Azure Information Protection](encryption-sensitivity-labels.md). The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
 
 |Configuration  |Advanced setting key/value |
 |---------|---------|
@@ -423,11 +417,55 @@ Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{S
 
 For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
+## Configure label inheritance from email attachments
+
+> [!NOTE]
+> Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook), and the row **Label inheritance from email attachments**.
+
+Turn on email inheritance for when users attach labeled documents to an email message that isn't manually labeled. With this configuration, a sensitivity label is dynamically selected for the email message, based on the sensitivity labels that are applied to the attachments and published to the user. The [highest priority label](sensitivity-labels.md#label-priority-order-matters) is dynamically selected when it's supported by Outlook.
+
+Whether this label inheritance will override an existing label on the email message:
+
+- When an email message has been manually labeled, that label won't be replaced by label inheritance from email attachments.
+
+- Label inheritance from email attachments will replace a lower priority sensitivity label that is automatically applied or applied as a default label, but won't override a higher priority label.
+
+You configure this setting in the sensitivity label policy, on the **Default settings for emails** page. For the section **Inherit label from attachments**, select the checkbox **Email inherits highest priority label from attachments**. The attachment must be a physical file, and can't be a link to a file (for example, a link to a file on Microsoft SharePoint or OneDrive).
+
+When you select this checkbox, you can then further select the following option: **Recommend users apply the attachments label instead of automatically applying it.** Without this selection, the label is automatically applied but users can still remove the label or select a different label before sending the email.
+
+> [!NOTE]
+> If you've configured the PowerShell advanced setting **AttachmentAction** for the Azure Information Protection (AIP) unified labeling client to be Automatic or Recommended, these options are automatically reflected in the compliance portal. However, the **AttachmentActionTip** advanced setting for a customized recommendation message doesn't have a corresponding entry in the compliance portal and isn't supported by built-in labeling.
+
+By default, if the automatically selected label applies encryption, the same encryption is applied to the email. For example, if the highest priority label applies encryption with Full Control to the Marketing group, the email will be protected with Full Control to the Marketing group. If the highest priority label applies the encryption option of Do Not Forward, the email message is also labeled and encrypted with Do Not Forward.
+
+However, take into consideration the outcome when an email client doesn't support a specific protection action that's been applied to an attachment:
+
+- For built-in labeling:
+    
+    - **Double Key Encryption**: Behavior depends on whether Outlook supports this encryption method. Use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)** to confirm support for your version.
+    
+        - When Outlook supports DKE: If the highest priority label applies the encryption setting for Double Key Encryption and **Assign permissions now**, Outlook for Windows applies that label and protection to the email message. The label and protection isn't applied if the label is configured for **Let users assign permissions when they apply the label**.
+        
+        - When Outlook doesn't support DKE: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows.
+
+    - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
+
+- For the Azure Information Protection (AIP) unified labeling client:
+    
+    - **S/MIME**: If the highest priority label applies S/MIME signing and encryption, and the label is also configured for encryption from the Azure Rights Management service, that label is applied to the email message with the same S/MIME signing and encryption but also the label's configured encryption settings for the Azure Rights Management service.
+    
+    - **Double Key Encryption**: If the highest priority label applies the encryption setting for Double Key Encryption, no label or encryption is selected for the email message if the label is configured for **Let users assign permissions when they apply the label**. The label and protection is applied if the label is configured for **Assign permissions now**. 
+
+    - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
+
+    - **Encrypt-Only**: If the highest priority label applies the encryption setting for Encrypt-Only, no label or protection is selected for the email message because the AIP unified labeling client doesn't support this setting.
+
 ## PDF support
 
-For built-in labeling, use the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions supported. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
+For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify supported versions. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
-Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
+Office for Windows: Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 
 - File > Save As > PDF 
 - File > Export > PDF
@@ -435,7 +473,15 @@ Word, Excel, and PowerPoint support the following methods to convert an Office d
 
 This action is logged with the **Renamed file** audit event from the [File and page activities](audit-log-activities.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
 
-When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Office for the web: You must download the file from the browser. The following methods are supported to convert an Office online document into a PDF document:
+
+- Word and PowerPoint on the web:
+    - Save as > Download as PDF > Download
+- Excel on the web:
+    - Export > Download as PDF > Download
+    - Print > Print > Download as PDF > Download
+
+When the PDF is created, it inherits the label with any content markings. For Windows, if the label applied encryption, that encryption is also inherited. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook does support warning or blocking users from printing to PDF, as described next.
 
@@ -459,13 +505,27 @@ For more information about this capability, see the announcement [Apply sensitiv
 
 For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+### Disabling PDF support
+
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using a Group Policy Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Microsoft Save As PDF and Save As XPS add-ins**:
+
+- **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
+
+Configure this setting to be **Disabled**.
+
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+
 ## Sensitivity bar
 
-Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support the sensitivity bar.
 
-For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
+When Word, Excel, and PowerPoint support this feature, sensitivity labels are displayed in a sensitivity bar next to the file name on the top window bar. For example:
 
 ![Sensitivity labels on the window title bar.](../media/sensitivity-bar-example.png)
+
+When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email. For example:
+
+![Sensitivity labels on the Outlook Subject line.](../media/sensitivity-bar-example-outlook.png)
 
 Information about the labels and the ability to select or change a label are also integrated into user workflows that includes save and rename, export, share, print, and [convert to PDF](#pdf-support). For more information and example screenshots, see the blog post announcement, [New sensitivity bar in Office for Windows](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows).
 
@@ -476,7 +536,7 @@ As part of this high visibility, these labels also support colors. For more info
 > [!IMPORTANT]
 > If your labeling apps don't support this capability, they don't display the configured label colors.
 > 
-> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows, but not yet for Outlook, macOS, or Office for the web. For more information, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office apps, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
@@ -504,11 +564,36 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{col
 
 For more information to help you specify PowerShell advanced settings for sensitivity labels, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
+## Specify a default sublabel for a parent label
+
+> [!NOTE]
+> For built-in labeling, identify the minimum versions that support this setting by using the [capabilities tables](sensitivity-labels-versions.md) and the row **Default sublabel for parent label**. All versions of the Azure Information Protection unified labeling client support this setting.
+
+This configuration is not available in the Microsoft Purview compliance portal. You must use the PowerShell advanced setting *DefaultSubLabelId* with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+When you add a sublabel to a label, users can no longer apply the parent label to an item. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
+
+As an example, the parent label **Confidential** is configured with a default sublabel, **All Employees**. The next parent label, **Highly Confidential**, doesn't have a default sublabel configured. You can tell the difference with the end of label bar for **Confidential** that isn't visible for **Highly Confidential**:
+
+![Example that shows the parent label Confidential is configured for a default sublabel.](../media/default-sublabel-example.png)
+
+When users select to the left of that vertical bar, they are selecting **Confidential**\\**All Employees** automatically with a single selection. If they need a different sublabel, they must select to the right of the vertical bar to select the label expansion that then displays all the sublabels for selection. In comparison, if they select **Highly Confidential**, the sublabels for that label are always displayed for selection.
+
+After you configure this label setting, remember to update your end-user documentation accordingly.
+
+Example PowerShell command, where the parent sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e** and its sublabel that you want to specify as the default is **1ace2cc3-14bc-4142-9125-bf946a70542c**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{DefaultSubLabelId="1ace2cc3-14bc-4142-9125-bf946a70542c"}
+```
+
+For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## Auditing labeling activities
 
 For information about the auditing events that are generated by sensitivity label activities, see the [Sensitivity label activities](audit-log-activities.md#sensitivity-label-activities) section from [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md).
 
-This auditing information is visually represented in [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) to help you understand how your sensitivity labels are being used and where this labeled content is located. 
+This auditing information is visually represented in [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) to help you understand how your sensitivity labels are being used and where this labeled content is located.
 
 You can also create custom reports with your choice of security information and event management (SIEM) software when you [export and configure the audit log records](audit-log-export-records.md). For larger-scale reporting solutions, see the [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -525,4 +610,4 @@ You can also create custom reports with your choice of security information and 
 - [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
+- [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482)

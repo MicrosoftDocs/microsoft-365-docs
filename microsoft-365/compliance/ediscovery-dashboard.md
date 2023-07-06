@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/05/2022
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,9 +32,9 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
   
 2. Select an existing case.
   
-3. Click the **Review Set** tab, and then select a review set.
+3. Select the **Review Set** tab, and then select a review set.
   
-4. In the **Individual results** dropdown list, click **Search profile view**. 
+4. In the **Individual results** dropdown list, select **Search profile view**. 
 
    ![DashboardPivot.](../media/dashboardpivot.png)
 
@@ -42,11 +42,11 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
    ![Dashboard.](../media/dashboardonly.png)
   
-5. Click the **New  widget** and then select one of the following items:
+5. Select the **New  widget** and then select one of the following items:
 
    ![New widget dropdown list.](../media/NewWidgetDropdownBox.png)
 
-   - **Choose from library:** Displays a default library of widgets. You click a widget and then click **Add** to add it to the widgets on the **Search profile view** page.
+   - **Choose from library:** Displays a default library of widgets. You select a widget and then select **Add** to add it to the widgets on the **Search profile view** page.
   
    - **Create custom widget:** Displays a flyout page that you can use to set up a custom widget. 
 
@@ -60,21 +60,21 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
     c. Select a chart type to display the data from the selected pivot property.
 
-  6. Click **Add** to create the custom widget and display it on the **Search profile view** page.
+7. Select **Add** to create the custom widget and display it on the **Search profile view** page.
 
 ## Step 2: Create a review set search query
 
-1. Click **...** in the widget title bar, and then click **Apply condition**.
+1. Select **...** in the widget title bar, and then select **Apply condition**.
 
    ![Dashboard home.](../media/searchprofilehome.png)
 
-2. On the flyout page, click an element on the widget key or widget chart to create a filter.
+2. On the flyout page, select an element on the widget key or widget chart to create a filter.
 
    ![CreateFilter.](../media/applyconditionfilter.png)
 
 3. Repeat steps 1-2 for other widgets multiple widgets. 
 
-4. When you're done, click **Save as query** to save your conditions as a new search query for the review set.
+4. When you're done, select **Save as query** to save your conditions as a new search query for the review set.
 
    ![Query.](../media/savequery.png)
 

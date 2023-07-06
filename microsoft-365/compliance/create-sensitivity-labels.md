@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 07/05/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ First, create and configure the sensitivity labels that you want to make availab
 
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
-> [!TIP]
+> [!NOTE]
 > If you don't yet have any sensitivity labels, you might be eligible for the automatic creation of default labels and a default label policy. Even if you have some labels, you might find it useful to see the configuration of these default labels that we're creating for new customers. For example, you can make the same manual configurations to help accelerate your own label deployment.
 > 
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
@@ -53,15 +53,13 @@ The global admin for your organization has full permissions to create and manage
     > [!NOTE]
     > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
-3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they're published:
-
-    ![Scopes for sensitivity labels.](../media/sensitivity-labels-scopes.png)
-
-    - If **Items** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. Optionally, in preview, you can extend these labels to [include meetings](sensitivity-labels-meetings.md) from Teams and Outlook, and to protecting Teams meetings themselves by enforcing settings for Teams meetings and related chat. 
+3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they'll be visible when they're published:
+    
+    :::image type="content" source="../media/sensitivity-labels-scopes.png" alt-text="Scopes for sensitivity labels."
+    
+    - If **Items** is selected, you can configure settings that apply to apps that support sensitivity labels, such as Office Word and Outlook. Optionally, you can extend these labels to [include meetings](sensitivity-labels-meetings.md) from Teams and Outlook, and to protecting Teams meetings themselves by enforcing settings for Teams meetings and related chat. 
     
       If the **Items** option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
-
-    - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
     For information about the **Schematized data assets** scope, see [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
@@ -69,9 +67,9 @@ The global admin for your organization has full permissions to create and manage
 
     For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the UI for individual settings.
 
-5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
+5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **Actions**, and then select **Create sublabel**.
 
-6. When you've created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
+6. When you've created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **Actions**, and then select one of the reordering options, such as **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
 To edit an existing label, select it, and then select the **Edit label** button:
 
@@ -163,9 +161,11 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
+4. For the **Assign admin units**: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the label policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-5. Follow the prompts to configure the policy settings.
+5. Follow the prompts to complete the configuration.
 
     The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Items** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
 
@@ -173,9 +173,9 @@ To check your label's configuration, including advanced settings, use the follow
 
     For labels configured for **Microsoft Purview Data Map assets (preview)**: These labels don't have any associated policy settings.
 
-6. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
+7. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 
-7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
+7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **Actions**, and then select one of the reordering options. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
 
 Completing the **Create policy** configuration automatically publishes the label policy. To make changes to a published policy, simply edit it. There's no specific publish or republish action for you to select.
 
@@ -215,15 +215,15 @@ You can also use [Remove-Label](/powershell/module/exchange/remove-label) and [R
 
 ## Removing and deleting labels
 
-In a production environment, it's unlikely that you will need to remove sensitivity labels from a label policy, or delete sensitivity labels. It's more likely that you might need to do one or either of these actions during an initial testing phase. Make sure you understand what happens when you do either of these actions.
+In a production environment, it's unlikely that you'll need to remove sensitivity labels from a label policy, or delete sensitivity labels. It's more likely that you might need to do one or either of these actions during an initial testing phase. Make sure you understand what happens when you do either of these actions.
 
-Removing a label from a label policy is less risky than deleting it, and can always be added back later if needed. You won't be able to delete a label if it's still in a label policy.
+Removing a label from a label policy is less risky than deleting it, and can always be added back later if needed. You can't delete a label if it's still in a label policy.
 
 When you remove a label from a label policy so that the label is no longer published to the originally specified users, the next time the label policy is refreshed, users no longer see that label to select in their Office apps. If that label is already applied, the label isn't removed from the content or container. For example, users who are using built-in labeling in desktop apps for Word, Excel, and PowerPoint, still see the applied label name on the status bar. An applied container label continues to protect the Teams or SharePoint site.
 
 In comparison, when you delete a label:
 
-- If the label applied encryption, the underlying protection template is archived so that previously protected content can still be opened. Because of this archived protection template, you won't be able to create a new label with the same name. Although it's possible to delete a protection template by using [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), don't do this unless you're sure you don't need to open content that was encrypted with the archived template.
+- If the label applied encryption, the underlying protection template is archived so that previously protected content can still be opened. Because of this archived protection template, you can't create a new label with the same name. Although it's possible to delete a protection template by using [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), don't do this unless you're sure you don't need to open content that was encrypted with the archived template.
 
 - For documents stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files](sensitivity-labels-sharepoint-onedrive-files.md): When you open the document in Office for the web, you won't see the label applied in the app, and the label name no longer displays in the **Sensitivity** column in SharePoint. If the deleted label applied encryption and the services can process the encrypted contents, the encryption is removed. Egress actions from these services result in the same outcome. For example, download, copy to, move to, and open with an Office desktop or mobile app. Although the label information remains in the file's metadata, apps can no longer map the label ID to a display name, so users will assume a file isn't labeled.
 
@@ -231,11 +231,13 @@ In comparison, when you delete a label:
 
 - For containers, such as sites in SharePoint and Teams: The label is removed and any settings that were configured with that label are no longer enforced. This action typically takes between 48-72 hours for SharePoint sites, and can be quicker for Teams and Microsoft 365 Groups.
 
+- Be aware that without a GUID-to-name mapping available after you delete a label, deleted labels can display as GUIDs rather than label names in applications such as [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md).
+
 As with all label changes, removing a sensitivity label from a label policy or deleting a sensitivity label takes time to replicate to all users and services.
 
 ## Next steps
 
-To configure and use your sensitivity labels for specific scenarios, use the following articles:
+To configure and use your sensitivity labels for specific scenarios, you might find the following articles helpful:
 
 - [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 

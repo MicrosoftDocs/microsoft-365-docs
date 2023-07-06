@@ -20,11 +20,14 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Behavioral blocking and containment
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -39,8 +42,6 @@ search.appverid: met150
 Today's threat landscape is overrun by [fileless malware](/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions aren't sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security).
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
-
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="The Behavioral blocking and containment in the Microsoft Defender ATP portal" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 Behavioral blocking and containment capabilities work with multiple components and features of Defender for Endpoint to stop attacks immediately and prevent attacks from progressing.
 

@@ -1,8 +1,9 @@
 ---
 title: "Exchange 2010 end of support roadmap"
-ms.author: dstrome
+ms.author: v-aiyengar
 author: dstrome
 manager: scotv
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

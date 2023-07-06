@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/19/2022
 ---
 
 # Defender for Endpoint onboarding Windows Client
@@ -24,6 +25,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
@@ -38,6 +41,12 @@ Devices in your organization must be configured so that the Defender for Endpoin
 In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
 :::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
+
+
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
+
 
 ## Related topics
 - [Onboard Windows devices using Microsoft Intune](configure-endpoints-mdm.md)

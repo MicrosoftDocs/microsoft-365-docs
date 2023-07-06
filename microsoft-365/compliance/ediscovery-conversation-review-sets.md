@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,11 +30,8 @@ The conversation reconstruction feature in Microsoft Purview eDiscovery (Premium
 With conversation reconstruction, you can use built-in capabilities to reconstruct, review, and export threaded conversations. Use eDiscovery (Premium) conversation reconstruction to:
 
 - Preserve unique message-level metadata across all messages within a conversation.
-
 - Collect contextual messages around your search results.
-
 - Review, annotate, and redact threaded conversations.
-
 - Export individual messages or threaded conversations
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -52,7 +50,7 @@ Here are few definitions to help you get start using conversation reconstruction
 
 ## Step 1: Create a collection estimate
 
-After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a collection estimate](ediscovery-create-draft-collection.md).
+After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by selecting **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
 ## Step 2: Commit a collection estimate to a review set
 
@@ -94,9 +92,9 @@ In a review set, you can use the following options to facilitate the review proc
 
 - **Annotate view:** Lets you markup a threaded view of the conversation. All messages in the conversation share the same annotated document.
 
-- **Tagging:** When viewing conversations in a review set, you can view and apply tags by clicking **Tagging panel** in the Coding panel.
+- **Tagging:** When viewing conversations in a review set, you can view and apply tags by selecting **Tagging panel** in the Coding panel.
 
-- **Rerun conversation conversion:** When messages are added to a conversation review set, a conversion job is automatically run to create the threaded summary and annotate views. If the Conversation Reconstruction job fails, you can rerun this job by clicking **Action > Create conversation PDFs** in the review set.
+- **Rerun conversation conversion:** When messages are added to a conversation review set, a conversion job is automatically run to create the threaded summary and annotate views. If the Conversation Reconstruction job fails, you can rerun this job by selecting **Action > Create conversation PDFs** in the review set.
 
 ### Exporting conversations
 

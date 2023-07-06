@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 06/15/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -24,10 +24,9 @@ ms.custom:
 description: Learn how to define and manage alerts for data loss prevention policies. 
 ---
 
-# Configure and view alerts for data loss prevention polices
+# Configure and view alerts for data loss prevention policies
 
-Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
-new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
+Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the new DLP alert management dashboard in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) to view alerts, events, and associated metadata for DLP policy violations.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -35,14 +34,14 @@ new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwli
 
 The following features are part of this:
 
--   **DLP alert management dashboard**: In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, this dashboard shows
-    alerts for DLP policies that are enforced on the following workloads:
+-   **DLP alert management dashboard**: This dashboard in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) shows alerts for DLP policies that are enforced on the following workloads:
 
     -   Exchange
     -   SharePoint
     -   OneDrive
     -   Teams
     -   Devices
+
 -   **Advanced alert configuration options**: These options are part of the DLP policy authoring flow. Use them to create rich alert configurations. You can create a single-event alert or an aggregated alert, based on the number of events or the size of the leaked data.
 
 ## Before you begin
@@ -51,14 +50,13 @@ Before you begin, make sure you have the necessary prerequisites:
 
 -   Licensing for the DLP alerts management dashboard
 -   Licensing for alert configuration options
--   Roles
+-   Required roles
 
 ### Licensing for the DLP alert management dashboard
 
-All eligible tenants for Office 365 DLP can access the new DLP alert management dashboard. To get started, you should be eligible for Office
-365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. For more information about the licensing requirements for Office 365 DLP, see [Which licenses provide the rights for a user to benefit from the service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+All eligible tenants for Office 365 DLP can access the DLP alert management dashboard. To get started, you should be eligible for Office 365 DLP for Exchange, SharePoint, and OneDrive. For more information about the licensing requirements for Office 365 DLP, see [Which licenses provide the rights for a user to benefit from the service?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
+Customers who use [Endpoint DLP](endpoint-dlp-learn-about.md) and who are eligible for [Teams DLP](dlp-microsoft-teams.md) will see their endpoint DLP policy alerts and Teams DLP policy alerts in the DLP alert management dashboard.
 
 ### Licensing for alert configuration options
 
@@ -81,7 +79,7 @@ If you want to view the DLP alert management dashboard or to edit the alert conf
 -   Security Operator
 -   Security Reader
 
-To access the DLP alert management dashboard, you need the Manage alerts role and either of the following roles:
+To access the DLP alert management dashboard, you need the *Manage alerts* role and either of the following roles:
 
 -   DLP Compliance Management
 -   View-Only DLP Compliance Management
@@ -99,7 +97,7 @@ This configuration allows you to set up a policy to generate an alert:
 - based on the number of activities
 - based on the volume of exfiltrated data
 
-To prevent a flood of notification emails, all matches that occur within a one-minute time window and are for the same DLP rule and on the same location are grouped together in the same alert. The one minute aggregation time window feature is available in: 
+To prevent a flood of notification emails, all matches that occur within a one-minute time window that are for the same DLP rule and on the same location are grouped together in the same alert. The one minute aggregation time window feature is available in: 
 
 - An E5 or G5 subscription
 - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
@@ -152,10 +150,70 @@ To work with the DLP alert management dashboard:
     |                   | User overrode policy          | Whether the user overrode the policy through the policy tip                | All events                               |
     |                   | Override justification text   | Justification provided to override the policy tip                          | All events                               |
     
-1.  Select the **Sensitive Info Types** tab to view details about the sensitive information types detected in the content. Details include confidence and count.
+After you investigate the alert, choose **Manage alert** to change the status (**Active**, **Investigating**, **Dismissed**, or **Resolved**). You can also add comments and assign the alert to someone in your organization.
 
-2.  After you investigate the alert, choose **Manage alert** to change the status (**Active**, **Investigating**, **Dismissed**, or
-    **Resolved**). You can also add comments and assign the alert to someone in your organization.
+-   To see the history of workflow management, choose **Management log**.
+-   After you take the required action for the alert, set the status of the alert to **Resolved**.
 
-    -   To see the history of workflow management, choose **Management log**.
-    -   After you take the required action for the alert, set the status of the alert to **Resolved**.
+### Other matched conditions
+
+Microsoft Purview supports showing matched conditions in a DLP event to reveal the exact cause for a flagged DLP policy. This information will show up in:
+
+- DLP Alerts console
+- [Activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer)
+- [Microsoft Defender for Business portal](../security/defender-business/mdb-view-manage-incidents.md#view-and-manage-incidents-in-microsoft-defender-for-business)
+
+In the **Events** tab open **Details** to see **Other matched conditions**.
+
+#### Prerequisites
+
+- Must be running Windows 10 x64 build 1809 or later or Windows 11.
+    - See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+- Matched conditions data is available for valid E3 and E5 license holders
+- Enable [Auditing](audit-log-enable-disable.md#turn-auditing-on-or-off).
+- Enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+Matched events information is supported for these conditions
+
+|Condition|Exchange|Sharepoint|Teams|Endpoint|
+|-----|-----|-----|-----|-----|
+|Sender is|Yes|No|Yes|No|
+|Sender domain is|Yes|No|Yes|No|
+|Sender address contains words|Yes|No|No|No|
+|Sender address matches patterns|Yes|No|No|No|
+|Sender is a member of|Yes|No|No|No|
+|Sender IP address is|Yes|No|No|No|
+|Has sender overridden the policy tip|Yes|No|No|No|
+|SenderAdAttribute Contains words|Yes|No|No|No|
+|SenderAdAttribute Matches patterns|Yes|No|No|No|
+|Recipient is|Yes|No|Yes|No|
+|Recipient domain is|Yes|No|Yes|No|
+|Recipient address contains words|Yes|No|No|No|
+|Recipient address matches patterns|Yes|No|No|No|
+|Recipient is a member of|Yes|No|No|No|
+|RecipientAdAttribute Contains words |Yes|No|No|No|
+|RecipientAdAttribute Matches patterns|Yes|No|No|No|
+|Document is password protected|Yes|No|No|No|
+|Document could not be scanned|Yes|No|No|No|
+|Document did not complete scanning|Yes|No|No|No|
+|Document name contains words|Yes|Yes|No|No|
+|Document name matches patterns|Yes|No|No|No|
+|Document property is|Yes|Yes|No|No|
+|Document size over|Yes|Yes|No|No|
+|Document content contains words|Yes|No|No|No|
+|Document content matches patterns|Yes|No|No|No|
+|Document type is|No|No|No|Yes|
+|Document extension is|Yes|Yes|No|Yes|
+|Content is shared from M365|Yes|Yes|Yes|No|
+|Content is received from|Yes|No|No|No|
+|Content character set contains words|Yes|No|No|No|
+|Subject contains words|Yes|No|No|No|
+|Subject matches patterns|Yes|No|No|No|
+|Subject or body contains words|Yes|No|No|No|
+|Subject or body matches patterns|Yes|No|No|No|
+|Header contains words|Yes|No|No|No|
+|Header matches patterns|Yes|No|No|No|
+|Message size over|Yes|No|No|No|
+|Message type is|Yes|No|No|No|
+|Message importance is|Yes|No|No|No|
+

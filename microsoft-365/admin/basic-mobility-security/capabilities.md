@@ -3,8 +3,9 @@ title: "Capabilities of Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 08/31/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -55,13 +56,13 @@ The supported apps for the different types of mobile devices in the following ta
 |Product|iOS|Android|
 |---|---|---|
 |**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
-|**Office** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Office Mobile|
+|**Microsoft 365 apps** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
 
 > [!NOTE]
 >
 > - Support for iOS 10.0 and later versions includes iPhone and iPad devices.
 > - Management of BlackBerry OS devices isn’t supported by Basic Security and Mobility. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
-> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
+> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Microsoft 365 on the web, or email in Outlook Web App.
 
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
 

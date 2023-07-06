@@ -1,11 +1,12 @@
 ---
-title: "Microsoft Purview auditing solutions"
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
+title: "Auditing solutions in Microsoft Purview"
+description: "Learn how to audit the activities of users and administrators in Microsoft Purview." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 01/01/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -35,9 +36,7 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 
 - **Enabled by default**. Audit (Standard) is turned on by default for all organizations with the appropriate subscription. That means records for audited activities will be captured and searchable. The only setup that required is to assign the necessary permissions to access the audit log search tool (and the corresponding cmdlet) and make sure that user's are assigned the right license for Microsoft Purview Audit (Premium) features.
 - **Thousands of searchable audit events**. You can search for a wide-range of audited activities that occur is most of the Microsoft 365 services in your organization. For a list of the activities you can search for, see [Audit log activities](audit-log-activities.md). For a list of the services and features that support audited activities, see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-- **Audit search tool in the Microsoft Purview compliance portal**. Use the Audit log search tool in the compliance portal to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range. Here's a screenshot of the Audit search tool in the compliance portal.
-
-   ![Audit log search tool in the compliance portal.](../media/AuditLogSearchToolMCC.png)
+- **Audit search tool in the Microsoft Purview compliance portal**. Use the Audit log search tool in the compliance portal to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range.
 
 - **Search-UnifiedAuditLog cmdlet**. You can also use the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell (the underlying cmdlet for the search tool) to search for audit events or to use in a script. For more information, see:
 
@@ -53,7 +52,7 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
 - **Audit log retention policies**. You can create customized audit log retention policies to retain audit records for longer periods of time up to one year (and up to 10 years for users with required add-on license). You can create a policy to retain audit records based the service where the audited activities occur, specific audited activities, or the user who performs an audited activity.
-- **Longer retention of audit records**. Exchange, SharePoint, and Azure Active Directory audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
+- **Longer retention of audit records**. Azure Active Directory, Exchange, OneDrive, and SharePoint audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
 - **High-value, crucial Audit (Premium) events**. Audit records for crucial events can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.
 - **Higher bandwidth to the Office 365 Management Activity API**. Audit (Premium) provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API. Although all organizations (that have Audit (Standard) or Audit (Premium)) are initially allocated a baseline of 2,000 requests per minute, this limit will dynamically increase depending on an organization's seat count and their licensing subscription. This results in organizations with Audit (Premium) getting about twice the bandwidth as organizations with Audit (Standard).
 
@@ -122,7 +121,7 @@ The first step is to set up Audit (Standard) and then start running audit log se
 
 1. Verify that your organization has a subscription that supports Audit (Standard) and if applicable, a subscription that supports Audit (Premium).
 
-2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the compliance portal or use the **Search-UnifiedAuditLog** cmdlet. Specifically, users must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online.
+2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the compliance portal or use the **Search-UnifiedAuditLog** cmdlet. Specifically, users must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online.
 
 3. Search the audit log. After completing step 1 and step 2, users in your organization can use the audit log search tool (or corresponding cmdlet) to search for audited activities.
 

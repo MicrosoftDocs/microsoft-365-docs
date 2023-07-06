@@ -7,7 +7,7 @@ author: SKjerland
 ms.reviewer: sinakassaw, nicholak
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
-ms.date: 04/22/2022
+ms.date: 06/13/2023
 ---
 
 # Remove a license from a shared mailbox

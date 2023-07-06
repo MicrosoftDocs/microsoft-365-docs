@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 05/15/2021
 ---
 
 # Troubleshoot issues and find answers to FAQs on Microsoft Defender for Endpoint on iOS
@@ -29,6 +30,11 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> **Control Filter not working as expected on Supervised devices**
+Control Filter is not working as expected from iOS 16.1 onwards. This has impacted the Web Protection capability for Supervised devices without local loopback VPN. The issue has been resolved with iOS 16.3. Support for Control Filter is re-enabled with the new version - 1.1.38010102.
+ 
 
 This topic provides troubleshooting information to help you address issues that may arise as you use Microsoft Defender for Endpoint on iOS.
 
@@ -91,7 +97,7 @@ In addition, a notification is shown on the iOS device. Tapping on the notificat
 After onboarding, it takes few hours for device to show up in the Device inventory in the Defender for Endpoint security console. Also, ensure that device is registered correctly with Azure Active Directory and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Azure AD.
 
 > [!NOTE]
-> Sometimes, the device name is not consistent with that in Microsoft Endpoint Manager (Intune) console. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad model>. You can also use Azure AD device ID to identify the device in the Defender for Endpoint console.
+> Sometimes, the device name is not consistent with that in Microsoft Intune admin center. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad model>. You can also use Azure AD device ID to identify the device in the Defender for Endpoint console.
 
 ## Data and Privacy
 

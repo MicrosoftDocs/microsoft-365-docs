@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure Microsoft Defender for Endpoint on Linux for static proxy discovery
@@ -25,6 +26,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +69,7 @@ Note that installation and uninstallation will not necessarily fail if a proxy i
 
 ## Post installation configuration
 
-After installation, configure Defender for Endpoint with static proxy using one of the following methods:
+After installation, configure Defender for Endpoint with static proxy using the following method:
 
 ```bash
 mdatp config proxy set --value http://address:port
@@ -78,9 +81,9 @@ mdatp config proxy set --value http://address:port
 The `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, run `sudo systemctl edit --full mdatp.service`.
 You can then propagate the variable to the service in one of two ways:
 
-- Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
+1) Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
 
-- Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
+2) Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date:
+ms.date: 06/01/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -53,7 +53,7 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 2. Sign in using your work or school account.
 
-3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+3. In the Microsoft Purview compliance portal \> left navigation \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
 4. Choose the DLP policy template that protects the types of sensitive information you want to protect \> **Next**.
 
@@ -61,23 +61,37 @@ When you create a DLP policy, you can enable **User notifications**. When user n
 
 5. Name the policy \> **Next**.
 
-6. To choose the locations that you want the DLP policy to protect, do one of the following:
+6. Assign admin units, as appropriate. \> **Next**.
 
-   - Choose **All locations in Office 365** \> **Next**.
+7. To choose the locations that you want the DLP policy to protect, do one of the following:
 
+   - Choose **All locations in Office 365** \> **Next**. </br></br>
+        OR <br><br>
    - Choose **Let me choose specific locations** \> **Next**.
 
    To include or exclude an entire location such as all Exchange email or all OneDrive accounts, switch the **Status** of that location on or off.
 
    To include only specific SharePoint sites or OneDrive accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts.
 
-7. Choose **Use advanced settings** \> **Next**.
+8. Define your policy settings \> **Next**.
+ 
+9. On the **Info to protect** screen, choose **Edit**.
+ 
+10. Choose the types of content to protect. \> **Save**.
+ 
+11. Choose **Next**.
 
-8. Choose **+ New rule**.
+12. On the **Protection actions** page, select the notification options you want to apply to the policy.
 
-9. In the rule editor, under **User notifications**, switch the status on.
+:::image type="content" alt-text="This screenshot displays the Protection actions User Notification setting." source="../media/protection-actions-use-notifications.png" lightbox="../media/protection-actions-use-notifications.png":::
 
-    ![User notifications section of rule editor.](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
+13. Choose **Next**.
+
+14. Customize the access and override settings for the policy. \> **Next**.
+ 
+15. Select whether you want to turn the policy on right away or test it out first. \> **Next**.
+ 
+16. Review your policy details, and edit as necessary \> **Submit**.
 
 > [!NOTE]
 > Notification emails are sent unprotected.
@@ -151,15 +165,15 @@ For example, you may have a DLP policy applied to OneDrive for Business sites th
 
 ### User Override support
 
-Here are some fine points to understand about using a policy tip to override a rule:
+The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
 
-- The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
+It's possible for content to match several rules in a DLP policy or several different DLP policies, but only the policy tip from the most restrictive, highest-priority rule will be shown (including policies in Test mode). For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
-- It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
 
-- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
-- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+To see overrides in policy tips in Outlook on the web, the policy must be set to the *Turn it on* state. The policy action must also be configured to block with override.
 
 #### Availability of Override
 
@@ -307,7 +321,7 @@ You can customize the text for policy tips separately from the email notificatio
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md)
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)

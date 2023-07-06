@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 03/02/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -48,7 +48,9 @@ For other workloads, see:
 
 Teams chats messages, channel messages, and private channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: [Video clips](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards).
 
-Newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata) are also supported.
+Call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata) are supported.
+
+The control message events for naming and for renaming a chat are supported. Control messages are system-generated messages that contain [information about actions taken in Teams](/graph/system-messages#supported-system-message-events).
 
 These chat messages and private channel messages include all the names of the people in the conversation, and channel messages include the team name and the message title (if supplied). 
 
@@ -64,7 +66,7 @@ You can use a retention policy to retain data from chats and channel messages in
 
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
-- **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
+- **UserMailbox**: These mailboxes store message data for Teams private channels and cloud-based Teams users.
 - **MailUser**: These mailboxes store message data for [on-premises Teams users](ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
 - **SubstrateGroup**: These mailboxes store message data for Teams shared channels.

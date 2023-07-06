@@ -6,8 +6,8 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
+ms.date: 04/03/2023
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ search.appverid:
 
 # Use the KQL editor to build search queries
 
-The new Keyword Query Language (KQL) query experience in Microsoft Purview eDiscovery tools search provides feedback and guidance when you build search queries in Content search, Microsoft Purview eDiscovery (Standard), and eDiscovery (Premium). When you enter queries in the editor, it provides autocompletion for supported searchable properties and conditions and provides lists of supported values for standard properties and conditions. For example, if you specify the `kind` email property in your query, the editor will present a list of supported values that you can select. The KQL editor also displays potential query errors in real time that you can fix before you run the search. Best of all, you can paste complex queries directly into the editor without having to manually build queries using the keywords and conditions cards in the standard condition builder.
+The Keyword Query Language (KQL) query option in Microsoft Purview eDiscovery tools search provides feedback and guidance when you build search queries in Content search, Microsoft Purview eDiscovery (Standard), and eDiscovery (Premium). When you enter queries in the editor, it provides autocompletion for supported searchable properties and conditions and provides lists of supported values for standard properties and conditions. For example, if you specify the `kind` email property in your query, the editor will present a list of supported values that you can select. The KQL editor also displays potential query errors in real time that you can fix before you run the search. Best of all, you can paste complex queries directly into the editor without having to manually build queries using the keywords and conditions cards in the standard condition builder.
   
 Here are the key benefits to using the KQL editor:
 
@@ -45,7 +45,7 @@ When you create or edit an eDiscovery search, the option to display and use the 
 
 ### KQL editor in eDiscovery (Premium)
 
-![KQL editor in eDiscovery (Premium)](../media/KQLEditorAdvanced.png)
+![KQL editor in eDiscovery (Premium)](../media/ediscovery-kql-premium.png)
 
 ## Using the KQL editor
 
@@ -75,7 +75,12 @@ The editor also suggests a list of users (in UPN format) when you type email rec
 
 ### Detection of potential errors
 
-The KQL editor detects potential errors in search queries, and provides a hint of what is causing the error to help you resolve the error. The editor also indicates a potential error when a property doesn't have a corresponding operation or value. Potential errors in the query are highlighted in red text, and explanations and possible fixes for the error are displayed in the **Potential errors** drop-down section. For example, if you pasted the following query into the KQL editor, four potential errors would be detected.
+The KQL editor detects potential errors in search queries, and provides a hint of what is causing the error to help you resolve the error. The editor also indicates a potential error when a property doesn't have a corresponding operation or value. Potential errors in the query are highlighted in red text, and explanations and possible fixes for the error are displayed in the **Potential errors** drop-down section.
+
+> [!IMPORTANT]
+> Nested quotation marks aren't supported in the KQL editor.
+
+For example, if you pasted the following query into the KQL editor, four potential errors would be detected.
 
 ![KQL editor error detection](../media/KQLEditorErrorDetection.png)
 

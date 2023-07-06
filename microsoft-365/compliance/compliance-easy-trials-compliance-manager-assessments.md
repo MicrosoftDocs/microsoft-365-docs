@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
+ms.date: 06/14/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -21,9 +22,9 @@ description: "Learn how to join the Microsoft Purview Compliance Manager premium
 
 # About the free trial for Microsoft Purview Compliance Manager premium assessments
 
-Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
+Compliance Manager helps you automatically assess and manage compliance across your multicloud environment. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
-Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
+Your licensing agreement to use Compliance Manager may include one or more built-in regulatory templates for building assessments. An extensive library of premium regulations is also available for building assessments specific to your organization’s needs. To try out these regulatory templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -33,9 +34,7 @@ See the [terms and conditions](/legal/microsoft-365/microsoft-365-trial) for Mic
 
 ## Set up a premium assessments trial
 
-You can sign up for a trial in the Microsoft Purview compliance portal using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start a trial for premium assessment templates.
-
-This premium assessment trial is available to organizations using Compliance Manager under a commercial license. For GCC and DOD information and trial options, see [Working with Compliance Manager templates](compliance-manager-templates.md).
+You can sign up for a trial in the Microsoft Purview compliance portal using the **Trials** link in the left navigation pane. Select the **Compliance Manager premium assessment trial** to start the trial. This premium assessment trial is available to organizations using Compliance Manager under a commercial license. For GCC and DOD information and trial options, see [Working with Compliance Manager templates](compliance-manager-templates.md).
 
 Full access to Compliance Manager features may depend on your licensing agreement for Compliance Manager. To learn more about the free compliance trial that includes Compliance Manager, see [About the free trial for Microsoft Purview](compliance-easy-trials.md).
 
@@ -44,11 +43,9 @@ Full access to Compliance Manager features may depend on your licensing agreemen
 
 ## Template licensing
 
-Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments from the 25 templates as you wish.
+Starting your one-time trial for premium assessments gives you the right to use 25 premium regulatory templates of your choice for free for 90 days. You can create as many assessments from the 25 templates as you wish.
 
-After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Licensed templates** counter to see how many templates are available and are in use. This counter will show your 25 licensed templates. As you create assessments using these templates, your activated number will update. Template use is counted based on the underlying certification, meaning that multiple assessments based on the same template, or different versions of the same template that support different products, will count as one template use.
-
-For more information about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
+After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Regulations** counter to see how many regulation templates are available and are in use. This counter shows your 25 licensed regulatory templates. As you create assessments for these regulations, your activated number updates. Multiple assessments based on the same regulation count as one regulatory template use. For more information, see [Learn about regulations in Compliance Manager](compliance-manager-templates.md).
 
 ## Required roles for starting the trial
 
@@ -62,11 +59,11 @@ Get more details about [roles for starting Microsoft 365 trials](compliance-easy
 
 ## During your trial
 
-Throughout your trial, you can review the **Trial summary** section of the **Overview** page in Compliance Manager to see how many assessments you’ve created, how many improvement actions you’ve taken, how that has contributed to your compliance score, and how much time remains in your trial. From here, you can also review the list of available templates and learn more about purchasing them for ongoing use.
+Throughout your trial, you can review the **Trial summary** section of the **Overview** page in Compliance Manager to see how many assessments you’ve created, how many improvement actions you’ve taken, how that has contributed to your compliance score, and how much time remains in your trial. From here, you can also review the list of available regulations and learn more about purchasing them for ongoing use.
 
 ## After the trial
 
-After your trial ends, the templates you used won't receive automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built from templates that you don’t intend to purchase.
+After your trial ends, the regulatory templates you used won't receive automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built from regulatory templates that you don’t intend to purchase.
 
 ## Learn more and explore other trials
 

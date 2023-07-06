@@ -2,10 +2,10 @@
 title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 f1.keywords:
     NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: v-katykoenen
+author: kmkoenen
 manager: laurawi
-ms.date:
+ms.date: 04/24/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,7 +19,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 ---
 # Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
 
-You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
+You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions. 
 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
@@ -30,43 +30,55 @@ You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Before you begin
+## Before you begin ##
 
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
-- Install the v95+ Edge browser on your macOS devices
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Microsoft Intune.
+- OPTIONAL: Install the v95+ Edge browser on your macOS devices to have native Endpoint DLP support on Edge.
+ 
+> [!NOTE]
+> The three most recent major releases of macOS are supported.
 
 ## Onboard devices into Microsoft Purview solutions using JAMF Pro
 
-Onboarding a macOS device into Compliance solutions is a multi phase process.
+Onboarding a macOS device into Compliance solutions is a multi-phase process.
 
-### Download the configuration files
+1. [Update the existing MDE Preference domain profile using the JAMF PRO console](#update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console)
+2. [Enable full-disk access](#enable-full-disk-access)
+3. [Enable accessibility access to Microsoft Purview data loss prevention](#enable-accessibility-access-to-microsoft-purview-data-loss-prevention)
+4. [Check the macOS device](#check-the-macos-device)
 
-1. You'll need these files for this procedure.
+### Prerequisites
 
-|file needed for |source |
+Download the following files:
+
+|File |Description |
 |---------|---------|
-|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|MDE preference |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
+[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)| Accessibility |
+|[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)| Full disk access (FDA) |
+|[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json) | MDE preference |
 
-> [!TIP]
-> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
->
->If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+If any of these individual files are updated, you must download the updated bundled file and redeploy as described.
+
+[!INCLUDE [devices-macos-onboarding-tip](../includes/devices-macos-onboarding-tip.md)]
+
+> [!NOTE]
+> To download the files:
+> 1. Right-click the link and select **Save link as...**. 
+> 2. Choose a folder and save the file.
 
 ### Update the existing MDE Preference domain profile using the JAMF PRO console
 
 1. Update the schema.xml profile with the **schema.json** file you just downloaded.
 
-1. Under **MDE Preference Domain Properties** choose these settings
-    - Features 
-        - Use System Extensions: `enabled` - required for network extensions on Catalina
+1. Under **MDE Preference Domain Properties** choose these settings:
+    - **Features**
         - Use Data Loss Prevention: `enabled`
+    - **Data Loss Prevention**
+        - **Features**
+            - Use DLP_browser_only_cloud_egress: `enabled` if you want to only monitor browser
+            - Use DLP_ax_only_cloud_egress: `enabled` if you want to only monitor URL on the browser address bar
 
 1. Choose the **Scope** tab.
 
@@ -74,26 +86,23 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. Choose **Save**. 
 
-### Update the configuration profile for Grant full disk access
+### Enable full-disk access 
 
-1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
+To update the existing full disk access profile with the `fulldisk.mobileconfig` file, upload `fulldisk.mobileconfig` to JAMF. For more information, refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+### Enable accessibility access to Microsoft Purview data loss prevention ###
+To grant accessibility access to DLP, upload the `accessibility.mobileconfig` file you downloaded previously to JAMF, as described in [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-### Grant accessibility access to DLP
+[!INCLUDE [device-macos-check-browser-vs-end-url](../includes/device-macos-check-browser-vs-end-url.md)]
 
-1. Use the accessibility.mobileconfig file you previously downloaded.
-
-1. Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
-
-### Check the macOS device 
+### Check the macOS device
 
 1. Restart the macOS device.
 
 1. Open **System Preferences** > **Profiles**.
 
-1. You should see:
-    - Accessiblity
+1. The following profiles are now listed:
+    - Accessibility
     - Full Disk Access
     - Kernel Extension Profile
     - MAU
@@ -107,12 +116,12 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 ## Offboard macOS devices using JAMF Pro
 
 > [!IMPORTANT]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal. However, data from the device, including references to any alerts it has had, will be retained for up to six months.
 
 To offboard a macOS device, follow these steps
 
  1. Under **MDE Preference Domain Properties** remove the values for these settings
-    - Features 
+    - **Features**
         - Use System Extensions
         - Use Data Loss Prevention
 
