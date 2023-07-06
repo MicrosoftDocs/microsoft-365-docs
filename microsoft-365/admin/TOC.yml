@@ -333,9 +333,10 @@
               href: activity-reports/yammer-device-usage-report-ww.md
             - name: Yammer groups activity
               href: activity-reports/yammer-groups-activity-report-ww.md
-         - name: Microsoft Adoption Score - overview
-           href: adoption/adoption-score.md
+         - name: Microsoft Adoption Score
            items:
+            - name: Microsoft Adoption Score - overview
+              href: adoption/adoption-score.md
             - name: Content collaboration
               href: adoption/content-collaboration.md
             - name: Communication 
