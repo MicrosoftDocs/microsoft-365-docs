@@ -81,7 +81,7 @@ The Alert rules tab also includes the following options:
 
 ## Related content
 
-[Create and manage alert rules](m365-lighthouse-alerts-overview.md) (article)\
+[Create and manage alert rules](m365-lighthouse-create-manage-alert-rules.md) (article)\
 [Overview of the Threat management page in Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (article)\
 [Mitigate threats in Microsoft 365 Lighthouse with Microsoft Defender Antivirus](m365-lighthouse-mitigate-threats.md) (article)\
 [Overview of the Device security page in Microsoft 365 Lighthouse](m365-lighthouse-device-security-overview.md) (article)\
