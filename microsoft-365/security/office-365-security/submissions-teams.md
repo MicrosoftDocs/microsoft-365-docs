@@ -25,8 +25,6 @@ appliesto:
 
 # User reported message settings in Microsoft Teams
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
@@ -42,7 +40,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, it also needs to be turned on the Defender portal for user reported messages to show up correctly.
+- **In the Microsoft 365 Defender portal**: On by default. If user reporting of messages is turned on in the Teams admin center, it also needs to be turned on the Defender portal for user reported messages to show up correctly on the **User reported** tab on the **Submissions** page in the Defender portal.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
@@ -110,17 +108,17 @@ For more information about user reported message settings in the Defender portal
 
 What happens to a user reported Teams message depends on the settings in the **Reported message destinations** section on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
 
-- **Send reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations created after March 1 2023, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The value for older Microsoft 365 organizations is unchanged.
-- **Send reported messages to** \> **Microsoft only**
-- **Send reported messages to** \> **My reporting mailbox only**
+- **Send the reported messages to** \> **Microsoft and my reporting mailbox**: For Microsoft 365 organizations created after March 1 2023, this is the default value. The default user reporting mailbox is the Exchange Online mailbox of the global admin. The value for older Microsoft 365 organizations is unchanged.
+- **Send the reported messages to** \> **Microsoft only**
+- **Send the reported messages to** \> **My reporting mailbox only**
 
 For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 **Notes**:
 
-- If you select **Send reported messages to** \> **My reporting mailbox only**, reported messages don't go to Microsoft for analysis unless an admin manually submits the message from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. Reporting messages to Microsoft is an important part of training the service to help improve the accuracy of filtering (reduce false positives and false negatives). That's why we use **Send reported messages to** \> **Microsoft and my reporting mailbox** as the default.
-- Regardless of the **Send reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
-- Regardless of the **Send reported messages to** setting, the alert policy named **Teams message reported by user as a security risk** generates an alert when a user reports a message in Teams by default. For more information, see [Manage alerts](/microsoft-365/compliance/alert-policies#manage-alerts).
+- If you select **Send the reported messages to** \> **My reporting mailbox only**, reported messages don't go to Microsoft for analysis unless an admin manually submits the message from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. Reporting messages to Microsoft is an important part of training the service to help improve the accuracy of filtering (reduce false positives and false negatives). That's why we use **Send the reported messages to** \> **Microsoft and my reporting mailbox** as the default.
+- Regardless of the **Send the reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
+- Regardless of the **Send the reported messages to** setting, the alert policy named **Teams message reported by user as a security risk** generates an alert when a user reports a message in Teams by default. For more information, see [Manage alerts](/microsoft-365/compliance/alert-policies#manage-alerts).
 
   To view the corresponding alert for a user reported message in Teams, go to the **User reported** tab on the **Submission** page, and then double-click the message to open the submission flyout. Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View alert**.
 
@@ -143,11 +141,11 @@ The availability of Teams messages on the **User reported** tab on the **Submiss
   - **Phish simulation** isn't available.
 
 - The **Result** column contains the following information for reported Teams messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
-  - **Send reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains values derived from the following analysis:
+  - **Send the reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains values derived from the following analysis:
     - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
     - **Payload reputation/detonation**: Up-to-date examination of any URLs and files in the message.
     - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
-  - **Send reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages weren't analyzed by Microsoft.
+  - **Send the reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages weren't analyzed by Microsoft.
 
 - Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
 

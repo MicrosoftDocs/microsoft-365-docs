@@ -17,7 +17,7 @@ ms.custom:
 description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or both. Other settings complete the reporting experience for users when they report good messages, spam, or phishing messages from Outlook."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 7/6/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -40,6 +40,8 @@ Delivering user reported messages to a reporting mailbox instead of directly to 
 
 > [!NOTE]
 > The _ReportJunkEmailEnabled_ parameter on the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet no longer controls whether user message reporting is enabled or disabled. User reporting of messages is now controlled on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission> as described in this article.
+>
+> For information about user reported message settings in Microsoft Teams, see [User reported message settings in Microsoft Teams](submissions-teams.md).
 
 ## Configuration requirements for the reporting mailbox
 
