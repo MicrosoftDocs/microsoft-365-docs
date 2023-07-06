@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 04/26/2023
+ms.date: 06/28/2023
 ms.reviewer: efratka
 ms.collection: 
 - SMB
@@ -96,9 +96,10 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |[Automated investigation and response](../defender-endpoint/automated-investigations.md) <br/>(*see note 4 below*) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: ||:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention | | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Threat analytics](../defender-endpoint/threat-analytics.md) <br/>(*see note 5 below*) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>Windows, Mac, iOS, and Android OS (*For Windows Server and Linux, see note 6 below*) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>Windows, Mac, iOS, Android <br/>(*For Windows Server and Linux, see note 6 below*) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)| | |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
-|Partner APIs|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[Partner APIs and integration](../defender-endpoint/partner-integration.md)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
+|[SIEM integration](../defender/configure-siem-defender.md)<br/>(*see note 7 below*)|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 
 > [!NOTE]
@@ -113,6 +114,8 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > 5. In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 > 
 > 6. To onboard servers, another license is required. See [Onboard devices to Defender for Business](mdb-onboard-devices.md) or [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+>
+> 7. Using the [Microsoft 365 Streaming API](../defender/streaming-api.md) with Defender for Business, you can view information about device events in your SIEM server. For more information, see [Supported Microsoft 365 Defender streaming event types in event streaming API](../defender/supported-event-types.md). 
 
 
 ## Next steps
