@@ -88,7 +88,7 @@ All our updates contain
 
 ### June-2023 (Platform: 4.18.23060.1011 | Engine: 1.1.23060.1005)
 
-- Security intelligence update version: **1.391.860.0**
+- Security intelligence update version: **x.x.x.x**
 - Release date:  **July 10, 2023 (Engine) / July 18, 2023 (Platform)**
 - Platform: **4.18.23060.1011**
 - Engine: **1.1.23060.1005**
@@ -102,10 +102,11 @@ All our updates contain
 - Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
 - Fixed warn notifications for [ASR rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
 - Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a non-elevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
-
-
-
-  
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) (showing as exposed in the Microsoft 365 Defender portal)
+- Fixed [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) management for customers who have Microsoft 365 E3 or Defender for Endpoint Plan 1
+- Fixed performance issue when building and validating Defender cache
+- Improved performance by removing redundant exclusion checks
+ 
 ### Known Issues  
 
 - None
