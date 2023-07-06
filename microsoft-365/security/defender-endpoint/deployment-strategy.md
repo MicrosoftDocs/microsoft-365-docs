@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 You’ve already completed steps to set up your Microsoft Defender for Endpoint deployment and assigned roles and permissions for Defender for Endpoint. Next, plan for onboarding your devices by identifying your architecture and choosing your deployment method.
 
-We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Deciding how to onboard, remediate and manage endpoints to the Defender for Endpoint service comes down to two important steps:
+We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service. Deciding how to onboard endpoints to the Defender for Endpoint service comes down to two important steps:
 
 :::image type="content" source="../../media/defender-endpoint/onboarding-architecture-2.png" alt-text="The deployment flow" lightbox="../../media/defender-endpoint/onboarding-architecture-2.png":::
 
@@ -63,4 +63,4 @@ Once you have determined the architecture of your environment and have created a
 
 ## Next step
 
-After choosing your Defender for Endpoint architecture and deployment method continue to [Step 4 - Onboard devices](onboarding.md).
+After choosing your Defender for Endpoint architecture and deployment method continue to [Step 4 - Onboard devices](onboarding.md)

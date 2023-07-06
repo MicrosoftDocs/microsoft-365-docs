@@ -77,4 +77,4 @@ The following example table serves to identify the Cyber Defense Operations Cent
 
 ## Next step
 
-After assigning roles and permissions to view and manage Defender for Endpoint it's time for [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md).
+After assigning roles and permissions to view and manage Defender for Endpoint it's time for [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md)
