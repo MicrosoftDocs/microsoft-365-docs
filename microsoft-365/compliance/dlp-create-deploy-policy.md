@@ -143,10 +143,10 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Give the policy a name. 
 
-> [!IMPORTANT]
-> Policies cannot be renamed.
+   > [!IMPORTANT]
+   > Policies cannot be renamed.
 
-5. Fill in a description. You can use the policy intent statement here.
+1. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
 
@@ -334,10 +334,10 @@ and a recipient-based condition
 
 1. Select **Recipient domain is** > **contoso.com**. Choose **Add**.
 
-> [!TIP]
-> **Recipient is** and **Recipient is a member of** can also be used in the previous step and will trigger an oversharing popup.
+   > [!TIP]
+   > **Recipient is** and **Recipient is a member of** can also be used in the previous step and will trigger an oversharing popup.
  
-17. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
+1. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
  
 1. Set **User notifications** to **On**.
  
@@ -430,14 +430,14 @@ Actions are what a policy does in response to user activities on sensitive items
 
 - **Allow**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and there aren't any user notifications or alerts.
 
-> [!NOTE]
-> The **Allow** action is only available for policies that are scoped to the **Devices** location.
+  > [!NOTE]
+  > The **Allow** action is only available for policies that are scoped to the **Devices** location.
 
 - **Audit only**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and you can add notifications and alerts to raise awareness and train your users to know that what they're doing is a risky behavior. If your organization intends to enforce more restrictive actions later on, you can tell your users that too.
 - **Block with override**: The user activity is blocked by default. You can audit the event, raise alerts and notifications. This impacts the business process, but your users are given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
 
-> [!NOTE]
-> For Exchange online and SharePoint Online, overrides are configured in the user notification section.
+  > [!NOTE]
+  > For Exchange online and SharePoint Online, overrides are configured in the user notification section.
 
 - **Block**: The user activity is blocked no matter what. You can audit the event, raise alerts and notifications.
 
