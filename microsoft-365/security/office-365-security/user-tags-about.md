@@ -67,7 +67,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
-2. On the **User tags** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create tag** to start the new tag wizard.
+2. On the **User tags** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to start the new tag wizard.
 
 3. On the **Define tag** page, configure the following settings:
    - **Name**: Enter a unique, descriptive name for the tag. You can't rename a tag after you create it.
@@ -109,7 +109,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
-On the **User tags** page, the following properties are displayed in the list of user tags:
+On the **User tags** page, you can sort the entries by clicking on an available column header. The following columns are available:
 
    - **Tag**: The name of the user tag.
    - **Applied to**: The number of members
