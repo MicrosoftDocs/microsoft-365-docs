@@ -61,6 +61,9 @@ Once you have determined the architecture of your environment and have created a
 |**Android**|[Microsoft Intune](android-intune.md)|
 |**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
 
+>[!Note]
+> For devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager, you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Intune.
+
 ## Next step
 
 After choosing your Defender for Endpoint architecture and deployment method continue to [Step 4 - Onboard devices](onboarding.md)
