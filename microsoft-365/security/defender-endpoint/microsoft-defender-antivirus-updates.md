@@ -97,8 +97,7 @@ All our updates contain
 ### What's new  
 
 - Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps) if scan results fail to retrieve
-- Extended management options for configuring security intelligence updates with Intune, Group Policy, and/or PowerShell
-see 
+- Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and/or [PowerShell](/powershell/module/defender/set-mppreference).
   
 ### Known Issues  
 
