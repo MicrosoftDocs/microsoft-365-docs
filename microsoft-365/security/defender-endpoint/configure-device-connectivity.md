@@ -4,7 +4,7 @@ description: Learn how to use a simplified domain or static IP ranges during onb
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
-ms.date: 6/28/2023
+ms.date: 7/6/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -87,19 +87,19 @@ The following table lists the services that are **not** included in consolidatio
 
 |     Category                             |     Endpoint/URL   (not included)                                                                                                               |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     CRL *                                |  <br><br>crl.microsoft.com <br>ctldl.windowsupdate.com <br>www.microsoft.com/pkiops/* <br>www.microsoft.com/pki/* <br>                                                    |
-|     EDR Cyberdata **                    |    <br><br>events.data.microsoft.com <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com <br>uk-v20.events.data.microsoft.com     |
+|     CRL <sup>1</sup>                                |  <br><br>crl.microsoft.com <br>ctldl.windowsupdate.com <br>www.microsoft.com/pkiops/* <br>www.microsoft.com/pki/* <br>                                                    |
+|     EDR Cyberdata <sup>2</sup>                    |    <br><br>events.data.microsoft.com <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com <br>uk-v20.events.data.microsoft.com     |
 |     MU / WU                              |     <br><br>go.microsoft.com <br>definitionupdates.microsoft.com <br>https://www.microsoft.com/security/encyclopedia/adlpackages.aspx                   |
 |     SmartScreen/ Network   Protection    |     <br><br>*.smartscreen-prod.microsoft.com <br>*.smartscreen.microsoft.com                                                                            |
 |     Windows Notification   Service ***    |    <br><br>*.wns.windows.com  <br>login.microsoftonline.com  <br>login.live.com <br>                                                            |
 
 **Footnotes**
 
-   <sup>1</sup> In fully disconnected environments with no access to CRL, PreferStaticProxyForHttpRequest is a workaround for use in tandem with TelemetryProxyServer,  although should have common practice to update CTL. Clients should always have access to CRL (web browsing). 
+ <sup>1</sup> In fully disconnected environments with no access to CRL, PreferStaticProxyForHttpRequest is a workaround for use in tandem with TelemetryProxyServer,  although should have common practice to update CTL. Clients should always have access to CRL (web browsing). 
 
-** EDR Cyberdata is in scope for future consolidation work. This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information,  see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.  
+<sup>2</sup> EDR Cyberdata is in scope for future consolidation work. This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information,  see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.  
 
-*** WNS is an optional service used for decreasing initial connection time of Live Response. Still get full functionality of Live Response without this URL. * 
+<sup>3</sup> WNS is an optional service used for decreasing initial connection time of Live Response. Still get full functionality of Live Response without this URL. * 
 
 For more information on the full list, see [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
 
@@ -218,8 +218,8 @@ To leverage the new simplified onboarding method, you will need to onboard devic
 3. Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
 
 
-  >[!NOTE]
-  >If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
+    >[!NOTE]
+    >If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
 
 
 4. Select the relevant OS from the operating system dropdown. 
@@ -246,7 +246,7 @@ Migration recommendation:
 
 - **Validate and monitor** - After onboarding the small set of devices, validating that devices have successfully onboarded and are communicating with the service. 
 
-- **Full migration**- At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
+- **Complete migration** - At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
 
 |Endpoint|Supported deployment tool|
 |---|---|
@@ -266,7 +266,7 @@ Migration recommendation:
 Follow any of the onboarding steps and tools from the previous section, but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method).
 
 ### Devices previously onboarded
-For devices migrating to the new URL set, after completing [Step 1](), select your preferred onboarding method of choice below.
+For devices migrating to the new URL set, after completing [Step 1](configure-environment.md), select your preferred onboarding method of choice below.
 
 ### Local script
 
@@ -274,47 +274,38 @@ Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script
 
 ### Group policy
 
+Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+
+
+### Microsoft Intune / MDM
+
+
+### Microsoft Configuration Manager
+
+ [Microsoft Configuration Manager](configure-endpoints-sccm.md)
+
+
+### VDI scripts
 
 
 
 
+### [**Windows Server**](#tab/Windowsserver)
+
+### Windows Server
+
+>[!IMPORTANT]
+> Supported OS: Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022. 
+
+### New device onboarding
+Follow any of the onboarding steps and tools from the previous section, but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method).
+
+### Devices previously onboarded
+For devices migrating to the new URL set, after completing [Step 1](configure-environment.md), select your preferred onboarding method of choice below.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## [**Windows Server**](#tab/Windowsserver)
-
-## Windows Server
 
 
 Choose one of the following options to onboard Windows client devices to Defender for Business:
@@ -372,9 +363,9 @@ Choose one of the following options to onboard Mac:
 
 ### Intune for Mac
 
-## [**Linux**](#tab/linux)
+### [**Linux**](#tab/linux)
 
-## Linux
+### Linux
 
 ---
 
