@@ -40,7 +40,7 @@ In the previous step you decided on which deployment method to use. The deployme
 
 To start onboarding your devices:
 
-1. Go to [Select deployment method](../defender-endpoint/deployment-strategy.md#step-2-select-deployment-method)
+1. Go to [Select deployment method](../defender-endpoint/deployment-strategy.md#step-2-select-deployment-method).
 2. Choose the Operating System for the devices you wish to Onboard.
 3. Select the tool you plan to use.
 4. Follow the instructions to Onboard your devices.
