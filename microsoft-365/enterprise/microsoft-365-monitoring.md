@@ -22,7 +22,7 @@ description: "Use Microsoft 365 monitoring for information about incidents or ad
 
 # Learn about Microsoft 365 monitoring
 
-You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability began with Exchange Online and is now being expanded to other Microsoft services like Microsoft Teams, Microsoft 365 Apps, and more services in the future.
+You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability began with Exchange Online and has been expanded to other Microsoft services such as Microsoft Teams and Microsoft 365 Apps, with more services being added in the future.
 
 Microsoft 365 Monitoring increases observability and minimizes downtime through providing near real-time user telemetry data with enriched alerts in the Microsoft 365 admin center's Service Health dashboard.
 
@@ -36,13 +36,11 @@ Monitoring provides you with information about incidents and advisories that are
 
 Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
-![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+![The Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)
 
-**Issues in your organization** will be identified and used by organizational-level monitoring and priority account monitoring.
+If Microsoft 365 monitoring discovers issues that need your attention, these will be show under the **Issues in your environment that require action** in the Active Issues section of the page.
 
-The value of the **Health** column under **Issues in your organization** indicates whether your organization's infrastructure or third-party software affects the service health experience of your organization's users and/or priority accounts in Exchange Online. Advisories or incidents require your actions to resolve.
-
-The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
+To access detailed monitoring pages for specific services, select **View** under **Organizational-level monitoring** on the service health page.
 
 Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
 
