@@ -73,8 +73,7 @@ The following example table serves to identify the Cyber Defense Operations Cent
 |Tier 1|**Local security operations team / IT team** <p> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.||
 |Tier 2|**Regional security operations team** <p> This team can see all the devices for their region and perform remediation actions.|View data|
 |Tier 3|**Global security operations team** <p> This team consists of security experts and is authorized to see and perform all actions from the portal.|View data <p> Alerts investigation Active remediation actions <p> Alerts investigation Active remediation actions <p> Manage portal system settings <p> Manage security settings|
-||||
 
 ## Next step
 
-After assigning roles and permissions to view and manage Defender for Endpoint it's time for [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md)
+After assigning roles and permissions to view and manage Defender for Endpoint it's time for [Step 3 - Identify your architecture and choose your deployment method](deployment-strategy.md).
