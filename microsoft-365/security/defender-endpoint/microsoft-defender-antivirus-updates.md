@@ -96,7 +96,7 @@ All our updates contain
    
 ### What's new  
 
-- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps) if scan results fail to retrieve
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
 - Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and [PowerShell](/powershell/module/defender/set-mppreference).
 - Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions, if present
 - Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
