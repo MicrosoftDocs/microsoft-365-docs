@@ -45,7 +45,7 @@ While data placement might differ from the classic Defender for Identity portal,
 The following sections describe enhanced Defender for Identity features found in Microsoft 365 Defender.
 
 > [!NOTE]
-> Customers using the classic Defender for Identity portal are now automatically redirected to Microsoft 365 Defender, with no option to revert back to the classic portal.
+> Customers using the classic Defender for Identity portal are now [automatically redirected to Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/leveraging-the-convergence-of-microsoft-defender-for-identity-in/ba-p/3856321), with no option to revert back to the classic portal.
 
 
 ### Configuration and posture
