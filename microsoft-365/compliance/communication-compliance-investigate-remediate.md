@@ -92,7 +92,7 @@ The following table outlines filter details:
 
 5. Select the **Filters** button to open the **Filters** details page.
 
-6. Select one or more checkboxes to enable filters=. You can choose from numerous filters, including *Date*, *Sender*, *Subject/Title*, *Classifiers*, *Language*, and more.
+6. Select one or more checkboxes to enable filters. You can choose from numerous filters, including *Date*, *Sender*, *Subject/Title*, *Classifiers*, *Language*, and more.
 
 7. If you'd like to save the filter selected as the default filter, select **Save as default**. If you want to use this filter as a saved filter, select **Done**.
 
