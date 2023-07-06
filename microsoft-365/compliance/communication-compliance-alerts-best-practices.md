@@ -73,7 +73,7 @@ Messages in alerts include [sentiment evaluation](communication-compliance-inves
 
 ## Report messages as misclassified
 
-[Reporting false positives as misclassified](communication-compliance-investigate-remediate.md#remediate-alerts) will help to improve Microsoft’s models and reduce the number of false positives that you see in the future.  
+[Reporting false positives as misclassified](communication-compliance-investigate-remediate.md#review-and-mediate-policy-matches-and-alerts) will help to improve Microsoft’s models and reduce the number of false positives that you see in the future.  
 
 ## Filter out specific senders by using a condition
 
