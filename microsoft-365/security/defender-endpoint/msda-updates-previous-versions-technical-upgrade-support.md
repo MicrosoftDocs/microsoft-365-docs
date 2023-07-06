@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 05/30/2023
+ms.date: 07/06/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -25,6 +25,27 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
+
+- Security intelligence update version: **1.387.695.0**
+- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
+- Platform: **4.18.2303.8** 
+- Engine: **1.1.20200.4**
+- Support phase: **Security and Critical Updates**
+
+### What's new
+
+- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
+- Increased file hash support 
+- Added support to protect registry keys against parent keys abuse 
+- Improved tamper protection of registry keys against parent keys abuse  
+- Improved log handling for DLP and Device Control 
+- Improved performance on developer drives 
+
+### Known issues
+
+- None
 
 ## February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
 
