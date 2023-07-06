@@ -96,7 +96,9 @@ All our updates contain
    
 ### What's new  
 
-- Fixed issue that could lead to resolution of incorrect service endpoint
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps) if scan results fail to retrieve
+- Extended management options for configuring security intelligence updates with Intune, Group Policy, and/or PowerShell
+see 
   
 ### Known Issues  
 
