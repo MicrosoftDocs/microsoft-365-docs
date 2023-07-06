@@ -91,7 +91,7 @@ The following table lists the services that are **not** included in consolidatio
 |     EDR Cyberdata <sup>2</sup>                    |    <br><br>events.data.microsoft.com <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com <br>uk-v20.events.data.microsoft.com     |
 |     MU / WU                              |     <br><br>go.microsoft.com <br>definitionupdates.microsoft.com <br>https://www.microsoft.com/security/encyclopedia/adlpackages.aspx                   |
 |     SmartScreen/ Network   Protection    |     <br><br>*.smartscreen-prod.microsoft.com <br>*.smartscreen.microsoft.com                                                                            |
-|     Windows Notification   Service ***    |    <br><br>*.wns.windows.com  <br>login.microsoftonline.com  <br>login.live.com <br>                                                            |
+|     Windows Notification   Service <sup>3</sup>    |    <br><br>*.wns.windows.com  <br>login.microsoftonline.com  <br>login.live.com <br>                                                            |
 
 **Footnotes**
 
@@ -179,7 +179,7 @@ As with URL method, please ensure you maintain connectivity with other required 
 
 ## Stage 2. Onboard devices using the simplified method
 
->[!NOTE:]
+>[!NOTE]
 >For tenants created before *this date*, this will show as the default method. Once you have configured your network environment to communicate with the full list of required URLs you can begin onboarding or migrating devices.  
 
 Confirm devices meet [prerequisites](#operating-systems-prerequisites) and have fully updated Microsoft Defender Antivirus versions.
@@ -278,14 +278,15 @@ Use the guidance in [Group policy](configure-endpoints-gp.md). After completing 
 
 
 ### Microsoft Intune / MDM
+GET MORE DETAILS FROM MATT CALL
 
+### Microsoft Configuration Manager 
 
-### Microsoft Configuration Manager
+GET MORE DETAILS FROM MATT CALL
 
- [Microsoft Configuration Manager](configure-endpoints-sccm.md)
+### VDI
 
-
-### VDI scripts
+FOLLOW UP WITH ERAN
 
 
 
@@ -304,116 +305,70 @@ Follow any of the onboarding steps and tools from the previous section, but use 
 For devices migrating to the new URL set, after completing [Step 1](configure-environment.md), select your preferred onboarding method of choice below.
 
 
+### Integration with Microsoft Defender for Cloud
+
+Not supported at this time.
+
+### Group policy 
+Use the guidance in [Group policy](configure-endpoints-gp.md) but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+
+### Microsoft Configuration Manager 
+
+GET MORE DETAILS FROM MATT CALL
+
+### VDI
+
+FOLLOW UP WITH ERAN
 
 
+### [**macOS**](#tab/macos)
 
+### macOS
 
-Choose one of the following options to onboard Windows client devices to Defender for Business:
-
-- [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
-- [Group Policy](#group-policy-for-windows-10-and-11) (if you're already using Group Policy in your organization)
-- [Microsoft Intune](#intune-for-windows-10-and-11) (if you're already using Intune)
-
-### Local script for Windows 10 and 11
-
-1.  In Microsoft 365 Defender, navigate to select **Settings \> Endpoints \> Device management \> Onboarding**. 
-
-2.  Select the applicable OS as the operating system. 
-
-3.  Select appropriate deployment method. 
-
-4.  Select **Download onboarding package**.  
-
-5.  On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named WindowsDefenderATPLocalOnboardingScript.cmd. 
-
-6.  Open a command prompt as an administrator. 
-
-7.  Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type %userprofile%\\Desktop\\WindowsDefenderATPLocalOnboardingScript.cmd, and then press the Enter key (or select **OK**). 
-
-8.  After the script runs, [Run a detection test](/microsoft-365/security/defender-endpoint/run-detection-test). 
-
-9.  If the device has been previously onboarded to Defender for Endpoint, restart the device.
-
-    >[!IMPORTANT]
-    >Restart the test device if it was previously onboarded to Defender for Endpoint. You may see the `OnboardedInfo` registry key switch but **you must still restart the device** for sensor communication to switch. <br><br>
-    > For pre-onboarded devices, this step is mandatory for completing re-onboarding to the simplified domain. 
-
-
-
-
-### Local script for Windows 10 and 11
-
-### Intune for Windows 10 and 11
-
-
-
-
-
-
-## [**macOS**](#tab/macos)
-
-## macOS
-
-Choose one of the following options to onboard Mac:
-
-- [Local script for Mac](#local-script-for-mac) (*recommended*)
-- [Intune for Mac](#intune-for-mac) (if you're already using Intune)
-
-### Local script for Mac
-
-### Intune for Mac
-
-### [**Linux**](#tab/linux)
+MARYSIA TO UPDATE  LATER
 
 ### Linux
 
+MARYSIA TO UPDATE  LATER
+
+
 ---
-
-
-
-
-For more information on migrating a device that was previously onboarded to the simplified domain, see [Migrating a device to the simplified domain](#migrating-devices-using-the-strealined-method).
 
 
 ## Verifying device connectivity for migrated devices
 
 
-You can use the following methods to check that you have successfully connected devices:
+You can use the following methods to check that you have successfully connected Windows devices:
 
-- Client analyzer
-- Registry editor??
-
-### Use Defender for Endpoint Client Analyzer to validate connectivity post-onboarding for new endpoints
-
-#### Validate connectivity before onboarding endpoints
-
-
-1. Download ‘simplified’ onboarding package for relevant OS from ** Settings > Endpoints > Device management> Onboarding ** in Microsoft 365 Defender portal.
-
-a. Extract the .cmd from onboarding package.
-
-2. Open Command Prompt as administrator.
-
-3. There are two options:
-
-  a. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within MDEClientAnalyzer folder. The command will use parameters from onboarding script to test connectivity.
-
-  b. Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>`, where parameter - MISSING BITS!!
-
-4. View connectivity results within HTML output file or command prompt.
+1. Client analyzer
+2. Tracking through the Microsoft 365 Defender portal
+3. Track locally using Event Viewer (for Windows)
+4. Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
+5. Checking the registry editor
+6. PowerShell detection test
 
 
-
-#### Validate connectivity after onboarding endpoints
-
-1.  Open a command prompt as an administrator.
-
-2.  From within folder, run MDEClientAnalyzer.cmd. The script will use what is configured on device to test connectivity.  
-
-3.  View connectivity results within HTML output file or command prompt.
+For macOS and Linux, you can use the following methods:
+1. MDATP tests
+2. Tracking through the Microsoft 365 Defender portal
+3. Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
 
 
-For more information, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
+### Use Defender for Endpoint Client Analyzer (BETA) to validate connectivity post-onboarding for new endpoints
+
+#### Run the Defender for Endpoint Client analyzer (Beta) version to confirm your device is connecting to the appropriate URLs (updated) 
+
+1. Download and extract Client analyzer from https://aka.ms/BetaMDEAnalyzer.
+
+2. Use the Defender for Endpoint Client Analyzer (Beta) to validate connectivity post-onboarding for new endpoints.
+
+3. Open a command prompt as administrator.
+
+4. From within folder, run MDEClientAnalyzer.cmd. The script will use what is configured on device to test connectivity.  
+
+5. View connectivity results within HTML output file or command prompt 
+
+
 
 
 ### Registry editor
