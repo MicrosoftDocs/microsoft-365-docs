@@ -1,13 +1,10 @@
 ---
 title: Security Operations Guide for Defender for Endpoint
-ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov
 manager: dansimp
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Endpoint.
 keywords: malware, defender, antivirus, tamper protection
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 02/07/2023
 audience: ITPro
