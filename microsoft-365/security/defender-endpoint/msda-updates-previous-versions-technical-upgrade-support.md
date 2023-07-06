@@ -32,7 +32,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
 - Platform: **4.18.2303.8** 
 - Engine: **1.1.20200.4**
-- Support phase: **Security and Critical Updates**
+- Support phase: **Technical upgrade support (only)**
 
 ### What's new
 

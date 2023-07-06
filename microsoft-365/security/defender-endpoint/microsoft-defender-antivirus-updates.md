@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 06/12/2023
+ms.date: 07/06/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -86,6 +86,22 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### June-2023 (Platform: 4.18.23060.1011 | Engine: 1.1.23060.1005)
+
+- Security intelligence update version: **1.391.860.0**
+- Release date:  **July 10, 2023 (Engine) / July 18, 2023 (Platform)**
+- Platform: **4.18.23060.1011**
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+   
+### What's new  
+
+- Fixed issue that could lead to resolution of incorrect service endpoint
+  
+### Known Issues  
+
+- None
+
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
 *Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release.*
@@ -159,27 +175,6 @@ All our updates contain
 - Fixed abandoned threats in the Windows Security app
 - Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
 
-
-#### Known issues
-
-- None
-
-### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
-
-- Security intelligence update version: **1.387.695.0**
-- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
-- Platform: **4.18.2303.8** 
-- Engine: **1.1.20200.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
-- Increased file hash support 
-- Added support to protect registry keys against parent keys abuse 
-- Improved tamper protection of registry keys against parent keys abuse  
-- Improved log handling for DLP and Device Control 
-- Improved performance on developer drives 
 
 #### Known issues
 
