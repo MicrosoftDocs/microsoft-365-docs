@@ -497,7 +497,7 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - User's risk level for Adaptive Protection is
 - Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- Document or attachment is password protected (PDF, Office files, .ZIP, .7z, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files.
+- Document or attachment is password protected (Office files, .ZIP, .7z, and Symantec PGP encrypted files are fully supported). This condition detects only open protected files. 
 - File type is
 - File extension is
 - The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
