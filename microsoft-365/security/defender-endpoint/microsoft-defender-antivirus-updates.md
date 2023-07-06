@@ -101,6 +101,7 @@ All our updates contain
 - Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions if present
 - Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
 - Fixed warn notifications for [ASR rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
+- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a non-elevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
 
 
 
