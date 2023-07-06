@@ -135,6 +135,7 @@ If you prepaid for your subscription with a product key, you can add more licens
 
 - Licenses added in the middle of your billing period appear on your next invoice. If you pay annually, you are invoiced within a month for these changes.
 - On your next billing statement, the previous charge for the original number of licenses is deducted. We add a prorated charge for the time period with the original number of licenses and add a charge for the new license count. There's also a charge for the current license count for the remainder of your billing period.
+- When you remove licenses, we add a prorated charge for the time period the license was used. This will show up on your next billing statement.
 
 ## Next steps
 
