@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/17/2023
+ms.date: 07/06/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -90,7 +90,7 @@ When configured for an insider risk management policy, a dedicated policy named 
 
 Users that send 5 or more messages classified as potentially risky within 24 hours are automatically brought in-scope for insider risk management policies that include this option. Once in-scope, the insider risk management policy detects potentially risky activities configured in the policy and generates alerts as applicable. It may take up to 48 hours from the time risky messages are sent until the time a user is brought in-scope in an insider risk management policy. If an alert is generated for a potentially risky activity detected by the insider risk management policy, the triggering event for the alert is identified as being sourced from the communication compliance risky activity.
 
-All users assigned to the [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) role group are automatically assigned as reviewers in the dedicated communication compliance policy. If inside risk management investigators need to review the associated risky user alert directly on the communication compliance alerts page (linked from the insider risk management alert details), they must be manually added to the *Communication Compliance Investigators* role group.
+All users assigned to the [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) role group are automatically assigned as reviewers in the dedicated communication compliance policy. If insider risk management investigators need to review the associated risky user alert directly on the communication compliance alerts page (linked from the insider risk management alert details), they must be manually added to the *Communication Compliance Investigators* role group.
 
 Before integrating communication compliance with insider risk management, you should also consider the following guidance when detecting messages containing potentially inappropriate text:
 
@@ -276,7 +276,7 @@ Images from 50 KB to 4 MB in the following image formats are scanned and process
 > [!NOTE]
 > Scanning and extraction for embedded and attached .pdf images is currently supported only for email messages.
 
-When reviewing pending alerts for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
+When reviewing pending policy matches for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
 
 ### Conditional settings
 
