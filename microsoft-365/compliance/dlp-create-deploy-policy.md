@@ -307,10 +307,10 @@ and a recipient-based condition
  
 1. Give the policy a name. 
 
-> [!IMPORTANT]
-> Policies cannot be renamed.
+   > [!IMPORTANT]
+   > Policies cannot be renamed.
 
-5. Fill in a description. You can use the policy intent statement here.
+1. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
 
