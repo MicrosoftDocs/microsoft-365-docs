@@ -38,8 +38,6 @@ Here's an example of the **Service health** page in the Microsoft 365 admin cent
 
 [![The Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
 
-:::image type="content" source="../media/m365-monitoring-final.png" alt-text="ttt":::
-
 If Microsoft 365 monitoring discovers issues that need your attention, these will be show under the **Issues in your environment that require action** in the Active Issues section of the page.
 
 To access detailed monitoring pages for specific services, select **View** under **Organizational-level monitoring** on the service health page.
