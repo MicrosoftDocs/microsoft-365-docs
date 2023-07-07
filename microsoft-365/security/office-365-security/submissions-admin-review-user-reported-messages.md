@@ -58,13 +58,19 @@ Admins can mark messages and notify users of review results only if the user [re
    - Select the message from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify**.
 
 4. In the **Mark as and notify** dropdown list, select one of the following values:
-   - **No threats found**
-   - **Phishing**
-   - **Spam**
 
-   :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="The page displaying the user-reported messages" lightbox="../../media/admin-review-send-message-from-portal.png":::
+   - Available verdicts for email messages:
+     - **No threats found**
+     - **Phishing**
+     - **Spam**
 
-The reported message is marked as **No threats found**, **Phishing**, or **Spam**, and an email is automatically sent to notify the user who reported the message.
+     :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="The page displaying the user-reported messages" lightbox="../../media/admin-review-send-message-from-portal.png":::
+
+   - Available verdicgts for Microsoft Teams messages:
+     - **No threats found**
+     - **Phishing**
+
+The reported message is marked with the selected verdict, and an email message is automatically sent to notify the user who reported the message.
 
 To customize the notification email, see the next section.
 

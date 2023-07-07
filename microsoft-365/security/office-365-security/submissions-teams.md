@@ -17,7 +17,7 @@ ms.custom:
 description: "Admins can configure whether users can report malicious message in Microsoft Teams."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 7/7/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -125,48 +125,3 @@ For more information, see [User reported settings](submissions-user-reported-mes
 ## View and triage user reported messages in Teams
 
 As previously described, information about user reported messages in Teams is available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
-
-The availability of Teams messages on the **User reported** tab on the **Submissions** page introduces the following changes to the page:
-
-- Differences in available columns displayed by default (marked with an asterisk (\*)) and when you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**:
-  - **Name and type**<sup>\*</sup> is available (previously named **Submission name**<sup>\*</sup>).
-  - **Teams message ID** is available.
-
-- Differences in available filters when you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**:
-  - **Teams message ID** is available.
-  - **Message type** is available. Values are **Email** and **Teams message**
-
-- Differences in available values when you select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**:
-  - **Reason** isn't available.
-  - **Phish simulation** isn't available.
-
-- The **Result** column contains the following information for reported Teams messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
-  - **Send the reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: The **Result** column contains values derived from the following analysis:
-    - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
-    - **Payload reputation/detonation**: Up-to-date examination of any URLs and files in the message.
-    - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
-  - **Send the reported messages to** \> **My reporting mailbox only**: The **Result** column value is always **Not submitted to Microsoft**, because the messages weren't analyzed by Microsoft.
-
-- Admin submission of Teams messages to Microsoft from the **User reported** tab on the **Submissions** page is basically the same as described in [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis), including the [required permissions and throttling limits](submissions-admin.md#what-do-you-need-to-know-before-you-begin).
-
-  But only the following values are available in **Submit to Microsoft for analysis** for reported Teams messages:
-
-  - **Report clean**
-  - **Report phishing**
-  - **Report malware**
-
-- Notifying a user about the results of a reported Teams message is basically the same as described in [Notify users from within the portal](submissions-admin-review-user-reported-messages.md#notify-users-from-within-the-portal).
-
-  But only the following values are available in **Mark as and notify** for reported Teams messages:
-
-  - **No threats found**
-  - **Phishing**
-
-- The available customization options for admin notifications for reported Teams messages are the same as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users), but the names and setting locations on the page are slightly different:
-  - On the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>, the notification customization options are in the **Email notifications** section (formerly the **Email sent to user after admin review** section):
-    - The **Customize results email** link is in the **Results email** subsection. The available settings in the flyout that opens are the same.
-    - The **Customize sender and branding** subsection contains the options to specify the sender email address and custom branding:
-      - **Specify a Microsoft 365 mailbox to use as the From address of email notifications** (formerly **Specify an Office 365 mailbox to send email notifications from**).
-      - **Replace the Microsoft logo with my organization's logo across all reporting experiences** (formerly **Replace the Microsoft logo with my company logo**).
-
-- As described in the **Reporting from quarantine** section on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>, only admins can report quarantined Teams messages to Microsoft.
