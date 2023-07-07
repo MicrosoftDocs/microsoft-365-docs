@@ -102,7 +102,7 @@ All our updates contain
   
 ### Known Issues  
 
-- Users might encounter slow loading webpages in non-Microsoft web browsers if using [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering)
+- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
 ### May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
 
