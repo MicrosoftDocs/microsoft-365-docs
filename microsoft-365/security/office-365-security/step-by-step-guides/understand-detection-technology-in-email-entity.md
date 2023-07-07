@@ -19,7 +19,7 @@ ms.collection:
 
 If a threat is detected on the Microsoft Defender for Office 365 [*email entity page*](/microsoft-365/security/office-365-security/mdo-email-entity-page), threat information will display on the left-hand flyout. This panel will also show you the **detection technology** that led to that verdict.
 
-This article is all about helping you **understand the different detection technologies**, how they work, and how to avoid any false alarms. Stay tuned for the Admin Subissions video at the end.
+This article is all about helping you **understand the different detection technologies**, how they work, and how to avoid any false alarms. Stay tuned for the Admin Submissions video at the end.
 
 ## Detection technology details table
 
@@ -43,7 +43,7 @@ To resolve false positives like the ones listed in the table below, you should a
 |Impersonation brand|Sender impersonation of well-known brands||
 |Impersonation domain|Impersonation of sender domains that you own or specified for protection in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
 |Impersonation user|Impersonation of protected senders that you specified in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
-|IP reputation|The message was sent from a IP that was identified as potentially malicious||
+|IP reputation|The message was sent from an IP that was identified as potentially malicious||
 |Mailbox intelligence impersonation|Sender detected as impersonating an address in the user's personal sender map|[Mailbox intelligence impersonation protection](../anti-phishing-policies-about.md)|
 |Mixed analysis detection|Multiple filters contributed to the verdict for this message||
 |Spoof DMARC|The message failed DMARC authentication|[How Microsoft 365 handles inbound email that fails DMARC](../email-authentication-dmarc-configure.md)|
