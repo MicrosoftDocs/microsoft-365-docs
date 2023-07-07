@@ -4,7 +4,7 @@ description: Learn how to use a simplified domain or static IP ranges during onb
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
-ms.date: 7/6/2023
+ms.date: 7/7/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -340,43 +340,122 @@ MARYSIA TO UPDATE  LATER
 
 You can use the following methods to check that you have successfully connected Windows devices:
 
-1. Client analyzer
-2. Tracking through the Microsoft 365 Defender portal
-3. Track locally using Event Viewer (for Windows)
-4. Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
-5. Checking the registry editor
-6. PowerShell detection test
+- Client analyzer
+- Tracking through the Microsoft 365 Defender portal
+- Track locally using Event Viewer (for Windows)
+- Run your own tests to confirm connectivity with Defender for Endpoint services -connectivity checks
+- Checking the registry editor
+- PowerShell detection test
 
 
 For macOS and Linux, you can use the following methods:
-1. MDATP tests
-2. Tracking through the Microsoft 365 Defender portal
-3. Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
+
+- MDATP tests
+- Tracking through the Microsoft 365 Defender portal
+- Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
 
 
-### Use Defender for Endpoint Client Analyzer (BETA) to validate connectivity post-onboarding for new endpoints
+### Use Defender for Endpoint Client Analyzer (BETA) to validate connectivity after onboarding for new endpoints
 
 #### Run the Defender for Endpoint Client analyzer (Beta) version to confirm your device is connecting to the appropriate URLs (updated) 
 
 1. Download and extract Client analyzer from https://aka.ms/BetaMDEAnalyzer.
 
-2. Use the Defender for Endpoint Client Analyzer (Beta) to validate connectivity post-onboarding for new endpoints.
+2. Use the Defender for Endpoint Client Analyzer (Beta) to validate connectivity post-onboarding for new endpoints:
 
-3. Open a command prompt as administrator.
+   1. Open a command prompt as administrator.
 
-4. From within folder, run MDEClientAnalyzer.cmd. The script will use what is configured on device to test connectivity.  
+   2. From within folder, run MDEClientAnalyzer.cmd. The script will use what is configured on device to test connectivity.  
 
-5. View connectivity results within HTML output file or command prompt 
-
-
+   3. View connectivity results within HTML output file or command prompt 
 
 
-### Registry editor
+### Track connectivity through Microsoft 365 Defender portal
+
+INSERT INFO FROM ERAN
+
+For more information see, [Create and manage device tags](machine-tags.md).
+
+
+
+
+### Track locally on a device using Event Viewer (for Windows)
+
+Open the Defender for Endpoint service event log using the following steps:
+
+1. On the Windows menu, select **Start**, then type **Event Viewer**. Then select **Event Viewer**.
+
+2. In the log list, under **Log Summary**, scroll down until you see  **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
+
+
+
+ :::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
+
+
+You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select**  Operational**. 
+
+Event ID 4 tracks successful connections with MDE Command & Control channel. Verify successful connections with updated URL. 
+
+For example: Contacted server 6 times, all succeeded, URI: https://winatp-gw-cane.microsoft.com/. Message1 in Dataname contains the URL that was contacted. You can verify it is using the updated URL.  
+
+Event ID 5 tracks errors if applicable. 
+
+>[!NOTE]
+>SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint. <br>
+> Events recorded by the service will appear in the log. <br>
+> For more information, see: [Review events and error using Event Viewer](event-error-codes.md).
+
+
+### Run your own checks to confirm connectivity with Defender for Endpoint services connectivity  
+
+Once the device is onboarded to Defender for Endpoint, validate that it is available in Device Inventory. 
+
+Check the Device Page Timeline tab to confirm events are flowing from the device. 
+
+#### Live Response 
+
+Ensure Live Response is working on your test device. You can follow instructions here: [Investigate entities on devices using live response](live-response.md).
+
+Make sure to run a couple of basic commands post-connection to confirm connectivity (such as cd, jobs, connect).
+
+#### Automated investigation and response 
+
+Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
+
+For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
+
+#### Cloud-delivered protection 
+
+Use the following argument with the Microsoft Defender Antivirus command-line utility (mpcmdrun.exe) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service: 
+
+`"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection`
+ 
+
+>[!NOTE]
+>Open a Command Prompt as an administrator. Right-click the item in the Start menu, select **Run as administrator** then select **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
+
+For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus). 
+
+#### Test Block at First Sight 
+
+Follow instructions for [Microsoft Defender for Endpoint Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md).
+
+#### Test SmartScreen 
+
+Follow instructions for [Microsoft Defender SmartScreen Demo (msft.net)](https://demo.smartscreen.msft.net/). 
+
+#### Check Connections with Advanced Hunting 
+
+INFO FROM ERAN
+
+
+
+### Registry editor - MARYSIA TO CHECK WITH PAUL/ERAN IF KEEP SECTION
 Check "OnboardedInfo" field in the Registry Editor (Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection). 
 
 
 >[!NOTE]
->The field may be updated in Registry prior to reboot (reboot is still necessary for previously onboarded devices for full connectivity switch).
+>The field may show as updated in Registry Editor even if the device is not connecting (reboot is still necessary for previously onboarded devices for full connectivity switch).
 
 
 ### PowerShell detection test 
