@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: bagol
 author: batamig
 manager: raynew
-ms.date: 06/07/2023
+ms.date: 06/28/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -20,7 +20,7 @@ search.appverid:
 ms.collection: 
 - m365-security 
 - tier2
-ms.custom: admindeeplinkDEFENDER
+ms.custom: admindeeplinkDEFENDER, defender-for-identity
 ---
 
 # Microsoft Defender for Identity in Microsoft 365 Defender
@@ -38,11 +38,15 @@ Microsoft Defender for Identity contributes identity focused information into th
 
 ## Converged experiences in Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the [classic Defender for Identity portal](/defender-for-identity/classic-workspace-portal). 
+[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the legacy, classic Defender for Identity portal.
 
 While data placement might differ from the classic Defender for Identity portal, your data is now integrated into Microsoft 365 Defender pages so that you can view your data across all of your monitored entities.
 
 The following sections describe enhanced Defender for Identity features found in Microsoft 365 Defender.
+
+> [!NOTE]
+> Customers using the classic Defender for Identity portal are now [automatically redirected to Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/leveraging-the-convergence-of-microsoft-defender-for-identity-in/ba-p/3856321), with no option to revert back to the classic portal.
+
 
 ### Configuration and posture
 
@@ -84,7 +88,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Defender for** Identity  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | **Timeline**                   |- Microsoft 365 Defender Alerts/Incidents queue                |
-| **Reports**                    |- Lateral movement path and passwords exposed in cleartext reports are covered by the [Identity security posture assessments](/defender-for-identity/security-assessment#assessment-reports) (ISPM)<br><br>- Health issues are available in **Settings** -> **Identities** -> **Health issues**<br><br>- View a summary of alerts by exporting the alerts queue or from the **Advanced hunting** page, which provides 30 days of data<br><br>- Modify sensitive groups from the **Advanced hunting** page<br><br>**Tip**: Use the **Advanced hunting** page to create customized reports in Microsoft 365 Defender.                                    |
+| **Reports**                    |The following types of reports are available from the **Settings > Identities > Report management** page in Microsoft 365 Defender, either for immediate download or scheduled for a periodic email delivery: <br><br>- A summary report of alerts and health issues you should take care of. <br>- A list of each time a modification is made to sensitive groups. <br>- A list of source computer and account passwords that are detected as being sent in clear text.<br>- A list of the sensitive accounts exposed in lateral movement paths. <br><br>For more information, see [Report management](/defender-for-identity/reports).  |
 | **Identity page**                  | Microsoft 365 Defender user details page                             |
 | **Device page**                | Microsoft 365 Defender device details page                           |
 | **Group page**                 | Microsoft 365 Defender groups side pane                      |
