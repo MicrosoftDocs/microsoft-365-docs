@@ -50,14 +50,11 @@ To create a new content center:
 
 3. On the **Choose a template** menu, select **Content center**.
 
-4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.</br>
-
-   > [!NOTE] 
-   > You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.
+4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.
 
 5. Select **Finished**.
  
-After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
+After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center.
 
 ### Give access to additional users
  
@@ -74,6 +71,3 @@ The **Models** library in the default content center view groups the created mod
 > [!NOTE]
 > You can't change the designated default content center. It's always the first content center created during setup. 
 
-## See also
-
-[Overview of model types](model-types-overview.md)

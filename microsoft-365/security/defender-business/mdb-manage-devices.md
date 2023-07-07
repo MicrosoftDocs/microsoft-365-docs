@@ -30,10 +30,16 @@ In Defender for Business, you can manage devices as follows:
 - [Onboard a device to Defender for Business](#onboard-a-device)  
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
-
 ## View the list of onboarded devices
 
 :::image type="content" source="../../media/defender-business/mdb-device-inventory.png" alt-text="Screenshot of device inventory":::
+
+> [!IMPORTANT]
+> In order to view the list of onboarded devices, you must have one of the following [roles](mdb-roles-permissions.md) assigned: 
+> 
+> - Global Administrator
+> - Security Administrator
+> - Security Reader
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -46,6 +52,12 @@ In Defender for Business, you can manage devices as follows:
 ## Take action on a device that has threat detections
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::
+
+> [!IMPORTANT]
+> In order to take action on a device with detected threats, you must have one of the following [roles](mdb-roles-permissions.md) assigned: 
+> 
+> - Global Administrator
+> - Security Administrator
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**. 
 
@@ -62,6 +74,11 @@ Microsoft Defender Antivirus is a key component of next-generation protection in
 - Active mode
 - Passive mode
 - Disabled (or uninstalled) mode
+
+To view the state of Microsoft Defender Antivirus, you can choose from several options, such as:
+
+- Reports, like the [Device health report](mdb-reports.md#device-health-report); or
+- One of the methods described in [How to confirm the state of Microsoft Defender Antivirus](../defender-endpoint/microsoft-defender-antivirus-compatibility.md#how-to-confirm-the-state-of-microsoft-defender-antivirus).
 
 The following table describes each state and what it means.
 

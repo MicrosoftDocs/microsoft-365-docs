@@ -35,7 +35,7 @@ ms.date: 12/18/2020
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 > [!IMPORTANT]
-> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
+> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans.
 

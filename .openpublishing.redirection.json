@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/security/defender/microsoft-365-security-mdi-redirection.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdi",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
       "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
@@ -2418,6 +2423,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report.md",
       "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-mail-flow-map-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mail-flow-insights",
       "redirect_document_id": false
     },
     {
@@ -11021,11 +11031,6 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/defender-endpoint/mde-sec-ops-guide.md",
-    "redirect_url": "/microsoft-365/security/defender-endpoint",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "microsoft-365/business-premium/m365bp-remove-company-data.md",
     "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
     "redirect_document_id": false
@@ -11054,6 +11059,71 @@
     "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
     "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites.md",
+    "redirect_url": "/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/compliance-manager-mcca.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/view-the-dlp-reports.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp#dlp-activity-explorer-and-reports",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/compliance/dlp-conditions-and-exceptions.md",
+    "redirect_url": "/microsoft-365/compliance/dlp-exchange-conditions-and-actions",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/loop/loop-components-sharepoint.md",
+    "redirect_url": "/microsoft-365/loop/loop-workspaces-configuration",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-maintain-environment.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-admin-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-admin-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-security-admin-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-security-admin-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business-premium/m365bp-security-operations-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-business/mdb-security-operations-guide.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/business/manage-protected-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
+    "redirect_document_id": false
   }
  ]
 }

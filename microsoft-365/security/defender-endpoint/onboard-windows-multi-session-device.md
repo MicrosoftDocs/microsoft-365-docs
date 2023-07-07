@@ -1,25 +1,21 @@
 ---
 title: Onboard Windows devices in Azure Virtual Desktop
 description: Learn about onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
-keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: 
 - m365-security
 - tier3
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/06/2023
+ms.date: 06/27/2023
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -160,10 +156,6 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 E5 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
-
-### Known issues and limitations
-
-Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 
