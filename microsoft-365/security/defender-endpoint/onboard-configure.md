@@ -38,11 +38,12 @@ In this step, you're ready to configure Microsoft Defender for Endpoint capabili
 
 ## Configure capabilities
 
-In many cases, organizations will have existing endpoint security products in place. The bare minimum being an antivirus solution, but in some cases, an organization might have existing endpoint detection and response solution. Historically, replacing any security solution used to be time intensive and difficult to achieve due to the tight hooks into the application layer and infrastructure dependencies. However, because Defender for Endpoint is built into the operating system, replacing third-party solutions is now easy to achieve.
+In many cases, organizations will have existing endpoint security products in place. The bare minimum being an antivirus solution, but in some cases, an organization might have existing endpoint detection and response solution.
 
-Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint. After onboarding the devices, you'll then need to configure the other capabilities of the service. The following table lists the capabilities you can configure to get the best protection for your environment.
+It is common that Defender for Endpoint will need to exist along side these existing endpoint security products either indefinitely or during a cutover period. Fortunately, Defender for Endpoint and the endpoint security suite is modular and can be adopted in a systematic approach.
 
-Choose the components of Defender for Endpoint to be used and remove the ones that do not apply. The table below indicates the order Microsoft recommends for how the endpoint security suite should be enabled.
+Onboarding devices effectively enables the endpoint detection and response capability of Microsoft Defender for Endpoint. After onboarding the devices, you'll then need to configure the other capabilities of the service. The following table lists the capabilities you can configure to get the best protection for your environment and the order Microsoft recommends for how the endpoint security suite should be enabled.
+
 
 | Capability | Description |Adoption Order Rank|
 |---|---|---|
