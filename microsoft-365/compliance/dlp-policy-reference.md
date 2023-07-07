@@ -493,7 +493,7 @@ The available context options change depending on which location you choose. If 
 - Sender domain is
 
 ##### Conditions Devices supports
-
+For Windows Endpoints
 - Content contains
 - User's risk level for Adaptive Protection is
 - Content is not labeled (PDF and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
@@ -502,6 +502,8 @@ The available context options change depending on which location you choose. If 
 - File extension is
 - The user accessed a sensitive website from Microsoft Edge. For more information, see, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains).
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+Please note that "Content Contains" is the only supported condition for Mac Endpoints, and the rest of the mentioned condition devices aren't supported for endpoints running on Mac OS
 
 [!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
