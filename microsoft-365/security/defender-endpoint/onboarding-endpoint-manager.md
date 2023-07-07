@@ -123,12 +123,12 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the Intune admin center.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Profile**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
-3. Under **Platform, select Windows 10 and Later, Profile - Endpoint detection
+3. Under **Platform, select Windows 10, Windows 11, and Windows Server, Profile - Endpoint detection
     and response > Create**.
 
 4. Enter a name and description, then select  **Next**.
