@@ -45,20 +45,21 @@ The following table describes the supported endpoint settings for Windows 10/11 
 |---------|---------|---------|---------|
 |Advanced classification | Supported | Supported (preview)|Advanced classification enables these features for macOS (preview): - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Network share coverage and exclusions | Supported |Not Supported|
+|Network share coverage and exclusions | Supported |Not supported|
 |Restricted apps     |Supported         |Supported         |         |
 |Restricted app groups |Supported |Supported (preview)|
+|Auto-quarantine file from unallowed apps | Supported | Supported (preview)| |
 |Unallowed Bluetooth apps    |Supported         |Supported         |         |
-|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
+|Unallowed browsers      |Supported         |Supported         |         |
+|Service domains     |Supported         |Supported         |         |
+|Sensitive service domain groups     |Supported         |Not supported         |         |
+|Business justification in policy tips | Supported | Supported (preview)| |
+|Notification customization: Customize the options in the drop-down menu|Supported | Supported (preview)|
 |Always audit file activity for devices     |Supported         |Supported         |         |
 |Printer groups| Supported |Not Supported| |
 |Removable USB device groups| Supported | Not Supported | |
-|Auto-quarantine file from unallowed apps | Supported | Supported (preview)| |
 |Network share groups | Supported | Not Supported | |
-|VPN settings | Supported | Not Supported | |
-|Business justification in policy tips | Supported | Supported (preview)| |
-|Notification customization|Supported | Supported (preview)|
+|VPN settings | Supported | Not supported | |
 |Archive file| Supported | Not supported| |
 |File type and File extension |Supported | Not supported| |
 | | | | |
