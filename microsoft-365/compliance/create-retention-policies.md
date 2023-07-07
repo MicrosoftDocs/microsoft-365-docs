@@ -78,7 +78,7 @@ Select the tab for instructions to create a retention policy for Teams, Yammer, 
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
-3. For the **Assign admin units** page: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
