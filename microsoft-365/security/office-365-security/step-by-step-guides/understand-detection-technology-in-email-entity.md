@@ -14,7 +14,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 7/7/2023
 ---
 
 # Understanding detection technology in the email entity page of Microsoft Defender for Office 365
