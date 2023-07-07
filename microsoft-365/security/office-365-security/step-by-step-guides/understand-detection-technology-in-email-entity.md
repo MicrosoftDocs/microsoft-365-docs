@@ -54,4 +54,4 @@ To resolve false positives like the ones listed in the table below, you should a
 |URL malicious reputation|The message contains a URL that was previously identified as malicious or spam by other sources||
 
 ## Watch a video on submitting messages to Microsoft to learn more
-[!VIDEO https://www.youtube.com/watch?v=ta5S09Yz6Ks]
+[!VIDEO https://www.youtube.com/embed/ta5S09Yz6Ks]
