@@ -64,9 +64,7 @@ Admins can mark messages and notify users of review results only if the user [re
      - **Phishing**
      - **Spam**
 
-     :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="The page displaying the user-reported messages" lightbox="../../media/admin-review-send-message-from-portal.png":::
-
-   - Available verdicgts for Microsoft Teams messages:
+   - Available verdicts for Microsoft Teams messages:
      - **No threats found**
      - **Phishing**
 
