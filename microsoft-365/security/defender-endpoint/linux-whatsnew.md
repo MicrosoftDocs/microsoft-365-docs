@@ -34,9 +34,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
 
 <details>
-	<summary> June-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
+	<summary> July-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
 
-## June-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
+## July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
 
 &ensp;Released: **July 7,2023**<br/>
 &ensp;Published: **July 7,2023**<br/>
