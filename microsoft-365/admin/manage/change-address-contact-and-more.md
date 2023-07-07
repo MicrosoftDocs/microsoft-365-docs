@@ -79,13 +79,13 @@ The organization's name is used throughout Microsoft 365, including but not limi
 * OneDrive Sync
   * The organization name is shown in File Explorer on Windows and Finder on Mac. 
     * On Windows, in File Explorer, in the navigation pane, the blue cloud icon for OneDrive for your M365 tenant is labeled "OneDrive - \<organization name\>" (for example, "OneDrive - Contoso").  
-    * When a user syncs a SharePoint library, it shows up in File Explorer under a node in the left navigation that bears a blue office building icon and the tenant name.
+    * When a user syncs a SharePoint library, it shows up in File Explorer under a node in the left navigation that bears a blue office building icon and the organization name.
   * The organization name is used in file paths:
-    * The file path for the root of the OneDrive for that user defaults to C:\users\<username>\OneDrive - \<Tenant Name>\
-    * The file path for SharePoint libraries that get synced is  C:\users\<username>\<Tenant Name>\
-    * The file path for the Documents Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Documents
-    * The file path for the Pictures Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Pictures
-    * The file path for the Desktop Known Folder is C:\users\<username>\OneDrive - \<Tenant Name>\Desktop
+    * The file path for the root of the OneDrive for that user defaults to C:\users\<username>\OneDrive - \<organization Name>\
+    * The file path for SharePoint libraries that get synced is  C:\users\<username>\<organization Name>\
+    * The file path for the Documents Known Folder is C:\users\<username>\OneDrive - \<organization Name>\Documents
+    * The file path for the Pictures Known Folder is C:\users\<username>\OneDrive - \<organization Name>\Pictures
+    * The file path for the Desktop Known Folder is C:\users\<username>\OneDrive - \<organization Name>\Desktop
   * The organization name is shown in:
     * the OneDrive activity center
     * The tooltip of the OneDrive cloud icon
@@ -93,17 +93,17 @@ The organization's name is used throughout Microsoft 365, including but not limi
   *  Currently, updating the organization name does not update it for configured clients. 
 *  Microsoft Teams:
     * Organization Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant.
-    * Organizations that are under a certain size (get an organization-wide Team created automatically)[https://learn.microsoft.com/en-us/microsoftteams/create-an-org-wide-team].  That team gets its name from the organization's Name, but the team name does not change if the organization's Name field changes.
+    * Organizations that are under a certain size (get an organization-wide Team created automatically)[../../microsoftteams/create-an-org-wide-team].  That team gets its name from the organization's Name, but the team name does not change if the organization's Name field changes.
 *  OneNote:  End users may have a notebook named in this pattern: \<first name>@\<organization name>.
 *  Windows desktop applications for Word, Excel, and PowerPoint: The File Save and File Open screens display the organization name.  
 *  Mobile apps such as Word, Excel, PowerPoint, OneNote, Outlook, and the M365 App may display the organization name on various screens, especially ones that let you pick files from M365 services such as SharePoint and OneDrive.
-*  Power Platform - the default environment takes its name from the organization name. The organization name (refered to as the TenantName in this article)[https://learn.microsoft.com/en-us/power-platform/guidance/adoption/secure-default-environment#rename-the-default-environment] is the default environment name, but  can be changed, though that is a manual step after a tenant rename.
+*  Power Platform - the default environment takes its name from the organization name. The organization name (refered to as the TenantName in this article)[../../power-platform/guidance/adoption/secure-default-environment#rename-the-default-environment] is the default environment name, but  can be changed, though that is a manual step after a tenant rename.
 
 Note that only Microsoft Teams will automatically detect the change to the organization name and reflect the change in the tenant switcher.  Any teams, such as an organization-wide team named with the company name, will not update.  
 None of the other applications pick up the name change automatically.  Mobile apps may require you to sign out and sign back in or reinstall them before they will display the new name. 
-[There is a script](https://learn.microsoft.com/en-us/office/troubleshoot/activation/reset-office-365-proplus-activation-state) that can help you force Office desktop applications to pick up the new name, but it forces the user to sign back in to the Ofice desktop apps again.
+[There is a script](../../office/troubleshoot/activation/reset-office-365-proplus-activation-state) that can help you force Office desktop applications to pick up the new name, but it forces the user to sign back in to the Ofice desktop apps again.
 
-If you change the tenant name, OneDrive Sync will not automatically update the tenant name it uses.  The OneDrive Sync client will not notice the new name unless you [unlink OneDrive Sync client and re-link it](https://support.microsoft.com/en-us/office/unlink-and-re-link-onedrive-3c4680bf-cc36-4204-9ca5-e7b24cdd23ea) by signing in again. Note that you may need to do some file system cleanup after that. Also, you don't want to unlink your OneDrive Sync client if you have unsynced files.  Make sure syncing has completed before unlinking.  Relinking will resync your OneDrive, but if you had previously synced SharePoint libraries that are listed under the blue office building in File Explorer, you would need to re-sync those libraries individually.  A better alternative is to use the Add to OneDrive feature to add a shortcut in your OneDrive to a SharePoint library.  With an Add to OneDrive shortcut, the folder contents syncs within your OneDrive blue cloud instead of your OneDrive blue office building and would automatically be included in syncing when relinking.
+If you change the organization name, OneDrive Sync will not automatically update the organization name it uses.  The OneDrive Sync client will not notice the new name unless you [unlink OneDrive Sync client and re-link it](https://support.microsoft.com/office/unlink-and-re-link-onedrive-3c4680bf-cc36-4204-9ca5-e7b24cdd23ea) by signing in again. Note that you may need to do some file system cleanup after that. Also, you don't want to unlink your OneDrive Sync client if you have unsynced files.  Make sure syncing has completed before unlinking.  Relinking will resync your OneDrive, but if you had previously synced SharePoint libraries that are listed under the blue office building in File Explorer, you would need to re-sync those libraries individually.  A better alternative is to use the Add to OneDrive feature to add a shortcut in your OneDrive to a SharePoint library.  With an Add to OneDrive shortcut, the folder contents syncs within your OneDrive blue cloud instead of your OneDrive blue office building and would automatically be included in syncing when relinking.
 
 
 ## Change your alternate email address
