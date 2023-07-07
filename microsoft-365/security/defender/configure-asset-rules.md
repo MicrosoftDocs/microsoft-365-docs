@@ -1,5 +1,5 @@
 ---
-title: Dynamic Tagging in Asset Rule Management
+title: Asset rule management - Dynamic rules 
 description: You can use Microsoft Defender for Endpoint to configure dynamic tagging 
 keywords: asset rule management, dynamic tagging, Microsoft Defender for Endpoint, devices, Microsoft 365 Defender, Defender
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 10/11/2022
 ---
 
-# Dynamic Tagging in Asset Rule Management
+# Asset rule management - Dynamic rules for devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
