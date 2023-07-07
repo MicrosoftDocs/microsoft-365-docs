@@ -48,7 +48,6 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- Updated the SELInux context for MDE services to make sure it aligns with that of the systemd directory.
 	- Improved Network Protection memory consumption under stress
 	- Engine Update to 1.1.20300.5 and Signatures Ver: 1.391.2837.0.
 	- Bug fixes.
