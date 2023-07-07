@@ -23,23 +23,23 @@ description: Identify the minimum versions of Office apps that support specific 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-The capabilities tables on this page supplement [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) by listing the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release.
+The capabilities tables on this page supplement [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md) by listing the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps, or if the label capability is in public preview or under review for a future release.
 
-New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you are on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+New versions of Office apps are made available at different times for different update channels. For Windows, you'll get the new capabilities earlier when you're on the Current Channel or Monthly Enterprise Channel, rather than Semi-Annual Enterprise Channel. The minimum version numbers can also be different from one update channel to the next. For more information, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels) and [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
-New capabilities that are in private preview are not included in the tables but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
+New capabilities that are in private preview aren't included in the tables but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
 > [!TIP]
 > When you compare the minimum versions in the tables with the versions you have, remember the common practice of release versions to omit leading zeros.
 > 
-> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1 (and not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1, so your version is supported.
+> For example, you have version 4.2128.0 and read that 4.7.1+ is the minimum version. For easier comparison, read 4.7.1 (no leading zeros) as 4.**0007**.1 (and not 4.**7000**.1). Your version of 4.2128.0 is higher than 4.0007.1; so, your version is supported.
 
 ## Sensitivity label capabilities in Word, Excel, and PowerPoint
 
-The numbers listed are the minimum Office application versions required for each capability. 
+The numbers listed are the minimum Office application versions required for each capability.
 
 > [!NOTE]
-> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions).
 
 |Capability |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
@@ -69,7 +69,7 @@ The numbers listed are the minimum Office application versions required for each
 
 ## Sensitivity label capabilities in Outlook
 
-The numbers listed are the minimum Office application versions required for each capability. 
+The numbers listed are the minimum Office application versions required for each capability.
 
 > [!NOTE]
 > For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
@@ -96,8 +96,8 @@ The numbers listed are the minimum Office application versions required for each
 |[Different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) |Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ |16.43+ <sup>\*</sup> |4.2111+ |4.2111+ |Yes |
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support) |Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: 2302+| Under review |Under review |Under review |Under review |
 |[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) |Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel: 2302+ | 16.61+ <sup>\*</sup> |4.2226+ |4.2203+ |Yes |
-|[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) |Current Channel: 2302+<br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+  |Under review |Rolling out: 4.2316.0+ |4.2316.0+ |Under review |
-|[Display label color](sensitivity-labels-office-apps.md#label-colors) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |16.71 |Rolling out: 4.2316.0+ |4.2316.0+ |Under review |
+|[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) |Current Channel: 2302+<br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+  |Under review |4.2326.0+ |4.2316.0+ |Under review |
+|[Display label color](sensitivity-labels-office-apps.md#label-colors) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2303+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Preview: [Current Channel (Preview)](https://office.com/insider) <sup>\*</sup> |4.2316.0+ |4.2316.0+ |Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)|Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
 |[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-files-or-emails) |Current Channel: 2302+ <br /><br> Monthly Enterprise Channel: 2302+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Rolling out: 16.70+ <sup>\*</sup> | Rolling out: 4.2309+ |Rolling out: 4.2309+ |Yes |
 |[Preventing oversharing as DLP policy tip](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup)|Current Channel: 2305+ <br /><br> Monthly Enterprise Channel: 2307+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |Under review |Under review |Under review |Under review |
@@ -111,4 +111,4 @@ Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-
 
 ## Future releases
 
-Use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) for details about new labeling capabilities that are planned for future releases.
+For information about new labeling capabilities that are planned for future releases, use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label).
