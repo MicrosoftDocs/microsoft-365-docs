@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob  
-ms.date: 01/01/2023
+ms.date: 07/06/2023
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -146,6 +146,11 @@ Here's the descriptions of the pre-collection estimate management options.
         - Include all existing versions of Microsoft 365 documents on SharePoint
         - Include subfolder contents (inside subfolders of a matched folder)
         - Include files in SharePoint lists (and their child items)
+
+        To export Teams messages as individual messages when exporting collected items, unselect **Teams and Yammer conversations**. This exports conversations as individual messages and not as conversation threads.
+
+        > [!NOTE]
+        > The **Teams and Yammer conversations** setting is selected by default. If selected, exported items contain Teams conversation threads related to the matched search.
 
     - **How to format emails**: Choose an option of how collected emails should be formatted:
 

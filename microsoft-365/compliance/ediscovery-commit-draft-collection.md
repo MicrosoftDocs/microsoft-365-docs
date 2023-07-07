@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
-ms.date: 01/01/2023
+ms.date: 07/05/2023
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -40,28 +40,35 @@ When you're satisfied with the items you've collected in a collection estimate a
 
 3. On the **Collections** page, select the collection estimate that you want to commit to a review set.
 
-4. On the bottom of the flyout page, select **Actions** > **Commit collection**.
+4. On the bottom of the flyout page, select **Commit collection**.
 
 5. Configure the following settings:
 
    1. Decide whether to **Add to a new review set** (which is created after you submit the collection) or **Add to an existing review set**. Complete this section based on your decision.
 
    2. Configure the **Retrieval** settings:
-
-      ![Configure additional collection settings.](../media/ediscovery-additional-collection-settings.png).
+     
 
        A. **Teams and Viva Engage conversations**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. Collect up to 12 hours of related conversations when a message matches a search. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
 
-       B. **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
+        To export Teams messages as individual messages when committing to review set, unselect **Teams and Yammer conversations**. This commits your review set with individual Teams messages. Once the collection is committed, you can export the documents and messages in the review set. The exported results contain the individual messages for Teams and Yammer instead of conversation threads.
 
-       D. **All document versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
+          > [!NOTE]
+          > The **Teams and Yammer conversations** setting is selected by default. If selected, review sets contain Teams conversation threads related to the matched search.
 
-       C. **Partially indexed items**: Select this option to add partially indexed items from additional data sources to the review set. If the collection searched additional data sources (as specified on the **Additional locations** page in the collections wizard), there may be partially indexed items from these locations that you want to add to the review set. Custodial and non-custodial data sources typically don't have partially indexed items. That's because the Advanced indexing process reindexes items when custodial and non-custodial data sources are added to a case. Also, Adding partially indexed items will increase the number of items added to the review set.
+      - **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
 
-       > [!NOTE]
-       > The options to select retrieval options are configured on the global eDiscovery **Settings** > **Collections** page. Retrieval options selected on the **Collections** setting page will be selected as the default retrieval settings for all collections.
+      - **All document versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
-6. Configure the settings to define the scale of the collection to add to the review set:
+      - **Partially indexed items**: Select this option to add partially indexed items from additional data sources to the review set. If the collection searched additional data sources (as specified on the **Additional locations** page in the collections wizard), there may be partially indexed items from these locations that you want to add to the review set. Custodial and non-custodial data sources typically don't have partially indexed items. That's because the Advanced indexing process reindexes items when custodial and non-custodial data sources are added to a case. Also, Adding partially indexed items will increase the number of items added to the review set.
+
+      > [!NOTE]
+      > The options to select retrieval options are configured on the global eDiscovery **Settings** > **Collections** page. Retrieval options selected on the **Collections** setting page will be selected as the default retrieval settings for all collections.
+
+      - **Subfolder contents**: Collect items inside subfolders of a matched folder. This option applies only to SharePoint and OneDrive data sources.
+      - **List attachments**: Collect files attached to SharePoint lists and their child items.
+
+6. Configure settings in the **Collection ingestion scale** section to define the scale of the collection to add to the review set:
 
       - **Add all of collection to review set**: Select this option to add all the items that match the search criteria of the collection to the review set.
 
@@ -70,7 +77,7 @@ When you're satisfied with the items you've collected in a collection estimate a
          - **Sample based on confidence**: Items from the collection are added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and confidence interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
          - **Randomly sample**: Items from the collection are added to the review set based on a random selection of the specified sample size percentage of the total number of items returned by the search.
 
-7. Select **Submit** to commit the collection to the review set.
+7. Select **Commit** to commit the collection to the review set.
 
 ## What happens after you commit a collection estimate
 
