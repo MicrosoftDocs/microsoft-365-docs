@@ -89,7 +89,7 @@ ZAP for high confidence phishing is enabled by default. For more information, se
 
 ### Zero-hour auto purge (ZAP) for spam
 
-For _unread messages_ that are identified as _spam_ or _high confidence spam_ after delivery, the ZAP outcome depends on the action that's configured for the **Spam** or **High confidence spam** verdict in the applicable anti-spam policy. The available actions and the possible ZAP outcomes are described in the following list:
+For _unread messages_ that are identified as _spam_ or _high confidence spam_ after delivery, the ZAP outcome depends on the action that's configured for a **Spam** or **High confidence spam** verdict in the applicable anti-spam policy. The available actions and the possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
 - **Move message to Junk Email**: ZAP moves the message to the Junk Email folder.
