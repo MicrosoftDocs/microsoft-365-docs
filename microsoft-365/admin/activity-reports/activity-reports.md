@@ -34,7 +34,8 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model won't be included in the reports. 
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports typically become available within 48 hours, but might sometimes take several days
+to become available.
 
 ## Watch: Act on a usage report in Microsoft 365
   
