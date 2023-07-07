@@ -117,9 +117,7 @@ ZAP doesn't quarantine messages that are in the process of [Dynamic Delivery](sa
 ## Zero-hour auto purge (ZAP) in Microsoft Teams
 
 > [!NOTE]
-> ZAP for Microsoft Teams is currently in Preview, and is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
->
-> When you [join the Preview](mdo-support-teams-about.md#enable-microsoft-defender-for-teams), ZAP for Microsoft Teams is turned on.
+> ZAP for Microsoft Teams is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
 >
 > Currently, ZAP is available only for messages that are identified as malware or high confidence phishing.
 
@@ -133,7 +131,7 @@ When a chat message is identified as potentially phishing or malicious in Micros
 
 :::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how zero-hour auto purge works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
 
-Admins can view and manage these quarantined messages in Microsoft Teams. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
+Admins can view and manage these quarantined messages in Microsoft Teams. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing messages in Teams
 
@@ -145,7 +143,7 @@ For Teams messages that are identified as malware, ZAP blocks and quarantines th
 
 ### How to see if ZAP blocked your Teams message
 
-To find out if ZAP blocked your Teams message, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+To find out if ZAP blocked your Teams message, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 ## Zero-hour auto purge (ZAP) FAQ
 
