@@ -50,7 +50,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - There are multiple fixes and new changes in this release
   	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number will now have 5 digits followed by 4 digit patch number i.e. 101.xxxxx.yyy
   	- Improved Network Protection memory consumption under stress
-	- Engine Update to 1.1.20300.5 and Signatures Ver: 1.391.2837.0.
+ 	- Updated engine version to 1.1.20300.5 and signature version to 1.391.2837.0.
 	- Bug fixes.
 
 **Known issues**
