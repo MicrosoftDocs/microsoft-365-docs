@@ -68,29 +68,30 @@ See [Design a data loss prevention policy](dlp-policy-design.md) for more guidan
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types through policy:
+### Files monitored via policy
+Endpoint DLP supports monitoring the following file types through policy in Windows 10, 11 and in the latest three major releases of macOS:
 
-- Word files
-- PowerPoint files
-- Excel files
-- PDF files
-- .csv files
-- .tsv files
-- .txt files
-- .rtf files
-- .c files
-- .class files (Windows only)
-- .cpp files
-- .cs files
-- .h files
-- .java files
- 
-DLP audits the activities for these file types, even if there isn't a policy match: 
+| Windows 10, 11  | macOS  |
+| ----------| ------------|
+| .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp, .txt, .c, .class, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst, .txt, .c, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config |
 
-- Word files
-- PowerPoint files
-- Excel files
-- PDF files
+> [!NOTE]
+> The following file types can also be monitored through policy settings in Windows 10, 11, if OCR[OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> 
+> .jpg, .png, .tif, .tiff, .bmp, .jpeg
+
+
+### Files audited regardless of policy match
+Activities on the following file types can be audited in Windows 10, 11, and in the latest three major releases of macOS, even if no policy match exists:
+
+| Windows 10, 11  | macOS  |
+| ----------| ------------|
+|.doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst |
+
+> [!NOTE]
+> The following file types can also be audited, regardless of a policy match, in Windows 10, 11, so long as [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> 
+> .jpg, .png, .tif, .tiff, .bmp, .jpeg
 
 [!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
@@ -125,68 +126,15 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices and macOS devices, as listed in the following table
+File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
 
-#### Monitored File Types
-
-| File type //<br> Application| Windows <br> Default Audit | Windows <br> Custom Policy | macOS <br> Default Audit | <br> Custom Policy|
-|---|----|----| ---- |----|
-|doc, //word    | Y | Y| Y| Y |
-|docx, //word   | Y | Y| Y| Y |
-|docm, //word   | Y | Y| Y| Y |
-|dot, //word    | Y | Y| Y| Y |
-|dotx, //word   | Y | Y| Y| Y |
-|dotm, //word   | Y | Y| Y| Y |
-|docb, //word   | Y | Y| Y| Y |
-|xls, //excel   | Y | Y| Y| Y |
-|xlsx, //excel  | Y | Y| Y| Y |
-|xlt, //excel   | Y | Y| Y| Y |
-|xlm, //excel   | Y | Y| Y| Y |
-|xlsm, //excel  | Y | Y| Y| Y |
-|xltx, //excel  | Y | Y| Y| Y |
-|xltm, //excel  | Y | Y| Y| Y |
-|xlsb, //excel  | Y | Y| Y| Y |
-|xlw, //excel   | Y | Y| Y| Y |
-|ppt, //ppt     | Y | Y| Y| Y |
-|pptx, //ppt    | Y | Y| Y| Y |
-|pos, //ppt     | Y | Y| Y| Y |
-|pps, //ppt     | Y | Y| Y| Y |
-|pptm, //ppt    | Y | Y| Y| Y |
-|potx, //ppt    | Y | Y| Y| Y |
-|potm, //ppt    | Y | Y| Y| Y |
-|ppam, //ppt    | Y | Y| Y| Y |
-|ppsx, //ppt    | Y | Y| Y| Y |
-|pbix           | Y | Y| Y| Y |
-|pdf, //pdf     | Y | Y| Y| Y |
-|csv, //csv     | Y | Y| Y| Y |
-|tsv, //??      | Y | Y| Y| Y |
-|zip            | Y | Y| N| N |
-|zipx           | Y | Y| N| N |
-|rar            | Y | Y| N| N |
-|7z             | Y | Y| N| N |
-|tar            | Y | Y| N| N |
-|war            | Y | Y| N| N |
-|gz             | Y | Y| N| N |
-|pst            | Y | Y| Y| Y |
-|dlp            | Y | Y| N| N |
-|jpg            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|png            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|tif            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|tiff           | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|bmp            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|jpe            | Y <br> (OCR enabled) | Y <br> (OCR enabled)|  N| N |
-|txt            | N | Y| N| Y |
-|c              | N | Y| N| Y |
-|class          | N | Y| N| N |
-|cpp            | N | Y| N| Y |
-|cs             | N | Y| N| Y |
-|h              | N | Y| N| Y |
-|java           | N | Y| N| Y |
-|html           | N | Y| N| Y |
-|htm            | N | Y| N| Y |
-|rtf            | N | Y| N| Y |
-|json           | N | Y| N| Y |
-|config         | N | Y| N| Y |
+| File Type | Apps | Monitored file extensions |
+| --------- | ----- | --------------|
+| word processing | Word, PDF | .doc, .docx, .docm, .dot, dotx, .dotm, .docb, .pdf |
+| spreadsheet | Exel, CSV, TSV | .xls, .xlsx, .xlt, .xlm, .xlsm, xltx, xltm, xlsb, .xlw, .csv, .tsv |
+| presentation | PowerPoint | .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx |
+| archive | File archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
+| email | Outlook | .pst, .ost, .msg |
 
 
 ### File extensions
