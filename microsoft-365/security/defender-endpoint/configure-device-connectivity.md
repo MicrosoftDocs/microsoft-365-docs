@@ -34,6 +34,10 @@ audience: ITPro
 
 The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. 
 
+
+In this article, you'll be guided on onboarding new devices and migrating previously onboarded Defender for Endpoint devices  using the simplified method of device connectivity. so you can leverage the straightforward deployment and management of Defender for Endpoint cloud connectivity services.  
+
+
 To simplify the configuration of network requirements and ease management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set. The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
 
 Alternatively, you can now configure connectivity using dedicated static IP ranges for Microsoft Defender for Endpoint. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
@@ -44,20 +48,20 @@ Alternatively, you can now configure connectivity using dedicated static IP rang
 Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
 
 
-In this article, you'll be guided on how to migrate previously onboarded Defender for Endpoint devices and onboard new devices using the simplified method of device connectivity so you can leverage the straightforward deployment and management of Defender for Endpoint cloud connectivity services.  
+
 
 This solution also provides support for network devices without hostname resolution or wildcard support through provision of dedicated Defender for Endpoint static IP range. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
 ## Consolidated services 
-Previously, you may have been using endpoints listed in the table below. 
 
-The following table lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
+You may have been using endpoints listed in the table under Consolidated services. 
+
+The table lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
 
 >[!NOTE] 
 >You will need to onboard devices using the modified onboarding script to leverage this reduced URL set. 
 
->[!IMPORTANT]
-> The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if \*.endpoint.security.microsoft.com is allowed and devices are onboarded using the updated onboarding script. For more information, see   . You ill need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
+
 
 JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
 
@@ -65,8 +69,16 @@ JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
 
 The following table lists the consolidated endpoints. 
 
+
+>[!IMPORTANT]
+>The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the updated onboarding script. <br>
+>You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
+
 >[!NOTE]
 >Applies to Windows, macOS, and Linux.
+
+
+#### Consolidated endpoints (Windows, macOS, and Linux)
 
 | Category                                       | Service URLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,13 +201,13 @@ Configure devices to communicate through connectivity infrastructure. For more i
 
 ### Use Defender for Endpoint Client Analyzer to validate connectivity with new URLs pre-onboarding 
 
-Run Defender for Endpoint Client Analyzer on device to confirm pre-onboarding connectivity with new endpoints: 
+Run Defender for Endpoint Client Analyzer on devices to confirm pre-onboarding connectivity with new endpoints: 
 
 1.  Download and extract [Client analyzer](https://aka.ms/BetaMDEAnalyzer).
 
 2.  Download the 'simplified' onboarding package for relevant OS by navigating to ***Settings \> Endpoints \> Device management\> Onboarding*** in Microsoft 365 Defender portal.  
 
-    1.  Extract the .cmd from onboarding package  
+    1.  Extract the .cmd from onboarding package. 
 
 3.  Open a command prompt as an administrator. 
 
@@ -242,11 +254,11 @@ The following table lists the available tools based on the endpoint that you nee
 
 Migration recommendation:
 
-- **Start small** - It is recommended to start with a small set of devices first. apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
+- **Start small** - It is recommended to start with a small set of devices first, apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
 
-- **Validate and monitor** - After onboarding the small set of devices, validating that devices have successfully onboarded and are communicating with the service. 
+- **Validate and monitor** - After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration** - At this stage, you can gradually roll out the migration to a larger set of devices and remove the remove the old URLs from your network device. 
+- **Complete migration** - At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs from your network device to complete the migration.
 
 |Endpoint|Supported deployment tool|
 |---|---|
@@ -340,12 +352,12 @@ MARYSIA TO UPDATE  LATER
 
 You can use the following methods to check that you have successfully connected Windows devices:
 
-- Client analyzer
-- Tracking through the Microsoft 365 Defender portal
-- Track locally using Event Viewer (for Windows)
-- Run your own tests to confirm connectivity with Defender for Endpoint services -connectivity checks
+- [Client analyzer](#use-defender-for-endpoint-client-analyzer-beta-to-validate-connectivity-after-onboarding-for-new-endpoints)
+- [Tracking through the Microsoft 365 Defender portal](#track-connectivity-through-microsoft-365-defender-portal)
+- [Track locally using Event Viewer (for Windows)](#track-locally-on-a-device-using-event-viewer-for-windows)
+- [Run your own tests to confirm connectivity with Defender for Endpoint services -connectivity checks](#run-your-own-checks-to-confirm-connectivity-with-defender-for-endpoint-services-connectivity)
 - Checking the registry editor
-- PowerShell detection test
+- [PowerShell detection test](#powershell-detection-test)
 
 
 For macOS and Linux, you can use the following methods:
@@ -392,7 +404,7 @@ Open the Defender for Endpoint service event log using the following steps:
  :::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
 
 
-You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select**  Operational**. 
+You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select ** Operational**. 
 
 Event ID 4 tracks successful connections with MDE Command & Control channel. Verify successful connections with updated URL. 
 
@@ -428,7 +440,9 @@ For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations &
 
 Use the following argument with the Microsoft Defender Antivirus command-line utility (mpcmdrun.exe) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service: 
 
-`"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection`
+```
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
+```
  
 
 >[!NOTE]
