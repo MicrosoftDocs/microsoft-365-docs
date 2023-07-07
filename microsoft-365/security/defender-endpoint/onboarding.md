@@ -58,6 +58,8 @@ The tools in the example deployments are:
 - [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Intune](onboarding-endpoint-manager.md)
 
+For some additional information and guidance, check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths for deploying Defender for Endpoint.
+
 The example deployments will guide you on configuring some of the Defender for Endpoint capabilities, but you'll find more detailed information on configuring Defender for Endpoint capabilities in the [next step](#next-step).
 
 ## Next step
