@@ -262,6 +262,20 @@ Users can install and open the app to start the onboarding process.
 > [!NOTE]
 > The Optional permissions setting is different from the Disable Web protection setting. Optional permissions only help to skip the permissions during onboarding but it's available for the end user to later review and enable while Disable Web protection allows users to onboard the Microsoft Defender for Endpoint app without the Web Protection. It cannot be enabled later.
 
+
+## Disable sign out
+Defender for Endpoint supports deployment without sign out button in the app to prevent users from signing out of the Defender app. This is important to prevent users from tampering the device.
+
+Use the following steps to configure the Disable sign out:
+
+1. In the Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+2. Give the policy a **name**.
+3. Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
+4. In the **Settings** page, under the **General Configuration Settings**, add **DisableSignOut** as the key and set the value as 1.
+   - By default, Disable Sign Out = 0. 
+   - Admin needs to make Disable Sign Out = 1 to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed.
+5. Select **Next** and assign this profile to targeted devices/users.
+
 ## Related topics
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
