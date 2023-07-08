@@ -298,6 +298,19 @@ Use the following steps to turn on privacy for targeted users in the work profil
 
 Using this privacy control won't impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
+## Disable sign out
+Defender for Endpoint supports deployment without sign out button in the app to prevent users from signing out of the Defender app. This is important to prevent users from tampering the device.
+
+Use the following steps to configure the Disable sign out:
+
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **Disable Sign Out** as the key and value type as **Integer**
+   - By default, Disable Sign Out = 1 for Android enterprise personally owned work profile, fully managed, company owned personally enabled profiles and 0 for device administrator mode.
+   - Admin needs to make Disable Sign Out = 0 to enable the sign-out button in the app. Users will be able to see the sign out button once the policy is pushed.
+5. Select **Next** and assign this profile to targeted devices/users.
+
 ## Related articles
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
