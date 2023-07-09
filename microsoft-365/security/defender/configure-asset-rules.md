@@ -31,17 +31,15 @@ ms.date: 10/11/2022
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-Device context, such as device value and assigned tags are used by many organizations in their security workflows. Managing context for devices in a constantly changing corporate environment is a critical task when it comes to preventing security vulnerabilities that may be exploited by malicious actors.
+Managing context for devices in a constantly changing corporate environment is a critical task as many organizations use device context, such as assigning a device value and or assigning particular tags, in their security workflows.
 
-Devices may require updates, replacements, or reconfigurations due to changing business needs, and this can create significant challenges for security and IT teams responsible for device inventory. Security and IT teams must dedicate time and resources to managing device inventory in order to ensure the security and effectiveness of their organization's IT infrastructure. This task is time-consuming and requires accuracy and up-to-date information.  
+Devices may require updates, replacements, or reconfigurations due to changing business needs and failure to properly manage device context as part of this can result in security vulnerabilities that may be exploited by malicious actors.Therefore, teams must dedicate sufficient time and resources to managing device inventory to ensure the security and effectiveness of their organization's IT infrastructure. In addition to the time-consuming nature of this task, security and IT teams must also ensure that device inventory information is accurate and up to date.  
 
-The ongoing management of device inventory is essential in ensuring that devices are effectively tracked and managed over time.
-
-Dynamic rules can manage device context in a changing corporate environment by assigning tags and device values automatically based on certain criteria. This approach saves time and ensures accuracy, for example, assigning tags to devices that are identified as internet facing, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention. 
+Dynamic rules can help manage devices in a changing corporate environment by assigning tags and device values automatically, based on certain criteria. For example, assigning tags to devices that are identified as internet facing, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention.
 
 Dynamic rules also ensure device inventory remains relevant by removing tags or updating values when criteria are no longer met, ensuring devices are always properly tracked as technology and business needs change.
 
-By leveraging dynamic rules for tagging devices and setting device value, teams can more effectively manage device inventory in a constantly changing corporate environment. This approach can help save time, improve accuracy, and ensure that devices are always properly categorized and tracked over time.
+This approach can help save time, improve accuracy, and ensure that devices are always properly categorized and tracked over time.
 
 ## Create rules for alert notifications
 
