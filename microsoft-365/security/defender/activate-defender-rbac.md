@@ -1,6 +1,6 @@
 ---
-title: Activate Microsoft 365 Defender role-based access control (RBAC)
-description: Activate Microsoft 365 Defender Security role-based access control (RBAC)
+title: Activate Microsoft 365 Defender Unified Role-Based Access Control (RBAC)
+description: Activate Microsoft 365 Defender Security Unified Role-Based Access Control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Activate Microsoft 365 Defender role-based access control (RBAC)
+# Activate Microsoft 365 Defender Unified Role-Based Access Control (RBAC)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +34,11 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md) you must activate the Microsoft 365 Defender RBAC model for some or all of your workloads.
+For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md) you must activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads.
 
-## Activate Microsoft 365 Defender RBAC
+## Activate Microsoft 365 Defender Unified RBAC
 
-The following steps guide you on how to activate the Microsoft 365 Defender RBAC model. You can activate your workloads in the following ways:
+The following steps guide you on how to activate the Microsoft 365 Defender Unified RBAC model. You can activate your workloads in the following ways:
 
 1. [Activate in the permissions and roles page](#activate-from-the-permissions-and-roles-page)
 2. [Activate in Microsoft 365 Defender settings](#activate-in-microsoft-365-defender-settings)
@@ -62,7 +62,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
     :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
 
     > [!NOTE]
-    > The **Activate workloads** button is only available when there are existing roles in the roles list.
+    > The **Activate workloads** button is only available when there is it at least one workload that's not active for Unified RBAC.
 
 2. **Workload settings**
     - Select **Workload settings**.
@@ -94,7 +94,7 @@ You can deactivate Microsoft 365 Defender RBAC and revert to the individual RBAC
 
 To Deactivate the workloads, repeat the steps above and select the workloads you want to deactivate. The status will be set to **Not Active**.
 
-If you deactivate a workload, the roles created and edited within Microsoft 365 Defender RBAC won't be effective and you'll return to using the previous permissions model. This will remove any access that users assigned these roles have.
+If you deactivate a workload, the roles created and edited within Microsoft 365 Defender Unified RBAC won't be effective and you'll return to using the previous permissions model. This will remove any access that users assigned these roles have.
 
 ## Next steps
 
