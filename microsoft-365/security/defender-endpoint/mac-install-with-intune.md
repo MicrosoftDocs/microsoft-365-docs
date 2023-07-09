@@ -60,7 +60,9 @@ The following table summarizes the steps you would need to take to deploy and ma
 
 ## Download the onboarding package
 
-Download the onboarding packages from Microsoft 365 Defender portal:
+Download the onboarding packages from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 1. In Microsoft 365 Defender portal, go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
