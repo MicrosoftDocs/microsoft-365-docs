@@ -31,7 +31,7 @@ ms.date: 10/11/2022
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-Maintaining an accurate inventory of devices in a constantly changing corporate environment is a critical task for security and IT teams. Failing to properly manage device context, such as device value and tags, which many organizations use in their security workflows can lead to security vulnerabilities.
+Maintaining an accurate inventory of devices in a constantly changing corporate environment is a critical task for security and IT teams. Failing to effectively manage device context, such as device value and tags, which many organizations use in their security workflows can lead to security vulnerabilities.
 
 Devices may require updates, replacements, or reconfigurations due to changing business needs. This can create a significant challenge for security and IT teams who are responsible for the ongoing management of the device inventory, and ensuring devices are effectively tracked and managed over time.
 
