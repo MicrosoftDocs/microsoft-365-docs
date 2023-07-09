@@ -41,21 +41,19 @@ Dynamic rules also ensure device inventory remains relevant by removing tags or 
 
 This approach can help save time, improve accuracy, and ensure that devices are always properly categorized and tracked over time.
 
-## Create rules for alert notifications
+## Create a new rule
 
-With a new dynamic rule management experience, you will be able to create and manage rules for tagging devices and setting device value. You can use the “create a new rule” to open the rule creation wizard. Find this page in the following location: Setting à Microsoft 365 Defender à Asset rule management. 
+The following steps guide you on how to create a new rule in Microsoft 365 Defender RBAC.
 
-You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
-
-1. Go to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with the Security administrator or Global administrator role assigned.
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**
 3. Select **Create a new rule**
-4. Enter a **Rule name** and **Description**
-5. Create a rule condition
+4. Enter a **Rule name** and **Description** and select **Next**
+5. Select **Next** to choose the condition you want to assign:
+
+:::image type="content" source="../../media/defender/rule-conditions.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rule-conditions.png":::
 6. Select **Next**
 7. Choose the tag or asset values to apply to this rule and select **Next**
-8. Review all the settings for the new rule you created and select **Submit**
 
-## Related topics
-
-- [Tagging](../defender-endpoint/data-retention-settings.md)
+:::image type="content" source="../../media/defender/rules-to-apply.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply.png":::
+10. Select **Next** to review and finish creating the role and then select Submit.
