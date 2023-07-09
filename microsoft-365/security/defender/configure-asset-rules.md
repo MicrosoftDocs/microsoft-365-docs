@@ -79,4 +79,4 @@ You can see the dynamic tags assigned in the device inventory view. To see tags 
 
 Dynamic tags and device value can't be manually updated. To edit, delete or turn off a rule, select the rule you'd like to edit and choose the action you wish to take:
 
-:::image type="content" source="../../media/defender/update-rule.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/upd.png":::
+:::image type="content" source="../../media/defender/update-rule.png" alt-text="Screenshot of the rule details page" lightbox="../../media/defender/update-rule.png":::
