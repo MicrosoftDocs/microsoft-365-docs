@@ -35,13 +35,19 @@ Maintaining an accurate inventory of devices in a constantly changing corporate 
 
 Devices may require updates, replacements, or reconfigurations due to changing business needs. This can create a significant challenge for security and IT teams who are responsible for the ongoing management of the device inventory and ensuring devices are effectively tracked and managed over time.
 
-Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria. This will save time and ensures accuracy. For example, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention. Dynamic rules also ensure device inventory remains relevant by removing tags or updating values when criteria are no longer met.
+Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria. This will save time and ensures accuracy. For example, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention. Dynamic rules also ensure devices remain relevant by removing tags or updating values when criteria are no longer met.
+
+>[!Note]
+> Only users who can view and perform actions on all devices can create a new rule.
 
 ## Create a new dynamic rule
 
-With a new dynamic rule management experience, you will be able to create and manage rules for tagging devices and setting device value. You can use the “create a new rule” to open the rule creation wizard
+A rule can be based on device name, domain, OS Platform, internet facing status, onboarding status and manual device tags. You can choose one the following actions to perform based on the conditions you've set:
 
-The following steps guide you on how to create a new rule in Microsoft 365 Defender RBAC.
+- **Apply a tag**: Select or create a tag that will be applied to the rules you create.
+- **Set the asset value**: Define an asset’s value to the organization as high, normal, or low.
+
+The following steps guide you on how to create a new dynamic rule in Microsoft 365 Defender:
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.
@@ -56,9 +62,12 @@ The following steps guide you on how to create a new rule in Microsoft 365 Defen
 :::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply1.png":::
 8. Select **Next** to review and finish creating the role and then select Submit.
 
-### View dynamic rules in the device inventory
+>[!Note]
+> It may take up to 1 hour for changes to be reflected in the portal.
 
-View the  actions taken by dynamic rules in the device inventory
+### Dynamic tags in the device inventory
+
+You can see the dynamic tags assigned in the device inventory view. To see tags on individual devices:
 
 1. Select **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the **Device Inventory** page, select the device name that you want to view.
@@ -66,7 +75,8 @@ View the  actions taken by dynamic rules in the device inventory
 
 :::image type="content" source="../../media/defender/manage-machine-tags.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/manage-machine-tags.png":::
 
-Dynamic tags will have a distinct color to differentiate them from manual tags.
+### Updating rules
 
-You can view additional details, edit, turn off or delete rules in the dynamic rule management screen.
- 
+Dynamic tags and device value can't be manually updated. To edit, delete or turn off a rule, select the rule you'd like to edit and choose the action you wish to take:
+
+:::image type="content" source="../../media/defender/update-rule.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/upd.png":::
