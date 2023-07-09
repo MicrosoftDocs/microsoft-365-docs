@@ -56,4 +56,4 @@ The following steps guide you on how to create a new rule in Microsoft 365 Defen
 7. Choose the tag or asset values to apply to this rule and select **Next**
 
 :::image type="content" source="../../media/defender/rules-to-apply.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply.png":::
-10. Select **Next** to review and finish creating the role and then select Submit.
+8. Select **Next** to review and finish creating the role and then select Submit.
