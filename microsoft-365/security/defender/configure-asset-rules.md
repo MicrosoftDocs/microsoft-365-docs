@@ -59,7 +59,7 @@ The following steps guide you on how to create a new dynamic rule in Microsoft 3
 6. Select **Next**.
 7. Choose the tag or asset values to apply to this rule and select **Next**.
 
-:::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply1.png":::
+:::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the actions page" lightbox="../../media/defender/rules-to-apply1.png":::
 8. Select **Next** to review and finish creating the role and then select Submit.
 
 >[!Note]
@@ -73,7 +73,7 @@ You can see the dynamic tags assigned in the device inventory view. To see tags 
 2. In the **Device Inventory** page, select the device name that you want to view.
 3. Select **Manage tags**.
 
-:::image type="content" source="../../media/defender/manage-machine-tags.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/manage-machine-tags.png":::
+:::image type="content" source="../../media/defender/manage-machine-tags.png" alt-text="Screenshot of the machine tags page" lightbox="../../media/defender/manage-machine-tags.png":::
 
 ### Updating rules
 
