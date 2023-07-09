@@ -49,7 +49,7 @@ The following steps guide you on how to create a new dynamic rule in Microsoft 3
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
 2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.
 3. Select **Create a new rule**.
-4. Enter a **Rule name** and **Description** and select **Next**.
+4. Enter a **Rule name** and **Description***.
 5. Select **Next** to choose the conditions you want to assign:
 
 :::image type="content" source="../../media/defender/rule-conditions.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rule-conditions.png":::
