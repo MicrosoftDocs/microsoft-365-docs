@@ -46,14 +46,14 @@ This approach can help save time, improve accuracy, and ensure that devices are 
 The following steps guide you on how to create a new rule in Microsoft 365 Defender RBAC.
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
-2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**
-3. Select **Create a new rule**
-4. Enter a **Rule name** and **Description** and select **Next**
+2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.
+3. Select **Create a new rule**.
+4. Enter a **Rule name** and **Description** and select **Next**.
 5. Select **Next** to choose the condition you want to assign:
 
 :::image type="content" source="../../media/defender/rule-conditions.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rule-conditions.png":::
-6. Select **Next**
-7. Choose the tag or asset values to apply to this rule and select **Next**
+6. Select **Next**.
+7. Choose the tag or asset values to apply to this rule and select **Next**.
 
 :::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply1.png":::
 8. Select **Next** to review and finish creating the role and then select Submit.
@@ -66,7 +66,7 @@ View the  actions taken by dynamic rules in the device inventory
 2. In the **Device Inventory** page, select the device name that you want to view.
 3. Select **Manage tags**.
 
-   :::image type="content" alt-text="Manage machine tags flyout" source="../../media/defender-vulnerability-management/manage-machine-tags.png" lightbox="../../media/defender-vulnerability-management/manage-machine-tags.png":::
+:::image type="content" source="../../media/defender/manage-machine-tags.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/manage-machine-tags.png":::
 
 Dynamic tags will have a distinct color to differentiate them from manual tags.
 
