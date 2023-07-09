@@ -57,3 +57,18 @@ The following steps guide you on how to create a new rule in Microsoft 365 Defen
 
 :::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rules-to-apply1.png":::
 8. Select **Next** to review and finish creating the role and then select Submit.
+
+### View dynamic rules in the device inventory
+
+View the  actions taken by dynamic rules in the device inventory
+
+1. Select **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+2. In the **Device Inventory** page, select the device name that you want to view.
+3. Select **Manage tags**.
+
+   :::image type="content" alt-text="Manage machine tags flyout" source="../../media/defender-vulnerability-management/manage-machine-tags.png" lightbox="../../media/defender-vulnerability-management/manage-machine-tags.png":::
+
+Dynamic tags will have a distinct color to differentiate them from manual tags.
+
+You can view additional details, edit, turn off or delete rules in the dynamic rule management screen.
+ 
