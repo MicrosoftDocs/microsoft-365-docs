@@ -35,6 +35,23 @@ The more improvement actions you take, the higher your Secure Score will be. For
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
+## July 2023
+
+The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement actions:
+
+- Remove the attribute 'password never expires' from accounts in your domain
+- Remove access rights on suspicious accounts with the Admin SDHolder permission
+- Manage accounts with passwords more than 180 days old
+- Remove local admins on identity assets
+- Remove non-admin accounts with DCSync permissions
+- Start your Defender for Identity deployment, installing Sensors on Domain Controllers and other eligible servers
+
+The following Google workspace recommendation will be added as Microsoft Secure Score improvement actions:
+
+- Enable multi-factor authentication (MFA)
+
+In order to view this new control, Google workspace connector in Microsoft Defender for Cloud Apps must be configured via the App connectors settings page.
+
 ## May 2023
 
 A new Microsoft Exchange Online recommendation is now available as Secure Score improvement action:
