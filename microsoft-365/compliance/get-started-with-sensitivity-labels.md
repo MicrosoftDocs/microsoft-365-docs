@@ -1,11 +1,12 @@
 ---
+
 title: "Get started with sensitivity labels"
 f1.keywords:
 - CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/08/2023
+ms.date: 07/05/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -22,6 +23,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Prescriptive steps for admins, licensing requirements, and common scenarios that use sensitivity labels to help protect your organization's data."
+
 ---
 
 # Get started with sensitivity labels
@@ -78,7 +80,7 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for administrative units
 
-Now in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+Sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
 - You can assign administrative units to members of role groups that are used with Microsoft Purview Information Protection. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 
@@ -87,7 +89,7 @@ Now in preview, sensitivity labels support [administrative units that have been 
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the SharePoint location.
 
-For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 ## Deployment strategy for sensitivity labels
 
