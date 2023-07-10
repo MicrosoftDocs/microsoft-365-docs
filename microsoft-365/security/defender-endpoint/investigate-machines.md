@@ -149,12 +149,13 @@ To further inspect the event and related events, you can quickly run an [advance
 
 **Security recommendations** are generated from Microsoft Defender for Endpoint's [Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
-:::image type="content" source="images/security-recommendations-device.png" alt-text="The Security recommendations tab" lightbox="images/security-recommendations-device.png":::
+
 
 
 ### Security policies
 
 The **Security policies** tab shows the endpoint security policies that are applied on the device. You'll see a list of policies, type, status, and last check-in time. Selecting the name of a policy, will take you to the policy details page where you can see the policy settings status, applied devices, and assigned groups.
+
 
 :::image type="content" source="images/security-policies-tab.png" alt-text="The Security policies tab" lightbox="images/security-policies-tab.png":::
 
