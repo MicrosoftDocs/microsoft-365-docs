@@ -3,13 +3,13 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 07/06/2023
+ms.date: 07/10/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska, v-vutrieu
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
@@ -127,7 +127,7 @@ All our updates contain
   
 ### Known Issues  
 
-- None
+- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
 ### May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
 
@@ -810,3 +810,5 @@ For more information, see [Microsoft Defender update for Windows operating syste
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+
