@@ -82,7 +82,7 @@ Endpoint DLP monitors these file types through policy in Windows 10, 11 and in t
 
 
 ### Files audited regardless of policy match
-Activities on the following file types can be audited in Windows 10, 11, and in the latest three major releases of macOS, even if no policy match exists:
+Activities can be audited on these file types in Windows 10, 11, and in the latest three major releases of macOS, even if no policy match exists:
 
 | Windows 10, 11  | macOS  |
 | ----------| ------------|
