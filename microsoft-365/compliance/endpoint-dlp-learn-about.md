@@ -89,7 +89,7 @@ Activities can be audited on these file types in Windows 10, 11, and in the late
 |.doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst |
 
 > [!NOTE]
-> The following file types can also be audited, regardless of a policy match, in Windows 10, 11, so long as [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> These file types can be audited, regardless of a policy match, in Windows 10, 11, so long as [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
 > 
 > .jpg, .png, .tif, .tiff, .bmp, .jpeg
 
@@ -131,7 +131,7 @@ File types are a grouping of file formats. They are utilized to protect specific
 | File Type | Apps | Monitored file extensions |
 | --------- | ----- | --------------|
 | word processing | Word, PDF | .doc, .docx, .docm, .dot, dotx, .dotm, .docb, .pdf |
-| spreadsheet | Exel, CSV, TSV | .xls, .xlsx, .xlt, .xlm, .xlsm, xltx, xltm, xlsb, .xlw, .csv, .tsv |
+| spreadsheet | Excel, CSV, TSV | .xls, .xlsx, .xlt, .xlm, .xlsm, xltx, xltm, xlsb, .xlw, .csv, .tsv |
 | presentation | PowerPoint | .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx |
 | archive | File archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
 | email | Outlook | .pst, .ost, .msg |
