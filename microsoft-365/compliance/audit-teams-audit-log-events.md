@@ -100,7 +100,7 @@ Here's a list of all events that are logged for user and admin activities in Tea
 | Changed sensitivity label | SensitivityLabelChanged | A user changed a sensitivity label on a Teams meeting. |
 |Created a chat <sup>1, </sup> <sup>2</sup>|ChatCreated|A Teams chat was created.|
 |Created team|TeamCreated|A user creates a team.|
-|Deleted a message|MessageDeleted|A message in a chat or channel was deleted.|
+|Deleted a message <sup>2</sup>|MessageDeleted|A message in a chat or channel was deleted.|
 |Deleted all organization apps|DeletedAllOrganizationApps|Deleted all organization apps from the catalog.|
 |Deleted app|AppDeletedFromCatalog|An app has been deleted from the catalog.|
 |Deleted channel|ChannelDeleted|A user deletes a channel from a team.|

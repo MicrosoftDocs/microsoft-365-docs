@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 3/9/2023
+ms.date: 6/15/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -17,6 +17,9 @@ ms.collection:
 ms.custom:
 description: Admins can learn how long Defender for Office 365 features retain data.
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Data retention information for Microsoft Defender for Office 365
