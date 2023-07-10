@@ -36,7 +36,7 @@ This solution guide provides specific and actionable steps to strengthen your se
 
 - You're a global admin
 - You have successfully deployed [Microsoft Defender for Endpoint Plan 2](../security/defender-endpoint/microsoft-defender-endpoint.md)
-- You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](../security/defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
+- You're beyond the initial stage of onboarding devices and have a management tool in place to support future device onboarding. For more information on Onboarding devices, see [Onboarding and configuration tool options](../security/defender-endpoint/mde-planning-guide.md).
 
 ## Overview of the solution
 
