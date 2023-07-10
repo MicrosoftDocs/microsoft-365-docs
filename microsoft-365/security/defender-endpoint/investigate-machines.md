@@ -156,7 +156,7 @@ To further inspect the event and related events, you can quickly run an [advance
 
 The **Security policies** tab shows the endpoint security policies that are applied on the device. You'll see a list of policies, type, status, and last check-in time. Selecting the name of a policy, will take you to the policy details page where you can see the policy settings status, applied devices, and assigned groups.
 
-:::image type="content" source="images/security-policies-tab.png" alt-text="The Security policies tab" lightbox="images/security-policies-tab":::
+:::image type="content" source="images/security-policies-tab.png" alt-text="The Security policies tab" lightbox="images/security-policies-tab.png":::
 
 
 ### Software inventory
