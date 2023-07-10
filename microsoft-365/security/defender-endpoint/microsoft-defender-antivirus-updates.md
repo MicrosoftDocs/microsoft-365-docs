@@ -103,7 +103,6 @@ All our updates contain
 - Fixed warn notifications for two [attack surface reduction (ASR) rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
 - Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
-- Fixed [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) management for customers who have Microsoft 365 E3 or Defender for Endpoint Plan 1
 - Fixed a performance issue when building and validating Defender cache
 - Improved performance by removing redundant exclusion checks
  
