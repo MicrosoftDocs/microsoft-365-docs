@@ -1,11 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules deployment overview
 description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules. Links to topics that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
-keywords: Microsoft Defender for Endpoint (MDE) attack surface reduction rules, ASR rules intune, defender ASR rules, Windows 10 ASR rules, defender asr rules, ASR rules report, microsoft Attack surface reduction rules deployment, ASR rules event viewer, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,7 +16,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 03/31/2023
+ms.date: 07/06/2023
 search.appverid: met150
 ---
 
@@ -69,7 +64,7 @@ While you're going through the process of planning, auditing, and enable ASR rul
 Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 > [!NOTE]
-> For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules: Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.
+> For customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules, Microsoft advises running the HIPS solution alongside ASR rules deployment until the moment you shift from Audit mode to Block mode. Keep in mind that you must reach out to your non-Microsoft antivirus provider for exclusion recommendations.
 
 ## Before you begin testing or enabling ASR rules
 
