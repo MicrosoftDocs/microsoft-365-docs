@@ -1,11 +1,7 @@
 ---
 title: Identify internet-facing devices in Microsoft Defender for Endpoint
 description: Identify internet-facing devices in the device inventory list
-keywords: devices, internet-facing, internet-facing
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/7/2023
+ms.date: 07/10/2023
 ---
 
 # Internet-facing devices
