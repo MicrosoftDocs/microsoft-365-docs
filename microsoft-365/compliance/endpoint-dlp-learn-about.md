@@ -76,7 +76,7 @@ Endpoint DLP monitors these file types through policy in Windows 10, 11 and in t
 | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp, .txt, .c, .class, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst, .txt, .c, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config |
 
 > [!NOTE]
-> These file types can be monitored through policy settings in Windows 10, 11, if OCR[OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> These file types can be monitored through policy settings in Windows 10, 11, if [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
 > 
 > .jpg, .png, .tif, .tiff, .bmp, .jpeg
 
