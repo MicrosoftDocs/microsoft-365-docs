@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/17/2023
+ms.date: 06/20/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -237,7 +237,9 @@ For information about applying content flags that can detect adult, gory, and ra
 
 #### Language
 
-Communication compliance policies using classifiers inspect and evaluate messages that meet a minimum word count requirement, depending upon the language of the content. For a complete list of supported languages, word count requirements, and file types for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions). To identify and take action on messages containing inappropriate language content that don't meet the word count requirement, you can create a [custom keyword dictionary](#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
+Communication compliance policies using classifiers inspect and evaluate messages that meet a [minimum word count requirement](/microsoft-365/compliance/classifier-tc-definitions#word-count-requirements), depending upon the language of the content. For a complete list of supported languages, word count requirements, and file types for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions). 
+
+To identify and take action on messages containing inappropriate language content that don't meet the word count requirement, you can create a [sensitive information type](#sensitive-information-types) or [custom keyword dictionary](#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
@@ -250,16 +252,16 @@ Communication compliance policies using classifiers inspect and evaluate message
 | [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
 | [Regulatory collusion](classifier-tc-definitions.md#regulatory-collusion)| Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
 | [Stock manipulation](classifier-tc-definitions.md#stock-manipulation)| Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
-| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
+| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. |
 | [Unauthorized disclosure](classifier-tc-definitions.md#unauthorized-disclosure)| Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
+> Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature.
 
 ### Optical character recognition (OCR)
 
 > [!NOTE]
-> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time. 
+> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time.
 
 Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 

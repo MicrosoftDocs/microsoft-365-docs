@@ -1332,7 +1332,9 @@
             - name: Data loss prevention policy tip reference for Outlook for Microsoft 365
               href: dlp-ol365-win32-policy-tips.md       
             - name: Data loss prevention policy tip reference for Outlook on the Web
-              href: dlp-owa-policy-tips.md       
+              href: dlp-owa-policy-tips.md
+            - name: Data loss prevention policy tips reference for SharePoint Online and OneDrive for Business web client
+              href: dlp-spo-odbweb-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
