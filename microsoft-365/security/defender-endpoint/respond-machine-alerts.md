@@ -165,7 +165,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
 > [!IMPORTANT]
 >
-> - This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> - This action is supported for macOS and Linux for client version 101.98.84 and above. It is in preview. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 > - A Microsoft Defender Antivirus scan can run alongside other antivirus solutions, whether Microsoft Defender Antivirus is the active antivirus solution or not. Microsoft Defender Antivirus can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
@@ -213,7 +213,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 > [!IMPORTANT]
 >
-> - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
+> - Isolating devices from the network is supported for macOS for client version 101.98.84 and above. It is in preview. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md) 
 > - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 > - You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.

@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 6/30/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -76,9 +76,9 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Time received**<sup>\*</sup>
 - **Subject**<sup>\*</sup>
 - **Sender**<sup>\*</sup>
-- **Quarantine reason**<sup>\*</sup>
-- **Release status**<sup>\*</sup>
-- **Policy type**<sup>\*</sup>
+- **Quarantine reason**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
+- **Release status**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
+- **Policy type**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
 - **Expires**<sup>\*</sup>
 - **Recipient**
 - **Message ID**
@@ -115,6 +115,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
+  - **Admin action - File type block**: Messages blocked as malware by the common attachments filter in anti-malware policies. For more information, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).
 - **Recipient**: **All users** or **Only me**. End users can only manage quarantined messages sent to them.
 - **Release status**: Any of the following values:
   - **Needs review**
@@ -124,14 +125,16 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Released**
   - **Preparing to release**
   - **Error**
-- **Policy Type**: Filter messages by policy type:
+- **Policy type**: Filter messages by policy type:
   - **Anti-malware policy**
   - **Safe Attachments policy**
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
 
-When you're finished in the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+  The **Policy type** and **Quarantine reason** values are interrelated. For example, **Bulk** is always associated with an **Anti-spam policy**, never with an **Anti-malware policy**.
+
+When you're finished on the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
@@ -569,13 +572,13 @@ Back on the **Files** tab, the file is no longer listed.
 
 #### Take action on multiple quarantined files
 
-When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** dropdown list appears where you can take the following actions:
 
 - [Release quarantined files from quarantine](#release-quarantined-files-from-quarantine)
 - [Delete quarantined files from quarantine](#delete-quarantined-files-from-quarantine)
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 ## Use the Microsoft 365 Defender portal to manage quarantined messages in Microsoft Teams
 
