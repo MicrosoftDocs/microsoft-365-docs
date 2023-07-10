@@ -264,16 +264,16 @@ Users can install and open the app to start the onboarding process.
 
 
 ## Disable sign out
-Defender for Endpoint supports deployment without sign out button in the app to prevent users from signing out of the Defender app. This is important to prevent users from tampering the device.
+Defender for Endpoint allows you to deploy the app and disabling the sign out button. By hiding the sign out button, users are prevented from signing out of the Defender app. This action helps prevent tampering with the device when Defender for Endpoint isn't running.
 
 Use the following steps to configure the Disable sign out:
 
 1. In the Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
-2. Give the policy a **name**.
+2. Provide the policy a **name**.
 3. Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
 4. In the **Settings** page, under the **General Configuration Settings**, add **DisableSignOut** as the key and set the value as 1.
    - By default, Disable Sign Out = 0. 
-   - Admin needs to make Disable Sign Out = 1 to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed.
+   - Admin needs to make Disable Sign Out = 1 to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed to the device.
 5. Select **Next** and assign this profile to targeted devices/users.
 
 ## Related topics
