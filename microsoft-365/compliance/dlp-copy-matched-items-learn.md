@@ -28,7 +28,7 @@ To get started configuring and using the feature, see [Get started with collecti
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
-1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - This article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -77,7 +77,7 @@ These actions are configured in the DLP policy. For more information on how to c
 
 ### Regions for your Azure Storage accounts
 
-To comply with regulatory requirements, make sure that the Azure storage accounts that you use are in the same geopolitical or regulatory boundaries as the devices that they're being copied from. Also, be aware of the geopolitical location of the DLP investigators who will be accessing the sensitive items once they're saved. Consider using [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to scope the administration of the users and devices that the DLP policy will be scoped to. To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2239593&clcid=0x409). Evidence collection for file activities on devices supports up to 10 Azure storage accounts.
+To comply with regulatory requirements, make sure that the Azure storage accounts that you use are in the same geopolitical or regulatory boundaries as the devices that they're being copied from. Also, be aware of the geopolitical location of the DLP investigators who will be accessing the sensitive items once they're saved. Consider using [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) to scope the administration of the users and devices that the DLP policy will be scoped to. To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2239593&clcid=0x409). Evidence collection for file activities on devices supports up to 10 Azure storage accounts.
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2239593&clcid=0x409).
 
