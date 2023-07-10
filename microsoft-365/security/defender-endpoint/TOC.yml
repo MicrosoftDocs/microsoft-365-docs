@@ -735,6 +735,8 @@
     - name: Manage device configuration
       items:
 
+      - name: Manage endpoint security policies
+        href: manage-security-policies.md
       - name: Increase compliance with the security baseline
         href: configure-machines-security-baseline.md
       - name: Optimize attack surface reduction rule deployment and detections
