@@ -234,7 +234,6 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 > If you want to try out just-in-time protection, you must register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
 
 Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
-Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
 
 Just-in-time protection applies a candidate policy to onboarded Windows 10/11 devices. The candidate policy blocks all egress activities on monitored files until policy evaluation completes successfully. The candidate policy is applied to:
 
