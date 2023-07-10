@@ -41,7 +41,9 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 - Unstructured document processing (formerly document understanding)
 - Optical character recognition
 
-All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library.
+
+Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). To set up billing, see [Configure Microsoft Syntex for pay-as-you-go billing](syntex-azure-billing.md).
 
 ## Microsoft Syntex per-user licensing
 
