@@ -35,13 +35,12 @@ In Microsoft Purview Insider Risk Management, browser signal detection is used f
 
 ## Browsers and templates
 
-Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risk activities are performed by in-scope policy users when using these browsers:
+Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risky activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
 - Files printed to local or network devices
 - Files transferred or copied to a network share
 - Files copied to USB devices
-- Browsing risky websites
 - Browsing potentially risky websites
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
@@ -54,7 +53,7 @@ The following table summarizes identified risk activities and extension support 
 | Files printed to local or network devices | Native | Extension |
 | Files transferred or copied to a network share | Extension  | Extension  |
 | Files copied to USB devices | Extension   | Extension    |
-| Browsing risky websites     | Extension   | Extension    |
+| Browsing potentially risky websites     | Extension   | Extension    |
 
 The following table summarizes activities by template:
 
