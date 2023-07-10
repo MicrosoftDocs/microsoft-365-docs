@@ -446,6 +446,8 @@
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+        - name: Understanding detection technology in the email entity page of Microsoft Defender for Office 365
+          href: step-by-step-guides/understand-detection-technology-in-email-entity.md
         - name: Assess the impact of security configuration changes with Explorer
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
         - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365

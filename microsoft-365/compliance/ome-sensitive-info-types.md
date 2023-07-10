@@ -9,7 +9,7 @@ ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: null
+ms.localizationpriority: low
 search.appverid:
 - MET150
 ms.collection: 

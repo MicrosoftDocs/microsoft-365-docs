@@ -9,7 +9,7 @@ ms.date: 06/19/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.localizationpriority: null
+ms.localizationpriority: low
 ms.collection: 
 - tier1
 - purview-compliance
