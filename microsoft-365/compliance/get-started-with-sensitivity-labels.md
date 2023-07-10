@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 07/05/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -34,9 +34,11 @@ For information about what sensitivity labels are and how they can help you prot
 
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
-1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tooltip text to help users select the appropriate label.
+1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category.
     
-    For more extensive guidance for defining a classification taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
+    For each label, specify a tooltip to help users select the appropriate label and consider including specific examples. However, don't make the tooltip so long that users won't read it, and be aware that some apps might truncate long tooltips.
+    
+    For some tried and tested examples, see the label names and descriptions for the [default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). For more guidance about defining a classification taxonomy, see [Data classification & sensitivity label taxonomy](/assurance/assurance-data-classification-and-labels.md). Always test and tailor your label names and tooltips with the people who need to apply them.
 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and encryption.
 
