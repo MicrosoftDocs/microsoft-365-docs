@@ -19,7 +19,73 @@ description: Learn about licensing for Microsoft Syntex.
 
 # Licensing for Microsoft Syntex
 
-Microsoft Syntex currently has two types of licensing offerings:
+Microsoft Syntex uses pay-as-you-go licensing for new and renewing customers. With pay-as-you-go, you can use Syntex without any license commitment or upfront purchasing. Any user in your organization can use Syntex services and only pay if and when services are used.
+
+Pay-as-you-go requires an Azure subscription. Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). For information about how to set up pay-as-you-go, see [Configure Microsoft Syntex for pay-as-you-go billing](syntex-azure-billing.md).
+
+> [!NOTE]
+> Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
+
+## Pay-as-you-go services
+
+Pay-as-you-go currently supports the following Syntex services:
+
+- Prebuilt document processing
+- Unstructured document processing
+- Optical character recognition
+
+More Syntex services will be added as they become available.
+
+Syntex features that are not pay-as-you-go services will be made available through other Microsoft 365 licensing.
+
+## If you still have active per-user licenses
+
+As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using Syntex features.
+
+Users with active per-user licenses can perform the following tasks:
+
+- Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
+- Create a structured document processing model or a freeform document processing model via the entry point in a library
+- Upload content to a library where a custom model has been applied
+- Run an unstructured document processing model on-demand
+- Create a modern template with content assembly
+- Generate a document from a modern template
+- Use of content query to search for metadata
+- Use of annotations to add notes and comments
+- Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+- Use the document library rules to move or copy content
+ 
+### Per-user cost of training and running models
+ 
+The cost of training and running unstructured document processing models is included in the cost of a Syntex per-user license. However, the structured document processing and freeform document processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+
+For each Syntex per-user license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active Syntex per-user license. (Unused credits don't roll over from month to month.)
+
+You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
+
+If you plan to use a custom Power Platform environment, you must [allocate credits to that environment](/power-platform/admin/capacity-add-on).
+
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
+  
+#### Additional term store features
+
+Having one or more Syntex per-user licenses in your organization enables the following additional term store features for SharePoint admins:
+ 
+- SKOS-based term set import
+- Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
+- Term store reports providing insights into published term sets and their use across your tenant
+
+## Related topics
+
+[Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management)
+
+[Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
+
+[Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq)
+
+<!--
+
+Microsoft Syntex uses pay-as-you-go dcurrently has two types of licensing offerings:
 
 - [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go). This is the new way to pay for Microsoft Syntex using an Azure subscription, which allows you to get started with Microsoft Syntex without any license commitment or upfront purchasing.
 
@@ -30,6 +96,7 @@ The features available for each license type are described below. <!-- You can u
 
 <!--In the future, most new Microsoft Syntex features will be added to pay-as-you-go.
 -->
+<!--
 > [!NOTE]
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
@@ -51,7 +118,7 @@ Pay-as-you-go services are billed based on the [type and number of transactions]
 > As of July 1, 2023, purchasing per-user licenses is no longer available. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
 > Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using existing and new Syntex features.
 <!--<br><br>Some features currently available in the per-user licensing (such as annotations and content query) will not be included in Syntex pay-as-you-go, but will be included as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 licensing.-->
-
+<!--
 To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 
 #### Tasks requiring a per-user license
@@ -72,6 +139,7 @@ The following tasks require a [Syntex per-user license](https://www.microsoft.co
 > [!NOTE]
 > Some features currently available in the per-user licensing (such as annotations and content query) might not be billed as pay-as-you-go, but will still be available to you as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 subscription.
 -->
+<!--
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  
 #### Cost of training and running models
@@ -101,3 +169,5 @@ Having one or more Syntex per-user licenses in your organization enables the fol
 [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
 
 [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq)
+
+-->
