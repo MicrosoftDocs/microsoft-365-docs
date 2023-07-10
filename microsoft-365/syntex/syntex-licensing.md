@@ -1,10 +1,10 @@
 ---
 title: Licensing for Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
 ms.date: 03/06/2023
-manager: serdars
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

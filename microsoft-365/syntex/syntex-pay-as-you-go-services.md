@@ -1,9 +1,10 @@
 ---
 title: Pay-as-you-go services and pricing for Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-manager: serdars
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.reviewer: ssquires, kkameth
+ms.date: 03/06/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
