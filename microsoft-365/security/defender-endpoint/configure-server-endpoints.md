@@ -341,7 +341,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ## Next steps
 
-After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
+After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow [Configure capabilities](onboard-configure.md#configure-capabilities) to be guided on enabling the various components.
 
 ## Offboard Windows servers
 
