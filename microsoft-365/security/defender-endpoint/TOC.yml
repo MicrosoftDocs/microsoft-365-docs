@@ -87,68 +87,24 @@
         href: defender-endpoint-demonstration-potentially-unwanted-applications.md
       - name: URL reputation demonstrations
         href: defender-endpoint-demonstration-smartscreen-url-reputation.md
-  - name: Plan deployment
-    href: deployment-strategy.md
-
-  - name: Deployment guide
+ 
+  - name: Deploy Defender for Endpoint
     items:
-    - name: Deployment phases
-      href: deployment-phases.md
-    - name: Phase 1 - Prepare
-      href: prepare-deployment.md
-    - name: Phase 2 - Set up
+    - name: Overview
+      href: mde-planning-guide.md
+    - name: Step 1 - Set up Defender for Endpoint deployment
       href: production-deployment.md
-    - name: Phase 3 - Onboard
-      items:
-      - name: Onboarding overview
-        href: onboarding.md
-      - name: Deployment rings
-        href: deployment-rings.md
-      - name: Onboarding using Microsoft Configuration Manager
-        href: onboarding-endpoint-configuration-manager.md
-      - name: Onboarding using Microsoft Intune
-        href: onboarding-endpoint-manager.md
+    - name: Step 2 - Assign roles and permissions
+      href: prepare-deployment.md
+    - name: Step 3 - Identify your architecture and deployment method
+      href: deployment-strategy.md
+    - name: Step 4 - Onboard devices
+      href: onboarding.md
+    - name: Step 5 - Configure Microsoft Defender for Endpoint capabilities
+      href: onboard-configure.md
 
-  - name: Migration guides
-    items:
-    - name: Migration guides overview
-      href: migration-guides.md
-    - name: Migrate Defender for Endpoint servers to Defender for Cloud
-      href: migrating-mde-server-to-cloud.md
-    - name: Migrate to Defender for Endpoint
-      href: switch-to-mde-overview.md
-      items:
-      - name: Phase 1 - Prepare
-        href: switch-to-mde-phase-1.md
-      - name: Phase 2 - Setup
-        href: switch-to-mde-phase-2.md
-      - name: Phase 3 - Onboard
-        href: switch-to-mde-phase-3.md
-
-    - name: Manage Defender for Endpoint after migration or setup
-      items:
-      - name: Overview
-        href: manage-mde-post-migration.md
-      - name: Use Intune (recommended)
-        href: manage-mde-post-migration-intune.md
-      - name: Use Configuration Manager
-        href: manage-mde-post-migration-configuration-manager.md
-      - name: Use Group Policy
-        href: manage-mde-post-migration-group-policy-objects.md
-      - name: Use PowerShell, WMI, or MPCmdRun.exe
-        href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
-      - name: Server migration scenarios
-        items:
-        - name: Overview
-          href: server-migration.md
-        - name: Migrating servers from Microsoft Monitoring Agent to the unified solution
-          href: application-deployment-via-mecm.md
   - name: Onboard and configure devices
     items:
-    - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
-      href: onboard-configure.md
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -228,8 +184,6 @@
             href: linux-install-manually.md
           - name: Saltstack-based deployment
             href: linux-install-with-saltack.md
-            
-          
         - name: Update
           href: linux-updates.md
 
@@ -245,18 +199,12 @@
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
-
-    - name: Integration with Microsoft Defender for Cloud
-      href: azure-server-integration.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Run simulated attacks on devices
-      href: attack-simulations.md
     - name: Onboard devices without Internet access
       href: onboard-offline-machines.md
     - name: Configure proxy and Internet connectivity settings
       href: configure-proxy-internet.md
-
     - name: Configure Microsoft Defender for Endpoint on macOS
       items:
       - name: Configure and validate exclusions
@@ -306,67 +254,111 @@
         href: android-configure-mam.md
       - name: Configure Microsoft Defender for Endpoint on iOS features
         href: ios-configure-features.md
-
+  - name: How to guides
+    items:
+    - name: Integration with Microsoft Defender for Cloud
+      href: azure-server-integration.md
+    - name: Run simulated attacks on devices
+      href: attack-simulations.md
     - name: Create an onboarding or offboarding notification rule
       href: onboarding-notification.md
-
     - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
       href: security-config-management.md
-
     - name: Manage Defender for Endpoint P1/P2 across devices
       href: defender-endpoint-subscription-settings.md
-
-    - name: Configure portal settings
+    - name: Onboarding using Microsoft Configuration Manager
+      href: onboarding-endpoint-configuration-manager.md
+    - name: Onboarding using Microsoft Intune
+      href: onboarding-endpoint-manager.md
+ 
+  - name: Migration guides
+    items:
+    - name: Migration guides overview
+      href: migration-guides.md
+    - name: Migrate Defender for Endpoint servers to Defender for Cloud
+      href: migrating-mde-server-to-cloud.md
+    - name: Migrate to Defender for Endpoint
+      href: switch-to-mde-overview.md
       items:
-      - name: Configure general Defender for Endpoint settings
-        href: preferences-setup.md
-      - name: General
-        items:
-        - name: Configure alert notifications
-          href: ../defender/configure-email-notifications.md
-        - name: Configure vulnerability email notifications
-          href: configure-vulnerability-email-notifications.md
-        - name: Configure advanced features
-          href: advanced-features.md
+      - name: Phase 1 - Prepare
+        href: switch-to-mde-phase-1.md
+      - name: Phase 2 - Setup
+        href: switch-to-mde-phase-2.md
+      - name: Phase 3 - Onboard
+        href: switch-to-mde-phase-3.md
 
-      - name: Permissions
+    - name: Manage Defender for Endpoint after migration or setup
+      items:
+      - name: Overview
+        href: manage-mde-post-migration.md
+      - name: Use Intune (recommended)
+        href: manage-mde-post-migration-intune.md
+      - name: Use Configuration Manager
+        href: manage-mde-post-migration-configuration-manager.md
+      - name: Use Group Policy
+        href: manage-mde-post-migration-group-policy-objects.md
+      - name: Use PowerShell, WMI, or MPCmdRun.exe
+        href: manage-mde-post-migration-other-tools.md
+      - name: Updating MMA on Windows devices
+        href: update-agent-mma-windows.md
+      - name: Server migration scenarios
         items:
-        - name: Use basic permissions to access the portal
-          href: basic-permissions.md
-        - name: Assign user access to the portal
-          href: assign-portal-access.md
-        - name: Manage portal access using RBAC
-          href: rbac.md
-          items:
-          - name: Create and manage roles
-            href: user-roles.md
-          - name: Create and manage device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
+        - name: Overview
+          href: server-migration.md
+        - name: Migrating servers from Microsoft Monitoring Agent to the unified solution
+          href: application-deployment-via-mecm.md
 
-      - name: Rules
+  - name: Configure portal settings
+    items:
+    - name: Configure general Defender for Endpoint settings
+      href: preferences-setup.md
+    - name: General
+      items:
+      - name: Configure alert notifications
+        href: ../defender/configure-email-notifications.md
+      - name: Configure vulnerability email notifications
+        href: configure-vulnerability-email-notifications.md
+      - name: Configure advanced features
+        href: advanced-features.md
+
+    - name: Permissions
+      items:
+      - name: Use basic permissions to access the portal
+        href: basic-permissions.md
+      - name: Assign user access to the portal
+        href: assign-portal-access.md
+      - name: Manage portal access using RBAC
+        href: rbac.md
         items:
-        - name: Manage suppression rules
-          href: manage-suppression-rules.md
-        - name: Create indicators
-          href: manage-indicators.md
-          items:
-          - name: Create indicators for files
-            href: indicator-file.md
-          - name: Create indicators for IPs and URLs/domains
-            href: indicator-ip-domain.md
-          - name: Create indicators for certificates
-            href: indicator-certificates.md
-          - name: Manage indicators
-            href: indicator-manage.md
+        - name: Create and manage roles
+          href: user-roles.md
+        - name: Create and manage device groups
+          href: machine-groups.md
+        - name: Create and manage device tags
+          ref: machine-tags.md
+
+    - name: Rules
+      items:
+      - name: Manage suppression rules
+        href: manage-suppression-rules.md
+      - name: Create indicators
+        href: manage-indicators.md
+        items:
+        - name: Create indicators for files
+          href: indicator-file.md
+        - name: Create indicators for IPs and URLs/domains
+          href: indicator-ip-domain.md
+        - name: Create indicators for certificates
+          href: indicator-certificates.md
+        - name: Manage indicators
+          href: indicator-manage.md
         - name: Manage automation file uploads
           href: manage-automation-file-uploads.md
         - name: Manage automation folder exclusions
           href: manage-automation-folder-exclusions.md
 
-      - name: Device management
-        items:
+    - name: Device management
+      items:
         - name: Onboarding devices
           href: onboard-configure.md
         - name: Offboarding devices
@@ -376,9 +368,8 @@
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
 
-
-      - name: Configure time zone settings
-        href: time-settings.md
+    - name: Configure time zone settings
+      href: time-settings.md
 
   - name: Detect threats and protect endpoints
     items:
