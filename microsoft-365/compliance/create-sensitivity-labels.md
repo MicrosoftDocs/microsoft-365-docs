@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 07/05/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -51,7 +51,7 @@ The global admin for your organization has full permissions to create and manage
     :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Create a sensitivity label." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
-    > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
+    > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels). If you need guidance to create new labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#guidance-sensitivity-label-names-descriptions).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they'll be visible when they're published:
     
