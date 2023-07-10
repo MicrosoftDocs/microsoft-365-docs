@@ -26,7 +26,7 @@ ms.custom:
 - adminvideo
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 06/16/2023
+ms.date: 07/11/2023
 ---
 
 # Try or buy a Microsoft 365 for business subscription
@@ -67,7 +67,7 @@ Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao 
 
 ## Try a free trial subscription
 
-Use the following steps to create an account and sign up for a free trial subscription of Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business.
+To create an account and sign up for a free trial subscription of Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business, use the following steps.
 
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products</a> site.
 2. Select the plan that you want, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
@@ -85,18 +85,18 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 **If you have an MCA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
-    - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>** page and select the trial subscription that you want to extend.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Trial subscription** section, select **Extend trial end date**.
 3. In the **Extend your trial's end date** pane, review the extension information, and, if necessary, select a payment method.
 4. Select **Extend trial**.
 
 **If you have a MOSA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. and do one of the following:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
-    - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>** page and select the trial subscription that you want to extend.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
 3. In the **Extend end date** pane, select a payment method to use, or add a new one.
 4. Select **Extend trial**.
@@ -111,17 +111,17 @@ If you want to buy your subscription before your trial is over, use the followin
 
 **If you have an MCA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
-    - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>** page and select the trial subscription that you want to buy.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, select **Start a paid subscription now**.
 3. In the **Start a paid subscription now** pane, enter the number of licenses that you want, select a subscription length and billing frequency, then select **Change plan**.
 
 **If you have a MOSA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and do one of the following:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
-    - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>** page and select the trial subscription that you want to buy.
+    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, in the **License** section, select **Buy paid subscription now**.
 3. In the **Buy subscription** pane, choose a monthly or annual commitment for your subscription, then select **Checkout**.
 4. On the **Checkout** page, verify the information, including **Items in this order**, then select **Place order**.
@@ -134,15 +134,15 @@ If you decide to cancel your trial subscription before the free trial period end
 
 If you already have a Microsoft 365 for business subscription, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to try a different subscription.
 
-When you add a subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>], the new subscription is associated with the same organization (domain namespace) as your existing subscription. This association makes it easier to move users in your organization between subscriptions, or to assign them a license for the other products they need.
+When you add a subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This association makes it easier to move users in your organization between subscriptions, or to assign them a license for the other products they need.
 
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
 **If you have an MCA billing account type:**
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>** page.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
 3. In the **Select a plan** drop-down list, select the trial plan.
 4. Enter the number of licenses that you want to buy when the trial ends.
@@ -156,9 +156,9 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 
 **If you have a MOSA billing account type:**
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>** page.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
 3. On the next page, enter the number of licenses that you want to buy when the trail ends, then select **Start free trial**.
     > [!NOTE]
@@ -172,7 +172,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 
 As your users change roles, they might need features that aren't available in their current Microsoft 365 for business subscription. When this happens, you can add a new subscription that includes those features and assign licenses to the people who need them.
 
-When you buy another subscription through the Microsoft 365 admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This makes it easier to [move users in your organization between subscriptions](subscriptions/move-users-different-subscription.md), or to [assign them a license](../admin/manage/assign-licenses-to-users.md) for another subscription they need.
+When you buy another subscription through the Microsoft 365 admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This association makes it easier to [move users in your organization between subscriptions](subscriptions/move-users-different-subscription.md), or to [assign them a license](../admin/manage/assign-licenses-to-users.md) for another subscription they need.
 
 If you want to move all of your users to a different subscription, see [Upgrade or change to a different Microsoft 365 for business plan](subscriptions/upgrade-to-different-plan.md).
 
@@ -183,9 +183,9 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 **If you have an MCA billing account type:**
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>** page.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
 3. On the product details page, in the **Select a plan** drop-down list, select the plan, and enter the number of licenses that you want to buy. Select a subscription length and billing frequency, then select **Buy**.
 4. In the **Checkout** pane, choose the billing profile that you want to use, or add a new one.
@@ -200,9 +200,9 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, and do one of the following:
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>** page.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
 3. On the product details page, enter the number of licenses that you need, select a billing frequency, then select **Buy**.
 4. On the **Checkout** page, verify the **Sold to** information. Select a payment method or add a new one. Verify the number of licenses that you need, then select **Place order**.
@@ -225,9 +225,9 @@ If you upgraded to Microsoft 365 Business Premium, use the steps in the Business
 
 ## Related content
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video)\
-[Add users and assign licenses at the same time](../admin/add-users/add-users.md) (article)\
-[Assign licenses to users](../admin/manage/assign-licenses-to-users.md) (article)\
-[Upgrade to a different plan](subscriptions/upgrade-to-different-plan.md) (article)\
-[Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md) (article)\
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video) \
+[Add users and assign licenses at the same time](../admin/add-users/add-users.md) (article) \
+[Assign licenses to users](../admin/manage/assign-licenses-to-users.md) (article) \
+[Upgrade to a different plan](subscriptions/upgrade-to-different-plan.md) (article) \
+[Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md) (article) \
 [Add storage space for your subscription](add-storage-space.md) (article)
