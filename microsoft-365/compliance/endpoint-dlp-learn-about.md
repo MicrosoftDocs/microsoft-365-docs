@@ -68,29 +68,30 @@ See [Design a data loss prevention policy](dlp-policy-design.md) for more guidan
 
 ## Monitored files
 
-Endpoint DLP supports monitoring of these file types through policy:
+### Files monitored via policy
+Endpoint DLP monitors these file types through policy in Windows 10, 11 and in the latest three major releases of macOS:
 
-- Word files
-- PowerPoint files
-- Excel files
-- PDF files
-- .csv files
-- .tsv files
-- .txt files
-- .rtf files
-- .c files
-- .class files (Windows only)
-- .cpp files
-- .cs files
-- .h files
-- .java files
- 
-DLP audits the activities for these file types, even if there isn't a policy match: 
+| Windows 10, 11  | macOS  |
+| ----------| ------------|
+| .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp, .txt, .c, .class, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst, .txt, .c, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config |
 
-- Word files
-- PowerPoint files
-- Excel files
-- PDF files
+> [!NOTE]
+> These file types can be monitored through policy settings in Windows 10, 11, if [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> 
+> .jpg, .png, .tif, .tiff, .bmp, .jpeg
+
+
+### Files audited regardless of policy match
+Activities can be audited on these file types in Windows 10, 11, and in the latest three major releases of macOS, even if no policy match exists:
+
+| Windows 10, 11  | macOS  |
+| ----------| ------------|
+|.doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst |
+
+> [!NOTE]
+> These file types can be audited, regardless of a policy match, in Windows 10, 11, so long as [OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> 
+> .jpg, .png, .tif, .tiff, .bmp, .jpeg
 
 [!INCLUDE [dlp-pdf-adobe-requirements](../includes/dlp-pdf-adobe-requirements.md)]
 
@@ -125,15 +126,15 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. File types are supported for Windows 10/11 devices. 
+File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
 
-|File Type |App  |Monitored file extensions  |
-|---------|---------|---------|
-|word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
-|spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
-|presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
-|email    |Outlook |.pst, .ost, .msg         |
+| File Type | Apps | Monitored file extensions |
+| --------- | ----- | --------------|
+| word processing | Word, PDF | .doc, .docx, .docm, .dot, dotx, .dotm, .docb, .pdf |
+| spreadsheet | Excel, CSV, TSV | .xls, .xlsx, .xlt, .xlm, .xlsm, xltx, xltm, xlsb, .xlw, .csv, .tsv |
+| presentation | PowerPoint | .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx |
+| archive | File archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz |
+| email | Outlook | .pst, .ost, .msg |
 
 
 ### File extensions
