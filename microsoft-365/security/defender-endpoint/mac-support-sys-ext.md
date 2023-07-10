@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on Mac
-description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on Mac.
+title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS
+description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ ms.date: 06/07/2023
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/get-started/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https%3a%2f%2faka.ms%2fMDEp2OpenTrial%3focid%3ddocs-wdatp-exposedapis-abovefoldlink&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1&signedinuser=v-smandalika%40microsoft.com)
 
-You can submit feedback by opening Microsoft Defender for Endpoint on Mac on your device and by navigating to **Help > Send feedback**.
+You can submit feedback by opening Microsoft Defender for Endpoint on Mac on your device and by navigating to **Help > Send feedback**.
 
 Another option is to submit feedback via the Microsoft 365 Defender by launching **security.microsoft.com** and selecting the **Give feedback** tab.
 
@@ -80,7 +80,7 @@ The output report displayed on running **mdatp health** is shown in the followin
 
 ## Cause 
 
-macOS requires that a user manually and explicitly approves certain functions that an application uses, for example, system extensions, running in background, sending notifications, full disk access, and so on. Microsoft Defender for Endpoint relies on these functions and can't properly function until all these consents are received from a user.
+macOS requires that a user manually and explicitly approves certain functions that an application uses, for example, system extensions, running in background, sending notifications, full disk access, and so on. Microsoft Defender for Endpoint relies on these applications and can't properly function until all these consents are received from a user.
 
 If you didn't approve the system extension during the deployment/installation of Microsoft Defender for Endpoint on macOS, perform the following steps:
 
@@ -150,18 +150,18 @@ If you're using JamF, use sudo jamf policy. For more information, see [Policy Ma
 The section [Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint](#sections-that-provide-guidance-on-enabling-profiles-needed-for-microsoft-defender-for-endpoint) provides guidance on how to address this issue, depending on the method that you used to deploy Microsoft Defender for Endpoint on macOS.
 
 > [!NOTE]
-> A proper naming convention for your configuration profiles is a real advantage. I follow the following naming scheme:
+> A proper naming convention for your configuration profiles is a real advantage. We recommend the following naming scheme:
 > `Name of the Setting(s) [(additional info)] -Platform - Set - Policy-Type`
 > For example, `FullDiskAccess (piloting) - macOS - Default - MDE`
 
-When you use the naming convention that's been specified in the preceding note, it helps you quickly take a look and ensure that the correct profiles are coming down when the profiles are being checked.
+Using the recommended naming convention enables you to confirm that the correct profiles are dropping down at the time of checking.
 
 > [!TIP]
 > To ensure that the correct profiles are coming down, instead of typing **.mobileconfig (plist)**, you can download this profile from Github, to avoid typos elongated hyphens.
 
 In terminal, enter the following syntax:
 
-curl -O https://URL
+`curl -O https://URL`
 
 For example,
 
@@ -188,7 +188,7 @@ For example,
    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py
 ```
 
-1. Run the profile analyzer python3 script without any parameters by executing the following command in terminal:
+4. Run the profile analyzer python3 script without any parameters by executing the following command in terminal:
 
 ```BashCopy
    cd /Downloads  
@@ -200,7 +200,7 @@ For example,
 
 OR
 
-1. Run the script directly from the Web by executing the following command:
+5. Run the script directly from the Web by executing the following command:
 
 ```BashCopy
    sudo curl https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py        
@@ -221,7 +221,7 @@ To approve the system extensions:
 1. In Intune, select **Manage > Device configuration**, and then select **Manage > Profiles > Create Profile**.
 1. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**x, and then select **Create**.
 1. In the **Basics** tab, give a name to this new profile.
-1. In the **Configuration settings** tab, add the following entries (described in the following table) in the **Allowed system extensions** section:
+1. In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:
 
    |Bundle identifier  |Team identifier  |
    |---------|---------|
@@ -233,7 +233,7 @@ To approve the system extensions:
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-##### Create the Custom Configuration Profile
+##### Create the custom configuration profile
 
 The custom configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension.
 
@@ -363,7 +363,7 @@ sysext.xml: OK
 To approve the system extensions, perform the following steps:
 
 1.	Select **Computers > Configuration Profiles**, and then select **Options > System Extensions**.
-2.	Select **Allowed System Extensions** from the **System Extension Types** dropdown list.
+2.	Select **Allowed System Extensions** from the **System Extension Types** drop-down list.
 3.	Use **UBF8T346G9** for Team ID.
 4.	Add the following bundle identifiers to the **Allowed System Extensions** list:
     - com.microsoft.wdav.epsext
