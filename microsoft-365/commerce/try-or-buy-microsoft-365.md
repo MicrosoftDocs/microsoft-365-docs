@@ -49,7 +49,7 @@ You don't need an existing Microsoft account to sign up for a free trial.
 For all other procedures in this article, the following items are required:
 
 - You must have a Microsoft account, and you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
-- [Find out what type of billing account you have](manage-billing-accounts.md).
+- [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Understand billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ::: moniker range="o365-21vianet"
@@ -85,7 +85,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 **If you have an MCA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Trial subscription** section, select **Extend trial end date**.
@@ -94,7 +94,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 **If you have a MOSA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
@@ -111,7 +111,7 @@ If you want to buy your subscription before your trial is over, use the followin
 
 **If you have an MCA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, select **Start a paid subscription now**.
@@ -119,7 +119,7 @@ If you want to buy your subscription before your trial is over, use the followin
 
 **If you have a MOSA billing account type:**
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, in the **License** section, select **Buy paid subscription now**.
