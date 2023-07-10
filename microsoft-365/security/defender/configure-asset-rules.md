@@ -35,7 +35,7 @@ Maintaining an accurate inventory of devices in a constantly changing corporate 
 
 Devices may require updates, replacements, or reconfigurations due to changing business needs. This can create a significant challenge for security and IT teams who are responsible for the ongoing management of the device inventory, and ensuring devices are effectively tracked and managed over time.
 
-Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria. This will save time and ensures accuracy. For example, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention. Dynamic rules also ensure devices remain relevant by removing tags or updating values when criteria are no longer met.
+Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria. This will save time and ensure accuracy. For example, tagging devices with a specific OS version or assigning a value to devices with a particular naming convention. Dynamic rules also ensure devices remain relevant by removing tags or updating values when criteria are no longer met.
 
 ## Create a new dynamic rule
 
