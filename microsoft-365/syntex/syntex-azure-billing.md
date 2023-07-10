@@ -21,7 +21,7 @@ description: Learn about how to set up pay-as-you-go Azure billing for Microsoft
 
 Some Microsoft Syntex features are billed on a pay-as-you-go basis. These features use an Azure subscription for billing and track usage and cost with a Syntex meter. Read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms) before you configure pay-as-you-go.
 
-For a list of Microsoft Syntex features that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md)
+For a list of Microsoft Syntex features that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
 Note that if you use [Microsoft Syntex per-user licensing](set-up-content-understanding.md) you can't sign up for pay-as-you-go.
 
@@ -34,7 +34,7 @@ To use Microsoft Syntex pay-as-you go, you need:
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
-For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
