@@ -87,6 +87,7 @@ Devices on your network must be running one of these editions. New features or c
   - Windows Server 2019 and later
   - Windows Server 2019 core edition
   - Windows Server 2022
+  - Windows Server 2022 core edition
 - Azure Virtual Desktop
 - Windows 365 running one of the above operating systems/versions
 
