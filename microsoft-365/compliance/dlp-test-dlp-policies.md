@@ -33,7 +33,7 @@ When you deploy a new policy, [you should run it in test mode,](dlp-overview-pla
 ### Before you begin
 
 - You must be able to connect to [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
-- You must have a valid smtp address to send the report to. For example: `dlp_admin@contoso.com`
+- You must have a valid SMTP address to send the report to. For example: `dlp_admin@contoso.com`
 - You must get the site ID where the item is located.
 - You must have the direct link path to the item.
 
@@ -55,9 +55,9 @@ To see which DLP policies an item will match, follow these steps:
 
 1. In the details pane, scroll down and select **Path**. Copy the direct link and save it.
 
-For example:
+   For example:
 
-`https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx`
+   `https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx`
 
 #### Get the site ID
 
@@ -65,38 +65,39 @@ For example:
 
 1. For SharePoint, use the following syntax to get the site ID and save it:
 
-```PowerShell
+    ```PowerShell
 
-$reportAddress = "email@contoso.com" 
+    $reportAddress = "email@contoso.com" 
 
-$siteName = "SITENAME@TENANT.onmicrosoft.com" 
+    $siteName = "SITENAME@TENANT.onmicrosoft.com" 
 
-$filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  
+    $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  
 
-$r = Get-Mailbox -Identity $siteName -GroupMailbox 
+    $r = Get-Mailbox -Identity $siteName -GroupMailbox 
 
-$e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
+    $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
 
-Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
+    Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
 
-```
+    ```
 
-3. For OneDrive use the following syntax to get the site id and save it.
-```PowerShell
+3. For OneDrive use the following syntax to get the site ID and save it.
 
-$reportAddress = "email@contoso.com" 
+    ```PowerShell
 
-$odbUser = "USER@TENANT.onmicrosoft.com" 
+    $reportAddress = "email@contoso.com" 
 
-$filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" 
+    $odbUser = "USER@TENANT.onmicrosoft.com" 
 
-$r = Get-Mailbox -Identity $odbUser 
+    $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" 
 
-$e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
+    $r = Get-Mailbox -Identity $odbUser 
 
-Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
+    $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
 
-```
+    Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
+
+    ```
 
 Here's an example of a returned value:
 
@@ -104,11 +105,11 @@ Here's an example of a returned value:
 
 #### Run Test-DlpPolicies
 
-1. Run the following syntax in the PowerShell window:
+- Run the following syntax in the PowerShell window:
 
-```powershell
-Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
-```
+   ```powershell
+   Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
+   ```
 
 For example:
 
@@ -141,3 +142,4 @@ The report is sent to the SMTP address that you passed the Test-DlpPolicies Powe
 
 - [Test-DataClassification](/powershell/module/exchange/test-dataclassification) explains how to use the PowerShell cmdlet `Test-DataClassification `.
 - [Test-Message](/powershell/module/exchange/test-message) explains how to use the PowerShell cmdlet `Test-Message`.
+- 
