@@ -1,5 +1,5 @@
 ---
-title: Map Microsoft 365 Defender unified role-based access control (RBAC) permissions
+title: Map Microsoft 365 Defender Unified role-based access control (URBAC) permissions
 description: Compare permissions and access to Microsoft 365 Defender Security portal experiences using role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -21,11 +21,11 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Map Microsoft 365 Defender unified role-based access control (RBAC) permissions
+# Map Microsoft 365 Defender Unified role-based access control (URBAC) permissions
 
-All permissions listed within the Microsoft 365 Defender unified RBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender unified RBAC model the permissions and assignments configured in your imported roles will replace the existing roles in the individual RBAC models.
+All permissions listed within the Microsoft 365 Defender URBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender URBAC model the permissions and assignments configured in your imported roles will replace the existing roles in the individual RBAC models.
 
-This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Azure Active Directory roles map to the roles and permission in the Microsoft 365 Defender unified RBAC model.
+This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Azure Active Directory roles map to the roles and permission in the Microsoft 365 Defender URBAC model.
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,18 +38,18 @@ This article describes how existing roles and permissions in Microsoft Defender 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Map Microsoft 365 Defender unified RBAC permissions to existing RBAC permissions
+## Map Microsoft 365 Defender URBAC permissions to existing RBAC permissions
 
-Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender unified RBAC roles:
+Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender URBAC roles:
 
 1. [Map Defender for Endpoint permissions](#map-defender-for-endpoint-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 4. [Azure Active Directory Global roles access](#azure-active-directory-global-roles-access)
 
-### Map Defender for Endpoint permissions to the Microsoft 365 Defender unified RBAC permissions
+### Map Defender for Endpoint permissions to the Microsoft 365 Defender URBAC permissions
 
-|Defender for Endpoint permission|Microsoft 365 Defender unified RBAC permission|
+|Defender for Endpoint permission|Microsoft 365 Defender URBAC permission|
 |---|---|---|
 |View data - Security operations|Security operations \ Security data \ Security data basics (read)|
 |View data - Threat and vulnerability management|Security posture \ Posture management \ Vulnerability management (read)|
@@ -65,9 +65,9 @@ Use the tables in the following sections to learn more about how your existing i
 |Manage portal system settings|Authorization and settings \ System setting (All permissions)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
-### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender unified RBAC permissions
+### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender URBAC permissions
 
-|Defender for Office (EOP) role group|Microsoft 365 Defender unified RBAC permission|
+|Defender for Office (EOP) role group|Microsoft 365 Defender URBAC permission|
 |---|---|---|
 |Security reader|Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security setting (read) </br>Authorization and settings \ System setting (read)|
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security setting (read) </br>Authorization and settings \ System setting (read)|
@@ -83,9 +83,9 @@ Use the tables in the following sections to learn more about how your existing i
 |Quarantine|Security operations \ Security data \ Email quarantine (manage)|
 |Role Management|Authorization and settings \ Authorization (All permissions)|
 
-### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender unified RBAC permissions
+### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender URBAC permissions
 
-|Defender for Identity permission|Unified RBAC permission|
+|Defender for Identity permission|URBAC permission|
 |---|---|---|
 |MDI admin|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage)</br>Authorization and settings \ Authorization (All permissions) </br>Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System setting (All permissions)|
 |MDI user|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System setting (read)|
@@ -98,9 +98,9 @@ Use the tables in the following sections to learn more about how your existing i
 
 Users assigned with Azure Active Directory global roles may also have access to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
-Use this table to learn about the permissions assigned by default for each workload (Defender for Endpoint, Defender for Office and Defender for Identity) in Microsoft 365 Defender unified RBAC to each global Azure Active Directory role.
+Use this table to learn about the permissions assigned by default for each workload (Defender for Endpoint, Defender for Office and Defender for Identity) in Microsoft 365 Defender URBAC to each global Azure Active Directory role.
 
-|AAD role|Microsoft 365 Defender unified RBAC assigned permissions for all workloads|Microsoft 365 Defender unified RBAC assigned permissions – workload specific|
+|AAD role|Microsoft 365 Defender URBAC assigned permissions for all workloads|Microsoft 365 Defender URBAC assigned permissions – workload specific|
 |---|---|---|---|
 |Global administrator|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage) </br>Security operations \ Security data \ Response (manage) </br> Security posture \ Posture management \ Secure score (read) </br> Security posture \ Posture management \ Secure score (manage)</br>Authorization and settings \ Authorization \ (All permissions)</br>Authorization and settings \ Security settings \ (All permissions)</br>Authorization and settings \ System settings \ (All permissions)</br>|_**Defender for Endpoint only permissions**_ </br>Security operations \ Basic live response (manage)</br>Security operations \ Advanced live response (manage)</br>Security posture \ Posture management \ Vulnerability management (read)</br>Security posture \ Posture management \ Exception handling (manage)</br>Security posture \ Posture management \ Remediation handling (manage)</br>Security posture \ Posture management \ Application handling (manage)</br>Security posture \ Posture management \ Security baseline assessment (manage)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Email quarantine (manage)</br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)|
 |Security administrator|Same as Global administrator|Same as Global administrator|
@@ -117,9 +117,9 @@ Use this table to learn about the permissions assigned by default for each workl
 |Billing admin|not applicable|not applicable|
 
 > [!NOTE]
-> By activating the Microsoft 365 Defender unified RBAC model, users with Security reader and Global reader roles will have access to Defender for Endpoint data.
+> By activating the Microsoft 365 Defender URBAC model, users with Security reader and Global reader roles will have access to Defender for Endpoint data.
 
 ## Next steps
 
 - [Import existing RBAC roles](import-rbac-roles.md)
-- [Activate Microsoft 365 Defender unified RBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender URBAC](activate-defender-rbac.md)
