@@ -151,7 +151,7 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
 
-## More Syntex features
+## Other features
 
 ### Content compliance
 
