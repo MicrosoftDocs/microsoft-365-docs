@@ -23,7 +23,7 @@ Microsoft Syntex currently has two types of licensing offerings:
 
 - [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go). This is the new way to pay for Microsoft Syntex using an Azure subscription, which allows you to get started with Microsoft Syntex without any license commitment or upfront purchasing.
 
-- [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing). As of July 1, 2023, purchasing per-user licensing for new or renewing customers is no longer available. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).
+- [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing). As of July 1, 2023, purchasing per-user licenses is no longer available. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).
 
 <!--
 The features available for each license type are described below. <!-- You can use both licenses if you need to.-->
@@ -48,7 +48,7 @@ Pay-as-you-go services are billed based on the [type and number of transactions]
 ## Microsoft Syntex per-user licensing
 
 > [!NOTE]
-> As of July 1, 2023, purchasing per-user licensing for new or renewing customers is no longer available. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
+> As of July 1, 2023, purchasing per-user licenses is no longer available. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
 > Customers with existing per-user licenses purchased before July 1 can still assign those licenses to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using existing and new Syntex features.
 <!--<br><br>Some features currently available in the per-user licensing (such as annotations and content query) will not be included in Syntex pay-as-you-go, but will be included as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 licensing.-->
 
