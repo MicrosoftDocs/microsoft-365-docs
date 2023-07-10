@@ -331,7 +331,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 4. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-5. For the page **Assign admin units**: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), auto-labeling policies for Exchange and OneDrive can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+5. For the page **Assign admin units**: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), auto-labeling policies for Exchange and OneDrive can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
     
