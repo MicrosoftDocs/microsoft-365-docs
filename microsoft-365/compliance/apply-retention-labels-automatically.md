@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 06/23/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -142,7 +142,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
-4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
@@ -354,9 +354,6 @@ To consider when using trainable classifiers to auto-apply retention labels:
 - You can't auto-label SharePoint and OneDrive items that are older than six months.
 
 #### Auto-apply labels to cloud attachments
-
-> [!NOTE]
-> Support for cloud attachments that are shared in Yammer is in preview.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
 
