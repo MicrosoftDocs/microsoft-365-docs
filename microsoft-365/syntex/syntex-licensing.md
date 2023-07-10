@@ -40,7 +40,7 @@ Syntex features that are not pay-as-you-go services will be made available throu
 
 ## If you still have active per-user licenses
 
-As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using Syntex features.
+As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using Syntex services.
 
 Users with active per-user licenses can perform the following tasks:
 
@@ -54,10 +54,10 @@ Users with active per-user licenses can perform the following tasks:
 - Use of annotations to add notes and comments
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 - Use the document library rules to move or copy content
+
+### AI Builder considerations
  
-### Per-user cost of training and running models
- 
-The cost of training and running unstructured document processing models is included in the cost of a Syntex per-user license. However, the structured document processing and freeform document processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+Structured and freeform document processing use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
 
 For each Syntex per-user license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active Syntex per-user license. (Unused credits don't roll over from month to month.)
 
