@@ -37,7 +37,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## July 2023
 
-The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement actions:
+The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement action:
 
 - Remove the attribute 'password never expires' from accounts in your domain
 - Remove access rights on suspicious accounts with the Admin SDHolder permission
