@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/28/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -83,7 +83,7 @@ Now rolling out in preview, records management supports [administrative units th
 
 - Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
 
-Scoped admins can view all adaptive scopes across AUs using cmdlets
+- Currently, a restricted administrator can't run [simulation mode for auto-apply policies](apply-retention-labels-automatically.md#learn-about-simulation-mode).
 
 - Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
 
