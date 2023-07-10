@@ -42,7 +42,7 @@ When you're ready to start protecting your organization's data by using sensitiv
     > [!NOTE]
     > For some recommended examples, see the label names and descriptions for the [default sensitivity labels](mip-easy-trials.md#default-sensitivity-labels). For more guidance about defining a classification taxonomy, see [Data classification & sensitivity label taxonomy](/assurance/assurance-data-classification-and-labels.md).
     
-    Always test and tailor your label names and tooltips with the people who need to apply them.
+    Always test and tailor your sensitivity label names and tooltips with the people who need to apply them.
 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and encryption.
 
