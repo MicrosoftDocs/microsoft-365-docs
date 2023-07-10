@@ -69,14 +69,14 @@ See [Design a data loss prevention policy](dlp-policy-design.md) for more guidan
 ## Monitored files
 
 ### Files monitored via policy
-Endpoint DLP supports monitoring the following file types through policy in Windows 10, 11 and in the latest three major releases of macOS:
+Endpoint DLP monitors these file types through policy in Windows 10, 11 and in the latest three major releases of macOS:
 
 | Windows 10, 11  | macOS  |
 | ----------| ------------|
 | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .zip, .zipx, .rar, .7z, .tar, .war, .gz, .pst, .dlp, .txt, .c, .class, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx, .pbix, .pdf, .csv, .tsv, .pst, .txt, .c, .cpp, .cs, .h, .java, .html, .htm, .rtf, .json, .config |
 
 > [!NOTE]
-> The following file types can also be monitored through policy settings in Windows 10, 11, if OCR[OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
+> These file types can be monitored through policy settings in Windows 10, 11, if OCR[OCR](ocr-learn-about.md#learn-about-optical-character-recognition-in-microsoft-purview-preview) is enabled: 
 > 
 > .jpg, .png, .tif, .tiff, .bmp, .jpeg
 
