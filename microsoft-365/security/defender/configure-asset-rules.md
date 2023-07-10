@@ -76,6 +76,6 @@ To see tags on individual devices:
 
 ### Updating rules
 
-Dynamic tags and device value can't be manually updated. To edit, delete or turn off a rule, select the rule you'd like to edit and choose the action you wish to take:
+Dynamic tags and device values set by dynamic rules can't be manually updated. To edit, delete or turn off a rule, in the **Asset Rule Management** page select the rule and choose the action you wish to take:
 
 :::image type="content" source="../../media/defender/update-rule.png" alt-text="Screenshot of the rule details page" lightbox="../../media/defender/update-rule.png":::
