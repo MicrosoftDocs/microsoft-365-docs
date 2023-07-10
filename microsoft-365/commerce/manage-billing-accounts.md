@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
-description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
+description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 07/11/2023
 ---
 
 # Understand your Microsoft business billing account
 
-When you sign up to try or buy Microsoft products, a billing account is automatically created for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases from us.
+When you sign up to try or buy Microsoft business products, a billing account is automatically created for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases from us.
 
 You might have access to multiple billing accounts. For example, you can have one billing account when you buy directly from Microsoft, and another when you have access to your organization’s billing account.
 
@@ -53,7 +53,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">
 
 ## Understand the billing account details page
 
-The top of the billing account details page contains your account profile and shows the legal and tax information about your organization. You can update your profile to change your legal address and phone number. This account is the legal entity that pays for the products that you purchase.
+The top of the billing account details page contains your account profile and shows the legal and tax information about your organization. You can update your profile to change your legal address and phone number. This account is the legal entity that pays for the products that you buy from Microsoft.
 
 The following table lists the terms shown on the billing account details page.
 
@@ -64,7 +64,7 @@ The following table lists the terms shown on the billing account details page.
 |Account status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
 |Sold-to                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
-|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional PO number. For more information about billing profiles, see [Understand billing profiles](billing-and-payments/manage-billing-profiles.md). |
+|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional purchase order (PO) number. For more information about billing profiles, see [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
 
 > [!NOTE]
@@ -96,7 +96,7 @@ Only a billing account owner can grant access to a billing account. You can assi
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>
 2. Select the **Navigation menu**, then select **Billing** > **Billing accounts**.
-3. On the **Billing accounts** page, select the billing account.
+3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, select the billing account.
 4. Under **Billing account roles**, select **Assign roles**.
 5. In the **Assign roles** pane, type the name or email address, select the role you want to assign to them, then select **Assign**.
 
@@ -106,7 +106,7 @@ You can view the roles assigned to users for a billing account and related billi
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>
 2. Select the **Navigation menu**, then select **Billing** > **Billing accounts**.
-3. On the **Billing accounts** page, select a billing account.
+3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, select a billing account.
 4. Under **Billing account roles**, select **View related role assignments**.
 
 To export the information shown in the **Related billing role assignments** pane, select **Export to CSV**.

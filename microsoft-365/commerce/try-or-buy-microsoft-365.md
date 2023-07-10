@@ -194,8 +194,6 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 **If you have a MOSA billing account type:**
 
-*Watch: Move users to a different subscription*
-
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]

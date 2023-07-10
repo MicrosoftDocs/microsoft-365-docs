@@ -20,13 +20,13 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn about billing profiles and how they're used to pay invoices."
+description: "Learn about billing profiles and how they're used to pay invoices for Microsoft business accounts."
 ms.date: 07/11/2023 
 ---
 
 # Understand your Microsoft business billing profile
 
-A billing profile contains payment method and invoice information associated with your billing account. You use a billing profile to pay for the products and services that you buy from Microsoft. A billing profile is automatically created when a billing account is created. For information about billing accounts, see [Understand your Microsoft billing account](../manage-billing-accounts.md).
+A billing profile contains payment method and invoice information associated with your billing account. You use a billing profile to pay for business products and services that you buy from Microsoft. A billing profile is automatically created when a billing account is created. For information about billing accounts, see [Understand your Microsoft billing account](../manage-billing-accounts.md).
 
 > [!NOTE]
 >
@@ -35,7 +35,7 @@ A billing profile contains payment method and invoice information associated wit
 ## Before you begin
 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- You must also have any role on the billing account or billing profile. For more information, see [What are billing profile roles?](#what-are-billing-profile-roles) and What are billing account roles?
+- You must also have any role on the billing account or billing profile. For more information, see [What are billing profile roles?](#what-are-billing-profile-roles) and [What are billing account roles?](../manage-billing-accounts.md#what-are-billing-account-roles)
 
 ## View your billing profiles
 
@@ -53,7 +53,7 @@ A billing profile contains payment method and invoice information associated wit
 
 The top of the **Billing profile** details page contains information about the payment method used to pay for the products and services that you buy, and shows details about how we invoice you. You can update your profile to change your payment method, Bill-to address, email address, and phone number.
 
-The following table lists the terms shown on the **Billing profile** detail page.
+The following table lists the terms shown on the **Billing profile** details page.
 
 |Field name            |Description |
 |----------------------|------------|
