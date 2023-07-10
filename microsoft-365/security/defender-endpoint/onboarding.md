@@ -51,7 +51,7 @@ This video provides a quick overview of the onboarding process and the different
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-## Deploying Microsoft Defender for Endpoint using a ring-based approach
+## Deploy using a ring-based approach
 
 ### New deployments
 
