@@ -1,4 +1,5 @@
 ---
+
 title: "Get started with sensitivity labels"
 f1.keywords:
 - CSH
@@ -22,6 +23,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Prescriptive steps for admins, licensing requirements, and common scenarios that use sensitivity labels to help protect your organization's data."
+
 ---
 
 # Get started with sensitivity labels
@@ -87,7 +89,7 @@ Sensitivity labels support [administrative units that have been configured in Az
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the SharePoint location.
 
-For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 ## Deployment strategy for sensitivity labels
 
