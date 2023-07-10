@@ -68,7 +68,7 @@ The following tasks require a [Syntex per-user license](https://www.microsoft.co
 - Use the document library rules to move or copy content
 
 > [!NOTE]
-> Some features currently available in the per-user licensing (such as annotations and content query) might not be included in Syntex pay-as-you-go, but will be included as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 licensing.
+> Some features currently available in the per-user licensing (such as annotations and content query) might not be billed as pay-as-you-go, but will still be available to you as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 subscription.
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  
