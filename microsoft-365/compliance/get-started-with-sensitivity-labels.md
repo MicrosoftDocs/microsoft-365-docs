@@ -34,7 +34,7 @@ For information about what sensitivity labels are and how they can help you prot
 
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
-1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category.
+<a name="guidance-sensitivity-label-names-descriptions"></a>1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category.
     
     For each label, specify a tooltip to help users select the appropriate label and consider including specific examples. However, don't make the tooltip so long that users won't read it, and be aware that some apps might truncate long tooltips.
     
