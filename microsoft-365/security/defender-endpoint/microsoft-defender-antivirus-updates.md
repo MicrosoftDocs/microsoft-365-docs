@@ -27,10 +27,17 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)
 - [Product updates](#product-updates)
+
+This article also includes:
+
+- [Microsoft Defender Antivirus platform support](#microsoft-defender-antivirus-platform-support)
+- [How to roll back an update](#how-to-roll-back-an-update) (if necessary)
+- [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)
+- [Updates for Deployment Image Servicing and Management (DISM)](#updates-for-deployment-image-servicing-and-management-dism)
 
 > [!TIP]
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
