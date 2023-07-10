@@ -1,5 +1,5 @@
 ---
-title: Details of custom permissions in Microsoft 365 Defender role-based access control (RBAC)
+title: Details of custom permissions in Microsoft 365 Defender unified role-based access control (RBAC)
 description: Learn about the custom permissions available in Microsoft 365 Defender Security role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -21,9 +21,9 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Permissions in Microsoft 365 Defender role-based access control (RBAC)
+# Permissions in Microsoft 365 Defender unified role-based access control (RBAC)
 
-In Microsoft 365 Defender role-based access control (RBAC) you can select permissions from each permission group to customize a role.
+In Microsoft 365 Defender unified role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ In Microsoft 365 Defender role-based access control (RBAC) you can select permis
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Microsoft 365 Defender RBAC permission details
+## Microsoft 365 Defender unified RBAC permission details
 
 The following table lists the permissions available to configure for your users based on the tasks they need to do:
 
@@ -89,9 +89,9 @@ Permissions to manages the security and system settings and to create and assign
 |System settings|Read / Manage|View or manage general systems settings for the Microsoft 365 Defender portal.|
 
 > [!NOTE]
-> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
+> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender unified RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 ## Next steps
 
 - [Create custom roles](create-custom-rbac-roles.md)
-- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender unified RBAC](activate-defender-rbac.md)

@@ -456,7 +456,7 @@
                 href: create-custom-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
-              - name: Activate Microsoft 365 Defender RBAC 
+              - name: Activate Microsoft 365 Defender unified RBAC 
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md

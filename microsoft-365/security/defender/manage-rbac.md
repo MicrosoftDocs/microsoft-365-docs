@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Microsoft 365 Defender role-based access control (RBAC)
+# Microsoft 365 Defender unified role-based access control (RBAC)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
