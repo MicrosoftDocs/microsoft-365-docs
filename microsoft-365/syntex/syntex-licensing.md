@@ -21,7 +21,7 @@ description: Learn about licensing for Microsoft Syntex.
 
 Microsoft Syntex currently has two types of licensing offerings:
 
-- [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go). This is a new way to pay for Microsoft Syntex using an Azure subscription, which allows you to get started with Microsoft Syntex without any license commitment or upfront purchasing.
+- [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go). This is the new way to pay for Microsoft Syntex using an Azure subscription, which allows you to get started with Microsoft Syntex without any license commitment or upfront purchasing.
 
 - [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing). As of July 1, 2023, new per-user licenses are no longer available. New customers will need to set up pay-as-you-go billing.
 
@@ -50,7 +50,7 @@ All users in your organization will be able to create and apply unstructured and
 > [!NOTE]
 > As of July 1, 2023, new per-user licenses are no longer available. New customers will need to set up pay-as-you-go billing.<br>
 > Customers with existing per-user licenses purchased before July 1 can still assign those licenses to new users. After existing per-user licenses expire, you will need to opt-in to Syntex pay-as-you-go billing to continue using existing and new Syntex features.<br>
-> Some features currently available in the per-user licensing (such as annotations and content query) will not be included as pay-as-you-go, but will be included in your licensing for Microsoft 365 E3 and E5 or Office 365 A3 and A5.
+> Some features currently available in the per-user licensing (such as annotations and content query) will not be included as pay-as-you-go, but will be included in your licensing for Microsoft 365 E3 or E5 and Office 365 A3 or A5.
 
 To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 
