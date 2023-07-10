@@ -21,19 +21,20 @@ description: Learn about licensing for Microsoft Syntex.
 
 Microsoft Syntex has two types of product offerings to choose from:
 
-- [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go)
-- [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing)
+- [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go). Pay-as-you-go is a new way to pay for Microsoft Syntex using an Azure subscription, which allows you to get started with Microsoft Syntex without any license commitment or upfront purchasing.
+
+- [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing). As of July 1, 2023, per-user licenses are not available for new users. You will need to opt-in to Syntex pay-as-you-go billing to continue using existing and new Syntex features.
 
 The features available for each license type are described below. <!-- You can use both licenses if you need to.-->
 
 In the future, most new Microsoft Syntex features will be added to pay-as-you-go.
 
-> [!NOTE] 
+> [!NOTE]
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
 ## Microsoft Syntex pay-as-you-go
 
-Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. You can use Microsoft Syntex without any license commitment or upfront purchasing. Pay-as-you-go supports the following Microsoft Syntex services:
+Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. You can use Syntex without any license commitment or upfront purchasing. Pay-as-you-go supports the following Syntex services:
 
 - Prebuilt document processing
 - Unstructured document processing (formerly document understanding)
@@ -42,6 +43,10 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
 
 ## Microsoft Syntex per-user licensing
+
+
+> [!NOTE]
+> As of July 1, 2023, per-user licenses are no available for new users. You will need to opt-in to Syntex pay-as-you-go billing to continue using existing and new Syntex features.
 
 To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 
