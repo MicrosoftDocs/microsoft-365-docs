@@ -105,6 +105,15 @@
 
   - name: Onboard and configure devices
     items:
+    - name: Configure device service connection
+      items:
+        - name: Step 1 - Configure your environment
+          href: configure-environment.md
+        - name: Step 2 - Configure device proxy and Internet settings
+          href: configure-proxy-internet.md
+        - name: Streamlining device connectivity
+          href: configure-device-connectivity.md
+ 
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -203,8 +212,6 @@
       href: run-detection-test.md
     - name: Onboard devices without Internet access
       href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
     - name: Configure Microsoft Defender for Endpoint on macOS
       items:
       - name: Configure and validate exclusions
