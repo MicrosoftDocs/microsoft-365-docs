@@ -1,10 +1,10 @@
 ---
 title: Set up Microsoft Syntex per-user licensing
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-ms.date: 07/08/2020
-manager: serdars
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
+ms.date: 07/08/2022
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

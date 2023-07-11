@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 06/09/2023
+ms.date: 7/5/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -125,12 +125,9 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
 ### Spoof protection and sender DMARC policies
 
-> [!NOTE]
-> The features described in this section are currently in Preview, aren't available in all organizations, and are subject to change.
-
 In anti-phishing policies, you can control whether `p=quarantine` or `p=reject` values in sender DMARC policies are honored. If a message fails DMARC checks, you can specify separate actions for `p=quarantine` or `p=reject` in the sender's DMARC policy. The following settings are involved:
 
-- **Honor DMARC record policy when the message is detected as spoof**: This setting turns on honoring the sender's DMARC policy for explicit email authentication failures. When you select this setting, the following settings are available:
+- **Honor DMARC record policy when the message is detected as spoof**: This setting turns on honoring the sender's DMARC policy for explicit email authentication failures. When this setting is selected, the following settings are available:
   - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: The available actions are:
     - **Quarantine the message**
     - **Move the message to the recipients' Junk Email folders**

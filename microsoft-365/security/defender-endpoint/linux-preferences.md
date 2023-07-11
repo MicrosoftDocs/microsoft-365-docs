@@ -2,15 +2,11 @@
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 02/09/2023
+ms.date: 07/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -76,8 +72,8 @@ Specifies the enforcement preference of antivirus engine. There are three values
 |---|---|
 |**Key**|enforcementLevel|
 |**Data type**|String|
-|**Possible values**|real_time (default) <p> on_demand <p> passive|
-|**Comments**|Available in Defender for Endpoint version 101.10.72 or higher.|
+|**Possible values**|real_time <p> on_demand <p> passive (default)|
+|**Comments**|Available in Defender for Endpoint version 101.10.72 or higher. Default is changed from real_time to passive for Endpoint version 101.23062.0001 or higher.|
 
 #### Enable/disable behavior-monitoring 
 
@@ -363,7 +359,7 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 
 #### Configure cloud block level
 
-This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
+This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. There are five values for setting cloud block level:
 
 - Normal (`normal`): The default blocking level.
 - Moderate (`moderate`): Delivers verdict only for high confidence detections.
