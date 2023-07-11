@@ -108,7 +108,7 @@ The CSP support string with `<enabled/>`:
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
+The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled/><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
 :::image type="content" source="../../media/editrow.png" alt-text="The Edit Row pane" lightbox="../../media/editrow.png":::
 
