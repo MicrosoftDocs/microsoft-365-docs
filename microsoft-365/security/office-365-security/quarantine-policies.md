@@ -656,7 +656,7 @@ The relationship between permissions, permissions groups, and the default quaran
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|_PermissionToViewHeader_¹|✔|✔|✔|
+|(_PermissionToViewHeader_)¹|✔|✔|✔|
 |**Block sender** (_PermissionToBlockSender_)||✔|✔|
 |**Delete** (_PermissionToDelete_)||✔|✔|
 |**Preview** (_PermissionToPreview_)²||✔|✔|
