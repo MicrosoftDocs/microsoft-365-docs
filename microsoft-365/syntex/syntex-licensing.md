@@ -59,7 +59,7 @@ Users with active per-user licenses can perform the following tasks:
 
 ## AI Builder credits
 
-Both pay-as-you-go and per-user licensing require [AI Builder credits](https://learn.microsoft.com/en-us/ai-builder/administer-licensing#purchase-ai-builder-capacity).
+Structured and freeform document processing for both pay-as-you-go and per-user licensing requires [AI Builder credits](https://learn.microsoft.com/en-us/ai-builder/administer-licensing#purchase-ai-builder-capacity).
 
 Structured and freeform document processing use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you'll use AI Builder.
 
