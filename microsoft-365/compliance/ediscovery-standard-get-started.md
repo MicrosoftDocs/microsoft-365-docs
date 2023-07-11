@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/19/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -42,7 +42,6 @@ eDiscovery (Standard) requires the following Enterprise apps to be enabled in yo
 |**App**|**App ID**|
 |:------|:---------|
 | ComplianceWorkbenchApp | 92876b03-76a3-4da8-ad6a-0511ffdf8647 |
-| MicrosoftPurviewEDiscovery | b26e684c-5068-4120-a679-64a5d2c909d9 |
 | Microsoft Exchange Online Protection | 00000007-0000-0ff1-ce00-000000000000 |
 | Office365Zoom | 0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7 |
 
