@@ -59,13 +59,13 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review actions**
 
-    In the action center, review the actions that have been taken in your environment, both automated and manual. This will help you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions](auto-investigation-action-center.md).
+    In the action center, review the actions that have been taken in your environment, both automated and manual. This helps you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions](auto-investigation-action-center.md).
 
 ### Security operations team  
 
 - **Monitor the Microsoft 365 Defender Incidents queue**
 
-    When Microsoft Defender for Endpoint (MDE) identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, this alert will be included in an incident and displayed in the Incidents queue in the Microsoft 365 Defender console. 
+    When Microsoft Defender for Endpoint (MDE) identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, this alert is included in an incident and displayed in the Incidents queue in the Microsoft 365 Defender console. 
     
     Review these incidents to respond to any Microsoft Defender for Endpoint alerts and resolve once the incident has been remediated. See the following articles:
     
@@ -105,7 +105,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
     Microsoft 365 Defender uses the Microsoft 365 Message center to notify you of upcoming changes, such as new and changed features, planned maintenance, or other important announcements. 
       
-    Review the Message center messages to understand any upcoming changes that will impact your environment. 
+    Review the Message center messages to understand any upcoming changes that impact your environment. 
      
     You can access this in the Microsoft 365 admin center under the Health tab. See [How to check Microsoft 365 service health](../../enterprise/view-service-health.md).
 
@@ -117,7 +117,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review threat analytics**  
 
-    Review threat analytics to identify any campaigns that are impacting your environment. See [Track and respond to emerging threats through threat analytics](threat-analytics.md).
+    Review threat analytics to identify any campaigns that affect your environment. See [Track and respond to emerging threats through threat analytics](threat-analytics.md).
 
 ### Security administration team 
 
@@ -127,7 +127,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review attack surface reduction (ASR) reporting** 
 
-    Review ASR reporting to identify any files that are impacting your environment. See [Attack surface reduction (ASR) rules report](attack-surface-reduction-rules-report.md).
+    Review ASR reports to identify any files that affect your environment. See [Attack surface reduction (ASR) rules report](attack-surface-reduction-rules-report.md).
     
 - **Review web protection events** 
     Review web defense reporting to identify any IP / URLs that are being blocked. See [Web protection](web-protection-overview.md).
