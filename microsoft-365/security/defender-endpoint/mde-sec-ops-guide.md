@@ -69,8 +69,8 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
     
     Review these incidents to respond to any Microsoft Defender for Endpoint alerts and resolve once the incident has been remediated. See the following articles:
     
-       - [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email)
-       - [View and organize the Microsoft Defender for Endpoint Incidents queue](view-incidents-queue.md)
+    - [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email)
+    - [View and organize the Microsoft Defender for Endpoint Incidents queue](view-incidents-queue.md)
 
 - **Manage false positive and false negative detections**
 
