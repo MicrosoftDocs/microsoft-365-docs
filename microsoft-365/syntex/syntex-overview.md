@@ -48,19 +48,6 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 ## Syntex services
 
-### Annotations
-
-:::row:::
-   :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
-   :::column-end:::
-:::row-end:::
-
-[Learn more about using annotations in Microsoft Syntex.](annotations.md)
-
 ### Content assembly
 
 :::row:::
@@ -77,23 +64,6 @@ You can dive deeper into your content to truly understand it, and you can turn t
  This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
-
-### Content query
-
-:::row:::
-   :::column span="3":::
-      The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
-
-      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
-   :::column-end:::
-:::row-end:::
-
-This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
-
-[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
 
 ### Prebuilt document processing
 
@@ -152,6 +122,36 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
 
 ## Other features
+
+### Annotations
+
+:::row:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
+
+### Content query
+
+:::row:::
+   :::column span="3":::
+      The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
+
+      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
+   :::column-end:::
+:::row-end:::
+
+This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
 
 ### Content compliance
 
