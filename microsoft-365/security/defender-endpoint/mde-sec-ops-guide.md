@@ -95,7 +95,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Check Microsoft Defender Antivirus health** 
 
-    Viewing the status of Microsoft Defender Antivirus updates is critical for the best performance of Defender for Endpoint in your environment and up-to-date detections. The device health page shows you current status for platform, intelligence, and engine version. See the [Device health, Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md).
+    Viewing the status of Microsoft Defender Antivirus updates is critical for the best performance of Defender for Endpoint in your environment and up-to-date detections. The device health page shows current status for platform, intelligence, and engine version. See the [Device health, Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md).
 
 ## Weekly activities 
 
@@ -155,7 +155,7 @@ Review the following articles to understand recently released updates:
 
 - **Review device excluded from policy**
  
-    If any devices are excluded from the Microsoft Defender Endpoint policy for any reason, review whether the device still needs to be excluded from the policy.
+    If any devices are excluded from Defender for Endpoint policies, review and determine whether the device still needs to be excluded from the policy.
     
     > [!NOTE]
     > Review the troubleshooting mode for troubleshooting. See [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md).
