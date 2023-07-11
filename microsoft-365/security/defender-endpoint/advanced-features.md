@@ -114,7 +114,7 @@ After turning on this feature, you can [block files](respond-file-alerts.md#allo
 
 ## Hide potential duplicate device records
 
-By enabling this feature, you can ensure that you're seeing the most accurate information about your devices by hiding potential duplicate device records. There are different reasons duplicate device records might occur, for example, the device discovery capability in Microsoft Defender for Endpoint might scan your network and discover a device that's already onboarded or a has recently been offboarded.
+By enabling this feature, you can ensure that you're seeing the most accurate information about your devices by hiding potential duplicate device records. There are different reasons duplicate device records might occur, for example, the device discovery capability in Microsoft Defender for Endpoint might scan your network and discover a device that's already onboarded or has recently been offboarded.
 
 This feature will identify potential duplicate devices based on their hostname and last seen time. The duplicate devices will be hidden from multiple experiences in the portal, such as, the Device Inventory, Microsoft Defender Vulnerability Management pages, and Public APIs for machine data, leaving the most accurate device record visible. However, the duplicates will still be visible in global search, advanced hunting, alerts, and incidents pages.
 
