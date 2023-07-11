@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn best practices to protect your data using Micrsoft 365 Business Basic, Standard, or Premium. Protect devices, email, files, and accounts."
+description: "Learn best practices to protect your data using Microsoft 365 Business Basic, Standard, or Premium. Protect devices, email, files, and accounts."
 ---
 
 # Microsoft 365 for business security best practices
