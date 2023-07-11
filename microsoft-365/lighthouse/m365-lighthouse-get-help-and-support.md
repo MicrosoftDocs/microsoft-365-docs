@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 06/29/2021
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -50,34 +50,35 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 
 ## Access help and support
 
-1.  In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
-    
-    -  If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
+1. In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
+  
+   - If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 
         This will create a JSON file with information to help Support agents troubleshoot your issue. Save the file so you can attach it to your service request.
 
         > [!NOTE]
         > The JSON file will contain personally identifiable information.
 
-    -  If your issue isn't isolated to the current page of the portal, go to the next step.
+   - If your issue isn't isolated to the current page of the portal, go to the next step.
 
-2.  In the **Help** pane, select the **Help + support** button. This opens the **How can we help?** pane.
+2. In the **Help** pane, select the **Help + support** button. This opens the **How can we help?** pane.
 
     > [!NOTE]
     > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has Global Administrator permissions and ask them to help.
 
-3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
+3. In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
 
-4.  Check out the list of recommended articles to see if any of them help resolve your issue.
+4. Check out the list of recommended articles to see if any of them help resolve your issue.
 
     If you enter a description of your issue and it doesn't return a list of help articles, rephrase your description and try another search.
 
-5.  If the recommended articles don't help, select **Contact Support**.
+5. If the recommended articles don't help, select **Contact Support**.
 
-6.  Fill out the information in the form, attach any screenshots and the JSON file that you saved in step&nbsp;1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
+6. Fill out the information in the form, attach any screenshots and the JSON file that you saved in step&nbsp;1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
 
 ## Related content
 
+[View tenant service health](m365-lighthouse-view-service-health.md)
 [Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)

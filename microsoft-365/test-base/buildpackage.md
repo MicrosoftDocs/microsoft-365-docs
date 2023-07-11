@@ -192,7 +192,7 @@ However, it's best practice to run the test locally to ensure the scripts work p
    4. Run launch script.
 
       ```powershell
-      C:\TestBase\App\scripts\install\job.ps1
+      C:\TestBase\App\scripts\launch\job.ps1
       ```
 
    5. Run close script.
