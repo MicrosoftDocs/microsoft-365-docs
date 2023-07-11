@@ -59,13 +59,13 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review actions**
 
-    In the action center, review the actions that have been taken in your environment, both automated and manual. This helps you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions](auto-investigation-action-center.md).
+    In the action center, review the actions that have been taken in your environment, both automated and manual. This information helps you validate that automated investigation and response (AIR) is performing as expected and identify any manual actions that need to be reviewed. See [Visit the Action center to see remediation actions](auto-investigation-action-center.md).
 
 ### Security operations team  
 
 - **Monitor the Microsoft 365 Defender Incidents queue**
 
-    When Microsoft Defender for Endpoint (MDE) identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, this alert is included in an incident and displayed in the Incidents queue in the Microsoft 365 Defender console. 
+    When Microsoft Defender for Endpoint identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, the alert is included in an incident and displayed in the **Incidents** queue in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
     
     Review these incidents to respond to any Microsoft Defender for Endpoint alerts and resolve once the incident has been remediated. See the following articles:
     
