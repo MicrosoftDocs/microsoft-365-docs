@@ -30,7 +30,7 @@ search.appverid: met150
 
 This article gives an overview of the requirements and tasks for successfully operating Microsoft Defender for Endpoint in your organization. These tasks help your security operations center (SOC) effectively detect and respond to Microsoft Defender for Endpoint detected security threats.
 
-This article also describes daily, weekly, monthly, and ad-hoc tasks required to be performed by the security operations personnel in your organization.
+This article also describes daily, weekly, monthly, and ad-hoc tasks your security team can perform for your organization.
 
 > [!NOTE]
 > These are recommended steps; check them against your own policies and environment to make sure they are fit for purpose.
