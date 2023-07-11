@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 06/28/2023
+ms.date: 07/10/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -25,17 +25,22 @@ description: "Learn best practices to protect your data using Micrsoft 365 Busin
 
 # Microsoft 365 for business security best practices
 
-When it comes to securing your business data, Microsoft 365 Business Basic, Standard, and Premium all include antiphishing, antispam, and antimalware protection. However, Microsoft 365 Business Premium includes even more security capabilities, such as advanced cybersecurity protection for devices (such as computers, tablets, and phones; also referred to as endpoints), email & collaboration content (such as Office documents), and information protection. For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
-
-## Top 10 ways to secure your business data
-
-:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" :::
-
 > [!TIP]
 > **This article is for small and medium-sized businesses who have up to 300 users**. 
 > If you're looking for information for enterprise organizations, see [Deploy ransomware protection for your Microsoft 365 tenant](../solutions/ransomware-protection-microsoft-365.md).
 > If you're a Microsoft partner, see [Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md).
 
+Microsoft 365 Business Basic, Standard, and Premium all include antiphishing, antispam, and antimalware protection to protect your email online. Microsoft 365 Business Premium includes even more security capabilities, such as advanced cybersecurity protection for:
+
+- Devices, such as computers, tablets, and phones (also referred to as endpoints)
+- Email & collaboration content (such as Office documents)
+- Data (encryption, sensitivity labels, and Data Loss Prevention) 
+
+For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+
+## Top 10 ways to secure your business data
+
+:::image type="content" source="media/top-10-ways-to-secure-data.png" alt-text="Diagram listing the top 10 ways to secure business data with Microsoft 365 for business" :::
 
 The following table summarizes recommendations by subscription for securing your business data:
 
@@ -273,3 +278,4 @@ See the following articles:
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
 - [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
+

@@ -90,7 +90,7 @@ Yes, raising the current limit of 30 privileged access policies per organization
 
 ### Do I need to be a Global Admin to manage privileged access in Office 365?
 
-No, you need the Exchange Role Management role assigned to accounts that manage privileged access in Office 365. If you don't want to configure the Role Management role as a stand-alone account permission, the Global Administrator role includes this role by default and can manage privileged access. Users included in an approvers' group don't need to be a Global Admin or have the Role Management role assigned to review and approve requests with PowerShell.
+Yes, you'll need the *Global Admin* role assigned to accounts that manage privileged access in Office 365. Users included in an approvers' group don't need to have the *Global Admin* or *Role Management* roles assigned to review and approve requests with PowerShell. Users must have the *Exchange Administrator* role assigned to request, review, and approve privileged access requests in the Microsoft 365 admin center.
 
 ### How is privileged access management related to Customer Lockbox?
 
