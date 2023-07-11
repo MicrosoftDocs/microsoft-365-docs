@@ -133,6 +133,7 @@ Filter | Description
 **Group** </br> | Filter the list based on the group you're interested in investigating. </br></br> (_Computers and mobile only_)
 **Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Intune, including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This could be due the running an outdated Windows version, GPO management, or another third party MDM.</br></br> (_Computers and mobile only_)
 **Device Type** </br> | Filter by the device type you're interested in investigating.</br></br> (_IoT devices only_)
+**Mitigation status** </br> | Filter by isolation or containment status of a device.</br></br>
 
 ## Use columns to customize the device inventory views
 
@@ -153,3 +154,4 @@ On the **IoT devices** tab, select **Customize columns** to see the columns avai
 ## Related articles
 
 [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
+

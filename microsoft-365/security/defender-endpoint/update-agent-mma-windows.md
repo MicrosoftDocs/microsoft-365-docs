@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 06/21/2023
+ms.date: 07/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -35,6 +35,8 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 ## Update MMA on your devices
 
 *This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.* 
+
+- To help you identify older versions of the MMA inside of your organization, you can use the "EOSDate" column in advanced hunting. Or, follow the instructions in [Plan for end-of-support software and software versions](/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software) to use the vulnerability management feature inside of Microsoft Defender for Endpoint to track remediation.
 
 - See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command line approach for use with various deployment tools and methods at your disposal. 
 
@@ -75,3 +77,4 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 - [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](switch-to-mde-overview.md)
 - [Microsoft Defender for Endpoint deployment overview](deployment-phases.md)
 - [Onboard to the Microsoft Defender for Endpoint service](onboarding.md)
+

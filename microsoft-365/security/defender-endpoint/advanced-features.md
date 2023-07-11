@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 06/06/2023
+ms.date: 07/11/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -133,7 +133,7 @@ For more information, see [Manage indicators](manage-indicators.md).
 
 ## Tamper protection
 
-During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
+During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
 For more information, including how to configure tamper protection, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
@@ -169,9 +169,9 @@ To receive contextual device integration in Office 365 Threat Intelligence, you'
 
 ## Endpoint Attack Notifications
 
-Endpoint Attack Notifications enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
+[Endpoint Attack Notifications](/security/defender-endpoint/endpoint-attack-notifications) enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
 
-For proactive hunting across the full scope of Microsoft 365 Defender—including threats that span email, collaboration, identity, cloud applications, as and endpoints—[learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
+For proactive hunting across the full scope of Microsoft 365 Defender, including threats that span email, collaboration, identity, cloud applications, and endpoints, [learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
 
 ## Microsoft Defender for Cloud Apps
 

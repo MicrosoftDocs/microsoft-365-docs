@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw
-ms.date: 06/30/2022
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -65,4 +65,5 @@ The **Copy Link to Messages in Microsoft** **365 Defender** option provides a li
 
 [Quarantined email messages](../security/office-365-security/quarantine-about.md) (article)\
 [Microsoft recommendations for EOP and Defender for Office 365 security settings](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (article)\
-[Exchange Online Protection (EOP) overview](../security/office-365-security/eop-about.md) (article)
+[Exchange Online Protection (EOP) overview](../security/office-365-security/eop-about.md) (article)\
+[Overview of the Threat management page](m365-lighthouse-threat-management-page-overview.md) (article)
