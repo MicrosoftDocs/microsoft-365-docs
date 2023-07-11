@@ -357,6 +357,6 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-- [Investigate data loss incidents](investigate-dlp.md)
+- [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - 
