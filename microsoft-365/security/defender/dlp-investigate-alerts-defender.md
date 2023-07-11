@@ -6,19 +6,19 @@ f1.keywords:
   - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.author: diannegali
-author: diannegali
+ms.author: chrfox
+author: chrfox
 ms.localizationpriority: medium
-manager: dansimp
+manager: laurawi
 audience: ITPro
 ms.collection: 
   - m365-security
   - tier2
-ms.topic: how to
+ms.topic: how-to
 search.appverid: 
   - MOE150
   - met150
-ms.date: 07/10/2023
+ms.date: 07/11/2023
 ---
 
 # Investigate data loss prevention alerts with Microsoft 365 Defender
@@ -29,7 +29,7 @@ ms.date: 07/10/2023
 
 - Microsoft 365 Defender
 
-You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft 365 Defender portal. You do this from  **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
+You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft 365 Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.

@@ -1,6 +1,6 @@
 ---
 title: Investigate data loss prevention alerts with Microsoft Sentinel
-description: Investigate data loss prevention alerts in Microsoft Sentinal.
+description: Investigate data loss prevention alerts in Microsoft Sentinel.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
   - NOCSH
@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
   - m365-security
   - tier2
-ms.topic: how to
+ms.topic: how-to
 search.appverid: 
   - MOE150
   - met150
@@ -38,7 +38,7 @@ See, [Investigate data loss prevention alerts with Microsoft 365 Defender](dlp-i
 
 You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel's native SOAR capabilities.
 
-1. Follow instructions on Connect data from Microsoft 365 Defender to Microsoft Sentinel to import all incidents including DLP incidents and alerts into Sentinel. Enable `CloudAppEvents` event connector to pull all O365 audit logs into Sentinel.
+1. Follow instructions on Connect data from Microsoft 365 Defender to Microsoft Sentinel to import all incidents including DLP incidents and alerts into Sentinel. Enable `CloudAppEvents` event connector to pull all Office 365 audit logs into Sentinel.
 
    You should be able to see your DLP incidents in Sentinel once the above connector is set up.
 
