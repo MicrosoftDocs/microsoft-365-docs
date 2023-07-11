@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 01/25/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -57,17 +57,17 @@ If quick setup is used to configure Adaptive Protection in insider risk, DLP pol
 
 > [!TIP]
 > Insider risk presents a view of just the DLP policies that use the **User's risk level for adaptive protection is** condition. Open **Microsoft Purview compliance portal** > **Insider risk management** > **Adaptive protection (preview)** to see the list. You'll need DLP to be in one of these roles to access the insider risk node:
->- Compliance administrator
->- Compliance Data administrator
->- Organization Management (Users who are not global administrators must be Exchange administrators to see and take action on devices that are managed by Basic Mobility and Security for Microsoft 365)
->- Global administrator
->- DLP compliance management
->- View-only DLP compliance management
+> - Compliance administrator
+> - Compliance Data administrator
+> - Organization management (Users who are not global administrators must be Exchange administrators to see and take action on devices that are managed by Basic Mobility and Security for Microsoft 365)
+> - Global administrator
+> - DLP compliance management
+> - View-only DLP compliance management
 
 
 #### Policy values for Teams and Exchange online DLP policy
 
-This is the configuration for the quick setup created Teams and Exchange DLP policy. The policy name is **Adaptive Protection policy for Teams and Exchange DLP**. 
+This is the configuration for the Teams and Exchange DLP policy created during Quick Setup. The policy name is **Adaptive Protection policy for Teams and Exchange DLP**.
 
 ##### Rule: Adaptive Protection block rule for Teams and Exchange DLP
 
@@ -95,13 +95,13 @@ This is the configuration for the quick setup created Teams and Exchange DLP pol
 
 #### Policy values for Devices DLP policy
 
-This is the configuration for the quick setup created Devices DLP policy. The policy name is **Adaptive Protection policy for Endpoint DLP**. 
+This is the configuration for the Devices DLP policy created during Quick Setup. The policy name is **Adaptive Protection policy for Endpoint DLP**. 
 
 > [!IMPORTANT]
 > For Adaptive Protection to work on Devices, you must either enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) or if you are manually creating the adaptive protection policy, select the **File Type is** condition.
 
 > [!IMPORTANT]
-> If a user is targeted by a default Adaptive Protection DEvice DLP policy and is targeted by an independent Device DLP policy, only the actions of the *most restrictive* policy will be applied.
+> If a user is targeted by a default Adaptive Protection Device DLP policy and is targeted by an independent Device DLP policy, only the actions of the *most restrictive* policy will be applied.
 
 
 ##### Rule: Adaptive Protection block rule for Endpoint DLP

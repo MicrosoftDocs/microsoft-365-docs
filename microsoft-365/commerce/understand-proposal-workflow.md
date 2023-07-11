@@ -45,7 +45,7 @@ You use a billing account to manage your account settings, invoices, billing pro
 
 Billing account permissions are managed by the billing account owner. Global admins can assign themselves to the billing account owner role, and then make other people billing account owners.
 
-For more information about billing accounts, see [Manage billing accounts](manage-billing-accounts.md).
+For more information about billing accounts, see [Understand your Microsoft business billing account](manage-billing-accounts.md).
 
 ### Microsoft Customer Agreement
 
@@ -71,7 +71,7 @@ The billing account owner and billing account contributor roles are assigned by 
 3. In the **Add permission** pane, select the **Role** to assign to the user.
 4. Select the user, then select **Save**.
 
-For more information about billing account roles, see [Understand access to billing accounts](manage-billing-accounts.md#understand-access-to-billing-accounts).
+For more information about billing account roles, see [What are billing account roles?](manage-billing-accounts.md#what-are-billing-account-roles).
 
 If this is a new billing account, and no one has accepted an agreement, you automatically become the billing account owner, provided you:
 
@@ -114,7 +114,7 @@ After you sign in, the first thing you do is review your organization's informat
 
 The **Your organization** section displays the billing account associated with it. The billing account information is either pulled from an existing billing account or created for you by the Microsoft representative. If your organization is an affiliate of another organization, you also see a **Lead organization** section with the name and address of that organization.
 
-If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the Microsoft 365 admin center. If your organization name changes, open a support request to have it updated. [Learn how to open a support request](../admin/get-help-support.md).
+If this order is the first time your organization is establishing a commercial relationship with Microsoft, and you haven't yet signed an MCA, if the information under **Your organization** or **Lead organization** is incorrect, contact the representative to make changes for you. After you've accepted an MCA, you can review and change your organization's address and contact information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center. If your organization name changes, open a support request to have it updated. [Learn how to open a support request](../admin/get-help-support.md).
 
 ### Your information
 

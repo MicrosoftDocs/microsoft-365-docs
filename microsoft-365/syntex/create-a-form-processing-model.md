@@ -19,9 +19,6 @@ description: Learn how to train a structured document processing model in Micros
 
 # Train a structured document processing model in Microsoft Syntex
 
-> [!NOTE]
-> For structured document processing models, there's a known issue where extracted tables aren't being processed into the corresponding list. A fix for this issue is rolling out. In the meantime, you'll need to reapply the model to the document library.
-
 <!---
 </br>
 
