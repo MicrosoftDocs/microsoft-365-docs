@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the capabilities and features in Microsoft Syntex.
+description: Learn about the capabilities, services, and features in Microsoft Syntex.
 ---
 
 # Overview of Microsoft Syntex
@@ -72,7 +72,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
       ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) 
    :::column-end:::
    :::column span="3":::
-      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents. 
+      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
    :::column-end:::
 :::row-end:::
 
@@ -102,7 +102,7 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
       ![Icon for unstructured document processing model.](../media/content-understanding/custom-classify-and-extract-by-text-pattern.png) 
    :::column-end:::
    :::column span="3":::
-      Use an [unstructured model](document-understanding-overview.md) to automatically classify documents and extract information from them. It works best for documents that vary in composition, such as letters or contracts. This model type supports the widest range of file types. 
+      Use an [unstructured model](document-understanding-overview.md) to automatically classify documents and extract information from them. It works best for documents that vary in composition, such as letters or contracts. This model type supports the widest range of file types.
    :::column-end:::
 :::row-end:::
 
