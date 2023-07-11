@@ -184,8 +184,8 @@
             href: linux-install-manually.md
           - name: Saltstack-based deployment
             href: linux-install-with-saltack.md
-          - name: linux-support-ebpf.md
-            href: Configure eBPF-based sensor 
+          - name: Configure eBPF-based sensor
+            href: linux-support-ebpf.md 
         - name: Update
           href: linux-updates.md
 
