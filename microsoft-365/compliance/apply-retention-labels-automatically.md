@@ -83,7 +83,7 @@ Unlike simulation mode for automatically applying sensitivity labels:
 - Simulation mode is optional, and not required to complete before you turn on the policy. You can even turn on the policy while simulation is still running.
 - When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
 
-Other considerations for simulation mode for auto-apply retention policies:
+Other considerations for simulation mode for auto-apply retention label policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
