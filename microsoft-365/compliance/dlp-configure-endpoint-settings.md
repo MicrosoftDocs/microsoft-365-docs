@@ -43,7 +43,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 
 |Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
-|Advanced classification | Supported | Supported (preview)|Advanced classification enables these features for macOS (preview): - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
+|Advanced classification | Supported | Supported|Advanced classification enables these features for macOS : - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Network share coverage and exclusions | Supported |Not Supported|
 |Restricted apps     |Supported         |Supported         |         |
