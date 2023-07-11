@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/09/2023
+ms.date: 07/14/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -249,7 +249,7 @@ Use the *Activity scope*, *Risk factor*, and *Review status* filters to display 
 
 #### Save a view of a filter to reuse later
 
-If you create a filter and customize columns for the filter, you can save a view of your changes so that you or others can quickly filter for the same changes again later.
+If you create a filter and customize columns for the filter, you can save a view of your changes so that you or others can quickly filter for the same changes again later. When you save a view, you save both the filters and columns. When you load the view, it will load both saved filters and columns.
 
 1. Create a filter and customize columns.
    > [!TIP]
