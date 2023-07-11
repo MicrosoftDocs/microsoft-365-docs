@@ -137,7 +137,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 ### General  
 
-Review the relevant What’s new pages for your fleet to understand the recently released updates in the product. 
+Review the following articles to understand recently released updates: 
 
 - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
 
