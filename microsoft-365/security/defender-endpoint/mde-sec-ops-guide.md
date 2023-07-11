@@ -95,7 +95,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Check Microsoft Defender Antivirus health** 
 
-    The Microsoft Defence Antivirus (MDAV) update status is critical for the best performance of your MDE environment and up-to-date detections.  The device health page shows you the status of your fleet for platform, intelligence, and engine version. See [Device health, Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md).
+    Viewing the status of Microsoft Defender Antivirus updates is critical for the best performance of Defender for Endpoint in your environment and up-to-date detections. The device health page shows you current status for platform, intelligence, and engine version. See the [Device health, Microsoft Defender Antivirus health report](device-health-microsoft-defender-antivirus-health.md).
 
 ## Weekly activities 
 
@@ -183,7 +183,7 @@ These tasks are seen as maintenance for your security posture and are critical f
 
 - **Review alerts suppression**
 
-    Periodically review any alert suppression rules that have been created to confirm they are still required and valid. See [Review alerts suppression](manage-alerts.md).
+    Periodically review any alert suppression rules that have been created to confirm they're still required and valid. See [Review alerts suppression](manage-alerts.md).
 
 ## Troubleshooting
 
