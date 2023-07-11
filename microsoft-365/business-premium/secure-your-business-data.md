@@ -44,7 +44,7 @@ This article describes the top 10 ways to secure your business data with Microso
 
 The following table summarizes how to secure your data using Microsoft 365 for business.
 
-| What to do | Microsoft 365 Business Premium | Microsoft 365 Business Standard | Microsoft 365 Business Basic |
+| Secure your data | Microsoft 365 Business Premium | Microsoft 365 Business Standard | Microsoft 365 Business Basic |
 |---|---|---|---|
 | **1. Use multi-factor authentication** (MFA), also known as two-step verification. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |  :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults) (suitable for most organizations) | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
