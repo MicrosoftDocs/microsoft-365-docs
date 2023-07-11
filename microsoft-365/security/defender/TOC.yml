@@ -182,8 +182,10 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
-                 - name: Data loss incidents
-                   href: investigate-dlp.md
+                 - name: Investigate data loss prevention alerts with Microsoft 365 Defender
+                   href: dlp-investigate-alerts-defender.md
+                 - name: Investigate data loss prevention alerts with Microsoft Sentinel
+                   href: dlp-investigate-alerts-sentinel.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Alert classification playbooks

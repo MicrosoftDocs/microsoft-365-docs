@@ -213,7 +213,7 @@ Microsoft 365 provides you with visibility into risky user activities outside of
 
 Microsoft 365 scans the audit logs for risky activities and runs them through a correlation engine to find activities that are occurring at a high volume.  No DLP policies are required. 
 
-To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
+To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/dlp-investigate-alerts-defender.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
 
 ### DLP Alerts Dashboard
 
