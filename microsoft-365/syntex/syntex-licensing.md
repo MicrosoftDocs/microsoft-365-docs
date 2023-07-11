@@ -23,6 +23,8 @@ Microsoft Syntex uses pay-as-you-go licensing for new and renewing customers. Wi
 
 Pay-as-you-go requires an Azure subscription. Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). For information about how to set up pay-as-you-go, see [Configure Microsoft Syntex for pay-as-you-go billing](syntex-azure-billing.md).
 
+Before you configure pay-as-you-go, read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
+
 > [!NOTE]
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
@@ -36,30 +38,30 @@ Pay-as-you-go currently supports the following Syntex services:
 
 More Syntex services will be added as they become available.
 
-Syntex features that are not pay-as-you-go services will be made available through other Microsoft 365 licensing.
+Syntex features that aren't pay-as-you-go services will be made available through other Microsoft 365 licensing.
 
 ## If you still have active per-user licenses
 
-As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using Syntex services.
+As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you'll need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing) to continue using Syntex services.
 
 Users with active per-user licenses can perform the following tasks:
 
 - Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
-- Create a structured document processing model or a freeform document processing model via the entry point in a library
-- Upload content to a library where a custom model has been applied
-- Run an unstructured document processing model on-demand
-- Create a modern template with content assembly
-- Generate a document from a modern template
-- Use of content query to search for metadata
-- Use of annotations to add notes and comments
+- Create a structured document processing model or a freeform document processing model via the entry point in a library.
+- Upload content to a library where a custom model has been applied.
+- Run an unstructured document processing model on-demand.
+- Create a modern template with content assembly.
+- Generate a document from a modern template.
+- Use of content query to search for metadata.
+- Use of annotations to add notes and comments.
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
-- Use the document library rules to move or copy content
+- Use the document library rules to move or copy content.
 
-### AI Builder considerations
- 
-Structured and freeform document processing use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+## AI Builder credits
 
-For each Syntex per-user license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active Syntex per-user license. (Unused credits don't roll over from month to month.)
+Both pay-as-you-go and per-user licensing require [AI Builder credits](https://learn.microsoft.com/en-us/ai-builder/administer-licensing#purchase-ai-builder-capacity).
+
+Structured and freeform document processing use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you'll use AI Builder.
 
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
@@ -67,22 +69,6 @@ If you plan to use a custom Power Platform environment, you must [allocate credi
 
 Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
   
-#### Additional term store features
-
-Having one or more Syntex per-user licenses in your organization enables the following additional term store features for SharePoint admins:
- 
-- SKOS-based term set import
-- Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
-- Term store reports providing insights into published term sets and their use across your tenant
-
-## Related topics
-
-[Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management)
-
-[Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
-
-[Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq)
-
 <!--
 
 Microsoft Syntex uses pay-as-you-go dcurrently has two types of licensing offerings:
