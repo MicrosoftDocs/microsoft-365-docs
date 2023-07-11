@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.date: 06/16/2023
+ms.date: 07/11/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -14,7 +14,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use Microsoft 365 Copilot to easier find information in Microsoft Syntex.
+description: Learn how to use Microsoft 365 Copilot to easily find information in Microsoft Syntex.
 ---
 
 # Overview of Syntex File Q&A for Microsoft 365 Copilot (Preview)
