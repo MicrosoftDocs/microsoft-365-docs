@@ -130,7 +130,8 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
     Review ASR reports to identify any files that affect your environment. See [Attack surface reduction (ASR) rules report](attack-surface-reduction-rules-report.md).
     
 - **Review web protection events** 
-    Review web defense reporting to identify any IP / URLs that are being blocked. See [Web protection](web-protection-overview.md).
+    
+    Review the web defense report to identify any IP addresses or URLs that are blocked. See [Web protection](web-protection-overview.md).
 
 
 ## Monthly activities 
