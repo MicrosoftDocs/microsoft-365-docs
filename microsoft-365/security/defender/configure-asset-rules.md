@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 10/11/2022
+ms.date: 07/10/2023
 ---
 
 # Asset rule management - Dynamic rules for devices
@@ -52,6 +52,9 @@ The following steps guide you on how to create a new dynamic rule in Microsoft 3
 :::image type="content" source="../../media/defender/rule-conditions.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rule-conditions.png":::
 
 6. Select **Next** and choose the tag to apply to this rule.
+
+:::image type="content" source="../../media/defender/actions-to-apply.png" alt-text="Screenshot of the actions page" lightbox="../../media/defender/actions-to-apply.png":::
+
 7. Select **Next** to review and finish creating the rule and then select **Submit**.
 
 >[!Note]
