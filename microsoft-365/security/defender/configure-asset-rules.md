@@ -39,10 +39,7 @@ Dynamic rules can help manage device context by assigning tags and device values
 
 ## Create a new dynamic rule
 
-A rule can be based on device name, domain, OS platform, internet facing status, onboarding status and manual device tags. You can choose one the following actions to perform based on the conditions you've set:
-
-- **Apply a tag**: Select or create a tag that will be applied to the conditions you set.
-- **Set the asset value**: Define an asset’s value to the organization as high, normal, or low.
+A rule can be based on device name, domain, OS platform, internet facing status, onboarding status and manual device tags. You can select or create a tag that will be applied based on the conditions you’ve set.
 
 The following steps guide you on how to create a new dynamic rule in Microsoft 365 Defender:
 
