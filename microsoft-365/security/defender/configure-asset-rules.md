@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/10/2023
+ms.date: 07/11/2023
 ---
 
 # Asset rule management - Dynamic rules for devices
