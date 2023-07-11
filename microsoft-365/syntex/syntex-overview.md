@@ -59,7 +59,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
    :::column-end:::
 :::row-end:::
 
-With Syntex, you can create *modern templates* based on the business documents you use most.  You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+You create *modern templates* based on the business documents you use most. You then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
 
