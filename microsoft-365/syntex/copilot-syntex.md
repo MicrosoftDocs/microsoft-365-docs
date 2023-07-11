@@ -76,7 +76,7 @@ Syntex File Q&A for Copilot analyzes the text of a selected file in a SharePoint
 
 ## Data security and privacy
 
-The new Copilot experiences don't change Microsoft’s commitment and principles for data security and privacy. Learn more about [Microsoft’s standards for data security and privacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/administration-of-microsoft-365-in-the-new-era-of-ai/ba-p/3767079) and [how data is maintained in the Azure OpenAI service](https://learn.microsoft.com/legal/cognitive-services/openai/data-privacy#how-is-data-retained-and-what-customer-controls-are-available).
+The new Copilot experiences don't change Microsoft's commitment and principles for data security and privacy. Learn more about [Microsoft's standards for data security and privacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/administration-of-microsoft-365-in-the-new-era-of-ai/ba-p/3767079) and [how data is maintained in the Azure OpenAI service](/legal/cognitive-services/openai/data-privacy#how-is-data-retained-and-what-customer-controls-are-available).
 
 ## Let us know what you think
 

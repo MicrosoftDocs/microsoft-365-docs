@@ -2,7 +2,7 @@
 title: Investigate data loss alerts with Microsoft 365 Defender
 description: Investigate data loss in Microsoft 365 Defender.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -11,11 +11,11 @@ author: chrfox
 ms.localizationpriority: medium
 manager: laurawi
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - tier2
 ms.topic: how-to
-search.appverid: 
+search.appverid:
   - MOE150
   - met150
 ms.date: 07/11/2023
@@ -34,16 +34,16 @@ You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Micros
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
 - Hunt for compliance logs along with security under Advanced Hunting.
-- In-place admin remediation actions on user, file, and device. 
+- In-place admin remediation actions on user, file, and device.
 - Associate custom tags to DLP incidents and filter by them.
-- Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue. 
+- Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue.
 
 > [!TIP]
 > You can also pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation with the Microsoft 365 Defender connector in Microsoft Sentinel.
 
 ## Licensing requirements
 
-To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions: 
+To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions:
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -51,7 +51,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Information Protection and Governance
 
-> [!NOTE] 
+> [!NOTE]
 > When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. If you don't want DLP alerts to flow into Defender, open a support case to disable this feature. If you disable this feature DLP alerts will surface in the Defender portal as Microsoft Defender for Office alerts.
 
 ## Before you start
@@ -74,16 +74,16 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 
 You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
 
-If the alert is for an email message, you can download the message by selecting **Actions** \> **Download email**. 
+If the alert is for an email message, you can download the message by selecting **Actions** \> **Download email**.
 
 If the alert is for a file in SharePoint Online or One Drive for Business, you can take these actions:
 
-    - Apply retention label
-    - Unshare
-    - Delete
-    - Apply sensitivity labelUnshare file
-    - Download
-    - Withdraw feedback
+- Apply retention label
+- Unshare
+- Delete
+- Apply sensitivity labelUnshare file
+- Download
+- Withdraw feedback
 
 For remediation actions, select the **User card** on the top of the alert page to open the user details.
 
@@ -91,8 +91,8 @@ For Devices DLP alerts, select the device card on the top of the alert page to v
 
 Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
 
-> [!IMPORTANT] 
-> DLP supports associating DLP policies and alert management with administrative units in the Microsoft Purview compliance portal. DLP alerts are only available to unrestricted DLP administrators in the Microsoft 365 Defender portal. Administrative unit restricted DLP administrator will not see DLP alerts.  See [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units) for implementation details. See [Policy scoping](/microsoft-365/compliance/dlp-policy-reference#policy-scoping) for details on administrative unit scoping. 
+> [!IMPORTANT]
+> DLP supports associating DLP policies and alert management with administrative units in the Microsoft Purview compliance portal. DLP alerts are only available to unrestricted DLP administrators in the Microsoft 365 Defender portal. Administrative unit restricted DLP administrator will not see DLP alerts.  See [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units) for implementation details. See [Policy scoping](/microsoft-365/compliance/dlp-policy-reference#policy-scoping) for details on administrative unit scoping.
 
 ## Related articles
 
