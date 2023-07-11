@@ -78,7 +78,7 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 | - [Data Loss Prevention](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) to safeguard company data | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | | 
 | **10. Maintain your environment** by performing tasks, such asl adding or removing users and devices. See [Maintain your environment](m365bp-mdb-maintain-environment.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 
-## More resources about Microsoft 365 for business plans
+## More information about Microsoft 365 for business
 
 - For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c) and the [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 - [What is Defender for Business?](../security/defender-business/mdb-overview.md)
