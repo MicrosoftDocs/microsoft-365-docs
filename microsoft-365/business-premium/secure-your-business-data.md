@@ -89,7 +89,7 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 
-- [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md) (for more details about Defender for Business and Microsoft 365 Business Premium)
+- For more details about Defender for Business and Microsoft 365 Business Premium, see [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md)
 
 - [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
 
