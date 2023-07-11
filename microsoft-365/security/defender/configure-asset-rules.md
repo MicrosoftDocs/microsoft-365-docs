@@ -50,11 +50,9 @@ The following steps guide you on how to create a new dynamic rule in Microsoft 3
 5. Select **Next** to choose the conditions you want to assign:
 
 :::image type="content" source="../../media/defender/rule-conditions.png" alt-text="Screenshot of the Rule conditions page" lightbox="../../media/defender/rule-conditions.png":::
-6. Select **Next** and choose the tag or asset value to apply to this rule.
 
-:::image type="content" source="../../media/defender/rules-to-apply1.png" alt-text="Screenshot of the actions page" lightbox="../../media/defender/rules-to-apply1.png":::
-
-8. Select **Next** to review and finish creating the rule and then select **Submit**.
+6. Select **Next** and choose the tag to apply to this rule.
+7. Select **Next** to review and finish creating the rule and then select **Submit**.
 
 >[!Note]
 > It may take up to 1 hour for changes to be reflected in the portal.
