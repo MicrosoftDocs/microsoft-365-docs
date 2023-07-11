@@ -51,17 +51,15 @@ You can dive deeper into your content to truly understand it, and you can turn t
 ### Content assembly
 
 :::row:::
-   :::column span="":::
-      ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png) 
-   :::column-end:::
    :::column span="3":::
-      With Syntex, you can create *modern templates* based on the business documents you use most.
-
-      You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
+      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
    :::column-end:::
 :::row-end:::
 
- This process lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+With Syntex, you can create *modern templates* based on the business documents you use most.  You can then use those templates to automatically generate new documents using SharePoint lists or user entries as a data source.
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
 
