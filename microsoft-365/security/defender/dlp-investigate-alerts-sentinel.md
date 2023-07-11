@@ -1,5 +1,5 @@
 ---
-title: Investigate data loss alerts with Microsoft Sentinel
+title: Investigate data loss prevention alerts with Microsoft Sentinel
 description: Investigate data loss prevention alerts in Microsoft Sentinal.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
@@ -18,7 +18,7 @@ ms.topic: how to
 search.appverid: 
   - MOE150
   - met150
-ms.date: 07/10/2023
+ms.date: 07/11/2023
 ---
 
 # Investigate data loss prevention alerts with Microsoft Sentinel
