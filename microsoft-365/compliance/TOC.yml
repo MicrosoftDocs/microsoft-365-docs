@@ -88,7 +88,7 @@
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
          href: archive-linkedin-data.md
-       - name: Physical badging data (preview)
+       - name: Physical badging data
          href: import-physical-badging-data.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
@@ -280,7 +280,7 @@
             href: insider-risk-management-settings-alerts.md
           - name: Priority user groups setting
             href: insider-risk-management-settings-priority-user-groups.md
-          - name: Priority physical assets setting (preview)
+          - name: Priority physical assets setting
             href: insider-risk-management-settings-priority-physical-assets.md
           - name: Power Automate flows setting (preview)
             href: insider-risk-management-settings-power-automate.md

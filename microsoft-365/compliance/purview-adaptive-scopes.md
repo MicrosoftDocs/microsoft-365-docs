@@ -97,7 +97,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, select **Roles and Scopes**.
 3. Select **Adaptive scopes**, and then **+ Create scope**.
-4. Follow the prompts in the configuration where you'll first be asked to assign an administrative unit. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one administrative unit that will restrict the scope membership.
+4. Follow the prompts in the configuration where you'll first be asked to assign an administrative unit. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one administrative unit that will restrict the scope membership.
     
     > [!NOTE]
     > Because administrative units don't yet support SharePoint sites, you won't be able to create an adaptive scope for SharePoint sites if you select administrative units.
