@@ -29,7 +29,7 @@ Every organization plans for and implements data loss prevention (DLP) different
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you need as you implement DLP:
 
-1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - The article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - By working through the article that you're reading now, you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -149,7 +149,7 @@ Once you know where your organization stands in terms of regulatory compliance n
 
 ##### How you want your policies scoped
 
-If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you can scope your DLP policies by administrative unit or leave the scope default, which applies policies to the full directory. For more information, see [Policy Scoping](dlp-policy-reference.md#policy-scoping).
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you can scope your DLP policies by administrative unit or leave the scope default, which applies policies to the full directory. For more information, see [Policy Scoping](dlp-policy-reference.md#policy-scoping).
 
 ##### Where are the sensitive items and what business processes are they involved in?
 

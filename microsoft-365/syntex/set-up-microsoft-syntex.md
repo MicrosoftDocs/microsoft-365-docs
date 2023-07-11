@@ -1,9 +1,10 @@
 ---
 title: Set up Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-manager: serdars
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
+manager: pamgreen
+ms.date: 03/06/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
