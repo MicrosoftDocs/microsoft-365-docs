@@ -89,7 +89,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Check Endpoint detection and response (EDR) sensor health**
 
-    EDR health is maintaining the connection to the EDR service to make sure that MDE is getting all the required signals to alert and identify vulnerabilities.  
+    EDR health is maintaining the connection to the EDR service to make sure that Defender for Endpoint is receiving the required signals to alert and identify vulnerabilities.  
     
     Review unhealthy devices. See [Device health, Sensor health & OS report](device-health-sensor-health-os.md).
 
