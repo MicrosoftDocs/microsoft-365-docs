@@ -300,11 +300,11 @@ Using this privacy control won't impact the device compliance check or condition
 
 ## Disable sign-out
 
-Defender for Endpoint supports deployment without sign-out button in the app to prevent users from signing out of the Defender app. This is important to prevent users from tampering the device.
+Defender for Endpoint supports deployment without the sign-out button in the app to prevent users from signing out of the Defender app. This is important to prevent users from tampering with the device.
 Use the following steps to configure Disable sign-out:
 
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
-2. Give the policy a name,select **Platform > Android Enterprise**, and select the profile type.
+2. Give the policy a name, select **Platform > Android Enterprise**, and select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In the Settings page, select **Use configuration designer** and add **Disable Sign Out** as the key and **Integer** as the value type.
    - By default, Disable Sign Out = 1 for Android Enterprise personally owned work profiles, fully managed, company owned personally enabled profiles and 0 for device administrator mode.
