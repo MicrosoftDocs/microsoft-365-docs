@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 07/13/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -48,11 +48,16 @@ The first step to investigate issues detected by your policies is to review aler
 > [!NOTE]
 > If you select the **Pending** tab, you may notice that the count of policy matches in the **Pending** tab heading doesn't match the number of messages in the table (with attachments filtered out) in the lower part of the screen. This is due to new entries in the table that are not reflected in the **Pending** tab. Refresh the page to update both.
 
+> [!TIP]
+> Sometimes it's useful to quickly review policy settings without opening a policy. For example, if you're testing multiple policies with different conditions, you might want to save time by reviewing policy conditions for each policy to determine risk before opening the policy. You can do this by selecting the **Policy settings** button ![Policy settings button](../media/communication-compliance-policy-settings-button.png) if you have any of the following roles: Communication Compliance, Communication Compliance Admins, Communication Compliance Investigators, Communication Compliance Analysts. 
+
 ### Using filters
 
 The next step is to sort the messages so it's easier for you to investigate alerts. From the **Policy details** page, communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and resolved items for each configured policy. You can configure filter queries for a policy or configure and save custom and default filter queries for use in each specific policy. After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific filter values.
 
-For the date filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for views, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
+Key filters (**Body/Subject**, **Date**, **Sender**, and **Tags** filters) are always displayed on the **Pending** and **Resolved** tab to make it easy to access those filters. You can use the **Body/Subject** filter to search for keywords.
+
+For the **Date** filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for views, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
 #### Filter details
 
@@ -62,6 +67,7 @@ The following table outlines filter details:
 
 |**Filter**|**Details**|
 |:-----|:-----|
+| **Body/Subject** | The message subject or chat title. You can use this filter to search for keywords.|
 | **Date** | The date the message was sent or received by a user in your organization. To filter for a single day, select a date range that starts with the day you want results for and end with the following day. For example, if you wanted to filter results for 9/20/2020, you would choose a filter date range of 9/20/2020-9/21/2020.|
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
@@ -71,7 +77,6 @@ The following table outlines filter details:
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
 | **Size** | The size of the message in KB. |
-| **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
 | **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). For a list of supported languages, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). <br><br> You can also filter by more than one language. For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the *EmailDetectedLanguage* field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
