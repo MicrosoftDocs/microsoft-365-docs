@@ -83,10 +83,11 @@ Instead of having to create a new document processing model from scratch, you ca
 ### Structured and freeform document processing
 
 :::row:::
-   :::column span="3":::
-      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](freeform-document-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.   :::column-end:::
    :::column span="":::
       ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png)
+   :::column-end:::
+   :::column span="3":::
+      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](freeform-document-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
    :::column-end:::
 :::row-end:::
 
