@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/19/2023
+ms.date: 07/12/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -109,9 +109,9 @@ To enable this PDF support, you have two options:
 
 To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
 
-    ```PowerShell
-    Set-SPOTenant -EnableSensitivityLabelforPDF $true
-    ```
+```PowerShell
+Set-SPOTenant -EnableSensitivityLabelforPDF $true
+```
 
 If you need more information about how to run cmdlets from the SharePoint Online Management Shell, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
 
