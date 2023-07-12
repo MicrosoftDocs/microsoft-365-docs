@@ -137,6 +137,7 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 |**I want to update a card or bank account number.** |You can't change the card or account number on an existing payment method. If your card or account number has changed, [replace it with a different payment method](#replace-a-payment-method), which moves all active subscriptions from the payment method to the new one, then [delete the old payment method](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**I only have one card or bank account on my account and I want to remove it.** |If you only have one payment method, you must [replace it with a new payment method](#replace-a-payment-method) before you can delete it. |
 |**I can't add my card or bank account.**  |You must use a payment method issued from the same country as your tenant. If you have trouble entering your card or bank account information, you can [contact support](../../admin/get-help-support.md). |
+|**I can't view the payment method.** |If you have trouble viewing your payment method, you can [contact support](../../admin/get-help-support.md). |
 
 ## Related content
 
