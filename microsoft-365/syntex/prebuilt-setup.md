@@ -4,10 +4,10 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 07/12/2023
 audience: admin
 ms.topic: conceptual
-ms.custom: intro-overview
+ms.custom: setup
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up prebuilt document processing in Microsoft Syntex.
 ---
 
-# Set up prebuilt document processing in Microsoft Syntex
+# Set up and manage prebuilt document processing in Microsoft Syntex
 
 Before you can use prebuilt document processing in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
 
