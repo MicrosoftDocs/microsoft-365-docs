@@ -22,6 +22,8 @@
       items:
             - name: Model types
               href: model-types-overview.md 
+            - name: Compare custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Requirements and limitations 
               href: requirements-and-limitations.md  
             - name: Create an enterprise model
@@ -67,8 +69,6 @@
 
     - name: Custom models
       items:
-            - name: Compare custom models 
-              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Unstructured document processing
               items:
                 - name: Overview
