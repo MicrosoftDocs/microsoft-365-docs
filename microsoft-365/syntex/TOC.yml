@@ -73,6 +73,8 @@
               items:
                 - name: Overview
                   href: document-understanding-overview.md
+                - name: Set up and manage
+                  href: unstructured-setup.md
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
                 - name: Train your model
@@ -112,6 +114,8 @@
       items:
             - name: Overview 
               href: prebuilt-overview.md
+            - name: Set up and manage
+              href: prebuilt-setup.md
             - name: Use a contracts model 
               href: prebuilt-model-contract.md
             - name: Use an invoices model 
