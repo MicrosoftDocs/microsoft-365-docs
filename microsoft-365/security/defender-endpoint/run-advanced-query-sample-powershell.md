@@ -85,6 +85,7 @@ where
 Run the following query:
 
 ```powershell
+$token = $aadToken
 $query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -118,7 +119,7 @@ You can now use the query results.
 To output the results of the query in CSV format in file file1.csv, run the following command:
 
 ```powershell
-$results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
+$results | ConvertTo-Csv -NoTypeInformation | Set-Content C:\file1.csv
 ```
 
 To output the results of the query in JSON format in file file1.json, run the following command:
