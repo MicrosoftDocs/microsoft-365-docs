@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -95,9 +95,11 @@ Now rolling out in preview, data lifecycle management supports [administrative u
 
 - Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
 
+- Currently, [simulation mode for auto-apply retention label policies](apply-retention-labels-automatically.md#learn-about-simulation-mode) doesn't support policies that are configured for selected administrative units. Policies with this configuration can be turned on, but if you want to first run them in simulation, select the full directory option.
+
 - Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
 
-For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 ## Common scenarios
 
