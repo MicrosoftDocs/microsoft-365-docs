@@ -107,7 +107,7 @@ To enable this PDF support, you have two options:
 - Turn on support from the Microsoft Purview compliance portal
 - Use the following PowerShell command
 
-To turn on support from the Microsoft Purview compliance portal, go to **Information protection** > **Auto-labeling**. If you see a message to turn on PDF support, select that. If you don't immediately see this message, try again in a few days, or use the PowerShel option.
+To turn on support from the Microsoft Purview compliance portal, go to **Information protection** > **Auto-labeling**. If you see a message to turn on PDF support, select the **Turn on now** button. If you don't immediately see this message, try again in a few days, or use the PowerShel option.
 
 To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
 
