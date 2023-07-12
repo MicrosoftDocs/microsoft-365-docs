@@ -117,7 +117,7 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 
 ### Automatic exclusions
 
-[Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) (also referred to as *automatic server role exclusions*) include exclusions for server roles and features in Windows Server. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
+[Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions) (also referred to as *automatic server role exclusions*) include exclusions for server roles and features in Windows Server. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
 Examples include: 
 
@@ -138,7 +138,7 @@ Examples include:
 
 ### Built-in exclusions
 
-Built-in exclusions include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows. 
+[Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows. 
 
 Examples include:
 
