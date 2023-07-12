@@ -72,7 +72,7 @@ The following table outlines filter details:
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
 | **Item class** | The source of the message based on the message type, email, Microsoft Teams chat, Bloomberg, etc. For more information, see [Item Types and Message Classes](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Recipient domains** | The domain to which the message was sent; typically your Microsoft 365 subscription domain by default. |
+| **Recipient domains** | The domain to which the message was sent; this is typically your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
