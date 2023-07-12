@@ -1,5 +1,5 @@
 ---
-title: Set up optical character recognition in Microsoft Syntex
+title: Set up and manage optical character recognition in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and configure optical character recognition in Microsoft Syntex.
+description: Learn how to set up and manage optical character recognition in Microsoft Syntex.
 ---
 
-# Set up optical character recognition in Microsoft Syntex
+# Set up and manage optical character recognition in Microsoft Syntex
 
 Before you can use the optical character recognition (OCR) service in Microsoft Syntex, it must be configured in the Microsoft 365 admin center.
 
