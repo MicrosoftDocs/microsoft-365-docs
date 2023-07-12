@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 07/06/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -22,11 +22,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
@@ -43,6 +38,8 @@ You can add or update a default theme that applies to everyone within your org. 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
 2. On the **Organization profile** tab, select **Custom themes**.
+
+3. Choose **Add theme**.
 
 All organization themes can be customized using the following tabs.
 
