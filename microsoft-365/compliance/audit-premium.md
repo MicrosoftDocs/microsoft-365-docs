@@ -152,7 +152,7 @@ In addition to the events in Exchange Online and SharePoint Online, there are ev
 - [Microsoft Project for the web](audit-log-activities.md#microsoft-project-for-the-web-activities)
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
 - [Microsoft To Do](audit-log-activities.md#microsoft-to-do-activities)
-- [Yammer](audit-log-activities.md#yammer-activities)
+- [Viva Engage](audit-log-activities.md#viva-engage-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
