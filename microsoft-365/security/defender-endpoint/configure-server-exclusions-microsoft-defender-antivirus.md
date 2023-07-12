@@ -30,7 +30,7 @@ search.appverid: met150
 
 - Windows
 
-This article describes exclusions for Windows Server 2016 and later. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, exclusions for operating system files and server roles happen automatically. If necessary, you can define custom exclusions or opt out of automatic exclusions. 
+This article describes exclusions for Windows Server 2016 and later. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, built-in exclusions for operating system files and automatic server role exclusions happen automatically. If necessary, you can define custom exclusions or opt out of automatic exclusions. 
 
 For a more detailed overview of exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
@@ -44,40 +44,24 @@ For a more detailed overview of exclusions, see [Manage exclusions for Microsoft
 - Appropriate exclusions must be set for software that isn't included with the operating system.
 - Windows Server 2012 R2 doesn't have Microsoft Defender Antivirus as an installable feature. When you onboard those servers to Defender for Endpoint, you'll install Microsoft Defender Antivirus, and default exclusions for operating system files are applied. However, exclusions for server roles (as specified below) don't apply automatically, and you should configure these exclusions as appropriate. To learn more, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
 
-## Automatic exclusions on Windows Server 2016 or later
+## Automatic server role exclusions
 
-On Windows Server 2016 or later, you shouldn't need to define the following exclusions for Microsoft Defender Antivirus:
+On Windows Server 2016 or later, you shouldn't need to define exclusions for server roles. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role.
 
-- Operating system files
-- Server roles and any files that are added through server roles
+However, Windows Server 2012 R2 does not support the automatic exclusions feature. You'll need to define explicit exclusions for any server role and any software that's added after installing the operating system.
 
-Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, it doesn't require exclusions for operating system files. In addition, when you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role.
+## Built-in exclusions
+
+Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, it doesn't require exclusions for operating system files. 
 
 Operating system exclusions and server role exclusions don't appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-> [!NOTE]
-> Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
-> Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
-> Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012.
-
-### The list of automatic exclusions
-
-The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.
-
-#### Default exclusions for all roles
-
-This section lists the default exclusions for all roles in Windows Server 2016, Windows Server 2019, and Windows Server 2022.
-
-> [!IMPORTANT]
-> - Default locations could be different than the locations that are described in this article.
-> - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
-
-##### Windows "temp.edb" files
+### Windows "temp.edb" files
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
-##### Windows Update files or Automatic Update files
+### Windows Update files or Automatic Update files
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -85,7 +69,7 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-##### Windows Security files
+### Windows Security files
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -93,13 +77,13 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 - `%windir%\Security\database\*.log`
 - `%windir%\Security\database\*.sdb`
 
-##### Group Policy files
+### Group Policy files
 
 - `%allusersprofile%\NTUser.pol`
 - `%SystemRoot%\System32\GroupPolicy\Machine\registry.pol`
 - `%SystemRoot%\System32\GroupPolicy\User\registry.pol`
 
-##### WINS files
+### WINS files
 
 - `%systemroot%\System32\Wins\*\*.chk`
 - `%systemroot%\System32\Wins\*\*.log`
@@ -107,7 +91,7 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 - `%systemroot%\System32\LogFiles\`
 - `%systemroot%\SysWow64\LogFiles\`
 
-##### File Replication Service (FRS) exclusions
+### File Replication Service (FRS) exclusions
 
 - Files in the File Replication Service (FRS) working folder. The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
 
@@ -145,10 +129,24 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
   - `%systemdrive%\System Volume Information\DFSR\Fsr*.jrs`
   - `%systemdrive%\System Volume Information\DFSR\Tmp.edb`
 
-##### Process exclusions
+### Process exclusions
 
 - `%systemroot%\System32\dfsr.exe`
 - `%systemroot%\System32\dfsrs.exe`
+
+
+
+### The list of automatic exclusions
+
+The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.
+
+#### Default exclusions for all roles
+
+This section lists the default exclusions for all roles in Windows Server 2016, Windows Server 2019, and Windows Server 2022.
+
+> [!IMPORTANT]
+> - Default locations could be different than the locations that are described in this article.
+> - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
 
 ##### Hyper-V exclusions
 
