@@ -48,11 +48,23 @@ For a more detailed overview of exclusions, see [Manage exclusions for Microsoft
 
 On Windows Server 2016 or later, you shouldn't need to define exclusions for server roles. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role.
 
-However, Windows Server 2012 R2 does not support the automatic exclusions feature. You'll need to define explicit exclusions for any server role and any software that's added after installing the operating system.
+Windows Server 2012 R2 does not support the automatic exclusions feature. You'll need to define explicit exclusions for any server role and any software that's added after installing the operating system.
 
 > [!IMPORTANT]
 > - Default locations could be different than the locations that are described in this article.
 > - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
+
+Automatic exclusions include:
+
+- [Hyper-V exclusions](#hyper-v-exclusions)
+- [SYSVOL files](#sysvol-files)
+- [Active Directory exclusions](#active-directory-exclusions)
+- [DHCP Server exclusions](#dhcp-server-exclusions)
+- [DNS Server exclusions](#dns-server-exclusions)
+- [File and Storage Services exclusions](#file-and-storage-services-exclusions)
+- [Print Server exclusions](#print-server-exclusions)
+- [Web Server exclusions](#web-server-exclusions)
+- [Windows Server Update Services exclusions](#windows-server-update-services-exclusions)
 
 ### Hyper-V exclusions
 
@@ -157,7 +169,7 @@ This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentC
 
 - `%system32%\spool\printers\*`
 
-#### Process exclusions
+#### Process exclusions for the Print Server role
 
 - `spoolsv.exe`
 
@@ -210,12 +222,22 @@ This section lists the folder exclusions that are delivered automatically when y
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-
 ## Built-in exclusions
 
 Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, it doesn't require exclusions for operating system files. 
 
 Operating system exclusions and server role exclusions don't appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+
+Built-in exclusions include:
+
+- [Windows "temp.edb" files](#windows-tempedb-files)
+- [Windows Update files or Automatic Update files](#windows-update-files-or-automatic-update-files)
+- [Windows Security files](#windows-security-files)
+- [Group Policy files](#group-policy-files)
+- [WINS files](#wins-files)
+- [File Replication Service (FRS) exclusions](#file-replication-service-frs-exclusions)
+- 
+- [Process exclusions (2)](#process-exclusions-2)
 
 ### Windows "temp.edb" files
 
@@ -290,7 +312,7 @@ Operating system exclusions and server role exclusions don't appear in the stand
   - `%systemdrive%\System Volume Information\DFSR\Fsr*.jrs`
   - `%systemdrive%\System Volume Information\DFSR\Tmp.edb`
 
-### Process exclusions
+### Process exclusions for built-in operating system files
 
 - `%systemroot%\System32\dfsr.exe`
 - `%systemroot%\System32\dfsrs.exe`
