@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/23/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -83,7 +83,7 @@ Unlike simulation mode for automatically applying sensitivity labels:
 - Simulation mode is optional, and not required to complete before you turn on the policy. You can even turn on the policy while simulation is still running.
 - When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
 
-Other considerations for simulation mode for auto-apply retention policies:
+Other considerations for simulation mode for auto-apply retention label policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
@@ -92,6 +92,7 @@ Other considerations for simulation mode for auto-apply retention policies:
     - Because these scopes use dynamic queries that run daily and can take a few days to fully populate, wait and [confirm their membership](purview-adaptive-scopes.md#confirm-scope-membership) before you start simulation.
     - For the **Microsoft 365 Group mailboxes & sites** location, items stored in [AuxPrimary mailboxes](/powershell/module/exchange/get-mailboxlocation#-mailboxlocationtype) aren't supported.
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
+- If you're using [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units): Currently, simulation mode doesn't support policies that are configured for selected administrative units. Policies with this configuration can be turned on, but if you want to first run them in simulation, select the full directory option.
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
 - Although auto-labeling for sensitive information types applies to emails sent and received rather than emails stored in mailboxes, simulation for Exchange locations runs against against emails stored in mailboxes. Using historical data lets you more quickly assess the effectiveness of your chosen sensitive information types and configuration.
 - For the **Microsoft 365 Group mailboxes & sites** and **OneDrive accounts** locations: Items that are stored in [arbitration mailboxes](/powershell/module/exchange/new-mailbox#-arbitration) aren't supported for simulation.
@@ -142,7 +143,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
-4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
