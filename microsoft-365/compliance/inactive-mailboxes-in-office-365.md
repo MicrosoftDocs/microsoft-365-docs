@@ -68,8 +68,8 @@ If a Microsoft 365 retention policy is applied to a mailbox, or one or more emai
     - Teams channel messages
     - Teams chats
     - Teams private channel messages
-    - Yammer community messages
-    - Yammer user messages
+    - Viva Engage community messages
+    - Viva Engage user messages
 
 For more information about Microsoft retention, see [Learn about retention policies and retention labels](retention.md).
 
