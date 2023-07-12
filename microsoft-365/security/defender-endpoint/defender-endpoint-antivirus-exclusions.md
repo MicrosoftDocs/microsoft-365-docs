@@ -148,7 +148,7 @@ Examples include:
 - Windows Security files 
 - ... and more.
 
-For more information, see [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions)
+For more information, see [Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
 
 ### Custom exclusions
 
