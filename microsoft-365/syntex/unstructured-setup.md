@@ -1,5 +1,5 @@
 ---
-title: Set up unstructured document processing in Microsoft Syntex
+title: Set up and manage unstructured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 ms.date: 07/12/2023
 audience: admin
 ms.topic: conceptual
-ms.custom: intro-overview
+ms.custom: setup
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up unstructured document processing in Microsoft Syntex.
+description: Learn how to set up and manage unstructured document processing in Microsoft Syntex.
 ---
 
-# Set up unstructured document processing in Microsoft Syntex
+# Set up and manage unstructured document processing in Microsoft Syntex
 
 Before you can use unstructured document processing in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
 
@@ -50,7 +50,7 @@ Manage which SharePoint sites users can use to create custom models to process f
     a. Choose which site or sites this service should be enabled for.
 
     > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by either being created on that site, or in a content center.
+    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
 
     b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
