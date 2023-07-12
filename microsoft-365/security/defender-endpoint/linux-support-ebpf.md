@@ -85,9 +85,7 @@ sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 
 ### Troubleshooting and diagnostics
 
-These functionalities will be available in future versions.
-
-You can check the agent health status by running the mdatp health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
+You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
 
 ```bash
 uname -a
@@ -97,11 +95,11 @@ The following two sets of data help analyze potential issues and determine the m
 
 1.  Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
 
-2.  Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: Microsoft Defender for Endpoint on Linux resources \| Microsoft Learn
+2.  Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information.md)
 
 > [!NOTE]
-> In the preview version, diagnostic capabilities for top processes consuming eBPF resources and troubleshooting capabilities for configuring eBPF exclusions are not supported.
+> In the preview version, diagnostic capabilities for top processes consuming eBPF resources and troubleshooting capabilities for configuring eBPF exclusions are not supported. These functionalities will be available in future versions.
 
 ## See also
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
-- [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
+- [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information.md)
