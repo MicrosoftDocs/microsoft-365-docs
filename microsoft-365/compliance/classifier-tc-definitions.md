@@ -409,7 +409,8 @@ Some classifiers have minimum word count requirements for messages. To identify 
 
 |**Classifier**|**Minimum word count**|**Language**|
 |:-------------|:--------------|:--------------|
-| Threat, Harassment, and Profanity | 12 words | non-English |
+| Threat, Harassment, and Profanity | 6 words | Dutch, French, German, Italian, Japanese, Portuguese, Spanish |
+| Threat, Harassment, and Profanity | 12 words | Arabic, Chinese Simplified, Chinese Traditional, Korean |
 | Threat and Harassment | 3 words | English |
 | Profanity | 5 words | English |
 | Corporate sabotage, Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure | 6 words | English |
