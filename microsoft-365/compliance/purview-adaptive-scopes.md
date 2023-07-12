@@ -33,7 +33,6 @@ When you create a [communication compliance policy](/microsoft-365/compliance/co
 The advantages of using adaptive scopes include:
 
 - No limits on the number of items per policy. Although adaptive policies are still subject to the maximum number of policies per tenant limitations, the more flexible configuration will likely result in far fewer policies.
-- Powerful targeting for your policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific policy. 
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 - A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
 - Support for [Azure AD administrative units](/azure/active-directory/roles/administrative-units).
