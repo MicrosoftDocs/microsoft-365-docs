@@ -85,12 +85,23 @@ For example, a recommended action states you get 10 points by protecting all you
 
 Currently there are recommendations for the following products:
 
-- Microsoft 365 (including Exchange Online)
+- App governance
 - Azure Active Directory
+- Citrix ShareFile
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
+- Microsoft Defender for Office
+- Docusign
+- Exchange Online
+- Github
 - Microsoft Defender for Cloud Apps
+- Microsoft Information Protection
 - Microsoft Teams
+- Okta
+- Salesforce
+- ServiceNow
+- SharePoint Online
+- Zoom
 
 Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the recommended actions as covered by a third party or alternate mitigation.
 

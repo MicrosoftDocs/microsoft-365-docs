@@ -6,7 +6,7 @@ ms.author: cabailey
 author: cabailey
 manager: laurawi
 ms.reviewer: brenle
-ms.date: 06/12/2023
+ms.date: 07/04/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -123,7 +123,7 @@ A flyout page opens in the Microsoft 365 admin center. Enter the email address o
 
 ## Instructions for end users
 
-Explain to users how their archive mailbox works, and how they can interact with it in Outlook on Windows, macOS, and the web. The most effective documentation will be customized for your organization. But for basic instructions, see [Manage email storage with online archive mailboxes](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+Explain to users how their archive mailbox works, and how they can interact with it in Outlook on Windows, macOS, and the web. The most effective documentation will be customized for your organization. But for basic instructions, see [Manage email storage with online archive mailboxes](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## Next steps
 

@@ -77,14 +77,6 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
 
-> [!IMPORTANT]
-> To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following:
->
-> - Microsoft Defender for Endpoint (per user)
-> - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 E5 Security User subscription licenses.
-
 ## Windows Server 2012 R2 and Windows Server 2016
 
 ### New Windows Server 2012 R2 and 2016 functionality in the modern unified solution
@@ -349,7 +341,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ## Next steps
 
-After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
+After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow [Configure capabilities](onboard-configure.md#configure-capabilities) to be guided on enabling the various components.
 
 ## Offboard Windows servers
 
