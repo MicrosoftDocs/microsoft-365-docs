@@ -236,8 +236,7 @@ Built-in exclusions include:
 - [Group Policy files](#group-policy-files)
 - [WINS files](#wins-files)
 - [File Replication Service (FRS) exclusions](#file-replication-service-frs-exclusions)
-- 
-- [Process exclusions (2)](#process-exclusions-2)
+- [Process exclusions for built-in operating system files](#process-exclusions-for-built-in-operating-system-files)
 
 ### Windows "temp.edb" files
 
