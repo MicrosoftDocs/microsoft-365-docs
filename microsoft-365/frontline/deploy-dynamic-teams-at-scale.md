@@ -17,8 +17,8 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 06/28/2023
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 07/12/2023
+
 ---
 
 # Deploy frontline dynamic teams at scale
@@ -131,6 +131,9 @@ You can manage your teams when changes happen in your organization.
 6. After your refresh completes, your setup status will show **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
+
+>[!IMPORTANT]
+>The ability to edit your frontline team settings is coming soon.
 
 1. First, navigate to your [Teams admin center](https://admin.teams.microsoft.com).
 1. Open the **Teams** section on the left rail.

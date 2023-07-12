@@ -15,13 +15,15 @@
               href: set-up-content-understanding.md
             - name: Set up Microsoft Syntex
               href: set-up-microsoft-syntex.md
-            - name: Create a content center 
+            - name: Set up a content center 
               href: create-a-content-center.md
 
     - name: Work with models
       items:
             - name: Model types
               href: model-types-overview.md 
+            - name: Compare custom models 
+              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Requirements and limitations 
               href: requirements-and-limitations.md  
             - name: Create an enterprise model
@@ -67,12 +69,12 @@
 
     - name: Custom models
       items:
-            - name: Compare custom models 
-              href: difference-between-document-understanding-and-form-processing-model.md  
             - name: Unstructured document processing
               items:
                 - name: Overview
                   href: document-understanding-overview.md
+                - name: Set up and manage
+                  href: unstructured-setup.md
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
                 - name: Train your model
@@ -112,6 +114,8 @@
       items:
             - name: Overview 
               href: prebuilt-overview.md
+            - name: Set up and manage
+              href: prebuilt-setup.md
             - name: Use a contracts model 
               href: prebuilt-model-contract.md
             - name: Use an invoices model 
@@ -159,7 +163,11 @@
           href: image-tagging.md
 
     - name: Optical character recognition 
-      href: ocr.md
+      items: 
+        - name: Overview 
+          href: ocr-overview.md
+        - name: Set up and manage 
+          href: ocr.md
 
     - name: Taxonomy
       items:

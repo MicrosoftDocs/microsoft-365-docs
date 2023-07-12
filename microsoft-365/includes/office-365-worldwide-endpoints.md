@@ -84,8 +84,8 @@ ID | Category | ER | Addresses | Ports
 105 | Default<BR>Optional<BR>**Notes:** Outlook for Android and iOS: Outlook Privacy | No | `www.acompli.com` | **TCP:** 443
 114 | Default<BR>Optional<BR>**Notes:** Office Mobile URLs | No | `*.appex.bing.com, *.appex-rf.msn.com, c.bing.com, c.live.com, d.docs.live.net, directory.services.live.com, docs.live.net, partnerservices.getmicrosoftkey.com, signup.live.com` | **TCP:** 443, 80
 116 | Default<BR>Optional<BR>**Notes:** Office for iPad URLs | No | `account.live.com, auth.gfx.ms, login.live.com` | **TCP:** 443, 80
-117 | Default<BR>Optional<BR>**Notes:** Yammer | No | `*.yammer.com, *.yammerusercontent.com` | **TCP:** 443
-118 | Default<BR>Optional<BR>**Notes:** Yammer CDN | No | `*.assets-yammer.com` | **TCP:** 443
+117 | Default<BR>Optional<BR>**Notes:** Viva Engage | No | `*.yammer.com, *.yammerusercontent.com` | **TCP:** 443
+118 | Default<BR>Optional<BR>**Notes:** Viva Engage CDN | No | `*.assets-yammer.com` | **TCP:** 443
 121 | Default<BR>Optional<BR>**Notes:** Planner: auxiliary URLs | No | `www.outlook.com` | **TCP:** 443, 80
 122 | Default<BR>Optional<BR>**Notes:** Sway CDNs | No | `eus-www.sway-cdn.com, eus-www.sway-extensions.com, wus-www.sway-cdn.com, wus-www.sway-extensions.com` | **TCP:** 443
 124 | Default<BR>Optional<BR>**Notes:** Sway | No | `sway.com, www.sway.com` | **TCP:** 443
