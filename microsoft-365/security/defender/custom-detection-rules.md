@@ -54,7 +54,7 @@ To manage required permissions, a **global administrator** can:
 - Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** \> **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
-> A user also needs to have the appropriate permissions for the devices in a [device scope](#5-set-the-rule-scope) of a custom detection rule that they are defining or modifying before they can proceed. A user can't edit a custom detection rule that is scoped to run on all devices, if the same user does not permissions for all devices. 
+> A user also needs to have the appropriate permissions for the devices in the [device scope](#5-set-the-rule-scope) of a custom detection rule that they are creating or editing before they can proceed. A user can't edit a custom detection rule that is scoped to run on all devices, if the same user does not permissions for all devices. 
 
 
 
@@ -241,7 +241,7 @@ When setting the scope, you can select:
 Only data from devices in the scope will be queried. Also, actions will be taken only on those devices.
 
 > [!NOTE]
-> Users are able to create or edit the scope of a rule only if they have the corresponding permissions for the devices included in the scope they are defining or modifying. For instance, admins can only create or edit rules that are scoped to all device groups if they have permissions for all device groups. 
+> Users are able to create or edit a custom detection rule only if they have the corresponding permissions for the devices included in the scope of the rule. For instance, admins can only create or edit rules that are scoped to all device groups if they have permissions for all device groups. 
 
 
 
