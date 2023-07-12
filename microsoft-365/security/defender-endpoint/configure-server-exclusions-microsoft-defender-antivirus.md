@@ -225,7 +225,7 @@ This section lists the folder exclusions that are delivered automatically when y
 
 ## Built-in exclusions
 
-Because Microsoft Defender Antivirus is built into Windows, including Windows 10, Windows 11, and Windows Server 2016 and later, it doesn't require exclusions for operating system files. 
+Because Microsoft Defender Antivirus is built into Windows, it doesn't require exclusions for operating system files on any version of Windows. 
 
 Built-in exclusions include:
 
