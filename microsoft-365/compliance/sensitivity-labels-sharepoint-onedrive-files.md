@@ -104,8 +104,10 @@ Not supported by default, and now rolling out in preview, you can enable support
 
 To enable this PDF support, you have two options:
 
+- Turn on support from the Microsoft Purview compliance portal
 - Use the following PowerShell command
-- If PDF files are detected for your auto-labeling policies, you will be prompted to turn on PDF support from within the simulation results
+
+To turn on support from the Microsoft Purview compliance portal, go to **Information protection** > **Auto-labeling**. If you see a message to turn on PDF support, select that. If you don't immediately see this message, try again in a few days, or use the PowerShel option.
 
 To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
 
@@ -113,7 +115,7 @@ To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/m
 Set-SPOTenant -EnableSensitivityLabelforPDF $true
 ```
 
-If you need more information about how to run cmdlets from the SharePoint Online Management Shell, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
+You might need to download the latest version of the SharePoint Online Management Shell for the PDF parameter. If you need more information about how to run the cmdlets, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
 
 For Microsoft 365 Multi-Geo: Similarly to the instructions to run the PowerShell command to enable support for sensitivity labels, you must connect to each of your geo-locations, and then run the command to enable support for PDFs.
 
