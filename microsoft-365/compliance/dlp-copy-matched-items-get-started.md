@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 06/22/2023
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
