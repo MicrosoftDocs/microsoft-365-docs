@@ -78,7 +78,7 @@ You create *modern templates* based on the business documents you use most. You 
 
 Instead of having to create a new document processing model from scratch, you can use a prebuilt model to jumpstart your document project.
 
-[Learn more about prebuilt models in Microsoft Syntex.](model-types-overview.md)
+[Learn more about prebuilt models in Microsoft Syntex.](prebuilt-overview.md)
 
 ### Structured and freeform document processing
 
