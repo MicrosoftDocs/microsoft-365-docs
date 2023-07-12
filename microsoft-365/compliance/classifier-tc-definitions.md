@@ -401,7 +401,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgments. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Word count requirements
 
