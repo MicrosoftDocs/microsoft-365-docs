@@ -50,6 +50,167 @@ On Windows Server 2016 or later, you shouldn't need to define exclusions for ser
 
 However, Windows Server 2012 R2 does not support the automatic exclusions feature. You'll need to define explicit exclusions for any server role and any software that's added after installing the operating system.
 
+> [!IMPORTANT]
+> - Default locations could be different than the locations that are described in this article.
+> - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
+
+### Hyper-V exclusions
+
+The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
+
+|Exclusion type|Specifics|
+|---|---|
+|File types|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
+|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
+|Processes|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
+
+### SYSVOL files
+
+- `%systemroot%\Sysvol\Domain\*.adm`
+- `%systemroot%\Sysvol\Domain\*.admx`
+- `%systemroot%\Sysvol\Domain\*.adml`
+- `%systemroot%\Sysvol\Domain\Registry.pol`
+- `%systemroot%\Sysvol\Domain\*.aas`
+- `%systemroot%\Sysvol\Domain\*.inf`
+- `%systemroot%\Sysvol\Domain\*Scripts.ini`
+- `%systemroot%\Sysvol\Domain\*.ins`
+- `%systemroot%\Sysvol\Domain\Oscfilter.ini`
+
+### Active Directory exclusions
+
+This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services (AD DS).
+
+#### NTDS database files
+
+The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
+
+- `%windir%\Ntds\ntds.dit`
+- `%windir%\Ntds\ntds.pat`
+
+#### The AD DS transaction log files
+
+The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
+
+- `%windir%\Ntds\EDB*.log`
+- `%windir%\Ntds\Res*.log`
+- `%windir%\Ntds\Edb*.jrs`
+- `%windir%\Ntds\Ntds*.pat`
+- `%windir%\Ntds\TEMP.edb`
+
+#### The NTDS working folder
+
+This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
+
+- `%windir%\Ntds\Temp.edb`
+- `%windir%\Ntds\Edb.chk`
+
+#### Process exclusions for AD DS and AD DS-related support files
+
+- `%systemroot%\System32\ntfrs.exe`
+- `%systemroot%\System32\lsass.exe`
+
+### DHCP Server exclusions
+
+This section lists the exclusions that are delivered automatically when you install the DHCP Server role. The DHCP Server file locations are specified by the *DatabasePath*, *DhcpLogFilePath*, and *BackupDatabasePath* parameters in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+
+- `%systemroot%\System32\DHCP\*\*.mdb`
+- `%systemroot%\System32\DHCP\*\*.pat`
+- `%systemroot%\System32\DHCP\*\*.log`
+- `%systemroot%\System32\DHCP\*\*.chk`
+- `%systemroot%\System32\DHCP\*\*.edb`
+
+### DNS Server exclusions
+
+This section lists the file and folder exclusions and the process exclusions that are delivered automatically when you install the DNS Server role.
+
+#### File and folder exclusions for the DNS Server role
+
+- `%systemroot%\System32\Dns\*\*.log`
+- `%systemroot%\System32\Dns\*\*.dns`
+- `%systemroot%\System32\Dns\*\*.scc`
+- `%systemroot%\System32\Dns\*\BOOT`
+
+#### Process exclusions for the DNS Server role
+
+- `%systemroot%\System32\dns.exe`
+
+### File and Storage Services exclusions
+
+This section lists the file and folder exclusions that are delivered automatically when you install the File and Storage Services role. The exclusions listed below don't include exclusions for the Clustering role.
+
+- `%SystemDrive%\ClusterStorage`
+- `%clusterserviceaccount%\Local Settings\Temp`
+- `%SystemDrive%\mscs`
+
+### Print Server exclusions
+
+This section lists the file type exclusions, folder exclusions, and the process exclusions that are delivered automatically when you install the Print Server role.
+
+#### File type exclusions
+
+- `*.shd`
+- `*.spl`
+
+#### Folder exclusions
+
+This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
+
+- `%system32%\spool\printers\*`
+
+#### Process exclusions
+
+- `spoolsv.exe`
+
+### Web Server exclusions
+
+This section lists the folder exclusions and the process exclusions that are delivered automatically when you install the Web Server role.
+
+#### Folder exclusions
+
+- `%SystemRoot%\IIS Temporary Compressed Files`
+- `%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files`
+- `%SystemDrive%\inetpub\temp\ASP Compiled Templates`
+- `%systemDrive%\inetpub\logs`
+- `%systemDrive%\inetpub\wwwroot`
+
+#### Process exclusions
+
+- `%SystemRoot%\system32\inetsrv\w3wp.exe`
+- `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
+- `%SystemDrive%\PHP5433\php-cgi.exe`
+
+#### Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder
+
+The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root. The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:
+
+- `%systemroot%\Sysvol\Domain`
+- `%systemroot%\Sysvol_DFSR\Domain`
+
+The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+
+Exclude the following files from this folder and all its subfolders:
+
+- `*.adm`
+- `*.admx`
+- `*.adml`
+- `Registry.pol`
+- `Registry.tmp`
+- `*.aas`
+- `*.inf`
+- `Scripts.ini`
+- `*.ins`
+- `Oscfilter.ini`
+
+### Windows Server Update Services exclusions
+
+This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role. The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+
+- `%systemroot%\WSUS\WSUSContent`
+- `%systemroot%\WSUS\UpdateServicesDBFiles`
+- `%systemroot%\SoftwareDistribution\Datastore`
+- `%systemroot%\SoftwareDistribution\Download`
+
+
 ## Built-in exclusions
 
 Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, it doesn't require exclusions for operating system files. 
@@ -134,183 +295,12 @@ Operating system exclusions and server role exclusions don't appear in the stand
 - `%systemroot%\System32\dfsr.exe`
 - `%systemroot%\System32\dfsrs.exe`
 
-
-
-### The list of automatic exclusions
-
-The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.
-
-#### Default exclusions for all roles
-
-This section lists the default exclusions for all roles in Windows Server 2016, Windows Server 2019, and Windows Server 2022.
-
-> [!IMPORTANT]
-> - Default locations could be different than the locations that are described in this article.
-> - To set exclusions for software that isn't included as a Windows feature or server role, refer to the software manufacturer's documentation.
-
-##### Hyper-V exclusions
-
-The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
-
-|Exclusion type|Specifics|
-|---|---|
-|File types|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
-|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
-|Processes|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-
-##### SYSVOL files
-
-- `%systemroot%\Sysvol\Domain\*.adm`
-- `%systemroot%\Sysvol\Domain\*.admx`
-- `%systemroot%\Sysvol\Domain\*.adml`
-- `%systemroot%\Sysvol\Domain\Registry.pol`
-- `%systemroot%\Sysvol\Domain\*.aas`
-- `%systemroot%\Sysvol\Domain\*.inf`
-- `%systemroot%\Sysvol\Domain\*Scripts.ini`
-- `%systemroot%\Sysvol\Domain\*.ins`
-- `%systemroot%\Sysvol\Domain\Oscfilter.ini`
-
-
-#### Active Directory exclusions
-
-This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services (AD DS).
-
-##### NTDS database files
-
-The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`
-
-- `%windir%\Ntds\ntds.dit`
-- `%windir%\Ntds\ntds.pat`
-
-##### The AD DS transaction log files
-
-The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
-
-- `%windir%\Ntds\EDB*.log`
-- `%windir%\Ntds\Res*.log`
-- `%windir%\Ntds\Edb*.jrs`
-- `%windir%\Ntds\Ntds*.pat`
-- `%windir%\Ntds\TEMP.edb`
-
-##### The NTDS working folder
-
-This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`
-
-- `%windir%\Ntds\Temp.edb`
-- `%windir%\Ntds\Edb.chk`
-
-##### Process exclusions for AD DS and AD DS-related support files
-
-- `%systemroot%\System32\ntfrs.exe`
-- `%systemroot%\System32\lsass.exe`
-
-#### DHCP Server exclusions
-
-This section lists the exclusions that are delivered automatically when you install the DHCP Server role. The DHCP Server file locations are specified by the *DatabasePath*, *DhcpLogFilePath*, and *BackupDatabasePath* parameters in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
-
-- `%systemroot%\System32\DHCP\*\*.mdb`
-- `%systemroot%\System32\DHCP\*\*.pat`
-- `%systemroot%\System32\DHCP\*\*.log`
-- `%systemroot%\System32\DHCP\*\*.chk`
-- `%systemroot%\System32\DHCP\*\*.edb`
-
-#### DNS Server exclusions
-
-This section lists the file and folder exclusions and the process exclusions that are delivered automatically when you install the DNS Server role.
-
-##### File and folder exclusions for the DNS Server role
-
-- `%systemroot%\System32\Dns\*\*.log`
-- `%systemroot%\System32\Dns\*\*.dns`
-- `%systemroot%\System32\Dns\*\*.scc`
-- `%systemroot%\System32\Dns\*\BOOT`
-
-##### Process exclusions for the DNS Server role
-
-- `%systemroot%\System32\dns.exe`
-
-#### File and Storage Services exclusions
-
-This section lists the file and folder exclusions that are delivered automatically when you install the File and Storage Services role. The exclusions listed below don't include exclusions for the Clustering role.
-
-- `%SystemDrive%\ClusterStorage`
-- `%clusterserviceaccount%\Local Settings\Temp`
-- `%SystemDrive%\mscs`
-
-#### Print Server exclusions
-
-This section lists the file type exclusions, folder exclusions, and the process exclusions that are delivered automatically when you install the Print Server role.
-
-##### File type exclusions
-
-- `*.shd`
-- `*.spl`
-
-##### Folder exclusions
-
-This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`
-
-- `%system32%\spool\printers\*`
-
-##### Process exclusions
-
-- `spoolsv.exe`
-
-#### Web Server exclusions
-
-This section lists the folder exclusions and the process exclusions that are delivered automatically when you install the Web Server role.
-
-##### Folder exclusions
-
-- `%SystemRoot%\IIS Temporary Compressed Files`
-- `%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files`
-- `%SystemDrive%\inetpub\temp\ASP Compiled Templates`
-- `%systemDrive%\inetpub\logs`
-- `%systemDrive%\inetpub\wwwroot`
-
-##### Process exclusions
-
-- `%SystemRoot%\system32\inetsrv\w3wp.exe`
-- `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
-- `%SystemDrive%\PHP5433\php-cgi.exe`
-
-##### Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder
-
-The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root. The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:
-
-- `%systemroot%\Sysvol\Domain`
-- `%systemroot%\Sysvol_DFSR\Domain`
-
-The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
-
-Exclude the following files from this folder and all its subfolders:
-
-- `*.adm`
-- `*.admx`
-- `*.adml`
-- `Registry.pol`
-- `Registry.tmp`
-- `*.aas`
-- `*.inf`
-- `Scripts.ini`
-- `*.ins`
-- `Oscfilter.ini`
-
-#### Windows Server Update Services exclusions
-
-This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role. The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
-
-- `%systemroot%\WSUS\WSUSContent`
-- `%systemroot%\WSUS\UpdateServicesDBFiles`
-- `%systemroot%\SoftwareDistribution\Datastore`
-- `%systemroot%\SoftwareDistribution\Download`
-
 ## Opting out of automatic exclusions
 
-In Windows Server 2016 and later, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and later. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
+In Windows Server 2016 and later, the predefined exclusions delivered by [Security intelligence updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates) only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and later. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 > [!WARNING]
-> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016, Windows Server 2019, and Windows Server 2022 roles.
+> Opting out of automatic exclusions might adversely impact performance, or result in data corruption. Automatic server role exclusions are optimized for Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 
 Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL folders to another drive or path that is *different from the original path*, you must add exclusions manually. See [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
