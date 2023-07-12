@@ -185,7 +185,7 @@ This section lists the folder exclusions and the process exclusions that are del
 - `%systemDrive%\inetpub\logs`
 - `%systemDrive%\inetpub\wwwroot`
 
-#### Process exclusions
+#### Process exclusions for the Web Server role
 
 - `%SystemRoot%\system32\inetsrv\w3wp.exe`
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
