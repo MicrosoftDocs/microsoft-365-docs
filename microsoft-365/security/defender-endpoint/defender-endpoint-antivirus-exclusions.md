@@ -138,7 +138,7 @@ For more information, see [Automatic server role exclusions](configure-server-ex
 
 ### Built-in exclusions
 
-[Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows. 
+[Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on Windows (client or server). 
 
 Examples include:
 
