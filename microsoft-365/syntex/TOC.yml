@@ -150,7 +150,11 @@
       href: annotations.md
 
     - name: Optical character recognition 
-      href: ocr.md
+      items: 
+        - name: Overview 
+          href: ocr-overview.md
+        - name: Set up and manage 
+          href: ocr.md
 
     - name: Taxonomy
       items:
