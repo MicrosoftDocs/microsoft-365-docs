@@ -19,7 +19,7 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 7/10/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -507,4 +507,6 @@ To verify that you've successfully created, modified, or removed Safe Attachment
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
+- Add the URL `http://spamlink.contoso.com` to a file (for example, a Word document), and attach that file in an email message to test Safe Attachments protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL isn't harmful, but when it's included in an email attachment, it triggers a Safe Attachments protection response.
+
+- To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
