@@ -187,8 +187,6 @@
              href: add-users/set-password-to-never-expire.md
            - name: Password policy recommendations
              href: misc/password-policy-recommendations.md
-           - name: Resend user passwords
-             href: add-users/resend-user-password.md
            - name: Turn off strong passwords
              href: add-users/strong-password.md
            - name: Set the password expiration policy
