@@ -82,8 +82,3 @@ To assign licenses:
 
 1. Select **Save changes**.
 
-## See also
-
-[Overview of the document processing model in AI Builder](/ai-builder/form-processing-model-overview)
-
-[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
