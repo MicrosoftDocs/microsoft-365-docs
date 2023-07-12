@@ -53,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 :::row:::
    :::column span="3":::
       With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence.
-      
+
       You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
@@ -125,11 +125,11 @@ Learn more about [structured models](form-processing-overview.md) and [freeform 
 ### Annotations
 
 :::row:::
-   :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
-   :::column-end:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
 
