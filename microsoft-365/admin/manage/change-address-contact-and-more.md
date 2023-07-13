@@ -97,7 +97,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
 *  OneNote:  End users may have a notebook named in this pattern: \<first name>@\<organization name>.
 *  Windows desktop applications for Word, Excel, and PowerPoint: The File Save and File Open screens display the organization name.  
 *  Mobile apps such as Word, Excel, PowerPoint, OneNote, Outlook, and the Microsoft 365 App may display the organization name on various screens, especially ones that let you pick files from Microsoft 365 services such as SharePoint and OneDrive.
-*  Power Platform - the default environment takes its name from the organization name. The organization name (refered to as the TenantName in this article)[../../power-platform/guidance/adoption/secure-default-environment#rename-the-default-environment] is the default environment name, but  can be changed, though that is a manual step after a tenant rename.
+*  Power Platform: The default environment takes its name from the organization name. The organization name (referred to as the TenantName in [this article](../../power-platform/guidance/adoption/secure-default-environment#rename-the-default-environment)) is the default environment name, but can be changed, though that is a manual step after a tenant rename.
 
 Note that only Microsoft Teams will automatically detect the change to the organization name and reflect the change in the tenant switcher. Any teams, such as an organization-wide team named with the company name, will not update. 
 None of the other applications pick up the name change automatically. Mobile apps may require you to sign out and sign back in or reinstall them before they will display the new name. 
