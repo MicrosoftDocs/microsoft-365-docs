@@ -112,6 +112,7 @@ The following sections describe these exclusions in more detail:
 Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. These exclusions include:
 
 - [Automatic exclusions](#automatic-exclusions)
+- [Built-in exclusions](#built-in-exclusions)
 - [Custom exclusions](#custom-exclusions)
 - [Custom remediation actions](#custom-remediation-actions)
 
