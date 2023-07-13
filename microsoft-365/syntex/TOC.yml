@@ -68,8 +68,6 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
-            - name: Set up and manage
-              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -128,8 +126,6 @@
       items: 
         - name: Overview 
           href: content-assembly.md
-        - name: Set up and configure
-          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -230,7 +226,6 @@
           href: powershell-syntex-processing.md
         - name: Work with explanations
           href: powershell-syntex-explanations.md
-
 
     - name: Extensibility
       items: 
