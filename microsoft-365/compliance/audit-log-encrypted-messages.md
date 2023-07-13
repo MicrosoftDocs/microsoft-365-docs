@@ -32,7 +32,11 @@ Access log can be enabled using [Exchange Online PowerShell](/powershell/exchang
 - $true: Turn on audit feature.
 - $false: Turn off audit feature
 
-Example: Set-IrmConfiguration -EnablePortalTrackingLogs $true
+Example:
+
+```powershell
+Set-IrmConfiguration -EnablePortalTrackingLogs $true
+```
 
 To learn more, see [Set-IRMConfiguration (ExchangePowerShell)](/powershell/module/exchange/set-irmconfiguration).
 

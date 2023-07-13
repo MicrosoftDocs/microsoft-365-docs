@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/05/2023
+ms.date: 07/12/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -44,12 +44,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Sensitivity labels
 
 - **General availability (GA)**: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
+- **In preview**: Now rolling out in preview, PDF support for auto-labeling policies, default sensitivity labels for SharePoint document libraries, and labeling activities in Office on the web that include manual labeling and displaying labeled documents, and encrypted PDFs that are now supported  for DLP, eDiscovery, and search. You must [opt-in for this PDF support](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
 
 ## June 2023
 
 ### Data lifecycle management and records management
 
-- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Yammer are now in general availability.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Viva Engage are now in general availability.
 
 ### Data loss prevention
 
@@ -102,7 +103,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
-- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Viva Engage remain in preview.
 
 ### eDiscovery
 
@@ -149,8 +150,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
-- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Viva Engage.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
@@ -292,7 +294,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Audit
 
-- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#yammer-activities) in Yammer.
+- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#viva-engage-activities) in Viva Engage.
 - [Clarification](/microsoft-365/compliance/audit-log-retention-policies#before-you-create-an-audit-log-retention-policy) on customized retention policies and licensing requirements.
 - Updates to [export limits](/microsoft-365/compliance/audit-new-search#audit-search-results-overview) for all search job items in Audit (Premium).
 - Clarification for [OneDrive for Business support](/microsoft-365/compliance/audit-premium) in Audit (Premium).
@@ -414,3 +416,4 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Rolling out in preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports the configuration of a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label).
 - **Rolling out in preview**: Word, Excel, and PowerPoint in Office for Mac also supports the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors).
 - The earliest version for the AIP add-in to be [disabled by default in Office apps](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) for the Current Channel and Monthly Enterprise Channel is now version 2302. The minimum version for the Semi-Annual Channel hasn't changed.
+

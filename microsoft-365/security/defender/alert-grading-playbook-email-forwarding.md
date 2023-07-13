@@ -259,3 +259,4 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

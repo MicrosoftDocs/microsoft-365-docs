@@ -34,7 +34,7 @@ The information in this article supplements [Learn about retention](retention.md
 For other workloads, see:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
-- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Viva Engage](retention-policies-viva-engage.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]

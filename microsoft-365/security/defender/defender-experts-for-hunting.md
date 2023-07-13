@@ -48,3 +48,4 @@ The following capabilities included in this managed threat hunting service could
 ### Next step
 
 - [Before you begin using Defender Experts for Hunting](before-you-begin-defender-experts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
