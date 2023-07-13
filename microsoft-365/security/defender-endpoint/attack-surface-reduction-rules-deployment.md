@@ -90,7 +90,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |
 
-(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is now available under **Endpoint Security** > **Attack Surface Reduction**
+(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is now available under **Endpoint Security** > **Attack Surface Reduction**.
 
 (<a id="fn1">2</a>) Some ASR rules generate considerable noise, but won't block functionality. For example, if you're updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass, it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating; this is also true of other applications that make unnecessary calls to lsass.exe. The _block access to lsass_ rule will block unnecessary calls to lsass, but won't block the application from running.
 
