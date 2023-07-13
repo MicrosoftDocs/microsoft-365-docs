@@ -88,7 +88,7 @@ By default, lists that have been configured in local group policy and the Window
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Then select **OK**.
 
 > [!NOTE]
-> For "Administrative Templates (.admx) for Windows 11 2022 Update (22H2)" and "Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)" templates, **Configure local administrator merge behavior for lists** should be set to **Enabled** to disable the local administrator merge behavior.
+> For "Administrative Templates (.admx) for Windows 11 2022 Update (22H2)" and "Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)" templates, set **Configure local administrator merge behavior for lists** to **Enabled** to disable the local administrator merge behavior.
 
 ### Use Microsoft Intune to disable local list merging
 
