@@ -62,7 +62,7 @@ When you're dealing with false positives, or known entities that are generating 
 
 ## Submitting files for analysis
 
-If you have a file that you think is wrongly detected as malware (a false positive), or a file that you suspect might be malware even though it wasn't detected (a false negative), you can submit the file to Microsoft for analysis. Your submission will be scanned immediately, and will then be reviewed by Microsoft security analysts. You'll be able to check the status of your submission on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
+If you have a file that you think is wrongly detected as malware (a false positive), or a file that you suspect might be malware even though it wasn't detected (a false negative), you can submit the file to Microsoft for analysis. Your submission is scanned immediately, and will then be reviewed by Microsoft security analysts. You're able to check the status of your submission on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
 
 Submitting files for analysis helps reduce false positives and false negatives for all customers. To learn more, see the following articles:
 
@@ -95,7 +95,7 @@ The following table summarizes exclusion types that can be defined for Defender 
 
 | Product/service | Exclusion types  |
 |:---|:----|
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | - [Automatic exclusions](#automatic-exclusions) (for active roles on Windows Server 2016 and later)<br/>- [Built-in exclusions](#built-in-exclusions) (for operating system files in Windows)<br/>- [Custom exclusions](#custom-exclusions), such as process-based exclusions, folder location-based exclusions, file extension exclusions, or contextual file and folder exclusions<br/>- [Custom remediation actions](#custom-remediation-actions) based on threat severity or for specific threats<br/><br/>*The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you'll need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).*<br/><br/>*If you're a small or medium-sized business using [Microsoft Defender for Business](../defender-business/mdb-overview.md), you can get [Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).* |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | - [Automatic exclusions](#automatic-exclusions) (for active roles on Windows Server 2016 and later)<br/>- [Built-in exclusions](#built-in-exclusions) (for operating system files in Windows)<br/>- [Custom exclusions](#custom-exclusions), such as process-based exclusions, folder location-based exclusions, file extension exclusions, or contextual file and folder exclusions<br/>- [Custom remediation actions](#custom-remediation-actions) based on threat severity or for specific threats<br/><br/>*The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).*<br/><br/>*If you're a small or medium-sized business using [Microsoft Defender for Business](../defender-business/mdb-overview.md), you can get [Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).* |
 | [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | - [Indicators](#defender-for-endpoint-indicators) for files, certificates, or IP addresses, URLs/domains<br/>- [Attack surface reduction exclusions](#attack-surface-reduction-exclusions)<br/>- [Controlled folder access exclusions](#controlled-folder-access-exclusions) |
 | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Automation folder exclusions](#automation-folder-exclusions) (for automated investigation and remediation)  |
 
@@ -169,7 +169,7 @@ You can define [indicators](manage-indicators.md) with specific actions for enti
 
 - **Block and Remediate** – Files or certificates with Block and Remediate indicators are blocked and quarantined when detected.
 
-- **Block Execution** – IP addresses and URLs/domains with Block Execution indicators are completely blocked. Users can't access those locations.
+- **Block Execution** – IP addresses and URLs/domains with Block Execution indicators are blocked. Users can't access those locations.
 
 - **Warn** – IP addresses and URLs/domains with Warn indicators cause a warning message to be displayed when a user attempts to access those locations. Users can choose to bypass the warning and proceed to the IP address or URL/domain.
 
@@ -213,7 +213,7 @@ Also note that while most ASR rules exclusions are independent from Microsoft De
 
 Automation folder exclusions apply to [automated investigation and remediation](automated-investigations.md) in Defender for Endpoint, which is designed to examine alerts and take immediate action to resolve detected breaches. As alerts are triggered, and an automated investigation runs, a verdict (Malicious, Suspicious, or No threats found) is reached for each piece of evidence investigated. Depending on the [automation level](automation-levels.md) and other security settings, remediation actions can occur automatically or only upon approval by your security operations team.
 
-You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions will apply to all devices onboarded to Defender for Endpoint. These exclusions are still subject to antivirus scans. See [Manage automation folder exclusions](manage-automation-folder-exclusions.md).
+You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions apply to all devices onboarded to Defender for Endpoint. These exclusions are still subject to antivirus scans. See [Manage automation folder exclusions](manage-automation-folder-exclusions.md).
 
 ## How exclusions and indicators are evaluated
 
@@ -253,9 +253,9 @@ The following diagram shows how [automated investigation and remediation works w
 
 :::image type="content" source="images/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="images/air-exclusions.png":::
 
-## Additional server workloads and exclusions
+## Other server workloads and exclusions
 
-If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic exclusions](#automatic-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable automatic exclusions.
+If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic exclusions](#automatic-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these other workloads, or for all workloads if you disable automatic exclusions.
 
 Here are some examples of technical documentation to identify and implement the exclusions you need:
 
@@ -266,7 +266,7 @@ Here are some examples of technical documentation to identify and implement the 
 Depending on what you're using, you might need to refer to the documentation for that server workload.
 
 > [!TIP]
-> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
+> **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
 >
 > - Top paths that impact scan time
 > - Top files that impact scan time
@@ -281,7 +281,6 @@ Depending on what you're using, you might need to refer to the documentation for
 >
 > You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
->
 
 ## See also
 
