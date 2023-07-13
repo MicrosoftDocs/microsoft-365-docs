@@ -62,8 +62,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <true/>
         <key>StartCalendarInterval</key>
         <dict>
-            <key>Day</key>
-            <integer>3</integer>
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
@@ -101,8 +99,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <true/>
         <key>StartCalendarInterval</key>
         <dict>
-            <key>Day</key>
-            <integer>3</integer>
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
