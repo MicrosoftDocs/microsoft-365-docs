@@ -95,32 +95,52 @@
 
     - name: Unstructured document processing
       items:
-            - name: Unstructured document processing
+            - name: Overview
+              href: document-understanding-overview.md
+            - name: Set up and manage
+              href: unstructured-setup.md
+            - name: Import a sample model 
+              href: learn-about-document-understanding-models-through-the-sample-model.md
+            - name: Train your model
               items:
-                - name: Overview
-                  href: document-understanding-overview.md
-                - name: Set up and manage
-                  href: unstructured-setup.md
-                - name: Import a sample model 
-                  href: learn-about-document-understanding-models-through-the-sample-model.md
-                - name: Train your model
-                  items:
-                    - name: Create a classifier
-                      href: create-a-classifier.md
-                    - name: Create an extractor
-                      href: create-an-extractor.md
-                    - name: Leverage term store taxonomy to create an extractor
-                      href: leverage-term-store-taxonomy.md
-                    - name: Explanation types 
-                      href: explanation-types-overview.md
-                    - name: Use explanation templates 
-                      href: explanation-templates.md
-                    - name: Use accessibility mode
-                      href: accessibility-mode.md
-                    - name: Rename an extractor
-                      href: rename-an-extractor.md
-                - name: Duplicate a model
-                  href: duplicate-a-model.md
+                - name: Create a classifier
+                  href: create-a-classifier.md
+                - name: Create an extractor
+                  href: create-an-extractor.md
+                - name: Leverage term store taxonomy to create an extractor
+                  href: leverage-term-store-taxonomy.md
+                - name: Explanation types 
+                  href: explanation-types-overview.md
+                - name: Use explanation templates 
+                  href: explanation-templates.md
+                - name: Use accessibility mode
+                  href: accessibility-mode.md
+                - name: Rename an extractor
+                  href: rename-an-extractor.md
+            - name: Duplicate a model
+              href: duplicate-a-model.md
+            - name: Manage your model
+              items:
+                - name: Apply a model
+                  href: apply-a-model.md
+                - name: Share an enterprise model 
+                  href: model-discovery.md
+                - name: Discover other trained models 
+                  href: discover-other-trained-models.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
+                - name: Rename a model
+                  href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
+                - name: Analyze model usage
+                  href: model-usage-analytics.md
 
     - name: Content assembly
       items: 
