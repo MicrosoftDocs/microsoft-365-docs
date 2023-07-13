@@ -147,6 +147,15 @@
         - name: Move or copy a file 
           href: content-processing-create-rules.md
 
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Set up and manage 
+          href: taxonomy-tagging-setup.md
+        - name: Use taxonomy tagging 
+          href: taxonomy-tagging.md
+
     - name: Content query
       href: metadata-search.md
 
