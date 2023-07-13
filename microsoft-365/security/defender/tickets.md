@@ -34,3 +34,4 @@ ms.date: 02/16/2021
 > This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
