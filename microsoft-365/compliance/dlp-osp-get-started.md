@@ -28,6 +28,7 @@ description: Get started with managing oversharing pop ups with data loss preven
 When you configure the user device registry key and the appropriate Microsoft Purview Data Loss Prevention (DLP) policy, DLP will check email messages before they are sent for sensitive information and apply the actions defined in the DLP policy.
 
 Oversharing popup is an E5 feature.
+
 > [!IMPORTANT]
 > This is a hypothetical scenario with hypothetical values. It's only for illustrative purposes. You should substitute your own sensitive information types, sensitivity labels, distribution groups and users.
 
@@ -41,6 +42,8 @@ Oversharing popup is an E5 feature.
 ### SKU/subscriptions licensing
 
 Before you get started with DLP policies, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. 
+
+AIP P2 license is supported
 
 For full licensing details, see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-data-loss-prevention-dlp-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
@@ -79,7 +82,7 @@ Here's a list of applicable role groups. To learn more, see To learn more about 
 
 ### Prerequisites and assumptions
 
-In Outlook Win 32 an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
+In Outlook for Microsoft 365 an oversharing popup displays a popup before a message is sent. Select **Show policy tip as a dialog for the user before send** in policy tip when creating a DLP rule for the Exchange location.
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
 
 - [Learn about sensitivity labels](sensitivity-labels.md)
@@ -109,9 +112,9 @@ To configure oversharing popups with default text, the DLP rule must include the
  
 and a recipient-based condition
 
-- SentTo
-- SentToAMemberOf
-- RecpientDomainIs
+- Recipient is
+- Recipient is a member of
+- Recipient domain is
 
  When these conditions are met, the policy tip displays untrusted recipients while the user is writing the mail in Outlook, before it's sent.
 
@@ -137,7 +140,6 @@ This *RegKey* allows you to specify the wait on send behavior on your Outlook cl
 > If the **T** value is greater than 9999, it will be replaced with 1000 and the **Send Anyway** button will not appear. This holds the message until the policy evalution completes with no option for user override. The duration to complete the evaluation can vary depending on factors such as internet speed, content length, and the number of defined policies. Some users may encounter policy evaluation messages more frequently than others depending on what policies are deployed on their mailbox.
 
 To learn more about configuring and using GPO see,  [Administer Group Policy in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/manage-group-policy). 
-
 
 ### Steps to create a DLP policy for an oversharing pop up policy tip
 
@@ -196,7 +198,7 @@ To learn more about configuring and using GPO see,  [Administer Group Policy in 
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
-#### PowerShell steps to create policy for scenario 2
+#### PowerShell steps to create policy
 
 DLP policies and rules can also be configured in PowerShell. To configure oversharing popups using PowerShell, first you create a DLP policy (using PowerShell) and add DLP rules for each warn, justify or block popup type.
 
