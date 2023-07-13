@@ -47,13 +47,14 @@ When you're satisfied with the items you've collected in a collection estimate a
    1. Decide whether to **Add to a new review set** (which is created after you submit the collection) or **Add to an existing review set**. Complete this section based on your decision.
 
    2. Configure the **Retrieval** settings:
+     
 
-      - **Teams and Yammer conversations**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. Collect up to 12 hours of related conversations when a message matches a search. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
+       A. **Teams and Viva Engage conversations**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. Collect up to 12 hours of related conversations when a message matches a search. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
 
-        To export Teams messages as individual messages when committing to review set, unselect **Teams and Yammer conversations**. This commits your review set with individual Teams messages. Once the collection is committed, you can export the documents and messages in the review set. The exported results contain the individual messages for Teams and Yammer instead of conversation threads.
+        To export Teams messages as individual messages when committing to review set, unselect **Teams and Viva Engage conversations**. This commits your review set with individual Teams messages. Once the collection is committed, you can export the documents and messages in the review set. The exported results contain the individual messages for Teams and Viva Engage instead of conversation threads.
 
-          > [!NOTE]
-          > The **Teams and Yammer conversations** setting is selected by default. If selected, review sets contain Teams conversation threads related to the matched search.
+    > [!NOTE]
+    > The **Teams and Viva Engage conversations** setting is selected by default. If selected, review sets contain Teams conversation threads related to the matched search.
 
       - **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
 
