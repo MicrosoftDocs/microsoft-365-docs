@@ -63,7 +63,7 @@ An explanation of each field is provided below.
 
 |**Field**  |**Description**  |
 |---------|---------|
-|Name  <br/>   | The name entered here is the organization's name. [See below for more information on where this is used](./change-address-contact-and-more.md#change-the-organizations-name).  <br/>  |
+|Name  <br/>   | The name entered here is the organization's name. See [Change the organization's name](./change-address-contact-and-more.md#change-the-organizations-name) for more information on where this is used.  <br/>  |
 |Address, City, State/Province, Postal code  <br/>     | The address entered here is what you will see on your bill, under Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md).  <br/>        |
 |Country or region  <br/>    | This is the country or region where the company is headquartered. The selected country or region determines which services are available to you, the taxes and billing currency for your country or region, and the location of the data center closest to you (see [About license restrictions](https://www.microsoft.com/microsoft-365/business/microsoft-office-license-restrictions)).<br/>NOTE: Once selected, the country or region cannot be changed. If you want to change the selection, you'll have to cancel your subscription and sign up again. For help with this process, [contact support](../get-help-support.md).        |
 |Phone  <br/>     | This is the primary number for your company. It's usually the number of your company headquarters.  <br/>        |
