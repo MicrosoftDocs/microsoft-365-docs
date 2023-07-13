@@ -31,7 +31,7 @@ Check out all of our small business content on [Small business help & learning](
 
 As the admin of your organization, you can create multiple themes for the people in your organization, and select which themes apply to different members of your organization. The organization theme is what appears in the top navigation bar for people in your organization.
 
-You can add or update a default theme that applies to everyone within your org. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
+You can add or update a default theme that applies to everyone in your organization. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
   
 ## Add or update your organization's theme
 
@@ -39,7 +39,7 @@ You can add or update a default theme that applies to everyone within your org. 
 
 2. On the **Organization profile** tab, select **Custom themes**.
 
-3. Choose **Add theme**.
+3. Choose **Add theme** and add the required info for the tabs.
 
 All organization themes can be customized using the following tabs.
 
@@ -133,7 +133,7 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
 
-### Why am I receiving an error message every time I upload a logo URL.  
+### Why am I receiving an error message every time I upload a logo URL
 
 Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
