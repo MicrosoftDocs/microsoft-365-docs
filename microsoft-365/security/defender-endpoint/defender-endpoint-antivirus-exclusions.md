@@ -113,8 +113,8 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 
 - [Automatic exclusions](#automatic-exclusions) (for server roles on Windows Server 2016 and later)
 - [Built-in exclusions](#built-in-exclusions) (for operating system files in all versions of Windows)
-- [Custom exclusions](#custom-exclusions)
-- [Custom remediation actions](#custom-remediation-actions)
+- [Custom exclusions](#custom-exclusions) (for files and folders that you specify, if necessary)
+- [Custom remediation actions](#custom-remediation-actions) (to determine what happens with detected threats)
 
 ### Automatic exclusions
 
