@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/14/2023
+ms.date: 07/13/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -121,11 +121,13 @@ You need configure the *dlpwaitonsendtimeout Regkey (Value in dword)* on all the
 
 *Software\Policies\Microsoft\office\16.0\Outlook\options\Mail\Compose message* 
 
-You can do this via group policy (**Specify wait time to evaluate sensitive content**), script or other mechanism for configuring registry keys.
+You can set this *RegKey* via group policy (**Specify wait time to evaluate sensitive content**), script or other mechanism for configuring registry keys.
+
+If you're using Group Policy, make sure you've downloaded the most recent version of Group Policy Administrative Template files for Microsoft 365 Apps for enterprise and navigate to this setting from **User Configuration >> Administrative Templates >> Microsoft Office 2016 >> Security Settings**. If you're using the Cloud Policy service for Microsoft 365, search for the setting by name to configure it. 
 
 When this value is set and the DLP policy are configured, email messages are checked for sensitive information before they are sent. If the message contains a match to the conditions defined in the policy, a policy tip notification appears before the user clicks **Send**..
 
-This *REgKey* allows you to specify the wait on send behavior on your Outlook clients. Here's what each of the settings means.
+This *RegKey* allows you to specify the wait on send behavior on your Outlook clients. Here's what each of the settings means.
 
 **Not configured** or **Disabled**: This is the default. When *dlpwaitonsendtimeout* is not configured the message is not checked before the user sends it. The email message will be sent with no pause when **Send** is clicked. The DLP data classification service will evaluate the message and apply the actions defined in the DLP policy.
 
