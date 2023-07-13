@@ -1,18 +1,14 @@
 ---
 title: Configure local overrides for Microsoft Defender Antivirus settings
 description: Enable or disable users from locally changing settings in Microsoft Defender Antivirus.
-keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 08/02/2022
+ms.date: 07/13/2023
 ms.reviewer: 
 manager: dansimp
 ms.collection: 
@@ -90,6 +86,9 @@ By default, lists that have been configured in local group policy and the Window
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus**.
 
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Then select **OK**.
+
+> [!NOTE]
+> For "Administrative Templates (.admx) for Windows 11 2022 Update (22H2)" and "Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)" templates, set **Configure local administrator merge behavior for lists** to **Enabled** to disable the local administrator merge behavior.
 
 ### Use Microsoft Intune to disable local list merging
 
