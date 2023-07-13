@@ -82,3 +82,4 @@ The **Top trending suspicious activities** section of the report identifies up t
 By showing the most critical and frequently observed activities, you can assess and evaluate their impact and develop strategies to prevent or mitigate potential threats to your environment
 
 Select **View details** in each card to open a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
