@@ -50,7 +50,7 @@ Here are a few examples:
 
 - **Example 3**: Tailspin Toys has their device groups set to **No automated response** (not recommended). In this case, automated investigations do not occur. No remediation actions are taken or pending, and no actions are logged in the [Action center](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) for their devices (see [Manage device groups](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
-Whether taken automatically or upon approval, an automated investigation can result in one or more of the remediation actions:
+Whether taken automatically or upon approval, an automated investigation and remediation can result in one or more of the remediation actions:
 
 - Quarantine a file
 - Remove a registry key
