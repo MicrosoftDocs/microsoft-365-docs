@@ -1,5 +1,5 @@
 ---
-title: Set up image tagging in Microsoft Syntex
+title: Set up and manage taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,7 +8,7 @@ ms.reviewer: shrganguly
 ms.date: 07/01/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: admindeeplinkMAC
+ms.custom: admindeeplinkMAC, setup
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -17,15 +17,15 @@ ms.localizationpriority:  medium
 description: Learn how to set and configure image tagging in Microsoft Syntex.
 ---
 
-# Set up image tagging in Microsoft Syntex
+# Set up and manage taxonomy tagging in Microsoft Syntex
 
-Before you can use image tagging in Microsoft Syntex, it must be configured in the Microsoft 365 admin center.
+Before you can use taxonomy tagging in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
 ### Licensing
 
-Before you can use image tagging in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use image tagging in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Taxonomy tagging in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 

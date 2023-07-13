@@ -1,5 +1,5 @@
 ---
-title: Find and manage images using image tagging in Microsoft Syntex
+title: Find and manage taxonomy using taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,17 +8,17 @@ ms.reviewer: shrganguly
 ms.date: 05/30/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: admindeeplinkMAC
+ms.custom: 
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
+description: Learn how to use taxonomy tagging to search, sort, filter, and manage taxonomy in Microsoft Syntex.
 ---
 
-# Find and manage images using image tagging in Microsoft Syntex
+# Find and manage taxonomy using taxonomy tagging in Microsoft Syntex
 
 Microsoft Syntex makes it easier to find and manage images in SharePoint document libraries. It does this by automatically tagging images with descriptive keywords using AI. These keywords are stored in a managed metadata column (the **Image Tags** column), which makes it easier to search, sort, filter, and manage the images.
 

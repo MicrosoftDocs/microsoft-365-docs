@@ -1,5 +1,5 @@
 ---
-title: Overview of image tagging in Microsoft Syntex
+title: Overview of taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,16 +8,17 @@ ms.reviewer: shrganguly
 ms.date: 07/01/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.custom: intro-overview
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about image tagging in Microsoft Syntex.
+description: Learn about taxonomy tagging in Microsoft Syntex.
 ---
 
-# Overview of image tagging in Microsoft Syntex
+# Overview of taxonomy tagging in Microsoft Syntex
 
 Microsoft Syntex makes it easier to find and manage images in SharePoint document libraries. It does this by automatically tagging images with descriptive keywords using AI. These keywords are stored in a managed metadata column (the **Image Tags** column), which makes it easier to search, sort, filter, and manage the images.
 
@@ -41,41 +42,3 @@ Image tagging is available for the following image file types: .bmp, .png, .gif,
 
 - **Responsible AI guidelines:** Send us feedback on the image tagging quality. We monitor feedback closely and take appropriate action based on the feedback.
 
-
-
-<!---
-# Set up image tagging in Microsoft Syntex
-
-(Coming soon)
-
-With image tagging in Microsoft Syntex, users can find images through search by searching on image tags, and create workflows based on image tags. By default, basic image tagging is turned on for SharePoint and OneDrive. Images uploaded to either location are automatically scanned and applicable tags are applied, if available, from a list of 37 basic tags. Users can find images through search by searching on the image tags.
-
-When a user uploads an image, the  tagging process runs automatically. If an image is edited, the tagging process runs again to update the tags.
-
-Users with permissions to the image file can see and edit the tags in the file information panel or in the search results page. Once a user edits an image's tags, the system no longer auto-tags that image, even if it's edited.
-
-If you turn tagging off, images will no longer be automatically tagged. Existing tags won't be removed.
-
-> [!NOTE]
-> System generated tags may change with updates to the image or our tag technology.
-
-## Configure image tagging
-
-After you [set up Syntex](set-up-content-understanding.md), you can configure image tagging in the Microsoft 365 admin center.
-
-To turn image tagging on or off
-
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
-
-2. Under **Organizational knowledge**, click **Automate content understanding**.
-
-3. Click **Manage**.
-
-4. On the **Image tagging** tab, click **Edit**.
-
-5. Choose to allow **Basic tagging** or turn tagging **Off**.
-
-6. Click **Save**.
-
-    ![Screenshot of image tagging control.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
---->
