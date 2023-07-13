@@ -60,19 +60,19 @@ To deselect the primary mailbox and OneDrive account for a custodian:
 
    ![Configure locations to associate to a custodian.](../media/ConfigureCustodianLocations.png)
 
-To associate other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
+To associate other mailboxes, sites, Teams, or Viva Engage groups to a specific custodian:
 
 1. Expand a custodian to display the following services to associate data locations with the custodian. Select **Edit** next to a service to add a data location.
 
    - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then select **Add**.
    - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here.
    - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
-   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
+   - **Viva Engage**:  Use to assign the Viva Engage groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
-   > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization to a custodian. , This includes associating the mailbox and site for a Microsoft Team or Yammer group that a custodian is not a member of. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
+   > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization to a custodian. , This includes associating the mailbox and site for a Microsoft Team or Viva Engage group that a custodian is not a member of. To do this, you have to add both the mailbox and site associated with each team or Viva Engage group.
 
-2. You can view the total number of mailboxes, sites, Teams, and Yammer groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the eDiscovery (Premium) workflow.
+2. You can view the total number of mailboxes, sites, Teams, and Viva Engage groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the eDiscovery (Premium) workflow.
 
 3. After adding custodians and configuring their data locations, select **Next** to go to the **Hold settings** page.  
 

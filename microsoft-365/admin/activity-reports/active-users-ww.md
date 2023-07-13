@@ -60,6 +60,6 @@ You can also export the report data into an Excel .csv file, by selecting the Ex
 
 You can change what information is displayed in the grid table with column controls.
 
-If your subscription is operated by 21Vianet, then you will not see Yammer.
+If your subscription is operated by 21Vianet, then you will not see Viva Engage.
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  
