@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 ms.topic: conceptual
-author: v-britweston
-ms.author: v-britweston
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: pricci
 manager: dansimp
 ms.custom: nextgen02
