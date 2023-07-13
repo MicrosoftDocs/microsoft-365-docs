@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
-ms.date: 11/19/2021
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -37,19 +37,23 @@ The Tenants page also includes the following options:
 
 ## Tenant list
 
-The tenant list provides insights into the different customer tenants that you have a contract with, including their Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
+The tenant list provides insights into the different customer tenants that you have a contract with, including their Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, manage services for tenants in the applicable admin center, and drill down to learn more about a given tenant and the status of its deployment plan.
 
 After your customer tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), their status will show as **Active** in the tenant list.
 
 The tenant list lets you:
 
+- Access applicable admin centers to manage services for your customer tenants.
 - Automatically sort tenants by active, inactive, and ineligible.
 - Export the tenant list.
 - Assign and manage tags.
 - Search for tenants by name.
 - Filter tenants by status, delegated admin privilege (DAP), and tags.
 
-To inactivate a tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+To inactivate a tenant, manage tenant services, or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+
+> [!TIP]
+> You can also use the Tenants filter at the top of any page in Lighthouse to select a tenant and then access applicable admin centers to manage services for that tenant.
 
 For information on how to add customer tenants, see [Add and manage multiple tenants in your Partner Center account](/partner-center/multi-tenant-account).
 
@@ -136,4 +140,4 @@ The Deployment Plan tab also includes the following options:
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)

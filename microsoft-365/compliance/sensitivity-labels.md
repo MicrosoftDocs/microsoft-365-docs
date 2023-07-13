@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/12/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -156,17 +156,19 @@ For these pages that have unavailable options, select **Next** to continue. Or, 
 
 When you create your sensitivity labels in the Microsoft Purview compliance portal, they appear in a list on the **Information Protection** \> **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
-You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option doesn't apply to sublabels that share the priority of their parent label.
+You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower sensitivity, the order of this list identifies the lower sensitivity. However, this option doesn't apply to sublabels that share the priority of their parent label.
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure auto-labeling policies, multiple matches can result for more than one label. Then, the last sensitive label is selected, and then if applicable, the last sublabel. When you configure sublabels themselves (rather than auto-labeling policies) for automatic or recommended labeling, the behavior is a little different when sublabels share the same parent label. For example, a sublabel configured for automatic labeling is preferred over a sublabel configured for recommended labeling. For more information, see [How multiple conditions are evaluated when they apply to more than one label](apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label).
 
 The ordering of sublabels is also used with [label inheritance from email attachments](sensitivity-labels-office-apps.md#configure-label-inheritance-from-email-attachments).
 
-![Option to create a sublabel.](../media/Sensitivity-label-sublabel-options.png)
+When you select a sensitivity label, you can reorder it by using the options to move it to the top or bottom of the list if it's not a sublabel, move it up or down by one label, or directly assign a number.
+
+:::image type="content" source="../media/sensitivity-label-reorder-options.png" alt-text="Screenshot that shows options to reorder sensitivity labels.":::
 
 ### Sublabels (grouping labels)
 
-With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that classification. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can't be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
+With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that sensitivity. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can't be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
 
 Sublabels are simply a way to present labels to users in logical groups. Sublabels don't inherit any settings from their parent label, except for their label color. When you publish a sublabel for a user, that user can then apply that sublabel to content and containers, but can't apply just the parent label.
 
@@ -178,7 +180,7 @@ Example of how sublabels display for users:
 
 ### Editing or deleting a sensitivity label
 
-If you delete a sensitivity label from the admin portal, the label is not automatically removed from content, and any protection settings continue to be enforced on content that had that label applied.
+If you delete a sensitivity label from the compliance portal, the label isn't automatically removed from content, and any protection settings continue to be enforced on content that had that label applied.
 
 If you edit a sensitivity label, the version of the label that was applied to content is what's enforced on that content.
 
@@ -255,7 +257,7 @@ Similarly for users in the legal department, who are assigned the third policy w
 
 ## Sensitivity labels and Azure Information Protection
 
-The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). The AIP Office add-in component from this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). When the AIP client is installed, it is no longer the default labeling client for the latest Office apps.
+The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). The AIP Office add-in component from this client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and will be [retired April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908). When the AIP client is installed, it's no longer the default labeling client for the latest Office apps.
 
 If you're using the AIP add-in for labeling in Office apps, we recommend you move to built-in labeling. For more information, see [Migrate the Azure Information Protection (AIP) add-in to built-in labeling for Office apps](sensitivity-labels-aip.md).
 

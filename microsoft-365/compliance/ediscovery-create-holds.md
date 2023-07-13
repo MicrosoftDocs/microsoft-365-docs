@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/22/2023
+ms.date: 05/31/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -21,9 +21,12 @@ search.appverid:
 - MET150
 ---
 
-# Create an eDiscovery hold
+# Create eDiscovery holds in a eDiscovery (Standard) case
 
-You can use a Microsoft Purview eDiscovery (Standard) case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Microsoft 365 groups, and Yammer Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
+You can use a Microsoft Purview eDiscovery (Standard) case to create holds to preserve content that might be relevant to the case. You can place a hold on the Exchange mailboxes and OneDrive for Business accounts of people you're investigating in the case. You can also place a hold on the mailboxes and sites that are associated with Microsoft Teams, Microsoft 365 groups, and Viva Engage Groups. When you place content locations on hold, content is preserved until you remove the content location from the hold or until you delete the hold.
+
+>[!IMPORTANT]
+> For long term data retention not related to eDiscovery investigations, it is strongly advised to use retention policies and retention labels. For more information, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
 After you create an eDiscovery hold, it may take up to 24 hours for the hold to take effect.
 
@@ -54,9 +57,9 @@ To create an eDiscovery hold that's associated with a eDiscovery (Standard) case
 
     ![Choose the content locations to place on hold.](../media/eDiscoveryHoldLocations.png)
   
-   1. **Exchange mailboxes**: Set the toggle to **On** and then select **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, Microsoft 365 group, and Yammer Group. For more information about the application data that is preserved when a mailbox is placed on hold, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
+   1. **Exchange mailboxes**: Set the toggle to **On** and then select **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, Microsoft 365 group, and Viva Engage Group. For more information about the application data that is preserved when a mailbox is placed on hold, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
 
-   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 group or a Yammer Group.
+   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 group or a Viva Engage Group.
   
    3. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
 
@@ -93,7 +96,7 @@ Keep the following things in mind when you place a query-based eDiscovery hold o
 
 When you [search for content](ediscovery-search-for-content.md) in a eDiscovery (Standard) case, you can quickly configure the search to only search the content locations that have been placed on a hold associated with the case.
 
-Select the **Locations on hold** option to search all the content locations that have been placed on hold. If the case contains multiple eDiscovery holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that match the hold query will be searched when you run the search. In other words, only the content that matches both the hold criteria and the search criteria is returned with the search results. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched. This is accomplished by connecting the case hold query and the search query by an **AND** operator.
+Select the **Locations on hold** option to search all the content locations that have been placed on hold. If the case contains multiple eDiscovery holds, the content locations from all holds are searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that match the hold query are searched when you run the search. In other words, only the content that matches both the hold criteria and the search criteria is returned with the search results. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched. This is accomplished by connecting the case hold query and the search query by an **AND** operator.
 
 Here are some other things to keep in mind when searching locations on eDiscovery hold:
 
@@ -115,7 +118,7 @@ For more information about preserving Teams content, see [Place a Microsoft Team
 
 ### Preserve card content
 
-Similarly, card content generated by apps in Teams channels, 1:1 chats, and 1:N group chats is stored in mailboxes and is preserved when a mailbox is placed on an eDiscovery hold. A *card* is a UI container for short pieces of content. Cards can have multiple properties and attachments, and can include buttons that trigger card actions. For more information, see [Cards](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Like other Teams content, where card content is stored is based on where the card was used. Content for cards used in a Teams channel is stored in the Teams group mailbox. Card content for 1:1 and 1xN chats are stored in the mailboxes of the chat participants.
+Similarly, card content generated by apps in Teams channels, 1:1 chats, and 1:N group chats are stored in mailboxes and is preserved when a mailbox is placed on an eDiscovery hold. A *card* is a UI container for short pieces of content. Cards can have multiple properties and attachments, and can include buttons that trigger card actions. For more information, see [Cards](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Like other Teams content, where card content is stored is based on where the card was used. Content for cards used in a Teams channel is stored in the Teams group mailbox. Card content for 1:1 and 1xN chats are stored in the mailboxes of the chat participants.
 
 ### Preserve meeting and call information
 
@@ -123,7 +126,7 @@ Summary information for meetings and calls in a Teams channel is also stored in 
 
 ### Preserve content in private channels
 
-Starting in February 2020, we also turned on the ability to preserve content in private channels. Because private channel chats are stored in the mailboxes of the chat participants, placing a user mailbox on eDiscovery hold will preserve private channel chats. Also, if a user mailbox was placed on an eDiscovery hold prior to February 2020, the hold will now automatically apply to private channel messages stored in that mailbox. Preserving files shared in private channels is also supported.
+Starting in February 2020, we also turned on the ability to preserve content in private channels. Because private channel chats are stored in the mailboxes of the chat participants, placing a user mailbox on eDiscovery hold preserves private channel chats. Also, if a user mailbox was placed on an eDiscovery hold prior to February 2020, the hold will now automatically apply to private channel messages stored in that mailbox. Preserving files shared in private channels is also supported.
 
 ### Preserve wiki content
 
@@ -180,7 +183,7 @@ After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscov
 
    - **DelayHoldApplied:** This property applies to email-related content (generated by people using Outlook and Outlook on the web) that's stored in a user's mailbox.
 
-   - **DelayReleaseHoldApplied:** This property applies to cloud-based content (generated by non-Outlook apps such as Microsoft Teams, Microsoft Forms, and Microsoft Yammer) that's stored in a user's mailbox. Cloud data generated by a Microsoft app is typically stored in a hidden folder in a user's mailbox.
+   - **DelayReleaseHoldApplied:** This property applies to cloud-based content (generated by non-Outlook apps such as Microsoft Teams, Microsoft Forms, and Microsoft Viva Engage) that's stored in a user's mailbox. Cloud data generated by a Microsoft app is typically stored in a hidden folder in a user's mailbox.
 
    When a delay hold is placed on the mailbox (when either of the previous properties is set to **True**), the mailbox is still considered to be on hold for an unlimited hold duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the DelayHoldApplied or DelayReleaseHoldApplied property to **False**) so that the hold is removed. After either of these properties are set to **False**, the corresponding items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
 
@@ -200,8 +203,8 @@ The following table lists the limits for eDiscovery cases and case holds.
 |:-----|:-----|
 |Maximum number of cases for an organization. |No limit |
 |Maximum number of eDiscovery hold policies for an organization. This limit includes the combined total of hold policies in eDiscovery (Standard) and eDiscovery (Premium) cases. |10,000<sup>1</sup> |
-|Maximum number of mailboxes in a single eDiscovery hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 groups, Microsoft Teams, and Yammer Groups. |1,000 |
-|Maximum number of sites in a single eDiscovery hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 groups, Microsoft Teams, and Yammer Groups. <br/|100|
+|Maximum number of mailboxes in a single eDiscovery hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 groups, Microsoft Teams, and Viva Engage Groups. |1,000 |
+|Maximum number of sites in a single eDiscovery hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 groups, Microsoft Teams, and Viva Engage Groups. <br/|100|
 |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case. |1,000<sup>1</sup>|
 
 > [!NOTE]

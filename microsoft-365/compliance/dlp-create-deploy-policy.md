@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/19/2023
+ms.date: 06/07/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -38,7 +38,7 @@ How you deploy a policy is as important policy design. You have [multiple option
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you should be familiar with as you implement DLP:
 
-1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - The article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - By working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -66,7 +66,7 @@ The account you use to create and deploy policies must be a member of one of the
 - Security administrator
 
 > [!IMPORTANT]
-> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) before you start.
 
 #### Granular Roles and Role Groups
 
@@ -143,10 +143,10 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Give the policy a name. 
 
-> [!IMPORTANT]
-> Policies cannot be renamed.
+   > [!IMPORTANT]
+   > Policies cannot be renamed.
 
-5. Fill in a description. You can use the policy intent statement here.
+1. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
 
@@ -194,7 +194,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
-<!--### Scenario 2 Monitor or restrict user activities on sensitive service domains
+<!--### Scenario Monitor or restrict user activities on sensitive service domains
 
 Use this scenario when you want to audit or block these user activities on a website.
 
@@ -204,13 +204,13 @@ Use this scenario when you want to audit or block these user activities on a web
 
 The user must be accessing the website through Microsoft Edge.
 
-#### Scenario 2 pre-requisites and assumptions
+#### Scenario  pre-requisites and assumptions
 
 This scenario requires that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
-#### Scenario 2 policy intent statement and mapping
+#### Scenario policy intent statement and mapping
 
-#### Steps to create policy for scenario 2
+#### Steps to create policy for scenario
 
 ### Configure Sensitive service domains
 
@@ -230,23 +230,21 @@ This scenario requires that you already have devices onboarded and reporting int
 1. Finish configuring the rule and policy and apply it.
 -->
 <!--
-### Scenario 2
+### Scenario
 
-5)	Scenario 2 email - “Contoso needs to block all emails that contain a password protected OR a zip document file extension is zip/7z except it the recipient is in  the contoso.com domain OR the fabrikam domain OR the sender is a member of the Contoso HR group. Introduces nested NOT with and OR
+5)	Scenario  email - “Contoso needs to block all emails that contain a password protected OR a zip document file extension is zip/7z except it the recipient is in  the contoso.com domain OR the fabrikam domain OR the sender is a member of the Contoso HR group. Introduces nested NOT with and OR
 a.	Mapping
 b.	Creation - can include creation from a template
 c.	Deployment
 i.	testing/tuning
 ii.	move fully into production
 
-### Scenario 3
 
 Scenario recommendation: Restrict users from uploading sensitive data to unsanctioned locations (Web sites, USB devices, printers, etc) AND block users from copying/saving data from Sensitive sites.
 
-
 -->
 
-### Scenario 2 Show policy tip as oversharing popup (preview)
+### Scenario 2 Show policy tip as oversharing popup
 
 Oversharing popup is an E5 feature.
 > [!IMPORTANT]
@@ -309,10 +307,10 @@ and a recipient-based condition
  
 1. Give the policy a name. 
 
-> [!IMPORTANT]
-> Policies cannot be renamed.
+   > [!IMPORTANT]
+   > Policies cannot be renamed.
 
-5. Fill in a description. You can use the policy intent statement here.
+1. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
 
@@ -336,10 +334,10 @@ and a recipient-based condition
 
 1. Select **Recipient domain is** > **contoso.com**. Choose **Add**.
 
-> [!TIP]
-> **Recipient is** and **Recipient is a member of** can also be used in the previous step and will trigger an oversharing popup.
+   > [!TIP]
+   > **Recipient is** and **Recipient is a member of** can also be used in the previous step and will trigger an oversharing popup.
  
-17. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
+1. Select **Add and action** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Restrict access or encrypt the content in Microsoft 365 locations** > **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams file.** > **Block everyone**.
  
 1. Set **User notifications** to **On**.
  
@@ -367,10 +365,10 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 
 |Parameter|	Configuration|
 |---------|---------|
-|[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule.md#-contentcontainssensitiveinformation)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
-|[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule.md#-exceptifrecipientdomainis)|	List of trusted domains.|
-|[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyallowoverride)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
-|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule.md#-notifyoverriderequirements)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
+|[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-contentcontainssensitiveinformation&preserve-view=true)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
+|[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-exceptifrecipientdomainis&preserve-view=true)|	List of trusted domains.|
+|[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyallowoverride&preserve-view=true)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
+|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyoverriderequirements&preserve-view=true)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
 |
 
 To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
@@ -390,6 +388,9 @@ To configure a new DLP rule to generate a *block* popup using trusted domains ru
 ```powershell
 PS C:\> New-DlpComplianceRule -Name <DLP Rule Name> -Policy <DLP Policy Name> -NotifyUser Owner -NotifyPolicyTipDisplayOption "Dialog" -BlockAccess $true -ContentContainsSensitiveInformation @(@{operator = "And"; groups = @(@{operator = "Or"; name = "Default"; labels = @(@{name=<Label GUID 1>;type="Sensitivity"},@{name=<Label GUID 2>;type="Sensitivity"})})}) -ExceptIfRecipientDomainIs @("contoso.com","microsoft.com")
 ```
+
+Use these procedures to access the [Business justification X-Header](dlp-policy-reference.md#business-justification-x-header).
+
 ## Deployment
 
 A successful policy deployment isn't just about getting the policy into your environment to enforce controls on user actions. A haphazard, rushed deployment can negatively impact business process and annoy your users. Those consequences will slow acceptance of DLP technology in your organization and the safer behaviors it promotes. Ultimately making your sensitive items less safe in the long run. 
@@ -429,14 +430,14 @@ Actions are what a policy does in response to user activities on sensitive items
 
 - **Allow**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and there aren't any user notifications or alerts.
 
-> [!NOTE]
-> The **Allow** action is only available for policies that are scoped to the **Devices** location.
+  > [!NOTE]
+  > The **Allow** action is only available for policies that are scoped to the **Devices** location.
 
 - **Audit only**: The user activity is allowed to occur, so no business processes are impacted. You'll get audit data and you can add notifications and alerts to raise awareness and train your users to know that what they're doing is a risky behavior. If your organization intends to enforce more restrictive actions later on, you can tell your users that too.
 - **Block with override**: The user activity is blocked by default. You can audit the event, raise alerts and notifications. This impacts the business process, but your users are given the option to override the block and provide a reason for the override. Because you get direct feedback from your users, this action can help you identify false positive matches, which you can use to further tune the policy. 
 
-> [!NOTE]
-> For Exchange online and SharePoint Online, overrides are configured in the user notification section.
+  > [!NOTE]
+  > For Exchange online and SharePoint Online, overrides are configured in the user notification section.
 
 - **Block**: The user activity is blocked no matter what. You can audit the event, raise alerts and notifications.
 

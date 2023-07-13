@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob  
-ms.date: 01/01/2023
+ms.date: 07/06/2023
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -131,7 +131,7 @@ Here's the descriptions of the pre-collection estimate management options.
 
     - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
 
-        - Include Microsoft Teams and Yammer conversations
+        - Include Microsoft Teams and Viva Engage conversations
         - Include cloud attachments
         - Include all existing versions of Microsoft 365 documents on SharePoint
         - Include subfolder contents (insider subfolders of a matched folder)
@@ -141,11 +141,16 @@ Here's the descriptions of the pre-collection estimate management options.
 
     - **Types of collected items to include in the export**: Choose to export collected items with search hits, items with search hits and partially indexed items without hits, or only partially indexed items without search hits. You can also choose to one or more of the following options for collected items:
 
-        - Include Microsoft Teams and Yammer conversations
+        - Include Microsoft Teams and Viva Engage conversations
         - Include cloud attachments
         - Include all existing versions of Microsoft 365 documents on SharePoint
         - Include subfolder contents (inside subfolders of a matched folder)
         - Include files in SharePoint lists (and their child items)
+
+        To export Teams messages as individual messages when exporting collected items, unselect **Teams and Yammer conversations**. This exports conversations as individual messages and not as conversation threads.
+
+        > [!NOTE]
+        > The **Teams and Yammer conversations** setting is selected by default. If selected, exported items contain Teams conversation threads related to the matched search.
 
     - **How to format emails**: Choose an option of how collected emails should be formatted:
 
@@ -161,6 +166,13 @@ Here's the descriptions of the pre-collection estimate management options.
   - The total number of items in each content location.
   - The total size (in bytes) of the items in each content location.
   - The service (such as Exchange or SharePoint) in which the content location is located.
+
+  The limits for the export report and report results are as follows:
+  
+    - Total items: 1 million
+    - Total locations: 500,000
+    - Exported results (items): 500,000
+    - Exported results (locations): 100,000
 
 - **Copy collection**: Create a new collection estimate by copying the settings from an existing collection. You have to use a different name for the new collection. You also have the option to modify the settings before you submit the new collection. After you submit it, the search query runs and new estimates and statistics are generated. This is a good way to quickly create additional collection estimate and then modify selected settings as necessary while still preserving information in the original collection. This also lets you easily compare the results of two similar collections.
 

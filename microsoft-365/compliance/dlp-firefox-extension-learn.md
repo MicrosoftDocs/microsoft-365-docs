@@ -1,11 +1,11 @@
 ---
-title: "Learn about the Microsoft Purview Firefox Extension"
+title: "Learn about the Microsoft Purview extension for Firefox"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "The Microsoft Purview Firefox Extension extends monitoring and control of file activities and protective actions to the Firefox browser"
+description: "The Microsoft Purview extension for Firefox extends monitoring and control of file activities and protective actions to the Firefox browser"
 ---
 
-# Learn about the Microsoft Purview Firefox Extension
+# Learn about the Microsoft Purview extension for Firefox
 
-[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-learn-about-dlp.md).
+[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10/11 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-learn-about-dlp.md).
 
-Once the Firefox extension is installed on a Windows 10 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Mozilla Firefox and enforce protective actions via DLP.  
+Once the Firefox extension is installed on a Windows 10/11 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Mozilla Firefox and enforce protective actions via DLP.  
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -45,16 +45,16 @@ activity |description  | supported policy actions|
 ## Deployment process
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
 2. [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
-3. [Install the Firefox extension on your Windows 10 devices](dlp-firefox-extension-get-started.md)
+3. [Install the extension for Firefox extension on your Windows 10 devices](dlp-firefox-extension-get-started.md)
 4. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
 
 ## Next steps
 
-See [Get started with the Microsoft Purview Firefox Extension](dlp-firefox-extension-get-started.md) for complete deployment procedures and scenarios.
+See [Get started with the Microsoft Purview extension for Firefox](dlp-firefox-extension-get-started.md) for complete deployment procedures and scenarios.
 
 ## See also
 
-- [Get started with Microsoft Purview Firefox Extension](dlp-firefox-extension-get-started.md)
+- [Get started with Microsoft Purview extension for Firefox](dlp-firefox-extension-get-started.md)
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)

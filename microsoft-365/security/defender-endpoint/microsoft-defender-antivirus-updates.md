@@ -3,13 +3,13 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 05/31/2023
+ms.date: 07/11/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska, v-vutrieu
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
@@ -27,10 +27,17 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)
 - [Product updates](#product-updates)
+
+This article also includes:
+
+- [Microsoft Defender Antivirus platform support](#microsoft-defender-antivirus-platform-support)
+- [How to roll back an update](#how-to-roll-back-an-update) (if necessary)
+- [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)
+- [Updates for Deployment Image Servicing and Management (DISM)](#updates-for-deployment-image-servicing-and-management-dism)
 
 > [!TIP]
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -62,13 +69,21 @@ You can manage the distribution of updates through one of the following methods:
 
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
-> [!NOTE]
-> - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
-> - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
-> - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
-> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
-> - Platform updates can be temporarily postponed if other protection features (such as [Endpoint DLP](../../compliance/endpoint-dlp-getting-started.md) or [Device Control](device-control-report.md)) are actively monitoring running processes. Platform updates will be retried after a reboot or when all monitored services are stopped.
+### Important points about product updates
+
+- Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+
+- This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
+
+- To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+
+- To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+
+- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+
+- Platform updates can be temporarily postponed if other protection features (such as [Endpoint DLP](../../compliance/endpoint-dlp-getting-started.md) or [Device Control](device-control-report.md)) are actively monitoring running processes. Platform updates are retried after a reboot or when all monitored services are stopped.
+
+- In the **Microsoft Endpoint Configuration Manager / Windows Server Update Services** (MECM/WSUS) catalog, the _category_ **Microsoft Defender for Endpoint** includes updates for the MSSense service in [KB5005292](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292). KB5005292 includes updates and fixes to the Microsoft Defender for Endpoint **endpoint detection and response** (EDR) sensor. For more information, see [Microsoft Defender for Endpoint update for EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) and [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md).
 
 ## Monthly platform and engine versions
 
@@ -78,14 +93,56 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### May-2023 (Platform: 4.18.23050.3| Engine:  1.1.23050.2)
+### June-2023 (Platform: 4.18.23060.x | Engine: 1.1.23060.1005)
+
+- Security intelligence update version: **1.393.71.0**
+- Release date:  **July 10, 2023 (Engine) / July 19, 2023 (Platform)**
+- Platform: **4.18.23060.x** (*final version number coming soon*)
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+   
+### What's new  
+
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
+- Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and [PowerShell](/powershell/module/defender/set-mppreference)
+- Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions, if present
+- Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
+- Fixed warn notifications for two [attack surface reduction (ASR) rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
+- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
+- Fixed a performance issue when building and validating Defender cache
+- Improved performance by removing redundant exclusion checks
+ 
+### Known Issues  
+
+- None
+
+### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
+
+*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release.*
+
+- Security intelligence update version: **1.391.860.0**
+- Released: **June 12, 2023**
+- Platform: **4.18.23050.5**
+- Engine: **1.1.23050.2**
+- Support phase: **Security and Critical Updates**
+   
+### What's new  
+
+- Fixed issue that could lead to resolution of incorrect service endpoint
+  
+### Known Issues  
+
+- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
+
+### May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
 
 - Security intelligence update version:  **1.391.64.0**    
 - Released: **May 31, 2023**    
 - Platform: **4.18.23050.3**    
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
-   
+   
 ### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
@@ -105,7 +162,7 @@ All our updates contain
   
 ### Known Issues  
 
-- None
+- Potential issue that could lead to resolution of incorrect service endpoint
 
 ### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
 
@@ -117,7 +174,7 @@ All our updates contain
 
 #### What's new
 
-- **Beginning in May 2023, the Platform and Engine version schema will have a new format**. Here's what the new version format looks like: 
+- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like: 
    - Platform: `4.18.23050.1` 
    - Engine: `1.1.23050.63000` 
 - Fixed memory leak in behavior monitoring
@@ -138,27 +195,6 @@ All our updates contain
 
 - None
 
-### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
-
-- Security intelligence update version: **1.387.695.0**
-- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
-- Platform: **4.18.2303.8** 
-- Engine: **1.1.20200.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
-- Increased file hash support 
-- Added support to protect registry keys against parent keys abuse 
-- Improved tamper protection of registry keys against parent keys abuse  
-- Improved log handling for DLP and Device Control 
-- Improved performance on developer drives 
-
-#### Known issues
-
-- None
-
 ### Previous version updates: Technical upgrade support only
 
 After a new package version is released, support for the previous two versions is reduced to technical support only. For more information about previous versions, see [Microsoft Defender Antivirus updates: Previous versions for technical upgrade support](msda-updates-previous-versions-technical-upgrade-support.md).
@@ -169,12 +205,9 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 - **Security and Critical Updates servicing phase** - When running the latest platform version, you're eligible to receive both Security and Critical updates to the anti-malware platform.
 
-- **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) will reduce to technical support only. Platform versions older than N-2 are no longer supported.*
-
-\* Technical support continues to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
+- **Technical Support (Only) phase** - After a new platform version is released, support for older versions (N-2) reduce to [technical support only](msda-updates-previous-versions-technical-upgrade-support.md). Platform versions older than N-2 are no longer supported. Technical support continues to be provided for upgrades from the Windows 10 release version (see [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)) to the latest platform version.
 
 During the technical support (only) phase, commercially reasonable support incidents are provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a nonsecurity update, or requires a security update, customers are asked to upgrade to the latest platform version or an intermediate update (*).
-
 
 > [!NOTE]
 > If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
@@ -223,6 +256,17 @@ To avoid a gap in protection, keep your OS installation images up to date with t
 Updates are released for x86, x64, and ARM64 Windows architecture.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+
+### 20230604.1
+
+- Defender package version: **20230604.1**
+- Security intelligence version: **1.391.476.0**
+- Engine version: **1.1.23050.3**
+- Platform version: **4.18.23050.3**
+
+#### Fixes
+
+- None
 
 ### 20230503.1
 
@@ -772,3 +816,5 @@ For more information, see [Microsoft Defender update for Windows operating syste
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+

@@ -19,16 +19,15 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/12/2023
+ms.date: 7/12/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -51,7 +50,6 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to policies_: Membership in one of the following role groups:
@@ -80,7 +78,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 4. On the **Users and domains** page, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -110,12 +108,11 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
      - **Off**
      - **Monitor**
      - **Block**: This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).
-     - **Replace**: This action will be deprecated. For more information, see [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Dynamic Delivery (Preview messages)**
 
      These values are explained in [Safe Attachments policy settings](safe-attachments-about.md#safe-attachments-policy-settings).
 
-   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block**, **Replace**, or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block** or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
      By default, the quarantine policy named AdminOnlyAccessPolicy is used for malware detections by Safe Attachments policies. For more information about this quarantine policy, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
@@ -128,8 +125,6 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
      > [!NOTE]
      > Redirection is available only for the **Monitor** action. For more information, see [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
-
-   - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete.
 
    When you're finished on the **Settings** page, select **Next**.
 
@@ -172,7 +167,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 2. On the **Safe Attachments** page, select the Safe Attachments policy by using either of the following methods:
 
-   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** drop down list that appears:
+   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** dropdown list that appears:
      - **Enable selected policies**.
      - **Disable selected policies**.
      - **Delete selected policies**.
@@ -265,7 +260,7 @@ In PowerShell, the difference between safe attachment policies and safe attachme
 
 - In PowerShell, you create the safe attachment policy first, then you create the safe attachment rule, which identifies the associated policy that the rule applies to.
 - In PowerShell, you modify the settings in the safe attachment policy and the safe attachment rule separately.
-- When you remove an safe attachment policy from PowerShell, the corresponding safe attachment rule isn't automatically removed, and vice versa.
+- When you remove a safe attachment policy from PowerShell, the corresponding safe attachment rule isn't automatically removed, and vice versa.
 
 ### Use PowerShell to create Safe Attachments policies
 
@@ -289,18 +284,16 @@ Creating a Safe Attachments policy in PowerShell is a two-step process:
 To create a safe attachment policy, use this syntax:
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 This example creates a safe attachment policy named Contoso All with the following values:
 
 - Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).
 - The default quarantine policy is used (AdminOnlyAccessPolicy), because we aren't using the _QuarantineTag_ parameter.
-- Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.
-- If Safe Attachments scanning isn't available or encounters errors, don't deliver the message (we aren't using the _ActionOnError_ parameter, and the default value is `$true`).
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -RedirectAddress sec-ops@contoso.com
+New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true
 ```
 
 For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
@@ -510,4 +503,6 @@ To verify that you've successfully created, modified, or removed Safe Attachment
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
+- Add the URL `http://spamlink.contoso.com` to a file (for example, a Word document), and attach that file in an email message to test Safe Attachments protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL isn't harmful, but when it's included in an email attachment, it triggers a Safe Attachments protection response.
+
+- To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).

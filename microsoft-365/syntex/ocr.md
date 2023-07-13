@@ -1,10 +1,10 @@
 ---
-title: Extract text from images using the OCR service in Microsoft Syntex
+title: Set up and manage optical character recognition in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 05/31/2023
+ms.date: 07/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,16 +14,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to extract text from images using optical character recognition in Microsoft Syntex.
+description: Learn how to set up and manage optical character recognition in Microsoft Syntex.
 ---
 
-# Extract text from images using the OCR service in Microsoft Syntex
+# Set up and manage optical character recognition in Microsoft Syntex
 
-Optical character recognition (OCR) in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
-
-The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md).
-
-For example, you enable the OCR service and then add image files to your document library. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+Before you can use the optical character recognition (OCR) service in Microsoft Syntex, it must be configured in the Microsoft 365 admin center.
 
 ## Prerequisites
 
@@ -35,7 +31,7 @@ Before you can use the OCR service in Syntex, you must first enter your Azure su
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex. 
 
-## Set up OCR
+## Set up optical character recognition
 
 You can configure the OCR service by using either or both of these methods:
 
@@ -50,42 +46,20 @@ You can set up the OCR service in the same admin area that you used to set up bi
 
 2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**. 
 
-3. On the **Manage Microsoft Syntex** page, select **OCR**.
+3. On the **Manage Microsoft Syntex** page, select **Optical character recognition**.
 
-4. On the **OCR** page, select the SharePoint libraries where you want to enable OCR. The default is no SharePoint libraries, but you can select **Edit** to choose specific SharePoint libraries or to choose all SharePoint libraries.
+4. On the **Optical character recognition** page:
+
+    a. Choose which site or sites this service should be enabled for.
+
+    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+
+    c. Select **Save**.
 
 ### Microsoft Purview compliance portal
 
 The compliance admin for your organization [configures the OCR settings for your tenant](../compliance/ocr-learn-about.md?#phase-3-configure-your-ocr-settings) in the Microsoft Purview compliance portal.
 
-The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [DLP policies](../compliance/dlp-learn-about-dlp.md). If there are different sites specified in the two setup locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
+The compliance admin can specify which SharePoint sites to enable OCR to make that text available for [data loss prevention policies](../compliance/dlp-learn-about-dlp.md). If there are different sites specified in the two setup locations, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
 
 For more information, see [Learn about optical character recognition in Microsoft Purview](../compliance/ocr-learn-about.md).
-
-## Requirements and limitations
-
-### Supported file types
-
-The OCR service is available for the following file types:
-
-- JPEG
-- JPG
-- PNG
-- BMP
-- TIFF
-- PDF (image only)
-
-### Supported languages
-
-The OCR service supports more than [150 languages](/azure/cognitive-services/language-support).
-
-### File limitations
-
-- Image file sizes must be less than 50 MB.
-
-- Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
-
-- Only images uploaded after OCR has been enabled are scanned.
-
-- Currently, images that are embedded in Office documents aren't supported.
-

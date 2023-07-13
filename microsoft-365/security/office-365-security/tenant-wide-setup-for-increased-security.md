@@ -21,17 +21,16 @@ ms.custom:
 description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Configure your Microsoft 365 tenant for increased security
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Your organizational needs require security.
 
@@ -51,7 +50,7 @@ To automate your setup of Microsoft Defender for Office 365 visit the Standard a
 
 |Area|Default policy?|Recommendation|
 |---|---|---|
-|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](anti-phishing-mdo-impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)</li><li>[Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md).</li></ul>|
+|**Anti-phishing**|Yes|Configure the default anti-phishing policy as described here: [Configure anti-phishing protection settings in EOP and Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> More information: <ul><li>[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md)</li><li>[Recommended anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Impersonation insight](anti-phishing-mdo-impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)</li><li>[Spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#spoofed-senders-in-the-tenant-allowblock-list).</li></ul>|
 |**Anti-Malware Engine**|Yes|Configure the default anti-malware policy as described here: [Configure anti-malware protection settings in EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection-about.md)</li><li>[Recommended anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configure anti-malware policies](anti-malware-policies-configure.md)</li></ul>|
 |**Safe Attachments in Defender for Office 365**|No|Configure the global settings for Safe Attachments and create a Safe Attachments policy as described here: [Configure Safe Attachments settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Recommended Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md)</li><li>[Set up Safe Attachments policies](safe-attachments-policies-configure.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li><li>[Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md)</li></ul>|
 |**Safe Links in Microsoft Defender for Office 365**|No|Create a Safe Links policy as described here: [Configure Safe Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> More information: <ul><li>[Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)</li><li>[Set up Safe Links policies](safe-links-policies-configure.md)</li><li>[Safe Links in Microsoft Defender for Office 365](safe-links-about.md)</li></ul>|

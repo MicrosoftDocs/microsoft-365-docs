@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.date: 03/01/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.collection:
 - tier1
@@ -28,33 +28,33 @@ This article describes how to implement some common sensitive information type (
 
 ## Protect credit card numbers
 
-Contoso Bank needs to classify the credit card numbers that they issue as sensitive. Their credit cards start with a set of six-digit patterns. They would like to customize the out of the box credit card definition to only detect the credit card numbers starting with their six-digit patterns.
+Contoso Bank needs to classify the credit card numbers that they issue as sensitive. Their credit cards start with a set of six-digit patterns. They would like to customize the out-of-the-box credit card definition to detect only those credit card numbers starting with their six-digit patterns.
 
 **Suggested solution**
 
 1. Create a copy of the credit card SIT. Use the steps to [copy and modify a sensitive information type](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) to copy the credit card SIT.
 1. Edit the high confidence pattern. Follow the steps in [edit or delete the sensitive information type pattern](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Add 'starts with' check and add the list of bin digit (formatted & unformatted). For example to ensure that the SIT only considers credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
+1. Add  teh **starts with** check and add the list of pattern digits (formatted & unformatted). For example to ensure that the SIT only considers credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
 1. Repeat step 2 & 3 for the low confidence pattern.
 
 ## Test numbers similar to Social Security numbers
 
-Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) Microsoft Purview data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
+Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) Microsoft Purview data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches SSN matches.
 
 **Suggested solution**
 
 1. Create a copy of the SSN SIT. Use the steps to [copy and modify a sensitive information type](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) to copy the SSN SIT.
 1. Edit the high confidence pattern. Follow the steps in [edit or delete the sensitive information type pattern](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Add the numbers you want to exclude in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 is sufficient.
+1. Add the numbers you want to exclude in the **exclude specific values** additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 is sufficient.
 1. Repeat step 2 & 3 for other confidence patterns as well
 
 ## Phone numbers in signature trigger match
 
-Australia based Contoso finds that phone numbers in email signatures are triggering a match for their Australia company number DLP policy.
+Australia-based Contoso finds that phone numbers in email signatures are triggering a match for their Australia company number DLP policy.
 
 **Suggested solution**
 
-Add a 'not' group in supporting elements using a keyword list containing commonly used keywords in signature of email like “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value like 50 characters for better accuracy. For more information, see [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md).
+Add a 'NOT' group in supporting elements using a keyword list containing commonly used keywords in email signatures, such as “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value (for instance, 50 characters) for better accuracy. For more information, see [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md).
 
 ## Unable to trigger ABA routing policy
 
@@ -69,18 +69,18 @@ Create a copy of the built-in SIT and edit it to change the proximity of the key
 
 ## Unable to detect credit card numbers with unusual delimiters
 
-Contoso Bank has noticed some of their employees share credit card numbers with ‘/’ as a delimiter, for example 4111/1111/1111/1111, which the out-of-the-box credit card definition doesn't detect. Contoso would like to define their own regex and validate it using LuhnCheck.
+Contoso Bank has noticed some of their employees share credit card numbers with ‘/’ as a delimiter, for example, 4111/1111/1111/1111, which the out-of-the-box credit card definition doesn't detect. Contoso would like to define their own regex and validate it using LuhnCheck.
 
 **Suggested solution**
 
-1. Create a copy of the Credit card SIT using the steps in [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
+1. Create a copy of the credit card SIT using the steps in [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)
 1. Add a new pattern
-1. In the primary element, select regular expression
-1. Define the regular expression that includes ‘/’ as part of the regular expression and then choose validator and select luhncheck or func_credit_card to ensure the regex also passes the LuhnCheck.
+1. In the primary element, select **regular expression**
+1. Define the regular expression that includes ‘/’ as part of the regular expression; choose **validator** and then select **luhncheck** or **func_credit_card** to ensure the regex also passes the LuhnCheck.
 
 ## Ignore a disclaimer notice
 
-Many organizations add legal disclaimers, disclosure statements, signatures, etc., or other information to the top or bottom of email messages that enter or leave their organizations. In some cases, emails sent within an organization itself can contain such text. For example, employees may add signatures with motivational quotes, social messages, and so on. A disclaimer or signature can contain the terms that are present in the lexicon of a CC and may generate many false positives.  
+Many organizations add legal disclaimers, disclosure statements, signatures, or other information to the top or bottom of email messages that enter or leave their organizations. In some cases, emails sent within an organization itself can contain such text. For example, employees may add signatures with motivational quotes, social messages, and so on. A disclaimer or signature can contain the terms that are present in the lexicon of a CC and may generate many false positives.  
 
 For example, a typical disclaimer might contain words like *sensitive*, or *confidential* and a policy looking for sensitive info will detect it as an incident, leading to lot of false positives. Thus providing customers with an option to ignore disclaimers can reduce the number of false positives and increase the efficiency of the compliance team.
 
@@ -88,7 +88,7 @@ For example, a typical disclaimer might contain words like *sensitive*, or *conf
 
 Consider the following disclaimer:
 
-IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+"IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient. If you have received this message in error, please forward it to the sender and delete it completely from your computer system."
 
 If the SIT is configured to detect *confidential* as a keyword, the pattern will invoke a match every time an email includes the disclaimer, leading to considerable number of false positives.
 
@@ -98,7 +98,7 @@ One way to ignore the instances of keywords in the disclaimer is by excluding th
 
 Consider this disclaimer:
 
-IMPORTANT NOTICE: This e-mail message is intended to be received only by persons *entitled to receive the* confidential **information it may contain**. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+"IMPORTANT NOTICE: This e-mail message is intended to be received only by persons *entitled to receive the* confidential **information it may contain**. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient. If you have received this message in error, please forward it to the sender and delete it completely from your computer system."
 
 Say we have two instances of the keyword *confidential*. If we configure the SIT to ignore instances of this keyword that are preceded by prefixes (italicized in the example) and followed by suffixes (bolded in the example), then we can successfully ignore disclaimers in most cases.
 
@@ -115,9 +115,9 @@ Another way to add a list of supporting elements (instances in disclaimer) that 
 
 Consider this disclaimer:
 
-IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+"IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient. If you have received this message in error, please forward it to the sender and delete it completely from your computer system."
 
-We have two instances of the keyword “confidential” in this example. If we configure the SIT to ignore instances of this keyword in the disclaimer (underlined as red), we can achieve ignoring disclaimers in most of the cases.
+We have two instances of the keyword “confidential” in this example. If we configure the SIT to ignore instances of this keyword in the disclaimer (underlined as red in the following image), we can achieve ignoring disclaimers in most of the cases.
 
 :::image type="content" source="../media/sit-scenario-edit-pattern.png" alt-text="You can add more conditions to the pattern to exclude additional instances in the disclaimer.":::
 

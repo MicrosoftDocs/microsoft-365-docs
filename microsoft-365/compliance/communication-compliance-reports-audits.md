@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/14/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -90,11 +90,14 @@ Use the *Export* option to create a .csv file containing the report details for 
   - User notified
   - Case created
 
-- **Sensitive information type per location**: Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
+> [!NOTE]
+> The items and actions displayed are only for the items and actions *matched* during the date range included in the date range filter mentioned above.
+
+- **Sensitive information type per location** (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. The values for each third-party source are displayed in separate columns in the .csv file. Examples are:
 
   - **Email**: Sensitive information types detected in Exchange email messages.
   - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
-  - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
+  - **Viva Engage**: Sensitive information types detected in Viva Engage inboxes, posts, chats, and replies.
   - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
   - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
 
@@ -136,7 +139,7 @@ Message details reports contain the following information for each message item 
 - **Sender**: Sender of the message.
 - **Recipients**: Recipients included for the message.
 - **Date**: The date when the message was sent.
-- **Location**: Channel that the message was sent on. This can be Exchange Online, Teams, Yammer, or any third-party channel supported by communication compliance. 
+- **Location**: Channel that the message was sent on. This can be Exchange Online, Teams, Viva Engage, or any third-party channel supported by communication compliance. 
 - **Subject**: Subject of the message.
 - **Contains Attachments**: Status of any attachments for the message. Values are either *Yes* or *No*.
 - **Policy Name**: Name of the policy associated with the message. This value will be the same for all messages in the report.

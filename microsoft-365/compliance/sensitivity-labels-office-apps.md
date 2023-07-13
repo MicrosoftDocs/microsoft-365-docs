@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/31/2023
+ms.date: 07/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -305,7 +305,9 @@ For guidance about when to use this setting, see the information about [policy s
 
 ### For Outlook Mobile, change when users are prompted for a label
 
-Now available in the Beta Channel for Android, and not yet for iOS, you can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
+Currently rolling out, this setting requires a minimum version of 4.2316.0 for Outlook for Android and Outlook for iOS.
+
+You can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
 
 Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
 
@@ -349,6 +351,8 @@ This configuration is an extension to the **Items** scope, when you [create or e
 > If you want a sensitivity label just for emails, create a new label with just the **Emails** scope rather than edit an existing label.
 
 Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
+
+Remember that other label configurations can also influence whether sensitivity labels are visible in apps. Check the documentation for the label configurations that you use.
 
 > [!NOTE]
 > The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
@@ -479,7 +483,13 @@ Office for the web: You must download the file from the browser. The following m
 
 When the PDF is created, it inherits the label with any content markings. For Windows, if the label applied encryption, that encryption is also inherited. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
-Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook does support warning or blocking users from printing to PDF, as described next.
+SharePoint and OneDrive support the following PDF scenarios:
+
+- When you've [enabled SharePoint and OneDrive for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md) and [added PDF support](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf). Then, PDFs are supported when you upload a labeled PDF document with or without encryption applied, these services can process the file such that search, eDiscovery, and data loss prevention can inspect the contents, and the sensitivity label name is displayed for users.
+
+- [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) can apply a sensitivity label and encryption (if configured) to PDF documents when [PDF support is added](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
+
+Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook now does support warning or blocking users from printing to PDF, as described next.
 
 PDF scenarios not supported:
 
@@ -497,9 +507,9 @@ PDF scenarios not supported:
     
     The option **File** > **Info** > **Protect Document** > **Encrypt with Password** isn't supported when the document's label applies encryption. In this scenario, the encrypt with password option becomes unavailable for users.
 
-For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
+For more information about exporting to PDF, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
 
-For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
+For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4) and [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers).
 
 ### Disabling PDF support
 

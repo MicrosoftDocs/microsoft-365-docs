@@ -32,12 +32,12 @@ Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatama
 Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
-Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
-
-- Microsoft will not store Intune customer data at rest outside the stated geo, except if:
+Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune. Microsoft will not store Intune customer data at rest outside the stated geo, except if:
 - It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including through the use of the following:
 - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
+
+- If you are using the Remote Help feature, the Helper and Sharer's information may be sent outside of the stated Geo for 48 hours.
 - For Azure Active Directory: Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
@@ -89,8 +89,8 @@ Please see the [Static data location information for select workloads](#static-d
 ### Whiteboard
 Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
-### Yammer
-Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
+### Viva Engage
+Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-security-and-compliance/data-residency).
 
 ## Static data location information for select workloads
 
