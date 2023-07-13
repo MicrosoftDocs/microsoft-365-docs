@@ -107,8 +107,8 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
        :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="The Microsoft 365 admin center portal screen from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
 
     1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying details of the chosen license appears:
-
-       :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="The screen on which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
+    
+      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="The screen on which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
 
     1. Select the **Assign licenses** link.
     
