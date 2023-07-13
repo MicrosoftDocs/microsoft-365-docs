@@ -11061,6 +11061,11 @@
     "redirect_document_id": true
   },
   {
+    "source_path": "microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer.md",
+    "redirect_url": "/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage.md",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites.md",
     "redirect_url": "/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions",
     "redirect_document_id": false
@@ -11140,6 +11145,7 @@
     "redirect_url": "/microsoft-365/security/defender/dlp-investigate-alerts-defender",
     "redirect_document_id": true
   }
+  
  ]
 }
 

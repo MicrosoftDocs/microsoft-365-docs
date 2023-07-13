@@ -81,7 +81,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 - SharePoint Online
 - Skype for Business
 - Office 365
-- Yammer
+- Viva Engage
 
 ## Related topics
 

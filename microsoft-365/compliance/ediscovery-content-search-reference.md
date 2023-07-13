@@ -163,9 +163,9 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
    Conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](ediscovery-keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
 
-## Searching Yammer Groups
+## Searching Viva Engage Groups
 
-You can use the **ItemClass** email property or the **Type** search condition to search specifically for conversation items in Yammer Groups.
+You can use the **ItemClass** email property or the **Type** search condition to search specifically for conversation items in Viva Engage Groups.
 
   - To use the **ItemClass** property as part of the keyword search query, in the **Keywords** box of a search query, you can type one (or all) of the following property:value pairs:
 
@@ -174,13 +174,13 @@ You can use the **ItemClass** email property or the **Type** search condition to
      - ItemClass:IPM.Yammer.praise
      - ItemClass:IPM.Yammer.question
 
-    For example, you can use the following search query to return Yammer messages and Yammer praise items:
+    For example, you can use the following search query to return Viva Engage messages and Viva Engage praise items:
 
-    ![Use the ItemClass property to search for Yammer items.](../media/YammerContentSearch1.png)
+    ![Use the ItemClass property to search for Viva Engage items.](../media/viva-engage-content-search1.png)
 
-  - Alternatively, you can use the **Type** email condition and select **Yammer messages** to return Yammer items. For example, the following search query will return all Yammer conversation items that contain the keyword "confidential".
+  - Alternatively, you can use the **Type** email condition and select **Viva Engage messages** to return Viva Engage items. For example, the following search query will return all Viva Engage conversation items that contain the keyword "confidential".
 
-    ![Use the Type condition card to search for Yammer conversation items.](../media/YammerContentSearch2.png)
+    ![Use the Type condition card to search for Viva Engage conversation items.](../media/viva-search-content-search2.png)
 
 ## Searching inactive mailboxes
 

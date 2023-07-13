@@ -45,7 +45,7 @@ After people have been active in the above products at least once in the last 28
 
 ## Why your organization&#39;s mobility score matters
 
-A fundamental pillar of organizational productivity is how well people are able to work flexibly from wherever they are. With Microsoft 365, people can stay connected with Outlook, Microsoft Teams, and Yammer. People can also seamlessly collaborate on content by using Word, Excel, PowerPoint, and OneNote from any location, and platforms.
+A fundamental pillar of organizational productivity is how well people are able to work flexibly from wherever they are. With Microsoft 365, people can stay connected with Outlook, Microsoft Teams, and Viva Engage. People can also seamlessly collaborate on content by using Word, Excel, PowerPoint, and OneNote from any location, and platforms.
 
 ## How we calculate the score
 
@@ -53,7 +53,7 @@ We provide a primary insight in the experience that contains the key metrics for
 
 ### Primary insight
 
-Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer, and Skype for Business. People can also work from anywhere by using a seamless experience across desktop, web, and mobile platforms. The primary insight looks at the products that are enabled for people in your organization – and how many of these people are active on at least two platforms.
+Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Viva Engage, and Skype for Business. People can also work from anywhere by using a seamless experience across desktop, web, and mobile platforms. The primary insight looks at the products that are enabled for people in your organization – and how many of these people are active on at least two platforms.
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="Chart showing primary insight for Mobility - people experiences Adoption Score.":::
 
@@ -62,8 +62,8 @@ Microsoft 365 lets people work flexibly across apps, including Microsoft Outlook
 3. **Visualization (current state):** Shows how many people use more than one platform across desktop, mobile, and web for at least one Microsoft 365 (list below) as follows:
     - **Horizontal bar** where the blue (colored) portion represents the percentage expressed in the header.
     - **The fraction** on the bar highlights the (numerator/denominator) used for calculating the percentage in the header.
-        - Numerator: The number of people in your org using any application within Microsoft Outlook, Word, Excel, PowerPoint, OneNote and Microsoft Teams, Yammer, and Skype on more than one platform from desktop, web, and mobile in the last 28 days.
-        - Denominator: The number of people licensed for Microsoft 365 Apps, Exchange, Yammer, Microsoft Teams, or Skype for at least 1 of the last 28 days.
+        - Numerator: The number of people in your org using any application within Microsoft Outlook, Word, Excel, PowerPoint, OneNote and Microsoft Teams, Viva Engage, and Skype on more than one platform from desktop, web, and mobile in the last 28 days.
+        - Denominator: The number of people licensed for Microsoft 365 Apps, Exchange, Viva Engage, Microsoft Teams, or Skype for at least 1 of the last 28 days.
     - The **peer benchmark** value for the key metric is also shown as a percentage.
 4. **View Mobility resources:** Select this link to view help content.
 
@@ -75,7 +75,7 @@ This chart shows the trend-line, where the numerator is the number of people who
 
 ### Scoring framework
 
-The mobility score for your organization measures at an organization (aggregate) level whether people are using Microsoft 365 Apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype - across the different platforms - desktop, web, and mobile.
+The mobility score for your organization measures at an organization (aggregate) level whether people are using Microsoft 365 Apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Viva Engage, and Skype - across the different platforms - desktop, web, and mobile.
 
 The scores are not provided at the individual user level.
 
