@@ -45,3 +45,4 @@ The following table describes the steps in the illustration.
 |[Step 1. Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)|Understand the Defender for Endpoint architecture and the capabilities available to you.|
 |[Step 2. Enable the evaluation environment](eval-defender-endpoint-enable-eval.md)|Follow the steps to set up the evaluation environment.|
 |[Step 3. Set up the pilot](eval-defender-endpoint-pilot.md)|Verify your pilot group, run simulations, and become familiar with key features and dashboards.|
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

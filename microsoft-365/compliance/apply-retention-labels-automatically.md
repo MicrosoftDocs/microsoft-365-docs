@@ -356,20 +356,23 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 #### Auto-apply labels to cloud attachments
 
-You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
+> [!NOTE]
+> Support for cloud attachments that are shared in Viva Engage is in preview.
+
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Viva Engage.
 
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Yammer](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-yammer).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Viva Engage](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-viva-engage).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Yammer, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Viva Engage, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
 
-Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Yammer aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
+Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Viva Engage aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
 
@@ -381,30 +384,30 @@ When you configure the locations for this option, you can select:
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
-You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Yammer.
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Viva Engage.
 
 > [!NOTE]
-> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Yammer.
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Viva Engage.
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- Yammer must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support cloud attachments.
+- Viva Engage must be in [native mode](/viva-engage/configure-your-viva-engage-network/overview-native-mode) to support cloud attachments.
 
-- If cloud attachments and links in a Teams or Yammer message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
+- If cloud attachments and links in a Teams or Viva Engage message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments and URL text links. If these attachments were shared within 48 hours of the user added to the conversation, current copies of the attachments are auto-labeled for retention. Attachments shared before this time period aren't supported for newly added users.
 
-- Attachments and links shared outside Teams, Outlook, and Yammer aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
+- Attachments and links shared outside Teams, Outlook, and Viva Engage aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
 - Cloud attachments and links in encrypted emails or encrypted messages aren't supported.
 
-- Sharing an existing Yammer message with an attachment isn't supported.
+- Sharing an existing Viva Engage message with an attachment isn't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings.
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
-    - Not supported beyond 5,000 characters in the initial email body or in Teams and Yammer messages
+    - Not supported beyond 5,000 characters in the initial email body or in Teams and Viva Engage messages
 
 - The following items aren't supported as attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
