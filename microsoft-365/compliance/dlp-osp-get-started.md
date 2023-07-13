@@ -217,7 +217,7 @@ This sample DLP policy is scoped to all users in your organization. Scope your D
 |[-ContentContainsSensitiveInformation](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-contentcontainssensitiveinformation&preserve-view=true)|	Configures one or more sensitivity label conditions. This sample includes one. At least one label is mandatory.|
 |[-ExceptIfRecipientDomainIs](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-exceptifrecipientdomainis&preserve-view=true)|	List of trusted domains.|
 |[-NotifyAllowOverride](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyallowoverride&preserve-view=true)|	"WithJustification" enables justification radio buttons, "WithoutJustification" disables them.|
-|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyoverriderequirements&preserve-view=true)	"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
+|[-NotifyOverrideRequirements](/powershell/module/exchange/new-dlpcompliancerule?view=exchange-ps#-notifyoverriderequirements&preserve-view=true)	|"WithAcknowledgement" enables the new acknowledgment option. This is optional.|
 |
 
 To configure a new DLP rule to generate a *warn* popup using trusted domains run this PowerShell code.
