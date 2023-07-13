@@ -6,7 +6,7 @@ description: Windows Server includes automatic exclusions, based on server role.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 07/12/2023
+ms.date: 07/13/2023
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
@@ -30,7 +30,7 @@ search.appverid: met150
 
 - Windows
 
-This article describes exclusions for Windows Server 2016 and later. Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, built-in exclusions for operating system files and automatic server role exclusions happen automatically. If necessary, you can define custom exclusions or opt out of automatic exclusions. 
+This article describes exclusions for Windows Server. Because Microsoft Defender Antivirus is built into Windows, [built-in exclusions](#built-in-exclusions) for operating system files happen automatically on all versions of Windows. On Windows Server 2016 and later, [automatic exclusions](#automatic-server-role-exclusions) happen automatically as roles are added. If necessary, you can define custom exclusions or opt out of automatic exclusions. 
 
 For a more detailed overview of exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
