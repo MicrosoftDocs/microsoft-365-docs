@@ -70,7 +70,8 @@ An explanation of each field is provided below.
 |Technical contact  <br/> |This is the email address for the primary technical person who administers your Microsoft 365 subscription. This is the person who will receive communications about Microsoft 365 service status.  <br/> |
 |Preferred language  <br/> |The preferred language determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, which your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.  <br/> NOTE: The language used by SharePoint Online can't be changed.           |
 
-## Change the organization's Name
+## Change the organization's name
+
 The organization's name is used throughout Microsoft 365, including but not limited to:  
 * Azure Active Directory Sign-in dialogs and multifactor authentication prompts. This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices. 
  * If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.
