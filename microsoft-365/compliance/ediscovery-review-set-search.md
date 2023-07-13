@@ -40,7 +40,7 @@ Improving on the default filters in previous versions, eDiscovery (Premium) now 
 ![Review set filter.](../media/ediscovery-review-set-filter.png)
 
 > [!NOTE]
-> A review set displays a maximum of 1,000 items per page. Use default or custom filters to adjust the displayed items as needed.
+> A review set displays a maximum of 1,000 items per page and up to 10 pages (for a total of 10,000 items displayed per review set). Use default or custom filters to adjust the displayed items as needed.
 
 ## Advanced filter controls
 

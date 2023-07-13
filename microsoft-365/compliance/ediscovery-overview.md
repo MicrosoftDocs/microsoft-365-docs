@@ -44,7 +44,7 @@ Traditionally, organizations that rely on multiple third-party eDiscovery soluti
 
 eDiscovery (Premium) in Microsoft 365 lets you discover data at the source and staying within your Microsoft 365 security and compliance boundary.  By collecting data in-place from the live system, eDiscovery (Premium) reduces the friction of going back to the source and reduces unnecessary work of having to find missing content, which often happens when journaling lags in traditional eDiscovery solutions.
 
-Native search and collection capabilities for data in Teams, Yammer, SharePoint Online, OneDrive for Business, and Exchange Online further enhances data discovery. For example,  eDiscovery (Premium):
+Native search and collection capabilities for data in Teams, Viva Engage, SharePoint Online, OneDrive for Business, and Exchange Online further enhances data discovery. For example,  eDiscovery (Premium):
 
 - Reconstructs Teams conversations (instead of returning individual messages from conversations).
 - Collects cloud-based content shared with users by use of links or modern attachments in email message and Teams chats.
@@ -83,7 +83,7 @@ At a high level, here's how eDiscovery (Premium) supports the EDRM workflow:
 
 ## Subscriptions and licensing
 
-For information regarding what licenses provide the rights for a user to benefit from eDiscovery (Premium) please see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+Microsoft Purview eDiscovery capabilities are included with Microsoft Purview. The licensing requirements may vary even within capabilities, depending on configuration options. For licensing requirements, guidance, and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery).
 
 For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 

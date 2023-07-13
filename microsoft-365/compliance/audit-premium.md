@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -52,6 +52,9 @@ All audit records generated in other services that aren't covered by the default
 - The user who performs an audited activity.
 
 You can also specify how long to retain audit records that match the policy and a priority level so that specific policies will take priority over other policies. Also note that any custom audit log retention policy will take precedence over the default audit retention policy in case you need retain Exchange, SharePoint, or Azure Active Directory audit records for less than a year (or for 10 years) for some or all users in your organization. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
+
+> [!IMPORTANT]
+> The audit item lifetime for data is determined when it is added to the auditing pipeline and is based on the licensing defaults or applicable retention policies. Any changes to licensing or applicable retention policies change the expiration time of the audit data after updating. These change don't change any previously committed items.
 
 ## Audit (Premium) events
 
@@ -146,8 +149,10 @@ In addition to the events in Exchange Online and SharePoint Online, there are ev
 
 - [Microsoft Forms](audit-log-activities.md#microsoft-forms-activities)
 - [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
+- [Microsoft Project for the web](audit-log-activities.md#microsoft-project-for-the-web-activities)
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
-- [Yammer](audit-log-activities.md#yammer-activities)
+- [Microsoft To Do](audit-log-activities.md#microsoft-to-do-activities)
+- [Viva Engage](audit-log-activities.md#viva-engage-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 

@@ -72,6 +72,12 @@ This card includes all incidents and alerts, grouped into severities, associated
 
 This card includes the calculated investigation priority score breakdown and a two-week trend for an identity, including whether the identity score is on the high percentile for that tenant.
 
+### Active directory account control 
+
+In this card, Defender for Identity surfaces security settings that may need your attentions. You can see important flags about the user, such as if the user can press enter to bypass the password, and if the user has a password that never expires, etc.
+
+For more information, see [User Account Control flags](/windows/win32/adschema/a-useraccountcontrol).
+
 ### Scored activities
 
 This card includes all activities and alerts contributing to the overall Investigation priority score over the last seven days.
@@ -134,7 +140,7 @@ The timeline represents activities and alerts observed from a user's identity in
 
   ![Screenshot that shows hwo to choose time frame.](media/investigate-users/image.png)
   
-- **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
+- **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user.
 
 - **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
 
@@ -167,7 +173,7 @@ The following information is displayed in the timeline:
 
 For example:
 
-:::image type="content" source="../../media/investigate-users/Fig5-user-incident-timeline.png" alt-text="The timeline view that shows activities on a user account for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig5-user-incident-timeline.png":::
+![Screenshot of the Timeline tab.](media/investigate-users/time.png)
 
 > [!NOTE]
 > Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
@@ -195,5 +201,7 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+
+
 
 

@@ -50,7 +50,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `IPAddress` | `string` | Public IP address of the device from which the user clicked on the link|
 | `ThreatTypes` | `string` | Verdict at the time of click, which tells whether the URL led to malware, phish or other threats|
 | `DetectionMethods` | `string` | Detection technology that was used to identify the threat at the time of click|
-| `IsClickedThrough` | `bool` | Indicates whether the user was able to click through to the original URL or wasn't allowed|
+| `IsClickedThrough` | `bool` | Indicates whether the user was able to click through to the original URL (1) or not (0)|
 | `UrlChain` | `string` | For scenarios involving redirections, it includes URLs present in the redirection chain|
 | `ReportId` | `string` | The unique identifier for a click event. For clickthrough scenarios, report ID would have same value, and therefore it should be used to correlate a click event.|
 

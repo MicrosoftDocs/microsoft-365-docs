@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/03/2023
+ms.date: 04/03/2023 
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -20,17 +20,20 @@ description: "Learn how to increase the accuracy of your classifiers"
 
 # Increase classifier accuracy
 
-Classifiers, like [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md) are used in various kinds of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
+Classifiers, such as [sensitive information types](sensitive-information-type-learn-about.md) (SIT) and [trainable classifiers](classifier-learn-about.md), are used in various types of policies to identify sensitive information. Like most such models, sometimes they identify an item as being sensitive that isn't. Or, they may not identify an item as being sensitive when it actually is. These are called false positives and false negatives.
 
-This article shows you how to confirm whether items matched by a classifier are true positive (a **Match**) or a false positive (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
+This article shows you how to confirm whether items matched by a classifier are true positives (a **Match**) or false positives (**Not a match**) and provide **Match**/**Not a match** feedback. You can use that feedback to tune your classifiers to increase accuracy. You can also send redacted versions of the document as well as the **Match**, **Not a Match** feedback to Microsoft if you want to help increase the accuracy of the classifiers that Microsoft provides.
 
-The **Match**, **Not a match** experience is available in:
+The **Match**, **Not a match**  and **Contextual Summary** experiences are available in:
 
 - Content Explorer - for SharePoint sites, OneDrive sites
 - Sensitive Information Type Matched Items page - for SharePoint sites, OneDrive sites
 - Trainable Classifier Matched Items page - for SharePoint sites, OneDrive sites
 - Microsoft Purview Data Loss Prevention (DLP) Alerts page - for SharePoint sites, OneDrive, and emails in Exchange
 - Microsoft Threat Protection (MTP) Alerts page - for SharePoint sites, OneDrive sites, and emails in Exchange
+
+The **Contextual Summary** experience is available in:
+- Microsoft Purview Information Protection (MIP) Auto-labeling simulation matched items - for SharePoint sites, OneDrive sites
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -41,152 +44,26 @@ The **Match**, **Not a match** experience is available in:
 |SIT     |Yes| Yes|Yes|
 |Custom SIT  | Yes|No | Yes|
 |Fingerprint SIT| No|No|Yes|
-|Exact data match SIT|No|No|No|
-|Named entities| No| No| No|
-|Credential scan| No| No| No|
+|Exact data match SIT|No*|No|No|
+|Named entities| No*| No| No|
+|Credential scan| No*| No| No|
 |Built-in Trainable classifiers|No| Yes| Yes|
 |Custom trainable classifier |No| No| Yes|
 
+\* These classifiers are supported in MIP Auto-labeling simulation matched items - for SharePoint sites and OneDrive sites
+  
 > [!IMPORTANT]
-> The match/not a match feedback experience supports items in :
-> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type/ Trainaable Classifier Matched Items, DLP Alerts and MTP Alerts.
+> The match/not a match feedback and contextual summary experience support items in:
+> SharePoint sites & OneDrive sites - for Content Explorer, Sensitive Information Type and Trainable Classifier Matched Items, DLP Alerts and MTP Alerts.
 > Emails in Exchange - for DLP Alerts and MTP Alerts.
+> The contextual summary experience supports items in:
+> SharePoint sites and OneDrive sites - for MIP simulation matched items 
 
 ## Licensing and Subscriptions
 
-For information on the relevant licensing and subscriptions,7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  -
-b 
+For information on the relevant licensing and subscriptions, see the [licensing requirements for Data classification analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- see the [licensing requirements for Data classification analytics: Overview Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
-
-## Known limitations for this preview
+## Known limitations
 
 - The contextual summary only shows a limited number of matches in any given item, not all matches.
 - The contextual summary and feedback experience is only available for items created or updated after the feedback experience was enabled for the tenant. Items that were classified before the feature was enabled may not have the contextual summary and feedback experience available.
@@ -200,7 +77,7 @@ The contextual summary experience, where you indicate whether a matched item is 
 
 ### Using Content Explorer
 
-This example shows you how to use the **Contextual Summary** tab to give feedback.
+This example shows you how to use the **Contextual Summary** tab to give feedback. <!-- Can't fully verify procedure b/c I can't get Content Explorer to display any data in this view on ediscosdf or on ocg1-->
 
 1. Open the **Microsoft Purview compliance portal** > **Data classification** > **Content explorer** page.
 1. Type the name of the SIT or trainable classifier that you want to check matches for in **Filter on labels, info types, or categories**.
@@ -237,7 +114,7 @@ You can access the same feedback mechanisms in the **Sensitive Info types** page
 
 ### Using Trainable Classifier Matched Items page
 
-1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Trainable classifiers**.
+1. Open the **Microsoft Purview compliance portal** and navigate to **Data classification** > **Classifiers** > **Trainable classifiers**.
 1. Select the trainable classifier whose accuracy you want to check.
 1. Open the trainable classifier. This brings up **Overview** tab. Here you can see the count of the number of items that match, a count of the number of items that aren't a match, and the number of items with feedback.
 1. Select the **Matched items** tab.

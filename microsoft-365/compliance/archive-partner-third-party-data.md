@@ -1,6 +1,6 @@
 ---
 title: "Work with a partner to archive third-party data"
-description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Viva Engage.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -24,7 +24,7 @@ ms.custom:
 
 # Work with a partner to archive third-party data
 
-You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365. A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items. The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes. After third-party data is imported, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.
+You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365. A partner can provide you with a custom connector that is configured to extract items from the third-party data source (regularly) and then import those items. The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes. After third-party data is imported, you can apply Microsoft Purview features such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.
 
 > [!IMPORTANT]
 > The [Communication compliance](communication-compliance.md) solution in Microsoft 365 can't be applied to the third-party data imported by partner connectors mentioned in this article.
@@ -131,7 +131,7 @@ The following sections list the Microsoft partners (and the third-party data sou
 - Microsoft Exchange Server
 - Microsoft OneDrive for Business
 - Microsoft Teams
-- Microsoft Yammer
+- Microsoft Viva Engage
 - Mobile Guard
 - Pivot
 - Salesforce Chatter
@@ -239,7 +239,7 @@ The following sections list the Microsoft partners (and the third-party data sou
 - WinMX
 - Winny
 - Yahoo
-- Yammer
+- Viva Engage
 - YouTube
 
 ### Verba
@@ -306,7 +306,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
     - Enable the archive mailbox; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md). This lets you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox. This provides you with up to 1.5 TB of storage for third-party data.
 
-    - Place the third-party data mailbox on Litigation Hold. You can also apply a Microsoft 365 retention policy in the Microsoft Purview compliance portal. Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following topics:
+    - Place the third-party data mailbox on Litigation Hold. You can also apply a Microsoft 365 retention policy in the Microsoft Purview compliance portal. Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following articles:
 
       - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
 
@@ -320,7 +320,7 @@ The next step is to configure user mailboxes to support third-party data. Comple
 
 1. Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
-2. Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:
+2. Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following articles:
 
     - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
     - [Learn about retention policies and retention labels](retention.md)
@@ -341,7 +341,7 @@ The final step is to provide your partner with the following information so they
 
 ## Step 5: Register the third-party data connector in Azure Active Directory
 
-Starting September 30, 2018, the Azure service in Microsoft 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your organization to import data. The reason for this change is that modern authentication provides more security than the current method, which was based on an allow list for third-party connectors that use the previously described endpoint to connect to the Azure service.
+Starting September 30, 2018, the Azure service in Microsoft 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your organization to import data. The reason for this change is that modern authentication provides more security than the current method, which was based on an allowlist for third-party connectors that use the previously described endpoint to connect to the Azure service.
 
 To enable a third-party data connector to connect to Microsoft 365 using the new modern authentication method, an administrator in your organization must consent to register the connector as a trusted service application in Azure Active Directory. This is done by accepting a permission request to allow the connector to access your organization's data in Azure Active Directory. After you accept this request, the third-party data connector is added as an enterprise application to Azure Active Directory and represented as a service principal. For more information the consent process, see  [Tenant Admin Consent](/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
@@ -364,7 +364,7 @@ After you accept the request, the [Azure portal](https://portal.azure.com) is di
 
 After your organization consents to the permissions request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time. However, revoking the consent for a connector means that data from the third-party data source will no longer be imported into Microsoft 365.
 
-To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) in Microsoft 365 PowerShell. You can also use the [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet in Azure Active Directory PowerShell.
+To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MgServicePrincipal](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal) in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation).
 
 ## More information
 
@@ -372,7 +372,7 @@ To revoke consent for a third-party data connector, you can delete the applicati
 
   |Message property|Mandatory?|Description|Example value|
   |---|---|---|---|
-  |**FROM**|Yes|The user who originally created or sent the item in the third-party data source. The partner connector attempts to map the user ID from the source item (for example a Twitter handle) to a user account for all participants (users in the FROM and TO fields). A copy of the message will be imported to the mailbox of every participant. If none of the participants from the item can be mapped to a user account, the item will be imported to the third-party archiving mailbox in Microsoft 365.  <br/> <br/> The participant who's identified as the sender of the item must have an active mailbox in the organization that the item is being imported to. If the sender doesn't have an active mailbox, the following error is returned:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**FROM**|Yes|The user who originally created or sent the item in the third-party data source. The partner connector attempts to map the user ID from the source item (for example a Twitter handle) to a user account for all participants (users in the FROM and TO fields). A copy of the message will be imported to the mailbox of every participant. If none of the participants from the item can be mapped to a user account, the item is imported to the third-party archiving mailbox in Microsoft 365.  <br/> <br/> The participant who's identified as the sender of the item must have an active mailbox in the organization that the item is being imported to. If the sender doesn't have an active mailbox, the following error is returned:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
   |**TO**|Yes|The user who received an item, if applicable for an item in the data source.|`bob@contoso.com`|
   |**SUBJECT**|No|The subject from the source item.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
   |**DATE**|Yes|The date the item was originally created or posted in the customer data source. For example, that date when a Twitter message was tweeted.|`01 NOV 2015`|

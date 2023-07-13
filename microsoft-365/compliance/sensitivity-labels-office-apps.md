@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/01/2023
+ms.date: 07/12/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -66,7 +66,7 @@ If both of these conditions are met but you need to turn off the built-in labels
 
 For Group Policy and [Microsoft 365 Apps for enterprise administrative templates](https://www.microsoft.com/download/details.aspx?id=49030), navigate to this setting from **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. If you're using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service), search for this setting by name. The setting takes effect when these Office apps restart.
 
-If you later need to revert this configuration, change the value to 1 by selecting **Enabled**. You might also need to change enable this setting if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
+If you later need to revert this configuration, change the value to 1 by selecting **Enabled**. You might also need to enable this setting if the **Sensitivity** button isn't displayed on the ribbon as expected. For example, a previous administrator turned this labeling setting off.
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps and all platforms, don't assign a sensitivity label policy to those users.
 
@@ -196,7 +196,6 @@ Office apps apply content marking and encryption with a sensitivity label differ
 | Word, Excel, PowerPoint on all platforms | Immediately | Immediately |
 | Outlook for PC and Mac | After Exchange Online sends the email or meeting invite | Immediately |
 | Outlook on the web, iOS, and Android | After Exchange Online sends the email or meeting invite | After Exchange Online sends the email or meeting invite |
-|
 
 Solutions that apply sensitivity labels to files outside Office apps do so by applying labeling metadata to the file. In this scenario, content marking from the label's configuration isn't inserted into the file but encryption is applied. 
 
@@ -306,7 +305,9 @@ For guidance about when to use this setting, see the information about [policy s
 
 ### For Outlook Mobile, change when users are prompted for a label
 
-Now available in the Beta Channel for Android, and not yet for iOS, you can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
+Currently rolling out, this setting requires a minimum version of 4.2316.0 for Outlook for Android and Outlook for iOS.
+
+You can use a Microsoft Intune [Managed apps app configuration policy](/mem/intune/apps/app-configuration-policies-managed-app#add-a-managed-apps-app-configuration-policy) to configure a setting from the Intune App Software Development Kit (SDK) that changes when users are prompted to select a sensitivity label for Outlook Mobile.
 
 Instead of prompting for a label on send when mandatory labeling is configuring for emails, this configuration results in prompting for a label when a user first composes a message.
 
@@ -351,6 +352,8 @@ This configuration is an extension to the **Items** scope, when you [create or e
 
 Make sure both options are selected if you don't need to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook.
 
+Remember that other label configurations can also influence whether sensitivity labels are visible in apps. Check the documentation for the label configurations that you use.
+
 > [!NOTE]
 > The **Files** option can include other items that support this scoping option, such as Power BI files. Check the application's documentation to verify, and remember to test all labeling apps and services used by your organization.
 
@@ -391,7 +394,7 @@ Before you can scope a label to just files or emails, you must first remove it i
 > [!NOTE]
 > Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
-> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
+> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies or configure it to [protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md).
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -440,7 +443,11 @@ However, take into consideration the outcome when an email client doesn't suppor
 
 - For built-in labeling:
     
-    - **Double Key Encryption**: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows.
+    - **Double Key Encryption**: Behavior depends on whether Outlook supports this encryption method. Use the [capabilities tables](sensitivity-labels-versions.md) and the row **Double Key Encryption (DKE)** to confirm support for your version.
+    
+        - When Outlook supports DKE: If the highest priority label applies the encryption setting for Double Key Encryption and **Assign permissions now**, Outlook for Windows applies that label and protection to the email message. The label and protection isn't applied if the label is configured for **Let users assign permissions when they apply the label**.
+        
+        - When Outlook doesn't support DKE: If the highest priority label applies Double Key Encryption, no label or encryption is selected for the email message in Outlook for Windows.
 
     - **Custom permissions for Word, PowerPoint, and Excel**: If the highest priority label applies just user-defined permissions for Word, PowerPoint, and Excel (the option **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**), no label or protection is selected for the email message because Outlook doesn't support this label configuration.
 
@@ -456,9 +463,9 @@ However, take into consideration the outcome when an email client doesn't suppor
 
 ## PDF support
 
-For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md). The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
+For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify supported versions. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
-Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
+Office for Windows: Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 
 - File > Save As > PDF 
 - File > Export > PDF
@@ -466,9 +473,23 @@ Word, Excel, and PowerPoint support the following methods to convert an Office d
 
 This action is logged with the **Renamed file** audit event from the [File and page activities](audit-log-activities.md#file-and-page-activities) auditing group. In the auditing search results in the compliance portal, you'll see the details of this auditing event display **SensitivityLabeledFileRenamed** for the **Activity** field.
 
-When the PDF is created, it inherits the label with any content markings and encryption. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Office for the web: You must download the file from the browser. The following methods are supported to convert an Office online document into a PDF document:
 
-Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook does support warning or blocking users from printing to PDF, as described next.
+- Word and PowerPoint on the web:
+    - Save as > Download as PDF > Download
+- Excel on the web:
+    - Export > Download as PDF > Download
+    - Print > Print > Download as PDF > Download
+
+When the PDF is created, it inherits the label with any content markings. For Windows, if the label applied encryption, that encryption is also inherited. Encrypted PDFs can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+
+SharePoint and OneDrive support the following PDF scenarios:
+
+- When you've [enabled SharePoint and OneDrive for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md) and [added PDF support](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf). Then, PDFs are supported when you upload a labeled PDF document with or without encryption applied, these services can process the file such that search, eDiscovery, and data loss prevention can inspect the contents, and the sensitivity label name is displayed for users.
+
+- [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) can apply a sensitivity label and encryption (if configured) to PDF documents when [PDF support is added](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
+
+Outlook doesn't currently support PDF attachments inheriting encryption from a labeled message. However, Outlook now does support warning or blocking users from printing to PDF, as described next.
 
 PDF scenarios not supported:
 
@@ -486,9 +507,9 @@ PDF scenarios not supported:
     
     The option **File** > **Info** > **Protect Document** > **Encrypt with Password** isn't supported when the document's label applies encryption. In this scenario, the encrypt with password option becomes unavailable for users.
 
-For more information about this capability, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
+For more information about exporting to PDF, see the announcement [Apply sensitivity labels to PDFs created with Office apps](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
 
-For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
+For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4) and [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers).
 
 ### Disabling PDF support
 
