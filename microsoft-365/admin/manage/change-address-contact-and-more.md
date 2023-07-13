@@ -72,7 +72,7 @@ An explanation of each field is provided below.
 
 ## Change the organization's Name
 The organization's name is used throughout Microsoft 365, including but not limited to:  
-* Azure Active Directory Sign-in dialogs and multi-factor authentication prompts.  This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices. 
+* Azure Active Directory Sign-in dialogs and multifactor authentication prompts. This includes multifactor authentication prompts provided by the Microsoft Authenticator app on iOS and Android devices. 
  * If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.
 * Viva Engage navigation
   * In Viva Engage, the organization name is used as the name of the home Engage network, and this shows up in the left navigation.  
