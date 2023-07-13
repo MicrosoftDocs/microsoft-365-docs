@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/23/2023
+ms.date: 07/12/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -39,6 +39,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## July 2023
+
+### Sensitivity labels
+
+- **General availability (GA)**: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
+- **In preview**: Now rolling out in preview, PDF support for auto-labeling policies, default sensitivity labels for SharePoint document libraries, and labeling activities in Office on the web that include manual labeling and displaying labeled documents, and encrypted PDFs that are now supported  for DLP, eDiscovery, and search. You must [opt-in for this PDF support](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
+
 ## June 2023
 
 ### Data lifecycle management and records management
@@ -49,12 +56,25 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - **General availability (GA)**: Oversharing Popup for Outlook Win 32. [Scenario 2 Show policy tip as oversharing popup](dlp-create-deploy-policy.md#scenario-2-show-policy-tip-as-oversharing-popup) and [Business justification X-Header](dlp-policy-reference.md#business-justification-x-header).
 
+### Insider risk management
+
+- **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins.
+- **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
+- Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits). 
+
 ### Sensitivity labels
 
 - **General availability (GA)**: Now rolling out, Outlook for Android and Outlook for iOS support a setting for mandatory labeling that you can configure with Microsoft Intune to [prompt users to select a sensitivity label when they first compose an email](sensitivity-labels-office-apps.md#for-outlook-mobile-change-when-users-are-prompted-for-a-label) instead of when they send it.
 - **General availability (GA)**: Outlook for Android and Outlook for iOS, the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors) are now in general availability. For iOS, the release is still rolling out.
-- **In preview**: Now rolling out in preview, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
+- **In preview**: Now rolling out in preview, OneDrive locations for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) are changing from sites specified by URLs to users and groups. This change of configuration means that [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) are now supported for OneDrive auto-labeling policies. Any existing OneDrive sites specified in auto-labeling policies as site URLs will continue to work but before you can add more OneDrive locations, or for restricted admins, you must first delete any existing OneDrive sites specified as URLs. Groups supported: distribution groups, Microsoft 365 groups, mail-enabled security groups, and security groups.
 - **In preview**: Now rolling out in preview, [limited support for labels configured for user-defined permissions](sensitivity-labels-sharepoint-onedrive-files.md#support-for-labels-configured-for-user-defined-permissions) for Office on the web, SharePoint and OneDrive.
+- **In preview**: The following new conditions are rolling out in preview for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Just the final new condition listed requires an advanced rule, and is applicable to OneDrive and SharePoint only. All the other new conditions are available in common rules:
+    - Attachment or file extension is
+    - Attachment or document name contains words or phrases
+    - Attachment or document property is
+    - Attachment or document size equals or is greater than
+    - Document created by
+- **In preview**: A **Contextual Summary** tab is added to auto-labeling policies that are in simulation. Similar to [other solutions that support contextual summary](data-classification-increase-accuracy.md), when you select an item to review, this new tab highlights the matched content and its surrounding context. Use this tab to confirm that the match is positive and therefore suitable to turn on the policy. Or, the match is negative, in which case you can fine-tune the policy and rerun simulation.
 - **Removal of limitations for Teams when using sensitivity labels**: Several previous limitations are removed for [Teams protected meetings](sensitivity-labels-meetings.md), which include Safari and Firefox support to prevent copy chat, support for virtual desktop infrastructure (VDI), policy settings for justification for changing a label, mandatory labeling, and a help link to a custom help page, and more methods are now supported to prevent copying chat.
 
 ## May 2023
@@ -83,7 +103,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: [Simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode) for auto-apply retention label policies is now generally available.
-- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Yammer remain in preview.
+- **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Exchange or Teams are now generally available. Cloud attachments shared via Viva Engage remain in preview.
 
 ### eDiscovery
 
@@ -130,8 +150,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
-- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Yammer.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+
+- **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Viva Engage.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
@@ -273,7 +294,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Audit
 
-- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#yammer-activities) in Yammer.
+- Clarification for audit log activities for [messages with reactions](/microsoft-365/compliance/audit-log-activities#viva-engage-activities) in Viva Engage.
 - [Clarification](/microsoft-365/compliance/audit-log-retention-policies#before-you-create-an-audit-log-retention-policy) on customized retention policies and licensing requirements.
 - Updates to [export limits](/microsoft-365/compliance/audit-new-search#audit-search-results-overview) for all search job items in Audit (Premium).
 - Clarification for [OneDrive for Business support](/microsoft-365/compliance/audit-premium) in Audit (Premium).
@@ -335,7 +356,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Permissions
 
-- **In preview**: [Support for Azure Active Directory administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview). Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.
+- **In preview**: [Support for Azure Active Directory administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units). Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.
 
 ### Sensitivity labels
 
@@ -395,3 +416,4 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **Rolling out in preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports the configuration of a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label).
 - **Rolling out in preview**: Word, Excel, and PowerPoint in Office for Mac also supports the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors).
 - The earliest version for the AIP add-in to be [disabled by default in Office apps](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) for the Current Channel and Monthly Enterprise Channel is now version 2302. The minimum version for the Semi-Annual Channel hasn't changed.
+

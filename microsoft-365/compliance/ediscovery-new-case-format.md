@@ -35,7 +35,7 @@ Here's a list of other benefits of large cases in eDiscovery (Premium) workflow.
 
 - **Collection**: In the new case format, you can collect up to 1 TB of data for a single collection.
 
-   For each case, the collection settings will default to collect cloud Attachments and contextual Teams and Yammer content. These settings help to collect the full picture of digital communications within an investigation. For Teams and Yammer contextual conversations, the new case format will convert time-based snapshots of 1:1, 1: N and Channel conversations into HTML transcripts to help provide context of conversations and reduce the total number of items produced by chat-based content.  
+   For each case, the collection settings will default to collect cloud Attachments and contextual Teams and Viva Engage content. These settings help to collect the full picture of digital communications within an investigation. For Teams and Viva Engage contextual conversations, the new case format will convert time-based snapshots of 1:1, 1: N and Channel conversations into HTML transcripts to help provide context of conversations and reduce the total number of items produced by chat-based content.  
 
 - **Review**: Each review set will support up to 1 TB of pre-expansion content. Additional metadata will be available for filters and queries including Team name, channel name and conversation name for Teams content. Each transcript will include time-based content for before and after the responsive item. For Channel conversations, the root post and all replies will be collected for responsive content. For more information, see [eDiscovery (Premium) workflow for content in Microsoft Teams (preview)](teams-workflow-in-advanced-ediscovery.md)
 
