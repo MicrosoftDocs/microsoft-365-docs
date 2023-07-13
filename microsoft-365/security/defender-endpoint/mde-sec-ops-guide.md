@@ -76,7 +76,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 - **Review threat analytics high-impact threats** 
 
     Review threat analytics to identify any campaigns that are impacting your environment. 
-    The “High-impact threats” table lists the threats that have had the highest impact to the organization. This section ranks threats by the number of devices that have active alerts. See [Track and respond to emerging threats through threat analytics](threat-analytics.md#view-the-threat-analytics-dashboard).
+    The "High-impact threats" table lists the threats that have had the highest impact to the organization. This section ranks threats by the number of devices that have active alerts. See [Track and respond to emerging threats through threat analytics](threat-analytics.md#view-the-threat-analytics-dashboard).
 
 ### Security administration team 
 

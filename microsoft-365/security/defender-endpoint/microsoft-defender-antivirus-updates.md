@@ -100,7 +100,7 @@ All our updates contain
 - Platform: **4.18.23060.x** (*final version number coming soon*)
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
-   
+   
 ### What's new  
 
 - Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
@@ -126,7 +126,7 @@ All our updates contain
 - Platform: **4.18.23050.5**
 - Engine: **1.1.23050.2**
 - Support phase: **Security and Critical Updates**
-   
+   
 ### What's new  
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
@@ -142,7 +142,7 @@ All our updates contain
 - Platform: **4.18.23050.3**    
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
-   
+   
 ### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))

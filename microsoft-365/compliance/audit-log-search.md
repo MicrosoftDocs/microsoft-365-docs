@@ -70,7 +70,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 |Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 |Viva Goals|VivaGoals|
 |Viva Insights|VivaInsights|
-|Yammer|Yammer|
+|Viva Engage|Viva Engage|
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
 

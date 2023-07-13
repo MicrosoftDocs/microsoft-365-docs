@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 7/5/2023
+ms.date: 7/12/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -527,7 +527,7 @@ The settings are also described in the following tables.
 |---|---|
 |Name|Evaluation Policy|
 |Action|Allow|
-|ActionOnError|True|
+|ActionOnError|True<sup>\*</sup>|
 |AdminDisplayName|Evaluation Policy|
 |ConfidenceLevelThreshold|80|
 |Enable|True|
@@ -540,6 +540,8 @@ The settings are also described in the following tables.
 |Redirect|False|
 |RedirectAddress|blank|
 |ScanTimeout|30|
+
+<sup>\*</sup> This parameter has been deprecated and is no longer used.
 
 #### Safe Links evaluation policy settings
 

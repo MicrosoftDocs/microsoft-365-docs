@@ -34,7 +34,6 @@ If you're new to Microsoft Purview DLP, here's a list of the core articles you'l
 
 1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
-1. [Sensitive Information Type Limits](/microsoft-365/compliance/sit-limits) - these limits apply to all Microsoft Purview policies that use sensitive information types.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
