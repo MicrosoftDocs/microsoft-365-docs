@@ -169,6 +169,6 @@ Additional resources:
 
 [Manage sharing settings in SharePoint](/sharepoint/turn-external-sharing-on-or-off)
 
-[Create and manage an external network in Yammer](/yammer/work-with-external-users/create-and-manage-an-external-network)
+[Create and manage an external network in Viva Engage](/viva/engage/work-with-external-users/create-and-manage-an-external-network)
 
 [Configure Teams with three tiers of protection](./configure-teams-three-tiers-protection.md)
