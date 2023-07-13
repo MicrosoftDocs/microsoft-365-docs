@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 07/13/2023
 ---
 
 # Resources for Microsoft Defender for Endpoint on macOS
@@ -76,12 +76,12 @@ If you can reproduce a problem, increase the logging level, run the system for s
 If an error occurs during installation, the installer will only report a general failure.
 
 The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. If you experience issues during installation, send us this file so we can help diagnose the cause.
-For further troubleshooting installation issues, please review [Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-support-install?view=o365-worldwide)
+For further troubleshooting installation issues, please review [Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
 
 ## Uninstalling
 
 > [!NOTE]
-> Before uninstalling Microsoft Defender for Endpoint on macOS, please offboard per [Offboard non-Windows devices](/microsoft-365/security/defender-endpoint/configure-endpoints-non-windows?view=o365-worldwide#offboard-non-windows-devices&preserve-view=true).
+> Before uninstalling Microsoft Defender for Endpoint on macOS, please offboard per [Offboard non-Windows devices](configure-endpoints-non-windows.md).
 
 There are several ways to uninstall Microsoft Defender for Endpoint on macOS. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
