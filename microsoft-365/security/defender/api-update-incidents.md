@@ -141,3 +141,4 @@ Here's an example of the request.
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

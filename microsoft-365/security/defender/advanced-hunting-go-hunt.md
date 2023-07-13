@@ -119,3 +119,4 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Custom detection rules](custom-detection-rules.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

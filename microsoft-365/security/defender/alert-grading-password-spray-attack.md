@@ -207,3 +207,4 @@ Once you determine that the activities associated with this alert are malicious,
 
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
