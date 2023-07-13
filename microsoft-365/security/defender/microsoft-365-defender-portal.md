@@ -84,7 +84,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 :::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Settings page in the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
 
-### Permissions & roles
+### Permissions
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
