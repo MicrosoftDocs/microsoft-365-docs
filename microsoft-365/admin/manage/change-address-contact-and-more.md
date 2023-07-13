@@ -87,7 +87,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
     * The file path for the Pictures Known Folder is C:\users\<username>\OneDrive - \<organization Name>\Pictures
     * The file path for the Desktop Known Folder is C:\users\<username>\OneDrive - \<organization Name>\Desktop
   * The organization name is shown in:
-    * the OneDrive activity center
+    * The OneDrive activity center
     * The tooltip of the OneDrive cloud icon
     * the OneDrive settings window, on the Accounts tab
   *  Currently, updating the organization name does not update it for configured clients. 
