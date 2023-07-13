@@ -25,11 +25,11 @@ Before you can use the optical character recognition (OCR) service in Microsoft 
 
 ### Licensing
 
-Before you can use the OCR service in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). OCR in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). 
+Before you can use the OCR service in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). OCR in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex. 
+You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex.
 
 ## Set up optical character recognition
 
