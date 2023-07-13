@@ -205,3 +205,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
