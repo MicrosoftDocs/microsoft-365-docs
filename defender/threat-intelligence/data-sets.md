@@ -94,7 +94,7 @@ Our Whois data includes the following:
 - **City:** any city listed in an address associated to the record, and the type of contact it is associated with.
 - **State:** any states listed in an address associated to the record, and the type of contact it is associated with.
 - **Postal Code:** any postal codes listed in an address associated to the record, and the type of contact it is associated with.
-- **Country:** any countries listed in an address associated to the record, and the type of contact it is associated with.
+- **Country:** any countries/regions listed in an address associated to the record, and the type of contact it is associated with.
 - **Phone:** any phone numbers listed in the record, and the type of contact it is associated with.
 - **Name Servers:** any name servers associated to the registered entity.
 

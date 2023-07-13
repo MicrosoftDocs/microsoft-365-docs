@@ -154,7 +154,7 @@ The checkout page contains the following sections:
 
 ### Sold to
 
-This section shows the billing account used for the proposal. If you need to change any information, select the **Edit** link. You can also use the **Edit** link to add your organization's Tax ID. The Tax ID must be related to the country listed in the **Sold to** section. If you have a tax exemption, you must open a support ticket to request tax-exempt status.
+This section shows the billing account used for the proposal. If you need to change any information, select the **Edit** link. You can also use the **Edit** link to add your organization's Tax ID. The Tax ID must be related to the country/region listed in the **Sold to** section. If you have a tax exemption, you must open a support ticket to request tax-exempt status.
 
 To learn more about Tax IDs, and how to apply for tax-exempt status, see
 [Microsoft 365 tax information](billing-and-payments/tax-information.md).
