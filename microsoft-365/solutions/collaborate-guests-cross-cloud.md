@@ -3,7 +3,7 @@ title: Collaborate with guests from other Microsoft 365 cloud environments
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/01/2023
+ms.date: 07/28/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -37,7 +37,7 @@ In order to invite guests from an organization in a different Microsoft Azure cl
 1. If the organization you want to collaborate with is in a different Microsoft Azure cloud environment (such as commercial and DoD), enable cross-tenant connections with that Microsoft Azure cloud environment.
 1. Set up cross-tenant access settings in Azure AD with the organization that you want to collaborate with.
 
-Note that meetings between tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
+Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
 
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.
