@@ -8,8 +8,8 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/12/2023
-ms.reviewer: pahuijbr, yongrhee
+ms.date: 07/13/2023
+ms.reviewer: pahuijbr, yongrhee, tudobril
 manager: dansimp
 ms.collection: 
 - m365-security
