@@ -173,7 +173,7 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 
 With this learning path from Microsoft Learn, you can understand Microsoft 365 Defender and how it can help identify, control, and remediate security threats.
 
-|Training:|Detect and respond to cyber attacks with Microsoft 365 Defender|
+|Training:|Mitigate threats using Microsoft 365 Defender|
 |---|---|
 |![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft 365 Defender. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.<p> 9 hr 31 min - Learning Path - 11 Modules|
 
