@@ -105,7 +105,7 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Sense (MsSense.exe): **10.8210.** \*+ 
+- Sense (MsSense.exe): **10.8210.** \*+
 - Windows OS - Windows 10 1809 or later
 
   > [!NOTE]
