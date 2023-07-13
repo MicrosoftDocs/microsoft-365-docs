@@ -89,7 +89,7 @@ The organization's name is used throughout Microsoft 365, including but not limi
   * The organization name is shown in:
     * the OneDrive activity center
     * The tooltip of the OneDrive cloud icon
-    * the OneDrive settings window, on the Accounts tab. 
+    * the OneDrive settings window, on the Accounts tab
   *  Currently, updating the organization name does not update it for configured clients. 
 *  Microsoft Teams:
     * Tenant Switcher in Teams displays the organization Name when a user participates in Teams in more than one tenant.
