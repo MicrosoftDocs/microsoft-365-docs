@@ -75,7 +75,7 @@ To configure these settings:
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-microsoft-defender-antivirus.md), [specified remediation lists](configure-remediation-microsoft-defender-antivirus.md), and [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 
-By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence. You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
+By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence. You can disable this setting to ensure that only globally defined lists (such as those from any deployed GPOs) are used.
 
 ### Use Group Policy to disable local list merging
 
