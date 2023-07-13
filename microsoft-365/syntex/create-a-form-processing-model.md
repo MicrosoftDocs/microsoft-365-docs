@@ -115,10 +115,3 @@ Two flows are available to process a selected file or batch of files in a librar
 > [!NOTE]
 > The **Extract info from an image or PDF file with a document processing model** flow is automatically available for a library with a document processing model associated. The **Extract info from files with a document processing model** flow is a template that must be added to the library if required.
 
-## See also
-
-[Create a model in Microsoft Syntex](create-syntex-model.md)
-
-[Power Automate documentation](/power-automate/)
-
-[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
