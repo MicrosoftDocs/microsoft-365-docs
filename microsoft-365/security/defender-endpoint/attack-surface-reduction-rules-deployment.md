@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: sugamar
 manager: dansimp
 ms.custom: asr
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 07/06/2023
+ms.date: 07/13/2023
 search.appverid: met150
 ---
 
