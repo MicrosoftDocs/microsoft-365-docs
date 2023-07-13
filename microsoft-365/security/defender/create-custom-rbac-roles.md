@@ -115,3 +115,4 @@ To access and manage roles and permissions, without being a Global Administrator
 
 - [Import existing RBAC roles](import-rbac-roles.md)
 - [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
