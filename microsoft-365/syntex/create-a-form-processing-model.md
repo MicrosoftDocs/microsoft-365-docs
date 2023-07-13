@@ -1,5 +1,5 @@
 ---
-title: Train a structured document processing model in Microsoft Syntex
+title: Train a structured or freeform document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,27 +14,20 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to train a structured document processing model in Microsoft Syntex.
+description: Learn how to train a structured or freeform document processing model in Microsoft Syntex.
 ---
 
-# Train a structured document processing model in Microsoft Syntex
+# Train a structured or freeform document processing model in Microsoft Syntex
 
 <!---
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
-
-</br>
-
-
 Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a structured or freeform document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
 ![Diagram of the workflow to train an AI Builder model.](../media/content-understanding/train-aib-model.png)
 
-To train a structured document processing model, follow these steps:
+To train a structured or freeform document processing model, follow these steps:
 
  - [Step 1: Add and analyze documents](#step-1-add-and-analyze-documents)
  - [Step 2: Tag fields and tables](#step-2-tag-fields-and-tables)
@@ -43,7 +36,7 @@ To train a structured document processing model, follow these steps:
 
 ## Step 1: Add and analyze documents
 
-After you create your structured document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as *Name*, *Address*, or *Amount*. 
+After you create your structured or freeform document processing model, the **Choose information to extract** page opens. Here you list all pieces of information that you want the AI model to extract from your documents, such as *Name*, *Address*, or *Amount*.
 
 > [!NOTE]
 > When you look for example files to use, see the [document processing model input document requirements and optimization tips](/ai-builder/form-processing-model-requirements). 
@@ -104,7 +97,7 @@ To run the flow:
 > [!IMPORTANT]
 > The information in this section doesn't apply to the latest release of Syntex. It is left as reference only for the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
 
-Two flows are available to process a selected file or batch of files in a library where a structured document processing model has been applied.
+Two flows are available to process a selected file or batch of files in a library where a structured or freeform document processing model has been applied.
 
 - **Extract info from an image or PDF file with a document processing model** — Use to extract text from a selected image or PDF file by running a document processing model. Supports a single selected file at a time, and supports only PDF files and image files (.png, .jpg, and .jpeg). To run the flow, select a file, and then select **Automate** > **Extract info**.
 
