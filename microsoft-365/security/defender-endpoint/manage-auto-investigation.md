@@ -1,15 +1,11 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 07/13/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
