@@ -163,7 +163,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Azure AD role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
-### TBD
+### Message when trying to access Lighthouse from the Partner Insights tab of Sales advisor: "You must be an indirect reseller or direct-bill partner to use this service" or I'm redirected to the Lighthouse Home page but can't sign in
 
 **Cause 1:** Microsoft 365 Lighthouse hasn't been deployed in your partner tenant yet.
 
