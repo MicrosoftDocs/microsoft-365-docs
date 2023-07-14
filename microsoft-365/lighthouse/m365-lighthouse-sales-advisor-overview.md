@@ -38,7 +38,7 @@ Video: [Preview: Microsoft 365 Lighthouse Sales Advisory](https://cloudpartners.
 
 Ensure your customers’ success by using AI-driven customer insights, actionable recommendations, and prescriptive guidance. Maximize your customers’ investment in Microsoft 365 and deliver value at every stage of their journey.
 
-:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-opportunities-page.png" alt-text="Screenshot of Lighthouse Opportunities page.":::
+:::image type="content" source="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png" alt-text="Screenshot of Lighthouse Opportunities page." lightbox="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png":::
 
 - **Understand your customers better**: Sales Advisor analyzes your customers' behavior, preferences, needs, and feedback across multiple channels and sources. It gives you a holistic view of your customers' health and interests, so you can tailor your communication and offers accordingly.
 
