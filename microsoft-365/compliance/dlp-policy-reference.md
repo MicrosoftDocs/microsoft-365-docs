@@ -32,9 +32,8 @@ Microsoft Purview Data Loss Prevention (DLP) policies have many components to co
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
-1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
-1. [Sensitive Information Type Limits](/microsoft-365/compliance/sit-limits) - these limits apply to all Microsoft Purview policies that use sensitive information types.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
     1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -126,7 +125,7 @@ The following table lists all policy templates and the sensitive information typ
 
 ## Policy Scoping
 
-See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
+See, [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
 DLP policies are scoped at two different levels. The first level applies unrestricted admin scope policies to all:
 
@@ -139,7 +138,7 @@ DLP policies are scoped at two different levels. The first level applies unrestr
 - on-premises repositories
 - Power BI workspaces
 
-in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview).
+in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies](#administrative-unit-restricted-policies).
 
 At this level, an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
 
@@ -159,11 +158,11 @@ See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details.
 
 Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer-and-reports).
 
-### Administrative Unit restricted policies (preview)
+### Administrative Unit restricted policies
 
 Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, distribution groups, and accounts. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
   
-DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
@@ -616,6 +615,10 @@ The actions that are available in a rule depend on the locations that have been 
 - Add HTML Disclaimer
 - Modify Email Subject
 - Deliver the message to the hosted quarantine
+- Apply branding to encrypted messages 
+
+> [!TIP]
+> For the **Apply branding to encrypted messages** action, if you already have Office Message Encryption implemented, the templates will automatically show up in the drop down list. If you want to implement Microsoft Purview Message Encryption, see  for background on OME and procedure to create and configure your branding templates.
 
 > [!TIP]
 > For more information on the actions that Exchange supports, including PowerShell values, see: [Data loss prevention Exchange conditions and actions reference](dlp-exchange-conditions-and-actions.md).
@@ -853,6 +856,7 @@ Details on support for policy tips and notifications for different apps can be f
 
 - [Data loss prevention policy tip reference for Outlook for Microsoft 365](dlp-ol365-win32-policy-tips.md)
 - [Data loss prevention policy tip reference for Outlook on the Web](dlp-owa-policy-tips.md)
+- [Data loss prevention policy tip reference for SharePoint Online and OneDrive for Business web client](dlp-spo-odbweb-policy-tips.md)
 
 #### Blocking and notifications in SharePoint Online and OneDrive for Business
 

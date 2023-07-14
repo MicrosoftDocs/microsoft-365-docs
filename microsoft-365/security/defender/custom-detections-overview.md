@@ -43,3 +43,4 @@ Custom detections provide:
 - [Create and manage custom detection rules](custom-detection-rules.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

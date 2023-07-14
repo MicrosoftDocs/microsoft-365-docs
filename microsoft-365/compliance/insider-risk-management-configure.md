@@ -223,6 +223,9 @@ A DLP policy is optional when using the following policy templates:
 
 See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
+> [!NOTE]
+> Endpoint DLP now supports virtualized environments (preview), which means that the insider risk management solution supports virtualized environments through endpoint DLP. [Learn more about support for virtualized environments in endpoint DLP](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
+
 ### Configure priority user groups
 
 Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of risk behavior. Creating a priority user group and assigning users to the group help scope policies to the unique circumstances presented by these users.
