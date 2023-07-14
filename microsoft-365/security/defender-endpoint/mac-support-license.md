@@ -36,7 +36,7 @@ ms.date: 12/18/2020
 
 ## No license found
 
-While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md), an error message with an **x** on top of the Microsoft Defender for Endpoint on macOS shield appears.
+When [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) is being deployed, an error message with an **x** on top of the Microsoft Defender for Endpoint on macOS shield appears.
 
 Select the **x** symbol.
 
@@ -50,19 +50,19 @@ When you select the **x** symbol, you'll see options as shown in the following s
 
 When you select **Action needed**, you'll get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot that shows the "No license found" message." lightbox="images/license-not-found-message.png":::
+:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description." lightbox="images/license-not-found-message.png":::
 
 You'll encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the output page that shows the "No license found" warning message." lightbox="images/no-license-found-warning.png":::
+:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed." lightbox="images/no-license-found-warning.png":::
 
 ### Cause
 
-1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package) that contains the license settings. For information on how troubleshoot for this cause, see [For not running the configuration script](#for-not-running-the-configuration-script).
+1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [For not running the configuration script](#for-not-running-the-configuration-script).
 
-1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on how troubleshoot for this cause, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
+1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
 
-1. You can also encounter this error message if you haven't assigned a license to the user. For information on how troubleshoot for this cause, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
+1. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
 
 ### Solutions
 
@@ -106,13 +106,14 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
        :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
 
-    1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying details of the chosen license appears:
+    1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
     
       :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
 
-    1. Select the **Assign licenses** link.
-    
-       :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of product page that contains the "Assign licenses" link." lightbox="images/assign-licenses-link.png":::
+    1. Select the **Assign licenses** link, as shown in the following screenshot:
+
+      
+      :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link." lightbox="images/assign-licenses-link.png":::
 
        The following screen appears:
 
