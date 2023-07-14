@@ -732,3 +732,4 @@ GET https://api.security.microsoft.com/api/incidents
 - [Incidents overview](incidents-overview.md)
 - [Incident APIs](api-incident.md)
 - [Update incident API](api-update-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

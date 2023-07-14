@@ -100,3 +100,4 @@ Once the readiness checks are completed, our experts will start monitoring your 
 ### See also
 - [Frequently asked questions](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
