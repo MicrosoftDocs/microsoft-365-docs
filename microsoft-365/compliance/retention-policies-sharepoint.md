@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 04/26/2023
+ms.date: 06/29/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention](retention.md
 For other workloads, see:
 
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
-- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Viva Engage](retention-policies-viva-engage.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -120,7 +120,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## How retention works with cloud attachments
 
-Cloud attachments are embedded links to files that users share, and these can be retained and deleted when your users share them in Outlook emails and Teams or Yammer messages. When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), the retention label is applied to a copy of the shared file, which is stored in the Preservation Hold library.
+Cloud attachments are embedded links to files that users share, and these can be retained and deleted when your users share them in Outlook emails and Teams or Viva Engage messages. When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), the retention label is applied to a copy of the shared file, which is stored in the Preservation Hold library.
 
 For this scenario, we recommend you configure the label setting to start the retention period based on when the item is labeled. If you do configure the retention period based on when the item is created or last modified, this date is taken from the original file at the time of sharing. If you configure the start of retention to be when last modified, this setting has no effect for this copy in the Preservation Hold library.
 
@@ -138,9 +138,13 @@ To safeguard against the original file being deleted or moved by users before th
 
 ## How retention works with OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, the different OneNote sections inherit the retention settings as individual files. Pages from each section are contained within the file and inherit the retention settings from their parent section. 
+
+Because of this structure, each section will be individually retained and deleted (with all its pages), according to the retention settings you specify. 
 
 Only sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each individual notebook, this date is not used by Microsoft 365 retention.
+
+:::image type="content" source="../media/onenote-backend-structure.png" alt-text="OneNote folder and file structure to demonstrate how retention settings are applied to each section and then inherited by pages in that section.":::
 
 ## How retention works with document versions
 

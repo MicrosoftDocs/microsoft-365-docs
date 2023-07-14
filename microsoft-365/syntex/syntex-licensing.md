@@ -1,10 +1,10 @@
 ---
 title: Licensing for Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
 ms.date: 03/06/2023
-manager: serdars
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -19,7 +19,7 @@ description: Learn about licensing for Microsoft Syntex.
 
 # Licensing for Microsoft Syntex
 
-Microsoft Syntex has two types of product offerings to choose from:
+Microsoft Syntex has two types of licensing:
 
 - [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go)
 - [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing)
@@ -42,6 +42,10 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
 
 ## Microsoft Syntex per-user licensing
+
+> [!NOTE]
+> As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
+> Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
 
 To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 

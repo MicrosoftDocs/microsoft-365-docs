@@ -25,12 +25,12 @@ description: "Groups services interactions"
 Microsoft 365 Groups provides a common fabric for several services and workloads within the Microsoft 365 platform to deliver a connected experience for end users. At its core, a Microsoft 365 group exists to provide:
 
 - A way to manage the membership (Azure AD)
-- A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Yammer)
+- A place for messaging and conversations to take place (Exchange mailbox, Microsoft Teams, Viva Engage)
 - A place for files to be stored (SharePoint)
 - A calendar for scheduling (Exchange)
 - A notebook for capturing notes (OneNote)
 
-At the point of group creation, several other resources are also provisioned, however they are not visible until accessed for the first time from the service:
+At the point of group creation, several other resources are also provisioned, however they aren't visible until accessed for the first time from the service:
 
 - A board for managing group tasks (Planner)
 - A workspace for reporting (Power BI)
@@ -44,7 +44,7 @@ Examples of this include:
 - Power Automate for workflows
 - Project on the web and Roadmap for waterfall-based project management
 - Teams for channel-based conversations
-- Yammer for communities of interest
+- Viva Engage for communities of interest
 
 ## User interactions with groups
 
@@ -52,7 +52,7 @@ Microsoft 365 Groups can be created and managed from various interfaces, both by
 
 ### Administrative experiences
 
-Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API. The only exception to this is Yammer groups – which must be created from within the Yammer web interface.
+Administrators can create and manage Microsoft 365 groups from several of the workload admin centers, command-line interfaces that support scripting, as well as custom-built apps interacting with the Graph API. The only exception to this is Viva Engage groups – which must be created from within the Viva Engage web interface.
 
 **Related settings**
 
@@ -70,7 +70,7 @@ The admin center also provides several guest invitation control measures that go
 
 **SharePoint**
 
-SharePoint sites are created with Owner, Member, and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
+SharePoint sites are created with Owner, Member, and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it isn't a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this isn't reflected in the Microsoft 365 group.
 
 ### User experiences
 
@@ -84,11 +84,11 @@ The following services allow creation of groups by end users:
 - SharePoint
 - Stream
 - Microsoft Teams
-- Yammer
+- Viva Engage
 
 #### Restriction of group creation
 
-A common approach to control sprawl of teams is to limit which users can create them. This can only be done by limiting the creation of groups. Doing this impacts the ability to create groups from other services where that may be necessary for end user. Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.
+A common approach to control sprawl of teams is to limit which users can create them. This can only be done by limiting the creation of groups. Doing this impacts the ability to create groups from other services where that may be necessary for end user. Microsoft 365 Groups doesn't support the ability to restrict the creation of groups from some apps or services while allowing it from others.
 
 The experience of group creation restriction varies between apps and services:
 
@@ -97,10 +97,10 @@ The experience of group creation restriction varies between apps and services:
 |Outlook|**New group** option is removed from New menu in people page|
 |Planner|**New plan** explains that group creation has been turned off and offers to add the plan to an existing group|
 |Project for the web and Roadmap|**Create group** menu explains that group creation is restricted and suggests using an existing group.|
-|SharePoint|Still able to create a team site that is not connected to a group.|
-|Stream|**Group** option does not appear under the **Create menu**.|
-|Teams|User cannot create a team with a new group but can still create a team that utilizes an existing group.<br><br>**Create a team** button is replaced with **Create team from a group**.|
-|Yammer|**Create a group** option is removed from main Groups/Communities navigation.|
+|SharePoint|Still able to create a team site that isn't connected to a group.|
+|Stream|**Group** option doesn't appear under the **Create menu**.|
+|Teams|User can't create a team with a new group but can still create a team that utilizes an existing group.<br><br>**Create a team** button is replaced with **Create team from a group**.|
+|Viva Engage|**Create a group** option is removed from main Groups/Communities navigation.|
 
 ## Services interactions with groups
 
@@ -128,7 +128,7 @@ The following table provides an overview of Microsoft 365 Groups interactions wi
 |SharePoint|Site|Yes|Yes|Yes|
 |Stream|Channel, video|Yes|Yes|Yes|
 |Teams|Team|No|Yes|Yes|
-|Yammer|Group|Yes|Yes|Yes|
+|Viva Engage|Group|Yes|Yes|Yes|
 
 While the table above provides a high-level overview of group interactions with Microsoft 365 services, there are several nuances and intricacies that you should understand. The following sections take a more in-depth look at the specific workloads and their interactions with groups.
 
@@ -182,11 +182,11 @@ By default, when a team is created, the mailbox and calendar associated with the
 
 **Can Teams create a group?**
 
-Yes, creating a new team will create a new Microsoft 365 group. It is also possible to create a team for an existing group that does not currently have one.
+Yes, creating a new team will create a new Microsoft 365 group. It's also possible to create a team for an existing group that doesn't currently have one.
 
 **Do teams exist without a group?**
 
-No, it is not possible for a team to exist without a Group.
+No, it isn't possible for a team to exist without a Group.
 
 **Can there be multiple teams per group?**
 
@@ -216,7 +216,7 @@ Exchange Online provides messaging, calendar, contact, and associated functional
 
 **Can Exchange create a group?**
 
-Yes, it is possible to create a group from the Exchange Online admin center, as well as from Outlook. You can also convert Exchange distribution lists to Microsoft 365 groups.
+Yes, it's possible to create a group from the Exchange Online admin center, as well as from Outlook. You can also convert Exchange distribution lists to Microsoft 365 groups.
 
 **Does Exchange exist without a Group?**
 
@@ -228,11 +228,11 @@ No, there can only be a single Exchange Online mailbox and calendar for a group.
 
 **Can Exchange mailboxes and calendars be associated with multiple groups?**
 
-No, the mailbox and calendar have a 1:1 relationship with the group. It is possible to share the mailbox with other users or groups, however this does not establish any form of service association.
+No, the mailbox and calendar have a 1:1 relationship with the group. It's possible to share the mailbox with other users or groups, however this doesn't establish any form of service association.
 
 **Can the Exchange mailbox or calendar’s association with a group change?**
 
-No, the mailbox and calendar   cannot be changed to a different group. However, the content can be moved from one mailbox to another within Outlook or by using a third-party tool.
+No, the mailbox and calendar   can't be changed to a different group. However, the content can be moved from one mailbox to another within Outlook or by using a third-party tool.
 
 **Does deleting the mailbox delete the group?**
 
@@ -248,7 +248,7 @@ Forms provides web-based surveys and quizzes.
 
 **Can Forms create a group?**
 
-No, Forms cannot create a group.
+No, Forms can't create a group.
 
 **Do forms exist without a group?**
 
@@ -264,11 +264,11 @@ No, a form can only be associated with a single group.
 
 **Can a form’s association with a group change?**
 
-No, once a form is associated with a group (either created directly within, or ownership transferred from an individual) it cannot be moved to another group.
+No, once a form is associated with a group (either created directly within, or ownership transferred from an individual) it can't be moved to another group.
 
 **Does deleting the form delete the group?**
 
-No, it is not possible to delete a group from the Forms interface, only individual forms.
+No, it isn't possible to delete a group from the Forms interface, only individual forms.
 
 ## OneNote
 
@@ -280,7 +280,7 @@ OneNote is a digital notebook application. The OneNote notebook created with a g
 
 **Can OneNote create a group?**
 
-No, the OneNote application cannot create a group.
+No, the OneNote application can't create a group.
 
 **Do OneNote notebooks exist without a group?**
 
@@ -347,7 +347,7 @@ Power Apps provides a canvas for app development without code.
 
 **Can Power Apps create a group?**
 
-No, Power Apps cannot create a Microsoft 365 group.
+No, Power Apps can't create a Microsoft 365 group.
 
 **Do Power Apps exist without a group?**
 
@@ -382,9 +382,9 @@ Power Automate (formerly known as Microsoft Flow) provides workflows and automat
 
 **Can Power Automate create a group?**
 
-No, Power Automate cannot create a Microsoft 365 group in the context of being associated with one.
+No, Power Automate can't create a Microsoft 365 group in the context of being associated with one.
 
-It is possible however to create a flow that performs various operations such as creating an Azure AD security group or updating membership of a Microsoft 365 group.
+It's possible however to create a flow that performs various operations such as creating an Azure AD security group or updating membership of a Microsoft 365 group.
 
 **Do flows exist without a group?**
 
@@ -442,7 +442,7 @@ Yes, deleting the workspace in Power BI will delete group and  group-associated 
 
 Power BI provides interactive data-driven dashboards and reports.
 
-While creating a new workspace in Power BI does not create a Microsoft 365 group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
+While creating a new workspace in Power BI doesn't create a Microsoft 365 group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
 
 **Key features provided to groups**
 
@@ -450,11 +450,11 @@ While creating a new workspace in Power BI does not create a Microsoft 365 group
 
 **Can Power BI create a group?**
 
-No, it is not possible to create a Microsoft 365 group from the new Power BI interface.
+No, it isn't possible to create a Microsoft 365 group from the new Power BI interface.
 
 **Does the new Power BI workspace exist without a group?**
 
-Yes, it is possible to have reports and workspaces created in Power BI that are not associated with Microsoft 365 groups.
+Yes, it's possible to have reports and workspaces created in Power BI that are not associated with Microsoft 365 groups.
 
 **Can there be multiple workspaces per group?**
 
@@ -481,7 +481,7 @@ Key features provided to groups.
 
 **Can Project for the web create a group?**
 
-Yes, it is possible to create a new Microsoft 365 group directly from Project for the web.
+Yes, it's possible to create a new Microsoft 365 group directly from Project for the web.
 
 **Do projects exist without a group?**
 
@@ -603,47 +603,47 @@ Yes and no; videos in Stream are owned by the original uploader or meeting recor
 
 No, deleting videos or channels doesn’t delete the group. However, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.
 
-## Yammer
+## Viva Engage
 
-Yammer is an enterprise social platform designed to foster community engagement within and between organizations.
+Viva Engage is an enterprise social platform designed to foster community engagement within and between organizations.
 
-Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.
+Creating a community (formerly known as “group”) in Viva Engage creates a mailbox, but at present this is not used.
 
-A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.
+A Microsoft 365 group that is associated with Viva Engage cannot be used with a team in Microsoft Teams.
 
-A Yammer group cannot be used with a PowerBI Pro Workspace.
+A Viva Engage group cannot be used with a PowerBI Pro Workspace.
 
 **Key features provided to Groups**
 
 - Conversation area
 
-**Can Yammer create a Microsoft 365 group?**
+**Can Viva Engage create a Microsoft 365 group?**
 
-Yes, creating a new group in Yammer will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.
+Yes, creating a new group in Viva Engage will create a new Microsoft 365 group, if the platforms are connected and the user has the ability to create a group.
 
-A Yammer group with associated Microsoft 365 group cannot be created in any interface or service other than Yammer itself.
+A Viva Engage group with associated Microsoft 365 group cannot be created in any interface or service other than Viva Engage itself.
 
-**Does a Yammer group exist without a Microsoft 365 group?**
+**Does a Viva Engage group exist without a Microsoft 365 group?**
 
-Yes, it is possible to create a Yammer group without a Microsoft 365 group.
+Yes, it is possible to create a Viva Engage group without a Microsoft 365 group.
 
-If the Yammer platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Yammer groups are created without a Microsoft 365 group association.
+If the Viva Engage platform is not connected to Microsoft 365 groups, or users do not have the ability to create a Microsoft 365 group, Viva Engage groups are created without a Microsoft 365 group association.
 
-**Can there be multiple Yammer groups per Microsoft 365 group?**
+**Can there be multiple Viva Engage groups per Microsoft 365 group?**
 
-No, the relationship between a Yammer group and a Microsoft 365 group is 1:1.
+No, the relationship between a Viva Engage group and a Microsoft 365 group is 1:1.
 
-**Can a Yammer group be associated with multiple Microsoft 365 groups?**
+**Can a Viva Engage group be associated with multiple Microsoft 365 groups?**
 
-No, the Yammer group can only be associated with a single Microsoft 365 group. It is possible for posts to be shared with or moved to other Yammer groups.
+No, the Viva Engage group can only be associated with a single Microsoft 365 group. It is possible for posts to be shared with or moved to other Viva Engage groups.
 
-**Can a Yammer group’s association with a Microsoft 365 group change?**
+**Can a Viva Engage group’s association with a Microsoft 365 group change?**
 
-No, the Yammer group can only ever be associated with the Microsoft 365 group to which it was originally associated.
+No, the Viva Engage group can only ever be associated with the Microsoft 365 group to which it was originally associated.
 
-**Does deleting the Yammer group delete the Microsoft 365 group?**
+**Does deleting the Viva Engage group delete the Microsoft 365 group?**
 
-Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.
+Yes, deleting the group in Viva Engage will delete related Microsoft group and group-associated services and content.
 
 ## Related topics
 
