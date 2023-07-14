@@ -171,7 +171,7 @@ This implementation means that if you share documents with another organization 
 
 > [!NOTE]
 > Two exceptions where another organization can't apply their own sensitivity labels:
-> - Using Office for the web, external users connect to your SharePoint sites or OneDrive locations. In this scenario, they won't see their sensitivity labels because the site is owned by another organization.
+> - Using Office for the web, external users connect to your SharePoint sites or OneDrive locations and don't see their sensitivity labels because the site is owned by another organization.
 > - Using co-authoring from desktop or mobile apps, external users [won't be able to apply their own sensitivity labels that are configured to apply encryption](https://support.microsoft.com/topic/you-can-t-apply-your-own-protected-sensitivity-label-to-this-file-3e592e7f-5498-481a-b930-c1259924e9ab).
 
 The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook might not retain the label metadata in the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata hasn't been retained. If that label applied encryption, the encryption persists to protect the contents.
