@@ -73,7 +73,7 @@ scannerAgent|Object|An object representing the scanner agent, contains the machi
 
 ### Authentication parameters object properties
 
-Property|Data type|Description  and  
+Property|Data type|Description
 :---|:---|:---
 @odata.type|Enum|The scan type authentication parameters. Possible values are: "#microsoft.windowsDefenderATP.api.SnmpAuthParams" for "Network" scan type, and "#microsoft.windowsDefenderATP.api.WindowsAuthParams" for "Windows" scan type.
 type|Enum|The authentication method. Possible values vary based on @odata.type property. <br/> - If @odata.type is "SnmpAuthParams", possible values are "CommunityString", "NoAuthNoPriv", "AuthNoPriv", "AuthPriv". <br/> - If @odata.type is "WindowsAuthParams" possible values are "Kerberos" or "Negotiate".

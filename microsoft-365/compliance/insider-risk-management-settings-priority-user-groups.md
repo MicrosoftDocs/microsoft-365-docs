@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/03/2023
+ms.date: 07/11/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -49,6 +49,8 @@ You must be a member of the *Insider Risk Management* or *Insider Risk Managemen
     - **Description (optional)**: Enter a description for the priority user group.
 5. Select **Next** to continue.
 6. On the **Choose members** page, select **Choose members** to search and select which mail-enabled user accounts are included in the group or select the **Select all** check box to add all users in your organization to the group. Select **Add** to continue.
+   > [!NOTE]
+   > You can add up to 10,000 users to a priority user group. 
 7. Select **Next** to continue.
 8. On the **Choose who can view this group** page, you must define who can review users, alerts, cases, and reports for the priority user group. At least one user or insider risk management role group must be assigned. Select **Choose users and role groups**, and then select the users or insider risk management role groups you want to assign to the priority user group. Select **Add** to assign the selected users or role groups to the group.
 9. Select **Next** to continue.

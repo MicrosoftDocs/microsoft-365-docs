@@ -105,7 +105,7 @@ The following table describes other tools that you can use to replace the existi
 <p>Higher reliability for searching, exporting, and placing content on hold</p>
 </li>
 <li>
-<p>Searching for content in for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Yammer Groups, Microsoft 365 Groups, and other content stored in Office 365 applications</p></li></ul>
+<p>Searching for content in for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Viva Engage Groups, Microsoft 365 Groups, and other content stored in Office 365 applications</p></li></ul>
 </td>
 </tr>
 <tr class="even">

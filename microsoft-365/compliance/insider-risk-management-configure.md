@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/29/2023
+ms.date: 07/14/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -222,6 +222,9 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks by priority users
 
 See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+
+> [!NOTE]
+> Endpoint DLP now supports virtualized environments (preview), which means that the insider risk management solution supports virtualized environments through endpoint DLP. [Learn more about support for virtualized environments in endpoint DLP](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
 
 ### Configure priority user groups
 

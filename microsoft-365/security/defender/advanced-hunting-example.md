@@ -76,3 +76,4 @@ The data from this query will appear in the results panel below the query itself
 ## Related information
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
 - [Overview - Advanced hunting](advanced-hunting-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

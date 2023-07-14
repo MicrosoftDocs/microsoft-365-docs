@@ -67,7 +67,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`OSVersionInfo` | `string` | Additional information about the OS version, such as the popular name, code name, or version number |
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
 |`MergedToDeviceId` | `string` | The most recent device ID assigned to a device |
-|`SensorHealthState` | `string` | Indicates health of the device’s EDR sensor, if onboarded to Microsoft Defender For Endpoint |
+|`SensorHealthState` | `string` | Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint |
 |	`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
 |	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
@@ -93,3 +93,4 @@ DeviceInfo
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
