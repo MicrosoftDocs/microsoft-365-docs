@@ -102,4 +102,4 @@ The following two sets of data help analyze potential issues and determine the m
 
 ## See also
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
-- [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information.md)
+- [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
