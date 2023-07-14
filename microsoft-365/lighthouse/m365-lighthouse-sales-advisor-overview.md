@@ -4,8 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
-ms.date: 07/14/2023
+ms.reviewer: sharonchoi
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse

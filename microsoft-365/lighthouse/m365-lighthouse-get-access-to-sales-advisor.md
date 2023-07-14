@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: sharonchoi
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
@@ -51,7 +51,7 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 4. Under **User details**, navigate to **Roles applicable to partner programs** and select **View data and reports for one or more locations (select the locations where the user needs to be able to view data and reports.)**
 
-5. Assign **Report viewer** or **Executive report viewer** role using one of the two methods below.
+5. Assign **Report viewer** or **Executive report viewer** role using one of the two methods.
 
 - Select **Entire organization** if you want the user to have access to all locations listed plus any other new locations that will be added in the future
 
