@@ -48,6 +48,6 @@ If you already have a cross-tenant synchronization configuration, it remains unc
 
 ## Leave a multi-tenant organization
 
-You can remove any member tenant, including your own. You can't remove owner tenants. Also, you can't remove the original creator tenant, even if it has been changed from owner to member. Removing a tenant must be done using Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
+You can remove any member tenant, including your own. You can't remove owner tenants. Also, you can't remove the original creator tenant, even if it has been changed from owner to member. Removing a tenant must be done using Microsoft Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
 
-
+## Related topics

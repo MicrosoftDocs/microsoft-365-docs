@@ -19,10 +19,25 @@ description: Learn how to set up a multi-tenant org in Microsoft 365.
 
 
 
+[Set up a multi-tenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph#step-2-create-a-multi-tenant-organization)
+
+
+
+
+#### Related settings in Azure AD
+
+When each external tenant accepts the invitation to join the multi-tenant organization, the following settings are configured in Azure AD:
+
+- A cross-tenant synchronization configuration is added with the name *MTO_Sync_<TenantID>*, but no sync jobs are created yet.
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration.
+- The cross-tenant inbound settings are set to allow users to sync into this tenant.
+- The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
+
+If you already have a cross-tenant synchronization configuration, it remains unchanged.
+
 ## Set up a new multi-tenant organization
 
-
-
+If you haven't already set up a multi-tenant organization, you can do so in the Microsoft 365 admin center.
 
 To set up a new multi-tenant org in Microsoft 365
 1. In the Microsoft 365 admin center, expand **Settings**.
@@ -38,15 +53,7 @@ To set up a new multi-tenant org in Microsoft 365
 1. Copy the instructions for joining the multi-tenant org and email them to a global administrator in each of the orgs you invited.
 1. Select **Done**.
 
-When each external tenant accepts the invitation to join the multi-tenant organization, the following settings are configured in Azure Active Directory:
-
-- A cross-tenant synchronization configuration is added with the name MTO_Sync_<TenantID>, but no sync jobs are created yet.
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration.
-- The cross-tenant inbound settings are set to allow users to sync into this tenant.
-- The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
-
-If you already have a cross-tenant synchronization configuration, it remains unchanged.
-
+The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Sync users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Add a tenant to your multi-tenant organization
 
@@ -54,7 +61,12 @@ To add a tenant to your multi-tenant organization
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select **Add new tenants**.
+1. Enter the tenant IDs of the tenants you want to add, and then select **Add tenant**.
+1. Copy the instructions for joining the multi-tenant org and email them to a global administrator in each of the orgs you invited.
+1. Select **Done**.
 
+The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Sync users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Related topics
 
