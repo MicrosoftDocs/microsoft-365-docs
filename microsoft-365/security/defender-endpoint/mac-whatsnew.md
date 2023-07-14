@@ -62,7 +62,7 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 ##### What's new
 
 - Client version schema change
-- Fix: Defender does not start on a machine with certain versions of Edge dur to directory permission issue
+- Fix: Defender does not start on a machine with certain versions of Edge due to directory permission issue
 - Bug and performance fixes
 
 ### Jun-2023 (Build: 101.98.84  | Release version: 20.123042.19884.0)
