@@ -54,7 +54,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 |**Unallowed Bluetooth apps**    |n/a |Supported         |Supported         |         |
 |**Browser and domain restrictions to sensitive data** | **Unallowed browsers**      |Supported         |Supported         |         |
 |**Browser and domain restrictions to sensitive data** | **Service domains** | Supported | Supported| |
-|**Browser and domain restrictions to sensitive data** | **Sensitive service domain groups** | Supported | Supported| |
+|**Browser and domain restrictions to sensitive data** | **Sensitive service domain groups** | Supported | Not supported| |
 |**Additional settings for Endpoint DLP** | **Business justification in policy tips**     |Supported         |Supported (preview)         |Only the default business justifications are supported for macOS devices         |
 |**Always audit file activity for devices** | n/a   |Supported         |Supported         |         |
 |**Printer groups** | n/a| Supported |Not supported| |
