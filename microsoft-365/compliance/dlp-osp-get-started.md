@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/13/2023
+ms.date: 07/14/2023
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -137,7 +137,7 @@ This *RegKey* allows you to specify the wait on send behavior on your Outlook cl
 **Enabled**: The email message is checked when the **Send** is clicked but before the message is actually sent. You can set a time limit on how long to wait for DLP policy evaluation to complete (**T** value in seconds). If the policy evaluation doesn't complete in the specified time a **Send anyway** button appears allowing the user to bypass the presend check.  The **T** value range is 0 to 9999 seconds. 
 
 > [!IMPORTANT]
-> If the **T** value is greater than 9999, it will be replaced with 1000 and the **Send Anyway** button will not appear. This holds the message until the policy evalution completes with no option for user override. The duration to complete the evaluation can vary depending on factors such as internet speed, content length, and the number of defined policies. Some users may encounter policy evaluation messages more frequently than others depending on what policies are deployed on their mailbox.
+> If the **T** value is greater than 9999, it will be replaced with 10000 and the **Send Anyway** button will not appear. This holds the message until the policy evalution completes with no option for user override. The duration to complete the evaluation can vary depending on factors such as internet speed, content length, and the number of defined policies. Some users may encounter policy evaluation messages more frequently than others depending on what policies are deployed on their mailbox.
 
 To learn more about configuring and using GPO see,  [Administer Group Policy in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/manage-group-policy). 
 
