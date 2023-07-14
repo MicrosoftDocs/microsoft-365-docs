@@ -49,7 +49,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 |**Setup evidence collection for file activities on devices**| **Set evidence cache on device** | Supported (preview)| Not supported|  |
 |**Network share coverage and exclusions** | n/a | Supported |Not Supported| |
 |**Restricted apps and app groups**    |**Restricted app groups**        |Supported         |Supported (preview)         | |
-|**Restricted apps and app groups** |**Restricted apps** |Supported | UNKNOWN ASK HENRY| |
+|**Restricted apps and app groups** |**Restricted apps** |Supported | Supported | |
 |**Restricted apps and app groups** |**Auto-quarantine settings**| Supported | Supported (preview)| |
 |**Unallowed Bluetooth apps**    |n/a |Supported         |Supported         |         |
 |**Browser and domain restrictions to sensitive data** | **Unallowed browsers**      |Supported         |Supported         |         |
