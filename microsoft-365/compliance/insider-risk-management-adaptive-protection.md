@@ -131,7 +131,7 @@ The quick setup option is the fastest way to get started with Adaptive Protectio
 Available on Adaptive Protection cards on the compliance portal home page and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
 
 > [!NOTE]
-> If you're already a [scoped admin](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for Microsoft Purview, you can't turn on quick setup. 
+> If you're already a [scoped admin](microsoft-365-compliance-center-permissions.md#administrative-units) for Microsoft Purview, you can't turn on quick setup. 
 
 Here's what is configured when you use the quick setup process for Adaptive Protection:
 

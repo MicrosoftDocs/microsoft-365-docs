@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 06/14/2023
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - tier1
 - purview-compliance
-- SPO_Content
 search.appverid: 
 - MET150
 ms.custom:

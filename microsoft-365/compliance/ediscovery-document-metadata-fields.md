@@ -53,7 +53,7 @@ This table provides the following information:
 |Conversation Pdf Time|ConversationPdfTime|*Not exported*|Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime|*Not exported*|Date when the PDF version of the conversation was created for Chat.|
 |Conversation Topic|ConversationTopic|*Not exported*|Conversation topic of the item.|
-|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br>**Teams 1:1 and group chats and all Yammer conversations:** Group<br>**Teams channels and private channels:** Channel|
+|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br>**Teams 1:1 and group chats and all Viva Engage conversations:** Group<br>**Teams channels and private channels:** Channel|
 |Contains Deleted Message|ContainsDeletedMessage|ContainsDeletedMessage|Indicates if the chat transcript includes a deleted message|
 |Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the chat transcript includes an edited message|
 |Teams Announcement Title|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Title from a [teams announcement](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
@@ -91,7 +91,7 @@ This table provides the following information:
 |FamilyDuplicateSet*|*Not searchable*|Family_duplicate_set|Numeric identifier for families that are exact duplicates of each other (same content and all the same attachments).|
 |Family ID|FamilyId|Family_ID|Groups together attachments and extracted items from email and chats with its parent item. This includes the chat or email and all attachments and extracted items.|
 |Family Size|*Not searchable*|Family_size|Number of documents in the family.|
-|File class|FileClass|File_class|For content from SharePoint and OneDrive: *Document*. <br>For content from Exchange: *Email* or *Attachment*. <br>For content from Teams or Yammer: *Conversations*.|
+|File class|FileClass|File_class|For content from SharePoint and OneDrive: *Document*. <br>For content from Exchange: *Email* or *Attachment*. <br>For content from Teams or Viva Engage: *Conversations*.|
 |File ID|FileId|File_ID|Document identifier unique within the case.|
 |File system date created|*Not searchable*|File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified|*Not searchable*|File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
@@ -166,10 +166,10 @@ This table provides the following information:
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle|*Not searchable*|Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
-|Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Yammer:** Community name|
+|Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Viva Engage:** Community name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
-|Thread ID|ThreadId|Thread_ID|The Thread ID from email messages, Teams conversations, and Yammer conversations. For email messages, all reply messages and attachments share the same Thread ID. For Teams 1:1 and group chats, all transcript files and their associated items within the same conversation share the same Thread ID. For more information, see [View documents in a review set](ediscovery-view-documents-in-review-set.md#grouping).|
-|Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
+|Thread ID|ThreadId|Thread_ID|The Thread ID from email messages, Teams conversations, and Viva Engage conversations. For email messages, all reply messages and attachments share the same Thread ID. For Teams 1:1 and group chats, all transcript files and their associated items within the same conversation share the same Thread ID. For more information, see [View documents in a review set](ediscovery-view-documents-in-review-set.md#grouping).|
+|Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Viva Engage content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. The format is *DisplayName\<SmtpAddress>*|
 |Unique in email set|UniqueInEmailSet|*Not exported*|*False* if there's a duplicate of the attachment in its email set.|
 |Version Group ID|*Not searchable*|Version_Group_Id|Groups together the different versions of the same document.|
