@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 07/13/2023
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -26,6 +26,8 @@ description: Learn how to use AI Builder to create structured or freeform docume
 </br>
 
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
+
+Use the freeform document processing model ([freeform selection method](create-syntex-model.md#train-a-custom-model)) to automatically extract information from unstructured and freeform documents, such as letters and contracts.
 
 ## Introduction to structured and freeform models
 
