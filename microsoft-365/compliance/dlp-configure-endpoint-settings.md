@@ -65,7 +65,7 @@ The following table describes the supported endpoint settings for Windows 10/11 
 ### Other settings
 
 |Setting | Windows 10/11 | macOS (three latest released versions)|
-|-|-|-
+|-|-|-|
 |Archive file| Supported | Not supported| |
 |File type and File extension |Supported | Not supported|
 
