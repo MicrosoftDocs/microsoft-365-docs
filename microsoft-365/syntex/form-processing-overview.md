@@ -1,5 +1,5 @@
 ---
-title: Overview of structured document processing in Microsoft Syntex
+title: Overview of structured and freeform document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Builder to create structured document processing models in Microsoft Syntex.
+description: Learn how to use AI Builder to create structured or freeform document processing models in Microsoft Syntex.
 ---
 
-# Overview of structured document processing in Microsoft Syntex
+# Overview of structured and freeform document processing in Microsoft Syntex
 
 </br>
 
@@ -27,7 +27,7 @@ description: Learn how to use AI Builder to create structured document processin
 
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-## Introduction to structured models
+## Introduction to structured and freeform models
 
 Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create structured document processing models within SharePoint document libraries.
 <!---
