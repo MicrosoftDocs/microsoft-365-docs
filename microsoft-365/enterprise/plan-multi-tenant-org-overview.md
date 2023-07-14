@@ -43,6 +43,14 @@ To control which users can see the toggle, use the Teams admin setting UseNewTea
 Please refer to the above references for additional information.
 3.	External Access Settings (Teams Admin Center)
 Additionally, it is required to enable the External Access policy in Teams Admin Center for tenants that are part of the multitenant org.  If External Access is not allowed between participating tenants, user collaboration across the multitenant may be limited.
+
+
+## Shared channels in multi-tenant orgs
+
+[Shared channels in Microsoft Teams](/microsoftteams/shared-channels)
+
+[Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect)
+
 4.	Enabling Teams Shared Channel 
 MTO users can collaborate with other users within a Teams shared channels. Sharing channels with people outside your organization, including MTO users, also requires to configure cross-tenant access settings in Entra. 
 This article provides guidance on how to setup a Teams shared channel. Shared channels in Microsoft Teams - Microsoft Teams | Microsoft Learn.
@@ -67,48 +75,6 @@ Chat & Call	New Chats and Calls use real identities
 Existing Chats with B2B identities show a banner
 Meetings	Access to in-meeting content
 Multitenant org Management	Users will be able to collaborate with other users in the tenants that are part of the multitenant org.  (see detailed description below)
-
-MTO Tenants Management
-A user can manage how to collaborate with users in other tenants (other than user home tenant) in the Settings accounts and org section
-Turn on or off MTO organization notifications
-MTO are turned off by default, which means they will not show up in your profile and you will not receive notifications from them or able to switch to that tenant.
-1.	Go to Settings and more (insert 3-dot icon) > Settings (gear icon) > Accounts and orgs
-2.	Your currently selected account will be highlighted, and underneath you can see all the other organizations related to that account. 
-3.	Turn on the toggle next to the organization you’d like to turn on.
- 
-Notifications will be turned on for the orgs that have been activated. If you no longer wish to receive notifications for a given organization, deactivate the toggle. 
-To change your notification settings, select Settings and more (three dot) next to your profile picture, then Settings (gear icon) > Notifications and activity (bell icon). 
- 
-
-Users can collaborate across the MTO while tenants are in the default state, the tenant will be auto-enabled for the following scenarios:
-o	New meetings hosted in the multitenant org
-o	User is added to a channel in the multitenant org
-o	User clicks a link (e.g., to a channel) in the multitenant org 
-
-Note that this capability is only available in the New Teams Client. Users who are using the Classic Teams client won't have the option to enable or disable a tenant.
-
-What is the MTO user experience when using the Classic Teams client?
-During the gradual migration of users to the New Teams client, organizations may find themselves in a situation where some users are using the New Teams Client while others continue to use the Classic Teams Client.
-In a scenario where a user enables a tenant to use the New Teams Client and then switches back to the Classic Teams client, the previously enabled tenant will now be visible and accessible in the "Me Control".
-
-The following is the New Teams experience for managing Tenants:
-Me Control	Settings account orgs 
-“Kenmore1” org: Disabled (not listed)
-“Kenmore1” org: Disabled
- 
-
-“Kenmore1” org: Enabled
- 	
-“Kenmore1” org: Disabled State
- 
-
-“Kenmore1” org: Enabled State
- 
-
-The following is the Classic Teams experience for managing Tenants:
-Me Control	Account orgs and settings
- 	 
-	
 
 Synced Users
 In such cases, when users are synced as B2B/members to facilitate the MTO formation, users in the Classic Teams Client will now be able to collaborate with the synced users.

@@ -23,9 +23,17 @@ Set up outbound directory sync from your tenant to other active tenants in this 
 Select the users and groups of users you want to share with the active tenants in your multitenant organization. Note: Groups will not be synced to target, only the users within the groups will be synced. Also, changes to your outbound sync settings here will reflect in Azure Active Directory too.
 
 
+Set up a security group with the users you want to sync
+
+Remove existing sync configurations for this tenant
+
+To sync identities to other tenants in a multi-tenant org
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select **Share users**.
+1. Select **Select users and groups to share**.
+1. Choose the security group that you created, and then select **Save**.
 
 
 
