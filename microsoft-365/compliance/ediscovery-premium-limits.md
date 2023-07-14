@@ -48,8 +48,8 @@ The following table lists the limits for holds associated with an eDiscovery (Pr
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum number of hold policies for an organization. This limit includes the combined total of hold policies in Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium) cases. <br/> |10,000<sup>2</sup> |
-|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. <br/> |1,000 |
-|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. | 100 |
+|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Viva Engage Groups. <br/> |1,000 |
+|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Viva Engage Groups. | 100 |
 
 ## Indexing limits
 

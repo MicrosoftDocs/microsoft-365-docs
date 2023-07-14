@@ -201,3 +201,4 @@ AlertInfo
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Classifying password spray attacks](alert-grading-password-spray-attack.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
