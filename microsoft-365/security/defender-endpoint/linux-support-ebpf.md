@@ -70,7 +70,7 @@ When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux u
 
 ## Use eBPF
 
-The eBPF sensor is enabled automatically on all insider devices with the Defender for Endpoint on Linux version starting from 101.98.89. Use the mdatp health command to verify the version.
+The eBPF sensor is enabled automatically on all insider devices with the Defender for Endpoint on Linux version starting from 101.23062.0005. Use the mdatp health command to verify the version.
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
