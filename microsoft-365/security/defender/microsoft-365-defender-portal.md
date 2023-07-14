@@ -24,7 +24,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.date: 07/01/2022
+ms.date: 07/13/2023
 ---
 
 # Microsoft 365 Defender portal
@@ -84,7 +84,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 :::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Settings page in the Microsoft 365 Defender portal" lightbox="../../media/converged-add-role-9.png":::
 
-### Permissions & roles
+### Permissions
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
@@ -173,15 +173,16 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 
 With this learning path from Microsoft Learn, you can understand Microsoft 365 Defender and how it can help identify, control, and remediate security threats.
 
-|Training:|Detect and respond to cyber attacks with Microsoft 365 Defender|
+|Training:|Mitigate threats using Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifies threat signals across endpoints, identities, email, and applications to provide integrated protection against sophisticated cyber attacks. Microsoft 365 Defender is the central experience to investigate and respond to incidents and proactively search for ongoing malicious cyber security activities.<p> 1 hr 38 min - Learning Path - 5 Modules|
+|![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft 365 Defender. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.<p> 9 hr 31 min - Learning Path - 11 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/training/paths/defender-detect-respond/)
+> [Start >](/training/paths/dsc-200-mitigate-threats-using-microsoft-365-defender/)
 
 ## See also
 
 - [What's new in Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

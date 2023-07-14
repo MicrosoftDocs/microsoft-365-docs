@@ -84,3 +84,4 @@ This service is currently delivered in English language only.
 ### Next step
 
 [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

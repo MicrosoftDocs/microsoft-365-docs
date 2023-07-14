@@ -46,3 +46,4 @@ If you don't have your own security IR team, [Microsoft Incident Response](https
 ### See also
 
 [Frequently asked questions](frequently-asked-questions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
