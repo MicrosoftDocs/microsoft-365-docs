@@ -40,21 +40,21 @@ While deploying [Microsoft Defender for Endpoint on macOS](microsoft-defender-en
 
 Select the **x** symbol.
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="The menu bar that contains the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
+:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
 
 ### Message
 
 When you select the **x** symbol, you'll see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="The option listed when you select on the x symbol." lightbox="images/x-symbol-menu-items.png":::
+:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol." lightbox="images/x-symbol-menu-items.png":::
 
 When you select **Action needed**, you'll get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="The message stating that there's no license for Microsoft 365 Enterprise subscription." lightbox="images/license-not-found-message.png":::
+:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot that shows the "No license found" message." lightbox="images/license-not-found-message.png":::
 
 You'll encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="The license-not-found message when using the terminal." lightbox="images/no-license-found-warning.png":::
+:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the output page that shows the "No license found" warning message." lightbox="images/no-license-found-warning.png":::
 
 ### Cause
 
@@ -92,49 +92,49 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        
-       :::image type="content" source="images/endpoints-option-on-settings-screen.png" alt-text="The Settings screen on which the Endpoints option is listed." lightbox="images/endpoints-option-on-settings-screen.png":::
+       :::image type="content" source="images/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="images/endpoints-option-on-settings-screen.png":::
  
        The **Endpoints** screen appears.
      
-       :::image type="content" source="images/endpoints-screen.png" alt-text="The Endpoints screen." lightbox="images/endpoints-screen.png":::
+       :::image type="content" source="images/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="images/endpoints-screen.png":::
 
     1. Select **Licenses**.
      
-       :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Selecting Licenses option from the Endpoints screen." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
+       :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
        
     1. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
-       :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="The Microsoft 365 admin center portal screen from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
+       :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
 
     1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying details of the chosen license appears:
     
-      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="The screen on which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
+      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
 
     1. Select the **Assign licenses** link.
     
-       :::image type="content" source="images/assign-licenses-link.png" alt-text="The Assign licenses link." lightbox="images/assign-licenses-link.png":::
+       :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of product page that contains the "Assign licenses" link." lightbox="images/assign-licenses-link.png":::
 
        The following screen appears:
 
-       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="The screen containing the option + Assign licenses." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
     1. Select **+ Assign licenses**.
     1. Enter the name or email address of the person to whom you want to assign this license.
     
        The following screen appears, displaying the details of the chosen license assignee and a list of options.
 
-       :::image type="content" source="images/assignee-details-and-options.png" alt-text="The screen displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
+       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
  
     1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft 365 Defender**, and **Microsoft Defender for Endpoint**.
     1. Select **Save**.
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
-:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="The results that are displayed after running mdatp health, once the licensing issues have been resolved." lightbox="images/results-after-license-issues-resolved.png":::
+:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health." lightbox="images/results-after-license-issues-resolved.png":::
 
 ## Sign in with your Microsoft account
 
-:::image type="content" source="images/mac-consumer-login.png" alt-text="Sign in with your Microsoft account to get started." lightbox="images/mac-consumer-login.png":::
+:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started." lightbox="images/mac-consumer-login.png":::
 
 ### Message
 
