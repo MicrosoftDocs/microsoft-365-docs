@@ -51,6 +51,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Viva Engage are now in general availability.
+- **Rolling out**: A [default retention label for Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook) is always retained when an item is moved to the **Deleted Items** folder.
 
 ### Data loss prevention
 
