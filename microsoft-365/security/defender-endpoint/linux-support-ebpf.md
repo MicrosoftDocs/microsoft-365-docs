@@ -38,7 +38,7 @@ The extended Berkeley Packet Filter (eBPF) for Microsoft Defender for Endpoint o
 Key benefits include:
 
 - Reduced system-wide auditd-related log noise
-- Optimized system-wide event rules causing conflict between applications
+- Optimized system-wide event rules otherwise causing conflict between applications
 - Reduced overhead for file event (file read/open) monitoring
 - Improved event rate throughput and reduced memory footprint
 - Optimized performance for specific configurations
