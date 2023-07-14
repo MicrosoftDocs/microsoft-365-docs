@@ -144,3 +144,4 @@ The option to **Ask Defender Experts** is available in several places throughout
 ### Next step
 
 - [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -70,3 +70,4 @@ More examples of first incident responses:
 [Detailed incident response playbooks](/security/compass/incident-response-playbooks)
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
