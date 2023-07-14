@@ -841,33 +841,33 @@ The following table lists the user and admin activities in Viva Goals that are l
 |Dashboard updated |Dashboard updated |User has updated a dashboard on Viva Goals |
 |Dashboard deleted |Dashboard deleted |User has deleted a dashboard on Viva Goals.  |
 
-## Yammer activities
+## Viva Engage activities
 
-The following table lists the user and admin activities in Yammer that are logged in the audit log. To return Yammer-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
+The following table lists the user and admin activities in Viva Engage that are logged in the audit log. To return Viva Engage-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
 
 > [!NOTE]
-> Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
+> Some Viva Engage audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Changed data retention policy|SoftDeleteSettingsUpdated|Verified admin updates the setting for the network data retention policy to either Hard Delete or Soft Delete. Only verified admins can perform this operation.|
-|Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Yammer network's configuration. This includes setting the interval for exporting data and enabling chat.|
+|Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Viva Engage network's configuration. This includes setting the interval for exporting data and enabling chat.|
 |Changed network profile settings|ProcessProfileFields|Network or verified admin changes the information that appears on member profiles for network users network.|
 |Changed private content mode|SupervisorAdminToggled|Verified admin turns  *Private Content Mode*  on or off. This mode lets an admin view the posts in private groups and view private messages between individual users (or groups of users). Only verified admins only can perform this operation.|
-|Changed security configuration|NetworkSecurityConfigurationUpdated|Verified admin updates the Yammer network's security configuration. This includes setting password expiration policies and restrictions on IP addresses. Only verified admins can perform this operation.|
+|Changed security configuration|NetworkSecurityConfigurationUpdated|Verified admin updates the Viva Engage network's security configuration. This includes setting password expiration policies and restrictions on IP addresses. Only verified admins can perform this operation.|
 |Created file|FileCreated|User uploads a file.|
 |Created group|GroupCreation|User creates a group.|
 |Created message<sup>*</sup>|MessageCreated|User creates a message.|
-|Deleted group|GroupDeletion|A group is deleted from Yammer.|
+|Deleted group|GroupDeletion|A group is deleted from Viva Engage.|
 |Deleted message|MessageDeleted|User deletes a message.|
 |Downloaded file|FileDownloaded|User downloads a file.|
-|Exported data|DataExport|Verified admin exports Yammer network data. Only verified admins can perform this operation.|
+|Exported data|DataExport|Verified admin exports Viva Engage network data. Only verified admins can perform this operation.|
 |Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
 |Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
 |Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
 |Reacted to message|MarkedMessageChanged|User reacted to a message.|
 |Shared file|FileShared|User shares a file with another user.|
-|Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
+|Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Viva Engage.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
 |Updated file description|FileUpdateDescription|User changes the description of a file.|
 |Updated file name|FileUpdateName|User changes the name of a file.|

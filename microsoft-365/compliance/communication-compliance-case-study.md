@@ -1,6 +1,6 @@
 ---
 title: "Case study - Contoso configures a communication compliance policy to identify potentially inappropriate text"
-description: "A case study for Contoso and how they quickly configure a communication compliance policy to detect potentially inappropriate text in Microsoft Teams, Exchange Online, and Yammer communications."
+description: "A case study for Contoso and how they quickly configure a communication compliance policy to detect potentially inappropriate text in Microsoft Teams, Exchange Online, and Viva Engage communications."
 keywords: Microsoft 365, Microsoft Purview, compliance, communication compliance
 f1.keywords:
 - NOCSH
@@ -26,14 +26,14 @@ search.appverid:
 - MOE150
 ---
 
-# Case study - Contoso configures a communication compliance policy to identify potentially inappropriate text for Microsoft Teams, Exchange, and Yammer communications
+# Case study - Contoso configures a communication compliance policy to identify potentially inappropriate text for Microsoft Teams, Exchange, and Viva Engage communications
 
 > [!IMPORTANT]
 > Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
-[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with potentially inappropriate text in your organization. Potentially inappropriate text may include profanity, threats, harassment, and adult content. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to review internal and external communications for policy matches, so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Yammer, or third-party communications throughout your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
+[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) helps minimize communication risks by helping you detect, capture, and act on messages with potentially inappropriate text in your organization. Potentially inappropriate text may include profanity, threats, harassment, and adult content. Pre-defined and custom [policies](/microsoft-365/compliance/communication-compliance-policies) allow you to review internal and external communications for policy matches, so they can be examined by designated reviewers. Reviewers can [investigate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) for email, Microsoft Teams, Viva Engage, or third-party communications throughout your organization and take appropriate [remediation actions](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) to make sure they're compliant with your organization's message standards.
 
-The Contoso Corporation is a fictional organization that needs to quickly configure a policy to detect potentially inappropriate text. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their users, but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
+The Contoso Corporation is a fictional organization that needs to quickly configure a policy to detect potentially inappropriate text. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Viva Engage support for their users, but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
 
 This case study covers the basics for quickly configuring a communication compliance policy to detect potentially inappropriate text. This guidance includes:
 
@@ -46,7 +46,7 @@ This case study covers the basics for quickly configuring a communication compli
 
 ## Step 1: Planning for communication compliance
 
-Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft Purview and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will detect potentially inappropriate messages. This configuration includes detecting text for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online.
+Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft Purview and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will detect potentially inappropriate messages. This configuration includes detecting text for chats sent in Microsoft Teams, private messages and community conversations in Viva Engage, and in email messages sent in Exchange Online.
 
 Their plan includes identifying the:
 
@@ -144,11 +144,11 @@ Communication compliance requires audit logs to show alerts and track remediatio
 
 Contoso IT administrators review and complete the [step-by-step instructions](/microsoft-365/compliance/turn-audit-log-search-on-or-off) to turn on auditing. After they turn on auditing, a message is displayed that says the audit log is being prepared and that they can run a search in a couple of hours after the preparation is complete. The Contoso IT administrators only have to do this action once.
 
-### Configuring Yammer tenant for Native Mode
+### Configuring Viva Engage tenant for Native Mode
 
-Communication compliance requires that the Yammer tenant for an organization is in Native Mode to detect potentially inappropriate text in private messages and public community conversations.
+Communication compliance requires that the Viva Engage tenant for an organization is in Native Mode to detect potentially inappropriate text in private messages and public community conversations.
 
-Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 article](/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](/yammer/configure-your-yammer-network/native-mode) article.
+Contoso IT administrators make sure they review the information in the [Overview of Viva Engage Native Mode in Microsoft 365 article](/viva/engage/configure-your-viva-engage-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva/engage/configure-your-viva-engage-network/native-mode) article.
 
 ### Setting up a group for in-scope users
 
