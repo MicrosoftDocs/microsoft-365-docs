@@ -232,7 +232,8 @@ After you create a label policy that assigns new sensitivity labels to users and
 
 There's no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption that specifies the users and permissions, there's a maximum of 500 labels per tenant supported with this configuration.
 
-However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label. You might also find that some applications can't display all your labels when too many are published to the same user.
+> [!NOTE]
+> As a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label. You might also find that some applications can't display all your labels when too many are published to the same user.
 
 ### Label policy priority (order matters)
 
