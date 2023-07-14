@@ -63,9 +63,8 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## July 2023
 
-- [Manage endpoint security policies in Defender for Endpoint is now in public preview](manage-security-policies.md)  <br> You can now configure security settings directly in Microsoft 365 Defender. 
- 
-
+- The eBPF-based sensor for Microsoft Defender for Endpoint on Linux is available for public preview on all supported Linux devices. For more information, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md).
+- [Manage endpoint security policies in Defender for Endpoint is now in public preview](manage-security-policies.md)  <br> You can now configure security settings directly in Microsoft 365 Defender.
 
 ## June 2023
 
@@ -75,7 +74,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## May 2023
 
-- Performance mode for Microsoft Defender Antivirus is now available for public preview. This new capability provides asynchronous scanning on a Dev Drive, and does not change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
+- Performance mode for Microsoft Defender Antivirus is now available for public preview. This new capability provides asynchronous scanning on a Dev Drive, and doesn't change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
 
 ## March 2023
 
