@@ -56,5 +56,7 @@ To add a tenant to your multi-tenant organization
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 
 
+## Related topics
 
+[Configure a multi-tenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph)
 

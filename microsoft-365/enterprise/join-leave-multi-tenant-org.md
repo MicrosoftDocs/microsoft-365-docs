@@ -1,5 +1,5 @@
 ---
-title: Manage multi-tenant orgs in Microsoft 365 (Preview)
+title: Join or leave multi-tenant orgs in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,7 +15,7 @@ f1.keywords:
 description: Learn how manage multi-tenant orgs in Microsoft 365.
 ---
 
-# Manage multi-tenant orgs in Microsoft 365 (Preview)
+# Join or leave multi-tenant orgs in Microsoft 365 (Preview)
 
 
 
@@ -48,9 +48,6 @@ If you already have a cross-tenant synchronization configuration, it remains unc
 
 ## Leave a multi-tenant organization
 
-To leave a multi-tenant organization
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
-1. On the **Organization profile** tab, select **Multitenant collaboration**.
+You can remove any member tenant, including your own. You can't remove owner tenants. Also, you can't remove the original creator tenant, even if it has been changed from owner to member. Removing a tenant must be done using Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
 
 

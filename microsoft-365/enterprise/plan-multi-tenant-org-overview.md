@@ -19,7 +19,13 @@ description: Learn about multi-tenant orgs in Microsoft 365.
 
 If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants.
 
+
+Multi-tenant organizations use [cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration). If you already have an organizational relationship configured in Azure AD with a tenant that you're adding to a multi-tenant organization, check the B2B collaboration settings to ensure the appropriate users and apps are allowed.
+
+
+
 Note: As part of the setup, to maximize the benefits of collaboration for users in a multitenant org environment, it is necessary to have a full mesh user synchronization, where users from all tenants are synced over. Without full mesh user sync, the user experience can become bifurcated, leading to limitations in multitenant org collaboration effectiveness.
+
 
 
 ## The new Microsoft Teams desktop client
