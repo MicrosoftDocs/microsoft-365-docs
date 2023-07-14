@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/29/2023
+ms.date: 07/14/2023
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -190,8 +190,8 @@ This example shows how to set up a single connector to create multiple policy in
    2. In the **Source column** list, select the column to use as the source. In the example CSV file, the source column is `SourceWorkload`, since it stores the values for the two separate workloads (Salesforce and Dropbox).
    3. In the **Related values in source column** field, enter the related values. For this example, enter 'Salesforce,Dropbox'. Don't include spaces between values.
 
-      > [!IMPORTANT]
-      > Make sure that the values you enter in the **Related values in source column** field match the values in the **Source column** list. The connector fails if the column values don't match.
+   > [!IMPORTANT]
+   > Make sure that the values you enter in the **Related values in source column** field match the values in the **Source column** list. The connector fails if the column values don't match.
 
    4. In the **Verify sample data and data type** section, review each field to make sure that the right data types have been assigned for each field. If a field will be used later as a threshold value, make sure that it has a Number data type. For example, in this example scenario, the `AlertCount` field is used as a threshold value and the data type is set appropriately to *Number*.
    5. Select **Next**.
