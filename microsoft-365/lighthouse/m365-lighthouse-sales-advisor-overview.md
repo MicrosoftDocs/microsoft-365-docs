@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: algreer
-ms.date: 06/30/2023
+ms.date: 07/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,7 +28,7 @@ Sales Advisor is a customer lifecycle management (CLM) experience that provides 
 
 To view Sales Advisor, select **Sales Advisor \> Opportunities** in the left navigation pane in Lighthouse.
 
-**IMPORTANT:** To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor](https://microsoft.sharepoint.com/teams/SMB9/Shared%20Documents/General/Documentation/LH%20+%20O%20Update%20July%202023/Get%20access%20to%20sales%20advisor.docx).
+**IMPORTANT:** To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
 
 ## Watch: What is Sales Advisor?
 
