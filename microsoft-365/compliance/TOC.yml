@@ -1294,7 +1294,9 @@
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-get-started.md
           - name: Get started with collecting files that match data loss prevention policies from devices (preview)
-            href: dlp-copy-matched-items-get-started.md  
+            href: dlp-copy-matched-items-get-started.md
+          - name: Get started with oversharing pop ups
+            href: dlp-osp-get-started.md    
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1353,8 +1355,8 @@
               href: retention-policies-sharepoint.md
             - name: Teams
               href: retention-policies-teams.md
-            - name: Yammer
-              href: retention-policies-yammer.md
+            - name: Viva Engage
+              href: retention-policies-viva-engage.md
             - name: Exchange
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion

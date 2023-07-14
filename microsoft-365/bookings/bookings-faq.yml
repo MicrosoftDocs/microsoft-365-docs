@@ -22,7 +22,7 @@ sections:
       - question: |
           What is Microsoft Bookings?
         answer: |
-          Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff's calendar, giving your customers' flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
+          Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff's calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams. Bookings also helps you manage day-to-day scheduling via the Bookings web app or in Teams. Bookings is designed to meet the needs of multiple parts of any organization.
 
       - question: |
           Is Bookings available for my subscription?
@@ -76,7 +76,7 @@ sections:
       - question: |
            Can I link a payment option to my Bookings?
         answer: |
-           No. The Microsoft-owned payment system is retired.
+           No, there's no payment support in Bookings.
            
       - question: |
           Is Bookings customizable?
@@ -163,7 +163,7 @@ sections:
       - question: |
           Can I delete a previously created Bookings calendar?
         answer: |
-          To delete a Bookings calendar, you must delete the associated mailbox in Exchange.
+          To delete a Bookings calendar, you must delete the associated mailbox in Exchange. See [Delete an Exchange mailbox](https://learn.microsoft.com/exchange/recipients/disconnected-mailboxes/disable-or-delete-mailboxes?view=exchserver-2019).
 
       - question: |
           If I create a calendar and someone else has access to Bookings, would they be able to see my calendar?
@@ -173,7 +173,7 @@ sections:
       - question: |
           Are video conferencing meetings integrated into the Bookings app?
         answer: |
-          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment, and in addition, easy join options are included in the event and in confirmation emails.
+          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
 
       - question: |
           How does scheduling policy work?
@@ -214,7 +214,7 @@ sections:
       - question: |
           Can I book classroom-style appointments that are 1: many instead of 1:1?
         answer: |
-          Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120).
+          Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://learn.microsoft.com/microsoft-365/bookings/manage-attendees-bookings?view=o365-worldwide).
           
       - question: |
           Can calendars remain unpublished (not public-facing) but still accessible to designated users?
@@ -241,7 +241,7 @@ sections:
       - question: |
           What reporting is available in Bookings?
         answer: |
-          All Bookings staff assigned to the Administrator role can download a tab-separated values (.TSV) file with all bookings made in the past 120 days. Bookings reports can be downloaded in .TSV form from the Home tab of the Bookings page. The Bookings API can also be used to collect this data for more customized and specific purposes.
+          All Bookings staff assigned to the Administrator role can download a tab-separated values (.TSV) file with all bookings made in the past 120 days. Bookings reports can be downloaded in .TSV form from the Home tab of the Bookings page. The Bookings API can also be used to collect this data for more customized and specific purposes. For more details see, [Reporting info for Bookings](https://learn.microsoft.com/microsoft-365/bookings/reporting-info?view=o365-worldwide).
 
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
@@ -339,9 +339,6 @@ sections:
           
           1. Sign in to Microsoft 365, and then select **Outlook** from the app launcher.
           
-             > [!div class="mx-imgBorder"]
-             > ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
-          
           1. At the top of the page, select **Share** \> **Calendar**.
           
              ![Image of Calendar sharing menu](../media/bookings-share-calendar.png)
@@ -381,7 +378,7 @@ sections:
         answer: |
           This is a transient error and typically occurs because of an unstable internet connection. These problems usually resolve themselves after a few minutes.
           
-          If you still see this error after an extended period of time or you're seeing it often, please contact support.
+          If you still see this error after an extended period of time or you're seeing it often, [contact support](https://support.microsoft.com/topic/contact-microsoft-office-support-fd6bb40e-75b7-6f43-d6f9-c13d10850e77).
           
 additionalContent: |
 

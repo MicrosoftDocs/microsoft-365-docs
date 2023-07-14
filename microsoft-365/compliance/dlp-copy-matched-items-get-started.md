@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 06/22/2023
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -49,7 +49,7 @@ Standard Microsoft Purview Data Loss Prevention (DLP) permissions are required. 
 
 ### Onboard devices
 
-Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+Before you can use copy matched items you have to onboard Windows 10/11 devices into Purview, see [Onboard Windows devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-devices-into-microsoft-365-overview).
 
 ### Setup Azure storage
 

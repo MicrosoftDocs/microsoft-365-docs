@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 07/07/2021
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -91,5 +91,7 @@ The Settings tab also includes the following options:
 
 ## Related content
 
+[Compare device compliance policy settings in Microsoft 365 Lighthouse](m365-lighthouse-compare-compliance-policies.md) (article)\
+[Overview of the Device health page in Microsoft 365 Lighthouse](m365-lighthouse-device-health-overview.md) (article)\
 [Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

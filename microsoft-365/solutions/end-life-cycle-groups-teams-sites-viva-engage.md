@@ -1,5 +1,5 @@
 ---
-title: "End of lifecycle options for groups, teams, and Yammer"
+title: "End of lifecycle options for groups, teams, and Viva Engage"
 ms.reviewer: mmclean
 ms.date: 08/12/2020
 ms.author: mikeplum
@@ -17,10 +17,10 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "End of lifecycle options for groups, teams, and Yammer."
+description: "End of lifecycle options for groups, teams, and Viva Engage."
 ---
 
-# End of lifecycle options for groups, teams, and Yammer
+# End of lifecycle options for groups, teams, and Viva Engage
 
 Microsoft 365 Groups and Microsoft Teams work with multiple connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team before deletion.
 
@@ -41,7 +41,7 @@ The following table outlines the services associated with groups and teams and k
 |Roadmap|Roadmaps|
 |SharePoint|Files, lists, Teams channel wiki data|
 |Stream|Videos|
-|Yammer|Conversations|
+|Viva Engage|Conversations|
 
 When deleting a group or team, most of the associated resources are also deleted. Exceptions include:
 
@@ -253,17 +253,17 @@ Because the video is retained in Stream when the group is deleted, the original 
 
 In scenarios where the video doesn't need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can [download it locally](/stream/portal-download-video).
 
-## Yammer
+## Viva Engage
 
-Unlike conversations in Microsoft Teams, Yammer offers both users and administrators options to move or export conversations.
+Unlike conversations in Microsoft Teams, Viva Engage offers both users and administrators options to move or export conversations.
 
 **Move conversations to another group or community**
 
-Conversations can be moved to another Yammer group by any user, not just owners or administrators. This is possible in both the [classic Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) and the [new Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) interfaces.
+Conversations can be moved to another Viva Engage group by any user, not just owners or administrators. This is possible in both the [classic Viva Engage](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) and the [new Viva Engage](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) interfaces.
 
 **Export network data**
 
-Yammer network administrators [export network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
+Viva Engage network administrators [export network data](/viva/engage/manage-security-and-compliance/export-viva-engage-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
 
 ## Related topics
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 07/10/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -83,7 +83,7 @@ Unlike simulation mode for automatically applying sensitivity labels:
 - Simulation mode is optional, and not required to complete before you turn on the policy. You can even turn on the policy while simulation is still running.
 - When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
 
-Other considerations for simulation mode for auto-apply retention policies:
+Other considerations for simulation mode for auto-apply retention label policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
@@ -92,7 +92,7 @@ Other considerations for simulation mode for auto-apply retention policies:
     - Because these scopes use dynamic queries that run daily and can take a few days to fully populate, wait and [confirm their membership](purview-adaptive-scopes.md#confirm-scope-membership) before you start simulation.
     - For the **Microsoft 365 Group mailboxes & sites** location, items stored in [AuxPrimary mailboxes](/powershell/module/exchange/get-mailboxlocation#-mailboxlocationtype) aren't supported.
 - You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
-- If you're using [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units): Currently, restricted administrators can't run simulation mode.
+- If you're using [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units): Currently, simulation mode doesn't support policies that are configured for selected administrative units. Policies with this configuration can be turned on, but if you want to first run them in simulation, select the full directory option.
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that isn't already labeled will be eligible for auto-applying retention labels.
 - Although auto-labeling for sensitive information types applies to emails sent and received rather than emails stored in mailboxes, simulation for Exchange locations runs against against emails stored in mailboxes. Using historical data lets you more quickly assess the effectiveness of your chosen sensitive information types and configuration.
 - For the **Microsoft 365 Group mailboxes & sites** and **OneDrive accounts** locations: Items that are stored in [arbitration mailboxes](/powershell/module/exchange/new-mailbox#-arbitration) aren't supported for simulation.
@@ -356,20 +356,23 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 #### Auto-apply labels to cloud attachments
 
-You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Yammer.
+> [!NOTE]
+> Support for cloud attachments that are shared in Viva Engage is in preview.
+
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves; Exchange, Teams, and Viva Engage.
 
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Yammer](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-yammer).
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. However, support for URL text links are also now gradually rolling out. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook), [Teams](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams), and [Viva Engage](/microsoft-365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-viva-engage).
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users aren't aware of the copy that is stored in the Preservation Hold library. The retention label isn't applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Yammer, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. For Viva Engage, cloud attachments shared with users in storylines, community posts, and Inbox messages are supported.
 
-Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Yammer aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
+Cloud attachments shared over meeting invites and apps other than Teams, Outlook, or Viva Engage aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
 
@@ -381,30 +384,30 @@ When you configure the locations for this option, you can select:
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
 - **OneDrive accounts** for shared files stored in users' OneDrive.
 
-You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Yammer.
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or messages from Teams and Viva Engage.
 
 > [!NOTE]
-> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Yammer.
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange, Teams, and Viva Engage.
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- Yammer must be in [native mode](/yammer/configure-your-yammer-network/overview-native-mode) to support cloud attachments.
+- Viva Engage must be in [native mode](/viva-engage/configure-your-viva-engage-network/overview-native-mode) to support cloud attachments.
 
-- If cloud attachments and links in a Teams or Yammer message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
+- If cloud attachments and links in a Teams or Viva Engage message are changed after the message is sent by editing the message, those changed cloud attachments and links aren't supported for retention.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments and URL text links. If these attachments were shared within 48 hours of the user added to the conversation, current copies of the attachments are auto-labeled for retention. Attachments shared before this time period aren't supported for newly added users.
 
-- Attachments and links shared outside Teams, Outlook, and Yammer aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
+- Attachments and links shared outside Teams, Outlook, and Viva Engage aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
 - Cloud attachments and links in encrypted emails or encrypted messages aren't supported.
 
-- Sharing an existing Yammer message with an attachment isn't supported.
+- Sharing an existing Viva Engage message with an attachment isn't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings.
     - Not supported for previous responses in the same thread, only the current message
     - Total limit of 25 attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
-    - Not supported beyond 5,000 characters in the initial email body or in Teams and Yammer messages
+    - Not supported beyond 5,000 characters in the initial email body or in Teams and Viva Engage messages
 
 - The following items aren't supported as attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.

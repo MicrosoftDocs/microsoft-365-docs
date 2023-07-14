@@ -59,6 +59,7 @@ See the following links to understand how you can determine current workload dat
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
 - Viva Pulse [Data Location](/viva/pulse/get-started/data-residency-for-viva-pulse)
 - Yammer [Data Location](m365-dr-workload-other.md#yammer)
+- Viva Engage [Data Location](m365-dr-workload-other.md#viva-engage)
 - Office for mobile [Data Location](m365-dr-workload-other.md#office-for-mobile)
 - OneNote Services [Data Location](m365-dr-workload-other.md#onenote-services)
 - Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#power-apps-for-microsoft-365)
