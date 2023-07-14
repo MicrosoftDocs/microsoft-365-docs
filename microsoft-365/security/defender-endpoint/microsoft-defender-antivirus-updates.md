@@ -96,7 +96,7 @@ All our updates contain
 ### June-2023 (Platform: 4.18.x.x | Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Release date:  **July 10, 2023 (Engine) / (Platform release is pending)**
+- Release date:  **July 10, 2023 (Engine)** / (*Platform release date is pending*)
 - Platform: **4.18.x.x** (*platform version number is pending*)
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
