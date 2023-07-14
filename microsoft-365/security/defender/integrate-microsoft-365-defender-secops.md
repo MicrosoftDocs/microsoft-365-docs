@@ -72,3 +72,4 @@ Use these steps to integrate Microsoft 365 Defender into your SOC.
 
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

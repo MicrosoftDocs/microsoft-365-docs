@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/03/2023
+ms.date: 07/11/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -123,6 +123,9 @@ Make sure that the Windows 10 devices that you plan on reporting in insider risk
 1. The device must be running Windows 10 x64 build 1809 or later and the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020 must be installed.
 2. The user account used to log into the Windows 10 device must be an active Azure AD account. The Windows 10 device may be [Azure AD](/azure/active-directory/devices/concept-azure-ad-join), Azure AD hybrid, joined, or registered.
 3. Install the Microsoft Edge browser on the endpoint device to detect actions for the cloud upload activity. See [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+> [!NOTE]
+> Endpoint DLP now supports virtualized environments (preview), which means that the insider risk management solution supports virtualized environments through endpoint DLP. [Learn more about support for virtualized environments in endpoint DLP](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
 
 ### Step 2: Onboard devices
 
