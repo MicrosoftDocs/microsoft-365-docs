@@ -42,7 +42,7 @@ User reporting of messages in Teams is made of two separate settings:
 
 - **In the Teams admin center**: On by default and controls whether users are able to report messages from Teams. When this setting is turned off, users can't report messages within Teams, so the corresponding setting in the Microsoft 365 Defender portal is irrelevant.
 
-- **In the Microsoft 365 Defender portal**: On by default for new tenants. For existing tenants, they need to enable it. If user reporting of messages is turned on in the Teams admin center, it also needs to be turned on the Defender portal for user reported messages to show up correctly.
+- **In the Microsoft 365 Defender portal**: On by default for new tenants. Existing tenants need to enable it. If user reporting of messages is turned on in the Teams admin center, it also needs to be turned on the Defender portal for user reported messages to show up correctly.
 
 ### Turn off or turn on user reporting in the Teams admin center
 
