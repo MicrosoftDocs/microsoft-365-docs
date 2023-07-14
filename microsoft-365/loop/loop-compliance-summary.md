@@ -32,41 +32,39 @@ Loop components created outside of the Loop app in other Microsoft 365 apps (suc
 
 Because Loop components are stored as files in OneDrive, there are many capabilities you're already familiar with that function just like any other file in OneDrive of SharePoint. Here are the notable differences from Office files in OneDrive that are **not available** yet for Loop components:
 
-* MIP
-* DLP
+* Sensitivity Labeling (Microsoft Information Protection) at the File-level [learn more](/microsoft-365/compliance/information-protection)
+* Data Loss Prevention (DLP) [learn more](/microsoft-365/compliance/dlp-learn-about-dlp)
 * Graph API to convert .loop file content into HTML
-* MCAS?
+* Conditional Access [learn more](/azure/active-directory/conditional-access/overview) 
 
 //TODO: add links to all the bullets
 
 ## Summary of compliance capabilities for content created in Loop workspaces
 
-For Loop app workspace content specifically, this article describes many of the benefits of this approach: [Introducing Syntex repository services: Microsoft 365 superpowers for your app](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/).
+Content created in a Loop workspace is stored in Syntex repository services. You can learn more about it here: [Introducing Syntex repository services: Microsoft 365 superpowers for your app](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/).
 
-The capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions here: [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
+Syntex repository services has many of the same compliance capabilities as the rest of SharePoint and OneDrive. However, the capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions here: [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
 
-* Intune Device Management Support
+* Intune Device Management Support [learn more](/mem/intune/remote-actions/device-management)
 * Third-party tools for discovery workflows and Graph API export
 * Full eDiscovery export using Purview
 * Tenant admin experience: Discovery of all Loop workspaces in Purview or SPO Tenant Admin center
 * Tenant admin experience: Restoring a deleted workspace or pages
-* Retention Policies, Retention Labels, and Preservation Hold
-* Legal Hold
-* Sensitivity Labeling (Microsoft Information Protection) at the File-level and Container-level
+* Retention Policies, Retention Labels, and Preservation Hold [learn more](/microsoft-365/compliance/retention-policies-sharepoint)
+* Legal Hold [learn more](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server)
+* Sensitivity Labeling (Microsoft Information Protection) at the File-level and Container-level [learn more](/microsoft-365/compliance/information-protection)
 * Multiple owners on a workspace
-* Data Loss Prevention (DLP)
-* Granular audit logs that describe all activity related to item/entity creation, access, alteration, and deletion
-* Stream audit log data to 1st and 3rd-party systems for ingestion and analysis
-* Alerting on unusual data movement or access patterns
-* Multi-Geo support learn more
-* MCAS?
-
-//TODO: add links to all the bullets
+* Data Loss Prevention (DLP) [learn more](/microsoft-365/compliance/dlp-learn-about-dlp)
+* Granular audit logs that describe all activity related to item/entity creation, access, alteration, and deletion [learn more]
+* Stream audit log data to 1st and 3rd-party systems for ingestion and analysis [learn more](/microsoft-365/compliance/audit-log-activities)
+* Alerting on unusual data movement or access patterns [learn more](/microsoft-365/compliance/alert-policies)
+* Multi-Geo support [learn more](/microsoft-365/enterprise/microsoft-365-multi-geo)
+* Conditional Access [learn more](/azure/active-directory/conditional-access/overview) 
 
 *This list of capabilities is not exhaustive*
 
 > [!NOTE]
-> The list of capabilities in this section applies to content created in Loop workspaces. It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web.
+> The list of capabilities in this section applies to content created in Loop workspaces (Syntex repository services). It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web (which are created in OneDrive).
 
 ## Related topics
 
