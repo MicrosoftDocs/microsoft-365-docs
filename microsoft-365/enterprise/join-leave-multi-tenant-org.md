@@ -1,5 +1,5 @@
 ---
-title: Join or leave multi-tenant orgs in Microsoft 365 (Preview)
+title: Join or leave a multi-tenant organization in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -12,10 +12,10 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn how manage multi-tenant orgs in Microsoft 365.
+description: Learn how join or leave a multi-tenant organization in Microsoft 365.
 ---
 
-# Join or leave multi-tenant orgs in Microsoft 365 (Preview)
+# Join or leave a multi-tenant organization in Microsoft 365 (Preview)
 
 
 
@@ -24,7 +24,7 @@ description: Learn how manage multi-tenant orgs in Microsoft 365.
 
 ## Join an existing multi-tenant organization
 
-To join an existing multi-tenant org in Microsoft 365
+To join an existing multi-tenant organization in Microsoft 365
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.

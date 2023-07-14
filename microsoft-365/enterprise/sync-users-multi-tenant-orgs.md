@@ -1,5 +1,5 @@
 ---
-title: Sync users in multi-tenant orgs in Microsoft 365 (Preview)
+title: Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -12,10 +12,10 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn how manage user sync in multi-tenant orgs in Microsoft 365.
+description: Learn how manage user sync in multi-tenant organizations in Microsoft 365.
 ---
 
-# Sync users in multi-tenant orgs in Microsoft 365 (Preview)
+# Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
 
 For users in your tenant to be able to collaborate in other tenants, you must synchronize the users to the other tenants.
 
@@ -36,9 +36,9 @@ Remove existing sync configurations for this tenant
 > [!NOTE]
 > The user synchronization settings in the Microsoft 365 admin center affect all tenants in your multi-tenant organization. If you want to change the synchronization settings for an individual organization, you can 
 
-## Set up initial user sync for a multi-tenant org
+## Set up initial user sync for a multi-tenant organization
 
-To sync identities to other tenants in a multi-tenant org
+To sync identities to other tenants in a multi-tenant organization
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
