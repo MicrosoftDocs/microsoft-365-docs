@@ -179,12 +179,12 @@
 
         - name: Multi-tenant collaboration
           items:
-            - name: Multi-tenant orgs overview
-              href: multi-tenant-org-overview.md
+            - name: Plan for multi-tenant orgs
+              href: plan-multi-tenant-org-overview.md
             - name: Set up a multi-tenant org
               href: set-up-multi-tenant-org.md
-            - name: Manage multi-tenant org settings
-              href: manage-multi-tenant-org-settings.md
+            - name: Join or leave a multi-tenant org
+              href: join-leave-multi-tenant-org.md
             - name: Sync users with other orgs
               href: sync-users-multi-tenant-orgs.md
 
