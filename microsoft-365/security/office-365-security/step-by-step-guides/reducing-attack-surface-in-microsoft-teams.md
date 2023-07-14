@@ -77,7 +77,7 @@ Users can store their files in potentially unsupported third party storage provi
 
 ## Disabling Third-party & custom apps
 
-Applications are a very useful part of Microsoft teams, but it's recommended to maintain a list of allowed apps rather than allowing all apps by default.
+Applications are a very useful part of Microsoft Teams, but it's recommended to maintain a list of allowed apps rather than allowing all apps by default.
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Teams apps** and then choose **Permission Policies**.
