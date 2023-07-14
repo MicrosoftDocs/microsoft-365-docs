@@ -110,14 +110,14 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
     
       :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
 
-    1. Select the **Assign licenses** link, as shown in the following screenshot:
+    1. Select the **Assign licenses** link.
 
       
       :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link." lightbox="images/assign-licenses-link.png":::
 
-       The following screen appears:
+      The following screen appears:
 
-       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+      :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
     1. Select **+ Assign licenses**.
     1. Enter the name or email address of the person to whom you want to assign this license.
