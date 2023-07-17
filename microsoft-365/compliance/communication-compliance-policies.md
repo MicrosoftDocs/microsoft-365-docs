@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/20/2023
+ms.date: 07/12/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -96,21 +96,6 @@ Before integrating communication compliance with insider risk management, you sh
 
 - **For organizations without an existing *Detect inappropriate text* policy**. The new *Risky user in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. In most cases, no further actions are needed.
 - **For organizations with an existing *Detect inappropriate text* policy**. The new *Risky user in messages - (date created)* policy will be automatically created by the insider risk management policy wizard. Although you'll have two communication compliance policies for potentially inappropriate text in messages, investigators will not see duplicate alerts for the same activity. Insider risk management investigators will only see alerts for the dedicated integration policy and communication compliance investigators will only see the alerts for the existing policy. If needed, you can edit the dedicated policy to change the in-scope users or individual policy conditions as applicable.
-
-## Policy health
-
-Communication compliance provides warnings and recommendations to keep your policies healthy. At the top of the **Policies** page, you'll see a summary that lists the total number of policy warnings and recommendations, as well as the total number of healthy policies. If a specific policy has a warning or recommendation(s), a link to the warning or recommendation(s) is listed in the **Policy health** column. Select the link to open the details pane for that warning or recommendation. The details pane automatically opens with the **Policy Health** tab selected so you can quickly review the warning or recommendation. 
-
-SCREENSHOT GOES HERE. CAN USE SCREENSHOT FROM LEARN PAGE.
-
-The **Policy Health** tab has two parts: the upper part of the tab shows general information about the policy (whether the policy is active, whether the policy is updated, and general tips); the lower part of the tab shows the specific warning or recommendation.  
-
-- **Warnings**: If you don't take action on a warning, the policy will stop working. For the policy health preview, there's one warning, related to a policy's [storage limit size](#storage-limit-notification).
-- **Recommendations**: Recommendations provide suggestions for optimizing policies. If you ignore a policy recommendation, the policy will continue to work. You can act on a recommendation as long as the policy is active and if it's not updating. For the preview, there are two recommendations:
-   - Turn on the [Filter email blasts setting](#filter-email-blasts). This recommendation applies only to existing policies. The email blast filters setting is on by default for new policies. If you choose to apply the recommendation, the filter email blasts setting will automatically be turned on for the policy. 
-   - Turn on the [Reduce blind spots] setting. This recommendation applies only to existing policies. The xxx setting is on by default for new policies. 
-   - Turn on the [Day x insights] setting. If you apply the recommendation, you can choose to apply the setting to all users or you can select specific users to bring into the scope of the policy. You can do this directly from the recommendation. 
-- **Healthy policies**: If there are no warnings or recommendations for a specific policy, the policy is considered healthy.
 
 ## Pause a policy
 
@@ -206,12 +191,9 @@ To manage policies approaching the storage and message limits, consider making a
 
 You can choose to select **All users** or to define specific users in a communication compliance policy. Selecting **All users** applies the policy to all users and all groups that any user is included in as a member. Defining specific users applies the policy to the defined users and any groups the defined users are included in as a member.
 
-> [!NOTE]
-> DUPLICATE NOTE HERE ABOUT BLIND SPOTS SETTING.
+### Direction
 
-### Communication direction
-
-By default, the **Communication direction** condition is displayed and can't be removed. Communication direction settings in a policy are chosen individually or together:
+By default, the **Direction is** condition is displayed and can't be removed. Communication direction settings in a policy are chosen individually or together:
 
 - **Inbound**: Detects communications sent **to** scoped users from external and internal senders, including other scoped users in the policy.
 - **Outbound**: Detects communications sent **from** scoped users to external and internal recipients, including other scoped users in the policy.
@@ -276,6 +258,28 @@ To identify and take action on messages containing inappropriate language conten
 > [!IMPORTANT]
 > Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature.
 
+### Optical character recognition (OCR)
+
+> [!NOTE]
+> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time.
+
+Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
+
+You can enable optical character recognition (OCR) in new policies from templates, custom policies, or update existing policies to expand support for processing embedded images and attachments. When enabled in a policy created from a policy template, automatic scanning is supported for embedded or attached images in email and Microsoft Teams chat messages. For images embedded in document files, OCR scanning isn't supported. For custom policies, one or more conditional settings associated with keywords, built-in classifiers, or sensitive info types must be configured in the policy to enable the selection of OCR scanning.
+
+Images from 50 KB to 4 MB in the following image formats are scanned and processed:
+
+- .jpg/.jpeg (joint photographic experts group)
+- .png (portable network graphics)
+- .bmp (bitmap)
+- .tiff (tag image file format)
+- .pdf (portable document format)
+
+> [!NOTE]
+> Scanning and extraction for embedded and attached .pdf images is currently supported only for email messages.
+
+When reviewing pending alerts for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
+
 ### Conditional settings
 
 The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg).
@@ -286,7 +290,9 @@ The following table explains more about each condition.
 |:-----|:-----|
 | **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). |
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about). |
-| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br> Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific emails address you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example newsletter@contoso.com). |
+| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br> Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific domains, you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all emails but want to exclude messages from a specific domain that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example 'contoso.com,wingtiptoys.com'). |
+| **Message is received from any of these external email addresses** <br><br> **Message is not received from any of these external email addresses**|Apply the policy to include or exclude messages received or not received from specific external email addresses (example someone@outlook.com).<br><br>Use this condition to monitor only messages that come from outside the organization (messages that cross the firewall). |
+| **Message is sent to any of these external email addresses** <br><br> **Message is not sent to any of these external email addresses**|Apply the policy to include or exclude messages sent or not sent to specific external email addresses (example someone@outlook.com).<br><br>Use this condition to monitor only messages that are sent outside the organization (messages that cross the firewall).|
 | **Message is sent to any of these domains** <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains in sent messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br>Each domain is applied separately; only one domain must apply for the policy to apply to the message. <br><br> If you want to exclude all emails sent to two specific domains, configure the **Message is not sent to any of these domains** condition with the two domains (example 'contoso.com,wingtiptoys.com'). |
 | **Message is classified with any of these labels** <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention).|
 | **Message contains any of these words** <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>- Remove all leading and trailing spaces.<br>- Add quotation marks before and after each keyword or key phrase.<br>- Separate each keyword or key phrase with a comma.<br>- Do not include spaces between items separated by a comma. <br><br>**Example:** "banker","insider trading","confidential 123"<br><br>Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|
@@ -320,28 +326,6 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 - **Message size is larger than**, with the value 2 MB
 - **Message contains none of these words**, with the keywords "Approved by Contoso financial team"
 
-### Optical character recognition (OCR)
-
-> [!NOTE]
-> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time.
-
-Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
-
-You can enable optical character recognition (OCR) in new policies from templates, custom policies, or update existing policies to expand support for processing embedded images and attachments. When enabled in a policy created from a policy template, automatic scanning is supported for embedded or attached images in email and Microsoft Teams chat messages. For images embedded in document files, OCR scanning isn't supported. For custom policies, one or more conditional settings associated with keywords, built-in classifiers, or sensitive info types must be configured in the policy to enable the selection of OCR scanning.
-
-Images from 50 KB to 4 MB in the following image formats are scanned and processed:
-
-- .jpg/.jpeg (joint photographic experts group)
-- .png (portable network graphics)
-- .bmp (bitmap)
-- .tiff (tag image file format)
-- .pdf (portable document format)
-
-> [!NOTE]
-> Scanning and extraction for embedded and attached .pdf images is currently supported only for email messages.
-
-When reviewing pending alerts for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
-
 ### Review percentage
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
@@ -352,8 +336,6 @@ Use the **Filter email blasts** setting to exclude messages sent from email blas
     
 > [!NOTE]
 > The list of senders is filtered before the content is analyzed so there might be senders that don't match the content conditions. In other words, there might be extra senders in the report. 
-
-This setting is on by default for new policies. If the **Filter email blasts setting** is off for existing policies, a recommendation is generated to turn the setting on. 
 
 ## Alert policies
 
