@@ -1,5 +1,5 @@
 ---
-title: Set up image tagging in Microsoft Syntex
+title: Set up and manage image tagging for Microsoft Syntex in the Microsoft 365 admin center
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set and configure image tagging in Microsoft Syntex.
 ---
 
-# Set up image tagging in Microsoft Syntex
+# Set up and manage image tagging for Microsoft Syntex in the Microsoft 365 admin center
 
 Before you can use image tagging in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
 
@@ -31,8 +31,7 @@ Before you can use image tagging in Syntex, you must first link an Azure subscri
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up image tagging in Syntex.  
 
-
-## Set up unstructured document processing
+## Set up image tagging
 
 After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging will be automatically set up and enabled for all SharePoint sites.
 
