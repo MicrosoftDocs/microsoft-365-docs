@@ -133,7 +133,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 

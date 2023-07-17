@@ -28,7 +28,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
-- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Viva Engage](retention-policies-viva-engage.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

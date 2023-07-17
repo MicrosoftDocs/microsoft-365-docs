@@ -1,11 +1,11 @@
 ---
-title: "Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview"
+title: "Onboard Windows devices into Microsoft 365 overview"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 07/06/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -20,10 +20,10 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
+description: "Onboard Windows devices into Microsoft 365"
 ---
 
-# Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+# Onboard Windows devices into Microsoft 365 overview
 
 **Applies to:**
 
@@ -75,8 +75,9 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 
 Make sure that the Windows devices that you need to onboard meet these requirements.
 
-1. Must be running Windows 10 x64 build 1809 or later or Windows 11.
-    1. See [April 11, 2023—KB5025221 (OS Builds 19042.2846, 19044.2846, and 19045.2846) - Microsoft Support](https://support.microsoft.com/en-us/topic/april-11-2023-kb5025221-os-builds-19042-2846-19044-2846-and-19045-2846-b00c3356-baac-4a41-8342-7f97ec83445a) for required minimum Windows Operating System builds.
+1. Must be running one of the following builds of Windows or Windows Server:
+    1.  Windows 10 x64 build 1809 or later or Windows 11. (See [April 11, 2023—KB5025221 (OS Builds 19042.2846, 19044.2846, and 19045.2846) - Microsoft Support](https://support.microsoft.com/en-us/topic/april-11-2023-kb5025221-os-builds-19042-2846-19044-2846-and-19045-2846-b00c3356-baac-4a41-8342-7f97ec83445a) for required minimum Windows Operating System builds.)
+    1. Windows Server 2019 OS: 1809 onwards or Windows Server 2022 OS: 21H2 onwards.
 
 1. Antimalware Client Version is 4.18.2110 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 

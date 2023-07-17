@@ -85,7 +85,7 @@ This model type is the best option for English documents in PDF or image files w
 
 When you create a freeform document processing model, use the **Freeform selection method** option.
 
-For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
+For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ### Structured document processing
 
@@ -97,7 +97,7 @@ This model type supports the widest range of languages and is trained to underst
 
 When you create a structured document processing model, use the **Layout method** option.
 
-For more information, see [Overview of structured document processing](form-processing-overview.md).
+For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ## Prebuilt models
 
