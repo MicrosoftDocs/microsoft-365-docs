@@ -60,9 +60,9 @@ This article provides instructions for how to sign up for Microsoft 365 Lighthou
 
 ## Next steps
 
-Lighthouse comes with both required and optional capabilities to help you configure Lighthouse portal security, for more information, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
+Lighthouse comes with both required and optional capabilities to help you configure Lighthouse portal security. For more information, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 
-To access the Sales Advisor feature in Lighthouse, you must set up additional roles in Partner Center. For more information, see [Get access to Sales Advisor](/microsoft-365/lighthouse/m365-lighthouse-get-access-to-sales-advisor.md).  
+To access the Sales Advisor feature in Lighthouse, you must set up additional roles in Partner Center. For more information, see [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).  
 
 ## Related content
 

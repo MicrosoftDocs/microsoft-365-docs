@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View opportunities in Sales Advisor in Microsoft 365 Lighthouse
 
-Sales Advisor provides actionable recommendations to manage your customer and grow your business. To understand what an opportunity is, see Understanding opportunities and data in Sales Advisor.
+Sales Advisor provides actionable recommendations to manage your customer and grow your business. To understand what an opportunity is, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 Each customer can have zero, one, or more opportunities. Only customers with one or more opportunities are populated into the opportunities table. Within each opportunity type, there will be only up to one opportunity per customer.
 
@@ -51,7 +51,7 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 1. In the left navigation pane in Lighthouse, select **Sales Advisor** \> **Opportunities**.
 2. Select the desired opportunity type you want to review.
 
-For a definition of each opportunity type, see the Opportunity Type section in Understanding opportunities and data in Sales Advisor.
+For a definition of each opportunity type, see the Opportunity Type section in [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Export opportunities out of Sales Advisor
 

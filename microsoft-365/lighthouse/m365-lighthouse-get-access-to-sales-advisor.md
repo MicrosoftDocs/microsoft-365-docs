@@ -53,13 +53,13 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 5. Assign **Report viewer** or **Executive report viewer** role using one of the two methods.
 
-- Select **Entire organization** if you want the user to have access to all locations listed plus any other new locations that will be added in the future
+- Select **Entire organization** if you want the user to have access to all locations listed plus any other new locations that will be added in the future.
 
 - Select **One or more locations listed below** and assign **Report viewer** or **Executive report viewer** from the dropdown in Report viewer roles column to grant access by location.
 
 ## Next steps
 
-Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in Lighthouse, select **Sales Advisor \> Opportunities**. To learn more about opportunities, see Understanding opportunities and data in Sales Advisor.
+Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in Lighthouse, select **Sales Advisor \> Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Related content
 

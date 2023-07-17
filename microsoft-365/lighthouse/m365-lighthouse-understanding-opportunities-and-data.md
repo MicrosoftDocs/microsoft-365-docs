@@ -61,7 +61,7 @@ The Opportunities page displays opportunities across all opportunity types, cust
 
 - **Opportunities overview** - a summary view that contains the number of total customer tenants and the number of opportunities by opportunity type.
 
-- **Prioritized opportunities** - a summary view that breaks down the number of high-propensity opportunities and medium-propensity opportunities by opportunity type
+- **Prioritized opportunities** - a summary view that breaks down the number of high-propensity opportunities and medium-propensity opportunities by opportunity type.
 
 - **Recommendation table** – contains Customer Tenant, Recommendation, Probability status, Opportunity type, Seats, Date Added, and Provide feedback. By default, the table is sorted to display the newest recommendation first. The recommendation table view displays each opportunity as a separate row.
 
@@ -75,9 +75,9 @@ The Opportunities page also includes the following options:
 
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
 
-## Opportunity Type
+## Opportunity Category
 
-There are three types of opportunities to cover the stages of a customer’s lifecycle – customer acquisition, customer retention, and customer growth. These types align with the three tabs on the Opportunities page.
+There are three categories of opportunities to cover the stages of a customer’s lifecycle – customer acquisition, customer retention, and customer growth. These types align with the three tabs on the Opportunities page.
 
 ### Customer acquisition
 
@@ -91,9 +91,9 @@ Opportunity type that is designed to get early warnings where direct engagement 
 
 Opportunity type that is designed to know which customers are ready for the next step in their digital transformation based on usage patterns and behaviors of similar customers. Partners can discover opportunities to grow your business by upgrading customers to higher-value subscriptions.
 
-### Models available by opportunity type 
+### Models available by opportunity type
 
-Below are the data models currently available in Sales Advisor as recommendations by opportunity type.
+Below are the data models currently available in Sales Advisor as recommendations by opportunity category.
 
 | Opportunity model     | Opportunity category | Based on     | SKUs/Products covered     |
 |--------------------------------------|----------------------|------------------|--------------|
@@ -123,7 +123,7 @@ The following list provides important terms and definitions used within Sales Ad
 | Customer usage information   | Tab within the Customer Recommendation flyout that displays how people are using Microsoft 365 services for all products owned. The graph shows usage per user, and the table shows the number of assigned users, active users, and trends. |
 | Customers with opportunities | Summary of customers that have one or more opportunities.  |
 | Opportunity                  | Opportunities are specific, actionable actions generated from Sales Advisor's propensity modeling. Each opportunity contains a recommendation for a particular customer, insights, suggested actions, resources, subscriptions, and usage data to guide the partner. |
-| Opportunity Category         | Type of opportunity. There are three opportunity types: Customer acquisition, Customer retention, and Customer growth. Indicates the general category of opportunities presented. |
+| Opportunity Category         | Type of opportunity. There are three opportunity categories: Customer acquisition, Customer retention, and Customer growth. Indicates the general category of opportunities presented. |
 | Opportunities by category    | Summary of opportunities across customer lifecycle stage (Customer acquisition, Customer retention, Customer growth).            |
 | Probability Status           | The probability that the prediction is correct, with possible values of High or Low. |
 | Product                      | Microsoft Product associated with the opportunity.    |
