@@ -19,7 +19,7 @@ description: Learn how to set and configure taxonomy tagging in Microsoft Syntex
 
 # Set up and manage taxonomy tagging in Microsoft Syntex
 
-An admin sets up taxonomy tagging for Microsoft Syntex in the Microsoft 365 admin center.
+The taxonomy tagging service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
