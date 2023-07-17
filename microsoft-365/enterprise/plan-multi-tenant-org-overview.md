@@ -12,12 +12,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn about multi-tenant organizations in Microsoft 365.
+description: Learn how to plan for multi-tenant organizations in Microsoft 365.
 ---
 
 # Plan for multi-tenant organizations in Microsoft 365 (Preview)
 
 If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multi-tenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when using Teams, meetings, and collaborating on files.
+
+The tenant that creates the multi-tenant organization is known as the *owner* while other tenants that join the multi-tenant organization are known as *members*. Once the global administrator in the owner tenant creates the multi-tenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multi-tenant organization.
 
 While you configure Microsoft 365 multi-tenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Azure AD. For details about how multi-tenant organizations work in Azure AD, see [What is a multi-tenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
 
@@ -81,4 +83,4 @@ To join an existing multi-tenant organization as a member tenant, see [Join or l
 
 ## Related topics
 
-
+[Configure a multi-tenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph)

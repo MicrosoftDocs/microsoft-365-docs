@@ -17,10 +17,20 @@ description: Learn how join or leave a multi-tenant organization in Microsoft 36
 
 # Join or leave a multi-tenant organization in Microsoft 365 (Preview)
 
+To join a multi-tenant organization, a global administrator in owner organization must first add your organization to the multi-tenant organization. Once they've done that, you can join the multi-tenant organization. You'll need to tenant ID of the owner organization in order to join.
 
+Once you've joined, you can leave a multi-tenant organization at any time.
 
+#### Related settings in Azure AD
 
+When you join an existing multi-tenant organization, the following settings are configured in Azure Active Directory:
 
+- A cross-tenant synchronization configuration is added with the name MTO_Sync_<TenantID>, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration. (If an organizational relationship already exists, the existing one is used.)
+- The cross-tenant inbound settings are set to allow users to sync into this tenant.
+- The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
+
+When you leave a multi-tenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD are not affected.
 
 ## Join an existing multi-tenant organization
 
@@ -35,19 +45,16 @@ To join an existing multi-tenant organization in Microsoft 365
 1. Select **Next**.
 1. Select **Done**.
 
-
-When you join an existing multi-tenant organization, the following settings are configured in Azure Active Directory:
-
-- A cross-tenant synchronization configuration is added with the name MTO_Sync_<TenantID>, but no sync jobs are created yet.
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration.
-- The cross-tenant inbound settings are set to allow users to sync into this tenant.
-- The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
-
-If you already have a cross-tenant synchronization configuration, it remains unchanged.
-
+The next step after you join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Sync users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Leave a multi-tenant organization
 
-You can remove any member tenant, including your own. You can't remove owner tenants. Also, you can't remove the original creator tenant, even if it has been changed from owner to member. Removing a tenant must be done using Microsoft Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
+You can remove any member tenant, including your own. You can't remove owner tenants. Also, you can't remove the original creator tenant, even if it has been changed from owner to member. 
+
+Removing a tenant must be done using Microsoft Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
 
 ## Related topics
+
+[Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
+
+[Overview: Cross-tenant access with Azure AD External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
