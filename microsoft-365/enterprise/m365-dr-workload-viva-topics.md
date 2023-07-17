@@ -31,7 +31,7 @@ Capability summary: Viva Topics uses Microsoft Artificial Intelligence technolog
 
 Required Conditions:
 
-1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Viva Topics subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
