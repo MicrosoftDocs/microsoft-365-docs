@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/20/2023
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -209,9 +209,14 @@ You have the option of including sensitive information types as part of your com
 - Custom information type
 
 > [!IMPORTANT]
-> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
+> Sensitive info types have two different ways of defining the max unique instance count parameters. To learn more, see [Create custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
 
-To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions).
+The communication compliance solution supports default sensitive information types as well as bundled named-entity sensitive information types, which are collections of sensitive information types. To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions). For information on supported bundled named-entity sensitive information types, see the following:
+
+- [All credentials](sit-defn-all-creds.md)
+- [All full names](sit-defn-all-full-names.md)
+- [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md)
+- [All Physical Addresses](sit-defn-all-physical-addresses.md)
 
 ### Custom keyword dictionaries
 
