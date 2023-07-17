@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 06/27/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,13 +47,16 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 - **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 90 days and lets them import their auditing data to a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 - **90-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), records are retained for 90 days, which means you can search for activities that occurred within the past three months.
 
+> [!IMPORTANT]
+> Starting October 2023, Classic Search will be retired in place of [New Search](audit-new-search.md), which includes enhancements such as faster search times, additional search options, ability to save searches, and more.
+
 ## Audit (Premium)
 
 Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value intelligent insights, and higher bandwidth access to the Office 365 Management Activity API.
 
 - **Audit log retention policies**. You can create customized audit log retention policies to retain audit records for longer periods of time up to one year (and up to 10 years for users with required add-on license). You can create a policy to retain audit records based the service where the audited activities occur, specific audited activities, or the user who performs an audited activity.
 - **Longer retention of audit records**. Azure Active Directory, Exchange, OneDrive, and SharePoint audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
-- **High-value, crucial Audit (Premium) events**. Audit records for intelligent insights can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These intelligent insights can help you investigate possible breaches and determine the scope of compromise.
+- **Audit (Premium) intelligent insights**. Audit records for intelligent insights can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These intelligent insights can help you investigate possible breaches and determine the scope of compromise.
 - **Higher bandwidth to the Office 365 Management Activity API**. Audit (Premium) provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API. Although all organizations (that have Audit (Standard) or Audit (Premium)) are initially allocated a baseline of 2,000 requests per minute, this limit will dynamically increase depending on an organization's seat count and their licensing subscription. This results in organizations with Audit (Premium) getting about twice the bandwidth as organizations with Audit (Standard).
 
 For more detailed information about Audit (Premium) features, see [Audit (Premium) in Microsoft 365](audit-premium.md).
@@ -74,14 +77,64 @@ The following table compares the key capabilities available in Audit (Standard) 
 |1-year audit log retention||![Supported.](../media/check-mark.png)|
 |10-year audit log retention <sup>2</sup>||![Supported](../media/check-mark.png)|
 |Audit log retention policies||![Supported](../media/check-mark.png)|
-|High-value, intelligent insights||![Supported](../media/check-mark.png)|
+|Intelligent insights||![Supported](../media/check-mark.png)|
 
 > [!NOTE]
 > <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add-on license to retain their audit records for 10 years.
 
-## Licensing requirements
+## Microsoft 365 services that support auditing
 
-The following sections identify the licensing requirements for Audit (Standard) and Audit (Premium). Audit (Standard) functionality is included with Audit (Premium).
+You can search the unified audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services, apps, and features that are supported by the unified audit log.
+
+|Microsoft 365 service or feature|Record types|
+|:-------------------------------|:-----------|
+|Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
+|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
+|Communication compliance|ComplianceSupervisionExchange|
+|Content explorer|LabelContentExplorer|
+|Data connectors|ComplianceConnector|
+|Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
+|Dynamics 365|CRM|
+|eDiscovery (Standard + Premium)|Discovery, AeD|
+|Encrypted message portal|OMEPortal|
+|Exact Data Match|MipExactDataMatch|
+|Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated|
+|Forms|MicrosoftForms|
+|Information barriers|InformationBarrierPolicyApplication|
+|Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
+|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
+|Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
+|Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
+|Microsoft Project for the web|ProjectAccessed, ProjectCreated, ProjectDeleted, ProjectTenantSettingsUpdated, ProjectUpdated, RoadmapAccessed,RoadmapCreated, RoadmapDeleted, RoadmapItemAccessed,RoadmapItemCreated,RoadmapItemDeleted, RoadmapItemUpdated, RoadmapTenantSettingsUpdated, RoadmapUpdated, TaskAccessed, TaskCreated,TaskDeleted, TaskUpdated|
+|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+|Microsoft Teams|MicrosoftTeams|
+|Microsoft To Do|MicrosoftToDo, MicrosoftToDoAudit|
+|MyAnalytics|MyAnalyticsSettings|
+|OneDrive for Business|OneDrive|
+|Power Apps|PowerAppsApp, PowerAppsPlan|
+|Power Automate|MicrosoftFlow|
+|Power BI|PowerBIAudit|
+|Quarantine|Quarantine|
+|Sensitive information types|DlpSensitiveInformationType|
+|Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+|SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation|
+|Stream|MicrosoftStream|
+|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
+|Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+|Viva Goals|VivaGoals|
+|Viva Insights|VivaInsights|
+|Yammer|Yammer|
+
+For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
+
+The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For a more complete list of auditing record types, see [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
+
+ For more information about using PowerShell to search the audit log, see:
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+- [Use a PowerShell script to search the audit log](audit-log-search-script.md)
+
+## Licensing requirements
 
 ### Audit (Standard)
 
@@ -97,17 +150,7 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Premium)
 
-- Microsoft 365 Enterprise E5 subscription
-- Microsoft 365 Enterprise E3 subscription + the Microsoft 365 E5 Compliance add-on
-- Microsoft 365 Enterprise E3 subscription + the Microsoft 365 E5 eDiscovery and Audit add-on
-- Microsoft 365 Education A5 subscription
-- Microsoft 365 Education A3 subscription + the Microsoft 365 A5 Compliance add-on
-- Microsoft 365 Education A3 subscription + the Microsoft 365 A5 eDiscovery and Audit add-on
-- Microsoft 365 Government G5 subscription
-- Microsoft 365 Government G3 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 Government G3 subscription + the Microsoft 365 G5 eDiscovery and Audit add-on
-- Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on
-- Office 365 Enterprise A5/E5 subscriptions
+Microsoft Purview Audit (Premium) capabilities are included with Microsoft Purview. The licensing requirements may vary even within capabilities, depending on configuration options. For licensing requirements, guidance, and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-audit-premium).
 
 ## Set up Microsoft Purview auditing solutions
 
