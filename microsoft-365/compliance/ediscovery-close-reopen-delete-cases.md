@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 03/27/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,7 +26,7 @@ This article describes how to close, reopen, delete, or upgrade a Microsoft Purv
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Upgrade a case to eDiscovery (Premium) (preview)
+## Upgrade a case to eDiscovery (Premium)
 
 After working with an existing eDiscovery (Standard) case, you may need the additional case functionality provided with eDiscovery (Premium) cases. This work may include the need for more robust collections and review set functionality.
 
