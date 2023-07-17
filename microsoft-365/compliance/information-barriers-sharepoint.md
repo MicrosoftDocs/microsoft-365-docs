@@ -320,7 +320,7 @@ Audit events are available in the Microsoft Purview compliance portal to help yo
 - Changed information barriers mode of site
 - Disabled information barriers for SharePoint and OneDrive
 
-For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](audit-log-search.md#microsoft-365-services-that-support-auditing).
+For more information about SharePoint segment auditing in Office 365, see [Search the audit log in the compliance portal](audit-solutions-overview.md#microsoft-365-services-that-support-auditing).
 
 ## Site creation and management by site owners
 

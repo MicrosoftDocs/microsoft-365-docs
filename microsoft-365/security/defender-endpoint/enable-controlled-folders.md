@@ -74,7 +74,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** \> **Create**.
+3. Select **Platform**, choose **Windows 10, Windows 11, and Windows Server**, and select the profile **Attack Surface Reduction rules** \> **Create**.
 
 4. Name the policy and add a description. Select **Next**.
 

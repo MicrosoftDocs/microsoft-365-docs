@@ -22,7 +22,7 @@ search.appverid:
 
 # Manage jobs in eDiscovery (Premium)
 
-## Jobs report (preview)
+## Jobs report
 
 eDiscovery (Premium) includes a jobs report tool that lists all jobs that count towards the jobs concurrency and daily limits in eDiscovery for a defined time period. eDiscovery administrators can access this report and can use this report to see the job activities across Content Search activities and eDiscovery (Standard and Premium) cases.  
 

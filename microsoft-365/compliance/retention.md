@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/08/2023
+ms.date: 06/24/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -69,7 +69,7 @@ When content has retention settings assigned to it, that content remains in its 
 
 - For Exchange mailboxes: The copy is retained in the **Recoverable Items** folder.
 
-- For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
+- For Teams and Viva Engage messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
 > Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint, OneDrive, and Microsoft 365 groups.
@@ -80,7 +80,7 @@ For more detailed information about how retention settings work for different wo
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
-- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Viva Engage](retention-policies-viva-engage.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
 ## Retention policies and retention labels
@@ -118,8 +118,8 @@ Retention policies can be applied to the following locations:
 - Teams channel messages (standard channels and [shared channels](/MicrosoftTeams/shared-channels))
 - Teams chats
 - Teams private channel messages
-- Yammer community messages
-- Yammer user messages
+- Viva Engage community messages
+- Viva Engage user messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
@@ -193,11 +193,10 @@ Retention labels can be published to different locations, depending on what the 
 | If the retention label is... | Then the label policy can be applied to... |
 |:-----|:-----|
 |Published to admins and end users  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
-|Auto-applied based on sensitive information types or trainable classifiers  |Exchange, SharePoint, OneDrive  |
-|Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
-|Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied based on sensitive information types, keywords or a query, or trainable classifiers  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups |
+|Auto-applied to cloud attachments |SharePoint, OneDrive, Microsoft 365 Groups |
 
-Exchange public folders, Skype, Teams and Yammer messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Viva Engage messages don't support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -207,8 +206,8 @@ As with sensitivity labels, an item such as an email or document can have only a
 
 - [Auto-apply retention label policy](apply-retention-labels-automatically.md)
 - [A Microsoft Syntex model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
-- [Default retention label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
-- [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+- [Default retention label for SharePoint or Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook)
+- [Outlook rules](create-apply-retention-labels.md#automatically-apply-a-retention-label-to-email-by-using-outlook-rules)
 - [Power Automate compliance action](/power-automate/overview-cloud) of **Apply a retention label on the item**
 
 If there are multiple auto-apply retention label policies that could apply a retention label, and the content meets the conditions of more than one of these policies, you can't control which retention label will be selected. However, in some cases, the retention label for the oldest auto-apply retention label policy (by date created) is selected. This happens only when the matching policies don't include multiple instances of the same type of condition (sensitive information types, specific keywords or searchable properties, or trainable classifiers).
@@ -223,11 +222,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
     
     - You use the Power Automate compliance action of **Apply a retention label on the item**. If the item already has a retention label applied, it will be replaced.
    
-    - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
-    
-        For more information about the label behavior when it's applied by using a default label:
-        - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Default label for Outlook: [Applying a default retention label to an Outlook folder](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+    - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed. For more information, see [Default labels for SharePoint and Outlook](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
 For retention labels that mark items as a record or a regulatory record:
 
@@ -261,7 +256,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
+|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Viva Engage|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
 |Automatically apply different retention settings at the end of the retention period | No | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers, cloud attachments| No | Yes |
@@ -410,7 +405,7 @@ Explanation for the four different principles:
 
     - [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [How retention works with Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
-    - [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [How retention works with Viva Engage](retention-policies-viva-engage.md#how-retention-works-with-viva-engage)
     - [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
 
     **Example for this first principle**: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they are created, and it also has a retention label applied that is configured to retain items five years after they are created.
@@ -600,7 +595,7 @@ If you currently use these older features, they will usually work side by side w
 
   - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
 
-  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+  - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#default-labels-for-sharepoint-and-outlook).
 
 - [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
     
