@@ -101,7 +101,7 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 
 ## Investigate DLP incidents in Microsoft 365 Defender portal
 
-Incidents for Microsoft Purview Data Loss Prevention (DLP) can be managed in the Microsoft 365 Defender portal. See, [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) for details. You can manage DLP incidents along with security incidents from **Incidents & alerts** > **Incidents** on the quick launch of the Microsoft 365 Defender portal.
+Incidents for Microsoft Purview Data Loss Prevention (DLP) can be managed in the Microsoft 365 Defender portal. See, [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/dlp-investigate-alerts-defender.md) for details. You can manage DLP incidents along with security incidents from **Incidents & alerts** > **Incidents** on the quick launch of the Microsoft 365 Defender portal.
 
 From this page, you can:
 

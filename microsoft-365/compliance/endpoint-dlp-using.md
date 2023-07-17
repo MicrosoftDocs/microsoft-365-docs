@@ -45,7 +45,7 @@ For full licensing details, see [Microsoft 365 licensing guidance for informatio
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
 > [!IMPORTANT]
-> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) before you start.
 
 ## Scenario 1: Create a policy from a template, audit only
 

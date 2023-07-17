@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/09/2023
+ms.date: 07/14/2023
 audience: itpro
 ms.collection:
 - highpri 
@@ -164,6 +164,22 @@ After reviewing the analytics insights, choose the insider risk policies and con
 
 Most insider risk management policies have prerequisites that must be configured for policy indicators to generate relevant activity alerts. Configure the appropriate prerequisites depending on the policies you plan to configure for your organization.
 
+### Configure Insider Risk Indicator (preview) connector
+
+You can extend insider risk management by importing detections for non-Microsoft (third-party) workloads. For example, you might want to extend your detections to include Salesforce and Dropbox activities and use them alongside the built-in detections provided by the insider risk management solution, which is focused on Microsoft services like SharePoint Online and Exchange Online.
+
+To bring your own detections to the insider risk management solution, you import pre-processed, aggregated detections from security information and event management (SIEM) solutions such as Microsoft Sentinel or Splunk. You do this by importing a sample file into the Insider Risk Indicators connector wizard. The connector wizard analyzes the sample file and configures the required schema.
+
+> [!NOTE]
+> Currently, you cannot import "raw" detection signals into insider risk management. You can only import pre-processed aggregations as a file.
+
+You can use a custom indicator as:
+
+- A trigger used to bring a user into the scope of a policy.
+- A policy indicator used to score the user for risk.
+
+See the [Insider Risk Indicator connector](import-insider-risk-indicators.md) article for step-by-step guidance to configure the Insider Risk Indicator connector for your organization. After you've configured the HR connector, return to these configuration steps.
+
 ### Configure Microsoft 365 HR connector
 
 Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination dates, last employment dates, performance improvement plan notifications, performance review actions, and job level change status. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization. If you configure more than one HR connector for your organization, insider risk management will automatically pull indicators from all HR connectors.
@@ -206,6 +222,9 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks by priority users
 
 See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+
+> [!NOTE]
+> Endpoint DLP now supports virtualized environments (preview), which means that the insider risk management solution supports virtualized environments through endpoint DLP. [Learn more about support for virtualized environments in endpoint DLP](endpoint-dlp-getting-started.md#endpoint-dlp-support-for-virtualized-environments-preview)
 
 ### Configure priority user groups
 
@@ -260,6 +279,9 @@ OCR settings do not apply to forensic evidence clips in insider risk management.
 ## Step 6 (required): Create an insider risk management policy
 
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before potentially risky activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
+
+> [!NOTE]
+> To create a custom trigger or indicator for a non-Microsoft workload, see [Custom indicators](insider-risk-management-settings-policy-indicators.md#custom-indicators).
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.

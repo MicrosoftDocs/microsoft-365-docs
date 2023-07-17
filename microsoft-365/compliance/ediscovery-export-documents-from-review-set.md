@@ -58,8 +58,8 @@ Use the following options to configure the export. Not all options are allowed f
 
     - *None*: This option doesn't export the family items or conversation items. It only exports the items that are selected or to all items in the review set list.
     - *Include associated family items*: This option includes associated family items. Family items are items that share the same [*FamilyId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. For example, a document that's attached to an email message shares the same *FamilyId* as the email message. If this option is selected, the email message and the document are exported in this example, even though the document might not be included in the list of review set items.
-    - *Include associated conversation items*: This option includes associated items that are in the same Teams or Yammer conversation. Conversation items are items that share the same [*ConversationId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. All messages, posts, and corresponding transcript file of a conversation share the same *ConversationId*.
-
+    - *Include associated conversation items*: This option includes associated items that are in the same Teams or Viva Engage conversation. Conversation items are items that share the same [*ConversationId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. All messages, posts, and corresponding transcript file of a conversation share the same *ConversationId*.
+    
     If any option other than *None* is selected, all items that share the same association ID are exported, even though some of those items might not be in the results of the current review set query. For more information about conversation items, see [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/ediscovery-teams-workflow#grouping).
 
 - **Output options**: Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account. The first two options enable direct download.
