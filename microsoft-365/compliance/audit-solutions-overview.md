@@ -56,7 +56,7 @@ Audit (Premium) builds on the capabilities of Audit (Standard) by providing audi
 
 - **Audit log retention policies**. You can create customized audit log retention policies to retain audit records for longer periods of time up to one year (and up to 10 years for users with required add-on license). You can create a policy to retain audit records based the service where the audited activities occur, specific audited activities, or the user who performs an audited activity.
 - **Longer retention of audit records**. Azure Active Directory, Exchange, OneDrive, and SharePoint audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
-- **High-value, crucial Audit (Premium) events**. Audit records for intelligent insights can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These intelligent insights can help you investigate possible breaches and determine the scope of compromise.
+- **Audit (Premium) intelligent insights**. Audit records for intelligent insights can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These intelligent insights can help you investigate possible breaches and determine the scope of compromise.
 - **Higher bandwidth to the Office 365 Management Activity API**. Audit (Premium) provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API. Although all organizations (that have Audit (Standard) or Audit (Premium)) are initially allocated a baseline of 2,000 requests per minute, this limit will dynamically increase depending on an organization's seat count and their licensing subscription. This results in organizations with Audit (Premium) getting about twice the bandwidth as organizations with Audit (Standard).
 
 For more detailed information about Audit (Premium) features, see [Audit (Premium) in Microsoft 365](audit-premium.md).
@@ -77,7 +77,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 |1-year audit log retention||![Supported.](../media/check-mark.png)|
 |10-year audit log retention <sup>2</sup>||![Supported](../media/check-mark.png)|
 |Audit log retention policies||![Supported](../media/check-mark.png)|
-|High-value, intelligent insights||![Supported](../media/check-mark.png)|
+|Intelligent insights||![Supported](../media/check-mark.png)|
 
 > [!NOTE]
 > <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add-on license to retain their audit records for 10 years.
