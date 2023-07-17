@@ -54,31 +54,31 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 
 ### Copy to clipboard behavior
 
-When you configure a rule to **Block** or **Block with override** when a user attempts the Copy to clipboard activity on a file that matches the policy is applied to, end users will see this behavior with these configurations:
+When you configure a rule to **Block** or **Block with override** when a user attempts the Copy to clipboard activity on a file that matches the policy is applied to, end users see this behavior with these configurations:
 
 - Word file 123 contains sensitive information that matches the copy to clipboard Block rule.
 - Excel file 123 contains sensitive information that matches the copy to clipboard Block rule.
 - PowerPoint file 123 contains sensitive information that matches the copy to clipboard Block rule.
 
-- Word file 789 doesn't contain sensitive informtion.
-- Excel file 789 doesn't contain sensitive informtion.
-- PowerPoint file 789 doesn't contain sensitive informtion.
+- Word file 789 doesn't contain sensitive information.
+- Excel file 789 doesn't contain sensitive information.
+- PowerPoint file 789 doesn't contain sensitive information.
 
-- Notepad file XYZ contains sensitive informtion that matches the copy to clipboard Block rule.
+- Notepad file XYZ contains sensitive information that matches the copy to clipboard Block rule.
 - Notepad file ABC doesn't contain sensitive information
 
 
 |Source |Destination  |Behavior  |
 |---------|---------|---------|
-|Word file 123/Excel file 123/PowerPoint file 123     ||Word file 123/Excel file 123/PowerPoint file 123            | copy and paste is allowed, in other words intra file copy and paste is allowed.        |
-|Word file 123/Excel File 123/PowerPoint file 123    |Word file 789/Excel file 789/PowerPoint file 789        |copy and paste is blocked, in other words inter file copy and paste is blocked.         |
-|Word file 123/Excel file 123/PowerPoint file 123     |Notepad file ABC         |copy and paste is blocked         |
+|Word file 123/Excel file 123/PowerPoint file 123     ||Word file 123/Excel file 123/PowerPoint file 123            | copy and paste are allowed, in other words intra file copy and paste is allowed.        |
+|Word file 123/Excel File 123/PowerPoint file 123    |Word file 789/Excel file 789/PowerPoint file 789        |copy and paste are blocked, in other words inter file copy and paste is blocked.         |
+|Word file 123/Excel file 123/PowerPoint file 123     |Notepad file ABC         |copy and paste are blocked         |
 |Notepad file XYZ | any | copy is blocked
-|Notepad file ABC | any | copy and paste is allowed|
+|Notepad file ABC | any | copy and paste are allowed|
 
 ## Best practice for endpoint DLP policies
 
-Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend the following:
+Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
 
 - Create a policy and scope it to endpoints and to that group of users.
 - Create a rule in the policy that detects the type of information that you want to protect. In this case, set **content contains** to *Sensitive information type**, and select **Credit Card**.
@@ -149,7 +149,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
+File types are a grouping of file formats. They're utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
 
 | File Type | Apps | Monitored file extensions |
 | --------- | ----- | --------------|
@@ -198,7 +198,7 @@ Onboarding and offboarding are handled via scripts that you download from the de
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will  show up automatically in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
+If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices show up automatically in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
