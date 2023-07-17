@@ -170,7 +170,7 @@
       items: 
         - name: Overview 
           href: taxonomy-tagging-overview.md
-        - name: Set up and manage 
+        - name: Admin setup 
           href: taxonomy-tagging-setup.md
         - name: Use taxonomy tagging 
           href: taxonomy-tagging.md
