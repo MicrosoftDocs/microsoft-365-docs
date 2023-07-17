@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/31/2023
+ms.date: 07/14/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -42,24 +42,21 @@ When you create a hold, you have the following options to scope the content that
 To create an eDiscovery hold that's associated with a eDiscovery (Standard) case:
   
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account with the appropriate eDiscovery permissions.
-
 2. In the left navigation pane, select **Show all**, and then select **eDiscovery > Core**.
-
 3. On the **eDiscovery (Standard)** page, select the name of the case that you want to create the hold in.
-
 4. On the **Home** page for the case, select the **Hold** tab.
-  
 5. On the **Hold** page, select **Create**.
-
 6. On the **Name your hold** wizard page, give the hold a name and add an optional description, and then select **Next**. The name of the hold must be unique in your organization.
-
 7. On the **Choose locations** wizard page, choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
     ![Choose the content locations to place on hold.](../media/eDiscoveryHoldLocations.png)
   
    1. **Exchange mailboxes**: Set the toggle to **On** and then select **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, Microsoft 365 group, and Viva Engage Group. For more information about the application data that is preserved when a mailbox is placed on hold, see [Content stored in mailboxes for eDiscovery](ediscovery-what-is-stored-in-a-mailbox.md).
 
-   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 group or a Viva Engage Group.
+   > [!IMPORTANT]
+   > When you select a distribution list to be placed on hold, the hold is placed on each of the member mailboxes in the distribution list when the policy is created. Subsequent changes in the distribution list do not change or update the holds or the policy.
+
+   2. **SharePoint sites**: Set the toggle to **On** and then select **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Microsoft 365 group or a Yammer Group.
   
    3. **Exchange public folders**: Set the toggle to **On** to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch off if you don't want to put a hold on public folders.
 
@@ -67,19 +64,16 @@ To create an eDiscovery hold that's associated with a eDiscovery (Standard) case
    > When adding Exchange mailboxes or SharePoint sites to a hold, you must explicitly add at least one content location to the hold. In other words, if you set the toggle to **On** for mailboxes or sites, you must select specific mailboxes or sites to add to the hold. Otherwise, the eDiscovery hold will be created but no mailboxes or sites will be added to the hold.
 
 8. When finished adding locations to the hold, select **Next**.
-
 9. To create a query-based hold using keywords or conditions, complete the following steps. To preserve all content in the specified content locations, select **Next**.
 
     ![Create a query-based hold with keyword and conditions.](../media/eDiscoveryHoldQuery.png)
   
     1. In the box under **Keywords**, type a query to preserve only the content that matches the query criteria. You can specify keywords, email message properties, or site properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**.
-
     2. Select **Add condition** to add one or more conditions to narrow the query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example, you can specify a date range so that email or site documents that were created within the date ranged are preserved. A condition is logically connected to the keyword query (specified in the **Keywords** box) and other conditions by the **AND** operator. That means items have to satisfy both the keyword query and the condition to be preserved.
 
     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
 10. After configuring a query-based hold, select **Next**.
-
 11. Review your settings (and edit them if necessary), and then select **Submit**.
 
 > [!NOTE]
@@ -89,7 +83,7 @@ To create an eDiscovery hold that's associated with a eDiscovery (Standard) case
 
 Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
 
-- A query-based hold initially preserves all documents in a site for a short period of time after they're deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if it doesn't match the criteria of the query-based hold. However, deleted documents that don't match a query-based hold will be removed by a timer job that processes the Preservation Hold library. The timer job runs periodically and compares all documents in the Preservation Hold library to your query-based eDiscovery holds (and other types of holds and retention policies). The timer job deletes the documents that don't match a query-based hold and preserves the documents that do.
+- A query-based hold initially preserves all documents in a site for a short period of time after they're deleted. That means when a document is deleted, it is moved to the Preservation Hold library even if it doesn't match the criteria of the query-based hold. However, deleted documents that don't match a query-based hold will be removed by a timer job that processes the Preservation Hold library. The timer job runs periodically and compares all documents in the Preservation Hold library to your query-based eDiscovery holds (and other types of holds and retention policies). The timer job deletes the documents that don't match a query-based hold and preserves the documents that do.
 - Query-based holds shouldn't be used to perform targeted preservation, like preserving documents in a specific folder or site or by using other location-based hold criteria. Doing so may have unintended results. We recommend using non-location based hold criteria such as keywords, date ranges, or other document properties to preserve site documents.
 
 ## Search locations on eDiscovery hold
@@ -142,7 +136,6 @@ Teams is built on Microsoft 365 groups. Therefore, placing Microsoft 365 groups 
 Keep the following things in mind when placing both Teams and Microsoft 365 groups on an eDiscovery hold:
 
 - As previously explained, to place content located in Teams and Microsoft 365 groups on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
-
 - Run the **Get-UnifiedGroup** cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view properties for Teams and Microsoft 365 groups. This is a good way to get the URL for the site that's associated with a Team or Microsoft 365 group. For example, the following command displays selected properties for a Microsoft 365 group named Senior Leadership Team:
 
     ```text
@@ -158,7 +151,6 @@ Keep the following things in mind when placing both Teams and Microsoft 365 grou
     > To run the **Get-UnifiedGroup** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role. 
   
 - When a user's mailbox is searched, any Team or Microsoft 365 group that the user is a member of won't be searched. Similarly, when you place a Team or Microsoft 365 group on eDiscovery hold, only the group mailbox and group site are placed on hold. The mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them to the eDiscovery hold. So if you have  to place a Team or Microsoft 365 group on hold for a legal reason, consider adding the mailboxes and OneDrive accounts of team or group members on the same hold.
-
 - To get a list of the members of a Team or Microsoft 365 group, you can view the properties on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
     ```powershell
@@ -182,8 +174,7 @@ After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscov
 - **Mailboxes:** A delay hold is placed on a mailbox the next time the Managed Folder Assistant processes the mailbox and detects that an eDiscovery hold was removed. Specifically, a delay hold is applied to a mailbox when the Managed Folder Assistant sets one of the following mailbox properties to **True**:
 
    - **DelayHoldApplied:** This property applies to email-related content (generated by people using Outlook and Outlook on the web) that's stored in a user's mailbox.
-
-   - **DelayReleaseHoldApplied:** This property applies to cloud-based content (generated by non-Outlook apps such as Microsoft Teams, Microsoft Forms, and Microsoft Viva Engage) that's stored in a user's mailbox. Cloud data generated by a Microsoft app is typically stored in a hidden folder in a user's mailbox.
+   - **DelayReleaseHoldApplied:** This property applies to cloud-based content (generated by non-Outlook apps such as Microsoft Teams, Microsoft Forms, and Microsoft Yammer) that's stored in a user's mailbox. Cloud data generated by a Microsoft app is typically stored in a hidden folder in a user's mailbox.
 
    When a delay hold is placed on the mailbox (when either of the previous properties is set to **True**), the mailbox is still considered to be on hold for an unlimited hold duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the DelayHoldApplied or DelayReleaseHoldApplied property to **False**) so that the hold is removed. After either of these properties are set to **False**, the corresponding items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
 

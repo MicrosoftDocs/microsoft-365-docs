@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 07/13/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -22,6 +22,8 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 ---
 
 # Adaptive scopes
+
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a [policy for retention](retention.md#retention-policies-and-retention-labels), you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 

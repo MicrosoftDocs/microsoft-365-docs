@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 07/12/2023
+ms.date: 07/14/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -167,7 +167,12 @@ To use the Office built-in labeling client with Office on the web for documents 
 
 When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is read and only if the user belongs to the same tenant, the label displays in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name displays on the status bar. 
 
-This implementation means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. 
+This implementation means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document.
+
+> [!NOTE]
+> Two exceptions where another organization can't apply their own sensitivity labels:
+> - Using Office for the web, external users connect to your SharePoint sites or OneDrive locations and don't see their sensitivity labels because the site is owned by another organization.
+> - Using co-authoring from desktop or mobile apps, external users [won't be able to apply their own sensitivity labels that are configured to apply encryption](https://support.microsoft.com/topic/you-can-t-apply-your-own-protected-sensitivity-label-to-this-file-3e592e7f-5498-481a-b930-c1259924e9ab).
 
 The same is true for email (and labeled calendar events) sent by Outlook. However, email clients other than Outlook might not retain the label metadata in the email headers. For example, users replying or forwarding from another organization that doesn't use Outlook will likely result in the original email label no longer visible to the original organization because the label metadata hasn't been retained. If that label applied encryption, the encryption persists to protect the contents.
 
