@@ -19,7 +19,7 @@ description: Learn how to set up and manage unstructured document processing in 
 
 # Set up and manage unstructured document processing in Microsoft Syntex
 
-Before you can use unstructured document processing in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+The unstructured document processing service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
