@@ -83,12 +83,14 @@
        - name: HR data 
          href: import-hr-data.md
        - name: ICE Chat
-         href: archive-icechat-data.md 
+         href: archive-icechat-data.md
+       - name: Insider Risk Indicators (preview)
+         href: import-insider-risk-indicators.md 
        - name: Instant Bloomberg
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
          href: archive-linkedin-data.md
-       - name: Physical badging data (preview)
+       - name: Physical badging data
          href: import-physical-badging-data.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
@@ -280,7 +282,7 @@
             href: insider-risk-management-settings-alerts.md
           - name: Priority user groups setting
             href: insider-risk-management-settings-priority-user-groups.md
-          - name: Priority physical assets setting (preview)
+          - name: Priority physical assets setting
             href: insider-risk-management-settings-priority-physical-assets.md
           - name: Power Automate flows setting (preview)
             href: insider-risk-management-settings-power-automate.md
@@ -1294,7 +1296,9 @@
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-get-started.md
           - name: Get started with collecting files that match data loss prevention policies from devices (preview)
-            href: dlp-copy-matched-items-get-started.md  
+            href: dlp-copy-matched-items-get-started.md
+          - name: Get started with oversharing pop ups
+            href: dlp-osp-get-started.md    
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1353,8 +1357,8 @@
               href: retention-policies-sharepoint.md
             - name: Teams
               href: retention-policies-teams.md
-            - name: Yammer
-              href: retention-policies-yammer.md
+            - name: Viva Engage
+              href: retention-policies-viva-engage.md
             - name: Exchange
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion

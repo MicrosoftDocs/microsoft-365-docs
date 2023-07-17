@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 6/19/2023
+ms.date: 7/12/2023
 search.appverid: 
   - MOE150
   - MET150
@@ -217,7 +217,6 @@ For more information about the recommended settings for Safe Attachments, see [S
      - **Safe Attachments unknown malware response**: Select **Block**.
      - **Quarantine policy**: The default value is blank, which means the default AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
-     - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 
 5. When you're finished, select **Submit**, and then select **Done**.
 

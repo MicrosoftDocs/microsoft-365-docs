@@ -60,7 +60,7 @@ You can control anonymous join for Teams meetings which allows anyone with a lin
 
 ## Communication compliance
 
-Communication compliance allows you to examine communications for offensive language, sensitive information, and information related to internal and regulatory standards. Chat communications, mailboxes, and Yammer messages can all be monitored, generating alerts. With administration tools, you can quickly identify and take action on messages with policy matches.
+Communication compliance allows you to examine communications for offensive language, sensitive information, and information related to internal and regulatory standards. Chat communications, mailboxes, and Viva Engage messages can all be monitored, generating alerts. With administration tools, you can quickly identify and take action on messages with policy matches.
 
 [Learn about communication compliance](../compliance/communication-compliance.md)
 
@@ -72,4 +72,4 @@ Communication compliance allows you to examine communications for offensive lang
 
 [Manage Microsoft Teams settings for your organization](/microsoftteams/enable-features-office-365)
 
-[Manage Yammer data compliance](/yammer/manage-security-and-compliance/manage-data-compliance)
+[Manage Viva Engage data compliance](/viva/engage/manage-security-and-compliance/manage-data-compliance)
