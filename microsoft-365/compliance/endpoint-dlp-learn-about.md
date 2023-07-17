@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/24/2023
+ms.date: 07/17/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -65,15 +65,14 @@ When you configure a rule to **Block** or **Block with override** when a user at
 - PowerPoint file 789 doesn't contain sensitive information.
 
 - Notepad file XYZ contains sensitive information that matches the copy to clipboard Block rule.
-- Notepad file ABC doesn't contain sensitive information
-
+- Notepad file ABC doesn't contain sensitive information.
 
 |Source |Destination  |Behavior  |
 |---------|---------|---------|
-|Word file 123/Excel file 123/PowerPoint file 123     ||Word file 123/Excel file 123/PowerPoint file 123            | copy and paste are allowed, in other words intra file copy and paste is allowed.        |
-|Word file 123/Excel File 123/PowerPoint file 123    |Word file 789/Excel file 789/PowerPoint file 789        |copy and paste are blocked, in other words inter file copy and paste is blocked.         |
-|Word file 123/Excel file 123/PowerPoint file 123     |Notepad file ABC         |copy and paste are blocked         |
-|Notepad file XYZ | any | copy is blocked
+|Word file 123/Excel file 123/PowerPoint file 123 |Word file 123/Excel file 123/PowerPoint file 123 |copy and paste are allowed, in other words intra file copy and paste is allowed. |
+|Word file 123/Excel File 123/PowerPoint file 123 |Word file 789/Excel file 789/PowerPoint file 789 |copy and paste are blocked, in other words inter file copy and paste is blocked. |
+|Word file 123/Excel file 123/PowerPoint file 123 |Notepad file ABC |copy and paste are blocked |
+|Notepad file XYZ | any | copy is blocked|
 |Notepad file ABC | any | copy and paste are allowed|
 
 ## Best practice for endpoint DLP policies
