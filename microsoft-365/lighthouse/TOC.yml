@@ -38,6 +38,10 @@
       href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
+    - name: Assign a baselines
+      href: m365-lighthouse-assign-a-baseline.md    
+    - name: Create a baselines
+      href: m365-lighthouse-create-a-baseline.md
     - name: Deploy a task manually
       href: m365-lighthouse-deploy-task-manually.md
     - name: Deploy a task automatically
