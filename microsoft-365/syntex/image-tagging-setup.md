@@ -19,7 +19,7 @@ description: Learn how to set and configure image tagging in Microsoft Syntex.
 
 # Set up and manage image tagging in Microsoft Syntex
 
-Before you can use image tagging in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+The image tagging service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
