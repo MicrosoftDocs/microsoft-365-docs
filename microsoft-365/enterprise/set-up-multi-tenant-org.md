@@ -19,11 +19,9 @@ description: Learn how to set up a multi-tenant org in Microsoft 365.
 
 You can set up a multi-tenant organization or add tenants to an existing one in the Microsoft 365 admin center.
 
-#### Related settings in Azure AD
-
 When each external tenant accepts the invitation to join the multi-tenant organization, the following settings are configured in Azure AD:
 
-- A cross-tenant synchronization configuration is added with the name *MTO_Sync_<TenantID>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
+- A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
 - An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration. (If an organizational relationship already exists, the existing one is used.)
 - The cross-tenant inbound settings are set to allow users to sync into this tenant.
 - The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
@@ -44,7 +42,7 @@ To set up a new multi-tenant org in Microsoft 365
 1. Copy the instructions for joining the multi-tenant org and email them to a global administrator in each of the orgs you invited.
 1. Select **Done**.
 
-The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Sync users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
+The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Synchronize users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Add a tenant to your multi-tenant organization
 
@@ -57,7 +55,7 @@ To add a tenant to your multi-tenant organization
 1. Copy the instructions for joining the multi-tenant org and email them to a global administrator in each of the orgs you invited.
 1. Select **Done**.
 
-The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Sync users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
+The next step after each external tenant accepts the invitation to join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Synchronize users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Related topics
 

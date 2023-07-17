@@ -17,26 +17,26 @@ description: Learn how manage user sync in multi-tenant organizations in Microso
 
 # Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
 
-For users in your tenant to be able to collaborate in other tenants, you must synchronize the users to the other tenants.
+For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
 
-We recommend that you [set up security groups in Azure AD](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners aren't synchronized.
+We recommend that you [set up security groups in Azure AD](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners of the group aren't synchronized.
 
 There are two ways to set up user synchronization:
 
-- Share users in a multi-tenant organization in the Microsoft 365 admin center (covered in this article)
+- Share your users with other tenants in a multi-tenant organization by using the Microsoft 365 admin center (covered in this article)
 - [Configure user synchronization in Azure AD](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
 
 Both methods use cross-tenant synchronization in Azure AD.
 
-If you want to synchronize the same users will all the other tenants in a multi-tenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Azure AD for you.
+If you want to synchronize the same users with all the other tenants in a multi-tenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Azure AD for you.
 
 If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Azure AD.
 
-While you can create multiple cross-tenant synchronization configurations for a single tenant, we recommend that you only use one for ease of administration.
+While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
-## Set up initial user sync for a multi-tenant organization
+## Set up initial user synchronization for a multi-tenant organization
 
-To sync identities to other tenants in a multi-tenant organization
+To synchronize identities to other tenants in a multi-tenant organization
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
@@ -45,7 +45,7 @@ To sync identities to other tenants in a multi-tenant organization
 1. Choose the security group that you created, and then select **Save**.
 1. Select **Yes** to confirm.
 
-This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronizations are named MTO_Sync_\<TenantID\>.
+This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronization configurations are named *MTO_Sync_\<TenantID\>*.
 
 ## Set up user synchronization with newly added tenants
 
@@ -72,7 +72,7 @@ To change which users are synchronized to other tenants
 1. Update the users and groups that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
-This procedure updates the MTO_Sync_\<TenantID\> synchronization configurations in Azure AD for each tenant in your multi-tenant organization.
+This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Azure AD for each tenant in your multi-tenant organization.
 
 ## Related topics
 

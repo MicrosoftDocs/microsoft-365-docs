@@ -21,7 +21,7 @@ If your organization manages multiple Microsoft 365 tenants, you can set up a mu
 
 The tenant that creates the multi-tenant organization is known as the *owner* while other tenants that join the multi-tenant organization are known as *members*. Once the global administrator in the owner tenant creates the multi-tenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multi-tenant organization.
 
-While you configure Microsoft 365 multi-tenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Azure AD. For details about how multi-tenant organizations work in Azure AD, see [What is a multi-tenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
+While you configure Microsoft 365 multi-tenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Azure Active Directory (Azure AD). For details about how multi-tenant organizations work in Azure AD, see [What is a multi-tenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
 
 ## User synchronization between tenants
 
@@ -43,12 +43,12 @@ We recommend that you only have a single configuration to synchronize users to a
 
 When you create a new multi-tenant organization or join an existing one, the other organizations in the multi-tenant organization are added to the [Azure AD cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) in your tenant.
 
-If you already have an organizational relationship configured in Azure AD with a tenant that you're adding to a multi-tenant organization, the existing configuration will be updated as follows:
+If you already have an organizational relationship configured in Azure AD with a tenant that you're adding to a multi-tenant organization, the existing configuration is updated as follows:
 
-- The inbound cross-tenant sync settings will be updated to allow users to sync into your tenant.
-- The outbound trust settings will be updated so users from this tenant don't have to accept the consent prompt the first time they access the other tenant using cross-tenant synchronization, B2B collaboration, or B2B direct connect.
+- The inbound cross-tenant sync settings are updated to allow users to sync into your tenant.
+- The outbound trust settings are updated so users from this tenant don't have to accept the consent prompt the first time they access the other tenant using cross-tenant synchronization, B2B collaboration, or B2B direct connect (shared channels).
 
-We recommend that you check the B2B collaboration settings to ensure the appropriate users and apps are allowed.
+We recommend that you check the B2B collaboration settings for pre-existing organizational relationships to ensure the appropriate users and apps are allowed.
 
 ## The new Microsoft Teams desktop client
 
