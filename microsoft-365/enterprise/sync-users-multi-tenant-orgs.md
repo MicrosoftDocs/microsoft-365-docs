@@ -37,6 +37,7 @@ While you can create multiple cross-tenant synchronization configurations for a 
 ## Set up initial user synchronization for a multi-tenant organization
 
 To synchronize identities to other tenants in a multi-tenant organization
+
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
@@ -52,6 +53,7 @@ This creates a cross-tenant synchronization configuration in Azure AD for each t
 If you add additional tenants to your multi-tenant organization, you need to set up user synchronization with those tenants.
 
 To set up user synchronization with newly added tenants
+
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
@@ -64,6 +66,7 @@ To set up user synchronization with newly added tenants
 You can change which users are synchronized to other tenants in your multi-tenant organization.
 
 To change which users are synchronized to other tenants
+
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.

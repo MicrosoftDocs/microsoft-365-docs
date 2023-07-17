@@ -35,6 +35,7 @@ When you leave a multi-tenant organization, the cross-tenant access settings and
 ## Join an existing multi-tenant organization
 
 To join an existing multi-tenant organization in Microsoft 365
+
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
