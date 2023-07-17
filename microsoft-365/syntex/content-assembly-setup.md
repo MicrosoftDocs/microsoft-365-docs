@@ -18,7 +18,7 @@ description: Learn to create set up and manage content assembly in Microsoft Syn
 
 # Set up and manage content assembly in Microsoft Syntex
 
-Before you can use content assembly in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+The content assembly service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
