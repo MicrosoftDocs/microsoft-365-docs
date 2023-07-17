@@ -119,7 +119,7 @@ New Microsoft Information Protection recommendations are now available as Secure
 
 - **Labeling**
   - Extend M365 sensitivity labeling to assets in Azure Purview data map
-  - Ensure Auto-labeling data classification policies are setup and used
+  - Ensure Auto-labeling data classification policies are set up and used
   - Publish M365 sensitivity label data classification policies
   - Create Data Loss Prevention (DLP) policies
 
