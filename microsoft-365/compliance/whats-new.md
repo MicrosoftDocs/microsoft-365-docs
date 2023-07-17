@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/12/2023
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -48,6 +48,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## June 2023
 
+### Compliance Manager
+
+- Update to clarify that some [automatically tested actions](compliance-manager-improvement-actions.md#testing-work) might show a status of "Out of scope" within the first 24 hours of setup with Microsoft Defender for Cloud monitoring.
+- Update to reflect that the link to [export an assessment report](compliance-manager-assessments.md#export-an-assessment-report) is now called "Export actions."
+
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Viva Engage are now in general availability.
@@ -62,6 +67,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins.
 - **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
 - Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits). 
+
+### Microsoft Priva
+
+- Updates to clarify that adding a collaborator automatically gives them a Privacy Management Contributors role, on [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review#collaboration-for-data-review) and [Set user permissions and assign roles](/privacy/priva/priva-permissions#learn-more-about-role-groups-and-roles).
 
 ### Sensitivity labels
 
