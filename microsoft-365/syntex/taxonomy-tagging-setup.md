@@ -19,7 +19,7 @@ description: Learn how to set and configure taxonomy tagging in Microsoft Syntex
 
 # Set up and manage taxonomy tagging in Microsoft Syntex
 
-Before you can use taxonomy tagging in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+An admin sets up taxonomy tagging for Microsoft Syntex in the Microsoft 365 admin center.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-Manage which SharePoint sites users can use taxonomy tagging to process files.
+Manage which SharePoint sites users can use for taxonomy tagging.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
