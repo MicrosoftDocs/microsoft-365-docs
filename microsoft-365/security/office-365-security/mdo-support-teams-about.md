@@ -37,7 +37,7 @@ With the increased use of collaboration tools like Microsoft Teams, the possibil
 
 - **Zero-Hour Auto Purge (ZAP)**: ZAP is an existing email protection feature that proactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered. For read or unread messages that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Currently, ZAP for Teams takes action on malware or high confidence phishing messages, not spam. For more information, see [Zero-hour auto purge in Microsoft Defender for Office 365](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
-- **Quarantine**: Admins are able to review quarantined messages that are identified as malicious by ZAP. Admins can also release messages that are determined to be safe. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+- **Quarantine**: Admins are able to review quarantined messages that are identified as malicious by ZAP. Admins can also release messages that are determined to be safe. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 - The **Teams Message Entity Panel** is one single place to store all of Teams message metadata that allows for immediate SecOps review. Any threat coming from chats, group or meeting chats, and other channels can be found in one place as soon as it's assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
@@ -65,5 +65,5 @@ Get-TeamsSecurityPreview
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
-- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams)
+- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages)
 - [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md)
