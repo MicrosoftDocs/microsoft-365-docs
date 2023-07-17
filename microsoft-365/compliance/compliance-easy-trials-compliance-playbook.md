@@ -395,11 +395,11 @@ Use the [eDiscovery (Premium) collection workflow](ediscovery-create-draft-colle
 
 **Conduct investigations**
 
-Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
+Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to intelligent insights that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
 ### Step 1: Apply the E5 license to each user for which you’d like to generate E5 events
 
-Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
+Audit (Premium) features such as the ability to log intelligent insights such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
 Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](audit-premium-setup.md#step-1-set-up-audit-premium-for-users).
 
