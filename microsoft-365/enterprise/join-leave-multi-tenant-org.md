@@ -58,3 +58,9 @@ Removing a tenant must be done using Microsoft Graph API. For details, see [Remo
 [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
 
 [Overview: Cross-tenant access with Azure AD External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
+
+[Plan for multi-tenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
+
+[Set up a multi-tenant org in Microsoft 365](set-up-multi-tenant-org.md)
+
+[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs)

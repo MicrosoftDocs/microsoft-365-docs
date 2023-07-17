@@ -19,19 +19,20 @@ description: Learn how manage user sync in multi-tenant organizations in Microso
 
 For users in your tenant to be able to collaborate in other tenants, you must synchronize the users to the other tenants.
 
-Set up outbound directory sync from your tenant to other active tenants in this multitenant organization. Once you Share users, the selected users will sync to all active tenants in this organization. Upon completion, users in other active tenants will be able to search and discover the user profiles shared by your tenant.
+We recommend that you [set up security groups in Azure AD](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners aren't synchronized.
 
-Select the users and groups of users you want to share with the active tenants in your multitenant organization. Note: Groups will not be synced to target, only the users within the groups will be synced. Also, changes to your outbound sync settings here will reflect in Azure Active Directory too.
+There are two ways to set up user synchronization:
 
+- Share users in a multi-tenant organization in the Microsoft 365 admin center (covered in this article)
+- [Configure user synchronization in Azure AD](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
 
+Both methods use cross-tenant synchronization in Azure AD.
 
-Set up a security group with the users you want to sync
-Members are sync'd, owners aren't
+If you want to synchronize the same users will all the other tenants in a multi-tenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Azure AD for you.
 
-Remove existing sync configurations for this tenant
+If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Azure AD.
 
-> [!NOTE]
-> The user synchronization settings in the Microsoft 365 admin center affect all tenants in your multi-tenant organization. If you want to change the synchronization settings for an individual organization, you can [configure synchronization in Azure AD](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
+While you can create multiple cross-tenant synchronization configurations for a single tenant, we recommend that you only use one for ease of administration.
 
 ## Set up initial user sync for a multi-tenant organization
 
@@ -44,7 +45,7 @@ To sync identities to other tenants in a multi-tenant organization
 1. Choose the security group that you created, and then select **Save**.
 1. Select **Yes** to confirm.
 
-This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronizations are named MTO_Sync_/<TenantID/>.
+This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronizations are named MTO_Sync_\<TenantID\>.
 
 ## Set up user synchronization with newly added tenants
 
@@ -71,8 +72,14 @@ To change which users are synchronized to other tenants
 1. Update the users and groups that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
-This procedure updates the MTO_Sync_<TenantID> synchronization configurations in Azure AD for each tenant in your multi-tenant organization.
+This procedure updates the MTO_Sync_\<TenantID\> synchronization configurations in Azure AD for each tenant in your multi-tenant organization.
 
 ## Related topics
+
+[Plan for multi-tenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
+
+[Set up a multi-tenant org in Microsoft 365](set-up-multi-tenant-org.md)
+
+[Join or leave a multi-tenant organization in Microsoft 365](join-leave-multi-tenant-org)
 
 [Scoping users or groups to be provisioned with scoping filters](/azure/active-directory/app-provisioning/define-conditional-rules-for-provisioning-user-accounts?pivots=cross-tenant-synchronization)
