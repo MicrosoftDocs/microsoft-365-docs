@@ -176,7 +176,7 @@
       items: 
         - name: Overview 
           href: image-tagging-overview.md
-        - name: Set up and configure 
+        - name: Admin setup 
           href: image-tagging-setup.md
         - name: Find and manage images
           href: image-tagging.md
