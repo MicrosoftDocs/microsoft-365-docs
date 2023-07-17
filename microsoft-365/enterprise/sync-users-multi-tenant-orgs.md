@@ -23,9 +23,6 @@ Set up outbound directory sync from your tenant to other active tenants in this 
 
 Select the users and groups of users you want to share with the active tenants in your multitenant organization. Note: Groups will not be synced to target, only the users within the groups will be synced. Also, changes to your outbound sync settings here will reflect in Azure Active Directory too.
 
-## Limit synchronized users to specific Azure AD attributes
-
-[Scoping users or groups to be provisioned with scoping filters](/azure/active-directory/app-provisioning/define-conditional-rules-for-provisioning-user-accounts?pivots=cross-tenant-synchronization)
 
 
 Set up a security group with the users you want to sync
@@ -34,7 +31,7 @@ Members are sync'd, owners aren't
 Remove existing sync configurations for this tenant
 
 > [!NOTE]
-> The user synchronization settings in the Microsoft 365 admin center affect all tenants in your multi-tenant organization. If you want to change the synchronization settings for an individual organization, you can 
+> The user synchronization settings in the Microsoft 365 admin center affect all tenants in your multi-tenant organization. If you want to change the synchronization settings for an individual organization, you can [configure synchronization in Azure AD](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
 
 ## Set up initial user sync for a multi-tenant organization
 
@@ -47,7 +44,7 @@ To sync identities to other tenants in a multi-tenant organization
 1. Choose the security group that you created, and then select **Save**.
 1. Select **Yes** to confirm.
 
-This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronizations are named MTO_Sync_<TenantID>.
+This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multi-tenant organization. The synchronizations are named MTO_Sync_/<TenantID/>.
 
 ## Set up user synchronization with newly added tenants
 
@@ -78,3 +75,4 @@ This procedure updates the MTO_Sync_<TenantID> synchronization configurations in
 
 ## Related topics
 
+[Scoping users or groups to be provisioned with scoping filters](/azure/active-directory/app-provisioning/define-conditional-rules-for-provisioning-user-accounts?pivots=cross-tenant-synchronization)
