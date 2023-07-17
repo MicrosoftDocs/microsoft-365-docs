@@ -30,7 +30,7 @@ Each customer can have zero, one, or more opportunities. Only customers with one
 
 ## Before you begin
 
-You must hold the Executive report viewer or Report viewer role in Partner Center to access Sales Advisor. To learn more, see
+You must hold the Executive report viewer or Report viewer role in Partner Center to access Sales Advisor. To learn more, see [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
 
 ## View opportunities
 
