@@ -446,7 +446,7 @@ A: See [Extend your trial](/microsoft-365/commerce/try-or-buy-microsoft-365#exte
 
 ### Q: What happens to my data after the trial expires?
 
-A: After your trial expires, yo have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
+A: After your trial expires, you have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
 
 ### Q: How many times can I use the Defender for Office 365 trial in my organization?
 
