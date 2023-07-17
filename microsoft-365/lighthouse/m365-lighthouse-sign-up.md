@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 07/14/2023
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -67,6 +67,6 @@ To access the Sales Advisor feature in Lighthouse, you must set up additional ro
 ## Related content
 
 [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
-[Overview of Sales Advisor](m365-lighthouse-sales-adivsor-overview.md) (article)\
+[Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Microsoft 365 Lighthouse and Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (article)

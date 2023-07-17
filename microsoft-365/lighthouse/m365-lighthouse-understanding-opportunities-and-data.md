@@ -143,4 +143,4 @@ Refer to the Managing opportunities with Sales Advisor section of [Frequently as
 ## Related content
 
 [View opportunities in Sales Advisor](m365-lighthouse-view-opportunities.md) (article)  
-[Overview of Sales Advisor](m365-lighthouse-sales-adivsor-overview.md) (article)
+[Overview of Sales Advisor](m365-lighthouse-sales-advisor-overview.md) (article)
