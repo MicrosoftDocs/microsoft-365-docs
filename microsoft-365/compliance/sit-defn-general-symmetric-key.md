@@ -78,7 +78,7 @@ SITs that have checksums use a unique calculation to check if the information is
 
 ## Definition
 
-This SIT is designed to match the security information that's used in [general authentication process.](/dotnet/api/system.security.cryptography.aes?view=net-5.0) 
+This SIT is designed to match the security information that's used in [general authentication process.](/dotnet/api/system.security.cryptography.aes?view=net-5.0&preserve-view=true) 
 
 It uses several primary resources:
 
