@@ -89,9 +89,9 @@ sections:
       - question: |
           How can I view my Reservation History
         answer: |
-          You can view your reservation history from the Reservation Confirmation page or the Manage my Reservation page.
+          You can view your reservation history from the **Reservation Confirmation** page or the **Manage my Reservation** page.
 
-          1. Go to License and select Manage Reservation.
+          1. Go to **License** and select **Manage Reservation**.
           2. Select the way you want your reservation history to be viewed by: Service, Licensing ID, or Reservation.
 
           >[!NOTE]
@@ -110,8 +110,8 @@ sections:
 
           Microsoft volume licensing has three categories of Online Services Reservations.
 
-          - Standard Reservations: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and a VLSC login credentials.
-          - License Reservation Only: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services which require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
+          - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and a VLSC login credentials.
+          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services which require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
           - A third category of Services are not configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
 
           >[!NOTE]
@@ -121,7 +121,7 @@ sections:
       - question: |
           Who is eligible to place Reservation orders
         answer: |
-          In the VLSC, only the Online Administrator and Online Service Manager with the Manage Reservation permission can create Reservation orders. (Note: Manage Reservation permissions must be specifically assigned to the OSM admin.)
+          In the VLSC, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. (Note: Manage Reservation permissions must be specifically assigned to the OSM admin.)
 
           A Microsoft Licensing Solution Partner can place a reservation on behalf of their customer if granted permission by the customer.
 
@@ -138,4 +138,4 @@ sections:
       - question: |
           Contact Assisted Support
         answer: |
-          VLSC customers may also Contact Us by phone or by Web Form. Microsoft will respond to Web Form submissions within 24 hours.
+          VLSC customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft will respond to Web Form submissions within 24 hours.
