@@ -185,3 +185,4 @@ With this learning path from Microsoft Learn, you can understand Microsoft 365 D
 - [What's new in Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
