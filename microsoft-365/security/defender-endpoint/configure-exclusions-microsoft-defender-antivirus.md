@@ -108,11 +108,11 @@ Keep the following points in mind when you're defining exclusions:
 
 ## Audit antivirus exclusions on Exchange systems
 
-Microsoft Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange (see [Running Windows antivirus software on Exchange servers](/exchange/antispam-and-antimalware/windows-antivirus-software)).  It's highly recommended to install these updates and make sure that AMSI is working properly. using the guidance provided by the Exchange Team as this integration allows the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
+Microsoft Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange (see [Running Windows antivirus software on Exchange servers](/exchange/antispam-and-antimalware/windows-antivirus-software)). It's highly recommended to install these updates and make sure that AMSI is working properly. See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).  
 
-Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing AV exclusions on Exchange systems and assessing if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
+Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing Microsoft Defender Antivirus exclusions on Exchange systems and assessing whether exclusions can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Intune.
 
-To audit AV exclusions on an Exchange Server running Defender Antivirus, run the **Get-MpPreference** command from an elevated PowerShell prompt.
+To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt.
 
 If exclusions can't be removed for the Exchange processes and folders, running a quick scan in Microsoft Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
