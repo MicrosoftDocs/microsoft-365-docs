@@ -174,3 +174,4 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

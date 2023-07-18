@@ -786,3 +786,4 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### Known issues
 
 - When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
