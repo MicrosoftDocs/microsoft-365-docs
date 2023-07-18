@@ -67,3 +67,4 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -179,3 +179,4 @@ The following downloadable spreadsheet lists the services and their associated U
 ## Next step
 
 - Continue to [Step 2 - Assign roles and permissions](prepare-deployment.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

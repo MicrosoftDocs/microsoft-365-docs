@@ -115,3 +115,4 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
