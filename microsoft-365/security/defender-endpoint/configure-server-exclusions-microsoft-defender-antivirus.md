@@ -368,27 +368,18 @@ For more information and allowed parameters, see:
 
 If necessary, you can add or remove custom exclusions. To do that, see the following articles:
 
+- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
-## See also
+ ## See also
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
-- [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
-- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Defender for Endpoint on Android features](android-configure.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
