@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/12/2023
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -48,6 +48,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## June 2023
 
+### Compliance Manager
+
+- Update to clarify that some [automatically tested actions](compliance-manager-improvement-actions.md#testing-work) might show a status of "Out of scope" within the first 24 hours of setup with Microsoft Defender for Cloud monitoring.
+- Update to reflect that the link to [export an assessment report](compliance-manager-assessments.md#export-an-assessment-report) is now called "Export actions."
+
 ### Data lifecycle management and records management
 
 - **General availability (GA)**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that are shared via Viva Engage are now in general availability.
@@ -62,6 +67,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins.
 - **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
 - Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits). 
+
+### Microsoft Priva
+
+- Updates to clarify that adding a collaborator automatically gives them a Privacy Management Contributors role, on [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review#collaboration-for-data-review) and [Set user permissions and assign roles](/privacy/priva/priva-permissions#learn-more-about-role-groups-and-roles).
 
 ### Sensitivity labels
 
@@ -83,7 +92,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Audit
 
 - Updates for audit log support for [Microsoft Project for the web](/microsoft-365/compliance/audit-log-activities#microsoft-project-for-the-web-activities), [Microsoft To Do](/microsoft-365/compliance/audit-log-activities#microsoft-to-do-activities),and [Microsoft Defender Experts](/microsoft-365/compliance/audit-log-activities#microsoft-defender-experts-activities) activities.
-- Updates to clarify [audit log rentention policies](/microsoft-365/compliance/audit-log-retention-policies) and duration options.
+- Updates to clarify [audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies) and duration options.
 
 ### Compliance Manager
 
@@ -153,7 +162,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Viva Engage.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention
