@@ -60,3 +60,4 @@ For more information about cloud discovery, see [Working with discovered apps](/
 ## Related topic
 
 - [Configure Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-config.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

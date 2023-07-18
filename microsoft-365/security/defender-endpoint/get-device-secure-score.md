@@ -96,3 +96,4 @@ Here is an example of the response.
 ## See also
 
 - [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

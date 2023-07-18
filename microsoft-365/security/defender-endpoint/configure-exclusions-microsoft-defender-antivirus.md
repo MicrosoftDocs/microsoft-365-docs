@@ -124,3 +124,4 @@ If exclusions can't be removed for the Exchange processes and folders, keep in m
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md)
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

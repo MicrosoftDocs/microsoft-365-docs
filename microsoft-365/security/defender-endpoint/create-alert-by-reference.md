@@ -122,3 +122,4 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
     "category": "Exploit"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

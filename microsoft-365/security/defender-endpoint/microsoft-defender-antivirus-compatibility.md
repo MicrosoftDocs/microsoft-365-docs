@@ -273,3 +273,4 @@ You might also use [limited periodic scanning](limited-periodic-scanning-microso
 - [Microsoft Defender Antivirus on Windows clients](microsoft-defender-antivirus-in-windows-10.md)
 - [EDR in block mode](edr-in-block-mode.md)
 - [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

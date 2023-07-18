@@ -162,3 +162,4 @@ To learn more, see [Device inventory](machines-view-overview.md).
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

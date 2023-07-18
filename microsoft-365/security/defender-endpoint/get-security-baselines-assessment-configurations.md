@@ -128,3 +128,4 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
 
 - [Export security baselines assessment](export-security-baseline-assessment.md)
 - [Get security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
