@@ -1,5 +1,5 @@
 ---
-title: Set up exclusions for Microsoft Defender Antivirus scans
+title: Custom exclusions for Microsoft Defender Antivirus
 description: You can exclude files (including files modified by specified processes) and folders from being scanned by Microsoft Defender Antivirus. Validate your exclusions with PowerShell.
 keywords:
 ms.service: microsoft-365-security
@@ -21,7 +21,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Configure and validate exclusions for Microsoft Defender Antivirus scans
+# Custom exclusions for Microsoft Defender Antivirus
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -31,12 +31,50 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-You can exclude certain files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. Such exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, when necessary, you can exclude certain files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as *custom exclusions*. 
+
+Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
 > [!TIP]
 > For a detailed overview of suppressions, submissions, and exclusions across Microsoft Defender Antivirus and Defender for Endpoint, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ## Configure and validate exclusions
+
+If you're using Microsoft Intune to manage your 
+
+#### Use Intune to manage antivirus exclusions (for existing policies)
+
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
+
+2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
+
+3. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
+
+4. Choose **Review + save**, and then choose **Save**.
+
+#### Use Intune to create a new antivirus policy with exclusions
+
+1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
+
+2. Select a platform (such as **Windows 10, Windows 11, and Windows Server**).
+
+3. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
+
+4. On the **Create profile** step, specify a name and description for the profile, and then choose **Next**.
+
+5. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
+
+   - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Each file type in the list must be separated by a `|`. For example, `lib|obj`. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+   - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Each path in the list must be separated by a `|`. For example, `C:\Example|C:\Example1`. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+   - **Excluded Processes** are exclusions for files that are opened by certain processes. Each file type must be separated by a `|`. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions are not for the actual processes. To exclude processes, you can use file and folder exclusions. See [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md).
+
+6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
+
+7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+
+8. On the **Review + create** tab, review the settings, and then choose **Create**.
+
+
 
 To configure and validate exclusions, see the following:
 
