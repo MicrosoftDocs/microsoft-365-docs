@@ -1,5 +1,5 @@
 ---
-title: Custom exclusions for Microsoft Defender Antivirus
+title: Configure custom exclusions for Microsoft Defender Antivirus
 description: You can exclude files (including files modified by specified processes) and folders from being scanned by Microsoft Defender Antivirus. Validate your exclusions with PowerShell.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Custom exclusions for Microsoft Defender Antivirus
+# Configure custom exclusions for Microsoft Defender Antivirus
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
