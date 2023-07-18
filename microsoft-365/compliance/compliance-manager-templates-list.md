@@ -95,7 +95,6 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - CIS Microsoft 365 Foundation Level 1 and 2
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5
-- Corporate Sustainability Reporting Directive (CSRD) 
 - FINRA Cybersecurity Checklist  
 - ITU X.1052 Information Security Management Framework  
 - Joint Commission Information Management Standard  
@@ -330,7 +329,8 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - Bosnia and Herzegovina Law on the Protection of Personal Data
 - Botswana - Data Protection Act  
 - Bulgaria Law for Protection of Personal Data 2002  
-- Central Bank of Kuwait Cybersecurity Framework  
+- Central Bank of Kuwait Cybersecurity Framework
+- Corporate Sustainability Reporting Directive (CSRD) 
 - Cyprus The Processing of Personal Data Law  
 - Czech - Act No. 110/2019 Coll. on Personal Data Processing - 2019  
 - Czech - On Cyber Security and Change of Related Acts (Act on Cyber Security) - Act No. 181  
