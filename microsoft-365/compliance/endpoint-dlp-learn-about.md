@@ -71,6 +71,7 @@ When you configure a rule to **Block** or **Block with override** when a user at
 |---------|---------|---------|
 |Word file 123/Excel file 123/PowerPoint file 123 |Word file 123/Excel file 123/PowerPoint file 123 |copy and paste are allowed, in other words intra file copy and paste is allowed. |
 |Word file 123/Excel File 123/PowerPoint file 123 |Word file 789/Excel file 789/PowerPoint file 789 |copy and paste are blocked, in other words inter file copy and paste is blocked. |
+|Word file 789/Excel file 789/PowerPoint file 789 |Word file 123/Excel File 123/PowerPoint file 123 |copy and paste are allowed|
 |Word file 123/Excel file 123/PowerPoint file 123 |Notepad file ABC |copy and paste are blocked |
 |Notepad file XYZ | any | copy is blocked|
 |Notepad file ABC | any | copy and paste are allowed|
