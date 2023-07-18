@@ -50,7 +50,7 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 #### Manage antivirus exclusions in Intune (for existing policies)
 
-1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#crate-a-new-antivirus-policy-with-exclusions-in-intune)).
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [Create a new antivirus policy with exclusions in Intune](#create-a-new-antivirus-policy-with-exclusions-in-intune).
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -112,7 +112,7 @@ Microsoft Exchange has supported integration with the Antimalware Scan Interface
 
 Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing Microsoft Defender Antivirus exclusions on Exchange systems and assessing whether exclusions can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Intune.
 
-To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt. (See [Get-MpPreference](/powershell/module/defender/get-mppreference?view=windowsserver2022-ps).)
+To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt. (See [Get-MpPreference](/powershell/module/defender/get-mppreference).)
 
 If exclusions can't be removed for the Exchange processes and folders, keep in mind that running a quick scan in Microsoft Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
