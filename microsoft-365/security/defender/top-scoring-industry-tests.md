@@ -121,3 +121,4 @@ The capabilities within Microsoft Defender for Endpoint provide [additional laye
 [Learn more about Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](/windows/security/threat-protection/microsoft-defender-atp/preview).
 
 [Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](m365d-enable.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

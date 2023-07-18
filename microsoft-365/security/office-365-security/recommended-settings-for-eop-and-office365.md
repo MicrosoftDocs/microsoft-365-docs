@@ -20,7 +20,7 @@ ms.collection:
 description: What are best practices for Exchange Online Protection (EOP) and Defender for Office 365 security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Defender for Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/5/2023
+ms.date: 7/12/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -312,8 +312,7 @@ Users can't release their own messages that were quarantined as malware by Safe 
 |---|:---:|:---:|:---:|:---:|---|
 |**Safe Attachments unknown malware response** (_Enable_ and _Action_)|**Off** (`-Enable $false` and `-Action Block`)|**Block** (`-Enable $true` and `-Action Block`)|**Block** (`-Enable $true` and `-Action Block`)|**Block** (`-Enable $true` and `-Action Block`)|When the _Enable_ parameter is $false, the value of the _Action_ parameter doesn't matter.|
 |**Quarantine policy** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy||
-|**Redirect attachment with detected attachments** : **Enable redirect** (_Redirect_ and _RedirectAddress_)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Selected and specify an email address. (`$true` and \<email address\>)|Selected and specify an email address. (`$true` and \<email address\>)|Redirect messages to a security admin for review. <br><br> **Note**: This setting isn't configured in the **Standard**, **Strict**, or **Built-in protection** preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in new Safe Attachments policies that you create.|
-|**Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)** (_ActionOnError_)|Selected (`$true`)|Selected (`$true`)|Selected (`$true`)|Selected (`$true`)||
+|**Redirect attachment with detected attachments** : **Enable redirect** (_Redirect_ and _RedirectAddress_)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Not selected and no email address specified. (`-Redirect $false` and _RedirectAddress_ is blank)|Redirection of messages is available only when the **Safe Attachments unknown malware response** value is **Monitor** (`-Enable $true` and `-Action Allow`).|
 
 ### Safe Links policy settings
 

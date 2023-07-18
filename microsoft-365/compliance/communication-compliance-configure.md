@@ -32,7 +32,7 @@ search.appverid:
 > [!IMPORTANT]
 > Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance (for example, SEC or FINRA) and business conduct violations such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
-Use communication compliance policies to identify user communications for analysis by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect potentially inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
+Use communication compliance policies to identify user communications for analysis by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect potentially inappropriate content in Microsoft Teams, Exchange Online, and Viva Engage communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -215,14 +215,14 @@ For more information about setting up groups, see:
 - [Create and manage distribution groups](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Overview of Microsoft 365 Groups](/office365/admin/create-groups/office-365-groups)
 
-## Step 4 (optional): Verify your Yammer tenant is in Native Mode
+## Step 4 (optional): Verify your Viva Engage tenant is in Native Mode
 
-In Native Mode, all Yammer users are in Azure Active Directory (Azure AD), all groups are Office 365 Groups, and all files are stored in SharePoint Online. Your Yammer tenant must be in Native Mode for communication compliance policies to check and identify risky conversations in private messages and community conversations in Yammer.
+In Native Mode, all Viva Engage users are in Azure Active Directory (Azure AD), all groups are Office 365 Groups, and all files are stored in SharePoint Online. Your Viva Engage tenant must be in Native Mode for communication compliance policies to check and identify risky conversations in private messages and community conversations in Viva Engage.
 
-For more information about configuring Yammer in Native Mode, see:
+For more information about configuring Viva Engage in Native Mode, see:
 
-- [Overview of Yammer Native Mode in Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)
-- [Configure your Yammer network for Native Mode for Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
+- [Overview of Viva Engage Native Mode in Microsoft 365](/viva/engage/configure-your-viva-engage-network/overview-native-mode)
+- [Configure your Viva Engage network for Native Mode for Microsoft 365](/viva/engage/configure-your-viva-engage-network/native-mode)
 
 ## Step 5 (required): Create a communication compliance policy
 
@@ -256,7 +256,7 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the users or groups to apply the policy to, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     - Choose adaptive scopes for the policy. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
-    - Choose the communication channels to check, including Exchange, Microsoft Teams, or Yammer. You'll also choose to check third-party sources if you've configured a connector in Microsoft 365.
+    - Choose the communication channels to check, including Exchange, Microsoft Teams, or Viva Engage. You'll also choose to check third-party sources if you've configured a connector in Microsoft 365.
     - Choose the communication direction to detect, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#conditional-settings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
@@ -326,11 +326,13 @@ After you create a communication compliance policy, it's a good idea to test it 
 
 Follow these steps to test your communication compliance policy:
 
-1. Open an email client, Microsoft Teams, or Yammer while signed in as a scoped user defined in the policy you want to test.
-2. Send an email, Microsoft Teams chat, or Yammer message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
+1. Open an email client, Microsoft Teams, or Viva Engage while signed in as a scoped user defined in the policy you want to test.
+
+2. Send an email, Microsoft Teams chat, or Viva Engage message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
+
 
     > [!NOTE]
-    > Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
+    > Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Viva Engage, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.

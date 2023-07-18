@@ -68,3 +68,4 @@ All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for ex
 - [Streaming API](../defender-endpoint/raw-data-export.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

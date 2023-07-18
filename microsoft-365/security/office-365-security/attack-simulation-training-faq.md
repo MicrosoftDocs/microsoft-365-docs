@@ -172,6 +172,10 @@ A: Currently, there are 40+ localized payloads available in 29+ languages: Engli
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
+### Q: How many training videos are available?
+
+A: Currently, there are more than 85 training modules available in the content library.
+
 ### Q: How can I switch to other languages for my admin portal and training experience?
 
 A: In Microsoft 365 or Office 365, language configuration is specific and centralized for each user account. For instructions on how to change your language setting, see [Change your display language and time zone in Microsoft 365 for Business](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
