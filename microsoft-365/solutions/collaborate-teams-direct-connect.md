@@ -1,9 +1,9 @@
 ---
-title: "Collaborate with external participants in a shared channel"
+title: Collaborate with external participants in a shared channel
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 09/09/2021
+ms.date: 07/18/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: Priority
+localization_priority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to enable shared channels in Microsoft Teams for collaboration with people outside your organization.
