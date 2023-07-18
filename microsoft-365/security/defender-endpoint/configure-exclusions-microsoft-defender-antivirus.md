@@ -50,7 +50,7 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 #### Manage antivirus exclusions in Intune (for existing policies)
 
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#crate-a-new-antivirus-policy-with-exclusions-in-intune)).
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
