@@ -57,7 +57,7 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
 
 #### Use Intune to create a new antivirus policy with exclusions
 
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
 2. Select a platform (such as **Windows 10, Windows 11, and Windows Server**).
 
@@ -70,6 +70,9 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
    - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Each file type in the list must be separated by a `|`. For example, `lib|obj`. See [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions).
    - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Each path in the list must be separated by a `|`. For example, `C:\Example|C:\Example1`. See [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths).
    - **Excluded Processes** are exclusions for files that are opened by certain processes. Each file type must be separated by a `|`. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions are not for the actual processes. To exclude processes, you can use file and folder exclusions. See [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
+
+   > [!CAUTION]
+   > Use Microsoft Defender Antivirus extensions sparingly. Make sure to review the information in [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
