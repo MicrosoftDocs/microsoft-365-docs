@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Defender Antivirus exclusions on Windows Server
+title: Microsoft Defender Antivirus exclusions on Windows Server
 ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server includes automatic exclusions, based on server role. You can also add custom exclusions.
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Configure Microsoft Defender Antivirus exclusions on Windows Server
+# Microsoft Defender Antivirus exclusions on Windows Server
 
 
 **Applies to:**
@@ -30,7 +30,10 @@ search.appverid: met150
 
 - Windows
 
-This article describes exclusions for Windows Server. Because Microsoft Defender Antivirus is built into Windows, [built-in exclusions](#built-in-exclusions) for operating system files happen automatically on all versions of Windows. On Windows Server 2016 and later, [automatic exclusions](#automatic-server-role-exclusions) happen automatically as roles are added. If necessary, you can define custom exclusions or opt out of automatic exclusions. 
+This article describes types of exclusions that you don't have to define for Microsoft Defender Antivirus: 
+
+- [Built-in exclusions](#built-in-exclusions) for operating system files on all versions of Windows. 
+- [Automatic exclusions](#automatic-server-role-exclusions) for roles on Windows Server 2016 and later. 
 
 For a more detailed overview of exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
