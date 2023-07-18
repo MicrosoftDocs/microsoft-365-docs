@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/30/2023
+ms.date: 07/14/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -227,7 +227,25 @@ The **User activity** chart is one of the most powerful tools for internal risk 
 
 The Activity explorer provides risk investigators and analysts with a comprehensive analytics tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected potentially risky activity and identify and filter all risk activities associated with alerts. 
 
-To filter alerts on the Activity explorer for column information, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
+To use the **Activity explorer**:
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+2. On the **Alerts dashboard**, select the alert you want to triage.
+3. On the **Alerts detail pane**, select **Open expanded view**.
+4. On the page for the selected alert, select the **Activity explorer** tab.
+
+When reviewing activities in the Activity explorer, investigators and analysts can select a specific activity and open the activity details pane. The pane displays detailed information about the activity that investigators and analysts can use during the alert triage process. Detailed information may provide context for the alert and assist with identifying the full scope of the risk activity that triggered the alert.
+
+When selecting an activity's events from the activity timeline, the number of activities displayed in the explorer might not match the number of activity events listed in the timeline. Examples of why this difference may occur:
+
+- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of potentially risky activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and potentially risky activity matches have occurred, the cumulative exfiltration detection activities will differ from the results before the policy or settings changes. Cumulative exfiltration detection activity totals are based on the policy and settings configuration at the time of computation and don't include activities prior to the policy and settings changes.
+- **Emails to external recipients**: Potentially risky activity for emails sent to external recipients is assigned a risk score based on the number of emails sent, which may not match the activity event logs.
+
+![Insider risk management activity explorer details.](../media/insider-risk-activity-explorer-details.png)
+
+### Filter alerts in the Activity explorer
+
+To filter alerts in the Activity explorer for column information, select **Filter**. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
 Use the *Activity scope*, *Risk factor*, and *Review status* filters to display and sort activities and insights for the following areas.
 
@@ -250,21 +268,19 @@ Use the *Activity scope*, *Risk factor*, and *Review status* filters to display 
 
 ![Insider risk management activity explorer overview](../media/insider-risk-activity-explorer.png)
 
-To use the **Activity explorer**, complete the following steps:
+#### Save a view of a filter to reuse later
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
-2. On the **Alerts dashboard**, select the alert you want to triage.
-3. On the **Alerts detail pane**, select **Open expanded view**.
-4. On the page for the selected alert, select the **Activity explorer** tab.
+If you create a filter and customize columns for the filter, you can save a view of your changes so that you or others can quickly filter for the same changes again later. When you save a view, you save both the filters and columns. When you load the view, it will load both saved filters and columns.
 
-When reviewing activities in the Activity explorer, investigators and analysts can select a specific activity and open the activity details pane. The pane displays detailed information about the activity that investigators and analysts can use during the alert triage process. Detailed information may provide context for the alert and assist with identifying the full scope of the risk activity that triggered the alert.
+1. Create a filter and customize columns.
+   > [!TIP]
+   > If you want to start over at any point, select **Reset filters**. To change columns that you've customized, select **Reset columns**.  
+2. When you have the filter the way you want it, select **Save this view**, enter a name for the view, and then select **Save**.
+   > [!NOTE]
+   > The maximum length for a view name is 40 characters and you can't use any special characters. 
+3. To reuse the view of the filter later, select **Views**, and then select the view you want to open from the **Recommended views** tab (shows the most-used views) or the **Custom views** tab (the most frequently used filters are displayed at the top of the list). 
 
-When selecting an activity's events from the activity timeline, the number of activities displayed in the explorer might not match the number of activity events listed in the timeline. Examples of why this difference may occur:
-
-- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of potentially risky activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and potentially risky activity matches have occurred, the cumulative exfiltration detection activities will differ from the results before the policy or settings changes. Cumulative exfiltration detection activity totals are based on the policy and settings configuration at the time of computation and don't include activities prior to the policy and settings changes.
-- **Emails to external recipients**: Potentially risky activity for emails sent to external recipients is assigned a risk score based on the number of emails sent, which may not match the activity event logs.
-
-![Insider risk management activity explorer details.](../media/insider-risk-activity-explorer-details.png)
+When you select a view this way, it will reset all the existing filters and replace them with the view that you selected. 
 
 ## Create a case for an alert
 

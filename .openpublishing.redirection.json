@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/security/defender/microsoft-365-security-mdi-redirection.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdi",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
       "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
@@ -11056,6 +11061,11 @@
     "redirect_document_id": true
   },
   {
+    "source_path": "microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer.md",
+    "redirect_url": "/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage.md",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites.md",
     "redirect_url": "/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions",
     "redirect_document_id": false
@@ -11119,7 +11129,23 @@
     "source_path": "microsoft-365/business/manage-protected-devices.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/deployment-phases.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/mde-planning-guide",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/deployment-rings.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/onboarding",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "microsoft-365/security/defender/investigate-dlp.md",
+    "redirect_url": "/microsoft-365/security/defender/dlp-investigate-alerts-defender",
+    "redirect_document_id": true
   }
+  
  ]
 }
 

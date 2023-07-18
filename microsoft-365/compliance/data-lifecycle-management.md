@@ -30,7 +30,7 @@ Retaining and deleting content is often needed for compliance and regulatory req
 
 ## Microsoft 365 features
 
-**Retention policies** are the cornerstone for data lifecycle management. Use these policies for Microsoft 365 workloads that include Exchange, SharePoint, OneDrive, Teams, and Yammer. Configure whether content for these services needs to be retained indefinitely, or for a specific period if users edit or delete it. Or you can configure the policy to automatically permanently delete the content after a specified period if it's not already deleted. You can also combine these two actions for retain and then delete, which is a very typical configuration. For example, retain email for three years and then delete it.
+**Retention policies** are the cornerstone for data lifecycle management. Use these policies for Microsoft 365 workloads that include Exchange, SharePoint, OneDrive, Teams, and Viva Engage. Configure whether content for these services needs to be retained indefinitely, or for a specific period if users edit or delete it. Or you can configure the policy to automatically permanently delete the content after a specified period if it's not already deleted. You can also combine these two actions for retain and then delete, which is a very typical configuration. For example, retain email for three years and then delete it.
 
 When you configure a retention policy, you can target all instances in your organization (such as all mailboxes and all SharePoint sites), or individual instances (such as only the mailboxes for specific departments or regions, or just selected SharePoint sites).
 

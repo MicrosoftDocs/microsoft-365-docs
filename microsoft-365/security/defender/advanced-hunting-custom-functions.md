@@ -71,12 +71,12 @@ Use a function in a query by typing its name along with values for any parameter
 
 Add a function to the current query by double-clicking on its name or selecting the three dots to the right of the function and selecting **Open in query editor**. 
 
-If a query requires arguments, provide them using the following syntax: *function_name(parameter 1, parameter 2, …)*
+If a query requires arguments, provide them using the following syntax: *function_name(parameter 1, parameter 2, ...)*
 
 ![Open in query editor](../../media/advanced-hunting-custom-fxns/open-in-query-editor.png)
 
 > [!NOTE]
-> Functions can’t be used inside another function.
+> Functions can't be used inside another function.
 
 ## Work with function codes
 You can view the code of a function either to gain insight into how it works or to modify its code. Select the three dots to the right of the function and select **Load function code** to open a new tab with the function code. 
@@ -92,7 +92,7 @@ Edit the properties of a function by selecting the three dots to the right of th
 If the function code is already loaded to the editor, you can also select **Save** to apply any changes to the code or properties of the function.
 
 > [!NOTE]
-> Once a function is in use in a saved query or a detection rule, you can’t edit the function to expand its scope. For example, if you saved a function that queries identity tables, and this function is used in a detection rule, you can’t edit the function to include a device table after the fact. To do that, you can save a new function. Product scoping can be narrowed for the same function but not extended.
+> Once a function is in use in a saved query or a detection rule, you can't edit the function to expand its scope. For example, if you saved a function that queries identity tables, and this function is used in a detection rule, you can't edit the function to include a device table after the fact. To do that, you can save a new function. Product scoping can be narrowed for the same function but not extended.
 
 
 
@@ -103,3 +103,4 @@ If the function code is already loaded to the editor, you can also select **Save
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Get more query examples](advanced-hunting-shared-queries.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
