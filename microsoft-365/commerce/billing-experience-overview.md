@@ -30,7 +30,7 @@ ms.date: 07/18/2023
 
 Microsoft has introduced new features that expand and improve the billing experience for our business customers. This article describes the major features we’ve added, and the changes we’ve made to the billing experience.
 
-If you’re a Cloud Service Provider (CSP), see [New commerce license-based overview - Partner Center](/partner-center/new-commerce-license-based)
+If you’re a Cloud Service Provider (CSP), see [New commerce license-based overview - Partner Center](/partner-center/new-commerce-license-based).
 
 ## The Microsoft Customer Agreement
 
@@ -65,7 +65,7 @@ The following list describes other changes we’ve made to the billing experienc
 
 ## Related articles
 
-[Understand your Microsoft business billing account](manage-billing-accounts.md)(article)\
-[Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md)(article)\
-[Understand your bill or invoice](billing-and-payments/understand-your-invoice.md)(article)\
-[How to pay for your Microsoft business subscription with a billing profile](billing-and-payments/pay-for-subscription-billing-profile.md)(article)
+[Understand your Microsoft business billing account](manage-billing-accounts.md) (article)\
+[Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
+[Understand your bill or invoice](billing-and-payments/understand-your-invoice.md) (article)\
+[How to pay for your Microsoft business subscription with a billing profile](billing-and-payments/pay-for-subscription-billing-profile.md) (article)
