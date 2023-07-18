@@ -1,4 +1,3 @@
-
 ### YamlMime:FAQ
 metadata:
   title: "Contracts FAQ"
@@ -50,35 +49,35 @@ sections:
           >
           > If you leave the VLSC site or close your browser before confirming your reservation, your selections will not be saved.
 
-          1. From your list of Enterprise Agreements for License Reservation, select the active agreement to proceed with the online reservation and then click Continue.
-          2. Select the Usage Date for the online reservation and then click Continue. The Usage Date is the date that the online reservation can start to be used.
+          1. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then click **Continue**.
+          2. Select the **Usage Date** for the online reservation and then click **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
 
           >[!NOTE]
           >
           > After 72 hours, no changes are allowed to your reservation, and this will be reflected as part of your True-up or Annual Order based upon the usage date and quantity reserved.
 
-          3. After the Usage Date is selected, you will see a list of eligible Online Services available for reserving online.
-          4. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: Add License or Step-up License.
-          5. To make the reservation, select New License.
-          6. Click Continue. You will be taken to the Reservation Confirmation page.
-          7. Preview the reservation on the Reservation Confirmation page. After confirming that the reservation is correct, click Submit Reservation. The Reservation Confirmation pop-up displays. After reading and agreeing to the terms of services, click Submit Reservation.
+          3. After the **Usage Date** is selected, you will see a list of eligible Online Services available for reserving online.
+          4. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
+          5. To make the reservation, select **New License**.
+          6. Click **Continue**. You will be taken to the **Reservation Confirmation** page.
+          7. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, click **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, click **Submit Reservation**.
           8. Your online reservation is complete.
 
       - question: |
           How do I cancel or change a reservation order
         answer: |
-          Once you place a reservation, you cannot change it. You can cancel a submitted reservation within 72 hours of submission.
+          Once you place a reservation, you **cannot change it**. You can cancel a submitted reservation within **72 hours of submission**.
 
-          1. Go to License and select Manage my Reservation.
+          1. Go to **License** and select **Manage my Reservation**.
           2. Select the way you want your reservation history to be viewed by: Service, Licensing ID, or Reservation.
 
             >[!NOTE]
             >
             > A message will appear if you do not have any previous reservations.
 
-          3. From the Service view: Open the detailed view of the reservation you want to cancel. If the reservation can be canceled a Cancel button is displayed.
-          4. From Reservation view: The results are displayed by descending order by Reservation Date. Reservation orders that can be canceled are displayed at the top of the page.
-          5. Click Cancel to cancel the reservation.
+          3. From the **Service** view: Open the detailed view of the reservation you want to cancel. If the reservation can be canceled a **Cancel** button is displayed.
+          4. From **Reservation** view: The results are displayed by descending order by **Reservation Date**. Reservation orders that can be canceled are displayed at the top of the page.
+          5. Click **Cancel** to cancel the reservation.
 
           If it has been more than 72 hours since your License Reservation was submitted please work with your Microsoft Licensing Reseller to make the necessary adjustments.
 
