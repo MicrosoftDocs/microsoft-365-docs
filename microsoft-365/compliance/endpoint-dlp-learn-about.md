@@ -49,7 +49,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported (preview)| Auditable and restrictable|
 |Create an item|Detects the creation of an item.|Supported |Supported |Auditable|
 |Rename an item|Detects the renaming of an item.|Supported |Supported |Auditable|
-|Copy to clipboard| When this activity is detected, you can block, block with override, or audit the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
+|Copy to clipboard| When this activity is detected, you can block, block with override, or audit the copying of protected files to a clipboard on an endpoint device. If the rule is configure to **Block** or **Block with override** copying is blocked when the source content is sensitive except when the destination is within the same Microsoft 365 Office app|Supported | Supported|Auditable and restrictable|
 |Access by unallowed apps| Detects when an application that is on the unallowed apps list (as defined in [restricted apps and app groups](dlp-configure-endpoint-settings.md)) attempts to access protected files on an endpoint device. |Supported |Supported|
 
 ### Copy to clipboard behavior
