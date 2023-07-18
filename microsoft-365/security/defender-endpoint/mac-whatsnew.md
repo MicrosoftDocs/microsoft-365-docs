@@ -915,3 +915,4 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 </details>
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

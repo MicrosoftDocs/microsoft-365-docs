@@ -93,3 +93,4 @@ To view only either events or techniques, select **Filters** from the device tim
 
 - [View and organize the Devices list](machines-view-overview.md)
 - [Microsoft Defender for Endpoint device timeline event flags](device-timeline-event-flag.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

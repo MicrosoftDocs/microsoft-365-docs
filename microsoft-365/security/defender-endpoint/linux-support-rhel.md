@@ -146,3 +146,4 @@ pmap -x <wdavdaemon pid>
 
 Where `<wdavdaemon pid>` can be found using `pidof wdavdaemon`.
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

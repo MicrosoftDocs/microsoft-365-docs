@@ -81,3 +81,4 @@ See [Protect important folders with controlled folder access](controlled-folders
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
 * [Use audit mode](audit-windows-defender.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

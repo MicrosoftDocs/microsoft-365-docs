@@ -519,3 +519,4 @@ json{
 ## See also
 
 [Microsoft Defender for Endpoint APIs](apis-intro.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
