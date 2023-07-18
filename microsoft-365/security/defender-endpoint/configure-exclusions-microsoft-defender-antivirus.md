@@ -56,6 +56,13 @@ See these articles for additional information:
 
 3. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
 
+   - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Each file type in the list must be separated by a `|`. For example, `lib|obj`. See [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions).
+   - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Each path in the list must be separated by a `|`. For example, `C:\Example|C:\Example1`. See [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths).
+   - **Excluded Processes** are exclusions for files that are opened by certain processes. Each file type must be separated by a `|`. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions are not for the actual processes. To exclude processes, you can use file and folder exclusions. See [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
+
+   > [!CAUTION]
+   > Use Microsoft Defender Antivirus extensions sparingly. Make sure to review the information in [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+
 4. Choose **Review + save**, and then choose **Save**.
 
 #### Use Intune to create a new antivirus policy with exclusions
