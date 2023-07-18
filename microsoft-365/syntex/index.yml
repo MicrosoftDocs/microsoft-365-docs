@@ -81,8 +81,6 @@ landingContent:
             url: content-processing-overview.md
           - text: Content query
             url: metadata-search.md
-          - text: Optical character recognition
-            url: ocr-overview.md
 
 # Card 4
   - title: Extensibility
