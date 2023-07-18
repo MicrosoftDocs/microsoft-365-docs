@@ -4,8 +4,8 @@
   items:
    - name: Overview
      items:
-       - name: Overview of Office 365 security
-         href: microsoft-defender-for-office-365-product-overview.md
+       - name: Why do I need Microsoft Defender for Office 365?
+         href: why-do-i-need-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
        - name: Zero Trust for Defender for Office 365
@@ -446,6 +446,8 @@
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+        - name: Understanding detection technology in the email entity page of Microsoft Defender for Office 365
+          href: step-by-step-guides/understand-detection-technology-in-email-entity.md
         - name: Assess the impact of security configuration changes with Explorer
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
         - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
@@ -469,7 +471,7 @@
        href: sending-mail-to-office-365.md
      - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
-     - name: Services for non-customers
+     - name: Microsoft 365 services for external email senders
        href: services-for-non-customers.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid

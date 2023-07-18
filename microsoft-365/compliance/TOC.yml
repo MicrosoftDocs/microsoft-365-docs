@@ -83,12 +83,14 @@
        - name: HR data 
          href: import-hr-data.md
        - name: ICE Chat
-         href: archive-icechat-data.md 
+         href: archive-icechat-data.md
+       - name: Insider Risk Indicators (preview)
+         href: import-insider-risk-indicators.md 
        - name: Instant Bloomberg
          href: archive-instant-bloomberg-data.md
        - name: LinkedIn
          href: archive-linkedin-data.md
-       - name: Physical badging data (preview)
+       - name: Physical badging data
          href: import-physical-badging-data.md
        - name: Twitter (preview)
          href: archive-twitter-data-with-sample-connector.md
@@ -280,7 +282,7 @@
             href: insider-risk-management-settings-alerts.md
           - name: Priority user groups setting
             href: insider-risk-management-settings-priority-user-groups.md
-          - name: Priority physical assets setting (preview)
+          - name: Priority physical assets setting
             href: insider-risk-management-settings-priority-physical-assets.md
           - name: Power Automate flows setting (preview)
             href: insider-risk-management-settings-power-automate.md
@@ -346,6 +348,8 @@
           items:
             - name: OneDrive and information barriers
               href: information-barriers-onedrive.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
         - name: Information barriers & SharePoint
           items:
             - name: SharePoint and information barriers
@@ -354,6 +358,8 @@
               href: information-barriers-sharepoint-assistant.md
             - name: SharePoint information barriers policy compliance report
               href: information-barriers-sharepoint-report.md
+            - name: SharePoint & OneDrive insights report
+              href: information-barriers-insights-report.md
     - name: Privileged access management
       items:
         - name: Overview
@@ -1290,7 +1296,9 @@
           - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-get-started.md
           - name: Get started with collecting files that match data loss prevention policies from devices (preview)
-            href: dlp-copy-matched-items-get-started.md  
+            href: dlp-copy-matched-items-get-started.md
+          - name: Get started with oversharing pop ups
+            href: dlp-osp-get-started.md    
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1325,8 +1333,12 @@
               href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
               href: dlp-migration-assistant-for-symantec-use.md
+            - name: Data loss prevention policy tip reference for Outlook for Microsoft 365
+              href: dlp-ol365-win32-policy-tips.md       
             - name: Data loss prevention policy tip reference for Outlook on the Web
-              href: dlp-owa-policy-tips.md       
+              href: dlp-owa-policy-tips.md
+            - name: Data loss prevention policy tips reference for SharePoint Online and OneDrive for Business web client
+              href: dlp-spo-odbweb-policy-tips.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data
@@ -1345,8 +1357,8 @@
               href: retention-policies-sharepoint.md
             - name: Teams
               href: retention-policies-teams.md
-            - name: Yammer
-              href: retention-policies-yammer.md
+            - name: Viva Engage
+              href: retention-policies-viva-engage.md
             - name: Exchange
               href: retention-policies-exchange.md
         - name: Common settings for retention and deletion
@@ -1719,6 +1731,8 @@
               href: ediscovery-document-metadata-fields.md
             - name: Search and purge Teams chat messages
               href: ediscovery-search-and-delete-Teams-chat-messages.md
+            - name: Find sensitive data stored on sites
+              href: ediscovery-find-sensitive-data-stored-on-sites.md
             - name: Set up historical versions
               href: ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
