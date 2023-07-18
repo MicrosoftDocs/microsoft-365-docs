@@ -39,16 +39,16 @@ Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-
 
 If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Microsoft Defender for Endpoint, use the following procedures to define exclusions:
 
-- [Use Intune to manage antivirus exclusions (for existing policies)](#use-intune-to-manage-antivirus-exclusions-for-existing-policies)
-- [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)
+- [Manage antivirus exclusions in Intune (for existing policies)](#manage-antivirus-exclusions-in-intune-for-existing-policies)
+- [Create a new antivirus policy with exclusions in Intune](#create-a-new-antivirus-policy-with-exclusions-in-intune)
 
-For more information about custom exclusions, see these articles:
+If you're using another tool, such as Configuration Manager or Group Policy, or you want more detailed information about custom exclusions, see these articles:
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) to configure restrictions for your exclusions.
 
-#### Use Intune to manage antivirus exclusions (for existing policies)
+#### Manage antivirus exclusions in Intune (for existing policies)
 
 1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
 
@@ -65,7 +65,7 @@ For more information about custom exclusions, see these articles:
 
 4. Choose **Review + save**, and then choose **Save**.
 
-#### Use Intune to create a new antivirus policy with exclusions
+#### Create a new antivirus policy with exclusions in Intune
 
 1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
