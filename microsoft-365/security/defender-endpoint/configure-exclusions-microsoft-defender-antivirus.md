@@ -114,7 +114,7 @@ Many organizations exclude the Exchange directories from antivirus scans for per
 
 To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt. (See [Get-MpPreference](/powershell/module/defender/get-mppreference?view=windowsserver2022-ps).)
 
-If exclusions can't be removed for the Exchange processes and folders, running a quick scan in Microsoft Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
+If exclusions can't be removed for the Exchange processes and folders, keep in mind that running a quick scan in Microsoft Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
 ## See also
 
