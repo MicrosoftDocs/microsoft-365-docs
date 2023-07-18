@@ -32,6 +32,14 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 Just like other Microsoft 365 experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
+### Exchange Online license
+
+Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+
+### WebSocket connections
+
+Loop's near real-time communications are enabled by the core services that run a WebSocket server. Coauthors in the same session need to establish secured WebSocket connections to this service to send and receive collaborative data such as changes made by others, live cursors, presence, and so on. These experiences are crucial to Loop, and to all the scenarios powered by Fluid framework. So, at the minimum, WebSocket will need to be unblocked from the user's endpoint.
+
 ### Microsoft 365 Groups for Cloud Policy
 
 If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
@@ -43,13 +51,16 @@ You'll be able to use this group for the Cloud Policy setup procedure specified 
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
-### Exchange Online license
+## Settings management in the Microsoft Admin Center
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-### WebSocket connections
+1. Log in to the Microsoft Admin Center using your tenant's Administrator account
+2. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop)
+3. Choose your desired state for Loop workspaces via the checkbox
+4. Click Save
 
-Loop's near real-time communications are enabled by the core services that run a WebSocket server. Coauthors in the same session need to establish secured WebSocket connections to this service to send and receive collaborative data such as changes made by others, live cursors, presence, and so on. These experiences are crucial to Loop, and to all the scenarios powered by Fluid framework. So, at the minimum, WebSocket will need to be unblocked from the user's endpoint.
+The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
 
 ## Settings management in Cloud Policy
 
