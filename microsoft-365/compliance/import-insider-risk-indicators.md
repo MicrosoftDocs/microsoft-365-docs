@@ -240,7 +240,7 @@ To run the sample script:
    | Parameter | Description |
    | :-|:-|
    | `tenantId` | This is the ID for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant ID for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
-   | `appId` | This is the Azure AD application ID for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization. |  |
+   | `appId` | This is the Azure AD application ID for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization. |
    | `appSecret` | This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication. |
    | `jobId` | This is the job ID for the connector that you created in Step 3. This is used to associate the data that is uploaded to the Microsoft cloud with the connector. |
    | `filePath` | This is the file path for the file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks. |
