@@ -47,3 +47,4 @@ Check out this video to see how easy it is to provide feedback.
 2. Rate your experience and provide details on what you liked or where improvement can be made. You can also choose to be contacted about the feedback. 
 
 3. Select **Submit**.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

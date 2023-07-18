@@ -141,3 +141,4 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

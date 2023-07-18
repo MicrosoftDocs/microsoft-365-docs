@@ -58,3 +58,4 @@ While these portals are not specifically for managing security, they support var
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Intune admin center | Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage and secure devices. Can also combine Intune and Configuration Manager capabilities. | [endpoint.microsoft.com](https://endpoint.microsoft.com/) |
 | Microsoft Intune portal | Use [Microsoft Intune](/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

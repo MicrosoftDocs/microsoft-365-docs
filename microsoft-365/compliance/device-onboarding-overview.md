@@ -1,5 +1,5 @@
 ---
-title: "Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview"
+title: "Onboard Windows devices into Microsoft 365 overview"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,10 +20,10 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
+description: "Onboard Windows devices into Microsoft 365"
 ---
 
-# Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+# Onboard Windows devices into Microsoft 365 overview
 
 **Applies to:**
 

@@ -34,7 +34,7 @@ If your organization has a subscription and end-user licensing that supports Aud
 
 ## Step 1: Set up Audit (Premium) for users
 
-Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:
+Audit (Premium) features such as the ability to log intelligent insights such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:
 
 1. In the Microsoft 365 admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and select a user.
 

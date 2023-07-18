@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 7/5/2023
+ms.date: 7/11/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -169,9 +169,9 @@ The **Show first contact safety tip** setting is available in EOP and Defender f
 - The first time they get a message from a sender
 - They don't often get messages from the sender.
 
-This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
+This capability adds an extra layer of protection against potential impersonation attacks, so we recommend that you turn it on.
 
-The first contact safety tip also replaces the need to create mail flow rules (also known as transport rules) that add the header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value **Enable** to messages (although this capability is still available).
+The first contact safety tip is controlled by the value 9.25 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. This functionality replaces the need to create mail flow rules (also known as transport rules) that add a header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value `Enable` to messages, although this capability is still available.
 
 Depending on the number of recipients in the message, the first contact safety tip can be either of the following values:
 
@@ -187,6 +187,7 @@ Depending on the number of recipients in the message, the first contact safety t
 
   :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="The First contact safety tip for messages with multiple recipients" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
+> [!NOTE]
 > If the message has multiple recipients, whether the tip is shown and to whom is based on a majority model. If the majority of recipients have never or don't often receive messages from the sender, then the affected recipients will receive the **Some people who received this message...** tip. If you're concerned that this behavior exposes the communication habits of one recipient to another, you should not enable the first contact safety tip and continue to use mail flow rules and the **X-MS-Exchange-EnableFirstContactSafetyTip** header instead.
 >
 > The first contact safety tip is not stamped in S/MIME signed messages.
@@ -299,8 +300,18 @@ For impersonation attempts detected by mailbox intelligence, the following actio
 Impersonation safety tips appear to users when messages are identified as impersonation attempts. The following safety tips are available:
 
 - **Show user impersonation safety tip**: The From address contains a user specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
+
+  This safety tip is controlled by the value 9.20 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
+
+  > This sender appears similar to someone who previously sent you email, but may not be that person.
+
 - **Show domain impersonation safety tip**: The From address contains a domain specified in [domain impersonation protection](#domain-impersonation-protection). Available only if **Enable domains to protect** is turned on and configured.
-- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
+
+  This safety tip is controlled by the value 9.19 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
+
+    > This sender might be impersonating a domain that's associated with your organization.
+
+- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
 
 > [!NOTE]
 > Safety tips are not stamped in the following messages:
