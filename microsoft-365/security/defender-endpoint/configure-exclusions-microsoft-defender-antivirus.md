@@ -79,7 +79,7 @@ For more information about custom exclusions, see these articles:
 
    - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Separate each file type in the list with a `|` character. For example, `lib|obj`. See [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions).
    - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Separate each path in the list with a `|` character. For example, `C:\Example|C:\Example1`. See [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths).
-   - **Excluded Processes** are exclusions for files that are opened by certain processes. Separate each file type in the list with a `|` character. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions are not for the actual processes. To exclude processes, you can use file and folder exclusions. See [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
+   - **Excluded Processes** are exclusions for files that are opened by certain processes. Separate each file type in the list with a `|` character. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions aren't for the actual processes. To exclude processes, you can use file and folder exclusions. See [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
 
    > [!CAUTION]
    > Use Microsoft Defender Antivirus extensions sparingly. Make sure to review the information in [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
@@ -92,9 +92,9 @@ For more information about custom exclusions, see these articles:
 
 ## Important points about exclusions
 
-Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
+Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you're confident aren't malicious.
 
-Exclusions directly impact the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Features that are directly dependent on the antivirus engine (such as protection against malware, file IOCs and certificate IOCs) are not effective on files, folders, or processes that are excluded. Furthermore, network protection and attack surface reduction (ASR) rules are also affected by process exclusions specifically, so that a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
+Exclusions directly affect the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Features that are directly dependent on the antivirus engine (such as protection against malware, file IOCs and certificate IOCs) are not effective on files, folders, or processes that are excluded. Furthermore, network protection and attack surface reduction (ASR) rules are also affected by process exclusions specifically, so that a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
 
 Keep the following points in mind when you're defining exclusions:
 
