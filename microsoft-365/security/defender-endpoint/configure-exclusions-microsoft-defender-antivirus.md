@@ -28,7 +28,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, if necessary, you can exclude files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as custom exclusions. This article describes how to define custom exclusions for Microsoft Defender Antivirus with Microsoft Intune and includes links to additional resources for more information.
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, if necessary, you can exclude files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as custom exclusions. This article describes how to define custom exclusions for Microsoft Defender Antivirus with Microsoft Intune and includes links to other resources for more information.
 
 Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
@@ -42,7 +42,7 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
 - [Use Intune to manage antivirus exclusions (for existing policies)](#use-intune-to-manage-antivirus-exclusions-for-existing-policies)
 - [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)
 
-See these articles for additional information about custom exclusions:
+For more information about custom exclusions, see these articles:
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
