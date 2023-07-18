@@ -64,8 +64,8 @@ When you configure a rule to **Block** or **Block with override** when a user at
 - Excel file 789 doesn't contain sensitive information.
 - PowerPoint file 789 doesn't contain sensitive information.
 
-- Notepad file XYZ contains sensitive information that matches the copy to clipboard Block rule.
-- Notepad file ABC doesn't contain sensitive information.
+- Notepad (or any non Microsoft Office based app or process) file XYZ contains sensitive information that matches the copy to clipboard Block rule.
+- Notepad (or any non Microsoft Office based app or process) file ABC doesn't contain sensitive information.
 
 |Source |Destination  |Behavior  |
 |---------|---------|---------|
