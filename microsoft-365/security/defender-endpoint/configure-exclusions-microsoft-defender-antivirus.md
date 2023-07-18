@@ -40,7 +40,10 @@ Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-
 
 ## Configure and validate exclusions
 
-If you're using Microsoft Intune to manage your 
+If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Microsoft Defender for Endpoint, use the following procedures to define exclusions:
+
+- [Use Intune to manage antivirus exclusions (for existing policies)](#use-intune-to-manage-antivirus-exclusions-for-existing-policies)
+- [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
