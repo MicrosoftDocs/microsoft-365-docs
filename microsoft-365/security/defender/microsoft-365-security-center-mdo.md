@@ -170,3 +170,4 @@ Also included is a link to the Security & Compliance Center for comparison. The 
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 - [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

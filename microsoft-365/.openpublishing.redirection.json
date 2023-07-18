@@ -119,6 +119,42 @@
             "source_path": "compliance/retention-policies-yammer.md",
             "redirect_url": "/microsoft-365/compliance/retention-policies-viva-engage.md",
             "redirect_document_id": false
-    }
+        },
+        {
+            "source_path": "scheduler/scheduler-overview.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-faqs.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-preferences.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-recurring-meetings.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-setup.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-trust-privacy.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-using.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        }
+
     ]
 }

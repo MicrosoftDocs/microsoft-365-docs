@@ -110,3 +110,4 @@ For more information, see:
 - [Related videos for Microsoft Defender for Identity](https://www.microsoft.com/videoplayer/embed/RE4HcEU)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

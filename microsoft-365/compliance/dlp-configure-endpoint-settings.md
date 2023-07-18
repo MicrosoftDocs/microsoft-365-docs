@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/02/2023
+ms.date: 07/14/2023
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -41,27 +41,33 @@ To access these settings, from the Microsoft Purview compliance portal, navigate
 ## Endpoint DLP Windows 10/11 and macOS settings
 The following table describes the supported endpoint settings for Windows 10/11 and macOS.
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
-|---------|---------|---------|---------|
-|Advanced classification | Supported | Supported (preview)|Advanced classification enables these features for macOS (preview): - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
-|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Network share coverage and exclusions | Supported |Not Supported|
-|Restricted apps     |Supported         |Supported         |         |
-|Restricted app groups |Supported |Supported (preview)|
-|Unallowed Bluetooth apps    |Supported         |Supported         |         |
-|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
-|Always audit file activity for devices     |Supported         |Supported         |         |
-|Printer groups| Supported |Not Supported| |
-|Removable USB device groups| Supported | Not Supported | |
-|Auto-quarantine file from unallowed apps | Supported | Supported (preview)| |
-|Network share groups | Supported | Not Supported | |
-|VPN settings | Supported | Not Supported | |
-|Business justification in policy tips | Supported | Supported (preview)| |
-|Notification customization|Supported | Supported (preview)|
-|Archive file| Supported | Not supported| |
-|File type and File extension |Supported | Not supported| |
-| | | | |
+|Setting |Sub setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
+|---------|---------|---------|---------|---------|
+|**Advanced classification scanning and protection**|**Allocated bandwidth limits** | Supported | Supported |Advanced classification enables these features for macOS (preview): - [Document Fingerprinting](document-fingerprinting.md) </br>- [Exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) </br>- [Trainable classifiers](classifier-learn-about.md) </br>- [Learn about named entities](named-entities-learn.md) |
+|**File path exclusions for Windows** | n/a  |Supported         |n/a         |         |
+|**File path exclusions for Mac**|n/a |n/a| Supported|macOS includes a recommended list of exclusions that is on by default  |
+|**Setup evidence collection for file activities on devices**| **Set evidence cache on device** | Supported (preview)| Not supported|  |
+|**Network share coverage and exclusions** | n/a | Supported |Not Supported| |
+|**Restricted apps and app groups**    |**Restricted app groups**        |Supported         |Supported (preview)         | |
+|**Restricted apps and app groups** |**Restricted apps** |Supported | Supported | |
+|**Restricted apps and app groups** |**Auto-quarantine settings**| Supported | Supported (preview)| |
+|**Unallowed Bluetooth apps**    |n/a |Supported         |Supported         |         |
+|**Browser and domain restrictions to sensitive data** | **Unallowed browsers**      |Supported         |Supported         |         |
+|**Browser and domain restrictions to sensitive data** | **Service domains** | Supported | Supported| |
+|**Browser and domain restrictions to sensitive data** | **Sensitive service domain groups** | Supported | Not supported| |
+|**Additional settings for Endpoint DLP** | **Business justification in policy tips**     |Supported         |Supported (preview)         |Only the default business justifications are supported for macOS devices         |
+|**Always audit file activity for devices** | n/a   |Supported         |Supported         |         |
+|**Printer groups** | n/a| Supported |Not supported| |
+|**Removable USB device groups** |n/a | Supported | Not supported | |
+|**Network share groups** |n/a | Supported | Not supported | |
+|**VPN settings** |n/a | Supported | Not supported | |
+
+### Other settings
+
+|Setting | Windows 10/11 | macOS (three latest released versions)|
+|-------|---------|-------|
+|Archive file| Supported | Not supported |
+|File type and File extension |Supported | Not supported|
 
 ## Advanced classification scanning and protection
 
@@ -244,16 +250,13 @@ To find the full path of Mac apps:
   
 3. Make a note of the full path name, including the name of the app.
 
-### Protect sensitive data from cloud synchronization apps
+### Auto-quarantine 
 
-To prevent sensitive items from being synced to the cloud by cloud sync apps such as *onedrive.exe*, add the cloud sync app to the **Restricted apps** list. 
+To prevent sensitive items from being synced to the cloud by cloud sync apps such as *onedrive.exe*, add the cloud sync app to the **Restricted apps** list with **Auto-quarantine**
+ 
+When enabled, Auto-quarantine is triggered when a restricted app attempts to access a DLP-protected sensitive item. Auto-quarantine moves the sensitive item to an admin-configured folder. If configured to do so, autoquarrantine can leave a placeholder (`.txt`) file in place of the original. You can configure the text in the placeholder file to tell users the new location of the item, and other pertinent information.  
 
-> [!NOTE]
-> When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Restricted apps**.  
-
-#### Auto-quarantine 
-
-When enabled, Auto-quarantine is triggered when a restricted app attempts to access a DLP-protected sensitive item. Auto-quarantine moves the sensitive item to an admin-configured folder. If configured to do so, autoquarrantine can leave a placeholder (**.txt**) file in place of the original. You can configure the text in the placeholder file to tell users the new location of the item, and other pertinent information.  
+Use this when an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling **Auto-quarantine**.
 
 You can use also auto-quarantine to prevent an endless chain of DLP notifications for the user and admins. For more information, see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine](endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine)
 
@@ -261,7 +264,7 @@ You can use also auto-quarantine to prevent an endless chain of DLP notification
 
 To prevent people from transferring files protected by your policies via specific Bluetooth apps, add those apps to the **Restricted apps** list.
 
-### Browser and domain restrictions to sensitive data
+## Browser and domain restrictions to sensitive data
 
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
 
@@ -278,14 +281,14 @@ For macOS devices, you must add the full file path. To find the full path of Mac
   
 3. Make sure to make a note of the full path name, including the name of the app.
 
-#### Service domains
+### Service domains
 
 You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains.
 
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge, or using instances of Google Chrome or Mozilla Firefox that have the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 
-##### Allow
+#### Allow
 
 When the **Service domains** list is set to **Allow**, DLP policies aren't applied when a user attempts to upload a sensitive file to any of the domains on the list.
 
@@ -301,7 +304,7 @@ If a user attempts to upload a sensitive file with credit card numbers to contos
 
 In contrast, if a user attempts to upload a sensitive file with credit card numbers to wingtiptoys.com (which isn't on the *Restricted apps* list), the policy is applied and the user activity is blocked. Additionally, an event is generated, as is an alert.
  
-##### Block
+#### Block
  
 When the **Service domains** list is set to **Block**, DLP policies are applied when a user attempts to upload a sensitive file to any of the domains on the **Restricted apps** list.
 
@@ -343,7 +346,7 @@ For example:
 
 You can configure up to 50 domains under **Sensitive Service domains**.
 	
-### Sensitive service domains
+### Sensitive service domain groups
 
 When you list a website in **Sensitive service domains**, you can `audit`, `block with override`, or fully `block` user activity when users attempt to take any of the following actions:
 
@@ -481,7 +484,7 @@ Let's look at an example. Say you want your DLP policy to block printing of cont
 1. Add other printers as needed.
 1. Select **Save** and then **Close**.
 
-## Removable storage device groups
+## Removable USB device groups
 
 Use this setting to define groups of removable storage devices, such as USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block items with engineering specifications from being copied to removable storage devices, except for designated USB-connected hard drives that are used to back up data for offsite storage.
 
@@ -515,7 +518,7 @@ You can assign these policy actions to the group in a DLP policy:
 - `Block with` override (blocks the action, but the user can override)
 - `Block` (blocks no matter what)
 
-### Create a Removable storage device group
+### Create a removable USB device group
 
 1. Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **Removable storage device groups**.
 2. Select **Create removable storage device group**.
