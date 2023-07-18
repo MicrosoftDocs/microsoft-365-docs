@@ -1,6 +1,6 @@
 ---
 title: "Review conversations in eDiscovery (Premium)"
-description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
+description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Viva Engage groups."
 ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ search.appverid:
 
 # Conversation threading in eDiscovery (Premium)
 
-Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
+Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Viva Engage groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 
 The conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) is designed to help you identify contextual content and produce distinct conversation views. This capability allows you to efficiently and rapidly review complete instant message conversations (also called *threaded conversations*) that are generated in platforms like Microsoft Teams.
 

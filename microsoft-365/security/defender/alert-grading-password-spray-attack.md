@@ -40,7 +40,7 @@ This playbook helps investigate cases where suspicious behavior is observed as i
 
 The intended results of using this guide are:
 
-- You’ve identified the alerts associated with password spray attempts as malicious (TP) or false positive (FP) activities.
+- You've identified the alerts associated with password spray attempts as malicious (TP) or false positive (FP) activities.
 
 - You've taken the necessary actions to remediate the attack.
 
@@ -68,7 +68,7 @@ This section contains step-by-step guidance to respond to the alert and take the
       - Modifications in Azure environments, like Azure portal subscription changes
       - Changes to SharePoint Online, like the impacted user account gaining access to multiple sites or files with sensitive/confidential/company-only content
   
-  - **Inspect the impacted account's activities that occur within a short time span on multiple platforms and apps.** Audit events to check the timeline of activities, like contrasting the user’s time spent reading or sending email followed by allocating resources to the user’s account or other accounts.
+  - **Inspect the impacted account's activities that occur within a short time span on multiple platforms and apps.** Audit events to check the timeline of activities, like contrasting the user's time spent reading or sending email followed by allocating resources to the user's account or other accounts.
 
 ### 3. Investigate possible follow-on attacks
 
@@ -177,7 +177,7 @@ CloudAppEvents
 | mv-expand ModifiedProperties = RawEventData.ModifiedProperties
 | where ModifiedProperties.Name == "StrongAuthenticationRequirement" and ModifiedProperties.OldValue != "[]" and ModifiedProperties.NewValue == "[]"
 | mv-expand ActivityObject = ActivityObjects
-| where ActivityObject.Role == "Target object”
+| where ActivityObject.Role == "Target object"
 | extend TargetObjectId = tostring(ActivityObject.Id)
 | project Timestamp, ReportId, AccountObjectId, ActivityObjects, TargetObjectId
 ```
@@ -200,10 +200,11 @@ Once you determine that the activities associated with this alert are malicious,
 2. Revoke access tokens of the compromised account.
 3. Use number matching in Microsoft Authenticator to mitigate MFA fatigue attacks.
 4. Apply the principle of least privilege. Create accounts with minimum privilege required to complete tasks.
-5. Configure blocking based on the sender’s IP address and domains if the artifacts are related to email.
+5. Configure blocking based on the sender's IP address and domains if the artifacts are related to email.
 6. Block URLs or IP addresses (on the network protection platforms) that were identified as malicious during the investigation.
 
 ## See also
 
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
