@@ -155,3 +155,4 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 - [Get machine action API](get-machineaction-object.md)
 - [Cancel machine action](cancel-machine-action.md)
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

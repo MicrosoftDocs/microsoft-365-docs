@@ -93,3 +93,4 @@ Here is an example of the request.
 ```http
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/alerts
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

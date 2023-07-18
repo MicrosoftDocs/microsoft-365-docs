@@ -111,3 +111,4 @@ description"
 ## Related topic
 
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
