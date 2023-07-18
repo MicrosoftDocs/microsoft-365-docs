@@ -45,6 +45,12 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
 - [Use Intune to manage antivirus exclusions (for existing policies)](#use-intune-to-manage-antivirus-exclusions-for-existing-policies)
 - [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)
 
+See these articles for additional information:
+
+- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [Configure contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) to configure restrictions for your exclusions.
+
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
 1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
@@ -80,14 +86,6 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
 
 8. On the **Review + create** tab, review the settings, and then choose **Create**.
 
-
-
-To configure and validate exclusions, see the following:
-
-- [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). You can exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
-
-- [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). You can exclude files from scans that have been opened by a specific process.
-
 ## Recommendations for defining exclusions
 
 > [!IMPORTANT]
@@ -118,18 +116,11 @@ To audit AV exclusions on an Exchange Server running Defender Antivirus, run the
 
 If exclusions can't be removed for the Exchange processes and folders, running a Quick Scan in Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
 ## See also
 
-- [Microsoft Defender Antivirus exclusions on Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus exclusions on Windows Server 2016 and later](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md)
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
+
