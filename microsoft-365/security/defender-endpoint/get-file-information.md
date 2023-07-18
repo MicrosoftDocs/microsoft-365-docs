@@ -113,3 +113,4 @@ Here's an example of the response.
     "determinationValue": "PUA:Win32/FusionCore"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

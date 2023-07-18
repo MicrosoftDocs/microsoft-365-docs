@@ -78,3 +78,4 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 - [Microsoft Defender for Endpoint deployment overview](deployment-phases.md)
 - [Onboard to the Microsoft Defender for Endpoint service](onboarding.md)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
