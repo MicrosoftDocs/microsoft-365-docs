@@ -28,7 +28,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, when necessary, you can exclude certain files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as *custom exclusions*. 
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, when necessary, you can exclude files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as custom exclusions for Microsoft Defender Antivirus. This article describes how to define custom exclusions with Microsoft Intune and includes links to additional resources for more information.
 
 Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
