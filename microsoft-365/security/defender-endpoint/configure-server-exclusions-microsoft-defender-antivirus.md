@@ -6,7 +6,7 @@ description: Windows Server includes automatic exclusions, based on server role.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 07/13/2023
+ms.date: 07/18/2023
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
