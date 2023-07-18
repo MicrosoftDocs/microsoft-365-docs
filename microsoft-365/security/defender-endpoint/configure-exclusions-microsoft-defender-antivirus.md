@@ -102,7 +102,7 @@ Keep the following points in mind when you're defining exclusions:
 
 - Review exclusions periodically. Recheck and re-enforce mitigations as part of your review process.
 
-- Ideally, avoid defining exclusions in an effort to be proactive. For example, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues, such as those pertaining to performance or application compatibility that exclusions could mitigate.
+- Ideally, avoid defining exclusions in an attempt to be proactive. For example, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues, such as those pertaining to performance or application compatibility that exclusions could mitigate.
 
 - Review and audit changes to your list of exclusions. Your security team should preserve context around why a certain exclusion was added to avoid confusion later on. Your security team should be able to provide specific answers to questions about why exclusions exist.
 
