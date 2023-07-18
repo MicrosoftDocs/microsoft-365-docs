@@ -55,3 +55,4 @@ Onboarding devices effectively enables the endpoint detection and response capab
 | [Configure Microsoft Defender Experts capabilities](../defender/defender-experts-for-hunting.md) | Microsoft  Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed.|Not applicable|
 
 For more information, see [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

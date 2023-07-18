@@ -153,3 +153,4 @@ For more information, see [Use network protection to help prevent connections to
 - [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
