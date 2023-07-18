@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/17/2023
+ms.date: 07/18/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -54,7 +54,7 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 
 ### Copy to clipboard behavior
 
-When you configure a rule to **Block** or **Block with override** when a user attempts the Copy to clipboard activity on a file that matches the policy is applied to, end users see this behavior with these configurations:
+When you configure a rule to **Block** or **Block with override** when a user attempts the Copy to clipboard activity on a file that matches the policy, end users see this behavior with these configurations:
 
 - Word file 123 contains sensitive information that matches the copy to clipboard Block rule.
 - Excel file 123 contains sensitive information that matches the copy to clipboard Block rule.
