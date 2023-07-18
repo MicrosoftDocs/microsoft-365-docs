@@ -1,9 +1,9 @@
 ---
-title: "Collaborate with guests on a document"
+title: Collaborate with guests on a document (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 03/10/2020
+ms.date: 07/18/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,7 +24,7 @@ recommendations: false
 description: "In this article, you'll learn how to collaborate with guests on a document in SharePoint and OneDrive."
 ---
 
-# Collaborate with guests on a document
+# Collaborate with guests on a document (IT Admins)
 
 If you need to collaborate with people outside your organization on documents in SharePoint or OneDrive, you can send them a sharing-link to the document. In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up sharing-links for SharePoint and OneDrive for the needs of your organization.
 
@@ -44,12 +44,11 @@ Check the B2B external collaboration settings to ensure that sharing with guests
 
 To set external collaboration settings
 
-1. Log in to Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com).
-2. In the left navigation pane, click **Azure Active Directory**.
-3. Click **External identities**.
-4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
-5. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
-6. If you made changes, click **Save**.
+1. Log in to Azure Active Directory at [https://entra.microsoft.com/](https://entra.microsoft.com/).
+1. In the left navigation pane, expand **External identities**.
+1. Select **External collaboration settings**.
+1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
+1. If you made changes, select **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
@@ -70,10 +69,9 @@ For SharePoint, choose the most permissive setting that will be needed by any si
 
 To set SharePoint organization-level sharing settings
 
-1. In the Microsoft 365 admin center, in the left navigation pane, under **Admin centers**, click **SharePoint**.
-2. In the SharePoint admin center, in the left navigation pane, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
-3. Ensure that external sharing for SharePoint or OneDrive is set to **Anyone** or **New and existing guests**. (Note that the OneDrive setting cannot be more permissive than the SharePoint setting.)
-4. If you made changes, select **Save**.
+1. In the SharePoint admin center, in the left navigation pane, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Ensure that external sharing for SharePoint or OneDrive is set to **Anyone** or **New and existing guests**. (Note that the OneDrive setting cannot be more permissive than the SharePoint setting.)
+1. If you made changes, select **Save**.
 
 ## SharePoint organization-level default link settings
 
@@ -89,19 +87,18 @@ Choose a link from any of the following types which is then selected by default 
  
 ![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-
 To set the SharePoint and OneDrive organization-level default link settings
 
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a> in the SharePoint admin center.
-2. Under **File and folder links**, select the default sharing link that you want to use.
-3. If you made changes, click **Save**.
+1. Under **File and folder links**, select the default sharing link that you want to use.
+1. If you made changes, click **Save**.
 
 To set the permission for the sharing link, under **Choose the permission that's selected by default for sharing links.**
 
-1. Select **View** if you do not want unauthenticated users to make changes to the files and folders.
-2. Select **Edit** if you want to allow unauthenticated users to make changes to the files and folders.
+1. Select **View** if you do not want users to make changes to the files and folders.
+1. Select **Edit** if you want to allow users to make changes to the files and folders.
 
-Note that the above two premission-options can be applied not only for guests/external users but also for internal users. The permission-option you choose is determined by self-discretion.
+Optionally, choose an expiration time for *Anyone* links.
 
 To set permissions for links that allow sharing with anyone
 
@@ -120,14 +117,11 @@ If you're sharing files and folders that are in a SharePoint site, you also need
 ![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
-
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
-2. Select the site on which you want to share files and folders with guests.
-3. Scroll right across the row (in which the selected site is present) and click anywhere in the **External sharing** column.
-4. From the page that pops up, click **Policies** tab.
-5. Under the **External sharing** pane, click **Edit**.
-6. Ensure that sharing is set to **Anyone** or **New and existing guests**.
-7. If you made changes, click **Save**.
+1. Select the site for the team that you just created.
+1. On the **Settings** tab, select **More sharing settings**.
+1. Ensure that sharing is set to **Anyone** or **New and existing guests**.
+1. If you made changes, select **Save**.
 
 ## Invite users
 

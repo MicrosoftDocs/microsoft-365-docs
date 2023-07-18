@@ -135,6 +135,13 @@ To set the SharePoint organization-level default link settings
 1. Under **File and folder links**, select the default sharing link that you want to use.
 1. If you made changes, select **Save**.
 
+To set the permission for the sharing link, under **Choose the permission that's selected by default for sharing links.**
+
+1. Select **View** if you do not want users to make changes to the files and folders.
+1. Select **Edit** if you want to allow users to make changes to the files and folders.
+
+Optionally, choose an expiration time for *Anyone* links.
+
 ## Create a team
 
 The next step is to create the team that you plan to use for collaborating with guests.
