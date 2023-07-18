@@ -210,11 +210,11 @@ The procedures in this section describe how to define exclusions and indicators.
 In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 > [!TIP]
-> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
+> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
-1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [Create a new antivirus policy with exclusions in Intune](#create-a-new-antivirus-policy-with-exclusions-in-intune).)
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions).)
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
