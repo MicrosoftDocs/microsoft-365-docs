@@ -320,7 +320,7 @@ Built-in exclusions include:
 
 ## Opting out of automatic exclusions
 
-In Windows Server 2016 and later, the predefined exclusions delivered by [Security intelligence updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates) only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and later. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
+In Windows Server 2016 and later, the predefined exclusions delivered by [Security intelligence updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates) only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and later. See [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions) before defining your exclusion lists.
 
 > [!WARNING]
 > Opting out of automatic exclusions might adversely impact performance, or result in data corruption. Automatic server role exclusions are optimized for Windows Server 2016, Windows Server 2019, and Windows Server 2022.
@@ -390,4 +390,5 @@ If necessary, you can add or remove custom exclusions. To do that, see the follo
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
