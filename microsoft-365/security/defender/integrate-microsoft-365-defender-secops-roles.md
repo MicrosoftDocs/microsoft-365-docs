@@ -58,3 +58,4 @@ The following table breaks out each SOC team's roles and responsibilities and ho
 ## Next step
 
 [Step 5. Develop and test use cases](integrate-microsoft-365-defender-secops-use-cases.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

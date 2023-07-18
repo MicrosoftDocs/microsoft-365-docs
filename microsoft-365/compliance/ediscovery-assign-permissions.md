@@ -117,7 +117,7 @@ For more information, see [Work with communications in eDiscovery (Premium)](man
 
 ### Compliance Search
 
-This role lets users run the Content Search tool in the compliance portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
+This role lets users run the Content Search tool in the compliance portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Viva Engage groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
 
 In  Content search and eDiscovery (Standard), users who are assigned the *Compliance Search* role but don't have the *Preview* role can preview the results of a search in which the preview action has been initiated by a user who is assigned the *Preview* role. The user without the *Preview* role can preview results for up to two weeks after the initial preview action was created.
 
