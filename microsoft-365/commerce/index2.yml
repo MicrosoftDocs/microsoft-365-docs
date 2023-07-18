@@ -35,7 +35,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Overview of the Microsoft billing experience
+          - text: Introducing the new Microsoft billing experience
             url: billing-experience-overview.md
           - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
