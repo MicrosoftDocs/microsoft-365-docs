@@ -61,7 +61,7 @@ View our [full list of assessment templates](compliance-manager-templates-list.m
 
 Compliance Manager has published the following new assessment template:
 
-- Hong Kong - Code of Banking Practice and Payment Card
+- Hong Kong Special Administrative Region - Code of Banking Practice and Payment Card
 
 View our [full list of assessment templates](compliance-manager-templates-list.md).
 

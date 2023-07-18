@@ -123,7 +123,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 
     Alternatively, you can select **Advanced query builder** to specify your own queries:
 
-    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
+    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country/region, and state:
 
         ![Example adaptive scope with advanced query.](../media/example-adaptive-scope-advanced-query.png)
 
