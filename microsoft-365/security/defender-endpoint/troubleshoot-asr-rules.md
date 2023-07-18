@@ -1,15 +1,10 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 description: This topic describes how to report and troubleshoot Microsoft Defender for Endpoint ASR Rules
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: lovina-saldanha
+author: dansimp
 ms.author: dansimp
 ms.reviewer:
 manager: dansimp
@@ -22,7 +17,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.date: 12/05/2022
+ms.date: 07/18/2023
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
