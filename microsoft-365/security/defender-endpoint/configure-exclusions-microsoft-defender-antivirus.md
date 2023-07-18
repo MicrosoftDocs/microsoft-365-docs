@@ -28,7 +28,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, when necessary, you can exclude files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as custom exclusions for Microsoft Defender Antivirus. This article describes how to define custom exclusions with Microsoft Intune and includes links to additional resources for more information.
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. However, if necessary, you can exclude files, folders, processes, and process-opened files from Microsoft Defender Antivirus scans. These types of exclusions are known as custom exclusions. This article describes how to define custom exclusions for Microsoft Defender Antivirus with Microsoft Intune and includes links to additional resources for more information.
 
 Custom exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
@@ -42,7 +42,7 @@ If you're using Microsoft Intune to manage Microsoft Defender Antivirus or Micro
 - [Use Intune to manage antivirus exclusions (for existing policies)](#use-intune-to-manage-antivirus-exclusions-for-existing-policies)
 - [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)
 
-See these articles for additional information:
+See these articles for additional information about custom exclusions:
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -90,21 +90,17 @@ See these articles for additional information:
 
 8. On the **Review + create** tab, review the settings, and then choose **Create**.
 
-## Recommendations for defining exclusions
+## Important points about exclusions
 
-> [!IMPORTANT]
-> Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, see [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md).
->
-> Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
+Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
-> [!NOTE]
-> Exclusions directly impact the ability for Microsoft Defender Antivirus to block, remediate or inspect events related to the files, folders or processes that are added to the exclusion list. This means that features which are directly dependent on the AV engine such as protection against malware, file IOCs and certificate IOCs will not be effective. Furthermore, the **Network Protection** and **Attack Surface Reduction (ASR) Rules** are also impacted by process exclusions specifically, meaning that a process exclusion on any platform will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
+Exclusions directly impact the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Features that are directly dependent on the antivirus engine (such as protection against malware, file IOCs and certificate IOCs) are not effective on files, folders, or processes that are excluded. Furthermore, network protection and attack surface reduction (ASR) rules are also affected by process exclusions specifically, so that a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
 
 Keep the following points in mind when you're defining exclusions:
 
-- Exclusions are technically a protection gap. Consider all your options when defining exclusions. Other options can be as simple as making sure the excluded location has the appropriate access-control lists (ACLs) or setting policies to audit mode at first.
+- Exclusions are technically a protection gap. Consider all your options when defining exclusions. See [Submissions, suppressions, and exclusions](defender-endpoint-antivirus-exclusions.md#submissions-suppressions-and-exclusions).
 
-- Review the exclusions periodically. Recheck and re-enforce mitigations as part of your review process.
+- Review exclusions periodically. Recheck and re-enforce mitigations as part of your review process.
 
 - Ideally, avoid defining exclusions in an effort to be proactive. For example, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues, such as those pertaining to performance or application compatibility that exclusions could mitigate.
 
@@ -116,7 +112,7 @@ Microsoft Exchange has supported integration with the Antimalware Scan Interface
 
 Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommends auditing Microsoft Defender Antivirus exclusions on Exchange systems and assessing whether exclusions can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can be managed by using Group Policy, PowerShell, or systems management tools like Microsoft Intune.
 
-To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt.
+To audit Microsoft Defender Antivirus exclusions on an Exchange Server, run the **Get-MpPreference** command from an elevated PowerShell prompt. (See [Get-MpPreference](/powershell/module/defender/get-mppreference?view=windowsserver2022-ps).)
 
 If exclusions can't be removed for the Exchange processes and folders, running a quick scan in Microsoft Defender Antivirus scans the Exchange directories and files, regardless of exclusions.
 
