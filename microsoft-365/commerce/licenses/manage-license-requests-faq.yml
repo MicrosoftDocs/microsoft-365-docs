@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Contracts FAQ"
+  title: "License Reservations FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -32,54 +32,54 @@ sections:
           >
           > Online reservation orders apply only to customers with Enterprise Agreements, Enterprise Agreement Subscriptions, and Enterprise Agreements for Government Partners.
 
-          A **License Reservation** allows a customer to place a License Reservation order to migrate on-premises assets to the Cloud without a Purchase Order.
+          A *License Reservation* allows a customer to place a License Reservation order to migrate on-premises assets to the Cloud without a Purchase Order.
 
           - Only Online Services are eligible for License Reservation orders
-          - Reservation orders are a financial obligation that will be realized during the True-Up or Annual Order process. This is based on the Usage Date of the reservation and the quantity reserved.
+          - Reservation orders are a financial obligation that is realized during the True-Up or Annual Order process. This is based on the Usage Date of the reservation and the quantity reserved.
           - You can place Reservation orders for the current date or a future usage that is no more than six months in the future.
           - You can cancel Reservation orders within 72 hours of the usage date (weekends and holidays included).
-          - Reservations cannot be placed if the enrollment has expired or in the last month before the enrollment will expire. Consult your Microsoft Reseller about ordering options instead.
+          - Reservations can't be placed if the enrollment has expired or in the last month before the enrollment expires. Consult your Microsoft Reseller about ordering options instead.
 
       - question: |
-          How do I Make a License Reservation order
+          How do I make a License Reservation order
         answer: |
           - Go to **Licenses** and select **Make Reservations** from the drop-down menu.
 
           >[!WARNING]
           >
-          > If you leave the VLSC site or close your browser before confirming your reservation, your selections will not be saved.
+          > If you leave the VLSC site or close your browser before confirming your reservation, your selections aren't saved.
 
-          1. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then click **Continue**.
-          2. Select the **Usage Date** for the online reservation and then click **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
+          1. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
+          2. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
 
           >[!NOTE]
           >
-          > After 72 hours, no changes are allowed to your reservation, and this will be reflected as part of your True-up or Annual Order based upon the usage date and quantity reserved.
+          > After 72 hours, no changes are allowed to your reservation. This is reflected as part of your True-up or Annual Order based on the usage date and quantity reserved.
 
-          3. After the **Usage Date** is selected, you will see a list of eligible Online Services available for reserving online.
+          3. After the **Usage Date** is selected, you'll see a list of eligible Online Services available for reserving online.
           4. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
           5. To make the reservation, select **New License**.
-          6. Click **Continue**. You will be taken to the **Reservation Confirmation** page.
-          7. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, click **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, click **Submit Reservation**.
+          6. Select **Continue**. The **Reservation Confirmation** page displays.
+          7. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, select **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, select **Submit Reservation**.
           8. Your online reservation is complete.
 
       - question: |
-          How do I cancel or change a reservation order
+          How do I cancel or change a Reservation order
         answer: |
-          Once you place a reservation, you **cannot change it**. You can cancel a submitted reservation within **72 hours of submission**.
+          Once you place a reservation, you can't change it. You can cancel a submitted reservation within 72 hours of submission.
 
           1. Go to **License** and select **Manage my Reservation**.
-          2. Select the way you want your reservation history to be viewed by: Service, Licensing ID, or Reservation.
+          2. Select how you want your reservation history to be viewed: by Service, Licensing ID, or Reservation.
 
             >[!NOTE]
             >
-            > A message will appear if you do not have any previous reservations.
+            > A message appears if you don't have any previous reservations.
 
           3. From the **Service** view: Open the detailed view of the reservation you want to cancel. If the reservation can be canceled a **Cancel** button is displayed.
-          4. From **Reservation** view: The results are displayed by descending order by **Reservation Date**. Reservation orders that can be canceled are displayed at the top of the page.
-          5. Click **Cancel** to cancel the reservation.
+          4. From **Reservation** view: The results are displayed in descending order by **Reservation Date**. Reservation orders that can be canceled are displayed at the top of the page.
+          5. Select **Cancel** to cancel the reservation.
 
-          If it has been more than 72 hours since your License Reservation was submitted please work with your Microsoft Licensing Reseller to make the necessary adjustments.
+          If it has been more than 72 hours since your License Reservation was submitted, work with your Microsoft Licensing Reseller to make the necessary adjustments.
 
       - question: |
           Why are some fields on the License Reservation page disabled
@@ -92,11 +92,11 @@ sections:
           You can view your reservation history from the **Reservation Confirmation** page or the **Manage my Reservation** page.
 
           1. Go to **License** and select **Manage Reservation**.
-          2. Select the way you want your reservation history to be viewed by: Service, Licensing ID, or Reservation.
+          2. Select how you want your reservation history to be viewed: by Service, Licensing ID, or Reservation.
 
           >[!NOTE]
           >
-          > A message will display if you do not have any previous reservation orders.
+          > A message displays if you don't have any previous reservation orders.
 
       - question: |
           At anniversary time, can I pay only for the licenses I have used
@@ -110,9 +110,9 @@ sections:
 
           Microsoft volume licensing has three categories of Online Services Reservations.
 
-          - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and a VLSC login credentials.
-          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services which require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
-          - A third category of Services are not configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
+          - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and VLSC sign-in credentials.
+          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
+          - A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
 
           >[!NOTE]
           >
@@ -121,21 +121,25 @@ sections:
       - question: |
           Who is eligible to place Reservation orders
         answer: |
-          In the VLSC, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. (Note: Manage Reservation permissions must be specifically assigned to the OSM admin.)
+          In the VLSC, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. 
+          
+          >[!NOTE]
+          > 
+          > Manage Reservation permissions must be specifically assigned to the OSM admin.
 
           A Microsoft Licensing Solution Partner can place a reservation on behalf of their customer if granted permission by the customer.
 
       - question: |
           What if I don't have the authority to accept the Reservation Commitment required for submitting a Reservation order
         answer: |
-          A Reservation order is a financial commitment to purchase reserved items. If you don't have the authority to accept this commitment, please work with the person in your organization who is authorized to do so.
+          A Reservation order is a financial commitment to purchase reserved items. If you don't have the authority to accept this commitment, work with the person in your organization who is authorized to do so.
 
       - question: |
-          Who can I contact with additional questions regarding Reservation orders
+          Who can I contact with other questions regarding Reservation orders
         answer: |
-          Please contact your Partner or Microsoft Representative with any questions.
+          Contact your Partner or Microsoft Representative with any questions.
 
       - question: |
           Contact Assisted Support
         answer: |
-          VLSC customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft will respond to Web Form submissions within 24 hours.
+          VLSC customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours.
