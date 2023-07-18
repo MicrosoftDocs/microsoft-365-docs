@@ -82,3 +82,4 @@ Once disabled, accounts will no longer be routed to security.microsoft.com.
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
 - [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](microsoft-365-security-center-defender-cloud-apps.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

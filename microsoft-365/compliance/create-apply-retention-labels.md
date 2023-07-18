@@ -66,7 +66,7 @@ Decide before you create your retention label policy whether it will be **adapti
 
 3. Use the link to select the retention labels to publish, and then select **Next**.
 
-4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
@@ -96,7 +96,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 2. Run one of the following commands:
     
-    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Viva Engage user messages** and **Viva Engage community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -266,7 +266,7 @@ When you use a standard retention label as your default label for an Outlook fol
 
 - If you move an item with a default retention label from one folder to another folder with a different default retention label: The item gets the new default retention label.
 
-- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed.
+- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed [unless the new folder is the **Deleted Items** folder](/exchange/reference/retention-deleted-items).
 
 When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 

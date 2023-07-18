@@ -51,11 +51,16 @@ The first step to investigate issues detected by your policies is to review poli
 
 - **Reports page**: Go to **Communication compliance** > **Reports** to display communication compliance report widgets. Each widget provides an overview of communication compliance activities and statuses, including access to deeper insights about policy matches and remediation actions.
 
+> [!TIP]
+> Sometimes it's useful to quickly review policy settings without opening a policy. For example, if you're testing multiple policies with different conditions, you might want to save time by reviewing conditions for each policy to determine risk before opening the policy. You can do this by selecting the **Policy settings** button ![Policy settings button](../media/communication-compliance-policy-settings-button.png), which opens a panel where you can view the policy settings. If you're a member of the Communication Compliance or Communication Compliance Admins role group, you can view and change settings from the panel. If you're a member of the Communication Compliance Investigators or Communication Compliance Analysts role group, you can view settings but you can't change them. 
+
 ### Using filters
 
 The next step is to sort the messages so it's easier for you to investigate. From the **Policy details** page, communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and resolved items for each configured policy. You can configure filter queries for a policy or configure and save custom and default filter queries for use in each specific policy. After configuring fields for a filter, you'll see the filter fields displayed on the top of the message queue that you can configure for specific filter values.
 
-For the date filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for views, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
+Key filters (the **Body/Subject**, **Date**, **Sender**, and **Tags** filters) are always displayed on the **Pending** and **Resolved** tabs to make it easy to access those filters. 
+
+For the **Date** filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for views, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
 #### Filter details
 
@@ -65,16 +70,16 @@ The following table outlines filter details:
 
 |**Filter**|**Details**|
 |:-----|:-----|
+| **Body/Subject** | The message body or subject. You can use this filter to search for keywords or a keyword phrase in the body or subject of the message. The subject appears in the **Subject** column for email messages. For Teams messages, nothing appears in the **Subject** column.|
 | **Date** | The date the message was sent or received by a user in your organization. To filter for a single day, select a date range that starts with the day you want results for and end with the following day. For example, if you wanted to filter results for 9/20/2020, you would choose a filter date range of 9/20/2020-9/21/2020.|
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
 | **Item class** | The source of the message based on the message type, email, Microsoft Teams chat, Bloomberg, etc. For more information, see [Item Types and Message Classes](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Recipient domains** | The domain to which the message was sent; typically your Microsoft 365 subscription domain by default. |
+| **Recipient domains** | The domain to which the message was sent; this is typically your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
 | **Size** | The size of the message in KB. |
-| **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
 | **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). For a list of supported languages, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). <br><br> You can also filter by more than one language. For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the *EmailDetectedLanguage* field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
@@ -92,7 +97,7 @@ The following table outlines filter details:
 
 5. Select the **Filters** button to open the **Filters** details page.
 
-6. Select one or more checkboxes to enable filters. You can choose from numerous filters, including *Date*, *Sender*, *Subject/Title*, *Classifiers*, *Language*, and more.
+6. Select one or more checkboxes to enable filters for these alerts. You can choose from numerous filters.
 
 7. If you'd like to save the filter selected as the default filter, select **Save as default**. If you want to use this filter as a saved filter, select **Done**.
 
@@ -128,7 +133,7 @@ After reviewing the message basics, now you can open a message to examine the de
 After reviewing the details of the message, you can choose several remediation actions:
 
 - **Resolve**: Selecting the **Resolve** button immediately removes the message from the **Pending** queue and no further action can be taken on the message. When you select **Resolve**, you close the message without further classification. All resolved messages are displayed in the **Resolved** tab.
-- **Report as misclassified**: You can always resolve a message as misclassified at any point during the message review workflow. "Misclassified" signifies that the message was non-actionable or that the message was incorrectly generated by the alerting process and any trainable classifiers. Resolving the item as misclassified sends message content, attachments, and the message subject (including metadata) to Microsoft to help improve trainable classifiers. Data that is sent to Microsoft doesn't contain information that may identify or be used to identify any users in your organization. Further actions can’t be taken on the message and all misclassified messages are displayed in the **Resolved** tab.
+- **Report as misclassified**: You can resolve a message as misclassified at any point during the message review workflow. "Misclassified" signifies that the message is non-actionable or that the message was incorrectly generated by the alerting process and any trainable classifiers. Resolving the item as misclassified sends the message content, attachments, and the message subject (including metadata) to Microsoft to help improve trainable classifiers. Data that is sent to Microsoft doesn't contain information that may identify or be used to identify any users in your organization. Further actions can’t be taken on the message and all misclassified messages are displayed in the **Resolved** tab.
 - **Power Automate**: Use a Power Automate flow to automate process tasks for a message. By default, communication compliance includes the *Notify manager when a user has a communication compliance alert* flow template that reviewers can use to automate the notification process for users with message alerts. For more information about creating and managing Power Automate flows in communication compliance, see the **Step 5: Consider Power Automate flows** section in this article.
 - **Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization. Adding tags and tagging comments helps you micro-filter messages for escalations or as part of other internal review processes. After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.
 - **Notify**: Use the **Notify** button to assign a custom notice template to the message and send a warning notice to the user. Choose the appropriate notice template configured in the **Communication compliance settings** area and select **Send** to email a reminder to the user that sent the message and to resolve the issue.
