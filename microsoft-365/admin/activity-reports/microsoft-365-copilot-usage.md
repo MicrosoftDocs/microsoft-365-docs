@@ -37,7 +37,7 @@ In the **Microsoft 365 Copilot report** (which is in continuous enhancement), y
 
 ## Interpret the Microsoft 365 Copilot report
 
-You can use this report to see usage of Microsoft 365 Copilot in your organization. You see the following summary charts in this report:
+You can use this report to see the usage of Microsoft 365 Copilot in your organization. You can see the following summary charts in this report:
 
 :::image type="content" alt-text="Microsoft 365 Copilot usage summary chart" source="../../media/copilot-usage-report-summary.png" lightbox="../../media/copilot-usage-report-summary.png":::
 
@@ -81,8 +81,8 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 To make the data in the Microsoft 365 Copilot usage report anonymous, you must be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Azure Active Directory Object ID in report and their export.
 
-3. In Microsoft 365 admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
+1. In Microsoft 365 admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
 
-4. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
+2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
 
-5. Select **Save changes**.
+3. Select **Save changes**.
