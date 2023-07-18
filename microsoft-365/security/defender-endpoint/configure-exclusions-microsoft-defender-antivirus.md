@@ -1,6 +1,6 @@
 ---
 title: Configure custom exclusions for Microsoft Defender Antivirus
-description: You can exclude files (including files modified by specified processes) and folders from being scanned by Microsoft Defender Antivirus. Validate your exclusions with PowerShell.
+description: You can exclude files (including files modified by specified processes) and folders from Microsoft Defender Antivirus scans.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.date: 04/14/2023
@@ -94,7 +94,7 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you're confident aren't malicious.
 
-Exclusions directly affect the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Features that are directly dependent on the antivirus engine (such as protection against malware, file IOCs and certificate IOCs) are not effective on files, folders, or processes that are excluded. Furthermore, network protection and attack surface reduction (ASR) rules are also affected by process exclusions specifically, so that a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
+Exclusions directly affect the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Features that are directly dependent on the antivirus engine (such as protection against malware, file IOCs and certificate IOCs) are not effective on files, folders, or processes that are excluded. Furthermore, [network protection](network-protection.md) and [attack surface reduction (ASR) rules](attack-surface-reduction.md) are also affected by process exclusions specifically, so that a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
 
 Keep the following points in mind when you're defining exclusions:
 
