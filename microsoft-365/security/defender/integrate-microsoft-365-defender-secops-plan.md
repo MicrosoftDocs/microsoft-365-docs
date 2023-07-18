@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security
-  - m365solution-m365dsecops
+  - zerotrust-solution
+  - msftsolution-secops
   - tier2
 ms.topic: conceptual
 search.appverid:
@@ -56,3 +56,4 @@ Every SOC team should test its preparedness in responding to a cyber incident. T
 ## Next step
 
 [Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework](integrate-microsoft-365-defender-secops-readiness.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

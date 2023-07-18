@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/07/2023
+ms.date: 05/03/2023
 audience: itpro
 ms.collection:
 - tier1
@@ -30,7 +30,7 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Yammer, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (such as stock and capital manipulations).  
+Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Viva Engage, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (such as stock and capital manipulations).  
 
 Communication compliance's mission is to foster safe and compliant communications across customers' enterprise communication channels. With role-based access controls, human investigators can take remediation actions such as removing a message from Teams or notifying senders of potentially inappropriate conduct.
 
@@ -51,8 +51,8 @@ Users are given [permissions](/microsoft-365/compliance/communication-compliance
 
 Communication compliance empowers organizations to detect, triage, and remediate communications with potential business conduct and/or regulatory compliance violations. Communication compliance provides the following policy templates that use machine learning classifiers for users:  
 
-- **Business conduct**: Corporate sabotage (preview), Discrimination, Profanity, Threat, and Targeted harassment classifiers
-- **Regulatory compliance**: Customer complaints, gifts & entertainment (preview), money laundering (preview), regulatory collusion (preview), stock manipulation (preview), unauthorized disclosure (preview) classifiers
+- **Business conduct**: Discrimination, Profanity, Threat, and Targeted harassment classifiers
+- **Regulatory compliance**: Corporate sabotage, customer complaints, gifts & entertainment, money laundering, regulatory collusion, stock manipulation, unauthorized disclosure classifiers
 
 ## Metrics used to evaluate and measure performance
 
@@ -69,7 +69,7 @@ Operational factors and settings allow for effective and responsible use of the 
 |End user reporting of inappropriate content in Teams|Message recipients can report messages they find inappropriate or deem a data security incident as a proactive approach to identifying communication risks.|
 |Keyword highlighting of messages caught by built-in classifiers|Investigators gain clarity on which key phrases trigger which classifiers.|
 |Pseudonymization|Sender/recipient aliases are pseudonymized to minimize investigation bias.|
-|Users choose which communication channels to detect for patterns in|Users can choose which channels, such as Microsoft Teams, Exchange, Yammer, or third-party sources, to identify and detect content patterns.|
+|Users choose which communication channels to detect for patterns in|Users can choose which channels, such as Microsoft Teams, Exchange, Viva Engage, or third-party sources, to identify and detect content patterns.|
 |Feedback loop to report misclassified items|Items misclassified by machine learning classifiers can be reported to Microsoft to improve future performance of classifiers. User privacy is honored as per the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).|
 
 ## Limitations of communication compliance
@@ -100,4 +100,4 @@ Use the following steps to configure communication compliance for your organizat
 ## More information about communication compliance
 
 - [Investigate and remediate alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate)
-- [Case study: Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications](/microsoft-365/compliance/communication-compliance-case-study)
+- [Case study: Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Viva Engage communications](/microsoft-365/compliance/communication-compliance-case-study)

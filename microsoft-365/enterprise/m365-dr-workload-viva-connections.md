@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -44,4 +45,4 @@ Data is stored within Exchange Online, SharePoint Online and Microsoft Teams.  M
 
 ### How can I determine customer data location?
 
-We are in the process of updating the actual data location in _Tenant_ Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online, SharePoint Online and Microsoft Teams data location information in order to understand where your committed data is stored for this service.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.

@@ -71,7 +71,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Government Community Cloud High (GCC High)
 >- US Department of Defense
 >- All US government institutions with commercial licenses
->- See availability for the above enviroments here: [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
+>- See availability for the above environments here: [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
 
 Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
@@ -183,3 +183,4 @@ Logging in to multiple tenants simultaneously in the same browsing session is cu
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

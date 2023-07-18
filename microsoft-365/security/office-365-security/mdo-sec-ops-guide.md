@@ -12,22 +12,22 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - m365-security
+  - zerotrust-solution
+  - msftsolution-secops
   - tier1
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/22/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 This article gives an overview of the requirements and tasks for successfully operating Microsoft Defender for Office 365 in your organization. These tasks help ensure that your security operations center (SOC) provides a high-quality, reliable approach to protect, detect, and respond to email and collaboration-related security threats.
 
@@ -158,7 +158,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review the **Spoof intelligence insight** and the **Impersonation detection insights** at <ul><li><<https://security.microsoft.com/spoofintelligence>></li><li><https://security.microsoft.com/impersonationinsight></li></ul>.|Ad-hoc <br/><br/> Monthly|Use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to adjust filtering for spoof and impersonation detections.|Security Administration <br/><br/> Messaging Team|
+|Review the **Spoof intelligence insight** and the **Impersonation detection insights** at <ul><li><https://security.microsoft.com/spoofintelligence></li><li><https://security.microsoft.com/impersonationinsight></li></ul>.|Ad-hoc <br/><br/> Monthly|Use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to adjust filtering for spoof and impersonation detections.|Security Administration <br/><br/> Messaging Team|
 
 ### Review priority account membership
 
@@ -189,7 +189,7 @@ The following permissions (roles and role groups) are available in Defender for 
   - **[Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator)**
   - **[Security Reader](/azure/active-directory/roles/permissions-reference#security-reader)**
 
-- **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles are not available in Azure AD, but can be important for security teams:
+- **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles aren't available in Azure AD, but can be important for security teams:
 
   - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to [preview and download](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) email messages in cloud mailboxes using the [email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
 
@@ -198,7 +198,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - eDiscovery Manager
 
-    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Search and Purge** role (Email & collaboration): Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
@@ -207,11 +207,11 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - Organization Management
 
-    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
-    By default, this role is assigned only to the **Security Operator role group in Exchange Online**, not in Azure AD. Membership in the **[Security Operator role in Azure AD](/azure/active-directory/roles/permissions-reference#security-operator)** _does not_ allow you to manage entries the Tenant Allow/Block List.
+    By default, this role is assigned only to the **Security Operator role group in Exchange Online**, not in Azure AD. Membership in the **[Security Operator role in Azure AD](/azure/active-directory/roles/permissions-reference#security-operator)** _doesn't_ allow you to manage entries the Tenant Allow/Block List.
 
     Members of the **Security Administrator** or **Organization management** roles in Azure AD or the corresponding role groups in Exchange Online _are_ able to manage entries in the Tenant Allow/Block List.
 
@@ -221,7 +221,7 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 - [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft 365 Defender. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
-- [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported Defender for Office 365 event types include:
+- [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
   - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
   - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
   - [EmailAttachmentInfo](/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table)
@@ -235,7 +235,7 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft 365 Defender (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-You can use this simple "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world).
+You can use the following "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world).
 
 For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
 
@@ -249,13 +249,13 @@ Organizations have multiple options for configuring user reported messages. Depe
   - **Send the reported messages to**: **Microsoft only**.
   - **Send the reported messages to**: **Microsoft and my reporting mailbox**.
 
-  Security teams members should do add-hoc [admin submissions](submissions-admin.md) when false positives or false negatives that were not reported by users were discovered by the operations teams.
+  Security teams members should do add-hoc [admin submissions](submissions-admin.md) when the operations team discovers false positives or false negatives that weren't reported by users.
 
 - When user reported messages are configured to send messages only to the organization's mailbox, security teams should actively send user-reported false positives and false negatives to Microsoft via admin submissions.
 
-Whenever a user reports a message as phishing, Defender for Office 365 generates an alert and the alert will trigger an AIR playbook. Incident logic will correlate this information to other alerts and events where possible. This consolidation of information helps security teams triage, investigate, and respond to user reported messages.
+When a user reports a message as phishing, Defender for Office 365 generates an alert, and the alert triggers an AIR playbook. Incident logic correlates this information to other alerts and events where possible. This consolidation of information helps security teams triage, investigate, and respond to user reported messages.
 
-User reported messages and admin submissions are handled by the submission pipeline by Microsoft, which follows a tightly integrated process. This process includes:
+The submission pipeline in the service follows a tightly integrated process when user report messages and admins submit messages. This process includes:
 
 - Noise reduction.
 - Automated triage.
@@ -265,18 +265,18 @@ For more information, see [Reporting an email in Defender for Office 365 - Micro
 
 Security team members can do submissions from multiple locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>:
 
-- [Admin submission](submissions-admin.md): Use the Submissions page to submit suspected spam, phishing, URLs, and files to Microsoft.
+- [Admin submission](submissions-admin.md): Use the **Submissions** page to submit suspected spam, phishing, URLs, and files to Microsoft.
 - Directly from Threat Explorer using one of the following message actions:
   - Report clean
   - Report phishing
   - Report malware
   - Report spam
 
-  You can select up to 10 messages to perform a bulk submission. Admin submissions created this way also visible in the Submission portal.
+  You can select up to 10 messages to perform a bulk submission. Admin submissions created using these methods are visible on the respective tabs on the **Submissions** page.
 
 For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
-For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](submissions-admin.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses on the Submissions page](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-on-the-submissions-page).
+For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](submissions-admin.md) to report the email message as a false positive. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 [Quarantine](quarantine-admin-manage-messages-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
@@ -288,12 +288,12 @@ If your organization uses a third-party reporting tool that allows users to inte
 - Simplified triage.
 - Reduced investigation and response time.
 
-Designate the reporting mailbox where user reported messages are sent on the **User reported** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+Designate the reporting mailbox where user reported messages are sent on the **User reported settings** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 > [!NOTE]
 >
 > - The reporting mailbox must be an Exchange Online mailbox.
-> - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the reporting mailbox (don't just forward the original message to the reporting mailbox).
+> - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the reporting mailbox (don't just forward the original message to the reporting mailbox). For more information, see [Message submission format for third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#message-submission-format-for-third-party-reporting-tools).
 > - The reporting mailbox requires specific prerequisites to allow potentially bad messages to be delivered without being filtered or altered. For more information, see [Configuration requirements for the reporting mailbox](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
 When a user reported message arrives in the reporting mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](air-about-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:

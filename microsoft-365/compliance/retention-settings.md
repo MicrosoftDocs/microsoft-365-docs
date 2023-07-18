@@ -218,7 +218,7 @@ By choosing the settings for retaining and deleting content, your policy for ret
 
 ### Retaining content for a specific period of time
 
-When you configure a retention label or policy to retain content, you choose to retain items for a specific number of days, months (assumes 30 days for a month), or years. Or alternatively, retain the items forever. The retention period isn't calculated from the time the policy was assigned, but according to the start of the retention period specified.
+When you configure a retention label or policy to retain content in the compliance portal, you choose to retain items for a specific number of days, months (assumes 30 days), or years (assumes 365 days). Or alternatively, retain the items forever. The retention period isn't calculated from the time the policy was assigned, but according to the start of the retention period specified.
 
 For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified. For retention labels, you can start the retention period from the content was labeled, and when an event occurs.
 
@@ -238,7 +238,7 @@ Before you configure retention, first familiarize yourself with capacity and sto
 
 - For SharePoint and OneDrive, retained items are stored in the site's Preservation Hold library, which is included in the site's storage quota. For more information, see [Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) from the SharePoint documentation.
 
-- For Exchange, Teams, and Yammer, where retained messages are stored in mailboxes, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and enable [auto-expanding archiving](autoexpanding-archiving.md).
+- For Exchange, Teams, and Viva Engage, where retained messages are stored in mailboxes, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and enable [auto-expanding archiving](autoexpanding-archiving.md).
     
     In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
@@ -272,7 +272,7 @@ With these concatenated settings, users will be able to delete the item from the
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is currently checked out, the relabel process is retried when the file is checked back in again, or checkout is discarded.
 
-- As a known issue for this preview, a replacement label is visible to users in Outlook only when that label is included in a published label policy for the same location, or it's configured for delete-only.
+- A replacement label is visible to users in Outlook only when that label is included in a published label policy for the same location, or it's configured for delete-only.
 
 ##### Configuration paths for relabeling
 

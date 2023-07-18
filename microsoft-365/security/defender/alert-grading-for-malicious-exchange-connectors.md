@@ -10,7 +10,7 @@ ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
-author: dansimp
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -243,3 +243,4 @@ Once it's determined that the observed alert activities are part of TP, classify
 
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

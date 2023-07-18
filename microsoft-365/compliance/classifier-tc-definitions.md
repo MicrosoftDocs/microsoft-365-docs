@@ -76,14 +76,14 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects construction specifications for commercial and industrial projects like factories, plants, commercial offices, airports, roads. | Captures guidelines on the quality, quantity, types of building material, processes etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Corporate sabotage (preview)
+## Corporate sabotage
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects messages that may mention acts to damage or destroy  corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.| English |
   
 > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Customer complaints
 
@@ -157,14 +157,14 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export import customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
 
-## Gifts & entertainment (preview)
+## Gifts & entertainment
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as  Foreign Corrupt Practices Act (FCPA), UK Bribery Act and FINRA Rule 2320.  | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | English |
 
 > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Harassment
 
@@ -250,14 +250,14 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects documents and notes containing information specific to meetings. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Money laundering (preview)
+## Money laundering
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier helps customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310 and Anti-Money Laundering Act of 2020. | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | English |
 
 > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Network design files
 
@@ -307,14 +307,14 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects documents that offer to sell goods or services for a set price, based on certain conditions. It contains a description of the goods or services, the price of the goods or rate of the service, the quantity, and a total cost. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Regulatory collusion (preview)
+## Regulatory collusion
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage  regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and Robinson-Patman Act. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | English |
 
 > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Resume
 
@@ -367,14 +367,14 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects statement of work (SOW) containing details like requirements, responsibilities, terms and conditions for both parties.  | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
-## Stock manipulation (preview)
+## Stock manipulation
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | English |
 
 > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Tax documents
 
@@ -388,20 +388,20 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
-## Unauthorized disclosure (preview)
+## Unauthorized disclosure
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | English |
 
  > [!IMPORTANT]
-> While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+> This classifier may capture a large volume of bulk sender/newsletter content. In Communication Compliance, you can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the **Filter email blasts** check box when you create the policy. You can also edit an existing Communication Compliance policy to turn on this feature.
 
 ## Wire Transfer
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgments. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Word count requirements
 
@@ -409,7 +409,8 @@ Some classifiers have minimum word count requirements for messages. To identify 
 
 |**Classifier**|**Minimum word count**|**Language**|
 |:-------------|:--------------|:--------------|
-| Threat, Harassment, and Profanity | 12 words | non-English |
+| Threat, Harassment, and Profanity | 6 words | Dutch, French, German, Italian, Japanese, Portuguese, Spanish |
+| Threat, Harassment, and Profanity | 12 words | Arabic, Chinese Simplified, Chinese Traditional, Korean |
 | Threat and Harassment | 3 words | English |
 | Profanity | 5 words | English |
 | Corporate sabotage, Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure | 6 words | English |

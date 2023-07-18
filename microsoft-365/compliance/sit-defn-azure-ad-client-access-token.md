@@ -87,10 +87,12 @@ for example:
 
 ## Credential example 
 
-`Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
+|Confidence Band|Example|
+|----|----|
+|High| `Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIm5vbmNlIjoibm9uY2UifQ.eyJhdWQiOiJodHRwczovL2hvc3QiLCJleHAiOjk5OTk5OTk5OTksImFwcGlkIjoiaWQiLCJ2ZXIiOiIxLjAifQ.UVQYT1FBt5J_` |
+|Medium| `Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2hvc3QiLCJleHAiOjk5OTk5OTk5OTksImFwcGlkIjoiaWQiLCJ2ZXIiOiIxLjAifQ.UVQYT1FBt5J_` |
+|Low| `Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2hvc3QiLCJleHAiOjk5OTk5OTk5OTl9.UVQYT1FBt5J_` |
 
-> [!IMPORTANT]
-> This example has been truncated. It’s not a detectable example of this SIT.
 
 ## Checksum
 

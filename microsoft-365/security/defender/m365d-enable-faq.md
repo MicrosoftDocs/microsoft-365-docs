@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
@@ -111,3 +111,4 @@ Get the latest publicly available experiences by turning on [preview features](p
 - [Deploy supported services](deploy-supported-services.md)
 - [Setup guides for Microsoft 365 Defender](deploy-configure-m365-defender.md)
 - [Turn on preview features](preview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

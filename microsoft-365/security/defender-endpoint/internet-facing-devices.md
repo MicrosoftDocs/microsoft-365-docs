@@ -1,11 +1,7 @@
 ---
 title: Identify internet-facing devices in Microsoft Defender for Endpoint
 description: Identify internet-facing devices in the device inventory list
-keywords: devices, internet-facing, internet-facing
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/7/2023
+ms.date: 07/10/2023
 ---
 
 # Internet-facing devices
@@ -27,10 +23,11 @@ ms.date: 03/7/2023
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization's external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
 
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organization's external attack surface and insights into asset exploitability.
 
@@ -67,6 +64,9 @@ You can use filters to focus in on internet-facing devices and investigate the r
 
    :::image type="content" source="../../media/defender-endpoint/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-endpoint/internet-facing-filter.png":::
 
+> [!NOTE]
+> If no new events for a device occur for 48 hours, the Internet-facing tag is removed and it will no longer be visible in the Microsoft 365 Defender portal.
+
 ## Investigate your internet-facing devices
 
 To learn more about an internet-facing device, select the device in the device inventory to open its flyout pane:
@@ -88,13 +88,14 @@ Use this query to find all devices that are internet facing.
 ```kusto
 // Find all devices that are internet-facing
 DeviceInfo
+| where Timestamp > ago(7d)
 | where IsInternetFacing
-| extend InternetFacingInfo  = AdditionalFields
-| extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingScannedPublicPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingScannedPublicIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
+| extend InternetFacingInfo = AdditionalFields
+| extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingPublicScannedPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingPublicScannedIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-This query returns the following fields for each internet-facing device with their aggregated evidence in the “AdditionalFields” column.
+This query returns the following fields for each internet-facing device with their aggregated evidence in the "AdditionalFields" column.
 
 - **InternetFacingReason**: Whether the device was detected by an external scan or received incoming communication from the internet
 - **InternetFacingLocalIp**: The local IP address of the internet facing interface
@@ -110,14 +111,11 @@ For TCP connections, you can  gain further insights into applications or service
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
 ```kusto
-DeviceNetworkEvents
-| where Timestamp > ago(7d)
-| where DeviceId == ""
-| where not(InitiatingProcessCommandLine has_any ("TaniumClient.exe", "ZSATunnel.exe", "MsSense.exe"))
-| where ActionType =="InboundConnectionAccepted"
-| extend LocalIP = replace(@"::ffff:", "", LocalIP),RemoteIP = replace(@"::ffff:", "", RemoteIP)
-| where LocalIP!= RemoteIP and RemoteIP !in~ ("::", "::1", "0.0.0.0", "127.0.0.1") and not(ipv4_is_private( RemoteIP ))
-| project-reorder DeviceId, LocalIP, LocalPort, RemoteIP, RemotePort, InitiatingProcessCommandLine, InitiatingProcessId, DeviceName
+// Use this function to obtain the device incoming communication from public IP addresses
+// Input:
+// DeviceId - the device ID that you want to investigate.
+// The function will return the last 7 days of data.
+InboundExternalNetworkEvents("<DeviceId>")
 ```
 
 >[!Note]
@@ -127,6 +125,7 @@ Use the following query for devices tagged with the reason **This device was det
 
 ```kusto
 DeviceNetworkEvents
+| where Timestamp > ago(7d)
 | where DeviceId == ""
 | where Protocol == "Tcp"
 | where ActionType == "InboundInternetScanInspected"
@@ -136,6 +135,7 @@ For UDP connections, gain insights into devices that were identified as host rea
 
 ```kusto
 DeviceNetworkEvents
+| where Timestamp > ago(7d)
 | where DeviceId == ""
 | where Protocol == "Udp"
 | where ActionType == "InboundInternetScanInspected"

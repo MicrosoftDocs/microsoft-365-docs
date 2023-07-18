@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -99,3 +99,4 @@ Learn how to [perform a post-incident review of an incident](first-incident-post
 - [Incidents overview](incidents-overview.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

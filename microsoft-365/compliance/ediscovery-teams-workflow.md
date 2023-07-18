@@ -164,7 +164,7 @@ Use the **Group** control in the command bar of a review set to view Teams conte
 ![Group control in command bar.](..\media\TeamsGroupControl.png)
 
 - Select **Group family attachments** to view Teams content grouped by family. Each transcript file is displayed on a line in the list of review set items. Attachments are nested under the item.
-- Select **Group Teams or Yammer conversations** to view Teams content grouped by conversation. Each conversation is displayed on a line in the list of review set items. Transcript files and attachments are nested under the top-level conversation.
+- Select **Group Teams or Viva Engage conversations** to view Teams content grouped by conversation. Each conversation is displayed on a line in the list of review set items. Transcript files and attachments are nested under the top-level conversation.
 
 > [!NOTE]
 > Cloud attachments are grouped with the conversations they appear in. This grouping is accomplished by assigning the same **FamilyId** as the transcript file of the message the file was attached to and the same **ConversationId** as the conversation the message appeared in. This means multiple copies of cloud attachments may be added to the review set if they were attached to different conversations.

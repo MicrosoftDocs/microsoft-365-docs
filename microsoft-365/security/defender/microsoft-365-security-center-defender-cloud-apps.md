@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
+title: Microsoft Defender for Cloud Apps in Microsoft 365 Defender
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
 ms.service: microsoft-365-security
@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: bagol
+author: batamig
 manager: dansimp
 ms.date: 08/04/2022
 audience: ITPro
@@ -23,7 +23,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ---
 
-# Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)
+# Microsoft Defender for Cloud Apps in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -109,15 +109,17 @@ The images and the tables below list the changes in navigation between Microsoft
 | IP address ranges              | Settings -> Cloud apps                                      |
 | User groups                    | Settings -> Cloud apps                                      |
 
+The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+  
+- [Settings > Azure AD Identity Protection](investigate-alerts.md)
+- [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
+- [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
+
 ## Limitations
 
 - The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
   - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
   - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
-
-- The new experience is currently available for full Microsoft Defender for Cloud Apps licenses only.
-- New customers need to first sign in to the Microsoft Defender for Cloud Apps portal.
-- Some links may redirect you to the Defender for Cloud Apps portal.
 
 ## What's changed
 
@@ -133,9 +135,9 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
 
-### Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (preview)
+### Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 
-You can route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)](microsoft-365-security-mda-redirection.md).
+You can route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](microsoft-365-security-mda-redirection.md).
 
 ### Preview features in Defender for Cloud Apps
 
@@ -164,3 +166,4 @@ Learn how to protect your cloud apps in Microsoft 365 Defender:
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

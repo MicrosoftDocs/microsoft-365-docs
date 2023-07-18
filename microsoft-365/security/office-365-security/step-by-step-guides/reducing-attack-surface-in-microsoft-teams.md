@@ -1,7 +1,7 @@
 ---
 title: Reduce the attack surface for Microsoft Teams
 description: Configuration which can be used to reduce the attack surface in Microsoft Teams, including enabling Microsoft Defender for Office 365.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -77,7 +77,7 @@ Users can store their files in potentially unsupported third party storage provi
 
 ## Disabling Third-party & custom apps
 
-Applications are a very useful part of Microsoft teams, but it's recommended to maintain a list of allowed apps rather than allowing all apps by default.
+Applications are a very useful part of Microsoft Teams, but it's recommended to maintain a list of allowed apps rather than allowing all apps by default.
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Teams apps** and then choose **Permission Policies**.
@@ -98,11 +98,10 @@ You can reduce the attack surface by ensuring people outside your organization c
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
 3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
 4. Under the **Content sharing** heading, ensure **External participants can give or request control** is set to **off**.
-5. Under the **Participants & guests** heading, ensure **Automatically admit people** is set to **Invited users only**.
-6. Ensure **Dial-in users can bypass the lobby** is set to **off**.
-7. Ensure **Let anonymous people join a meeting** is set to **off**.
-8. Set **Chat in meetings** to **"Turn it on for everyone but anonymous users"**.
-9. Press **Save**.
+6. Under the **Meeting join & lobby** heading, ensure **People dialing in can bypass the lobby** is set to **off**.
+7. Ensure **Anonymous users can join a meeting** is set to **off**.
+8. Under the **Meeting engagement** heading, Set **Meeting chat** to **"On for everyone but anonymous users"**.
+9. Select **Save**.
 10. You need to change this setting for each policy.
 
 ## Configure meeting settings (Restrict presenters)
@@ -112,20 +111,22 @@ You can reduce the risk of unwanted or inappropriate content being shared during
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
 3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
-4. Under the **Participants & guests** heading, toggle who can present in meetings to **Organizers, but users can override.**
-5. Press **Save**.
+4. Under the **Content sharing** heading, set **Who can present** to **Only organizers and co-organizers**. 
+5. Select **Save**.
 6. You need to change this setting for each policy.
 
-## Disable open federation
+## Limit domains for external access
 
-Open federation allows your users to communicate externally in Microsoft teams, allowing external organizations to start a conversation with your users and vice versa, which is useful for collaboration, but also for attackers to directly communicate with your organization if they know a victims email address.
+External access allows your users to communicate externally in Teams, allowing external organizations to start a conversation with your users and vice versa, which is useful for collaboration, but also for attackers to directly communicate with your organization if they know a victim's email address.
 [Learn more](/microsoftteams/manage-external-access) (detailed documentation)
 
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Users** and then choose **External access**.
 3. Under the **Teams and Skype for Business users in external organizations** heading, select the **Choose which external domains your users have access to** dropdown and set this to **Allow only specific external domains**.
-4. Enter any external domains users should be able to communicate with by pressing **Allow domains,** using the flyout, and pressing **Done** when finished.
-5. Press **Save**.
+4. Enter any external domains users should be able to communicate with by selecting **Allow domains**, using the flyout, and selecting **Done** when finished.
+5. Select **Save**.
+
+Note that external organizations must also allow your organization's domain for external access to work.
 
 ## Learn More
 

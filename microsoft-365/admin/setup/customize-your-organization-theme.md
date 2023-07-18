@@ -3,9 +3,9 @@ title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 07/06/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -22,11 +22,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
@@ -36,13 +31,15 @@ Check out all of our small business content on [Small business help & learning](
 
 As the admin of your organization, you can create multiple themes for the people in your organization, and select which themes apply to different members of your organization. The organization theme is what appears in the top navigation bar for people in your organization.
 
-You can add or update a default theme that applies to everyone within your org. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
+You can add or update a default theme that applies to everyone in your organization. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
   
 ## Add or update your organization's theme
 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
 2. On the **Organization profile** tab, select **Custom themes**.
+
+3. Choose **Add theme** and add the required info for the tabs.
 
 All organization themes can be customized using the following tabs.
 
@@ -85,7 +82,7 @@ You can create up to four additional group themes.
 
 On the **Logos** page, you can add your logos, and specify the URL where users will navigate to when they select the logo.
 
-- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add an HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Microsoft 365 dark themes. Same requirements as the default logo.
 - **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location for your logo, it’ll default to the Microsoft 365 home page.
 
@@ -136,7 +133,7 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
 
-### Why am I receiving an error message every time I upload a logo URL.  
+### Why am I receiving an error message every time I upload a logo URL
 
 Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/06/2023
+ms.date: 05/09/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -55,17 +55,17 @@ Although a retention policy can support multiple services that are identified as
 - **Teams channel messages**
 - **Teams chats**
 - **Teams private channel messages**
-- **Yammer community messages**
-- **Yammer user messages**
+- **Viva Engage community messages**
+- **Viva Engage user messages**
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations.
+If you select the Teams or Viva Engage locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Viva Engage locations.
 
 > [!NOTE]
-> When you use adaptive policies instead of static policies, you can configure a single retention policy to include both Teams and Yammer locations. This isn't the case for static policies where Teams and Yammer locations require their own retention policy.
+> When you use adaptive policies instead of static policies, you can configure a single retention policy to include both Teams and Viva Engage locations. This isn't the case for static policies where Teams and Viva Engage locations require their own retention policy.
 
 When you've more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) to understand the outcome when multiple retention settings apply to the same content.
 
-Select the tab for instructions to create a retention policy for Teams, Yammer, or the other supported services (Exchange, SharePoint, OneDrive, Microsoft 365 Groups, Skype for Business):
+Select the tab for instructions to create a retention policy for Teams, Viva Engage, or the other supported services (Exchange, SharePoint, OneDrive, Microsoft 365 Groups, Skype for Business):
 
 # [Retention policy for Teams](#tab/teams-retention)
 
@@ -78,9 +78,13 @@ Select the tab for instructions to create a retention policy for Teams, Yammer, 
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+
+5. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Teams chats** but not **Teams channel messages**. 
     
@@ -91,11 +95,11 @@ Select the tab for instructions to create a retention policy for Teams, Yammer, 
         
        By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
 For guidance when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
@@ -124,52 +128,56 @@ If you have team sites that aren't connected to a Microsoft 365 group, you need 
 
 It's possible that a retention policy that's applied to Microsoft 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
 
-# [Retention policy for Yammer](#tab/yammer-retention)
+# [Retention policy for Viva Engage](#tab/viva-engage-retention)
 
 > [!NOTE]
-> Retention policies for Yammer currently do not inform users when messages are deleted as a result of a retention policy.
+> Retention policies for Viva Engage currently do not inform users when messages are deleted as a result of a retention policy.
 >
-> To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
+> To use this feature, your Viva Engage network must be [Native Mode](/viva-engage/configure-your-viva-engage-network/overview-native-mode), not Hybrid Mode.
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
 2. Select **New retention policy** to create a new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the retention policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option.
+
+5. Depending on your selected scope:
     
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Yammer user messages** but not **Yammer community messages**. 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Viva Engage user messages** but not **Viva Engage community messages**. 
     
-    - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
+    - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Viva Engage: **Viva Engage community message** and **Viva Engage user messages**.
         
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
-        For Yammer user messages: 
+        For Viva Engage user messages: 
         - If you leave the default at **All users**, Azure B2B guest users are not included. 
         - If you select **Edit** for **All users**, you can apply a retention policy to external users if you know their account.
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content. 
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
-For technical details about how retention works for Yammer, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Yammer](retention-policies-yammer.md).
+For technical details about how retention works for Viva Engage, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Viva Engage](retention-policies-viva-engage.md).
 
-#### Known configuration issues for Yammer retention policies
+#### Known configuration issues for Viva Engage retention policies
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
-- When you select **Edit** for the Yammer user messages location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+- When you select **Edit** for the Viva Engage user messages location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
-#### Additional retention policies needed to support Yammer
+#### Additional retention policies needed to support Viva Engage
 
-Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Group mailboxes & sites** location.
+Viva Engage is more than just community messages and private messages. To retain and delete email messages for your Viva Engage network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Viva Engage, by using the **Microsoft 365 Group mailboxes & sites** location.
 
-This location will also include files that are uploaded to Yammer communities. These files are stored in the group-connected SharePoint site for the Yammer community.
+This location will also include files that are uploaded to Viva Engage communities. These files are stored in the group-connected SharePoint site for the Viva Engage community.
 
-It's possible that a retention policy that's applied to SharePoint sites could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint.
+It's possible that a retention policy that's applied to SharePoint sites could delete a file that's referenced in a Viva Engage message before those messages get deleted. In this scenario, the file still displays in the Viva Engage message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint.
 
 # [Retention policy for all other services](#tab/other-retention)
 
@@ -181,17 +189,24 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
+> [!NOTE]
+> If your organization is using [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) and you're a restricted administrator assigned one or more adminsitrative units, you won't be able to configure a retention policy that includes SharePoint sites or Exchange public folders. For these locations, you must be an unrestricted administrator.
+
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option. Adaptive policies don't support the locations for Exchange public folders or Skype for Business.
+3. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention policy that doesn't include SharePoint sites or Exchange public folders can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the locations for SharePoint sites and Exchange public folders.
 
-4. Depending on your selected scope:
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the configuration with this option. Adaptive policies don't support the locations for Exchange public folders or Skype for Business.
+
+5. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange mailboxes** but not **SharePoint sites**.
     
-    - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
+    - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Viva Engage. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     
     Information specific to locations:
     - [Exchange mailboxes and Exchange public folders](retention-settings.md#configuration-information-for-exchange-mailboxes-and-exchange-public-folders)
@@ -199,11 +214,11 @@ Use the following instructions for retention policies that apply to any of these
     - [Microsoft 365 Group mailboxes & sites](retention-settings.md#configuration-information-for-microsoft-365-group-mailboxes--sites)
     - [Skype for Business](retention-settings.md#configuration-information-for-skype-for-business)
 
-5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
+6. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
-6. Complete the configuration and save your settings.
+7. Complete the configuration and save your settings.
 
 ---
 
@@ -219,7 +234,7 @@ First, the retention policy needs to be distributed to the locations that you se
 
 2. Run one of the following commands:
     
-    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Viva Engage user messages** and **Viva Engage community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -236,6 +251,8 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+If you no longer need the retention settings that you've configured, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
 ## Troubleshooting retention policies
 

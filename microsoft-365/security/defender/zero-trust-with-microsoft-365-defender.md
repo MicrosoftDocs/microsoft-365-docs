@@ -20,9 +20,9 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom: 
-
 ms.topic: conceptual
 adobe-target: true
+ms.date: 04/24/2023
 ---
 
 # Zero Trust with Microsoft 365 Defender
@@ -72,3 +72,4 @@ Learn more about Zero Trust for Microsoft 365 Defender services:
 Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with the [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
 
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

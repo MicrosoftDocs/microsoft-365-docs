@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Experience insights dashboard"
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/10/2020
 audience: Admin
@@ -17,13 +17,15 @@ description: "Get a periodic report about how people in your organization use Mi
 # Microsoft 365 Experience insights dashboard
 
 The Experience insights (preview) dashboard shows you data across usage and sentiment to give you a fuller view of your organization's experience with Microsoft 365.
-Experience insights is optimized for organizations with higher volumes of data so is only available for organizations with 20,000 plus seats. We are working on bringing the experience to smaller organizations in the future. This information and data on the dashboard will help you better understand and improve your users' experience with Microsoft 365. The dashboard shows you data across usage and user sentiment and helps give you a fuller picture of your users' overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve users’ Microsoft 365 products and app experiences in your organization.
+Experience insights is optimized for organizations with 2000 plus seats. We are working on bringing the experience to smaller organizations in the future. This information and data on the dashboard will help you better understand and improve your users' experience with Microsoft 365. The dashboard shows you data across usage and user sentiment and helps give you a fuller picture of your users' overall experience. You can drill down into specific information such as feature usage for certain apps, exact feedback and Net Promoter Score (NPS) comments, and top help articles viewed by users in your organization. This info can help you identify opportunities to improve users’ Microsoft 365 products and app experiences in your organization.
 
-<!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
+## Watch: Experience insights dashboard overview
 
-## How to get to the Experience insights dashboard
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW16N2s?autoplay=false]
 
-There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
+## Go to the Experience insights dashboard
+
+There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting **Experience insights (preview)** from the admin home page.
 
 :::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
 
@@ -32,6 +34,20 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+
+## Suggested training
+
+**Suggested training** gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
+
+- **Top viewed articles** for your organization shows you help and training articles that have been getting the most views by people in your organization.
+
+- **Trending across organizations** shows you the help and training topics that are moving up the most in your organizations most viewed list.
+
+- **Commonly viewed together** gives you insights into the additional help articles users in all Microsoft 365 organizations are reading, along with the top viewed and top trending articles. You can use this info to put together and share training packages for your users.
+
+    :::image type="content" source="../../media/suggested-training-overview.png" alt-text="Screenshot: Suggested training data dashboard":::
+
+Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
 
 ## Apps and services data
 
@@ -47,7 +63,7 @@ The chart information gives you insight into the apps and services that you want
 
 **Product usage** is the percentage of people who are actively using the products that are enabled for them to use. Use this data to make decisions on where to optimize product assignments.
 
-**In-product feedback** Is the total number of feedback response from within the app or service that were initiated and submitted by your users. Use this data to gauge the success and satisfaction people have with the apps. [Learn more](feedback-user-control.md)
+**In-product feedback** Is the total number of feedback responses from within the app or service that were initiated and submitted by your users. Use this data to gauge the success and satisfaction people have with the apps. [Learn more](feedback-user-control.md)
 
 **NPS survey response volume** is the total number of responses to the Net Promoter Score (NPS) survey. By default, Microsoft sends the survey to 5% of your users and asks “Would you recommend this product?” Use this data to gauge user satisfaction and to see what people are saying about the app. [Learn more](../manage/manage-feedback-product-insights.md)
 
@@ -85,8 +101,6 @@ For the first time, you can now see what articles your users are consuming on Su
 :::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
 ## Additional resources
-
-<!-- :::image type="content" source="../../media/additional-resources.png" alt-text="Screenshot: Image showing additional resources you can select"::: -->
 
 ### View your organization's Adoption Score
 

@@ -12,7 +12,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 02/16/2021
@@ -182,3 +182,4 @@ Selecting an item opens a flyout that links to the update.
 * [Turn on Microsoft 365 Defender](m365d-enable.md)
 * [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
 * [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

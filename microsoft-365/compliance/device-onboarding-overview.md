@@ -1,11 +1,11 @@
 ---
-title: "Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview"
+title: "Onboard Windows devices into Microsoft 365 overview"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 09/09/2019
+ms.date: 07/06/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -20,10 +20,10 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
+description: "Onboard Windows devices into Microsoft 365"
 ---
 
-# Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+# Onboard Windows devices into Microsoft 365 overview
 
 **Applies to:**
 
@@ -75,8 +75,9 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 
 Make sure that the Windows devices that you need to onboard meet these requirements.
 
-1. Must be running Windows 10 x64 build 1809 or later or Windows 11.
-    1. See [March 21, 2023—KB5023773 (OS Builds 19042.2788, 19044.2788, and 19045.2788) Preview](https://support.microsoft.com/en-us/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23) for required minimum Windows Operating System builds.
+1. Must be running one of the following builds of Windows or Windows Server:
+    1.  Windows 10 x64 build 1809 or later or Windows 11. (See [April 11, 2023—KB5025221 (OS Builds 19042.2846, 19044.2846, and 19045.2846) - Microsoft Support](https://support.microsoft.com/en-us/topic/april-11-2023-kb5025221-os-builds-19042-2846-19044-2846-and-19045-2846-b00c3356-baac-4a41-8342-7f97ec83445a) for required minimum Windows Operating System builds.)
+    1. Windows Server 2019 OS: 1809 onwards or Windows Server 2022 OS: 21H2 onwards.
 
 1. Antimalware Client Version is 4.18.2110 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
@@ -98,7 +99,8 @@ Make sure that the Windows devices that you need to onboard meet these requireme
    - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-1. A supported version of Microsoft Office is installed and up to date. For the most robust protection and user experience, ensure Microsoft 365 Apps version 16.0.14701.0 or newer is installed.
+5. A supported version of Microsoft 365 Apps is installed and up to date. For the most robust protection and user experience, ensure Microsoft 365 Apps version 16.0.14701.0 or later is installed.
+
 > [!NOTE]
    > - If you are running Office 365 - KB 4577063 is required.
    > - If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about known issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
@@ -115,19 +117,14 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices that have not been onboarded yet.
 
-1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com). Choose **Settings** > **Enable device monitoring**.
-
-   > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
-
-2. Open the Microsoft Purview Compliance portal settings page and choose **Turn on Windows device monitoring**.
-
-3. Choose **Device management** to open the **Devices** list. 
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com). Choose **Settings** > **Device onboarding** > **Devices**.
 
 > [!NOTE]
-> If you have previously deployed Microsoft Defender for Endpoint, all the devices that were onboarded during that process will be listed in the **Devices** list. There is no need to onboard them again.
+> If you have previously deployed Microsoft Defender for Endpoint, all the devices that were onboarded during that process will be listed in the **Devices** list. There is no need to onboard them again. While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-4. Choose **Onboarding** to begin the onboarding process.
+2. Choose **Turn on device onboarding**. 
+
+3. Choose **Onboarding** to begin the onboarding process.
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
@@ -154,10 +151,11 @@ You can check the **Configuration status** and the **Policy sync status** of all
 |---------|---------|---------|
 |Updated    |Device health parameters are enabled and correctly set.   |Device has been updated with the current versions of policies.         |
 |Not updated    | You need to enable the configuration settings for this device. Follow the procedures in [Microsoft Defender Antivirus always-on protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)|This device has not synced the latest policy updates. If the policy update was made within the last 2 hours, wait for the policy to reach your device. |
-|Not available  | Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This is could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
+|Not available  | Device properties are not available in the device list. This could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.        |Device properties are not available in the device list. This could be because the device doesn't meet the minimum OS version, or configuration or if the device was just onboarded.|
 
 It can take up to 2 hours for the sync status to get reflected on the dashboard. Devices must be online for the policy update to happen. If the status isn't updating, check the last time the device was seen.
 
+Required KB for this Preview Feature: [KB5023773](https://support.microsoft.com/topic/march-21-2023-kb5023773-os-builds-19042-2788-19044-2788-and-19045-2788-preview-5850ac11-dd43-4550-89ec-9e63353fef23).
 
 ## See also
 

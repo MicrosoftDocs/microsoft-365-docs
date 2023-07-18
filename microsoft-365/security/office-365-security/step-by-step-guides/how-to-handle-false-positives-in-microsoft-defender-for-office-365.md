@@ -1,7 +1,7 @@
 ---
 title: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
-description: The steps to handle legitimate email getting blocked(False Positive) by Microsoft Defender for Office 365 in order to prevent lose of business. 
-search.product: 
+description: The steps to handle legitimate email getting blocked(False Positive) by Microsoft Defender for Office 365 in order to prevent lose of business.
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +39,7 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 2. End users can also add the sender to the [**safe sender list**](https://support.microsoft.com/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) in Outlook to prevent the email from these senders landing in Junk folder.
 3. Admins can triage the user-reported messages from [the User reported tab on the Submission page](/microsoft-365/security/office-365-security/admin-submission#view-user-reported-messages-to-microsoft).
 4. From those reported messages admins can submit to [**Microsoft for analysis**](/microsoft-365/security/office-365-security/admin-submission#notify-users-from-within-the-portal) and understand why was that email blocked in the first place.
-5. If needed, while submitting to Microsoft for analysis, admins can judiciously create an [**allow** for a sender](/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure) to mitigate the problem.
+5. If needed, while submitting to Microsoft for analysis, admins can judiciously [create an allow entry for the sender](../tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) to mitigate the problem.
 6. Once the results from the admin submission are available, read it to understand why emails were blocked and how your tenant setup could be improved to *prevent* similar situations from happening in the future.
 
 ## Handling legitimate emails that are in quarantine folder of end users

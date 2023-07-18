@@ -3,9 +3,9 @@ title: "Reset passwords"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,13 +27,6 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - adminvideo
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
@@ -43,7 +36,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
+This article explains how to reset passwords for yourself and for your users when you have a **Microsoft 365 for business subscription**. If you don't have a Microsoft 365 for business subscription try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
 
 > [!NOTE]
 > You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
@@ -62,23 +55,20 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
-
-1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
-1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
-1. Select **Auto-generate password** to have a random password automatically created.
-1. Select **Reset**.
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
 ## Steps: Reset a business password for a user
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+When a user requests a new password, you'll receive a password reset request in email. Follow these steps to reset the password.
+
+1. In the Microsoft 365 admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
 
-4. Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.
+4. Enter your email address to get the new password, and then send to the user's alternate email address or give it to them in person.
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Let users reset their own passwords
 
@@ -159,10 +149,6 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 
 > [!NOTE]
 > The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
-  
-## I don't have a Microsoft 365 for business subscription
-
-Try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## Related content
   

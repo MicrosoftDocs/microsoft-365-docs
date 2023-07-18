@@ -5,11 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: jkinma, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid: GEA150
 ms.collection:
 - Tier1

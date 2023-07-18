@@ -1,11 +1,11 @@
 ---
-title: "Upgrade to a different business plan"
+title: "Upgrade or change to a different Microsoft 365 for business plan"
 f1.keywords:
-- NOCSH
+- CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: nalinkla, jmueller
+ms.reviewer: nalinkla, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,145 +21,157 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150 
-description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."
-ms.date: 04/21/2021
+description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
+ms.date: 04/27/2023
 ---
 
-# Upgrade to a different Microsoft plan
+# Upgrade or change to a different Microsoft 365 for business plan
 
-When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
+When your business needs change, or you want more features, you can change to a different Microsoft 365 for business plan. Most of the time, you can change plans automatically. An automatic change walks you through the entire process from beginning to end. After you buy a new plan, all users are automatically assigned licenses in the new plan, and your old plan is canceled for you. In some cases, you can't automatically change to a new plan, and instead must [change plans manually](#change-plans-manually).
 
-## Use the Upgrade tab
+## Before you begin
 
-When you use the **Upgrade** tab, you're led through the process of buying a new plan. All users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
+- You must be a Global or Billing admin to do the steps in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md)
+- If you have a billing profile, you must be a billing account owner or billing account contributor. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles). For more information about billing account roles, see [What are billing account roles?](../manage-billing-accounts.md#what-are-billing-account-roles).
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Select the subscription that you want to upgrade.
-3. On the subscription details page, under **Product details and upgrades**, select **View upgrades recommended for your org**.
-4. Find the plan to which you want to upgrade, then select the **Upgrade** button.
-5. Enter the number of licenses that you need, choose whether to pay each month or for the whole year, then select **Go to checkout**.
+## When should I change plans?
+
+Changing plans is the right choice when you want to move all users assigned to a single plan. When you change plans, all users in the current plan are assigned licenses for the new plan at the same time. If you only want to move some users to a new plan, buy a new plan with the number of licenses you need, and assign those licenses to the users that you want to move. For more information, see [Move users to a different subscription](move-users-different-subscription.md).
+
+## Automatically change your subscription to a new plan
+
+> [!IMPORTANT]
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles).
+
+### If you don't have a billing profile
+
+::: moniker range="o365-worldwide"
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
+
+2. On the **Products** tab, select the subscription that you want to change.
+3. On the subscription details page, in the **Product details and upgrades** section, select **View upgrades recommended for your org**.
     > [!NOTE]
-    > Make sure you buy enough licenses to cover all your users.
-6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. You can change the default payment method at this step. If you need to make any changes, select **Change** next to the applicable section.
-7. When you're finished, select **Place order**.
+    > If the View upgrades recommended for your org link is grayed out, see [Why can't I change plans?](#why-cant-i-change-plans)
+4. On the **Available upgrades** page, find a new product, then select **Upgrade**.
+5. On the **Checkout** page, select or add a payment method, then select **Place order**.
 
-When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Your products** page, next to your new subscription.
+After you place the order, it might take a few minutes to finalize the change. You can start using your new subscription right away.
 
-## The Upgrade tab is empty
+### If you have a billing profile
 
-If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
+::: moniker range="o365-worldwide"
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+::: moniker-end
 
-## I don't see the plan I want
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 
-When you use the **Upgrade** tab, the plans that you can upgrade to are displayed based on the services in your current plan. You can only use the **Upgrade** tab to move to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.
+2. On the **Products** tab, select the subscription that you want to change.
+3. On the subscription details page, in the **Other subscription options** section, select **Change to a different subscription option**.
+4. In the right pane, select a different plan. Indicate the number of licenses you want, choose when to schedule the change, select a subscription length, and select a billing frequency.
+5. **Select Change plan**.
 
-If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/get-help-support.md) for help.
+## Why can't I change plans?
 
-## I only want to upgrade some of my users. How do I do that?
+If you can't select the **View upgrades recommended for your org** link, it means that you can't automatically change your plan right now. In some cases, you can resolve the issue so that you can view available plans. In other cases, you can [change plans manually](#change-plans-manually), instead. The following table lists issues you might encounter when you try to change your plan, and information about how to resolve them.
 
-If you only want to upgrade some users to a different plan, but need to buy the new subscription first, see [Change plans manually](change-plans-manually.md). If you already have the subscription that you want to upgrade users to, see [Move users to a different subscription](move-users-different-subscription.md).
+|Issue  |Resolution  |
+|---------|---------|
+|You have more users than licenses.     |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses.        |
+|The current subscription isn't fully set up or the service isn't available.     |For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. </br></br>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md).         |
+|Another plan is in the process of being changed or a credit check is pending.    |Wait until the credit check is complete before you change plans. Credit checks can take up to two working days.         |
+|The subscription isn't currently eligible to change plans.     |You can [change plans manually](#change-plans-manually).         |
+|You have two or more plans for the same product.     |You can only change plans automatically if all users have licenses to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you can't automatically change one of them to a different plan. In this case, move all users into a single plan, cancel the unused plan, then try changing plans again.         |
+|You have a government or non-profit plan.     |If you have a government or non-profit plan, you can [change plans manually](#change-plans-manually).         |
+|The plan that you want to change to isn't a supported option.     |The plans that are available to change to are displayed based on the services in your current plan. You can only automatically change to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.</br></br>If you want to change to a plan with fewer services, you can [change plans manually](#change-plans-manually).         |
+|Your subscription has an add-on.    |If you start to change plans and your subscription has an add-on that prevents you from continuing, remove the add-on. You can add it back later if you still need it. You can also [change plans manually](#change-plans-manually).         |
+|Your invoice has an unpaid balance.     |This only applies if you pay for your subscription by invoice. To resolve this issue, find the subscription on the **Your products** page, and select the **Pay now** or **Settle balance** link in the **Billing** section. After the payment has been made, try changing plans again.         |
+|I have a different problem than what's listed here.     |You can [change plans manually](#change-plans-manually) or [contact support](../../admin/get-help-support.md).         |
 
-## Why some changes take longer
+## What does automatically changing plans do to my service and billing?
 
-**Number of assigned users:** If you have a large number of assigned users, it will take longer to do the upgrade to move them to the new plan.
-
-**Credit checks when changing plans:** If you pay by invoice, or reach a certain level of cost, a credit check might be required. A credit check can take up to two business days. Users will have full access to their current plan until you move them to the new one. You'll receive a notification if a credit check is required.
-
-## Why can't I upgrade plans?
-
-If you don't see any plans on the **Upgrade** tab, it means your plan can't be upgraded automatically. In some cases, you might be able to resolve the issue so that you can view plans available for upgrade, or you might be able to upgrade or change plans manually, instead.
-
-### Why are there no plans listed to upgrade?
-
-#### You can't upgrade subscriptions now because you have more users than licenses
-
-To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/get-help-support.md).
-
-#### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available
-
-For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
-
-If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../admin/get-help-support.md).
-
-#### You can't upgrade plans because another plan is in the process of being upgraded or is pending a credit check
-
-Wait until the credit check has been completed before upgrading plans. Credit checks can take up to two working days.
-
-#### Currently, this subscription is not eligible to upgrade
-
-You can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md).
-
-#### I see a different message than what's listed here
-
-You can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md).
-
-### Additional reasons you can't upgrade
-
-#### You have two or more plans for the same product
-
-You can only use the **Upgrade** tab if all users subscribe to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you won't be able to automatically upgrade one of them to another plan.
-
-#### You have a prepaid plan
-
-If you've paid for your subscription in advance, you might be able to [change plans manually](change-plans-manually.md). However, you won't receive a credit for unused time remaining on your current subscription if you upgrade plans before the current plan expires.
-
-You can also [call support](../../admin/get-help-support.md) for help.
-
-#### You have a government or non-profit plan
-
-If you have a government or non-profit plan, you can [change plans manually](change-plans-manually.md) or [call support](../../admin/get-help-support.md) for help.
-
-#### The subscription that you want to upgrade from has a temporary issue
-
-You might not see any plans on the **Upgrade** tab because the service is in the process of upgrading a high volume of plans. Try again in about an hour after your first attempt.
-
-#### The plan that you want to upgrade to isn't a supported option
-
-When you upgrade plans, the plans that are available for you to upgrade to are displayed based on the services in your current plan. You can only upgrade to a plan that has the same data-related services, such as Exchange Online or SharePoint Online, or to a higher version of them. This ensures that users don\'t lose data related to those services during the upgrade.
-
-If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md) instead. You can also [call support](../../admin/get-help-support.md) for help.
-
-#### Your subscription has an add-on
-
-If you have an Add-on with your subscription, you might be able to [change plans manually](change-plans-manually.md).
-
-#### Your subscription has an unpaid balance
-
-To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
-
-## What does upgrading a plan do to my service and billing?
-
-When you upgrade plans automatically by using the **Switch plans** button (or the **Upgrade** tab in the new admin center), your services and billing are affected.
+When you change plans automatically, your services and billing are affected in the following ways.
 
 ### Access to services
 
-**Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
-  
-**Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
-  
+- **Admins:** Admins can't make changes to the subscription details page while the change is in process, but you can use the rest of the admin center. The change between plans can take up to an hour.
+- **Users:** Users experience no interruption of service during the plan change. They continue to have the existing service until the change is finished.
+
 ### Users and licenses
 
-Users on the old subscription will automatically be moved to the new subscription.
+- **Users:** Users on the old subscription are automatically moved to the new subscription.
+- **Services:** If your old subscription includes multiple services, and if you have changed which of these services your users are assigned to, make note of this before you change plans so that you can recreate these changes afterwards. All users are given access to all services in the new subscription. For example, if you previously bought Microsoft 365 Business Premium for all 10 of your users, but you unassigned the SharePoint Online service from five of them, this change isn't kept after you change plans.
+- **License assignments:** If you have more than one subscription before you change plans, and users have licenses to more than one subscription, this assignment pattern is kept as much as possible in the new subscription.
+- **Data:** All user data is retained during the change, including Exchange mailboxes and SharePoint Online documents, lists, and other information.
 
-If your old subscription includes multiple services, and if you have changed which of these services your users are assigned to, you may want to make note of this before you upgrade plans so that you can recreate these changes afterwards. All users will be given access to all services in the new subscription. For example, if you previously purchased Microsoft 365 Business Premium for all 100 of your users, but unassigned the SharePoint Online service from 50 of them, this change would not be kept after you upgrade plans.
-
-If you have more than one subscription before you upgrade plans, and have users assigned licenses to more than one subscription, this assignment pattern will be kept as much as possible in the new subscription.
-All user data will be retained during the upgrade, including Exchange mailboxes and SharePoint Online documents, lists, and other information.
-  
 ### Billing
 
-The day your plan upgrade is complete, the billing on your old subscription will be turned off and the billing on your new subscription will be turned on. You'll get a prorated credit for any unused service on the old subscription. You'll receive a new invoice that includes the credit for your old subscription within 30 days of upgrading to the new subscription.
-  
+The day your plan change is complete, the billing on your old subscription is turned off and the billing on your new subscription is turned on. Depending on the new plan you selected, you might receive a prorated credit. You receive a new invoice that includes the credit for your old subscription within 30 days of changing to the new subscription.
+
 > [!NOTE]
-> The length of time it takes to actually credit your payment account depends on the payment method that was used for the subscription.
-  
-**Upgrading from a prepaid subscription before it expires?** If the total cost of your new subscription is greater than or equal to the remaining value of your prepaid subscription, you won't lose any prepaid time. On the checkout page, you'll see a credit for your unused time. However, if the total cost of your new subscription is less than the remaining value of your current prepaid subscription, you'll forfeit some of your unused time. You'll be notified before you checkout, and you can wait to upgrade until closer to your prepaid subscription's expiration date.
+> The length of time it takes to receive your prorated credit depends on the payment method used for the old subscription.
 
-## Call support to help you upgrade plans
+## Change plans manually
 
-[Call Microsoft support](../../admin/get-help-support.md).
+Most of the time, you can change plans automatically. However, sometimes this isn't possible. You can change plans manually if:
+
+- You can't select the **View upgrades recommended for your org** link.
+- When you select the **View upgrades recommended for your org** link, the plan you want isn't listed.
+- You don't want to move all your users to the same plan. Some businesses need different users licensed for different plans.
+
+> [!IMPORTANT]
+> If you're changing to a plan with fewer data-related services than your current plan, you must manually back up any data that you want to keep. For more information, see [Back up data before changing Microsoft 365 for business plans](move-users-different-subscription.md#back-up-data-before-changing-microsoft-365-for-business-plans).
+
+### Step 1: Buy a new subscription
+
+**Already bought a new subscription?** If you already have the subscription that you want to move users to, skip this step and go to [Step 2: Check your new subscription and licenses](#step-2-check-your-new-subscription-and-licenses).
+
+**Need to buy a new subscription and licenses?** Follow the steps in [Buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription).
+
+Make sure that you buy a subscription for the same organization that the users are in now. For example, check the email addresses for the users that you want to move. If their email addresses include @contoso.com, you must buy a new subscription for contoso.com. Buy a license for each user that you want to move.
+
+### Step 2: Check your new subscription and licenses
+
+In the admin center, go to the **Billing** > **Your products** page, then do the following:
+
+- **Verify that both the old and new subscriptions are listed and active.** The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Verify that both subscriptions are listed as **Active**.
+- **Check that you have enough licenses for each user.** Each user needs a license that matches their subscription. If you want to move 10 users to Microsoft 365 Business Premium, make sure 10 unassigned licenses are available in that subscription.
+- **Need more licenses for the new subscription?** Go to the **Your products** page, select the subscription, and [buy more licenses](../licenses/buy-licenses.md).
+
+#### The new subscription isn't listed, or isn't active
+
+If you bought two subscriptions and they aren't both listed on the **Your products** page, they may have been bought for different organizations (for different domains). Subscriptions can't cross organization boundaries.
+
+If you know you have another subscription, and it's not listed here, or isn't active, [contact support](../../admin/get-help-support.md).
+
+#### What about old licenses?
+
+The licenses for the current subscription are removed in [Step 4: Cancel subscriptions or remove licenses that you no longer need (Optional)](#step-4-cancel-subscriptions-or-remove-licenses-that-you-no-longer-need-optional). After that, you only pay for the new licenses.
+
+### Step 3: Move users to the new subscription
+
+After you confirm the number of licenses in your new subscription, you can [move users from the old subscription to the new one](move-users-different-subscription.md).
+
+### Step 4: Cancel subscriptions or remove licenses that you no longer need (Optional)
+
+If you moved all users from one subscription to another, and you don't need the original subscription anymore, just [cancel the subscription](cancel-your-subscription.md).
+
+If you moved only some users to a different subscription, [remove licenses that you no longer need](../licenses/buy-licenses.md#buy-or-remove-licenses-for-your-business-subscription).
+
+## Next steps
+
+If you upgraded to Microsoft 365 Business Premium, use the steps in the Business Premium library to set up your new security capabilities.
+
+>[!div class="nextstepaction"]
+>[Visit the Microsoft 365 Business Premium library](/microsoft-365/business-premium/index)
 
 ## Related content
 
-[Change plans manually](change-plans-manually.md) (article)\
-[Back up data before switching Microsoft 365 for business plans](move-users-different-subscription.md) (article)
+[Move users to a different subscription](move-users-different-subscription.md) (article)\
+[Try or buy a Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) (article)

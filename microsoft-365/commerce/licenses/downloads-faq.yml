@@ -4,7 +4,7 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, armanv
+  ms.reviewer: racheg, vician
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
@@ -65,11 +65,11 @@ sections:
             - Project Server
 
       - question: |
-          How do I download Office for Mac? 
+          How do I download Microsoft 365 for Mac? 
         answer: |
-          To run a volume licensing version of Office for Mac, you must download and install the following files:
-            - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Office for Mac download file.
-            - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
+          To run a volume licensing version of Microsoft 365 for Mac, you must download and install the following files:
+            - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Microsoft 365 for Mac download file.
+            - The [Microsoft 365 for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Microsoft 365 for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Microsoft 365 for Mac.
 
       - question: |
           How do I download products in the admin center?
@@ -117,7 +117,7 @@ sections:
           If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
           
           > [!NOTE]
-          > This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+          > This approach is advisable only for installing applications such as Mirosoft 365 or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
 
       - question: |
           How do I get support for downloaded products?

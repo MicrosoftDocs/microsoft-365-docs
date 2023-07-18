@@ -44,10 +44,6 @@ You also manage these features on the data classification page:
 
 You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
 
-Take a video tour of our data classification features.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
-
 Data classification will scan your sensitive content and labeled content before you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -152,7 +148,9 @@ The point of the data classification reporting is to provide visibility into the
 > If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Sensitivity labels](sensitivity-labels.md)
 
-## Public preview release notes 
+<!--
+
+## Public preview release notes
 
 > [!NOTE]
 > **Exchange mailbox count**:
@@ -169,6 +167,8 @@ The point of the data classification reporting is to provide visibility into the
 > [!NOTE]
 > **OneDrive remains in preview**:
 >Thanks for your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We'll continue to showcase OneDrive in preview until all fixes are in place. We appreciate your continued support.
+
+-->
 
 ## See also
 

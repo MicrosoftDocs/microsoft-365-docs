@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/02/2019
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -147,7 +147,7 @@ You can search on:
 
 ## Provide match/not a match accuracy feedback in content explorer
 
-You can view the number of matches a SIT or trainable classifier has in **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+You can view the number of matches a SIT or trainable classifier has in **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy](data-classification-increase-accuracy.md) for more information. 
 
 
 ## See also

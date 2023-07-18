@@ -20,17 +20,16 @@ ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 2: Setup
 
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
 <br>
 
-|[![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|![Phase 2: Set up.](../../media/phase-diagrams/setup.png) <br> Phase 2: Set up|[![Phase 3: Onboard.](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|[:::image type="content" source="../../media/phase-diagrams/prepare.png" alt-text="Phase 1: Prepare." lightbox="../../media/phase-diagrams/prepare.png":::](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|:::image type="content" source="../../media/phase-diagrams/setup.png" alt-text="Phase 2: Set up." lightbox="../../media/phase-diagrams/setup.png"::: <br> Phase 2: Set up|[:::image type="content" source="../../media/phase-diagrams/onboard.png" alt-text="Phase 3: Onboard." lightbox="../../media/phase-diagrams/onboard.png":::](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 ||*You are here!*||
 
@@ -46,7 +45,7 @@ Welcome to **Phase 2: Setup** of your **[migration to Microsoft Defender for Off
 
 Distribution groups are required in Microsoft 365 for the following aspects of your migration:
 
-- **Exceptions for the SCL=-1 mail flow rule**: You want pilot users to get the full effect of Defender for Office 365 protection, so you need their incoming messages to be scanned by Defender for Office 365. You do this by defining your pilot users in the appropriate distribution groups in Microsoft 365, and configuring these groups as exceptions to the SCL=-1 mail flow rule.
+- **Exceptions for the SCL=-1 mail flow rule**: You want pilot users to get the full effect of Defender for Office 365 protection, so you need Defender for Office 365 to scan their incoming messages. You get this result by defining your pilot users in the appropriate distribution groups in Microsoft 365, and configuring these groups as exceptions to the SCL=-1 mail flow rule.
 
   As we described in [Onboard Step 2: (Optional) Exempt pilot users from filtering by your existing protection service](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service), you should consider exempting these same pilot users from scanning by your existing protection service. Eliminating the possibility of filtering by your existing protection service and relying exclusively on Defender for Office 365 is the best and closest representation of what's going to happen after your migration is complete.
 
@@ -58,11 +57,11 @@ Distribution groups are required in Microsoft 365 for the following aspects of y
 
 For clarity, we use these specific group names throughout this article, but you're free to use your own naming convention.
 
-When you're ready to begin testing, add these groups as exceptions to [the SCL=-1 mail flow rule](#step-3-maintain-or-create-the-scl-1-mail-flow-rule). As you create policies for the various protection features in Defender for Office 365, you'll use these groups as conditions that define who the policy applies to.
+When you're ready to begin testing, add these groups as exceptions to [the SCL=-1 mail flow rule](#step-3-maintain-or-create-the-scl-1-mail-flow-rule). As you create policies for the various protection features in Defender for Office 365, use these groups as conditions that define who the policy applies to.
 
 **Notes**:
 
-- The terms Standard and Strict come from our [recommended security settings](recommended-settings-for-eop-and-office365.md), which are also used in [preset security policies](preset-security-policies.md). Ideally, we would tell you to define your pilot users in the Standard and Strict preset security policies, but we can't do that. Why? Because you can't customize the settings in preset security policies (in particular, actions that are taken on messages). During your migration testing, you want to see what Defender for Office 365 would do to messages, verify that's what you want to happen, and possibly adjust the policy configurations to allow or prevent those results.
+- The terms Standard and Strict come from our [recommended security settings](recommended-settings-for-eop-and-office365.md), which are also used in [preset security policies](preset-security-policies.md). Ideally, we would tell you to define your pilot users in the Standard and Strict preset security policies, but we can't do that. Why? Because you can't customize the settings in preset security policies (in particular, actions that are taken on messages). During your migration testing, you want to see what Defender for Office 365 would do to messages, verify that's the result you want, and possibly adjust the policy configurations to allow or prevent those results.
 
   So, instead of using preset security policies, you're going to manually create custom policies with settings that are similar to, but in some cases are different than, the settings of Standard and Strict preset security policies.
 
@@ -82,11 +81,11 @@ You should also confirm that all users in the pilot have a supported way to repo
 
 - [The built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)
 - [The Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)
-- Supported third party reporting tools as described [here](submissions-user-reported-messages-custom-mailbox.md#message-submission-format).
+- Supported third party reporting tools as described [here](submissions-user-reported-messages-custom-mailbox.md#message-submission-format-for-third-party-reporting-tools).
 
 Don't underestimate the importance of this step. Data from user reported messages will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, and provide data-backed reports to management that the migration went smoothly.
 
-Instead of relying on data that's backed by the experience of the entire organization, more than one migration has resulted in emotional speculation based on a single negative user experience. Furthermore, if you've been running phishing simulations, you can use feedback from your users to inform you when they see something risky that might require investigation.
+Instead of relying on data that's based on the experience of the entire organization, more than one migration has resulted in emotional speculation based on a single negative user experience. Furthermore, if you've been running phishing simulations, you can use feedback from your users to inform you when they see something risky that might require investigation.
 
 ## Step 3: Maintain or create the SCL=-1 mail flow rule
 
@@ -142,7 +141,7 @@ By creating production policies, even if they aren't applied to all users, you c
 - Extremely low chance of false positives.
 - Similar behavior to anti-malware protection, which is always on and not affected by the SCL=-1 mail flow rule.
 
-For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). The Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
 > [!NOTE]
 > The **Built-in protection** preset security policy gives Safe Attachments protection to all recipients that aren't defined in any Safe Attachments policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
@@ -154,7 +153,7 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 
 Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts the user experience, you should consider a plan to educate users.
 
-For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](safe-links-policies-configure.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings). The Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](safe-links-policies-configure.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
 
 > [!NOTE]
 > The **Built-in protection** preset security policy gives Safe Links protection to all recipients that aren't defined in any Safe Links policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
@@ -175,19 +174,19 @@ Create two anti-phishing policies for pilot users:
 - A policy that uses the Standard settings, except for impersonation detection actions as described below. Use the group **MDOPilot\_SpamPhish\_Standard** as the condition of the policy (who the policy applies to).
 - A policy that uses the Strict settings, except for impersonation detection actions as described below. Use the group **MDOPilot\_SpamPhish\_Strict** as the condition of the policy (who the policy applies to). This policy should have a higher priority (lower number) than the policy with the Standard settings.
 
-For spoof detections, the recommended Standard action is **Move message to the recipients' Junk Email folders**, and the recommended Strict action is **Quarantine the message**. Use the spoof intelligence insight to observe the results. Overrides are explained in the next section. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
+For spoof detections, the recommended Standard action is **Move the message to the recipients' Junk Email folders**, and the recommended Strict action is **Quarantine the message**. Use the spoof intelligence insight to observe the results. Overrides are explained in the next section. For more information, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 
 For impersonation detections, ignore the recommended Standard and Strict actions for the pilot policies. Instead, use the value **Don't apply any action** for the following settings:
 
-- **If message is detected as an impersonated user**
+- **If a message is detected as user impersonation**
 - **If message is detected as impersonated domain**
 - **If mailbox intelligence detects an impersonated user**
 
 Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](anti-phishing-mdo-impersonation-insight.md).
 
-You'll tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). You can observe the results and adjust their settings as necessary.
+Tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). Observe the results and adjust their settings as necessary.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Anti-spoofing protection](anti-phishing-protection-spoofing-about.md)
 - [Impersonation settings in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 05/18/2023
 ---
 
 # Manage incidents in Microsoft 365 Defender
@@ -37,7 +37,7 @@ Incident management is critical to ensuring that incidents are named, assigned, 
 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -50,13 +50,14 @@ Here are the ways you can manage your incidents:
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
 - **Alert story** page.
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
+- Manage incident option located on the upper right side of the Incident page.
 
 In cases where you want to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
@@ -121,3 +122,4 @@ For resolved incidents, perform a [post-incident review](first-incident-post.md)
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Investigate incidents](investigate-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

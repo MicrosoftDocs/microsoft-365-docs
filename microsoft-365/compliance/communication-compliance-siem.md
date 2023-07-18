@@ -96,6 +96,7 @@ For more information about the Microsoft 365 Audit logs for Office 365 collected
 
 ## Configure communication compliance and Splunk integration
 
+
 To integrate communication compliance alerts with Splunk, complete the following steps:
 
 1. Install the [Splunk Add-on for Microsoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)

@@ -53,6 +53,23 @@ This is Step 7 in a solution designed to complete a Cross-tenant OneDrive migrat
 |PartnerRole|Roles of the partner tenant you're establishing trust with. Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the destination.|
 |PartnerCrossTenantHostURL|The cross-tenant host URL of the partner tenant. The partner tenant can determine this for you by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
 
+## Removing redirect links post migration
+ 
+ After the migration from Source to Target is complete, a redirect link is placed on the source. If users attempt to log back into their Source account or site, the link automatically redirects them to their new Target site. Remove the redirect links on the source after your full migration has completed.
+
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-redirect-workflow.png" alt-text="flow chart of how redirects are created":::
+ 
+Occasionally, a user may need to be migrated back to the original source. Remove the redirect link on the Target if you migrate a user back to the source.
+ 
+- To remove redirect links, use the **Remove-SPOSite** PowerShell command.
+- To get a list of all redirect sites on a tenant,  use the **Get-Sposite -Template RedirectSite#0** command.
+
+Keep track of any user or site you migrate back to the source from the target. After successfully migrating these users or sites back to the source, confirm that the user/sites are accessible.   Then you can remove the redirect link from Target using the **Remove-SPOSite command**.
+
+>[!Important]
+>Site URL’s must be unique. When migrating a user or site back to the source, the redirect site created on the initial move will use the original URL. This will result in a conflict and cause the migration to fail if not removed. redirect link still being present on the tenant you are attempting to migrate to.
+
+
 ## Other post migration steps
 
 Once the migration is complete, OneDrive users must sign in using their new identity and resync their files to their devices on the target tenant.

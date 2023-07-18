@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
-author: dansimp
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -96,3 +96,4 @@ See these playbooks for steps to more quickly classify alerts for the following 
 - [Password spray attacks](alert-grading-password-spray-attack.md)
 
 See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft 365 Defender portal.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

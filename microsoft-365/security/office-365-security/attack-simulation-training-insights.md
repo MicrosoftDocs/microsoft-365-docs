@@ -14,15 +14,14 @@ ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/3/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Insights and reports for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights and reports from the results of simulations and the corresponding trainings. This information keeps you informed on the threat readiness progress of your users, and recommended next steps to better prepare your users for future attacks.
 
@@ -117,7 +116,7 @@ The following summary information is also shown on the card:
 
 :::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="The Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
-To see a more detailed report, click **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
+To see a more detailed report, select **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
 
 ### Attack simulation report
 
@@ -143,11 +142,11 @@ The details table below the chart shows the following information:
 
 You can sort the results by clicking on an available column header.
 
-Click **Customize columns** to remove the columns that are shown. When you're finished, click **Apply**.
+Select **Customize columns** to remove the columns that are shown. When you're finished, select **Apply**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Simulation name** or **Simulation Technique**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### User coverage tab for the Attack simulation report
 
@@ -165,11 +164,11 @@ The details table below the chart shows the following information:
 - **Count of clicked**
 - **Count of compromised**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Training completion tab for the Attack simulation report
 
@@ -188,15 +187,15 @@ The details table below the chart shows the following information:
 - **Date completed**
 - **All trainings**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by the **Status** values of the trainings: **Completed**, **In progress**, or **All**.
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by the **Status** values of the trainings: **Completed**, **In progress**, or **All**.
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by **Username** or **Email address**. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 #### Repeat offenders tab for the Attack simulation report
 
@@ -222,27 +221,27 @@ The details table below the chart shows the following information:
 - **Simulation types**
 - **Simulations**
 
-You can sort the results by clicking on an available column header. Click **Customize columns** to remove the columns that are shown.
+You can sort the results by clicking on an available column header. Select **Customize columns** to remove the columns that are shown.
 
-Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filter the chart and details table by some or all of the simulation type values:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the chart and details table by some or all of the simulation type values:
 
 - **Credential Harvest**
 - **Malware Attachment**
 - **Link in Attachment**
 - **Link to Malware**
 
-When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-Use ![Search icon](../../media/m365-cc-sc-search-icon.png) **Search** box to filter the results by any of the column values. Wildcards aren't supported.
+Use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the results by any of the column values. Wildcards aren't supported.
 
-If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
+If you select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export report** button, report generation progress is shown as a percentage of complete. In the dialog that opens, you can choose to open the .csv file, save the .csv file, and remember the selection.
 
 ## Simulation report in Attack simulation training
 
 To view the details of in-progress or completed simulations, use either of the following methods:
 
 - On the **Overview** tab at <https://security.microsoft.com/attacksimulator?viewid=overview>, select a simulation from the [Recent simulations card](#recent-simulations-card).
-- On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, select a simulation by clicking anywhere other than the check box next to the name.
+- On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, select a simulation by clicking anywhere in the row other than the check box next to the name.
 
 The page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describes the insights and reports that are available on the **Report** tab.
 

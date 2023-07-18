@@ -42,7 +42,11 @@ To manage custom detections, you need to be assigned one of these roles:
 
 - **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
 
-You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft 365 Defender for Office, for instance, you can create custom detections using `Email` tables but not `Identity` tables.
+You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft Defender for Office 365, for instance, you can create custom detections using `Email` tables but not `Identity` tables.
+
+
+> [!NOTE]
+> To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender for Endpoint if RBAC is turned on.
 
 To manage required permissions, a **global administrator** can:
 
@@ -50,7 +54,9 @@ To manage required permissions, a **global administrator** can:
 - Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** \> **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
-> To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender for Endpoint if RBAC is turned on.
+> A user also needs to have the appropriate permissions for the devices in the [device scope](#5-set-the-rule-scope) of a custom detection rule that they are creating or editing before they can proceed. A user can't edit a custom detection rule that is scoped to run on all devices, if the same user does not permissions for all devices. 
+
+
 
 ## Create a custom detection rule
 
@@ -126,19 +132,29 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time
-
->[!NOTE]
->If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
-
-When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
+- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
 
-Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
-##### Tables that support Continuous (NRT) frequency
+
+##### Continuous (NRT) frequency
+
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
+
+> [!NOTE]
+>  Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization.
+
+###### Queries you can run continuously
+
+You can run a query continuously as long as:
+- The query references one table only.
+- The query uses an operator from the list of supported KQL operators. **[Supported KQL features](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features)**
+- The query does not use joins, unions, or the `externaldata` operator.
+
+###### Tables that support Continuous (NRT) frequency
 
 Near real-time detections are supported for the following tables:
 
@@ -161,6 +177,8 @@ Near real-time detections are supported for the following tables:
 
 > [!NOTE]
 > Only columns that are generally available can support **Continuous (NRT)** frequency.
+
+
 
 ### 3. Choose the impacted entities
 
@@ -207,7 +225,9 @@ For more details on user actions, read [Remediation actions in Microsoft Defende
 
 - Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
 
-The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the query output to apply actions to email messages.
+
+The columns `NetworkMessageId` and `RecipientEmailAddress` must be present in the output results of the query to apply actions to email messages.
+
 
 ### 5. Set the rule scope
 
@@ -218,14 +238,19 @@ When setting the scope, you can select:
 - All devices
 - Specific device groups
 
-Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
+Only data from devices in the scope will be queried. Also, actions will be taken only on those devices.
+
+> [!NOTE]
+> Users are able to create or edit a custom detection rule only if they have the corresponding permissions for the devices included in the scope of the rule. For instance, admins can only create or edit rules that are scoped to all device groups if they have permissions for all device groups. 
+
+
 
 ### 6. Review and turn on the rule
 
 After reviewing the rule, select **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 > [!IMPORTANT]
-> Custom detections should be regularly reviewed for efficiency and effectiveness. To make sure you are creating detections that trigger true alerts, take time to review your existing custom detections by following the steps in [Manage existing custom detection rules](#manage-existing-custom-detection-rules).
+> Custom detections should be regularly reviewed for efficiency and effectiveness. To make sure you are creating detections that trigger true alerts, take time to review your existing custom detections by following the steps in [Manage existing custom detect ion rules](#manage-existing-custom-detection-rules).
 >
 > You maintain control over the broadness or specificity of your custom detections so any false alerts generated by custom detections might indicate a need to modify certain parameters of the rules.
 
@@ -259,6 +284,7 @@ You can also take the following actions on the rule from this page:
 - **Turn on** / **Turn off**—enable the rule or stop it from running
 - **Delete**—turn off the rule and remove it
 
+
 ### View and manage triggered alerts
 
 In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name]**), go to  **Triggered alerts**, which lists the alerts generated by matches to the rule. Select an alert to view detailed information about it and take the following actions:
@@ -283,3 +309,4 @@ In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

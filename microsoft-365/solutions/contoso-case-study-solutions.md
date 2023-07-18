@@ -9,7 +9,7 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - highpri
 - Strat_O365_Enterprise
@@ -34,4 +34,4 @@ Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
 - [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](/MicrosoftTeams/voice-case-study-overview)
 
-- [Configure an offensive language policy for Microsoft Teams, Exchange, and Yammer communications](../compliance/communication-compliance-case-study.md)
+- [Configure an offensive language policy for Microsoft Teams, Exchange, and Viva Engage communications](../compliance/communication-compliance-case-study.md)

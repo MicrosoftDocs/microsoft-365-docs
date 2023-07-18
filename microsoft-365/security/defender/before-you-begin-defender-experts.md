@@ -35,11 +35,11 @@ This document outlines the key infrastructure requirements you must meet and imp
 
 ## Check if your environment meets licensing and access prerequisites
 
-Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access. 
+Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access.
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers will be assigned two Experts on Demand credits on the first of each month, which may be used to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers are assigned two Ask Defender Experts (Experts on Demand) credits on the first of each month, which you can use to submit questions. You can still submit inquiries beyond your initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
@@ -51,7 +51,7 @@ Anyone from your organization can complete the customer interest form for Micros
 
 Defender Experts for Hunting is a managed threat hunting service that proactively hunts for threats across endpoints, email, identity, and cloud apps. To carry out hunting on your behalf, Microsoft experts need access to your Microsoft 365 Defender advanced hunting data. Enrolling in this service means you're granting permission to Microsoft experts to access the said data.
 
-The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://aka.ms/trustcenter-dex4hunting) > scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH).
+The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://www.microsoft.com/en-us/trust-center/product-overview) then scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://aka.ms/trustcenter-defenderexperts).
 
 ### Data collection, usage, and retention
 
@@ -87,3 +87,4 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 ### Next step
 
 - [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

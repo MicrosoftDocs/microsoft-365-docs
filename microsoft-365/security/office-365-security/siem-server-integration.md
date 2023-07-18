@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 6/20/2023
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
@@ -20,14 +20,13 @@ description: Get an overview of Security Information and Event Management (SIEM)
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -62,10 +61,10 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 
 ### Audit logging must be turned on
 
-Make sure that audit logging is turned on before you configure SIEM server integration.
+Make sure that audit logging is turned on before you configure SIEM server integration:
 
-- For SharePoint Online, OneDrive for Business, and Azure Active Directory, see [Turn auditing on or off](../../compliance/turn-audit-log-search-on-or-off.md).
-- For Exchange Online, see [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
+- For SharePoint Online, OneDrive for Business, and Azure Active Directory, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+- For Exchange Online, see [Manage mailbox auditing](../../compliance/audit-mailboxes.md).
 
 ## Integration steps if your SIEM is Microsoft Sentinel
 

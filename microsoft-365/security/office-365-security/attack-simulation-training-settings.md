@@ -13,15 +13,14 @@ ms.collection:
 description: Admins can learn how to configure global settings in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/12/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Global settings in Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, the **Settings** tab contains settings that affect all simulations:
 
@@ -53,10 +52,10 @@ To remove the training threshold and always assign training, regardless of wheth
 
 ## View simulations excluded from reporting
 
-To view completed simulations that have been excluded from reporting on the **Settings** tab, click the **View all** link in the **Simulations excluded from reporting** section. This link takes you to the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations> where **Show excluded simulations** is automatically toggled on ![Toggle on icon.](../../media/scc-toggle-on.png).
+To view completed simulations that have been excluded from reporting on the **Settings** tab, select the **View all** link in the **Simulations excluded from reporting** section. This link takes you to the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations> where **Show excluded simulations** is automatically toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
 On the **Simulations** tab, both excluded _and_ included completed simulations are shown on the **Simulations** tab together. You can tell the difference by the **Status** values (**Excluded** vs. **Completed**)
 
-If you go directly to the **Simulations** tab and manually toggle **Show excluded simulations** on ![Toggle on icon.](../../media/scc-toggle-on.png), _only_ excluded simulations are shown.
+If you go directly to the **Simulations** tab and manually toggle **Show excluded simulations** on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, _only_ excluded simulations are shown.
 
 To exclude completed simulations from reporting, see [Exclude completed simulations from reporting](attack-simulation-training-simulations.md#exclude-completed-simulations-from-reporting).

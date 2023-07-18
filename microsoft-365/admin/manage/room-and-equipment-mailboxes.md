@@ -5,11 +5,11 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Tier2
 - scotvorg
@@ -39,7 +39,7 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
   
 1. Open **Outlook** on your computer.
 
-2. On the **Home** tab, choose **New Items** \> **Meeting**.
+2. On the **Home** tab, choose **New event**.
 
    ![To schedule a meeting, on the Home tab, in the New group, choose New Items, and then Meeting.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)
 
@@ -78,7 +78,7 @@ To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.c
   
 1. In the admin center, go to the **Resources** \> [Rooms &amp; equipment](https://go.microsoft.com/fwlink/p/?linkid=2067334) page.
   
-2. Select **Add**.
+2. Select **+ Add resource**.
     
 3. Fill out the room or equipment fields:
 
@@ -96,11 +96,7 @@ To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.c
     
    - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Microsoft Teams.
     
-4. Select **Add**.
-    
-5. Select the room or equipment mailbox you created to see or edit the details.
-  
-6. If you made changes, select **Save** and then **Close**.
+4. Select **Save**.
 
 > [!Note]
 > To keep your room and equipment mailboxes secure, block sign-in to these mailboxes. For more information, see [Block sign-in for the shared mailbox account](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).

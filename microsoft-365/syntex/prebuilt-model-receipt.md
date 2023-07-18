@@ -29,7 +29,7 @@ To use a receipts model, follow these steps:
 
 ## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt receipts model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
@@ -103,7 +103,3 @@ To rename an extractor from the **Extractors** panel:
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
-
-## Change the view in a document library
-
-For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).

@@ -4,7 +4,7 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, armanv
+  ms.reviewer: racheg, vician
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
@@ -86,7 +86,7 @@ sections:
       - question: |
           What is volume activation?
         answer: |
-          Volume activation is a configurable solution that helps automate and manage the product activation process on computers running Windows operating systems licensed under a volume licensing program. Volume activation is also used with other software from Microsoft, including the Office suites, sold under volume licensing agreements and that support volume activation. For more information, see:
+          Volume activation is a configurable solution that helps automate and manage the product activation process on computers running Windows operating systems licensed under a volume licensing program. Volume activation is also used with other software from Microsoft, including Microsoft 365, sold under volume licensing agreements and that support volume activation. For more information, see:
             - [Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
             - [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -106,8 +106,8 @@ sections:
             - Activation thresholds for Windows
               - Your organization must have at least 5 computers to activate servers running Windows Server.
               - Your organization must have at least 25 computers to activate client systems running Windows.
-            - Activation thresholds for Office
-              - Your organization must have at least 5 computers running an edition of Office to activate installed Office products using KMS.
+            - Activation thresholds for Microsoft 365
+              - Your organization must have at least 5 computers running an edition of Microsoft 365 to activate installed Microsoft 365 products using KMS.
 
           For more information about activation thresholds, see the [Volume Activation Planning Guide](/windows/deployment/volume-activation/volume-activation-windows-10).
 
@@ -121,7 +121,7 @@ sections:
         answer: |
           KMS keys are no longer pre-assigned to Open agreements as use of Multiple Activation Key (MAK) is the preferred method for activation.
 
-          KSM keys can be assigned, by exception, to Open customers who meet the minimum KMS activation threshold for Windows Server, OS, and Office. To request an exception, submit a web form request to Microsoft Support.
+          KSM keys can be assigned, by exception, to Open customers who meet the minimum KMS activation threshold for Windows Server, OS, and Microsoft 365. To request an exception, submit a web form request to Microsoft Support.
 
           To request an exception, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:
             
@@ -182,7 +182,7 @@ sections:
       - question: |
           What is the Volume Activation Management Tool (VAMT)?
         answer: |
-          The Volume Activation Management Tool (VAMT) is a tool that allows network administrators and other IT professionals to automate and centrally manage the volume- and retail-activation process for Windows, Microsoft Office, and select other Microsoft products. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0.
+          The Volume Activation Management Tool (VAMT) is a tool that allows network administrators and other IT professionals to automate and centrally manage the volume- and retail-activation process for Windows, Microsoft 365, and select other Microsoft products. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0.
 
           For information on VAMT, see:
           
@@ -196,7 +196,7 @@ sections:
           If you deploy Windows using Key Management Service (KMS) as the activation method, note that:
             
             - Windows Server is not supported as a KMS host to activate Windows.
-            - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). 
+            - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Microsoft 365](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). 
 
           If you’re using Windows Server as a KMS host, you can:
             
@@ -206,15 +206,15 @@ sections:
             - Run a Windows Server virtual machine.
 
       - question: |
-          What should I know about Volume Activation for Office, Project, and Visio?
+          What should I know about Volume Activation for Microsoft 365, Project, and Visio?
         answer: |
-          The following Volume Activation changes are related to Office, Project and Visio:
+          The following Volume Activation changes are related to Microsoft 365, Project and Visio:
             - Office KMS Host activates any Office suite or application.
             - Only one Office KMS key should be installed and used for activation.
 
-          If you deploy Office using Key Management Service (KMS) as the activation method, note that:
-            - You can’t activate Office using KMS if you use Windows Server as the KMS host.
-            - A patch is not available to allow activation of Office clients.
+          If you deploy Microsoft 365 using Key Management Service (KMS) as the activation method, note that:
+            - You can’t activate Microsoft 365 using KMS if you use Windows Server as the KMS host.
+            - A patch is not available to allow activation of Microsoft 365 apps.
 
           If you’re using Windows Server 2008 as a KMS host, you can:
             - Upgrade the KMS host machine to Windows Server.

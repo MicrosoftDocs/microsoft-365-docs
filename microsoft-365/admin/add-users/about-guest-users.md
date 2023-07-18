@@ -3,7 +3,7 @@ title: "Guest users in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 06/16/2020
 audience: Admin
@@ -63,7 +63,7 @@ In addition to Microsoft Teams and SharePoint, Microsoft 365 also supports guest
 - OneDrive - [External or guest sharing in OneDrive, SharePoint, and Lists](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
 - Planner – Applies to Web and mobile platforms. [Guest access in Microsoft Planner](https://support.microsoft.com/office/guest-access-in-microsoft-planner-cc5d7f96-dced-4da4-ab62-08c72d9759c6).
 - Microsoft 365 groups - [Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md).
-- Yammer - [Work with external groups in Yammer networks not aligned to native mode](/yammer/work-with-external-users/create-and-manage-external-groups).
+- Viva Engage - [Work with external groups in Viva Engage networks not aligned to native mode](/viva/engage/work-with-external-users/create-and-manage-external-groups).
 
 For Microsoft 365 apps like Microsoft Word and Excel, guest access is controlled by the location of the output file, for example, Microsoft SharePoint, Teams, and OneDrive.
 

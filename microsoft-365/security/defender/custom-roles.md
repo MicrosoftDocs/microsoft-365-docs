@@ -18,7 +18,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -107,3 +107,4 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Manage access to Microsoft 365 Defender](m365d-permissions.md)
 - [Manage admin access for Defender for Cloud Apps](/cloud-app-security/manage-admins)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

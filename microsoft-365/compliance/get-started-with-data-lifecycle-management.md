@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 03/07/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -73,13 +73,41 @@ For instructions to add users to the default roles or create your own role group
 
 These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these policies and labels doesn't require access to the content.
 
+## Support for administrative units
+
+Now rolling out in preview, data lifecycle management supports [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+
+- You can assign administrative units to members of custom role groups and any others that support administrative units. For example, role groups used with Microsoft Purview Records Management. Edit these role groups and select individual members, and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+
+- You can define the initial scope of retention policies and retention label policies when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
+
+> [!IMPORTANT]
+> Don't select administrative units for a policy that you want to apply to SharePoint sites or to Exchange public folders. Because administrative units support only users and groups, if you configure policy for retention to use administrative units, you won't be able to select the locations for SharePoint sites or Exchange public folders.
+
+- Both adaptive scopes and static scopes support administrative units.
+
+- Additional impact for restricted administrators
+    - [Policy lookup](retention.md#policy-lookup): Restricted administrators will see policies only from users within their assigned administrative units
+    - [Import PST files](importing-pst-files-to-office-365.md): Restricted administrators won't be able to use the network upload feature to bulk-import PST files to Microsoft 365 mailboxes
+    - [Exchange legacy features](data-lifecycle-management.md#exchange-legacy-features): Restricted administrators won't be able to configure the Exchange legacy features of retention policies and retention tags from messaging records management (MRM), and journaling rules
+
+- Currently, retention labels don't support administrative units.
+
+- Currently, a restricted administrator can create and view adaptive scopes for all administrative units when they use PowerShell cmdlets.
+
+- Currently, [simulation mode for auto-apply retention label policies](apply-retention-labels-automatically.md#learn-about-simulation-mode) doesn't support policies that are configured for selected administrative units. Policies with this configuration can be turned on, but if you want to first run them in simulation, select the full directory option.
+
+- Currently, inactive mailboxes aren't supported in a policy when you select one or more administrative units. To include inactive mailboxes in the policy, you must be an unrestricted administrator and select **Full directory**.
+
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+
 ## Common scenarios
 
 Use the following table to help you map your business requirements to the most common scenarios for data lifecycle management.
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
+|Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Viva Engage <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
 |Provide users with additional mailbox storage |[Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,7 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 02/16/2021
+ms.date: 05/30/2023
 ---
 
 # Investigate alerts in Microsoft 365 Defender
@@ -188,78 +188,113 @@ The **Recommendations** tab provides next-step actions and advice for investigat
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Screenshot of an example of alert recommendations":::
 
-## Suppress an alert
+## Tune an alert
 
-As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. For lower priority alerts, an analyst is still required to triage and resolve the alert which tends to be a manual process. A SOC analyst's time is valuable, wanting to focus only on high severity and high priority alerts.
+As a security operations center (SOC) analyst, one of the top issues is triaging the sheer number of alerts that are triggered daily. An analyst's time is valuable, wanting to focus only on high severity and high priority alerts. Meanwhile, analysts are also required to triage and resolve lower priority alerts, which tends to be a manual process.
 
-Alert suppression provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met.
+Alert tuning provides the ability to tune and manage alerts in advance. This streamlines the alert queue and saves triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met.
 
-You can create rule conditions based on 'evidence types' such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, user can apply the rule on the selected alert or any alert type that meets the rule conditions to suppress the alert.
+You can create rule conditions based on 'evidence types' such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, you can apply the rule on the selected alert or any alert type that meets the rule conditions to tune the alert.
+
+In addition, the feature also covers alerts coming from various Microsoft 365 Defender service sources. The alert tuning feature in public preview is getting alerts from workloads like Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Azure Active Directory Identity Protection (AAD IP), and others, if these sources are available on your platform and plan. Previously, the alert tuning capability only captured alerts from the Defender for Endpoint workload.
 
 > [!NOTE]
-> Suppression of alerts is not recommended. However in certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a suppression rule for the alert.
+> We recommend using alert tuning, previously known as **alert suppression**, with caution. In certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a rule to tune these alert types.
 
-### Create rule conditions to suppress alerts
+### Create rule conditions to tune alerts
 
-To create a suppression rule for alerts:
+There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert from the **Settings** page:
 
-1. Select the investigated alert. In the main alert page, select **Create suppression rule** in the summary details section of the alert page.
+1. Go to Settings. On the left pane, go to **Rules** and select **Alert tuning**.
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Screenshot of Create separation rule action.":::
+    :::image type="content" source="../../media/investigate-alerts/alert-tuning-settings.png" lightbox="../../media/investigate-alerts/alert-tuning-settings.png" alt-text="Screenshot of Alert tuning option in Microsoft 365 Defender's Settings page.":::
+    
+    Select **Add new rule** to tune a new alert. You can also edit an existing rule in this view by selecting a rule from the list.
 
-2. In the **Create suppression rule** pane, select **Only this alert type** to apply the rule on the selected alert.
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-add-new.png" lightbox="../../media/investigate-alerts/alert-tuning-add-new.png" alt-text="Screenshot of adding new rules in the Alert tuning page.":::
+
+2. In the **Tune alert** pane, you can select service sources where the rule applies in the dropdown menu under **Service sources**.
+
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-select-service.png" lightbox="../../media/investigate-alerts/alert-tuning-select-service.png" alt-text="Screenshot of service source dropdown menu in Tune an alert page.":::
+
+   > [!NOTE]
+   > Only services that the user has permission to are shown.
+
+3. Add indicators of compromise (IOCs) that triggers the alert under the **IOCs** section. You can add a condition to stop the alert when triggered by a specific IOC or by any IOC added in the alert.
+
+   IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
+
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-ioc2.png" alt-text="Screenshot of the IOC menu in Tune an alert page.":::
+
+   To set multiple rule conditions, use **AND**, **OR**, and grouping options to build relationship between these multiple 'evidence types' that cause the alert.
+
+      1. For example, select the triggering evidence **Entity Role: Trigger**, **equals**, and **any** to stop the alert when triggered by any IOC added in the alert. All the properties of this 'evidence' will auto populate as a new subgroup in the respective fields below.
+      
+   > [!NOTE]
+   > Condition values are not case sensitive.
+
+      2. You can edit and/or delete properties of this 'evidence' depending on your requirement (using wildcards, when supported).
+
+      3. Other than files and processes, AntiMalware Scan Interface (AMSI) script, Windows Management Instrumentation (WMI) event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
+
+      4. To add another IOC, click **Add filter**.
+   > [!NOTE]
+   > Adding at least one IOC to the rule condition is required to tune any alert type.
+
+4. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
+
+   Enter **Name**, **Description**, and click **Save**.
+
+   > [!NOTE]
+   > The **alert title (Name)** is based on the **alert type (IoaDefinitionId)**, which decides the alert title. Two alerts that have the same alert type can change to a different alert title.
+
+     :::image type="content" source="../../media/investigate-alerts/alert-tuning-choose-action2.png" lightbox="../../media/investigate-alerts/alert-tuning-choose-action2.png" alt-text="Screenshot of the Action menu in the Tune an alert page.":::
+
+To tune an alert from the **Alerts** page:
+
+1. Select an alert in the **Alerts** page under **Incidents and alerts**. Alternatively, you can select an alert when reviewing incident details in the Incident page.
+
+    You can tune an alert through the **Tune alert** pane that automatically opens on the right side of the alert details page.
+
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane2.png" lightbox="../../media/investigate-alerts/alert-tuning-tune-pane2.png" alt-text="Screenshot of Tune an alert pane within an Alert page.":::
+
+2. Select the conditions where the alert applies in the **Alert types** section. Select **Only this alert type** to apply the rule on the selected alert.
 
     However, to apply the rule on any alert type that meets rule conditions select **Any alert type based on IOC conditions**.
 
-    IOCs are indicators such as files, processes, scheduled tasks, and other evidence types that trigger the alert.
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-alert-types.png" lightbox="../../media/investigate-alerts/alert-tuning-alert-types.png" alt-text="Screenshot of Tune an alert pane highlighting the Alert types section.":::
 
-    > [!NOTE]
-    > You can no longer suppress an alert triggered by 'custom detection' source. You can't create a suppression rule for this alert.
-
-3. In the **IOCs** section, select **Any IOC** to suppress the alert no matter what 'evidence' has caused the alert.
-
-   To set multiple rule conditions, select **Choose IOCs**. Use **AND**, **OR** and grouping options to build relationship between these multiple 'evidence types' that cause the alert.
-
-   1. For example, in the **Conditions** section, select the triggering evidence **Entity Role: Triggering**, **Equals** and select the evidence type from the drop-down list.
-
-      :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Screenshot of evidence types drop-down list." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
-
-   2. All the properties of this 'evidence' will auto populate as a new subgroup in the respective fields below.
-
-      :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Screenshot of properties of evidence auto-populating." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
-
-      > [!NOTE]
-      > Condition values are not case sensitive.
-
-   3. You can edit and/or delete properties of this 'evidence' as per your requirement (using wildcards, when supported).
-
-   4. Other than files and processes, AntiMalware Scan Interface (AMSI) script, Windows Management Instrumentation (WMI) event, and scheduled tasks are some of the newly added evidence types that you can select from the evidence types drop-down list.
-
-      :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Screenshot of other types of evidence." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
-   5. To add another IOC, click **Add filter**.
-
-      > [!NOTE]
-      > Adding at least one IOC to the rule condition is required to suppress any alert type.
-
-4. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOC** section to add all alert related evidence types and their properties at once in the **Conditions** section.
-
-   :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Screenshot of auto fill all alert related IOCs." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
-
-5. In the **Scope** section, set the Scope in the **Conditions** sub-section by selecting specific device, multiple devices, device groups, the entire organization or by user.
+3. Filling out the **Scope** section is required if the alert tuning is Defender for Endpoint-specific. Select whether the rule applies to all devices in the organization or for a specific device.
 
    > [!NOTE]
-   > You must have Admin permission when the **Scope** is set only for **User**. Admin permission is not required when the **Scope** is set for **User** together with **Device**, **Device groups**.
+   > Applying the rule to all organization requires an administrative role permission.
 
-   :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Screenshot of create suppression rule pane: Conditions, Scope, Action.":::
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-scope.png" lightbox="../../media/investigate-alerts/alert-tuning-scope.png" alt-text="Screenshot of Tune an alert pane highlighting the Scope section.":::
 
-6. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
+4. Add conditions in the **Conditions** section to stop the alert when triggered by a specific IOC or by any IOC added in the alert. You can select a specific device, multiple devices, device groups, the entire organization or by user in this section.
+
+   > [!NOTE]
+   > You must have Admin permission when the **Scope** is set only for User. Admin permission is not required when the **Scope** is set for **User** together with **Device, Device groups**.
+
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-conditions.png" lightbox="../../media/investigate-alerts/alert-tuning-conditions.png" alt-text="Screenshot of Tune an alert pane highlighting the Conditions section.":::
+
+5. Add IOCs where the rule applies in the **IOCs** section. You can select **Any IOC** to stop the alert no matter what 'evidence' has caused the alert.
+
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-any-ioc.png" lightbox="../../media/investigate-alerts/alert-tuning-any-ioc.png" alt-text="Screenshot of Tune an alert pane highlighting the IOCs section.":::
+
+6. Alternatively, you can select **Auto fill all alert 7 related IOCs** in the **IOCs** section to add all alert-related evidence types and their properties at once in the **Conditions** section.
+
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-auto-fill-conditions.png" alt-text="Screenshot of auto fill all alert related IOCs." lightbox="../../media/investigate-alerts/alert-tuning-auto-fill-conditions.png":::
+
+7. In the **Action** section, take the appropriate action of either **Hide alert** or **Resolve alert**.
 
    Enter **Name**, **Comment**,  and click **Save**.
 
-7. **Prevent the IOCs from being blocked in the future:**
+   :::image type="content" source="../../media/investigate-alerts/alert-tuning-tune-pane-action.png" alt-text="Screenshot of Action section in the Tune alert pane." lightbox="../../media/investigate-alerts/alert-tuning-tune-pane-action.png":::
 
-   Once you save the suppression rule, in the **Successful suppression rule creation** page that appears, you can add the selected IOCs as indicators to the "allow list" and prevent them from being blocked in the future.
+8. **Prevent the IOCs from being blocked in the future:**
+
+   Once you save the alert tuning rule, in the **Successful rule creation** page that appears, you can add the selected IOCs as indicators to the "allow list" and prevent them from being blocked in the future.
 
    All alert-related IOCs will be shown in the list.
 
@@ -269,24 +304,18 @@ To create a suppression rule for alerts:
    2. Enter the scope to the **Select scope to apply to**. By default scope for the related alert is selected.
    3. Click **Save**. Now the file is not blocked as it is in the allow list.
 
-   :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Screenshot of successful suppression rule creation. ":::
+9. The new alert tuning functionality is available by default.
 
-8. The new suppression alert functionality is available by default.
-
-   However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Endpoints > Alert suppression**, then switch off the **New suppression rules creation enabled** toggle.
-
-   :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Screenshot of toggle for turning on/off the suppression rule creation feature.":::
+   However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Microsoft 365 Defender > Rules > Alert tuning**, then switch off the **New tuning rules creation enabled** toggle.
 
    > [!NOTE]
-   > Soon, only the new alert suppression experience will be available. You will not be able to go back to the previous experience.
+   > Soon, only the new alert tuning experience will be available. You will not be able to go back to the previous experience.
 
-9. **Edit existing rules:**
+10. **Edit existing rules:**
 
-   You can always add or change rule conditions and scope of new or existing rules in Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.
+    You can always add or change rule conditions and scope of new or existing rules in the Microsoft 365 Defender portal, by selecting the relevant rule and clicking **Edit rule**.
 
-   To edit existing rules, ensure that the **New suppression rules creation enabled** toggle is enabled.
-
-   :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Screenshot of edit suppression rule.":::
+    To edit existing rules, ensure that the **New alert tuning rules creation enabled** toggle is enabled.
 
 ## Resolve an alert
 
@@ -328,6 +357,7 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-- [Investigate data loss incidents](investigate-dlp.md)
+- [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

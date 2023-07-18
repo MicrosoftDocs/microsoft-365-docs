@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 manager: dansimp
@@ -167,3 +167,4 @@ To provide more context about how investigation states show up, the following ta
 
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Learn more about remediation actions](m365d-remediation-actions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

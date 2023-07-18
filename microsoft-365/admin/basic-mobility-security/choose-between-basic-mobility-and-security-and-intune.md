@@ -3,7 +3,7 @@ title: "Choose between Basic Mobility and Security and Intune"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/31/2020
 audience: Admin
@@ -90,7 +90,8 @@ With Intune you have the following set of actions:
 - [Fresh start](/mem/intune/remote-actions/device-fresh-start) (Windows only)
 - [Full scan](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
 - [Locate device](/mem/intune/remote-actions/device-locate) (iOS only)
-- [Lost mode](/mem/intune/remote-actions/device-lost-mode) (iOS only)- [Quick scan](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 only)
+- [Lost mode](/mem/intune/remote-actions/device-lost-mode) (iOS only)
+- [Quick scan](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
 - [Remote control for Android](/mem/intune/remote-actions/teamviewer-support)
 - [Remote lock](/mem/intune/remote-actions/device-remote-lock)
 - [Rename device](/mem/intune/remote-actions/device-rename)

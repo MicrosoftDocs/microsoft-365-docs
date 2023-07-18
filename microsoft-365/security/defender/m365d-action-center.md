@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 ms.date: 07/27/2022
 manager: dansimp
@@ -137,3 +137,4 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 ## Next step 
 
 - [View and manage remediation actions](m365d-autoir-actions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

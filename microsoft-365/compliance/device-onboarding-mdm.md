@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/06/2020
+ms.date: 04/03/2023
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,13 +26,13 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md)
 
-You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
+You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDM solutions by providing OMA-URIs to create policies to manage devices.
 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
-If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
+If you're using Microsoft Intune, the device must be enrolled in MDM.
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -45,10 +45,10 @@ Follow the instructions from [Intune](/mem/intune/protect/advanced-threat-protec
 
 ## Offboard and monitor devices using Mobile Device Management tools
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When you download an offboarding package, you are notified of the package's expiry date. The expiry date is also included in the package name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same device at the same time. If they are, unpredictable collisions will result.
 
 1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
@@ -56,7 +56,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 3. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
 
-4. Click **Download package**, and save the .zip file.
+4. Select **Download package**, and save the .zip file.
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
@@ -68,13 +68,13 @@ For security reasons, the package used to Offboard devices will expire 30 days a
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
 > [!NOTE]
-> If Microsoft Defender for Endpoint is already configured, you can **Turn on device onboarding** and Step 6 is no longer required.
+> If Microsoft Defender for Endpoint is already configured, you can **Turn on device onboarding**. If you do this, step 6 is not required.
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
 
 > [!IMPORTANT]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal. However, data from the device, including reference to any alerts it has received, will be retained for up to 6 months.
 
 ## Related topics
 - [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)

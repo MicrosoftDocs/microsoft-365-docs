@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 ms.date: 07/27/2022
 manager: dansimp
@@ -102,3 +102,4 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
