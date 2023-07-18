@@ -1,5 +1,5 @@
 ---
-title: Collaborate with guests in a team
+title: Collaborate with guests in a team (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -27,7 +27,7 @@ recommendations: false
 description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
-# Collaborate with guests in a team
+# Collaborate with guests in a team (IT Admins)
 
 If you need to collaborate with guests across documents, tasks, and conversations, we recommend using Microsoft Teams. Teams provides all of the collaboration features available in Office and SharePoint with persistent chat and a customizable and extensible set of collaboration tools in a unified user experience.
 
