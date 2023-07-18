@@ -52,7 +52,12 @@ Through advanced hunting, it's possible to extract ASR rules information, create
 
 ASR rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
-:::image type="content" source="images/adv-hunt-querynew.png" alt-text="The Advanced hunting query" lightbox="images/adv-hunt-querynew.png":::
+```kusto
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType startswith "Asr"
+| summarize EventCount=count() by ActionType
+```
 
 :::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="images/adv-hunt-sc-2new.png":::
 
