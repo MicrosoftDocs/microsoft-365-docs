@@ -55,3 +55,4 @@ Topic|Description
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

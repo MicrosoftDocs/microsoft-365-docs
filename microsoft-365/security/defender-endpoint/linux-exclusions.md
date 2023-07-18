@@ -214,3 +214,4 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

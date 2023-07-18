@@ -238,3 +238,4 @@ var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 ## See also
 - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint on behalf of a user](exposed-apis-create-app-nativeapp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

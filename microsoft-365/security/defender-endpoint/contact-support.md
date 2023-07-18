@@ -93,3 +93,4 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 - [Troubleshoot service issues](troubleshoot-mdatp.md)
 - [Check service health](/microsoft-365/enterprise/view-service-health)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

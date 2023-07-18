@@ -214,3 +214,4 @@ For more information, see [Configure and validate exclusions based on file exten
 
 - [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

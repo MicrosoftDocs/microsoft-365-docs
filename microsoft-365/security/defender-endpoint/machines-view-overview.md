@@ -155,3 +155,4 @@ On the **IoT devices** tab, select **Customize columns** to see the columns avai
 
 [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

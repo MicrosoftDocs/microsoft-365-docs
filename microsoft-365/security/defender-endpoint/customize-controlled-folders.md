@@ -178,3 +178,4 @@ For more information about customizing the notification when a rule is triggered
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Enable controlled folder access](enable-controlled-folders.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
