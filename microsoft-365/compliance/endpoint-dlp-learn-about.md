@@ -255,7 +255,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 ## Just-in-time protection (preview)
 
 > [!IMPORTANT]
-> If you want to try out just-in-time protection, you must register your tenant at [Endpoint JIT Preview](https://aka.ms/EndpointJITPreview).
+> This feature requires 4.18.23060 or higher Antimalware Client Version.
 
 Endpoint DLP can use **Just in time protection** once it's enabled in **Microsoft Purview compliance console** > **Settings**. 
 
@@ -267,8 +267,8 @@ Just-in-time protection applies a candidate policy to onboarded Windows 10/11 de
 > [!NOTE]
 > - Simulate Mode: Just-in-time protection is triggered in the background. Admins can see just-in-time events in Activity explorer, without users being blocked.
 > - Enforce Mode: End users are blocked until the evaluation is complete.
+> You should start from Simulate Mode to understand the volume and productivity impact of this feature in your orgnization. This configurations will be changed in our General Available version.
 
-You can prevent a file from being permanently blocked if policy evaluation starts on a file, but doesn't complete. Use the **Just in time protection configuration** fallback setting to either **Allow** or **Block** egress activities if the policy evaluation doesn't complete. To configure fallback settings, navigate to **Microsoft Purview compliance console** > **Settings** > **Just in time protection configuration** > **Decide what happens if JIT protection fails**.
 
 > [!TIP]
 > Because the candidate policy from just-in-time protection is applied to all files on onboarded devices, it may block user activity on files that won't have a policy applied once evaluation occurs. To prevent this productivity interruption, you should configure and deploy policies to devices before enabling just-in-time protection.
