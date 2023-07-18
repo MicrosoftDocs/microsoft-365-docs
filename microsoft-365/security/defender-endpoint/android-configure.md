@@ -315,3 +315,4 @@ Use the following steps to configure Disable sign-out:
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

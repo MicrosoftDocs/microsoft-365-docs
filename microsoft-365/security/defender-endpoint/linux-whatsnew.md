@@ -854,3 +854,4 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
    </details>
 
 </blockquote></details>
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

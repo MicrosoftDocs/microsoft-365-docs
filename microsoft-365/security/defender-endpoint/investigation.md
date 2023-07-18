@@ -77,3 +77,4 @@ triggeringAlertId|String|The ID of the alert that triggered the investigation.
     "triggeringAlertId": "da637139127150012465_1011995739"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

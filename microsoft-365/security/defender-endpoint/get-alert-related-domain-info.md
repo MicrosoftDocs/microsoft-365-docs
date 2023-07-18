@@ -107,3 +107,4 @@ Here's an example of the response.
     ]
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

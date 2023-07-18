@@ -156,3 +156,4 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 - [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
 - [Onboard devices](onboard-configure.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
