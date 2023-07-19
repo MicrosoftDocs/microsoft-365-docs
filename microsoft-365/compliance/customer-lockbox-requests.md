@@ -48,7 +48,7 @@ These steps outline the typical workflow when a Microsoft engineer starts a Cust
 
 3. A Microsoft support engineer reviews the service request and determines a need to access the organization's tenant to repair the issue.
 
-4. The Microsoft support engineer logs into the Customer Lockbox request tool and makes a data access request that includes the organization's tenant name, service request number, expected start time of access (starts immediately post approval if not specified), the estimated time the engineer needs access to the data and the service the request is for. 
+4. The Microsoft support engineer logs into the Customer Lockbox request tool and makes a data access request that includes the organization's tenant name, service request number, expected start time of access (starts immediately post approval if not specified), the estimated amount of time the engineer needs access to the data, and the service the request is for. 
 
 5. After a Microsoft Support manager approves the request, Customer Lockbox sends the designated approver at the organization an email notification about the pending access request from Microsoft.
 
