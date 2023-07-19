@@ -33,9 +33,9 @@ This article lists new features in the latest release of [Microsoft 365 Business
 > [!TIP]
 > **Read all about the exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog)**.
 
-- **Mobile threat defense is rolling out**. Mobile threat defense includes operating system-level threat and vulnerability management, web protection, and app security. It's not generally available in Defender for Business and Microsoft 365 Business Premium.
+- **Mobile threat defense is rolling out**. Mobile threat defense includes operating system-level threat and vulnerability management, web protection, and app security. It's not generally available in Defender for Business and Microsoft 365 Business Premium. [Learn more about mobile threat defense](../security/defender-business/mdb-mtd.md).
 
-- **Automatic attack disruption** is rolling out. During an ongoing attack, automatic attack disruption capabilities swiftly contain compromised devices, which helps to stop lateral movement within the network and minimizes the overall impact of the attack. Automatic attack disruption is included in Defender for Business and Microsoft 365 Business Premium.
+- **Automatic attack disruption** is rolling out. During an ongoing attack, automatic attack disruption capabilities swiftly contain compromised devices, which helps to stop lateral movement within the network and minimizes the overall impact of the attack. Automatic attack disruption is included in Defender for Business and Microsoft 365 Business Premium. [Learn more about automatic attack disruption](../security/defender/automatic-attack-disruption.md).
 
 - **Security summary reports** are rolling out. Use these reports to view threats that were prevented by Defender for Business, Microsoft Secure Score status, and recommendations for improving security. See [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
 
