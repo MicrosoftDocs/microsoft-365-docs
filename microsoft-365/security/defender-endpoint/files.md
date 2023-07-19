@@ -91,3 +91,4 @@ Method|Return Type |Description
     "determinationValue": "PUA:Win32/FusionCore"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

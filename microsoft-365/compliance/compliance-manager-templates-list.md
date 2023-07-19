@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/04/2023
+ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -94,7 +94,7 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - [CIS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
 - CIS Microsoft 365 Foundation Level 1 and 2
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
-- COBIT 5  
+- COBIT 5
 - FINRA Cybersecurity Checklist  
 - ITU X.1052 Information Security Management Framework  
 - Joint Commission Information Management Standard  
@@ -329,7 +329,8 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - Bosnia and Herzegovina Law on the Protection of Personal Data
 - Botswana - Data Protection Act  
 - Bulgaria Law for Protection of Personal Data 2002  
-- Central Bank of Kuwait Cybersecurity Framework  
+- Central Bank of Kuwait Cybersecurity Framework
+- Corporate Sustainability Reporting Directive (CSRD) 
 - Cyprus The Processing of Personal Data Law  
 - Czech - Act No. 110/2019 Coll. on Personal Data Processing - 2019  
 - Czech - On Cyber Security and Change of Related Acts (Act on Cyber Security) - Act No. 181  
@@ -343,7 +344,8 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - Estonia - Personal Data Protection Act  
 - Estonia - The system of security measures for information systems  
 - EU - Directive 2006/24/EC  
-- EU - ePrivacy Directive 2002 58 EC  
+- EU - ePrivacy Directive 2002 58 EC
+- [EU GDPR (General Data Protection Regulation)](/compliance/regulatory/gdpr)  
 - EudraLex - The Rules Governing Medicinal Products in the European Union  
 - European Network and Information Security Agency (ENISA) - Cloud Computing Information Assurance Framework  
 - Finland - Data Protection Act  

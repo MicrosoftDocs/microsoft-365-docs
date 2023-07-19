@@ -152,3 +152,4 @@ To see the Microsoft Defender Offline scan results:
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
