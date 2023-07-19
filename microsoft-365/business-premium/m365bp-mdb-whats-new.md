@@ -45,6 +45,8 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 - **Customizable security baselines and configuration drift reports in Microsoft 365 Lighthouse**. For Microsoft Managed Service Providers (MSPs), Microsoft 365 Lighthouse includes security baselines to o deploy a standardized set of configurations to customers’ tenants. Microsoft 365 Lighthouse now lets MSPs customize baselines based on expertise and tailor them to customers’ unique needs. 
 
+- **New training resources for Microsoft partners**. To provide step-by-step guidance for partners on how to build services based on critical CIS cybersecurity controls, a Security Managed services kit and 3-part digital training series are now available.
+
 ## March 2023
 
 - **Mobile threat defense (preview) is added to Defender for Business**. The ability to [onboard iOS and Android devices](../security/defender-business/mdb-onboard-devices.md) to the standalone version of Defender for Business is now in preview! These capabilities provide OS-level threat and vulnerability management, web protection, and app security to help you and employees stay more secure on the go. See [Mobile threat defense capabilities in Microsoft Defender for Business](../security/defender-business/mdb-mtd.md).
