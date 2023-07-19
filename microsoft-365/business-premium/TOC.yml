@@ -36,7 +36,6 @@
         href: m365bp-managed-unmanaged-devices.md
       - name: Set up information protection capabilities
         href: m365bp-set-up-compliance.md
-
 - name: Train your team
   items:
   - name: Set up unmanaged (BYOD) devices
@@ -103,6 +102,8 @@
       href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Streaming API (preview)
+      href: ../security/defender-business/mdb-streaming-api.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
   href: m365bp-mdb-maintain-environment.md 
 - name: Reference
