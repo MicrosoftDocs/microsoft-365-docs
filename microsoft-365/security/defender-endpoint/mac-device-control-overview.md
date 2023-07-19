@@ -432,3 +432,4 @@ In this case, only have one access rule policy, but if you have multiple, make s
 - [Deploy Device Control by using Intune](mac-device-control-intune.md)
 - [Deploy Device Control by using JAMF](mac-device-control-jamf.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

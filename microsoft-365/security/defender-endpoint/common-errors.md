@@ -108,3 +108,4 @@ When contacting us about an error, attaching this ID helps find the root cause o
     }
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -180,3 +180,4 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -47,3 +47,4 @@ ms.date: 12/18/2020
 ## Next step
 [Setup the device groups in Jamf Pro](mac-jamfpro-device-groups.md)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

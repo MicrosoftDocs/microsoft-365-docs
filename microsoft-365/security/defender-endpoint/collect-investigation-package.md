@@ -106,3 +106,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c05
   "Comment": "Collect forensics due to alert 1234"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

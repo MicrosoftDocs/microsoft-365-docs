@@ -117,3 +117,4 @@ Copy the unified solution package, onboarding script and migration script to the
 - [Microsoft Defender for Endpoint - Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md)
 - [Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
