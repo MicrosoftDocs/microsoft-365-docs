@@ -45,7 +45,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 - **Customizable security baselines and configuration drift reports in Microsoft 365 Lighthouse**. For Microsoft Managed Service Providers (MSPs), Microsoft 365 Lighthouse includes security baselines to o deploy a standardized set of configurations to customers’ tenants. Microsoft 365 Lighthouse now lets MSPs customize baselines based on expertise and tailor them to customers’ unique needs. [Learn more about Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md).
 
-- **New training resources for Microsoft partners**. To provide step-by-step guidance for partners on how to build services based on critical CIS cybersecurity controls, a Security Managed services kit and 3-part digital training series are now available.
+- **New training resources for Microsoft partners**. To provide step-by-step guidance for partners on how to build services based on critical CIS cybersecurity controls, a Security Managed services kit and 3-part digital training series are now available. See the "IT partner resources to help build security services" in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog).
 
 ## March 2023
 
