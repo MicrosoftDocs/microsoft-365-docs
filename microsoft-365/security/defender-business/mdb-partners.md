@@ -21,6 +21,9 @@ ms.collection:
 
 # Resources for Microsoft partners working with small and medium-sized businesses
 
+> [!TIP]
+> **Read all about exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog)**.
+
 Small and medium-sized businesses recognize that security is important, but they often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with setup and configuration, managing security for their devices and network, and addressing alerts or detected threats. Microsoft partners can help!
 
 If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
