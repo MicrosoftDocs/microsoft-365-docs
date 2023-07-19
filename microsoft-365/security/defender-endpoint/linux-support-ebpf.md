@@ -95,7 +95,7 @@ The following two sets of data help analyze potential issues and determine the m
 
 1.  Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
 
-2.  Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information.md)
+2.  Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
 
 > [!NOTE]
 > In the preview version, diagnostic capabilities for top processes consuming eBPF resources and troubleshooting capabilities for configuring eBPF exclusions are not supported. These functionalities will be available in future versions.
