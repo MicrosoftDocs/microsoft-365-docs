@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/17/2023
+ms.date: 07/19/2023
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
@@ -70,7 +70,7 @@ When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux u
 
 ## Use eBPF
 
-The eBPF sensor is enabled automatically on all insider devices. You will need Microsoft Defender for Endpoint version 101.23062.0005 or later to experience the most recent improvements using the new sensor.
+The eBPF sensor will be automatically turned on and gradually rolled out across all insider machines over the coming days following this publication. You will need Microsoft Defender for Endpoint version 101.23062.0005 or later to experience the most recent improvements using the new sensor.
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
