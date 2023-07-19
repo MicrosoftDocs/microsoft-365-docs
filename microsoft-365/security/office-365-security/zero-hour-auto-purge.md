@@ -141,7 +141,7 @@ When a chat message is identified as potentially phishing or malicious in Micros
 
 :::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how zero-hour auto purge works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
 
-Admins can view and manage these quarantined messages in Microsoft Teams. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
+Admins can view and manage these quarantined message in the Quarantine view. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing messages in Teams
 
