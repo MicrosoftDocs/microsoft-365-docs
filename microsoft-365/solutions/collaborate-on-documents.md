@@ -60,7 +60,7 @@ In order for people outside your organization to have access to a document in Sh
 
 The organization-level settings for SharePoint determine the settings that are available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that's available in users' OneDrive libraries.
 
-For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links is the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
+For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links are the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
 
 For SharePoint, choose the most permissive setting that's needed by any site in your organization.
 
