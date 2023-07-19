@@ -9,14 +9,14 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 07/19/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.collection: 
 - tier2
 - m365-security
-ms.reviewer: jomaun, oogunrinde, efratka
+ms.reviewer: nehabha, efratka
 f1.keywords: NOCSH 
 ---
 
@@ -27,6 +27,15 @@ f1.keywords: NOCSH
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](index.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## July 2023
+
+- **Mobile threat defense is rolling out**. Mobile threat defense includes operating system-level threat and vulnerability management, web protection, and app security. It's not generally available in Defender for Business and Microsoft 365 Business Premium.
+
+- **Automatic attack disruption** is rolling out. During an ongoing attack, automatic attack disruption capabilities swiftly contain compromised devices, which helps to stop lateral movement within the network and minimizes the overall impact of the attack. Automatic attack disruption is included in Defender for Business and Microsoft 365 Business Premium.
+
+- **Security summary reports** are rolling out. Use tehse reports to view threats that were prevented by Defender for Business, Microsoft Secure Score status, and recommendations for improving security.
+
 
 ## March 2023
 
