@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 05/25/2023
+ms.date: 07/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -39,6 +39,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## July 2023
+
+- A new URL and domain page is now available in Microsoft 365 Defender. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/investigate-domain.md).
 
 ## June 2023
 
@@ -206,3 +210,4 @@ The security operations team can view all actions pending approval, and the stip
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

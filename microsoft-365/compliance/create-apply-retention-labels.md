@@ -96,7 +96,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 2. Run one of the following commands:
     
-    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Viva Engage user messages** and **Viva Engage community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -266,7 +266,7 @@ When you use a standard retention label as your default label for an Outlook fol
 
 - If you move an item with a default retention label from one folder to another folder with a different default retention label: The item gets the new default retention label.
 
-- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed.
+- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed [unless the new folder is the **Deleted Items** folder](/exchange/reference/retention-deleted-items).
 
 When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 

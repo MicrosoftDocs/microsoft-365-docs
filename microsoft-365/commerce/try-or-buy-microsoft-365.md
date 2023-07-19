@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- ContentEnagagementFY23
 ms.custom: 
 - commerce_purchase
 - VSBFY23

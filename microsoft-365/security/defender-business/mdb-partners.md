@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 03/29/2023
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -46,7 +46,7 @@ Use the links in the following table to access the guide and summary checklist:
 
 | Resource | Description |
 |:---|:---|
-| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | This Word document summarizes Microsoft’s recommendations for enabling employees at small and medium-sized businesses to securely work from anywhere- whether from home, in the office or on the go, using the features included in Microsoft 365 Business Premium.  |
+| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | This Word document summarizes Microsoft's recommendations for enabling employees at small and medium-sized businesses to securely work from anywhere- whether from home, in the office or on the go, using the features included in Microsoft 365 Business Premium.  |
 | [Checklist for security with Microsoft 365 Business Premium](https://aka.ms/smbsecuritychecklist) | This checklist includes all the planning and configuration steps covered in the guide, from getting started to configuring security and compliance capabilities, and provides general recommendations for each step. |
 
 ## Integrate Microsoft endpoint security with your RMM tools and PSA software

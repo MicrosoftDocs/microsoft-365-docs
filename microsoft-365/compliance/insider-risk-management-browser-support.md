@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 02/21/2023
+ms.date: 07/14/2023
 audience: itpro
 ms.collection: 
 - purview-compliance
@@ -27,18 +27,20 @@ ms.collection:
 
 In Microsoft Purview Insider Risk Management, browser signal detection is used for:
 
-- The [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview)
+- The following templates:
+   - [Data theft by departing users](insider-risk-management-policy-templates.md#data-theft-by-departing-users)
+   - [Data leaks](insider-risk-management-policy-templates.md#data-leaks)
+   - [Risky browser usage (preview)](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview)
 - [Forensic evidence](/microsoft-365/compliance/insider-risk-management-forensic-evidence#capturing-options)
 
-## Risky browser usage template
+## Browsers and templates
 
-Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risk activities are performed by in-scope policy users when using these browsers:
+Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risky activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
 - Files printed to local or network devices
 - Files transferred or copied to a network share
 - Files copied to USB devices
-- Browsing risky websites
 - Browsing potentially risky websites
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
@@ -51,7 +53,17 @@ The following table summarizes identified risk activities and extension support 
 | Files printed to local or network devices | Native | Extension |
 | Files transferred or copied to a network share | Extension  | Extension  |
 | Files copied to USB devices | Extension   | Extension    |
-| Browsing risky websites     | Extension   | Extension    |
+| Browsing potentially risky websites     | Extension   | Extension    |
+
+The following table summarizes activities by template:
+
+| **Detected activities** | **Data theft by departing users** | **Data leaks** |**Risky browser usage**|
+| ----------------------- | -----| -----|-----|
+| Files copied to personal cloud storage | Yes | Yes |No|
+| Files printed to local or network devices | Yes| Yes |No|
+| Files transferred or copied to a network share | Yes  | Yes  |No|
+| Files copied to USB devices | Yes | Yes  |No|
+| Browsing potentially risky websites     | No  | No  | Yes|
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
