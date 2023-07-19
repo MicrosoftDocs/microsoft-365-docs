@@ -23,7 +23,8 @@ audience: ITPro
 
 ## Use the Streaming API (preview) with Microsoft Defender for Business
 
-If your organization has a Security Operations Center (SOC), the ability to use the Microsoft Defender for Endpoint streaming API is now in preview for Defender for Business and Microsoft 365 Business Premium. The API supports streaming of device file, registry, network, sign-in events and more to Azure Event Hub, Azure Storage, and Microsoft Sentinel to support advanced hunting and attack detection. 
+If your organization has a Security Operations Center (SOC), the ability to use the Microsoft Defender for Endpoint streaming API is now in preview for [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](../../business-premium/index.md). The API supports streaming of device file, registry, network, sign-in events and more to Azure Event Hub, Azure Storage, and Microsoft Sentinel to support advanced hunting and attack detection. 
 
 This article provides an overview of how the streaming API works and how to set it up.
 
+CONTENT COMING SOON
