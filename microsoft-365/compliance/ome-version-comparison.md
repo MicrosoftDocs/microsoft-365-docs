@@ -88,7 +88,7 @@ Recipients inside GCC High receive the same inline reading experience in Outlook
 
 Senders inside GCC High can send encrypted email outside of the GCC High boundary and vice versa.
 
-All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the Microsoft Purview Message Encryption Portal where the recipient can read and reply to the message. This is also true for senders outside GCC High sending OME encrypted mail to GCC High.
+All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the Microsoft Purview Message Encryption Portal where the recipient can read and reply to the message. This is also true for senders outside GCC High sending OME encrypted mail to GCC High.  The recipient can only login using one-time passcode. Authentication with Gmail or Yahoo social ID is not available.
 
 ## Coexistence of legacy OME and Microsoft Purview Message Encryption in the same tenant
 
