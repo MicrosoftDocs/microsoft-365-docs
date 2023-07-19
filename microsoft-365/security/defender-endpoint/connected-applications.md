@@ -50,3 +50,4 @@ The Connected applications page provides information about the Azure AD applicat
 ## Edit, reconfigure, or delete a connected application
 
 The **Open application settings** link opens the corresponding Azure AD application management page in the Azure portal. From the Azure portal, you can manage permissions, reconfigure, or delete the connected applications.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

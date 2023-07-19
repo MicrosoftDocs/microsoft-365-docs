@@ -92,3 +92,4 @@ For example, to show data about high-severity alerts only:
 ## Related topic
 
 - [Device health and compliance report](device-health-reports.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
