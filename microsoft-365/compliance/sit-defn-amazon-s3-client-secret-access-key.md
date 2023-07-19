@@ -48,7 +48,11 @@ for example:
 
 ## Credential example 
 
-`AWS Secret: abcdefghijklmnopqrst0123456789/+ABCDEFGH;`
+|Confidence Band|Example|
+|----|----|
+|High| `Amazon AWS Access Key: abcdefghijklmnopqrst0123456789/+ABCDEFGH;` |
+|Medium| `Client secret (AWS): abcdefghijklmnopqrst0123456789/+ABCDEFGH;` |
+|Low| N/A |
 
 ## Checksum
 

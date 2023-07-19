@@ -166,7 +166,7 @@ The following information is displayed in the timeline:
 - Source device/IP address
 - [MITRE ATT&CK](https://attack.mitre.org/) techniques 
 - Alert status and severity
-- Country where the client IP address is geolocated
+- Country/region where the client IP address is geolocated
 - Protocol used during the communication
 - Target device (customized column)
 - Number of times the activity happened (customized column)

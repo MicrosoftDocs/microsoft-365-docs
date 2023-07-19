@@ -87,3 +87,4 @@ Here's an example of the request.
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

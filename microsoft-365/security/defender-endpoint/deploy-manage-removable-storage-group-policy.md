@@ -211,3 +211,4 @@ For this scenario, you need to create two groups: one removable storage group fo
     - only need to restrict file system level access
 
     Although this case only has one policy, make sure put it under PolicyRules [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Block%20Read%20and%20Write%20access%20to%20specific%20file%20_Policy.xml). See step 4 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
