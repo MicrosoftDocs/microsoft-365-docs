@@ -93,16 +93,14 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### June-2023 (Platform: 4.18.x.x | Engine: 1.1.23060.1005)
+### June-2023 (Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Release date:  **July 10, 2023 (Engine)** / (*Platform release date is pending*)
-- Platform: **4.18.x.x** (*platform version number is pending*)
+- Release date:  **July 10, 2023 (Engine)** 
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
    
 ### What's new  
-
 
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
 - Fixed a performance issue when building and validating Defender cache
@@ -111,6 +109,11 @@ All our updates contain
 ### Known Issues  
 
 - None
+
+### May-2023 *UPDATE 2* (Platform: 4.18.23050.9 | Engine: 1.x.xxxxx.x)
+
+*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
+
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
