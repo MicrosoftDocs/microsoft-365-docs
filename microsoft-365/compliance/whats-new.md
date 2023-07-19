@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/12/2023
+ms.date: 07/18/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -41,12 +41,43 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## July 2023
 
+### Communication compliance
+
+- **Support for advanced sensitive info types**: Communication compliance now [supports four advanced sensitive information types](communication-compliance-policies.md#sensitive-information-types): All credentials, All full names, All medical terms and conditions, and All physical addresses. 
+- **New conditions**: [Use the following new conditions to monitor communications that cross the firewall](communication-compliance-policies.md#conditional-settings):
+   - Message is received from any of these external email addresses
+   - Message is not received from any of these external email addresses
+   - Message is sent to any of these external email addresses
+   - Message is not sent to any of these external email addresses
+- **New Policy settings button**: [View policy settings without opening a policy](communication-compliance-investigate-remediate.md).
+- **New Filter bar**: [Key filters (**Body/Subject**, **Date**, **Sender**, and **Tags**) are always displayed](communication-compliance-investigate-remediate.md#using-filters) to make it easier to filter. 
+
+### Insider risk management
+
+- **In preview**: [Bring your own detections (BYOD)](import-insider-risk-indicators.md). Use the new BYOD detections feature to import third-party insider risk detections and create custom indicators.
+- **Save a view of a filter in the Activity explorer**: If you create a filter and customize columns for the filter, [save a view of your changes to quickly apply again later](insider-risk-management-activities.md#).
+- **Support for virtualized environments**: Insider risk management now [supports virtualized environments through endpoint DLP](insider-risk-management-settings-policy-indicators.md#enable-device-indicators-and-onboard-windows-devices).
+- **General availability (GA)**: 
+   - [Import physical badging data connector](import-physical-badging-data.md)
+   - [Identify priority physical assets setting](insider-risk-management-settings-priority-physical-assets.md)
+- **Additional templates for browser signal detection**: [Browser signal detection is now used for the *Data theft by departing users*, *Data leaks*, and *Risky browser usage (preview)* templates](insider-risk-management-browser-support.md).
+- Update for the [maximum size of a priority user group](insider-risk-management-settings-priority-user-groups.md#create-a-priority-user-group).
+
 ### Sensitivity labels
 
 - **General availability (GA)**: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units).
 - **In preview**: Now rolling out in preview, PDF support for auto-labeling policies, default sensitivity labels for SharePoint document libraries, and labeling activities in Office on the web that include manual labeling and displaying labeled documents, and encrypted PDFs that are now supported  for DLP, eDiscovery, and search. You must [opt-in for this PDF support](sensitivity-labels-sharepoint-onedrive-files.md#adding-support-for-pdf).
 
 ## June 2023
+
+### Communication compliance
+
+- Update to note that for the *Export* option in detailed reports, [the items and actions displayed are only for the items and actions matched during the date range included in the date range filter](communication-compliance-reports-audits.md#detailed-reports). 
+
+### Compliance Manager
+
+- Update to clarify that some [automatically tested actions](compliance-manager-improvement-actions.md#testing-work) might show a status of "Out of scope" within the first 24 hours of setup with Microsoft Defender for Cloud monitoring.
+- Update to reflect that the link to [export an assessment report](compliance-manager-assessments.md#export-an-assessment-report) is now called "Export actions."
 
 ### Data lifecycle management and records management
 
@@ -62,6 +93,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **New Alert ID field and Case ID field**: New static ID fields make it easier to search for alerts, and track and share alerts between admins.
 - **Assign an alert feature**: Ability to [assign an alert to a specific admin](insider-risk-management-activities.md#assign-an-alert) makes it easier for admins to prioritize and triage alerts.
 - Update to clarify that there's [no limit on the number of users for forensic evidence policies](insider-risk-management-policy-templates.md#policy-template-limits). 
+
+### Microsoft Priva
+
+- Updates to clarify that adding a collaborator automatically gives them a Privacy Management Contributors role, on [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review#collaboration-for-data-review) and [Set user permissions and assign roles](/privacy/priva/priva-permissions#learn-more-about-role-groups-and-roles).
 
 ### Sensitivity labels
 
@@ -83,7 +118,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ### Audit
 
 - Updates for audit log support for [Microsoft Project for the web](/microsoft-365/compliance/audit-log-activities#microsoft-project-for-the-web-activities), [Microsoft To Do](/microsoft-365/compliance/audit-log-activities#microsoft-to-do-activities),and [Microsoft Defender Experts](/microsoft-365/compliance/audit-log-activities#microsoft-defender-experts-activities) activities.
-- Updates to clarify [audit log rentention policies](/microsoft-365/compliance/audit-log-retention-policies) and duration options.
+- Updates to clarify [audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies) and duration options.
 
 ### Compliance Manager
 
@@ -153,7 +188,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - **In preview**: Scan for sensitive information in images with support for [optical character recognition](ocr-learn-about.md) when you use auto-apply retention label policies.
 
 - **In preview**: Auto-labeling retention policies for [cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments) that were already in preview now include attachments and links shared in Viva Engage.
-- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle managment](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
+- **In preview**: Support for Azure Active Directory administrative units—for both [data lifecycle management](get-started-with-data-lifecycle-management.md#support-for-administrative-units) and [records management](get-started-with-records-management.md#support-for-administrative-units)—is starting to roll out.
 - **In preview**: You can now optionally configure [auto-approval](disposition.md#auto-approval-for-disposition) when you configure a retention label for disposition review.
 
 ### Data loss prevention

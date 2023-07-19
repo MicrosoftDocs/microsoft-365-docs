@@ -106,3 +106,4 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 6. Select **Continue**  to complete the configuration.
 
    :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="images/jamfpro-mdm-profile.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -114,3 +114,4 @@ Here's an example of the response.
 
 > [!NOTE]
 > This statistic information is based on data from the past 30 days.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

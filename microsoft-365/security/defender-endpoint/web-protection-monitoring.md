@@ -70,3 +70,4 @@ Select a domain to view the list of devices that have attempted to access URLs i
 - [Web content filtering](web-content-filtering.md)
 - [Web threat protection](web-threat-protection.md)
 - [Respond to web threats](web-protection-response.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

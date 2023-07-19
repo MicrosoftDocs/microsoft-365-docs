@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 ms.date: 05/17/2023
 f1.keywords: NOCSH 
 ms.collection: 

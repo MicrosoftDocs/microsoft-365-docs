@@ -90,3 +90,4 @@ Recently announced capabilities of Microsoft Defender for Endpoint on Android an
 Defender for Endpoint on Linux is available through the Defender for Endpoint Server SKU that is available for both commercial and education customers.
 
 Please contact your account team or CSP for pricing and additional eligibility requirements.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

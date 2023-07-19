@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/26/2023
+ms.date: 07/18/2023
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -32,6 +32,8 @@ Yes.
 > [!IMPORTANT]
 > When emails are encrypted with Microsoft Purview Message Encryption and the policy used to detect them uses the detect encryption condition policy tips will not appear.
 
+For more information on blocking and notifications in SharePoint Online and OneDrive for Business, see [Blocking and notifications in SharePoint Online and OneDrive for Business](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business).
+
 ## Conditions that support policy tips in SharePoint Online and OneDrive for Business web client
 
 - Content contains
@@ -46,7 +48,7 @@ Yes.
 
 ## Actions that support policy tips in SharePoint Online and OneDrive for Business web client
 
-- Restrict acces or encrypt the ocntent in Microsoft 365 locations
+- Restrict acces or encrypt the content in Microsoft 365 locations
  
 
 ## Sensitive information types that support policy tips in SharePoint Online and OneDrive for Business web client

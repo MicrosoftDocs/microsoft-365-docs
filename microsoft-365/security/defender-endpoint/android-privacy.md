@@ -106,3 +106,4 @@ Optional data includes diagnostic data and feedback data. Optional diagnostic da
 
 - The user's email address, if they choose to provide it.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

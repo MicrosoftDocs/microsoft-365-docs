@@ -104,3 +104,4 @@ This optimization applies to machines running Windows 10 Anniversary Update (ver
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
