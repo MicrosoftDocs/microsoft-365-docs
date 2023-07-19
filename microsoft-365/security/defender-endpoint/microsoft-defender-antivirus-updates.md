@@ -108,9 +108,9 @@ All our updates contain
  
 #### Known Issues  
 
-- None
+- See the [May 2023 update](#may-2023-update-platform-418230509--engine-1xxxxxxx) for platform updates.
 
-### May-2023 *UPDATE 2* (Platform: 4.18.23050.9 | Engine: 1.x.xxxxx.x)
+### May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.x.xxxxx.x)
 
 *Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
 
