@@ -93,14 +93,14 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 
 The Device Control for macOS includes global setting, group creation and access policy rule creation:
 
-- Global setting called ‘settings’ allows you to define the global environment.
-- Group called ‘groups’ allows you to create media groups. For example, authorized USB group or encrypted USB group.
-- Access policy rule called ‘rules’ allows you to create policy to restrict each group. For example, only allow authorized user to Write access-authorized USB group.
+- Global setting called 'settings' allows you to define the global environment.
+- Group called 'groups' allows you to create media groups. For example, authorized USB group or encrypted USB group.
+- Access policy rule called 'rules' allows you to create policy to restrict each group. For example, only allow authorized user to Write access-authorized USB group.
 
 Here are the properties you can use when you create the group and policy.
 
 > [!NOTE]
-> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
 
 ### Settings
 
@@ -114,7 +114,7 @@ Here are the properties you can use when you create the group and policy.
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| `$type` | The kind of group | “device” |
+| `$type` | The kind of group | "device" |
 | `id` | GUID, a unique ID, represents the group and will be used in the policy. | You can generate the ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2&preserve-view=true) or the uuidgen command on macOS |
 | `name` | Friendly name for the group. | string |
 | `query` | The media coverage under this group | See the **query** properties tables below for details. |
@@ -151,9 +151,9 @@ Query type 2 is as follows:
 | clause $type | value | Description |
 |:---|:---|:---|
 | `primaryId` | One of: <br>- `apple_devices`<br>- `removable_media_devices` <br>- `portable_devices` <br>- `bluetooth_devices` | |
-| `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
-| `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
-| `serialNumber` | string | Matches a device’s serial number. Doesn't match if the device doesn't have a serial number. |
+| `vendorId` | 4 digit hexadecimal string | Matches a device's vendor ID |
+| `productId` | 4 digit hexadecimal string | Matches a device's product ID |
+| `serialNumber` | string | Matches a device's serial number. Doesn't match if the device doesn't have a serial number. |
 | `encryption` | apfs | Match if a device is apfs-encrypted. |
 | `groupId` | UUID string | Match if a device is a member of another group. The value represents the UUID of the group to match against. <br> The group must be defined within the policy prior to the clause. |
 
@@ -167,7 +167,7 @@ Query type 2 is as follows:
 | `excludeGroups` | The group(s) that the policy doesn't apply to. | The **id** value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's _OR_. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table later in this article to get the details. |
 
-The following table lists the properties you can use in your entry:
+The following table lists the properties you can use in your entry:
 
 | Property name | Description | Options |
 |:---|:---|:---|
@@ -176,7 +176,7 @@ The following table lists the properties you can use in your entry:
 | `access`| |Specify one or more access rights for this rule. These may include either device specific granular permissions, or broader generic permissions. See table below for more details on the valid access types for a given entry $type. |
 | `id`| UUID| |
 
-The following table lists the properties you can use in entry:
+The following table lists the properties you can use in entry:
 
 ### Enforcement
 
@@ -199,7 +199,7 @@ The following table lists the properties you can use in entry:
 
 ### Access types
 
-|entry $type | ‘access’ values [string]  | Generic Access | Description |
+|entry $type | 'access' values [string]  | Generic Access | Description |
 |:---|:---|:---|:---|
 | **appleDevice** | backup_device | generic_read | |
 | appleDevice | update_device | generic_write | |
@@ -271,7 +271,7 @@ In this scenario, you need to create two groups: one group for any removable med
 
 -1. Create a group to cover any removable media devices
 -1. Create a group for approved USBs
--1. Combine those groups into one ‘groups’
+-1. Combine those groups into one 'groups'
 
 ```json
 "groups": [ 
@@ -337,7 +337,7 @@ In this scenario, you need to create two groups: one group for any removable med
 
 #### Step 3: Rules: Create Deny policy for unallowed USBs
 
-Create access policy rule and put into ‘rules’:
+Create access policy rule and put into 'rules':
 
 ```json
    "rules": [ 
@@ -425,10 +425,11 @@ Create access policy rule and put into ‘rules’:
     ] 
 ```
 
-In this case, only have one access rule policy, but if you have multiple, make sure to add all into ‘rules’.
+In this case, only have one access rule policy, but if you have multiple, make sure to add all into 'rules'.
 
 ## See also
 
 - [Deploy Device Control by using Intune](mac-device-control-intune.md)
 - [Deploy Device Control by using JAMF](mac-device-control-jamf.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

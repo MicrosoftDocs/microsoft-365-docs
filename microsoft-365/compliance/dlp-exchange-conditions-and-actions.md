@@ -9,7 +9,7 @@ ms.date: 06/19/2023
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.localizationpriority: null
+ms.localizationpriority: low
 ms.collection: 
 - tier1
 - purview-compliance
@@ -97,6 +97,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Subject contains words or phrases|condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
 |Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
 |Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
+|Content is not labeled|condition: *ContentIsNotLabeled* <br/> exception *ExceptIfContentIsNotLabeled*|Sensitivity Labels|Messages where neither the email nor the attached documents contain any sensitivity labels as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
 |Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
 
@@ -105,7 +106,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 |condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
-|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection works for Office documents, archive documents (such as .zip, .7z, .rar, and .tar files), and .pdf files.|
+|Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection works for Office documents, compressed files (.zip, .7z), and .pdf files.|
 |Attachment's file extension is|condition: *ContentExtensionMatchesWords* <br/><br/> exception: *ExceptIfContentExtensionMatchesWords*|Words|Messages where an attachment's file extension matches any of the specified words.|
 |Any email attachment's content could not be scanned|condition: *DocumentIsUnsupported* <br/><br/>exception: *ExceptIf DocumentIsUnsupported*|n/a|Messages where an attachment isn't natively recognized by Exchange Online.|
 |Any email attachment's content didn't complete scanning|condition: *ProcessingLimitExceeded* <br/><br/> exception: *ExceptIfProcessingLimitExceeded*|n/a|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|

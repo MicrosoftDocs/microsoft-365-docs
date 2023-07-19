@@ -77,3 +77,4 @@ edr_preferred_geo                           : "unitedstates"
 ```
 
 You can run `mdatp health --help` on recent versions to list all supported `feature`s.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
