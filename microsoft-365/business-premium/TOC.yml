@@ -110,12 +110,12 @@
   items:
     - name: Microsoft 365 Business Premium FAQ
       href: microsoft-365-business-faqs.yml
-    - name: Microsoft 365 admin content
-      href: /microsoft-365/admin/
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
       href: /microsoft-365/security/office-365-security/defender-for-office-365
+    - name: Microsoft 365 admin content
+      href: /microsoft-365/admin/
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Threat protection by Microsoft Defender Antivirus
