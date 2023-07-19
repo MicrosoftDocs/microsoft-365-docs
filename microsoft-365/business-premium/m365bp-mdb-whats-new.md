@@ -31,7 +31,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 ## July 2023
 
 > [!TIP]
-> Read all about the exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog).
+> **Read all about the exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog)**.
 
 - **Mobile threat defense is rolling out**. Mobile threat defense includes operating system-level threat and vulnerability management, web protection, and app security. It's not generally available in Defender for Business and Microsoft 365 Business Premium.
 
