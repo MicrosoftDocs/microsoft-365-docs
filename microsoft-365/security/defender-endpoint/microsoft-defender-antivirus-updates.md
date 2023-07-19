@@ -100,13 +100,13 @@ All our updates contain
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
    
-### What's new  
+#### What's new  
 
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
 - Fixed a performance issue when building and validating Defender cache
 - Improved performance by removing redundant exclusion checks
  
-### Known Issues  
+#### Known Issues  
 
 - None
 
@@ -114,6 +114,16 @@ All our updates contain
 
 *Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
 
+- Security intelligence update version: 
+- Released: **July 24, 2023**
+- Platform: **4.18.23050.9**
+- Engine: **1.x.xxxxx.x**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
+- Fixed a bug where DNS requests with empty authority records were being improperly parsed
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
@@ -125,11 +135,11 @@ All our updates contain
 - Engine: **1.1.23050.2**
 - Support phase: **Security and Critical Updates**
    
-### What's new  
+#### What's new  
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
   
-### Known Issues  
+#### Known Issues  
 
 - Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
@@ -141,7 +151,7 @@ All our updates contain
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
    
-### What's new  
+#### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
 - Improved processing of SmartLockerMode  
@@ -158,7 +168,7 @@ All our updates contain
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
-### Known Issues  
+#### Known Issues  
 
 - Potential issue that could lead to resolution of incorrect service endpoint
 
@@ -187,7 +197,6 @@ All our updates contain
 - Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
 - Fixed abandoned threats in the Windows Security app
 - Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-
 
 #### Known issues
 
