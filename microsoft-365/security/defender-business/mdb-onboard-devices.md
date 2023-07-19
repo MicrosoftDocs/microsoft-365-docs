@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/01/2023
+ms.date: 07/19/2023
 ms.reviewer: efratka, jomaun
 f1.keywords: NOCSH 
 ms.collection: 
@@ -236,7 +236,7 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 You can use the following methods to onboard mobile devices, such as Android and iOS devices:
 
-- [Use the Microsoft Defender app (preview)](#use-the-microsoft-defender-app-preview)
+- [Use the Microsoft Defender app](#use-the-microsoft-defender-app-preview)
 - [Use Microsoft Intune](#use-microsoft-intune)
 
 ### Use the Microsoft Defender app (preview)
@@ -245,9 +245,8 @@ You can use the following methods to onboard mobile devices, such as Android and
 
 > [!IMPORTANT]
 > Make sure that all of the following requirements are met before onboarding mobile devices:
-> 1. Your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
-> 2. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.<br/>- If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. <br/>- If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
-> 3. Users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
+> 1. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.<br/>- If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. <br/>- If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
+> 2. Users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
 
 | Device | Procedure |
 |:---|:---|
@@ -266,8 +265,6 @@ If your subscription includes Microsoft Intune, you can use it to onboard mobile
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
-> [!NOTE]
-> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices in the Intune admin center. However, if your tenant is receiving [preview features](mdb-preview.md), you can now use the [Microsoft Defender app method](#use-the-microsoft-defender-app-preview). Or, you can add Intune to your Defender for Business subscription. Intune is included in Microsoft 365 Business Premium.
 
 ## [**Servers**](#tab/Servers)
 

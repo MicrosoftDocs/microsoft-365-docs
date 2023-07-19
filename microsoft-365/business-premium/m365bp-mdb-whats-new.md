@@ -30,13 +30,18 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## July 2023
 
-***Read all about the exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog).***
+> [!TIP]
+> Read all about the exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog).
 
 - **Mobile threat defense is rolling out**. Mobile threat defense includes operating system-level threat and vulnerability management, web protection, and app security. It's not generally available in Defender for Business and Microsoft 365 Business Premium.
 
 - **Automatic attack disruption** is rolling out. During an ongoing attack, automatic attack disruption capabilities swiftly contain compromised devices, which helps to stop lateral movement within the network and minimizes the overall impact of the attack. Automatic attack disruption is included in Defender for Business and Microsoft 365 Business Premium.
 
 - **Security summary reports** are rolling out. Use tehse reports to view threats that were prevented by Defender for Business, Microsoft Secure Score status, and recommendations for improving security.
+
+- **Streaming API (preview) is now available for Defender for Business**. For partners or customers looking to build their own security operations center, we are announcing the public preview of streaming API that supports streaming of device file, registry, network, logon events and more to Azure Event Hub, Azure Storage, and Microsoft Sentinel to support advanced hunting and attack detection. See the [Microsoft 365 streaming API guide](../security/defender/streaming-api.md). 
+
+- 
 
 
 ## March 2023
