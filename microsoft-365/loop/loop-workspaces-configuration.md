@@ -55,10 +55,10 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-1. Log in to the Microsoft Admin Center using your tenant's Administrator account
-2. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop)
-3. Choose your desired state for Loop workspaces via the checkbox
-4. Click Save
+1. Sign in to the Microsoft 365 admin center as a Global Administrator.
+1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
+1. Choose your desired state for Loop workspaces via the checkbox.
+1. Select Save.
 
 The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
 
