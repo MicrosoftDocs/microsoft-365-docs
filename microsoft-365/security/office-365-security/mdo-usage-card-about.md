@@ -29,7 +29,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Microsoft Defender for Office 365, usage card is available to help admins and Security Operations (SecOps) teams understand their organization’s active usage of Defender for Office 365 licenses in comparison to the actual number of licenses purchased. This can encourage a license true-up.
+In Microsoft Defender for Office 365, the usage card is available to help admins and Security Operations (SecOps) teams understand their organization’s active usage of Defender for Office 365 licenses in comparison to the actual number of licenses purchased.
 
 > [!NOTE]
 > The usage card is enabled for tenants with at least one paid Defender for Office 365 plan 1 (P1) or Defender for Office 365 plan 2 (P2) license.
@@ -50,7 +50,7 @@ In the usage card for the global and billing admins, there’s a **Add more lice
 
 :::image type="content" source="../../media/usage-card-mdo.png" alt-text="Screenshot of the usage card in Defender for Office 365." lightbox="../../media/usage-card-mdo.png":::
 
-The **See licensing details** option is available only for global and billing admins. For security admins, SecOps, and security readers, this option isn't available.  
+The **See licensing details** option is available only for global and billing admins. For global readers, security admins, SecOps, and security readers, this option isn't available.  
 
 ## Understand the usage details
 
@@ -92,7 +92,7 @@ There are three types of active users:
 
 - **Other active users**: Active users without the Microsoft Defender for Office 365 active users.  
 
-### What is a usage count?
+### What is the usage count?
 
 Usage count can be determined by:
 
