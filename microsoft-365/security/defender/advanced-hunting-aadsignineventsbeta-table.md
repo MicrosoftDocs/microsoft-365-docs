@@ -92,3 +92,4 @@ Use this reference to construct queries that return information from the table. 
 - [Advanced hunting overview](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Learn the query language](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 - [Understand the schema](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

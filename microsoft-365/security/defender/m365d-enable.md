@@ -115,3 +115,4 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint data storage](../defender-endpoint/data-storage-privacy.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

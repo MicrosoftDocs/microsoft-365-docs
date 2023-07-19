@@ -73,3 +73,4 @@ In your enterprise, you can configure PUA protection from a management console, 
 ## Related articles
 
 - [Set preferences for Defender for Endpoint on Linux](linux-preferences.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

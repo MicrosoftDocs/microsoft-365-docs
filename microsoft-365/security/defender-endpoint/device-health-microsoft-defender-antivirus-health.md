@@ -105,7 +105,7 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Sense (MsSense.exe): **10.8210.** \*+ 
+- Sense (MsSense.exe): **10.8210.** \*+
 - Windows OS - Windows 10 1809 or later
 
   > [!NOTE]
@@ -370,3 +370,4 @@ The following table lays out the possible up to date report values for **Securit
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

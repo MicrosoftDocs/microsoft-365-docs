@@ -30,7 +30,7 @@ ms.date: 05/29/2023
 
 ## Important considerations for you
 
-To realize the benefits of Microsoft Defender Experts for XDR, you and your security operations center (SOC) team must take note of the following considerations to ensure timely incident remediation, improve your organization’s security posture, and protect your organization from threats.
+To realize the benefits of Microsoft Defender Experts for XDR, you and your security operations center (SOC) team must take note of the following considerations to ensure timely incident remediation, improve your organization's security posture, and protect your organization from threats.
 
 - **Engage actively through the readiness assessment process** – The [readiness assessment](get-started-xdr.md#run-initial-defender-experts-readiness-checks) when onboarding for Defender Experts for XDR is an integral part of the offering. Completing it successfully ensures prompt service coverage and protects your organization against known threats.
 - **Act on guided responses in a timely manner** – For any suspicious incidents and alerts, our experts provide a detailed investigation summary and guided responses for remediation. We expect your SOC team to act on these guided responses in a timely manner to prevent further impact from any malicious attempts.
@@ -46,3 +46,4 @@ If you don't have your own security IR team, [Microsoft Incident Response](https
 ### See also
 
 [Frequently asked questions](frequently-asked-questions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

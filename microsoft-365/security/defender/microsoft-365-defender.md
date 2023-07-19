@@ -108,3 +108,4 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

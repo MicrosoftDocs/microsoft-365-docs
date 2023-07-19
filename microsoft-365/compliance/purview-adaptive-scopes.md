@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 07/13/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -23,6 +23,8 @@ description: Learn about Microsoft Purview adaptive scopes for policies.
 
 # Adaptive scopes
 
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
 When you create a [communication compliance policy](/microsoft-365/compliance/communication-compliance-policies) or a [policy for retention](retention.md#retention-policies-and-retention-labels), you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
 - An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
@@ -33,9 +35,9 @@ When you create a [communication compliance policy](/microsoft-365/compliance/co
 The advantages of using adaptive scopes include:
 
 - No limits on the number of items per policy. Although adaptive policies are still subject to the maximum number of policies per tenant limitations, the more flexible configuration will likely result in far fewer policies.
-- Powerful targeting for your policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific policy. 
+- More powerful targeting for your policies. For example, you can assign different settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
-- A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
+- A single policy can include locations for both Microsoft Teams and Viva Engage, whereas when you don’t use an adaptive scope, each location requires its own policy.
 - Support for [Azure AD administrative units](/azure/active-directory/roles/administrative-units).
 
 For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-policy-scopes-for-retention).
@@ -58,9 +60,9 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 
 | Adaptive scope type | Attributes or properties supported include |
 |:--------------------|:-------------------------------------------|
-|**Users** - applies to:  <br/> - Exchange mailboxes <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
+|**Users** - applies to:  <br/> - Exchange mailboxes <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Viva Engage user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <sup>\*</sup> <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Group mailboxes & sites <br/> - Teams channel messages (standard and shared) <br/> - Viva Engage community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
 <sup>\*</sup> Currently, [shared channel SharePoint sites](/microsoftteams/shared-channels#shared-channel-sharepoint-sites) aren't supported for adaptive scopes.
 
@@ -97,7 +99,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
 2. In the compliance portal, select **Roles and Scopes**.
 3. Select **Adaptive scopes**, and then **+ Create scope**.
-4. Follow the prompts in the configuration where you'll first be asked to assign an administrative unit. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one administrative unit that will restrict the scope membership.
+4. Follow the prompts in the configuration where you'll first be asked to assign an administrative unit. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one administrative unit that will restrict the scope membership.
     
     > [!NOTE]
     > Because administrative units don't yet support SharePoint sites, you won't be able to create an adaptive scope for SharePoint sites if you select administrative units.

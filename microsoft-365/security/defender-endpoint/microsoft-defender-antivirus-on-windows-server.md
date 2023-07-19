@@ -214,3 +214,4 @@ If a non-Microsoft antivirus product was installed on Windows Server, Microsoft 
 - [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
