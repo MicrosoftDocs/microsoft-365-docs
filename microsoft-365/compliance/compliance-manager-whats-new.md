@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -26,6 +26,14 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 **In this article:** Learn about recent updates in Compliance Manager.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## June 2023
+
+Compliance Manager has published the following new regulatory template:
+
+- Corporate Sustainability Reporting Directive (CSRD)
+
+View our [full list of regulatory templates](compliance-manager-templates-list.md).
 
 ## May 2023
 
