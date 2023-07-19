@@ -54,7 +54,7 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This will prevent them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## Microsoft 365 Groups guest settings
 
@@ -74,9 +74,9 @@ To set Microsoft 365 Groups guest settings
 
 In order for guests to have access to SharePoint sites, the SharePoint organization-level sharing settings must allow for sharing with guests.
 
-The organization-level settings determine the settings that will be available for individual sites. Site settings cannot be more permissive than the organization-level settings.
+The organization-level settings determine the settings that are available for individual sites. Site settings cannot be more permissive than the organization-level settings.
 
-If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
+If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that's needed by any site in your organization.
 
 ![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 

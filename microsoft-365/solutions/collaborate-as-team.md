@@ -60,7 +60,7 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This will prevent them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## Teams guest access settings
 
@@ -104,7 +104,7 @@ Teams content such as files, folders, and lists are all stored in SharePoint. In
 
 The organization-level settings determine what settings are available for individual sites, including sites associated with teams. Site settings cannot be more permissive than the organization-level settings.
 
-If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
+If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that's needed by any site in your organization.
 
 ![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -117,7 +117,7 @@ To set SharePoint organization-level sharing settings
 
 ## SharePoint organization-level default link settings
 
-The default file and folder link settings determine the link option that will be shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
+The default file and folder link settings determine the link option that's shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
 
 Keep in mind that this setting affects all teams and SharePoint sites in your organization.
 

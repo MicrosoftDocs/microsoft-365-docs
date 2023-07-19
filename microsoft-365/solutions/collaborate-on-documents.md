@@ -52,17 +52,17 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This will prevent them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## SharePoint organization-level sharing settings
 
 In order for people outside your organization to have access to a document in SharePoint or OneDrive, the SharePoint and OneDrive organization-level sharing settings must allow for sharing with people outside your organization.
 
-The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
+The organization-level settings for SharePoint determine the settings that are available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that's available in users' OneDrive libraries.
 
 For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links is the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
 
-For SharePoint, choose the most permissive setting that will be needed by any site in your organization.
+For SharePoint, choose the most permissive setting that's needed by any site in your organization.
 
 ![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -75,7 +75,7 @@ To set SharePoint organization-level sharing settings
 
 ## SharePoint organization-level default link settings
 
-The default file and folder link settings determine the link option that will be shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
+The default file and folder link settings determine the link option that's shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
 
 Keep in mind that this setting affects SharePoint sites in your organization, as well as OneDrive.
 
