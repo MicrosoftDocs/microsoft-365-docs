@@ -69,7 +69,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
-   - [Learn about new mobile threat defense capabilities (preview)](mdb-mtd.md).
+   - [Learn about new mobile threat defense capabilities](mdb-mtd.md).
    - [Monitor or manage devices](mdb-manage-devices.md).
    - [View or edit security policies](mdb-view-edit-policies.md).
 

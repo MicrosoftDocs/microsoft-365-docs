@@ -28,7 +28,7 @@ In addition, mobile threat defense capabilities integrate with [Microsoft 365 Li
 
 ## What's included in mobile threat defense?
 
-The following table summarizes the capabilities that are included in mobile threat defense (preview) in Defender for Business:
+The following table summarizes the capabilities that are included in mobile threat defense in Defender for Business:
 
 | Capability | Android | iOS |
 |:---|:---|:---|
