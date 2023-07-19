@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/10/2023
+ms.date: 07/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -63,9 +63,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## July 2023
 
-- [Manage endpoint security policies in Defender for Endpoint is now in public preview](manage-security-policies.md)  <br> You can now configure security settings directly in Microsoft 365 Defender. 
+- [Manage endpoint security policies in Defender for Endpoint is now in public preview](manage-security-policies.md)  <br> You can now configure security settings directly in Microsoft 365 Defender.
+- A new file page is now available in Defender for Endpoint. The file page now includes information like file details and file content and capabilities. For more information, see [Investigate files](investigate-files.md).
  
-
 
 ## June 2023
 
