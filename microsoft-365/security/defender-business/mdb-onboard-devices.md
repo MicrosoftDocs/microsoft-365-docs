@@ -236,12 +236,12 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 You can use the following methods to onboard mobile devices, such as Android and iOS devices:
 
-- [Use the Microsoft Defender app](#use-the-microsoft-defender-app-preview)
+- [Use the Microsoft Defender app](#use-the-microsoft-defender-app)
 - [Use Microsoft Intune](#use-microsoft-intune)
 
-### Use the Microsoft Defender app (preview)
+### Use the Microsoft Defender app
 
-[Mobile threat defense capabilities](mdb-mtd.md) are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
+[Mobile threat defense capabilities](mdb-mtd.md) are now generally available to Defender for Business customers. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
 
 > [!IMPORTANT]
 > Make sure that all of the following requirements are met before onboarding mobile devices:
