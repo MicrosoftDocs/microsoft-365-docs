@@ -107,7 +107,7 @@ This would match every individual word or number in any document or email. This 
 
 **Email addresses**: Email addresses can be easy to identify, but because they are so common in content they may cause significant load in the system if used as a primary field. Use them only as secondary evidence. If they must be used as primary evidence, try to define a custom sensitive information type that uses logic to exclude their use as `From` or `To` fields in emails, and to exclude those with your company’s email address to reduce the number of unnecessary strings that need to be matched.
 
-**Phone numbers**: Phone numbers can come in many different formats, including or excluding country prefixes, area codes, and separators. To reduce the false negatives while keeping load to a minimum, use them only as secondary elements, exclude all likely separators, like parenthesis and dashes and only include in your sensitive data table the part that will be always present in the phone number.
+**Phone numbers**: Phone numbers can come in many different formats, including or excluding country/region prefixes, area codes, and separators. To reduce the false negatives while keeping load to a minimum, use them only as secondary elements, exclude all likely separators, like parenthesis and dashes and only include in your sensitive data table the part that will be always present in the phone number.
 
 **Person's names**: Don’t use person’s names as primary elements if using a sensitive information type based on a regular expression as the classification element for this EDM type, because they are difficult to distinguish from common words.
 
