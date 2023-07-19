@@ -111,3 +111,4 @@ To enable the Corelight integration, you'll need to take the following steps:
 ## See also
 
 - [Device discovery FAQ](device-discovery-faq.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

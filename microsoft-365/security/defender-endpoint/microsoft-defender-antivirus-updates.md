@@ -813,3 +813,4 @@ For more information, see [Microsoft Defender update for Windows operating syste
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

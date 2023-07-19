@@ -123,3 +123,4 @@ Content-type: application/json
     "machineTags": [ "test tag 1", "test tag 2" ]
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

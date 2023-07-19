@@ -168,3 +168,4 @@ Here is an example of the response.
 - [Microsoft Defender for Endpoint APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

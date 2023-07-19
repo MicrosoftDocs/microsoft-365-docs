@@ -200,3 +200,4 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryExp
 
    }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
