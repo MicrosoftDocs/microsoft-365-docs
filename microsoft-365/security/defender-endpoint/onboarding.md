@@ -120,3 +120,4 @@ The example deployments will guide you on configuring some of the Defender for E
 After onboarding the endpoints move on to the next step where you'll configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
 
 - [Step 5 - Configure capabilities](onboard-configure.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

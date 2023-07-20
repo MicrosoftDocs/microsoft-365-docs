@@ -3,13 +3,13 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 07/11/2023
+ms.date: 07/14/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, tudobril
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
@@ -93,22 +93,17 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### June-2023 (Platform: 4.18.23060.x | Engine: 1.1.23060.1005)
+### June-2023 (Platform: 4.18.x.x | Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Release date:  **July 10, 2023 (Engine) / July 19, 2023 (Platform)**
-- Platform: **4.18.23060.x** (*final version number coming soon*)
+- Release date:  **July 10, 2023 (Engine)** / (*Platform release date is pending*)
+- Platform: **4.18.x.x** (*platform version number is pending*)
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
-   
+   
 ### What's new  
 
-- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
-- Extended management options for configuring security intelligence updates with [Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows), [Group Policy](use-group-policy-microsoft-defender-antivirus.md), and [PowerShell](/powershell/module/defender/set-mppreference)
-- Improved the [unified agent](/microsoft-365/security/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installation process to handle [MsMpEng.exe debugger](/microsoft-365/security/defender-endpoint/troubleshooting-mode-scenarios#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) extensions, if present
-- Fixed an issue pertaining to showing the exclusions list with PowerShell ([Get-MpPreference](/powershell/module/defender/get-mppreference)) on systems managed by Intune
-- Fixed warn notifications for two [attack surface reduction (ASR) rules](attack-surface-reduction.md) ([Block Office applications from injecting code into other processes](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
-- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
+
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
 - Fixed a performance issue when building and validating Defender cache
 - Improved performance by removing redundant exclusion checks
@@ -126,7 +121,7 @@ All our updates contain
 - Platform: **4.18.23050.5**
 - Engine: **1.1.23050.2**
 - Support phase: **Security and Critical Updates**
-   
+   
 ### What's new  
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
@@ -142,7 +137,7 @@ All our updates contain
 - Platform: **4.18.23050.3**    
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
-   
+   
 ### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
@@ -818,3 +813,4 @@ For more information, see [Microsoft Defender update for Windows operating syste
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

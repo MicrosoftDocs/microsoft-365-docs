@@ -89,7 +89,7 @@ The Purview solutions trial includes the solutions listed below.
 
 - **Audit**
 
-  Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more about [Audit (Premium)](audit-premium.md)
+  Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to intelligent insights that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more about [Audit (Premium)](audit-premium.md)
 
 - **Communication Compliance**
 

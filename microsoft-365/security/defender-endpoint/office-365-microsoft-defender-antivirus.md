@@ -107,3 +107,4 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

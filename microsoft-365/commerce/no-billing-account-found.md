@@ -4,7 +4,7 @@ f1.keywords: CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: drjones, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business 
