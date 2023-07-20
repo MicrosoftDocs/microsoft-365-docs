@@ -78,7 +78,7 @@ Most of the remediation actions can be applied and tracked in Microsoft 365 Defe
 In addition, automated remediation can be created using playbooks. Currently, Microsoft has [Playbook templates on GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) that provide playbooks for the following scenarios:
 
 - Remove sensitive file sharing after requesting user validation
-- Auto-triage infrequent country alerts
+- Auto-triage infrequent country/region alerts
 - Request for manager action before disabling an account
 - Disable malicious inbox rules
 
