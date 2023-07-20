@@ -33,6 +33,10 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 
 ## Use the streaming API with Sentinel
 
+> [!NOTE]
+> Sentinel requires a paid subscription. However, several plan and pricing options are available. See [Microsoft Sentinel pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-sentinel/).
+
+
 
 ## Use the streaming API with Event Hubs
 
