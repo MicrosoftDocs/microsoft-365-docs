@@ -81,7 +81,7 @@ If the alert is for a file in SharePoint Online or One Drive for Business, you c
 - Apply retention label
 - Unshare
 - Delete
-- Apply sensitivity labelUnshare file
+- Apply sensitivity label
 - Download
 - Withdraw feedback
 
