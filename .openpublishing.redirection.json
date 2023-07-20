@@ -11144,6 +11144,11 @@
     "source_path": "microsoft-365/security/defender/investigate-dlp.md",
     "redirect_url": "/microsoft-365/security/defender/dlp-investigate-alerts-defender",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/admin/copilot/m365-early-access-program.md",
+    "redirect_url": "/microsoft-365/admin/copilot/m365-early-access-program.yml",
+    "redirect_document_id": true
   }
   
  ]
