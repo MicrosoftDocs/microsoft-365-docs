@@ -39,7 +39,7 @@ Pattern must include all of these patterns:
 - 1-7 groups of four letters or digits (can be separated by spaces)
 - 1-3 letters or digits
 
-The format for each country is slightly different. The IBAN sensitive information type covers these 68 countries/regions:
+The format for each country/region is slightly different. The IBAN sensitive information type covers these 68 countries/regions:
 
 - ad
 - ae
