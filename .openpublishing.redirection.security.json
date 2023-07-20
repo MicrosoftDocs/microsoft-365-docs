@@ -2604,11 +2604,11 @@
     "source_path": "microsoft-365/security/defender-business/mdb-security-operations-guide.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
     "redirect_document_id": false
-  }
-      {
-        "source_path": "microsoft-365/security/defender-endpoint/why-cloud-protection-should-be-on-mdav.md",
-        "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
-        "redirect_document_id": true
+  },
+  {
+    "source_path": "microsoft-365/security/defender-endpoint/why-cloud-protection-should-be-on-mdav.md",
+     "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+     "redirect_document_id": true
       },
       {
         "source_path": "microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations.md",
