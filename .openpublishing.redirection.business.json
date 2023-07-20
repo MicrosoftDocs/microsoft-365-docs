@@ -895,6 +895,11 @@
         "redirect_url":"/microsoft-365/business-premium/m365-business-premium-setup",
         "redirect_document_id":false
      },
+    {
+          "source_path": "microsoft-365/business/manage-protected-devices.md",
+    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-managed-devices",
+    "redirect_document_id": false
+    },
      {
         "source_path":"microsoft-365/business-premium/get-microsoft-365-campaigns.md",
         "redirect_url":"/microsoft-365/business-premium/m365-campaigns-setup",
