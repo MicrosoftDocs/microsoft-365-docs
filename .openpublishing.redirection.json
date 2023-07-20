@@ -11177,28 +11177,13 @@
    ]
   },
   {
-      "source_path": "microsoft-365/compliance/create-test-tune-dlp-policy.md",
-      "redirect_url": "microsoft-365/compliance/create-deploy-policy",
-      "redirect_document_id": false 
-  },
-  {
     "source_path": "microsoft-365/security/defender-endpoint/configure-email-notifications.md",
     "redirect_url": "microsoft-365/security/defender/configure-email-notifications",
     "redirect_document_id": false 
   },
   {
-    "source_path": "microsoft-365/compliance/data-loss-prevention-policies.md",
-    "redirect_url": "microsoft-365/compliance/dlp-learn-about-dlp",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
     "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
-    "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
     "redirect_document_id": false
   },
   {
@@ -11219,26 +11204,6 @@
   {
     "source_path": "microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/archiving-third-party-data.md",
-    "redirect_url": "/microsoft-365/compliance/archive-third-party-data.md",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/deploy-facebook-connector.md",
-    "redirect_url": "/microsoft-365/compliance/archive-facebook-data.md",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/deploy-twitter-connector.md",
-    "redirect_url": "/microsoft-365/compliance/archive-twitter-data.md",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/work-with-partner-to-archive-third-party-data.md",
-    "redirect_url": "/microsoft-365/compliance/archive-partner-third-party-data.md",
     "redirect_document_id": false
   },
   {
