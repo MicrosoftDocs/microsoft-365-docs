@@ -1,6 +1,6 @@
 ---
 title: "Work with a partner to archive third-party data"
-description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer.
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Viva Engage.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -131,7 +131,7 @@ The following sections list the Microsoft partners (and the third-party data sou
 - Microsoft Exchange Server
 - Microsoft OneDrive for Business
 - Microsoft Teams
-- Microsoft Yammer
+- Microsoft Viva Engage
 - Mobile Guard
 - Pivot
 - Salesforce Chatter
@@ -239,7 +239,7 @@ The following sections list the Microsoft partners (and the third-party data sou
 - WinMX
 - Winny
 - Yahoo
-- Yammer
+- Viva Engage
 - YouTube
 
 ### Verba

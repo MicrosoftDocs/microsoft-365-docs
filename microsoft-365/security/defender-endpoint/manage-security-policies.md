@@ -121,3 +121,4 @@ During an investigation, you can also view the **Security policies** tab in the 
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

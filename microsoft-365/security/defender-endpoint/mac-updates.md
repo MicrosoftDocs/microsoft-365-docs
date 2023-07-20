@@ -257,3 +257,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 ## Resources
 
 - [msupdate reference](/deployoffice/mac/update-office-for-mac-using-msupdate)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

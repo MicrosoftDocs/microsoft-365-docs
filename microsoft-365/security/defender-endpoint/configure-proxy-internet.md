@@ -186,3 +186,4 @@ See [Netsh Command Syntax, Contexts, and Formatting](/windows-server/networking/
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Onboard devices without Internet access to Microsoft Defender for Endpoint](onboard-offline-machines.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

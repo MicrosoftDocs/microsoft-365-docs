@@ -237,3 +237,4 @@ GET https://api.securitycenter.microsoft.com/api/machines/browserextensionsinven
 
 - [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
 - [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -159,3 +159,4 @@ You can also specify where the diagnostic .cab file will be created using a Grou
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -37,7 +37,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Source  |Reported in Activity explorer | Note  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|Yes |
-|Outlook| Yes | |
+|Outlook| Yes | If a sensitivity label has been applied to any email in an email thread, the same label will be automatically applied to subsequent replies on the thread. These labeling events appear in activity explorer as automatic labeling events, even when automatic labeling has not ben configured.|
 |SharePoint online, OneDrive|Yes | |
 |Exchange        |Yes         | |
 |Azure Information Protection (AIP) unified client and AIP unified scanner |Yes |The AIP *new label* action is mapped to *label applied* in Activity explorer   |

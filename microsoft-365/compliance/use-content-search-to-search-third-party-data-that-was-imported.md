@@ -139,6 +139,6 @@ The following table lists the third-party data types that you can search, and th
 |WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
 |Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
 |Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
-|Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
+|Viva Engage  <br/> | `ipm.externaldata.yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |

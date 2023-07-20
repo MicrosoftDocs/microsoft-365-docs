@@ -257,3 +257,4 @@ Recover deleted email.
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
 * After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

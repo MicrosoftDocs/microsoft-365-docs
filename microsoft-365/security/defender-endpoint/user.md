@@ -40,3 +40,4 @@ Method|Return Type|Description
 ---|---|---
 [List User related alerts](get-user-related-alerts.md)|[alert](alerts.md) collection|List all the alerts that are associated with a [user](user.md).
 [List User related devices](get-user-related-machines.md)|[machine](machine.md) collection|List all the devices that were logged on by a [user](user.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

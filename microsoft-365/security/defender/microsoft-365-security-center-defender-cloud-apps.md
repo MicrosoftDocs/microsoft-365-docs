@@ -166,3 +166,4 @@ Learn how to protect your cloud apps in Microsoft 365 Defender:
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

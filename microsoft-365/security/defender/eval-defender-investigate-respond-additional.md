@@ -305,3 +305,4 @@ See [Get expert training on advanced hunting](advanced-hunting-expert-training.m
 ### Navigation you may need
 
 [Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
