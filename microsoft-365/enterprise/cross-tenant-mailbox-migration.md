@@ -402,7 +402,7 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 
 ### Do items in the Outbox get migrated cross-tenant?
 
-Items in the Outbox are not migrated cross-tenant as this folder is a client based folder specific to the Outlook client. Items in the Outbox are stored locally, and not synced to the cloud.
+Items in the Outbox are not migrated cross-tenant as this folder is a client-based folder specific to the Outlook client. Items in the Outbox are stored locally, and not synced to the cloud.
 
 ### Does the Teams chat folder content migrate cross-tenant?
 
