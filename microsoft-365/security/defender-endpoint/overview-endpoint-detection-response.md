@@ -54,3 +54,4 @@ The response capabilities give you the power to promptly remediate threats by ac
 - [Incidents queue](view-incidents-queue.md)
 - [Alerts queue](alerts-queue.md)
 - [Devices list](machines-view-overview.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

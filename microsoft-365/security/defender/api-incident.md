@@ -93,3 +93,4 @@ alerts | alert list | List of related alerts. See examples at [List incidents](a
 - [Incidents overview](incidents-overview.md)
 - [List incidents API](api-list-incidents.md)
 - [Update incident API](api-update-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

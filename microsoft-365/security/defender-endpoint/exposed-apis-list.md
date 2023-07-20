@@ -89,3 +89,4 @@ Topic | Description
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 - [Microsoft Defender for Endpoint API release notes](api-release-notes.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
