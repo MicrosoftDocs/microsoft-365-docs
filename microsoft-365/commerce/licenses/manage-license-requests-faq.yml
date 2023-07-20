@@ -47,16 +47,16 @@ sections:
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensiung** tab.
           3. Select **Reserve New Online services**.
 
-          >[!WARNING]
-          >
-          > If you leave the VLSC site or close your browser before confirming your reservation, your selections aren't saved.
+              >[!WARNING]
+              >
+              > If you leave the VLSC site or close your browser before confirming your reservation, your selections aren't saved.
 
           4. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
           5. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
 
-          >[!NOTE]
-          >
-          > After 72 hours, no changes are allowed to your reservation. This is reflected as part of your True-up or Annual Order based on the usage date and quantity reserved.
+              >[!NOTE]
+              >
+              > After 72 hours, no changes are allowed to your reservation. This is reflected as part of your True-up or Annual Order based on the usage date and quantity reserved.
 
           6. After the **Usage Date** is selected, you'll see a list of eligible Online Services available for reserving online.
           7. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
@@ -73,9 +73,9 @@ sections:
           1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
           2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
 
-            >[!NOTE]
-            >
-            > A message appears if you don't have any previous reservations.
+              >[!NOTE]
+              >
+              > A message appears if you don't have any previous reservations.
 
           3. From the **Service** view: Open the detailed view of the reservation you want to cancel. If the reservation can be canceled a **Cancel** button is displayed.
           4. From **Reservation** view: The results are displayed in descending order by **Reservation Date**. Reservation orders that can be canceled are displayed at the top of the page.
@@ -96,9 +96,9 @@ sections:
           1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **Manage Reservation**.
           2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
 
-          >[!NOTE]
-          >
-          > A message displays if you don't have any previous reservation orders.
+              >[!NOTE]
+              >
+              > A message displays if you don't have any previous reservation orders.
 
       - question: |
           At anniversary time, can I pay only for the licenses I have used
