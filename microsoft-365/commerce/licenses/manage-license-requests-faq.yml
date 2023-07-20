@@ -43,33 +43,35 @@ sections:
       - question: |
           How do I make a License Reservation order
         answer: |
-          - Go to **Licenses** and select **Make Reservations** from the drop-down menu.
+          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
+          2. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensiung** tab.
+          3. Select **Reserve New Online services**.
 
           >[!WARNING]
           >
           > If you leave the VLSC site or close your browser before confirming your reservation, your selections aren't saved.
 
-          1. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
-          2. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
+          4. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
+          5. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
 
           >[!NOTE]
           >
           > After 72 hours, no changes are allowed to your reservation. This is reflected as part of your True-up or Annual Order based on the usage date and quantity reserved.
 
-          3. After the **Usage Date** is selected, you'll see a list of eligible Online Services available for reserving online.
-          4. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
-          5. To make the reservation, select **New License**.
-          6. Select **Continue**. The **Reservation Confirmation** page displays.
-          7. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, select **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, select **Submit Reservation**.
-          8. Your online reservation is complete.
+          6. After the **Usage Date** is selected, you'll see a list of eligible Online Services available for reserving online.
+          7. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
+          8. To make the reservation, select **New License**.
+          9. Select **Continue**. The **Reservation Confirmation** page displays.
+          10. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, select **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, select **Submit Reservation**.
+          11. Your online reservation is complete.
 
       - question: |
           How do I cancel or change a Reservation order
         answer: |
-          Once you place a reservation, you can't change it. You can cancel a submitted reservation within 72 hours of submission.
+          After you place a reservation, you can't change it. You can cancel a submitted reservation within 72 hours of submission.
 
-          1. Go to **License** and select **Manage my Reservation**.
-          2. Select how you want your reservation history to be viewed: by Service, Licensing ID, or Reservation.
+          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
+          2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
 
             >[!NOTE]
             >
@@ -84,15 +86,15 @@ sections:
       - question: |
           Why are some fields on the License Reservation page disabled
         answer: |
-          Only customers with Enterprise Agreements, Enterprise Agreement Subscriptions, and Enterprise Agreements for Government Partners can reserve services in the VLSC.
+          Only customers with Enterprise Agreements, Enterprise Agreement Subscriptions, and Enterprise Agreements for Government Partners can reserve services in the Microsoft 365 admin center.
 
       - question: |
           How can I view my Reservation History
         answer: |
-          You can view your reservation history from the **Reservation Confirmation** page or the **Manage my Reservation** page.
+          You can view your reservation history from the **Reservation Confirmation** page or the **View Reservation** page.
 
-          1. Go to **License** and select **Manage Reservation**.
-          2. Select how you want your reservation history to be viewed: by Service, Licensing ID, or Reservation.
+          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **Manage Reservation**.
+          2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
 
           >[!NOTE]
           >
@@ -110,7 +112,7 @@ sections:
 
           Microsoft volume licensing has three categories of Online Services Reservations.
 
-          - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and VLSC sign-in credentials.
+          - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and Microsoft 365 admin center sign-in credentials.
           - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
           - A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
 
@@ -121,7 +123,7 @@ sections:
       - question: |
           Who is eligible to place Reservation orders
         answer: |
-          In the VLSC, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. 
+          In the Microsoft 365 admin center, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. 
           
           >[!NOTE]
           > 
@@ -142,4 +144,4 @@ sections:
       - question: |
           Contact Assisted Support
         answer: |
-          VLSC customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours.
+          Microsoft 365 admin center customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours. For support contact information for your country/region, see [Find Microsoft 365 for business support phone numbers by country or region](../../admin/support-contact-info).
