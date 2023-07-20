@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/24/2023
+ms.date: 07/18/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -42,7 +42,6 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS three latest released versions | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |Upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they're using a browser that is listed in DLP as unallowed, the upload activity is blocked and the user is redirected to use Microsoft Edge. Microsoft Edge then either allows or blocks the upload or access based on the DLP policy configuration. You can block, warn, or audit when protected files are allowed to be uploaded or prevented from being uploaded to cloud services based on the allow/unallowed domains list in Global settings. When the configured action is set to warn or block, other browsers (defined on the unallowed browsers list under Global settings) are blocked from accessing the file.         |Supported |Supported|Auditable and restrictable|
-|Copy to another app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process, or item. It also detects when a user copies and pastes content among files within the same app, process, or item for Word, Excel, and PowerPoint.|Supported|Supported         | Auditable and restrictable|
 |Copy to USB removable media |When this activity is detected, you can block, warn, or audit the copying or moving of protected files from an endpoint device to USB removable media.|Supported|Supported  |Auditable and restrictable|
 |Copy to a network share    | When this activity is detected, you can block, warn, or audit the copying or moving of protected files from an endpoint device to any network share. |Supported|Supported         |Auditable and restrictable|
 |Print a document    |When this activity is detected, you can block, warn, or audit the printing of protected files from an endpoint device. |Supported|Supported|Auditable and restrictable         |
@@ -50,12 +49,36 @@ Endpoint DLP enables you to audit and manage the following types of activities u
 |Copy to a Bluetooth device|Detects when a user attempts to copy an item to an unallowed Bluetooth app (as defined in the list of unallowed Bluetooth aps in Endpoint DLP settings).|Supported|Supported (preview)| Auditable and restrictable|
 |Create an item|Detects the creation of an item.|Supported |Supported |Auditable|
 |Rename an item|Detects the renaming of an item.|Supported |Supported |Auditable|
-|Copy to clipboard| When this activity is detected, you can block, warn, or audit the copying of protected files to a clipboard on an endpoint device. |Supported | Supported|Auditable and restrictable|
+|Copy to clipboard| When this activity is detected, you can block, block with override, or audit the copying of protected files to a clipboard on an endpoint device. If the rule is configure to **Block** or **Block with override** copying is blocked when the source content is sensitive except when the destination is within the same Microsoft 365 Office app|Supported | Supported|Auditable and restrictable|
 |Access by unallowed apps| Detects when an application that is on the unallowed apps list (as defined in [restricted apps and app groups](dlp-configure-endpoint-settings.md)) attempts to access protected files on an endpoint device. |Supported |Supported|
+
+### Copy to clipboard behavior
+
+When you configure a rule to **Block** or **Block with override** when a user attempts the Copy to clipboard activity on a file that matches the policy, end users see this behavior with these configurations:
+
+- Word file 123 contains sensitive information that matches the copy to clipboard Block rule.
+- Excel file 123 contains sensitive information that matches the copy to clipboard Block rule.
+- PowerPoint file 123 contains sensitive information that matches the copy to clipboard Block rule.
+
+- Word file 789 doesn't contain sensitive information.
+- Excel file 789 doesn't contain sensitive information.
+- PowerPoint file 789 doesn't contain sensitive information.
+
+- Notepad (or any non Microsoft Office based app or process) file XYZ contains sensitive information that matches the copy to clipboard Block rule.
+- Notepad (or any non Microsoft Office based app or process) file ABC doesn't contain sensitive information.
+
+|Source |Destination  |Behavior  |
+|---------|---------|---------|
+|Word file 123/Excel file 123/PowerPoint file 123 |Word file 123/Excel file 123/PowerPoint file 123 |copy and paste are allowed, in other words intra file copy and paste is allowed. |
+|Word file 123/Excel File 123/PowerPoint file 123 |Word file 789/Excel file 789/PowerPoint file 789 |copy and paste are blocked, in other words inter file copy and paste is blocked. |
+|Word file 789/Excel file 789/PowerPoint file 789 |Word file 123/Excel File 123/PowerPoint file 123 |copy and paste are allowed|
+|Word file 123/Excel file 123/PowerPoint file 123 |Notepad file ABC |copy and paste are blocked |
+|Notepad file XYZ | any | copy is blocked|
+|Notepad file ABC | any | copy and paste are allowed|
 
 ## Best practice for endpoint DLP policies
 
-Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend the following:
+Say you want to block all items that contain credit card numbers from leaving endpoints of Finance department users. We recommend:
 
 - Create a policy and scope it to endpoints and to that group of users.
 - Create a rule in the policy that detects the type of information that you want to protect. In this case, set **content contains** to *Sensitive information type**, and select **Credit Card**.
@@ -126,7 +149,7 @@ If the extension is changed only to supported file extensions:
 
 ### File types
 
-File types are a grouping of file formats. They are utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
+File types are a grouping of file formats. They're utilized to protect specific workflows or areas of business. You can use one or more file types as conditions in your DLP policies. 
 
 | File Type | Apps | Monitored file extensions |
 | --------- | ----- | --------------|
@@ -175,7 +198,7 @@ Onboarding and offboarding are handled via scripts that you download from the de
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices will  show up automatically in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
+If you have onboarded devices through [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md), those devices show up automatically in the list of devices. This is because onboarding to Defender also onboards devices to DLP. You only need to **Turn on device monitoring** to use endpoint DLP.
 
 > [!div class="mx-imgBorder"]
 > ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)

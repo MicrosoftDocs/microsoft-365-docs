@@ -114,3 +114,4 @@ Here is an example of the response.
     "isOnlyNetworkUser": false
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

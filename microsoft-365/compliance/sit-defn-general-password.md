@@ -225,7 +225,11 @@ for example:
 
 ## Credential example 
 
-`<secret>ZYXWVU_3</secret>`
+|Confidence Band|Example|
+|----|----|
+|High| `password = D3m0P@sswd!` |
+|Medium| `secret : DemoPasswd!` |
+|Low| `password = demopasswd2` |
 
 ## Checksum
 

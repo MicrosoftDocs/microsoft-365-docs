@@ -39,7 +39,7 @@ A 16-character combination of letters and digits:
 - two digits that correspond to the last digits of the birth year
 - one letter that corresponds to the letter for the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (so, January is A and October is R)
 - two digits that correspond to the day of the month of birth in order to differentiate between genders, 40 is added to the day of birth for women
-- four digits that correspond to the area code specific to the municipality where the person was born (country-wide codes are used for foreign countries)
+- four digits that correspond to the area code specific to the municipality where the person was born (country/region-wide codes are used for foreign countries/regions)
 - one parity digit
 
 ## Checksum
