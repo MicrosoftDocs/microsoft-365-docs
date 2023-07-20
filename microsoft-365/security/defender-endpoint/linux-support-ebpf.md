@@ -1,11 +1,7 @@
 ---
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, events, ebpf
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -66,7 +62,7 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Debian                 | 9.0                      | 4.19.0             |
 | Oracle Linux           | 8.0                      | 4.18.0             |
 
-When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_event_subsystem to ebpf.
+When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 
 ## Use eBPF
 
