@@ -162,3 +162,4 @@ Customers may experience issues with alerts for Indicators of Compromise. The fo
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

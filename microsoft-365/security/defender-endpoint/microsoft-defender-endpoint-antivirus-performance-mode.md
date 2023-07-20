@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 ms.topic: conceptual
-author: v-britweston
-ms.author: v-britweston
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: pricci
 manager: dansimp
 ms.custom: nextgen02
@@ -43,7 +43,7 @@ ms.date: 06/06/2023
 
 Performance mode is now available on Windows 11 as a new Microsoft Defender Antivirus capability. Performance mode reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated _Dev Drive_. The goal of performance mode is to improve functional performance for developers who use Windows 11 devices. 
 
-It’s important to note that performance mode can run only on Dev Drive. Additionally, Real-time protection (“On”) is required for performance mode to function. Enabling this feature on a Dev Drive doesn’t change standard Real-time protection running on volumes having operating systems or other volumes formatted FAT32 or NTFS.
+It's important to note that performance mode can run only on Dev Drive. Additionally, Real-time protection ("On") is required for performance mode to function. Enabling this feature on a Dev Drive doesn't change standard Real-time protection running on volumes having operating systems or other volumes formatted FAT32 or NTFS.
 
 ### Dev Drive
 
@@ -55,7 +55,7 @@ For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/w
 
 ### Performance mode compared to real-time protection
 
-By default, to give the best possible performance, creating a Dev Drive automatically grants trust in the new volume. A _trusted_ Dev Drive volume causes real-time protection to run in a special _asynchronous_ “performance mode” for that volume. Running performance mode provides a balance between threat protection and performance. The balance is achieved by deferring security scans until after the _open file_ operation has completed, instead of performing the security scan synchronously while the file operation is being processed. This mode of performing security scans inherently provides faster performance, but with less protection. However, enabling performance mode provides significantly better protection than other _performance tuning_ methods such as using folder exclusions, which block security scans altogether.
+By default, to give the best possible performance, creating a Dev Drive automatically grants trust in the new volume. A _trusted_ Dev Drive volume causes real-time protection to run in a special _asynchronous_ "performance mode" for that volume. Running performance mode provides a balance between threat protection and performance. The balance is achieved by deferring security scans until after the _open file_ operation has completed, instead of performing the security scan synchronously while the file operation is being processed. This mode of performing security scans inherently provides faster performance, but with less protection. However, enabling performance mode provides significantly better protection than other _performance tuning_ methods such as using folder exclusions, which block security scans altogether.
 
 > [!NOTE]
 > To enable performance mode, Real-time protection must be "On".
@@ -84,3 +84,4 @@ Performance mode can only run on a *trusted* Dev Drive and is enabled by default
 ## See also
 
 [Set up a Dev Drive on Windows 11](/windows/dev-drive)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

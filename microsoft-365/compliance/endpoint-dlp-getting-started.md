@@ -56,7 +56,7 @@ If you're onboarding Windows 10 or Windows 11 devices, check to make sure that t
 
 For a general introduction to onboarding Windows devices, see:
 
-- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+- [Onboard Windows devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-devices-into-microsoft-365-overview)
 
 For specific guidance to onboarding Windows devices, see:
 
@@ -72,7 +72,10 @@ For specific guidance to onboarding Windows devices, see:
 
 You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There's no change to the onboarding procedures listed above.
 
-Here are the virtual operating systems that are supported by virtualization environments.
+The table that follows lists the virtual operating systems that are supported by virtualization environments.
+
+> [!NOTE]
+> If you have endpoint devices onboarded to either Windows Server 2019 OS: 1809 onwards or Windows Server 2022 OS: 21H2 onwards, endpoint DLP protection is automatic, regardless of your virtualization platform.
 
 |Virtualization </br> platform|Windows 10|Windows 11|Windows Server 2019| Windows Server 2022</br>21H2 Data Center |
 |:---|:---|:---|:---|:---|

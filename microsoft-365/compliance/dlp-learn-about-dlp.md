@@ -40,7 +40,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
-1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
+1. [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article you're reading now introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -151,7 +151,7 @@ You have flexibility in how you create and configure your DLP policies. You can 
     - A predefined policy template, such as Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 
-2. **Choose administrative scoping** - DLP supports assigning [Administrative Units](/azure/active-directory/roles/administrative-units) to policies (preview). Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, and accounts that they're assigned to. So, policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping) for more DLP specific details. See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for the details on administrative units across Microsoft Purview Information Protection.
+2. **Choose administrative scoping** - DLP supports assigning [Administrative Units](/azure/active-directory/roles/administrative-units) to policies. Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, and accounts that they're assigned to. So, policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping) for more DLP specific details. See, [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for the details on administrative units across Microsoft Purview Information Protection.
 
 3. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
 
@@ -199,7 +199,7 @@ After the policy is synced to the right locations, it starts to evaluate content
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information to Microsoft Purview from monitoring to policy matches and actions, to user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information to Microsoft Purview from monitoring to policy matches and actions, to user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### High volume of sensitive info shared or save externally
 
@@ -213,7 +213,7 @@ Microsoft 365 provides you with visibility into risky user activities outside of
 
 Microsoft 365 scans the audit logs for risky activities and runs them through a correlation engine to find activities that are occurring at a high volume.  No DLP policies are required. 
 
-To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/investigate-dlp.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
+To get more details on the items that users are copying or moving outside of your organization (called egress activities, or exfiltration), select the **Learn more** link on the card to open a details pane. You can investigate incidents for Microsoft Purview Data Loss Prevention (DLP) from the Microsoft 365 Defender portal **Incidents & alerts** > **Incidents**. See [Investigate data loss incidents with Microsoft 365 Defender](../security/defender/dlp-investigate-alerts-defender.md) and [Investigate alerts in Microsoft 365 Defender](../security/defender/investigate-alerts.md). 
 
 ### DLP Alerts Dashboard
 

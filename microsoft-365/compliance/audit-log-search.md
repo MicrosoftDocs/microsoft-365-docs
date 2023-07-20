@@ -1,12 +1,12 @@
 ---
-title: "Search the audit log in the Microsoft Purview compliance portal"
+title: "Search the audit log with Classic Search"
 description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 06/12/2023
+ms.date: 06/26/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,63 +23,10 @@ ms.custom:
 - admindeeplinkMAC
 ---
 
-# Search the audit log in the compliance portal
+# Search the audit log with Classic Search
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
-
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-## Microsoft 365 services that support auditing
-
-Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services, apps, and features that are supported by the unified audit log.
-
-|Microsoft 365 service or feature|Record types|
-|:-------------------------------|:-----------|
-|Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon|
-|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat|
-|Communication compliance|ComplianceSupervisionExchange|
-|Content explorer|LabelContentExplorer|
-|Data connectors|ComplianceConnector|
-|Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
-|Dynamics 365|CRM|
-|eDiscovery (Standard + Premium)|Discovery, AeD|
-|Encrypted message portal|OMEPortal|
-|Exact Data Match|MipExactDataMatch|
-|Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated|
-|Forms|MicrosoftForms|
-|Information barriers|InformationBarrierPolicyApplication|
-|Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
-|Microsoft Defender Experts|DefenderExpertsforXDRAdmin|
-|Microsoft Defender for Identity (MDI)|MicrosoftDefenderForIdentityAudit|
-|Microsoft Planner|PlannerCopyPlan, PlannerPlan, PlannerPlanList, PlannerRoster, PlannerRosterSensitivityLabel, PlannerTask, PlannerTaskList, PlannerTenantSettings |
-|Microsoft Project for the web|ProjectAccessed, ProjectCreated, ProjectDeleted, ProjectTenantSettingsUpdated, ProjectUpdated, RoadmapAccessed,RoadmapCreated, RoadmapDeleted, RoadmapItemAccessed,RoadmapItemCreated,RoadmapItemDeleted, RoadmapItemUpdated, RoadmapTenantSettingsUpdated, RoadmapUpdated, TaskAccessed, TaskCreated,TaskDeleted, TaskUpdated|
-|Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
-|Microsoft Teams|MicrosoftTeams|
-|Microsoft To Do|MicrosoftToDo, MicrosoftToDoAudit|
-|MyAnalytics|MyAnalyticsSettings|
-|OneDrive for Business|OneDrive|
-|Power Apps|PowerAppsApp, PowerAppsPlan|
-|Power Automate|MicrosoftFlow|
-|Power BI|PowerBIAudit|
-|Quarantine|Quarantine|
-|Sensitive information types|DlpSensitiveInformationType|
-|Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
-|SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation|
-|Stream|MicrosoftStream|
-|SystemSync|DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData|
-|Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
-|Viva Goals|VivaGoals|
-|Viva Insights|VivaInsights|
-|Yammer|Yammer|
-
-For more information about the operations that are audited in each of the services listed in the previous table, see the [Audit log activities](audit-log-activities.md) article.
-
-The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For a more complete list of auditing record types, see [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-
- For more information about using PowerShell to search the audit log, see:
-
-- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
-- [Use a PowerShell script to search the audit log](audit-log-search-script.md)
+> [!IMPORTANT]
+> Starting October 2023, Classic Search will be retired in place of [New Search](audit-new-search.md), which includes enhancements such as faster search times, additional search options, ability to save searches, and more.
 
 ## Before you search the audit log
 
@@ -162,14 +109,14 @@ Here's the process for searching the audit log in Microsoft 365.
     > [!NOTE]
     > If the **Start recording user and admin activity** link is displayed, select it to turn on auditing. If you don't see this link, auditing is turned on for your organization.
 
-3. On the **Search** tab, configure the following search criteria:
+3. On the **Classic Search** tab, configure the following search criteria:
 
    1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC). The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
     > [!TIP]
     > If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
 
-   2. **Activities**: Select the drop-down list to display the activities that you can search for. User and admin activities are organized into groups of related activities. You can select specific activities or you can select the activity group name to select all activities in the group. You can also select a selected activity to clear the selection. After you run the search, only the audit log entries for the selected activities are displayed. Selecting **Show results for all activities** displays results for all activities performed by the selected user or group of users.<br/><br/>Over 100 user and admin activities are logged in the audit log. Select the **Audited activities** tab at the article of this article to see the descriptions of every activity in each of the different services.
+   2. **Activities**: Select the drop-down list to display the activities that you can search for. User and admin activities are organized into groups of related activities. You can select specific activities or you can select the activity group name to select all activities in the group. You can also select a selected activity to clear the selection. After you run the search, only the audit log entries for the selected activities are displayed. Selecting **Show results for all activities** displays results for all activities performed by the selected user or group of users.<br/><br/>Over 100 user and admin activities are logged in the audit log. See the [Audit log activities](audit-log-activities.md) article to see the descriptions of every activity in each of the different services.
 
    3. **Users**: Select in this box and then select one or more users to display search results for. The audit log entries for the selected activity performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in your organization.
 
@@ -183,7 +130,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 4. Select **Search** to run the search using your search criteria.
 
-   The search results are loaded, and after a few moments they're displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events will be displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned will be displayed.
+   The search results are loaded, and after a few moments they're displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events are displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned are displayed.
 
    ![The number of results are displayed after the search is finished.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -250,14 +197,17 @@ You can export the results of an audit log search to a comma-separated value (CS
 
   For a description of many of the properties that are listed in the **AuditData** column in the CSV file when you download all results, and the service each one applies to, see [Detailed properties in the audit log](audit-log-detailed-properties.md).
 
-## Scoping access to audit logs
+## Scoping access to audit logs (preview)
 
-Access to search the audit log is scoped based upon the administrative units assigned to the user accessing the audit log in the compliance portal. A scoped admin can only search and export user-generated audit logs within the scope of their administrative units. A global admin has access to all audit logs, including logs generated by non-user and system accounts.
+Access to search the audit log is scoped based upon the administrative units assigned to the user accessing the audit log in the compliance portal. A restricted admin can only search and export user-generated audit logs within the scope of their administrative units. An unrestricted admin has access to all audit logs, including logs generated by non-user and system accounts.
 
-| Admin units assigned to admins | Admin units available for scoped Search | Access to search and export audit logs |
+| Admin units assigned to admins | Admin units available to perform scoped search on | Access to search and export audit logs |
 |--|--|--|
-| None (Default): Unrestricted access | All administrative units are available | Unrestricted access to all activity logs from any user, non-user, or system account.  |
-| One or more administrative units: Restricted access | Only those administrative units assigned to the admin are available | Restricted access to activity logs from users with a matching administrative unit assignment. |
+| None (Default): Unrestricted admin | All administrative units are available | Access to all activity logs from any user, non-user, or system account.  |
+| One or more administrative units: Restricted admin | Only those administrative units assigned to the admin are available | Access to activity logs from users with a matching administrative unit assignment. |
+
+> [!NOTE]
+> The [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) and [Search-AdminAuditLog cmdlets](/powershell/module/exchange/search-adminauditlog) currently do not support scoped access. Search requests using these cmdlets always include unscoped activity logs from Exchange, even when the user performing the search is a scoped admin. To access scoped activity logs from any Microsoft service, including Exchange mailbox activity logs, use the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet.
 
 For more information about administrative units, see [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units-preview).
 
@@ -301,7 +251,7 @@ No. The auditing service pipeline is near real time, and therefore can't support
 
 **Where is auditing data stored?**
 
-We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions will have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
+We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
 
 **Is auditing data encrypted?**
 

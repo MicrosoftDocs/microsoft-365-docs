@@ -103,3 +103,4 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 - [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 - [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/24/2023
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -66,7 +66,7 @@ Decide before you create your retention label policy whether it will be **adapti
 
 3. Use the link to select the retention labels to publish, and then select **Next**.
 
-4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+4. For the **Assign admin units** page: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), a retention label policy that doesn't include SharePoint sites can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**. You must select **Full directory** for the policy to include the location for SharePoint sites.
 
@@ -96,7 +96,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 2. Run one of the following commands:
     
-    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Viva Engage user messages** and **Viva Engage community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -162,19 +162,21 @@ Your published retention labels display in Outlook alongside any legacy [MRM ret
 
 To label an item in the Outlook desktop client, select the item. On the **Home** tab on the ribbon, select **Assign Policy**, and then choose the retention label. For example:
   
-![Assign Policy button.](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Apply retention label from Outlook, Assign Policy button.](../media/outlook-retention-labels.png)
 
 If you don't immediately see the option to assign policy, look for the **Tags** group on the ribbon.
 
-You can also right-click an item, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
+You can also right-click an item from a folder, such as the **Inbox** folder for emails received or the **Drafts** folder for an email to be sent. Then, select **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to apply the same retention label to multiple items at once.
 
-To label an item in Outlook on the web, right-click the item, select **Assign policy**, and then choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
+To label an item in Outlook on the web, first right-click the item from a folder. Then, select **Advanced actions** \> **Assign policy**, and then choose the retention label. For example:
   
-![Assign policy menu in Outlook on the web.](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Assign policy menu in Outlook on the web.](../media/owa-retention-labels.png)
+
+As with Outlook desktop, you can also use this labeling method if you multi-select items.
+
+After the retention label is applied, you can view that retention label at the top of the item, and the calculated expired date. For example:
   
-After the retention label is applied, you can view that retention label at the top of the item. For example:
-  
-![Label assigned to email in Outlook on the web.](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Label assigned to email in Outlook on the web.](../media/outlook-retention-label-applied.png)
 
 For more information about the expiry date displayed to users, see [User notification of expiry date](retention-policies-exchange.md#user-notification-of-expiry-date).
   
@@ -182,7 +184,7 @@ For more information about the expiry date displayed to users, see [User notific
 
 Manually applying retention labels is supported in the new experience only, and not the classic experience.
 
-To label a document (including OneNote files) in OneDrive or SharePoint, first select the item. Then in the upper-right corner, open the details pane, and choose the retention label from **Apply retention label**.
+To label a document (including OneNote files) in OneDrive or SharePoint, first select the item. Then in the upper-right corner, open the details pane, and choose the retention label from **Apply label**.
 
 You can also apply a retention label to a list item, folder, or document set, and you can set a [default retention label for a document library](#default-labels-for-sharepoint-and-outlook). 
   
@@ -217,8 +219,8 @@ When you use default retention labels, there are some scenarios that can result 
 For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library.
   
 For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
-  
-![Apply label option on library Settings page.](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+
+:::image type="content" source="../media/sharepoint-default-retention-label.png" alt-text="Apply default label for a SharePoint library.":::
 
 ##### Label behavior when you use a default label for SharePoint
 
@@ -242,9 +244,13 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 You can apply a default retention label to Outlook folders so that the label is inherited by all unlabeled items.
 
-In the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then select the retention label you want to use as that folder's default retention label.
+In the Outlook desktop client, right-click the folder, select **Properties**, the **Policy** tab, and then change **Use parent folder policy** to the retention label you want to use as that folder's default retention label. For example:
 
-In Outlook on the web, right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
+:::image type="content" source="../media/outlook-default-retention-label.png" alt-text="Apply default retention label for Outlook desktop folder.":::
+
+In Outlook on the web, right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label. For example:
+
+![Apply default retention label for Outlook on the web folder.](../media/owa-default-retention-label.png)
 
 ##### Label behavior when you use a default label for Outlook
 
@@ -260,7 +266,7 @@ When you use a standard retention label as your default label for an Outlook fol
 
 - If you move an item with a default retention label from one folder to another folder with a different default retention label: The item gets the new default retention label.
 
-- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed.
+- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed [unless the new folder is the **Deleted Items** folder](/exchange/reference/retention-deleted-items).
 
 When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 

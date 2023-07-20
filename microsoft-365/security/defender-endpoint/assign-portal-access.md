@@ -52,3 +52,4 @@ Defender for Endpoint supports two ways to manage permissions:
 
 - [Use basic permissions to access the portal](basic-permissions.md)
 - [Manage portal access using RBAC](rbac.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

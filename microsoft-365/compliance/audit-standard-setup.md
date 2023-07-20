@@ -63,7 +63,10 @@ Now you're ready to search the audit log in the Microsoft Purview compliance por
 
 2. In the left navigation pane of the compliance portal, select **Show all** and then select **Audit**.
 
-3. On the **Audit** page, configure the search using the following conditions on the **Search** tab.
+3. On the **Audit** page, configure the search using the following conditions on the **Classic Search** tab.
+
+   > [!IMPORTANT]
+   > Starting October 2023, Classic Search will be retired in place of [New Search](audit-new-search.md), which includes enhancements such as faster search times, additional search options, ability to save searches, and more.
 
    1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC). The last seven days are selected by default.
   

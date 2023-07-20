@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/19/2023
+ms.date: 07/12/2023
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -28,11 +28,11 @@ Enable built-in labeling for [supported Office files](sensitivity-labels-office-
 
 Now rolling out in preview: For SharePoint, users can also see and apply sensitivity labels from the details pane. This method is also available from the **Files** tab in Teams.
 
-Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features don't work for these files.
+Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files and optionally, [PDF documents](sensitivity-labels-office-apps.md#pdf-support) that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, data loss prevention, search, and other collaborative features won't work for these files.
 
-After you enable sensitivity labels for Office files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md)):
+After you enable sensitivity labels for these files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md):
 
-- For Word, Excel, and PowerPoint files, SharePoint and OneDrive recognize the label and can now process the contents of the encrypted file.
+- For Word, Excel, and PowerPoint files, and uploaded [PDF files](sensitivity-labels-office-apps.md#pdf-support), SharePoint and OneDrive recognize the label and can now process the contents of the encrypted file.
 
 - When users download or access these files from SharePoint or OneDrive, the sensitivity label and any encryption settings from the label are enforced and remain with the file, wherever it is stored. Ensure you provide user guidance to use only labels to protect documents. For more information, see [Information Rights Management (IRM) options and sensitivity labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
@@ -86,6 +86,38 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 - **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
 - **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
 - **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
+
+### Adding support for PDF
+
+> [!NOTE]
+> This feature is in preview and subject to change.
+
+Not supported by default, and now rolling out in preview, you can enable support for PDFs for the following scenarios:
+
+- Applying a sensitivity label in Office on the web
+- Uploading a labeled document, and then extracting and displaying that sensitivity label
+- Search, eDiscovery, and data loss prevention
+- [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) and [default sensitivity labels for SharePoint document libraries](sensitivity-labels-sharepoint-default-label.md)
+
+> [!IMPORTANT]
+> Be aware that enabling PDF support can increase the number of files that get automatically labeled with existing auto-labeling policies, which support a maximum of 25,000 files a day.
+
+To enable this PDF support, you have two options:
+
+- Turn on support from the Microsoft Purview compliance portal
+- Use the following PowerShell command
+
+To turn on support from the Microsoft Purview compliance portal, go to **Information protection** > **Auto-labeling**. If you see a message to turn on PDF support, select the **Turn on now** button. If you don't immediately see this message, try again in a few days, or use the PowerShell option.
+
+To enable PDF support by using PowerShell, use the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *EnableSensitivityLabelforPDF* parameter:
+
+```PowerShell
+Set-SPOTenant -EnableSensitivityLabelforPDF $true
+```
+
+You might need to download the latest version of the SharePoint Online Management Shell for the PDF parameter. If you need more information about how to run the cmdlets, see the [section on this page to enable support for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md#use-powershell-to-enable-support-for-sensitivity-labels). 
+
+For Microsoft 365 Multi-Geo: Similarly to the instructions to run the PowerShell command to enable support for sensitivity labels, you must connect to each of your geo-locations, and then run the command to enable support for PDFs.
 
 ## Support for labels configured for user-defined permissions
 

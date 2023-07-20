@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 06/10/2023
+ms.date: 07/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -51,7 +51,7 @@ The global admin for your organization has full permissions to create and manage
     :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Create a sensitivity label." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
-    > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
+    > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels). If you need guidance to create new labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#guidance-sensitivity-label-names-descriptions).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they'll be visible when they're published:
     
@@ -161,7 +161,8 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. For the **Assign admin units**: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the label policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+4. For the **Assign admin units**: If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), the label policy can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units), you must select one or more administrative units.
+
     
     If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
 

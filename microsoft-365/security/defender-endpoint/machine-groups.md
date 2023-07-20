@@ -113,3 +113,4 @@ For more information on linking to device groups definitions, see [Device groups
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
 - [Get list of tenant device groups using Graph API](/graph/api/device-list-memberof)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
