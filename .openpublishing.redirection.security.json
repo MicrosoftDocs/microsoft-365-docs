@@ -2615,6 +2615,16 @@
         "redirect_url": "/microsoft-365/security/defender-business/mdb-firewall",
         "redirect_document_id": true
       },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/deployment-rings.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/onboarding",
+    "redirect_document_id": false
+     },
+    {
+    "source_path": "microsoft-365/security/defender-endpoint/deployment-phases.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/mde-planning-guide",
+    "redirect_document_id": false
+     },
       {
         "source_path": "microsoft-365/security/defender-business/get-defender-business-servers.md",
         "redirect_url": "/microsoft-365/security/defender-business/get-defender-business",
