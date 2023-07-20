@@ -1257,3 +1257,4 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 ## Resources
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

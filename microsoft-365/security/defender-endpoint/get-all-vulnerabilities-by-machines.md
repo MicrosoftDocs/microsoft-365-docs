@@ -125,3 +125,4 @@ Here is an example of the response.
 
 - [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

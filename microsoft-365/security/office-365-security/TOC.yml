@@ -86,6 +86,8 @@
          href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
          href: priority-accounts-security-recommendations.md
+       - name: Usage card in Defender for Office 365
+         href: mdo-usage-card-about.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection

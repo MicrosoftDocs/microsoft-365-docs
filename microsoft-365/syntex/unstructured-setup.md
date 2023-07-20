@@ -19,13 +19,13 @@ description: Learn how to set up and manage unstructured document processing in 
 
 # Set up and manage unstructured document processing in Microsoft Syntex
 
-Before you can use unstructured document processing in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+The unstructured document processing service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
 ### Licensing
 
-Before you can use unstructured document processing in Syntex, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Unstructured document processing in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use unstructured document processing in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Unstructured document processing in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -33,7 +33,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ## Set up unstructured document processing
 
-After an Azure subscription is linked to Microsoft Syntex, unstructured document processing will be automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), unstructured document processing will be automatically set up and enabled for all SharePoint sites.
 
 ## Manage sites
 
