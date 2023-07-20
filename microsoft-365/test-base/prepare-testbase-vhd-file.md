@@ -337,7 +337,7 @@ Follow these steps to generalize a VM VHD. After these steps, turn off the VM an
 1. Change the directory to `$env:windir\System32\sysprep`. Then run `sysprep.exe`.
 1. In the **System Preparation Tool** dialog box, select **Enter System Out-of-Box Experience (OOBE)** and check **Generalize**.
 
-   ![System Preparation Tool](img/Sysprep.png)
+   ![System Preparation Tool](Media/vhd-sysprep.png)
 
 1. In **Shutdown Options**, select **Shutdown**.
 1. Select **OK**.
