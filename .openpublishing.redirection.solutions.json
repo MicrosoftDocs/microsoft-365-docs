@@ -76,6 +76,11 @@
         "redirect_document_id":false
      },
      {
+        "source_path": "microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer.md",
+        "redirect_url": "/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage.md",
+        "redirect_document_id": false
+      },
+     {
         "source_path":"microsoft-365/solutions/information-protection-deploy-govern.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false
