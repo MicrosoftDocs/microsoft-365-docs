@@ -71,21 +71,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/microsoft-365/compliance/document-deletion-policies.md",
-      "redirect_url": "/microsoft-365/compliance/labels",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/microsoft-365/compliance/apply-or-remove-a-document-deletion-policy-for-a-site.md",
-      "redirect_url": "/microsoft-365/compliance/labels",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/microsoft-365/compliance/create-a-document-deletion-policy.md",
-      "redirect_url": "/microsoft-365/compliance/labels",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/email/email-collaboration.md",
       "redirect_url": "/microsoft-365/admin/work-with-customers",
       "redirect_document_id": false
@@ -146,11 +131,6 @@
       "redirect_document_id": false
       },
       {
-         "source_path":"defender/threat-intelligence/index.md",
-         "redirect_url":"/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"enterprise/moving-data-to-new-datacenter-geos.md",
          "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview#migrationsmoves",
          "redirect_document_id":false
@@ -161,11 +141,6 @@
          "redirect_document_id":false
       },
       {
-      "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
-      "redirect_url": "/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
-      "redirect_document_id": false
-      },
-      {
          "source_path":"enterprise/routing-with-expressroute.md",
          "redirect_url":"enterprise/azure-expressroute.md",
          "redirect_document_id":false
@@ -174,16 +149,6 @@
          "source_path":"enterprise/managing-expressroute-for-connectivity.md",
          "redirect_url":"enterprise/azure-expressroute.md",
          "redirect_document_id":false
-      },
-      {
-      "source_path": "microsoft-365/lti/teams-classes-lms.md",
-      "redirect_url": "/MicrosoftTeams/Teams-overview",
-      "redirect_document_id": false
-      },
-      {
-      "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
-      "redirect_url": "/lti/onedrive-lti",
-      "redirect_document_id": false
       },
       {
          "source_path":"enterprise/bgp-communities-in-expressroute.md",
@@ -199,11 +164,6 @@
          "source_path":"test-base/testbase-for-m365-product-terms.md",
          "redirect_url":"https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms",
          "redirect_document_id":false
-      },
-       {
-      "source_path": "microsoft-365/viva/index.yml",
-      "redirect_url": "/viva/",
-      "redirect_document_id": false
       },
       {
          "source_path":"solutions/secure-teams-security-isolation.md",
@@ -234,11 +194,6 @@
          "source_path":"solutions/team-security-isolation-dev-test.md",
          "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
          "redirect_document_id":true
-      },
-      {
-      "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
-      "redirect_url": "/viva/setup-microsoft-viva",
-      "redirect_document_id": false
       },
       {
          "source_path":"security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
