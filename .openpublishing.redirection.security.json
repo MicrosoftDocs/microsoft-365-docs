@@ -11,11 +11,6 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"microsoft-365/security/defender-endpoint/deployment-strategy.md",
-         "redirect_url":"/microsoft-365/security/defender-endpoint/mde-planning-guide",
-         "redirect_document_id":false
-      },
-      {
          "source_path":"microsoft-365/security/defender/investigate-dlp.md",
          "redirect_url":"/microsoft-365/security/defender/dlp-investigate-alerts-defender",
          "redirect_document_id":true
