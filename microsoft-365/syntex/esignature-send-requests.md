@@ -48,11 +48,13 @@ You must be signed in to SharePoint Online by using your work email address.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
 
-4. On the **Add form fields** panel, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Then select **Next**. At least one signature field is needed for each recipient. Up to 50 fields (total) can be added to the document.
+4. On the **Add form fields** panel, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
+   
+5. Select **Next** to progress to the next stage. At least one required signature field is needed for each recipient. Up to 50 fields (total) can be added to the document.
 
     ![Screenshot of the Add form fields panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
 
-5. On the **Review request** panel, enter a title for the request, add an optional message, and review the details on the panel to make sure it's correct. Then select **Send**.
+6. On the **Review request** panel, enter a title for the request, add an optional message, and review the details on the panel to make sure it's correct. Then select **Send**.
 
     ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel.png)
 
@@ -96,7 +98,7 @@ When a signature request is created, an email notification is sent to the recipi
 
 ### Access the document to be signed
 
-When you receive the email notification, select **View request** in the email to begin the signing process.
+When you receive the email notification, select **View signed doucment** in the email to begin the signing process.
 
 ![Screenshot of an email notification showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
 
@@ -106,6 +108,7 @@ To continue the electronic signing process, you must consent to the terms and co
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
+- If you close the **Electronic Record and Signature Disclosure** without selecting the **Agree** button, you will be able to can reopen the dialog by selecting on the **view disclosure** button on the top left area of the document
 
     ![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
 
