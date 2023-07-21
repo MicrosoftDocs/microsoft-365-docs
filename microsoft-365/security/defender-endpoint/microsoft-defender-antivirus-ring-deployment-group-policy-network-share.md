@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-britweston
-author: v-britweston
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
@@ -18,7 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 06/24/2023
+ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and network share
