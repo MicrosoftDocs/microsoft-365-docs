@@ -198,10 +198,10 @@ When you create a signature request with Syntex eSignature, it goes through diff
 
 |Status  |Description  |
 |---------|---------|
-|**Innbspprogress**  |The request is in progress as soon as it's created. The status remains at this state until the request has been reviewed by all recipients or canceled by the sender of the request.|
-|**Completed**   |The request is completed when all recipients have signed the document. |
+|**In nbsp progress**  |The request is in progress as soon as it's created. The status remains at this state until the request has been reviewed by all recipients or canceled by the sender of the request.|
+|**Completed**  |The request is completed when all recipients have signed the document. |
 |**Canceled**   |The request has been canceled by the sender. |
-|**Declined**    |One of the recipients has declined to sign.|
+|**Declined**   |One of the recipients has declined to sign.|
 
 When the status of a request is **Completed**, **Canceled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a recipient declines a request, the sender would need to send a new request after the reason for declining has been addressed. The original declined request can't be edited.
 
