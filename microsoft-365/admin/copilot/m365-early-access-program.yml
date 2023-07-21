@@ -20,7 +20,7 @@ metadata:
   - Adm_TOC
   ROBOTS: NOINDEX, NOFOLLOW
   description: "Frequently asked questions about the Microsoft 365 Copilot Early Access Program."
-title: Microsoft 365 Copilot Early Access Program
+title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
 summary: The Microsoft 365 Copilot Early Access Program is an invitation-only paid preview. If your organization is interested in the early release program, work with your Microsoft account manager to find out more details about nominations for a potential invite. The program includes licenses for Microsoft 365 Copilot within the Microsoft 365 Apps (Word, Outlook, Excel, PowerPoint, Teams, and more). To learn more, see this blog post announcing the [Microsoft 365 Copilot Early Access Program](https://go.microsoft.com/fwlink/p/?linkid=2240881).
 
 sections:
@@ -68,7 +68,7 @@ sections:
           
         answer: You can assign licenses to individual users in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Licensing for Microsoft 365 Copilot is the same as other Microsoft 365 product licenses.
 
-      - question: My organization has multiple tenants, can I assign licenses across tenants? 
+      - question: My organization has multiple tenants. Can I assign licenses across tenants? 
          
         answer: No. During the Early Access Program, Copilot can only be deployed in one tenant and licenses can only be assigned to users in that tenant. 
   - name: Technical requirements
