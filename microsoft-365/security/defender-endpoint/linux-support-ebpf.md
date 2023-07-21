@@ -52,15 +52,15 @@ In addition, the eBPF sensor uses capabilities of the Linux kernel without requi
 
 The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the following minimum distribution and kernel versions:
 
-| **Linux Distribution** | **Distribution version** | **Kernel version** |
-|------------------------|--------------------------|--------------------|
-| Ubuntu                 | 16.04                    | 4.15.0             |
-| Fedora                 | 33                       | 5.8.15             |
-| CentOS                 | 7.6                      | 3.10.0-957         |
-| SLES                   | 15                       | 5.3.18-18.47       |
-| RHEL                   | 7.6                      | 3.10.0-957         |
-| Debian                 | 9.0                      | 4.19.0             |
-| Oracle Linux           | 8.0                      | 4.18.0             |
+| Linux Distribution | Distribution version | Kernel version |
+|--------------------|----------------------|----------------|
+| Ubuntu             | 16.04                | 4.15.0         |
+| Fedora             | 33                   | 5.8.15         |
+| CentOS             | 7.6                  | 3.10.0-957     |
+| SLES               | 15                   | 5.3.18-18.47   |
+| RHEL               | 7.6                  | 3.10.0-957     |
+| Debian             | 9.0                  | 4.19.0         |
+| Oracle Linux       | 8.0                  | 4.18.0         |
 
 When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 
@@ -85,17 +85,18 @@ You can check the agent health status by running the **mdatp** health command. M
 
 ```bash
 uname -a
-``````
+```
 
 The following two sets of data help analyze potential issues and determine the most effective resolution options.
 
-1.  Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
+1. Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
 
-2.  Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
+2. Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information).
 
 > [!NOTE]
 > In the preview version, diagnostic capabilities for top processes consuming eBPF resources and troubleshooting capabilities for configuring eBPF exclusions are not supported. These functionalities will be available in future versions.
 
 ## See also
+
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
 - [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
