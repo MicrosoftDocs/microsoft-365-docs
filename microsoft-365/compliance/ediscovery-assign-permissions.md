@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 01/01/2023
+ms.date: 05/19/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -50,33 +50,24 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
 ## Before you assign permissions
 
 - You have to be a member of the *Organization Management* role group or be assigned the *Role Management* role to assign eDiscovery permissions in the compliance portal.
-
 - You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance PowerShell to add a mail-enabled security group as a member of the *eDiscovery Managers* subgroup in the *eDiscovery Manager* role group. However, you can't add a mail-enabled security group to the *eDiscovery Administrators* subgroup. For details, see [More information](#more-information).
   
 ## Assign eDiscovery permissions
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using an account that can assign permissions.
-2. In the left pane, select **Permissions**.
-3. On the **Permissions & Roles** page, under **Microsoft Purview solutions**, select **Roles**.
-
-   To go directly to this page, use <https://compliance.microsoft.com/compliancecenterpermissions>.
-
+2. In the left pane, select **Roles & scopes** > **Permissions**.
+3. On the **Permissions** page, under **Microsoft Purview solutions**, select **Roles**.
 4. On the **Role groups for Microsoft Purview solutions** page, select **eDiscovery Manager**.
 5. On the **eDiscovery Manager** flyout pane, do one of the following based on the eDiscovery permissions that you want to assign.
-  
-    **To make a user an eDiscovery Manager:**
-    - Next to **eDiscovery Manager**, select **Edit**.
-    - On the **Choose eDiscovery Manager** wizard page, select ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**.
-    - Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. 
-    - When you're finished adding users, select **Done**.
-    - On the **Editing Choose eDiscovery Manager** wizard page, select **Save** to save the changes to the eDiscovery Manager membership.
-  
-    **To make a user an eDiscovery Administrator:**
-    - Next to **eDiscovery Administrator**, select **Edit**.
-    - On the **Choose eDiscovery Administrator** page, select ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**.
-    - Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. 
-    - When you're finished adding users, select **Done**.
-    - On the **Editing Choose eDiscovery Administrator** wizard page, select **Save** to save the changes to the eDiscovery Administrator membership.
+
+    - Select **Edit**.
+    - On the **Manage eDiscovery Manager** page, select **Choose users**.
+    - Search and select the user (or users) you want to add as an *eDiscovery Manager*, and then select **Select**.
+    - Select **Next**.
+    - To assign a user (or users) to the *eDiscovery Administrator* role group, select **Choose users**.
+    - Search and select the user (or users) you want to add as an *eDiscovery Administrator*, and then select **Select**.
+    - Select **Next**.
+    - On the **Review the role group and finish** page, review the role group changes. Select **Save** to save the changes to the eDiscovery role groups.
   
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the *Case Management* role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin).
@@ -126,7 +117,7 @@ For more information, see [Work with communications in eDiscovery (Premium)](man
 
 ### Compliance Search
 
-This role lets users run the Content Search tool in the compliance portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
+This role lets users run the Content Search tool in the compliance portal to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Viva Engage groups. This role allows a user to get an estimate of the search results and create export reports, but other roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
 
 In  Content search and eDiscovery (Standard), users who are assigned the *Compliance Search* role but don't have the *Preview* role can preview the results of a search in which the preview action has been initiated by a user who is assigned the *Preview* role. The user without the *Preview* role can preview results for up to two weeks after the initial preview action was created.
 
@@ -157,7 +148,7 @@ For more information about holds, see:
 
 ### Manage review set tags
 
-This role lets users create, edit, and delete review set tags for cases they can access. Users will need to at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
+This role lets users create, edit, and delete review set tags for cases they can access. Users need to at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
 
 ### Preview
 
@@ -182,7 +173,7 @@ You can add role groups as members of eDiscovery (Standard) and eDiscovery (Prem
 - [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-5-optional-add-members-to-a-ediscovery-standard-case)
 - [Add or remove members from an eDiscovery (Premium) case](ediscovery-add-or-remove-members-from-a-case.md)
 
-With this requirement in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+With this requirement in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it is removed from all cases it was a member of.
 
 Before you add or remove roles to a role group that may be a member of an eDiscovery case, you can run the following commands in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to get a list of cases the role group is a member of. After you update the role group, you add the role group back as a member of those cases.
 

@@ -86,3 +86,4 @@ For more information on advanced hunting in Microsoft Defender for Cloud Apps da
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

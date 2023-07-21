@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 04/03/2023
+ms.date: 06/02/2023
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -29,7 +29,7 @@ description: "Set up Endpoint data loss prevention to monitor file activities an
 
 Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft Purview Data Loss Prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft's DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running three latest released versions. Once a device is onboarded, DLP detects when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they're used and protected properly, and to help prevent risky behavior that might compromise them.
+Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices](device-onboarding-macos-overview.md) running any of the three latest released versions. Once a device is onboarded, DLP detects when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they're used and protected properly, and to help prevent risky behavior that might compromise them.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,7 +46,7 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-for full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+For full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
 ### Configure proxy on the Windows 10 or Windows 11 device
 
@@ -56,7 +56,7 @@ If you're onboarding Windows 10 or Windows 11 devices, check to make sure that t
 
 For a general introduction to onboarding Windows devices, see:
 
-- [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+- [Onboard Windows devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-devices-into-microsoft-365-overview)
 
 For specific guidance to onboarding Windows devices, see:
 
@@ -72,7 +72,10 @@ For specific guidance to onboarding Windows devices, see:
 
 You can onboard virtual machines as monitored devices in Microsoft Purview compliance portal. There's no change to the onboarding procedures listed above.
 
-Here are the virtual operating systems that are supported by virtualization environments.
+The table that follows lists the virtual operating systems that are supported by virtualization environments.
+
+> [!NOTE]
+> If you have endpoint devices onboarded to either Windows Server 2019 OS: 1809 onwards or Windows Server 2022 OS: 21H2 onwards, endpoint DLP protection is automatic, regardless of your virtualization platform.
 
 |Virtualization </br> platform|Windows 10|Windows 11|Windows Server 2019| Windows Server 2022</br>21H2 Data Center |
 |:---|:---|:---|:---|:---|
@@ -83,8 +86,8 @@ Here are the virtual operating systems that are supported by virtualization envi
 
 #### Known issues
 
-1. You can't monitor Copy to Clipboard and Enforcing Endpoint DLP on Azure Virtual Desktop environments via browsers. However the same egress operation will be monitored by Endpoint DLP for actions via Remote Desktop Session (RDP) today.
-1. Citrix XenApp doesn't support access by unallowed app monitoring.
+1. You can't monitor **Copy to Clipboard** and **Enforcing Endpoint DLP** on Azure Virtual Desktop environments via browsers. However, the same egress operation will be monitored by **Endpoint DLP for actions via Remote Desktop Session (RDP)**.
+1. Citrix XenApp doesn't support access by restricted app monitoring.
 
 #### Limitations
 
@@ -105,7 +108,7 @@ For specific guidance to onboarding macOS devices, see:
 |[JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md)|For macOS devices that are managed through JAMF Pro|
 |[JAMF Pro for Microsoft Defender for Endpoint customers)](device-onboarding-offboarding-macos-jamfpro-mde.md)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them|
 
-Once a device is onboarded, it should be visible in the devices list, and also start reporting audit activity to Activity explorer.
+Once a device is onboarded, it should be visible in the devices list, and should start reporting audit activity to Activity explorer.
 
 ## See also
 

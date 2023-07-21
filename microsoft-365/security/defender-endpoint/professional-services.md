@@ -44,7 +44,7 @@ Managed security services that assist organizations to detect threats early and 
 
 |Service name|Vendor|Description|
 |---|---|---|
-|[Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)|Microsoft|Defender Experts for Hunting is a proactive threat hunting service for Microsoft 365 Defender.|
+|[Microsoft Defender Experts](https://go.microsoft.com/fwlink/?linkid=2203232)|Microsoft|Defender Experts for Hunting are a proactive threat hunting service for Microsoft 365 Defender.|
 |[Cloud Security Operations Center](https://go.microsoft.com/fwlink/?linkid=2202671)|glueckkanja-gab AG|Monitors your Microsoft Security Solutions 24/7, responds to threats on your behalf and works closely with your IT to continuously improve your security posture.|
 |[Wortell Protect](https://go.microsoft.com/fwlink/?linkid=2202480)|Wortell|Wortell offers a 24.7.365 Managed Detection and Response service, SOC-as-a-service, to secure your Azure subscriptions and Microsoft 365 environment. With this managed service, Wortell will provide security monitoring and incident response, and operate Microsoft Defender and (optionally) Microsoft Sentinel on your behalf. The service also includes threat intelligence feeds and custom machine learning models|
 |[CRITICALSTART® Managed Detection & Response Services for Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2202761)|CRITICALSTART|Critical Start Managed Detection and Response (MDR) services for Microsoft 365 Defender (M365D) extends security defenses to provide cross-domain threat protection and simplify breach prevention. Their team of Microsoft security experts leverages integration with M365D to detect, investigate and respond with the right actions to alerts from identity, to email and cloud – before they disrupt business operations.|
@@ -73,6 +73,7 @@ Managed security services that assist organizations to detect threats early and 
 |[Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)|Quorum Cyber|Quorum Cyber's Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 |[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895)|Open Systems|Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24x7 protection while reducing attack surfaces and MTTR.|
+|[Kroll](https://www.kroll.com/en/services/cyber-risk/managed-security/kroll-responder)|Kroll|Kroll provides proprietary data, technology and insights to help our clients stay ahead of complex demands related to risk, governance and growth. Our solutions deliver a powerful competitive advantage, enabling faster, smarter and more sustainable decisions. With 5,000 experts around the world, we create value and impact for our clients and communities.|
 
 ## Respond
 
@@ -108,6 +109,7 @@ Respond to security incidents quickly, effectively and at scale with complete in
 |[SepagoSOC](https://go.microsoft.com/fwlink/?linkid=2202677)|Sepago GmbH|SepagoSOC experts ensure that your environment is constantly monitored and protected utilizing the complete range of Microsoft 365 Defender solutions and Microsoft Sentinel.They help you to constantly evolve your security landscape with both technical and organizational experience.|
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 |[Open Systems MDR+](https://go.microsoft.com/fwlink/?linkid=2208895)|Open Systems|Built for Microsoft security customers, MDR+ combines certified experts, exemplary processes, and seamless technology to deliver tailored, 24x7 protection while reducing attack surfaces and MTTR.|
+
 
 ## Protect
 
@@ -197,3 +199,4 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Configure managed service security provider integration](configure-mssp-support.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

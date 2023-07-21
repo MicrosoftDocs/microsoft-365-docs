@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 05/24/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,6 +24,8 @@ description: "Set up connectors to build assessments for non-Microsoft services 
 # Working with connectors in Compliance Manager
 
 Compliance Manager offers a comprehensive set of connectors designed to help you gain a clear understanding of your compliance obligations across the services used in your organization. The connectors provide a seamless link to  non-Microsoft services so that you can include them in your assessments and take advantage of automatic monitoring and testing of controls. Connecting your services to Compliance Manager requires a few simple setup steps. Once your connector is activated, you can select it as an in-scope service when creating an assessment.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Available connectors
 The connectors available for Compliance Manager are listed below, with more available in the coming months.

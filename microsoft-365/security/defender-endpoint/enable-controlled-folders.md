@@ -4,9 +4,6 @@ keywords: Controlled folder access, windows 10, windows 11, windows defender, ra
 description: Learn how to protect your important files by enabling Controlled folder access
 ms.service: microsoft-365-security
 ms.topic: conceptual
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -18,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 05/17/2023
 ---
 
 # Enable controlled folder access
@@ -77,15 +74,15 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** \> **Create**.
+3. Select **Platform**, choose **Windows 10, Windows 11, and Windows Server**, and select the profile **Attack Surface Reduction rules** \> **Create**.
 
 4. Name the policy and add a description. Select **Next**.
 
-5. Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
+5. Scroll down to the bottom, select the **Enable Controlled Folder Access** drop-down, and choose **Enable**.
 
-6. Select **List of additional folders that need to be protected** and add the folders that need to be protected.
+6. Select **Controlled Folder Access Protected Folders** and add the folders that need to be protected.
 
-7. Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
+7. Select **Controlled Folder Access Allowed Applications** and add the apps that have access to protected folders.
 
 8. Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
 
@@ -156,3 +153,4 @@ Use `Disabled` to turn off the feature.
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Customize controlled folder access](customize-controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

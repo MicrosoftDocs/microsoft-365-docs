@@ -18,7 +18,7 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/24/2021
+ms.date: 06/14/2023
 ---
 
 # Microsoft Defender for Endpoint
@@ -36,6 +36,9 @@ ms.date: 03/24/2021
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
+
+> [!NOTE]
+> Example endpoints may include laptops, phones, tablets, PCs, access points, routers, and firewalls.
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
@@ -161,14 +164,4 @@ Defender for Endpoint directly integrates with various Microsoft solutions, incl
 
 With Microsoft 365 Defender, Defender for Endpoint, and various Microsoft security solutions, form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 
-
-## Training for security analysts
-
-With this learning path from Microsoft Learn, you can understand Defender for Endpoint and how it can help prevent, detect, investigate, and respond to threats across your organization's endpoints – your devices and systems.
-
-|Training:|Detect and respond to cyber attacks with Microsoft 365 Defender|
-|---|---|
-|![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint is an endpoint security solution that offers vulnerability management, endpoint protection, endpoint detection and response, mobile threat defense, and managed services in a single, unified platform.<p> 2 hr 25 min - Learning Path - 9 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/paths/defender-endpoint-fundamentals/)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

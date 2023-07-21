@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/11/2023
+ms.date: 06/12/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,7 +27,7 @@ The tables in this article describe the activities that are audited in Microsoft
 These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list (or that are available in PowerShell) and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 > [!TIP]
-> Select one of the links in the **In this article** list on the right side of this page to go to a specific table.
+> Select one of the links in the **In this article** list at the top of this article to go directly to a specific product table.
 
 ## Application administration activities
 
@@ -312,10 +312,18 @@ The following table describes the folder activities in SharePoint Online and One
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
 |Friendly name|Operation|Description|
-|:----------------|:------------|:--------------|
-| Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
-| Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
-| Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+|:------------|:--------|:----------|
+|Applied information barrier mode to site|SiteIBModeSet|A SharePoint or global administrator has applied a mode to the site.|
+|Applied segments to site|SiteIBSegmentsSet|A SharePoint, global administrator, or site owner added one or more information barriers segments to a site.|
+|Changed information barrier mode of site|SiteIBModeChanged|A SharePoint or global administrator has updated the mode of the site.|
+|Changed segments of site|SiteIBSegmentsChanged|A SharePoint or global administrator changed one or more information barriers segments for a site.|
+|Disabled information barriers for SharePoint and OneDrive|SPOIBIsDisabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Enabled information barriers for SharePoint and OneDrive|SPOIBIsEnabled|A SharePoint or global administrator has disabled information barriers for SharePoint and OneDrive in the organization.|
+|Information barriers insights report completed|InformationBarriersInsightsReportCompleted| System completes build of the information barriers insights report.|
+|Information barriers insights report OneDrive section queried|InformationBarriersInsightsReportOneDriveSectionQueried |An administrator queries the information barriers insights report for OneDrive accounts.|
+|Information barriers insights report scheduled|InformationBarriersInsightsReportSchedule|An administrator schedules the information barriers insights report.|
+|Information barriers insights report SharePoint section queried|InformationBarriersInsightsReportSharePointSectionQueried|An administrator queries the information barriers insights report for Sharepoint sites.|
+|Removed segment from site|SiteIBSegmentsRemoved|A SharePoint or global administrator removed one or more information barriers segments from a site.|
 
 ## Microsoft Defender Experts activities
 
@@ -436,6 +444,37 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+## Microsoft Project for the web activities
+
+You can search the audit log for activities in Microsoft Project for the web. Microsoft Project for the web is built on the [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and has an associated Project Power App. To enable auditing for scenarios where the user is using the Microsoft Dataverse or the Project Power App, see the [System Settings Auditing tab](/power-platform/admin/system-settings-dialog-box-auditing-tab) guidance. For a list of entities related to Project for the web, see the [Export user data from Project for the web](/project-for-the-web/export-user-data-from-project-for-the-web#find-user-data-in-dataverse-with-the-advanced-find-search-feature) guidance.
+
+For information about Microsoft Project for the web, see [Microsoft Project for the web](https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad).
+
+>[!NOTE]
+>Auditing events for Microsoft Project for the web activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Created project|ProjectCreated|A project is created by a user or app.|
+|Created roadmap|RoadmapCreated|A roadmap is created by a user or app.|
+|Created roadmap item|RoadmapItemCreated|A roadmap item is created by a user or app.|
+|Created task|TaskCreated|A task is created by a user or app.|
+|Deleted project|ProjectDeleted|A project is deleted by a user or app.|
+|Deleted roadmap|RoadmapDeleted|A roadmap is deleted by a user or app.|
+|Deleted roadmap item|RoadmapItemDeleted|A roadmap item is deleted by a user or app.|
+|Deleted task|TaskDeleted|A task is deleted by a user or app.|
+|Project accessed|ProjectAccessed|A project is read or app.|
+|Project home accessed|ProjectListAccessed|A list of projects and/or roadmaps is queried by a user.|
+|Roadmap accessed|RoadmapAccessed|A roadmap is read by a user or app.|
+|Roadmap item accessed|RoadmapItemAccessed|A roadmap item is read by a user or app.|
+|Task accessed|TaskAccessed|A task is read by a user or app.|
+|Updated project settings|ProjectForTheWebProjectSettings|Project settings is updated by an admin.|
+|Updated roadmap|RoadmapUpdated|A roadmap is modified by a user or app.|
+|Updated roadmap item|RoadmapItemUpdated|A roadmap item is modified by a user or app.|
+|Updated roadmap settings|ProjectForTheWebRoadmaptSettings|Roadmap settings is updated by an admin.|
+|Updated task|TaskUpdated|A task is modified by a user or app.|
+|Updated project|ProjectUpdated|A project is modified by a user or app.|
+
 ## Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
@@ -458,9 +497,38 @@ If your organization is using the Shifts app in Microsoft Teams, you can search 
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
-## Microsoft Workplace Analytics activities
+## Microsoft To Do activities
 
-Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
+The following table lists the activities in Microsoft To Do that are logged in the Microsoft 365 audit log. For more information about Microsoft To Do, see [Support for Microsoft To Do](https://support.microsoft.com/todo).
+
+> [!NOTE]
+> Auditing events for Microsoft To Do activities requires a paid Project Plan 1 license (or higher) in addition to the relevant Microsoft 365 license that includes entitlements to Audit (Premium).
+
+|Friendly name|Operation|Description|
+|:------------|:--------|:----------|
+|Accepted sharing link on folder|AcceptedSharingLinkOnFolder|Accepted sharing link for a folder.|
+|Attachment created|AttachmentCreated|An attachment was created for a task.|
+|Attachment updated|AttachmentUpdated|An attachment was updated.|
+|Attachment deleted |AttachmentDeleted|An attachment was deleted.|
+|Folder sharing link shared|FolderSharingLinkShared|Created a sharing link for a folder.|
+|Linked entity deleted|LinkedEntityDeleted|A linked entity was deleted.|
+|Linked entity updated|LinkedEntityUpdated|A linked entity was updated.|
+|Linked entity created|LinkedEntityCreated|A linked entity of task was created.|
+|SubTask created|SubTaskCreated|A subtask was created.|
+|SubTask deleted|SubTaskDeleted|A subtask was deleted.|
+|SubTask updated|SubTaskUpdated|A subtask was updated.|
+|Task created|TaskCreated|A task was created.|
+|Task deleted|TaskDeleted|A task was deleted.|
+|Task read|TaskRead|A task was read.|
+|Task updated|TaskUpdated|A task was updated.|
+|TaskList created|TaskListCreated|A task list was created.|
+|TaskList read|TaskListRead|A task list was read.|
+|TaskList updated|TaskListUpdated |A task list was updated.|
+|User invited|UserInvited|Invited user to a folder.|
+
+## Microsoft Viva Insights activities
+
+Viva Insights provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Viva Insights. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Viva Insights. For more information, see [Introducing Microsoft Viva Insights](/viva/insights/introduction).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -478,16 +546,16 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 
 > [!NOTE]
-> <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
+> <sup>*</sup>An Azure Active Directory sign in and sign off activity event is created when a user signs in. This activity is logged even if you don't have Viva Insights turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-## MyAnalytics activities
+## Personal insights activities
 
-The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
+The following table lists the activities in personal insights that are logged in the Microsoft 365 audit log. For more information about personal insights, see [Admin guide for personal insights](/viva/insights/personal/Overview/mya-for-admins).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
-|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for personal insights. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for personal insights.|
 
 ## Power BI activities
 
@@ -773,33 +841,33 @@ The following table lists the user and admin activities in Viva Goals that are l
 |Dashboard updated |Dashboard updated |User has updated a dashboard on Viva Goals |
 |Dashboard deleted |Dashboard deleted |User has deleted a dashboard on Viva Goals.  |
 
-## Yammer activities
+## Viva Engage activities
 
-The following table lists the user and admin activities in Yammer that are logged in the audit log. To return Yammer-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
+The following table lists the user and admin activities in Viva Engage that are logged in the audit log. To return Viva Engage-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
 
 > [!NOTE]
-> Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
+> Some Viva Engage audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Changed data retention policy|SoftDeleteSettingsUpdated|Verified admin updates the setting for the network data retention policy to either Hard Delete or Soft Delete. Only verified admins can perform this operation.|
-|Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Yammer network's configuration. This includes setting the interval for exporting data and enabling chat.|
+|Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Viva Engage network's configuration. This includes setting the interval for exporting data and enabling chat.|
 |Changed network profile settings|ProcessProfileFields|Network or verified admin changes the information that appears on member profiles for network users network.|
 |Changed private content mode|SupervisorAdminToggled|Verified admin turns  *Private Content Mode*  on or off. This mode lets an admin view the posts in private groups and view private messages between individual users (or groups of users). Only verified admins only can perform this operation.|
-|Changed security configuration|NetworkSecurityConfigurationUpdated|Verified admin updates the Yammer network's security configuration. This includes setting password expiration policies and restrictions on IP addresses. Only verified admins can perform this operation.|
+|Changed security configuration|NetworkSecurityConfigurationUpdated|Verified admin updates the Viva Engage network's security configuration. This includes setting password expiration policies and restrictions on IP addresses. Only verified admins can perform this operation.|
 |Created file|FileCreated|User uploads a file.|
 |Created group|GroupCreation|User creates a group.|
 |Created message<sup>*</sup>|MessageCreated|User creates a message.|
-|Deleted group|GroupDeletion|A group is deleted from Yammer.|
+|Deleted group|GroupDeletion|A group is deleted from Viva Engage.|
 |Deleted message|MessageDeleted|User deletes a message.|
 |Downloaded file|FileDownloaded|User downloads a file.|
-|Exported data|DataExport|Verified admin exports Yammer network data. Only verified admins can perform this operation.|
+|Exported data|DataExport|Verified admin exports Viva Engage network data. Only verified admins can perform this operation.|
 |Failed to access community<sup>*</sup>|CommunityAccessFailure|User failed to access a community.|
 |Failed to access file<sup>*</sup>|FileAccessFailure|User failed to access a file.|
 |Failed to access message<sup>*</sup>|MessageAccessFailure|User failed to access a message.|
 |Reacted to message|MarkedMessageChanged|User reacted to a message.|
 |Shared file|FileShared|User shares a file with another user.|
-|Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Yammer.|
+|Suspended network user|NetworkUserSuspended|Network or verified admin suspends (deactivates) a user from Viva Engage.|
 |Suspended user|UserSuspension|User account is suspended (deactivated).|
 |Updated file description|FileUpdateDescription|User changes the description of a file.|
 |Updated file name|FileUpdateName|User changes the name of a file.|

@@ -111,3 +111,4 @@ GET https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents/7
 }
 
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

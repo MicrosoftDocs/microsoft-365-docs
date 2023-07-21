@@ -5,8 +5,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: siosulli
-author: siosulli
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: 
 ms.topic: overview
 ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 05/31/2023
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -97,3 +97,8 @@ Use the following steps as a guide to start using the Microsoft 365 Defender RBA
 3. **Learn more about the Microsoft 365 Defender RBAC model**
    - [Microsoft 365 Defender RBAC permissions](custom-permissions-details.md)
    - [Map existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
+
+Watch the following video to see the steps above in action:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

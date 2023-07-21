@@ -24,11 +24,7 @@ search.appverid: met150
 # Manage tamper protection on an individual device
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
-- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
 
 **Platforms**
 - Windows
@@ -54,3 +50,10 @@ Here's what you see in the Windows Security app:
 > To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
 >
 > After you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
+
+## See also
+
+[Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+
+[Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

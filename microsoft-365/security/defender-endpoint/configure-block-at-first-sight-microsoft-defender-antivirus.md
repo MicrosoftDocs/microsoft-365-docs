@@ -34,7 +34,7 @@ search.appverid: met150
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
 > [!TIP]
-> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, see the [Not an enterprise admin or IT Pro?](#not-an-enterprise-admin-or-it-pro) section.
+> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enterprise admin or IT Pro but you have questions about block at first sight, see the [Not an enterprise admin or IT Pro?](#not-an-enterprise-admin-or-it-pro) section.
 
 ## What is "block at first sight"?
 
@@ -184,3 +184,4 @@ If you have a personal device that is not managed by an organization, you might 
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

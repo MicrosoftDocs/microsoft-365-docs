@@ -1,13 +1,8 @@
 ---
 title: Microsoft 365 Defender prerequisites
 description: Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft 365 Defender
-keywords: requirements, prerequisites, hardware, software, browser, Microsoft 365 Defender, M365, license, E5, A5, EMS, purchase
-search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -22,7 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 07/21/2023
 ---
 
 # Microsoft 365 Defender prerequisites
@@ -48,8 +43,10 @@ Any of these licenses gives you access to Microsoft 365 Defender features via th
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Defender for Cloud Apps
-- Defender for Office 365 (Plan 2)
+- Microsoft Defender for Cloud Apps or [Cloud App Discovery](/defender-cloud-apps/editions-cloud-app-security-aad)
+- Microsoft Defender for Office 365 (Plan 1 or 2)
+- Microsoft 365 Business Premium
+- Microsoft Defender for Business
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
@@ -84,3 +81,6 @@ Currently, the Microsoft Defender for Office 365 integration into the unified Mi
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 - [Manage access and permissions](m365d-permissions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+
+

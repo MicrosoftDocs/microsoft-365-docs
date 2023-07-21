@@ -26,6 +26,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -95,3 +96,4 @@ To manage external storage, use removable storage access control instead of [dev
 **Description** - For more information on Windows, see [BitLocker - Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Supported Platform** - Windows 10, Windows 11
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

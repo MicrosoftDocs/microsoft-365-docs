@@ -64,6 +64,7 @@ The following operating systems are currently supported:
 - Juniper JUNOS
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
+- Fortinet FortiOS
 
 More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you're encouraged to configure all your network devices, even if they're not specified in this list.
 
@@ -242,3 +243,4 @@ Change command-line settings on your device to allow copying and change text siz
 
 - [Device inventory](machines-view-overview.md)
 - [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

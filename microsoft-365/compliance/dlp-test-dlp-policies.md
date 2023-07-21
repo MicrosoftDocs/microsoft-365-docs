@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 08/30/2022
+ms.date: 06/02/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,23 +24,23 @@ You should test and tune the behavior of your Microsoft Purview Data Loss Preven
 
 ## Test mode
 
-When you deploy a new policy, [you should run it in test mode,](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [view the reports for](view-the-dlp-reports.md) and any [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
+When you deploy a new policy, [you should run it in test mode,](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
 
 ## Test-DlpPolicies (preview)
 
-**Test-DlpPolicies** is a cmdlet that allows you to see what SharePoint Online and OneDrive for Business scoped DLP policies match/don't match an individual item in SharePoint Online or OneDrive for Business. 
+**Test-DlpPolicies** is a cmdlet that allows you to see what DLP policies scoped to SharePoint and OneDrive match/don't match an individual item in SharePoint or OneDrive.
 
 ### Before you begin
 
 - You must be able to connect to [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
-- You must have a valid smtp address to send the report to. For example: `dlp_admin@contoso.com`
+- You must have a valid SMTP address to send the report to. For example: `dlp_admin@contoso.com`
 - You must get the site ID where the item is located.
 - You must have the direct link path to the item.
 
 > [!IMPORTANT]
 >
-> - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
-> - It will only report results for policies that include SharePoint Online alone, OneDrive alone or SharePoint and OneDrive in their scope.
+> - Test-DlpPolicies only works for items that are in SharePoint or OneDrive.
+> - It will only report results for policies that include SharePoint alone, OneDrive alone, or SharePoint and OneDrive in their scope.
 > - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
 ### Use Test-DlpPolices
@@ -51,28 +51,53 @@ To see which DLP policies an item will match, follow these steps:
 
 1. Open the SharePoint or OneDrive folder in a browser.
 
-1. Select the files ellipsis and select **details**.
+1. Select the file's ellipsis and select **details**.
 
-1. In the details pane, scroll down and select **Path** (Copy direct link). Save it.
+1. In the details pane, scroll down and select **Path**. Copy the direct link and save it.
 
-For example:
+   For example:
 
-`https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx`
+   `https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx`
 
 #### Get the site ID
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-1. For SharePoint use the following syntax to get the site id and save it.
+1. For SharePoint, use the following syntax to get the site ID and save it:
 
-```powershell
-$reportAddress = "email@report.com" $siteName = "SITENAME@TENANT.onmicrosoft.com" $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  $r = Get-Mailbox -Identity $siteName -GroupMailbox $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
-```
-3. For OneDrive use the following syntax to get the site id and save it.
+    ```PowerShell
 
-```powershell
-$reportAddress = "email@report.com" $odbUser = "USER@TENANT.onmicrosoft.com" $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" $r = Get-Mailbox -Identity $odbUser $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
-```
+    $reportAddress = "email@contoso.com" 
+
+    $siteName = "SITENAME@TENANT.onmicrosoft.com" 
+
+    $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  
+
+    $r = Get-Mailbox -Identity $siteName -GroupMailbox 
+
+    $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
+
+    Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
+
+    ```
+
+3. For OneDrive use the following syntax to get the site ID and save it.
+
+    ```PowerShell
+
+    $reportAddress = "email@contoso.com" 
+
+    $odbUser = "USER@TENANT.onmicrosoft.com" 
+
+    $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" 
+
+    $r = Get-Mailbox -Identity $odbUser 
+
+    $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
+
+    Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
+
+    ```
 
 Here's an example of a returned value:
 
@@ -80,12 +105,11 @@ Here's an example of a returned value:
 
 #### Run Test-DlpPolicies
 
-1. Run this syntax in the PowerShell window
- 
+- Run the following syntax in the PowerShell window:
 
-```powershell
-Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
-```
+   ```powershell
+   Test-DlpPolicies -workload <workload> -Fileurl <path/direct link> -SendReportTo <smtpaddress>
+   ```
 
 For example:
 
@@ -96,7 +120,7 @@ For detailed syntax and parameter information, see [Test-DlpPolicies](/powershel
 
 ### Interpret the report
 
-The report is sent to the smtp address you passed the Test-DlpPolicies PowerShell command. There are multiple fields, here are explanations of the most important ones.
+The report is sent to the SMTP address that you passed the Test-DlpPolicies PowerShell command to. There are multiple fields. Here are explanations of the most important ones.
 
 
 |Field name  |Means  |
@@ -113,3 +137,9 @@ The report is sent to the smtp address you passed the Test-DlpPolicies PowerShel
 |Predicates - Rule's Actions     |The action defined in the DLP rule         |
 |Predicates - IsMatched     | Whether the item matched the rule        |
 |IsMatched     |Whether the item matched the overall policy         |
+
+## See Also
+
+- [Test-DataClassification](/powershell/module/exchange/test-dataclassification) explains how to use the PowerShell cmdlet `Test-DataClassification `.
+- [Test-Message](/powershell/module/exchange/test-message) explains how to use the PowerShell cmdlet `Test-Message`.
+- 

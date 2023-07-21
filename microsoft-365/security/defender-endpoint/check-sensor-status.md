@@ -20,7 +20,7 @@ ms.date: 05/16/2023
 search.appverid: met150
 ---
 
-# Check sevice health at Microsoft Defender for Endpoint
+# Check service health at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,3 +64,4 @@ You can view the device details when you click on a misconfigured or inactive de
 - [Run the client analyzer on Windows](run-analyzer-windows.md)
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

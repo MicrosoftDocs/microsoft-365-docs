@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
-ms.date: 05/16/2023
+ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,11 +27,21 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## June 2023
+
+Compliance Manager has published the following new regulatory template:
+
+- Corporate Sustainability Reporting Directive (CSRD)
+
+View our [full list of regulatory templates](compliance-manager-templates-list.md).
+
 ## May 2023
 
 Compliance Manager now integrates with Microsoft Defender for Cloud so you can assess your compliance posture across Microsoft 365, Microsoft Azure, Google Cloud Platform (GCP), and Amazon Web Services (AWS) with resource-level testing and cloud-specific guidance. This new integration provides customers with a single interface in Compliance Manager to help make it easier to manage compliance across the organization’s digital estate. Learn more about [multicloud support in Compliance Manager](compliance-manager-multicloud.md).
 
 Compliance Manager also features an integrated set of connectors that can help you understand your compliance obligations across the many services you use in your organization. Connectors for Salesforce and Zoom are now available, with more coming soon. Learn more about [working with connectors in Compliance Manager](compliance-manager-connectors.md).
+
+Also, you can now provide scoped access to assessments based on regulation. For each regulatory template, you can assign users a role that allows them to access any assessment created for that regulation. Learn more about [granting user access to regulatory templates](compliance-manager-templates.md#grant-user-access-to-regulations).
 
 ## January 2023
 
@@ -59,7 +69,7 @@ View our [full list of assessment templates](compliance-manager-templates-list.m
 
 Compliance Manager has published the following new assessment template:
 
-- Hong Kong - Code of Banking Practice and Payment Card
+- Hong Kong Special Administrative Region - Code of Banking Practice and Payment Card
 
 View our [full list of assessment templates](compliance-manager-templates-list.md).
 

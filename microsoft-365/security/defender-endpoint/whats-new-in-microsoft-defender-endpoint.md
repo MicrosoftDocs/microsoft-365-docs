@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 03/20/2023
+ms.date: 07/19/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -61,6 +61,22 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## July 2023
+
+- The eBPF-based sensor for Microsoft Defender for Endpoint on Linux is available for public preview on all supported Linux devices. For more information, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md).
+- [Manage endpoint security policies in Defender for Endpoint is now in public preview](manage-security-policies.md)  <br> You can now configure security settings directly in Microsoft 365 Defender.
+- A new file page is now available in Defender for Endpoint. The file page now includes information like file details and file content and capabilities. For more information, see [Investigate files](investigate-files.md).
+ 
+## June 2023
+
+- Microsoft Defender Antivirus scan response action is supported for macOS and Linux for client version 101.98.84 and above. It is in preview. See [Run Microsoft Defender Antivirus scan on devices](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices). 
+- Isolating devices from the network is supported for macOS for client version 101.98.84 and above. It is in preview. See [Isolate devices from the network](respond-machine-alerts.md#isolate-devices-from-the-network).
+- Forcibly releasing devices from isolation is now available for public preview. This new capability allows you to forcibly release devices from isolation, when isolated devices become unresponsive. For more information, see [Forcibly release device from isolation](respond-machine-alerts.md#forcibly-release-device-from-isolation).
+
+## May 2023
+
+- Performance mode for Microsoft Defender Antivirus is now available for public preview. This new capability provides asynchronous scanning on a Dev Drive, and doesn't change the security posture of your system drive or other drives. For more information, see [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md).
+
 ## March 2023
 
 - Support for [Mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is now in preview! With these capabilities, you can [Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)](defender-endpoint-subscription-settings.md).
@@ -72,7 +88,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## January 2023
 
-- [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
+- [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [Protect Microsoft Defender Antivirus exclusions from tampering](prevent-changes-to-security-settings-with-tamper-protection.md#protect-microsoft-defender-antivirus-exclusions)
 
 - Live Response is now generally available for macOS and Linux. For more information, see, [Investigate entities on devices using live response](live-response.md).
 
@@ -156,45 +172,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Mobile Network Protection in Microsoft Defender for Endpoint on Android & iOS now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mobile-network-protection-in-microsoft-defender-for-endpoint-on/ba-p/3559121)<br>Microsoft offers a mobile network protection feature in Defender for Endpoint that helps organizations identify, assess, and remediate endpoint weaknesses with the help of robust threat intelligence. We're delighted to announce that users can now benefit from this new feature on both Android and iOS platforms with Microsoft Defender for Endpoint.
 
-## May 2022
 
-- [Tamper protection for macOS (preview)](tamperprotection-macos.md)<br>Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS.
 
-- [Add domain controller devices - Evaluation lab enhancement (preview)](evaluation-lab.md#add-a-domain-controller)<br>Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
-
-- [Troubleshooting mode for Microsoft Defender for Endpoint now Generally Available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/troubleshooting-mode-for-microsoft-defender-for-endpoint-now/ba-p/3347344)<br>Introducing troubleshooting mode, a unique, innovative, and secure way to investigate and adjust configurations on your devices. This mode will enable the local admin on the device to override Microsoft Defender Antivirus security policy configurations on the device, including tamper protection. 
-
-- [Announcing the public preview of Defender for Endpoint personal profile for Android Enterprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979)<br>We're happy to announce that users who wish to enroll their own devices in their workplace’s BYOD program can now benefit from the protection provided by Microsoft Defender for Endpoint in their personal profile as well.
-
-- [Security Settings Management in Microsoft Defender for Endpoint is now generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>In late 2021, we announced that Microsoft Defender for Endpoint expanded its configuration management capabilities. This release empowered security teams to configure devices with their desired security settings without needing to deploy and implement other tools or infrastructure.  Made possible with Microsoft Intune, organizations have been able to manage antivirus (AV), endpoint detection and response (EDR), and firewall (FW) policies from a single view for all enlisted devices. Today, we're announcing that this capability is now generally available for Windows client and Windows server, supporting Windows 10, Windows 11, and Windows Server 2012 R2 or later.
-
-## April 2022
-
-- [Updated onboarding and feature parity for Windows Server 2012 R2 and Windows Server 2016)](configure-server-endpoints.md)<br/> The new unified solution package is now generally available and makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with many new feature improvements.
-
-- [Integration with Tunnel for iOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995). Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. This feature was earlier available only on Android.
-
-- [Enhanced Antimalware Protection in Microsoft Defender for Endpoint Android](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-protection-in-microsoft-defender-for/ba-p/3290320)<br>We're excited to share major updates to the Malware protection capabilities of Microsoft Defender for Endpoint on Android. These new capabilities form a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat research, and the Microsoft cloud infrastructure to protect Android devices (or endpoints) in your organization.
-
-- [Enhanced antimalware engine capabilities for Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)<br>We're announcing a significant upgrade to our next-generation protection on Linux and macOS with a new, enhanced engine. The Microsoft Defender Antivirus antimalware engine is a key component of next-generation protection. This protection brings machine learning, big-data analysis, in-depth threat research, and the Microsoft cloud infrastructure, to protect devices (or endpoints) in your organization. The main benefits of this major update include performance and prevention improvements, as well as adding support for custom file indicators on macOS and Linux.
-
-- [New Reporting Functionality for Device Control and Windows Defender Firewall](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-reporting-functionality-for-device-control-and-windows/ba-p/3290601)<br>We're excited to announce the new Endpoint reporting capabilities within the Microsoft 365 Defender portal. This work brings new endpoint reports together so you can see what is happening in your environment with just a couple clicks. Our reports are designed to provide insight into device behavior and activity while allowing you to take full advantage of the integrated experiences within Microsoft 365 Defender portal, such as device timeline and advanced hunting.
-
-- [Unified submissions in Microsoft 365 Defender now Generally Available!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)<br>Your security team now has a “one-stop shop” for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. To simplify the submission process, we're excited to announce a new unified submissions experience in the Microsoft 365 Defender portal (https://security.microsoft.com). With unified submissions, you can submit files to Microsoft 365 Defender for review from within the portal. We're also adding the ability to submit a file directly from a Microsoft Defender for Endpoint Alert page.  
-
-- [Announcing expanded support and functionality for Live Response APIs](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-expanded-support-and-functionality-for-live-response/ba-p/3178432)<br>We're happy to share that we continue to expand support of existing APIs across all of our supported platforms in Microsoft Defender for Endpoint, alongside announcing new ones that will help simplify and augment organization's response automation and orchestration.
-
-## February 2022
-
-- [The Splunk Add-on for Microsoft Security is now available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/the-splunk-add-on-for-microsoft-security-is-now-available/ba-p/3171272)<br>We're happy to share that the Splunk-supported Splunk Add-on for Microsoft Security is now available. This add-on builds on the Microsoft 365 Defender Add-on for Splunk 1.3.0 and maps the Microsoft Defender for Endpoint Alerts API properties or the Microsoft 365 Defender Incidents API properties onto Splunk's Common Information Model (CIM).
-
-- [Deprecating the legacy SIEM API - Postponed](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/deprecating-the-legacy-siem-api-postponed/ba-p/3139643)<br>We previously announced the SIEM REST API would be deprecated on 4/1/2022. We've listened to customer feedback and the API deprecation has been postponed for now, more details expected in Q3, 2022. We look forward to sharing exciting details about the ​Microsoft 365 Defender APIs in Microsoft Graph in Q3 2022.
-
-## January 2022
-
-- [Vulnerability management for Android and iOS is now generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)<br>With this new cross-platform coverage, threat and vulnerability management capabilities now support all major device platforms across the organization - spanning workstations, servers, and mobile devices. 
-
-- [Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639)<br>Starting January 14, Microsoft Defender for Endpoint Plan 1 (P1) will be automatically included in Microsoft 365 E3/A3 licenses.
-
-- [Zero-touch onboarding of Microsoft Defender for Endpoint on iOS now in public preview](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/zero-touch-onboarding-of-microsoft-defender-for-endpoint-on-ios/ba-p/3038045)<br>With this new capability, enterprises can now deploy Microsoft Defender for Endpoint on iOS devices that are enrolled with Microsoft Intune automatically, without needing end-users to interact with the app. This eases the deployment frictions and significantly reduces the time needed to deploy the app across all devices as Microsoft Defender for Endpoint gets silently activated on targeted devices and starts protecting your iOS estate.
-
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

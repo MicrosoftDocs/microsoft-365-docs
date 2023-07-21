@@ -96,3 +96,4 @@ For more information, see **[Create an app with partner access to Microsoft 365 
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Create a 'Hello world' application that accesses the Microsoft 365 APIs](api-hello-world.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

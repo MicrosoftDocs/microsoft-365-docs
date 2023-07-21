@@ -6,10 +6,10 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 05/02/2023
+ms.date: 07/06/2023
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
@@ -26,13 +26,66 @@ search.appverid: met150
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
 
+## March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
+
+- Security intelligence update version: **1.387.695.0**
+- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
+- Platform: **4.18.2303.8**
+- Engine: **1.1.20200.4**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
+- Increased file hash support
+- Added support to protect registry keys against parent keys abuse
+- Improved tamper protection of registry keys against parent keys abuse
+- Improved log handling for DLP and Device Control
+- Improved performance on developer drives
+
+### Known issues
+
+- None
+
+## February-2023 (Platform: 4.18.2302.7 | Engine: 1.1.20100.6)
+
+- Security intelligence update version: **1.385.68.0**
+- Release date: **March 27, 2023**
+- Platform: **4.18.2302.7**
+- Engine: **1.1.20100.6**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed threat DefaultAction outputs in Get-MpPreference
+- Improved Defender performance during file copy operations for .NET applications
+- Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature
+- Added opt-in feature to allow users seeing exclusions
+- Fixed [ASR](overview-attack-surface-reduction.md) warn policy
+- Increased maximum size for quarantine archive file to 4 GB
+- Improvements to threat remediation logic
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) hardening for temporary exclusions
+- Fixed time zone calculation in [Defender PowerShell](/powershell/module/defender) module
+- Fixed merging logic for exclusions in Defender PowerShell module
+- Improvements in the [contextual exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) syntax
+- Improved scheduled scan robustness
+- Improved serviceability for internal database files
+- Enhanced certificate indicators determination logic
+- Enhanced memory usage
+
+### Known Issues
+
+- None
+
+
 ## January-2023 (Platform: 4.18.2301.6 | Engine: 1.1.20000.2)
 
 - Security intelligence update version: **1.383.26.0**
 - Release date: **February 14, 2023**
 - Platform: **4.18.2301.6**
 - Engine: **1.1.20000.2**
-- Support phase: **Security and Critical Updates**
+- Support phase: **Technical upgrade support (only)**
 
 ### What's new
 
@@ -42,13 +95,13 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### Known Issues
 
-- None 
+- None
 
 ## November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
 
-- Security intelligence update version: **1.381.144.0** 
+- Security intelligence update version: **1.381.144.0**
 - Release date: **December 8, 2022**
-- Platform: **4.18.2211.5** 
+- Platform: **4.18.2211.5**
 - Engine: **1.1.19900.2**
 - Support phase: **Technical upgrade support (only)**
 
@@ -66,7 +119,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### Known Issues
 
-- None  
+- None
 
 ## October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
 
@@ -79,20 +132,20 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### What's new
 
 - Addressed a quality issue that could result in poor responsiveness/usability
-- Improved hang detection in antivirus engine 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
-- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
-- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
-- Added randomize scheduled task times configuration to Intune policy 
-- Added manageability for `DisableSMTPParsing` network protection 
-- Added improvement for behavior monitoring 
-- Normalized date format for event 1151 for Windows Defender 
-- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
-- Improved PID information for threat detection 
+- Improved hang detection in antivirus engine
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability
+- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report
+- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction`
+- Added randomize scheduled task times configuration to Intune policy
+- Added manageability for `DisableSMTPParsing` network protection
+- Added improvement for behavior monitoring
+- Normalized date format for event 1151 for Windows Defender
+- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions
+- Improved PID information for threat detection
 
 ### Known Issues
 
-- None  
+- None
 
 
 ## September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
@@ -114,13 +167,13 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Improved hardening support for Defender disablement configurations on Server SKUs
 - Improved Defender configuration logics for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on servers
 - Improved WARN mode for [ASR rule](attack-surface-reduction-rules-reference.md)
-- Improved certificate handling of OSX  
+- Improved certificate handling of OSX
 - Improved logging for scanning FilesStash location
-- Beginning with platform version 4.18.2208.0 and later: If a server has been [onboarded to Microsoft Defender for Endpoint](onboard-configure.md#onboard-devices-to-the-service), the "Turn off Windows Defender" [group policy setting](configure-endpoints-gp.md#update-endpoint-protection-configuration) will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it is either ignored (if [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) is configured explicitly) or it places Microsoft Defender Antivirus into [passive mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (if `ForceDefenderPassiveMode` isn't configured). Moreover, [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) allows a switch to active mode via changing `ForceDefenderPassiveMode` to `0`, but not to passive mode. These changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+- Beginning with platform version 4.18.2208.0 and later: If a server has been onboarded to Microsoft Defender for Endpoint, the "Turn off Windows Defender" [group policy setting](configure-endpoints-gp.md#update-endpoint-protection-configuration) will no longer completely disable Windows Defender Antivirus on Windows Server 2012 R2 and later operating systems. Instead, it is either ignored (if [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) is configured explicitly) or it places Microsoft Defender Antivirus into [passive mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (if `ForceDefenderPassiveMode` isn't configured). Moreover, [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) allows a switch to active mode via changing `ForceDefenderPassiveMode` to `0`, but not to passive mode. These changes apply only to servers onboarded to Microsoft Defender for Endpoint. For more information, please refer to [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
 ### Known Issues
 
-- Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
+- Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.
 
 ## August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)
 
@@ -153,23 +206,23 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Performance improvement for [hybrid sleep](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) delay when Microsoft Defender Antivirus is active 
-- Fixed client detection behavior related to custom [certificate blocking indicators of compromise](indicator-certificates.md) 
-- Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching 
-- Improved detection and remediation for [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) related macros 
-- Improved processing of AMSI exclusions 
-- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For more information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).) 
-- Fixed memory leak where `MsMpEng.exe` was consuming private bytes. (If high CPU usage is also an issue, see [High CPU usage due to Microsoft Defender Antivirus](troubleshooting-mode-scenarios.md)) 
-- Fixed deadlock with [behavior monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) 
-- Improved trust validation 
-- Fixed engine crash issue on legacy operating platforms 
-- Performance Analyzer v3 updates: Added top path support, scan skip information, and OnDemand scan support. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md). 
+- Performance improvement for [hybrid sleep](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) delay when Microsoft Defender Antivirus is active
+- Fixed client detection behavior related to custom [certificate blocking indicators of compromise](indicator-certificates.md)
+- Performance improvement for [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) caching
+- Improved detection and remediation for [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) related macros
+- Improved processing of AMSI exclusions
+- Fixed deadlock detection in Host Intrusion Prevention System (HIPS) rule processing. (For more information about HIPS and Defender for Endpoint, see [Migrating from a third-party HIPS to ASR rules](migrating-asr-rules.md).)
+- Fixed memory leak where `MsMpEng.exe` was consuming private bytes. (If high CPU usage is also an issue, see [High CPU usage due to Microsoft Defender Antivirus](troubleshooting-mode-scenarios.md))
+- Fixed deadlock with [behavior monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
+- Improved trust validation
+- Fixed engine crash issue on legacy operating platforms
+- Performance Analyzer v3 updates: Added top path support, scan skip information, and OnDemand scan support. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 - Defender performance improvements during file copy operations
-- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)  
+- Added improvements for [troubleshooting mode](enable-troubleshooting-mode.md)
 - Added fix for Defender WINEVT channels across update/restarts. (For more information about WINEVT, see [Windows Event Log](/windows/win32/api/_wes/).)
-- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates 
-- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/) 
-- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening 
+- Added fix for [Defender WMI management](use-wmi-microsoft-defender-antivirus.md) bug during startup/updates
+- Added fix for duplicated 2010/2011 in the [Windows Event Viewer Operational events](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/)
+- Added support for [Defender for Endpoint](microsoft-defender-endpoint.md) stack processes token hardening
 
 ### Known Issues
 
@@ -185,8 +238,8 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Added fix for ETW channel configuration for updates 
-- Added support for contextual exclusions allowing more specific exclusion targeting 
+- Added fix for ETW channel configuration for updates
+- Added support for contextual exclusions allowing more specific exclusion targeting
 - Fixed context maximum size
 - Added fix for [ASR LSASS detection](attack-surface-reduction-rules-reference.md)
 - Added fix to SHSetKnownFolder for rule exclusion logic
@@ -225,10 +278,10 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Added fix for an [attack surface reduction rule](attack-surface-reduction.md) that blocked an Outlook add-in 
-- Added fix for [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) performance issue related to short live processes 
-- Added fix for [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) exclusion 
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
+- Added fix for an [attack surface reduction rule](attack-surface-reduction.md) that blocked an Outlook add-in
+- Added fix for [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) performance issue related to short live processes
+- Added fix for [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) exclusion
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
 - Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config. For more information about the `SharedSignaturesPath` parameter, see [Set-MpPreference](/powershell/module/defender/set-mppreference).
 
 ### Known issues
@@ -250,9 +303,9 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Added fix resulting in better fidelity of EDR and Advanced Hunting detection alerts
 - Defender no longer supports custom notifications on toast pop ups. Modified GPO/Intune/SCCM and docs to reflect this change.
 - Improvements to capture both information and copy of files written to removable storage. To learn more, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md).
-- Improved traffic output when SmartScreen service is unreachable 
+- Improved traffic output when SmartScreen service is unreachable
 - Connectivity improvements for customers using proxies with authentication requirements
-- Fixed VDI device update bug for network FileShares 
+- Fixed VDI device update bug for network FileShares
 - EDR in block mode now supports granular device targeting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
 ### Known issues
@@ -296,7 +349,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
 - Fixed bug in which `SharedSignatureRoot` value couldn't be removed when set with PowerShell
 - Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
-- Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).   
+- Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
    - PowerShell ISE support added for `New-MpPerformanceRecording`
    - Fixed bug errors for `Get-MpPerformanceReport -TopFilesPerProcess`
    - Fixed performance recording session leak when using `New-MpPerformanceRecording` in PowerShell 7.x, remote sessions, and PowerShell ISE
@@ -733,3 +786,4 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### Known issues
 
 - When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

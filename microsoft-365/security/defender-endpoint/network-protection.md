@@ -1,13 +1,9 @@
 ---
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
-keywords: Network protection, exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 06/19/2023
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -56,9 +52,8 @@ The following table summarizes network protection areas of coverage.
 | Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
 
 > [!NOTE]
-> Network protection does not monitor msedge.exe on Windows devices.
-> For Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
-> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+> On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
+> On Windows, network protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
 > - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
@@ -405,3 +400,4 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
 - [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -85,7 +85,10 @@ If the tool indicates a mismatch in number of columns, it might be due to the pr
   - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 
 > [!IMPORTANT]
-> Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
+> 1. If using Windows Server 2016 or before, you must also [install Visual C++](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) prior to installing the EDM Upload Agent.
+>
+> 2. Install the [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) in a custom folder so you don't need administrator permissions. If you install it into the default (*Program Files*), administrator permissions are required.
+> 
 
 #### Set up the security group and user account
 
@@ -133,7 +136,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 4. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
-   OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema, you ***must*** download it for use in this procedure if you haven't already. Run this command in a Command Prompt window:
+   IMPORTANT: If you used the Exact Data Match schema and sensitive information type wizard to create your schema, you ***must*** download it for use in this procedure if you haven't already. Run this command in a Command Prompt window:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
