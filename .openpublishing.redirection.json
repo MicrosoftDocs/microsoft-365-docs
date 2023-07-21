@@ -125,12 +125,7 @@
       "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
       "redirect_document_id": false
     },
-    {   
-      "source_path": "microsoft-365/bookings/get-bookings-app.md",
-      "redirect_url": "microsoft-365/bookings/bookings-overview",
-      "redirect_document_id": false
-  },
-      {
+   {
          "source_path":"enterprise/during-and-after-your-data-move.md",
          "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-legacy-move-program",
          "redirect_document_id":false
