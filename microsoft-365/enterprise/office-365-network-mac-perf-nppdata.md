@@ -64,9 +64,9 @@ Where:
 
 ## Data aggregation slicing
 
-For customer specific reporting the aggregations are sliced by the customer and by detected network provider and by work location type. They're also sliced by office location for drill-down capability. For the NPI Chart views including Target Baseline metrics are aggregations sliced by network provider and by country and state. The NPI Chart data is aggregated from all Office 365 customers.
+For customer specific reporting the aggregations are sliced by the customer and by detected network provider and by work location type. They're also sliced by office location for drill-down capability. For the NPI Chart views including Target Baseline metrics are aggregations sliced by network provider and by country/region and state. The NPI Chart data is aggregated from all Office 365 customers.
 
-For network providers the aggregations are sliced by network provider, by geography (including country, state, and city), and by /24 public network.
+For network providers the aggregations are sliced by network provider, by geography (including country/region, state, and city), and by /24 public network.
 
 ## Data aggregation statistical evaluations
 
@@ -86,7 +86,7 @@ Network providers will additionally not be shown in a tenant or location view if
 
 ## Network Provider Index Chart
 
-The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry, which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
+The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country/region. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry, which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
 
 ## Related topics
 

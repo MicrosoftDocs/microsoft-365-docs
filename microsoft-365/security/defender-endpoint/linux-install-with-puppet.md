@@ -267,3 +267,4 @@ class remove_mdatp {
     }
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
