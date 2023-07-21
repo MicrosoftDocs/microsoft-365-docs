@@ -598,3 +598,4 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

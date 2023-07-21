@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/17/2023
+ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -42,11 +42,11 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
-| **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
-| **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
-| **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure classifiers|
-| **Conflict of interest** | Detect conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
+| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Viva Engage <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
+| **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Viva Engage <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
+| **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Viva Engage <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
+| **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Viva Engage <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure classifiers|
+| **Conflict of interest** | Detect conflict of interest | - Locations: Exchange Online, Microsoft Teams, Viva Engage <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
 
 Communications are scanned every 24 hours from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and Coordinated Universal Time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time.
 
@@ -90,7 +90,7 @@ When configured for an insider risk management policy, a dedicated policy named 
 
 Users that send 5 or more messages classified as potentially risky within 24 hours are automatically brought in-scope for insider risk management policies that include this option. Once in-scope, the insider risk management policy detects potentially risky activities configured in the policy and generates alerts as applicable. It may take up to 48 hours from the time risky messages are sent until the time a user is brought in-scope in an insider risk management policy. If an alert is generated for a potentially risky activity detected by the insider risk management policy, the triggering event for the alert is identified as being sourced from the communication compliance risky activity.
 
-All users assigned to the [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) role group are automatically assigned as reviewers in the dedicated communication compliance policy. If inside risk management investigators need to review the associated risky user alert directly on the communication compliance alerts page (linked from the insider risk management alert details), they must be manually added to the *Communication Compliance Investigators* role group.
+All users assigned to the [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) role group are automatically assigned as reviewers in the dedicated communication compliance policy. If insider risk management investigators need to review the associated risky user alert directly on the communication compliance alerts page (linked from the insider risk management alert details), they must be manually added to the *Communication Compliance Investigators* role group.
 
 Before integrating communication compliance with insider risk management, you should also consider the following guidance when detecting messages containing potentially inappropriate text:
 
@@ -158,7 +158,7 @@ The following table outlines the time to detection for supported content types:
 |:---------------|:--------------------|
 | Email body content | 1 hour |
 | Teams body content | 1 hour |
-| Yammer body content | 24 hours |
+| Viva Engage body content | 24 hours |
 | Email OCR | 24 hours |
 | Teams OCR | 24 hours |
 | Email attachment | 24 hours |
@@ -209,9 +209,14 @@ You have the option of including sensitive information types as part of your com
 - Custom information type
 
 > [!IMPORTANT]
-> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
+> Sensitive info types have two different ways of defining the max unique instance count parameters. To learn more, see [Create custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
 
-To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions).
+The communication compliance solution supports default sensitive information types as well as bundled named-entity sensitive information types, which are collections of sensitive information types. To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions). For information on supported bundled named-entity sensitive information types, see the following:
+
+- [All credentials](sit-defn-all-creds.md)
+- [All full names](sit-defn-all-full-names.md)
+- [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md)
+- [All Physical Addresses](sit-defn-all-physical-addresses.md)
 
 ### Custom keyword dictionaries
 
@@ -237,7 +242,9 @@ For information about applying content flags that can detect adult, gory, and ra
 
 #### Language
 
-Communication compliance policies using classifiers inspect and evaluate messages that meet a minimum word count requirement, depending upon the language of the content. For a complete list of supported languages, word count requirements, and file types for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions). To identify and take action on messages containing inappropriate language content that don't meet the word count requirement, you can create a [custom keyword dictionary](#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
+Communication compliance policies using classifiers inspect and evaluate messages that meet a [minimum word count requirement](/microsoft-365/compliance/classifier-tc-definitions#word-count-requirements), depending upon the language of the content. For a complete list of supported languages, word count requirements, and file types for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions). 
+
+To identify and take action on messages containing inappropriate language content that don't meet the word count requirement, you can create a [sensitive information type](#sensitive-information-types) or [custom keyword dictionary](#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
@@ -250,16 +257,16 @@ Communication compliance policies using classifiers inspect and evaluate message
 | [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
 | [Regulatory collusion](classifier-tc-definitions.md#regulatory-collusion)| Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
 | [Stock manipulation](classifier-tc-definitions.md#stock-manipulation)| Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
-| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
+| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. |
 | [Unauthorized disclosure](classifier-tc-definitions.md#unauthorized-disclosure)| Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature. 
+> Classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. You can mitigate the detection of large volumes of bulk sender/newsletter content by selecting the [**Filter email blasts** check box](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) when you create the policy. You can also edit an existing policy to turn on this feature.
 
 ### Optical character recognition (OCR)
 
 > [!NOTE]
-> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time. 
+> Microsoft Purview includes [OCR (preview) settings](ocr-learn-about.md) for Microsoft Purview Insider Risk Management, Microsoft Purview Data Loss Prevention, Microsoft Purview Data Loss Management, and autolabeling. You can use the OCR (preview) settings to provide image-scanning capabilities for those solutions and technologies. Communication compliance has its own built-in OCR scanning functionality as described below and doesn’t support the OCR (preview) settings at this time.
 
 Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 
@@ -276,7 +283,7 @@ Images from 50 KB to 4 MB in the following image formats are scanned and process
 > [!NOTE]
 > Scanning and extraction for embedded and attached .pdf images is currently supported only for email messages.
 
-When reviewing pending alerts for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
+When reviewing pending policy matches for policies with OCR enabled, images identified and matched to policy conditions are displayed as child items for associated alerts. You can view the original image to evaluate the identified text in context with the original message. It may take up to 48 hours for detected images to be available with alerts.
 
 ### Conditional settings
 
@@ -288,7 +295,9 @@ The following table explains more about each condition.
 |:-----|:-----|
 | **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your organization, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about). |
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about). |
-| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br> Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific emails address you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example newsletter@contoso.com). |
+| **Message is received from any of these domains** <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains in received messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br> Each domain entered is applied separately, only one domain must apply for the policy to apply to the message. If you want to use **Message is received from any of these domains** to look for messages from specific domains, you need to combine this with another condition like **Message contains any of these words** or **Content matches any of these classifiers** or you might get unexpected results. <br><br> If you want to scan all emails but want to exclude messages from a specific domain that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the domain (example 'contoso.com,wingtiptoys.com'). |
+| **Message is received from any of these external email addresses** <br><br> **Message is not received from any of these external email addresses**|Apply the policy to include or exclude messages received or not received from specific external email addresses (example someone@outlook.com).<br><br>Use this condition to monitor only messages that come from outside the organization (messages that cross the firewall). |
+| **Message is sent to any of these external email addresses** <br><br> **Message is not sent to any of these external email addresses**|Apply the policy to include or exclude messages sent or not sent to specific external email addresses (example someone@outlook.com).<br><br>Use this condition to monitor only messages that are sent outside the organization (messages that cross the firewall).|
 | **Message is sent to any of these domains** <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains in sent messages.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>-Enter each domain and separate multiple domains with a comma.<br> -Do not include spaces between items separated by a comma.<br> -Remove all leading and trailing spaces.<br><br>Each domain is applied separately; only one domain must apply for the policy to apply to the message. <br><br> If you want to exclude all emails sent to two specific domains, configure the **Message is not sent to any of these domains** condition with the two domains (example 'contoso.com,wingtiptoys.com'). |
 | **Message is classified with any of these labels** <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](/microsoft-365/compliance/retention).|
 | **Message contains any of these words** <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message.<br><br> Make sure to use the following syntax when entering conditional text: <br><br>- Remove all leading and trailing spaces.<br>- Add quotation marks before and after each keyword or key phrase.<br>- Separate each keyword or key phrase with a comma.<br>- Do not include spaces between items separated by a comma. <br><br>**Example:** "banker","insider trading","confidential 123"<br><br>Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](#matching-words-and-phrases-to-emails-or-attachments).|

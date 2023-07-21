@@ -318,3 +318,4 @@ As part of your SecOps team's ongoing tool and process best practices and securi
 - Update the set of operational tasks for ransomware detection.
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

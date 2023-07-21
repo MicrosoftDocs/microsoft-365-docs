@@ -81,3 +81,4 @@ ms.date: 12/18/2020
 |deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
 |osArchitecture|String|Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.|
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -99,3 +99,4 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 
 > [!NOTE]
 > Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl** and **/etc/environment** methods. To configure static proxy for MDE on these distributions, use the Recommended **mdatp config proxy set** method.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

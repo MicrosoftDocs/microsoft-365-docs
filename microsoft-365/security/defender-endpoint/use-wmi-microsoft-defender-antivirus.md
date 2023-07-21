@@ -80,3 +80,4 @@ You can [configure which settings can be overridden locally  with local policy o
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
