@@ -78,3 +78,4 @@ If your organization is using Defender for Endpoint, feedback-loop blocking is e
 - [(Blog) Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 
 - [Helpful Microsoft Defender for Endpoint resources](/microsoft-365/security/defender-endpoint/helpful-resources)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

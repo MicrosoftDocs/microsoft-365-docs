@@ -194,3 +194,4 @@ The following articles provide guidance to troubleshoot and fix errors that you 
 - [Troubleshoot attack surface reduction issues](troubleshoot-asr.md)
 - [Troubleshoot onboarding issues](troubleshoot-onboarding.md)
  
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
