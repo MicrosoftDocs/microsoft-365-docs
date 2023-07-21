@@ -305,6 +305,8 @@
               href: activity-reports/microsoft-teams-user-activity-preview.md
             - name: Microsoft 365 Apps usage
               href: activity-reports/microsoft365-apps-usage-ww.md
+            - name: Microsoft 365 Copilot usage
+              href: activity-reports/microsoft-365-copilot-usage.md
             - name: Microsoft 365 groups
               href: activity-reports/office-365-groups-ww.md
             - name: OneDrive for Business activity

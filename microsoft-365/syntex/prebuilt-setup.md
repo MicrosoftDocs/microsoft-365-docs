@@ -19,7 +19,7 @@ description: Learn how to set up and manage prebuilt document processing in Micr
 
 # Set up and manage prebuilt document processing in Microsoft Syntex
 
-Before you can use prebuilt document processing in Microsoft Syntex, it must be set up in the Microsoft 365 admin center.
+The prebuilt document processing service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
