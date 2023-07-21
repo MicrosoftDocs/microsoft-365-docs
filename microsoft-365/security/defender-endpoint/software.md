@@ -71,3 +71,4 @@ ms.date: 12/18/2020
 |exposedMachines|Long|Number of exposed devices|
 |impactScore|Double|Exposure score impact of this software|
 |
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

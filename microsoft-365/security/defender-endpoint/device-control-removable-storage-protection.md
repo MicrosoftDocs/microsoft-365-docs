@@ -96,3 +96,4 @@ To manage external storage, use removable storage access control instead of [dev
 **Description** - For more information on Windows, see [BitLocker - Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Supported Platform** - Windows 10, Windows 11
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
