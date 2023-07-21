@@ -2191,18 +2191,6 @@
         "": ""
     },
     {
-        "source_path": "microsoft-365/compliance/endpoint-dlp-2-using-dlp-incident-reports.png",
-        "redirect_url": "/purview/endpoint-dlp-2-using-dlp-incident-reports",
-        "redirect_document_id": "FALSE",
-        "": ""
-    },
-    {
-        "source_path": "microsoft-365/compliance/endpoint-dlp-6-using-dlp-set-blocked-with-override.png",
-        "redirect_url": "/purview/endpoint-dlp-6-using-dlp-set-blocked-with-override",
-        "redirect_document_id": "FALSE",
-        "": ""
-    },
-    {
         "source_path": "microsoft-365/compliance/endpoint-dlp-getting-started.md",
         "redirect_url": "/purview/endpoint-dlp-getting-started",
         "redirect_document_id": "FALSE",
