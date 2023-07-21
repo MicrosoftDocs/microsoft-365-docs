@@ -96,7 +96,11 @@ Once the .whiteboard file appears in the OneDrive for Business of the new owner,
 1. Open office.com and in the app launcher, select **OneDrive**. 
 2. In the left-hand navigation pane, select **My Files**. 
 3. Open the folder named **Whiteboards**. 
-4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options. 
+4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options.
+
+### Auditing
+
+Whiteboard files stored in ODB are included in file audit log activities for create, modify, share and delete activities. Learn more about file activities at [Audit log activities - Microsoft Purview](https://learn.microsoft.com/microsoft-365/compliance/audit-log-activities?view=o365-worldwide#file-and-page-activities).
 
 ## See also
 
