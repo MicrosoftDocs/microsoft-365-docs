@@ -136,6 +136,11 @@
          "redirect_document_id":false
       },
       {
+    "source_path": "microsoft-365/security/defender-endpoint/deployment-strategy.md",
+    "redirect_url": "/microsoft-365/security/defender-endpoint/mde-planning-guide",
+    "redirect_document_id": false
+      },
+      {
          "source_path":"microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
          "redirect_url":"/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
          "redirect_document_id":false
