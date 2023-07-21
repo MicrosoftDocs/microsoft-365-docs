@@ -19,11 +19,11 @@ This section will show you how to set up your own scheduled tests against previe
 
 Scheduled tests against preview Windows builds are set in the **Test matrix** step. By selecting **Feature update**, your package would be tested against preview builds flight to your indicated insider channel.
 
-![A screenshot of a computer Description automatically generated](media/8d48e244278133935819b0b276434e50.png)
+![A screenshot of a computer Description automatically generated](Media/test-against-windows-new-features-1.png)
 
 To set up for feature updates, you must specify the target product and it’s preview channel from “*Insider Channel*” dropdown list.
 
-![A screenshot of a computer Description automatically generated](media/6b9d73fd287fd976cb3baa889e1e1beb.png)
+![A screenshot of a computer Description automatically generated](Media/test-against-windows-new-features-2.png)
 
 Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new updates in the latest Windows Insider Preview Builds of your selection.
 
@@ -34,7 +34,7 @@ Note:
 
 You may also set your current OS in “*OS baseline for Insight*”. We would provide you with more test insights by regression analysis of your as-is OS environment and the latest target OS.
 
-![Graphical user interface, text, application Description automatically generated](media/13913807c4c5b62bf2628215c67d06cf.png)
+![Graphical user interface, text, application Description automatically generated](Media/test-against-windows-new-features-3.png)
 
 -   If the OS you’re looking for didn’t show up in our current supported product list, feel free to [Let us know your request](https://forms.office.com/r/ZeGihXBXHk)), or contact us via [testbasepreview@microsoft.com](mailto:testbasepreview@microsoft.com).
 
@@ -44,8 +44,8 @@ A test run will be executed after the package passes the validation. For all new
 
 You can view the results of the test run under the **Test summary** page by clicking the link on the package name.
 
-![A close-up of a white background Description automatically generated](media/015d0f871f226c6fdaf80a6720cea436.png)
+![A close-up of a white background Description automatically generated](Media/test-against-windows-new-features-4.png)
 
 You may use the release number / release version / KB number to map with the update version pushed to your organization. You will not only get the detailed script execution results with test logs but also compare regressively with previous’ month’s execution result to deep dive into any further performance risks. In case you might need to reproduce the failure and see in detail the execution process in video, you may click on **Re-run test**.
 
-![A screenshot of a computer Description automatically generated](media/37aabdfb28ac2d652f52dd6516f324dc.png)
+![A screenshot of a computer Description automatically generated](Media/test-against-windows-new-features-5.png)
