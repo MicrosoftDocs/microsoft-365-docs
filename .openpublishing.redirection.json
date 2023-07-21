@@ -10825,11 +10825,6 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
-        "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
         "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
         "redirect_document_id": false
@@ -10837,11 +10832,6 @@
       {
         "source_path": "microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-endpoint-manager.md",
         "redirect_url": "/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/bookings/metrics-and-activity-tracking.md",
-        "redirect_url": "/microsoft-365/bookings/bookings-overview",
         "redirect_document_id": false
       },
       {
@@ -10870,18 +10860,8 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
-        "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus.md",
         "redirect_url": "/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/frontline/flw-technical-planning-guide-deployment.md",
-        "redirect_url": "/microsoft-365/frontline/flw-setup-microsoft-365",
         "redirect_document_id": true
       },
       {
@@ -10892,31 +10872,6 @@
       {
         "source_path": "microsoft-365/security/defender-endpoint/faqs-tamper-protection.md",
         "redirect_url": "/microsoft-365/security/defender-endpoint/faqs-on-tamper-protection",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/compliance/search-for-content.md",
-        "redirect_url": "/microsoft-365/compliance/ediscovery-content-search-overview",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/compliance/export-search-results.md",
-        "redirect_url": "/microsoft-365/compliance/ediscovery-export-search-results",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/compliance/search-for-and-delete-messages-in-your-organization.md",
-        "redirect_url": "/microsoft-365/compliance/ediscovery-search-for-and-delete-email-messages",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/compliance/use-content-search-for-targeted-collections.md",
-        "redirect_url": "/microsoft-365/compliance/ediscovery-use-content-search-for-targeted-collections",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/compliance/clone-a-content-search.md",
-        "redirect_url": "/microsoft-365/compliance/ediscovery-clone-a-content-search",
         "redirect_document_id": true
       },
       {
@@ -10950,16 +10905,6 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "microsoft-365/compliance/compliance-manager-templates-format-excel.md",
-        "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/compliance/compliance-manager-quickstart.md",
-        "redirect_url": "/microsoft-365/compliance/compliance-manager-setup",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
         "redirect_url": "/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
         "redirect_document_id": false
@@ -10973,21 +10918,6 @@
         "source_path": "microsoft-365/security/office-365-security/recover-from-ransomware.md",
         "redirect_url": "/security/ransomware/",
         "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/business-premium/m365bp-secure-users.md",
-        "redirect_url": "/microsoft-365/business-premium/why-choose-microsoft-365-business-premium",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/business-premium/m365bp-conditional-access.md",
-        "redirect_url": "/microsoft-365/business-premium/m365bp-turn-on-mfa",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/business-premium/m365bp-increase-protection.md",
-        "redirect_url": "/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats",
-        "redirect_document_id": true
       },
       {
         "source_path": "microsoft-365/business-premium/m365bp-devices-overview.md",
@@ -11132,11 +11062,6 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/admin/manage/upgrade-distribution-lists.md",
-    "redirect_url": "/microsoft-365/admin/create-groups/office-365-groups",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates",
     "redirect_document_id": false
@@ -11157,31 +11082,6 @@
     "redirect_document_id": true
   },
   {
-    "source_path": "microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment.md",
-    "redirect_url": "/microsoft-365/admin/setup/upgrade-users-to-latest-office-client",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/retry-failed-content-search.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-retry-failed-content-search",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "microsoft-365/compliance/disable-reports-when-you-export-content-search-results.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-disable-reports-for-exported-content-search-results",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "microsoft-365/compliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-search-mailboxes-and-onedrive-for-users",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold",
-    "redirect_document_id": true
-  },
-  {
     "source_path": "microsoft-365/security/defender-endpoint/why-cloud-protection-should-be-on-mdav.md",
     "redirect_url": "/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
     "redirect_document_id": true
@@ -11197,16 +11097,6 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/compliance/ediscovery-change-the-size-of-pst-files-when-exporting-results.md",
-    "redirect_url": "/microsoft-365/compliance/ediscovery-export-search-results",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/business-premium/m365bp-glossary.yml",
-    "redirect_url": "https://www.microsoft.com/wdsi/threats",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "microsoft-365/security/defender-business/mdb-use-wizard.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
     "redirect_document_id": true
@@ -11215,21 +11105,6 @@
     "source_path": "microsoft-365/security/defender-business/mdb-simplified-configuration.md",
     "redirect_url": "/microsoft-365/security/defender-business/mdb-setup-configuration",
     "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/compliance-manager-templates-modify.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/compliance/compliance-manager-templates-extend.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager-templates",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/enterprise/move-sharepoint-between-geo-locations.md",
-    "redirect_url": "/microsoft-365/enterprise/m365-dr-workload-spo",
-    "redirect_document_id": true
   },
   {
     "source_path": "microsoft-365/security/office-365-security/defender-for-office-365.md",
@@ -11245,11 +11120,6 @@
     "source_path": "microsoft-365/security/office-365-security/recover-from-ransomware.md",
     "redirect_url": "/security/ransomware/",
     "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/business-premium/m365bp-increase-protection.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats",
-    "redirect_document_id": true
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-devices-overview.md",
