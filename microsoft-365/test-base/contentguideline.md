@@ -88,7 +88,6 @@ Validation is necessary to properly diagnose where errors occur during a test ru
 
 > [!IMPORTANT]
 > **Avoid the following:**
-
 > - Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.  
 > - Do not modify the DNS Suffix Search List in Windows IP Configuration. 
 > [!IMPORTANT]
