@@ -22,7 +22,7 @@ ms.collection:
   - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 07/24/2023
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
