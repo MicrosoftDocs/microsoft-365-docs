@@ -96,7 +96,7 @@ All our updates contain
 ### June-2023 (Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Release date:  **July 10, 2023 (Engine)** 
+- Release date:  **July 10, 2023 (Engine only)** 
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
    
@@ -110,14 +110,14 @@ All our updates contain
 
 - See the [May 2023 update](#may-2023-update-platform-418230509--engine-1xxxxxxx) for platform updates.
 
-### May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.x.xxxxx.x)
+### May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)
 
 *Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
 
 - Security intelligence update version: x.xxx.xx.x
 - Released: **July 24, 2023**
 - Platform: **4.18.23050.9**
-- Engine: **1.x.xxxxx.x**
+- Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
