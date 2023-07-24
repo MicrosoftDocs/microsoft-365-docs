@@ -2337,7 +2337,7 @@
         },
         {
             "source_path": "microsoft-365/compliance/prepare-tls-1.2-in-office-365.md",
-            "redirect_url": "/purview/prepare-tls-1",
+            "redirect_url": "/purview/prepare-tls-1.2-in-office-365",
             "redirect_document_id": "FALSE"
         },
         {
