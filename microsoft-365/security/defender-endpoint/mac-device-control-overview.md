@@ -104,6 +104,9 @@ Here are the properties you can use when you create the group and policy.
 
 ### Settings
 
+> [!NOTE]
+> Both Android (portableDevice) and iOS (appleDevice) are in Preview and not in GA now.
+
 | Property name | Description | Options |
 |:---|:---|:---|
 | features | Feature specific configurations | You can set `disable` to false or true for following features: <br/>- `removableMedia`<br/>- `appleDevice`<br/>- `portableDevice`, including camera or PTP media<br/>- `bluetoothDevice`<br/><br/>The default is `true`, so if you don't configure this value, it will not apply even if you create a custom policy for `removableMedia`, because it's disabled by default. |
