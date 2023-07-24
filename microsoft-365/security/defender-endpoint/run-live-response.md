@@ -242,3 +242,4 @@ Content-type: application/json
 - [Get machine action API](get-machineaction-object.md)
 - [Get live response result](get-live-response-result.md)
 - [Cancel machine action](cancel-machine-action.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

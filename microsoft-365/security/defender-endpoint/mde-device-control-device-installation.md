@@ -289,3 +289,4 @@ DeviceRegistryEvents
 It is not enough to enable only a single hardware ID to enable a single USB thumb-drive. Ensure that all the USB devices that precede the target one aren't blocked (allowed) as well.
 
 :::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="The Device install faq" lightbox="../../media/devicemgrscrnshot.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
