@@ -93,6 +93,21 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)
+
+*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
+
+- Security intelligence update version: 1.393.1315.0
+- Released: **July 24, 2023**
+- Platform: **4.18.23050.9**
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
+- Fixed a bug where DNS requests with empty authority records were being improperly parsed
+
 ### June-2023 (Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
@@ -108,26 +123,11 @@ All our updates contain
  
 #### Known Issues  
 
-- See the [May 2023 update](#may-2023-update-platform-418230509--engine-1xxxxxxx) for platform updates.
-
-### May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)
-
-*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
-
-- Security intelligence update version: x.xxx.xx.x
-- Released: **July 24, 2023**
-- Platform: **4.18.23050.9**
-- Engine: **1.1.23060.1005**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
-- Fixed a bug where DNS requests with empty authority records were being improperly parsed
+- See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509--engine-11230601005) for platform updates.
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
-*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release.*
+*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509--engine-11230601005) has been released.*
 
 - Security intelligence update version: **1.391.860.0**
 - Released: **June 12, 2023**
