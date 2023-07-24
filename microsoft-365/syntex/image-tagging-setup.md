@@ -35,6 +35,9 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging will be automatically set up and enabled for all SharePoint sites.
 
+Although you enable pay-as-you-go billing for image tagging, you'll be charged only when [image tagging is enabled on a document library](image-tagging.md#to-enable-image-tagging-in-a-library).
+
+<!---
 ## Manage sites
 
 Manage which SharePoint sites users can use for image tagging.
@@ -52,3 +55,4 @@ Manage which SharePoint sites users can use for image tagging.
     b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
+--->
