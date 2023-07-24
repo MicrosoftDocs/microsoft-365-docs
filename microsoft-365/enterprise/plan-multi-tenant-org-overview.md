@@ -25,11 +25,13 @@ While you configure Microsoft 365 multi-tenant organizations in the Microsoft 36
 
 ## User synchronization between tenants
 
-Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest.
+Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest. (See [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions) for the differences between these roles.)
 
-We recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you want, including different users to different tenants.
+We recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
 
 When you configure user synchronization in the Microsoft 365 admin center, the same users and groups are synchronized to all tenants in the multi-tenant organization. Synchronizing different users to different tenants must be configured in Azure AD.
+
+Once user synchronization has been configured, you can adjust the synchronization settings, including user scope and attribute mapping, in Azure AD. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
 
 #### Existing cross-tenant synchronization configurations
 
@@ -57,6 +59,8 @@ For the best experience in multi-tenant organizations, users need [the new Micro
 - Receive real-time notifications from all the tenants in your multi-tenant organization
 - Participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants.
 - Set their status for each account and organization individually.
+- People search returns single result with a user’s home tenant identity
+- User profile card shows organization name and email address
 
 To control which users can use the new Teams desktop client, use the Teams update policies. For more information, see [Deploy the new Teams using policies](/microsoftteams/new-teams-deploy-using.-policies)
 
