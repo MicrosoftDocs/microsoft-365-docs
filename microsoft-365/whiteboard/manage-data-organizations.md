@@ -100,7 +100,7 @@ Once the .whiteboard file appears in the OneDrive for Business of the new owner,
 
 ### Auditing
 
-Whiteboard files stored in ODB are included in file audit log activities for create, modify, share and delete activities. Learn more about file activities at [Audit log activities - Microsoft Purview](https://learn.microsoft.com/microsoft-365/compliance/audit-log-activities?view=o365-worldwide#file-and-page-activities).
+Whiteboard files stored in ODB are included in file audit log activities for create, modify, share and delete activities. Learn more about file activities at [Audit log activities - Microsoft Purview](/microsoft-365/compliance/audit-log-activities?view=o365-worldwide#file-and-page-activities&preserve-view=true).
 
 ## See also
 
