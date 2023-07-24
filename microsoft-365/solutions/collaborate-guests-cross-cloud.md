@@ -89,7 +89,7 @@ To configure inbound settings for an organization
 
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B collaboration** tab, choose **Customize settings**.
-1. On the **External users and groups** tab, choose **Allow access** and **All <organization> users and groups**. (You can choose **Select <organization> users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
+1. On the **External users and groups** tab, choose **Allow access** and **All \<organization\> users and groups**. (You can choose **Select \<organization\> users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
 1. If you want to limit guest access to Microsoft 365, you can select the **Office 365** application on the **Applications** tab.
 1. Select **Save** and close the **Inbound access settings** blade.
 
