@@ -37,6 +37,19 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 Although you enable pay-as-you-go billing for image tagging, you'll be charged only when [image tagging is enabled on a document library](image-tagging.md#to-enable-image-tagging-in-a-library).
 
+## Manage sites
+
+By default, image tagging is available for libraries on all SharePoint sites. To turn off image tagging on all sites, follow these steps.
+
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+
+2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+
+3. On the **Manage Microsoft Syntex** page, select **Image tagging**.
+
+4. On the **Image tagging** page, select **No libraries**, and then select **Save**.
+
+
 <!---
 ## Manage sites
 
