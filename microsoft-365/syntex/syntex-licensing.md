@@ -35,6 +35,8 @@ Pay-as-you-go currently supports the following Syntex services:
 - Prebuilt document processing
 - Unstructured document processing
 - Optical character recognition
+- Content assembly
+- Image tagging
 
 More Syntex services will be added as they become available.
 
