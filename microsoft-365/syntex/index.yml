@@ -107,8 +107,6 @@ landingContent:
         links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
-          - text: Run a trial
-            url: trial-syntex.md
 
     # Card 6
   - title: Get support
