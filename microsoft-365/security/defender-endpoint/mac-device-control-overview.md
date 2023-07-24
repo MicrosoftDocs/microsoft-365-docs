@@ -105,7 +105,7 @@ Here are the properties you can use when you create the group and policy.
 ### Settings
 
 > [!NOTE]
-> Both Android (portableDevice) and iOS (appleDevice) are in Preview and not in GA now.
+> Both Android (portableDevice) and iOS (appleDevice) are in public preview and not in general availability at the moment.
 
 | Property name | Description | Options |
 |:---|:---|:---|
