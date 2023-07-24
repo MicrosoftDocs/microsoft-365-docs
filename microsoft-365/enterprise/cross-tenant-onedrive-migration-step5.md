@@ -50,7 +50,6 @@ Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL https://m365x12
 |Warning|Yes|
 |Incompatible|No|
 
-
 ## Create the identity mapping file
 
 In this step of the cross-tenant migration process, you're going to create a single CSV (comma separated values) file that contains the mapping of the users and groups on the source tenant to their corresponding users and groups on the target tenant.
