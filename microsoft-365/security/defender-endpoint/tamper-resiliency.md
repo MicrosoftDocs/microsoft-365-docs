@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.date: 07/04/2023
 ms.topic: overview
-ms.collection: 
+ms.collection:
 - tier1
 - highpri
 f1.keywords: NOCSH
@@ -18,7 +18,7 @@ audience: ITPro
 
 # Protect your organization from the effects of tampering
 
-Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack. As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device to detecting attacks and minimizing their impact. 
+Tampering is the general term used to describe attackers attempts to impair the effectiveness of Microsoft Defender for Endpoint. The ultimate goal of attackers isn't to affect just one device, but rather to achieve their objective such as launching a ransomware attack. As such, the anti-tampering capabilities of Microsoft Defender for Endpoint extend beyond preventing tampering of a single device to detecting attacks and minimizing their impact.
 
 **Applies to:**
 
@@ -29,22 +29,22 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 ## Organization wide tamper resiliency is built on Zero Trust
 
-The foundation for defending against tampering is following a [Zero Trust](/windows/security/zero-trust-windows-device-health) model. 
+The foundation for defending against tampering is following a [Zero Trust](/windows/security/zero-trust-windows-device-health) model.
 
 - Follow the best practice of least privilege. See [Access control overview for Windows](/windows/security/identity-protection/access-control/access-control).
 - Configure [Conditional Access policies](/azure/active-directory/conditional-access/overview) to keep untrusted users and devices isolated.
 
 In order to provide an effective defense against tampering, devices must be healthy.
 
-- [Onboard devices to Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-configure). 
-- Make sure [security intelligence and antivirus updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) are installed. 
+- [Onboard devices to Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboard-configure).
+- Make sure [security intelligence and antivirus updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) are installed.
 - Managed devices centrally, such as by [Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure), [Microsoft Defender for Endpoint Security Configuration Management](/mem/intune/protect/mde-security-integration), or [Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure).
 
 > [!NOTE]
-> On Windows devices, Microsoft Defender Antivirus can be managed by using Group Policy, Windows Management Instrumentation (WMI), and PowerShell cmdlets. However, those methods are more susceptible to tampering than by using Microsoft Intune, Configuration Manager, or Microsoft Defender for Endpoint Security Configuration Management. 
+> On Windows devices, Microsoft Defender Antivirus can be managed by using Group Policy, Windows Management Instrumentation (WMI), and PowerShell cmdlets. However, those methods are more susceptible to tampering than by using Microsoft Intune, Configuration Manager, or Microsoft Defender for Endpoint Security Configuration Management.
 > If you're using Group Policy, we recommend [disabling local overrides for Microsoft Defender Antivirus settings](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#configure-local-overrides-for-microsoft-defender-antivirus-settings) and [disabling local list merging](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged).
 
-You can view health status for [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health) health and [sensors](/microsoft-365/security/defender-endpoint/device-health-sensor-health-os) in the [device health reports in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-health-reports). 
+You can view health status for [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health) health and [sensors](/microsoft-365/security/defender-endpoint/device-health-sensor-health-os) in the [device health reports in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-health-reports).
 
 ## Preventing tampering on a single device
 
@@ -68,11 +68,11 @@ Microsoft provides several ways to keep devices well protected and up-to-date ag
 
 ### Broadest protection - Microsoft vulnerable driver blocklist
 
-The blocklist is updated with each new major release of Windows, typically 1-2 times per year. Microsoft will occasionally publish future updates through regular Windows servicing. With Windows 11 2022 update, the vulnerable driver blocklist is enabled by default for all devices, but requires either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode to be active. 
+The blocklist is updated with each new major release of Windows, typically 1-2 times per year. Microsoft will occasionally publish future updates through regular Windows servicing. With Windows 11 2022 update, the vulnerable driver blocklist is enabled by default for all devices, but requires either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode to be active.
 
 See [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).
 
-For devices that don't meet those requirements, this list of drivers can be blocked by using Windows Defender Application Control policy. 
+For devices that don't meet those requirements, this list of drivers can be blocked by using Windows Defender Application Control policy.
 
 See [Vulnerable Driver blocklist XML](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules#microsoft-vulnerable-driver-blocklist).
 
@@ -93,14 +93,14 @@ WDAC also provides an audit mode to help understand the impact of applying the p
 
 A common technique used by attackers is to make unauthorized changes to anti-virus exclusions. Tamper protection prevents such attacks from occurring when all of the following conditions are met:
 
-- The device is managed by Intune; and 
+- The device is managed by Intune; and
 - The device has [Disable Local Admin Merge enabled](/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus#use-microsoft-intune-to-disable-local-list-merging).
 
 For more information, see [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).
 
-## Detecting potential tampering activity in the Microsoft 365 Defender portal 
+## Detecting potential tampering activity in the Microsoft 365 Defender portal
 
 When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 
@@ -124,7 +124,7 @@ When tampering is detected, an alert is raised. Some of the alert titles for tam
 - Tamper protection bypass
 - Tampering activity typical to ransomware attacks
 - Tampering with Microsoft Defender for Endpoint sensor communication
-- Tampering with Microsoft Defender for Endpoint sensor settings 
+- Tampering with Microsoft Defender for Endpoint sensor settings
 - Tampering with the Microsoft Defender for Endpoint sensor
 
 
@@ -135,3 +135,4 @@ If [Windows Defender Application Control](/windows/security/threat-protection/wi
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

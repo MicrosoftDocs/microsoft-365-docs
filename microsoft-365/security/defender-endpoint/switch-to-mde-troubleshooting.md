@@ -99,3 +99,4 @@ If you are using a non-Microsoft antivirus/antimalware solution on Windows Serve
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 - [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
