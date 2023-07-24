@@ -25,7 +25,7 @@ Evaluate your app readiness for Windows 11 by testing via in-place upgrade to si
 
 Check below to learn how to set up your apps for the Windows 11 upgrade readiness test with a customizable flow for testing activities before and after the upgrade.
  > [!div class="mx-imgBorder"]
- > ![The inplace upgrade upgrade demo v2.](Media/inplace-upgrade-demo-v2.gif)
+ > ![Demo version two of the inplace upgrade.](Media/inplace-upgrade-demo-v2.gif)
 ### Onboard package for in-place upgrade
 You can now onboard a package with baseline OS and target OS defined via the new Flow Driven test type to validate if the application works before and after the upgrade on the same VM.
 
