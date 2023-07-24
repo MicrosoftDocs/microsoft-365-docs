@@ -29,6 +29,28 @@ This is Step 5 in a solution designed to complete a Cross-tenant OneDrive migrat
 - Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
+## Verify cross-tenant compatibility status
+
+Before starting any cross-tenant migrations, make sure that both SharePoint database schemas are up to date and compatible between source and target.
+
+To perform this check, run the below cmdlet on your Source tenant.
+
+```powershell
+Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL [Target tenant hostname]
+
+Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL https://m365x12395529-my.sharepoint.com
+```
+
+- If the tenant status shows as **Compatible** or **Warning**, you can then proceed with the next step of starting cross-tenant migrations.
+- If the tenant status shows as **Incompatible**, your tenants will need to be patched/updated to ensure compatibility.
+
+|Status|Can proceed with migration|
+|---|---|
+|Compatible|Yes|
+|Warning|Yes|
+|Incompatible|No|
+
+
 ## Create the identity mapping file
 
 In this step of the cross-tenant migration process, you're going to create a single CSV (comma separated values) file that contains the mapping of the users and groups on the source tenant to their corresponding users and groups on the target tenant.
