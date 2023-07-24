@@ -75,3 +75,4 @@ On at least two devices that are not reporting or showing up in Update Complianc
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

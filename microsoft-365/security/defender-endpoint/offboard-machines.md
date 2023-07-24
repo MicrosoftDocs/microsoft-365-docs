@@ -65,3 +65,4 @@ Follow the corresponding instructions depending on your preferred deployment met
 ## Offboard non-Windows devices
 
 - [Offboard non-Windows devices](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

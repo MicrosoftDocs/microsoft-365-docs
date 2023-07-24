@@ -137,3 +137,4 @@ Content-type: application/json
 ## Related articles
 
 - [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

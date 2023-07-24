@@ -87,3 +87,4 @@ Selecting a device or a user card in the affected assets sections will switch to
 - [View and organize the incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
