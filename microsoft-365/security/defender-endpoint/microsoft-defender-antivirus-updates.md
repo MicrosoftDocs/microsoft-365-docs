@@ -127,7 +127,7 @@ All our updates contain
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
-*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509--engine-11230601005) has been released.*
+*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509) has been released.*
 
 - Security intelligence update version: **1.391.860.0**
 - Released: **June 12, 2023**
