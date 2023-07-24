@@ -46,7 +46,7 @@ Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD)
 
 Inviting guests from organizations in other Microsoft 365 cloud environments requires that guest access be configured for your organization. If you haven't previously configured guest access, see one of the following depending on your scenario:
 
-- [Collaborate with guests on a document](collaborate-on-documents)
+- [Collaborate with guests on a document](collaborate-on-documents.md)
 - [Collaborate with guests in a site](collaborate-in-site.md)
 - [Collaborate with guests in a team](collaborate-as-team.md)
 
