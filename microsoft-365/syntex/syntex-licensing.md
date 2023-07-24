@@ -91,8 +91,10 @@ The features available for each license type are described below. <!-- You can u
 Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. You can use Syntex without any license commitment or upfront purchasing. Pay-as-you-go allows any user in your organization to use Syntex services and then only pay if and when they're used. Pay-as-you-go supports the following Syntex services:
 
 - Prebuilt document processing
-- Unstructured document processing (formerly document understanding)
+- Unstructured document processing
 - Optical character recognition
+- Content assembly
+- Image tagging
 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library.
 
