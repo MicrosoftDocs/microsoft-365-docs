@@ -52,7 +52,8 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 > [!NOTE]
 > [Azure Event Hubs](/azure/event-hubs/event-hubs-about) requires an Azure subscription. Before you begin, make sure to create an [event hub](/azure/event-hubs/) in your tenant. Then, sign in to the [Azure portal](https://ms.portal.azure.com/), go to **Subscriptions** > **Your subscription** > **Resource Providers** > **Register to Microsoft.insights**.
 > 
-1. Go to [Microsoft 365 Defender](https://security.microsoft.com) and sign in as a ***Global Administrator*** or ***Security Administrator***.
+
+1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Data export settings page](https://security.microsoft.com/interoperability/dataexport).
 
@@ -101,25 +102,19 @@ Azure Storage requires an Azure subscription. Before you begin, make sure to cre
 
 2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft 365 Defender.
 
-3. Click on **Add data export settings**.
+3. Select **Add data export settings**.
 
 4. Choose a name for your new settings.
 
 5. Choose **Forward events to Azure Storage**.
 
-6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
+6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page in the [Azure portal](https://ms.portal.azure.com/). Then, on the **Properties** tab, copy the text under **Storage account resource ID**.
 
-   :::image type="content" source="images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="images/storage-account-resource-id.png":::
-
-7. Choose the events you want to stream and click **Save**.
+7. Choose the events you want to stream and then select **Save**.
 
 ### The schema of events in the Storage account
 
-- A blob container will be created for each event type:
-
-  :::image type="content" source="images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="images/storage-account-event-schema.png":::
-
-- The schema of each row in a blob is the following JSON:
+- A blob container is created for each event type. The schema of each row in a blob is the following JSON file:
 
   ```json
   {
@@ -130,7 +125,7 @@ Azure Storage requires an Azure subscription. Before you begin, make sure to cre
   }
   ```
 
-Each blob contains multiple rows. Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties". For more information about the schema of Microsoft Defender for Endpoint events, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
+Each blob contains multiple rows. Each row contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format properties. For more information about the schema of Microsoft Defender for Endpoint events, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
 
 ## See also
 
