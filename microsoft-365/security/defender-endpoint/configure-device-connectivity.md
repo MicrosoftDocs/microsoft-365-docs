@@ -4,7 +4,7 @@ description: Learn how to use a simplified domain or static IP ranges during onb
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
-ms.date: 7/7/2023
+ms.date: 08/01/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -18,8 +18,6 @@ audience: ITPro
 ---
 
 # Onboarding devices using streamlined device connectivity for Microsoft Defender for Endpoint 
-
-
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,28 +33,28 @@ audience: ITPro
 The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. 
 
 
-In this article, you'll be guided on onboarding new devices and migrating previously onboarded Defender for Endpoint devices  using the simplified method of device connectivity. so you can leverage the straightforward deployment and management of Defender for Endpoint cloud connectivity services.  
+In this article, you will learn about the streamlined device connectivity method and how to onboard new devices so that you can  leverage the straightforward deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
 
-To simplify the configuration of network requirements and ease management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set. The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
+To simplify the configuration of network requirements and ease management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
 
-Alternatively, you can now configure connectivity using dedicated static IP ranges for Microsoft Defender for Endpoint. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
+The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
+
+Alternatively, to support network devices without hostname resolution or wildcard support, you can configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
 >[!NOTE] 
 >The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
-Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
-
-
-
-
-This solution also provides support for network devices without hostname resolution or wildcard support through provision of dedicated Defender for Endpoint static IP range. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
+Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. Defender for Endpoint static IP ranges were not supported. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
 
 ## Consolidated services 
 
-You may have been using endpoints listed in the table under Consolidated services. 
 
-The table lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
+As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain. Previously, you may have been using these endpoints. 
+
+The table below lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
+
+For the full list of required URLs, see [LINK TO UPDATED URL LIST]().
 
 >[!NOTE] 
 >You will need to onboard devices using the modified onboarding script to leverage this reduced URL set. 
@@ -64,11 +62,6 @@ The table lists the Defender for Endpoint service URLs that are consolidated und
 
 
 JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
-
-### Consolidated endpoints
-
-The following table lists the consolidated endpoints. 
-
 
 >[!IMPORTANT]
 >The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the updated onboarding script. <br>
@@ -80,66 +73,62 @@ The following table lists the consolidated endpoints.
 
 #### Consolidated endpoints (Windows, macOS, and Linux)
 
+
+>[!NOTE]
+>This list may evolve and new URLs may be added as more services get consolidated under the new domain.
+
 | Category                                       | Service URLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MAPS: cloud-delivered protection                       | \*.wdcp.microsoft.com <br>*.wd.microsoft.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Cloud protection &  <br>security intelligence updates for macOS and Linux  |unitedstates.x.cp.wd.microsoft.com <br>europe.x.cp.wd.microsoft.com <br>unitedkingdom.x.cp.wd.microsoft.com<br> x.cp.wd.microsoft.com  <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Cloud protection &  <br>security intelligence updates for macOS and Linux  |unitedstates.x.cp.wd.microsoft.com <br>europe.x.cp.wd.microsoft.com <br>unitedkingdom.x.cp.wd.microsoft.com<br> x.cp.wd.microsoft.com  <br>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx `                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Malware Sample Submission Storage                      |ussus1eastprod.blob.core.windows.net <br>ussus2eastprod.blob.core.windows.net <br>ussus3eastprod.blob.core.windows.net <br>ussus4eastprod.blob.core.windows.net <br>wsus1eastprod.blob.core.windows.net <br>wsus2eastprod.blob.core.windows.net <br>ussus1westprod.blob.core.windows.net <br>ussus2westprod.blob.core.windows.net <br>ussus3westprod.blob.core.windows.net <br>ussus4westprod.blob.core.windows.net <br>wsus1westprod.blob.core.windows.net <br>wsus2westprod.blob.core.windows.net <br>usseu1northprod.blob.core.windows.net <br>wseu1northprod.blob.core.windows.net <br>usseu1westprod.blob.core.windows.net <br>wseu1westprod.blob.core.windows.net <br>ussuk1southprod.blob.core.windows.net <br>wsuk1southprod.blob.core.windows.net <br>ussuk1westprod.blob.core.windows.net <br>wsuk1westprod.blob.core.windows.net  |
 | Defender for Endpoint AutoIR Sample Storage                              | automatedirstrprdcus.blob.core.windows.net <br>automatedirstrprdeus.blob.core.windows.net <br>automatedirstrprdcus3.blob.core.windows.net <br>automatedirstrprdeus3.blob.core.windows.net <br>automatedirstrprdneu.blob.core.windows.net <br>automatedirstrprdweu.blob.core.windows.net <br>automatedirstrprdneu3.blob.core.windows.net <br>automatedirstrprdweu3.blob.core.windows.net <br>automatedirstrprduks.blob.core.windows.net <br>automatedirstrprdukw.blob.core.windows.net                                                                                                                                                                                                                                                                                                                                                        |
 | Defender for Endpoint Command and Control                                |winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-cus3.microsoft.com <br>winatp-gw-eus3.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-neu3.microsoft.com <br>winatp-gw-weu3.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com |
 |EDR Cyberdata | events.data.microsoft.com  <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com  <br>uk-v20.events.data.microsoft.com  <br>
 
 
-## Services not included in the consolidated domain
-
-You'll need to maintain connectivity with the required Defender for Endpoint services that are not included in the consolidation. For a complete list of the consolidated URLs, [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET].
-
-The following table lists the services that are **not** included in consolidation effort. You must ensure that you maintain connectivity with the following required endpoints: 
-
-
-|     Category                             |     Endpoint/URL   (not included)                                                                                                               |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     CRL <sup>1</sup>                                |  <br><br>crl.microsoft.com <br>ctldl.windowsupdate.com <br>www.microsoft.com/pkiops/* <br>www.microsoft.com/pki/* <br>                                                    |
-|     EDR Cyberdata <sup>2</sup>                    |    <br><br>events.data.microsoft.com <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com <br>uk-v20.events.data.microsoft.com     |
-|     MU / WU                              |     <br><br>go.microsoft.com <br>definitionupdates.microsoft.com <br>https://www.microsoft.com/security/encyclopedia/adlpackages.aspx                   |
-|     SmartScreen/ Network   Protection    |     <br><br>*.smartscreen-prod.microsoft.com <br>*.smartscreen.microsoft.com                                                                            |
-|     Windows Notification   Service <sup>3</sup>    |    <br><br>*.wns.windows.com  <br>login.microsoftonline.com  <br>login.live.com <br>                                                            |
-
-**Footnotes**
-
- <sup>1</sup> In fully disconnected environments with no access to CRL, PreferStaticProxyForHttpRequest is a workaround for use in tandem with TelemetryProxyServer,  although should have common practice to update CTL. Clients should always have access to CRL (web browsing). 
-
-<sup>2</sup> EDR Cyberdata is in scope for future consolidation work. This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information,  see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.  
-
-<sup>3</sup> WNS is an optional service used for decreasing initial connection time of Live Response. Still get full functionality of Live Response without this URL. * 
-
-For more information on the full list, see [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
-
-
-
-
 ## Before you begin 
 
-Use the streamlined device connectivity solution on devices that have previously been onboarded to Defender for Endpoint. 
+Verify that you meet the prerequisites to use the streamlined device connectivity solution for Defender for Endpoint. 
  
-### Operating systems prerequisites
+### Prerequisites
 
-The following Operating Systems are supported: 
+**Operating Systems**
 
--   Windows 10, with at least KB5011487 (March 8, 2022) - excluding versions 1607 and 1703
+-   Windows 10 version 1809 or later, with at least KB5011487 (March 8, 2022) - excluding versions 1607 and 1703
 -   Windows 11, with at least KB5011493 (March 8, 2022) 
 -   Windows Server 2019, with at least KB5011503 (March 8, 2022) 
 -   Windows Server 2022, with at least KB5011497 (March 8, 2022) 
--   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).
+-   Fully updated versions of Windows Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).
 - macOS and Linux with Defender for Endpoint product version 101.23052.0003 or later. 
  
 
--   Minimum Defender Antivirus component versions: 
+**Defender Antivirus component versions**
+
+-   Minimum versions: 
     - **Antimalware Client:** 4.18.2211.5 
     - **Engine:** 1.1.19900.2 
     - **Antivirus (Security Intelligence):** 1.381.1853.0 
 
- 
+>[!NOTE]
+>Devices running on MMA agent are not supported on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br>
+>Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will need to use a longer list. For more information, see [ADD LINK TO SHEET]().
+
+Compatibility matrix:
+
+
+| Operating System:                                      | Streamlined onboarding support                                          | Comments                                                                           |
+|--------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Windows 10 version 1809 or later                               | Supported                                                               |                                                                                    |
+| Windows 10 RS1, RS2, RS3, RS4 (1607, 1703, 1709, 1803) | Streamlined onboarded package supported; must configure longer URL list | Can use new onboarding package but it will require longer URL list (see excel doc) |
+| Windows 11                                             | Supported                                                               |                                                                                    |
+| Windows Server 2019                                    | Supported                                                               |                                                                                    |
+| Windows Server 2022                                    | Supported                                                               |                                                                                    |
+| Windows Server 2016 R2                                 | Supported with unified agent                                            | Must upgrade to unified agent                                                      |
+| Windows Server 2012 R2                                 | Supported with unified agent                                            | Must upgrade to unified agent                                                      |
+| Windows Server 2008 R2                                 | Not supported                                                           |                                                                                    |
+| Windows 8.1                                            | Not supported                                                           |                                                                                    |
+| Windows 7                                              | Not supported                                                           |                                                                                    |
 
 ## Stage 1. Configure your environment for cloud connectivity 
 
@@ -183,7 +172,7 @@ Alternatively, if you're using the IP range method, allow firewall or proxy conn
 >**The Defender for Endpoint static IP ranges do not include EDR Cyberdata.** This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information, see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.
 
 
-As with URL method, please ensure you maintain connectivity with other required [services not consolidated](#services-not-included-in-the-consolidated-domain).  The following static IPs only cover the following services: MAPS, Malware Sample Submission Storage, AutoIR Sample Storage, Defender for Endpoint Command and Control.
+As with the URL method, ensure you maintain connectivity with other required [services not consolidated](#services-not-included-in-the-consolidated-domain).  The following static IPs only cover the following services: MAPS, Malware Sample Submission Storage, AutoIR Sample Storage, Defender for Endpoint Command and Control.
 
 
 >[!IMPORTANT]

@@ -116,7 +116,7 @@
         - name: Streamlined device connectivity
           href: configure-device-connectivity.md
         - name: Migrating devices to streamlined method
-          href: 
+          href: migrate-devices-streamlined.md
  
     - name: Onboarding Windows Client
       items:
