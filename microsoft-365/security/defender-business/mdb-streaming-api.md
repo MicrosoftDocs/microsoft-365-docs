@@ -21,7 +21,7 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-## Use the streaming API (preview) with Microsoft Defender for Business
+# Use the streaming API (preview) with Microsoft Defender for Business
 
 If your organization has a Security Operations Center (SOC), the ability to use the [Microsoft Defender for Endpoint streaming API](../defender-endpoint/raw-data-export.md) is now in [preview](mdb-preview.md) for [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](../../business-premium/index.md). The API enables you to stream data, such as device file, registry, network, sign-in events, and more to one of the following services:
 
