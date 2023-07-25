@@ -24,7 +24,7 @@ When each external tenant accepts the invitation to join the multi-tenant organi
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
 - An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration. (If an organizational relationship already exists, the existing one is used.)
 - The cross-tenant inbound settings are set to allow users to sync into this tenant.
-- The cross-tenant outbound settings are set to automatically redeem invitations with the external tenant.
+- The cross-tenant inbound and outbound settings are set to automatically redeem user invitations with the external tenant.
 
 ## Set up a new multi-tenant organization
 

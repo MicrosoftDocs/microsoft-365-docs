@@ -17,7 +17,7 @@ description: Learn how to plan for multi-tenant organizations in Microsoft 365.
 
 # Plan for multi-tenant organizations in Microsoft 365 (Preview)
 
-If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multi-tenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when using Teams, meetings, and collaborating on files.
+If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multi-tenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Teams and meetings, and collaborating on files.
 
 The tenant that creates the multi-tenant organization is known as the *owner* while other tenants that join the multi-tenant organization are known as *members*. Once the global administrator in the owner tenant creates the multi-tenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multi-tenant organization.
 
@@ -31,7 +31,7 @@ We recommend synchronizing all users across all tenants in your multi-tenant org
 
 When you configure user synchronization in the Microsoft 365 admin center, the same users and groups are synchronized to all tenants in the multi-tenant organization. Synchronizing different users to different tenants must be configured in Azure AD.
 
-Once user synchronization has been configured, you can adjust the synchronization settings, including user scope and attribute mapping, in Azure AD. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
+Once user synchronization has been configured, you can adjust the synchronization settings, including user scope and attribute mapping, in Azure AD. (While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.) For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
 
 #### Existing cross-tenant synchronization configurations
 
@@ -59,7 +59,6 @@ For the best experience in multi-tenant organizations, users need [the new Micro
 - Receive real-time notifications from all the tenants in your multi-tenant organization
 - Participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants.
 - Set their status for each account and organization individually.
-- People search returns single result with a user’s home tenant identity
 - User profile card shows organization name and email address
 
 To control which users can use the new Teams desktop client, use the Teams update policies. For more information, see [Deploy the new Teams using policies](/microsoftteams/new-teams-deploy-using.-policies)
