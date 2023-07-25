@@ -98,6 +98,15 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
+
+## UI Lockdown
+
+Indicates whether to disable UI lockdown mode. If you specify a value of $True, Windows Defender disables UI lockdown mode. If you specify $False or do not specify a value, UI lockdown mode is enabled.
+
+```
+PS C:\>Set-MpPreference -UILockdown $true
+```
+
 ## Related articles
 
 - [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
