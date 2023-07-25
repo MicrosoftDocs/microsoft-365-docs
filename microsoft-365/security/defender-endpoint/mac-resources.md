@@ -139,7 +139,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Quarantine management|Restore a file from the quarantine|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |Network Protection Configuration|Configure the Network Protection enforcement level|`mdatp config network-protection enforcement-level --value [Block/Audit/Disabled]`|
 |Network Protection management|Check Network protection has been started successfully|`mdatp health --field network_protection_status`|
-|Device Control magement|Is Device Control enabled, and what is the Default Enforcement?|`mdatp device-control policy preferences list`|
+|Device Control management|Is Device Control enabled, and what is the Default Enforcement?|`mdatp device-control policy preferences list`|
 |Device Control magement|What Device Control policy is enabled?|`mdatp device-control policy rules list`|
 |Device Control magement|What Device Control policy groups are enabled?|`mdatp device-control policy groups list`|
 |Configuration|Turn on/off data loss prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
