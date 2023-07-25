@@ -141,7 +141,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Network Protection management|Check Network protection has been started successfully|`mdatp health --field network_protection_status`|
 |Device Control management|Is Device Control enabled, and what is the Default Enforcement?|`mdatp device-control policy preferences list`|
 |Device Control magement|What Device Control policy is enabled?|`mdatp device-control policy rules list`|
-|Device Control magement|What Device Control policy groups are enabled?|`mdatp device-control policy groups list`|
+|Device Control management|What Device Control policy groups are enabled?|`mdatp device-control policy groups list`|
 |Configuration|Turn on/off data loss prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
