@@ -42,22 +42,22 @@
         },
         {
             "source_path": "enterprise/routing-with-expressroute.md",
-            "redirect_url": "enterprise/azure-expressroute.md",
+            "redirect_url": "enterprise/azure-expressroute",
             "redirect_document_id": false
         },
         {
             "source_path": "enterprise/managing-expressroute-for-connectivity.md",
-            "redirect_url": "enterprise/azure-expressroute.md",
+            "redirect_url": "enterprise/azure-expressroute",
             "redirect_document_id": false
         },
         {
             "source_path": "enterprise/bgp-communities-in-expressroute.md",
-            "redirect_url": "enterprise/azure-expressroute.md",
+            "redirect_url": "enterprise/azure-expressroute",
             "redirect_document_id": false
         },
         {
             "source_path": "enterprise/network-planning-with-expressroute.md",
-            "redirect_url": "enterprise/azure-expressroute.md",
+            "redirect_url": "enterprise/azure-expressroute",
             "redirect_document_id": false
         },
         {
