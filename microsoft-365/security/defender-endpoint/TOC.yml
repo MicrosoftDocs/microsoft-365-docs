@@ -111,6 +111,8 @@
           href: configure-environment.md
         - name: Step 2 - Configure device proxy and Internet settings
           href: configure-proxy-internet.md
+        - name: Step 3 - Verify client connectivity
+          href: verify-connectivity.md
         - name: Streamlined device connectivity
           href: configure-device-connectivity.md
         - name: Migrating devices to streamlined method

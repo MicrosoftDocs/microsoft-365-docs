@@ -40,31 +40,32 @@ ms.date: 06/19/2023
 Take the following steps to configure your environment to connect devices to the Defender for Endpoint service.
 
 ## Enable access to Microsoft Defender for Endpoint service URLs in the proxy server
-By default, if a proxy or firewall is blocking all traffic by default and allowing only specific domains, then add the domains listed in the downloadable sheet to the allowed domains list.
+By default, if a proxy or firewall is blocking all traffic and allowing only specific domains, then add the domains listed in the downloadable sheet to the allowed domains list.
 
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optionally, you may need to create an *allow* rule specifically for them.
 
 
 >[!NOTE]
->APPLIES TO PUBLIC PREVIEW:<br>
->- Starting *INSERT DATE HERE*, you'll be provided the default option in Microsoft 365 Defender to use the consolidated Defender for Endpoint URL. The use of the new consolidated URL will require you to use a new onboarding script. You must verify that your devices meet the prerequisites before using the new solution. <br>
->- As part of this preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
+>- As part of the preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. You will be provided the option in Microsoft 365 Defender to use the [consolidated Defender for Endpoint URL](). For more information, see the updated list in the preceding table. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges.<br> 
+>- The use of the new consolidated URL or static IPs will require you to use a new onboarding package. You must verify that your devices meet the [prerequisites]() before using the new solution. <br>
+>For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
 >- Some services were not included in this consolidation effort. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see [Services not under the consolidated domain]().
+>- Devices running MMA agent are not supported under streamlined solution and will need to use the standard URL list. Devices running Windows version 1607, 1703, 1709, 1803 can onboard using the new onboarding package but will require a longer list of URLs. For more information, see the preceeding table.
 
 <br>
 
 |Spreadsheet of domains list| Description|
 |---|---|
-| Microsoft Defender for Endpoint consolidated URL list  (NEW) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET -  WILL ADD URL OF SPREADSHEET ONCE IT'S AVAILABLE] <br><br> **Prerequisites:** <br> -   Windows 10, with at least KB5011487 (March 8, 2022) excluding version 1607 & 1703  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   macOS and Linux with Defender for Endpoint product version 101.23052.0003 or later.<br><br>- Minimum Microsoft Defender Antivirus component versions: <br> - **Antimalware client**: 4.18.2211.5 <br> - **Engine**: 1.1.19900.2 <br> - **Antivirus (Security Intelligence)**: 1.381.1853.0 <br><br> If you are moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
-|Microsoft Defender for Endpoint URL list for commercial customers (legacy)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> <br> NOTE: If you have devices running on Windows 10 (excluding version 1607 & 1703), Windows 7, Windows 8.1, Windows Server 2009 R2 MMA, and Servers not upgraded to Unified Agent (MMA) you will need to use the legacy list of URLs . <br><br> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
+| Microsoft Defender for Endpoint consolidated URL list  (NEW - Streamlined connectivity) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET -  WILL ADD URL OF SPREADSHEET ONCE IT'S AVAILABLE] <br><br> **Prerequisites:** <br> -   Windows 10, version 1809 and above with at least KB5011487 (March 8, 2022) excluding version 1607, 1703, 1709, 1803<br><br> NOTE: Devices running on Windows 10 version 1607, 1703, 1709, and 1803 can leverage the new onboarding package but will need to use a longer URL list.  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   macOS and Linux with Defender for Endpoint product version 101.23052.0003 or later.<br><br>NOTE:  Devices running on Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA) will not be able to leverage the streamlined connectivity method and will need to use the standard list of URLs below.<br><br>- Minimum Microsoft Defender Antivirus component versions: <br> - **Antimalware client**: 4.18.2211.5 <br> - **Engine**: 1.1.19900.2 <br> - **Antivirus (Security Intelligence)**: 1.381.1853.0 <br><br> If you are moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
+|Microsoft Defender for Endpoint URL list for commercial customers (regular)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p>  Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
 
 > [!NOTE]
-> Applies to legacy URLS: <br>
+> Applies to regular URLS: <br>
 > Windows devices running with version 1803 or earlier needs `settings-win.data.microsoft.com`.  <br>
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
@@ -81,6 +82,11 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
 
 ## Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
+
+>[!NOTE]
+>(Applies to public preview)<br>
+> Services using MMA-based solutions are not able to leverage the new streamlined connectivity solution (consolidated URL and option to use static IPs). For Windows Server 2016 and Windows Server 2012 R2, you will need to update to the new unified solution.
+
 
 The information in the list of proxy and firewall configuration information is required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for previous versions of Windows, such as Windows 7 SP1, Windows 8.1, and Windows Server 2008 R2*.
 
@@ -103,7 +109,16 @@ The information in the list of proxy and firewall configuration information is r
 
 ## Onboard devices without Internet access
 
-For devices with no direct internet connection, the use of a proxy solution is the recommended approach. For older Windows devices onboarded using the previous, MMA-based solution the use of the OMS gateway solution provides an alternative approach. For more information about onboarding methods, see the following articles:
+For devices with no direct internet connection, the use of a proxy solution is the recommended approach. For older Windows devices onboarded using the previous, MMA-based solution the use of the OMS gateway solution provides an alternative approach. 
+
+>[!NOTE]
+>(Applies to public preview)<br>
+>With this preview, you can also leverage firewall devices with static IP ranges. For more information see: [Simplified device connectivity](configure-device-connectivity.md) and [URL spreadsheet - ADD URL OF SPREADSHEE WHEN READY]().
+
+
+
+
+For more information about onboarding methods, see the following articles:
 - [Onboard previous versions of Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 
@@ -132,24 +147,10 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 [Onboard previous versions of Windows](onboard-downlevel.md)
 
-#### Azure virtual machines
-
-- For devices running the previous, MMA-based solution, set up Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
-    - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
-- Offline Azure VMs in the same network of OMS Gateway
-    - Configure Azure Log Analytics IP as a proxy
-    - Azure Log Analytics Workspace Key & ID
-- Microsoft Defender for Cloud
-    - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-    - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-
-    For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
 
 > [!NOTE]
-> Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.
-
-
+> Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy or firewall.<br>
+>As part of the preview, you can now leverage IP addresses as alternatives to certain Defender for Endpoint service URLs.
 
 
 
@@ -174,50 +175,3 @@ The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in
 > [!NOTE]
 > In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces can be used. You will need to perform the TestCloudConnection.exe procedure on the onboarded machine from each workspace (to determine, if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
-## Verify client connectivity to Microsoft Defender for Endpoint service URLs
-
-Verify, the proxy configuration is completed successfully. The WinHTTP can then discover and communicate through the proxy server in your environment, and then the proxy server will allow  traffic to the Defender for Endpoint service URLs.
-
-1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC, where Defender for Endpoint sensor is running on. For downlevel servers, use the latest preview edition is available for download [Microsoft Defender for Endpoint Client Analyzer tool Beta](https://aka.ms/BetaMDEAnalyzer).
-
-2. Extract the contents of MDEClientAnalyzer.zip on the device.
-
-3. Open an elevated command line:
-   1. Go to **Start** and type **cmd**.
-   1. Right-click **Command prompt** and select **Run as administrator**.
-
-4. Enter the following command and press **Enter**:
-
-    ```command prompt
-    HardDrivePath\MDEClientAnalyzer.cmd
-    ```
-
-    Replace *HardDrivePath* with the path, where the MDEClientAnalyzer tool was downloaded. For example:
-
-    ```command prompt
-    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
-    ```
-
-5. The tool creates and extracts the *MDEClientAnalyzerResult.zip* file in the folder to use in the *HardDrivePath*.
-
-6. Open *MDEClientAnalyzerResult.txt* and verify that you've performed the proxy configuration steps to enable server discovery and access to the service URLs.
-
-   The tool checks the connectivity of Defender for Endpoint service URLs. Ensure the Defender for Endpoint client is configured to interact. The tool will print the results in the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
-
-   ```text
-   Testing URL : https://xxx.microsoft.com/xxx
-   1 - Default proxy: Succeeded (200)
-   2 - Proxy auto discovery (WPAD): Succeeded (200)
-   3 - Proxy disabled: Succeeded (200)
-   4 - Named proxy: Doesn't exist
-   5 - Command line proxy: Doesn't exist
-   ```
-
-If any one of the connectivity options returns a (200) status, then the Defender for Endpoint client can communicate with the tested URL properly using this connectivity method.
-
-However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs available for use will depend on the region selected during the onboarding procedure.
-
-> [!NOTE]
-> The Connectivity Analyzer tool's cloud connectivity checks are not compatible with Attack Surface Reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule, to run the connectivity tool. Alternatively, you can temporarily add [ASR exclusions](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) when running the analyzer.
->
-> When the TelemetryProxyServer is set in Registry or via Group Policy, Defender for Endpoint will fall back, it fails to access the defined proxy.
