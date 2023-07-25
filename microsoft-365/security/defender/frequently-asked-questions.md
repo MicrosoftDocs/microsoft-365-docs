@@ -43,3 +43,4 @@ ms.date: 05/29/2023
 ### See also
 
 [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -51,3 +51,4 @@ For example, for the data on the CSV file, you can apply filters to view the fol
 > The maximum number of records you can export to a CSV file is 10,000. 
 
 If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
