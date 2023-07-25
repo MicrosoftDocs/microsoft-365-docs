@@ -112,9 +112,9 @@ Azure Storage requires an Azure subscription. Before you begin, make sure to cre
 
 7. Choose the events you want to stream and then select **Save**.
 
-### The schema of events in the Storage account
+### The schema of events in Azure Storage account
 
-- A blob container is created for each event type. The schema of each row in a blob is the following JSON file:
+A blob container is created for each event type. The schema of each row in a blob is the following JSON file:
 
   ```json
   {
