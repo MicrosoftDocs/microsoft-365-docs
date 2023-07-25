@@ -34,7 +34,7 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 ## Use the streaming API with Microsoft Sentinel (preview)
 
 > [!NOTE]
-> [Microsoft Sentinel](/azure/sentinel/overview) is a paid service. Several plans and pricing options are available. See [Microsoft Sentinel pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-sentinel/).
+> [Microsoft Sentinel](/azure/sentinel/overview) is a paid service. Several plans and pricing options are available. See [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/).
 
 1. Make sure that Defender for Business is set up and configured, and that devices are already onboarded. See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
 
