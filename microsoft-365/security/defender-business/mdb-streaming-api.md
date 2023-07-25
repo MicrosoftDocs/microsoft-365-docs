@@ -4,7 +4,7 @@ description:  The Defender for Endpoint streaming API is now in preview for Defe
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 07/19/2023
+ms.date: 07/25/2023
 ms.topic: how-to
 ms.service:  microsoft-365-security
 ms.subservice: mdb
@@ -23,13 +23,13 @@ audience: ITPro
 
 ## Use the streaming API (preview) with Microsoft Defender for Business
 
-If your organization has a Security Operations Center (SOC), the ability to use the Microsoft Defender for Endpoint streaming API is now in [preview](mdb-preview.md) for [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](../../business-premium/index.md). The API enables you to stream data, such as device file, registry, network, sign-in events, and more to one of the following services:
+If your organization has a Security Operations Center (SOC), the ability to use the [Microsoft Defender for Endpoint streaming API](../defender-endpoint/raw-data-export.md) is now in [preview](mdb-preview.md) for [Defender for Business](mdb-overview.md) and [Microsoft 365 Business Premium](../../business-premium/index.md). The API enables you to stream data, such as device file, registry, network, sign-in events, and more to one of the following services:
 
 - [Microsoft Sentinel](#use-the-streaming-api-with-microsoft-sentinel-preview), a scalable, cloud-native solution that provides security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities. 
 - [Azure Event Hubs](#use-the-streaming-api-with-event-hubs-preview), a modern big data streaming platform and event ingestion service that can seamlessly integrate with other Azure and Microsoft services, such as Stream Analytics, Power BI, and Event Grid, along with outside services like Apache Spark.
 - [Azure Storage](/azure/storage/common/storage-introduction), Microsoft's cloud storage solution for modern data storage scenarios, with highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud. 
 
-With the streaming API, you can now use [advanced hunting](../defender/advanced-hunting-overview.md) and [attack detection](../defender-endpoint/overview-endpoint-detection-response.md) with Defender for Business and Microsoft 365 Business Premium. The streaming API enables SOCs to view more data about devices, understand better how an attack occurred, and take steps to improve device security. 
+With the streaming API, you can now use [advanced hunting](../defender/advanced-hunting-overview.md) and [attack detection](../defender-endpoint/overview-endpoint-detection-response.md) with Defender for Business and Microsoft 365 Business Premium. The streaming API enables SOCs to view more data about devices, understand better how an attack occurred, and take steps to improve device security.
 
 ## Use the streaming API with Microsoft Sentinel (preview)
 
@@ -45,6 +45,7 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 4. Onboard to Microsoft Sentinel. See [Quickstart: Onboard Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
 5. Enable the Microsoft 365 Defender connector. See [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
+
 
 ## Use the streaming API with Event Hubs (preview)
 
@@ -70,7 +71,9 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 
 7. Choose the events you want to stream and then select **Save**.
 
-## The schema of the events in Azure Event Hubs
+### The schema of events in Azure Event Hubs
+
+Here's what the schema of events in Azure Event Hubs looks like:
 
 ```json
 {
@@ -86,33 +89,49 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 }
 ```
 
-- Each event hub message in Azure Event Hubs contains list of records.
-
-- Each record contains the event name, the time Microsoft Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
-
-- For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
-
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
-    > [!NOTE]
-    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
-
-## Data types mapping
-
-To get the data types for event properties do the following:
-
-1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
-
-2. Run the following query to get the data types mapping for each event:
-
-   ```kusto
-   {EventType}
-   | getschema
-   | project ColumnName, ColumnType 
-   ```
-
-- Here is an example for Device Info event:
-
-  :::image type="content" source="images/machine-info-datatype-example.png" alt-text="The Event Hubs resource Id-2" lightbox="images/machine-info-datatype-example.png":::
+Each event hub message in Azure Event Hubs contains a list of records. Each record contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format in a property called "**properties**". For more information about the schema, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
 
 ## Use the streaming API with Azure Storage (preview)
 
+Azure Storage requires an Azure subscription. Before you begin, make sure to create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant. Then, sign in to your [Azure tenant](https://ms.portal.azure.com/), and go to **Subscriptions** > **Your subscription** > **Resource Providers** > **Register to Microsoft.insights**.
+
+### Enable raw data streaming
+
+1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in as a ***Global Administrator*** or ***Security Administrator***.
+
+2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft 365 Defender.
+
+3. Click on **Add data export settings**.
+
+4. Choose a name for your new settings.
+
+5. Choose **Forward events to Azure Storage**.
+
+6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
+
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="images/storage-account-resource-id.png":::
+
+7. Choose the events you want to stream and click **Save**.
+
+### The schema of events in the Storage account
+
+- A blob container will be created for each event type:
+
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="images/storage-account-event-schema.png":::
+
+- The schema of each row in a blob is the following JSON:
+
+  ```json
+  {
+    "time": "<The time WDATP received the event>"
+    "tenantId": "<Your tenant ID>"
+    "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+    "properties": { <WDATP Advanced Hunting event as Json> }
+  }
+  ```
+
+Each blob contains multiple rows. Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties". For more information about the schema of Microsoft Defender for Endpoint events, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
+
+## See also
+
+- [Raw Data Streaming API](../defender-endpoint/raw-data-export.md) in Defender for Endpoint
