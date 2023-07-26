@@ -1,5 +1,5 @@
 ---
-title: "A collaboration governance framework for Microsoft 365"
+title: A collaboration governance framework for Microsoft 365
 ms.reviewer: mmclean
 ms.date: 08/12/2020
 ms.author: mikeplum
@@ -18,18 +18,18 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "Learn governance best practices for Microsoft 365 collaboration tools, including Microsoft 365 Groups, Teams, SharePoint, and Viva Engage."
+description: Learn governance best practices for Microsoft 365 collaboration tools, including Microsoft 365 Groups, Teams, SharePoint, and Viva Engage.
 ---
 
 # What is collaboration governance?
 
 Collaboration governance is how you manage users' access to resources, compliance with your business standards, and ensure the security of your data.
 
-Organizations today are using a diverse tool set. There's the team of developers using team chat, the executives sending email, and the entire organization connecting over enterprise social. Multiple collaboration tools are in use because every group is unique and has their own functional needs and work style. Some will use only email while others will live primarily in chat. 
+Organizations today are using a diverse tool set. There's the team of developers using team chat, the executives sending email, and the entire organization connecting over enterprise social. Multiple collaboration tools are in use because every group is unique and has their own functional needs and work style. Some will use only email while others will live primarily in chat.
 
-If users feel the IT-provided tools do not fit their needs, they will likely download their favorite consumer app which supports their scenarios. Although this process allows users to get started quickly, it leads to a frustrating user experience across the organization with multiple logins, difficulty sharing, and no single place to view content. This concept is referred to as “Shadow IT” and poses a significant risk to organizations. It reduces the ability to uniformly manage user access, ensure security, and service compliance needs.
+If users feel the IT-provided tools do not fit their needs, they will likely download their favorite consumer app which supports their scenarios. Although this process allows users to get started quickly, it leads to a frustrating user experience across the organization with multiple logins, difficulty sharing, and no single place to view content. This concept is referred to as "Shadow IT" and poses a significant risk to organizations. It reduces the ability to uniformly manage user access, ensure security, and service compliance needs.
 
-Services such as Microsoft 365 groups, Teams, and Viva Engage empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require. 
+Services such as Microsoft 365 groups, Teams, and Viva Engage empower users and reduces the risk of shadow IT by providing the tools needed to collaborate. Microsoft 365 has a rich set of tools to implement any governance capabilities your organization might require.
 
 ![Chart showing collaboration governance options in Microsoft 365.](../media/collaboration-governance-overview.png)
 
@@ -45,24 +45,22 @@ If your organization is multi-national and you have data residency requirements 
 
 ## Why Microsoft 365 groups are important in collaboration governance
 
-Microsoft 365 groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Viva Engage use Microsoft 365 groups to manage their membership.
+Microsoft 365 groups let you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Adding members to the group automatically grants the needed permissions to all assets provided by the group. Both Teams and Viva Engage use Microsoft 365 groups to manage their membership.
 
-Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, a Power BI workspace, a mailbox and calendar, and Stream. Depending on how you create the group, you can optionally add other services such as Teams, Viva Engage, and Project.
+Microsoft 365 groups include a suite of linked resources that users can use for communication and collaboration. Groups always include a SharePoint site, Planner, and a mailbox and calendar. Depending on how you create the group, you can optionally add other services such as Teams, Viva Engage, and Project.
 
 ![Diagram showing Microsoft 365 Groups and related services.](../media/microsoft-365-groups-hub-spoke.png)
 
 |Resource|Description|
 |:------|:----------|
-|[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|For scheduling events related to the group|
-|[Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
-|[OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|For gathering ideas, research, and information|
-|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|For assigning and managing project tasks among your group members|
-|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|A data collaboration space with dashboards and reports|
+|[Calendar](https://support.office.com/article/0cf1ad68-1034-4306-b367-d75e9818376a)|For scheduling events related to the group|
+|[Inbox](https://support.office.com/article/a0482e24-a769-4e39-a5ba-a7c56e828b22)|For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.|
+|[OneNote notebook](https://support.office.com/article/e768fafa-8f9b-4eac-8600-65aa10b2fe97)|For gathering ideas, research, and information|
+|[Planner](https://support.office.com/article/4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|For assigning and managing project tasks among your group members|
 |[Project and Roadmap](https://support.microsoft.com/project)|Web-based project management tools|
-|[SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
-|[Stream](https://support.microsoft.com/microsoft-stream)|A video streaming service|
+|[SharePoint team site](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e)|A central repository for information, links and content relating to your group|
 |[Teams](https://support.microsoft.com/teams)|A chat-based workspace in Microsoft 365|
-|[Viva Engage group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
+|[Viva Engage](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)|A common place to have conversations and share information|
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help you manage groups in your organization. Because groups control membership and access to this suite of resources, managing groups is a key part of governing collaboration in Microsoft 365.
 
@@ -72,30 +70,28 @@ There are multiple places to collaborate and have conversations within Microsoft
 
 There are three main communication methods supported by Microsoft 365:
 
-- Outlook: collaboration through email with a shared group inbox and calendar
+- Outlook: collaboration through email, including with a shared group inbox and calendar
 - Microsoft Teams: a persistent-chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
 - Viva Engage: enterprise social experience for collaboration
 
-![Diagram showing when to use Teams, Viva Engage, and Outlook.](../media/inner-loop-outer-loop.png)
-
-- Teams: chat-based workspace (high velocity collaboration) – inner loop
+**Teams: chat-based workspace (high velocity collaboration)**
   - Built for collaboration with the people your users work with every day
   - Puts information at the fingertips of users in a single experience
   - Add tabs, connectors and bots
   - Live chat, audio/video conferencing, recorded meetings
 
-- Viva Engage: connect across the org (enterprise social) – outer loop
+**Viva Engage: connect across the org (enterprise social)**
   - Communities of practice - Cross-functional groups of people who share a common interest or expertise but are not necessarily working together on a day-to-day basis
   - Leadership connection, learning communities, role-based communities
 
-- Mailbox and calendar (email-based collaboration)
-  - Used for targeted communication with a group of people
+**Mailbox and calendar (email-based collaboration)**
+  - Used for targeted communication with individuals or a group of people
   - Shared calendar for meetings with other group members
- 
+
 As you determine how you want to use collaboration features in Microsoft 365, consider these methods of communication and which your users are likely to use in different scenarios.
 
 > [!NOTE]
-> When a new Office 365 Group is created via Viva Engage or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Viva Engage groups cannot be connected to Teams.
+> When a new Microsoft 365 group is created via Viva Engage or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Viva Engage groups cannot be connected to Teams.
 
 ## Collaboration governance best practices checklist
 
