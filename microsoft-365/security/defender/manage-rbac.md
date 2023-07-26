@@ -102,3 +102,4 @@ Use the following steps as a guide to start using the Microsoft 365 Defender URB
 Watch the following video to see the steps above in action:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

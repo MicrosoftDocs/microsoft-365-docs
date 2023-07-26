@@ -12,8 +12,8 @@ ms.collection:
 - tier1
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 02/08/2023
-ms.reviewer: jomaun
+ms.date: 07/19/2023
+ms.reviewer: nehabha
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150

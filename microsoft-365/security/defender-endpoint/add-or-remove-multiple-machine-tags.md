@@ -108,3 +108,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMult
 ```
 
 To remove machine tags, set the Action to 'Remove' instead of 'Add' in the request body.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

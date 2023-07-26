@@ -371,3 +371,4 @@ You have now successfully configured Controlled folder access in test mode.
 ## Related topic
 
 - [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-manager.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

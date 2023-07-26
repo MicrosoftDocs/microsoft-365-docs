@@ -27,7 +27,7 @@ ms.date: 07/10/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization’s external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
+As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization's external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
 
 Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organization's external attack surface and insights into asset exploitability.
 
@@ -90,12 +90,12 @@ Use this query to find all devices that are internet facing.
 DeviceInfo
 | where Timestamp > ago(7d)
 | where IsInternetFacing
-| extend InternetFacingInfo  = AdditionalFields
+| extend InternetFacingInfo = AdditionalFields
 | extend InternetFacingReason = extractjson("$.InternetFacingReason", InternetFacingInfo, typeof(string)), InternetFacingLocalPort = extractjson("$.InternetFacingLocalPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicPort = extractjson("$.InternetFacingPublicScannedPort", InternetFacingInfo, typeof(int)), InternetFacingScannedPublicIp = extractjson("$.InternetFacingPublicScannedIp", InternetFacingInfo, typeof(string)), InternetFacingLocalIp = extractjson("$.InternetFacingLocalIp", InternetFacingInfo, typeof(string)),   InternetFacingTransportProtocol=extractjson("$.InternetFacingTransportProtocol", InternetFacingInfo, typeof(string)), InternetFacingLastSeen = extractjson("$.InternetFacingLastSeen", InternetFacingInfo, typeof(datetime))
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-This query returns the following fields for each internet-facing device with their aggregated evidence in the “AdditionalFields” column.
+This query returns the following fields for each internet-facing device with their aggregated evidence in the "AdditionalFields" column.
 
 - **InternetFacingReason**: Whether the device was detected by an external scan or received incoming communication from the internet
 - **InternetFacingLocalIp**: The local IP address of the internet facing interface
@@ -113,9 +113,9 @@ Use the following query for devices tagged with the reason **This device receive
 ```kusto
 // Use this function to obtain the device incoming communication from public IP addresses
 // Input:
-// DeviceId – the device ID that you want to investigate.
+// DeviceId - the device ID that you want to investigate.
 // The function will return the last 7 days of data.
-InboundExternalNetworkEvents(“<DeviceId>”)
+InboundExternalNetworkEvents("<DeviceId>")
 ```
 
 >[!Note]
@@ -162,3 +162,4 @@ You can report an inaccuracy for a device with incorrect internet-facing informa
 ## See also
 
 - [Device inventory](machines-view-overview.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

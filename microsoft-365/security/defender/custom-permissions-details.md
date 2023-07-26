@@ -1,6 +1,6 @@
 ---
-title: Details of custom permissions in Microsoft 365 Defender Unified role-based access control (URBAC)
-description: Learn about the custom permissions available in Microsoft 365 Defender Security role-based access control (URBAC)
+title: Details of custom permissions in Microsoft 365 Defender role-based access control (RBAC)
+description: Learn about the custom permissions available in Microsoft 365 Defender Security role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,9 +21,9 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Permissions in Microsoft 365 Defender Unified role-based access control (URBAC)
+# Permissions in Microsoft 365 Defender role-based access control (RBAC)
 
-In Microsoft 365 Defender Unified role-based access control (URBAC) you can select permissions from each permission group to customize a role.
+In Microsoft 365 Defender role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ In Microsoft 365 Defender Unified role-based access control (URBAC) you can sele
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Microsoft 365 Defender URBAC permission details
+## Microsoft 365 Defender RBAC permission details
 
 The following table lists the permissions available to configure for your users based on the tasks they need to do:
 
@@ -75,8 +75,6 @@ Permissions for managing the organization's security posture and performing thre
 |Remediation handling|Manage|Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.|
 |Application handling|Manage|Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.|
 |Security baseline assessment|Manage|Create and manage profiles so you can assess if your devices comply to security industry baselines.|
-|Secure score|Read|View secure score data including your current score, recommended actions, history, and metrics & trends.|
-|Secure score|Manage| Work to improve your secure score by editing status & action plan, managing tags, and editing score zones.|
 
 ### Authorization and settings
 
@@ -89,9 +87,10 @@ Permissions to manages the security and system settings and to create and assign
 |System settings|Read / Manage|View or manage general systems settings for the Microsoft 365 Defender portal.|
 
 > [!NOTE]
-> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender URBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
+> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 ## Next steps
 
 - [Create custom roles](create-custom-rbac-roles.md)
-- [Activate Microsoft 365 Defender URBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

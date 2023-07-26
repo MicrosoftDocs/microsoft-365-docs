@@ -117,3 +117,4 @@ When you report a problem with attack surface reduction rules, you're asked to c
 - [Attack surface reduction rules](attack-surface-reduction.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

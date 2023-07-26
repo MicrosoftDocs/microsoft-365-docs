@@ -227,7 +227,7 @@ By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. Howeve
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
-|**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+|**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
 
 #### Configure file hash computation feature
 
@@ -572,3 +572,4 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
