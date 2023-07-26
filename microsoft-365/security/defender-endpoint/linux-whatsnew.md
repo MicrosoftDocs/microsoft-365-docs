@@ -48,19 +48,19 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- If proxy is set for MDE then it will be visible in `mdatp health` command output
-	- With this release we provided two options in mdatp diagnostic hot-event-sources as below
+	- If a proxy is set for Defender for Endpoint then it will be visible in the `mdatp health` command output
+	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users will now correctly be reported to the MDATP Portal
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users will now correctly be reported to  Microsoft 365 Defender
 	- Improved logging in Network Protection block and audit events for debugging
-- Apart from above fixes and improvements
+- Other fixes and improvements
     - From this version, enforcementLevel will be in passive mode by default giving admins more control over where they want 'RTP on' within their estate
-    - This change only applies to fresh MDE deployments i.e. servers where MDE is being deployed for the first time. In update scenarios, servers that have MDE deployed with RTP ON, will continue operating with RTP ON even post update to version 101.23062.0010
+    - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, will continue operating with RTP ON even post update to version 101.23062.0010
 
 - Bug Fixes
-    - RPM DB corruption issue in TVM baseline has been fixed
-- Other Performance improvements
+    - RPM database corruption issue in Defender Vulnerability Management baseline has been fixed
+- Other performance improvements
 
 **Known issues**
 
