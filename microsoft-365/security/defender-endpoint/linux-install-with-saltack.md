@@ -276,3 +276,4 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## See also
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

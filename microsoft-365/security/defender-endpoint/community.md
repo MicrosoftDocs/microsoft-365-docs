@@ -50,3 +50,4 @@ There are several ways you can access the Community Center:
 You can instantly view and read conversations that have been posted in the community.
 
 To get the full experience within the community such as being able to comment on posts, you'll need to join the community. For more information on how to get started in the Microsoft Tech Community, see [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

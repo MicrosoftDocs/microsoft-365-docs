@@ -122,3 +122,4 @@ The table below lists the properties you can use in **Parameters**:
 You can view the policy name and printer information if you have right options setting in your policy.
 
 :::image type="content" source="images/enduser-experience.png" alt-text="This is enduser experience image.":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

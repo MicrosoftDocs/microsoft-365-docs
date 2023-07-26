@@ -92,3 +92,4 @@ You can also create a **scheduled** flow that runs Advanced Hunting queries and 
 
 ## Related topic
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

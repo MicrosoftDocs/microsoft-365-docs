@@ -1016,6 +1016,8 @@ The following templates contain entries for all settings described in this docum
         <true/>
         <key>automaticDefinitionUpdateEnabled</key>
         <true/>
+        <key>cloudBlockLevel</key>
+        <string>normal</string>
     </dict>
     <key>edr</key>
     <dict>
@@ -1033,6 +1035,29 @@ The following templates contain entries for all settings described in this docum
     <dict>
         <key>enforcementLevel</key>
         <string>block</key>
+        <key>exclusions</key>
+        <array>
+        <dict>
+            <key>path</key>
+            <string>/bin/zsh</string>
+            <key>teamId</key>
+            <string/>
+            <key>signingId</key>
+            <string>com.apple.zsh</string>
+            <key>args</key>
+            <array>
+            <string>/usr/local/bin/test.sh</string>
+            </array>
+        </dict>
+        <dict>
+            <key>path</key>
+            <string>/usr/local/jamf/bin/jamf</string>
+            <key>teamId</key>
+            <string>483DWKW443</string>
+            <key>signingId</key>
+            <string>com.jamfsoftware.jamf</string>
+        </dict>
+        </array>            
     </dict>
     <key>userInterface</key>
     <dict>
@@ -1179,6 +1204,8 @@ The following templates contain entries for all settings described in this docum
                     <true/>
                     <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
+                    <key>cloudBlockLevel</key>
+                    <string>normal</string>
                 </dict>
                 <key>edr</key>
                 <dict>
@@ -1196,6 +1223,29 @@ The following templates contain entries for all settings described in this docum
                 <dict>
                     <key>enforcementLevel</key>
                     <string>block</key>
+                    <key>exclusions</key>
+                    <array>
+                    <dict>
+                        <key>path</key>
+                        <string>/bin/zsh</string>
+                        <key>teamId</key>
+                        <string/>
+                        <key>signingId</key>
+                        <string>com.apple.zsh</string>
+                        <key>args</key>
+                        <array>
+                        <string>/usr/local/bin/test.sh</string>
+                        </array>
+                    </dict>
+                    <dict>
+                        <key>path</key>
+                        <string>/Library/Intune/Microsoft Intune Agent.app/Contents/MacOS/IntuneMdmDaemon</string>
+                        <key>teamId</key>
+                        <string>UBF8T346G9</string>
+                        <key>signingId</key>
+                        <string>IntuneMdmDaemon</string>
+                    </dict>
+                    </array>            
                 </dict>
                 <key>userInterface</key>
                 <dict>
@@ -1257,3 +1307,4 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 ## Resources
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

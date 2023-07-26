@@ -160,3 +160,4 @@ All verdicts are tracked in the [Action center](auto-investigation-action-center
 ## See also
 
 - [Overview of automated investigations](automated-investigations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -372,3 +372,4 @@ Example:
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
