@@ -99,7 +99,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 
-## UI Lockdown
+## UI Lockdown mode
 
 Indicates whether to disable UI Lockdown mode. If you specify a value of $True, Windows Defender disables UI Lockdown mode. If you specify $False or do not specify a value, UI Lockdown mode is enabled.
 
