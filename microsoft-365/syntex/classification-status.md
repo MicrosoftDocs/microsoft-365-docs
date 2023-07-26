@@ -23,7 +23,7 @@ description: Learn how to use the classification status column in a SharePoint d
 
 In a document library, the **Classification status** column lets you know the status of a file that is being processed by a model in Microsoft Syntex.
 
-The status shows you whether processing of file is in progress, completed, or wasn’t done due to an error with the file or the job. This helps you know whether a file needs to be queued again for processing or if additional investigation is required.  
+The status shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. This helps you know whether a file needs to be queued again for processing or if additional investigation is required.  
 
 When a model is applied to a library, the **Classification status** column is added. The column won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the column.
 
