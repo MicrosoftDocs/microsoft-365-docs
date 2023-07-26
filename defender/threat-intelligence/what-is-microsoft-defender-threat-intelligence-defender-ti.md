@@ -121,7 +121,7 @@ For more information, see [Using tags](using-tags.md).
 
 ## Projects
 
-Microsoft’s Defender TI platform allows users to develop multiple project types for organizing indicators of interest and indicators of compromise from an investigation. Projects contain a listing of all associated indicators and a detailed history that retains the names, descriptions, and collaborators.
+Microsoft Defender TI platform allows users to develop multiple project types for organizing indicators of interest and indicators of compromise from an investigation. Projects contain a listing of all associated indicators and a detailed history that retains the names, descriptions, and collaborators.
 
 When a user searches an IP address, domain, or host in Defender TI, if that indicator is listed within a project the user has access to, the user can see a link to the project from the Projects sections in the Summary tab as well as Data tab. From here, the user can navigate to the details of the project for more context about the indicator before reviewing the other data sets for more information. This helps analysts to avoid reinventing the wheel of an investigation one of their Defender TI tenant users may have already started or add onto that investigation by adding new indicators (indicators of compromise) related to that project (if they have been added as a collaborator to the project).
 
