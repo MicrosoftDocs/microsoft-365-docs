@@ -59,7 +59,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
 2. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
 3. Choose your desired state for Loop workspaces via the checkbox.
   > [!NOTE]
-  > If your Microsoft tenant was automatically enabled as part of an early adopter program, the checkbox may not reflect this. If the Save button is enabled and the state of Loop workspaces in your tenant doesn't match your user experience, the state you choose in the Admin Center will override the default state for your tenant when you click Save.
+  > If your tenant was automatically enabled as part of an early adopter program, the checkbox may not reflect this. If the Save button is enabled and the state of Loop workspaces in your tenant doesn't match your user experience, the state you choose in the Admin Center will override the default state for your tenant when you click Save.
 4. Select Save.
 
 The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
