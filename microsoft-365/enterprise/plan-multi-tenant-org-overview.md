@@ -27,7 +27,7 @@ While you configure Microsoft 365 multi-tenant organizations in the Microsoft 36
 
 Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest. (See [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions) for the differences between these roles.)
 
-We recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
+We highly recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
 
 When you configure user synchronization in the Microsoft 365 admin center, the same users and groups are synchronized to all tenants in the multi-tenant organization. Synchronizing different users to different tenants must be configured in Azure AD.
 
@@ -71,12 +71,17 @@ External access is required for chats and calls between tenants. External access
 
 Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multi-tenant organizations works the same as using shared channels with any other external organization. While the organizational relationship in Azure AD is configured as part of multi-tenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Azure AD. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
-## Limitations
+## Limitations for multi-tenant organizations in Microsoft 365 preview
 
 The following are limitations of the multi-tenant organizations in Microsoft 365 preview:
 
+- A maximum of five tenants in the multi-tenant organization is supported.
+- A maximum of 100,000 users per tenant is supported.
 - Teams on the web, MacOS, Microsoft Teams Rooms (MTR), and VDI/AVD are not supported.
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants is not supported on mobile.
+- External members are not supported in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](/power-bi/guidance/whitepaper-azure-b2b-power-bi).
+
+If you want to add more than five tenants or 100,000 users per tenant, contact Microsoft support.
 
 ## Set up or join a multi-tenant organization
 

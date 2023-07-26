@@ -22,9 +22,9 @@ You can set up a multi-tenant organization or add tenants to an existing one in 
 When each external tenant accepts the invitation to join the multi-tenant organization, the following settings are configured in Azure AD:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration. (If an organizational relationship already exists, the existing one is used.)
-- The cross-tenant inbound settings are set to allow users to sync into this tenant.
-- The cross-tenant inbound and outbound settings are set to automatically redeem user invitations with the external tenant.
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multi-tenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
+- The multi-tenant organization template for identity synchronization is set to allow users to sync into this tenant.
+- The multi-tenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
 ## Set up a new multi-tenant organization
 

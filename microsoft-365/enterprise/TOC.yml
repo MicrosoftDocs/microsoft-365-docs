@@ -168,8 +168,6 @@
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
       items: 
-        - name: Multi-tenant Organization People Search
-          href: multi-tenant-people-search.md
         - name: Inter-tenant collaboration
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
@@ -187,6 +185,8 @@
               href: join-leave-multi-tenant-org.md
             - name: Sync users with other orgs
               href: sync-users-multi-tenant-orgs.md
+            - name: Multi-tenant Organization People Search
+              href: multi-tenant-people-search.md
 
         - name: Cross-tenant OneDrive migration
           items:

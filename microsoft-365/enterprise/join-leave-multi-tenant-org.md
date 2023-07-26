@@ -26,9 +26,9 @@ Once you've joined, you can leave a multi-tenant organization at any time.
 When you join an existing multi-tenant organization, the following settings are configured in Azure Active Directory:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the default configuration. (If an organizational relationship already exists, the existing one is used.)
-- The cross-tenant inbound settings are set to allow users to sync into this tenant.
-- The cross-tenant inbound and outbound settings are set to automatically redeem user invitations with the external tenant.
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multi-tenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
+- The multi-tenant organization template for identity synchronization is set to allow users to sync into this tenant.
+- The multi-tenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
 When you leave a multi-tenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD are not affected.
 
@@ -52,7 +52,16 @@ The next step after you join the multi-tenant organization is to synchronize you
 
 You can leave a multi-tenant organization as long as your tenant isn't the owner tenant. (Note that you can't remove the original creator tenant, even if it has been changed from owner to member.) You can also remove other member tenants.
 
-Removing a tenant must be done using Microsoft Graph API. For details, see [Remove a member tenant](/azure/active-directory/multi-tenant-organizations/configure-graph#step-5-optional-remove-a-member-tenant).
+To remove a tenant from a multi-tenant organization in Microsoft 365
+
+1. In the Microsoft 365 admin center, expand **Settings**.
+1. Select **Org settings**.
+1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select the check box next to the tenant you want to remove.
+1. Select **Remove tenant**.
+1. Read the details regarding tenant removal in the side panel, and then select **Remove tenant**.
+
+After you remove a tenant from the multi-tenant organization, we recommend you review the active users and sync jobs and make any updates needed.
 
 ## Related topics
 
