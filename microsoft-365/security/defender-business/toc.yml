@@ -19,6 +19,8 @@
       href: mdb-partners.md
     - name: Integration with Microsoft 365 Lighthouse
       href: mdb-lighthouse-integration.md
+    - name: Streaming API
+      href: mdb-streaming-api.md
   - name: Get started
     items:
     - name: Trial user guide - Defender for Business
