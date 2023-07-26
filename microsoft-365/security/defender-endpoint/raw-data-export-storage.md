@@ -112,3 +112,4 @@ In order to get the data types for our events properties do the following:
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

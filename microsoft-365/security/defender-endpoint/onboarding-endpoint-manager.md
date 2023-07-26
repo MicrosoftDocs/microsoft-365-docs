@@ -35,7 +35,7 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method.
+This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture.
 
@@ -417,3 +417,4 @@ To confirm that the configuration policy has been applied to your test device, f
 4. This should respond with a 1 as shown below.
 
    :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

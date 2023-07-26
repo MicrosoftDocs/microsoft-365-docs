@@ -84,3 +84,4 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |nonProductivityImpactedAssets|Long|Number of devices that are not affected|
 |relatedComponent|String|Related software component|
 |
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

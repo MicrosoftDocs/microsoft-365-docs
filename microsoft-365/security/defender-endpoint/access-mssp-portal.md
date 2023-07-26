@@ -32,6 +32,9 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 > [!NOTE]
 > These set of steps are directed towards the MSSP.
 
@@ -47,9 +50,11 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 2. Switch directory to the MSSP customer's tenant.
 3. Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Tenant ID field.
 4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
+5. Access a Unified View for MSSP (Preview) in `https://mto.security.microsoft.com/`
 
 ## Related topics
 
 - [Grant MSSP access to the portal](grant-mssp-access.md)
 - [Configure alert notifications](configure-mssp-notifications.md)
 - [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

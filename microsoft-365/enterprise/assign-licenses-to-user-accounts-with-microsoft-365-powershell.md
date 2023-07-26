@@ -69,7 +69,7 @@ To find the unlicensed synchronized users in your organization, run this command
 ```powershell
 Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
 ```
-You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. Some Microsoft 365 services aren't available in certain countries. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. Some Microsoft 365 services aren't available in certain countries/regions. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
 
 To find accounts that don't have a **UsageLocation** value, run this command.
 
