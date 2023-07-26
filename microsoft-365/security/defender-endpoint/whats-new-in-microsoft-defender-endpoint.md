@@ -65,12 +65,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 -   **Data completeness**
 
-    -   Extended file attributes and registry monitoring capabilities to enhance investigation and detection experience 
+    -   Extended file attributes and registry monitoring capabilities to enhance investigation and detection experience. 
     
-    -   Conditional Access: expanding integration between MDE and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries 
-
-    -   Tune Endpoint Detection and Response (EDR) data collection to address local application compatibility Platform Paul: this is too vague 
-
+    -   Conditional Access: expanding integration between MDE and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries. 
 
     -   Engine bugfixes and improvements. 
 
@@ -78,7 +75,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 -   **Platform**
 
-    -   Enabled Safer deployment of features through rings and containment mechanism enhancements 
+    -   Enabled Safer deployment of features through rings and containment mechanism enhancements. 
 
     -   Consolidate the billing and alert experiences of customers that are onboarded to both MDE and Microsoft Defender for Cloud in cloud environments by collecting machine identifiers that allow de-duplication on cloud side. 
 
@@ -106,7 +103,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
     -   Isolation hardening is a measure taken against a technique known as process hollowing. implementing this hardening approach, a system can establish stronger isolation rules that significantly enhance security when dealing with code injection tactics.  
     
 
-    -   Reduce device disconnections for isolated device caused by third-party inspection drivers. For more information, see [Take response actions on a device](respond-machine-alerts.md)
+    -   Reduce device disconnections for isolated device caused by third-party inspection drivers. For more information, see [Take response actions on a device](respond-machine-alerts.md).
 
 
 
@@ -130,11 +127,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
     -   Supporting force close active SMB sessions for incriminated users as part of Lateral Movement Firewall to disrupt and terminate active malicious sessions. 
 
 
-    -   Device Contain - Introducing new Windows Filtering Platform (WFP) network filter to allow telemetry & audit-mode capabilities to network connections enforcements. For more information, see - [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md#contain-devices-from-the-network) 
+    -   Device Contain - Introducing new Windows Filtering Platform (WFP) network filter to allow telemetry & audit-mode capabilities to network connections enforcements. For more information, see - [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md#contain-devices-from-the-network).
 
 
 
-    -   Anti-tampering - Addressing tampering gaps in MDE authentication flow by hardening protection of the cryptographic key used to register clients with MDE's authentication service. This is done by storing the key in an AV-protected registry key. 
+    -   Anti-tampering - Addressing tampering gaps in Defender for Endpoint authentication flow by hardening protection of the cryptographic key used to register clients with Defender for Endpoint's authentication service. This is done by storing the key in an AV-protected registry key. 
 
 
 
