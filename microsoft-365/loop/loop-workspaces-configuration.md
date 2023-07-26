@@ -56,9 +56,11 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
 1. Sign in to the Microsoft 365 admin center as a Global Administrator.
-1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
-1. Choose your desired state for Loop workspaces via the checkbox.
-1. Select Save.
+2. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
+3. Choose your desired state for Loop workspaces via the checkbox.
+  > [!NOTE]
+  > If your Microsoft tenant was automatically enabled as part of an early adopter program, the checkbox may not reflect this. If the Save button is enabled and the state of Loop workspaces in your tenant doesn't match your user experience, the state you choose in the Admin Center will override the default state for your tenant when you click Save.
+4. Select Save.
 
 The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
 
@@ -77,19 +79,19 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
 To configure these Cloud Policy settings, perform the following steps:
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
-1. Select **Customization** from the left pane.
-1. Select **Policy Management**.
-1. Create a new policy configuration or edit an existing one.
-1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
-1. In **Configure Settings**, choose **Create and view Loop workspaces in Loop** and then choose one of the following settings:
+2. Select **Customization** from the left pane.
+3. Select **Policy Management**.
+4. Create a new policy configuration or edit an existing one.
+5. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
+6. In **Configure Settings**, choose **Create and view Loop workspaces in Loop** and then choose one of the following settings:
     - **Enabled**: Loop app and creation of workspaces is available to the users.
     - **Disabled**: Loop app and creation of workspaces isn't available to the users.
     - **Not configured**: Loop app and creation of workspaces isn't available to the users.
         - Loop during Public Preview is **IT Admin Opt-in** by default.
         - Loop app will still open Loop components when workspaces is disabled. If this isn't rolled out to your environment, Loop components will open in Office.com.
         - Ensure additional [Loop service requirements](#requirements) are met.
-1. Save the policy configuration.
-1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
+7. Save the policy configuration.
+8. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
 In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
