@@ -31,8 +31,8 @@ This column will not be automatically added to libraries where a model has alrea
 
 | Classification status | Description |
 | ------- | ------- 
-| In progress | x |
-| Finished | x  |
-| Not supported | x |
-| Error | x |
-| [Empty] | x |
+| In progress | File has been queued for processing. |
+| Finished | File has been processed. |
+| Not supported | File has been queued, but can't be processed (for example, the file type extension is not supported). |
+| Error | File can't be queued for processing (for example, the file is not supported at all). |
+| [Empty] | No models are applied to the library. |
