@@ -101,7 +101,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 ## UI Lockdown
 
-Indicates whether to disable UI lockdown mode. If you specify a value of $True, Windows Defender disables UI lockdown mode. If you specify $False or do not specify a value, UI lockdown mode is enabled.
+Indicates whether to disable UI Lockdown mode. If you specify a value of $True, Windows Defender disables UI Lockdown mode. If you specify $False or do not specify a value, UI Lockdown mode is enabled.
 
 ```
 PS C:\>Set-MpPreference -UILockdown $true
