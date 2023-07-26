@@ -47,13 +47,13 @@ Team membership will be automatically managed over time through the power of dyn
 - The admin running the deployment process needs Teams admin center permissions.
 - Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 - When evaluating the right solution, we recommend you do the following:
-1. Plan your frontline deployment
-2. Test the deploy tools (dynamic or static team creation)
-3. Deploy to a pilot location
-4. Deploy to a broader set of locations using a phased approach
+  1. Plan your frontline deployment
+  1. Test the deploy tools (dynamic or static team creation)
+  1. Deploy to a pilot location
+  1. Deploy to a broader set of locations using a phased approach
 
-  >[!NOTE]
-  >The PowerShell solution creates static teams, which aren't managed automatically.
+     >[!NOTE]
+     >The PowerShell solution creates static teams, which aren't managed automatically.
 
 ## Set up your frontline dynamic teams
 
