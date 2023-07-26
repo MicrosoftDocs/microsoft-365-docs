@@ -101,7 +101,7 @@ In **Microsoft 365 mobile**, you can now enable/disable Microsoft 365 Feed by co
 
 For more information about adding configuration keys, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios)
 
-## Feedback
+## Provide feedback
 
 We would love to hear from you! To let us know what you think of this feature, you can reach us by:
 
