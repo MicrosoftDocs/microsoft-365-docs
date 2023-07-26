@@ -24,7 +24,7 @@ In the same breadth, Vulnerability Intelligence Analysts battle correlating thei
 
 Microsoft’s goal is to re-imagine the analyst workflow by developing a platform, Defender TI, that aggregates and enriches critical data sources and displays data in an innovative, easy to use interface to correlate when indicators are linked to articles and vulnerabilities, infrastructure chain together indicators of compromise (IOCs), and collaborate on investigations with fellow Defender TI licensed users within their tenant. With security organizations actioning an ever-increasing amount of intelligence and alerts within their environment, having a Threat Analysis & Intelligence Platform that allows for accurate and timely assessments of alerting is important.
 
-Below is a screenshot of Defender TI’s Threat Intelligence Home Page. Analysts can quickly scan new featured articles as well as begin their intelligence gathering, triage, incident response, and hunting efforts by performing a keyword, indicator or CVE-ID search.
+Below is a screenshot of Defender TI’s Threat Intelligence Home Page. Analysts can quickly scan new featured articles as well as begin their intelligence gathering, triage, incident response, and hunting efforts by performing a keyword, indicator, or CVE-ID search.
 
 ![TI Overview Edge Screenshot](media/tiOverviewEdgeScreenshot.png)
 
