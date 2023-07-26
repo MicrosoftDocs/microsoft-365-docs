@@ -6,7 +6,7 @@ summary: This solution and architecture center brings together the technical gui
 metadata:
   title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.date: 05/01/2020
+  ms.date: 07/25/2023
   ms.service: o365-solutions
  #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
@@ -105,11 +105,11 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Insider risk solutions
-            url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /purview/insider-risk-solution-overview
           - text: Auditing solutions
-            url: ../compliance/auditing-solutions-overview.md
+            url: /purview/audit-solutions-overview
           - text: eDiscovery (Premium)
-            url: ../compliance/overview-ediscovery-20.md
+            url: /purview/ediscovery
       - linkListType: reference
         links:
           - text: ISO - Recommended action plan
