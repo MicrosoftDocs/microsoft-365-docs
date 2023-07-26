@@ -25,9 +25,7 @@ In a document library, there is now a **Classification status** column that lets
 
 The status shows you whether processing of file is in progress, completed, or wasn’t done due to an error with the file or the job. This helps you know whether a file needs to be queued again for processing or if additional investigation is required.  
 
-There is no impact to any existing library configuration. When a model is applied to a library, the new status column is added.  
-
-This column won't be automatically added to libraries where a model has already been applied. To add the column, you'll need to apply the model again.
+When a model is applied to a library, the **Classification status** column is added. The column won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the column.
 
 | Classification status | Description |
 | ------- | ------- 
