@@ -388,7 +388,7 @@ sections:
       - question: 
            When one attendee cancels a group booking, cancellation emails are sent to all the other attendees
         answer:
-          This is a known problem, and our product team is currently investigating the root cause. If you encounter this problem, you can follow these steps to mitigate it:"" 
+          This is a known problem, and our product team is currently investigating the root cause. If you encounter this problem, you can follow these steps to mitigate it. 
           
           1. Select **Edit service** for the affected service.
           
