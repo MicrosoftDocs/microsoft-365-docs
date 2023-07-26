@@ -6,7 +6,7 @@ The maximum size for the OS VHD on a generation 2 VM is 128 GiB on Test Base.
 
 Test Base supports these Windows versions:
 
-- Windows 10 20H1 or later
+- Windows 10 21H2 or later
 - Windows 11 21H2 or later
 - Windows Server 2016 or later
 
@@ -16,7 +16,7 @@ You cannot shrink the physical size of a VHD. If the total size of the volumes i
 
 You need to follow the configuration steps below to make sure that the VM VHD is compatible with Test Base.
 
-## Run the *AzureConfig.ps1* script for easy configuration
+## Step 1. Run the *AzureConfig.ps1* script for easy configuration
 
 To make the configuration steps easier, you can use a script called *AzureConfig.ps1* that is provided in the following code block. Copy the script content to a new file named `AzureConfig.ps1` and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
 
@@ -263,6 +263,12 @@ function Step-CheckRDPPort {
     }
 }
 
+function Step-SetLocalPolicy{
+    Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -Name legalnoticecaption -Type String -Value "" -Force
+    Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -Name legalnoticetext -Type String -Value "" -Force
+    Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Lsa' -Name disabledomaincreds -Type DWord -Force -Value 0
+}
+
 function Main {
     Step-DisableBitLocker
 
@@ -297,6 +303,7 @@ function Main {
     Step-SetCrashDumpLogs
     Step-VerifyWMIRepository
     Step-CheckRDPPort
+    Step-SetLocalPolicy
 }
 
 Main
@@ -306,14 +313,15 @@ Stop-Transcript
 
 After the script finishes, restart the computer.
 The **ChkDsk** will run during the system boot. Make sure the report shows a clean and healthy disk.
+The **Step-SetLocalPolicy** will set the local policy to disable the legal notice and allow storage of password and credentials for network authentication.
 
-## Install Windows updates
+## Step 2. Install Windows updates
 
 To prevent an accidental reboot during the VM provisioning, it is recommended to install all Windows updates and restart the VM before migrating it to Test Base.
 
 If you also need to generalize the OS (Sysprep), you need to update Windows and restart the VM before running the Sysprep command.
 
-## Decide when to use Sysprep
+## Step 3. Decide when to use Sysprep
 
 System Preparation Tool (`sysprep.exe`) is a process that resets a Windows installation.
 Sysprep removes all personal data and resets several components.
@@ -357,7 +365,7 @@ Pop-Location
 
 The VHD is now generalized.
 
-## Install Azure Virtual Machine Agent for *specialized image*
+### Install Azure Virtual Machine Agent for *specialized image*
 
 To create a VM from a *specialized image*, you need to install the `Azure Virtual Machine Agent` on the VM.
 
@@ -380,7 +388,7 @@ $logPath = "$PWD\$installerName.log"
 Start-Process "msiexec.exe" -ArgumentList "/i `"$installerPath`" /qn /L*v `"$logPath`"" -PassThru -Wait
 ```
 
-## Convert and resize the virtual disk to a fixed size VHD
+## Step 4. Convert and resize the virtual disk to a fixed size VHD
 
 Use this method to convert and resize the virtual disk for Test Base:
 
