@@ -27,7 +27,7 @@ In a document library, the **Classification status** column lets you know the st
 
 The status shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. This helps you know whether a file needs to be queued again for processing or if additional investigation is required.  
 
-The following table described the classification statuses.
+The following table describes the classification status values.
 
 | Classification status | Description |
 | ------- | ------- 
