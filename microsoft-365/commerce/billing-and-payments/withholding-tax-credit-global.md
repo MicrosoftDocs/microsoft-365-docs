@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller, martinl, melmar
+ms.reviewer: jkinma, nicholak, martinl, melmar
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -30,7 +30,7 @@ ms.date: 03/31/2023
 >
 > If your organization is based in India, please see [Request a credit for Withholding Tax on your account (India customers)](withholding-tax-credit-india.md).
 
-Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country. If your organization makes cross-border payments to that entity, the Tax Authority in your country might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
+Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country/region. If your organization makes cross-border payments to that entity, the Tax Authority in your country/region might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
 
 > [!IMPORTANT]
 > As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.

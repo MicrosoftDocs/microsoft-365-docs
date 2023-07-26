@@ -56,6 +56,9 @@ Please refer to [Dynamics 365 availability and data locations | Microsoft Learn]
 ### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
 
+### Viva Glint
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
+
 ### Viva Goals
 
 #### Summary
@@ -89,8 +92,8 @@ Please see the [Static data location information for select workloads](#static-d
 ### Whiteboard
 Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
-### Yammer
-Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
+### Viva Engage
+Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-security-and-compliance/data-residency).
 
 ## Static data location information for select workloads
 

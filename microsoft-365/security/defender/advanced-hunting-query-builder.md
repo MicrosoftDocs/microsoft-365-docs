@@ -38,6 +38,9 @@ The query builder in guided mode allows analysts to craft meaningful hunting que
 
 The analyst can choose which data set to look at and which filters and conditions to use to narrow the data down to what they need. 
 
+You can watch this video to get an overview of guided hunting:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12cm6]
 
 ## Open Query in builder
 In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. 
@@ -189,3 +192,4 @@ Then, add another condition, this time specifying the folder or **DeliveryLocati
 - [Refine your query in guided mode](advanced-hunting-query-builder-details.md)
 - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)
  - [Understand the schema](advanced-hunting-schema-tables.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

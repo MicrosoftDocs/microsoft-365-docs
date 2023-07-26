@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -28,7 +28,6 @@ ms.date: 12/18/2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,13 +36,7 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Deploying Defender for Endpoint is a three-phase process:
-
-|[![deployment phase - prepare.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[Phase 1: Prepare](prepare-deployment.md) | ![deployment phase - setup](images/phase-diagrams/setup.png#lightbox)<br>Phase 2: Setup | [![deployment phase - onboard](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[Phase 3: Onboard](onboarding.md)|
-|---|---|---|
-||*You are here!*||
-
-You are currently in the set-up phase.
+The first step when deploying Microsoft Defender for Endpoint is to set up your Defender for Endpoint environment.
 
 In this deployment scenario, you'll be guided through the steps on:
 
@@ -52,7 +45,7 @@ In this deployment scenario, you'll be guided through the steps on:
 - Network configuration
 
 > [!NOTE]
-> For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
+> For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but we won't cover those scenarios in the deployment guide. For more information, see [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md).
 
 ## Check license state
 
@@ -85,6 +78,7 @@ Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu,
 From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ## Data center location
+
 Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). If Microsoft 365 Defender has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft 365 Defender and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
 
 ## Network configuration
@@ -184,4 +178,5 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ## Next step
 
-[![**Phase 3: Onboard**.](images/onboard.png#lightbox)] <br> [Phase 3: Onboard](onboarding.md): Onboard devices to the service so that the Microsoft Defender for Endpoint service can get sensor data from them.
+- Continue to [Step 2 - Assign roles and permissions](prepare-deployment.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
