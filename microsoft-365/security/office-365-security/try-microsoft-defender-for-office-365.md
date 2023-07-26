@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 5/26/2023
+ms.date: 7/5/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -485,7 +485,7 @@ The settings are also described in the following tables.
 |AdminDisplayName|Evaluation Policy|
 |AuthenticationFailAction|MoveToJmf|
 |DmarcQuarantineAction|Quarantine|
-|DmarcRejectAction|Quarantine|
+|DmarcRejectAction|Reject|
 |Enabled|True|
 |EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|True|
@@ -502,7 +502,7 @@ The settings are also described in the following tables.
 |EnableViaTag|True|
 |ExcludedDomains|{}|
 |ExcludedSenders|{}|
-|HonorDmarcPolicy|False|
+|HonorDmarcPolicy|True|
 |ImpersonationProtectionState|Manual|
 |IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
