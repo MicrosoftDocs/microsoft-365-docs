@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft 365 Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 7/7/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -36,17 +36,17 @@ In Microsoft 365 organizations with Exchange Online mailboxes, admins can use th
 
 - **Admin submission of user reported messages**: The built-in [user reporting experience](submissions-user-reported-messages-custom-mailbox.md) is turned on and configured. User reported messages appear on the **User reported** tab on the **Submissions** page, and admins submit or resubmit the messages to Microsoft from the **User reported** tab.
 
-  After an admin submits the message, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
+  After an admin submits the message from the **User reported** tab, an entry is also created on the corresponding tab on the **Submissions** page (for example, the **Emails** tab). These types of admin submissions are described in the [Admin options for user reported messages](#admin-options-for-user-reported-messages) section.
 
-When admins submit email messages for analysis, Microsoft does the following checks:
+When admins submit messages for analysis, Microsoft does the following checks:
 
-- **Email authentication check**: Whether email authentication passed or failed when it was delivered.
+- **Email authentication check** (email messages only): Whether email authentication passed or failed when it was delivered.
 - **Policy hits**: Information about any policies or overrides that might have allowed or blocked the incoming email into the organization, thus overriding our filtering verdicts.
 - **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
 - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
 
 > [!IMPORTANT]
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit messages to Microsoft for analysis, but the messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit email messages to Microsoft for analysis, but the messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 
@@ -324,13 +324,26 @@ After a few moments, the allow entry is available on the **URL** tab on the **Te
 > - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message are delivered.
 > - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content at the URL.
 
+### Report Teams messages to Microsoft
+
+You can't submit Teams messages from the **Teams messages** tab on the **Submissions** page. The only way to submit a Teams message to Microsoft for analysis is to submit a user reported Teams message from the **User reported** tab as described in the [Submit user reported messages to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis) section later in this article.
+
+The entries on the **Teams messages** tab are the result of submitting user reported Teams message to Microsoft. For more information, see the [View converted admin submissions](#view-converted-admin-submissions) section later in this article.
+
 ### View email admin submissions to Microsoft
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 On the **Submissions** page, verify that the **Emails** tab is selected.
 
-On the **Emails** tab, you can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+On the **Emails** tab, you can quickly filter the view by selecting one of the available quick filters:
+
+- **Pending**
+- **Completed**
+
+:::image type="content" source="../../media/submissions-quick-filters.png" alt-text="The quick filters available for admin submissions on the Emails tab of the Submissions page." lightbox="../../media/submissions-quick-filters.png":::
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Submission name**<sup>\*</sup>
 - **Sender**<sup>\*</sup>
@@ -384,13 +397,69 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
+### View Teams admin submissions to Microsoft
+
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+On the **Submissions** page, select the **Teams messages** tab.
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+
+- **Submission name**<sup>\*</sup>
+- **Sender**sup>\*</sup>
+- **Date submitted**<sup>\*</sup>
+- **Reason for submitting**<sup>\*</sup>
+- **Submitted by**
+- **Status**<sup>\*</sup>
+- **Result**<sup>\*</sup>
+- **Recipient**
+- **Submission ID**
+- **Teams message ID**
+- **Destination**
+- **Phish simulation**
+- **Tags**<sup>\*</sup>: For more information about user tags, see [User tags](user-tags-about.md).
+
+To group the entries, select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group** and then select one of the following values:
+
+- **Reason**
+- **Original verdict**
+- **Status**
+- **Result**
+- **Tags**
+
+To ungroup the entries, select **None**.
+
+To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filter** flyout that opens:
+
+- **Date submitted**: **Start date** and **End date**.
+- **Submission ID**: A GUID value that's assigned to every submission.
+- **Teams message**
+- **Submitted by**
+- **Reason for submitting**: Any of the following values:
+  - **Not junk**
+  - **Phish**
+  - **Malware**
+- **Status**: **Pending** and **Completed**.
+- **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
+
+When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
+
 ### View email attachment admin submissions to Microsoft
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 On the **Submissions** page, select the **Email attachments** tab.
 
-On the **Email attachments** tab, you can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+On the **Email attachments** tab, you can quickly filter the view by selecting one of the available quick filters:
+
+- **Pending**
+- **Completed**
+
+:::image type="content" source="../../media/submissions-quick-filters.png" alt-text="The quick filters available for admin submissions on the Email attachments tab of the Submissions page." lightbox="../../media/submissions-quick-filters.png":::
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Attachment filename**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
@@ -434,13 +503,20 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
-### View URLs admin submissions to Microsoft
+### View URL admin submissions to Microsoft
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 On the **Submissions** page, select the **URLs** tab.
 
-On the **URLs** tab, you can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+On the **URLs** tab, you can quickly filter the view by selecting one of the available quick filters:
+
+- **Pending**
+- **Completed**
+
+:::image type="content" source="../../media/submissions-quick-filters.png" alt-text="The quick filters available for admin submissions on the URLs tab of the Submissions page." lightbox="../../media/submissions-quick-filters.png":::
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **URL**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
@@ -476,7 +552,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Not junk**
   - **Phish**
   - **Malware**
-  - **Spam**.
+  - **Spam**
 - **Status**: **Pending** and **Completed**.
 - **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
 
@@ -486,7 +562,7 @@ Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" borde
 
 ### Admin submission result details
 
-Messages, email attachments, and URLs that admins submit to Microsoft for analysis are available on the corresponding tabs on the **Submissions** page.
+Email messages, Teams messages, email attachments, and URLs that admins submit to Microsoft for analysis are available on the corresponding tabs on the **Submissions** page.
 
 When you select an entry on the tab by clicking anywhere in the row other than the check box next to the first column, complete information about the original reported item, the status of the reported item, and the analysis results of the reported item are shown in the details flyout that opens:
 
@@ -514,7 +590,16 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 ## Admin options for user reported messages
 
-If the [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on and you've deployed supported methods for users to report messages (the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web), or [supported third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools)), you can see what users are reporting on the **User reported** tab on the **Submissions** page:
+Admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
+
+- The [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on.
+- **Email messages**: You're using supported methods for users to report messages:
+  - The [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
+  - The [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web).
+  - [Supported third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools)
+- **Teams messages**: [User reporting settings for Teams messages](submissions-teams.md#user-reporting-settings-for-teams-messages) is turned on.
+
+**Notes**:
 
 - User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Although these messages have already been reported to Microsoft, admins can resubmit the reported messages.
 - User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
@@ -527,7 +612,16 @@ The following subsections describe the information and actions that are availabl
 
 ### View user reported messages to Microsoft
 
-On the **User reported** tab, you can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+On the **User reported** tab, you can quickly filter the view by selecting one of the available quick filters:
+
+- **Threats**
+- **Spam**
+- **No threats**
+- **Simulations**
+
+:::image type="content" source="../../media/submissions-user-reported-quick-filters.png" alt-text="Quick filters on the User reported tab on the Submissions page." lightbox="../../media/submissions-user-reported-quick-filters.png":::
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Name and type**<sup>\*</sup>
 - **Reported by**<sup>\*</sup>
@@ -535,9 +629,15 @@ On the **User reported** tab, you can sort the entries by clicking on an availab
 - **Sender**<sup>\*</sup>
 - **Reported reason**<sup>\*</sup>
 - **Original verdict**<sup>\*</sup>
-- **Result**<sup>\*</sup>
+- **Result**<sup>\*</sup>: Contains the following information for reported messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
+  - **Send the reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: Values derived from the following analysis:
+    - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
+    - **Payload reputation/detonation**: Up-to-date examination of any URLs and files in the message.
+    - **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
+  - **Send the reported messages to** \> **My reporting mailbox only**: The value is always **Not submitted to Microsoft**, because the messages weren't analyzed by Microsoft.
 - **Message reported ID**
 - **Network Message ID**
+- **Teams message ID**
 - **Sender IP**
 - **Reported from**
 - **Phish simulation**
@@ -565,12 +665,14 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Reported by**
 - **Name**
 - **Message reported ID**
-- **Network Message ID**
+- **Network message ID**
+- **Teams message ID**
 - **Sender**
-- **Reported reason**: The values **Not junk**, **Phish**, and **Spam**.
+- **Reported reason**: The values **No threats**, **Phish**, and **Spam**.
 - **Reported from**: The values **Microsoft** and **Third party**.
 - **Phish simulation**: The values **Yes** and **No**.
 - **Converted to admin submission**: The values **Yes** and **No**.
+- **Message type**: The values **Email** and **Teams**.
 - **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
@@ -616,41 +718,57 @@ After you select the message on the **User reported** tab, use either of the fol
 
 In the **Submit to Microsoft for analysis** dropdown list, select one of the following values:
 
-- **Report clean**: In the dialog that opens, review or configure the following settings:
+- **Available values for email messages**:
 
-  **Allow email with similar attributes (URL, sender, etc.)**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
+  - **Report clean**: In the dialog that opens, review or configure the following settings:
 
+    **Allow email with similar attributes (URL, sender, etc.)**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
+
+      - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
+        - **1 day**
+        - **7 days**
+        - **30 days**
+        - **Specific date**: The maximum value is 30 days from today.
+      - **Allow entry note**: Enter optional information about why you're blocking this email.
+
+    When you're finished in the **Submit message as clean to Microsoft** dialog, select **Submit**.
+
+  - **Report phishing**, **Report malware** or **Report spam**: These selections have the same options in the dialog that opens:
+
+    **Block all email from this sender or domain**: Select this option to add a sender or domain block entry in Tenant Allow/Block List. The following settings are available:
+
+    - Select **Sender** or **Domain**.
     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
       - **1 day**
       - **7 days**
       - **30 days**
       - **Specific date**: The maximum value is 30 days from today.
-    - **Allow entry note**: Enter optional information about why you're blocking this email.
 
-  When you're finished in the **Submit message as clean to Microsoft** dialog, select **Submit**.
+    When you're finished in the dialog, select **Submit**.
 
-- **Report phishing**, **Report malware** or **Report spam**: These selections have the same options in the dialog that opens:
+  - **Trigger investigation**: Defender for Office 365 Plan 2 only. For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
-  **Block all email from this sender or domain**: Select this option to add a sender or domain block entry in Tenant Allow/Block List. The following settings are available:
+  :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The available actions in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-  - Select **Sender** or **Domain**.
-  - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-      - **1 day**
-      - **7 days**
-      - **30 days**
-      - **Specific date**: The maximum value is 30 days from today.
-
-  When you're finished in the dialog, select **Submit**.
-
-- **Trigger investigation**: Defender for Office 365 Plan 2 only. For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
-
-:::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The available actions in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
+- **Available values for Teams messages**: No other options are available when you select one of the following values:
+  - **Report clean**
+  - **Report phishing**
+  - **Report malware**
 
 After you submit a user reported message to Microsoft from the **User reported** tab, the value of **Converted to admin submission** turns from **No** to **Yes**, and a corresponding admin submission entry is created on the appropriate tab on the **Submissions** page (for example, the **Emails** tab).
 
 #### Notify users about admin submitted messages to Microsoft
 
-After an admin submits a user reported message to Microsoft from the **User reported** tab, admins can use the :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify** action to mark these messages as **No threats found**, **Phishing**, or **Spam**, and send templated notification messages to the user who reported the message.
+After an admin submits a user reported message to Microsoft from the **User reported** tab, admins can use the :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify** action to mark the message with a verdict and send a templated notification message to the user who reported the message.
+
+- Available verdicts for email messages:
+  - **No threats found**
+  - **Phishing**
+  - **Spam**
+
+- Available verdicts for Teams messages:
+  - **No threats found**
+  - **Phishing**
 
 For more information, see [Notify users from within the portal](submissions-admin-review-user-reported-messages.md#notify-users-from-within-the-portal).
 
@@ -666,8 +784,8 @@ This action takes you to the corresponding admin submission entry on the appropr
 
 In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions might also be available in the details flyout of a user reported message on the **User reported** tab:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** (email messages only): For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (email messages only): This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.

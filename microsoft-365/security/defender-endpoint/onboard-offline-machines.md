@@ -79,3 +79,4 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 > [!NOTE]
 > Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

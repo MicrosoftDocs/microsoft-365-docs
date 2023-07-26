@@ -122,4 +122,6 @@ Use this table to learn about the permissions assigned by default for each workl
 ## Next steps
 
 - [Import existing RBAC roles](import-rbac-roles.md)
-- [Activate Microsoft 365 Defender URBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+

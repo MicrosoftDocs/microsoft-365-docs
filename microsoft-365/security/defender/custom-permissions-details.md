@@ -94,4 +94,6 @@ Permissions to manages the security and system settings and to create and assign
 ## Next steps
 
 - [Create custom roles](create-custom-rbac-roles.md)
-- [Activate Microsoft 365 Defender URBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+

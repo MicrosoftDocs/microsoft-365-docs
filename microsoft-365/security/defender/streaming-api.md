@@ -2,13 +2,9 @@
 title: Stream Microsoft 365 Defender events
 description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to Event Hubs or Azure storage account
 keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 07/25/2023
 ---
 
 # Streaming API
@@ -30,6 +26,7 @@ ms.date: 02/08/2023
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true).
+> If you're using Microsoft Defender for Business, see [Use the streaming API (preview) with Microsoft Defender for Business](../defender-business/mdb-streaming-api.md).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -57,3 +54,4 @@ Watch this short video to learn how to set up the streaming API to ship event in
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

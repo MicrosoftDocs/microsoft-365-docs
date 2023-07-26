@@ -117,10 +117,10 @@ Xiaomi changed the battery optimization permissions in Android 11. Defender for 
 **Solution:**
 1. Install MDE app in personal profile. (Sign-in is not required.) 
 2. Open the Company Portal and tap on Settings. 
-3. Go to the Battery Optimization section, tap on the “Turn Off” button, and then click on “Allow” to turn Battery Optimization off for the Company Portal. 
-4. Again, go to the Battery Optimization section and tap on the “Turn On” button. The battery saver section opens. 
+3. Go to the Battery Optimization section, tap on the "Turn Off" button, and then click on "Allow" to turn Battery Optimization off for the Company Portal. 
+4. Again, go to the Battery Optimization section and tap on the "Turn On" button. The battery saver section opens. 
 5. Find the Defender app and tap on it. 
-6. Select “No Restriction”. Go back to the Defender app in work profile and tap on "Allow" button.  
+6. Select "No Restriction". Go back to the Defender app in work profile and tap on "Allow" button.  
 7. The application should not be uninstalled from personal profile for this to work. 
 
 
@@ -171,3 +171,4 @@ If a user faces an issue, which isn't already addressed in the above sections or
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
 6. Click on "Submit" to successfully send the feedback.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
