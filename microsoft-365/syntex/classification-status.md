@@ -21,7 +21,7 @@ description: Learn how to use the classification status column in a SharePoint d
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-You can view status of a file being processed by a model in Microsoft Syntex.
+You can view the status of a file being processed by a model in Microsoft Syntex.
 
 We are adding a new column to inform users of the status of a file being processed by Syntex. The listed states will inform whether processing is in progress, completed, or wasn’t done due to an error with the file or the job. This will help users know whether a file needs to be re-enqueued for processing or additional investigation is required.  
 
