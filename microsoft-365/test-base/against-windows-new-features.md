@@ -1,6 +1,6 @@
 ---
 title: 'Test against Windows new features'
-description: This section will show you how to set up your own scheduled tests against preview features in Windows insider channel
+description: This section shows you how to set up your own scheduled tests against preview features in Windows insider channel
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 If you’re seeking further validation of your eco-system solution(s) against Windows new features, or hesitating whether to deploy the latest Windows feature or the next version of security solution to your organization, Test Base provides you a way to automatically test your applications against preview builds in Windows Insider program (More about [Windows Insider](https://www.microsoft.com/windowsinsider/about-windows-insider-program)).
 
-This section will show you how to set up your own scheduled tests against preview features in Windows insider channel.
+This section shows you how to set up your own scheduled tests against preview features in Windows insider channel.
 
 ## Prepare your package
 
