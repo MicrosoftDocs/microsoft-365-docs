@@ -61,7 +61,7 @@ This section provides information about setting up the production environment us
 > [!NOTE]
 > Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
 
-1 On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
+1. On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
 
    > [!NOTE]
    > If the **Complete WSUS Installation** dialog box appears, select **Run**. In the **Complete WSUS Installation** dialog box, select **Close when the installation successfully finishes**.
