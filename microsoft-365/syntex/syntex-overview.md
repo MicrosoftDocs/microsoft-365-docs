@@ -152,32 +152,19 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Content query
 
 :::row:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
+   :::column-end:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
 
       You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
    :::column-end:::
 :::row-end:::
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 [Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
-
-### Content compliance
-
-:::row:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
-   :::column-end:::
-   :::column span="3":::
-      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
-   :::column-end:::
-:::row-end:::
-
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
 
 ### Content processing
 
@@ -192,6 +179,19 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 [Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
+### Content compliance
+
+:::row:::
+   :::column span="":::
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+:::row-end:::
+
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
 ### Premium taxonomy services
 
 :::row:::
@@ -200,7 +200,6 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
    :::column-end:::
    :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
-             
    :::column-end:::
 :::row-end:::
 
