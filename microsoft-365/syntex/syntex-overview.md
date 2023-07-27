@@ -132,7 +132,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
    :::column-end:::
 :::row-end:::
 
-[Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
+[Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
 ## Other features
 
