@@ -1,0 +1,330 @@
+{
+    "redirections":[
+      {
+         "source_path": "microsoft-365/contentunderstanding/prebuilt-models.md",
+         "redirect_url": "/microsoft-365/contentunderstanding/prebuilt-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/accessibility-mode.md",
+         "redirect_url": "/microsoft-365/syntex/accessibility-mode",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/adoption-assessment-tool.md",
+         "redirect_url": "/microsoft-365/syntex/adoption-assessment-tool",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/adoption-getstarted.md",
+         "redirect_url": "/microsoft-365/syntex/adoption-getstarted",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/adoption-scenarios.md",
+         "redirect_url": "/microsoft-365/syntex/adoption-scenarios",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/apply-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/apply-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/apply-a-retention-label-to-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/apply-a-sensitivity-label-to-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/automate-document-generation.md",
+         "redirect_url": "/microsoft-365/syntex/automate-document-generation",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/choose-library-view.md",
+         "redirect_url": "/microsoft-365/syntex/choose-library-view",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/content-assembly-create-document.md",
+         "redirect_url": "/microsoft-365/syntex/content-assembly-create-document",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/content-assembly-edit-template.md",
+         "redirect_url": "/microsoft-365/syntex/content-assembly-edit-template",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/content-assembly-modern-template.md",
+         "redirect_url": "/microsoft-365/syntex/content-assembly-modern-template",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/content-assembly.md",
+         "redirect_url": "/microsoft-365/syntex/content-assembly",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-a-classifier.md",
+         "redirect_url": "/microsoft-365/syntex/create-a-classifier",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-a-content-center.md",
+         "redirect_url": "/microsoft-365/syntex/create-a-content-center",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-a-form-processing-model.md",
+         "redirect_url": "/microsoft-365/syntex/create-a-form-processing-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-an-extractor.md",
+         "redirect_url": "/microsoft-365/syntex/create-an-extractor",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-local-model.md",
+         "redirect_url": "/microsoft-365/syntex/create-local-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/create-syntex-model.md",
+         "redirect_url": "/microsoft-365/syntex/create-syntex-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/delete-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/delete-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model.md",
+         "redirect_url": "/microsoft-365/syntex/difference-between-document-understanding-and-form-processing-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/discover-other-trained-models.md",
+         "redirect_url": "/microsoft-365/syntex/discover-other-trained-models",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/document-understanding-overview.md",
+         "redirect_url": "/microsoft-365/syntex/document-understanding-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/duplicate-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/duplicate-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/explanation-templates.md",
+         "redirect_url": "/microsoft-365/syntex/explanation-templates",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/explanation-types-overview.md",
+         "redirect_url": "/microsoft-365/syntex/explanation-types-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/form-processing-overview.md",
+         "redirect_url": "/microsoft-365/syntex/form-processing-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/freeform-document-processing-overview.md",
+         "redirect_url": "/microsoft-365/syntex/freeform-document-processing-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/image-tagging.md",
+         "redirect_url": "/microsoft-365/syntex/image-tagging",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/import-term-set-skos.md",
+         "redirect_url": "/microsoft-365/syntex/import-term-set-skos",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/index.yml",
+         "redirect_url": "/microsoft-365/syntex/index",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model.md",
+         "redirect_url": "/microsoft-365/syntex/learn-about-document-understanding-models-through-the-sample-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/leverage-term-store-taxonomy.md",
+         "redirect_url": "/microsoft-365/syntex/leverage-term-store-taxonomy",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/metadata-search.md",
+         "redirect_url": "/microsoft-365/syntex/metadata-search",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/model-discovery.md",
+         "redirect_url": "/microsoft-365/syntex/model-discovery",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/model-types-overview.md",
+         "redirect_url": "/microsoft-365/syntex/model-types-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/model-usage-analytics.md",
+         "redirect_url": "/microsoft-365/syntex/model-usage-analytics",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/powershell-syntex-explanations.md",
+         "redirect_url": "/microsoft-365/syntex/powershell-syntex-explanations",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/powershell-syntex-import-export.md",
+         "redirect_url": "/microsoft-365/syntex/powershell-syntex-import-export",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/powershell-syntex-intro.md",
+         "redirect_url": "/microsoft-365/syntex/powershell-syntex-intro",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/powershell-syntex-processing.md",
+         "redirect_url": "/microsoft-365/syntex/powershell-syntex-processing",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/powershell-syntex-publishing.md",
+         "redirect_url": "/microsoft-365/syntex/powershell-syntex-publishing",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/prebuilt-model-invoice.md",
+         "redirect_url": "/microsoft-365/syntex/prebuilt-model-invoice",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/prebuilt-model-receipt.md",
+         "redirect_url": "/microsoft-365/syntex/prebuilt-model-receipt",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/prebuilt-overview.md",
+         "redirect_url": "/microsoft-365/syntex/prebuilt-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/push-content-type-to-hub.md",
+         "redirect_url": "/microsoft-365/syntex/push-content-type-to-hub",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/rename-a-model.md",
+         "redirect_url": "/microsoft-365/syntex/rename-a-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/rename-an-extractor.md",
+         "redirect_url": "/microsoft-365/syntex/rename-an-extractor",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/requirements-and-limitations.md",
+         "redirect_url": "/microsoft-365/syntex/requirements-and-limitations",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/set-up-content-understanding.md",
+         "redirect_url": "/microsoft-365/syntex/set-up-content-understanding",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/skos-format-reference.md",
+         "redirect_url": "/microsoft-365/syntex/skos-format-reference",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/solution-manage-contracts-in-microsoft-365.md",
+         "redirect_url": "/microsoft-365/syntex/solution-manage-contracts-in-microsoft-365",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/solution-manage-contracts-step1.md",
+         "redirect_url": "/microsoft-365/syntex/solution-manage-contracts-step1",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/solution-manage-contracts-step2.md",
+         "redirect_url": "/microsoft-365/syntex/solution-manage-contracts-step2",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/solution-manage-contracts-step3.md",
+         "redirect_url": "/microsoft-365/syntex/solution-manage-contracts-step3",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/syntex-azure-billing.md",
+         "redirect_url": "/microsoft-365/syntex/syntex-azure-billing",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/syntex-licensing.md",
+         "redirect_url": "/microsoft-365/syntex/syntex-licensing",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/syntex-overview.md",
+         "redirect_url": "/microsoft-365/syntex/syntex-overview",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/term-store-analytics.md",
+         "redirect_url": "/microsoft-365/syntex/term-store-analytics",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/train-freeform-document-processing-model.md",
+         "redirect_url": "/microsoft-365/syntex/train-freeform-document-processing-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/train-model.md",
+         "redirect_url": "/microsoft-365/syntex/train-model",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/trial-syntex.md",
+         "redirect_url": "/microsoft-365/syntex/trial-syntex",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/use-content-center-site.md",
+         "redirect_url": "/microsoft-365/syntex/use-content-center-site",
+         "redirect_document_id": true
+       },
+       {
+         "source_path": "microsoft-365/contentunderstanding/use-contracts-management-site.md",
+         "redirect_url": "/microsoft-365/syntex/use-contracts-management-site",
+         "redirect_document_id": true
+       },
+       
+    ]
+ }

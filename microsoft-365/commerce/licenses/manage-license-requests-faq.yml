@@ -47,11 +47,6 @@ sections:
           1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
           3. Select **Reserve New Online services**.
-
-              >[!WARNING]
-              >
-              > If you leave the VLSC site or close your browser before confirming your reservation, your selections aren't saved.
-
           4. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
           5. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
 
@@ -94,7 +89,7 @@ sections:
         answer: |
           You can view your reservation history from the **Reservation Confirmation** page or the **View Reservation** page.
 
-          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **Manage Reservation**.
+          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
           2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
 
               >[!NOTE]
@@ -114,7 +109,7 @@ sections:
           Microsoft volume licensing has three categories of Online Services Reservations.
 
           - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and Microsoft 365 admin center sign-in credentials.
-          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on VLSC for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
+          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on Microsoft 365 Admin center for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
           - A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
 
           >[!NOTE]
