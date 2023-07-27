@@ -40,7 +40,7 @@ This topic describes deploying Defender for Endpoint on iOS on Microsoft Intune 
 
 - Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint on iOS. Refer to [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
-- Ensure the end users have company portal app installed, signed in and enrolment completed.
+- Ensure the end users have company portal app installed, signed in and enrollment completed.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint on iOS is available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
