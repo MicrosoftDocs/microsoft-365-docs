@@ -21,6 +21,12 @@ description: Learn how to use Syntex content query and search for custom site co
 > [!NOTE]
 > A new feature has been added to content query that allows you to search all columns in a document library. However, depending on when the library was last indexed, the results might not be up to date. To get the most recent information, you might need to [reindex the document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
 
+
+> [!NOTE]
+> A new feature has been added to content query that gives you query results from all the columns in a document library. However, depending on when the library was last crawled, the results might not include all results. To ensure you get all results, you might need to [you might want to manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
+
+In some cases, you might want to manually request a reindexing of your document library.
+
 Microsoft Syntex gives you the ability to quickly search through your document's metadata with ease. The Syntex content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
