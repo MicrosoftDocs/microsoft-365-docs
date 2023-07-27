@@ -60,6 +60,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
 3. Choose your desired state for Loop workspaces via the checkbox.
   > [!NOTE]
   > If your tenant was automatically enabled as part of an early adopter program by Microsoft, the checkbox may not reflect this. However, the state you save in the Admin Center will override any defaults for your tenant.
+
 4. Select Save.
 
 The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
