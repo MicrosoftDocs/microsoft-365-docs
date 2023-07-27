@@ -78,21 +78,21 @@ When using a terminal, unzip the file using one of the following commands based 
 
    - Linux
 
-   ```console
-   unzip -q SupportToolLinuxBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolLinuxBinary.zip
+     ```
 
    - Intel based Mac
 
-   ```console
-   unzip -q SupportToolmacOSBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolmacOSBinary.zip
+     ```
 
    - For Arm based Mac devices
 
-   ```console
-   unzip -q SupportToolmacOS-armBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolmacOS-armBinary.zip
+     ```
 
 7. Run the tool as <i>root</i> to generate diagnostic package:
 
@@ -112,8 +112,8 @@ When using a terminal, unzip the file using one of the following commands based 
 >
 > - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
 >
-> >[!WARNING]
-> >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
+>   >[!WARNING]
+>   >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -218,7 +218,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it will install a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)
+Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received)
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
@@ -274,8 +274,6 @@ This option enables you to skip the faulty rules added in the auditd rules file 
 
 > [!NOTE]
 > This functionality is only available on Linux.
-
-```console
 
 ```console
 -h, --help                                  show this help message and exit
