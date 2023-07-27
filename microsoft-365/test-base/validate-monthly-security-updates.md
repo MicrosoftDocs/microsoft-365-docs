@@ -1,6 +1,6 @@
 ---
 title: 'Test against Windows monthly security updates'
-description: This section will show you how to set up your own scheduled tests against Windows monthly security updates
+description: This section shows you how to set up your own scheduled tests against Windows monthly security updates
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 Test Base provides scheduled automatic tests against these fixed in a proactive way, so that you can get more assurance and have a chance to fix the issue before any damage happens, and your organization or your users can stay productive and protected.
 
-This section will show you how to set up your own scheduled tests against Windows monthly security updates.
+This section shows you how to set up your own scheduled tests against Windows monthly security updates.
 
 ## Prepare your package
 
