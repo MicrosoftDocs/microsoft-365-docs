@@ -90,7 +90,7 @@ For example, your production policy named _MDAV_Settings_Production_.
 
 ### If you encounter problems
 
-If you encounter problems with your deployment, change the source of the Microsoft Defender Antivirusupdates:
+If you encounter problems with your deployment, change the source of the Microsoft Defender Antivirus updates:
 
 1. In the Intune portal [https://endpoint.microsoft.com](https://endpoint.microsoft.com), go to **Endpoint Security**, select **Antivirus**, and then find your Intune production policy (for example, MDAV_Settings_Production), and then, in **Configuration settings**, select **Edit**.
 
