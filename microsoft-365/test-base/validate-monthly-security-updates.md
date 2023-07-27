@@ -62,4 +62,4 @@ You may use the release number / release version / KB number to map with the upd
 
 For on-demand tests against certain OS version, you may also go to Package catalog \> Manage packages \> Run on request.
 
-![](Media/validate-monthly-security-updates-4.png)
+![A screenshot of Run on request button on Package catalog > Manage packages page](Media/validate-monthly-security-updates-4.png)
