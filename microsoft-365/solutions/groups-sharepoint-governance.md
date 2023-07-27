@@ -17,7 +17,7 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Learn about settings interactions between Microsoft 365 Groups and SharePoint
+description: Learn how admin settings for Microsoft 365 Groups and SharePoint can affect each other and the user experience.
 ---
 
 # SharePoint and Microsoft 365 Groups integration (IT Admins)
