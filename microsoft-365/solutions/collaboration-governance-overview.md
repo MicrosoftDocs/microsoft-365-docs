@@ -167,7 +167,7 @@ Follow these basic steps to create your governance plan:
 These training modules from Microsoft Learn can help you learn the governance features in Microsoft 365.
 
 - [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance) - Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle.
-- [Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions](/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) - Learn about compliance solutions in Microsoft. Topics covered will include Compliance center, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
+- [Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions](/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) - Learn about compliance solutions in Microsoft. Topics covered will include compliance, information protection, and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
 
 ## Illustrations
 

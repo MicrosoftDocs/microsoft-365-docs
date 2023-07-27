@@ -62,7 +62,7 @@ For example, one of the key empowering capabilities of Microsoft 365 is the abil
 
 ## Think about governance first
 
-Your investment in Microsoft 365 is only as good as the value of the content and experiences you enable – so thinking about governance at the start of your journey ensures that you will neither lock down or enable too much before you have had a chance to understand and evaluate the implications of each decision. There are multiple "knobs and dials" you can turn in  Microsoft 365. An effective governance plan is critical to achieve business goals – but governance is about balancing risk with benefits. If we lock everything down, people will find a way to work around the rules if they need to do so to get work done.
+Your investment in Microsoft 365 is only as good as the value of the content and experiences you enable – so thinking about governance at the start of your journey ensures that you neither lock down or enable too much before you have had a chance to understand and evaluate the implications of each decision. There are multiple "knobs and dials" you can turn in  Microsoft 365. An effective governance plan is critical to achieve business goals – but governance is about balancing risk with benefits. If we lock everything down, people will find a way to work around the rules if they need to do so to get work done.
 
 Thinking about governance first allows you to:
 
@@ -70,7 +70,7 @@ Thinking about governance first allows you to:
 
 - **Adapt to different organizations and different types of content and scenarios**. Governance decisions are unique decisions for each organization – one size does not fit all. Not only does each organization have different governance needs, but governance decisions are often not the same for each type of content in Microsoft 365. For example, governance for team content may be different from governance for intranet content and from individual content in OneDrive.
 
-- **Align to business priorities**. The time to start thinking about governance is when you are identifying the key business priorities for the solutions you build in Microsoft 365. These key business outcomes define the context for governance planning. This is important because your business goals will help you define how much time and energy you need to invest in governance. For example, if improving content discoverability across the organization is not very important, you probably do not need to spend too much time focused on enforcing or planning file naming conventions. If, on the other hand, you want to help reduce instances of multiple versions of the same document in various repositories across the enterprise, then your governance decisions will need processes and policies and training to ensure that content authors understand how to name files and follow "one copy of a document" guidance to make sure content is posted in only one location. It also means that you need a process to ensure that you are not unnecessarily creating more than one site or team for the same purpose.
+- **Align to business priorities**. The time to start thinking about governance is when you are identifying the key business priorities for the solutions you build in Microsoft 365. These key business outcomes define the context for governance planning. This is important because your business goals can help you define how much time and energy you need to invest in governance. For example, if improving content discoverability across the organization is not very important, you probably do not need to spend too much time focused on enforcing or planning file naming conventions. If, on the other hand, you want to help reduce instances of multiple versions of the same document in various repositories across the enterprise, then your governance decisions need processes and policies and training to ensure that content authors understand how to name files and follow "one copy of a document" guidance to make sure content is posted in only one location. It also means that you need a process to ensure that you are not unnecessarily creating more than one site or team for the same purpose.
 
 ## How should we be communicating about governance?
 
@@ -82,7 +82,7 @@ Traditionally, governance teams have created long documents outlining every gove
 
 - **Reinforce with training**. Adapt solutions such as [Microsoft 365 learning pathways](/office365/customlearning) to ensure that your organization-specific expectations are reinforced with Microsoft-provided training.
 
-- **Deliver as a site, not a document**. Create your own Microsoft 365 Adoption Center in a SharePoint communication site to ensure that your content authors and site and team owners understand not just "how to" but also "how should." Create topic-specific pages that address different business scenarios to provide both guidance and best practice to leverage or enable different capabilities in SharePoint and Teams and other applications to achieve business outcomes. Make these pages part of your [SharePoint intranet](/sharepoint/plan-intranet).
+- **Deliver as a site, not a document**. Create your own Microsoft 365 Adoption Center in a SharePoint communication site to ensure that your content authors and site and team owners understand not just "how to" but also "how should." Create topic-specific pages that address different business scenarios to provide both guidance and best practice to use or enable different capabilities in SharePoint and Teams and other applications to achieve business outcomes. Make these pages part of your [SharePoint intranet](/sharepoint/plan-intranet).
 
 ## What are the key success factors?
 
@@ -114,7 +114,7 @@ Business outcome goals should be the primary driver for your governance decision
 
 ### Define roles and responsibilities
 
-In addition to your governance team, there are several other key roles or teams that you will want to think about to position for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](/microsoft-365/admin/add-users/admin-roles-page).
+In addition to your governance team, there are several other key roles or teams that can help position your organization for success with Microsoft 365. Some roles may be combined or filled by the same person and others may not be appropriate for all organizations. Most organizations have an Executive Sponsor for Microsoft 365 as a whole and some also have a Steering Committee or team either for Microsoft 365 as a whole or just for the intranet. [Learn more about the comprehensive admin roles and permissions available in Microsoft 365](/microsoft-365/admin/add-users/admin-roles-page).
 
 ### Revisit as business and technology changes
 
@@ -124,7 +124,7 @@ Governance for Microsoft 365 is not "once and done." Have a plan to stay on top 
 
 Ultimately, the success of your governance planning efforts depends on how well you have communicated expectations to the members of your organization. In addition to the suggestions described earlier, consider the following:
 
-- Can you incorporate "how should" with your "how to" training? In other words, can you create a "user resource center" for Microsoft 365 where you can provide resources and training to help provide guidance and training that will help users adopt Microsoft 365 effectively? The best governance content provides guidance that helps all users adopt and get the most value from Microsoft 365.
+- Can you incorporate "how should" with your "how to" training? In other words, can you create a "user resource center" for Microsoft 365 where you can provide resources and training to help provide guidance and training that helps users adopt Microsoft 365 effectively? The best governance content provides guidance that helps all users adopt and get the most value from Microsoft 365.
 
 - Should you create a certification and re-certification for site and team owners?
 
