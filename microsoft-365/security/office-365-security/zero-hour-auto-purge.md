@@ -143,7 +143,7 @@ When a chat message is identified as potentially phishing or malicious in Micros
 
 :::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how zero-hour auto purge works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
 
-Admins can view and manage these quarantined message in the Quarantine view. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
+Admins can view and manage these quarantined messages in the Quarantine view. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing messages in Teams
 
@@ -173,7 +173,7 @@ You can also configure exceptions to the ZAP policy.
 
   - Once you save the policy, the users in the exception list are exempt from the policy setting.
 
-  - Exceptions is only honored when all users in the chat are on the exception list.  
+  - Exceptions are only honored when all users in the chat are on the exception list.  
 
 - Group exceptions:
 
@@ -195,13 +195,13 @@ You can also use PowerShell to create quarantine policies. Connect to [Exchange 
 
 All parameters and values are defined in the following table.
 
-|Parameter|Desciption|Value|
+|Parameter|Description|Value|
 |---|---|---|
 |MalwareQuarantinePolicy|The quarantine policy to be applied for malware.|`AdminOnlyAccessPolicy`|
 |HighConfidencePhishQuarantinePolicy|The quarantine policy applied for High-confidence phish verdicts.|`AdminOnlyAccessPolicy`|
 |ExemptUsers|List of users exempt from ZAP.|`ExceptIfSentTo`|
 |ExemptGroups|List of groups exempt from ZAP.|`ExceptIfSentToMemberOf`|
-|ExemptDomains|List of domains exempt frpm ZAP.|`ExceptIfRecipientDomainIs`|
+|ExemptDomains|List of domains exempt from ZAP.|`ExceptIfRecipientDomainIs`|
 
 ## Zero-hour auto purge (ZAP) FAQ
 
