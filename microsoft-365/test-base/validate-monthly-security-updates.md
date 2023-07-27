@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Test against Windows monthly security updates
 
-Test Base provides scheduled automatic tests against these fixed in a proactive way, so that you can get more assurance and have a chance to fix the issue before any damage happens, and your organization or your users can stay productive and protected.
+Test Base provides scheduled automatic tests against these fixed issues in a proactive way, so that you can get more assurance and have a chance to fix the issue before any damage happens, and your organization or your users can stay productive and protected.
 
 This section shows you how to set up your own scheduled tests against Windows monthly security updates.
 
@@ -28,7 +28,7 @@ This section shows you how to set up your own scheduled tests against Windows mo
 -   [Creating and Testing Binary Files on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testapplication?view=o365-worldwide)
 -   [Test your Intune application on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testintuneapplication?view=o365-worldwide)
 -   [Uploading a pre-built zip package](https://learn.microsoft.com/microsoft-365/test-base/uploadapplication?view=o365-worldwide)
-1.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* will leverage the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests will allow you more flexibility to set up your own test flow. You may also select both.
+1.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* leverages the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests allow you more flexibility to set up your own test flow. You may also select both.
 2.  **Edit package:** Edit test scripts and test flow as you need.
 
     Note: To better mimic the update process, Test Base allows you to update from previous month’s OS (or your own image, see in Custom Image documentation). If you have selected Functional tests in the Configure test step, you may further decide when you would like the Windows update to happen in your test flow.
@@ -41,7 +41,7 @@ Then, you may specify the Windows product(s) you want to test against from the d
 
 ![Graphical user interface, application Description automatically generated](Media/validate-monthly-security-updates-1.png)
 
-Your selection will register your application for automatic test runs against the B release of Windows monthly security updates of selected product(s).
+Your selection registers your application for automatic test runs against the B release of Windows monthly security updates of selected product(s).
 
 -   For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security updates, starting from Patch Tuesday.
 -   For early validation before the official release, you may request to become a Full Access customer on Test Base. Your applications would be validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows more lead time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday. (How to become a Full Access customer? Please refer to [Request to change access level \| Microsoft Docs](https://learn.microsoft.com/microsoft-365/test-base/accesslevel?view=o365-worldwide))
