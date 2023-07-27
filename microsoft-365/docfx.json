@@ -48,8 +48,7 @@
           "**/*.ppt",
           "**/*.pptx",
           "**/*.xls",
-          "**/*.xlsx",
-          "**/*.ps1"
+          "**/*.xlsx"
         ],
         "group": "office365",
         "exclude": [
