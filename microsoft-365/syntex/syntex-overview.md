@@ -108,6 +108,19 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about unstructured models in Microsoft Syntex.](document-understanding-overview.md)
 
+### Image tagging
+
+:::row:::
+   :::column span="3":::
+      Use image tagging in Syntex to find and manage images in SharePoint document libraries. Syntex automatically tags images with descriptive keywords using AI. These keywords are stored in a managed metadata column, making it easier to search, sort, filter, and manage the images.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic image tagging icon.](../media/content-understanding/image-tagging-image.png) 
+   :::column-end:::
+:::row-end:::
+
+[Learn more about image tagging in Microsoft Syntex.](image-tagging-overview.md)
+
 ### Optical character recognition
 
 :::row:::
@@ -160,7 +173,7 @@ This feature is useful when you have a specific piece of information you want to
       ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
    :::column span="3":::
-       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
    :::column-end:::
 :::row-end:::
 
