@@ -20,15 +20,15 @@ f1.keywords: NOCSH
 
 Test Base is an Azure service that enables data-driven application testing while providing user access to intelligent testing from anywhere in the world.
 
-The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Independent Software Vendors (ISVs), System Integrators (SIs) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
+The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Enterprise/Businesses, Independent Software Vendors (ISVs), System Integrators (SIs) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
 
 ## Why test your application with Test Base?
 
-The Test Base for Microsoft 365 service can accommodate the expansion of your testing matrix as necessary so you will have confidence in the integrity, compatibility, and usability of your applications.
+The Test Base for Microsoft 365 service can accommodate your testing matrix as it expands so you will have continuous confidence in the integrity, compatibility, and usability of your applications.
 
-Test Base enables your application to continue working as expected even as platform dependencies vary, and new updates are applied by the Windows update service. With Test Base, you can avoid the aggravation, protracted time commitments, and the expense of setting up and maintaining a complex lab environment for testing your applications.
+Test Base ensures your applications continue working as expected even as platform dependencies vary as well as when new updates are applied by the Windows update service. With Test Base, you can avoid the aggravation, protracted time commitments, and the expense of setting up and maintaining a complex lab environment for testing your applications.
 
-In addition, you can automatically test compatibility against security and feature updates for Windows by using secure virtual machines (VMs) while also obtaining access to world-class intelligence for testing your applications. You can also get your apps tested for compatibility against pre-release windows security updates by submitting a request to get the access.
+In addition, you can automatically test compatibility against security and feature updates for Windows by using secure virtual machines (VMs) while also obtaining access to world-class intelligence for testing your applications. You can also test your apps for compatibility against pre-release windows security update - simply submit a request to get access.
 
 ## How does Test Base work?
 
@@ -40,14 +40,14 @@ Following a successful upload, packages are tested against Windows pre-release u
 
 After initial tests are successfully completed, the customer can do a deep dive with insights on performance and regression analysis to detect whether pre-release content updates have degraded application performance in any way.
 
-However, if the package failed any test, then the customer can also leverage Insights from memory or CPU regressions to remediate the failure and then update the package as necessary.
+However, if the package fails any test, then the customer can also leverage insights from memory or CPU regressions to remediate the failure and then update the package as necessary.
 
-With Test Base, the customer can use a single location to manage all packages being tested, which can also facilitate uploading and updating packages to generate new application versions as needed.
+With Test Base, customers can use a single location to manage all the packages being tested. Customers can also facilitate uploading and updating packages to generate new application versions as needed.
 
 > [!NOTE]
 > **So that customers can take advantage of pre-release update content, they must specifically request access to it. Once your request for access to pre-release updates is approved, your uploaded packages will automatically get scheduled to be tested against the pre-release Windows updates for the OS versions selected during onboarding**.
 
-Then, as new Windows pre-release updates become available, application packages are automatically tested with new pre-release content. Thereafter, an additional round of insights may be required. If customers do not specifically request access, then application packages will be tested against only the current released version of Windows.
+As new Windows pre-release updates become available, application packages are automatically tested with new pre-release content. Thereafter, an additional round of insights will be provided. If customers do not specifically request access to prerelease testing their application packages will be tested against only the current released version of Windows.
 
 After packages are successfully tested, customers can deliver them to their software customers and end users with confidence and the assurance that Test Base did its job.
 
