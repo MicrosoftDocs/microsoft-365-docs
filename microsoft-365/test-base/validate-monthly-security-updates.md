@@ -25,9 +25,9 @@ This section will show you how to set up your own scheduled tests against Window
 ## Prepare your package
 
 1.  **Define content:** Depending on your package type, you may select below instructions:
--   [Creating and Testing Binary Files on Test Base](https://learn.microsoft.com/en-us/microsoft-365/test-base/testapplication?view=o365-worldwide)
--   [Test your Intune application on Test Base](https://learn.microsoft.com/en-us/microsoft-365/test-base/testintuneapplication?view=o365-worldwide)
--   [Uploading a pre-built zip package](https://learn.microsoft.com/en-us/microsoft-365/test-base/uploadapplication?view=o365-worldwide)
+-   [Creating and Testing Binary Files on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testapplication?view=o365-worldwide)
+-   [Test your Intune application on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testintuneapplication?view=o365-worldwide)
+-   [Uploading a pre-built zip package](https://learn.microsoft.com/microsoft-365/test-base/uploadapplication?view=o365-worldwide)
 1.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* will leverage the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests will allow you more flexibility to set up your own test flow. You may also select both.
 2.  **Edit package:** Edit test scripts and test flow as you need.
 
@@ -44,8 +44,8 @@ Then, you may specify the Windows product(s) you want to test against from the d
 Your selection will register your application for automatic test runs against the B release of Windows monthly security updates of selected product(s).
 
 -   For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security updates, starting from Patch Tuesday.
--   For early validation before the official release, you may request to become a Full Access customer on Test Base. Your applications would be validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows more lead time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday. (How to become a Full Access customer? Please refer to [Request to change access level \| Microsoft Docs](https://learn.microsoft.com/en-us/microsoft-365/test-base/accesslevel?view=o365-worldwide))
--   To protect your devices from unpatched vulnerabilities, Microsoft also offers more types of update releases other than B release security updates (See in [Update release cycle for Windows clients](https://learn.microsoft.com/en-us/windows/deployment/update/release-cycle)). If you would like to test against optional non-security preview releases, please contact us via [testbasepreview@microsoft.com](mailto:testbasepreview@microsoft.com).
+-   For early validation before the official release, you may request to become a Full Access customer on Test Base. Your applications would be validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows more lead time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday. (How to become a Full Access customer? Please refer to [Request to change access level \| Microsoft Docs](https://learn.microsoft.com/microsoft-365/test-base/accesslevel?view=o365-worldwide))
+-   To protect your devices from unpatched vulnerabilities, Microsoft also offers more types of update releases other than B release security updates (See in [Update release cycle for Windows clients](https://learn.microsoft.com/windows/deployment/update/release-cycle)). If you would like to test against optional non-security preview releases, please contact us via [testbasepreview@microsoft.com](mailto:testbasepreview@microsoft.com).
 -   If the OS you’re looking for didn’t show up in our current supported product list, feel free to [Let us know your request](https://forms.office.com/r/ZeGihXBXHk)).
 
 ## Check test results for monthly security updates
