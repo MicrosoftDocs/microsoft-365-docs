@@ -36,7 +36,7 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-Manage which SharePoint sites users can use for content assembly.
+By default, content assembly is available for libraries on all SharePoint sites. To turn off content assembly on all sites, follow these steps.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -44,10 +44,4 @@ Manage which SharePoint sites users can use for content assembly.
 
 3. On the **Manage Microsoft Syntex** page, select **Content assembly**.
 
-4. On the **Content assembly** page:
-
-    a. Choose which site or sites this service should be enabled for.
-
-    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
-
-    c. Select **Save**.
+4. On the **Content assembly** page, select **No libraries**, and then select **Save**.
