@@ -172,6 +172,15 @@
     - name: Annotations
       href: annotations.md
 
+    - name: Image tagging
+      items: 
+        - name: Overview 
+          href: image-tagging-overview.md
+        - name: Admin setup 
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
+
     - name: Optical character recognition 
       items: 
         - name: Overview 
@@ -214,8 +223,6 @@
               href: scenario-document-compliance.md
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Run a trial
-          href: trial-syntex.md
         - name: Solution accelerators
           href: site-templates.md 
         - name: Solutions

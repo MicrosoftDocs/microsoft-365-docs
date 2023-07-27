@@ -21,6 +21,9 @@ description: Learn how to plan, sign up, and run a trial pilot program for Micro
 
 # Run a trial of Microsoft Syntex
 
+> [!NOTE]
+> Per-user trials are no longer available. This article is currenty being updated for pay-as-you-go trials.
+
 This article describes how to set up and run a trial pilot program to deploy Microsoft Syntex in your organization. It also recommends best practices for the trial.
 
 ## Sign up for a trial
