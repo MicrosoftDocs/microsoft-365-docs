@@ -108,3 +108,4 @@ Here's an example of the response.
     "orgLastSeen": "2017-08-29T13:09:05Z"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -138,3 +138,4 @@ To learn more, see the following resources:
 ## See also
 
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

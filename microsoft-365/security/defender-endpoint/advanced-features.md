@@ -246,3 +246,4 @@ Backup quarantined files in a secure and compliant location so they can be downl
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

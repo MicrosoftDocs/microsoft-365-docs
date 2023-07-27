@@ -69,15 +69,15 @@ Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability 
 
 ### 1.3 URL
 
+
 ```http
-GET api/machines/HardwareFirmwareInventoryProductCodeByMachine
+GET api/machines/HardwareFirmwareInventoryByMachine
 ```
 
 ### 1.4 Parameters
 
 - pageSize (default = 50,000): Number of results in response.
 - $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
-
 
 ### 1.5 Properties (JSON response)
 
@@ -104,8 +104,9 @@ deviceId|String|Unique identifier for the device in the service.
 
 ### 1.6.1 Request example
 
+
 ```http
-GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryProductCodeByMachine
+GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryByMachine
 ```
 
 ### 1.6.2 Response example
@@ -178,6 +179,7 @@ Property (ID)|Data type|Description
 |GeneratedTime|DateTime|The time the export was generated.
 
 
+
 ## 2.6 Example
 
 ### 2.6.1 Request example
@@ -200,3 +202,4 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryExp
 
    }
 ```
+

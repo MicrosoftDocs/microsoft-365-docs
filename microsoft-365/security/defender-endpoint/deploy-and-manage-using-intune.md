@@ -184,3 +184,4 @@ You can download the files here, [Printer Protection Samples](https://github.com
       :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Default%20Deny%20-%20custom%20policy.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

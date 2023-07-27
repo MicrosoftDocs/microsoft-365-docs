@@ -238,3 +238,4 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
   "ScanDefinitionIds": ["td32f17af-5cc2-4e4e-964a-4c4ef7d216e2", "ab32g20af-5dd2-4a5e-954a-4c4ef7d216e2"],
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

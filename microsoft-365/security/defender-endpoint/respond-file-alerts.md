@@ -162,7 +162,7 @@ The **Download file** button can have the following states:
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
-    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
+    - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
@@ -365,3 +365,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -270,3 +270,4 @@ If you are using Microsoft 365 Business Premium or Microsoft Defender for Busine
 - [Monitor web security](web-protection-monitoring.md)
 - [Respond to web threats](web-protection-response.md)
 - [Requirements for Network Protection](web-content-filtering.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

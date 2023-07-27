@@ -207,3 +207,4 @@ For Security Management for Microsoft Defender for Endpoint on Windows Server 20
 ## Related topic
 
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
