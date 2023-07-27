@@ -1,3 +1,20 @@
+---
+title: 'How to prepare a Windows VHD for Test Base'
+description: The guidance of how to prepare a Windows VHD for Test Base
+search.appverid: MET150
+author: mansipatel-usl
+ms.author: tinachen
+manager: rshastri
+audience: Software-Vendor
+ms.topic: article
+ms.date: 07/27/2023
+ms.service: test-base
+ms.localizationpriority: medium
+ms.collection: TestBase-M365
+ms.custom:
+ms.reviewer: tinachen
+f1.keywords: NOCSH
+---
 # How to prepare a Windows VHD for Test Base
 
 Before you upload a Windows virtual machine (VM) from on-premises to Test Base, you need to prepare the virtual hard disk (VHD) first.
@@ -18,7 +35,7 @@ You need to follow the configuration steps below to make sure that the VM VHD is
 
 ## Step 1. Run the *AzureConfig.ps1* script for easy configuration
 
-To make the configuration steps easier we prepared a configuration script, you can download **[AzureConfig.ps1](https://github.com/microsoft/testbase/blob/main/Samples/Package/Functional/Calculator-Appium-CSharp-Sample/Package/scripts/functional/install-app.ps1)** and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
+To make the configuration steps easier we prepared a configuration script, you can download **[AzureConfig.ps1](https://github.com/microsoft/testbase/blob/main/CustomImage/AzureConfig.ps1)** and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
 
 After the script finishes, restart the computer.
 The **ChkDsk** will run during the system boot. Make sure the report shows a clean and healthy disk.
