@@ -45,7 +45,7 @@ If using a terminal download using the command:
     wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
     ```
 
-2. Verify the download
+2. Verify the download.
 
     > [!NOTE]
     > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'E8D1B752A937E9AB305AE3C30737E31D75AE6FF9299002AB23F5C463C77DD159'
@@ -70,8 +70,8 @@ If using a terminal download using the command:
 
 5. Three new zip files will be produced:
       1. **SupportToolLinuxBinary.zip** : For all Linux devices
-      2. **SupportToolmacOSBinary.zip** : For Intel based Mac devices
-      3. **SupportToolmacOS-armBinary.zip** : For Arm based Mac devices
+      2. **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
+      3. **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
 
 6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
 When using a terminal, unzip the file using one of the following commands based on machine type:
@@ -82,13 +82,13 @@ When using a terminal, unzip the file using one of the following commands based 
      unzip -q SupportToolLinuxBinary.zip
      ```
 
-   - Intel based Mac
+   - Intel-based Mac
 
      ```console
      unzip -q SupportToolmacOSBinary.zip
      ```
 
-   - For Arm based Mac devices
+   - For Arm-based Mac devices
 
      ```console
      unzip -q SupportToolmacOS-armBinary.zip
@@ -192,7 +192,7 @@ Usage example: `sudo ./MDESupportTool -d`
 
 #### Collect performance info
 
-Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
+Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand.
 
 ```console
 -h, --help            show this help message and exit
@@ -218,7 +218,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it will install a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received)
+Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
@@ -227,7 +227,7 @@ Usage example `./mde_support_tool.sh trace --length 5`
 Add exclusions for audit-d monitoring.
 
 > [!NOTE]
-> This functionality exists for Linux only
+> This functionality exists for Linux only.
 
 ```console
   -h, --help            show this help message and exit
@@ -249,7 +249,7 @@ Add exclusions for audit-d monitoring.
                         exclude all process of the given syscall
 ```
 
-Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+Usage example: `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
 ### AuditD Rate Limiter
 
@@ -263,7 +263,7 @@ Syntax that can be used to limit the number of events being reported by the audi
 -e <true/false>, --enable <true/false>      enable/disable the rate limit with default values
 ```
 
-Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
+Usage example: `sudo ./mde_support_tool.sh ratelimit -e true`
 
 > [!NOTE]
 > This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
@@ -280,7 +280,7 @@ This option enables you to skip the faulty rules added in the auditd rules file 
 -e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules. In case no argumanet is passed, the option will be true by default.
 ```
 
-Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
+Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 > [!NOTE]
 > This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
@@ -293,7 +293,7 @@ Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 - mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information)
+  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information).
 
 - mde.xml
 
