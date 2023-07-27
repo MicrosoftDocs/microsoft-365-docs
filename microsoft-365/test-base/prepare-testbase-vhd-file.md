@@ -18,7 +18,7 @@ You need to follow the configuration steps below to make sure that the VM VHD is
 
 ## Step 1. Run the *AzureConfig.ps1* script for easy configuration
 
-To make the configuration steps easier we prepared a configuration script, you can download **[AzureConfig.ps1](AzureConfig.ps1)** and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
+To make the configuration steps easier we prepared a configuration script, you can download **[AzureConfig.ps1](https://github.com/microsoft/testbase/blob/main/Samples/Package/Functional/Calculator-Appium-CSharp-Sample/Package/scripts/functional/install-app.ps1)** and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
 
 After the script finishes, restart the computer.
 The **ChkDsk** will run during the system boot. Make sure the report shows a clean and healthy disk.
