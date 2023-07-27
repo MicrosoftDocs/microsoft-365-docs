@@ -329,7 +329,7 @@
       - name: Groups creation domain
         href: choose-domain-to-create-groups.md
       - name: End of lifecycle options
-        href: end-life-cycle-groups-teams-sites-yammer.md
+        href: end-life-cycle-groups-teams-sites-viva-engage.md
   - name: File collaboration in SharePoint with Microsoft 365
     href: /sharepoint/deploy-file-collaboration
 
