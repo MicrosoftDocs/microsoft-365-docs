@@ -57,3 +57,7 @@ Syntex content query lets you use the metadata associated with a document to hel
     For numbers, currency, and date columns, you can scope parameters of the query—for example, greater than a specific amount or within a specific period of time. For text columns, you can specify if you want to contain or not contain certain words.
 
 4. Select **Search**. The documents that match your metadata query are shown on the results page. 
+
+### Query on any column
+
+A new feature has been added that lets you query on any column in your document library. However, depending on when the library was last crawled, the results might not include items that have not been recently updated. To ensure you get the complete results, you might want to [manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
