@@ -37,7 +37,7 @@ Image tagging is available for the following image file types: .bmp, .png, .gif,
 
 - **Image Tags is an editable taxonomy column:**  You can add new tags or remove the AI-generated tags as needed to meet your requirements.
 
-- **Custom metadata already applied:** If the image already has custom metadata applied to it, that information will also be extracted and shown in the **Image Tags** column.
+- **Custom metadata already applied:** If the image already has custom metadata applied to it, that information is extracted and shown in the **Image Tags** column.
 
 - **Existing image processing:** Currently, existing images aren't processed when image tagger is enabled. Any newly uploaded images are processed for automatic image tagging.
 
