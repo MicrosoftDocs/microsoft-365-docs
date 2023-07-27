@@ -25,7 +25,7 @@ Syntex content query lets you use the metadata associated with a document to hel
 > [!NOTE]
 > This feature is available only for licensed Syntex users.
 
-A new feature has been added that lets you query on any column in your document library. However, depending on when the library was last crawled, the results might include only items that have been recently updated. To ensure you get the complete results, you might want to [manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
+A new feature has been recently added that lets you query on any column in your document library. However, depending on when the library was last crawled, the results might include only items that have been recently updated. To ensure you get the complete results, you might want to [manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
 
 ## To use Syntex content query
 
@@ -58,6 +58,3 @@ A new feature has been added that lets you query on any column in your document 
 
 4. Select **Search**. The documents that match your metadata query are shown on the results page. 
 
-### Query on any column
-
-A new feature has been added that lets you query on any column in your document library. However, depending on when the library was last crawled, the results might not include items that have not been recently updated. To ensure you get the complete results, you might want to [manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
