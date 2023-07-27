@@ -1,6 +1,6 @@
 ---
 title: A collaboration governance framework for Microsoft 365
-ms.reviewer: mmclean
+ms.reviewer: rahulnayak
 ms.date: 07/27/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
