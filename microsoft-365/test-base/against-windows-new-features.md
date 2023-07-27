@@ -1,15 +1,33 @@
+---
+title: 'Test against Windows new features'
+description: This section will show you how to set up your own scheduled tests against preview features in Windows insider channel
+search.appverid: MET150
+author: Tinacyt
+ms.author: tinachen
+manager: rshastri
+audience: Software-Vendor
+ms.topic: troubleshooting
+ms.date: 07/27/2023
+ms.service: test-base
+ms.localizationpriority: medium
+ms.collection: TestBase-M365
+ms.custom:
+ms.reviewer: Tinacyt
+f1.keywords: NOCSH
+---
+
 # Test against Windows new features
 
-If you’re seeking further validation of your eco-system solution(s) against Windows new features, or hesitating whether to deploy the latest Windows feature or the next version of security solution to your organization, Test Base provides you a way to automatically test your applications against preview builds in Windows Insider program (More about [Windows Insider](https://www.microsoft.com/en-us/windowsinsider/about-windows-insider-program)).
+If you’re seeking further validation of your eco-system solution(s) against Windows new features, or hesitating whether to deploy the latest Windows feature or the next version of security solution to your organization, Test Base provides you a way to automatically test your applications against preview builds in Windows Insider program (More about [Windows Insider](https://www.microsoft.com/windowsinsider/about-windows-insider-program)).
 
 This section will show you how to set up your own scheduled tests against preview features in Windows insider channel.
 
 ## Prepare your package
 
 1.  **Define content:** Depending on your package type, you may select below instructions:
--   [Creating and Testing Binary Files on Test Base](https://learn.microsoft.com/en-us/microsoft-365/test-base/testapplication?view=o365-worldwide)
--   [Test your Intune application on Test Base](https://learn.microsoft.com/en-us/microsoft-365/test-base/testintuneapplication?view=o365-worldwide)
--   [Uploading a pre-built zip package](https://learn.microsoft.com/en-us/microsoft-365/test-base/uploadapplication?view=o365-worldwide)
+-   [Creating and Testing Binary Files on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testapplication?view=o365-worldwide)
+-   [Test your Intune application on Test Base](https://learn.microsoft.com/microsoft-365/test-base/testintuneapplication?view=o365-worldwide)
+-   [Uploading a pre-built zip package](https://learn.microsoft.com/microsoft-365/test-base/uploadapplication?view=o365-worldwide)
 1.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* will leverage the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests will allow you more flexibility to set up your own test flow. You may also select both.
 2.  **Edit package:** Edit test scripts and test flow as you need.
 
@@ -29,7 +47,7 @@ Your selection will register your application for automatic test runs against th
 
 Note:
 
--   Check in [Flight Hub](https://docs.microsoft.com/en-us/windows-insider/flight-hub/) for more details on the Windows Insider Preview builds.
+-   Check in [Flight Hub](https://docs.microsoft.com/windows-insider/flight-hub/) for more details on the Windows Insider Preview builds.
 -   Windows 11, version 23H2 shares the same servicing branch as Windows 11, version 22H2. New features are firstly flight to insider audience via a simple update with enablement package(eKB) (See in [Windows client roadmap update](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-client-roadmap-update-july-2023/ba-p/3871736)). Testing against these new features will soon be supported also in Test Base Feature Update.
 
 You may also set your current OS in “*OS baseline for Insight*”. We would provide you with more test insights by regression analysis of your as-is OS environment and the latest target OS.
