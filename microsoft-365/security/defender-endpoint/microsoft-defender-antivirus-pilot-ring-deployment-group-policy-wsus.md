@@ -69,13 +69,13 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. On the **Before You Begin** page, review the preliminary information and attend to any configuration or credential matters, and then select **Next**.
 
-1. ON the **Microsoft Update Improvement Program** page, if you would like to participate in the program, select **Yes, I would like to join the Microsoft Update Improvement Program**. Select **Next**.
+1. On the **Microsoft Update Improvement Program** page, if you would like to participate in the program, select **Yes, I would like to join the Microsoft Update Improvement Program**. Select **Next**.
 
 1. On the **Choose Upstream Server** page, select **Synchronize from Microsoft Update** and then select **Next**.
 
 1. On the **Specify Proxy Server** page, select **Next**.
 
-1. On the **Choose Languages** page, select **Download updates only in these languages. Select the update languages that you want to download, and then select **Next**
+1. On the **Choose Languages** page, select **Download updates only in these languages**. Select the update languages that you want to download, and then select **Next**
 
 1. On the **Choose Products** page, scroll down to **Forefront**, select **Forefront Client Security** and **System Center Endpoint Protection** This is shown in the following figure.
    
@@ -103,7 +103,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png" alt-text="Shows a screen capture of the Update Services snap-in console with YR2K19 shown." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png":::
 
-1. When synchronization is complete, you can see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **Your WSUS server currently shows that no computers are registered to receive updates." This warning is normal at this point of the deployment configuration process. 
+1. When synchronization is complete, you can see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **"Your WSUS server currently shows that no computers are registered to receive updates"**. This warning is normal at this point of the deployment configuration process. 
 
 #### View update details
 
@@ -142,7 +142,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Updates** > **All Updates**.
 1. In **Approval**, select **Any Except Declined**, and the select **Refresh**.
 
-   The **All Updates** field lists “Platform Updates” and “Security Intelligence Updates” (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
+   The **All Updates** view lists “Platform Updates” and “Security Intelligence Updates” (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
 
    :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623 platform updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png"::: 
 
@@ -158,7 +158,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Computers** > **Options**. The **Options** window opens
 1. Select **Automatic Approvals** to launch the **Automatic Approvals** configuration wizard. 
 1. In **Automatic Approvals** page, on the **Update Rules** tab, select **OK**.
-1. On the **Add Rule** page, is **Step 1**, select **When an update is in a specific classification** and **When an update is in a specific product.
+1. On the **Add Rule** page, is **Step 1**, select **When an update is in a specific classification** and **When an update is in a specific product**.
 1. In **Choose Products**, scroll to **Forefront**, and then select **Forefront Client Security**.  Scroll to **Windows**, and then select **Microsoft Defender Antivirus**, and then select **OK**. The workflow returns you to the **Add Rule** page.
 1. On the **Add Rule** page, in **Step 1: Select Properties**, ensure the following are selected:
    - **When an update is in a specific classification**
