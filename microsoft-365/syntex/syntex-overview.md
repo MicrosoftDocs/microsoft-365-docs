@@ -179,20 +179,6 @@ This feature is useful when you have a specific piece of information you want to
 
 Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
 
-## Content compliance
-
-:::row:::
-   :::column span="3":::
-      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png) 
-       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
-   :::column-end:::
-:::row-end:::
-
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
-
 ### Content processing
 
 :::row:::
