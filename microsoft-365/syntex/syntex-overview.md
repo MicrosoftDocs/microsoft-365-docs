@@ -140,10 +140,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 :::row:::
    :::column span="":::
-      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
    :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
    :::column-end:::
 :::row-end:::
 
