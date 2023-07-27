@@ -72,7 +72,7 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 
 Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction (ASR) rules.
 
-The following ASR rules don't honor Microsoft Defender Antivirus exclusions:
+The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 
 | ASR rules name: |
 |:---|
