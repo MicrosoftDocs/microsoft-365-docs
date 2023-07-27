@@ -1,3 +1,21 @@
+---
+title: 'Test against Windows monthly security updates'
+description: This section will show you how to set up your own scheduled tests against Windows monthly security updates
+search.appverid: MET150
+author: Tinacyt
+ms.author: tinachen
+manager: rshastri
+audience: Software-Vendor
+ms.topic: troubleshooting
+ms.date: 07/27/2023
+ms.service: test-base
+ms.localizationpriority: medium
+ms.collection: TestBase-M365
+ms.custom:
+ms.reviewer: Tinacyt
+f1.keywords: NOCSH
+---
+
 # Test against Windows monthly security updates
 
 Test Base provides scheduled automatic tests against these fixed in a proactive way, so that you can get more assurance and have a chance to fix the issue before any damage happens, and your organization or your users can stay productive and protected.
