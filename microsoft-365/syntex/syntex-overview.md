@@ -195,11 +195,11 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 ### Premium taxonomy services
 
 :::row:::
-   :::column span="":::
-      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
-   :::column-end:::
    :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
    :::column-end:::
 :::row-end:::
 
