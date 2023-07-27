@@ -124,10 +124,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Optical character recognition
 
 :::row:::
-   :::column span="3":::
+   :::column span="":::
       ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
-   :::column span="":::
+   :::column span="3":::
       The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
    :::column-end:::
 :::row-end:::
@@ -139,10 +139,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Annotations
 
 :::row:::
-   :::column span="":::
+   :::column span="3":::
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
-   :::column span="3":::
+   :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
    :::column-end:::
 :::row-end:::
