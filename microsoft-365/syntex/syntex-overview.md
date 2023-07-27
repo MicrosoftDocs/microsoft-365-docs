@@ -125,10 +125,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 :::row:::
    :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for. 
+      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
    :::column span="":::
-      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
    :::column-end:::
 :::row-end:::
 
