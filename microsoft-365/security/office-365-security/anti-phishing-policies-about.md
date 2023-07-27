@@ -145,7 +145,7 @@ The relationship between spoof intelligence and whether sender DMARC policies ar
 |**Spoof intelligence Off**|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` and `p=reject` DMARC policies use the **If the message is detected as spoof and DMARC policy is set as p=quarantine** and **If the message is detected as spoof and DMARC policy is set as p=reject** actions in anti-phishing policies.|Implicit email authentication checks aren't used. Explicit email authentication failures for `p=quarantine` DMARC policies are quarantined, and failures for `p=reject` DMARC policies are quarantined.|
 
 > [!NOTE]
-> If the tenant recipient domain's MX record points to a different email security solution that sits in front of Office 365, the Honor DMARC policy will not be applied because the information about the sending infrastructure is likely affected by the complex mail flow routing. However, if enhanced filtering for connectors is enabled, the Honor DMARC policy is applied even when the MX record is pointed to a third party, and it will be treated as a normal incoming message.
+> If the MX record for the domain points to a third-party service or device that sits in front of Microsoft 365, the **Honor DMARC policy** setting is applied only if [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) is enabled for the connector that receives inbound messages.
 
 ### Unauthenticated sender indicators
 
