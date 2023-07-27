@@ -1,7 +1,7 @@
 ---
-title: "Settings interactions between Microsoft 365 Groups and SharePoint"
-ms.reviewer: mmclean
-ms.date: 08/12/2020
+title: SharePoint and Microsoft 365 Groups integration (IT Admins)
+ms.reviewer: rahulnayak
+ms.date: 07/27/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,10 +17,10 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "Learn about settings interactions between Microsoft 365 Groups and SharePoint"
+description: Learn about settings interactions between Microsoft 365 Groups and SharePoint
 ---
 
-# Settings interactions between Microsoft 365 Groups and SharePoint
+# SharePoint and Microsoft 365 Groups integration (IT Admins)
 
 Some settings for Microsoft 365 Groups and SharePoint in Microsoft 365, particularly related to sharing and group and team site creation, overlap with each other. This article provides descriptions of these interactions and best practices for how to work with these settings.
 
