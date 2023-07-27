@@ -1,7 +1,7 @@
 ---
 title: A collaboration governance framework for Microsoft 365
 ms.reviewer: mmclean
-ms.date: 08/12/2020
+ms.date: 07/27/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -107,12 +107,11 @@ As you start your governance planning process, keep these best practices in mind
 
 - **Embed governance decisions directly in the solutions you create** - many governance decisions can be implemented by turning on or off features in Microsoft 365.
 
-
 - **Use a phased approach** - Roll collaboration features out to a small group of users first. Get feedback from them, watch for help desk tickets, and update any needed settings or processes before proceeding to a larger group.
 
 - **Reinforce with training** - adapt solutions such as [Microsoft 365 learning pathways](/office365/customlearning) to ensure that your organization-specific expectations are reinforced with Microsoft-provided training.
 
-- **Have a strategy for communicating governance policies and guidelines in your organization** - create a Microsoft 365 Adoption Center in a SharePoint communication site to communicate policies and procedures.
+- **Have a strategy for communicating governance policies and guidelines in your organization** - create a Microsoft 365 Adoption Center in a [SharePoint communication site](https://support.microsoft.com/en-us/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) to communicate policies and procedures.
 
 - **Define roles and responsibilities** - identify your governance core team and work through key governance decisions about provisioning and naming and external access first, and then work through the remaining decisions.
 
@@ -124,9 +123,9 @@ For a closer look at these practices, read [Create your collaboration governance
 
 Because groups and teams can be created in several ways, we recommend training your users to use the method that fits your organization the best:
 
+- If your organization has deployed Teams, instruct your users to create a team when they need a collaboration space.
 - If your organization does most of its communication using email, instruct your users to create groups in Outlook.
 - If your organization heavily uses SharePoint or is migrating from SharePoint on-premises, instruct your users to create SharePoint team sites for collaboration.
-- If your organization has deployed Teams, instruct your users to create a team when they need a collaboration space.
 
 This helps avoid confusion if users are unfamiliar with how groups relate to their related services. For more information about how to talk to your users about groups, see [Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
 
@@ -145,6 +144,11 @@ Governance capabilities for collaboration in Microsoft 365 include features in M
 |Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
 |Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
 
+Additionally, these add-on licenses provide enhanced governance capabilities:
+
+- [Microsoft Teams Premium](/microsoftteams/enhanced-teams-experience) provides compliance capabilities for meetings, including watermarks, encryption, and sensitivity labels.
+- [Microsoft Syntex - SharePoint Advanced Management](/sharepoint/advanced-management) provides policies for content access, collaboration and lifecycle management.
+
 ## Collaboration governance planning recommendations
 
 Follow these basic steps to create your governance plan:
@@ -162,32 +166,8 @@ Follow these basic steps to create your governance plan:
 
 These training modules from Microsoft Learn can help you learn the governance features in Microsoft 365.
 
-#### Information protection
-
-|Training:|Manage information protection and governance|
-|:---|:---|
-|![Information protection training icon.](../media/information-protection-governance.svg)|The amount of data being generated today is growing faster than ever, employees want to get work done everywhere, and the regulatory landscape is constantly changing. Microsoft's solutions for information protection and governance help organizations achieve the right balance between keeping their data protected and their people productive. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>5 hr 13 min - Learning Path - 7 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/m365-compliance-information-governance/introduction/)
-
-<br><br>
-
-|Training:|Protect enterprise information with Microsoft 365|
-|:---|:---|
-|![Teams training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>1 hr - Learning Path - 5 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/m365-security-info-overview/introduction/)
-
-#### Security and compliance
-
-|Training:|Demonstrate fundamental knowledge of Microsoft 365 security and compliance capabilities|
-|:---|:---|
-|![Security and compliance training icon.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Learn about the Microsoft 365 security and compliance solutions areas and the capabilities available to help enterprises secure their enterprise and meet regulatory requirements. If you're unfamiliar with basic cloud computing concepts, we recommend you take [Cloud Concepts - Principles of cloud computing](/training/modules/principles-cloud-computing/index).<br><br>3 hr 11 min - Learning Path - 8 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/what-is-m365/1-introduction/)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance) - Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle.
+- [Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions](/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) - Learn about compliance solutions in Microsoft. Topics covered will include Compliance center, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
 
 ## Illustrations
 
@@ -213,34 +193,11 @@ Microsoft 365 includes a broad set of information protection and compliance capa
 
 This set of illustrations uses one of the most regulated industries, financial services, to demonstrate how these capabilities can be applied to address common regulatory requirements. Feel free to adapt these illustrations for your own use. 
 
-
 | Item | Description |
 |:-----|:-----|
 |[![Model poster: Microsoft Purview information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Updated November 2020|Includes: <ul><li>  Microsoft Purview Information Protection and Microsoft Purview Data Loss Prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
 
-## Conference sessions
-
-Watch these conference sessions to learn more about governance for Microsoft 365 Groups and Teams.
-
-**Fundamentals**
-
-Learn the fundamentals and new innovations in Microsoft 365 Groups, including management and governance at scale, best practices for driving usage and adoption, and self-service.
-
-- [Embrace Microsoft 365 Groups](https://www.youtube.com/watch?v=dAamBF1gb7M)
-
-**Governance**
-
-Learn how to set up your groups expiry lifecycle, naming policies, classification labels, collaboration with external guests, and manage group creation permissions.
-
-- [Transform collaboration and fight shadow IT with Office 365 Groups](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
-
-**Customer example**
-
-See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Viva Engage work together to provide a global collaboration platform.
-
-- [Finding your collaboration sweet spot with Microsoft 365 Groups, SharePoint, Teams, and Viva Engage](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
-
-## See also
+## Related topics
 
 [Microsoft 365 security documentation](../security/index.yml)
 
