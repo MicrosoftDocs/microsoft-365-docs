@@ -68,7 +68,7 @@ Logo|Partner name|Description
 
 Logo|Partner name|Description
 :---|:---|:---
-![Image of CyberSponse CyOps logo.](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps integrates with Defender for Endpoint to automate customers' high-speed incident response playbooks
+![Image of Fortinet logo.](images/fortinet-logo.jpg)|[Fortinet FortiSOAR](https://www.fortinet.com/products/fortisoar)|Fortinet FortiSOAR is a holistic Security Orchestration, Automation and Response (SOAR) workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources. It pulls together all of organization's tools, helps unify operations and reduces alert fatigue, context switching, and the mean time to respond to incidents. 
 ![Image of Delta Risk ActiveEye logo.](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Defender for Endpoint with its cloud-native SOAR platform, ActiveEye.
 ![Image of Demisto, a Palo Alto Networks Company logo.](images/demisto-logo.png)|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto integrates with Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
 ![Image of Microsoft Flow & Azure Functions logo.](images/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
