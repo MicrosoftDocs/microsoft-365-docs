@@ -22,7 +22,7 @@ description: Lean about lifecycle governance options for collaboration tools in 
 
 # Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams
 
-Microsoft 365 groups has a rich set of tools to implement the governance capabilities your organization requires.
+Microsoft 365 Groups has a rich set of tools to implement the governance capabilities your organization requires.
 
 The following section describes the capabilities, recommends best practices, and provides guidance to ask the right questions to determine the requirements for governance, and how to meet them.
 
