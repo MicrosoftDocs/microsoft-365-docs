@@ -59,7 +59,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Replies   <br/> |The number of replied messages in all channels during the specified time period. <br/> |
 |Urgent messages    <br/> |The number of urgent messages during the specified time period. <br/> |
 |Chat messages   <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
-|Total meetings   <br/> |The sum of online meetings that the user Organized and participated in during the specified time period.  <br/> |
+|Total meetings   <br/> |The sum of online meetings that the user organized and participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |The last date that the user participated in a Microsoft Teams activity.<br/> |
 |Meetings participated ad hoc   <br/> | The number of ad hoc meetings a user participated in during the specified time period.  <br/> |
