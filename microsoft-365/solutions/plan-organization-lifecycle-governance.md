@@ -1,7 +1,7 @@
 ---
-title: "Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams"
-ms.reviewer: arvaradh
-ms.date: 08/12/2020
+title: Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams
+ms.reviewer: rahulnayak
+ms.date: 07/28/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,18 +17,18 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: "Lean about lifecycle governance options for collaboration tools in Microsoft 365"
+description: Lean about lifecycle governance options for collaboration tools in Microsoft 365
 ---
 
 # Plan organization and lifecycle governance for Microsoft 365 groups and Microsoft Teams
 
-Microsoft 365 groups has a rich set of tools to implement the governance capabilities your organization requires. 
+Microsoft 365 groups has a rich set of tools to implement the governance capabilities your organization requires.
 
 The following section describes the capabilities, recommends best practices, and provides guidance to ask the right questions to determine the requirements for governance, and how to meet them.
 
 ## Control who can create Microsoft 365 groups
 
-Groups can be created by end-users from multiple end-points including Outlook, SharePoint, Teams, and other environments.
+Microsoft 365 groups can be created by end users from multiple end-points including Outlook, SharePoint, Teams, and other environments. Creating a team always creates a Microsoft 365 group, so governing the Microsoft 365 Groups lifecycle also governs the lifecycle of teams in Microsoft Teams.
 
 ![image desc.](../media/04.png)
 
@@ -59,7 +59,7 @@ A groups naming policy can help you govern groups in two ways:
 
 Naming policies are applied when groups are created from any of the group-connected services.
 
-If you decide to use naming policies for groups, see [Microsoft 365 Groups naming policy](groups-naming-policy.md).
+If you want to use naming policies for groups, see [Microsoft 365 Groups naming policy](groups-naming-policy.md).
 
 ## Group expiration policy
 
@@ -69,7 +69,7 @@ Once you set groups to expire:
 - Owners of the group are notified to renew the group as the expiration nears.
 - Active groups are renewed automatically.
 - Any group that is not renewed is deleted.
-- Any group that is deleted can be restored within 30 days by the group owners or the admin.
+- Any group that is deleted can be restored within 30 days by the group owners or a global administrator.
 
 Expiration policies are a good way to limit group sprawl by ensuring that groups that are no longer in use are deleted. If you want to create a group expiration policy, see [Microsoft 365 Groups Expiration Policy](microsoft-365-groups-expiration-policy.md).
 
