@@ -17,6 +17,9 @@ description: Learn how manage user sync in multi-tenant organizations in Microso
 
 # Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
 
+> [!NOTE]
+> Multi-tenant organizations in Microsoft 365 is currently rolling out and may not yet be available for all organizations.
+
 For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
 
 We recommend that you [set up security groups in Azure AD](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners of the group aren't synchronized.
