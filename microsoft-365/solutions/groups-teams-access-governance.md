@@ -52,6 +52,14 @@ The following table provides a quick reference for the access controls available
 ||Automate access management to groups and teams.|[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)|
 ||Limit OneDrive access to members of a specific security group.|[Restrict OneDrive access by security group](/sharepoint/limit-access)|
 ||Restrict teams or site access to members of a group.|[Restrict SharePoint site access to members of a group](/sharepoint/restricted-access-control)|
+|Information classification|||
+||Classify groups and teams|[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Automatically classify sensitive content|[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)|
+||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
+|User segmentation|||
+||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
+|Data residency|||
+||Store data in specific geo-locations|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## Membership
 
@@ -165,6 +173,42 @@ For some more sensitive teams or sites, you might want to limit access to team o
 Additional resources:
 
 - [Azure Active Directory Identity Governance](/azure/active-directory/governance)
+
+## Information classification
+
+You can use sensitivity labels to govern guest access, group and team privacy, and access by unmanaged devices for groups and teams. By applying the label, these settings are automatically configured as specified by the label settings.
+
+- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)
+
+You can configure Microsoft 365 to auto-apply sensitivity labels to files and emails based on the criteria that you specify, including detecting sensitive information types or pattern matching with trainable classifiers.
+
+- [Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)
+
+You can use sensitivity labels to encrypt files, allowing only those with permissions to decrypt and read them.
+
+- [Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)
+
+Additional resources:
+
+- [Learn about sensitivity labels](../compliance/sensitivity-labels.md)
+
+## User segmentation
+
+With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers let you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
+
+- [Information barriers](../compliance/information-barriers.md)
+
+- [Information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+
+- [Use information barriers with SharePoint](/sharepoint/information-barriers)
+
+## Data residency
+
+With Microsoft 365 Multi-Geo, you can provision and store data at rest in the geo locations that you've chosen to meet data residency requirements. In a Multi-Geo environment, your Microsoft 365 tenant consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations where you can store data.
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Plan for Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## Related topics
 
