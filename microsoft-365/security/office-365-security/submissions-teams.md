@@ -87,16 +87,15 @@ For more information about user reported message settings in the Defender portal
    :::image type="content" source="../../media/submissions-user-report-message-in-teams-client-click-report.png" alt-text="Screenshot of the final dialog to report a message in the Microsoft Teams client." lightbox="../../media/submissions-user-report-message-in-teams-client-click-report.png":::
 
    > [!NOTE]
-   > If [reporting for Microsoft Purview Communication Compliance is turned off](/microsoftteams/communication-compliance#report-a-concern-in-microsoft-teams), users might not have the dropdown list to select **Security risk - Spam, phishing, malicious content**. Instead, they're shown a confirmation pop-up.
+   > If [reporting for Microsoft Purview Communication Compliance is turned off](/purview/communication-compliance-policies#user-reported-messages-policy), users might not have the dropdown list to select **Security risk - Spam, phishing, malicious content**. Instead, they're shown a confirmation pop-up.
 
 3. In the confirmation dialog that opens, select **Close**.
 
-**Notes**:
-
-- The reported message remains visible to the user in the Teams client.
-- Users can report the same message multiple times.
-- The message sender isn't notified that messages were reported.
-- Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email notifications** section on **User reported settings** page as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users).
+ > [!NOTE]
+ > - The reported message remains visible to the user in the Teams client.
+ > - Users can report the same message multiple times.
+ > - The message sender isn't notified that messages were reported.
+ > - Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email notifications** section on **User reported settings** page as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users).
 
 > [!IMPORTANT]
 >

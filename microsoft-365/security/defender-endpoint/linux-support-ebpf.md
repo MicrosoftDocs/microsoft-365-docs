@@ -60,7 +60,8 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | SLES               | 15                   | 5.3.18-18.47   |
 | RHEL               | 7.6                  | 3.10.0-957     |
 | Debian             | 9.0                  | 4.19.0         |
-| Oracle Linux       | 8.0                  | 4.18.0         |
+| Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
+| Oracle Linux UEK   | 7.9                  | 5.4            |
 
 When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 
@@ -100,3 +101,4 @@ The following two sets of data help analyze potential issues and determine the m
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
 - [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
+

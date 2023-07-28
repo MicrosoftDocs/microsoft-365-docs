@@ -66,7 +66,7 @@ If you have a license for one of the supported Microsoft products, then you'll s
 Your score is updated in real time to reflect the information presented in the visualizations and recommended action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
 > [!NOTE]
-> For Microsoft Teams related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month.
+> For Microsoft Teams and AAD related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month or once a week, respectively.
 
 ### Key scenarios
 
