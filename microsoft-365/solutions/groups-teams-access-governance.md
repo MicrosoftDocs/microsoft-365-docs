@@ -48,7 +48,7 @@ The following table provides a quick reference for the access controls available
 ||Control guest access to a group, team, or site based on information sensitivity.|[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Turn off sharing options.|[Limit sharing in Microsoft 365](./microsoft-365-limit-sharing.md)|
 |User management|||
-||Review team and group membership on a regular basis.|[What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)|
+||Review team and group membership regularly.|[What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automate access management to groups and teams.|[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)|
 ||Limit OneDrive access to members of a specific security group.|[Restrict OneDrive access by security group](/sharepoint/limit-access)|
 ||Restrict teams or site access to members of a group.|[Restrict SharePoint site access to members of a group](/sharepoint/restricted-access-control)|
@@ -63,7 +63,7 @@ The following table provides a quick reference for the access controls available
 
 ## Membership
 
-You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team. Dynamic groups uses metadata that you define in Azure Active Directory to control who is a member of the group. Be sure the metadata that you're using is complete and up to date as incorrect metadata can lead to users being left out of groups or incorrect users being added.
+You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners can't invite people to the team. Dynamic groups use metadata that you define in Azure Active Directory to control who is a member of the group. Be sure the metadata that you're using is complete and up to date as incorrect metadata can lead to users being left out of groups or incorrect users being added.
 
 - [Create or update a dynamic group in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -176,7 +176,7 @@ Additional resources:
 
 ## Information classification
 
-You can use sensitivity labels to govern guest access, group and team privacy, and access by unmanaged devices for groups and teams. By applying the label, these settings are automatically configured as specified by the label settings.
+You can use sensitivity labels to govern guest access, group and team privacy, and access by unmanaged devices for groups and teams. When a user applies the label, these settings are automatically configured as specified by the label settings.
 
 - [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)
 
