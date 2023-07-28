@@ -1287,9 +1287,9 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 
 ### Intune deployment
 
-1. Open **Manage** \> **Device configuration**. Select **Manage** \> **Profiles** \> **Create Profile**.
+1. Open **Devices** \> **Configration Profiles**. Select **Create Profile**.
 
-2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
+2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Templates** and choose**Custom** in the template name section and Select Configure.
 
 3. Save the .plist produced earlier as `com.microsoft.wdav.xml`.
 
