@@ -34,8 +34,7 @@ For the Microsoft 365 support integration app, go to the [ServiceNow Store](http
 
 > [!NOTE]
 > This app is not supported in regulated or restricted environments.
-
-> [!NOTE]
+>
 > This app is only supported in English.
 
 ## Key features
