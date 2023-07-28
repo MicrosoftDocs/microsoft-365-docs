@@ -1,7 +1,7 @@
 ---
 title: "Governing access in Microsoft 365 groups, Teams, and SharePoint"
 ms.reviewer: 
-ms.date: 08/12/2020
+ms.date: 07/28/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -36,6 +36,7 @@ The following table provides a quick reference for the access controls available
 ||Control device access based on group, team, or site sensitivity.|[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limit site access for unmanaged devices.|[Control SharePoint access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)|
 ||Control site access based on location|[Control access to SharePoint and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location)|
+||Enforce more stringent access conditions when users access SharePoint sites.|[Conditional access policy for SharePoint sites and OneDrive](/sharepoint/authentication-context-example)|
 |Guest access|||
 ||Allow or block SharePoint sharing from specified domains.|[Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing)|
 ||Allow or block team or group membership from specified domains.|[Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list)|
@@ -49,12 +50,10 @@ The following table provides a quick reference for the access controls available
 |User management|||
 ||Review team and group membership on a regular basis.|[What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automate access management to groups and teams.|[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)|
+||Limit OneDrive access to members of a specific security group.|[Restrict OneDrive access by security group](/sharepoint/limit-access)|
+||Restrict teams or site access to members of a group.|[Restrict SharePoint site access to members of a group](/sharepoint/restricted-access-control)|
 
 ## Membership
-
-Membership of teams and groups is controlled by owners. Members can invite others, but the invitations are sent to owners for approval. While public teams and groups are discoverable by anyone in the organization, you can control whether private teams and groups are discoverable:
-
-- [Manage discovery of private teams in Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
 You can manage membership of a group or team dynamically based on some criteria, such as department. In this case, members and owners cannot invite people to the team. Dynamic groups uses metadata that you define in Azure Active Directory to control who is a member of the group. Be sure the metadata that you're using is complete and up to date as incorrect metadata can lead to users being left out of groups or incorrect users being added.
 
@@ -133,7 +132,7 @@ Additional resources:
 
 - [Limit accidental exposure to files when sharing with people outside your organization](./share-limit-accidental-exposure.md)
 
-- [Create a secure guest sharing environment](./create-secure-guest-sharing-environment.md)
+- [Create a more secure guest sharing environment](./create-secure-guest-sharing-environment.md)
 
 - [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/b2b/delegate-invitations)
 
@@ -153,7 +152,15 @@ Private channels in Teams allow for scoped conversations and file sharing betwee
 
 Shared channels allow you to invite people who are outside the team or outside the organization. Depending on your specific business needs and external sharing policies, you may want to allow or block this capability.
 
-- [Shared channels](/MicrosoftTeams/shared-channels)
+- [Shared channels in Microsoft Teams](/MicrosoftTeams/shared-channels)
+
+OneDrive provides an easy way for users to store and share content that they're working on. Depending on your business needs, you may want to restrict access to this content to full-time company employees or other groups within the company. If so, you can limit access to OneDrive content to members of a security group.
+
+- [Restrict OneDrive access by security group](/sharepoint/limit-access)
+
+For some more sensitive teams or sites, you might want to limit access to team or site content to members of the team or to members of a security group.
+
+- [Restrict SharePoint site access to members of a group](/sharepoint/restricted-access-control)
 
 Additional resources:
 
@@ -168,7 +175,5 @@ Additional resources:
 [Security and compliance in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
 [Manage sharing settings in SharePoint](/sharepoint/turn-external-sharing-on-or-off)
-
-[Create and manage an external network in Viva Engage](/viva/engage/work-with-external-users/create-and-manage-an-external-network)
 
 [Configure Teams with three tiers of protection](./configure-teams-three-tiers-protection.md)

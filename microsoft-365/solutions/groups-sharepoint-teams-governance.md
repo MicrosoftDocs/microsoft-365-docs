@@ -42,8 +42,8 @@ Some settings for Microsoft 365 Groups, Microsoft Teams, and SharePoint in Micro
 |:---------------------------|:----------|:--------------|:-------------|
 |Naming policies|Specifies Microsoft 365 group name prefixes and suffixes, and blocked words for group creation|Policies are enforced for users creating teams.||
 |Microsoft 365 Groups guest access|Specifies if people outside the organization can be added to Microsoft 365 groups.|If either the Microsoft 365 Groups or Teams guest sharing settings are off, the team cannot be shared with guests.|When changing guest sharing settings, check the settings for Teams, Microsoft 365 Groups, and the SharePoint site associated with the team.<br><br> See [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)|
-|Group creation by security group|Microsoft 365 Groups can only be created by members of a specific security group.|Users who are not members of the security group will not be able to create a team.|Be sure your process for requesting a group includes instructions for requesting a team or a SharePoint site.|
-|Group expiration policy|Specifies a time period after which groups that are not actively used will be automatically deleted.|When the group is deleted, the team and associated SharePoint site are also deleted. Content protected by retention policies is retained.|Use expiration policies to avoid sprawl of unused teams, groups and sites.|
+|Microsoft 365 group creation by security group|Microsoft 365 Groups can only be created by members of a specific security group.|Users who are not members of the security group can't create a team.|Be sure your process for requesting a Microsoft 365 group includes instructions for requesting a team or a SharePoint site.|
+|Microsoft 365 group expiration policy|Specifies a time period after which Microsoft 365 groups that are not actively used are automatically deleted.|When the group is deleted, the team and associated SharePoint site are also deleted. Content protected by retention policies is retained.|Use expiration policies to avoid sprawl of unused teams, Microsoft 365 groups, and sites.|
 
 ## Related topics
 
