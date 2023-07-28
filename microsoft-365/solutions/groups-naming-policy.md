@@ -1,7 +1,7 @@
 ---
-title: "Microsoft 365 groups naming policy"
-ms.reviewer: arvaradh
-ms.date: 02/18/2020
+title: Microsoft 365 Groups and Microsoft Teams naming policy
+ms.reviewer: rahulnayak
+ms.date: 07/28/2023
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -9,7 +9,6 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
-
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
-description: "Learn how to create a naming policy for Microsoft 365 groups."
+description: "Learn how to create a naming policy for Microsoft 365 Groups and Microsoft Teams."
 ---
 
-# Microsoft 365 groups naming policy
+# Microsoft 365 Groups and Microsoft Teams naming policy
 
-You can use a group naming policy to enforce a consistent naming strategy for groups created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
+You can use a naming policy to enforce a consistent naming strategy for Microsoft 365 groups  and teams created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
 
 The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Viva Engage, etc.). It gets applied to both the group name and group alias. It also gets applied when a user creates a group and when the group name, alias, description, or avatar is edited for an existing group.
 
@@ -50,7 +49,7 @@ Prefixes and suffixes can either be fixed strings or user attributes.
 
 ### Fixed strings
 
-You can use short strings that can help you differentiate groups in the GAL and left navigation of the group workloads. Some of the common prefixes suffixes are keywords like 'Grp\_Name' , '\#Name', '\_Name'
+You can use short strings that can help you differentiate groups in the global address list and left navigation of the group workloads. Some of the common prefixes suffixes are keywords like 'Grp\_Name' , '\#Name', '\_Name'
 
 ### Attributes
 
