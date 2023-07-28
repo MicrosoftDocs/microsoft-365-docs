@@ -136,11 +136,6 @@
          "redirect_document_id":false
       },
       {
-         "source_path": "microsoft-365/security/defender-endpoint/deployment-strategy.md",
-         "redirect_url": "/microsoft-365/security/defender-endpoint/mde-planning-guide",
-         "redirect_document_id": false
-      },
-      {
          "source_path":"microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
          "redirect_url":"/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
          "redirect_document_id":false
@@ -1557,7 +1552,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction.md",
-         "redirect_url":"/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-2",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test",
          "redirect_document_id":false
       },
       {
@@ -2552,7 +2547,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/configure-email-notifications.md",
-         "redirect_url":"microsoft-365/security/defender/configure-email-notifications",
+         "redirect_url":"/microsoft-365/security/defender/configure-email-notifications",
          "redirect_document_id":false
       },
       {
