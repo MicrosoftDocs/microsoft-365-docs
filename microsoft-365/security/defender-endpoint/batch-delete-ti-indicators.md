@@ -91,7 +91,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 ```
 
 
-```yaml
+```json
 {
 	"IndicatorIds": [ "1", "2", "5" ]
 }
