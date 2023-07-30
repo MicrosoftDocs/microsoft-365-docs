@@ -70,11 +70,15 @@ In the request body, supply a JSON object with the following parameters:
 
 ## Response
 
-If Indicator exists and deleted successfully - 204 OK without content
+If Indicators all existed and were deleted successfully - 204 OK without content
 
 if indicator IDs list is empty or exceeds size limit - 400 Bad Request
 
-If Indicator with the specified id wasn't found - 404 Not Found
+if any indicator ID is invalid - 400 Bad Request
+
+if requestor is not exposed to any indicator's device groups - 403 Forbidden
+
+If any Indicator ID was not found - 404 Not Found
 
 ## Example
 
